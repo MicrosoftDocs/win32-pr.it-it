@@ -1,21 +1,21 @@
 ---
-title: TS_ATTRID (Textstor. h)
-description: Il \_ tipo di dati ATTRID di Servizi terminal viene usato per identificare un attributo di testo.
+title: TS_ATTRID (Textstor.h)
+description: Il tipo di dati \_ TS ATTRID viene usato per identificare un attributo di testo.
 ms.assetid: 5e375609-3d3c-4c12-ae05-dcaa70779162
 keywords:
 - TS_ATTRID
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18ea3823a95c123fe9942f69a2a133fd94a8567a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2e1c40d56f1f8ff3deb59d0dd7664a197a672ade7b2d53beebd8e35ba5de7c0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103739783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117950337"
 ---
-# <a name="ts_attrid"></a>ATTRID di Servizi terminal \_
+# <a name="ts_attrid"></a>TS \_ ATTRID
 
-Il tipo di dati **\_ ATTRID di Servizi terminal** viene usato per identificare un attributo di testo.
+Il **tipo di dati \_ TS ATTRID** viene usato per identificare un attributo di testo.
 
 
 ```C++
@@ -26,9 +26,9 @@ typedef GUID TS_ATTRID;
 
 ## <a name="remarks"></a>Commenti
 
-Un elenco di GUID predefiniti per ATTRID di Servizi terminal \_ è in tsattrs. h.
+Un elenco di GUID predefiniti per TS \_ ATTRID si trova in tsattrs.h.
 
-I GUID TSATTRID \_ Text \_ VERTICALWRITING e TSATTRID \_ Text \_ Orientation sono utili per le applicazioni che devono corrispondere al testo di input da correggere. È possibile creare GUID aggiuntivi definiti dall'utente.
+I GUID TSATTRID Text VerticalWriting e \_ TSATTRID Text Orientation sono utili per le applicazioni in modo che corrispondano al testo di \_ \_ input da \_ correggere. È possibile creare ALTRI GUID definiti dall'utente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -36,11 +36,11 @@ I GUID TSATTRID \_ Text \_ VERTICALWRITING e TSATTRID \_ Text \_ Orientation son
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                       |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                             |
-| Componente ridistribuibile<br/>          | TSF 1,0 su Windows 2000 Professional<br/>                                         |
-| Intestazione<br/>                   | <dl> <dt>Textstor. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Textstor. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop app \| UWP\]<br/>                       |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                             |
+| Componente ridistribuibile<br/>          | TSF 1.0 in Windows 2000 Professional<br/>                                         |
+| Intestazione<br/>                   | <dl> <dt>Textstor.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Textstor.idl</dt> </dl> |
 
 
 
@@ -48,19 +48,19 @@ I GUID TSATTRID \_ Text \_ VERTICALWRITING e TSATTRID \_ Text \_ Orientation son
 
 <dl> <dt>
 
-[**ITextStoreACP:: FindNextAttrTransition**](/windows/desktop/api/Textstor/nf-textstor-itextstoreacp-findnextattrtransition)
+[**ITextStoreACP::FindNextAttrTransition**](/windows/desktop/api/Textstor/nf-textstor-itextstoreacp-findnextattrtransition)
 </dt> <dt>
 
-[**ITextStoreACP:: RequestAttrsAtPosition**](/windows/desktop/api/Textstor/nf-textstor-itextstoreacp-requestattrsatposition)
+[**ITextStoreACP::RequestAttrsAtPosition**](/windows/desktop/api/Textstor/nf-textstor-itextstoreacp-requestattrsatposition)
 </dt> <dt>
 
-[**ITextStoreACP:: RequestAttrsTransitioningAtPosition**](/windows/desktop/api/Textstor/nf-textstor-itextstoreacp-requestattrstransitioningatposition)
+[**ITextStoreACP::RequestAttrsTransitioningAtPosition**](/windows/desktop/api/Textstor/nf-textstor-itextstoreacp-requestattrstransitioningatposition)
 </dt> <dt>
 
-[**ITextStoreACP:: RequestSupportedAttrs**](/windows/desktop/api/Textstor/nf-textstor-itextstoreacp-requestsupportedattrs)
+[**ITextStoreACP::RequestSupportedAttrs**](/windows/desktop/api/Textstor/nf-textstor-itextstoreacp-requestsupportedattrs)
 </dt> <dt>
 
-[**ITextStoreACPSink:: OnAttrsChange**](/windows/desktop/api/Textstor/nf-textstor-itextstoreacpsink-onattrschange)
+[**ITextStoreACPSink::OnAttrsChange**](/windows/desktop/api/Textstor/nf-textstor-itextstoreacpsink-onattrschange)
 </dt> <dt>
 
 [**ITextStoreAnchor::FindNextAttrTransition**](/windows/desktop/api/Textstor/nf-textstor-itextstoreanchor-findnextattrtransition)
@@ -78,7 +78,7 @@ I GUID TSATTRID \_ Text \_ VERTICALWRITING e TSATTRID \_ Text \_ Orientation son
 [**ITextStoreAnchorSink::OnAttrsChange**](/windows/desktop/api/Textstor/nf-textstor-itextstoreanchorsink-onattrschange)
 </dt> <dt>
 
-[**ATTRVAL di Servizi terminal \_**](/windows/desktop/api/Textstor/ns-textstor-ts_attrval)
+[**TS \_ ATTRVAL**](/windows/desktop/api/Textstor/ns-textstor-ts_attrval)
 </dt> </dl>
 
  

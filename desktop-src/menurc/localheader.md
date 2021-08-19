@@ -1,6 +1,6 @@
 ---
 title: Struttura LOCALHEADER
-description: Contiene le coordinate x e y di un hotspot associato al cursore identificato da una struttura RESDIR. La definizione della struttura fornita qui è solo a solo supporto della spiegazione. non è presente in alcun file di intestazione standard.
+description: Contiene le coordinate x e y di un'area sensibile associata al cursore identificato da una struttura RESDIR. La definizione della struttura qui fornita è solo per la spiegazione. non è presente in alcun file di intestazione standard.
 ms.assetid: 8cf74040-8b8f-447e-a881-1bcf05b151e2
 keywords:
 - Struttura LOCALHEADER Menu e altre risorse
@@ -22,7 +22,7 @@ ms.locfileid: "117870319"
 ---
 # <a name="localheader-structure"></a>Struttura LOCALHEADER
 
-Contiene le coordinate x e y di un hotspot associato al cursore identificato da una [**struttura RESDIR.**](resdir.md) La definizione della struttura fornita qui è solo a solo supporto della spiegazione. non è presente in alcun file di intestazione standard.
+Contiene le coordinate x e y di un'area sensibile associata al cursore identificato da una [**struttura RESDIR.**](resdir.md) La definizione della struttura qui fornita è solo per la spiegazione. non è presente in alcun file di intestazione standard.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,7 +64,7 @@ Coordinata y dell'area sensibile del cursore, in pixel.
 
 ## <a name="remarks"></a>Commenti
 
-La **struttura LOCALHEADER** rappresenta i primi dati scritti nella risorsa [RT \_ CURSOR](/windows/desktop/menurc/resource-types) se una [**struttura RESDIR**](resdir.md) contiene informazioni su un cursore.
+La **struttura LOCALHEADER** è il primo dato scritto nella risorsa [RT \_ CURSOR](/windows/desktop/menurc/resource-types) se una [**struttura RESDIR**](resdir.md) contiene informazioni su un cursore.
 
 ## <a name="requirements"></a>Requisiti
 

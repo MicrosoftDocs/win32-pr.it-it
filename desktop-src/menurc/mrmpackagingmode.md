@@ -1,9 +1,9 @@
 ---
-title: Enumerazione MrmPackagingMode (MrmResourceIndexer. h)
-description: Definisce le costanti che specificano il tipo di file PRI che devono essere creati da MrmCreateResourceFile e MrmCreateResourceFileInMemory.
+title: Enumerazione MrmPackagingMode (MrmResourceIndexer.h)
+description: Definisce costanti che specificano il tipo di file PRI che devono essere creati da MrmCreateResourceFile e MrmCreateResourceFileInMemory.
 ms.assetid: 5695B67E-5446-4538-83D2-F8FF91A5080E
 keywords:
-- Menu di enumerazione MrmPackagingMode e altre risorse
+- Menu e altre risorse dell'enumerazione MrmPackagingMode
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eaca681dbcf9d171e279083abbb730895ff99333
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 58b4e968a43ba08786cc433b199bef5c07431420ac5942646530960279ea853e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104340742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117870150"
 ---
 # <a name="mrmpackagingmode-enumeration"></a>Enumerazione MrmPackagingMode
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Definisce le costanti che specificano il tipo di file PRI che devono essere creati da [**MrmCreateResourceFile**](mrmcreateresourcefile.md) e [**MrmCreateResourceFileInMemory**](mrmcreateresourcefileinmemory.md). Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere [API pri (Package Resource Indexing) e sistemi di compilazione personalizzati](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Definisce costanti che specificano il tipo di file PRI che devono essere creati da [**MrmCreateResourceFile**](mrmcreateresourcefile.md) e [**MrmCreateResourceFileInMemory**](mrmcreateresourcefileinmemory.md). Per altre informazioni e procedure dettagliate basate su scenario su come usare queste API, vedere Api di indicizzazione delle risorse dei pacchetti e sistemi [di compilazione personalizzati.](/windows/uwp/app-resources/pri-apis-custom-build-systems)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,7 +54,7 @@ Specifica che deve essere creato un singolo file PRI.
 <span id="MrmPackagingModeAutoSplit"></span><span id="mrmpackagingmodeautosplit"></span><span id="MRMPACKAGINGMODEAUTOSPLIT"></span>**MrmPackagingModeAutoSplit**
 </dt> <dd>
 
-Specifica che devono essere creati più file PRI. Dividi automaticamente da tutti i qualificatori supportati (in particolare, lingua e scala).
+Specifica che devono essere creati più file PRI. viene suddiviso automaticamente in base a tutti i qualificatori supportati (in particolare, lingua e scalabilità).
 
 </dd> <dt>
 
@@ -71,9 +71,9 @@ Specifica che deve essere creato un file PRI satellite del componente aggiuntivo
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1803 \[\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1803 \[\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo \[ app desktop server\]<br/>                                                 |
+| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
 
 
 

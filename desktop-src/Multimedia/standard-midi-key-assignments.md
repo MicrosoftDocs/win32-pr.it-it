@@ -4,9 +4,9 @@ description: Assegnazioni di chiavi MIDI standard
 ms.assetid: 9d3c5fe0-42bc-4101-9f5a-595e925ee7a5
 keywords:
 - creazione di file MIDI, assegnazioni di chiavi standard
-- assegnazioni di tasti MIDI standard
-- MIDI (Musical Instrument Digital Interface), assegnazioni di tasti standard
-- MIDI (Musical Instrument Digital Interface), assegnazioni di tasti standard
+- assegnazioni di chiavi MIDI standard
+- Instrument Digital Interface (MIDI), assegnazioni di chiavi standard
+- MIDI (Instrument Digital Interface), assegnazioni di chiavi standard
 - MIDI Manufacturers Association (MMA)
 - MMA (MIDI Manufacturers Association)
 - Specifica generale della modalità MIDI
@@ -21,9 +21,9 @@ ms.locfileid: "117801506"
 ---
 # <a name="standard-midi-key-assignments"></a>Assegnazioni di chiavi MIDI standard
 
-Le assegnazioni di tasti MIDI standard per gli strumenti a batteria si basano sulla specifica MMA General MIDI Mode. La figura seguente illustra le assegnazioni di chiave standard per i file MIDI creati per Windows.
+Le assegnazioni di tasti MIDI standard per gli strumenti di strumentazione sono basate sulla specifica MMA General MIDI Mode (Modalità MIDI generale MMA). La figura seguente mostra le assegnazioni di chiavi standard per i file MIDI creati per Windows.
 
-![Immagine di assegnazione della chiave midi](images/pian-a01.gif)
+![Immagine di assegnazione chiave midi](images/pian-a01.gif)
 
  
 

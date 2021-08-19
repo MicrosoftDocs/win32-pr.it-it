@@ -5,7 +5,7 @@ ms.assetid: 23680369-92f9-4558-aa95-f2f44734cece
 keywords:
 - Windows multimediali, driver installabili
 - multimediali, driver installabili
-- driver installabili, informazioni su
+- driver installabili, informazioni
 - Funzione DriverProc
 - driver installabili, funzione DriverProc
 - driver installabili, esempi
@@ -20,7 +20,7 @@ ms.locfileid: "117801191"
 ---
 # <a name="using-installable-drivers"></a>Uso di driver installabili
 
-I driver installabili vengono utilizzati per offrire alle applicazioni o alle DLL un modo standard per accedere a un dispositivo o a un set di routine utili. Le sezioni seguenti illustrano come creare un driver installabile usando una funzione [DriverProc](/windows/win32/api/mmiscapi/nc-mmiscapi-driverproc) e come aprire un driver installabile e indirizzarlo per eseguire attività utili.
+I driver installabili vengono utilizzati per fornire alle applicazioni o alle DLL un modo standard per accedere a un dispositivo o a un set di routine utili. Le sezioni seguenti illustrano come creare un driver installabile usando una funzione [DriverProc](/windows/win32/api/mmiscapi/nc-mmiscapi-driverproc) e come aprire un driver installabile e indirizzarlo all'esecuzione di attività utili.
 
  
 

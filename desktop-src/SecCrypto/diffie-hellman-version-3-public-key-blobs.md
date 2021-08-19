@@ -1,5 +1,5 @@
 ---
-description: Diffie-Hellman versione 3 i BLOB di chiave pubblica (tipo PUBLICKEYBLOB) vengono usati per esportare e importare informazioni su una chiave pubblica DH.
+description: Diffie-Hellman blob di chiave pubblica versione 3 (tipo PUBLICKEYBLOB) vengono usati per esportare e importare informazioni su una chiave pubblica DH.
 ms.assetid: ba29a71a-7509-49c7-93d2-f0a699532706
 title: Diffie-Hellman BLOB a chiave pubblica di Diffie-Hellman versione 3
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117767418"
 ---
 # <a name="diffie-hellman-version-3-public-key-blobs"></a>Diffie-Hellman BLOB a chiave pubblica di Diffie-Hellman versione 3
 
-Diffie-Hellman versione [*3*](../secgloss/p-gly.md) i BLOB di chiave pubblica (tipo PUBLICKEYBLOB) vengono usati per esportare e importare informazioni su una chiave pubblica DH. Hanno il formato seguente:
+Diffie-Hellman blob di chiave pubblica [*versione*](../secgloss/p-gly.md) 3 (tipo PUBLICKEYBLOB) vengono usati per esportare e importare informazioni su una chiave pubblica DH. Hanno il formato seguente:
 
 
 ```C++

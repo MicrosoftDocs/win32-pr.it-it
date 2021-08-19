@@ -1,9 +1,9 @@
 ---
-title: Struttura Connections (NapEnforcementClient. h)
-description: Contiene informazioni sull'elenco di connessioni gestite da un Enforcer.
+title: Struttura Connections (NapEnforcementClient.h)
+description: Contiene informazioni sull'elenco di connessioni gestite da un applicatore.
 ms.assetid: 79466099-b567-4268-b9bf-d5e57f4d4900
 keywords:
-- Struttura delle connessioni NAP
+- Struttura delle connessioni Nap
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e79add74830dfa8ca77fa24a5d3233542a7e553
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f91e2dc404ff50c7edc3ba80a3c772ac6be762c1fe49575d8503a783e83bbef6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117800148"
 ---
-# <a name="connections-structure"></a>Struttura Connections
+# <a name="connections-structure"></a>Struttura delle connessioni
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-La struttura **Connections** contiene informazioni sull'elenco di connessioni gestite da un Enforcer.
+La **struttura Connections** contiene informazioni sull'elenco di connessioni gestite da un applicatore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,14 +49,14 @@ typedef struct tagConnections {
 **count**
 </dt> <dd>
 
-Il numero di connessioni attive attualmente gestite da un Enforcer compreso nell'intervallo 0 (zero) a [**maxConnectionCountPerEnforcer**](nap-type-constants.md).
+Numero di connessioni attive attualmente gestite da un'applicazione nell'intervallo compreso tra 0 (zero) [**e maxConnectionCountPerEnforcer**](nap-type-constants.md).
 
 </dd> <dt>
 
-**connessioni**
+**Connessioni**
 </dt> <dd>
 
-Puntatore COM a un elenco di interfacce [**INapEnforcementClientConnection**](inapenforcementclientconnection.md) che rappresentano le connessioni client.
+Puntatore COM a un elenco di [**interfacce INapEnforcementClientConnection**](inapenforcementclientconnection.md) che rappresentano le connessioni client.
 
 </dd> </dl>
 
@@ -66,10 +66,10 @@ Puntatore COM a un elenco di interfacce [**INapEnforcementClientConnection**](in
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                |
+| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 
 
 
@@ -77,10 +77,10 @@ Puntatore COM a un elenco di interfacce [**INapEnforcementClientConnection**](in
 
 <dl> <dt>
 
-[Riferimento NAP](nap-reference.md)
+[Informazioni di riferimento su Protezione accesso alla rete](nap-reference.md)
 </dt> <dt>
 
-[Strutture NAP](nap-structures.md)
+[Strutture di Protezione accesso alla rete](nap-structures.md)
 </dt> <dt>
 
 [**INapEnforcementClientConnection**](inapenforcementclientconnection.md)

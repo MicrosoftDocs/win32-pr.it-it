@@ -13,7 +13,7 @@ ms.locfileid: "117863714"
 ---
 # <a name="contains-predicate"></a>Predicato CONTAINS
 
-Il predicato CONTAINS fa parte della clausola WHERE e supporta la ricerca di parole e frasi nelle colonne di testo. Il predicato CONTAINS include funzionalità per la corrispondenza di parole, la corrispondenza di forme flessezionali di parole, la ricerca con caratteri jolly e la ricerca con prossimità. È anche possibile applicare pesi in un predicato CONTAINS per impostare l'importanza delle colonne in cui viene trovato il termine di ricerca. Il predicato CONTAINS è più adatto per le corrispondenze esatte, a differenza del predicato [FREETEXT,](-search-sql-freetext.md) più adatto per la ricerca di documenti contenenti combinazioni delle parole di ricerca distribuite in tutta la colonna. Le ricerche non rilevano la distinzione tra maiuscole e minuscole.
+Il predicato CONTAINS fa parte della clausola WHERE e supporta la ricerca di parole e frasi nelle colonne di testo. Il predicato CONTAINS include funzionalità per la corrispondenza delle parole, la corrispondenza di forme gonfie di parole, la ricerca con caratteri jolly e la ricerca tramite prossimità. È anche possibile applicare pesi in un predicato CONTAINS per impostare l'importanza delle colonne in cui viene trovato il termine di ricerca. Il predicato CONTAINS è più adatto per le corrispondenze esatte, a differenza del predicato [FREETEXT,](-search-sql-freetext.md) più adatto per trovare documenti contenenti combinazioni di parole di ricerca distribuite in tutta la colonna. Le ricerche non rilevano la distinzione tra maiuscole e minuscole.
 
 Di seguito è riportata la sintassi di base del predicato CONTAINS:
 
@@ -21,29 +21,29 @@ Di seguito è riportata la sintassi di base del predicato CONTAINS:
 ...CONTAINS(["<fulltext_column>",]'<contains_condition>'[,<LCID>])...
 ```
 
-Il riferimento alla \_ colonna full-text è facoltativo. Con questa funzionalità è possibile limitare la ricerca a una singola colonna o a un gruppo di colonne in base al quale viene testato il predicato CONTAINS. Quando la colonna full-text viene specificata come "ALL" o " ", viene ricercata in tutte \* le proprietà di testo indicizzato. Anche se non è necessario che la colonna sia una proprietà di testo, i risultati potrebbero non essere validi se la colonna è di un altro tipo di dati. Il nome della colonna può essere un identificatore normale o delimitato [ed](-search-sql-identifiers.md)è necessario separarlo dalla condizione con una virgola. Se non viene specificata alcuna colonna full-text, viene usata la colonna System.Search.Contents, ovvero il corpo del documento.
+Il riferimento alla \_ colonna full-text è facoltativo. È possibile limitare la ricerca a una singola colonna o a un gruppo di colonne in base al quale viene testato il predicato CONTAINS. Quando la colonna full-text viene specificata come "ALL" o "", viene cercata tutte le proprietà del testo \* indicizzato. Anche se la colonna non deve essere una proprietà di testo, i risultati potrebbero non avere significato se la colonna è un altro tipo di dati. Il nome della colonna può essere [](-search-sql-identifiers.md)un identificatore normale o delimitato ed è necessario separarlo dalla condizione con una virgola. Se non viene specificata alcuna colonna full-text, viene utilizzata la colonna System.Search.Contents, ovvero il corpo del documento.
 
-La parte LCID del predicato specifica le impostazioni locali di ricerca. Questo indica al motore di ricerca di usare il word breaker e i formati flessici appropriati per la query di ricerca. Per specificare le impostazioni locali, specificare il Windows LCID (Standard Language Code Identifier). Ad esempio, 1033 è l'identificatore LCID Stati Uniti inglese. Inserire l'identificatore LCID come ultimo elemento all'interno delle parentesi della clausola CONTAINS. Per informazioni importanti sulla ricerca e sulle lingue, vedere [Uso delle ricerche localizzate.](-search-sql-usinglocsearches.md)
+La parte LCID del predicato specifica le impostazioni locali di ricerca. Questo indica al motore di ricerca di usare il word breaker e i moduli gonfiali appropriati per la query di ricerca. Per specificare le impostazioni locali, specificare l'Windows LCID (Standard Language Code Identifier). Ad esempio, 1033 è l'LCID per Stati Uniti-inglese. Inserire l'LCID come ultimo elemento all'interno delle parentesi della clausola CONTAINS. Per informazioni importanti sulla ricerca e sulle lingue, vedere [Uso delle ricerche localizzate.](-search-sql-usinglocsearches.md)
 
 > [!NOTE]  
 > Le impostazioni locali di ricerca predefinite sono le impostazioni locali predefinite del sistema.
 
-La parte della condizione contains deve essere racchiusa tra virgolette singole per singole parole o virgolette doppie per le frasi ed è costituita da uno o più termini di ricerca di contenuto combinati usando gli operatori logici \_ **AND** **o OR.** È possibile usare l'operatore unario **facoltativo NOT** dopo un **operatore AND** per negare il valore logico di un termine di ricerca del contenuto.
+La parte contains condition deve essere racchiusa tra virgolette singole per singole parole o virgolette doppie per le frasi ed è costituita da uno o più termini di ricerca del contenuto combinati usando gli operatori logici \_ **AND** **o OR**. È possibile usare l'operatore unario **facoltativo NOT** dopo un **operatore AND** per negare il valore logico di un termine di ricerca contenuto.
 
 > [!NOTE]  
-> L'operatore **NOT** può verificarsi solo dopo **AND**. Non è possibile usare **l'operatore NOT** se è presente una sola condizione di corrispondenza o dopo l'operatore **OR.**
+> L'operatore **NOT** può verificarsi solo dopo **AND**. Non è possibile usare **l'operatore NOT** se è presente una sola condizione di corrispondenza o dopo **l'operatore OR.**
 
 È possibile usare le parentesi per raggruppare e annidare i termini di ricerca del contenuto. Nella tabella seguente viene descritto l'ordine di precedenza per gli operatori logici.
 
-| Ordine (precedenza) | Operatore logico |
+| Order (precedenza) | Operatore logico |
 |--------------------|------------------|
 | Primo (più alto)    | **NOT**          |
 | Secondo             | **AND**          |
-| Terza (più bassa)     | **OR**           |
+| Terzo (più basso)     | **OR**           |
 
-Gli operatori logici dello stesso tipo sono associativi e non esiste alcun ordine di calcolo specificato. Ad esempio, (A **AND** B) **AND** (C **AND** D) può essere calcolato (B **AND** C) **AND** (A **AND** D) senza alcuna modifica nel risultato logico.
+Gli operatori logici dello stesso tipo sono associativi e non esiste un ordine di calcolo specificato. Ad esempio, (A **AND** B) **AND** (C **AND** D) può essere calcolato (B **AND** C) **AND** (A **AND** D) senza alcuna modifica nel risultato logico.
 
-La tabella seguente descrive i tipi di termini di ricerca del contenuto.
+Nella tabella seguente vengono descritti i tipi di termini di ricerca del contenuto.
 
 <!-- markdownlint-disable MD033 -->
 <table>
@@ -102,7 +102,7 @@ Or, to use a double quote mark:
 </tr>
 <tr class="odd">
 <td>Wildcard (Carattere jolly)</td>
-<td>Parole o frasi con l'asterisco (*) aggiunto alla fine. Per altre informazioni, vedere <a href="-search-sql-wildcards.md">Uso dei caratteri jolly nel predicato CONTAINS.</a></td>
+<td>Parole o frasi con l'asterisco (*) aggiunto alla fine. Per altre informazioni, vedere <a href="-search-sql-wildcards.md">Uso di caratteri jolly nel predicato CONTAINS</a>.</td>
 <td><div class="code">
 <span data-codelanguage=""></span>
 <table>
@@ -124,7 +124,7 @@ Matches &quot;computer&quot;, &quot;computers&quot;,
 </tr>
 <tr class="even">
 <td>Colonna full-text</td>
-<td>Nome di colonna della proprietà rispetto al quale trovare la corrispondenza con la query rimanente.</td>
+<td>Nome della colonna della proprietà rispetto al quale trovare la corrispondenza con la query rimanente.</td>
 <td><div class="code">
 <span data-codelanguage=""></span>
 <table>
@@ -190,7 +190,7 @@ Matches &quot;computer&quot;, &quot;computers&quot;,
 </tr>
 <tr class="odd">
 <td>FormsOf</td>
-<td>Corrisponde a una parola e alle versioni flessezionari di tale parola. Per altre informazioni, vedere <a href="-search-sql-formsof.md">FormsOF Term</a>.</td>
+<td>Corrisponde a una parola e alle versioni inflessizionali di tale parola. Per altre informazioni, vedere <a href="-search-sql-formsof.md">FORMSOF Term</a>.</td>
 <td><div class="code">
 <span data-codelanguage=""></span>
 <table>
@@ -213,7 +213,7 @@ Matches &quot;happy&quot;, &quot;happier&quot;,
 </tr>
 <tr class="even">
 <td>IsAbout</td>
-<td>Combina i risultati corrispondenti su più parole, frasi o termini di ricerca con caratteri jolly. Ogni termine di ricerca può essere ponderato facoltativamente. Facoltativamente, è possibile specificare il metodo di calcolo della classificazione, che combina i pesi e il numero di elementi corrispondenti al documento. Per altre informazioni, vedere <a href="-search-sql-isabout.md">Termine ISABOUT.</a></td>
+<td>Combina i risultati corrispondenti su più parole, frasi o termini di ricerca con caratteri jolly. Ogni termine di ricerca può essere ponderato facoltativamente. Facoltativamente, è possibile specificare il metodo di calcolo della classificazione, che combina i pesi e il numero di elementi corrispondenti al documento. Per altre informazioni, vedere <a href="-search-sql-isabout.md">Termine ISABOUT</a>.</td>
 <td><div class="code">
 <span data-codelanguage=""></span>
 <table>
@@ -240,7 +240,7 @@ Matches &quot;happy&quot;, &quot;happier&quot;,
 
 Questa sezione include gli argomenti seguenti:
 
-- [Utilizzo di caratteri jolly nel predicato CONTAINS](-search-sql-wildcards.md)
+- [Uso di caratteri jolly nel predicato CONTAINS](-search-sql-wildcards.md)
 - [Termine FORMSOF](-search-sql-formsof.md)
 - [Termine ISABOUT](-search-sql-isabout.md)
 - [NEAR Term](-search-sql-near.md)

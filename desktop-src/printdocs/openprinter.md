@@ -52,7 +52,7 @@ BOOL OpenPrinter(
 
 Puntatore a una stringa con terminazione Null che specifica il nome della stampante o del server di stampa, l'oggetto stampante, XcvMonitor o XcvPort.
 
-Per un oggetto stampante usare: PrinterName, Job xxxx. Per un oggetto XcvMonitor, usare: ServerName, XcvMonitor MonitorName. Per XcvPort, usare: ServerName, XcvPort PortName.
+Per un oggetto stampante usare: PrinterName, Job xxxx. Per un oggetto XcvMonitor, usare: ServerName, XcvMonitor MonitorName. Per un oggetto XcvPort, usare: ServerName, XcvPort PortName.
 
 Se **NULL,** indica il server di stampa locale.
 
@@ -61,7 +61,7 @@ Se **NULL,** indica il server di stampa locale.
 *phPrinter* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile che riceve un handle (non thread-safe) per l'oggetto stampante o server di stampa aperto.
+Puntatore a una variabile che riceve un handle (non thread-safe) per la stampante aperta o l'oggetto server di stampa.
 
 Il *parametro phPrinter* può restituire un handle Xcv da usare con la funzione XcvData. Per altre informazioni su XcvData, vedere DDK.
 
@@ -82,47 +82,47 @@ Se la funzione ha esito negativo, il valore restituito è zero.
 
 ## <a name="remarks"></a>Commenti
 
-Non chiamare questo metodo in [**DllMain.**](/windows/desktop/Dlls/dllmain)
+Non chiamare questo metodo in [**DllMain**](/windows/desktop/Dlls/dllmain).
 
 > [!Note]  
-> Un handle ottenuto per una stampante remota da una chiamata a **OpenPrinter** per una stampante remota accede alla stampante tramite una cache locale nel servizio spooler di stampa. Questa cache non è accurata in tempo reale. Per ottenere dati accurati, sostituire la chiamata OpenPrinter con [**OpenPrinter2**](openprinter2.md) con pOptions.dwFlags impostato su PRINTER \_ OPTION NO \_ \_ CACHE. Si noti che solo OpenPrinter2W è funzionale. La funzione restituisce un handle della stampante che usa altre chiamate all'API di stampa e ignora la cache locale. Questo metodo si blocca durante l'attesa della comunicazione di rete con la stampante remota, pertanto potrebbe non essere restituito immediatamente. La velocità di ritorno di questa funzione dipende da fattori di run-time, ad esempio lo stato della rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante, difficili da prevedere durante la scrittura di un'applicazione. Chiamando questa funzione da un thread che gestisce l'interazione con l'interfaccia utente, l'applicazione potrebbe non rispondere.
+> Un handle ottenuto per una stampante remota da una chiamata a **OpenPrinter** per una stampante remota accede alla stampante tramite una cache locale nel servizio spooler di stampa. Questa cache non è accurata in tempo reale. Per ottenere dati accurati, sostituire la chiamata OpenPrinter con [**OpenPrinter2**](openprinter2.md) con pOptions.dwFlags impostato su PRINTER \_ OPTION NO \_ \_ CACHE. Si noti che solo OpenPrinter2W è funzionale. La funzione restituisce un handle della stampante che usa altre chiamate all'API di stampa e ignora la cache locale. Questo metodo si blocca durante l'attesa della comunicazione di rete con la stampante remota, pertanto potrebbe non restituire immediatamente . La velocità di ritorno di questa funzione dipende da fattori in fase di esecuzione, ad esempio lo stato di rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante difficili da prevedere durante la scrittura di un'applicazione. Chiamando questa funzione da un thread che gestisce l'interazione dell'interfaccia utente, l'applicazione potrebbe non rispondere.
 
  
 
 > [!Note]  
-> Un handle ottenuto da una chiamata a **OpenPrinter** per una stampante remota accede alla stampante tramite una cache locale nel servizio spooler di stampa. Per impostazione predefinita, questa cache non è accurata in tempo reale. Se è necessario ottenere dati accurati, sostituire la chiamata **OpenPrinter** con [**OpenPrinter2**](openprinter2.md) con *pOptions.dwFlags* impostato su [**PRINTER OPTION NO \_ \_ \_ CACHE**](printer-options.md). Si noti che **solo OpenPrinter2W** è funzionale. In questo modo la funzione restituisce un handle della stampante che esegue altre chiamate all'API di stampa per ignorare la cache locale. Si noti che questo approccio si blocca durante l'attesa della comunicazione di rete round trip alla stampante remota, pertanto potrebbe non restituire immediatamente il controllo. La velocità di ritorno di questa funzione dipende da fattori di run-time, ad esempio lo stato della rete, la configurazione del server di stampa e l'implementazione del driver della stampante, fattori difficili da prevedere durante la scrittura di un'applicazione. Pertanto, la chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non rispetti.
+> Un handle ottenuto da una chiamata a **OpenPrinter** per una stampante remota accederà alla stampante tramite una cache locale nel servizio spooler di stampa. Per impostazione predefinita, questa cache non è accurata in tempo reale. Se è necessario ottenere dati accurati, sostituire la chiamata **OpenPrinter** con [**OpenPrinter2**](openprinter2.md) con *pOptions.dwFlags* impostato su [**PRINTER OPTION NO \_ \_ \_ CACHE**](printer-options.md). Si noti che **solo OpenPrinter2W** è funzionale. In questo modo la funzione restituisce un handle della stampante che esegue altre chiamate all'API di stampa per ignorare la cache locale. Si noti che questo approccio si blocca durante l'attesa della comunicazione di rete round trip con la stampante remota, quindi potrebbe non restituire immediatamente. La velocità di ritorno di questa funzione dipende da fattori in fase di esecuzione, ad esempio lo stato di rete, la configurazione del server di stampa e l'implementazione del driver della stampante, fattori difficili da prevedere durante la scrittura di un'applicazione. Pertanto, chiamando questa funzione da un thread che gestisce l'interazione con l'interfaccia utente, l'applicazione potrebbe non rispondere.
 
  
 
-L'handle a cui *punta phPrinter* non è thread-safe. Se i chiamanti devono usarlo contemporaneamente su più thread, devono fornire l'accesso di sincronizzazione personalizzato all'handle della stampante usando le funzioni [di sincronizzazione](/windows/desktop/Sync/synchronization-functions). Per evitare di scrivere codice personalizzato, l'applicazione può aprire un handle della stampante in ogni thread, in base alle esigenze.
+L'handle a cui punta *phPrinter* non è thread-safe. Se i chiamanti devono usarlo contemporaneamente su più thread, devono fornire l'accesso di sincronizzazione personalizzato all'handle della stampante usando le funzioni [di sincronizzazione](/windows/desktop/Sync/synchronization-functions). Per evitare di scrivere codice personalizzato, l'applicazione può aprire un handle della stampante in ogni thread, in base alle esigenze.
 
 Il *parametro pDefault* consente di specificare il tipo di dati e i valori della modalità dispositivo usati per la stampa di documenti inviati dalla [**funzione StartDocPrinter.**](startdocprinter.md) È tuttavia possibile eseguire l'override di questi valori usando la [**funzione SetJob**](setjob.md) dopo l'avvio di un documento.
 
-Le impostazioni [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) definite nella struttura [**PRINTER \_ DEFAULTS**](printer-defaults.md) del parametro *pDefault* non vengono usate quando il valore del membro *pDatatype* della struttura [**DOC INFO \_ \_ 1**](doc-info-1.md) passato nel parametro *pDocInfo* della [**chiamata StartDocPrinter**](startdocprinter.md) è "RAW". Quando un documento di alto livello (ad esempio un file Adobe PDF o Microsoft Word) o altri dati della stampante (ad esempio PCL, PS o HPGL) vengono inviati direttamente a una stampante con *pDatatype* impostato su "RAW", il documento deve descrivere completamente le impostazioni del processo di stampa in stile **DEVMODE** nella lingua compresa dall'hardware.
+Le impostazioni [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) definite nella struttura [**PRINTER \_ DEFAULTS**](printer-defaults.md) del parametro *pDefault* non vengono usate quando il valore del membro *pDatatype* della struttura [**DOC INFO \_ \_ 1**](doc-info-1.md) passato nel *parametro pDocInfo* della [**chiamata StartDocPrinter**](startdocprinter.md) è "RAW". Quando un documento di alto livello (ad esempio un file Adobe PDF o Microsoft Word) o altri dati della stampante (ad esempio PCL, PS o HPGL) viene inviato direttamente a una stampante con *pDatatype* impostato su "RAW", il documento deve descrivere completamente le impostazioni del processo di stampa in stile **DEVMODE** nella lingua compresa dall'hardware.
 
-È possibile chiamare la **funzione OpenPrinter** per aprire un handle a un server di stampa o per determinare i diritti di accesso di un client a un server di stampa. A tale scopo, specificare il nome del server di stampa nel parametro *pPrinterName,* impostare i membri **pDatatype** e **pDevMode** della struttura [**PRINTER \_ DEFAULTS**](printer-defaults.md) su **NULL** e impostare il membro **DesiredAccess** per specificare un valore della maschera di accesso al server, ad esempio SERVER \_ ALL \_ ACCESS. Al termine dell'operazione con l'handle, passarlo alla [**funzione ClosePrinter**](closeprinter.md) per chiuderlo.
+È possibile chiamare la **funzione OpenPrinter** per aprire un handle per un server di stampa o per determinare i diritti di accesso di un client a un server di stampa. A tale scopo, specificare il nome del server di stampa nel *parametro pPrinterName,* impostare i membri **pDatatype** e **pDevMode** della struttura [**PRINTER \_ DEFAULTS**](printer-defaults.md) su **NULL** e impostare il membro **DesiredAccess** per specificare un valore della maschera di accesso al server, ad esempio SERVER \_ ALL \_ ACCESS. Al termine dell'operazione, passarlo alla [**funzione ClosePrinter**](closeprinter.md) per chiuderlo.
 
-Usare il **membro DesiredAccess** della [**struttura PRINTER \_ DEFAULTS**](printer-defaults.md) per specificare i diritti di accesso necessari per la stampante. I diritti di accesso possono essere uno dei seguenti. Se *pDefault è* **NULL,** i diritti di accesso sono PRINTER \_ ACCESS \_ USE.)
+Usare il **membro DesiredAccess** della struttura [**PRINTER \_ DEFAULTS**](printer-defaults.md) per specificare i diritti di accesso necessari per la stampante. I diritti di accesso possono essere uno dei seguenti. Se *pDefault è* **NULL,** i diritti di accesso sono PRINTER \_ ACCESS \_ USE.)
 
 
 
 | Valore di Accesso desiderato                        | Significato                                                                                                                                                                                      |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AMMINISTRAZIONE \_ DELL'ACCESSO ALLE \_ STAMPANTI                 | Per eseguire attività amministrative, ad esempio quelle fornite da [**SetPrinter.**](setprinter.md)                                                                                                 |
+| AMMINISTRAZIONE \_ DELL'ACCESSO ALLA \_ STAMPANTE                 | Per eseguire attività amministrative, ad esempio quelle fornite da [**SetPrinter**](setprinter.md).                                                                                                 |
 | USO \_ DELL'ACCESSO ALLA \_ STAMPANTE                        | Per eseguire operazioni di stampa di base.                                                                                                                                                        |
-| PRINTER \_ ALL \_ ACCESS                        | Per eseguire tutte le attività amministrative e le operazioni di stampa di base ad eccezione di SYNCHRONIZE (vedere [Diritti di accesso standard.](/windows/desktop/SecAuthZ/standard-access-rights)                                     |
-| ACCESSO \_ ALLE \_ STAMPANTI - GESTIONE \_ LIMITATA            | Per eseguire attività amministrative, ad esempio quelle fornite da [**SetPrinter**](setprinter.md) e [**SetPrinterData.**](setprinterdata.md) Questo valore è disponibile a partire da Windows 8.1. |
-| valori di sicurezza generici, ad esempio WRITE \_ DAC | Per consentire diritti di accesso di controllo specifici. Vedere [Diritti di accesso standard.](/windows/desktop/SecAuthZ/standard-access-rights)                                                                                      |
+| ACCESSO A PRINTER \_ ALL \_                        | Per eseguire tutte le attività amministrative e le operazioni di stampa di base ad eccezione di SYNCHRONIZE (vedere [Diritti di accesso standard](/windows/desktop/SecAuthZ/standard-access-rights).                                     |
+| GESTIONE LIMITATA \_ \_ DELL'ACCESSO ALLA \_ STAMPANTE            | Per eseguire attività amministrative, ad esempio quelle fornite da [**SetPrinter**](setprinter.md) e [**SetPrinterData**](setprinterdata.md). Questo valore è disponibile a partire da Windows 8.1. |
+| valori di sicurezza generici, ad esempio l'applicazione livello dati WRITE \_ | Per consentire diritti di accesso di controllo specifici. Vedere [Diritti di accesso standard.](/windows/desktop/SecAuthZ/standard-access-rights)                                                                                      |
 
 
 
  
 
-Se un utente non dispone dell'autorizzazione per aprire una stampante o un server di stampa specificato con l'accesso desiderato, la chiamata **a OpenPrinter** avrà esito negativo con un valore restituito pari a zero e [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituirà il valore ERROR \_ ACCESS \_ DENIED.
+Se un utente non dispone dell'autorizzazione per aprire una stampante o un server di stampa specificato con l'accesso desiderato, la chiamata **OpenPrinter** avrà esito negativo con un valore restituito pari a zero e [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituirà il valore ERROR \_ ACCESS \_ DENIED.
 
 ## <a name="examples"></a>Esempio
 
-Per un programma di esempio che usa questa funzione, vedere [Procedura: Stampare usando l'API di stampa GDI.](how-to--print-using-the-gdi-print-api.md)
+Per un programma di esempio che usa questa funzione, vedere [Procedura: Stampare usando l'API di stampa GDI](how-to--print-using-the-gdi-print-api.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -132,7 +132,7 @@ Per un programma di esempio che usa questa funzione, vedere [Procedura: Stampare
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool.h (includere Windows.h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (include Windows.h)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
 | DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nomi Unicode e ANSI<br/>   | **OpenPrinterW** (Unicode) e **OpenPrinterA** (ANSI)<br/>                                         |

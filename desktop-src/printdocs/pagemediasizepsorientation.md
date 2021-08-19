@@ -1,5 +1,5 @@
 ---
-description: Ottenere informazioni sul parametro PageMediaSizePSOrientation. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Ottenere informazioni sul parametro PageMediaSizePSOrientation. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: b091c250-66f2-47cc-a012-1526c0ed02c9
 title: PageMediaSizePSOrientation
 ms.topic: article
@@ -13,9 +13,9 @@ ms.locfileid: "117868186"
 ---
 # <a name="pagemediasizepsorientation"></a>PageMediaSizePSOrientation
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Specifica l'orientamento relativo alla direzione dell'orientamento del feed (Riferimento PostScript [Printer Description File Format Specification](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)).
+Specifica l'orientamento relativo alla direzione dell'orientamento del feed (riferimento PostScript [Printer Description File Format Specification](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)).
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -77,9 +77,9 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DefaultValue<br/> | integer<br/> | 0<br/>                 |
 | MaxValue<br/>     | numero intero<br/> | 3<br/>                 |
 | Minvalue<br/>     | integer<br/> | 0<br/>                 |
-| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/>   |
+| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/>   |
 | Multipli<br/>     | integer<br/> | 1<br/>                 |
-| UnitType<br/>     | string<br/>  | PageMediaSizeEnum<br/> |
+| Tipo di unità<br/>     | string<br/>  | PageMediaSizeEnum<br/> |
 
 
 

@@ -3,7 +3,7 @@ title: Funzione FreeFixupInfo (NapUtil.h)
 description: Libera una struttura di dati FixupInfo.
 ms.assetid: 6bf71ccf-2618-46a3-8a04-9f83a5b7b429
 keywords:
-- Funzione FreeFixupInfo nap
+- Funzione FreeFixupInfo NAP
 topic_type:
 - apiref
 api_name:
@@ -54,11 +54,11 @@ Puntatore alla [**struttura di dati FixupInfo**](/windows/win32/api/naptypes/ns-
 
 ## <a name="remarks"></a>Commenti
 
-Tutte le interfacce COM supportate dal sistema di Protezione accesso alla rete usano regole di gestione della memoria COM standard e allocatori di memoria COM (**CoTaskMemAlloc** e **CoTaskMemFree**):
+Tutte le interfacce COM supportate dal sistema nap usano le regole di gestione della memoria COM standard e gli allocatori di memoria COM (**CoTaskMemAlloc** e **CoTaskMemFree**):
 
--   **I** parametri in vengono allocati e liberati dal chiamante.
--   **I** parametri out vengono allocati dal chiamato e liberati dal chiamante usando **CoTaskMem**.
--   **I parametri in/out** vengono allocati dal chiamante, liberati e riallocati dal chiamato e infine liberati dal chiamante, usando **CoTaskMem**.
+-   **In** i parametri vengono allocati e liberati dal chiamante.
+-   **I** parametri out vengono allocati dal chiamato e liberati dal chiamante usando **CoTaskMem.**
+-   **I parametri in/out** vengono allocati dal chiamante, liberati e riallocati dal chiamato e infine liberati dal chiamante, usando **CoTaskMem.**
 
 Tutte le funzioni di Protezione accesso alla rete per liberare memoria liberano anche tutti i puntatori incorporati.
 
@@ -68,8 +68,8 @@ Tutte le funzioni di Protezione accesso alla rete per liberare memoria liberano 
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                 |
 | Intestazione<br/>                   | <dl> <dt>NapUtil.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl> |
 

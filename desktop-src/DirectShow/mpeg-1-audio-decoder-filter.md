@@ -1,19 +1,19 @@
 ---
-description: Filtro decodificatore MPEG-1 audio
+description: Filtro decodificatore audio MPEG-1
 ms.assetid: 2f695ac6-7d4b-41a8-b4c5-83fb9d20ab9d
-title: Filtro decodificatore MPEG-1 audio
+title: Filtro decodificatore audio MPEG-1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0f2c68243544a8c6a77cbd8101c85d68f393c3d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0324cf9626ad73192bd403581f5933907f014ce93e6f23a05fa1bd155863e009
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118153017"
 ---
-# <a name="mpeg-1-audio-decoder-filter"></a>Filtro decodificatore MPEG-1 audio
+# <a name="mpeg-1-audio-decoder-filter"></a>Filtro decodificatore audio MPEG-1
 
-Decodifica l'audio MPEG-1 Layer I e il livello II al PCM.
+Decodifica l'audio MPEG-1 Layer I e Layer II in PCM.
 
 
 
@@ -29,28 +29,28 @@ Decodifica l'audio MPEG-1 Layer I e il livello II al PCM.
 </tr>
 <tr class="even">
 <td>Tipi di supporti pin di input</td>
-<td>MEDIATYPE_Audio, FORMAT_WaveFormatEx<br/> I sottotipi seguenti sono validi:<br/>
+<td>MEDIATYPE_Audio, FORMAT_WaveFormatEx<br/> Sono validi i sottotipi seguenti:<br/>
 <ul>
 <li>MEDIASUBTYPE_MPEG1Packet</li>
 <li>MEDIASUBTYPE_MPEG1Payload</li>
 <li>MEDIASUBTYPE_MPEG1AudioPayload</li>
-<li>GUID_NULL</li>
+<li>Guid_null</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Interfacce pin di input</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>IMemInputPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>Ipin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a></td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>IMemInputPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a></td>
 </tr>
 <tr class="even">
 <td>Tipi di supporti pin di output</td>
 <td>MEDIATYPE_Audio, MEDIASUBTYPE_PCM</td>
 </tr>
 <tr class="odd">
-<td>Interfacce del PIN di output</td>
-<td><a href="/windows/desktop/api/Control/nn-control-imediaposition"><strong>IMediaPosition</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"><strong>IMediaSeeking</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>Ipin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a></td>
+<td>Interfacce pin di output</td>
+<td><a href="/windows/desktop/api/Control/nn-control-imediaposition"><strong>IMediaPosition,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"><strong>IMediaSeeking,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a></td>
 </tr>
 <tr class="even">
-<td>CLSID filtro</td>
+<td>Filtro CLSID</td>
 <td>CLSID_CMpegAudioCodec</td>
 </tr>
 <tr class="odd">
@@ -80,7 +80,7 @@ Decodifica l'audio MPEG-1 Layer I e il livello II al PCM.
 
 <dl> <dt>
 
-[Filtri DirectShow](directshow-filters.md)
+[DirectShow Filtri](directshow-filters.md)
 </dt> </dl>
 
  

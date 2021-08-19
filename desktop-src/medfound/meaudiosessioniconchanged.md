@@ -1,40 +1,40 @@
 ---
-description: Generato dal renderer audio quando viene modificata l'icona della sessione audio.
+description: Generato dal renderer audio quando l'icona della sessione audio cambia.
 ms.assetid: 72aae901-e5fe-481d-babb-459038abd629
-title: Evento MEAudioSessionIconChanged (Mfobjects. h)
+title: Evento MEAudioSessionIconChanged (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba7a12a4e82585c270206d595d32ba82c4e9e594
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ce466cf88b93c9cf806a2a6b70f76b084e8aa0b2c8fb2910a7391337a13b2f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118062460"
 ---
-# <a name="meaudiosessioniconchanged-event"></a>Evento MEAudioSessionIconChanged
+# <a name="meaudiosessioniconchanged-event"></a>EVENTO MEAudioSessionIconChanged
 
-Generato dal renderer audio quando viene modificata l'icona della sessione audio.
+Generato dal renderer audio quando l'icona della sessione audio cambia.
 
-La sessione multimediale trasmette questo evento all'applicazione.
+La sessione multimediale inoltra questo evento all'applicazione.
 
 ## <a name="event-values"></a>Valori dell'evento
 
-I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
+I valori possibili recuperati [**da IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
 
 
 
 | VARTYPE                | Descrizione                                                                               |
 |------------------------|-------------------------------------------------------------------------------------------|
-| VT \_ vuoto<br/>   | Nessun dato dell'evento.<br/> <br/>                                                     |
-| VT \_ sconosciuto<br/> | Puntatore all'interfaccia [**IMFAudioPolicy**](/windows/desktop/api/mfidl/nn-mfidl-imfaudiopolicy) .<br/> <br/> |
+| VT \_ EMPTY<br/>   | Nessun dato dell'evento.<br/> <br/>                                                     |
+| VT \_ UNKNOWN<br/> | Puntatore [**all'interfaccia IMFAudioPolicy.**](/windows/desktop/api/mfidl/nn-mfidl-imfaudiopolicy)<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Questo evento viene inviato dal sink di flusso del renderer audio. L'evento viene generato quando il renderer audio riceve un evento [**IAudioSessionEvents:: OnIconPathChanged**](/windows/win32/api/audiopolicy/nf-audiopolicy-iaudiosessionevents-oniconpathchanged) dalla sessione audio.
+Questo evento viene inviato dal sink di flusso del renderer audio. L'evento viene attivato quando il renderer audio riceve un evento [**IAudioSessionEvents::OnIconPathChanged**](/windows/win32/api/audiopolicy/nf-audiopolicy-iaudiosessionevents-oniconpathchanged) dalla sessione audio.
 
-Per ottenere l'icona nuova, chiamare [**IMFAudioPolicy:: GetIconPath**](/windows/desktop/api/mfidl/nf-mfidl-imfaudiopolicy-geticonpath).
+Per ottenere la nuova icona, chiamare [**IMFAudioPolicy::GetIconPath**](/windows/desktop/api/mfidl/nf-mfidl-imfaudiopolicy-geticonpath).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -42,9 +42,9 @@ Per ottenere l'icona nuova, chiamare [**IMFAudioPolicy:: GetIconPath**](/windows
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 
 
@@ -55,10 +55,10 @@ Per ottenere l'icona nuova, chiamare [**IMFAudioPolicy:: GetIconPath**](/windows
 [**IMFAudioPolicy::GetIconPath**](/windows/desktop/api/mfidl/nf-mfidl-imfaudiopolicy-geticonpath)
 </dt> <dt>
 
-[Eventi Media Foundation](media-foundation-events.md)
+[Media Foundation eventi](media-foundation-events.md)
 </dt> <dt>
 
-[Renderer audio di streaming](streaming-audio-renderer.md)
+[Streaming Audio Renderer](streaming-audio-renderer.md)
 </dt> </dl>
 
  

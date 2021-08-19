@@ -3,23 +3,23 @@ title: Metodo OnCreate
 description: Metodo OnCreate
 ms.assetid: b23546b3-968f-41d8-ba07-3d694152c3ed
 keywords:
-- Plug-in di Windows Media Player, metodo OnCreate
+- Windows Media Player plug-in, metodo OnCreate
 - plug-in, metodo OnCreate
 - plug-in dell'interfaccia utente, metodo OnCreate
 - Plug-in dell'interfaccia utente, metodo OnCreate
-- OnCreate (metodo)
+- Metodo OnCreate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d896ed9ebc6e9dc2bff9ff24ad23d50f7905c24
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ac52b1c58c6799f89d29fb1ee24c09767fee26729e760b2b454f1a359bd57596
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118109"
 ---
 # <a name="the-oncreate-method"></a>Metodo OnCreate
 
-Il metodo OnCreate viene chiamato quando viene creata per la prima volta la finestra del plug-in.
+Il metodo OnCreate viene chiamato quando la finestra del plug-in viene creata per la prima volta.
 
 Il codice seguente viene usato per implementare questo metodo:
 
@@ -38,7 +38,7 @@ LRESULT OnCreate(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled)
 
 
 
-Questo metodo crea il pulsante **Search** e lo associa all'ID del \_ comando di ricerca IDC, definito all'inizio del file:
+Questo metodo crea **il pulsante** Cerca e lo associa all'ID del comando IDC SEARCH, definito \_ all'inizio del file:
 
 
 ```C++
@@ -48,7 +48,7 @@ Questo metodo crea il pulsante **Search** e lo associa all'ID del \_ comando di 
 
 
 
-Questo ID comando è mappato al metodo OnSearch nella sezione della mappa messaggi descritta in precedenza.
+Questo ID di comando viene mappato al metodo OnSearch nella sezione della mappa messaggi descritta in precedenza.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -57,9 +57,9 @@ Questo ID comando è mappato al metodo OnSearch nella sezione della mappa messag
 [**Implementazione di CPluginWindow**](implementing-cpluginwindow.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

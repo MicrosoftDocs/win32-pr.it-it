@@ -1,5 +1,5 @@
 ---
-title: 'Funzione AppendStructuredBuffer:: Append'
+title: Funzione AppendStructuredBuffer::Append
 description: Aggiunge un valore alla fine del buffer.
 ms.assetid: 667bc6dc-c0d0-419a-9227-99ce30b9cc73
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 79db73558cb243437560cc77ed66b64f2807fe13
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: 863269c5127915af82b8ef82aa36b60b17941d8627b3f81a789f75618219c773
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "103956033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117725395"
 ---
-# <a name="append-function"></a>Append (funzione)
+# <a name="append-function"></a>Funzione Append
 
 Aggiunge un valore alla fine del buffer.
 
@@ -28,7 +28,7 @@ Aggiunge un valore alla fine del buffer.
 
 ``` syntax
 void Append(
-  in T value
+  in T value
 );
 ```
 
@@ -36,7 +36,7 @@ void Append(
 
 <dl> <dt>
 
-*valore* \[ di in\]
+*value* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **T**
@@ -57,13 +57,13 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -72,12 +72,12 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [AppendStructuredBuffer](sm5-object-appendstructuredbuffer.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

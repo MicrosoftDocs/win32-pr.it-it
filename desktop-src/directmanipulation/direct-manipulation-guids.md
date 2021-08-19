@@ -1,48 +1,48 @@
 ---
-description: I GUID della classe di manipolazione diretta seguenti sono definiti in DirectManipulation. idl.
+description: I GUID delle classi di manipolazione diretta seguenti sono definiti in DirectManipulation.idl.
 ms.assetid: 6747D082-4B7B-4C7E-A230-2E8C8412FABD
 title: GUID di manipolazione diretta
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 57dfa5701d7f01a9738206e7a2e3d669f6cf6a4a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3ee67206bf9395c3a338dba27c9365578d30d7304f465d93fdc90322a77a8a0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118280542"
 ---
 # <a name="direct-manipulation-guids"></a>GUID di manipolazione diretta
 
-I GUID della classe di [manipolazione diretta](direct-manipulation-portal.md) seguenti sono definiti in DirectManipulation. idl.
+I GUID [delle classi di](direct-manipulation-portal.md) manipolazione diretta seguenti sono definiti in DirectManipulation.idl.
 
-- [Master Class-ID](#master-class-ids)
-- [Classe di contenuto secondaria-ID](#secondary-content-class-ids)
-- [Classe degli oggetti Behavior-ID](#behavior-objects-class-ids)
+- [ID di classe master](#master-class-ids)
+- [ID di classe di contenuto secondario](#secondary-content-class-ids)
+- [ID di classe degli oggetti di comportamento](#behavior-objects-class-ids)
 - [Argomenti correlati](#related-topics)
 
-## <a name="master-class-ids"></a>Master Class-ID
+## <a name="master-class-ids"></a>ID di classe master
 
 | GUID                                     | Descrizione                                                                                                                                                                                                                                                                                       |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **54E211B6-3650-4F75-8334-FA359598E1C5** | Classe DirectManipulationManager. Questo oggetto fornisce l'accesso a tutte le funzionalità di [manipolazione diretta](direct-manipulation-portal.md) e le API disponibili per l'applicazione.                                                                                                                         |
-| **79DEA627-A08A-43AC-8EF5-6900B9299126** | Classe DCompManipulationCompositor. Si tratta di un'implementazione di [**IDirectManipulationCompositor**](/windows/win32/api/DirectManipulation/nn-directmanipulation-idirectmanipulationcompositor) che esegue il wrapping di DirectComposition. Tramite questo oggetto compositor DirectManipulation può applicare l'output impostando le trasformazioni direttamente nell'albero DComp. |
+| **54E211B6-3650-4F75-8334-FA359598E1C5** | Classe DirectManipulationManager. Questo oggetto fornisce [l'accesso](direct-manipulation-portal.md) a tutte le API e le funzionalità di manipolazione diretta disponibili per l'applicazione.                                                                                                                         |
+| **79DEA627-A08A-43AC-8EF5-6900B9299126** | Classe DCompManipulationCompositor. Si tratta di un'implementazione [**di IDirectManipulationCompositor**](/windows/win32/api/DirectManipulation/nn-directmanipulation-idirectmanipulationcompositor) che esegue il wrapping di DirectComposition. Tramite questo oggetto compositor DirectManipulation può applicare l'output impostando le trasformazioni direttamente nell'albero DComp. |
 
-## <a name="secondary-content-class-ids"></a>Classe di contenuto secondaria-ID
+## <a name="secondary-content-class-ids"></a>ID di classe di contenuto secondario
 
 | GUID                                  | Descrizione                                                                                                                      |
 |---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| **\_VERTICALINDICATORCONTENT CLSID**   | Indicatore di panning verticale. Elemento visivo che mostra la posizione corrente nel contenuto che si estende verticalmente all'esterno dello schermo.     |
-| **\_HORIZONTALINDICATORCONTENT CLSID** | Indicatore di panning orizzontale. Elemento visivo che mostra la posizione corrente nel contenuto che si estende orizzontalmente fuori schermo. |
-| **\_VIRTUALVIEWPORTCONTENT CLSID**     | Viewport virtuale. Un viewport virtuale può essere usato per rispettare gli elementi di posizione fissa per i viewport con lo zoom configurato.          |
+| **CLSID \_ VerticalIndicatorContent**   | Indicatore di panoramica verticale. Elemento visivo che mostra la posizione corrente nel contenuto che si estende verticalmente all'esterno dello schermo.     |
+| **CLSID \_ HorizontalIndicatorContent** | Indicatore di panoramica orizzontale. Elemento visivo che mostra la posizione corrente nel contenuto che si estende orizzontalmente all'esterno dello schermo. |
+| **CLSID \_ VirtualViewportContent**     | Viewport virtuale. Un viewport virtuale può essere usato per rispettare gli elementi di posizione fissa per i viewport con zoom configurato.          |
 
-## <a name="behavior-objects-class-ids"></a>Classe degli oggetti Behavior-ID
+## <a name="behavior-objects-class-ids"></a>ID di classe degli oggetti di comportamento
 
 | GUID                                     | Descrizione                                                                                                                                           |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **\_DRAGDROPCONFIGURATIONBEHAVIOR CLSID** | Trascinare & comportamento di rilascio. Consente di selezionare e trascinare gli elementi.                                                                                       |
-| **\_AUTOSCROLLBEHAVIOR CLSID**            | Comportamento scorrimento automatico. Consente al contenuto di scorrere automaticamente mentre si avvicina al limite di un asse specificato.                                           |
-| **\_DEFERCONTACTSERVICE CLSID**           | Comportamento di rinvio del contatto. Intervallo di tempo (in millliseconds) di attesa prima di chiamare il [**secontatto**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setcontact). |
+| **CLSID \_ DragDropConfigurationBehavior** | Trascinare & comportamento di rilascio. Consente di selezionare e trascinare gli elementi.                                                                                       |
+| **CLSID \_ AutoScrollBehavior**            | Comportamento di scorrimento automatico. Consente lo scorrimento automatico del contenuto quando si avvicina al limite di un asse specificato.                                           |
+| **CLSID \_ DeferContactService**           | Contattare il comportamento di rinvio. Intervallo di tempo (in millisecondi) di attesa prima di chiamare [**SetContact**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setcontact). |
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Manipolazione diretta](direct-manipulation-portal.md), [**ActivateConfiguration**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-activateconfiguration), [**AddConfiguration**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-addconfiguration), [**IDirectManipulationCompositor**](/windows/win32/api/DirectManipulation/nn-directmanipulation-idirectmanipulationcompositor)
+[Manipolazione diretta,](direct-manipulation-portal.md) [**ActivateConfiguration,**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-activateconfiguration) [**AddConfiguration,**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-addconfiguration) [**IDirectManipulationCompositor**](/windows/win32/api/DirectManipulation/nn-directmanipulation-idirectmanipulationcompositor)

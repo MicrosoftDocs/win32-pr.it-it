@@ -1,7 +1,7 @@
 ---
-description: Si verifica prima che IInkAnalyzer acceda ai dati del tratto.
+description: Si verifica prima dell'accesso di IInkAnalyzer ai dati del tratto.
 ms.assetid: fed46476-4531-4516-9375-d7b654efb3be
-title: 'Evento _IAnalysisEvents:: UpdateStrokesCache (IACom. h)'
+title: evento _IAnalysisEvents::UpdateStrokesCache (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 5d16011d8c5fe571d228b632fecb7a973bafcbf5
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 9a5854c8061a12dc558a2ca20ebd893880f899b2113065abd9b8122c53812aa0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106320915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118047373"
 ---
-# <a name="_ianalysiseventsupdatestrokescache-event"></a>\_Evento IAnalysisEvents:: UpdateStrokesCache
+# <a name="_ianalysiseventsupdatestrokescache-event"></a>\_Evento IAnalysisEvents::UpdateStrokesCache
 
-Si verifica prima che [**IInkAnalyzer**](iinkanalyzer.md) acceda ai dati del tratto.
+Si verifica prima [**dell'accesso di IInkAnalyzer**](iinkanalyzer.md) ai dati del tratto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,14 +40,14 @@ HRESULT UpdateStrokesCache(
 
 <dl> <dt>
 
-*ulStrokeIdsCount* \[ in\]
+*ulStrokeIdsCount* \[ Pollici\]
 </dt> <dd>
 
-Il numero di identificatori di tratto in *plStrokeIds*.
+Numero di identificatori di tratto in *plStrokeIds.*
 
 </dd> <dt>
 
-*plStrokeIds* \[ in\]
+*plStrokeIds* \[ Pollici\]
 </dt> <dd>
 
 Identificatori dei tratti i cui dati del pacchetto sono stati cancellati.
@@ -56,15 +56,15 @@ Identificatori dei tratti i cui dati del pacchetto sono stati cancellati.
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Commenti
 
-[**IInkAnalyzer**](iinkanalyzer.md) genera questo evento durante l'analisi dell'input penna quando accede a uno o più tratti per i quali sono stati cancellati i dati del pacchetto. Per aggiornare i dati del pacchetto del tratto, usare il metodo [**IInkAnalyzer:: UpdateStrokesData Method**](iinkanalyzer-updatestrokesdata.md) .
+[**L'IInkAnalyzer**](iinkanalyzer.md) genera questo evento durante l'analisi input penna quando accede a uno o più tratti per cui sono stati cancellati i dati del pacchetto. Per aggiornare i dati dei pacchetti di tratti, usare il metodo [**IInkAnalyzer::UpdateStrokesData.**](iinkanalyzer-updatestrokesdata.md)
 
-[**IInkAnalyzer**](iinkanalyzer.md) non genera questo evento quando si accede a un nodo foglia input penna parzialmente popolato quando il percorso del nodo non è stato impostato da **IInkAnalyzer**.
+[**IInkAnalyzer**](iinkanalyzer.md) non genera questo evento quando accede a un nodo foglia dell'input penna parzialmente popolato quando la posizione del nodo non è stata impostata da **IInkAnalyzer.**
 
-Per altre informazioni sulla sincronizzazione dei dati dell'applicazione con [**IInkAnalyzer**](iinkanalyzer.md), vedere [Data Proxy with Ink Analysis](data-proxy-with-ink-analysis.md).
+Per altre informazioni sulla sincronizzazione dei dati dell'applicazione con [**IInkAnalyzer,**](iinkanalyzer.md)vedere [Proxy dati con analisi input penna.](data-proxy-with-ink-analysis.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,9 +72,9 @@ Per altre informazioni sulla sincronizzazione dei dati dell'applicazione con [**
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -92,22 +92,22 @@ Per altre informazioni sulla sincronizzazione dei dati dell'applicazione con [**
 [**IInkAnalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: Analyze**](iinkanalyzer-analyze.md)
+[**Metodo IInkAnalyzer::Analyze**](iinkanalyzer-analyze.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md)
+[**Metodo IInkAnalyzer::BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: UpdateStrokesData**](iinkanalyzer-updatestrokesdata.md)
+[**Metodo IInkAnalyzer::UpdateStrokesData**](iinkanalyzer-updatestrokesdata.md)
 </dt> <dt>
 
-[**IContextNode:: CreatePartiallyPopulatedSubNode**](icontextnode-createpartiallypopulatedsubnode.md)
+[**IContextNode::CreatePartiallyPopulatedSubNode**](icontextnode-createpartiallypopulatedsubnode.md)
 </dt> <dt>
 
 [**IContextNode::GetPartiallyPopulated**](icontextnode-getpartiallypopulated.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

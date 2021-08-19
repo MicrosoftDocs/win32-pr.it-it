@@ -15,7 +15,7 @@ ms.locfileid: "118327041"
 
 In questa sezione vengono illustrati gli argomenti seguenti:
 
--   [INTERFACCIA UTENTE API](user-interface-apis.md)
+-   [Interfaccia utente API](user-interface-apis.md)
 -   [Chiamata Active Accessibility API](calling-active-accessibility-apis.md)
 -   [Guida per gli sviluppatori per Active Accessibility client](developer-s-guide-for-active-accessibility-clients.md)
 -   [Guida per gli sviluppatori per Active Accessibility server](developer-s-guide-for-active-accessibility-servers.md)

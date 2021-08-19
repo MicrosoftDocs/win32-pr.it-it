@@ -1,7 +1,7 @@
 ---
 description: Restituisce il GUID del profilo.
 ms.assetid: 184456dd-515d-4744-91f3-0ef8b4d2114d
-title: 'Metodo IScanProfile:: GetGuid (scanprofile. h)'
+title: Metodo IScanProfile::GetGUID (Scanprofile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Scanprofile.h
-ms.openlocfilehash: e3c39815e1bc88830f64f632689028c4c527a710
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 37d383d5975957c45b2aa5a0c90350f794e6f20deb9a7bfbe73c9f2d42b2bca8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118441579"
 ---
-# <a name="iscanprofilegetguid-method"></a>Metodo IScanProfile:: GetGuid
+# <a name="iscanprofilegetguid-method"></a>Metodo IScanProfile::GetGUID
 
 Restituisce il GUID del profilo.
 
@@ -39,10 +39,10 @@ HRESULT GetGUID(
 
 <dl> <dt>
 
-*retval* \[ out\]
+*retVal* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **GUID \** _
+Tipo: **\* GUID**
 
 Puntatore al GUID del profilo.
 
@@ -50,13 +50,13 @@ Puntatore al GUID del profilo.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Il GUID di un profilo viene generato automaticamente quando il profilo viene creato con [**CreateProfile**](-wia-iscanprofilemgr-createprofile.md).
+Il GUID per un profilo viene generato automaticamente quando il profilo viene creato con [**CreateProfile**](-wia-iscanprofilemgr-createprofile.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,10 +64,10 @@ Il GUID di un profilo viene generato automaticamente quando il profilo viene cre
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>Scanprofile. h</dt> </dl>    |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                        |
+| Intestazione<br/>                   | <dl> <dt>Scanprofile.h</dt> </dl>    |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 

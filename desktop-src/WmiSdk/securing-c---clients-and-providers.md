@@ -16,13 +16,13 @@ ms.locfileid: "118316160"
 
 Sia i provider C++ che le applicazioni client devono eseguire molte delle stesse operazioni per mantenere la sicurezza WMI.
 
-Le applicazioni client devono impostare correttamente i livelli [di rappresentazione](setting-the-default-process-security-level-using-c-.md) e [autenticazione](setting-authentication-in-wmi.md) DCOM durante la connessione a WMI. I callback dalle [chiamate asincrone comportano](setting-security-on-an-asynchronous-call.md) rischi per la sicurezza, pertanto le applicazioni client devono eseguire controlli di accesso per garantire che il callback sia da un'origine attendibile. [](performing-access-checks.md) I client devono proteggere i [consumer di eventi temporanei e permanenti.](securing-wmi-events.md)
+Le applicazioni client devono impostare correttamente i livelli di [rappresentazione e](setting-the-default-process-security-level-using-c-.md) [autenticazione](setting-authentication-in-wmi.md) DCOM durante la connessione a WMI. I callback delle [chiamate asincrone](setting-security-on-an-asynchronous-call.md) comportano [](performing-access-checks.md) rischi per la sicurezza, pertanto le applicazioni client devono eseguire controlli di accesso per assicurarsi che il callback sia da un'origine attendibile. I client devono proteggere sia i [consumer di eventi temporanei che permanenti.](securing-wmi-events.md)
 
 Un provider può [eseguire controlli di accesso](performing-access-checks.md) per assicurarsi che le risorse create siano accessibili solo dai client appropriati.
 
-Sia i provider che i client possono anche impostare la sicurezza su una [connessione proxy](setting-the-security-on-iwbemservices-and-other-proxies.md) specifica. Entrambi possono anche abilitare [i privilegi](executing-privileged-operations.md). Un provider di eventi deve garantire che il consumer del client abbia i privilegi necessari [per ricevere un evento richiesto.](providing-events-securely.md)
+Sia i provider che i client possono anche impostare la sicurezza su una [connessione proxy](setting-the-security-on-iwbemservices-and-other-proxies.md) specifica. Entrambi possono anche abilitare [i privilegi](executing-privileged-operations.md). Un provider di eventi deve assicurarsi che il consumer client abbia i privilegi per [ricevere un evento richiesto.](providing-events-securely.md)
 
-Un client o un provider potrebbe dover effettuare una connessione remota che richiede un servizio di autenticazione diverso, ad esempio NTLM anziché Kerberos.
+Un client o un provider potrebbe dover stabilire una connessione remota che richiede un servizio di autenticazione diverso, ad esempio NTLM anziché Kerberos.
 
  
 

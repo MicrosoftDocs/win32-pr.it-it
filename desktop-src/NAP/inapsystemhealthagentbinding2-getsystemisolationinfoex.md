@@ -30,7 +30,7 @@ ms.locfileid: "118367829"
 
  
 
-Il **metodo INapSystemHealthAgentBinding2::GetSystemIsolationInfoEx** viene chiamato dagli SHA per determinare lo stato di isolamento del sistema e lo stato di isolamento esteso.
+Il **metodo INapSystemHealthAgentBinding2::GetSystemIsolationInfoEx** viene chiamato dagli sha per determinare lo stato di isolamento del sistema e lo stato di isolamento esteso.
 
 > [!Note]  
 > Usare [**INapSystemHealthAgentBinding::GetSystemIsolationInfo**](inapsystemhealthagentbinding-getsystemisolationinfo-method.md) per determinare solo lo stato di isolamento del sistema.
@@ -77,7 +77,7 @@ Possono essere restituiti anche altri codici di errore specifici di COM.
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                   | Operazione riuscita.<br/>                                                                                                |
 | <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl>         | Errore di autorizzazioni, accesso negato.<br/>                                                                                   |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>          | Limite di risorse di sistema: impossibile eseguire l'operazione.<br/>                                                             |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>          | Limite risorse di sistema: impossibile eseguire l'operazione.<br/>                                                             |
 | <dl> <dt>**PROTEZIONE \_ ACCESSO ALLA RETE NON \_ \_ INIZIALIZZATA**</dt> </dl> | L'SHA non è stato inizializzato in precedenza.<br/>                                                                        |
 | <dl> <dt>**RPC \_ E \_ DISCONNESSO**</dt> </dl>     | NapAgent è stato arrestato. Questo oggetto verrà ripristinato automaticamente e riassociato a NapAgent, dopo il riavvio.<br/> |
 
@@ -87,7 +87,7 @@ Possono essere restituiti anche altri codici di errore specifici di COM.
 
 ## <a name="remarks"></a>Commenti
 
-L'SHA deve liberare la [**struttura IsolationInfoEx**](/windows/win32/api/naptypes/ns-naptypes-isolationinfoex) chiamando [**FreeIsolationInfoEx**](freeisolationinfoex.md).
+L'SHA deve liberare [**la struttura IsolationInfoEx**](/windows/win32/api/naptypes/ns-naptypes-isolationinfoex) chiamando [**FreeIsolationInfoEx**](freeisolationinfoex.md).
 
 L'SHA deve chiamare [**Initialize**](inapsystemhealthagentbinding-initialize-method.md) prima di chiamare questo metodo o qualsiasi altro metodo dell'interfaccia [**INapSystemHealthAgentBinding2.**](inapsystemhealthagentbinding2.md)
 

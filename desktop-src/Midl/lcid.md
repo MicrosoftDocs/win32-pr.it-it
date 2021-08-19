@@ -1,9 +1,9 @@
 ---
-title: attributo LCID
-description: L'attributo \ LCID \ specifica un identificatore delle impostazioni locali e Abilita il supporto del compilatore MIDL specifico delle impostazioni locali.
+title: Attributo lcid
+description: L'attributo \ lcid\ specifica un identificatore delle impostazioni locali e abilita il supporto del compilatore MIDL specifico delle impostazioni locali.
 ms.assetid: 40457a1a-251c-41cd-bfa6-9d506601ff5e
 keywords:
-- attributo LCID MIDL
+- Attributo lcid MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fa22b231c63583c6d16e6a50f3e9987c5b61128
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: e87d1b6105d7e6ae561d7409cbf256b67f965c61e235ffc5782594cb5623497c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103725095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117806797"
 ---
-# <a name="lcid-attribute"></a>attributo LCID
+# <a name="lcid-attribute"></a>Attributo lcid
 
-L'attributo **\[ LCID \]** specifica un identificatore delle impostazioni locali e Abilita il supporto del compilatore MIDL specifico delle impostazioni locali.
+**\[ L'attributo \] lcid** specifica un identificatore delle impostazioni locali e abilita il supporto del compilatore MIDL specifico delle impostazioni locali.
 
 ``` syntax
 [
@@ -41,56 +41,56 @@ function-name([parameter-attribute-list, lcid] long  parameter-name,. . .);
 
 <dl> <dt>
 
-*UUID-numero* 
+*uuid-number* 
 </dt> <dd>
 
 Specifica un numero di identificazione univoco universale per la [**libreria**](library.md).
 
 </dd> <dt>
 
-*localeID* 
+*Localeid* 
 </dt> <dd>
 
-Specifica l'identificatore delle impostazioni locali a 32 bit utilizzato nel supporto della lingua nazionale di Windows. In genere l'identificatore delle impostazioni locali viene specificato in formato esadecimale.
+Specifica l'identificatore delle impostazioni locali a 32 bit usato Windows supporto lingua nazionale. In genere l'identificatore delle impostazioni locali è specificato in formato esadecimale.
 
 </dd> <dt>
 
-*facoltativo-Attribute-List* 
+*optional-attribute-list* 
 </dt> <dd>
 
 Zero o più attributi da applicare alla [**libreria**](library.md).
 
 </dd> <dt>
 
-*nome della libreria* 
+*library-name* 
 </dt> <dd>
 
 Nome con cui i componenti software fanno riferimento alla [**libreria**](library.md).
 
 </dd> <dt>
 
-*Library-Definition-Statements* 
+*library-definition-statements* 
 </dt> <dd>
 
 Una o più istruzioni MIDL che definiscono il contenuto della [**libreria**](library.md).
 
 </dd> <dt>
 
-*Nome funzione* 
+*function-name* 
 </dt> <dd>
 
 Specifica il nome della funzione nel file IDL.
 
 </dd> <dt>
 
-*Parameter-Attribute-List* 
+*parameter-attribute-list* 
 </dt> <dd>
 
 Zero o più attributi MIDL che verranno applicati al parametro della funzione.
 
 </dd> <dt>
 
-*Nome parametro* 
+*parameter-name* 
 </dt> <dd>
 
 Specifica il nome del parametro nel file IDL.
@@ -99,21 +99,21 @@ Specifica il nome del parametro nel file IDL.
 
 ## <a name="remarks"></a>Commenti
 
-La sintassi **\[ \] LCID** presenta due forme diverse. l'effetto dell'attributo dipende dalla sintassi utilizzata, ovvero dalla sintassi dell'istruzione [**Library**](library.md) o dalla sintassi dei parametri.
+La **\[ sintassi \] lcid** ha due forme diverse. L'effetto dell'attributo dipende dalla sintassi utilizzata, ovvero la sintassi dell'istruzione [**della**](library.md) libreria o la sintassi dei parametri.
 
-Quando viene applicato all'istruzione [**Library**](library.md) , insieme a un argomento LocaleID, come illustrato nel primo esempio, l'attributo **\[ LCID \]** identifica le impostazioni locali per una libreria dei tipi o per un argomento della funzione e consente di utilizzare caratteri internazionali all'interno del blocco di libreria.
+Se applicato all'istruzione [**library,**](library.md) insieme a un argomento localeID, come illustrato nel primo esempio, l'attributo **\[ lcid \]** identifica le impostazioni locali per una libreria dei tipi o per un argomento di funzione e consente di usare caratteri internazionali all'interno del blocco della libreria.
 
-A partire dalla versione 3.01.75 del compilatore MIDL, l'identificatore delle impostazioni locali fornito da questo attributo non solo decora la libreria dei tipi risultante, ma modifica effettivamente il comportamento del compilatore. All'interno di un'istruzione [**Library**](library.md) , dal punto in cui viene usato l'attributo **\[ LCID \]** , MIDL accetterà l'input localizzato in base alle impostazioni locali specificate. In particolare, è disponibile il supporto completo per le lingue asiatiche come il giapponese, il cinese e il coreano (supporto completo DBCS). Le funzionalità supportate dalla localizzazione sono: commenti, stringhe, HelpStrings e identificatori.
+Efficace con la versione 3.01.75 del compilatore MIDL, l'identificatore delle impostazioni locali fornito da questo attributo non solo decora la libreria dei tipi risultante, ma modifica effettivamente il comportamento del compilatore. [**All'interno di un'istruzione**](library.md) library, dal punto in cui viene usato l'attributo **\[ lcid, \]** MIDL accetterà l'input localizzato in base alle impostazioni locali specificate. In particolare, è disponibile il supporto completo per le lingue asiatiche, ad esempio giapponese, cinese e coreano (supporto DBCS completo). Le funzionalità supportate dalla localizzazione sono: commenti, stringhe, helpstring e identificatori.
 
-Usare l'opzione del compilatore [**/LCID**](-lcid.md) per fare in modo che questo supporto per la localizzazione sia disponibile per l'intero file di input, inclusi il nome file e il percorso della directory, anziché solo all'interno del blocco di libreria.
+Usare [**l'opzione del**](-lcid.md) compilatore /lcid per avere questo supporto di localizzazione disponibile per l'intero file di input, inclusi il nome file e il percorso della directory, anziché solo all'interno del blocco di libreria.
 
-Quando viene applicato a un parametro, l'attributo **\[ LCID \]** consente di passare un identificatore delle impostazioni locali a una funzione, come illustrato nel secondo esempio. Ai parametri **\[ LCID \]** si applicano le restrizioni seguenti:
+Quando viene applicato a un parametro, l'attributo **\[ lcid \]** consente di passare un identificatore delle impostazioni locali a una funzione, come illustrato nel secondo esempio. Ai parametri **\[ lcid \]** si applicano le restrizioni seguenti:
 
--   Una funzione può avere al massimo un parametro **\[ LCID \]** .
--   Il tipo di dati del parametro deve essere [**Long**](long.md).
--   La direzione del parametro deve essere solo **\[** [**in**](in.md) **\]** .
--   Il parametro **\[ LCID \]** deve seguire tutti gli altri parametri, ad eccezione di un **\[** parametro [**retval**](retval.md) **\]** .
--   Non è possibile applicare l'attributo **\[ LCID \]** a un parametro [**Dispatch**](dispinterface.md) o [**coclass**](coclass.md) .
+-   Una funzione può avere al massimo un **\[ parametro lcid. \]**
+-   Il tipo di dati del parametro deve essere [**long**](long.md).
+-   La direzione del parametro deve essere **\[** [**solo in**](in.md) **\]** .
+-   Il **\[ parametro \] lcid** deve seguire qualsiasi altro parametro, ad eccezione di **\[** [**un parametro retval.**](retval.md) **\]**
+-   Non è possibile applicare **\[ l'attributo \] lcid** a un [**parametro di interfaccia dispatch**](dispinterface.md) o [**coclasse.**](coclass.md)
 
 ## <a name="examples"></a>Esempi
 
@@ -149,21 +149,21 @@ interface IMyFace : IDispatch
 [Generazione di una libreria dei tipi con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[**/LCID**](-lcid.md)
+[**/lcid**](-lcid.md)
 </dt> <dt>
 
-[**libreria**](library.md)
+[**Libreria**](library.md)
 </dt> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[Esempio di file di FAD](/previous-versions/windows/desktop/automat/odl-file-example)
+[Esempio di file ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
 [**retval**](retval.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

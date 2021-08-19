@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-Integer
-description: Attributo per l'archiviazione di un Integer.
+title: Attributo ms-DS-Integer
+description: Attributo per l'archiviazione di un numero intero.
 ms.assetid: a5a5dd7c-a070-45c4-a6ab-c931d2fb68ff
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-DS-Integer
-- msDS-schema AD dell'attributo Integer
+- Schema AD dell'attributo msDS-Integer
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad7fc7bb443302932b5d08e57be6a36bec19f729
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e23ddffb2405f882a5aa9c7d2ef18056ee4c75697b49a42c4c1036cc42fc444b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104480392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118014472"
 ---
-# <a name="ms-ds-integer-attribute"></a>attributo ms-DS-Integer
+# <a name="ms-ds-integer-attribute"></a>Attributo ms-DS-Integer
 
-Attributo per l'archiviazione di un Integer.
+Attributo per l'archiviazione di un numero intero.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | ms-DS-Integer                        |
-| LDAP-Display-Name | msDS-Integer                         |
+| Ldap-Display-Name | msDS-Integer                         |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1835              |
-| System-ID-GUID    | 7bc64cea-c04e-4318-B102-3e0729371a65 |
+| System-Id-Guid    | 7bc64cea-c04e-4318-b102-3e0729371a65 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -57,15 +57,15 @@ Attributo per l'archiviazione di un Integer.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classi utilizzate in        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-app-dati**](c-msds-appdata.md)<br/> |
+| Classi usate in        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Attributo per l'archiviazione di un Integer.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classi utilizzate in        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-app-dati**](c-msds-appdata.md)<br/> |
+| Classi usate in        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Attributo per l'archiviazione di un Integer.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classi utilizzate in        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-app-dati**](c-msds-appdata.md)<br/> |
+| Classi usate in        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Attributo per l'archiviazione di un Integer.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classi utilizzate in        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-app-dati**](c-msds-appdata.md)<br/> |
+| Classi usate in        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Attributo per l'archiviazione di un Integer.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classi utilizzate in        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-app-dati**](c-msds-appdata.md)<br/> |
+| Classi usate in        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 

@@ -15,11 +15,11 @@ ms.locfileid: "117769532"
 
 \[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece il .NET Framework per implementare le funzionalità di sicurezza. Per altre informazioni, vedere [Alternative all'uso di CAPICOM.](alternatives-to-using-capicom.md)\]
 
-Spesso è necessario [*raccogliere e*](../secgloss/c-gly.md) verificare un gruppo di certificati. Questa operazione viene spesso eseguita per preparare un gruppo di destinatari per un messaggio in busta. Nell'esempio seguente i certificati in un archivio locale vengono enumerati e verificati per verifica della validità. Viene quindi aperto un archivio di Active Directory per recuperare e aggiungere nuovi certificati all'archivio locale. I certificati recuperati dall'archivio di Active Directory vengono verificati per verifica della validità e, se validi, vengono aggiunti all'archivio locale. Entrambi i negozi vengono quindi chiusi.
+Spesso è necessario [*raccogliere e*](../secgloss/c-gly.md) verificare un gruppo di certificati. Questa operazione viene spesso eseguita per preparare un gruppo di destinatari per un messaggio in busta. Nell'esempio seguente i certificati in un archivio locale vengono enumerati e verificati per verifica della validità. Viene quindi aperto un archivio di Active Directory per recuperare e aggiungere nuovi certificati all'archivio locale. I certificati recuperati dall'archivio di Active Directory vengono verificati per verifica della validità e, se validi, vengono aggiunti all'archivio locale. Entrambi gli archivi vengono quindi chiusi.
 
-In caso di errore CAPICOM, viene restituito un valore decimale negativo **di Err.Number.** Per altre informazioni, vedere [**CAPICOM \_ ERROR \_ CODE**](capicom-error-code.md). Per informazioni sui valori decimali positivi **di Err.Number,** vedere Winerror.h.
+In caso di errore CAPICOM, viene restituito un valore decimale negativo **Err.Number.** Per altre informazioni, vedere [**CAPICOM \_ ERROR \_ CODE**](capicom-error-code.md). Per informazioni sui valori decimali positivi **di Err.Number,** vedere Winerror.h.
 
-In questo esempio il nome dell'archivio locale viene passato come parametro di stringa. Come parametro viene passata anche una stringa che indica i criteri di ricerca per i certificati nell'archivio di Active Directory.
+In questo esempio il nome dell'archivio locale viene passato come parametro stringa. Come parametro viene passata anche una stringa che indica i criteri di ricerca per i certificati nell'archivio di Active Directory.
 
 
 ```VB

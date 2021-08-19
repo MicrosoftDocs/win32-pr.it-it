@@ -64,7 +64,7 @@ Percentuale di heartbeat previsti ricevuti nell'ultimo minuto.
 
 ## <a name="remarks"></a>Commenti
 
-I componenti di integrazione invieranno un heartbeat periodico Windows Virtual PC mentre il sistema operativo guest è in esecuzione. Se il sistema operativo guest è molto caricato, è possibile che Windows virtual PC riceva meno heartbeat del previsto. Se la percentuale di heartbeat scende a zero, è possibile che il sistema operativo guest non risponda o si arresti in modo anomalo. La macchina virtuale deve essere in esecuzione( ovvero completamente avviato e non arrestato) e i componenti di integrazione devono essere installati quando questa proprietà viene richiamata.
+I componenti di integrazione invieranno un heartbeat periodico Windows pc virtuale mentre il sistema operativo guest è in esecuzione. Se il sistema operativo guest è molto caricato, è possibile che Windows Virtual PC riceva meno heartbeat del previsto. Se la percentuale di heartbeat scende a zero, è possibile che il sistema operativo guest non risponda o si arresti in modo anomalo. La macchina virtuale deve essere in esecuzione( ovvero completamente avviato e non arrestato) e i componenti di integrazione devono essere installati quando questa proprietà viene richiamata.
 
 ## <a name="requirements"></a>Requisiti
 

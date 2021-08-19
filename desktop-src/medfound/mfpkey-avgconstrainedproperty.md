@@ -1,5 +1,5 @@
 ---
-description: Specifica se il codificatore usa la codifica VBR con controllo medio.
+description: Specifica se il codificatore usa la codifica VBR controllabile mediamente.
 ms.assetid: 2c150eb1-4ffe-4f77-8ef8-e3bf29b17b10
 title: MFPKEY_AVGCONSTRAINED proprietà (Wmcodecdsp.h)
 ms.topic: reference
@@ -13,11 +13,11 @@ ms.locfileid: "117874093"
 ---
 # <a name="mfpkey_avgconstrained-property"></a>Proprietà MFPKEY \_ AVGCONSTRAINED
 
-Specifica se il codificatore usa la codifica VBR con controllo medio.
+Specifica se il codificatore usa la codifica VBR controllabile mediamente.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
-Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Disponibile solo tramite [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -29,7 +29,7 @@ Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-prop
 
 ## <a name="remarks"></a>Commenti
 
-Se questa proprietà e la [**proprietà MFPKEY \_ VBRENABLED**](mfpkey-vbrenabledproperty.md) sono entrambe impostate su **VARIANT \_ TRUE,** il codificatore usa la codifica VBR con controllo medio. In tal caso, il codificatore si configura in base ai valori di [**MFPKEY \_ DYN \_ VBR \_ BAVG**](mfpkey-dyn-vbr-bavgproperty.md) e [**MFPKEY \_ DYN \_ VBR \_ RAVG**](mfpkey-dyn-vbr-ravgproperty.md).
+Se questa proprietà e la proprietà [**MFPKEY \_ VBRENABLED**](mfpkey-vbrenabledproperty.md) sono entrambe impostate su **VARIANT \_ TRUE,** il codificatore usa la codifica VBR controllabile mediamente. In tal caso, il codificatore si configura in base ai valori di [**MFPKEY \_ DYN \_ VBR \_ BAVG**](mfpkey-dyn-vbr-bavgproperty.md) e [**MFPKEY \_ DYN \_ VBR \_ RAVG**](mfpkey-dyn-vbr-ravgproperty.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,8 +37,8 @@ Se questa proprietà e la [**proprietà MFPKEY \_ VBRENABLED**](mfpkey-vbrenable
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
 | Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 

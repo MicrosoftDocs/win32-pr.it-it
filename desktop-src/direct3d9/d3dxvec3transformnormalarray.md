@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 74da959002bfbd0c488e630f09c89e848708b1b1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f90521b51c9c939d459fb10bcf2badd7e551b80e5e9f134d5dfd38b5ec8e18aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730820"
 ---
 # <a name="d3dxvec3transformnormalarray-function-d3dx9mathh"></a>Funzione D3DXVec3TransformNormalArray (D3dx9math.h)
 
@@ -77,7 +77,7 @@ Puntatore alla matrice [**D3DXVECTOR3 di**](d3dxvector3.md) origine.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Stride tra vettori nel flusso di dati di input.
+Stride tra i vettori nel flusso di dati di input.
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Puntatore a [**una matrice D3DXVECTOR3**](d3dxvector3.md) che rappresenta la mat
 
 Questa funzione trasforma il vettore (*pV*->x, *pV*->y, *pV*->z, 0) dalla matrice a cui punta *pM*.
 
-Se si vuole trasformare una normale, la matrice passata a questa funzione deve essere la trasposizione dell'inverso della matrice che si userebbe per trasformare un punto.
+Se si vuole trasformare una normale, la matrice passata a questa funzione deve essere la trasposizione dell'inverso della matrice da usare per trasformare un punto.
 
 Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXVec3TransformNormalArray** può essere usata come parametro per un'altra funzione.
 

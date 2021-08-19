@@ -5,8 +5,8 @@ ms.assetid: f3a86f46-c013-4096-9857-6b19335ec510
 keywords:
 - Windows multimediali, tipi
 - elementi multimediali, tipi
-- informazioni di riferimento multimediali, tipi
-- informazioni di riferimento per elementi multimediali, tipi
+- informazioni di riferimento sul contenuto multimediale, tipi
+- informazioni di riferimento per i dati multimediali, tipi
 - tipi multimediali
 ms.topic: article
 ms.date: 05/31/2018
@@ -19,7 +19,7 @@ ms.locfileid: "117802338"
 ---
 # <a name="multimedia-types"></a>Tipi multimediali
 
-I tipi seguenti vengono usati con elementi multimediali.
+I tipi seguenti vengono utilizzati con i dati multimediali.
 
 -   [KEYARRAY](keyarray.md)
 -   [PATCHARRAY](patcharray.md)

@@ -1,10 +1,10 @@
 ---
 title: Interfaccia INapSoHProcessor (NapProtocol.h)
-description: Vengono usati dagli SHA per elaborare il contenuto di SoHResponses e dagli SHV per elaborare il contenuto di SoHRequests.
+description: Vengono usati dagli SHA per elaborare il contenuto di SoHResponses e da SHV per elaborare il contenuto di SoHRequests.
 ms.assetid: c2dd71ca-a4dd-44d2-81ab-b83e90599a2f
 keywords:
 - Interfaccia INapSoHProcessor NAP
-- Interfaccia INapSoHProcessor nap , descritta
+- Interfaccia INapSoHProcessor NAP , descritta
 topic_type:
 - apiref
 api_name:
@@ -29,7 +29,7 @@ ms.locfileid: "117799483"
 
  
 
-**INapSoHProcessor** fornisce metodi usati dagli SHA per elaborare il contenuto di [**SoHResponses**](/windows/win32/api/naptypes/ns-naptypes-soh) e dagli SHV per elaborare il contenuto di **SoHRequests.**
+**INapSoHProcessor** fornisce metodi usati dagli SHA per elaborare il contenuto di [**SoHResponses**](/windows/win32/api/naptypes/ns-naptypes-soh) e da SHV per elaborare il contenuto di **SoHRequests.**
 
 ## <a name="members"></a>Membri
 
@@ -45,7 +45,7 @@ ms.locfileid: "117799483"
 
 | Metodo                                                                                           | Descrizione                                                                           |
 |:-------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------|
-| [**INapSoHProcessor::FindNextAttribute**](inapsohprocessor-findnextattribute-method.md)         | Trova l'indice di posizione dell'attributo del pacchetto SoH successivo.<br/>                 |
+| [**INapSoHProcessor::FindNextAttribute**](inapsohprocessor-findnextattribute-method.md)         | Trova l'indice di posizione del successivo attributo di pacchetto SoH.<br/>                 |
 | [**INapSoHProcessor::GetAttribute**](inapsohprocessor-getattribute-method.md)                   | Recupera il tipo e il valore dell'attributo.<br/>                                    |
 | [**INapSoHProcessor::GetNumberOfAttributes**](inapsohprocessor-getnumberofattributes-method.md) | Recupera il numero di attributi contenuti in SoH.<br/>                   |
 | [**INapSoHProcessor::Initialize**](inapsohprocessor-initialize-method.md)                       | Inizializza il pacchetto del protocollo SoH e il sistema di protezione accesso alla rete per l'elaborazione del contenuto.<br/> |
@@ -60,8 +60,8 @@ ms.locfileid: "117799483"
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                             |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                       |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                       |
 | Intestazione<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl>       |

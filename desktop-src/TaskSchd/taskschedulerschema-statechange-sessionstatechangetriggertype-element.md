@@ -1,9 +1,9 @@
 ---
 title: Elemento StateChange (sessionStateChangeTriggerType)
-description: Contiene il tipo di modifica della sessione di Terminal Server che attiverà l'avvio di un'attività.
+description: Contiene il tipo di modifica della sessione di Terminal Server che attiverebbe l'avvio di un'attività.
 ms.assetid: 0b17a4a5-caa7-4b58-a1a4-cbc7564838bb
 keywords:
-- Utilità di pianificazione elemento StateChange
+- Elemento StateChange Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3991a767256184f23fbb9defda7e33465c0477e0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 88b7e46b23cf6778379a967e03d8f168de3b18d20a734812bacdad940850136a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118356333"
 ---
 # <a name="statechange-sessionstatechangetriggertype-element"></a>Elemento StateChange (sessionStateChangeTriggerType)
 
-Contiene il tipo di modifica della sessione di Terminal Server che attiverà l'avvio di un'attività.
+Contiene il tipo di modifica della sessione di Terminal Server che attiverebbe l'avvio di un'attività.
 
 ``` syntax
 <xs:element name="StateChange"
@@ -30,7 +30,7 @@ Contiene il tipo di modifica della sessione di Terminal Server che attiverà l'a
  />
 ```
 
-L'elemento **StateChange** è definito dal tipo complesso [**sessionStateChangeTriggerType**](taskschedulerschema-sessionstatechangetriggertype-complextype.md) .
+**L'elemento StateChange** è definito dal tipo complesso [**sessionStateChangeTriggerType.**](taskschedulerschema-sessionstatechangetriggertype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -38,15 +38,15 @@ L'elemento **StateChange** è definito dal tipo complesso [**sessionStateChangeT
 
 | Elemento                       | Derivato da                                                                                           | Descrizione                                                                                     |
 |-------------------------------|--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| **SessionStateChangeTrigger** | [**sessionStateChangeTriggerType**](taskschedulerschema-sessionstatechangetriggertype-complextype.md) | Specifica un trigger che avvia un'attività quando una sessione di Terminal Server modifica lo stato.<br/> |
+| **SessionStateChangeTrigger** | [**sessionStateChangeTriggerType**](taskschedulerschema-sessionstatechangetriggertype-complextype.md) | Specifica un trigger che avvia un'attività quando lo stato di una sessione di Terminal Server cambia.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere [**la proprietà StateChange di ISessionStateChangeTrigger**](/windows/desktop/api/taskschd/nf-taskschd-isessionstatechangetrigger-get_statechange).
+Per lo sviluppo C++, vedere [**Proprietà StateChange di ISessionStateChangeTrigger**](/windows/desktop/api/taskschd/nf-taskschd-isessionstatechangetrigger-get_statechange).
 
-Per lo sviluppo di script, vedere [**SessionStateChangeTrigger. StateChange**](sessionstatechangetrigger-statechange.md).
+Per lo sviluppo di script, [**vedere SessionStateChangeTrigger.StateChange**](sessionstatechangetrigger-statechange.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Per lo sviluppo di script, vedere [**SessionStateChangeTrigger. StateChange**](s
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

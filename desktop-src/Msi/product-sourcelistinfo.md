@@ -22,7 +22,7 @@ ms.locfileid: "118376704"
 ---
 # <a name="productsourcelistinfo-property"></a>Product.SourceListInfo - proprietà
 
-La **proprietà SourceListInfo** dell'oggetto [**Product**](product-object.md) ottiene e imposta le proprietà delle informazioni di origine per un prodotto. Questa proprietà chiama [**MsiSourceListGetInfo**](/windows/desktop/api/Msi/nf-msi-msisourcelistgetinfoa) o [**MsiSourceListSetInfo**](/windows/desktop/api/Msi/nf-msi-msisourcelistsetinfoa). Si tratta di una proprietà di lettura o scrittura.
+La **proprietà SourceListInfo** dell'oggetto [**Product**](product-object.md) ottiene e imposta le proprietà delle informazioni di origine per un prodotto. Questa proprietà chiama [**MsiSourceListGetInfo**](/windows/desktop/api/Msi/nf-msi-msisourcelistgetinfoa) o [**MsiSourceListSetInfo.**](/windows/desktop/api/Msi/nf-msi-msisourcelistsetinfoa) Si tratta di una proprietà di lettura o scrittura.
 
 Questa proprietà è di sola lettura.
 
@@ -48,10 +48,10 @@ Non tutte le proprietà che possono essere recuperate possono essere impostate. 
 | Proprietà         | Può essere impostato? | Significato                                                                                                                                                                                                                                                        |
 |------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | MediaPackagePath | S        | Percorso relativo alla radice del supporto di installazione.                                                                                                                                                                                                       |
-| DiskPrompt       | S        | Modello di richiesta utilizzato quando viene richiesto all'utente di specificare il supporto di installazione.                                                                                                                                                                                       |
-| LastUsedSource   | S        | Percorso di origine usato più di recente per il prodotto. Quando si imposta questa proprietà, aggiungere al percorso di origine il prefisso "n;" per un'origine di rete o "u;" per il tipo di URL. Ad esempio, "n; \\ \\ scratch \\ scratch \\ MySource" e "u; https://MyServer/MyFolder/MySource ". |
-| LastUsedType     | N        | "n" se l'ultima origine usata è un percorso di rete. "u" se l'ultima origine usata è un percorso URL. "m" se l'ultima origine usata è media. Stringa vuota ("") se non è presente l'ultima origine usata.                                                                   |
-| PackageName      | S        | Nome del pacchetto del Windows o del pacchetto patch nell'origine.                                                                                                                                                                                      |
+| DiskPrompt       | S        | Modello di richiesta utilizzato quando si richiede all'utente di specificare i supporti di installazione.                                                                                                                                                                                       |
+| LastUsedSource   | S        | Posizione di origine usata più di recente per il prodotto. Quando si imposta questa proprietà, aggiungere al percorso di origine il prefisso "n;" per un'origine di rete o "u;" per il tipo di URL. Ad esempio, "n; \\ \\ scratch \\ scratch \\ MySource" e "u; https://MyServer/MyFolder/MySource ". |
+| LastUsedType     | N        | "n" se l'ultima origine usata è un percorso di rete. "u" se l'ultima origine usata è un percorso URL. "m" se l'ultima origine usata è un supporto. Stringa vuota ("") se non è presente l'ultima origine utilizzata.                                                                   |
+| PackageName      | S        | Nome del pacchetto di Windows o del pacchetto patch nell'origine.                                                                                                                                                                                      |
 
 
 
@@ -63,7 +63,7 @@ Non tutte le proprietà che possono essere recuperate possono essere impostate. 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione 3.0 o versioni successive in Windows Server 2003, Windows XP e Windows 2000<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione 3.0 o versione successiva in Windows Server 2003, Windows XP e Windows 2000<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
 | IID<br/>     | IID \_ IProduct è definito come 000C10A0-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                          |
 

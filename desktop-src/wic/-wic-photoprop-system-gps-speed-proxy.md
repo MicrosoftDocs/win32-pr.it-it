@@ -1,23 +1,23 @@
 ---
-description: Il proxy di proprietà per i criteri dei metadati System. GPS. Speed Photo.
+description: Proxy di proprietà per i criteri dei metadati foto System.GPS.Speed.
 ms.assetid: ef89dca4-9ac7-49fd-b3e2-ef3804faf046
-title: System. GPS. Speed proxy
+title: System.GPS.Speed Proxy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b220e6de58e068ba1a9c21a3550dde78e84da3a4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 601fe2b14d4f3cf8d771780a282c6dd4ec9ea87b33e922f5caa0172fcd710346
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118032865"
 ---
-# <a name="systemgpsspeed-proxy"></a>System. GPS. Speed proxy
+# <a name="systemgpsspeed-proxy"></a>System.GPS.Speed Proxy
 
-Il proxy di proprietà per i criteri dei metadati System. GPS. Speed Photo.
+Proxy di proprietà per i criteri dei metadati foto System.GPS.Speed.
 
 ### <a name="description"></a>Descrizione
 
-Il proxy della proprietà restituisce una coppia razionale a tramite il membro uhVal di [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) .
+Il proxy della proprietà restituisce una coppia razionale tramite il [membro uhVal PROPVARIANT.](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
 
 ### <a name="containers"></a>Contenitori
 
@@ -27,23 +27,23 @@ JPEG, TIFF
 
 Sì
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_UI8 VT
+Interfaccia utente \_ VT8
 
 ### <a name="denominator"></a>Denominatore
 
-HighPart di uhVal.
+HighPart dell'oggetto uhVal.
 
 ### <a name="numerator"></a>Numeratore
 
-LowPart di uhVal.
+LowPart dell'oggetto uhVal.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[System. GPS. Speed](../properties/props-system-gps-speed.md)
+[System.GPS.Speed](../properties/props-system-gps-speed.md)
 </dt> </dl>
 
  

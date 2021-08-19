@@ -1,6 +1,6 @@
 ---
-title: Attributo Font-Weight VML
-description: Attributo Font-Weight VML
+title: Attributo vml Font-Weight
+description: Attributo vml Font-Weight
 ms.assetid: d7b2b0c5-b5cf-4e7d-bbca-c554d12bf97e
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,12 +11,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117754642"
 ---
-# <a name="vml-font-weight-attribute"></a>Attributo Font-Weight VML
+# <a name="vml-font-weight-attribute"></a>Attributo vml Font-Weight
 
-Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
  
 
@@ -24,7 +24,7 @@ Definisce lo spessore delle lettere del tipo di carattere. Proprietà di lettura
 
 **Si applica a**
 
-[TextPath](msdn-online-vml-textpath-element.md)
+[Percorso di testo](msdn-online-vml-textpath-element.md)
 
 **Sintassi dei tag**
 
@@ -48,21 +48,21 @@ I valori sono gli stessi degli attributi di stile HTML standard. I possibili val
 | Grassetto    | Grassetto.                                                                       |
 | bolder  | Più pesante del normale.                                                        |
 | lighter | Più leggero del normale.                                                        |
-| 100     | Almeno leggero come il peso di 200.                                        |
-| 200     | Almeno come grassetto come il peso 100 e almeno leggero come il peso 300. |
-| 300     | Almeno in grassetto come il peso 200 e almeno leggero come il peso 400. |
+| 100     | Almeno quanto il peso di 200.                                        |
+| 200     | Almeno il grassetto come il peso 100 e almeno il peso di 300. |
+| 300     | Almeno il grassetto come il peso 200 e almeno il peso 400. |
 | 400     | Normale.                                                                     |
-| 500     | Almeno in grassetto come il peso 400 e almeno leggero come il peso 600. |
-| 600     | Almeno in grassetto come il peso 500 e almeno leggero come il peso 700. |
+| 500     | Almeno il grassetto come il peso 400 e almeno la luce come il peso 600. |
+| 600     | Almeno il grassetto come il peso 500 e almeno il peso 700. |
 | 700     | Grassetto.                                                                       |
-| 800     | Almeno in grassetto come il peso 700 e almeno leggero come il peso 900. |
-| 900     | Almeno in grassetto come il peso 800.                                         |
+| 800     | Almeno il grassetto come il peso 700 e almeno la luce come il peso 900. |
+| 900     | Almeno in grassetto come il peso di 800.                                         |
 
 
 
  
 
-*Attributo standard VML*
+*Attributo VML Standard*
 
 **Esempio**
 

@@ -1,7 +1,7 @@
 ---
 description: Stato del componente.
 ms.assetid: 37890d43-012a-4344-81d9-aed54de0c75b
-title: Proprietà ComponentInfo. state
+title: ComponentInfo.State - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: b1e92a109f9809168651c457242205d501fddec8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7992890b71a8b17219b7f4ce2b2bcf5d1618491a1c3c5001e384642cb5a40876
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118144648"
 ---
-# <a name="componentinfostate-property"></a>Proprietà ComponentInfo. state
+# <a name="componentinfostate-property"></a>ComponentInfo.State - proprietà
 
-Stato del componente. Questa proprietà chiama la funzione [**MsiGetComponentPathEx**](/windows/desktop/api/Msi/nf-msi-msigetcomponentpathexa) .
+Stato del componente. Questa proprietà chiama la [**funzione MsiGetComponentPathEx.**](/windows/desktop/api/Msi/nf-msi-msigetcomponentpathexa)
 
-**[Windows Installer 4,5 o versioni precedenti](not-supported-in-windows-installer-4-5.md):** Non supportato. Questa proprietà è disponibile a partire da Windows Installer 5,0.
+**[Windows Installer 4.5 o versioni precedenti:](not-supported-in-windows-installer-4-5.md)** Non supportato. Questa proprietà è disponibile a partire da Windows Installer 5.0.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,9 +36,9 @@ Stato del componente. Questa proprietà chiama la funzione [**MsiGetComponentPat
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 o versione successiva.<br/>                                         |
+| Versione<br/> | Windows Programma di installazione 5.0 o versione successiva.<br/>                                         |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl> |
-| IID<br/>     | IID \_ IComponentInfo è definito come 000C1099-0000-0000-C000-000000000046<br/>  |
+| IID<br/>     | IID IComponentInfo è definito come \_ 000C1099-0000-0000-C000-000000000046<br/>  |
 
 
 

@@ -1,25 +1,25 @@
 ---
-title: Messaggio TB_TRANSLATEACCELERATOR
+title: TB_TRANSLATEACCELERATOR messaggio
 description: Passa un messaggio della tastiera alla barra degli strumenti.
 ms.assetid: 936837a7-a6a7-4bde-8e4c-4ffeba55358d
 keywords:
-- Controlli di Windows Message TB_TRANSLATEACCELERATOR
+- TB_TRANSLATEACCELERATOR dei controlli Windows messaggio
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a2e482fa9264204964d24b9b3355525ddc55192
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: d49b2c928158ddffc860b65eb25856cf8f91e2bbe196db51e1c754a834999d8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103955911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118167177"
 ---
-# <a name="tb_translateaccelerator-message"></a>TB \_ TRANSLATEACCELERATOR messaggio
+# <a name="tb_translateaccelerator-message"></a>MESSAGGIO \_ TRANSLATEACCELERATOR TB
 
 Questo messaggio non è implementato.
 
- 
+ 
 
- 
+ 
 
 
 

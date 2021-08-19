@@ -1,5 +1,5 @@
 ---
-title: Proprietà Item IVMDVDDriveCollection (VPCCOMInterfaces.h)
+title: Proprietà IVMDVDDriveCollection Item (VPCCOMInterfaces.h)
 description: Recupera l'oggetto unità CD o DVD corrispondente all'indice specificato.
 ms.assetid: ecc94eea-9ddc-46c8-87e2-e67aca83eecc
 keywords:
@@ -59,7 +59,7 @@ Oggetto [**IVMDVDDrive.**](ivmdvddrive.md)
 | <dl> <dt>E \_ FAIL</dt> <dt>0x80004005</dt> </dl>            | Si è verificato un errore imprevisto.<br/>                                                   |
 | <dl> <dt>DISP \_ E \_ BADINDEX</dt> <dt>0x8002000B</dt> </dl>  | L'indice dell'elemento richiesto non corrisponde a un elemento in questa raccolta. <br/> |
 | <dl> <dt>Macchina virtuale \_ E \_ MACCHINA \_ VIRTUALE SCONOSCIUTA</dt> <dt>0xA0040207</dt> </dl> | La configurazione è sconosciuta.<br/>                                                       |
-| <dl> <dt>DISP \_ E \_ ECCEZIONE</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/>                                                   |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/>                                                   |
 
 
 

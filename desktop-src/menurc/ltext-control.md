@@ -21,7 +21,7 @@ ms.locfileid: "117870275"
 ---
 # <a name="ltext-control"></a>Controllo LTEXT
 
-Definisce un controllo testo allineato a sinistra. Il controllo è un semplice rettangolo che visualizza il testo specificato allineato a sinistra nel rettangolo. Il testo viene formattato prima della visualizzazione. Le parole che si estendono oltre la fine di una riga vengono automaticamente racchiuse all'inizio della riga successiva. Le parole più lunghe della larghezza del controllo vengono troncate.
+Definisce un controllo testo allineato a sinistra. Il controllo è un semplice rettangolo che visualizza il testo specificato allineato a sinistra nel rettangolo. Il testo viene formattato prima di essere visualizzato. Le parole che si estendono oltre la fine di una riga vengono automaticamente racchiuse all'inizio della riga successiva. Le parole più lunghe della larghezza del controllo vengono troncate.
 
 **L'istruzione LTEXT,** che può essere usata solo in un'istruzione [**DIALOGEX,**](dialogex-resource.md) definisce il testo, l'identificatore, le dimensioni e gli attributi del controllo.
 
@@ -34,7 +34,7 @@ LTEXT text, id, x, y, width, height [, style [, extended-style]]
 <span id="style"></span><span id="STYLE"></span>*Stile*
 </dt> <dd>
 
-Stili dei controlli. Questo valore può essere qualsiasi combinazione dello stile **\_ BS RADIOBUTTON** e degli stili seguenti: **SS \_ LEFT,** **WS \_ TABSTOP** e **WS \_ GROUP**.
+Stili dei controlli. Questo valore può essere qualsiasi combinazione dello stile **\_ BS RADIOBUTTON** e degli stili seguenti: **SS \_ LEFT,** **WS \_ TABSTOP** e **WS \_ GROUP.**
 
 Se non si specifica uno stile, lo stile predefinito è `SS_LEFT | WS_GROUP` .
 
@@ -44,7 +44,7 @@ Per altre informazioni sulla sintassi generale di un'istruzione di controllo, ve
 
 ## <a name="examples"></a>Esempio
 
-In questo esempio viene definito un controllo testo allineato a sinistra con l'etichetta Nome file:
+Questo esempio definisce un controllo testo allineato a sinistra con l'etichetta Nome file:
 
 ``` syntax
 LTEXT "Filename", 101, 10, 10, 100, 100

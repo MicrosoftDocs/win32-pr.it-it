@@ -1,6 +1,6 @@
 ---
 description: 'Altre informazioni su: ColumnValueOfStruct <T> . Proprietà ValueAsObject'
-title: ColumnValueOfStruct (T). Proprietà ValueAsObject
+title: ColumnValueOfStruct(T). Proprietà ValueAsObject
 TOCTitle: 'ValueAsObject property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.ColumnValueOfStruct`1.ValueAsObject
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn334226(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 06ba2eb74f57354955d4254ca8fa08fd9557a1fb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0eb50c5e753d0dda4cd0df6f305f4bb951ebb69adaf0f88b4a4cd107ed5baf4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118083495"
 ---
 # <a name="columnvalueofstructtvalueasobject-property"></a>ColumnValueOfStruct \<T\> . Proprietà ValueAsObject
 
 Ottiene l'ultimo valore impostato o recuperato della colonna. Il valore viene restituito come oggetto generico.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,14 +58,14 @@ public override Object ValueAsObject { get; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Object](/dotnet/api/system.object)  
+Tipo: [System.Object](/dotnet/api/system.object)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[\<T\>Classe ColumnValueOfStruct](./columnvalueofstruct-t-class.md)
+[Classe \<T\> ColumnValueOfStruct](./columnvalueofstruct-t-class.md)
 
-[Membri di ColumnValueOfStruct \<T\>](./columnvalueofstruct-t-members.md)
+[Membri \<T\> columnValueOfStruct](./columnvalueofstruct-t-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

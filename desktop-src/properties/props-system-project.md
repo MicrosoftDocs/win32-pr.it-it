@@ -1,17 +1,17 @@
 ---
-description: System.Project
+description: Sistema. Project
 ms.assetid: c3fbe1ac-eaf6-49d1-92d1-a7115ebbbeba
-title: System.Project
+title: Sistema. Project
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c46b2547294d8be26c285315573ba93938afcb6a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2a5ec3809eed0fac2c6a18299b8bb5a80640039872397fd60b9416ac5cbd7f1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117682362"
 ---
-# <a name="systemproject"></a>System.Project
+# <a name="systemproject"></a>Sistema. Project
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 

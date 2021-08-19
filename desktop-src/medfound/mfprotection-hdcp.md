@@ -1,5 +1,5 @@
 ---
-description: Specifica la protezione High-Bandwidth hdcp protezione del contenuto (HDCP).
+description: Specifica la protezione HDCP High-Bandwidth protezione del contenuto (HDCP).
 ms.assetid: 3C4B6E66-D68B-4BE9-A821-8F91EF28B70B
 title: MFPROTECTION_HDCP attributo (Mfidl.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "117872475"
 ---
 # <a name="mfprotection_hdcp-attribute"></a>Attributo \_ HDCP MFPROTECTION
 
-Specifica la protezione High-Bandwidth hdcp protezione del contenuto (HDCP).
+Specifica la protezione HDCP High-Bandwidth protezione del contenuto (HDCP).
 
 ## <a name="data-type"></a>Tipo di dati
 

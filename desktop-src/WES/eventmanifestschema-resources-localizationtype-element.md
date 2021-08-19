@@ -3,7 +3,7 @@ title: Elemento resources (LocalizationType)
 description: Definisce un gruppo di tabelle di stringhe che contengono le stringhe localizzate a cui si fa riferimento nel manifesto.
 ms.assetid: b984894a-0ae8-49be-af93-3acdcce53ee9
 keywords:
-- elemento resources-EventLog
+- Elemento resources EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 55bdfe504da08c754c18b790e282eba6787c3ee3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3075b2b1741079f80c34e5acf9783b13b74b6973c1d16f2cd323890bcea5d0d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106300917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120578"
 ---
 # <a name="resources-localizationtype-element"></a>Elemento resources (LocalizationType)
 
@@ -49,7 +49,7 @@ Definisce un gruppo di tabelle di stringhe che contengono le stringhe localizzat
 </xs:element>
 ```
 
-L'elemento **Resources** viene definito dal tipo complesso [**LocalizationType**](eventmanifestschema-localizationtype-complextype.md) .
+**L'elemento** resources è definito dal [**tipo complesso LocalizationType.**](eventmanifestschema-localizationtype-complextype.md)
 
 ## <a name="child-elements"></a>Elementi figlio
 
@@ -57,7 +57,7 @@ L'elemento **Resources** viene definito dal tipo complesso [**LocalizationType**
 
 | Elemento                                                                  | Tipo                                                                       | Descrizione                                                                             |
 |--------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [**Un'STRINGTABLE**](eventmanifestschema-stringtable-resources-element.md) | [**StringTableType**](eventmanifestschema-stringtabletype-complextype.md) | Definisce un elenco di stringhe localizzate a cui è possibile fare riferimento nel manifesto.<br/> |
+| [**Stringtable**](eventmanifestschema-stringtable-resources-element.md) | [**StringTableType**](eventmanifestschema-stringtabletype-complextype.md) | Definisce un elenco di stringhe localizzate a cui è possibile fare riferimento nel manifesto.<br/> |
 
 
 
@@ -67,7 +67,7 @@ L'elemento **Resources** viene definito dal tipo complesso [**LocalizationType**
 
 | Nome    | Tipo   | Descrizione                                                                                                                                            |
 |---------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| culture | string | Nome di linguaggio che identifica le impostazioni cultura delle stringhe localizzate nella tabella di stringhe. Ad esempio, "en-US" per l'inglese (Stati Uniti).<br/> |
+| culture | string | Nome della lingua che identifica le impostazioni cultura delle stringhe localizzate nella tabella delle stringhe. Ad esempio, "en-US" per l'inglese (Stati Uniti).<br/> |
 
 
 
@@ -77,8 +77,8 @@ L'elemento **Resources** viene definito dal tipo complesso [**LocalizationType**
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -89,7 +89,7 @@ L'elemento **Resources** viene definito dal tipo complesso [**LocalizationType**
 **Elemento padre**
 </dt> <dt>
 
-[**localizzazione (instrumentationManifest)**](eventmanifestschema-localization-instrumentationmanifest-element.md)
+[**localizzazione (strumentazioneManifest)**](eventmanifestschema-localization-instrumentationmanifest-element.md)
 </dt> </dl>
 
  

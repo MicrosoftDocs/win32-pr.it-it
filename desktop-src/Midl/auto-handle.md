@@ -1,9 +1,9 @@
 ---
-title: attributo auto_handle
-description: L'attributo \ auto \_ handle \ ACF indica allo stub di stabilire automaticamente l'associazione per una funzione che non dispone di un parametro di handle di binding esplicito. Si noti che questo attributo è obsoleto e non è più supportato.
+title: auto_handle attributo
+description: L'attributo ACF \ auto handle\ indica al stub di stabilire automaticamente l'associazione per una funzione che non dispone di un parametro \_ di handle di associazione esplicito. Nota Questo attributo è obsoleto e non è più supportato.
 ms.assetid: a402b933-f69b-4dfe-b0c5-b034d65d4a84
 keywords:
-- attributo auto_handle MIDL
+- auto_handle attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,21 +12,21 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01e9a4c91fac8553867536f4f5a8c3094e0f0ff9
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 1e1f42a2fb643a2ce643437aad73b13c6e55d3462e92f9ce52ba208c6dc5cb68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104471910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117807884"
 ---
-# <a name="auto_handle-attribute"></a>\_attributo handle automatico
+# <a name="auto_handle-attribute"></a>attributo \_ di handle automatico
 
-L'attributo **\[ \_ gestione \] automatica** ACF indica allo stub di stabilire automaticamente l'associazione per una funzione che non dispone di un parametro di handle di binding esplicito.
+**\[ \_ L'attributo \]** ACF di gestione automatica indica al stub di stabilire automaticamente l'associazione per una funzione che non dispone di un parametro di handle di associazione esplicito.
 
 > [!Note]  
-> Questo attributo è obsoleto e non è più supportato. È consigliabile usare l'opzione [**/robust**](-robust.md) .
+> Questo attributo è obsoleto e non è più supportato. È consigliabile [**usare l'opzione /robust.**](-robust.md)
 
- 
+ 
 
 ``` syntax
 [ 
@@ -42,21 +42,21 @@ interface interface-name
 
 <dl> <dt>
 
-*Interface-Attribute-List* 
+*interface-attribute-list* 
 </dt> <dd>
 
-Specifica zero o più attributi che si applicano all'interfaccia nel suo complesso, ad esempio [**Code**](code.md) o [**NoCode**](nocode.md). Separare gli attributi di interfaccia con virgole.
+Specifica zero o più attributi che si applicano all'intera interfaccia, ad esempio [**code**](code.md) o [**nocode.**](nocode.md) Separare gli attributi dell'interfaccia con virgole.
 
 </dd> <dt>
 
-*Nome interfaccia* 
+*interface-name* 
 </dt> <dd>
 
 Specifica il nome dell'interfaccia.
 
 </dd> <dt>
 
-*interfaccia-definizione* 
+*interface-definition* 
 </dt> <dd>
 
 Specifica le istruzioni IDL che formano la definizione dell'interfaccia.
@@ -65,18 +65,18 @@ Specifica le istruzioni IDL che formano la definizione dell'interfaccia.
 
 ## <a name="remarks"></a>Commenti
 
-L'attributo **\[ \_ handle \] automatico** viene visualizzato nell'intestazione Interface di ACF. Viene inoltre visualizzato nell'intestazione di interfaccia del file IDL quando si specifica l'opzione del compilatore MIDL [**/app \_ config**](-app-config.md).
+**\[ \_ L'attributo \] handle** automatico viene visualizzato nell'intestazione dell'interfaccia di ACF. Viene visualizzato anche nell'intestazione dell'interfaccia del file IDL quando si specifica l'opzione del compilatore MIDL [**/app \_ config**](-app-config.md).
 
-Quando il client chiama una funzione che utilizza il binding automatico e non esiste alcun binding a un server, lo stub stabilisce automaticamente l'associazione. L'associazione viene riutilizzata per le chiamate successive ad altre funzioni nell'interfaccia che utilizzano l'associazione automatica. Il programma dell'applicazione client non deve dichiarare né eseguire alcuna elaborazione relativa all'handle di associazione.
+Quando il client chiama una funzione che usa l'associazione automatica e non esiste alcuna associazione a un server, lo stub stabilisce automaticamente l'associazione. L'associazione viene riutilizzata per le chiamate successive ad altre funzioni nell'interfaccia che usano l'associazione automatica. Il programma dell'applicazione client non deve dichiarare o eseguire alcuna elaborazione relativa all'handle di associazione.
 
-Quando ACF non è presente o non include l'attributo [**\[ \_ handle \] implicito**](implicit-handle.md) , il compilatore MIDL usa l' **\[ \_ handle \] automatico** e genera un messaggio informativo. Il compilatore MIDL usa anche l' **\[ \_ handle \] automatico**, se necessario, per stabilire l'associazione iniziale per un [**\[ \_ handle \] di contesto**](context-handle.md).
+Quando ACF non è presente o non include l'attributo [**\[ \_ handle \] implicito,**](implicit-handle.md) il compilatore MIDL usa l'handle **\[ \_ \]** automatico e genera un messaggio informativo. Il compilatore MIDL usa anche **\[ \_ l'handle automatico \]**, se necessario, per stabilire l'associazione iniziale per un handle di [**\[ \_ contesto \]**](context-handle.md).
 
-L'attributo **\[ \_ handle \] automatico** può verificarsi solo se l' [**\[ \_ handle \] implicito**](implicit-handle.md) o l'attributo [**\[ \_ handle \] esplicito**](explicit-handle.md) non si verifica. L'attributo **\[ \_ handle \] automatico** può essere presente all'interno dell'intestazione dell'interfaccia ACF o IDL al massimo una volta.
+**\[ L'attributo \_ handle \]** automatico può verificarsi solo se l'handle [**\[ \_ implicito o \]**](implicit-handle.md) l'attributo [**\[ \_ handle \]**](explicit-handle.md) esplicito non si verifica. **\[ L'attributo di \_ handle \]** automatico può essere presente al massimo nell'intestazione dell'interfaccia ACF o IDL.
 
 > [!Note]  
-> Non è possibile usare l'associazione automatica (con l'attributo **\[ \_ handle \] automatico** o per impostazione predefinita) se si elaborano i dati attraverso le pipe.
+> Non è possibile usare l'associazione automatica (con **\[ l'attributo \_ handle \]** automatico o per impostazione predefinita) se si elaborano dati tramite pipe.
 
- 
+ 
 
 ## <a name="examples"></a>Esempi
 
@@ -105,27 +105,27 @@ interface MyInterface
 [File di configurazione dell'applicazione (ACF)](application-configuration-file-acf-.md)
 </dt> <dt>
 
-[**configurazione di/app \_**](-app-config.md)
+[**/app \_ config**](-app-config.md)
 </dt> <dt>
 
-[**codice**](code.md)
+[**Codice**](code.md)
 </dt> <dt>
 
-[**handle esplicito \_**](explicit-handle.md)
+[**handle \_ esplicito**](explicit-handle.md)
 </dt> <dt>
 
-[**handle di contesto \_**](context-handle.md)
+[**handle di \_ contesto**](context-handle.md)
 </dt> <dt>
 
-[**handle implicito \_**](implicit-handle.md)
+[**handle \_ implicito**](implicit-handle.md)
 </dt> <dt>
 
-[**NoCode**](nocode.md)
+[**nocode**](nocode.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

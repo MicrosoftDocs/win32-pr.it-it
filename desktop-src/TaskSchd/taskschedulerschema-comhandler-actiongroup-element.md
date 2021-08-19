@@ -1,9 +1,9 @@
 ---
-title: Elemento comhandler (actionGroup)
-description: Specifica un'azione che attiva un gestore.
+title: Elemento ComHandler (actionGroup)
+description: Specifica un'azione che genera un gestore.
 ms.assetid: 18f16873-3879-4a3b-b8f2-17cc84647e25
 keywords:
-- Elemento comhandler Utilità di pianificazione
+- Elemento ComHandler Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2269464efb09e8c513ab2bdebb24744a6b32a671
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aba73244c3dc5217bcfe7350462200cd3226f0607c6d68ce5c6bcb8f5574b7df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117943238"
 ---
-# <a name="comhandler-actiongroup-element"></a>Elemento comhandler (actionGroup)
+# <a name="comhandler-actiongroup-element"></a>Elemento ComHandler (actionGroup)
 
-Specifica un'azione che attiva un gestore.
+Specifica un'azione che genera un gestore.
 
 ``` syntax
 <xs:element name="ComHandler"
@@ -30,7 +30,7 @@ Specifica un'azione che attiva un gestore.
  />
 ```
 
-L'elemento **Comhandler** è definito da [**actionGroup**](taskschedulerschema-actiongroup-group.md) .
+**L'elemento ComHandler** è definito da [**actionGroup**](taskschedulerschema-actiongroup-group.md) .
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -48,24 +48,24 @@ L'elemento **Comhandler** è definito da [**actionGroup**](taskschedulerschema-a
 
 | Elemento                                                               | Tipo                                                         | Descrizione                                                       |
 |-----------------------------------------------------------------------|--------------------------------------------------------------|-------------------------------------------------------------------|
-| [**ClassId**](taskschedulerschema-classid-comhandlertype-element.md) | [**guidType**](taskschedulerschema-guidtype-simpletype.md)  | Specifica l'identificatore della classe del gestore.<br/>         |
-| [**Data**](taskschedulerschema-data-comhandlertype-element.md)       | [**dataType**](taskschedulerschema-datatype-complextype.md) | Specifica i dati aggiuntivi associati al gestore.<br/> |
+| [**Classid**](taskschedulerschema-classid-comhandlertype-element.md) | [**guidType**](taskschedulerschema-guidtype-simpletype.md)  | Specifica l'identificatore della classe del gestore.<br/>         |
+| [**Dati**](taskschedulerschema-data-comhandlertype-element.md)       | [**dataType**](taskschedulerschema-datatype-complextype.md) | Specifica dati aggiuntivi associati al gestore.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Le applicazioni definiscono un'azione del gestore COM usando l'interfaccia [**IComHandlerAction**](/windows/desktop/api/taskschd/nn-taskschd-icomhandleraction) .
+Le applicazioni definiscono un'azione del gestore COM usando [**l'interfaccia IComHandlerAction.**](/windows/desktop/api/taskschd/nn-taskschd-icomhandleraction)
 
 ### <a name="attributes"></a>Attributi
 
-L'attributo seguente viene definito dal tipo complesso [**actionBaseType**](taskschedulerschema-actionbasetype-complextype.md) .
+L'attributo seguente è definito dal [**tipo complesso actionBaseType.**](taskschedulerschema-actionbasetype-complextype.md)
 
 -   ID: identificatore dell'azione eseguita dall'attività.
 
 ## <a name="examples"></a>Esempio
 
-Il codice XML seguente definisce un'azione del gestore COM.
+Nel codice XML seguente viene definita un'azione del gestore COM.
 
 
 ```XML
@@ -85,8 +85,8 @@ Il codice XML seguente definisce un'azione del gestore COM.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -94,7 +94,7 @@ Il codice XML seguente definisce un'azione del gestore COM.
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

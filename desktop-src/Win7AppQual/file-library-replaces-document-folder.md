@@ -45,13 +45,13 @@ ms.locfileid: "118329671"
 
 Le librerie offrono un'esperienza centralizzata simile a una cartella per l'archiviazione, la ricerca e l'accesso ai file in più posizioni, sia locali che remote.
 
-I percorsi predefiniti usati dalle finestre di dialogo di file comuni, ad esempio Apri e Salva, sono stati modificati da Cartella documento a Raccolta documenti. Il Interfaccia utente è invariato, ma l'utente sarà ora in grado di visualizzare, esplorare ed eseguire ricerche nella libreria usando diverse visualizzazioni di disposizione. I file verranno salvati nel percorso di salvataggio predefinito della libreria, a meno che l'utente non cambi il percorso di salvataggio predefinito o non sceva una cartella diversa.
+I percorsi predefiniti usati dalle finestre di dialogo di file comuni, ad esempio Apri e Salva, sono stati modificati da Cartella documento a Raccolta documenti. La Interfaccia utente è invariata, ma l'utente potrà ora visualizzare, esplorare ed eseguire ricerche nella libreria usando diverse visualizzazioni di disposizione. I file verranno salvati nel percorso di salvataggio predefinito della libreria, a meno che l'utente non cambi il percorso di salvataggio predefinito o non sceva una cartella diversa.
 
-Gli sviluppatori possono creare librerie personalizzate o aggiungere percorsi a librerie esistenti usando l'interfaccia IShellLibrary. Gli utenti possono trovare librerie usando il sistema cartella nota (ad esempio, FOLDERID \_ DocumentsLibrary).
+Gli sviluppatori possono creare librerie personalizzate o aggiungere percorsi alle librerie esistenti usando l'interfaccia IShellLibrary. Gli utenti possono trovare librerie usando il sistema cartella nota (ad esempio, FOLDERID \_ DocumentsLibrary).
 
 ## <a name="manifestation-of-impact"></a>Manifestazione di impatto
 
-La libreria è di per sé un file e non una cartella. Di conseguenza, le manipolazioni del percorso potrebbero causare errori a causa del tentativo da parte dell'applicazione di concatenare i file ai file.
+La libreria è di per sé un file e non una cartella. Di conseguenza, le modifiche al percorso potrebbero causare errori a causa del tentativo dell'applicazione di concatenare i file ai file.
 
 ## <a name="solution"></a>Soluzione
 

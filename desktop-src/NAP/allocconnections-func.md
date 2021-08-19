@@ -3,7 +3,7 @@ title: Funzione AllocConnections (NapUtil.h)
 description: Alloca memoria per un numero specificato di strutture Connections.
 ms.assetid: 0e0075ed-6e4c-43f7-af40-c6dea2808d05
 keywords:
-- Funzione AllocConnections nap
+- Funzione AllocConnections NAP
 topic_type:
 - apiref
 api_name:
@@ -78,9 +78,9 @@ Numero di strutture da allocare alle *connessioni*.
 
 Tutte le interfacce COM supportate dal sistema nap usano le regole di gestione della memoria COM standard e gli allocatori di memoria COM (**CoTaskMemAlloc** e **CoTaskMemFree**):
 
--   **I** parametri in vengono allocati e liberati dal chiamante.
--   **I** parametri out vengono allocati dal chiamato e liberati dal chiamante usando **CoTaskMem**.
--   **I parametri in/out** vengono allocati dal chiamante, liberati e riallocati dal chiamato e infine liberati dal chiamante, usando **CoTaskMem**.
+-   **In** i parametri vengono allocati e liberati dal chiamante.
+-   **I** parametri out vengono allocati dal chiamato e liberati dal chiamante usando **CoTaskMem.**
+-   **I parametri in/out** vengono allocati dal chiamante, liberati e riallocati dal chiamato e infine liberati dal chiamante, usando **CoTaskMem.**
 
 Tutte le funzioni di Protezione accesso alla rete per liberare memoria liberano anche tutti i puntatori incorporati.
 
@@ -90,8 +90,8 @@ Tutte le funzioni di Protezione accesso alla rete per liberare memoria liberano 
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                 |
 | Intestazione<br/>                   | <dl> <dt>NapUtil.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl> |
 
@@ -101,7 +101,7 @@ Tutte le funzioni di Protezione accesso alla rete per liberare memoria liberano 
 
 <dl> <dt>
 
-[**FreeConnections**](freeconnections-func.md)
+[**Connessioni gratuite**](freeconnections-func.md)
 </dt> </dl>
 
  

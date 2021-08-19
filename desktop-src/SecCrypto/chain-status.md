@@ -1,5 +1,5 @@
 ---
-description: Recupera lo stato di validità della catena o di un certificato specifico nella catena.
+description: Recupera lo stato di validità della catena o un certificato specifico nella catena.
 title: Proprietà IChain2::Status
 ms.topic: reference
 ms.date: 05/31/2018
@@ -23,7 +23,7 @@ ms.locfileid: "117769551"
 ---
 # <a name="ichain2status-property"></a>Proprietà IChain2::Status
 
-\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece la [**classe X509Chain**](/dotnet/api/system.security.cryptography.x509certificates.x509chain?view=netcore-3.1) nello spazio dei [**nomi System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
+\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece la [**classe X509Chain**](/dotnet/api/system.security.cryptography.x509certificates.x509chain?view=netcore-3.1) nello spazio dei nomi [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
 La **proprietà Status** recupera lo stato di validità della catena o un certificato specifico nella catena.
 
@@ -51,18 +51,18 @@ Valore **LONG** che rappresenta l'indicatore di stato di validità della catena 
 
 </dt> <dd>
 
-Questo certificato o uno dei certificati nella catena di certificati non è valido in fase di validità.
+Questo certificato o uno dei certificati nella catena di certificati non è valido per l'ora.
 
 </dd> <dt>
 
 <span id="CAPICOM_TRUST_IS_NOT_TIME_NESTED"></span><span id="capicom_trust_is_not_time_nested"></span>
 
-<span id="CAPICOM_TRUST_IS_NOT_TIME_NESTED"></span><span id="capicom_trust_is_not_time_nested"></span>**CAPICOM \_ TRUST \_ IS \_ NOT \_ TIME \_ NESTED** (&H00000002)
+<span id="CAPICOM_TRUST_IS_NOT_TIME_NESTED"></span><span id="capicom_trust_is_not_time_nested"></span>**CAPICOM \_ IL \_ TRUST NON È \_ \_ \_ ANNIDATO** (&H00000002)
 
 
 </dt> <dd>
 
-I certificati nella catena non sono annidati correttamente.
+I certificati nella catena non sono annidati nel tempo correttamente.
 
 </dd> <dt>
 
@@ -90,7 +90,7 @@ Il certificato o uno dei certificati nella catena di certificati non ha una firm
 
 <span id="CAPICOM_TRUST_IS_NOT_VALID_FOR_USAGE"></span><span id="capicom_trust_is_not_valid_for_usage"></span>
 
-<span id="CAPICOM_TRUST_IS_NOT_VALID_FOR_USAGE"></span><span id="capicom_trust_is_not_valid_for_usage"></span>**CAPICOM \_ ATTENDIBILITÀ \_ \_ NON VALIDA PER \_ \_ \_ L'UTILIZZO** (&H00000010)
+<span id="CAPICOM_TRUST_IS_NOT_VALID_FOR_USAGE"></span><span id="capicom_trust_is_not_valid_for_usage"></span>**CAPICOM \_ L'ATTENDIBILITÀ NON È VALIDA PER \_ \_ \_ \_ \_ L'UTILIZZO** (&H00000010)
 
 
 </dt> <dd>
@@ -101,7 +101,7 @@ Il certificato o la catena di certificati non è valida per l'utilizzo proposto.
 
 <span id="CAPICOM_TRUST_IS_UNTRUSTED_ROOT"></span><span id="capicom_trust_is_untrusted_root"></span>
 
-<span id="CAPICOM_TRUST_IS_UNTRUSTED_ROOT"></span><span id="capicom_trust_is_untrusted_root"></span>**CAPICOM \_ TRUST \_ IS \_ UNTRUSTED \_ ROOT** (&H00000020)
+<span id="CAPICOM_TRUST_IS_UNTRUSTED_ROOT"></span><span id="capicom_trust_is_untrusted_root"></span>**CAPICOM \_ TRUST \_ IS \_ UNTRUSTED \_ ROOT** (&H000000020)
 
 
 </dt> <dd>
@@ -128,7 +128,7 @@ Lo stato di revoca del certificato o di uno dei certificati nella catena di cert
 
 </dt> <dd>
 
-Uno dei certificati nella catena è stato rilasciato da [*un'autorità di certificazione*](../secgloss/c-gly.md) certificata dal certificato originale.
+Uno dei certificati nella catena è stato rilasciato da un'autorità [*di certificazione*](../secgloss/c-gly.md) certificata dal certificato originale.
 
 </dd> <dt>
 
@@ -145,29 +145,29 @@ Uno dei certificati ha un'estensione non valida.
 
 <span id="CAPICOM_TRUST_INVALID_POLICY_CONSTRAINTS"></span><span id="capicom_trust_invalid_policy_constraints"></span>
 
-<span id="CAPICOM_TRUST_INVALID_POLICY_CONSTRAINTS"></span><span id="capicom_trust_invalid_policy_constraints"></span>**CAPICOM \_ VINCOLI \_ DI CRITERI TRUST NON \_ \_ VALIDI** (&H00000200)
+<span id="CAPICOM_TRUST_INVALID_POLICY_CONSTRAINTS"></span><span id="capicom_trust_invalid_policy_constraints"></span>**CAPICOM \_ CONSIDERA \_ ATTENDIBILI I VINCOLI \_ \_ DI** CRITERI NON VALIDI (&H00000200)
 
 
 </dt> <dd>
 
-Il certificato o uno dei certificati nella catena di certificati ha un'estensione dei vincoli dei criteri e uno dei certificati emessi ha un'estensione per il mapping dei criteri non consentita o non ha un'estensione dei criteri di rilascio richiesta.
+Il certificato o uno dei certificati nella catena di certificati ha un'estensione dei vincoli dei criteri e uno dei certificati emessi ha un'estensione per il mapping dei criteri non consentita o non dispone di un'estensione dei criteri di rilascio richiesta.
 
 </dd> <dt>
 
 <span id="CAPICOM_TRUST_INVALID_BASIC_CONSTRAINTS"></span><span id="capicom_trust_invalid_basic_constraints"></span>
 
-<span id="CAPICOM_TRUST_INVALID_BASIC_CONSTRAINTS"></span><span id="capicom_trust_invalid_basic_constraints"></span>**CAPICOM \_ TRUST \_ INVALID \_ BASIC \_ CONSTRAINTS** (&H00000400)
+<span id="CAPICOM_TRUST_INVALID_BASIC_CONSTRAINTS"></span><span id="capicom_trust_invalid_basic_constraints"></span>**CAPICOM \_ CONSIDERA \_ ATTENDIBILI I \_ \_ VINCOLI BASIC** NON VALIDI (&H00000400)
 
 
 </dt> <dd>
 
-Il certificato o uno dei certificati nella catena di certificati ha un'estensione dei vincoli di base e il certificato non può essere usato per rilasciare altri certificati o la lunghezza del percorso della catena è stata superata.
+Il certificato o uno dei certificati nella catena di certificati ha un'estensione di vincoli di base e il certificato non può essere usato per rilasciare altri certificati o la lunghezza del percorso della catena è stata superata.
 
 </dd> <dt>
 
 <span id="CAPICOM_TRUST_INVALID_NAME_CONSTRAINTS"></span><span id="capicom_trust_invalid_name_constraints"></span>
 
-<span id="CAPICOM_TRUST_INVALID_NAME_CONSTRAINTS"></span><span id="capicom_trust_invalid_name_constraints"></span>**CAPICOM \_ VINCOLI \_ DI NOME TRUST NON \_ \_ VALIDI** (&H00000800)
+<span id="CAPICOM_TRUST_INVALID_NAME_CONSTRAINTS"></span><span id="capicom_trust_invalid_name_constraints"></span>**CAPICOM \_ CONSIDERA \_ ATTENDIBILI I VINCOLI \_ \_ DI** NOME NON VALIDI (&H00000800)
 
 
 </dt> <dd>
@@ -178,12 +178,12 @@ Il certificato o uno dei certificati nella catena di certificati ha un'estension
 
 <span id="CAPICOM_TRUST_HAS_NOT_SUPPORTED_NAME_CONSTRAINT"></span><span id="capicom_trust_has_not_supported_name_constraint"></span>
 
-<span id="CAPICOM_TRUST_HAS_NOT_SUPPORTED_NAME_CONSTRAINT"></span><span id="capicom_trust_has_not_supported_name_constraint"></span>**CAPICOM \_ TRUST \_ NON SUPPORTA VINCOLI DI \_ \_ \_ \_ NOME** (&H00001000)
+<span id="CAPICOM_TRUST_HAS_NOT_SUPPORTED_NAME_CONSTRAINT"></span><span id="capicom_trust_has_not_supported_name_constraint"></span>**CAPICOM \_ TRUST \_ NON SUPPORTA IL VINCOLO \_ \_ \_ \_ DI** NOME (&H00001000)
 
 
 </dt> <dd>
 
-Il certificato o uno dei certificati nella catena di certificati ha un'estensione dei vincoli di nome che contiene campi non supportati. I campi minimo e massimo non sono supportati. Pertanto il valore minimo deve essere sempre zero e il valore massimo deve essere sempre assente. Per un altro nome è supportato solo l'UPN. Le opzioni di nome alternativo seguenti non sono supportate:
+Il certificato o uno dei certificati nella catena di certificati ha un'estensione dei vincoli di nome che contiene campi non supportati. I campi minimo e massimo non sono supportati. Il valore minimo deve essere sempre zero e il valore massimo deve essere sempre assente. Solo UPN è supportato per un altro nome. Le opzioni di nome alternativo seguenti non sono supportate:
 
 -   Indirizzo X400
 -   Nome entità EDI
@@ -193,7 +193,7 @@ Il certificato o uno dei certificati nella catena di certificati ha un'estension
 
 <span id="CAPICOM_TRUST_HAS_NOT_DEFINED_NAME_CONSTRAINT"></span><span id="capicom_trust_has_not_defined_name_constraint"></span>
 
-<span id="CAPICOM_TRUST_HAS_NOT_DEFINED_NAME_CONSTRAINT"></span><span id="capicom_trust_has_not_defined_name_constraint"></span>**CAPICOM \_ VINCOLO DI NOME TRUST \_ \_ NON \_ \_ DEFINITO \_** (&H00002000)
+<span id="CAPICOM_TRUST_HAS_NOT_DEFINED_NAME_CONSTRAINT"></span><span id="capicom_trust_has_not_defined_name_constraint"></span>**CAPICOM \_ TRUST \_ NON HA DEFINITO IL VINCOLO \_ \_ \_ \_ DI NOME** (&H00002000)
 
 
 </dt> <dd>
@@ -204,7 +204,7 @@ Il certificato o uno dei certificati nella catena di certificati ha un'estension
 
 <span id="CAPICOM_TRUST_HAS_NOT_PERMITTED_NAME_CONSTRAINT"></span><span id="capicom_trust_has_not_permitted_name_constraint"></span>
 
-<span id="CAPICOM_TRUST_HAS_NOT_PERMITTED_NAME_CONSTRAINT"></span><span id="capicom_trust_has_not_permitted_name_constraint"></span>**CAPICOM \_ TRUST \_ HAS \_ NOT \_ PERMITTED \_ NAME \_ CONSTRAINT** (&H00004000)
+<span id="CAPICOM_TRUST_HAS_NOT_PERMITTED_NAME_CONSTRAINT"></span><span id="capicom_trust_has_not_permitted_name_constraint"></span>**CAPICOM \_ TRUST \_ NON HA CONSENTITO IL VINCOLO \_ \_ \_ \_ DI** NOME (&H00004000)
 
 
 </dt> <dd>
@@ -215,12 +215,12 @@ Il certificato o uno dei certificati nella catena di certificati ha un'estension
 
 <span id="CAPICOM_TRUST_HAS_EXCLUDED_NAME_CONSTRAINT"></span><span id="capicom_trust_has_excluded_name_constraint"></span>
 
-<span id="CAPICOM_TRUST_HAS_EXCLUDED_NAME_CONSTRAINT"></span><span id="capicom_trust_has_excluded_name_constraint"></span>**CAPICOM \_ TRUST \_ HA \_ \_ ESCLUSO IL VINCOLO \_ DI** NOME (&H00008000)
+<span id="CAPICOM_TRUST_HAS_EXCLUDED_NAME_CONSTRAINT"></span><span id="capicom_trust_has_excluded_name_constraint"></span>**CAPICOM \_ TRUST \_ HA \_ ESCLUSO IL VINCOLO \_ \_ DI** NOME (&H00008000)
 
 
 </dt> <dd>
 
-Il certificato o uno dei certificati nella catena di certificati ha un'estensione dei vincoli di nome e una delle opzioni di nome nel certificato finale viene esclusa in modo esplicito.
+Il certificato o uno dei certificati nella catena di certificati ha un'estensione dei vincoli di nome e una delle scelte di nome nel certificato finale viene esclusa in modo esplicito.
 
 </dd> <dt>
 
@@ -242,13 +242,13 @@ Lo stato di revoca del certificato o di uno dei certificati nella catena di cert
 
 </dt> <dd>
 
-Il certificato finale non dispone di criteri di rilascio risultanti e uno dei certificati della CA emittente ha un'estensione dei vincoli dei criteri che lo richiede.
+Il certificato finale non dispone di criteri di rilascio risultanti e uno dei certificati ca emittente ha un'estensione dei vincoli dei criteri che lo richiede.
 
 </dd> <dt>
 
 <span id="CAPICOM_TRUST_IS_PARTIAL_CHAIN"></span><span id="capicom_trust_is_partial_chain"></span>
 
-<span id="CAPICOM_TRUST_IS_PARTIAL_CHAIN"></span><span id="capicom_trust_is_partial_chain"></span>**CAPICOM \_ TRUST \_ IS \_ PARTIAL \_ CHAIN** (&H00010000)
+<span id="CAPICOM_TRUST_IS_PARTIAL_CHAIN"></span><span id="capicom_trust_is_partial_chain"></span>**CAPICOM \_ TRUST \_ IS \_ PARTIAL \_ CHAIN** (CATENA &H00010000)
 
 
 </dt> <dd>
@@ -275,13 +275,13 @@ Un CTL usato per creare questa catena non è valido in tempo.
 
 </dt> <dd>
 
-Un CTL utilizzato per creare questa catena non dispone di una firma valida.
+Un CTL usato per creare questa catena non ha una firma valida.
 
 </dd> <dt>
 
 <span id="CAPICOM_TRUST_CTL_IS_NOT_VALID_FOR_USAGE"></span><span id="capicom_trust_ctl_is_not_valid_for_usage"></span>
 
-<span id="CAPICOM_TRUST_CTL_IS_NOT_VALID_FOR_USAGE"></span><span id="capicom_trust_ctl_is_not_valid_for_usage"></span>**CAPICOM \_ TRUST \_ CTL \_ IS \_ NOT \_ VALID \_ FOR \_ USAGE** (&H00080000)
+<span id="CAPICOM_TRUST_CTL_IS_NOT_VALID_FOR_USAGE"></span><span id="capicom_trust_ctl_is_not_valid_for_usage"></span>**CAPICOM \_ TRUST \_ CTL \_ NON VALIDO PER \_ \_ \_ \_ L'UTILIZZO** (&H00080000)
 
 
 </dt> <dd>

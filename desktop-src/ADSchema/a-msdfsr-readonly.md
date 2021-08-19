@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DFSR-ReadOnly
+title: Attributo ms-DFSR-ReadOnly
 description: Specifica se il contenuto è di sola lettura o di lettura/scrittura.
 ms.assetid: 178154ae-42dd-4e10-861b-75c3367b46cd
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-DFSR-ReadOnly
-- msDFSR-schema AD dell'attributo ReadOnly
+- Schema AD dell'attributo msDFSR-ReadOnly
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54167c14bf58ac61d3e7f60227032da106d85687
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2697d8529bd02e3d47288f7aa385c9f643e386c711caafa05dd9403cc8741cc6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104400994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118015441"
 ---
-# <a name="ms-dfsr-readonly-attribute"></a>attributo ms-DFSR-ReadOnly
+# <a name="ms-dfsr-readonly-attribute"></a>Attributo ms-DFSR-ReadOnly
 
 Specifica se il contenuto è di sola lettura o di lettura/scrittura.
 
@@ -29,13 +29,13 @@ Specifica se il contenuto è di sola lettura o di lettura/scrittura.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MS-DFSR-ReadOnly                     |
-| LDAP-Display-Name | msDFSR-ReadOnly                      |
+| CN                | ms-DFSR-ReadOnly                     |
+| Ldap-Display-Name | msDFSR-ReadOnly                      |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.28           |
-| System-ID-GUID    | 5ac48021-e447-46e7-9d23-92c0c6a90dfb |
+| System-Id-Guid    | 5ac48021-e447-46e7-9d23-92c0c6a90dfb |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -55,15 +55,15 @@ Specifica se il contenuto è di sola lettura o di lettura/scrittura.
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| Is-Single-Valued       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000000                                                       |
-| Classi utilizzate in        | [**MS-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
+| Classi usate in        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Specifica se il contenuto è di sola lettura o di lettura/scrittura.
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| Is-Single-Valued       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000000                                                       |
-| Classi utilizzate in        | [**MS-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
+| Classi usate in        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Specifica se il contenuto è di sola lettura o di lettura/scrittura.
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| Is-Single-Valued       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000000                                                       |
-| Classi utilizzate in        | [**MS-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
+| Classi usate in        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 

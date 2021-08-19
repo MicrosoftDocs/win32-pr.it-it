@@ -46,7 +46,7 @@ typedef struct tagMCI_VCR_SETAUDIO_PARMS {
 **dwCallback**
 </dt> <dd>
 
-La parola di ordine basso specifica un handle di finestra usato per il flag MCI \_ NOTIFY.
+La parola più bassa specifica un handle di finestra utilizzato per il flag MCI \_ NOTIFY.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Input audio (del tipo specificato nel **membro dwTo)** da usare.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel *parametro fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
+Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della [**funzione mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
 
 ## <a name="requirements"></a>Requisiti
 

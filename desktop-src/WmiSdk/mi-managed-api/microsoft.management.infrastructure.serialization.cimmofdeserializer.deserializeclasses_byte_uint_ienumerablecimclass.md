@@ -29,7 +29,7 @@ ms.locfileid: "118317374"
 ---
 # <a name="cimmofdeserializerdeserializeclasses-method-byteuint32ienumerablecimclass"></a>Metodo CimMofDeserializer.DeserializeClasses (Byte \[ \] , UInt32, IEnumerable \<CimClass\> )
 
-Deserializza le classi CIM in base ai dati serializzati e una raccolta di classi CIM padre.
+Deserializza le classi CIM in base ai dati serializzati e a una raccolta di classi CIM padre.
 
 **Spazio dei nomi:**   [Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))  
 **Assembly:**  Microsoft.Management.Infrastructure (in Microsoft.Management.Infrastructure.dll)  
@@ -80,7 +80,7 @@ Public Function DeserializeClasses (
   - offset  
     Tipo: [System.UInt32](/dotnet/api/system.uint32?view=netframework-4.8)
     
-    Offset dei byte nella posizione da cui iniziare la lettura dei dati. Quando il metodo viene restituito, l'offset punta al byte successivo dopo le classi deserializzate.
+    Offset di byte nella posizione in cui iniziare a leggere i dati. Quando il metodo viene restituito, l'offset punta al byte successivo dopo le classi deserializzate.
 
 <!-- end list -->
 

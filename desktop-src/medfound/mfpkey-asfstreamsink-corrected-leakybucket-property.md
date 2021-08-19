@@ -1,5 +1,5 @@
 ---
-description: Specifica i parametri &\# 0034;leaky bucket&0034; per un flusso in un sink multimediale \# ASF.
+description: Specifica i parametri &\# 0034;bucket&0034; per un flusso in un \# sink multimediale ASF.
 ms.assetid: b01e59b6-0a7f-4125-867c-532385a27c15
 title: MFPKEY_ASFSTREAMSINK_CORRECTED_LEAKYBUCKET proprietà (Mfidl.h)
 ms.topic: reference
@@ -11,9 +11,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117874081"
 ---
-# <a name="mfpkey_asfstreamsink_corrected_leakybucket-property"></a>MFPKEY \_ ASFSTREAMSINK \_ CORRECTED \_ LEAKYBUCKET - proprietà
+# <a name="mfpkey_asfstreamsink_corrected_leakybucket-property"></a>Proprietà MFPKEY \_ ASFSTREAMSINK \_ CORRECTED \_ LEAKYBUCKET
 
-Specifica i parametri "leaky bucket" (vedere la sezione Osservazioni) per un flusso in un sink multimediale ASF.
+Specifica i parametri "leaky bucket" (vedere Osservazioni) per un flusso in un sink multimediale ASF.
 
 
 
@@ -33,13 +33,13 @@ VT \_ VECTOR \| VT \_ UI4
 
 ## <a name="remarks"></a>Commenti
 
-Un'applicazione può impostare questa proprietà su un flusso del sink multimediale di ASF dopo che il tipo di supporto per il flusso è stato negoziato. Usare questa proprietà per specificare la finestra del buffer effettiva che verrà Windows codec multimediale. È possibile ottenere queste informazioni dal codec usando l'interfaccia **IWMCodecLeakyBucket,** documentata in Windows Media Format SDK.
+Un'applicazione può impostare questa proprietà su un flusso del sink multimediale ASF dopo la negoziazione del tipo di supporto per il flusso. Usare questa proprietà per specificare la finestra del buffer effettiva che verrà Windows codec Media. È possibile ottenere queste informazioni dal codec usando **l'interfaccia IWMCodecLeakyBucket,** documentata in Windows Media Format SDK.
 
 Il valore di questa proprietà è una matrice di tre **valori DWORD** nell'ordine seguente:
 
 -   Velocità in bit, in bit al secondo.
 -   Dimensioni del buffer, in byte.
--   Completezza iniziale del buffer, in byte.
+-   Fullness iniziale del buffer, in byte.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,8 +47,8 @@ Il valore di questa proprietà è una matrice di tre **valori DWORD** nell'ordin
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
 | Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 

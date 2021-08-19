@@ -1,29 +1,29 @@
 ---
-description: Un'applicazione che utilizza un'autorità di backup per archiviare le chiavi di sessione in genere segue questa procedura.
+description: Un'applicazione che usa un'autorità di backup per archiviare le chiavi di sessione in genere segue questi passaggi.
 ms.assetid: 859310ed-6000-44c8-92f7-974326ce0fc9
-title: Archiviazione di chiavi di sessione mediante un'autorità di backup
+title: Archiviazione delle chiavi di sessione tramite un'autorità di backup
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d59906874f384d4eed9e20d6a781b14e3feba313
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3bbd8d8fd4bebeb4b5f3c3711f4e64b9c023f57404e8d9f93200e00967dfbed0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104345726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117977455"
 ---
-# <a name="storing-session-keys-using-a-backup-authority"></a>Archiviazione di chiavi di sessione mediante un'autorità di backup
+# <a name="storing-session-keys-using-a-backup-authority"></a>Archiviazione delle chiavi di sessione tramite un'autorità di backup
 
-Un'applicazione che utilizza un' [*autorità di backup*](../secgloss/b-gly.md) per archiviare le chiavi di sessione in genere segue questa procedura.
+Un'applicazione che usa [*un'autorità di backup*](../secgloss/b-gly.md) per archiviare le chiavi di sessione in genere segue questi passaggi.
 
-**Per utilizzare un'autorità di backup**
+**Per usare un'autorità di backup**
 
 1.  Crittografare il file come di consueto.
-2.  Esportare la [*chiave di sessione*](../secgloss/s-gly.md) usata per crittografare il file in un [*BLOB di chiavi semplice*](../secgloss/s-gly.md), specificando che la chiave [*pubblica di scambio*](../secgloss/k-gly.md) della chiave deve essere usata per crittografare il BLOB della chiave. Archiviare questo BLOB di chiavi con il file crittografato.
-3.  Esportare di nuovo la chiave di sessione, questa volta specificando che la chiave pubblica dell'autorità di backup verrà usata per crittografare il BLOB della chiave. Inviare questo BLOB di chiavi all'autorità di backup, insieme alla descrizione della chiave, al numero di serie e così via.
+2.  Esportare [*la chiave di*](../secgloss/s-gly.md) sessione usata per crittografare il file in un [*BLOB*](../secgloss/s-gly.md)di chiave semplice, specificando che per crittografare il BLOB della chiave deve essere usata la chiave pubblica dello [*scambio*](../secgloss/k-gly.md) di chiavi. Archiviare questo BLOB della chiave con il file crittografato.
+3.  Esportare nuovamente la chiave di sessione, questa volta specificando che la chiave pubblica dell'autorità di backup deve essere usata per crittografare il BLOB della chiave. Inviare questo BLOB della chiave all'autorità di backup, insieme alla descrizione della chiave, al numero di serie e così via.
 
-Se una [*coppia di chiavi*](../secgloss/k-gly.md) viene persa, le chiavi possono essere recuperate dall' [*autorità di backup*](../secgloss/b-gly.md) se è possibile stabilire l'identità del proprietario delle chiavi. La procedura per stabilire l'identità è determinata dai criteri dell'autorità di backup specifica e non comporta CryptoAPI.
+Se una [*coppia di chiavi*](../secgloss/k-gly.md) viene persa, le chiavi possono essere recuperate dall'autorità di [*backup*](../secgloss/b-gly.md) se è possibile stabilire l'identità del proprietario delle chiavi. La procedura per stabilire l'identità è determinata dai criteri dell'autorità di backup specifica e non comporta CryptoAPI.
 
-Per il codice necessario per creare una chiave della sessione ed esportare la chiave in un [*BLOB di chiavi semplice*](../secgloss/s-gly.md) che può essere scritto in un file su disco, vedere [esempio C Program: exporting a Session Key](example-c-program-exporting-a-session-key.md).
+Per il codice necessario per creare una chiave di sessione ed esportarne una in un [*BLOB*](../secgloss/s-gly.md) di chiave semplice che può essere scritto in un file su disco, vedere Esempio [di programma C: Esportazione](example-c-program-exporting-a-session-key.md)di una chiave di sessione .
 
  
 

@@ -3,7 +3,7 @@ title: Apertura di un dispositivo semplice tramite il nome del dispositivo
 description: Apertura di un dispositivo semplice tramite il nome del dispositivo
 ms.assetid: 9e116499-2094-40e1-b2bc-3e3b8281a472
 keywords:
-- MciSendCommand - funzione
+- Funzione mciSendCommand
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 15d186451717a056188d6fc990188c7e73fcf34cf1339b0787f7cec6e7573557

@@ -1,6 +1,6 @@
 ---
-title: texreg2ar-PS
-description: Interpreta i componenti di colore alfa e rosso del registro di origine come dati degli indirizzi di trama (u, v) per campionare la trama in corrispondenza della fase corrispondente al numero di registro di destinazione. Il risultato viene archiviato nel registro di destinazione.
+title: texreg2ar - ps
+description: Interpreta i componenti dei colori alfa e rosso del registro di origine come dati dell'indirizzo della trama (u,v) per campionare la trama nella fase corrispondente al numero del registro di destinazione. Il risultato viene archiviato nel registro di destinazione.
 ms.assetid: b31a2ee4-f9b9-4aee-b3be-7ccc5b8c6f3e
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,69 +9,69 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 93418e7e9e87178cd64c2d7238b5227de0990378
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ee9516c43f5e8d774ef496a0e66ae1a8ee839ff3df6f2f5436caaf887f95da54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104473454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118284002"
 ---
-# <a name="texreg2ar---ps"></a>texreg2ar-PS
+# <a name="texreg2ar---ps"></a>texreg2ar - ps
 
-Interpreta i componenti di colore alfa e rosso del registro di origine come dati degli indirizzi di trama (u, v) per campionare la trama in corrispondenza della fase corrispondente al numero di registro di destinazione. Il risultato viene archiviato nel registro di destinazione.
+Interpreta i componenti dei colori alfa e rosso del registro di origine come dati dell'indirizzo della trama (u,v) per campionare la trama nella fase corrispondente al numero del registro di destinazione. Il risultato viene archiviato nel registro di destinazione.
 
 ## <a name="syntax"></a>Sintassi
 
 
 
-| texreg2ar DST, src |
+| texreg2ar dst, src |
 |--------------------|
 
 
 
- 
+ 
 
 dove
 
--   DST è il registro di destinazione.
+-   dst è il registro di destinazione.
 -   src è un registro di origine.
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | texreg2ar             | x    | x    | x    |      |      |      |       |      |       |
 
 
 
- 
+ 
 
-Questa istruzione è utile per le operazioni di rimapping dello spazio colore.
+Questa istruzione è utile per le operazioni di mapping dello spazio colore.
 
-Ecco un esempio della sequenza seguita dall'istruzione:
+Di seguito è riportato un esempio della sequenza che l'istruzione segue:
 
-<dl> Tex t (n)  
-texreg2ar t (m), t (n) dove m > n  
+<dl> tex t(n)  
+texreg2ar t(m), t(n) where m > n  
 La prima istruzione carica il colore della trama (RGBA)  
-in Register TN  
-Tex TN  
-La seconda istruzione esegue il mapping del colore  
-t (m)<sub>RGBA</sub> = TextureSample (fase m)<sub>RGBA</sub> utilizzo di t (n)<sub>AR</sub> come coordinate
+into register tn  
+tex tn  
+La seconda istruzione modifica il mapping del colore  
+t(m)<sub>RGBA</sub> = TextureSample(stage m)<sub>RGBA</sub> usando t(n)<sub>AR</sub> come coordinate
 </dl>
 
-\_non è possibile usare BX2 nel registro src per le istruzioni texreg2ar o [texreg2gb-PS](texreg2gb---ps.md) .
+\_bx2 non può essere usato nel registro src per le istruzioni texreg2ar o [texreg2gb - ps.](texreg2gb---ps.md)
 
-Per questa istruzione, il registro di origine deve usare dati non firmati. L'utilizzo di dati firmati o misti nel registro di origine produrrà risultati non definiti. Per ulteriori informazioni, vedere [D3DFORMAT](/windows/desktop/direct3d9/d3dformat).
+Per questa istruzione, il registro di origine deve usare dati non firmati. L'uso di dati firmati o misti nel registro di origine produrrà risultati non definiti. Per altre informazioni, vedere [D3DFORMAT.](/windows/desktop/direct3d9/d3dformat)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
+[Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

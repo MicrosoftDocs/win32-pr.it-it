@@ -13,10 +13,10 @@ ms.locfileid: "117754166"
 ---
 # <a name="shape-element-vml"></a>Elemento Shape (VML)
 
-Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
  
 
@@ -38,18 +38,18 @@ Gli attributi seguenti modificano una forma.
 | [BorderTopColor](msdn-online-vml-bordertopcolor-attribute.md)                                     | Colore del bordo superiore di una forma inline.                                                           |
 | [Proiettile](msdn-online-vml-bullet-attribute.md)                                                     | Determina se una forma è un punto elenco grafico.                                              |
 | [Button](msdn-online-vml-button-attribute.md)                                                     | Determina se una forma verrà elaborata come pulsante.                                      |
-| [BWMode](msdn-online-vml-bwmode-attribute.md)                                                     | Determina il modo in cui verrà eseguito il rendering di una forma per i dispositivi di output in bianco e nero.                         |
+| [BWMode](msdn-online-vml-bwmode-attribute.md)                                                     | Determina la modalità di rendering di una forma per i dispositivi di output in bianco e nero.                         |
 | [BWNormal](msdn-online-vml-bwnormal-attribute.md)                                                 | Definisce la modalità in bianco e nero per i normali dispositivi di output in bianco e nero.                    |
 | [BWPure](msdn-online-vml-bwpure-attribute.md)                                                     | Definisce la modalità in bianco e nero per i dispositivi di output in bianco e nero puro.                      |
 | [Classe](msdn-online-vml-class-attribute.md)                                                       | Fa riferimento a una definizione di uno stile CSS.                                                         |
 | [Connectortype](msdn-online-vml-connectortype-attribute.md)                                       | Indica il tipo di connettore usato per unire le forme.                                       |
-| [CoordOrig](msdn-online-vml-coordorigin-attribute.md)                                             | Specifica l'origine dell'unità di coordinata del rettangolo che delimita una forma.                     |
+| [CoordOrig](msdn-online-vml-coordorigin-attribute.md)                                             | Specifica l'origine dell'unità di misura delle coordinate del rettangolo che delimita una forma.                     |
 | [CoordSize](msdn-online-vml-coordsize-attribute.md)                                               | Specifica le unità orizzontali e verticali del rettangolo che delimita una forma.              |
 | [DoubleClickNotify](msdn-online-vml-doubleclicknotify-attribute.md)                               | Invia un messaggio di evento quando si fa doppio clic su una forma.                                         |
 | [Fillcolor](msdn-online-vml-fillcolor-attribute.md)                                               | Definisce il colore del pennello che riempie il tracciato chiuso di una forma.                                 |
 | [Riempito](msdn-online-vml-filled-attribute.md)                                                     | Determina se il percorso chiuso verrà riempito.                                             |
 | [Flip](msdn-online-vml-flip-attribute.md)                                                         | Cambia l'orientamento di una forma.                                                           |
-| [ForceDash](msdn-online-vml-forcedash-attribute.md)                                               | Determina se un contorno tratteggiato viene usato per disegnare una forma quando una forma non ha linee o riempimento.  |
+| [ForceDash](msdn-online-vml-forcedash-attribute.md)                                               | Determina se un contorno tratteggiato viene utilizzato per disegnare una forma quando una forma non ha linee o riempimento.  |
 | [Altezza](msdn-online-vml-height-attribute.md)                                                     | Specifica l'altezza della forma.                                                             |
 | [HR](msdn-online-vml-hr-attribute.md)                                                             | Specifica che una forma è una regola orizzontale.                                                   |
 | [HRAlign](msdn-online-vml-hralign-attribute.md)                                                   | Definisce l'allineamento di una regola orizzontale.                                                    |
@@ -61,20 +61,20 @@ Gli attributi seguenti modificano una forma.
 | [HRWidth](msdn-online-vml-hrwidth-attribute.md)                                                   | Definisce la lunghezza di una regola orizzontale.                                                       |
 | [ID](id-attribute--vml.md)                                                                        | Fornisce un identificatore univoco per un elemento.                                                   |
 | [Sinistra](msdn-online-vml-left-attribute.md)                                                         | Determina la posizione della forma rispetto all'elemento a sinistra nel flusso del documento.  |
-| [Margin-Bottom](msdn-online-vml-margin-bottom-attribute.md)                                       | Specifica il bordo inferiore del rettangolo contenente la forma rispetto all'ancoraggio della forma.    |
-| [Margine a sinistra](msdn-online-vml-margin-left-attribute.md)                                           | Specifica il bordo sinistro del rettangolo contenente la forma rispetto all'ancoraggio della forma.      |
-| [Margine a destra](msdn-online-vml-margin-right-attribute.md)                                         | Specifica il bordo destro del rettangolo contenente la forma rispetto all'ancoraggio della forma.     |
-| [Margin-Top](msdn-online-vml-margin-top-attribute.md)                                             | Specifica il bordo superiore del rettangolo contenente la forma rispetto all'ancoraggio della forma.       |
+| [Margin-Bottom](msdn-online-vml-margin-bottom-attribute.md)                                       | Specifica il bordo inferiore del rettangolo che contiene la forma rispetto all'ancoraggio della forma.    |
+| [Margine a sinistra](msdn-online-vml-margin-left-attribute.md)                                           | Specifica il bordo sinistro del rettangolo che contiene la forma rispetto all'ancoraggio della forma.      |
+| [Margine a destra](msdn-online-vml-margin-right-attribute.md)                                         | Specifica il bordo destro del rettangolo che contiene la forma rispetto all'ancoraggio della forma.     |
+| [Margin-Top](msdn-online-vml-margin-top-attribute.md)                                             | Specifica il bordo superiore del rettangolo che contiene la forma rispetto all'ancoraggio della forma.       |
 | [MSO-Position-Horizontal](msdn-online-vml-mso-position-horizontal-attribute.md)                   | Specifica i dati di posizionamento orizzontale per gli oggetti in Microsoft Word.                       |
-| [MSO-Position-Horizontal-Relative](msdn-online-vml-mso-position-horizontal-relative-attribute.md) | Specifica i dati relativi alla posizione orizzontale per gli oggetti Microsoft Word.                     |
-| [MSO-Position-Vertical](msdn-online-vml-mso-position-vertical-attribute.md)                       | Specifica i dati di posizione verticale per gli oggetti in Microsoft Word.                            |
-| [MSO-Position-Vertical-Relative](msdn-online-vml-mso-position-vertical-relative-attribute.md)     | Specifica i dati relativi alla posizione verticale per gli oggetti Microsoft Word.                       |
+| [MSO-Position-Horizontal-Relative](msdn-online-vml-mso-position-horizontal-relative-attribute.md) | Specifica i dati relativi alla posizione orizzontale per gli oggetti in Microsoft Word.                     |
+| [MSO-Position-Vertical](msdn-online-vml-mso-position-vertical-attribute.md)                       | Specifica i dati della posizione verticale per gli oggetti in Microsoft Word.                            |
+| [MSO-Position-Vertical-Relative](msdn-online-vml-mso-position-vertical-relative-attribute.md)     | Specifica i dati relativi alla posizione verticale per gli oggetti in Microsoft Word.                       |
 | [MSO-Wrap-Distance-Bottom](msdn-online-vml-mso-wrap-distance-bottom-attribute.md)                 | Definisce la distanza dal lato inferiore della forma al testo che la racchiude.       |
 | [MSO-Wrap-Distance-Left](msdn-online-vml-mso-wrap-distance-left-attribute.md)                     | Definisce la distanza dal lato sinistro della forma al testo che la racchiude.         |
 | [MSO-Wrap-Distance-Right](msdn-online-vml-mso-wrap-distance-right-attribute.md)                   | Definisce la distanza dal lato destro della forma al testo che la racchiude.        |
 | [MSO-Wrap-Distance-Top](msdn-online-vml-mso-wrap-distance-top-attribute.md)                       | Definisce la distanza tra la parte superiore della forma e il testo che la racchiude.                      |
-| [MsO -Wrap-Edited](msdn-online-vml-mso-wrap-edited-attribute.md)                                   | Determina se le coordinate di ritorno a capo sono state personalizzate dall'utente.                           |
-| [MsO-Wrap-Mode](msdn-online-vml-mso-wrap-mode-attribute.md)                                       | Definisce la modalità di ritorno a capo per il testo.                                                            |
+| [MSO-Wrap-Edited](msdn-online-vml-mso-wrap-edited-attribute.md)                                   | Determina se le coordinate di ritorno a capo sono state personalizzate dall'utente.                           |
+| [Mso-Wrap-Mode](msdn-online-vml-mso-wrap-mode-attribute.md)                                       | Definisce la modalità di ritorno a capo per il testo.                                                            |
 | [OLEIcon](msdn-online-vml-oleicon-attribute.md)                                                   | Determina se un oggetto OLE verrà visualizzato come icona.                                 |
 | [OnEd](msdn-online-vml-oned-attribute.md)                                                         | Determina se i punti di controllo aggiuntivi di una forma sono nascosti.                                    |
 | [Onmouseover](msdn-online-vml-onmouseover-attribute.md)                                           | Attiva un evento del mouse per una forma.                                                            |
@@ -85,13 +85,13 @@ Gli attributi seguenti modificano una forma.
 | [ReGroupID](msdn-online-vml-regroupid-attribute.md)                                               | Definisce un gruppo precedente per una forma.                                                          |
 | [RelativePosition](msdn-online-vml-relativeposition-attribute.md)                                 | Definisce una posizione relativa per un oggetto .                                                     |
 | [Rotazione](rotation-attribute--shape--vml.md)                                                     | Definisce l'angolo di rotazione di una forma.                                                     |
-| [RuleInitiator](msdn-online-vml-ruleinitiator-attribute.md)                                       | Determina se verrà utilizzato un motore regole.                                                |
-| [Proxy regola](msdn-online-vml-ruleproxy-attribute.md)                                               | Determina se verrà utilizzato un proxy per il motore regole.                                  |
+| [RuleInitiator](msdn-online-vml-ruleinitiator-attribute.md)                                       | Determina se verrà usato un motore regole.                                                |
+| [RuleProxy](msdn-online-vml-ruleproxy-attribute.md)                                               | Determina se verrà usato un proxy per il motore regole.                                  |
 | [Spt](msdn-online-vml-spt-attribute.md)                                                           | Definisce un numero usato internamente da Microsoft Office per identificare i tipi di forme.              |
-| [StrokeColor](msdn-online-vml-strokecolor-attribute.md)                                           | Definisce il colore del pennello che traccia il tracciato di una forma.                                      |
+| [StrokeColor](msdn-online-vml-strokecolor-attribute.md)                                           | Definisce il colore del pennello che traccia il percorso di una forma.                                      |
 | [Accarezzò](msdn-online-vml-stroked-attribute.md)                                                   | Definisce se il tracciato verrà tracciato.                                                      |
-| [StrokeWeight](msdn-online-vml-strokeweight-attribute.md)                                         | Definisce lo spessore del pennello che traccia il tracciato di una forma.                                  |
-| [TableLimits](msdn-online-vml-tablelimits-attribute.md)                                           | Elenco di valori di altezza minima per ogni riga di una tabella.                                         |
+| [StrokeWeight](msdn-online-vml-strokeweight-attribute.md)                                         | Definisce lo spessore del pennello che traccia il percorso di una forma.                                  |
+| [TableLimits](msdn-online-vml-tablelimits-attribute.md)                                           | Elenco dei valori di altezza minima per ogni riga di una tabella.                                         |
 | [TableProperties](msdn-online-vml-tableproperties-attribute.md)                                   | Determina le proprietà della tabella.                                                                   |
 | [Destinazione](msdn-online-vml-target-attribute.md)                                                     | Definisce un frame o una finestra in cui verrà visualizzato un URL.                                     |
 | [Title](title-attribute--shape--vml.md)                                                           | Definisce il testo visualizzato quando il puntatore del mouse viene spostato sulla forma.                        |
@@ -110,9 +110,9 @@ Gli attributi seguenti modificano una forma.
 
 **Osservazioni:**
 
-Questo elemento può apparire da solo o all'interno di [un elemento Group.](msdn-online-vml-group-element.md)
+Questo elemento può essere visualizzato da solo o all'interno di [un elemento](msdn-online-vml-group-element.md) Group.
 
-Di seguito è riportato il codice minimo necessario per produrre una forma. È necessario definire gli **attributi FillColor**, **Position**, **Top**, **Left**, **Width**, **Height** e **Path.** In caso contrario, non verrà eseguito il rendering della forma.
+Di seguito è riportato il codice minimo necessario per produrre una forma. È necessario definire gli **attributi FillColor**, **Position**, **Top**, **Left**, **Width**, **Height** **e Path** oppure non verrà eseguito il rendering della forma.
 
 
 ```HTML
@@ -125,7 +125,7 @@ Di seguito è riportato il codice minimo necessario per produrre una forma. È n
 
 
 
-È inoltre necessario inserire il codice seguente nell'elemento [**HTML**](https://msdn.microsoft.com/library/ms535255(v=VS.85).aspx) della pagina Web per ottenere gli schemi corretti per VML e Microsoft Office extensions. Se non si usa Office, è possibile omettere il secondo schema.
+Inoltre, è necessario inserire il codice seguente nell'elemento [**HTML**](https://msdn.microsoft.com/library/ms535255(v=VS.85).aspx) della pagina Web per ottenere gli schemi corretti per VML e Microsoft Office Extensions. Se non si usano Office, è possibile omettere il secondo schema.
 
 
 ```HTML
@@ -135,7 +135,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office"
 
 
 
-Per registrare il comportamento di VML e Microsoft Office estensioni, è necessario che nell'elemento [**STYLE**](https://developer.mozilla.org/docs/Web/HTML/Element/style) sia presente quanto segue. Se non si usano estensioni Office, è possibile omettere la seconda definizione di comportamento.
+Per registrare il comportamento [](https://developer.mozilla.org/docs/Web/HTML/Element/style) di VML e Microsoft Office extensions, è necessario anche disporre di quanto segue nell'elemento STYLE. Se non si usano le Office, è possibile omettere la seconda definizione di comportamento.
 
 
 ```HTML
@@ -157,12 +157,12 @@ Di seguito sono riportati i sottoelementi di Shape.
 | [Estrusione](msdn-online-vml-extrusion-element.md) | Definisce un'estrusione per una forma. |
 | [Fill](msdn-online-vml-fill-element.md)           | Definisce un riempimento per una forma.       |
 | [Formule](msdn-online-vml-formulas-element.md)   | Definisce le formule per una forma.     |
-| [Selettori](msdn-online-vml-handles-element.md)     | Definisce i quadratini di ridimensionamento per una forma.      |
-| [Imagedata](msdn-online-vml-imagedata-element.md) | Definisce i dati dell'immagine per una forma.   |
+| [Selettori](msdn-online-vml-handles-element.md)     | Definisce i punti di manipolazione per una forma.      |
+| [Imagedata](msdn-online-vml-imagedata-element.md) | Definisce i dati immagine per una forma.   |
 | [Locks](msdn-online-vml-locks-element.md)         | Definisce un blocco per una forma.       |
-| [Percorso](msdn-online-vml-path-element.md)           | Definisce un tracciato per una forma.       |
+| [Percorso](msdn-online-vml-path-element.md)           | Definisce un percorso per una forma.       |
 | [Shadow](msdn-online-vml-shadow-element.md)       | Definisce un'ombreggiatura per una forma.     |
-| [Inclinazione](msdn-online-vml-skew-element.md)           | Definisce un'a inclinazione per una forma.       |
+| [Inclinazione](msdn-online-vml-skew-element.md)           | Definisce un'avalla per una forma.       |
 | [infarto](msdn-online-vml-stroke-element.md)       | Definisce un tratto per una forma.     |
 | [TextBox](msdn-online-vml-textbox-element.md)     | Definisce una casella di testo per una forma.    |
 | [Percorso di testo](msdn-online-vml-textpath-element.md)   | Definisce un percorso di testo per una forma.  |

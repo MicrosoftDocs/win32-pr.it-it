@@ -1,5 +1,5 @@
 ---
-description: Specifica se il provider di servizi di acquisizione vocale esegue la pre-elaborazione dell'array di microfoni.
+description: Specifica se il DSP di acquisizione vocale esegue la pre-elaborazione dell'array di microfoni.
 ms.assetid: 0f197165-e6e5-456b-9615-1edc8ada7bb5
 title: MFPKEY_WMAAECMA_FEATR_MICARR_PREPROC proprietà (Wmcodecdsp.h)
 ms.topic: reference
@@ -13,11 +13,11 @@ ms.locfileid: "117873015"
 ---
 # <a name="mfpkey_wmaaecma_featr_micarr_preproc-property"></a>Proprietà PREPROC MFPKEY \_ WMAAECMA \_ FEATR \_ MICARR \_
 
-Specifica se il provider di servizi di acquisizione vocale esegue la pre-elaborazione dell'array di microfoni.
+Specifica se il DSP di acquisizione vocale esegue la pre-elaborazione dell'array di microfoni.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
-Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Disponibile solo tramite [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -29,11 +29,11 @@ VARIANT \_ TRUE
 
 ## <a name="applies-to"></a>Si applica a
 
--   [Provider di servizi di acquisizione vocale](voicecapturedmo.md)
+-   [Voice Capture DSP](voicecapturedmo.md)
 
 ## <a name="remarks"></a>Commenti
 
-La pre-elaborazione può rimuovere i toni stazionari che interferiscono con l'elaborazione, ad esempio un tono con un passo fisso.
+La pre-elaborazione può rimuovere toni stazionari che interferiscono con l'elaborazione, ad esempio un tono con un passo fisso.
 
 Questa proprietà può avere i valori seguenti.
 
@@ -48,9 +48,9 @@ Questa proprietà può avere i valori seguenti.
 
  
 
-Il valore predefinito di questa proprietà è VARIANT \_ TRUE (abilitato). Prima di impostare questa proprietà, è necessario impostare la [proprietà MFPKEY \_ WMAAECMA \_ FEATURE \_ MODE](mfpkey-wmaaecma-feature-modeproperty.md) su VARIANT \_ TRUE.
+Il valore predefinito di questa proprietà è VARIANT \_ TRUE (abilitato). Prima di impostare questa proprietà, è necessario impostare la proprietà [MFPKEY \_ WMAAECMA \_ FEATURE \_ MODE](mfpkey-wmaaecma-feature-modeproperty.md) su VARIANT \_ TRUE.
 
-Il provider di servizi di configurazione usa questa proprietà solo quando è abilitata l'elaborazione dell'array microfono.
+Il provider di servizi di configurazione usa questa proprietà solo quando è abilitata l'elaborazione della matrice del microfono.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,8 +58,8 @@ Il provider di servizi di configurazione usa questa proprietà solo quando è ab
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
 | Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
@@ -71,7 +71,7 @@ Il provider di servizi di configurazione usa questa proprietà solo quando è ab
 [Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
-[Provider di servizi di acquisizione vocale](voicecapturedmo.md)
+[Voice Capture DSP](voicecapturedmo.md)
 </dt> </dl>
 
  

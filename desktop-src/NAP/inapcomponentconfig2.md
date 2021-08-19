@@ -1,10 +1,10 @@
 ---
 title: Interfaccia INapComponentConfig2 (NapCommon.h)
-description: Fornisce metodi di configurazione del sistema di Protezione accesso alla rete per validator dell'integrità del sistema per configurare un'interfaccia utente del server dei criteri di rete in modalità remota.
+description: Fornisce metodi di configurazione di sistema di Protezione accesso alla rete per i validator dell'integrità del sistema per configurare un'interfaccia utente del server dei criteri di rete in modalità remota.
 ms.assetid: 35150184-300c-4ea4-bff9-b3c33fa3156b
 keywords:
-- Interfaccia INapComponentConfig2 nap
-- Interfaccia INapComponentConfig2 nap , descritta
+- Interfaccia INapComponentConfig2 NAP
+- Interfaccia INapComponentConfig2 NAP, descritta
 topic_type:
 - apiref
 api_name:
@@ -29,7 +29,7 @@ ms.locfileid: "118368380"
 
  
 
-**L'interfaccia INapComponentConfig2** fornisce metodi di configurazione del sistema di Protezione accesso alla rete per validator dell'integrità del sistema (SHV) per configurare un'interfaccia utente del server dei criteri di rete (NPS) in modalità remota.
+**L'interfaccia INapComponentConfig2** fornisce metodi di configurazione del sistema di Protezione accesso alla rete per i validator dell'integrità del sistema per configurare un'interfaccia utente del server dei criteri di rete in modalità remota.
 
 > [!Note]  
 > Questa interfaccia eredita tutti i metodi di [**INapComponentConfig**](inapcomponentconfig.md) e deve essere usata.
@@ -38,7 +38,7 @@ ms.locfileid: "118368380"
 
 ## <a name="members"></a>Membri
 
-**L'interfaccia INapComponentConfig2** eredita da [**INapComponentConfig**](inapcomponentconfig.md). **INapComponentConfig2** include anche questi tipi di membri:
+**L'interfaccia INapComponentConfig2** eredita da [**INapComponentConfig.**](inapcomponentconfig.md) **INapComponentConfig2** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
@@ -50,8 +50,8 @@ ms.locfileid: "118368380"
 
 | Metodo                                                                                                | Descrizione                                                                                                                                                                |
 |:------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**INapComponentConfig2::InvokeUIForMachine**](inapcomponentconfig2-invokeuiformachine.md)           | Implementata dagli SHV in base alle esigenze per gestire la configurazione remota direttamente nel computer specificato.<br/>                                                                 |
-| [**INapComponentConfig2::InvokeUIFromConfigBlob**](inapcomponentconfig2-invokeuifromconfigblob.md)   | Implementata dagli SHV in base alle esigenze per caricare la configurazione del computer remoto in memoria e per visualizzare un'interfaccia utente che consente la manipolazione dei dati di configurazione.<br/> |
+| [**INapComponentConfig2::InvokeUIForMachine**](inapcomponentconfig2-invokeuiformachine.md)           | Implementato dagli SHV in base alle esigenze per gestire la configurazione remota direttamente nel computer specificato.<br/>                                                                 |
+| [**INapComponentConfig2::InvokeUIFromConfigBlob**](inapcomponentconfig2-invokeuifromconfigblob.md)   | Implementato da SHV in base alle esigenze per caricare la configurazione del computer remoto in memoria e per visualizzare un'interfaccia utente che consente la manipolazione dei dati di configurazione.<br/> |
 | [**INapComponentConfig2::IsRemoteConfigSupported**](inapcomponentconfig2-isremoteconfigsupported.md) | Implementato da SHV per indicare se la configurazione remota è supportata.<br/>                                                                                      |
 
 
@@ -69,7 +69,7 @@ Questa interfaccia non deve essere implementata dagli agenti di integrità del s
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                     |
 | Intestazione<br/>                   | <dl> <dt>NapCommon.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>NapCommon.idl</dt> </dl> |
 

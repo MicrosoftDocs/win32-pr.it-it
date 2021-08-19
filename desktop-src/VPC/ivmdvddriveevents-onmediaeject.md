@@ -4,7 +4,7 @@ description: Riceve la notifica che il supporto è stato espulso dall'unità. | 
 ms.assetid: ec90fbce-7123-4bfa-abab-300e916fa089
 keywords:
 - Metodo OnMediaEject Virtual PC
-- Metodo OnMediaEject Virtual PC, interfaccia IVMDVDDriveEvents
+- Metodo OnMediaEject Virtual PC , interfaccia IVMDVDDriveEvents
 - Interfaccia IVMDVDDriveEvents Virtual PC, metodo OnMediaEject
 topic_type:
 - apiref
@@ -57,7 +57,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene chiamato quando viene espulso un supporto (un'immagine ISO o un disco in un'unità host). Il programma client deve implementare questo metodo di interfaccia per ricevere la notifica dell'evento OnEject vmDVDDriveEvent \_ originato da [**IVMDVDDrive.**](ivmdvddrive.md)
+Questo metodo viene chiamato quando viene espulso un supporto (un'immagine ISO o un disco in un'unità host). Il programma client deve implementare questo metodo di interfaccia per ricevere la notifica dell'evento vmDVDDriveEvent OnEject che ha origine \_ da [**IVMDVDDrive.**](ivmdvddrive.md)
 
 ## <a name="requirements"></a>Requisiti
 
