@@ -1,7 +1,7 @@
 ---
-description: Funzioni di debug wait
+description: Funzioni di debug in attesa
 ms.assetid: 784ef76e-3c17-45e0-9a0b-656c11c71322
-title: Funzioni di debug wait
+title: Funzioni di debug in attesa
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 4f8f1de3d19ce7408625a5ab42f230d23ce401728e9fa7cf060edae62e19fcfd
@@ -11,19 +11,19 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120049201"
 ---
-# <a name="wait-debugging-functions"></a>Funzioni di debug wait
+# <a name="wait-debugging-functions"></a>Funzioni di debug in attesa
 
-Microsoft DirectShow diverse funzioni per il debug di attese infinite.
+Microsoft DirectShow fornisce diverse funzioni per il debug di attese infinite.
 
-Nelle build per la vendita al dettaglio, le funzioni [**DbgWaitForMultipleObjects**](dbgwaitformultipleobjects.md) e [**DbgWaitForSingleObject**](dbgwaitforsingleobject.md) funzionano come le controparti dell'API Windows **WaitForMultipleObjects** e **WaitForSingleObject,** con intervalli di timeout infiniti.
+Nelle build di vendita al dettaglio, le funzioni [**DbgWaitForMultipleObjects**](dbgwaitformultipleobjects.md) e [**DbgWaitForSingleObject**](dbgwaitforsingleobject.md) funzionano come le controparti dell'API Windows, **WaitForMultipleObjects** e **WaitForSingleObject**, con intervalli di timeout infiniti.
 
 Nelle build di debug queste funzioni usano un valore di timeout globale. Se il timeout scade, la funzione attiva un'asserzione. La chiave del Registro di sistema seguente specifica il valore di timeout, espresso in millisecondi:
 
-**HKEY \_ LOCAL \_ MACHINE \\ <DebugRoot> \\ <Module Name> \\ TIMEOUT**
+**TIMEOUT DEL COMPUTER LOCALE HKEY \_ \_ \\ <DebugRoot> \\ <Module Name> \\**
 
-dove *<DebugRoot>* è il percorso del Registro di sistema descritto nell'argomento Debug Output [Functions](debug-output-functions.md).
+dove *<DebugRoot>* è il percorso del Registro di sistema descritto nell'argomento Funzioni di output di [debug](debug-output-functions.md).
 
-Se la chiave non esiste, il valore di timeout predefinito è INFINITE. È possibile usare la funzione [**DbgSetWaitTimeout**](dbgsetwaittimeout.md) per eseguire l'override della voce del Registro di sistema.
+Se la chiave non esiste, il valore di timeout viene impostato per impostazione predefinita su INFINITE. È possibile usare la funzione [**DbgSetWaitTimeout per**](dbgsetwaittimeout.md) eseguire l'override della voce del Registro di sistema.
 
 
 

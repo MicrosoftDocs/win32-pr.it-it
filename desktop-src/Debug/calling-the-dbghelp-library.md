@@ -1,23 +1,23 @@
 ---
-description: Sebbene DbgHelp.dll venga fornito con tutte le versioni di Windows, i chiamanti devono prendere in considerazione l'uso di una delle versioni più recenti di questa DLL come indicato nel pacchetto strumenti di debug per Windows. Per informazioni dettagliate sulla distribuzione di DbgHelp, vedere versioni di DbgHelp.
+description: Anche DbgHelp.dll viene fornito con tutte le versioni di Windows, i chiamanti devono prendere in considerazione l'uso di una delle versioni più recenti di questa DLL, come illustrato nel pacchetto Debugging Tools For Windows. Per informazioni dettagliate sulla distribuzione di DbgHelp, vedere Versioni di DbgHelp.
 ms.assetid: 4e615e75-5ab8-4155-a3d3-b96313b37e9b
 title: Chiamata della libreria DbgHelp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70cc06f6a0e28f163d80490647ee8f33754c249b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c4d6a111da8b0874a0c66fa08840e1ea4edeabf539afab2e9decf0eb19372db3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104482749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957160"
 ---
 # <a name="calling-the-dbghelp-library"></a>Chiamata della libreria DbgHelp
 
-Sebbene DbgHelp.dll venga fornito con tutte le versioni di Windows, i chiamanti devono prendere in considerazione l'uso di una delle versioni più recenti di questa DLL come indicato nel pacchetto [strumenti di debug per Windows](https://www.microsoft.com/?ref=go) . Per informazioni dettagliate sulla distribuzione di DbgHelp, vedere [versioni di dbghelp](dbghelp-versions.md).
+Anche DbgHelp.dll viene fornito con tutte le versioni di Windows, i chiamanti devono prendere in considerazione l'uso di una delle versioni più recenti di questa DLL, come illustrato nel pacchetto [Debugging Tools For Windows.](https://www.microsoft.com/?ref=go) Per informazioni dettagliate sulla distribuzione di DbgHelp, vedere [Versioni di DbgHelp.](dbghelp-versions.md)
 
-Quando si usa DbgHelp, la strategia migliore consiste nell'installare una copia della libreria dal pacchetto degli [strumenti di debug per Windows](https://www.microsoft.com/?ref=go) nella directory dell'applicazione in modo logico adiacente al software che lo chiama. Se sono necessari anche il server di simboli e il server di origine, è necessario installare sia SymSrv.dll che SrcSrv.dll nella stessa directory del DbgHelp.dll, perché DbgHelp chiamerà solo queste dll se condividono la stessa directory. Si noti che DbgHelp non chiamerà queste due dll dal percorso di ricerca standard. Ciò consente di evitare l'utilizzo di dll non corrispondenti; allo stesso modo, migliora anche la sicurezza complessiva.
+Quando si usa DbgHelp, la strategia migliore consiste nell'installare una copia della libreria dal pacchetto debugging [tools for Windows](https://www.microsoft.com/?ref=go) nella directory dell'applicazione logicamente adiacente al software che la chiama. Se sono necessari anche il server di simboli e il server di origine, sia SymSrv.dll che SrcSrv.dll devono essere installati nella stessa directory di DbgHelp.dll, perché DbgHelp chiamerà queste DLL solo se condividono la stessa directory. Si noti che DbgHelp non chiamerà queste due DLL dal percorso di ricerca standard. Ciò consente di evitare l'utilizzo di DLL non corrispondenti. allo stesso modo, migliora anche la sicurezza complessiva.
 
-Il codice seguente viene estratto dall'origine DbgHelp. Mostra in che modo DbgHelp carica solo le versioni di SymSrv.dll e SrcSrv.dll dalla stessa directory in cui risiede DbgHelp.dll.
+Il codice seguente viene estratto dall'origine DbgHelp. Viene illustrato come DbgHelp carica solo le versioni di SymSrv.dll e SrcSrv.dll dalla stessa directory in cui DbgHelp.dll risiede.
 
 
 ```C++
@@ -89,9 +89,9 @@ LoadDLL(
 
 
 
-Dopo il caricamento di queste due dll, DbgHelp chiama [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per ottenere le funzioni necessarie.
+Dopo aver caricato queste due DLL, DbgHelp chiama [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per ottenere le funzioni necessarie.
 
-In genere, il codice che chiama DbgHelp.dll garantisce che venga caricata la versione corretta installando DbgHelp.dll nella stessa directory dell'applicazione che ha avviato il processo corrente. Se il codice chiamante si trova in una DLL e non dispone dell'accesso o della conoscenza della posizione del processo iniziale, DbgHelp.dll necessario installare insieme alla DLL chiamante e scrivere codice simile a LoadDLL di DbgHelp.
+In genere, il codice che chiama DbgHelp.dll assicura che la versione corretta sia caricata installando DbgHelp.dll nella stessa directory dell'applicazione che ha avviato il processo corrente. Se il codice chiamante si trova in una DLL e non dispone dell'accesso o della conoscenza del percorso del processo iniziale, è necessario installare DbgHelp.dll insieme alla DLL chiamante e usare codice simile a LoadDLL di DbgHelp.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

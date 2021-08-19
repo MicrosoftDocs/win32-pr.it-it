@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: ColumnStream. Seek (metodo)'
-title: Metodo ColumnStream. Seek
+description: 'Altre informazioni su: Metodo ColumnStream.Seek'
+title: Metodo ColumnStream.Seek
 TOCTitle: 'Seek method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.ColumnStream.Seek(System.Int64,System.IO.SeekOrigin)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columnstream.seek(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d5489bb0ee9a4a1550166e14a945a2a6d58c45af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 883739bed33c17877dc86c33670233aab1afc67e9348009bb11c4e67ab27011c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738191"
 ---
-# <a name="columnstreamseek-method"></a>Metodo ColumnStream. Seek
+# <a name="columnstreamseek-method"></a>Metodo ColumnStream.Seek
 
 Imposta la posizione all'interno del flusso corrente.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -65,20 +65,20 @@ public override long Seek(
 #### <a name="parameters"></a>Parametri
 
   - offset  
-    Tipo: [System. Int64](/dotnet/api/system.int64)  
+    Tipo: [System.Int64](/dotnet/api/system.int64)  
     
-    Offset di byte relativo al parametro origin.
+    Offset di byte relativo al parametro di origine.
 
 <!-- end list -->
 
   - origin  
-    Tipo: [System. io. SeekOrigin](/dotnet/api/system.io.seekorigin)  
+    Tipo: [System.IO.SeekOrigin](/dotnet/api/system.io.seekorigin)  
     
-    Oggetto SeekOrigin che indica il punto di riferimento per la nuova posizione.
+    SeekOrigin che indica il punto di riferimento per la nuova posizione.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Int64](/dotnet/api/system.int64)  
+Tipo: [System.Int64](/dotnet/api/system.int64)  
 Nuova posizione nel flusso corrente.  
 
 ## <a name="see-also"></a>Vedi anche
@@ -87,6 +87,6 @@ Nuova posizione nel flusso corrente.
 
 [Classe ColumnStream](./columnstream-class.md)
 
-[Membri di ColumnStream](./columnstream-members.md)
+[Membri ColumnStream](./columnstream-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

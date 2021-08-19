@@ -1,9 +1,9 @@
 ---
 title: TBM_GETLINESIZE messaggio (Commctrl.h)
-description: Recupera il numero di posizioni logiche che il dispositivo di scorrimento del trackbar sposta in risposta all'input della tastiera dai tasti di direzione, ad esempio i tasti o . Le posizioni logiche sono gli incrementi interi nell'intervallo di posizioni del dispositivo di scorrimento minimo/massimo del trackbar.
+description: Recupera il numero di posizioni logiche in cui il dispositivo di scorrimento del trackbar si sposta in risposta all'input della tastiera dai tasti di direzione, ad esempio i tasti o . Le posizioni logiche sono gli incrementi di interi nell'intervallo tra le posizioni minime e massime del dispositivo di scorrimento del trackbar.
 ms.assetid: b596060a-5bac-4b31-82f3-ee4744a9779c
 keywords:
-- TBM_GETLINESIZE dei messaggi Windows controlli
+- TBM_GETLINESIZE dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "120046561"
 ---
 # <a name="tbm_getlinesize-message"></a>Messaggio \_ GETLINESIZE TBM
 
-Recupera il numero di posizioni logiche che il dispositivo di scorrimento del trackbar sposta in risposta all'input della tastiera dai tasti di direzione, ad esempio i tasti o . Le posizioni logiche sono gli incrementi interi nell'intervallo di posizioni del dispositivo di scorrimento minimo/massimo del trackbar.
+Recupera il numero di posizioni logiche in cui il dispositivo di scorrimento del trackbar si sposta in risposta all'input della tastiera dai tasti di direzione, ad esempio i tasti o . Le posizioni logiche sono gli incrementi di interi nell'intervallo tra le posizioni minime e massime del dispositivo di scorrimento del trackbar.
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,13 +37,13 @@ Recupera il numero di posizioni logiche che il dispositivo di scorrimento del tr
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore a 32 bit che specifica le dimensioni della linea per il trackbar.
+Restituisce un valore a 32 bit che specifica le dimensioni della riga per il trackbar.
 
 ## <a name="remarks"></a>Commenti
 
-L'impostazione predefinita per le dimensioni della linea è 1.
+L'impostazione predefinita per le dimensioni della riga è 1.
 
-Il trackbar invia anche un messaggio [**WM \_ HSCROLL**](wm-hscroll.md) o [**WM \_ VSCROLL**](wm-vscroll.md) con i codici di notifica TB LINEUP e TB LINEDOWN alla finestra padre quando l'utente preme \_ i tasti di \_ direzione.
+Il trackbar invia anche un messaggio [**WM \_ HSCROLL**](wm-hscroll.md) o [**WM \_ VSCROLL**](wm-vscroll.md) con i codici di notifica TB LINEUP e TB LINEDOWN alla finestra padre quando l'utente preme i \_ tasti di \_ direzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,8 +51,8 @@ Il trackbar invia anche un messaggio [**WM \_ HSCROLL**](wm-hscroll.md) o [**WM 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

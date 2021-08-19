@@ -1,34 +1,34 @@
 ---
 title: Sviluppo di un server RPC a prestazioni elevate
-description: Le informazioni contenute in questa sezione si applicano alle sequenze remote del protocollo ncacn \_ IP \_ TCP, ncacn \_ http, ncacn \_ np e a Windows 2000 e Windows XP.
+description: Le informazioni contenute in questa sezione si applicano alle sequenze di protocollo remoto ncacn \_ ip \_ tcp, ncacn \_ http, ncacn np e \_ a Windows 2000 e Windows XP.
 ms.assetid: 7b4239af-951b-4d1b-8ac3-224279f6929e
 keywords:
-- RPC (Remote Procedure Call), procedure consigliate, sviluppo di un server a prestazioni elevate
+- RPC Remote Procedure Call , procedure consigliate, sviluppo di un server ad alte prestazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a18319c1f4ade80ae026b68c8f5540030b992b7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 841c52587410b10ae17f2ebd858863327aaf5ab1def92600259c8e49edc87946
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104473990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120021770"
 ---
 # <a name="developing-a-high-performance-rpc-server"></a>Sviluppo di un server RPC a prestazioni elevate
 
-Le informazioni contenute in questa sezione si applicano alle sequenze remote del protocollo: [**ncacn \_ IP \_ TCP**](/windows/desktop/Midl/ncacn-ip-tcp), [**ncacn \_ http**](/windows/desktop/Midl/ncacn-http), [**ncacn \_ NP**](/windows/desktop/Midl/ncacn-np)e a Windows 2000 e Windows XP.
+Le informazioni contenute in questa sezione si applicano alle sequenze di protocollo remoto: [**ncacn \_ ip \_ tcp**](/windows/desktop/Midl/ncacn-ip-tcp), [**ncacn \_ http**](/windows/desktop/Midl/ncacn-http), [**ncacn \_ np**](/windows/desktop/Midl/ncacn-np)e a Windows 2000 e Windows XP.
 
-In questa sezione vengono illustrati tre aspetti principali delle prestazioni del server RPC:
+Questa sezione tratta tre aspetti principali delle prestazioni del server RPC:
 
 -   [Latenza di rete e velocità effettiva](network-latency-and-throughput.md)
 -   [Scalabilità](scalability.md)
--   [Suggerimenti sulle prestazioni RPC varie](miscellaneous-rpc-performance-tips.md)
+-   [Prestazioni RPC varie Suggerimenti](miscellaneous-rpc-performance-tips.md)
 
-La lunghezza del percorso del codice è un'altra considerazione primaria per le prestazioni RPC. La lunghezza del percorso del codice è in genere ben riconosciuta e, poiché la letteratura e gli strumenti sono ampiamente disponibili in questo argomento, questo articolo non risolve il problema.
+La lunghezza del percorso del codice è un'altra considerazione primaria sulle prestazioni per RPC. La lunghezza del percorso del codice è generalmente ben compresa e, poiché la documentazione e gli strumenti sono ampiamente disponibili in tale argomento, questo articolo non tratta questo argomento.
 
-Una regola importante e stabilita per le prestazioni generali da ricordare considerando le prestazioni RPC è la seguente: individuare il collo di bottiglia nel sistema e risolverlo. Il collo di bottiglia del controllo potrebbe non essere la programmazione RPC e, in tal caso, l'ottimizzazione delle prestazioni in RPC non comporterà un miglioramento delle prestazioni fino a quando non verrà risolto il collo di bottiglia. Ad esempio, un sistema afflitto dalla contesa di risorse non necessita di un uso più efficiente della rete.
+Una regola di prestazioni generale importante e consolidata da ricordare considerando le prestazioni RPC è la seguente: individuare il collo di bottiglia nel sistema e lavorare per risolverlo. Il collo di bottiglia del controllo potrebbe non essere la programmazione RPC e, in tal caso, l'ottimizzazione delle prestazioni in RPC non comporterà prestazioni migliorate fino a quando tale collo di bottiglia non viene corretto. Ad esempio, non è necessario che un sistema danneggiato da una contentione di risorse usi la rete in modo più efficiente.
 
-Se il sistema viene distribuito in diversi ambienti, è consigliabile assicurarsi che tutti gli aspetti siano ben ottimizzati, in quanto ambienti diversi possono produrre colli di bottiglia delle prestazioni diversi.
+Se il sistema viene distribuito in diversi ambienti, è buona idea assicurarsi che tutti gli aspetti del sistema siano ottimizzati, perché ambienti diversi possono produrre colli di bottiglia delle prestazioni diversi.
 
- 
+ 
 
- 
+ 

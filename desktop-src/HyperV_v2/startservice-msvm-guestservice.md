@@ -1,7 +1,7 @@
 ---
-description: Inserisce il servizio Guest in uno stato avviato.
+description: Imposta il servizio guest in uno stato avviato.
 ms.assetid: 1DC6A5B3-0F91-4AC1-99D5-0E8CF5ED35A2
-title: 'Metodo Msvm_GuestService:: StartService'
+title: Msvm_GuestService::StartService
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1a87bc9933bd7b3a54bd59169b0099e34eb04c52
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 52f3f05eef622940e0fb1a9645a66097a8930fac9a236f432d5471c4ee20c208
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050401"
 ---
-# <a name="msvm_guestservicestartservice-method"></a>\_Metodo MSVM GuestService:: StartService
+# <a name="msvm_guestservicestartservice-method"></a>Metodo Msvm \_ GuestService::StartService
 
-Inserisce il servizio Guest in uno stato avviato.
+Imposta il servizio guest in uno stato avviato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ Questo metodo restituisce uno dei valori seguenti.
 
 | Codice/valore restituito                                                                                                                                             | Descrizione         |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| <dl> <dt>**Completato senza errori**</dt> <dt>0</dt> </dl> | Esito positivo.<br/> |
+| <dl> <dt>**Completata senza errori**</dt> <dt>0</dt> </dl> | Operazione completata.<br/> |
 | <dl> <dt>**Non supportato**</dt> <dt>1</dt> </dl>           |                     |
 
 
@@ -58,10 +58,10 @@ Questo metodo restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | \\\\\\Virtualizzazione radice \\ v2<br/>                                                                 |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                                 |
+| Spazio dei nomi<br/>                | \\\\Root \\ Virtualization \\ V2<br/>                                                                 |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -70,7 +70,7 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-[**\_GuestService MSVM**](msvm-guestservice.md)
+[**Msvm \_ GuestService**](msvm-guestservice.md)
 </dt> </dl>
 
  

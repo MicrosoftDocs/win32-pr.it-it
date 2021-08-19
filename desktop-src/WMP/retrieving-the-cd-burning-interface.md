@@ -3,34 +3,34 @@ title: Recupero dell'interfaccia di masterizzazione CD
 description: Recupero dell'interfaccia di masterizzazione CD
 ms.assetid: d52f7b27-a327-4656-8dc2-0b075264d295
 keywords:
-- Windows Media Player, masterizzazione CD
-- Modello a oggetti di Windows Media Player, masterizzazione CD
-- modello a oggetti, masterizzazione CD
-- Controllo ActiveX Windows Media Player, masterizzazione CD
-- Controllo ActiveX, masterizzazione CD
-- Controllo ActiveX Windows Media Player Mobile, masterizzazione CD
-- Windows Media Player Mobile, masterizzazione CD
-- Masterizzazione CD, recupero dell'interfaccia IWMPCdromCollection
-- masterizzazione di CDs, recupero dell'interfaccia IWMPCdromCollection
+- Windows Media Player,CD
+- Windows Media Player a oggetti, CD
+- modello a oggetti, CD
+- Windows Media Player ActiveX controllo, CD
+- ActiveX controllo, CD
+- Windows Media Player Mobile ActiveX control,CD
+- Windows Media Player Dispositivi mobili, CD-
+- CD e recupero dell'interfaccia IWMPCdromCollection
+- CD di windows, recupero dell'interfaccia IWMPCdromCollection
 - Interfaccia IWMPCdromCollection
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b63763f9dd99bbaf88ae099edb53ba072cd1a25e
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: 84013d5df4244fc30c9cb52e3447d15f60e559befe1223f0964934dd8ca1e1cf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104046425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123201"
 ---
 # <a name="retrieving-the-cd-burning-interface"></a>Recupero dell'interfaccia di masterizzazione CD
 
-Per enumerare le unità CD nel computer dell'utente, usare l'interfaccia **IWMPCdromCollection** . Per recuperare un puntatore a questa interfaccia, chiamare [IWMPCore:: Get \_ cdromcollection](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcore-get_cdromcollection).
+Per enumerare le unità CD nel computer dell'utente, usare **l'interfaccia IWMPCdromCollection.** Per recuperare un puntatore a questa interfaccia, chiamare [IWMPCore::get \_ cdromCollection](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcore-get_cdromcollection).
 
-Usando i metodi **get \_ count** e **Item** , è possibile eseguire l'iterazione della raccolta per recuperare un puntatore di interfaccia [IWMPCdrom](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdrom) per ogni unità CD nel computer dell'utente.
+Usando i **metodi get \_ count** e **item,** è possibile eseguire l'iterazione della raccolta per recuperare un puntatore all'interfaccia [IWMPCdrom](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdrom) per ogni unità CD nel computer dell'utente.
 
-L'interfaccia **IWMPCdrom** rappresenta una singola unità CD. Prima di iniziare a masterizzare un CD, è prima necessario chiamare **QueryInterface** tramite un puntatore **IWMPCdrom** per recuperare un puntatore all'interfaccia [IWMPCdromBurn](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromburn) .
+**L'interfaccia IWMPCdrom** rappresenta una singola unità CD. Prima di iniziare a creare un CD, è necessario chiamare **QueryInterface** tramite un puntatore **IWMPCdrom** per recuperare un puntatore all'interfaccia [IWMPCdromInterface.](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromburn)
 
-Nell'esempio di codice seguente viene illustrato come recuperare un'interfaccia per la masterizzazione di un CD in un'unità specifica:
+L'esempio di codice seguente illustra come recuperare un'interfaccia per copiare un CD in un'unità specifica:
 
 
 ```C++
@@ -73,27 +73,27 @@ HRESULT CMainDlg::GetCdromBurnInterface (long lIndex)
 
 <dl> <dt>
 
-[**Masterizzazione di un CD**](burning-a-cd.md)
+[**Creare un cd**](burning-a-cd.md)
 </dt> <dt>
 
 [**Avvio del processo di masterizzazione**](starting-the-burn-process.md)
 </dt> <dt>
 
-[**Cancellazione di un CD riscrivibile**](erasing-a-rewritable-cd.md)
+[**Cancellazione di un CD risbilebile**](erasing-a-rewritable-cd.md)
 </dt> <dt>
 
 [**Recupero dello stato dell'unità e del disco**](retrieving-the-drive-and-disc-status.md)
 </dt> <dt>
 
-[**Recupero dello stato di masterizzazione**](retrieving-the-burn-status.md)
+[**Recupero dello stato della masterizzazione**](retrieving-the-burn-status.md)
 </dt> <dt>
 
 [**Interfaccia IWMPCdromCollection**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromcollection)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

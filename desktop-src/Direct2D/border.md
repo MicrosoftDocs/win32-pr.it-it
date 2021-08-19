@@ -1,27 +1,27 @@
 ---
 title: Effetto bordo
-description: Utilizzare l'effetto bordo per estendere un'immagine dai bordi.
+description: Usare l'effetto bordo per estendere un'immagine dai bordi.
 ms.assetid: D3D569F5-9496-4633-93E2-26665FFC3B37
 keywords:
 - effetto bordo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49fb43ae8b3e9c4eb449a8231f8b4ffcacf7658b
-ms.sourcegitcommit: ee06501cc29132927ade9813e0888aaa4decc487
+ms.openlocfilehash: 5ce125a96730ee59f63b18cfd1a08abd2432af6f3fdc6b5f06cfc2e9272a7a3c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "104530414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928997"
 ---
 # <a name="border-effect"></a>Effetto bordo
 
-Utilizzare l'effetto bordo per estendere un'immagine dai bordi. È possibile utilizzare questo effetto per ripetere i pixel dai bordi dell'immagine, eseguire il wrapping dei pixel dall'estremità opposta dell'immagine o eseguire il mirroring dei pixel sul bordo della bitmap per estendere l'area bitmap.
+Usare l'effetto bordo per estendere un'immagine dai bordi. È possibile usare questo effetto per ripetere i pixel dai bordi dell'immagine, eseguire il wrapping dei pixel dall'estremità opposta dell'immagine o riflettere i pixel sul bordo della bitmap per estendere l'area bitmap.
 
 Il CLSID per questo effetto è CLSID \_ D2D1Border.
 
 ## <a name="example-images"></a>Immagini di esempio
 
-Negli esempi riportati di seguito viene illustrato l'output dell'effetto del bordo utilizzando ogni modalità. Le dimensioni di output sono infinite, ma queste immagini di esempio vengono ritagliate fino al doppio delle dimensioni.
+Gli esempi qui illustrano l'output dell'effetto bordo usando ogni modalità. Le dimensioni di output sono infinite, ma queste immagini di esempio vengono ritagliate fino al doppio delle dimensioni.
 
 ### <a name="mirror"></a>Mirror
 
@@ -43,9 +43,9 @@ Negli esempi riportati di seguito viene illustrato l'output dell'effetto del bor
 
 | Prima                                                        |
 |---------------------------------------------------------------|
-| ![Screenshot che mostra l'immagine prima dell'effetto per un morsetto.](images/border-before.jpg)     |
+| ![Screenshot che mostra l'immagine prima dell'effetto per una morsa.](images/border-before.jpg)     |
 | After                                                         |
-| ![Screenshot che mostra l'immagine dopo la trasformazione per un morsetto.](images/10-border-clamp.png) |
+| ![Screenshot che mostra l'immagine dopo la trasformazione per una morsa.](images/10-border-clamp.png) |
 
 
 
@@ -81,28 +81,28 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
 
 
-| Nome visualizzato e enumerazione dell'indice                                  | Descrizione                                                                                                                                                                                                                                                            |
+| Nome visualizzato ed enumerazione dell'indice                                  | Descrizione                                                                                                                                                                                                                                                            |
 |---------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Modalità bordo X<br/> \_ \_ \_ Modalità bordo prop bordo \_ d2d1 \_ X<br/> | Modalità bordo nella direzione X dell'effetto. È possibile impostare questa impostazione su Clamp, wrap o mirror. Per altre informazioni, vedere [modalità Edge](#edge-modes) .<br/> Il tipo è D2D1 \_ Border \_ Edge \_ mode.<br/> Il valore predefinito è D2D1 \_ Border \_ Edge \_ mode \_ Clamp.<br/> |
-| Modalità bordo Y<br/> D2D1 \_ bordo della \_ prop in \_ \_ modalità bordo \_ Y<br/> | Modalità bordo nella direzione Y dell'effetto. È possibile impostare questa impostazione su Clamp, wrap o mirror. Per altre informazioni, vedere [modalità Edge](#edge-modes) .<br/> Il tipo è D2D1 \_ Border \_ Edge \_ mode.<br/> Il valore predefinito è D2D1 \_ Border \_ Edge \_ mode \_ Clamp.<br/> |
+| Modalità Edge X<br/> D2D1 \_ BORDER \_ PROP \_ EDGE \_ MODE \_ X<br/> | Modalità bordo nella direzione X per l'effetto. È possibile impostare questa opzione su clamp, wrap o mirror. Per [altre informazioni, vedere Modalità](#edge-modes) edge.<br/> Il tipo è D2D1 \_ BORDER \_ EDGE \_ MODE.<br/> Il valore predefinito è D2D1 \_ BORDER \_ EDGE MODE \_ \_ CLAMP.<br/> |
+| Modalità Edge Y<br/> D2D1 \_ BORDER \_ PROP \_ EDGE \_ MODE \_ Y<br/> | Modalità bordo nella direzione Y per l'effetto. È possibile impostare questa opzione su clamp, wrap o mirror. Per [altre informazioni, vedere Modalità](#edge-modes) edge.<br/> Il tipo è D2D1 \_ BORDER \_ EDGE \_ MODE.<br/> Il valore predefinito è D2D1 \_ BORDER \_ EDGE MODE \_ \_ CLAMP.<br/> |
 
 
 
  
 
-## <a name="edge-modes"></a>Modalità Edge
+## <a name="edge-modes"></a>Modalità perimetrali
 
 
 
-| Nome visualizzato e enumerazione dell'indice                            | Descrizione                                          |
+| Nome visualizzato ed enumerazione dell'indice                            | Descrizione                                          |
 |---------------------------------------------------------------|------------------------------------------------------|
-| Clamp<br/> \_Clamp in \_ \_ modalità bordo d2d1 bordo \_<br/>   | Ripete i pixel dai bordi dell'immagine.      |
-| Wrap<br/> \_Wrapping in \_ \_ modalità bordo \_ bordo d2d1<br/>     | USA i pixel dall'estremità opposta dell'immagine. |
-| Mirror<br/> \_ \_ \_ Mirroring della modalità \_ bordo bordo d2d1<br/> | Riflette i pixel relativi al bordo dell'immagine.         |
+| Clamp<br/> D2D1 \_ BORDER \_ EDGE \_ MODE \_ CLAMP<br/>   | Ripete i pixel dai bordi dell'immagine.      |
+| Wrap<br/> RITORNO A CAPO DELLA MODALITÀ BORDO D2D1 \_ \_ \_ \_<br/>     | Usa i pixel dal bordo finale opposto dell'immagine. |
+| Mirror<br/> D2D1 \_ BORDER \_ EDGE \_ MODE \_ MIRROR<br/> | Riflette i pixel sul bordo dell'immagine.         |
 
 
 
@@ -110,7 +110,7 @@ m_d2dContext->EndDraw();
 
 ## <a name="output-bitmap"></a>Bitmap di output
 
-Le dimensioni della bitmap di output sono infinite per tutti gli input, ad eccezione di un'immagine di input di dimensioni 0. Se l'altezza o la larghezza di un'immagine di input è 0, le dimensioni di output sono pari a 0.
+Le dimensioni della bitmap di output sono infinite per tutti gli input, ad eccezione di un'immagine di input con dimensioni 0. Se l'altezza o la larghezza di un'immagine di input è 0, le dimensioni di output sono 0.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -118,10 +118,10 @@ Le dimensioni della bitmap di output sono infinite per tutti gli input, ad eccez
 
 | Requisito | Valore |
 |--------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Server minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Intestazione                   | d2d1effects. h                                                                      |
-| Libreria                  | d2d1. lib, dxguid. lib                                                               |
+| Client minimo supportato | Windows 8 e Platform Update per Windows 7 \[ app desktop \| Windows Store\] |
+| Server minimo supportato | Windows 8 e Platform Update per Windows 7 \[ app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects.h                                                                      |
+| Libreria                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

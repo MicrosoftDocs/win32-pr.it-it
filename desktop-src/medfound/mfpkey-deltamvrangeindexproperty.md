@@ -1,17 +1,17 @@
 ---
 description: Specifica il metodo usato per codificare le informazioni sul vettore di movimento.
 ms.assetid: 22ffdb77-9266-42e5-be41-fc7457141bba
-title: Proprietà MFPKEY_DELTAMVRANGEINDEX (Wmcodecdsp. h)
+title: MFPKEY_DELTAMVRANGEINDEX proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c72d923659e64c9a0dcab40811e31d7752924700
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b7a21ac1a0bdaf859c93bca800d72f5e9ed155919bb07a24f5287b2436e57f94
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113341"
 ---
-# <a name="mfpkey_deltamvrangeindex-property"></a>\_Proprietà DELTAMVRANGEINDEX di MFPKEY
+# <a name="mfpkey_deltamvrangeindex-property"></a>Proprietà MFPKEY \_ DELTAMVRANGEINDEX
 
 Specifica il metodo usato per codificare le informazioni sul vettore di movimento.
 
@@ -29,7 +29,7 @@ VT \_ I4
 
 ## <a name="remarks"></a>Commenti
 
-Se questa proprietà è impostata, il codificatore aumenta l'intervallo di vettori di movimento Delta nei campi. Le informazioni sul vettore di movimento sono valide solo per i campi interlacciati.
+Se questa proprietà è impostata, il codificatore aumenta l'intervallo del vettore di movimento delta nei campi. Le informazioni sul vettore di movimento sono valide solo per i campi interlacciati.
 
 Questa proprietà può essere impostata su uno dei valori seguenti:
 
@@ -37,10 +37,10 @@ Questa proprietà può essere impostata su uno dei valori seguenti:
 
 | Valore | Descrizione                                                                          |
 |-------|--------------------------------------------------------------------------------------|
-| 0     | Usare l'intervallo di vettori di movimento Delta esistente.                                          |
-| 1     | Raddoppiare l'intervallo del vettore di movimento Delta nella direzione orizzontale.                    |
-| 2     | Raddoppiare l'intervallo del vettore di movimento Delta nella direzione verticale.                      |
-| 3     | Raddoppiare l'intervallo del vettore di movimento Delta nelle direzioni orizzontale e verticale. |
+| 0     | Usare l'intervallo del vettore di movimento delta esistente.                                          |
+| 1     | Raddoppiare l'intervallo del vettore di movimento delta nella direzione orizzontale.                    |
+| 2     | Raddoppiare l'intervallo del vettore di movimento delta nella direzione verticale.                      |
+| 3     | Raddoppiare l'intervallo del vettore di movimento delta in entrambe le direzioni orizzontale e verticale. |
 
 
 
@@ -52,9 +52,9 @@ Questa proprietà può essere impostata su uno dei valori seguenti:
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -62,7 +62,7 @@ Questa proprietà può essere impostata su uno dei valori seguenti:
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

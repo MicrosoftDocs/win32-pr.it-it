@@ -1,17 +1,17 @@
 ---
 description: 'Con il risparmio energia vengono usati gli elementi seguenti:'
 ms.assetid: f37bf4dc-0f30-4762-bed1-3373b16be37c
-title: Riferimento al risparmio energia
+title: Informazioni di riferimento sul risparmio energia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1ec7276de52e51d5eef93f15c14a487b84c1f54
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f1d8825b466063b2524ea9d1b0084b1b6314910680d53f5a3f6334308e4dce84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119887121"
 ---
-# <a name="power-management-reference"></a>Riferimento al risparmio energia
+# <a name="power-management-reference"></a>Informazioni di riferimento sul risparmio energia
 
 Con il risparmio energia vengono usati gli elementi seguenti:
 
@@ -20,8 +20,8 @@ Con il risparmio energia vengono usati gli elementi seguenti:
 -   [Strutture di risparmio energia](power-management-structures.md)
 -   [Messaggi di risparmio energia](power-management-messages.md)
 -   [Eventi di risparmio energia](power-management-events.md)
--   [Tipi di enumerazione risparmio energia](power-management-enumeration-types.md)
--   [Costanti di risparmio energia](power-management-constants.md)
+-   [Tipi di enumerazione del risparmio energia](power-management-enumeration-types.md)
+-   [Costanti per il risparmio energia](power-management-constants.md)
 
  
 

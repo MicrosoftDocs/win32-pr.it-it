@@ -1,19 +1,19 @@
 ---
-description: Classe Bluetooth del posizionamento del servizio del dispositivo.
+description: Bluetooth classe di posizionamento del servizio del dispositivo.
 ms.assetid: 4183501e-d5a8-4b78-a419-98b7fa8e4fd6
-title: System. Devices. AEP. Bluetooth. Cod. Services. Positioning
+title: System.Devices.Aep. Bluetooth. Cod.Services.Positioning
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eea1a06322077b814ed1376943a0cb56496140e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 662a814e62ec2038a02e10a073303be79433fc8e383b3811cb0403dbd474f3f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119885911"
 ---
-# <a name="systemdevicesaepbluetoothcodservicespositioning"></a>System. Devices. AEP. Bluetooth. Cod. Services. Positioning
+# <a name="systemdevicesaepbluetoothcodservicespositioning"></a>System.Devices.Aep. Bluetooth. Cod.Services.Positioning
 
-Classe Bluetooth del posizionamento del servizio del dispositivo.
+Bluetooth classe di posizionamento del servizio del dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

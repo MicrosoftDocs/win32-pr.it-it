@@ -3,37 +3,37 @@ title: L
 description: L
 ms.assetid: 8ccef90e-8c5a-4409-8701-abf448e54e2c
 keywords:
-- Windows Color System (WCS), Glossario
-- WCS (Windows Color System), Glossario
-- Gestione colori immagine, Glossario
-- gestione dei colori, Glossario
-- colori, Glossario
-- Windows Color System (WCS), definizioni
-- WCS (sistema di colori Windows), definizioni
-- Gestione colori immagine, definizioni
+- Windows Sistema di colori (WCS), glossario
+- WCS (Windows Color System), glossario
+- gestione del colore delle immagini, glossario
+- gestione dei colori, glossario
+- colori, glossario
+- Windows Sistema colori (WCS), definizioni
+- WCS (Windows Color System), definizioni
+- gestione del colore delle immagini,definizioni
 - gestione dei colori, definizioni
 - colori, definizioni
-- Windows Color System (WCS), termini
-- WCS (Windows Color System), termini
-- Gestione colori immagine, termini
+- Windows Sistema di colori (WCS), termini
+- WCS (Windows Color System), terms
+- gestione del colore delle immagini, termini
 - gestione dei colori, termini
 - colori, termini
-- leggerezza
+- Leggerezza
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bb2110446aff6372b10114dfc0950a534e23622
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: 5bb7c4d9a1fb4cb4c5c98acdd22d61a2ca748c1f9fae78cb6df3e0b34a476867
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "106320141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119934291"
 ---
 # <a name="l"></a>L
 
-## <a name="lightness"></a>leggerezza
+## <a name="lightness"></a>Leggerezza
 
-Un canale di colore nello spazio dei colori HLS. Si tratta di una misura della luminosità relativa del colore. L'aumento della luminosità produce tinte di una tonalità. Il calo della luminosità produce tonalità di tonalità.
+Un canale di colore nello spazio colori HLS. Si tratta di una misura della luminosità relativa del colore. L'aumento della leggerezza produce tinte di una tonalità. La riduzione della luminosità produce sfumature di tonalità.
 
  
 

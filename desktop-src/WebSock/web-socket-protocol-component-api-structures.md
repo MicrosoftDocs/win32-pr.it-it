@@ -1,17 +1,17 @@
 ---
-title: Strutture API del componente del protocollo WebSocket
+title: Strutture dell'API del componente del protocollo WebSocket
 description: L'API del componente del protocollo WebSocket definisce queste strutture.
 ms.assetid: D269624D-E733-4422-9EDC-797637076C9B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 328ecf4464347e81f048cf11d2042b6e99aeccc1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 179619a75424199ca4b7e95477b5aea40fa301958890fc37db7c4f532ee60a64
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122451"
 ---
-# <a name="websocket-protocol-component-api-structures"></a>Strutture API del componente del protocollo WebSocket
+# <a name="websocket-protocol-component-api-structures"></a>Strutture dell'API del componente del protocollo WebSocket
 
 L'API del componente del protocollo WebSocket definisce queste strutture.
 
@@ -21,9 +21,9 @@ L'API del componente del protocollo WebSocket definisce queste strutture.
 
 | Argomento                                                                  | Descrizione                                               |
 |------------------------------------------------------------------------|-----------------------------------------------------------|
-| [**\_buffer socket \_ Web**](/windows/desktop/api/Websocket/ns-websocket-web_socket_buffer)<br/>            | contiene i dati per un'azione WebSocket specifica.<br/> |
-| [**\_ \_ intestazione HTTP del socket Web \_**](/windows/desktop/api/Websocket/ns-websocket-web_socket_http_header)<br/> | contiene un'intestazione HTTP.<br/>                       |
-| [**\_proprietà web socket \_**](/windows/desktop/api/Websocket/ns-websocket-web_socket_property)<br/>        | contiene una singola Proprietà WebSocket.<br/>          |
+| [**WEB \_ SOCKET \_ BUFFER**](/windows/desktop/api/Websocket/ns-websocket-web_socket_buffer)<br/>            | contiene i dati per un'azione WebSocket specifica.<br/> |
+| [**INTESTAZIONE \_ \_ HTTP WEB \_ SOCKET**](/windows/desktop/api/Websocket/ns-websocket-web_socket_http_header)<br/> | contiene un'intestazione HTTP.<br/>                       |
+| [**PROPRIETÀ WEB \_ \_ SOCKET**](/windows/desktop/api/Websocket/ns-websocket-web_socket_property)<br/>        | contiene una singola proprietà WebSocket.<br/>          |
 
 
 

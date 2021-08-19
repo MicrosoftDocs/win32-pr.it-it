@@ -3,7 +3,7 @@ title: TBM_CLEARTICS messaggio (Commctrl.h)
 description: Rimuove i segni di graduazione correnti da un trackbar. Questo messaggio non rimuove il primo e l'ultimo segno di graduazione, che vengono creati automaticamente dal trackbar.
 ms.assetid: 2830497c-2cf0-4068-810c-c05d4e0abb8b
 keywords:
-- TBM_CLEARTICS di controllo Windows messaggio
+- TBM_CLEARTICS dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120046771"
 ---
-# <a name="tbm_cleartics-message"></a>Messaggio \_ CLEARTICS TBM
+# <a name="tbm_cleartics-message"></a>Messaggio \_ TBM CLEARTICS
 
 Rimuove i segni di graduazione correnti da un trackbar. Questo messaggio non rimuove il primo e l'ultimo segno di graduazione, che vengono creati automaticamente dal trackbar.
 
@@ -49,8 +49,8 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

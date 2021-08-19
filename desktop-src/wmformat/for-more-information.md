@@ -24,7 +24,7 @@ ms.locfileid: "117848130"
 -   Per funzionalità, articoli e risposte alle domande frequenti sullo streaming multimediale in generale e sugli SDK di Windows Media in particolare, vedere Windows Media Developer Center nel sito [Web Microsoft](https://msdn.microsoft.com/windowsmedia/default.aspx).
 -   Per altre informazioni su come ottenere una licenza per Windows Media Format SDK, vedere la pagina Windows Media Licensing nel [sito Web Microsoft](https://msdn.microsoft.com/library/ms867178.aspx).
 -   Per altre informazioni sui newsgroup, visitare la pagina Windows Media Newsgroups and E-mail Aliases (Newsgroup multimediali e alias di posta elettronica) nel [sito Web Microsoft](https://windows.microsoft.com/windows/products/windows-media).
--   Per descrizioni dettagliate e di basso livello degli oggetti dati che costituiscono i file ASF, scaricare la specifica ASF dal [sito Web Microsoft](https://download.microsoft.com/download/7/9/0/790fecaa-f64a-4a5e-a430-0bccdab3f1b4/ASF_Specification.doc).
+-   Per descrizioni dettagliate e di basso livello degli oggetti dati che costituiscono file ASF, scaricare la specifica ASF dal [sito Web Microsoft](https://download.microsoft.com/download/7/9/0/790fecaa-f64a-4a5e-a430-0bccdab3f1b4/ASF_Specification.doc).
 -   Per funzionalità, articoli, procedure consigliate e risposte alle domande frequenti su DRM (Digital Rights Management) e Windows Media Rights Manager, vedere gli articoli tecnici nella pagina [digital Rights Management](/documentation/?url=%2flibrary%2fdnwmt%2fhtml%2fdigitalrightsmanagement.asp) del sito Web Microsoft.
 
 ## <a name="related-topics"></a>Argomenti correlati

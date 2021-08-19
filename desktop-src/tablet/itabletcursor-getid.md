@@ -1,7 +1,7 @@
 ---
 description: Recupera l'identificatore dello stilo.
 ms.assetid: 27320a2f-1e4a-4d7d-a1f8-5244f4a03415
-title: 'Metodo ITabletCursor:: GetId'
+title: Metodo ITabletCursor::GetId
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 5d4f71d2cd465bfd2d1ff4c245154a300c431df2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7dc053b880c3ebaf4b94ae88a09c85f32f1dd5b8dc335756c8906c9a6f0fb4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104401758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938621"
 ---
-# <a name="itabletcursorgetid-method"></a>Metodo ITabletCursor:: GetId
+# <a name="itabletcursorgetid-method"></a>Metodo ITabletCursor::GetId
 
 Recupera l'identificatore dello stilo.
 
@@ -40,10 +40,10 @@ HRESULT GetId(
 
 <dl> <dt>
 
-*pCid* \[ out\]
+*pCid* \[ Cambio\]
 </dt> <dd>
 
-Identificatore dello stilo del tablet.
+Identificatore dello stilo tablet.
 
 </dd> </dl>
 
@@ -55,8 +55,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                            | Descrizione                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>   | Esito positivo.<br/>                       |
-| <dl> <dt>**E \_ non riescono**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Operazione completata.<br/>                       |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
 
 
 
@@ -64,7 +64,7 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-\_L'ID del cursore viene definito come un valore DWORD.
+CURSOR \_ ID è definito come DWORD.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,7 +72,7 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

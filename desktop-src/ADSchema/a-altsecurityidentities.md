@@ -1,11 +1,11 @@
 ---
-title: Alt-Security-identitys (attributo)
-description: Contiene i mapping per i certificati X. 509 o gli account utente Kerberos esterni a questo utente ai fini dell'autenticazione.
+title: Attributo Alt-Security-Identities
+description: Contiene i mapping per i certificati X.509 o gli account utente Kerberos esterni a questo utente ai fini dell'autenticazione.
 ms.assetid: 40b2af9c-fd4f-4883-8494-2b64682ee50c
 ms.tgt_platform: multiple
 keywords:
-- Alt-Security-identitys attributo AD schema
-- Schema AD dell'attributo altSecurityIdentities
+- Alt-Security-Identities attribute AD Schema
+- Attributo altSecurityIdentities Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2548e337f29778400bb173a8c15d928d7b06d988
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 62338280079ca5a3732ba3d72941fdb9b978720692b7211ae41612651f86387d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022799"
 ---
-# <a name="alt-security-identities-attribute"></a>Alt-Security-identitys (attributo)
+# <a name="alt-security-identities-attribute"></a>Attributo Alt-Security-Identities
 
-Contiene i mapping per i certificati X. 509 o gli account utente Kerberos esterni a questo utente ai fini dell'autenticazione.
+Contiene i mapping per i certificati X.509 o gli account utente Kerberos esterni a questo utente ai fini dell'autenticazione.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------------------|
-| CN                | Alt-sicurezza-identità                             |
-| LDAP-Display-Name | altSecurityIdentities                               |
+| CN                | Alt-Security-Identities                             |
+| Ldap-Display-Name | altSecurityIdentities                               |
 | Dimensione              | \-                                                  |
-| Privilegio aggiornamento  | Amministratore di dominio                                |
+| Aggiorna privilegio  | Amministratore di dominio                                |
 | Frequenza di aggiornamento  | Ogni volta che è necessario un nuovo meccanismo di autenticazione. |
 | Attribute-Id      | 1.2.840.113556.1.4.867                              |
-| System-ID-GUID    | 00fbf30c-91fe-11d1-aebc-0000f80367c1                |
+| System-Id-Guid    | 00fbf30c-91fe-11d1-aebc-0000f80367c1                |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)         |
 
 
@@ -58,15 +58,15 @@ Contiene i mapping per i certificati X. 509 o gli account utente Kerberos estern
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Contiene i mapping per i certificati X. 509 o gli account utente Kerberos estern
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Contiene i mapping per i certificati X. 509 o gli account utente Kerberos estern
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Contiene i mapping per i certificati X. 509 o gli account utente Kerberos estern
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Contiene i mapping per i certificati X. 509 o gli account utente Kerberos estern
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Contiene i mapping per i certificati X. 509 o gli account utente Kerberos estern
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 

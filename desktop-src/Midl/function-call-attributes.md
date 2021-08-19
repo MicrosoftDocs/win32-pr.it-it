@@ -1,43 +1,43 @@
 ---
-title: Attributi di chiamata di funzione
-description: I programmi possono usare questi attributi sulle singole funzioni all'interno dell'interfaccia e influiscono solo su tale funzione.
+title: Attributi delle chiamate di funzione
+description: I programmi possono usare questi attributi su singole funzioni all'interno dell'interfaccia e influiscono solo su tale funzione.
 ms.assetid: c54dbcd9-46c9-4755-b4a8-0f78068920b7
 keywords:
-- MIDL, attributi, chiamata di funzione IDL
+- IDL MIDL, attributi, chiamata di funzione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4d53407abf464d7b201c49d9cb2b1d3f3625b9d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4a3800b62bb6b94aac330ecf0b06761d62227a4ed6100f2fabdde5b61cd952d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103714083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119895311"
 ---
-# <a name="function-call-attributes"></a>Attributi di chiamata di funzione
+# <a name="function-call-attributes"></a>Attributi delle chiamate di funzione
 
-I programmi possono usare questi attributi sulle singole funzioni all'interno dell'interfaccia e influiscono solo su tale funzione.
+I programmi possono usare questi attributi su singole funzioni all'interno dell'interfaccia e influiscono solo su tale funzione.
 
 
 
 | Attributo                        | Utilizzo                                                                                                                                                                                                                                                      |
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Messaggio**](message.md)       | La chiamata di procedura remota deve essere considerata come un messaggio asincrono dal client al server. Il client effettua la chiamata e restituisce immediatamente un risultato, mentre la chiamata effettiva viene gestita dal trasporto di Accodamento messaggi ([**ncadg \_ mq**](ncadg-mq.md)). |
-| [**Forse**](maybe.md)           | Il client che effettua questa chiamata di procedura remota non prevede alcuna risposta che indichi il recapito o il completamento della chiamata. Si differenziano dalle operazioni dei [**messaggi**](message.md) in cui non è prevista alcuna risposta, ma il recapito è garantito.        |
-| [**trasmissione**](broadcast.md)   | La chiamata di procedura remota deve essere inviata a tutti i server della rete. Il client accetta il primo ritorno, le successive risposte degli altri server vengono scartate.                                                                                    |
-| [**idempotent**](idempotent.md) | La chiamata non modifica lo stato e restituisce le stesse informazioni ogni volta che viene chiamato con gli stessi parametri di input.                                                                                                                                     |
-| [**callback**](callback.md)     | Definisce una funzione che risiede nell'applicazione client, che il server può chiamare per ottenere informazioni dal client.                                                                                                                             |
-| [**chiama \_ come**](call-as.md)      | Esegue il mapping di una funzione non a una chiamata di procedura remota.                                                                                                                                                                                                   |
-| [**locale**](local.md)           | Definisce una procedura locale per la quale MIDL non genera codice stub.                                                                                                                                                                                   |
+| [**Messaggio**](message.md)       | La chiamata di procedura remota deve essere considerata come un messaggio asincrono dal client al server. Il client effettua la chiamata e restituisce immediatamente , mentre la chiamata effettiva viene gestita dal trasporto di accodamento messaggi ([**ncadg \_ mq**](ncadg-mq.md)). |
+| [**Forse**](maybe.md)           | Il client che effettua questa chiamata di procedura remota non prevede alcuna risposta che indica il recapito o il completamento della chiamata. Questo comportamento è in [**contrasto con le operazioni**](message.md) di messaggi in cui non è prevista alcuna risposta, ma il recapito è garantito.        |
+| [**Trasmissione**](broadcast.md)   | La chiamata di procedura remota deve essere inviata a tutti i server della rete. Il client accetta il primo valore restituito, le risposte successive da altri server vengono eliminate.                                                                                    |
+| [**idempotent**](idempotent.md) | La chiamata non modifica lo stato e restituisce le stesse informazioni ogni volta che viene chiamata con gli stessi parametri di input.                                                                                                                                     |
+| [**callback**](callback.md)     | Designa una funzione che risiede nell'applicazione client, che il server può chiamare per ottenere informazioni dal client.                                                                                                                             |
+| [**call \_ as**](call-as.md)      | Mappe una funzione nonremobile a una chiamata di procedura remota.                                                                                                                                                                                                   |
+| [**Locale**](local.md)           | Definisce una routine locale per la quale MIDL non genera codice stub.                                                                                                                                                                                   |
 
 
 
- 
+ 
 
-Sulle interfacce non [**oggetto**](object.md) , è anche possibile applicare l'attributo [**di \_ gestione del contesto**](context-handle.md) a una funzione per specificare le caratteristiche del valore restituito.
+Nelle interfacce non [**oggetto**](object.md) è anche possibile applicare l'attributo [**\_ dell'handle**](context-handle.md) di contesto a una funzione per specificare le caratteristiche del valore restituito.
 
- 
+ 
 
- 
+ 
 
 
 

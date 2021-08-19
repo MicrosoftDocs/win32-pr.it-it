@@ -1,27 +1,27 @@
 ---
-description: Le interfacce del pacchetto rappresentano il primo livello di XPS OM, che corrisponde a un file di documento XPS.
+description: Le interfacce del pacchetto rappresentano il livello superiore del sistema operativo XPS, che corrisponde a un file di documento XPS.
 ms.assetid: 9e269b18-e5b1-4801-b8e7-473750443c6d
-title: Interfacce del pacchetto XPS OM
+title: Interfacce del pacchetto OM XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e1465f5d6782e29f9c37f899b59790302e21ebf1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d6732531e3874046bbd174c363db24e304da95b9596b810014abb52a795e720c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119886141"
 ---
-# <a name="xps-om-package-interfaces"></a>Interfacce del pacchetto XPS OM
+# <a name="xps-om-package-interfaces"></a>Interfacce del pacchetto OM XPS
 
-Le interfacce del pacchetto rappresentano il primo livello di XPS OM, che corrisponde a un file di documento XPS. Queste interfacce contengono metodi che serializzano XPS OM in un documento o flusso XPS e deserializzano un pacchetto XPS per creare un OM XPS che consente a un programma di accedere al contenuto di un documento.
+Le interfacce del pacchetto rappresentano il livello superiore del sistema operativo XPS, che corrisponde a un file di documento XPS. Queste interfacce contengono metodi che serializzano un sistema operativo XPS in un documento o un flusso XPS e deserializzano un pacchetto XPS per creare un sistema operativo XPS che consente a un programma di accedere al contenuto di un documento.
 
 
 
-| Nome interfaccia                                                  | Interfacce figlio logiche                                                                                                            | Descrizione                                                                                    |
+| Nome dell'interfaccia                                                  | Interfacce figlio logiche                                                                                                            | Descrizione                                                                                    |
 |-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
 | [**IXpsOMPackage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackage)<br/>               | [**IXpsOMDocumentSequence**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocumentsequence)<br/> [**IXpsOMCoreProperties**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomcoreproperties)<br/> | OM XPS completo che corrisponde al pacchetto che contiene il documento XPS.<br/> |
-| [**IXpsOMPackageWriter**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackagewriter)<br/>   | nessuno<br/>                                                                                                                     | Consente la serializzazione incrementale delle pagine documento in un pacchetto.<br/>                   |
-| [**IXpsOMCoreProperties**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomcoreproperties)<br/> | nessuno<br/>                                                                                                                     | Accede ai metadati del documento. <br/>                                                    |
+| [**IXpsOMPackageWriter**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackagewriter)<br/>   | Nessuno<br/>                                                                                                                     | Abilita la serializzazione incrementale delle pagine del documento in un pacchetto.<br/>                   |
+| [**IXpsOMCoreProperties**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomcoreproperties)<br/> | Nessuno<br/>                                                                                                                     | Accede ai metadati del documento. <br/>                                                    |
 
 
 
@@ -29,16 +29,16 @@ Le interfacce del pacchetto rappresentano il primo livello di XPS OM, che corris
 
 ## <a name="code-examples"></a>Esempi di codice
 
-Negli esempi di codice seguenti viene illustrato il modo in cui alcune interfacce del pacchetto vengono utilizzate da un programma. Se non specificato diversamente, tutti gli elementi in corsivo sono nomi di parametro.
+Gli esempi di codice seguenti illustrano come alcune delle interfacce del pacchetto vengono usate da un programma. Se non diversamente specificato, tutti gli elementi in corsivo sono nomi di parametro.
 
--   [Leggere un documento XPS in un OM XPS](#read-an-xps-document-into-an-xps-om)
--   [Scrivere un oggetto XPS OM in un file di documento XPS](#write-an-xps-om-to-an-xps-document-file)
+-   [Leggere un documento XPS in un sistema operativo XPS](#read-an-xps-document-into-an-xps-om)
+-   [Scrivere un file di documento XPS OM in un file di documento XPS](#write-an-xps-om-to-an-xps-document-file)
 -   [Accedere alla sequenza di documenti di XPS OM](#access-the-document-sequence-of-the-xps-om)
--   [Accedere al CoreProperties del documento](#access-the-documents-coreproperties)
+-   [Accedere alle CoreProperties del documento](#access-the-documents-coreproperties)
 
-### <a name="read-an-xps-document-into-an-xps-om"></a>Leggere un documento XPS in un OM XPS
+### <a name="read-an-xps-document-into-an-xps-om"></a>Leggere un documento XPS in un sistema operativo XPS
 
-Da un documento XPS esistente il cui nome file è archiviato in *xpsDocumentFilename*, in questo esempio di codice viene creato un OM XPS a cui fa riferimento *xpsPackage*.
+Da un documento XPS esistente il cui nome file è archiviato in *xpsDocumentFilename*, questo esempio di codice crea un file OM XPS a cui fa riferimento *xpsPackage*.
 
 
 ```C++
@@ -57,9 +57,9 @@ Da un documento XPS esistente il cui nome file è archiviato in *xpsDocumentFile
 
 
 
-### <a name="write-an-xps-om-to-an-xps-document-file"></a>Scrivere un oggetto XPS OM in un file di documento XPS
+### <a name="write-an-xps-om-to-an-xps-document-file"></a>Scrivere un file di documento XPS OM in un file di documento XPS
 
-Nell'esempio di codice seguente viene scritto il codice OM XPS a cui fa riferimento *xpsPackage*. Nell'esempio viene creato un documento XPS nel file il cui nome è archiviato in *filename*.
+Nell'esempio di codice seguente viene scritto il sistema operativo XPS a cui fa riferimento *xpsPackage*. Nell'esempio viene creato un documento XPS nel file il cui nome è archiviato in *fileName*.
 
 
 ```C++
@@ -76,7 +76,7 @@ Nell'esempio di codice seguente viene scritto il codice OM XPS a cui fa riferime
 
 ### <a name="access-the-document-sequence-of-the-xps-om"></a>Accedere alla sequenza di documenti di XPS OM
 
-Nell'esempio di codice seguente viene ottenuto un puntatore all'interfaccia [**IXpsOMDocumentSequence**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocumentsequence) , che contiene la sequenza di documenti dell'OM XPS che è rappresentata da *xpsPackage*.
+L'esempio di codice seguente ottiene un [**puntatore all'interfaccia IXpsOMDocumentSequence,**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocumentsequence) che contiene la sequenza di documenti del sistema operativo XPS rappresentato da *xpsPackage*.
 
 
 ```C++
@@ -94,9 +94,9 @@ Nell'esempio di codice seguente viene ottenuto un puntatore all'interfaccia [**I
 
 
 
-### <a name="access-the-documents-coreproperties"></a>Accedere al CoreProperties del documento
+### <a name="access-the-documents-coreproperties"></a>Accedere alle CoreProperties del documento
 
-Nell'esempio di codice seguente viene ottenuto un puntatore all'interfaccia [**IXpsOMCoreProperties**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomcoreproperties) , consentendo al programma di accedere al contenuto della parte CoreProperties. Nell'esempio si presuppone che il documento sia stato letto in un OM XPS che è rappresentato da *xpsPackage*.
+L'esempio di codice seguente ottiene un puntatore [**all'interfaccia IXpsOMCoreProperties,**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomcoreproperties) consentendo al programma di accedere al contenuto della parte CoreProperties. Nell'esempio si presuppone che il documento sia stato letto in un sistema operativo XPS rappresentato *da xpsPackage*.
 
 
 ```C++
@@ -126,7 +126,7 @@ Nell'esempio di codice seguente viene ottenuto un puntatore all'interfaccia [**I
 [Uso dell'interfaccia IXpsOMPackageWriter](using-the-ixpsompackagewriter-interface.md)
 </dt> <dt>
 
-[Esplorare XPS OM](navigate-the-xps-om.md)
+[Esplorare xps OM](navigate-the-xps-om.md)
 </dt> <dt>
 
 [**Interfaccia IXpsOMDocumentSequence**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocumentsequence)

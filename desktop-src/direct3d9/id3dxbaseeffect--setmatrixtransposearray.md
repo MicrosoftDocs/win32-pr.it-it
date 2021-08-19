@@ -1,5 +1,5 @@
 ---
-description: 'Metodo ID3DXBaseEffect::SetMatrixTransposeArray: imposta una matrice di matrici trasposte.'
+description: 'Metodo ID3DXBaseEffect::SetMatrixTransposeArray : imposta una matrice di matrici trasposte.'
 ms.assetid: 5dc65424-b0cd-490d-900e-60b9f7536ace
 title: Metodo ID3DXBaseEffect::SetMatrixTransposeArray (D3DX9Shader.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: d7f145dc45f053e208f7890c8afdac6422ecde13
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6fb5850c17aab9b16a304e29075be925aa1e7d1086570021f201f48561c92788
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893681"
 ---
 # <a name="id3dxbaseeffectsetmatrixtransposearray-method"></a>Metodo ID3DXBaseEffect::SetMatrixTransposeArray
 
@@ -47,7 +47,7 @@ HRESULT SetMatrixTransposeArray(
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [Handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Una matrice trasposta contiene dati principali della colonna. in altri, ogni vettore è contenuto in una colonna.
+Una matrice trasposta contiene dati principali della colonna. ciò significa che ogni vettore è contenuto in una colonna.
 
 Se le matrici di destinazione sono più piccole delle matrici di origine, i componenti aggiuntivi delle matrici di origine verranno ignorati.
 

@@ -1,27 +1,27 @@
 ---
 title: Valori per le proprietà countryCode e c
-description: I valori per le proprietà countryCode e c sono ottenuti dallo standard ISO 3166.
+description: I valori per le proprietà countryCode e c vengono ottenuti dallo standard ISO 3166.
 ms.assetid: 2cc9dfb4-c053-4f4a-b051-79dd71aa045d
 ms.tgt_platform: multiple
 keywords:
-- ANNUNCIO del codice paese/area geografica
-- ANNUNCIO del codice paese/area geografica, valori per
+- country/region Code AD
+- country/region Code AD , valori per
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a400c4bd3c3150e5bf18bfd93ef43a586e943af2
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: 34855fa2998a3b56557e12f591df071274f8be4004a32bc8182980e079721388
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "104472283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024395"
 ---
 # <a name="values-for-the-countrycode-and-c-properties"></a>Valori per le proprietà countryCode e c
 
-I valori per le proprietà **CountryCode** e **c** sono ottenuti dallo standard ISO 3166. Questo standard è disponibile nel sito Web [organizzazione internazionale per la standardizzazione](https://www.iso.org/) . Il valore della proprietà **CountryCode** è il codice paese numerico da ISO 3166 e il valore della proprietà **c** è la designazione di due lettere paese/area geografica da ISO 3166.
+I valori per le **proprietà countryCode** **e c** vengono ottenuti dallo standard ISO 3166. Questo standard è disponibile nel sito [Web International Organization for Standardization.](https://www.iso.org/) Il valore della proprietà **countryCode** è il codice numerico del paese iso 3166 e il valore della proprietà **c** è la designazione di due lettere paese/area geografica da ISO 3166.
 
- 
+ 
 
- 
+ 
 
 
 

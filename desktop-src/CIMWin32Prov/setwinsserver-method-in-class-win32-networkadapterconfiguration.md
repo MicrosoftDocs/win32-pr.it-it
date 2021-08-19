@@ -1,5 +1,5 @@
 ---
-description: Il metodo della classe WMI SetWINSServer imposta i server WINS (Windows Internet Naming Service) primari e secondari in questa scheda di rete associata a TCP/IP. Questo metodo viene applicato indipendentemente dalla scheda di rete.
+description: Il metodo della classe WMI SetWINSServer imposta i server WINS (Internet Windows Internet Naming Service) primario e secondario su questa scheda di rete associata a TCP/IP. Questo metodo viene applicato indipendentemente dalla scheda di rete.
 ms.assetid: fa8ce436-b67e-4975-a5c5-1a7d6aab4c8e
 ms.tgt_platform: multiple
 title: Metodo SetWINSServer della classe Win32_NetworkAdapterConfiguration
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 49bfb0103a7d9cbbd6ea3faa0e1a868bac7b0196
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9471684b3ca6032c846684bdf4a50dffbd0e2f455e4a887498fdcfe1f2a051ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020389"
 ---
-# <a name="setwinsserver-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetWINSServer della \_ classe NetworkAdapterConfiguration Win32
+# <a name="setwinsserver-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetWINSServer della classe NetworkAdapterConfiguration Win32 \_
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetWINSServer** imposta i server WINS (Windows Internet Naming Service) primari e secondari in questa scheda di rete associata a TCP/IP. Questo metodo viene applicato indipendentemente dalla scheda di rete.
+Il metodo della classe Windows [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetWINSServer** imposta i server WINS (Internet Naming Service) primario e secondario su questa scheda di rete associata a TCP/IP. Questo metodo viene applicato indipendentemente dalla scheda di rete.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,25 +43,25 @@ uint32 SetWINSServer(
 
 <dl> <dt>
 
-*WINSPrimaryServer* \[ in\]
+*WINSPrimaryServer* \[ Pollici\]
 </dt> <dd>
 
 Indirizzo IP del server WINS primario.
 
 > [!Note]  
-> Verificare sempre la validità di questo indirizzo IP da un'origine sconosciuta o da un'origine non attendibile.
+> Verificare sempre la validità di questo indirizzo IP quando viene da un'origine sconosciuta o da un'origine non attendibile.
 
  
 
 </dd> <dt>
 
-*WINSSecondaryServer* \[ in\]
+*WINSSecondaryServer* \[ Pollici\]
 </dt> <dd>
 
 Indirizzo IP del server WINS secondario.
 
 > [!Note]  
-> Verificare sempre la validità di questo indirizzo IP da un'origine sconosciuta o da un'origine non attendibile.
+> Verificare sempre la validità di questo indirizzo IP quando viene da un'origine sconosciuta o da un'origine non attendibile.
 
  
 
@@ -69,25 +69,25 @@ Indirizzo IP del server WINS secondario.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore intero pari a 0 (zero) al completamento corretto e qualsiasi altro numero per indicare un errore. Per ulteriori informazioni sui codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce un valore intero pari a 0 (zero) al completamento corretto e qualsiasi altro numero per indicare un errore. Per altre informazioni sui codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
-**Operazione completata, non è necessario riavviare il computer**
+**Completamento riuscito, nessun riavvio necessario**
 </dt> <dd>
 
 0
 
-Operazione completata, non è necessario riavviare il computer.
+Completamento riuscito, nessun riavvio necessario.
 
 </dd> <dt>
 
-**Operazione completata, riavvio richiesto**
+**Completamento riuscito, riavvio necessario**
 </dt> <dd>
 
 1
 
-Operazione completata, è necessario riavviare il computer.
+Completamento riuscito, riavvio necessario.
 
 </dd> <dt>
 
@@ -109,12 +109,12 @@ Errore sconosciuto.
 
 </dd> <dt>
 
-**subnet mask non valido**
+**Non valido subnet mask**
 </dt> <dd>
 
 66
 
-Subnet mask non valido.
+Non è subnet mask.
 
 </dd> <dt>
 
@@ -123,7 +123,7 @@ Subnet mask non valido.
 
 67
 
-Si è verificato un errore durante l'elaborazione di un'istanza di restituita.
+Si è verificato un errore durante l'elaborazione di un'istanza restituita.
 
 </dd> <dt>
 
@@ -136,7 +136,7 @@ Parametro di input non valido.
 
 </dd> <dt>
 
-**Sono stati specificati più di 5 gateway**
+**Più di 5 gateway specificati**
 </dt> <dd>
 
 69
@@ -154,7 +154,7 @@ Indirizzo IP non valido.
 
 </dd> <dt>
 
-**Indirizzo IP gateway non valido**
+**Indirizzo IP del gateway non valido**
 </dt> <dd>
 
 71
@@ -163,12 +163,12 @@ Indirizzo IP del gateway non valido.
 
 </dd> <dt>
 
-**Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste**
+**Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste**
 </dt> <dd>
 
 72
 
-Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste.
+Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste.
 
 </dd> <dt>
 
@@ -217,12 +217,12 @@ Percorso di sistema non valido.
 
 </dd> <dt>
 
-**Copia del file non riuscita**
+**La copia del file non è riuscita**
 </dt> <dd>
 
 78
 
-Copia del file non riuscita.
+La copia del file non è riuscita.
 
 </dd> <dt>
 
@@ -244,7 +244,7 @@ Impossibile configurare il servizio TCP/IP.
 
 </dd> <dt>
 
-**Non è possibile configurare il servizio DHCP**
+**Impossibile configurare il servizio DHCP**
 </dt> <dd>
 
 81
@@ -253,16 +253,16 @@ Impossibile configurare il servizio DHCP.
 
 </dd> <dt>
 
-**Non è possibile rinnovare il lease DHCP**
+**Impossibile rinnovare il lease DHCP**
 </dt> <dd>
 
 82
 
-Non è possibile rinnovare il lease DHCP.
+Impossibile rinnovare il lease DHCP.
 
 </dd> <dt>
 
-**Non è possibile rilasciare il lease DHCP**
+**Impossibile rilasciare il lease DHCP**
 </dt> <dd>
 
 83
@@ -280,7 +280,7 @@ IP non abilitato sulla scheda.
 
 </dd> <dt>
 
-**IPX non abilitato sull'adapter**
+**IPX non abilitato sulla scheda**
 </dt> <dd>
 
 85
@@ -289,12 +289,12 @@ IPX non abilitato sulla scheda.
 
 </dd> <dt>
 
-**Errore limite numero frame/rete**
+**Errore di limiti del numero di frame/rete**
 </dt> <dd>
 
 86
 
-Errore dei limiti del numero di rete o del frame.
+Errore di limiti del numero di frame o di rete.
 
 </dd> <dt>
 
@@ -325,12 +325,12 @@ Numero di rete duplicato.
 
 </dd> <dt>
 
-**Parametro fuori limite**
+**Parametro fuori dai limiti**
 </dt> <dd>
 
 90
 
-Parametro fuori limite.
+Parametro fuori dai limiti.
 
 </dd> <dt>
 
@@ -366,20 +366,20 @@ Esiste già.
 
 94
 
-Il percorso, il file o l'oggetto non è stato trovato.
+Percorso, file o oggetto non trovato.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio**
+**Impossibile inviare una notifica al servizio**
 </dt> <dd>
 
 95
 
-Impossibile notificare il servizio.
+Impossibile inviare una notifica al servizio.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio DNS**
+**Impossibile inviare una notifica al servizio DNS**
 </dt> <dd>
 
 96
@@ -406,7 +406,7 @@ Non tutti i lease DHCP possono essere rilasciati o rinnovati.
 
 </dd> <dt>
 
-**DHCP non abilitato sull'adapter**
+**DHCP non abilitato sulla scheda**
 </dt> <dd>
 
 100
@@ -424,13 +424,13 @@ DHCP non abilitato sulla scheda.
 
 ## <a name="remarks"></a>Commenti
 
-Se *WINSPrimaryServer* e *WINSSecondaryServer* sono entrambi impostati su "" (una stringa vuota), i server WINS espliciti torneranno a DHCP.
+Se sia *WINSPrimaryServer* che *WINSSecondaryServer* sono impostati su "" (una stringa vuota), i server WINS espliciti tornano a DHCP.
 
 ## <a name="examples"></a>Esempio
 
-[Assegnazione di un indirizzo IP recuperato da un database](https://Gallery.TechNet.Microsoft.Com/d4526355-e682-4116-a79a-8bba569b084d) L'esempio di codice VBScript Cerca un computer in un database e assegna tale computer all'indirizzo IP specificato.
+[Assegnare un indirizzo IP recuperato da un database](https://Gallery.TechNet.Microsoft.Com/d4526355-e682-4116-a79a-8bba569b084d) L'esempio di codice VBScript cerca un computer in un database e assegna a tale computer l'indirizzo IP specificato.
 
-Nell'esempio di codice VBScript seguente viene impostato il server WINS primario e secondario per una scheda di rete associata a TCP/IP.
+L'esempio di codice VBScript seguente imposta il server WINS primario e secondario per una scheda di rete associata a TCP/IP.
 
 
 ```VB
@@ -461,7 +461,7 @@ Next
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -470,19 +470,19 @@ Next
 
 <dl> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema informatico](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Attività WMI: rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Attività WMI: Rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
 [Attività WMI: account e domini](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
-[Supporto di IPv6 e IPv4 in WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)
+[Supporto IPv6 e IPv4 in WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)
 </dt> </dl>
 
  

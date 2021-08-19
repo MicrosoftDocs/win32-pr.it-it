@@ -4,12 +4,12 @@ ms.assetid: 778cc069-fc2d-4ace-b3bd-6d3f97486079
 title: System.SoftwareUsed
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4249cb50068ce5daf8c189bd171005c1e3796421
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 687fd4d7b7cd884aa05a6578bd4b8d3a13e9fbe55cc36554b1704e017752f7f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938131"
 ---
 # <a name="systemsoftwareused"></a>System.SoftwareUsed
 
@@ -36,7 +36,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -66,7 +66,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

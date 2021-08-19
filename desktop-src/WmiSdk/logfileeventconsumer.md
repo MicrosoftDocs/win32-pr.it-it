@@ -71,16 +71,16 @@ Tipo di dati: **matrice uint8**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-ID di sicurezza (SID) che identifica in modo univoco l'utente che crea un filtro. WMI archivia il SID dell'utente che crea un'istanza di [**\_ \_ EventConsumer**](--eventconsumer.md) o il SID amministratore, a seconda del sistema operativo. Per altre informazioni, vedere [Associazione di un filtro eventi con](binding-an-event-filter-with-a-logical-consumer.md) un consumer logico e Monitoraggio e Risposta agli eventi con consumer [standard.](monitoring-and-responding-to-events-with-standard-consumers.md)
+Identificatore di sicurezza (SID) che identifica in modo univoco l'utente che crea un filtro. WMI archivia il SID dell'utente che crea un'istanza di [**\_ \_ EventConsumer**](--eventconsumer.md) o del SID amministratore, a seconda del sistema operativo. Per altre informazioni, vedere [Associazione di un filtro eventi a](binding-an-event-filter-with-a-logical-consumer.md) un consumer logico e Monitoraggio e Risposta agli eventi con consumer [standard](monitoring-and-responding-to-events-with-standard-consumers.md).
 
-Questa proprietà viene ereditata da [**\_ \_ EventConsumer.**](--eventconsumer.md)
+Questa proprietà viene ereditata da [**\_ \_ EventConsumer**](--eventconsumer.md).
 
 </dd> <dt>
 
 **Filename**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -99,22 +99,22 @@ Tipo di dati: **booleano**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **TRUE,** il file di log è un file di testo Unicode. Se **FALSE,** il file di log è un file di testo di codice multibyte. Se il file esiste, questa proprietà viene ignorata e viene usata l'impostazione del file corrente. Ad esempio, se **IsUnicode** è **FALSE,** ma il file esistente è un file Unicode, viene usato Unicode. Se **IsUnicode** è **TRUE,** ma il file è codice multibyte, viene usato il codice multibyte.
+Se **TRUE,** il file di log è un file di testo Unicode. Se **FALSE,** il file di log è un file di testo di codice multibyte. Se il file esiste, questa proprietà viene ignorata e viene usata l'impostazione del file corrente. Ad esempio, se **IsUnicode** è **FALSE**, ma il file esistente è un file Unicode, viene usato Unicode. Se **IsUnicode** è **TRUE,** ma il file è codice multibyte, viene usato il codice multibyte.
 
 </dd> <dt>
 
 **MachineName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome del computer a cui Windows Management Instrumentation (WMI).
+Nome del computer a cui Windows Management Instrumentation (WMI) invia eventi.
 
-Questa proprietà viene ereditata da [**\_ \_ EventConsumer.**](--eventconsumer.md)
+Questa proprietà viene ereditata da [**\_ \_ EventConsumer**](--eventconsumer.md).
 
 </dd> <dt>
 
@@ -127,14 +127,14 @@ Tipo di dati: **uint64**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Dimensioni massime di un file di log in byte. Se il file primario supera le dimensioni massime, il contenuto viene spostato in un file diverso e il file primario viene svuotato. Il valore 0 (zero) indica che non esiste alcun limite di dimensioni. Il valore predefinito è 65.535 byte. Le dimensioni del file vengono controllate prima di un'operazione di scrittura. Pertanto, è possibile avere un file di dimensioni leggermente superiori al limite di dimensioni specificato. L'operazione di scrittura successiva lo intercetta e avvia un nuovo file.
+Dimensioni massime in byte di un file di log. Se il file primario supera le dimensioni massime, il contenuto viene spostato in un file diverso e il file primario viene svuotato. Il valore 0 (zero) indica che non è previsto alcun limite di dimensioni. Il valore predefinito è 65.535 byte. Le dimensioni del file vengono controllate prima di un'operazione di scrittura. Pertanto, è possibile avere un file leggermente più grande del limite di dimensioni specificato. L'operazione di scrittura successiva lo rileva e avvia un nuovo file.
 
 L'elenco seguente identifica la struttura di denominazione per il file di backup:
 
--   Se il nome file originale è 8.3, l'estensione viene sostituita da una stringa nel formato "001", "002" e così via con il numero più piccolo maggiore di tutti i numeri usati e scelti in precedenza. Se si usa "999", il numero scelto è il più piccolo non usato.
+-   Se il nome file originale è 8.3, l'estensione viene sostituita da una stringa nel formato "001", "002" e così via con il numero più piccolo maggiore di tutti i numeri usati e scelti in precedenza. Se si usa "999", il numero scelto è il numero più piccolo inutilizzato.
 -   Se il nome file originale non è 8.3, al nome del file viene aggiunta una stringa nel formato "001", "002" e così via.
 
-Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
@@ -149,20 +149,20 @@ Tipo di accesso: sola lettura
 
 Coda massima per un consumer specifico, in byte.
 
-Questa proprietà viene ereditata da [**\_ \_ EventConsumer.**](--eventconsumer.md)
+Questa proprietà viene ereditata da [**\_ \_ EventConsumer**](--eventconsumer.md).
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **key**](key-qualifier.md)
+Qualificatori: [ **chiave**](key-qualifier.md)
 </dt> </dl>
 
 Nome univoco per questo consumer.
@@ -172,7 +172,7 @@ Nome univoco per questo consumer.
 **Text**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -189,11 +189,11 @@ Modello di [stringa standard](using-standard-string-templates.md) per il testo d
 
  
 
-La **classe LogFileEventConsumer** è derivata dalla [**\_ \_ classe astratta EventConsumer.**](--eventconsumer.md)
+La **classe LogFileEventConsumer** deriva dalla [**\_ \_ classe astratta EventConsumer.**](--eventconsumer.md)
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio dell'uso **di LogFileEventConsumer** per creare un consumer, vedere Scrittura in un file di [log in base a un evento](writing-to-a-log-file-based-on-an-event.md).
+Per un esempio di uso **di LogFileEventConsumer** per creare un consumer, vedere Scrittura in un [file di log basato su un evento](writing-to-a-log-file-based-on-an-event.md).
 
 ## <a name="requirements"></a>Requisiti
 

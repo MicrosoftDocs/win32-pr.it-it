@@ -1,10 +1,10 @@
 ---
 title: Attributo Reports
-description: Contiene l'elenco di utenti che riportano direttamente all'utente. Gli utenti elencati come report sono quelli per i quali la proprietà Gestione proprietà è impostata su questo utente. Ogni elemento nell'elenco è un riferimento collegato all'oggetto che rappresenta l'utente.
+description: Contiene l'elenco di utenti che segnalano direttamente all'utente. Gli utenti elencati come report sono quelli la cui proprietà Gestione proprietà è impostata su questo utente. Ogni elemento dell'elenco è un riferimento collegato all'oggetto che rappresenta l'utente.
 ms.assetid: 369fc457-685c-4875-aed3-0a246a219512
 ms.tgt_platform: multiple
 keywords:
-- Attributo di AD schema di report
+- Attributo dei report - Schema DI ACTIVE Directory
 - Schema AD dell'attributo directReports
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ef5a555b7c1d48fdb337f2c876abf3f15ae8daa
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b60354fc07c5ea8fecada9150aea13308e10a92e1836bd37ea8d398e84f6d0f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049601"
 ---
 # <a name="reports-attribute"></a>Attributo Reports
 
-Contiene l'elenco di utenti che riportano direttamente all'utente. Gli utenti elencati come report sono quelli per i quali la proprietà Gestione proprietà è impostata su questo utente. Ogni elemento nell'elenco è un riferimento collegato all'oggetto che rappresenta l'utente.
+Contiene l'elenco di utenti che segnalano direttamente all'utente. Gli utenti elencati come report sono quelli la cui proprietà Gestione proprietà è impostata su questo utente. Ogni elemento dell'elenco è un riferimento collegato all'oggetto che rappresenta l'utente.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------|
 | CN                | Report                                         |
-| LDAP-Display-Name | directReports                                   |
+| Ldap-Display-Name | directReports                                   |
 | Dimensione              | \-                                              |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.                |
-| Frequenza di aggiornamento  | Ogni volta che viene modificato il report diretto per un utente. |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.                |
+| Frequenza di aggiornamento  | Ogni volta che i report diretti per un utente cambiano. |
 | Attribute-Id      | 1.2.840.113556.1.2.436                          |
-| System-ID-GUID    | bf967a1c-0de6-11d0-a285-00aa003049e2            |
+| System-Id-Guid    | bf967a1c-0de6-11d0-a285-00aa003049e2            |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md)         |
 
 
@@ -58,15 +58,15 @@ Contiene l'elenco di utenti che riportano direttamente all'utente. Gli utenti el
 | ID collegamento                | 43                              |
 | MAPI-Id                | 0x800E                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Contiene l'elenco di utenti che riportano direttamente all'utente. Gli utenti el
 | ID collegamento                | 43                              |
 | MAPI-Id                | 0x800E                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Contiene l'elenco di utenti che riportano direttamente all'utente. Gli utenti el
 | ID collegamento                | 43                              |
 | MAPI-Id                | 0x800E                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Contiene l'elenco di utenti che riportano direttamente all'utente. Gli utenti el
 | ID collegamento                | 43                              |
 | MAPI-Id                | 0x800E                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Contiene l'elenco di utenti che riportano direttamente all'utente. Gli utenti el
 | ID collegamento                | 43                              |
 | MAPI-Id                | 0x800E                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Contiene l'elenco di utenti che riportano direttamente all'utente. Gli utenti el
 | ID collegamento                | 43                              |
 | MAPI-Id                | 0x800E                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

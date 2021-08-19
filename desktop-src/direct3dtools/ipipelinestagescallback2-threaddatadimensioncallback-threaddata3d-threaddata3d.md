@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IPipeLineStagesCallback2\_ThreadDataDimensionCallback\_Thre
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo IPipeLineStagesCallback2:: ThreadDataDimensionCallback'
+title: Metodo IPipeLineStagesCallback2::ThreadDataDimensionCallback
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: E8765C14-0A55-468D-BCA8-3E28E5476DFB
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 93a8ee64c863128513563f3ce50dd2bfcdd77714
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0d56989325aa59f4bc1681e3d799420453945e7363736410ba5e46efbc69c3f0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023041"
 ---
-# <a name="span-idvspixengineipipelinestagescallback2_threaddatadimensioncallback_threaddata3d_threaddata3dspanipipelinestagescallback2threaddatadimensioncallback-method"></a><span id="vspixengine.ipipelinestagescallback2_threaddatadimensioncallback_threaddata3d_threaddata3d"></span>Metodo IPipeLineStagesCallback2:: ThreadDataDimensionCallback
+# <a name="span-idvspixengineipipelinestagescallback2_threaddatadimensioncallback_threaddata3d_threaddata3dspanipipelinestagescallback2threaddatadimensioncallback-method"></a><span id="vspixengine.ipipelinestagescallback2_threaddatadimensioncallback_threaddata3d_threaddata3d"></span>Metodo IPipeLineStagesCallback2::ThreadDataDimensionCallback
 
 Callback che notifica all'host il numero di thread e gruppi del compute shader nella richiesta associata.
 
@@ -41,18 +41,18 @@ HRESULT ThreadDataDimensionCallback(
 ## <a name="parameters"></a>Parametri
 
 *threadGroupCount*   
-Conteggio multidimensionali dei gruppi di thread.
+Conteggio multidimensionale dei gruppi di thread.
 
 *threadGroupSize*   
-Dimensioni multidimensionali di ogni gruppo di thread.
+Dimensione multidimensionale di ogni gruppo di thread.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

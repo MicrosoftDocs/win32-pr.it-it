@@ -1,7 +1,7 @@
 ---
-description: La \_ variabile membro HWND m contiene un handle per la finestra di dialogo. Questa variabile membro viene inizializzata dopo che l'oggetto crea la finestra di dialogo, quando la funzione CreateDialogParam restituisce.
+description: La variabile \_ membro m hwnd contiene un handle per la finestra di dialogo. Questa variabile membro viene inizializzata dopo che l'oggetto ha creato la finestra di dialogo, quando viene restituita la funzione CreateDialogParam.
 ms.assetid: f985c06f-a1f9-458b-b9f3-cabe9f583313
-title: 'Membro CBasePropertyPage:: m_hwnd (Cprop. h)'
+title: Membro CBasePropertyPage::m_hwnd (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 94a249d9b8f887750360ceb83f876f315d4fd43f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b241f41662ab2b7aa981015e662605f1a19f017ad610ddee347e3dcdeb00c232
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052591"
 ---
-# <a name="cbasepropertypagem_hwnd-member"></a>Membro HWND CBasePropertyPage:: m \_
+# <a name="cbasepropertypagem_hwnd-member"></a>Membro CBasePropertyPage::m \_ hwnd
 
-La `m_hwnd` variabile membro contiene un handle per la finestra di dialogo. Questa variabile membro viene inizializzata dopo che l'oggetto crea la finestra di dialogo, quando la funzione **CreateDialogParam** restituisce.
+La `m_hwnd` variabile membro contiene un handle per la finestra di dialogo. Questa variabile membro viene inizializzata dopo che l'oggetto ha creato la finestra di dialogo, quando viene restituita **la funzione CreateDialogParam.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ HWND m_hwnd;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Cprop. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Cprop.h (include Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

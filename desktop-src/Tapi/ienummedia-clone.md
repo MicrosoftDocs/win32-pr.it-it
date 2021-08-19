@@ -13,7 +13,7 @@ ms.locfileid: "119992441"
 ---
 # <a name="ienummediaclone-method"></a>Metodo IEnumMedia::Clone
 
-\[I controlli e le interfacce della conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
+\[I controlli e le interfacce di conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client RTC offre funzionalità simili.\]
 
 Il **metodo Clone** crea un altro enumeratore che contiene lo stesso stato di enumerazione di quello corrente.
 
@@ -48,9 +48,9 @@ Questo metodo può restituire uno di questi valori.
 | Valore                                                                                         | Significato                                                         |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
-| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>     | Il *parametro ppEnum* non è un puntatore valido.<br/>       |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>     | Il *parametro ppEnum* non è un puntatore valido.<br/>       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per eseguire l'operazione.<br/> |
-| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl>  | Operazione non riuscita per motivi sconosciuti.<br/>                          |
+| <dl> <dt>**E \_ IMPREVISTO**</dt> </dl>  | Operazione non riuscita per motivi sconosciuti.<br/>                          |
 
 
 
@@ -58,7 +58,7 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-TAPI chiama il **metodo AddRef** sull'interfaccia [**IEnumMedia**](ienummedia.md) restituita da **IEnumMedia::Clone.** L'applicazione deve **chiamare Release** **sull'interfaccia IEnumMedia** per liberare le risorse associate.
+TAPI chiama il **metodo AddRef** [**sull'interfaccia IEnumMedia**](ienummedia.md) restituita da **IEnumMedia::Clone**. L'applicazione deve **chiamare Release** **sull'interfaccia IEnumMedia** per liberare le risorse associate.
 
 ## <a name="requirements"></a>Requisiti
 

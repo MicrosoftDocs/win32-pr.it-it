@@ -1,6 +1,6 @@
 ---
-title: Metodo GetFile IBackgroundCopyError (Deliveryoptimization. h)
-description: Recupera un puntatore di interfaccia all'oggetto file associato all'errore.
+title: Metodo GetFile IBackgroundCopyError (Deliveryoptimization.h)
+description: Recupera un puntatore a interfaccia all'oggetto file associato all'errore.
 ms.assetid: 7E1DB3EE-0690-4D0E-BA98-70F5FBDCF12F
 keywords:
 - Metodo GetFile
@@ -17,16 +17,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b84396797378c77a6f774b4c63a3966b0d601b7f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fbed5497bcebb3518c7f6a56646976cc01fbfebc501af4a08e861139311f4bc1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096711"
 ---
-# <a name="ibackgroundcopyerrorgetfile-method"></a>Metodo IBackgroundCopyError:: GetFile
+# <a name="ibackgroundcopyerrorgetfile-method"></a>Metodo IBackgroundCopyError::GetFile
 
-Recupera un puntatore di interfaccia all'oggetto file associato all'errore.
+Recupera un puntatore a interfaccia all'oggetto file associato all'errore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,10 +43,10 @@ HRESULT GetFile(
 
 <dl> <dt>
 
-*ppFile* \[ out\]
+*ppFile* \[ Cambio\]
 </dt> <dd>
 
-Puntatore all'interfaccia [**IBackgroundCopyFile**](ibackgroundcopyfile.md) i cui metodi vengono utilizzati per determinare i nomi file locali e remoti associati all'errore. Il parametro *ppFile* è impostato su **null** se l'errore non è associato al file locale o remoto. Al termine, rilasciare *ppFile*.
+Puntatore [**a interfaccia IBackgroundCopyFile**](ibackgroundcopyfile.md) i cui metodi vengono utilizzati per determinare i nomi di file locali e remoti associati all'errore. Il *parametro ppFile* è impostato su **NULL se** l'errore non è associato al file locale o remoto. Al termine, *rilasciare ppFile*.
 
 </dd> </dl>
 
@@ -58,8 +58,8 @@ Questo metodo restituisce i valori **HRESULT** seguenti.
 
 | Codice restituito                                                                                                | Descrizione                                                                                                    |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>S_OK * * * *</dt> </dl>                   | Il puntatore di interfaccia all'oggetto file è stato recuperato.<br/>                                     |
-| <dl> <dt>**DO_E_FILE_NOT_AVAILABLE**</dt> </dl> | L'errore non è associato a un file locale o remoto. Il parametro *ppFile* è impostato su **null**.<br/> |
+| <dl> <dt>S_OK****</dt> </dl>                   | È stato recuperato un puntatore a interfaccia all'oggetto file.<br/>                                     |
+| <dl> <dt>**DO_E_FILE_NOT_AVAILABLE**</dt> </dl> | L'errore non è associato a un file locale o remoto. Il *parametro ppFile* è impostato su **NULL.**<br/> |
 
 
 
@@ -71,13 +71,13 @@ Questo metodo restituisce i valori **HRESULT** seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                                           |
-| Server minimo supportato<br/> | Windows Server, versione 1709 \[ solo per le app desktop\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Server, solo app desktop versione 1709 \[\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
-| IID<br/>                      | IID_IBackgroundCopyError viene definito come 19C613A0-FCB8-4F28-81AE-897C3D078F81<br/>             |
+| IID<br/>                      | IID_IBackgroundCopyError è definito come 19C613A0-FCB8-4F28-81AE-897C3D078F81<br/>             |
 
 
 
@@ -88,7 +88,7 @@ Questo metodo restituisce i valori **HRESULT** seguenti.
 [**IBackgroundCopyError**](ibackgroundcopyerror.md)
 </dt> <dt>
 
-[**IBackgroundCopyError:: GetError**](ibackgroundcopyerror-geterror-method.md)
+[**IBackgroundCopyError::GetError**](ibackgroundcopyerror-geterror-method.md)
 </dt> </dl>
 
  

@@ -15,18 +15,18 @@ ms.locfileid: "119047889"
 
 Come qualsiasi oggetto OLE, un controllo fornisce gran parte delle funzionalità tramite un set di interfacce in ingresso con proprietà e metodi.
 
-Un controllo espone proprietà e metodi tramite l'automazione OLE in modo che i contenitori possano accedervi sotto il controllo di un linguaggio di programmazione fornito dal contenitore.
+Un controllo espone proprietà e metodi tramite l'automazione OLE in modo che i contenitori possano accedervi sotto il controllo di un linguaggio di programmazione fornito da contenitori.
 
-Per supportare l'accesso alle proprietà tramite un'interfaccia utente, un controllo fornisce pagine delle proprietà, supporto per PROPRIETÀ OLEIVERB, esplorazione per proprietà e data binding tramite notazioni di modifica \_ delle proprietà.
+Per supportare l'accesso alle proprietà tramite un'interfaccia utente, un controllo fornisce pagine delle proprietà, supporto per PROPRIETÀ OLEIVERB, esplorazione per proprietà e data binding tramite notfications di modifica \_ delle proprietà.
 
--   Tramite le pagine delle proprietà un controllo può visualizzarne le proprietà, indipendentemente dal relativo contenitore, se necessario.
--   Supportando PROPRIETÀ OLEIVERB, \_ la voce Proprietà viene visualizzata nel menu del contenitore. L'utente finale può quindi selezionare **l'elemento Proprietà** per visualizzare le pagine delle proprietà del controllo e modificare le proprietà.
+-   Tramite le pagine delle proprietà un controllo può visualizzare le relative proprietà, indipendentemente dal relativo contenitore, se necessario.
+-   Supportando OLEIVERB \_ PROPERTIES, l'elemento Properties viene visualizzato nel menu del contenitore. L'utente finale può quindi selezionare **l'elemento Proprietà** per visualizzare le pagine delle proprietà del controllo e modificare le proprietà.
 -   L'esplorazione per proprietà supporta un contenitore in grado di visualizzare le proprietà del controllo come parte di una finestra delle proprietà più grande che può includere proprietà di diversi controlli nel contenitore.
 -   Tramite la notifica di modifica delle proprietà, un controllo può notificare a un client che le relative proprietà sono state modificate, consentendo al client di eseguire le azioni necessarie di conseguenza.
 
 Per altre informazioni, vedere i seguenti argomenti:
 
--   [Proprietà dei controlli](control-properties.md)
+-   [Proprietà del controllo](control-properties.md)
 -   [Metodi di controllo](control-methods.md)
 
 ## <a name="related-topics"></a>Argomenti correlati

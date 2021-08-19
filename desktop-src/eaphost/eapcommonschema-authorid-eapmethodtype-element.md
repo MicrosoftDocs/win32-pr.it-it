@@ -1,9 +1,9 @@
 ---
-title: Elemento autorizzato (EapMethodType)
-description: Informazioni sull'elemento autorizzato (EapMethodType). L'elemento autorizzato (EapMethodType) si riferisce all'autore del metodo.
+title: Elemento AuthorId (EapMethodType)
+description: Informazioni sull'elemento AuthorId (EapMethodType). L'elemento AuthorID (EapMethodType) fa riferimento all'autore del metodo.
 ms.assetid: 1eb16a50-25b8-4883-b9ff-fde329d8dd81
 keywords:
-- Elemento autorizzato EAPHost
+- Elemento AuthorId EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1c9a756d8ad1fc88154d3d99d4304de6dd50166b
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: f15c5fc981592bb82f9ad52d590f12ac0b1f4b20af3537a511d01dd0a8cc15e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103963466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120021751"
 ---
-# <a name="authorid-eapmethodtype-element"></a>Elemento autorizzato (EapMethodType)
+# <a name="authorid-eapmethodtype-element"></a>Elemento AuthorId (EapMethodType)
 
-L'elemento autorizzato **(EapMethodType)** si riferisce all'autore del metodo.
+**L'elemento AuthorId (EapMethodType)** fa riferimento all'autore del metodo.
 
-L'autorizzazione è un numero univoco emesso da IANA (Internet Assigned Numbers Authority).
+AuthorId è un numero univoco emesso dall'autorità IANA (Internet Assigned Numbers Authority).
 
 ``` syntax
 <xs:element name="AuthorId"
@@ -33,20 +33,20 @@ L'autorizzazione è un numero univoco emesso da IANA (Internet Assigned Numbers 
  />
 ```
 
-L'elemento **autorizzato** è definito dal tipo complesso [**EapMethodType**](eapcommonschema-eapmethodtype-complextype.md) .
+**L'elemento AuthorId** è definito dal tipo complesso [**EapMethodType.**](eapcommonschema-eapmethodtype-complextype.md)
 
 ## <a name="remarks"></a>Commenti
 
-Gli elementi **autorizzazioned** e [**VendorID**](eapcommonschema-vendorid-eapmethodtype-element.md) non devono essere uguali per un metodo specifico.
+Gli **elementi AuthorId** [**e VendorId**](eapcommonschema-vendorid-eapmethodtype-element.md) non devono essere uguali per un metodo specifico.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

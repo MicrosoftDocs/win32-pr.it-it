@@ -1,7 +1,7 @@
 ---
 description: Flag che indica se i requisiti del buffer sono stati modificati.
 ms.assetid: 34d946f9-125c-40fb-b09e-82457add07d6
-title: 'Membro CBaseAllocator:: m_bChanged (Amfilter. h)'
+title: Membro CBaseAllocator::m_bChanged (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 86c700f3c0ee820206613bcf3147652b1826b57a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7edb5ed770628d7dfd982017e720ef0136bace74dd7e311121925f6c8657d2fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131501"
 ---
-# <a name="cbaseallocatorm_bchanged-member"></a>Membro bChanged di CBaseAllocator:: m \_
+# <a name="cbaseallocatorm_bchanged-member"></a>Membro CBaseAllocator::m \_ bChanged
 
-Flag che indica se i requisiti del buffer sono stati modificati. Il metodo [**CBaseAllocator:: seproperties**](cbaseallocator-setproperties.md) imposta il valore su **true**. In una classe derivata, il metodo virtuale pure [**CBaseAllocator:: Alloc**](cbaseallocator-alloc.md) deve impostare di nuovo il valore su **false**. Una volta allocati i buffer, non è necessario riallocarli mentre *m \_ BChanged* è **false**.
+Flag che indica se i requisiti del buffer sono stati modificati. Il [**metodo CBaseAllocator::SetProperties**](cbaseallocator-setproperties.md) imposta il valore su **TRUE.** In una classe derivata, il metodo virtuale [**puro CBaseAllocator::Alloc**](cbaseallocator-alloc.md) deve impostare nuovamente il valore su **FALSE.** Dopo aver allocato i buffer, non è necessario riallocarli mentre *m \_ bChanged* è **FALSE.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ BOOL m_bChanged;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

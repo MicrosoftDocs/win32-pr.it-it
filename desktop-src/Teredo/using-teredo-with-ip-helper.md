@@ -1,6 +1,6 @@
 ---
-title: Uso Teredo con l'helper IP
-description: L'API Internet Protocol Helper (HELPER IP) viene utilizzata da un'applicazione per raccogliere e fornire informazioni importanti sulla configurazione di rete del computer locale.
+title: Uso di Teredo con l'helper IP
+description: L'API dell'helper IP (Internet Protocol Helper) viene utilizzata da un'applicazione per raccogliere e fornire informazioni importanti sulla configurazione di rete del computer locale.
 ms.assetid: 67dbe639-aff5-4628-9471-63f50504962d
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,11 +11,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119990801"
 ---
-# <a name="using-teredo-with-ip-helper"></a>Uso Teredo con l'helper IP
+# <a name="using-teredo-with-ip-helper"></a>Uso di Teredo con l'helper IP
 
-L'API Internet [Protocol Helper](/windows/desktop/IpHlp/about-ip-helper) (HELPER IP) viene utilizzata da un'applicazione per raccogliere e fornire informazioni importanti sulla configurazione di rete del computer locale. Quando si opera sulla piattaforma Windows Vista, queste informazioni includono la porta UDP dinamica assegnata all'interfaccia Teredo e le modifiche che possono verificarsi alla porta designata.
+[L'API dell'helper IP (Internet Protocol Helper)](/windows/desktop/IpHlp/about-ip-helper) viene utilizzata da un'applicazione per raccogliere e fornire informazioni importanti relative alla configurazione di rete del computer locale. Quando si opera sulla piattaforma Windows Vista, queste informazioni includono la porta UDP dinamica assegnata all'interfaccia Teredo e le modifiche che possono verificarsi alla porta designata.
 
-Le funzioni seguenti vengono usate dall'API helper IP per facilitare l'uso dell'Teredo interfaccia:
+Le funzioni seguenti vengono usate dall'API helper IP per facilitare l'uso dell'Teredo virtuale:
 
 -   [**GetTeredoPort**](/windows/desktop/api/netioapi/nf-netioapi-getteredoport)
 -   [**NotifyTeredoPortChange**](/windows/desktop/api/netioapi/nf-netioapi-notifyteredoportchange)

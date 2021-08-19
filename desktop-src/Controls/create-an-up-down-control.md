@@ -1,40 +1,40 @@
 ---
-title: Come creare controlli Up-Down
-description: È possibile creare controlli di scorrimento chiamando la funzione CreateWindowEx e passando la classe UpDown del valore \_ per il parametro della classe Windows lpClassName.
+title: Come creare controlli Up-Down personalizzati
+description: È possibile creare controlli verso l'alto chiamando la funzione CreateWindowEx e passando il valore UPDOWN CLASS per il parametro Windows \_ classe lpClassName.
 ms.assetid: 9B7A5F8B-4EE5-413B-A60C-800758DD1120
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 427361d7748270ad9c689867aa8100e95afbd6b0
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 0089941cd147f0c94dc86f2283fe2c8fa10ba5e141d4a8ef99d689a991668ce7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104118566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062961"
 ---
-# <a name="how-to-create-up-down-controls"></a>Come creare controlli Up-Down
+# <a name="how-to-create-up-down-controls"></a>Come creare controlli Up-Down personalizzati
 
-È possibile creare controlli di scorrimento chiamando la funzione [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) e passando la [**\_ classe UpDown**](common-control-window-classes.md) del valore per il parametro della classe Windows *lpClassName*.
+Per creare controlli verso l'alto verso il basso, chiamare la funzione [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) e passare il valore [**UPDOWN \_ CLASS**](common-control-window-classes.md) per il parametro della Windows *lpClassName*.
 
-**Nota**    La funzione [**CreateUpDownControl**](/windows/desktop/api/Commctrl/nf-commctrl-createupdowncontrol) è deprecata. Usare `CreateWindowEx` invece la funzione.
+**Nota**   La [**funzione CreateUpDownControl**](/windows/desktop/api/Commctrl/nf-commctrl-createupdowncontrol) è deprecata. In alternativa, è `CreateWindowEx` consigliabile usare la funzione .
 
-Nell'esempio di codice descritto in questo argomento viene usato un controllo di scorrimento per guidare un indicatore di stato.
+L'esempio di codice in primo piano in questo argomento usa un controllo di scorrimento per guidare un indicatore di stato.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="step-1-add-references-to-the-common-controls"></a>Passaggio 1: aggiungere riferimenti ai controlli comuni
+### <a name="step-1-add-references-to-the-common-controls"></a>Passaggio 1: Aggiungere riferimenti ai controlli comuni
 
-Oltre ad aggiungere una direttiva per il preprocessore per includere il file di intestazione dei controlli comuni, è inoltre necessario configurare il linker in modo che faccia riferimento alla versione più recente della libreria di controlli comuni.
+Oltre ad aggiungere una direttiva per il preprocessore per includere il file di intestazione dei controlli comuni, è necessario configurare anche il linker in modo che punti alla versione più recente della libreria di controlli comuni.
 
 
 ```C++
@@ -52,9 +52,9 @@ Oltre ad aggiungere una direttiva per il preprocessore per includere il file di 
 
 
 
-### <a name="step-2-forward-declarations"></a>Passaggio 2: dichiarazioni in avanti
+### <a name="step-2-forward-declarations"></a>Passaggio 2: Dichiarazioni con inoltro
 
-Dichiarare gli handle per il controllo di scorrimento e per i controlli di pari livello e per fare in modo che facciano riferimento alle funzioni che inizializzano e creano i controlli.
+Dichiarare gli handle per il controllo verso l'alto e i relativi controlli di pari livello e fare riferimento in avanti alle funzioni che inizializzano e creano i controlli.
 
 
 ```C++
@@ -82,7 +82,7 @@ HWND CreateProgBar(HWND);
 
 
 
-Dichiarare un riferimento in diretta al processore della finestra per la finestra di dialogo padre del controllo di scorrimento.
+Dichiarare un riferimento in avanti al processore di finestre per la finestra di dialogo padre del controllo verso l'alto.
 
 
 ```C++
@@ -91,9 +91,9 @@ INT_PTR CALLBACK UpDownDialogProc(HWND, UINT, WPARAM, LPARAM);
 
 
 
-### <a name="step-3-initialize-the-initcommoncontrolsex-structures-dwsize-member"></a>Passaggio 3: inizializzare il membro **dwSize** della struttura INITCOMMONCONTROLSEX
+### <a name="step-3-initialize-the-initcommoncontrolsex-structures-dwsize-member"></a>Passaggio 3: Inizializzare il membro **dwSize** della struttura INITCOMMONCONTROLSEX
 
-La struttura [**InitCommonControlsEx**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) contiene le informazioni utilizzate per caricare classi di controlli comuni dalla dll. Questa struttura viene utilizzata con la funzione **InitCommonControlsEx** , che richiede la dimensione della struttura per poter eseguire il proprio lavoro.
+La [**struttura INITCOMMONCONTROLSEX**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) contiene le informazioni usate per caricare classi di controlli comuni dalla DLL. Questa struttura viene usata con **la funzione InitCommonControlsEx,** che richiede le dimensioni della struttura per poter eseguire il proprio lavoro.
 
 
 ```C++
@@ -103,13 +103,13 @@ icex.dwSize = sizeof(INITCOMMONCONTROLSEX);
 
 
 > [!Note]  
-> È sufficiente inizializzare il membro **dwSize** una sola volta, ma è necessario chiamare la funzione **InitCommonControlsEx** ogni volta che si crea un controllo comune.
+> È necessario inizializzare il **membro dwSize** una sola volta, ma è necessario chiamare la **funzione InitCommonControlsEx** ogni volta che si crea un controllo comune.
 
- 
+ 
 
-### <a name="step-4-create-a-parent-dialog-box-to-host-the-up-down-control"></a>Passaggio 4: creare una finestra di dialogo padre per ospitare il controllo Up-Down
+### <a name="step-4-create-a-parent-dialog-box-to-host-the-up-down-control"></a>Passaggio 4: Creare una finestra di dialogo padre per ospitare il Up-Down controllo
 
-È possibile implementare questa operazione come gestore di messaggi nel processore della finestra principale (*WndProc*).
+È possibile implementare questo come gestore di messaggi nel processore della finestra principale (*WndProc*).
 
 
 ```C++
@@ -136,9 +136,9 @@ case WM_COMMAND:
 
 
 
-### <a name="step-5-implement-a-window-processor-for-the-up-down-controls-parent-window"></a>Passaggio 5: implementare un processore di finestra per la finestra padre del controllo Up-Down
+### <a name="step-5-implement-a-window-processor-for-the-up-down-controls-parent-window"></a>Passaggio 5: Implementare un processore di finestre per la Up-Down padre del controllo
 
-Quando viene creata la finestra di dialogo padre, viene inizializzata con le relative finestre figlio, ovvero i controlli che i genitori. Quando l'utente fa clic su una delle frecce del controllo di scorrimento, il sistema operativo informa la finestra di dialogo dell'evento inviando un messaggio **di \_ notifica WM** che contiene il codice di **notifica \_ UDN DELTAPOS**, che a sua volta contiene informazioni sul nuovo valore della finestra buddy. Il gestore di messaggi **WM \_ Notify** aggiorna la barra di stato con le nuove informazioni.
+Quando viene creata, la finestra di dialogo padre viene inizializzata con le relative finestre figlio, ovvero i controlli padre. Quando l'utente fa clic su una delle frecce del controllo verso l'alto, il sistema operativo invia una notifica alla finestra di dialogo dell'evento inviando un messaggio **WM \_ NOTIFY** contenente il codice di notifica **UDN \_ DELTAPOS,** che a sua volta contiene informazioni sul nuovo valore della finestra di dialogo. Il **gestore di messaggi WM \_ NOTIFY** aggiorna l'indicatore di stato con queste nuove informazioni.
 
 
 ```C++
@@ -195,9 +195,9 @@ INT_PTR CALLBACK UpDownDialogProc(HWND hDlg, UINT message, WPARAM wParam, LPARAM
 
 
 
-### <a name="step-6-create-the-buddy-window"></a>Passaggio 6: creare la finestra di Buddy
+### <a name="step-6-create-the-buddy-window"></a>Passaggio 6: Creare la finestra di controllo
 
-La finestra buddy del controllo di scorrimento è un controllo di modifica e i controlli di modifica appartengono alla classe dei controlli comuni standard. Per usare un controllo di modifica, chiamare la funzione **InitCommonControlsEx** con il flag di inizializzazione delle **\_ \_ classi standard ICC** .
+La finestra del controllo verso l'alto è un controllo di modifica e i controlli di modifica appartengono alla classe dei controlli comuni standard. Per usare un controllo di modifica, chiamare la **funzione InitCommonControlsEx** con il flag **di inizializzazione ICC \_ STANDARD \_ CLASSES.**
 
 
 ```C++
@@ -226,9 +226,9 @@ HWND CreateUpDnBuddy(HWND hwndParent)
 
 
 
-### <a name="step-7-create-the-up-down-control"></a>Passaggio 7: creare il controllo Up-Down
+### <a name="step-7-create-the-up-down-control"></a>Passaggio 7: Creare il Up-Down controllo
 
-I controlli di scorrimento appartengono alla classe di scorrimento. Per utilizzare un controllo di scorrimento, chiamare la funzione **InitCommonControlsEx** con il flag di inizializzazione della **\_ \_ classe a discesa ICC** . Per ottenere il controllo verso l'alto quando l'utente fa clic sulla freccia verso l'alto del controllo, è necessario impostare l'intervallo e la direzione del controllo di scorrimento. A tale scopo, inviare il controllo a un messaggio **\_ SetRange UDM** contenente i valori per i limiti superiore e inferiore.
+I controlli di tipo up-down appartengono alla classe up-down. Per usare un controllo di up-down, chiamare la **funzione InitCommonControlsEx** con il flag **di inizializzazione ICC \_ UPDOWN \_ CLASS.** Per fare in modo che il controllo conti verso l'alto quando l'utente fa clic sulla freccia verso l'alto del controllo, è necessario impostare l'intervallo e la direzione del controllo verso il basso. A tale scopo, inviare al controllo un **messaggio \_ SETRANGE UDM** contenente i valori per i limiti superiore e inferiore.
 
 
 ```C++
@@ -258,9 +258,9 @@ HWND CreateUpDnCtl(HWND hwndParent)
 
 
 
-## <a name="up-down-control-sample-code"></a>Codice di esempio controllo Up-Down
+## <a name="up-down-control-sample-code"></a>Up-Down codice di esempio del controllo
 
-Si tratta dell'implementazione completa dell'esempio di codice a discesa. È possibile sperimentarlo creando un progetto Win32 vuoto, copiando e incollando il codice in un file C++ vuoto e quindi aggiungendo il file di intestazione, il file RC, il file Resource. h e un file di icona ( \* . ico).
+Questa è l'implementazione completa dell'esempio di codice UpDown. È possibile provarlo creando un progetto Win32 vuoto, copiando e incollando il codice in un file C++ vuoto e quindi aggiungendo il proprio file di intestazione, il file RC, il file resource.h e un file di icona (con estensione \* ico).
 
 
 ```C++
@@ -587,12 +587,12 @@ HWND CreateProgBar(HWND hwndParent)
 
 <dl> <dt>
 
-[Uso di controlli Up-Down](using-up-down-controls.md)
+[Uso di Up-Down personalizzati](using-up-down-controls.md)
 </dt> <dt>
 
-[Demo sui controlli comuni di Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demo di controlli comuni (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

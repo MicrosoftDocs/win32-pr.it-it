@@ -1,5 +1,5 @@
 ---
-description: Contiene un oggetto per ogni ruolo assegnato al metodo al quale è correlata la raccolta. I ruoli devono essere già assegnati a livello di applicazione.
+description: Contiene un oggetto per ogni ruolo assegnato al metodo a cui è correlata la raccolta. I ruoli devono essere già assegnati a livello di applicazione.
 ms.assetid: 3a086163-e367-4dd1-996b-821b3e1111b2
 title: Raccolta RolesForMethod
 ms.topic: reference
@@ -12,38 +12,38 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: c73ba5f7a14a5efc6711a65f211cd036e1c2a14d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 01579f460ceb9a3099adefef48e9fc203e042956713478273ce654fce3a34022
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047279"
 ---
 # <a name="rolesformethod-collection"></a>Raccolta RolesForMethod
 
-Contiene un oggetto per ogni ruolo assegnato al metodo al quale è correlata la raccolta. I ruoli devono essere già assegnati a livello di applicazione.
+Contiene un oggetto per ogni ruolo assegnato al metodo a cui è correlata la raccolta. I ruoli devono essere già assegnati a livello di applicazione.
 
-Questa raccolta supporta i metodi [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Questa raccolta supporta i [**metodi Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**e Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Membri
 
-La raccolta **RolesForMethod** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
+La **raccolta RolesForMethod** eredita dall'interfaccia [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
 
 ## <a name="related-collections"></a>Raccolte correlate
 
 È possibile passare da questa raccolta a una delle raccolte seguenti:
 
--   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Errorinfo**](errorinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
 È possibile passare a questa raccolta dalle raccolte seguenti:
 
--   [**MethodsForInterface**](methodsforinterface.md)
+-   [**MetodiForInterface**](methodsforinterface.md)
 
 ## <a name="properties"></a>Proprietà
 
-Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](comadmincatalogobject.md) all'interno della raccolta:
+Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all'interno**](comadmincatalogobject.md) della raccolta:
 
 -   [Nome](#name)
 
@@ -53,7 +53,7 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 
 | Voce | Valore |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Nome del ruolo. Deve essere già un ruolo assegnato all'applicazione (visualizzato nella raccolta Roles). Gli spazi aggiuntivi all'inizio e alla fine della stringa vengono rimossi. Questa proprietà viene restituita quando il metodo della proprietà [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
+| Descrizione    | Nome del ruolo. Deve essere già un ruolo assegnato all'applicazione (visualizzato nella raccolta Ruoli). Gli spazi aggiuntivi all'inizio e alla fine della stringa vengono privati. Questa proprietà viene restituita quando il metodo della proprietà [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
 | Access         | WriteOnce                                                                                                                                                                                                                                                                                                                                           |
 | Type           | string                                                                                                                                                                                                                                                                                                                                              |
 | Predefinito        | "Nuovo ruolo"                                                                                                                                                                                                                                                                                                                                          |

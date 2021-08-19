@@ -1,9 +1,9 @@
 ---
-title: BUTTON. Cursor
-description: L'attributo Cursor specifica o Recupera il cursore visualizzato quando il puntatore del mouse viene posizionato sul pulsante.
+title: BUTTON.cursor
+description: L'attributo cursor specifica o recupera il cursore che viene visualizzato quando il puntatore del mouse viene posizionato su BUTTON.
 ms.assetid: 19bdbb23-00e2-45cf-b67d-9ada036b9c3b
 keywords:
-- BUTTON. Cursor Media Player Windows
+- Controllo BUTTON.cursor Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2641491a5a73498da2c43fd74d4187b5594e177
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aa98c91080bc6d108e8ab62f0de99758c4eb6ba4229a83f8ded8b22bb2ec9695
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123791"
 ---
-# <a name="buttoncursor"></a>BUTTON. Cursor
+# <a name="buttoncursor"></a>BUTTON.cursor
 
-L'attributo **Cursor** specifica o Recupera il cursore visualizzato quando il puntatore del mouse viene posizionato sul **pulsante**.
+**L'attributo cursor** specifica o recupera il cursore che viene visualizzato quando il puntatore del mouse viene posizionato su **BUTTON.**
 
 ``` syntax
         elementID.cursor
@@ -29,22 +29,22 @@ L'attributo **Cursor** specifica o Recupera il cursore visualizzato quando il pu
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura.
+Questo attributo è una stringa di **lettura/scrittura.**
 
 
 
 | Valore            | Descrizione                                                                                |
 |------------------|--------------------------------------------------------------------------------------------|
 | sistema           | Valore predefinito. Cursore dipendente dalla piattaforma (in genere una freccia).                                     |
-| a sinistra             | A sinistra.                                                                                      |
-| help             | La freccia con il punto interrogativo che indica la guida è disponibile.                                     |
-| sizeall          | Freccia a quattro punte che punta a nord, Sud, est e ovest.                                  |
-| sizenesw         | Freccia a due punte che indica nordest e sud-ovest.                                     |
-| sizens           | Freccia a due punte che punta verso nord e sud.                                             |
-| sizenwse         | Freccia a due punte che indica nord-ovest e sud-est.                                     |
-| sizewe           | Freccia a due punte che indica ovest e est.                                               |
-| UpArrow          | Freccia verticale che punta verso l'alto.                                                            |
-| \*. ani o \* . cur | Qualsiasi file. ani o. cur (deve trovarsi nella stessa directory del file con estensione WMS o nel file con estensione WMZ) |
+| Mano             | Mano.                                                                                      |
+| help             | Freccia con punto interrogativo che indica che la Guida è disponibile.                                     |
+| sizeall          | Freccia a quattro punte che punta a nord, sud, est e ovest.                                  |
+| sizenesw         | Freccia a due punte che punta a nord-est e a sud-ovest.                                     |
+| dimensioni           | Freccia a due punte che punta verso nord e sud.                                             |
+| sizenwse         | Freccia a due punte che punta a nord-ovest e a sud-est.                                     |
+| sizewe           | Freccia a due punte che punta a ovest e a est.                                               |
+| uparrow          | Freccia verticale che punta verso l'alto.                                                            |
+| \*.ani o \* .cur | Qualsiasi file con estensione ani o cur (deve essere nella stessa directory del file wms o nel file con estensione wmz) |
 
 
 
@@ -54,7 +54,7 @@ Questo attributo è una **stringa** di lettura/scrittura.
 
 Se il sistema non riconosce il valore del cursore specificato, il valore del cursore rimane in corrispondenza del valore impostato in precedenza.
 
-I percorsi dei nomi di file di cursore vengono ignorati, pertanto il file di cursore deve trovarsi nella directory predefinita.
+I percorsi dei nomi file del cursore vengono ignorati, quindi il file del cursore deve risiedere nella directory predefinita.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,7 +62,7 @@ I percorsi dei nomi di file di cursore vengono ignorati, pertanto il file di cur
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

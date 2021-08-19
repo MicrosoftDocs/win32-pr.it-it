@@ -1,10 +1,10 @@
 ---
-title: Attributo Winsock-Addresses
+title: Winsock-Addresses attributo
 description: Un indirizzo del servizio Winsock.
 ms.assetid: b4da440d-e71c-44f5-aede-2c23d8463310
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Winsock-Addresses attribute
+- Winsock-Addresses schema AD dell'attributo
 - Schema AD dell'attributo winsockAddresses
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1cba4a4595d24df42dc2a25f226ec63977fe1a8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 586db1e7ac94d5cbcee2acadb7b8dcc81658347f0204705635458fa139652cca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103874769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065501"
 ---
-# <a name="winsock-addresses-attribute"></a>Attributo Winsock-Addresses
+# <a name="winsock-addresses-attribute"></a>Winsock-Addresses attributo
 
 Un indirizzo del servizio Winsock.
 
@@ -30,12 +30,12 @@ Un indirizzo del servizio Winsock.
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | Winsock-Addresses                                     |
-| LDAP-Display-Name | winsockAddresses                                      |
+| Ldap-Display-Name | winsockAddresses                                      |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.142                                |
-| System-ID-GUID    | bf967a79-0de6-11d0-a285-00aa003049e2                  |
+| System-Id-Guid    | bf967a79-0de6-11d0-a285-00aa003049e2                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Un indirizzo del servizio Winsock.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Falso                                                    |
+| Is-Single-Valued       | Falso                                                    |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Vero                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Istanza del servizio**](c-serviceinstance.md)<br/> |
+| Classi usate in        | [**Istanza del servizio**](c-serviceinstance.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Un indirizzo del servizio Winsock.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Falso                                                    |
+| Is-Single-Valued       | Falso                                                    |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Vero                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Istanza del servizio**](c-serviceinstance.md)<br/> |
+| Classi usate in        | [**Istanza del servizio**](c-serviceinstance.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Un indirizzo del servizio Winsock.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Falso                                                    |
+| Is-Single-Valued       | Falso                                                    |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Vero                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Istanza del servizio**](c-serviceinstance.md)<br/> |
+| Classi usate in        | [**Istanza del servizio**](c-serviceinstance.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Un indirizzo del servizio Winsock.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Falso                                                    |
+| Is-Single-Valued       | Falso                                                    |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Vero                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Istanza del servizio**](c-serviceinstance.md)<br/> |
+| Classi usate in        | [**Istanza del servizio**](c-serviceinstance.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Un indirizzo del servizio Winsock.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Falso                                                    |
+| Is-Single-Valued       | Falso                                                    |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Vero                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Istanza del servizio**](c-serviceinstance.md)<br/> |
+| Classi usate in        | [**Istanza del servizio**](c-serviceinstance.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Un indirizzo del servizio Winsock.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Falso                                                    |
+| Is-Single-Valued       | Falso                                                    |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Vero                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Istanza del servizio**](c-serviceinstance.md)<br/> |
+| Classi usate in        | [**Istanza del servizio**](c-serviceinstance.md)<br/> |
 
 
 

@@ -48,7 +48,7 @@ FLOAT* D3DXSHRotateZ(
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntatore ai coefficienti di output armonici sferici (SH). La valutazione genera coefficienti Order². Questo puntatore non deve essere associato a pIn. Vedere la sezione Osservazioni.
+Puntatore ai coefficienti di output armoniosi sferici (SH). La valutazione genera coefficienti Order². Questo puntatore non deve essere associato a pIn. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 

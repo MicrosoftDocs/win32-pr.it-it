@@ -1,7 +1,7 @@
 ---
-description: Controlla le metriche in base alla classe.
+description: Controlla le metriche per classe.
 ms.assetid: f848fdec-561b-4be0-b1e9-a59e15196d1d
-title: Metodo ControlMetricsByClass della classe Msvm_MetricService
+title: Metodo ControlMetricsByClass della Msvm_MetricService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4149da6327edf774afda20e64f34ae0958f7c3df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d522a2c66cf8b7127520fc3ec66b809c4e825cb759de116b3a3e820eb0ae676c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046531"
 ---
-# <a name="controlmetricsbyclass-method-of-the-msvm_metricservice-class"></a>Metodo ControlMetricsByClass della classe MSVM \_ MetricService
+# <a name="controlmetricsbyclass-method-of-the-msvm_metricservice-class"></a>Metodo ControlMetricsByClass della classe Msvm \_ MetricService
 
-Controlla le metriche in base alla classe.
+Controlla le metriche per classe.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ uint32 ControlMetricsByClass(
 
 <dl> <dt>
 
-*Oggetto* \[ in\]
+*Oggetto* \[ Pollici\]
 </dt> <dd>
 
 Identifica la classe CIM per cui verranno controllate le metriche.
 
 </dd> <dt>
 
-*Definizione* \[ di in\]
+*Definizione* \[ Pollici\]
 </dt> <dd>
 
-Identifica un [**\_ BaseMetricDefinition CIM**](cim-basemetricdefinition.md) per cui verranno controllate le metriche.
+Identifica un [**oggetto \_ BaseMetricDefinition CIM**](cim-basemetricdefinition.md) per il quale verranno controllate le metriche.
 
 </dd> <dt>
 
-*MetricCollectionEnabled* \[ in\]
+*MetricCollectionEnabled* \[ Pollici\]
 </dt> <dd>
 
 Indica l'operazione desiderata da eseguire sulle metriche.
@@ -78,21 +78,21 @@ Indica l'operazione desiderata da eseguire sulle metriche.
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Reimposta** (4)
+**Reimpostazione** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32768.. 65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> </dl>
@@ -103,19 +103,19 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Operazione riuscita** (0)
+**Operazione** riuscita (0)
 </dt> <dt>
 
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Metodo riservato** (..)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -125,9 +125,9 @@ Questo metodo restituisce uno dei valori seguenti:
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -136,7 +136,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**\_MetricService MSVM**](msvm-metricservice.md)
+[**Msvm \_ MetricService**](msvm-metricservice.md)
 </dt> </dl>
 
  

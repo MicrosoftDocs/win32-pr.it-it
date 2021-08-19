@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetMediaTypeVersion recupera un numero di versione per il set di tipi di supporto preferiti.
+description: Il metodo GetMediaTypeVersion recupera un numero di versione per il set di tipi di supporti preferiti.
 ms.assetid: bd7b8070-eac5-458c-ada0-7fb0d789dd54
-title: Metodo CBasePin. GetMediaTypeVersion (Amfilter. h)
+title: Metodo CBasePin.GetMediaTypeVersion (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fe01d33d7a7c1cb65bc0e2391af63e3519d9cce3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1f1b50b16a099c8698bbf5bef270173334f1c3ac2c3d2d67ff87778cffddf2ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955190"
 ---
-# <a name="cbasepingetmediatypeversion-method"></a>CBasePin. GetMediaTypeVersion, metodo
+# <a name="cbasepingetmediatypeversion-method"></a>Metodo CBasePin.GetMediaTypeVersion
 
-Il `GetMediaTypeVersion` metodo recupera un numero di versione per il set di tipi di supporto preferiti.
+Il `GetMediaTypeVersion` metodo recupera un numero di versione per il set di tipi di supporti preferiti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +42,13 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce la variabile membro [**CBasePin:: m \_ TypeVersion**](cbasepin-m-typeversion.md) .
+Restituisce la [**variabile membro CBasePin::m \_ TypeVersion.**](cbasepin-m-typeversion.md)
 
 ## <a name="remarks"></a>Commenti
 
-Il costruttore **CBasePin** Inizializza il numero di versione su 1. Nella classe base questo numero non viene mai modificato. Se il pin modifica dinamicamente l'elenco dei tipi di supporto preferiti, deve incrementare il numero di versione ogni volta che l'elenco viene modificato. Per incrementare il numero di versione, chiamare il metodo [**CBasePin:: IncrementTypeVersion**](cbasepin-incrementtypeversion.md) .
+Il **costruttore CBasePin** inizializza il numero di versione su 1. Nella classe di base questo numero non cambia mai. Se il segnaposto modifica dinamicamente l'elenco dei tipi di supporti preferiti, deve incrementare il numero di versione ogni volta che l'elenco cambia. Per incrementare il numero di versione, chiamare il [**metodo CBasePin::IncrementTypeVersion.**](cbasepin-incrementtypeversion.md)
 
-L'enumeratore Media Type, implementato dalla classe [**CEnumMediaTypes**](cenummediatypes.md) , usa il numero di versione per mantenersi sincronizzato con il PIN.
+L'enumeratore del tipo di supporto, implementato dalla [**classe CEnumMediaTypes,**](cenummediatypes.md) usa il numero di versione per mantenersi sincronizzato con il pin.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,8 +56,8 @@ L'enumeratore Media Type, implementato dalla classe [**CEnumMediaTypes**](cenumm
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'FileIo_V0 classe: questa classe è la classe padre per gli eventi di I/O di file. La sintassi seguente è semplificata dal codice MOF.'
+description: 'FileIo_V0: questa classe è la classe padre per gli eventi di I/O di file. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: c88242ec-de74-4b5b-8fdd-ec99e0d4a59e
 title: FileIo_V0 classe
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: ffb2f616c5273f92571f4bf4a6bab1b3cdac733e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ba8e00b881e1897d4f27087c561ef8c1b29cbbde4463c1d07f07436e81a4bdbc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130561"
 ---
 # <a name="fileio_v0-class"></a>Classe FileIo \_ V0
 
-Questa classe è la classe padre per gli eventi di I/O di file.
+Questa classe è la classe padre per gli eventi di I/O dei file.
 
 La sintassi seguente è semplificata dal codice MOF.
 

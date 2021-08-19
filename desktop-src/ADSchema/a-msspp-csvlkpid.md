@@ -1,11 +1,11 @@
 ---
-title: attributo ms-SPP-CSVLK-PID
-description: ID del codice Product Key CSVLK utilizzato per creare l'oggetto attivazione
+title: Attributo ms-SPP-CSVLK-Pid
+description: ID del codice Product Key CSVLK usato per creare l'oggetto di attivazione
 ms.assetid: 67aa6952-0ce8-40a3-948e-ac7198e04c60
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-SPP-CSVLK-PID
-- msSPP-schema AD attributo CSVLKPid
+- Schema AD dell'attributo ms-SPP-CSVLK-Pid
+- Schema AD dell'attributo msSPP-CSVLKPid
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ebd5c65ccec2368d26a84c2cbecdf95f034f7d29
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6ab710762973d4fa344c96c941ab0d0689a67fe76448047b779c2677b8093bd0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022599"
 ---
-# <a name="ms-spp-csvlk-pid-attribute"></a>attributo ms-SPP-CSVLK-PID
+# <a name="ms-spp-csvlk-pid-attribute"></a>Attributo ms-SPP-CSVLK-Pid
 
-ID del codice Product Key CSVLK utilizzato per creare l'oggetto attivazione
+ID del codice Product Key CSVLK usato per creare l'oggetto di attivazione
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-SPP-CSVLK-PID                            |
-| LDAP-Display-Name | msSPP-CSVLKPid                              |
+| CN                | ms-SPP-CSVLK-Pid                            |
+| Ldap-Display-Name | msSPP-CSVLKPid                              |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2105                     |
-| System-ID-GUID    | b47f510d-6b50-47e1-b556-772c79e4ffc4        |
+| System-Id-Guid    | b47f510d-6b50-47e1-b556-772c79e4ffc4        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -53,15 +53,15 @@ ID del codice Product Key CSVLK utilizzato per creare l'oggetto attivazione
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MS-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
+| Classi usate in        | [**ms-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
 
 
 

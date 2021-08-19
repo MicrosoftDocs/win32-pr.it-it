@@ -24,7 +24,7 @@ La tabella ModuleExclusion include le colonne seguenti.
 | ModuleID           | [Identificatore](identifier.md) | S   | N        |
 | ModuleLanguage     | [Integer](integer.md)       | S   | N        |
 | ExcludedID         | [Identificatore](identifier.md) | S   | N        |
-| Lingua esclusa   | [Integer](integer.md)       | S   | N        |
+| ExcludedLanguage   | [Integer](integer.md)       | S   | N        |
 | ExcludedMinVersion | [Version](version.md)       |     | S        |
 | ExcludedMaxVersion | [Version](version.md)       |     | S        |
 
@@ -57,14 +57,14 @@ Identificatore di un modulo unione escluso.
 
 </dd> <dt>
 
-<span id="ExcludedLanguage"></span><span id="excludedlanguage"></span><span id="EXCLUDEDLANGUAGE"></span>ExcludedLanguage
+<span id="ExcludedLanguage"></span><span id="excludedlanguage"></span><span id="EXCLUDEDLANGUAGE"></span>Lingua esclusa
 </dt> <dd>
 
 ID lingua numerico del modulo unione in ExcludedID. La colonna ExcludedLanguage può specificare l'ID lingua per una singola lingua, ad esempio 1033 per l'inglese degli Stati Uniti, oppure specificare l'ID lingua per un gruppo di lingue, ad esempio 9 per qualsiasi inglese. La colonna ExcludedLanguage può accettare ID lingua negativi. Il significato del valore nella colonna ExcludedLanguage è il seguente.
 
 
 
-| Lingua esclusa | Significato                                                              |
+| ExcludedLanguage | Significato                                                              |
 |------------------|----------------------------------------------------------------------|
 | > 0           | Escludere gli ID di lingua specificati da ExcludedLanguage.              |
 | = 0              | Non escludere id lingua.                                             |

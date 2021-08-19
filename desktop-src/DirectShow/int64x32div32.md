@@ -1,7 +1,7 @@
 ---
-description: La funzione Int64x32Div32 implementa la formula ((a \* b) + Rnd)/c dove a è un valore a 64 bit e b, c e Rnd sono valori a 32 bit.
+description: La funzione Int64x32Div32 implementa la formula ((a \* b)+rnd)/c dove a è un valore a 64 bit e b, c e rnd sono valori a 32 bit.
 ms.assetid: 566ac194-5b15-43b7-aa7c-0c18c6f69691
-title: Funzione Int64x32Div32 (Wxutil. h)
+title: Funzione Int64x32Div32 (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: de60ca08b262dbf97aa118bd115bd6dc58576a1d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a56425d1f07346f8e546940ff5880416e4e63efc692974c78f0e344b9ec01c5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051591"
 ---
-# <a name="int64x32div32-function"></a>Int64x32Div32 (funzione)
+# <a name="int64x32div32-function"></a>Funzione Int64x32Div32
 
-La `Int64x32Div32` funzione implementa la formula `((a*b)+rnd)/c` in  cui è un valore a 64 bit e *b*, *c* e *Rnd* sono valori a 32 bit.
+La funzione implementa la formula in cui a è un valore `Int64x32Div32` `((a*b)+rnd)/c` a 64 bit e *b*,  *c* e *rnd* sono valori a 32 bit.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,10 +45,10 @@ LONGLONG WINAPI Int64x32Div32(
 
 <dl> <dt>
 
-*un* 
+*Un* 
 </dt> <dd>
 
-Multiplicand.
+Moltiplicazione.
 
 </dd> <dt>
 
@@ -90,9 +90,9 @@ Restituisce il `(a * b + rnd)/c` calcolo o uno dei valori seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-L'arrotondamento alla divisione è verso lo zero. La divisione per zero viene conteggiata come condizione di overflow.
+L'arrotondamento sulla divisione è verso zero. La divisione per zero viene conteggiata come condizione di overflow.
 
-I timestamp e i tempi di ricerca sono valori a 64 bit, pertanto questa funzione è utile per l'esecuzione di conversioni su sistemi a 32 bit. Ad esempio, in MPEG-1 il riferimento all'orologio di sistema è 90-kHz o 90.000 tick al secondo. La formula per convertire questo oggetto in ora di riferimento (unità 100-nanosecondo) è
+I timestamp e gli orari di ricerca sono valori a 64 bit, quindi questa funzione è utile per eseguire conversioni in sistemi a 32 bit. Ad esempio, in MPEG-1 il riferimento all'orologio di sistema è 90 kHz o 90.000 tick al secondo. La formula per convertirlo in ora di riferimento (unità di 100 nanosecondi) è
 
 
 ```C++
@@ -101,7 +101,7 @@ I timestamp e i tempi di ricerca sono valori a 64 bit, pertanto questa funzione 
 
 
 
-che può essere calcolato come `Int64x32Div32(timestamp, 1000, 9, 0)` . Usare il parametro *Rnd* come fattore di arrotondamento.
+che può essere calcolato come `Int64x32Div32(timestamp, 1000, 9, 0)` . Usare il *parametro rnd* come fattore di arrotondamento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -109,8 +109,8 @@ che può essere calcolato come `Int64x32Div32(timestamp, 1000, 9, 0)` . Usare il
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

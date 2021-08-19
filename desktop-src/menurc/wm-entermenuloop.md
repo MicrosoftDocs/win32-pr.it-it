@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_ENTERMENULOOP (winuser. h)
+title: WM_ENTERMENULOOP messaggio (Winuser.h)
 description: Notifica alla routine della finestra principale di un'applicazione che è stato immesso un ciclo modale di menu.
 ms.assetid: 0a018b6f-fe4b-4e90-bbb6-9b5719253dc1
 keywords:
-- Menu del messaggio WM_ENTERMENULOOP e altre risorse
+- WM_ENTERMENULOOP menu e altre risorse del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a7b325719c428dc7310503320b53f3a5f96182e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bb5851109e44100d558603fb268a4668c1f138fff97e5e87db50a28445e70adb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939611"
 ---
-# <a name="wm_entermenuloop-message"></a>\_Messaggio ENTERMENULOOP WM
+# <a name="wm_entermenuloop-message"></a>Messaggio WM \_ ENTERMENULOOP
 
 Notifica alla routine della finestra principale di un'applicazione che è stato immesso un ciclo modale di menu.
 
@@ -39,7 +39,7 @@ Notifica alla routine della finestra principale di un'applicazione che è stato 
 *wParam* 
 </dt> <dd>
 
-Specifica se il menu finestra è stato immesso utilizzando la funzione [**TrackPopupMenu**](/windows/desktop/api/Winuser/nf-winuser-trackpopupmenu) . Il valore di questo parametro è **true** se il menu finestra è stato immesso utilizzando **TrackPopupMenu** e **false** in caso contrario.
+Specifica se il menu della finestra è stato immesso usando la [**funzione TrackPopupMenu.**](/windows/desktop/api/Winuser/nf-winuser-trackpopupmenu) Questo parametro ha valore **TRUE se** il menu della finestra è stato immesso usando **TrackPopupMenu** e **FALSE** in caso contrario.
 
 </dd> <dt>
 
@@ -56,7 +56,7 @@ Un'applicazione deve restituire zero se elabora questo messaggio.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) restituisce zero.
+La [**funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) restituisce zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,7 +66,7 @@ La funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindo
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ La funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindo
 [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 </dt> <dt>
 
-[**\_EXITMENULOOP WM**](wm-exitmenuloop.md)
+[**WM \_ EXITMENULOOP**](wm-exitmenuloop.md)
 </dt> <dt>
 
 **Informazioni concettuali**

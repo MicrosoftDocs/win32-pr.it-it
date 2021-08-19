@@ -4,10 +4,10 @@
     - name: Informazioni sulla gestione della memoria
       href: about-memory-management.md
       items:
-        - name: Spazio degli indirizzi virtuali
+        - name: Spazio indirizzi virtuali
           href: virtual-address-space.md
           items:
-            - name: Spazio degli indirizzi virtuali e archiviazione fisica
+            - name: Spazio indirizzi virtuale e spazio Archiviazione
               href: virtual-address-space-and-physical-storage.md
             - name: Working Set
               href: working-set.md
@@ -28,7 +28,7 @@
         - name: Funzioni di memoria virtuale
           href: virtual-memory-functions.md
           items:
-            - name: Allocazione della memoria virtuale
+            - name: Allocazione di memoria virtuale
               href: allocating-virtual-memory.md
             - name: Liberare memoria virtuale
               href: freeing-virtual-memory.md
@@ -37,12 +37,12 @@
         - name: Funzioni heap
           href: heap-functions.md
           items:
-            - name: Heap con frammentazione bassa
+            - name: Heap a bassa frammentazione
               href: low-fragmentation-heap.md
-        - name: Mapping dei file
+        - name: File Mapping
           href: file-mapping.md
           items:
-            - name: Creazione di un oggetto di mapping dei file
+            - name: Creazione di un oggetto mapping file
               href: creating-a-file-mapping-object.md
             - name: Creazione di una visualizzazione file
               href: creating-a-file-view.md
@@ -50,52 +50,52 @@
               href: sharing-files-and-memory.md
             - name: Lettura e scrittura da una visualizzazione file
               href: reading-and-writing-from-a-file-view.md
-            - name: Chiusura di un oggetto di mapping dei file
+            - name: Chiusura di un oggetto mapping file
               href: closing-a-file-mapping-object.md
-            - name: Diritti di accesso e sicurezza per il mapping dei file
+            - name: Sicurezza e diritti di accesso per il mapping dei file
               href: file-mapping-security-and-access-rights.md
-        - name: Supporto per memoria di grandi dimensioni
+        - name: Supporto di memoria di grandi dimensioni
           href: large-memory-support.md
           items:
-            - name: 'Ottimizzazione da 4 gigabyte: BCDEdit e Boot.ini'
+            - name: 'Ottimizzazione da 4 Gigabyte: BCDEdit e Boot.ini'
               href: 4-gigabyte-tuning.md
             - name: Estensione indirizzo fisico
               href: physical-address-extension.md
-            - name: Estensioni della finestra degli indirizzi
+            - name: Estensioni per la finestra degli indirizzi
               href: address-windowing-extensions.md
-            - name: Supporto Large-Page
+            - name: Large-Page supporto tecnico
               href: large-page-support.md
         - name: Funzioni globali e locali
           href: global-and-local-functions.md
         - name: Funzioni della libreria C standard
           href: standard-c-library-functions.md
-        - name: Confronto tra i metodi di allocazione della memoria
+        - name: Confronto dei metodi di allocazione di memoria
           href: comparing-memory-allocation-methods.md
     - name: Uso delle funzioni di gestione della memoria
       href: using-the-memory-management-functions.md
       items:
-        - name: Riserva e commit della memoria
+        - name: Prenotazione e commit della memoria
           href: reserving-and-committing-memory.md
-        - name: Creazione di pagine Guard
+        - name: Creazione di pagine di protezione
           href: creating-guard-pages.md
         - name: Enumerazione di un heap
           href: enumerating-a-heap.md
-        - name: Recupero degli heap del processo
+        - name: Recupero degli heap dei processi
           href: getting-process-heaps.md
         - name: Uso del mapping dei file
           href: using-file-mapping.md
           items:
-            - name: Creazione di una vista in un file
+            - name: Creazione di una vista all'interno di un file
               href: creating-a-view-within-a-file.md
-            - name: Creazione di una memoria condivisa denominata
+            - name: Creazione di memoria condivisa denominata
               href: creating-named-shared-memory.md
             - name: Creazione di un mapping di file con pagine di grandi dimensioni
               href: creating-a-file-mapping-using-large-pages.md
-            - name: Acquisizione di un nome file da un handle di file
+            - name: Recupero di un nome file da un handle di file
               href: obtaining-a-file-name-from-a-file-handle.md
         - name: Esempio AWE
           href: awe-example.md
-        - name: Allocazione della memoria da un nodo NUMA
+        - name: Allocazione di memoria da un nodo NUMA
           href: allocating-memory-from-a-numa-node.md
     - name: Informazioni di riferimento sulla gestione della memoria
       href: memory-management-reference.md
@@ -162,7 +162,7 @@
               href: /windows/desktop/api/memoryapi/nf-memoryapi-getsystemfilecachesize
             - name: GetWriteWatch
               href: /windows/desktop/api/memoryapi/nf-memoryapi-getwritewatch
-            - name: GlobalAlloc
+            - name: Globalalloc
               href: /windows/desktop/api/WinBase/nf-winbase-globalalloc
             - name: GlobalDiscard
               href: /windows/desktop/api/WinBase/nf-winbase-globaldiscard
@@ -304,7 +304,7 @@
               href: /windows/desktop/api/memoryapi/nf-memoryapi-unmapviewoffileex
             - name: UnregisterBadMemoryNotification
               href: /windows/desktop/api/memoryapi/nf-memoryapi-unregisterbadmemorynotification
-            - name: VirtualAlloc
+            - name: Virtualalloc
               href: /windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc
             - name: VirtualAlloc2
               href: /windows/desktop/api/MemoryApi/nf-memoryapi-virtualalloc2
@@ -316,7 +316,7 @@
               href: /windows/desktop/api/memoryapi/nf-memoryapi-virtualallocexnuma
             - name: VirtualAllocFromApp
               href: /windows/desktop/api/MemoryApi/nf-memoryapi-virtualallocfromapp
-            - name: VirtualFree
+            - name: Virtualfree
               href: /windows/desktop/api/memoryapi/nf-memoryapi-virtualfree
             - name: VirtualFreeEx
               href: /windows/desktop/api/memoryapi/nf-memoryapi-virtualfreeex
@@ -346,7 +346,7 @@
               href: /windows/desktop/api/atlthunk/nf-atlthunk-atlthunk_datatocode
             - name: AtlThunk_FreeData
               href: /windows/desktop/api/atlthunk/nf-atlthunk-atlthunk_freedata
-        - name: Chiavi del registro di sistema di gestione della memoria
+        - name: Chiavi del Registro di sistema di Gestione memoria
           href: memory-management-registry-keys.md
         - name: Strutture di gestione della memoria
           href: memory-management-structures.md
@@ -361,7 +361,7 @@
               href: /windows/desktop/api/winnt/ns-winnt-mem_extended_parameter
             - name: MEMORY_BASIC_INFORMATION
               href: /windows/win32/api/winnt/ns-winnt-memory_basic_information
-            - name: MEMORYSTATUS
+            - name: Memorystatus
               href: /windows/win32/api/WinBase/ns-winbase-memorystatus
             - name: MEMORYSTATUSEX
               href: /windows/win32/api/sysinfoapi/ns-sysinfoapi-memorystatusex
@@ -375,7 +375,7 @@
               href: /previous-versions/windows/desktop/legacy/mt805050(v=vs.85)
         - name: Costanti di protezione della memoria
           href: memory-protection-constants.md
-        - name: Eventi di traccia di gestione della memoria
+        - name: Eventi di traccia di Gestione memoria
           href: memory-management-tracing-events.md
           items:
             - name: ETW_HEAP_EVENT_ALLOC
@@ -387,7 +387,7 @@
 - name: Esecuzione attendibile
   href: trusted-execution.md
   items:
-    - name: Riferimento all'esecuzione attendibile
+    - name: Informazioni di riferimento per l'esecuzione attendibile
       href: trusted-execution-reference.md
       items:
         - name: Enumerazioni di esecuzione attendibili

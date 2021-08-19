@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetSampleTimes recupera i timestamp da un campione.
+description: Il metodo GetSampleTimes recupera i timestamp da un esempio.
 ms.assetid: a8fead22-a12c-489d-9c42-d5b61f480c25
-title: Metodo CBaseRenderer. GetSampleTimes (Renbase. h)
+title: Metodo CBaseRenderer.GetSampleTimes (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6c389c2ea55ddb15c59fe30e03f392d68aa3b5ac
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2d759cbcf2a9638b54e6194bcac7e7b24254c0d37987995d511fb4ffce85f1ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954960"
 ---
-# <a name="cbaserenderergetsampletimes-method"></a>CBaseRenderer. GetSampleTimes, metodo
+# <a name="cbaserenderergetsampletimes-method"></a>Metodo CBaseRenderer.GetSampleTimes
 
-Il `GetSampleTimes` metodo recupera i timestamp da un campione.
+Il `GetSampleTimes` metodo recupera i timestamp da un esempio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -67,16 +67,16 @@ Puntatore a una variabile che riceve l'ora di fine.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli mostrati nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili includono quelli illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                    | Descrizione                                                                        |
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                           | Il rendering dell'esempio deve essere eseguito immediatamente.<br/>                              |
-| <dl> <dt>**S \_ false**</dt> </dl>                        | L'esempio deve essere pianificato per il rendering, in base agli indicatori temporali.<br/> |
-| <dl> <dt>**E \_ non riescono**</dt> </dl>                         | Non eseguire il rendering di questo esempio.<br/>                                              |
-| <dl> <dt>**ora di inizio di VFW \_ E \_ dopo la \_ \_ \_ fine**</dt> </dl> | Timestamp non valido: l'ora di fine è precedente all'ora di inizio.<br/>            |
+| <dl> <dt>**S \_ OK**</dt> </dl>                           | Il rendering dell'esempio deve essere eseguito immediatamente.<br/>                              |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>                        | L'esempio deve essere pianificato per il rendering, in base ai timestamp.<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>                         | Non eseguire il rendering di questo esempio.<br/>                                              |
+| <dl> <dt>**VFW \_ E ORA DI INIZIO DOPO LA \_ \_ \_ \_ FINE**</dt> </dl> | Timestamp non erato: l'ora di fine è precedente all'ora di inizio.<br/>            |
 
 
 
@@ -84,9 +84,9 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli mostrati
 
 ## <a name="remarks"></a>Commenti
 
-Il filtro chiama questo metodo per determinare la modalità di gestione di un campione. Se il valore restituito è S \_ OK, il filtro esegue immediatamente il rendering dell'esempio. Se il valore restituito è S \_ false, il filtro pianifica l'esempio per il rendering in base ai timestamp. Se il valore restituito è un codice di errore, il filtro rifiuterà l'esempio.
+Il filtro chiama questo metodo per determinare come deve gestire un campione. Se il valore restituito è S \_ OK, il filtro esegue immediatamente il rendering dell'esempio. Se il valore restituito è S \_ FALSE, il filtro pianifica l'esempio per il rendering, in base ai timestamp. Se il valore restituito è un codice di errore, il filtro rifiuta l'esempio.
 
-Questo metodo restituisce \_ OK se l'esempio non dispone di timestamp o se il filtro non dispone di un clock di riferimento. In caso contrario, restituisce il valore del metodo [**CBaseRenderer:: ShouldDrawSampleNow**](cbaserenderer-shoulddrawsamplenow.md) . Nella classe di base, **ShouldDrawSampleNow** restituisce sempre \_ false. La classe derivata può eseguire l'override di questo comportamento. Se, ad esempio, la classe derivata implementa la gestione del controllo di qualità, potrebbe restituire E \_ non riuscire a eliminare un campione.
+Questo metodo restituisce S OK se l'esempio non ha timestamp o se il filtro \_ non ha un orologio di riferimento. In caso contrario, restituisce il valore del [**metodo CBaseRenderer::ShouldDrawSampleNow.**](cbaserenderer-shoulddrawsamplenow.md) Nella classe di base **ShouldDrawSampleNow** restituisce sempre S \_ FALSE. La classe derivata può eseguire l'override di questo comportamento. Ad esempio, se la classe derivata implementa la gestione del controllo di qualità, potrebbe restituire E \_ FAIL per eliminare un campione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -94,8 +94,8 @@ Questo metodo restituisce \_ OK se l'esempio non dispone di timestamp o se il fi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

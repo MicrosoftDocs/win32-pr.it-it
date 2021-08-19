@@ -1,7 +1,7 @@
 ---
-description: Recupera un identificatore del codice di errore (IDA) e crea la stringa di visualizzazione finale quando vengono forniti un errore Jet e informazioni estese sull'errore.
+description: Recupera un identificatore di codice di errore (IDA) e crea la stringa di visualizzazione finale quando vengono forniti un errore Jet e informazioni estese sull'errore.
 ms.assetid: 961da4fb-cb70-4f3d-a4a4-1774be7a05f4
-title: JetErrFormattedMessage (funzione)
+title: Funzione JetErrFormattedMessage
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Msjter40.dll
-ms.openlocfilehash: 75cdf93b4c35a8c7b3dd77fca42c205d898f6e97
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8b0fa6eb0ac4bc29e5657d3e58d9be1c27188a0faf7c7d68281ceca239dea8e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955780"
 ---
-# <a name="jeterrformattedmessage-function"></a>JetErrFormattedMessage (funzione)
+# <a name="jeterrformattedmessage-function"></a>Funzione JetErrFormattedMessage
 
-Recupera un identificatore del codice di errore (IDA) e crea la stringa di visualizzazione finale quando vengono forniti un errore Jet e informazioni estese sull'errore.
+Recupera un identificatore di codice di errore (IDA) e crea la stringa di visualizzazione finale quando vengono forniti un errore Jet e informazioni estese sull'errore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,21 +49,21 @@ JET_ERR JetErrFormattedMessage(
 *Err* 
 </dt> <dd>
 
-Numero di errore Jet utilizzato per cercare e formattare il messaggio di errore visualizzabile.
+Numero di errore jet utilizzato per cercare e formattare il messaggio di errore visualizzabile.
 
 </dd> <dt>
 
 *pExtendedErrorInfo* 
 </dt> <dd>
 
-Tutte le informazioni sull'errore Jet, inclusi il nome del database, il nome della tabella e qualsiasi informazione secondaria sugli errori.
+Tutte le informazioni sugli errori jet, inclusi il nome del database, il nome della tabella e le eventuali informazioni sugli errori secondari.
 
 </dd> <dt>
 
-*pIda* 
+*Pida* 
 </dt> <dd>
 
-Puntatore a IDA associato al codice di errore specifico.
+Puntatore all'IDA associato al codice di errore specifico.
 
 </dd> <dt>
 
@@ -91,7 +91,7 @@ Puntatore al numero effettivo di byte letti.
 *pContextId* 
 </dt> <dd>
 
-Puntatore all'identificatore di contesto associato al file della guida.
+Puntatore all'identificatore di contesto associato al file della Guida.
 
 </dd> <dt>
 
@@ -104,11 +104,11 @@ Puntatore a un puntatore al file che spiega l'errore.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, restituisce **Jet \_ errSuccess**. in caso contrario, restituisce un messaggio di errore formattato che indica la causa specifica dell'errore.
+Se la funzione ha esito positivo, restituisce **JET \_ errSuccess;** in caso contrario, restituisce un messaggio di errore formattato che indica il motivo specifico dell'errore.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

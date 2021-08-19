@@ -1,5 +1,5 @@
 ---
-description: 'Metodo IRenderEngine::D oSmartRecompression : non supportato.'
+description: 'Metodo IRenderEngine::D oSmartRecompression: non supportato.'
 ms.assetid: 4629b626-c511-4a1e-a647-06554869891a
 title: Metodo IRenderEngine::D oSmartRecompression
 ms.topic: reference
@@ -12,17 +12,17 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: a3e13a51564b39ba2e954da38a5453e63c4036d2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e5b1d5ea00367ee29ec8f3165cd9115a00776fc7ccd2156bf83ab199fd6e3c25
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051431"
 ---
 # <a name="irenderenginedosmartrecompression-method"></a>Metodo IRenderEngine::D oSmartRecompression
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
@@ -53,7 +53,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare Microsoft Windows SDK [Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

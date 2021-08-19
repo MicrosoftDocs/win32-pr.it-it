@@ -1,11 +1,11 @@
 ---
-title: StringCollection. getItemInfoByType, metodo
-description: Il metodo getItemInfoByType Recupera il valore corrispondente all'indice Stringacollection, al nome, alla lingua e all'indice dell'attributo specificati.
+title: Metodo StringCollection.getItemInfoByType
+description: Il metodo getItemInfoByType recupera il valore corrispondente all'indice, al nome, alla lingua e all'attributo StringCollection specificati.
 ms.assetid: 32a25c69-9399-4857-84c1-143c529be58f
 keywords:
 - Metodo getItemInfoByType Windows Media Player
-- Metodo getItemInfoByType Windows Media Player, classe StringCollection
-- StringCollection (classe) Windows Media Player, metodo getItemInfoByType
+- Metodo getItemInfoByType Windows Media Player , classe StringCollection
+- Classe StringCollection Windows Media Player metodo , getItemInfoByType
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d4b3aa8c5bc367095765f24f19f107dd7cb986ec
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7b9d270ab746618f81f7c2e4135f7a6057f207d2cc89961ebe7c8f47d9fd1abd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326448"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123031"
 ---
-# <a name="stringcollectiongetiteminfobytype-method"></a>StringCollection. getItemInfoByType, metodo
+# <a name="stringcollectiongetiteminfobytype-method"></a>Metodo StringCollection.getItemInfoByType
 
-Il metodo **getItemInfoByType** Recupera il valore corrispondente all'indice **stringacollection** , al nome, alla lingua e all'indice dell'attributo specificati.
+Il **metodo getItemInfoByType** recupera il valore corrispondente all'indice, al nome, alla lingua e all'attributo **StringCollection** specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,59 +45,59 @@ retVal = StringCollection.getItemInfoByType(
 
 <dl> <dt>
 
-*Indice* \[ di in\]
+*index* \[ Pollici\]
 </dt> <dd>
 
-**Numero** (**Long**) che specifica l'indice in base zero dell'elemento **StringCollection** da cui ottenere l'attributo.
+**Numero** (**long**) che specifica l'indice in base zero dell'elemento **StringCollection** da cui ottenere l'attributo.
 
 </dd> <dt>
 
-*nome* \[ in\]
+*name* \[ Pollici\]
 </dt> <dd>
 
 **Stringa** contenente il nome dell'attributo.
 
 </dd> <dt>
 
-*lingua* \[ di in\]
+*language* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** contenente il linguaggio. Se il valore è impostato su null o la stringa vuota ("") viene utilizzata la stringa delle impostazioni locali corrente. In caso contrario, il valore deve essere una stringa di linguaggio RFC 1766 valida, ad esempio "en-US".
+**Stringa** contenente la lingua. Se il valore è impostato su Null o la stringa vuota ("") viene usata la stringa delle impostazioni locali corrente. In caso contrario, il valore deve essere una stringa di lingua RFC 1766 valida, ad esempio "en-us".
 
 </dd> <dt>
 
-*attributeIndex* \[ in\]
+*attributeIndex* \[ Pollici\]
 </dt> <dd>
 
-**Numero** (**Long**) che contiene l'indice in base zero del valore da recuperare dall'attributo.
+**Numero** (**long**) contenente l'indice in base zero del valore da recuperare dall'attributo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un oggetto **Number**, **String**, **MetadataPicture** o **MetadataText** come indicato nella tabella seguente.
+Questo metodo restituisce un **oggetto Number,** **String,** **MetadataPicture** o **MetadataText** come indicato nella tabella seguente.
 
 
 
 | Attributo                   | Valore restituito                   |
 |-----------------------------|--------------------------------|
-| **SyncState**               | **Numero** (**unsigned long**) |
-| **WM/lyrics \_ sincronizzati** | Oggetto **MetadataText**        |
-| **WM/immagine**              | Oggetto **MetadataPicture**     |
-| **WM/UserWebURL**           | Oggetto **MetadataText**        |
+| **SyncState**               | **Number** (**unsigned long**) |
+| **WM/Lyrics \_ Synchronised** | **Oggetto MetadataText**        |
+| **WM/Picture**              | **Oggetto MetadataPicture**     |
+| **WM/UserWebURL**           | **Oggetto MetadataText**        |
 | Tutti gli altri attributi        | string                         |
 
 
 
  
 
-Per gli attributi il cui valore sottostante è **booleano**, questo metodo restituisce la stringa "true" o "false".
+Per gli attributi il cui valore sottostante è **booleano,** questo metodo restituisce la stringa "true" o "false".
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo supporta attributi con più valori e attributi con valori complessi. Il metodo **GetItemInfo** non supporta attributi con valori multipli o complessi.
+Questo metodo supporta attributi con più valori e attributi con valori complessi. Il **metodo getItemInfo** non supporta attributi con valori multipli o complessi.
 
-Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -120,10 +120,10 @@ Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per a
 [**Oggetto MetadataText**](metadatatext-object.md)
 </dt> <dt>
 
-[**StringCollection. getItemInfo**](stringcollection-getiteminfo.md)
+[**StringCollection.getItemInfo**](stringcollection-getiteminfo.md)
 </dt> <dt>
 
-[**StringCollection (oggetto)**](stringcollection-object.md)
+[**Oggetto StringCollection**](stringcollection-object.md)
 </dt> </dl>
 
  
