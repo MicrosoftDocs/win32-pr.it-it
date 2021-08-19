@@ -13,7 +13,7 @@ ms.locfileid: "118952150"
 ---
 # <a name="receiving-and-delivering-samples"></a>Ricezione e distribuzione di esempi
 
-Lo pseudocodice seguente illustra come implementare **il metodo IMemInput::Receive:**
+Lo pseudocodice seguente illustra come implementare il **metodo IMemInput::Receive:**
 
 
 ```C++
@@ -44,9 +44,9 @@ HRESULT CMyInputPin::Receive(IMediaSample *pSample)
 
 
 
-Il **metodo Receive** mantiene il blocco di flusso, non il blocco del filtro. Il filtro potrebbe dover attendere un evento prima di poter elaborare i dati, come illustrato qui dalla chiamata a **WaitForSingleObject.** Non tutti i filtri dovranno eseguire questa operazione. Il [**metodo CBaseInputPin::Receive**](cbaseinputpin-receive.md) verifica alcune condizioni generali di streaming. Restituisce VFW E WRONG STATE se il filtro viene arrestato, S FALSE se il filtro viene scaricato \_ \_ e così \_ \_ via. Qualsiasi codice restituito diverso da S OK indica che il metodo Receive deve restituire immediatamente e \_ non elaborare  l'esempio.
+Il **metodo Receive** contiene il blocco di streaming, non il blocco del filtro. Il filtro potrebbe dover attendere un evento prima di poter elaborare i dati, illustrati qui dalla chiamata a **WaitForSingleObject**. Non tutti i filtri dovranno eseguire questa operazione. Il [**metodo CBaseInputPin::Receive**](cbaseinputpin-receive.md) verifica alcune condizioni generali di streaming. Restituisce VFW E WRONG STATE se il filtro viene arrestato, S FALSE se il filtro viene scaricato \_ \_ e così \_ \_ via. Qualsiasi codice restituito diverso da S \_ OK indica che il metodo **Receive** deve restituire immediatamente e non elaborare l'esempio.
 
-Dopo l'elaborazione dell'esempio, recapitarlo al filtro downstream chiamando [**CBaseOutputPin::D eliver.**](cbaseoutputpin-deliver.md) Questo metodo helper chiama **IMemInputPin::Receive sul** pin di input downstream. Un filtro potrebbe distribuire campioni a diversi segnaposto.
+Dopo l'elaborazione dell'esempio, recapitarlo al filtro downstream chiamando [**CBaseOutputPin::D eliver**](cbaseoutputpin-deliver.md). Questo metodo helper chiama **IMemInputPin::Receive sul** pin di input downstream. Un filtro può fornire esempi a diversi pin.
 
  
 

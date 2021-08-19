@@ -1,9 +1,9 @@
 ---
 title: TVM_DELETEITEM messaggio (Commctrl.h)
-description: Rimuove un elemento e tutti i relativi elementi figlio da un controllo di visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro DeleteItem di TreeView.
+description: Rimuove un elemento e tutti i relativi elementi figlio da un controllo di visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o tramite la macro TreeView \_ DeleteItem.
 ms.assetid: 225420a5-6ded-4786-a080-2817aa5f66c9
 keywords:
-- TVM_DELETEITEM dei controlli Windows messaggio
+- TVM_DELETEITEM dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "119018689"
 ---
 # <a name="tvm_deleteitem-message"></a>Messaggio TVM \_ DELETEITEM
 
-Rimuove un elemento e tutti i relativi elementi figlio da un controllo di visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ DeleteItem di TreeView.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_deleteitem)
+Rimuove un elemento e tutti i relativi elementi figlio da un controllo di visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**TreeView \_ DeleteItem.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_deleteitem)
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,7 +35,7 @@ Rimuove un elemento e tutti i relativi elementi figlio da un controllo di visual
 *lParam* 
 </dt> <dd>
 
-**Handle HTREEITEM** per l'elemento da eliminare. Se *lParam è* impostato su TVI \_ ROOT o su **NULL,** tutti gli elementi vengono eliminati. Puoi anche usare la macro [**TreeView \_ DeleteAllItems**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_deleteallitems) per eliminare tutti gli elementi.
+**Handle HTREEITEM** per l'elemento da eliminare. Se *lParam è* impostato su TVI \_ ROOT o su **NULL,** tutti gli elementi vengono eliminati. È anche possibile usare la macro [**TreeView \_ DeleteAllItems**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_deleteallitems) per eliminare tutti gli elementi.
 
 </dd> </dl>
 
@@ -45,11 +45,11 @@ Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrari
 
 ## <a name="remarks"></a>Commenti
 
-Non è sicuro eliminare elementi in risposta a una notifica, ad esempio [TVN \_ SELCHANGING.](tvn-selchanging.md)
+Non è sicuro eliminare elementi in risposta a una notifica, ad esempio [TVN \_ SELCHANGING](tvn-selchanging.md).
 
-Dopo l'eliminazione di un elemento, il relativo handle non è valido e non può essere usato.
+Dopo l'eliminazione di un elemento, l'handle non è valido e non può essere usato.
 
-La finestra padre riceve un codice [di notifica \_ TVN DELETEITEM](tvn-deleteitem.md) quando ogni elemento viene rimosso.
+La finestra padre riceve un [codice di notifica TVN \_ DELETEITEM](tvn-deleteitem.md) quando ogni elemento viene rimosso.
 
 Se l'etichetta dell'elemento viene modificata, l'operazione di modifica viene annullata e la finestra padre riceve il codice di notifica [ \_ TVN ENDLABELEDIT.](tvn-endlabeledit.md)
 
@@ -61,8 +61,8 @@ Se si eliminano tutti gli elementi in un controllo di visualizzazione albero con
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

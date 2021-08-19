@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117872992"
 ---
-# <a name="mfpkey_sourceopenmonitor-property"></a>Proprietà MFPKEY \_ SourceOpenMonitor
+# <a name="mfpkey_sourceopenmonitor-property"></a>MFPKEY \_ SourceOpenMonitor - proprietà
 
 Contiene un puntatore all'interfaccia [**IMFSourceOpenMonitor**](/windows/desktop/api/mfidl/nn-mfidl-imfsourceopenmonitor) dell'applicazione.
 
@@ -27,13 +27,13 @@ membro PROPVARIANT
 
 VT \_ UNKNOWN
 
-**punkVal**
+**valvalore**
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Le applicazioni possono passare questa proprietà al sistema di risoluzione dell'origine per ottenere notifiche degli eventi dall'origine di rete.
+Le applicazioni possono passare questa proprietà al resolver di origine per ottenere notifiche degli eventi dall'origine di rete.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,8 +41,8 @@ Le applicazioni possono passare questa proprietà al sistema di risoluzione dell
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
 | Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 

@@ -33,7 +33,7 @@ I valori seguenti, insieme, identificano in modo univoco una route nella tabella
 -   Indice dell'interfaccia
 -   Indirizzo del router dell'hop successivo
 
-In generale, il gestore tabelle di routing crea voci separate per le route che differiscono in uno qualsiasi di questi valori di parametro. Tuttavia, viene generata un'eccezione per i protocolli di routing che non mantengono più di una voce per ogni rete di destinazione. Per questi protocolli, gestione tabelle di routing ignora le differenze nell'indice dell'interfaccia o nell'indirizzo dell'hop successivo. Un esempio di questo protocollo è l'implementazione RRAS di Open Shortest Path First (OSPF).
+In generale, il gestore tabelle di routing crea voci separate per le route che differiscono in uno qualsiasi di questi valori di parametro. Viene tuttavia generata un'eccezione per i protocolli di routing che non mantengono più di una voce per ogni rete di destinazione. Per questi protocolli, gestione tabelle di routing ignora le differenze nell'indice dell'interfaccia o nell'indirizzo dell'hop successivo. Un esempio di questo protocollo è l'implementazione RRAS di Open Shortest Path First (OSPF).
 
  
 

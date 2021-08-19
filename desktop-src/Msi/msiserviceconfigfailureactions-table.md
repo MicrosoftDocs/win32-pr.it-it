@@ -17,7 +17,7 @@ La tabella MsiServiceConfigFailureActions elenca le operazioni da eseguire in ca
 
 **[Windows Installer 4.5 o versioni precedenti:](not-supported-in-windows-installer-4-5.md)** Non supportato. Questa tabella è disponibile a partire da Windows Installer 5.0.
 
-La tabella MsiServiceConfigFailureActions contiene le colonne seguenti.
+La tabella MsiServiceConfigFailureActions include le colonne seguenti.
 
 
 
@@ -25,12 +25,12 @@ La tabella MsiServiceConfigFailureActions contiene le colonne seguenti.
 |--------------------------------|------------------------------|-----|----------|
 | MsiServiceConfigFailureActions | [Identificatore](identifier.md) | S   | N        |
 | Nome                           | [Formattato](formatted.md)   | N   | N        |
-| Evento                          | [Integer](integer.md)       | N   | N        |
+| Event                          | [Integer](integer.md)       | N   | N        |
 | ResetPeriod                    | [Integer](integer.md)       | N   | S        |
-| Messaggio di riavvio                  | [Formattato](formatted.md)   | N   | Y        |
+| RebootMessage                  | [Formattato](formatted.md)   | N   | Y        |
 | Comando                        | [Formattato](formatted.md)   | N   | S        |
 | Azioni                        | [Text](text.md)             | N   | S        |
-| Proprietà DelayActions                   | [Text](text.md)             | N   | S        |
+| DelayActions                   | [Text](text.md)             | N   | S        |
 | Componente\_                    | [Identificatore](identifier.md) | N   | N        |
 
 
@@ -64,9 +64,9 @@ Questa colonna specifica quando modificare la configurazione del servizio. I val
 
 | Costante                                         | Descrizione                                     |
 |--------------------------------------------------|-------------------------------------------------|
-| **msidbServiceConfigEventInstall** 1<br/>   | Modificare durante l'installazione del componente.    |
+| **msidbServiceConfigEventInstall** 1<br/>   | Modifica durante l'installazione del componente.    |
 | **msidbServiceConfigEventUninstall** 2<br/> | Modifica durante la disinstallazione del componente.  |
-| **msidbServiceConfigEventReinstall** 4<br/> | Modificare durante la nuova installazione del componente. |
+| **msidbServiceConfigEventReinstall** 4<br/> | Modifica durante la riinstallazione del componente. |
 
 
 
@@ -77,38 +77,38 @@ Questa colonna specifica quando modificare la configurazione del servizio. I val
 <span id="ResetPeriod"></span><span id="resetperiod"></span><span id="RESETPERIOD"></span>ResetPeriod
 </dt> <dd>
 
-Periodo di reimpostazione in secondi del numero di errori del servizio. Gestione [controllo servizi conta](../services/service-control-manager.md) il numero di volte in cui ogni servizio ha avuto esito negativo dall'ultimo riavvio del sistema. Il conteggio viene reimpostato su zero se il servizio non ha esito negativo per il periodo di reimpostazione. Quando il servizio non riesce per l'Esima volta, il sistema esegue l'azione specificata nell'elemento \[ N-1 della \] matrice specificata nel campo Azioni.
+Periodo di reimpostazione in secondi del numero di errori del servizio. Gestione [controllo servizi](../services/service-control-manager.md) (SCM) conta il numero di volte in cui ogni servizio ha avuto esito negativo dall'ultimo riavvio del sistema. Il conteggio viene reimpostato su zero se il servizio non ha esito negativo per il periodo di reimpostazione. Quando il servizio ha esito negativo per l'ora N, il sistema esegue l'azione specificata \[ nell'elemento N-1 della \] matrice specificata nel campo Azioni.
 
 Lasciare vuoto il campo ResetPeriod per indicare che il conteggio degli errori non deve mai essere reimpostato.
 
 </dd> <dt>
 
-<span id="RebootMessage"></span><span id="rebootmessage"></span><span id="REBOOTMESSAGE"></span>Messaggio di riavvio
+<span id="RebootMessage"></span><span id="rebootmessage"></span><span id="REBOOTMESSAGE"></span>RebootMessage
 </dt> <dd>
 
-Messaggio inviato agli utenti prima di riavviare il computer in risposta a un'azione **SC \_ ACTION \_ REBOOT** specificata nella colonna Azioni. È possibile usare una stringa vuota, "", per inviare il messaggio corrente senza modifiche. È possibile usare \[ ~ \] la sintassi [del tipo di](formatted.md) dati Formattato per eliminare il messaggio corrente e non inviare alcun messaggio.
+Messaggio inviato agli utenti prima del riavvio del computer in risposta a **un'azione SC \_ ACTION \_ REBOOT** specificata nella colonna Azioni. È possibile usare una stringa vuota, "", per inviare il messaggio corrente senza modifiche. È possibile usare \[ ~ \] la sintassi del tipo di dati [Formattato](formatted.md) per eliminare il messaggio corrente e non inviare alcun messaggio.
 
 </dd> <dt>
 
 <span id="Command"></span><span id="command"></span><span id="COMMAND"></span>Comando
 </dt> <dd>
 
-Riga di comando eseguita dal processo creato dalla funzione [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) in risposta a un'azione **SC ACTION RUN \_ \_ \_ COMMAND** specificata nella colonna Azioni . Il nuovo processo viene eseguito con lo stesso account del servizio e solo se il campo Azione è **SC \_ ACTION RUN \_ \_ COMMAND**. È possibile usare una stringa vuota, "", per usare la riga di comando corrente senza modifiche. È possibile usare la sintassi del tipo di dati Formattato per eliminare la riga di comando corrente e non eseguire alcuna operazione in caso \[ ~ \] di errore del servizio. [](formatted.md)
+Riga di comando eseguita dal processo creato dalla funzione [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) in risposta a **un'azione SC ACTION RUN \_ \_ \_ COMMAND** specificata nella colonna Azioni. Il nuovo processo viene eseguito nello stesso account del servizio e solo se il campo Azione è **SC \_ ACTION RUN \_ \_ COMMAND**. È possibile usare una stringa vuota, "", per usare la riga di comando corrente invariata. È possibile usare la sintassi del tipo di dati Formattato per eliminare la riga di comando corrente e non eseguire alcuna operazione in caso di errore \[ ~ \] del servizio. [](formatted.md)
 
 </dd> <dt>
 
 <span id="Actions"></span><span id="actions"></span><span id="ACTIONS"></span>Azioni
 </dt> <dd>
 
-Questo campo contiene una matrice di valori interi che specificano le azioni eseguite da Gestione controllo servizi in caso di errore del servizio. Separare i valori nella matrice con \[ ~ \] . Il valore intero nell'elemento N della matrice specifica l'azione eseguita quando il servizio ha esito negativo per l'Esima volta. Ogni membro della matrice è uno dei valori integer seguenti.
+Questo campo contiene una matrice di valori integer che specificano le azioni eseguite da Gestione controllo servizi in caso di errore del servizio. Separare i valori nella matrice con \[ ~ \] . Il valore intero nell'elemento Nth della matrice specifica l'azione eseguita quando il servizio ha esito negativo per l'Esima volta. Ogni membro della matrice è uno dei valori integer seguenti.
 
 
 
 | Costante                                 | Descrizione           |
 |------------------------------------------|-----------------------|
-| **SC \_ ACTION \_ NONE** 0<br/>         | Nessuna azione.            |
-| **SC \_ AZIONE \_ RIAVVIO** 2<br/>       | Riavviare il computer. |
-| **SC \_ ACTION \_ RESTART** 1<br/>      | Riavviare il servizio.  |
+| **SC \_ AZIONE \_ NESSUNO 0**<br/>         | Nessuna azione.            |
+| **SC \_ AZIONE \_ REBOOT** 2<br/>       | Riavviare il computer. |
+| **SC \_ AZIONE \_ RESTART** 1<br/>      | Riavviare il servizio.  |
 | **SC \_ AZIONE \_ ESEGUI \_ COMANDO** 3<br/> | Eseguire un comando.        |
 
 
@@ -117,10 +117,10 @@ Questo campo contiene una matrice di valori interi che specificano le azioni ese
 
 </dd> <dt>
 
-<span id="DelayActions"></span><span id="delayactions"></span><span id="DELAYACTIONS"></span>Proprietà DelayActions
+<span id="DelayActions"></span><span id="delayactions"></span><span id="DELAYACTIONS"></span>DelayActions
 </dt> <dd>
 
-Questo campo contiene una matrice di valori interi che specificano il tempo di attesa in millisecondi prima di eseguire l'azione specificata nella colonna Azione . Separare i valori nella matrice con \[ ~ \] . Il numero di elementi nella matrice DelayActions deve essere uguale al numero di elementi nella matrice Actions. L'ultimo elemento della matrice DelayActions specifica il ritardo di tempo per l'e ultimo elemento della matrice Actions.
+Questo campo contiene una matrice di valori integer che specificano il tempo in millisecondi di attesa prima di eseguire l'azione specificata nella colonna Azione. Separare i valori nella matrice con \[ ~ \] . Il numero di elementi nella matrice DelayActions deve essere uguale al numero di elementi nella matrice Actions. L'n°elemento della matrice DelayActions specifica il ritardo temporale per l'e ultimo elemento della matrice Actions.
 
 </dd> <dt>
 

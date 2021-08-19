@@ -33,7 +33,7 @@ ms.locfileid: "118497782"
 ---
 # <a name="apijettruncateloginstance-method"></a>Metodo Api.JetTruncateLogInstance
 
-Usato durante un backup avviato da JetBeginExternalBackup per eliminare tutti i file di log delle transazioni che non saranno più necessari al termine del backup corrente.
+Utilizzato durante un backup avviato da JetBeginExternalBackup per eliminare tutti i file di log delle transazioni che non saranno più necessari al termine del backup corrente.
 
 **Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
@@ -60,7 +60,7 @@ public static void JetTruncateLogInstance(
   - instance  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    Istanza di da troncare.
+    Istanza da troncare.
 
 ## <a name="see-also"></a>Vedi anche
 

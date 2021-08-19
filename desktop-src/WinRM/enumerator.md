@@ -5,7 +5,7 @@ ms.assetid: 8d8b461d-06a7-4600-8b68-2faf741a394b
 ms.tgt_platform: multiple
 keywords:
 - Oggetto Enumeratore Windows gestione remota
-- Oggetto Enumerator Windows Gestione remota , descritto
+- Enumeratore - Windows gestione remota , descritto
 topic_type:
 - apiref
 api_name:

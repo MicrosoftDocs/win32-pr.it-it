@@ -13,9 +13,9 @@ ms.locfileid: "118930020"
 ---
 # <a name="explicit-binding-handles"></a>Handle di associazione espliciti
 
-Per il massimo controllo sul processo di associazione, le applicazioni client/server possono usare handle di associazione espliciti. Analogamente agli handle impliciti, gli handle di associazione espliciti consentono all'applicazione client di selezionare un server per eseguire le chiamate. Inoltre, gli handle di associazione espliciti consentono all'applicazione client/server di creare una sessione di comunicazione RPC autenticata. Con handle espliciti, il client può connettersi a più di un server ed eseguire procedure remote su più server. Le applicazioni client multithreading e asincrone possono anche connettersi a più server ed eseguire più procedure remote contemporaneamente.
+Per il massimo controllo sul processo di associazione, le applicazioni client/server possono usare handle di associazione espliciti. Analogamente agli handle impliciti, gli handle di associazione espliciti consentono all'applicazione client di selezionare un server per eseguire le chiamate. Inoltre, gli handle di associazione espliciti consentono all'applicazione client/server di creare una sessione di comunicazione RPC autenticata. Con handle espliciti, il client può connettersi a più server ed eseguire procedure remote in più server. Le applicazioni client multithreading e asincrone possono anche connettersi a più server ed eseguire più procedure remote contemporaneamente.
 
-L'applicazione client deve passare l'handle esplicito come parametro a ogni chiamata di procedura remota. Per essere conforme allo standard OSF, l'handle deve essere specificato come primo parametro in ogni procedura remota. Tuttavia, le estensioni Microsoft per RPC consentono di specificare l'handle di associazione in altre posizioni. Per altre informazioni, vedere [Microsoft RPC Binding-Handle Extensions.](microsoft-rpc-binding-handle-extensions.md)
+L'applicazione client deve passare l'handle esplicito come parametro a ogni chiamata di procedura remota. Per essere conforme allo standard OSF, l'handle deve essere specificato come primo parametro in ogni procedura remota. Tuttavia, le estensioni Microsoft per RPC consentono di specificare l'handle di associazione in altre posizioni. Per altre informazioni, vedere [Microsoft RPC Binding-Handle Extensions](microsoft-rpc-binding-handle-extensions.md).
 
 Per creare un handle esplicito, dichiarare l'handle come parametro per le operazioni remote nel file IDL. [L'esempio Hello, World](tutorial.md) può essere ridefinito per usare un handle esplicito, come illustrato di seguito:
 
@@ -33,7 +33,7 @@ interface hello
 }
 ```
 
-È possibile combinare handle espliciti e impliciti in una singola interfaccia. Se una funzione ha un handle esplicito nel relativo elenco di parametri, verrà usato tale handle. Se una funzione in un'interfaccia che usa handle impliciti non specifica un handle esplicito, verrà usato l'handle implicito predefinito.
+È possibile combinare handle espliciti e impliciti in una singola interfaccia. Se una funzione ha un handle esplicito nel relativo elenco di parametri, tale handle verrà usato. Se una funzione in un'interfaccia che usa handle impliciti non specifica un handle esplicito, verrà usato l'handle implicito predefinito.
 
  
 

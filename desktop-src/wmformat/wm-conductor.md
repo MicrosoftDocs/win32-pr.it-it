@@ -1,9 +1,9 @@
 ---
-title: WM/Conductor
-description: L'attributo WM/Conductor contiene il nome del direttore.
+title: WM/Sistema di controllo
+description: L'attributo WM/Inevaso contiene il nome dell'elemento.
 ms.assetid: 12c58716-7b91-4014-9741-575a017cf7f1
 keywords:
-- WM/Conductor windows Media Format
+- WM/Sistema operativo Windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119027099"
 ---
-# <a name="wmconductor"></a>WM/Conductor
+# <a name="wmconductor"></a>WM/Sistema di controllo
 
-**L'attributo WM/Conductor** contiene il nome del direttore.
+**L'attributo WM/Inevaso** contiene il nome dell'elemento.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,7 +29,7 @@ g \_ wszWMConductor
 
 ## <a name="data-type"></a>Tipo di dati
 
-**STRINGA DI TIPO WMT \_ \_**
+**STRINGA DI \_ TIPO \_ WMT**
 
 ## <a name="see-also"></a>Vedi anche
 

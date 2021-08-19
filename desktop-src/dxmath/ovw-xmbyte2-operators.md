@@ -26,7 +26,7 @@ La [**struttura XMBYTE2**](/windows/desktop/api/DirectXPackedVector/ns-directxpa
 
 | Metodi                                              | Descrizione                                                                                                       |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| [**operator =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmbyte2-operator-assign)<br/> | Assegna i dati del componente vettore da un'istanza `XMBYTE2` di all'istanza corrente di `XMBYTE2` .<br/> |
+| [**operatore =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmbyte2-operator-assign)<br/> | Assegna i dati del componente vettoriale da un'istanza `XMBYTE2` di all'istanza corrente di `XMBYTE2` .<br/> |
 
 
 

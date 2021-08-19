@@ -34,7 +34,7 @@ I processi di backup e ripristino sono asincroni. Vengono attivati quando l'uten
 Per eseguire il backup delle licenze:
 
 1.  Usare la [**funzione WMCreateBackupRestorer**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreatebackuprestorer) per creare l'oggetto di ripristino del backup.
-2.  Chiamare il [**metodo IWMBackupRestoreProps::SetProp**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmbackuprestoreprops-setprop) per impostare il percorso di backup ,ovvero il percorso in cui si scriveranno i file, ad esempio A: \\ o D: \\ Licenses.
+2.  Chiamare il metodo [**IWMBackupRestoreProps::SetProp**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmbackuprestoreprops-setprop) per impostare il percorso di backup ,ovvero il percorso in cui si scriveranno i file, ad esempio A: \\ o D: \\ Licenses.
 3.  Chiamare il [**metodo IWMLicenseBackup::BackupLicenses**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmlicensebackup-backuplicenses) per eseguire il backup delle licenze nel percorso specificato.
 
 Gli eventi seguenti vengono inviati al [**metodo IWMStatusCallback::OnStatus:**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus)
@@ -54,7 +54,7 @@ Per ripristinare le licenze:
 Gli eventi seguenti vengono inviati al [**metodo IWMStatusCallback::OnStatus:**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus)
 
 -   **WMT \_ BACKUPRESTORE \_ CONNECTING** indica che l'applicazione si connette al servizio di gestione delle licenze.
--   **WMT \_ BACKUPRESTORE \_ DISCONNECTING** indica che l'applicazione si sta disconnettendo dal Servizio gestione licenze.
+-   **WMT \_ BACKUPRESTORE \_ DISCONNECTING** indica che l'applicazione si sta disconnettendo dal servizio di gestione licenze.
 -   **WMT \_ BACKUPRESTORE \_ BEGIN** indica che il processo di ripristino è stato avviato.
 -   **WMT \_ BACKUPRESTORE \_ END** indica che il processo di ripristino è stato completato.
 

@@ -5,53 +5,53 @@ ms.tgt_platform: multiple
 title: Esecuzione di operazioni con privilegi con C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fbc0468fef7531586020f55032bff94c977c4ac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e83667cd4a4cd81439392f1f58d77fb56109f79c2dd6d826c9390d62008553b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050889"
 ---
 # <a name="executing-privileged-operations-using-c"></a>Esecuzione di operazioni con privilegi con C++
 
-Le applicazioni client speciali potrebbero richiamare operazioni con privilegi. Ad esempio, un'applicazione potrebbe consentire a un responsabile di riavviare un computer Office che non risponde. Utilizzando Strumentazione gestione Windows (WMI), è possibile eseguire un'operazione con privilegi chiamando il provider WMI per l'operazione con privilegi.
+Le applicazioni client speciali potrebbero richiamare operazioni con privilegi. Ad esempio, un'applicazione potrebbe consentire a un responsabile di riavviare un computer dell'ufficio che non risponde. Utilizzando strumentazione Windows (WMI) è possibile eseguire un'operazione con privilegi chiamando il provider WMI per l'operazione con privilegi.
 
-Nella procedura riportata di seguito viene descritto come chiamare un provider per un'operazione con privilegi.
+Nella procedura seguente viene descritto come chiamare un provider per un'operazione con privilegi.
 
 **Per chiamare un provider per un'operazione con privilegi**
 
 1.  Ottenere le autorizzazioni per il processo client per eseguire l'operazione con privilegi.
 
-    In genere, un amministratore imposta le autorizzazioni utilizzando gli strumenti di amministrazione del sistema, prima di eseguire il processo.
+    In genere, un amministratore imposta le autorizzazioni usando gli strumenti di amministrazione di sistema, prima di eseguire il processo.
 
 2.  Ottenere l'autorizzazione per il processo del provider per abilitare l'operazione con privilegi.
 
-    In genere, è possibile impostare le autorizzazioni del provider con una chiamata alla funzione [**AdjustTokenPrivileges**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-adjusttokenprivileges) .
+    In genere, è possibile impostare le autorizzazioni del provider con una chiamata alla [**funzione AdjustTokenPrivileges.**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-adjusttokenprivileges)
 
 3.  Ottenere l'autorizzazione per il processo client per abilitare l'operazione con privilegi.
 
     Questo passaggio è necessario solo se il provider è locale per il client. Se il client e il provider sono presenti nello stesso computer, il client deve abilitare in modo specifico l'operazione con privilegi utilizzando una delle tecniche seguenti:
 
-    -   Se il client è proprietario del processo, il client può utilizzare [**AdjustTokenPrivileges**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-adjusttokenprivileges) per modificare il token di processo prima di chiamare WMI. In questo caso, non è necessario codificare ulteriormente.
-    -   Se il client non è in grado di accedere al token client, il client può utilizzare la procedura seguente per creare un token del thread e utilizzare [**AdjustTokenPrivileges**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-adjusttokenprivileges) su tale token.
+    -   Se il client è proprietario del processo, può usare [**AdjustTokenPrivileges**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-adjusttokenprivileges) per modificare il token del processo prima di chiamare WMI. In questo caso, non è necessario codificare ulteriormente.
+    -   Se il client non può accedere al token client, il client può usare la procedura seguente per creare un token di thread e [**usare AdjustTokenPrivileges**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-adjusttokenprivileges) su tale token.
 
-Nella procedura seguente viene descritto come creare un token di thread e utilizzare [**AdjustTokenPrivileges**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-adjusttokenprivileges) su tale token.
+La procedura seguente descrive come creare un token di thread e [**usare AdjustTokenPrivileges**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-adjusttokenprivileges) su tale token.
 
-**Per creare un token di thread e utilizzare AdjustTokenPrivileges su tale token**
+**Per creare un token di thread e usare AdjustTokenPrivileges su tale token**
 
-1.  Creare una copia del token di processo chiamando [**ImpersonateSelf**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-impersonateself).
-2.  Recuperare il token del thread appena creato chiamando [**GetTokenInformation**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-gettokeninformation).
-3.  Abilitare l'operazione Privileged con una chiamata a [**AdjustTokenPrivileges**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-adjusttokenprivileges) sul nuovo token.
-4.  Ottenere un puntatore a [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices).
-5.  Mascherare il puntatore a [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) con una chiamata a [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket).
+1.  Creare una copia del token del processo chiamando [**ImpersonateSelf.**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-impersonateself)
+2.  Recuperare il token del thread appena creato chiamando [**GetTokenInformation.**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-gettokeninformation)
+3.  Abilitare l'operazione con privilegi con una [**chiamata a AdjustTokenPrivileges**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-adjusttokenprivileges) nel nuovo token.
+4.  Ottenere un puntatore [**a IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices).
+5.  Cloak del puntatore [**a IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) con una chiamata a [**CoSetProxyBlanket.**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket)
 6.  Ripetere i passaggi da 1 a 5 per ogni chiamata a WMI.
 
     > [!Note]  
-    > È necessario ripetere i passaggi perché COM memorizza nella cache i token in modo non corretto.
+    > È necessario ripetere i passaggi perché COM memorizza i token nella cache in modo errato.
 
      
 
-Per eseguire correttamente la compilazione, l'esempio di codice in questo argomento richiede la seguente \# istruzione include.
+L'esempio di codice in questo argomento richiede la corretta \# compilazione dell'istruzione include seguente.
 
 
 ```C++

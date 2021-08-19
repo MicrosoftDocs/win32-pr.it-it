@@ -1,5 +1,5 @@
 ---
-description: Genera un remapping del viso ottimizzato per un elenco di triangoli.
+description: Genera un nuovo mapping ottimizzato del viso per un elenco di triangoli.
 ms.assetid: 428c2af8-43e7-4cf7-8b9b-04ba5cff82c8
 title: Funzione D3DXOptimizeFaces (D3DX9Mesh.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118525230"
 ---
 # <a name="d3dxoptimizefaces-function"></a>Funzione D3DXOptimizeFaces
 
-Genera un remapping del viso ottimizzato per un elenco di triangoli.
+Genera un nuovo mapping ottimizzato del viso per un elenco di triangoli.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,7 +58,7 @@ Puntatore agli indici dell'elenco triangolare da usare per l'ordinamento dei ver
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di visi nell'elenco dei triangoli. Per le mesh a 16 bit, questo valore è limitato a 2^16 - 1 (65535) o meno visi.
+Numero di visi nell'elenco di triangoli. Per le mesh a 16 bit, questo limite è di 2^16 - 1 (65535) o meno visi.
 
 </dd> <dt>
 
@@ -71,12 +71,12 @@ Numero di vertici a cui fa riferimento l'elenco di triangoli.
 
 </dd> <dt>
 
-*Indici32Bit* \[ Pollici\]
+*Indices32Bit* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Flag che indica il tipo di indice: **TRUE** se gli indici sono a 32 bit (più di 65535 indici), **FALSE** se gli indici sono a 16 bit (65535 o un numero inferiore di indici).
+Flag che indica il tipo di indice: **TRUE** se gli indici sono a 32 bit (più di 65535 indici), **FALSE** se gli indici sono a 16 bit (65535 o meno indici).
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Flag che indica il tipo di indice: **TRUE** se gli indici sono a 32 bit (più di
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntatore al viso mesh originale diviso per generare il viso corrente.
+Puntatore alla faccia mesh originale divisa per generare la faccia corrente.
 
 </dd> </dl>
 
@@ -97,7 +97,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-La procedura di ottimizzazione di questa funzione è funzionalmente equivalente alla chiamata di [**ID3DXMesh::Optimize**](id3dxmesh--optimize.md) con il flag D3DXMESHOPT DEVICEINDEPENDENT, ma questa funzione rende più efficiente l'uso delle \_ cache dei vertici.
+Dal punto di vista funzionale, la procedura di ottimizzazione di questa funzione equivale a chiamare [**ID3DXMesh::Optimize**](id3dxmesh--optimize.md) con il flag D3DXMESHOPT DEVICEINDEPENDENT, ma questa funzione usa in modo più efficiente le \_ cache dei vertici.
 
 ## <a name="requirements"></a>Requisiti
 

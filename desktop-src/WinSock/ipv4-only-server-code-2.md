@@ -1,19 +1,19 @@
 ---
-description: Il codice seguente è il file simples. c, che è un server Windows Sockets solo IPv4 (la versione abilitata per IPv6 del file simples. c si trova nell'Appendice B).
+description: Il codice seguente è il file Simples.c, che è un server Windows Sockets solo IPv4 (una versione del file Simples.c abilitata per IPv6 è disponibile nell'appendice B).
 ms.assetid: 02e599e9-8652-4ca1-9355-b989dadedcdf
 title: Codice server solo IPv4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 822ad0775c512e5a00ec0695b2967d8c09fd9253
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7748b6513747f30f2b7cc93a120f47648269196dd1f19efdfcdd1112c777ee9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051459"
 ---
 # <a name="ipv4-only-server-code"></a>Codice server solo IPv4
 
-Il codice seguente è il file simples. c, che è un server Windows Sockets solo IPv4 (la versione abilitata per IPv6 del file simples. c si trova nell'Appendice B). Questo codice viene fornito solo a scopo di confronto: usare l'Appendice B per un esempio di come scrivere un server abilitato per IPv6.
+Il codice seguente è il file Simples.c, che è un server Windows Sockets solo IPv4 (una versione del file Simples.c abilitata per IPv6 è disponibile nell'appendice B). Questo codice viene fornito solo a scopo di confronto. Usare l'appendice B per un esempio di come scrivere un server abilitato per IPv6.
 
 
 ```C++

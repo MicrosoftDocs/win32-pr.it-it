@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 3df0c94dbd49cf38d9230a2c5392df8497c64761
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5fa7e7155cdcf5c5dc1996dee1dcf02d0190e4bb91b4c319231e2f03168722c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118095459"
 ---
 # <a name="d3dxplane-structure-d3dx9mathh"></a>Struttura D3DXPLANE (D3dx9math.h)
 
@@ -88,9 +88,9 @@ Coefficiente d del piano di ritaglio nell'equazione del piano generale. Vedere l
 
 ## <a name="remarks"></a>Commenti
 
-I membri della struttura **D3DXPLANE** hanno la forma dell'equazione del piano generale. Rientrano nell'equazione del piano generale in **modo** che x + **b** y + **c** z + **d** w = 0.
+I membri della struttura **D3DXPLANE** hanno la forma dell'equazione del piano generale. Rientrano nell'equazione del piano generale in modo che **x**+ **b** y + **c** z + **d** w = 0.
 
-I programmatori C++ possono sfruttare l'overload degli operatori e il cast dei tipi con le estensioni [**D3DXPLANE**](d3dxplane-extensions.md) che implementano costruttori di overload e operatori di assegnazione, unario e binario (inclusa l'uguaglianza).
+I programmatori C++ possono sfruttare l'overload degli operatori e il cast dei tipi con le estensioni [**D3DXPLANE**](d3dxplane-extensions.md) che implementano costruttori di overload e operatori di assegnazione, unari e binari (inclusa l'uguaglianza).
 
 ## <a name="requirements"></a>Requisiti
 

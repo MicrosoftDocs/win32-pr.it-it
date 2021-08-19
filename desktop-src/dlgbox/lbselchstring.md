@@ -1,6 +1,6 @@
 ---
 title: Messaggio LBSELCHSTRING (Commdlg.h)
-description: Una finestra di dialogo Apri o Salva con nome invia il messaggio registrato LBSELCHSTRING alla procedura hook quando la selezione cambia in una delle caselle di riepilogo o delle caselle combinate della finestra di dialogo.
+description: Una finestra di dialogo Apri o Salva con nome invia il messaggio registrato LBSELCHSTRING alla procedura hook quando la selezione cambia in una delle caselle di riepilogo o nelle caselle combinate della finestra di dialogo.
 ms.assetid: 3a8ebc63-b324-43ed-bb6f-34779f6043e7
 keywords:
 - Finestre di dialogo del messaggio LBSELCHSTRING
@@ -16,18 +16,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62d61f88bd7cb6a84a94a3d8a246e6045f88a305
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: ea804e1bd5ad35b5ad5d5ee98cf77f97d54e4e93f438e6e32ad7478e10d7b9ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110550046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985401"
 ---
 # <a name="lbselchstring-message"></a>Messaggio LBSELCHSTRING
 
-\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
+\[A partire Windows Vista, **le**  finestre di dialogo comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo Elemento [comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo da Common Dialog Box Library.\]
 
-Una **finestra di** dialogo Apri o Salva con nome invia il messaggio registrato  **LBSELCHSTRING** alla procedura hook quando la selezione cambia in una delle caselle di riepilogo o delle caselle combinate della finestra di dialogo.
+Una **finestra di** dialogo Apri o Salva con nome invia il messaggio registrato  **LBSELCHSTRING** alla procedura hook quando la selezione cambia in una delle caselle di riepilogo o nelle caselle combinate della finestra di dialogo.
 
 
 ```C++
@@ -50,7 +50,7 @@ Identificatore della casella di riepilogo o della casella combinata in cui è st
 *lParam* 
 </dt> <dd>
 
-La parola meno ordinata specifica il numero di elemento della stringa selezionata nella casella di riepilogo o nella casella combinata. La parola più alta specifica il tipo di modifica della selezione. Questo parametro può avere uno dei valori seguenti.
+La parola meno ordinata specifica il numero di elemento della stringa selezionata nella casella di riepilogo o nella casella combinata. La parola di ordine alto specifica il tipo di modifica della selezione. Questo parametro può avere uno dei valori seguenti.
 
 
 
@@ -59,7 +59,7 @@ La parola meno ordinata specifica il numero di elemento della stringa selezionat
 | <span id="CD_LBSELCHANGE"></span><span id="cd_lbselchange"></span><dl> <dt>**CD \_ LBSELCHANGE**</dt> <dt>0</dt> </dl>     | L'elemento è l'unico elemento selezionato in una casella di riepilogo a selezione singola.<br/>      |
 | <span id="CD_LBSELADD"></span><span id="cd_lbseladd"></span><dl> <dt>**CD \_ LBSELADD**</dt> <dt>2</dt> </dl>              | L'elemento è uno degli elementi selezionati in una casella di riepilogo a selezione multipla.<br/> |
 | <span id="CD_LBSELSUB"></span><span id="cd_lbselsub"></span><dl> <dt>**CD \_ LBSELSUB**</dt> <dt>1</dt> </dl>              | L'elemento non è più selezionato in una casella di riepilogo a selezione multipla.<br/>        |
-| <span id="CD_LBSELNOITEMS"></span><span id="cd_lbselnoitems"></span><dl> <dt>**CD \_ LBSELNOITEMS**</dt> <dt>-1</dt> </dl> | Non esistono elementi in una casella di riepilogo a selezione multipla.<br/>                        |
+| <span id="CD_LBSELNOITEMS"></span><span id="cd_lbselnoitems"></span><dl> <dt>**CD \_ LBSELNOITEMS**</dt> <dt>-1</dt> </dl> | In una casella di riepilogo a selezione multipla non sono presenti elementi.<br/>                        |
 
 
 
@@ -95,10 +95,10 @@ La routine hook deve specificare la costante **LBSELCHSTRING** in una chiamata a
 **Riferimento**
 </dt> <dt>
 
-[**\_SELCHANGE della rete CDN**](cdn-selchange.md)
+[**\_rete CDN Selchange**](cdn-selchange.md)
 </dt> <dt>
 
-[**TIPO DI RETE \_ CDNCHANGE**](cdn-typechange.md)
+[**\_rete CDN TYPECHANGE**](cdn-typechange.md)
 </dt> <dt>
 
 [**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea)

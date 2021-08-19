@@ -1,23 +1,23 @@
 ---
-description: La funzione MsiGetPatchFileList e la proprietà PatchFiles dell'oggetto Installer accettano un elenco di patch Windows Installer (file con estensione msp) e restituiscono un elenco di file che possono essere aggiornati dalle patch.
+description: La funzione MsiGetPatchFileList e la proprietà PatchFiles dell'oggetto Installer accettano un elenco di patch del programma di installazione di Windows (file con estensione msp) e restituiscono un elenco di file che possono essere aggiornati dalle patch.
 ms.assetid: cc2eb506-c1fc-4125-b98c-12221b918e23
 title: Elenco dei file che possono essere aggiornati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c15872cce902f5a9059d4256e9e5c30ecff213f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ad76355c97d62d9c3f1282b5ebd66f54c5fef0f6f7359a41a35f2ebaee9a2fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118945906"
 ---
 # <a name="listing-the-files-that-can-be-updated"></a>Elenco dei file che possono essere aggiornati
 
-La funzione [**MsiGetPatchFileList**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista) e la proprietà [**PatchFiles**](installer-patchfiles.md) dell' [**oggetto Installer**](installer-object.md) accettano un elenco di patch Windows Installer (file con estensione msp) e restituiscono un elenco di file che possono essere aggiornati dalle patch. La funzione [**MsiGetPatchFileList**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista) e la proprietà [**PatchFiles**](installer-patchfiles.md) sono disponibili a partire da Windows Installer 4,0.
+La funzione [**MsiGetPatchFileList**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista) e la [](installer-object.md) proprietà [**PatchFiles**](installer-patchfiles.md) dell'oggetto Installer accettano un elenco di patch del programma di installazione di Windows (file con estensione msp) e restituiscono un elenco di file che possono essere aggiornati dalle patch. La [**funzione MsiGetPatchFileList**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista) e la [**proprietà PatchFiles**](installer-patchfiles.md) sono disponibili a partire da Windows Installer 4.0.
 
-## <a name="listing-files-that-can-be-updated"></a>Elenco di file che possono essere aggiornati
+## <a name="listing-files-that-can-be-updated"></a>Elenco dei file che possono essere aggiornati
 
-Nell'esempio seguente viene illustrato come estrarre le informazioni sull'applicabilità per un elenco di patch di Windows Installer (file con estensione msp) utilizzando [**MsiGetPatchFileList**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista). Alla funzione **MsiGetPatchFileList** viene fornito il codice prodotto per la destinazione delle patch e un elenco di file con estensione msp delimitati da punti e virgola. Questo esempio richiede Windows Installer 4,0 in esecuzione in Windows Vista.
+L'esempio seguente illustra come estrarre le informazioni sull'applicabilità per un elenco di patch Windows Installer (file con estensione msp) usando [**MsiGetPatchFileList**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista). Alla **funzione MsiGetPatchFileList** viene fornito il codice prodotto per la destinazione delle patch e un elenco di file msp delimitati da punti e virgola. Per questo esempio è Windows programma di installazione 4.0 in esecuzione Windows Vista.
 
 
 ```C++
@@ -111,7 +111,7 @@ void CloseMsiHandles(MSIHANDLE* phFileListRec, DWORD dwcFiles)
 
 
 
-Nell'esempio seguente viene illustrato come estrarre le informazioni sull'applicabilità per un elenco di patch Windows Installer (file con estensione msp) utilizzando la proprietà [**PatchFiles**](installer-patchfiles.md) dell' [**oggetto del programma di installazione**](installer-object.md). Alla proprietà **PatchFiles** viene fornito il codice prodotto per la destinazione delle patch e un elenco di file con estensione msp delimitati da punti e virgola. Questo esempio richiede Windows Installer 4,0 in esecuzione in Windows Vista.
+L'esempio seguente illustra come estrarre le informazioni sull'applicabilità per un elenco di patch del programma di installazione di Windows (file con estensione msp) usando la proprietà [**PatchFiles**](installer-patchfiles.md) dell'oggetto [**Installer**](installer-object.md). Alla **proprietà PatchFiles** viene fornito il codice prodotto per la destinazione delle patch e un elenco di file msp delimitati da punti e virgola. Per questo esempio è Windows programma di installazione 4.0 in esecuzione Windows Vista.
 
 
 ```VB

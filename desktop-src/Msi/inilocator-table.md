@@ -84,7 +84,7 @@ Nella tabella seguente sono elencati i valori validi. Se assente, Type è impost
 |-------------------------------|-------------|---------|-----------------------|
 | **msidbLocatorTypeDirectory** | 0x000       | 0       | Percorso della directory. |
 | **msidbLocatorTypeFileName**  | 0x001       | 1       | Percorso del file.      |
-| **msidbLocatorTypeRawValue**  | 0x002       | 2       | Valore di .ini non elaborato.     |
+| **msidbLocatorTypeRawValue**  | 0x002       | 2       | Valore non .ini non elaborato.     |
 
 
 

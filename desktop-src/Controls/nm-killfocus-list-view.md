@@ -23,7 +23,7 @@ ms.locfileid: "119018849"
 ---
 # <a name="nm_killfocus-list-view-notification-code"></a>Codice \_ di notifica NM KILLFOCUS (visualizzazione elenco)
 
-Notifica alla finestra padre di un controllo visualizzazione elenco che il controllo ha perso lo stato attivo per l'input. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
+Notifica alla finestra padre di un controllo visualizzazione elenco che il controllo ha perso lo stato attivo per l'input. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -47,7 +47,7 @@ Puntatore a [**una struttura NMHDR**](/windows/desktop/api/richedit/ns-richedit-
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito per questa notifica non viene usato.
+Il valore restituito per questa notifica non viene utilizzato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,8 +55,8 @@ Il valore restituito per questa notifica non viene usato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

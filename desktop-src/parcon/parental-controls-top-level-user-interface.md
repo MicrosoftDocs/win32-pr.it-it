@@ -1,36 +1,36 @@
 ---
-description: Controlli padre Top-Level interfaccia utente
+description: Controllo genitori Top-Level Interfaccia utente
 ms.assetid: c6dfd3bc-191f-42d1-b9de-cc85a2da0a99
-title: Controlli padre Top-Level interfaccia utente
+title: Controllo genitori Top-Level Interfaccia utente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 321475097e25b812aca8d1e65f8b88843ebb1055
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 221c989a1c4aed25a15fe0942bb5f1f540246a40d349e452ce4efe518454d523
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117869178"
 ---
-# <a name="parental-controls-top-level-user-interface"></a>Controlli padre Top-Level interfaccia utente
+# <a name="parental-controls-top-level-user-interface"></a>Controllo genitori Top-Level Interfaccia utente
 
-Il collegamento forte tra la sicurezza della famiglia e gli account utente di Windows ha guidato una categoria combinata che appare come **account utente e Family Safety** nel pannello di controllo per gli SKU orientati agli utenti di Windows Vista.
+Il forte collegamento tra gli account utente Family Safety e Windows ha guidato una categoria combinata visualizzata come Account utente e **Family Safety** in Pannello di controllo per gli SKU orientati ai consumer di Windows Vista.
 
 > [!Note]  
-> La categoria verrà visualizzata come **account utente** quando viene aggiunto un computer con funzionalità di aggiunta al dominio.
+> La categoria verrà visualizzata come **Account utente quando** viene aggiunto un computer con funzionalità di aggiunta a un dominio.
 
  
 
-Se un account utente standard non è stato ancora configurato per l'utente controllato, un collegamento nel pannello di controllo fornisce un semplice flusso di lavoro per l'aggiunta di un nuovo account controllato dal padre.
+Se non è ancora stato configurato un account utente standard per l'utente controllato, un collegamento in Pannello di controllo fornisce un flusso di lavoro semplice per l'aggiunta di un nuovo account controllato dai genitori.
 
-Dopo la creazione di un account, il pannello di controllo Parental Controls espone la funzionalità di primo livello per l'utente controllato. Elementi
+Dopo la creazione di un account, il Pannello di controllo controllo genitori espone la funzionalità di primo livello per l'utente controllato. Elementi:
 
--   Le restrizioni generali dei controlli padre sono i pulsanti di opzione.
--   Pulsante di opzione per la segnalazione di attività indipendenti.
--   Una sezione delle impostazioni con le restrizioni Web implementate da Microsoft viene collegata in modo condizionale e vengono visualizzati i tipi di restrizioni implementate da Microsoft non in linea di base disponibili.
--   Una maggiore area Impostazioni visualizzata se le estensioni dell'interfaccia utente sono registrate da Microsoft o da terze parti.
--   Area di riepilogo dello stato che mostra il nome utente e il riquadro, il collegamento Visualizza report attività e lo stato delle impostazioni dei controlli padre. Se attivata, la visualizzazione include il livello di impostazione del filtro contenuto Web (se il filtro Microsoft è attivo) o il nome del filtro se sottoposto a override da un'estensione di terze parti e lo stato delle impostazioni offline per l'utente.
+-   Restrizioni generali di Controllo genitori per i pulsanti di opzione.
+-   I Rapporto attività pulsanti di opzione di controllo indipendenti.
+-   Una Impostazioni con il collegamento Restrizioni Web implementate da Microsoft visualizzato in modo condizionale e i tipi di restrizioni principali implementati da Microsoft offline disponibili.
+-   Area più Impostazioni visualizzata se Interfaccia utente estensioni sono registrate da Microsoft o da terze parti.
+-   Un'area di stato di riepilogo che mostra il nome utente e il riquadro, il collegamento View activity reports (Visualizza report attività) e lo stato delle impostazioni di Controllo genitori. Se attivata, la visualizzazione include il livello di impostazione Filtro contenuto Web (se il filtro Microsoft è attivo) o il nome del filtro se sottoposto a override da un'estensione di terze parti e lo stato delle impostazioni offline per l'utente.
 
-I controlli padre generali abilitano il pulsante di opzione inizialmente impostato sullo stato disattivato. Una volta attivato da un amministratore, il servizio di report delle attività sarà attivato per impostazione predefinita, ma può essere disattivato in modo indipendente. Come per quasi tutte le impostazioni dei controlli padre, la configurazione può essere eseguita a livello di codice tramite le API disponibili.
+Il pulsante di opzione Abilita controllo genitori generale viene inizialmente impostato sullo stato disattivato. Se attivata da un amministratore, Rapporto attività è attivata anche per impostazione predefinita, ma può essere disattivata in modo indipendente. Come per quasi tutte le impostazioni in Controllo genitori, la configurazione può essere eseguita a livello di codice tramite le API disponibili.
 
  
 

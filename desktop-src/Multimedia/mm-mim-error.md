@@ -1,6 +1,6 @@
 ---
 title: MM_MIM_ERROR messaggio (Mmsystem.h)
-description: Il messaggio MM \_ MIM ERROR viene inviato a una finestra quando viene ricevuto un messaggio \_ MIDI non valido.
+description: Il messaggio MM MIM ERROR viene inviato a una finestra quando viene ricevuto un messaggio \_ \_ MIDI non valido.
 ms.assetid: 03760bfc-a4ef-48cd-97a9-1b93b56fc641
 keywords:
 - MM_MIM_ERROR messaggio Windows Multimediali
@@ -21,7 +21,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117802419"
 ---
-# <a name="mm_mim_error-message"></a>MESSAGGIO \_ DI ERRORE MIM \_ MM
+# <a name="mm_mim_error-message"></a>MM \_ MIM MESSAGGIO DI \_ ERRORE
 
 Il **messaggio MM MIM \_ \_ ERROR** viene inviato a una finestra quando viene ricevuto un messaggio MIDI non valido.
 
@@ -48,7 +48,7 @@ Handle per il dispositivo di input MIDI che ha ricevuto il messaggio non valido.
 <span id="lMidiMessage"></span><span id="lmidimessage"></span><span id="LMIDIMESSAGE"></span>*lMidiMessage*
 </dt> <dd>
 
-Messaggio MIDI non valido. Il messaggio viene inserito in un **valore DWORD** con il primo byte del messaggio nel byte di ordine basso.
+Messaggio MIDI non valido. Il messaggio viene inserito in un **valore DWORD** con il primo byte del messaggio nel byte di ordine più basso.
 
 </dd> </dl>
 
@@ -72,7 +72,7 @@ Questo messaggio non restituisce un valore.
 
 <dl> <dt>
 
-[MidI (Musical Instrument Digital Interface)](musical-instrument-digital-interface--midi.md)
+[Instrument Digital Interface (MIDI)](musical-instrument-digital-interface--midi.md)
 </dt> <dt>
 
 [Messaggi MIDI](midi-messages.md)

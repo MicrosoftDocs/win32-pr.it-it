@@ -1,5 +1,5 @@
 ---
-description: Questa sezione contiene argomenti concettuali e procedure che descrivono Windows decodificatori bitmap WIC (Windows Imaging Component) usati nella decodifica di immagini digitali.
+description: Questa sezione contiene argomenti concettuali e procedure che descrivono Windows decodificatori bitmap WIC (Imaging Component) usati nella decodifica di immagini digitali.
 ms.assetid: a5d166f1-341b-496e-b63f-ecfae89032ff
 title: Decodifica di immagini digitali
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118711326"
 ---
 # <a name="decoding-digital-images"></a>Decodifica di immagini digitali
 
-Questa sezione contiene argomenti concettuali e procedure che descrivono Windows decodificatori bitmap WIC (Windows Imaging Component) usati nella decodifica di immagini digitali.
+Questa sezione contiene argomenti concettuali e procedure che descrivono Windows decodificatori bitmap WIC (Imaging Component) usati nella decodifica di immagini digitali.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

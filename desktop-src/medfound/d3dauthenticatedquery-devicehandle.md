@@ -29,7 +29,7 @@ Restituisce un handle al dispositivo associato a questo canale autenticato. È p
 | Requisito | Valore |
 |-------------|----------------------------------------------------------------------------------------------------------------|
 | Query GUID  | **D3DAUTHENTICATEDQUERY \_ DEVICEHANDLE**                                                                        |
-| Dati di input  | [**INPUT DELLA QUERY D3DAUTHENTICATEDCHANNEL \_ \_**](d3dauthenticatedchannel-query-input.md)                           |
+| Dati di input  | [**INPUT DI QUERY D3DAUTHENTICATEDCHANNEL \_ \_**](d3dauthenticatedchannel-query-input.md)                           |
 | Restituisce i dati | [**OUTPUT DI D3DAUTHENTICATEDCHANNEL \_ QUERYDEVICEHANDLE \_**](d3dauthenticatedchannel-querydevicehandle-output.md) |
 
 
@@ -59,7 +59,7 @@ Questa query è valida per tutti i tipi di canale.
 [protezione del contenuto query](content-protection-queries.md)
 </dt> <dt>
 
-[Criteri basati su GPU protezione del contenuto](gpu-based-content-protection.md)
+[Impostazioni basate su GPU protezione del contenuto](gpu-based-content-protection.md)
 </dt> <dt>
 
 [**IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)

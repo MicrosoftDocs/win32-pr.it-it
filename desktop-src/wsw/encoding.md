@@ -20,7 +20,7 @@ ms.locfileid: "119026539"
 La codifica è una trasformazione tra XML e un formato di collegamento lineare. La decodifica è la trasformazione inversa.
 
 
-Una codifica viene identificata usando una [**costante \_ WS ENCODING.**](/windows/desktop/api/WebServices/ne-webservices-ws_encoding)
+Una codifica viene identificata utilizzando una [**costante WS \_ ENCODING.**](/windows/desktop/api/WebServices/ne-webservices-ws_encoding)
 
  
 

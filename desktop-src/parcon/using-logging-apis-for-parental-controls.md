@@ -88,7 +88,7 @@ void main()
 
 ### <a name="custom-logging"></a>Registrazione personalizzata
 
-Per estendere gli eventi registrati all'esterno del set di eventi predefiniti o di un tipo personalizzato, è necessario definire un provider per tale evento nel manifesto dell'applicazione. Il canale predefinito WPC può quindi essere importato e gli eventi definiti dall'applicazione possono quindi essere registrati.
+Per estendere gli eventi registrati all'esterno del set di eventi predefiniti o di un tipo personalizzato, è necessario definire un provider per tale evento nel manifesto dell'applicazione. Il canale predefinito WPC può quindi essere importato e gli eventi definiti dall'applicazione possono essere registrati.
 
 ### <a name="logging-rights"></a>Diritti di registrazione
 
@@ -102,7 +102,7 @@ I file di log vengono archiviati nella Windows \\ System32 \\ Wpc \\ Logs.
 
 ### <a name="notification-of-impending-time-limits-logout"></a>Notifica della disconnessione dei limiti di tempo imminenti
 
-Il sistema Controllo genitori genera un evento di avviso a 15 minuti e di nuovo a 1 minuto prima della disconnessione di un utente controllato in base alle restrizioni di tempo. Le applicazioni possono sottoscrivere questi eventi, soprattutto quando sono in esecuzione in modalità schermo intero DirectX in cui le notifiche Windows standard non vengono visualizzate. Viene fornito codice di esempio che illustra come sottoscrivere gli eventi, registrare una funzione di callback e ricevere gli eventi.
+Il sistema Controllo genitori genera un evento di avviso a 15 minuti e di nuovo a 1 minuto prima della disconnessione di un utente controllato in base alle restrizioni di tempo. Le applicazioni possono sottoscrivere questi eventi, soprattutto quando sono in esecuzione in modalità schermo intero DirectX in cui le notifiche Windows standard non vengono visualizzate. Viene fornito il codice di esempio che illustra come sottoscrivere gli eventi, registrare una funzione di callback e ricevere gli eventi.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -1,6 +1,6 @@
 ---
-title: Funzionalità di Geometry shader
-description: Funzionalità di Geometry shader
+title: Funzionalità geometry shader
+description: Funzionalità geometry shader
 ms.assetid: 0d34ab79-fca2-47c2-a614-627886ba9d8f
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7fff209092e54ad2efa135a86b2a892c5011e983
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ccecb8d527f91da632921ed3b108856e2990559292bb1d70d93562e9e3630845
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117906628"
 ---
-# <a name="geometry-shader-features"></a>Funzionalità di Geometry shader
+# <a name="geometry-shader-features"></a>Funzionalità geometry shader
 
-Questa sezione contiene informazioni generali sulle nuove funzionalità di Geometry shader introdotte in Shader Model 5.
+Questa sezione contiene informazioni generali sulle nuove funzionalità di geometry shader introdotte nel modello shader 5.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -26,8 +26,8 @@ Questa sezione contiene informazioni generali sulle nuove funzionalità di Geome
 
 | Elemento                                                                                                                                                                                                                                                                | Descrizione                                                                               |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| <span id="How_To__Index_Multiple_Output_Streams"></span><span id="how_to__index_multiple_output_streams"></span><span id="HOW_TO__INDEX_MULTIPLE_OUTPUT_STREAMS"></span>[Procedura: indicizzare più flussi di output](overviews-direct3d-11-hlsl-gs-index.md)<br/> | Utilizzare l'indicizzazione per dichiarare fino a quattro flussi di output in un singolo geometry shader.<br/> |
-| <span id="How_To__Instance_a_Geometry_Shader"></span><span id="how_to__instance_a_geometry_shader"></span><span id="HOW_TO__INSTANCE_A_GEOMETRY_SHADER"></span>[Procedura: eseguire l'istanza di un geometry shader](overviews-direct3d-11-hlsl-gs-instance.md)<br/>          | Eseguire una o più istanze di un geometry shader per primitive.<br/>              |
+| <span id="How_To__Index_Multiple_Output_Streams"></span><span id="how_to__index_multiple_output_streams"></span><span id="HOW_TO__INDEX_MULTIPLE_OUTPUT_STREAMS"></span>[Procedura: Indicizzare più output Flussi](overviews-direct3d-11-hlsl-gs-index.md)<br/> | Usare l'indicizzazione per dichiarare fino a quattro flussi di output in un singolo geometry shader.<br/> |
+| <span id="How_To__Instance_a_Geometry_Shader"></span><span id="how_to__instance_a_geometry_shader"></span><span id="HOW_TO__INSTANCE_A_GEOMETRY_SHADER"></span>[Procedura: Creare un'istanza di uno shader geometrico](overviews-direct3d-11-hlsl-gs-instance.md)<br/>          | Eseguire una o più istanze di un geometry shader per primitiva.<br/>              |
 
 
 
@@ -37,7 +37,7 @@ Questa sezione contiene informazioni generali sulle nuove funzionalità di Geome
 
 <dl> <dt>
 
-[HLSL Shader Model 5](overviews-direct3d-11-hlsl.md)
+[Modello di shader HLSL 5](overviews-direct3d-11-hlsl.md)
 </dt> </dl>
 
  

@@ -1,12 +1,12 @@
 ---
-title: Proprietà GatewayEncryptedAuthCookie di IMsRdpClientTransportSettings3
+title: Proprietà IMsRdpClientTransportSettings3 GatewayEncryptedAuthCookie
 description: Cookie di autenticazione crittografato.
 ms.assetid: c9ab6667-327c-44f8-a10e-b048ea91980c
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà GatewayEncryptedAuthCookie
-- Servizi Desktop remoto proprietà GatewayEncryptedAuthCookie, interfaccia IMsRdpClientTransportSettings3
-- Interfaccia IMsRdpClientTransportSettings3 Servizi Desktop remoto, proprietà GatewayEncryptedAuthCookie
+- Proprietà GatewayEncryptedAuthCookie Servizi Desktop remoto
+- Proprietà GatewayEncryptedAuthCookie Servizi Desktop remoto , interfaccia IMsRdpClientTransportSettings3
+- Interfaccia IMsRdpClientTransportSettings3 Servizi Desktop remoto , proprietà GatewayEncryptedAuthCookie
 topic_type:
 - apiref
 api_name:
@@ -19,16 +19,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f3949d36f25f2029d7b134943b4e57d8a13db798
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6c05a83d3b6891bfb8173a45935dcd73ad9ad65db5643d093306eda6e5d1cb20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104340683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000881"
 ---
-# <a name="imsrdpclienttransportsettings3gatewayencryptedauthcookie-property"></a>Proprietà IMsRdpClientTransportSettings3:: GatewayEncryptedAuthCookie
+# <a name="imsrdpclienttransportsettings3gatewayencryptedauthcookie-property"></a>Proprietà IMsRdpClientTransportSettings3::GatewayEncryptedAuthCookie
 
-Cookie di autenticazione crittografato. La dimensione della proprietà è specificata dalla proprietà [**GatewayEncryptedAuthCookieSize**](imsrdpclienttransportsettings3-gatewayencryptedauthcookiesize.md) .
+Cookie di autenticazione crittografato. Le dimensioni della proprietà vengono specificate dalla [**proprietà GatewayEncryptedAuthCookieSize.**](imsrdpclienttransportsettings3-gatewayencryptedauthcookiesize.md)
 
 Si tratta di una proprietà di lettura/scrittura.
 

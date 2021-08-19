@@ -106,7 +106,7 @@ Nuovo stato. Le informazioni vengono inserite nella **proprietà RequestedState*
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Reimposta** (11)
+**Reimpostazione** (11)
 
 
 </dt> <dd></dd> <dt>

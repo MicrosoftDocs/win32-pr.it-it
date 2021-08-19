@@ -1,5 +1,5 @@
 ---
-description: L'esempio seguente illustra come utilizzare i dati degli eventi usando la funzione TdhFormatProperty.
+description: L'esempio seguente illustra come usare i dati degli eventi usando la funzione TdhFormatProperty.
 ms.assetid: 5ebd500c-420e-4979-a03a-49b687464b0e
 title: Uso di TdhFormatProperty per utilizzare i dati degli eventi
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118951230"
 ---
 # <a name="using-tdhformatproperty-to-consume-event-data"></a>Uso di TdhFormatProperty per utilizzare i dati degli eventi
 
-L'esempio seguente illustra come utilizzare i dati degli eventi usando la [**funzione TdhFormatProperty.**](/windows/desktop/api/Tdh/nf-tdh-tdhformatproperty)
+L'esempio seguente illustra come usare i dati degli eventi usando [**la funzione TdhFormatProperty.**](/windows/desktop/api/Tdh/nf-tdh-tdhformatproperty)
 
 
 ```C++

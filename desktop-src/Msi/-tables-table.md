@@ -1,5 +1,5 @@
 ---
-description: La \_ tabella Tables è una tabella di sistema di sola lettura che elenca tutte le tabelle nel database. Eseguire una query su questa tabella per verificare se esiste una tabella.
+description: La tabella Tables è una tabella di sistema di sola \_ lettura che elenca tutte le tabelle nel database. Eseguire una query su questa tabella per determinare se esiste una tabella.
 ms.assetid: d064855b-8c10-476e-9570-cc3ab48ae998
 title: _Tables tabella
 ms.topic: article
@@ -11,11 +11,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119013319"
 ---
-# <a name="_tables-table"></a>\_Tabella tabelle
+# <a name="_tables-table"></a>\_Tabella Tabelle
 
-La \_ tabella Tables è una tabella di sistema di sola lettura che elenca tutte le tabelle nel database. Eseguire una query su questa tabella per verificare se esiste una tabella.
+La tabella Tables è una tabella di sistema di sola \_ lettura che elenca tutte le tabelle nel database. Eseguire una query su questa tabella per determinare se esiste una tabella.
 
-La \_ tabella Tables include la colonna seguente.
+La \_ tabella Tabelle include la colonna seguente.
 
 
 

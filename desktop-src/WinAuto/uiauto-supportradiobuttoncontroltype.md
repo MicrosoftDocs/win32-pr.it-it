@@ -52,7 +52,7 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="typical-tree-structure"></a>Struttura ad albero tipica
 
-La tabella seguente illustra un controllo tipico e una visualizzazione contenuto dell'albero Automazione interfaccia utente relativo ai controlli pulsante di opzione e descrive gli elementi che possono essere contenuti in ogni visualizzazione. Per altre informazioni sull'albero Automazione interfaccia utente, vedere panoramica [Automazione interfaccia utente albero di .](uiauto-treeoverview.md)
+La tabella seguente illustra un controllo tipico e una visualizzazione contenuto dell'albero Automazione interfaccia utente relativo ai controlli pulsante di opzione e descrive gli elementi che possono essere contenuti in ogni visualizzazione. Per altre informazioni sull'albero Automazione interfaccia utente, vedere panoramica Automazione interfaccia utente [albero.](uiauto-treeoverview.md)
 
 
 
@@ -97,7 +97,7 @@ La tabella seguente elenca le Automazione interfaccia utente il cui valore o la 
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vedere le note.      | Il rettangolo più esterno che contiene l'intero controllo.                                                                                      |
 | [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vedere le note.      | Il punto selezionabile deve essere un punto che, quando selezionato, seleziona il pulsante di opzione.                                                             |
 | [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **RadioButton** |                                                                                                                                               |
-| [**\_IsContentElementPropertyId dell'interfaccia utente**](uiauto-automation-element-propids.md)         | true            | Il controllo pulsante di opzione è sempre incluso nella visualizzazione contenuto dell'Automazione interfaccia utente albero.                                                    |
+| [**IsContentElementPropertyId dell'interfaccia \_ utente**](uiauto-automation-element-propids.md)         | true            | Il controllo pulsante di opzione è sempre incluso nella visualizzazione contenuto dell'Automazione interfaccia utente albero.                                                    |
 | [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | true            | Il controllo pulsante di opzione è sempre incluso nella visualizzazione controlli dell'Automazione interfaccia utente albero.                                                    |
 | [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | Vedere le note.      | Se il controllo può ricevere lo stato attivo, deve supportare questa proprietà.                                                                     |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | NULL            | I controlli pulsante di opzione sono auto-etichettati in base al relativo contenuto.                                                                                     |
@@ -130,7 +130,7 @@ La tabella seguente elenca gli eventi Automazione interfaccia utente che i contr
 
 
 
-| Automazione interfaccia utente eventi                                                                                                                     | Note                                                                                                                          |
+| Automazione interfaccia utente evento                                                                                                                     | Note                                                                                                                          |
 |-----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | [**UIA \_ AutomationFocusChangedEventId**](uiauto-event-ids.md)                                        |                                                                                                                                |
 | [**Interfaccia \_ utente Evento di modifica della proprietà BoundingRectanglePropertyId.**](uiauto-automation-element-propids.md)   |                                                                                                                                |
@@ -146,7 +146,7 @@ La tabella seguente elenca gli eventi Automazione interfaccia utente che i contr
 
 ## <a name="remarks"></a>Commenti
 
-Un pulsante di opzione rappresenta una singola opzione selezionabile tra un gruppo di pulsanti di opzione peer. Idealmente, i pulsanti di opzione devono avere un elemento di raggruppamento che chiarisca i limiti dei pulsanti di opzione peer. Spesso, tuttavia, il limite è implicito nella struttura degli elementi dell'interfaccia utente. Ad esempio, un menu potrebbe contenere un set di pulsanti di opzione consecutivi anziché voci di menu o un set di pulsanti di opzione che si verificano dopo un'etichetta di gruppo, ma prima di un elemento di azione, ad esempio button.
+Un pulsante di opzione rappresenta una singola opzione selezionabile tra un gruppo di pulsanti di opzione peer. Idealmente, i pulsanti di opzione devono avere un elemento di raggruppamento che chiarisca i limiti dei pulsanti di opzione peer. Spesso, tuttavia, il limite è implicito nella struttura degli elementi dell'interfaccia utente. Ad esempio, un menu può contenere un set di pulsanti di opzione consecutivi anziché voci di menu o un set di pulsanti di opzione che si verificano dopo un'etichetta di gruppo, ma prima di un elemento utilizzabile come pulsante.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

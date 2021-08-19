@@ -24,16 +24,16 @@ api_type:
 api_location:
 - WmiProv.dll
 ms.custom: project-verbatim
-ms.openlocfilehash: 485b42a86ca67d15ec00be13992c17b31ed51608
-ms.sourcegitcommit: af120ad5c30da2fc5eb717ca2a1c4c45878efd71
+ms.openlocfilehash: 552e66a4e3a0c6f120bcc95123e3a2674fc579457de16c9ef8cd1e80161f175e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "106323873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051149"
 ---
 # <a name="wmimonitorid-class"></a>Classe WmiMonitorID
 
-La classe WMI **WmiMonitorID** rappresenta le informazioni di identificazione relative a un monitor video, ad esempio il nome del produttore, l'anno di produzione o il numero di serie. I dati in questa classe corrispondono ai dati nel blocco di identificazione del fornitore/prodotto della definizione di input video dello standard EDID (video Electronics Standard Association) avanzato.
+La classe WMI **WmiMonitorID** rappresenta le informazioni di identificazione relative a un monitor video, ad esempio il nome del produttore, l'anno di produzione o il numero di serie. I dati in questa classe corrispondono ai dati nel blocco Vendor/Product Identification della definizione di input video dello standard VESA (Video Electronics Standard Association) Enhanced Extended Display Identification Data (E-EDID).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,20 +55,20 @@ class WmiMonitorID : MSMonitorClass
 
 ## <a name="members"></a>Members
 
-La classe **WmiMonitorID** dispone di questi tipi di membri:
+La **classe WmiMonitorID** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **WmiMonitorID** dispone di queste proprietà.
+La **classe WmiMonitorID** dispone di queste proprietà.
 
 <dl> <dt>
 
 **Attivo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -81,13 +81,13 @@ Indica il monitoraggio attivo.
 **InstanceName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
 Nome dell'istanza di monitoraggio specifica.
@@ -97,7 +97,7 @@ Nome dell'istanza di monitoraggio specifica.
 **ManufacturerName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -110,20 +110,20 @@ Nome del produttore.
 **ManufacturerNameLength**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Lunghezza del nome del produttore che si trova nella proprietà **manufacturname** .
+Lunghezza del nome del produttore che si trova nella **proprietà ManufacturerName.**
 
 </dd> <dt>
 
 **ProductCodeID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -136,7 +136,7 @@ ID del codice prodotto assegnato dal fornitore.
 **SerialNumberID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -149,20 +149,20 @@ Numero di serie.
 UserFriendlyName
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome descrittivo del monitoraggio. Le dimensioni del nome corrispondono alla lunghezza specificata dalla proprietà UserFriendlyNameLength.
+Nome descrittivo del monitoraggio. La dimensione del nome è la lunghezza specificata dalla proprietà UserFriendlyNameLength.
 
 </dd> <dt>
 
 UserFriendlyNameLength
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -175,7 +175,7 @@ Numero di caratteri nel nome che si trova nella proprietà UserFriendlyName.
 **WeekOfManufacture**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -188,7 +188,7 @@ Settimana di produzione per numero di settimana. L'intervallo è compreso tra 1 
 **YearOfManufacture**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -200,11 +200,11 @@ Anno di produzione.
 
 ## <a name="remarks"></a>Commenti
 
-Per una discussione su come tradurre gli array che archiviano gli ID dei numeri di serie, vedere l'articolo relativo alle [informazioni di monitoraggio per Reporting con Configuration Manager](/archive/blogs/kmongwa/reporting-monitor-information-with-configuration-manager) Blog.
+Per informazioni su come convertire le matrici in cui sono archiviati gli ID dei numeri di serie, vedere l'articolo del blog Reporting [Monitor information with Gestione configurazione](/archive/blogs/kmongwa/reporting-monitor-information-with-configuration-manager) (Monitoraggio report con Gestione configurazione di serie).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di PowerShell seguente viene recuperato il numero di serie di più monitoraggi.
+L'esempio di PowerShell seguente recupera il numero di serie di più monitor.
 
 
 ```PowerShell
@@ -245,8 +245,8 @@ Next
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
-| Spazio dei nomi<br/>                | \\WMI radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Wmi \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

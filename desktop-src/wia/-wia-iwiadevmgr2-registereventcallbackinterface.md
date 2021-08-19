@@ -66,7 +66,7 @@ Specifica l'identificatore univoco di un dispositivo WIA 2.0. Impostare questo p
 
 Tipo: **CONST \* GUID**
 
-Specifica un puntatore all'identificatore evento per cui l'applicazione sta registrando. Per gli identificatori di evento standard, vedere Identificatori di eventi [WIA.](-wia-wia-event-identifiers.md)
+Specifica un puntatore all'identificatore evento per cui l'applicazione sta registrando. Per gli identificatori di evento standard, vedere Identificatori di evento [WIA.](-wia-wia-event-identifiers.md)
 
 </dd> <dt>
 

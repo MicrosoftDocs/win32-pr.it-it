@@ -1,19 +1,19 @@
 ---
-description: Notifica a un'applicazione quando viene aggiornato il tipo di carattere del contesto di input. L'applicazione riceve questo comando tramite il \_ \_ messaggio di notifica dell'IME WM con le impostazioni dei parametri, come illustrato di seguito.
+description: Notifica a un'applicazione quando viene aggiornato il tipo di carattere del contesto di input. L'applicazione riceve questo comando tramite il messaggio WM \_ IME \_ NOTIFY con le impostazioni dei parametri, come illustrato di seguito.
 ms.assetid: 946bee83-91af-4647-9b22-96d42466352c
-title: Codice di notifica IMN_SETCOMPOSITIONFONT (IMM. h)
+title: IMN_SETCOMPOSITIONFONT di notifica (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8373954e80e420004b347bf1b40021c86ddbb876
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b0a5ec4fd5ba8237a1fbba9be3878037c37dc74c2e07f29026ca89ead91512f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118949191"
 ---
-# <a name="imn_setcompositionfont-notification-code"></a>\_Codice di notifica SETCOMPOSITIONFONT di IMN
+# <a name="imn_setcompositionfont-notification-code"></a>Codice di notifica \_ IMN SETCOMPOSITIONFONT
 
-Notifica a un'applicazione quando viene aggiornato il tipo di carattere del contesto di input. L'applicazione riceve questo comando tramite il messaggio di [**\_ \_ notifica dell'IME WM**](wm-ime-notify.md) con le impostazioni dei parametri, come illustrato di seguito.
+Notifica a un'applicazione quando viene aggiornato il tipo di carattere del contesto di input. L'applicazione riceve questo comando tramite il [**messaggio WM \_ IME \_ NOTIFY**](wm-ime-notify.md) con le impostazioni dei parametri, come illustrato di seguito.
 
 
 ```C++
@@ -26,14 +26,14 @@ IMN_SETCOMPOSITIONFONT
 
 <dl> <dt>
 
-<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*wParam*
+<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*Wparam*
 </dt> <dd>
 
 Impostare su IMN \_ SETCOMPOSITIONFONT.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
 Non usato.
@@ -42,11 +42,11 @@ Non usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo comando non restituisce alcun valore.
+Questo comando non ha alcun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-L'applicazione può ottenere informazioni sul tipo di carattere tramite la funzione [**ImmGetCompositionFont**](/windows/desktop/api/Imm/nf-imm-immgetcompositionfonta) . La finestra IME utilizza successivamente il tipo di carattere per creare la stringa di composizione.
+L'applicazione può ottenere informazioni sul tipo di carattere usando la [**funzione ImmGetCompositionFont.**](/windows/desktop/api/Imm/nf-imm-immgetcompositionfonta) La finestra IME usa successivamente il tipo di carattere per disegnare la stringa di composizione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,7 +56,7 @@ L'applicazione può ottenere informazioni sul tipo di carattere tramite la funzi
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>Imm. h (Includi Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Imm.h (include Windows.h)</dt> </dl> |
 
 
 
@@ -64,16 +64,16 @@ L'applicazione può ottenere informazioni sul tipo di carattere tramite la funzi
 
 <dl> <dt>
 
-[Gestione metodo di input](input-method-manager.md)
+[Gestione metodi di input](input-method-manager.md)
 </dt> <dt>
 
-[Comandi di input Method Manager](input-method-manager-commands.md)
+[Comandi di Gestione metodi di input](input-method-manager-commands.md)
 </dt> <dt>
 
 [**ImmGetCompositionFont**](/windows/desktop/api/Imm/nf-imm-immgetcompositionfonta)
 </dt> <dt>
 
-[**\_notifica IME \_ WM**](wm-ime-notify.md)
+[**NOTIFICA \_ IME \_ WM**](wm-ime-notify.md)
 </dt> </dl>
 
  

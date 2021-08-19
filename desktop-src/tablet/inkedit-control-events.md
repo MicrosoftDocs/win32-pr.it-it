@@ -17,7 +17,7 @@ La tabella seguente descrive i thread su cui possono essere generati gli eventi 
 
 
 
-| Evento                                                                          | Thread                                                          |
+| Event                                                                          | Thread                                                          |
 |--------------------------------------------------------------------------------|------------------------------------------------------------------|
 | [**Cambiare**](inkedit-change.md)                                               | Viene generato sul thread dell'interfaccia utente dell'applicazione<br/> |
 | [**Clic**](inkedit-click.md)                                                 | Viene generato nel thread dell'interfaccia utente dell'applicazione<br/>                  |

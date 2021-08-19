@@ -15,7 +15,7 @@ ms.locfileid: "118972170"
 
 ## <a name="purpose"></a>Scopo
 
-L'API Di streaming multimediale modella i dispositivi DmR (Digital Media Renderer) e Digital Media Server (DMS) in base alle linee guida DLNA per un facile uso a livello di codice, consentendo agli sviluppatori di creare applicazioni con le funzionalità Digital Media Controller (DMC), Digital Media Player (DMP) e Push Controller (+PU+), come definito dalle linee guida DLNA.
+L'API Streaming multimediale modella i dispositivi Digital Media Renderer (DMR) e Digital Media Server (DMS), come definito dalle linee guida DLNA per un facile uso a livello di codice, consentendo agli sviluppatori di creare applicazioni con le funzionalità Digital Media Controller (DMC), Digital Media Player (DMP) e Push Controller (+PU+) come definito dalle linee guida DLNA.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -36,7 +36,7 @@ L'API Di streaming multimediale modella i dispositivi DmR (Digital Media Rendere
 
 ## <a name="developer-audience"></a>Sviluppatori
 
-L'API Streaming multimediale è progettata per l'uso da parte degli sviluppatori C++ che creano applicazioni multimediali digitali che interagiscono con dispositivi DLNA.
+L'API Streaming multimediale è progettata per l'uso da parte degli sviluppatori C++ che creano applicazioni multimediali digitali che interagiscono con i dispositivi DLNA.
 
  
 

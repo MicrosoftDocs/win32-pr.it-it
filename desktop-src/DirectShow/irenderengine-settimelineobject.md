@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetTimelineObject imposta la sequenza temporale per il motore di rendering da usare.
+description: Il metodo SetTimelineObject imposta la sequenza temporale da usare per il motore di rendering.
 ms.assetid: 9b60b148-9768-43ba-a986-a96838c4d2bb
-title: 'Metodo IRenderEngine:: SetTimelineObject (qedit. h)'
+title: Metodo IRenderEngine::SetTimelineObject (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 954fab15e92e6111439abb66d53d53525a5afdb5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb7862f247181d9aed6123e90507ed119594306a8d84be59ddd5204a816b33fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952490"
 ---
-# <a name="irenderenginesettimelineobject-method"></a>Metodo IRenderEngine:: SetTimelineObject
+# <a name="irenderenginesettimelineobject-method"></a>Metodo IRenderEngine::SetTimelineObject
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il `SetTimelineObject` metodo imposta la sequenza temporale per il motore di rendering da usare.
+Il `SetTimelineObject` metodo imposta la sequenza temporale da usare per il motore di rendering.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,22 +48,22 @@ HRESULT SetTimelineObject(
 *pTimeline* 
 </dt> <dd>
 
-Puntatore all'interfaccia [**IAMTimeline**](iamtimeline.md) dell'oggetto della sequenza temporale.
+Puntatore all'interfaccia [**IAMTimeline dell'oggetto sequenza**](iamtimeline.md) temporale.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei seguenti valori **HRESULT** :
+Restituisce uno dei valori **HRESULT** seguenti:
 
 
 
 | Codice restituito                                                                                            | Descrizione                                    |
 |--------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                   | Esito positivo.<br/>                            |
-| <dl> <dt>**E \_ deve \_ inizializzare il \_ RENDERER**</dt> </dl> | Impossibile inizializzare il motore di rendering.<br/> |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl>          | Memoria insufficiente.<br/>                |
-| <dl> <dt>**\_puntatore E**</dt> </dl>              | Puntatore non valido.<br/>                    |
+| <dl> <dt>**S \_ OK**</dt> </dl>                   | Operazione completata.<br/>                            |
+| <dl> <dt>**E \_ DEVE \_ ESSERE INIT \_ RENDERER**</dt> </dl> | Impossibile inizializzare il motore di rendering.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>          | Memoria insufficiente.<br/>                |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>              | Puntatore non valido.<br/>                    |
 
 
 
@@ -72,12 +72,12 @@ Restituisce uno dei seguenti valori **HRESULT** :
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -87,8 +87,8 @@ Restituisce uno dei seguenti valori **HRESULT** :
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

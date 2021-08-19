@@ -3,8 +3,8 @@ title: Elemento ScheduleByWeek (calendarTriggerType)
 description: Specifica una pianificazione settimanale.
 ms.assetid: d2c33e76-0564-4b3c-ab86-e7bca667fa4f
 keywords:
-- Utilità di pianificazione trigger settimanale, elemento XML
-- Utilità di pianificazione elemento ScheduleByWeek
+- trigger settimanale Utilità di pianificazione elemento XML
+- Elemento ScheduleByWeek Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2d5ab62a0c39c4c1d0102edcdb96d310e9315820
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ddf37c6261ba28c4cb4f59c47ee8ebd8c09afc4e36c3d1aa218efe8caa81e8c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002279"
 ---
 # <a name="schedulebyweek-calendartriggertype-element"></a>Elemento ScheduleByWeek (calendarTriggerType)
 
-Specifica una pianificazione settimanale. Ad esempio, l'attività inizia alle 8:00 in un giorno specifico della settimana ogni settimana o in un giorno specifico della settimana ogni altra settimana.
+Specifica una pianificazione settimanale. Ad esempio, l'attività inizia alle 8:00 di un giorno specifico della settimana ogni settimana o in un giorno specifico della settimana ogni altra settimana.
 
 ``` syntax
 <xs:element name="ScheduleByWeek"
@@ -31,7 +31,7 @@ Specifica una pianificazione settimanale. Ad esempio, l'attività inizia alle 8:
  />
 ```
 
-L'elemento **ScheduleByWeek** è definito dal tipo complesso [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) .
+**L'elemento ScheduleByWeek** è definito dal [**tipo complesso calendarTriggerType.**](taskschedulerschema-calendartriggertype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -39,7 +39,7 @@ L'elemento **ScheduleByWeek** è definito dal tipo complesso [**calendarTriggerT
 
 | Elemento                                                                             | Derivato da                                                                       | Descrizione                                                                                |
 |-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md) | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) | Specifica un trigger giornaliero, settimanale, mensile o mensile (DOW) per il giorno della settimana.<br/> |
+| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md) | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) | Specifica un trigger giornaliero, settimanale, mensile o mensile del giorno della settimana.<br/> |
 
 
 
@@ -56,17 +56,17 @@ L'elemento **ScheduleByWeek** è definito dal tipo complesso [**calendarTriggerT
 
 ## <a name="remarks"></a>Commenti
 
-Gli elementi figlio elencati sopra sono definiti dai tipi di elemento complessi [**weeklyScheduleType**](taskschedulerschema-weeklyscheduletype-complextype.md) .
+Gli elementi figlio elencati in precedenza sono definiti dai tipi [**di elemento complessi weeklyScheduleType.**](taskschedulerschema-weeklyscheduletype-complextype.md)
 
-L'ora del giorno in cui l'attività viene avviata viene impostata dall'elemento [**StartBoundary**](taskschedulerschema-startboundary-triggerbasetype-element.md) .
+L'ora del giorno in cui l'attività viene avviata viene impostata [**dall'elemento StartBoundary.**](taskschedulerschema-startboundary-triggerbasetype-element.md)
 
-Per lo sviluppo di script, viene specificato un trigger settimanale usando l'oggetto [**WeeklyTrigger**](weeklytrigger.md) .
+Per lo sviluppo di script, viene specificato un trigger settimanale usando [**l'oggetto WeeklyTrigger.**](weeklytrigger.md)
 
-Per lo sviluppo in C++, viene specificato un trigger settimanale usando l'interfaccia [**IWeeklyTrigger**](/windows/desktop/api/taskschd/nn-taskschd-iweeklytrigger) .
+Per lo sviluppo in C++, viene specificato un trigger settimanale usando [**l'interfaccia IWeeklyTrigger.**](/windows/desktop/api/taskschd/nn-taskschd-iweeklytrigger)
 
 ## <a name="examples"></a>Esempio
 
-Il codice XML seguente definisce un trigger di calendario settimanale che avvia un'attività dal lunedì al venerdì (alle 8:00 AM) ogni settimana.
+Il codice XML seguente definisce un trigger di calendario settimanale che avvia un'attività dal lunedì al venerdì (alle 8:00) ogni settimana.
 
 
 ```XML
@@ -94,8 +94,8 @@ Il codice XML seguente definisce un trigger di calendario settimanale che avvia 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -103,7 +103,7 @@ Il codice XML seguente definisce un trigger di calendario settimanale che avvia 
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

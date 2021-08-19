@@ -13,7 +13,7 @@ ms.locfileid: "118919910"
 ---
 # <a name="querying-the-attributes-of-an-schannel-credential"></a>Esecuzione di query degli attributi di una credenziale Schannel
 
-La [**funzione QueryCredentialsAttributes**](/windows/desktop/api/Sspi/nf-sspi-querycredentialsattributesa) fornisce informazioni specifiche di Schannel su una credenziale. Queste informazioni vengono originariamente specificate al momento della creazione delle credenziali. Per altre informazioni, vedere [Recupero di credenziali Schannel](obtaining-schannel-credentials.md). Le informazioni segnalate da questa funzione sono valide per tutte le connessioni ([*contesti di sicurezza*](../secgloss/s-gly.md)) create usando le credenziali specificate.
+La [**funzione QueryCredentialsAttributes**](/windows/desktop/api/Sspi/nf-sspi-querycredentialsattributesa) fornisce informazioni specifiche di Schannel su una credenziale. Queste informazioni vengono originariamente specificate al momento della creazione delle credenziali. Per altre informazioni, vedere [Recupero di credenziali Schannel](obtaining-schannel-credentials.md). Le informazioni segnalate da questa funzione sono valide per tutte le connessioni ([*contesti di*](../secgloss/s-gly.md)sicurezza ) create usando le credenziali specificate.
 
  
 

@@ -23,7 +23,7 @@ La modalità di registrazione può essere impostata tramite criteri, un'opzione 
 
 Impostare il valore denominato Logging nella chiave del Registro di sistema seguente.
 
-**HKEY \_ Criteri \_ software di LOCAL MACHINE** \\  \\  \\ **Microsoft** \\ **Windows** \\ **Installer**
+**HKEY \_ Criteri \_ software del computer** \\  \\ **locale** \\ **Microsoft** \\ **Windows** \\ **Installer**
 
 ## <a name="data-type"></a>Tipo di dati
 

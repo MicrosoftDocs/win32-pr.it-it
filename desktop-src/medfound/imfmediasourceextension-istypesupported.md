@@ -48,7 +48,7 @@ Tipo di supporto per cui verificare il supporto.
 
 ## <a name="return-value"></a>Valore restituito
 
-**true** se il tipo di supporto è supportato; in caso contrario, **false.**
+**true** se il tipo di supporto è supportato; in caso contrario, **false**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,7 +57,7 @@ Tipo di supporto per cui verificare il supporto.
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                 |
-| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                      |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                      |
 | Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 

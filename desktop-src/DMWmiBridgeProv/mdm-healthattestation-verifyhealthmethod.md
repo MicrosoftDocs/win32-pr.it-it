@@ -1,6 +1,6 @@
 ---
 title: Metodo VerifyHealthMethod della classe MDM_HealthAttestation
-description: Metodo per inviare una notifica al dispositivo per preparare una richiesta di verifica del certificato di integrità. Vedere anche VerifyHealth.
+description: Metodo per notificare al dispositivo di preparare una richiesta di verifica del certificato di integrità. Vedere anche VerifyHealth.
 ms.assetid: f5b11081-c664-4525-8f36-5f17c21e7f22
 keywords:
 - Metodo VerifyHealthMethod
@@ -25,9 +25,9 @@ ms.locfileid: "119077211"
 ---
 # <a name="verifyhealthmethod-method-of-the-mdm_healthattestation-class"></a>Metodo VerifyHealthMethod della classe \_ HealthAttestation MDM
 
-\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Metodo per inviare una notifica al dispositivo per preparare una richiesta di verifica del certificato di integrità. Vedere anche [VerifyHealth.](/windows/client-management/mdm/healthattestation-csp)
+Metodo per notificare al dispositivo di preparare una richiesta di verifica del certificato di integrità. Vedere anche [VerifyHealth.](/windows/client-management/mdm/healthattestation-csp)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,7 +60,7 @@ Questo metodo non presenta parametri.
 
 <dl> <dt>
 
-[**Integrità \_ MDMAttestation**](mdm-healthattestation.md)
+[**MDM \_ HealthAttestation**](mdm-healthattestation.md)
 </dt> <dt>
 
 [Uso di script di PowerShell con il provider bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)

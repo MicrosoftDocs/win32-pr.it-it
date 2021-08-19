@@ -69,7 +69,7 @@ Un IME non è installato nei sistemi Microsoft Windows XP per impostazione prede
 
 ## <a name="simplified-chinese-ime"></a>IME cinese semplificato
 
-Questa sezione descrive come usare l'IME cinese semplificato (PinYin) con Microsoft Blocco note per immettere alcuni caratteri cinesi.
+Questa sezione descrive come usare l'IME cinese semplificato (PinYin) con Microsoft Blocco note immettere alcuni caratteri cinesi.
 
 1.  Avviare Blocco note (disponibile dal pulsante Start, quindi selezionare Tutti i programmi e accessori). Digitare alcuni caratteri nella Blocco note. Questi caratteri consentono di visualizzare meglio la finestra IME in un secondo momento.
 
@@ -83,7 +83,7 @@ Questa sezione descrive come usare l'IME cinese semplificato (PinYin) con Micros
 
     ![Screenshot che mostra una stringa di lettura con "n" e "i".](images/ime-sc3.png)
 
-4.  Digitare "3". A Blocco note ora è disponibile la visualizzazione seguente. Poiché N+I+3 è una pronuncia completa in Pinyin in cinese semplificato, l'IME ha informazioni sufficienti per prevedere il carattere che l'utente potrebbe aver previsto di immettere. La finestra di lettura scompare perché è stata immessa una pronuncia completa. Viene visualizzato un carattere sopra il cursore Blocco note. Questo carattere non fa parte di Blocco note, ma viene visualizzato in un'altra finestra sopra Blocco note e nasconde i caratteri esistenti nelle Blocco note sottostanti. Questa nuova finestra è denominata finestra di composizione e la stringa in essa in essa è denominata stringa di composizione. La stringa di composizione è sottolineata nella visualizzazione.
+4.  Digitare "3". A Blocco note ora è disponibile la visualizzazione seguente. Poiché N+I+3 è una pronuncia completa in Pinyin in cinese semplificato, l'IME ha informazioni sufficienti per prevedere il carattere che l'utente potrebbe aver previsto di immettere. La finestra di lettura scompare perché è stata immessa una pronuncia completa. Viene visualizzato un carattere sopra il cursore Blocco note corrente. Questo carattere non fa parte di Blocco note, ma viene visualizzato in un'altra finestra sopra Blocco note e nasconde i caratteri esistenti nelle Blocco note sottostanti. Questa nuova finestra è denominata finestra di composizione e la stringa in essa in essa è denominata stringa di composizione. La stringa di composizione è sottolineata nella visualizzazione.
 
     ![Screenshot che mostra una finestra di composizione con una stringa di composizione di un carattere.](images/ime-sc4.png)
 
@@ -91,7 +91,7 @@ Questa sezione descrive come usare l'IME cinese semplificato (PinYin) con Micros
 
     ![Screenshot che mostra una finestra di composizione con una stringa di composizione di due caratteri.](images/ime-sc5.png)
 
-6.  Premere una volta la freccia sinistra sulla tastiera. Il cursore di composizione sposta un carattere a sinistra, in corrispondenza del secondo carattere digitato. Viene visualizzata una finestra nella parte superiore Blocco note, come illustrato di seguito. Questa finestra è denominata finestra candidata. Visualizza un elenco di caratteri o frasi che corrispondono alla pronuncia digitata. È possibile selezionare la parola prevista dalle voci nell'elenco dei candidati. In questo esempio sono disponibili due caratteri candidati con la stessa pronuncia.
+6.  Premere una volta la freccia sinistra sulla tastiera. Il cursore di composizione sposta un carattere a sinistra, in corrispondenza del secondo carattere digitato. Viene visualizzata una finestra sopra la Blocco note, come illustrato di seguito. Questa finestra è denominata finestra candidata. Visualizza un elenco di caratteri o frasi che corrispondono alla pronuncia digitata. È possibile selezionare la parola prevista dalle voci nell'elenco dei candidati. In questo esempio sono disponibili due caratteri candidati con la stessa pronuncia.
 
     ![due caratteri candidati disponibili con la stessa pronuncia](images/ime-sc6.png)
 
@@ -119,7 +119,7 @@ Questa sezione descrive come usare l'IME per il cinese tradizionale (New Phoneti
 
     ![Screenshot che mostra una stringa di lettura con due caratteri.](images/ime-tc3.png)
 
-4.  Digitare "3". A Blocco note ora è disponibile la visualizzazione seguente. Poiché S+U+3 è una pronuncia completa in cinese tradizionale, l'IME ha informazioni sufficienti per anticipare il carattere che l'utente potrebbe aver previsto di immettere. La finestra di lettura scompare perché è stata immessa una pronuncia completa. Un carattere viene visualizzato sopra il cursore Blocco note testo. Questo carattere non fa parte Blocco note, ma viene visualizzato in un'altra finestra sopra Blocco note e nasconde i caratteri esistenti nelle Blocco note sottostanti. Questa nuova finestra è denominata finestra di composizione e la stringa in essa è denominata stringa di composizione. La stringa di composizione è sottolineata nella visualizzazione.
+4.  Digitare "3". Ora Blocco note visualizzazione seguente. Poiché S+U+3 è una pronuncia completa in cinese tradizionale, l'IME ha informazioni sufficienti per anticipare il carattere che l'utente potrebbe aver previsto di immettere. La finestra di lettura scompare perché è stata immessa una pronuncia completa. Un carattere viene visualizzato sopra il cursore Blocco note testo. Questo carattere non fa parte Blocco note, ma viene visualizzato in un'altra finestra sopra Blocco note e nasconde i caratteri esistenti nelle Blocco note sottostanti. Questa nuova finestra è denominata finestra di composizione e la stringa in essa è denominata stringa di composizione. La stringa di composizione è sottolineata nella visualizzazione.
 
     ![Screenshot che mostra una finestra di composizione con una stringa di composizione sottolineata.](images/ime-tc4.png)
 
@@ -135,7 +135,7 @@ Questa sezione descrive come usare l'IME per il cinese tradizionale (New Phoneti
 
     ![Screenshot che mostra una stringa di composizione aggiornata con un carattere selezionato.](images/ime-tc7.png)
 
-8.  Premere INVIO. Questo indica all'IME che la composizione è completa e che la stringa deve essere inviata all'applicazione Blocco note in questo esempio. La finestra di composizione viene chiusa e i due caratteri vengono inviati a Blocco note tramite [**WM \_ CHAR**](/windows/desktop/inputdev/wm-char). La sottolineatura non è più presente nella figura seguente perché i due caratteri visualizzati fanno parte del testo in Blocco note. Il testo esistente "ABCDEFG" in Blocco note viene spostato a destra perché sono stati inseriti altri due caratteri. A questo punto sono stati immessi due caratteri in cinese tradizionale usando un IME.
+8.  Premere INVIO. Questo indica all'IME che la composizione è completa e che la stringa deve essere inviata all'applicazione, Blocco note in questo esempio. La finestra di composizione viene chiusa e i due caratteri vengono inviati a Blocco note tramite [**WM \_ CHAR**](/windows/desktop/inputdev/wm-char). La sottolineatura non è più presente nella figura seguente perché i due caratteri visualizzati fanno parte del testo in Blocco note. Il testo esistente "ABCDEFG" in Blocco note viene spostato a destra perché sono stati inseriti altri due caratteri. A questo punto sono stati immessi due caratteri in cinese tradizionale usando un IME.
 
     ![sono stati immessi due caratteri in cinese tradizionale usando un ime](images/ime-tc8.png)
 
@@ -147,7 +147,7 @@ Questa sezione illustra l'uso dell'IME giapponese con Blocco note per immettere 
 
     ![Screenshot che mostra i caratteri che consentono di visualizzare meglio la finestra I M E in un secondo momento per il giapponese.](images/ime-j1.png)
 
-2.  Con Blocco note'applicazione attiva, fare clic sull'indicatore delle impostazioni locali di input e selezionare Giapponese. La visualizzazione dell'indicatore cambia in JP per riflettere che la nuova lingua di input è giapponese.
+2.  Con Blocco note come applicazione attiva, fare clic sull'indicatore delle impostazioni locali di input e selezionare Giapponese. La visualizzazione dell'indicatore cambia in JP per riflettere che la nuova lingua di input è il giapponese.
 
     ![Indicatore delle impostazioni locali di input per selezionare il giapponese](images/ime-j2.png)
 
@@ -171,7 +171,7 @@ Questa sezione illustra l'uso dell'IME giapponese con Blocco note per immettere 
 
     ![Screenshot che mostra la stringa di composizione aggiornata con il carattere giapponese selezionato.](images/ime-j7.png)
 
-8.  Premere INVIO. Questo indica all'IME che la composizione è completa e che la stringa deve essere inviata all'applicazione Blocco note in questo esempio. La finestra di composizione viene chiusa e i due caratteri vengono inviati a Blocco note tramite [**WM \_ CHAR**](/windows/desktop/inputdev/wm-char). La sottolineatura non è più presente nella figura seguente perché i due caratteri visualizzati fanno parte del testo in Blocco note. Il testo esistente "ABCDEFG" in Blocco note viene spostato a destra perché sono stati inseriti altri due caratteri. A questo punto sono stati immessi alcuni caratteri giapponesi usando un IME.
+8.  Premere INVIO. Questo indica all'IME che la composizione è completa e che la stringa deve essere inviata all'applicazione, Blocco note in questo esempio. La finestra di composizione viene chiusa e i due caratteri vengono inviati a Blocco note tramite [**WM \_ CHAR**](/windows/desktop/inputdev/wm-char). La sottolineatura non è più presente nella figura seguente perché i due caratteri visualizzati fanno parte del testo in Blocco note. Il testo esistente "ABCDEFG" in Blocco note viene spostato a destra perché sono stati inseriti altri due caratteri. A questo punto sono stati immessi alcuni caratteri giapponesi usando un IME.
 
     ![È stato immesso correttamente alcuni caratteri giapponesi usando un ime](images/ime-j8.png)
 
@@ -183,23 +183,23 @@ Questa sezione descrive come usare l'IME coreano con Blocco note per immettere a
 
     ![caratteri che consentono di visualizzare meglio la finestra ime in un secondo momento](images/ime-k1.png)
 
-2.  Con Blocco note come applicazione attiva, fare clic sull'indicatore delle impostazioni locali di input e selezionare Coreano. La visualizzazione dell'indicatore cambia in KO per riflettere che la nuova lingua di input è il coreano.
+2.  Con Blocco note come applicazione attiva, fare clic sull'indicatore delle impostazioni locali di input e selezionare Coreano. La visualizzazione dell'indicatore cambia in KO per riflettere che la nuova lingua di input è coreana.
 
     ![Indicatore delle impostazioni locali di input per selezionare il coreano](images/ime-k2.png)
 
-3.  Posizionare il cursore Blocco note. Premere HOME sulla tastiera in modo che il cursore si trova all'inizio della riga, quindi digitare "G". La figura seguente illustra l'aspetto della visualizzazione. L'elemento fonetico corrispondente a "G" viene visualizzato Blocco note ed è evidenziato con un cursore a blocchi. Questo carattere evidenziato è detto stringa di composizione. Si noti che, a differenza dell'IME per altre lingue, la stringa di composizione viene inviata Blocco note e inserita a sinistra del testo esistente non appena l'utente immette un singolo elemento fonetico.
+3.  Posizionare il cursore Blocco note. Premere HOME sulla tastiera in modo che il cursore si trova all'inizio della riga, quindi digitare "G". La figura seguente illustra l'aspetto della visualizzazione. L'elemento fonetico corrispondente a "G" viene visualizzato Blocco note ed è evidenziato con un cursore a blocchi. Questo carattere evidenziato è denominato stringa di composizione. Si noti che a differenza dell'IME per altre lingue, la stringa di composizione viene inviata a Blocco note e inserita a sinistra del testo esistente non appena l'utente immette un singolo elemento fonetico.
 
     ![Screenshot che mostra una stringa di composizione con un carattere inserito a sinistra del testo esistente.](images/ime-k3.png)
 
-4.  Al momento, la stringa di composizione è costituita da un carattere provvisorio perché eventuali elementi fonetici aggiuntivi immessi dall'utente modificano la stringa di composizione sul posto. Digitare ora "K", quindi "S". Si noti che il carattere provvisorio cambia a ogni pressione di tasto.
+4.  In questo momento, la stringa di composizione è costituita da un carattere provvisorio perché eventuali elementi fonetici aggiuntivi immessi dall'utente modificano la stringa di composizione sul posto. Digitare ora "K", quindi "S". Si noti che il carattere provvisorio cambia a ogni pressione di tasto.
 
     ![stringa di composizione](images/ime-k4.png)
 
-5.  A questo punto premere CTRL di destra. Viene visualizzata una finestra candidata che elenca i caratteri Hanja che è possibile selezionare per la pronuncia immessa, G+K+S.
+5.  A questo punto premere il tasto CTRL destro. Viene visualizzata una finestra candidata che elenca i caratteri Hanja che è possibile selezionare per la pronuncia immessa, G+K+S.
 
     ![Screenshot che mostra una finestra candidata con un elenco di caratteri Hanja che è possibile selezionare nella parte inferiore della finestra.](images/ime-k5.png)
 
-6.  Digitare il numero "1" per selezionare la prima voce nell'elenco. La finestra candidata viene chiusa e la stringa di composizione viene aggiornata con il carattere selezionato.
+6.  Digitare il numero "1" per selezionare la prima voce nell'elenco. La finestra candidata si chiude e la stringa di composizione viene aggiornata con il carattere selezionato.
 
     ![Stringa di composizione aggiornata con il carattere selezionato](images/ime-k6.png)
 
@@ -219,7 +219,7 @@ Questa sezione descrive come usare l'IME coreano con Blocco note per immettere a
 |-------------------------------------|------------------------------------------------------------------------------------------------------------|
 | **Sistema operativo**                | Windows XP                                                                                                 |
 | **Spazio disponibile su disco rigido**       | Almeno 230 MB                                                                                            |
-| **Percorsi dei file di lingua esterna** | Windows Disco compatto di installazione di XP o percorso di rete con Windows file di installazione di XP                |
+| **Percorsi dei file in lingua esterna** | Windows Disco compatto per l'installazione di XP o percorso di rete con Windows file di installazione di XP                |
 | **Time**                            | Circa dieci minuti per installare i file di lingua esterna; circa dieci minuti ciascuno per esaminare quattro diversi IME. |
 
 

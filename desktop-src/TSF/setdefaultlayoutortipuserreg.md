@@ -78,7 +78,7 @@ Stringa che rappresenta l'elenco di layout di tastiera o l'elenco di profili dei
 Campo di bit che specifica i flag seguenti:
 
 > [!Note]  
-> Gli identificatori seguenti non sono definiti in un file di intestazione pubblico. È necessario usare il valore esadecimale o \# definire gli identificatori. Ad esempio, per usare SDLOT NOAPPLYTOCURRENTSESSION, è necessario includere nel codice il 0x00000001 \_ \# SDLOT \_ NOAPPLYTOCURRENTSESSION.
+> Gli identificatori seguenti non sono definiti in un file di intestazione pubblico. È necessario usare il valore esadecimale o \# definire gli identificatori. Ad esempio, per usare SDLOT NOAPPLYTOCURRENTSESSION è necessario includere nel codice il 0x00000001 \_ \# SDLOT \_ NOAPPLYTOCURRENTSESSION.
 
  
 

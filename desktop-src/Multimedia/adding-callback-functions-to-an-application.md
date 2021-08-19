@@ -13,14 +13,14 @@ ms.locfileid: "118941829"
 ---
 # <a name="adding-callback-functions-to-an-application"></a>Aggiunta di funzioni di callback a un'applicazione
 
-Un'applicazione può registrare le funzioni di callback con la finestra di acquisizione in modo da notificare all'applicazione nelle circostanze seguenti:
+Un'applicazione può registrare funzioni di callback con la finestra di acquisizione in modo che invii una notifica all'applicazione nelle circostanze seguenti:
 
 -   Lo stato cambia
 -   Si verificano errori
--   Diventano disponibili buffer audio e fotogrammi video
--   L'applicazione deve produrre durante l'acquisizione dello streaming
+-   I buffer audio e dei fotogrammi video diventano disponibili
+-   L'applicazione deve cedere durante l'acquisizione di streaming
 
-Nell'esempio seguente viene creata una finestra di acquisizione e vengono registrate le funzioni di stato, errore, flusso video e callback dei fotogrammi nel ciclo di elaborazione dei messaggi di un'applicazione. Include anche un'istruzione di esempio per disabilitare una funzione di callback. Negli esempi successivi vengono mostrate semplici funzioni di callback di stato, errore e frame.
+L'esempio seguente crea una finestra di acquisizione e registra le funzioni di stato, errore, flusso video e callback dei fotogrammi nel ciclo di elaborazione dei messaggi di un'applicazione. Include anche un'istruzione di esempio per disabilitare una funzione di callback. Negli esempi successivi vengono mostrate semplici funzioni di callback di stato, errore e frame.
 
 
 ```C++

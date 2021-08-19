@@ -1,7 +1,7 @@
 ---
-description: Contiene le impostazioni utilizzate durante le operazioni di manutenzione.
+description: Contiene le impostazioni usate durante le operazioni di manutenzione.
 ms.assetid: 17dc3c97-232c-4ac4-988c-84c3061b4133
-title: Classe Msvm_ServicingSettings
+title: Msvm_ServicingSettings classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 16033583a012c71ef2150ff68dc06564e149de84
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 79a0a6a141dfd027c0d9c44e70274853d908ce6afa6cae34e9f059b0a42ffdfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104485269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950549"
 ---
-# <a name="msvm_servicingsettings-class"></a>\_Classe MSVM ServicingSettings
+# <a name="msvm_servicingsettings-class"></a>Classe Msvm \_ ServicingSettings
 
-Contiene le impostazioni utilizzate durante le operazioni di manutenzione.
+Contiene le impostazioni usate durante le operazioni di manutenzione.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,20 +39,20 @@ class Msvm_ServicingSettings
 
 ## <a name="members"></a>Members
 
-La **classe \_ ServicingSettings di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ ServicingSettings** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ ServicingSettings di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ ServicingSettings** ha queste proprietà.
 
 <dl> <dt>
 
-**Versione**
+**Version**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -68,10 +68,10 @@ Contiene la versione della definizione della classe.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

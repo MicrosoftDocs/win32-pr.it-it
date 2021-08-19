@@ -58,7 +58,7 @@ Numero massimo di output di animazione che il controller può supportare.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero massimo di set di animazione che possono essere misti.
+Numero massimo di set di animazioni che possono essere misti.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Numero massimo di set di animazioni che possono essere misti contemporaneamente.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero massimo di eventi in sospeso che il controller supporterà.
+Numero massimo di eventi in sospeso supportati dal controller.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Numero massimo di eventi in sospeso che il controller supporterà.
 
 Tipo: **[ **LPD3DXANIMATIONCONTROLLER**](id3dxanimationcontroller.md)\***
 
-Puntatore all'oggetto controller di animazione creato. Vedere [**ID3DXAnimationController.**](id3dxanimationcontroller.md)
+Puntatore all'oggetto controller di animazione creato. Vedere [**ID3DXAnimationController**](id3dxanimationcontroller.md).
 
 </dd> </dl>
 
@@ -97,7 +97,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-Un controller di animazione controlla un mixer di animazione. Il controller aggiunge metodi per modificare i parametri di fusione nel tempo per abilitare transizioni uniformi.
+Un controller di animazione controlla un mixer di animazioni. Il controller aggiunge metodi per modificare i parametri di fusione nel tempo per abilitare transizioni fluide.
 
 ## <a name="requirements"></a>Requisiti
 

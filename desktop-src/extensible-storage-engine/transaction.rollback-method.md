@@ -33,7 +33,7 @@ ms.locfileid: "118978341"
 ---
 # <a name="transactionrollback-method"></a>Metodo Transaction.Rollback
 
-Eseguire il rollback di una transazione. Questo oggetto deve essere in una transazione.
+Rollback di una transazione. Questo oggetto deve essere in una transazione.
 
 **Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)

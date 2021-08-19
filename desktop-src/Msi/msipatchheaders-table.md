@@ -1,21 +1,21 @@
 ---
-description: La tabella MsiPatchHeaders include i flussi di intestazione della patch binaria usati per la convalida delle patch.
+description: La tabella MsiPatchHeaders contiene i flussi di intestazione di patch binari usati per la convalida delle patch.
 ms.assetid: aefdd365-1681-43e4-8470-04a5d6efd993
 title: Tabella MsiPatchHeaders
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a3fa4e037a31f3e913f13ff9c96735ed6760dc4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1888a91da13923c4a9904c770df77cb24a5b8381c869a60895bb5ff49d23e6b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118944494"
 ---
 # <a name="msipatchheaders-table"></a>Tabella MsiPatchHeaders
 
-La tabella MsiPatchHeaders include i flussi di intestazione della patch binaria usati per la convalida delle patch.
+La tabella MsiPatchHeaders contiene i flussi di intestazione di patch binari usati per la convalida delle patch.
 
-La tabella MsiPatchHeaders viene utilizzata quando le chiavi della [tabella di file](file-table.md) lunghi generano un errore durante la generazione del flusso dell'intestazione patch nella [tabella patch](patch-table.md). Questo problema può essere dovuto alla limitazione del nome del flusso descritta in [limitazioni OLE sui flussi](ole-limitations-on-streams.md). In questo caso, la tabella delle patch può fare riferimento alla tabella MsiPatchHeaders per creare il flusso dell'intestazione della patch.
+La tabella MsiPatchHeaders viene usata quando le chiavi lunghe della tabella [File](file-table.md) causano un errore durante la generazione del flusso di intestazione patch nella [tabella Patch](patch-table.md). Ciò può essere dovuto alla limitazione del nome del flusso descritta in [Limitazioni OLE Flussi](ole-limitations-on-streams.md). In questo caso, la tabella Patch può fare riferimento alla tabella MsiPatchHeaders per creare il flusso di intestazione patch.
 
 La tabella MsiPatchHeaders include le colonne seguenti.
 
@@ -37,20 +37,20 @@ La tabella MsiPatchHeaders include le colonne seguenti.
 <span id="StreamRef"></span><span id="streamref"></span><span id="STREAMREF"></span>StreamRef
 </dt> <dd>
 
-Chiave primaria per la tabella che identifica in modo univoco una particolare intestazione patch.
+Chiave primaria per la tabella che identifica in modo univoco una particolare intestazione di patch.
 
 </dd> <dt>
 
 <span id="Header"></span><span id="header"></span><span id="HEADER"></span>Intestazione
 </dt> <dd>
 
-Questa colonna è l'intestazione patch del flusso binario utilizzata per la convalida delle patch.
+Questa colonna è l'intestazione della patch del flusso binario usata per la convalida delle patch.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questa tabella viene elaborata dall' [azione PatchFiles](patchfiles-action.md). Questa tabella viene in genere aggiunta al pacchetto di installazione da una trasformazione da un pacchetto di patch. Non viene in genere creato direttamente in un pacchetto di installazione.
+Questa tabella viene elaborata [dall'azione PatchFiles](patchfiles-action.md). Questa tabella viene in genere aggiunta al pacchetto di installazione da una trasformazione da un pacchetto patch. In genere non viene creato direttamente in un pacchetto di installazione.
 
 ## <a name="validation"></a>Convalida
 

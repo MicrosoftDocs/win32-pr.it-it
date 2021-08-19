@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_LargeHighContrastImage
-description: Identifica la proprietà \_ PKEY \_ LargeHighContrastImage dell'interfaccia utente.
+description: Identifica la proprietà \_ Ui PKEY \_ LargeHighContrastImage.
 ms.assetid: a703f75a-5eb0-4075-a388-d0ab7398d424
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "117850241"
 ---
 # <a name="ui_pkey_largehighcontrastimage"></a>UI \_ PKEY \_ LargeHighContrastImage
 
-Identifica la proprietà \_ PKEY \_ LargeHighContrastImage dell'interfaccia utente.
+Identifica la proprietà \_ Ui PKEY \_ LargeHighContrastImage.
 
 ```
 propertyDescription
@@ -27,7 +27,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-\_L'interfaccia utente PKEY LargeHighContrastImage viene usata da un'applicazione per eseguire query sull'immagine a contrasto elevato di grandi dimensioni \_ associata a un controllo barra multifunzione.
+UI \_ PKEY LargeHighContrastImage viene usato da un'applicazione per eseguire query sull'immagine di grandi dimensioni \_ a contrasto elevato associata a un controllo della barra multifunzione.
 
 Il valore della proprietà è un [**oggetto IUIImage.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimage)
 
@@ -35,7 +35,7 @@ Il valore della proprietà è un [**oggetto IUIImage.**](/windows/desktop/api/ui
 
 <dl> <dt>
 
-[Proprietà risorsa](windowsribbon-reference-properties-resource.md)
+[Proprietà delle risorse](windowsribbon-reference-properties-resource.md)
 </dt> <dt>
 
 [Specifica delle risorse immagine della barra multifunzione](windowsribbon-imageformats.md)

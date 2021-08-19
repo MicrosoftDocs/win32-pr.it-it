@@ -1,7 +1,7 @@
 ---
 description: Criteri dei metadati delle foto per la proprietà System.GPS.Satellites.
 ms.assetid: 5dbbbeaf-e67d-45f6-95b2-de3287202d41
-title: Criteri dei metadati delle foto di System.GPS.Satellites
+title: Criteri dei metadati foto di System.GPS.Satellites
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a65bdc244324df513b5029c682e9c2cb355da58f2c95d13910fe093ce2521c8d
@@ -11,11 +11,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118964840"
 ---
-# <a name="systemgpssatellites-photo-metadata-policy"></a>Criteri dei metadati delle foto di System.GPS.Satellites
+# <a name="systemgpssatellites-photo-metadata-policy"></a>Criteri dei metadati foto di System.GPS.Satellites
 
-Criteri dei metadati delle foto per [la proprietà System.GPS.Satellites.](../properties/props-system-gps-satellites.md)
+Criteri dei metadati delle foto [per la proprietà System.GPS.Satellites.](../properties/props-system-gps-satellites.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
 PKEY \_ GPS \_ Satellites
 
@@ -67,7 +67,7 @@ I valori di schemi diversi vengono riconciliati.
 
  
 
-### <a name="remove-paths"></a>Rimuovere i percorsi
+### <a name="remove-paths"></a>Rimuovi percorsi
 
 
 
@@ -108,7 +108,7 @@ I valori di schemi diversi vengono riconciliati.
 
  
 
-### <a name="remove-paths"></a>Rimuovere i percorsi
+### <a name="remove-paths"></a>Rimuovi percorsi
 
 
 

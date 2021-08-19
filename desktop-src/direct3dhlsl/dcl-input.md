@@ -48,18 +48,18 @@ Dichiara un registro di input shader.
 <td>[in] Registro dei dati dei vertici. <br/>
 <ul>
 <li><em>N</em> è un numero intero che identifica il numero di registro.</li>
-<li><em>[.mask]</em> è una maschera componente facoltativa (.xyzw) che specifica quali componenti del registro usare.</li>
+<li><em>[.mask]</em> è una maschera componente facoltativa (.xyzw) che specifica quale dei componenti del registro usare.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><span id="interpolationMode"></span><span id="interpolationmode"></span><span id="INTERPOLATIONMODE"></span><em>interpolationMode</em><br/></td>
-<td>[in] Facoltativo. La modalità di interpolazione, che viene rispettata solo nei pixel shader di input. Può essere uno dei valori seguenti: <br/>
+<td><span id="interpolationMode"></span><span id="interpolationmode"></span><span id="INTERPOLATIONMODE"></span><em>interpolazioneMode</em><br/></td>
+<td>[in] Facoltativo. Modalità di interpolazione, che viene rispettata solo pixel shader di input. Può essere uno dei valori seguenti: <br/>
 <ul>
-<li>constant: non interpolare tra valori di registro.</li>
-<li>linear: interpolazione lineare tra valori di registro.</li>
-<li>linearCentroid: uguale a lineare ma con chiusura al centro durante il multicampionamento.</li>
+<li>constant: non eseguire l'interpolazione tra i valori del registro.</li>
+<li>linear : interpolazione lineare tra i valori del registro.</li>
+<li>linearCentroid: uguale a lineare ma a centroide con blocco durante il multicampionamento.</li>
 <li>linearNoperspective: uguale a lineare ma senza correzione prospettica.</li>
-<li>linearNoperspectiveCentroid: uguale a lineare, con chiusura centroide in caso di multicampionamento, senza correzione della prospettiva.</li>
+<li>linearNoperspectiveCentroid: come lineare, con chiusura al centro durante il multicampionamento, senza correzione della prospettiva.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -71,11 +71,11 @@ Dichiara un registro di input shader.
 
 ### <a name="interpolation-notes"></a>Note sull'interpolazione
 
-Per impostazione predefinita, gli attributi dei vertici vengono interpolati da un centro pixel quando si esegue l'anti-aliasing multicampionamento. Se un centro pixel non è coperto, un attributo viene estrapolato in un centro pixel prima dell'interpolazione.
+Per impostazione predefinita, gli attributi dei vertici vengono interpolati da un centro pixel quando si esegue l'antialiasing multicampione. Se un centro pixel non è coperto, un attributo viene estrapolato in un centro pixel prima dell'interpolazione.
 
-Per un pixel non completamente coperto o un attributo che non copre un centro pixel, è possibile specificare il campionamento centroide che forza il campionamento in un punto qualsiasi all'interno dell'area coperta del pixel. Poiché viene applicata una maschera di esempio (se usata) prima del calcolo del centroide, non è possibile scegliere come posizione centrale qualsiasi posizione del campione mascherata dalla maschera di esempio.
+Per un pixel non completamente coperto o un attributo che non copre un centro pixel, è possibile specificare il campionamento centroide che forza il campionamento in un punto qualsiasi all'interno dell'area coperta del pixel. Poiché una maschera di esempio (se usata) viene applicata prima del calcolo del centroid, non è possibile scegliere come posizione centrale qualsiasi posizione del campione mascherata dalla maschera di esempio.
 
-Questa istruzione si applica alle fasi di shader seguenti:
+Questa istruzione si applica alle fasi dello shader seguenti:
 
 
 
@@ -87,9 +87,9 @@ Questa istruzione si applica alle fasi di shader seguenti:
 
  
 
-Per identificare l'input come valore di sistema, usare [dcl \_ input \_ sv (sm4 - asm).](dcl-input-sv.md)
+Per identificare l'input come valore di sistema, usare [dcl \_ input \_ sv (sm4 - asm)](dcl-input-sv.md).
 
-Questa istruzione è inclusa per facilitare il debug di uno shader nell'assembly. Non è possibile creare uno shader in linguaggio assembly usando il modello shader 4.
+Questa istruzione è inclusa per facilitare il debug di uno shader nell'assembly. non è possibile creare uno shader nel linguaggio di assembly usando Shader Model 4.
 
 ## <a name="example"></a>Esempio
 
@@ -106,7 +106,7 @@ dcl_input v0.x, linearCentroid
 
 ## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli di shader seguenti.
+Questa funzione è supportata nei modelli shader seguenti.
 
 
 
@@ -115,9 +115,9 @@ Questa funzione è supportata nei modelli di shader seguenti.
 | [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
 | [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
 | [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
 | [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -127,7 +127,7 @@ Questa funzione è supportata nei modelli di shader seguenti.
 
 <dl> <dt>
 
-[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
+[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

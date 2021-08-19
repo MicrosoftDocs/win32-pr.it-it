@@ -11,13 +11,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118974060"
 ---
-# <a name="mestreamtick-event"></a>Evento MEStreamTick
+# <a name="mestreamtick-event"></a>EVENTO MEStreamTick
 
 Segnala che in un flusso multimediale non sono disponibili dati in un momento specificato.
 
 ## <a name="event-values"></a>Valori dell'evento
 
-I valori possibili recuperati da [**IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
+I valori possibili recuperati [**da IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
 
 
 
@@ -29,25 +29,25 @@ I valori possibili recuperati da [**IMFMediaEvent::GetValue**](/windows/desktop/
 
 ## <a name="remarks"></a>Commenti
 
-Questo evento segnala un gap nei dati. L'evento notifica ai componenti downstream di non aspettarsi dati al momento specificato.
+Questo evento segnala una lacune nei dati. L'evento notifica ai componenti downstream di non prevedere dati all'ora specificata.
 
-L'evento deve essere inviato da qualsiasi oggetto che genera i timestamp per gli esempi di supporti nel flusso. A seconda del formato dei dati, si tratta di uno dei seguenti:
+L'evento deve essere inviato da qualsiasi oggetto che genera i timestamp per i campioni multimediali nel flusso. A seconda del formato dei dati, è possibile:
 
 -   Flusso multimediale nell'origine multimediale [**(interfaccia IMFMediaStream)**](/windows/desktop/api/mfidl/nn-mfidl-imfmediastream) o
 -   Trasformazione del decodificatore [**(interfaccia IMFTransform).**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)
 
-Durante il gap, l'oggetto deve inviare l'evento con la frequenza con cui normalmente produrrebbe campioni. Per il video, inviare un evento per ogni fotogramma mancante. Per l'audio, inviare l'evento almeno una volta al secondo durante il gap. Il valore dell'evento è il timestamp dell'esempio mancante. Inviare tutti gli eventi MEStreamTick necessari per colmare il gap nei dati.
+Durante il gap, l'oggetto deve inviare l'evento con la frequenza con cui normalmente produce campioni. Per il video, inviare un evento per ogni fotogramma mancante. Per l'audio, inviare l'evento almeno una volta al secondo durante il gap. Il valore dell'evento è il timestamp dell'esempio mancante. Inviare tutti gli eventi MEStreamTick necessari per riempire la lacune nei dati.
 
-Se un'origine multimediale ha più flussi ed è presente un gap in più di un flusso, ogni flusso deve inviare eventi MEStreamTick. Ad esempio, se si verifica un gap nei dati audio e video, entrambi i flussi inviano l'evento.
+Se un'origine multimediale ha diversi flussi e si verifica un gap in più di un flusso, ogni flusso deve inviare eventi MEStreamTick. Ad esempio, se si verifica un gap nei dati audio e video, entrambi i flussi inviano l'evento.
 
 L'evento MEStreamTick non completa una [**richiesta IMFMediaStream::RequestSample.**](/windows/desktop/api/mfidl/nf-mfidl-imfmediastream-requestsample) L'origine multimediale deve comunque inviare un [evento MEMediaSample](memediasample.md) per ogni chiamata a **RequestSample.**
 
-I sink multimediali non possono utilizzare direttamente questo evento. Per segnalare un gap nel flusso a un sink multimediale, chiamare [**IMFStreamSink::P laceMarker**](/windows/desktop/api/mfidl/nf-mfidl-imfstreamsink-placemarker) con un marcatore **TICK MARCATORE MFSTREAMSINK. \_ \_** La Media Foundation pipeline converte gli eventi MEStreamTick in **marcatori MFSTREAMSINK \_ MARKER \_ TICK** quando necessario.
+I sink multimediali non possono utilizzare direttamente questo evento. Per segnalare un gap nel flusso a un sink multimediale, chiamare [**IMFStreamSink::P laceMarker**](/windows/desktop/api/mfidl/nf-mfidl-imfstreamsink-placemarker) con un marcatore TICK marcatore **MFSTREAMSINK. \_ \_** La pipeline Media Foundation converte gli eventi MEStreamTick in **marcatori MFSTREAMSINK \_ MARKER \_ TICK** quando necessario.
 
-Non impostare [**l'attributo MFSampleExtension \_ Discontinuity**](mfsampleextension-discontinuity-attribute.md) nell'esempio multimediale successivo dopo un evento MEStreamTick. **L'attributo MFSampleExtension \_ Discontinuity** implica che il timestamp è discontinuo con i timestamp precedenti, mentre MEStreamTick implica che i timestamp sono continui, ma alcuni dati mancano.
+Non impostare [**l'attributo MFSampleExtension \_ Discontinuity**](mfsampleextension-discontinuity-attribute.md) nell'esempio multimediale successivo dopo un evento MEStreamTick. **L'attributo \_ Discontinuity di MFSampleExtension** implica che il timestamp è discontinuo con i timestamp precedenti, mentre MEStreamTick implica che i timestamp sono continui, ma alcuni dati sono mancanti.
 
 > [!Note]  
-> Una versione precedente della documentazione ha erroneamente dichiarato che l'esempio dopo un evento MEStreamTick deve avere [**l'attributo MFSampleExtension \_ Discontinuity.**](mfsampleextension-discontinuity-attribute.md)
+> Una versione precedente della documentazione indica erroneamente che l'esempio dopo un evento MEStreamTick deve avere [**l'attributo MFSampleExtension \_ Discontinuity.**](mfsampleextension-discontinuity-attribute.md)
 
  
 
@@ -57,8 +57,8 @@ Non impostare [**l'attributo MFSampleExtension \_ Discontinuity**](mfsampleexten
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                     |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                     |
 | Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 

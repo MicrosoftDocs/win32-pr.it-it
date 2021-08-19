@@ -1,12 +1,12 @@
 ---
 title: Metodo SynchronizeAllPublishingData della classe Win32_RDMSManagementData
-description: Sincronizza tutti i dati di pubblicazione per Desktop remoto Management Services (RDBMS).
+description: Sincronizza tutti i dati di pubblicazione Desktop remoto Management Services (RDMS).
 ms.assetid: 3a2135c3-26d6-4b6e-9680-f2d07f33ec05
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SynchronizeAllPublishingData
-- Metodo SynchronizeAllPublishingData Servizi Desktop remoto, classe Win32_RDMSManagementData
-- Classe Win32_RDMSManagementData Servizi Desktop remoto, metodo SynchronizeAllPublishingData
+- Metodo SynchronizeAllPublishingData Servizi Desktop remoto
+- Metodo SynchronizeAllPublishingData Servizi Desktop remoto , Win32_RDMSManagementData classe
+- Win32_RDMSManagementData classe Servizi Desktop remoto, metodo SynchronizeAllPublishingData
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7f4db541954e1595c7b2fc8340f05a9415ad39b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0384339c98e694479ec993941bfbaeeb4bc906c1b058db8a63e11be43672f16f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000401"
 ---
-# <a name="synchronizeallpublishingdata-method-of-the-win32_rdmsmanagementdata-class"></a>Metodo SynchronizeAllPublishingData della \_ classe RDMSManagementData Win32
+# <a name="synchronizeallpublishingdata-method-of-the-win32_rdmsmanagementdata-class"></a>Metodo SynchronizeAllPublishingData della classe \_ WIN32 RDMSManagementData
 
-Sincronizza tutti i dati di pubblicazione per Desktop remoto Management Services (RDBMS).
+Sincronizza tutti i dati di pubblicazione Desktop remoto Management Services (RDMS).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI.
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,8 +53,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Root \\ CIMv2 \\ rdms<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -63,7 +63,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RDMSManagementData Win32**](win32-rdmsmanagementdata.md)
+[**Win32 \_ RDMSManagementData**](win32-rdmsmanagementdata.md)
 </dt> </dl>
 
  

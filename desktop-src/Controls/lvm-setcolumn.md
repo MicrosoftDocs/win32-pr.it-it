@@ -1,9 +1,9 @@
 ---
 title: LVM_SETCOLUMN messaggio (Commctrl.h)
-description: Imposta gli attributi di una colonna di visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro ListView SetColumn.
+description: Imposta gli attributi di una colonna di visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro ListView SetColumn.
 ms.assetid: 8ca1c269-fd86-4561-940d-b75f8ca2b731
 keywords:
-- LVM_SETCOLUMN controlli di Windows messaggio
+- LVM_SETCOLUMN dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119019219"
 ---
-# <a name="lvm_setcolumn-message"></a>Messaggio \_ LVM SETCOLUMN
+# <a name="lvm_setcolumn-message"></a>Messaggio LVM \_ SETCOLUMN
 
-Imposta gli attributi di una colonna di visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ ListView SetColumn.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setcolumn)
+Imposta gli attributi di una colonna di visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ ListView SetColumn.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setcolumn)
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,7 +41,7 @@ Indice della colonna.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una [**struttura LVCOLUMN**](/windows/win32/api/commctrl/ns-commctrl-lvcolumna) che contiene i nuovi attributi di colonna. Il **membro mask** specifica gli attributi di colonna da impostare. Se il **membro mask** specifica il valore LVCF TEXT, il membro pszText è l'indirizzo di una stringa con terminazione Null e il membro \_ **cchTextMax** viene ignorato. 
+Puntatore a [**una struttura LVCOLUMN**](/windows/win32/api/commctrl/ns-commctrl-lvcolumna) che contiene i nuovi attributi di colonna. Il **membro mask** specifica gli attributi di colonna da impostare. Se il **membro mask** specifica il valore LVCF TEXT, il membro pszText è l'indirizzo di una stringa con terminazione Null e il membro \_ **cchTextMax** viene ignorato. 
 
 </dd> </dl>
 
@@ -55,8 +55,8 @@ Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrari
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **LVM \_ SETCOLUMNW** (Unicode) e **LVM \_ SETCOLUMNW** (ANSI)<br/>               |
 

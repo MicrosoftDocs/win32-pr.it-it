@@ -13,7 +13,7 @@ ms.locfileid: "118930040"
 ---
 # <a name="examples-of-incompatible-changes"></a>Esempi di modifiche incompatibili
 
-Quando si gestiscono modifiche incompatibili, la regola generale è la seguente: qualsiasi modifica può essere incompatibile con le versioni precedenti, a meno che non sia ben compresa. Questa regola richiede la conoscenza delle regole di rapporto di mancato recapito. Se non si conosce il rapporto di mancato recapito, non apportare modifiche. Di seguito sono riportati alcuni esempi di modifiche che in genere comportano una violazione di accesso nell'applicazione o un'eccezione BAD STUB DATA generata dal motore \_ \_ di \_ marshalling:
+Quando si gestiscono modifiche incompatibili, la regola generale è la seguente: qualsiasi modifica può essere incompatibile con le versioni precedenti, a meno che non sia ben compresa. Questa regola richiede la conoscenza delle regole del rapporto di mancato recapito. Se non si conosce il rapporto di mancato recapito, non apportare modifiche. Di seguito sono riportati alcuni esempi di modifiche che in genere comportano una violazione di accesso nell'applicazione o un'eccezione BAD STUB DATA generata dal motore \_ \_ di \_ marshalling:
 
 -   Aggiunta di un nuovo metodo nel mezzo di metodi vecchi.
 -   Aggiunta o rimozione di parametri da un metodo.

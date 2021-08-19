@@ -25,7 +25,7 @@ Per altre informazioni su come usare WinHTTP per le applicazioni create in Micro
 
 ## <a name="developer-audience"></a>Sviluppatori
 
-WinHTTP offre sia un'API (Application Programming Interface) C/C++ che un componente di automazione Component Object Model (COM) adatto per l'uso in applicazioni basate su Active Server Pages (ASP).
+WinHTTP offre sia un'API (Application Programming Interface) C/C++ che un componente di automazione Component Object Model (COM) adatto per l'uso nelle applicazioni basate su Active Server Pages (ASP).
 
 Una conoscenza di base del protocollo HTTP è importante per l'uso di entrambe le interfacce.
 

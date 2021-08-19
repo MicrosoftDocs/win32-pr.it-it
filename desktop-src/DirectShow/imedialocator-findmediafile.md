@@ -24,11 +24,11 @@ ms.locfileid: "117818938"
 # <a name="imedialocatorfindmediafile-method"></a>Metodo IMediaLocator::FindMediaFile
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il metodo cerca un file e, in caso `FindMediaFile` di esito positivo, recupera il percorso del file.
+Il metodo cerca un file e, in caso di esito `FindMediaFile` positivo, recupera il percorso del file.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,14 +51,14 @@ HRESULT FindMediaFile(
 *Input* 
 </dt> <dd>
 
-Nome del file, incluso il percorso, in cui si trova per l'ultima volta il file. Per gli oggetti di origine nella sequenza temporale, usare il nome del supporto corrente.
+Nome file, incluso il percorso, in cui si trova l'ultimo file noto. Per gli oggetti di origine nella sequenza temporale, usare il nome del supporto corrente.
 
 </dd> <dt>
 
 *FilterString* 
 </dt> <dd>
 
-Oggetto **BSTR** contenente coppie di stringhe di filtro, formattate come richiesto dal membro **lpstrFilter** della [**struttura OPENFILENAME.**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) Il localizzatore multimediale usa questo filtro se viene visualizzata una finestra di dialogo Apri file. Il valore può essere **NULL** se il *parametro Flags* non include il \_ flag SFN VALIDATEF \_ POPUP.
+Oggetto **BSTR contenente** coppie di stringhe di filtro, formattate come richiesto dal membro **lpstrFilter** della [**struttura OPENFILENAME.**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) Il localizzatore multimediale usa questo filtro se viene visualizzata una finestra di dialogo Apri file. Il valore può essere **NULL** se il *parametro Flags* non include il flag POPUP SFN \_ \_ VALIDATEF.
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Puntatore a una variabile che riceve il percorso effettivo del file, se differis
 *Flag* 
 </dt> <dd>
 
-Combinazione bit per bit di zero o più flag. Per un elenco dei flag possibili, vedere [**Flag di convalida dei nomi file.**](file-name-validation-flags.md)
+Combinazione bit per bit di zero o più flag. Per un elenco dei flag possibili, vedere [**Flag di convalida dei nomi file**](file-name-validation-flags.md).
 
 </dd> </dl>
 
@@ -82,7 +82,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 ## <a name="remarks"></a>Commenti
 
-La stringa di filtro per la finestra di dialogo Apri file, specificata dal *parametro FilterString,* contiene caratteri Null interni. Ad esempio, Video \\ 0 \*.avi\\ 0 \\ 0 è una stringa di filtro valida. Non è possibile usare **la funzione SysAllocStr** per allocare BSTR, perché tale funzione prevede una stringa con terminazione Null e tronca la stringa in corrispondenza del primo carattere Null. Usare quindi una funzione come **SysAllocStringLen,** che include un parametro esplicito per la lunghezza:
+La stringa di filtro per la finestra di dialogo Apri file, specificata dal *parametro FilterString,* contiene caratteri Null interni. Ad esempio, Video \\ 0 \*.avi\\ 0 \\ 0 è una stringa di filtro valida. Non è possibile usare la **funzione SysAllocStr** per allocare BSTR, perché tale funzione prevede una stringa con terminazione Null e tronca la stringa in corrispondenza del primo carattere Null. Usare quindi una funzione come **SysAllocStringLen**, che include un parametro esplicito per la lunghezza:
 
 
 ```C++
@@ -102,7 +102,7 @@ Il metodo alloca memoria per **BSTR** in *pOutput*. L'applicazione deve **chiama
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

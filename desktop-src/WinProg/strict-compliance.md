@@ -1,47 +1,47 @@
 ---
-title: Conformità RIGOROSa
-description: Alcuni codici sorgente compilati correttamente potrebbero generare messaggi di errore quando si Abilita il controllo del tipo STRICT.
+title: Conformità STRICT
+description: Un codice sorgente compilato correttamente potrebbe generare messaggi di errore quando si abilita il controllo dei tipi STRICT.
 ms.assetid: 88368fec-b375-4ad0-aa13-ffadf0338a44
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02d04c3a849dc62647758e3515728e3dd3f65dcb
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 29baee071bd8d7c236ec5f2f99d1dff11aeac37deb44b0d8a6254325c9a75df0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117928146"
 ---
-# <a name="strict-compliance"></a>Conformità RIGOROSa
+# <a name="strict-compliance"></a>Conformità STRICT
 
-Alcuni codici sorgente compilati correttamente potrebbero generare messaggi di errore quando si Abilita il controllo del tipo **strict** . Le sezioni seguenti descrivono i requisiti minimi per la compilazione del codice quando è abilitata la funzionalità **strict** . Sono consigliate procedure aggiuntive, in particolare per produrre codice portabile.
+Un codice sorgente compilato correttamente potrebbe generare messaggi di errore quando si abilita il controllo dei tipi **STRICT.** Le sezioni seguenti descrivono i requisiti minimi per la compilazione del codice quando **è abilitato STRICT.** Sono consigliati passaggi aggiuntivi, in particolare per produrre codice portabile.
 
 ## <a name="general-requirements"></a>Requisiti generali
 
-Il requisito principale è che è necessario dichiarare i tipi di handle corretti e i puntatori a funzione anziché basarsi su tipi più generali. Non è possibile usare un tipo di handle dove ne è previsto un altro. Ciò significa anche che potrebbe essere necessario modificare le dichiarazioni di funzione e utilizzare più cast di tipo.
+Il requisito principale è che è necessario dichiarare tipi di handle e puntatori a funzione corretti anziché basarsi su tipi più generali. Non è possibile usare un tipo di handle in cui è previsto un altro. Ciò significa anche che potrebbe essere necessario modificare le dichiarazioni di funzione e usare più cast di tipo.
 
-Per ottenere risultati ottimali, è consigliabile utilizzare il tipo di **handle** generico solo quando necessario.
+Per ottenere risultati ottimali, il **tipo HANDLE** generico deve essere usato solo quando necessario.
 
 ## <a name="declaring-functions-within-your-application"></a>Dichiarazione di funzioni all'interno dell'applicazione
 
-Verificare che tutte le funzioni dell'applicazione siano dichiarate. L'inserimento di tutte le dichiarazioni di funzione in un file di inclusione è consigliato perché è possibile analizzare facilmente le dichiarazioni e cercare i tipi di parametro e restituiti che devono essere modificati.
+Assicurarsi che tutte le funzioni dell'applicazione siano dichiarate. È consigliabile inserire tutte le dichiarazioni di funzione in un file di inclusione perché è possibile analizzare facilmente le dichiarazioni e cercare i tipi di parametro e restituiti che devono essere modificati.
 
-Se si usa l'opzione del compilatore **/ZG** per creare i file di intestazione per le funzioni, tenere presente che si otterranno risultati diversi a seconda che sia stato abilitato il controllo del tipo **strict** . Con **strict** disabled, tutti i tipi di handle generano lo stesso tipo di base. Con **strict** abilitato, generano tipi di base diversi. Per evitare conflitti, è necessario ricreare il file di intestazione ogni volta che si Abilita o si disabilita **strict** oppure modificare il file di intestazione per usare i tipi **HWND**, **HDC**, **handle** e così via, anziché i tipi di base.
+Se si usa l'opzione del compilatore **/Zg** per creare file di intestazione per le funzioni, tenere presente che si otterrà risultati diversi a seconda che sia stato abilitato il controllo dei tipi **STRICT.** Con **STRICT disabilitato,** tutti i tipi di handle generano lo stesso tipo di base. Con **STRICT** abilitato, generano tipi di base diversi. Per evitare conflitti, è necessario creare di nuovo il file di intestazione ogni volta che si abilita o disabilita **STRICT** oppure modificare il file di intestazione in modo da usare i tipi **HWND,** **HDC,** **HANDLE** e così via, anziché i tipi di base.
 
-Qualsiasi dichiarazione di funzione copiata da Windows. h nel codice sorgente potrebbe essere stata modificata e la dichiarazione locale potrebbe non essere aggiornata. Rimuovere la dichiarazione locale.
+Le dichiarazioni di funzione copiate da Windows.h nel codice sorgente potrebbero essere state modificate e la dichiarazione locale potrebbe non essere aggiornata. Rimuovere la dichiarazione locale.
 
 ## <a name="types-that-require-casts"></a>Tipi che richiedono cast
 
-Alcune funzioni dispongono di parametri o tipi restituiti generici. La funzione [**SendMessage**](/windows/win32/api/winuser/nf-winuser-sendmessage) , ad esempio, restituisce dati che possono essere un numero qualsiasi di tipi, a seconda del contesto. Quando si visualizza una di queste funzioni nel codice sorgente, assicurarsi di utilizzare il cast del tipo corretto e che sia il più possibile specifico. L'elenco seguente è un esempio di queste funzioni.
+Alcune funzioni hanno parametri o tipi restituiti generici. Ad esempio, la [**funzione SendMessage**](/windows/win32/api/winuser/nf-winuser-sendmessage) restituisce dati che possono essere un numero qualsiasi di tipi, a seconda del contesto. Quando viene visualizzata una di queste funzioni nel codice sorgente, assicurarsi di usare il cast di tipo corretto e che sia il più specifico possibile. L'elenco seguente è un esempio di queste funzioni.
 
 -   [**LocalLock**](/windows/desktop/api/winbase/nf-winbase-locallock)
 -   [**GlobalLock**](/windows/desktop/api/winbase/nf-winbase-globallock)
 -   [**GetWindowLong**](/windows/win32/api/winuser/nf-winuser-getwindowlonga)
--   [**SetWindowLong**](/windows/win32/api/winuser/nf-winuser-setwindowlonga)
+-   [**Setwindowlong**](/windows/win32/api/winuser/nf-winuser-setwindowlonga)
 -   [**SendMessage**](/windows/win32/api/winuser/nf-winuser-sendmessage)
 -   [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 -   [**SendDlgItemMessage**](/windows/win32/api/winuser/nf-winuser-senddlgitemmessagea)
 
-Quando si chiama [**SendMessage**](/windows/win32/api/winuser/nf-winuser-sendmessage), [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)o [**SendDlgItemMessage**](/windows/win32/api/winuser/nf-winuser-senddlgitemmessagea), è innanzitutto necessario eseguire il cast del risultato al **tipo \_ uint PTR**. È necessario eseguire una procedura simile per qualsiasi funzione che restituisce un valore **LRESULT** o **Long \_ ptr** , in cui il risultato contiene un handle. Questa operazione è necessaria per la scrittura di codice portabile, in quanto le dimensioni di un handle variano a seconda della versione di Windows. Il cast (**uint \_ ptr**) garantisce una corretta conversione. Il codice seguente illustra un esempio in cui **SendMessage** restituisce un handle a un pennello:
+Quando si chiama [**SendMessage**](/windows/win32/api/winuser/nf-winuser-sendmessage), [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)o [**SendDlgItemMessage**](/windows/win32/api/winuser/nf-winuser-senddlgitemmessagea), è prima necessario eseguire il cast del risultato al tipo **UINT \_ PTR**. È necessario eseguire passaggi simili per qualsiasi funzione che restituisce un **valore LRESULT** o **LONG \_ PTR,** in cui il risultato contiene un handle. Questa operazione è necessaria per la scrittura di codice portabile perché le dimensioni di un handle variano a seconda della versione di Windows. Il cast (**UINT \_ PTR**) garantisce la conversione corretta. Il codice seguente illustra un esempio in cui **SendMessage** restituisce un handle a un pennello:
 
 
 ```C++
@@ -52,7 +52,7 @@ hbr = (HBRUSH)(UINT_PTR)SendMessage(hwnd, WM_CTLCOLOR, ..., ...);
 
 
 
-Il parametro **CreateWindow** e **CreateWindowEx** *HMENU* viene talvolta usato per passare un identificatore di controllo Integer (ID). In questo caso, è necessario eseguire il cast dell'ID a un tipo **HMENU** :
+Il parametro *hmenu* **CreateWindow** e **CreateWindowEx** viene talvolta usato per passare un identificatore di controllo integer (ID). In questo caso, è necessario eseguire il cast dell'ID a un **tipo HMENU:**
 
 
 ```C++
@@ -71,11 +71,11 @@ hwnd = CreateWindow(
 
 ## <a name="additional-considerations"></a>Ulteriori considerazioni
 
-Per sfruttare al massimo i vantaggi derivanti dal controllo **rigoroso** dei tipi, è necessario seguire altre linee guida. Se si apportano le modifiche seguenti, il codice sarà più portatile nelle versioni future di Windows.
+Per ottenere il massimo vantaggio dal controllo dei tipi **STRICT,** è necessario seguire altre linee guida. Il codice sarà più portabile nelle versioni future Windows se si apportano le modifiche seguenti.
 
-I tipi **wParam**, **lParam**, **LRESULT** e **LPVOID** sono *tipi di dati polimorfici*. Contengono diversi tipi di dati in momenti diversi, anche quando è abilitato il controllo di tipo **strict** . Per sfruttare i vantaggi del controllo dei tipi, è consigliabile eseguire il cast dei valori di questi tipi il prima possibile. Si noti che i cracker del messaggio riesegue automaticamente il cast di *wParam* e *lParam* in modo portatile.
+I tipi **WPARAM**, **LPARAM**, **LRESULT** e **LPVOID** sono *tipi di dati polimorfici*. Contengono tipi diversi di dati in momenti diversi, anche quando **è abilitato il controllo** dei tipi STRICT. Per ottenere il vantaggio del controllo dei tipi, è necessario eseguire il cast di valori di questi tipi appena possibile. Si noti che i cracker dei messaggi recast *automatico wParam* *e lParam* per l'utente in modo portabile.
 
-Prestare particolare attenzione per distinguere i tipi **hmodule** e **HINSTANCE** . Anche se **strict** è abilitato, vengono definiti come lo stesso tipo di base. La maggior parte delle funzioni di gestione dei moduli kernel usa tipi **HINSTANCE** , ma esistono alcune funzioni che restituiscono o accettano solo tipi **hmodule** .
+Fare particolare attenzione a distinguere **i tipi HMODULE** **e HINSTANCE.** Anche con **STRICT** abilitato, vengono definiti come lo stesso tipo di base. La maggior parte delle funzioni di gestione dei moduli del kernel usa tipi **HINSTANCE,** ma esistono alcune funzioni che restituiscono o accettano solo **tipi HMODULE.**
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -87,6 +87,6 @@ Prestare particolare attenzione per distinguere i tipi **hmodule** e **HINSTANCE
 [Abilitazione di STRICT](enabling-strict.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

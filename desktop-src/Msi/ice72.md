@@ -1,23 +1,23 @@
 ---
-description: ICE72 verifica che le azioni personalizzate non predefinite non vengano utilizzate nella tabella AdvtExecuteSequence.
+description: ICE72 verifica che le azioni personalizzate non incorporate non siano usate nella tabella AdvtExecuteSequence.
 ms.assetid: b04227d5-5bd6-434a-860c-498d787a1f0a
 title: ICE72
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d9d8e1859ffd8123cc7aa3dc801c5484d28ccb2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f931e705dbca734348f62ba4b1ca106b43bb80a52c50f0e94ecab7139c624da2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118946578"
 ---
 # <a name="ice72"></a>ICE72
 
-ICE72 verifica che le azioni personalizzate non predefinite non vengano utilizzate nella [tabella AdvtExecuteSequence](advtexecutesequence-table.md). In particolare, nella tabella AdvtExecuteSequence sono consentite solo le azioni personalizzate di tipo 19, tipo 35 e tipo 51. Se vengono utilizzate altre azioni personalizzate, l'annuncio potrebbe non comportarsi come previsto.
+ICE72 verifica che le azioni personalizzate non incorporate non siano usate nella [tabella AdvtExecuteSequence](advtexecutesequence-table.md). In particolare, nella tabella AdvtExecuteSequence sono consentiti solo i tipi 19, 35 e 51 azioni personalizzate. Se vengono usate altre azioni personalizzate, l'annuncio potrebbe non comportarsi come previsto.
 
 ## <a name="result"></a>Risultato
 
-ICE72 restituisce un errore se la tabella AdvExecuteSequence utilizza azioni personalizzate diverse da tipo 35, tipo 51 e tipo 19.
+ICE72 restituisce un errore se la tabella AdvExecuteSequence usa azioni personalizzate diverse dal tipo 35, dal tipo 51 e dal tipo 19.
 
 ## <a name="example"></a>Esempio
 
@@ -55,7 +55,7 @@ Per correggere l'errore, rimuovere "CA1" dalla tabella AdvtExecuteSequence.
 
  
 
-## <a name="tables-used-during-execution"></a>Tabelle utilizzate durante l'esecuzione
+## <a name="tables-used-during-execution"></a>Tabelle usate durante l'esecuzione
 
 [Tabella AdvtExecuteSequence](advtexecutesequence-table.md)
 
@@ -74,7 +74,7 @@ Per correggere l'errore, rimuovere "CA1" dalla tabella AdvtExecuteSequence.
 [Tipo di azione personalizzata 51](custom-action-type-51.md)
 </dt> <dt>
 
-[Riferimento ghiaccio](ice-reference.md)
+[Informazioni di riferimento su ICE](ice-reference.md)
 </dt> </dl>
 
  

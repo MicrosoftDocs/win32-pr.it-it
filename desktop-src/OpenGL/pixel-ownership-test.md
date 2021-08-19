@@ -1,5 +1,5 @@
 ---
-title: Test di proprietà dei pixel
+title: Test di proprietà pixel
 description: Il test di proprietà dei pixel determina se il contesto OpenGL corrente è proprietario del pixel nel framebuffer corrispondente a un particolare frammento.
 ms.assetid: aa9428a6-cc05-4df4-ba31-444f999006a8
 keywords:
@@ -14,7 +14,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118936250"
 ---
-# <a name="pixel-ownership-test"></a>Test di proprietà dei pixel
+# <a name="pixel-ownership-test"></a>Test di proprietà pixel
 
 Il test di proprietà dei pixel determina se il contesto OpenGL corrente è proprietario del pixel nel framebuffer corrispondente a un particolare frammento. In tal caso, il frammento procede al test successivo. In caso contrario, il sistema di finestre determina se il frammento viene eliminato o se verranno eseguite altre operazioni sui frammenti con tale frammento. Con questo test, il sistema di finestre controlla il comportamento quando, ad esempio, una finestra OpenGL viene nascosta.
 

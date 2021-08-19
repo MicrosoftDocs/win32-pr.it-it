@@ -31,9 +31,9 @@ I GUID seguenti vengono usati per la traccia degli eventi in DirectShow.
 
 | GUID                                                                                                                                                                   | Descrizione                                                                                                                                                  |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GUID_AUDIOBREAK"></span><span id="guid_audiobreak"></span><dl> <dt>**GUID \_ AUDIOBREAK**</dt> </dl>    | Evento di interruzione audio. Gli eventi di questo tipo usano la [**struttura PERFINFO \_ DSHOW \_ AUDIOBREAK**](perfinfo-dshow-audiobreak.md) per i dati degli eventi.<br/>         |
+| <span id="GUID_AUDIOBREAK"></span><span id="guid_audiobreak"></span><dl> <dt>**GUID \_ AUDIOBREAK**</dt> </dl>    | Evento di interruzione audio. Gli eventi di questo tipo usano la [**struttura \_ \_ AUDIOBREAK DSHOW PERFINFO**](perfinfo-dshow-audiobreak.md) per i dati degli eventi.<br/>         |
 | <span id="GUID_DSHOW_CTL"></span><span id="guid_dshow_ctl"></span><dl> <dt>**GUID \_ DSHOW \_ CTL**</dt> </dl>      | DirectShow provider di eventi.<br/>                                                                                                                        |
-| <span id="GUID_STREAMTRACE"></span><span id="guid_streamtrace"></span><dl> <dt>**GUID \_ STREAMTRACE**</dt> </dl> | Evento di streaming generale. Gli eventi di questo tipo usano la struttura [**\_ PERFINFO DSHOW \_ STREAMTRACE**](perfinfo-dshow-streamtrace.md) per i dati degli eventi.<br/> |
+| <span id="GUID_STREAMTRACE"></span><span id="guid_streamtrace"></span><dl> <dt>**GUID \_ STREAMTRACE**</dt> </dl> | Evento di streaming generale. Gli eventi di questo tipo usano la [**struttura \_ PERFINFO DSHOW \_ STREAMTRACE**](perfinfo-dshow-streamtrace.md) per i dati degli eventi.<br/> |
 | <span id="GUID_VIDEOREND"></span><span id="guid_videorend"></span><dl> <dt>**GUID \_ VIDEOREND**</dt> </dl>       | Evento di rendering video. Gli eventi di questo tipo usano la [**struttura \_ \_ AVREND DSHOW PERFINFO**](perfinfo-dshow-avrend.md) per i dati degli eventi.<br/>             |
 
 
@@ -52,7 +52,7 @@ I GUID seguenti vengono usati per la traccia degli eventi in DirectShow.
 
 <dl> <dt>
 
-[Traccia eventi in DirectShow](event-tracing-in-directshow.md)
+[Event Tracing in DirectShow](event-tracing-in-directshow.md)
 </dt> </dl>
 
  

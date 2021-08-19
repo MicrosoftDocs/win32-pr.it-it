@@ -1,40 +1,40 @@
 ---
 description: Questa sezione contiene i riferimenti per i messaggi del dispositivo linea TAPI.
 ms.assetid: dc11134e-6c20-426e-834e-508bf855e5da
-title: Messaggi linea dispositivo
+title: Messaggi del dispositivo line
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 10f49bd411ee0fb15d33219dce4fbf6833e308ca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 27dadfe2fba4d01778ede5419d2faac98e81bebd760d6fd50edd7d565fe5f4b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003189"
 ---
-# <a name="line-device-messages"></a>Messaggi linea dispositivo
+# <a name="line-device-messages"></a>Messaggi del dispositivo line
 
-Questa sezione contiene il riferimento per i messaggi seguenti del dispositivo a linee:
+Questa sezione contiene informazioni di riferimento per i messaggi del dispositivo line seguenti:
 
--   [**LINEA \_ ADDRESSSTATE**](line-addressstate.md)
--   [**LINEA \_ APPNEWCALL**](line-appnewcall.md)
--   [**LINEA \_ APPNEWCALLHUB**](line-appnewcallhub.md)
--   [**LINEA \_ CALLINFO**](line-callinfo.md)
--   [**LINEA \_ CALLHUBCLOSE**](line-callhubclose.md)
--   [**LINEA \_ CALLSTATE**](line-callstate.md)
--   [**\_chiusura riga**](line-close.md)
--   [**\_creazione linea**](line-create.md)
--   [**LINEA \_ DEVSPECIFIC**](line-devspecific.md)
--   [**LINEA \_ DEVSPECIFICEX**](line-devspecificex.md)
--   [**LINEA \_ DEVSPECIFICFEATURE**](line-devspecificfeature.md)
--   [**LINEA \_ GATHERDIGITS**](line-gatherdigits.md)
--   [**\_generazione riga**](line-generate.md)
--   [**LINEA \_ LINEDEVSTATE**](line-linedevstate.md)
--   [**LINEA \_ MONITORDIGITS**](line-monitordigits.md)
--   [**LINEA \_ MONITORMEDIA**](line-monitormedia.md)
--   [**LINEA \_ MONITORTONE**](line-monitortone.md)
--   [**\_Rimuovi riga**](line-remove.md)
--   [**\_risposta riga**](line-reply.md)
--   [**richiesta di riga \_**](line-request.md)
+-   [**LINE \_ ADDRESSSTATE**](line-addressstate.md)
+-   [**LINE \_ APPNEWCALL**](line-appnewcall.md)
+-   [**LINE \_ APPNEWCALLHUB**](line-appnewcallhub.md)
+-   [**LINE \_ CALLINFO**](line-callinfo.md)
+-   [**LINE \_ CALLHUBCLOSE**](line-callhubclose.md)
+-   [**LINE \_ CALLSTATE**](line-callstate.md)
+-   [**CHIUSURA \_ RIGA**](line-close.md)
+-   [**LINE \_ CREATE**](line-create.md)
+-   [**LINE \_ DEVSPECIFIC**](line-devspecific.md)
+-   [**LINE \_ DEVSPECIFICEX**](line-devspecificex.md)
+-   [**LINE \_ DEVSPECIFICFEATURE**](line-devspecificfeature.md)
+-   [**LINE \_ GATHERDIGITS**](line-gatherdigits.md)
+-   [**LINE \_ GENERATE**](line-generate.md)
+-   [**LINE \_ LINEDEVSTATE**](line-linedevstate.md)
+-   [**LINE \_ MONITORDIGITS**](line-monitordigits.md)
+-   [**LINE \_ MONITORMEDIA**](line-monitormedia.md)
+-   [**LINE \_ MONITORTONE**](line-monitortone.md)
+-   [**LINE \_ REMOVE**](line-remove.md)
+-   [**LINE \_ REPLY**](line-reply.md)
+-   [**RICHIESTA \_ DI RIGA**](line-request.md)
 
  
 

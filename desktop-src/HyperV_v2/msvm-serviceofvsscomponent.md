@@ -1,5 +1,5 @@
 ---
-description: Associazione tra un'istanza di Msvm VssComponent e un'istanza di Msvm VssService che rappresenta un servizio per l'esecuzione di operazioni \_ \_ sul componente VSS.
+description: Associazione tra un'istanza di Msvm VssComponent e un'istanza di Msvm VssService che rappresenta un servizio per l'esecuzione di operazioni \_ \_ sul componente vss.
 ms.assetid: 19fdf2e3-48c4-452b-89d0-ec0b8681fca2
 title: Msvm_ServiceOfVssComponent classe
 ms.topic: reference
@@ -24,7 +24,7 @@ ms.locfileid: "118950540"
 ---
 # <a name="msvm_serviceofvsscomponent-class"></a>Classe Msvm \_ ServiceOfVssComponent
 
-Associazione tra un'istanza di [**Msvm \_ VssComponent**](msvm-vsscomponent.md) e un'istanza di [**Msvm \_ VssService**](msvm-vssservice.md) che rappresenta un servizio per l'esecuzione di operazioni sul componente VSS.
+Associazione tra un'istanza di [**Msvm \_ VssComponent**](msvm-vsscomponent.md) e un'istanza di [**Msvm \_ VssService**](msvm-vssservice.md) che rappresenta un servizio per l'esecuzione di operazioni sul componente vss.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -63,7 +63,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ Dependency.Antecedent")
 </dt> </dl>
 
-Oggetto [**Msvm \_ VssComponent**](msvm-vsscomponent.md) che rappresenta il componente VSS.
+Oggetto [**Msvm \_ VssComponent**](msvm-vsscomponent.md) che rappresenta il componente vss.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ Dependency.Dependent")
 </dt> </dl>
 
-Oggetto [**Msvm \_ VssService**](msvm-vssservice.md) che rappresenta il servizio VSS IC.
+Oggetto [**Msvm \_ VssService che**](msvm-vssservice.md) rappresenta il servizio IC vss.
 
 </dd> </dl>
 

@@ -1,5 +1,5 @@
 ---
-description: Enumerazione utilizzata per indicare la versione del protoculo remoto in uso.
+description: Enumerazione utilizzata per indicare la versione del protocolo di comunicazione remota in uso.
 MS-HAID: vspixengine.REMOTINGVERSION
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -26,7 +26,7 @@ ms.locfileid: "118985481"
 ---
 # <a name="span-idvspixengineremotingversionspanremotingversion-enumeration"></a><span id="vspixengine.remotingversion"></span>Enumerazione REMOTINGVERSION
 
-Enumerazione utilizzata per indicare la versione del protoculo remoto in uso.
+Enumerazione utilizzata per indicare la versione del protocolo di comunicazione remota in uso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,40 +38,40 @@ Enumerazione utilizzata per indicare la versione del protoculo remoto in uso.
 ## <a name="constants"></a>Costanti
 
 <span id="REMOTING_DEV12"></span><span id="remoting_dev12"></span>**COMUNICAZIONE \_ REMOTA DEV12**  
-Valore che indica che è in Visual Studio 2013 protocollo di comunicazione remota RTM.
+Valore che indica che viene usato il Visual Studio 2013 remoto RTM.
 
-<span id="REMOTING_DEV12_UPDATE_1"></span><span id="remoting_dev12_update_1"></span>**REMOTING \_ DEV12 \_ UPDATE \_ 1**  
+<span id="REMOTING_DEV12_UPDATE_1"></span><span id="remoting_dev12_update_1"></span>**COMUNICAZIONE \_ REMOTA DEV12 \_ UPDATE \_ 1**  
 Valore che indica che viene usato il Visual Studio 2013 remoto dell'aggiornamento 1.
 
-<span id="REMOTING_DEV12_UPDATE_4"></span><span id="remoting_dev12_update_4"></span>**REMOTING \_ DEV12 \_ UPDATE \_ 4**  
-Valore che indica che il Visual Studio 2013 Update 4 remoto è in uso.
+<span id="REMOTING_DEV12_UPDATE_4"></span><span id="remoting_dev12_update_4"></span>**COMUNICAZIONE \_ REMOTA DEV12 \_ UPDATE \_ 4**  
+Valore che indica che viene usato il Visual Studio 2013 Update 4 remoto remoto.
 
 <span id="REMOTING_DEV14"></span><span id="remoting_dev14"></span>**COMUNICAZIONE \_ REMOTA DEV14**  
 Valore che indica che viene usato il Visual Studio remoto RTM 2015.
 
 <span id="REMOTING_WIN10"></span><span id="remoting_win10"></span>**COMUNICAZIONE \_ REMOTA WIN10**  
-Valore che indica che è in Windows 10 protocollo di comunicazione remota (a partire da Windows 10, la diagnostica della grafica è un componente del sistema operativo)
+Valore che indica che viene usato il Windows 10 remoto remoto (a partire da Windows 10, la diagnostica grafica è un componente del sistema operativo)
 
 <span id="REMOTING_WIN10_JAN_2015"></span><span id="remoting_win10_jan_2015"></span>**COMUNICAZIONE \_ REMOTA WIN10 \_ GENNAIO \_ 2015**  
-Valore che indica che è in Windows 10 protocollo di comunicazione remota di Windows 10 (gennaio 2015).
+Valore che indica che viene usato il Windows 10 remoto (gennaio 2015).
 
 <span id="REMOTING_WIN10_JAN_2015_1"></span><span id="remoting_win10_jan_2015_1"></span>**COMUNICAZIONE \_ REMOTA WIN10 \_ GENNAIO \_ 2015 \_ 1**  
-Valore che indica che viene Windows 10 protocollo di comunicazione remota Windows 10 (gennaio 2015, v1).
+Valore che indica che viene usato il Windows 10 remoto (gennaio 2015, v1).
 
 <span id="REMOTING_WIN10_JAN_2015_2"></span><span id="remoting_win10_jan_2015_2"></span>**COMUNICAZIONE \_ REMOTA WIN10 \_ GENNAIO \_ 2015 \_ 2**  
-Valore che indica che viene Windows 10 protocollo di comunicazione remota di Windows 10 (gennaio 2015, v2). Questa versione del protocollo ha introdotto richieste per la visualizzazione di risorse affiancate.
+Valore che indica che viene usato il Windows 10 remoto (gennaio 2015, v2). Questa versione del protocollo ha introdotto richieste per la visualizzazione di risorse affiancate.
 
 <span id="REMOTING_WIN10_JAN_2015_3"></span><span id="remoting_win10_jan_2015_3"></span>**COMUNICAZIONE \_ REMOTA WIN10 \_ GENNAIO \_ 2015 \_ 3**  
-Valore che indica che viene Windows 10 protocollo di comunicazione remota di Windows 10 (gennaio 2015, v3). Questa versione del protocollo ha introdotto IPixEngine7, ora deprecato, per il controllo del supporto della versione dell'interfaccia.
+Valore che indica che viene usato il Windows 10 remoto (gennaio 2015, v3). Questa versione del protocollo ha introdotto IPixEngine7, ora deprecato, per controllare il supporto della versione dell'interfaccia.
 
-<span id="REMOTING_IPIXENGINE7_VERSION_CHECKING"></span><span id="remoting_ipixengine7_version_checking"></span>**CONTROLLO \_ DELLA VERSIONE DI IPIXENGINE7 PER LA COMUNICAZIONE \_ \_ REMOTA**  
-Valore che indica che viene Windows 10 protocollo di comunicazione remota Windows 10 (gennaio 2015, v1). Questa versione del protocollo non si basa su REMOTINGVERSION per mediare le funzionalità del protocollo. Il GUID dell'interfaccia viene ora modificato quando int non pubblico
+<span id="REMOTING_IPIXENGINE7_VERSION_CHECKING"></span><span id="remoting_ipixengine7_version_checking"></span>**CONTROLLO DELLA \_ VERSIONE DI IPIXENGINE7 \_ REMOTO \_**  
+Valore che indica che viene usato il Windows 10 remoto (gennaio 2015, v1). Questa versione del protocollo non si basa su REMOTINGVERSION per mediare le funzionalità del protocollo. Il GUID dell'interfaccia viene ora modificato quando int non pubblico
 
 <span id="REMOTING_WIN10_FEB_2015_1"></span><span id="remoting_win10_feb_2015_1"></span>**COMUNICAZIONE \_ REMOTA WIN10 \_ FEB \_ 2015 \_ 1**  
-Valore che indica che viene Windows 10 protocollo di comunicazione remota Windows 10 (gennaio 2015, v1). Questa versione del protocollo introduce proprietà di informazioni di riepilogo con ID fissi univoci.
+Valore che indica che viene usato il Windows 10 remoto (gennaio 2015, v1). Questa versione del protocollo introduce proprietà di informazioni di riepilogo con ID univoci e fissi.
 
 <span id="REMOTING_WIN10_2015_03_00"></span><span id="remoting_win10_2015_03_00"></span>**COMUNICAZIONE \_ REMOTA WIN10 \_ 2015 \_ 03 \_ 00**  
-Valore che indica che viene Windows 10 protocollo di comunicazione remota Windows 10 (gennaio 2015, v1). Questa versione del protocollo ha introdotto il supporto per la finestra di stato di DirectX11.
+Valore che indica che viene usato il Windows 10 remoto (gennaio 2015, v1). Questa versione del protocollo ha introdotto il supporto per la finestra di stato di DirectX11.
 
 <span id="REMOTING_LATES"></span><span id="remoting_lates"></span>**LATES \_ DI COMUNICAZIONE REMOTA**  
 Valore che indica che viene usato il protocollo di comunicazione remota più recente.

@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo GetPositions recupera la posizione corrente e la posizione di arresto. Questo metodo implementa il metodo IMediaSeeking:: GetPositions.'
+description: Il metodo GetPositions recupera la posizione corrente e la posizione di arresto. Questo metodo implementa il metodo IMediaSeeking::GetPositions.
 ms.assetid: f577b052-669b-457d-beab-94f574fef08d
-title: Metodo CSourceSeeking. GetPositions (Ctlutil. h)
+title: Metodo CSourceSeeking.GetPositions (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8d95013b12d1ee41867ac73920ca1f9b1ca0bdca
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4b6f52d8d8b30a28d942d4395a465b9c7c49d0a23020ad212c81eb170d20ca0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073337"
 ---
-# <a name="csourceseekinggetpositions-method"></a>Metodo CSourceSeeking. GetPositions
+# <a name="csourceseekinggetpositions-method"></a>Metodo CSourceSeeking.GetPositions
 
-Il `GetPositions` metodo recupera la posizione corrente e la posizione di arresto. Questo metodo implementa il metodo [**IMediaSeeking:: GetPositions**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getpositions) .
+Il `GetPositions` metodo recupera la posizione corrente e la posizione di arresto. Questo metodo implementa il [**metodo IMediaSeeking::GetPositions.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getpositions)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,11 +59,11 @@ Puntatore a una variabile che riceve la posizione di arresto.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Per il parametro *pCurrent* , questo metodo restituisce il valore della variabile membro [**\_ rtStart di CSourceSeeking:: m**](csourceseeking-m-rtstart.md) , che rappresenta il tempo di ricerca più recente, non la posizione corrente del flusso. Tuttavia, quando un'applicazione chiama **IMediaSeeking:: GetPositions** tramite Filter Graph Manager, i valori provengono in genere da un filtro renderer, non da un filtro di origine.
+Per il *parametro pCurrent,* questo metodo restituisce il valore della variabile membro [**CSourceSeeking::m \_ rtStart,**](csourceseeking-m-rtstart.md) che rappresenta l'ora di ricerca più recente, non la posizione di streaming corrente. Tuttavia, quando un'applicazione chiama **IMediaSeeking::GetPositions** tramite il gestore del grafico filtri, i valori provengono in genere da un filtro renderer, non da un filtro di origine.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Per il parametro *pCurrent* , questo metodo restituisce il valore della variabil
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

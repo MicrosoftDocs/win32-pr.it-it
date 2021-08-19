@@ -1,6 +1,6 @@
 ---
 title: Identificatori di modulo di keying predefiniti (Fwpmu.h)
-description: Gli identificatori per i moduli di gestione delle chiavi incorporati in Windows Filtering Platform (WFP) sono rappresentati da un GUID.
+description: Gli identificatori per i moduli di keying incorporati in Windows Filtering Platform (WFP) sono rappresentati da un GUID.
 ms.assetid: ba3aaf0f-5524-4d61-bb74-e4714b11b2a9
 topic_type:
 - apiref
@@ -21,11 +21,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118951340"
 ---
-# <a name="built-in-keying-module-identifiers"></a>Identificatori di moduli di keying predefiniti
+# <a name="built-in-keying-module-identifiers"></a>Identificatori di modulo di keying predefiniti
 
-Gli identificatori per i moduli di gestione delle chiavi incorporati in Windows Filtering Platform (WFP) sono rappresentati da un GUID.
+Gli identificatori per i moduli di keying incorporati in Windows Filtering Platform (WFP) sono rappresentati da un GUID.
 
-Questi identificatori sono definiti nel modo seguente.
+Questi identificatori sono definiti come indicato di seguito.
 
 <dl> <dt>
 
@@ -39,12 +39,12 @@ Modulo di Exchange IKE (Internet Key Exchange).
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_KEYING_MODULE_IKEV2"></span><span id="fwpm_keying_module_ikev2"></span>**MODULO DI KEYING FWPM \_ \_ \_ IKEV2**
+<span id="FWPM_KEYING_MODULE_IKEV2"></span><span id="fwpm_keying_module_ikev2"></span>**MODULO DI \_ KEYING \_ FWPM \_ IKEV2**
 </dt> <dd> <dl> <dt>
 
 
 
-Modulo di Exchange Chiave Internet versione 2 (IKEv2).
+Modulo di Exchange chiave internet versione 2 (IKEv2).
 
 > [!Note]  
 > Disponibile solo in Windows Server 2008 R2 e Windows 7.
@@ -54,12 +54,12 @@ Modulo di Exchange Chiave Internet versione 2 (IKEv2).
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_KEYING_MODULE_AUTHIP"></span><span id="fwpm_keying_module_authip"></span>**MODULO FWPM \_ KEYING \_ MODULE \_ AUTHIP**
+<span id="FWPM_KEYING_MODULE_AUTHIP"></span><span id="fwpm_keying_module_authip"></span>**FWPM \_ KEYING \_ MODULE \_ AUTHIP**
 </dt> <dd> <dl> <dt>
 
 
 
-Modulo di creazione delle chiavi AuthIP.
+Modulo di keying AuthIP.
 
 
 </dt> </dl> </dd> </dl>
@@ -70,8 +70,8 @@ Modulo di creazione delle chiavi AuthIP.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
 | Intestazione<br/>                   | <dl> <dt>Fwpmu.h</dt> </dl> |
 
 

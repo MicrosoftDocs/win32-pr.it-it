@@ -306,7 +306,7 @@ Tipo di accesso: sola lettura
 
 Identificatore del richiedente del bus PCI al momento dell'evento.
 
-Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
@@ -321,7 +321,7 @@ Tipo di accesso: sola lettura
 
 Identificatore del risponditore del bus PCI al momento dell'evento.
 
-Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
@@ -349,7 +349,7 @@ Tipo di accesso: sola lettura
 
 Identificatore del record di errore per questo errore.
 
-Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
@@ -375,7 +375,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo di messaggio del registro eventi. Questi messaggi corrispondono ai codici dei messaggi del registro eventi usati per inserire i messaggi del registro eventi dal provider consumer del registro eventi Windows quando riceve uno degli eventi.
+Tipo di messaggio del registro eventi. Questi messaggi corrispondono ai codici dei messaggi del registro eventi utilizzati per inserire i messaggi del registro eventi dal provider del consumer del registro eventi di Windows quando riceve uno degli eventi.
 
 </dd> <dt>
 
@@ -388,7 +388,7 @@ Tipo di dati: **uint64**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Bit di convalida usati per indicare la validità dei campi successivi.
+Bit di convalida utilizzati per indicare la validità dei campi successivi.
 
 
 
@@ -401,8 +401,8 @@ Bit di convalida usati per indicare la validità dei campi successivi.
 | <dl> <dt>16 (0x10)</dt> </dl>    | I DATI DEL BUS PCI \_ \_ sono validi.<br/>              |
 | <dl> <dt>32 (0x20)</dt> </dl>    | IL COMANDO DEL BUS PCI \_ \_ è valido.<br/>               |
 | <dl> <dt>64 (0x40)</dt> </dl>    | L'ID RICHIEDENTE DEL BUS PCI \_ \_ è \_ valido.<br/>     |
-| <dl> <dt>128 (0x80)</dt> </dl>   | ID RISPONDITORE BUS PCI \_ \_ \_ valido.<br/>     |
-| <dl> <dt>256 (0x100)</dt> </dl>  | L'ID DESTINAZIONE BUS PCI \_ \_ è \_ valido.<br/>        |
+| <dl> <dt>128 (0x80)</dt> </dl>   | L'ID RISPONDITORE BUS PCI \_ \_ è \_ valido.<br/>     |
+| <dl> <dt>256 (0x100)</dt> </dl>  | L'ID DI DESTINAZIONE DEL BUS PCI \_ \_ è \_ valido.<br/>        |
 | <dl> <dt>512 (0x200)</dt> </dl>  | L'ID OEM del bus PCI \_ \_ è \_ valido.<br/>           |
 | <dl> <dt>1024 (0x400)</dt> </dl> | LO \_ STRUCT DI DATI OEM DEL BUS PCI \_ \_ è \_ valido.<br/> |
 
@@ -410,7 +410,7 @@ Bit di convalida usati per indicare la validità dei campi successivi.
 
  
 
-Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> </dl>
 

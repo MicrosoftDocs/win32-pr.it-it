@@ -3,7 +3,7 @@ title: EM_GETOPTIONS messaggio (Richedit.h)
 description: Recupera le opzioni del controllo Rich Edit.
 ms.assetid: 183f0fed-8666-4ed5-ac48-362c818378d2
 keywords:
-- EM_GETOPTIONS dei controlli Windows messaggio
+- EM_GETOPTIONS di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119019519"
 ---
-# <a name="em_getoptions-message"></a>Messaggio EM \_ GETOPTIONS
+# <a name="em_getoptions-message"></a>Messaggio \_ EM GETOPTIONS
 
 Recupera le opzioni del controllo Rich Edit.
 
@@ -45,7 +45,7 @@ Non usato; deve essere zero.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio restituisce una combinazione dei valori del flag di opzione corrente descritti nel messaggio [**EM \_ SETOPTIONS.**](em-setoptions.md)
+Questo messaggio restituisce una combinazione dei valori del flag di opzione corrente descritti nel [**messaggio EM \_ SETOPTIONS.**](em-setoptions.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,8 +53,8 @@ Questo messaggio restituisce una combinazione dei valori del flag di opzione cor
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 

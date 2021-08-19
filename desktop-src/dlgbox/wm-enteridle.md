@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_ENTERIDLE (winuser. h)
-description: Inviato alla finestra proprietaria di una finestra di dialogo modale o di un menu che entra in uno stato di inattività. Una finestra di dialogo o un menu modale entra in uno stato di inattività quando nessun messaggio è in attesa nella coda dopo l'elaborazione di uno o più messaggi precedenti.
+title: WM_ENTERIDLE messaggio (Winuser.h)
+description: Inviato alla finestra proprietaria di una finestra di dialogo modale o di un menu che entra in uno stato di inattività. Una finestra di dialogo modale o un menu entra in uno stato di inattività quando nessun messaggio è in attesa nella coda dopo aver elaborato uno o più messaggi precedenti.
 ms.assetid: 11b1f942-185f-4de4-90a2-e2934bb1394f
 keywords:
-- Finestre di dialogo WM_ENTERIDLE messaggio
+- WM_ENTERIDLE finestre di dialogo del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f99b3150a0dbc1a81b78498c8e295fbf2397c22
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0fb7d40ae84659d1cfad12357956c4a955ae4f879cddcc13b51069a6a62cd08c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985281"
 ---
-# <a name="wm_enteridle-message"></a>\_Messaggio ENTERIDLE WM
+# <a name="wm_enteridle-message"></a>Messaggio \_ WM ENTERIDLE
 
-Inviato alla finestra proprietaria di una finestra di dialogo modale o di un menu che entra in uno stato di inattività. Una finestra di dialogo o un menu modale entra in uno stato di inattività quando nessun messaggio è in attesa nella coda dopo l'elaborazione di uno o più messaggi precedenti.
+Inviato alla finestra proprietaria di una finestra di dialogo modale o di un menu che entra in uno stato di inattività. Una finestra di dialogo modale o un menu entra in uno stato di inattività quando nessun messaggio è in attesa nella coda dopo aver elaborato uno o più messaggi precedenti.
 
 
 ```C++
@@ -57,7 +57,7 @@ Questo parametro può avere uno dei valori seguenti.
 *lParam* 
 </dt> <dd>
 
-Handle per la finestra di dialogo (se *wParam* è **MSGF \_ DialogBox**) o finestra contenente il menu visualizzato (se *wParam* è **il \_ menu MSGF**).
+Handle per la finestra di dialogo *(se wParam* è **MSGF \_ DIALOGBOX**) o finestra contenente il menu visualizzato (se *wParam* è **MSGF \_ MENU**).
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Un'applicazione deve restituire zero se elabora questo messaggio.
 
 ## <a name="remarks"></a>Commenti
 
-È possibile disattivare il messaggio **WM \_ ENTERIDLE** per una finestra di dialogo creando la finestra di dialogo con lo stile **DS \_ NOIDLEMSG** .
+È possibile eliminare il **messaggio WM \_ ENTERIDLE** per una finestra di dialogo creando la finestra di dialogo con lo stile **\_ DS NOIDLEMSG.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,7 +77,7 @@ Un'applicazione deve restituire zero se elabora questo messaggio.
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

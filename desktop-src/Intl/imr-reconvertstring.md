@@ -1,19 +1,19 @@
 ---
-description: Notifica a un'applicazione quando per un IME selezionato è necessaria una stringa per la riconversione. L'applicazione riceve questo comando tramite il \_ \_ messaggio di richiesta IME WM con le impostazioni dei parametri, come illustrato di seguito.
+description: Notifica a un'applicazione quando un IME selezionato richiede una stringa per la riconversione. L'applicazione riceve questo comando tramite il messaggio WM \_ IME \_ REQUEST con le impostazioni dei parametri, come illustrato di seguito.
 ms.assetid: 82ef20b5-bdfa-4bde-abb4-3d14ae35c116
-title: Codice di notifica IMR_RECONVERTSTRING (IMM. h)
+title: IMR_RECONVERTSTRING codice di notifica (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cbb1caeedb729b176f116a15e64879d79d519fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b0dfc2b188a2873af3ec7004ffaac65a3cce0b4257c1428dfe4abfcba9d2b2aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118948758"
 ---
-# <a name="imr_reconvertstring-notification-code"></a>\_Codice di notifica RECONVERTSTRING di IMR
+# <a name="imr_reconvertstring-notification-code"></a>Codice di notifica \_ IMR RECONVERTSTRING
 
-Notifica a un'applicazione quando per un IME selezionato è necessaria una stringa per la riconversione. L'applicazione riceve questo comando tramite il messaggio di [**\_ \_ richiesta IME WM**](wm-ime-request.md) con le impostazioni dei parametri, come illustrato di seguito.
+Notifica a un'applicazione quando un IME selezionato richiede una stringa per la riconversione. L'applicazione riceve questo comando tramite il messaggio [**WM \_ IME \_ REQUEST**](wm-ime-request.md) con le impostazioni dei parametri, come illustrato di seguito.
 
 
 ```C++
@@ -26,23 +26,23 @@ LRESULT IMR_RECONVERTSTRING
 
 <dl> <dt>
 
-<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*wParam*
+<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*Wparam*
 </dt> <dd>
 
 Impostare su IMR \_ RECONVERTSTRING.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Puntatore a un buffer contenente la struttura e le stringhe [**RECONVERTSTRING**](/windows/win32/api/imm/ns-imm-reconvertstring) .
+Puntatore a un buffer contenente la struttura e le stringhe [**RECONVERTSTRING.**](/windows/win32/api/imm/ns-imm-reconvertstring)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce la struttura della stringa di riconversione corrente. Se *lParam* è impostato su **null**, l'applicazione restituisce la dimensione per il buffer necessario per mantenere la struttura. Se l'operazione non riesce, il comando restituisce 0.
+Restituisce la struttura della stringa di riconversione corrente. Se *lParam è* impostato su **NULL,** l'applicazione restituisce le dimensioni del buffer necessario per contenere la struttura. Il comando restituisce 0 se non ha esito positivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,7 +52,7 @@ Restituisce la struttura della stringa di riconversione corrente. Se *lParam* è
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>Imm. h (Includi Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Imm.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -60,16 +60,16 @@ Restituisce la struttura della stringa di riconversione corrente. Se *lParam* è
 
 <dl> <dt>
 
-[Gestione metodo di input](input-method-manager.md)
+[Gestione metodi di input](input-method-manager.md)
 </dt> <dt>
 
-[Comandi di input Method Manager](input-method-manager-commands.md)
+[Comandi di Gestione metodi di input](input-method-manager-commands.md)
 </dt> <dt>
 
 [**RECONVERTSTRING**](/windows/win32/api/imm/ns-imm-reconvertstring)
 </dt> <dt>
 
-[**\_richiesta IME \_ WM**](wm-ime-request.md)
+[**RICHIESTA \_ IME \_ WM**](wm-ime-request.md)
 </dt> </dl>
 
  

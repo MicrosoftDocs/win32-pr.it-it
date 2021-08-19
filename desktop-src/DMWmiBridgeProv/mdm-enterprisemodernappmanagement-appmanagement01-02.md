@@ -1,10 +1,10 @@
 ---
 title: MDM_EnterpriseModernAppManagement_AppManagement01_02 classe
-description: La classe MDM \_ EnterpriseModernAppManagement \_ AppManagement01 02 specifica se si vuole bloccare l'aggiornamento di un'app specifica \_ tramite aggiornamenti automatici.
+description: La classe MDM \_ EnterpriseModernAppManagement \_ AppManagement01 02 specifica se si vuole impedire l'aggiornamento di un'app specifica \_ tramite aggiornamenti automatici.
 ms.assetid: b018f61a-2458-4c1a-b75c-6ca5eebb2977
 keywords:
 - MDM_EnterpriseModernAppManagement_AppManagement01_02 classe
-- MDM_EnterpriseModernAppManagement_AppManagement01_02 classe , descritta
+- MDM_EnterpriseModernAppManagement_AppManagement01_02 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -26,9 +26,9 @@ ms.locfileid: "119018179"
 ---
 # <a name="mdm_enterprisemodernappmanagement_appmanagement01_02-class"></a>Classe \_ MDM EnterpriseModernAppManagement \_ AppManagement01 \_ 02
 
-\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La **classe MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 02** specifica se si vuole bloccare l'aggiornamento di un'app specifica tramite aggiornamenti automatici.
+La **classe MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 02** specifica se si vuole impedire l'aggiornamento di un'app specifica tramite aggiornamenti automatici.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -46,7 +46,7 @@ class MDM_EnterpriseModernAppManagement_AppManagement01_02
 
 ## <a name="members"></a>Members
 
-La **classe MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 02** include questi tipi di membri:
+La **classe MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 02** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
@@ -62,7 +62,7 @@ La **classe MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 02** ha q
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -70,13 +70,13 @@ Tipo di accesso: Lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identifica il nome del nodo padre. Per questa classe, la stringa è l'istanza del nome della famiglia di pacchetti.
@@ -86,13 +86,13 @@ Identifica il nome del nodo padre. Per questa classe, la stringa è l'istanza de
 **Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/*EnterpriseID*"
@@ -117,7 +117,7 @@ Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "
 
 <dl> <dt>
 
-[Uso di script di PowerShell con il provider Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

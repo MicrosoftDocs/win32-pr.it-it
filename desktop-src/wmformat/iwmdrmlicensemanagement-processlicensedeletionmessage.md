@@ -1,11 +1,11 @@
 ---
-title: Metodo IWMDRMLicenseManagement ProcessLicenseDeletionMessage (wmdrmsdk. h)
-description: Il metodo ProcessLicenseDeletion Elimina una licenza che è stata importata per il contenuto originariamente protetto con un altro sistema di protezione del contenuto.
+title: Metodo IWMDRMLicenseManagement ProcessLicenseDeletionMessage (Wmdrmsdk.h)
+description: Il metodo ProcessLicenseDeletion elimina una licenza importata per il contenuto originariamente protetto con un altro sistema di protezione del contenuto.
 ms.assetid: 478dd156-feb8-4eda-9d3a-35db3e65c227
 keywords:
-- Metodo ProcessLicenseDeletionMessage Windows Media Format
-- Metodo ProcessLicenseDeletionMessage Windows Media Format, interfaccia IWMDRMLicenseManagement
-- Interfaccia IWMDRMLicenseManagement-formato Windows Media, metodo ProcessLicenseDeletionMessage
+- Metodo ProcessLicenseDeletionMessage windows Media Format
+- Metodo ProcessLicenseDeletionMessage windows Media Format , interfaccia IWMDRMLicenseManagement
+- Metodo ProcessLicenseDeletionMessage dell'interfaccia IWMDRMLicenseManagement di Windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9338c1bc4ef78e658cc25ab95f5c50556af3ed09
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c369be95314ceaf3c4babce9dacd962fd3391d4f39f8988ef56f51fb3133aee9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027589"
 ---
-# <a name="iwmdrmlicensemanagementprocesslicensedeletionmessage-method"></a>IWMDRMLicenseManagement::P metodo rocessLicenseDeletionMessage
+# <a name="iwmdrmlicensemanagementprocesslicensedeletionmessage-method"></a>Metodo IWMDRMLicenseManagement::P rocessLicenseDeletionMessage
 
-Il metodo **ProcessLicenseDeletion** Elimina una licenza che è stata importata per il contenuto originariamente protetto con un altro sistema di protezione del contenuto.
+Il **metodo ProcessLicenseDeletion** elimina una licenza importata per il contenuto originariamente protetto con un altro sistema di protezione del contenuto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ HRESULT ProcessLicenseDeletionMessage(
 
 <dl> <dt>
 
-*bstrDeletionMessage* \[ in\]
+*bstrDeletionMessage* \[ Pollici\]
 </dt> <dd>
 
 Messaggio che identifica la licenza da eliminare.
@@ -51,13 +51,13 @@ Messaggio che identifica la licenza da eliminare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -65,7 +65,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna.
+Nessuno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,7 +73,7 @@ Nessuna.
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

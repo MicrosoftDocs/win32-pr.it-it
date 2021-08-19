@@ -44,13 +44,13 @@ iRetVal = ShellLinkObject.Save(
 
 Tipo: **Variante**
 
-Valore stringa che contiene il percorso completo del file in cui devono essere salvate le nuove informazioni di collegamento. Se non viene specificato alcun file, viene utilizzato il file corrente.
+Valore stringa che contiene il percorso completo del file in cui devono essere salvate le nuove informazioni sul collegamento. Se non viene specificato alcun file, viene usato il file corrente.
 
 </dd> </dl>
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo JScript, VBScript e Visual Basic.
+Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo per JScript, VBScript e Visual Basic.
 
 JScript:
 
@@ -172,7 +172,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional solo con app desktop SP3 \[\]<br/>                                           |
+| Client minimo supportato<br/> | Windows 2000 Professional solo con le app desktop SP3 \[\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |

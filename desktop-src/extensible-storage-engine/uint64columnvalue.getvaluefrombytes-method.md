@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Metodo UInt64ColumnValue.GetValueFromBytes'
+description: Altre informazioni sul metodo UInt64ColumnValue.GetValueFromBytes
 title: Metodo UInt64ColumnValue.GetValueFromBytes
 TOCTitle: 'GetValueFromBytes method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.UInt64ColumnValue.GetValueFromBytes(System.Byte[],System.Int32,System.Int32,System.Int32)
@@ -35,7 +35,7 @@ ms.locfileid: "118978301"
 
 Dati recuperati da ESENT, decodificare i dati e impostare il valore nell'oggetto ColumnValue.
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
@@ -101,6 +101,6 @@ protected override void GetValueFromBytes(
 
 [Classe UInt64ColumnValue](./uint64columnvalue-class.md)
 
-[Membri di UInt64ColumnValue](./uint64columnvalue-members.md)
+[Membri UInt64ColumnValue](./uint64columnvalue-members.md)
 
 [Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

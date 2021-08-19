@@ -1,11 +1,11 @@
 ---
 title: Metodo Modify della classe MicrosoftDNS_MXType
-description: Il metodo modify aggiorna un record di risorse di Mail Exchanger (Sig.).
+description: Il metodo Modify aggiorna un record di risorse di Mail Exchanger (MR).
 ms.assetid: 40267ac9-0392-4e08-a5d2-145ee9639c39
 keywords:
-- Modificare il metodo DNS
-- Modificare il metodo DNS, MicrosoftDNS_MXType classe
-- Classe MicrosoftDNS_MXType DNS, metodo modify
+- Modificare il DNS del metodo
+- Modificare il metodo DNS , MicrosoftDNS_MXType classe
+- MicrosoftDNS_MXType classe DNS , metodo Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a665d0673e048eff684b4c985b54a1c57e030a9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 74fb31da6bf0861c94c54163fa9c771ac592fca105a5459214e17031c3b8e6a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076785"
 ---
-# <a name="modify-method-of-the-microsoftdns_mxtype-class"></a>Metodo Modify della \_ classe MXType di MicrosoftDNS
+# <a name="modify-method-of-the-microsoftdns_mxtype-class"></a>Metodo Modify della classe \_ MXType MicrosoftDNS
 
-Il metodo **Modify** aggiorna un record di risorse di Mail Exchanger (Sig.).
+Il **metodo Modify** aggiorna un record di risorse di Mail Exchanger (MR).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,28 +45,28 @@ void Modify(
 
 <dl> <dt>
 
-Valore *TTL* \[ in, facoltativo\]
+*TTL* \[ in, facoltativo\]
 </dt> <dd>
 
-Tempo, in secondi, che l'RR può memorizzare nella cache da un resolver DNS.
+Tempo, in secondi, in cui il RR può essere memorizzato nella cache da un resolver DNS.
 
 </dd> <dt>
 
 *Preferenza* \[ in, facoltativo\]
 </dt> <dd>
 
-Preferenza assegnata a questo RR tra gli altri nello stesso proprietario. Sono preferibili valori inferiori.
+Preferenza data a questo RR tra gli altri allo stesso proprietario. Sono preferibili valori inferiori.
 
 </dd> <dt>
 
 *MailExchange* \[ in, facoltativo\]
 </dt> <dd>
 
-FQDN che specifica un host disposto a fungere da scambio di posta elettronica per il nome del proprietario.
+FQDN che specifica un host che vuole fungere da scambio di posta elettronica per il nome del proprietario.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
 Riferimento all'oggetto modificato.
@@ -79,7 +79,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i parametri non specificati rimangono invariati nel record modificato.
+Qualsiasi parametro non specificato viene lasciato invariato nel record modificato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -90,7 +90,7 @@ Tutti i parametri non specificati rimangono invariati nel record modificato.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -98,13 +98,13 @@ Tutti i parametri non specificati rimangono invariati nel record modificato.
 
 <dl> <dt>
 
-[**\_MXType MicrosoftDNS**](microsoftdns-mxtype.md)
+[**MicrosoftDNS \_ MXType**](microsoftdns-mxtype.md)
 </dt> <dt>
 
-[**Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS \_ MXType**](microsoftdns-mxtype-createinstancefrompropertydata.md)
+[**Metodo CreateInstanceFromPropertyData della classe \_ MXType MicrosoftDNS**](microsoftdns-mxtype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

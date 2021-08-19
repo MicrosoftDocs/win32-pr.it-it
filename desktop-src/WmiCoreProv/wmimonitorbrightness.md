@@ -18,16 +18,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: b8d16c8dc20291a03fb205441c8826c85125970c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10343b33e5bc1881440af9d13029913d470880289e71b4c7a33fb4748e56ef73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118821522"
 ---
 # <a name="wmimonitorbrightness-class"></a>Classe WmiMonitorBrightness
 
-La classe WMI **WmiMonitorBrightness** rappresenta i parametri di luminosità di un monitor del computer.
+La **classe WMI WmiMonitorBrightness** rappresenta i parametri di luminosità di un monitor del computer.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,20 +44,20 @@ class WmiMonitorBrightness : MSMonitorClass
 
 ## <a name="members"></a>Members
 
-La classe **WmiMonitorBrightness** dispone di questi tipi di membri:
+La **classe WmiMonitorBrightness** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **WmiMonitorBrightness** dispone di queste proprietà.
+La **classe WmiMonitorBrightness** ha queste proprietà.
 
 <dl> <dt>
 
 **Attivo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -70,13 +70,13 @@ Indica se il monitoraggio di destinazione è attivo.
 **CurrentBrightness**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Luminosità corrente. Questo valore deve essere un valore tratto dai *livelli*.
+Luminosità corrente. Questo valore deve essere un valore derivato da *Levels.*
 
 Esempio: 100
 
@@ -98,7 +98,7 @@ Nome dell'istanza di monitoraggio specifica.
 **Level**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -106,20 +106,20 @@ Tipo di accesso: sola lettura
 
 Matrice contenente i livelli di luminosità possibili.
 
-Esempio: \[ 0, 1, 2,..., 100 \] .
+Esempio: \[ 0, 1, 2, ..., 100 \] .
 
 </dd> <dt>
 
 **Livelli**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Il numero totale di livelli di luminosità supportati dal monitoraggio, come descritto in *Level*.
+Numero totale di livelli di luminosità supportati dal monitor, come descritto in *Livello*.
 
 Esempio: 101
 
@@ -127,7 +127,7 @@ Esempio: 101
 
 ## <a name="examples"></a>Esempio
 
-Per altre informazioni ed esempi di codice sull'uso di questa classe in PowerShell, vedere [usare PowerShell per segnalare e impostare la luminosità del monitoraggio](https://blogs.technet.com/b/heyscriptingguy/archive/2013/07/25/use-powershell-to-report-and-set-monitor-brightness.aspx).
+Per altre informazioni ed esempi di codice sull'uso di questa classe in PowerShell, vedere Usare PowerShell per creare [report e impostare la luminosità del monitoraggio.](https://blogs.technet.com/b/heyscriptingguy/archive/2013/07/25/use-powershell-to-report-and-set-monitor-brightness.aspx)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -137,8 +137,8 @@ Per altre informazioni ed esempi di codice sull'uso di questa classe in PowerShe
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
-| Spazio dei nomi<br/>                | \\WMI radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Wmi \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

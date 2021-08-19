@@ -1,7 +1,7 @@
 ---
 description: La funzione AddPrinterConnection aggiunge una connessione alla stampante specificata per l'utente corrente.
 ms.assetid: 6decf89a-1411-4e7e-aa20-60e7068658c2
-title: Funzione AddPrinterConnection (winspool. h)
+title: Funzione AddPrinterConnection (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: dae1f823f89b69526218ab4c027642fb54e3cea5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83c4d348266e0d596deccb03b39e98ec41f8f23837727520d55b9baff82fec4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117869033"
 ---
-# <a name="addprinterconnection-function"></a>AddPrinterConnection (funzione)
+# <a name="addprinterconnection-function"></a>Funzione AddPrinterConnection
 
-La funzione **AddPrinterConnection** aggiunge una connessione alla stampante specificata per l'utente corrente.
+La **funzione AddPrinterConnection** aggiunge una connessione alla stampante specificata per l'utente corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,10 +41,10 @@ BOOL AddPrinterConnection(
 
 <dl> <dt>
 
-*pname* \[ in\]
+*pName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il nome di una stampante a cui l'utente corrente desidera stabilire una connessione.
+Puntatore a una stringa con terminazione Null che specifica il nome di una stampante a cui l'utente corrente desidera stabilire una connessione.
 
 </dd> </dl>
 
@@ -57,13 +57,13 @@ Se la funzione ha esito negativo, il valore restituito è zero.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Si tratta di una funzione di blocco o sincrona e potrebbe non essere restituita immediatamente. La velocità di restituzione di questa funzione dipende da fattori di runtime quali lo stato della rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non risponda.
+> Si tratta di una funzione di blocco o sincrona che potrebbe non essere restituita immediatamente. La velocità di ritorno di questa funzione dipende da fattori di run-time, ad esempio lo stato della rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante, difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non rispetti.
 
  
 
-Quando Windows crea una connessione a una stampante, potrebbe essere necessario copiare i file del driver della stampante nel server a cui è collegata la stampante. Se l'utente non dispone delle autorizzazioni per copiare i file nel percorso appropriato, la funzione **AddPrinterConnection** ha esito negativo e [**GETLASTERROR**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce un errore di \_ accesso \_ negato.
+Quando Windows una connessione a una stampante, potrebbe essere necessario copiare i file del driver della stampante nel server a cui è collegata la stampante. Se l'utente non dispone dell'autorizzazione per copiare i file nel percorso appropriato, la funzione **AddPrinterConnection** ha esito negativo e [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce ERROR \_ ACCESS \_ DENIED.
 
-Una connessione stampante stabilita chiamando **AddPrinterConnection** verrà enumerata quando viene chiamato [**EnumPrinters**](enumprinters.md) con *dwType* impostato su Printer \_ enum \_ Connection.
+Una connessione della stampante stabilita chiamando **AddPrinterConnection** verrà enumerata quando [**EnumPrinters**](enumprinters.md) viene chiamato con *dwType* impostato su PRINTER \_ ENUM \_ CONNECTION.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,9 +73,9 @@ Una connessione stampante stabilita chiamando **AddPrinterConnection** verrà en
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (includere Windows.h)</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nomi Unicode e ANSI<br/>   | **AddPrinterConnectionW** (Unicode) e **AddPrinterConnectionA** (ANSI)<br/>                       |
 
 
@@ -96,7 +96,7 @@ Una connessione stampante stabilita chiamando **AddPrinterConnection** verrà en
 [**DeletePrinterConnection**](deleteprinterconnection.md)
 </dt> <dt>
 
-[**EnumPrinters**](enumprinters.md)
+[**Enumprinters**](enumprinters.md)
 </dt> </dl>
 
  

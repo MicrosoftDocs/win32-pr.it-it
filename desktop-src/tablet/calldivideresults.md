@@ -79,7 +79,7 @@ Matrice di [**proprietà ID**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstr
 *aParagraphStrokeIds* \[ Cambio\]
 </dt> <dd>
 
-Matrice delle proprietà [**ID**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokedisp-get_id) per gli [**oggetti IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) associati al paragrafo dalla [**classe InkDivider.**](inkdivider-class.md)
+Matrice delle proprietà [**ID**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokedisp-get_id) per gli oggetti [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) associati al paragrafo dalla [**classe InkDivider.**](inkdivider-class.md)
 
 </dd> <dt>
 
@@ -93,14 +93,14 @@ Matrice di [**proprietà ID**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstr
 *pastrWords* \[ Cambio\]
 </dt> <dd>
 
-Matrice di parole restituite dall'analisi dell'input penna.
+Matrice di parole restituita dall'analisi dell'input penna.
 
 </dd> <dt>
 
 *pastrLines* \[ Cambio\]
 </dt> <dd>
 
-Matrice di righe restituite dall'analisi dell'input penna.
+Matrice di linee restituite dall'analisi dell'input penna.
 
 </dd> <dt>
 
@@ -114,14 +114,14 @@ Matrice di paragrafi restituiti dall'analisi dell'input penna.
 *aWordRotationCenterX* \[ Cambio\]
 </dt> <dd>
 
-Matrice dei punti centrale delle parole lungo l'asse x dall'analisi dell'input penna.
+Matrice dei punti al centro delle parole lungo l'asse x dall'analisi dell'input penna.
 
 </dd> <dt>
 
 *aWordRotationCenterY* \[ Cambio\]
 </dt> <dd>
 
-Matrice dei punti centrale delle parole lungo l'asse y dall'analisi dell'input penna.
+Matrice dei punti al centro delle parole lungo l'asse y dall'analisi dell'input penna.
 
 </dd> <dt>
 
@@ -135,7 +135,7 @@ Matrice contenente gli angoli in base ai quali ruotare le parole per ottenere ri
 *aLineRotationCenterX* \[ Cambio\]
 </dt> <dd>
 
-Matrice contenente i punti centrale delle linee lungo l'asse x.
+Matrice contenente i punti al centro delle linee lungo l'asse x.
 
 </dd> <dt>
 
@@ -171,7 +171,7 @@ Questa funzione può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-Per evitare perdite di memoria, è necessario rilasciare le risorse per *pastrWords*, *pastrLines* e *pastrParagraphs*.
+Per evitare perdite di memoria, è necessario rilasciare le risorse per *pastrWords*, *pastrLines* *e pastrParagraphs*.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -179,7 +179,7 @@ Per evitare perdite di memoria, è necessario rilasciare le risorse per *pastrWo
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                         |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                         |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                             |
 | Libreria<br/>                  | <dl> <dt>InkDiv.dll</dt> </dl> |
 
