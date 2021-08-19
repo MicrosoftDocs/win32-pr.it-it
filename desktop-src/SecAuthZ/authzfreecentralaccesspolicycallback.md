@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: d2139c9fa106b6070a3c043d417bdbf23379084b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f51903708bd3993e2837d65107798b1ff546c5857eff3bbed028ed4d6dda47f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117783755"
 ---
 # <a name="authzfreecentralaccesspolicycallback-callback-function"></a>Funzione di callback AuthzFreeCentralAccessPolicyCallback
 
-La funzione *AuthzFreeCentralAccessPolicyCallback* è una funzione definita dall'applicazione che libera la memoria allocata dalla funzione [*AuthzGetCentralAccessPolicyCallback*](authzgetcentralaccesspolicycallback-.md) . *AuthzFreeCentralAccessPolicyCallback* è un segnaposto per il nome della funzione definita dall'applicazione.
+*La funzione AuthzFreeCentralAccessPolicyCallback* è una funzione definita dall'applicazione che libera la memoria allocata dalla [*funzione AuthzGetCentralAccessPolicyCallback.*](authzgetcentralaccesspolicycallback-.md) *AuthzFreeCentralAccessPolicyCallback è* un segnaposto per il nome della funzione definita dall'applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ BOOL CALLBACK AuthzFreeCentralAccessPolicyCallback(
 
 <dl> <dt>
 
-*pCentralAccessPolicy* \[ in\]
+*pCentralAccessPolicy* \[ Pollici\]
 </dt> <dd>
 
 Puntatore ai criteri di accesso centrale da liberare.
@@ -47,15 +47,15 @@ Puntatore ai criteri di accesso centrale da liberare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, la funzione restituisce **true**.
+Se la funzione ha esito positivo, la funzione restituisce **TRUE.**
 
-Se la funzione non è in grado di eseguire la valutazione, viene restituito **false**. Usare [**SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) per restituire un errore alla funzione di controllo di accesso.
+Se la funzione non è in grado di eseguire la valutazione, restituisce **FALSE.** Usare [**SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) per restituire un errore alla funzione di controllo dell'accesso.
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[**\_informazioni init \_ AUTHZ**](/windows/desktop/api/Authz/ns-authz-authz_init_info)
+[**AUTHZ \_ INIT \_ INFO**](/windows/desktop/api/Authz/ns-authz-authz_init_info)
 </dt> <dt>
 
 [*AuthzGetCentralAccessPolicyCallback*](authzgetcentralaccesspolicycallback-.md)

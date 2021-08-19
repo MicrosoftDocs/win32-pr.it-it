@@ -1,9 +1,9 @@
 ---
-title: Messaggio MM_JOY1MOVE (mmsystem. h)
-description: Il \_ messaggio mm JOY1MOVE notifica alla finestra che ha acquisito il joystick JOYSTICKID1 che la posizione del joystick è cambiata.
+title: MM_JOY1MOVE messaggio (Mmsystem.h)
+description: Il messaggio MM JOY1MOVE notifica alla finestra che ha acquisito \_ il joystick JOYSTICKID1 che la posizione del joystick è stata modificata.
 ms.assetid: 317ac0b2-f873-413d-b071-47d840229643
 keywords:
-- MM_JOY1MOVE messaggi multimediali di Windows
+- MM_JOY1MOVE messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a78753bd55f6682b3ac3f1514356d93cb455d162
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d8c8a71bc91b541bc17017fc2673bb6c0ed7e84a2de44ff312954b8f9915dc57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117802446"
 ---
-# <a name="mm_joy1move-message"></a>\_Messaggio JOY1MOVE mm
+# <a name="mm_joy1move-message"></a>Messaggio \_ MM JOY1MOVE
 
-Il messaggio **mm \_ JOY1MOVE** notifica alla finestra che ha acquisito il joystick JOYSTICKID1 che la posizione del joystick è cambiata.
+Il **messaggio MM \_ JOY1MOVE** notifica alla finestra che ha acquisito il joystick JOYSTICKID1 che la posizione del joystick è stata modificata.
 
 
 ```C++
@@ -42,16 +42,16 @@ yPos = HIWORD(lParam);
 <span id="fwButtons"></span><span id="fwbuttons"></span><span id="FWBUTTONS"></span>*fwButtons*
 </dt> <dd>
 
-Identifica i pulsanti che vengono premuti. Può essere uno o più dei valori seguenti:
+Identifica i pulsanti premuti. Può essere uno o più dei valori seguenti:
 
 
 
 | Requisito | Valore |
 |--------------|------------------------------------|
-| GIOIA \_ Button1 | Viene premuto il primo pulsante del joystick.  |
-| GIOIA \_ Button2 | Viene premuto il secondo pulsante del joystick. |
-| GIOIA \_ Button3 | Viene premuto il terzo pulsante del joystick.  |
-| GIOIA \_ BUTTON4 | Viene premuto il quarto pulsante del joystick. |
+| PULSANTE \_ DI CONTROLLO DELLA ERTA1 | Viene premuto il primo pulsante del joystick.  |
+| PULSANTE \_ DI CONTROLLO DELLA ERTA2 | Viene premuto il secondo pulsante del joystick. |
+| PULSANTE \_ DI CONTROLLO DELLA ERTA3 | Viene premuto il terzo pulsante del joystick.  |
+| PULSANTE \_ GIOIOSO4 | Viene premuto il quarto pulsante del joystick. |
 
 
 
@@ -81,7 +81,7 @@ Coordinata y del joystick rispetto all'angolo superiore sinistro dell'area clien
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 

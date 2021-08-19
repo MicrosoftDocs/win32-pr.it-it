@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118437984"
 ---
-# <a name="ui_pkey_itemimage"></a>Elemento \_ PKEY \_ dell'interfaccia utenteImage
+# <a name="ui_pkey_itemimage"></a>UI \_ PKEY \_ ItemImage
 
 Identifica la proprietà \_ ItemImage PKEY \_ dell'interfaccia utente.
 
@@ -27,7 +27,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-Ui \_ PKEY ItemImage viene usato da un'applicazione per eseguire query sull'immagine associata a un elemento o \_ a un comando in un controllo raccolta.
+\_L'interfaccia utente PKEY ItemImage viene usata da un'applicazione per eseguire una query sull'immagine associata a un elemento o a un \_ comando in un controllo raccolta.
 
 Il valore della proprietà è un [**oggetto IUIImage.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimage)
 
@@ -35,7 +35,7 @@ Il valore della proprietà è un [**oggetto IUIImage.**](/windows/desktop/api/ui
 
 <dl> <dt>
 
-[Proprietà raccolta](windowsribbon-reference-properties-collection.md)
+[Proprietà della raccolta](windowsribbon-reference-properties-collection.md)
 </dt> </dl>
 
  

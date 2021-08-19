@@ -11,9 +11,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117872171"
 ---
-# <a name="mft_message_command_marker"></a>MARCATORE DI \_ COMANDO DEL \_ MESSAGGIO MFT \_
+# <a name="mft_message_command_marker"></a>INDICATORE DI COMANDO DEL MESSAGGIO MFT \_ \_ \_
 
-Contrassegna un punto nel flusso. Questo messaggio si applica solo [ai MFT asincroni.](asynchronous-mfts.md)
+Contrassegna un punto nel flusso. Questo messaggio si applica solo ai [MFT asincroni.](asynchronous-mfts.md)
 
 ## <a name="message-parameter"></a>Parametro del messaggio
 
@@ -23,16 +23,16 @@ Valore arbitrario. MFT restituisce il valore al client [nell'evento METransformM
 
 Per inviare questo messaggio, chiamare [**IMFTransform::P rocessMessage**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage).
 
-L'MFT risponde a questo messaggio come segue:
+Il MFT risponde a questo messaggio come segue:
 
-1.  MFT genera il maggior numero possibile di esempi di output dai dati di input esistenti, inviando un [evento METransformHaveOutput](metransformhaveoutput.md) per ogni esempio di output.
+1.  MFT genera il maggior numero possibile di esempi di output dai dati di input esistenti, inviando un evento [METransformHaveOutput](metransformhaveoutput.md) per ogni esempio di output.
 2.  Dopo la generazione di tutto l'output, MFT invia un [evento METransformMarker.](metransformmarker.md) Questo evento deve essere inviato dopo tutti gli [eventi METransformHaveOutput.](metransformhaveoutput.md)
 
 Il client non è necessario per inviare questo messaggio e deve inviare questo messaggio solo a MFT asincroni. Un MFT sincrono non invierà un [evento METransformMarker](metransformmarker.md) in risposta a questo messaggio.
 
 ### <a name="implementation"></a>Implementazione
 
-I MFT asincroni devono rispondere a questo messaggio come descritto. Questo messaggio deve essere ignorato da MFT sincroni.
+I messaggi MFT asincroni devono rispondere a questo messaggio come descritto. I messaggi MFT sincroni devono ignorare questo messaggio.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -7,7 +7,7 @@ keywords:
 - VFW (Video per Windows),macro AVIFile
 - macro AVIFile, informazioni di riferimento
 - Informazioni di riferimento su AVIFile, macro
-- informazioni di riferimento per AVIFile, macro
+- informazioni di riferimento per AVIFile,macro
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 25356bd7086a24ee82b2252e8a5d80b051680c431fd8b1b11e36afddcf5cf406

@@ -1,5 +1,5 @@
 ---
-title: Come usare Windows
+title: Come usare Il mio amico Windows
 description: Impostando altri controlli come finestre di controllo per un trackbar, è possibile posizionare automaticamente tali controlli alle estremità del trackbar come etichette.
 ms.assetid: 5797AA55-BD8D-407A-8896-08EE0DDC7E30
 ms.topic: article
@@ -11,11 +11,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117829057"
 ---
-# <a name="how-to-use-buddy-windows"></a>Come usare Windows
+# <a name="how-to-use-buddy-windows"></a>Come usare Il mio amico Windows
 
 Impostando altri controlli come finestre di controllo per un trackbar, è possibile posizionare automaticamente tali controlli alle estremità del trackbar come etichette.
 
-La figura seguente mostra un trackbar orizzontale e uno verticale, entrambi con controlli statici come finestre di controllo.
+La figura seguente mostra un trackbar orizzontale e un trackbar verticale, entrambi con controlli statici come finestre di controllo.
 
 ![Screenshot che mostra una finestra di dialogo con un trackbar orizzontale e un trackbar verticale](images/tkb-buddy.png)
 
@@ -32,9 +32,9 @@ La figura seguente mostra un trackbar orizzontale e uno verticale, entrambi con 
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="use-buddy-windows"></a>Usare Windows
+### <a name="use-buddy-windows"></a>Usare Il Windows di Buddy
 
-Nell'esempio di codice seguente vengono create le finestre di avvio mostrate nell'illustrazione.
+Nell'esempio di codice seguente vengono create le finestre degli amici mostrate nell'illustrazione.
 
 
 ```

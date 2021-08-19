@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetItemsFromUI dell'oggetto Item Visualizza una finestra di dialogo che consente a un utente di selezionare immagini e audio da trasferire da un dispositivo.
+description: Il metodo GetItemsFromUI dell'oggetto Item visualizza una finestra di dialogo che consente a un utente di selezionare immagini e audio da trasferire da un dispositivo.
 ms.assetid: 0ee9a248-20ed-4e1f-a8ce-615c4a6a2bce
-title: Item. GetItemsFromUI, metodo
+title: Metodo Item.GetItemsFromUI
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 25bb24fd2b4c6b8d3d7f8cc08c23a42257399a14
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a954dbefec9728d2d6f595144ba3991ab4f7b3a1ded77fdf7e3ca5407be70d23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117669713"
 ---
-# <a name="itemgetitemsfromui-method"></a>Item. GetItemsFromUI, metodo
+# <a name="itemgetitemsfromui-method"></a>Metodo Item.GetItemsFromUI
 
-Il metodo **GetItemsFromUI** dell'oggetto [**Item**](-wia-item.md) Visualizza una finestra di dialogo che consente a un utente di selezionare immagini e audio da trasferire da un dispositivo.
+Il **metodo GetItemsFromUI** dell'oggetto [**Item**](-wia-item.md) visualizza una finestra di dialogo che consente a un utente di selezionare immagini e audio da trasferire da un dispositivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ retVal = Item.GetItemsFromUI(
 
 <dl> <dt>
 
-*Flag* \[ in\]
+*Flag* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **WiaFlag**](-wia-wiaflag.md)**
@@ -54,11 +54,11 @@ Tipo: **[ **WiaFlag**](-wia-wiaflag.md)**
 
 </dt> <dd>
 
-Valore predefinito. \[in \] specifica il comportamento della finestra di dialogo. I valori validi per questo parametro sono identici a quelli per il parametro *è* del metodo [**DeviceDlg**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiaitem-devicedlg) .
+Valore predefinito. \[in \] Specifica il comportamento della finestra di dialogo. I valori validi per questo parametro sono gli stessi del parametro *lFlags* del [**metodo DeviceDlg.**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiaitem-devicedlg)
 
 </dd> </dl> </dd> <dt>
 
-*Finalità* \[ in\]
+*Finalità* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **WiaIntent**
@@ -72,7 +72,7 @@ Tipo: **WiaIntent**
 
 </dt> <dd>
 
-Valore predefinito. \[in \] specifica il tipo di dati che l'immagine deve rappresentare. Per un elenco di valori per finalità immagine, vedere [**costanti per finalità di immagine**](-wia-imageintentconstants.md).
+Valore predefinito. \[in \] specifica il tipo di dati che l'immagine deve rappresentare. Per un elenco dei valori di finalità dell'immagine, vedere [**Costanti finalità immagine**](-wia-imageintentconstants.md).
 
 </dd> </dl> </dd> </dl>
 
@@ -80,19 +80,19 @@ Valore predefinito. \[in \] specifica il tipo di dati che l'immagine deve rappre
 
 Tipo: **ICollection**
 
-Questo metodo restituisce una raccolta di oggetti [**Item**](-wia-item.md) che rappresentano gli elementi selezionati dall'utente. Se non è selezionato alcun elemento, l'insieme è vuoto.
+Questo metodo restituisce una raccolta di [**oggetti Item**](-wia-item.md) che rappresentano gli elementi selezionati dall'utente. Se non è selezionato alcun elemento, la raccolta è vuota.
 
 ## <a name="remarks"></a>Commenti
 
-Per le applicazioni Microsoft Visual Basic, aggiungere un riferimento a "Windows Image Acquisition 1,01 Type Library".
+Per le Visual Basic Microsoft, aggiungere un riferimento a "Windows Image Acquisition 1.01 Type Library".
 
-Questo metodo si applica solo ai dispositivi (elementi radice). Il metodo restituisce una raccolta di oggetti [**Item**](-wia-item.md) che rappresentano le immagini o i clip audio selezionati dall'utente.
+Questo metodo si applica solo ai dispositivi (elementi radice). Il metodo restituisce una raccolta di [**oggetti Item**](-wia-item.md) che rappresentano le immagini o i clip audio selezionati dall'utente.
 
-Se l'utente non seleziona elementi, il metodo restituisce una raccolta vuota.
+Se l'utente non seleziona alcun elemento, il metodo restituisce una raccolta vuota.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'utilizzo del metodo **GetItemsFromUI** per consentire a un utente di selezionare immagini da una finestra di dialogo.
+L'esempio seguente illustra l'uso del **metodo GetItemsFromUI** per consentire a un utente di selezionare immagini da una finestra di dialogo.
 
 
 ```JScript
@@ -123,9 +123,9 @@ Next
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4,90 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4.90 o successiva)</dt> </dl> |
 
 
 

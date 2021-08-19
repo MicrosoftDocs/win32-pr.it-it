@@ -1,30 +1,30 @@
 ---
-title: Per eseguire ricerche in base al tempo tramite il lettore sincrono
-description: Per eseguire ricerche in base al tempo tramite il lettore sincrono
+title: Per cercare in base al tempo usando il lettore sincrono
+description: Per cercare in base al tempo usando il lettore sincrono
 ms.assetid: 143f72b0-9d71-4efa-b8d4-5cde53a2aa2a
 keywords:
-- Formato Advanced Systems (ASF), ricerca per ora
-- ASF (Advanced Systems Format), ricerca per ora
+- Advanced Systems Format (ASF), ricerca in base al tempo
+- ASF (Advanced Systems Format), ricerca in base al tempo
+- Advanced Systems Format (ASF), lettori sincroni
 - ASF (Advanced Systems Format), lettori sincroni
-- ASF (formato avanzato dei sistemi), lettori sincroni
-- lettori sincroni, ricerca per ora
+- lettori sincroni, ricerca in base al tempo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b4a43e914a6fc0d320860db61f4747cbee3033e9
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: f74fb0cb4f73e70821347b82a9e5a2544eb9759e733fb164077b2fc007163db3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103723559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118432634"
 ---
-# <a name="to-seek-by-time-using-the-synchronous-reader"></a>Per eseguire ricerche in base al tempo tramite il lettore sincrono
+# <a name="to-seek-by-time-using-the-synchronous-reader"></a>Per cercare in base al tempo usando il lettore sincrono
 
-Per cercare i dati utilizzando il lettore sincrono, è necessario specificare un intervallo per la riproduzione. Un intervallo è definito da un'ora di presentazione iniziale e da una durata, entrambe in unità di 100 nanosecondi.
+Per cercare dati usando il lettore sincrono, è necessario specificare un intervallo per la riproduzione. Un intervallo è definito da un'ora di presentazione iniziale e una durata, entrambe in unità da 100 nanosecondi.
 
 Per cercare i dati in un file ASF in base all'ora di presentazione usando il lettore sincrono, seguire questa procedura.
 
-1.  Specificare l'ora di inizio e la durata per il recapito di esempio chiamando [**IWMSyncReader:: SetRange**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmsyncreader-setrange). Questo metodo non richiede di specificare un numero di flusso perché le ore di presentazione di ogni flusso devono essere già sincronizzate.
-2.  Iniziare il recupero degli esempi con le chiamate a [**IWMSyncReader:: GetNextSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmsyncreader-getnextsample). Procedere normalmente con il lettore sincrono.
+1.  Specificare un'ora di inizio e una durata per il recapito di esempio chiamando [**IWMSyncReader::SetRange**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmsyncreader-setrange). Questo metodo non richiede di specificare un numero di flusso perché gli orari di presentazione di ogni flusso devono essere già sincronizzati.
+2.  Iniziare a recuperare gli esempi con chiamate a [**IWMSyncReader::GetNextSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmsyncreader-getnextsample). Procedere come si farebbe normalmente con il lettore sincrono.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -36,9 +36,9 @@ Per cercare i dati in un file ASF in base all'ora di presentazione usando il let
 [**Lettura di file con il lettore sincrono**](reading-files-with-the-synchronous-reader.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

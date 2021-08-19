@@ -1,6 +1,6 @@
 ---
 title: PLAYLIST.setCheckedState
-description: Il metodo setCheckedState specifica che l'elemento indicizzato nella playlist viene controllato.
+description: Il metodo setCheckedState specifica che l'elemento indicizzato nella playlist è selezionato.
 ms.assetid: ce5de21b-6354-485e-b6f7-f4d090c149f7
 keywords:
 - PLAYLIST.setCheckedState Windows Media Player
@@ -22,7 +22,7 @@ ms.locfileid: "118336248"
 ---
 # <a name="playlistsetcheckedstate"></a>PLAYLIST.setCheckedState
 
-Il **metodo setCheckedState** specifica che l'elemento indicizzato nella playlist viene controllato.
+Il **metodo setCheckedState** specifica che l'elemento indicizzato nella playlist è selezionato.
 
 ``` syntax
         elementID.setCheckedState(item)
@@ -41,13 +41,13 @@ Il **metodo setCheckedState** specifica che l'elemento indicizzato nella playlis
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un valore **booleano.**
+Questo metodo restituisce un valore **booleano**.
 
 ## <a name="remarks"></a>Commenti
 
 È possibile impostare tutti gli elementi sullo stato selezionato specificando 1 nel *parametro item.*
 
-Questo metodo è stato sostituito da **setCheckedState2,** che supporta playlist annidate.
+Questo metodo è stato sostituito da **setCheckedState2**, che supporta playlist annidate.
 
 ## <a name="requirements"></a>Requisiti
 

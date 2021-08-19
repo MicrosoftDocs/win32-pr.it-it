@@ -1,25 +1,25 @@
 ---
-description: Nell'esempio riportato in questo argomento vengono utilizzate le funzioni RegOpenKeyEx, RegEnumKeyEx e RegDeleteKey per eliminare una chiave del registro di sistema con sottochiavi.
+description: L'esempio in questo argomento usa le funzioni RegOpenKeyEx, RegEnumKeyEx e RegDeleteKey per eliminare una chiave del Registro di sistema con sottochiavi.
 ms.assetid: 1cf6db95-85a4-4416-b17e-e14f45804503
 title: Eliminazione di una chiave con sottochiavi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 490020ff5a7bc6ea44f83b729bcbad4491aaa62e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee7c64421a83c6eeb1537a8a72b839eeea5d49d2f17846dc7d627c5127e6b7e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104058379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117764483"
 ---
 # <a name="deleting-a-key-with-subkeys"></a>Eliminazione di una chiave con sottochiavi
 
-Nell'esempio riportato in questo argomento vengono utilizzate le funzioni [**RegOpenKeyEx**](/windows/desktop/api/Winreg/nf-winreg-regopenkeyexa), [**RegEnumKeyEx**](/windows/desktop/api/Winreg/nf-winreg-regenumkeyexa)e [**RegDeleteKey**](/windows/desktop/api/Winreg/nf-winreg-regdeletekeya) per eliminare una chiave del registro di sistema con sottochiavi.
+L'esempio in questo argomento usa le [**funzioni RegOpenKeyEx**](/windows/desktop/api/Winreg/nf-winreg-regopenkeyexa), [**RegEnumKeyEx**](/windows/desktop/api/Winreg/nf-winreg-regenumkeyexa)e [**RegDeleteKey**](/windows/desktop/api/Winreg/nf-winreg-regdeletekeya) per eliminare una chiave del Registro di sistema con sottochiavi.
 
-Per testare questo esempio, creare la chiave del registro di sistema seguente usando Regedt32.exe e quindi aggiungere alcuni valori e sottochiavi:
+Per testare questo esempio, creare la chiave del Registro di sistema seguente usando Regedt32.exe e quindi aggiungere alcuni valori e sottochiavi:
 
-**HKEY \_ \_** \\  \\ **TestDir** software utente corrente
+**HKEY \_ CURRENT \_ USER** \\ **Software** \\ **TestDir**
 
-Dopo aver eseguito il codice, utilizzare il tasto F5 per aggiornare i dati del registro di sistema e notare che la chiave **TestDir** è stata eliminata.
+Dopo aver eseguito il codice, usare la chiave F5 per aggiornare i dati del Registro di sistema e notare che la **chiave TestDir** viene eliminata.
 
 
 ```C++

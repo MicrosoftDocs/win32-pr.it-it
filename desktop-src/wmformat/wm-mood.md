@@ -1,9 +1,9 @@
 ---
-title: WM/Wm/Wm
-description: L'attributo WM/Attribute contiene un nome di categoria per l'inizio del contenuto.
+title: WM/Mood
+description: L'attributo WM/Mood contiene un nome di categoria per l'atmosfera del contenuto.
 ms.assetid: 04a56354-e326-4c42-b124-249fa4d95ce7
 keywords:
-- WM/Wm/Wm Windows Media Format
+- WM/Mood windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118195651"
 ---
-# <a name="wmmood"></a>WM/Wm/Wm
+# <a name="wmmood"></a>WM/Mood
 
-**L'attributo WM/Attribute** contiene un nome di categoria per l'inizio del contenuto.
+**L'attributo WM/Mood** contiene un nome di categoria per l'atmosfera del contenuto.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,7 +29,7 @@ g \_ wszWMMood
 
 ## <a name="data-type"></a>Tipo di dati
 
-**STRINGA DI \_ TIPO \_ WMT**
+**STRINGA DI TIPO WMT \_ \_**
 
 ## <a name="example"></a>Esempio
 
@@ -37,7 +37,7 @@ g \_ wszWMMood
 
 | Tipo file | Valore di esempio |
 |-----------|---------------|
-| Tutti       | "Ous"      |
+| Tutti       | "Gioioso"      |
 
 
 

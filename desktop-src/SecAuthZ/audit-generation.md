@@ -15,13 +15,13 @@ ms.locfileid: "117784697"
 
 I requisiti di sicurezza a livello di C2 specificano che gli amministratori di sistema devono essere in grado di controllare gli eventi correlati alla sicurezza e che l'accesso a questi dati di controllo deve essere limitato agli amministratori autorizzati. L Windows API fornisce funzioni che consentono a un amministratore di monitorare gli eventi correlati alla sicurezza.
 
-Il descrittore di sicurezza per un oggetto a protezione diretta può avere un elenco [*di controllo*](/windows/desktop/SecGloss/s-gly) di accesso di sistema (SACL). Un sacl contiene [*voci di controllo di accesso*](/windows/desktop/SecGloss/a-gly) (ACE) che specificano i tipi di tentativi di accesso che generano report di controllo. Ogni voce ACE identifica un fiduciare, un set di diritti di accesso e un set di flag che indicano se il sistema genera messaggi di controllo per tentativi di accesso non riusciti, tentativi di accesso riusciti o entrambi.
+Il descrittore di sicurezza per un oggetto a protezione diretta può avere un elenco di [*controllo*](/windows/desktop/SecGloss/s-gly) di accesso di sistema (SACL). Un sacl contiene [*voci di controllo di accesso*](/windows/desktop/SecGloss/a-gly) (ACE) che specificano i tipi di tentativi di accesso che generano report di controllo. Ogni voce ACE identifica un trustee, un set di diritti di accesso e un set di flag che indicano se il sistema genera messaggi di controllo per tentativi di accesso non riusciti, tentativi di accesso riusciti o entrambi.
 
 Il sistema scrive i messaggi di controllo nel registro eventi di sicurezza. Per informazioni sull'accesso ai record in un registro eventi di sicurezza, vedere [Registrazione eventi](/windows/desktop/EventLog/event-logging).
 
-Per leggere o scrivere l'elenco SACL di un oggetto, un thread deve prima abilitare il privilegio SECURITY NAME edizione Standard \_ SECURITY \_ NAME. Per altre informazioni, vedere [Diritto di accesso SACL.](sacl-access-right.md)
+Per leggere o scrivere l'elenco SACL di un oggetto, un thread deve prima abilitare il edizione Standard \_ SECURITY \_ NAME. Per altre informazioni, vedere [Diritto di accesso SACL.](sacl-access-right.md)
 
-L Windows API fornisce anche il supporto per le applicazioni server per generare messaggi di controllo quando un client tenta di accedere a un oggetto privato. Per altre informazioni, vedere [Controllo dell'accesso a oggetti privati](auditing-access-to-private-objects.md).
+L Windows API fornisce anche il supporto per le applicazioni server per generare messaggi di controllo quando un client tenta di accedere a un oggetto privato. Per altre informazioni, vedere [Controllo dell'accesso a oggetti privati.](auditing-access-to-private-objects.md)
 
  
 

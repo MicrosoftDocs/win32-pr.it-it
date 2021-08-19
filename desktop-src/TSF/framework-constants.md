@@ -1,41 +1,41 @@
 ---
-title: Costanti del Framework
-description: Costanti del Framework
+title: Costanti framework
+description: Costanti framework
 ms.assetid: 2ac66194-4bf2-4bbf-a70b-9387f8ca7183
 keywords:
 - Framework servizi di testo (TSF), costanti
-- TSF (Framework di servizi di testo), costanti
-- Servizi di testo, costanti
-- Applicazioni abilitate per TSF, costanti
-- Riferimento a TSF, costanti
-- riferimento per TSF, costanti
+- TSF (Framework servizi di testo),costanti
+- servizi di testo, costanti
+- applicazioni abilitate per TSF, costanti
+- Informazioni di riferimento su TSF, costanti
+- informazioni di riferimento per TSF, costanti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d3769809658ed313490514ff9d2b3dd39eadbdd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1a2be63f547ffc81175916afbc6945222bab51515144a9faf286900258fe1438
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104116773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117953406"
 ---
-# <a name="framework-constants"></a>Costanti del Framework
+# <a name="framework-constants"></a>Costanti framework
 
-Le costanti TSF sono costituite dalle seguenti categorie.
+Le costanti TSF sono costituite da categorie seguenti.
 
--   [Costanti del Framework varie](miscellaneous-framework-constants.md)
--   [Valori di distorsione della modalità](mode-bias-values.md)
+-   [Costanti varie del framework](miscellaneous-framework-constants.md)
+-   [Valori distorsione modalità](mode-bias-values.md)
 -   [Proprietà predefinite](predefined-properties.md)
--   [\_ \* Costanti TF](tf--constants.md)
--   [\_Costanti TF es \_ \*](tf-es--constants.md)
--   [\_Costanti IAS \_ \* TF](tf-ias--constants.md)
--   [\_Costanti TF mod \_ \*](tf-mod--constants.md)
--   [\_Costanti SD \_ \* TF](tf-sd--constants.md)
--   [\_Costanti TF SS \_ \*](tf-ss--constants.md)
--   [\_Costanti TF TF \_ \*](tf-tf--constants.md)
+-   [Costanti \_ TF \*](tf--constants.md)
+-   [Costanti TF \_ \_ \* ES](tf-es--constants.md)
+-   [Costanti \_ IAS TF \_ \*](tf-ias--constants.md)
+-   [Costanti MOD TF \_ \_ \*](tf-mod--constants.md)
+-   [Costanti \_ TF SD \_ \*](tf-sd--constants.md)
+-   [Costanti \_ TF \_ \* SS](tf-ss--constants.md)
+-   [Costanti \_ TF \_ \* TF](tf-tf--constants.md)
 
- 
+ 
 
- 
+ 
 
 
 

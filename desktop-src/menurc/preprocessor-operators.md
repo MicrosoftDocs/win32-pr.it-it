@@ -1,21 +1,21 @@
 ---
 title: Operatori del preprocessore
-description: RC supporta l'utilizzo degli operatori di pre-elaborazione C standard nelle definizioni delle macro. Questi operatori sono descritti nella tabella seguente.
+description: RC supporta l'uso degli operatori di pre-elaborazione C standard nelle definizioni di macro. Questi operatori sono descritti nella tabella seguente.
 ms.assetid: dc5e25ae-66ae-4338-9150-cd0055aafc53
 keywords:
 - compilatore di risorse, operatori del preprocessore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f51aa806c625dcb7686ccd5032895c860688e2e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 643e8b56c302878b39defa4da9adb71dd0062d5a148531eb06978c6c0ecd651e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117870113"
 ---
 # <a name="preprocessor-operators"></a>Operatori del preprocessore
 
-RC supporta l'utilizzo degli operatori di pre-elaborazione C standard nelle definizioni delle macro. Questi operatori sono descritti nella tabella seguente.
+RC supporta l'uso degli operatori di pre-elaborazione C standard nelle definizioni di macro. Questi operatori sono descritti nella tabella seguente.
 
 
 
@@ -23,15 +23,15 @@ RC supporta l'utilizzo degli operatori di pre-elaborazione C standard nelle defi
 |----------|-------------------------------------------------------------|
 | \#       | Racchiude l'argomento tra virgolette.                            |
 | \#@      | Racchiude l'argomento tra virgolette singole.                     |
-| \#\#     | Concatena i token utilizzati come argomenti per formare altri token. |
+| \#\#     | Concatena i token usati come argomenti per formare altri token. |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: async_uuid (attributo)
-description: L'attributo \ Async \_ UUID \ Interface indica al compilatore MIDL di definire versioni sincrone e asincrone di un'interfaccia com.
+description: L'attributo di interfaccia \ async uuid\ indica al compilatore MIDL di definire versioni sincrone e \_ asincrone di un'interfaccia COM.
 ms.assetid: 1c20eaa1-78b5-4463-a8c1-d81e55d5c618
 keywords:
-- attributo async_uuid MIDL
+- async_uuid attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 39fd7b4d9d9bf7a595415e55de778a419d91051c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 83a784cadf470fa312a82e473f3934dbda1a2b6dce20d2ae34c7074c309398cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104117643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117808235"
 ---
-# <a name="async_uuid-attribute"></a>\_attributo uuid asincrono
+# <a name="async_uuid-attribute"></a>Attributo \_ async uuid
 
-L'attributo di interfaccia **\[ \_ UUID \] asincrono** indica al compilatore MIDL di definire versioni sincrone e asincrone di un'interfaccia com.
+**\[ L'attributo \_ dell'interfaccia asincrona uuid \]** indica al compilatore MIDL di definire versioni sincrone e asincrone di un'interfaccia COM.
 
 ``` syntax
 [ 
@@ -39,28 +39,28 @@ interface interface-name : base-interface
 
 <dl> <dt>
 
-*stringa-uuid1* 
+*string-uuid1* 
 </dt> <dd>
 
-Stringa UUID, generata dall'utilità uuidgen, che identifica la versione sincrona dell'interfaccia.
+Stringa UUID, generata dall'utilità Uuidgen, che identifica la versione sincrona dell'interfaccia.
 
 </dd> <dt>
 
-*stringa-UUID2* 
+*string-uuid2* 
 </dt> <dd>
 
-Stringa UUID, generata dall'utilità uuidgen, che identifica la versione asincrona dell'interfaccia.
+Stringa UUID, generata dall'utilità Uuidgen, che identifica la versione asincrona dell'interfaccia.
 
 </dd> <dt>
 
-*Interface-Attribute-List* 
+*interface-attribute-list* 
 </dt> <dd>
 
-Altri attributi applicabili all'interfaccia nel suo complesso. Non è possibile usare l'attributo [**\[ version \]**](version.md) in un'interfaccia com.
+Altri attributi che si applicano all'intera interfaccia. Non è possibile usare [**\[ l'attributo version \]**](version.md) in un'interfaccia COM.
 
 </dd> <dt>
 
-*Nome interfaccia* 
+*interface-name* 
 </dt> <dd>
 
 Nome dell'interfaccia.
@@ -70,11 +70,11 @@ Nome dell'interfaccia.
 *interfaccia di base* 
 </dt> <dd>
 
-Interfaccia da cui deriva questa interfaccia. L'interfaccia di base deve essere **IUnknown** o un'interfaccia asincrona che deriva direttamente o indirettamente da **IUnknown**.
+Interfaccia da cui deriva questa interfaccia. L'interfaccia di base deve **essere IUnknown** o un'interfaccia asincrona che deriva, direttamente o indirettamente, da **IUnknown**.
 
 </dd> <dt>
 
-*interfaccia-definizione* 
+*interface-definition* 
 </dt> <dd>
 
 Specifica le istruzioni IDL che formano la definizione dell'interfaccia.
@@ -85,13 +85,13 @@ Specifica le istruzioni IDL che formano la definizione dell'interfaccia.
 
 L'uso di questo attributo richiede Windows 2000 o versioni successive di Windows.
 
-Quando si applica l'attributo **\[ \_ UUID \] asincrono** a un'interfaccia com, ovvero un'interfaccia con l'attributo [**\[ Object \]**](object.md) , il compilatore MIDL genera una definizione asincrona dell'interfaccia, oltre alla versione sincrona tradizionale. L'interfaccia asincrona avrà gli stessi nomi dell'interfaccia sincrona, ma con un prefisso "Async". L'identificatore di interfaccia (IID) sarà l'UUID specificato come parametro per l'attributo **\[ \_ UUID \] asincrono** .
+Quando si applica l'attributo **\[ \_ async uuid \]** a un'interfaccia COM, ovvero un'interfaccia con l'attributo [**\[ object, \]**](object.md) il compilatore MIDL genera una definizione asincrona dell'interfaccia, oltre alla versione sincrona tradizionale. L'interfaccia asincrona avrà gli stessi nomi dell'interfaccia sincrona, ma con un prefisso "Async". L'identificatore di interfaccia (IID) sarà l'UUID specificato come parametro per **\[ l'attributo \_ uuid \] asincrono.**
 
-Per l'interfaccia asincrona, MIDL suddivide ogni metodo in metodi *Begin* e *Finish* distinti. Il metodo *Begin* ha il nome del metodo sincrono con un \_ prefisso "Begin" e include tutti i parametri [**\[ in \]**](in.md) del metodo sincrono. Il metodo *Finish* ha il nome del metodo sincrono con un prefisso "Finish \_ " e include tutti i parametri [**\[ out \]**](out-idl.md) del metodo sincrono. Se il metodo sincrono include un parametro **\[ in \] ,** i parametri out verranno inclusi nei metodi asincroni *Begin* e *Finish* .
+Per l'interfaccia asincrona, MIDL suddivide ogni metodo in metodi *begin* *e finish* separati. Il *metodo begin* ha il nome del metodo sincrono con un prefisso "Begin" e include tutti i parametri \_ [**\[ in \]**](in.md) del metodo sincrono. Il *metodo finish* ha il nome del metodo sincrono con un prefisso "Finish" e include tutti i parametri out \_ [**\[ \]**](out-idl.md) dal metodo sincrono. Se il metodo sincrono dispone di **\[ parametri in , \] i** parametri out verranno inclusi nei metodi asincroni *begin* *e finish.*
 
-Se un metodo di interfaccia asincrono ha la [**\[ chiamata \_ come \]**](call-as.md) attributo, MIDL genererà le dichiarazioni per i metodi *Begin* e *Finish* . È necessario implementare entrambi i metodi.
+Se un metodo di interfaccia asincrono ha la [**\[ chiamata \_ come \]**](call-as.md) attributo, MIDL genererà dichiarazioni per i metodi *begin* *e finish.* È necessario implementare entrambi i metodi.
 
-Ogni interfaccia asincrona è un modificatore su un'interfaccia sincrona e, di conseguenza, non ha un grafo di ereditarietà separato. Ciò significa che non è possibile definire un'interfaccia sincrona da un'interfaccia asincrona (diversa da **IUnknown**). Né possono ereditare interfacce sincrone da interfacce asincrone. Se si tenta di eseguire una delle due, il compilatore MIDL genererà un messaggio di errore.
+Ogni interfaccia asincrona è un modificatore su un'interfaccia sincrona e, di conseguenza, non dispone di un grafico di ereditarietà separato. Ciò significa che non è possibile definire un'interfaccia sincrona da un'interfaccia asincrona (diversa da **IUnknown**). Né le interfacce sincrone possono ereditare da interfacce asincrone. Il compilatore MIDL genera un messaggio di errore se si tenta di provarne uno.
 
 ## <a name="examples"></a>Esempi
 
@@ -118,27 +118,27 @@ interface IMyInterface : IUnknown
 [File di definizione dell'interfaccia (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**chiama \_ come**](call-as.md)
+[**chiamare \_ come**](call-as.md)
 </dt> <dt>
 
-[**IID \_ è**](iid-is.md)
+[**iid \_ è**](iid-is.md)
 </dt> <dt>
 
-[**in**](in.md)
+[**Pollici**](in.md)
 </dt> <dt>
 
-[**locale**](local.md)
+[**Locale**](local.md)
 </dt> <dt>
 
-[**oggetto**](object.md)
+[**Oggetto**](object.md)
 </dt> <dt>
 
-[**out**](out-idl.md)
+[**in uscita**](out-idl.md)
 </dt> <dt>
 
 [**Versione**](version.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

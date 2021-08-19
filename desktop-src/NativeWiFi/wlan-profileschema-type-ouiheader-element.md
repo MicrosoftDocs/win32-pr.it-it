@@ -1,7 +1,7 @@
 ---
-description: Contiene un hexBinary di 1 byte usato per distinguere le schede di rete eseguite dallo stesso IHV.
+description: Contiene un oggetto hexBinary a 1 byte usato per distinguere le schede di interfaccia di rete effettuate dallo stesso IHV.
 ms.assetid: fd6bae3d-27a8-4bff-9340-b444312b8216
-title: Elemento Type (OUIHeader)
+title: Elemento type (OUIHeader)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 12637e5a70409166e5a31aa0fc98f4df1b9f6945
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 234b30883df463d7c336ce7d270e574d41a5cabe9924c327a35ff1a31ee65632
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117797502"
 ---
-# <a name="type-ouiheader-element"></a>Elemento Type (OUIHeader)
+# <a name="type-ouiheader-element"></a>Elemento type (OUIHeader)
 
-L'elemento Type (OUIHeader) contiene un hexBinary a 1 byte usato per distinguere le schede di rete eseguite dallo stesso IHV.
+L'elemento type (OUIHeader) contiene un elemento hexBinary a 1 byte usato per distinguere le schede di interfaccia di rete effettuate dallo stesso IHV.
 
 **Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** Questo elemento non è supportato.
 
@@ -39,7 +39,7 @@ L'elemento Type (OUIHeader) contiene un hexBinary a 1 byte usato per distinguere
 </xs:element>
 ```
 
-L'elemento è definito dall'elemento [**OUIHeader**](wlan-profileschema-ouiheader-ihv-element.md) .
+L'elemento è definito [**dall'elemento OUIHeader.**](wlan-profileschema-ouiheader-ihv-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,8 +47,8 @@ L'elemento è definito dall'elemento [**OUIHeader**](wlan-profileschema-ouiheade
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -62,7 +62,7 @@ L'elemento è definito dall'elemento [**OUIHeader**](wlan-profileschema-ouiheade
 [**OUIHeader**](wlan-profileschema-ouiheader-ihv-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**OUIHeader (IHV)**](wlan-profileschema-ouiheader-ihv-element.md)

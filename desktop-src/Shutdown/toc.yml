@@ -56,5 +56,5 @@
               href: wm-endsession.md
             - name: WM_QUERYENDSESSION
               href: wm-queryendsession.md
-        - name: Codici motivo arresto sistema
+        - name: Codici motivo dell'arresto del sistema
           href: system-shutdown-reason-codes.md

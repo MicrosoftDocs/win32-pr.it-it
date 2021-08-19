@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117874625"
 ---
-# <a name="mfnetsource_proxyport-property"></a>Proprietà MFNETSOURCE \_ PROXYPORT
+# <a name="mfnetsource_proxyport-property"></a>MFNETSOURCE \_ - proprietà PROXYPORT
 
 Specifica il numero di porta del server proxy.
 
@@ -23,7 +23,7 @@ Tipo PROPVARIANT (vt)
 
 membro PROPVARIANT
 
-**DWORD** (archiviato come **LONG**)
+**DWORD** (archiviato come **LONG)**
 
 VT \_ I4
 
@@ -43,8 +43,8 @@ Le applicazioni possono usare questa proprietà per configurare il localizzatore
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
 | Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
@@ -59,7 +59,7 @@ Le applicazioni possono usare questa proprietà per configurare il localizzatore
 [Rete in Media Foundation](networking-in-media-foundation.md)
 </dt> <dt>
 
-[Supporto proxy per le origini di rete](proxy-support-for-network-sources.md)
+[Supporto proxy per origini di rete](proxy-support-for-network-sources.md)
 </dt> </dl>
 
  

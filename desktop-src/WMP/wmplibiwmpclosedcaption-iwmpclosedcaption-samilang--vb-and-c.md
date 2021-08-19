@@ -1,11 +1,11 @@
 ---
-title: Proprietà SAMILang di IWMPClosedCaption
-description: La proprietà SAMILang Ottiene o imposta la lingua visualizzata per la didascalia chiusa.
+title: Proprietà SAMILang IWMPClosedCaption
+description: La proprietà SAMILang ottiene o imposta la lingua visualizzata per i sottotitoli codificati.
 ms.assetid: dcdd6bcd-b869-439f-b500-df26d3873b04
 keywords:
-- Finestra delle proprietà di SAMILang Media Player
-- Proprietà di SAMILang Media Player Windows, interfaccia IWMPClosedCaption
-- Interfaccia IWMPClosedCaption Windows Media Player, proprietà SAMILang
+- Proprietà SAMILang Windows Media Player
+- Proprietà SAMILang Windows Media Player, interfaccia IWMPClosedCaption
+- Interfaccia IWMPClosedCaption Windows Media Player , proprietà SAMILang
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe29defa3736795c88613ee7ab2ef11a914a3f80
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 98354d5e1e4f796442dd0347a4ed2796cafdf7297d3829af9b8839d48df00c3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117930314"
 ---
-# <a name="iwmpclosedcaptionsamilang-property"></a>Proprietà IWMPClosedCaption:: SAMILang
+# <a name="iwmpclosedcaptionsamilang-property"></a>Proprietà IWMPClosedCaption::SAMILang
 
-La proprietà **SAMILang** Ottiene o imposta la lingua visualizzata per la didascalia chiusa.
+La **proprietà SAMILang** ottiene o imposta la lingua visualizzata per i sottotitoli codificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,11 +46,11 @@ Public Property SAMILang As System.String
 
 ## <a name="property-value"></a>Valore proprietà
 
-**System. String** che rappresenta il nome specificato nell'identificatore di lingua di un file Sami.
+Oggetto **System.String** che rappresenta il nome specificato nell'identificatore di lingua di un file SAMI.
 
 ## <a name="remarks"></a>Commenti
 
-Un file SAMI può contenere testo per una o più lingue. Le lingue disponibili per la didascalia chiusa sono definite tra i tag <STYLE> e </STYLE> nel file Sami. Un identificatore di lingua viene specificato con una stringa alfanumerica univoca preceduta da un punto (.). Il nome specificato per una lingua può essere qualsiasi stringa. È ad esempio possibile utilizzare il codice seguente per definire l'inglese (Stati Uniti):
+Un file SAMI può contenere testo per una o più lingue. Le lingue disponibili per i sottotitoli codificati sono definite tra <STYLE> i tag e </STYLE> nel file SAMI. Un identificatore di lingua viene specificato con una stringa alfanumerica univoca preceduta da un punto (.). Il nome specificato per una lingua può essere qualsiasi stringa. Ad esempio, per definire l'inglese degli Stati Uniti è possibile usare quanto segue:
 
 
 ```
@@ -59,9 +59,9 @@ Un file SAMI può contenere testo per una o più lingue. Le lingue disponibili p
 
 
 
-Se non si specifica alcun linguaggio SAMI, per impostazione predefinita viene usata la prima lingua definita nel file SAMI.
+Se non viene specificata alcuna lingua SAMI, per impostazione predefinita viene usata la prima lingua definita nel file SAMI.
 
-La stringa impostata utilizzando **SAMILang** deve corrispondere all'attributo **Name** nell'identificatore di linguaggio.
+La stringa impostata tramite **SAMILang** deve corrispondere **all'attributo Name** nell'identificatore di lingua.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,7 +69,7 @@ La stringa impostata utilizzando **SAMILang** deve corrispondere all'attributo *
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -79,7 +79,7 @@ La stringa impostata utilizzando **SAMILang** deve corrispondere all'attributo *
 
 <dl> <dt>
 
-[**Aggiunta di didascalie chiuse a file multimediali digitali**](adding-closed-captions-to-digital-media.md)
+[**Aggiunta di sottotitoli codificati ai supporti digitali**](adding-closed-captions-to-digital-media.md)
 </dt> <dt>
 
 [**Interfaccia IWMPClosedCaption (VB e C#)**](iwmpclosedcaption--vb-and-c.md)

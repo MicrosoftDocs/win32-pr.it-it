@@ -1,30 +1,30 @@
 ---
-description: Utilizzando MFTrace, è possibile filtrare i risultati della traccia specificando un elenco di parole chiave.
+description: Con MFTrace è possibile filtrare i risultati della traccia specificando un elenco di parole chiave.
 ms.assetid: e7c382cb-94ac-4f90-a3dd-32f94c538396
-title: Parole chiave MFTrace
+title: Parole chiave di MFTrace
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6d18a91aede8692209b9d5b7a2759c460e44043
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b2ab3d52d73e6881a4dac7c32dfb1c181fecaef6e9a833b25f744ace6c84f65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117871857"
 ---
-# <a name="mftrace-keywords"></a>Parole chiave MFTrace
+# <a name="mftrace-keywords"></a>Parole chiave di MFTrace
 
-Utilizzando [MFTrace](mftrace.md), è possibile filtrare i risultati della traccia specificando un elenco di parole chiave. Nella riga di comando usare l'argomento della riga di comando **-k** . In alternativa, specificare l'elemento [**keyword**](keyword.md) nel file di configurazione. Per altre informazioni, vedere [uso di MFTrace](using-mftrace.md).
+Con [MFTrace](mftrace.md)è possibile filtrare i risultati della traccia specificando un elenco di parole chiave. Nella riga di comando usare l'argomento della riga di comando **-k.** In alternativa, specificare [**l'elemento keyword**](keyword.md) nel file di configurazione. Per altre informazioni, vedere [Uso di MFTrace.](using-mftrace.md)
 
-MFTrace supporta le parole chiave seguenti. La maggior parte si riferisce a specifiche interfacce o esportazioni di librerie.
+MFTrace supporta le parole chiave seguenti. La maggior parte si riferisce a particolari interfacce o esportazioni di librerie.
 
 -   "All"
--   Predefinita
--   Deviazioni
+-   "Default"
+-   "Deviazioni"
 -   "IFilterGraph"
 -   "IGraphBuilder"
--   IMediaControl
+-   "IMediaControl"
 -   "IMediaObject"
--   IMemInputPin
+-   "IMemInputPin"
 -   "IMFActivate"
 -   "IMFAttributes"
 -   "IMFByteStream"

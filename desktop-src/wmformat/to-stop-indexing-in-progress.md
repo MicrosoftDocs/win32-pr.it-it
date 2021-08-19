@@ -20,9 +20,9 @@ ms.locfileid: "118432624"
 
 Dopo aver avviato l'indicizzazione con una chiamata a [**IWMIndexer::StartIndexing**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmindexer-startindexing), l'indicizzatore continuerà normalmente fino a quando il file non viene indicizzato. È possibile arrestare le operazioni di indicizzazione chiamando il [**metodo IWMIndexer::Cancel.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmindexer-cancel) Dopo aver annullato l'indicizzazione, è possibile chiamare di nuovo **StartIndexing,** ma l'indicizzatore inizierà dall'inizio del file anziché riprendere dal punto di annullamento.
 
-Poiché **StartIndexing** è una chiamata asincrona, in genere è necessario chiamare **Cancel** da un altro thread o gestore eventi nell'applicazione. In **genere Cancel** viene chiamato da una routine evento associata a un controllo pulsante di un'Windows app.
+Poiché **StartIndexing** è una chiamata asincrona, in genere è necessario chiamare **Cancel** da un altro thread o gestore eventi nell'applicazione. In **genere Cancel** viene chiamato da una routine evento associata a un controllo pulsante di un Windows app.
 
-Quando l'indicizzazione viene annullata, l'indicizzatore passerà un messaggio di stato WMT CLOSED, proprio come se il \_ file fosse stato indicizzato correttamente.
+Quando l'indicizzazione viene annullata, l'indicizzatore passerà un messaggio di stato WMT CLOSED, proprio come se il file fosse \_ stato indicizzato correttamente.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

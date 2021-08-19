@@ -1,28 +1,28 @@
 ---
-description: Lo strumento MFTrace è in grado di leggere un file di configurazione XML che specifica uno o più provider di traccia.
+description: Lo strumento MFTrace può leggere un file di configurazione XML che specifica uno o più provider di traccia.
 ms.assetid: 70d11a55-041e-4eb5-96a9-238e7ecdd906
-title: File di configurazione MFTrace
+title: File di configurazione di MFTrace
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6598bcfdde16291fb744783b2f12be414ae997b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60969d52405b5aeeb768710d35751d9ea2cab40ca60a7d85a4da1bc1b0c65468
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117871938"
 ---
-# <a name="mftrace-configuration-file"></a>File di configurazione MFTrace
+# <a name="mftrace-configuration-file"></a>File di configurazione di MFTrace
 
-Lo strumento [MFTrace](mftrace.md) è in grado di leggere un file di configurazione XML che specifica uno o più provider di traccia.
+Lo [strumento MFTrace](mftrace.md) può leggere un file di configurazione XML che specifica uno o più provider di traccia.
 
-L'elemento [**providers**](providers.md) è l'elemento radice nel file di configurazione.
+[**L'elemento providers**](providers.md) è l'elemento radice nel file di configurazione.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**parola chiave**](keyword.md)
+-   [**Parola chiave**](keyword.md)
 -   [**mfdetours**](mfdetours.md)
--   [**provider**](provider.md)
--   [**provider**](providers.md)
+-   [**Provider**](provider.md)
+-   [**Provider**](providers.md)
 
 ## <a name="example"></a>Esempio
 

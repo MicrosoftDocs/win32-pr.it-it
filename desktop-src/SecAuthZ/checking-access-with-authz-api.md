@@ -1,37 +1,37 @@
 ---
-description: Le applicazioni determinano se concedere l'accesso agli oggetti a protezione diretta chiamando la funzione AuthzAccessCheck.
+description: Le applicazioni determinano se concedere l'accesso a oggetti a protezione diretta chiamando la funzione AuthzAccessCheck.
 ms.assetid: dad0a102-08ed-4cd2-bef5-87bc48fc7fc2
-title: Verifica dell'accesso con l'API Authz
+title: Controllo dell'accesso con Authz API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e129b690a7c1f701b5f669a8f0705c5a5e9a2eec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 876c3b5305e33969f63932fdc9e1e4f6767c95a64b11272283420a377b39f795
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117783097"
 ---
-# <a name="checking-access-with-authz-api"></a>Verifica dell'accesso con l'API Authz
+# <a name="checking-access-with-authz-api"></a>Controllo dell'accesso con Authz API
 
-Le applicazioni determinano se concedere l'accesso agli oggetti a protezione diretta chiamando la funzione [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) .
+Le applicazioni determinano se concedere l'accesso a oggetti a protezione diretta chiamando la [**funzione AuthzAccessCheck.**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck)
 
-La funzione [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) accetta sia le strutture di [**\_ \_ richiesta di accesso AUTHZ**](/windows/desktop/api/Authz/ns-authz-authz_access_request) che di [**\_ descrittore di sicurezza**](/windows/desktop/api/Winnt/ns-winnt-security_descriptor) come parametri. La struttura della **\_ \_ richiesta di accesso AUTHZ** specifica un livello di accesso richiesto. La funzione **AuthzAccessCheck** valuta l'accesso richiesto rispetto al **\_ descrittore di sicurezza** specificato per un contesto client specificato. Per informazioni sul modo in cui un descrittore di sicurezza controlla l'accesso a un oggetto, vedere [come gli elenchi DACL controllano l'accesso a un oggetto](how-dacls-control-access-to-an-object.md).
+La [**funzione AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) accetta sia [**le strutture AUTHZ \_ ACCESS \_ REQUEST**](/windows/desktop/api/Authz/ns-authz-authz_access_request) che [**SECURITY \_ DESCRIPTOR**](/windows/desktop/api/Winnt/ns-winnt-security_descriptor) come parametri. La **struttura AUTHZ \_ ACCESS \_ REQUEST** specifica un livello di accesso richiesto. La **funzione AuthzAccessCheck** valuta l'accesso richiesto rispetto al **DESCRITTOre DI SICUREZZA \_ specificato** per un contesto client specificato. Per informazioni sul modo in cui un descrittore di sicurezza controlla l'accesso a un oggetto, vedere [Controllo dacli di livello dati dell'accesso a un oggetto](how-dacls-control-access-to-an-object.md).
 
-Le variabili di attributo devono essere sotto forma di espressione se utilizzate con operatori logici; in caso contrario, vengono valutati come sconosciuti.
+Le variabili di attributo devono essere sotto forma di espressione se usate con operatori logici. in caso contrario, vengono valutati come sconosciuti.
 
 ## <a name="callback-function"></a>Funzione di callback
 
-Se l' [*elenco di controllo di accesso discrezionale*](/windows/desktop/SecGloss/d-gly) (DACL) [**del \_ descrittore di sicurezza**](/windows/desktop/api/Winnt/ns-winnt-security_descriptor) dell'oggetto da controllare contiene le [*voci di controllo di accesso*](/windows/desktop/SecGloss/a-gly) (ACE) di callback, [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) chiama la funzione [**AuthzAccessCheckCallback**](authzaccesscheckcallback.md) per ogni ACE di callback contenuto nell'elenco DACL. Una voce ACE di callback è qualsiasi struttura ACE il cui tipo ACE contiene la parola "callback". La funzione **AuthzAccessCheckCallback** è una funzione definita dall'applicazione che deve essere registrata quando il gestore di risorse viene inizializzato chiamando la funzione [**AuthzInitializeResourceManager**](/windows/desktop/api/Authz/nf-authz-authzinitializeresourcemanager) .
+Se l'elenco di controllo di accesso discrezionale (DACL) del DESCRITTOre DI SICUREZZA dell'oggetto da controllare contiene voci di controllo di accesso (ACE) di callback, [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) chiama la funzione [**AuthzAccessCheckCallback**](authzaccesscheckcallback.md) per ogni voce ACE di callback contenuta nell'elenco DACL. [](/windows/desktop/SecGloss/d-gly) [**\_**](/windows/desktop/api/Winnt/ns-winnt-security_descriptor) [](/windows/desktop/SecGloss/a-gly) Una voce ACE di callback è qualsiasi struttura ACE il cui tipo ACE contiene la parola "callback". La **funzione AuthzAccessCheckCallback** è una funzione definita dall'applicazione che deve essere registrata quando il gestore delle risorse viene inizializzato chiamando la [**funzione AuthzInitializeResourceManager.**](/windows/desktop/api/Authz/nf-authz-authzinitializeresourcemanager)
 
-Una funzione di callback consente a un'applicazione di definire la logica di business da valutare in fase di esecuzione. Quando viene chiamata la funzione [**AuthzAccessCheckCallback**](authzaccesscheckcallback.md) , l'ACE di callback che ha causato la chiamata viene passata alla funzione di callback per la valutazione. Se la logica definita dall'applicazione restituisce **true**, la voce ACE di callback viene inclusa nel controllo di accesso. In caso contrario, viene ignorata.
+Una funzione di callback consente a un'applicazione di definire la logica di business da valutare in fase di esecuzione. Quando viene [**chiamata la funzione AuthzAccessCheckCallback,**](authzaccesscheckcallback.md) l'ACE di callback che ha causato la chiamata viene passata alla funzione di callback per la valutazione. Se la logica definita dall'applicazione restituisce **TRUE,** la ACE di callback viene inclusa nel controllo di accesso. In caso contrario, viene ignorata.
 
-## <a name="caching-access-results"></a>Memorizzazione nella cache dei risultati di accesso
+## <a name="caching-access-results"></a>Caching Accedere ai risultati
 
-I risultati di un controllo di accesso possono essere memorizzati nella cache e usati in chiamate future alla funzione [**AuthzCachedAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzcachedaccesscheck) . Per ulteriori informazioni sulla memorizzazione nella cache dei controlli di accesso, incluso un esempio, vedere [caching Access Checks](caching-access-checks.md).
+I risultati di un controllo di accesso possono essere memorizzati nella cache e usati nelle chiamate future alla funzione [**AuthzCachedAccessCheck.**](/windows/desktop/api/Authz/nf-authz-authzcachedaccesscheck) Per altre informazioni sulla memorizzazione nella cache dei controlli di accesso, incluso un esempio, vedere Caching [Access Checks](caching-access-checks.md).
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene creato [**un \_ descrittore di sicurezza**](/windows/desktop/api/Winnt/ns-winnt-security_descriptor) che consente l'accesso al **\_ controllo di lettura** agli amministratori predefiniti. USA tale descrittore di sicurezza per controllare l'accesso per il client specificato dal contesto client creato nell'esempio nell' [inizializzazione di un contesto client](initializing-a-client-context.md).
+Nell'esempio seguente viene [**creato un \_ DESCRITTORE DI SICUREZZA**](/windows/desktop/api/Winnt/ns-winnt-security_descriptor) che consente **l'accesso READ \_ CONTROL** agli amministratori predefiniti. Usa tale descrittore di sicurezza per controllare l'accesso per il client specificato dal contesto client creato nell'esempio in [Inizializzazione di un contesto client](initializing-a-client-context.md).
 
 
 ```C++
@@ -118,7 +118,7 @@ BOOL CheckAccess(AUTHZ_CLIENT_CONTEXT_HANDLE hClientContext)
 [Aggiunta di SID a un contesto client](adding-sids-to-a-client-context.md)
 </dt> <dt>
 
-[Memorizzazione nella cache di controlli di accesso](caching-access-checks.md)
+[Caching Controlli di accesso](caching-access-checks.md)
 </dt> <dt>
 
 [Inizializzazione di un contesto client](initializing-a-client-context.md)

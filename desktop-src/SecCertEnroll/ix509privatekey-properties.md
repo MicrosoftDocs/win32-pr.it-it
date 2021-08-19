@@ -4,16 +4,16 @@ ms.assetid: 680BE7FF-3251-46DA-8A3F-36AB4450D3BA
 title: Proprietà di IX509PrivateKey
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b1cf5b38f105f6fbc3280b2e37b5c6999a1a018
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b5ee56841cf3ab633ab05fb4c65da544effa61e2a99c4f4468950b361cc6b0ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117774991"
 ---
 # <a name="ix509privatekey-properties"></a>Proprietà di IX509PrivateKey
 
-L'interfaccia [**IX509PrivateKey**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509privatekey) espone le proprietà seguenti.
+[**L'interfaccia IX509PrivateKey**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509privatekey) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -28,20 +28,20 @@ L'interfaccia [**IX509PrivateKey**](/windows/desktop/api/CertEnroll/nn-certenrol
 -   [**Proprietà esistente**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_existing)
 -   [**Proprietà ExportPolicy**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_exportpolicy)
 -   [**Proprietà FriendlyName**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_friendlyname)
--   [**Proprietà di protezione dati**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_keyprotection)
--   [**Proprietà di specifica**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_keyspec)
--   [**DataUsage (proprietà)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_keyusage)
+-   [**Proprietà KeyProtection**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_keyprotection)
+-   [**Proprietà KeySpec**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_keyspec)
+-   [**Proprietà KeyUsage**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_keyusage)
 -   [**Proprietà LegacyCsp**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_legacycsp)
--   [**Proprietà length**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_length)
+-   [**Proprietà Length**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_length)
 -   [**Proprietà MachineContext**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_machinecontext)
--   [**Opened (proprietà)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_opened)
+-   [**Proprietà Opened**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_opened)
 -   [**Proprietà ParentWindow**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_parentwindow)
--   [**Proprietà pin**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-put_pin)
+-   [**Proprietà Pin**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-put_pin)
 -   [**Proprietà ProviderName**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_providername)
 -   [**Proprietà ProviderType**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_providertype)
--   [**Readername (proprietà)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_readername)
+-   [**Proprietà ReaderName**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_readername)
 -   [**Proprietà SecurityDescriptor**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_securitydescriptor)
--   [**Proprietà invisibile all'utente**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_silent)
+-   [**Proprietà Silent**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_silent)
 -   [**Proprietà UIContextMessage**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_uicontextmessage)
 -   [**Proprietà UniqueContainerName**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509privatekey-get_uniquecontainername)
 

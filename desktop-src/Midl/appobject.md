@@ -42,14 +42,14 @@ coclass classname
 *uuid-number* 
 </dt> <dd>
 
-Specifica un numero di identificazione univoco universale per la [**coclasse**](coclass.md).
+Specifica un numero di identificazione universalmente univoco per la [**coclasse**](coclass.md).
 
 </dd> <dt>
 
 *coclass-attribute-list* 
 </dt> <dd>
 
-Specifica zero o più attributi che si applicano [**all'istruzione coclasse.**](coclass.md) Gli attributi **di coclasse** consentiti [**\[ sono \] helpstring**](helpstring.md), [**\[ helpcontext \]**](helpcontext.md), [**\[ licensed \]**](licensed.md), [**\[ version \]**](version.md), [**\[ control \]**](control.md)e [**\[ hidden \]**](hidden.md).
+Specifica zero o più attributi che si applicano [**all'istruzione coclasse.**](coclass.md) Gli attributi **di coclasse** consentiti [**\[ sono helpstring, \]**](helpstring.md) [**\[ helpcontext, \]**](helpcontext.md) [**\[ licensed, \]**](licensed.md) [**\[ version, \]**](version.md) [**\[ control \]**](control.md)e [**\[ hidden. \]**](hidden.md)
 
 </dd> <dt>
 

@@ -1,23 +1,23 @@
 ---
-description: In Gestione autorizzazioni, un gruppo di applicazioni è costituito da un gruppo di utenti e gruppi di utenti. Un gruppo di applicazioni può contenere altri gruppi di applicazioni, quindi i gruppi di utenti possono essere annidati.
+description: In Gestione autorizzazioni un gruppo di applicazioni è un gruppo di utenti e gruppi di utenti. Un gruppo di applicazioni può contenere altri gruppi di applicazioni, quindi i gruppi di utenti possono essere annidati.
 ms.assetid: b01883d6-eae6-4f3a-b269-90c22827f116
 title: Aggiunta di utenti a un gruppo di applicazioni in C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7fa08ddd93ba1743a20e3eb14a5f62344741c90
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f8031ceea265240cb9fbefc7236ad301b64f86f2306f7fd9a819b6d8e257a85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117784896"
 ---
 # <a name="adding-users-to-an-application-group-in-c"></a>Aggiunta di utenti a un gruppo di applicazioni in C++
 
-In Gestione autorizzazioni, un gruppo di applicazioni è costituito da un gruppo di utenti e gruppi di utenti. Un gruppo di applicazioni può contenere altri gruppi di applicazioni, quindi i gruppi di utenti possono essere annidati. Un gruppo di applicazioni è rappresentato da un oggetto [**IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) .
+In Gestione autorizzazioni un gruppo di applicazioni è un gruppo di utenti e gruppi di utenti. Un gruppo di applicazioni può contenere altri gruppi di applicazioni, quindi i gruppi di utenti possono essere annidati. Un gruppo di applicazioni è rappresentato da un [**oggetto IAzApplicationGroup.**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup)
 
-Per consentire ai membri di un gruppo di applicazioni di eseguire un'attività o un set di attività, assegnare tale gruppo di applicazioni a un ruolo che contiene tali attività. I ruoli sono rappresentati da oggetti [**IAzRole**](/windows/desktop/api/Azroles/nn-azroles-iazrole) .
+Per consentire ai membri di un gruppo di applicazioni di eseguire un'attività o un set di attività, assegnare tale gruppo di applicazioni a un ruolo che contiene tali attività. I ruoli sono rappresentati da [**oggetti IAzRole.**](/windows/desktop/api/Azroles/nn-azroles-iazrole)
 
-Nell'esempio seguente viene illustrato come creare un gruppo di applicazioni, aggiungere un utente come membro del gruppo di applicazioni e assegnare il gruppo di applicazioni a un ruolo esistente. Nell'esempio si presuppone che esista un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C, che questo archivio contiene un'applicazione denominata Expense e che l'applicazione contenga un ruolo denominato Expense Administrator.
+Nell'esempio seguente viene illustrato come creare un gruppo di applicazioni, aggiungere un utente come membro del gruppo di applicazioni e assegnare il gruppo di applicazioni a un ruolo esistente. Nell'esempio si presuppone che sia presente un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C, che questo archivio contenga un'applicazione denominata Expense e che questa applicazione contenga un ruolo denominato Expense Administrator.
 
 
 ```C++

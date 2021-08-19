@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 36cd82b086241012542701001c4de1fe16ac2d8e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1b1809bcca029838e7e1df6d71c5d005aec3d21bdbcde9ccbd1b7a23b77dd9ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118402024"
 ---
 # <a name="cmediaeventcmediaevent-constructor"></a>Costruttore CMediaEvent.CMediaEvent
 
@@ -53,7 +53,7 @@ Puntatore al nome dell'oggetto a scopo di debug.
 *Punk* 
 </dt> <dd>
 
-Puntatore al proprietario dell'oggetto.
+Puntatore al proprietario di questo oggetto.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Allocare *il parametro pName* nella memoria statica. Questo nome viene visualizz
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

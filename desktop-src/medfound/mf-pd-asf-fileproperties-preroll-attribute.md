@@ -1,19 +1,19 @@
 ---
-description: Consente di specificare la quantità di tempo, in millisecondi, per il buffering dei dati prima di riprodurre un file con estensione ASF (Advanced Systems Format).
+description: Specifica la quantità di tempo, in millisecondi, per la memorizzazione nel buffer dei dati prima di riprodurre un file ASF (Advanced Systems Format).
 ms.assetid: 6aebe1cf-bd45-4b02-a3c8-6599bb683d7c
-title: Attributo MF_PD_ASF_FILEPROPERTIES_PREROLL (Wmcontainer. h)
+title: MF_PD_ASF_FILEPROPERTIES_PREROLL attributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 502ba715cc2802f9710d579e0c7afd6477b83454
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca6440853e2e3308d3d173350de17274bfbe88aa29c3b634ef7480d36d37fd67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117692054"
 ---
-# <a name="mf_pd_asf_fileproperties_preroll-attribute"></a>\_Attributo PREroll di MF PD \_ ASF \_ FileProperties \_
+# <a name="mf_pd_asf_fileproperties_preroll-attribute"></a>Attributo MF \_ PD \_ ASF \_ FILEPROPERTIES \_ PREROLL
 
-Consente di specificare la quantità di tempo, in millisecondi, per il buffering dei dati prima di riprodurre un file con estensione ASF (Advanced Systems Format).
+Specifica la quantità di tempo, in millisecondi, per la memorizzazione nel buffer dei dati prima di riprodurre un file ASF (Advanced Systems Format).
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,9 +21,9 @@ Consente di specificare la quantità di tempo, in millisecondi, per il buffering
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo si applica ai descrittori di presentazione per il contenuto ASF.
+Questo attributo si applica ai descrittori di presentazione per il contenuto asf.
 
-Il metodo [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) genera questo attributo dai metadati ASF.
+Il [**metodo IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) genera questo attributo dai metadati asf.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ Il metodo [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
@@ -41,19 +41,19 @@ Il metodo [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
+[**IMFAttributes::GetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
 </dt> <dt>
 
-[**IMFAttributes:: UINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
+[**IMFAttributes::SetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
 </dt> <dt>
 
 [**IMFPresentationDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationdescriptor)
 </dt> <dt>
 
-[Attributi del descrittore della presentazione](presentation-descriptor-attributes.md)
+[Attributi del descrittore di presentazione](presentation-descriptor-attributes.md)
 </dt> <dt>
 
 [Oggetto intestazione ASF](asf-file-structure.md)

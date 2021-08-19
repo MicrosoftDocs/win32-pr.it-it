@@ -1,9 +1,9 @@
 ---
-title: Quando si usa la funzionalità vbr con vincoli di picco, la velocità in bit media recuperata dal DMO è maggiore della velocità in bit massima. Come è possibile
-description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec audio e video multimediali e DSP). | Quando si usa la funzionalità vbr con vincoli di picco, la velocità in bit media recuperata dal DMO è maggiore della velocità in bit massima. Come è possibile
+title: Quando si usa vbr con vincoli di picco, la velocità in bit media recuperata dal DMO è maggiore della velocità in bit di picco. Com'è possibile
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api Codec audio e video e DSP. | Quando si usa vbr con vincoli di picco, la velocità in bit media recuperata dal DMO è maggiore della velocità in bit di picco. Com'è possibile
 ms.assetid: 10754d0e-4bd0-4031-896e-e2045a383378
 keywords:
-- Quando si usa la funzionalità vbr con vincoli di picco, la velocità in bit media recuperata dal DMO è maggiore della velocità in bit massima. Come è possibile che Windows Media Format
+- Quando si usa vbr con vincoli di picco, la velocità in bit media recuperata dal DMO è maggiore della velocità in bit di picco. Come è possibile che windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118431968"
 ---
-# <a name="when-using-peak-constrained-vbr-the-average-bit-rate-retrieved-from-the-dmo-is-larger-than-the-peak-bit-rate-how-is-that-possible"></a>Quando si usa la funzionalità vbr con vincoli di picco, la velocità in bit media recuperata dal DMO è maggiore della velocità in bit massima. Come è possibile?
+# <a name="when-using-peak-constrained-vbr-the-average-bit-rate-retrieved-from-the-dmo-is-larger-than-the-peak-bit-rate-how-is-that-possible"></a>Quando si usa vbr con vincoli di picco, la velocità in bit media recuperata dal DMO è maggiore della velocità in bit di picco. Come è possibile?
 
-Per la documentazione corrente Windows codec multimediali e processori di segnale digitale, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e [DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

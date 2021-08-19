@@ -65,7 +65,7 @@ Il [**metodo CBaseReferenceClock::GetTime**](cbasereferenceclock-gettime.md) non
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Refclock.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Refclock.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

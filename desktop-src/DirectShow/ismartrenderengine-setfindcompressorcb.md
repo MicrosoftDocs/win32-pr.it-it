@@ -1,5 +1,5 @@
 ---
-description: 'Metodo ISmartRenderEngine::SetFindCompressorCB : non implementato.'
+description: 'Metodo ISmartRenderEngine::SetFindCompressorCB: non implementato.'
 ms.assetid: ed0aecfa-348c-4cf9-87c2-b701a552eec8
 title: Metodo ISmartRenderEngine::SetFindCompressorCB
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "117817395"
 # <a name="ismartrenderenginesetfindcompressorcb-method"></a>Metodo ISmartRenderEngine::SetFindCompressorCB
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
@@ -62,7 +62,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

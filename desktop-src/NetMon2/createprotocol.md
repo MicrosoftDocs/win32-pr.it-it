@@ -51,14 +51,14 @@ Nome del protocollo rilevato dal parser.
 *lpEntryPoints* \[ Pollici\]
 </dt> <dd>
 
-Struttura [ENTRYPOINTS](entrypoints.md) che contiene i punti di ingresso dll del parser rimanenti. Per un elenco delle funzioni di esportazione a cui fa riferimento ogni punto di ingresso, vedere Note. I punti di ingresso devono essere specificati nell'ordine specificato dalla struttura **ENTRYPOINTS.**
+Struttura [ENTRYPOINTS che](entrypoints.md) contiene i punti di ingresso rimanenti della DLL del parser. Vedere La sezione Osservazioni per un elenco delle funzioni di esportazione a cui fa riferimento ogni punto di ingresso. I punti di ingresso devono essere specificati nell'ordine specificato dalla struttura **ENTRYPOINTS.**
 
 </dd> <dt>
 
 *cbEntryPoints* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni della struttura **ENTRYPOINTS.** Network Monitor fornisce una macro ENTRYPOINTS SIZE che è possibile \_ usare per specificare le dimensioni della struttura.
+Dimensione della **struttura ENTRYPOINTS.** Network Monitor fornisce una \_ macro ENTRYPOINTS SIZE che è possibile usare per specificare le dimensioni della struttura.
 
 </dd> </dl>
 
@@ -70,22 +70,22 @@ Se la funzione ha esito negativo, il valore restituito è **NULL.**
 
 ## <a name="remarks"></a>Commenti
 
-La DLL del parser chiama **CreateProtocol durante** l'implementazione di [DllMain](dllmain-parser.md). La **funzione CreateProtocol** viene chiamata quando il sistema operativo carica la DLL del parser per la prima volta.
+La DLL del parser chiama **CreateProtocol durante** l'implementazione di [DllMain.](dllmain-parser.md) La **funzione CreateProtocol** viene chiamata quando il sistema operativo carica la DLL del parser per la prima volta.
 
-I punti di ingresso a cui si fa riferimento nel parametro *lpEntryPoints* includono puntatori alle funzioni di esportazione seguenti che devono essere fornite nell'ordine presentato qui.
+I punti di ingresso a cui si fa riferimento nel parametro *lpEntryPoints* includono puntatori alle funzioni di esportazione seguenti che devono essere fornite nell'ordine qui presentato.
 
 -   [Registra](register-parser.md)
 -   [Annullamento registrazione](deregister.md)
 -   [RecognizeFrame](recognizeframe.md)
--   [AttachProperties](attachproperties.md)
--   [Proprietà FormatProperties](formatproperties.md)
+-   [Proprietàallegato](attachproperties.md)
+-   [Proprietà Format](formatproperties.md)
 
 
 
 | Per informazioni su                                                                                 | Vedere                                                     |
 |----------------------------------------------------------------------------------------------------|---------------------------------------------------------|
 | Che cosa sono i parser e come funzionano con Network Monitor.                                          | [Parser](parsers.md)                                  |
-| Come implementare **DllMain** include un esempio di chiamata **a CreateProtocol all'interno** **di DllMain**. | [Implementazione di DllMain](implementing-dllmain-parser.md) |
+| Come implementare **DllMain** include un esempio di chiamata **di CreateProtocol all'interno** **di DllMain.** | [Implementazione di DllMain](implementing-dllmain-parser.md) |
 
 
 

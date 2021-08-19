@@ -1,7 +1,7 @@
 ---
-description: Il metodo EnableTransitions Abilita o Disabilita tutte le transizioni nella sequenza temporale.
+description: Il metodo EnableTransitions abilita o disabilita tutte le transizioni nella sequenza temporale.
 ms.assetid: 8610337a-a247-44f0-8674-3cbc43f636d5
-title: 'Metodo IAMTimeline:: EnableTransitions (qedit. h)'
+title: Metodo IAMTimeline::EnableTransitions (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: c05d3a00a57b8008789b83b16eee155eea974e6e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9356ac53488f68e54a05a85e8e287850138ee131f80dd3bb45b81cf606b5a351
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118401072"
 ---
-# <a name="iamtimelineenabletransitions-method"></a>Metodo IAMTimeline:: EnableTransitions
+# <a name="iamtimelineenabletransitions-method"></a>Metodo IAMTimeline::EnableTransitions
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il `EnableTransitions` Metodo Abilita o Disabilita tutte le transizioni nella sequenza temporale. Se le transizioni sono disabilitate, i motori di rendering li considerano come tagli; ovvero, l'output sottoposto a rendering passa immediatamente da una traccia alla successiva. Il punto di taglio predefinito è a metà della durata della transizione. È possibile modificare il punto di taglio chiamando il metodo [**IAMTimelineTrans:: SetCutPoint**](iamtimelinetrans-setcutpoint.md) sulla transizione. Le transizioni disabilitate non vengono rimosse dalla sequenza temporale.
+Il `EnableTransitions` metodo abilita o disabilita tutte le transizioni nella sequenza temporale. Se le transizioni sono disabilitate, i motori di rendering le trattano come riduzioni. ciò significa che l'output di cui è stato eseguito il rendering passa immediatamente da una traccia all'altra. Il punto di taglio predefinito si trova a metà della durata della transizione. È possibile modificare il punto di taglio chiamando il [**metodo IAMTimelineTrans::SetCutPoint**](iamtimelinetrans-setcutpoint.md) sulla transizione. Le transizioni disabilitate non vengono rimosse dalla sequenza temporale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,23 +48,23 @@ HRESULT EnableTransitions(
 *fEnabled* 
 </dt> <dd>
 
-Valore booleano che specifica se abilitare o disabilitare le transizioni. Se **true**, le transizioni sono abilitate. Se **false**, le transizioni sono disabilitate.
+Valore booleano che specifica se abilitare o disabilitare le transizioni. Se **TRUE,** le transizioni sono abilitate. Se **FALSE,** le transizioni sono disabilitate.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

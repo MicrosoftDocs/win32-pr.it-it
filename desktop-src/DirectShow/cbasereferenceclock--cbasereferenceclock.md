@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 531a5efb42b82a791ab4a526fe1c1d2834997f74
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cca5305825acc30b0d2a29f1453a8341807479cd5b0f9eb7a280671dd5e42388
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823036"
 ---
 # <a name="cbasereferenceclockcbasereferenceclock-destructor"></a>Distruttore CBaseReferenceClock.~CBaseReferenceClock
 
@@ -42,7 +42,7 @@ Metodo del distruttore.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Refclock.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Refclock.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

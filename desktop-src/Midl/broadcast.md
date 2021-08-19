@@ -1,5 +1,5 @@
 ---
-title: attributo broadcast
+title: Attributo broadcast
 description: La parola chiave \broadcast\ specifica che le chiamate di procedura remota devono essere inviate a tutti i server in una rete locale.
 ms.assetid: 3951c80f-b7f1-457b-9eee-6e075291b27e
 keywords:
@@ -19,7 +19,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118385237"
 ---
-# <a name="broadcast-attribute"></a>attributo broadcast
+# <a name="broadcast-attribute"></a>Attributo broadcast
 
 La parola **\[ chiave broadcast \]** specifica che le chiamate di procedura remota devono essere inviate a tutti i server in una rete locale.
 
@@ -40,7 +40,7 @@ interface interface-name
 *interface-attribute-list* 
 </dt> <dd>
 
-Specifica un elenco di zero o più attributi IDL che si applicano all'intera interfaccia. Quando sono presenti due o più attributi di interfaccia, devono essere separati da virgole.
+Specifica un elenco di zero o più attributi IDL applicabili all'intera interfaccia. Quando sono presenti due o più attributi di interfaccia, devono essere separati da virgole.
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ Specifica il tipo restituito della funzione.
 *function-name* 
 </dt> <dd>
 
-Specifica il nome della funzione a cui verrà **applicato \[ \]** l'attributo broadcast.
+Specifica il nome della funzione a cui verrà applicato l'attributo **\[ \]** broadcast.
 
 </dd> <dt>
 
@@ -81,11 +81,11 @@ Elenco di parametri della funzione.
 
 ## <a name="remarks"></a>Commenti
 
-La parola chiave **\[ broadcast \]** specifica che la routine viene sempre trasmessa a tutti i server della rete, anziché essere recapitata a un server specifico. Il client riceve l'output dalla prima risposta per restituire correttamente, mentre le risposte successive vengono rimosse.
+La parola chiave **\[ broadcast \]** specifica che la routine viene sempre trasmessa a tutti i server della rete, anziché essere recapitata a un server specifico. Il client riceve l'output dalla prima risposta per restituire correttamente, mentre le risposte successive vengono eliminate.
 
-Un'operazione con **\[ l'attributo broadcast \]** è implicitamente [**\[ un'operazione idempotente. \]**](idempotent.md) Tuttavia, **\[ l'attributo broadcast \]** specifica proprietà aggiuntive che non sono disponibili nelle funzioni con l'attributo **\[ idempotente. \]** In particolare, le funzioni che **\[ usano l'attributo broadcast \]** specificano che la routine può essere chiamata più volte come risultato di una chiamata di procedura remota. Allo stesso tempo, possono essere inviati a più server. Questo è diverso **\[ dall'attributo \] idempotente,** che specifica solo che è possibile ritentare una chiamata se non viene completata.
+Un'operazione con **\[ l'attributo broadcast \]** è implicitamente [**\[ un'operazione idempotente. \]**](idempotent.md) Tuttavia, **\[ l'attributo broadcast \]** specifica proprietà aggiuntive che non hanno funzioni con l'attributo **\[ idempotente. \]** In particolare, le funzioni che usano **\[ l'attributo broadcast \]** specificano che la routine può essere chiamata più volte come risultato di una chiamata di procedura remota. Allo stesso tempo, possono essere inviati a più server. Questa operazione è diversa dall'attributo **\[ idempotente, \]** che specifica solo che è possibile ritentare una chiamata se non viene completata.
 
-Se una procedura remota trasmette la chiamata a tutti gli host in una rete locale, deve usare la sequenza di protocollo [**ncadg \_ ip \_ udp**](ncadg-ip-udp.md) o [**\_ ncadg ipx.**](ncadg-ipx.md) Si noti che le dimensioni di un **\[ pacchetto broadcast \]** sono determinate dal servizio datagrammi in uso.
+Se una procedura remota trasmette la chiamata a tutti gli host in una rete locale, deve usare la sequenza di protocollo [**ncadg \_ ip \_ udp**](ncadg-ip-udp.md) o [**ncadg \_ ipx.**](ncadg-ipx.md) Si noti che le dimensioni di un **\[ pacchetto broadcast \]** sono determinate dal servizio datagrammi in uso.
 
 ## <a name="see-also"></a>Vedi anche
 

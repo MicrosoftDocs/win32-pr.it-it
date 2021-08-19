@@ -1,9 +1,9 @@
 ---
-title: Messaggio TBM_SETSELSTART (COMmctrl. h)
-description: Imposta la posizione logica iniziale dell'intervallo di selezione corrente in un TrackBar. Questo messaggio viene ignorato se il TrackBar non ha lo \_ stile ENABLESELRANGE di TBS.
+title: TBM_SETSELSTART messaggio (Commctrl.h)
+description: Imposta la posizione logica iniziale dell'intervallo di selezione corrente in un trackbar. Questo messaggio viene ignorato se il trackbar non ha lo stile \_ TBS ENABLESELRANGE.
 ms.assetid: eec1019c-6dbe-48c4-9c9d-72d657e80b83
 keywords:
-- Controlli di Windows Message TBM_SETSELSTART
+- TBM_SETSELSTART dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 445cb97c73f8e6483b5d4dd76bc3ccf64322e579
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4f8cfdc938da5c7f5904e79f55177fe6f8eccba10f37dfdadb613c581cc809fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829315"
 ---
-# <a name="tbm_setselstart-message"></a>\_Messaggio SETSELSTART TBM
+# <a name="tbm_setselstart-message"></a>Messaggio \_ TBM SETSELSTART
 
-Imposta la posizione logica iniziale dell'intervallo di selezione corrente in un TrackBar. Questo messaggio viene ignorato se il TrackBar non ha lo stile [**\_ ENABLESELRANGE di TBS**](trackbar-control-styles.md) .
+Imposta la posizione logica iniziale dell'intervallo di selezione corrente in un trackbar. Questo messaggio viene ignorato se il trackbar non ha lo [**stile \_ TBS ENABLESELRANGE.**](trackbar-control-styles.md)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Imposta la posizione logica iniziale dell'intervallo di selezione corrente in un
 *wParam* 
 </dt> <dd>
 
-Ridisegni flag. Se questo parametro è **true**, il messaggio riestrae il TrackBar dopo l'impostazione dell'intervallo di selezione. Se questo parametro è **false**, il messaggio imposta l'intervallo di selezione senza ricreare il TrackBar.
+Flag di ridisegno. Se questo parametro è **TRUE,** il messaggio ridisegna il trackbar dopo l'impostazione dell'intervallo di selezione. Se questo parametro è **FALSE,** il messaggio imposta l'intervallo di selezione ma non ridisegna il trackbar.
 
 </dd> <dt>
 
@@ -53,9 +53,9 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -66,7 +66,7 @@ Nessun valore restituito.
 **Riferimento**
 </dt> <dt>
 
-[**TBM \_ GETselend**](tbm-getselend.md)
+[**TBM \_ GETSELEND**](tbm-getselend.md)
 </dt> <dt>
 
 [**TBM \_ GETSELSTART**](tbm-getselstart.md)
@@ -75,7 +75,7 @@ Nessun valore restituito.
 [**TBM \_ SETSEL**](tbm-setsel.md)
 </dt> <dt>
 
-[**\_SEselend TBM**](tbm-setselend.md)
+[**TBM \_ SETSELEND**](tbm-setselend.md)
 </dt> </dl>
 
  

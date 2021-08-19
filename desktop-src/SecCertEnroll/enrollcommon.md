@@ -1,19 +1,19 @@
 ---
-description: La cartella enrollCommon contiene le funzioni di supporto e le macro seguenti usate dagli esempi forniti con l'SDK di registrazione certificati.
+description: La cartella enrollCommon contiene le macro e le funzioni helper seguenti usate dagli esempi forniti con Certificate Enrollment SDK.
 ms.assetid: a9b3532d-9640-4373-a6c6-7828cb6f55c7
 title: enrollCommon
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 384a1f3741fd8bd7762c60da524e2e639c442e41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d087ce1aeced0ef68f5b33a06546897d09687ae5ccbd096f1bb34552d0a4a10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117780070"
 ---
 # <a name="enrollcommon"></a>enrollCommon
 
-La cartella enrollCommon contiene le funzioni di supporto e le macro seguenti usate dagli esempi forniti con l'SDK di registrazione certificati. Viene installato per impostazione predefinita nella cartella *% ProgramFiles%* \\ Microsoft SDK \\ Windows \\ v 7.0 \\ Samples \\ Security \\ X509 certificate di registrazione del certificato \\ VC \\ enrollCommon.
+La cartella enrollCommon contiene le macro e le funzioni helper seguenti usate dagli esempi forniti con Certificate Enrollment SDK. Viene installato per impostazione predefinita nella cartella *%ProgramFiles%* \\ Microsoft SDKs \\ Windows \\ v7.0 \\ Samples Security \\ \\ X509 Certificate Enrollment \\ VC \\ enrollCommon .
 
 
 
@@ -31,11 +31,11 @@ La cartella enrollCommon contiene le funzioni di supporto e le macro seguenti us
 <tbody>
 <tr class="odd">
 <td>_JumpIfError</td>
-<td>Una macro che accetta un valore <strong>HRESULT</strong> , un'etichetta e una stringa di errore, stampa la stringa e trasferisce il controllo Program alla prima istruzione che segue l'etichetta.</td>
+<td>Macro che accetta un <strong>valore HRESULT,</strong> un'etichetta e una stringa di errore, stampa la stringa e trasferisce il controllo del programma alla prima istruzione successiva all'etichetta.</td>
 </tr>
 <tr class="even">
 <td>_JumpError</td>
-<td>Equivale a _JumpIfError macro.</td>
+<td>Uguale alla macro _JumpIfError.</td>
 </tr>
 <tr class="odd">
 <td>_PrintIfError</td>
@@ -43,31 +43,31 @@ La cartella enrollCommon contiene le funzioni di supporto e le macro seguenti us
 </tr>
 <tr class="even">
 <td>_PrintError</td>
-<td>Macro che stampa un messaggio di errore e un valore <strong>HRESULT</strong> .</td>
+<td>Macro che stampa un messaggio di errore e un <strong>valore HRESULT.</strong></td>
 </tr>
 <tr class="odd">
 <td>convertWszToSz</td>
-<td>Converte una stringa di caratteri wide in una stringa di caratteri ASCII utilizzando la funzione <strong>WideCharToMultiByte</strong> e l'identificatore della tabella codici ANSI corrente per il sistema. Questa funzione viene usata dalle funzioni decConvertFromUnicode e findOIDFromTemplateName definite in enrollCommon. cpp.</td>
+<td>Converte una stringa di caratteri wide in una stringa di caratteri ASCII usando la <strong>funzione WideCharToMultiByte</strong> e l'identificatore della tabella codici ANSI corrente per il sistema. Questa funzione viene usata dalle funzioni decConvertFromUnicode e findOIDFromTemplateName definite in enrollCommon.cpp.</td>
 </tr>
 <tr class="even">
 <td>convertSzToWsz</td>
-<td>Converte una stringa ASCII in una stringa di caratteri wide usando la funzione <strong>MultiByteToWideChar</strong> e l'identificatore della tabella codici ANSI corrente per il sistema. Questa funzione viene utilizzata dalla funzione findCertByTemplate definita in enrollCommon. cpp.</td>
+<td>Converte una stringa ASCII in una stringa di caratteri wide usando la <strong>funzione MultiByteToWideChar</strong> e l'identificatore della tabella codici ANSI corrente per il sistema. Questa funzione viene usata dalla funzione findCertByTemplate definita in enrollCommon.cpp.</td>
 </tr>
 <tr class="odd">
 <td>convertSzToBstr</td>
-<td>Converte una stringa ASCII in un <strong>BSTR</strong> utilizzando la funzione <strong>MultiByteToWideChar</strong> . Questa funzione non è attualmente in uso.</td>
+<td>Converte una stringa ASCII in <strong>BSTR</strong> usando la <strong>funzione MultiByteToWideChar.</strong> Questa funzione non è attualmente usata.</td>
 </tr>
 <tr class="even">
 <td>convertWszToBstr</td>
-<td>Converte una stringa di caratteri wide in un <strong>BSTR</strong>. Questa funzione viene usata dall'esempio installResponseFromPFX.</td>
+<td>Converte una stringa di caratteri wide in <strong>un oggetto BSTR.</strong> Questa funzione viene usata dall'esempio installResponseFromPFX.</td>
 </tr>
 <tr class="odd">
 <td>checkEnrollStatus</td>
-<td>Controlla lo stato del processo di registrazione del certificato usando le interfacce <a href="/windows/desktop/api/CertEnroll/nn-certenroll-ix509enrollment"><strong>metodo IX509Enrollment</strong></a> e <a href="/windows/desktop/api/CertEnroll/nn-certenroll-ix509enrollmentstatus"><strong>IX509EnrollmentStatus</strong></a> . Questa funzione viene usata dagli esempi enrollEOBOCMC, enrollPKCS7, enrollRenewalPKCS7, enrollSimpleMachineCert e enrollSimpleUserCert.</td>
+<td>Controlla lo stato del processo di registrazione certificati usando le interfacce <a href="/windows/desktop/api/CertEnroll/nn-certenroll-ix509enrollment"><strong>IX509Enrollment</strong></a> e <a href="/windows/desktop/api/CertEnroll/nn-certenroll-ix509enrollmentstatus"><strong>IX509EnrollmentStatus.</strong></a> Questa funzione viene usata dagli esempi enrollEOBOCMC, enrollPKCS7, enrollRenewalPKCS7, enrollSimpleMachineCert e enrollSimpleUserCert.</td>
 </tr>
 <tr class="even">
 <td>findCertByKeyUsage</td>
-<td>Enumera l'archivio certificati personale dell'utente corrente per trovare il primo certificato per il quale l'utilizzo previsto della chiave pubblica corrisponde a un valore specificato. Il valore specificato può essere una combinazione bit per bit dei flag seguenti:
+<td>Enumera l'archivio certificati personale dell'utente corrente per trovare il primo certificato per il quale l'uso previsto della chiave pubblica corrisponde a un valore specificato. Il valore specificato può essere una combinazione bit per bit dei flag seguenti:
 <ul>
 <li>CERT_DATA_ENCIPHERMENT_KEY_USAGE</li>
 <li>CERT_DIGITAL_SIGNATURE_KEY_USAGE</li>
@@ -81,23 +81,23 @@ Questa funzione viene usata dall'esempio enrollFromPublicKey.<br/></td>
 </tr>
 <tr class="odd">
 <td>findCertByEKU</td>
-<td>Enumera l'archivio certificati personale dell'utente corrente per trovare il primo certificato per il quale l'estensione utilizzo chiavi avanzato (EKU) corrisponde a quella specificata nell'input. Per ulteriori informazioni sull'estensione EKU, vedere l'interfaccia <a href="/windows/desktop/api/CertEnroll/nn-certenroll-ix509extensionenhancedkeyusage"><strong>IX509ExtensionEnhancedKeyUsage</strong></a> . Questa funzione viene usata dall'esempio enrollEOBOCMC.</td>
+<td>Enumera l'archivio certificati personale dell'utente corrente per trovare il primo certificato per cui l'estensione EKU (Enhanced Key Usage) corrisponde a quella specificata nell'input. Per altre informazioni sull'estensione EKU, vedere <a href="/windows/desktop/api/CertEnroll/nn-certenroll-ix509extensionenhancedkeyusage"><strong>l'interfaccia IX509ExtensionEnhancedKeyUsage.</strong></a> Questa funzione viene usata dall'esempio enrollEOBOCMC.</td>
 </tr>
 <tr class="even">
 <td>findCertByTemplate</td>
-<td>Enumera l'archivio certificati personale dell'utente corrente per trovare il primo certificato per il quale il modello corrisponde a quello specificato, in base al nome, all'input. Questa funzione viene usata dagli esempi enrollPKCS7 e enrollRenewalPKCS7.</td>
+<td>Enumera l'archivio certificati personale dell'utente corrente per trovare il primo certificato per cui il modello corrisponde a quello specificato, in base al nome, nell'input. Questa funzione viene usata dagli esempi enrollPKCS7 e enrollRenewalPKCS7.</td>
 </tr>
 <tr class="odd">
 <td>enrollCertByTemplate</td>
-<td>Inizializza un oggetto <a href="/windows/desktop/api/CertEnroll/nn-certenroll-ix509enrollment"><strong>metodo IX509Enrollment</strong></a> usando un modello, tenta di registrare la richiesta di certificato creata in modo implicito e monitora lo stato del processo di registrazione. Questa funzione viene usata dagli esempi enrollEOBOCMC, enrollFromPublicKey, enrollPKCS7 e enrollRenewalPKCS7.</td>
+<td>Inizializza un <a href="/windows/desktop/api/CertEnroll/nn-certenroll-ix509enrollment"><strong>oggetto IX509Enrollment</strong></a> usando un modello, tenta di registrare la richiesta di certificato creata in modo implicito e monitora lo stato del processo di registrazione. Questa funzione viene usata dagli esempi enrollEOBOCMC, enrollFromPublicKey, enrollPKCS7 e enrollRenewalPKCS7.</td>
 </tr>
 <tr class="even">
 <td>verifyCertContext</td>
-<td>Verifica la conformità della catena di certificati rispetto ai criteri specificati (base) e, facoltativamente, rispetto a un'estensione di utilizzo chiavi avanzato (EKU) specificata. Per ulteriori informazioni, vedere la funzione <a href="/windows/desktop/api/wincrypt/nf-wincrypt-certverifycertificatechainpolicy"><strong>CertVerifyCertificateChainPolicy</strong></a> e le strutture <a href="/windows/desktop/api/wincrypt/ns-wincrypt-cert_chain_policy_para"><strong>CERT_CHAIN_POLICY_PARA</strong></a> e <a href="/windows/desktop/api/wincrypt/ns-wincrypt-cert_chain_para"><strong>CERT_CHAIN_PARA</strong></a> . Questa funzione viene usata dagli esempi enrollEOBOCMC, enrollFromPublicKey, enrollPKCS7 e enrollRenewalPKCS7.</td>
+<td>Verifica la conformità della catena di certificati rispetto ai criteri (di base) specificati e, facoltativamente, a un'estensione EKU (Enhanced Key Usage) specificata. Per altre informazioni, vedere la <a href="/windows/desktop/api/wincrypt/nf-wincrypt-certverifycertificatechainpolicy"><strong>funzione CertVerifyCertificateChainPolicy</strong></a> e le CERT_CHAIN_POLICY_PARA <a href="/windows/desktop/api/wincrypt/ns-wincrypt-cert_chain_policy_para"><strong>e</strong></a> <a href="/windows/desktop/api/wincrypt/ns-wincrypt-cert_chain_para"><strong>CERT_CHAIN_PARA</strong></a> seguenti. Questa funzione viene usata dagli esempi enrollEOBOCMC, enrollFromPublicKey, enrollPKCS7 e enrollRenewalPKCS7.</td>
 </tr>
 <tr class="odd">
 <td>decConvertFromUnicode</td>
-<td>Converte una stringa di caratteri Unicode a doppio byte in una stringa di caratteri ANSI a byte singolo. Questa funzione viene utilizzata dalla funzione DecodeFileW definita in enrollCommon. cpp.</td>
+<td>Converte una stringa di caratteri Unicode a byte doppio in una stringa di caratteri ANSI a byte singolo. Questa funzione viene usata dalla funzione DecodeFileW definita in enrollCommon.cpp.</td>
 </tr>
 <tr class="even">
 <td>DecodeFileW</td>
@@ -109,7 +109,7 @@ Questa funzione viene usata dall'esempio enrollFromPublicKey.<br/></td>
 </tr>
 <tr class="even">
 <td>findOIDFromTemplateName</td>
-<td>Recupera l'identificatore di oggetto per un modello specificato in base al nome. Questa funzione viene utilizzata dalla funzione findCertByTemplate definita in enrollCommon. cpp.</td>
+<td>Recupera l'identificatore di oggetto per un modello specificato in base al nome. Questa funzione viene usata dalla funzione findCertByTemplate definita in enrollCommon.cpp.</td>
 </tr>
 </tbody>
 </table>

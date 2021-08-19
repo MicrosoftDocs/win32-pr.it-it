@@ -34,16 +34,16 @@ ms.locfileid: "118329464"
 
 ## <a name="description"></a>Descrizione
 
-Microsoft ha deciso di interrompere lo sviluppo delle tecnologie di Microsoft Agent. A partire Windows 7, Microsoft Agent non verrà incluso o supportato nelle versioni future del sistema operativo Microsoft Windows. Microsoft invita gli sviluppatori e i ridistributori di applicazioni Microsoft Agent a valutare le proprie attività alla luce di questa decisione.
+Microsoft ha deciso di interrompere lo sviluppo delle tecnologie di Microsoft Agent. A partire Windows 7, Microsoft Agent non sarà incluso o supportato nelle versioni future del sistema operativo Microsoft Windows. Si consiglia agli sviluppatori e ai ridistributori di applicazioni Microsoft Agent di valutare le proprie attività alla luce di questa decisione.
 
 ## <a name="manifestation"></a>Manifestazione
 
 -   Microsoft non offrirà nuove licenze o rinnovi
 -   Microsoft non aggiornerà i componenti di Microsoft Agent, tra cui:
-    -   Runtime e librerie "msagent.exe"
+    -   Runtime e librerie msagent.exe "msagent.exe"
     -   I caratteri Merlin, Genie, Peedy e Robbo
     -   Editor di caratteri dell'agente
-    -   Tutti i software, gli strumenti e la documentazione correlati di Microsoft Agent
+    -   Tutto il software, gli strumenti e la documentazione di Microsoft Agent correlati
 -   Windows 7 e versioni successive non supporteranno lo sviluppo di applicazioni o caratteri di Microsoft Agent
 
 ## <a name="mitigation"></a>Strategia di riduzione del rischio

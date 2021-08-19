@@ -1,17 +1,17 @@
 ---
 description: Specifica la modalità di codifica adattiva per un codificatore video.
 ms.assetid: 14B833BC-2188-48D6-AA27-B15F491D90CF
-title: Proprietà CODECAPI_AVEncAdaptiveMode (codecapit. h)
+title: CODECAPI_AVEncAdaptiveMode proprietà (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b2405558fff76fa065324249583d4abcd445a91
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a1014e1f1cc526ee80295a183f33a840807cac27768afbb32326d5cd93d3f2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118064762"
 ---
-# <a name="codecapi_avencadaptivemode-property"></a>Proprietà AVEncAdaptiveMode di codecapi \_
+# <a name="codecapi_avencadaptivemode-property"></a>CODECAPI \_ AVEncAdaptiveMode - proprietà
 
 Specifica la modalità di codifica adattiva per un codificatore video.
 
@@ -21,11 +21,11 @@ Specifica la modalità di codifica adattiva per un codificatore video.
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncAdaptiveMode**
+**CODECAPI \_ AVEncAdaptiveMode**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Il valore di questa proprietà è un operatore OR bit per bit di **valori dell'enumerazione** [**eAVEncAdaptiveMode**](/windows/win32/api/codecapi/ne-codecapi-eavencadaptivemode) .
+Il valore di questa proprietà è **un'operazione OR** bit per bit dei valori dell'enumerazione [**eAVEncAdaptiveMode.**](/windows/win32/api/codecapi/ne-codecapi-eavencadaptivemode)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,9 +33,9 @@ Il valore di questa proprietà è un operatore OR bit per bit di **valori dell'e
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                     |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                     |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ Il valore di questa proprietà è un operatore OR bit per bit di **valori dell'e
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
 [**ICodecAPI**](/windows/desktop/api/strmif/nn-strmif-icodecapi)

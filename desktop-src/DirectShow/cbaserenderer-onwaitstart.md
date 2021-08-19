@@ -46,7 +46,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Il [**metodo CBaseRenderer::WaitForRenderTime**](cbaserenderer-waitforrendertime.md) chiama questo metodo quando inizia ad attendere l'ora di presentazione di un esempio. Questo metodo non esegue alcun'operazione nella classe di base, ma la classe derivata può eseguirne l'override.
+Il [**metodo CBaseRenderer::WaitForRenderTime**](cbaserenderer-waitforrendertime.md) chiama questo metodo quando inizia ad attendere l'ora di presentazione di un esempio. Questo metodo non esegue alcun operazione nella classe di base, ma la classe derivata può eseguirne l'override.
 
 Se si implementa il controllo di qualità, è possibile eseguire l'override di questo metodo insieme al metodo [**CBaseRenderer::OnWaitEnd.**](cbaserenderer-onwaitend.md) È possibile usare questi metodi per tenere traccia delle prestazioni del filtro.
 

@@ -28,9 +28,9 @@ Nell'Windows di tempo 7, si vuole continuare a costruire sulla riuscita di Windo
 
 Quando le applicazioni software sono pronte per il test, passare alla pagina Microsoft Connessione Windows 7 Software Logo Program e seguire le istruzioni:
 
-1.  Iniziare in anticipo Esaminare i requisiti e identificare eventuali modifiche del codice necessarie per soddisfarli.
+1.  Iniziare in anticipo Esaminare i requisiti e identificare eventuali modifiche al codice necessarie per soddisfarli.
 2.  Usare lo strumento di auto-test alfa per la verifica Scaricare e installare la versione più recente del toolkit. Si notino l'architettura a 64 bit e i requisiti del sistema operativo nel file readme.txt file. Eseguire l'applicazione tramite il toolkit come illustrato nella panoramica per verificare la conformità dell'applicazione in base ai requisiti.
-3.  Apportare eventuali modifiche al codice (se necessario) e ripetere il test Se sono necessarie modifiche all'applicazione per soddisfare i requisiti, apportare le modifiche necessarie e ripetere il test con il toolkit per verificare la conformità.
+3.  Apportare eventuali modifiche al codice (se necessario) ed eseguire di nuovo il test Se sono necessarie modifiche all'applicazione per soddisfare i requisiti, apportare le modifiche necessarie e ripetere il test con il toolkit per verificare la conformità.
 4.  Acconsentire esplicitamente a ricevere notifiche tramite posta elettronica Microsoft inizierà ad accettare gli invii di logo con il rilascio del toolkit beta in scadenza alla fine di maggio. È consigliabile acconsentire esplicitamente alla ricezione di notifiche tramite posta elettronica quando il toolkit viene rilasciato e quando il programma viene aperto per gli invii.
 
     La procedura seguente può essere eseguita solo dopo il rilascio del toolkit beta:

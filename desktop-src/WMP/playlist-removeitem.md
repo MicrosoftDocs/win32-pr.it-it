@@ -5,7 +5,7 @@ ms.assetid: 294ba4fb-967b-4a03-b0c5-6e9c15db3bff
 keywords:
 - Metodo removeItem Windows Media Player
 - Metodo removeItem Windows Media Player , classe Playlist
-- Metodo removeItem della Windows Media Player playlist
+- Classe playlist Windows Media Player metodo removeItem
 topic_type:
 - apiref
 api_name:

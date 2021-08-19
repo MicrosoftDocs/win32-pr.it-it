@@ -1,5 +1,5 @@
 ---
-description: 'Membro CImageAllocator::m_pFilter: la variabile membro m pFilter è un puntatore \_ al filtro proprietario.'
+description: 'Membro CImageAllocator::m_pFilter : la variabile membro m pFilter è un puntatore \_ al filtro proprietario.'
 ms.assetid: 57ba31bb-e047-4046-a58d-6ca39d6093f8
 title: Membro CImageAllocator::m_pFilter (Winutil.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f62a7e9ce7a9449072cfdd318330f5bfae0bbb16
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f68e87c58c66ab6d1a910bbf8f7e4f7d91b71e7f11756d6b1d089eee24d95b56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118402668"
 ---
 # <a name="cimageallocatorm_pfilter-member"></a>Membro CImageAllocator::m \_ pFilter
 
@@ -42,7 +42,7 @@ CBaseFilter *m_pFilter;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Winutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

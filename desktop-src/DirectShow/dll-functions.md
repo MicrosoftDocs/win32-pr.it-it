@@ -57,7 +57,7 @@ EXPORTS
 
 
 
-È possibile registrare la DLL usando l'Regsvr32.exe di configurazione.
+È possibile registrare la DLL usando l'Regsvr32.exe comando.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

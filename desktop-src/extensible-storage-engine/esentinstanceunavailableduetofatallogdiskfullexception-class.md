@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Classe EsentInstanceUnavailableDueToFatalLogDiskFullException'
+description: Altre informazioni sulla classe EsentInstanceUnavailableDueToFatalLogDiskFullException
 title: Classe EsentInstanceUnavailableDueToFatalLogDiskFullException
 TOCTitle: EsentInstanceUnavailableDueToFatalLogDiskFullException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentInstanceUnavailableDueToFatalLogDiskFullException
@@ -45,7 +45,7 @@ Classe di base per JET_err. Eccezioni InstanceUnavailableDueToFatalLogDiskFull.
           [Microsoft.Isam.Esent.Interop.EsentFatalException](./esentfatalexception-class.md)  
             Microsoft.Isam.Esent.Interop.EsentInstanceUnavailableDueToFatalLogDiskFullException  
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

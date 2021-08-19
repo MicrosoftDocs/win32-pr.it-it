@@ -1,9 +1,9 @@
 ---
-title: opzione/o (MDMERGE)
-description: Il parametro/o specifica la directory di output per i file di metadati composti.
+title: Opzione /o (MDMERGE)
+description: L'opzione /o specifica la directory di output per i file di metadati composti.
 ms.assetid: 70C924A8-5877-462B-B66A-86B2CEF8B502
 keywords:
-- /o switch MIDL
+- Opzione /o MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20a169082de88d45d7f1ba2e18c0217c9a225699
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: af560aafa435e45cdb413516862e0b1c6d5e49f507c21b00a6b6c165b2a67f26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117808866"
 ---
-# <a name="o-switch-mdmerge"></a>opzione/o (MDMERGE)
+# <a name="o-switch-mdmerge"></a>Opzione /o (MDMERGE)
 
-Il parametro **/o** specifica la directory di output per i file di metadati composti.
+**L'opzione /o** specifica la directory di output per i file di metadati composti.
 
 ``` syntax
 mdmerge /o output_directory
@@ -31,10 +31,10 @@ mdmerge /o output_directory
 
 <dl> <dt>
 
-*Directory di output \_* 
+*directory di \_ output* 
 </dt> <dd>
 
-Specifica la directory che contiene i file di metadati Uniti.
+Specifica la directory che contiene i file di metadati uniti.
 
 </dd> </dl>
 
@@ -42,7 +42,7 @@ Specifica la directory che contiene i file di metadati Uniti.
 
 ## <a name="examples"></a>Esempi
 
-**Mdmerge/o directory di output \_**
+**Directory di output mdmerge /o \_**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,7 +59,7 @@ Specifica la directory che contiene i file di metadati Uniti.
 
 <dl> <dt>
 
-[Sintassi della riga di comando MIDL generale](general-midl-command-line-syntax.md)
+[Sintassi generale della riga di comando MIDL](general-midl-command-line-syntax.md)
 </dt> </dl>
 
  

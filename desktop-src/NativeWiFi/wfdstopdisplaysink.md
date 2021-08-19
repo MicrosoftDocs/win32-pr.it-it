@@ -1,7 +1,7 @@
 ---
-description: Arresta la modalità di sink Miracast, disattiva l'individuabilità e Annulla la registrazione del callback.
+description: Arresta Miracast sink, disattiva l'individuabilità e annulla la registrazione del callback.
 ms.assetid: 38AE60CB-F601-4C03-A725-9B802341B84B
-title: Funzione WFDDisplaySinkStop (Wfdsink. h)
+title: Funzione WFDDisplaySinkStop (Wfdsink.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - wifidisplay.dll
-ms.openlocfilehash: d1ebaa9920ca7d38cff22cef6383b37065faa2ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a5e2da91e29535c1e2fd9553a2b6ec2bb0008e61f33cd55ebcda2746b93eb657
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117797931"
 ---
-# <a name="wfddisplaysinkstop-function"></a>WFDDisplaySinkStop (funzione)
+# <a name="wfddisplaysinkstop-function"></a>Funzione WFDDisplaySinkStop
 
-Arresta la modalità di sink Miracast, disattiva l'individuabilità e Annulla la registrazione del callback. L'app dovrebbe chiamarla una volta all'arresto.
+Arresta Miracast sink, disattiva l'individuabilità e annulla la registrazione del callback. L'app deve chiamare questa operazione una volta all'arresto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,11 +39,11 @@ Questa funzione non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è ERROR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è ERROR \_ SUCCESS.
 
 ## <a name="remarks"></a>Commenti
 
-Si prevede che l'app abbia sbloccato tutti i callback in corso prima di chiamare **WFDStopDisplaySink**.
+È previsto che l'app abbia sbloccato eventuali callback in corso prima di chiamare **WFDStopDisplaySink.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,12 +51,12 @@ Si prevede che l'app abbia sbloccato tutti i callback in corso prima di chiamare
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                               |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                    |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                               |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows 10<br/>                                                                      |
 | Fine del supporto server<br/>    | Windows Server 2016<br/>                                                             |
-| Intestazione<br/>                   | <dl> <dt>Wfdsink. h</dt> </dl>       |
-| Libreria<br/>                  | <dl> <dt>Wifidisplay. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wfdsink.h</dt> </dl>       |
+| Libreria<br/>                  | <dl> <dt>Wifidisplay.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wifidisplay.dll</dt> </dl> |
 
 

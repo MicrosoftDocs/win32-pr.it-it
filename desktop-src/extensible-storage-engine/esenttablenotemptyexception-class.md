@@ -45,7 +45,7 @@ Classe di base per JET_err. Eccezioni TableNotEmpty.
           [Microsoft.Isam.Esent.Interop.EsentUsageException](./esentusageexception-class.md)  
             Microsoft.Isam.Esent.Interop.EsentTableNotEmptyException  
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
