@@ -1,26 +1,26 @@
 ---
 title: Come creare un controllo di modifica a riga singola
-description: In questo argomento viene illustrato come creare una finestra di dialogo che contiene un controllo di modifica a riga singola.
+description: In questo argomento viene illustrato come creare una finestra di dialogo contenente un controllo di modifica a riga singola.
 ms.assetid: 742DF606-9998-46D0-8D0A-F79508AAFFC0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0d5d39a4c9fbc806de6ca151606e770eb0cea9b
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 597c3e611f53af56a42f837c4d85a43f97ff846e371314b130d72c568aaf860e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104047607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829117"
 ---
 # <a name="how-to-create-a-single-line-edit-control"></a>Come creare un controllo di modifica a riga singola
 
-In questo argomento viene illustrato come creare una finestra di dialogo che contiene un controllo di modifica a riga singola.
+In questo argomento viene illustrato come creare una finestra di dialogo contenente un controllo di modifica a riga singola.
 
-Il controllo di modifica a riga singola ha lo stile di [**\_ password es**](edit-control-styles.md) . Per impostazione predefinita, i controlli di modifica con questo stile visualizzano un asterisco per ogni carattere digitato dall'utente. In questo esempio, tuttavia, viene utilizzato il messaggio [**\_ SETPASSWORDCHAR em**](em-setpasswordchar.md) per modificare il carattere predefinito da un asterisco a un segno più (+). Lo screenshot seguente mostra la finestra di dialogo dopo che l'utente ha immesso una password.
+Il controllo di modifica a riga singola ha lo [**stile password \_ ES.**](edit-control-styles.md) Per impostazione predefinita, i controlli di modifica con questo stile visualizzano un asterisco per ogni carattere digitato dall'utente. In questo esempio, tuttavia, viene utilizzato il messaggio [**EM \_ SETPASSWORDCHAR**](em-setpasswordchar.md) per modificare il carattere predefinito da un asterisco a un segno più (+). Lo screenshot seguente mostra la finestra di dialogo dopo che l'utente ha immesso una password.
 
 ![Screenshot di una finestra di dialogo contenente un controllo di modifica per l'immissione di una password](images/passworddlg.png)
 
 > [!Note]  
-> Comctl32.dll versione 6 non è ridistribuibile. Per usare Comctl32.dll versione 6, specificarla in un manifesto. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
+> Comctl32.dll versione 6 non è ridistribuibile. Per usare Comctl32.dll versione 6, specificarla in un manifesto. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione.](cookbook-overview.md)
 
  
 
@@ -28,18 +28,18 @@ Il controllo di modifica a riga singola ha lo stile di [**\_ password es**](edit
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="step-1-create-an-instance-of-the-password-dialog-box"></a>Passaggio 1: creare un'istanza della finestra di dialogo password.
+### <a name="step-1-create-an-instance-of-the-password-dialog-box"></a>Passaggio 1: Creare un'istanza della finestra di dialogo della password.
 
-Nell'esempio di codice C++ riportato di seguito viene usata la funzione DialogBox per creare una finestra di dialogo modale. Il modello della finestra di dialogo **IDD \_ password** viene passato come parametro. Definisce, tra le altre cose, gli stili della finestra, i pulsanti e le dimensioni della finestra di dialogo relativa alla password.
+L'esempio di codice C++ seguente usa la funzione DialogBox per creare una finestra di dialogo modale. Il modello di finestra di **dialogo IDD \_ PASSWORD** viene passato come parametro. Definisce, tra le altre cose, gli stili, i pulsanti e le dimensioni della finestra di dialogo della password.
 
 
 ```C++
@@ -52,13 +52,13 @@ DialogBox(hInst,                   // application instance
 
 
 
-### <a name="step-2-initialize-the-dialog-box-and-process-user-input"></a>Passaggio 2: inizializzare la finestra di dialogo ed elaborare l'input dell'utente.
+### <a name="step-2-initialize-the-dialog-box-and-process-user-input"></a>Passaggio 2: Inizializzare la finestra di dialogo ed elaborare l'input dell'utente.
 
-La procedura della finestra nell'esempio seguente inizializza la finestra di dialogo password ed elabora i messaggi di notifica e l'input dell'utente.
+La routine della finestra nell'esempio seguente inizializza la finestra di dialogo della password ed elabora i messaggi di notifica e l'input dell'utente.
 
-Durante l'inizializzazione, la routine della finestra modifica il carattere della password predefinito in un **+** segno e imposta il pulsante predefinito su **Annulla**.
+Durante l'inizializzazione, la routine della finestra modifica il carattere della password predefinito in un segno e **+** imposta il pulsante di comando predefinito su **Annulla.**
 
-Durante l'elaborazione dell'input dell'utente, la routine della finestra modifica il pulsante di push predefinito da **Annulla** a **OK** non appena l'utente immette il testo nel controllo di modifica. Se l'utente preme il pulsante **OK** , la procedura della finestra usa i messaggi [**em \_ LINELENGTH**](em-linelength.md) e [**em \_ getline**](em-getline.md) per recuperare il testo.
+Durante l'elaborazione dell'input dell'utente, la routine della finestra modifica il pulsante di comando predefinito da **CANCEL** a **OK** non appena l'utente immette testo nel controllo di modifica. Se l'utente preme il **pulsante OK,** la routine della finestra usa i messaggi [**EM \_ LINELENGTH**](em-linelength.md) ed [**EM \_ GETLINE**](em-getline.md) per recuperare il testo.
 
 
 
@@ -171,13 +171,13 @@ INT_PTR CALLBACK PasswordProc(HWND hDlg, UINT message, WPARAM wParam, LPARAM lPa
 [Informazioni sui controlli di modifica](about-edit-controls.md)
 </dt> <dt>
 
-[Modifica riferimento al controllo](bumper-edit-control-edit-control-reference.md)
+[Informazioni di riferimento sul controllo Edit](bumper-edit-control-edit-control-reference.md)
 </dt> <dt>
 
-[Uso di controlli di modifica](/windows/desktop/Controls/using-edit-controls)
+[Uso dei controlli di modifica](/windows/desktop/Controls/using-edit-controls)
 </dt> <dt>
 
-[Modifica controllo](edit-controls.md)
+[Controllo Edit](edit-controls.md)
 </dt> </dl>
 
  

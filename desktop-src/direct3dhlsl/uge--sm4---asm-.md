@@ -1,6 +1,6 @@
 ---
 title: uge (sm4 - asm)
-description: Confronto intero senza segno vettore per componente maggiore di o uguale.
+description: Confronto di unsigned integer vettore per componente maggiore di o uguale.
 ms.assetid: CA8E19EC-619F-4C19-B6FD-91650B5DAF9F
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118505079"
 ---
 # <a name="uge-sm4---asm"></a>uge (sm4 - asm)
 
-Confronto intero senza segno vettore per componente maggiore di o uguale.
+Confronto di unsigned integer vettore per componente maggiore di o uguale.
 
 
 

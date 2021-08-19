@@ -18,7 +18,7 @@ ms.locfileid: "117839954"
 
 La creazione di script è utile per gli amministratori di sistema che desiderano creare script batch per le attività usate di frequente.
 
-Per avviare lo scripting con ADSI, è necessario disporre di un computer che esegue Windows o essere connesso a un dominio che contiene i dati per gli account computer nella directory.
+Per avviare la creazione di script con ADSI, è necessario disporre di un computer che esegue Windows o essere connesso a un dominio che contiene i dati per gli account computer nella directory.
 
 ## <a name="a-simple-scripting-sample-finding-names-and-locations-of-computer-accounts"></a>Esempio di scripting semplice: ricerca di nomi e percorsi di account computer
 

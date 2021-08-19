@@ -1,11 +1,11 @@
 ---
 title: Metodo IWMDRMLicense CreateSecureDecryptor (Wmdrmsdk.h)
-description: Il metodo CreateSecureDecryptor crea un oggetto di decrittografia sicuro. Il componente di decrittografia sicura differisce dal normale componente di decrittografia perché decrittografa il contenuto e quindi lo crittografa nuovamente in base alle impostazioni specificate nei parametri di questo metodo.
+description: Il metodo CreateSecureDecryptor crea un oggetto decrittografia sicuro. Il decrittografo protetto differisce dal normale decrittografatore in quanto decrittografa il contenuto e quindi lo crittografa nuovamente in base alle impostazioni specificate nei parametri di questo metodo.
 ms.assetid: f3fe8d47-ec7b-4ba5-b5ae-6262cb455ffc
 keywords:
 - Metodo CreateSecureDecryptor windows Media Format
 - Metodo CreateSecureDecryptor windows Media Format , interfaccia IWMDRMLicense
-- Metodo CreateSecureDecryptor dell'interfaccia IWMDRMLicense per Windows Media Format
+- Metodo CreateSecureDecryptor dell'interfaccia IWMDRMLicense windows Media Format, CreateSecureDecryptor
 topic_type:
 - apiref
 api_name:
@@ -25,7 +25,7 @@ ms.locfileid: "118433670"
 ---
 # <a name="iwmdrmlicensecreatesecuredecryptor-method"></a>Metodo IWMDRMLicense::CreateSecureDecryptor
 
-Il **metodo CreateSecureDecryptor** crea un oggetto di decrittografia sicuro. Il componente di decrittografia sicura differisce dal normale componente di decrittografia perché decrittografa il contenuto e quindi lo crittografa nuovamente in base alle impostazioni specificate nei parametri di questo metodo.
+Il **metodo CreateSecureDecryptor** crea un oggetto decrittografia sicuro. Il decrittografo protetto differisce dal normale decrittografatore in quanto decrittografa il contenuto e quindi lo crittografa nuovamente in base alle impostazioni specificate nei parametri di questo metodo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -65,20 +65,20 @@ Dimensioni del certificato in byte.
 *dwCertificateType* \[ Pollici\]
 </dt> <dd>
 
-Tipo di certificato. Impostare su WMDRM \_ CERTIFICATE \_ TYPE XML(XML TIPO DI \_ CERTIFICATO WMDRM).
+Tipo di certificato. Impostare su WMDRM \_ CERTIFICATE \_ TYPE \_ XML.
 
 </dd> <dt>
 
 *dwFlags* \[ Pollici\]
 </dt> <dd>
 
-Tipo di protezione della sessione da usare per la ri codifiche. Deve essere impostato su una delle costanti nella tabella seguente:
+Tipo di protezione sessione da usare per la ri-codifica. Deve essere impostato su una delle costanti nella tabella seguente:
 
 
 
 | Costante                     | Descrizione                                                                                                 |
 |------------------------------|-------------------------------------------------------------------------------------------------------------|
-| WMDRM \_ PROTECTION \_ TYPE \_ RC4 | Usa la crittografia RC4 per la crittografia della sessione. Questa è l'unica protezione di sessione supportata per questa versione. |
+| TIPO DI \_ PROTEZIONE WMDRM \_ \_ RC4 | Usa la crittografia RC4 per la crittografia di sessione. Si tratta dell'unica protezione sessione supportata per questa versione. |
 
 
 
@@ -89,14 +89,14 @@ Tipo di protezione della sessione da usare per la ri codifiche. Deve essere impo
 *pbInitializationVector* \[ Cambio\]
 </dt> <dd>
 
-Riceve il vettore di inizializzazione. Il vettore di inizializzazione viene crittografato con RSA usando lo schema di riempimento OAEP con la chiave pubblica RSA presente nel certificato. Impostare su **NULL per** ricevere le dimensioni del buffer richieste in *pcbInitializationVector.*
+Riceve il vettore di inizializzazione. Il vettore di inizializzazione viene crittografato con RSA usando lo schema di riempimento OAEP con la chiave pubblica RSA trovata nel certificato. Impostare su **NULL per** ricevere le dimensioni del buffer richieste in *pcbInitializationVector*.
 
 </dd> <dt>
 
 *pcbInitializationVector* \[ in, out\]
 </dt> <dd>
 
-Nell'input, la dimensione del buffer passata *come pbInitializationVector*. Nell'output, la dimensione della parte usata del buffer. Se si passa **NULL per** *pbInitializationVector*, questo valore viene impostato sulle dimensioni del buffer richieste nell'output.
+In input, le dimensioni del buffer passato come *pbInitializationVector*. Nell'output, le dimensioni della parte usata del buffer. Se si passa **NULL** per *pbInitializationVector*, questo valore viene impostato sulle dimensioni del buffer richieste nell'output.
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Riceve un puntatore [**all'interfaccia IWMDRMDecrypt**](iwmdrmdecrypt.md) dell'o
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 

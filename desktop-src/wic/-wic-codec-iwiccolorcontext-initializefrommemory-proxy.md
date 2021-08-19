@@ -21,7 +21,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118711472"
 ---
-# <a name="iwiccolorcontext_initializefrommemory_proxy-function"></a>Funzione proxy IWICColorContext \_ InitializeFromMemory \_
+# <a name="iwiccolorcontext_initializefrommemory_proxy-function"></a>Funzione IWICColorContext \_ InitializeFromMemory \_ Proxy
 
 Funzione proxy per il [**metodo InitializeFromMemory.**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccolorcontext-initializefrommemory)
 
@@ -54,7 +54,7 @@ Tipo: **[ **IWICColorContext**](/windows/desktop/api/Wincodec/nn-wincodec-iwicco
 
 Tipo: **const \* BYTE**
 
-Buffer utilizzato per inizializzare [**L'oggetto IWICColorContext.**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolorcontext)
+Buffer utilizzato per inizializzare [**l'oggetto IWICColorContext.**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolorcontext)
 
 </dd> <dt>
 
@@ -81,8 +81,8 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, Windows solo app desktop di Vista \[\]<br/>                                                                                              |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                                                                             |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop vista\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                                                                             |
 | DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 

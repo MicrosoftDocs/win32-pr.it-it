@@ -1,5 +1,5 @@
 ---
-description: Indica i servizi supportati dal Wi-Fi dispositivo diretto.
+description: Indica i servizi supportati dal Wi-Fi Direct Device.
 ms.assetid: 5163eff6-7f65-4602-ad9a-5b8a63e5fd1b
 title: System.Devices.WiFiDirect.Services
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118467211"
 ---
 # <a name="systemdeviceswifidirectservices"></a>System.Devices.WiFiDirect.Services
 
-Indica i servizi supportati dal Wi-Fi diretto
+Indica i servizi supportati dal dispositivo Wi-Fi direct
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507
 
@@ -39,7 +39,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -69,7 +69,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

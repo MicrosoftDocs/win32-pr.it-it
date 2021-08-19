@@ -1,7 +1,7 @@
 ---
-description: Identifica i dati di animazione del fotogramma chiave compressi.
+description: Identifica i dati di animazione dei fotogrammi chiave compressi.
 ms.assetid: 2aab46db-e0ad-4bbb-b1c5-a254ec6cb984
-title: Struttura XFILECOMPRESSEDANIMATIONSET (D3dx9mesh. h)
+title: Struttura XFILECOMPRESSEDANIMATIONSET (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 240cac57c9c0d123203ee4599c14092df1327f94
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 41c64ae7bb2ca4acf87e1b63de90f2ccfc78e8d769adf334aa1f68b9bf79de0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118518563"
 ---
 # <a name="xfilecompressedanimationset-structure"></a>Struttura XFILECOMPRESSEDANIMATIONSET
 
-Identifica i dati di animazione del fotogramma chiave compressi.
+Identifica i dati di animazione dei fotogrammi chiave compressi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,29 +49,29 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Dimensioni totali, in byte, dei dati compressi nel buffer dei dati di animazione del fotogramma chiave compresso.
+Dimensioni totali, in byte, dei dati compressi nel buffer dei dati di animazione con fotogrammi chiave compressi.
 
 </dd> <dt>
 
 **TicksPerSec**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Numero di cicli del fotogramma chiave di animazione che si verificano al secondo.
+Numero di tick dei fotogrammi chiave di animazione che si verificano al secondo.
 
 </dd> <dt>
 
-**PlaybackType**
+**Tipo di riproduzione**
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Tipo del ciclo di riproduzione del set di animazioni. Vedere [**D3DXPLAYBACK \_ Type**](./d3dxplayback-type.md).
+Tipo di ciclo di riproduzione del set di animazioni. Vedere [**D3DXPLAYBACK \_ TYPE**](./d3dxplayback-type.md).
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Dimensioni minime del buffer, in byte, necessarie per conservare i dati di animazione del fotogramma chiave compressi. Il valore è uguale a ((CompressedBlockSize + 3)/4).
+Dimensioni minime del buffer, in byte, necessarie per contenere i dati di animazione dei fotogrammi chiave compressi. Il valore è uguale a ( ( CompressedBlockSize + 3 ) / 4 ).
 
 </dd> </dl>
 
@@ -92,7 +92,7 @@ Dimensioni minime del buffer, in byte, necessarie per conservare i dati di anima
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 

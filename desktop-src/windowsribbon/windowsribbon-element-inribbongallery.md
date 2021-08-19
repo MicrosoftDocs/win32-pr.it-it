@@ -1,9 +1,9 @@
 ---
 title: Elemento InRibbonGallery
-description: Rappresenta la In-Ribbon, un controllo basato su raccolta che espone un subset predefinito di elementi direttamente nella barra multifunzione. Tutti gli elementi rimanenti vengono visualizzati quando si fa clic su un pulsante di menu a discesa.
+description: Rappresenta lIn-Ribbon Gallery, un controllo basato sulla raccolta che espone un subset predefinito di elementi direttamente nella barra multifunzione. Eventuali elementi rimanenti vengono visualizzati quando si fa clic su un pulsante di menu a discesa.
 ms.assetid: 07d035e2-e6db-49fa-b786-a37cbceb58f6
 keywords:
-- Elemento InRibbonGallery Barra multifunzione di Windows
+- Elemento InRibbonGallery Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a25b2ebb937d954adce58231fd8c6b3347a031a7
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 1156c7a3b625496b0a4d50b750a3db5cda51a6b77745aaf26d4282de1be3443d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117850836"
 ---
 # <a name="inribbongallery-element"></a>Elemento InRibbonGallery
 
-Rappresenta la [raccolta nella barra multifunzione](windowsribbon-controls-inribbongallery.md), un controllo basato su raccolta che espone un subset predefinito di elementi direttamente nella barra multifunzione. Tutti gli elementi rimanenti vengono visualizzati quando si fa clic su un pulsante di menu a discesa.
+Rappresenta la [raccolta nella barra](windowsribbon-controls-inribbongallery.md)multifunzione , un controllo basato sulla raccolta che espone un subset predefinito di elementi direttamente nella barra multifunzione. Eventuali elementi rimanenti vengono visualizzati quando si fa clic su un pulsante di menu a discesa.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -67,8 +67,8 @@ Rappresenta la [raccolta nella barra multifunzione](windowsribbon-controls-inrib
 <td><strong>CommandName</strong><br/></td>
 <td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command.</strong></a><br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999 inclusi o valore esadecimale compreso tra 0x2 e 0xea5f inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command</strong></a>.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>HasLargeItems</strong><br/></td>
@@ -86,7 +86,7 @@ Si applica solo alle raccolte in cui il valore <em>dell'attributo Type</em> è u
 <td><strong>ItemHeight</strong><br/></td>
 <td>xs:integer<br/></td>
 <td>No<br/></td>
-<td>Insieme a <em>ItemWidth,</em>determina le dimensioni dell'immagine dell'elemento visualizzata nel controllo raccolta. <br/>
+<td>Insieme a <em>ItemWidth</em>, determina le dimensioni dell'immagine dell'elemento visualizzata nel controllo raccolta. <br/>
 <blockquote>
 [!Note]<br />
 Si applica solo alle raccolte in cui il valore <em>dell'attributo Type</em> è uguale a <code>Item</code>.
@@ -98,7 +98,7 @@ Si applica solo alle raccolte in cui il valore <em>dell'attributo Type</em> è u
 <td><strong>ItemWidth</strong><br/></td>
 <td>xs:integer<br/></td>
 <td>No<br/></td>
-<td>Insieme a <em>ItemHeight,</em>determina le dimensioni dell'immagine dell'elemento visualizzata nel controllo raccolta. <br/>
+<td>Insieme a <em>ItemHeight</em>, determina le dimensioni dell'immagine dell'elemento visualizzata nel controllo raccolta. <br/>
 <blockquote>
 [!Note]<br />
 Si applica solo alle raccolte in cui il valore <em>dell'attributo Type</em> è uguale a <code>Item</code>.
@@ -110,43 +110,43 @@ Si applica solo alle raccolte in cui il valore <em>dell'attributo Type</em> è u
 <td><strong>MaxColumns</strong><br/></td>
 <td>xs:integer<br/></td>
 <td>No<br/></td>
-<td>Specifica il numero massimo di colonne visualizzate da <strong>InRibbonGallery,</strong> ad esempio nell'elenco a discesa Layout gruppo di grandi dimensioni. <em></em><br/> <br/>
+<td>Specifica il numero massimo di colonne visualizzate da <strong>InRibbonGallery,</strong> ad esempio nell'elenco a discesa Layout gruppo grande. <em></em><br/> <br/>
 <dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>MaxColumnsMedium</strong><br/></td>
 <td>xs:integer<br/></td>
 <td>No<br/></td>
-<td>Specifica il numero massimo di colonne visualizzate da <strong>InRibbonGallery</strong> nel layout gruppo Medio, prima di passare al layout <em>Large.</em> <em></em> <br/> <br/>
+<td>Specifica il numero massimo di colonne visualizzate da <strong>InRibbonGallery</strong> nel layout Gruppo medio, prima di passare al layout <em>Di</em> grandi dimensioni. <em></em> <br/> <br/>
 <dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>MaxRows</strong><br/></td>
 <td>xs:integer<br/></td>
 <td>No<br/></td>
-<td>Specifica il numero massimo di righe per il layout degli <strong>elementi InRibbonGallery.</strong> <br/> <br/>
+<td>Specifica il numero massimo di righe per il layout <strong>degli elementi InRibbonGallery.</strong> <br/> <br/>
 <dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd> Il valore predefinito è 1. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>MinColumnsLarge</strong><br/></td>
 <td>xs:integer<br/></td>
 <td>No<br/></td>
-<td>Specifica il numero minimo di colonne visualizzate da <strong>InRibbonGallery</strong> nel layout Gruppo di grandi dimensioni, prima di passare a <em>Medio.</em> <em></em><br/> <br/>
+<td>Specifica il numero minimo di colonne visualizzate da <strong>InRibbonGallery</strong> nel layout Gruppo di grandi dimensioni, prima di passare a <em>Media.</em> <em></em><br/> <br/>
 <dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>MinColumnsMedium</strong><br/></td>
 <td>xs:integer<br/></td>
 <td>No<br/></td>
-<td>Specifica il numero minimo di colonne visualizzate da <strong>InRibbonGallery</strong> nel layout del gruppo <em>Medium,</em> prima di passare a <em>Small.</em><br/> <br/>
+<td>Specifica il numero minimo di colonne visualizzate da <strong>InRibbonGallery</strong> nel layout Gruppo medio, prima di passare a <em>Small.</em> <em></em><br/> <br/>
 <dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>TextPosition</strong><br/></td>
 <td>TextPositionType<br/></td>
 <td>No<br/></td>
-<td>Specifica dove viene visualizzata l'etichetta dell'elemento, rispetto all'immagine. <br/> Limitato a uno dei valori seguenti:<br/> <br/>
-<dt><span></span><span></span><strong></strong> (Inferiore)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Nascondi)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (A sinistra)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Sovrapposizione)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (A destra)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (In alto)<br/> </dt> <dd></dd> </dl></td>
+<td>Specifica la posizione in cui viene visualizzata l'etichetta dell'elemento, relativa all'immagine. <br/> Limitato a uno dei valori seguenti:<br/> <br/>
+<dt><span></span><span></span><strong></strong> (In basso)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Nascondi)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (A sinistra)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Sovrapposizione)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (A destra)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (In alto)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>Tipo</strong><br/></td>
@@ -196,7 +196,7 @@ Si applica solo alle raccolte in cui il valore <em>dell'attributo Type</em> è u
 
 </tr>
 <tr class="even">
-<td><a href="windowsribbon-element-group.md"><strong>Gruppo</strong></a><br/></td>
+<td><a href="windowsribbon-element-group.md"><strong>Group</strong></a><br/></td>
 
 </tr>
 <tr class="odd">
@@ -218,7 +218,7 @@ facoltativo.
 
 Può verificarsi al massimo una volta per [**ogni elemento ControlGroup**](windowsribbon-element-controlgroup.md) [**o Group.**](windowsribbon-element-group.md)
 
-La schermata seguente illustra il controllo [Raccolta barra](windowsribbon-controls-inribbongallery.md) multifunzione in Microsoft Paint per Windows 7.
+La schermata seguente illustra il controllo Raccolta barra multifunzione [in](windowsribbon-controls-inribbongallery.md) Microsoft Paint per Windows 7.
 
 ![Screenshot di un controllo della raccolta nella barra multifunzione di Microsoft Paint.](images/controls/inribbongallery.png)
 

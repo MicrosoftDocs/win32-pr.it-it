@@ -11,13 +11,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117877504"
 ---
-# <a name="mesessionended-event"></a>EVENTO MESessionEnded
+# <a name="mesessionended-event"></a>Evento MESessionEnded
 
 Generato dalla sessione multimediale al termine della riproduzione dell'ultima presentazione nella coda di riproduzione.
 
 ## <a name="event-values"></a>Valori dell'evento
 
-I valori possibili recuperati [**da IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
+I valori possibili recuperati da [**IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
 
 
 
@@ -33,8 +33,8 @@ I valori possibili recuperati [**da IMFMediaEvent::GetValue**](/windows/desktop/
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                     |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                     |
 | Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 

@@ -1,29 +1,29 @@
 ---
-description: Ogni registro eventi contiene un'intestazione, rappresentata dalla struttura dell'intestazione del file di log ELF, \_ \_ che ha una dimensione fissa, seguita da un numero variabile di record di eventi, rappresentati da strutture EVENTLOGRECORD, e da un record di fine del file (rappresentato dalla \_ struttura dei record Elf EOF \_ ).
+description: Ogni log eventi contiene un'intestazione (rappresentata dalla struttura ELF LOGFILE HEADER) con dimensioni fisse, seguite da un numero variabile di record di eventi (rappresentati dalle strutture EVENTLOGRECORD) e un record di fine file (rappresentato dalla struttura \_ \_ \_ ELF EOF \_ RECORD).
 ms.assetid: 2b62b807-4ffd-4a8f-afe4-34e109d01856
-title: Formato file registro eventi
+title: Formato del file di log eventi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af4ba5c8bc0114e319107272e706801544e3effa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63ed6df35ac1fcd641a9a895b2c32eb34d6a4c1cb472ab03f16417f55900c767
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117814294"
 ---
-# <a name="event-log-file-format"></a>Formato file registro eventi
+# <a name="event-log-file-format"></a>Formato del file di log eventi
 
-Ogni registro eventi contiene un'intestazione, rappresentata dalla struttura dell' [**\_ \_ intestazione del file di log Elf**](/previous-versions/windows/desktop/legacy/bb309024(v=vs.85)) , che ha una dimensione fissa, seguita da un numero variabile di record di eventi, rappresentati da strutture [**EVENTLOGRECORD**](/windows/desktop/api/winnt/ns-winnt-eventlogrecord) , e da un record di fine del file (rappresentato dalla struttura dei [**\_ \_ record Elf EOF**](/previous-versions/windows/desktop/legacy/bb309022(v=vs.85)) ).
+Ogni log eventi contiene un'intestazione (rappresentata dalla struttura [**ELF \_ LOGFILE \_ HEADER)**](/previous-versions/windows/desktop/legacy/bb309024(v=vs.85)) con dimensioni fisse, seguite da un numero variabile di record di eventi (rappresentati dalle [**strutture EVENTLOGRECORD)**](/windows/desktop/api/winnt/ns-winnt-eventlogrecord) e un record di fine file (rappresentato dalla struttura [**\_ ELF EOF \_ RECORD).**](/previous-versions/windows/desktop/legacy/bb309022(v=vs.85))
 
-La struttura dell' **\_ \_ intestazione Logfile di Elf** e la struttura dei **\_ \_ record Elf EOF** vengono scritte nel registro eventi quando il registro eventi viene creato e vengono aggiornati ogni volta che un evento viene scritto nel log.
+La **struttura ELF \_ LOGFILE \_ HEADER** e la struttura **\_ ELF EOF \_ RECORD** vengono scritte nel registro eventi quando il registro eventi viene creato e aggiornato ogni volta che viene scritto un evento nel log.
 
-Quando un'applicazione chiama la funzione [**ReportEvent**](/windows/desktop/api/Winbase/nf-winbase-reporteventa) per scrivere una voce nel registro eventi, il sistema passa i parametri al servizio di registrazione eventi. Il servizio di registrazione eventi utilizza le informazioni per scrivere una struttura **EVENTLOGRECORD** nel registro eventi. La figura seguente illustra questo processo.
+Quando un'applicazione chiama la [**funzione ReportEvent**](/windows/desktop/api/Winbase/nf-winbase-reporteventa) per scrivere una voce nel log eventi, il sistema passa i parametri al servizio di registrazione eventi. Il servizio di registrazione eventi usa le informazioni per scrivere **una struttura EVENTLOGRECORD** nel registro eventi. La figura seguente illustra questo processo.
 
 ![scrittura di un file di log](images/evreport.png)
 
 I record degli eventi sono organizzati in uno dei modi seguenti:
 
--   Non wrapping. Il record meno recente si trova subito dopo l'intestazione del log eventi e i nuovi record vengono aggiunti dopo l'ultimo record aggiunto (prima del **\_ \_ record Elf EOF**). Nell'esempio seguente viene illustrato il metodo di non wrapping:
+-   Senza ritorno a capo. Il record meno recente si trova immediatamente dopo l'intestazione del log eventi e vengono aggiunti nuovi record dopo l'ultimo record aggiunto (prima di **\_ ELF EOF \_ RECORD**). Nell'esempio seguente viene illustrato il metodo senza ritorno a capo:
 
     ``` syntax
     HEADER                   (ELF_LOGFILE_HEADER)
@@ -32,11 +32,11 @@ I record degli eventi sono organizzati in uno dei modi seguenti:
     EOF RECORD               (ELF_EOF_RECORD)
     ```
 
-    Il mancato ritorno a capo può verificarsi quando viene creato il log eventi o quando viene cancellato il registro eventi. Il registro eventi continua a non essere incapsulato fino a quando non viene raggiunto il limite di dimensioni del registro eventi. Le dimensioni del registro eventi sono limitate dal valore di configurazione **MaxSize** o dalla quantità di risorse di sistema.
+    Il wrapping può verificarsi quando viene creato il registro eventi o quando il registro eventi viene cancellato. Il registro eventi continua a non eseguire il wrapping finché non viene raggiunto il limite di dimensioni del registro eventi. Le dimensioni del registro eventi sono limitate dal valore **di configurazione MaxSize** o dalla quantità di risorse di sistema.
 
-    Quando viene raggiunto il limite di dimensioni del registro eventi, potrebbe iniziare a eseguire il wrapping. Il wrapping è controllato dal valore di configurazione di **conservazione** . Per ulteriori informazioni sui valori di configurazione del registro eventi, vedere [EventLog Key](eventlog-key.md).
+    Quando viene raggiunto il limite di dimensioni del registro eventi, potrebbe iniziare a eseguire il wrapping. Il wrapping è controllato dal **valore di configurazione Retention.** Per altre informazioni sui valori di configurazione del registro eventi, vedere [Eventlog Key](eventlog-key.md).
 
--   Avvolgimento. I record sono organizzati come buffer circolare. Quando vengono aggiunti nuovi record, i record meno recenti vengono sostituiti. La posizione dei record meno recenti e più recenti può variare. Nell'esempio seguente viene illustrato il metodo di wrapping.
+-   Avvolgimento. I record sono organizzati come buffer circolare. Quando vengono aggiunti nuovi record, i record meno recenti vengono sostituiti. La posizione dei record meno recenti e meno recenti varia. Nell'esempio seguente viene illustrato il metodo di wrapping.
 
     ``` syntax
     HEADER                   (ELF_LOGFILE_HEADER)
@@ -59,11 +59,11 @@ I record degli eventi sono organizzati in uno dei modi seguenti:
 
     Nell'esempio il record meno recente non è più 1, ma è 102 perché lo spazio per i record da 1 a 101 è stato sovrascritto.
 
-    Esiste uno spazio tra il **record Elf \_ EOF \_** e il record meno recente, perché il sistema cancellerà un numero integrale di record per liberare spazio per il record più recente. Se, ad esempio, il record più recente è di 100 byte e i due record meno recenti sono di 75 byte, i due record meno recenti verranno rimossi dal sistema. I 50 byte aggiuntivi verranno utilizzati in un secondo momento, quando verranno scritti nuovi record.
+    C'è spazio tra **il \_ record ELF EOF \_ e** il record meno recente perché il sistema cancellerà un numero integrale di record per liberare spazio per il record più recente. Ad esempio, se il record più recente è lungo 100 byte e i due record meno recenti hanno una lunghezza di 75 byte, il sistema rimuoverà i due record meno recenti. I 50 byte aggiuntivi verranno usati in un secondo momento quando vengono scritti nuovi record.
 
-    Un file di registro eventi ha una dimensione fissa e quando i record nel file sono a capo, il record alla fine del file viene in genere suddiviso in due record. Se, ad esempio, la posizione per la scrittura successiva è 100 byte alla fine del file e la dimensione del record è 300 byte, i primi 100 byte verranno scritti alla fine del file e i successivi 200 byte verranno scritti all'inizio del file immediatamente dopo l' **\_ \_ intestazione di logfile Elf**. Se lo spazio disponibile alla fine del file è inferiore alla parte fissa di **EVENTLOGRECORD** (0x38 bytes), tutto il nuovo record verrà scritto all'inizio del file immediatamente dopo l' **\_ \_ intestazione di logfile Elf**. I byte non utilizzati alla fine del file verranno riempiti con il modello 0x00000027.
+    Un file di log eventi ha dimensioni fisse e quando i record nel file vengono a capo, il record alla fine del file verrà in genere suddiviso in due record. Ad esempio, se la posizione per la scrittura successiva è a 100 byte dalla fine del file e le dimensioni del record sono 300 byte, i primi 100 byte verranno scritti alla fine del file e i successivi 200 byte verranno scritti all'inizio del file immediatamente dopo **l'intestazione LOGFILE ELF \_ \_**. Se lo spazio disponibile alla fine del file è minore della parte fissa di **EVENTLOGRECORD** (0x38 byte), tutti i nuovi record verranno scritti all'inizio del file immediatamente dopo **eLF \_ LOGFILE \_ HEADER**. I byte inutilizzati alla fine del file verranno riempiti con il modello 0x00000027.
 
-Per ulteriori informazioni e un esempio di codice, vedere [segnalazione di un evento](reporting-an-event.md).
+Per altre informazioni e un esempio di codice, vedere [Creazione di report su un evento](reporting-an-event.md).
 
  
 

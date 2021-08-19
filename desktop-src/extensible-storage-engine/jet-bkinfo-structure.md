@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: struttura JET_BKINFO'
-title: Struttura JET_BKINFO
+description: 'Altre informazioni su: JET_BKINFO struttura'
+title: JET_BKINFO struttura
 TOCTitle: JET_BKINFO Structure
 ms:assetid: dfaf1d72-1d5f-4777-91c1-6affb735b092
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294120(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6c4849c23e742657d8f5eaba8a030426f7a2a440
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f391d711c6d10c50cfdb26314be6ee709ff481bda0ce370faa28d514422444c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118487866"
 ---
-# <a name="jet_bkinfo-structure"></a>Struttura JET_BKINFO
+# <a name="jet_bkinfo-structure"></a>JET_BKINFO struttura
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jet_bkinfo-structure"></a>Struttura JET_BKINFO
+## <a name="jet_bkinfo-structure"></a>JET_BKINFO struttura
 
-La struttura **JET_BKINFO** include una raccolta di dati relativi a un evento di backup specifico.
+La **JET_BKINFO** contiene una raccolta di dati su un evento di backup specifico.
 
 ```cpp
     typedef struct {
@@ -47,7 +47,7 @@ La struttura **JET_BKINFO** include una raccolta di dati relativi a un evento di
 
 **lgposMark**
 
-ID di questo backup.
+ID del backup.
 
 **logtimeMark**
 
@@ -55,7 +55,7 @@ Ora di questo evento di backup.
 
 **bklogtimeMark**
 
-Ora di questo evento di backup, con ulteriori bit per indicare un backup di snapshot.
+Ora di questo evento di backup, con bit aggiuntivi per indicare un backup dello snapshot.
 
 **Windows Vista: bklogtimeMark** è stato introdotto in Windows Vista.
 
@@ -65,11 +65,11 @@ Numero di generazione del log basso associato a questo evento di backup.
 
 **genHigh**
 
-Numero di generazione del log elevato associato a questo evento di backup.
+Numero elevato di generazione del log associato a questo evento di backup.
 
 ### <a name="remarks"></a>Commenti
 
-Questa struttura viene utilizzata all'interno della struttura [JET_DBINFOMISC](./jet-dbinfomisc-structure.md) per rappresentare i dati relativi all'evento di backup del database.
+Questa struttura viene utilizzata all'interno [della JET_DBINFOMISC](./jet-dbinfomisc-structure.md) per rappresentare i dati relativi all'evento di backup del database.
 
 ### <a name="requirements"></a>Requisiti
 
@@ -89,7 +89,7 @@ Questa struttura viene utilizzata all'interno della struttura [JET_DBINFOMISC](.
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

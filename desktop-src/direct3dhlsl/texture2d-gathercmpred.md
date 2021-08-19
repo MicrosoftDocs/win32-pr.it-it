@@ -1,6 +1,6 @@
 ---
-title: 'Metodi di Texture2D:: Texture2D GatherCmpRed'
-description: Campiona e confronta un Texture2D e restituisce il componente rosso.
+title: Metodi GatherCmpRed texture2D::Texture2D
+description: Esempi e confronta un oggetto Texture2D e restituisce il componente rosso.
 ms.assetid: 717f42f5-7ffe-4bdf-8737-ab0268978a9e
 keywords:
 - Metodi GatherCmpRed HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 4f228d91985fb9ba9d62bfc09e67d65eafc645a8
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: 28ffd9c35cf2ce0bed976531b18141e583c3e109c434a888df216bf1eab606a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "103719015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118787245"
 ---
-# <a name="texture2dgathercmpred-methods"></a>Metodi Texture2D:: GatherCmpRed
+# <a name="texture2dgathercmpred-methods"></a>Metodi texture2D::GatherCmpRed
 
-Campiona e confronta un [**Texture2D**](sm5-object-texture2d.md) e restituisce il componente rosso.
+Esempi e confronta un oggetto [**Texture2D**](sm5-object-texture2d.md) e restituisce il componente rosso.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,10 +29,10 @@ Campiona e confronta un [**Texture2D**](sm5-object-texture2d.md) e restituisce i
 
 | Metodo                                                                                                                   | Descrizione                                                                                                    |
 |:-------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------|
-| [**GatherCmpRed (S, float, float, int)**](sm5-object-texture2d-gathercmpred.md)                                             | Campiona e confronta una trama e restituisce il componente rosso.<br/>                                       |
-| [**GatherCmpRed (S, float, float, int, uint)**](t2d-gathercmpred-s-float-float-int-uint-.md)                                 | Campiona e confronta una trama e restituisce il componente rosso insieme allo stato dell'operazione.<br/> |
-| [**GatherCmpRed (S, float, float, int2, int2, int2, int2)**](t2d-gathercmpred-s-float-float-int2-int2-int2-int2-.md)           | Campiona e confronta una trama e restituisce il componente rosso.<br/>                                       |
-| [**GatherCmpRed (S, float, float, int2, int2, int2, int2, uint)**](t2d-gathercmpred-s-float-float-int2-int2-int2-int2-uint-.md) | Campiona e confronta una trama e restituisce il componente rosso insieme allo stato dell'operazione.<br/> |
+| [**GatherCmpRed(S,float,float,int)**](sm5-object-texture2d-gathercmpred.md)                                             | Campiota e confronta una trama e restituisce il componente rosso.<br/>                                       |
+| [**GatherCmpRed(S,float,float,int,uint)**](t2d-gathercmpred-s-float-float-int-uint-.md)                                 | Esempi e confronta una trama e restituisce il componente rosso insieme allo stato dell'operazione.<br/> |
+| [**GatherCmpRed(S,float,float,int2,int2,int2,int2,int2)**](t2d-gathercmpred-s-float-float-int2-int2-int2-int2-.md)           | Campiota e confronta una trama e restituisce il componente rosso.<br/>                                       |
+| [**GatherCmpRed(S,float,float,int2,int2,int2,int2,int2,uint)**](t2d-gathercmpred-s-float-float-int2-int2-int2-int2-uint-.md) | Esempi e confronta una trama e restituisce il componente rosso insieme allo stato dell'operazione.<br/> |
 
 
 

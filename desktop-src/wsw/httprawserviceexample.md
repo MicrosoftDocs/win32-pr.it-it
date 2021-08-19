@@ -1,25 +1,25 @@
 ---
 title: HttpRawServiceExample
-description: Questo esempio illustra come usare l'host del servizio per gestire le richieste HTTP non elaborate (non SOAP).
+description: In questo esempio viene illustrato come utilizzare l'host del servizio per gestire le richieste HTTP non elaborato (non SOAP).
 ms.assetid: fbe5ad9c-f3f4-40c2-86e0-03b945aab89f
 keywords:
-- HttpRawServiceExample native-servizi Web
+- HttpRawServiceExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e137bf1770856b51e50ce0dc8cca827662c7925
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bc1aa7e7aec653aa5bdff294cfd86346cec06378e5a5e9a3923540642f44bef5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103712247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117841528"
 ---
 # <a name="httprawserviceexample"></a>HttpRawServiceExample
 
-Questo esempio illustra come usare l'host del servizio per gestire le richieste HTTP non elaborate (non SOAP).
+In questo esempio viene illustrato come utilizzare l'host del servizio per gestire le richieste HTTP non elaborato (non SOAP).
 
-## <a name="httprawservicecpp"></a>HttpRawService. cpp
+## <a name="httprawservicecpp"></a>HttpRawService.cpp
 
 
 ```C++
@@ -579,9 +579,9 @@ Exit:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

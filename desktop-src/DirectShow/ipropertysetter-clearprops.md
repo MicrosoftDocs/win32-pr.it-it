@@ -1,5 +1,5 @@
 ---
-description: Il metodo ClearProps cancella tutti i dati delle proprietà dal setter di proprietà. L'applicazione può impostare nuovi dati di proprietà dopo la chiamata a questa funzione.
+description: Il metodo ClearProps cancella tutti i dati delle proprietà dal setter di proprietà. L'applicazione può impostare nuovi dati di proprietà dopo aver chiamato questa funzione.
 ms.assetid: f3c31864-ddc3-4f3c-a097-2bab9d7f6a2a
 title: Metodo IPropertySetter::ClearProps (Qedit.h)
 ms.topic: reference
@@ -24,13 +24,13 @@ ms.locfileid: "117818590"
 # <a name="ipropertysetterclearprops-method"></a>Metodo IPropertySetter::ClearProps
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il `ClearProps` metodo cancella tutti i dati delle proprietà dal setter di proprietà. L'applicazione può impostare nuovi dati di proprietà dopo la chiamata a questa funzione.
+Il `ClearProps` metodo cancella tutti i dati delle proprietà dal setter di proprietà. L'applicazione può impostare nuovi dati di proprietà dopo aver chiamato questa funzione.
 
-La cancellazione dei dati delle proprietà non ripristina i valori originali delle proprietà dell'oggetto. Impedisce semplicemente DirectShow di applicare altre modifiche. I valori delle proprietà vengono applicati in fase di esecuzione durante il rendering del progetto.
+La cancellazione dei dati della proprietà non ripristina i valori originali delle proprietà dell'oggetto. Impedisce semplicemente DirectShow di applicare altre modifiche. I valori delle proprietà vengono applicati in fase di esecuzione durante il rendering del progetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,7 +57,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

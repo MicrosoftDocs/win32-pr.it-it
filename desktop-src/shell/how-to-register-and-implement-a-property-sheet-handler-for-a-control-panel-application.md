@@ -1,6 +1,6 @@
 ---
 description: Molte Pannello di controllo visualizzano una finestra delle proprietà Proprietà per consentire agli utenti di visualizzare e modificare varie impostazioni di sistema e dispositivo.
-title: Come registrare e implementare un gestore della finestra delle proprietà per un'Pannello di controllo personalizzata
+title: Come registrare e implementare un gestore della finestra delle proprietà per un'Pannello di controllo applicazione
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: c6865e8e50aefdea3e3d25c29c9abd3bbbabf5c6af3b770537ed187f8b055bdc
@@ -10,7 +10,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117859590"
 ---
-# <a name="how-to-register-and-implement-a-property-sheet-handler-for-a-control-panel-application"></a>Come registrare e implementare un gestore della finestra delle proprietà per un'Pannello di controllo personalizzata
+# <a name="how-to-register-and-implement-a-property-sheet-handler-for-a-control-panel-application"></a>Come registrare e implementare un gestore della finestra delle proprietà per un'Pannello di controllo applicazione
 
 Molte Pannello di controllo visualizzano una finestra delle proprietà Proprietà per consentire agli utenti di visualizzare e modificare varie impostazioni di sistema e dispositivo. Due di queste applicazioni, mouse e visualizzazione, consentono ai gestori della finestra delle proprietà di sostituire una o più pagine con una pagina personalizzata. Lo screenshot seguente mostra la finestra **delle proprietà Proprietà** mouse.
 
@@ -34,9 +34,9 @@ I gestori della finestra delle proprietà Pannello di controllo applicazioni son
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="step-1-registering-a-property-sheet-handler-for-a-control-panel-application"></a>Passaggio 1: Registrazione di un gestore della finestra delle proprietà per un Pannello di controllo app Pannello di controllo proprietà
+### <a name="step-1-registering-a-property-sheet-handler-for-a-control-panel-application"></a>Passaggio 1: Registrazione di un gestore della finestra delle proprietà per un'Pannello di controllo applicazione
 
-Un Pannello di controllo gestore della finestra delle proprietà dell'applicazione deve essere registrato nella sottochiave Pannello di controllo. Questa chiave può essere in una delle due posizioni, a seconda che il gestore sia per utente o per computer. Per la registrazione per utente, la sottochiave Pannello di controllo **HKEY \_ CURRENT \_ USER** \\ **Pannello di controllo**. La macro REGSTR PATH CONTROLPANEL definita in Regstr.h può essere usata nel codice al posto di \_ \_ "Pannello di controllo". Per la registrazione per computer, il percorso è:
+Un Pannello di controllo gestore della finestra delle proprietà dell'applicazione deve essere registrato nella sottochiave Pannello di controllo. Questa chiave può essere in una delle due posizioni, a seconda che il gestore sia per utente o per computer. Per la registrazione per utente, la sottochiave Pannello di controllo **HKEY \_ CURRENT \_ USER** \\ **Pannello di controllo**. La macro REGSTR PATH CONTROLPANEL come definito in Regstr.h può essere usata nel codice al posto di \_ \_ "Pannello di controllo". Per la registrazione per computer, il percorso è:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -63,7 +63,7 @@ HKEY_LOCAL_MACHINE
                   (Default) = {MyPropHandler CLSID GUID}
 ```
 
-### <a name="step-2-implementing-a-property-sheet-handler-for-a-control-panel-application"></a>Passaggio 2: Implementazione di un gestore della finestra delle proprietà per un Pannello di controllo app Pannello di controllo proprietà
+### <a name="step-2-implementing-a-property-sheet-handler-for-a-control-panel-application"></a>Passaggio 2: Implementazione di un gestore della finestra delle proprietà per un'Pannello di controllo applicazione
 
 La procedura per l'implementazione Pannello di controllo gestore della finestra delle proprietà è molto simile a quella illustrata in Come registrare e implementare un gestore della finestra delle proprietà per [un tipo di file](how-to-register-and-implement-a-property-sheet-handler-for-a-file-type.md). La differenza principale è che [**ora IShellPropSheetExt::ReplacePage**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellpropsheetext-replacepage) richiede un'implementazione nontoken anziché [**IShellPropSheetExt::AddPages**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellpropsheetext-addpages).
 

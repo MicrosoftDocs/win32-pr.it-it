@@ -1,7 +1,7 @@
 ---
-description: Specifica i log MCA (RAW Machine Check Architecture). Questa classe è disponibile solo nei sistemi Windows a 64 bit.
+description: Specifica i log di Machine Check Architecture (MCA) non elaborati. Questa classe è disponibile solo nei sistemi Windows a 64 bit.
 ms.assetid: d465ba8d-14b2-4911-ae19-19ebeb32126e
-title: Classe MSMCAInfo_RawMCAData
+title: MSMCAInfo_RawMCAData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: 6cafc16ddbc91181cc2114def07a193941988228
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b7ac9f8c474a1aee55d0dd70a5a838102aec66bc8b3ba3d867070430c38a3ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118821865"
 ---
-# <a name="msmcainfo_rawmcadata-class"></a>\_Classe MSMCAInfo RawMCAData
+# <a name="msmcainfo_rawmcadata-class"></a>Classe \_ RAWMCAData MSMCAInfo
 
-Il **\_ RawMCAData MSMCAInfo** specifica i log dell'architettura di controllo del computer (MCA) non elaborati. Questa classe è disponibile solo nei sistemi Windows a 64 bit.
+**MsMCAInfo \_ RawMCAData** specifica i log non elaborati di Machine Check Architecture (MCA). Questa classe è disponibile solo nei sistemi Windows a 64 bit.
 
-La sintassi seguente è semplificata dal codice Managed Object Format (MOF) e include tutte le relative proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,74 +44,74 @@ class MSMCAInfo_RawMCAData : MSMCAInfo
 
 ## <a name="members"></a>Members
 
-La **classe \_ RawMCAData di MSMCAInfo** dispone di questi tipi di membri:
+La **classe MSMCAInfo \_ RawMCAData** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ RawMCAData di MSMCAInfo** dispone di queste proprietà.
+La **classe MSMCAInfo \_ RawMCAData** ha queste proprietà.
 
 <dl> <dt>
 
 **Attivo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-TRUE se questa istanza della classe è attiva; in caso contrario, **false**.
+TRUE se questa istanza della classe è attiva. in caso contrario, **FALSE.**
 
 </dd> <dt>
 
 **Count**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero di record degli errori.
+Numero di record di errore.
 
 </dd> <dt>
 
 **InstanceName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificatori: [ **Chiave**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Identificatore univoco di questa istanza della classe.
+Identificatore univoco di questa istanza della classe .
 
 </dd> <dt>
 
 **Record**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **MSMCAInfo \_ entry** Array
+Tipo di dati: **matrice voce \_ MSMCAInfo**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di record degli errori MCA. Il numero di record di errore MCA nella matrice viene specificato dalla proprietà **count** .
+Matrice di record di errore mca. Il numero di record di errore mca nella matrice viene specificato dalla **proprietà** Count.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **MSMCAInfo \_ RawMCAData** è derivata da [**MSMCAInfo**](msmcainfo.md).
+La **classe MSMCAInfo \_ RawMCAData** è derivata da [**MSMCAInfo**](msmcainfo.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -121,8 +121,8 @@ La classe **MSMCAInfo \_ RawMCAData** è derivata da [**MSMCAInfo**](msmcainfo.m
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows XP<br/>                                                                  |
 | Server minimo supportato<br/> | Windows Server 2003<br/>                                                         |
-| Spazio dei nomi<br/>                | \\WMI radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>Wmicore. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Wmi \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>Wmicore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wmiprov.dll</dt> </dl> |
 
 

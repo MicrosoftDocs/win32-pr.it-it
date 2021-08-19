@@ -256,7 +256,7 @@ Tipo di dati: **stringa**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("SettingID"), [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("SettingID"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 ID che funge da parte della chiave per l'istanza corrente.
@@ -285,7 +285,7 @@ WMI implementa la **classe CIM \_ VideoControllerResolution.** La **classe CIM \
 
 Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
-Si noti che questa classe è una classe di base. Se si sta tentando di accedere al controller video tramite WMI, è possibile usare [**Win32 \_ VideoController.**](win32-videocontroller.md)
+Si noti che questa classe è una classe di base. Se si sta tentando di accedere al controller video tramite WMI, è possibile usare [**Invece \_ VideoController Win32.**](win32-videocontroller.md)
 
 ## <a name="requirements"></a>Requisiti
 

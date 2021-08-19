@@ -3,7 +3,7 @@ title: EM_SHOWSCROLLBAR messaggio (Richedit.h)
 description: Mostra o nasconde una delle barre di scorrimento nella finestra host di un controllo Rich Edit.
 ms.assetid: 0a6ec010-4870-4faf-9dc2-1da961dc8194
 keywords:
-- EM_SHOWSCROLLBAR dei messaggi Windows controllo
+- EM_SHOWSCROLLBAR dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:

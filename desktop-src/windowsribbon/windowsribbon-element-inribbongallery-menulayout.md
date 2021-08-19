@@ -1,6 +1,6 @@
 ---
 title: InRibbonGallery.MenuLayout - proprietà
-description: Rappresenta un contenitore per In-Ribbon menu a discesa raccolta.
+description: Rappresenta un contenitore In-Ribbon layout del menu a discesa raccolta.
 ms.assetid: 89e0eb39-2790-4571-a661-ab3ebafbb13f
 keywords:
 - Proprietà InRibbonGallery.MenuLayout Windows barra multifunzione

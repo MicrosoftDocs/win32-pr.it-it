@@ -39,7 +39,7 @@ BasicConstraints.IsPresent As Boolean
 
 ## <a name="property-value"></a>Valore proprietà
 
-Se **true**, è presente l'estensione dei vincoli di base.
+Se **true,** è presente l'estensione dei vincoli di base.
 
 ## <a name="requirements"></a>Requisiti
 

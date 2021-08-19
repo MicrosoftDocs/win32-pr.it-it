@@ -35,7 +35,7 @@ Dove:
 
 -   dst è il registro di destinazione.
 -   src0 è un registro di origine che fornisce le coordinate della trama per l'esempio di trama. Vedere [Registro coordinate trama](dx9-graphics-reference-asm-ps-registers-texture-coordinate.md).
--   src1 identifica il [sampler (Direct3D 9 asm-ps)](dx9-graphics-reference-asm-ps-registers-sampler.md) (s), dove specifica il numero del \# \# campionatore di trama da campionare. Il campionatore ha associato una trama e uno stato del campionatore definito da [**D3DSAMPLERSTATETYPE**](/windows/desktop/direct3d9/d3dsamplerstatetype).
+-   src1 identifica [il sampler (Direct3D 9 asm-ps)](dx9-graphics-reference-asm-ps-registers-sampler.md) (s), dove specifica il numero del \# \# campionatore di trama da campionare. Il campionatore ha associato una trama e uno stato del campionatore definito da [**D3DSAMPLERSTATETYPE**](/windows/desktop/direct3d9/d3dsamplerstatetype).
 
 Per le restrizioni quando si usa texldb, vedere l'istruzione [texld - ps \_ 2 \_ 0 e up.](texld---ps-2-0.md)
 
@@ -56,7 +56,7 @@ Un'istruzione di trama dipendente dal secondo ordine è definita come un'istruzi
 
 ### <a name="ps_3_0"></a>ps \_ 3 \_ 0
 
-src1 deve essere un [sampler (Direct3D 9 asm-ps)](dx9-graphics-reference-asm-ps-registers-sampler.md) \# (s), senza modificatore. Lo swizzle è consentito in src1 e, se applicati, i risultati della ricerca trame vengono pre-swizzle prima di essere scritti in dst.
+src1 deve essere un [sampler (Direct3D 9 asm-ps)](dx9-graphics-reference-asm-ps-registers-sampler.md) (s \# ), senza modificatore. Lo swizzle è consentito in src1 e, se applicati, i risultati della ricerca trame vengono pre-swizzle prima di essere scritti in dst.
 
 ## <a name="remarks"></a>Commenti
 

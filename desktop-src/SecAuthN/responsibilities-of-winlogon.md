@@ -37,7 +37,7 @@ ms.locfileid: "118919029"
 
 -   Controllo dello screen saver
 
-    Winlogon monitora l'attività di tastiera e mouse per determinare quando attivare gli screen saver. Dopo aver attivato screen saver, Winlogon continua a monitorare l'attività della tastiera e del mouse per determinare quando terminare il screen saver. Se il screen saver è contrassegnato come sicuro, Winlogon considera la workstation bloccata. Quando è presente un'attività tramite mouse o tastiera, Winlogon richiama la funzione [**WlxDisplayLockedNotice**](/windows/desktop/api/Winwlx/nf-winwlx-wlxdisplaylockednotice) di GINA e riprende il comportamento della workstation bloccata. Se il screen saver non è sicuro, qualsiasi attività della tastiera o del mouse termina il screen saver senza notifica all'istanza di GINA.
+    Winlogon monitora l'attività di tastiera e mouse per determinare quando attivare gli screen saver. Dopo aver attivato screen saver, Winlogon continua a monitorare l'attività della tastiera e del mouse per determinare quando terminare il screen saver. Se il screen saver è contrassegnato come sicuro, Winlogon considera la workstation bloccata. Quando è presente un'attività tramite mouse o tastiera, Winlogon richiama la funzione [**WlxDisplayLockedNotice**](/windows/desktop/api/Winwlx/nf-winwlx-wlxdisplaylockednotice) di GINA e riprende il comportamento della workstation bloccata. Se il screen saver non è sicuro, qualsiasi attività della tastiera o del mouse termina il screen saver senza notifica al GINA.
 
 -   Supporto di più provider di rete
 

@@ -1,7 +1,7 @@
 ---
-description: Versione concreta della classe di \_ processi CIM. Questa classe rappresenta un'unità di lavoro istanziabile generica da eseguire, ad esempio un batch o un processo di stampa.
+description: Versione concreta della classe Job \_ CIM. Questa classe rappresenta un'unità di lavoro generica di cui è possibile creare istanze da eseguire, ad esempio un batch o un processo di stampa.
 ms.assetid: fad4d894-d1f5-428d-819f-74966dd9f410
-title: Classe CIM_ConcreteJob
+title: CIM_ConcreteJob classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 949d7c85643919f784a82e7722c9d49a9d9d2e97
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a62ab2392ce2c069aa88ebb465f7028368f30bd5432cf96559c7eebe6edb8bdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117813162"
 ---
-# <a name="cim_concretejob-class"></a>CIM \_ ConcreteJob (classe)
+# <a name="cim_concretejob-class"></a>Classe CIM \_ ConcreteJob
 
-Versione concreta della classe [**di \_ processi CIM**](cim-job.md) . Questa classe rappresenta un'unità di lavoro istanziabile generica da eseguire, ad esempio un batch o un processo di stampa.
+Versione concreta della [**classe \_ Job CIM.**](cim-job.md) Questa classe rappresenta un'unità di lavoro generica di cui è possibile creare istanze da eseguire, ad esempio un batch o un processo di stampa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,21 +45,21 @@ class CIM_ConcreteJob : CIM_Job
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ConcreteJob** presenta questi tipi di membri:
+La **classe \_ CIM ConcreteJob** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **CIM \_ ConcreteJob** presenta questi metodi.
+La **classe \_ CIM ConcreteJob** include questi metodi.
 
 
 
 | Metodo                                                           | Descrizione                                                                          |
 |:-----------------------------------------------------------------|:-------------------------------------------------------------------------------------|
-| [**GetError**](cim-concretejob-geterror.md)                     | Recupera le informazioni sull'errore per lo stato operativo di un processo concreto.<br/> |
-| [**RequestStateChange**](cim-concretejob-requeststatechange.md) | Richiede la modifica dello stato specificato in un processo concreto.<br/>                    |
+| [**GetError**](cim-concretejob-geterror.md)                     | Recupera informazioni sull'errore per lo stato operativo di un processo concreto.<br/> |
+| [**RequestStateChange**](cim-concretejob-requeststatechange.md) | Richiede la modifica dello stato specificato a un processo concreto.<br/>                    |
 
 
 
@@ -67,35 +67,35 @@ La classe **CIM \_ ConcreteJob** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ConcreteJob** dispone di queste proprietà.
+La **classe CIM \_ ConcreteJob** ha queste proprietà.
 
 <dl> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**chiave**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("InstanceId")
+Qualificatori: [**chiave**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("InstanceID")
 </dt> </dl>
 
-Identifica in modo univoco e opaco un'istanza di questa classe nell'ambito dello spazio dei nomi che lo contiene.
+Identifica in modo univoco e opaco un'istanza di questa classe all'interno dell'ambito dello spazio dei nomi contenitore.
 
 > [!IMPORTANT]
 >
-> Per garantire l'univocità all'interno dello spazio dei nomi, il valore della proprietà **InstanceID** deve essere costruito nel modello seguente: *OrgID*:*LocalId*
+> Per garantire l'univocità all'interno dello spazio dei nomi, il valore della proprietà **InstanceID** deve essere costruito nel modello seguente: *OrgID*:*LocalID*
 >
-> *OrgID* deve includere un nome con copyright, marchio o in altro modo univoco, di proprietà dell'entità di business che definisce **InstanceID**, oppure essere un ID registrato assegnato da un'autorità globale riconosciuta. Questo modello è simile alla struttura dei nomi delle classi dello schema. Inoltre, per garantire l'univocità, i primi due punti in **InstanceID** devono essere compresi tra *OrgID* e *LocalId*. Pertanto *OrgID* non deve contenere i due punti (':').
+> *OrgID* deve includere un nome protetto da copyright, registrato o altrimenti univoco di proprietà dell'entità aziendale che definisce **InstanceID** o essere un ID registrato assegnato da un'autorità globale riconosciuta. Questo modello è simile alla struttura dei nomi delle classi dello schema. Inoltre, per garantire l'univocità, i primi due punti in **InstanceID** devono essere compresi tra *OrgID* e *LocalID*. *L'ORGID non* deve pertanto contenere i due punti (':').
 >
-> Il *localizzato* viene scelto dall'entità di business e non deve essere riutilizzato per identificare diversi elementi reali sottostanti.
+> *LocalID* viene scelto dall'entità business e non deve essere usato nuovamente per identificare diversi elementi reali sottostanti.
 >
-> Se il criterio precedente non viene utilizzato, l'entità di definizione deve assicurare che il valore **InstanceID** risultante non venga riutilizzato nelle proprietà **InstanceID** generate dal provider o da altri provider per questo spazio dei nomi.
+> Se il modello precedente non viene usato, l'entità di definizione deve garantire che il valore **InstanceID** risultante non sia usato di nuovo in tutte le proprietà **InstanceID** prodotte da questo provider o da altri provider per questo spazio dei nomi.
 >
-> Per le istanze definite DMTF (Distributed Management Task Force), il modello deve essere usato con *OrgID* impostato su CIM.
+> Per le istanze definite da DmTF (Distributed Management Task Force), il modello deve essere usato con *OrgID* impostato su CIM.
 
  
 
@@ -104,13 +104,13 @@ Identifica in modo univoco e opaco un'istanza di questa classe nell'ambito dello
 **JobState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Lo stato operativo del processo e la transizione tra questi Stati.
+Stato operativo del processo e transizione tra tali stati.
 
 <dt>
 
@@ -132,13 +132,13 @@ il processo non è mai stato avviato.
 
 </dt> <dd>
 
-Il processo viene spostato dagli Stati ' New ',' suspended ' o ' Service ' nello stato ' running '.
+Il processo viene spostata dallo stato "Nuovo", "Sospeso" o "Servizio" allo stato "In esecuzione".
 
 </dd> <dt>
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**In esecuzione** (4)
+<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**In** esecuzione (4)
 
 
 </dt> <dd>
@@ -154,18 +154,18 @@ Il processo è in esecuzione.
 
 </dt> <dd>
 
-Il processo è stato interrotto, ma può essere riavviato in modo uniforme.
+Il processo viene arrestato, ma può essere riavviato in modo trasparente.
 
 </dd> <dt>
 
 <span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span>
 
-<span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span>**Arresto** in corso (6)
+<span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span>**Arresto in fase di** arresto (6)
 
 
 </dt> <dd>
 
-Lo stato del processo è' completed ',' terminate ' o ' Killed '.
+Il processo è in stato "Completato", "Terminato" o "Terminato".
 
 </dd> <dt>
 
@@ -182,23 +182,23 @@ Il processo è stato completato normalmente.
 
 <span id="Terminated"></span><span id="terminated"></span><span id="TERMINATED"></span>
 
-<span id="Terminated"></span><span id="terminated"></span><span id="TERMINATED"></span>**Terminata** (8)
+<span id="Terminated"></span><span id="terminated"></span><span id="TERMINATED"></span>**Terminato** (8)
 
 
 </dt> <dd>
 
-Il processo è stato interrotto da una richiesta di modifica dello stato ' terminate '. Il processo e tutti i processi sottostanti sono terminati e possono essere riavviati (specifici del processo) solo come nuovo processo.
+Il processo è stato arrestato da una richiesta di modifica dello stato "Terminate". Il processo e tutti i processi sottostanti vengono terminati e possono essere riavviati (specifici del processo) solo come nuovo processo.
 
 </dd> <dt>
 
 <span id="Killed"></span><span id="killed"></span><span id="KILLED"></span>
 
-<span id="Killed"></span><span id="killed"></span><span id="KILLED"></span>**Terminata (9** )
+<span id="Killed"></span><span id="killed"></span><span id="KILLED"></span>**Killed** (9)
 
 
 </dt> <dd>
 
-Il processo è stato interrotto da una richiesta di modifica dello stato ' Kill '. I processi sottostanti potrebbero essere stati lasciati in esecuzione e la pulizia potrebbe essere necessaria per liberare risorse.
+Il processo è stato arrestato da una richiesta di modifica dello stato "Kill". È possibile che i processi sottostanti siano stati lasciati in esecuzione e che sia necessario eseguire la pulizia per liberare risorse.
 
 </dd> <dt>
 
@@ -209,7 +209,7 @@ Il processo è stato interrotto da una richiesta di modifica dello stato ' Kill 
 
 </dt> <dd>
 
-Il processo è in uno stato anomalo che potrebbe essere indicativo di una condizione di errore. Lo stato effettivo potrebbe essere visualizzato anche se gli oggetti specifici del processo.
+Il processo si trova in uno stato anomalo che potrebbe essere indicativo di una condizione di errore. Lo stato effettivo potrebbe essere visualizzato anche se gli oggetti specifici del processo.
 
 </dd> <dt>
 
@@ -220,7 +220,7 @@ Il processo è in uno stato anomalo che potrebbe essere indicativo di una condiz
 
 </dt> <dd>
 
-Il processo è in uno stato specifico del fornitore che supporta l'individuazione o la risoluzione dei problemi o entrambi
+Il processo si trova in uno stato specifico del fornitore che supporta l'individuazione o la risoluzione dei problemi o entrambi
 
 </dd> <dt>
 
@@ -231,20 +231,20 @@ Il processo è in uno stato specifico del fornitore che supporta l'individuazion
 
 </dt> <dd>
 
-In attesa della risoluzione di una query da un client.
+In attesa che un client risolva una query.
 
 </dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF riservato** (13.. 32767)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DmTF Reserved** (13..32767)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornitore riservato** (32768.. 65535)
+<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -254,19 +254,19 @@ In attesa della risoluzione di una query da un client.
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**obbligatorio**](/windows/desktop/WmiSdk/standard-qualifiers), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Qualificatori: [**obbligatori,**](/windows/desktop/WmiSdk/standard-qualifiers) [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
-Nome descrittivo dell'istanza. Inoltre, è possibile utilizzare il nome descrittivo come proprietà per una ricerca o una query.
+Nome descrittivo dell'istanza. Inoltre, il nome descrittivo può essere usato come proprietà per una ricerca o una query.
 
 > [!Note]  
-> Non è necessario che il nome sia univoco all'interno dello spazio dei nomi.
+> Il nome non deve essere univoco all'interno dello spazio dei nomi .
 
  
 
@@ -275,10 +275,10 @@ Nome descrittivo dell'istanza. Inoltre, è possibile utilizzare il nome descritt
 **TimeBeforeRemoval**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: [ **obbligatorio**](/windows/desktop/WmiSdk/standard-qualifiers)
@@ -291,16 +291,16 @@ Indica per quanto tempo viene mantenuto un processo completato. Il valore predef
 **TimeOfLastStateChange**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Data o ora dell'Ultima modifica apportata allo stato del processo.
+Data o ora dell'ultima modifica dello stato del processo.
 
 > [!Note]  
-> Se lo stato del processo non è stato modificato e questa proprietà è popolata, deve essere impostata su un valore di intervallo zero.
+> Se lo stato del processo non è stato modificato e questa proprietà è popolata, deve essere impostata su un valore di intervallo pari a zero.
 
  
 
@@ -314,8 +314,8 @@ Data o ora dell'Ultima modifica apportata allo stato del processo.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -324,7 +324,7 @@ Data o ora dell'Ultima modifica apportata allo stato del processo.
 
 <dl> <dt>
 
-[**\_Processo CIM**](cim-job.md)
+[**Processo \_ CIM**](cim-job.md)
 </dt> </dl>
 
  

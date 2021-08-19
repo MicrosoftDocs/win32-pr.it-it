@@ -46,7 +46,7 @@ HRESULT RegisterTemplates(
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
 
-Puntatore a un buffer costituito da un file con estensione x in formato testo o binario che contiene modelli.
+Puntatore a un buffer costituito da un file con estensione x in formato testo o binario contenente modelli.
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha
 
 ## <a name="remarks"></a>Commenti
 
-Il frammento di codice seguente fornisce una chiamata di esempio a **RegisterTemplates** E contenuto di esempio per il buffer a cui **punta pvData.**
+Il frammento di codice seguente fornisce una chiamata di esempio **a RegisterTemplates** E contenuto di esempio per il buffer a cui **punta pvData.**
 
 
 ```

@@ -1,5 +1,5 @@
 ---
-description: Il metodo AbortPlayback viene usato per segnalare un errore di streaming. Invia un evento EC ERRORABORT a Filter Graph Manager e invia una notifica \_ downstream di fine flusso.
+description: Il metodo AbortPlayback viene usato per segnalare un errore di streaming. Invia un evento EC ERRORABORT a Filter Graph Manager e invia una notifica di fine \_ flusso a valle.
 ms.assetid: b48ec72f-d220-4b27-98fc-88eaa4f663eb
 title: Metodo CVideoTransformFilter.AbortPlayback (Vtrans.h)
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.locfileid: "117821936"
 ---
 # <a name="cvideotransformfilterabortplayback-method"></a>Metodo CVideoTransformFilter.AbortPlayback
 
-Il `AbortPlayback` metodo viene usato per segnalare un errore di streaming. Invia un [**evento EC \_ ERRORABORT**](ec-errorabort.md) a Filter Graph Manager e invia una notifica di fine flusso a valle.
+Il `AbortPlayback` metodo viene usato per segnalare un errore di streaming. Invia un [**evento \_ EC ERRORABORT**](ec-errorabort.md) a Filter Graph Manager e invia una notifica di fine flusso a valle.
 
 ## <a name="syntax"></a>Sintassi
 

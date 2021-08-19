@@ -1,5 +1,5 @@
 ---
-title: Enumerazione di gruppi (Ad DS)
+title: Enumerazione dei gruppi (Ad DS)
 description: Questa sezione contiene le informazioni seguenti.
 ms.assetid: 92e8a6e9-616a-4d95-a8c8-ed972530a560
 ms.tgt_platform: multiple
@@ -14,7 +14,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118429514"
 ---
-# <a name="enumerating-groups-ad-ds"></a>Enumerazione di gruppi (Ad DS)
+# <a name="enumerating-groups-ad-ds"></a>Enumerazione dei gruppi (Ad DS)
 
 Questa sezione contiene le informazioni seguenti:
 

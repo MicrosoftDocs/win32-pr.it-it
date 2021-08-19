@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentSLVHeaderCorruptedException'
+description: Altre informazioni sul costruttore EsentSLVHeaderCorruptedException
 title: Costruttore EsentSLVHeaderCorruptedException
 TOCTitle: 'EsentSLVHeaderCorruptedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSLVHeaderCorruptedException.#ctor
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fc69694d29a9b198d085773b6efb3053dd0a3308
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62ad707be8e3948c32750c96d94df8f16990f268fb30f9dfe298d2e7bbab63e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118490668"
 ---
 # <a name="esentslvheadercorruptedexception-constructor"></a>Costruttore EsentSLVHeaderCorruptedException
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,4 +58,4 @@ public EsentSLVHeaderCorruptedException()
 
 [Membri di EsentSLVHeaderCorruptedException](./esentslvheadercorruptedexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

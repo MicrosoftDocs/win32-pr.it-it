@@ -13,18 +13,18 @@ ms.locfileid: "117880366"
 ---
 # <a name="configuring-audio-encoding-microsoft-media-foundation"></a>Configurazione della codifica audio (Microsoft Media Foundation)
 
-Il Windows Media Audio encoder enumera tutti i tipi di output supportati nel formato completo. Recuperare il tipo desiderato chiamando **IMediaObject::GetOutputType** o **IMFTransform::GetAvailableOutputType**, quindi impostare il tipo recuperato, non modificato, come tipo di output chiamando **IMediaObject::SetOutputType** o **IMFTransform::SetOutputType**.
+Il Windows media audio enumera tutti i tipi di output supportati nel formato completo. Recuperare il tipo desiderato chiamando **IMediaObject::GetOutputType** o **IMFTransform::GetAvailableOutputType** e quindi impostare il tipo recuperato, non modificato, come tipo di output chiamando **IMediaObject::SetOutputType** o **IMFTransform::SetOutputType**.
 
 I tipi di supporti di output supportati dal codificatore audio cambiano quando vengono configurate le proprietà del codificatore. È necessario configurare tutte le proprietà del codificatore da usare prima di enumerare il tipo di output.
 
-Le modalità a due passi e VBR sono supportate dai codificatori audio, ma sono configurate in modo diverso rispetto al video. Per altre informazioni, vedere [Enumerazione di tipi audio per modalità di codifica specifiche.](enumeratingaudiotypesforspecificencodingmodes.md)
+Le modalità a due passi e VBR sono supportate dai codificatori audio, ma sono configurate in modo diverso rispetto al video. Per altre informazioni, vedere [Enumerazione dei tipi audio per modalità di codifica specifiche.](enumeratingaudiotypesforspecificencodingmodes.md)
 
 I tipi di input supportati dal codificatore audio non sono disponibili fino a quando non si imposta il tipo di output. Se si chiama **IMediaObject::GetInputType** o **IMFTransform::GetInputType** prima di impostare un tipo di output, il metodo restituisce rispettivamente DMO E NO MORE ITEMS o \_ \_ \_ \_ MFT \_ E NO \_ MORE \_ \_ TYPES. Dopo aver impostato il tipo di output, il codificatore enumera i tipi di input supportati per il tipo di output selezionato.
 
-Non viene eseguito alcun ricampionamento audio dal codificatore Windows Media Audio. Ciò significa che il tipo di output del codificatore e il tipo di input del codificatore devono avere lo stesso numero di canali, bit per campione e frequenza di campionamento. Per altre informazioni, vedere [Ricerca di tipi di output del codificatore audio](findingaudioencoderoutputtypes.md).
+Non viene eseguito alcun ricampionamento audio dal Windows Media Audio. Ciò significa che il tipo di output del codificatore e il tipo di input del codificatore devono avere lo stesso numero di canali, bit per campione e frequenza di campionamento. Per altre informazioni, vedere Ricerca [di tipi di output del codificatore audio.](findingaudioencoderoutputtypes.md)
 
 > [!Note]  
->    Ogni tipo di output enumerato dal codificatore audio contiene una struttura **WAVEFORMATEX** (a cui **punta AM MEDIA \_ \_ TYPE.pbFormat**) a cui sono aggiunti dati estesi. Le dimensioni dei dati estesi vengono specificate da **WAVEFORMATEX.cbSize**. Questi dati devono essere conservati con il contenuto codificato in modo che possano essere recapitati al decodificatore. Il contenuto non può essere decompresso senza i dati in formato esteso.
+>    Ogni tipo di output enumerato dal codificatore audio contiene una struttura **WAVEFORMATEX** (a cui punta **AM MEDIA \_ \_ TYPE.pbFormat)** a cui vengono aggiunti dati estesi. Le dimensioni dei dati estesi sono specificate da **WAVEFORMATEX.cbSize.** Questi dati devono essere conservati con il contenuto codificato in modo che possano essere recapitati al decodificatore. Il contenuto non può essere decompresso senza i dati in formato esteso.
 
  
 

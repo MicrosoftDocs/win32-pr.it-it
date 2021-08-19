@@ -1,7 +1,7 @@
 ---
 description: Relazione che indica che due o più dispositivi sono connessi tra loro.
 ms.assetid: 84282740-f60f-46fa-95b7-b52a7e6efcc4
-title: Classe CIM_DeviceConnection (gestione Hyper-V)
+title: CIM_DeviceConnection classe (gestione di Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,14 +17,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: f58c66199abeb5b3586f52e91828b8b194bdbbd1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81ec2826339e27d956750360b280fcafd7b55e6264a6bcab83ebc1cb41a1ddee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308357"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812845"
 ---
-# <a name="cim_deviceconnection-class-hyper-v-management"></a>Classe CIM_DeviceConnection (gestione Hyper-V)
+# <a name="cim_deviceconnection-class-hyper-v-management"></a>CIM_DeviceConnection classe (gestione di Hyper-V)
 
 Relazione che indica che due o più dispositivi sono connessi tra loro.
 
@@ -43,13 +43,13 @@ class CIM_DeviceConnection : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ DeviceConnection** presenta questi tipi di membri:
+La **classe \_ CIM DeviceConnection** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ DeviceConnection** dispone di queste proprietà.
+La **classe \_ CIM DeviceConnection** ha queste proprietà.
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ Tipo di dati: **CIM \_ LogicalDevice**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
 Un dispositivo.
@@ -78,7 +78,7 @@ Tipo di dati: **CIM \_ LogicalDevice**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
 Un secondo dispositivo connesso all'altro dispositivo.
@@ -88,32 +88,32 @@ Un secondo dispositivo connesso all'altro dispositivo.
 **NegotiatedDataWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Associazione porta bus DMTF \| 001,3 "), **punito** (" bit ")
+Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bit"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Bus Port Association \| 001.3"), **PUnit** ("bit")
 </dt> </dl>
 
-Quando sono possibili più larghezze di dati del bus e della connessione, la proprietà NegotiatedDataWidth definisce quella in uso tra i dispositivi. La larghezza dei dati è specificata in bit. Se la larghezza dei dati non è negoziata o se queste informazioni non sono disponibili o non sono importanti per la gestione dei dispositivi, la proprietà deve essere impostata su 0.
+Quando sono possibili diverse larghezze dei dati del bus e della connessione, la proprietà NegotiatedDataWidth definisce quella in uso tra i dispositivi. La larghezza dei dati è specificata in bit. Se la larghezza dei dati non viene negoziata o se queste informazioni non sono disponibili o non sono importanti per La gestione dei dispositivi, la proprietà deve essere impostata su 0.
 
 </dd> <dt>
 
 **NegotiatedSpeed**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("bit al secondo"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Associazione porta bus DMTF \| 001,2 "), **punito** (" bit/secondo ")
+Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bit al secondo"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Bus Port Association \| 001.2"), **PUnit** ("bit/second")
 </dt> </dl>
 
-Quando sono possibili più velocità di connessione e bus, questa proprietà definisce la velocità in uso tra i dispositivi, in bit al secondo. Se le velocità di connessione o di bus non vengono negoziate o se queste informazioni non sono disponibili o non sono importanti per la gestione dei dispositivi, la proprietà deve essere impostata su "0".
+Quando sono possibili diverse velocità di bus e connessione, questa proprietà definisce la velocità in uso tra i dispositivi, in bit al secondo. Se le velocità di connessione o bus non vengono negoziate o se queste informazioni non sono disponibili o non sono importanti per la gestione dei dispositivi, la proprietà deve essere impostata su "0".
 
 </dd> </dl>
 
@@ -125,8 +125,8 @@ Quando sono possibili più velocità di connessione e bus, questa proprietà def
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -135,7 +135,7 @@ Quando sono possibili più velocità di connessione e bus, questa proprietà def
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

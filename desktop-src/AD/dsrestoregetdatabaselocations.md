@@ -26,7 +26,7 @@ ms.locfileid: "118429993"
 ---
 # <a name="dsrestoregetdatabaselocations-function"></a>Funzione DsRestoreGetDatabaseLocations
 
-\[Questa funzione è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. A partire Windows Vista, [usare Servizio Copia Shadow del volume (VSS).](../vss/volume-shadow-copy-service-overview.md)\]
+\[Questa funzione è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. A partire da Windows Vista, [usare Servizio Copia Shadow del volume (VSS).](../vss/volume-shadow-copy-service-overview.md)\]
 
 La **funzione DsRestoreGetDatabaseLocations** ottiene i percorsi in cui copiare i file di backup durante un'operazione di ripristino.
 

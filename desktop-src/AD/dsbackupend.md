@@ -4,7 +4,7 @@ description: Chiamato per terminare un'operazione di backup.
 ms.assetid: 872645bc-3dbe-4b12-af4f-778d54feb18f
 ms.tgt_platform: multiple
 keywords:
-- Funzione DsBackupEnd active Directory
+- Funzione DsBackupEnd in Active Directory
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.locfileid: "118430251"
 ---
 # <a name="dsbackupend-function"></a>Funzione DsBackupEnd
 
-\[Questa funzione è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. A partire da Windows Vista, [usare Servizio Copia Shadow del volume (VSS).](../vss/volume-shadow-copy-service-overview.md)\]
+\[Questa funzione è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. A partire Windows Vista, [usare Servizio Copia Shadow del volume (VSS).](../vss/volume-shadow-copy-service-overview.md)\]
 
 La **funzione DsBackupEnd** viene chiamata per terminare un'operazione di backup.
 
@@ -46,13 +46,13 @@ HRESULT DsBackupEnd(
 *hbc* \[ Pollici\]
 </dt> <dd>
 
-Contiene l'handle del contesto di backup ottenuto con [**la funzione DsBackupPrepare.**](dsbackupprepare.md)
+Contiene l'handle del contesto di backup ottenuto [**con la funzione DsBackupPrepare.**](dsbackupprepare.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **S \_ OK se** la funzione ha esito positivo o un codice di errore Win32 o RPC in caso contrario. Nell'elenco seguente sono elencati altri possibili codici di errore.
+Restituisce **S \_ OK se** la funzione ha esito positivo oppure un codice di errore Win32 o RPC in caso contrario. Nell'elenco seguente sono elencati altri possibili codici di errore.
 
 <dl> <dt>
 

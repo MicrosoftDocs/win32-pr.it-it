@@ -1,6 +1,6 @@
 ---
 title: Funzione TextureCubeArray::GatherCmp(S,float,float,uint)
-description: Per quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce il confronto con un valore di confronto insieme allo stato del mapping dei riquadri. | Funzione TextureCubeArray::GatherCmp(S,float,float,uint)
+description: Per quattro valori texel che verrebbero usati in un'operazione di filtro bi lineare, restituisce il confronto con un valore di confronto insieme allo stato del mapping delle sezioni. | Funzione TextureCubeArray::GatherCmp(S,float,float,uint)
 ms.assetid: 758CD159-58B6-42AE-92B3-5AA3C72FD0F1
 keywords:
 - Funzione GatherCmp HLSL
@@ -22,7 +22,7 @@ ms.locfileid: "118506566"
 ---
 # <a name="texturecubearraygathercmpsfloatfloatuint-function"></a>Funzione TextureCubeArray::GatherCmp(S,float,float,uint)
 
-Per quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce il confronto con un valore di confronto insieme allo stato del mapping dei riquadri.
+Per quattro valori texel che verrebbero usati in un'operazione di filtro bi lineare, restituisce il confronto con un valore di confronto insieme allo stato del mapping delle sezioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ Indice del campionatore in base zero.
 
 </dd> <dt>
 
-*Posizione* \[ Pollici\]
+*Località* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
@@ -74,7 +74,7 @@ Valore da confrontare con ogni valore campionato.
 
 Tipo: **uint**
 
-Stato dell'operazione. Non è possibile accedere direttamente allo stato. passare invece lo stato alla [**funzione intrinseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** restituisce **TRUE se** tutti i valori dell'operazione **Sample**, **Gather** o **Load** corrispondenti hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata.](/windows/desktop/direct3d11/direct3d-11-2-features) Se sono stati presi valori da un riquadro non mappato, **CheckAccessFullyMapped restituisce** **FALSE.**
+Stato dell'operazione. Non è possibile accedere direttamente allo stato. passare invece lo stato alla [**funzione intrinseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** restituisce **TRUE** se tutti i valori dell'operazione **Sample**, **Gather** o **Load** corrispondenti hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata.](/windows/desktop/direct3d11/direct3d-11-2-features) Se sono stati prelevati valori da un riquadro non mappato, **CheckAccessFullyMapped** restituisce **FALSE.**
 
 </dd> </dl>
 
@@ -86,7 +86,7 @@ Valore a quattro componenti il cui tipo è uguale al tipo di modello.
 
 ## <a name="remarks"></a>Commenti
 
-Gli esempi di trama possono essere usati per l'interpolazione bilineare.
+I campioni di trama possono essere usati per l'interpolazione bilineare.
 
 Questa funzione è supportata per i tipi di shader seguenti:
 

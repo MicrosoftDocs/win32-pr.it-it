@@ -8,7 +8,7 @@ keywords:
 - file per le interfaccia, grafica
 - file di grafica per le interfaccia, file di cui è stato push
 - Windows Media Player Interfaccia per dispositivi mobili, file di cui è stato push
-- skins, push di file
+- interfaccia, file di cui è stato push
 - Push di file nelle interfaccia
 ms.topic: article
 ms.date: 05/31/2018

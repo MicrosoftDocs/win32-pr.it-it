@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: aa9ed87f2d484286d91d14c4183d2ce3b6f41cfa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b43d433bf9d2a3967efcc4a2e927d3bf687ebfa5ac67d7c7e34c48c34832c26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117813267"
 ---
 # <a name="geterror-method-of-the-cim_concretejob-class"></a>Metodo GetError della classe CIM \_ ConcreteJob
 
-Recupera un errore a causa di un processo non riuscito. Quando il processo è in esecuzione o è terminato senza errori, questo metodo non restituisce alcuna istanza di [**\_ errore CIM**](cim-error.md) . Tuttavia, se il processo non è riuscito a causa di un problema interno o perché il processo è stato terminato da un client, viene restituita un'istanza di **\_ errore CIM** .
+Recupera un errore a causa di un processo non riuscito. Quando il processo è in esecuzione o è terminato senza errori, questo metodo non restituisce alcuna [**istanza di Errore CIM. \_**](cim-error.md) Tuttavia, se il processo ha avuto esito negativo a causa di un problema interno o perché il processo è stato terminato da un client, viene restituita **un'istanza \_ di errore CIM.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,20 +39,20 @@ uint32 GetError(
 
 <dl> <dt>
 
-*Errore* \[ out\]
+*Errore* \[ Cambio\]
 </dt> <dd>
 
-Restituisce un'istanza di [**\_ errore CIM**](cim-error.md) se il **OperationalStatus** del processo non è "OK"; in caso contrario, restituisce **null**.
+Restituisce [**un'istanza CIM \_ Error**](cim-error.md) se **OperationalStatus** nel processo non è "OK". In caso contrario, restituisce **null.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un errore.
+Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
-**Operazione riuscita** (0)
+**Operazione** riuscita (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -64,7 +64,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 **Timeout** (3)
 </dt> <dt>
 
-**Non riuscito** (4)
+**Operazione non** riuscita (4)
 </dt> <dt>
 
 **Parametro non valido** (5)
@@ -76,7 +76,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 **DMTF riservato** (..)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -86,9 +86,9 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -97,7 +97,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 
 <dl> <dt>
 
-[**\_CONCRETEJOB CIM**](cim-concretejob.md)
+[**CIM \_ ConcreteJob**](cim-concretejob.md)
 </dt> </dl>
 
  

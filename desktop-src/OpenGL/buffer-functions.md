@@ -1,34 +1,34 @@
 ---
 title: Funzioni buffer
-description: Per copiare il contenuto di un buffer fuori schermo in un buffer a schermo, chiamare SwapBuffers.
+description: Per copiare il contenuto di un buffer fuori schermo in un buffer su schermo, chiamare SwapBuffers.
 ms.assetid: 605eba4e-ee38-4e62-adf8-1b7894030cb0
 keywords:
 - Funzioni WGL, buffer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66a93858b8085171a9139bc5ab329e531ddbb699
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 96b03a12cd07b76d1329f51cc982508c707e011701b072a42b099df05327842d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118618597"
 ---
 # <a name="buffer-functions"></a>Funzioni buffer
 
-Per copiare il contenuto di un buffer fuori schermo in un buffer a schermo, chiamare [**SwapBuffers**](/windows/desktop/api/wingdi/nf-wingdi-swapbuffers). La funzione **SwapBuffers** accetta un handle per un contesto di dispositivo. Il formato pixel corrente per il contesto di dispositivo specificato deve includere un buffer nascosto. Per impostazione predefinita, il buffer nascosto è fuori schermo e il buffer anteriore è visualizzato sullo schermo.
+Per copiare il contenuto di un buffer fuori schermo in un buffer su schermo, chiamare [**SwapBuffers**](/windows/desktop/api/wingdi/nf-wingdi-swapbuffers). La **funzione SwapBuffers** accetta un handle per un contesto di dispositivo. Il formato pixel corrente per il contesto di dispositivo specificato deve includere un buffer nascosto. Per impostazione predefinita, il buffer nascosto è fuori schermo e il front buffer è sullo schermo.
 
 > [!Note]  
-> La funzione **SwapBuffers** non scambia effettivamente il contenuto dei due buffer, bensì copia il contenuto di un buffer in un altro. Il contenuto del buffer fuori schermo non è definito dopo una chiamata a **SwapBuffers**. Pertanto, il risultato di due chiamate consecutive a **SwapBuffers** non è definito.
+> La **funzione SwapBuffers** non scambia effettivamente il contenuto dei due buffer, ma copia il contenuto di un buffer in un altro. Il contenuto del buffer fuori schermo non è definito dopo una chiamata a **SwapBuffers**. Di conseguenza, il risultato di due chiamate consecutive a **SwapBuffers** non è definito.
 
  
 
-Nella figura seguente viene illustrato il modo in cui il contenuto dei buffer viene copiato quando si chiama **SwapBuffers**.
+La figura seguente mostra come viene copiato il contenuto dei buffer quando si **chiama SwapBuffers**.
 
-![Diagramma che mostra i risultati non definiti di chiamate consecutive alla funzione SwapBuffers.](images/opengl00.png)
+![Diagramma che mostra i risultati non definiti delle chiamate consecutive alla funzione SwapBuffers.](images/opengl00.png)
 
-Diverse funzioni di base di OpenGL gestiscono anche i buffer. La funzione [**glDrawBuffer**](gldrawbuffer.md) è l'unica più rilevante per il doppio buffer; Specifica il framebuffer o i buffer in cui viene disegnato OpenGL.
+Anche diverse funzioni di base OpenGL gestiscono i buffer. La [**funzione glDrawBuffer**](gldrawbuffer.md) è quella più rilevante per il doppio buffering. specifica il framebuffer o i buffer in cui OpenGL disegna.
 
-Anche le funzioni seguenti influiscono sui buffer:
+Le funzioni seguenti influiscono anche sui buffer:
 
 -   [**glReadBuffer**](glreadbuffer.md)
 -   [**glReadPixels**](glreadpixels.md)

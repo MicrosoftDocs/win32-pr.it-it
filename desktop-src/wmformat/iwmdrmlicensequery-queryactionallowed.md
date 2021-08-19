@@ -77,11 +77,11 @@ Matrice di uno o più diritti per cui eseguire una query. Questa matrice deve co
 
 | Costante                                         | Descrizione                                                                      |
 |--------------------------------------------------|----------------------------------------------------------------------------------|
-| g \_ wszWMDRM \_ ActionAllowed \_ Playback             | Includere per eseguire una query per il diritto di riprodurre il contenuto.                              |
-| g \_ wszWMDRM \_ ActionAllowed \_ Copy                 | Includi per eseguire una query per ottenere il diritto di copiare il contenuto in dispositivi o supporti esterni. |
-| g \_ wszWMDRM \_ ActionAllowed \_ PlaylistAllowed         | Includi per eseguire una query per ottenere il diritto di copiare il contenuto in CD come parte di una playlist.  |
-| g \_ wszWMDRM \_ ActionAllowed \_ CreateThumbnailImage | Includi per eseguire una query per ottenere il diritto di creare un'immagine di anteprima dal contenuto.     |
-| g \_ wszWMDRM \_ ActionAllowed \_ CopyToCD             | Includi per eseguire una query per ottenere il diritto di copiare il contenuto in CD.                        |
+| g \_ wszWMDRM \_ ActionAllowed \_ Playback             | Includere per eseguire una query per ottenere il diritto di riprodurre il contenuto.                              |
+| g \_ wszWMDRM \_ ActionAllowed \_ Copy                 | Includere per eseguire una query per ottenere il diritto di copiare il contenuto in dispositivi o supporti esterni. |
+| g \_ wszWMDRM \_ ActionAllowed \_ Playlist         | Includere per eseguire una query per ottenere il diritto di copiare il contenuto in CD come parte di una playlist.  |
+| g \_ wszWMDRM \_ ActionAllowed \_ CreateThumbnailImage | Includere per eseguire una query per ottenere il diritto di creare un'immagine di anteprima dal contenuto.     |
+| g \_ wszWMDRM \_ ActionAllowed \_ CopyToCD             | Includere per eseguire una query per ottenere il diritto di copiare il contenuto in CD.                        |
 
 
 
@@ -92,13 +92,13 @@ Matrice di uno o più diritti per cui eseguire una query. Questa matrice deve co
 *rgdwQueryResult \[ \]* \[out\]
 </dt> <dd>
 
-Matrice di una o più variabili DWORD che ricevono i risultati della query per i diritti specificati da *rgbstrActionsToQuery.* Se è consentita un'azione, l'elemento corrispondente viene impostato su zero. Se un'azione non è consentita, l'elemento viene impostato su uno o più valori dell'enumerazione [**DRM \_ ACTION ALLOWED QUERY \_ \_ \_ RESULTS**](drm-action-allowed-query-results.md) combinata tramite l'operazione OR bit per bit. Questa matrice deve contenere il numero di elementi specificato da *cActionsToQuery*.
+Matrice di una o più variabili DWORD che ricevono i risultati della query per i diritti specificati da *rgbstrActionsToQuery*. Se è consentita un'azione, l'elemento corrispondente viene impostato su zero. Se un'azione non è consentita, l'elemento viene impostato su uno o più valori dell'enumerazione [**DRM \_ ACTION ALLOWED QUERY \_ \_ \_ RESULTS**](drm-action-allowed-query-results.md) combinata tramite l'operazione OR bit per bit. Questa matrice deve contenere il numero di elementi specificato da *cActionsToQuery*.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
@@ -112,7 +112,7 @@ Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Durante l'esecuzione di query per i diritti di riproduzione e copia, si otterrà un risultato più accurato impostando prima i parametri ambientali. Usare il [**metodo SetActionAllowedQueryParams**](iwmdrmlicensequery-setactionallowedqueryparams.md) per impostare i parametri ambientali. I risultati delle query per il diritto di masterizzazione non sono interessati dai parametri ambientali. È possibile usare in modo sicuro le impostazioni predefinite.
+Quando si esegue una query per i diritti di riproduzione e copia, si otterrà risultati più accurati impostando prima i parametri ambientali. Usare il [**metodo SetActionAllowedQueryParams**](iwmdrmlicensequery-setactionallowedqueryparams.md) per impostare i parametri ambientali. I risultati delle query per il diritto di masterizzazione non sono interessati dai parametri ambientali. è possibile usare in modo sicuro le impostazioni predefinite.
 
 I risultati restituiti dal **metodo QueryActionAllowed** vengono aggregati da zero o più licenze nell'archivio licenze locale. Il metodo potrebbe non cercare tutte le licenze che si applicano all'ID chiave se rileva un risultato abilitato.
 
@@ -134,7 +134,7 @@ I risultati restituiti dal **metodo QueryActionAllowed** vengono aggregati da ze
 [**Interfaccia IWMDRMLicenseQuery**](iwmdrmlicensequery.md)
 </dt> <dt>
 
-[**Esecuzione di query per informazioni semplici sui diritti**](querying-for-simple-rights-information.md)
+[**Esecuzione di query per informazioni sui diritti semplici**](querying-for-simple-rights-information.md)
 </dt> </dl>
 
  

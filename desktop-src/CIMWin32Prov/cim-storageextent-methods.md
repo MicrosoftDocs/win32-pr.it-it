@@ -12,12 +12,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118420959"
 ---
-# <a name="cim_storageextent-methods"></a>Metodi di \_ archiviazione CIMExtent
+# <a name="cim_storageextent-methods"></a>Metodi \_ di estendibilità dell'archiviazione CIM
 
 La [**classe CIM \_ StorageExtent**](cim-storageextent.md) espone i metodi seguenti.
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

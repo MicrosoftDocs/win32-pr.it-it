@@ -33,7 +33,7 @@ Chiamare se diverso da zero. Esegue una chiamata condizionale all'istruzione con
 
 Dove:
 
--   l \# è [un'etichetta , che](label---ps.md) contrassegna l'inizio della subroutine da chiamare.
+-   l \# è [un'etichetta: ps](label---ps.md) contrassegna l'inizio della subroutine da chiamare.
 -   \[!\] è un modificatore di negazione facoltativo.
 -   b \# identifica un registro [booleano costante.](dx9-graphics-reference-asm-ps-registers-constant-boolean.md)
 
@@ -41,7 +41,7 @@ Dove:
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
+| Versioni dei pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | callnz bool           |      |      |      |      |      | x    | x     | x    | x     |
 

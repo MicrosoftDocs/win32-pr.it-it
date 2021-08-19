@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: f67acc6389ce809c1aa5f4987d9502735fe61e49
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9818772163d5286d764c0f025b955a663457dd853c2db0efec8ad0b0a4967c5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118524613"
 ---
 # <a name="d3dxquaternion-structure-d3dx9mathh"></a>Struttura D3DXQUATERNION (D3dx9math.h)
 
@@ -64,7 +64,7 @@ Componente y.
 
 </dd> <dt>
 
-**Z**
+**z**
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -88,7 +88,7 @@ Componente w.
 
 ## <a name="remarks"></a>Commenti
 
-I quaternioni aggiungono un quarto elemento ai valori x, y, z che definiscono un vettore, con conseguente vettori \[ \] 4D arbitrari. Tuttavia, l'esempio seguente illustra come ogni elemento di un quaternione di unità è correlato a una rotazione asse-angolo (dove q rappresenta un quaternione unità (x, y, z, w), l'asse viene normalizzato e theta è la rotazione CCW desiderata intorno all'asse:
+I quaternioni aggiungono un quarto elemento ai valori x, y, z che definiscono un vettore, con conseguente vettori \[ \] 4D arbitrari. Tuttavia, l'esempio seguente illustra come ogni elemento di un quaternione di unità si riferisce a una rotazione asse-angolo (dove q rappresenta un quaternione unità (x, y, z, w), l'asse viene normalizzato e theta è la rotazione CCW desiderata intorno all'asse:
 
 
 ```

@@ -49,7 +49,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Informazioni di riferimento su attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

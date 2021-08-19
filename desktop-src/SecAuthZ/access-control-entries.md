@@ -24,13 +24,13 @@ Tutti i tipi di ACE contengono le informazioni di controllo di accesso seguenti:
 -   Flag che indica il tipo di ACE.
 -   Set di flag di bit che determinano se i contenitori o gli oggetti figlio possono ereditare la ACE dall'oggetto primario a cui è collegato l'elenco di controllo di accesso.
 
-Nella tabella seguente sono elencati i tre tipi di ACE supportati da tutti gli oggetti a protezione diretta.
+Nella tabella seguente sono elencati i tre tipi ACE supportati da tutti gli oggetti a protezione diretta.
 
 
 
 | Tipo               | Descrizione                                                                                                                                                                                                                                      |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ACE negata dall'accesso  | Utilizzato in un [*elenco di controllo di accesso*](/windows/desktop/SecGloss/d-gly) discrezionale (DACL) per negare i diritti di accesso a un fiduciare.                                       |
+| ACE negata dall'accesso  | Usato in un [*elenco di controllo di accesso*](/windows/desktop/SecGloss/d-gly) discrezionale (DACL) per negare i diritti di accesso a un fiduciare.                                       |
 | ACE consentita per l'accesso | Usato in un elenco DACL per consentire i diritti di accesso a un fiduciare.                                                                                                                                                                                              |
 | ACE di controllo di sistema   | Utilizzato in un [*elenco di controllo*](/windows/desktop/SecGloss/s-gly) di accesso di sistema (SACL) per generare un record di controllo quando il fiduciare tenta di esercitare i diritti di accesso specificati. |
 

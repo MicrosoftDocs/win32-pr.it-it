@@ -18,7 +18,7 @@ ms.locfileid: "117821129"
 
  
 
-La `DVDAdm.DisableScreenSaver` proprietà attiva o disattiva screen saver sistema.
+La `DVDAdm.DisableScreenSaver` proprietà attiva o disattiva la screen saver sistema.
 
 ``` syntax
 [ bDisabled = ] DVD.DVDAdm.DisableScreenSaver
@@ -26,11 +26,11 @@ La `DVDAdm.DisableScreenSaver` proprietà attiva o disattiva screen saver sistem
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore booleano che indica se le impostazioni screen saver del sistema sono disabilitate per l'applicazione lettore DVD. true indica che le impostazioni sono disabilitate.
+Restituisce un valore booleano che indica se le impostazioni screen saver sistema sono disabilitate per l'applicazione lettore DVD. true indica che le impostazioni sono disabilitate.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è di lettura/scrittura con il valore predefinito true. Quando si visualizza un DVD-Video, un utente in genere non usa il mouse o la tastiera per lunghi periodi di tempo. Il controllo ActiveX® MSWebDVD disabilita quindi l'screen saver di sistema per impostazione predefinita. Oggetto
+Questa proprietà è di lettura/scrittura con il valore predefinito true. Quando si visualizza un DVD-Video, un utente in genere non usa il mouse o la tastiera per lunghi periodi di tempo. Il controllo ActiveX® MSWebDVD disabilita quindi il screen saver di sistema per impostazione predefinita. Oggetto
 
 ## <a name="see-also"></a>Vedi anche
 

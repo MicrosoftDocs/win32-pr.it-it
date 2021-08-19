@@ -1,12 +1,12 @@
 ---
-title: Metodo AddLSToSpecifiedLicenseServerList della classe Win32_TerminalServiceSetting
-description: Aggiunge il server licenze specificato alla fine dell'elenco dei server licenze specificati.
+title: Metodo AddLSToSpecifiedLicenseServerList della Win32_TerminalServiceSetting classe
+description: Aggiunge il server licenze specificato alla fine dell'elenco di server licenze specificati.
 ms.assetid: 2aebe7c0-5ec2-4c2d-9887-7ecd2d6ec02a
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo AddLSToSpecifiedLicenseServerList
-- Metodo AddLSToSpecifiedLicenseServerList Servizi Desktop remoto, classe Win32_TerminalServiceSetting
-- Classe Win32_TerminalServiceSetting Servizi Desktop remoto, metodo AddLSToSpecifiedLicenseServerList
+- Metodo AddLSToSpecifiedLicenseServerList Servizi Desktop remoto
+- Metodo AddLSToSpecifiedLicenseServerList Servizi Desktop remoto , Win32_TerminalServiceSetting classe
+- Win32_TerminalServiceSetting classe Servizi Desktop remoto , metodo AddLSToSpecifiedLicenseServerList
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c53a5279523405b760addabb03e381507775e6a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8c747233cdb04bdacd78f7c799196262ecc9d2e5f3088d84db2837f21df8c06b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118856558"
 ---
-# <a name="addlstospecifiedlicenseserverlist-method-of-the-win32_terminalservicesetting-class"></a>Metodo AddLSToSpecifiedLicenseServerList della \_ classe TerminalServiceSetting Win32
+# <a name="addlstospecifiedlicenseserverlist-method-of-the-win32_terminalservicesetting-class"></a>Metodo AddLSToSpecifiedLicenseServerList della classe TerminalServiceSetting Win32 \_
 
-Aggiunge il server licenze specificato alla fine dell'elenco dei server licenze specificati.
+Aggiunge il server licenze specificato alla fine dell'elenco di server licenze specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ uint32 AddLSToSpecifiedLicenseServerList(
 
 <dl> <dt>
 
-*LicenseServerName* \[ in\]
+*LicenseServerName* \[ Pollici\]
 </dt> <dd>
 
 Nome del server licenze da aggiungere.
@@ -52,7 +52,7 @@ Nome del server licenze da aggiungere.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Per un elenco di questi valori, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) .
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI. Fare riferimento [Servizi Desktop remoto di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) per un elenco di questi valori.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,7 +63,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                       |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -72,7 +72,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_TerminalServiceSetting Win32**](win32-terminalservicesetting.md)
+[**\_Terminale Win32ServiceSetting**](win32-terminalservicesetting.md)
 </dt> <dt>
 
 [**EmptySpecifiedLicenseServerList**](emptyspecifiedlicenseserverlist-win32-terminalservicesetting.md)

@@ -1,7 +1,7 @@
 ---
-description: Una superclasse per i dispositivi diversi correlati al controllo che forniscono un'interfaccia master bus classica.
+description: Una superclasse per vari dispositivi correlati al controllo che forniscono un'interfaccia master bus classica.
 ms.assetid: eaa8711b-11e9-4f69-b81e-49a3c8a99fa7
-title: Classe CIM_Controller (gestione Hyper-V)
+title: CIM_Controller classe (gestione di Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 139d9c9b8a9ac1b28253551f7d37510f4a1bd53b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b0637642de48b6605a9f56e6d7111482af59f5e0361816953f10b1f91e94ad90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117813108"
 ---
-# <a name="cim_controller-class-hyper-v-management"></a>Classe CIM_Controller (gestione Hyper-V)
+# <a name="cim_controller-class-hyper-v-management"></a>CIM_Controller classe (gestione di Hyper-V)
 
-Una superclasse per i dispositivi diversi correlati al controllo che forniscono un'interfaccia master bus classica. La classe controller è un'astrazione per i dispositivi con un singolo stack di protocolli ed esiste per controllare le comunicazioni (dati, controllo e reimpostazione) ai dispositivi downstream.
+Una superclasse per vari dispositivi correlati al controllo che forniscono un'interfaccia master bus classica. La classe controller è un'astrazione per i dispositivi con un singolo stack di protocolli ed esiste per controllare le comunicazioni (dati, controllo e reimpostazione) ai dispositivi downstream.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,58 +43,58 @@ class CIM_Controller : CIM_LogicalDevice
 
 ## <a name="members"></a>Members
 
-La classe del **\_ controller CIM** presenta questi tipi di membri:
+La **classe \_ controller CIM** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe del **\_ controller CIM** dispone di queste proprietà.
+La **classe \_ controller CIM** ha queste proprietà.
 
 <dl> <dt>
 
 **MaxNumberControlled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Porta bus DMTF \| 004,9 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Bus Port \| 004.9")
 </dt> </dl>
 
-Il numero massimo di dispositivi supportati che possono essere gestiti dal controller. Il valore "0" indica che il numero è sconosciuto o illimitato.
+Numero massimo di dispositivi supportati che possono essere gestiti dal controller. Un valore "0" indica che il numero è sconosciuto o illimitato.
 
 </dd> <dt>
 
 **ProtocolDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Porta bus DMTF \| 004,3 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ controller CIM**.**ProtocolSupported**")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Bus Port \| 004.3"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Controller**.**ProtocolSupported**")
 </dt> </dl>
 
-Stringa in formato libero che fornisce ulteriori informazioni correlate al protocollo supportato dal controller.
+Stringa in formato libero che fornisce altre informazioni correlate al protocollo supportato dal controller.
 
 </dd> <dt>
 
-**ProtocolSupported**
+**Protocollo supportato**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Porta bus DMTF \| 004,2 "," MIF. \|Dischi DMTF \| 003,3 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ controller CIM**.**ProtocolDescription**")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Bus Port \| 004.2", "MIF. DMTF \| Disks \| 003.3"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ Controller**.**ProtocolDescription**")
 </dt> </dl>
 
 Protocollo usato dal controller per accedere ai dispositivi controllati.
@@ -166,28 +166,28 @@ Protocollo usato dal controller per accedere ai dispositivi controllati.
 
 <span id="SCSI_Fibre_Channel_Protocol"></span><span id="scsi_fibre_channel_protocol"></span><span id="SCSI_FIBRE_CHANNEL_PROTOCOL"></span>
 
-**Protocollo di Fibre Channel SCSI** (10)
+**SCSI Fibre Channel Protocol** (10)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SCSI_Serial_Bus_Protocol"></span><span id="scsi_serial_bus_protocol"></span><span id="SCSI_SERIAL_BUS_PROTOCOL"></span>
 
-**Protocollo bus seriale SCSI** (11)
+**ScSI Serial Bus Protocol** (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SCSI_Serial_Bus_Protocol-2__1394_"></span><span id="scsi_serial_bus_protocol-2__1394_"></span><span id="SCSI_SERIAL_BUS_PROTOCOL-2__1394_"></span>
 
-**Protocollo bus seriale SCSI-2 (1394)** (12)
+**SCSI Serial Bus Protocol-2 (1394)** (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SCSI_Serial_Storage_Architecture"></span><span id="scsi_serial_storage_architecture"></span><span id="SCSI_SERIAL_STORAGE_ARCHITECTURE"></span>
 
-**Architettura di archiviazione seriale SCSI** (13)
+**Architettura seriale Archiviazione SCSI** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -208,7 +208,7 @@ Protocollo usato dal controller per accedere ai dispositivi controllati.
 
 <span id="Universal_Serial_Bus"></span><span id="universal_serial_bus"></span><span id="UNIVERSAL_SERIAL_BUS"></span>
 
-**Bus seriale universale** (16)
+**Universal Serial Bus** (16)
 
 
 </dt> <dd></dd> <dt>
@@ -243,7 +243,7 @@ Protocollo usato dal controller per accedere ai dispositivi controllati.
 
 <span id="Power"></span><span id="power"></span><span id="POWER"></span>
 
-**Potenza** (21)
+**Alimentazione** (21)
 
 
 </dt> <dd></dd> <dt>
@@ -292,49 +292,49 @@ Protocollo usato dal controller per accedere ai dispositivi controllati.
 
 <span id="IEEE_802.3_10BASE5"></span><span id="ieee_802.3_10base5"></span>
 
-**IEEE 802,3 10Base5** (28)
+**IEEE 802.3 10BASE5** (28)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_802.3_10BASE2"></span><span id="ieee_802.3_10base2"></span>
 
-**IEEE 802,3 10Base2** (29)
+**IEEE 802.3 10BASE2** (29)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_802.3_1BASE5"></span><span id="ieee_802.3_1base5"></span>
 
-**IEEE 802,3 1Base5** (30)
+**IEEE 802.3 1BASE5** (30)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_802.3_10BROAD36"></span><span id="ieee_802.3_10broad36"></span>
 
-**IEEE 802,3 10BROAD36** (31)
+**IEEE 802.3 10BROAD36** (31)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_802.3_100BASEVG"></span><span id="ieee_802.3_100basevg"></span>
 
-**IEEE 802,3 100BASEVG** (32)
+**IEEE 802.3 100BASEVG** (32)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_802.5_Token-Ring"></span><span id="ieee_802.5_token-ring"></span><span id="IEEE_802.5_TOKEN-RING"></span>
 
-**Token-ring IEEE 802,5** (33)
+**Token ring IEEE 802.5** (33)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ANSI_X3T9.5_FDDI"></span><span id="ansi_x3t9.5_fddi"></span>
 
-**ANSI X3T 9.5 FDDI** (34)
+**ANSI X3T9.5 FDDI** (34)
 
 
 </dt> <dd></dd> <dt>
@@ -362,7 +362,7 @@ Protocollo usato dal controller per accedere ai dispositivi controllati.
 
 <span id="CMD"></span><span id="cmd"></span>
 
-**Cmd** (38)
+**CMD** (38)
 
 
 </dt> <dd></dd> <dt>
@@ -404,21 +404,21 @@ Protocollo usato dal controller per accedere ai dispositivi controllati.
 
 <span id="TWIRP__two-way_infrared_"></span><span id="twirp__two-way_infrared_"></span><span id="TWIRP__TWO-WAY_INFRARED_"></span>
 
-**TWIRP (infrarossi bidirezionali)** (44)
+**TWIRP (a indossi bidirevi)** (44)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FIR__fast_infrared_"></span><span id="fir__fast_infrared_"></span><span id="FIR__FAST_INFRARED_"></span>
 
-**FIR (infrarossi veloci)** (45)
+**FIR (veloce a scheletro)** (45)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SIR__serial_infrared_"></span><span id="sir__serial_infrared_"></span><span id="SIR__SERIAL_INFRARED_"></span>
 
-**Sir (Serial Infrared)** (46)
+**LEORE (seriale a hos)** (46)
 
 
 </dt> <dd></dd> <dt>
@@ -432,7 +432,7 @@ Protocollo usato dal controller per accedere ai dispositivi controllati.
 
 <span id="Serial_ATA"></span><span id="serial_ata"></span><span id="SERIAL_ATA"></span>
 
-**ATA seriale** (48)
+**Serial ATA** (48)
 
 
 </dt> <dd></dd> </dl>
@@ -442,13 +442,13 @@ Protocollo usato dal controller per accedere ai dispositivi controllati.
 **TimeOfLastReset**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ultima volta in cui il controller è stato reimpostato.
+Ora dell'ultima reimpostazione del controller.
 
 </dd> </dl>
 
@@ -460,8 +460,8 @@ Ultima volta in cui il controller è stato reimpostato.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -470,7 +470,7 @@ Ultima volta in cui il controller è stato reimpostato.
 
 <dl> <dt>
 
-[**\_LOGICALDEVICE CIM**](cim-logicaldevice.md)
+[**CIM \_ LogicalDevice**](cim-logicaldevice.md)
 </dt> </dl>
 
  

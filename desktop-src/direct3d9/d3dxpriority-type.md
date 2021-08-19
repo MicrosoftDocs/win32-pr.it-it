@@ -44,21 +44,21 @@ typedef enum D3DXPRIORITY_TYPE {
 <span id="D3DXPRIORITY_LOW"></span><span id="d3dxpriority_low"></span>**D3DXPRIORITY \_ LOW**
 </dt> <dd>
 
-La traccia deve essere confusa con tutte le tracce con priorità bassa prima che la combinazione con priorità bassa venga mixata con la combinazione con priorità alta.
+Il tracciato deve essere misto con tutte le tracce con priorità bassa prima che la combinazione con priorità bassa venga mista alla combinazione con priorità alta.
 
 </dd> <dt>
 
 <span id="D3DXPRIORITY_HIGH"></span><span id="d3dxpriority_high"></span>**D3DXPRIORITY \_ HIGH**
 </dt> <dd>
 
-La traccia deve essere confusa con tutte le tracce con priorità alta prima che la combinazione con priorità alta venga mista alla combinazione con la combinazione con priorità bassa.
+Le tracce devono essere combinate con tutte le tracce con priorità alta prima che la combinazione con priorità alta venga mista con la combinazione con priorità bassa.
 
 </dd> <dt>
 
 <span id="D3DXPRIORITY_FORCE_DWORD"></span><span id="d3dxpriority_force_dword"></span>**D3DXPRIORITY \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbe a questa enumerazione di compilare a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbero la compilazione di questa enumerazione a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 

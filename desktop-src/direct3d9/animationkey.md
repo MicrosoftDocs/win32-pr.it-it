@@ -4,12 +4,12 @@ ms.assetid: bf007541-7fea-423e-910b-fa5f45271608
 title: AnimationKey
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05728f124ae01962a1291547f8fe8b7fcebd175a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: bad23a6cc519b0b0525cd0dac1b488184b3bf91e99359e252f44dca435ace529
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118806406"
 ---
 # <a name="animationkey"></a>AnimationKey
 
@@ -27,9 +27,9 @@ template AnimationKey
 
 Dove:
 
--   Tipo di chiave-specifica se le chiavi sono rotazione, scala, posizione o chiavi della matrice (usando rispettivamente i numeri interi 0, 1, 2 o 3).
--   nKeys: numero di chiavi.
--   chiavi: matrice di chiavi. Vedere [**TimedFloatKeys**](timedfloatkeys.md).
+-   keyType: specifica se le chiavi sono chiavi di rotazione, scala, posizione o matrice (usando rispettivamente i numeri interi 0, 1, 2 o 3).
+-   nKeys : numero di chiavi.
+-   keys: matrice di chiavi. Vedere [**TimedFloatKeys**](timedfloatkeys.md).
 
 ## <a name="see-also"></a>Vedi anche
 

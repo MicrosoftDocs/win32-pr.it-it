@@ -13,7 +13,7 @@ ms.locfileid: "117881574"
 ---
 # <a name="mobile-broadband-profile-schema-v3"></a>Schema del profilo Mobile Broadband v3
 
-Lo Windows 8 Schema profilo Mobile Broadband v3 è disponibile nello spazio dei nomi `https://www.microsoft.com/networking/WWAN/profile/v3` .
+Lo schema Windows 8Mobile Broadband Profile Schema v3 è disponibile nello spazio dei nomi `https://www.microsoft.com/networking/WWAN/profile/v3` .
 
 -   [Elementi dello schema del profilo Mobile Broadband v3](mobile-broadband-profile-schema-v3-elements.md)
 

@@ -59,13 +59,13 @@ Puntatore **PROPERTYKEY facoltativo** che recupera la chiave dell'elemento speci
 *pValue* \[ in, out\]
 </dt> <dd>
 
-Valore **PROPVARIANT facoltativo** che recupera il valore dell'elemento specificato. Il chiamante deve liberare la memoria chiamando **PropVariantClear** al termine dell'operazione.
+Valore **PROPVARIANT facoltativo** che recupera il valore dell'elemento specificato. Al termine, il chiamante deve liberare la memoria chiamando **PropVariantClear.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
@@ -80,7 +80,7 @@ Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono 
 
 ## <a name="remarks"></a>Commenti
 
-Se una proprietà indica un valore di tipo VT UNKNOWN, la proprietà sarà uno dei dispositivi portabili \_ Windows ([**IPortableDeviceKeyCollection**](iportabledevicekeycollection.md), [**IPortableDeviceValuesCollection**](iportabledevicevaluescollection.md), [**IPortableDeviceValues o**](iportabledevicevalues.md) [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md)). Nessun'altra interfaccia può essere restituita Windows dispositivi portatili.
+Se una proprietà indica un valore di tipo VT UNKNOWN, la proprietà sarà uno dei dispositivi portabili \_ Windows ([**IPortableDeviceKeyCollection**](iportabledevicekeycollection.md), [**IPortableDeviceValuesCollection**](iportabledevicevaluescollection.md), [**IPortableDeviceValues**](iportabledevicevalues.md) o [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md)). Nessun'altra interfaccia può essere restituita Windows dispositivi portatili.
 
 ## <a name="requirements"></a>Requisiti
 

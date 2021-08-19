@@ -48,7 +48,7 @@ Se si dispone di contenuto multimediale crittografato con un sistema di protezio
 
 <dl> <dt>
 
-[**Controllo della revoca del certificato**](checking-certificate-revocation.md)
+[**Controllo della revoca dei certificati**](checking-certificate-revocation.md)
 </dt> <dt>
 
 [**Creazione di una licenza XMR**](building-an-xmr-license.md)

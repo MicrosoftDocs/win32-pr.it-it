@@ -81,7 +81,7 @@ Trasformazione facoltativa applicata ai glifi e alle relative posizioni. Questa 
 
 Tipo: **BOOL**
 
-Se impostato su **FALSE,** le metriche sono le stesse delle metriche del testo con alias GDI. Se impostato su **TRUE,** le metriche sono le stesse del testo misurato da GDI usando un tipo di carattere creato con **CLEARTYPE \_ NATURAL \_ QUALITY**.
+Se impostato su **FALSE,** le metriche sono le stesse delle metriche del testo con alias GDI. Se impostato su **TRUE,** le metriche sono le stesse del testo misurato da GDI usando un tipo di carattere creato con **CLEARTYPE \_ NATURAL \_ QUALITY.**
 
 </dd> <dt>
 
@@ -125,7 +125,7 @@ Valore BOOL che indica se il tipo di carattere viene usato in un'esecuzione late
 
 Tipo: **HRESULT**
 
-Codice **di errore HRESULT** standard. Se uno degli indici del glifo di input non rientra nell'intervallo di indice del glifo valido per il carattere corrente, verrà restituito **E \_ INVALIDARG.**
+Codice **di errore HRESULT** standard. Se uno degli indici del glifo di input non è compreso nell'intervallo di indici del glifo valido per il carattere corrente, verrà restituito **E \_ INVALIDARG.**
 
 ## <a name="requirements"></a>Requisiti
 

@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118474051"
 ---
-# <a name="mf_sd_protected-attribute"></a>Attributo MF \_ SD \_ PROTECTED
+# <a name="mf_sd_protected-attribute"></a>Attributo \_ MF SD \_ PROTECTED
 
 Indica se un flusso contiene contenuto protetto.
 
@@ -54,8 +54,8 @@ BOOL StreamHasProtectedContent(IMFStreamDescriptor *pSD)
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows App desktop vista \[ \| app UWP\]<br/>                              |
-| Server minimo supportato<br/> | Windows App desktop di Server 2008 \[ \| app UWP\]<br/>                        |
+| Client minimo supportato<br/> | Windows App desktop Di Vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 \[ \|\]<br/>                        |
 | Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
@@ -64,7 +64,7 @@ BOOL StreamHasProtectedContent(IMFStreamDescriptor *pSD)
 
 <dl> <dt>
 
-[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)

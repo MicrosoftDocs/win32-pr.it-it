@@ -1,29 +1,29 @@
 ---
 title: AsyncStreamingTcpClientExample
-description: Questo esempio mostra un client TCP che invia messaggi unidirezionali in modalità di flusso asincrono.
+description: In questo esempio viene illustrato un client TCP che invia messaggi unidireivi in modalità di streaming asincrono.
 ms.assetid: b0040b3d-d830-421a-bbf1-afb0cac47599
 keywords:
-- AsyncStreamingTcpClientExample native-servizi Web
+- AsyncStreamingTcpClientExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a01a5d7c95f5f84d697f6e5f4db10cee67c58195
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b21205c71fc800dbfc08d4d76cdb8b80ac66bb584e205f2c0dea62ec63a5cca5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117841818"
 ---
 # <a name="asyncstreamingtcpclientexample"></a>AsyncStreamingTcpClientExample
 
-Questo esempio mostra un client TCP che invia messaggi unidirezionali in modalità di flusso asincrono.
+In questo esempio viene illustrato un client TCP che invia messaggi unidireivi in modalità di streaming asincrono.
 
--   [AsyncStreamingTcpClient. cpp](#asyncstreamingtcpclientcpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [AsyncStreamingTcpClient.cpp](#asyncstreamingtcpclientcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="asyncstreamingtcpclientcpp"></a>AsyncStreamingTcpClient. cpp
+## <a name="asyncstreamingtcpclientcpp"></a>AsyncStreamingTcpClient.cpp
 
 
 ```C++
@@ -482,7 +482,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -621,9 +621,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: Oggetto Playlist
-description: L'oggetto Playlist consente di organizzare gli elementi multimediali in un elenco per facilitarli usando le proprietà e i metodi seguenti.
+description: L'oggetto Playlist consente di organizzare gli elementi multimediali in un elenco per una facile manipolazione usando le proprietà e i metodi seguenti.
 ms.assetid: c2d2f265-b207-4b82-bb76-aee467f00659
 keywords:
-- Oggetto Playlist Windows Media Player
+- Oggetto playlist Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "118336719"
 ---
 # <a name="playlist-object"></a>Oggetto Playlist
 
-**L'oggetto Playlist** consente di organizzare gli elementi multimediali in un elenco per facilitarli usando le proprietà e i metodi seguenti.
+**L'oggetto Playlist** consente di organizzare gli elementi multimediali in un elenco per una facile manipolazione usando le proprietà e i metodi seguenti.
 
 **L'oggetto Playlist** supporta le proprietà seguenti.
 
@@ -59,14 +59,14 @@ ms.locfileid: "118336719"
 
  
 
-È possibile accedere all'oggetto **Playlist** tramite le proprietà e i metodi seguenti.
+**L'oggetto Playlist** è accessibile tramite le proprietà e i metodi seguenti.
 
 
 
 | Oggetto                                              | Proprietà o metodo                                                                                                                                                                                                                                                                 |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Cdrom](cdrom-object.md)                           | [Playlist](cdrom-playlist.md)                                                                                                                                                                                                                                                     |
-| [MediaCollection](mediacollection-object.md)       | [getAll](mediacollection-getall.md), [getByAlbum](mediacollection-getbyalbum.md), [getByAttribute](mediacollection-getbyattribute.md), [getByAuthor](mediacollection-getbyauthor.md), [getByGenre](mediacollection-getbygenre.md), [getByName](mediacollection-getbyname.md) |
+| [MediaCollection](mediacollection-object.md)       | [getAll,](mediacollection-getall.md) [getByAlbum,](mediacollection-getbyalbum.md) [getByAttribute,](mediacollection-getbyattribute.md) [getByAuthor,](mediacollection-getbyauthor.md) [getByGenre,](mediacollection-getbygenre.md) [getByName](mediacollection-getbyname.md) |
 | [Player](player-object.md)                         | [currentPlaylist](player-currentplaylist.md), [newPlaylist](player-newplaylist.md)                                                                                                                                                                                               |
 | [PlaylistArray](playlistarray-object.md)           | [item](playlistarray-item.md)                                                                                                                                                                                                                                                     |
 | [PlaylistCollection](playlistcollection-object.md) | [newPlaylist](playlistcollection-newplaylist.md)                                                                                                                                                                                                                                  |
@@ -75,7 +75,7 @@ ms.locfileid: "118336719"
 
  
 
-Poiché è il mezzo di accesso più *comune,* player . **currentPlaylist viene** usato a scopo illustrativo nelle sezioni relative alla sintassi di riferimento.
+Poiché è il mezzo di accesso più comune, *player*. **currentPlaylist viene** usato a scopo illustrativo nelle sezioni della sintassi di riferimento.
 
 ## <a name="see-also"></a>Vedi anche
 

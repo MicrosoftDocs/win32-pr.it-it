@@ -20,7 +20,7 @@ Di seguito sono riportate le funzioni della libreria del Registro di sistema off
 | Funzione                                       | Descrizione                                                                                                         |
 |------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | [**ORCloseHive**](orclosehive.md)             | Chiude l'hive del Registro di sistema offline specificato e libera la memoria allocata per l'hive.                                 |
-| [**ORCloseKey**](orclosekey.md)               | Chiude un handle alla chiave del Registro di sistema specificata in un hive del Registro di sistema offline.                                          |
+| [**ORCloseKey**](orclosekey.md)               | Chiude un handle per la chiave del Registro di sistema specificata in un hive del Registro di sistema offline.                                          |
 | [**ORCreateHive**](orcreatehive.md)           | Crea un hive del Registro di sistema offline che contiene una singola chiave radice vuota.                                             |
 | [**ORCreateKey**](orcreatekey.md)             | Crea la chiave del Registro di sistema specificata in un hive del Registro di sistema offline. Se la chiave esiste già, la funzione la apre.   |
 | [**ORDeleteKey**](ordeletekey.md)             | Elimina una sottochiave e i relativi valori da un hive del Registro di sistema offline.                                                      |
@@ -30,8 +30,8 @@ Di seguito sono riportate le funzioni della libreria del Registro di sistema off
 | [**ORGetKeySecurity**](orgetkeysecurity.md)   | Recupera una copia del descrittore di sicurezza che protegge la chiave del Registro di sistema aperta specificata in un hive del Registro di sistema offline. |
 | [**ORGetValue**](orgetvalue.md)               | Recupera il tipo e i dati per il valore del Registro di sistema specificato in un hive del Registro di sistema offline.                           |
 | [**ORGetVersion**](orgetversion.md)           | Recupera la versione della libreria del Registro di sistema offline.                                                              |
-| [**ORGetVirtualFlags**](orgetvirtualflags.md) | Recupera i flag virtuali nella chiave del Registro di sistema aperta specificata in un hive del Registro di sistema offline.                         |
-| [**OROpenHive**](oropenhive.md)               | Carica il file Hive specificato in memoria e convalida l'hive.                                                   |
+| [**ORGetVirtualFlags**](orgetvirtualflags.md) | Recupera i flag virtuali sulla chiave del Registro di sistema aperta specificata in un hive del Registro di sistema offline.                         |
+| [**OROpenHive**](oropenhive.md)               | Carica il file hive specificato in memoria e convalida l'hive.                                                   |
 | [**OROpenKey**](oropenkey.md)                 | Apre la chiave del Registro di sistema specificata in un hive del Registro di sistema offline.                                                       |
 | [**ORQueryInfoKey**](orqueryinfokey.md)       | Recupera informazioni sulla chiave del Registro di sistema specificata in un hive del Registro di sistema offline.                                 |
 | [**ORSaveHive**](orsavehive.md)               | Scrive l'hive del Registro di sistema offline specificato in un file.                                                               |

@@ -1,19 +1,19 @@
 ---
 description: L'interfaccia ICertificationAuthorities espone le proprietà seguenti.
 ms.assetid: 7D462529-7727-4182-B8F0-C12D8C88A1A9
-title: Proprietà di ICertificationAuthorities
+title: Proprietà ICertificationAuthorities
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 19cc2e672dd4c085c36fe1392410e9ee7b8f8339
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 64b6fc91493564dbd08efffcfb70df47586f91472c5f02856ea6db4ecddae644
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117779510"
 ---
-# <a name="icertificationauthorities-properties"></a>Proprietà di ICertificationAuthorities
+# <a name="icertificationauthorities-properties"></a>Proprietà ICertificationAuthorities
 
-L'interfaccia [**ICertificationAuthorities**](/windows/desktop/api/Certenroll/nn-certenroll-icertificationauthorities) espone le proprietà seguenti.
+[**L'interfaccia ICertificationAuthorities**](/windows/desktop/api/Certenroll/nn-certenroll-icertificationauthorities) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

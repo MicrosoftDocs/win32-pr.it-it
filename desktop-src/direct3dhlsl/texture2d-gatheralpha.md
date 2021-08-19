@@ -1,5 +1,5 @@
 ---
-title: Metodi GatherAlpha texture2D::Texture2D
+title: Metodi GatherAlpha Texture2D::Texture2D
 description: Campiota un oggetto Texture2D e restituisce il componente alfa.
 ms.assetid: b67727e4-a876-4ec8-b991-99ee710e4304
 keywords:
@@ -19,7 +19,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118787533"
 ---
-# <a name="texture2dgatheralpha-methods"></a>Metodi texture2D::GatherAlpha
+# <a name="texture2dgatheralpha-methods"></a>Metodi Texture2D::GatherAlpha
 
 Campiota [**un oggetto Texture2D**](sm5-object-texture2d.md) e restituisce il componente alfa.
 
@@ -30,9 +30,9 @@ Campiota [**un oggetto Texture2D**](sm5-object-texture2d.md) e restituisce il co
 | Metodo                                                                                                     | Descrizione                                                                                                                                       |
 |:-----------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**GatherAlpha(S,float,int)**](sm5-object-texture2d-gatheralpha.md)                                        | Restituisce i componenti alfa dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare.<br/>                                 |
-| [**GatherAlpha(S,float,int,uint)**](t2d-gatheralpha-s-float-int-uint-.md)                                  | Restituisce i componenti alfa dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping dei riquadri.<br/> |
-| [**GatherAlpha(S,float,int2,int2,int2,int2,int2)**](t2d-gatheralpha-s-float-int2-int2-int2-int2-.md)            | Restituisce i componenti alfa dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare.<br/>                                 |
-| [**GatherAlpha(S,float,int2,int2,int2,int2,uint)**](t2d-gatheralpha-s-float-int2-int2-int2-int2-uint-.md)  | Restituisce i componenti alfa dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping dei riquadri.<br/> |
+| [**GatherAlpha(S,float,int,uint)**](t2d-gatheralpha-s-float-int-uint-.md)                                  | Restituisce i componenti alfa dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping delle sezioni.<br/> |
+| [**GatherAlpha(S,float,int2,int2,int2,int2)**](t2d-gatheralpha-s-float-int2-int2-int2-int2-.md)            | Restituisce i componenti alfa dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare.<br/>                                 |
+| [**GatherAlpha(S,float,int2,int2,int2,int2,uint)**](t2d-gatheralpha-s-float-int2-int2-int2-int2-uint-.md)  | Restituisce i componenti alfa dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping delle sezioni.<br/> |
 
 
 

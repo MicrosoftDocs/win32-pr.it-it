@@ -1,9 +1,9 @@
 ---
 title: UDM_SETRANGE messaggio (Commctrl.h)
-description: Imposta le posizioni minima e massima (intervallo) per un controllo di tipo up-down.
+description: Imposta le posizioni minima e massima (intervallo) per un controllo up-down.
 ms.assetid: 81875528-86cc-419a-a07c-f4f98baf1462
 keywords:
-- UDM_SETRANGE dei controlli Windows messaggio
+- UDM_SETRANGE dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "118408056"
 ---
 # <a name="udm_setrange-message"></a>Messaggio SETRANGE di UDM \_
 
-Imposta le posizioni minima e massima (intervallo) per un controllo di tipo up-down.
+Imposta le posizioni minima e massima (intervallo) per un controllo up-down.
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,7 +35,7 @@ Imposta le posizioni minima e massima (intervallo) per un controllo di tipo up-d
 *lParam* 
 </dt> <dd>
 
-[**LOWORD è**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) un valore **breve** che specifica la posizione massima per il controllo verso il basso e [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) è un valore **short** che specifica la posizione minima. Nessuna delle due posizioni può essere maggiore del valore UD \_ MAXVAL o minore del valore UD \_ MINVAL. Inoltre, la differenza tra le due posizioni non può superare UD \_ MAXVAL.
+[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) è un **valore breve** che specifica la posizione massima per il controllo verso l'alto e [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) è un valore **breve** che specifica la posizione minima. Nessuna delle due posizioni può essere maggiore del valore UD \_ MAXVAL o minore del valore UD \_ MINVAL. Inoltre, la differenza tra le due posizioni non può superare UD \_ MAXVAL.
 
 </dd> </dl>
 
@@ -45,7 +45,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-La posizione massima può essere minore della posizione minima. Facendo clic sul pulsante freccia in su, la posizione corrente viene spostata più vicina alla posizione massima e facendo clic sul pulsante freccia giù si sposta verso la posizione minima.
+La posizione massima può essere inferiore alla posizione minima. Facendo clic sul pulsante freccia su, la posizione corrente viene spostata più vicina alla posizione massima e facendo clic sul pulsante freccia giù si sposta verso la posizione minima.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,8 +53,8 @@ La posizione massima può essere minore della posizione minima. Facendo clic sul
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

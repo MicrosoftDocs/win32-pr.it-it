@@ -3,7 +3,7 @@ title: Elemento Body (sendEmailType)
 description: Contiene il testo nel corpo del messaggio di posta elettronica.
 ms.assetid: fac6ddd5-6f73-427b-b213-ab946512c87a
 keywords:
-- Utilità di pianificazione elemento Body
+- Elemento body Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4659f2ff03f69b6bba40d9cd16e9b68515cc8889
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a924062b3a382bc8362bdfa45e1477b4e841222bdd1f5ac70fbb8adbc9b070b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301907"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118857964"
 ---
 # <a name="body-sendemailtype-element"></a>Elemento Body (sendEmailType)
 
@@ -30,7 +30,7 @@ Contiene il testo nel corpo del messaggio di posta elettronica.
  />
 ```
 
-L'elemento **Body** è definito dal tipo complesso [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) .
+**L'elemento** Body è definito dal tipo complesso [**sendEmailType.**](taskschedulerschema-sendemailtype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -44,9 +44,9 @@ L'elemento **Body** è definito dal tipo complesso [**sendEmailType**](tasksched
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere [**proprietà Body di IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_body).
+Per lo sviluppo in C++, vedere [**Proprietà Body di IEmailAction.**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_body)
 
-Per lo sviluppo di script, vedere [**EmailAction. Body**](emailaction-body.md).
+Per lo sviluppo di script, [**vedere EmailAction.Body.**](emailaction-body.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Per lo sviluppo di script, vedere [**EmailAction. Body**](emailaction-body.md).
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

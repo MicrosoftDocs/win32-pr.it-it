@@ -1,19 +1,19 @@
 ---
-description: Specifica se la sessione multimediale tenta di modificare la topologia quando il formato di un flusso viene modificato.
+description: Specifica se la sessione multimediale tenta di modificare la topologia quando cambia il formato di un flusso.
 ms.assetid: 8272ded7-9d27-4652-877b-40fc76426ffc
-title: Attributo MF_TOPOLOGY_DYNAMIC_CHANGE_NOT_ALLOWED (Mfidl. h)
+title: MF_TOPOLOGY_DYNAMIC_CHANGE_NOT_ALLOWED attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ade7308c4fadef315fae0828a5c2cb29575b03a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb2e984b45abc55246c9b1ae291c535c7fbb00f01f9405d827b7fe833b57a368
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104484804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117875734"
 ---
-# <a name="mf_topology_dynamic_change_not_allowed-attribute"></a>Attributo per la \_ modifica dinamica della topologia MF \_ \_ \_ non \_ consentito
+# <a name="mf_topology_dynamic_change_not_allowed-attribute"></a>ATTRIBUTO MF TOPOLOGY DYNAMIC CHANGE NOT ALLOWED (MODIFICA DINAMICA DELLA TOPOLOGIA MF \_ \_ NON \_ \_ \_ CONSENTITA)
 
-Specifica se la sessione multimediale tenta di modificare la topologia quando il formato di un flusso viene modificato.
+Specifica se la sessione multimediale tenta di modificare la topologia quando cambia il formato di un flusso.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,23 +21,23 @@ Specifica se la sessione multimediale tenta di modificare la topologia quando il
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Si applica a
 
-[**IMFTopology**](/windows/desktop/api/mfidl/nn-mfidl-imftopology)
+[**Topologia IMFTopology**](/windows/desktop/api/mfidl/nn-mfidl-imftopology)
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo controlla il modo in cui la sessione multimediale risponde se il formato di un flusso cambia durante il flusso.
+Questo attributo controlla la modalità di risposta della sessione multimediale se il formato di un flusso cambia durante lo streaming.
 
-Se il formato viene modificato e l' \_ attributo della modifica dinamica della topologia MF \_ \_ \_ non \_ è consentito è **false**, la sessione multimediale potrebbe inserire nuovi nodi nella topologia in modo che corrispondano al nuovo formato. Se, ad esempio, le dimensioni del video cambiano, la sessione multimediale potrebbe aggiungere una trasformazione Media Foundation (MFT) che ridimensiona il video. In caso contrario, se l'attributo è **true**, la topologia non verrà modificata dalla sessione multimediale.
+Se il formato cambia e l'attributo MF TOPOLOGY DYNAMIC CHANGE NOT ALLOWED è FALSE, la sessione multimediale potrebbe inserire nuovi nodi nella topologia in modo che \_ \_ \_ \_ \_ corrispondano al nuovo formato.  Ad esempio, se le dimensioni del video cambiano, la sessione multimediale potrebbe aggiungere una trasformazione Media Foundation (MFT) che ridimensiona il video. In caso contrario, se l'attributo **è TRUE,** la sessione multimediale non modificherà la topologia.
 
-Il valore predefinito di questo attributo è **false**. Il valore consigliato è **false**.
+Il valore predefinito di questo attributo è **FALSE.** Il valore consigliato è **FALSE.**
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                         |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                            |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                            |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi della topologia](topology-attributes.md)

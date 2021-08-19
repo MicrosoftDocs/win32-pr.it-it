@@ -1,5 +1,5 @@
 ---
-description: Nell'esempio seguente viene creato un descrittore di sicurezza per una nuova chiave del Registro di sistema usando il processo seguente. È possibile usare codice simile per creare un descrittore di sicurezza per altri tipi di oggetto.
+description: Nell'esempio seguente viene creato un descrittore di sicurezza per una nuova chiave del Registro di sistema usando il processo seguente. Codice simile può essere usato per creare un descrittore di sicurezza per altri tipi di oggetto.
 ms.assetid: 866992a7-95c4-4094-87bb-e6d8eeb24317
 title: Creazione di un descrittore di sicurezza per un nuovo oggetto in C++
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "117782635"
 ---
 # <a name="creating-a-security-descriptor-for-a-new-object-in-c"></a>Creazione di un descrittore di sicurezza per un nuovo oggetto in C++
 
-Nell'esempio seguente viene creato [*un descrittore di sicurezza*](/windows/desktop/SecGloss/s-gly) per una nuova chiave del Registro di sistema usando il processo seguente. È possibile usare codice simile per creare un descrittore di sicurezza per altri tipi di oggetto.
+Nell'esempio seguente viene creato [*un descrittore di sicurezza*](/windows/desktop/SecGloss/s-gly) per una nuova chiave del Registro di sistema usando il processo seguente. Codice simile può essere usato per creare un descrittore di sicurezza per altri tipi di oggetto.
 
--   Nell'esempio viene compilata una matrice di [**strutture EXPLICIT \_ ACCESS**](/windows/desktop/api/AccCtrl/ns-accctrl-explicit_access_a) con le informazioni per due ACE. Una ACE consente l'accesso in lettura a tutti gli utenti. l'altra ACE consente l'accesso completo agli amministratori.
--   La [**matrice EXPLICIT \_ ACCESS**](/windows/desktop/api/AccCtrl/ns-accctrl-explicit_access_a) viene passata alla [**funzione SetEntriesInAcl**](/windows/desktop/api/Aclapi/nf-aclapi-setentriesinacla) per creare un dacl per il descrittore di sicurezza.
--   Dopo aver allocato memoria per il descrittore di sicurezza, l'esempio chiama le funzioni [**InitializeSecurityDescriptor**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-initializesecuritydescriptor) e [**SetSecurityDescriptorDacl**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptordacl) per inizializzare il descrittore di sicurezza e collegare l'elenco DACL.
+-   Nell'esempio viene riempita una matrice [**di strutture EXPLICIT \_ ACCESS**](/windows/desktop/api/AccCtrl/ns-accctrl-explicit_access_a) con le informazioni per due ACE. Una ACE consente l'accesso in lettura a tutti gli utenti. l'altra ACE consente l'accesso completo agli amministratori.
+-   La [**matrice EXPLICIT \_ ACCESS**](/windows/desktop/api/AccCtrl/ns-accctrl-explicit_access_a) viene passata alla [**funzione SetEntriesInAcl**](/windows/desktop/api/Aclapi/nf-aclapi-setentriesinacla) per creare un elenco DACL per il descrittore di sicurezza.
+-   Dopo l'allocazione della memoria per il descrittore di sicurezza, nell'esempio vengono chiamate le funzioni [**InitializeSecurityDescriptor**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-initializesecuritydescriptor) e [**SetSecurityDescriptorDacl**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptordacl) per inizializzare il descrittore di sicurezza e collegare l'elenco DACL.
 -   Il descrittore di sicurezza viene quindi archiviato in una struttura SECURITY ATTRIBUTES e passato alla funzione \_ [**RegCreateKeyEx,**](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) che collega il descrittore di sicurezza alla chiave appena creata.
 
 

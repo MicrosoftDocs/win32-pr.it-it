@@ -151,7 +151,7 @@ Può verificarsi una o più volte per ogni elemento [**ControlGroup**](windowsri
 
 Poiché **ComboBox è** esclusivamente una raccolta di elementi, non supporta gli elementi Command. È anche l'unico controllo della raccolta che non supporta uno spazio dei comandi (una raccolta di comandi dichiarati nel markup ed elencati nella parte inferiore di una raccolta di elementi o di una raccolta di comandi). Per altre informazioni, vedere [Uso delle raccolte.](ribbon-controls-galleries.md)
 
-Lo screenshot seguente illustra un controllo Casella combinata [della](windowsribbon-controls-combobox.md) barra multifunzione Windows Live Movie Maker.
+Lo screenshot seguente illustra un controllo [Casella](windowsribbon-controls-combobox.md) combinata della barra multifunzione Windows Live Movie Maker.
 
 ![Screenshot di un controllo casella combinata nella barra multifunzione di Microsoft Paint.](images/controls/combobox.png)
 

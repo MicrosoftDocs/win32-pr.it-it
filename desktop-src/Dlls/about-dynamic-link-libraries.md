@@ -26,7 +26,7 @@ Esistono due metodi per chiamare una funzione in una DLL:
 
 Ogni processo che carica la DLL ne esegue il mapping nello spazio indirizzi virtuale. Dopo aver caricato la DLL nel relativo indirizzo virtuale, il processo può chiamare le funzioni DLL esportate.
 
-Il sistema mantiene un conteggio dei riferimenti per processo per ogni DLL. Quando un thread carica la DLL, il conteggio dei riferimenti viene incrementato di uno. Quando il processo termina o quando il conteggio dei riferimenti diventa zero (solo collegamento dinamico in fase di esecuzione), la DLL viene scaricata dallo spazio di indirizzi virtuali del processo.
+Il sistema mantiene un conteggio dei riferimenti per processo per ogni DLL. Quando un thread carica la DLL, il conteggio dei riferimenti viene incrementato di uno. Quando il processo termina o quando il conteggio dei riferimenti diventa zero (solo collegamento dinamico in fase di esecuzione), la DLL viene scaricata dallo spazio degli indirizzi virtuali del processo.
 
 Come qualsiasi altra funzione, una funzione DLL esportata viene eseguita nel contesto del thread che la chiama. Di conseguenza, si applicano le condizioni seguenti:
 

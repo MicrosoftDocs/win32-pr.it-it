@@ -1,6 +1,6 @@
 ---
-title: Funzioni (Windows Touch Input)
-description: Questa sezione contiene le funzioni per Windows'input tocco.
+title: Funzioni (Windows input tocco)
+description: Questa sezione contiene le funzioni per l Windows'input tocco.
 ms.assetid: 6c64ed75-37ac-47ae-b39e-bdf10d2b5211
 keywords:
 - Windows Tocco, funzioni
@@ -13,9 +13,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118435327"
 ---
-# <a name="functions-windows-touch-input"></a>Funzioni (Windows Touch Input)
+# <a name="functions-windows-touch-input"></a>Funzioni (Windows input tocco)
 
-Questa sezione contiene le funzioni per Windows'input tocco.
+Questa sezione contiene le funzioni per l Windows'input tocco.
 
 Le funzioni seguenti vengono usate per l'Windows touch.
 
@@ -26,9 +26,9 @@ Le funzioni seguenti vengono usate per l'Windows touch.
 | [**CloseTouchInputHandle**](/windows/desktop/api/winuser/nf-winuser-closetouchinputhandle)                                                 | Chiude un handle di input tocco, libera la memoria del processo associata e invalida l'handle.                                       |
 | [**GetTouchInputInfo**](/windows/desktop/api/winuser/nf-winuser-gettouchinputinfo)                                                         | Recupera informazioni dettagliate sugli input tocco associati a un handle di input tocco specifico.                                        |
 | [**IsTouchWindow**](/windows/desktop/api/winuser/nf-winuser-istouchwindow)                                                                 | Controlla se una finestra specificata supporta il tocco e, facoltativamente, recupera i flag di modifica impostati per la funzionalità di tocco della finestra. |
-| [**RegisterTouchWindow**](/windows/desktop/api/winuser/nf-winuser-registertouchwindow)                                                     | Registra una finestra con funzionalità di tocco.                                                                                              |
+| [**RegisterTouchWindow**](/windows/desktop/api/winuser/nf-winuser-registertouchwindow)                                                     | Registra una finestra come con funzionalità di tocco.                                                                                              |
 | [**UnregisterTouchWindow**](/windows/desktop/api/winuser/nf-winuser-unregistertouchwindow)                                                 | Registra una finestra come non più in grado di eseguire il tocco.                                                                                    |
-| [SendMessage, PostMessage e funzioni correlate](sendmessage--postmessage--and-related-functions.md) | Contiene considerazioni sull'inoltro dei messaggi.                                                                                      |
+| [Funzioni sendMessage, PostMessage e correlate](sendmessage--postmessage--and-related-functions.md) | Contiene considerazioni sull'inoltro dei messaggi.                                                                                      |
 
 
 
