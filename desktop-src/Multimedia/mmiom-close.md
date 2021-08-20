@@ -3,7 +3,7 @@ title: MMIOM_CLOSE messaggio (Mmsystem.h)
 description: Il messaggio MMIOM CLOSE viene inviato a una procedura di I/O dalla funzione mmioClose per richiedere la \_ chiusura di un file.
 ms.assetid: 9d0dad5b-fd0a-4948-a4cf-9d138e353c76
 keywords:
-- MMIOM_CLOSE di messaggi Windows multimediali
+- MMIOM_CLOSE messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -47,7 +47,7 @@ Flag contenuti nel **parametro wFlags** di **mmioClose.**
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero se il file viene chiuso correttamente o se in caso contrario si verifica un errore.
+Restituisce zero se il file viene chiuso correttamente o se si verifica un errore in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 

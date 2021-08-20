@@ -1,7 +1,7 @@
 ---
 description: Questa classe è la classe del tipo di evento per gli eventi PnP. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: 01e9a8bb-3f54-4e20-b4db-1b4bba745d4f
-title: Classe SystemConfig_PnP
+title: SystemConfig_PnP classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,14 +18,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2bd4cdbbec5c61f453a0ef6fae3fef0bd494edac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 082d9169bbd2ad30af6b2bc17600804f43ce7bbef5e52f15f7ac4c85b21f7b8f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104484668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582201"
 ---
-# <a name="systemconfig_pnp-class"></a>\_Classe PNP SystemConfig
+# <a name="systemconfig_pnp-class"></a>Classe \_ SystemConfig PnP
 
 Questa classe è la classe del tipo di evento per gli eventi PnP.
 
@@ -48,26 +48,26 @@ class SystemConfig_PnP : SystemConfig
 
 ## <a name="members"></a>Members
 
-La **classe \_ PNP SystemConfig** dispone di questi tipi di membri:
+La **classe \_ SystemConfig PnP** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ PNP SystemConfig** dispone di queste proprietà.
+La **classe \_ SystemConfig PnP** dispone di queste proprietà.
 
 <dl> <dt>
 
 **DescriptionLength**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2)
+Qualificatori: WmiDataId(2)
 </dt> </dl>
 
 Lunghezza, in caratteri, della stringa DeviceDescription.
@@ -77,29 +77,29 @@ Lunghezza, in caratteri, della stringa DeviceDescription.
 **DeviceDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (5), StringTermination ("NullTerminated"), Format ("w")
+Qualificatori: WmiDataId(5), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Descrizione del dispositivo PnP.
 
 </dd> <dt>
 
-**DeviceID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (4), StringTermination ("NullTerminated"), Format ("w")
+Qualificatori: WmiDataId(4), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Identifica il dispositivo PnP.
@@ -109,13 +109,13 @@ Identifica il dispositivo PnP.
 **FriendlyName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (6), StringTermination ("NullTerminated"), Format ("w")
+Qualificatori: WmiDataId(6), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Nome del dispositivo PnP da usare in un'interfaccia utente.
@@ -125,13 +125,13 @@ Nome del dispositivo PnP da usare in un'interfaccia utente.
 **FriendlyNameLength**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3)
+Qualificatori: WmiDataId(3)
 </dt> </dl>
 
 Lunghezza, in caratteri, della stringa FriendlyName.
@@ -141,13 +141,13 @@ Lunghezza, in caratteri, della stringa FriendlyName.
 **IDLength**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1)
+Qualificatori: WmiDataId(1)
 </dt> </dl>
 
 Lunghezza, in caratteri, della stringa DeviceID.
@@ -160,8 +160,8 @@ Lunghezza, in caratteri, della stringa DeviceID.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

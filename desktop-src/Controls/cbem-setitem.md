@@ -1,9 +1,9 @@
 ---
-title: Messaggio CBEM_SETITEM (COMmctrl. h)
+title: CBEM_SETITEM messaggio (Commctrl.h)
 description: Imposta gli attributi per un elemento in un controllo ComboBoxEx.
 ms.assetid: 752df8ea-fd5e-47fa-b729-d019bdde0904
 keywords:
-- Controlli di Windows Message CBEM_SETITEM
+- CBEM_SETITEM dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50ae19287e3e30810b1d8c558be9b6153a86ab6b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7b1010c090283a47404ee93ef5f3bc1cf2d5ffe71a646d6d734cb443152bdd64
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119527931"
 ---
-# <a name="cbem_setitem-message"></a>CBEM- \_ messaggio di elemento
+# <a name="cbem_setitem-message"></a>Messaggio \_ CBEM SETITEM
 
 Imposta gli attributi per un elemento in un controllo ComboBoxEx.
 
@@ -37,13 +37,13 @@ Imposta gli attributi per un elemento in un controllo ComboBoxEx.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**COMBOBOXEXITEM**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) contenente le informazioni sull'elemento da impostare. Quando il messaggio viene inviato, il membro **mask** della struttura deve essere impostato in modo da indicare quali attributi sono validi e il membro **iItem** deve specificare l'indice in base zero dell'elemento da modificare. Impostando il membro **iItem** su-1, l'elemento visualizzato nel controllo di modifica verrà modificato.
+Puntatore a una [**struttura COMBOBOXEXITEM**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) che contiene le informazioni sull'elemento da impostare. Quando il messaggio viene inviato, il membro **mask** della struttura deve essere impostato per indicare quali attributi sono validi e il membro **iItem** deve specificare l'indice in base zero dell'elemento da modificare. **L'impostazione del membro iItem** su -1 modificherà l'elemento visualizzato nel controllo di modifica.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso contrario.
+Restituisce un valore diverso da zero in caso di esito positivo oppure zero in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,10 +51,10 @@ Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso c
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
-| Nomi Unicode e ANSI<br/>   | **CBEM \_ SETITEMW** (Unicode) e **CBEM \_ setitema** (ANSI)<br/>                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Nomi Unicode e ANSI<br/>   | **CBEM \_ SETITEMW** (Unicode) e **CBEM \_ SETITEMA** (ANSI)<br/>                 |
 
 
 

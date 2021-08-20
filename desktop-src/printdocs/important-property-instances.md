@@ -4,18 +4,18 @@ ms.assetid: 8169b74f-13e0-4f6b-81e2-1824d932ee50
 title: Istanze di proprietà importanti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4691b73b1206ee092c171b213a3815925b7f53c6
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: df644c44bc1c9c0c0b4c5bf457bdb253f5b91969c55dd26833c0e05dc66cc558
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119100552"
 ---
 # <a name="important-property-instances"></a>Istanze di proprietà importanti
 
 Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Per consentire a un client PrintCapabilities di costruire un PrintTicket ragionevole, il documento PrintCapabilities deve fornire determinate proprietà delle istanze di Feature e delle istanze Option all'interno di Feature. Un modulo di interfaccia utente generica richiede tali informazioni per costruire un'interfaccia utente. A sua volta, è necessario che le parole chiave dello schema di stampa definiranno alcune istanze di Proprietà che vengono visualizzate come elementi figlio degli elementi Feature e Option.
+Per consentire a un client PrintCapabilities di costruire un PrintTicket ragionevole, il documento PrintCapabilities deve fornire determinate proprietà delle istanze di Feature e delle istanze Option all'interno di Feature. Un modulo di interfaccia utente generica richiede tali informazioni per costruire un'interfaccia utente. A sua volta, è necessario che le parole chiave dello schema di stampa definiranno alcune istanze property visualizzate come elementi figlio degli elementi Feature e Option.
 
 Gli elementi della funzionalità possono contenere la proprietà seguente.
 
@@ -59,7 +59,7 @@ Gli elementi Feature, Option e ParameterDef possono contenere la proprietà segu
 
 | Proprietà                | valore             | Scopo                                                                                                                                                                                                                                                                                                                                                                                                               |
 |-------------------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DisplayName <br/> | Stringa<br/> | Specifica la stringa di visualizzazione per l'elemento padre, eseguendo l'override del nome visualizzato predefinito. Può essere usato dai provider PrintCapabilities per presentare un nome visualizzato localizzato e descrittivo. Il valore predefinito del nome visualizzato è l'attributo name per l'elemento padre. <br/> Nel caso degli elementi Option, se non viene specificato l'attributo name, la proprietà DisplayName deve essere presente.<br/> |
+| DisplayName <br/> | string<br/> | Specifica la stringa di visualizzazione per l'elemento padre, eseguendo l'override del nome visualizzato predefinito. Può essere usato dai provider PrintCapabilities per presentare un nome visualizzato localizzato e descrittivo. Il valore predefinito del nome visualizzato è l'attributo name per l'elemento padre. <br/> Nel caso degli elementi Option, se non viene specificato l'attributo name, la proprietà DisplayName deve essere presente.<br/> |
 
 
 

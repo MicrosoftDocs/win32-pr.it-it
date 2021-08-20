@@ -1,33 +1,33 @@
 ---
-description: Specifica il modo in cui il codificatore interlaccierà il video di output.
+description: Specifica il modo in cui il codificatore interlaccia il video di output.
 ms.assetid: f36238dc-2152-4faf-835e-1027ef1af73b
-title: Proprietà AVEncVideoOutputScanType (codecapis. h)
+title: Proprietà AVEncVideoOutputScanType (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 908936c3277c429f7216c930b648083744793530
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 31b2e5912b67a88249389987c5ac7e6796f611160d483527cdbb9e4165636180
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103746226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540581"
 ---
-# <a name="avencvideooutputscantype-property"></a>Proprietà AVEncVideoOutputScanType
+# <a name="avencvideooutputscantype-property"></a>AvEncVideoOutputScanType - proprietà
 
-Specifica il modo in cui il codificatore interlaccierà il video di output.
+Specifica il modo in cui il codificatore interlaccia il video di output.
 
 Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt32** (**VT \_ UI4**)
+**UINT32** (**VT \_ UI4**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncVideoOutputScanType**
+**CODECAPI \_ AVEncVideoOutputScanType**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Il valore di questa proprietà è un membro dell'enumerazione [**eAVEncVideoOutputScanType**](/windows/win32/api/codecapi/ne-codecapi-eavencvideooutputscantype) .
+Il valore di questa proprietà è un membro [**dell'enumerazione eAVEncVideoOutputScanType.**](/windows/win32/api/codecapi/ne-codecapi-eavencvideooutputscantype)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ Il valore di questa proprietà è un membro dell'enumerazione [**eAVEncVideoOutp
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop app \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Il valore di questa proprietà è un membro dell'enumerazione [**eAVEncVideoOutp
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà API codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

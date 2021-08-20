@@ -1,6 +1,6 @@
 ---
 title: Evento KeyPress dell'oggetto AxWindowsMediaPlayer
-description: L'evento KeyPress si verifica quando un tasto viene premuto e rilasciato. | Evento KeyPress dell'oggetto AxWindowsMediaPlayer
+description: L'evento KeyPress si verifica quando viene premuto e rilasciato un tasto. | Evento KeyPress dell'oggetto AxWindowsMediaPlayer
 ms.assetid: 73ecd6f9-1b58-4e28-ad1b-2d930a235e1d
 keywords:
 - Evento KeyPress dell'oggetto AxWindowsMediaPlayer Windows Media Player
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4a01e84b8f765d024c753d08211f3bb84e7f011
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 45b8022feacda910b28d68636c1abdcb2f6c1c9d3c2e799f762f25f5060b2b82
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119618791"
 ---
 # <a name="keypress-event-of-the-axwindowsmediaplayer-object"></a>Evento KeyPress dell'oggetto AxWindowsMediaPlayer
 
-L'evento KeyPress si verifica quando un tasto viene premuto e rilasciato.
+L'evento KeyPress si verifica quando viene premuto e rilasciato un tasto.
 
 ``` syntax
 [C#]
@@ -41,13 +41,13 @@ Private Sub player_KeyPressEvent(
 
 ## <a name="event-data"></a>Dati eventi
 
-Il gestore associato a questo evento è di tipo **AxWMPLib. \_ \_KeyPressEventHandler WMPOCXEvents**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ KeyPressEvent**, che contiene la proprietà seguente correlata a questo evento.
+Il gestore associato a questo evento è di tipo **AxWMPLib. \_ WMPOCXEvents \_ KeyPressEventHandler**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ KeyPressEvent,** che contiene la proprietà seguente correlata a questo evento.
 
 
 
 | Proprietà      | Descrizione                                                                        |
 |---------------|------------------------------------------------------------------------------------|
-| **nKeyAscii** | System. Int16Specifies codice ANSI numerico standard per il carattere.<br/> |
+| **nKeyAscii** | System.Int16Specifica il codice ANSI numerico standard per il carattere.<br/> |
 
 
 
@@ -55,7 +55,7 @@ Il gestore associato a questo evento è di tipo **AxWMPLib. \_ \_KeyPressEventHa
 
 ## <a name="remarks"></a>Commenti
 
-Questo evento si verifica quando la sequenza di tasti restituisce un carattere di tastiera stampabile, il tasto CTRL combinato con un carattere dell'alfabeto standard o uno dei caratteri speciali e il tasto invio o BACKSPACE.
+Questo evento si verifica quando la pressione del tasto risulta in qualsiasi carattere stampabile della tastiera, il tasto CTRL combinato con un carattere dell'alfabeto standard o uno di alcuni caratteri speciali e il tasto INVIO o BACKSPACE.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,7 +63,7 @@ Questo evento si verifica quando la sequenza di tasti restituisce un carattere d
 
 | Requisito | Valore |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                          |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                          |
 | Spazio dei nomi<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

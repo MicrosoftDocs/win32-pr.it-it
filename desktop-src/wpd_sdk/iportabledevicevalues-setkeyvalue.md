@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetKeyValue aggiunge un nuovo valore REFPROPERTYKEY (Type VT \_ Unknown) o ne sovrascrive uno esistente.
+description: Il metodo SetKeyValue aggiunge un nuovo valore REFPROPERTYKEY (tipo VT \_ UNKNOWN) o ne sovrascrive uno esistente.
 ms.assetid: 344c52ec-91b1-43f9-b16a-28c24971d805
-title: 'Metodo IPortableDeviceValues:: SetKeyValue (PortableDeviceTypes. h)'
+title: Metodo IPortableDeviceValues::SetKeyValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: ae55b47687043bba92afbab09f25de8a5fc679d7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 850c9752d83e95aa6d602aec5a8d44fa43deb83728d0bc0c3130c30e04151a04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119584301"
 ---
-# <a name="iportabledevicevaluessetkeyvalue-method"></a>Metodo IPortableDeviceValues:: SetKeyValue
+# <a name="iportabledevicevaluessetkeyvalue-method"></a>Metodo IPortableDeviceValues::SetKeyValue
 
-Il metodo **SetKeyValue** aggiunge un nuovo valore **REFPROPERTYKEY** (Type VT \_ Unknown) o ne sovrascrive uno esistente.
+Il **metodo SetKeyValue** aggiunge un nuovo **valore REFPROPERTYKEY** (tipo VT \_ UNKNOWN) o ne sovrascrive uno esistente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,29 +41,29 @@ HRESULT SetKeyValue(
 
 <dl> <dt>
 
-*chiave* \[ di in\]
+*chiave* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **REFPROPERTYKEY** che specifica l'elemento da creare o sovrascrivere.
+**RefPROPERTYKEY che** specifica l'elemento da creare o sovrascrivere.
 
 </dd> <dt>
 
-*Valore* \[ di in\]
+*Valore* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **REFPROPERTYKEY** che specifica il nuovo valore.
+**RefPROPERTYKEY** che specifica il nuovo valore.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -71,7 +71,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Se un valore esistente ha la stessa chiave specificata dal parametro *Key* , sovrascrive il valore esistente senza alcun avviso. La memoria della chiave esistente viene rilasciata in modo appropriato.
+Se un valore esistente ha la stessa chiave specificata dal parametro *key,* sovrascrive il valore esistente senza alcun avviso. La memoria della chiave esistente viene rilasciata in modo appropriato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,8 +79,8 @@ Se un valore esistente ha la stessa chiave specificata dal parametro *Key* , sov
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 

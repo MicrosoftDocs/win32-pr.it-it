@@ -1,9 +1,9 @@
 ---
 title: Elemento DaysInterval (dailyScheduleType)
-description: Specifica l'intervallo tra i giorni della pianificazione.
+description: Specifica l'intervallo tra i giorni nella pianificazione.
 ms.assetid: 495ea1c0-37eb-4b12-8241-bfc6489e33ed
 keywords:
-- Utilità di pianificazione elemento DaysInterval
+- Elemento DaysInterval Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 97b50581aa4825b31983a234a5eb47ff7b7b7e06
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e35df4f102801f7d52faeb384f9a1113e00abbf034026d19b5b7b6e7b4c90ed7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119621101"
 ---
 # <a name="daysinterval-dailyscheduletype-element"></a>Elemento DaysInterval (dailyScheduleType)
 
-Specifica l'intervallo tra i giorni della pianificazione.
+Specifica l'intervallo tra i giorni nella pianificazione.
 
 ``` syntax
 <xs:element name="DaysInterval"
@@ -43,7 +43,7 @@ Specifica l'intervallo tra i giorni della pianificazione.
 </xs:element>
 ```
 
-L'elemento è definito dal tipo complesso [**dailyScheduleType**](taskschedulerschema-dailyscheduletype-complextype.md) .
+L'elemento è definito dal [**tipo complesso dailyScheduleType.**](taskschedulerschema-dailyscheduletype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -57,13 +57,13 @@ L'elemento è definito dal tipo complesso [**dailyScheduleType**](taskschedulers
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo di script, l'intervallo di giorni per un trigger giornaliero viene specificato dalla proprietà [**DailyTrigger. DaysInterval**](dailytrigger-daysinterval.md) .
+Per lo sviluppo di script, l'intervallo di giorni per un trigger giornaliero viene specificato dalla [**proprietà DailyTrigger.DaysInterval.**](dailytrigger-daysinterval.md)
 
-Per lo sviluppo in C++, l'intervallo di giorni per un trigger giornaliero viene specificato dalla proprietà [**IDailyTrigger::D aysinterval**](/windows/desktop/api/taskschd/nf-taskschd-idailytrigger-get_daysinterval) .
+Per lo sviluppo in C++, l'intervallo di giorni per un trigger giornaliero viene specificato dalla proprietà [**IDailyTrigger::D aysInterval.**](/windows/desktop/api/taskschd/nf-taskschd-idailytrigger-get_daysinterval)
 
 ## <a name="examples"></a>Esempio
 
-Il codice XML seguente definisce un trigger di calendario giornaliero che avvia l'attività ogni giorno.
+Nel codice XML seguente viene definito un trigger di calendario giornaliero che avvia l'attività ogni giorno.
 
 
 ```XML
@@ -78,7 +78,7 @@ Il codice XML seguente definisce un trigger di calendario giornaliero che avvia 
 
 
 
-Per un esempio completo del codice XML per un'attività che specifica una pianificazione giornaliera, vedere [esempio di trigger giornalieri (XML)](daily-trigger-example--xml-.md).
+Per un esempio completo del codice XML per un'attività che specifica una pianificazione giornaliera, vedere [Esempio di trigger giornaliero (XML).](daily-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -86,8 +86,8 @@ Per un esempio completo del codice XML per un'attività che specifica una pianif
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -95,7 +95,7 @@ Per un esempio completo del codice XML per un'attività che specifica una pianif
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

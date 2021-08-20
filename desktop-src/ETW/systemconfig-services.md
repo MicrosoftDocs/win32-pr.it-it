@@ -18,12 +18,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 754b0e10c3882911c6e91fc2590c11739c3f7531
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 80d0bfdc324f55bd8b697dfd63f9c2cf5c847ca3e3c931842b886c00adbc6aac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119383451"
 ---
 # <a name="systemconfig_services-class"></a>Classe SystemConfig \_ Services
 
@@ -134,7 +134,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (2), **Format("x")**
 </dt> </dl>
 
-Stato corrente del servizio. Per i valori possibili, vedere **il membro dwCurrentState** di **SERVICE STATUS \_ \_ PROCESS**.
+Stato corrente del servizio. Per i valori possibili, vedere **il membro dwCurrentState** di **SERVICE STATUS \_ \_ PROCESS.**
 
 </dd> <dt>
 
@@ -160,8 +160,8 @@ Identifica il servizio.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>       |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

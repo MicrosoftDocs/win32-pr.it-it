@@ -3,19 +3,19 @@ title: Playlist di esempio
 description: Playlist di esempio
 ms.assetid: 130e48d0-9601-4a7a-a48f-fb557375fcb1
 keywords:
-- Playlist Windows Media Metafile, esempi di playlist
+- Windows playlist di metafile multimediali, esempi di playlist
 - playlist, esempi di playlist
 - playlist di metafile, esempi di playlist
-- Playlist Windows Media Metafile, playlist di esempio
+- Windows playlist di metafile multimediali, playlist di esempio
 - playlist, playlist di esempio
 - playlist di metafile, playlist di esempio
-- Playlist Windows Media Metafile, playlist di esempio
+- Windows playlist di metafile multimediali, playlist di esempio
 - playlist, playlist di esempio
 - playlist di metafile, playlist di esempio
 - Windows Media Player, esempi di playlist
-- Media Player di Windows, playlist di esempio
+- Windows Media Player,playlist di esempio
 - Windows Media Player, playlist di esempio
-- esempi di playlist
+- Esempi di playlist
 - playlist di esempio
 - playlist di esempio
 ms.topic: article
@@ -25,28 +25,28 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 59fa7266985d2d08234f2bfdcac8b1518e355a6d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6131e14f8bc6b0cbd93cd3e2aec853e5ec6b3629b4cda05862b6ec461d8e32cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650221"
 ---
 # <a name="example-playlists"></a>Playlist di esempio
 
-Di seguito sono riportate tre playlist di esempio. Per usare questi esempi, è necessario assicurarsi di avere sostituito i percorsi validi e i nomi file accessibili a Windows Media Player.
+Di seguito sono riportate tre playlist di esempio. Per usare questi esempi, è necessario assicurarsi di aver sostituito i percorsi e i nomi di file validi accessibili Windows Media Player.
 
 
 
 | Playlist di esempio                                                           | Descrizione                                               |
 |----------------------------------------------------------------------------|-----------------------------------------------------------|
-| [Una playlist di base](a-basic-playlist.md)                                   | Playlist semplice.                                        |
-| [Una playlist avanzata](an-advanced-playlist.md)                           | Playlist con un set di elementi della playlist più completo. |
-| [Una playlist di esempio di Radio Station](an-example-radio-station-playlist.md) | Playlist che analizza tre stazioni radio.               |
+| [Playlist di base](a-basic-playlist.md)                                   | Una playlist semplice.                                        |
+| [Playlist avanzata](an-advanced-playlist.md)                           | Playlist con un set più completo di elementi playlist. |
+| [Esempio di playlist di stazione radio](an-example-radio-station-playlist.md) | Playlist che analizza tre stazioni radio.               |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -58,9 +58,9 @@ Di seguito sono riportate tre playlist di esempio. Per usare questi esempi, è n
 [**Playlist di metafile**](metafile-playlists.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

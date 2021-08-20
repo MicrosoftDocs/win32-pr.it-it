@@ -1,5 +1,5 @@
 ---
-description: Le costanti del flag di bit PHONESTATUSFLAGS descrivono \_ un'ampia gamma di informazioni sullo stato del dispositivo telefonico.
+description: Le costanti del flag di bit PHONESTATUSFLAGS \_ descrivono un'ampia gamma di informazioni sullo stato del dispositivo telefonico.
 ms.assetid: e94da591-49ab-4932-8621-0a62b8a55dd6
 title: PHONESTATUSFLAGS_ costanti (Tapi.h)
 ms.topic: reference

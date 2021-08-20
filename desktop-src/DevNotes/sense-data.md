@@ -1,7 +1,7 @@
 ---
-description: Utilizzato per segnalare informazioni sullo stato o sugli errori in risposta a un comando di richiesta SCSI.
+description: Consente di segnalare informazioni sullo stato o sull'errore in risposta a un comando SCSI Request Sense.
 ms.assetid: 43B2FE98-1468-4457-AB7D-3038C16E20B6
-title: Struttura SENSE_DATA (SCSI. h)
+title: SENSE_DATA struttura (Scsi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Scsi.h
-ms.openlocfilehash: b5eacf9bee8c2cebf93b27c97a88c691852a3841
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 2f6b3bd9fd4353e396bc7fe4ff7273e598704d1348062fec1c2f64aed9380686
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "106321097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075954"
 ---
-# <a name="sense_data-structure"></a>\_Struttura dei dati di rilevamento
+# <a name="sense_data-structure"></a>Struttura SENSE \_ DATA
 
-Utilizzato per segnalare informazioni sullo stato o sugli errori in risposta a un comando di **richiesta** SCSI.
+Consente di segnalare informazioni sullo stato o sull'errore in risposta a un comando SCSI **Request Sense.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -63,7 +63,7 @@ Tipo di report.
 | Valore                                                                           | Significato                     |
 |---------------------------------------------------------------------------------|-----------------------------|
 | <dl> <dt>0x70</dt> </dl> | Errori correnti.<br/>  |
-| <dl> <dt>0x71</dt> </dl> | Errori posticipati.<br/> |
+| <dl> <dt>0x71</dt> </dl> | Errori posticimanti.<br/> |
 
 
 
@@ -74,7 +74,7 @@ Tipo di report.
 **Valido**
 </dt> <dd>
 
-1 se il campo **informazioni** è definito in uno standard; in caso contrario, il campo **informazioni** è specifico del fornitore e non è definito da uno standard.
+1 se il **campo** Informazioni è definito in uno standard; In caso **contrario,** il campo Informazioni è specifico del fornitore e non è definito da uno standard.
 
 </dd> <dt>
 
@@ -92,7 +92,7 @@ Indica la categoria di errore.
 
 <dl> <dt>
 
-<span id="No_Sense"></span><span id="no_sense"></span><span id="NO_SENSE"></span>**Nessun senso** (0x0)
+<span id="No_Sense"></span><span id="no_sense"></span><span id="NO_SENSE"></span>**No Sense** (0x0)
 </dt> <dt>
 
 <span id="Recovered_Error"></span><span id="recovered_error"></span><span id="RECOVERED_ERROR"></span>**Errore recuperato** (0x1)
@@ -107,16 +107,16 @@ Indica la categoria di errore.
 <span id="Hardware_Error"></span><span id="hardware_error"></span><span id="HARDWARE_ERROR"></span>**Errore hardware** (0x4)
 </dt> <dt>
 
-<span id="Illegal_Request"></span><span id="illegal_request"></span><span id="ILLEGAL_REQUEST"></span>**Richiesta non valida** (0x5)
+<span id="Illegal_Request"></span><span id="illegal_request"></span><span id="ILLEGAL_REQUEST"></span>**Richiesta non** valida (0x5)
 </dt> <dt>
 
 <span id="Unit_Attention"></span><span id="unit_attention"></span><span id="UNIT_ATTENTION"></span>**Attenzione unità** (0x6)
 </dt> <dt>
 
-<span id="Data_Protect"></span><span id="data_protect"></span><span id="DATA_PROTECT"></span>**Protezione dei dati** (0x7)
+<span id="Data_Protect"></span><span id="data_protect"></span><span id="DATA_PROTECT"></span>**Protezione dei** dati (0x7)
 </dt> <dt>
 
-<span id="Firmware_Error"></span><span id="firmware_error"></span><span id="FIRMWARE_ERROR"></span>**Errore del firmware** (0x9)
+<span id="Firmware_Error"></span><span id="firmware_error"></span><span id="FIRMWARE_ERROR"></span>**Errore firmware** (0x9)
 </dt> <dt>
 
 <span id="Aborted_Command"></span><span id="aborted_command"></span><span id="ABORTED_COMMAND"></span>**Comando interrotto** (0xB)
@@ -125,10 +125,10 @@ Indica la categoria di errore.
 <span id="Equal"></span><span id="equal"></span><span id="EQUAL"></span>**Uguale** (0xC)
 </dt> <dt>
 
-<span id="Volume_Overflow"></span><span id="volume_overflow"></span><span id="VOLUME_OVERFLOW"></span>**Overflow del volume** (0xD)
+<span id="Volume_Overflow"></span><span id="volume_overflow"></span><span id="VOLUME_OVERFLOW"></span>**Volume Overflow** (0xD)
 </dt> <dt>
 
-<span id="Miscompare"></span><span id="miscompare"></span><span id="MISCOMPARE"></span>**Confronto non confrontato** (0xe)
+<span id="Miscompare"></span><span id="miscompare"></span><span id="MISCOMPARE"></span>**Non conforme** (0xE)
 </dt> </dl> </dd> <dt>
 
 **Reserved**
@@ -141,21 +141,21 @@ Riservato.
 **IncorrectLength**
 </dt> <dd>
 
-1 se la lunghezza del blocco logico richiesta non corrisponde alla lunghezza del blocco logico dei dati sul supporto.
+1 se la lunghezza del blocco logico richiesta non corrisponde alla lunghezza del blocco logico dei dati nel supporto.
 
 </dd> <dt>
 
 **EndOfMedia**
 </dt> <dd>
 
-1 se un dispositivo con accesso sequenziale ha raggiunto la fine del supporto o se una stampante è fuori carta.
+1 se un dispositivo ad accesso sequenziale ha raggiunto la fine del supporto o se la carta di una stampante è scaduta.
 
 </dd> <dt>
 
-**Contrassegno**
+**FileMark**
 </dt> <dd>
 
-1 se il comando corrente ha raggiunto un oggetto filemark o un contrassegno. Valido solo per i dispositivi con accesso sequenziale.
+1 se il comando corrente ha raggiunto un contrassegno file o setmark. Valido solo per i dispositivi ad accesso sequenziale.
 
 </dd> <dt>
 
@@ -169,48 +169,48 @@ Dati specifici del tipo di dispositivo o del comando.
 **AdditionalSenseLength**
 </dt> <dd>
 
-Lunghezza in byte del resto della struttura. Lunghezza totale meno 7.
+Lunghezza in byte del resto della struttura . Lunghezza totale meno 7.
 
 </dd> <dt>
 
 **CommandSpecificInformation**
 </dt> <dd>
 
-Dati specifici del comando. I valori sono definiti nello standard del comando appropriato.
+Dati specifici del comando. I valori sono definiti nello standard di comando appropriato.
 
 </dd> <dt>
 
 **AdditionalSenseCode**
 </dt> <dd>
 
-Codice specifico del dispositivo che descrive l'errore riportato nel campo **SenseKey** .
+Codice specifico del dispositivo che descrive l'errore segnalato nel **campo SenseKey.**
 
 </dd> <dt>
 
 **AdditionalSenseCodeQualifier**
 </dt> <dd>
 
-Può contenere dettagli aggiuntivi sul campo **AdditionalSenseCode** .
+Può contenere dettagli aggiuntivi sul **campo AdditionalSenseCode.**
 
 </dd> <dt>
 
 **FieldReplaceableUnitCode**
 </dt> <dd>
 
-Informazioni specifiche dei venditori sul componente associato a questi dati di rilevamento.
+Informazioni specifiche di Vender sul componente associato a questi dati di senso.
 
 </dd> <dt>
 
 **SenseKeySpecific**
 </dt> <dd>
 
-Il contenuto e il formato delle informazioni specifiche della chiave di senso sono determinati dal valore del campo **SenseKey** .
+Il contenuto e il formato delle informazioni specifiche della chiave di senso sono determinati dal valore del **campo SenseKey.**
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni sul formato dei dati Sense, vedere [comando SCSI Request Sense](https://wikipedia.org/wiki/SCSI_command) ( https://wikipedia.org/wiki/SCSI_command) .
+Per altre informazioni sul formato dei dati di sense, vedere [SCSI Request Sense Command](https://wikipedia.org/wiki/SCSI_command) ( https://wikipedia.org/wiki/SCSI_command) .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -218,9 +218,9 @@ Per ulteriori informazioni sul formato dei dati Sense, vedere [comando SCSI Requ
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                              |
-| Intestazione<br/>                   | <dl> <dt>SCSI. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                              |
+| Intestazione<br/>                   | <dl> <dt>Scsi.h</dt> </dl> |
 
 
 
@@ -231,7 +231,7 @@ Per ulteriori informazioni sul formato dei dati Sense, vedere [comando SCSI Requ
 [Pass-through di destinazione iSCSI](/powershell/module/iscsi)
 </dt> <dt>
 
-[\_pass- \_ through \_ diretto SCSI](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through_direct)
+[SCSI \_ \_ PASS-THROUGH \_ DIRECT](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through_direct)
 </dt> </dl>
 
  

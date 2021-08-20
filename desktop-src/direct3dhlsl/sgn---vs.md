@@ -1,5 +1,5 @@
 ---
-title: SGN-vs
+title: sgn - vs
 description: Calcola il segno dell'input.
 ms.assetid: b03530d1-c621-483e-bd94-31abafeb2e6e
 ms.topic: reference
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8573ff7e33a127d7c30af1fe512fbd3da298d0eb
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 1a4994c807ff1df99016aad734edf71e5e1ce6efe59fd53a4fb9bb3ee91a4b25
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104398247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119671681"
 ---
-# <a name="sgn---vs"></a>SGN-vs
+# <a name="sgn---vs"></a>sgn - vs
 
 Calcola il segno dell'input.
 
@@ -24,31 +24,31 @@ Calcola il segno dell'input.
 
 
 
-| SGN DST, src0, src1, src2 |
+| sgn dst, src0, src1, src2 |
 |---------------------------|
 
 
 
- 
+ 
 
 dove
 
--   DST è il registro di destinazione.
+-   dst è il registro di destinazione.
 -   src0 è un registro di origine.
--   src1 è un registro temporaneo che include risultati intermedi. In seguito all'esecuzione, il contenuto non è definito.
--   src2 è un registro temporaneo che include risultati intermedi. In seguito all'esecuzione, il contenuto non è definito.
+-   src1 è un registro temporaneo che contiene risultati intermedi. Dopo l'esecuzione, il contenuto non è definito.
+-   src2 è un registro temporaneo che contiene risultati intermedi. Dopo l'esecuzione, il contenuto non è definito.
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
-| SGN                    |      | x    | x    | x     | x    | x     |
+| Sgn                    |      | x    | x    | x     | x    | x     |
 
 
 
- 
+ 
 
 Questa istruzione funziona come illustrato di seguito.
 
@@ -68,18 +68,18 @@ for each component in src0
 
 
 
-src1 e src2 devono essere [registri temporanei](dx9-graphics-reference-asm-vs-registers-temporary.md)diversi.
+src1 e src2 devono essere [registri](dx9-graphics-reference-asm-vs-registers-temporary.md)temporanei diversi.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Istruzioni vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
+[Istruzioni per vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

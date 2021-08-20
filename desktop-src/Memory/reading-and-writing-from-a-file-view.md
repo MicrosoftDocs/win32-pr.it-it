@@ -4,20 +4,20 @@ ms.assetid: c2a3da09-d116-4c2c-9e6c-ec9e80c88b99
 title: Lettura e scrittura da una visualizzazione file
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d98ec50dc6cd8b0224f2ba33a17ba80c7b0fc658
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aee56f1d06e53bdfd6f7571e4ec296da0270ce0a7050b253b5900c4640d6df0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067681"
 ---
 # <a name="reading-and-writing-from-a-file-view"></a>Lettura e scrittura da una visualizzazione file
 
-Per leggere da una visualizzazione file, dereferenziare il puntatore restituito dalla funzione [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) , come illustrato negli esempi seguenti.
+Per leggere da una visualizzazione file, dereferenziare il puntatore restituito dalla [**funzione MapViewOfFile,**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) come illustrato negli esempi seguenti.
 
-La lettura o la scrittura in una visualizzazione file di un file diverso dal file di paging può causare un'eccezione in un'eccezione **\_ di \_ \_ errore di pagina** . Se ad esempio si accede a un file mappato che risiede in un server remoto, è possibile che venga generata un'eccezione in caso di perdita della connessione al server. Le eccezioni possono anche verificarsi a causa di un disco completo, di un errore di dispositivo sottostante o di un errore di allocazione della memoria. Quando si scrive in una visualizzazione file, le eccezioni possono anche verificarsi perché il file è condiviso e un altro processo ha bloccato un intervallo di byte. Per evitare eccezioni a causa di errori di input e output (I/O), tutti i tentativi di accesso ai file mappati alla memoria devono essere racchiusi in gestori di eccezioni strutturate. Quando si riceve **un' \_ eccezione \_ nell' \_ errore di pagina** nel filtro **\_ \_ ad eccezione** , assicurarsi che l'indirizzo sia incluso nel mapping a cui si sta effettuando l'accesso. In tal caso, ripristinare o non riuscire normalmente; in caso contrario, non gestire l'eccezione.
+La lettura o la scrittura in una visualizzazione file di un file diverso dal file di pagina può causare un'eccezione **EXCEPTION \_ IN PAGE \_ \_ ERROR.** Ad esempio, l'accesso a un file mappato che risiede in un server remoto può generare un'eccezione se la connessione al server viene persa. Le eccezioni possono verificarsi anche a causa di un disco completo, di un errore del dispositivo sottostante o di un errore di allocazione della memoria. Quando si scrive in una visualizzazione file, possono verificarsi eccezioni anche perché il file è condiviso e un processo diverso ha bloccato un intervallo di byte. Per proteggersi dalle eccezioni dovute a errori di input e output (I/O), tutti i tentativi di accedere ai file mappati alla memoria devono essere incapsulati in gestori eccezioni strutturate. Quando si riceve **EXCEPTION \_ IN PAGE \_ \_ ERROR** nel filtro **\_ \_ tranne** , assicurarsi che l'indirizzo sia all'interno del mapping a cui si sta accedendo. In tal caso, eseguire il ripristino o l'esito negativo correttamente. In caso contrario, non gestire l'eccezione.
 
-Nell'esempio seguente viene usato il puntatore restituito da **MapViewOfFile** per leggere dalla visualizzazione file:
+L'esempio seguente usa il puntatore restituito **da MapViewOfFile** per leggere dalla visualizzazione file:
 
 
 ```C++
@@ -36,7 +36,7 @@ Nell'esempio seguente viene usato il puntatore restituito da **MapViewOfFile** p
 
 
 
-Nell'esempio seguente viene usato il puntatore restituito da **MapViewOfFile** per scrivere nella visualizzazione file:
+Nell'esempio seguente viene utilizzato il puntatore restituito **da MapViewOfFile** per scrivere nella visualizzazione file:
 
 
 ```C++
@@ -55,7 +55,7 @@ Nell'esempio seguente viene usato il puntatore restituito da **MapViewOfFile** p
 
 
 
-La funzione [**FlushViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-flushviewoffile) copia il numero specificato di byte della visualizzazione file nel file fisico, senza attendere che si verifichi l'operazione di scrittura memorizzata nella cache:
+La [**funzione FlushViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-flushviewoffile) copia il numero specificato di byte della visualizzazione file nel file fisico, senza attendere l'esecuzione dell'operazione di scrittura memorizzata nella cache:
 
 
 ```C++
@@ -67,13 +67,13 @@ La funzione [**FlushViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-flus
 
 
 
-Se si esegue il mapping di un file compresso o sparse in una partizione NTFS, è possibile che si verifichi un errore di I/O durante il paging in una parte del file. In questo caso, lo spazio degli indirizzi mappato da [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) potrebbe non essere supportato dallo spazio su disco allocato. Ciò è dovuto al fatto che un file sparse può avere aree di zero per le quali NTFS non alloca spazio su disco e un file compresso può richiedere meno spazio su disco rispetto ai dati effettivi che rappresenta. Se si leggono o si scrive in una parte di un file sparse o compresso non supportato da spazio su disco, il sistema operativo potrebbe tentare di allocare spazio su disco. Se il disco è pieno, è possibile che venga generata un'eccezione che indica un errore di I/O.
+Se si esegue il mapping di un file compresso o di tipo sparse in una partizione NTFS, è possibile che si sia verificato un errore di I/O durante il paging in una parte del file. In questo caso, lo spazio indirizzi mappato da [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) potrebbe non essere supportato dallo spazio su disco allocato. Questo perché un file di tipo sparse può avere aree con zeri per cui NTFS non alloca spazio su disco e un file compresso può richiedere meno spazio su disco rispetto ai dati effettivi che rappresenta. Se si legge o si scrive in una parte di un file di tipo sparse o compresso che non è supportato dallo spazio su disco, il sistema operativo potrebbe tentare di allocare spazio su disco. Se il disco è pieno, può verificarsi un'eccezione che indica un errore di I/O.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Gestione strutturata delle eccezioni](../debug/structured-exception-handling.md)
+[Gestione delle eccezioni strutturata](../debug/structured-exception-handling.md)
 </dt> </dl>
 
  

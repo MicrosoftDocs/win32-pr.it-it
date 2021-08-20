@@ -25,7 +25,7 @@ ms.locfileid: "119032869"
 
 \[Questa funzione è disponibile tramite Windows XP con Service Pack 2 (SP2) e Windows Server 2003. Potrebbe essere modificato o non disponibile nelle versioni successive di Windows.\]
 
-Consente di determinare se visualizzare l'opzione Condividi **questa cartella** nella visualizzazione Web.
+Consente di determinare se visualizzare **l'opzione Condividi** questa cartella nella visualizzazione Web.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -71,7 +71,7 @@ I valori restituiti includono quanto segue.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file lib. Per usarlo, è necessario usare [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
+A questa funzione non è associato alcun file con estensione lib. Per usarlo, è necessario usare [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,7 +80,7 @@ A questa funzione non è associato alcun file lib. Per usarlo, è necessario usa
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                            |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                   |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Ntshrui.dll</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **CanShareFolderW** (Unicode)<br/>                                               |
 

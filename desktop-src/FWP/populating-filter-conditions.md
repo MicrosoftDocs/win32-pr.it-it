@@ -1,19 +1,19 @@
 ---
-title: Popolamento di condizioni di filtro
-description: Nell'esempio di codice riportato di seguito viene illustrato come popolare le condizioni di filtro utilizzate da un'applicazione server per trovare filtri ed eventi che lo influiscono.
+title: Popolamento delle condizioni di filtro
+description: Il codice di esempio seguente illustra come popolare le condizioni di filtro usate da un'applicazione server per trovare filtri ed eventi che la interessano.
 ms.assetid: 6c7c8d55-2cd4-45fe-ad6b-e568941d6765
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48f86ef34ce1ce01cffdfed4bb1ac54ff97c1fbe
-ms.sourcegitcommit: 980c959800b3c629cd9886ba640146236c9b979c
+ms.openlocfilehash: 8a5f66f2cb3eaa28036e4861ba42397eb371dd73f8d15452fb172e957809105f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "104118706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068831"
 ---
-# <a name="populating-filter-conditions"></a>Popolamento di condizioni di filtro
+# <a name="populating-filter-conditions"></a>Popolamento delle condizioni di filtro
 
-Nell'esempio di codice riportato di seguito viene illustrato come popolare le condizioni di filtro utilizzate da un'applicazione server per trovare filtri ed eventi che lo influiscono.
+Il codice di esempio seguente illustra come popolare le condizioni di filtro usate da un'applicazione server per trovare filtri ed eventi che la interessano.
 
 > [!Note]  
 > Queste condizioni sono le stesse supportate dall'API **IsPortAllowed** di livello inferiore.

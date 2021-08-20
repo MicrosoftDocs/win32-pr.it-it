@@ -1,54 +1,54 @@
 ---
-title: Esempio di aggiunta di un token Helper a un processo di trasferimento BITS
-description: È possibile configurare un processo di trasferimento di Servizio trasferimento intelligente in background (BITS) con un token di sicurezza aggiuntivo. Il processo di trasferimento BITS usa questo token di supporto per l'autenticazione e per accedere alle risorse.
+title: Esempio di aggiunta di un token helper a un processo di trasferimento BITS
+description: È possibile configurare un processo di Servizio trasferimento intelligente in background (BITS) con un token di sicurezza aggiuntivo. Il processo di trasferimento BITS usa questo token helper per l'autenticazione e per accedere alle risorse.
 ms.assetid: 08670c6d-e589-41be-842d-597f460d9c97
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dab12fe93ae54d91d02bef5e59e99d267571413e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c4adab6ca8cebeeca9b9883e89db28205dfdab1ea43e05c01fd119c14c26d374
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119528821"
 ---
-# <a name="example-adding-a-helper-token-to-a-bits-transfer-job"></a>Esempio: aggiunta di un token Helper a un processo di trasferimento BITS
+# <a name="example-adding-a-helper-token-to-a-bits-transfer-job"></a>Esempio: Aggiunta di un token helper a un processo di trasferimento BITS
 
-È possibile configurare un processo di trasferimento di Servizio trasferimento intelligente in background (BITS) con un token di sicurezza aggiuntivo. Il processo di trasferimento BITS usa questo token di supporto per l'autenticazione e per accedere alle risorse.
+È possibile configurare un processo di Servizio trasferimento intelligente in background (BITS) con un token di sicurezza aggiuntivo. Il processo di trasferimento BITS usa questo token helper per l'autenticazione e per accedere alle risorse.
 
-Per ulteriori informazioni, vedere [token helper per i processi di trasferimento BITS](helper-tokens-for-bits-transfer-jobs.md).
+Per altre informazioni, vedere [Token helper per i processi di trasferimento BITS.](helper-tokens-for-bits-transfer-jobs.md)
 
-La procedura seguente consente di creare un processo di trasferimento BITS nel contesto dell'utente locale, di ottenere le credenziali di un secondo utente, di creare un token di supporto con queste credenziali, quindi di impostare il token helper nel processo di trasferimento BITS.
+La procedura seguente crea un processo di trasferimento BITS nel contesto dell'utente locale, ottiene le credenziali di un secondo utente, crea un token helper con queste credenziali e quindi imposta il token helper nel processo di trasferimento BITS.
 
-Questo esempio usa l'intestazione e l'implementazione definite in [esempio: classi comuni](common-classes.md).
+Questo esempio usa l'intestazione e l'implementazione definite in [Esempio: classi comuni](common-classes.md).
 
-**Per aggiungere un token Helper a un processo di trasferimento BITS**
+**Per aggiungere un token helper a un processo di trasferimento BITS**
 
-1.  Inizializzare i parametri COM chiamando la funzione CCoInitializer. Per ulteriori informazioni sulla funzione CCoInitializer, vedere [example: Common Classes](common-classes.md).
-2.  Ottenere un puntatore all'interfaccia [**Metodo ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) . In questo esempio viene utilizzata la [classe CComPtr](/cpp/atl/reference/ccomptr-class?view=vs-2019) per gestire i puntatori di interfaccia com.
-3.  Inizializzare la sicurezza del processo COM chiamando [CoInitializeSecurity](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity). BITS richiede almeno il livello di rappresentazione della rappresentazione. BITS ha esito negativo con E \_ AccessDenied se il livello di rappresentazione corretto non è impostato.
-4.  Ottenere un puntatore all'interfaccia [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) e ottenere il localizzatore iniziale sui bit chiamando la funzione [CoCreateInstance]( /windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) .
-5.  Creare un processo di trasferimento BITS chiamando il metodo [**IBackgroundCopyManager:: CreateJob**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-createjob) .
-6.  Ottenere un puntatore all'interfaccia di callback CNotifyInterface e chiamare il metodo [**Metodo ibackgroundcopyjob:: SetNotifyInterface**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyinterface) per ricevere la notifica di eventi correlati al processo. Per ulteriori informazioni su CNotifyInterface, vedere [esempio: classi comuni](common-classes.md).
-7.  Chiamare il metodo [**Metodo ibackgroundcopyjob:: SetNotifyFlags**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyflags) per impostare i tipi di notifiche da ricevere. In questo esempio vengono impostati i flag di errore **BG \_ Notify \_ Job \_ trasferiti** e **BG \_ Notify \_ Job \_** .
-8.  Ottenere un puntatore all'interfaccia [**IBitsTokenOptions**](/windows/desktop/api/Bits4_0/nn-bits4_0-ibitstokenoptions) chiamando il metodo **Metodo ibackgroundcopyjob:: QueryInterface** con l'identificatore di interfaccia appropriato.
-9.  Tentativo di accesso all'utente del token helper. Creare un handle di rappresentazione e chiamare la [funzione LogonUser]( /windows/win32/api/winbase/nf-winbase-logonusera) per popolare l'handle di rappresentazione. In caso di esito positivo, chiamare la [funzione ImpersonateLoggedOnUser](/windows/win32/api/securitybaseapi/nf-securitybaseapi-impersonateloggedonuser). In caso di esito negativo, nell'esempio viene chiamata la [funzione RevertToSelf](/windows/win32/api/securitybaseapi/nf-securitybaseapi-reverttoself) per terminare la rappresentazione dell'utente connesso, viene generato un errore e l'handle viene chiuso.
-10. Chiamare il metodo [**IBitsTokenOptions:: SetHelperToken**](/windows/desktop/api/Bits4_0/nf-bits4_0-ibitstokenoptions-sethelpertoken) per rappresentare il token dell'utente che ha eseguito l'accesso. Se questo metodo ha esito negativo, nell'esempio viene chiamata la [funzione RevertToSelf](/windows/win32/api/securitybaseapi/nf-securitybaseapi-reverttoself) per terminare la rappresentazione dell'utente connesso, viene generato un errore e l'handle viene chiuso.
+1.  Inizializzare i parametri COM chiamando la funzione CCoInitializer. Per altre informazioni sulla funzione CCoInitializer, vedere [Esempio: classi comuni.](common-classes.md)
+2.  Ottenere un puntatore [**all'interfaccia IBackgroundCopyJob.**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) Questo esempio usa la [classe CComPtr per](/cpp/atl/reference/ccomptr-class?view=vs-2019) gestire i puntatori a interfaccia COM.
+3.  Inizializzare la sicurezza dei processi COM chiamando [CoInitializeSecurity.](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity) BITS richiede almeno il livello IMPERSONATE di rappresentazione. BITS ha esito negativo con E \_ ACCESSDENIED se non è impostato il livello di rappresentazione corretto.
+4.  Ottenere un puntatore [**all'interfaccia IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) e ottenere il localizzatore iniziale per BITS chiamando la [funzione CoCreateInstance.]( /windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)
+5.  Creare un processo di trasferimento BITS chiamando il [**metodo IBackgroundCopyManager::CreateJob.**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-createjob)
+6.  Ottenere un puntatore all'interfaccia di callback CNotifyInterface e chiamare il metodo [**IBackgroundCopyJob::SetNotifyInterface**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyinterface) per ricevere la notifica degli eventi correlati al processo. Per altre informazioni su CNotifyInterface, vedere [Esempio: classi comuni.](common-classes.md)
+7.  Chiamare il [**metodo IBackgroundCopyJob::SetNotifyFlags**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyflags) per impostare i tipi di notifiche da ricevere. In questo esempio vengono impostati **i flag BG \_ NOTIFY JOB \_ \_ TRANSFERRED** e **BG NOTIFY JOB \_ \_ \_ ERROR.**
+8.  Ottenere un puntatore [**all'interfaccia IBitsTokenOptions**](/windows/desktop/api/Bits4_0/nn-bits4_0-ibitstokenoptions) chiamando il metodo **IBackgroundCopyJob::QueryInterface** con l'identificatore di interfaccia appropriato.
+9.  Tentare di accedere all'utente del token helper. Creare un handle di rappresentazione e chiamare la [funzione LogonUser per]( /windows/win32/api/winbase/nf-winbase-logonusera) popolare l'handle di rappresentazione. In caso di esito positivo, [chiamare la funzione ImpersonateLoggedOnUser](/windows/win32/api/securitybaseapi/nf-securitybaseapi-impersonateloggedonuser). Se ha esito negativo, nell'esempio viene chiamata la funzione [RevertToSelf](/windows/win32/api/securitybaseapi/nf-securitybaseapi-reverttoself) per terminare la rappresentazione dell'utente connesso, viene generato un errore e l'handle viene chiuso.
+10. Chiamare il [**metodo IBitsTokenOptions::SetHelperToken**](/windows/desktop/api/Bits4_0/nf-bits4_0-ibitstokenoptions-sethelpertoken) per rappresentare il token dell'utente connesso. Se questo metodo ha esito negativo, nell'esempio viene chiamata la funzione [RevertToSelf](/windows/win32/api/securitybaseapi/nf-securitybaseapi-reverttoself) per terminare la rappresentazione dell'utente connesso, viene generato un errore e l'handle viene chiuso.
     > [!Note]
     >
-    > Nelle versioni supportate di Windows precedenti a Windows 10, versione 1607, il proprietario del processo deve disporre di credenziali amministrative per chiamare il metodo [**IBitsTokenOptions:: SetHelperToken**](/windows/desktop/api/Bits4_0/nf-bits4_0-ibitstokenoptions-sethelpertoken) .
+    > Nelle versioni supportate di Windows prima di Windows 10 versione 1607, il proprietario del processo deve avere credenziali amministrative per chiamare il metodo [**IBitsTokenOptions::SetHelperToken.**](/windows/desktop/api/Bits4_0/nf-bits4_0-ibitstokenoptions-sethelpertoken)
     >
-    > A partire da Windows 10, versione 1607, i proprietari dei processi non amministrativi possono impostare token Helper non amministratori nei processi BITS di cui sono proprietari. Per impostare i token helper con privilegi di amministratore, i proprietari dei processi devono avere ancora credenziali amministrative.
+    > A partire Windows 10 versione 1607, i proprietari di processi non amministratori possono impostare token helper non di amministratore per i processi BITS di cui sono proprietari. I proprietari di processi devono comunque avere credenziali amministrative per impostare i token helper con privilegi di amministratore.
 
-     
+     
 
-11. Chiamare il metodo [**IBitsTokenOptions:: SetHelperTokenFlags**](/windows/desktop/api/Bits4_0/nf-bits4_0-ibitstokenoptions-sethelpertokenflags) per specificare le risorse a cui accedere usando il contesto di sicurezza del token di supporto.
-12. Una volta completata la rappresentazione, nell'esempio viene chiamata la [funzione RevertToSelf](/windows/win32/api/securitybaseapi/nf-securitybaseapi-reverttoself) per terminare la rappresentazione dell'utente connesso e l'handle viene chiuso.
-13. Aggiungere i file al processo di trasferimento BITS chiamando [**Metodo ibackgroundcopyjob:: AddFile**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-addfile).
-14. Una volta aggiunto il file, chiamare [**Metodo ibackgroundcopyjob:: Resume**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-resume) per riprendere il processo.
-15. Configurare un ciclo while per attendere il messaggio QUIT dall'interfaccia di callback mentre è in corso il trasferimento del processo. Il ciclo while usa la funzione [GetTickCount](/windows/win32/api/sysinfoapi/nf-sysinfoapi-gettickcount) per recuperare il numero di millisecondi trascorsi dall'avvio del processo di trasferimento.
-16. Al termine del processo di trasferimento BITS, rimuovere il processo dalla coda chiamando [**Metodo ibackgroundcopyjob:: complete**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-complete).
+11. Chiamare il [**metodo IBitsTokenOptions::SetHelperTokenFlags**](/windows/desktop/api/Bits4_0/nf-bits4_0-ibitstokenoptions-sethelpertokenflags) per specificare le risorse a cui accedere usando il contesto di sicurezza del token helper.
+12. Al termine della rappresentazione, nell'esempio viene chiamata la funzione [RevertToSelf](/windows/win32/api/securitybaseapi/nf-securitybaseapi-reverttoself) per terminare la rappresentazione dell'utente connesso e l'handle viene chiuso.
+13. Aggiungere file al processo di trasferimento BITS chiamando [**IBackgroundCopyJob::AddFile**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-addfile).
+14. Dopo aver aggiunto il file, chiamare [**IBackgroundCopyJob::Resume**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-resume) per riprendere il processo.
+15. Configurare un ciclo while per attendere il messaggio di uscita dall'interfaccia di callback durante il trasferimento del processo. Il ciclo while usa la [funzione GetTickCount](/windows/win32/api/sysinfoapi/nf-sysinfoapi-gettickcount) per recuperare il numero di millisecondi trascorsi dall'avvio del trasferimento del processo.
+16. Al termine del processo di trasferimento BITS, rimuovere il processo dalla coda chiamando [**IBackgroundCopyJob::Complete**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-complete).
 
-Nell'esempio di codice seguente viene aggiunto un token Helper a un processo di trasferimento BITS.
+Nell'esempio di codice seguente viene aggiunto un token helper a un processo di trasferimento BITS.
 
 
 ```C++
@@ -279,6 +279,6 @@ void _cdecl _tmain(int argc, LPWSTR* argv)
 [Esempio: classi comuni](common-classes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

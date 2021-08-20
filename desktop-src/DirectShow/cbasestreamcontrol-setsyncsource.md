@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetSyncSource notifica alla classe di base il clock di riferimento corrente.
+description: Il metodo SetSyncSource notifica la classe di base dell'orologio di riferimento corrente.
 ms.assetid: 056385ac-682c-456e-9a5f-86490bd6e05f
-title: Metodo CBaseStreamControl. SetSyncSource (Strmctl. h)
+title: Metodo CBaseStreamControl.SetSyncSource (Strmctl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 60832d1bf7ceca59089875f10579d52cf2cfec4e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b2b7fa5a4f627b33bbca1665e3d1ff2c5bc347cfa0e35adec37e0afffa81f198
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954780"
 ---
-# <a name="cbasestreamcontrolsetsyncsource-method"></a>CBaseStreamControl. SetSyncSource, metodo
+# <a name="cbasestreamcontrolsetsyncsource-method"></a>Metodo CBaseStreamControl.SetSyncSource
 
-Il `SetSyncSource` metodo notifica alla classe di base l'orologio di riferimento corrente.
+Il `SetSyncSource` metodo notifica la classe di base dell'orologio di riferimento corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ void SetSyncSource(
 *pRefClock* 
 </dt> <dd>
 
-Puntatore all'interfaccia [**IReferenceClock**](/windows/desktop/api/Strmif/nn-strmif-ireferenceclock) dell'orologio di riferimento.
+Puntatore [**all'interfaccia IReferenceClock**](/windows/desktop/api/Strmif/nn-strmif-ireferenceclock) del clock di riferimento.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Chiamare questo metodo dall'interno del metodo [**IMediaFilter:: SetSyncSource**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-setsyncsource) del filtro. La classe **CBaseStreamControl** usa l'interfaccia **IReferenceClock** per assicurarsi che non elimini troppo rapidamente i campioni.
+Chiamare questo metodo dall'interno del metodo [**IMediaFilter::SetSyncSource del**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-setsyncsource) filtro. La **classe CBaseStreamControl** usa **l'interfaccia IReferenceClock** per assicurarsi che non scarti gli esempi troppo rapidamente.
 
 ## <a name="examples"></a>Esempio
 
@@ -78,8 +78,8 @@ STDMETHODIMP CMyFilter::SetSyncSource(IReferenceClock *pClock)
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Strmctl. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Strmctl.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

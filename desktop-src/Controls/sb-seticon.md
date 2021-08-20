@@ -1,9 +1,9 @@
 ---
-title: Messaggio SB_SETICON (COMmctrl. h)
-description: Imposta l'icona di una parte in una barra di stato.
+title: SB_SETICON messaggio (Commctrl.h)
+description: Imposta l'icona per una parte in una barra di stato.
 ms.assetid: d8528cd1-54d2-44ba-b0d6-29111f75616a
 keywords:
-- Controlli di Windows Message SB_SETICON
+- SB_SETICON di Windows messaggi
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f720c414238eb89cf98bf0556ebabffefceae4b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d0e08b1c3b0ce1a453ca9050c20552a14169a594c8091708339b4a436f1fb1a3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540071"
 ---
-# <a name="sb_seticon-message"></a>\_Messaggio dell'icona SB
+# <a name="sb_seticon-message"></a>Messaggio \_ SETICON SB
 
-Imposta l'icona di una parte in una barra di stato.
+Imposta l'icona per una parte in una barra di stato.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,24 +32,24 @@ Imposta l'icona di una parte in una barra di stato.
 *wParam* 
 </dt> <dd>
 
-Indice in base zero della parte che riceverà l'icona. Se questo parametro è-1, si presuppone che la barra di stato sia una barra di stato semplice.
+Indice in base zero della parte che riceverà l'icona. Se questo parametro è -1, si presuppone che la barra di stato sia una semplice barra di stato.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Handle per l'icona da impostare. Se questo valore è **null**, l'icona viene rimossa dalla parte.
+Handle per l'icona da impostare. Se questo valore è **NULL,** l'icona viene rimossa dalla parte.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso contrario.
+Restituisce un valore diverso da zero in caso di esito positivo oppure zero in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-La barra di stato non eliminerà l'icona. È responsabilità dell'applicazione chiamante tenere traccia ed eliminare eventuali icone.
+La barra di stato non elimina l'icona. È responsabilità dell'applicazione chiamante tenere traccia delle icone ed eliminare le icone.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ La barra di stato non eliminerà l'icona. È responsabilità dell'applicazione c
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

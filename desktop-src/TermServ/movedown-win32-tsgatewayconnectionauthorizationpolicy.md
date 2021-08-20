@@ -1,6 +1,6 @@
 ---
 title: Metodo MoveDown della classe Win32_TSGatewayConnectionAuthorizationPolicy
-description: Sposta il criterio di autorizzazione Desktop remoto connessione corrente (RD \ 160; CAP) una posizione verso il basso nell'ordine in cui RD \ 160; Vengono valutati i CAP.
+description: Sposta il criterio Desktop remoto di autorizzazione della connessione corrente (RD \ 160; CAP) una posizione verso il basso nell'ordine in cui RD \ 160; I CAP vengono valutati.
 ms.assetid: 57349e59-e200-4789-bbcb-d474eacde39d
 ms.tgt_platform: multiple
 keywords:
@@ -26,7 +26,7 @@ ms.locfileid: "119058739"
 ---
 # <a name="movedown-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Metodo MoveDown della classe \_ TSGatewayConnectionAuthorizationPolicy Win32
 
-Sposta la posizione corrente Desktop remoto criteri di autorizzazione connessione Desktop remoto di una posizione verso il basso nell'ordine in cui vengono valutati i criteri di autorizzazione connessioni Desktop remoto. Questo metodo incrementa la **proprietà Order** dell'oggetto RD CAP corrente e decrementa la proprietà **Order** dell'oggetto RD CAP che ha seguito l'oggetto RD CAP corrente.
+Sposta la posizione corrente Desktop remoto criteri di autorizzazione connessione Desktop remoto di una posizione verso il basso nell'ordine in cui vengono valutati i criteri di autorizzazione connessioni Desktop remoto. Questo metodo incrementa la **proprietà Order** dell'oggetto CAP di Desktop remoto corrente e decrementa la proprietà **Order** dell'oggetto CAP di Desktop remoto che ha seguito il cap di Desktop remoto corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,9 +47,9 @@ Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo
 
 ## <a name="remarks"></a>Commenti
 
-Per chiamare questo metodo, è necessario essere membri del gruppo Administrators.
+Per chiamare questo metodo, è necessario essere un membro del gruppo Administrators.
 
-Managed Object Format file MOF contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,7 +59,7 @@ Managed Object Format file MOF contengono le definizioni per le classi WMI (Wind
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                           |
-| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                 |
+| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                 |
 | MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 

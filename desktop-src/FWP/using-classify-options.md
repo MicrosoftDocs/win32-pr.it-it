@@ -1,21 +1,21 @@
 ---
 title: Uso delle opzioni di classificazione
-description: Gli esempi di codice seguenti illustrano come usare le opzioni di classificazione dei filtri per modificare il processo di filtraggio.
+description: Gli esempi di codice seguenti illustrano come usare le opzioni di classificazione dei filtri per modificare il processo di filtro.
 ms.assetid: 02d57ea2-066b-4cb9-81f1-2ff9ee55f22f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b08363e26443f8d407be14d0db207e37412b1298
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bfbbe99bd155832534f9f1d7d27372dd49e13f6e6154fbc36739657477163193
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119535371"
 ---
 # <a name="using-classify-options"></a>Uso delle opzioni di classificazione
 
-Negli esempi di codice seguenti viene illustrato come utilizzare le opzioni di classificazione dei filtri per modificare il processo di filtraggio.
+Gli esempi di codice seguenti illustrano come usare le opzioni di classificazione dei filtri per modificare il processo di filtro.
 
-## <a name="enable-loose-source-mapping-for-a-remote-udp-port"></a>Abilitare il mapping delle origini separate per una porta UDP remota
+## <a name="enable-loose-source-mapping-for-a-remote-udp-port"></a>Abilitare il mapping di origine libero per una porta UDP remota
 
 
 ```C++
@@ -156,7 +156,7 @@ CLEANUP:
 
 
 
-## <a name="modify-the-idle-lifetimes-for-ale-flows"></a>Modificare la durata di inattività per i flussi ALE
+## <a name="modify-the-idle-lifetimes-for-ale-flows"></a>Modificare le durate di inattività per i flussi ALE
 
 
 ```C++
@@ -304,9 +304,9 @@ DWORD wmain(int argc,
 [**Condizioni di filtro disponibili a ogni livello di filtro**](filtering-conditions-available-at-each-filtering-layer.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

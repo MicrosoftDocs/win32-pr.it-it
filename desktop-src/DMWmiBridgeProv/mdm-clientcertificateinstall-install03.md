@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_ClientCertificateInstall_Install03
-description: La \_ classe MDM ClientCertificateInstall \_ Install03 consente all'organizzazione di impostare l'installazione dei certificati client.
+title: MDM_ClientCertificateInstall_Install03 classe
+description: La classe MDM \_ ClientCertificateInstall \_ Install03 consente all'organizzazione di impostare l'installazione dei certificati client.
 ms.assetid: 0083e54c-e621-47da-a20d-17c8bbf7dd3a
 keywords:
-- Classe MDM_ClientCertificateInstall_Install03
-- Classe MDM_ClientCertificateInstall_Install03, descritta
+- MDM_ClientCertificateInstall_Install03 classe
+- MDM_ClientCertificateInstall_Install03 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -17,21 +17,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04ac690808551e05d6ceba4f3c84bcaa521d4d01
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d013341f7afd20f71bc939617e551cb018dbeaa96d5f140b37de99ea79843f37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077335"
 ---
-# <a name="mdm_clientcertificateinstall_install03-class"></a>\_Classe MDM ClientCertificateInstall \_ Install03
+# <a name="mdm_clientcertificateinstall_install03-class"></a>Classe \_ Mdm ClientCertificateInstall \_ Install03
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La classe **MDM \_ ClientCertificateInstall \_ Install03** consente all'organizzazione di impostare l'installazione dei certificati client. Obbligatorio per la registrazione del certificato SCEP. Nodo padre per raggruppare la richiesta relativa all'installazione del certificato SCEP.
+La **classe MDM \_ ClientCertificateInstall \_ Install03** consente all'organizzazione di impostare l'installazione dei certificati client. Obbligatorio per la registrazione del certificato SCEP. Nodo padre per raggruppare la richiesta correlata all'installazione del certificato SCEP.
 
 > [!Note]  
-> Anche se i nodi figlio in installazione supportano i comandi Replace, dopo l'invio del comando exec al dispositivo, il dispositivo utilizzerà i valori impostati quando il comando exec viene accettato. Il server non deve aspettarsi che la modifica del valore del nodo dopo l'accettazione del comando exec influirà sulla registrazione in corso. Il server deve verificare il valore del nodo stato e assicurarsi che il dispositivo non sia in fase sconosciuta prima di modificare i valori del nodo figlio.
+> Anche se i nodi figlio in Installa supportano i comandi Replace, dopo l'invio del comando Exec al dispositivo, il dispositivo accetterà i valori impostati quando il comando Exec viene accettato. Il server non deve prevedere che la modifica del valore del nodo dopo l'accettazione del comando Exec inciderà sulla registrazione corrente in corso. Il server deve controllare il valore del nodo Stato e assicurarsi che il dispositivo non sia in una fase sconosciuta prima di modificare i valori del nodo figlio.
 
  
 
@@ -68,14 +68,14 @@ class MDM_ClientCertificateInstall_Install03
 
 ## <a name="members"></a>Members
 
-La classe **MDM \_ ClientCertificateInstall \_ Install03** presenta questi tipi di membri:
+La **classe MDM \_ ClientCertificateInstall \_ Install03** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **MDM \_ ClientCertificateInstall \_ Install03** ha questi metodi.
+La **classe MDM \_ ClientCertificateInstall \_ Install03** include questi metodi.
 
 
 
@@ -89,28 +89,28 @@ La classe **MDM \_ ClientCertificateInstall \_ Install03** ha questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **MDM \_ ClientCertificateInstall \_ Install03** dispone di queste proprietà.
+La **classe MDM \_ ClientCertificateInstall \_ Install03** ha queste proprietà.
 
 <dl> <dt>
 
 [AADKeyIdentifierList](/windows/client-management/mdm/clientcertificateinstall-csp#clientcertificateinstall-scep-uniqueid-install-aadkeyidentifierlist)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[Identificazione personale](/windows/client-management/mdm/clientcertificateinstall-csp#clientcertificateinstall-scep-uniqueid-install-cathumbprint)
+[CAThumbprint](/windows/client-management/mdm/clientcertificateinstall-csp#clientcertificateinstall-scep-uniqueid-install-cathumbprint)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -118,21 +118,21 @@ Tipo di accesso: lettura/scrittura
 [Sfida](/windows/client-management/mdm/clientcertificateinstall-csp#clientcertificateinstall-scep-uniqueid-install-challenge)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[ContainerName](/windows/client-management/mdm/clientcertificateinstall-csp#clientcertificateinstall-pfxcertinstall-uniqueid-containername)
+[Containername](/windows/client-management/mdm/clientcertificateinstall-csp#clientcertificateinstall-pfxcertinstall-uniqueid-containername)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -140,10 +140,10 @@ Tipo di accesso: lettura/scrittura
 [CustomTextToShowInPrompt](/windows/client-management/mdm/clientcertificateinstall-csp#clientcertificateinstall-scep-uniqueid-install-customtexttoshowinprompt)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -151,21 +151,21 @@ Tipo di accesso: lettura/scrittura
 [EKUMapping](/windows/client-management/mdm/clientcertificateinstall-csp#clientcertificateinstall-scep-uniqueid-install-ekumapping)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[HashAlgorithm](/windows/client-management/mdm/clientcertificateinstall-csp#clientcertificateinstall-scep-uniqueid-install-hashalgorithm)
+[Hashalgorithm](/windows/client-management/mdm/clientcertificateinstall-csp#clientcertificateinstall-scep-uniqueid-install-hashalgorithm)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -173,7 +173,7 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -182,9 +182,9 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Obbligatorio per la registrazione del certificato SCEP. Nodo padre per raggruppare la richiesta relativa all'installazione del certificato SCEP.
+Obbligatorio per la registrazione del certificato SCEP. Nodo padre per raggruppare la richiesta correlata all'installazione del certificato SCEP.
 
-Il formato è node.
+Format è node.
 
 </dd> <dt>
 
@@ -194,18 +194,18 @@ Il formato è node.
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[Protezione di dati](/windows/client-management/mdm/clientcertificateinstall-csp#clientcertificateinstall-scep-uniqueid-install-keyprotection)
+[KeyProtection](/windows/client-management/mdm/clientcertificateinstall-csp#clientcertificateinstall-scep-uniqueid-install-keyprotection)
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -216,15 +216,15 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -235,7 +235,7 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 
 Descrive il percorso completo del nodo padre.
 
-La stringa è "./Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/SCEP/*UniqueId*"
+La stringa è "./Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/SCEP/*UniqueID*"
 
 </dd> <dt>
 
@@ -245,7 +245,7 @@ La stringa è "./Vendor/MSFT/ClientCertificateInstall/PFXCertInstall/SCEP/*Uniqu
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -256,7 +256,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -264,10 +264,10 @@ Tipo di accesso: lettura/scrittura
 [ServerURL](/windows/client-management/mdm/clientcertificateinstall-csp#clientcertificateinstall-scep-uniqueid-install-serverurl)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -275,10 +275,10 @@ Tipo di accesso: lettura/scrittura
 [SubjectAlternativeNames](/windows/client-management/mdm/clientcertificateinstall-csp#clientcertificateinstall-scep-uniqueid-install-subjectalternativenames)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -286,21 +286,21 @@ Tipo di accesso: lettura/scrittura
 [SubjectName](/windows/client-management/mdm/clientcertificateinstall-csp#clientcertificateinstall-scep-uniqueid-install-subjectname)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[TemplateName](/windows/client-management/mdm/clientcertificateinstall-csp#clientcertificateinstall-scep-uniqueid-install-templatename)
+[Templatename](/windows/client-management/mdm/clientcertificateinstall-csp#clientcertificateinstall-scep-uniqueid-install-templatename)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -308,10 +308,10 @@ Tipo di accesso: lettura/scrittura
 [ValidPeriod](/windows/client-management/mdm/clientcertificateinstall-csp#clientcertificateinstall-scep-uniqueid-install-validperiod)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -322,7 +322,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -333,10 +333,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -345,7 +345,7 @@ Tipo di accesso: lettura/scrittura
 
 <dl> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

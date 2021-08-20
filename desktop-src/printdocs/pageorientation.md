@@ -1,19 +1,19 @@
 ---
-description: Informazioni sull'elemento configurabile dall'utente PageOrientation. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Leggere l'elemento PageOrientation configurabile dall'utente. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 52f02fc1-56fb-404d-8939-df3a4b21570d
-title: Orientamento pagina
+title: PageOrientation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6f0af08fcd29f34bb55bd16b1eac50487e96ffb
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 4ece08b4a9500b72cab3bf36f4c40b6379532cf8b89d483b09a4b067ff1737ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034109"
 ---
-# <a name="pageorientation"></a>Orientamento pagina
+# <a name="pageorientation"></a>PageOrientation
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Descrive l'orientamento del foglio multimediale fisico.
 
@@ -23,8 +23,8 @@ Descrive l'orientamento del foglio multimediale fisico.
 |------------------------------|---------------------------------------------------------------------------------------------------------|
 | Orizzontale <br/>        | Il contenuto viene ruotato a pagina 90? gradi CCW rispetto all'orientamento standard (verticale).<br/>  |
 | Verticale <br/>         | Orientamento standard.<br/>                                                                        |
-| ReverseLandscape <br/> | Il contenuto viene ruotato nella pagina 270?? gradi CCW rispetto all'orientamento standard (verticale).<br/> |
-| ReversePortrait <br/>  | Il contenuto viene ruotato nella pagina 180?? gradi rispetto all'orientamento standard (verticale).<br/>     |
+| ReverseLandscape <br/> | Il contenuto viene ruotato sulla pagina 270?? gradi CCW rispetto all'orientamento standard (verticale).<br/> |
+| ReversePortrait <br/>  | Il contenuto viene ruotato sulla pagina 180?? gradi rispetto all'orientamento standard (verticale).<br/>     |
 
 
 
@@ -42,7 +42,7 @@ Descrive l'orientamento del foglio multimediale fisico.
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo di elemento <br/>   | Funzionalità<br/>                                                                                                                                                                                      |
 | Prefisso di ambito <br/> | Pagina<br/>                                                                                                                                                                                         |
-| Note <br/>          | Se un dispositivo stampante può supportare solo una direzione orizzontale e questa direzione è detta "orizzontale inverso", l'orientamento della pagina verrà comunque considerato "orizzontale".<br/> |
+| Note <br/>          | Se un dispositivo stampante può supportare una sola direzione orizzontale e questa direzione è detta "orizzontale inverso", l'orientamento della pagina verrà comunque considerato "orizzontale".<br/> |
 
 
 
@@ -74,7 +74,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                               | Tipo di dati         | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                      |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                           |
+| \_OptionName\_<br/>          | string<br/> | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                           |
 | \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/> |
 
 
@@ -83,7 +83,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
+Le parole chiave pubbliche dello schema di stampa sono definite nello spazio https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords dei nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:PageOrientation">

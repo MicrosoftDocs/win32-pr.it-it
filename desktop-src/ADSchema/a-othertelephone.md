@@ -1,11 +1,11 @@
 ---
-title: Phone-Office-altro attributo
-description: Elenco di numeri di telefono dell'ufficio alternativi.
+title: Telefono-Office-Other
+description: Elenco di numeri di telefono dell'ufficio alternativo.
 ms.assetid: 4688b9c1-d888-41af-a20e-50a9e82952a6
 ms.tgt_platform: multiple
 keywords:
-- Phone-Office-altro attributo AD schema di AD
-- Schema AD dell'attributo otherTelephone
+- Telefono-Office-Other - Schema DI ACTIVE Directory
+- Attributo otherTelephone Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e60fa680ea0181d38cbe5703464dff81e4e2ab49
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ccd4e297c56fd01cfe2864cc71728f1d1a16cac618e925848854c6cc0a07b1e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648101"
 ---
-# <a name="phone-office-other-attribute"></a>Phone-Office-altro attributo
+# <a name="phone-office-other-attribute"></a>Telefono-Office-Other
 
-Elenco di numeri di telefono dell'ufficio alternativi.
+Elenco di numeri di telefono dell'ufficio alternativo.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------------------------------------------|
-| CN                | Telefono-ufficio-altro                                                              |
-| LDAP-Display-Name | otherTelephone                                                                  |
+| CN                | Telefono-Office-Other                                                              |
+| Ldap-Display-Name | otherTelephone                                                                  |
 | Dimensione              | \-                                                                              |
-| Privilegio aggiornamento  | Amministratore di dominio o proprietario dell'account.                                          |
-| Frequenza di aggiornamento  | Quando viene creato il record degli utenti e ogni volta che il numero di telefono deve essere modificato. |
+| Aggiorna privilegio  | Amministratore di dominio o proprietario dell'account.                                          |
+| Frequenza di aggiornamento  | Quando il record degli utenti viene creato e ogni volta che il numero di telefono deve cambiare. |
 | Attribute-Id      | 1.2.840.113556.1.2.18                                                           |
-| System-ID-GUID    | f0f8ffa5-1191-11d0-a060-00aa006c33ed                                            |
+| System-Id-Guid    | f0f8ffa5-1191-11d0-a060-00aa006c33ed                                            |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                     |
 
 
@@ -58,15 +58,15 @@ Elenco di numeri di telefono dell'ufficio alternativi.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x3A1B                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| A valore singolo       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Elenco di numeri di telefono dell'ufficio alternativi.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x3A1B                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| A valore singolo       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Elenco di numeri di telefono dell'ufficio alternativi.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x3A1B                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| A valore singolo       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Elenco di numeri di telefono dell'ufficio alternativi.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x3A1B                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Elenco di numeri di telefono dell'ufficio alternativi.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x3A1B                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Elenco di numeri di telefono dell'ufficio alternativi.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x3A1B                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 

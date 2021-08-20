@@ -1,5 +1,5 @@
 ---
-title: Routine di _aulldiv
+title: routine _aulldiv
 description: Divide due interi ULONGLONG.
 ms.assetid: na
 ms.topic: reference
@@ -14,21 +14,21 @@ api_location:
 api_name:
 - _aulldiv
 targetos: Windows
-ms.openlocfilehash: 2fce346ee9608f20667c76841a63a8a3fb9cfe21
-ms.sourcegitcommit: 1f6a1bfc1c4bb2641bc3ba44beb1f2727c94681b
+ms.openlocfilehash: 0a37dd5a88d668ed92d79f7bc939119068840741a54cfacb5a15119fcefb774e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "104472203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119538901"
 ---
 # <a name="_aulldiv-routine"></a>\_Routine aulldiv
 
-Divide due interi **ULONGLONG** .
-Ad esempio, per dividere due valori UInt64, il compilatore potrebbe generare una chiamata alla routine **\_ aulldiv** .
+Divide due **interi ULONGLONG.**
+Ad esempio, per dividere due valori uint64 il compilatore potrebbe generare una chiamata alla routine **\_ aulldiv.**
 
 ## <a name="remarks"></a>Commenti
 
-La routine **\_ aulldiv** è una routine di supporto per il compilatore C.
-Il fatto che il compilatore usi **\_ aulldiv** dipenda completamente dal set di ottimizzazione.
+La **\_ routine aulldiv** è una routine helper per il compilatore C.
+Il fatto che il **\_ compilatore usi aulldiv** dipende completamente dal set di ottimizzazione.
 
-Questa funzione viene utilizzata solo su piattaforme x86.
+Questa funzione viene usata solo nelle piattaforme x86.

@@ -1,6 +1,6 @@
 ---
 title: Attributo AlbumArtistSortOrder
-description: L'attributo AlbumArtistSortOrder è il valore da usare per l'ordinamento della colonna Artist dell'album nella libreria.
+description: L'attributo AlbumArtistSortOrder è il valore da usare per ordinare la colonna Album Artist nella libreria.
 ms.assetid: 5235728b-8d1c-4631-8125-c23648566841
 keywords:
 - Attributo AlbumArtistSortOrder Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d3bec4e67313ded718784051fb09762febd34d59
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0d3c4e4a1520cd9c7e4a1404203ccd0a15dfbffce8937fe74f477876b3e34f09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055399"
 ---
 # <a name="albumartistsortorder-attribute"></a>Attributo AlbumArtistSortOrder
 
-L'attributo **AlbumArtistSortOrder** è il valore da usare per l'ordinamento della colonna **Artist dell'album** nella libreria.
+**L'attributo AlbumArtistSortOrder** è il valore da usare per ordinare la **colonna Album Artist** nella libreria.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -31,7 +31,7 @@ L'attributo **AlbumArtistSortOrder** è il valore da usare per l'ordinamento del
 
 Questo attributo viene archiviato solo nella libreria.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,7 +39,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------|
-| Versione<br/> | Solo Windows Media Player 9 serie<br/> |
+| Versione<br/> | Windows Media Player serie 9<br/> |
 
 
 
@@ -47,7 +47,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

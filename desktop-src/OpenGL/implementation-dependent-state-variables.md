@@ -1,9 +1,9 @@
 ---
-title: Implementation-Dependent di stato
-description: Implementation-Dependent di stato
+title: Implementation-Dependent variabili di stato
+description: Implementation-Dependent variabili di stato
 ms.assetid: 6778b50c-a6ac-4106-9dd6-3a123c257687
 keywords:
-- Implementation-Dependent State Variables OpenGL
+- Implementation-Dependent state variables OpenGL
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119061459"
 ---
-# <a name="implementation-dependent-state-variables"></a>Implementation-Dependent di stato
+# <a name="implementation-dependent-state-variables"></a>Implementation-Dependent variabili di stato
 
-<dl> <dt><span id="GL_MAX_LIGHTS"></span><span id="gl_max_lights"></span>GL \_ MAX \_ LIGHTS</dt> <dd> 
+<dl> <dt><span id="GL_MAX_LIGHTS"></span><span id="gl_max_lights"></span>LUCI MAX GL \_ \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------|
@@ -112,7 +112,7 @@ ms.locfileid: "119061459"
 
  
 
-</dd> <dt><span id="GL_MAX_PIXEL_MAP_TABLE"></span><span id="gl_max_pixel_map_table"></span>GL \_ MAX \_ PIXEL \_ MAP \_ TABLE</dt> <dd> 
+</dd> <dt><span id="GL_MAX_PIXEL_MAP_TABLE"></span><span id="gl_max_pixel_map_table"></span>TABELLA \_ DELLA MAPPA DEI \_ PIXEL \_ \_ DI GL MAX</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
@@ -129,7 +129,7 @@ ms.locfileid: "119061459"
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
-| Descrizione:     | Profondità massima dello stack dei nomi di selezione                                               |
+| Descrizione:     | Profondità massima dello stack selection-name                                               |
 | Gruppo di attributi: |                                                                                  |
 | Valore iniziale:   | 64                                                                               |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -138,7 +138,7 @@ ms.locfileid: "119061459"
 
  
 
-</dd> <dt><span id="GL_MAX_LIST_NESTING"></span><span id="gl_max_list_nesting"></span>\_ \_ ANNIDAMENTO ELENCO MAX GL \_</dt> <dd> 
+</dd> <dt><span id="GL_MAX_LIST_NESTING"></span><span id="gl_max_list_nesting"></span>\_ \_ ANNIDAMENTO \_ DELL'ELENCO MASSIMO GL</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
@@ -190,7 +190,7 @@ ms.locfileid: "119061459"
 
  
 
-</dd> <dt><span id="GL_AUX_BUFFERS"></span><span id="gl_aux_buffers"></span>BUFFER \_ DELL'ESPERIENZA \_ UTENTE GL</dt> <dd> 
+</dd> <dt><span id="GL_AUX_BUFFERS"></span><span id="gl_aux_buffers"></span>BUFFER \_ DELL'ESPERIENZA UTENTE GL \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
@@ -216,7 +216,7 @@ ms.locfileid: "119061459"
 
  
 
-</dd> <dt><span id="GL_INDEX_MODE"></span><span id="gl_index_mode"></span>MODALITÀ \_ DI INDICIZZAZIONE GL \_</dt> <dd> 
+</dd> <dt><span id="GL_INDEX_MODE"></span><span id="gl_index_mode"></span>MODALITÀ DI INDICIZZAZIONE GL \_ \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
@@ -233,7 +233,7 @@ ms.locfileid: "119061459"
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
-| Descrizione:     | True se esistono buffer front-and-back                                             |
+| Descrizione:     | True se sono presenti buffer front-back                                             |
 | Gruppo di attributi: |                                                                                  |
 | Valore iniziale:   |                                                                                  |
 | Comando Get:     | [**glGetBooleanv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -255,11 +255,11 @@ ms.locfileid: "119061459"
 
  
 
-</dd> <dt><span id="GL_POINT_SIZE_RANGE"></span><span id="gl_point_size_range"></span>INTERVALLO \_ DI DIMENSIONI DEI PUNTI \_ GL \_</dt> <dd> 
+</dd> <dt><span id="GL_POINT_SIZE_RANGE"></span><span id="gl_point_size_range"></span>INTERVALLO \_ DIMENSIONI \_ PUNTO GL \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|--------------------------------------------------------------------------------|
-| Descrizione:     | Intervallo (da basso a alto) di dimensioni dei punti antialias                                 |
+| Descrizione:     | Intervallo (da basso a alto) di dimensioni dei punti con antialias                                 |
 | Gruppo di attributi: |                                                                                |
 | Valore iniziale:   | 1, 1                                                                           |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -268,7 +268,7 @@ ms.locfileid: "119061459"
 
  
 
-</dd> <dt><span id="GL_POINT_SIZE_GRANULARITY"></span><span id="gl_point_size_granularity"></span>GRANULARITÀ \_ DELLE \_ DIMENSIONI DEI \_ PUNTI GL</dt> <dd> 
+</dd> <dt><span id="GL_POINT_SIZE_GRANULARITY"></span><span id="gl_point_size_granularity"></span>\_GRANULARITÀ DELLE \_ DIMENSIONI DEI \_ PUNTI GL</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|--------------------------------------------------------------------------------|

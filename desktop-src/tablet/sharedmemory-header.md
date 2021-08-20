@@ -58,7 +58,7 @@ Dimensione, in byte, dei dati a cui fa riferimento questa struttura di intestazi
 **cbOffsetSns**
 </dt> <dd>
 
-Dimensione, in byte, dell'offset dei numeri di serie rispetto alla struttura dell'intestazione.
+Dimensione, in byte, dell'offset dei numeri di serie dalla struttura dell'intestazione.
 
 </dd> <dt>
 

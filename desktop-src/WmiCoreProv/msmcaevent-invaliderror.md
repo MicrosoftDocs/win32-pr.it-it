@@ -1,7 +1,7 @@
 ---
-description: Indica un errore MCA (computer Check Architecture) non valido. Un errore MCA non valido identifica un formato di errore che non è conforme alle specifiche di Windows. Questa classe è disponibile solo nei sistemi Windows a 64 bit.
+description: Indica un errore di machine check architecture (MCA) non valido. Un errore MCA non valido identifica un formato di errore non conforme Windows specifiche. Questa classe è disponibile solo nei sistemi Windows a 64 bit.
 ms.assetid: 476ea558-2e0e-480f-b4ba-8d73fdef3308
-title: Classe MSMCAEvent_InvalidError
+title: MSMCAEvent_InvalidError classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,18 +23,18 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: abd12cfa7280a1b2f6a718b47b17d4ddf121cc25
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a42ee7dfcc9864cdd4ca90ba7d66903407352e92224e5ded7a16ace4e053d37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118821975"
 ---
-# <a name="msmcaevent_invaliderror-class"></a>\_Classe MSMCAEvent InvalidError
+# <a name="msmcaevent_invaliderror-class"></a>Classe \_ InvalidError MSMCAEvent
 
-La classe **MSMCAEvent \_ InvalidError** indica un errore MCA (Machine Check Architecture) non valido. Un errore MCA non valido identifica un formato di errore che non è conforme alle specifiche di Windows. Questa classe è disponibile solo nei sistemi Windows a 64 bit.
+La **classe MSMCAEvent \_ InvalidError** indica un errore di machine check architecture (MCA) non valido. Un errore MCA non valido identifica un formato di errore non conforme Windows specifiche. Questa classe è disponibile solo nei sistemi Windows a 64 bit.
 
-La sintassi seguente è semplificata dal codice Managed Object Format (MOF) e include tutte le relative proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,33 +56,33 @@ class MSMCAEvent_InvalidError : WMIEvent
 
 ## <a name="members"></a>Members
 
-La **classe \_ InvalidError di MSMCAEvent** dispone di questi tipi di membri:
+La **classe MSMCAEvent \_ InvalidError** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ InvalidError di MSMCAEvent** dispone di queste proprietà.
+La **classe MSMCAEvent \_ InvalidError** ha queste proprietà.
 
 <dl> <dt>
 
 **Attivo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**True** se questa istanza della classe è attiva; in caso contrario, **false**.
+**TRUE** se questa istanza della classe è attiva; in caso contrario, **FALSE.**
 
 </dd> <dt>
 
 **AdditionalErrors**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -92,10 +92,10 @@ Numero di errori aggiuntivi nel record MCA.
 
 </dd> <dt>
 
-**CPU**
+**Cpu**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -108,7 +108,7 @@ CPU che ha segnalato l'errore. Questa proprietà si applica solo a un sistema mu
 **ErrorSeverity**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -133,7 +133,7 @@ Livello di gravità dell'errore segnalato.
 **InstanceName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -142,55 +142,55 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Identificatore univoco di questa istanza della classe.
+Identificatore univoco di questa istanza della classe .
 
 </dd> <dt>
 
 **LogToEventlog**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se è 0 (zero), questo evento non viene registrato nel registro eventi di sistema.
+Se 0 (zero), questo evento non viene registrato nel registro eventi di sistema.
 
 </dd> <dt>
 
 **RawRecord**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di byte che contiene il record di errore non elaborato presentato a Windows da System Abstraction Layer (SAL). Il numero di elementi nella matrice è specificato dalla proprietà **size** .
+Matrice di byte che contiene il record di errore non elaborato presentato Windows dal livello di astrazione di sistema (SAL). Il numero di elementi nella matrice viene specificato dalla **proprietà Size.**
 
 </dd> <dt>
 
-**RecordId**
+**Recordid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identificatore del record di errore per l'errore.
+Identificatore del record di errore per questo errore.
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> <dt>
 
 **Dimensioni**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -203,19 +203,19 @@ Dimensioni del record di errore non elaborato.
 **Tipo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo di messaggio del log eventi. Questi messaggi corrispondono ai codici dei messaggi del registro eventi utilizzati per inserire i messaggi del registro eventi dal provider di consumer del registro eventi di Windows quando riceve uno degli eventi.
+Tipo di messaggio del registro eventi. Questi messaggi corrispondono ai codici dei messaggi del registro eventi usati per inserire i messaggi del registro eventi dal provider consumer del registro eventi Windows quando riceve uno degli eventi.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **MSMCAEvent \_ InvalidError** è derivata da [**WmiEvent**](wmievent.md).
+La **classe MSMCAEvent \_ InvalidError** deriva da [**WMIEvent**](wmievent.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -225,8 +225,8 @@ La classe **MSMCAEvent \_ InvalidError** è derivata da [**WmiEvent**](wmievent.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows XP<br/>                                                                  |
 | Server minimo supportato<br/> | Windows Server 2003<br/>                                                         |
-| Spazio dei nomi<br/>                | \\WMI radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>Wmicore. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Wmi \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>Wmicore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wmiprov.dll</dt> </dl> |
 
 

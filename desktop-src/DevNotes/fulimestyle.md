@@ -1,5 +1,5 @@
 ---
-description: Specifica se uno stile non a colori ha uno stile di sottolineatura.
+description: Specifica se uno stile diverso dal colore ha uno stile di sottolineatura.
 ms.assetid: 452dda6e-b12b-457c-9a01-c5363359c9f5
 title: Funzione FUlIMEStyle
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118956100"
 ---
 # <a name="fulimestyle-function"></a>Funzione FUlIMEStyle
 
-Specifica se uno stile non a colori ha uno stile di sottolineatura.
+Specifica se uno stile diverso dal colore ha uno stile di sottolineatura.
 
 ## <a name="syntax"></a>Sintassi
 

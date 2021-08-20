@@ -1,5 +1,5 @@
 ---
-description: Trovare informazioni sull'elemento ScoredProperty. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Trovare informazioni sull'elemento ScoredProperty. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 0552d301-5105-490f-962b-135c8c2e936b
 title: ScoredProperty
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "119033889"
 ---
 # <a name="scoredproperty"></a>ScoredProperty
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Un elemento ScoredProperty dichiara una proprietà intrinseca a una definizione option. Tali proprietà devono essere confrontate quando si valuta quanto un'opzione richiesta corrisponde a un'opzione supportata dal dispositivo.
+Un elemento ScoredProperty dichiara una proprietà intrinseca a una definizione di opzione. Tali proprietà devono essere confrontate quando si valuta la corrispondenza tra un'opzione richiesta e un'opzione supportata dal dispositivo.
 
-## <a name="element-tag"></a>Element Tag
+## <a name="element-tag"></a>Tag di elemento
 
 <ScoredProperty>
 
@@ -35,7 +35,7 @@ Nella tabella seguente sono elencati gli attributi XML che possono essere relati
 
  
 
-Per altre informazioni, vedere la [sezione Attributi](xml-attributes.md) XML.
+Per altre informazioni, vedere la [sezione Attributi XML.](xml-attributes.md)
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 

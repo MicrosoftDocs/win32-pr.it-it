@@ -40,7 +40,7 @@ Folder.NewFolder(
 
 <dl> <dt>
 
-*bNome* 
+*bName* 
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
@@ -52,7 +52,7 @@ Stringa che specifica il nome della nuova cartella.
 *vOptions* \[ Opzionale\]
 </dt> <dd>
 
-Tipo: **Variante**
+Tipo: **Variant**
 
 Questo valore non è attualmente usato.
 
@@ -65,13 +65,13 @@ Questo metodo non restituisce valori.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Non tutti i metodi vengono implementati per tutte le cartelle. Ad esempio, il [**metodo ParseName**](folder-parsename.md) non viene implementato per la cartella Pannello di controllo (CSIDL \_ CONTROLS). Se si tenta di chiamare un metodo non implementato, viene generato un errore 0x800A01BD (decimale 445).
+> Non tutti i metodi vengono implementati per tutte le cartelle. Ad esempio, il [**metodo ParseName**](folder-parsename.md) non è implementato per la cartella Pannello di controllo (CSIDL \_ CONTROLS). Se si tenta di chiamare un metodo non implementato, viene generato 0x800A01BD errore di tipo decimale 445.
 
  
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente **usa NewFolder** per creare la nuova cartella C: \\ TestFolder. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
+L'esempio seguente **usa NewFolder** per creare la nuova cartella C: \\ TestFolder. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
 JScript:
 
@@ -146,7 +146,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

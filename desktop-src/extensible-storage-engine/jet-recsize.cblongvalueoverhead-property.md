@@ -35,7 +35,7 @@ ms.locfileid: "119038789"
 ---
 # <a name="jet_recsizecblongvalueoverhead-property"></a>JET_RECSIZE.cbLongValueOverhead
 
-Ottiene l'overhead dei dati con valore long.
+Ottiene il sovraccarico dei dati di valore long.
 
 **Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
