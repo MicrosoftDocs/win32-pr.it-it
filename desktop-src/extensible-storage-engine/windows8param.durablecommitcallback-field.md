@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: campo Windows8Param. DurableCommitCallback'
-title: Campo Windows8Param. DurableCommitCallback (Microsoft. ISAM. esent. Interop. Windows8)
+description: Altre informazioni sul campo Windows8Param.DurableCommitCallback
+title: Campo Windows8Param.DurableCommitCallback (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: DurableCommitCallback field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows8.Windows8Param.DurableCommitCallback
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8param.durablecommitcallback(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 09764017615809484ed4509eb488d36691218e71
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e27b7df443f0ed8576d9590eb39adf53f803b783160f701601e16a9561c3bf1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038489"
 ---
-# <a name="windows8paramdurablecommitcallback-field"></a>Campo Windows8Param. DurableCommitCallback
+# <a name="windows8paramdurablecommitcallback-field"></a>Campo Windows8Param.DurableCommitCallback
 
-Callback per il momento in cui il log viene scaricato.
+Callback per quando il log viene scaricato.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,4 +61,4 @@ public const JET_param DurableCommitCallback
 
 [Membri di Windows8Param](./windows8param-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: Flag che specifica se la finestra deve realizzare la propria tavolozza. Se TRUE, la finestra non realizza la relativa tavolozza. Il valore predefinito è FALSE.
+description: Flag che specifica se la finestra deve realizzare la tavolozza. Se TRUE, la finestra non comprende la tavolozza. Il valore predefinito è FALSE.
 ms.assetid: 7039d41a-daea-4128-9e1c-3cbd0c05ce13
-title: 'Membro CBaseWindow:: m_bNoRealize (Winutil. h)'
+title: Membro CBaseWindow::m_bNoRealize (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e24368eb0da2ad16b66d7b06942c83f3e33937da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 45dddb9d596929674adf03ba042d6464718c58c225ef33e568924ef526618e91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016569"
 ---
-# <a name="cbasewindowm_bnorealize-member"></a>Membro bNoRealize di CBaseWindow:: m \_
+# <a name="cbasewindowm_bnorealize-member"></a>Membro CBaseWindow::m \_ bNoRealize
 
-Flag che specifica se la finestra deve realizzare la propria tavolozza. Se **true**, la finestra non realizza la relativa tavolozza. Il valore predefinito è **false**.
+Flag che specifica se la finestra deve realizzare la tavolozza. Se **TRUE,** la finestra non comprende la tavolozza. Il valore predefinito è **FALSE.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ BYTE m_bNoRealize;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

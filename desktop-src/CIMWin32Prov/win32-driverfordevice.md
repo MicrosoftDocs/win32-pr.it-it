@@ -1,5 +1,5 @@
 ---
-description: La classe WMI di associazione \_ Win32 DriverForDevice correla un'istanza della stampante a un'istanza del driver della stampante.
+description: La classe WMI di associazione \_ Win32 DriverForDevice mette in relazione un'istanza di stampante con un'istanza del driver della stampante.
 ms.assetid: 56ff74b2-31ba-4d8e-b389-9f962932aa03
 ms.tgt_platform: multiple
 title: Win32_DriverForDevice classe
@@ -23,9 +23,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119546321"
 ---
-# <a name="win32_driverfordevice-class"></a>Classe \_ Win32 DriverForDevice
+# <a name="win32_driverfordevice-class"></a>Classe Win32 \_ DriverForDevice
 
-La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **di associazione \_ Win32 DriverForDevice** correla un'istanza della stampante a un'istanza del driver della stampante.
+La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) di **associazione Win32 \_ DriverForDevice** mette in relazione un'istanza di stampante con un'istanza del driver della stampante.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
@@ -41,7 +41,7 @@ class Win32_DriverForDevice : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La **classe \_ Win32 DriverForDevice** ha questi tipi di membri:
+La **classe Win32 \_ DriverForDevice** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
@@ -54,15 +54,15 @@ La **classe Win32 \_ DriverForDevice** ha queste proprietà.
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Stampante Win32 \_**
+Tipo di dati: **stampante Win32 \_**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Riferimento [**all'istanza \_ della stampante Win32**](win32-printer.md) che rappresenta la stampante.
 
-Questa proprietà viene ereditata dalla [**dipendenza CIM \_**](cim-dependency.md).
+Questa proprietà viene ereditata dalla [**dipendenza CIM. \_**](cim-dependency.md)
 
 </dd> <dt>
 
@@ -75,15 +75,15 @@ Tipo di dati: **Win32 \_ PrinterDriver**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Riferimento [**all'istanza \_ di PrinterDriver Win32**](win32-printerdriver.md) che rappresenta il driver della stampante.
+Riferimento [**all'istanza \_ di Win32 PrinterDriver**](win32-printerdriver.md) che rappresenta il driver della stampante per la stampante.
 
-Questa proprietà viene ereditata dalla [**dipendenza CIM \_**](cim-dependency.md).
+Questa proprietà viene ereditata dalla [**dipendenza CIM. \_**](cim-dependency.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La **classe Win32 \_ DriverForDevice** è derivata dalla [**dipendenza \_ CIM**](cim-dependency.md).
+La **classe Win32 \_ DriverForDevice** deriva dalla [**dipendenza CIM. \_**](cim-dependency.md)
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,5 +1,5 @@
 ---
-description: Illustra come visualizzare in anteprima il video da una videocamera usando Direct3D per eseguire il rendering del video.
+description: Illustra come visualizzare in anteprima il video da una videocamera usando Direct3D per il rendering del video.
 ms.assetid: fe241201-f2b5-467c-9d6a-5fc147fa5e2a
 title: Esempio di MFCaptureD3D
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117874757"
 ---
 # <a name="mfcaptured3d-sample"></a>Esempio di MFCaptureD3D
 
-Illustra come visualizzare in anteprima il video da una videocamera usando Direct3D per eseguire il rendering del video.
+Illustra come visualizzare in anteprima il video da una videocamera usando Direct3D per il rendering del video.
 
 ## <a name="apis-demonstrated"></a>API illustrate
 
@@ -37,7 +37,7 @@ Questo esempio illustra le API seguenti.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-Questo esempio è disponibile nel repository [github Windows esempi classici](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/MFCaptureD3D).
+Questo esempio è disponibile nel [repository github Windows esempi classici](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/MFCaptureD3D).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

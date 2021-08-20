@@ -1,7 +1,7 @@
 ---
 description: Esegue una query se l'allocatore usa esempi di supporti di sola lettura.
 ms.assetid: 2cb692da-f030-4265-afe4-b1608b51fd47
-title: Metodo CBaseInputPin. IsReadOnly (Amfilter. h)
+title: Metodo CBaseInputPin.IsReadOnly (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 93d1e7930631328a277ce7332f483ee264b2d525
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 45a8fc563e9377f7308ad9ea702b16f48ea9723aa13902ef29d60e2da903ffda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017039"
 ---
-# <a name="cbaseinputpinisreadonly-method"></a>CBaseInputPin. IsReadOnly, metodo
+# <a name="cbaseinputpinisreadonly-method"></a>Metodo CBaseInputPin.IsReadOnly
 
 Esegue una query se l'allocatore usa esempi di supporti di sola lettura.
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore della variabile membro [**CBaseInputPin:: m \_ bReadOnly**](cbaseinputpin-m-breadonly.md) .
+Restituisce il valore della [**variabile membro CBaseInputPin::m \_ bReadOnly.**](cbaseinputpin-m-breadonly.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce il valore della variabile membro [**CBaseInputPin:: m \_ bReadOnly**
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

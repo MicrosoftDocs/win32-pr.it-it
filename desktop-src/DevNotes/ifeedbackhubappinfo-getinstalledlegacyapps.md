@@ -1,5 +1,5 @@
 ---
-description: "Metodo IFeedbackHubAppInfo::GetInstalledLegacyApps: questa API non è disponibile per tutte le app. A meno che l'app non sia stata appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione."
+description: "Metodo IFeedbackHubAppInfo::GetInstalledLegacyApps: questa API non è disponibile per tutte le app. A meno che l'app non sia appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione."
 ms.assetid: 84135D6F-8232-4CE5-AD38-D18823F0E174
 title: Metodo IFeedbackHubAppInfo::GetInstalledLegacyApps
 ms.topic: reference
@@ -21,7 +21,7 @@ ms.locfileid: "118955950"
 ---
 # <a name="ifeedbackhubappinfogetinstalledlegacyapps-method"></a>Metodo IFeedbackHubAppInfo::GetInstalledLegacyApps
 
-Questa API non è disponibile per tutte le app. A meno che l'app non sia stata appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.
+Questa API non è disponibile per tutte le app. A meno che l'app non sia appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,10 +38,10 @@ virtual void GetInstalledLegacyApps(
 
 <dl> <dt>
 
-*risultato* \[ out, facoltativo\]
+*result* \[ out, facoltativo\]
 </dt> <dd>
 
-Questa API non è disponibile per tutte le app. A meno che l'app non sia stata appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.
+Questa API non è disponibile per tutte le app. A meno che l'app non sia appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.
 
 </dd> </dl>
 

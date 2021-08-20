@@ -1,7 +1,7 @@
 ---
 description: Il metodo GetDefaultRect recupera le dimensioni predefinite dell'area client.
 ms.assetid: 9eb9e3a4-0d45-4aa3-a496-1b0bd92d4989
-title: Metodo CBaseWindow. GetDefaultRect (Winutil. h)
+title: Metodo CBaseWindow.GetDefaultRect (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1d7ec9612eab45e21262f8344daf7a52a6a888b4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e64d13a3fe77370d4b5bbefb7d493738b035c40ceebd13cd7f6f0f5c6d03f783
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074615"
 ---
-# <a name="cbasewindowgetdefaultrect-method"></a>CBaseWindow. GetDefaultRect, metodo
+# <a name="cbasewindowgetdefaultrect-method"></a>Metodo CBaseWindow.GetDefaultRect
 
 Il `GetDefaultRect` metodo recupera le dimensioni predefinite dell'area client.
 
@@ -46,7 +46,7 @@ Restituisce il rettangolo predefinito.
 
 ## <a name="remarks"></a>Commenti
 
-Quando la finestra viene attivata, l'oggetto chiama questo metodo per determinare la dimensione che deve rendere l'area client della finestra. Nella classe di base, questo metodo restituisce un rettangolo la cui altezza e larghezza sono le costanti definite DEFHEIGHT e DEFWIDTH. Una classe derivata deve eseguire l'override di questo metodo. Per un renderer video, la classe derivata restituirà in genere le dimensioni dell'immagine video nativa.
+Quando la finestra viene attivata, l'oggetto chiama questo metodo per determinare le dimensioni dell'area client della finestra. Nella classe di base questo metodo restituisce un rettangolo la cui altezza e larghezza sono le costanti definite DEFHEIGHT e DEFWIDTH. Una classe derivata deve eseguire l'override di questo metodo. Per un renderer video, la classe derivata restituisce in genere le dimensioni dell'immagine video nativa.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Quando la finestra viene attivata, l'oggetto chiama questo metodo per determinar
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

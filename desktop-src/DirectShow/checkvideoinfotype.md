@@ -1,7 +1,7 @@
 ---
-description: La funzione CheckVideoInfoType controlla un tipo di supporto che contiene una struttura di formato VIDEOINFOHEADER per determinati errori comuni che possono causare sovraccarichi del buffer o overflow di Integer.
+description: La funzione CheckVideoInfoType controlla un tipo di supporto che contiene una struttura di formato VIDEOINFOHEADER per verificare la presenza di alcuni errori comuni che possono causare sovraccarichi del buffer o overflow di interi.
 ms.assetid: 7ffca7de-26f9-4d8d-b70e-231eca462211
-title: Funzione CheckVideoInfoType (Checkbmi. h)
+title: Funzione CheckVideoInfoType (Checkbmi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - HeaderDef
 api_location:
 - checkbmi.h
-ms.openlocfilehash: 7c3a3c9603f974458ed3012dc651815abd432645
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4463a1edb2002f64e983a38eb4a0ace5b5289b4d47ac43c8ea27bf165138ff95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119539541"
 ---
-# <a name="checkvideoinfotype-function"></a>CheckVideoInfoType (funzione)
+# <a name="checkvideoinfotype-function"></a>Funzione CheckVideoInfoType
 
-La `CheckVideoInfoType` funzione controlla un tipo di supporto che contiene una struttura di formato [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) per determinati errori comuni che possono causare sovraccarichi del buffer o overflow di Integer.
+La funzione controlla un tipo di supporto che contiene una struttura di formato VIDEOINFOHEADER per verificare la presenza di alcuni errori comuni che possono causare sovraccarichi del buffer o `CheckVideoInfoType` overflow di [](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) interi.
 
 > [!Note]  
-> Questa funzione non garantisce che il tipo di supporto sia valido o che il codice che utilizza la struttura sia protetto.
+> Questa funzione non garantisce che il tipo di supporto sia valido o che il codice che usa la struttura sia sicuro.
 
  
 
@@ -44,24 +44,24 @@ HRESULT CheckVideoInfoType(
 
 <dl> <dt>
 
-*PMT* 
+*Pmt* 
 </dt> <dd>
 
-Puntatore alla struttura [**del \_ \_ tipo di supporto am**](/windows/win32/api/strmif/ns-strmif-am_media_type) da convalidare
+Puntatore alla [**struttura AM \_ MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) da convalidare
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei seguenti valori **HRESULT** .
+Restituisce uno dei valori **HRESULT** seguenti.
 
 
 
 | Codice restituito                                                                                                | Descrizione                        |
 |------------------------------------------------------------------------------------------------------------|------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                       | Esito positivo.<br/>                |
-| <dl> <dt>**\_puntatore E**</dt> </dl>                  | Valore del puntatore **null** .<br/> |
-| <dl> <dt>**\_tipo VFW \_ E \_ non \_ accettato**</dt> </dl> | Tipo di supporto non valido.<br/>     |
+| <dl> <dt>**S \_ OK**</dt> </dl>                       | Operazione completata.<br/>                |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>                  | Valore del puntatore **NULL.**<br/> |
+| <dl> <dt>**TIPO E VFW \_ \_ NON \_ \_ ACCETTATO**</dt> </dl> | Tipo di supporto non valido.<br/>     |
 
 
 
@@ -69,7 +69,7 @@ Restituisce uno dei seguenti valori **HRESULT** .
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione chiama [**ValidateBitmapInfoHeader**](validatebitmapinfoheader.md) per convalidare la struttura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) nel tipo di supporto. Se il tipo di formato non è FORMAT \_ videoinfo, la funzione restituisce il \_ tipo VFW E non è \_ \_ \_ accettato.
+Questa funzione chiama [**ValidateBitmapInfoHeader**](validatebitmapinfoheader.md) per convalidare la [**struttura BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) nel tipo di supporto. Se il tipo di formato non è FORMAT \_ VideoInfo, la funzione restituisce VFW \_ E TYPE NOT \_ \_ \_ ACCEPTED.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,7 +77,7 @@ Questa funzione chiama [**ValidateBitmapInfoHeader**](validatebitmapinfoheader.m
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Checkbmi. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Checkbmi.h</dt> </dl> |
 
 
 
@@ -85,7 +85,7 @@ Questa funzione chiama [**ValidateBitmapInfoHeader**](validatebitmapinfoheader.m
 
 <dl> <dt>
 
-[Funzioni video e immagine](video-and-image-functions.md)
+[Funzioni per video e immagini](video-and-image-functions.md)
 </dt> </dl>
 
  

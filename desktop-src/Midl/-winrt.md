@@ -1,9 +1,9 @@
 ---
-title: opzione/WinRT
-description: L'opzione/WinRT Abilita la semantica Windows Runtime.
+title: Opzione /winrt
+description: L'opzione /winrt abilita Windows di runtime.
 ms.assetid: 910F4106-1CA2-4486-BBD4-57DAC9B4A78F
 keywords:
-- /WinRT switch MIDL
+- Opzione /winrt MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,22 +12,22 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25746064b18316edab9c497502b802c7d19adaf9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: add020d1228aaeae6e4a319875dd2118c5c0f185c4032ffcf11781768a4e289d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067431"
 ---
-# <a name="winrt-switch"></a>opzione/WinRT
+# <a name="winrt-switch"></a>Opzione /winrt
 
-L'opzione [**/WinRT**](-winmd.md) Abilita la semantica Windows Runtime.
+[**L'opzione /winrt**](-winmd.md) abilita Windows semantica di runtime.
 
 ``` syntax
 midlrt /winrt 
 ```
 
-## <a name="switch-options"></a>Opzioni switch
+## <a name="switch-options"></a>Opzioni di cambio
 
 Questa opzione non ha parametri.
 
@@ -35,7 +35,7 @@ Questa opzione non ha parametri.
 
 ## <a name="examples"></a>Esempi
 
-**/WinRT midlrt**
+**midlrt /winrt**
 
 ## <a name="requirements"></a>Requisiti
 

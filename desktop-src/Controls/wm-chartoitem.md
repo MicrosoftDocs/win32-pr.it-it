@@ -1,9 +1,9 @@
 ---
 title: WM_CHARTOITEM messaggio (Winuser.h)
-description: Inviato da una casella di riepilogo con lo stile LBS WANTKEYBOARDINPUT al proprietario in risposta \_ a un messaggio WM \_ CHAR.
+description: Inviato da una casella di riepilogo con lo stile WANTKEYBOARDINPUT di LBS al proprietario in risposta \_ a un messaggio WM \_ CHAR.
 ms.assetid: f941c00b-b836-4f1b-b8cf-8ac2b0704af3
 keywords:
-- WM_CHARTOITEM dei messaggi Windows controlli
+- WM_CHARTOITEM controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "118957530"
 ---
 # <a name="wm_chartoitem-message"></a>Messaggio \_ WM CHARTOITEM
 
-Inviato da una casella di riepilogo con lo stile [**\_ LBS WANTKEYBOARDINPUT**](list-box-styles.md) al proprietario in risposta a un [**messaggio WM \_ CHAR.**](/windows/desktop/inputdev/wm-char)
+Inviato da una casella di riepilogo con lo stile [**\_ WANTKEYBOARDINPUT di LBS**](list-box-styles.md) al proprietario in risposta a un [**messaggio WM \_ CHAR.**](/windows/desktop/inputdev/wm-char)
 
 
 ```C++
@@ -42,7 +42,7 @@ WM_CHARTOITEM
 *wParam* 
 </dt> <dd>
 
-La [**parola chiave LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) specifica il codice carattere del tasto premuto dall'utente. [**HiWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica la posizione corrente del cursore.
+LoWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) il codice carattere del tasto premuto dall'utente. HiWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) la posizione corrente del cursore.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Handle per la casella di riepilogo.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito specifica l'azione eseguita dall'applicazione in risposta al messaggio. Il valore restituito -1 o -2 indica che l'applicazione ha gestito tutti gli aspetti della selezione dell'elemento e non richiede ulteriori azioni da parte della casella di riepilogo. Un valore restituito pari o superiore a 0 specifica l'indice in base zero di un elemento nella casella di riepilogo e indica che la casella di riepilogo deve eseguire l'azione predefinita per la sequenza di tasti sull'elemento specificato.
+Il valore restituito specifica l'azione eseguita dall'applicazione in risposta al messaggio. Il valore restituito -1 o -2 indica che l'applicazione ha gestito tutti gli aspetti della selezione dell'elemento e non richiede ulteriori azioni da parte della casella di riepilogo. Un valore restituito pari a 0 o superiore specifica l'indice in base zero di un elemento nella casella di riepilogo e indica che la casella di riepilogo deve eseguire l'azione predefinita per la sequenza di tasti sull'elemento specificato.
 
 ## <a name="remarks"></a>Commenti
 
@@ -63,7 +63,7 @@ La [**funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindo
 
 Solo le caselle di riepilogo disegnate dal proprietario che non hanno lo stile [**\_ HASSTRINGS di LBS**](list-box-styles.md) possono ricevere questo messaggio.
 
-Se una routine della finestra di dialogo gestisce questo messaggio, deve eseguire il cast del valore restituito desiderato in **un oggetto BOOL** e restituire direttamente il valore. Il *valore \_ MSGRESULT DWL* impostato dalla funzione [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) viene ignorato.
+Se il messaggio viene gestito da una routine della finestra di dialogo, è necessario eseguire il cast del valore restituito desiderato in un valore **BOOL** e restituire direttamente il valore. Il *valore \_ MSGRESULT DWL* impostato dalla funzione [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) viene ignorato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Se una routine della finestra di dialogo gestisce questo messaggio, deve eseguir
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
 | Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 

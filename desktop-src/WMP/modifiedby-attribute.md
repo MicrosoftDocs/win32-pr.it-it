@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf44c318628283627d4bf2f730c143081cee0990
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8afaddd2ed99af6d8b853da60c544694937600b480d6e620bfa2ab4637427fd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647641"
 ---
 # <a name="modifiedby-attribute"></a>Attributo ModifiedBy
 
-\[Questo attributo non è più supportato. Il valore è sempre vuoto o "User". \]
+\[Questo attributo non è più supportato. Il valore è sempre vuoto o "user". \]
 
-L'attributo **ModifiedBy** è una stringa che indica se gli attributi dell'elemento sono stati modificati dall'utente.
+**L'attributo ModifiedBy** è una stringa che indica se gli attributi dell'elemento sono stati modificati dall'utente.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -33,7 +33,7 @@ L'attributo **ModifiedBy** è una stringa che indica se gli attributi dell'eleme
 
 Questo attributo viene archiviato solo nel file multimediale digitale.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [**Media. isReadOnlyItem**](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [**metodo Media.isReadOnlyItem.**](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,7 +41,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -49,7 +49,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

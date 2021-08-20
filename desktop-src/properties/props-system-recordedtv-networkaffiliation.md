@@ -4,12 +4,12 @@ ms.assetid: 4f7ace99-d8ff-4fa3-a01b-da03424b362c
 title: System.RecordedTV.NetworkAffiliation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c88cbacba1a3eebc490013eb0695cfc321d3712
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b41813e08974e1f5e9ef624a40dd7de3db03a5c2e548afe7b3bbee9cfa3087e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117865236"
 ---
 # <a name="systemrecordedtvnetworkaffiliation"></a>System.RecordedTV.NetworkAffiliation
 

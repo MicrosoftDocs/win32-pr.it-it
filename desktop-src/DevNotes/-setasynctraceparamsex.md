@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Exstrace.dll
-ms.openlocfilehash: 5a9dc0eee2f4ea3f65fa45914c3340a99ac2d45b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6c41369e8a0d73a56dc5d9d831d0028e87a7ecec300f2e43a625f17bd25bede1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119538867"
 ---
 # <a name="setasynctraceparamsex-function"></a>Funzione SetAsyncTraceParamsEx
 
@@ -93,15 +93,15 @@ Costante del flag di traccia che rappresenta uno dei tipi di traccia disponibili
 <span id="FUNCT_TRACE_MASK"></span><span id="funct_trace_mask"></span>**FUNCT \_ TRACE \_ MASK** (0x00000010)
 </dt> <dt>
 
-<span id="MESSAGE_TRACE_MASK"></span><span id="message_trace_mask"></span>**MESSAGGIO \_ TRACE \_ MASK** (0x00000020)
+<span id="MESSAGE_TRACE_MASK"></span><span id="message_trace_mask"></span>**MESSAGE \_ TRACE \_ MASK** (0x00000020)
 </dt> <dt>
 
-<span id="ALL_TRACE_MASK"></span><span id="all_trace_mask"></span>**ALL \_ MASCHERA \_ DI TRACCIA** (0xFFFFFFFF)
+<span id="ALL_TRACE_MASK"></span><span id="all_trace_mask"></span>**ALL \_ TRACE \_ MASK** (0xFFFFFFFF)
 </dt> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce 1 se la funzione ha esito positivo. In caso contrario, restituisce 0.
+Questa funzione restituisce 1 se la funzione ha esito positivo; In caso contrario, restituisce 0.
 
 ## <a name="remarks"></a>Commenti
 

@@ -65,16 +65,16 @@ La **\_ \_ classe InstanceProviderRegistration** ha queste proprietà.
 
 <dl> <dt>
 
-**Tipo di interazione**
+**InteractionType**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Indica che un provider di classi o istanze fornisce dati o recupera dati da WMI e dal repository Common Information Model (CIM). I provider di pull supportano l'accesso dinamico ai dati. i provider di push e archiviano i dati nel repository CIM e usano WMI per fornire l'accesso. Per altre informazioni, vedere [Determinazione dello stato push o pull.](determining-push-or-pull-status.md) Il valore predefinito è 0 (zero).
+Indica che un provider di classi o istanze fornisce dati o recupera dati da WMI e dal repository Common Information Model (CIM). I provider di pull supportano l'accesso dinamico ai dati; e i provider push archiviano i dati nel repository CIM e usano WMI per fornirvi l'accesso. Per altre informazioni, vedere [Determinazione dello stato push o pull](determining-push-or-pull-status.md). Il valore predefinito è 0 (zero).
 
 <dt>
 
@@ -122,7 +122,7 @@ Tipo di dati: **\_ \_ Provider**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Riferimento a un'istanza di [**\_ \_ Provider**](--provider.md) che rappresenta il percorso dell'oggetto al provider di istanze. Questa proprietà viene ereditata da [**\_ \_ ProviderRegistration.**](--providerregistration.md)
+Riferimento a un'istanza di [**\_ \_ Provider**](--provider.md) che rappresenta il percorso dell'oggetto al provider di istanze. Questa proprietà viene ereditata da [**\_ \_ ProviderRegistration**](--providerregistration.md).
 
 </dd> <dt>
 
@@ -132,10 +132,10 @@ Riferimento a un'istanza di [**\_ \_ Provider**](--provider.md) che rappresenta 
 Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Matrice dei tipi di supporto incluso dal provider per l'elaborazione delle query. I provider di classi non supportano tutti i tipi di query. I provider di istanze possono **impostare QuerySupportLevels** su **NULL** se non supportano l'elaborazione delle query. I provider che supportano le query implementano il metodo [**IWbemServices::ExecQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync) e impostano questa proprietà su uno o più dei valori seguenti.
+Matrice dei tipi di supporto incluso nel provider per l'elaborazione delle query. I provider di classi non supportano tutti i tipi di query. I provider di istanze possono impostare **QuerySupportLevels** su **NULL** se non supportano l'elaborazione delle query. I provider che supportano le query implementano il metodo [**IWbemServices::ExecQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync) e impostano questa proprietà su uno o più dei valori seguenti.
 
 <dt>
 
@@ -175,7 +175,7 @@ Matrice dei tipi di supporto incluso dal provider per l'elaborazione delle query
 Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Non usato.
@@ -188,7 +188,7 @@ Non usato.
 Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Se **True,** il provider supporta l'eliminazione dei dati.
@@ -217,7 +217,7 @@ Il provider non supporta l'eliminazione dei dati e restituisce **WBEM \_ E PROVI
 Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Se **True,** il provider supporta l'enumerazione dei dati.
@@ -254,17 +254,17 @@ Il provider non supporta l'enumerazione dei dati e restituisce **WBEM \_ E PROVI
 Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Se **True,** la classe o il provider di istanze supporta il recupero dei dati.
+Se **True,** il provider di classi o istanze supporta il recupero dei dati.
 
 <dt>
 
 Vero
 </dt> <dd>
 
-Il provider supporta il recupero dei dati implementando [**IWbemServices::GetObjectAsync.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync)
+Il provider supporta il recupero dei dati implementando [**IWbemServices::GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync).
 
 </dd> <dt>
 
@@ -283,10 +283,10 @@ Il provider non supporta il recupero dei dati e restituisce **WBEM \_ E PROVIDER
 Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Se **True,** la classe o il provider di istanze supporta la modifica dei dati.
+Se **True**, il provider di classi o istanze supporta la modifica dei dati.
 
 <dt>
 
@@ -308,7 +308,7 @@ Il provider supporta la modifica di classi o istanze implementando uno dei metod
 
 </dt> <dd>
 
-Il provider non supporta la modifica dei dati e restituisce **WBEM \_ E PROVIDER NOT \_ \_ \_ CAPABLE** da [**PutClassAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putclassasync) o [**PutInstanceAsync.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putinstanceasync)
+Il provider non supporta la modifica dei dati e restituisce **WBEM \_ E PROVIDER NOT \_ \_ \_ CAPABLE** da [**PutClassAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putclassasync) [**o PutInstanceAsync.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putinstanceasync)
 
 </dd> </dl>
 
@@ -320,7 +320,7 @@ Il provider non supporta la modifica dei dati e restituisce **WBEM \_ E PROVIDER
 Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Non usato.
@@ -329,7 +329,7 @@ Non usato.
 
 ## <a name="remarks"></a>Commenti
 
-La **\_ \_ classe InstanceProviderRegistration** è derivata da [**\_ \_ ObjectProviderRegistration**](--objectproviderregistration.md), derivato da [**\_ \_ ProviderRegistration.**](--providerregistration.md) Solo gli amministratori possono registrare un provider di istanze creando un'istanza di [**\_ \_ Win32Provider**](--win32provider.md) **\_ \_ e InstanceProviderRegistration**. Solo gli amministratori possono eliminare un provider.
+La **\_ \_ classe InstanceProviderRegistration** è derivata da [**\_ \_ ObjectProviderRegistration**](--objectproviderregistration.md), che deriva da [**\_ \_ ProviderRegistration**](--providerregistration.md). Solo gli amministratori possono registrare un provider di istanze creando un'istanza di [**\_ \_ Win32Provider**](--win32provider.md) **\_ \_ e InstanceProviderRegistration**. Solo gli amministratori possono eliminare un provider.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,7 +1,7 @@
 ---
-description: Si verifica quando viene creato un nuovo contesto del tablet.
+description: Si verifica quando viene creato un nuovo contesto di tablet.
 ms.assetid: 64e1f778-90c1-417d-a80b-37aeecffd411
-title: 'Metodo ITabletEventSink:: ContextCreate'
+title: Metodo ITabletEventSink::ContextCreate
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: e622a246c7c317cf9e3373cbd3791108ed071e71
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d27971caad36fa167d50913ea8171d9cdde35a951aa28f409846fa42fe5acc03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104349411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119031889"
 ---
-# <a name="itableteventsinkcontextcreate-method"></a>Metodo ITabletEventSink:: ContextCreate
+# <a name="itableteventsinkcontextcreate-method"></a>Metodo ITabletEventSink::ContextCreate
 
-Si verifica quando viene creato un nuovo contesto del tablet.
+Si verifica quando viene creato un nuovo contesto di tablet.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,10 +40,10 @@ HRESULT ContextCreate(
 
 <dl> <dt>
 
-*TCID* \[ in\]
+*tcid* \[ Pollici\]
 </dt> <dd>
 
-Identificatore del contesto del tablet da creare.
+Identificatore del contesto della tablet da creare.
 
 </dd> </dl>
 
@@ -55,8 +55,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                            | Descrizione                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>   | Esito positivo.<br/>                       |
-| <dl> <dt>**E \_ non riescono**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Operazione completata.<br/>                       |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
 
 
 
@@ -68,7 +68,7 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

@@ -3,7 +3,7 @@ title: Elemento Principal (principalType)
 description: Specifica le credenziali di sicurezza per un'entità.
 ms.assetid: 4ba65976-98d2-4329-80f0-566fac2e9fda
 keywords:
-- Utilità di pianificazione elemento principale
+- Elemento Principal Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 41d308af651f1aff0ff402c7070adbe631bff9eb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b8301371acc7624b4beb9b548191afa641ed267592b246cca7ba71ff170a9bdb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059779"
 ---
 # <a name="principal-principaltype-element"></a>Elemento Principal (principalType)
 
@@ -30,7 +30,7 @@ Specifica le credenziali di sicurezza per un'entità. Queste credenziali definis
  />
 ```
 
-L'elemento **Principal** è definito dal tipo complesso [**PrincipalType**](taskschedulerschema-principaltype-complextype.md) .
+**L'elemento Principal** è definito dal [**tipo complesso principalType.**](taskschedulerschema-principaltype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -48,10 +48,10 @@ L'elemento **Principal** è definito dal tipo complesso [**PrincipalType**](task
 
 | Elemento                                                                      | Tipo                                                          | Descrizione                                                                                                |
 |------------------------------------------------------------------------------|---------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [**DisplayName**](taskschedulerschema-displayname-principaltype-element.md) | **string**                                                    | Specifica il nome dell'entità visualizzata nell'interfaccia utente di Utilità di pianificazione.<br/>                 |
+| [**DisplayName**](taskschedulerschema-displayname-principaltype-element.md) | **string**                                                    | Specifica il nome dell'entità visualizzata nell'interfaccia Utilità di pianificazione interfaccia utente.<br/>                 |
 | [**GroupId**](taskschedulerschema-groupid-principaltype-element.md)         | **string**                                                    | Specifica l'identificatore del gruppo di utenti necessario per eseguire le attività associate all'entità.<br/> |
-| [**LogonType**](taskschedulerschema-logontype-principaltype-element.md)     | [**logonType**](taskschedulerschema-logontype-simpletype.md) | Specifica il metodo di accesso di sicurezza necessario per eseguire le attività associate all'entità.<br/>  |
-| [**UserId**](taskschedulerschema-userid-principaltype-element.md)           | **string**                                                    | Specifica l'identificatore utente necessario per eseguire le attività associate all'entità.<br/>              |
+| [**Tipo di accesso**](taskschedulerschema-logontype-principaltype-element.md)     | [**logonType**](taskschedulerschema-logontype-simpletype.md) | Specifica il metodo di accesso di sicurezza necessario per eseguire le attività associate all'entità.<br/>  |
+| [**Userid**](taskschedulerschema-userid-principaltype-element.md)           | **string**                                                    | Specifica l'identificatore utente necessario per eseguire le attività associate all'entità.<br/>              |
 
 
 
@@ -67,15 +67,15 @@ L'elemento **Principal** è definito dal tipo complesso [**PrincipalType**](task
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo di script, le credenziali di sicurezza per un'entità vengono specificate utilizzando l'oggetto [**Principal**](principal.md) .
+Per lo sviluppo di script, le credenziali di sicurezza per un'entità vengono specificate usando [**l'oggetto**](principal.md) Principal.
 
-Per lo sviluppo in C++, le credenziali di sicurezza per un'entità vengono specificate tramite l'interfaccia [**IPrincipal**](/windows/desktop/api/taskschd/nn-taskschd-iprincipal) .
+Per lo sviluppo in C++, le credenziali di sicurezza per un'entità vengono specificate usando [**l'interfaccia IPrincipal.**](/windows/desktop/api/taskschd/nn-taskschd-iprincipal)
 
-Gli elementi figlio elencati sopra sono definiti dal tipo complesso [**PrincipalType**](taskschedulerschema-principaltype-complextype.md) . Per informazioni sulla sequenziazione di questi elementi figlio, vedere [**PrincipalType**](taskschedulerschema-principaltype-complextype.md).
+Gli elementi figlio elencati in precedenza sono definiti dal [**tipo complesso principalType.**](taskschedulerschema-principaltype-complextype.md) Per informazioni sulla sequenziazione di questi elementi figlio, vedere [**principalType.**](taskschedulerschema-principaltype-complextype.md)
 
 ## <a name="examples"></a>Esempio
 
-Il codice XML seguente definisce un'entità con un identificatore utente.
+Nel codice XML seguente viene definita un'entità con un identificatore utente.
 
 
 ```XML
@@ -90,7 +90,7 @@ Il codice XML seguente definisce un'entità con un identificatore utente.
 
 
 
-Il codice XML seguente definisce un'entità con un identificatore di gruppo.
+Nel codice XML seguente viene definita un'entità con un identificatore di gruppo.
 
 
 ```XML
@@ -110,8 +110,8 @@ Il codice XML seguente definisce un'entità con un identificatore di gruppo.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

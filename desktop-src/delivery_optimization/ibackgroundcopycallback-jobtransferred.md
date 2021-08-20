@@ -1,6 +1,6 @@
 ---
-title: Metodo IBackgroundCopyCallback JobTransferred (Deliveryoptimization. h)
-description: Ottimizzazione recapito chiama l'implementazione del metodo JobTransferred quando tutti i file del processo sono stati trasferiti correttamente.
+title: Metodo IBackgroundCopyCallback JobTransferred (Deliveryoptimization.h)
+description: Ottimizzazione recapito chiama l'implementazione del metodo JobTransferred quando tutti i file nel processo sono stati trasferiti correttamente.
 ms.assetid: D3088279-2D26-4707-9BA2-19D2758EA1CC
 keywords:
 - Metodo JobTransferred
@@ -17,16 +17,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6c5c358978da1731152ca6f7de8c3f7a92a1da86
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 69cf1a739e15bc7341769bdc01549ad439a1c93877f653f0689e686eb8bac1f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047099"
 ---
-# <a name="ibackgroundcopycallbackjobtransferred-method"></a>Metodo IBackgroundCopyCallback:: JobTransferred
+# <a name="ibackgroundcopycallbackjobtransferred-method"></a>Metodo IBackgroundCopyCallback::JobTransferred
 
-Ottimizzazione recapito chiama l'implementazione del metodo **JobTransferred** quando tutti i file del processo sono stati trasferiti correttamente.
+Ottimizzazione recapito chiama l'implementazione del metodo **JobTransferred** quando tutti i file nel processo sono stati trasferiti correttamente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,10 +43,10 @@ HRESULT JobTransferred(
 
 <dl> <dt>
 
-*pJob* \[ in\]
+*pJob* \[ Pollici\]
 </dt> <dd>
 
-Contiene informazioni relative al processo, ad esempio il momento in cui il processo è stato completato, il numero di byte trasferiti e il numero di file trasferiti. Non rilasciare *pJob*; Rilascia l'interfaccia quando il metodo restituisce.
+Contiene informazioni relative al processo, ad esempio l'ora di completamento del processo, il numero di byte trasferiti e il numero di file trasferiti. Non rilasciare *pJob*; DO rilascia l'interfaccia quando il metodo viene restituito.
 
 </dd> </dl>
 
@@ -56,9 +56,9 @@ Questo metodo deve restituire S_OK.
 
 ## <a name="remarks"></a>Commenti
 
-In genere, l'implementazione deve chiamare il metodo [**Metodo ibackgroundcopyjob:: complete**](ibackgroundcopyjob-complete.md) per confermare che i file sono stati trasferiti correttamente. Scaricare i file e il file di risposta non sono disponibili nel client fino a quando non viene chiamato il metodo **completo** .
+In genere, l'implementazione deve chiamare il [**metodo IBackgroundCopyJob::Complete**](ibackgroundcopyjob-complete.md) per confermare che DO ha trasferito correttamente i file. I file di download e il file di risposta non sono disponibili nel client fino a quando non si chiama il **metodo** Complete.
 
-Se non si chiama il metodo [**complete**](ibackgroundcopyjob-complete.md) o il metodo [**Metodo ibackgroundcopyjob:: Cancel**](ibackgroundcopyjob-cancel.md) , Annulla il processo dopo 30 giorni ed Elimina i file incompleti.
+Se non si chiama il metodo [**Complete**](ibackgroundcopyjob-complete.md) o il metodo [**IBackgroundCopyJob::Cancel**](ibackgroundcopyjob-cancel.md) DO annulla il processo dopo 30 giorni ed elimina i file incompleti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,13 +66,13 @@ Se non si chiama il metodo [**complete**](ibackgroundcopyjob-complete.md) o il m
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                                           |
-| Server minimo supportato<br/> | Windows Server, versione 1709 \[ solo per le app desktop\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Server, solo app desktop versione 1709 \[\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
-| IID<br/>                      | IID_IBackgroundCopyCallback viene definito come 97EA99C7-0186-4AD4-8DF9-C5B4E0ED6B22<br/>          |
+| IID<br/>                      | IID_IBackgroundCopyCallback è definito come 97EA99C7-0186-4AD4-8DF9-C5B4E0ED6B22<br/>          |
 
 
 
@@ -83,13 +83,13 @@ Se non si chiama il metodo [**complete**](ibackgroundcopyjob-complete.md) o il m
 [**IBackgroundCopyCallback**](ibackgroundcopycallback.md)
 </dt> <dt>
 
-[**Metodo ibackgroundcopyjob**](ibackgroundcopyjob-.md)
+[**IBackgroundCopyJob**](ibackgroundcopyjob-.md)
 </dt> <dt>
 
-[**Metodo ibackgroundcopyjob:: complete**](ibackgroundcopyjob-complete.md)
+[**IBackgroundCopyJob::Complete**](ibackgroundcopyjob-complete.md)
 </dt> <dt>
 
-[**Metodo ibackgroundcopyjob:: Cancel**](ibackgroundcopyjob-cancel.md)
+[**IBackgroundCopyJob::Cancel**](ibackgroundcopyjob-cancel.md)
 </dt> </dl>
 
  

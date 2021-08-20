@@ -1,11 +1,11 @@
 ---
 title: Attributo ACS-Identity-Name
-description: Questo attributo contiene il DN di un utente o di un'unità organizzativa e rappresenta l'identità di un utente o di un gruppo di utenti a cui si applica questo criterio QoS.
+description: Questo attributo contiene il DN di un utente o di un'unità organizzativa ed è l'identità di un utente o di un gruppo di utenti a cui si applicano i criteri QoS.
 ms.assetid: 00e6e2bd-aec8-426f-b89e-0661c15cfd46
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ACS-Identity-Name
-- Schema AD dell'attributo aCSIdentityName
+- Attributo aCSIdentityName Schema AD
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "117838401"
 ---
 # <a name="acs-identity-name-attribute"></a>Attributo ACS-Identity-Name
 
-Questo attributo contiene il DN di un utente o di un'unità organizzativa e rappresenta l'identità di un utente o di un gruppo di utenti a cui si applica questo criterio QoS.
+Questo attributo contiene il DN di un utente o di un'unità organizzativa ed è l'identità di un utente o di un gruppo di utenti a cui si applicano i criteri QoS.
 
 
 
@@ -32,7 +32,7 @@ Questo attributo contiene il DN di un utente o di un'unità organizzativa e rapp
 | CN                | ACS-Identity-Name                           |
 | Ldap-Display-Name | aCSIdentityName                             |
 | Dimensione              | \-                                          |
-| Privilegio di aggiornamento  | Amministratore di dominio                        |
+| Aggiorna privilegio  | Amministratore di dominio                        |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.784                      |
 | System-Id-Guid    | dab029b6-ddf7-11d1-90a5-00c04fd91ab1        |
@@ -58,7 +58,7 @@ Questo attributo contiene il DN di un utente o di un'unità organizzativa e rapp
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Is-Single-Valued       | Falso                                        |
+| A valore singolo       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
@@ -66,7 +66,7 @@ Questo attributo contiene il DN di un utente o di un'unità organizzativa e rapp
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -79,7 +79,7 @@ Questo attributo contiene il DN di un utente o di un'unità organizzativa e rapp
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Is-Single-Valued       | Falso                                        |
+| A valore singolo       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
@@ -87,7 +87,7 @@ Questo attributo contiene il DN di un utente o di un'unità organizzativa e rapp
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -100,7 +100,7 @@ Questo attributo contiene il DN di un utente o di un'unità organizzativa e rapp
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Is-Single-Valued       | Falso                                        |
+| A valore singolo       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                 |
@@ -108,7 +108,7 @@ Questo attributo contiene il DN di un utente o di un'unità organizzativa e rapp
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 

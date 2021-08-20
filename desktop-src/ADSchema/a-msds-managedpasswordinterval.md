@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-ManagedPasswordInterval
-description: Questo attributo viene utilizzato per recuperare il numero di giorni prima che una password gestita venga modificata automaticamente per un MSA del gruppo.
+title: Attributo ms-DS-ManagedPasswordInterval
+description: Questo attributo viene usato per recuperare il numero di giorni prima che una password gestita venga modificata automaticamente per un account gestito del gruppo.
 ms.assetid: 9473e29e-32d2-4461-b04f-a36a7e0ab412
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-DS-ManagedPasswordInterval
-- attributo msDS-ManagedPasswordInterval-schema AD
+- Schema AD dell'attributo msDS-ManagedPasswordInterval
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8412630a0b410e553847e58127f7cab1dba2e3fa
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b9df8b17431e8000babe6ab67b99672a639005e0d78fdb9337ea47a9372f2324
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552131"
 ---
-# <a name="ms-ds-managedpasswordinterval-attribute"></a>attributo ms-DS-ManagedPasswordInterval
+# <a name="ms-ds-managedpasswordinterval-attribute"></a>Attributo ms-DS-ManagedPasswordInterval
 
-Questo attributo viene utilizzato per recuperare il numero di giorni prima che una password gestita venga modificata automaticamente per un MSA del gruppo.
+Questo attributo viene usato per recuperare il numero di giorni prima che una password gestita venga modificata automaticamente per un account gestito del gruppo.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | ms-DS-ManagedPasswordInterval        |
-| LDAP-Display-Name | msDS-ManagedPasswordInterval         |
+| Ldap-Display-Name | msDS-ManagedPasswordInterval         |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2199              |
-| System-ID-GUID    | f8758ef7-ac76-8843-a2ee-a26b4dcaf409 |
+| System-Id-Guid    | f8758ef7-ac76-8843-a2ee-a26b4dcaf409 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -53,15 +53,15 @@ Questo attributo viene utilizzato per recuperare il numero di giorni prima che u
 | ID collegamento                | \-                                                                                          |
 | MAPI-Id                | \-                                                                                          |
 | System-Only            | Vero                                                                                        |
-| È a valore singolo       | Vero                                                                                        |
+| Is-Single-Valued       | Vero                                                                                        |
 | Indicizzato             | Falso                                                                                       |
 | Nel catalogo globale      | Falso                                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                |
 | Range-Lower            | \-                                                                                          |
 | Range-Upper            | \-                                                                                          |
 | Search-Flags           | 0x00000000                                                                                  |
 | System-Flags           | 0x00000010                                                                                  |
-| Classi utilizzate in        | [**ms-DS-gruppo-gestito-servizio-account**](c-msds-groupmanagedserviceaccount.md)<br/> |
+| Classi usate in        | [**ms-DS-Group-Managed-Service-Account**](c-msds-groupmanagedserviceaccount.md)<br/> |
 
 
 

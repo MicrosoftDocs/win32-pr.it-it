@@ -1,5 +1,5 @@
 ---
-description: Specifica se il codificatore genera intestazioni di estensione immagine. Questa proprietà si applica ai codificatori video MPEG.
+description: Specifica se il codificatore genera intestazioni di estensione dell'immagine. Questa proprietà si applica ai codificatori video MPEG.
 ms.assetid: fea39283-53b1-4af1-b048-18fad6d56ec7
 title: Proprietà AVEncMPVGenerateHeaderPicExt (Codecapi.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "119540871"
 ---
 # <a name="avencmpvgenerateheaderpicext-property"></a>AVEncMPVGenerateHeaderPicExt - proprietà
 
-Specifica se il codificatore genera intestazioni di estensione immagine. Questa proprietà si applica ai codificatori video MPEG.
+Specifica se il codificatore genera intestazioni di estensione dell'immagine. Questa proprietà si applica ai codificatori video MPEG.
 
 Si tratta di una proprietà di lettura/scrittura.
 

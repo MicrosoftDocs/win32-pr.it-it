@@ -32,10 +32,10 @@ Elenco di siti a cui appartiene il computer (matrice di objectGUID dei siti, in 
 | CN                | MSMQ-Sites                                            |
 | Ldap-Display-Name | mSMQSites                                             |
 | Dimensione              | \-                                                    |
-| Privilegio di aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.927                                |
-| System-Id-Guid    | 9a0dc32a-c100-11d1-bbc5-0080c76670c0                  |
+| System-Id-Guid    | 9a0dc32a-c100-11d1-nette5-0080c76670c0                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -66,7 +66,7 @@ Elenco di siti a cui appartiene il computer (matrice di objectGUID dei siti, in 
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -87,7 +87,7 @@ Elenco di siti a cui appartiene il computer (matrice di objectGUID dei siti, in 
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -108,7 +108,7 @@ Elenco di siti a cui appartiene il computer (matrice di objectGUID dei siti, in 
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi usate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ Elenco di siti a cui appartiene il computer (matrice di objectGUID dei siti, in 
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| A valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
@@ -129,7 +129,7 @@ Elenco di siti a cui appartiene il computer (matrice di objectGUID dei siti, in 
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi usate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -142,7 +142,7 @@ Elenco di siti a cui appartiene il computer (matrice di objectGUID dei siti, in 
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| A valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
@@ -150,7 +150,7 @@ Elenco di siti a cui appartiene il computer (matrice di objectGUID dei siti, in 
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi usate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -163,7 +163,7 @@ Elenco di siti a cui appartiene il computer (matrice di objectGUID dei siti, in 
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| A valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
@@ -171,7 +171,7 @@ Elenco di siti a cui appartiene il computer (matrice di objectGUID dei siti, in 
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi usate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 

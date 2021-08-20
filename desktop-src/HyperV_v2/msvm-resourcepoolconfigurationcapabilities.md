@@ -1,7 +1,7 @@
 ---
-description: Descrive le funzionalità della \_ classe MSVM ResourcePoolConfigurationService associata.
+description: Descrive le funzionalità della classe Msvm \_ ResourcePoolConfigurationService associata.
 ms.assetid: 3e6857f9-62a0-420b-8f1d-8aad685a7ff7
-title: Classe Msvm_ResourcePoolConfigurationCapabilities
+title: Msvm_ResourcePoolConfigurationCapabilities classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,18 +19,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: b70d9e84e2c85d4c5b702a638982df0b47d62193
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f49f105af3db5646b32c6aa5d78f28da76bf7b9806174e15f56b4d990de68e8f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119535511"
 ---
-# <a name="msvm_resourcepoolconfigurationcapabilities-class"></a>\_Classe MSVM ResourcePoolConfigurationCapabilities
+# <a name="msvm_resourcepoolconfigurationcapabilities-class"></a>Classe Msvm \_ ResourcePoolConfigurationCapabilities
 
-Descrive le funzionalità della classe [**MSVM \_ ResourcePoolConfigurationService**](msvm-resourcepoolconfigurationservice.md) associata. I client possono usare le istanze di questa classe per determinare quali metodi sono supportati in modo sincrono o asincrono. Lo stesso metodo non deve essere presente in entrambi gli elenchi. Le implementazioni del metodo devono essere sincrone o asincrone.
+Descrive le funzionalità della classe [**Msvm \_ ResourcePoolConfigurationService**](msvm-resourcepoolconfigurationservice.md) associata. I client possono usare istanze di questa classe per determinare quali metodi sono supportati in modo sincrono o asincrono. Lo stesso metodo non deve essere in entrambi gli elenchi. Le implementazioni dei metodi devono essere sincrone o asincrone.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF (Simplified Managed Object Format) e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,32 +49,32 @@ class Msvm_ResourcePoolConfigurationCapabilities : CIM_Capabilities
 
 ## <a name="members"></a>Members
 
-La **classe \_ ResourcePoolConfigurationCapabilities di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ ResourcePoolConfigurationCapabilities** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ ResourcePoolConfigurationCapabilities di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ ResourcePoolConfigurationCapabilities** ha queste proprietà.
 
 <dl> <dt>
 
 **AsynchronousMethodsSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt32**
+Tipo di dati: **matrice uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di identificatori di metodi, ognuno dei quali identifica un metodo della classe [**\_ ResourcePoolConfigurationService MSVM**](msvm-resourcepoolconfigurationservice.md) supportata in modo asincrono dall'implementazione.
+Matrice di identificatori di metodo, ognuno dei quali identifica un metodo della [**classe Msvm \_ ResourcePoolConfigurationService**](msvm-resourcepoolconfigurationservice.md) supportato in modo asincrono dall'implementazione.
 
 <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF riservato** (..)
 
 
 </dt> <dd></dd> <dt>
@@ -102,14 +102,14 @@ Matrice di identificatori di metodi, ognuno dei quali identifica un metodo della
 
 <span id="DeletePool_is_supported"></span><span id="deletepool_is_supported"></span><span id="DELETEPOOL_IS_SUPPORTED"></span>
 
-**Deletepool è supportato** (32771)
+**DeletePool è supportato** (32771)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32772.. 65535)
+**Fornitore riservato** (32772..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -119,46 +119,46 @@ Matrice di identificatori di metodi, ognuno dei quali identifica un metodo della
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ Managed**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "funzionalità di configurazione del pool di risorse".
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Funzionalità di configurazione del pool di risorse".
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "funzionalità di configurazione del pool di risorse Microsoft".
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Funzionalità di configurazione del pool di risorse Microsoft".
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ Managed**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "funzionalità di configurazione del pool di risorse".
+Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Funzionalità di configurazione del pool di risorse".
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -167,26 +167,26 @@ Tipo di accesso: sola lettura
 Qualificatori: **chiave**
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **SynchronousMethodsSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt32**
+Tipo di dati: **matrice uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di identificatori di metodi, ognuno dei quali identifica un metodo della classe [**\_ ResourcePoolConfigurationService MSVM**](msvm-resourcepoolconfigurationservice.md) supportata in modo sincrono dall'implementazione di.
+Matrice di identificatori di metodo, ognuno dei quali identifica un metodo della [**classe Msvm \_ ResourcePoolConfigurationService**](msvm-resourcepoolconfigurationservice.md) supportato in modo sincrono dall'implementazione.
 
 <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF riservato** (..)
 
 
 </dt> <dd></dd> <dt>
@@ -214,14 +214,14 @@ Matrice di identificatori di metodi, ognuno dei quali identifica un metodo della
 
 <span id="DeletePool_is_supported"></span><span id="deletepool_is_supported"></span><span id="DELETEPOOL_IS_SUPPORTED"></span>
 
-**Deletepool è supportato** (32771)
+**DeletePool è supportato** (32771)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32772.. 65535)
+**Fornitore riservato** (32772..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -234,10 +234,10 @@ Matrice di identificatori di metodi, ognuno dei quali identifica un metodo della
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                                 |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

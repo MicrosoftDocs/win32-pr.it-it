@@ -1,7 +1,7 @@
 ---
-description: Il metodo NotifyOwnerMessage passa i messaggi specifici alla finestra del video.
+description: Il metodo NotifyOwnerMessage passa messaggi specifici alla finestra video.
 ms.assetid: 8b27281a-5b8a-46c3-aa66-390d4496f30e
-title: Metodo CBaseControlWindow. NotifyOwnerMessage (Ctlutil. h)
+title: Metodo CBaseControlWindow.NotifyOwnerMessage (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9073d37987404849ba8aa3acbda9919df840b410
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 35d71057027bd8fbd572dffd714f761ff101ba0de95dd42dcf058009b0cb1b04
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526851"
 ---
-# <a name="cbasecontrolwindownotifyownermessage-method"></a>CBaseControlWindow. NotifyOwnerMessage, metodo
+# <a name="cbasecontrolwindownotifyownermessage-method"></a>Metodo CBaseControlWindow.NotifyOwnerMessage
 
-Il `NotifyOwnerMessage` metodo passa i messaggi specifici alla finestra del video.
+Il `NotifyOwnerMessage` metodo passa messaggi specifici alla finestra video.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,14 +45,14 @@ HRESULT NotifyOwnerMessage(
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
-Handle per la finestra del video.
+Handle per la finestra video.
 
 </dd> <dt>
 
-*uMsg* 
+*Umsg* 
 </dt> <dd>
 
 Dettagli del messaggio.
@@ -75,21 +75,21 @@ Secondo parametro del messaggio.
 
 ## <a name="return-value"></a>Valore restituito
 
-Non restituisce alcun \_ errore.
+Restituisce NO \_ ERROR.
 
 ## <a name="remarks"></a>Commenti
 
-Quando la finestra video è un elemento figlio di un'altra finestra, non riceve alcuni messaggi della finestra di primo livello. Questi messaggi possono essere utili per un renderer, perché potrebbero influire sul comportamento. `NotifyOwnerMessage` passa uno dei messaggi seguenti alla finestra del video.
+Quando la finestra video è figlio di un'altra finestra, non riceve determinati messaggi della finestra di primo livello. Questi messaggi possono essere utili per un renderer, perché potrebbero influire sul relativo comportamento. `NotifyOwnerMessage` passa uno dei messaggi seguenti alla finestra del video.
 
--   \_ACTIVATEAPP WM
--   \_DEVMODECHANGE WM
--   \_DISPLAYCHANGE WM
--   \_PALETTECHANGED WM
--   \_PALETTEISCHANGING WM
--   \_QUERYNEWPALETTE WM
--   \_SYSCOLORCHANGE WM
+-   WM \_ ACTIVATEAPP
+-   WM \_ DEVMODECHANGE
+-   WM \_ DISPLAYCHANGE
+-   WM \_ PALETTECHANGED
+-   WM \_ PALETTEISCHANGING
+-   WM \_ QUERYNEWPALETTE
+-   WM \_ SYSCOLORCHANGE
 
-È possibile richiedere che il server di distribuzione plug-in [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) (PID) renda una finestra diventata un elemento figlio di un'altra finestra. Quando si verifica questo problema, il PID cercherà determinati messaggi che potrebbero essere inviati alla finestra proprietaria. Il PID li inoltrerà quindi alla finestra di proprietà. L'elaborazione predefinita per i messaggi consiste nell'inviarli in modo sincrono alla routine di proprietà della finestra chiamando la funzione **SendMessage** Win32.
+È possibile richiedere al distributore del plug-in [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) (PID) di rendere una finestra figlio di un'altra finestra. In questo caso, il PID cerca alcuni messaggi che potrebbero essere inviati alla finestra proprietaria. Il PID inoltra quindi i messaggi alla finestra di proprietà. L'elaborazione predefinita per i messaggi è di inviarli alla routine della finestra di proprietà in modo sincrono chiamando la funzione **SendMessage** Win32.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,8 +97,8 @@ Quando la finestra video è un elemento figlio di un'altra finestra, non riceve 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: External. NavigateTaskPaneURL, metodo
-description: Si noti che in questo argomento viene descritta la funzionalità progettata per l'utilizzo da punti vendita online. | External. NavigateTaskPaneURL, metodo
+title: Metodo External.NavigateTaskPaneURL
+description: Nota Questo argomento descrive le funzionalità progettate per l'uso da parte dei negozi online. | Metodo External.NavigateTaskPaneURL
 ms.assetid: c3a888c0-6589-4d21-9d47-37372d9069f4
 keywords:
 - Metodo NavigateTaskPaneURL Windows Media Player
-- Metodo NavigateTaskPaneURL Windows Media Player, classe esterna
-- Classe esterna Media Player Windows, metodo NavigateTaskPaneURL
+- Metodo NavigateTaskPaneURL Windows Media Player , classe External
+- Classe esterna Windows Media Player, metodo NavigateTaskPaneURL
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e70558c7616738f67d9dc1d6d29eca15e5c30d4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eebcf8d799452a9966355f644f00ac5c4aecc4c066374254e8e580431b756b92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649031"
 ---
-# <a name="externalnavigatetaskpaneurl-method"></a>External. NavigateTaskPaneURL, metodo
+# <a name="externalnavigatetaskpaneurl-method"></a>Metodo External.NavigateTaskPaneURL
 
 > [!Note]  
-> Questo argomento descrive la funzionalità progettata per l'uso da punti vendita online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> In questo argomento vengono descritte le funzionalità progettate per l'utilizzo da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato.
 
  
 
-Il metodo **NavigateTaskPaneURL** apre una pagina Web nel riquadro attività specificato e sposta lo stato attivo sul riquadro specificato.
+Il **metodo NavigateTaskPaneURL** apre una pagina Web nel riquadro attività specificato e passa lo stato attivo al riquadro specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,24 +49,24 @@ External.NavigateTaskPaneURL(
 
 <dl> <dt>
 
-*bstrKeyName* \[ in\]
+*bstrKeyName* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** contenente il nome della chiave per l'archivio online. (obbligatorio)
+**Stringa** contenente il nome della chiave per lo store online. (obbligatorio)
 
 </dd> <dt>
 
-*bstrTaskPane* \[ in\]
+*bstrTaskPane* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** contenente il nome del riquadro attività in cui viene visualizzata la pagina Web. (obbligatorio)
+**Stringa** contenente il nome del riquadro attività in cui si apre la pagina Web. (obbligatorio)
 
 </dd> <dt>
 
-*bstrParams* \[ in\]
+*bstrParams* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** contenente i parametri della stringa di query da accodare all'URL specificato dall'elemento **Navigate** del documento ServiceInfo. (facoltativo).
+**Stringa** contenente i parametri della stringa di query da aggiungere all'URL specificato **dall'elemento Navigate** del documento ServiceInfo. (facoltativo).
 
 </dd> </dl>
 
@@ -76,31 +76,31 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Se si passa a un riquadro non supportato dall'archivio online, è possibile che si verifichi la modifica dell'archivio online corrente.
+Il passaggio a un riquadro non supportati dal negozio online può causare la modifica dello store online corrente.
 
-Il valore specificato per *bstrParams* è valido solo quando **NavigateTaskPaneURL** viene chiamato da pagine Web fornite dal negozio online.
+Il valore specificato per *bstrParams* è valido solo quando **NavigateTaskPaneURL** viene chiamato dalle pagine Web fornite dallo store online.
 
-Nella tabella seguente sono elencati i valori validi per *bstrTaskPane* e il riquadro attività associato per ciascuno di essi.
+Nella tabella seguente sono elencati i valori validi per *bstrTaskPane* e il riquadro attività associato per ognuno.
 
 
 
 | Valore            | Riquadro attività                      |
 |------------------|--------------------------------|
-| **ServiceTask1** | Primo riquadro attività negozio online.  |
-| **ServiceTask2** | Secondo riquadro attività archivio online. |
-| **ServiceTask3** | Terzo riquadro attività negozio online.  |
+| **Attività Servizio1** | Riquadro attività Primo negozio online.  |
+| **Attività Servizio2** | Secondo riquadro attività dello store online. |
+| **Attività Servizio3** | Terzo riquadro attività dello store online.  |
 
 
 
  
 
-Il codice della pagina Web deve specificare un valore per [External. SelectedTaskPane](external-selectedtaskpane.md) durante il caricamento per assicurarsi che il pulsante corretto del riquadro attività venga evidenziato dopo il completamento dello spostamento.
+Il codice della pagina Web deve specificare un valore per [External.SelectedTaskPane](external-selectedtaskpane.md) durante il caricamento per assicurarsi che il pulsante del riquadro attività corretto sia evidenziato al termine della navigazione.
 
 ## <a name="examples"></a>Esempio
 
-Il codice di esempio seguente mostra come **NavigateTaskPaneURL** crea l'URL della pagina Web da visualizzare per **ServiceTask1**.
+Il codice di esempio seguente mostra come **NavigateTaskPaneURL crea** l'URL della pagina Web da visualizzare per **ServiceTask1.**
 
-Esempio dell'elemento **Navigate** :
+Esempio **dell'elemento Navigate:**
 
 
 ```XML
@@ -111,7 +111,7 @@ Esempio dell'elemento **Navigate** :
 
 
 
-Chiamata di esempio al metodo **NavigateTaskPaneURL** :
+Chiamata di esempio al **metodo NavigateTaskPaneURL:**
 
 
 ```XML
@@ -120,7 +120,7 @@ external.NavigateTaskPaneURL("Proseware", "ServiceTask1", "Pane=Store");
 
 
 
-Esempio di URL risultante usato per la pagina Web visualizzata in **ServiceTask1**:
+Esempio di URL risultante usato per la pagina Web visualizzata in **ServiceTask1:**
 
 
 ```XML
@@ -144,10 +144,10 @@ https://www.proseware.com/online store/html/navigate.asp?Pane=Store
 
 <dl> <dt>
 
-[**Oggetto esterno per i negozi di tipo 2 online**](external-object-for-type-2-online-stores.md)
+[**Oggetto esterno per negozi online di tipo 2**](external-object-for-type-2-online-stores.md)
 </dt> <dt>
 
-[**External. SelectedTaskPane**](external-selectedtaskpane.md)
+[**External.SelectedTaskPane**](external-selectedtaskpane.md)
 </dt> </dl>
 
  

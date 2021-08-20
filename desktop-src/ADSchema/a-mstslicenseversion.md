@@ -1,10 +1,10 @@
 ---
 title: Attributo MS-TS-LicenseVersion
-description: Versione licenze Terminal Server.
+description: Versione della licenza di Terminal Server.
 ms.assetid: 9df736d7-be9c-4ac4-a9fb-2bb669a84f2d
 ms.tgt_platform: multiple
 keywords:
-- Attributo MS-TS-LicenseVersion-schema AD
+- Schema AD dell'attributo MS-TS-LicenseVersion
 - Schema AD dell'attributo msTSLicenseVersion
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc5efe318157f55cad5a7cae23e6e9b189608acb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 156efd0ea3f58cdab34afec5a848f98219cdd6afebb146801d0a3c874614e9d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022569"
 ---
 # <a name="ms-ts-licenseversion-attribute"></a>Attributo MS-TS-LicenseVersion
 
-Versione licenze Terminal Server.
+Versione della licenza di Terminal Server.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | MS-TS-LicenseVersion                        |
-| LDAP-Display-Name | msTSLicenseVersion                          |
+| Ldap-Display-Name | msTSLicenseVersion                          |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1994                     |
-| System-ID-GUID    | 0ae94a89-372f-4df2-ae8a-c64a2bc47278        |
+| System-Id-Guid    | 0ae994a89-372f-4df2-ae8a-c64a2bc47278        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,15 +55,15 @@ Versione licenze Terminal Server.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Vero         |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -76,15 +76,15 @@ Versione licenze Terminal Server.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Vero         |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -97,15 +97,15 @@ Versione licenze Terminal Server.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Vero         |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

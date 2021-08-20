@@ -1,9 +1,9 @@
 ---
-title: AmbientAttributes. accDescription
-description: L'attributo accDescription specifica o Recupera una descrizione per qualsiasi elemento.
+title: AmbientAttributes.accDescription
+description: L'attributo accDescription specifica o recupera una descrizione per qualsiasi elemento.
 ms.assetid: 660d886d-5dd2-4f7d-b343-6d9c7c8f8389
 keywords:
-- Media Player Windows AmbientAttributes. accDescription
+- AmbientAttributes.accDescription Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfb58503bccba022b4d1216c6d64937dc97583bf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0ae8498bff2c185c3c9f28f4f12ac41707f35bf697a509cb719e433e5896a2cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055218"
 ---
-# <a name="ambientattributesaccdescription"></a>AmbientAttributes. accDescription
+# <a name="ambientattributesaccdescription"></a>AmbientAttributes.accDescription
 
-L'attributo **accDescription** specifica o Recupera una descrizione per qualsiasi elemento.
+**L'attributo accDescription** specifica o recupera una descrizione per qualsiasi elemento.
 
 ``` syntax
         elementID.accDescription
@@ -29,13 +29,13 @@ L'attributo **accDescription** specifica o Recupera una descrizione per qualsias
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura con un valore predefinito di "" (stringa vuota).
+Questo attributo è una  stringa di lettura/scrittura con valore predefinito "" (stringa vuota).
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene utilizzato per scopi di accessibilità. Consente di leggere a voce alta la descrizione di qualsiasi elemento da un programma Reader.
+Questo attributo viene usato per scopi di accessibilità. Consente la lettura a voce alta della descrizione di qualsiasi elemento da parte di un programma lettore.
 
-Questo attributo si applica anche agli elementi Button all'interno del controllo gruppo di pulsanti.
+Questo attributo si applica anche agli elementi pulsante all'interno del controllo gruppo di pulsanti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,7 +43,7 @@ Questo attributo si applica anche agli elementi Button all'interno del controllo
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 

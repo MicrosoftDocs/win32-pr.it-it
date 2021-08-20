@@ -1,10 +1,10 @@
 ---
-title: attributo MS-NET-IEEE-80211-GP-PolicyGUID
-description: Contiene un GUID che identifica uno specifico oggetto Criteri di gruppo 802,11 nel dominio.
+title: Attributo ms-net-ieee-80211-GP-PolicyGUID
+description: Contiene un GUID che identifica un oggetto Criteri di gruppo 802.11 specifico nel dominio.
 ms.assetid: 8f7d27e3-d20c-4439-8362-16e2880ae9a1
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo MS-NET-IEEE-80211-GP-PolicyGUID
+- Attributo AD ms-net-ieee-80211-GP-PolicyGUID
 topic_type:
 - apiref
 api_name:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 506c1519d65913844125f42a1db5b898d8f06f17
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8e8944d577c4c2f1b0fca1bd386c61c03b0bc421a98914813ae9af57a121496f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583491"
 ---
-# <a name="ms-net-ieee-80211-gp-policyguid-attribute"></a>attributo MS-NET-IEEE-80211-GP-PolicyGUID
+# <a name="ms-net-ieee-80211-gp-policyguid-attribute"></a>Attributo ms-net-ieee-80211-GP-PolicyGUID
 
-Contiene un GUID che identifica uno specifico oggetto Criteri di gruppo 802,11 nel dominio.
+Contiene un GUID che identifica un oggetto Criteri di gruppo 802.11 specifico nel dominio.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-NET-IEEE-80211-GP-PolicyGUID             |
-| LDAP-Display-Name | MS-NET-IEEE-80211-GP-PolicyGUID             |
+| CN                | ms-net-ieee-80211-GP-PolicyGUID             |
+| Ldap-Display-Name | ms-net-ieee-80211-GP-PolicyGUID             |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1951                     |
-| System-ID-GUID    | 35697062-1eaf-448b-ac1e-388e0be4fdee        |
+| System-Id-Guid    | 35697062-1eaf-448b-ac1e-388e0be4fdee        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -54,15 +54,15 @@ Contiene un GUID che identifica uno specifico oggetto Criteri di gruppo 802,11 n
 | ID collegamento                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
 | System-Only            | Falso                                                                               |
-| È a valore singolo       | Vero                                                                                |
+| Is-Single-Valued       | Vero                                                                                |
 | Indicizzato             | Falso                                                                               |
 | Nel catalogo globale      | Falso                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Classi utilizzate in        | [**MS-NET-IEEE-80211-GroupPolicy**](c-ms-net-ieee-80211-grouppolicy.md)<br/> |
+| Classi usate in        | [**ms-net-ieee-80211-GroupPolicy**](c-ms-net-ieee-80211-grouppolicy.md)<br/> |
 
 
 
@@ -75,15 +75,15 @@ Contiene un GUID che identifica uno specifico oggetto Criteri di gruppo 802,11 n
 | ID collegamento                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
 | System-Only            | Falso                                                                               |
-| È a valore singolo       | Vero                                                                                |
+| Is-Single-Valued       | Vero                                                                                |
 | Indicizzato             | Falso                                                                               |
 | Nel catalogo globale      | Falso                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Classi utilizzate in        | [**MS-NET-IEEE-80211-GroupPolicy**](c-ms-net-ieee-80211-grouppolicy.md)<br/> |
+| Classi usate in        | [**ms-net-ieee-80211-GroupPolicy**](c-ms-net-ieee-80211-grouppolicy.md)<br/> |
 
 
 
@@ -96,15 +96,15 @@ Contiene un GUID che identifica uno specifico oggetto Criteri di gruppo 802,11 n
 | ID collegamento                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
 | System-Only            | Falso                                                                               |
-| È a valore singolo       | Vero                                                                                |
+| Is-Single-Valued       | Vero                                                                                |
 | Indicizzato             | Falso                                                                               |
 | Nel catalogo globale      | Falso                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Classi utilizzate in        | [**MS-NET-IEEE-80211-GroupPolicy**](c-ms-net-ieee-80211-grouppolicy.md)<br/> |
+| Classi usate in        | [**ms-net-ieee-80211-GroupPolicy**](c-ms-net-ieee-80211-grouppolicy.md)<br/> |
 
 
 

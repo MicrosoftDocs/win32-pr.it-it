@@ -1,21 +1,21 @@
 ---
-description: Quando si crea una voce di origine, è possibile passare una struttura che definisce i callback per determinati eventi audio. È possibile utilizzare questi callback per eseguire azioni o per segnalare altro codice.
+description: Quando si crea una voce di origine, è possibile passare una struttura che definisce i callback per determinati eventi audio. È possibile usare questi callback per eseguire azioni o segnalare altro codice.
 ms.assetid: 0bace0c5-9171-efd8-9a38-2c2b3452f73f
 title: 'Procedura: Usare callback di voci di origine'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c10005ed838a22ea0dfce59312d6f293c213c39
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8fa19de67c8e02bfa4c283fac8677a7eae2325b074eef5d5f5c7db644b3f113a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103752423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583771"
 ---
 # <a name="how-to-use-source-voice-callbacks"></a>Procedura: Usare callback di voci di origine
 
-Quando si crea una voce di origine, è possibile passare una struttura che definisce i callback per determinati eventi audio. È possibile utilizzare questi callback per eseguire azioni o per segnalare altro codice.
+Quando si crea una voce di origine, è possibile passare una struttura che definisce i callback per determinati eventi audio. È possibile usare questi callback per eseguire azioni o segnalare altro codice.
 
-1.  Creare una classe che erediti dall'interfaccia [**IXAudio2VoiceCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2voicecallback) . Tutte le funzioni membro di **IXAudio2VoiceCallback** sono puramente virtuali e devono essere definite. L'unica funzione di interesse in questo esempio è [**OnStreamEnd**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voicecallback-onstreamend). Pertanto, le altre funzioni sono stub. La funzione **OnStreamEnd** attiva un evento che indica che la riproduzione del suono è stata eseguita.
+1.  Creare una classe che eredita [**dall'interfaccia IXAudio2VoiceCallback.**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2voicecallback) Tutte le funzioni membro **di IXAudio2VoiceCallback** sono puramente virtuali e devono essere definite. L'unica funzione di interesse in questo esempio è [**OnStreamEnd.**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voicecallback-onstreamend) Pertanto, il resto delle funzioni sono stub. La **funzione OnStreamEnd** attiva un evento che indica che la riproduzione del suono è stata completata.
 
     ```
     class VoiceCallback : public IXAudio2VoiceCallback
@@ -40,7 +40,7 @@ Quando si crea una voce di origine, è possibile passare una struttura che defin
 
     
 
-2.  Creare una [**voce di origine**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2sourcevoice) con [**IXAudio2:: CreateSourceVoice**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createsourcevoice) usando un'istanza della classe di callback creata in precedenza come parametro pCallback.
+2.  Creare una [**voce di origine**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2sourcevoice) con [**IXAudio2::CreateSourceVoice**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createsourcevoice) usando un'istanza della classe di callback creata in precedenza come parametro pCallback.
 
     ```
     VoiceCallback voiceCallback;
@@ -50,7 +50,7 @@ Quando si crea una voce di origine, è possibile passare una struttura che defin
 
     
 
-3.  Dopo l'avvio della voce, usare il metodo [**WaitForSingleObjectEx**](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobjectex) per attendere l'attivazione dell'evento.
+3.  Dopo aver avviato la voce, usare il [**metodo WaitForSingleObjectEx**](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobjectex) per attendere l'attivazione dell'evento.
 
     ```
     WaitForSingleObjectEx( voiceCallback.hBufferEndEvent, INFINITE, TRUE );

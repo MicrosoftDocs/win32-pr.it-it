@@ -19,15 +19,15 @@ Le strutture seguenti vengono usate con le finestre di dialogo di selezione ogge
 -   [**SELEZIONE \_ DS**](/windows/desktop/api/Objsel/ns-objsel-ds_selection)
 -   [**ELENCO DI SELEZIONE DS \_ \_**](/windows/desktop/api/Objsel/ns-objsel-ds_selection_list)
 -   [**FLAG DI FILTRO DSOP \_ \_**](/windows/desktop/api/Objsel/ns-objsel-dsop_filter_flags)
--   [**INFORMAZIONI \_ INIT DSOP \_**](/windows/desktop/api/Objsel/ns-objsel-dsop_init_info)
--   [**INFORMAZIONI \_ INIT AMBITO DSOP \_ \_**](/windows/desktop/api/Objsel/ns-objsel-dsop_scope_init_info)
--   [**FLAG DI FILTRO \_ DI LIVELLO \_ SUPERIORE DSOP \_**](/windows/desktop/api/Objsel/ns-objsel-dsop_uplevel_filter_flags)
+-   [**INFORMAZIONI INIT DSOP \_ \_**](/windows/desktop/api/Objsel/ns-objsel-dsop_init_info)
+-   [**INFORMAZIONI DI \_ \_ INIT DELL'AMBITO \_ DSOP**](/windows/desktop/api/Objsel/ns-objsel-dsop_scope_init_info)
+-   [**FLAG DI FILTRO DI LIVELLO SUPERIORE DSOP \_ \_ \_**](/windows/desktop/api/Objsel/ns-objsel-dsop_uplevel_filter_flags)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**ELENCO DI \_ SELEZIONE DSOP \_ DS \_ \_ CFSTR**](cfstr-dsop-ds-selection-list.md)
+[**CFSTR \_ DSOP \_ DS \_ SELECTION \_ LIST**](cfstr-dsop-ds-selection-list.md)
 </dt> <dt>
 
 [**IDsObjectPicker::InvokeDialog**](/windows/desktop/api/Objsel/nf-objsel-idsobjectpicker-invokedialog)

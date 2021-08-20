@@ -1,7 +1,7 @@
 ---
-description: Il metodo pause interrompe temporaneamente l'acquisizione corrente.
+description: Il metodo Pause arresta temporaneamente l'acquisizione corrente.
 ms.assetid: 43176e9e-1502-484c-a8af-4e7bbf5f6474
-title: IStats::P metodo ause (Netmon. h)
+title: Metodo IStats::P ause (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: d9e9f04ce3d25399866c711dad7a853f2c43c2ce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d1bab0d66a081c175d997e093d7dd1ff2b0d1c9622ecff73e0b3b1473edc885
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119495211"
 ---
-# <a name="istatspause-method"></a>IStats::P metodo ause
+# <a name="istatspause-method"></a>Metodo IStats::P ause
 
-Il metodo **pause** interrompe temporaneamente l'acquisizione corrente.
+Il **metodo Pause** arresta temporaneamente l'acquisizione corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, il valore restituito è NMERR \_ Success.
+Se il metodo ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore seguenti:
 
@@ -48,10 +48,10 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 | Codice restituito                                                                                            | Descrizione                                                                                                                                  |
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_acquisizione NMERR \_ sospesa**</dt> </dl>  | Acquisizione già sospesa.<br/>                                                                                                    |
-| <dl> <dt>**NMERR \_ non \_ acquisizione**</dt> </dl>   | L'oggetto NPP non sta acquisendo dati. Chiamare il metodo [IStats:: Start](istats-start.md) per avviare l'acquisizione.<br/>                            |
-| <dl> <dt>**NMERR \_ non \_ connesso**</dt> </dl>   | L'oggetto NPP non è connesso alla rete. Chiamare il metodo [IStats:: Connect](istats-connect.md) per connettere l'oggetto NPP alla rete.<br/> |
-| <dl> <dt>**NMERR \_ non \_ \_ solo statistiche**</dt> </dl> | L'oggetto NPP è connesso alla rete, ma non con il metodo [IStats:: Connect](istats-connect.md) .<br/>                                |
+| <dl> <dt>**ACQUISIZIONE NMERR \_ \_ SOSPESA**</dt> </dl>  | L'acquisizione è già sospesa.<br/>                                                                                                    |
+| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl>   | NPP non acquisisce dati. Chiamare il [metodo IStats::Start](istats-start.md) per avviare l'acquisizione.<br/>                            |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>   | NPP non è connesso alla rete. Chiamare il [metodo IStats::Connessione](istats-connect.md) per connettere NPP alla rete.<br/> |
+| <dl> <dt>**NMERR \_ NON \_ STATS \_ ONLY**</dt> </dl> | NPP è connesso alla rete, ma non con il [metodo IStats::Connessione.](istats-connect.md)<br/>                                |
 
 
 
@@ -59,11 +59,11 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Quando l'acquisizione viene sospesa, i nuovi frame non vengono acquisiti fino a quando una chiamata al metodo [IStats:: Resume](istats-resume.md) riavvia l'acquisizione.
+Mentre l'acquisizione è sospesa, i nuovi frame non vengono acquisiti fino a quando una chiamata al metodo [IStats::Resume](istats-resume.md) non riavvia l'acquisizione.
 
-Quando si usano i metodi **IStats::P ause** e **IStats:: Resume** per controllare l'acquisizione, Network Monitor continua ad aggiungere [*statistiche di conversazione*](c.md) ogni volta che viene eseguita l'acquisizione.
+Quando si usano i metodi **IStats::P ause** e **IStats::Resume** per controllare l'acquisizione, Network Monitor continua ad aggiungere statistiche di conversazione ogni volta che l'acquisizione è in esecuzione. [](c.md)
 
-Per riavviare la chiamata di acquisizione [IStats:: Resume](istats-resume.md). Per arrestare l'acquisizione, chiamare [IStats:: Stop](istats-stop.md).
+Per riavviare l'acquisizione, [chiamare IStats::Resume](istats-resume.md). Per arrestare l'acquisizione, chiamare [IStats::Stop](istats-stop.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,7 +73,7 @@ Per riavviare la chiamata di acquisizione [IStats:: Resume](istats-resume.md). P
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
@@ -85,16 +85,16 @@ Per riavviare la chiamata di acquisizione [IStats:: Resume](istats-resume.md). P
 [IStats](istats.md)
 </dt> <dt>
 
-[IStats:: Connect](istats-connect.md)
+[IStats::Connessione](istats-connect.md)
 </dt> <dt>
 
-[IStats:: Resume](istats-resume.md)
+[IStats::Resume](istats-resume.md)
 </dt> <dt>
 
-[IStats:: Start](istats-start.md)
+[IStats::Start](istats-start.md)
 </dt> <dt>
 
-[IStats:: Stop](istats-stop.md)
+[IStats::Stop](istats-stop.md)
 </dt> </dl>
 
  

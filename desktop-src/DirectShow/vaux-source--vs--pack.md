@@ -1,25 +1,25 @@
 ---
-description: Pacchetto di origine (VS) VAUX
+description: PACCHETTO DI ORIGINE VAUX (VS)
 ms.assetid: 5ffd2883-0e56-459f-b229-cc014b894237
-title: Pacchetto di origine (VS) VAUX
+title: PACCHETTO DI ORIGINE VAUX (VS)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28f7ad2a91f1be1291b564013041e6dfa23bb014
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 477e7a3257c11d6d8b42e16d2f066251452bc42a489abe9e666e374a565fa77c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072099"
 ---
-# <a name="vaux-source-vs-pack"></a>Pacchetto di origine (VS) VAUX
+# <a name="vaux-source-vs-pack"></a>PACCHETTO DI ORIGINE VAUX (VS)
 
-Le tabelle seguenti elencano i valori usati dal driver MSDV per compilare il membro **dwDVVAuxSrc** della struttura [**DVinfo**](/windows/desktop/api/strmif/ns-strmif-dvinfo) . Per ulteriori informazioni, vedere [DVinfo Field Settings nel driver Msdv](dvinfo-field-settings-in-the-msdv-driver.md).
+Le tabelle seguenti elencano i valori usati dal driver MSDV per compilare il membro **dwDVVAuxSrc** della [**struttura DVINFO.**](/windows/desktop/api/strmif/ns-strmif-dvinfo) Per altre informazioni, vedere [DVINFO Field Impostazioni nel driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md).
 
-**Impostazioni DVCR**
+**DVCR Impostazioni**
 
 
 
-Standard DV
+DV Standard
 
 DVCR (IEC 61834)
 
@@ -27,7 +27,7 @@ FOURCC
 
 dvsl
 
-DVSD
+dvsd
 
 Sistema
 
@@ -109,7 +109,7 @@ CODICE SORGENTE (2)
 
 1
 
-SPREVISTA (5)
+STYPE (5)
 
 0:0001
 
@@ -119,7 +119,7 @@ SPREVISTA (5)
 
 0:0000
 
-CATEGORIA TUNER (8)
+CATEGORIA DI SINER (8)
 
 1111:1111
 
@@ -143,19 +143,19 @@ VS Pack
 
  
 
-**Impostazioni DVCPRO 25 e DVCPRO 50 (pianificato)**
+**DVCPRO 25 e DVCPRO 50 Impostazioni (pianificato)**
 
 
 
-Standard DV
+DV Standard
 
-DVCPRO (SMPTE 314M)-pianificato
+DVCPRO (SMPTE 314M) - Pianificato
 
 FOURCC
 
-DV25
+dv25
 
-DV50
+dv50
 
 Sistema
 
@@ -237,7 +237,7 @@ Riservato (2)
 
 1
 
-SPREVISTA (5)
+STYPE (5)
 
 0:0000
 
@@ -271,13 +271,13 @@ VS Pack
 
  
 
-**Impostazioni DVCR 100 (pianificato)**
+**DVCR 100 Impostazioni (pianificato)**
 
 
 
-Standard DV
+DV Standard
 
-DVCPRO 100-pianificato
+DVCPRO 100 - Pianificato
 
 FOURCC
 
@@ -347,7 +347,7 @@ Riservato (2)
 
 1
 
-SPREVISTA (5)
+STYPE (5)
 
 1:0100
 
@@ -377,20 +377,20 @@ VS Pack
 
 ## <a name="remarks"></a>Commenti
 
-I codici di campo seguenti sono di particolare interesse:
+I codici di campo seguenti sono di interesse:
 
--   **B/W**: Flag nero e bianco. 1 = colore.
+-   **B/W:** flag bianco e nero. 1 = colore.
 -   **50/60**: numero di campi.
-    -   0 = campi di 60
+    -   0 = 60 campi
     -   1 = 50 campi
--   **SPrevista**: tipo di segnale.
+-   **STYPE:** tipo di segnale.
 
     Definizione IEC 61834:
 
-    -   0:0000 = 525-60 o 625-50, DVSD
+    -   0:0000 = 525-60 o 625-50, dvsd
     -   0:0001 = 525-60 o 625-50, dvsl (come definito in IEC 61883-5)
 
-    Definizione 314M SMPTE:
+    Definizione SMPTE 314M:
 
     -   0:0000 = compressione 4:1:1
     -   0:0100 = compressione 4:2:2
@@ -407,7 +407,7 @@ I codici di campo seguenti sono di particolare interesse:
 [Video digitale in DirectShow](digital-video-in-directshow.md)
 </dt> <dt>
 
-[Impostazioni dei campi DVINFO nel driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
+[Campi DVINFO Impostazioni nel driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
 </dt> </dl>
 
  

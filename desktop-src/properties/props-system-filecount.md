@@ -4,12 +4,12 @@ ms.assetid: 81c89caf-843e-4a87-ac41-099de9174ea6
 title: System.FileCount
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a29c7760b0e3db61516da49ea95010fda8b4a4d0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d43acbb5b8b00aea38a21d000cdfb560dc677377de98fd50e68d1c4bd64d55fd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108100919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119598891"
 ---
 # <a name="systemfilecount"></a>System.FileCount
 
@@ -37,7 +37,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -67,7 +67,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

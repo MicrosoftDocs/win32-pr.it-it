@@ -1,9 +1,9 @@
 ---
 title: noncreatable (attributo)
-description: L'attributo \ noncreable \ definisce un oggetto di cui non è possibile creare un'istanza.
+description: L'attributo \ noncreatable\ definisce un oggetto di cui non è possibile creare un'istanza da solo.
 ms.assetid: 75d7b978-0f82-4e8a-89c2-ffd5b9a691d6
 keywords:
-- attributo MIDL non creabile
+- ATTRIBUTO MIDL non creabile
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2aa54be3416087c06651a4bb58902a0469e8f0c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 6e59c53d8e4c05d15d55a6ccd9d7fb2b5cd8783463d1f59d439c74240fdd93a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104337039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066941"
 ---
 # <a name="noncreatable-attribute"></a>noncreatable (attributo)
 
-L'attributo non generabile definisce un oggetto di cui non è possibile creare un'istanza. **\[ \]**
+**\[ L'attributo \] non creabile** definisce un oggetto di cui non è possibile creare un'istanza da solo.
 
 ``` syntax
 [
@@ -38,21 +38,21 @@ coclass coclass-name
 
 <dl> <dt>
 
-*coclass-Attribute-List* 
+*coclass-attribute-list* 
 </dt> <dd>
 
-Altri attributi che si applicano alla classe.
+Altri attributi che si applicano alla classe .
 
 </dd> <dt>
 
-*coclass-nome* 
+*coclass-name* 
 </dt> <dd>
 
 Nome della classe.
 
 </dd> <dt>
 
-*coclass-interface-List* 
+*coclass-interface-list* 
 </dt> <dd>
 
 Elenco di interfacce per la classe.
@@ -61,11 +61,11 @@ Elenco di interfacce per la classe.
 
 ## <a name="remarks"></a>Commenti
 
-Usare l'attributo **\[ noncreable \]** in un'istruzione [**coclass**](coclass.md) per indicare agli utenti che non possono creare un nuovo oggetto di questa classe al livello principale, ovvero chiamando **CreateInstance** o **CoCreateInstance**. La creazione di un'istanza di un oggetto di questa classe richiede una chiamata al metodo a un altro oggetto. In Microsoft Excel, ad esempio, l'oggetto "Cell" non è creabile e deve essere ottenuto da un oggetto foglio di lavoro di Microsoft Excel.
+Usare **\[ l'attributo \] noncreatable** in un'istruzione [**di coclasse**](coclass.md) per indicare agli utenti che non possono creare un nuovo oggetto di questa classe al livello superiore, ovvero chiamando **CreateInstance** o **CoCreateInstance**. La creazione di un'istanza di un oggetto di questa classe richiede una chiamata al metodo a un altro oggetto. Ad esempio, in Microsoft Excel l'oggetto "Cell" non è creabile e deve essere ottenuto da un Microsoft Excel Worksheet.
 
-I metodi che restituiscono istanze di classi non creabili devono restituire il tipo esatto dell'oggetto, anziché i tipi **Variant** o **IDispatch** \* .
+I metodi che restituiscono istanze di classi non creabili devono restituire il tipo esatto dell'oggetto, anziché i tipi **VARIANT** **o IDispatch.** \*
 
-### <a name="typeflag-representation"></a>Rappresentazione TypeFlag:
+### <a name="typeflag-representation"></a>Rappresentazione typeflag:
 
 Assenza di TYPEFLAG \_ FCANCREATE.
 
@@ -91,15 +91,15 @@ coclass MyCoClass
 [**coclass**](coclass.md)
 </dt> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[Esempio di file di FAD](/previous-versions/windows/desktop/automat/odl-file-example)
+[Esempio di file ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
 [Generazione di una libreria dei tipi con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

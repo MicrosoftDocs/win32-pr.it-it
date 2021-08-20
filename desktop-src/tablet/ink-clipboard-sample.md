@@ -1,40 +1,40 @@
 ---
-description: Questo programma illustra come copiare e incollare input penna in un'altra applicazione. Consente inoltre all'utente di copiare una selezione di tratti e incollare il risultato nell'oggetto Ink esistente.
+description: Questo programma illustra come copiare e incollare input penna in un'altra applicazione. Consente inoltre all'utente di copiare una selezione di tratti e incollare il risultato nell'oggetto input penna esistente.
 ms.assetid: a0c42f1c-543d-44f8-83d9-fe810de410ff
-title: Esempio di appunti Ink
+title: Esempio di Appunti input penna
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95c5da0bc0ba9a7e3a1b4e1a5c52784f10fb2023
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 73aa8acdf785321dc01706d4a4de50e0a2673a31250edbfa4316a27aecd0ce3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032329"
 ---
-# <a name="ink-clipboard-sample"></a>Esempio di appunti Ink
+# <a name="ink-clipboard-sample"></a>Esempio di Appunti input penna
 
-Questo programma illustra come copiare e incollare input penna in un'altra applicazione. Consente inoltre all'utente di copiare una selezione di tratti e incollare il risultato nell'oggetto Ink esistente.
+Questo programma illustra come copiare e incollare input penna in un'altra applicazione. Consente inoltre all'utente di copiare una selezione di tratti e incollare il risultato nell'oggetto input penna esistente.
 
-Sono disponibili le modalità degli Appunti seguenti:
+Sono disponibili le modalità Appunti seguenti:
 
--   Formato ISF (Ink Serialized Format)
+-   Formato serializzato input penna (ISF)
 -   Metafile
 -   Enhanced Metafile (EMF)
 -   Bitmap
--   Input penna
--   Disegna input penna
+-   Input penna di testo
+-   Disegnare l'input penna
 
-Input penna e sketch input penna sono due tipi di controlli input penna utilizzati rispettivamente come testo o come disegno. È possibile incollare ISF, input penna e sketch Ink nell'input penna esistente.
+L'input penna del testo e l'input penna dello sketch sono due tipi di controlli input penna usati rispettivamente come testo o disegno. È possibile incollare ISF, input penna di testo e disegnare l'input penna nell'input penna esistente.
 
-Oltre agli Appunti, questo esempio illustra anche come selezionare i tratti con lo strumento lazo. L'utente può spostare i tratti selezionati e modificarne gli attributi di disegno. Questa funzionalità è un subset della funzionalità di selezione già fornita dal controllo overlay dell'input penna. viene implementato qui a scopo illustrativo.
+Oltre agli Appunti, questo esempio illustra anche come selezionare i tratti con lo strumento lazo. L'utente può spostare i tratti selezionati e modificarne gli attributi di disegno. Questa funzionalità è un subset delle funzionalità di selezione già fornite dal controllo di sovrapposizione input penna. viene implementato qui a scopo illustrativo.
 
 In questo esempio vengono usate le funzionalità seguenti:
 
--   Oggetto [InkCollector](/previous-versions/ms583683(v=vs.100)) .
--   Supporto degli Appunti di input penna.
--   Uso del lazo con il metodo [Microsoft. Ink. Ink. HitTest](/previous-versions/dotnet/netframework-3.5/ms571330(v=vs.90)) .
+-   Oggetto [InkCollector.](/previous-versions/ms583683(v=vs.100))
+-   Supporto degli Appunti input penna.
+-   Uso del lasso con il [metodo Microsoft.Ink.Ink.HitTest.](/previous-versions/dotnet/netframework-3.5/ms571330(v=vs.90))
 
-In questo esempio viene illustrato come eseguire il rendering dell'input penna, copiare l'input penna e quindi incollare l'input penna in un'altra applicazione, ad esempio Microsoft Paint.
+Questo esempio illustra come eseguire il rendering dell'input penna, copiarlo e quindi incollarlo in un'altra applicazione, ad esempio Microsoft Paint.
 
 ## <a name="collecting-ink-and-setting-up-the-form"></a>Raccolta di input penna e configurazione del modulo
 
@@ -47,7 +47,7 @@ using Microsoft.Ink;
 
 
 
-Successivamente, il form dichiara alcune costanti e i campi che sono indicati più avanti in questo esempio.
+Successivamente, il modulo dichiara alcune costanti e campi che vengono notati più avanti in questo esempio.
 
 
 ```C++
@@ -95,7 +95,7 @@ private Pen dotPen = null;
 
 
 
-Infine, nel gestore dell'evento [Load](/dotnet/api/system.windows.forms.form.load?view=netcore-3.1) del form, il form viene inizializzato, viene creato un oggetto [InkCollector](/previous-versions/ms583683(v=vs.100)) per il form e l'agente di raccolta input penna è abilitato.
+Infine, nel gestore dell'evento [Load](/dotnet/api/system.windows.forms.form.load?view=netcore-3.1) del form viene inizializzato il form, viene creato un oggetto [InkCollector](/previous-versions/ms583683(v=vs.100)) per il form e viene abilitato l'agente di raccolta input penna.
 
 
 ```C++
@@ -110,17 +110,17 @@ myInkCollector.Enabled = true;
 
 ## <a name="handling-menu-events"></a>Gestione degli eventi di menu
 
-I gestori eventi delle voci di menu aggiornano principalmente lo stato del modulo.
+I gestori eventi delle voci di menu aggiornano principalmente lo stato del form.
 
-Il comando Clear rimuove il rettangolo di selezione ed Elimina i tratti dall'oggetto [Ink](/previous-versions/ms583670(v=vs.100)) dell'agente di raccolta input penna.
+Il comando Cancella rimuove il rettangolo di selezione ed elimina i tratti dall'oggetto Ink dell'agente [di](/previous-versions/ms583670(v=vs.100)) raccolta input penna.
 
-Il comando Exit Disabilita l'agente di raccolta input penna prima di uscire dall'applicazione.
+Il comando Esci disabilita l'agente di raccolta input penna prima di uscire dall'applicazione.
 
-Il menu modifica Abilita i comandi taglia e copia in base allo stato di selezione del form e Abilita il comando Incolla in base al contenuto degli Appunti, determinato tramite il metodo [CanPaste](/previous-versions/dotnet/netframework-3.5/ms571314(v=vs.90)) dell'oggetto [Ink](/previous-versions/ms583670(v=vs.100)) .
+Il menu Modifica abilita i comandi Taglia e Copia in base allo stato di selezione del modulo e abilita il comando Incolla in base al contenuto degli Appunti, determinato dall'uso del metodo [CanPaste](/previous-versions/dotnet/netframework-3.5/ms571314(v=vs.90)) dell'oggetto [Ink.](/previous-versions/ms583670(v=vs.100))
 
-I comandi taglia e copia usano entrambi un metodo helper per copiare l'input penna negli Appunti. Il comando Taglia USA un metodo helper per eliminare i tratti selezionati.
+Entrambi i comandi Taglia e Copia usano un metodo helper per copiare l'input penna negli Appunti. Il comando Taglia usa un metodo helper per eliminare i tratti selezionati.
 
-Il comando Incolla controlla prima di tutto il metodo [CanPaste](/previous-versions/dotnet/netframework-3.5/ms571314(v=vs.90)) dell'oggetto [Ink](/previous-versions/ms583670(v=vs.100)) per verificare se l'oggetto negli Appunti può essere incollato. Il comando Incolla quindi calcola l'angolo superiore sinistro per l'area di Incolla, converte le coordinate da pixel a spazio di input penna e incolla i tratti dagli Appunti nell'agente di raccolta input penna. Infine, viene aggiornata la casella di selezione.
+Il comando Incolla controlla prima di tutto il [metodo](/previous-versions/ms583670(v=vs.100)) [CanPaste](/previous-versions/dotnet/netframework-3.5/ms571314(v=vs.90)) dell'oggetto Ink per verificare se l'oggetto negli Appunti può essere incollato. Il comando Incolla calcola quindi l'angolo superiore sinistro per l'area incollata, converte le coordinate dai pixel allo spazio input penna e incolla i tratti dagli Appunti all'agente di raccolta input penna. Infine, la casella di selezione viene aggiornata.
 
 
 ```C++
@@ -151,13 +151,13 @@ if (myInkCollector.Ink.CanPaste())
 
 
 
-I comandi SELECT e Ink aggiornano la modalità dell'applicazione e gli attributi di disegno predefiniti, cancellano la selezione corrente, aggiornano lo stato del menu e aggiornano il modulo. Gli altri gestori si basano sullo stato dell'applicazione per eseguire la funzione corretta, ovvero il lazo o la disinstallazione dell'input penna. Inoltre, il comando SELECT aggiunge i gestori eventi [NewPackets](/previous-versions/ms567621(v=vs.100)) e [Stroke](/previous-versions/ms567622(v=vs.100)) all'agente di raccolta input penna e il comando Ink rimuove i gestori eventi dall'agente di raccolta input penna.
+I comandi Seleziona e Input penna aggiornano la modalità applicazione e gli attributi di disegno predefiniti, cancellano la selezione corrente, aggiornano lo stato del menu e aggiornano il modulo. Altri gestori si basano sullo stato dell'applicazione per eseguire la funzione corretta, lasso o disposizione dell'input penna. Inoltre, il comando Seleziona aggiunge i gestori degli eventi [NewPackets](/previous-versions/ms567621(v=vs.100)) e [Stroke](/previous-versions/ms567622(v=vs.100)) all'agente di raccolta input penna e il comando Ink rimuove questi gestori eventi dall'agente di raccolta input penna.
 
-I formati disponibili negli Appunti quando vengono copiati i tratti sono elencati nel menu formato e l'utente seleziona il formato per la copia dell'input penna da questo elenco. I tipi di formati disponibili includono il formato ISF (Ink Serialized Format), metafile, Enhanced Metafile e bitmap. I formati di sketch Ink e Text Ink si escludono a vicenda e si basano sull'input penna copiato negli Appunti come oggetto OLE.
+I formati disponibili negli Appunti quando vengono copiati i tratti sono elencati nel menu Formato e l'utente seleziona il formato per copiare l'input penna da questo elenco. I tipi di formati disponibili includono Ink Serialized Format (ISF), metafile, metafile avanzato e bitmap. I formati di input penna di sketch e input penna di testo si escludono a vicenda e si basano sulla copia dell'input penna negli Appunti come oggetto OLE.
 
-Il menu stile consente all'utente di modificare le proprietà relative al colore e alla larghezza della penna e dei tratti selezionati.
+Il menu Stile consente all'utente di modificare le proprietà di colore e larghezza della penna e dei tratti selezionati.
 
-Ad esempio, il comando rosso imposta la proprietà [color](/previous-versions/ms582103(v=vs.100)) della proprietà [DefaultDrawingAttributes](/previous-versions/ms571711(v=vs.100)) dell'agente di raccolta input penna sul colore rosso. Poiché la proprietà [DrawingAttributes](/previous-versions/ms581965(v=vs.100)) dell'oggetto [cursore](/previous-versions/ms552104(v=vs.100)) non è stata impostata, qualsiasi nuovo input penna creato nell'agente di raccolta input penna eredita il colore predefinito del disegno. Inoltre, se sono attualmente selezionati tratti, viene aggiornata anche la proprietà Color degli attributi di disegno di ciascun tratto.
+Ad esempio, il comando Rosso imposta la [proprietà Color](/previous-versions/ms582103(v=vs.100)) della proprietà [DefaultDrawingAttributes](/previous-versions/ms571711(v=vs.100)) dell'agente di raccolta input penna sul colore rosso. Poiché la [proprietà DrawingAttributes](/previous-versions/ms581965(v=vs.100)) dell'oggetto [Cursor](/previous-versions/ms552104(v=vs.100)) non è stata impostata, qualsiasi nuovo input penna disegnato per l'agente di raccolta input penna eredita il colore di disegno predefinito. Inoltre, se sono attualmente selezionati tratti, viene aggiornata anche la proprietà Color degli attributi di disegno di ogni tratto.
 
 
 ```C++
@@ -183,21 +183,21 @@ private void SetColor(Color newColor)
 
 ## <a name="handling-mouse-events"></a>Gestione degli eventi del mouse
 
-Il gestore dell'evento [MouseMove](/previous-versions/ms567617(v=vs.100)) controlla la modalità dell'applicazione. Se la modalità è MoveInk e un pulsante del mouse è inattivo, il gestore sposta i tratti usando il metodo Move della raccolta [Strokes](/previous-versions/ms552701(v=vs.100)) e aggiorna la casella di selezione. In caso contrario, il gestore verifica per determinare se il rettangolo di selezione contiene il cursore, Abilita la raccolta di input penna di conseguenza e imposta di conseguenza il cursore.
+Il [gestore dell'evento MouseMove](/previous-versions/ms567617(v=vs.100)) controlla la modalità dell'applicazione. Se la modalità è MoveInk e un pulsante del mouse è premuto, il gestore sposta i tratti usando il metodo Move della raccolta [Strokes](/previous-versions/ms552701(v=vs.100)) e aggiorna la casella di selezione. In caso contrario, il gestore verifica se il rettangolo di selezione contiene il cursore, abilita la raccolta input penna di conseguenza e imposta il cursore di conseguenza.
 
-Il gestore eventi [MouseDown](/previous-versions/ms567616(v=vs.100)) controlla l'impostazione del cursore. Se il cursore è impostato su [SizeAll](/dotnet/api/system.windows.forms.cursors.sizeall?view=netcore-3.1), il gestore imposta la modalità dell'applicazione su MoveInk e registra la posizione del cursore. In caso contrario, se è presente una selezione corrente, deselezionarla.
+Il [gestore dell'evento MouseDown](/previous-versions/ms567616(v=vs.100)) controlla l'impostazione del cursore. Se il cursore è impostato su [SizeAll,](/dotnet/api/system.windows.forms.cursors.sizeall?view=netcore-3.1)il gestore imposta la modalità dell'applicazione su MoveInk e registra la posizione del cursore. In caso contrario, se è presente una selezione corrente, cancellarla.
 
-Il gestore dell'evento [MouseUp](/previous-versions/ms567618(v=vs.100)) controlla la modalità dell'applicazione. Se la modalità è MoveInk, il gestore imposta la modalità dell'applicazione in base allo stato selezionato del comando SELECT.
+Il [gestore dell'evento MouseUp](/previous-versions/ms567618(v=vs.100)) controlla la modalità dell'applicazione. Se la modalità è MoveInk, il gestore imposta la modalità dell'applicazione in base allo stato selezionato del comando Select.
 
-L'evento [NewPackets](/previous-versions/ms567621(v=vs.100)) viene generato in modalità di selezione quando l'agente di raccolta input penna riceve nuovi dati del pacchetto. Se l'applicazione è in modalità di selezione, è necessario intercettare i nuovi pacchetti e usarli per creare il lazo di selezione.
+[L'evento NewPackets](/previous-versions/ms567621(v=vs.100)) viene generato in modalità di selezione quando l'agente di raccolta input penna riceve nuovi dati del pacchetto. Se l'applicazione è in modalità di selezione, è necessario intercettare i nuovi pacchetti e usarli per disegnare il lasso di selezione.
 
-La coordinata di ogni pacchetto viene convertita in pixel, vincolata all'area di disegno e aggiunta alla raccolta di punti del lazo. Viene quindi chiamato un metodo helper per creare il lazo sul form.
+La coordinata di ogni pacchetto viene convertita in pixel, vincolata all'area di disegno e aggiunta alla raccolta di punti del lazo. Viene quindi chiamato un metodo helper per disegnare il lasso nel form.
 
 ## <a name="handling-a-new-stroke"></a>Gestione di un nuovo tratto
 
-Quando viene disegnato un nuovo tratto, l'evento [Stroke](/previous-versions/ms567622(v=vs.100)) viene generato in modalità di selezione. Se l'applicazione è in modalità di selezione, questo tratto corrisponde al lazo ed è necessario aggiornare le informazioni sui tratti selezionati.
+[L'evento Stroke](/previous-versions/ms567622(v=vs.100)) viene generato in modalità di selezione quando viene disegnato un nuovo tratto. Se l'applicazione è in modalità di selezione, questo tratto corrisponde al lazo ed è necessario aggiornare le informazioni dei tratti selezionati.
 
-Il gestore Annulla l'evento [Stroke](/previous-versions/ms567622(v=vs.100)) , verifica la presenza di più di due punti lazo, copia la raccolta Points in una matrice di oggetti [Point](/dotnet/api/system.drawing.point?view=netcore-3.1) e converte le coordinate dei punti della matrice da pixel a spazio di input penna. Quindi, il gestore usa il metodo [HitTest](/previous-versions/dotnet/netframework-3.5/ms571330(v=vs.90)) dell'oggetto [Ink](/previous-versions/ms583670(v=vs.100)) per ottenere i tratti selezionati dai punti di lazo e aggiorna lo stato di selezione del form. Infine, il tratto che ha generato l'evento viene rimosso dalla raccolta dei tratti selezionati, la raccolta di punti lazo viene svuotata e un metodo helper disegna il rettangolo di selezione.
+Il gestore annulla l'evento [Stroke,](/previous-versions/ms567622(v=vs.100)) verifica la presenza di più di due punti di lazo, copia la raccolta Points in una matrice di oggetti [Point](/dotnet/api/system.drawing.point?view=netcore-3.1) e converte le coordinate dei punti nella matrice da pixel a spazio input penna. Il gestore usa quindi il metodo [HitTest](/previous-versions/dotnet/netframework-3.5/ms571330(v=vs.90)) dell'oggetto [Ink](/previous-versions/ms583670(v=vs.100)) per ottenere i tratti selezionati dai punti di lazo e aggiorna lo stato di selezione del form. Infine, il tratto che ha generato l'evento viene rimosso dalla raccolta di tratti selezionati, la raccolta Points lasso viene svuotata e un metodo helper disegna il rettangolo di selezione.
 
 
 ```C++
@@ -243,7 +243,7 @@ SetSelection(hitStrokes);
 
 ## <a name="copying-ink-to-the-clipboard"></a>Copia dell'input penna negli Appunti
 
-Il metodo helper CopyInkToClipboard crea un valore [InkClipboardFormats](/previous-versions/ms583681(v=vs.100)) , controlla lo stato del menu formato per aggiornare i formati da inserire negli Appunti e usa il metodo [ClipboardCopy](/previous-versions/dotnet/netframework-3.5/ms571316(v=vs.90)) dell'oggetto [Ink](/previous-versions/ms583670(v=vs.100)) per copiare i tratti negli Appunti.
+Il metodo helper CopyInkToClipboard crea un valore [InkClipboardFormats,](/previous-versions/ms583681(v=vs.100)) controlla lo stato del menu Formato per aggiornare i formati da inserire negli Appunti e usa il metodo [ClipboardCopy](/previous-versions/dotnet/netframework-3.5/ms571316(v=vs.90)) dell'oggetto [Ink](/previous-versions/ms583670(v=vs.100)) per copiare i tratti negli Appunti.
 
 
 ```C++
@@ -272,14 +272,14 @@ else
 
 ## <a name="updating-a-selection"></a>Aggiornamento di una selezione
 
-Il metodo helper seselectation aggiorna il selectedStrokes archiviato e, se la raccolta è **null** o **vuota**, il rettangolo di selezione viene impostato sul rettangolo vuoto. Se la raccolta [Strokes](/previous-versions/ms552701(v=vs.100)) selezionata non è vuota, il metodo di selezione esegue i passaggi seguenti:
+Il metodo helper SetSelection aggiorna le sequenze selezionate e, se la raccolta è **NULL** o **EMPTY,** il rettangolo di selezione viene impostato sul rettangolo vuoto. Se la raccolta [Strokes](/previous-versions/ms552701(v=vs.100)) selezionata non è vuota, il metodo SetSelection esegue i passaggi seguenti:
 
--   Determina il rettangolo di delimitazione usando il metodo [GetBoundingBox](/previous-versions/dotnet/netframework-3.5/ms571376(v=vs.90)) della raccolta Strokes
--   Converte le coordinate del rettangolo dallo spazio dell'input penna ai pixel
--   Ingrandisce il rettangolo per fornire uno spazio visivo tra l'oggetto e i tratti selezionati.
--   Crea gli handle di selezione per la casella di selezione corrente
+-   Determina il rettangolo di delimitazione usando [il metodo GetBoundingBox](/previous-versions/dotnet/netframework-3.5/ms571376(v=vs.90)) della raccolta strokes
+-   Converte le coordinate del rettangolo dallo spazio input penna in pixel
+-   Gonfia il rettangolo per fornire spazio visivo tra di esso e i tratti selezionati
+-   Crea quadratini di selezione per la casella di selezione corrente
 
-Infine, il metodo seselectation imposta la visibilità degli handle di selezione e imposta la proprietà [AutoRedraw](/previous-versions/ms571706(v=vs.100)) dell'agente di raccolta input penna su **false**, se i tratti sono selezionati.
+Infine, il metodo SetSelection imposta la visibilità dei punti di controllo di selezione e imposta la proprietà [AutoRedraw](/previous-versions/ms571706(v=vs.100)) dell'agente di raccolta input penna su **FALSE,** se i tratti sono selezionati.
 
 
 ```C++
@@ -358,15 +358,15 @@ Refresh();
 
 
 
-## <a name="drawing-the-lasso"></a>Disegno del lazo
+## <a name="drawing-the-lasso"></a>Disegno del lasso
 
-Il lazo viene disegnato come una serie di punti aperti che seguono il percorso del tratto del lazo e una linea del connettore tratteggiata tra le due estremità. L'evento [NewPackets](/previous-versions/ms567621(v=vs.100)) viene generato durante il disegno del lazo e il gestore dell'evento passa le informazioni sul tratto al metodo DrawLasso.
+Il lazo viene disegnato come una serie di punti aperti che seguono il percorso del tratto lasso e una linea del connettore tratteggiata tra le due estremità. [L'evento NewPackets](/previous-versions/ms567621(v=vs.100)) viene generato durante la creazione del lasso e il gestore eventi passa le informazioni sul tratto al metodo DrawLasso.
 
-Il metodo helper DrawLasso rimuove prima di tutto la vecchia riga del connettore e quindi scorre i punti del tratto. Quindi, DrawLasso calcola dove posizionare i punti lungo il tratto e li disegna. Infine, viene disegnata una nuova linea di connessione.
+Il metodo helper DrawLasso rimuove prima la linea del connettore precedente e quindi scorre i punti nel tratto. DrawLasso calcola quindi dove posizionare i punti lungo il tratto e li disegna. Infine, disegna una nuova linea del connettore.
 
 ## <a name="closing-the-form"></a>Chiusura del modulo
 
-Il metodo [Dispose](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) del modulo Elimina l'oggetto [InkCollector](/previous-versions/ms583683(v=vs.100)) , ovvero InkCollector.
+Il metodo [Dispose del](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) form elimina l'oggetto [InkCollector,](/previous-versions/ms583683(v=vs.100)) myInkCollector.
 
  
 

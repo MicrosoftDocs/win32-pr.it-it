@@ -1,6 +1,6 @@
 ---
 title: Pubblicazione in un oggetto computer
-description: In genere, i servizi basati su host creano scp sotto l'oggetto computer per il computer host. I servizi basati su host sono servizi strettamente legati a un singolo computer host.
+description: In genere, i servizi basati su host creano i criteri di sicurezza nell'oggetto computer per il computer host. I servizi basati su host sono servizi strettamente collegati a un singolo computer host.
 ms.assetid: ecd7d8bc-4714-408a-856c-7cab8360bf81
 ms.tgt_platform: multiple
 ms.topic: article
@@ -14,16 +14,16 @@ ms.locfileid: "119025359"
 ---
 # <a name="publishing-under-a-computer-object"></a>Pubblicazione in un oggetto computer
 
-In genere, i servizi basati su host creano scp sotto l'oggetto computer per il computer host. I servizi basati su host sono servizi strettamente legati a un singolo computer host.
+In genere, i servizi basati su host creano i criteri di sicurezza nell'oggetto computer per il computer host. I servizi basati su host sono servizi strettamente collegati a un singolo computer host.
 
-**Per creare scp in un oggetto computer**
+**Per creare i criteri di sicurezza in un oggetto computer**
 
 1.  Chiamare la [**funzione GetComputerObjectName**](/windows/desktop/api/secext/nf-secext-getcomputerobjectnamea) per ottenere il nome distinto (DN) nella directory dell'oggetto computer per il computer locale.
 2.  Usare tale DN per eseguire l'associazione all'oggetto computer e creare il SCP.
 
-Per altre informazioni e un esempio di codice, vedere [Come i client trovano e usano un punto di connessione del servizio](how-clients-find-and-use-a-service-connection-point.md).
+Per altre informazioni e un esempio di codice, vedere [Come i client trovano e usano un punto di connessione del servizio.](how-clients-find-and-use-a-service-connection-point.md)
 
-Tenere presente che solo i computer membri del dominio hanno oggetti computer validi nella directory.
+Tenere presente che solo i computer membri del dominio hanno oggetti computer validi nella directory .
 
 Per ottenere il nome DNS o NetBIOS del computer locale, chiamare la [**funzione GetComputerNameEx.**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getcomputernameexa)
 

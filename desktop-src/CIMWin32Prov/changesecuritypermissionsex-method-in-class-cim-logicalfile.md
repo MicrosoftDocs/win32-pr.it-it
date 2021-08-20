@@ -1,8 +1,8 @@
 ---
-description: Modifica le autorizzazioni di sicurezza per il file logico specificato nel percorso dell'oggetto. questo metodo è una versione estesa del metodo ChangeSecurityPermissions.
+description: Modifica le autorizzazioni di sicurezza per il file logico specificato nel percorso dell'oggetto (questo metodo è una versione estesa del metodo ChangeSecurityPermissions).
 ms.assetid: 29155533-0898-4f8f-af08-f3ea46c8c1d3
 ms.tgt_platform: multiple
-title: Metodo ChangeSecurityPermissionsEx della classe CIM_LogicalFile
+title: Metodo ChangeSecurityPermissionsEx della CIM_LogicalFile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: af2dc82ef54b6f32eee20f17cd61c0769cc64b1a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9b550ca2c3297d4f2185918036bc283138e619dda2e1facff696ec8fe868e07b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104523513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081025"
 ---
-# <a name="changesecuritypermissionsex-method-of-the-cim_logicalfile-class"></a>Metodo ChangeSecurityPermissionsEx della classe CIM \_ LogicalFile
+# <a name="changesecuritypermissionsex-method-of-the-cim_logicalfile-class"></a>Metodo ChangeSecurityPermissionsEx della classe \_ CiM LogicalFile
 
-Il metodo **ChangeSecurityPermissionsEx** modifica le autorizzazioni di sicurezza per il file logico specificato nel percorso dell'oggetto (questo metodo è una versione estesa del metodo [**ChangeSecurityPermissions**](changesecuritypermissions-method-in-class-cim-logicalfile.md) ). Se il file logico è una directory, questo metodo agirà in modo ricorsivo, modificando le autorizzazioni di sicurezza per tutti i file e le sottodirectory presenti nella directory.
+Il **metodo ChangeSecurityPermissionsEx** modifica le autorizzazioni di sicurezza per il file logico specificato nel percorso dell'oggetto (questo metodo è una versione estesa del [**metodo ChangeSecurityPermissions).**](changesecuritypermissions-method-in-class-cim-logicalfile.md) Se il file logico è una directory, questo metodo agirà in modo ricorsivo, modificando le autorizzazioni di sicurezza per tutti i file e le sottodirectory contenuti nella directory.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+In questo argomento viene Managed Object Format sintassi MOF (Managed Object Format). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,17 +51,17 @@ uint32 ChangeSecurityPermissionsEx(
 
 <dl> <dt>
 
-*SecurityDescriptor* \[ in\]
+*Descrittore di sicurezza* \[ Pollici\]
 </dt> <dd>
 
 Specifica le informazioni di sicurezza.
 
 </dd> <dt>
 
-*Opzione* \[ in\]
+*Opzione* \[ Pollici\]
 </dt> <dd>
 
-Privilegi di sicurezza da modificare. Per modificare, ad esempio, la sicurezza del proprietario e del DACL, utilizzare
+Privilegi di sicurezza da modificare. Ad esempio, per modificare il proprietario e la sicurezza DACL, usare
 
 `Option = 1 + 4`
 
@@ -73,7 +73,7 @@ oppure
 
 <span id="Change_Owner_Security_Information"></span><span id="change_owner_security_information"></span><span id="CHANGE_OWNER_SECURITY_INFORMATION"></span>
 
-<span id="Change_Owner_Security_Information"></span><span id="change_owner_security_information"></span><span id="CHANGE_OWNER_SECURITY_INFORMATION"></span>**Modifica \_ di \_ \_ Informazioni di sicurezza del proprietario** (1)
+<span id="Change_Owner_Security_Information"></span><span id="change_owner_security_information"></span><span id="CHANGE_OWNER_SECURITY_INFORMATION"></span>**Modifica \_ Informazioni \_ di sicurezza del \_ proprietario** (1)
 
 
 </dt> <dd>
@@ -84,7 +84,7 @@ Modificare il proprietario del file logico.
 
 <span id="Change_Group_Security_Information"></span><span id="change_group_security_information"></span><span id="CHANGE_GROUP_SECURITY_INFORMATION"></span>
 
-<span id="Change_Group_Security_Information"></span><span id="change_group_security_information"></span><span id="CHANGE_GROUP_SECURITY_INFORMATION"></span>**Modifica \_ di \_ \_ Informazioni sulla sicurezza del gruppo** (2)
+<span id="Change_Group_Security_Information"></span><span id="change_group_security_information"></span><span id="CHANGE_GROUP_SECURITY_INFORMATION"></span>**Modifica \_ Informazioni \_ sulla sicurezza dei \_ gruppi** (2)
 
 
 </dt> <dd>
@@ -95,7 +95,7 @@ Modificare il gruppo del file logico.
 
 <span id="Change_Dacl_Security_Information"></span><span id="change_dacl_security_information"></span><span id="CHANGE_DACL_SECURITY_INFORMATION"></span>
 
-<span id="Change_Dacl_Security_Information"></span><span id="change_dacl_security_information"></span><span id="CHANGE_DACL_SECURITY_INFORMATION"></span>**Modifica \_ di \_ \_ Informazioni di sicurezza DACL** (4)
+<span id="Change_Dacl_Security_Information"></span><span id="change_dacl_security_information"></span><span id="CHANGE_DACL_SECURITY_INFORMATION"></span>**Modifica \_ Dacl \_ Security \_ Information** (4)
 
 
 </dt> <dd>
@@ -106,7 +106,7 @@ Modificare l'ACL del file logico.
 
 <span id="Change_Sacl_Security_Information"></span><span id="change_sacl_security_information"></span><span id="CHANGE_SACL_SECURITY_INFORMATION"></span>
 
-<span id="Change_Sacl_Security_Information"></span><span id="change_sacl_security_information"></span><span id="CHANGE_SACL_SECURITY_INFORMATION"></span>**Modifica \_ di \_ \_ Informazioni di sicurezza SACL** (8)
+<span id="Change_Sacl_Security_Information"></span><span id="change_sacl_security_information"></span><span id="CHANGE_SACL_SECURITY_INFORMATION"></span>**Modifica \_ Informazioni di sicurezza Sacl \_ \_** (8)
 
 
 </dt> <dd>
@@ -115,30 +115,30 @@ Modificare l'ACL di sistema del file logico.
 
 </dd> </dl> </dd> <dt>
 
-*StopFileName* \[ out\]
+*StopFileName* \[ Cambio\]
 </dt> <dd>
 
-Stringa che rappresenta il nome del file o della directory in cui il metodo ha avuto esito negativo. Se il metodo ha esito positivo, il valore di questo parametro è **null** .
+Stringa che rappresenta il nome del file (o directory) in cui il metodo non è riuscito. Questo parametro ha un valore **null se** il metodo ha esito positivo.
 
 </dd> <dt>
 
 *StartFileName* \[ in, facoltativo\]
 </dt> <dd>
 
-Stringa che rappresenta il file o la directory figlio da utilizzare come punto di partenza per questo metodo. In genere, il parametro *StartFileName* è il parametro *StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se il valore del parametro è **null**, l'operazione viene eseguita nel file o nella directory specificata nella chiamata [**ExecMethod**](/windows/desktop/WmiSdk/swbemservices-execmethod) .
+Stringa che rappresenta il file figlio (o la directory) da usare come punto di partenza per questo metodo. In genere, il *parametro StartFileName* è il parametro *StopFileName* che specifica il file (o la directory) in cui si è verificato un errore dalla chiamata al metodo precedente. Se il valore del parametro **è Null,** l'operazione viene eseguita sul file o sulla directory specificata nella [**chiamata a ExecMethod.**](/windows/desktop/WmiSdk/swbemservices-execmethod)
 
 </dd> <dt>
 
 *Ricorsivo* \[ in, facoltativo\]
 </dt> <dd>
 
-Se **true**, le autorizzazioni di sicurezza vengono applicate in modo ricorsivo a file e directory all'interno della directory specificata dall'istanza [**CIM \_ LogicalFile**](cim-logicalfile.md) . Per le istanze di file, questo parametro viene ignorato.
+Se **TRUE,** le autorizzazioni di sicurezza vengono applicate in modo ricorsivo ai file e alle directory all'interno della directory specificata [**dall'istanza di \_ CiM LogicalFile.**](cim-logicalfile.md) Per le istanze di file, questo parametro viene ignorato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) in caso di esito positivo e qualsiasi altro numero per indicare un errore.
+Restituisce il valore 0 (zero) in caso di esito positivo e qualsiasi altro numero per indicare un errore.
 
 <dl> <dt>
 
@@ -178,7 +178,7 @@ Oggetto non valido.
 
 </dd> <dt>
 
-**Oggetto già esistente**
+**L'oggetto esiste già**
 </dt> <dd>
 
 10
@@ -187,12 +187,12 @@ Oggetto già esistente.
 
 </dd> <dt>
 
-**File System non NTFS**
+**File system non NTFS**
 </dt> <dd>
 
 11
 
-File System non NTFS.
+File system non NTFS.
 
 </dd> <dt>
 
@@ -210,7 +210,7 @@ Piattaforma non Windows.
 
 13
 
-L'unità non è la stessa.
+Unità non uguale.
 
 </dd> <dt>
 
@@ -272,7 +272,7 @@ Questo metodo non è attualmente implementato da WMI. Per usare questo metodo, �
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -281,10 +281,10 @@ Questo metodo non è attualmente implementato da WMI. Per usare questo metodo, �
 
 <dl> <dt>
 
-[**\_LOGICALFILE CIM**](changesecuritypermissionsex-method-in-class-cim-logicalfile.md)
+[**CIM \_ LogicalFile**](changesecuritypermissionsex-method-in-class-cim-logicalfile.md)
 </dt> <dt>
 
-[**\_LOGICALFILE CIM**](cim-logicalfile.md)
+[**CIM \_ LogicalFile**](cim-logicalfile.md)
 </dt> </dl>
 
  

@@ -1,29 +1,29 @@
 ---
 title: Definizione di eventi
-description: I provider devono definire tutti gli eventi che scrivono. Per definire un evento, usare l'elemento Event.
+description: I provider devono definire tutti gli eventi che scrivono. Per definire un evento, usare l'elemento event.
 ms.assetid: f282612c-cfa5-42fe-af8a-5b35c033abe2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a4c1da0e54d1e9fc328978ebe447c8e843b540c
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: c8b28dd6f9453a0b3272e6c9e7efcc40613319591174444d14abf55d6d9f385f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "104398799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056039"
 ---
 # <a name="defining-events"></a>Definizione di eventi
 
-I provider devono definire tutti gli eventi che scrivono. Per definire un evento, usare l'elemento **Event** .
+I provider devono definire tutti gli eventi che scrivono. Per definire un evento, usare **l'elemento** event.
 
-L'attributo **value** è l'identificatore dell'evento e deve essere univoco per gli eventi definiti dall'utente. La possibilità di impostare gli altri attributi dipende da chi utilizzerà gli eventi e da dove. Se gli amministratori utilizzeranno gli eventi utilizzando uno strumento come Windows Visualizzatore eventi, è necessario impostare l'attributo del **canale** . Se il tipo di canale è admin, è necessario specificare anche l'attributo **Level** e impostarlo su uno dei livelli definiti in Winmeta.xml (Win: Critical tramite Win: Verbose).
+**L'attributo** value è l'identificatore dell'evento e deve essere univoco per gli eventi definiti. L'impostazione degli altri attributi dipende da chi utilizza gli eventi e da dove. Se gli amministratori utilizzano gli eventi usando uno strumento come Windows Visualizzatore eventi, è necessario impostare **l'attributo del** canale. Se il tipo di canale è Admin, devi anche specificare l'attributo **level** e impostarlo su uno dei livelli definiti in Winmeta.xml (win:Critical tramite win:Verbose).
 
-Se l'evento contiene dati specifici dell'evento, è necessario impostare l'attributo del **modello** sull'identificatore del modello che definisce i dati specifici dell'evento. Il **livello**, le **parole chiave**, l' **attività** e gli attributi **OpCode** vengono utilizzati per raggruppare o eseguire il bucket degli eventi. Sebbene questi attributi siano facoltativi, è consigliabile specificare il livello, l'attività, il codice operativo e le parole chiave, in modo che i consumer possano accedere facilmente solo agli eventi di interesse. Gli attributi **Level** e **Keywords** possono inoltre essere utilizzati da una sessione di traccia ETW per limitare gli eventi scritti nel file di log di traccia eventi. L'attributo **Keywords** contiene un elenco di nomi di parole chiave delimitati da spazi definiti nel manifesto. Se vengono specificate più parole chiave, i valori della maschera sono unire con or insieme per creare il valore della parola chiave che verrà usato dall'evento.
+Se l'evento contiene dati specifici dell'evento, è necessario impostare l'attributo del modello sull'identificatore del modello che definisce i dati specifici dell'evento.  Gli **attributi di livello**, **parole** **chiave**, attività **e codice** operativo vengono usati per raggruppare o bucket gli eventi. Anche se questi attributi sono facoltativi, è consigliabile specificare il livello, l'attività, il codice operativo e le parole chiave, in modo che i consumer possano accedere facilmente solo agli eventi di interesse. Gli **attributi di** livello **e** parole chiave possono essere utilizzati anche da una sessione di traccia ETW per limitare gli eventi scritti nel file di log di traccia eventi. **L'attributo keywords** contiene un elenco delimitato da spazi di nomi di parole chiave definiti nel manifesto. Se vengono specificate più parole chiave, i valori della maschera sono OR insieme per creare il valore della parola chiave che verrà utilizzato dall'evento.
 
-È necessario impostare l'attributo **Symbol** per specificare la costante simbolica generata dal compilatore per identificare il descrittore di eventi dell'evento. quando si scrive l'evento, si usa il descrittore dell'evento. Se non si specifica il simbolo, il compilatore genererà automaticamente un nome.
+È necessario impostare **l'attributo symbol** per specificare la costante simbolica generata dal compilatore per identificare il descrittore di eventi dell'evento, ovvero usare il descrittore di evento durante la scrittura dell'evento. Se non si specifica il simbolo, il compilatore genererà automaticamente un nome.
 
-L'attributo **Message** contiene la stringa di messaggio localizzata che viene visualizzata con l'evento. Per includere dati specifici dell'evento nella stringa, aggiungere stringhe di inserimento al testo del messaggio. Per includere, ad esempio, il terzo elemento di dati nel modello, includere %3.
+**L'attributo** message contiene la stringa di messaggio localizzata visualizzata con l'evento . Per includere dati specifici dell'evento nella stringa, aggiungere stringhe di inserimento al testo del messaggio. Ad esempio, per includere il terzo elemento di dati nel modello, includere %3.
 
-Nell'esempio seguente viene illustrato un manifesto completo che definisce gli eventi.
+L'esempio seguente mostra un manifesto completo che definisce gli eventi.
 
 ```XML
 <instrumentationManifest

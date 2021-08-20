@@ -1,25 +1,25 @@
 ---
 title: L'utente deve modificare la password all'accesso successivo (provider LDAP)
-description: Per forzare l'utente a modificare la password all'accesso successivo, impostare l'attributo pwdLastSet su zero (0). Per rimuovere questo requisito, impostare l'attributo pwdLastSet su-1. L'attributo pwdLastSet non può essere impostato su qualsiasi altro valore tranne che dal sistema.
+description: Per forzare un utente a modificare la password all'accesso successivo, impostare l'attributo pwdLastSet su zero (0). Per rimuovere questo requisito, impostare l'attributo pwdLastSet su -1. L'attributo pwdLastSet non può essere impostato su nessun altro valore, ad eccezione del sistema.
 ms.assetid: 0182151c-ddb7-4d08-98c6-c37e6e514cf0
 ms.tgt_platform: multiple
 keywords:
-- L'utente deve modificare la password all'accesso successivo ADSI, provider LDAP
-- LDAP provider ADSI, esempi di gestione degli utenti, è necessario modificare la password all'accesso successivo
+- L'utente deve modificare la password all'accesso successivo ADSI , provider LDAP
+- Provider LDAP ADSI, esempi di gestione degli utenti, modifica della password all'accesso successivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 784ee0defbe3c8ec9abe2d110c2532b8c9688019
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 103703381512e82eee608d452b921429c87ef3ce6b7d59017fd07bc081e75ee5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648841"
 ---
 # <a name="user-must-change-password-at-next-logon-ldap-provider"></a>L'utente deve modificare la password all'accesso successivo (provider LDAP)
 
-Per forzare l'utente a modificare la password all'accesso successivo, impostare l'attributo **pwdLastSet** su zero (0). Per rimuovere questo requisito, impostare l'attributo **pwdLastSet** su-1. L'attributo **pwdLastSet** non può essere impostato su qualsiasi altro valore tranne che dal sistema.
+Per forzare un utente a modificare la password all'accesso successivo, impostare **l'attributo pwdLastSet** su zero (0). Per rimuovere questo requisito, impostare **l'attributo pwdLastSet** su -1. **L'attributo pwdLastSet** non può essere impostato su nessun altro valore, ad eccezione del sistema.
 
-Nell'esempio di codice seguente viene illustrato come impostare l'opzione "utente necessario modificare la password all'accesso successivo".
+Nell'esempio di codice seguente viene illustrato come impostare l'opzione "L'utente deve modificare la password all'accesso successivo".
 
 
 ```VB
@@ -32,7 +32,7 @@ usr.SetInfo
 
 
 
-Nell'esempio di codice seguente viene illustrato come impostare l'opzione "utente necessario modificare la password all'accesso successivo".
+Nell'esempio di codice seguente viene illustrato come impostare l'opzione "L'utente deve modificare la password all'accesso successivo".
 
 
 ```C++
@@ -75,9 +75,9 @@ HRESULT SetUserMustChangePassword(LPCWSTR pwszUserADsPath,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

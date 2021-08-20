@@ -1,7 +1,7 @@
 ---
-description: Messaggio privato che imposta lo stile della finestra su WS ex in primo piano \_ \_ .
+description: Messaggio privato che imposta lo stile della finestra su WS \_ EX \_ TOPMOST.
 ms.assetid: 4934400e-4ca5-4ace-b9b9-3889f4cf610e
-title: 'Membro CBaseWindow:: m_ShowStageTop (Winutil. h)'
+title: Membro CBaseWindow::m_ShowStageTop (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8ed0069c5c65f2bb1a113c899e2d90de0cabcd10
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dbd8943b297d6e33f3b86a62c7e67dd2039a6b99d316061be30a4c3016711c41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016519"
 ---
-# <a name="cbasewindowm_showstagetop-member"></a>Membro ShowStageTop di CBaseWindow:: m \_
+# <a name="cbasewindowm_showstagetop-member"></a>Membro CBaseWindow::m \_ ShowStageTop
 
-Messaggio privato che imposta lo stile della finestra su WS ex in primo piano \_ \_ .
+Messaggio privato che imposta lo stile della finestra su WS \_ EX \_ TOPMOST.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,8 +46,8 @@ I renderer video devono inviare questo messaggio alla finestra se passano alla m
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

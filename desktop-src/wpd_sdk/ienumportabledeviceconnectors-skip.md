@@ -49,14 +49,14 @@ Numero di dispositivi da ignorare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                             | Descrizione                                                                                                                                                                               |
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>    | Il metodo è riuscito.<br/>                                                                                                                                                          |
-| <dl> <dt>**S \_ FALSE**</dt> </dl> | Impossibile ignorare il numero specificato di dispositivi. Una possibile causa: il *parametro cConnectors* specifica più dispositivi di quelli effettivamente presenti nella sequenza di enumerazione.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | Non è stato possibile ignorare il numero specificato di dispositivi. Una possibile causa: il *parametro cConnectors* specifica più dispositivi di quelli effettivamente presenti nella sequenza di enumerazione.<br/> |
 
 
 

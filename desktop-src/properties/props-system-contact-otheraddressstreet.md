@@ -1,17 +1,17 @@
 ---
 description: Altra via dell'indirizzo del contatto.
 ms.assetid: ab346da5-4b13-489e-be6d-27cece52cd09
-title: System. Contact. OtherAddressStreet
+title: System.Contact.OtherAddressStreet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42748d6b2776335f08b222b8a383462d947bd719
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ae89e5c09bf27e7de28499d7025efb5de924a6379f370dc48e20043dcfab9e4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119599261"
 ---
-# <a name="systemcontactotheraddressstreet"></a>System. Contact. OtherAddressStreet
+# <a name="systemcontactotheraddressstreet"></a>System.Contact.OtherAddressStreet
 
 Altra via dell'indirizzo del contatto.
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

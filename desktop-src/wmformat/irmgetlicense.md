@@ -3,8 +3,8 @@ title: Interfaccia IRMGetLicense
 description: L'interfaccia IRMGetLicense viene implementata in una libreria di runtime installata come parte di Windows Media Format SDK.
 ms.assetid: 95a8cf57-72a4-496d-8d25-d094b47c3a57
 keywords:
-- Formato Windows Media Interface IRMGetLicense
-- Interfaccia IRMGetLicense-formato Windows Media, descritto
+- Formato multimediale dell'interfaccia IRMGetLicense
+- Interfaccia IRMGetLicense windows Media Format , descritto
 topic_type:
 - apiref
 api_name:
@@ -14,22 +14,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3aa63bc7b351aab0a02c36dc16cb3600e405b26f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3ad5f74400fd35356967942403ae4f3c3024b6259a4ab7e62ffa544267a308b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104118882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119585631"
 ---
 # <a name="irmgetlicense-interface"></a>Interfaccia IRMGetLicense
 
-\[**IRMGetLicense** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Usare invece [Microsoft PlayReady](https://www.microsoft.com/PlayReady/). \]
+\[**IRMGetLicense** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Usare invece [Microsoft PlayReady](https://www.microsoft.com/PlayReady/). \]
 
-L'interfaccia **IRMGetLicense** viene implementata in una libreria di runtime installata come parte di Windows Media Format SDK. Consente l'acquisizione di licenze lato client. Poiché questo metodo viene utilizzato dalle autorità emittenti di licenze tramite le applicazioni basate sul Web, è documentato nella documentazione di Windows Media Rights Manager SDK.
+**L'interfaccia IRMGetLicense** viene implementata in una libreria di runtime installata come parte di Windows Media Format SDK. Abilita l'acquisizione delle licenze sul lato client. Poiché questo metodo viene usato dalle autorità di emissione di licenze tramite applicazioni basate sul Web, è documentato nella documentazione Windows Media Rights Manager SDK.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IRMGetLicense** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
+**L'interfaccia IRMGetLicense** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
 
 ## <a name="requirements"></a>Requisiti
 

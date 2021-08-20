@@ -4,32 +4,32 @@ ms.assetid: c702eb37-b55f-4707-ae0a-8aba11997ef3
 title: Esempio di filtro EZRGB24
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: afea27746aa2fbe358735a0d98f4de968f8bb114
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a2010820a1675ff39cfc9ad08c8ae3a077572067d0a7e9222af862f4a0f8f3cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015779"
 ---
 # <a name="ezrgb24-filter-sample"></a>Esempio di filtro EZRGB24
 
 ## <a name="description"></a>Descrizione
 
-Il filtro EZRGB24 è un filtro di trasformazione elaborazione immagini. Questo filtro esegue diversi effetti video, tra cui gli effetti rosso, verde, blu, Darken, XOR, Blur, Gray ed emboss.
+Il filtro EZRGB24 è un filtro di trasformazione dell'elaborazione delle immagini. Questo filtro esegue una serie di singoli effetti video, tra cui rosso, verde, blu, scuro, XOR, sfocatura, grigio e rilievo.
 
-Questo esempio illustra come usare diverse classi base di DirectShow, tra cui [**CTransformFilter**](ctransformfilter.md), [**CPersistStream**](cpersiststream.md)e [**CBasePropertyPage**](cbasepropertypage.md).
+Questo esempio illustra come usare diverse DirectShow di base, tra cui [**CTransformFilter**](ctransformfilter.md), [**CPersistStream**](cpersiststream.md)e [**CBasePropertyPage**](cbasepropertypage.md).
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-Per scaricare gli esempi di DirectShow SDK, installare la versione più recente del [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx).
+Per scaricare gli esempi DirectShow SDK, installare la versione più recente di [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx).
 
-Questo esempio viene installato nel percorso seguente: esempi *\[ radice \] SDK* \\ \\ \\ filtri DirectShow multimediali \\ \\ EZRGB24.
+Questo esempio viene installato nel percorso seguente: *\[ SDK Root \]* Samples Multimedia DirectShow Filters \\ \\ \\ \\ \\ EZRGB24.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Esempi di DirectShow](directshow-samples.md)
+[DirectShow Campioni](directshow-samples.md)
 </dt> </dl>
 
  

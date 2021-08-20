@@ -1,24 +1,24 @@
 ---
-description: L'attributo UserID specifica un identificatore definito dall'applicazione per un oggetto.
+description: L'attributo userid specifica un identificatore definito dall'applicazione per un oggetto .
 ms.assetid: 37d9d1c6-c67d-493f-9660-bac5a47ac081
-title: UserID (attributo)
+title: Attributo userid
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6eb27a616670cd323efee4c1424f7968d00ba617
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd01022f149eef73cbed164c15e2ab1c66fa378b9b4d440919941a374cfed068
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104057835"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072215"
 ---
-# <a name="userid-attribute"></a>UserID (attributo)
+# <a name="userid-attribute"></a>Attributo userid
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-L' `userid` attributo specifica un identificatore definito dall'applicazione per un oggetto.
+`userid`L'attributo specifica un identificatore definito dall'applicazione per un oggetto .
 
 ## <a name="possible-values"></a>Valori possibili
 
@@ -26,7 +26,7 @@ Il valore deve essere un numero intero.
 
 ## <a name="applies-to"></a>Si applica a
 
-[**clip**](clip-element.md), [**composito**](composite-element.md), [**effetto**](effect-element.md), [**gruppo**](group-element.md), [**sequenza temporale**](timeline-element.md), [**transizione**](transition-element.md)
+[**clip,**](clip-element.md) [**composite,**](composite-element.md) [**effect,**](effect-element.md) [**group,**](group-element.md) [**timeline,**](timeline-element.md) [**transition**](transition-element.md)
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -35,7 +35,7 @@ Il valore deve essere un numero intero.
 [Attributi XTL](xtl-attributes.md)
 </dt> <dt>
 
-[**IAMTimelineObj:: seuserid**](iamtimelineobj-setuserid.md)
+[**IAMTimelineObj::SetUserID**](iamtimelineobj-setuserid.md)
 </dt> </dl>
 
  

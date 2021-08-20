@@ -1,10 +1,10 @@
 ---
-title: Attributo can-upgrade-script
-description: Questo attributo archivia l'elenco dei pacchetti di applicazioni che possono essere aggiornati da o che possono aggiornare il pacchetto dell'applicazione.
+title: Attributo Can-Upgrade-Script
+description: Questo attributo archivia l'elenco dei pacchetti dell'applicazione che possono essere aggiornati da o che possono aggiornare il pacchetto dell'applicazione.
 ms.assetid: 95dea9c7-dbbd-42fb-ab32-6b89490aa5d6
 ms.tgt_platform: multiple
 keywords:
-- È possibile aggiornare l'attributo script AD schema
+- Schema AD dell'attributo Can-Upgrade-Script
 - Schema AD dell'attributo canUpgradeScript
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 305e5b90c45d124a8647dd5d3a0af9c4a2ca6c4f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c258e33a7b70b543bf98991291ed60b7d2ec274ac98a26ceeb2cda9fa7b27a6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022639"
 ---
-# <a name="can-upgrade-script-attribute"></a>Attributo can-upgrade-script
+# <a name="can-upgrade-script-attribute"></a>Attributo Can-Upgrade-Script
 
-Questo attributo archivia l'elenco dei pacchetti di applicazioni che possono essere aggiornati da o che possono aggiornare il pacchetto dell'applicazione.
+Questo attributo archivia l'elenco dei pacchetti dell'applicazione che possono essere aggiornati da o che possono aggiornare il pacchetto dell'applicazione.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Can-upgrade-script                          |
-| LDAP-Display-Name | canUpgradeScript                            |
+| CN                | Can-Upgrade-Script                          |
+| Ldap-Display-Name | canUpgradeScript                            |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.815                      |
-| System-ID-GUID    | d9e18314-8939-11d1-aebc-0000f80367c1        |
+| System-Id-Guid    | d9e18314-8939-11d1-aebc-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo archivia l'elenco dei pacchetti di applicazioni che possono ess
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Falso                                                            |
+| A valore singolo       | Falso                                                            |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo archivia l'elenco dei pacchetti di applicazioni che possono ess
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Falso                                                            |
+| A valore singolo       | Falso                                                            |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo archivia l'elenco dei pacchetti di applicazioni che possono ess
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Falso                                                            |
+| A valore singolo       | Falso                                                            |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo archivia l'elenco dei pacchetti di applicazioni che possono ess
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Falso                                                            |
+| Is-Single-Valued       | Falso                                                            |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo archivia l'elenco dei pacchetti di applicazioni che possono ess
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Falso                                                            |
+| Is-Single-Valued       | Falso                                                            |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo archivia l'elenco dei pacchetti di applicazioni che possono ess
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Falso                                                            |
+| Is-Single-Valued       | Falso                                                            |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 

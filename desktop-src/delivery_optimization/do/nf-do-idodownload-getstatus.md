@@ -1,8 +1,8 @@
 ---
-title: 'Metodo IDODownload:: GetStatus'
-description: Recupera un puntatore a una struttura **DO_DOWNLOAD_STATUS** che riflette lo stato corrente del download.
+title: Metodo IDODownload::GetStatus
+description: Recupera un puntatore a una **DO_DOWNLOAD_STATUS** che riflette lo stato corrente del download.
 keywords:
-- 'Metodo IDODownload:: GetStatus'
+- Metodo IDODownload::GetStatus
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
-ms.openlocfilehash: 8b9b2603354bbb5345cf866ee0c94785a254952d
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: e3a5aec5e35187a51865e074dae26ff012b75dfa3a41ffd13a8bed7371515fab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "104398356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047109"
 ---
-# <a name="idodownloadgetstatus-method"></a>Metodo IDODownload:: GetStatus
+# <a name="idodownloadgetstatus-method"></a>Metodo IDODownload::GetStatus
 
-Recupera un puntatore a una struttura **DO_DOWNLOAD_STATUS** che riflette lo stato corrente del download.
+Recupera un puntatore a una **DO_DOWNLOAD_STATUS** che riflette lo stato corrente del download.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,16 +37,16 @@ HRESULT GetStatus(
 
 `status`
 
-Puntatore a una struttura **DO_DOWNLOAD_STATUS** .
+Puntatore a una **DO_DOWNLOAD_STATUS** struttura .
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, restituisce **S_OK**. In caso contrario, restituisce un [codice di errore](/windows/desktop/com/com-error-codes-10) [**HRESULT**](/windows/desktop/com/structure-of-com-error-codes) .
+Se la funzione ha esito positivo, restituisce **S_OK**. In caso contrario, restituisce un [**codice di errore HRESULT**](/windows/desktop/com/structure-of-com-error-codes) [](/windows/desktop/com/com-error-codes-10).
 
 ## <a name="requirements"></a>Requisiti
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Client minimo supportato** | Solo applicazioni Win32 Windows 10 versione 1809 \[\] |
-| **Server minimo supportato** | Windows Server, \[ solo applicazioni Win32 versione 1809\] |
-| **Intestazione** | Do. h |
+| **Client minimo supportato** | \[Windows 10, versione 1809 Solo applicazioni Win32\] |
+| **Server minimo supportato** | Windows Server, versione 1809 \[ Solo applicazioni Win32\] |
+| **Intestazione** | Do.h |

@@ -47,7 +47,7 @@ virtual HRESULT NewSegment(
 *tStart* 
 </dt> <dd>
 
-Ora di inizio del segmento, rispetto all'origine originale.
+Ora di inizio del segmento, relativa all'origine originale.
 
 </dd> <dt>
 

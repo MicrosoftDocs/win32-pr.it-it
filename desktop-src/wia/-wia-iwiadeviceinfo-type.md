@@ -1,7 +1,7 @@
 ---
-description: Recupera il tipo di dispositivo hardware Windows Image Acquisition (WIA).
+description: Recupera il tipo di Windows hardware WIA (Image Acquisition).
 ms.assetid: 5f10bcd1-03a0-4cd9-8886-e1f957312c3b
-title: Proprietà DeviceInfo. Type
+title: DeviceInfo.Type - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 89a322890f035a1865c01be7c4bfb0bbab812fa7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 841ba87b71f79d1f9dfbf85053d914315f89f592ec16a50bd9f6baf061b989a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118035502"
 ---
-# <a name="deviceinfotype-property"></a>Proprietà DeviceInfo. Type
+# <a name="deviceinfotype-property"></a>DeviceInfo.Type - proprietà
 
-Recupera il tipo di dispositivo hardware Windows Image Acquisition (WIA). I valori possibili sono:
+Recupera il tipo di Windows hardware WIA (Image Acquisition). I valori possibili sono:
 
 -   DigitalCamera
 -   Scanner
@@ -50,9 +50,9 @@ Stringa che riceve il dispositivo.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4,90 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4.90 o successiva)</dt> </dl> |
 
 
 

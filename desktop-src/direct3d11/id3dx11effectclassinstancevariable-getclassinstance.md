@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectClassInstanceVariable GetClassInstance (D3dx11effect. h)
-description: Ottiene un'istanza della classe.
+title: Metodo ID3DX11EffectClassInstanceVariable GetClassInstance (D3dx11effect.h)
+description: Ottiene un'istanza della classe .
 ms.assetid: dec00a6b-0587-40cf-abae-dd110a639fe0
 keywords:
 - Metodo GetClassInstance Direct3D 11
-- Metodo GetClassInstance Direct3D 11, interfaccia ID3DX11EffectClassInstanceVariable
-- Interfaccia ID3DX11EffectClassInstanceVariable Direct3D 11, metodo GetClassInstance
+- Metodo GetClassInstance Interfaccia Direct3D 11, ID3DX11EffectClassInstanceVariable
+- ID3DX11EffectClassInstanceVariable interface Direct3D 11 , GetClassInstance method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5dae96d42a0088adc683ca93d7e3215c12912a87
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2ae0f188c1ef72b688b4c1f227bac91139b5c6cfcb2749a5f2c1fa41dd61a179
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104356039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046449"
 ---
-# <a name="id3dx11effectclassinstancevariablegetclassinstance-method"></a>Metodo ID3DX11EffectClassInstanceVariable:: GetClassInstance
+# <a name="id3dx11effectclassinstancevariablegetclassinstance-method"></a>Metodo ID3DX11EffectClassInstanceVariable::GetClassInstance
 
-Ottiene un'istanza della classe.
+Ottiene un'istanza della classe .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ HRESULT GetClassInstance(
 
 Tipo: **[ **ID3D11ClassInstance**](/windows/desktop/api/D3D11/nn-d3d11-id3d11classinstance)\*\***
 
-Puntatore a un puntatore [**ID3D11ClassInstance**](/windows/desktop/api/D3D11/nn-d3d11-id3d11classinstance) che verrà impostato sull'istanza della classe.
+Puntatore a un [**puntatore ID3D11ClassInstance**](/windows/desktop/api/D3D11/nn-d3d11-id3d11classinstance) che verrà impostato sull'istanza della classe.
 
 </dd> </dl>
 
@@ -56,12 +56,12 @@ Puntatore a un puntatore [**ID3D11ClassInstance**](/windows/desktop/api/D3D11/nn
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei seguenti [codici restituiti Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-refe
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

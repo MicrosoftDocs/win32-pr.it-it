@@ -3,7 +3,7 @@ title: HDM_HITTEST messaggio (Commctrl.h)
 description: Verifica un punto per determinare quale elemento di intestazione, se presente, si trova nel punto specificato.
 ms.assetid: ff866bd1-9f2a-457c-921d-549610ab9088
 keywords:
-- HDM_HITTEST di controllo Windows messaggio
+- HDM_HITTEST di Windows di messaggio
 topic_type:
 - apiref
 api_name:

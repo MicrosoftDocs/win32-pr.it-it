@@ -1,7 +1,7 @@
 ---
-description: Recupera il numero di tablet collegato al sistema.
+description: Recupera il numero di tablet collegati al sistema.
 ms.assetid: b2027336-611b-4d17-8943-f16770effaf8
-title: 'Metodo ITabletManager:: GetTabletCount'
+title: Metodo ITabletManager::GetTabletCount
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: fbdd485c44bc67b3ecaec5aa279d4bc20e18d167
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80d5585a96ebae60885e17dae5ebf1550128d6c5c8db5ae2a35c81c284c10977
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119031879"
 ---
-# <a name="itabletmanagergettabletcount-method"></a>Metodo ITabletManager:: GetTabletCount
+# <a name="itabletmanagergettabletcount-method"></a>Metodo ITabletManager::GetTabletCount
 
-Recupera il numero di tablet collegato al sistema.
+Recupera il numero di tablet collegati al sistema.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,10 +40,10 @@ HRESULT GetTabletCount(
 
 <dl> <dt>
 
-*pcTablets* \[ out\]
+*pcTablets* \[ Cambio\]
 </dt> <dd>
 
-Numero di Tablet collegati al sistema.
+Numero di tablet collegati al sistema.
 
 </dd> </dl>
 
@@ -55,8 +55,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                            | Descrizione                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>   | Esito positivo.<br/>                       |
-| <dl> <dt>**E \_ non riescono**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Operazione completata.<br/>                       |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
 
 
 
@@ -68,7 +68,7 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

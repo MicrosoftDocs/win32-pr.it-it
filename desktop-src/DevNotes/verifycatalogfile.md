@@ -1,7 +1,7 @@
 ---
 description: Verifica un singolo file di catalogo.
 ms.assetid: 4b2de733-ef95-4b0a-8f53-7bc73ffaa2c2
-title: VerifyCatalogFile (funzione)
+title: Funzione VerifyCatalogFile
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Setupapi.dll
-ms.openlocfilehash: 52083b23041f7f21aa51e326bc00d4cabc76eca7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eb4012a04b4da9e353a5d771f9b9e61d4bfba8b45ed6a7d5c65a81c197ff9be8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075745"
 ---
-# <a name="verifycatalogfile-function"></a>VerifyCatalogFile (funzione)
+# <a name="verifycatalogfile-function"></a>Funzione VerifyCatalogFile
 
-\[Questa funzione non è supportata e non deve essere utilizzata.\]
+\[Questa funzione non è supportata e non deve essere usata.\]
 
 Verifica un singolo file di catalogo.
 
@@ -50,15 +50,15 @@ Percorso completo del file di catalogo da verificare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, viene restituito l' **errore \_ esito positivo**; in caso contrario, viene restituito l'errore da [**WinVerifyTrust**](/windows/win32/api/wintrust/nf-wintrust-winverifytrust).
+Se la funzione ha esito positivo, restituisce **ERROR \_ SUCCESS;** in caso contrario, restituisce l'errore [**da WinVerifyTrust.**](/windows/win32/api/wintrust/nf-wintrust-winverifytrust)
 
-Se il catalogo è un catalogo con firma Authenticode, questa funzione restituisce l' **errore di \_ \_ \_ autore attendibile Authenticode** se ha esito positivo; in caso contrario, restituisce l' **errore di \_ \_ attendibilità Authenticode \_ non \_ stabilito**.
+Se il catalogo è con firma Authenticode, questa funzione restituisce **ERROR \_ AUTHENTICODE \_ TRUSTED \_ PUBLISHER** se ha esito positivo; in caso contrario, restituisce **ERROR \_ AUTHENTICODE \_ TRUST NOT \_ \_ ESTABLISHED**.
 
-Se la funzione non è in grado di determinare se il server di pubblicazione è attendibile, potrebbe inoltre restituire un errore non **\_ identificato \_**.
+Se la funzione non è in grado di determinare se il server di pubblicazione è attendibile, può anche restituire **ERROR \_ UNIDENTIFIED \_ ERROR**.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

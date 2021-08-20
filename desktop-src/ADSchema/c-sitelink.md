@@ -5,7 +5,7 @@ ms.assetid: 8af7e351-ab47-4170-ae5b-e841666e011a
 ms.tgt_platform: multiple
 keywords:
 - Site-Link schema AD della classe
-- Classe siteLink - Schema DI ACTIVE Directory
+- Schema AD della classe siteLink
 topic_type:
 - apiref
 api_name:
@@ -31,7 +31,7 @@ Questo oggetto rappresenta la connessione tra due siti.
 |-------------------|----------------------------------------------------|
 | CN                | Site-Link                                          |
 | Ldap-Display-Name | siteLink                                           |
-| Aggiorna privilegio  | Amministratore di dominio                               |
+| Privilegio di aggiornamento  | Amministratore di dominio                               |
 | Frequenza di aggiornamento  | Ogni volta che i siti connessi a questo collegamento cambiano. |
 | Schema-Id-Guid    | d50c2cde-8951-11d1-aebc-0000f80367c1               |
 
@@ -65,12 +65,12 @@ Questo oggetto rappresenta la connessione tra due siti.
 | Possibili superiori          | [**Trasporto tra siti**](c-intersitetransport.md)                                         |
 | Classi ausiliarie           | \-                                                                                           |
 | NT-Security-Descriptor      | O:BAG:BAD:S:                                                                                 |
-| Descrittore di sicurezza predefinito | D:(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;;; Au) |
+| Descrittore di sicurezza predefinito | D:(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;; Au) |
 | System-Flags                | 0x00000010                                                                                   |
 
 
 
-## <a name="windows-2000-server-attributes"></a>attributi Windows server di Windows 2000
+## <a name="windows-2000-server-attributes"></a>Windows 2000 Server Attributes
 
 Questa classe contiene gli attributi seguenti per Windows 2000 Server:
 
@@ -78,17 +78,17 @@ Questa classe contiene gli attributi seguenti per Windows 2000 Server:
 
 | Attributo                                                                 | Obbligatorio | Derivato da                    |
 |---------------------------------------------------------------------------|-----------|---------------------------------|
-| [**Descrizione dell'amministratore**](a-admindescription.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Admin-Description**](a-admindescription.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Admin-Display-Name**](a-admindisplayname.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Attributi consentiti**](a-allowedattributes.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Classi figlio consentite**](a-allowedchildclasses.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Classi consentite-figlio**](a-allowedchildclasses.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md) | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Testa di ponte-Server-List-BL**](a-bridgeheadserverlistbl.md)             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Canonical-Name**](a-canonicalname.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome comune**](a-cn.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Cost**](a-cost.md)                                                    | Falso     | **Collegamento di sito**                   |
-| [**Creazione timestamp**](a-createtimestamp.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Cost**](a-cost.md)                                                    | Falso     | **Collegamento al sito**                   |
+| [**Create-Time-Stamp**](a-createtimestamp.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Descrizione**](a-description.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome visualizzato**](a-displayname.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Display-Name-Printable**](a-displaynameprintable.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
@@ -104,7 +104,7 @@ Questa classe contiene gli attributi seguenti per Windows 2000 Server:
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Is-Deleted**](a-isdeleted.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Membro di DL**](a-memberof.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Titolare dei privilegi**](a-isprivilegeholder.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Titolare del privilegio**](a-isprivilegeholder.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti gestiti**](a-managedobjects.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Mastered-By**](a-masteredby.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
@@ -128,32 +128,32 @@ Questa classe contiene gli attributi seguenti per Windows 2000 Server:
 | [**Indirizzi proxy**](a-proxyaddresses.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Rdn**](a-name.md)                                                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Intervallo di ripetizione**](a-replinterval.md)                                   | Falso     | **Collegamento al sito**                   |
+| [**Intervallo di ripetizione**](a-replinterval.md)                                   | Falso     | **Collegamento di sito**                   |
 | [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Report**](a-directreports.md)                                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Reps-From**](a-repsfrom.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Reps-To**](a-repsto.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Revisione**](a-revision.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Pianifica**](a-schedule.md)                                            | Falso     | **Collegamento al sito**                   |
+| [**Pianifica**](a-schedule.md)                                            | Falso     | **Collegamento di sito**                   |
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Elenco siti**](a-sitelist.md)                                           | Vero      | **Collegamento al sito**                   |
-| [**Site-Object-BL**](a-siteobjectbl.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Sottori ref**](a-subrefs.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Elenco dei siti**](a-sitelist.md)                                           | Vero      | **Collegamento di sito**                   |
+| [**Oggetto sito -BL**](a-siteobjectbl.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Riferimenti secondari**](a-subrefs.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Flag di sistema**](a-systemflags.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Modifica di USN**](a-usnchanged.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN modificato**](a-usnchanged.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Creato da USN**](a-usncreated.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-Intersite**](a-usnintersite.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN intersito**](a-usnintersite.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**USN-Source**](a-usnsource.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Wbem-Path**](a-wbempath.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti noti**](a-wellknownobjects.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Quando viene modificato**](a-whenchanged.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Quando viene creato**](a-whencreated.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Quando creato**](a-whencreated.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Www-Home-Page**](a-wwwhomepage.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
 | [**WWW-Page-Other**](a-url.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
 
@@ -190,17 +190,17 @@ Questa classe contiene gli attributi seguenti per Windows Server 2003:
 
 | Attributo                                                                   | Obbligatorio | Derivato da                    |
 |-----------------------------------------------------------------------------|-----------|---------------------------------|
-| [**Admin-Description**](a-admindescription.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Descrizione dell'amministratore**](a-admindescription.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Admin-Display-Name**](a-admindisplayname.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Attributi consentiti**](a-allowedattributes.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Classi consentite-figlio**](a-allowedchildclasses.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Classi figlio consentite**](a-allowedchildclasses.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Testa di ponte-Server-List-BL**](a-bridgeheadserverlistbl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Canonical-Name**](a-canonicalname.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome comune**](a-cn.md)                                                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Cost**](a-cost.md)                                                      | Falso     | **Collegamento al sito**                   |
-| [**Create-Time-Stamp**](a-createtimestamp.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Cost**](a-cost.md)                                                      | Falso     | **Collegamento di sito**                   |
+| [**Creazione timestamp**](a-createtimestamp.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Descrizione**](a-description.md)                                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome visualizzato**](a-displayname.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Display-Name-Printable**](a-displaynameprintable.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
@@ -215,8 +215,8 @@ Questa classe contiene gli attributi seguenti per Windows Server 2003:
 | [**Tipo di istanza**](a-instancetype.md)                                     | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Is-Deleted**](a-isdeleted.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Is-Member-Of-DL**](a-memberof.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Titolare di privilegi is**](a-isprivilegeholder.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Membro di DL**](a-memberof.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Titolare del privilegio Is**](a-isprivilegeholder.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti gestiti**](a-managedobjects.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Mastered-By**](a-masteredby.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
@@ -252,32 +252,32 @@ Questa classe contiene gli attributi seguenti per Windows Server 2003:
 | [**Altri oggetti noti**](a-otherwellknownobjects.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Possibili eserezioni**](a-possibleinferiors.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Possibili inevasi**](a-possibleinferiors.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Indirizzi proxy**](a-proxyaddresses.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Rdn**](a-name.md)                                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Intervallo di ripetizione**](a-replinterval.md)                                     | Falso     | **Collegamento di sito**                   |
+| [**Intervallo di ripetizione**](a-replinterval.md)                                     | Falso     | **Collegamento al sito**                   |
 | [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Report**](a-directreports.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Reps-From**](a-repsfrom.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Reps-To**](a-repsto.md)                                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Revisione**](a-revision.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Pianifica**](a-schedule.md)                                              | Falso     | **Collegamento di sito**                   |
+| [**Pianifica**](a-schedule.md)                                              | Falso     | **Collegamento al sito**                   |
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Elenco dei siti**](a-sitelist.md)                                             | Vero      | **Collegamento di sito**                   |
-| [**Oggetto sito -BL**](a-siteobjectbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Structural-Object-Class**](a-structuralobjectclass.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Riferimenti secondari**](a-subrefs.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Elenco siti**](a-sitelist.md)                                             | Vero      | **Collegamento al sito**                   |
+| [**Site-Object-BL**](a-siteobjectbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Classe structural-object**](a-structuralobjectclass.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Sottori ref**](a-subrefs.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Flag di sistema**](a-systemflags.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN modificato**](a-usnchanged.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Modifica di USN**](a-usnchanged.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Creato da USN**](a-usncreated.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN intersito**](a-usnintersite.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN-Intersite**](a-usnintersite.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**USN-Source**](a-usnsource.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Wbem-Path**](a-wbempath.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
@@ -340,7 +340,7 @@ Questa classe contiene gli attributi seguenti per ADAM:
 | [**Tipo di istanza**](a-instancetype.md)                                     | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Is-Deleted**](a-isdeleted.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Is-Member-Of-DL**](a-memberof.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Membro di DL**](a-memberof.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti gestiti**](a-managedobjects.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Mastered-By**](a-masteredby.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
@@ -360,43 +360,43 @@ Questa classe contiene gli attributi seguenti per ADAM:
 | [**Obj-Dist-Name**](a-distinguishedname.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Categoria di oggetti**](a-objectcategory.md)                                 | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Classe object**](a-objectclass.md)                                       | Vero      | [**In alto**](c-top.md)<br/> |
-| [**Object-Guid**](a-objectguid.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Guid oggetto**](a-objectguid.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Versione oggetto**](a-objectversion.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Opzioni**](a-options.md)                                                | Falso     | **Collegamento al sito**                   |
+| [**Opzioni**](a-options.md)                                                | Falso     | **Collegamento di sito**                   |
 | [**Altri oggetti noti**](a-otherwellknownobjects.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Possibili inevasi**](a-possibleinferiors.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Possibili eserezioni**](a-possibleinferiors.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Indirizzi proxy**](a-proxyaddresses.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Rdn**](a-name.md)                                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Intervallo di ripetizione**](a-replinterval.md)                                     | Falso     | **Collegamento al sito**                   |
+| [**Intervallo di ripetizione**](a-replinterval.md)                                     | Falso     | **Collegamento di sito**                   |
 | [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Reps-From**](a-repsfrom.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Reps-To**](a-repsto.md)                                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Revisione**](a-revision.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Pianifica**](a-schedule.md)                                              | Falso     | **Collegamento al sito**                   |
+| [**Pianifica**](a-schedule.md)                                              | Falso     | **Collegamento di sito**                   |
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)              | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Elenco siti**](a-sitelist.md)                                             | Vero      | **Collegamento al sito**                   |
-| [**Site-Object-BL**](a-siteobjectbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Classe structural-object**](a-structuralobjectclass.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Sottori ref**](a-subrefs.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Elenco dei siti**](a-sitelist.md)                                             | Vero      | **Collegamento di sito**                   |
+| [**Oggetto sito -BL**](a-siteobjectbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Structural-Object-Class**](a-structuralobjectclass.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Riferimenti secondari**](a-subrefs.md)                                               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Flag di sistema**](a-systemflags.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Modifica di USN**](a-usnchanged.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN modificato**](a-usnchanged.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Creato da USN**](a-usncreated.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-Intersite**](a-usnintersite.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN -Intersite**](a-usnintersite.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**USN-Source**](a-usnsource.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Wbem-Path**](a-wbempath.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti noti**](a-wellknownobjects.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Quando viene modificato**](a-whenchanged.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Quando viene creato**](a-whencreated.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Creazione in data e ora**](a-whencreated.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Www-Home-Page**](a-wwwhomepage.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
 | [**WWW-Page-Other**](a-url.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
 
@@ -459,7 +459,7 @@ Questa classe contiene gli attributi seguenti per Windows Server 2003 R2:
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Is-Deleted**](a-isdeleted.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Membro di DL**](a-memberof.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Titolare del privilegio**](a-isprivilegeholder.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Titolare dei privilegi**](a-isprivilegeholder.md)                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti gestiti**](a-managedobjects.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Mastered-By**](a-masteredby.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
@@ -487,14 +487,14 @@ Questa classe contiene gli attributi seguenti per Windows Server 2003 R2:
 | [**ms-Exch-Owner-BL**](a-ownerbl.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
 | [**msSFU-30-Posix-Member-Of**](a-mssfu30posixmemberof.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**netboot-SCP-BL**](a-netbootscpbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Non-Security-Member-BL**](a-nonsecuritymemberbl.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Non security-Member-BL**](a-nonsecuritymemberbl.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
 | [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                    | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Obj-Dist-Name**](a-distinguishedname.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Categoria di oggetti**](a-objectcategory.md)                                 | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Classe object**](a-objectclass.md)                                       | Vero      | [**In alto**](c-top.md)<br/> |
-| [**Guid oggetto**](a-objectguid.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Object-Guid**](a-objectguid.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Versione oggetto**](a-objectversion.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Opzioni**](a-options.md)                                                | Falso     | **Collegamento di sito**                   |
+| [**Opzioni**](a-options.md)                                                | Falso     | **Collegamento al sito**                   |
 | [**Altri oggetti noti**](a-otherwellknownobjects.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
@@ -566,17 +566,17 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008:
 
 | Attributo                                                                      | Obbligatorio | Derivato da                    |
 |--------------------------------------------------------------------------------|-----------|---------------------------------|
-| [**Admin-Description**](a-admindescription.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Descrizione dell'amministratore**](a-admindescription.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Admin-Display-Name**](a-admindisplayname.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Attributi consentiti**](a-allowedattributes.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)           | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Classi consentite-figlio**](a-allowedchildclasses.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Classi figlio consentite**](a-allowedchildclasses.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Testa di ponte-Server-List-BL**](a-bridgeheadserverlistbl.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Canonical-Name**](a-canonicalname.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome comune**](a-cn.md)                                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Cost**](a-cost.md)                                                         | Falso     | **Collegamento al sito**                   |
-| [**Create-Time-Stamp**](a-createtimestamp.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Cost**](a-cost.md)                                                         | Falso     | **Collegamento di sito**                   |
+| [**Creazione timestamp**](a-createtimestamp.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Descrizione**](a-description.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome visualizzato**](a-displayname.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Display-Name-Printable**](a-displaynameprintable.md)                       | Falso     | [**In alto**](c-top.md)<br/> |
@@ -592,7 +592,7 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008:
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Is-Deleted**](a-isdeleted.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Membro di DL**](a-memberof.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Titolare del privilegio**](a-isprivilegeholder.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Titolare dei privilegi**](a-isprivilegeholder.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti gestiti**](a-managedobjects.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Mastered-By**](a-masteredby.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
@@ -605,7 +605,7 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008:
 | [**ms-DS-AuthenticatedTo-Accountlist**](a-msds-authenticatedtoaccountlist.md) | Falso     | [**In alto**](c-top.md)<br/> |
 | [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Is-Domain-For**](a-msds-isdomainfor.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-is-Domain-For**](a-msds-isdomainfor.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-is-full-replica-for**](a-msds-isfullreplicafor.md)                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-Is-Partial-Replica-For**](a-msds-ispartialreplicafor.md)             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-KrbTgt-Link-BL**](a-msds-krbtgtlinkbl.md)                            | Falso     | [**In alto**](c-top.md)<br/> |
@@ -624,30 +624,30 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008:
 | [**Ms-DS-PSO-Applied**](a-msds-psoapplied.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-Repl-Attribute-Meta-Data**](a-msds-replattributemetadata.md)         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-Repl-Value-Meta-Data**](a-msds-replvaluemetadata.md)                 | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Revealed-DSAs**](a-msds-revealeddsas.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Ms-DS-Revealed-DSAs**](a-msds-revealeddsas.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-Revealed-List-BL**](a-msds-revealedlistbl.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-Tasks-For-Az-Role-BL**](a-msds-tasksforazrolebl.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-Tasks-For-Az-Task-BL**](a-msds-tasksforaztaskbl.md)                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-Exch-Owner-BL**](a-ownerbl.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**msSFU-30-Posix-Member-Of**](a-mssfu30posixmemberof.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
 | [**netboot-SCP-BL**](a-netbootscpbl.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Non security-Member-BL**](a-nonsecuritymemberbl.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Non-Security-Member-BL**](a-nonsecuritymemberbl.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                       | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Obj-Dist-Name**](a-distinguishedname.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Categoria di oggetti**](a-objectcategory.md)                                    | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Classe object**](a-objectclass.md)                                          | Vero      | [**In alto**](c-top.md)<br/> |
-| [**Object-Guid**](a-objectguid.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Guid oggetto**](a-objectguid.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Versione oggetto**](a-objectversion.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Opzioni**](a-options.md)                                                   | Falso     | **Collegamento al sito**                   |
+| [**Opzioni**](a-options.md)                                                   | Falso     | **Collegamento di sito**                   |
 | [**Altri oggetti noti**](a-otherwellknownobjects.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)      | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Possibili inevasi**](a-possibleinferiors.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Possibili eserezioni**](a-possibleinferiors.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Indirizzi proxy**](a-proxyaddresses.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                     | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Rdn**](a-name.md)                                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Intervallo di ripetizione**](a-replinterval.md)                                        | Falso     | **Collegamento al sito**                   |
+| [**Intervallo di ripetizione**](a-replinterval.md)                                        | Falso     | **Collegamento di sito**                   |
 | [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Report**](a-directreports.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
@@ -714,13 +714,13 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008 R2:
 | [**Admin-Display-Name**](a-admindisplayname.md)                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Attributi consentiti**](a-allowedattributes.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)             | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Classi figlio consentite**](a-allowedchildclasses.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Classi consentite-figlio**](a-allowedchildclasses.md)                           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Testa di ponte-Server-List-BL**](a-bridgeheadserverlistbl.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Canonical-Name**](a-canonicalname.md)                                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome comune**](a-cn.md)                                                      | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Cost**](a-cost.md)                                                           | Falso     | **Collegamento di sito**                   |
-| [**Creazione timestamp**](a-createtimestamp.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Cost**](a-cost.md)                                                           | Falso     | **Collegamento al sito**                   |
+| [**Create-Time-Stamp**](a-createtimestamp.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Descrizione**](a-description.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Nome visualizzato**](a-displayname.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Display-Name-Printable**](a-displaynameprintable.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
@@ -735,9 +735,9 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008 R2:
 | [**Tipo di istanza**](a-instancetype.md)                                          | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Is-Deleted**](a-isdeleted.md)                                                | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Membro di DL**](a-memberof.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Titolare del privilegio**](a-isprivilegeholder.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Viene riciclato**](a-isrecycled.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Is-Member-Of-DL**](a-memberof.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Titolare del privilegio Is**](a-isprivilegeholder.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Is-Recycled**](a-isrecycled.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti gestiti**](a-managedobjects.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Mastered-By**](a-masteredby.md)                                              | Falso     | [**In alto**](c-top.md)<br/> |
@@ -752,7 +752,7 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008 R2:
 | [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-Enabled-Feature-BL**](a-msds-enabledfeaturebl.md)                      | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-Host-Service-Account-BL**](a-msds-hostserviceaccountbl.md)             | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-is-Domain-For**](a-msds-isdomainfor.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**ms-DS-Is-Domain-For**](a-msds-isdomainfor.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-is-full-replica-for**](a-msds-isfullreplicafor.md)                     | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-Is-Partial-Replica-For**](a-msds-ispartialreplicafor.md)               | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-KrbTgt-Link-BL**](a-msds-krbtgtlinkbl.md)                              | Falso     | [**In alto**](c-top.md)<br/> |
@@ -935,53 +935,53 @@ Questa classe contiene gli attributi seguenti per Windows Server 2012:
 | [**ms-DS-Tasks-For-Az-Task-BL**](a-msds-tasksforaztaskbl.md)                                | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-TDO-Egress-BL**](a-msds-tdoegressbl.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-DS-TDO-Ingress-BL**](a-msds-tdoingressbl.md)                                          | Falso     | [**In alto**](c-top.md)<br/> |
-| [**ms-DS-Value-Type-Reference-BL**](a-msds-valuetypereferencebl.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Ms-DS-Value-Type-Reference-BL**](a-msds-valuetypereferencebl.md)                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**ms-Exch-Owner-BL**](a-ownerbl.md)                                                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**msSFU-30-Posix-Member-Of**](a-mssfu30posixmemberof.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**netboot-SCP-BL**](a-netbootscpbl.md)                                                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Non security-Member-BL**](a-nonsecuritymemberbl.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Non-Security-Member-BL**](a-nonsecuritymemberbl.md)                                      | Falso     | [**In alto**](c-top.md)<br/> |
 | [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                                     | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Obj-Dist-Name**](a-distinguishedname.md)                                                 | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Categoria di oggetti**](a-objectcategory.md)                                                  | Vero      | [**In alto**](c-top.md)<br/> |
 | [**Classe object**](a-objectclass.md)                                                        | Vero      | [**In alto**](c-top.md)<br/> |
-| [**Object-Guid**](a-objectguid.md)                                                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Guid oggetto**](a-objectguid.md)                                                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Versione oggetto**](a-objectversion.md)                                                    | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Opzioni**](a-options.md)                                                                 | Falso     | **Collegamento al sito**                   |
+| [**Opzioni**](a-options.md)                                                                 | Falso     | **Collegamento di sito**                   |
 | [**Altri oggetti noti**](a-otherwellknownobjects.md)                                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)                    | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                                       | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Possibili inevasi**](a-possibleinferiors.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Possibili eserezioni**](a-possibleinferiors.md)                                            | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Indirizzi proxy**](a-proxyaddresses.md)                                                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                                   | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Rdn**](a-name.md)                                                                        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Intervallo di ripetizione**](a-replinterval.md)                                                      | Falso     | **Collegamento al sito**                   |
+| [**Intervallo di ripetizione**](a-replinterval.md)                                                      | Falso     | **Collegamento di sito**                   |
 | [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                                    | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Repl-UpToDate-Vector**](a-repluptodatevector.md)                                         | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Report**](a-directreports.md)                                                           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Reps-From**](a-repsfrom.md)                                                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Reps-To**](a-repsto.md)                                                                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Revisione**](a-revision.md)                                                               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Pianifica**](a-schedule.md)                                                               | Falso     | **Collegamento al sito**                   |
+| [**Pianifica**](a-schedule.md)                                                               | Falso     | **Collegamento di sito**                   |
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                                           | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)                               | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Elenco siti**](a-sitelist.md)                                                              | Vero      | **Collegamento al sito**                   |
-| [**Site-Object-BL**](a-siteobjectbl.md)                                                     | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Classe structural-object**](a-structuralobjectclass.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Sottori ref**](a-subrefs.md)                                                                | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Elenco dei siti**](a-sitelist.md)                                                              | Vero      | **Collegamento di sito**                   |
+| [**Oggetto sito -BL**](a-siteobjectbl.md)                                                     | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Structural-Object-Class**](a-structuralobjectclass.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Riferimenti secondari**](a-subrefs.md)                                                                | Falso     | [**In alto**](c-top.md)<br/> |
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Flag di sistema**](a-systemflags.md)                                                        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Modifica di USN**](a-usnchanged.md)                                                          | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN modificato**](a-usnchanged.md)                                                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Creato da USN**](a-usncreated.md)                                                          | Falso     | [**In alto**](c-top.md)<br/> |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                                   | Falso     | [**In alto**](c-top.md)<br/> |
-| [**USN-Intersite**](a-usnintersite.md)                                                      | Falso     | [**In alto**](c-top.md)<br/> |
+| [**USN intersito**](a-usnintersite.md)                                                      | Falso     | [**In alto**](c-top.md)<br/> |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                                  | Falso     | [**In alto**](c-top.md)<br/> |
 | [**USN-Source**](a-usnsource.md)                                                            | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Wbem-Path**](a-wbempath.md)                                                              | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Oggetti noti**](a-wellknownobjects.md)                                             | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Quando viene modificato**](a-whenchanged.md)                                                        | Falso     | [**In alto**](c-top.md)<br/> |
-| [**Quando viene creato**](a-whencreated.md)                                                        | Falso     | [**In alto**](c-top.md)<br/> |
+| [**Quando creato**](a-whencreated.md)                                                        | Falso     | [**In alto**](c-top.md)<br/> |
 | [**Www-Home-Page**](a-wwwhomepage.md)                                                       | Falso     | [**In alto**](c-top.md)<br/> |
 | [**WWW-Page-Other**](a-url.md)                                                              | Falso     | [**In alto**](c-top.md)<br/> |
 
