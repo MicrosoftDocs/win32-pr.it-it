@@ -1,7 +1,7 @@
 ---
-description: Genera una dichiarazione del vertice di output dalla dichiarazione di input. La dichiarazione di output è destinata all'uso da parte delle funzioni a mosaico mesh.
+description: Genera una dichiarazione di vertice di output dalla dichiarazione di input. La dichiarazione di output è destinata all'uso da parte delle funzioni a trama mesh.
 ms.assetid: 528b0da3-fc31-4872-98f2-31e03c1cae5e
-title: Funzione D3DXGenerateOutputDecl (D3DX9Mesh. h)
+title: Funzione D3DXGenerateOutputDecl (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ce3fed752e74df3afa812c228a174503e20c6adf
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1f74440ce7bbd72f62aa35de242ea48f615a4ed02d82c5782f7f0eaff1d5bc25
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118096046"
 ---
-# <a name="d3dxgenerateoutputdecl-function"></a>D3DXGenerateOutputDecl (funzione)
+# <a name="d3dxgenerateoutputdecl-function"></a>Funzione D3DXGenerateOutputDecl
 
-Genera una dichiarazione del vertice di output dalla dichiarazione di input. La dichiarazione di output è destinata all'uso da parte delle funzioni a mosaico mesh.
+Genera una dichiarazione di vertice di output dalla dichiarazione di input. La dichiarazione di output è destinata all'uso da parte delle funzioni a trama mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ HRESULT D3DXGenerateOutputDecl(
 
 <dl> <dt>
 
-*pOutput* \[ out\]
+*pOutput* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **D3DVERTEXELEMENT9**](d3dvertexelement9.md)\***
@@ -50,7 +50,7 @@ Puntatore alla dichiarazione del vertice di output. Vedere [**D3DVERTEXELEMENT9*
 
 </dd> <dt>
 
-*Pinput* \[ in\]
+*pInput* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) \***
@@ -71,8 +71,8 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

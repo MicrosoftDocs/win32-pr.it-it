@@ -1,7 +1,7 @@
 ---
 description: La funzione BERGetString decodifica una stringa con codifica BER.
 ms.assetid: 1f72f061-c0ed-4634-9709-e08c2b9468bb
-title: Funzione BERGetString (Netmon. h)
+title: Funzione BERGetString (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 6f8f864b8042ad49502ae53061e157575192e7bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a44acd1246dd73f8c99a34dd429ff93345912d5a106583dcdd865b4a803d70e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117796317"
 ---
-# <a name="bergetstring-function"></a>BERGetString (funzione)
+# <a name="bergetstring-function"></a>Funzione BERGetString
 
-La funzione **BERGetString** decodifica una stringa con codifica BER.
+La **funzione BERGetString** decodifica una stringa con codifica BER.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -80,9 +80,9 @@ Puntatore al puntatore della voce BER successiva.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo (ovvero se una stringa con codifica BER valida è decodificata), il valore restituito è **true**.
+Se la funzione ha esito positivo, ovvero se viene decodificata una stringa valida con codifica BER, il valore restituito è **TRUE.**
 
-Se la funzione ha esito negativo, il valore restituito è **false**.
+Se la funzione ha esito negativo, il valore restituito è **FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -92,8 +92,8 @@ Se la funzione ha esito negativo, il valore restituito è **false**.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                            |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>Parser. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Parser.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl>  |
 
 

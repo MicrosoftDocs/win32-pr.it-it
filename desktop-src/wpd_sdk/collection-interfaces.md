@@ -13,7 +13,7 @@ ms.locfileid: "117843395"
 ---
 # <a name="collection-interfaces"></a>Interfacce di raccolta
 
-Le interfacce seguenti vengono usate per contenere gruppi di valori di vari tipi, inclusi i valori **PROPERTYKEY,** i valori **GUID** o altre interfacce di raccolta. Queste interfacce vengono usate sia dalle applicazioni client che dai driver per contenere i dati per i parametri del metodo.
+Le interfacce seguenti vengono usate per contenere gruppi di valori di vario tipo, inclusi i **valori PROPERTYKEY,** i valori **GUID** o altre interfacce di raccolta. Queste interfacce vengono usate sia dalle applicazioni client che dai driver per contenere i dati per i parametri del metodo.
 
 
 

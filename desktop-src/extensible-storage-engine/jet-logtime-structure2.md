@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: struttura JET_LOGTIME'
-title: Struttura JET_LOGTIME
+description: 'Altre informazioni su: JET_LOGTIME struttura'
+title: JET_LOGTIME struttura
 TOCTitle: JET_LOGTIME structure
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_LOGTIME
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_logtime(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 617911c8f9f0246a836de11d9530536bf9c6e6d9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eda57dffd8fccdb2cd1264f5255868aed309fb3a3cf56b7e846adbcfbb1625e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117894178"
 ---
-# <a name="jet_logtime-structure"></a>Struttura JET_LOGTIME
+# <a name="jet_logtime-structure"></a>JET_LOGTIME struttura
 
 Descrive una data/ora.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,6 +64,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri JET_LOGTIME](./jet-logtime-members.md)
+[JET_LOGTIME membri](./jet-logtime-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

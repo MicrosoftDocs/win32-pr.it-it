@@ -60,7 +60,7 @@ La costante GUID per questo attributo viene esportata da mfuuid.lib.
 [**IMFWorkQueueServices::BeginRegisterTopologyWorkQueuesWithMMCSS**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-beginregistertopologyworkqueueswithmmcss)
 </dt> <dt>
 
-[**ID DELLA \_ CODA DI LAVORO \_ TOPONODE MF \_**](mf-toponode-workqueue-id-attribute.md)
+[**ID DELLA CODA DI \_ \_ LAVORO TOPONODE MF \_**](mf-toponode-workqueue-id-attribute.md)
 </dt> <dt>
 
 [**MF \_ TOPONODE \_ WORKQUEUE \_ MMCSS \_ TASKID**](mf-toponode-workqueue-mmcss-taskid-attribute.md)

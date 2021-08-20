@@ -4,35 +4,35 @@ ms.assetid: 3cf56caf-5c6d-4318-811a-c8bdc1959148
 title: Come eseguire lo scrubbing
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9dad1f06cb6abe6a570fd85407028450651e32a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab86ae39567132352592883b7441e4f325cb1b021b74e5b7a67f4a2755c3c947
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118063358"
 ---
 # <a name="how-to-perform-scrubbing"></a>Come eseguire lo scrubbing
 
-Viene eseguita la ripulitura per cercare istantaneamente punti specifici all'interno di un file interagendo con una rappresentazione visiva del tempo, ad esempio una barra di scorrimento. In Media Foundation, lo scrubbing significa cercare su un file e ottenere un frame aggiornato.
+Lo scrubbing viene eseguito per cercare immediatamente punti specifici all'interno di un file interagendo con una rappresentazione visiva del tempo, ad esempio una barra di scorrimento. In Media Foundation, lo scrubbing indica la ricerca in un file e il recupero di un frame aggiornato.
 
-Per informazioni sullo scrubbing, vedere [informazioni sul controllo della frequenza](about-rate-control.md).
+Per informazioni sullo scrubbing, vedere [Informazioni sul controllo della frequenza.](about-rate-control.md)
 
 ## <a name="to-perform-scrubbing"></a>Per eseguire lo scrubbing
 
-1.  Chiamare [**MFGetService**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice) per ottenere l'interfaccia [**IMFRateControl**](/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol) dalla [sessione multimediale](media-session.md).
+1.  Chiamare [**MFGetService per**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice) ottenere [**l'interfaccia IMFRateControl**](/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol) dalla [sessione multimediale.](media-session.md)
     > [!Note]  
-    > Non ottenere l'interfaccia [**IMFRateControl**](/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol) dall'origine multimediale. Ottenere sempre l'interfaccia dalla sessione multimediale.
+    > Non ottenere [**l'interfaccia IMFRateControl**](/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol) dall'origine multimediale. Ottenere sempre l'interfaccia dalla sessione multimediale.
 
      
 
-2.  Chiamare [**IMFRateControl:: serate**](/windows/desktop/api/mfidl/nf-mfidl-imfratecontrol-setrate) per impostare la velocità di riproduzione su zero. Per ulteriori informazioni sulla chiamata a questo metodo, vedere [come impostare la velocità di riproduzione nella sessione multimediale](how-to-set-the-playback-rate-on-the-media-session.md).
-3.  Creare una posizione di ricerca in un **PROPVARIANT** specificando il tempo di presentazione da cercare in un tipo **MFTIME** .
-4.  Chiamare [**IMFMediaSession:: Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start) con la posizione Seek per avviare la riproduzione.
-5.  Quando l'operazione di scrub è completa, la sessione multimediale Invia un evento [MESessionScrubSampleComplete](mesessionscrubsamplecomplete.md) . Attendere questo evento prima di chiamare di nuovo [**Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start) per un'altra operazione di pulitura.
+2.  Chiamare [**IMFRateControl::SetRate**](/windows/desktop/api/mfidl/nf-mfidl-imfratecontrol-setrate) per impostare la velocità di riproduzione su zero. Per altre informazioni sulla chiamata a questo metodo, vedere [How to Set the Playback Rate on the Media Session](how-to-set-the-playback-rate-on-the-media-session.md).
+3.  Creare una posizione di ricerca in **un oggetto PROPVARIANT** specificando l'ora di presentazione in cui eseguire la ricerca in un **tipo MFTIME.**
+4.  Chiamare [**IMFMediaSession::Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start) con la posizione di ricerca per avviare la riproduzione.
+5.  Al termine dell'operazione di puli pagina, la sessione multimediale invia un [evento MESessionScsampleSampleComplete.](mesessionscrubsamplecomplete.md) Attendere questo evento prima di chiamare [**Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start) di nuovo per un'altra operazione di pulitura.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio di codice riportato di seguito viene illustrato come eseguire lo scrubbing.
+Nell'esempio di codice seguente viene illustrato come eseguire lo scrubbing.
 
 
 ```C++
@@ -78,9 +78,9 @@ HRESULT SkipToPosition (MFTIME SeekTime, IMFMediaSession *pMediaSession)
 
 
 
-Un'operazione di pulitura completata genera l'evento [MESessionScrubSampleComplete](mesessionscrubsamplecomplete.md) dopo che tutti i sink di flusso vengono aggiornati con il nuovo frame e l'operazione di pulitura viene completata correttamente. Quando si pulisce un file video, viene visualizzato il frame cercato, ma non viene generato un output audio.
+Un'operazione di pulitura riuscita genera l'evento [MESessionScsampleSampleComplete](mesessionscrubsamplecomplete.md) dopo che tutti i sink di flusso sono stati aggiornati con il nuovo frame e l'operazione di pulitura viene completata correttamente. Lo scrubbing di un file video visualizza il fotogramma cercato, ma non genera un output audio.
 
-L'applicazione può eseguire lo stepping del frame impostando la velocità di riproduzione su zero e quindi passando un **PROPVARIANT** impostato su **VT \_ empty** nella chiamata a [**IMFMediaSession:: Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start).
+L'applicazione può eseguire l'esecuzione passo a passo dei fotogrammi impostando la velocità di riproduzione su zero e quindi passando un **PROPVARIANT** impostato su **VT \_ EMPTY** nella chiamata a [**IMFMediaSession::Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

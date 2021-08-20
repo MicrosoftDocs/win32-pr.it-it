@@ -54,7 +54,7 @@ Elemento per il quale recuperare le informazioni. Deve essere un [**oggetto Fold
 
 Tipo: **Integer**
 
-Valore **Integer** che specifica le informazioni da recuperare. Le informazioni disponibili per un elemento dipendono dalla cartella in cui viene visualizzato. Questo valore corrisponde al numero di colonna in base zero visualizzato in una visualizzazione Shell. Per un elemento nel file system, può essere uno dei valori seguenti:
+Valore **Integer** che specifica le informazioni da recuperare. Le informazioni disponibili per un elemento dipendono dalla cartella in cui viene visualizzato. Questo valore corrisponde al numero di colonna in base zero visualizzato in una visualizzazione Shell. Per un elemento nel file system, questo può essere uno dei valori seguenti:
 
 <dt>
 
@@ -240,7 +240,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shlobj \_ core.h (includere Shldisp.h)</dt> </dl>  |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

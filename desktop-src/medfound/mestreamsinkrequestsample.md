@@ -1,29 +1,29 @@
 ---
-description: Generato da un sink del flusso per richiedere un nuovo campione multimediale dalla pipeline.
+description: Generato da un sink di flusso per richiedere un nuovo esempio multimediale dalla pipeline.
 ms.assetid: 35020a15-942f-4dd0-9ca4-815affdacecf
-title: Evento MEStreamSinkRequestSample (Mfobjects. h)
+title: Evento MEStreamSinkRequestSample (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1c5afbfa9f0cfe4b320b451e699612a4729c23a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de147486f54485ecb9f80b15394b1a2d48021c1f602ccd138cf6718ef7ec2c0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118061326"
 ---
-# <a name="mestreamsinkrequestsample-event"></a>Evento MEStreamSinkRequestSample
+# <a name="mestreamsinkrequestsample-event"></a>EVENTO MEStreamSinkRequestSample
 
-Generato da un sink del flusso per richiedere un nuovo campione multimediale dalla pipeline. Per ogni evento MEStreamSinkRequestSample, la pipeline richiede i dati dal componente upstream successivo.
+Generato da un sink di flusso per richiedere un nuovo esempio multimediale dalla pipeline. Per ogni evento MEStreamSinkRequestSample, la pipeline richiede i dati dal componente upstream successivo.
 
 ## <a name="event-values"></a>Valori dell'evento
 
-I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
+I valori possibili recuperati [**da IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
 
 
 
 | VARTYPE              | Descrizione                           |
 |----------------------|---------------------------------------|
-| VT \_ vuoto<br/> | Nessun dato dell'evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Nessun dato dell'evento.<br/> <br/> |
 
 
 
@@ -33,9 +33,9 @@ I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 
 
@@ -43,10 +43,10 @@ I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop
 
 <dl> <dt>
 
-[Eventi Media Foundation](media-foundation-events.md)
+[Media Foundation eventi](media-foundation-events.md)
 </dt> <dt>
 
-[Sink di supporti](media-sinks.md)
+[Sink multimediali](media-sinks.md)
 </dt> </dl>
 
  

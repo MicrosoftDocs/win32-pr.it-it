@@ -5,7 +5,7 @@ ms.assetid: 33175444-365c-4b94-8b91-07198431062f
 keywords:
 - Windows Media Format SDK, indicizzazione di file ASF
 - Advanced Systems Format (ASF), file di indicizzazione
-- ASF (Advanced Systems Format),indicizzazione di file
+- ASF (Advanced Systems Format), file di indicizzazione
 - indici, indicizzazione di file ASF
 ms.topic: article
 ms.date: 05/31/2018
@@ -18,9 +18,9 @@ ms.locfileid: "117845579"
 ---
 # <a name="to-index-an-asf-file"></a>Per indicizzare un file ASF
 
-Il processo di indicizzazione di un file ASF è molto semplice. Effettuare una chiamata a [**IWMIndexer::StartIndexing**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmindexer-startindexing) e passare il nome del file. L'indicizzatore esegue il resto. La chiamata a **StartIndexing è** asincrona, quindi lo stato deve essere monitorato usando il callback **OnStatus.**
+Il processo di indicizzazione di un file ASF è molto semplice. Effettuare una chiamata a [**IWMIndexer::StartIndexing**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmindexer-startindexing) e passare il nome del file. L'indicizzatore esegue il resto. La chiamata a **StartIndexing** è asincrona, quindi lo stato deve essere monitorato usando il callback **OnStatus.**
 
-Il codice seguente illustra come indicizzare un file ASF. Se si vuole configurare l'indicizzatore prima di indicizzare il file, è necessario includere il codice dell'esempio incluso in Per configurare [l'indicizzatore](to-configure-the-indexer.md).
+Il codice seguente illustra come indicizzare un file ASF. Se si desidera configurare l'indicizzatore prima di indicizzare il file, è necessario includere il codice dell'esempio incluso in Per configurare [l'indicizzatore](to-configure-the-indexer.md).
 
 Per questo esempio, l'handle che punta all'evento deve essere creato come variabile globale in modo che sia accessibile dal callback. La dichiarazione seguente deve essere visualizzata in un ambito globale.
 
@@ -34,7 +34,7 @@ HANDLE g_hEvent = NULL;
 
 In uno scenario più realistico, l'handle dell'evento deve essere un membro dati della classe che contiene sia il callback che la logica per avviare l'indicizzatore.
 
-L'indicizzatore invia diversi eventi al callback **OnStatus** dopo la chiamata a **IWMIndexer::StartIndexing.** È possibile intercettarli in base alle esigenze per l'applicazione. Come minimo, è necessario intercettare WMT \_ CLOSED, che viene inviato al termine dell'indicizzazione. Usare la logica seguente all'interno dell'opzione message nell'implementazione del callback **OnStatus.**
+L'indicizzatore invia diversi eventi al callback **OnStatus** dopo la chiamata a **IWMIndexer::StartIndexing**. È possibile intercettarli in base alle esigenze dell'applicazione. Come minimo, è necessario intercettare WMT CLOSED, che \_ viene inviato al termine dell'indicizzazione. Usare la logica seguente all'interno dell'opzione message nell'implementazione del callback **OnStatus.**
 
 
 ```C++
@@ -51,7 +51,7 @@ case WMT_CLOSED:
 
 
 
-Per questo esempio si presuppone che l'implementazione del callback **OnStatus** sia accessibile tramite un oggetto denominato MyCallback. Per altre informazioni sull'uso di eventi e callback con questo SDK, vedere [Uso dei metodi di callback.](using-the-callback-methods.md)
+Per questo esempio si presuppone che l'implementazione del callback **OnStatus** sia accessibile tramite un oggetto denominato MyCallback. Per altre informazioni sull'uso di eventi e callback con questo SDK, vedere [Uso dei metodi di callback](using-the-callback-methods.md).
 
 
 ```C++

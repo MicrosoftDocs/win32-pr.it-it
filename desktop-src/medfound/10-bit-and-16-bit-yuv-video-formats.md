@@ -36,7 +36,7 @@ Le rappresentazioni a 16 bit descritte in questo articolo usano valori **WORD** 
 
 Poiché le rappresentazioni a 10 e 16 bit dello stesso formato YUV hanno lo stesso layout di memoria, è possibile eseguire il cast di una rappresentazione a 10 bit a una rappresentazione a 16 bit senza perdita di precisione. È anche possibile eseguire il cast di una rappresentazione a 16 bit verso il basso in una rappresentazione a 10 bit. I formati Y416 e Y410 sono un'eccezione a questa regola generale, tuttavia, perché non condividono lo stesso layout di memoria.
 
-Quando l'hardware grafico legge una superficie che contiene una rappresentazione a 10 bit, deve ignorare i 6 bit di ordine inferiore di ogni canale. Se una superficie contiene dati a 16 bit validi, tuttavia, deve essere identificata come una superficie a 16 bit.
+Quando l'hardware grafico legge una superficie che contiene una rappresentazione a 10 bit, deve ignorare i 6 bit di basso livello di ogni canale. Se una superficie contiene dati a 16 bit validi, tuttavia, deve essere identificata come una superficie a 16 bit.
 
 Nei formati che contengono alfa, un pixel completamente trasparente ha un valore alfa pari a zero e un pixel completamente opaco ha un valore alfa pari a (2^n) – 1, dove n è il numero di bit alfa. Si presuppone che Alpha sia un valore lineare applicato a ogni componente dopo che il componente è stato convertito nella forma lineare normalizzata.
 
@@ -136,7 +136,7 @@ Y210 è identico a Y216, ad eccezione del fatto che ogni campione contiene solo 
 
 ### <a name="444-formats"></a>Formati 4:4:4
 
-Sono definiti due formati 4:4:4, con i codici FOURCC Y410 e Y416. Entrambi i formati sono di tipo pack.
+Vengono definiti due formati 4:4:4, con i codici FOURCC Y410 e Y416. Entrambi i formati sono di tipo pack.
 
 ### <a name="y410"></a>Y410
 
@@ -191,7 +191,7 @@ Nella tabella seguente sono elencati i formati YUV preferiti, inclusi i formati 
 [Formati YUV a 8 bit consigliati per il rendering video](recommended-8-bit-yuv-formats-for-video-rendering.md)
 </dt> <dt>
 
-[GUID del sottotipo video](video-subtype-guids.md)
+[GUID sottotipo video](video-subtype-guids.md)
 </dt> <dt>
 
 [Tipi di supporti video](video-media-types.md)

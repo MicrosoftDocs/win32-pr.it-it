@@ -16,12 +16,12 @@ ms.locfileid: "117824690"
 -   [Uso dei fotogrammi video](working-with-video-frames.md)
 -   [Uso dei codec](working-with-codecs.md)
 -   [Streaming multimediale](multimedia-streaming.md)
--   [Ottimizzazione tv analogica internazionale](international-analog-tv-tuning.md)
--   [Controllo dei grafici di filtro tramite C](controlling-filter-graphs-using-c.md)
+-   [International Analog TV Tuning](international-analog-tv-tuning.md)
+-   [Controllo dei grafici dei filtri tramite C](controlling-filter-graphs-using-c.md)
 -   [Interfacce deprecate](deprecated-interfaces.md)
 -   [Formato di file AVI](avi-file-format.md)
--   [Supporto delle modifiche all'area DVD in Windows](dvd-region-change-support-in-windows.md)
--   [Timeout di spin down dell'unità DVD](dvd-drive-spin-down-timeout.md)
+-   [Supporto della modifica dell'area DVD in Windows](dvd-region-change-support-in-windows.md)
+-   [Timeout di selezione unità DVD](dvd-drive-spin-down-timeout.md)
 -   [Registrazione di codec MPEG2](registering-mpeg2-codecs.md)
 
 ## <a name="related-topics"></a>Argomenti correlati

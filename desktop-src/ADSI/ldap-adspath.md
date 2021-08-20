@@ -27,11 +27,11 @@ LDAP://HostName[:PortNumber][/DistinguishedName]
 
 
 > [!Note]  
-> I caratteri parentesi quadre sinistra e destra ( ) indicano parametri \[ \] facoltativi. Non è una parte letterale della stringa di associazione.
+> I caratteri parentesi quadre sinistra e destra ( \[ \] ) indicano parametri facoltativi; non è una parte letterale della stringa di associazione.
 
  
 
-"HostName" può essere un nome di computer, un indirizzo IP o un nome di dominio. È anche possibile specificare un nome di server nella stringa di associazione. La maggior parte dei provider LDAP segue un modello che richiede l'impostazione di un nome di server.
+"HostName" può essere un nome di computer, un indirizzo IP o un nome di dominio. È anche possibile specificare un nome di server nella stringa di associazione. La maggior parte dei provider LDAP segue un modello che richiede la specifica di un nome di server.
 
 "PortNumber" specifica la porta da usare per la connessione. Se non viene specificato alcun numero di porta, il provider LDAP usa il numero di porta predefinito. Il numero di porta predefinito è 389 se non si usa una connessione SSL o 636 se si usa una connessione SSL.
 
@@ -44,8 +44,8 @@ Nella tabella seguente sono elencati esempi di stringhe di associazione.
 | Esempio di LDAP ADsPath                                      | Descrizione                                                |
 |-----------------------------------------------------------|------------------------------------------------------------|
 | Ldap:                                                     | Eseguire il binding alla radice dello spazio dei nomi LDAP.                    |
-| LDAP://server01                                           | Eseguire il binding a un server specifico.                                 |
-| LDAP://server01:390                                       | Eseguire il binding a un server specifico usando il numero di porta specificato. |
+| LDAP://server01                                           | Eseguire l'associazione a un server specifico.                                 |
+| LDAP://server01:390                                       | Eseguire l'associazione a un server specifico usando il numero di porta specificato. |
 | LDAP://CN=Jeff Smith,CN=users,DC=fabrikam,DC=com          | Eseguire l'associazione a un oggetto specifico.                                 |
 | LDAP://server01/CN=Jeff Smith,CN=users,DC=fabrikam,DC=com | Eseguire l'associazione a un oggetto specifico tramite un server specifico.       |
 
@@ -53,15 +53,15 @@ Nella tabella seguente sono elencati esempi di stringhe di associazione.
 
  
 
-Se è necessaria l'autenticazione Kerberos per il completamento di una richiesta di directory specifica, la stringa di associazione deve usare un ADsPath serverless, ad esempio LDAP://CN=Jeff Smith,CN=users,DC=fabrikam,DC=com, oppure deve usare un ADsPath con un nome di server DNS completo, ad esempio LDAP://server01.fabrikam.com/CN=Jeff Smith,CN=users,DC=fabrikam,DC=com. L'associazione al server usando un nome NETBIOS flat o un nome DNS breve, ad esempio usando il server dei nomi01 anziché server01.fabrikam.com, non garantisce che l'autenticazione Kerberos sia garantita.
+Se l'autenticazione Kerberos è necessaria per il corretto completamento di una richiesta di directory specifica, la stringa di associazione deve usare un ADsPath serverless, ad esempio LDAP://CN=Jeff Smith,CN=users,DC=fabrikam,DC=com, oppure deve usare un ADsPath con un nome di server DNS completo, ad esempio LDAP://server01.fabrikam.com/CN=Jeff Smith,CN=users,DC=fabrikam,DC=com. L'associazione al server tramite un nome NETBIOS semplice o un nome DNS breve, ad esempio usando il server dei nomi01 anziché server01.fabrikam.com, non garantisce la produzione dell'autenticazione Kerberos.
 
-Per altre informazioni ed esempi di stringhe di binding LDAP, nonché una descrizione dei caratteri speciali che possono essere usati nelle stringhe di binding LDAP, vedere LDAP ADsPath.
+Per altre informazioni ed esempi di stringhe di associazione LDAP, nonché una descrizione dei caratteri speciali che possono essere usati nelle stringhe di associazione LDAP, vedere LDAP ADsPath.
 
-**Windows 2000 con SP1 e versioni successive:** Con il provider LDAP, se una stringa di associazione include un nome del server, è possibile aumentare le prestazioni usando il flag **ADS \_ SERVER \_ BIND** con la funzione [**ADsOpenObject**](/windows/desktop/api/Adshlp/nf-adshlp-adsopenobject) o il metodo [**IADsOpenDSObject::OpenDSObject.**](/windows/desktop/api/Iads/nf-iads-iadsopendsobject-opendsobject) Il flag **ADS \_ SERVER \_ BIND** indica che è stato specificato un nome di server, che consente ad ADSI di evitare traffico di rete aggiuntivo e non necessario.
+**Windows 2000 con SP1 e versioni successive:** Con il provider LDAP, se una stringa di associazione include un nome del server, è possibile migliorare le prestazioni usando il flag **ADS \_ SERVER \_ BIND** con la funzione [**ADsOpenObject**](/windows/desktop/api/Adshlp/nf-adshlp-adsopenobject) o il metodo [**IADsOpenDSObject::OpenDSObject.**](/windows/desktop/api/Iads/nf-iads-iadsopendsobject-opendsobject) Il flag **ADS \_ SERVER \_ BIND** indica che è stato specificato un nome di server, che consente ad ADSI di evitare traffico di rete aggiuntivo e non necessario.
 
 ## <a name="ldap-special-characters"></a>Caratteri speciali LDAP
 
-LDAP include diversi caratteri speciali riservati per l'uso da parte dell'API LDAP. L'elenco di caratteri speciali è disponibile in [Nomi distinti](/previous-versions/windows/desktop/ldap/distinguished-names). Per usare uno di questi caratteri in ADsPath senza generare un errore, il carattere deve essere preceduto da una barra rovesciata ( \\ ). Questa operazione è nota come *escape del* carattere. Ad esempio, se un nome utente viene specificato nel formato " , ", la virgola nel valore del nome deve essere preceduta da <last name> <first name> un carattere di escape. La stringa risultante sarà simile alla seguente:
+LDAP include diversi caratteri speciali riservati per l'uso da parte dell'API LDAP. L'elenco dei caratteri speciali è disponibile in [Nomi distinti.](/previous-versions/windows/desktop/ldap/distinguished-names) Per usare uno di questi caratteri in ADsPath senza generare un errore, il carattere deve essere preceduto da una barra rovesciata ( \\ ) . Questa operazione è nota come *escape del* carattere. Ad esempio, se un nome utente viene specificato nel formato " , ", la virgola nel valore del nome deve essere preceduta da un carattere <last name> <first name> di escape. La stringa risultante sarà simile alla seguente:
 
 
 ```C++
@@ -70,7 +70,7 @@ LDAP://CN=Smith\,Jeff,CN=users,DC=fabrikam,DC=com
 
 
 
-Il carattere di escape può essere specificato anche dal codice carattere esadecimale a due cifre. come illustrato nell'esempio seguente.
+Il carattere di escape può essere specificato anche dal relativo codice carattere esadecimale a due cifre. come illustrato nell'esempio seguente.
 
 
 ```C++
@@ -79,7 +79,7 @@ LDAP://CN=Smith\2CJeff,CN=users,DC=fabrikam,DC=com
 
 
 
-I caratteri non stampabili, ad esempio l'avanzamento riga e il ritorno a capo, devono essere preceduti da caratteri di escape e specificati dal relativo codice carattere esadecimale a due cifre. come illustrato nell'esempio seguente.
+I caratteri non stampabili, ad esempio l'avanzamento riga e il ritorno a capo, devono essere preceduti da un carattere di escape e devono essere specificati dal relativo codice carattere esadecimale a due cifre. come illustrato nell'esempio seguente.
 
 
 ```C++
@@ -90,7 +90,7 @@ LDAP://CN=Line\0AFeed,CN=users,DC=fabrikam,DC=com
 
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
-Per altre informazioni sulla notazione del nome distinto utilizzata dai servizi directory conformi a LDAP, vedere [https://www.ietf.org/rfc/rfc1779.txt](https://www.ietf.org/rfc/rfc1779.txt) .
+Per altre informazioni sulla notazione del nome distinto usata dai servizi directory conformi a LDAP, vedere [https://www.ietf.org/rfc/rfc1779.txt](https://www.ietf.org/rfc/rfc1779.txt) .
 
  
 

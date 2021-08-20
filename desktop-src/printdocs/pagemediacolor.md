@@ -4,12 +4,12 @@ ms.assetid: 3e0e2cb2-cb51-446d-a6ff-f76aa8c305f6
 title: PageMediaColor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3041c8954048f60f52e9324f0c6565396d7fafe2
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 6f9f426db3e75869a7cc65eaf5ad5021d430f0a1e77f7cf24f4c97ad9fa9f2db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117686176"
 ---
 # <a name="pagemediacolor"></a>PageMediaColor
 
@@ -74,7 +74,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave pubbliche dello schema di stampa sono definite nello spazio dei `https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords` nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
+Le parole chiave pubbliche dello schema di stampa sono definite nello spazio `https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords` dei nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:PageMediaColor">

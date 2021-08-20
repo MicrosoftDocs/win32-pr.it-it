@@ -1,23 +1,23 @@
 ---
-description: L'output di testo è il tipo più comune di output grafico trovato all'interno dell'area client; viene utilizzato dalle applicazioni in modi diversi.
+description: L'output di testo è il tipo più comune di output grafico presente all'interno dell'area client. viene usato dalle applicazioni in modi diversi.
 ms.assetid: d19d7618-367a-408f-b4c1-7f76f13e5e90
 title: Informazioni sull'output di testo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c5f92596c6af2361b26aa788379a54838cafe16
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 56d7fb3baae823d5d8b0b23bbb82210bdfa051d56446d2fe0399e49dc7ae54bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118068374"
 ---
 # <a name="about-text-output"></a>Informazioni sull'output di testo
 
-L'output di testo è il tipo più comune di output grafico trovato all'interno dell'area client; viene utilizzato dalle applicazioni in modi diversi. Le applicazioni per l'elaborazione di Word e la pubblicazione desktop creano documenti con testo formattato; le applicazioni per fogli di calcolo utilizzano testo, numeri e simboli per specificare formule, colonne di etichette e valori di elenco; le applicazioni di database creano record e visualizzano query con testo, mentre le applicazioni CAD utilizzano testo per etichettare oggetti e visualizzare dimensioni.
+L'output di testo è il tipo più comune di output grafico presente all'interno dell'area client. viene usato dalle applicazioni in modi diversi. Le applicazioni di elaborazione di testo e desktop publishing creano documenti con testo formattato; Le applicazioni foglio di calcolo usano testo, numeri e simboli per specificare formule, etichette di colonne e valori di elenco; le applicazioni di database creano record e visualizzano query con testo e le applicazioni CAD usano testo per etichettare oggetti e visualizzare dimensioni.
 
-Sono disponibili funzioni per formattare e creare testo nell'area client di un'applicazione e in una pagina di carta stampata. Queste funzioni possono essere divise in due categorie: quelle che formattano il testo (o la preparano per l'output) e quelle che tracciano effettivamente il testo. Le funzioni di formattazione allinea il testo, imposta la spaziatura tra caratteri, imposta i colori di sfondo del testo e del testo e giustifica il testo. Le funzioni di disegno disegnano singoli caratteri (o simboli) o intere stringhe di testo.
+Sono disponibili funzioni per formattare e disegnare testo nell'area client di un'applicazione e in una pagina di carta della stampante. Queste funzioni possono essere suddivise in due categorie: quelle che formattano il testo (o lo preparano per l'output) e quelle che disegnano effettivamente il testo. Le funzioni di formattazione allineano il testo, impostano la spaziatura tra caratteri, impostano i colori del testo e dello sfondo del testo e giustificano il testo. Le funzioni di disegno disegnano singoli caratteri (o simboli) o intere stringhe di testo.
 
-Quando si utilizza Microsoft Windows, le interruzioni di riga rigido vengono specificate con la coppia ritorno a capo/avanzamento riga ( \\ r \\ n).
+Quando si lavora in Microsoft Windows, le interruzioni di riga rigida vengono specificate con la coppia ritorno a capo/avanzamento riga ( \\ r \\ n).
 
 Per altre informazioni, vedere i seguenti argomenti:
 

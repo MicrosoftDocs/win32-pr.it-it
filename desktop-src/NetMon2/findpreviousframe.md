@@ -1,7 +1,7 @@
 ---
 description: La funzione FindPreviousFrame trova il frame precedente nel contesto di acquisizione corrente che corrisponde al filtro.
 ms.assetid: 16c5b981-a9f4-41e5-bb97-2caa3e9d8512
-title: Funzione FindPreviousFrame (Netmon. h)
+title: Funzione FindPreviousFrame (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: deabf10702ca41c23101c5f60c9459e094e567fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a3bd6378691b63fc7f4db2455f713ffd0cf2a0281da2411dc494244ad3f00ba4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117982528"
 ---
-# <a name="findpreviousframe-function"></a>FindPreviousFrame (funzione)
+# <a name="findpreviousframe-function"></a>Funzione FindPreviousFrame
 
-La funzione **FindPreviousFrame** trova il frame precedente nel contesto di acquisizione corrente che corrisponde al filtro.
+La **funzione FindPreviousFrame** trova il frame precedente nel contesto di acquisizione corrente che corrisponde al filtro.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -76,23 +76,23 @@ Indirizzo di origine del frame cercato.
 *ProtocolOffset* 
 </dt> <dd>
 
-Puntatore a una **parola** che riceve l'offset del protocollo.
+Puntatore a **un oggetto WORD** che riceve l'offset del protocollo.
 
 </dd> <dt>
 
 *OriginalFrameNumber* 
 </dt> <dd>
 
-Punto iniziale della ricerca. Per impostazione predefinita, questa funzione esegue la ricerca all'indietro dei frame 1.000 dal punto di partenza del *OriginalFrameNumber* . È possibile modificare la distanza di ricerca aggiungendo questa riga al file Nmapi.ini, che si trova nella \\ directory Network Monitor.
+Punto di partenza della ricerca. Per impostazione predefinita, questa funzione cerca 1.000 fotogrammi indietro dal *punto di partenza OriginalFrameNumber.* È possibile modificare la distanza di ricerca indietro aggiungendo questa riga al file Nmapi.ini, che si trova nella \\ directory Network Monitor.
 
-MAXLOOKBACK =<new lookback distance>
+MAXLOOKBACK=<new lookback distance>
 
 </dd> <dt>
 
 *LowestFrame* 
 </dt> <dd>
 
-Numero di frame più basso nell'acquisizione in cui viene eseguita la ricerca.
+Numero di fotogramma più basso nell'acquisizione in cui viene cercata.
 
 </dd> </dl>
 
@@ -100,13 +100,13 @@ Numero di frame più basso nell'acquisizione in cui viene eseguita la ricerca.
 
 Se la funzione ha esito positivo, il valore restituito è un handle per il frame precedente.
 
-Se la funzione ha esito negativo, il valore restituito è **null**.
+Se la funzione non ha esito positivo, il valore restituito è **NULL.**
 
 ## <a name="remarks"></a>Commenti
 
-Il filtro di acquisizione è definito principalmente da *ProtocolName*, che è l'unico input di filtro necessario; è possibile aggiungere informazioni su *DestinationAddress* e *sourceAddress* per aumentare la velocità di acquisizione.
+Il filtro di acquisizione viene definito principalmente da *ProtocolName,* che è l'unico input del filtro richiesto. è possibile aggiungere *le informazioni DestinationAddress* e *SourceAddress* per aumentare la velocità di acquisizione.
 
-*ProtocolOffset* viene restituito al parser chiamante, che aggiunge questo **DWORD** al puntatore restituito bloccando il frame (con [PARSERTEMPORARYLOCKFRAME](parsertemporarylockframe.md)) per ottenere il LPBYTE del protocollo di cui viene eseguita la ricerca. Al ritorno, il HFRAME che ha superato il filtro viene assegnato al parser. Se il parser rileva che il frame non è quello cercato, il parser può restituire questo HFRAME alla funzione **FindPreviousFrame** per recuperare il frame successivo. Gli indirizzi di origine e di destinazione, che non sono obbligatori, possono essere passati come **null**. Se utilizzati, questi indirizzi possono essere di tipo indirizzo \_ \_ IP e così via, non solo i tipi Mac.
+*ProtocolOffset* viene restituito al parser chiamante, che aggiunge questo **valore DWORD** al puntatore restituito bloccando il frame (con [ParserTemporaryLockFrame](parsertemporarylockframe.md)) per ottenere l'LPBYTE del protocollo cercato. In caso di restituzione, l'HFRAME che ha passato il filtro viene assegnato al parser. Se il parser rileva che il frame non è quello cercato, il parser può tornare alla funzione **FindPreviousFrame** per recuperare il frame successivo. Gli indirizzi di origine e di destinazione, che non sono obbligatori, possono essere passati come **NULL.** Se usati, questi indirizzi possono essere di tipo INDIRIZZO \_ TIPO IP e così \_ via, non solo tipi MAC.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -116,8 +116,8 @@ Il filtro di acquisizione è definito principalmente da *ProtocolName*, che è l
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Libreria<br/>                  | <dl> <dt>Nmap. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Libreria<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

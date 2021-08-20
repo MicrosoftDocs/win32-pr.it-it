@@ -1,19 +1,19 @@
 ---
-description: Notifica a un'applicazione quando un IME selezionato richiede informazioni sul tipo di carattere utilizzato dalla finestra di composizione. L'applicazione riceve questo comando tramite il \_ \_ messaggio di richiesta IME WM con i parametri, come illustrato di seguito.
+description: Notifica a un'applicazione quando un IME selezionato necessita di informazioni sul tipo di carattere usato dalla finestra di composizione. L'applicazione riceve questo comando tramite il messaggio WM \_ IME \_ REQUEST con parametri, come illustrato di seguito.
 ms.assetid: 46bb71ee-8dc9-4ef0-bc4e-59866c122bf7
-title: Codice di notifica IMR_COMPOSITIONFONT (IMM. h)
+title: IMR_COMPOSITIONFONT codice di notifica (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8be2751944e451475fd0bde9a34d8902dcaf30e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e241605358a0b6781a5725e4d0cfabc23b06a89f8e2bc041e9556434b6c5816f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117810098"
 ---
-# <a name="imr_compositionfont-notification-code"></a>\_Codice di notifica COMPOSITIONFONT di IMR
+# <a name="imr_compositionfont-notification-code"></a>Codice di notifica IMR \_ COMPOSITIONFONT
 
-Notifica a un'applicazione quando un IME selezionato richiede informazioni sul tipo di carattere utilizzato dalla finestra di composizione. L'applicazione riceve questo comando tramite il messaggio di [**\_ \_ richiesta IME WM**](wm-ime-request.md) con i parametri, come illustrato di seguito.
+Notifica a un'applicazione quando un IME selezionato necessita di informazioni sul tipo di carattere usato dalla finestra di composizione. L'applicazione riceve questo comando tramite il [**messaggio WM \_ IME \_ REQUEST**](wm-ime-request.md) con parametri, come illustrato di seguito.
 
 
 ```C++
@@ -26,27 +26,27 @@ LRESULT IMR_COMPOSITIONFONT
 
 <dl> <dt>
 
-<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*wParam*
+<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*Wparam*
 </dt> <dd>
 
 Impostare su IMR \_ COMPOSITIONFONT.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Puntatore a un buffer contenente una struttura [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) . L'applicazione compila i valori per la finestra di composizione corrente.
+Puntatore a un buffer contenente una [**struttura LOGFONT.**](/windows/win32/api/wingdi/ns-wingdi-logfonta) L'applicazione inserisce i valori per la finestra di composizione corrente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero se l'applicazione compila la struttura [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) . In caso contrario, il comando restituisce 0.
+Restituisce un valore diverso da zero se l'applicazione compila la [**struttura LOGFONT.**](/windows/win32/api/wingdi/ns-wingdi-logfonta) In caso contrario, il comando restituisce 0.
 
 ## <a name="remarks"></a>Commenti
 
-Questo comando può essere inviato dall'IME a una finestra che ha cancellato il \_ flag SHOWUICOMPOSITIONWINDOW di ISC nel gestore di messaggi di [**contesto di WM \_ IME \_**](wm-ime-setcontext.md) .
+Questo comando può essere inviato dall'IME a una finestra che ha cancellato il flag ISC SHOWUICOMPOSITIONWINDOW nel gestore messaggi \_ [**WM \_ IME \_ SETCONTEXT.**](wm-ime-setcontext.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,7 +56,7 @@ Questo comando può essere inviato dall'IME a una finestra che ha cancellato il 
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>Imm. h (Includi Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Imm.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -64,16 +64,16 @@ Questo comando può essere inviato dall'IME a una finestra che ha cancellato il 
 
 <dl> <dt>
 
-[Gestione metodo di input](input-method-manager.md)
+[Gestione metodi di input](input-method-manager.md)
 </dt> <dt>
 
-[Comandi di input Method Manager](input-method-manager-commands.md)
+[Comandi di Gestione metodi di input](input-method-manager-commands.md)
 </dt> <dt>
 
-[**\_richiesta IME \_ WM**](wm-ime-request.md)
+[**RICHIESTA \_ IME \_ WM**](wm-ime-request.md)
 </dt> <dt>
 
-[**\_CONtesting IME WM \_**](wm-ime-setcontext.md)
+[**WM \_ IME \_ SETCONTEXT**](wm-ime-setcontext.md)
 </dt> </dl>
 
  

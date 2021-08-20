@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà InstanceParameters. LogFileSize'
-title: Proprietà InstanceParameters. LogFileSize
+description: Altre informazioni sulla proprietà InstanceParameters.LogFileSize
+title: InstanceParameters.LogFileSize - proprietà
 TOCTitle: 'LogFileSize property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.LogFileSize
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.logfilesize(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c141c76a92f49b4b5000cad65e302a7cf15d780f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6d605a62541ee8e338aedcbd4109a16661baa64ced420c4cb56b10f472e0d085
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117705902"
 ---
-# <a name="instanceparameterslogfilesize-property"></a>Proprietà InstanceParameters. LogFileSize
+# <a name="instanceparameterslogfilesize-property"></a>InstanceParameters.LogFileSize - proprietà
 
-Ottiene o imposta le dimensioni dei file di log delle transazioni. Questo parametro deve essere impostato in unità di 1024 byte (ad esempio, un'impostazione di 2048 fornirà 2MB di logfile).
+Ottiene o imposta le dimensioni dei file di log delle transazioni. Questo parametro deve essere impostato in unità di 1024 byte (ad esempio, un'impostazione di 2048 offrirà 2 MB di file di log).
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,7 +62,7 @@ public int LogFileSize { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -70,6 +70,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Classe InstanceParameters](./instanceparameters-class.md)
 
-[Membri di InstanceParameters](./instanceparameters-members.md)
+[Membri instanceParameters](./instanceparameters-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

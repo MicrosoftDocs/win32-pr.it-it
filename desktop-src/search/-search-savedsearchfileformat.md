@@ -412,7 +412,7 @@ Di seguito sono riportati esempi \* di file con estensione search-ms.
 </persistedQuery>
 ```
 
-### <a name="recent-musicsearch-ms"></a>Recent Musica.search-ms
+### <a name="recent-musicsearch-ms"></a>File Musica.search-ms
 
 ```XML
 <?xml version="1.0"?>

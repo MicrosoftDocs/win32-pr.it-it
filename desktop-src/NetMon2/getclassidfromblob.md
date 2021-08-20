@@ -1,7 +1,7 @@
 ---
-description: La funzione GetClassIDFromBlob recupera un valore di identificatore di classe denominato da un BLOB.
+description: La funzione GetClassIDFromBlob recupera un valore dell'identificatore di classe denominato da un BLOB.
 ms.assetid: fef29a42-ccd3-4655-958c-d150e5bcd0d7
-title: Funzione GetClassIDFromBlob (Netmon. h)
+title: Funzione GetClassIDFromBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 70122422c47a986058322ca8d17082093e02a4b6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c580d03ea3c2b2b1670f37d470d8075407dc507d9d738df236548ee758371697
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117795730"
 ---
-# <a name="getclassidfromblob-function"></a>GetClassIDFromBlob (funzione)
+# <a name="getclassidfromblob-function"></a>Funzione GetClassIDFromBlob
 
-La funzione **GetClassIDFromBlob** recupera un valore di identificatore di classe denominato da un BLOB.
+La **funzione GetClassIDFromBlob** recupera un valore dell'identificatore di classe denominato da un BLOB.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,35 +43,35 @@ DWORD GetClassIDFromBlob(
 
 <dl> <dt>
 
-*hBlob* \[ in\]
+*hBlob* \[ Pollici\]
 </dt> <dd>
 
-Handle per un BLOB.
+Handle a un BLOB.
 
 </dd> <dt>
 
-*pOwnerName* \[ in\]
+*pOwnerName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore al nome del proprietario del BLOB.
+Puntatore al nome del proprietario BLOB.
 
 </dd> <dt>
 
-*pCategoryName* \[ in\]
+*pCategoryName* \[ Pollici\]
 </dt> <dd>
 
 Puntatore al nome della categoria BLOB.
 
 </dd> <dt>
 
-*pTagName* \[ in\]
+*pTagName* \[ Pollici\]
 </dt> <dd>
 
 Puntatore al nome del tag BLOB.
 
 </dd> <dt>
 
-*pClsID* \[ out\]
+*pClsID* \[ Cambio\]
 </dt> <dd>
 
 Puntatore all'identificatore di classe BLOB.
@@ -80,7 +80,7 @@ Puntatore all'identificatore di classe BLOB.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è NMERR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se la funzione ha esito negativo, il valore restituito è un valore NMERR che descrive l'errore.
 
@@ -92,8 +92,8 @@ Se la funzione ha esito negativo, il valore restituito è un valore NMERR che de
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

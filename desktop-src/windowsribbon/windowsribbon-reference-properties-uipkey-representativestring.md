@@ -27,7 +27,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-Ui \_ PKEY RepresentativeString viene usato da un'applicazione per eseguire query sulla lunghezza del campo \_ di modifica per un controllo [Spinner.](windowsribbon-controls-spinner.md)
+UI \_ PKEY RepresentativeString viene usato da un'applicazione per eseguire una query sulla lunghezza del \_ campo di modifica per un controllo [Spinner.](windowsribbon-controls-spinner.md)
 
 > [!Note]  
 > Il valore di UI PKEY RepresentativeString viene usato dal framework per calcolare la larghezza del controllo Spinner e \_ non viene mai \_ visualizzato. [](windowsribbon-controls-spinner.md)
@@ -38,7 +38,7 @@ Ui \_ PKEY RepresentativeString viene usato da un'applicazione per eseguire quer
 
 <dl> <dt>
 
-[Proprietà dello stato](windowsribbon-reference-properties-state.md)
+[Proprietà di stato](windowsribbon-reference-properties-state.md)
 </dt> </dl>
 
  

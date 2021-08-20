@@ -1,12 +1,12 @@
 ---
-title: Metodo GetInt32Property della classe Win32_RDSHServer (Microsoft. Diagnostics. appanalysis. h)
-description: Recupera un valore di proprietà Integer di un \_ oggetto Win32 RDSHServer.
+title: Metodo GetInt32Property della classe Win32_RDSHServer (Microsoft.diagnostics.appanalysis.h)
+description: Recupera il valore di una proprietà integer di un oggetto \_ RDSHServer Win32.
 ms.assetid: 4601e9cb-927b-4af8-a12b-09a8ca44c2f7
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo GetInt32Property
-- Metodo GetInt32Property Servizi Desktop remoto, classe Win32_RDSHServer
-- Classe Win32_RDSHServer Servizi Desktop remoto, metodo GetInt32Property
+- Metodo GetInt32Property Servizi Desktop remoto
+- Metodo GetInt32Property Servizi Desktop remoto , Win32_RDSHServer classe
+- Win32_RDSHServer classe Servizi Desktop remoto metodo , GetInt32Property
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29a2427cfa19a84a8b8988cceacf3e0b836a031f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ba9114ca22a1052161000fcb05f38622ab9d210ec02b14715dad1bb85ce1365e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118130672"
 ---
-# <a name="getint32property-method-of-the-win32_rdshserver-class"></a>Metodo GetInt32Property della \_ classe RDSHServer Win32
+# <a name="getint32property-method-of-the-win32_rdshserver-class"></a>Metodo GetInt32Property della classe RDSHServer Win32 \_
 
-Recupera un valore di proprietà Integer di un oggetto [**Win32 \_ RDSHServer**](win32-rdshserver.md) .
+Recupera il valore di una proprietà integer di un [**oggetto \_ RDSHServer Win32.**](win32-rdshserver.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,14 +44,14 @@ uint32 GetInt32Property(
 
 <dl> <dt>
 
-*Chiave* \[ di in\]
+*Chiave* \[ Pollici\]
 </dt> <dd>
 
 Chiave che identifica la proprietà da recuperare.
 
 </dd> <dt>
 
-*Valore* \[ di out\]
+*Valore* \[ Cambio\]
 </dt> <dd>
 
 Riceve il valore della proprietà recuperata.
@@ -70,9 +70,9 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                                      |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                                 |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                                   |
-| Intestazione<br/>                   | <dl> <dt>Microsoft. Diagnostics. appanalysis. h</dt> </dl> |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl>                    |
+| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                                   |
+| Intestazione<br/>                   | <dl> <dt>Microsoft.diagnostics.appanalysis.h</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl>                    |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>                            |
 
 
@@ -81,7 +81,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RDSHServer Win32**](win32-rdshserver.md)
+[**Win32 \_ RDSHServer**](win32-rdshserver.md)
 </dt> </dl>
 
  

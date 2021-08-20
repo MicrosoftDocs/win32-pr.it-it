@@ -13,7 +13,7 @@ ms.locfileid: "118066975"
 ---
 # <a name="joining-lines"></a>Unione di linee
 
-Un join di linee è l'area comune formata da due linee le cui estremità si incontrano o si sovrappongono. Windows GDI+ offre quattro stili di join di linea: miter, smussato, arrotondato e troncato. Lo stile di join della linea è una proprietà della [**classe**](/windows/desktop/api/gdipluspen/nl-gdipluspen-pen) Pen. Quando si specifica uno stile di join di linea per una penna e quindi si usa tale penna per disegnare un tracciato, lo stile di join specificato viene applicato a tutte le linee connesse nel tracciato.
+Un join di linee è l'area comune formata da due linee le cui estremità si incontrano o si sovrappongono. Windows GDI+ offre quattro stili di join di linea: miter, smussato, arrotondato e troncato. Lo stile di join delle linee è una proprietà della [**classe**](/windows/desktop/api/gdipluspen/nl-gdipluspen-pen) Pen. Quando si specifica uno stile di join di linea per una penna e quindi si usa tale penna per disegnare un tracciato, lo stile di join specificato viene applicato a tutte le linee connesse nel tracciato.
 
 È possibile specificare lo stile di join della linea usando il [**metodo Pen::SetLineJoin**](/windows/desktop/api/Gdipluspen/nf-gdipluspen-pen-setlinejoin) della [**classe**](/windows/desktop/api/gdipluspen/nl-gdipluspen-pen) Pen. L'esempio seguente illustra un join di linee smussate tra una linea orizzontale e una linea verticale:
 

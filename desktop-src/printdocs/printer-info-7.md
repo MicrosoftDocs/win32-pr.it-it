@@ -1,7 +1,7 @@
 ---
 description: La struttura PRINTER \_ INFO \_ 7 specifica le informazioni sulla stampante dei servizi directory.
 ms.assetid: 9443855e-df7d-41a1-a0df-5649a97b2915
-title: PRINTER_INFO_7 (Winspool.h)
+title: PRINTER_INFO_7 struttura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,7 +24,7 @@ ms.locfileid: "117867767"
 ---
 # <a name="printer_info_7-structure"></a>Struttura PRINTER \_ INFO \_ 7
 
-La **struttura PRINTER INFO \_ \_ 7** specifica le informazioni sulla stampante dei servizi directory. Usare questa struttura con la funzione [**SetPrinter**](setprinter.md) per pubblicare i dati di una stampante nel servizio directory o per aggiornare o rimuovere i dati pubblicati di una stampante dal servizio directory. Usare questa struttura con la [**funzione GetPrinter**](getprinter.md) per determinare se una stampante viene pubblicata nel servizio Directory.
+La **struttura PRINTER INFO \_ \_ 7** specifica le informazioni sulla stampante dei servizi directory. Usare questa struttura con la funzione [**SetPrinter**](setprinter.md) per pubblicare i dati di una stampante nel servizio directory o per aggiornare o rimuovere i dati pubblicati di una stampante da DS. Usare questa struttura con la [**funzione GetPrinter**](getprinter.md) per determinare se una stampante viene pubblicata in DS.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,10 +61,10 @@ Indica l'azione da eseguire per la funzione [**SetPrinter.**](setprinter.md) Per
 | Valore                                                                                                                                                                                                                                     | Significato                                                                                                                                                                                                                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="DSPRINT_PENDING"></span><span id="dsprint_pending"></span><dl> <dt>**DSPRINT \_ IN SOSPESO**</dt> <dt>0x80000000</dt> </dl>       | [**GetPrinter:**](getprinter.md)indica che il sistema sta tentando di completare un'operazione di pubblicazione o annullamento della pubblicazione avviata da una [**chiamata a SetPrinter.**](setprinter.md)<br/> [**SetPrinter:**](setprinter.md)questo valore non è valido. <br/>                                                |
-| <span id="DSPRINT_PUBLISH"></span><span id="dsprint_publish"></span><dl> <dt>**DSPRINT \_ Pubblicazione**</dt> <dt>0x00000001</dt> </dl>       | [**SetPrinter:**](setprinter.md)pubblica i dati della stampante nel DS.<br/> [**GetPrinter:**](getprinter.md)indica che la stampante è pubblicata. <br/>                                                                                                                                      |
-| <span id="DSPRINT_REPUBLISH"></span><span id="dsprint_republish"></span><dl> <dt>**DSPRINT \_ Ripubblicare**</dt> <dt>0x00000008</dt> </dl> | [**SetPrinter:**](setprinter.md)i dati DS per la stampante non vengono pubblicati e quindi pubblicati di nuovo, aggiornando tutte le proprietà nella stampante pubblicata. La rip pubblicazione modifica anche il GUID della stampante pubblicata.<br/> [**GetPrinter:**](getprinter.md)non restituisce mai questo valore. <br/> |
-| <span id="DSPRINT_UNPUBLISH"></span><span id="dsprint_unpublish"></span><dl> <dt>**DSPRINT \_ Annulla pubblicazione**</dt> <dt>0x00000004</dt> </dl> | [**SetPrinter:**](setprinter.md)rimuove i dati pubblicati della stampante da DS.<br/> [**GetPrinter:**](getprinter.md)indica che la stampante non è pubblicata. <br/>                                                                                                                        |
-| <span id="DSPRINT_UPDATE"></span><span id="dsprint_update"></span><dl> <dt>**DSPRINT \_ Aggiornamento**</dt> <dt>0x00000002</dt> </dl>          | [**SetPrinter:**](setprinter.md)aggiorna i dati pubblicati della stampante in DS.<br/> [**GetPrinter:**](getprinter.md)non restituisce mai questo valore. <br/>                                                                                                                                        |
+| <span id="DSPRINT_PUBLISH"></span><span id="dsprint_publish"></span><dl> <dt>**DSPRINT \_ PUBBLICAZIONE**</dt> <dt>0x00000001</dt> </dl>       | [**SetPrinter:**](setprinter.md)pubblica i dati della stampante nel DS.<br/> [**GetPrinter**](getprinter.md): indica che la stampante è pubblicata. <br/>                                                                                                                                      |
+| <span id="DSPRINT_REPUBLISH"></span><span id="dsprint_republish"></span><dl> <dt>**DSPRINT \_ RIPUBBLICAre**</dt> <dt>0x00000008</dt> </dl> | [**SetPrinter:**](setprinter.md)i dati DS per la stampante non vengono pubblicati e quindi pubblicati di nuovo, aggiornando tutte le proprietà nella stampante pubblicata. La ri-pubblicazione modifica anche il GUID della stampante pubblicata.<br/> [**GetPrinter:**](getprinter.md)non restituisce mai questo valore. <br/> |
+| <span id="DSPRINT_UNPUBLISH"></span><span id="dsprint_unpublish"></span><dl> <dt>**DSPRINT \_ Annullare la pubblicazione**</dt> <dt>0x00000004</dt> </dl> | [**SetPrinter:**](setprinter.md)rimuove i dati pubblicati della stampante dal servizio Di rete.<br/> [**GetPrinter**](getprinter.md): indica che la stampante non è pubblicata. <br/>                                                                                                                        |
+| <span id="DSPRINT_UPDATE"></span><span id="dsprint_update"></span><dl> <dt>**DSPRINT \_ AGGIORNAMENTO**</dt> <dt>0x00000002</dt> </dl>          | [**SetPrinter:**](setprinter.md)aggiorna i dati pubblicati della stampante nel DS.<br/> [**GetPrinter:**](getprinter.md)non restituisce mai questo valore. <br/>                                                                                                                                        |
 
 
 
@@ -74,9 +74,9 @@ Indica l'azione da eseguire per la funzione [**SetPrinter.**](setprinter.md) Per
 
 ## <a name="remarks"></a>Commenti
 
-La **struttura PRINTER INFO \_ \_ 7** viene usata in una [**chiamata SetPrinter**](setprinter.md) per pubblicare le informazioni della stampante nel servizio directory. I dati pubblicati includono tutti i valori e i dati per la stampante specificata trovati nelle chiavi SPLDS \_ SPOOLER \_ KEY, SPLDS DRIVER KEY o SPLDS USER KEY create da \_ \_ \_ \_ [**SetPrinterDataEx.**](setprinterdataex.md)
+La **struttura PRINTER INFO \_ \_ 7** viene usata in una [**chiamata SetPrinter**](setprinter.md) per pubblicare le informazioni della stampante nel servizio directory. I dati pubblicati includono tutti i valori e i dati per la stampante specificata presenti nelle chiavi SPLDS \_ SPOOLER \_ KEY, SPLDS DRIVER KEY o \_ \_ SPLDS USER KEY create \_ da \_ [**SetPrinterDataEx.**](setprinterdataex.md)
 
-Per [**SetPrinter**](setprinter.md), *pszObjectGUID* deve essere impostato su **NULL.** Per [**GetPrinter**](getprinter.md), *pszObjectGUID* restituisce il GUID dell'oggetto coda di stampa dei servizi directory associato a una stampante pubblicata. È possibile usare questo GUID con i metodi ADSI (Active Directory Services Interface) per recuperare i dati pubblicati per la stampante. Tuttavia, il metodo consigliato per il recupero dei dati pubblicati è chiamare la [**funzione GetPrinterDataEx.**](getprinterdataex.md)
+Per [**SetPrinter,**](setprinter.md) *pszObjectGUID* deve essere impostato su **NULL.** Per [**GetPrinter**](getprinter.md), *pszObjectGUID* restituisce il GUID dell'oggetto coda di stampa dei servizi directory associato a una stampante pubblicata. È possibile usare questo GUID con i metodi ADSI (Active Directory Services Interface) per recuperare i dati pubblicati per la stampante. Tuttavia, il metodo consigliato per recuperare i dati pubblicati è chiamare la [**funzione GetPrinterDataEx.**](getprinterdataex.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -86,7 +86,7 @@ Per [**SetPrinter**](setprinter.md), *pszObjectGUID* deve essere impostato su **
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool.h (includere Windows.h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (include Windows.h)</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **\_ PRINTER \_ INFO \_ 7W** (Unicode) e **\_ PRINTER INFO \_ \_ 7A** (ANSI)<br/>                           |
 
 

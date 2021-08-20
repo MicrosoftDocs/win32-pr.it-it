@@ -4,12 +4,12 @@ ms.assetid: 81597594-eab2-4992-8d09-7409fba247fe
 title: System.RecordedTV.IsClosedCaptioningAvailable
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: adcae0ce5a793a37fd65ba1c0cc71065a4b9858a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 89777a900f5e8129602f21d19bbcbc2de340792724b927b7229b7e50254090c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117682227"
 ---
 # <a name="systemrecordedtvisclosedcaptioningavailable"></a>System.RecordedTV.IsClosedCaptioningAvailable
 

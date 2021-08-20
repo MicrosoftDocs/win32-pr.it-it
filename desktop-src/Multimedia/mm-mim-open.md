@@ -1,9 +1,9 @@
 ---
-title: Messaggio MM_MIM_OPEN (mmsystem. h)
-description: Il \_ \_ messaggio di apertura mm MIM viene inviato a una finestra quando viene aperto un dispositivo di input MIDI.
+title: MM_MIM_OPEN messaggio (Mmsystem.h)
+description: Il messaggio MM \_ MIM OPEN viene inviato a una finestra quando viene aperto un dispositivo di input \_ MIDI.
 ms.assetid: 8dfc24a0-0ab8-4f49-954f-0c0a55fa28bc
 keywords:
-- MM_MIM_OPEN messaggi multimediali di Windows
+- MM_MIM_OPEN messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7d87e391336b948d0c784048baeffa7bba88b29
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 008d6b090968c4823ab14159772f5e8ba8531166a299bf1d9e90061739831d28
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117985521"
 ---
-# <a name="mm_mim_open-message"></a>MM \_ \_ messaggio aperto MIM
+# <a name="mm_mim_open-message"></a>MESSAGGIO MM \_ MIM \_ OPEN
 
-Il messaggio di **\_ \_ apertura mm MIM** viene inviato a una finestra quando viene aperto un dispositivo di input MIDI.
+Il **messaggio MM MIM \_ \_ OPEN** viene inviato a una finestra quando viene aperto un dispositivo di input MIDI.
 
 
 ```C++
@@ -41,20 +41,20 @@ lParam = reserved
 <span id="hInput"></span><span id="hinput"></span><span id="HINPUT"></span>*hInput*
 </dt> <dd>
 
-Handle per il dispositivo di input MIDI che è stato aperto.
+Handle per il dispositivo di input MIDI aperto.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Riservati Non usare.
+Riservato; non utilizzare .
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non restituisce un valore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,7 +64,7 @@ Questo messaggio non restituisce alcun valore.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Questo messaggio non restituisce alcun valore.
 
 <dl> <dt>
 
-[MIDI (Musical Instrument Digital Interface)](musical-instrument-digital-interface--midi.md)
+[MidI (Musical Instrument Digital Interface)](musical-instrument-digital-interface--midi.md)
 </dt> <dt>
 
 [Messaggi MIDI](midi-messages.md)

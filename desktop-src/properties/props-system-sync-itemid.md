@@ -4,12 +4,12 @@ ms.assetid: bf5ea477-2d5e-4c40-917e-3ef8057efc25
 title: System.Sync.ItemID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aeebc9a4c365a112bc9c4cc5ee65a0d21a800e7d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5959fa5077cf24f90425f321ed0baa50d6525a1a369c26846817f3d973418e50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117864399"
 ---
 # <a name="systemsyncitemid"></a>System.Sync.ItemID
 
@@ -36,7 +36,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -66,7 +66,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

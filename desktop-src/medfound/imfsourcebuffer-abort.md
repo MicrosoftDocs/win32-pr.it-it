@@ -1,7 +1,7 @@
 ---
 description: Interrompe l'elaborazione del segmento multimediale corrente.
 ms.assetid: 31253d0d-c53f-47bd-823a-fc564cb63b78
-title: 'Metodo IMFSourceBuffer:: Abort'
+title: Metodo IMFSourceBuffer::Abort
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 3a8b5115032fb918af66094bb87c7118eb503da3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9cdce9e505940c4314871b82261dbc9ac199b800cda6e93f77a4eb967f83322c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118062875"
 ---
-# <a name="imfsourcebufferabort-method"></a>Metodo IMFSourceBuffer:: Abort
+# <a name="imfsourcebufferabort-method"></a>Metodo IMFSourceBuffer::Abort
 
 Interrompe l'elaborazione del segmento multimediale corrente.
 
@@ -39,7 +39,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,9 +47,9 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                 |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

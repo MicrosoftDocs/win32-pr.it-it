@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXMatrixLookAtRH (D3dx9math.h): crea una matrice di visualizzazione con la mano destra.'
+description: Funzione D3DXMatrixLookAtRH (D3dx9math.h) - Compila una matrice di tipo right-handed e look-at.
 ms.assetid: 10198bb9-a77e-4482-be6e-cc5f76eff30b
 title: Funzione D3DXMatrixLookAtRH (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 44b3a738de31edf373deb65ea9991e1e1502f47c
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: 2242cff74f38727edf69f0092b6fc22f46d73147952831a0c772619ee89bf26e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118095843"
 ---
 # <a name="d3dxmatrixlookatrh-function-d3dx9mathh"></a>Funzione D3DXMatrixLookAtRH (D3dx9math.h)
 
-Compila una matrice di visualizzazione con la mano destra.
+Compila una matrice di tipo right-handed e look-at.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ D3DXMATRIX* D3DXMatrixLookAtRH(
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che è il risultato dell'operazione.
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risu
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce il punto dell'occhio. Questo valore viene usato nella traduzione.
+Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce il punto dell'occhio. Questo valore viene usato nella conversione.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce il punt
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce la destinazione di sguardo della fotocamera.
+Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce la destinazione di ricerca della fotocamera.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce la dest
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce l'oggetto corrente, in genere \[ 0, 1, \] 0.
+Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce il mondo corrente verso l'alto, in genere \[ 0, 1, \] 0.
 
 </dd> </dl>
 
@@ -83,7 +83,7 @@ Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che definisce l'ogget
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta una matrice di visualizzazione a destra.
+Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che è una matrice di tipo right-handed.
 
 ## <a name="remarks"></a>Commenti
 

@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Get Size restituisce le dimensioni di output e la modalità di estensione correnti.
+description: Il metodo get \_ Size restituisce le dimensioni di output correnti e la modalità stretch.
 ms.assetid: 61c0e439-26ce-45fc-986a-0ffc17056a55
-title: 'Metodo IResize:: get_Size (qedit. h)'
+title: Metodo IResize::get_Size (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: b9fe4971fd9ede0f695fe06a4102da8243e7c720
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 747ca8d7fd839321a9dbf4403c503652b932403e49bb964ae6148da2f49c5ac5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117818212"
 ---
-# <a name="iresizeget_size-method"></a>Metodo IResize:: Get \_ size
+# <a name="iresizeget_size-method"></a>Metodo IResize::get \_ Size
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `get_Size` metodo restituisce le dimensioni di output e la modalità di estensione correnti.
+Il `get_Size` metodo restituisce le dimensioni di output correnti e la modalità stretch.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,42 +47,42 @@ HRESULT get_Size(
 
 <dl> <dt>
 
-*piHeight* \[ out\]
+*piHeight* \[ Cambio\]
 </dt> <dd>
 
-Riceve l'altezza del video in pixel.
+Riceve l'altezza del video, in pixel.
 
 </dd> <dt>
 
-*piWidth* \[ out\]
+*piWidth* \[ Cambio\]
 </dt> <dd>
 
-Riceve la larghezza del video in pixel.
+Riceve la larghezza del video, in pixel.
 
 </dd> <dt>
 
-*PFLAG* \[ out\]
+*pFlag* \[ Cambio\]
 </dt> <dd>
 
-Riceve un flag che specifica la modalità di estensione. Per i valori possibili, vedere [**ridimensionare i flag**](resize-flags.md) .
+Riceve un flag che specifica la modalità stretch. Per [**i valori possibili,**](resize-flags.md) vedere Flag di ridimensionamento.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Se il tipo di output non è stato impostato, il filtro deve restituire valori predefiniti. Questi valori possono essere scelti arbitrariamente in fase di progettazione.
+Se il tipo di output non è stato impostato, il filtro deve restituire i valori predefiniti. Questi valori possono essere scelti arbitrariamente in fase di progettazione.
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -92,9 +92,9 @@ Se il tipo di output non è stato impostato, il filtro deve restituire valori pr
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | DirectX 9,0 o versione successiva<br/>                                                         |
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Versione<br/> | DirectX 9.0 o versione successiva<br/>                                                         |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Attributo ms-WMI-intMax
-description: Valore massimo per un oggetto parametro integer WMI a 32 bit.
+description: Valore massimo per un oggetto parametro Integer a 32 bit WMI.
 ms.assetid: d1ac3efc-fce3-42d2-98ec-ca0f7e6fcb4e
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "117837554"
 ---
 # <a name="ms-wmi-intmax-attribute"></a>Attributo ms-WMI-intMax
 
-Valore massimo per un oggetto parametro integer WMI a 32 bit.
+Valore massimo per un oggetto parametro Integer a 32 bit WMI.
 
 
 
@@ -32,7 +32,7 @@ Valore massimo per un oggetto parametro integer WMI a 32 bit.
 | CN                | ms-WMI-intMax                        |
 | Ldap-Display-Name | msWMI-IntMax                         |
 | Dimensione              | 4 byte                              |
-| Aggiorna privilegio  | Criteri di gruppo amministratore           |
+| Privilegio di aggiornamento  | Criteri di gruppo amministratore           |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1629              |
 | System-Id-Guid    | fb920c2c-f294-4426-8ac1-d24b42aa2bce |

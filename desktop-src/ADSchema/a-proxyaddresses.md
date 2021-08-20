@@ -1,10 +1,10 @@
 ---
-title: Attributo Proxy-Addresses
-description: Un indirizzo proxy è l'indirizzo mediante il quale un oggetto destinatario di Microsoft Exchange Server viene riconosciuto in un sistema di posta elettronica esterno. Gli indirizzi proxy sono necessari per tutti gli oggetti destinatari, ad esempio i destinatari personalizzati e le liste di distribuzione.
+title: Proxy-Addresses attributo
+description: Un indirizzo proxy è l'indirizzo con cui un Microsoft Exchange Server destinatario viene riconosciuto in un sistema di posta elettronica esterno. Gli indirizzi proxy sono necessari per tutti gli oggetti destinatario, ad esempio destinatari personalizzati e liste di distribuzione.
 ms.assetid: 7bb299d8-e67a-4062-91a3-b579fd71d5c9
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Proxy-Addresses attribute
+- Proxy-Addresses schema AD dell'attributo
 - Schema AD dell'attributo proxyAddresses
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a03542cef9bca48dbba1585e3837056b53673f34
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4333995a30eef76626fba8965eef4ec8e8083e4699b449fd9da69492080b5750
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117836845"
 ---
-# <a name="proxy-addresses-attribute"></a>Attributo Proxy-Addresses
+# <a name="proxy-addresses-attribute"></a>Proxy-Addresses attributo
 
-Un indirizzo proxy è l'indirizzo mediante il quale un oggetto destinatario di Microsoft Exchange Server viene riconosciuto in un sistema di posta elettronica esterno. Gli indirizzi proxy sono necessari per tutti gli oggetti destinatari, ad esempio i destinatari personalizzati e le liste di distribuzione.
+Un indirizzo proxy è l'indirizzo con cui un Microsoft Exchange Server destinatario viene riconosciuto in un sistema di posta elettronica esterno. Gli indirizzi proxy sono necessari per tutti gli oggetti destinatario, ad esempio destinatari personalizzati e liste di distribuzione.
 
 
 
 | Voce | Valore |
 |-------------------|------------------------------------------------------------------------------------------------------|
 | CN                | Proxy-Addresses                                                                                      |
-| LDAP-Display-Name | proxyAddresses                                                                                       |
+| Ldap-Display-Name | proxyAddresses                                                                                       |
 | Dimensione              | \-                                                                                                   |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.                                                                     |
-| Frequenza di aggiornamento  | Creato da una DLL fornita con l'oggetto Address-Type directory quando viene installato il tipo di indirizzo. |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.                                                                     |
+| Frequenza di aggiornamento  | Creato da una DLL fornita con l'Address-Type directory quando viene installato il tipo di indirizzo. |
 | Attribute-Id      | 1.2.840.113556.1.2.210                                                                               |
-| System-ID-GUID    | bf967a06-0de6-11d0-a285-00aa003049e2                                                                 |
+| System-Id-Guid    | bf967a06-0de6-11d0-a285-00aa003049e2                                                                 |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                                          |
 
 
@@ -44,7 +44,7 @@ Un indirizzo proxy è l'indirizzo mediante il quale un oggetto destinatario di M
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Un indirizzo proxy è l'indirizzo mediante il quale un oggetto destinatario di M
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x800F                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1123                            |
 | Search-Flags           | 0x00000005                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Un indirizzo proxy è l'indirizzo mediante il quale un oggetto destinatario di M
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x800F                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1123                            |
 | Search-Flags           | 0x00000005                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Un indirizzo proxy è l'indirizzo mediante il quale un oggetto destinatario di M
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x800F                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1123                            |
 | Search-Flags           | 0x00000005                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Un indirizzo proxy è l'indirizzo mediante il quale un oggetto destinatario di M
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x800F                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1123                            |
 | Search-Flags           | 0x00000005                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Un indirizzo proxy è l'indirizzo mediante il quale un oggetto destinatario di M
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x800F                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1123                            |
 | Search-Flags           | 0x00000005                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Un indirizzo proxy è l'indirizzo mediante il quale un oggetto destinatario di M
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x800F                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1123                            |
 | Search-Flags           | 0x00000005                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Un indirizzo proxy è l'indirizzo mediante il quale un oggetto destinatario di M
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x800F                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1123                            |
 | Search-Flags           | 0x00000005                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

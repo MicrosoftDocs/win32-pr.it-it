@@ -1,9 +1,9 @@
 ---
-title: Metodi GetPropertyValues IDWriteFontSet (DWrite \_ 3. h)
+title: Metodi IdWriteFontSet GetPropertyValues (Dwrite \_ 3.h)
 description: Restituisce i valori delle proprietà per il set di caratteri.
 ms.assetid: 3c3fd5b7-88dd-d434-0b62-f365b407c379
 keywords:
-- Scrittura diretta metodi GetPropertyValues
+- Metodi GetPropertyValues Direct Write
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 3d135a63be987a4999d898c8e9c7d84251c8ece3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cffc669d71bf7f78087fe3c105c182ca86b4ebf5a689bcdb6c2807dfae3c0f21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117816362"
 ---
-# <a name="idwritefontsetgetpropertyvalues-methods"></a>Metodi IDWriteFontSet:: GetPropertyValues
+# <a name="idwritefontsetgetpropertyvalues-methods"></a>Metodi IDWriteFontSet::GetPropertyValues
 
 Restituisce i valori delle proprietà per il set di caratteri.
 
@@ -29,9 +29,9 @@ Restituisce i valori delle proprietà per il set di caratteri.
 
 | Metodo                                                                                                                                   | Descrizione                                                                                                                                                                                                                                                                                                   |
 |:-----------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetPropertyValues ( \_ \_ ID proprietà carattere DWrite \_ , IDWriteStringList \* \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefontset-getpropertyvalues(dwrite_font_property_id_idwritestringlist))                       | Restituisce tutti i valori di proprietà univoci nel set, che possono essere utilizzati per scopi quali la visualizzazione di un elenco di famiglie o tag cloud. Tutti i valori vengono restituiti indipendentemente dalla lingua, inclusi tutti i nomi localizzati. <br/>                                                                                       |
-| [**GetPropertyValues ( \_ ID della proprietà del tipo di carattere DWrite \_ \_ , const WCHAR \* , IDWriteStringList \* \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefontset-getpropertyvalues(dwrite_font_property_id_wcharconst_idwritestringlist))        | Restituisce tutti i valori di proprietà univoci nel set, che possono essere utilizzati per scopi quali la visualizzazione di un elenco di famiglie o tag cloud. I valori vengono restituiti in ordine di priorità in base all'elenco di lingue, in modo che se un tipo di carattere contiene più di un nome localizzato, verrà restituito quello preferito. <br/> |
-| [**GetPropertyValues (UINT32, \_ ID proprietà del tipo di carattere DWrite \_ \_ , bool \* , IDWriteLocalizedStrings \* \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefontset-getpropertyvalues(dwrite_font_property_id_idwritestringlist)) | Restituisce i valori delle proprietà di un indice di elemento del tipo di carattere specifico.<br/>                                                                                                                                                                                                                                         |
+| [**GetPropertyValues(DWRITE \_ FONT \_ PROPERTY \_ ID, IDWriteStringList \* \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefontset-getpropertyvalues(dwrite_font_property_id_idwritestringlist))                       | Restituisce tutti i valori univoci delle proprietà nel set, che possono essere usati per scopi quali la visualizzazione di un elenco di famiglie o tag cloud. Tutti i valori vengono restituiti indipendentemente dalla lingua, inclusi tutti i nomi localizzati. <br/>                                                                                       |
+| [**GetPropertyValues(DWRITE \_ FONT \_ PROPERTY \_ ID, const \* WCHAR, IDWriteStringList \* \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefontset-getpropertyvalues(dwrite_font_property_id_wcharconst_idwritestringlist))        | Restituisce tutti i valori univoci delle proprietà nel set, che possono essere usati per scopi quali la visualizzazione di un elenco di famiglie o tag cloud. I valori vengono restituiti in ordine di priorità in base all'elenco delle lingue, in modo che se un tipo di carattere contiene più di un nome localizzato, verrà restituito quello preferito. <br/> |
+| [**GetPropertyValues(UINT32, DWRITE \_ FONT \_ PROPERTY \_ ID, \* BOOL, IDWriteLocalizedStrings \* \* )**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefontset-getpropertyvalues(dwrite_font_property_id_idwritestringlist)) | Restituisce i valori delle proprietà di un indice dell'elemento del tipo di carattere specifico.<br/>                                                                                                                                                                                                                                         |
 
 
 
@@ -41,7 +41,7 @@ Restituisce i valori delle proprietà per il set di caratteri.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>DWrite \_ 3. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dwrite \_ 3.h</dt> </dl> |
 
 
 

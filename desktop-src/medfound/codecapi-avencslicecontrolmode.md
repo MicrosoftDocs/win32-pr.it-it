@@ -1,19 +1,19 @@
 ---
-description: Specifica la modalità di controllo sezionamento. I valori validi sono 0, 1 e 2.
+description: Specifica la modalità di controllo sezione. I valori validi sono 0, 1 e 2.
 ms.assetid: 5269DB79-639C-4F67-B885-BF1274CDB635
-title: Proprietà CODECAPI_AVEncSliceControlMode (codecapit. h)
+title: CODECAPI_AVEncSliceControlMode proprietà (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0aef928a3938b2f0756d2e84b6836da194823dab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8ed749419533e4c8c4cec1e6f977bcfa8586c20d43d27d56a2dd041ab5b0267
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118064772"
 ---
-# <a name="codecapi_avencslicecontrolmode-property"></a>Proprietà AVEncSliceControlMode di codecapi \_
+# <a name="codecapi_avencslicecontrolmode-property"></a>CODECAPI \_ AVEncSliceControlMode - proprietà
 
-Specifica la modalità di controllo sezionamento. I valori validi sono 0, 1 e 2.
+Specifica la modalità di controllo sezione. I valori validi sono 0, 1 e 2.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,19 +21,19 @@ Specifica la modalità di controllo sezionamento. I valori validi sono 0, 1 e 2.
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncSliceControlMode**
+**CODECAPI \_ AVEncSliceControlMode**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Valori della modalità di controllo Slice:
+Sezionare i valori della modalità di controllo:
 
 
 
 | Valore                                                                        | Significato                                                                                                                                                                                                 |
 |------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>0</dt> </dl> | L'impostazione di questo valore su 0 indica che la proprietà [ \_ AVEncSliceControlSize di codecapis](codecapi-avencslicecontrolsize.md) specificherà le dimensioni delle sezioni in unità di macroblocchi per sezione.<br/>     |
-| <dl> <dt>1</dt> </dl> | Impostando questo valore su 1 si indica che la proprietà [ \_ AVEncSliceControlSize di codecapis](codecapi-avencslicecontrolsize.md) specificherà le dimensioni delle sezioni in unità di bit per sezione.<br/>            |
-| <dl> <dt>2</dt> </dl> | Impostando questo valore su 2 si indica che la proprietà [ \_ AVEncSliceControlSize di codecapis](codecapi-avencslicecontrolsize.md) specificherà le dimensioni delle sezioni in unità di macroblocco righe per sezione.<br/> |
+| <dl> <dt>0</dt> </dl> | L'impostazione di questo valore su 0 indica che la proprietà [CODECAPI \_ AVEncSliceControlSize](codecapi-avencslicecontrolsize.md) specifica le dimensioni della sezione in unità di blocchi macro per sezione.<br/>     |
+| <dl> <dt>1</dt> </dl> | L'impostazione di questo valore su 1 indica che la proprietà [CODECAPI \_ AVEncSliceControlSize](codecapi-avencslicecontrolsize.md) specifica le dimensioni della sezione in unità di bit per sezione.<br/>            |
+| <dl> <dt>2</dt> </dl> | L'impostazione di questo valore su 2 indica che la proprietà [CODECAPI \_ AVEncSliceControlSize](codecapi-avencslicecontrolsize.md) specificherà le dimensioni della sezione in unità di righe del blocco macro per sezione.<br/> |
 
 
 
@@ -43,15 +43,15 @@ Il codificatore restituisce i valori supportati.
 
 ## <a name="remarks"></a>Commenti
 
-**Codificatori H. 264/AVC:**
+**Codificatori H.264/AVC:**
 
-È consigliabile che il codificatore supporti [**GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue), [**SetValue**](/windows/desktop/api/strmif/nf-strmif-icodecapi-setvalue)e [**GetParameterRange**](/windows/desktop/api/strmif/nf-strmif-icodecapi-getparameterrange).
+È consigliabile che il codificatore [**supporti GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue), [**SetValue**](/windows/desktop/api/strmif/nf-strmif-icodecapi-setvalue)e [**GetParameterRange**](/windows/desktop/api/strmif/nf-strmif-icodecapi-getparameterrange).
 
-Se [**SetValue**](/windows/desktop/api/strmif/nf-strmif-icodecapi-setvalue) non viene chiamato per codecapis \_ AVEncSliceControlMode, [**GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) per codecapis \_ AVENCSLICECONTROLMODE può restituire **VFW \_ E \_ codecapi \_ senza \_ \_ valore corrente**. [**GetDefaultValue**](/windows/desktop/api/strmif/nf-strmif-icodecapi-getdefaultvalue) può restituire **VFW \_ E \_ codecapi \_ non per \_ impostazione predefinita** per codecapis \_ AVEncSliceControlMode.
+Se [**SetValue**](/windows/desktop/api/strmif/nf-strmif-icodecapi-setvalue) non viene chiamato per CODECAPI \_ AVEncSliceControlMode, [**GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) per CODECAPI \_ AVEncSliceControlMode può restituire **VFW \_ E \_ CODECAPI \_ NO CURRENT \_ \_ VALUE**. [**GetDefaultValue**](/windows/desktop/api/strmif/nf-strmif-icodecapi-getdefaultvalue) può restituire **VFW \_ E \_ CODECAPI \_ NO \_ DEFAULT** per CODECAPI \_ AVEncSliceControlMode.
 
-Il valore predefinito consigliato è 2 (dimensione in MB di riga per sezione).
+Il valore predefinito consigliato è 2 (dimensioni in MB di riga per sezione).
 
-Si tratta di un'API statica, che significa che l'applicazione ha vinto la modifica quando il codificatore è in esecuzione.
+Si tratta di un'API statica, il che significa che l'applicazione non modificherà questa impostazione mentre il codificatore è in esecuzione.
 
 ## <a name="examples"></a>Esempio
 
@@ -73,9 +73,9 @@ if (pCodecAPI->IsSupported(&CODECAPI_AVEncSliceControlMode) == S_OK) {
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App \[ desktop di Windows 8.1 app \| UWP\]<br/>                                   |
-| Server minimo supportato<br/> | App desktop di Windows Server 2012 R2 \[ \| UWP\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 app desktop \| app UWP\]<br/>                                   |
+| Server minimo supportato<br/> | Windows Server 2012 App desktop R2 \[ \| per app UWP\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ if (pCodecAPI->IsSupported(&CODECAPI_AVEncSliceControlMode) == S_OK) {
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

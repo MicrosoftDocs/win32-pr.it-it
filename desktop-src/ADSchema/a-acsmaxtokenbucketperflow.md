@@ -23,7 +23,7 @@ ms.locfileid: "117838307"
 ---
 # <a name="acs-max-token-bucket-per-flow-attribute"></a>Attributo ACS-Max-Token-Bucket-Per-Flow
 
-**L'attributo ACS-Max-Token-Bucket-Per-Flow** è solo per uso interno. Basato su RFC2210.
+**L'attributo ACS-Max-Token-Bucket-Per-Flow** è solo per uso interno. In base a RFC2210.
 
 
 
@@ -32,7 +32,7 @@ ms.locfileid: "117838307"
 | CN                | ACS-Max-Token-Bucket-Per-Flow        |
 | Ldap-Display-Name | aCSMaxTokenBucketPerFlow             |
 | Dimensione              | 8 byte                              |
-| Aggiorna privilegio  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1313              |
 | System-Id-Guid    | 81f6e0df-3b90-11d2-90cc-00c04fd91ab1 |
@@ -66,7 +66,7 @@ ms.locfileid: "117838307"
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -87,7 +87,7 @@ ms.locfileid: "117838307"
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -108,7 +108,7 @@ ms.locfileid: "117838307"
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -129,7 +129,7 @@ ms.locfileid: "117838307"
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -150,7 +150,7 @@ ms.locfileid: "117838307"
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -171,7 +171,7 @@ ms.locfileid: "117838307"
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 

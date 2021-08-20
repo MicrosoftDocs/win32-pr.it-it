@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà ColumnInfo. ColumnID'
-title: Proprietà ColumnInfo. ColumnID
+description: Altre informazioni sulla proprietà ColumnInfo.Columnid
+title: ColumnInfo.Columnid - proprietà
 TOCTitle: 'Columnid property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.ColumnInfo.Columnid
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columninfo.columnid(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0f81367c295718e8fe98922bd9828425a9d1a80a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 617c6a860b78bd1bec5a22a98d6100bb586829bb6736d8c40a817442b4bf290e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117717062"
 ---
-# <a name="columninfocolumnid-property"></a>Proprietà ColumnInfo. ColumnID
+# <a name="columninfocolumnid-property"></a>ColumnInfo.Columnid - proprietà
 
 Ottiene l'ID della colonna.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,7 +60,7 @@ public JET_COLUMNID Columnid { get; private set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -68,6 +68,6 @@ Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)
 
 [Classe ColumnInfo](./columninfo-class.md)
 
-[Membri di ColumnInfo](./columninfo-members.md)
+[Membri ColumnInfo](./columninfo-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

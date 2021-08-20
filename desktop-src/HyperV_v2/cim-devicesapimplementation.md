@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione tra un punto di accesso al servizio (SAP) e un dispositivo logico che lo implementa.
+description: Rappresenta un'associazione tra un punto di accesso del servizio (SAP) e un dispositivo logico che lo implementa.
 ms.assetid: 40c8111a-d439-4c0f-805e-9c10d7182eb4
-title: Classe CIM_DeviceSAPImplementation (gestione Hyper-V)
+title: CIM_DeviceSAPImplementation classe (gestione di Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: e32676077cccd5c7e17fa551e904079f457b8d01
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d801f0ce1ecc6b30ff9ae5481047cbacf9fa3e20f2713a4cf39b723c5fa904ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812818"
 ---
-# <a name="cim_devicesapimplementation-class-hyper-v-management"></a>Classe CIM_DeviceSAPImplementation (gestione Hyper-V)
+# <a name="cim_devicesapimplementation-class-hyper-v-management"></a>CIM_DeviceSAPImplementation classe (gestione di Hyper-V)
 
-Rappresenta un'associazione tra un punto di accesso al servizio (SAP) e un dispositivo logico che lo implementa.
+Rappresenta un'associazione tra un punto di accesso del servizio (SAP) e un dispositivo logico che lo implementa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,13 +39,13 @@ class CIM_DeviceSAPImplementation : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ DeviceSAPImplementation** presenta questi tipi di membri:
+La **classe \_ CIM DeviceSAPImplementation** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ DeviceSAPImplementation** dispone di queste proprietà.
+La **classe \_ CIM DeviceSAPImplementation** dispone di queste proprietà.
 
 <dl> <dt>
 
@@ -58,23 +58,23 @@ Tipo di dati: **CIM \_ LogicalDevice**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Il dispositivo logico.
+Dispositivo logico.
 
 </dd> <dt>
 
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ serviceAccessPoint**
+Tipo di dati: **\_ CIM ServiceAccessPoint**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
 SAP implementato dal dispositivo logico.
@@ -89,8 +89,8 @@ SAP implementato dal dispositivo logico.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ SAP implementato dal dispositivo logico.
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

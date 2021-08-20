@@ -37,7 +37,7 @@ In WASAPI ogni flusso audio appartiene esattamente a una sessione *audio,* ovver
 
 ![diagramma che mostra i flussi audio che passano attraverso il controllo del volume sulla strada verso gli altoparlanti; applicazione e sndvol point to volume control](images/audio-session.gif)
 
-In MFPlay un elemento multimediale può avere uno o più flussi audio attivi (in genere solo uno). Internamente, MFPlay usa il [renderer audio di streaming](streaming-audio-renderer.md) (SAR) per eseguire il rendering dei flussi audio. A meno che non venga configurata diversamente, il SAR partecipa alla sessione audio predefinita dell'applicazione.
+In MFPlay un elemento multimediale può avere uno o più flussi audio attivi (in genere solo uno). Internamente, MFPlay usa il [renderer audio di streaming](streaming-audio-renderer.md) (SAR) per eseguire il rendering dei flussi audio. A meno che non venga configurata diversamente, la sar viene aggiunta alla sessione audio predefinita dell'applicazione.
 
 I metodi audio MFPlay controllano solo i flussi che appartengono all'elemento multimediale corrente. Non influiscono sul volume per altri flussi che appartengono alla stessa sessione audio. In termini di WASAPI, i metodi MFPlay controllano *i livelli di* volume per canale, non il livello del volume master. L'immagine seguente illustra questo processo.
 
@@ -45,7 +45,7 @@ I metodi audio MFPlay controllano solo i flussi che appartengono all'elemento mu
 
 È importante comprendere alcune implicazioni di questa funzionalità di MFPlay. In primo luogo, un'applicazione può regolare il volume di riproduzione senza influire sugli altri flussi audio. È possibile usare questa funzionalità se MFPlay implementa il cross-fading audio, creando due istanze dell'oggetto MFPlay e regolando il volume separatamente.
 
-Se si usano i metodi MFPlay per modificare lo stato del volume o disattivare l'audio, le modifiche non vengono visualizzate in Sndvol. Ad esempio, è possibile chiamare [**SetMute**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setmute) per disattivare l'audio, ma Sndvol non mostrerà la sessione come disattivata. Viceversa, se si usa SndVol per regolare il volume della sessione, le modifiche non vengono riflesse nei valori restituiti da [**IMFPMediaPlayer::GetVolume**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getvolume) o [**IMFPMediaPlayer::GetMute**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getmute).
+Se usi i metodi MFPlay per modificare lo stato del volume o disattivare l'audio, le modifiche non vengono visualizzate in Sndvol. Ad esempio, è possibile chiamare [**SetMute**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setmute) per disattivare l'audio, ma Sndvol non mostrerà la sessione come disattivata. Viceversa, se si usa SndVol per regolare il volume della sessione, le modifiche non vengono riflesse nei valori restituiti da [**IMFPMediaPlayer::GetVolume**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getvolume) o [**IMFPMediaPlayer::GetMute**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getmute).
 
 Per ogni istanza dell'oggetto lettore MFPlay, il livello di volume effettivo è uguale a *fPlayerVolume* × *fSessionVolume*, dove *fPlayerVolume* è il valore restituito da [**GetVolume**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getvolume)e *fSessionVolume* è il volume master per la sessione.
 

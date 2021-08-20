@@ -4,12 +4,12 @@ ms.assetid: 2ea9d35a-c87e-44f4-8dc6-618251c81fe4
 title: Metodi virtuali puri CMSPCallBase
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8da8530ab3dae737bf1407f00d5d4a415a1437e3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: dc9fdd6fb66c0dd7dabfcf2b78866b49ff617cfca22a53495ad23b35680d7b47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117947170"
 ---
 # <a name="cmspcallbase-pure-virtual-methods"></a>Metodi virtuali puri CMSPCallBase
 

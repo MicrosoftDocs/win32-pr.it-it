@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione RetrieveColumnGrbit'
+description: Altre informazioni sull'enumerazione RetrieveColumnGrbit
 title: Enumerazione RetrieveColumnGrbit
 TOCTitle: RetrieveColumnGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.RetrieveColumnGrbit
@@ -38,12 +38,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a223a288b8ad2d2e976be3bb9f2f524f78b9a8fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7bd59f610b2ff1423b82539c61eff3d9d770a03d6f8291a1bae53b372fff318f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117890669"
 ---
 # <a name="retrievecolumngrbit-enumeration"></a>Enumerazione RetrieveColumnGrbit
 
@@ -51,8 +51,8 @@ Opzioni per JetRetrieveColumn.
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -88,32 +88,32 @@ public enum RetrieveColumnGrbit
 <tr class="even">
 <td></td>
 <td>RetrieveCopy</td>
-<td>Questo flag consente a retrieve Column di recuperare il valore modificato anziché il valore originale. Se il valore non è stato modificato, viene recuperato il valore originale. In questo modo, è possibile recuperare un valore che non è ancora stato inserito o aggiornato durante l'operazione di inserimento o aggiornamento di un record.</td>
+<td>Questo flag fa in modo che il recupero della colonna recuperi il valore modificato anziché il valore originale. Se il valore non è stato modificato, viene recuperato il valore originale. In questo modo, un valore non ancora inserito o aggiornato può essere recuperato durante l'operazione di inserimento o aggiornamento di un record.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RetrieveFromIndex</td>
-<td>Questa opzione viene utilizzata per recuperare i valori di colonna dall'indice, se possibile, senza accedere al record. In questo modo, è possibile evitare il caricamento di record superflui quando sono disponibili dati necessari dalle voci dell'indice.</td>
+<td>Questa opzione viene usata per recuperare i valori di colonna dall'indice, se possibile, senza accedere al record. In questo modo, è possibile evitare il caricamento non necessario dei record quando i dati necessari sono disponibili dalle voci di indice stesse.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>RetrieveFromPrimaryBookmark</td>
-<td>Questa opzione viene utilizzata per recuperare i valori di colonna dal segnalibro index e può variare dal valore di indice quando una colonna viene visualizzata sia nell'indice primario che nell'indice corrente. Questa opzione non deve essere specificata se l'indice corrente è l'indice cluster o primario. Non è possibile impostare questo bit se è stato impostato anche RetrieveFromIndex.</td>
+<td>Questa opzione viene usata per recuperare i valori di colonna dal segnalibro dell'indice e può differire dal valore dell'indice quando una colonna viene visualizzata sia nell'indice primario che nell'indice corrente. Questa opzione non deve essere specificata se l'indice corrente è l'indice cluster o primario. Questo bit non può essere impostato se è impostato anche RetrieveFromIndex.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RetrieveTag</td>
-<td>Questa opzione viene utilizzata per recuperare il numero di sequenza di un valore di colonna multivalore in JET_RETINFO. itagSequence. Il recupero del numero di sequenza può essere un'operazione costosa e deve essere eseguito solo se necessario.</td>
+<td>Questa opzione viene usata per recuperare il numero di sequenza di un valore di colonna multivalore in JET_RETINFO.itagSequence. Il recupero del numero di sequenza può essere un'operazione disserta e deve essere eseguita solo se necessario.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>RetrieveNull</td>
-<td>Questa opzione viene utilizzata per recuperare i valori NULL della colonna multivalore. Se questa opzione non è specificata, i valori NULL della colonna multivalore verranno automaticamente ignorati.</td>
+<td>Questa opzione viene usata per recuperare valori NULL di colonna multivalore. Se questa opzione non viene specificata, i valori NULL di colonna multivalore verranno ignorati automaticamente.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RetrieveIgnoreDefault</td>
-<td>Questa opzione ha effetto solo sulle colonne multivalore e causa la restituzione di un valore NULL quando il numero di sequenza richiesto è 1 e non sono presenti valori impostati per la colonna nel record.</td>
+<td>Questa opzione influisce solo sulle colonne multivalore e determina la restituire un valore NULL quando il numero di sequenza richiesto è 1 e non sono presenti valori impostati per la colonna nel record.</td>
 </tr>
 </tbody>
 </table>
@@ -123,4 +123,4 @@ public enum RetrieveColumnGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

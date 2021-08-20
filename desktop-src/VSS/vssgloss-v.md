@@ -5,34 +5,34 @@ ms.assetid: cbaa7eff-a88b-4b0e-b7b5-5c0d99397942
 title: V (Servizio Copia Shadow del volume)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6da999c820e7a18ce27fc6fac144f88d1d1dafee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da28a950caeb1007a7e36c07fee0008123dd108863429908afd65bc1f5b66b6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117937412"
 ---
 # <a name="v-volume-shadow-copy-service"></a>V (Servizio Copia Shadow del volume)
 
-[A](vssgloss-a.md) [B](vssgloss-b.md) [C](vssgloss-c.md) [d](vssgloss-d.md) [E](vssgloss-e.md) [F](vssgloss-f.md) [G](vssgloss-g.md) [H](vssgloss-h.md) [i](vssgloss-i.md) J K [L](vssgloss-l.md) M [N](vssgloss-n.md) [O](vssgloss-o.md) [P](vssgloss-p.md) Q [R](vssgloss-r.md) [S](vssgloss-s.md) [T](vssgloss-t.md) U V [W](vssgloss-w.md) X Y Z
+[A](vssgloss-a.md) [B](vssgloss-b.md) [C](vssgloss-c.md) [D](vssgloss-d.md) [E](vssgloss-e.md) [F](vssgloss-f.md) [G](vssgloss-g.md) [H](vssgloss-h.md) [I](vssgloss-i.md) J K [L](vssgloss-l.md) M [N](vssgloss-n.md) [O](vssgloss-o.md) [P](vssgloss-p.md) Q [R](vssgloss-r.md) [S](vssgloss-s.md) T [U](vssgloss-t.md) V [W](vssgloss-w.md) X Y Z
 
 <dl> <dt>
 
-<span id="base.vssgloss_volume"></span><span id="BASE.VSSGLOSS_VOLUME"></span>**volume**
+<span id="base.vssgloss_volume"></span><span id="BASE.VSSGLOSS_VOLUME"></span>**Volume**
 </dt> <dd>
 
-Unità di archiviazione logica. Un volume è la destinazione delle operazioni di creazione di copie shadow.
+Unità di archiviazione logica. Un volume è la destinazione delle operazioni di creazione della copia shadow.
 
 </dd> <dt>
 
-<span id="base.vssgloss_volume_name"></span><span id="BASE.VSSGLOSS_VOLUME_NAME"></span>**nome GUID volume**
+<span id="base.vssgloss_volume_name"></span><span id="BASE.VSSGLOSS_VOLUME_NAME"></span>**nome GUID del volume**
 </dt> <dd>
 
-Nome univoco per un volume. Il nome di un GUID del volume è una stringa nel formato seguente:
+Nome univoco per un volume. Un nome GUID del volume è una stringa nel formato seguente:
 
-\\\\?\\ Volume {GUID}\\
+\\\\?\\ Volume{GUID}\\
 
-(si noti il carattere " \\ "), dove GUID è un identificatore univoco globale per il volume. Il sistema operativo assegna un nome di volume quando viene rilevato per la prima volta un volume, ad esempio, durante la formattazione o l'installazione.
+(si noti il finale " \\ ") dove GUID è un identificatore univoco globale per il volume. Il sistema operativo assegna un nome di volume quando rileva un volume per la prima volta, ad esempio durante la formattazione o l'installazione.
 
 Si noti che un volume può avere più di un nome GUID del volume.
 

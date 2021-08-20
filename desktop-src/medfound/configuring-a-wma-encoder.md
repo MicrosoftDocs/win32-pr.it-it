@@ -13,12 +13,12 @@ ms.locfileid: "117880572"
 ---
 # <a name="setting-an-output-type-for-a-wma-encoder"></a>Impostazione di un tipo di output per un codificatore WMA
 
-Per creare un tipo di output valido per Windows Media Audio (WMA), è necessario disporre delle informazioni seguenti:
+Per creare un tipo di output valido per un Windows Media Audio (WMA), è necessario disporre delle informazioni seguenti:
 
--   Sottotipo audio che ricorsiva il formato WMA codificato. Vedere [GUID sottotipo audio](audio-subtype-guids.md).
+-   Sottotipo audio che ricorsiva il formato WMA codificato. Vedere [GUID del sottotipo audio](audio-subtype-guids.md).
 -   Proprietà di configurazione da impostare nel codificatore.
 
-    Le proprietà di configurazione sono documentate nella documentazione relativa Windows codec audio e video multimediale e alle API DSP. Per altre informazioni, vedere "Proprietà del flusso audio" in [Proprietà di codifica](configuring-the-encoder.md).
+    Le proprietà di configurazione sono documentate nella documentazione Windows codec audio e video multimediale e api DSP. Per altre informazioni, vedere "Proprietà del flusso audio" in [Proprietà di codifica](configuring-the-encoder.md).
 
 ### <a name="windows-vista-or-later"></a>Windows Vista o versioni successive
 
@@ -32,7 +32,7 @@ Per ottenere un tipo di output valido per il codificatore, seguire questa proced
 
 ### <a name="windows-7"></a>Windows 7
 
-Per ottenere un tipo di output valido per il codificatore Windows 7, Media Foundation la [**funzione MFTranscodeGetAudioOutputAvailableTypes.**](/windows/desktop/api/mfidl/nf-mfidl-mftranscodegetaudiooutputavailabletypes) Un'applicazione deve passare il sottotipo audio che ricorsiva l'WMA codificato e le proprietà di codifica. Le proprietà sono obbligatorie perché il codificatore modifica i tipi di output supportati a seconda del set di modalità.
+Per ottenere un tipo di output valido per il codificatore in Windows 7, Media Foundation fornisce la funzione [**MFTranscodeGetAudioOutputAvailableTypes.**](/windows/desktop/api/mfidl/nf-mfidl-mftranscodegetaudiooutputavailabletypes) Un'applicazione deve passare il sottotipo audio che ricorsiva l'WMA codificato e le proprietà di codifica. Le proprietà sono obbligatorie perché il codificatore modifica i tipi di output supportati a seconda del set di modalità.
 
 > [!Note]  
 > [**MFTranscodeGetAudioOutputAvailableTypes**](/windows/desktop/api/mfidl/nf-mfidl-mftranscodegetaudiooutputavailabletypes)è supportato solo per [la codifica a velocità in bit costante.](constant-bit-rate-encoding.md)

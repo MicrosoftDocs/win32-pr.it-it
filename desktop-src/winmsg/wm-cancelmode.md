@@ -11,11 +11,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117849300"
 ---
-# <a name="wm_cancelmode-message"></a>Messaggio WM \_ CANCELMODE
+# <a name="wm_cancelmode-message"></a>Messaggio \_ CANCELMODE WM
 
-Inviato per annullare determinate modalità, ad esempio mouse capture. Ad esempio, il sistema invia questo messaggio alla finestra attiva quando viene visualizzata una finestra di dialogo o una finestra di messaggio. Alcune funzioni inviano anche questo messaggio in modo esplicito alla finestra specificata, indipendentemente dal fatto che si tratta della finestra attiva. Ad esempio, la [**funzione EnableWindow**](/windows/win32/api/winuser/nf-winuser-enablewindow) invia questo messaggio quando disabilita la finestra specificata.
+Inviato per annullare determinate modalità, ad esempio mouse capture. Ad esempio, il sistema invia questo messaggio alla finestra attiva quando viene visualizzata una finestra di dialogo o una finestra di messaggio. Alcune funzioni inviano anche questo messaggio in modo esplicito alla finestra specificata, indipendentemente dal fatto che si tratta della finestra attiva. Ad esempio, la [**funzione EnableWindow**](/windows/win32/api/winuser/nf-winuser-enablewindow) invia questo messaggio quando si disabilita la finestra specificata.
 
-Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
+Una finestra riceve questo messaggio tramite la [**relativa funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -50,7 +50,7 @@ Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-Quando viene inviato il messaggio **WM \_ CANCELMODE,** la funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) annulla l'elaborazione interna dell'input della barra di scorrimento standard, annulla l'elaborazione del menu interno e rilascia il mouse capture.
+Quando viene inviato il messaggio **\_ WM CANCELMODE,** la funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) annulla l'elaborazione interna dell'input della barra di scorrimento standard, annulla l'elaborazione interna del menu e rilascia l'acquisizione del mouse.
 
 ## <a name="requirements"></a>Requisiti
 

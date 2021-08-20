@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentMustCommitDistributedTransactionToLevel0Exception'
+description: Altre informazioni sul costruttore EsentMustCommitDistributedTransactionToLevel0Exception
 title: Costruttore EsentMustCommitDistributedTransactionToLevel0Exception
 TOCTitle: 'EsentMustCommitDistributedTransactionToLevel0Exception constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentMustCommitDistributedTransactionToLevel0Exception.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 232e2b2ea493702e3a901a5cf0c4ec55e681b430
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30a7dd75fb0b24c9372be8063f3deda82818472d79eaaf35d04e2670dc2d2eb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117708434"
 ---
 # <a name="esentmustcommitdistributedtransactiontolevel0exception-constructor"></a>Costruttore EsentMustCommitDistributedTransactionToLevel0Exception
 
 Inizializza una nuova istanza della classe EsentMustCommitDistributedTransactionToLevel0Exception.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentMustCommitDistributedTransactionToLevel0Exception()
 
 [Membri di EsentMustCommitDistributedTransactionToLevel0Exception](./esentmustcommitdistributedtransactiontolevel0exception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

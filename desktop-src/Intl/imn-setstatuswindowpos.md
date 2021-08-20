@@ -1,19 +1,19 @@
 ---
-description: Notifica a un'applicazione quando viene aggiornata la posizione della finestra di stato nel contesto di input. L'applicazione riceve questo comando tramite il \_ messaggio di \_ notifica di WM IME con le impostazioni dei parametri come indicato di seguito.
+description: Notifica a un'applicazione quando viene aggiornata la posizione della finestra di stato nel contesto di input. L'applicazione riceve questo comando tramite il messaggio WM \_ IME \_ NOTIFY con le impostazioni dei parametri come indicato di seguito.
 ms.assetid: 15e65aff-67d9-4d1a-a6a7-b921cecb3aec
-title: Codice di notifica IMN_SETSTATUSWINDOWPOS (IMM. h)
+title: IMN_SETSTATUSWINDOWPOS codice di notifica (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 91d76a962e9cc509a6f9ffaac900b761b868f960
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d0c414de9ba8e75a85d6649d747173c73af274c3527cf9f0dc5b7540a3bf8669
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117810128"
 ---
-# <a name="imn_setstatuswindowpos-notification-code"></a>\_Codice di notifica SETSTATUSWINDOWPOS di IMN
+# <a name="imn_setstatuswindowpos-notification-code"></a>Codice di notifica \_ IMN SETSTATUSWINDOWPOS
 
-Notifica a un'applicazione quando viene aggiornata la posizione della finestra di stato nel contesto di input. L'applicazione riceve questo comando tramite il messaggio di [**\_ \_ notifica di WM IME**](wm-ime-notify.md) con le impostazioni dei parametri come indicato di seguito.
+Notifica a un'applicazione quando viene aggiornata la posizione della finestra di stato nel contesto di input. L'applicazione riceve questo comando tramite il [**messaggio WM \_ IME \_ NOTIFY**](wm-ime-notify.md) con le impostazioni dei parametri come indicato di seguito.
 
 
 ```C++
@@ -26,14 +26,14 @@ IMN_SETSTATUSWINDOWPOS
 
 <dl> <dt>
 
-<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*wParam*
+<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*Wparam*
 </dt> <dd>
 
 Impostare su IMN \_ SETSTATUSWINDOWPOS.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
 Non usato.
@@ -42,11 +42,11 @@ Non usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo comando non restituisce alcun valore.
+Questo comando non ha alcun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-L'applicazione può ottenere informazioni sulla posizione della finestra di stato usando il comando [**IMC \_ GETSTATUSWINDOWPOS**](imc-getstatuswindowpos.md) .
+L'applicazione può ottenere informazioni sulla posizione della finestra di stato usando il [**comando IMC \_ GETSTATUSWINDOWPOS.**](imc-getstatuswindowpos.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,7 +56,7 @@ L'applicazione può ottenere informazioni sulla posizione della finestra di stat
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>Imm. h (Includi Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Imm.h (include Windows.h)</dt> </dl> |
 
 
 
@@ -64,16 +64,16 @@ L'applicazione può ottenere informazioni sulla posizione della finestra di stat
 
 <dl> <dt>
 
-[Gestione metodo di input](input-method-manager.md)
+[Gestione metodi di input](input-method-manager.md)
 </dt> <dt>
 
-[Comandi di input Method Manager](input-method-manager-commands.md)
+[Comandi di Gestione metodi di input](input-method-manager-commands.md)
 </dt> <dt>
 
-[**\_GETSTATUSWINDOWPOS IMC**](imc-getstatuswindowpos.md)
+[**IMC \_ GETSTATUSWINDOWPOS**](imc-getstatuswindowpos.md)
 </dt> <dt>
 
-[**\_notifica IME \_ WM**](wm-ime-notify.md)
+[**NOTIFICA \_ IME \_ WM**](wm-ime-notify.md)
 </dt> </dl>
 
  

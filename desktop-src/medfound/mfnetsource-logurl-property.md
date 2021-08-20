@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117874635"
 ---
-# <a name="mfnetsource_logurl-property"></a>MFNETSOURCE \_ LOGURL - proprietà
+# <a name="mfnetsource_logurl-property"></a>Proprietà MFNETSOURCE \_ LOGURL
 
 Elenco di URL a cui l'origine di rete invierà le informazioni di registrazione.
 
@@ -35,7 +35,7 @@ VT \_ VECTOR \| VT \_ LPWSTR
 
 La costante **MFNETSOURCE \_ LOGURL** definisce il GUID per questa chiave di proprietà. L'identificatore di proprietà (PID) è zero.
 
-Le applicazioni possono usare questa proprietà per configurare l'origine di rete. Per impostare la proprietà, passare un **puntatore IPropertyStore** al resolver di origine. Per altre informazioni, vedere [Configurazione di un'origine multimediale.](configuring-a-media-source.md)
+Le applicazioni possono usare questa proprietà per configurare l'origine di rete. Per impostare la proprietà, passare un **puntatore IPropertyStore** al sistema di risoluzione di origine. Per altre informazioni, vedere [Configurazione di un'origine multimediale](configuring-a-media-source.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,8 +43,8 @@ Le applicazioni possono usare questa proprietà per configurare l'origine di ret
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
 | Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 

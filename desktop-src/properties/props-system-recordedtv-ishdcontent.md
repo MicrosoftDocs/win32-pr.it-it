@@ -4,12 +4,12 @@ ms.assetid: 1afca0cb-95c1-40d6-9268-e70018973ff6
 title: System.RecordedTV.IsHDContent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e86d5651acc6a222871097fd4dda9773a46a0597
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 695db9eeda2b6d94f0ceb063528e5e294947201a7d803dd909d8cd9dee3960ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117682112"
 ---
 # <a name="systemrecordedtvishdcontent"></a>System.RecordedTV.IsHDContent
 
@@ -50,7 +50,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -80,7 +80,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

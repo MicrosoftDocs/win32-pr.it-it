@@ -32,14 +32,14 @@ Imposta le posizioni iniziale e finale per l'intervallo di selezione disponibile
 *wParam* 
 </dt> <dd>
 
-Flag di ridisegno. Se questo parametro è **TRUE,** il messaggio ridisegna il trackbar dopo l'impostazione dell'intervallo di selezione. Se questo parametro è **FALSE,** il messaggio imposta l'intervallo di selezione, ma non ridisegna il trackbar.
+Flag di ridisegno. Se questo parametro è **TRUE,** il messaggio ridisegna il trackbar dopo l'impostazione dell'intervallo di selezione. Se questo parametro è **FALSE,** il messaggio imposta l'intervallo di selezione ma non ridisegna il trackbar.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-LOWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) la posizione logica iniziale per l'intervallo di selezione e [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica la posizione logica finale.
+LOWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) la posizione logica iniziale per l'intervallo di selezione e [**la parola chiave HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica la posizione logica finale.
 
 </dd> </dl>
 
@@ -49,7 +49,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio viene ignorato se il trackbar non ha lo stile [**\_ TBS ENABLESELRANGE.**](trackbar-control-styles.md)
+Questo messaggio viene ignorato se il trackbar non ha lo [**stile \_ TBS ENABLESELRANGE.**](trackbar-control-styles.md)
 
 **TBM \_ SETSEL** consente di limitare il puntatore solo a una parte dell'intervallo disponibile per l'indicatore di stato.
 
@@ -59,8 +59,8 @@ Questo messaggio viene ignorato se il trackbar non ha lo stile [**\_ TBS ENABLES
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

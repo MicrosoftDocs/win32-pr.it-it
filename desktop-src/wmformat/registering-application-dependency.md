@@ -58,7 +58,7 @@ La versione Windows Media Player richiesta dall'applicazione.
 
 *VERSIONE DI \_ WMF*
 
-Versione dell'SDK Windows Media Format richiesto dall'applicazione.
+Versione dell'WINDOWS Media Format SDK richiesto dall'applicazione.
 
 I tre valori del Registro di sistema di esempio seguenti illustrano come configurare i valori per l'applicazione:
 

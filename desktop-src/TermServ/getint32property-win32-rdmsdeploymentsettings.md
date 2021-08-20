@@ -1,12 +1,12 @@
 ---
-title: Metodo GetInt32Property della classe Win32_RDMSDeploymentSettings (Microsoft. Diagnostics. appanalysis. h)
-description: Recupera una proprietà integer per le impostazioni di distribuzione di un insieme di desktop virtuali.
+title: Metodo GetInt32Property della classe Win32_RDMSDeploymentSettings (Microsoft.diagnostics.appanalysis.h)
+description: Recupera una proprietà integer per le impostazioni di distribuzione di una raccolta di desktop virtuali.
 ms.assetid: 6b8174bb-ffb7-4699-a3fb-d32ab0b202fc
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo GetInt32Property
-- Metodo GetInt32Property Servizi Desktop remoto, classe Win32_RDMSDeploymentSettings
-- Classe Win32_RDMSDeploymentSettings Servizi Desktop remoto, metodo GetInt32Property
+- Metodo GetInt32Property Servizi Desktop remoto
+- Metodo GetInt32Property Servizi Desktop remoto , Win32_RDMSDeploymentSettings classe
+- Win32_RDMSDeploymentSettings classe Servizi Desktop remoto metodo , GetInt32Property
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f96374c610084c8ef7973d4ac4db603d9c28cff
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1ac79fdacf6b8f64d354158f964be1019692933a10409a8bf085109d9f5a9a31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118130760"
 ---
-# <a name="getint32property-method-of-the-win32_rdmsdeploymentsettings-class"></a>Metodo GetInt32Property della \_ classe RDMSDeploymentSettings Win32
+# <a name="getint32property-method-of-the-win32_rdmsdeploymentsettings-class"></a>Metodo GetInt32Property della classe \_ RDMSDeploymentSettings Win32
 
-Recupera una proprietà integer per le impostazioni di distribuzione di un insieme di desktop virtuali.
+Recupera una proprietà integer per le impostazioni di distribuzione di una raccolta di desktop virtuali.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,14 +44,14 @@ uint32 GetInt32Property(
 
 <dl> <dt>
 
-*Chiave* \[ di in\]
+*Chiave* \[ Pollici\]
 </dt> <dd>
 
-Alias dell'insieme di desktop virtuali.
+Alias della raccolta di desktop virtuali.
 
 </dd> <dt>
 
-*Valore* \[ di out\]
+*Valore* \[ Cambio\]
 </dt> <dd>
 
 Intero che riceve il valore recuperato.
@@ -66,9 +66,9 @@ Intero che riceve il valore recuperato.
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                                      |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                                 |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                                   |
-| Intestazione<br/>                   | <dl> <dt>Microsoft. Diagnostics. appanalysis. h</dt> </dl> |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl>                    |
+| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                                   |
+| Intestazione<br/>                   | <dl> <dt>Microsoft.diagnostics.appanalysis.h</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl>                    |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>                            |
 
 
@@ -77,7 +77,7 @@ Intero che riceve il valore recuperato.
 
 <dl> <dt>
 
-[**\_RDMSDeploymentSettings Win32**](win32-rdmsdeploymentsettings.md)
+[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

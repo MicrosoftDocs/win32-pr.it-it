@@ -1,7 +1,7 @@
 ---
 description: Apre un collegamento simbolico esistente.
 ms.assetid: 37684707-4f65-4904-8bfc-d0679ebbd924
-title: NtOpenSymbolicLinkObject (funzione)
+title: Funzione NtOpenSymbolicLinkObject
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ntdll.dll
-ms.openlocfilehash: 3cd5091fe19631079ff3c51d9d6ba7777970a854
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1713d12763eaaa5c43b4ef27f3d8843eefd3ba86f0a8ddfea9dfaecd9d01b10b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118003762"
 ---
-# <a name="ntopensymboliclinkobject-function"></a>NtOpenSymbolicLinkObject (funzione)
+# <a name="ntopensymboliclinkobject-function"></a>Funzione NtOpenSymbolicLinkObject
 
-\[Questa funzione può essere modificata o non disponibile in futuro.\]
+\[Questa funzione potrebbe essere modificata o non disponibile in futuro.\]
 
 Apre un collegamento simbolico esistente.
 
@@ -43,34 +43,34 @@ NTSTATUS WINAPI NtOpenSymbolicLinkObject(
 
 <dl> <dt>
 
-*LinkHandle* \[ out\]
+*LinkHandle* \[ Cambio\]
 </dt> <dd>
 
 Handle per l'oggetto collegamento simbolico appena aperto.
 
 </dd> <dt>
 
-*DesiredAccess* \[ in\]
+*DesiredAccess* \[ Pollici\]
 </dt> <dd>
 
-[**\_ Maschera di accesso**](../secauthz/access-mask.md) che specifica l'accesso richiesto all'oggetto directory. È tipico utilizzare \_ la lettura generica in modo che sia possibile passare l'handle alla funzione [**NtQueryDirectoryObject**](ntquerydirectoryobject.md) .
+MASCHERA [**DI \_ ACCESSO che**](../secauthz/access-mask.md) specifica l'accesso richiesto all'oggetto directory. In genere si usa GENERIC \_ READ in modo che l'handle possa essere passato alla funzione [**NtQueryDirectoryObject.**](ntquerydirectoryobject.md)
 
 </dd> <dt>
 
-*ObjectAttributes* \[ in\]
+*ObjectAttributes* \[ Pollici\]
 </dt> <dd>
 
-Attributi per l'oggetto directory. Per inizializzare la struttura degli **\_ attributi dell'oggetto** , usare la macro **InitializeObjectAttributes** . Se il chiamante non è in esecuzione in un contesto del thread di sistema, è necessario specificare il flag di **\_ \_ handle del kernel obj** durante l'inizializzazione della struttura. Per ulteriori informazioni, vedere la documentazione relativa a questi elementi nella documentazione relativa a WDK.
+Attributi per l'oggetto directory. Per inizializzare la **struttura OBJECT \_ ATTRIBUTES,** usare la macro **InitializeObjectAttributes.** Se il chiamante non è in esecuzione in un contesto del thread di sistema, deve specificare il flag **OBJ \_ KERNEL \_ HANDLE** durante l'inizializzazione della struttura. Per altre informazioni, vedere la documentazione relativa a questi elementi nella documentazione per WDK.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce lo stato di **\_ esito positivo** o uno stato di errore.
+La funzione restituisce **STATUS \_ SUCCESS o** uno stato di errore.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

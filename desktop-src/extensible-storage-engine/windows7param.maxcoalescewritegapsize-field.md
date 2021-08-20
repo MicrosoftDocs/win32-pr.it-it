@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: campo Windows7Param. MaxCoalesceWriteGapSize'
-title: Campo Windows7Param. MaxCoalesceWriteGapSize (Microsoft. ISAM. esent. Interop. Windows7)
+description: 'Altre informazioni su: Campo Windows7Param.MaxCoalesceWriteGapSize'
+title: Campo Windows7Param.MaxCoalesceWriteGapSize (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: MaxCoalesceWriteGapSize field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows7.Windows7Param.MaxCoalesceWriteGapSize
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.windows7param.maxcoalescewritegapsize(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a43f7b5cefa29b9e2b36c7c587ea1bf8cc2be181
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ddbb241d5c2e2fc81a6fc1fe8e8f62af1b06561cca865906e69e63b26a424afd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118069641"
 ---
-# <a name="windows7parammaxcoalescewritegapsize-field"></a>Campo Windows7Param. MaxCoalesceWriteGapSize
+# <a name="windows7parammaxcoalescewritegapsize-field"></a>Campo Windows7Param.MaxCoalesceWriteGapSize
 
-Numero massimo di byte che possono essere gapped per un'operazione di i/o di scrittura coalesta.
+Numero massimo di byte che è possibile trovare per un'operazione di I/O di scrittura coalesced.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,4 +61,4 @@ public const JET_param MaxCoalesceWriteGapSize
 
 [Membri di Windows7Param](./windows7param-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)

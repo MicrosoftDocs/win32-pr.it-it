@@ -1,15 +1,15 @@
 ---
-description: Informazioni sull'elemento Value, che associa un valore letterale a un tipo. Il tipo di dati Value deve essere string, integer, decimal o QName.
+description: Informazioni sull'elemento Value, che associa un valore letterale a un tipo. Il tipo di dati value deve essere string, integer, decimal o QName.
 ms.assetid: 933528f6-8f34-4509-887c-c7c223c79367
 title: Valore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 272bee4d7a5f88899f83e439d8e1630b4026713d
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 739ce465408d1cd1447de5aeac2e314e879f48f69f13735855e628c8901c2c52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117685862"
 ---
 # <a name="value"></a>Valore
 
@@ -43,7 +43,7 @@ Nella tabella seguente sono elencati gli elementi che possono essere elementi pa
 
 
 
-| Categoria                   | Dettagli                                                                                                                                                   |
+| Category                   | Dettagli                                                                                                                                                   |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Elementi padre<br/> | ParameterInit <br/> Proprietà<br/> ScoredProperty<br/>                                                                                   |
 | Elementi figlio<br/>  | È consentito solo contenuto di tipo carattere o intero.<br/>                                                                                                |
@@ -55,7 +55,7 @@ Nella tabella seguente sono elencati gli elementi che possono essere elementi pa
 
 ## <a name="configuration-dependencies"></a>Dipendenze di configurazione
 
-Gli elementi value visualizzati all'interno dell'elemento ScoredProperty potrebbero non avere dipendenze di configurazione. Gli elementi valore visualizzati all'interno degli elementi Property possono avere dipendenze arbitrarie nella configurazione.
+Gli elementi value visualizzati all'interno dell'elemento ScoredProperty potrebbero non avere dipendenze di configurazione. Gli elementi value visualizzati all'interno degli elementi Property possono avere dipendenze arbitrarie nella configurazione.
 
 ## <a name="element-usage"></a>Utilizzo degli elementi
 

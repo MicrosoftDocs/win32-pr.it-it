@@ -1,19 +1,19 @@
 ---
-description: Forma intuitiva di System. Kind. Questo valore non può essere analizzato a livello di codice.
+description: Formato descrittivo di System.Kind. Questo valore non deve essere analizzato a livello di codice.
 ms.assetid: bf5c5dfa-a77e-4c69-a5a5-0655dfba309c
-title: System. KindText
+title: System.KindText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64cb4c0a28a7a8009c076bb6c3948a4a21d6fbe2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b52d5a689de47844881c367731cd0e65950f3ca463c1e258853366f44543c5ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117683692"
 ---
-# <a name="systemkindtext"></a>System. KindText
+# <a name="systemkindtext"></a>System.KindText
 
-Forma intuitiva di [System. Kind](./props-system-kind.md). Questo valore non può essere analizzato a livello di codice.
+Il formato descrittivo di [System.Kind](./props-system-kind.md). Questo valore non deve essere analizzato a livello di codice.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

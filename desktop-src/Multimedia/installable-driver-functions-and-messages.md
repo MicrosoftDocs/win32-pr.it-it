@@ -1,41 +1,41 @@
 ---
-title: Messaggi e funzioni driver installabili
-description: Messaggi e funzioni driver installabili
+title: Funzioni e messaggi installabili dei driver
+description: Funzioni e messaggi installabili dei driver
 ms.assetid: f487705a-ae8e-4ea8-bfd5-9b0f6087ddbb
 keywords:
 - driver installabili, funzioni
 - driver installabili, messaggi
 - driver installabili, funzione OpenDriver
-- OpenDriver (funzione)
-- driver installabili, messaggi personalizzati
-- messaggi driver
+- Funzione OpenDriver
+- driver installabili,messaggi personalizzati
+- messaggi del driver
 - messaggi di driver personalizzati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c66e6ebaac73bf8eb779119750cb390481152c3f
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: b3afe479d242e0c1a8821812566267343b54975ae1701dd987ac65166061f2d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103963043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117987084"
 ---
-# <a name="installable-driver-functions-and-messages"></a>Messaggi e funzioni driver installabili
+# <a name="installable-driver-functions-and-messages"></a>Funzioni e messaggi installabili dei driver
 
-È possibile aprire un driver installabile da un'applicazione tramite la funzione [**OpenDriver**](/windows/win32/api/mmiscapi/nf-mmiscapi-opendriver) . Questa funzione crea un'istanza del driver, caricando il driver in memoria se non esiste nessun'altra istanza e restituisce l'handle della nuova istanza. Quando si apre un driver installabile, è necessario specificare il percorso completo del driver o i nomi della chiave del registro di sistema e il valore associato al driver.
+È possibile aprire un driver installabile da un'applicazione usando la [**funzione OpenDriver.**](/windows/win32/api/mmiscapi/nf-mmiscapi-opendriver) Questa funzione crea un'istanza del driver, carica il driver in memoria se non esiste un'altra istanza e restituisce l'handle della nuova istanza. Quando si apre un driver installabile, è necessario specificare il percorso completo del driver o i nomi della chiave del Registro di sistema e del valore associati al driver.
 
-Quando un driver è aperto, è possibile indirizzarlo per eseguire attività usando la funzione [**SendDriverMessage**](/windows/win32/api/mmiscapi/nf-mmiscapi-senddrivermessage) per inviare messaggi di driver al driver. Ad esempio, è possibile indicare al driver di visualizzare la relativa finestra di dialogo di configurazione inviando il messaggio di configurazione [**drv \_**](drv-configure.md) . Prima di inviare questo messaggio, è necessario determinare se il driver dispone di una finestra di dialogo di configurazione inviando il messaggio [**drv \_ QUERYCONFIGURE**](drv-queryconfigure.md) e verificando la presenza di un valore restituito diverso da zero. Molti driver forniscono un set di messaggi personalizzati che è possibile inviare per indirizzare le operazioni del driver.
+Una volta aperto un driver, è possibile indirizzarlo all'esecuzione di attività usando la [**funzione SendDriverMessage**](/windows/win32/api/mmiscapi/nf-mmiscapi-senddrivermessage) per inviare i messaggi del driver al driver. Ad esempio, è possibile indirizzare il driver per visualizzare la finestra di dialogo di configurazione inviando il [**DRV \_ CONFIGURE**](drv-configure.md) messaggio. Prima di inviare questo messaggio, è necessario determinare se il driver dispone di una finestra di dialogo di configurazione inviando il messaggio [**\_ DRV QUERYCONFIGURE**](drv-queryconfigure.md) e verificando la presenza di un valore restituito diverso da zero. Molti driver forniscono un set di messaggi personalizzati che è possibile inviare per indirizzare le operazioni del driver.
 
-Se è necessario un accesso speciale a un driver installabile, ad esempio l'accesso alle risorse, è possibile recuperare l'handle del modulo del driver usando la funzione [**GetDriverModuleHandle**](/windows/win32/api/mmiscapi/nf-mmiscapi-getdrivermodulehandle) .
+Se è necessario un accesso speciale a un driver installabile, ad esempio l'accesso alle relative risorse, è possibile recuperare l'handle di modulo del driver usando la [**funzione GetDriverModuleHandle.**](/windows/win32/api/mmiscapi/nf-mmiscapi-getdrivermodulehandle)
 
-Quando il driver installabile non è più necessario, è possibile chiuderlo utilizzando la funzione [**CloseDriver**](/windows/win32/api/mmiscapi/nf-mmiscapi-closedriver) .
+Quando il driver installabile non è più necessario, è possibile chiuderlo usando la [**funzione CloseDriver.**](/windows/win32/api/mmiscapi/nf-mmiscapi-closedriver)
 
-Per aprire e gestire qualsiasi driver installabile, è possibile utilizzare le funzioni e i messaggi di driver installabili. Tuttavia, la linea di azione consigliata per l'apertura e la gestione dei dispositivi multimediali consiste nel usare prima i servizi standard, ad esempio [**waveOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutopen), [**waveOutMessage**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutmessage)e [**waveOutClose**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutclose) per i dispositivi di output della forma d'onda, se esistenti. Se per un driver multimediale non esistono servizi standard, aprire e gestire il driver utilizzando le funzioni e i messaggi di driver installabili.
+È possibile usare le funzioni e i messaggi del driver installabili per aprire e gestire qualsiasi driver installabile. Tuttavia, la linea di azione consigliata per l'apertura e la gestione dei dispositivi multimediali è usare prima di tutto i servizi standard ( ad esempio [**waveOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutopen), [**waveOutMessage**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutmessage)e [**waveOutClose**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutclose) per i dispositivi di output waveform), se presenti. Se non esistono servizi standard per un driver multimediale, aprire e gestire il driver usando le funzioni e i messaggi installabili del driver.
 
 > [!Note]  
-> Le funzioni [**SendDriverMessage**](/windows/win32/api/mmiscapi/nf-mmiscapi-senddrivermessage) e [**GetDriverModuleHandle**](/windows/win32/api/mmiscapi/nf-mmiscapi-getdrivermodulehandle) sono le funzioni preferite da usare per inviare messaggi a un driver e ottenere un handle per un'istanza del modulo. È stata tuttavia inclusa la funzione [**DrvGetModuleHandle**](/windows/win32/api/mmiscapi/nf-mmiscapi-drvgetmodulehandle) precedente, che consente di mantenere la compatibilità con le versioni precedenti del sistema operativo Windows.
+> Le [**funzioni SendDriverMessage**](/windows/win32/api/mmiscapi/nf-mmiscapi-senddrivermessage) e [**GetDriverModuleHandle**](/windows/win32/api/mmiscapi/nf-mmiscapi-getdrivermodulehandle) sono le funzioni preferite da usare per inviare messaggi a un driver e per ottenere un handle per un'istanza del modulo. La funzione [**DrvGetModuleHandle**](/windows/win32/api/mmiscapi/nf-mmiscapi-drvgetmodulehandle) precedente, tuttavia, è stata inclusa per mantenere la compatibilità con le versioni precedenti del Windows operativo.
 
- 
+ 
 
- 
+ 
 
- 
+ 

@@ -18,7 +18,7 @@ ms.locfileid: "117821946"
 
  
 
-La `CurrentSubpictureStream` proprietà imposta o recupera il flusso dell'immagine secondaria corrente.
+La `CurrentSubpictureStream` proprietà imposta o recupera il flusso di immagini secondarie corrente.
 
 ``` syntax
 [ iSPStream = ] MSWebDVD.CurrentSubpictureStream
@@ -37,7 +37,7 @@ I valori possibili di questa proprietà sono:
 | Valore   | Descrizione              |
 |---------|--------------------------|
 | Da 0 a 31 | Flusso di immagini secondarie    |
-| 63      | Flusso a bassa velocità in bit disattivato |
+| 63      | Flusso a bitrate basso disattivato |
 
 
 
@@ -51,7 +51,7 @@ Se si imposta questa proprietà, [**la proprietà SubpictureOn**](subpictureon-p
 
 <dl> <dt>
 
-[**SottopictureOn**](subpictureon-property.md)
+[**Immagine secondariaOn**](subpictureon-property.md)
 </dt> <dt>
 
 [**SubpictureStreamsAvailable**](subpicturestreamsavailable-property.md)
