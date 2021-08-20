@@ -1,17 +1,17 @@
 ---
 description: Questa sezione elenca i parametri usati per la qualità del servizio (QoS).
 ms.assetid: befbcf01-ecd2-4316-8e5e-889e918272cc
-title: Parametro di qualità del servizio
+title: Parametro quality of service
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 700b44f054f8a23631ac51fe96b06eff21645101
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 214b185752ba058e8ebb42547e0c90e35f6a2fedf68640bd2cca00fd39d7b27e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117927468"
 ---
-# <a name="quality-of-service-parameter"></a>Parametro di qualità del servizio
+# <a name="quality-of-service-parameter"></a>Parametro quality of service
 
 Questa sezione elenca i parametri usati per la qualità del servizio (QoS).
 

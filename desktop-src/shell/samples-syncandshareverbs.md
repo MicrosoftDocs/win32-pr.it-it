@@ -1,5 +1,5 @@
 ---
-description: Viene illustrato come registrare un verbo che estende il &\# 0034; Sync&\# 0034; e &\# 0034; Condividere&\# 0034; verbi nella barra dei comandi di Esplora risorse.
+description: Illustra come registrare un verbo che estende l'&\# 0034; Sync&\# 0034; e &\# 0034; Condividere&\# 0034; verbi nella barra dei comandi Windows Explorer.
 title: Sincronizzare e condividere i verbi
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 734d59ce7b527ad068c03be9083ca67dfca20667
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b0a83f69aa866f5eb91eeff56d4313b1ff343f84c69484eb2a9d52614ea19db8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117677375"
 ---
 # <a name="sync-and-share-verbs"></a>Sincronizzare e condividere i verbi
 
-Viene illustrato come registrare un verbo che estende i verbi "Sync" e "Share" nella barra dei comandi di Esplora risorse.
+Illustra come registrare un verbo che estende i verbi "Sync" e "Share" nella barra dei comandi Windows Explorer.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -42,9 +42,9 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Location      | URL percorso                                                                                             |
+| Località      | URL del percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Esempio SyncAndShareVerbs](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/SyncAndShareVerbs) |
+| GitHub  | [Esempio di SyncAndShareVerbs](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/SyncAndShareVerbs) |
 
 ## <a name="running-the-sample"></a>Esecuzione dell'esempio
 
@@ -52,26 +52,26 @@ Per eseguire l'esempio (sincronizzazione):
 
 1.  Passare alla directory che contiene il `sync.reg` file
 2.  Digitare `sync.reg ` nella riga di comando oppure fare doppio clic sull'icona per `sync.reg` registrarla.
-3.  Aprire Esplora risorse e selezionare un file.
-4.  Fare clic sull'opzione **Sincronizza** sulla barra dei comandi e selezionare una sottoopzione, ad esempio **Paint**.
+3.  Aprire il Windows e selezionare un file.
+4.  Fare clic **sull'opzione** Sincronizza sulla barra dei comandi e selezionare un'opzione **secondaria, ad esempio Paint**.
 
-Per eseguire l'esempio (share):
+Per eseguire l'esempio (condivisione):
 
 1.  Passare alla directory che contiene il `share.reg` file.
 2.  Digitare `share.reg` nella riga di comando oppure fare doppio clic sull'icona per `share.reg` registrarla.
-3.  Aprire Esplora risorse e selezionare un file. Fare clic sull'opzione **Condividi** sulla barra dei comandi.
-4.  Fare clic sull'opzione **Condividi con** nella barra dei comandi e selezionare una sottoopzione, ad esempio **Paint**.
+3.  Aprire Windows Explorer e selezionare un file. Fare clic **sull'opzione** Condividi sulla barra dei comandi.
+4.  Fare clic **sull'opzione** Condividi con sulla barra dei comandi e selezionare un'opzione **secondaria, ad esempio Paint**.
 
 ## <a name="removing-the-sample"></a>Rimozione dell'esempio
 
 Per rimuovere l'esempio (sincronizzazione):
 
-1.  Passare alla directory che contiene il file Uninstallsync. reg.
-2.  Digitare `uninstallsync.reg` nella riga di comando oppure fare doppio clic sull'icona relativa a `uninstallsync.reg` .
+1.  Passare alla directory che contiene il file Uninstallsync.reg.
+2.  Digitare `uninstallsync.reg` nella riga di comando oppure fare doppio clic sull'icona per `uninstallsync.reg` .
 
-Per rimuovere l'esempio (share):
+Per rimuovere l'esempio (condivisione):
 
-1.  Passare alla directory che contiene il file Uninstallshare. reg.
+1.  Passare alla directory che contiene il file Uninstallshare.reg.
 2.  Digitare `uninstallshare.reg` nella riga di comando oppure fare doppio clic sull'icona per `uninstallshare.reg.`
 
  

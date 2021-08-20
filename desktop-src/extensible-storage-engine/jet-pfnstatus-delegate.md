@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_PFNSTATUS delegate'
-title: Delegato JET_PFNSTATUS
+description: 'Altre informazioni su: JET_PFNSTATUS delegato'
+title: JET_PFNSTATUS delegato
 TOCTitle: JET_PFNSTATUS delegate
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_PFNSTATUS
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_pfnstatus(v=EXCHG.10)
@@ -28,19 +28,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 16cc5807d858f964f995b449a0a0eee78659aefd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 90aef128f5fdbfdd63d445a07883cc2563311a48092afe4af6cc6cb955d4d609
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117893463"
 ---
-# <a name="jet_pfnstatus-delegate"></a>Delegato JET_PFNSTATUS
+# <a name="jet_pfnstatus-delegate"></a>JET_PFNSTATUS delegato
 
-Riceve informazioni sullo stato di avanzamento delle operazioni a esecuzione prolungata, ad esempio la deframmentazione, il backup o il ripristino. Durante tali operazioni, il motore di database chiama questa funzione di callback per fornire un aggiornamento sullo stato di avanzamento dell'operazione.
+Riceve informazioni sullo stato di avanzamento delle operazioni a esecuzione lunga, ad esempio le operazioni di deframmentazione, backup o ripristino. Durante tali operazioni, il motore di database chiama questa funzione di callback per fornire un aggiornamento sullo stato di avanzamento dell'operazione.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,37 +68,37 @@ public delegate JET_err JET_PFNSTATUS(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione con cui è stata chiamata l'operazione a esecuzione prolungata.
+    Sessione con cui è stata chiamata l'operazione a esecuzione lunga.
 
 <!-- end list -->
 
-  - SNP  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SNP](./jet-snp-enumeration.md)  
+  - Snp  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SNP](./jet-snp-enumeration.md)  
     
     Tipo di operazione.
 
 <!-- end list -->
 
-  - SNT  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SNT](./jet-snt-enumeration.md)  
+  - Snt  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SNT](./jet-snt-enumeration.md)  
     
     Stato dell'operazione.
 
 <!-- end list -->
 
   - data  
-    Tipo: [System. Object](/dotnet/api/system.object)  
+    Tipo: [System.Object](/dotnet/api/system.object)  
     
     Dati facoltativi. Può essere un [JET_SNPROG](./jet-snprog-class.md).
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_err](./jet-err-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_err](./jet-err-enumeration.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

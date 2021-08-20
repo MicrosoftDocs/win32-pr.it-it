@@ -1,21 +1,21 @@
 ---
 description: Messaggio inviato ogni volta che viene apportata una modifica all'ora di sistema.
 ms.assetid: 94b5b6f7-04bb-4e0a-848b-e2b31ffc2938
-title: Messaggio WM_TIMECHANGE (winuser. h)
+title: WM_TIMECHANGE messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d43bb5cd4284813c45ab074a93a9cd9699883aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16829714ace9f2b8d0a038aff4410817a9ab43b9d6594b82344ecf8a7dbdc836
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117957321"
 ---
-# <a name="wm_timechange-message"></a>\_Messaggio TIMECHANGE WM
+# <a name="wm_timechange-message"></a>Messaggio \_ WM TIMECHANGE
 
 Messaggio inviato ogni volta che viene apportata una modifica all'ora di sistema.
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -33,31 +33,31 @@ LRESULT CALLBACK WindowProc(
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
 Handle per la finestra.
 
 </dd> <dt>
 
-*uMsg* 
+*Umsg* 
 </dt> <dd>
 
-**WM \_ Identificatore TIMECHANGE** .
+**WM \_ Identificatore TIMECHANGE.**
 
 </dd> <dt>
 
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Un'applicazione deve restituire zero se elabora questo messaggio.
 
 ## <a name="remarks"></a>Commenti
 
-Un'applicazione non deve trasmettere questo messaggio, perché il sistema trasmette questo messaggio quando l'applicazione cambia l'ora di sistema.
+Un'applicazione non deve trasmettere questo messaggio, perché il sistema trasmetterà questo messaggio quando l'applicazione modifica l'ora di sistema.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,7 +77,7 @@ Un'applicazione non deve trasmettere questo messaggio, perché il sistema trasme
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

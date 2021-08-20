@@ -4,16 +4,16 @@ description: IAgentBalloon GetFontCharSet
 ms.assetid: 1ab5767a-31e3-449c-b242-f20b11336ca0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f809fbd83e44259c96184c9f364a85151ec9ddde
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 86237e96f2ec569926ec34e543dbdd187471ba21b49b38858b83853b61c55158
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117693353"
 ---
 # <a name="iagentballoongetfontcharset"></a>IAgentBalloon::GetFontCharSet
 
-\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT GetFontCharSet(
@@ -53,7 +53,7 @@ Indirizzo di un valore che riceve il set di caratteri del tipo di carattere. Di 
 
 Per altri valori del set di caratteri, vedere la documentazione di Platform SDK.
 
-Il set di caratteri predefinito usato nel fumetto di un carattere è definito nell'editor di caratteri di Microsoft Agent. È possibile modificarlo [**usando IAgentBalloon::SetFontCharSet**](iagentballoon--setfontcharset.md). Tuttavia, l'utente può eseguire l'override dell'impostazione del set di caratteri per tutti i caratteri usando la finestra delle proprietà di Microsoft Agent.
+Il set di caratteri predefinito usato nel fumetto delle parole di un carattere è definito nell'editor di caratteri di Microsoft Agent. È possibile modificarlo usando [**IAgentBalloon::SetFontCharSet**](iagentballoon--setfontcharset.md). Tuttavia, l'utente può eseguire l'override dell'impostazione del set di caratteri per tutti i caratteri usando la finestra delle proprietà di Microsoft Agent.
 
 ## <a name="see-also"></a>Vedere anche
 

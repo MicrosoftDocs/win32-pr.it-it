@@ -1,32 +1,32 @@
 ---
-title: Enumerazioni di DWRITE_RENDERING_MODE
-description: A partire da Windows 8, l' \_ enumerazione della modalità di rendering DWrite ha \_ aggiunto nuovi valori di enumerazione e ne è stato deprecato altri.
+title: DWRITE_RENDERING_MODE di dati
+description: A partire da Windows 8, l'enumerazione DWRITE \_ RENDERING MODE ha aggiunto nuovi valori di enumerazione e ne ha \_ deprecati altri.
 ms.assetid: 3EA568B4-310D-4F70-9530-5916419282E5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41fa79cf34a03960ddb42a8a80221e99d47be847
-ms.sourcegitcommit: d1b8f5ed3d6e35e93cb254efc49428a072d7ef9a
+ms.openlocfilehash: bb1b44de30c50aab1015c0fefa3515e3cc9c9281df41b641b3bc96ce231c4567
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "103955038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117816639"
 ---
-# <a name="dwrite_rendering_mode-enumerations"></a>\_Enumerazioni della modalità di rendering DWrite \_
+# <a name="dwrite_rendering_mode-enumerations"></a>Enumerazioni DWRITE \_ RENDERING \_ MODE
 
-A partire da Windows 8, l'enumerazione della **\_ \_ modalità di rendering DWrite** ha aggiunto nuovi valori di enumerazione e ne è stato deprecato altri.
+A partire da Windows 8, **l'enumerazione DWRITE \_ RENDERING \_ MODE** ha aggiunto nuovi valori di enumerazione e ne ha deprecati altri.
 
-A partire da Windows 8, l'enumerazione [**DWrite \_ Text \_ antialias \_ mode**](/windows/win32/api/Dwrite_1/ne-dwrite_1-dwrite_text_antialias_mode) determina se il rendering del testo viene eseguito con ClearType. Di conseguenza, tutte le modalità di rendering ClearType nell'enumerazione **della \_ \_ modalità di rendering DWrite** sono deprecate. Questi valori di enumerazione ora vengono mappati alle nuove modalità di rendering.
+A partire da Windows 8, [**l'enumerazione DWRITE \_ TEXT \_ ANTIALIAS \_ MODE**](/windows/win32/api/Dwrite_1/ne-dwrite_1-dwrite_text_antialias_mode) determina se il rendering del testo viene eseguito tramite ClearType. Di conseguenza, tutte le modalità di rendering ClearType **nell'enumerazione DWRITE \_ RENDERING \_ MODE** sono deprecate. Questi valori di enumerazione vengono ora mappati alle nuove modalità di rendering.
 
-La tabella seguente mostra i valori di enumerazione precedenti e i nuovi valori a cui viene eseguito il mapping. Per le descrizioni dei nuovi valori, vedere [**\_ \_ modalità di rendering DWrite**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode).
+La tabella seguente mostra i valori di enumerazione precedente e i nuovi valori a cui sono mappati. Per le descrizioni dei nuovi valori, vedere [**DWRITE \_ RENDERING \_ MODE**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode).
 
 
 
 | Modalità precedente                                                                                | Nuova modalità                                                                                |
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [**DWRITE \_ modalità di rendering \_ \_ CLEARTYPE \_ GDI \_ classico**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)       | [**\_modalità di rendering DWrite \_ \_ GDI \_ classico**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)                  |
-| [**\_modalità di rendering DWrite \_ \_ CLEARTYPE \_ GDI \_ naturale**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)       | [**\_modalità di rendering DWrite \_ \_ GDI \_ Natural**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)                  |
-| [**DWRITE \_ modalità di rendering \_ \_ CLEARTYPE \_ naturale**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)            | [**DWRITE \_ modalità di rendering \_ \_ CLEARTYPE \_ naturale**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)            |
-| [**\_modalità di rendering DWrite \_ \_ CLEARTYPE \_ naturale \_ simmetrica**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode) | [**\_modalità di rendering DWrite \_ \_ CLEARTYPE \_ naturale \_ simmetrica**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode) |
+| [**MODALITÀ DI RENDERING DWRITE \_ \_ \_ CLEARTYPE \_ GDI \_ CLASSIC**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)       | [**MODALITÀ DI RENDERING DWRITE \_ \_ \_ GDI \_ CLASSIC**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)                  |
+| [**MODALITÀ DI RENDERING DWRITE \_ \_ \_ CLEARTYPE \_ GDI \_ NATURAL**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)       | [**DWRITE \_ RENDERING \_ MODE \_ GDI \_ NATURAL**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)                  |
+| [**MODALITÀ DI RENDERING DWRITE \_ \_ \_ CLEARTYPE \_ NATURAL**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)            | [**MODALITÀ DI RENDERING DWRITE \_ \_ \_ CLEARTYPE \_ NATURAL**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode)            |
+| [**MODALITÀ DI RENDERING DWRITE \_ \_ \_ CLEARTYPE \_ NATURAL \_ SYMMETRIC**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode) | [**MODALITÀ DI RENDERING DWRITE \_ \_ \_ CLEARTYPE \_ NATURAL \_ SYMMETRIC**](/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode) |
 
 
 
@@ -53,7 +53,7 @@ La tabella seguente mostra i valori di enumerazione precedenti e i nuovi valori 
 <td>Rappresenta un metodo di rendering dei glifi. <br/>
 <blockquote>
 [!Note]<br />
-Questo argomento riguarda <a href="/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode"><strong>DWRITE_RENDERING_MODE</strong></a> in Windows 8 e versioni successive. Per informazioni sulla versione precedente, vedere <a href="/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode"><strong>questo argomento</strong></a>.
+Questo argomento illustra le <a href="/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode"><strong>DWRITE_RENDERING_MODE</strong></a> in Windows 8 e versioni successive. Per informazioni sulla versione precedente, vedere <a href="/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode"><strong>questo argomento.</strong></a>
 </blockquote>
 <br/></td>
 </tr>
@@ -62,7 +62,7 @@ Questo argomento riguarda <a href="/windows/win32/api/dwrite/ne-dwrite-dwrite_re
 <td>Rappresenta un metodo di rendering dei glifi. <br/>
 <blockquote>
 [!Note]<br />
-Questo argomento riguarda <a href="/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode"><strong>DWRITE_RENDERING_MODE</strong></a> precedente a Windows 8 e versioni successive. Per informazioni sulla versione più recente, vedere <strong>questo argomento</strong>.
+Questo argomento riguarda le <a href="/windows/win32/api/dwrite/ne-dwrite-dwrite_rendering_mode"><strong>DWRITE_RENDERING_MODE</strong></a> precedenti a Windows 8 e versioni successive. Per informazioni sulla versione più recente, vedere <strong>questo argomento.</strong>
 </blockquote>
 <br/></td>
 </tr>

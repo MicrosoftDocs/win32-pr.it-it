@@ -1,5 +1,5 @@
 ---
-description: Aggiunge un nuovo canale all'elenco di canali nel menu Preferiti di Windows Internet Explorer e alla barra Dei canali sul desktop.
+description: Aggiunge un nuovo canale all'elenco di canali nel menu Preferiti Windows Internet Explorer canale e alla barra Dei canali sul desktop.
 title: Metodo ShellUIHelper.AddChannel (Exdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: b62e6e82-429a-4d41-96d4-cba639b611f5
-ms.openlocfilehash: d08c1360cb2a96fbc7b87daecb650bbf46aa6ad9
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 6be928a7cae9d9349bb39fc3a27a49a16495a8609c8e1cb448de888ac190619b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118047514"
 ---
 # <a name="shelluihelperaddchannel-method"></a>Metodo ShellUIHelper.AddChannel
 
-Aggiunge un nuovo canale all'elenco di canali nel **menu** Preferiti di Windows Internet Explorer e alla barra **Dei** canali sul desktop.
+Aggiunge un nuovo canale all'elenco di canali nel **menu** Preferiti Windows Internet Explorer e alla barra **Dei** canali sul desktop.
 
 > [!Note]  
 > Questo metodo non è più supportato in Windows Vista. In tale sistema operativo restituisce E \_ NOTIMPL.
@@ -60,9 +60,9 @@ Valore **String** che specifica l'URL del file CDF.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente illustra l'utilizzo corretto di questo metodo per JScript incorporato in HTML e Visual Basic.
+Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo JScript incorporato in HTML e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -113,7 +113,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows 2000 Professional e Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |

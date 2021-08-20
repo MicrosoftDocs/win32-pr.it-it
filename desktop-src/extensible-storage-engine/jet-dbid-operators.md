@@ -1,25 +1,25 @@
 ---
-description: 'Altre informazioni su: operatori JET_DBID'
-title: Operatori di JET_DBID
+description: 'Altre informazioni su: Operatori JET_DBID'
+title: JET_DBID seguenti
 TOCTitle: JET_DBID operators
 ms:assetid: 3ea69a68-c166-c943-97ba-19a80faa9b4f
 ms:mtpsurl: https://msdn.microsoft.com/library/Hh578167(v=EXCHG.10)
 ms:contentKeyID: 39511438
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 28273c984eb5b58633c4e0ed2464b197fd62fc41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5253ca1e2700b4f618d2abf9ac9b81a0db875b32fece63772038d82df8b42202
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104565360"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118075547"
 ---
-# <a name="jet_dbid-operators"></a>Operatori di JET_DBID
+# <a name="jet_dbid-operators"></a>JET_DBID seguenti
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
-Il tipo di [JET_DBID](./jet-dbid-structure.md) espone i membri seguenti.
+Il [JET_DBID](./jet-dbid-structure.md) espone i membri seguenti.
 
 ## <a name="operators"></a>Operatori
 
@@ -52,6 +52,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_DBID](./jet-dbid-structure.md)
+[JET_DBID struttura](./jet-dbid-structure.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117876741"
 ---
-# <a name="mf_mt_video_3d-attribute"></a>MF MT VIDEO 3D attribute (MF \_ MT \_ VIDEO \_ 3D)
+# <a name="mf_mt_video_3d-attribute"></a>Attributo \_ \_ 3D MF MT VIDEO \_
 
 Specifica se un flusso video contiene contenuto 3D.
 
@@ -21,7 +21,7 @@ Specifica se un flusso video contiene contenuto 3D.
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo si applica ai tipi di supporti video. Se questo attributo è **TRUE,** il flusso video contiene contenuto 3D. Il valore predefinito è **FALSE.**
+Questo attributo si applica ai tipi di file multimediali video. Se questo attributo è **TRUE,** il flusso video contiene contenuto 3D. Il valore predefinito è **FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,7 +39,7 @@ Questo attributo si applica ai tipi di supporti video. Se questo attributo è **
 
 <dl> <dt>
 
-[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

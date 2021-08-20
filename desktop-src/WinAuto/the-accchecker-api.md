@@ -1,21 +1,21 @@
 ---
-title: API AccChecker
-description: L'API AccChecker supporta i test automatizzati. Dopo aver eseguito il test di un'applicazione usando i test manuali con l'interfaccia utente grafica di AccChecker, è possibile scrivere test automatizzati che incorporano i log dei messaggi e di eliminazione creati con lo strumento GUI.
+title: The AccChecker API
+description: L'API AccChecker supporta i test automatizzati. Dopo aver controllato un'applicazione usando il test manuale con l'interfaccia utente grafica accChecker, è possibile scrivere test automatizzati che incorporano i log di eliminazione e di messaggio creati con lo strumento GUI.
 ms.assetid: 9AD9A259-130B-4968-B7FD-DAFA89320391
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7c098d25e282a8df8ff4125dfd2ce1f94d795b0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 65d90fc45ea80e164db08b9232c7e65588921e0af5a1b156d2a924b00076b405
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117929004"
 ---
-# <a name="the-accchecker-api"></a>API AccChecker
+# <a name="the-accchecker-api"></a>The AccChecker API
 
-L'API AccChecker supporta i test automatizzati. Dopo aver eseguito il test di un'applicazione usando i test manuali con l'interfaccia utente grafica di AccChecker, è possibile scrivere test automatizzati che incorporano i log dei messaggi e di eliminazione creati con lo strumento GUI.
+L'API AccChecker supporta i test automatizzati. Dopo aver controllato un'applicazione usando il test manuale con l'interfaccia utente grafica accChecker, è possibile scrivere test automatizzati che incorporano i log di eliminazione e di messaggio creati con lo strumento GUI.
 
-Nell'esempio di codice seguente viene illustrato come utilizzare l'API AccChecker per testare la funzionalità di tabulazione nell'applicazione del pannello di controllo Windows Firewall.
+L'esempio di codice seguente illustra come usare l'API AccChecker per testare la funzionalità di tabulazione nell'Windows del pannello di controllo firewall.
 
 
 ```CSharp
@@ -72,9 +72,9 @@ public class TestCases : TestBase
 [Verifica dell'accessibilità dell'interfaccia utente](ui-accessibility-checker.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

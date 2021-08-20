@@ -1,29 +1,29 @@
 ---
 description: Contiene un puntatore all'oggetto proxy per il descrittore di presentazione delle applicazioni.
 ms.assetid: 0cd83204-0d32-417c-8911-1d3358eb0802
-title: Attributo MF_PD_PMPHOST_CONTEXT (Mfidl. h)
+title: MF_PD_PMPHOST_CONTEXT attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 70e8903e438a4649ae43d7aa2072e5a5146e3126
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b3bad1e033bfd3d6b87fc0dd9d5b4da89aee2eedae6b4bfc570e68dd87428dfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104401751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117691800"
 ---
-# <a name="mf_pd_pmphost_context-attribute"></a>\_Attributo di contesto MF PD \_ PMPHOST \_
+# <a name="mf_pd_pmphost_context-attribute"></a>Attributo MF \_ PD \_ PMPHOST \_ CONTEXT
 
 Contiene un puntatore all'oggetto proxy per il descrittore di presentazione dell'applicazione.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**IUnknown \** _
+**IUnknown\***
 
 ## <a name="remarks"></a>Commenti
 
-L'host del percorso multimediale protetto (PMP) usa questo attributo per archiviare il descrittore di presentazione dell'applicazione nel descrittore della presentazione remota. Il valore dell'attributo è un puntatore all'interfaccia [_ *IMFRemoteProxy* *](/windows/desktop/api/mfidl/nn-mfidl-imfremoteproxy) .
+L'host PMP (Protected Media Path) usa questo attributo per archiviare il descrittore di presentazione dell'applicazione nel descrittore di presentazione remoto. Il valore dell'attributo è un puntatore [**all'interfaccia IMFRemoteProxy.**](/windows/desktop/api/mfidl/nn-mfidl-imfremoteproxy)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -41,19 +41,19 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: getunknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown)
+[**IMFAttributes::GetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown)
 </dt> <dt>
 
-[**IMFAttributes:: Unknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown)
+[**IMFAttributes::SetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown)
 </dt> <dt>
 
 [**IMFPresentationDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationdescriptor)
 </dt> <dt>
 
-[Attributi del descrittore della presentazione](presentation-descriptor-attributes.md)
+[Attributi del descrittore di presentazione](presentation-descriptor-attributes.md)
 </dt> </dl>
 
  

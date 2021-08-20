@@ -1,19 +1,19 @@
 ---
-description: Inviato quando l'utente rilascia un file nella finestra di un'applicazione che si è registrato come destinatario di file eliminati.
+description: Inviato quando l'utente elimina un file nella finestra di un'applicazione che si è registrata come destinatario dei file eliminati.
 ms.assetid: 07dc2df7-4699-4e9c-b1a5-4ce877116268
-title: Messaggio WM_DROPFILES (winuser. h)
+title: WM_DROPFILES messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb8362bfa746eaab519cdfc34d2cdf7757105fb6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c36043997b4d462b5d453952f690cc8569218c398796b6a42b10709053b0d5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104979466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118046482"
 ---
-# <a name="wm_dropfiles-message"></a>\_Messaggio DropFiles WM
+# <a name="wm_dropfiles-message"></a>Messaggio \_ WM DROPFILES
 
-Inviato quando l'utente rilascia un file nella finestra di un'applicazione che si è registrato come destinatario di file eliminati.
+Inviato quando l'utente elimina un file nella finestra di un'applicazione che si è registrata come destinatario dei file eliminati.
 
 
 ```C++
@@ -34,7 +34,7 @@ PostMessage(
 *hDrop* 
 </dt> <dd>
 
-Handle per una struttura interna che descrive i file eliminati. Passare questo handle [**DragFinish**](/windows/desktop/api/Shellapi/nf-shellapi-dragfinish), [**DragQueryFile**](/windows/desktop/api/Shellapi/nf-shellapi-dragqueryfilea)o [**DragQueryPoint**](/windows/desktop/api/Shellapi/nf-shellapi-dragquerypoint) per recuperare le informazioni sui file eliminati.
+Handle a una struttura interna che descrive i file eliminati. Passare questo handle [**DragFinish,**](/windows/desktop/api/Shellapi/nf-shellapi-dragfinish) [**DragQueryFile**](/windows/desktop/api/Shellapi/nf-shellapi-dragqueryfilea)o [**DragQueryPoint**](/windows/desktop/api/Shellapi/nf-shellapi-dragquerypoint) per recuperare informazioni sui file rilasciati.
 
 </dd> <dt>
 
@@ -51,7 +51,7 @@ Un'applicazione deve restituire zero se elabora questo messaggio.
 
 ## <a name="remarks"></a>Commenti
 
-L'handle HDROP è dichiarato in Shellapi. h. Per usare **WM \_ DropFiles**, è necessario includere questa intestazione nella compilazione. Per altre informazioni su come usare il trascinamento della selezione per trasferire i dati della shell, vedere [trasferimento di dati della shell tramite il trascinamento della selezione o gli appunti](dragdrop.md).
+L'handle HDROP è dichiarato in Shellapi.h. È necessario includere questa intestazione nella compilazione per usare **WM \_ DROPFILES.** Per altre informazioni su come usare il trascinamento della selezione per trasferire i dati della shell, vedere [Transferring Shell Data Using Drag-and-Drop or the Clipboard](dragdrop.md)(Trasferimento di dati della shell tramite trascinamento della selezione o Appunti).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ L'handle HDROP è dichiarato in Shellapi. h. Per usare **WM \_ DropFiles**, è n
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                          |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser</dt> </dl> |
 
 
 

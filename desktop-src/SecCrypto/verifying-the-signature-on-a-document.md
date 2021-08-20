@@ -4,30 +4,30 @@ ms.assetid: 088915d8-768c-4378-a9dd-9347a428aff9
 title: Verifica della firma in un documento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f2886edcb9629011ddf1a0b5fb45a12a11f0556
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1fb1e6bbec678f74c9761c7f4c0712249c8b557a68b5e9f80aeeb3306faede36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117970937"
 ---
 # <a name="verifying-the-signature-on-a-document"></a>Verifica della firma in un documento
 
-\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece il .NET Framework per implementare le funzionalità di sicurezza. Per altre informazioni, vedere [alternative all'uso di CAPICOM](alternatives-to-using-capicom.md).\]
+\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece il .NET Framework per implementare le funzionalità di sicurezza. Per altre informazioni, vedere [Alternative all'uso di CAPICOM.](alternatives-to-using-capicom.md)\]
 
-Quando viene ricevuto un documento firmato, è possibile verificare la validità della firma o delle firme. È possibile verificare una firma:
+Quando viene ricevuto un documento firmato, è possibile verificare la validità della firma o delle firme. Una firma può essere verificata per:
 
 -   Validità dell'hash della firma
 -   Validità del certificato del firmatario
 
-L' [*hash*](../secgloss/h-gly.md) della firma viene decrittografato usando la [*chiave pubblica*](../secgloss/p-gly.md) del firmatario trovato nel [*certificato*](../secgloss/c-gly.md)del firmatario, incluso come parte della firma. Se la firma decrittografata corrisponde a un nuovo hash del documento originale, la firma è stata creata dal proprietario della chiave privata associata alla chiave pubblica usata per decrittografare l'hash. Inoltre, il documento su cui si basa la firma è garantito che non sia stato modificato dopo la creazione della firma.
+[*L'hash*](../secgloss/h-gly.md) della firma [](../secgloss/p-gly.md) viene decrittografato usando la chiave pubblica del firmatario presente nel certificato del firmatario, [](../secgloss/c-gly.md)incluso come parte della firma. Se la firma decrittografata corrisponde a un nuovo hash del documento originale, la firma è stata creata dal proprietario della chiave privata associata alla chiave pubblica usata per decrittografare l'hash. Inoltre, è garantito che il documento su cui si basa la firma non sia stato modificato dopo la creazione della firma.
 
-È anche possibile verificare la validità del certificato che ha fornito la chiave pubblica e l'identità del firmatario, inclusi i problemi che determinano se il certificato è stato revocato, se il certificato è obsoleto o se il certificato è stato emesso da un'autorità di certificazione attendibile.
+È anche possibile verificare la validità del certificato che ha fornito la chiave pubblica e l'identità del firmatario, inclusi problemi come la revoca del certificato, la non validità del certificato o l'emissione del certificato da parte di un'autorità di certificazione attendibile.
 
-Nell'esempio seguente, il contenuto firmato e l'oggetto **SignedData** vengono letti da un file e la firma e la validità del certificato usato per creare la firma vengono controllati.
+Nell'esempio seguente il contenuto firmato e l'oggetto **SignedData** vengono letti da un file e vengono controllate la firma e la validità del certificato usato per creare la firma.
 
 > [!Note]  
-> Se la firma non è crittograficamente valida o il certificato del firmatario non è valido, viene generata un'eccezione e il programma di verifica deve gestire l'eccezione. In caso di errore di CAPICOM, viene restituito un valore decimale negativo di **Err. Number** . Per altre informazioni, vedere [**\_ \_ codice di errore di CAPICOM**](capicom-error-code.md). Per informazioni sui valori decimali positivi di **Err. Number**, vedere Winerror. h.
+> Se la firma non è valida dal punto di vista crittografico o il certificato del firmatario non è valido, viene generata un'eccezione e il programma di verifica deve gestire l'eccezione. In caso di errore CAPICOM, viene restituito un valore decimale negativo **di Err.Number.** Per altre informazioni, vedere [**CAPICOM \_ ERROR \_ CODE**](capicom-error-code.md). Per informazioni sui valori decimali positivi **di Err.Number,** vedere Winerror.h.
 
  
 

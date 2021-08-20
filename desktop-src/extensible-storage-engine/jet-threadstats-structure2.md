@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: struttura JET_THREADSTATS'
-title: Struttura JET_THREADSTATS (Microsoft. ISAM. esent. Interop. vista)
+description: 'Altre informazioni su: JET_THREADSTATS struttura'
+title: JET_THREADSTATS (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: JET_THREADSTATS structure
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_threadstats(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 764a9276543fbb7a5b1aa2762cc8ed1877c45ded
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b77628bece94d4021ec437ee678a3463bcb8b64158e28286c060ee45b7ce182f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118073225"
 ---
-# <a name="jet_threadstats-structure"></a>Struttura JET_THREADSTATS
+# <a name="jet_threadstats-structure"></a>JET_THREADSTATS struttura
 
 Contiene statistiche cumulative sul lavoro eseguito dal motore di database sul thread corrente. Queste informazioni vengono restituite tramite JetGetThreadStats.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,6 +62,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri JET_THREADSTATS](./jet-threadstats-members.md)
+[JET_THREADSTATS membri](./jet-threadstats-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

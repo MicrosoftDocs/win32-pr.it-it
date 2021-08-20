@@ -1,7 +1,7 @@
 ---
-description: Fornisce informazioni aggiuntive da utilizzare con il metodo ExportSystemDefinition della \_ classe VirtualSystemManagementService di MSVM.
+description: Fornisce informazioni aggiuntive da usare con il metodo ExportSystemDefinition della classe Msvm \_ VirtualSystemManagementService.
 ms.assetid: 86396A76-83EC-476E-86A9-83861A002152
-title: Classe Msvm_VirtualSystemExportSettingData
+title: Msvm_VirtualSystemExportSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -28,18 +28,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 77bd451912063ec1164abf14247d81e1d258f56f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6760fb671e9e06ea603f86c944cf45a8637d1a811a8c8a0743946a88f25d5a06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117810496"
 ---
-# <a name="msvm_virtualsystemexportsettingdata-class"></a>\_Classe MSVM VirtualSystemExportSettingData
+# <a name="msvm_virtualsystemexportsettingdata-class"></a>Classe Msvm \_ VirtualSystemExportSettingData
 
-Fornisce informazioni aggiuntive da utilizzare con il metodo [**ExportSystemDefinition**](exportsystemdefinition-msvm-virtualsystemmanagementservice.md) della classe [**\_ VirtualSystemManagementService di MSVM**](msvm-virtualsystemmanagementservice.md) .
+Fornisce informazioni aggiuntive da usare con il [**metodo ExportSystemDefinition**](exportsystemdefinition-msvm-virtualsystemmanagementservice.md) della [**classe Msvm \_ VirtualSystemManagementService.**](msvm-virtualsystemmanagementservice.md)
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -67,26 +67,26 @@ class Msvm_VirtualSystemExportSettingData : CIM_SettingData
 
 ## <a name="members"></a>Members
 
-La **classe \_ VirtualSystemExportSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ VirtualSystemExportSettingData** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ VirtualSystemExportSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ VirtualSystemExportSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **BackupIntent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Indica l'intenzione di utilizzare i set di backup esportati.
+Indica la finalità di utilizzo dei set di backup esportati.
 
 > [!Note]  
 > Questa proprietà è stata aggiunta in Windows 10 e Windows Server 2016.
@@ -102,7 +102,7 @@ Indica l'intenzione di utilizzare i set di backup esportati.
 
 </dt> <dd>
 
-Tutti i set di backup completi e differenziali esportati verranno conservati così come sono.
+Tutti i set di backup completi e differenziali esportati verranno mantenuti così come sono.
 
 </dd> <dt>
 
@@ -113,7 +113,7 @@ Tutti i set di backup completi e differenziali esportati verranno conservati cos
 
 </dt> <dd>
 
-I set di backup completi e differenziali esportati verranno uniti per sintetizzare set di backup completi.
+I set di backup completi e differenziali esportati verranno uniti per sintetizzare i set di backup completi.
 
 </dd> </dl>
 
@@ -122,26 +122,26 @@ I set di backup completi e differenziali esportati verranno uniti per sintetizza
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **maxlen** (64)
+Qualificatori: **MaxLen** (64)
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **CaptureLiveState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Indica lo stato da acquisire se la destinazione dell'esportazione è una macchina virtuale in esecuzione.
@@ -155,7 +155,7 @@ Indica lo stato da acquisire se la destinazione dell'esportazione è una macchin
 
 </dt> <dd>
 
-Nessun file di stato salvato verrà esportato per la macchina virtuale in esecuzione, inserendolo in uno stato di arresto anomalo.
+Nessun file di stato salvato verrà esportato per la macchina virtuale in esecuzione, posizionandola in uno stato coerente con l'arresto anomalo del sistema.
 
 </dd> <dt>
 
@@ -177,7 +177,7 @@ I file di stato salvati per la macchina virtuale in esecuzione verranno esportat
 
 </dt> <dd>
 
-Viene esportato lo stato coerente con l'applicazione della macchina virtuale in esecuzione.
+Verrà esportato lo stato coerente con l'applicazione della macchina virtuale in esecuzione.
 
 > [!Note]  
 > Aggiunta in Windows 10 e Windows Server 2016.
@@ -191,13 +191,13 @@ Viene esportato lo stato coerente con l'applicazione della macchina virtuale in 
 **CopySnapshotConfiguration**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Indica quali snapshot devono essere esportati con la macchina virtuale.
+Indica gli snapshot da esportare con la macchina virtuale.
 
 <dt>
 
@@ -230,7 +230,7 @@ Non verranno esportati snapshot con la macchina virtuale.
 
 </dt> <dd>
 
-Gli snapshot identificati dalla proprietà **SnapshotVirtualSystem** verranno esportati con la macchina virtuale. Le proprietà **CopyVmStorage** e **CopyVmRuntimeInformation** vengono ignorate, le informazioni sull'archiviazione e la fase di esecuzione vengono esportate con la macchina virtuale e tutti i dischi differenze VHD verranno uniti in un nuovo disco rigido virtuale.
+Gli snapshot identificati dalla **proprietà SnapshotVirtualSystem** verranno esportati con la macchina virtuale. Le **proprietà CopyVmStorage** e **CopyVmRuntimeInformation** vengono ignorate, le informazioni sull'archiviazione e sulla fase di esecuzione vengono esportate con la macchina virtuale e tutti i dischi con differenze tra dischi rigidi virtuali verranno uniti in un nuovo disco rigido virtuale.
 
 </dd> <dt>
 
@@ -241,7 +241,7 @@ Gli snapshot identificati dalla proprietà **SnapshotVirtualSystem** verranno es
 
 </dt> <dd>
 
-Lo snapshot identificato dalla proprietà **SnapshotVirtualSystem** verrà esportato allo scopo di eseguire il backup della macchina virtuale. La configurazione esportata userà l'ID della macchina virtuale.
+Lo snapshot identificato dalla **proprietà SnapshotVirtualSystem** verrà esportato allo scopo di eseguire il backup della macchina virtuale. La configurazione esportata userà l'ID della macchina virtuale.
 
 > [!Note]  
 > Aggiunta in Windows 10 e Windows Server 2016.
@@ -255,20 +255,20 @@ Lo snapshot identificato dalla proprietà **SnapshotVirtualSystem** verrà espor
 **CopyVmRuntimeInformation**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Indica se le informazioni di runtime della macchina virtuale verranno copiate quando viene esportata la macchina virtuale.
+Indica se le informazioni di run-time della macchina virtuale verranno copiate quando la macchina virtuale viene esportata.
 
 
 
 | Valore                                                                                | Significato                                                                 |
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| <dl> <dt>**Vero**</dt> </dl>  | Verranno copiate le informazioni sulla fase di esecuzione della macchina virtuale.<br/>     |
-| <dl> <dt>**False**</dt> </dl> | Le informazioni di run-time della macchina virtuale non verranno copiate.<br/> |
+| <dl> <dt>**Vero**</dt> </dl>  | Verranno copiate le informazioni di run-time della macchina virtuale.<br/>     |
+| <dl> <dt>**Falso**</dt> </dl> | Le informazioni di run-time della macchina virtuale non verranno copiate.<br/> |
 
 
 
@@ -279,20 +279,20 @@ Indica se le informazioni di runtime della macchina virtuale verranno copiate qu
 **CopyVmStorage**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Indica se lo spazio di archiviazione della macchina virtuale verrà copiato quando viene esportata la macchina virtuale.
+Indica se l'archiviazione della macchina virtuale verrà copiata quando la macchina virtuale viene esportata.
 
 
 
 | Valore                                                                                | Significato                                                    |
 |--------------------------------------------------------------------------------------|------------------------------------------------------------|
-| <dl> <dt>**Vero**</dt> </dl>  | Verrà copiato lo spazio di archiviazione della macchina virtuale.<br/>     |
-| <dl> <dt>**False**</dt> </dl> | L'archiviazione della macchina virtuale non verrà copiata.<br/> |
+| <dl> <dt>**Vero**</dt> </dl>  | L'archiviazione della macchina virtuale verrà copiata.<br/>     |
+| <dl> <dt>**Falso**</dt> </dl> | L'archiviazione della macchina virtuale non verrà copiata.<br/> |
 
 
 
@@ -303,20 +303,20 @@ Indica se lo spazio di archiviazione della macchina virtuale verrà copiato quan
 **CreateVmExportSubdirectory**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Indica se verrà creata una sottodirectory con il nome della macchina virtuale quando viene esportata la macchina virtuale.
+Indica se verrà creata una sottodirectory con il nome della macchina virtuale quando la macchina virtuale viene esportata.
 
 
 
 | Valore                                                                                | Significato                                        |
 |--------------------------------------------------------------------------------------|------------------------------------------------|
 | <dl> <dt>**Vero**</dt> </dl>  | Verrà creata una sottodirectory.<br/>     |
-| <dl> <dt>**False**</dt> </dl> | Non verrà creata una sottodirectory.<br/> |
+| <dl> <dt>**Falso**</dt> </dl> | Non verrà creata una sottodirectory.<br/> |
 
 
 
@@ -327,26 +327,26 @@ Indica se verrà creata una sottodirectory con il nome della macchina virtuale q
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
-**DifferentialBackupBase**
+**DifferenzialalBackupBase**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Base per l'esportazione differenziale. Si tratta del percorso di un'istanza di [**\_ VirtualSystemReferencePoint MSVM**](msvm-virtualsystemreferencepoint.md) che rappresenta il punto di riferimento o il percorso di un'istanza di [**MSVM \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) che rappresenta lo snapshot da utilizzare come base per l'esportazione differenziale. Se la proprietà **CopySnapshotConfiguration** non è impostata su 3 (**ExportOneSnapshotForBackup**), questa proprietà viene ignorata.
+Base per l'esportazione differenziale. Percorso di un'istanza [**di Msvm \_ VirtualSystemReferencePoint**](msvm-virtualsystemreferencepoint.md) che rappresenta il punto di riferimento o il percorso di un'istanza [**di Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) che rappresenta lo snapshot da usare come base per l'esportazione differenziale. Se la **proprietà CopySnapshotConfiguration** non è impostata su 3(**ExportOneSnapshotForBackup**), questa proprietà viene ignorata.
 
 > [!Note]  
 > Aggiunta in Windows 10 e Windows Server 2016.
@@ -358,13 +358,13 @@ Base per l'esportazione differenziale. Si tratta del percorso di un'istanza di [
 **DisableDifferentialOfIgnoredStorage**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Indica se i dischi differenze verranno creati o meno per l'archiviazione ignorata durante l'esportazione. Per impostazione predefinita, questo valore è impostato su false, il che significa che i dischi differenze vengono creati per l'archiviazione che non verrà copiata nella destinazione di esportazione.
+Indica se i dischi differenze verranno creati o meno per l'archiviazione ignorati durante l'esportazione. Per impostazione predefinita, questa opzione è impostata su false, il che significa che vengono creati dischi differenze per l'archiviazione che non verrà copiata nella destinazione di esportazione.
 
 > [!Note]  
 > Aggiunta in Windows 10, versione 1709.
@@ -376,30 +376,30 @@ Indica se i dischi differenze verranno creati o meno per l'archiviazione ignorat
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per questa istanza. Inoltre, il nome visualizzato può essere utilizzato come proprietà di indice per una ricerca o una query. Questa proprietà viene ereditata da [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)).
+Nome visualizzato per questa istanza. Inoltre, il nome visualizzato può essere usato come proprietà di indice per una ricerca o una query. Questa proprietà viene ereditata da [**CIM \_ SettingData.**](/previous-versions//cc136911(v=vs.85))
 
 </dd> <dt>
 
 **ExcludedVirtualHardDisks**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Matrice di ID di istanza [**MSVM \_ StorageAllocationSettingData**](msvm-storageallocationsettingdata.md) (RASD) che rappresentano i dischi rigidi virtuali che devono essere esclusi dall'operazione di esportazione. Se almeno uno degli ID specificati non è un disco rigido virtuale collegato valido, l'operazione avrà esito negativo.
+Matrice di ID istanza [**RASD \_ (Msvm StorageAllocationSettingData)**](msvm-storageallocationsettingdata.md) che rappresentano i dischi rigidi virtuali che devono essere esclusi dall'operazione di esportazione. Se almeno uno degli ID forniti non è un disco rigido virtuale collegato valido, l'operazione avrà esito negativo.
 
-I dischi rigidi virtuali a cui fa riferimento questa proprietà possono provenire dalla macchina virtuale e/o da uno qualsiasi dei relativi snapshot. L'esclusione di dischi rigidi virtuali non è supportata quando la proprietà **CopySnapshotConfiguration** è impostata su 0 (ExportAllSnapshots).
+I dischi rigidi virtuali a cui fa riferimento questa proprietà possono essere dalla macchina virtuale e/o da uno dei relativi snapshot. L'esclusione dei dischi rigidi virtuali non è supportata quando la **proprietà CopySnapshotConfiguration** è impostata su 0(ExportAllSnapshots).
 
-Si noti che l'ID dell'istanza di RASD per i dischi rigidi virtuali rappresenta il percorso a cui sono collegati ed escludendo questo ID esclude tutti i dischi rigidi virtuali collegati in tale posizione nell'albero degli snapshot della macchina virtuale, indipendentemente dal fatto che siano effettivamente una catena di dischi rigidi virtuali valida.
+Si noti che l'ID istanza RASD per i dischi rigidi virtuali rappresenta la posizione a cui sono collegati ed escludendo tramite questo ID tutti i dischi rigidi virtuali collegati in tale posizione nell'albero degli snapshot della macchina virtuale, indipendentemente dal fatto che siano effettivamente una catena di dischi rigidi virtuali valida.
 
 > [!Note]  
 > Aggiunta in Windows 10, versione 1709.
@@ -411,13 +411,13 @@ Si noti che l'ID dell'istanza di RASD per i dischi rigidi virtuali rappresenta i
 **ExportForLiveMigration**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Indica se la macchina virtuale esportata deve essere utilizzata nella migrazione in tempo reale.
+Indica se la macchina virtuale esportata deve essere usata nella migrazione in tempo reale.
 
 > [!Note]  
 > Aggiunta in Windows 10, versione 1703 e Windows Server 2016.
@@ -429,7 +429,7 @@ Indica se la macchina virtuale esportata deve essere utilizzata nella migrazione
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -438,26 +438,26 @@ Tipo di accesso: sola lettura
 Qualificatori: **chiave**
 </dt> </dl>
 
-All'interno dell'ambito dello spazio dei nomi di creazione di istanze, in modo opaco e univoco identifica un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)).
+Nell'ambito dello spazio dei nomi che crea un'istanza, identifica in modo opaco e univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ SettingData.**](/previous-versions//cc136911(v=vs.85))
 
 </dd> <dt>
 
 **SnapshotVirtualSystem**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Percorso di un'istanza di [**\_ VirtualSystemSettingData MSVM**](msvm-virtualsystemsettingdata.md) che rappresenta lo snapshot da esportare con la macchina virtuale. Se la proprietà **CopySnapshotConfiguration** non è impostata su 2 (ExportOneSnapshot), questa proprietà viene ignorata.
+Percorso di [**un'istanza di Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) che rappresenta lo snapshot da esportare con la macchina virtuale. Se la **proprietà CopySnapshotConfiguration** non è impostata su 2 (ExportOneSnapshot), questa proprietà viene ignorata.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla **classe \_ VirtualSystemExportSettingData di MSVM** potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla **classe Msvm \_ VirtualSystemExportSettingData** potrebbe essere limitato dal filtro del controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -465,10 +465,10 @@ L'accesso alla **classe \_ VirtualSystemExportSettingData di MSVM** potrebbe ess
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -477,7 +477,7 @@ L'accesso alla **classe \_ VirtualSystemExportSettingData di MSVM** potrebbe ess
 
 <dl> <dt>
 
-[**\_SETTINGDATA CIM**](cim-settingdata.md)
+[**CIM \_ SettingData**](cim-settingdata.md)
 </dt> <dt>
 
 [Classi di gestione del sistema virtuale](virtual-system-management-classes.md)

@@ -1,5 +1,5 @@
 ---
-description: 'Metodo IXml2Dex::ReadXML: non implementato.'
+description: 'Metodo IXml2Dex::ReadXML : non implementato.'
 ms.assetid: f75ee69d-2778-4c3c-a810-6708b1669541
 title: Metodo IXml2Dex::ReadXML
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 8f4092baced94dcf222202ec5f12619c83a183bd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5e926de8c35f2db144bb244e842897c93581c61fc80e8139ac3bf71eb796fdff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117817022"
 ---
 # <a name="ixml2dexreadxml-method"></a>Metodo IXml2Dex::ReadXML
 
@@ -70,7 +70,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare l'aggiornamento [Microsoft Windows SDK per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

@@ -1,35 +1,35 @@
 ---
 title: Creazione di funzioni di callback di stato
-description: In questa esercitazione viene descritto come creare una funzione di callback di stato utilizzata per monitorare lo stato di una richiesta Internet.
+description: Questa esercitazione descrive come creare una funzione di callback dello stato usata per monitorare lo stato di una richiesta Internet.
 ms.assetid: 518d0800-5ea6-4327-8459-901e6d9a8a5a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1e46040d9b6f93645e2730af287a1955343ec3a
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 30ff2cbaaa35717468c5201b33ce6674245a989330f8041de518e955f96886dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "106300698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117928440"
 ---
 # <a name="creating-status-callback-functions"></a>Creazione di funzioni di callback di stato
 
-In questa esercitazione viene descritto come creare una funzione di callback di stato utilizzata per monitorare lo stato di una richiesta Internet.
+Questa esercitazione descrive come creare una funzione di callback dello stato usata per monitorare lo stato di una richiesta Internet.
 
-Le funzioni di callback di stato ricevono callback di stato in qualsiasi richiesta Internet originata da qualsiasi funzione WinINet a cui è stato passato un valore di contesto diverso da zero.
+Le funzioni di callback di stato ricevono callback di stato su tutte le richieste Internet originate da qualsiasi funzione WinINet a cui è stato passato un valore di contesto diverso da zero.
 
 
-I passaggi seguenti sono necessari per la creazione di una funzione di callback dello stato:
+I passaggi seguenti sono necessari per la creazione di una funzione di callback di stato:
 
-1.  [Definire il valore di contesto.](#defining-the-context-value)
+1.  [Definire il valore del contesto.](#defining-the-context-value)
 2.  [Creare la funzione di callback dello stato.](#creating-status-callback-functions)
 
 ### <a name="defining-the-context-value"></a>Definizione del valore di contesto
 
-Il valore di contesto può essere qualsiasi valore unsigned long integer. Idealmente, il valore del contesto dovrebbe identificare la richiesta appena completata e la posizione di tutte le risorse associate, se necessario.
+Il valore di contesto può essere qualsiasi valore long integer senza segno. Idealmente, il valore di contesto deve identificare la richiesta appena completata e la posizione di tutte le risorse associate, se necessario.
 
-Uno dei modi più utili per usare il valore di contesto è passare l'indirizzo di una struttura ed eseguirne il cast a **un \_ ptr DWORD**. La struttura può essere usata per archiviare le informazioni sulla richiesta, in modo che vengano passate alla funzione di callback dello stato.
+Uno dei modi più utili per usare il valore di contesto è passare l'indirizzo di una struttura ed eseguire il cast a **un \_ PTR DWORD.** La struttura può essere usata per archiviare informazioni sulla richiesta, in modo che sia passata alla funzione di callback dello stato.
 
-La struttura seguente è un esempio di un possibile valore di contesto. I membri della struttura vengono scelti tenendo presente la funzione [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) .
+La struttura seguente è un esempio di un possibile valore di contesto. I membri della struttura vengono scelti in base [**alla funzione InternetOpenUrl.**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla)
 
 
 ```C++
@@ -43,15 +43,15 @@ typedef struct{
 
 
 
-In questo esempio, la funzione di callback dello stato può accedere all'handle della finestra, in modo da consentire la visualizzazione di un'interfaccia utente. L'handle [**HINTERNET**](appendix-a-hinternet-handles.md) creato da [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) può essere passato a un'altra funzione che può scaricare la risorsa e una matrice di caratteri che possono essere usati per passare informazioni sulla richiesta.
+In questo esempio, la funzione di callback di stato avrebbe accesso all'handle della finestra, che consente di visualizzare un'interfaccia utente. [**L'handle HINTERNET**](appendix-a-hinternet-handles.md) creato da [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) può essere passato a un'altra funzione in grado di scaricare la risorsa e una matrice di caratteri che possono essere usati per passare informazioni sulla richiesta.
 
-I membri della struttura possono essere modificati in base alle esigenze di una particolare applicazione, quindi non si ritiene vincolati da questo esempio.
+I membri della struttura possono essere modificati in base alle esigenze di una particolare applicazione, quindi non si considerino vincolati da questo esempio.
 
-### <a name="creating-the-status-callback-function"></a>Creazione della funzione di callback dello stato
+### <a name="creating-the-status-callback-function"></a>Creazione della funzione di callback di stato
 
-La funzione di callback dello stato deve seguire il formato di [*InternetStatusCallback*](/windows/desktop/api/Wininet/nc-wininet-internet_status_callback). Per eseguire questa operazione:
+La funzione di callback dello stato deve seguire il formato [*di InternetStatusCallback*](/windows/desktop/api/Wininet/nc-wininet-internet_status_callback). Per eseguire questa operazione:
 
-1.  Scrivere una dichiarazione di funzione per la funzione di callback dello stato.
+1.  Scrivere una dichiarazione di funzione per la funzione di callback di stato.
 
     Nell'esempio seguente viene illustrata una dichiarazione di esempio.
 
@@ -65,9 +65,9 @@ La funzione di callback dello stato deve seguire il formato di [*InternetStatusC
 
     
 
-2.  Determinare la funzione di callback dello stato. Per le applicazioni che eseguono chiamate asincrone, la funzione di callback dello stato deve gestire il \_ valore di completamento della richiesta di stato Internet \_ \_ , che indica che una richiesta asincrona è stata completata. La funzione di callback dello stato può essere usata anche per tenere traccia dello stato di una richiesta Internet.
+2.  Determinare le funzioni di callback dello stato. Per le applicazioni che effettuano chiamate asincrone, la funzione di callback dello stato deve gestire il valore INTERNET STATUS REQUEST COMPLETE, che indica che una richiesta \_ \_ \_ asincrona è stata completata. La funzione di callback dello stato può essere usata anche per tenere traccia dello stato di una richiesta Internet.
 
-    In generale, è consigliabile usare un'istruzione switch con *dwInternetStatus* come valore di opzione e i valori di stato per le istruzioni case. A seconda dei tipi di funzioni che l'applicazione chiama, è possibile ignorare alcuni valori di stato. Per una definizione dei diversi valori di stato, vedere l'elenco nel parametro *dwInternetStatus* di [*InternetStatusCallback*](/windows/desktop/api/Wininet/nc-wininet-internet_status_callback).
+    In generale, è meglio usare un'istruzione switch con *dwInternetStatus* come valore switch e i valori di stato per le istruzioni case. A seconda dei tipi di funzioni che l'applicazione chiama, è possibile ignorare alcuni dei valori di stato. Per una definizione dei diversi valori di stato, vedere l'elenco nel *parametro dwInternetStatus* di [*InternetStatusCallback*](/windows/desktop/api/Wininet/nc-wininet-internet_status_callback).
 
     L'istruzione switch seguente è un esempio di come gestire i callback di stato.
 
@@ -85,9 +85,9 @@ La funzione di callback dello stato deve seguire il formato di [*InternetStatusC
 
 3.  Creare il codice per gestire i valori di stato.
 
-    Il codice per gestire ognuno dei valori di stato dipende in larga misura dall'uso previsto della funzione di callback dello stato. Per le applicazioni che si limitano a tenere traccia dello stato di avanzamento di una richiesta, è possibile che la scrittura di una stringa in una casella di riepilogo sia sufficiente. Per le operazioni asincrone, il codice deve gestire alcuni dati restituiti nel callback.
+    Il codice per gestire ognuno dei valori di stato dipende principalmente dall'uso previsto della funzione di callback dello stato. Per le applicazioni che stanno semplicemente verificando lo stato di avanzamento di una richiesta, la scrittura di una stringa in una casella di riepilogo potrebbe essere tutto ciò che serve. Per le operazioni asincrone, il codice deve gestire alcuni dei dati restituiti nel callback.
 
-    La funzione di callback di stato seguente usa una funzione switch per determinare il valore di stato e crea una stringa che include il nome del valore di stato e la funzione precedente chiamata, che viene archiviata nel membro szMemo della struttura del contesto della richiesta \_ .
+    La funzione di callback dello stato seguente usa una funzione switch per determinare qual è il valore di stato e crea una stringa che include il nome del valore di stato e la funzione precedente chiamata, archiviata nel membro szMemo della struttura REQUEST \_ CONTEXT.
 
     ```C++
     void __stdcall CallMaster(
@@ -223,7 +223,7 @@ La funzione di callback dello stato deve seguire il formato di [*InternetStatusC
 
     
 
-4.  Utilizzare la funzione [**InternetSetStatusCallback**](/windows/desktop/api/Wininet/nf-wininet-internetsetstatuscallback) per impostare la funzione di callback dello stato sull'handle [**HINTERNET**](appendix-a-hinternet-handles.md) per il quale si desidera ricevere i callback di stato.
+4.  Usare la [**funzione InternetSetStatusCallback**](/windows/desktop/api/Wininet/nf-wininet-internetsetstatuscallback) per impostare la funzione di callback dello stato sull'handle [**HINTERNET**](appendix-a-hinternet-handles.md) per cui si desidera ricevere i callback di stato.
 
     Nell'esempio seguente viene illustrato come impostare una funzione di callback dello stato.
 
@@ -243,7 +243,7 @@ La funzione di callback dello stato deve seguire il formato di [*InternetStatusC
     
 
 > [!Note]  
-> WinINet non supporta le implementazioni del server. Inoltre, non deve essere utilizzato da un servizio. Per le implementazioni o i servizi del server, usare i [Servizi http di Microsoft Windows (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet non supporta le implementazioni del server. Inoltre, non deve essere usato da un servizio. Per le implementazioni o i servizi del server [usare Microsoft Windows servizi HTTP (WinHTTP).](/windows/desktop/WinHttp/winhttp-start-page)
 
  
 

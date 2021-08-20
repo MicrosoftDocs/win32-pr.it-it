@@ -1,7 +1,7 @@
 ---
 description: Rappresenta un'unità disco.
 ms.assetid: f3d853a0-d6e9-45d8-92d3-d233c274238b
-title: Classe CIM_DiskDrive (gestione Hyper-V)
+title: CIM_DiskDrive classe (gestione Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7d377d101edeabcbd88a4dac4897b7373a568e2b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58b2b1e0a0964e83c15c3b2c4ea170c51efc9bb3b71a4d6cfe7ec1e3d8af2a12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812737"
 ---
-# <a name="cim_diskdrive-class-hyper-v-management"></a>Classe CIM_DiskDrive (gestione Hyper-V)
+# <a name="cim_diskdrive-class-hyper-v-management"></a>CIM_DiskDrive classe (gestione Hyper-V)
 
 Rappresenta un'unità disco.
 
@@ -35,7 +35,7 @@ class CIM_DiskDrive : CIM_MediaAccessDevice
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ DiskDrive** non definisce membri.
+La **classe CIM \_ DiskDrive** non definisce membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,8 +45,8 @@ La classe **CIM \_ DiskDrive** non definisce membri.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -55,7 +55,7 @@ La classe **CIM \_ DiskDrive** non definisce membri.
 
 <dl> <dt>
 
-[**\_MEDIAACCESSDEVICE CIM**](cim-mediaaccessdevice.md)
+[**CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md)
 </dt> </dl>
 
  

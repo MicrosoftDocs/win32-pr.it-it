@@ -1,19 +1,19 @@
 ---
-description: Data principale di interesse per un elemento. Nel caso di foto, ad esempio, questa proprietà esegue il mapping a System. Photo. DateTaken.
+description: Data primaria di interesse per un elemento. Nel caso di foto, ad esempio, questa proprietà esegue il mapping a System.Photo.DateTaken.
 ms.assetid: 36809167-5ce2-4394-bbe8-474c9e5ec204
-title: System. ItemDate
+title: System.ItemDate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 959cc82fd372c1816a9b2c1172cb2aeccf39b0c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23ad9bb8a7bb74b7096f7899256ce3b8e432f9aed4abefd76b129f71181ee6ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117865859"
 ---
-# <a name="systemitemdate"></a>System. ItemDate
+# <a name="systemitemdate"></a>System.ItemDate
 
-Data principale di interesse per un elemento. Nel caso di foto, ad esempio, questa proprietà esegue il mapping a [System. Photo. DateTaken](./props-system-photo-datetaken.md).
+Data primaria di interesse per un elemento. Nel caso di foto, ad esempio, questa proprietà esegue il mapping a [System.Photo.DateTaken](./props-system-photo-datetaken.md).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -48,13 +48,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -78,13 +78,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

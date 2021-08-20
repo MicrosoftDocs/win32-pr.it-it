@@ -1,9 +1,9 @@
 ---
-title: SLIDER. Slide
-description: L'attributo Slide specifica o recupera un valore che indica se l'immagine in primo piano scorre sull'immagine di sfondo o viene rivelata gradualmente in una posizione statica sull'immagine di sfondo.
+title: SLIDER.slide
+description: L'attributo slide specifica o recupera un valore che indica se l'immagine in primo piano scorre sull'immagine di sfondo o viene gradualmente rivelata in una posizione statica sull'immagine di sfondo.
 ms.assetid: dc68c2a0-d3fe-4984-9607-12703a27edbd
 keywords:
-- Media Player SLIDER. Slide Windows
+- Slider.slide Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b9f79b5016b323380c5a4d06c8af7ab5fb0b8a2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ec5d1a9480a171372ff5c90990d07bd583bd880570472b25af8d1ada945b31a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117933509"
 ---
-# <a name="sliderslide"></a>SLIDER. Slide
+# <a name="sliderslide"></a>SLIDER.slide
 
-L'attributo **Slide** specifica o recupera un valore che indica se l'immagine in primo piano scorre sull'immagine di sfondo o viene rivelata gradualmente in una posizione statica sull'immagine di sfondo.
+**L'attributo slide** specifica o recupera un valore che indica se l'immagine in primo piano scorre sull'immagine di sfondo o viene gradualmente rivelata in una posizione statica sull'immagine di sfondo.
 
 ``` syntax
         elementID.slide
@@ -29,14 +29,14 @@ L'attributo **Slide** specifica o recupera un valore che indica se l'immagine in
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **valore booleano** di lettura/scrittura.
+Questo attributo è un valore booleano di **lettura/scrittura.**
 
 
 
 | Valore | Descrizione                                                          |
 |-------|----------------------------------------------------------------------|
-| true  | Valore predefinito. L'immagine di primo piano scorre sull'immagine di sfondo.      |
-| false | L'immagine in primo piano viene rivelata sul posto sull'immagine di sfondo. |
+| true  | Valore predefinito. L'immagine in primo piano scorre sull'immagine di sfondo.      |
+| false | L'immagine in primo piano viene rivelata sul posto rispetto all'immagine di sfondo. |
 
 
 
@@ -44,7 +44,7 @@ Questo attributo è un **valore booleano** di lettura/scrittura.
 
 ## <a name="remarks"></a>Commenti
 
-Quando il dispositivo di scorrimento **thumbImage** viene spostato con il mouse, se la **diapositiva** è impostata su true, l'immagine in primo piano scorre come se venisse premuto dal dispositivo di scorrimento per coprire l'immagine di sfondo. Se la **diapositiva** è impostata su false, l'immagine in primo piano non viene spostata, ma viene rivelata sul posto, come se il dispositivo di scorrimento spostasse l'immagine di sfondo dall'immagine in primo piano.
+Quando il dispositivo **di scorrimento thumbImage** viene spostato con il mouse, se la diapositiva è impostata su true, l'immagine in primo piano scorre come se fosse trascinata dal dispositivo di scorrimento per coprire l'immagine di sfondo.  Se **la diapositiva** è impostata su false, l'immagine in primo piano non si sposta, ma viene rivelata sul posto, come se il dispositivo di scorrimento sposta l'immagine di sfondo fuori dall'immagine in primo piano.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,7 +52,7 @@ Quando il dispositivo di scorrimento **thumbImage** viene spostato con il mouse,
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -63,10 +63,10 @@ Quando il dispositivo di scorrimento **thumbImage** viene spostato con il mouse,
 [**Elemento SLIDER**](slider-element.md)
 </dt> <dt>
 
-[**SLIDER. backgroundImage**](slider-backgroundimage.md)
+[**SLIDER.backgroundImage**](slider-backgroundimage.md)
 </dt> <dt>
 
-[**SLIDER. foregroundImage**](slider-foregroundimage.md)
+[**SLIDER.foregroundImage**](slider-foregroundimage.md)
 </dt> </dl>
 
  

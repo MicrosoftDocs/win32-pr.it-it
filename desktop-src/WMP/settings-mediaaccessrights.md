@@ -1,9 +1,9 @@
 ---
-title: Settings. mediaAccessRights
+title: Impostazioni.mediaAccessRights
 description: La proprietà mediaAccessRights recupera un valore che indica i diritti attualmente concessi per l'accesso alla libreria.
 ms.assetid: 744e696d-29d2-44b1-a296-5b5d007b689f
 keywords:
-- Impostazioni. mediaAccessRights Windows Media Player
+- Impostazioni.mediaAccessRights Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,30 +14,30 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 36bcfb667a1aa09e84ae90324736291d421a3941
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 23b78543adcdc36958c6fb2f8e4ea191156bd8c600112e4bd6e5d6e6f5427974
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117933661"
 ---
-# <a name="settingsmediaaccessrights"></a>Settings. mediaAccessRights
+# <a name="settingsmediaaccessrights"></a>Impostazioni.mediaAccessRights
 
-La proprietà **mediaAccessRights** recupera un valore che indica i diritti attualmente concessi per l'accesso alla libreria.
+La **proprietà mediaAccessRights** recupera un valore che indica i diritti attualmente concessi per l'accesso alla libreria.
 
 ## <a name="syntax"></a>Sintassi
 
-Player. Settings. mediaAccessRights
+player.settings.mediaAccessRights
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è una **stringa** di sola lettura.
+Questa proprietà è una stringa di sola **lettura.**
 
 
 
 | Valore | Descrizione                      |
 |-------|----------------------------------|
-| Nessuno  | Solo diritti di accesso agli elementi correnti. |
+| Nessuno  | Diritti di accesso all'elemento corrente. |
 | lettura  | Solo diritti di accesso in lettura.         |
 | completi  | Diritti di accesso in lettura/scrittura.        |
 
@@ -47,9 +47,9 @@ Questa proprietà è una **stringa** di sola lettura.
 
 ## <a name="remarks"></a>Commenti
 
-Una pagina Web deve prima richiedere all'utente l'autorizzazione per la lettura o la scrittura di dati nella libreria. Ciò significa che determinati metodi, proprietà ed eventi saranno inaccessibili dal codice se non sono stati concessi i diritti di accesso appropriati. Per ottenere i diritti di accesso, l'applicazione chiama *le impostazioni*. **requestMediaAccessRights**, passando un parametro che specifica il livello di diritti di accesso desiderato.
+Una pagina Web deve prima richiedere all'utente l'autorizzazione per leggere o scrivere dati nella libreria. Ciò significa che determinati metodi, proprietà ed eventi non saranno accessibili dal codice se non sono stati concessi i diritti di accesso appropriati. Per ottenere i diritti di accesso, l'applicazione *chiama Impostazioni*. **requestMediaAccessRights**, passando un parametro che specifica il livello di diritti di accesso desiderato.
 
-**Windows Media Player 10 Mobile**: questa proprietà restituisce sempre **full**.
+**Windows Media Player 10 Mobile:** questa proprietà restituisce sempre **full.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,7 +57,7 @@ Una pagina Web deve prima richiedere all'utente l'autorizzazione per la lettura 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva.<br/>                                 |
+| Versione<br/> | Windows Media Player serie 9 o successive.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -66,10 +66,10 @@ Una pagina Web deve prima richiedere all'utente l'autorizzazione per la lettura 
 
 <dl> <dt>
 
-[**Oggetto Settings**](settings-object.md)
+[**Impostazioni Oggetto**](settings-object.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

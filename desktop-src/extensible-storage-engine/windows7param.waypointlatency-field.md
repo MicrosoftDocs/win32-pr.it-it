@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: campo Windows7Param. WaypointLatency'
-title: Campo Windows7Param. WaypointLatency (Microsoft. ISAM. esent. Interop. Windows7)
+description: 'Altre informazioni su: Campo Windows7Param.WaypointLatency'
+title: Campo Windows7Param.WaypointLatency (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: WaypointLatency field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows7.Windows7Param.WaypointLatency
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.windows7param.waypointlatency(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4c999c288e2eb3ee2eed61795cd446b25ea0fb48
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a37af33828eb1a1e1f7218ee49c602eeec661894d433e599e2d43bbdb734f75c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117700838"
 ---
-# <a name="windows7paramwaypointlatency-field"></a>Campo Windows7Param. WaypointLatency
+# <a name="windows7paramwaypointlatency-field"></a>Campo Windows7Param.WaypointLatency
 
-Questo parametro imposta il numero di registri per i quali ESENT rinvia il database. Questa operazione può essere utilizzata per aumentare la recuperabilità del database se gli errori determinano la perdita di file di registro.
+Questo parametro imposta il numero di log per cui esent rinviare gli scaricamenti del database. Può essere usato per aumentare la recuperabilità del database se gli errori causano la perdita dei file di log.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,4 +61,4 @@ public const JET_param WaypointLatency
 
 [Membri di Windows7Param](./windows7param-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)

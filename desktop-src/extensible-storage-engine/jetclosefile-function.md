@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetCloseFile'
-title: JetCloseFile (funzione)
+description: Altre informazioni sulla funzione JetCloseFile
+title: Funzione JetCloseFile
 TOCTitle: JetCloseFile Function
 ms:assetid: e8930915-8102-44b0-ae42-abedbd3e0512
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294127(v=EXCHG.10)
@@ -18,21 +18,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 29fc2c76bf8528956d3e3331b3c2f23bf52f929f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b22f1454cad9962d429a497acb2b91f92d44b3e9a43c36ddb74cde06a54782c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118072894"
 ---
-# <a name="jetclosefile-function"></a>JetCloseFile (funzione)
+# <a name="jetclosefile-function"></a>Funzione JetCloseFile
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jetclosefile-function"></a>JetCloseFile (funzione)
+## <a name="jetclosefile-function"></a>Funzione JetCloseFile
 
-La funzione **JetCloseFile** chiude un file aperto con [JetOpenFile](./jetopenfile-function.md) dopo l'estrazione dei dati da tale file con [JetReadFile](./jetreadfile-function.md).
+La **funzione JetCloseFile** chiude un file aperto con [JetOpenFile](./jetopenfile-function.md) dopo l'estrazione dei dati da tale file [tramite JetReadFile](./jetreadfile-function.md).
 
 ```cpp
     JET_ERR JET_API JetCloseFile(
@@ -48,7 +48,7 @@ Handle del file da leggere.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -68,18 +68,18 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono state interrotte in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
+<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono affatto in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede che l'accesso a tutti i dati venga revocato per proteggere l'integrità dei dati.</p>
+<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati.</p>
 <p>Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidParameter</p></td>
-<td><p>Uno dei parametri forniti contiene un valore imprevisto o contiene un valore che non ha senso se combinato con il valore di un altro parametro. Questo problema può verificarsi per <strong>JetCloseFile</strong> quando:</p>
+<td><p>Uno dei parametri forniti contiene un valore imprevisto o contiene un valore che non ha senso se combinato con il valore di un altro parametro. Questa operazione può verificarsi <strong>per JetCloseFile</strong> quando:</p>
 <ul>
-<li><p>L'handle dell'istanza specificato non è valido (Windows XP e versioni successive),</p></li>
+<li><p>L'handle di istanza specificato non è valido (Windows XP e versioni successive).</p></li>
 <li><p>L'handle di file specificato non è valido.</p></li>
 </ul></td>
 </tr>
@@ -93,27 +93,27 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="odd">
 <td><p>JET_errRestoreInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino sull'istanza associata alla sessione.</p></td>
+<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errRunningInMultiInstanceMode</p></td>
-<td><p>L'operazione non è riuscita perché è stato effettuato un tentativo di usare il motore in modalità legacy (modalità di compatibilità di Windows 2000) in cui è supportata una sola istanza quando sono già presenti più istanze.</p></td>
+<td><p>L'operazione non è riuscita perché è stato effettuato un tentativo di usare il motore in modalità legacy (modalità di compatibilità Windows 2000) in cui è supportata una sola istanza quando in realtà esistono già più istanze.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errTermInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione viene arrestata.</p></td>
+<td><p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-In seguito all'esito positivo, l'handle di file viene chiuso. Se un file di database è stato chiuso, il file di patch del database associato (se presente) viene eliminato definitivamente.
+In caso di esito positivo, l'handle di file viene chiuso. Se un file di database è stato chiuso, il file di patch del database associato (se presente) viene eliminato.
 
 In caso di errore, non si verifica alcuna modifica.
 
 #### <a name="remarks"></a>Commenti
 
-Attualmente, il motore di database supporta un solo file aperto tramite [JetOpenFile](./jetopenfile-function.md) alla volta. Se un handle di file viene aperto utilizzando [JetOpenFile](./jetopenfile-function.md) , è necessario chiuderlo utilizzando **JetCloseFile** prima di poter aprire un altro file.
+Il motore di database supporta attualmente un solo file aperto alla volta tramite [JetOpenFile.](./jetopenfile-function.md) Se un handle di file viene aperto [tramite JetOpenFile,](./jetopenfile-function.md) è necessario chiuderlo usando **JetCloseFile** prima di poter aprire un altro file.
 
 #### <a name="requirements"></a>Requisiti
 
@@ -133,11 +133,11 @@ Attualmente, il motore di database supporta un solo file aperto tramite [JetOpen
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
+<td><p>Usare ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>

@@ -1,6 +1,6 @@
 ---
-title: Costanti IMAPi
-description: IMAPi definisce le costanti seguenti.
+title: Costanti IMAPI
+description: IMAPI definisce le costanti seguenti.
 ms.assetid: 3ae67227-1cee-4e9c-a7fe-228de596030a
 topic_type:
 - apiref
@@ -15,25 +15,25 @@ api_type:
 - IDLDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb8c6ac1d855509e67ce5e066410f107172d2ad2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ff6eafacf5612daad90c8c4fafdaa4ddc3c0e54ac5d38938a0e2a2c790ed45ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106300980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117884810"
 ---
-# <a name="imapi-constants"></a>Costanti IMAPi
+# <a name="imapi-constants"></a>Costanti IMAPI
 
-IMAPi definisce le costanti seguenti.
+IMAPI definisce le costanti seguenti.
 
 
 
 | Costante                                                                                                                                                                                                                          | Descrizione                                                                              |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------|
-| <span id="IMAPI_SECTOR_SIZE"></span><span id="imapi_sector_size"></span><dl> <dt>**\_dimensioni settore IMAPI \_**</dt> </dl>                                                        | Numero di byte in un settore.<br/>                                                  |
-| <span id="IMAPI_SECTORS_PER_SECOND_AT_1X_CD"></span><span id="imapi_sectors_per_second_at_1x_cd"></span><dl> <dt>**\_Settori IMAPI \_ al \_ secondo \_ in \_ 1x \_ CD**</dt> </dl>    | Frequenza di base della velocità di rotazione di un CD, misurata in settori al secondo.<br/>           |
-| <span id="IMAPI_SECTORS_PER_SECOND_AT_1X_DVD"></span><span id="imapi_sectors_per_second_at_1x_dvd"></span><dl> <dt>**\_Settori IMAPI \_ al \_ secondo \_ in \_ 1x \_ DVD**</dt> </dl> | Frequenza di base della velocità di rotazione di un DVD, misurata in settori al secondo.<br/>          |
-| <span id="IMAPI_SECTORS_PER_SECOND_AT_1X_BD"></span><span id="imapi_sectors_per_second_at_1x_bd"></span><dl> <dt>**Settori IMAPi al \_ \_ \_ secondo \_ in \_ 1x \_ BD**</dt> </dl>    | Velocità di base della velocità di rotazione di un disco Blu-ray, misurata in settori al secondo.<br/> |
+| <span id="IMAPI_SECTOR_SIZE"></span><span id="imapi_sector_size"></span><dl> <dt>**DIMENSIONI DEL SETTORE IMAPI \_ \_**</dt> </dl>                                                        | Numero di byte in un settore.<br/>                                                  |
+| <span id="IMAPI_SECTORS_PER_SECOND_AT_1X_CD"></span><span id="imapi_sectors_per_second_at_1x_cd"></span><dl> <dt>**SETTORI IMAPI \_ \_ AL SECONDO A \_ \_ \_ 1X \_ CD**</dt> </dl>    | Velocità di base della rotazione di un CD, misurata in settori al secondo.<br/>           |
+| <span id="IMAPI_SECTORS_PER_SECOND_AT_1X_DVD"></span><span id="imapi_sectors_per_second_at_1x_dvd"></span><dl> <dt>**SETTORI IMAPI \_ AL SECONDO IN DVD \_ \_ \_ \_ 1X \_**</dt> </dl> | Velocità di base di rotazione di un DVD, misurata in settori al secondo.<br/>          |
+| <span id="IMAPI_SECTORS_PER_SECOND_AT_1X_BD"></span><span id="imapi_sectors_per_second_at_1x_bd"></span><dl> <dt>**SETTORI IMAPI \_ \_ AL SECONDO A \_ \_ \_ 1X \_ BD**</dt> </dl>    | Velocità di base della rotazione di un disco Blu-ray, misurata in settori al secondo.<br/> |
 
 
 
@@ -43,9 +43,9 @@ IMAPi definisce le costanti seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista, \[ solo app desktop Windows XP con SP2\]<br/>                   |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| IDL<br/>                      | <dl> <dt>Imapi2. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Vista, Windows XP solo con app desktop SP2 \[\]<br/>                   |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Idl<br/>                      | <dl> <dt>Imapi2.idl</dt> </dl> |
 
 
 

@@ -1,21 +1,21 @@
 ---
-description: L'ultima proprietà di riepilogo Data/ora salvata indica l'ultima volta in cui il pacchetto di installazione, la trasformazione o il pacchetto di patch è stato modified.Initially, un autore deve impostare il valore dell'ultima proprietà tempo/data di riepilogo salvata su null per indicare che non sono ancora state apportate modifiche al pacchetto. Un autore deve quindi aggiornare la proprietà di riepilogo Data e ora dell'Ultima modifica alla data/ora di sistema corrente ogni volta che viene salvato un database di installazione, una trasformazione o un pacchetto di patch modificato.
+description: La proprietà Last Saved Time/Date Summary indica l'ultima volta in cui il pacchetto di installazione, trasformazione o patch è stato modified.Inimodo ordinato, un autore deve impostare il valore della proprietà Last Saved Time/Date Summary su Null per indicare che non sono ancora state apportate modifiche al pacchetto. Un autore deve quindi aggiornare la proprietà Last Saved Time/Date Summary all'ora/data di sistema corrente ogni volta che viene salvato un database di installazione modificato, una trasformazione o un pacchetto patch.
 ms.assetid: be3957fa-463a-4eb2-8b9d-93a16e95a8cf
-title: Ultima proprietà di riepilogo Data/ora di salvataggio
+title: Proprietà Riepilogo data/ora ultimo salvataggio
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bfe2300640434a52a78575221dc69e0f7263883
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 83ee32a6c8eb92a159eec39db04e06f28b2918b4f02b1b957f14022d1890563d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117805565"
 ---
-# <a name="last-saved-timedate-summary-property"></a>Ultima proprietà di riepilogo Data/ora di salvataggio
+# <a name="last-saved-timedate-summary-property"></a>Proprietà Riepilogo data/ora ultimo salvataggio
 
-L' **ultima proprietà di riepilogo Data/ora salvata** comunica l'ultima volta in cui il pacchetto di installazione, la trasformazione o il pacchetto di patch è stato modificato.
+La **proprietà Last Saved Time/Date Summary** indica l'ora dell'ultima modifica di questo pacchetto di installazione, trasformazione o patch.
 
-Inizialmente, un autore deve impostare il valore dell'ultima proprietà di **Riepilogo Data/ora salvata** su null per indicare che non sono ancora state apportate modifiche al pacchetto. Un autore deve quindi aggiornare la proprietà di **Riepilogo Data e ora dell'ultima** modifica alla data/ora di sistema corrente ogni volta che viene salvato un database di installazione, una trasformazione o un pacchetto di patch modificato.
+Inizialmente, un autore deve impostare il valore della proprietà **Last Saved Time/Date Summary** su Null per indicare che non sono ancora state apportate modifiche al pacchetto. Un autore deve quindi aggiornare la proprietà Last **Saved Time/Date Summary** all'ora/data di sistema corrente ogni volta che viene salvato un database di installazione modificato, una trasformazione o un pacchetto patch.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -23,7 +23,7 @@ Inizialmente, un autore deve impostare il valore dell'ultima proprietà di **Rie
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 
 
 

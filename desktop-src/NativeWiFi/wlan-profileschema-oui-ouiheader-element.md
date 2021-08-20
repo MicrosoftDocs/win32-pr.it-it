@@ -1,5 +1,5 @@
 ---
-description: Contiene un hexBinary di 3 byte che identifica IHV.
+description: Contiene un oggetto hexBinary a 3 byte che identifica l'IHV.
 ms.assetid: 0b2e73fb-df3a-48c4-b38d-970c37de46eb
 title: Elemento OUI (OUIHeader)
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 49a9cceffb308c64c8d1addf7c257b422751661f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ae1ed2481da09a9ab34c62b592860b1b3b8be35d2d8da3a86676f00bb880210b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117797901"
 ---
 # <a name="oui-ouiheader-element"></a>Elemento OUI (OUIHeader)
 
-L'elemento OUI (OUIHeader) contiene un hexBinary di 3 byte che identifica IHV.
+L'elemento OUI (OUIHeader) contiene un elemento hexBinary a 3 byte che identifica l'IHV.
 
 **Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** Questo elemento non è supportato.
 
@@ -39,7 +39,7 @@ L'elemento OUI (OUIHeader) contiene un hexBinary di 3 byte che identifica IHV.
 </xs:element>
 ```
 
-L'elemento è definito dall'elemento [**OUIHeader**](wlan-profileschema-ouiheader-ihv-element.md) .
+L'elemento è definito [**dall'elemento OUIHeader.**](wlan-profileschema-ouiheader-ihv-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,8 +47,8 @@ L'elemento è definito dall'elemento [**OUIHeader**](wlan-profileschema-ouiheade
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -62,7 +62,7 @@ L'elemento è definito dall'elemento [**OUIHeader**](wlan-profileschema-ouiheade
 [**OUIHeader**](wlan-profileschema-ouiheader-ihv-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**OUIHeader (IHV)**](wlan-profileschema-ouiheader-ihv-element.md)

@@ -1,8 +1,8 @@
 ---
-description: Utilizzare la proprietà Count dell'oggetto SWbemNamedValueSet per determinare il numero di elementi presenti nella raccolta. Questa proprietà è di sola lettura.
+description: Usare la proprietà Count dell'oggetto SWbemNamedValueSet per determinare il numero di elementi presenti nella raccolta. Questa proprietà è di sola lettura.
 ms.assetid: 4086cf91-69cd-4bce-a6e0-f223b18cd18d
 ms.tgt_platform: multiple
-title: Proprietà SWbemNamedValueSet. Count (wbemdisp. h)
+title: Proprietà SWbemNamedValueSet.Count (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: a32602ebcc279685ff1d1e2e6c837d1a39b7a8d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9d7fc4d9a703282f2ce7b17d00b8e7cdb330d782bc7997751f03b0b50f09219
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117922493"
 ---
-# <a name="swbemnamedvaluesetcount-property"></a>Proprietà SWbemNamedValueSet. Count
+# <a name="swbemnamedvaluesetcount-property"></a>SWbemNamedValueSet.Count - proprietà
 
-Utilizzare la proprietà **count** dell'oggetto [**SWbemNamedValueSet**](swbemnamedvalueset.md) per determinare il numero di elementi presenti nella raccolta. Questa proprietà è di sola lettura.
+Usare la **proprietà Count** dell'oggetto [**SWbemNamedValueSet**](swbemnamedvalueset.md) per determinare il numero di elementi presenti nella raccolta. Questa proprietà è di sola lettura.
 
-Per una spiegazione di questa sintassi, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Questa proprietà è di sola lettura.
 
@@ -50,11 +50,11 @@ SWbemNamedValueSet.Count As Integer
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMNAMEDVALUESET CLSID<br/>                                                    |
-| IID<br/>                      | \_ISWBEMNAMEDVALUESET IID<br/>                                                     |
+| CLSID<br/>                    | CLSID \_ SWbemNamedValueSet<br/>                                                    |
+| IID<br/>                      | IID \_ ISWbemNamedValueSet<br/>                                                     |
 
 
 

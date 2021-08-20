@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: JET_COLUMNDEF metodi'
+description: 'Altre informazioni su: JET_COLUMNDEF seguenti'
 title: JET_COLUMNDEF metodi
 TOCTitle: JET_COLUMNDEF methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_COLUMNDEF
@@ -17,9 +17,9 @@ ms.locfileid: "118075989"
 # <a name="jet_columndef-methods"></a>JET_COLUMNDEF metodi
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
-Il [JET_COLUMNDEF](./jet-columndef-class.md) tipo espone i membri seguenti.
+Il [JET_COLUMNDEF](./jet-columndef-class.md) espone i membri seguenti.
 
 ## <a name="methods"></a>Metodi
 
@@ -35,7 +35,7 @@ Il [JET_COLUMNDEF](./jet-columndef-class.md) tipo espone i membri seguenti.
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn335074(v=exchg.10).md">ContentEquals</a></td>
-<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza.</td>
+<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza di .</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
@@ -49,7 +49,7 @@ Il [JET_COLUMNDEF](./jet-columndef-class.md) tipo espone i membri seguenti.
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizzare</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizza</a></td>
 <td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
@@ -70,7 +70,7 @@ Il [JET_COLUMNDEF](./jet-columndef-class.md) tipo espone i membri seguenti.
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn335039(v=exchg.10).md">ToString</a></td>
-<td>Restituisce un <a href="/dotnet/api/system.string">oggetto String</a> che rappresenta l'oggetto <a href="dn335038(v=exchg.10).md">JET_COLUMNDEF</a>. Esegue l'override <a href="/dotnet/api/system.object.tostring#System_Object_ToString">di Object.ToString()</a>.</td>
+<td>Restituisce un <a href="/dotnet/api/system.string">oggetto String</a> che rappresenta l'oggetto <a href="dn335038(v=exchg.10).md">JET_COLUMNDEF</a>. Esegue l'override <a href="/dotnet/api/system.object.tostring#System_Object_ToString">di Object.ToString().</a></td>
 </tr>
 </tbody>
 </table>

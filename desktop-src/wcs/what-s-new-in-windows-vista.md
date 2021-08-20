@@ -1,40 +1,40 @@
 ---
 title: Novità di Windows Vista
-description: La versione 1,0 di gestione colori immagine (ICM) è stata distribuita in Microsoft Windows 95 e fornisce funzionalità di base per la gestione dei colori nei contesti di dispositivi Windows.
+description: La versione 1.0 di Gestione colori immagine (ICM) è stata fornita in Microsoft Windows 95 e offre funzionalità di base per la gestione dei colori all'interno Windows contesti di dispositivo.
 ms.assetid: 3079f84c-0d6c-4f87-a041-de86f5f7d99b
 keywords:
-- Windows Color System (WCS), Windows Vista
-- WCS (Windows Color System), Windows Vista
-- Gestione colori immagine, Windows Vista
+- Windows Sistema colori (WCS), Windows Vista
+- WCS (Windows Color System),Windows Vista
+- gestione dei colori delle immagini, Windows Vista
 - gestione dei colori, Windows Vista
 - colori, Windows Vista
-- Sistema di colori Windows (WCS), sistemi operativi
-- WCS (sistema di colori Windows), sistemi operativi
-- Gestione colori immagine, sistemi operativi
+- Windows Sistema colori (WCS), sistemi operativi
+- WCS (Windows Color System),sistemi operativi
+- gestione dei colori delle immagini, sistemi operativi
 - gestione dei colori, sistemi operativi
 - colori, sistemi operativi
 - Gestione colori immagine (ICM)
-- ICM (gestione colori immagine)
-- Gestione dei colori di Windows Vista
+- ICM (Gestione colori immagine)
+- Windows Gestione dei colori di Vista
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b889dd0ba3b044f0d0f158bd2364f5c3216ec39
-ms.sourcegitcommit: 3f366316c02c411c4c5e14620a699f6f30608634
+ms.openlocfilehash: a3f6c3313a1b7ca78f0f4d3436d7bb2017b0fa794291b4bd765651aa0321166d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "106320205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117670737"
 ---
 # <a name="whats-new-in-windows-vista"></a>Novità di Windows Vista
 
-La versione 1,0 di gestione colori immagine (ICM) è stata distribuita in Microsoft Windows 95 e fornisce funzionalità di base per la gestione dei colori nei contesti di dispositivi Windows.
+La versione 1.0 di Gestione colori immagine (ICM) è stata fornita in Microsoft Windows 95 e offre funzionalità di base per la gestione dei colori all'interno Windows contesti di dispositivo.
 
-ICM versione 2,0 è stato fornito in Windows 98, Windows Millennium Edition, Windows 2000 e WindowsXP ed è stata inclusa un'ampia gamma di nuove funzioni che implementavano la gestione dei colori all'esterno dei contesti di dispositivo. Queste nuove funzioni erano adatte per requisiti di gestione dei colori più complessi e davano alle applicazioni un maggiore controllo sul processo di gestione dei colori.
+ICM versione 2.0 è stata recapitata in Windows 98, Windows Millennium Edition, Windows 2000 e WindowsXP ed è stata inclusa un'ampia gamma di nuove funzioni che implementavano la gestione dei colori al di fuori dei contesti di dispositivo. Queste nuove funzioni erano adatte per requisiti di gestione dei colori più impegnativi e hanno offerto alle applicazioni un maggiore controllo sul processo di gestione dei colori.
 
-Con il rilascio di Windows Vista, ICM 2,0 è ora incluso in Windows Color System (WCS) 1,0, che aggiunge altre funzionalità. Nella tabella seguente sono elencate le nuove API (Application Programming Interface) fornite in Windows Vista.
+Con il rilascio di Windows Vista, ICM 2.0 è ora incluso in Windows Color System (WCS) 1.0, che aggiunge altre funzionalità. La tabella seguente elenca le nuove API (Application Programming Interface) disponibili in Windows Vista.
 
-## <a name="new-api-shipping-in-windows-vista"></a>Nuove API per la distribuzione in Windows Vista
+## <a name="new-api-shipping-in-windows-vista"></a>Nuova distribuzione di API in Windows Vista
 
 
 
@@ -48,27 +48,27 @@ Libreria
 
 [**COLORDATATYPE**](/windows/win32/api/icm/ne-icm-colordatatype)
 
-ICM. h
+icm.h
 
-mscms. lib
+mscms.lib
 
 [**COLORPROFILESUBTYPE**](/windows/win32/api/icm/ne-icm-colorprofilesubtype)
 
-ICM. h
+icm.h
 
-mscms. lib
+mscms.lib
 
 [**COLORPROFILETYPE**](/windows/win32/api/icm/ne-icm-colorprofiletype)
 
-ICM. h
+icm.h
 
-mscms. lib
+mscms.lib
 
-[**\_ambito di \_ gestione del profilo WCS \_**](/windows/win32/api/icm/ne-icm-wcs_profile_management_scope)
+[**AMBITO DI \_ GESTIONE DEI \_ PROFILI WCS \_**](/windows/win32/api/icm/ne-icm-wcs_profile_management_scope)
 
-ICM. h
+icm.h
 
-mscms. lib
+mscms.lib
 
 
 
@@ -86,93 +86,93 @@ Libreria
 
 [**WcsAssociateColorProfileWithDevice**](/windows/win32/api/icm/nf-icm-wcsassociatecolorprofilewithdevice)
 
-ICM. h
+icm.h
 
-mscms. lib
+mscms.lib
 
 [**WcsCheckColors**](/windows/win32/api/icm/nf-icm-wcsassociatecolorprofilewithdevice)
 
-ICM. h
+icm.h
 
-mscms. lib
+mscms.lib
 
 [**WcsCreateIccProfile**](/windows/win32/api/icm/nf-icm-wcscreateiccprofile)
 
-ICM. h
+icm.h
 
-mscms. lib
+mscms.lib
 
 [**WcsDisassociateColorProfileFromDevice**](/windows/win32/api/icm/nf-icm-wcsdisassociatecolorprofilefromdevice)
 
-ICM. h
+icm.h
 
-mscms. lib
+mscms.lib
 
 [**WcsEnumColorProfiles**](/windows/win32/api/icm/nf-icm-wcsenumcolorprofiles)
 
-ICM. h
+icm.h
 
-mscms. lib
+mscms.lib
 
 [**WcsEnumColorProfilesSize**](/windows/win32/api/icm/nf-icm-wcsenumcolorprofilessize)
 
-ICM. h
+icm.h
 
-mscms. lib
+mscms.lib
 
 [**WcsGetDefaultColorProfile**](/windows/win32/api/icm/nf-icm-wcsgetdefaultcolorprofile)
 
-ICM. h
+icm.h
 
-mscms. lib
+mscms.lib
 
 [**WcsGetDefaultColorProfileSize**](/windows/win32/api/icm/nf-icm-wcsgetdefaultcolorprofilesize)
 
-ICM. h
+icm.h
 
-mscms. lib
+mscms.lib
 
 [**WcsGetDefaultRenderingIntent**](/windows/win32/api/icm/nf-icm-wcsgetdefaultrenderingintent)
 
-ICM. h
+icm.h
 
-mscms. lib
+mscms.lib
 
 [**WcsGetUsePerUserProfiles**](/windows/win32/api/icm/nf-icm-wcsgetdefaultrenderingintent)
 
-ICM. h
+icm.h
 
-mscms. lib
+mscms.lib
 
 [**WcsOpenColorProfileW**](/windows/win32/api/icm/nf-icm-wcsopencolorprofilew)
 
-ICM. h
+icm.h
 
-mscms. lib
+mscms.lib
 
 [**WcsSetDefaultColorProfile**](/windows/win32/api/icm/nf-icm-wcssetdefaultcolorprofile)
 
-ICM. h
+icm.h
 
-mscms. lib
+mscms.lib
 
 [**WcsSetDefaultRenderingIntent**](/windows/win32/api/icm/nf-icm-wcssetdefaultrenderingintent)
 
-ICM. h
+icm.h
 
-mscms. lib
+mscms.lib
 
 [**WcsSetUsePerUserProfiles**](/windows/win32/api/icm/nf-icm-wcssetuseperuserprofiles)
 
-ICM. h
+icm.h
 
-mscms. lib
+mscms.lib
 
 [**WcsTranslateColors**](/windows/win32/api/icm/nf-icm-wcstranslatecolors)
 
-ICM. h
+icm.h
 
-mscms. lib
+mscms.lib
 
 
 
@@ -190,93 +190,93 @@ Libreria
 
 [**IDeviceModelPlugin**](/previous-versions/windows/desktop/api/wcsplugin/nn-wcsplugin-idevicemodelplugin)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**IDeviceModelPlugin::ColorimetricToDeviceColors**](/windows/win32/api/wcsplugin/nf-wcsplugin-idevicemodelplugin-colorimetrictodevicecolors)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**IDeviceModelPlugin::ColorimetricToDeviceColorsWithBlack**](/windows/win32/api/wcsplugin/nf-wcsplugin-idevicemodelplugin-colorimetrictodevicecolorswithblack)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**IDeviceModelPlugin::D eviceToColorimetricColors**](/windows/win32/api/wcsplugin/nf-wcsplugin-idevicemodelplugin-devicetocolorimetriccolors)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**IDeviceModelPlugin::GetGamutBoundaryMesh**](/windows/win32/api/wcsplugin/nf-wcsplugin-idevicemodelplugin-getgamutboundarymesh)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**IDeviceModelPlugin::GetGamutBoundaryMeshSize**](/windows/win32/api/wcsplugin/nf-wcsplugin-idevicemodelplugin-getgamutboundarymeshsize)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**IDeviceModelPlugin::GetNeutralAxis**](/windows/win32/api/wcsplugin/nf-wcsplugin-idevicemodelplugin-getneutralaxis)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**IDeviceModelPlugin::GetNeutralAxisSize**](/windows/win32/api/wcsplugin/nf-wcsplugin-idevicemodelplugin-getneutralaxissize)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**IDeviceModelPlugin::GetNumChannels**](/windows/win32/api/wcsplugin/nf-wcsplugin-idevicemodelplugin-getnumchannels)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**IDeviceModelPlugin::GetPrimarySamples**](/windows/win32/api/wcsplugin/nf-wcsplugin-idevicemodelplugin-getprimarysamples)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
-[**IDeviceModelPlugin:: Initialize**](/windows/win32/api/wcsplugin/nf-wcsplugin-idevicemodelplugin-initialize)
+[**IDeviceModelPlugin::Initialize**](/windows/win32/api/wcsplugin/nf-wcsplugin-idevicemodelplugin-initialize)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**IDeviceModelPlugin::SetTransformDeviceModelInfo**](/windows/win32/api/wcsplugin/nf-wcsplugin-idevicemodelplugin-settransformdevicemodelinfo)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**IGamutMapModelPlugin**](/previous-versions/windows/desktop/api/wcsplugin/nn-wcsplugin-igamutmapmodelplugin)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
-[**IGamutMapModelPlugin:: Initialize**](/windows/win32/api/wcsplugin/nf-wcsplugin-igamutmapmodelplugin-initialize)
+[**IGamutMapModelPlugin::Initialize**](/windows/win32/api/wcsplugin/nf-wcsplugin-igamutmapmodelplugin-initialize)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**IGamutMapModelPlugin::SourceToDestinationAppearanceColors**](/windows/win32/api/wcsplugin/nf-wcsplugin-igamutmapmodelplugin-sourcetodestinationappearancecolors)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 
 
@@ -294,55 +294,55 @@ Libreria
 
 [**BlackInformation**](/previous-versions/windows/desktop/api/WcsPlugIn/ns-wcsplugin-_blackinformation)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**GamutBoundaryDescription**](/previous-versions/windows/desktop/api/WcsPlugIn/ns-wcsplugin-_gamutboundarydescription)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**XYZColorF**](https://www.bing.com/search?q=**XYZColorF**)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**JChColorF**](https://www.bing.com/search?q=**JChColorF**)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**JabColorF**](https://www.bing.com/search?q=**JabColorF**)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**GamutShell**](/previous-versions/windows/desktop/api/WcsPlugIn/ns-wcsplugin-_gamutshell)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**GamutShellTriangle**](/previous-versions/windows/desktop/api/WcsPlugIn/ns-wcsplugin-_gamutshelltriangle)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**PrimaryJabColors**](/previous-versions/windows/desktop/api/WcsPlugIn/ns-wcsplugin-_primaryjabcolors)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
-N/D
+N/A
 
 [**PrimaryXYZColors**](/previous-versions/windows/desktop/api/WcsPlugIn/ns-wcsplugin-_primaryxyzcolors)
 
-WcsPlugIn. h
+WcsPlugIn.h
 
 N/D
 

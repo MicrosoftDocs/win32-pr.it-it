@@ -6,24 +6,24 @@ keywords:
 - Struttura CAPTUREPARMS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c3f0710303954ef99f1d445fbc66e18a665c0a1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bd9549f1f78a62563876b471f9c255072705918e006e56eba2677a4742061424
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117989349"
 ---
 # <a name="basic-capture-options"></a>Opzioni di acquisizione di base
 
-Modificando uno o più parametri di acquisizione definiti nella struttura [**CAPTUREPARMS**](/windows/win32/api/vfw/ns-vfw-captureparms) , è possibile eseguire le attività seguenti:
+Modificando uno o più parametri di acquisizione definiti nella struttura [**CAPTUREPARMS,**](/windows/win32/api/vfw/ns-vfw-captureparms) è possibile eseguire le attività seguenti:
 
--   Modificare la frequenza di acquisizione dei frame.
--   Consente di specificare il controllo della tastiera o del mouse per terminare una sessione di acquisizione.
+-   Modificare la frequenza di acquisizione dei fotogrammi.
+-   Specificare il controllo della tastiera o del mouse per terminare una sessione di acquisizione.
 -   Specificare una durata per una sessione di acquisizione.
 
- 
+ 
 
- 
+ 
 
 
 

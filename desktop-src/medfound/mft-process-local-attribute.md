@@ -1,19 +1,19 @@
 ---
-description: Specifica se una trasformazione Media Foundation (MFT) viene registrata solo nel processo di applicazioni.
+description: Specifica se una trasformazione Media Foundation (MFT) viene registrata solo nel processo delle applicazioni.
 ms.assetid: e10d6378-8e85-4f73-9fa3-a2e954fc8249
-title: Attributo MFT_PROCESS_LOCAL_Attribute (Mftransform. h)
+title: MFT_PROCESS_LOCAL_Attribute attributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d1d3595ef530008b8d09f27e3e76fad81a06039
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47afaa812468f185731313cec5a7519bf418c67997d5dc32101cd2403d7b425c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117688860"
 ---
-# <a name="mft_process_local_attribute-attribute"></a>\_Attributo dell' \_ attributo locale del processo MFT \_
+# <a name="mft_process_local_attribute-attribute"></a>Attributo MFT \_ PROCESS \_ LOCAL \_
 
-Specifica se una trasformazione Media Foundation (MFT) viene registrata solo nel processo dell'applicazione.
+Specifica se una Media Foundation (MFT) viene registrata solo nel processo dell'applicazione.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,21 +21,21 @@ Specifica se una trasformazione Media Foundation (MFT) viene registrata solo nel
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene utilizzato come segue:
+Questo attributo viene usato come segue:
 
-1.  L'applicazione registra una MFT locale chiamando la funzione [**MFTRegisterLocal**](/windows/desktop/api/mfapi/nf-mfapi-mftregisterlocal) o [**MFTRegisterLocalByCLSID**](/windows/desktop/api/mfapi/nf-mfapi-mftregisterlocalbyclsid) . Queste funzioni registrano il MFT nel processo dell'applicazione.
-2.  Viene chiamata la funzione [**MFTEnumEx**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) per enumerare MFTS che corrispondono a un particolare set di criteri. L'applicazione può chiamare direttamente la funzione **MFTEnumEx** , ma più spesso questa funzione viene chiamata dal caricatore della topologia.
-3.  La funzione [**MFTEnumEx**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) recupera una matrice di puntatori [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) , ognuno dei quali rappresenta un oggetto Activation per un MFT. Se una MFT è registrata localmente, l' \_ attributo dell' \_ attributo locale del processo MFT \_ viene impostato su **true** nell'oggetto Activation corrispondente.
+1.  L'applicazione registra un MFT locale chiamando la [**funzione MFTRegisterLocal**](/windows/desktop/api/mfapi/nf-mfapi-mftregisterlocal) o [**MFTRegisterLocalByCLSID.**](/windows/desktop/api/mfapi/nf-mfapi-mftregisterlocalbyclsid) Queste funzioni registrano MFT nel processo dell'applicazione.
+2.  La [**funzione MFTEnumEx**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) viene chiamata per enumerare gli MFT che corrispondono a un determinato set di criteri. L'applicazione potrebbe chiamare direttamente la funzione **MFTEnumEx,** ma più spesso questa funzione viene chiamata dal caricatore della topologia.
+3.  La [**funzione MFTEnumEx**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) recupera una matrice di puntatori [**IMFActivate,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) ognuno dei quali rappresenta un oggetto di attivazione per un MFT. Se un MFT è registrato in locale, l'attributo MFT \_ PROCESS LOCAL Attribute viene impostato su \_ \_ **TRUE** nell'oggetto di attivazione corrispondente.
 
-Il valore predefinito di questo attributo è **false**.
+Il valore predefinito per questo attributo è **FALSE.**
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,9 +43,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                        |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 R2 \[ \|\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -53,7 +53,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi di trasformazione](transform-attributes.md)

@@ -1,9 +1,9 @@
 ---
-title: LANGUAGE (istruzione)
-description: Definisce la lingua per tutte le risorse fino alla successiva istruzione del linguaggio o alla fine del file.
+title: Istruzione LANGUAGE
+description: Definisce la lingua per tutte le risorse fino all'istruzione LANGUAGE successiva o alla fine del file.
 ms.assetid: 175e27e2-903a-4aaf-89ef-532166b167e8
 keywords:
-- Menu di istruzioni della lingua e altre risorse
+- Menu e altre risorse dell'istruzione LANGUAGE
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9563ba2ec00362a3b9caa3911a701919a81cae1e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: b40971044f12897cd9c797fc2a2c44b0f34f81f4e1323e9689ea70905cac76da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104516780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117687466"
 ---
-# <a name="language-statement"></a>LANGUAGE (istruzione)
+# <a name="language-statement"></a>Istruzione LANGUAGE
 
-Definisce la lingua per tutte le risorse fino alla successiva istruzione del **linguaggio** o alla fine del file.
+Definisce la lingua per tutte le risorse fino all'istruzione **LANGUAGE** successiva o alla fine del file.
 
-Quando l'istruzione **Language** viene visualizzata prima dell'inizio del corpo di un [**acceleratore**](accelerators-resource.md), [**DIALOGEX**](dialogex-resource.md), [**menu**](menu-resource.md), [**RCDATA**](rcdata-resource.md)o [**un'STRINGTABLE**](stringtable-resource.md) , la lingua specificata si applica solo a tale risorsa.
+Quando **l'istruzione LANGUAGE** viene visualizzata prima dell'inizio del corpo di una definizione di risorsa [**ACCELERATORS**](accelerators-resource.md), [**DIALOGEX**](dialogex-resource.md), [**MENU**](menu-resource.md), [**RCDATA**](rcdata-resource.md)o [**STRINGTABLE,**](stringtable-resource.md) la lingua specificata si applica solo a tale risorsa.
 
 ``` syntax
 LANGUAGE language, sublanguage
@@ -31,44 +31,44 @@ LANGUAGE language, sublanguage
 
 <dl> <dt>
 
-<span id="language"></span><span id="LANGUAGE"></span>*linguaggio*
+<span id="language"></span><span id="LANGUAGE"></span>*Lingua*
 </dt> <dd>
 
-Identificatore della lingua.
+Identificatore di lingua.
 
 </dd> <dt>
 
-<span id="sublanguage"></span><span id="SUBLANGUAGE"></span>*sottolingua*
+<span id="sublanguage"></span><span id="SUBLANGUAGE"></span>*sottolinguaggio*
 </dt> <dd>
 
-Identificatore del linguaggio di sottolinguaggio.
+Identificatore del sottolinguaggio.
 
 </dd> </dl>
 
-Per altre informazioni, vedere [costanti e stringhe degli identificatori di lingua](/windows/desktop/Intl/language-identifier-constants-and-strings).
+Per altre informazioni, vedere [Costanti e stringhe degli identificatori di linguaggio](/windows/desktop/Intl/language-identifier-constants-and-strings).
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[**ACCELERATORI**](accelerators-resource.md)
+[**Acceleratori**](accelerators-resource.md)
 </dt> <dt>
 
-[**CARATTERISTICHE**](characteristics-statement.md)
+[**Caratteristiche**](characteristics-statement.md)
 </dt> <dt>
 
-[**MENU**](menu-resource.md)
+[**Menu**](menu-resource.md)
 </dt> <dt>
 
 [**RCDATA**](rcdata-resource.md)
 </dt> <dt>
 
-[**UN'STRINGTABLE**](stringtable-resource.md)
+[**Stringtable**](stringtable-resource.md)
 </dt> <dt>
 
 [**Versione**](version-statement.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: 89825430-C28E-4d38-A8F7-69A1408DDD73
-ms.openlocfilehash: 04d54f4262dbe589ab753fd929bc02fcf7bee0d4
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 9b07ccfa0db23cf7d2092f87893b0bf9b0974728ba7d95923b7f9b4bb0f9e16f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118047713"
 ---
 # <a name="shellwindowswitcher-method"></a>Metodo Shell::WindowSwitcher
 
@@ -61,8 +61,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                         |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                   |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 

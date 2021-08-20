@@ -1,23 +1,23 @@
 ---
-description: Il controllo di registrazione del certificato di cui è stata creata un'istanza in C++
+description: Creazione di un'istanza del controllo di registrazione certificati in C++
 ms.assetid: 19dd2fce-b4a9-44fd-9572-897ee7943914
-title: Il controllo di registrazione del certificato di cui è stata creata un'istanza in C++
+title: Creazione di un'istanza del controllo di registrazione certificati in C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 868f89e0a285460c587a924e84a5ed21c202eb0c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 935d40c7b4fc041522a0710220addf89b523b3bc6301e7371e5f9bcd541725d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103760466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117972055"
 ---
-# <a name="the-certificate-enrollment-control-instantiated-in-c"></a>Il controllo di registrazione del certificato di cui è stata creata un'istanza in C++
+# <a name="the-certificate-enrollment-control-instantiated-in-c"></a>Creazione di un'istanza del controllo di registrazione certificati in C++
 
-Nell'esempio C++ seguente viene inizializzato COM, viene creata un'istanza del [controllo di registrazione del certificato](certificate-enrollment-control.md), viene utilizzato il controllo di registrazione del certificato e vengono liberate le risorse.
+L'esempio C++ seguente inizializza COM, crea un'istanza del controllo registrazione [certificati,](certificate-enrollment-control.md)usa il controllo registrazione certificati e libera le risorse.
 
 ## <a name="example-in-c"></a>Esempio in C++
 
-Nell'esempio seguente viene creata un'istanza del [controllo di registrazione del certificato](certificate-enrollment-control.md) e viene [**visualizzato il valore della proprietà.**](/windows/win32/api/xenroll/nf-xenroll-icenroll-get_mystorename) In questo esempio viene utilizzata l'interfaccia [**ICEnroll4**](/windows/desktop/api/Xenroll/nn-xenroll-icenroll4) .
+Nell'esempio seguente viene creata un'istanza del [controllo registrazione certificati](certificate-enrollment-control.md) e viene visualizzato il valore della proprietà [**MyStoreName.**](/windows/win32/api/xenroll/nf-xenroll-icenroll-get_mystorename) In questo esempio viene utilizzata [**l'interfaccia ICEnroll4.**](/windows/desktop/api/Xenroll/nn-xenroll-icenroll4)
 
 
 ```C++

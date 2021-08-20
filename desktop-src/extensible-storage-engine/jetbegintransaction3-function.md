@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: funzione JetBeginTransaction3'
+description: Altre informazioni sulla funzione JetBeginTransaction3
 title: Funzione JetBeginTransaction3
 TOCTitle: JetBeginTransaction3 Function
 ms:assetid: 7f8ed059-0b97-46fa-9925-e46cdcbee6ea
@@ -19,21 +19,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b263cb18c09df8205a49e1c4a1a683e339803f35
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 576f2a642fb68f0121828eb4f34e0bb59d507f3f4e67134da0d259405003dbf0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117892089"
 ---
 # <a name="jetbegintransaction3-function"></a>Funzione JetBeginTransaction3
 
 
 _**Si applica a:** Windows | Windows Server_
 
-La funzione **JetBeginTransaction3** fa sì che una sessione entri in una transazione e crei un nuovo punto di salvataggio. Questa funzione può essere chiamata più volte in una singola sessione per creare punti di salvataggio aggiuntivi. Questi punti di salvataggio possono essere utilizzati in modo selettivo per conservare o annullare le modifiche apportate al database.
+La **funzione JetBeginTransaction3** determina l'immissione di una transazione in una sessione e la creazione di un nuovo punto di salvataggio. Questa funzione può essere chiamata più volte in una singola sessione per creare punti di salvataggio aggiuntivi. Questi punti di salvataggio possono essere usati per mantenere o annullare le modifiche al database in modo selettivo.
 
-La funzione **JetBeginTransaction3** è stata introdotta nel sistema operativo Windows 8.
+La **funzione JetBeginTransaction3** è stata introdotta nel Windows 8 operativo.
 
 ``` c++
 JET_ERR JET_API JetBeginTransaction3(
@@ -71,7 +71,7 @@ Gruppo di bit che specifica zero o più valori dell'opzione di chiamata elencati
 <tbody>
 <tr class="odd">
 <td><p>JET_bitTransactionReadOnly</p></td>
-<td><p>Il database non viene modificato dalla transazione. Se si tenta di eseguire un aggiornamento, l'operazione avrà esito negativo con JET_errTransReadOnly codice di risposta. Questa opzione viene ignorata a meno che non venga richiesta quando la sessione specificata non è già presente in una transazione. Questa opzione è disponibile nelle versioni del sistema operativo Windows a partire da Windows XP.</p></td>
+<td><p>La transazione non modificherà il database. Se si tenta di eseguire un aggiornamento, l'operazione avrà esito negativo con JET_errTransReadOnly di risposta. Questa opzione viene ignorata a meno che non venga richiesta quando la sessione specificata non è già in una transazione. Questa opzione è disponibile nelle versioni del Windows operativo a partire da Windows XP.</p></td>
 </tr>
 </tbody>
 </table>
@@ -79,7 +79,7 @@ Gruppo di bit che specifica zero o più valori dell'opzione di chiamata elencati
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei codici restituiti elencati nella tabella seguente. Per ulteriori informazioni sui possibili errori di Extensible Storage Engine (ESE), vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti elencati nella tabella seguente. Per altre informazioni sui possibili errori ESE [(Extensible](./extensible-storage-engine-errors.md) Archiviazione Engine), vedere Extensible Archiviazione Engine Errors and [Error Handling Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -99,11 +99,11 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono state interrotte in seguito a una chiamata alla funzione <a href="gg269240(v=exchg.10).md">JetStopService</a> .</p></td>
+<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cessare in seguito a una chiamata alla <a href="gg269240(v=exchg.10).md">funzione JetStopService.</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede che l'accesso a tutti i dati venga revocato per proteggere l'integrità dei dati.</p>
+<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati.</p>
 <p>Questo codice restituito viene restituito dalle versioni di Windows a partire da Windows XP.</p></td>
 </tr>
 <tr class="even">
@@ -112,31 +112,31 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="odd">
 <td><p>JET_errRestoreInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino sull'istanza associata alla sessione.</p></td>
+<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errSessionSharingViolation</p></td>
-<td><p>Non è possibile usare la stessa sessione per più di un thread nello stesso momento. Questo errore viene restituito dalle versioni di Windows a partire da Windows XP.</p></td>
+<td><p>La stessa sessione non può essere usata per più thread contemporaneamente. Questo errore viene restituito dalle versioni di Windows a partire da Windows XP.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errTermInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione viene arrestata.</p></td>
+<td><p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errTransTooDeep</p></td>
-<td><p>Impossibile avviare una nuova transazione perché la sessione si trova già nella profondità massima del punto di salvataggio consentita dal motore di database.</p></td>
+<td><p>Non è possibile avviare una nuova transazione perché la sessione è già alla profondità massima del punto di salvataggio consentita dal motore di database.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-In seguito all'esito positivo, la sessione specificata si troverà all'interno di una transazione. Se la sessione si trovava in precedenza all'interno di una transazione, verrà creato un nuovo punto di salvataggio.
+In caso di esito positivo, la sessione specificata si trova all'interno di una transazione. Se in precedenza la sessione era all'interno di una transazione, verrà creato un nuovo punto di salvataggio.
 
-In caso di errore, lo stato transazionale della sessione rimarrà invariato. Non si verificherà alcuna modifica allo stato del database.
+In caso di errore, lo stato transazionale della sessione rimarrà invariato. Non verrà apportata alcuna modifica allo stato del database.
 
 #### <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni sul funzionamento delle transazioni, vedere [JetBeginTransaction](./jetbegintransaction-function.md).
+Per altre informazioni sul funzionamento delle transazioni, vedere [JetBeginTransaction.](./jetbegintransaction-function.md)
 
 #### <a name="requirements"></a>Requisiti
 
@@ -156,11 +156,11 @@ Per ulteriori informazioni sul funzionamento delle transazioni, vedere [JetBegin
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
+<td><p>Usare ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>

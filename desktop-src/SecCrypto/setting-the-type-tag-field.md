@@ -1,34 +1,34 @@
 ---
-description: Le variabili di tipo VARIANT hanno un campo di tag del tipo VT che indica il tipo di dati dei dati.
+description: Le variabili di tipo VARIANT hanno un campo tag di tipo vt che indica il tipo di dati.
 ms.assetid: 3436faf6-2e66-46a1-b1e8-84f513282c16
-title: Impostazione del campo tag del tipo
+title: Impostazione del campo Type Tag
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e443fae33b14bd4270e63188ff96a042a91c8e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2683980127b1b93de5cdfa0d19879d17699f2c3402d9404b32f094b78637c641
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117974485"
 ---
-# <a name="setting-the-type-tag-field"></a>Impostazione del campo tag del tipo
+# <a name="setting-the-type-tag-field"></a>Impostazione del campo Type Tag
 
-Le variabili di tipo **Variant** hanno un campo di tag del tipo **VT** che indica il tipo di dati dei dati. I valori restituiti del tipo **Variant** vengono restituiti dai metodi con il campo del tag type impostato sul tipo di dati del valore restituito. I parametri di input di tipo **Variant** in una chiamata al metodo devono avere il campo dei tag type impostato dall'applicazione su uno dei valori supportati. Di seguito è riportata la corrispondenza dei tipi di parametro con i tipi di dati.
+**Le** variabili di tipo VARIANT hanno un campo tag **di tipo vt** che indica il tipo di dati. **I** valori restituiti di tipo VARIANT vengono restituiti dai metodi con il campo tag type impostato sul tipo di dati del valore restituito. **I** parametri di input di tipo VARIANT in una chiamata al metodo devono avere il campo del tag di tipo impostato dall'applicazione su uno dei valori supportati. La corrispondenza tra i tipi di parametro e i tipi di dati è la seguente.
 
 
 
 | Tipo di parametro              | Tipo di dati                                      |
 |-----------------------------|------------------------------------------------|
-| PROPTYPE \_ Long<br/>   | VT \_ I2 o VT \_ I4<br/>                    |
-| \_Data PROPTYPE<br/>   | \_Data VT<br/>                            |
-| \_binario PROPTYPE<br/> | VT \_ BSTR o (VT \_ BSTR \| VT \_ ByRef)<br/> |
-| \_stringa PROPTYPE<br/> | VT \_ BSTR o (VT \_ BSTR \| VT \_ ByRef)<br/> |
+| PROPTYPE \_ LONG<br/>   | VT \_ I2 o VT \_ I4<br/>                    |
+| PROPTYPE \_ DATE<br/>   | DATA \_ VT<br/>                            |
+| PROPTYPE \_ BINARY<br/> | VT \_ BSTR o (VT \_ BSTR \| VT \_ BYREF)<br/> |
+| STRINGA \_ PROPTYPE<br/> | VT \_ BSTR o (VT \_ BSTR \| VT \_ BYREF)<br/> |
 
 
 
  
 
-Nell'esempio seguente viene illustrato come inizializzare i tipi di dati Variant elencati in precedenza.
+Nell'esempio seguente viene illustrato come inizializzare i tipi di dati variant elencati in precedenza.
 
 
 ```C++

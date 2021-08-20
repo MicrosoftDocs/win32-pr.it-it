@@ -3,24 +3,24 @@ title: Classificazioni
 description: Classificazioni
 ms.assetid: babc9db5-2782-4261-a571-acb7be4ea770
 keywords:
-- Interfacce di Windows Media Player Mobile, classificazioni
-- interfacce, classificazioni
-- riferimento per interfacce, classificazioni
-- classificazioni in interfacce
+- Windows Media Player Interfaccia per dispositivi mobili, classificazioni
+- skins,ratings
+- informazioni di riferimento per le interfaccia, le classificazioni
+- classificazioni nelle interfaccia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: edb90908c725fcb525e0be1547c27c588a4220c6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1eec9b28ef77c59b4ca2303c96426009f34b817c65e853071febc76507c3aac2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117934092"
 ---
 # <a name="ratings"></a>Classificazioni
 
-Quando si crea un'interfaccia personalizzata per Windows Media Player 10,1 Mobile, è possibile visualizzare la classificazione associata al contenuto basato su Windows Media Audio in corso di riproduzione. La classificazione viene visualizzata come stella con un numero. La stella sarà numerata da uno a cinque, indicando la classificazione corrente per quel contenuto. Se il contenuto non viene valutato, la stella sarà numerata zero.
+Quando si crea un'interfaccia per Windows Media Player 10.1 Mobile, è possibile visualizzare la classificazione associata al contenuto basato su Windows Media Audio attualmente in riproduzione. La classificazione viene visualizzata come stella con un numero. La stella verrà numerata da uno a cinque, indicando la classificazione corrente per tale contenuto. Se il contenuto non viene valutato, la stella sarà numerata zero.
 
-La sezione classificazioni del file di definizione dell'interfaccia personalizzata inizia con questa riga:
+La sezione Ratings del file di definizione dell'interfaccia inizia con questa riga:
 
 
 ```C++
@@ -30,7 +30,7 @@ La sezione classificazioni del file di definizione dell'interfaccia personalizza
 
 
 
-È quindi necessario aggiungere una riga che contiene informazioni sulle dimensioni e la posizione dell'icona di classificazione nell'interfaccia.
+È quindi necessario aggiungere una riga contenente informazioni sulle dimensioni e sulla posizione dell'icona delle classificazioni nell'interfaccia.
 
 
 ```C++
@@ -40,7 +40,7 @@ La sezione classificazioni del file di definizione dell'interfaccia personalizza
 
 
 
-È possibile usare il modello seguente per la sezione ratings del file di definizione dell'interfaccia personalizzata:
+È possibile usare il modello seguente per la sezione Ratings del file di definizione dell'interfaccia:
 
 
 ```C++
@@ -50,18 +50,18 @@ La sezione classificazioni del file di definizione dell'interfaccia personalizza
 
 
 
-È anche possibile assegnare un valore di classificazione a un elemento multimediale tramite l'interfaccia utente in Windows Media Player 10,1 mobile e alla successiva sincronizzazione del dispositivo con il computer, il nuovo valore delle classificazioni verrà propagato a tale elemento multimediale se risiede nella libreria di Windows Media Player 10.
+È anche possibile assegnare un valore ratings a un elemento multimediale tramite l'interfaccia utente di Windows Media Player 10.1 Mobile e alla successiva sincronizzazione del dispositivo con un computer, il nuovo valore ratings verrà propagato a tale elemento multimediale se si trova nella libreria di Windows Media Player 10.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Riferimento all'interfaccia**](skin-reference.md)
+[**Informazioni di riferimento per l'interfaccia**](skin-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

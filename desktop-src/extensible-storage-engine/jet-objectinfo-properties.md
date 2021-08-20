@@ -1,25 +1,25 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_OBJECTINFO'
-title: Proprietà JET_OBJECTINFO
+description: 'Altre informazioni su: JET_OBJECTINFO proprietà'
+title: JET_OBJECTINFO proprietà
 TOCTitle: JET_OBJECTINFO properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_OBJECTINFO
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_objectinfo_properties(v=EXCHG.10)
 ms:contentKeyID: 55103764
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5680665c113246a266bc8585a3e20ad6db7dc0e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d6d9ec82c0b3c82ef1162714c83a4a1bf5d623edcd06b5b17026cec252b978a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117893949"
 ---
-# <a name="jet_objectinfo-properties"></a>Proprietà JET_OBJECTINFO
+# <a name="jet_objectinfo-properties"></a>JET_OBJECTINFO proprietà
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
-Il tipo di [JET_OBJECTINFO](./jet-objectinfo-class.md) espone i membri seguenti.
+Il [JET_OBJECTINFO](./jet-objectinfo-class.md) espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 
@@ -55,7 +55,7 @@ Il tipo di [JET_OBJECTINFO](./jet-objectinfo-class.md) espone i membri seguenti.
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn335205(v=exchg.10).md">objtyp</a></td>
-<td>Ottiene il JET_OBJTYP della tabella. Attualmente verranno restituite solo le tabelle, ovvero <a href="hh565069(v=exchg.10).md">Table</a>.</td>
+<td>Ottiene il JET_OBJTYP della tabella. Attualmente verranno restituite solo le tabelle , ovvero <a href="hh565069(v=exchg.10).md">Table</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -67,6 +67,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_OBJECTINFO](./jet-objectinfo-class.md)
+[JET_OBJECTINFO classe](./jet-objectinfo-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

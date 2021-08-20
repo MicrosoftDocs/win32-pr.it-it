@@ -1,29 +1,29 @@
 ---
-description: Per applicare una formattazione speciale al testo, inizializzare un oggetto StringFormat e passare l'indirizzo dell'oggetto al metodo DrawString della classe Graphics.
+description: Per applicare una formattazione speciale al testo, inizializzare un oggetto StringFormat e passare l'indirizzo di tale oggetto al metodo DrawString della classe Graphics.
 ms.assetid: 4014a602-88f6-4fac-b4b2-3dafdcff8f33
 title: Formattazione del testo (GDI+)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e6b2cc6109e7b946e9b4e98645c9445b8268bb4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b29a56def2d89f9ac3085f494f46a0242889d5ce6bc1a17af086dad96b881e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104563403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117695813"
 ---
 # <a name="formatting-text-gdi"></a>Formattazione del testo (GDI+)
 
-Per applicare una formattazione speciale al testo, inizializzare un oggetto [**StringFormat**](/windows/win32/api/gdiplusstringformat/nl-gdiplusstringformat-stringformat) e passare l'indirizzo dell'oggetto al metodo [DrawString](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawstring(constwchar_int_constfont_constpointf__conststringformat_constbrush)) della classe [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) .
+Per applicare una formattazione speciale al testo, inizializzare un oggetto [**StringFormat**](/windows/win32/api/gdiplusstringformat/nl-gdiplusstringformat-stringformat) e passare l'indirizzo di tale oggetto al [metodo DrawString](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawstring(constwchar_int_constfont_constpointf__conststringformat_constbrush)) della [**classe Graphics.**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics)
 
-Per creare testo formattato in un rettangolo, sono necessari oggetti [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics), [**FontFamily**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontfamily), [**font**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-font), [**RectF**](/windows/win32/api/gdiplustypes/nl-gdiplustypes-rectf), [**StringFormat**](/windows/win32/api/gdiplusstringformat/nl-gdiplusstringformat-stringformat)e [**Brush**](/windows/win32/api/gdiplusbrush/nl-gdiplusbrush-brush) .
+Per disegnare testo formattato in un rettangolo, sono necessari oggetti [**Graphics,**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) [**FontFamily,**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) [**Font,**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-font) [**RectF,**](/windows/win32/api/gdiplustypes/nl-gdiplustypes-rectf) [**StringFormat**](/windows/win32/api/gdiplusstringformat/nl-gdiplusstringformat-stringformat)e [**Brush.**](/windows/win32/api/gdiplusbrush/nl-gdiplusbrush-brush)
 
 -   [Allineamento del testo](#aligning-text)
--   [Impostazione tabulazioni](#setting-tab-stops)
+-   [Impostazione delle tabulazioni](#setting-tab-stops)
 -   [Disegno di testo verticale](#drawing-vertical-text)
 
 ## <a name="aligning-text"></a>Allineamento del testo
 
-Nell'esempio seguente viene disegnato un testo in un rettangolo. Ogni riga di testo viene centrata (affiancata) e l'intero blocco di testo viene centrato (dall'alto verso il basso) nel rettangolo.
+L'esempio seguente disegna testo in un rettangolo. Ogni riga di testo è centrata (da lato a lato) e l'intero blocco di testo è centrato (dall'alto verso il basso) nel rettangolo.
 
 
 ```
@@ -51,19 +51,19 @@ graphics.DrawRectangle(&pen, rectF);
 
 
 
-Nella figura seguente vengono illustrati il rettangolo e il testo centrato.
+La figura seguente mostra il rettangolo e il testo centrato.
 
 ![Screenshot di una finestra contenente un rettangolo, che contiene sei righe di testo, centrate orizzontalmente](images/fontstext3.png)
 
-Il codice precedente chiama due metodi dell'oggetto [**StringFormat**](/windows/win32/api/gdiplusstringformat/nl-gdiplusstringformat-stringformat) : [**StringFormat:: sealignment**](/windows/win32/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-setalignment) e [**StringFormat:: SetLineAlignment**](/windows/win32/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-setlinealignment). La chiamata a **StringFormat:: Sealignment** specifica che ogni riga di testo viene centrata nel rettangolo specificato dal terzo argomento passato al metodo [DrawString](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawstring(constwchar_int_constfont_constpointf__conststringformat_constbrush)) . La chiamata a **StringFormat:: SetLineAlignment** specifica che il blocco di testo viene centrato (dall'alto verso il basso) nel rettangolo.
+Il codice precedente chiama due metodi dell'oggetto [**StringFormat:**](/windows/win32/api/gdiplusstringformat/nl-gdiplusstringformat-stringformat) [**StringFormat::SetAlignment**](/windows/win32/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-setalignment) e [**StringFormat::SetLineAlignment.**](/windows/win32/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-setlinealignment) La chiamata a **StringFormat::SetAlignment** specifica che ogni riga di testo è centrata nel rettangolo specificato dal terzo argomento passato al [metodo DrawString.](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawstring(constwchar_int_constfont_constpointf__conststringformat_constbrush)) La chiamata a **StringFormat::SetLineAlignment** specifica che il blocco di testo è centrato (dall'alto verso il basso) nel rettangolo.
 
-Il valore [* * * * StringAlignmentCenter * *](/windows/win32/api/Gdiplusenums/ne-gdiplusenums-stringalignment) * * è un elemento dell'enumerazione **StringAlignment** , dichiarata in Gdiplusenums. h.
+Il valore [****StringAlignmentCenter****](/windows/win32/api/Gdiplusenums/ne-gdiplusenums-stringalignment) è un elemento dell'enumerazione **StringAlignment,** dichiarato in Gdiplusenums.h.
 
-## <a name="setting-tab-stops"></a>Impostazione tabulazioni
+## <a name="setting-tab-stops"></a>Impostazione delle tabulazioni
 
-È possibile impostare le tabulazioni per il testo chiamando il metodo [**StringFormat:: SetTabStops**](/windows/win32/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-settabstops) di un oggetto [**StringFormat**](/windows/win32/api/gdiplusstringformat/nl-gdiplusstringformat-stringformat) , quindi passando l'indirizzo di tale oggetto **StringFormat** al metodo [DrawString](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawstring(constwchar_int_constfont_constpointf__conststringformat_constbrush)) della classe [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) .
+È possibile impostare tabulazioni per il testo chiamando il metodo [**StringFormat::SetTabStops**](/windows/win32/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-settabstops) di un oggetto [**StringFormat**](/windows/win32/api/gdiplusstringformat/nl-gdiplusstringformat-stringformat) e quindi passando l'indirizzo di tale oggetto **StringFormat** al metodo [DrawString](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawstring(constwchar_int_constfont_constpointf__conststringformat_constbrush)) della [**classe Graphics.**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics)
 
-Nell'esempio seguente vengono impostate le tabulazioni a 150, 250 e 350. Il codice Visualizza quindi un elenco a schede di nomi e punteggi dei test.
+Nell'esempio seguente le tabulazioni vengono impostate su 150, 250 e 350. Il codice visualizza quindi un elenco a schede di nomi e punteggi di test.
 
 
 ```
@@ -93,17 +93,17 @@ graphics.DrawRectangle(&pen, rectF);
 
 
 
-Nella figura seguente viene illustrato il testo a schede.
+La figura seguente mostra il testo a schede.
 
-![illustrazione di un rettangolo contenente quattro colonne di testo; ogni colonna è Left-allineati](images/fontstext4.png)
+![illustrazione di un rettangolo contenente quattro colonne di testo; ogni colonna è alligata a sinistra](images/fontstext4.png)
 
-Il codice precedente passa tre argomenti al metodo [**StringFormat:: SetTabStops**](/windows/win32/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-settabstops) . Il terzo argomento è l'indirizzo di una matrice contenente gli offset di tabulazione. Il secondo argomento indica che nella matrice sono presenti tre offset. Il primo argomento passato a **StringFormat:: SetTabStops** è 0, che indica che il primo offset nella matrice viene misurato dalla posizione 0, dal bordo sinistro del rettangolo di delimitazione.
+Il codice precedente passa tre argomenti al [**metodo StringFormat::SetTabStops.**](/windows/win32/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-settabstops) Il terzo argomento è l'indirizzo di una matrice contenente gli offset di tabulazione. Il secondo argomento indica che la matrice contiene tre offset. Il primo argomento passato a **StringFormat::SetTabStops** è 0, che indica che il primo offset nella matrice viene misurato dalla posizione 0, ovvero il bordo sinistro del rettangolo di delimitazione.
 
 ## <a name="drawing-vertical-text"></a>Disegno di testo verticale
 
-È possibile utilizzare un oggetto [**StringFormat**](/windows/win32/api/gdiplusstringformat/nl-gdiplusstringformat-stringformat) per specificare che il testo deve essere disegnato verticalmente anziché orizzontalmente.
+È possibile usare un [**oggetto StringFormat**](/windows/win32/api/gdiplusstringformat/nl-gdiplusstringformat-stringformat) per specificare che il testo deve essere disegnato verticalmente anziché orizzontalmente.
 
-Nell'esempio seguente il valore [* * * * StringFormatFlagsDirectionVertical * * * *](/windows/win32/api/Gdiplusenums/ne-gdiplusenums-stringformatflags) viene passato al metodo [**StringFormat:: SetFormatFlags**](/windows/win32/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-setformatflags) di un oggetto [**StringFormat**](/windows/win32/api/gdiplusstringformat/nl-gdiplusstringformat-stringformat) . L'indirizzo dell'oggetto **StringFormat** viene passato al metodo [DrawString](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawstring(constwchar_int_constfont_constpointf__conststringformat_constbrush)) della classe [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) . Il valore [* * * * StringFormatFlagsDirectionVertical * *](/windows/win32/api/Gdiplusenums/ne-gdiplusenums-stringformatflags) * * è un elemento dell'enumerazione **StringFormatFlags** , dichiarata in Gdiplusenums. h.
+L'esempio seguente passa il valore [****StringFormatFlagsDirectionVertical*** al](/windows/win32/api/Gdiplusenums/ne-gdiplusenums-stringformatflags) [**metodo StringFormat::SetFormatFlags**](/windows/win32/api/Gdiplusstringformat/nf-gdiplusstringformat-stringformat-setformatflags) di un [**oggetto StringFormat.**](/windows/win32/api/gdiplusstringformat/nl-gdiplusstringformat-stringformat) L'indirizzo **dell'oggetto StringFormat** viene passato al [metodo DrawString](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawstring(constwchar_int_constfont_constpointf__conststringformat_constbrush)) della [**classe Graphics.**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) Il valore [****StringFormatFlagsDirectionVertical****](/windows/win32/api/Gdiplusenums/ne-gdiplusenums-stringformatflags) è un elemento dell'enumerazione **StringFormatFlags,** dichiarato in Gdiplusenums.h.
 
 
 ```
@@ -123,9 +123,9 @@ graphics.DrawString(string, -1, &font, pointF, &stringFormat, &solidBrush);
 
 
 
-Nella figura seguente viene illustrato il testo verticale.
+La figura seguente mostra il testo verticale.
 
-![illustrazione che mostra una finestra contenente testo ruotato di 90 gradi in senso orario](images/fontstext5.png)
+![illustrazione che mostra una finestra che contiene testo ruotato di 90 gradi in senso orario](images/fontstext5.png)
 
  
 
