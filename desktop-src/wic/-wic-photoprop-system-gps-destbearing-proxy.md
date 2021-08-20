@@ -1,23 +1,23 @@
 ---
-description: Il proxy di proprietà per il criterio dei metadati della foto System. GPS. DestBearing.
+description: Proxy di proprietà per i criteri dei metadati delle foto System.GPS.DestBearing.
 ms.assetid: 7303cdf4-a4a2-4b7d-b52e-48cadbadd98d
-title: System. GPS. DestBearing proxy
+title: System.GPS.DestBearing Proxy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a13d4bbcc79e11a297b44ddf0b948eb513de8bdb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63d2fc78282bc67f9486510a6842d7d43194cf369ffc17a24b4f21d05373c866
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964990"
 ---
-# <a name="systemgpsdestbearing-proxy"></a>System. GPS. DestBearing proxy
+# <a name="systemgpsdestbearing-proxy"></a>System.GPS.DestBearing Proxy
 
-Il proxy di proprietà per il criterio dei metadati della foto System. GPS. DestBearing.
+Proxy di proprietà per i criteri dei metadati delle foto System.GPS.DestBearing.
 
 ### <a name="description"></a>Descrizione
 
-Il proxy della proprietà restituisce una coppia razionale a tramite il membro uhVal di [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) .
+Il proxy di proprietà restituisce una coppia razionale tramite il membro [propVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) uhVal.
 
 ### <a name="containers"></a>Contenitori
 
@@ -27,23 +27,23 @@ JPEG, TIFF
 
 Sì
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_UI8 VT
+Interfaccia utente \_ VT8
 
 ### <a name="denominator"></a>Denominatore
 
-HighPart di uhVal.
+HighPart dell'oggetto uhVal.
 
 ### <a name="numerator"></a>Numeratore
 
-LowPart di uhVal.
+LowPart dell'oggetto uhVal.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[System. GPS. DestBearing](../properties/props-system-gps-destbearing.md)
+[System.GPS.DestBearing](../properties/props-system-gps-destbearing.md)
 </dt> </dl>
 
  

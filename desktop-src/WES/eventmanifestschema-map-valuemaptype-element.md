@@ -1,9 +1,9 @@
 ---
 title: Elemento map (ValueMapType)
-description: Definisce il mapping tra un valore integer e un valore stringa. | Elemento map (ValueMapType)
+description: Definisce il mapping tra un valore intero e un valore stringa. | Elemento map (ValueMapType)
 ms.assetid: 9fdcb3c5-f847-40a2-9d58-4dad964cd8ca
 keywords:
-- EventLog elemento mappa
+- EventLog dell'elemento map
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e1cfd94df2717c0da7256ee1fadcafbc809fa61f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c8eaae47708a6857e93a8901d90c47cf8def2ccb91bef31859656d030910cc47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997871"
 ---
 # <a name="map-valuemaptype-element"></a>Elemento map (ValueMapType)
 
-Definisce il mapping tra un valore integer e un valore stringa.
+Definisce il mapping tra un valore intero e un valore stringa.
 
 ``` syntax
 <xs:element name="map"
@@ -30,7 +30,7 @@ Definisce il mapping tra un valore integer e un valore stringa.
  />
 ```
 
-L'elemento della **mappa** è definito dal tipo complesso [**ValueMapType**](eventmanifestschema-valuemaptype-complextype.md) .
+**L'elemento** map è definito dal [**tipo complesso ValueMapType.**](eventmanifestschema-valuemaptype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento della **mappa** è definito dal tipo complesso [**ValueMapType**](eve
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Consente di visualizzare la finestra di dialogo Esegui all'utente. Questo metodo ha lo stesso effetto di quando si fa clic sul menu Start e si seleziona Esegui.
+description: Visualizza la finestra di dialogo Esegui per l'utente. Questo metodo ha lo stesso effetto di fare clic sul menu Start e selezionare Esegui.
 ms.assetid: bb984777-e09f-41e6-8359-51c5291654f7
-title: Metodo Shell. FileRun (shldisp. h)
+title: Metodo Shell.FileRun (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ebccf11ea21fdd4ceba2563a6110c1eb2494947b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a4e67e6b3182a9eccde301b0ebb51c7cd679d7b67b6f787c10d814f242431bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968600"
 ---
-# <a name="shellfilerun-method"></a>Shell. FileRun, metodo
+# <a name="shellfilerun-method"></a>Metodo Shell.FileRun
 
-Consente di visualizzare la finestra di dialogo **Esegui** all'utente. Questo metodo ha lo stesso effetto di quando si fa clic sul menu **Start** e si seleziona **Esegui**.
+Visualizza la **finestra di** dialogo Esegui per l'utente. Questo metodo ha lo stesso effetto di fare clic sul menu **Start** e selezionare **Esegui**.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,9 +57,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato **FileRun** in uso. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+L'esempio seguente illustra **FileRun** in uso. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -75,7 +75,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -115,11 +115,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

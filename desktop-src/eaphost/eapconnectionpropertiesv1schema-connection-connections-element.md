@@ -50,7 +50,7 @@ ms.locfileid: "118498371"
 | Elemento                                                                 | Tipo   | Descrizione                                                                                                             |
 |-------------------------------------------------------------------------|--------|-------------------------------------------------------------------------------------------------------------------------|
 | [**Eap**](baseeapconnectionpropertiesv1schema-eap-element.md)          |        | Identifica l'elemento di configurazione EAP.<br/>                                                                    |
-| [**Nome**](eapconnectionpropertiesv1schema-name-connection-element.md) | string | Acquisisce il nome della connessione da definire, assistendo nell'identificazione di più connessioni. <br/> |
+| [**Nome**](eapconnectionpropertiesv1schema-name-connection-element.md) | string | Acquisisce il nome della connessione definita, assistendo nell'identificazione di più connessioni. <br/> |
 
 
 
@@ -60,8 +60,8 @@ ms.locfileid: "118498371"
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -75,13 +75,13 @@ ms.locfileid: "118498371"
 [**Connessioni**](eapconnectionpropertiesv1schema-connections-element.md)
 </dt> <dt>
 
-**Possibile elemento padre diretto nell'istanza dello schema**
+**Possibile elemento padre immediato nell'istanza dello schema**
 </dt> <dt>
 
 [**Connessioni**](eapconnectionpropertiesv1schema-connections-element.md)
 </dt> <dt>
 
-[Schema EAPHost e legacy](eaphost-schemas.md)
+[EAPHost e schema legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema eapconnectionpropertiesv1](eapconnectionpropertiesv1schema-schema.md)

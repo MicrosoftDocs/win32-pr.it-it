@@ -1,7 +1,7 @@
 ---
-description: Stabilisce un &\# 0034; parte della&\# 0034; relazione tra un sistema e qualsiasi elemento di sistema gestito di cui è composto.
+description: Stabilisce una relazione &\# 0034; parte di&0034; tra un sistema e qualsiasi elemento del sistema gestito di cui \# è composto.
 ms.assetid: 6BF72E36-9B6C-4853-A553-DDAF65991C86
-title: Classe Msvm_SystemComponent
+title: Msvm_SystemComponent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ee150793143b549c90d280eef287ee6a5afb66b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 538deaff8e0edf3d1467c4447a3d25ced18987e4f81bc8d14a056848313c8526
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118949683"
 ---
-# <a name="msvm_systemcomponent-class"></a>\_Classe MSVM SystemComponent
+# <a name="msvm_systemcomponent-class"></a>Classe \_ SystemComponent di Msvm
 
-Stabilisce una relazione "parte di" tra un sistema e qualsiasi elemento di sistema gestito di cui è composto.
+Stabilisce una relazione "parte di" tra un sistema e qualsiasi elemento del sistema gestito di cui è composto.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,20 +41,20 @@ class Msvm_SystemComponent : CIM_SystemComponent
 
 ## <a name="members"></a>Members
 
-La **classe \_ SystemComponent di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ SystemComponent** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ SystemComponent di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ SystemComponent** ha queste proprietà.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[ **\_ sistema CIM**](/windows/desktop/CIMWin32Prov/cim-system)**
+Tipo di dati: **[ **SISTEMA CIM \_**](/windows/desktop/CIMWin32Prov/cim-system)**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -83,10 +83,10 @@ Elemento figlio nell'associazione. Questa proprietà viene ereditata da [**CIM \
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                                 |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

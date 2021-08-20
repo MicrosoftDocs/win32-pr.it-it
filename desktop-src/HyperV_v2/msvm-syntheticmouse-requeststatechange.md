@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 427dc0176856389f2eab2ae0c002c522f81048f4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1f153714df25829896f3fbc839f28c8150784d8724a115ca39b1040230478137
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118949693"
 ---
 # <a name="requeststatechange-method-of-the-msvm_syntheticmouse-class"></a>Metodo RequestStateChange della classe Msvm \_ SyntheticMouse
 
@@ -128,7 +128,7 @@ Stato richiesto per l'elemento. Queste informazioni verranno inserite nella prop
 *Processo* \[ Cambio\]
 </dt> <dd>
 
-Può contenere un riferimento all'oggetto ConcreteJob creato per tenere traccia della transizione di stato avviata dalla chiamata al metodo.
+Può contenere un riferimento all'oggetto ConcreteJob creato per tenere traccia della transizione di stato avviata dalla chiamata al metodo .
 
 </dd> <dt>
 
@@ -137,7 +137,7 @@ Può contenere un riferimento all'oggetto ConcreteJob creato per tenere traccia 
 
 Periodo di timeout che specifica la quantità massima di tempo prevista dal client per la transizione al nuovo stato. Il formato dell'intervallo deve essere usato per specificare TimeoutPeriod. Il valore 0 o un parametro Null indica che il client non ha requisiti di tempo per la transizione.
 
-Se questa proprietà non contiene 0 o null e l'implementazione non supporta questo parametro, verrà restituito un codice restituito "Utilizzo del parametro di timeout non supportato".
+Se questa proprietà non contiene 0 o Null e l'implementazione non supporta questo parametro, verrà restituito un codice restituito "Utilizzo del parametro di timeout non supportato".
 
 </dd> </dl>
 
@@ -147,7 +147,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completata senza errori** (0)
+**Completato senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -160,7 +160,7 @@ Questo metodo restituisce uno dei valori seguenti:
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

@@ -1,7 +1,7 @@
 ---
-description: "Consente di visualizzare la finestra di dialogo Trova: tutti i file. Questa operazione equivale a fare clic sul menu Start e quindi selezionare Cerca (o l'equivalente in sistemi precedenti a Windows XP)."
+description: 'Visualizza la finestra di dialogo Trova: Tutti i file. Equivale a fare clic sul menu Start e quindi selezionare Cerca (o il relativo equivalente nei sistemi precedenti a Windows XP.'
 ms.assetid: cccdd3ea-b52a-4fbe-b4c5-1efc1dd6d770
-title: Metodo Shell. FindFiles (shldisp. h)
+title: Metodo Shell.FindFiles (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: f3e6551dc41fd8d6a040ada8000f0b46e81a5dd5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c7295857509c19b06bed342508e0f0c5ee5aae42136edbe6035c6e256cdfb2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968580"
 ---
-# <a name="shellfindfiles-method"></a>Shell. FindFiles, metodo
+# <a name="shellfindfiles-method"></a>Metodo Shell.FindFiles
 
-Consente di visualizzare la finestra di dialogo **trova: tutti i file** . Questa operazione equivale a fare clic sul menu **Start** e quindi selezionare **Cerca** (o l'equivalente in sistemi precedenti a Windows XP).
+Visualizza la **finestra di dialogo Trova: Tutti** i file. Equivale a fare clic sul menu **Start** e quindi selezionare **Cerca** (o il relativo equivalente nei sistemi precedenti a Windows XP.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,9 +57,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato **FindFiles** in uso. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+L'esempio seguente **illustra FindFiles** in uso. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -75,7 +75,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -115,11 +115,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

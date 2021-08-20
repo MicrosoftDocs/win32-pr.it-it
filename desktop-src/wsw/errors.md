@@ -1,160 +1,160 @@
 ---
 title: Errors
-description: In questa sezione vengono illustrati gli errori che possono essere causati dalle funzioni dei servizi Web Windows in seguito a un errore di esecuzione del comando.
+description: In questa sezione vengono descritti gli errori che possono verificarsi Windows funzioni dei servizi Web in seguito a un errore di esecuzione del comando.
 ms.assetid: 2e5b853f-589c-4f89-9d7e-cd02263a2247
 keywords:
 - Errori dei servizi Web per Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e70f10d673bf8f37664d792d8cf969f0329dc363
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4a08a6371dcc5265239c6a25ce0c01075cff3ae12533862ed8a1cbbbe7aba705
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026529"
 ---
 # <a name="errors"></a>Errors
 
-In questa sezione vengono illustrati gli errori che possono essere causati dalle funzioni dei servizi Web Windows in seguito a un errore di esecuzione del comando.
+In questa sezione vengono descritti gli errori che possono verificarsi Windows funzioni dei servizi Web in seguito a un errore di esecuzione del comando.
 
--   [Parametri out](#out-parameters)
+-   [Parametri Out](#out-parameters)
 -   [Codici errore](#error-codes)
--   [Errori avanzati](#rich-errors)
+-   [Errori di tipo Rtf](#rich-errors)
 -   [Errori ed errori](#faults-and-errors)
--   [Informazioni sull'errore sensibile alla lingua](#language-sensitive-error-information)
+-   [Informazioni sugli errori sensibili alla lingua](#language-sensitive-error-information)
 -   [Codici di errore canonici](#canonical-error-codes)
 -   [Utilizzo API non valido](#invalid-api-usage)
 -   [Sicurezza](#security)
 
-## <a name="out-parameters"></a>Parametri out
+## <a name="out-parameters"></a>Parametri Out
 
 Come regola generale, il valore dei parametri out non viene modificato se una funzione ha esito negativo.
 
-Se la funzione ha esito negativo, esistono alcune istanze in cui i parametri out vengono modificati. Questi casi vengono indicati in modo esplicito nella documentazione per ogni parametro. Se la documentazione non menziona alcuna modifica dei parametri in caso di errore, è possibile presupporre che la funzione non le modificherà.
+Esistono alcune istanze in cui i parametri out vengono modificati se la funzione ha esito negativo. Questi casi vengono definiti in modo esplicito nella documentazione per ogni parametro. Se la documentazione non cita alcuna modifica dei parametri out in caso di errore, è possibile presupporre che la funzione non li modificherà.
 
 ## <a name="error-codes"></a>Codici errore
 
-Tutti i codici di errore restituiti sono HRESULT. Questa API definisce un set di HRESULT nell' \_ intervallo Servizi WEBservices, ma restituisce anche gli errori definiti altrove nell'API Windows.
+Tutti i codici restituiti di errore sono HRESULT. Questa API definisce un set di HRESULT nell'intervallo FACILITY WEBSERVICES, ma restituisce anche gli errori definiti altrove \_ nell'API Windows.
 
-Per informazioni sui codici di errore restituiti, vedere la documentazione per le API specifiche. L'elenco non deve essere esaustivo per ogni API, bensì un elenco di codici di errore per i quali sono disponibili scenari comuni per la gestione esplicita. Un chiamante deve sempre presupporre che siano possibili altri codici di errore da qualsiasi API.
+Per informazioni sui codici di errore restituiti, vedere la documentazione per api specifiche. L'elenco non deve essere esaustivo per ogni API, ma piuttosto un elenco di codici di errore per i quali esistono scenari comuni per la gestione esplicita. Un chiamante deve sempre presupporre che altri codici di errore siano possibili da qualsiasi API.
 
-Questa API definisce un numero relativamente ridotto di codici di errore, che corrispondono a scenari in cui un programma desidera eseguire un'azione in base all'errore. Solo i codici di errore potrebbero non essere sufficienti per determinare la causa dell'errore o per fornire una descrizione corretta del problema all'utente. La migliore comprensione del problema deriva dall'utilizzo di errori avanzati, come descritto di seguito.
+Questa API definisce un numero relativamente ridotto di codici di errore, che corrispondono agli scenari in cui un programma dovrà intervenire in base all'errore. I codici di errore da soli potrebbero non essere sufficienti per determinare cosa è andato storto o per fornire una buona descrizione del problema all'utente. La migliore comprensione del problema deriva dall'uso di errori rtf, come descritto di seguito.
 
-## <a name="rich-errors"></a>Errori avanzati
+## <a name="rich-errors"></a>Errori di tipo Rtf
 
-In aggiunta alla restituzione di un codice di errore, un chiamante può facoltativamente richiedere informazioni dettagliate sugli errori per qualsiasi chiamata API passando un oggetto [ \_ errore WS](ws-error.md) non **null**. Per creare un oggetto Error, usare [**WsCreateError**](/windows/desktop/api/WebServices/nf-webservices-wscreateerror). Se si verifica un errore, l'API che ha causato l'errore compilerà l'oggetto errore con contesto aggiuntivo sulla situazione di errore. Se non è presente alcun errore, l'oggetto errore non viene modificato. Il passaggio di un oggetto Error **null** indica che il chiamante non è interessato a informazioni dettagliate sugli errori. È necessario preparare i chiamanti (compresi i callback) per gestire gli oggetti di errore **null** .
+Oltre a restituire un codice di errore, un chiamante può facoltativamente richiedere informazioni dettagliate sull'errore per qualsiasi chiamata API passando un oggetto [WS \_ ERROR](ws-error.md) non **NULL.** Per creare un oggetto errore, usare [**WsCreateError**](/windows/desktop/api/WebServices/nf-webservices-wscreateerror). Se si verifica un errore, l'API che ha causato l'errore riempirà l'oggetto errore con un contesto aggiuntivo sulla situazione dell'errore. Se non si verifica alcun errore, l'oggetto errore non viene modificato. Il passaggio **di un** oggetto errore NULL indica che il chiamante non è interessato a informazioni dettagliate sugli errori. I chiamato (inclusi i callback) devono essere preparati per gestire gli **oggetti errore NULL.**
 
-Si noti che lo stesso oggetto Error può essere usato per più chiamate API, ma può essere usato solo per una chiamata API alla volta (in quanto è a thread singolo). Ogni volta che si verifica un errore, le informazioni sull'errore vengono accodate all'oggetto Error. Quando una catena di chiamate viene ricaricata, più funzioni possono aggiungere informazioni all'oggetto errore per fornire un contesto aggiuntivo sull'errore. Per cancellare il contenuto dell'oggetto Error prima di riutilizzarlo (dopo che si è verificato un errore), utilizzare [**WsResetError**](/windows/desktop/api/WebServices/nf-webservices-wsreseterror). Se non si verificano errori, non è necessario reimpostare l'oggetto errore prima di riutilizzarlo.
+Si noti che lo stesso oggetto errore può essere usato per più chiamate API, ma può essere usato solo per una chiamata API alla volta (perché è a thread singolo). Ogni volta che si verifica un errore, le informazioni sull'errore vengono aggiunte all'oggetto errore. Durante la rimozione di una catena di chiamate, più funzioni possono aggiungere informazioni all'oggetto errore per fornire un contesto aggiuntivo sull'errore. Per cancellare il contenuto dell'oggetto errore prima di riutilizzarlo (dopo che si verifica un errore), usare [**WsResetError**](/windows/desktop/api/WebServices/nf-webservices-wsreseterror). Se non si verifica alcun errore, non è necessario reimpostare l'oggetto errore prima di riutilizzarlo.
 
-Le informazioni dettagliate sugli errori sono costituite dai seguenti elementi:
+Le informazioni dettagliate sugli errori sono costituite dalle seguenti:
 
--   Set di valori di proprietà che fornisce informazioni aggiuntive sull'errore, se presente. Vedere [**\_ \_ Proprietà WS Error**](/windows/desktop/api/WebServices/ns-webservices-ws_error_property).
--   Zero o più stringhe di errore. Le stringhe vengono aggiunte utilizzando [**WsAddErrorString**](/windows/desktop/api/WebServices/nf-webservices-wsadderrorstring)e possono essere sottoposte a query utilizzando [**WsGetErrorString**](/windows/desktop/api/WebServices/nf-webservices-wsgeterrorstring). Il numero di stringhe può essere sottoposto a query utilizzando il [**\_ conteggio delle stringhe di \_ proprietà \_ \_ WS Error**](/windows/desktop/api/WebServices/ne-webservices-ws_error_property_id).
+-   Set di valori di proprietà, che forniscono informazioni aggiuntive sull'errore, se presente. Vedere [**PROPRIETÀ \_ ERROR \_ DI WS**](/windows/desktop/api/WebServices/ns-webservices-ws_error_property).
+-   Zero o più stringhe di errore. Le stringhe vengono aggiunte [**tramite WsAddErrorString**](/windows/desktop/api/WebServices/nf-webservices-wsadderrorstring)e possono essere sottoposti a query usando [**WsGetErrorString**](/windows/desktop/api/WebServices/nf-webservices-wsgeterrorstring). È possibile eseguire query sul numero di stringhe usando [**WS \_ ERROR PROPERTY STRING \_ \_ \_ COUNT**](/windows/desktop/api/WebServices/ne-webservices-ws_error_property_id).
 
 ## <a name="faults-and-errors"></a>Errori ed errori
 
-Vedere [errori](faults.md) per informazioni sul modo in cui sono correlati gli errori e gli errori.
+Per [informazioni sulla relazione](faults.md) tra errori e errori, vedere Errori.
 
-## <a name="language-sensitive-error-information"></a>Informazioni sull'errore sensibile alla lingua
+## <a name="language-sensitive-error-information"></a>Informazioni sugli errori sensibili alla lingua
 
-Quando si crea un oggetto Error, viene specificato il LANGID della traduzione della lingua desiderata per le informazioni sull'errore. Viene utilizzato quando si aggiungono informazioni sugli errori all'oggetto Error.
+Quando si crea un oggetto errore, viene specificato il LANGID della traduzione della lingua desiderata per le informazioni sull'errore. Viene usato quando si aggiungono informazioni sull'errore all'oggetto errore.
 
-Questo valore di lingua può essere recuperato o impostato utilizzando la [**\_ Proprietà WS Error \_ \_ LangID**](/windows/desktop/api/WebServices/ne-webservices-ws_error_property_id).
+Questo valore di lingua può essere recuperato o impostato usando [**WS \_ ERROR PROPERTY \_ \_ LANGID**](/windows/desktop/api/WebServices/ne-webservices-ws_error_property_id).
 
 ## <a name="canonical-error-codes"></a>Codici di errore canonici
 
-Questa API fornisce un set di codici di errore (WS \_ E \_ \* ) canonico che consente di utilizzare diverse tecnologie di comunicazione senza dover dipendere dai codici di errore specifici dell'implementazione sottostante specifica. Per un elenco completo di questi codici di errore, vedere [valori restituiti di servizi Web Windows](windows-web-services-return-values.md).
+Questa API fornisce un set canonico di codici di errore (WS E) che consentono di usare tecnologie di comunicazione diverse senza dover dipendere dai codici di errore specifici \_ \_ \* dell'implementazione sottostante specifica. Per un elenco completo di questi codici di errore, vedere Windows [valori restituiti dei servizi Web](windows-web-services-return-values.md).
 
-Questo consente, ad esempio, a un programma di verificare se il codice di errore **WS \_ e \_ endpoint \_ non \_** è stato trovato se si utilizza TCP, UDP o http ed eseguire un'azione, ad esempio il tentativo di utilizzare un endpoint diverso.
+Ciò consente, ad esempio, a un programma di controllare il codice di errore **WS \_ E ENDPOINT NOT \_ \_ \_ FOUND** se si usa TCP, UDP o HTTP e di intraprendere un'azione, ad esempio il tentativo di usare un endpoint diverso.
 
-Quando viene eseguito il mapping di un codice di errore specifico dell'implementazione a un errore canonico, il codice di errore originale viene salvato nell'oggetto Error ed è ancora possibile accedervi per scopi diagnostici. Per ulteriori informazioni, vedere il [**\_ \_ \_ \_ \_ codice di errore originale della proprietà WS Error**](/windows/desktop/api/WebServices/ne-webservices-ws_error_property_id) .
+Quando un codice di errore specifico dell'implementazione viene mappato a un errore canonico, il codice di errore originale viene salvato nell'oggetto errore ed è comunque possibile accedervi a scopo diagnostico. Per altre informazioni, vedere CODICE ERRORE ORIGINALE [**\_ PROPRIETÀ \_ \_ \_ \_ ERRORE WS.**](/windows/desktop/api/WebServices/ne-webservices-ws_error_property_id)
 
 ## <a name="invalid-api-usage"></a>Utilizzo API non valido
 
-I codici di errore seguenti sono riservati per l'utilizzo dell'API non valido e non verranno restituiti in altre circostanze. Se viene restituito uno di questi errori, può essere un'indicazione di un bug dell'applicazione.
+I codici di errore seguenti sono riservati per l'utilizzo non valido dell'API e non verranno restituiti in altre circostanze. Se viene restituito uno di questi errori, potrebbe essere un'indicazione di un bug dell'applicazione.
 
--   **\_operazione WS E \_ non valida \_**
+-   **OPERAZIONE WS \_ E \_ NON \_ VALIDA**
 -   **E \_ INVALIDARG**
 
 Le enumerazioni seguenti fanno parte della traccia:
 
--   [**\_ \_ ID proprietà errore \_ WS**](/windows/desktop/api/WebServices/ne-webservices-ws_error_property_id)
--   [**\_codice eccezione \_ WS**](/windows/desktop/api/WebServices/ne-webservices-ws_exception_code)
+-   [**ID PROPRIETÀ ERRORE WS \_ \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_error_property_id)
+-   [**CODICE DI \_ ECCEZIONE WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_exception_code)
 
 I codici di errore seguenti fanno parte della traccia:
 
--   **CERT \_ E \_ CN \_ Nessuna \_ corrispondenza**
--   **CERTIFICATO \_ E \_ scaduto**
--   **CERTIFICATO \_ E \_ UNTRUSTEDROOT**
--   **uso di CERT \_ E \_ errato \_**
--   **REVOCA della crittografia \_ E in \_ \_ modalità offline**
+-   **CERT \_ E \_ CN \_ NO \_ MATCH**
+-   **CERT \_ E \_ SCADUTO**
+-   **CERT \_ E \_ UNTRUSTEDROOT**
+-   **CERT \_ E \_ UTILIZZO \_ ERRATO**
+-   **REVOCA \_ DI CRYPT E \_ \_ OFFLINE**
 -   **E \_ INVALIDARG**
--   **E \_ OutOfMemory**
--   **\_Indirizzo WS \_ E \_ in \_ uso**
--   **\_Indirizzo WS \_ E \_ non \_ disponibile**
--   **\_ \_ accesso all'endpoint WS E \_ \_ negato**
--   **\_ \_ azione endpoint WS \_ E \_ non \_ supportata**
--   **WS \_ E \_ endpoint \_ disconnesso**
--   **\_ \_ errore endpoint WS \_ E**
--   **\_ \_ errore endpoint WS \_ E \_ ricevuto**
--   **\_endpoint WS \_ E \_ non \_ disponibile**
--   **\_endpoint WS \_ E \_ non \_ trovato**
--   **WS \_ E \_ endpoint \_ troppo \_ occupato**
--   **\_endpoint WS E non \_ \_ raggiungibile**
--   **\_URL endpoint WS E \_ non valido \_ \_**
--   **\_formato WS E \_ non valido \_**
--   **\_operazione WS E \_ non valida \_**
--   **WS \_ E \_ non \_ supportato**
--   **WS \_ E \_ Nessuna \_ conversione \_ disponibile**
--   **\_ \_ overflow numerico WS \_ E**
--   **errore di WS \_ E \_ Object \_**
--   **\_operazione WS \_ E \_ abbandonata**
--   **\_operazione WS \_ E \_ interrotta**
--   **\_timeout dell' \_ operazione WS E \_ \_**
--   **WS \_ E \_ altro**
--   **\_ \_ accesso proxy WS \_ E \_ negato**
--   **\_ \_ errore proxy WS \_ E**
--   **WS \_ E \_ proxy \_ richiede \_ l' \_ autenticazione di base**
--   **WS \_ E \_ proxy \_ richiede \_ l' \_ autenticazione digest**
--   **WS \_ E \_ proxy \_ richiede \_ l' \_ autenticazione Negotiate**
--   **WS \_ E \_ proxy \_ richiede \_ l' \_ autenticazione NTLM**
--   **\_quota WS \_ E \_ superata**
--   **\_errore del \_ sistema di protezione WS E \_ \_**
--   **\_token di \_ sicurezza WS E \_ \_ scaduto**
--   **\_errore di \_ Verifica di sicurezza WS E \_ \_**
--   **WS \_ E \_ server \_ richiede \_ l' \_ autenticazione di base**
--   **WS \_ E \_ server \_ richiede \_ l' \_ autenticazione digest**
--   **WS \_ E \_ server \_ richiede \_ l' \_ autenticazione Negotiate**
--   **WS \_ E \_ server \_ richiede \_ l' \_ autenticazione NTLM**
--   **WS \_ S \_ asincrono**
--   **\_fine WS \_**
+-   **E \_ OUTOFMEMORY**
+-   **INDIRIZZO \_ WS E \_ \_ IN \_ USO**
+-   **INDIRIZZO \_ WS E \_ \_ NON \_ DISPONIBILE**
+-   **ACCESSO \_ ALL'ENDPOINT WS E \_ \_ \_ NEGATO**
+-   **AZIONE \_ ENDPOINT WS E \_ \_ NON \_ \_ SUPPORTATA**
+-   **ENDPOINT \_ WS E \_ \_ DISCONNESSO**
+-   **ERRORE \_ DELL'ENDPOINT WS E \_ \_**
+-   **ERRORE \_ DELL'ENDPOINT WS E \_ \_ \_ RICEVUTO**
+-   **ENDPOINT \_ WS E \_ \_ NON \_ DISPONIBILE**
+-   **ENDPOINT \_ WS E \_ \_ NON \_ TROVATO**
+-   **ENDPOINT \_ WS E \_ \_ TROPPO \_ OCCUPATO**
+-   **ENDPOINT \_ WS E \_ \_ NON RAGGIUNGIBILE**
+-   **URL \_ DELL'ENDPOINT WS E \_ \_ NON \_ VALIDO**
+-   **FORMATO WS \_ E \_ NON \_ VALIDO**
+-   **OPERAZIONE WS \_ E \_ NON \_ VALIDA**
+-   **WS \_ E \_ NON \_ SUPPORTATO**
+-   **WS \_ E NESSUNA TRADUZIONE \_ \_ \_ DISPONIBILE**
+-   **OVERFLOW \_ NUMERICO WS E \_ \_**
+-   **ERRORE \_ DELL'OGGETTO WS E \_ \_**
+-   **OPERAZIONE \_ WS E \_ \_ ABBANDONATA**
+-   **OPERAZIONE \_ WS E \_ \_ INTERROTTA**
+-   **TIMEOUT \_ DELL'OPERAZIONE WS E \_ \_ \_**
+-   **WS \_ E \_ ALTRO**
+-   **ACCESSO PROXY WS \_ E \_ \_ \_ NEGATO**
+-   **ERRORE DEL PROXY WS \_ E \_ \_**
+-   **IL PROXY WS \_ E \_ RICHIEDE \_ \_ \_ L'AUTENTICAZIONE DI BASE**
+-   **IL PROXY WS \_ E \_ RICHIEDE \_ \_ \_ L'AUTENTICAZIONE DIGEST**
+-   **IL PROXY WS \_ E \_ RICHIEDE \_ \_ \_ L'AUTENTICAZIONE NEGOZIATA**
+-   **IL \_ PROXY WS E \_ \_ RICHIEDE \_ L'AUTENTICAZIONE \_ NTLM**
+-   **QUOTA \_ WS E \_ \_ SUPERATA**
+-   **ERRORE DEL \_ SISTEMA DI SICUREZZA WS E \_ \_ \_**
+-   **TOKEN DI \_ SICUREZZA WS E \_ \_ \_ SCADUTO**
+-   **ERRORE DI \_ VERIFICA DELLA SICUREZZA WS \_ \_ \_ E**
+-   **IL SERVER WS \_ E \_ RICHIEDE \_ \_ \_ L'AUTENTICAZIONE DI BASE**
+-   **IL SERVER WS \_ E \_ RICHIEDE \_ \_ \_ L'AUTENTICAZIONE DIGEST**
+-   **IL SERVER WS \_ E \_ RICHIEDE \_ \_ \_ L'AUTENTICAZIONE NEGOZIATA**
+-   **IL SERVER WS \_ E \_ RICHIEDE \_ \_ L'AUTENTICAZIONE \_ NTLM**
+-   **WS \_ S \_ ASYNC**
+-   **WS \_ S \_ END**
 
 Le funzioni seguenti fanno parte della traccia:
 
--   [**\_ \_ ID proprietà errore \_ WS**](/windows/desktop/api/WebServices/ne-webservices-ws_error_property_id)
--   [**\_codice eccezione \_ WS**](/windows/desktop/api/WebServices/ne-webservices-ws_exception_code)
+-   [**ID PROPRIETÀ ERRORE WS \_ \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_error_property_id)
+-   [**CODICE DI \_ ECCEZIONE WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_exception_code)
 
-Il seguente handle fa parte della traccia:
+L'handle seguente fa parte della traccia:
 
--   [\_errore WS](ws-error.md)
+-   [ERRORE \_ WS](ws-error.md)
 
 La struttura seguente fa parte della traccia:
 
--   [**\_Proprietà WS Error \_**](/windows/desktop/api/WebServices/ns-webservices-ws_error_property)
+-   [**PROPRIETÀ ERROR DI WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_error_property)
 
 ## <a name="security"></a>Sicurezza
 
-È necessario tenere presenti alcune considerazioni di sicurezza che l'utente dell'oggetto Error deve tenere presente:
+Esistono alcune considerazioni sulla sicurezza di cui l'utente dell'oggetto errore deve essere a conoscenza:
 
--   L'oggetto Error può contenere dati non attendibili. Gli esempi sono: l'errore WS \_ e le stringhe di errore, che possono essere memorizzate nell'oggetto errore in base alle informazioni ricevute su un canale non attendibile. Per esaminare le informazioni nell'oggetto errore e prendere decisioni in base ai relativi valori, è necessario prestare attenzione all'utente dell'oggetto Error.
--   Un utente dell'oggetto Error deve chiamare [**WsResetError**](/windows/desktop/api/WebServices/nf-webservices-wsreseterror) dopo aver esaminato le informazioni sull'errore. In caso contrario, può causare un accumulo di memoria.
--   Un utente dell'oggetto Error deve prestare particolare attenzione quando si usa il \_ \_ \_ valore di divulgazione di errore completo WS dell'enumerazione di [**\_ \_ divulgazione degli errori WS**](/windows/desktop/api/WebServices/ne-webservices-ws_fault_disclosure) , perché l'errore generato potrebbe contenere informazioni private accumulate come parte del processo di registrazione degli errori.
+-   L'oggetto errore può contenere dati non attendibili. Esempi di questo tipo sono: WS FAULT e le stringhe di errore, entrambe archiviate nell'oggetto errore in base alle informazioni ricevute su \_ un canale non attendibile. L'utente dell'oggetto errore deve prestare attenzione quando esamina le informazioni nell'oggetto errore e prendere decisioni in base ai relativi valori.
+-   Un utente dell'oggetto errore deve [**chiamare WsResetError**](/windows/desktop/api/WebServices/nf-webservices-wsreseterror) dopo aver esaminato le informazioni sull'errore. La mancata riuscita di questa operazione può causare l'accumulo di memoria.
+-   Un utente dell'oggetto errore deve prestare particolare attenzione quando usa il valore WS FULL FAULT DISCLOSURE dell'enumerazione \_ \_ \_ [**WS \_ FAULT \_ DISCLOSURE,**](/windows/desktop/api/WebServices/ne-webservices-ws_fault_disclosure) perché l'errore generato potrebbe contenere informazioni private accumulate nell'ambito del processo di registrazione degli errori.
 
- 
+ 
 
- 
+ 
 
 
 

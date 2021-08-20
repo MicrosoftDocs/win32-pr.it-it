@@ -19,7 +19,7 @@ Un pacchetto di installazione a più pacchetti può contenere una tabella [MsiEm
 
 La [tabella MsiPackageCertificate elenca](msipackagecertificate-table.md) i certificati di firma digitale usati per verificare l'identità dei pacchetti di installazione che effettuano un'installazione con più pacchetti. È possibile usare questa tabella per ridurre il numero di volte in cui l'installazione di più pacchetti visualizza una richiesta di controllo [*dell'account*](u-gly.md) utente che richiede una risposta da parte di un amministratore.
 
-Le funzioni Windows installer seguenti possono apportare modifiche al computer dell'utente quando il programma di installazione Windows installa, ripristina, aggiorna o rimuove le applicazioni. A partire da Windows Installer 4.5, il programma di installazione [](t-gly.md) può eseguire il rollback delle modifiche apportate da queste funzioni durante l'elaborazione della transazione di un'installazione con più pacchetti:
+Le funzioni Windows installer seguenti possono apportare modifiche al computer dell'utente quando il programma di installazione di Windows installa, ripristina, aggiorna o rimuove le applicazioni. A partire da Windows Installer 4.5, il programma di installazione [](t-gly.md) può eseguire il rollback delle modifiche apportate da queste funzioni durante l'elaborazione delle transazioni di un'installazione con più pacchetti:
 
 <dl>
 
@@ -42,11 +42,11 @@ Le funzioni Windows installer seguenti possono apportare modifiche al computer d
 [**MsiRemovePatches**](/windows/desktop/api/Msi/nf-msi-msiremovepatchesa)  
 </dl>
 
-Esiste un'eccezione se Windows installer rileva un pacchetto appartenente a un'installazione con più pacchetti che contiene un'azione [ForceReboot](forcereboot-action.md) o [ScheduleReboot.](schedulereboot-action.md) In questo caso, Windows installer non installa solo il pacchetto. È possibile installare altri pacchetti che appartengono all'installazione a più pacchetti, che non contengono un'azione ForceReboot o ScheduleReboot.
+Esiste un'eccezione se Windows installer rileva un pacchetto appartenente a un'installazione a più pacchetti che contiene un'azione [ForceReboot](forcereboot-action.md) o [ScheduleReboot.](schedulereboot-action.md) In questo caso, Windows installer non installa solo il pacchetto. È possibile installare altri pacchetti che appartengono all'installazione a più pacchetti, che non contengono un'azione ForceReboot o ScheduleReboot.
 
 **[Windows Installer 4.0](not-supported-in-windows-installer-4-0.md)e versioni precedenti:[****](t-gly.md) L'elaborazione delle transazioni di più pacchetti Windows di installazione non è supportata. Queste versioni del programma di Windows non sono in grado di eseguire il rollback dell'installazione di più pacchetti come singola transazione.
 
-**Windows Server 2008 R2 [](../termserv/terminal-services-portal.md) con il** ruolo Servizi Desktop remoto abilitato: Non supportato. L'installazione di più pacchetti [tramite la tabella MsiEmbeddedChainer](msiembeddedchainer-table.md) ha esito negativo [se il](../termserv/terminal-services-portal.md) Servizi Desktop remoto è abilitato.
+**Windows Server 2008 R2 [](../termserv/terminal-services-portal.md)** con il ruolo Servizi Desktop remoto abilitato: Non supportato. L'installazione di più pacchetti [tramite la tabella MsiEmbeddedChainer](msiembeddedchainer-table.md) ha esito negativo [se il](../termserv/terminal-services-portal.md) Servizi Desktop remoto è abilitato.
 
  
 

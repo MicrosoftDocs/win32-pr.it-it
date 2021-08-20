@@ -34,7 +34,7 @@ Le applicazioni basate Media Foundation possono riprodurre origini multimediali 
 
 <dl> <dt>
 
-[Media Foundation per programmatori](media-foundation-programming-guide.md)
+[Media Foundation di programmazione](media-foundation-programming-guide.md)
 </dt> <dt>
 
 [Origini multimediali](media-sources.md)

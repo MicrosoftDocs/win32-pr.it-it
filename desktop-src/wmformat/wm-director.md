@@ -1,9 +1,9 @@
 ---
 title: WM/Director
-description: L'attributo WM/Director contiene il nome del Director.
+description: L'attributo WM/Director contiene il nome del director.
 ms.assetid: 1bbb640a-9d8c-4e03-b4ce-706aabe772d5
 keywords:
-- Formato Windows Media WM/Director
+- WM/Director windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a86768cbbec47357ce56a8c2c1308023a34077c7
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: b27779fd22a1d77aa425142604f3ce31bec1b10a8a354c1d0967365d2515f87d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104334191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027089"
 ---
 # <a name="wmdirector"></a>WM/Director
 
-L'attributo **WM/Director** contiene il nome del Director.
+**L'attributo WM/Director** contiene il nome del director.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,11 +29,11 @@ g \_ wszWMDirector
 
 ## <a name="data-type"></a>Tipo di dati
 
-**\_stringa di tipo WMT \_**
+**STRINGA DI TIPO WMT \_ \_**
 
 ## <a name="remarks"></a>Commenti
 
-In genere i file video hanno direttori, i file audio hanno più probabilità di usare [**WM/Producer**](wm-producer.md).
+In genere i file video hanno registi, è più probabile che i file audio [**usino WM/Producer.**](wm-producer.md)
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -42,9 +42,9 @@ In genere i file video hanno direttori, i file audio hanno più probabilità di 
 [**Elenco degli attributi**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

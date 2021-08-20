@@ -1,34 +1,34 @@
 ---
-description: Specifica un oggetto attivazione che consente di creare un mixer video personalizzato per il sink multimediale EVR (Enhanced video renderer).
+description: Specifica un oggetto di attivazione che crea un mixer video personalizzato per il sink multimediale EVR (Enhanced Video Renderer).
 ms.assetid: 60484f87-7588-4b52-93aa-ef8fad66d971
-title: Attributo MF_ACTIVATE_CUSTOM_VIDEO_MIXER_ACTIVATE (Mfidl. h)
+title: MF_ACTIVATE_CUSTOM_VIDEO_MIXER_ACTIVATE attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d6268f3630b013235f3d365e0b8ab0578c9dd3e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1966efe66efaba56c0206a9f6fac59aba30a1aea9d47100c4ce19a30af96a863
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117877298"
 ---
-# <a name="mf_activate_custom_video_mixer_activate-attribute"></a>Attiva \_ l' \_ \_ \_ attributo Activate del mixer video personalizzato \_ MF
+# <a name="mf_activate_custom_video_mixer_activate-attribute"></a>MF \_ ACTIVATE CUSTOM VIDEO \_ \_ \_ MIXER ACTIVATE \_ attribute
 
-Specifica un oggetto attivazione che consente di creare un mixer video personalizzato per il sink multimediale EVR (Enhanced video renderer).
+Specifica un oggetto di attivazione che crea un mixer video personalizzato per il sink multimediale EVR (Enhanced Video Renderer).
 
 ## <a name="data-type"></a>Tipo di dati
 
-**IUnknown \** _
+**IUnknown\***
 
 ## <a name="remarks"></a>Commenti
 
-Se si sta creando EVR tramite un oggetto Activation, è possibile usare questo attributo per impostare un mixer video personalizzato in EVR. Usare questo attributo come indicato di seguito:
+Se si crea l'EVR tramite un oggetto di attivazione, è possibile usare questo attributo per impostare un mixer video personalizzato nell'EVR. Usare questo attributo come segue:
 
-1.  Chiamare la funzione [_ *MFCreateVideoRendererActivate* *](/windows/desktop/api/mfidl/nf-mfidl-mfcreatevideorendereractivate) per creare un oggetto Activation per il EVR. La funzione restituisce un puntatore all'interfaccia [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) .
-2.  Impostare questo attributo sul puntatore [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) chiamando [**IMFAttributes:: seunknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown). Il valore dell'attributo è un puntatore a un oggetto di attivazione implementato dal chiamante. L'oggetto attivazione del chiamante deve esporre l'interfaccia **IMFActivate** .
+1.  Chiamare la [**funzione MFCreateVideoRendererActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatevideorendereractivate) per creare un oggetto di attivazione per l'EVR. La funzione restituisce un puntatore [**all'interfaccia IMFActivate.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate)
+2.  Impostare questo attributo sul [**puntatore IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) chiamando [**IMFAttributes::SetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown). Il valore dell'attributo è un puntatore a un oggetto di attivazione implementato dal chiamante. L'oggetto di attivazione del chiamante deve esporre **l'interfaccia IMFActivate.**
 
-Se si imposta questo attributo, EVR chiama [**IMFActivate:: ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) per creare il mixer video personalizzato. Il mixer video deve esporre l'interfaccia [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) .
+Se si imposta questo attributo, l'EVR chiama [**IMFActivate::ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) per creare il mixer video personalizzato. Il mixer video deve esporre [**l'interfaccia IMFTransform.**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -36,9 +36,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -46,22 +46,22 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Attributi renderer video avanzati](enhanced-video-renderer-attributes.md)
+[Attributi del renderer video avanzato](enhanced-video-renderer-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: getunknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown)
+[**IMFAttributes::GetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown)
 </dt> <dt>
 
-[**IMFAttributes:: Unknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown)
+[**IMFAttributes::SetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown)
 </dt> <dt>
 
 [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate)
 </dt> <dt>
 
-[Oggetti attivazione](activation-objects.md)
+[Oggetti di attivazione](activation-objects.md)
 </dt> </dl>
 
  

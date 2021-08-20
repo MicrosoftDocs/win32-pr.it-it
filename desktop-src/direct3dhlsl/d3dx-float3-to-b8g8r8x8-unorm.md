@@ -1,6 +1,6 @@
 ---
 title: D3DX_FLOAT3_to_B8G8R8X8_UNORM funzione
-description: Racchiude L'oggetto XMFLOAT3 specificato in un UINT UNORM DXGI \_ FORMAT \_ B8G8R8X8. \_
+description: Racchiude il valore XMFLOAT3 specificato in un UINT DXGI \_ FORMAT \_ B8G8R8X8 \_ UNORM.
 ms.assetid: 9492578b-e3c3-4856-b6d2-49f776a21d77
 keywords:
 - D3DX_FLOAT3_to_B8G8R8X8_UNORM funzione HLSL
@@ -23,7 +23,7 @@ ms.locfileid: "118516379"
 ---
 # <a name="d3dx_float3_to_b8g8r8x8_unorm-function"></a>Funzione UNORM da D3DX FLOAT3 a \_ \_ \_ B8G8R8X8 \_
 
-Racchiude L'oggetto XMFLOAT3 specificato in un UINT UNORM DXGI \_ FORMAT \_ B8G8R8X8. \_
+Racchiude il valore XMFLOAT3 specificato in un UINT DXGI \_ FORMAT \_ B8G8R8X8 \_ UNORM.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ UINT D3DX_FLOAT3_to_B8G8R8X8_UNORM(
 *unpackedInput* 
 </dt> <dd>
 
-Dati shader decompressi.
+Dati dello shader decompressi.
 
 </dd> </dl>
 
@@ -65,7 +65,7 @@ Dati dello shader di cui è stato effettuato il pacchetto.
 [Funzioni](format-conversion-functions.md)
 </dt> <dt>
 
-[Decompressione e impacchettamento del formato DXGI \_ per In-Place di immagini](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Decompressione e creazione di un pacchetto DXGI \_ FORMAT per la In-Place delle immagini](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

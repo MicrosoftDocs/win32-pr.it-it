@@ -1,9 +1,9 @@
 ---
-title: attributo ncadg_mq
-description: La \_ parola chiave ncadg mq identifica Microsoft Message Queuing Services (MSMQ) come protocollo di trasporto per l'endpoint. Questo protocollo è obsoleto e non deve essere utilizzato nelle nuove applicazioni.
+title: ncadg_mq attributo
+description: La parola chiave \_ mq ncadg identifica Microsoft Message Queuing Services (MSMQ) come protocollo di trasporto per l'endpoint. Questo protocollo è obsoleto e non deve essere usato nelle nuove applicazioni.
 ms.assetid: 7472fc47-c1f0-4578-8aef-b655505e0563
 keywords:
-- attributo ncadg_mq MIDL
+- ncadg_mq attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0acc433b55ba9f3c6d8919bef9b8db470bc0f5a
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 0164211a267760a533d8d164a76387dbbcfba8a0aad8e4ac6ecaf20ed770708a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103956413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067021"
 ---
-# <a name="ncadg_mq-attribute"></a>ncadg \_ mq-attributo
+# <a name="ncadg_mq-attribute"></a>Attributo ncadg \_ mq
 
-La parola chiave **ncadg \_ mq** identifica Microsoft Message QUEUING Services (MSMQ) come protocollo di trasporto per l'endpoint. Questo protocollo è obsoleto e non deve essere utilizzato nelle nuove applicazioni.
+La **parola chiave \_ mq ncadg** identifica Microsoft Message Queuing Services (MSMQ) come protocollo di trasporto per l'endpoint. Questo protocollo è obsoleto e non deve essere usato nelle nuove applicazioni.
 
 ``` syntax
 endpoint("ncadg_mq:server-name")
@@ -31,27 +31,27 @@ endpoint("ncadg_mq:server-name")
 
 <dl> <dt>
 
-*nome server* 
+*nome-server* 
 </dt> <dd>
 
-Specifica il nome del server, o host, del computer. Il nome è una stringa di caratteri e può essere un nome di dominio completo.
+Specifica il nome del server, o host, computer. Il nome è una stringa di caratteri e può essere un nome di dominio completo.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Per usare il protocollo di trasporto **ncadg \_ mq** , i componenti MSMQ devono essere completamente installati e i sistemi client e server devono essere raggiungibili tramite i protocolli mq.
+Per usare il protocollo di trasporto **ncadg \_ mq,** i componenti MSMQ devono essere installati completamente e i sistemi client e server devono essere raggiungibili tramite i protocolli MQ.
 
-Il protocollo **ncadg \_ mq** non supporta endpoint dinamici o chiamate [**broadcast**](broadcast.md) . Come per gli altri protocolli di datagramma, **ncadg \_ mq** non supporta i callback. le funzioni che usano l'attributo di [**callback**](callback.md) avranno esito negativo.
+Il **protocollo \_ mq ncadg** non supporta endpoint dinamici o [**chiamate broadcast.**](broadcast.md) Come per altri protocolli di datagramma, **ncadg \_ mq** non supporta i callback. Le funzioni che usano l'attributo [**di callback**](callback.md) avranno esito negativo.
 
 > [!Note]  
 > Questa famiglia di protocolli non è supportata in Windows XP.
 
- 
+ 
 
 ## <a name="examples"></a>Esempio
 
-La sintassi del protocollo Message-Queue è definita indipendentemente dalla specifica IDL. Il compilatore MIDL esegue alcune verifiche della sintassi, ma non garantisce che la specifica dell'endpoint sia corretta. È possibile che alcuni errori vengano segnalati in fase di esecuzione anziché durante la compilazione.
+La sintassi del protocollo message-queue viene definita indipendentemente dalla specifica IDL. Il compilatore MIDL esegue alcuni controlli della sintassi, ma non garantisce che la specifica dell'endpoint sia corretta. Alcuni errori possono essere segnalati in fase di esecuzione anziché durante la compilazione.
 
 ``` syntax
 [
@@ -69,13 +69,13 @@ interface iface
 
 <dl> <dt>
 
-[**trasmissione**](broadcast.md)
+[**Trasmissione**](broadcast.md)
 </dt> <dt>
 
 [**callback**](callback.md)
 </dt> <dt>
 
-[**endpoint**](endpoint.md)
+[**Endpoint**](endpoint.md)
 </dt> <dt>
 
 [File di definizione dell'interfaccia (IDL)](interface-definition-idl-file.md)
@@ -87,9 +87,9 @@ interface iface
 [Accodamento messaggi RPC](/windows/desktop/Rpc/rpc-message-queuing)
 </dt> <dt>
 
-[Associazione stringa](/windows/desktop/Rpc/string-binding)
+[Associazione di stringhe](/windows/desktop/Rpc/string-binding)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

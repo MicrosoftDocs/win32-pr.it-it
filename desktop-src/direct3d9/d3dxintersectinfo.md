@@ -1,5 +1,5 @@
 ---
-description: "Struttura D3DXINTERSECTINFO: descrive un'intersezione di raggio-triangolo."
+description: "Struttura D3DXINTERSECTINFO: descrive un'intersezione di un triangolo a raggi."
 ms.assetid: b6f50fc0-2c8a-4efa-a144-bd0851f8b0ca
 title: Struttura D3DXINTERSECTINFO (D3dx9mesh.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118525638"
 ---
 # <a name="d3dxintersectinfo-structure"></a>Struttura D3DXINTERSECTINFO
 
-Descrive l'intersezione di un triangolo di raggio.
+Descrive un'intersezione a triangolo di raggi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -88,7 +88,7 @@ Distanza lungo il raggio in cui si è verificata l'intersezione.
 
 ## <a name="remarks"></a>Commenti
 
-Le coordinate barycentriche definiscono un punto all'interno di un triangolo in termini di vertici del triangolo. Per una descrizione più dettagliata delle coordinate barycentric, vedere Descrizione delle [coordinate barycentriche di Mathworld.](https://mathworld.wolfram.com/BarycentricCoordinates.html)
+Le coordinate barycentriche definiscono un punto all'interno di un triangolo in termini di vertici del triangolo. Per una descrizione più approfondita delle coordinate barycentriche, vedere Descrizione delle coordinate [barycentriche di Mathworld.](https://mathworld.wolfram.com/BarycentricCoordinates.html)
 
 ## <a name="requirements"></a>Requisiti
 

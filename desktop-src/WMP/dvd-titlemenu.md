@@ -1,11 +1,11 @@
 ---
-title: DVD. titleMenu, metodo
-description: Il metodo titleMenu interrompe la riproduzione del titolo e visualizza il menu del titolo.
+title: Metodo DVD.titleMenu
+description: Il metodo titleMenu arresta la riproduzione del titolo e visualizza il menu del titolo.
 ms.assetid: 3be3e7cd-5969-4051-ae63-ff070a19fe51
 keywords:
 - Metodo titleMenu Windows Media Player
-- Metodo titleMenu Windows Media Player, classe DVD
-- Classe DVD Media Player Windows, metodo titleMenu
+- Metodo titleMenu Windows Media Player , classe DVD
+- Classe DVD Windows Media Player, metodo titleMenu
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9351603d5307415f57610422a83d3586067bdcb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1954ea52d5a67dc502278c7f1e821a06c4e2b849dc4040e690275b6d1b0ef0bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104340592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996881"
 ---
-# <a name="dvdtitlemenu-method"></a>DVD. titleMenu, metodo
+# <a name="dvdtitlemenu-method"></a>Metodo DVD.titleMenu
 
-Il metodo **titleMenu** interrompe la riproduzione del titolo e visualizza il menu del titolo.
+Il **metodo titleMenu** arresta la riproduzione del titolo e visualizza il menu del titolo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,9 +46,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Ogni DVD viene creato in modo diverso. Il DVD deve contenere un menu per il funzionamento di questo metodo. Alcuni DVD vengono creati in modo che i metodi **tomenu** e **titleMenu** aprano lo stesso menu. Il metodo **titleMenu** richiama in genere il menu del titolo, ma può richiamare invece il menu superiore se non è disponibile alcun menu titolo.
+Ogni DVD viene creato in modo diverso. Il DVD deve contenere un menu per il funzionamento di questo metodo. Alcuni DVD vengono creati in modo che i **metodi topMenu** e **titleMenu** abilitino lo stesso menu. Il **metodo titleMenu** in genere richiama il menu del titolo, ma può richiamare il menu in alto, se non è disponibile alcun menu titolo.
 
-**Windows Media Player 10 Mobile:** Questo metodo ha sempre esito positivo, ma non esegue l'operazione desiderata.
+**Windows Media Player 10 Mobile:** Questo metodo ha sempre esito positivo, ma non esegue l'operazione prevista.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,9 +56,9 @@ Ogni DVD viene creato in modo diverso. Il DVD deve contenere un menu per il funz
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                               |
-| Versione<br/>                  | Windows Media Player per Windows XP o versione successiva.<br/>                           |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                               |
+| Versione<br/>                  | Windows Media Player per Windows XP o versioni successive.<br/>                           |
 | DLL<br/>                      | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -70,7 +70,7 @@ Ogni DVD viene creato in modo diverso. Il DVD deve contenere un menu per il funz
 [**Oggetto DVD**](dvd-object.md)
 </dt> <dt>
 
-[**DVD. menu di scelta rapida**](dvd-topmenu.md)
+[**DVD.topMenu**](dvd-topmenu.md)
 </dt> </dl>
 
  

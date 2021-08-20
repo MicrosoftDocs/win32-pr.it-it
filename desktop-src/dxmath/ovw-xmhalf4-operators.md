@@ -16,7 +16,7 @@ ms.locfileid: "118501029"
 La [**struttura XMHALF4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf4) espone gli operatori seguenti.
 
 > [!Note]  
-> Gli operatori elencati qui sono disponibili solo in C++.
+> Gli operatori elencati di seguito sono disponibili solo in C++.
 
  
 
@@ -26,7 +26,7 @@ La [**struttura XMHALF4**](/windows/desktop/api/DirectXPackedVector/ns-directxpa
 
 | Metodi                                              | Descrizione                                                                                                        |
 |------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| [**operatore =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmhalf4-operator-assign)<br/> | Assegna i dati del componente vettoriale da un'istanza `XMHALF4` di all'istanza corrente di `XMHALF4` . <br/> |
+| [**operator =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmhalf4-operator-assign)<br/> | Assegna i dati del componente vettore da un'istanza `XMHALF4` di all'istanza corrente di `XMHALF4` . <br/> |
 
 
 

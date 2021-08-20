@@ -1,9 +1,9 @@
 ---
 title: Copia di un'immagine OpenGL negli Appunti
-description: Anche se la versione corrente dell'implementazione Microsoft di OpenGL in Windows non supporta direttamente gli Appunti, è possibile copiare un'immagine openGL Windows negli Appunti.
+description: Anche se la versione corrente dell'implementazione Microsoft di OpenGL in Windows non supporta direttamente gli Appunti, è possibile copiare un'immagine OpenGL Windows negli Appunti.
 ms.assetid: 8cda0919-5884-4ebe-92a1-0b3e694989be
 keywords:
-- OpenGL in Windows, copia negli Appunti
+- OpenGL in Windows,copia negli Appunti
 - copia di immagini OpenGL negli Appunti OpenGL
 ms.topic: article
 ms.date: 05/31/2018
@@ -16,11 +16,11 @@ ms.locfileid: "119063281"
 ---
 # <a name="copying-an-opengl-image-to-the-clipboard"></a>Copia di un'immagine OpenGL negli Appunti
 
-Anche se la versione corrente dell'implementazione Microsoft di OpenGL in Windows non supporta direttamente gli Appunti, è possibile copiare un'immagine openGL Windows negli Appunti.
+Anche se la versione corrente dell'implementazione Microsoft di OpenGL in Windows non supporta direttamente gli Appunti, è possibile copiare un'immagine OpenGL Windows negli Appunti.
 
 **Per copiare un'immagine OpenGL negli Appunti**
 
-1.  Disegnare l'immagine su una bitmap di memoria o su un metafile avanzato.
+1.  Disegnare l'immagine in una bitmap di memoria o in un metafile avanzato.
 2.  Copiare la bitmap negli Appunti.
 
  

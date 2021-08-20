@@ -1,7 +1,7 @@
 ---
 description: Ottiene o imposta lo stato di visualizzazione iniziale (ridimensionato, ridotto a icona o ingrandito) del comando del collegamento.
 ms.assetid: 139c6924-f554-4fde-9ed0-bc117bafbb16
-title: Proprietà ShellLinkObject. ShowCommand (shldisp. h)
+title: Proprietà ShellLinkObject.ShowCommand (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 9bacdf98a24d749b5128bc286f06e99299aef437
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b655be140a6c54902ef9c0f47babafeeaf7b3dc2cb7cd3b1eadb97808f7da82c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104995165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968380"
 ---
-# <a name="shelllinkobjectshowcommand-property"></a>Proprietà ShellLinkObject. ShowCommand
+# <a name="shelllinkobjectshowcommand-property"></a>ShellLinkObject.ShowCommand - proprietà
 
 Ottiene o imposta lo stato di visualizzazione iniziale (ridimensionato, ridotto a icona o ingrandito) del comando del collegamento.
 
@@ -49,7 +49,7 @@ stato di visualizzazione del collegamento. I valori possibili sono i seguenti:
 
 </dt> <dd>
 
-Attiva e visualizza una finestra. Se la finestra è ridotta a icona o ingrandita, il sistema ripristina le dimensioni e la posizione originali.
+Attiva e visualizza una finestra. Se la finestra è ridotta a icona o ingrandita, il sistema la ripristina alle dimensioni e alla posizione originali.
 
 </dd> <dt>
 
@@ -60,7 +60,7 @@ Attiva e visualizza una finestra. Se la finestra è ridotta a icona o ingrandita
 
 </dt> <dd>
 
-Attiva la finestra e la Visualizza come finestra ridotta a icona.
+Attiva la finestra e la visualizza come finestra ridotta a icona.
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ Attiva la finestra e la Visualizza come finestra ridotta a icona.
 
 </dt> <dd>
 
-Attiva la finestra e la Visualizza come finestra ingrandita.
+Attiva la finestra e la visualizza come finestra ingrandita.
 
 </dd> </dl>
 
@@ -79,7 +79,7 @@ Attiva la finestra e la Visualizza come finestra ingrandita.
 
 Nell'esempio seguente viene illustrato l'utilizzo corretto di questa proprietà in JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -120,7 +120,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -208,11 +208,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional con \[ solo app desktop SP3\]<br/>                                           |
+| Client minimo supportato<br/> | Windows 2000 Professional solo con le app desktop SP3 \[\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

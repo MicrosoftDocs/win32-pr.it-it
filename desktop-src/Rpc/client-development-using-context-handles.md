@@ -1,6 +1,6 @@
 ---
 title: Sviluppo client tramite handle di contesto
-description: L'unico uso di un programma client per un handle di contesto è passarlo al server ogni volta che il client esegue una chiamata di procedura remota.
+description: L'unico uso di un programma client per un handle di contesto è passarlo al server ogni volta che il client effettua una chiamata di procedura remota.
 ms.assetid: fcbdfb1e-4f1e-4d22-9a3e-cf5a29d300d0
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118931842"
 ---
 # <a name="client-development-using-context-handles"></a>Sviluppo client tramite handle di contesto
 
-L'unico uso di un programma client per un handle di contesto è passarlo al server ogni volta che il client esegue una chiamata di procedura remota. L'applicazione client non deve accedere al contenuto dell'handle. Non deve tentare di modificare i dati dell'handle di contesto in alcun modo. Le procedure remote richiamate dal client eseguono tutte le operazioni necessarie nel contesto del server.
+L'unico uso di un programma client per un handle di contesto è passarlo al server ogni volta che il client effettua una chiamata di procedura remota. L'applicazione client non deve accedere al contenuto dell'handle. Non deve tentare di modificare i dati dell'handle di contesto in alcun modo. Le procedure remote richiamate dal client eseguono tutte le operazioni necessarie nel contesto del server.
 
 Prima di richiedere un handle di contesto da un server, i client devono stabilire un'associazione con il server. Il client può usare un handle di associazione automatico, implicito o esplicito. Con un handle di associazione valido, il client può chiamare una procedura remota nel server che restituisce un handle di contesto aperto (non **NULL)** o ne passa uno tramite un parametro **\[ out \]** nell'elenco di parametri della procedura remota.
 

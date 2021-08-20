@@ -18,7 +18,7 @@ ms.locfileid: "118498703"
 ---
 # <a name="baseeapmethodconfig-schema-complex-types"></a>Tipi complessi dello schema baseeapmethodconfig
 
-Lo schema [baseeapmethodconfig](baseeapmethodconfigschema-schema.md) definisce il tipo complesso seguente.
+Lo [schema baseeapmethodconfig](baseeapmethodconfigschema-schema.md) definisce il tipo complesso seguente.
 
 -   [**BaseEapMethodConfig**](baseeapmethodconfigschema-baseeapmethodconfig-complextype.md)
 
@@ -26,7 +26,7 @@ Lo schema [baseeapmethodconfig](baseeapmethodconfigschema-schema.md) definisce i
 
 <dl> <dt>
 
-[Schema EAPHost e legacy](eaphost-schemas.md)
+[EAPHost e schema legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema baseeapmethodconfig](baseeapmethodconfigschema-schema.md)

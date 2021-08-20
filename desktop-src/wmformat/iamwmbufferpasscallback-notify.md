@@ -1,11 +1,11 @@
 ---
-title: Metodo Notify IAMWMBufferPassCallback
-description: Il metodo Notify viene chiamato dal pin per ogni buffer recapitato durante lo streaming.
+title: Metodo IAMWMBufferPassCallback Notify
+description: Il metodo Notify viene chiamato dal pin per ogni buffer recapitato durante il flusso.
 ms.assetid: 3f252754-c784-4ffd-bcfc-fab73fa02b9a
 keywords:
-- Metodo Notify windows Media Format
-- Metodo Notify windows Media Format , interfaccia IAMWMBufferPassCallback
-- Interfaccia IAMWMBufferPassCallback windows Media Format , metodo Notify
+- Metodo Notify per Windows Media Format
+- Notifica al metodo windows Media Format , interfaccia IAMWMBufferPassCallback
+- Metodo Notify dell'interfaccia IAMWMBufferPassCallback per Windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.locfileid: "117847536"
 ---
 # <a name="iamwmbufferpasscallbacknotify-method"></a>Metodo IAMWMBufferPassCallback::Notify
 
-Il **metodo Notify** viene chiamato dal pin per ogni buffer recapitato durante lo streaming.
+Il **metodo Notify** viene chiamato dal pin per ogni buffer recapitato durante il flusso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -74,7 +74,7 @@ Ora di fine dell'esempio.
 
 ## <a name="return-value"></a>Valore restituito
 
-Non viene specificato alcun valore restituito specifico. Il pin chiamante ignora **HRESULT**.
+Non viene specificato alcun valore restituito specifico. Il pin chiamante ignora **il valore HRESULT**.
 
 ## <a name="remarks"></a>Commenti
 

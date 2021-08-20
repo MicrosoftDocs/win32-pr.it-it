@@ -1,5 +1,5 @@
 ---
-description: Viene illustrato come creare un gestore di anteprime in base al tipo di file ed estendere Esplora risorse.
+description: Illustra come creare un gestore di anteprima in base al tipo di file ed estende Windows Explorer.
 title: Esempio di provider di anteprime file recipe
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 76ab53464b6303728e301fb240e499829c5f70ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 52d31f65a4e400a7f0170be5bc7794a58e565f9da44285f8b718a5ad46d6b472
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968780"
 ---
 # <a name="recipe-thumbnail-provider-sample"></a>Esempio di provider di anteprime file recipe
 
-Viene illustrato come creare un gestore di anteprime in base al tipo di file ed estendere Esplora risorse.
+Illustra come creare un gestore di anteprima in base al tipo di file ed estende Windows Explorer.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -40,13 +40,13 @@ In questo argomento sono contenute le sezioni seguenti.
 
  
 
-Per ulteriori requisiti, vedere il file Leggimi incluso nell'esempio.
+Per altri requisiti, vedere il file Leggimi incluso nell'esempio.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Location      | URL percorso                                                                                             |
+| Località      | URL del percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Esempio RecipeThumbnailProvider](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/RecipeThumbnailProvider) |
+| GitHub  | [Esempio recipeThumbnailProvider](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/RecipeThumbnailProvider) |
 
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio MMIOM_RENAME (mmsystem. h)
-description: Il \_ messaggio MMIOM Rename viene inviato a una routine di i/O dalla funzione mmioRename per richiedere che il file specificato venga rinominato.
+title: MMIOM_RENAME messaggio (Mmsystem.h)
+description: Il messaggio MMIOM RENAME viene inviato a una procedura di I/O dalla funzione mmioRename per richiedere la ridenominazione \_ del file specificato.
 ms.assetid: 38a746c8-3a6f-4cb2-a5b4-c11bd1e73c8a
 keywords:
-- MMIOM_RENAME messaggi multimediali di Windows
+- MMIOM_RENAME messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b71770dec6a92693a50e8e0210da3f9b8028587c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bcfd90b53f1cc42030bd00e6553d52de0f036ff274b3d4ff942c48667e4347b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065311"
 ---
-# <a name="mmiom_rename-message"></a>MMIOM \_ Rinomina messaggio
+# <a name="mmiom_rename-message"></a>Messaggio MMIOM \_ RENAME
 
-Il messaggio **MMIOM \_ Rename** viene inviato a una routine di i/O dalla funzione [**mmioRename**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmiorename) per richiedere che il file specificato venga rinominato.
+Il **messaggio MMIOM \_ RENAME** viene inviato a una procedura di I/O dalla funzione [**mmioRename**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmiorename) per richiedere la ridenominazione del file specificato.
 
 
 ```C++
@@ -41,20 +41,20 @@ lParam2 = (LPARAM) lpszNewFilename
 <span id="lpszOldFilename"></span><span id="lpszoldfilename"></span><span id="LPSZOLDFILENAME"></span>*lpszOldFilename*
 </dt> <dd>
 
-Puntatore a una stringa contenente il nome del file da rinominare.
+Puntatore a una stringa contenente il nome file del file da rinominare.
 
 </dd> <dt>
 
 <span id="lpszNewFilename"></span><span id="lpsznewfilename"></span><span id="LPSZNEWFILENAME"></span>*lpszNewFilename*
 </dt> <dd>
 
-Puntatore a una stringa che contiene il nuovo nome file.
+Puntatore a una stringa contenente il nuovo nome file.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il file viene rinominato correttamente, il valore restituito è zero. Se il file specificato non è stato trovato, il valore restituito è MMIOERR \_ FileNotFound.
+Se il file viene rinominato correttamente, il valore restituito è zero. Se il file specificato non è stato trovato, il valore restituito è MMIOERR \_ FILENOTFOUND.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,7 +64,7 @@ Se il file viene rinominato correttamente, il valore restituito è zero. Se il f
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 

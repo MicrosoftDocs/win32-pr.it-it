@@ -1,7 +1,7 @@
 ---
 description: Rappresenta un'associazione tra un sistema e un pool di risorse che è un componente del sistema.
 ms.assetid: 0ac60dbd-0498-4978-b2d6-f4c9926a83a8
-title: Classe CIM_HostedResourcePool
+title: CIM_HostedResourcePool classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: dbb6d523b533d6e8b2f5bc1e21de93962cfd860f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7029e3eaebc879d5b635ffe70cd8f6d7888ff580247d992f6794f20c35db7045
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014579"
 ---
-# <a name="cim_hostedresourcepool-class"></a>CIM \_ HostedResourcePool (classe)
+# <a name="cim_hostedresourcepool-class"></a>Classe CIM \_ HostedResourcePool
 
 Rappresenta un'associazione tra un sistema e un pool di risorse che è un componente del sistema.
 
@@ -39,26 +39,26 @@ class CIM_HostedResourcePool : CIM_SystemComponent
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ HostedResourcePool** presenta questi tipi di membri:
+La **classe CIM \_ HostedResourcePool** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ HostedResourcePool** dispone di queste proprietà.
+La **classe CIM \_ HostedResourcePool** ha queste proprietà.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ sistema CIM**
+Tipo di dati: **sistema \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 Sistema padre nell'associazione.
@@ -68,7 +68,7 @@ Sistema padre nell'associazione.
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ ResourcePool**
+Tipo di dati: **CiM \_ ResourcePool**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -88,9 +88,9 @@ Pool di risorse che è un componente del sistema.
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Pool di risorse che è un componente del sistema.
 
 <dl> <dt>
 
-[**\_SYSTEMCOMPONENT CIM**](cim-systemcomponent.md)
+[**CIM \_ SystemComponent**](cim-systemcomponent.md)
 </dt> </dl>
 
  

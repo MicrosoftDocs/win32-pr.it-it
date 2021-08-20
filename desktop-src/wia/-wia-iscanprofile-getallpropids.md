@@ -54,7 +54,7 @@ Numero di ID proprietà richiesti o restituiti.
 
 Tipo: **PROPID \***
 
-Puntatore a una matrice di ID di proprietà.
+Puntatore a una matrice di ID proprietà.
 
 </dd> </dl>
 

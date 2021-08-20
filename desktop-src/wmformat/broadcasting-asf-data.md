@@ -93,8 +93,8 @@ Se si inizia con dati non compressi, eseguire le operazioni seguenti:
 
 Un altro modo per trasmettere il contenuto asf in rete è leggerlo da un file ASF esistente. L'esempio WMVNetWrite fornito nell'SDK illustra questo approccio. Oltre ai passaggi elencati in precedenza, eseguire le operazioni seguenti:
 
-1.  Creare un oggetto lettore e chiamare **il metodo Open** con il nome del file.
-2.  Chiamare [**IWMReaderAdvanced::SetManualStreamSelection sull'oggetto**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-setmanualstreamselection) lettore, con il valore **TRUE.** In questo modo l'applicazione può leggere ogni flusso nel file, inclusi i flussi con esclusione reciproca.
+1.  Creare un oggetto lettore e chiamare il **metodo Open** con il nome del file.
+2.  Chiamare [**IWMReaderAdvanced::SetManualStreamSelection sull'oggetto**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-setmanualstreamselection) lettore, con il valore **TRUE.** Ciò consente all'applicazione di leggere ogni flusso nel file, inclusi i flussi con esclusione reciproca.
 3.  Eseguire una query sul lettore per [**l'interfaccia IWMProfile.**](iwmprofile.md) Usare questo puntatore quando si chiama [**IWMWriter::SetProfile**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-setprofile) sull'oggetto writer (passaggio 5 della procedura precedente).
 4.  Per ogni flusso definito nel profilo, chiamare [**IWMProfile::GetStream**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofile-getstream) per ottenere il numero di flusso. Passare questo numero di flusso al metodo [**IWMReaderAdvanced::SetReceiveStreamSamples del**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-setreceivestreamsamples) lettore. Questo metodo informa il lettore di fornire esempi compressi, anziché decodificarli. Gli esempi verranno recapitati all'applicazione tramite il metodo di callback [**IWMReaderCallbackAdvanced::OnStreamSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreadercallbackadvanced-onstreamsample) dell'applicazione.
 

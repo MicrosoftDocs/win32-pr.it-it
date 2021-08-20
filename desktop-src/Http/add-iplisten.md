@@ -3,7 +3,7 @@ title: add iplisten
 description: Specifica un indirizzo IPv4 o IPv6 da aggiungere all'elenco di ascolto IP.
 ms.assetid: 38253818-c029-4a46-ab52-095cbfdeeaf4
 keywords:
-- Aggiungi iplisten HTTP
+- aggiungere iplisten HTTP
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6090d3044be134035edb5f1f42a9790859d0301d
-ms.sourcegitcommit: 243954e695c6ab5372b2935b095c3cd0b1202e16
+ms.openlocfilehash: 2133a3f590c46c9e27b518d7621c158b86895961acb07670f6603e03513d1cc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "103956241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014979"
 ---
 # <a name="add-iplisten"></a>add iplisten
 
@@ -32,7 +32,7 @@ add iplisten [ ipaddress=] IPAddress
 
 <dl> <dt>
 
-<span id="__ipaddress___IPAddress"></span><span id="__ipaddress___ipaddress"></span><span id="__ipADDRESS___IPADDRESS"></span>**\[ IPAddress = \]** *IPAddress*
+<span id="__ipaddress___IPAddress"></span><span id="__ipaddress___ipaddress"></span><span id="__ipADDRESS___IPADDRESS"></span>**\[ ipaddress= \]** *IPAddress*
 </dt> <dd>
 
 Specifica l'indirizzo IPv4 o IPv6 da aggiungere all'elenco di ascolto IP.
@@ -53,9 +53,9 @@ Aggiunge un nuovo indirizzo IP all'elenco di ascolto IP. Il numero di porta non 
 
 **add iplisten ipaddress=::**
 
- 
+ 
 
- 
+ 
 
 
 

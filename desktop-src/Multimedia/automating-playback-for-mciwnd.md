@@ -3,21 +3,21 @@ title: Automazione della riproduzione per MCIWnd
 description: Automazione della riproduzione per MCIWnd
 ms.assetid: 7e38e8b1-f56d-4008-83a7-4fba8333e328
 keywords:
-- MCIWndCreate (macro)
+- Macro MCIWndCreate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b9224cfa4f5a93488f226d1aefa83201b8b0637
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 27328367e58ffa21a2f83abe8ecab9d9a4259e6fb61b7b0a36d3104adaea5d9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065601"
 ---
 # <a name="automating-playback-for-mciwnd"></a>Automazione della riproduzione per MCIWnd
 
-È possibile automatizzare la riproduzione per MCIWnd specificando determinati stili di finestra nella funzione [**MCIWndCreate**](/windows/desktop/api/Vfw/nf-vfw-mciwndcreatea) . Per riprodurre il dispositivo, la finestra necessita di una finestra padre per elaborare i messaggi di notifica, un'area di riproduzione per riprodurre file AVI e la notifica delle modifiche alla modalità del dispositivo per identificare quando la riproduzione viene arrestata. Per la finestra non è necessaria una barra degli strumenti. È possibile impostare queste caratteristiche specificando gli stili appropriati in **MCIWndCreate**.
+È possibile automatizzare la riproduzione per MCIWnd specificando determinati stili di finestra nella [**funzione MCIWndCreate.**](/windows/desktop/api/Vfw/nf-vfw-mciwndcreatea) Per riprodurre il dispositivo, la finestra richiede una finestra padre per elaborare i messaggi di notifica, un'area di riproduzione per riprodurre i file AVI e la notifica delle modifiche della modalità del dispositivo per identificare l'arresto della riproduzione. La finestra non richiede una barra degli strumenti. È possibile impostare queste caratteristiche specificando gli stili appropriati in **MCIWndCreate.**
 
-Nell'esempio seguente vengono usati i comandi di menu per creare una finestra MCIWnd per riprodurre contenuto da diversi tipi di dispositivi. La funzione **MCIWndCreate** crea la finestra MCIWnd e i dispositivi e i file vengono caricati usando la macro [**MCIWndOpen**](/windows/desktop/api/Vfw/nf-vfw-mciwndopen) nei comandi specifici del dispositivo. Quando un dispositivo termina la riproduzione, chiude il dispositivo inserendo il messaggio [**MCIWNDM \_ NOTIFYMODE**](mciwndm-notifymode.md) ed eseguendo la macro [**MCIWndClose**](/windows/desktop/api/Vfw/nf-vfw-mciwndclose) .
+L'esempio seguente usa i comandi di menu per creare una finestra MCIWnd per riprodurre contenuto da diversi tipi di dispositivi. La **funzione MCIWndCreate** crea la finestra MCIWnd e i dispositivi e i file vengono caricati usando la macro [**MCIWndOpen**](/windows/desktop/api/Vfw/nf-vfw-mciwndopen) nei comandi specifici del dispositivo. Al termine della riproduzione di un dispositivo, chiudere il dispositivo trasponendo il messaggio [**\_ NOTIFYMODE MCIWNDM**](mciwndm-notifymode.md) ed emettendo la macro [**MCIWndClose.**](/windows/desktop/api/Vfw/nf-vfw-mciwndclose)
 
 
 ```C++
@@ -79,9 +79,9 @@ VOID LoadNGoMCIWnd(HWND hwnd, LPSTR lpstr)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

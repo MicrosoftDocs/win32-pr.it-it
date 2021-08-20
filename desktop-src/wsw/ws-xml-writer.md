@@ -1,21 +1,21 @@
 ---
-title: WS_XML_WRITER (WebServices. h)
+title: WS_XML_WRITER (WebServices.h)
 description: Tipo opaco utilizzato per un riferimento a un writer XML.
 ms.assetid: 8f413e60-8a30-492c-8f2d-80be511fee11
 keywords:
 - WS_XML_WRITER
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aaad38a234b821ccfad4e1c12858286b3cf6ef98
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 40430020e44880395ed9e5eca0a90a7f70388957d9f5eaed1fe0206be07b927b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026109"
 ---
-# <a name="ws_xml_writer"></a>\_writer XML \_ WS
+# <a name="ws_xml_writer"></a>WS \_ XML \_ WRITER
 
-Tipo opaco utilizzato per un riferimento a un [writer XML](xml-writer.md).
+Tipo opaco utilizzato per un riferimento a un [writer XML.](xml-writer.md)
 
 
 ```C++
@@ -26,7 +26,7 @@ typedef struct _WS_XML_WRITER WS_XML_WRITER;
 
 ## <a name="remarks"></a>Commenti
 
-Questo oggetto non è thread-safe. Per ulteriori informazioni, vedere [thread safety](thread-safety.md).
+Questo oggetto non è thread-safe. Per altre informazioni, [vedere](thread-safety.md)thread safety .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -34,9 +34,9 @@ Questo oggetto non è thread-safe. Per ulteriori informazioni, vedere [thread sa
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                        |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>WebServices. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 R2 \[ \|\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>WebServices.h</dt> </dl> |
 
 
 
@@ -44,7 +44,7 @@ Questo oggetto non è thread-safe. Per ulteriori informazioni, vedere [thread sa
 
 <dl> <dt>
 
-[Writer XML](xml-writer.md)
+[XML Writer](xml-writer.md)
 </dt> <dt>
 
 [Thread safety](thread-safety.md)

@@ -1,9 +1,9 @@
 ---
 title: TB_GETPRESSEDIMAGELIST messaggio (Commctrl.h)
-description: Ottiene l'elenco di immagini utilizzato da un controllo barra degli strumenti per visualizzare i pulsanti nello stato premuto.
+description: Ottiene l'elenco di immagini utilizzato da un controllo barra degli strumenti per visualizzare i pulsanti in uno stato premuto.
 ms.assetid: 116d4212-48ea-4b00-a752-21e5e1f10e36
 keywords:
-- TB_GETPRESSEDIMAGELIST controlli Windows messaggio
+- TB_GETPRESSEDIMAGELIST dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117829662"
 ---
-# <a name="tb_getpressedimagelist-message"></a>TB \_ GETPRESSEDIMAGELIST message
+# <a name="tb_getpressedimagelist-message"></a>TB \_ GETPRESSEDIMAGELIST message (TB GETPRESSEDIMAGELIST message)
 
-Ottiene l'elenco di immagini utilizzato da un controllo barra degli strumenti per visualizzare i pulsanti nello stato premuto.
+Ottiene l'elenco di immagini utilizzato da un controllo barra degli strumenti per visualizzare i pulsanti in uno stato premuto.
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,7 +45,7 @@ Deve essere zero.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'handle per l'elenco di immagini oppure **NULL se** non è impostato alcun elenco di immagini.
+Restituisce l'handle per l'elenco di immagini oppure **NULL** se non è impostato alcun elenco di immagini.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,8 +53,8 @@ Restituisce l'handle per l'elenco di immagini oppure **NULL se** non è impostat
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

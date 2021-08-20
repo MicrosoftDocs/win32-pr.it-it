@@ -1,9 +1,9 @@
 ---
-title: Ignora attributo
-description: L'attributo \ ignore indica che un puntatore contenuto in una struttura o in un'Unione e l'oggetto indicato dall'indicatore di misura non vengono trasmessi. L'attributo \ ignore è limitato ai membri puntatore di strutture o unioni.
+title: attributo ignore
+description: L'attributo \ ignore\ indica che un puntatore contenuto in una struttura o in un'unione e l'oggetto indicato dal puntatore non viene trasmesso. L'attributo \ ignore\ è limitato ai membri puntatore di strutture o unioni.
 ms.assetid: 9c2fc71a-4fac-4a59-95f5-2121067b326f
 keywords:
-- Ignora attributo MIDL
+- ignorare l'attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e82b9525dd6de316087db8fdfd55181118d3adc6
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 8c6b7a1e70804bc3c9c277f3d46ac6a8ad20fc0f98b370f93fe9fd09b0b1bb99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103872390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013859"
 ---
-# <a name="ignore-attribute"></a>Ignora attributo
+# <a name="ignore-attribute"></a>attributo ignore
 
-L'attributo **\[ Ignore \]** indica che un puntatore contenuto in una struttura o in un'Unione e l'oggetto indicato dall'indicatore di misura non vengono trasmessi. L'attributo **\[ Ignore \]** è limitato ai membri puntatore di strutture o unioni.
+**\[ L'attributo ignore \]** indica che un puntatore contenuto in una struttura o in un'unione e l'oggetto indicato dal puntatore non viene trasmesso. **\[ L'attributo ignore \]** è limitato ai membri puntatore di strutture o unioni.
 
 ``` syntax
 [ignore] pointer-member-type pointer-name;
@@ -31,25 +31,25 @@ L'attributo **\[ Ignore \]** indica che un puntatore contenuto in una struttura 
 
 <dl> <dt>
 
-*tipo di membro puntatore* 
+*pointer-member-type* 
 </dt> <dd>
 
-Specifica il tipo del membro del puntatore della struttura o dell'Unione.
+Specifica il tipo del membro puntatore della struttura o dell'unione.
 
 </dd> <dt>
 
-*nome puntatore* 
+*pointer-name* 
 </dt> <dd>
 
-Specifica il nome del membro del puntatore da ignorare durante il marshalling.
+Specifica il nome del membro puntatore che deve essere ignorato durante il marshalling.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Il valore di un membro della struttura con l'attributo **\[ Ignore \]** non è definito nella destinazione. Un **\[** parametro [**in**](in.md) **\]** non è definito nel computer remoto. Un **\[** parametro [**out**](out-idl.md) **\]** non è definito nel computer locale.
+Il valore di un membro della struttura con **\[ l'attributo ignore \]** non è definito nella destinazione. Un **\[** [**parametro in**](in.md) **\]** non è definito nel computer remoto. Un **\[** [**parametro out**](out-idl.md) **\]** non è definito nel computer locale.
 
-L'attributo **\[ Ignore \]** consente di impedire la trasmissione di dati. Questa operazione è utile in situazioni come un elenco con collegamento doppio. L'esempio seguente include un elenco a doppio collegamento che introduce l'aliasing dei dati:
+**\[ L'attributo ignore \]** consente di impedire la trasmissione dei dati. Ciò è utile in situazioni come un elenco collegato doppio. L'esempio seguente include un elenco collegato doppio che introduce l'alias dei dati:
 
 ``` syntax
 /* IDL file */ 
@@ -77,9 +77,9 @@ p->previous = q->next = NULL;
 remote_op(p);
 ```
 
-L'aliasing si verifica nell'esempio precedente perché la stessa area di memoria è disponibile in due puntatori diversi della funzione **p** e **p->Next->precedente**.
+L'aliasing si verifica nell'esempio precedente perché la stessa area di memoria è disponibile da due puntatori diversi nella funzione **p** e **p->next->precedente.**
 
-Si noti che **\[ Ignore \]** non può essere utilizzato come attributo di tipo.
+Si noti che **\[ ignore \]** non può essere usato come attributo di tipo.
 
 ## <a name="examples"></a>Esempi
 
@@ -99,16 +99,16 @@ typedef struct _DBL_LINK_NODE_TYPE
 [Attributi array e Sized-Pointer](array-and-sized-pointer-attributes.md)
 </dt> <dt>
 
-[**matrici**](arrays-1.md)
+[**Matrici**](arrays-1.md)
 </dt> <dt>
 
 [Matrici e puntatori](/windows/desktop/Rpc/arrays-and-pointers)
 </dt> <dt>
 
-[**in**](in.md)
+[**Pollici**](in.md)
 </dt> <dt>
 
-[**out**](out-idl.md)
+[**in uscita**](out-idl.md)
 </dt> <dt>
 
 [**ptr**](ptr.md)
@@ -117,9 +117,9 @@ typedef struct _DBL_LINK_NODE_TYPE
 [**ref**](ref.md)
 </dt> <dt>
 
-[**unico**](unique.md)
+[**Unico**](unique.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

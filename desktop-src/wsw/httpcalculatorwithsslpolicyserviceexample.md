@@ -1,6 +1,6 @@
 ---
 title: HttpCalculatorWithSslPolicyServiceExample
-description: Esaminare un Windows api dei servizi Web (WWSAPI) C++ di un calcolatore HTTP con il servizio criteri SSL.
+description: Esaminare un esempio Windows api dei servizi Web (WWSAPI) C++ di un calcolatore HTTP con il servizio criteri SSL.
 ms.assetid: 5b3fc119-10c2-444b-91d3-415ad36a65ab
 keywords:
 - HttpCalculatorWithSslPolicyServiceExample Native-Web-Services
@@ -17,7 +17,7 @@ ms.locfileid: "117841555"
 ---
 # <a name="httpcalculatorwithsslpolicyserviceexample"></a>HttpCalculatorWithSslPolicyServiceExample
 
-Questo esempio illustra come usare l'host del servizio per l'hosting di un servizio calcolatrice su HTTP, con sicurezza del trasporto SSL e autenticazione di base dell'intestazione HTTP. In questa configurazione, la connessione di trasporto è protetta (firmata, crittografata) da SSL, che fornisce anche l'autenticazione server. L'autenticazione client viene fornita da una coppia nome utente/password fornita nelle intestazioni HTTP usando lo schema di base.
+Questo esempio illustra come usare l'host del servizio per ospitare un servizio calcolatrice su HTTP, con sicurezza del trasporto SSL e autenticazione di base dell'intestazione HTTP. In questa configurazione la connessione di trasporto è protetta (firmata, crittografata) da SSL, che fornisce anche l'autenticazione del server. L'autenticazione client viene fornita da una coppia nome utente/password fornita nelle intestazioni HTTP usando lo schema di base.
 
 -   [HttpCalculatorWithSslPolicyService.cpp](#httpcalculatorwithsslpolicyservicecpp)
 -   [CalculatorServiceWithPolicy.wsdl](#calculatorservicewithpolicywsdl)

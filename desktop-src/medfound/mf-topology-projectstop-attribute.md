@@ -1,5 +1,5 @@
 ---
-description: Specifica l'ora di inizio di una topologia rispetto all'inizio della prima topologia nella sequenza.
+description: Specifica l'ora di inizio di una topologia, relativa all'inizio della prima topologia nella sequenza.
 ms.assetid: 1ca3709e-88ea-40ca-8da4-c2259365122b
 title: MF_TOPOLOGY_PROJECTSTOP attributo (Mfidl.h)
 ms.topic: reference
@@ -13,19 +13,19 @@ ms.locfileid: "117875398"
 ---
 # <a name="mf_topology_projectstop-attribute"></a>Attributo MF \_ TOPOLOGY \_ PROJECTSTOP
 
-Specifica l'ora di inizio di una topologia rispetto all'inizio della prima topologia nella sequenza.
+Specifica l'ora di inizio di una topologia, relativa all'inizio della prima topologia nella sequenza.
 
 ## <a name="data-type"></a>Tipo di dati
 
 **UINT64**
 
-Considerare come **valore LONGLONG.**
+Considera come **valore LONGLONG.**
 
 ## <a name="remarks"></a>Commenti
 
-Il valore viene specificato in unità di 100 nanosecondi.
+Il valore è specificato in unità di 100 nanosecondi.
 
-Se la sessione multimediale è stata creata con l'attributo [**MF \_ SESSION GLOBAL \_ \_ TIME**](mf-session-global-time-attribute.md) uguale a **TRUE,** tutte le topologie devono contenere l'attributo **MF \_ TOPOLOGY \_ PROJECTSTOP.** In caso contrario, le topologie non devono contenere **l'attributo MF \_ TOPOLOGY \_ PROJECTSTOP.** Per altre informazioni, vedere Sequenza [dei tempi di presentazione.](sequence-presentation-times.md)
+Se la sessione multimediale è stata creata con [**l'attributo MF \_ SESSION GLOBAL \_ \_ TIME**](mf-session-global-time-attribute.md) uguale a **TRUE,** tutte le topologie devono contenere l'attributo **MF \_ TOPOLOGY \_ PROJECTSTOP.** In caso contrario, le topologie non devono contenere **l'attributo \_ MF TOPOLOGY \_ PROJECTSTOP.** Per altre informazioni, vedere [Sequenza dei tempi di presentazione.](sequence-presentation-times.md)
 
 Questo attributo è un valore con segno, anche se viene archiviato come **UINT64.**
 
@@ -37,8 +37,8 @@ La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
 | Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
@@ -47,10 +47,10 @@ La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Tempi di presentazione delle sequenze](sequence-presentation-times.md)
+[Sequenza dei tempi di presentazione](sequence-presentation-times.md)
 </dt> <dt>
 
 [Attributi della topologia](topology-attributes.md)
@@ -62,7 +62,7 @@ La costante GUID per questo attributo viene esportata da mfuuid.lib.
 [**IMFAttributes::SetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
 </dt> <dt>
 
-[**PROGETTO TOPOLOGIA \_ \_ MFAVVIO**](mf-topology-projectstart-attribute.md)
+[**PROGETTO DI \_ TOPOLOGIA MFAVVIO \_**](mf-topology-projectstart-attribute.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 993b84a3-a5ac-4b00-bfb4-26ca1c9727c6
 title: Evento InkOverlay.CursorButtonDown (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fcae13afb67be0312959939e0793d89d99c841ba
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e73edfd6c8d9901a1eab0adf13c3c5439ef5716d1489ddb30e008079304d44b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967100"
 ---
 # <a name="inkoverlaycursorbuttondown-event"></a>Evento InkOverlay.CursorButtonDown
 
@@ -51,9 +51,9 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Un pulsante su una punta della penna è verso il basso quando l'utente abbassa la penna al digitalizzatore e inizia a tracciare un tratto. Un pulsante su un barile è in giù quando viene premuto il pulsante.
+Un pulsante sulla punta di una penna è verso il basso quando l'utente abbassa la penna al digitalizzatore e inizia a tracciare un tratto. Quando si preme il pulsante, un pulsante su un cane è in giù.
 
-Quando si preme il pulsante destro del mouse, si ricevono effettivamente due [**eventi CursorButtonDown:**](inkcollector-cursorbuttondown.md) uno per il pulsante destro premuto e uno per il pulsante sinistro premuto.
+Quando premi il pulsante destro del mouse, ricevi effettivamente due eventi [**CursorButtonDown:**](inkcollector-cursorbuttondown.md) uno per il pulsante destro premuto e uno per il pulsante sinistro premuto.
 
 Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents (interfacce dispatch) con ID \_ DISPID ICECursorButtonDown.
 
@@ -63,7 +63,7 @@ Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollec
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

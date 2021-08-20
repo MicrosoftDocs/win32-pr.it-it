@@ -4,7 +4,7 @@ description: L'interfaccia ID3DX11EffectGroup accede a un gruppo Effect. La dura
 ms.assetid: f5a35c47-0bac-4559-bd6c-5e8bc7699e10
 keywords:
 - Interfaccia ID3DX11EffectGroup Direct3D 11
-- Interfaccia ID3DX11EffectGroup Direct3D 11 , descritta
+- INTERFACCIA ID3DX11EffectGroup Direct3D 11 , descritta
 topic_type:
 - apiref
 api_name:
@@ -40,7 +40,7 @@ La durata di un **oggetto ID3DX11EffectGroup** è uguale alla durata dell'oggett
 | Metodo                                                                  | Descrizione                                                   |
 |:------------------------------------------------------------------------|:--------------------------------------------------------------|
 | [**GetAnnotationByIndex**](id3dx11effectgroup-getannotationbyindex.md) | Ottiene un'annotazione in base all'indice.<br/>                        |
-| [**GetAnnotationByName**](id3dx11effectgroup-getannotationbyname.md)   | Ottiene un'annotazione in base al nome.<br/>                         |
+| [**GetAnnotationByName**](id3dx11effectgroup-getannotationbyname.md)   | Ottenere un'annotazione in base al nome.<br/>                         |
 | [**GetDesc**](id3dx11effectgroup-getdesc.md)                           | Ottiene una descrizione del gruppo.<br/>                          |
 | [**GetTechniqueByIndex**](id3dx11effectgroup-gettechniquebyindex.md)   | Ottenere una tecnica in base all'indice.<br/>                          |
 | [**GetTechniqueByName**](id3dx11effectgroup-gettechniquebyname.md)     | Ottenere una tecnica in base al nome.<br/>                           |
@@ -55,7 +55,7 @@ La durata di un **oggetto ID3DX11EffectGroup** è uguale alla durata dell'oggett
 Per ottenere **un'interfaccia ID3DX11EffectGroup,** chiamare un metodo come [**ID3DX11Effect::GetGroupByName**](id3dx11effect-getgroupbyname.md).
 
 > [!Note]  
-> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra effetti 10 ed effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -66,7 +66,7 @@ Per ottenere **un'interfaccia ID3DX11EffectGroup,** chiamare un metodo come [**I
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ Per ottenere **un'interfaccia ID3DX11EffectGroup,** chiamare un metodo come [**I
 
 <dl> <dt>
 
-[Interfacce effetti 11](d3d11-graphics-reference-effects11-interfaces.md)
+[Interfacce di Effects 11](d3d11-graphics-reference-effects11-interfaces.md)
 </dt> <dt>
 
 [Interfacce D3DX](d3d11-graphics-reference-d3dx11-interfaces.md)

@@ -1,11 +1,11 @@
 ---
-title: Metodo getMatrix ID3DX11EffectMatrixVariable (D3dx11effect. h)
+title: Metodo GetMatrix ID3DX11EffectMatrixVariable (D3dx11effect.h)
 description: Ottenere una matrice.
 ms.assetid: 1d0b20f2-6e43-414d-a161-65ce13bef1e0
 keywords:
-- Metodo getMatrix Direct3D 11
-- Metodo getMatrix Direct3D 11, interfaccia ID3DX11EffectMatrixVariable
-- Interfaccia ID3DX11EffectMatrixVariable Direct3D 11, metodo getMatrix
+- Metodo GetMatrix Direct3D 11
+- Metodo GetMatrix Direct3D 11, interfaccia ID3DX11EffectMatrixVariable
+- ID3DX11EffectMatrixVariable interface Direct3D 11 , Metodo GetMatrix
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a14c2f196c4072d7f81a75045fe4703bf51ea338
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 47abd4032dc4f28c92b41ae18fc9e3870a406e15144018035a7cda0956699fe8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118535178"
 ---
-# <a name="id3dx11effectmatrixvariablegetmatrix-method"></a>Metodo ID3DX11EffectMatrixVariable:: getMatrix
+# <a name="id3dx11effectmatrixvariablegetmatrix-method"></a>Metodo ID3DX11EffectMatrixVariable::GetMatrix
 
 Ottenere una matrice.
 
@@ -46,7 +46,7 @@ HRESULT GetMatrix(
 *pData* 
 </dt> <dd>
 
-Tipo: **float \***
+Tipo: **\* float**
 
 Puntatore al primo elemento di una matrice.
 
@@ -56,12 +56,12 @@ Puntatore al primo elemento di una matrice.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei seguenti [codici restituiti Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-refe
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

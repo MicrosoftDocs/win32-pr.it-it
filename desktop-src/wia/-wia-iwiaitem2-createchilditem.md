@@ -47,7 +47,7 @@ HRESULT CreateChildItem(
 
 Tipo: **LONG**
 
-Specifica il tipo di elemento WIA 2.0. Vedere [**Flag del tipo di elemento WIA**](-wia-wia-item-type-flags.md).
+Specifica il tipo di elemento WIA 2.0. Vedere [**Flag del tipo di elemento WIA.**](-wia-wia-item-type-flags.md)
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Impostare i valori predefiniti per le proprietà dell'elemento figlio.
 
 <span id="COPY_PARENT_PROPERTY_VALUES"></span><span id="copy_parent_property_values"></span>
 
-<span id="COPY_PARENT_PROPERTY_VALUES"></span><span id="copy_parent_property_values"></span>**COPIA \_ VALORI \_ DELLE \_ PROPRIETÀ PADRE** (0x40000000)
+<span id="COPY_PARENT_PROPERTY_VALUES"></span><span id="copy_parent_property_values"></span>**COPY \_ VALORI \_ DELLE \_ PROPRIETÀ PADRE** (0x40000000)
 
 
 </dt> <dd>
@@ -112,7 +112,7 @@ Alcuni dispositivi hardware WIA 2.0 consentono alle applicazioni di creare nuovi
 
 Se il dispositivo consente la creazione di nuovi elementi nell'albero [**IWiaItem2,**](-wia-iwiaitem2.md) richiamando **IWiaItem2::CreateChildItem** viene creato un nuovo oggetto **IWiaItem2** figlio del nodo corrente. Passa un puntatore al nuovo nodo all'applicazione tramite il *parametro ppIWiaItem2.* Le applicazioni devono chiamare [il metodo IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) sui puntatori a interfaccia ricevuti tramite il *parametro ppIWiaItem2.*
 
-Se *lCreationFlags* è COPY \_ PARENT PROPERTY VALUES e \_ \_ *lItemFlags* è zero, la funzione restituisce E \_ INVALIDARG.
+Se *lCreationFlags è* COPY \_ PARENT PROPERTY VALUES e \_ \_ *lItemFlags* è zero, la funzione restituisce E \_ INVALIDARG.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -120,8 +120,8 @@ Se *lCreationFlags* è COPY \_ PARENT PROPERTY VALUES e \_ \_ *lItemFlags* è ze
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
 | Intestazione<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 

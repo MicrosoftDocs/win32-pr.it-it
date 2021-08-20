@@ -49,7 +49,7 @@ Opzioni per JetSeek.
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
@@ -106,7 +106,7 @@ public enum SeekGrbit
 <tr class="even">
 <td></td>
 <td>SetIndexRange</td>
-<td>Un intervallo di indici verrà automaticamente specificato per tutte le chiavi che corrispondono esattamente alla chiave di ricerca.</td>
+<td>Verrà automaticamente creato un intervallo di indici per tutte le chiavi che corrispondono esattamente alla chiave di ricerca.</td>
 </tr>
 </tbody>
 </table>

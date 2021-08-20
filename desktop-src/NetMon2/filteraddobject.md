@@ -22,7 +22,7 @@ ms.locfileid: "118938734"
 ---
 # <a name="filteraddobject-function"></a>Funzione FilterAddObject
 
-La **funzione FilterAddObject** aggiunge un singolo oggetto a un [*filtro di visualizzazione*](d.md).
+La **funzione FilterAddObject** aggiunge un singolo oggetto a un [*filtro di visualizzazione.*](d.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,8 +64,8 @@ Se la funzione ha esito negativo, il valore restituito è un codice di errore.
 
 | Codice restituito                                                                                              | Descrizione                                                                  |
 |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <dl> <dt>**PARAMETRO NON VALIDO DI \_ NMERR \_**</dt> </dl> | Il *valore del parametro hFilter* non è valido.<br/>                     |
-| <dl> <dt>**MEMORIA INSUFFICIENTE \_ DI NMERR \_ \_**</dt> </dl>    | Network Monitor memoria disponibile non è sufficiente per creare l'oggetto.<br/> |
+| <dl> <dt>**PARAMETRO NON \_ VALIDO DI NMERR \_**</dt> </dl> | Il *parametro hFilter* ha un valore non valido.<br/>                     |
+| <dl> <dt>**MEMORIA INSUFFICIENTE DI NMERR \_ \_ \_**</dt> </dl>    | Network Monitor memoria sufficiente per creare l'oggetto.<br/> |
 
 
 
@@ -75,7 +75,7 @@ Se la funzione ha esito negativo, il valore restituito è un codice di errore.
 
 [*Esperti*](e.md) e [*parser possono*](p.md) chiamare la **funzione FilterAddObject.**
 
-La **funzione FilterAddObject** viene chiamata ogni volta che viene aggiunto un oggetto filtro al filtro di visualizzazione. Il filtro di visualizzazione è uno stack suffisso di oggetti che possono essere un operatore, un valore o una proprietà.
+La **funzione FilterAddObject** viene chiamata ogni volta che un oggetto filtro viene aggiunto al filtro di visualizzazione. Il filtro di visualizzazione è uno stack suffisso di oggetti che possono essere un operatore, un valore o una proprietà.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,24 +1,24 @@
 ---
-title: Attributo ConnectLocs di la
-description: Attributo ConnectLocs di la
+title: Attributo VML ConnectLocs
+description: Attributo VML ConnectLocs
 ms.assetid: d9295fa9-ac5e-4063-9709-f7ba6076a769
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7c43829ea355cb1707a893b8da1c874e2178f67
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a9a170a43aed8ef10f401e37503ebc4d04066e0bc3ea4e61334fed1d9a62fc41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399096"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999271"
 ---
-# <a name="vml-connectlocs-attribute"></a>Attributo ConnectLocs di la
+# <a name="vml-connectlocs-attribute"></a>Attributo VML ConnectLocs
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce la posizione dei punti di connessione in un percorso. Proprietà di lettura/scrittura. **Stringa**.
 
@@ -26,16 +26,16 @@ Definisce la posizione dei punti di connessione in un percorso. Proprietà di le
 
 [Percorso](msdn-online-vml-path-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* o:connectlocs = " *Expression* " >
+<v: *elemento* o:connectlocs=" *espressione* ">
 
 **Osservazioni:**
 
-I punti di connessione sono definiti da una stringa costituita da coppie di valori x e y, delimitati da virgole. Il valore predefinito è una stringa **null** .
+I punti di connessione sono definiti da una stringa costituita da coppie di valori x e y, delimitate da virgole. Il valore predefinito è una **stringa** Null.
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
- 
+ 
 
- 
+ 

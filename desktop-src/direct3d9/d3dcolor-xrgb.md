@@ -1,7 +1,7 @@
 ---
-description: Inizializza un colore con i valori rosso, verde e blu forniti.
+description: Inizializza un colore con i valori rosso, verde e blu specificati.
 ms.assetid: 832a4a78-c166-4e45-a907-57730da1c2c8
-title: D3DCOLOR_XRGB macro (D3d9types. h)
+title: D3DCOLOR_XRGB macro (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: 4932e34979b0913f27874e57cfa881f18fb16364
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a31801236720d0a01eefe7f41ac6bd260c1364bb81c437cf6a85088c1c022b9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104401939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118527601"
 ---
-# <a name="d3dcolor_xrgb-macro"></a>D3DCOLOR \_ sulle XRGB mentre-macro
+# <a name="d3dcolor_xrgb-macro"></a>Macro D3DCOLOR \_ XRGB
 
-Inizializza un colore con i valori rosso, verde e blu forniti.
+Inizializza un colore con i valori rosso, verde e blu specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ Componente rosso del colore. Questo valore deve essere compreso tra 0 e 255.
 
 </dd> <dt>
 
-*g* 
+*G* 
 </dt> <dd>
 
 Componente verde del colore. Questo valore deve essere compreso tra 0 e 255.
@@ -64,7 +64,7 @@ Componente blu del colore. Questo valore deve essere compreso tra 0 e 255.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore [**D3DCOLOR**](d3dcolor.md) che corrisponde ai valori RGB forniti.
+Restituisce il [**valore D3DCOLOR**](d3dcolor.md) che corrisponde ai valori RGB forniti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,7 +72,7 @@ Restituisce il valore [**D3DCOLOR**](d3dcolor.md) che corrisponde ai valori RGB 
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -86,7 +86,7 @@ Restituisce il valore [**D3DCOLOR**](d3dcolor.md) che corrisponde ai valori RGB 
 [**D3DCOLOR \_ ARGB**](d3dcolor-argb.md)
 </dt> <dt>
 
-[**\_RGBA D3DCOLOR**](d3dcolor-rgba.md)
+[**D3DCOLOR \_ RGBA**](d3dcolor-rgba.md)
 </dt> </dl>
 
  

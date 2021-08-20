@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117875185"
 ---
-# <a name="mf_toponode_decoder-attribute"></a>Attributo MF \_ TOPONODE \_ DECODER
+# <a name="mf_toponode_decoder-attribute"></a>Attributo \_ MF TOPONODE \_ DECODER
 
 Specifica se l'oggetto sottostante di un nodo della topologia è un decodificatore.
 
@@ -27,7 +27,7 @@ Questo attributo si applica a tutti i tipi di nodo.
 
 Se il valore di questo attributo è diverso da zero, l'oggetto sottostante del nodo è un decodificatore.
 
-Il caricatore della topologia imposta questo attributo quando crea un nodo del decodificatore. Un'applicazione deve impostare questo attributo se l'applicazione aggiunge manualmente un decodificatore alla topologia.
+Il caricatore della topologia imposta questo attributo quando crea un nodo decodificatore. Un'applicazione deve impostare questo attributo se l'applicazione aggiunge manualmente un decodificatore alla topologia.
 
 La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
@@ -37,8 +37,8 @@ La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
 | Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
@@ -47,7 +47,7 @@ La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)

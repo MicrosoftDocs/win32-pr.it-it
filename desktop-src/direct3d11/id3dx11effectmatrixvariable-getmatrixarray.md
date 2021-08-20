@@ -1,5 +1,5 @@
 ---
-title: Metodo GetMatrixArray ID3DX11EffectMatrixVariable (D3dx11effect.h)
+title: Metodo ID3DX11EffectMatrixVariable GetMatrixArray (D3dx11effect.h)
 description: Ottiene una matrice di matrici.
 ms.assetid: a7598687-a11c-41ad-9fb6-2c16d12f5edc
 keywords:
@@ -76,12 +76,12 @@ Numero di matrici nella matrice restituita.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei codici [restituiti Direct3D 11 seguenti.](d3d11-graphics-reference-returnvalues.md)
+Restituisce uno dei seguenti [codici restituiti Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra effetti 10 ed effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -92,7 +92,7 @@ Restituisce uno dei codici [restituiti Direct3D 11 seguenti.](d3d11-graphics-ref
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

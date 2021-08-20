@@ -21,7 +21,7 @@ L'esempio presenta le specifiche seguenti:
 
 -   Quando gli utenti visitano il sito Web e fanno clic sul collegamento "Installazione mySetup", viene visualizzata l'opzione per salvare o eseguire da tale percorso. Se l'utente sceglie di eseguire da tale percorso, il Setup.exe aggiorna la versione del programma di installazione di Windows nel computer, se necessario, verifica la firma digitale nel pacchetto del programma di installazione e installa il pacchetto nel computer.
 -   È presente un certificato digitale, Mycert.cer, fornito con una chiave privata, Mycert.pvk.
--   L'URL dell'ipotetico sito Web che un cliente visiterebbe per installare il pacchetto è https: \/ /www.blueyonderairlines.com/Products/MySetup/mysetup.html.
+-   L'URL del sito Web ipotetico che un cliente visiterebbe per installare il pacchetto è https: \/ /www.blueyonderairlines.com/Products/MySetup/mysetup.html.
 -   Il layout del server Web è il seguente. 
 
     | URL                                                               | File        | Descrizione                                    |

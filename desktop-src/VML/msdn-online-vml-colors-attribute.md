@@ -1,50 +1,50 @@
 ---
-title: Attributo colori la
-description: Attributo colori la
+title: Attributo colori VML
+description: Attributo colori VML
 ms.assetid: 466ed1d7-8861-44db-bd96-a2fd119b12f4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d68c5df5b2dc97c19441d6abaf6cd6c03d949c55
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a699b0ab8da898dd82fa4e1bf4823c0f9fdd443eb8275e25dbfaac6d2f039a6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104516965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999281"
 ---
-# <a name="vml-colors-attribute"></a>Attributo colori la
+# <a name="vml-colors-attribute"></a>Attributo colori VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Definisce più colori per un riempimento sfumato. Proprietà di lettura/scrittura. **IVgGradientColorArray**.
+Definisce più colori per un riempimento sfumato. Proprietà di lettura/scrittura. **Oggetto IVgGradientColorArray.**
 
 **Si applica a**
 
 [Fill](msdn-online-vml-fill-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* Colors = " *Expression* " >
+<v: *element* colors=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . Colors = "*Expression*"
+*element* .colors="*expression*"
 
-*espressione* = *elemento*. Colors
+*expression* = *.colors dell'elemento*
 
 **Osservazioni:**
 
-Utilizzato per definire una matrice costituita da valori abbinati di percentuali ([VgFraction](msdn-online-vml-vgfraction-data-type.md)) e color ([VgColor](msdn-online-vml-ivgcolor.md)). La matrice crea un riempimento sfumato usando ogni punto della matrice, a partire dallo 0% (definito da **colore**) e terminando al 100% (definito da **color2**). È possibile definire colori intermedi lungo il percorso assegnando un valore di colore a una percentuale. La coppia percentuale e colore non è separata da una virgola, ma le coppie sono separate tra loro da virgole.
+Usato per definire una matrice costituita da valori abbinati di percentuali ([VgFraction](msdn-online-vml-vgfraction-data-type.md)) e colore ([VgColor](msdn-online-vml-ivgcolor.md)). La matrice crea un riempimento misto usando ogni punto della matrice, a partire da 0% (definito da **Color)** e terminando in corrispondenza del 100% (definito da **Color2).** I colori intermedi lungo il percorso possono essere definiti assegnando un valore di colore a una percentuale. La coppia di percentuali e colori non è separata da una virgola, ma le coppie sono separate tra loro da virgole.
 
-Attributo standard la
+Attributo VML Standard
 
 **Esempio**
 
-La forma presenta un riempimento sfumato costituito da quattro colori, a partire da rosso, da sfumatura a giallo, da verde a finallyblue.
+La forma ha un riempimento sfumato costituito da quattro colori, a partire dal rosso, con fusione in giallo, verde e infine blu.
 
 
 ```HTML
@@ -60,6 +60,6 @@ La forma presenta un riempimento sfumato costituito da quattro colori, a partire
 
 
 
- 
+ 
 
- 
+ 

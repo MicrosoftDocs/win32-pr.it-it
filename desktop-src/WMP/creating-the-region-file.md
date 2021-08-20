@@ -4,7 +4,7 @@ description: Creazione del file di area
 ms.assetid: e901dfa1-1e06-4136-b877-64be03107f6f
 keywords:
 - Windows Media Player Skin per dispositivi mobili, file di area
-- skins,File di area
+- skins, file di area
 - creazione di skin, file di area
 - File di area nelle skin
 ms.topic: article

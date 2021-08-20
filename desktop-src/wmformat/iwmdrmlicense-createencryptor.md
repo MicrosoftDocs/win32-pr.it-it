@@ -51,13 +51,13 @@ Riceve un puntatore [**all'interfaccia IWMDRMEncrypt**](iwmdrmencrypt.md) dell'o
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                | Descrizione                                              |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>**NS \_ E \_ DRM \_ RIV \_ TOO \_ SMALL**</dt> </dl> | È necessario un elenco di revoche di contenuto aggiornato.<br/> |
+| <dl> <dt>**NS \_ E \_ DRM RIV TROPPO \_ \_ \_ PICCOLO**</dt> </dl> | È necessario un elenco di revoche di contenuto aggiornato.<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>                       | Il metodo è riuscito.<br/>                         |
 
 

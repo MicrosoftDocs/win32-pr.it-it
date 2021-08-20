@@ -1,5 +1,5 @@
 ---
-description: Nella tabella ODBCTranslator sono elencati i convertitori ODBC appartenenti all'installazione.
+description: Nella tabella ODBCTranslator sono elencati i convertitori ODBC che appartengono all'installazione.
 ms.assetid: fecb7454-29bb-4ddf-b4d5-2e56c20ff2dc
 title: Tabella ODBCTranslator
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118942892"
 ---
 # <a name="odbctranslator-table"></a>Tabella ODBCTranslator
 
-Nella tabella ODBCTranslator sono elencati i convertitori ODBC appartenenti all'installazione.
+Nella tabella ODBCTranslator sono elencati i convertitori ODBC che appartengono all'installazione.
 
 La tabella ODBCTranslator include le colonne seguenti.
 
@@ -25,7 +25,7 @@ La tabella ODBCTranslator include le colonne seguenti.
 | Componente\_ | [Identificatore](identifier.md) | N   | N        |
 | Descrizione | [Text](text.md)             | N   | N        |
 | file\_      | [Identificatore](identifier.md) | N   | N        |
-| Installazione \_ file | [Identificatore](identifier.md) | N   | S        |
+| Configurazione \_ file | [Identificatore](identifier.md) | N   | S        |
 
 
 
@@ -59,20 +59,20 @@ Descrizione registrata per questo convertitore di driver ODBC. Questo valore non
 <span id="File_"></span><span id="file_"></span><span id="FILE_"></span>File\_
 </dt> <dd>
 
-File DLL per il trasferimento elencato nella colonna Translator. La colonna File \_ è una chiave esterna nella tabella [File](file-table.md). Il nome file immesso nella colonna Nome file del record della tabella File deve essere nel formato nome file breve. Non è possibile \| usare la sintassi LFN SFN.
+File DLL per il trasferimento elencato nella colonna Translator. La colonna File \_ è una chiave esterna nella tabella [File](file-table.md). Il nome file immesso nella colonna Nome file del record della tabella File deve essere nel formato di nome file breve. Non è possibile usare la sintassi \| LFN SFN.
 
 </dd> <dt>
 
-<span id="File_Setup"></span><span id="file_setup"></span><span id="FILE_SETUP"></span>Installazione \_ file
+<span id="File_Setup"></span><span id="file_setup"></span><span id="FILE_SETUP"></span>Configurazione \_ file
 </dt> <dd>
 
-Il file DLL di installazione per il traduttore se è diverso dalla Translator colonna. La colonna File \_ è una chiave esterna nella tabella [File](file-table.md). Il nome file immesso nella colonna Nome file del record della tabella File deve essere nel formato nome file breve. Non è possibile \| usare la sintassi LFN SFN.
+File DLL di installazione per il convertitore se è diverso dalla colonna Translator. La colonna File \_ è una chiave esterna nella tabella [File](file-table.md). Il nome file immesso nella colonna Nome file del record della tabella File deve essere nel formato di nome file breve. Non è possibile usare la sintassi \| LFN SFN.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Le [azioni InstallODBC](installodbc-action.md) [e RemoveODBC](removeodbc-action.md) nelle tabelle [*di sequenza*](s-gly.md) elaborano le informazioni contenute in questa tabella. Per informazioni sull'uso *delle tabelle di sequenza,* vedere [Using a Sequence Table](using-a-sequence-table.md).
+Le [azioni InstallODBC](installodbc-action.md) [e RemoveODBC](removeodbc-action.md) nelle tabelle [*di sequenza*](s-gly.md) elaborano le informazioni in questa tabella. Per informazioni sull'uso *delle tabelle di sequenza,* vedere [Uso di una tabella di sequenza](using-a-sequence-table.md).
 
 ## <a name="validation"></a>Convalida
 

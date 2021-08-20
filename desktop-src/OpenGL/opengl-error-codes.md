@@ -5,20 +5,20 @@ ms.assetid: d798b677-d86d-454d-ac46-26afd82563a5
 keywords:
 - codici di errore OpenGL
 - Codici di errore OpenGL
-- Codice di errore GL_INVALID_ENUM
-- Codice di errore GL_INVALID_VALUE
-- Codice di errore GL_INVALID_OPERATION
-- Codice di errore GL_STACK_OVERFLOW
-- Codice di errore GL_STACK_UNDERFLOW
-- Codice di errore GL_OUT_OF_MEMORY
+- GL_INVALID_ENUM codice di errore
+- GL_INVALID_VALUE codice di errore
+- GL_INVALID_OPERATION codice di errore
+- GL_STACK_OVERFLOW codice di errore
+- GL_STACK_UNDERFLOW codice di errore
+- GL_OUT_OF_MEMORY codice di errore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39fea57642bde4ba6df88bf913984bd27f619d95
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a78b00bfcbe20d9e91c3d6419db376cdbe8698c1ac158df66d02353dd6bdfbed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103710612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118936942"
 ---
 # <a name="opengl-error-codes"></a>Codici di errore OpenGL
 
@@ -28,20 +28,20 @@ OpenGL include i codici di errore seguenti.
 
 | Codice di errore             | Descrizione                                 |
 |------------------------|---------------------------------------------|
-| \_enumerazione GL non valida \_      | Argomento **GLEnum** non compreso nell'intervallo.           |
-| \_valore GL non valido \_     | Argomento numerico non compreso nell'intervallo.              |
-| \_operazione GL non valida \_ | Operazione non valida nello stato corrente.         |
-| \_overflow dello stack GL \_    | La funzione provocherebbe un overflow dello stack.      |
-| \_underflow dello stack GL \_   | La funzione provocherebbe un underflow dello stack.     |
-| \_ \_ \_ memoria INsufficiente per GL    | Memoria insufficiente per l'esecuzione della funzione. |
+| ENUMERAZIONE GL \_ NON \_ VALIDA      | **Argomento GLenum** non compreso nell'intervallo.           |
+| VALORE GL \_ NON \_ VALIDO     | Argomento numerico non compreso nell'intervallo.              |
+| OPERAZIONE GL \_ NON \_ VALIDA | Operazione non valida nello stato corrente.         |
+| OVERFLOW DELLO STACK GL \_ \_    | La funzione causerebbe un overflow dello stack.      |
+| UNDERFLOW DELLO STACK GL \_ \_   | La funzione causerebbe un underflow dello stack.     |
+| MEMORIA \_ \_ INSUFFICIENTE \_    | Memoria insufficiente per eseguire la funzione. |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

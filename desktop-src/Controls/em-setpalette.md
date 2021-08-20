@@ -1,9 +1,9 @@
 ---
 title: EM_SETPALETTE messaggio (Richedit.h)
-description: Modifica il riquadro utilizzato da un controllo Rich Edit per la relativa finestra di visualizzazione.
+description: Modifica la tavolozza utilizzata da un controllo Rich Edit per la finestra di visualizzazione.
 ms.assetid: c1dc0c24-eaf2-47a8-9bb1-59f37b206feb
 keywords:
-- EM_SETPALETTE di controllo Windows messaggio
+- EM_SETPALETTE controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "117831152"
 ---
 # <a name="em_setpalette-message"></a>Messaggio \_ EM SETPALETTE
 
-Modifica il riquadro utilizzato da un controllo Rich Edit per la relativa finestra di visualizzazione.
+Modifica la tavolozza utilizzata da un controllo Rich Edit per la finestra di visualizzazione.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Modifica il riquadro utilizzato da un controllo Rich Edit per la relativa finest
 *wParam* 
 </dt> <dd>
 
-Handle per il nuovo riquadro utilizzato dal controllo Rich Edit.
+Handle per la nuova tavolozza utilizzata dal controllo Rich Edit.
 
 </dd> <dt>
 
@@ -49,7 +49,7 @@ Questo messaggio non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Il controllo Rich Edit non controlla se il nuovo riquadro è valido.
+Il controllo Rich Edit non controlla se la nuova tavolozza è valida.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,8 +57,8 @@ Il controllo Rich Edit non controlla se il nuovo riquadro è valido.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 

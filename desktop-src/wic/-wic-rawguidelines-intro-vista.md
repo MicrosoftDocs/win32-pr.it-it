@@ -15,7 +15,7 @@ ms.locfileid: "118709859"
 
 Windows Vista Explorer, Windows Vista Raccolta foto, Window Live Raccolta foto e Windows 7 Visualizzatore foto usano tutti Windows Imaging Component (WIC) e pertanto supportano i formati di immagine RAW quando nel computer sono installati codec appropriati.
 
-Poiché WIC è un'architettura di creazione di immagini estendibile, qualsiasi applicazione WIC può utilizzare nuovi formati di immagine non appena vengono installati nuovi codec nel sistema. WiC è quindi ideale come soluzione Plug and Play per i formati di immagine RAW prodotti dalle fotocamere digitali. Tramite WIC, Windows applicazioni possono ottenere il supporto per i nuovi modelli di fotocamera ogni volta che vengono resi disponibili codec aggiornati (idealmente all'interno di nuove fotocamere). Gli autori di codec possono supportare questi scenari implementando interfacce WIC comuni a tutti i tipi di immagine, come descritto più dettagliatamente in questo documento.
+Poiché WIC è un'architettura di creazione di immagini estendibile, qualsiasi applicazione WIC può utilizzare nuovi formati di immagine non appena vengono installati nuovi codec nel sistema. WiC è quindi ideale come soluzione Plug and Play per i formati di immagine RAW prodotti dalle fotocamere digitali. Tramite WIC, Windows applicazioni possono ottenere il supporto per i nuovi modelli di fotocamera ogni volta che vengono resi disponibili codec aggiornati (idealmente in box con nuove fotocamere). Gli autori di codec possono supportare questi scenari implementando interfacce WIC comuni a tutti i tipi di immagine, come descritto più dettagliatamente in questo documento.
 
 Attualmente, la maggior parte delle applicazioni consumer mainstream non ha una conoscenza speciale dei formati di immagine RAW e non espone un'interfaccia utente per modificare le impostazioni di elaborazione RAW.
 
@@ -30,7 +30,7 @@ Diverse altre interfacce WIC sono importanti per l'implementazione da parte degl
 **Informazioni concettuali**
 </dt> <dt>
 
-[Windows Cenni preliminari sul componente di creazione dell'immagine](-wic-about-windows-imaging-codec.md)
+[Windows Panoramica del componente di creazione dell'immagine](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
 [Linee guida WIC per i formati di immagine RAW della fotocamera](-wic-rawguidelines.md)

@@ -1,7 +1,7 @@
 ---
 description: Astrazione di una porta o di un punto di connessione di un dispositivo.
 ms.assetid: ee725c64-587b-4e5f-9b1c-7a58902b0631
-title: Classe CIM_LogicalPort
+title: CIM_LogicalPort classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,14 +19,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: eeed69e9669048377340cb0ca21e7a2e89f4baff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f226b2fe162047c724b6bd2795a3c2c8a5800347c0c1af1ffdaf97855f0893a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812028"
 ---
-# <a name="cim_logicalport-class"></a>CIM \_ LogicalPort (classe)
+# <a name="cim_logicalport-class"></a>Classe \_ CiM LogicalPort
 
 Astrazione di una porta o di un punto di connessione di un dispositivo.
 
@@ -47,26 +47,26 @@ class CIM_LogicalPort : CIM_LogicalDevice
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ LogicalPort** presenta questi tipi di membri:
+La **classe \_ CIM LogicalPort** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ LogicalPort** dispone di queste proprietà.
+La **classe \_ CiM LogicalPort** ha queste proprietà.
 
 <dl> <dt>
 
-**MaxSpeed**
+**Maxspeed**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("bit al secondo"), **punito** ("bit/secondo")
+Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("bit al secondo"), **PUnit** ("bit/secondo")
 </dt> </dl>
 
 Larghezza di banda massima della porta, in bit al secondo.
@@ -76,7 +76,7 @@ Larghezza di banda massima della porta, in bit al secondo.
 **OtherPortType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -85,14 +85,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ LogicalPort**.**PortType**")
 </dt> </dl>
 
-Descrive il tipo di modulo quando **portType** è impostato su **other** ("1").
+Descrive il tipo di modulo, quando **PortType** è impostato su **Other** ("1").
 
 </dd> <dt>
 
-**PortType**
+**Porttype**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -128,14 +128,14 @@ Tipo di porta.
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (3.. 15999)
+**DmTF Reserved** (3..15999)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (16000.65535)
+**Vendor Reserved** (16000..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -145,29 +145,29 @@ Tipo di porta.
 **RequestedSpeed**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("bit al secondo"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ LogicalPort**.**Velocità**"), **punito** (" bit/secondo ")
+Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("bit al secondo"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ LogicalPort**.**Speed**"), **PUnit** ("bit/second")
 </dt> </dl>
 
-Larghezza di banda richiesta della porta, in bit al secondo. La larghezza di banda effettiva viene segnalata nella proprietà **velocità** .
+Larghezza di banda richiesta della porta, in bit al secondo. La larghezza di banda effettiva viene segnalata nella **proprietà** Speed.
 
 </dd> <dt>
 
 **Velocità**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("bit al secondo"), **punito** ("bit/secondo")
+Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("bit al secondo"), **PUnit** ("bit/secondo")
 </dt> </dl>
 
 Larghezza di banda della porta, in bit al secondo.
@@ -177,13 +177,13 @@ Larghezza di banda della porta, in bit al secondo.
 **UsageRestriction**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la porta è limitata a una porta front-end o back-end.
+Indica se la porta è limitata a essere una porta front-end o back-end.
 
 <dt>
 
@@ -225,8 +225,8 @@ Indica se la porta è limitata a una porta front-end o back-end.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -235,7 +235,7 @@ Indica se la porta è limitata a una porta front-end o back-end.
 
 <dl> <dt>
 
-[**\_LOGICALDEVICE CIM**](cim-logicaldevice.md)
+[**CIM \_ LogicalDevice**](cim-logicaldevice.md)
 </dt> </dl>
 
  

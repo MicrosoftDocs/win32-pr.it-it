@@ -1,5 +1,5 @@
 ---
-title: Metodo IVMKeyboard TypeKeySequence (VPCCOMInterfaces. h)
+title: Metodo IVMKeyboard TypeKeySequence (VPCCOMInterfaces.h)
 description: Simula un elenco delimitato da virgole di chiavi digitate.
 ms.assetid: ba4d4e43-cb2e-49ae-940d-2e81286d3473
 keywords:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c34bd96077c1d28aad196ee0d6b11de122725d68
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 565d31d04a31f72ea25b3477fb91d53d252f6173eec8bc2f40133db38eeb1619
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118998861"
 ---
-# <a name="ivmkeyboardtypekeysequence-method"></a>Metodo IVMKeyboard:: TypeKeySequence
+# <a name="ivmkeyboardtypekeysequence-method"></a>Metodo IVMKeyboard::TypeKeySequence
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Simula un elenco delimitato da virgole di chiavi digitate.
 
@@ -44,10 +44,10 @@ HRESULT TypeKeySequence(
 
 <dl> <dt>
 
-*sequenza di sequenze* \[ in\]
+*keySequence* \[ Pollici\]
 </dt> <dd>
 
-Sequenza delimitata da virgole dei codici chiave da tipizzare.
+Sequenza delimitata da virgole di codici chiave da digitare.
 
 </dd> </dl>
 
@@ -60,9 +60,9 @@ Questo metodo può restituire uno di questi valori.
 | Codice/valore restituito                                                                                                                                                 | Descrizione                                                                |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0</dt> </dl>                       | L'operazione è stata completata.<br/>                                   |
-| <dl> <dt>**E \_ PUNTATORE**</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **null**.<br/>                                      |
-| <dl> <dt>**E \_**</dt> <dt>0x80000003</dt> INVALIDARG </dl>      | La stringa specificata è vuota o contiene un codice chiave non valido.<br/> |
-| <dl> <dt>**Disp \_ 0x80020009 \_ eccezione E**</dt> <dt></dt> </dl> | Si è verificato un errore imprevisto.<br/>                               |
+| <dl> <dt>**E \_ Puntatore**</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **NULL.**<br/>                                      |
+| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>0x80000003</dt> </dl>      | La stringa specificata è vuota o contiene un codice di chiave non valido.<br/> |
+| <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/>                               |
 
 
 
@@ -70,11 +70,11 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-Una stringa di sequenza di chiavi è un set delimitato da virgole di identificatori di chiave usati per simulare la sequenza di stampa e di rilascio della chiave di una tastiera standard in stile US 101-Key.
+Una stringa di sequenza di tasti è un set delimitato da virgole di identificatori di tasto usati per simulare la sequenza di pressione e rilascio di una tastiera AT standard di tipo U.S. 101.
 
-Se un identificatore di chiave viene visualizzato nella stringa senza un modificatore precedente, viene inviato un codice con pressione di tasto alla sessione della macchina virtuale, seguito immediatamente dal codice corrispondente rilasciato dalla chiave. Per modificare questo comportamento, è possibile usare i modificatori di chiave.
+Se nella stringa viene visualizzato un identificatore di tasto senza un modificatore precedente, alla sessione della macchina virtuale viene inviato un codice premuto dal tasto, seguito immediatamente dal codice rilasciato dal tasto corrispondente. I modificatori di tasti possono essere usati per modificare questo comportamento.
 
-Il modificatore DOWN, ad esempio, invierà il codice premuto per la chiave per l'identificatore di chiave seguente senza inviare il codice rilasciato dalla chiave. Questa operazione è utile per la simulazione dei tasti CTRL, ALT e MAIUSC quando vengono mantenuti mentre sono in corso l'invio di altri tasti. Per rilasciare la chiave, è necessario includerla nuovamente nella stringa della chiave insieme a un modificatore UP precedente.
+Ad esempio, il modificatore DOWN invierà il codice premuto dal tasto per l'identificatore di tasto seguente senza inviare il codice rilasciato dal tasto. Ciò è utile per simulare i tasti CTRL, ALT e MAIUSC quando vengono mantenuti mentre vengono inviati altri tasti. Per rilasciare la chiave, è necessario includerla nuovamente nella stringa chiave insieme a un modificatore UP precedente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,12 +82,12 @@ Il modificatore DOWN, ad esempio, invierà il codice premuto per la chiave per l
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMKeyboard è definito come 00695f2e-c5ad-4d6e-b1ab-336ed121f8c4<br/>                |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMKeyboard è definito come \_ 00695f2e-c5ad-4d6e-b1ab-336ed121f8c4<br/>                |
 
 
 
@@ -98,7 +98,7 @@ Il modificatore DOWN, ad esempio, invierà il codice premuto per la chiave per l
 [**IVMKeyboard**](ivmkeyboard.md)
 </dt> <dt>
 
-[Sequenze di chiavi](key-sequences.md)
+[Sequenze di tasti](key-sequences.md)
 </dt> </dl>
 
  
