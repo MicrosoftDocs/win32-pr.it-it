@@ -1,19 +1,19 @@
 ---
-description: Inviato a un'applicazione per notificare le modifiche apportate alla finestra IME. Una finestra riceve questo messaggio tramite la funzione WindowProc.
+description: Inviato a un'applicazione per notificare le modifiche alla finestra IME. Una finestra riceve questo messaggio tramite la relativa funzione WindowProc.
 ms.assetid: 20e064b8-2baf-4b4c-8341-36c3e4643eff
-title: Messaggio WM_IME_NOTIFY (winuser. h)
+title: WM_IME_NOTIFY messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca5ab1b2a1fd62d159ab4f216bf9b1bb6892ed69
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a072ff41b5731662afa94e387ec48de7d14bc245906e581303fe976dcf455708
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014219"
 ---
-# <a name="wm_ime_notify-message"></a>Messaggio WM_IME_NOTIFY
+# <a name="wm_ime_notify-message"></a>WM_IME_NOTIFY messaggio
 
-Inviato a un'applicazione per notificare le modifiche apportate alla finestra IME. Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Inviato a un'applicazione per notificare le modifiche alla finestra IME. Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -31,7 +31,7 @@ LRESULT CALLBACK WindowProc(
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
 Handle per la finestra.
@@ -64,7 +64,7 @@ Comando. Questo parametro può avere uno dei valori seguenti.
 *lParam* 
 </dt> <dd>
 
-Dati specifici del comando, con formato dipendente dal valore del parametro *wParam* . Per ulteriori informazioni, fare riferimento alla documentazione per ogni comando.
+Dati specifici del comando, con formato dipendente dal valore del *parametro wParam.* Per altre informazioni, vedere la documentazione per ogni comando.
 
 </dd> </dl>
 
@@ -84,7 +84,7 @@ Un'applicazione elabora questo messaggio se è responsabile della gestione della
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                                                                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                                                                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h); </dt> <dt>Imm. h (Includi Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h);</dt> <dt>Imm.h (include Windows.h)</dt> </dl> |
 
 
 
@@ -92,10 +92,10 @@ Un'applicazione elabora questo messaggio se è responsabile della gestione della
 
 <dl> <dt>
 
-[Gestione metodo di input](input-method-manager.md)
+[Gestione metodi di input](input-method-manager.md)
 </dt> <dt>
 
-[Messaggi di gestione metodo di input](input-method-manager-messages.md)
+[Messaggi di Gestione metodi di input](input-method-manager-messages.md)
 </dt> <dt>
 
 [IMN_CHANGECANDIDATE](imn-changecandidate.md)

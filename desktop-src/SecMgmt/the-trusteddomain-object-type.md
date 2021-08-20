@@ -1,5 +1,5 @@
 ---
-description: Windows sistemi basati su certificati possono avere più istanze del tipo di oggetto TrustedDomain.
+description: Windows sistemi basati su domini possono avere più istanze del tipo di oggetto TrustedDomain.
 ms.assetid: 13efedb5-ebb6-459b-8c4f-06774226278c
 title: Tipo di oggetto TrustedDomain
 ms.topic: article
@@ -13,12 +13,12 @@ ms.locfileid: "119004839"
 ---
 # <a name="the-trusteddomain-object-type"></a>Tipo di oggetto TrustedDomain
 
-Windows sistemi basati su certificati possono avere più istanze del [**tipo di oggetto TrustedDomain.**](trusteddomain-object.md) **Gli oggetti TrustedDomain** hanno due campi che devono essere univoci tra tutti **gli oggetti TrustedDomain:**
+Windows sistemi basati su domini possono avere più istanze del tipo [**di oggetto TrustedDomain.**](trusteddomain-object.md) **Gli oggetti TrustedDomain** hanno due campi che devono essere univoci tra tutti **gli oggetti TrustedDomain:**
 
 -   Nome dell'oggetto [ **TrustedDomain**](trusteddomain-object.md)
--   Identificatore [*di sicurezza*](/windows/desktop/SecGloss/s-gly) (SID) di [**TrustedDomain.**](trusteddomain-object.md)
+-   ID [*di sicurezza*](/windows/desktop/SecGloss/s-gly) (SID) dell'oggetto [**TrustedDomain.**](trusteddomain-object.md)
 
-Il tentativo di creare un nuovo oggetto **TrustedDomain** con un nome o un SID già in uso da un altro oggetto **TrustedDomain** verrà rifiutato.
+Un tentativo di creare un nuovo oggetto **TrustedDomain** con un nome o un SID già in uso da un altro oggetto **TrustedDomain** verrà rifiutato.
 
  
 

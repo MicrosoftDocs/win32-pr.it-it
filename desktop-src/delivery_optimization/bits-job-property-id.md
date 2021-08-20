@@ -1,9 +1,9 @@
 ---
-title: Enumerazione BITS_JOB_PROPERTY_ID (Deliveryoptimization. h)
-description: L'enumerazione BITS_JOB_PROPERTY_ID specifica l'ID della proprietà per il processo di esecuzione. Questa enumerazione viene utilizzata nell'Unione BITS_JOB_PROPERTY_VALUE per determinare il tipo di valore contenuto nell'Unione.
+title: BITS_JOB_PROPERTY_ID enumerazione (Deliveryoptimization.h)
+description: L BITS_JOB_PROPERTY_ID enumere specifica l'ID della proprietà per il processo DO. Questa enumerazione viene usata nell'BITS_JOB_PROPERTY_VALUE per determinare il tipo di valore contenuto nell'unione.
 ms.assetid: B0F3C6C2-474F-4FD8-990A-770FAA993550
 keywords:
-- Enumerazione BITS_JOB_PROPERTY_ID
+- BITS_JOB_PROPERTY_ID enumerazione
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cd1d00d4dc12b27c1c80b0e18bb095641a56e322
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 803e776bd635cd600bf664354dda8703d224dffcd63ea751919875a6ea69233d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047149"
 ---
-# <a name="bits_job_property_id-enumeration"></a>Enumerazione BITS_JOB_PROPERTY_ID
+# <a name="bits_job_property_id-enumeration"></a>BITS_JOB_PROPERTY_ID enumerazione
 
-L'enumerazione **BITS_JOB_PROPERTY_ID** specifica l'ID della proprietà per il processo di esecuzione. Questa enumerazione viene utilizzata nell'Unione [**BITS_JOB_PROPERTY_VALUE**](bits-job-property-value-.md) per determinare il tipo di valore contenuto nell'Unione.
+L BITS_JOB_PROPERTY_ID enumere specifica l'ID della proprietà per il processo DO.  Questa enumerazione viene usata [**nell'BITS_JOB_PROPERTY_VALUE**](bits-job-property-value-.md) per determinare il tipo di valore contenuto nell'unione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,18 +51,18 @@ typedef enum  {
 <span id="BITS_JOB_PROPERTY_ID_COST_FLAGS"></span><span id="bits_job_property_id_cost_flags"></span>**BITS_JOB_PROPERTY_ID_COST_FLAGS**
 </dt> <dd>
 
-ID utilizzato per [controllare il comportamento di trasferimento](https://www.bing.com/search?q=control+transfer+behavior) su reti telefoniche e/o analoghe. Questa proprietà può essere modificata mentre è in corso un trasferimento. i nuovi flag di costo diverranno effettivi immediatamente.
+ID usato per controllare il comportamento [di trasferimento](https://www.bing.com/search?q=control+transfer+behavior) su reti cellulari e/o simili. Questa proprietà può essere modificata mentre è in corso un trasferimento, i nuovi flag di costo avranno effetto immediato.
 
-Questa proprietà usa il campo **Dword** **BITS_JOB_PROPERTY_VALUE** s.
+Questa proprietà usa il **BITS_JOB_PROPERTY_VALUE** **Dword.**
 
 </dd> <dt>
 
 <span id="BITS_JOB_PROPERTY_NOTIFICATION_CLSID"></span><span id="bits_job_property_notification_clsid"></span>**BITS_JOB_PROPERTY_NOTIFICATION_CLSID**
 </dt> <dd>
 
-ID utilizzato per [registrare un callback com](https://www.bing.com/search?q=register+a+COM+callback) tramite CLSID per ricevere notifiche sullo stato di avanzamento e il completamento di un processo di esecuzione. Il CLSID deve fare riferimento a una classe associata a un server COM out-of-process registrato. Può anche essere impostato su **GUID_NULL** per cancellare una notifica CLSID precedentemente impostata.
+ID usato per registrare [un callback COM](https://www.bing.com/search?q=register+a+COM+callback) da CLSID per ricevere notifiche sullo stato di avanzamento e il completamento di un processo DO. Il CLSID deve fare riferimento a una classe associata a un server COM out-of-process registrato. Può anche essere impostato su **GUID_NULL** per cancellare un CLSID di notifica impostato in precedenza.
 
-Questa proprietà usa il campo **CLsID** **BITS_JOB_PROPERTY_VALUE** s.
+Questa proprietà usa il **BITS_JOB_PROPERTY_VALUE** **CLsID.**
 
 </dd> <dt>
 
@@ -114,9 +114,9 @@ Non supportata.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                                         |
-| Server minimo supportato<br/> | Windows Server, versione 1709 \[ solo per le app desktop\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Server, solo app desktop versione 1709 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
 
 
 
@@ -133,10 +133,10 @@ Non supportata.
 [**BITS_JOB_TRANSFER_POLICY**](bits-job-transfer-policy-.md)
 </dt> <dt>
 
-[**IBackgroundCopyJob5:: SetProperty**](ibackgroundcopyjob5-setproperty.md)
+[**IBackgroundCopyJob5::SetProperty**](ibackgroundcopyjob5-setproperty.md)
 </dt> <dt>
 
-[**IBackgroundCopyJob5:: GetProperty**](ibackgroundcopyjob5-getproperty.md)
+[**IBackgroundCopyJob5::GetProperty**](ibackgroundcopyjob5-getproperty.md)
 </dt> </dl>
 
  

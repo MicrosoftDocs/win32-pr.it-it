@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Config01_Cellular02
-description: La \_ \_ classe Config01 Cellular02 dei criteri MDM \_ Configura i criteri cellulari.
+title: MDM_Policy_Config01_Cellular02 classe
+description: La classe Mdm \_ Policy \_ Config01 \_ Cellular02 configura i criteri della rete cellulare.
 ms.assetid: e5926a21-a375-4d1c-8b37-7fe7f7532c50
 keywords:
-- Classe MDM_Policy_Config01_Cellular02
-- Classe MDM_Policy_Config01_Cellular02, descritta
+- MDM_Policy_Config01_Cellular02 classe
+- MDM_Policy_Config01_Cellular02 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b1b6d9163723299b144368d9d2b73a12ccc7a91
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8c5f1d6963eed0cf5d3f6c34eb93613ee9e0a3c5e4f7d8a7364234da1d5d98ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018039"
 ---
-# <a name="mdm_policy_config01_cellular02-class"></a>\_ \_ Classe Config01 Cellular02 di criteri \_ MDM
+# <a name="mdm_policy_config01_cellular02-class"></a>Classe \_ Mdm Policy \_ Config01 \_ Cellular02
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La \_ \_ classe Config01 Cellular02 dei criteri MDM \_ Configura i criteri cellulari.
+La classe Mdm \_ Policy \_ Config01 \_ Cellular02 configura i criteri della rete cellulare.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -50,20 +50,20 @@ class MDM_Policy_Config01_Cellular02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ Config01 \_ Cellular02 dei criteri MDM** ha questi tipi di membri:
+La **classe MDM Policy \_ \_ Config01 \_ Cellular02** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ Cellular02 dei criteri MDM Config01** ha queste proprietà.
+La **classe MDM Policy \_ \_ Config01 \_ Cellular02** ha queste proprietà.
 
 <dl> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -80,48 +80,48 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[\_ForceAllowTheseApps LetAppsAccessCellularData](/windows/client-management/mdm/policy-csp-cellular#cellular-letappsaccesscellulardata-forceallowtheseapps)
+[LetAppsAccessCellularData \_ ForceAllowTheseApps](/windows/client-management/mdm/policy-csp-cellular#cellular-letappsaccesscellulardata-forceallowtheseapps)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[\_ForceDenyTheseApps LetAppsAccessCellularData](/windows/client-management/mdm/policy-csp-cellular#cellular-letappsaccesscellulardata-forcedenytheseapps)
+[LetAppsAccessCellularData \_ ForceDenyTheseApps](/windows/client-management/mdm/policy-csp-cellular#cellular-letappsaccesscellulardata-forcedenytheseapps)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[\_UserInControlOfTheseApps LetAppsAccessCellularData](/windows/client-management/mdm/policy-csp-cellular#cellular-letappsaccesscellulardata-userincontroloftheseapps)
+[LetAppsAccessCellularData \_ UserInControlOfTheseApps](/windows/client-management/mdm/policy-csp-cellular#cellular-letappsaccesscellulardata-userincontroloftheseapps)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -135,10 +135,10 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 [ShowAppCellularAccessUI](/windows/client-management/mdm/policy-csp-cellular#cellular-showappcellularaccessui)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -149,10 +149,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

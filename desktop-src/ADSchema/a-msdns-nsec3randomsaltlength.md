@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DNS-NSEC3-Random-Salt-length
-description: Attributo che definisce la lunghezza in byte del Salt casuale usato per la firma della zona DNS.
+title: Attributo ms-DNS-NSEC3-Random-Salt-Length
+description: Attributo che definisce la lunghezza in byte del salt casuale usato durante la firma della zona DNS.
 ms.assetid: b8c53765-e6fd-499c-8003-e02a903a059c
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DNS-NSEC3-Random-length
-- msDNs-schema AD dell'attributo NSEC3RandomSaltLength
+- Schema AD dell'attributo ms-DNS-NSEC3-Random-Salt-Length
+- Schema AD dell'attributo msDNS-NSEC3RandomSaltLength
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb4860aa20af91c36f266801e623bd6a0cf9098a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 88e254bee9dba9d58d7f748c6a9fa7e8521e155181069c3affea68786356168f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553031"
 ---
-# <a name="ms-dns-nsec3-random-salt-length-attribute"></a>attributo ms-DNS-NSEC3-Random-Salt-length
+# <a name="ms-dns-nsec3-random-salt-length-attribute"></a>Attributo ms-DNS-NSEC3-Random-Salt-Length
 
-Attributo che definisce la lunghezza in byte del Salt casuale usato per la firma della zona DNS.
+Attributo che definisce la lunghezza in byte del salt casuale usato durante la firma della zona DNS.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MS-DNS-NSEC3-Random-Salt-length      |
-| LDAP-Display-Name | msDNs-NSEC3RandomSaltLength          |
+| CN                | ms-DNS-NSEC3-Random-Salt-Length      |
+| Ldap-Display-Name | msDNS-NSEC3RandomSaltLength          |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2137              |
-| System-ID-GUID    | 13361665-916c-4de7-a59d-b1ebbd0de129 |
+| System-Id-Guid    | 13361665-916c-4de7-a59d-b1ebbd0de129 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -53,15 +53,15 @@ Attributo che definisce la lunghezza in byte del Salt casuale usato per la firma
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Vero                                     |
+| Is-Single-Valued       | Vero                                     |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | 0                                        |
 | Range-Upper            | 255                                      |
 | Search-Flags           | 0x00000008                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 

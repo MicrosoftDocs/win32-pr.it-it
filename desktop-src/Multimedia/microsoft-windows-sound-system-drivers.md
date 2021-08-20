@@ -1,74 +1,74 @@
 ---
-title: Driver di sistema audio Microsoft Windows
-description: Driver di sistema audio Microsoft Windows
+title: Driver di sistema audio microsoft Windows
+description: Driver di sistema audio microsoft Windows
 ms.assetid: 226ed685-70a0-440f-8e55-c25807cd89c1
 keywords:
-- Windows Multimedia, driver di sistema audio
-- Multimedia, driver di sistema audio
+- Windows multimediali, driver di sistema audio
+- multimediali, driver di sistema audio
 - driver di sistema audio
 - driver di sistema audio multimediali
-- Driver Sound Blaster
-- Driver WSS NT
+- Driver di Sound
+- WSS Driver NT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 153cb8fa8159ec34e52c9d246bfd0b6f34329a40
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 02320fd17a5c3edf20f043fab015169ff0c9bb62b4abffd71e0e66f197f8941e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137523"
 ---
-# <a name="microsoft-windows-sound-system-drivers"></a>Driver di sistema audio Microsoft Windows
+# <a name="microsoft-windows-sound-system-drivers"></a>Driver di sistema audio microsoft Windows
 
 
 
 | Driver                            | Identificatore                         |
 |-----------------------------------|------------------------------------|
-| Output della forma d'onda di Sound Blaster 16  | SB16 di MM \_ MSFT \_ \_            |
-| Audio Blaster 16 aux (CD)         | MM \_ WSS \_ SB16 \_ aux \_ CD             |
-| Audio Blaster 16 aux (CD)         | MM \_ MSFT \_ SB16 \_ aux \_ CD            |
-| Sound Blaster 16 aux (riga in)    | \_ \_ \_ Linea Aux SB16 di WSS mm \_           |
-| Sound Blaster 16 aux (riga in)    | MM \_ MSFT \_ SB16 \_ \_ linea Aux          |
-| Sintetizzatore audio Blaster 16 FM   | \_ \_ Synth SB16 WSS di mm \_               |
-| Sintetizzatore audio Blaster 16 FM   | \_ \_ Synth SB16 mm \_ MSFT              |
-| MIDI out Sound Blaster 16         | \_ \_ MIDI SB16 di WSS in mm \_             |
-| MIDI out Sound Blaster 16         | MM \_ MSFT \_ SB16 \_            |
-| Sound Blaster 16 MIDI in          | MM \_ WSS \_ SB16 \_ midiin              |
-| Sound Blaster 16 MIDI in          | MM \_ MSFT \_ SB16 \_ midiin             |
-| Dispositivo Sound Blaster 16 mixer     | \_ \_ SB16 mixer WSS \_ di mm               |
-| Dispositivo Sound Blaster 16 mixer     | MM \_ MSFT \_ SB16 \_ mixer              |
-| Input della forma d'onda di Sound Blaster 16   | MM \_ WSS \_ SB16 \_ WaveIn              |
-| Input della forma d'onda di Sound Blaster 16   | MM \_ MSFT \_ SB16 \_ WaveIn             |
-| Output della forma d'onda di Sound Blaster 16  | \_SB16 di WSS in mm \_ \_             |
-| Sound Blaster Pro aux (CD)        | MM \_ WSS \_ SBPRO \_ aux \_ CD            |
-| Sound Blaster Pro aux (CD)        | MM \_ MSFT \_ SBPRO \_ aux \_ CD           |
-| Sound Blaster Pro aux (riga in)   | \_ \_ \_ linea Aux SBPRO di WSS mm \_          |
-| Sound Blaster Pro aux (riga in)   | MM \_ MSFT \_ SBPRO \_ \_ linea Aux         |
-| Sintetizzatore Sound Blaster Pro FM  | \_ \_ synth SBPRO WSS di mm \_              |
-| Sintetizzatore Sound Blaster Pro FM  | \_ \_ synth SBPRO mm \_ MSFT             |
-| Sound Blaster Pro MIDI in         | MM \_ WSS \_ SBPRO \_ midiin             |
-| Sound Blaster Pro MIDI in         | MM \_ MSFT \_ SBPRO \_ midiin            |
-| MIDI out Sound Blaster Pro        | \_ \_ MIDI SBPRO di WSS in mm \_            |
-| MIDI out Sound Blaster Pro        | MM \_ MSFT \_ SBPRO \_           |
-| Mixer Pro Blaster audio           | \_ \_ SBPRO mixer WSS \_ di mm              |
-| Mixer Pro Blaster audio           | MM \_ MSFT \_ SBPRO \_ mixer             |
-| Input della forma d'onda di Sound Blaster Pro  | MM \_ WSS \_ SBPRO \_ WaveIn             |
-| Input della forma d'onda di Sound Blaster Pro  | MM \_ MSFT \_ SBPRO \_ WaveIn            |
-| Output della forma d'onda di Sound Blaster Pro | \_SBPRO di WSS in mm \_ \_            |
-| Output della forma d'onda di Sound Blaster Pro | SBPRO di MM \_ MSFT \_ \_           |
-| WSS NT aux                        | MM \_ MSFT per \_ WSS \_ NT \_ aux             |
-| Sintetizzatore WSS NT FM             | MM \_ MSFT \_ WSS \_ NT \_ FMSYNTH \_ stereo |
-| Mixer NT WSS                      | MM \_ MSFT \_ ( \_ mixer NT WSS \_ )           |
-| Wave di WSS NT in                    | MM \_ MSFT ( \_ WSS \_ NT \_ )          |
-| Uscita dal Wave di WSS NT                   | MM \_ MSFT per \_ WSS \_ NT \_         |
+| Output audio Sound SoundForm 16  | MM \_ MSFT \_ SB16 \_ WAVEOUT            |
+| Sound Sound Sound 16 aux (CD)         | MM \_ WSS \_ SB16 \_ AUX \_ CD             |
+| Sound Sound Sound 16 aux (CD)         | MM \_ MSFT \_ SB16 \_ AUX \_ CD            |
+| Sound Sound Sound 16 aux (line in)    | MM \_ WSS \_ SB16 \_ AUX \_ LINE           |
+| Sound Sound Sound 16 aux (line in)    | MM \_ MSFT \_ SB16 \_ AUX \_ LINE          |
+| Sintetizzatore Sound Sound 16 FM   | MM \_ WSS \_ SB16 \_ SYNTH               |
+| Sintetizzatore Sound Sound 16 FM   | MM \_ MSFT \_ SB16 \_ SYNTH              |
+| Sound Sound Sound Sound 16 MIDI out         | MM \_ WSS \_ SB16 \_ MIDIOUT             |
+| Sound Sound Sound Sound 16 MIDI out         | MM \_ MSFT \_ SB16 \_ MIDIOUT            |
+| Sound Sound Sound 16 MIDI in          | MM \_ WSS \_ SB16 \_ MIDIIN              |
+| Sound Sound Sound 16 MIDI in          | MM \_ MSFT \_ SB16 \_ MIDIIN             |
+| Dispositivo mixer Sound Sound 16     | MIXER MM \_ WSS \_ SB16 \_               |
+| Dispositivo mixer Sound Sound 16     | MM \_ MSFT \_ SB16 \_ MIXER              |
+| Input audio SoundForm 16   | MM \_ WSS \_ SB16 \_ WAVEIN              |
+| Input audio SoundForm 16   | MM \_ MSFT \_ SB16 \_ WAVEIN             |
+| Output audio Sound SoundForm 16  | MM \_ WSS \_ SB16 \_ WAVEOUT             |
+| Sound Sound Sound Pro aux (CD)        | MM \_ WSS \_ SBPRO \_ AUX \_ CD            |
+| Sound Sound Sound Pro aux (CD)        | MM \_ MSFT \_ SBPRO \_ AUX \_ CD           |
+| Sound Sound Sound Pro aux (line in)   | MM \_ WSS \_ SBPRO \_ AUX \_ LINE          |
+| Sound Sound Sound Pro aux (line in)   | MM \_ MSFT \_ SBPRO \_ AUX \_ LINE         |
+| Sound Sound Sound Pro FM Synthesizer  | MM \_ WSS \_ SBPRO \_ SYNTH              |
+| Sound Sound Sound Pro FM Synthesizer  | MM \_ MSFT \_ SBPRO \_ SYNTH             |
+| Sound Sound Pro MIDI in         | MM \_ WSS \_ SBPRO \_ MIDIIN             |
+| Sound Sound Pro MIDI in         | MM \_ MSFT \_ SBPRO \_ MIDIIN            |
+| Sound Sound Pro MIDI out        | MM \_ WSS \_ SBPRO \_ MIDIOUT            |
+| Sound Sound Pro MIDI out        | MM \_ MSFT \_ SBPRO \_ MIDIOUT           |
+| Sound Sound Pro mixer           | MIXER MM \_ WSS \_ SBPRO \_              |
+| Sound Sound Pro mixer           | MM \_ MSFT \_ SBPRO \_ MIXER             |
+| Sound Sound Sound Pro waveform input (Input forma d'onda audio)  | MM \_ WSS \_ SBPRO \_ WAVEIN             |
+| Sound Sound Sound Pro waveform input (Input forma d'onda audio)  | MM \_ MSFT \_ SBPRO \_ WAVEIN            |
+| Sound Sound Sound Pro waveform output (Output forma d'onda audio) | MM \_ WSS \_ SBPRO \_ WAVEOUT            |
+| Sound Sound Sound Pro waveform output (Output forma d'onda audio) | MM \_ MSFT \_ SBPRO \_ WAVEOUT           |
+| WSS Esperienza utente NT                        | MM \_ MSFT \_ WSS NT \_ \_ AUX             |
+| WSS Sintetizzatore NT FM             | MM \_ MSFT \_ WSS \_ STEREO NT \_ FMSYNTH \_ |
+| WSS Mixer NT                      | MM \_ MSFT \_ WSS \_ \_ MIXER NT           |
+| WSS Nt wave in                    | MM \_ MSFT \_ WSS \_ NT \_ WAVEIN          |
+| WSS NT wave out                   | MM \_ MSFT \_ WSS \_ NT \_ WAVEOUT         |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,7 +13,7 @@ ms.locfileid: "119003399"
 ---
 # <a name="itaudiosettingsset-method"></a>Metodo ITAudioSettings::Set
 
-\[Questo metodo non è disponibile per l'uso in Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
+\[Questo metodo non è disponibile per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
 
 Il **metodo Set** imposta il valore di una determinata proprietà delle impostazioni [**audio**](audiosettingsproperty.md).
 
@@ -42,7 +42,7 @@ Membro [**dell'enumerazione AudioSettingsProperty.**](audiosettingsproperty.md)
 *lValue* \[ Pollici\]
 </dt> <dd>
 
-Valore desiderato per la proprietà .
+Valore desiderato per la proprietà.
 
 </dd> <dt>
 

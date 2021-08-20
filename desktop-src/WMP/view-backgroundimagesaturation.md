@@ -1,9 +1,9 @@
 ---
-title: Visualizza backgroundImageSaturation
-description: L'attributo backgroundImageSaturation specifica o Recupera il valore di saturazione dell'immagine di sfondo.
+title: VIEW.backgroundImageSaturation
+description: L'attributo backgroundImageSaturation specifica o recupera il valore di saturazione dell'immagine di sfondo.
 ms.assetid: 9e1f205b-6366-4816-9430-1153f57d686c
 keywords:
-- Visualizza Media Player Windows backgroundImageSaturation
+- VIEW.backgroundImageSaturation Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c9d7f5807bcb5fd90dae211d80faf78006b6b35
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 934c10ee090f99d456c38a5eb56512d3adb9b748d45b166167b49f3249d819e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119506861"
 ---
-# <a name="viewbackgroundimagesaturation"></a>Visualizza backgroundImageSaturation
+# <a name="viewbackgroundimagesaturation"></a>VIEW.backgroundImageSaturation
 
-L'attributo **backgroundImageSaturation** specifica o Recupera il valore di saturazione dell'immagine di sfondo.
+**L'attributo backgroundImageSaturation** specifica o recupera il valore di saturazione dell'immagine di sfondo.
 
 ``` syntax
         elementID.backgroundImageSaturation
@@ -29,11 +29,11 @@ L'attributo **backgroundImageSaturation** specifica o Recupera il valore di satu
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di lettura/scrittura (**float**) con un valore compreso tra 0,0 e 2,0 e il cui valore predefinito è 1,0.
+Questo attributo è un numero di lettura/scrittura **(** **float**) con un valore compreso tra 0,0 e 2,0 con un valore predefinito pari a 1,0.
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo modifica il valore di saturazione delle immagini specificate dall'attributo **BackgroundImage** se è stato specificato e fa riferimento a un'immagine BMP a 8 bit.
+Questo attributo modifica il valore di saturazione delle immagini specificate dall'attributo **backgroundImage** se è stato specificato e fa riferimento a un'immagine BMP a 8 bit.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,7 +41,7 @@ Questo attributo modifica il valore di saturazione delle immagini specificate da
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -52,10 +52,10 @@ Questo attributo modifica il valore di saturazione delle immagini specificate da
 [**Elemento VIEW**](view-element.md)
 </dt> <dt>
 
-[**Visualizza. backgroundImage**](view-backgroundimage.md)
+[**VIEW.backgroundImage**](view-backgroundimage.md)
 </dt> <dt>
 
-[**Visualizza backgroundImageHueShift**](view-backgroundimagehueshift.md)
+[**VIEW.backgroundImageHueShift**](view-backgroundimagehueshift.md)
 </dt> </dl>
 
  

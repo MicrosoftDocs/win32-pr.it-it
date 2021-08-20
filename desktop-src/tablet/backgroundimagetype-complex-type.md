@@ -1,5 +1,5 @@
 ---
-description: Definisce il tipo che include le informazioni sull'immagine di sfondo utilizzata dalla nota Journal, se presente.
+description: Definisce il tipo che contiene le informazioni sull'immagine di sfondo usata dalla nota Journal, se presente.
 ms.assetid: c43715d5-eab4-4ccc-b5be-086bacc4c9da
 title: Tipo complesso BackgroundImageType
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 768459710a993dc284416c78209b37f9922249e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1fcab0dec0758cc60896d2fd033b09eb1c4184db78020f7aec69409306bb76b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941351"
 ---
 # <a name="backgroundimagetype-complex-type"></a>Tipo complesso BackgroundImageType
 
-Definisce il tipo che include le informazioni sull'immagine di sfondo utilizzata dalla nota Journal, se presente.
+Definisce il tipo che contiene le informazioni sull'immagine di sfondo usata dalla nota Journal, se presente.
 
 ``` syntax
 <xs:complexType name="BackgroundImageType" />
@@ -33,7 +33,7 @@ Definisce il tipo che include le informazioni sull'immagine di sfondo utilizzata
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                     |
 
 

@@ -1,15 +1,15 @@
 ---
-description: Il metodo RestoreBookmark sposta l'oggetto MSWebDVD sul punto del disco, come specificato nel segnalibro corrente, con tutte le impostazioni audio, video e immagine subimmagine ripristinate.
+description: Il metodo RestoreBookmark sposta l'oggetto MSWebDVD nel punto sul disco come specificato nel segnalibro corrente, con tutte le impostazioni audio, video e immagine secondaria ripristinate.
 ms.assetid: 41623395-e891-4e0a-8a1a-1a000b9fd537
-title: Metodo RestoreBookmark (Segment. h)
+title: Metodo RestoreBookmark (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47a6bd3fc1739e35467870b35df909e23d170b6f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9102c2d10192ab66a3c870c7f2516b995a89249ff331c7e558ca8f4a72f2231b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072744"
 ---
 # <a name="restorebookmark-method"></a>Metodo RestoreBookmark
 
@@ -18,7 +18,7 @@ ms.locfileid: "106330778"
 
  
 
-Il `RestoreBookmark` metodo sposta l'oggetto **mswebdvd** sul punto sul disco, come specificato nel segnalibro corrente, con tutte le impostazioni audio, video e immagine subimmagine ripristinate.
+Il `RestoreBookmark` metodo sposta **l'oggetto MSWebDVD** nel punto sul disco come specificato nel segnalibro corrente, con tutte le impostazioni audio, video e immagine secondaria ripristinate.
 
 ``` syntax
 MSWebDVD.RestoreBookmark()
@@ -34,7 +34,7 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Segmento. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 

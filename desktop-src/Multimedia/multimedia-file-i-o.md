@@ -1,41 +1,41 @@
 ---
-title: I/O file multimediale
-description: I/O file multimediale
+title: I/O di file multimediali
+description: I/O di file multimediali
 ms.assetid: 8b41c157-c18d-4962-8709-b919a38ae9c4
 keywords:
-- Multimedia di Windows, I/O file
-- Multimedia, I/O file
-- input multimediale, I/O file
-- I/O file multimediale, informazioni
-- I/O di file, informazioni
+- Windows multimediali, I/O di file
+- multimediali,I/O di file
+- input multimediale, I/O di file
+- I/O di file multimediali, informazioni su
+- I/O di file, informazioni su
 - input e output (I/O), informazioni
 - I/O (input e output), informazioni
 - I/O memorizzato nel buffer
-- formato file di interscambio risorse (RIFF)
-- RIFF (formato file di interscambio risorse)
-- I/O RIFF
+- resource interchange file format (RIFF)
+- RIFF (formato di file di interscambio di risorse)
+- RIFF I/O
 - I/O personalizzato
-- I/O memoria
+- I/O di memoria
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4dd646cb3195189765d1a5b020632cd26940f817
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 30437732af68bb91942a92e8b98d126687e0ce9762b913a172afb9463cb3a488
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118136720"
 ---
-# <a name="multimedia-file-io"></a>I/O file multimediale
+# <a name="multimedia-file-io"></a>I/O di file multimediali
 
-I servizi di I/O dei file multimediali forniscono più funzionalità rispetto ai servizi standard del sistema operativo, incluso il supporto per i/O memorizzati nel buffer, i file del formato del file di interscambio di risorse (RIFF), i file di memoria e i sistemi di archiviazione personalizzati. Inoltre, i servizi di I/O dei file multimediali sono ottimizzati per le applicazioni sensibili alle prestazioni.
+I servizi di I/O di file multimediali offrono più funzionalità rispetto ai servizi del sistema operativo standard, incluso il supporto per I/O memorizzato nel buffer, file RIFF (Resource Interchange File Format), file di memoria e sistemi di archiviazione personalizzati. Inoltre, i servizi di I/O di file multimediali sono ottimizzati per le applicazioni sensibili alle prestazioni.
 
--   [Informazioni sull'I/O dei file multimediali](about-multimedia-file-i-o.md)
--   [Utilizzo di I/O di file multimediali](using-multimedia-file-i-o.md)
--   [Riferimento I/O file multimediale](multimedia-file-i-o-reference.md)
+-   [Informazioni sull'I/O di file multimediali](about-multimedia-file-i-o.md)
+-   [Uso dell'I/O di file multimediali](using-multimedia-file-i-o.md)
+-   [Informazioni di riferimento su I/O di file multimediali](multimedia-file-i-o-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

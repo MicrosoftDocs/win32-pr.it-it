@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Metodo SetEncryptionLevel Servizi Desktop remoto
 - Metodo SetEncryptionLevel Servizi Desktop remoto , Win32_TSGeneralSetting classe
-- Win32_TSGeneralSetting classe Servizi Desktop remoto, metodo SetEncryptionLevel
+- Win32_TSGeneralSetting classe Servizi Desktop remoto metodo SetEncryptionLevel
 topic_type:
 - apiref
 api_name:
@@ -100,7 +100,7 @@ Restituisce Success in caso di esito positivo, in caso contrario restituisce un 
 
 ## <a name="remarks"></a>Commenti
 
-Managed Object Format file MOF contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 

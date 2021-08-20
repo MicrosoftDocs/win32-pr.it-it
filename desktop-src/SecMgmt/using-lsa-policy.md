@@ -21,8 +21,8 @@ Negli argomenti seguenti viene descritto come usare le funzioni criteri LSA.
 -   [Ricezione di eventi di modifica dei](receiving-policy-change-events.md) criteri descrive come creare e registrare un evento per ricevere notifiche quando le informazioni sui criteri cambiano.
 -   [Gestione delle autorizzazioni](managing-account-permissions.md) dell'account illustra come creare, eliminare ed enumerare gli account e come aggiungere e rimuovere privilegi per tali account.
 -   [Gestione delle informazioni sul dominio](managing-trusted-domain-information.md) trusted descrive come creare, enumerare ed eliminare domini trusted e come impostare e recuperare informazioni sul dominio trusted.
--   [La traduzione tra nomi e SID](translating-between-names-and-sids.md) illustra come eseguire il mapping dei SID ai nomi di account e viceversa.
--   [Mapping di identificatori Posix](mapping-posix-identifiers.md) descrive come eseguire il mapping dei SID agli identificatori Posix a 32 bit.
+-   [La conversione tra nomi e SID](translating-between-names-and-sids.md) illustra come eseguire il mapping dei SID ai nomi degli account e viceversa.
+-   [Mapping degli identificatori Posix](mapping-posix-identifiers.md) descrive come eseguire il mapping dei SID agli identificatori Posix a 32 bit.
 -   [L'archiviazione dei dati](storing-private-data.md) privati illustra come archiviare e recuperare stringhe di dati private.
 
 Per informazioni su come usare LSA per l'accesso e l'autenticazione degli utenti, vedere [Autenticazione LSA.](/windows/desktop/SecAuthN/lsa-authentication)

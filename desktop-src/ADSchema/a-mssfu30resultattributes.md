@@ -1,10 +1,10 @@
 ---
-title: attributo attributo msSFU-30-result-Attributes
+title: Attributo msSFU-30-Result-Attributes
 description: Contiene un oggetto utilizzato dal server NIS per l'archiviazione temporanea.
 ms.assetid: c59580cd-8c6b-489e-94a8-49516a347e9a
 ms.tgt_platform: multiple
 keywords:
-- Attributo msSFU-30-result-Attributes-schema AD
+- Attributo MSSFU-30-Result-Attributes Schema DI AD
 - Schema AD dell'attributo msSFU30ResultAttributes
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27c7a6d8626fd1173239d5a3c98e92ece48414a5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c229f9630f253742754d7ac9bc3dc07009bdf9f39cd0e6bb69b46532b6ed863d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119550961"
 ---
-# <a name="mssfu-30-result-attributes-attribute"></a>attributo attributo msSFU-30-result-Attributes
+# <a name="mssfu-30-result-attributes-attribute"></a>Attributo msSFU-30-Result-Attributes
 
 Contiene un oggetto utilizzato dal server NIS per l'archiviazione temporanea.
 
@@ -29,13 +29,13 @@ Contiene un oggetto utilizzato dal server NIS per l'archiviazione temporanea.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Attributo msSFU-30-result-attributi                  |
-| LDAP-Display-Name | msSFU30ResultAttributes                     |
+| CN                | msSFU-30-Result-Attributes                  |
+| Ldap-Display-Name | msSFU30ResultAttributes                     |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.305                 |
-| System-ID-GUID    | e167b0b6-4045-4433-ac35-53f972d45cba        |
+| System-Id-Guid    | e167b0b6-4045-4433-ac35-53f972d45cba        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -56,15 +56,15 @@ Contiene un oggetto utilizzato dal server NIS per l'archiviazione temporanea.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Falso                                                               |
+| Is-Single-Valued       | Falso                                                               |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Classi utilizzate in        | [**Attributo msSFU-30-NIS-map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Classi usate in        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Contiene un oggetto utilizzato dal server NIS per l'archiviazione temporanea.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Falso                                                               |
+| Is-Single-Valued       | Falso                                                               |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Classi utilizzate in        | [**Attributo msSFU-30-NIS-map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Classi usate in        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Contiene un oggetto utilizzato dal server NIS per l'archiviazione temporanea.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Falso                                                               |
+| Is-Single-Valued       | Falso                                                               |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Classi utilizzate in        | [**Attributo msSFU-30-NIS-map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Classi usate in        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 
@@ -119,15 +119,15 @@ Contiene un oggetto utilizzato dal server NIS per l'archiviazione temporanea.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Falso                                                               |
+| Is-Single-Valued       | Falso                                                               |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Classi utilizzate in        | [**Attributo msSFU-30-NIS-map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Classi usate in        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 

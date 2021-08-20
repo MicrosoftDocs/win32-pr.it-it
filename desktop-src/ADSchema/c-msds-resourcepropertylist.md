@@ -31,7 +31,7 @@ Un oggetto di questa classe contiene un elenco di proprietà della risorsa.
 |-------------------|--------------------------------------|
 | CN                | ms-DS-Resource-Property-List         |
 | Ldap-Display-Name | msDS-ResourcePropertyList            |
-| Privilegio di aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Schema-Id-Guid    | 72e3d47a-b342-4d45-8f56-baff803cabf9 |
 
@@ -72,16 +72,16 @@ Questa classe contiene gli attributi seguenti per Windows Server 2012:
 
 | Attributo                                                                                    | Obbligatorio | Derivato da                     |
 |----------------------------------------------------------------------------------------------|-----------|----------------------------------|
-| [**Admin-Description**](a-admindescription.md)                                              | Falso     | [**In alto**](c-top.md)<br/>  |
+| [**Descrizione dell'amministratore**](a-admindescription.md)                                              | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Admin-Display-Name**](a-admindisplayname.md)                                             | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Attributi consentiti**](a-allowedattributes.md)                                            | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)                         | Falso     | [**In alto**](c-top.md)<br/>  |
-| [**Classi consentite-figlio**](a-allowedchildclasses.md)                                       | Falso     | [**In alto**](c-top.md)<br/>  |
+| [**Classi figlio consentite**](a-allowedchildclasses.md)                                       | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)                    | Falso     | [**In alto**](c-top.md)<br/>  |
-| [**Testa di ponte-Server-List-BL**](a-bridgeheadserverlistbl.md)                                | Falso     | [**In alto**](c-top.md)<br/>  |
+| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                                | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Canonical-Name**](a-canonicalname.md)                                                    | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Nome comune**](a-cn.md)                                                                  | Falso     | [**In alto**](c-top.md)<br/>  |
-| [**Create-Time-Stamp**](a-createtimestamp.md)                                               | Falso     | [**In alto**](c-top.md)<br/>  |
+| [**Creazione timestamp**](a-createtimestamp.md)                                               | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Descrizione**](a-description.md)                                                         | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Nome visualizzato**](a-displayname.md)                                                        | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Display-Name-Printable**](a-displaynameprintable.md)                                     | Falso     | [**In alto**](c-top.md)<br/>  |
@@ -96,9 +96,9 @@ Questa classe contiene gli attributi seguenti per Windows Server 2012:
 | [**Tipo di istanza**](a-instancetype.md)                                                      | Vero      | [**In alto**](c-top.md)<br/>  |
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                                | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Is-Deleted**](a-isdeleted.md)                                                            | Falso     | [**In alto**](c-top.md)<br/>  |
-| [**Membro di DL**](a-memberof.md)                                                        | Falso     | [**In alto**](c-top.md)<br/>  |
-| [**Titolare dei privilegi**](a-isprivilegeholder.md)                                           | Falso     | [**In alto**](c-top.md)<br/>  |
-| [**Viene riciclato**](a-isrecycled.md)                                                          | Falso     | [**In alto**](c-top.md)<br/>  |
+| [**Is-Member-Of-DL**](a-memberof.md)                                                        | Falso     | [**In alto**](c-top.md)<br/>  |
+| [**Titolare del privilegio Is**](a-isprivilegeholder.md)                                           | Falso     | [**In alto**](c-top.md)<br/>  |
+| [**Is-Recycled**](a-isrecycled.md)                                                          | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                                               | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Oggetti gestiti**](a-managedobjects.md)                                                  | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**Mastered-By**](a-masteredby.md)                                                          | Falso     | [**In alto**](c-top.md)<br/>  |
@@ -114,7 +114,7 @@ Questa classe contiene gli attributi seguenti per Windows Server 2012:
 | [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                                    | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**ms-DS-Enabled-Feature-BL**](a-msds-enabledfeaturebl.md)                                  | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**ms-DS-Host-Service-Account-BL**](a-msds-hostserviceaccountbl.md)                         | Falso     | [**In alto**](c-top.md)<br/>  |
-| [**ms-DS-is-Domain-For**](a-msds-isdomainfor.md)                                            | Falso     | [**In alto**](c-top.md)<br/>  |
+| [**ms-DS-Is-Domain-For**](a-msds-isdomainfor.md)                                            | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**ms-DS-is-full-replica-for**](a-msds-isfullreplicafor.md)                                 | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**ms-DS-Is-Partial-Replica-For**](a-msds-ispartialreplicafor.md)                           | Falso     | [**In alto**](c-top.md)<br/>  |
 | [**ms-DS-Is-Primary-Computer-For**](a-msds-isprimarycomputerfor.md)                         | Falso     | [**In alto**](c-top.md)<br/>  |

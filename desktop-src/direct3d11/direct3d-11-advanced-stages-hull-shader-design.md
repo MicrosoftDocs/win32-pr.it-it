@@ -1,27 +1,27 @@
 ---
-title: Come progettare un Hull shader
-description: In questo argomento viene illustrato come progettare un Hull shader.
+title: Come progettare uno hull shader
+description: Questo argomento illustra come progettare uno hull shader.
 ms.assetid: c11c5652-dd7d-433d-bfa2-9853618ba334
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ece816ae33e7f4ecf4d024098e7741f197c423f1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 79021d6a5c03b057defdeae0d506898831ab740d11d2e105242ff53b1b39e9bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104993376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046639"
 ---
-# <a name="how-to-design-a-hull-shader"></a>Procedura: progettare un Hull shader
+# <a name="how-to-design-a-hull-shader"></a>Procedura: Progettare uno shader di tipo hull
 
-Un Hull shader è il primo di tre fasi che interagiscono per implementare lo [schema a mosaico](direct3d-11-advanced-stages-tessellation.md) (le altre due fasi sono mosaico e Domain shader). In questo argomento viene illustrato come progettare un Hull shader.
+Uno hull shader è la prima di tre fasi che si uniscono per implementare la [tessellazione](direct3d-11-advanced-stages-tessellation.md) (le altre due fasi sono il tessellatore e uno shader di dominio). Questo argomento illustra come progettare uno hull shader.
 
-Uno scafo shader richiede due funzioni, la principale Hull shader e una funzione costante patch. Hull shader implementa i calcoli in ogni punto di controllo; Hull shader chiama anche la funzione Constant patch che implementa i calcoli in ogni patch.
+Uno shader con scafo richiede due funzioni: lo shader principale e una funzione costante patch. Lo hull shader implementa i calcoli su ogni punto di controllo. Lo hull shader chiama anche la funzione costante patch che implementa i calcoli su ogni patch.
 
-Dopo aver progettato uno Hull shader, vedere [procedura: creare uno scafo shader](direct3d-11-advanced-stages-hull-shader-create.md) per informazioni su come creare un Hull shader.
+Dopo aver progettato uno hull shader, vedere [Procedura: Creare](direct3d-11-advanced-stages-hull-shader-create.md) uno hull shader per informazioni su come creare uno hull shader.
 
-**Per progettare uno Hull shader**
+**Per progettare uno hull shader**
 
-1.  Definire i punti di controllo di output e controllo input Hull shader.
+1.  Definire il controllo di input e i punti di controllo di output dello shader.
 
     ```
     // Input control point
@@ -60,11 +60,11 @@ Dopo aver progettato uno Hull shader, vedere [procedura: creare uno scafo shader
 
     
 
-    Per un dominio quad, [SV \_ TessFactor](/windows/desktop/direct3dhlsl/sv-tessfactor) definisce 4 fattori a mosaico perimetrale (per conteggiarla suddividerla i bordi), perché la funzione fissa mosaico deve conoscere la quantità di conteggiarla suddividerla. Gli output necessari sono diversi per il triangolo e i domini di deoline.
+    Per un dominio quad, [ \_ TessFactor SV](/windows/desktop/direct3dhlsl/sv-tessfactor) definisce 4 fattori a tessellazione bordi (per sfasare i bordi), poiché il tessellatore di funzione fissa deve sapere quanto a tessellare. Gli output necessari sono diversi per i domini triangolo e isolineo.
 
-    La funzione fissa mosaico non esamina altri output di Hull shader, ad esempio altri dati della costante patch o uno dei punti di controllo. Il Domain shader, che viene richiamato per ogni punto che la funzione fissa mosaico genera, vedrà come input tutti i punti di controllo di output di Hull shader e tutti i dati costanti della patch di output. lo shader valuta la patch nella posizione.
+    Il tessellatore di funzioni fisse non controlla altri output di hull shader, ad esempio altri dati costanti della patch o uno qualsiasi dei punti di controllo. Lo shader del dominio, che viene richiamato per ogni punto generato dal tessellatore di funzioni fisse, vede come input tutti i punti di controllo di output dello hull shader e tutti i dati costanti della patch di output. Lo shader valuta la patch nella relativa posizione.
 
-3.  Definire una funzione costante patch. Una funzione costante patch viene eseguita una volta per ogni patch per calcolare i dati costanti per l'intera patch, anziché i dati del punto di controllo, che vengono calcolati nello scafo dello shader.
+3.  Definire una funzione costante patch. Una funzione costante patch viene eseguita una volta per ogni patch per calcolare tutti i dati costanti per l'intera patch(a differenza dei dati dei singoli punti di controllo, che vengono calcolati nello shader della struttura).
 
     ```
     
@@ -87,14 +87,14 @@ Dopo aver progettato uno Hull shader, vedere [procedura: creare uno scafo shader
 
     Le proprietà della funzione costante patch includono:
 
-    -   Un input specifica una variabile contenente un ID patch ed è identificato dal valore di sistema **SV \_ PrimitiveID** (vedere [semantica](../direct3dhlsl/dx-graphics-hlsl-semantics.md) in Shader Model 4).
-    -   Un parametro di input è i punti di controllo di input, dichiarati nell'output del punto di controllo di Visual Studio in questo esempio. **\_ \_ \_** Una funzione patch può visualizzare tutti i punti di controllo di input per ogni patch, in questo esempio sono presenti 32 punti di controllo per patch.
-    -   Come minimo, è necessario che la funzione calcoli i fattori a mosaico per patch per la fase mosaico identificati con [SV \_ TessFactor](/windows/desktop/direct3dhlsl/sv-tessfactor). Un dominio Quad richiede quattro fattori a mosaico per i bordi e due fattori aggiuntivi (identificati da [SV \_ InsideTessFactor](/windows/desktop/direct3dhlsl/sv-insidetessfactor)) per tessellating all'interno della patch. La funzione fissa mosaico non esamina altri output di Hull shader, ad esempio i dati della costante patch o uno dei punti di controllo.
-    -   Gli output vengono in genere definiti da una struttura e vengono identificati dall' **\_ \_ \_ output dei dati costanti HS** in questo esempio. la struttura dipende dal tipo di dominio e sarebbe diversa per i domini triangolo o oline.
+    -   Un input specifica una variabile contenente un ID patch ed è identificato dal valore di sistema **\_ SV PrimitiveID** (vedere [la semantica](../direct3dhlsl/dx-graphics-hlsl-semantics.md) nel modello shader 4).
+    -   Un parametro di input è il punto di controllo di input, dichiarato in **VS \_ CONTROL POINT \_ \_ OUTPUT** in questo esempio. Una funzione patch può visualizzare tutti i punti di controllo di input per ogni patch. In questo esempio sono presenti 32 punti di controllo per ogni patch.
+    -   Come minimo, la funzione deve calcolare i fattori a tessellazione per patch per la fase del tessellatore identificati con [SV \_ TessFactor.](/windows/desktop/direct3dhlsl/sv-tessfactor) Un dominio quad richiede quattro fattori a tessellazione per gli bordi e due fattori aggiuntivi (identificati da [SV \_ InsideTessFactor)](/windows/desktop/direct3dhlsl/sv-insidetessfactor)per l'applicazione del tessellamento all'interno della patch. Il tessellatore di funzioni fisse non controlla altri output di hull shader, ad esempio i dati costanti della patch o uno qualsiasi dei punti di controllo.
+    -   Gli output sono in genere definiti da una struttura ed è identificato da **HS \_ CONSTANT DATA \_ \_ OUTPUT** in questo esempio. La struttura dipende dal tipo di dominio e sarebbe diversa per i domini triangolo o isolineo.
 
-    Un Domain shader viene richiamato per ogni punto che la funzione fissa mosaico genera e deve visualizzare i punti di controllo dell'output e i dati costanti della patch di output (entrambi dallo scafo) per valutare una patch nella relativa posizione.
+    Viene invece richiamato uno shader di dominio per ogni punto generato dal tessellatore di funzioni fisse e deve visualizzare i punti di controllo di output e i dati costanti della patch di output (entrambi dello shader hull) per valutare una patch nella relativa posizione.
 
-4.  Definire un Hull shader. Uno scafo shader identifica le proprietà di una patch, inclusa una funzione costante patch. Un Hull shader viene richiamato una volta per ogni punto di controllo dell'output.
+4.  Definire uno hull shader. Uno hull shader identifica le proprietà di una patch, inclusa una funzione costante patch. Uno hull shader viene richiamato una volta per ogni punto di controllo di output.
 
     ```
     [domain("quad")]
@@ -117,19 +117,19 @@ Dopo aver progettato uno Hull shader, vedere [procedura: creare uno scafo shader
 
     
 
-    Uno Hull shader usa i seguenti attributi:
+    Uno hull shader usa gli attributi seguenti:
 
-    -   Attributo di [dominio](/windows/desktop/direct3dhlsl/sm5-attributes-domain) .
-    -   Attributo di [partizionamento](/windows/desktop/direct3dhlsl/sm5-attributes-partitioning) .
-    -   Attributo [outputtopology](/windows/desktop/direct3dhlsl/sm5-attributes-outputtopology) .
-    -   Attributo [outputcontrolpoints](/windows/desktop/direct3dhlsl/sm5-attributes-outputcontrolpoints) .
-    -   Attributo [patchconstantfunc](/windows/desktop/direct3dhlsl/sm5-attributes-patchconstantfunc) . Uno scafo shader calcola i punti di controllo di output. in questo esempio sono presenti 16 punti di controllo di Bezier di output.
+    -   Attributo [di](/windows/desktop/direct3dhlsl/sm5-attributes-domain) dominio.
+    -   Attributo [di partizionamento.](/windows/desktop/direct3dhlsl/sm5-attributes-partitioning)
+    -   Attributo [outputtopology.](/windows/desktop/direct3dhlsl/sm5-attributes-outputtopology)
+    -   Attributo [outputcontrolpoints.](/windows/desktop/direct3dhlsl/sm5-attributes-outputcontrolpoints)
+    -   Attributo [patchconstantfunc.](/windows/desktop/direct3dhlsl/sm5-attributes-patchconstantfunc) Uno hull shader calcola i punti di controllo di output. In questo esempio sono presenti 16 punti di controllo di Bézier di output.
 
-Tutti i punti di controllo di input (identificati dall'output del punto di controllo di Visual Studio) sono visibili per ogni chiamata a Hull shader. **\_ \_ \_** In questo esempio sono presenti 32 punti di controllo di input.
+Tutti i punti di controllo di input (identificati da **VS \_ CONTROL POINT \_ \_ OUTPUT)** sono visibili a ogni chiamata dello shader di tipo hull shader. In questo esempio sono presenti 32 punti di controllo di input.
 
-Un Hull shader viene richiamato una volta per ogni punto di controllo dell'output (identificato con [SV \_ OutputControlPointID](/windows/desktop/direct3dhlsl/sv-outputcontrolpointid)) per ogni patch (identificato con SV \_ PrimitiveID). Lo scopo di questo particolare shader consiste nel calcolare l' *i*/o di output, che è stato definito come un punto di controllo di Bezier (in questo esempio sono presenti 16 punti di controllo di output definiti da outputcontrolpoints).
+Uno hull shader viene richiamato una volta per ogni punto di controllo di output (identificato con [ \_ SV OutputControlPointID](/windows/desktop/direct3dhlsl/sv-outputcontrolpointid)) per ogni patch (identificata con \_ SV PrimitiveID). Lo scopo di questo particolare shader è calcolare l'output *i*, che è stato definito come un punto di controllo BEZIER (in questo esempio sono definiti 16 punti di controllo di output dai punti di controllo di output).
 
-Uno Hull shader esegue una routine una volta per patch (funzione costante patch) per calcolare i dati di una costante di patch (come minimo i fattori a mosaico). Separatamente, un Hull shader esegue una funzione costante patch (denominata SubDToBezierConstantsHS) in ogni patch per calcolare i dati di una costante patch, ad esempio i fattori a mosaico per la fase mosaico.
+Uno hull shader esegue una routine una volta per ogni patch (funzione costante patch) per calcolare come minimo i dati costanti della patch (fattori a tessellazione). Separatamente, uno hull shader esegue una funzione costante di patch (denominata SubDToBezierConstantsHS) in ogni patch per calcolare i dati costanti della patch, ad esempio i fattori a suddivisione a zigoma per la fase a tessellatore.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -138,9 +138,9 @@ Uno Hull shader esegue una routine una volta per patch (funzione costante patch)
 [Come usare Direct3D 11](how-to-use-direct3d-11.md)
 </dt> <dt>
 
-[Panoramica dello schema a mosaico](direct3d-11-advanced-stages-tessellation.md)
+[Cenni preliminari sull'a tessellazione](direct3d-11-advanced-stages-tessellation.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

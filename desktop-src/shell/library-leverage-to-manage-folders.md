@@ -1,5 +1,5 @@
 ---
-description: Questo argomento descrive le librerie e come possono essere vantaggiose per utenti e sviluppatori.
+description: Questo argomento descrive le librerie e i vantaggi che possono trarre vantaggio da utenti e sviluppatori.
 ms.assetid: D5F5FE96-11D2-4fc5-A68B-6E594C09BE20
 title: Informazioni sulle librerie
 ms.topic: article
@@ -13,13 +13,13 @@ ms.locfileid: "118049324"
 ---
 # <a name="about-libraries"></a>Informazioni sulle librerie
 
-Questo argomento descrive le librerie e come possono essere vantaggiose per utenti e sviluppatori.
+Questo argomento descrive le librerie e i vantaggi che possono trarre vantaggio da utenti e sviluppatori.
 
 Le librerie sono raccolte di cartelle definite dall'utente. Una libreria tiene traccia della posizione di archiviazione fisica di ogni cartella, che allevia l'utente e il software di tale attività. Gli utenti possono raggruppare le cartelle correlate in una raccolta anche se tali cartelle sono archiviate in dischi rigidi o computer diversi.
 
 In una libreria, le cartelle e i file vengono visualizzati all'utente come una singola raccolta e, usando l'API della libreria shell, il contenuto della libreria può anche apparire in un'unica posizione di un programma.
 
-In una raccolta, il contenuto, ad esempio i documenti, le foto, i video o la musica di un utente, può essere ordinato e visualizzato come richiesto dall'utente e non semplicemente come richiesto dal file system. Ad esempio, gli utenti possono organizzare il contenuto di una libreria usando le proprietà degli elementi nella libreria in modo che gli elementi correlati siano ordinati insieme anche se sono archiviati in cartelle diverse.
+In una raccolta, il contenuto, ad esempio documenti, foto, video o musica di un utente, può essere ordinato e visualizzato come richiesto dall'utente e non semplicemente come richiesto dall'file system. Ad esempio, gli utenti possono organizzare il contenuto di una libreria usando le proprietà degli elementi nella libreria in modo che gli elementi correlati siano ordinati insieme anche se sono archiviati in cartelle diverse.
 
 ![Screenshot dell'interfaccia utente delle librerie](images/libraries-whatare.png)
 
@@ -41,7 +41,7 @@ L'aggiunta del supporto della libreria al programma offre all'utente i vantaggi 
 
 -   **Le librerie offrono un'interfaccia utente coerente in Windows 7**
 
-    Le finestre di dialogo file comuni supportano le librerie e offrono la stessa esperienza utente di Windows Explorer in Windows 7. Le librerie di supporto nel programma consentono un'interazione più semplice per l'utente quando usa il programma in Windows 7.
+    Le finestre di dialogo file comuni supportano le librerie e offrono la stessa esperienza utente di Windows Explorer in Windows 7. Le librerie di supporto nel programma consentono un'interazione più trasparente per l'utente quando usa il programma in Windows 7.
 
 -   **Gli utenti decidono dove archiviare il contenuto**
 
@@ -53,7 +53,7 @@ L'aggiunta del supporto della libreria al programma offre all'utente i vantaggi 
 
 -   **Le librerie supportano l'accesso a librerie e file system**
 
-    Usando [**l'API della libreria shell**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllibrary), i programmi possono fornire all'utente il supporto della libreria riducendo al tempo stesso la complessità del codice di gestione di file e cartelle. Se il programma usa già l'API del file system, è possibile conservare la quantità di codice esistente desiderata e fornire comunque il supporto della libreria all'utente ottenendo le informazioni necessarie sul file system **dall'API** della libreria shell .
+    Usando [**l'API della libreria shell**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllibrary), i programmi possono fornire supporto per le librerie per l'utente riducendo al tempo stesso la complessità del codice di gestione di file e cartelle. Se il programma usa già l'API del file system, è possibile conservare la quantità di codice esistente desiderata e fornire comunque il supporto della libreria all'utente ottenendo le informazioni necessarie sul file system **dall'API** della libreria shell .
 
 -   **Notifica di modifica più semplice**
 
@@ -61,15 +61,15 @@ L'aggiunta del supporto della libreria al programma offre all'utente i vantaggi 
 
 -   **Le librerie usano le proprietà dei file**
 
-    I programmi possono utilizzare le proprietà dei file per controllare quali file vengono visualizzati durante le operazioni di apertura e salvataggio che utilizzano le finestre di dialogo comuni dei file. I programmi possono anche avere accesso alle proprietà dei file usando [**le interfacce IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore) Le finestre di dialogo file comuni possono essere configurate anche per consentire agli utenti di aggiornare le proprietà associate al relativo contenuto.
+    I programmi possono utilizzare le proprietà dei file per controllare quali file vengono visualizzati durante le operazioni di apertura e salvataggio che utilizzano le finestre di dialogo comuni dei file. I programmi possono anche avere accesso alle proprietà dei file usando [**le interfacce IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore) Le finestre di dialogo file comuni possono essere configurate anche per consentire agli utenti di aggiornare le proprietà associate al contenuto.
 
 -   **I programmi possono creare librerie dedicate**
 
-    È possibile creare una nuova libreria quando le librerie utente esistenti non soddisfano le esigenze del programma, ad esempio se un programma crea un nuovo tipo di contenuto utente. La nuova libreria può essere configurata con un'icona univoca che ne rappresenta il contenuto e semplifica l'identificazione della raccolta in Windows Explorer.
+    È possibile creare una nuova libreria quando le librerie utente esistenti non soddisfano le esigenze del programma, ad esempio se un programma crea un nuovo tipo di contenuto utente. La nuova libreria può essere configurata con un'icona univoca che ne rappresenta il contenuto e semplifica l'identificazione della libreria in Windows Explorer.
 
 ## <a name="managing-folders-in-libraries"></a>Gestione di cartelle nelle librerie
 
-Gli utenti possono organizzare le librerie aggiungendo, spostando o rimuovendo cartelle nella libreria. Non tutte le cartelle, tuttavia, supportano tutte le funzionalità che possono essere fornite da una libreria. Molte funzionalità della libreria richiedono l'accesso rapido alle diverse proprietà della cartella e al relativo contenuto disponibili solo tramite Windows ricerca. Per fornire la funzionalità completa della libreria, è necessario che una cartella possa essere indicizzata Windows ricerca.
+Gli utenti possono organizzare le librerie aggiungendo, spostando o rimuovendo cartelle nella libreria. Non tutte le cartelle, tuttavia, supportano tutte le funzionalità che una libreria può fornire. Molte funzionalità della libreria richiedono l'accesso rapido alle diverse proprietà della cartella e al relativo contenuto disponibili solo tramite Windows ricerca. Per fornire la funzionalità completa della libreria, è necessario che una cartella possa essere indicizzata Windows ricerca.
 
 Una libreria non consente a un utente di aggiungere cartelle che non forniscono la funzionalità completa della libreria. [**L'API della libreria shell**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) può tuttavia aggiungere tali cartelle. Se una libreria contiene una cartella che non supporta la funzionalità completa della libreria, la libreria funzionerà in modalità sicura e fornirà una funzionalità limitata. Nella tabella seguente vengono descritte le cartelle che supportano la funzionalità di libreria completa e quelle che non lo supportano.
 
@@ -79,7 +79,7 @@ Una libreria non consente a un utente di aggiungere cartelle che non forniscono 
 |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
 | Dischi rigidi NTFS e FAT32 fissi ed esterni.                                                                     | Unità rimovibili, ad esempio unità flash USB o schede di memoria SD (Secure Digital).               |
 | Condivisioni file indicizzate da Windows ricerca, ad esempio server di reparto, Windows 7 o pc Windows Vista home. | Supporti rimovibili, ad esempio supporti CD-ROM o DVD.                                                 |
-| Condivisioni file disponibili offline, ad  esempio una cartella Documenti o una Client-Side cache.        | Condivisioni di rete che non sono disponibili offline né indicizzate in remoto, ad esempio le unità NAS.   |
+| Condivisioni file disponibili offline, ad esempio una cartella di Documenti **reindirizzata** o una Client-Side cache.        | Condivisioni di rete che non sono disponibili offline né indicizzate in remoto, ad esempio le unità NAS.   |
 |                                                                                                                    | Altre origini dati, ad esempio Microsoft SharePoint, Microsoft Exchange e Microsoft OneDrive. |
 
 

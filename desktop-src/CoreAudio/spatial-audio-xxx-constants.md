@@ -1,27 +1,27 @@
 ---
-description: Le \_ \_ costanti xxx audio spaziali definiscono i valori relativi alle funzionalità audio spaziali.
+description: Le costanti SPATIAL \_ AUDIO XXX definiscono i valori correlati alle funzionalità del suono \_ spaziale.
 ms.assetid: F1A01BDB-0CC2-45ED-A423-8CC7F54D4E55
-title: Costanti SPATIAL_AUDIO_XXX (SpatialAudioMetadata. h)
+title: SPATIAL_AUDIO_XXX costanti (SpatialAudioMetadata.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd2c92b970f69cf84e0744f21a41932a8851efed
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: db363260b21f47676c12aeb5eaf3c10149b571ed2771a4d9f907e98b0ba17aed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018249"
 ---
-# <a name="spatial_audio_xxx-constants"></a>\_ \_ Costanti xxx audio spaziali
+# <a name="spatial_audio_xxx-constants"></a>Costanti SPATIAL \_ AUDIO \_ XXX
 
-Le \_ \_ costanti xxx audio spaziali definiscono i valori relativi alle funzionalità audio spaziali.
+Le costanti SPATIAL \_ AUDIO XXX definiscono i valori correlati alle funzionalità del suono \_ spaziale.
 
 
 
 | Costante/valore                                                                                                                                                                                                                                                                                       | Descrizione                                                                                                                                                                                                                                                                     |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="SPATIAL_AUDIO_POSITION"></span><span id="spatial_audio_position"></span><dl> <dt>**Spaziale \_ \_Posizione AUDIO**</dt> <dt>200</dt> </dl>                                                   | Comando standard di metadati audio spaziali definito da Microsoft che rappresenta la posizione del listener nel modello standard usato da [**ISpatialAudioClient**](/windows/desktop/api/spatialaudioclient/nn-spatialaudioclient-ispatialaudioclient) in cui la testa del listener è posizionata in corrispondenza delle coordinate (0, 0, 0), definita in metri.<br/> |
-| <span id="SPATIAL_AUDIO_POSITION_BYTE_COUNT"></span><span id="spatial_audio_position_byte_count"></span><dl> <dt>**Spaziale \_ \_ \_ \_ Conteggio byte posizione audio**</dt> <dt>sizeof (float) \* 3</dt> </dl> | Specifica la dimensione del valore **della \_ \_ posizione audio spaziale** .<br/>                                                                                                                                                                                                        |
-| <span id="SPATIAL_AUDIO_STANDARD_COMMANDS_START"></span><span id="spatial_audio_standard_commands_start"></span><dl> <dt>**Spaziale \_ \_Comandi audio \_ standard \_ avviati**</dt> <dt>200</dt> </dl>    | Specifica l'inizio dell'intervallo dei comandi di metadati audio spaziali riservati a Microsoft. I comandi dei metadati personalizzati sono limitati agli ID di comando 0-199. I comandi 200-255 sono riservati per l'uso da Microsoft.<br/>                                                           |
+| <span id="SPATIAL_AUDIO_POSITION"></span><span id="spatial_audio_position"></span><dl> <dt>**SPAZIALE \_ POSIZIONE \_ AUDIO**</dt> <dt>200</dt> </dl>                                                   | Comando di metadati audio spaziali standard definito da Microsoft che rappresenta la posizione del listener nel modello standard usato da [**ISpatialAudioClient**](/windows/desktop/api/spatialaudioclient/nn-spatialaudioclient-ispatialaudioclient) in cui la testa del listener è posizionata in corrispondenza delle coordinate (0,0,0), definite in metri.<br/> |
+| <span id="SPATIAL_AUDIO_POSITION_BYTE_COUNT"></span><span id="spatial_audio_position_byte_count"></span><dl> <dt>**SPAZIALE \_ AUDIO \_ POSITION \_ BYTE \_ COUNT**</dt> <dt>sizeof(float) \* 3</dt> </dl> | Specifica le dimensioni del valore **SPATIAL \_ AUDIO \_ POSITION.**<br/>                                                                                                                                                                                                        |
+| <span id="SPATIAL_AUDIO_STANDARD_COMMANDS_START"></span><span id="spatial_audio_standard_commands_start"></span><dl> <dt>**SPAZIALE \_ COMANDI \_ STANDARD AUDIO \_ \_ START**</dt> <dt>200</dt> </dl>    | Specifica l'inizio dell'intervallo di comandi di metadati audio spaziali riservati da Microsoft. I comandi dei metadati personalizzati sono limitati agli ID dei comandi da 0 a 199. I comandi da 200 a 255 sono riservati per l'uso da parte di Microsoft.<br/>                                                           |
 
 
 
@@ -31,7 +31,7 @@ Le \_ \_ costanti xxx audio spaziali definiscono i valori relativi alle funziona
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>SpatialAudioMetadata. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>SpatialAudioMetadata.h</dt> </dl> |
 
 
 

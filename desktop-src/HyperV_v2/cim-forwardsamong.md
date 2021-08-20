@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione in cui gli endpoint del protocollo dipendono da un servizio di inoltre per l'invio dei dati.
+description: Rappresenta un'associazione in cui gli endpoint di protocollo dipendono da un servizio di inoltro per inoltrare i dati.
 ms.assetid: b63dbd2c-2842-498a-a352-b7ab7f7c841a
-title: Classe CIM_ForwardsAmong
+title: CIM_ForwardsAmong classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2b584f6472d8fbe3eb738d87652b796d9bb617f5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa6f3782407f57f999117b83918460adae307c962336386301592d3408e6490d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014649"
 ---
-# <a name="cim_forwardsamong-class"></a>CIM \_ ForwardsAmong (classe)
+# <a name="cim_forwardsamong-class"></a>Classe CIM \_ ForwardsAmong
 
-Rappresenta un'associazione in cui gli endpoint del protocollo dipendono da un servizio di inoltre per l'invio dei dati.
+Rappresenta un'associazione in cui gli endpoint di protocollo dipendono da un servizio di inoltro per inoltrare i dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,26 +39,26 @@ class CIM_ForwardsAmong : CIM_ServiceSAPDependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ForwardsAmong** presenta questi tipi di membri:
+La **classe CIM \_ ForwardsAmong** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ForwardsAmong** dispone di queste proprietà.
+La **classe CIM \_ ForwardsAmong** ha queste proprietà.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ ProtocolEndpoint**
+Tipo di dati: **Protocollo \_ CIMEndpoint**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
 Gli endpoint del protocollo inviano e ricevono i dati inoltrati.
@@ -74,10 +74,10 @@ Tipo di dati: **CIM \_ ForwardingService**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-Servizio di invio che invia i dati.
+Servizio di inoltro che inoltra i dati.
 
 </dd> </dl>
 
@@ -88,9 +88,9 @@ Servizio di invio che invia i dati.
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Servizio di invio che invia i dati.
 
 <dl> <dt>
 
-[**\_SERVICESAPDEPENDENCY CIM**](cim-servicesapdependency.md)
+[**CIM \_ ServiceSAPDependency**](cim-servicesapdependency.md)
 </dt> </dl>
 
  

@@ -1,23 +1,23 @@
 ---
-description: Acquisizione di video in un file di Windows Media
+description: Acquisizione di video in un Windows multimediale
 ms.assetid: cc23bfce-34b9-4976-8602-e0602c7da2af
-title: Acquisizione di video in un file di Windows Media
+title: Acquisizione di video in un Windows multimediale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6442c1cf3751beac8d4eba751452d9573e9eede
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 3268d3a3df4a24c5836dba81f7ef4cf0b872907f09367d3212d27c38c0dd4414
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104234500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118158706"
 ---
-# <a name="capturing-video-to-a-windows-media-file"></a>Acquisizione di video in un file di Windows Media
+# <a name="capturing-video-to-a-windows-media-file"></a>Acquisizione di video in un Windows multimediale
 
-Per acquisire video e codificarlo in un file Windows Media Video (WMV), connettere il pin di acquisizione al filtro di [writer ASF WM](wm-asf-writer-filter.md) , come illustrato nella figura seguente.
+Per acquisire video e codificarlo in un file di Windows Media Video (WMV), connettere il pin di acquisizione al filtro [WM ASF Writer,](wm-asf-writer-filter.md) come illustrato nel diagramma seguente.
 
-![grafico di acquisizione Windows Media](images/vidcap03.png)
+![Grafico di Windows Media Capture](images/vidcap03.png)
 
-Il modo più semplice per creare questo grafico è specificando MEDIASUBTYPE \_ ASF nel metodo [**ICaptureGraphBuilder2:: SetOutputFileName**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-setoutputfilename) :
+Il modo più semplice per creare questo grafo è specificare MEDIASUBTYPE \_ Asf nel [**metodo ICaptureGraphBuilder2::SetOutputFileName:**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-setoutputfilename)
 
 
 ```C++
@@ -31,7 +31,7 @@ hr = pBuild->SetOutputFileName(
 
 
 
-Il valore MEDIASUBTYPE \_ ASF indica al generatore del grafico di acquisizione di usare il filtro del writer ASF WM come sink di file. Il generatore del grafico di acquisizione crea il filtro, lo aggiunge al grafo e chiama [**IFileSinkFilter:: myFileName**](/windows/desktop/api/Strmif/nf-strmif-ifilesinkfilter-setfilename) per impostare il nome del file di output. Restituisce un puntatore al filtro come parametro in uscita (
+Il valore MEDIASUBTYPE Asf indica a Capture Graph Builder di usare il filtro \_ WM ASF Writer come sink del file. Capture Graph Builder crea il filtro, lo aggiunge al grafo e chiama [**IFileSinkFilter::SetFileName**](/windows/desktop/api/Strmif/nf-strmif-ifilesinkfilter-setfilename) per impostare il nome del file di output. Restituisce un puntatore al filtro come parametro in uscita (
 
 
 ```
@@ -40,9 +40,9 @@ pASFWriter
 
 
 
-Nell'esempio precedente).
+nell'esempio precedente).
 
-Usare l'interfaccia [**IConfigAsfWriter**](/previous-versions/windows/desktop/api/Dshowasf/nn-dshowasf-iconfigasfwriter) nel writer ASF WM per impostare il profilo Windows Media. È necessario eseguire questa operazione prima di connettere i pin del writer ASF WM.
+Usare [**l'interfaccia IConfigAsfWriter**](/previous-versions/windows/desktop/api/Dshowasf/nn-dshowasf-iconfigasfwriter) in WM ASF Writer per impostare il Windows media. È necessario eseguire questa operazione prima di connettere eventuali segnaposto in WM ASF Writer.
 
 
 ```C++
@@ -57,9 +57,9 @@ if (SUCCEEDED(hr))
 
 
 
-Per ulteriori informazioni sull'impostazione del profilo, vedere [creazione di file ASF in DirectShow](creating-asf-files-in-directshow.md).
+Per altre informazioni sull'impostazione del profilo, vedere [Creazione di file ASF in DirectShow](creating-asf-files-in-directshow.md).
 
-Chiamare [**ICaptureGraphBuilder2:: RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) per connettere il filtro di acquisizione al writer ASF:
+Chiamare [**ICaptureGraphBuilder2::RenderStream per**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) connettere il filtro di acquisizione al writer ASF:
 
 
 ```C++
@@ -73,7 +73,7 @@ hr = pBuild->RenderStream(
 
 
 
-Ogni pin di input nel filtro WM ASF Writer corrisponde a un flusso nel profilo Windows Media. È necessario connettere ogni pin, in modo che il contenuto del file corrisponda a quello del profilo.
+Ogni pin di input nel filtro DI WM ASF Writer corrisponde a un flusso nel Windows media. È necessario connettere ogni pin, in modo che il contenuto del file corrisponda al profilo.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

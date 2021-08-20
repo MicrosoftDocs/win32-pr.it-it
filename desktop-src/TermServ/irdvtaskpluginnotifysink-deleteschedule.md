@@ -4,9 +4,9 @@ description: Chiamato dall'agente attività per eliminare un'attività pianifica
 ms.assetid: 67a9493e-367a-48c9-8f94-276d696406b7
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del Metodo DeleteSchedule
+- Metodo DeleteSchedule Servizi Desktop remoto
 - Metodo DeleteSchedule Servizi Desktop remoto, interfaccia IRDVTaskPluginNotifySink
-- Interfaccia IRDVTaskPluginNotifySink Servizi Desktop remoto, Metodo DeleteSchedule
+- Interfaccia IRDVTaskPluginNotifySink Servizi Desktop remoto , metodo DeleteSchedule
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f00bcc740f87acb7f051decd5f2fc9b55ffbf642
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5674b3624edc102be6943e63b72444ec68f403fa1066e90a410f028008894d29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118129143"
 ---
-# <a name="irdvtaskpluginnotifysinkdeleteschedule-method"></a>IRDVTaskPluginNotifySink::D Metodo eleteSchedule
+# <a name="irdvtaskpluginnotifysinkdeleteschedule-method"></a>Metodo IRDVTaskPluginNotifySink::D eleteSchedule
 
 Chiamato dall'agente attività per eliminare un'attività pianificata.
 
@@ -42,7 +42,7 @@ HRESULT DeleteSchedule(
 
 <dl> <dt>
 
-*bstrIdentifier* \[ in\]
+*bstrIdentifier* \[ Pollici\]
 </dt> <dd>
 
 Identificatore dell'attività pianificata.
@@ -51,7 +51,7 @@ Identificatore dell'attività pianificata.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
