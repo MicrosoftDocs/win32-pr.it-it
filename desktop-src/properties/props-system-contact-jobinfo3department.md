@@ -4,12 +4,12 @@ ms.assetid: 6ead2145-4707-47cc-884f-191f135eb4fc
 title: System.Contact.JobInfo3Department
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c1d957433c9f8a3b990747fc8186b3535413756
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ee0f5f4b4a3bf018776616e01546e421619136209a99b24219e026b194c0c0b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108101719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117684563"
 ---
 # <a name="systemcontactjobinfo3department"></a>System.Contact.JobInfo3Department
 

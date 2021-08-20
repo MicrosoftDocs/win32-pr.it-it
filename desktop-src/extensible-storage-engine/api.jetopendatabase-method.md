@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetOpenDatabase'
-title: API. JetOpenDatabase, metodo
+description: 'Altre informazioni su: Metodo Api.JetOpenDatabase'
+title: Metodo Api.JetOpenDatabase
 TOCTitle: 'JetOpenDatabase method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetOpenDatabase(Microsoft.Isam.Esent.Interop.JET_SESID,System.String,System.String,Microsoft.Isam.Esent.Interop.JET_DBID@,Microsoft.Isam.Esent.Interop.OpenDatabaseGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetopendatabase(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: faaff0eec2b5bc8a2c2f2a72a61f9f6a23f7d972
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 379b79c6f23b7052e08f8443d84d0534c63ea563b208cca8c5dc09a827eb71be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117902971"
 ---
-# <a name="apijetopendatabase-method"></a>API. JetOpenDatabase, metodo
+# <a name="apijetopendatabase-method"></a>Metodo Api.JetOpenDatabase
 
-Apre un database precedentemente associato a [JetAttachDatabase (JET_SESID, String, AttachDatabaseGrbit)](./api.jetattachdatabase-method.md)per l'utilizzo con una sessione di database. Questa funzione può essere chiamata più volte per lo stesso database.
+Apre un database collegato in precedenza con [JetAttachDatabase(JET_SESID, String, AttachDatabaseGrbit)](./api.jetattachdatabase-method.md), da usare con una sessione di database. Questa funzione può essere chiamata più volte per lo stesso database.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -74,41 +74,41 @@ public static JET_wrn JetOpenDatabase(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione in cui è in corso l'apertura del database.
+    Sessione che apre il database.
 
 <!-- end list -->
 
   - database  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Database da aprire.
 
 <!-- end list -->
 
   - connessione  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Riservato per utilizzi futuri.
 
 <!-- end list -->
 
   - dbid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_DBID](./jet-dbid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_DBID](./jet-dbid-structure.md)  
     
-    Restituisce l'dbid del database collegato.
+    Restituisce il dbid del database collegato.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. OpenDatabaseGrbit](./opendatabasegrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.OpenDatabaseGrbit](./opendatabasegrbit-enumeration.md)  
     
-    Opzioni di database aperte.
+    Aprire le opzioni di database.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
 Codice di avviso ESENT.  
 
 ## <a name="see-also"></a>Vedi anche
@@ -117,6 +117,6 @@ Codice di avviso ESENT.
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

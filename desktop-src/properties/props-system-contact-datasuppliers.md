@@ -4,12 +4,12 @@ ms.assetid: 2b231ea2-d3c9-47ac-be51-4de3c736b369
 title: System.Contact.DataSuppliers
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad265648cdc2ae6ad1161a30cdb6c1c88393eeab
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 64f6ff81a40be34dd52fa671295f53a4181f9c95f9e42775446794f04f75e448
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117867062"
 ---
 # <a name="systemcontactdatasuppliers"></a>System.Contact.DataSuppliers
 
@@ -36,7 +36,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -66,7 +66,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

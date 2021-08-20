@@ -1,5 +1,5 @@
 ---
-description: 'Metodo IXml2Dex::CopyXML : non implementato.'
+description: 'Metodo IXml2Dex::CopyXML: non implementato.'
 ms.assetid: be412d17-6210-4b50-a2b9-9b51c722cb7c
 title: Metodo IXml2Dex::CopyXML
 ms.topic: reference
@@ -12,17 +12,17 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 61e46cb86f32ede3906a22566f455f1a8c55ecb5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a08f9cd10c451647a5d4556788073eee54f801b929ba732c421d00aa00e4dcea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117817025"
 ---
 # <a name="ixml2dexcopyxml-method"></a>Metodo IXml2Dex::CopyXML
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
@@ -78,7 +78,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare Microsoft Windows SDK [Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

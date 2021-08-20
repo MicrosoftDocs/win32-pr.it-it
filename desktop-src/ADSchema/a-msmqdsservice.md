@@ -1,10 +1,10 @@
 ---
-title: MSMQ-DS-attributo servizio
+title: Attributo MSMQ-Ds-Service
 description: Indica se il server fornisce servizi DS.
 ms.assetid: 46f3cf87-03aa-45c0-9001-05b6b7905d69
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-DS-schema AD dell'attributo del servizio
+- Schema AD dell'attributo MSMQ-Ds-Service
 - Schema AD dell'attributo mSMQDsService
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f17078f625f3f2b96a32eceed034e3e0e0729f76
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 08dd21961cc90023f1c0e8eac52d68c029fae0f218698cbf3cecaf0f0496d34c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103745082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118013888"
 ---
-# <a name="msmq-ds-service-attribute"></a>MSMQ-DS-attributo servizio
+# <a name="msmq-ds-service-attribute"></a>Attributo MSMQ-Ds-Service
 
 Indica se il server fornisce servizi DS.
 
@@ -29,13 +29,13 @@ Indica se il server fornisce servizi DS.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MSMQ-DS-Service                      |
-| LDAP-Display-Name | mSMQDsService                        |
+| CN                | MSMQ-Ds-Service                      |
+| Ldap-Display-Name | mSMQDsService                        |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1238              |
-| System-ID-GUID    | 2df90d82-009f-11d2-aa4c-00c04fd7d83a |
+| System-Id-Guid    | 2df90d82-009f-11d2-aa4c-00c04fd7d83a |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ Indica se il server fornisce servizi DS.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**MSMQ-impostazioni**](c-msmqsettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Impostazioni**](c-msmqsettings.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Indica se il server fornisce servizi DS.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**MSMQ-impostazioni**](c-msmqsettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Impostazioni**](c-msmqsettings.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Indica se il server fornisce servizi DS.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**MSMQ-impostazioni**](c-msmqsettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Impostazioni**](c-msmqsettings.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Indica se il server fornisce servizi DS.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**MSMQ-impostazioni**](c-msmqsettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Impostazioni**](c-msmqsettings.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Indica se il server fornisce servizi DS.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**MSMQ-impostazioni**](c-msmqsettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Impostazioni**](c-msmqsettings.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Indica se il server fornisce servizi DS.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**MSMQ-impostazioni**](c-msmqsettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Impostazioni**](c-msmqsettings.md)<br/> |
 
 
 

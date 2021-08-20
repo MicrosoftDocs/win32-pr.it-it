@@ -4,24 +4,24 @@ description: Prototipi
 ms.assetid: 2b31c01b-d52b-4df5-9cb0-a35286febd3a
 keywords:
 - Framework servizi di testo (TSF), prototipi
-- TSF (Framework dei servizi di testo), prototipi
-- Guida di riferimento a TSF, prototipi
+- TSF (Framework servizi di testo),prototipi
+- Informazioni di riferimento su TSF, prototipi
 - informazioni di riferimento per TSF, prototipi
-- Servizi di testo, prototipi
-- Applicazioni abilitate per TSF, prototipi
+- servizi di testo, prototipi
+- applicazioni abilitate per TSF, prototipi
 - prototipi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6212461b45d65b73caa77cf21b7591a77ef2a199
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 417ea7a87e989cd66ae98ecaeae552699a7cead592278a3f156638dac769b02b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117951650"
 ---
 # <a name="prototypes"></a>Prototipi
 
-[ITfContextRenderingMarkup](/windows/desktop/TSF/itfcontextrenderingmarkup), [IEnumTfRenderingMarkup](/windows/desktop/TSF/ienumtfrenderingmarkup)e [tf \_ RENDERINGMARKUP](/windows/desktop/TSF/tf-renderingmarkup) descritti in questo riferimento non sono definiti in file di intestazione o IDL. Per ottenere il file di intestazione, è necessario che i prototipi seguenti siano conformi al compilatore MIDL.
+[ITfContextRenderingMarkup,](/windows/desktop/TSF/itfcontextrenderingmarkup) [IEnumTfRenderingMarkup](/windows/desktop/TSF/ienumtfrenderingmarkup)e [TF \_ RENDERINGMARKUP](/windows/desktop/TSF/tf-renderingmarkup) descritti in questo riferimento non sono definiti nei file IDL o di intestazione. I prototipi seguenti devono essere compilati dal compilatore MIDL per ottenere il file di intestazione.
 
 
 ```C++
@@ -80,6 +80,6 @@ interface ITfContextRenderingMarkup : IUnknown
 
 
 
- 
+ 
 
- 
+ 

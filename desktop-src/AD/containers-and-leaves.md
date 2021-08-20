@@ -1,31 +1,31 @@
 ---
-title: Contenitori e foglie
-description: Active Directory Domain Services contenere una gerarchia di oggetti in cui ogni istanza dell'oggetto, ad eccezione della radice della gerarchia di directory, è contenuta in un altro oggetto.
+title: Contenitori e lascia
+description: Active Directory Domain Services una gerarchia di oggetti in cui ogni istanza di oggetto, ad eccezione della radice della gerarchia di directory, è contenuta da un altro oggetto.
 ms.assetid: ef17e84c-6c7f-4ebe-a904-fead6c27518d
 ms.tgt_platform: multiple
 keywords:
-- contenitori e foglie Active Directory
+- contenitori e lascia Active Directory
 - Active Directory foglia
-- Active Directory contenitore
+- contenitore Active Directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f9039e4619ea0bd50d20c3bd425b6a8536a1034
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: be794e806a15bd7d220d5bcda0b517216d4dd75d93ed235e33ffc862eb7c18e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104472646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118021799"
 ---
-# <a name="containers-and-leaves"></a>Contenitori e foglie
+# <a name="containers-and-leaves"></a>Contenitori e lascia
 
-Active Directory Domain Services contenere una gerarchia di oggetti in cui ogni istanza dell'oggetto, ad eccezione della radice della gerarchia di directory, è contenuta in un altro oggetto. La struttura di questa gerarchia è più flessibile rispetto a una file system di directory e file. Al contrario, le regole, nello [schema di Active Directory](active-directory-schema.md), determinano quali classi di oggetti possono contenere istanze di altre classi di oggetti. La definizione dello schema predefinito della classe di oggetti [**User**](/windows/desktop/ADSchema/c-user) , ad esempio, include le classi di oggetti dell' [**unità organizzativa**](/windows/desktop/ADSchema/c-organizationalunit) e del [**contenitore**](/windows/desktop/ADSchema/c-container) come possibili valori migliori. ovvero i contenitori o gli oggetti padre possibili di un'istanza dell'oggetto **utente** . Ciò significa che un oggetto **unità organizzativa** può contenere un oggetto **utente** , ma un oggetto **utente** non può contenere un altro oggetto **utente** , a meno che non venga modificata la definizione dello schema della classe **utente** .
+Active Directory Domain Services una gerarchia di oggetti in cui ogni istanza di oggetto, ad eccezione della radice della gerarchia di directory, è contenuta da un altro oggetto. La struttura di questa gerarchia è più flessibile rispetto a file system di directory e file. Le regole, nello schema [di Active Directory,](active-directory-schema.md)determinano invece quali classi di oggetti possono contenere istanze di altre classi di oggetti. Ad esempio, la definizione dello schema predefinita della [**classe di**](/windows/desktop/ADSchema/c-user) oggetti User include le classi di oggetti [**Organizational-Unit**](/windows/desktop/ADSchema/c-organizationalunit) e [**Container**](/windows/desktop/ADSchema/c-container) come possibili superiori. cio, possibili oggetti padre o contenitori di **un'istanza dell'oggetto** User. Ciò significa che un **oggetto Organizational-Unit** può contenere un oggetto **User,** ma un **oggetto User** non può contenere un altro oggetto **User,** a meno che non venga modificata la definizione dello schema **della classe User.**
 
-Ad eccezione degli oggetti dello schema, ovvero degli oggetti [**classSchema**](/windows/desktop/ADSchema/c-classschema) o [**attributeSchema**](/windows/desktop/ADSchema/c-attributeschema) che definiscono le classi e gli attributi che possono esistere in una foresta di server, qualsiasi oggetto in Active Directory Domain Services può essere un contenitore. In particolare, qualsiasi classe di oggetti visualizzata nell'attributo [**possSuperiors**](/windows/desktop/ADSchema/a-posssuperiors) o [**systemPossSuperiors**](/windows/desktop/ADSchema/a-systemposssuperiors) di una definizione di classe di oggetti è potenzialmente un contenitore. Per ulteriori informazioni sui contenitori di una classe di oggetti predefinita, vedere [Active Directory Domain Services Reference](active-directory-domain-services-reference.md). È possibile associare a livello di codice allo schema astratto e usare i metodi [**IADsClass:: Get \_ containment**](/windows/desktop/api/iads/nn-iads-iadsclass) o [**IADsClass:: Get \_ PossibleSuperiors**](/windows/desktop/api/iads/nn-iads-iadsclass) per ottenere le classi che una determinata classe può contenere o essere contenuta in. Per altre informazioni, vedere [Reading the abstract schema](reading-the-abstract-schema.md). È anche possibile leggere l'attributo [**PossibleInferiors**](/windows/desktop/ADSchema/a-possibleinferiors) di qualsiasi istanza dell'oggetto per determinare le classi di oggetti che l'oggetto può contenere. Tenere presente che **PossibleInferiors** è un attributo costruito, il che significa che viene calcolato dai  / valori **systemPossSuperiors** di possSuperiors delle altre definizioni della classe e che non viene effettivamente archiviato nella directory.
+Fatta eccezione per gli oggetti schema, ad esempio gli oggetti [**classSchema**](/windows/desktop/ADSchema/c-classschema) o [**attributeSchema**](/windows/desktop/ADSchema/c-attributeschema) che definiscono le classi e gli attributi che possono esistere in una foresta server, qualsiasi oggetto in Active Directory Domain Services può essere un contenitore. In particolare, qualsiasi classe di oggetto visualizzata nell'attributo [**possSuperiors**](/windows/desktop/ADSchema/a-posssuperiors) o [**systemPossSuperiors**](/windows/desktop/ADSchema/a-systemposssuperiors) di una definizione di classe di oggetti è potenzialmente un contenitore. Per altre informazioni sui contenitori di una classe di oggetti predefinita, vedere Active Directory Domain Services [Reference](active-directory-domain-services-reference.md). È possibile eseguire l'associazione a livello di codice allo schema astratto e usare i metodi [**IADsClass::get \_ Containment**](/windows/desktop/api/iads/nn-iads-iadsclass) o [**IADsClass::get \_ PossibleSuperiors**](/windows/desktop/api/iads/nn-iads-iadsclass) per ottenere le classi che una determinata classe può contenere o contenere. Per altre informazioni, vedere [Lettura dello schema astratto](reading-the-abstract-schema.md). È anche possibile leggere [**l'attributo possibleInferiors**](/windows/desktop/ADSchema/a-possibleinferiors) di qualsiasi istanza di oggetto per determinare le classi di oggetti che l'oggetto può contenere. Tenere presente che **possibleInferiors** è un attributo costruito, ovvero viene calcolato dai valori **possSuperiors** / **systemPossSuperiors** delle altre definizioni di classe e non viene effettivamente archiviato nella directory.
 
-Tenere presente che lo schema Active Directory definisce una classe [**contenitore**](/windows/desktop/ADSchema/c-container) . Come illustrato in precedenza, un oggetto non deve essere un'istanza della classe **contenitore** come contenitore. Esiste anche una classe [**foglia**](/windows/desktop/ADSchema/c-leaf) e anche se le sottoclassi di questa classe non sono in genere contenitori, non esiste alcun motivo per cui non possono esserlo.
+Tenere presente che lo schema di Active Directory definisce una [**classe Container.**](/windows/desktop/ADSchema/c-container) Come illustrato in precedenza, non è necessario che un oggetto sia un'istanza della classe **Container** come contenitore. Esiste anche una [**classe Leaf**](/windows/desktop/ADSchema/c-leaf) e anche se le sottoclassi di questa classe non sono in genere contenitori, non esiste alcun motivo per cui non sia possibile.
 
-Infine, è possibile impostare un flag nell'identificatore di visualizzazione associato a una classe di oggetti per indicare che le interfacce utente devono sempre visualizzare le istanze della classe come foglie anziché contenitori. Questo consente di evitare che l'interfaccia utente venga ingombrata da un numero eccessivo di contenitori. Per altre informazioni, vedere [visualizzazione di contenitori come nodi foglia](viewing-containers-as-leaf-nodes.md).
+Infine, è possibile impostare un flag sull'identificatore di visualizzazione associato a una classe di oggetti per indicare che le interfacce utente devono sempre visualizzare le istanze della classe come elementi foglia anziché come contenitori. Ciò consente di evitare che l'interfaccia utente sia ingombrata da troppi contenitori. Per altre informazioni, vedere [Visualizzazione di contenitori come nodi foglia.](viewing-containers-as-leaf-nodes.md)
 
- 
+ 
 
- 
+ 

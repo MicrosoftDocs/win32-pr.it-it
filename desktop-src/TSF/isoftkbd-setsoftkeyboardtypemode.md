@@ -1,11 +1,11 @@
 ---
-title: Metodo ISoftKbd SetSoftKeyboardTypeMode (Softkbdc. h)
-description: Il metodo ISoftKbd SetSoftKeyboardTypeMode imposta la modalità del tipo per una tastiera soft.
+title: Metodo ISoftKbd SetSoftKeyboardTypeMode (Softkbdc.h)
+description: Il metodo ISoftKbd SetSoftKeyboardTypeMode imposta la modalità di tipo per una tastiera soft.
 ms.assetid: 0b5b5056-59b3-41c7-bc43-70b5c3cd51c2
 keywords:
-- Framework servizi di testo Metodo SetSoftKeyboardTypeMode
-- Framework dei servizi di testo del metodo SetSoftKeyboardTypeMode, interfaccia ISoftKbd
-- ISoftKbd Interface Text Services Framework, metodo SetSoftKeyboardTypeMode
+- Metodo SetSoftKeyboardTypeMode Framework servizi di testo
+- Metodo SetSoftKeyboardTypeMode Framework servizi di testo, interfaccia ISoftKbd
+- Interfaccia ISoftKbd Framework servizi di testo metodo SetSoftKeyboardTypeMode
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55c01465debc42926888e2cb12a3a5b9d884498b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 50a43fd160444c2c1d29226aadb898ca60eec6038759452ca8451466337f1b3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117952487"
 ---
-# <a name="isoftkbdsetsoftkeyboardtypemode-method"></a>Metodo ISoftKbd:: SetSoftKeyboardTypeMode
+# <a name="isoftkbdsetsoftkeyboardtypemode-method"></a>Metodo ISoftKbd::SetSoftKeyboardTypeMode
 
-Il metodo **ISoftKbd:: SetSoftKeyboardTypeMode** imposta la modalità del tipo per una tastiera soft.
+Il **metodo ISoftKbd::SetSoftKeyboardTypeMode** imposta la modalità di tipo per una tastiera soft.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ HRESULT SetSoftKeyboardTypeMode(
 
 <dl> <dt>
 
-*TypeMode* \[ in\]
+*TypeMode* \[ Pollici\]
 </dt> <dd>
 
-Modalità del tipo. I valori possibili sono definiti per l'enumerazione [**TYPEMODE**](typemode.md) .
+Modalità del tipo. I valori possibili sono definiti per [**l'enumerazione TYPEMODE.**](typemode.md)
 
 </dd> </dl>
 
@@ -57,8 +57,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Valore                                                                                        | Descrizione                                     |
 |----------------------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Il metodo è stato eseguito correttamente.<br/>           |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il parametro *TypeMode* non è valido.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Il metodo è stato eseguito correttamente.<br/>           |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il *parametro TypeMode* non è valido.<br/> |
 
 
 
@@ -72,9 +72,9 @@ Questo metodo può restituire uno di questi valori.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                             |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
-| Componente ridistribuibile<br/>          | TSF 1,0 su Windows 2000 Professional<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
-| IDL<br/>                      | <dl> <dt>Softkbd. idl</dt> </dl> |
+| Componente ridistribuibile<br/>          | TSF 1.0 in Windows 2000 Professional<br/>                                        |
+| Intestazione<br/>                   | <dl> <dt>Softkbdc.h</dt> </dl>  |
+| Idl<br/>                      | <dl> <dt>Softkbd.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Softkbd.dll</dt> </dl> |
 
 

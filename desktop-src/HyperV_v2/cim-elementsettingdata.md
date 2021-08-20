@@ -1,7 +1,7 @@
 ---
 description: Rappresenta un'associazione tra un elemento gestito e i dati di impostazione associati. Questa associazione descrive anche se si tratta di un'impostazione predefinita o corrente.
 ms.assetid: 0df2b235-76d9-4899-938b-274ec5471324
-title: Classe CIM_ElementSettingData
+title: CIM_ElementSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,14 +18,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: e22dbd221f2e83009e4268cc0de337374e04298a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 86f2b83c46a9b533d922991574d33a12d0a620e1559116eccc356d2b4283e486
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312932"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812278"
 ---
-# <a name="cim_elementsettingdata-class"></a>CIM \_ ElementSettingData (classe)
+# <a name="cim_elementsettingdata-class"></a>Classe CIM \_ ElementSettingData
 
 Rappresenta un'associazione tra un elemento gestito e i dati di impostazione associati. Questa associazione descrive anche se si tratta di un'impostazione predefinita o corrente.
 
@@ -45,26 +45,26 @@ class CIM_ElementSettingData
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ElementSettingData** presenta questi tipi di membri:
+La **classe CIM \_ ElementSettingData** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ElementSettingData** dispone di queste proprietà.
+La **classe CIM \_ ElementSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **IsCurrent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se l'impostazione a cui si fa riferimento è attualmente utilizzata dall'elemento.
+Indica se l'impostazione a cui si fa riferimento è attualmente utilizzata dall'elemento .
 
 <dt>
 
@@ -94,13 +94,13 @@ Indica se l'impostazione a cui si fa riferimento è attualmente utilizzata dall'
 **IsDefault**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Che indica se l'impostazione è un'impostazione predefinita per l'elemento.
+Indica se l'impostazione è un'impostazione predefinita per l'elemento .
 
 <dt>
 
@@ -113,14 +113,14 @@ Che indica se l'impostazione è un'impostazione predefinita per l'elemento.
 
 <span id="Is_Default"></span><span id="is_default"></span><span id="IS_DEFAULT"></span>
 
-**È il valore predefinito** (1)
+**Impostazione predefinita** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Is_Not_Default"></span><span id="is_not_default"></span><span id="IS_NOT_DEFAULT"></span>
 
-**Non è predefinito** (2)
+**Non predefinito** (2)
 
 
 </dt> <dd></dd> </dl>
@@ -130,7 +130,7 @@ Che indica se l'impostazione è un'impostazione predefinita per l'elemento.
 **IsNext**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -138,9 +138,9 @@ Tipo di accesso: sola lettura
 
 Flag che indica quando e con quale frequenza applicare l'impostazione.
 
-Ad esempio, l'impostazione può essere applicata a una richiesta di reinizializzazione, reimpostazione o riconfigurazione. Potrebbe trattarsi di un'impostazione permanente o di un'impostazione utilizzata solo una volta, come indicato dal flag. Se si tratta di un'impostazione permanente, l'impostazione viene applicata ogni volta che l'elemento gestito viene reinizializzato, finché questo flag non viene reimpostato manualmente. Tuttavia, se è monouso, il flag viene cancellato automaticamente dopo l'applicazione delle impostazioni. Inoltre, se questo flag è impostato su un valore diverso da 0 (sconosciuto), ha la precedenza su una proprietà **SettingData** impostata su "default".
+Ad esempio, l'impostazione può essere applicata a una richiesta di reiniezione, reimpostazione e riconfigurazione. Può trattarsi di un'impostazione permanente o di un'impostazione usata una sola volta, come indicato dal flag . Se si tratta di un'impostazione permanente, l'impostazione viene applicata ogni volta che l'elemento gestito viene reinizializzato, fino a quando questo flag non viene reimpostato manualmente. Tuttavia, se si tratta di un singolo utilizzo, il flag viene cancellato automaticamente dopo l'applicazione delle impostazioni. Inoltre, se questo flag è impostato su un valore diverso da 0 (Sconosciuto), ha la precedenza su una proprietà **SettingData** impostata su "Default".
 
-Se l'elemento gestito è un computer e il valore di questo flag è "Next", l'impostazione sarà valida al successivo ripristino del sistema. A meno che il flag non venga modificato, verrà mantenuto per le successive reimpostazioni di sistema. Tuttavia, se questo flag è impostato su "è successivo per l'uso singolo", questa impostazione verrà usata una sola volta e il flag verrà reimpostato dopo tale operazione su 2 (non è successivo). Nell'esempio precedente, se il sistema viene riavviato in una rapida successione, l'impostazione non verrà usata al secondo riavvio.
+Se l'elemento gestito è un sistema informatico e il valore di questo flag è "Is Next", l'impostazione sarà effettiva alla successiva reimpostazione del sistema. E, a meno che questo flag non venga modificato, verrà mantenuto per le reimpostazioni di sistema successive. Tuttavia, se questo flag è impostato su "Is Next For Single Use", questa impostazione verrà usata una sola volta e il flag verrà reimpostato dopo su 2 (Is Not Next). Nell'esempio precedente, quindi, se il sistema viene riavviato in rapida successione, l'impostazione non verrà usata al secondo riavvio.
 
 <dt>
 
@@ -153,14 +153,14 @@ Se l'elemento gestito è un computer e il valore di questo flag è "Next", l'imp
 
 <span id="Is_Next"></span><span id="is_next"></span><span id="IS_NEXT"></span>
 
-**Successivo** (1)
+**Is Next** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Is_Not_Next"></span><span id="is_not_next"></span><span id="IS_NOT_NEXT"></span>
 
-**Non è Next** (2)
+**Non è successivo** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -177,7 +177,7 @@ Se l'elemento gestito è un computer e il valore di questo flag è "Next", l'imp
 **ManagedElement**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ Managed**
+Tipo di dati: **CIM \_ ManagedElement**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -190,7 +190,7 @@ Elemento gestito.
 
 </dd> <dt>
 
-**SettingData**
+**Impostazione dei dati**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **CIM \_ SettingData**
@@ -202,7 +202,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Dati dell'impostazione associati all'elemento.
+Dati di impostazione associati all'elemento.
 
 </dd> </dl>
 
@@ -214,8 +214,8 @@ Dati dell'impostazione associati all'elemento.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

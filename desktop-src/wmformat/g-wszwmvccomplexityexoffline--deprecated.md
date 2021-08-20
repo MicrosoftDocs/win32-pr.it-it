@@ -1,6 +1,6 @@
 ---
 title: g_wszWMVCComplexityExOffline
-description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec video e audio multimediale e API DSP). | g_wszWMVCComplexityExOffline
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec audio e video multimediali e DSP). | g_wszWMVCComplexityExOffline
 ms.assetid: 2887d621-8f23-4b2d-ac49-5b552e10ac3a
 keywords:
 - g_wszWMVCComplexityExOffline Windows Media Format
@@ -21,7 +21,7 @@ ms.locfileid: "117847735"
 ---
 # <a name="g_wszwmvccomplexityexoffline"></a>g \_ wszWMVCComplexityExOffline
 
-Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
+Per la documentazione corrente Windows codec multimediali e processori di segnale digitale, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
 
  
 

@@ -1,17 +1,17 @@
 ---
-title: continua (SM4-ASM)
+title: continue (sm4 - asm)
 description: Continua l'esecuzione all'inizio del ciclo corrente.
 ms.assetid: 3F0021B2-50D1-407C-9EE4-1CB679E184BF
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc53b023e998fcf131a387fc009cfc8cb133ff6a
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
-ms.translationtype: HT
+ms.openlocfilehash: 0abe95c445c6b339e950e051368bb6a80e6604df59e09934ecfff3b1e00a7830
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104993064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117909156"
 ---
-# <a name="continue-sm4---asm"></a>continua (SM4-ASM)
+# <a name="continue-sm4---asm"></a>continue (sm4 - asm)
 
 Continua l'esecuzione all'inizio del ciclo corrente.
 
@@ -22,13 +22,13 @@ Continua l'esecuzione all'inizio del ciclo corrente.
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Commenti
 
-**continue** può essere utilizzato solo all'interno di un [ciclo](loop--sm4---asm-.md) o di [EndLoop](endloop--sm4---asm-.md).
+**continue** può essere usato solo all'interno [di un ciclo](loop--sm4---asm-.md) o [endloop](endloop--sm4---asm-.md).
 
-Nell'esempio seguente viene illustrato come utilizzare l'istruzione **continue** .
+Nell'esempio seguente viene illustrato come usare **l'istruzione continue.**
 
 
 ```
@@ -46,7 +46,7 @@ Nell'esempio seguente viene illustrato come utilizzare l'istruzione **continue**
 
 
 
-Il formato del token contiene l'offset dell'istruzione del ciclo corrispondente nello shader come praticità.
+Il formato del token contiene l'offset dell'istruzione del ciclo corrispondente nello shader per praticità.
 
 Questa istruzione si applica alle fasi dello shader seguenti:
 
@@ -58,9 +58,9 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
 
 
- 
+ 
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -68,27 +68,27 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

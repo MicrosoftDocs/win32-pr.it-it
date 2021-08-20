@@ -1,5 +1,5 @@
 ---
-description: Specifica l'intervallo nominale delle informazioni sui colori in un tipo di supporto video.
+description: Specifica l'intervallo nominale delle informazioni sul colore in un tipo di supporto video.
 ms.assetid: 7b2b809e-aae4-401c-816a-626fb88f5f87
 title: MF_MT_VIDEO_NOMINAL_RANGE attributo (Mfapi.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "117876721"
 ---
 # <a name="mf_mt_video_nominal_range-attribute"></a>Attributo \_ MF MT \_ VIDEO \_ NOMINAL \_ RANGE
 
-Specifica l'intervallo nominale delle informazioni sui colori in un tipo di supporto video.
+Specifica l'intervallo nominale delle informazioni sul colore in un tipo di supporto video.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -27,11 +27,11 @@ La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 **Codificatori H.264/AVC:**
 
-Nel tipo di supporto di output è possibile impostare MF MT VIDEO NOMINAL RANGE con \_ \_ \_ \_ **MFNominalRange \_ 0 \_ 255** e **MFNominalRange \_ 16 \_ 235.**
+Nel tipo di supporto di output, MF MT VIDEO NOMINAL RANGE può essere impostato con \_ \_ \_ \_ **MFNominalRange \_ 0 \_ 255** e **MFNominalRange \_ 16 \_ 235.**
 
 Il codificatore H.264/AVC deve considerare **MFNominalRange \_ Unknown** **come MFNominalRange \_ 16 \_ 235.**
 
-Il codificatore H.264/AVC rifiuta un tipo di supporto di output quando MF MT VIDEO NOMINAL RANGE è impostato su \_ \_ \_ \_ **MFNominalRange \_ 48 \_ 208,** **MFNominalRange \_ 64 \_ 127** o qualsiasi altro valore non definito in [**MFNominalRange.**](/windows/desktop/api/mfobjects/ne-mfobjects-mfnominalrange)
+Il codificatore H.264/AVC deve rifiutare un tipo di supporto di output quando MF MT VIDEO NOMINAL RANGE è impostato su \_ \_ \_ \_ **MFNominalRange \_ 48 \_ 208,** **MFNominalRange \_ 64 \_ 127** o qualsiasi altro valore non definito in [**MFNominalRange.**](/windows/desktop/api/mfobjects/ne-mfobjects-mfnominalrange)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,8 +39,8 @@ Il codificatore H.264/AVC rifiuta un tipo di supporto di output quando MF MT VID
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows App desktop vista \[ \| app UWP\]<br/>                              |
-| Server minimo supportato<br/> | Windows App desktop di Server 2008 \[ \| app UWP\]<br/>                        |
+| Client minimo supportato<br/> | Windows App desktop Di Vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 \[ \|\]<br/>                        |
 | Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
@@ -49,7 +49,7 @@ Il codificatore H.264/AVC rifiuta un tipo di supporto di output quando MF MT VID
 
 <dl> <dt>
 
-[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)

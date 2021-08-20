@@ -1,5 +1,5 @@
 ---
-description: Rappresenta una descrizione di una risorsa di trama.
+description: Rappresenta una descrizione di una risorsa trama.
 MS-HAID: vspixengine.PixEngineTextureDescriptor
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c7e7afe8ad9a0f5b2660872f0301dd9a2d6a0ddd
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e5725efaca9ccebb8e3cbcdee85bce55ea1dcd4b1e99cf2cf798d2f1678a2c28
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104521114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117905181"
 ---
 # <a name="span-idvspixenginepixenginetexturedescriptorspanpixenginetexturedescriptor-structure"></a><span id="vspixengine.pixenginetexturedescriptor"></span>Struttura PixEngineTextureDescriptor
 
-Rappresenta una descrizione di una risorsa di trama.
+Rappresenta una descrizione di una risorsa trama.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,16 +44,16 @@ Descrive il formato della trama.
 Numero di mipmap associati alla trama.
 
 **arrayCount**  
-Quando la trama è una matrice di trama, il numero di trame nella matrice.
+Quando la trama è una matrice di trame, il numero di trame nella matrice.
 
-**profondità**  
+**Profondità**  
 
 **sampleCount**  
 Numero di campioni associati alla trama.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

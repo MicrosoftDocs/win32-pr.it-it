@@ -4,12 +4,12 @@ ms.assetid: 552ade43-e792-45f2-9b16-f4dd1b4ae2f9
 title: System.Contact.HomeAddress3PostalCode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0de94510fc7f7b84ce0f12a4b52e471a74777e6f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 79b35d948de31672e912fcdda53c6f2b6e639aed8cda4a8260a2a7236711afd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117684870"
 ---
 # <a name="systemcontacthomeaddress3postalcode"></a>System.Contact.HomeAddress3PostalCode
 

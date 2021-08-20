@@ -1,67 +1,67 @@
 ---
-description: Esplora risorse controlla la creazione di un connettore di ricerca per un gestore di protocollo tramite le voci della chiave del registro di sistema. Tramite il registro di sistema, gli implementatori e le terze parti possono consentire ai gestori di protocolli nuovi e legacy di partecipare alla ricerca di Windows 7.
+description: Windows Explorer controlla la creazione di un connettore di ricerca per un gestore di protocollo tramite le voci della chiave del Registro di sistema. Tramite il Registro di sistema sia gli implementatori che le terze parti possono consentire ai gestori di protocollo nuovi e legacy di partecipare Windows 7 Search.
 ms.assetid: 79abdcbc-ba60-43bd-9895-18ee8b6c5829
 title: Creazione di un connettore di ricerca per un gestore di protocollo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57b43fd7eac53ca2c89d6c8b0d2cd36fd813e63a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9525c77d2d10a2692f091f382d3e9c4a2f3656c427879d8f3a8ac9733a134d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117681175"
 ---
 # <a name="creating-a-search-connector-for-a-protocol-handler"></a>Creazione di un connettore di ricerca per un gestore di protocollo
 
-Esplora risorse controlla la creazione di un connettore di ricerca per un gestore di protocollo tramite le voci della chiave del registro di sistema. Tramite il registro di sistema, gli implementatori e le terze parti possono consentire ai gestori di protocolli nuovi e legacy di partecipare alla ricerca di Windows 7.
+Windows Explorer controlla la creazione di un connettore di ricerca per un gestore di protocollo tramite le voci della chiave del Registro di sistema. Tramite il Registro di sistema sia gli implementatori che le terze parti possono consentire ai gestori di protocollo nuovi e legacy di partecipare Windows 7 Search.
 
-Questo argomento è organizzato nel modo seguente:
+Questo argomento è organizzato come segue:
 
 -   [Informazioni sui connettori di ricerca per i gestori di protocollo in Windows 7](#about-search-connectors-for-protocol-handlers-in-windows-7)
--   [Abilitazione di gestori di protocollo per partecipare alla ricerca](#enabling-protocol-handlers-to-participate-in-search)
+-   [Abilitazione dei gestori di protocollo per la partecipazione alla ricerca](#enabling-protocol-handlers-to-participate-in-search)
     -   [Disabilitazione della creazione del connettore di ricerca del gestore di protocollo](#disabling-protocol-handler-search-connector-creation)
-    -   [Personalizzazione del nome, della descrizione o del FolderType per un connettore di ricerca del gestore di protocollo](#customizing-the-name-description-or-foldertype-for-a-protocol-handler-search-connector)
-    -   [Uso del reindirizzamento delle stringhe del registro di sistema](#using-registry-string-redirection)
+    -   [Personalizzazione del nome, della descrizione o del tipo di cartella per un connettore di ricerca del gestore di protocollo](#customizing-the-name-description-or-foldertype-for-a-protocol-handler-search-connector)
+    -   [Uso del reindirizzamento delle stringhe del Registro di sistema](#using-registry-string-redirection)
     -   [Ripristino di un connettore di ricerca del gestore di protocollo eliminato](#restoring-a-deleted-protocol-handler-search-connector)
 -   [Risorse aggiuntive](#additional-resources)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="about-search-connectors-for-protocol-handlers-in-windows-7"></a>Informazioni sui connettori di ricerca per i gestori di protocollo in Windows 7
 
-In Windows 7, le ricerche dal menu **Start** o da Esplora risorse includono solo i file nelle posizioni indicizzate e gli elementi non file System come gli archivi dati remoti o gli elementi del gestore di protocollo con un connettore di ricerca. Oltre a includere gli elementi del gestore di protocollo nell'ambito del menu **Start** e delle ricerche della shell, il connettore di ricerca Abilita il menu **Start** per raggruppare gli elementi del gestore di protocollo nei risultati del menu **Start** , con il vantaggio risultante che l'utente può fare clic sull'intestazione di gruppo e visualizzare i risultati solo dal gestore del protocollo. In alternativa, l'utente può passare alla cartella **ricerche** , aprire il file del connettore di ricerca ed eseguire una ricerca che includa solo gli elementi del gestore di protocollo specifico associato al connettore di ricerca.
+In Windows 7 le ricerche nel menu **Start** o Windows Explorer includono solo i file nei percorsi indicizzati e gli elementi non file system, ad esempio archivi dati remoti o elementi del gestore del protocollo che dispongono di un connettore di ricerca. Oltre a includere le voci del gestore di protocollo nell'ambito del menu **Start** e delle ricerche shell, il connettore di ricerca consente al menu **Start** di raggruppare le voci del gestore di protocollo nei risultati del menu **Start,** con il vantaggio risultante che l'utente può fare clic sull'intestazione del gruppo e visualizzare i risultati solo dal gestore del protocollo. In alternativa, l'utente  può passare alla cartella Ricerche, aprire il file del connettore di ricerca ed eseguire una ricerca che include solo gli elementi del gestore del protocollo specifico associato a tale connettore di ricerca.
 
-Quando un utente avvia per la prima volta un'applicazione che registra un gestore di protocollo, Esplora risorse genera un file del connettore di ricerca (con estensione searchConnector-MS) per il gestore di protocollo nella cartella **ricerche** dell'utente. Le applicazioni con gestori di protocollo possono scegliere di disabilitare questo comportamento o personalizzare il nome e la descrizione del connettore di ricerca del gestore del protocollo.
+Quando un utente avvia per la prima volta un'applicazione che registra un gestore di protocollo, Windows Explorer genera un file del connettore di ricerca (.searchConnector-ms) per il gestore del protocollo nella cartella **Ricerche** dell'utente. Le applicazioni con gestori di protocollo possono scegliere di disabilitare questo comportamento o personalizzare il nome e la descrizione del connettore di ricerca del gestore di protocollo.
 
 > [!Note]  
-> Il percorso della cartella **ricerche** dell'utente è% UserProfile% \\ searchs oppure FOLDERID \_ SavedSearches. Il GUID per FOLDERID \_ SavedSearches è {7d1d3a04-Debb-4115-95cf-2f29da2920da}.
+> Il percorso della cartella **Ricerche** dell'utente è %userprofile% \\ Ricerche o FOLDERID \_ SavedSearches. Il GUID per FOLDERID \_ SavedSearches è {7d1d3a04-debb-4115-95cf-2f29da2920da}.
 
  
 
-Esplora risorse consente di controllare la creazione di un connettore di ricerca per un gestore di protocollo tramite le voci della chiave del registro di sistema descritte nelle seguenti sezioni:
+Windows Explorer controlla la creazione di un connettore di ricerca per un gestore di protocollo tramite le voci della chiave del Registro di sistema descritte nelle sezioni seguenti:
 
--   [Abilitazione di gestori di protocollo per partecipare alla ricerca](#enabling-protocol-handlers-to-participate-in-search)
+-   [Abilitazione dei gestori di protocollo per la partecipazione alla ricerca](#enabling-protocol-handlers-to-participate-in-search)
 -   [Disabilitazione della creazione del connettore di ricerca del gestore di protocollo](#disabling-protocol-handler-search-connector-creation)
--   [Personalizzazione del nome, della descrizione o del FolderType per un connettore di ricerca del gestore di protocollo](#customizing-the-name-description-or-foldertype-for-a-protocol-handler-search-connector)
+-   [Personalizzazione del nome, della descrizione o del tipo di cartella per un connettore di ricerca del gestore di protocollo](#customizing-the-name-description-or-foldertype-for-a-protocol-handler-search-connector)
 -   [Ripristino di un connettore di ricerca del gestore di protocollo eliminato](#restoring-a-deleted-protocol-handler-search-connector)
 
 > [!Note]  
-> Non esiste alcun mezzo programmatico per creare un connettore di ricerca per un gestore di protocollo. Devono essere configurate tramite il registro di sistema.
+> Non esistono mezzi a livello di codice per creare un connettore di ricerca per un gestore di protocollo. Devono essere configurati tramite il Registro di sistema.
 
  
 
-## <a name="enabling-protocol-handlers-to-participate-in-search"></a>Abilitazione di gestori di protocollo per partecipare alla ricerca
+## <a name="enabling-protocol-handlers-to-participate-in-search"></a>Abilitazione dei gestori di protocollo per la partecipazione alla ricerca
 
-Le chiavi del registro di sistema e i relativi valori possibili sono illustrati nella tabella seguente. Un gestore di protocollo può popolare alcune o tutte queste chiavi del registro di sistema dove <protocol> viene sostituito con il nome effettivo del protocollo, ad esempio MAPI, file o CSC.
+Le chiavi del Registro di sistema e i relativi valori possibili sono descritti nella tabella seguente. Un gestore di protocollo può popolare alcune o tutte queste chiavi del Registro di sistema in cui viene sostituito con il nome effettivo del protocollo, ad esempio <protocol> MAPI, file o csc.
 
 
 
 | Chiave del Registro di sistema                                                                                                                 | Valori possibili                                                                                                                     | Tipo       | Commenti                                                                                                                                                                                                                                                                                                                                                  |
 |------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| HKEY \_ Local \_ Machine \\ software \\ Microsoft \\ Windows Search \\ PHSearchConnectors \\ <protocol> \\ Version                     | Non esiste (impostazione predefinita). In caso contrario, è maggiore o uguale a 1.                                                                               | REG \_ DWORD | Questo valore viene usato per rilevare le modifiche alle registrazioni dei modelli di percorso per le radici di ricerca che sono già state elaborate. Se non esiste, utilizzare 0 come valore predefinito. In alternativa, incrementare la versione per informare Esplora risorse che è necessario rigenerare il connettore di ricerca perché è stata installata una versione più recente del gestore del protocollo. |
-| HKEY \_ \_ computer locale \\ software \\ Microsoft \\ Windows Search \\ PHSearchConnectors \\ <protocol> \\ DoNotCreateSearchConnectors | Non esiste (impostazione predefinita). In caso contrario, impostare su 1.                                                                                         | REG \_ DWORD | Se non esiste, creare un file con estensione searchconnector-ms nella cartella ricerche. Se 1, contrassegnare come elaborata e non eseguire alcuna operazione.                                                                                                                                                                                                                                   |
-| HKEY \_ Local \_ Machine \\ software \\ Microsoft \\ Windows Search \\ PHSearchConnectors \\ <protocol> \\ default \\ Description        | Stringa localizzabile che contiene la descrizione del connettore di ricerca.                                                              | REG \_ SZ    | facoltativo. Viene usato nell'elemento Description del file con estensione searchconnector-ms.                                                                                                                                                                                                                                                                          |
-| HKEY \_ Local \_ Machine \\ software \\ Microsoft \\ Windows Search \\ PHSearchConnectors \\ <protocol> \\ \\ nome predefinito               | Stringa localizzata per assegnare un nome al connettore di ricerca. Usato come nome del file con estensione searchconnector-ms.                                    | REG \_ SZ    | Ogni percorso deve avere un nome univoco. In assenza di questo valore, verrà utilizzato il nome visualizzato fornito dall' [interfaccia IShellFolder](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) del gestore del protocollo.                                                                                                                             |
-| HKEY \_ Local \_ Machine \\ software \\ Microsoft \\ Windows Search \\ PHSearchConnectors \\ <protocol> \\ default \\ FolderType         | GUID che identifica il [FOLDERTYPEID](../shell/foldertypeid.md) da applicare al connettore di ricerca. | REG \_ SZ    | facoltativo. Usato nell'elemento folderType del file con estensione searchconnector-ms per indicare quali modelli devono essere usati per visualizzare i risultati. Ad esempio, il valore GUID di FOLDERTYPEID \_ Documents.                                                                                                                                                            |
+| HKEY \_ LOCAL MACHINE Software Microsoft Windows ricerca \_ \\ \\ \\ \\ phSearchConnectors \\ <protocol> \\ versione                     | Non esiste (impostazione predefinita). In caso contrario, è 1 o maggiore di 1.                                                                               | REG \_ DWORD | Questo valore viene usato per rilevare le modifiche alle registrazioni del modello di posizione per le radici di ricerca già elaborate. Se non esiste, usare 0 come valore predefinito. In alternativa, incrementare la versione per informare Windows Explorer che il connettore di ricerca deve essere rigenerato perché è stata installata una versione più recente del gestore del protocollo. |
+| HKEY \_ LOCAL MACHINE Software Microsoft Windows \_ \\ \\ \\ \\ PHSearchConnectors \\ <protocol> \\ DoNotCreateSearchConnectors | Non esiste (impostazione predefinita). In caso contrario, impostare su 1.                                                                                         | REG \_ DWORD | Se non esiste, creare un file con estensione searchconnector-ms nella cartella Ricerche. Se 1, contrassegnare come elaborato e non eseguire alcuna operazione.                                                                                                                                                                                                                                   |
+| HKEY \_ LOCAL MACHINE Software Microsoft Windows ricerca \_ \\ \\ \\ \\ PHSearchConnectors \\ <protocol> \\ Descrizione \\ predefinita        | Stringa localizzabile contenente la descrizione del connettore di ricerca.                                                              | REG \_ SZ    | facoltativo. Viene usato nell'elemento Description del file .searchconnector-ms.                                                                                                                                                                                                                                                                          |
+| HKEY \_ LOCAL MACHINE Software Microsoft Windows ricerca \_ \\ \\ \\ \\ PHSearchConnectors \\ <protocol> \\ Nome \\ predefinito               | Stringa localizzata per assegnare un nome al connettore di ricerca. Usato come nome del file con estensione searchconnector-ms.                                    | REG \_ SZ    | Ogni località deve avere un nome univoco. In assenza di questo valore, verrà usato il nome visualizzato fornito dall'interfaccia [IShellFolder](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) del gestore del protocollo.                                                                                                                             |
+| HKEY \_ LOCAL MACHINE Software Microsoft Windows \_ \\ \\ \\ \\ PhSearchConnectors \\ <protocol> \\ Default \\ FolderType         | GUID che identifica [folderTYPEID](../shell/foldertypeid.md) da applicare al connettore di ricerca. | REG \_ SZ    | facoltativo. Usato nell'elemento folderType del file .searchconnector-ms per indicare i modelli da usare per visualizzare i risultati. Ad esempio, il valore GUID di FOLDERTYPEID \_ Documents.                                                                                                                                                            |
 
 
 
@@ -69,9 +69,9 @@ Le chiavi del registro di sistema e i relativi valori possibili sono illustrati 
 
 ### <a name="disabling-protocol-handler-search-connector-creation"></a>Disabilitazione della creazione del connettore di ricerca del gestore di protocollo
 
-Se l'applicazione espone elementi tramite un gestore di protocollo per l'uso nell'applicazione stessa e non si vuole esporre gli elementi tramite la shell (nel menu **Start** e nelle ricerche in Esplora risorse), è necessario disabilitare la creazione di un connettore di ricerca per il gestore di protocollo.
+Se l'applicazione espone elementi tramite un gestore di protocollo per l'uso nell'applicazione stessa e non si vogliono esporre gli elementi tramite shell (nel menu **Start** e nelle ricerche di esplora Windows), è necessario disabilitare la creazione di un connettore di ricerca per il gestore del protocollo.
 
-Per disabilitare la creazione del connettore di ricerca, impostare DoNotCreateSearchConnectors su 0x00000001 (1), come illustrato nell'esempio di chiave del registro di sistema seguente.
+Per disabilitare la creazione del connettore di ricerca, impostare DoNotCreateSearchConnectors su 0x00000001(1), come illustrato nell'esempio di chiave del Registro di sistema seguente.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -83,15 +83,15 @@ HKEY_LOCAL_MACHINE
                   DoNotCreateSearchConnectors
 ```
 
-Se DoNotCreateSearchConnectors è impostato su 1, è consigliabile esporre la proprietà [System. Shell. OmitFromView](/windows/desktop/properties/props-system-shell-omitfromview) per ogni elemento esposto dal gestore di protocollo e impostare il valore di questa proprietà su **true**. In questo modo, gli elementi del gestore di protocollo non verranno visualizzati nel gruppo **file** del menu **Start** .
+Se DoNotCreateSearchConnectors è impostato su 1, è consigliabile esporre la proprietà [System.Shell.OmitFromView](/windows/desktop/properties/props-system-shell-omitfromview) in ogni elemento esposto dal gestore del protocollo e impostare il valore di questa proprietà su **TRUE.** In questo modo, gli elementi del gestore del protocollo non verranno visualizzati nel gruppo File **del** menu **Start.**
 
-Se DoNotCreateSearchConnectors è presente e impostato su zero, Esplora risorse creerà un connettore di ricerca per il gestore di protocollo e gli elementi del gestore di protocollo verranno restituiti nel menu **Start** e nelle ricerche in Esplora risorse.
+Se DoNotCreateSearchConnectors è presente e impostato su zero, Windows Explorer creerà un connettore di ricerca per il gestore del protocollo e gli elementi del gestore del protocollo verranno restituiti in nel menu **Start** e nelle ricerche Windows Explorer.
 
-### <a name="customizing-the-name-description-or-foldertype-for-a-protocol-handler-search-connector"></a>Personalizzazione del nome, della descrizione o del FolderType per un connettore di ricerca del gestore di protocollo
+### <a name="customizing-the-name-description-or-foldertype-for-a-protocol-handler-search-connector"></a>Personalizzazione del nome, della descrizione o del tipo di cartella per un connettore di ricerca del gestore di protocollo
 
-Il nome del connettore di ricerca viene usato non solo per identificare il connettore di ricerca nella cartella **ricerche** , ma come l'intestazione di gruppo per i risultati in ricerche nel menu **Start** . È quindi importante fornire un nome descrittivo per il connettore di ricerca. Se nella chiave del registro di sistema non viene specificato un nome, per impostazione predefinita Esplora risorse usa il nome fornito dall' [interfaccia IShellFolder](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) per la radice di ricerca del gestore di protocollo e la descrizione vuota. È possibile eseguire l'override del nome predefinito tramite una voce della chiave del registro di sistema senza dover rinominare l'interfaccia IShellFolder. Anche se non è visibile come nome del connettore di ricerca, è anche possibile eseguire l'override della descrizione per il connettore di ricerca fornendo una descrizione personalizzata.
+Il nome del connettore di ricerca viene  usato non solo per identificare il connettore di ricerca nella cartella Ricerche, ma anche come intestazione di gruppo per i risultati nelle ricerche nel menu **Start.** È quindi importante specificare un nome descrittivo per il connettore di ricerca. Se non viene specificato un nome nella chiave del Registro di sistema, per impostazione predefinita Windows Explorer usa il nome fornito dall'interfaccia [IShellFolder](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) per la radice di ricerca del gestore del protocollo e la descrizione vuota. È possibile eseguire l'override del nome predefinito tramite una voce della chiave del Registro di sistema senza dover rinominare l'interfaccia IShellFolder. Anche se non è visibile come nome del connettore di ricerca, è anche possibile eseguire l'override della descrizione per il connettore di ricerca specificando la propria descrizione.
 
-Per eseguire l'override del nome o della descrizione predefinita, impostare le voci come illustrato nell'esempio di registro di sistema seguente.
+Per eseguire l'override del nome o della descrizione predefinita, impostare le voci come illustrato nell'esempio del Registro di sistema seguente.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -105,7 +105,7 @@ HKEY_LOCAL_MACHINE
                      Description
 ```
 
-Inoltre, la voce FolderType può essere impostata su uno dei GUID di [FOLDERTYPEID](../shell/foldertypeid.md) . Il valore deve essere il GUID effettivo e non il nome. Ad esempio, {94d6ddcc-4a68-4175-A374-bd584a510b78} anziché FOLDERTYPEID \_ Music. Il GUID di un FOLDERTYPEID può essere ottenuto nel file di intestazione Shlguid. h nella [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx).
+Inoltre, la voce FolderType può essere impostata su uno dei [GUID FOLDERTYPEID.](../shell/foldertypeid.md) Il valore deve essere il GUID effettivo e non il relativo nome. Ad esempio, {94d6ddcc-4a68-4175-a374-bd584a510b78} anziché FOLDERTYPEID \_ Musica. Il GUID per folderTYPEID può essere ottenuto nel file di intestazione Shlguid.h in [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx).
 
 ```
 HKEY_LOCAL_MACHINE
@@ -118,11 +118,11 @@ HKEY_LOCAL_MACHINE
                      FolderType = {94d6ddcc-4a68-4175-a374-bd584a510b78}
 ```
 
-### <a name="using-registry-string-redirection"></a>Uso del reindirizzamento delle stringhe del registro di sistema
+### <a name="using-registry-string-redirection"></a>Uso del reindirizzamento delle stringhe del Registro di sistema
 
-È possibile usare una [stringa reindirizzata](../intl/using-registry-string-redirection.md) per verificare che il nome fornito per il connettore di ricerca possa essere localizzato. È possibile includere stringhe localizzabili per le chiavi del registro di sistema Name e Description anziché immettere la stringa effettiva nel registro di sistema.
+È possibile usare una [stringa reindirizzata](../intl/using-registry-string-redirection.md) per assicurarsi che il nome specificato per il connettore di ricerca possa essere localizzato. È possibile includere stringhe localizzabili per le chiavi del Registro di sistema name e description anziché immettere la stringa effettiva nel Registro di sistema.
 
-Per includere una stringa localizzabile per i valori del nome o della descrizione, impostare il valore come illustrato nell'esempio di chiave del registro di sistema seguente.
+Per includere una stringa localizzabile per i valori Name o Description, impostare il valore come illustrato nell'esempio di chiave del Registro di sistema seguente.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -134,24 +134,24 @@ HKEY_LOCAL_MACHINE
                   Name = @dllname.dll,-resourceID
 ```
 
-La stringa localizzabile assume il formato seguente:
+La stringa localizzabile ha il formato seguente:
 
 -   @dllname.dll,-resourceID, dove:
     -   @dllname.dll è il percorso della DLL che contiene la risorsa stringa
-    -   resourceID è l'ID di risorsa Integer della risorsa stringa
+    -   resourceID è l'ID risorsa integer della risorsa stringa
 
-Il formato di una stringa indiretta e di una stringa indiretta aggiunta con un modificatore di versione è descritto nella [funzione SHLoadIndirectString](/windows/win32/api/shlwapi/nf-shlwapi-shloadindirectstring).
+Il formato per una stringa indiretta e una stringa indiretta accodati con un modificatore di versione è descritto nella [funzione SHLoadIndirectString](/windows/win32/api/shlwapi/nf-shlwapi-shloadindirectstring).
 
 ### <a name="restoring-a-deleted-protocol-handler-search-connector"></a>Ripristino di un connettore di ricerca del gestore di protocollo eliminato
 
-Poiché i connettori di ricerca sono file nel computer dell'utente, possono essere eliminati erroneamente. Per ripristinare tutti i connettori di ricerca del gestore di protocollo eliminati, ripristinare le librerie predefinite. A tale scopo, aprire Esplora risorse, fare clic con il pulsante destro del mouse sulla cartella **librerie** e quindi scegliere **Ripristina librerie predefinite**.
+Poiché i connettori di ricerca sono file nel computer dell'utente, possono essere erroneamente eliminati. Per ripristinare tutti i connettori di ricerca del gestore di protocollo eliminati, ripristinare le librerie predefinite. A tale scopo, aprire esplora Windows, fare clic con il pulsante destro del mouse sulla **cartella Librerie** e quindi scegliere **Ripristina librerie predefinite**.
 
-![screenshot che mostra l'opzione di menu Ripristina librerie predefinite](images/libraries.png)
+![Screenshot che mostra l'opzione di menu Ripristina librerie predefinite](images/libraries.png)
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
--   [IShellItem:: GetDisplayName](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellitem-getdisplayname)
--   [\_NORMALDISPLAY SIGDN](/windows/win32/api/shobjidl_core/ne-shobjidl_core-sigdn)
+-   [IShellItem::GetDisplayName](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellitem-getdisplayname)
+-   [SIGDN \_ NORMALDISPLAY](/windows/win32/api/shobjidl_core/ne-shobjidl_core-sigdn)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -166,13 +166,13 @@ Poiché i connettori di ricerca sono file nel computer dell'utente, possono esse
 [Sviluppo di gestori di protocollo](-search-3x-wds-phaddins.md)
 </dt> <dt>
 
-[Notifica dell'indice delle modifiche](-search-3x-wds-notifyingofchanges.md)
+[Notifica delle modifiche all'indice](-search-3x-wds-notifyingofchanges.md)
 </dt> <dt>
 
 [Aggiunta di icone e menu di scelta rapida](-search-3x-wds-ph-ui-extensions.md)
 </dt> <dt>
 
-[Esempio di codice: estensioni della Shell per i gestori di protocollo](-search-3x-wds-ph-ui-samplecode.md)
+[Esempio di codice: estensioni della shell per gestori di protocollo](-search-3x-wds-ph-ui-samplecode.md)
 </dt> <dt>
 
 [Installazione e registrazione di gestori di protocollo](-search-3x-wds-ph-install-registration.md)

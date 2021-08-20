@@ -1,7 +1,7 @@
 ---
-description: Riquadri orizzontalmente tutte le finestre sul desktop. Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e selezionare Mostra Windows in pila.
+description: Affianca orizzontalmente tutte le finestre sul desktop. Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e scegliere Mostra finestre in pila.
 ms.assetid: 85785510-6B75-450a-A9BB-6C3B4F6194E2
-title: Metodo IShellDispatch. TileHorizontally (shldisp. h)
+title: Metodo IShellDispatch.TileHorizontally (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 06491f797de4a9fcb5c431d85cff71fbc78d605c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: e83870abcec849b9e8bf5a2583b6e25d4e2a2280ead4df9c4979014149a643ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117678445"
 ---
-# <a name="ishelldispatchtilehorizontally-method"></a>IShellDispatch. TileHorizontally, metodo
+# <a name="ishelldispatchtilehorizontally-method"></a>Metodo IShellDispatch.TileHorizontally
 
-Riquadri orizzontalmente tutte le finestre sul desktop. Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e selezionare **Mostra Windows in pila**.
+Affianca orizzontalmente tutte le finestre sul desktop. Questo metodo ha lo stesso effetto del clic con il pulsante destro del mouse sulla barra delle applicazioni e della **selezione di Mostra finestre in pila.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,13 +57,13 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene implementato e accessibile tramite il metodo [**Shell. TileHorizontally**](shell-tilehorizontally.md) .
+Questo metodo viene implementato e accessibile tramite il [**metodo Shell.TileHorizontally.**](shell-tilehorizontally.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'utilizzo di **TileHorizontally** in JScript, VBScript e Visual Basic.
+L'esempio seguente illustra l'uso di **TileHorizontally** in JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -79,7 +79,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -119,11 +119,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

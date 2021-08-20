@@ -1,7 +1,7 @@
 ---
-description: Ottiene un elenco di formati pixel non compressi di cui è possibile eseguire il rendering utilizzando un profilo di accelerazione video DirectX (DXVA) specificato.
+description: Ottiene un elenco di formati pixel non compressi di cui è possibile eseguire il rendering usando un profilo DXVA (DirectX Video Acceleration) specificato.
 ms.assetid: 7c69ea5f-6054-4430-95b5-820db6854fc0
-title: 'Metodo IDirect3DVideoDevice9:: GetUncompressedDXVAFormats (DXVA. h)'
+title: Metodo IDirect3DVideoDevice9::GetUncompressedDXVAFormats (Dxva.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - dxva.h
-ms.openlocfilehash: 94784ac5fe164d571a8a02e4170990f8ce06a4a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d7f27060d0c9e43f1852c86697826986c0c095c14a19fbfafa53978e96cbe79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104345076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117878798"
 ---
-# <a name="idirect3dvideodevice9getuncompresseddxvaformats-method"></a>Metodo IDirect3DVideoDevice9:: GetUncompressedDXVAFormats
+# <a name="idirect3dvideodevice9getuncompresseddxvaformats-method"></a>Metodo IDirect3DVideoDevice9::GetUncompressedDXVAFormats
 
-Ottiene un elenco di formati pixel non compressi di cui è possibile eseguire il rendering utilizzando un profilo di accelerazione video DirectX (DXVA) specificato.
+Ottiene un elenco di formati pixel non compressi di cui è possibile eseguire il rendering usando un profilo DXVA (DirectX Video Acceleration) specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,35 +44,35 @@ HRESULT GetUncompressedDXVAFormats(
 *pGuid* 
 </dt> <dd>
 
-Puntatore a un GUID che specifica il profilo DXVA. Per ottenere un elenco dei profili supportati, chiamare [**IDirect3DVideoDevice9:: GetDXVAGuids**](idirect3dvideodevice9-getdxvaguids.md).
+Puntatore a un GUID che specifica il profilo DXVA. Per ottenere un elenco dei profili supportati, chiamare [**IDirect3DVideoDevice9::GetDXVAGuids**](idirect3dvideodevice9-getdxvaguids.md).
 
 </dd> <dt>
 
 *pNumFormats* 
 </dt> <dd>
 
-In input, specifica il numero di elementi nella matrice *pFormats* . Se *pFormats* è **null**, il valore di `*pNumFormats` deve essere zero.
+Nell'input specifica il numero di elementi nella *matrice pFormats.* Se *pFormats* è **NULL,** il valore di `*pNumFormats` deve essere zero.
 
-Nell'output, se *pFormats* è **null**, *pNumFormats* riceve il numero di formati di pixel supportati. In caso contrario, *pNumFormats* riceve il numero effettivo di formati pixel copiati nella matrice *pFormats* .
+Nell'output, *se pFormats* **è NULL,** *pNumFormats* riceve il numero di formati pixel supportati. In caso *contrario, pNumFormats* riceve il numero effettivo di formati di pixel copiati nella *matrice pFormats.*
 
 </dd> <dt>
 
 *pFormats* 
 </dt> <dd>
 
-Indirizzo di una matrice di valori **D3DFORMAT** o **null**. Se il valore è diverso da **null**, la matrice riceve un elenco di formati pixel.
+Indirizzo di una matrice di **valori D3DFORMAT** o **NULL.** Se il valore è diverso **da NULL,** la matrice riceve un elenco di formati pixel.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Chiamare questo metodo due volte. Alla prima chiamata, impostare *pFormats* su **null**. Il parametro *pNumFormats* riceve il numero di formati. Allocare una matrice **D3DFORMAT** con le dimensioni richieste e chiamare di nuovo il metodo. Questa volta, impostare *pFormats* sull'indirizzo della matrice. Il metodo riempie la matrice con l'elenco dei formati pixel.
+Chiamare questo metodo due volte. Nella prima chiamata impostare *pFormats* su **NULL.** Il *parametro pNumFormats* riceve il numero di formati. Allocare **una matrice D3DFORMAT** con le dimensioni richieste e chiamare di nuovo il metodo . Questa volta, impostare *pFormats* sull'indirizzo della matrice. Il metodo riempie la matrice con l'elenco di formati di pixel.
 
-Il driver deve restituire i formati in ordine di preferenza decrescente, con il formato preferito elencato per primo.
+Il driver deve restituire i formati in ordine decrescente di preferenza, con il formato preferito elencato per primo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,9 +80,9 @@ Il driver deve restituire i formati in ordine di preferenza decrescente, con il 
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                    |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                              |
-| Intestazione<br/>                   | <dl> <dt>DXVA. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                              |
+| Intestazione<br/>                   | <dl> <dt>Dxva.h</dt> </dl> |
 
 
 

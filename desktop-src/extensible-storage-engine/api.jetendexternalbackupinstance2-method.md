@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetEndExternalBackupInstance2'
-title: API. JetEndExternalBackupInstance2, metodo
+description: 'Altre informazioni su: Metodo Api.JetEndExternalBackupInstance2'
+title: Metodo Api.JetEndExternalBackupInstance2
 TOCTitle: 'JetEndExternalBackupInstance2 method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetEndExternalBackupInstance2(Microsoft.Isam.Esent.Interop.JET_INSTANCE,Microsoft.Isam.Esent.Interop.EndExternalBackupGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetendexternalbackupinstance2(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 71a405c5e0ba3a398071cc317e0d42dd98c4953d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d31b249890c844c7df0371e0848d35a63b491bc7a9e69edc679b6a07c231698d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117903444"
 ---
-# <a name="apijetendexternalbackupinstance2-method"></a>API. JetEndExternalBackupInstance2, metodo
+# <a name="apijetendexternalbackupinstance2-method"></a>Metodo Api.JetEndExternalBackupInstance2
 
-Termina una sessione di backup esterna. Questa API è l'ultima API in una serie di API che devono essere chiamate per eseguire un backup online (non basato su VSS) riuscito.
+Termina una sessione di backup esterna. Questa API è l'ultima API di una serie di API che devono essere chiamate per eseguire correttamente un backup online (non basato su VSS).
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,16 +62,16 @@ public static void JetEndExternalBackupInstance2(
 #### <a name="parameters"></a>Parametri
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    Istanza per la quale terminare il backup.
+    Istanza per cui terminare il backup.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. EndExternalBackupGrbit](./endexternalbackupgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.EndExternalBackupGrbit](./endexternalbackupgrbit-enumeration.md)  
     
-    Opzioni che specificano il modo in cui è terminato il backup.
+    Opzioni che specificano la modalità di fine del backup.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -79,6 +79,6 @@ public static void JetEndExternalBackupInstance2(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

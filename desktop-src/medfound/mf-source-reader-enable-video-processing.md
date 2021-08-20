@@ -1,19 +1,19 @@
 ---
-description: Consente l'elaborazione video da parte del lettore di origine.
+description: Abilita l'elaborazione video da parte del lettore di origine.
 ms.assetid: b1ec1c0e-8042-4486-822f-eb106577c0b1
-title: Attributo MF_SOURCE_READER_ENABLE_VIDEO_PROCESSING (Mfreadwrite. h)
+title: MF_SOURCE_READER_ENABLE_VIDEO_PROCESSING attributo (Mfreadwrite.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bfcbb076d5f42e784277dbd78101b473ec33905
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 259bc463953fdd3e69ddec9fb479921632f97bbe658747aa0e051eb4e78a14c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104484805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117691476"
 ---
-# <a name="mf_source_reader_enable_video_processing-attribute"></a>MF \_ source \_ Reader \_ Abilita \_ l' \_ attributo elaborazione video
+# <a name="mf_source_reader_enable_video_processing-attribute"></a>Attributo MF \_ SOURCE READER ENABLE VIDEO \_ \_ \_ \_ PROCESSING
 
-Consente l'elaborazione video da parte del [lettore di origine](source-reader.md).
+Abilita l'elaborazione video da [parte del lettore di origine.](source-reader.md)
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -32,25 +32,25 @@ Consente l'elaborazione video da parte del [lettore di origine](source-reader.md
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="remarks"></a>Commenti
 
-Se questo attributo è **true** (diverso da zero), il lettore di origine può eseguire l'elaborazione video limitata seguente nei fotogrammi video non compressi:
+Se questo attributo è **TRUE** (diverso da zero), il lettore di origine può eseguire l'elaborazione video limitata seguente su fotogrammi video non compressi:
 
 -   Conversione da YUV a RGB-32.
 -   Deinterlacciamento.
 
-Queste operazioni vengono eseguite nel software e non sono ottimizzate per la riproduzione. Questa funzionalità è destinata alle applicazioni che elaborano un numero ridotto di frame, ad esempio per creare un'anteprima video, o applicazioni che non decodificano i frame in tempo reale. L'operazione di deinterlacciamento esegue l'interpolazione dei dati da un singolo campo, in modo da avere un valore loss.
+Queste operazioni vengono eseguite nel software e non sono ottimizzate per la riproduzione. Questa funzionalità è destinata alle applicazioni che elaborano un numero ridotto di fotogrammi, ad esempio per creare un'anteprima video, o alle applicazioni che non decodificano i fotogrammi in tempo reale. L'operazione di dinterlace interpola i dati da un singolo campo, pertanto è una perdita.
 
-Evitare questa impostazione se si utilizza Direct3D per visualizzare i fotogrammi video, perché la GPU offre in genere migliori funzionalità di elaborazione video.
+Evitare questa impostazione se si usa Direct3D per visualizzare i fotogrammi video, perché la GPU offre in genere funzionalità di elaborazione video migliori.
 
-Se questo attributo è **true**, i seguenti attributi devono essere **false**:
+Se questo attributo è **TRUE,** gli attributi seguenti devono essere **FALSE**:
 
--   [\_ \_ Gestione D3D del lettore di origine MF \_ \_](mf-source-reader-d3d-manager.md)
--   [MF \_ ReadWrite \_ Disabilita \_ convertitori](mf-readwrite-disable-converters.md)
+-   [MF \_ SOURCE \_ READER \_ D3D \_ MANAGER](mf-source-reader-d3d-manager.md)
+-   [MF \_ READWRITE \_ DISABLE \_ CONVERTERS](mf-readwrite-disable-converters.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,9 +58,9 @@ Se questo attributo è **true**, i seguenti attributi devono essere **false**:
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                        |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Mfreadwrite. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 R2 \[ \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Mfreadwrite.h</dt> </dl> |
 
 
 
@@ -68,13 +68,13 @@ Se questo attributo è **true**, i seguenti attributi devono essere **false**:
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Lettore di origine](source-reader.md)
 </dt> <dt>
 
-[Attributi lettore di origine](source-reader-attributes.md)
+[Attributi del lettore di origine](source-reader-attributes.md)
 </dt> </dl>
 
  

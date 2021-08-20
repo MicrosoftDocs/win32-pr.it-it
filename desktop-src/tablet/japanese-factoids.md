@@ -1,5 +1,5 @@
 ---
-description: Nelle tabelle seguenti sono elencati i formati disponibili per ogni factoid usato in giapponese.
+description: Le tabelle seguenti elencano i formati disponibili per ogni factoid usato in giapponese.
 ms.assetid: 008bd1a8-d396-4f18-83cd-c68d57a7e8a7
 title: Factoid giapponesi
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117857011"
 ---
 # <a name="japanese-factoids"></a>Factoid giapponesi
 
-Nelle tabelle seguenti sono elencati i formati disponibili per ogni factoid usato in giapponese.
+Le tabelle seguenti elencano i formati disponibili per ogni factoid usato in giapponese.
 
 ## <a name="japanese-factoids"></a>Factoid giapponesi
 
@@ -60,7 +60,7 @@ Nelle tabelle seguenti sono elencati i formati disponibili per ogni factoid usat
 <tr class="odd">
 <td>Descrizione<br/></td>
 <td>Tutti <strong>i caratteri KanjiCommon,</strong> <strong>Hiragana</strong> <strong>e Katakana.</strong> Sono inoltre inclusi caratteri alfanumerici comuni, punteggiatura standard e simboli.<br/><br />
-Il <strong>factoid JapaneseCommon</strong> è utile per l'immissione di testo standard in cui non sono necessari caratteri usati raramente.
+Il <strong>factoid JapaneseCommon</strong> è utile per l'immissione di testo standard in cui i caratteri usati raramente non sono necessari.
 </td>
 </tr>
 </tbody>
@@ -74,7 +74,7 @@ Il <strong>factoid JapaneseCommon</strong> è utile per l'immissione di testo st
 
 <dl> <dt>
 
-[**Costanti Factoid**](factoid-constants.md)
+[**Costanti factoid**](factoid-constants.md)
 </dt> </dl>
 
  

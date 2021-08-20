@@ -25,7 +25,7 @@ ms.locfileid: "117817453"
 ---
 # <a name="isequalobject-function"></a>Funzione IsEqualObject
 
-La `IsEqualObject` funzione controlla se due interfacce sono nello stesso oggetto.
+La `IsEqualObject` funzione verifica se due interfacce sono nello stesso oggetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,7 +59,7 @@ Puntatore all'altra interfaccia.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **TRUE** se le interfacce sono entrambe nello stesso oggetto oppure **FALSE in caso** contrario.
+Restituisce **TRUE** se le interfacce sono entrambe nello stesso oggetto oppure **FALSE in caso contrario.**
 
 ## <a name="requirements"></a>Requisiti
 

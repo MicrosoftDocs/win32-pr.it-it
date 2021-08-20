@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-AZ-operation-ID
+title: Attributo ms-DS-Az-Operation-ID
 description: ID specifico dell'applicazione che rende l'operazione univoca per l'applicazione.
 ms.assetid: 0d0fc8ce-7044-481a-8df2-489e33264412
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-AZ-operation-ID
-- attributo msDS-AzOperationID-schema AD
+- Schema AD dell'attributo ms-DS-Az-Operation-ID
+- Schema AD dell'attributo msDS-AzOperationID
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58cc05338fa3960185a795422c62256a63e6f1ca
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 51a5f5b58ae1a5861f9d4434992b43014b6762ff181e848ed701cd346c31bc4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104225269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118015012"
 ---
-# <a name="ms-ds-az-operation-id-attribute"></a>attributo ms-DS-AZ-operation-ID
+# <a name="ms-ds-az-operation-id-attribute"></a>Attributo ms-DS-Az-Operation-ID
 
 ID specifico dell'applicazione che rende l'operazione univoca per l'applicazione.
 
@@ -29,13 +29,13 @@ ID specifico dell'applicazione che rende l'operazione univoca per l'applicazione
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-AZ-operation-ID                   |
-| LDAP-Display-Name | msDS-AzOperationID                      |
+| CN                | ms-DS-Az-Operation-ID                   |
+| Ldap-Display-Name | msDS-AzOperationID                      |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | Amministratore di AzRoles                           |
+| Aggiorna privilegio  | AzRoles admin                           |
 | Frequenza di aggiornamento  | Durante l'inizializzazione o la modifica dei criteri. |
 | Attribute-Id      | 1.2.840.113556.1.4.1800                 |
-| System-ID-GUID    | a5f3b553-5d76-4cbe-ba3f-4312152cab18    |
+| System-Id-Guid    | a5f3b553-5d76-4cbe-ba3f-4312152cab18    |
 | Sintassi            | [**Enumerazione**](s-enumeration.md)    |
 
 
@@ -57,15 +57,15 @@ ID specifico dell'applicazione che rende l'operazione univoca per l'applicazione
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -78,15 +78,15 @@ ID specifico dell'applicazione che rende l'operazione univoca per l'applicazione
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -99,15 +99,15 @@ ID specifico dell'applicazione che rende l'operazione univoca per l'applicazione
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -120,15 +120,15 @@ ID specifico dell'applicazione che rende l'operazione univoca per l'applicazione
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -141,15 +141,15 @@ ID specifico dell'applicazione che rende l'operazione univoca per l'applicazione
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

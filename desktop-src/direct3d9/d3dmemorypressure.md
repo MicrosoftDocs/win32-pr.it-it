@@ -1,7 +1,7 @@
 ---
-description: Contiene i dati per la segnalazione di richieste di memoria.
+description: Contiene i dati per la creazione di report sull'utilizzo della memoria.
 ms.assetid: bdf65d35-281f-4795-a2c1-0d4e91bfa7bc
-title: Struttura D3DMEMORYPRESSURE (D3d9types. h)
+title: Struttura D3DMEMORYPRESSURE (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 5917d1e61817f401106ae14aa5a0f98cd75b0d42
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ca5a6dd95a35cae231b80fbeee9ee05bbdfe9f0ecacc70b13493ad8d16739637
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117911095"
 ---
-# <a name="d3dmemorypressure-structure-d3d9typesh"></a>Struttura D3DMEMORYPRESSURE (D3d9types. h)
+# <a name="d3dmemorypressure-structure-d3d9typesh"></a>Struttura D3DMEMORYPRESSURE (D3d9types.h)
 
-Contiene i dati per la segnalazione di richieste di memoria.
+Contiene i dati per la creazione di report sull'utilizzo della memoria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,22 +44,22 @@ typedef struct _D3DMEMORYPRESSURE {
 **BytesEvictedFromProcess**
 </dt> <dd>
 
-Tipo: **[ **UInt64**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT64**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Numero di byte rimossi dal processo durante la durata della query.
+Numero di byte che sono stati sgomberati dal processo durante la durata della query.
 
 </dd> <dt>
 
 **SizeOfInefficientAllocation**
 </dt> <dd>
 
-Tipo: **[ **UInt64**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT64**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Numero totale di byte posizionati in segmenti di memoria non ottimali a causa di uno spazio inadeguato nei segmenti di memoria preferiti.
+Numero totale di byte inseriti in segmenti di memoria non nonoptimal, a causa di spazio non adeguato all'interno dei segmenti di memoria preferiti.
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Efficienza complessiva delle allocazioni di memoria posizionate nella memoria non ottimale. Il valore è espresso come percentuale. Ad esempio, il valore 95 indica che le allocazioni posizionate nei segmenti di memoria non preferiti sono efficienti al 95%. Questo numero non deve essere considerato una misura esatta.
+Efficienza complessiva delle allocazioni di memoria inserite in memoria non ottimale. Il valore è espresso come percentuale. Ad esempio, il valore 95 indica che le allocazioni inserite in segmenti di memoria non di riferimento sono efficienti al 95%. Questo numero non deve essere considerato una misura esatta.
 
 </dd> </dl>
 
@@ -80,7 +80,7 @@ Efficienza complessiva delle allocazioni di memoria posizionate nella memoria no
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

@@ -3,9 +3,9 @@ title: Metodo IDWriteLocalFontFileLoader GetLastWriteTimeFromKey
 description: Ottiene l'ora dell'ultima scrittura del file dalla chiave di riferimento del file del tipo di carattere.
 ms.assetid: ce7f5321-8ad8-4412-a54c-7102790e99c0
 keywords:
-- Scrittura diretta metodo GetLastWriteTimeFromKey
-- Metodo GetLastWriteTimeFromKey scrittura diretta, interfaccia IDWriteLocalFontFileLoader
-- IDWriteLocalFontFileLoader Interface Direct Write, metodo GetLastWriteTimeFromKey
+- Metodo GetLastWriteTimeFromKey Direct Write
+- Metodo GetLastWriteTimeFromKey Scrittura diretta, interfaccia IDWriteLocalFontFileLoader
+- Metodo GetLastWriteTimeFromKey dell'interfaccia IDWriteLocalFontFileLoader
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea9817917a59761278a961a6fcafcdeaea5fda32
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a2fb3d79475a943c3a635b347cfd6dbe41e8b3a8903022bae9089e1d6a9847c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117816315"
 ---
-# <a name="idwritelocalfontfileloadergetlastwritetimefromkey-method"></a>Metodo IDWriteLocalFontFileLoader:: GetLastWriteTimeFromKey
+# <a name="idwritelocalfontfileloadergetlastwritetimefromkey-method"></a>Metodo IDWriteLocalFontFileLoader::GetLastWriteTimeFromKey
 
 Ottiene l'ora dell'ultima scrittura del file dalla chiave di riferimento del file del tipo di carattere.
 
@@ -44,30 +44,30 @@ virtual HRESULT GetLastWriteTimeFromKey(
 
 <dl> <dt>
 
-*fontFileReferenceKey* \[ in\]
+*fontFileReferenceKey* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const \* void**
 
-Chiave di riferimento del file del tipo di carattere che identifica in modo univoco il file del tipo di carattere locale nell'ambito del caricatore del tipo di carattere utilizzato.
+Chiave di riferimento del file del tipo di carattere che identifica in modo univoco il file del tipo di carattere locale nell'ambito del caricatore del tipo di carattere in uso.
 
 </dd> <dt>
 
 *fontFileReferenceKeySize* 
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **UINT32**
 
-Dimensioni in byte della chiave di riferimento del file del tipo di carattere.
+Dimensioni della chiave di riferimento al file del tipo di carattere in byte.
 
 </dd> <dt>
 
-*LastWriteTime* \[ out\]
+*lastWriteTime* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **FILEtime \***
+Tipo: **FILETIME \***
 
-Ora dell'Ultima modifica del file del tipo di carattere.
+Ora dell'ultima modifica del file del tipo di carattere.
 
 </dd> </dl>
 
@@ -75,7 +75,7 @@ Ora dell'Ultima modifica del file del tipo di carattere.
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,7 +83,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Libreria<br/> | <dl> <dt>DWrite. lib</dt> </dl> |
+| Libreria<br/> | <dl> <dt>Dwrite.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>Dwrite.dll</dt> </dl> |
 
 

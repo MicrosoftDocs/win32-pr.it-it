@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione CreateInstanceGrbit'
+description: Altre informazioni sull'enumerazione CreateInstanceGrbit
 title: Enumerazione CreateInstanceGrbit
 TOCTitle: CreateInstanceGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.CreateInstanceGrbit
@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 16afcce57b1d2170fa5d049f9f4d435a5c752425
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7ee706735d9de76d47d5774c0239a8326c62b5875a859d9013794620a83675dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314088"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117901837"
 ---
 # <a name="createinstancegrbit-enumeration"></a>Enumerazione CreateInstanceGrbit
 
@@ -39,8 +39,8 @@ Opzioni per JetCreateInstance2.
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -81,4 +81,4 @@ public enum CreateInstanceGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
