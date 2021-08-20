@@ -1,23 +1,23 @@
 ---
-description: Un puntatore di file è un valore di offset a 64 bit che specifica il byte successivo da leggere o la posizione in cui viene scritto il byte successivo.
+description: Un puntatore di file è un valore di offset a 64 bit che specifica il byte successivo da leggere o la posizione in cui ricevere il byte successivo scritto.
 ms.assetid: 1e8bc657-affa-4a17-8435-c93de5075a1d
-title: Puntatori a file
+title: Puntatori ai file
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f4fc804711665c045361d40c69fb71a4959b4c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bdfe744f341e111e7956bda85401c5b87e063718309f675c33ff551918756239
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117997032"
 ---
-# <a name="file-pointers"></a>Puntatori a file
+# <a name="file-pointers"></a>Puntatori ai file
 
-Quando un file viene aperto, Windows associa un *puntatore di file* al flusso predefinito. Questo puntatore di file è un valore di offset a 64 bit che specifica il byte successivo da leggere o la posizione in cui viene scritto il byte successivo. Ogni volta che un file viene aperto, il sistema posiziona il puntatore del file all'inizio del file, ovvero l'offset zero. Ogni operazione di lettura e scrittura sposta il puntatore del file in base al numero di byte letti e scritti. Se, ad esempio, il puntatore del file si trova all'inizio del file e viene richiesta un'operazione di lettura di 5 byte, il puntatore del file sarà posizionato in corrispondenza dell'offset 5 immediatamente dopo l'operazione di lettura. Poiché ogni byte viene letto o scritto, il sistema sposta in avanti il puntatore del file. Il puntatore del file può essere riposizionato anche chiamando la funzione [**SetFilePointer**](/windows/desktop/api/FileAPI/nf-fileapi-setfilepointer) .
+Quando un file viene aperto, Windows un puntatore *di file* al flusso predefinito. Questo puntatore di file è un valore di offset a 64 bit che specifica il byte successivo da leggere o la posizione in cui ricevere il byte successivo scritto. Ogni volta che un file viene aperto, il sistema posiziona il puntatore del file all'inizio del file, che è l'offset zero. Ogni operazione di lettura e scrittura fa avanzare il puntatore del file in base al numero di byte letti e scritti. Ad esempio, se il puntatore del file si trova all'inizio del file ed è richiesta un'operazione di lettura di 5 byte, il puntatore del file si trova in corrispondenza dell'offset 5 immediatamente dopo l'operazione di lettura. Quando ogni byte viene letto o scritto, il sistema fa avanzare il puntatore del file. Il puntatore del file può anche essere riposizionato chiamando la [**funzione SetFilePointer.**](/windows/desktop/api/FileAPI/nf-fileapi-setfilepointer)
 
-Quando il puntatore del file raggiunge la fine di un file e l'applicazione tenta di leggere dal file, non si verifica alcun errore, ma non viene letto alcun byte. Pertanto, la lettura di zero byte senza errori indica che l'applicazione ha raggiunto la fine del file. La scrittura di zero byte non esegue alcuna operazione.
+Quando il puntatore del file raggiunge la fine di un file e l'applicazione tenta di leggere dal file, non si verifica alcun errore, ma non vengono letti byte. Pertanto, la lettura di zero byte senza errori indica che l'applicazione ha raggiunto la fine del file. La scrittura di zero byte non esegue alcuna operazione.
 
-Un'applicazione può troncare o estendere un file tramite la funzione [**SetEndOfFile**](/windows/desktop/api/FileAPI/nf-fileapi-setendoffile) . Questa funzione imposta la fine del file sulla posizione corrente del puntatore del file.
+Un'applicazione può troncare o estendere un file usando la [**funzione SetEndOfFile.**](/windows/desktop/api/FileAPI/nf-fileapi-setendoffile) Questa funzione imposta la fine del file sulla posizione corrente del puntatore del file.
 
  
 

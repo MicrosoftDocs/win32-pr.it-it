@@ -3,7 +3,7 @@ title: TB_SETUNICODEFORMAT messaggio (Commctrl.h)
 description: 'TB_SETUNICODEFORMAT messaggio: imposta il flag di formato carattere Unicode per il controllo. Questo messaggio consente di modificare il set di caratteri utilizzato dal controllo in fase di esecuzione anziché dover creare nuovamente il controllo.'
 ms.assetid: d4eec78d-c25b-4b86-9449-64f091cd8501
 keywords:
-- TB_SETUNICODEFORMAT di windows del messaggio
+- TB_SETUNICODEFORMAT di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d27689668eadd65ebabe1d34427699a9e7ebc5c5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9736018fd528f4e59d6fc010e6a1c0c9f95a9f5dbdd056ff5a2eabc96500fb90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118167434"
 ---
 # <a name="tb_setunicodeformat-message"></a>TB \_ SETUNICODEFORMAT message
 
@@ -45,7 +45,7 @@ Restituisce il flag di formato Unicode precedente per il controllo.
 
 ## <a name="remarks"></a>Commenti
 
-Per una descrizione di questo messaggio, vedere le osservazioni relative a [**CCM \_ SETUNICODEFORMAT.**](ccm-setunicodeformat.md)
+Per una descrizione di questo messaggio, vedere le osservazioni relative a [**\_ CCM SETUNICODEFORMAT.**](ccm-setunicodeformat.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,8 +53,8 @@ Per una descrizione di questo messaggio, vedere le osservazioni relative a [**CC
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                        |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

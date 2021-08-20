@@ -1,8 +1,8 @@
 ---
-description: Il provider del registro di sistema viene registrato come parte del processo di installazione di WMI in Windows.
+description: Il provider del Registro di sistema viene registrato come parte del processo di installazione WMI Windows.
 ms.assetid: ce5d0785-6e1b-411c-91df-f25767310530
 ms.tgt_platform: multiple
-title: Registrazione del provider del registro di sistema
+title: Registrazione del provider del Registro di sistema
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,30 +10,30 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d600872c4efab5560f4fd794cac63beb4365841c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 45ea97228038b173ef89cac85b9efab1385938fcaac3b2bf0d733be9f34dabe0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309912"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992501"
 ---
-# <a name="registering-the-system-registry-provider"></a>Registrazione del provider del registro di sistema
+# <a name="registering-the-system-registry-provider"></a>Registrazione del provider del Registro di sistema
 
-Il provider del registro di sistema viene registrato come parte del processo di installazione di WMI in Windows. Se si utilizza un'altra piattaforma e si desidera utilizzare il provider del registro di sistema, è necessario prima registrare il provider seguendo la procedura descritta di seguito.
+Il provider del Registro di sistema viene registrato come parte del processo di installazione WMI Windows. Se si usa un'altra piattaforma e si vuole usare il provider del Registro di sistema, è necessario prima registrare il provider seguendo la procedura descritta di seguito.
 
-Nella procedura riportata di seguito viene descritto come registrare il provider del registro di sistema.
+Nella procedura seguente viene descritto come registrare il provider del Registro di sistema.
 
-**Per registrare il provider del registro di sistema**
+**Per registrare il provider del Registro di sistema**
 
 1.  Registrare il provider come server COM.
 
-    Se necessario, potrebbe essere necessario creare voci del registro di sistema. Questo processo si applica a tutti i server COM e non è correlato a WMI. Per ulteriori informazioni, vedere la documentazione [com](https://msdn.microsoft.com/library/aa139695.aspx) in Microsoft Windows Software Development Kit (SDK).
+    Se necessario, potrebbe essere necessario creare voci del Registro di sistema. Questo processo si applica a tutti i server COM e non è correlato a WMI. Per altre informazioni, vedere la [documentazione COM](https://msdn.microsoft.com/library/aa139695.aspx) in Microsoft Windows Software Development Kit (SDK).
 
-2.  Creare un'istanza della classe [**\_ \_ Win32Provider**](--win32provider.md) per descrivere l'implementazione del provider del registro di sistema.
+2.  Creare un'istanza della [**\_ \_ classe Win32Provider**](--win32provider.md) per descrivere l'implementazione del provider del Registro di sistema.
 
-    L'istanza di [**\_ \_ Win32Provider**](--win32provider.md) descrive il nome del provider e il relativo identificatore di classe (**CLSID**).
+    [**\_ \_ L'istanza Win32Provider**](--win32provider.md) descrive il nome del provider e il relativo identificatore di classe (**CLSID**).
 
-    Nell'esempio seguente viene illustrato come registrare [**\_ \_ Win32Provider**](--win32provider.md) come proprietà di istanza, evento o provider di metodi.
+    L'esempio seguente descrive come registrare [**\_ \_ Win32Provider**](--win32provider.md) come proprietà di istanza, evento o provider di metodi.
 
     ``` syntax
     // Instance provider
@@ -61,9 +61,9 @@ Nella procedura riportata di seguito viene descritto come registrare il provider
     };
     ```
 
-3.  Creare una o più istanze delle classi derivate dalla classe [**\_ \_ ProviderRegistration**](--providerregistration.md) per descrivere l'implementazione logica del provider del registro di sistema.
+3.  Creare una o più istanze di classi derivate dalla [**\_ \_ classe ProviderRegistration**](--providerregistration.md) per descrivere l'implementazione logica del provider del Registro di sistema.
 
-    A seconda dello scopo per cui si registra il provider del registro di sistema, è possibile creare una o più delle classi seguenti.
+    A seconda dello scopo per cui si sta registrando il provider del Registro di sistema, è possibile creare una o più delle classi seguenti.
 
     [**\_\_InstanceProviderRegistration**](--instanceproviderregistration.md)
 
@@ -73,7 +73,7 @@ Nella procedura riportata di seguito viene descritto come registrare il provider
 
     [**\_\_MethodProviderRegistration**](--methodproviderregistration.md)
 
-    Nell'esempio di codice MOF riportato di seguito viene illustrato come registrare il provider del registro di sistema come un'istanza, una proprietà, un evento o un provider di metodi.
+    Nell'esempio di codice MOF seguente viene descritto come registrare il provider del Registro di sistema come provider di istanza, proprietà, evento o metodo.
 
     ``` syntax
     instance of __InstanceProviderRegistration
@@ -105,9 +105,9 @@ Nella procedura riportata di seguito viene descritto come registrare il provider
     };
     ```
 
-4.  Compilare il file MOF utilizzando il compilatore MOF o l'interfaccia [**IMOFCompiler**](/windows/desktop/api/Wbemcli/nn-wbemcli-imofcompiler) .
+4.  Compilare il file MOF usando il compilatore MOF o [**l'interfaccia IMofCompiler.**](/windows/desktop/api/Wbemcli/nn-wbemcli-imofcompiler)
 
-Il file regevent. mof fornito nella sezione WMI del Windows SDK contiene le istanze [**\_ \_ Win32Provider**](--win32provider.md) e [**\_ \_ EventProviderRegistration**](--eventproviderregistration.md) necessarie per registrare il provider del registro di sistema come provider di eventi. Per ulteriori informazioni sulla registrazione di un provider, vedere la pagina relativa alla [registrazione di un provider](registering-a-provider.md) e alla [ricezione di un evento WMI](receiving-a-wmi-event.md).
+Il file RegEvent.mof fornito nella sezione WMI di Windows SDK contiene le istanze [**\_ \_ Win32Provider**](--win32provider.md) ed [**\_ \_ EventProviderRegistration**](--eventproviderregistration.md) necessarie per registrare il provider del Registro di sistema come provider di eventi. Per altre informazioni sulla registrazione di un provider, vedere [Registrazione di un provider](registering-a-provider.md) e Ricezione di un evento [WMI.](receiving-a-wmi-event.md)
 
  
 

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Metodi EsentBadRestoreTargetInstanceException'
+description: Altre informazioni sui metodi di EsentBadRestoreTargetInstanceException
 title: 'Metodi di EsentBadRestoreTargetInstanceException '
 TOCTitle: EsentBadRestoreTargetInstanceException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentBadRestoreTargetInstanceException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101163
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 3d68f1e6ab5bd6fa04a7ad47097c550a438b5e98
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f500fcba468fd528a5b56d5adfde9c364403abd93705fac8582e560cc151e0b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118082719"
 ---
 # <a name="esentbadrestoretargetinstanceexception-methods"></a>Metodi di EsentBadRestoreTargetInstanceException 
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
-Il tipo [EsentBadRestoreTargetInstanceException](./esentbadrestoretargetinstanceexception-class.md) espone i membri seguenti.
+Il [tipo EsentBadRestoreTargetInstanceException](./esentbadrestoretargetinstanceexception-class.md) espone i membri seguenti.
 
 ## <a name="methods"></a>Metodi
 
@@ -35,42 +35,42 @@ Il tipo [EsentBadRestoreTargetInstanceException](./esentbadrestoretargetinstance
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">È uguale a</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizza</a></td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
-<td>(Ereditato da <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>Ereditato <a href="/dotnet/api/system.exception">dall'eccezione</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">GetHashCode</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn334369(v=exchg.10).md">GetObjectData</a></td>
-<td>Quando sottoposto a override in una classe derivata, imposta l'oggetto <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con le informazioni sull'eccezione. Ereditato da <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.</td>
+<td>Quando ne viene eseguito l'override in una classe derivata, imposta <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con informazioni sull'eccezione. Ereditato da <a href="dn274314(v=exchg.10).md">EsentErrorException.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
-<td>(Ereditato da <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>Ereditato <a href="/dotnet/api/system.exception">dall'eccezione</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
 <td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.exception.tostring#System_Exception_ToString">ToString</a></td>
-<td>(Ereditato da <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>Ereditato <a href="/dotnet/api/system.exception">dall'eccezione</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -84,4 +84,4 @@ Inizio
 
 [Classe EsentBadRestoreTargetInstanceException](./esentbadrestoretargetinstanceexception-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,11 +1,11 @@
 ---
 title: Parse. CPP
-description: Nel componente provider di esempio, un esempio di codice del parser del percorso del servizio directory è in Parse.cpp.
+description: Nel componente provider di esempio un esempio di codice del parser del percorso del servizio directory si trova in Parse.cpp.
 ms.assetid: 5d68065b-0dab-41c9-baf1-f9610656bd6e
 ms.tgt_platform: multiple
 keywords:
-- ADSI parse.cpp
-- ADSI del parser di percorso
+- PARSE.cpp ADSI
+- parser di percorso ADSI
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 544ab295318ac80ed19df39a7e5837b566615903a8d8bb963b6fdd5435efde8c
@@ -17,19 +17,19 @@ ms.locfileid: "119023289"
 ---
 # <a name="parsecpp"></a>Parse. CPP
 
-Nel componente provider di esempio, un esempio di codice del parser del percorso del servizio directory è in Parse.cpp. Il parser di percorso è un componente chiave nei componenti del provider ADs. Verifica la validità sintattica di un percorso ADs passato a questo provider. Se la sintassi è valida, viene costruita una struttura **OBJECTINFO** che contiene una versione in componenti del percorso ADs per questo oggetto.
+Nel componente provider di esempio un esempio di codice del parser del percorso del servizio directory si trova in Parse.cpp. Il parser di percorso è un componente chiave nei componenti del provider ADs. Verifica la validità sintattica di un percorso ADs passato a questo provider. Se la sintassi è valida, viene costruita una struttura **OBJECTINFO** che contiene una versione in componenti di ADspath per questo oggetto.
 
-Tenere presente che si tratta solo di una verifica della sintassi. Anziché eseguire un caso speciale a ogni nuova iterazione del percorso, tutta la verifica del percorso deve essere conforme alle regole grammaticali stabilite dal parser.
+Tenere presente che si tratta solo di una verifica della sintassi. Invece di creare casi speciali per ogni nuova iterazione del percorso, tutte le verifiche del percorso devono essere conformi alle regole di grammatica stabilite dal parser.
 
-Nella tabella seguente sono elencate le funzioni e i metodi implementati in Parse.cpp.
+La tabella seguente elenca le funzioni e i metodi implementati in Parse.cpp.
 
 
 
 | Elemento                      | Descrizione                                                                                                                                                            |
 |---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **ADsObject**             | Analizza l'ADspath passato. Questa funzione segue le regole grammaticali seguenti: <ADsObject>  ->  <ProviderName><SampleDSObject><br/>     |
+| **ADsObject**             | Analizza il percorso ADs passato. Questa funzione segue le regole grammaticali seguenti: <ADsObject>  ->  <ProviderName><SampleDSObject><br/>     |
 | **SampleDSObject**        | Analizza le regole grammaticali seguenti: <SampleDSObject> -> " \\ \\ " " <identifier> \\ "<Pathname><br/>                                            |
-| **ProviderName**          | Aggiunge nel nome del provider sintatticamente corretto, se non è presente.                                                                                                          |
+| **ProviderName**          | Aggiunge il nome del provider sintatticamente corretto, se non è presente.                                                                                                          |
 | **PathName**              | Analizza le regole grammaticali seguenti: <Pathname>  ->  <Component> " \\ \\ " <Pathname> OR<br/> <Pathname> -> <Component><br/> |
 | **Componente**             | Analizza le regole grammaticali seguenti: <Identifier> OR<br/> <Identifier> "=" <Identifier><br/>                                              |
 | **CLexer::CLexer**        | Costruttore standard.                                                                                                                                                  |
@@ -38,10 +38,10 @@ Nella tabella seguente sono elencate le funzioni e i metodi implementati in Pars
 | **CLexer::NextChar**      | Recupera il carattere singolo successivo.                                                                                                                                       |
 | **CLexer::P ushBackToken** | Backup all'inizio dell'ultimo token.                                                                                                                               |
 | **CLexer::P ushbackChar**  | Backup di un carattere.                                                                                                                                                |
-| **CLexer::IsKeyword**     | Verifica l'elenco di parole chiave. Definito in Globals.h.                                                                                                                          |
+| **CLexer::IsKeyword**     | Verifica l'elenco di parole chiave. Definito in Globals.h).                                                                                                                          |
 | **Addcomponent**          | Aggiunge questo componente alla matrice di componenti.                                                                                                                            |
 | **AddProviderName**       | Aggiunge un nome di provider sintatticamente corretto alla **struttura OBJECTINFO.**                                                                                            |
-| **AddRootRDN**            | Aggiunge il nome rdN (Root Relative Distinguished Name) sintatticamente corretto alla **struttura OBJECTINFO.**                                                            |
+| **AddRootRDN**            | Aggiunge il nome RDN (Root Relative Distinguished Name) sintatticamente corretto alla **struttura OBJECTINFO.**                                                            |
 | **SetType**               | Imposta il tipo dell'oggetto .                                                                                                                                           |
 | **Tipo**                  | Analizza type-> "user" \| "group" e così via.                                                                                                                          |
 

@@ -1,6 +1,6 @@
 ---
 title: Proprietà NetworkConnectionType IMsRdpClientAdvancedSettings7
-description: Ottiene o imposta il tipo di connessione di rete utilizzato tra il client e il server. Le informazioni sul tipo di connessione di rete passate al server consentono al server di ottimizzare diversi parametri in base al tipo di connessione di rete.
+description: Ottiene o imposta il tipo di connessione di rete utilizzata tra il client e il server. Le informazioni sul tipo di connessione di rete passate al server consentono al server di ottimizzare diversi parametri in base al tipo di connessione di rete.
 ms.assetid: 4dd4fa17-f121-412d-a30d-1c01f4c892b0
 ms.tgt_platform: multiple
 keywords:
@@ -33,7 +33,7 @@ ms.locfileid: "118352158"
 ---
 # <a name="imsrdpclientadvancedsettings7networkconnectiontype-property"></a>Proprietà IMsRdpClientAdvancedSettings7::NetworkConnectionType
 
-Ottiene o imposta il tipo di connessione di rete utilizzato tra il client e il server. Le informazioni sul tipo di connessione di rete passate al server consentono al server di ottimizzare diversi parametri in base al tipo di connessione di rete.
+Ottiene o imposta il tipo di connessione di rete utilizzata tra il client e il server. Le informazioni sul tipo di connessione di rete passate al server consentono al server di ottimizzare diversi parametri in base al tipo di connessione di rete.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -71,7 +71,7 @@ Modem (56 Kbps)
 
 <span id="CONNECTION_TYPE_BROADBAND_LOW"></span><span id="connection_type_broadband_low"></span>
 
-<span id="CONNECTION_TYPE_BROADBAND_LOW"></span><span id="connection_type_broadband_low"></span>**CONNESSIONE \_ TYPE \_ BROADBAND \_ LOW** (2 (0x2))
+<span id="CONNECTION_TYPE_BROADBAND_LOW"></span><span id="connection_type_broadband_low"></span>**CONNESSIONE \_ TIPO \_ BANDA \_ LARGA** BASSA (2 (0x2))
 
 
 </dt> <dd>
@@ -82,7 +82,7 @@ Banda larga a bassa velocità (da 256 Kbps a 2 Mbps)
 
 <span id="CONNECTION_TYPE_SATELLITE"></span><span id="connection_type_satellite"></span>
 
-<span id="CONNECTION_TYPE_SATELLITE"></span><span id="connection_type_satellite"></span>**CONNESSIONE \_ TYPE \_ SATELLITE** (3 (0x3))
+<span id="CONNECTION_TYPE_SATELLITE"></span><span id="connection_type_satellite"></span>**CONNESSIONE \_ TIPO \_ SATELLITE** (3 (0x3))
 
 
 </dt> <dd>
@@ -93,7 +93,7 @@ Satellite (da 2 Mbps a 16 Mbps, con latenza elevata)
 
 <span id="CONNECTION_TYPE_BROADBAND_HIGH"></span><span id="connection_type_broadband_high"></span>
 
-<span id="CONNECTION_TYPE_BROADBAND_HIGH"></span><span id="connection_type_broadband_high"></span>**CONNESSIONE \_ TYPE \_ BROADBAND \_ HIGH** (4 (0x4))
+<span id="CONNECTION_TYPE_BROADBAND_HIGH"></span><span id="connection_type_broadband_high"></span>**CONNESSIONE \_ TIPO \_ BROADBAND \_ HIGH** (4 (0x4))
 
 
 </dt> <dd>
@@ -104,23 +104,23 @@ Banda larga ad alta velocità (da 2 Mbps a 10 Mbps)
 
 <span id="CONNECTION_TYPE_WAN"></span><span id="connection_type_wan"></span>
 
-<span id="CONNECTION_TYPE_WAN"></span><span id="connection_type_wan"></span>**CONNESSIONE \_ TYPE \_ WAN** (5 (0x5))
+<span id="CONNECTION_TYPE_WAN"></span><span id="connection_type_wan"></span>**CONNESSIONE \_ TIPO \_ WAN** (5 (0x5))
 
 
 </dt> <dd>
 
-Rete WAN (Wide Area Network) (10 Mbps o superiore, con latenza elevata)
+Wan (Wide Area Network) (10 Mbps o superiore, con latenza elevata)
 
 </dd> <dt>
 
 <span id="CONNECTION_TYPE_LAN"></span><span id="connection_type_lan"></span>
 
-<span id="CONNECTION_TYPE_LAN"></span><span id="connection_type_lan"></span>**CONNESSIONE \_ TYPE \_ LAN** (6 (0x6))
+<span id="CONNECTION_TYPE_LAN"></span><span id="connection_type_lan"></span>**CONNESSIONE \_ TIPO \_ LAN** (6 (0x6))
 
 
 </dt> <dd>
 
-Rete locale (LAN) (10 Mbps o superiore)
+Rete locale (LAN) (10 Mbps o versione successiva)
 
 </dd> </dl>
 

@@ -1,33 +1,33 @@
 ---
-title: Porting di funzioni di feedback
+title: Funzioni di porting dei commenti e suggerimenti
 description: Con IRIS GL, il modo in cui viene gestito il feedback varia a seconda del computer che esegue IRIS GL.
 ms.assetid: 170a3eae-5e0e-47f5-80dc-f8db5af98f76
 keywords:
-- Porting di IRIS GL, commenti e suggerimenti
-- porting da IRIS GL, commenti e suggerimenti
-- porting in OpenGL da IRIS GL, commenti e suggerimenti
-- Porting OpenGL da IRIS GL, commenti e suggerimenti
+- portabilità IRIS GL, feedback
+- porting da IRIS GL, feedback
+- porting to OpenGL from IRIS GL,feedback
+- Porting OpenGL da IRIS GL, feedback
 - feedback
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a04bcfe2c1d914a178ad7ad0dca95fb85d86bbc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e0f4ab584dfbd9038d45e7d24c006857f278a9239fc6f9da4d38a75363f0d585
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118132633"
 ---
-# <a name="porting-feedback-functions"></a>Porting di funzioni di feedback
+# <a name="porting-feedback-functions"></a>Funzioni di porting dei commenti e suggerimenti
 
-Con IRIS GL, il modo in cui viene gestito il feedback varia a seconda del computer che esegue IRIS GL. OpenGL standardizza le funzioni di feedback per poter contare su feedback coerenti tra varie piattaforme hardware. La tabella seguente elenca le funzioni di feedback di IRIS GL e le relative funzioni OpenGL equivalenti.
+Con IRIS GL, il modo in cui viene gestito il feedback varia a seconda del computer che esegue IRIS GL. OpenGL standardizza le funzioni di feedback in modo da poter contare su feedback coerente tra le varie piattaforme hardware. La tabella seguente elenca le funzioni di feedback IRIS GL e le funzioni OpenGL equivalenti.
 
 
 
-| Funzione IRIS GL | OpenGL (funzione)                                                                                            | Significato                                       |
+| Funzione GL IRIS | Funzione OpenGL                                                                                            | Significato                                       |
 |------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| **feedback**     | [**glRenderMode**](glrendermode.md) ( \_ feedback GL)                                                      | Passa alla modalità di feedback.                    |
-| **endfeedback**  | [**glRenderMode**](glrendermode.md) ( \_ rendering GL)[**glFeedbackBuffer**](glfeedbackbuffer.md)<br/> | Passa alla modalità di rendering.                   |
-| **pass-through**  | [**glPassThrough**](glpassthrough.md)                                                                     | Inserisce un marcatore del token nel buffer di feedback. |
+| **Valutazione**     | [**glRenderMode**](glrendermode.md) ( GL \_ FEEDBACK )                                                      | Passa alla modalità feedback.                    |
+| **endfeedback**  | [**glRenderMode**](glrendermode.md) ( GL \_ RENDER )[**glFeedbackBuffer**](glfeedbackbuffer.md)<br/> | Passa alla modalità di rendering.                   |
+| **Passthrough**  | [**glPassThrough**](glpassthrough.md)                                                                     | Inserisce un marcatore di token nel buffer di feedback. |
 
 
 

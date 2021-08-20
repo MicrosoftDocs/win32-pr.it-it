@@ -1,9 +1,9 @@
 ---
-title: Elemento Intype (InputTypeListType)
-description: Definisce un tipo di dati di input. | Elemento Intype (InputTypeListType)
+title: Elemento inType (InputTypeListType)
+description: Definisce un tipo di dati di input. | Elemento inType (InputTypeListType)
 ms.assetid: f29cb871-e5f7-416a-beca-f91476d78c1f
 keywords:
-- elemento Intype-EventLog
+- Elemento inType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a233397e3a190068ec854c3830646503f50b417e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4c8ea65add9f46cc5db0a3587206142cee3e0cf59b0c18d423efdc3313ce6213
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103886147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863441"
 ---
-# <a name="intype-inputtypelisttype-element"></a>Elemento Intype (InputTypeListType)
+# <a name="intype-inputtypelisttype-element"></a>Elemento inType (InputTypeListType)
 
 Definisce un tipo di dati di input.
 
@@ -30,7 +30,7 @@ Definisce un tipo di dati di input.
  />
 ```
 
-L'elemento **Intype** è definito dal tipo complesso [**InputTypeListType**](eventmanifestschema-inputtypelisttype-complextype.md) .
+**L'elemento inType** è definito dal tipo complesso [**InputTypeListType.**](eventmanifestschema-inputtypelisttype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **Intype** è definito dal tipo complesso [**InputTypeListType**](eve
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ L'elemento **Intype** è definito dal tipo complesso [**InputTypeListType**](eve
 **Elemento padre**
 </dt> <dt>
 
-[**intypes (TypeListType)**](eventmanifestschema-intypes-typelisttype-element.md)
+[**inTypes (TypeListType)**](eventmanifestschema-intypes-typelisttype-element.md)
 </dt> </dl>
 
  

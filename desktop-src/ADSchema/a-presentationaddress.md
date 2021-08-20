@@ -1,10 +1,10 @@
 ---
-title: Attributo Presentation-Address
+title: Presentation-Address attributo
 description: Specifica un indirizzo di presentazione associato a un oggetto che rappresenta un'entità applicazione OSI.
 ms.assetid: 7684c953-6c66-41f0-964b-8bd1536e878f
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Presentation-Address attribute
+- Presentation-Address schema AD dell'attributo
 - Schema AD dell'attributo presentationAddress
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f3d389baa8af52c0c19fee33b501b89c12601059
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8da5cd2182e4dce01ac1213032f604a15cd6a667ef533854139e8386754305fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103874866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118012317"
 ---
-# <a name="presentation-address-attribute"></a>Attributo Presentation-Address
+# <a name="presentation-address-attribute"></a>Presentation-Address attributo
 
 Specifica un indirizzo di presentazione associato a un oggetto che rappresenta un'entità applicazione OSI.
 
@@ -30,12 +30,12 @@ Specifica un indirizzo di presentazione associato a un oggetto che rappresenta u
 | Voce | Valore |
 |-------------------|-----------------------------------------------------------------------|
 | CN                | Presentation-Address                                                  |
-| LDAP-Display-Name | presentationAddress                                                   |
+| Ldap-Display-Name | presentationAddress                                                   |
 | Dimensione              | \-                                                                    |
-| Privilegio aggiornamento  | \-                                                                    |
+| Privilegio di aggiornamento  | \-                                                                    |
 | Frequenza di aggiornamento  | \-                                                                    |
 | Attribute-Id      | 2.5.4.29                                                              |
-| System-ID-GUID    | a8df744b-c5ea-11d1-bbcb-0080c76670c0                                  |
+| System-Id-Guid    | a8df744b-c5ea-11d1-bbcb-0080c76670c0                                  |
 | Sintassi            | [**Object(Presentation-Address)**](s-object-presentation-address.md) |
 
 
@@ -58,15 +58,15 @@ Specifica un indirizzo di presentazione associato a un oggetto che rappresenta u
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Applicazione-entità**](c-applicationentity.md)<br/> |
+| Classi usate in        | [**Entità applicazione**](c-applicationentity.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Specifica un indirizzo di presentazione associato a un oggetto che rappresenta u
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Applicazione-entità**](c-applicationentity.md)<br/> |
+| Classi usate in        | [**Entità applicazione**](c-applicationentity.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Specifica un indirizzo di presentazione associato a un oggetto che rappresenta u
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Applicazione-entità**](c-applicationentity.md)<br/> |
+| Classi usate in        | [**Entità applicazione**](c-applicationentity.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Specifica un indirizzo di presentazione associato a un oggetto che rappresenta u
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| A valore singolo       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Applicazione-entità**](c-applicationentity.md)<br/> |
+| Classi usate in        | [**Entità applicazione**](c-applicationentity.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Specifica un indirizzo di presentazione associato a un oggetto che rappresenta u
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| A valore singolo       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Applicazione-entità**](c-applicationentity.md)<br/> |
+| Classi usate in        | [**Entità applicazione**](c-applicationentity.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Specifica un indirizzo di presentazione associato a un oggetto che rappresenta u
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| A valore singolo       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Applicazione-entità**](c-applicationentity.md)<br/> |
+| Classi usate in        | [**Entità applicazione**](c-applicationentity.md)<br/> |
 
 
 

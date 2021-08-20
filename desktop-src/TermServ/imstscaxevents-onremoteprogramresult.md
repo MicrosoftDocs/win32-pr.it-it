@@ -4,9 +4,9 @@ description: Chiamato quando un programma RemoteApp restituisce un risultato al 
 ms.assetid: 5bc9570f-14fb-4b6f-a7dd-c1bce3ef19e0
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnRemoteProgramResult
-- Metodo OnRemoteProgramResult Servizi Desktop remoto, interfaccia IMsTscAxEvents
-- Interfaccia IMsTscAxEvents Servizi Desktop remoto, metodo OnRemoteProgramResult
+- Metodo OnRemoteProgramResult Servizi Desktop remoto
+- Metodo OnRemoteProgramResult Servizi Desktop remoto , interfaccia IMsTscAxEvents
+- Interfaccia IMsTscAxEvents Servizi Desktop remoto , metodo OnRemoteProgramResult
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 880e4fb3f6453114415f5bcc07a0afb9c176a1bd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 807fbd49cc6222925f34a7e7c007fef54cbc9a3db2566f024ebc0188e9c95113
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118129663"
 ---
-# <a name="imstscaxeventsonremoteprogramresult-method"></a>Metodo IMsTscAxEvents:: OnRemoteProgramResult
+# <a name="imstscaxeventsonremoteprogramresult-method"></a>Metodo IMsTscAxEvents::OnRemoteProgramResult
 
 Chiamato quando un programma RemoteApp restituisce un risultato al controllo client.
 
@@ -45,14 +45,14 @@ VOID OnRemoteProgramResult(
 
 <dl> <dt>
 
-*bstrRemoteProgram* \[ in\]
+*bstrRemoteProgram* \[ Pollici\]
 </dt> <dd>
 
 Nome del programma RemoteApp.
 
 </dd> <dt>
 
-*lError* \[ in\]
+*lError* \[ Pollici\]
 </dt> <dd>
 
 Risultato del tentativo di avviare il programma RemoteApp.
@@ -99,7 +99,7 @@ Il programma RemoteApp ha restituito un errore di protocollo.
 
 </dt> <dd>
 
-Il programma RemoteApp non è presente nell'elenco approvato del server Host sessione Desktop remoto.
+Il programma RemoteApp non è nell'elenco approvato del server Host sessione Desktop remoto.
 
 </dd> <dt>
 
@@ -121,7 +121,7 @@ Il percorso di rete del programma RemoteApp è stato negato.
 
 </dt> <dd>
 
-Il file di programma RemoteApp non è stato trovato.
+Impossibile trovare il file di programma RemoteApp.
 
 </dd> <dt>
 
@@ -132,7 +132,7 @@ Il file di programma RemoteApp non è stato trovato.
 
 </dt> <dd>
 
-Non è stato possibile avviare il programma RemoteApp.
+Impossibile avviare il programma RemoteApp.
 
 </dd> <dt>
 
@@ -143,14 +143,14 @@ Non è stato possibile avviare il programma RemoteApp.
 
 </dt> <dd>
 
-Non è possibile avviare il programma RemoteApp perché la sessione sta attualmente visualizzando il desktop sicuro.
+Impossibile avviare il programma RemoteApp perché la sessione visualizza attualmente il desktop protetto.
 
 </dd> </dl> </dd> <dt>
 
-*vbIsExecutable* \[ in\]
+*vbIsExecutable* \[ Pollici\]
 </dt> <dd>
 
-Indica se il programma RemoteApp è stato avviato direttamente, usando il nome dell'eseguibile o indirettamente, usando un'associazione di file.
+Indica se il programma RemoteApp è stato avviato direttamente, usando il nome eseguibile o indirettamente, usando un'associazione di file.
 
 </dd> </dl>
 
@@ -160,9 +160,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Implementare questo metodo nel sink di evento per ricevere una notifica che un programma RemoteApp ha restituito un risultato.
+Implementare questo metodo nel sink di evento per ricevere la notifica che un programma RemoteApp ha restituito un risultato.
 
-Questo metodo viene chiamato immediatamente dopo che il controllo ActiveX tenta di avviare il programma RemoteApp e il parametro *lError* indica il risultato del tentativo.
+Questo metodo viene chiamato immediatamente dopo che il controllo ActiveX tenta di avviare il programma RemoteApp e il *parametro lError* indica il risultato del tentativo.
 
 ## <a name="requirements"></a>Requisiti
 

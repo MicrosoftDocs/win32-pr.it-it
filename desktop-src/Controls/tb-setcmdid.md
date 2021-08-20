@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_SETCMDID (COMmctrl. h)
-description: Imposta l'identificatore del comando di un pulsante della barra degli strumenti.
+title: TB_SETCMDID messaggio (Commctrl.h)
+description: Imposta l'identificatore di comando di un pulsante della barra degli strumenti.
 ms.assetid: 0674c905-2d9d-45d3-b565-2f3bcd7d6383
 keywords:
-- Controlli di Windows Message TB_SETCMDID
+- TB_SETCMDID dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f91cc4fd4d70e912bed3163cdf783e8e17ab463
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 539fb03899a6a763a94a7cd2fd1b7e8be071f04e26e21f19e9ff53640b87be1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118167606"
 ---
-# <a name="tb_setcmdid-message"></a>TB \_ SETCMDID messaggio
+# <a name="tb_setcmdid-message"></a>TB \_ SETCMDID message
 
-Imposta l'identificatore del comando di un pulsante della barra degli strumenti.
+Imposta l'identificatore di comando di un pulsante della barra degli strumenti.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Imposta l'identificatore del comando di un pulsante della barra degli strumenti.
 *wParam* 
 </dt> <dd>
 
-Indice in base zero del pulsante di cui è necessario impostare l'identificatore di comando.
+Indice in base zero del pulsante di cui impostare l'identificatore di comando.
 
 </dd> <dt>
 
@@ -45,7 +45,7 @@ Identificatore del comando.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Restituisce **true** se l'operazione ha esito positivo o **false** in caso contr
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

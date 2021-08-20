@@ -1,9 +1,9 @@
 ---
-title: Messaggio MCM_GETCALENDARGRIDINFO (COMmctrl. h)
-description: Ottiene informazioni su una griglia di calendari.
+title: MCM_GETCALENDARGRIDINFO messaggio (Commctrl.h)
+description: Ottiene informazioni su una griglia del calendario.
 ms.assetid: 6b385362-f963-4041-bc9f-d2b7a890c9b4
 keywords:
-- Controlli di Windows Message MCM_GETCALENDARGRIDINFO
+- MCM_GETCALENDARGRIDINFO di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 506f6193ab32d059bb85fa4583441bfbe027f224
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 26365b940b17617b1f00b93697fc78fa759dd2599d3398ccb8d92725159a70cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118170168"
 ---
-# <a name="mcm_getcalendargridinfo-message"></a>\_Messaggio GETCALENDARGRIDINFO MCM
+# <a name="mcm_getcalendargridinfo-message"></a>Messaggio \_ MCM GETCALENDARGRIDINFO
 
-Ottiene informazioni su una griglia di calendari.
+Ottiene informazioni su una griglia del calendario.
 
 ## <a name="parameters"></a>Parametri
 
@@ -39,13 +39,13 @@ Deve essere zero.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**MCGRIDINFO**](/windows/win32/api/commctrl/ns-commctrl-mcgridinfo) contenente informazioni sulla griglia del calendario.
+Puntatore a [**una struttura MCGRIDINFO**](/windows/win32/api/commctrl/ns-commctrl-mcgridinfo) che contiene informazioni sulla griglia del calendario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-**True** se ha esito positivo, in caso contrario **false**.
+**TRUE in** caso di esito positivo; in **caso contrario, FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Puntatore a una struttura [**MCGRIDINFO**](/windows/win32/api/commctrl/ns-commct
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

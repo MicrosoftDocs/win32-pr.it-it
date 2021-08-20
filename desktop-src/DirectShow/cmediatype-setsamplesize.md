@@ -1,5 +1,5 @@
 ---
-description: Il metodo SetSampleSize specifica una dimensione di campionamento fissa o specifica che i campioni hanno dimensioni variabili.
+description: Il metodo SetSampleSize specifica una dimensione fissa del campione o specifica che i campioni hanno una dimensione variabile.
 ms.assetid: b0f9dd7b-4ff9-4d11-9c13-b52d7b1549b5
 title: Metodo CMediaType.SetSampleSize (Mtype.h)
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.locfileid: "118954410"
 ---
 # <a name="cmediatypesetsamplesize-method"></a>Metodo CMediaType.SetSampleSize
 
-Il `SetSampleSize` metodo specifica una dimensione fissa del campione o specifica che i campioni hanno dimensioni variabili.
+Il `SetSampleSize` metodo specifica una dimensione fissa del campione o specifica che i campioni hanno una dimensione variabile.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,7 +55,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Se il valore di *sz* è zero, il tipo di supporto usa dimensioni di campionamento variabili. In caso contrario, le dimensioni del campione sono fisse *in sz* bytes.
+Se il valore di *sz* è zero, il tipo di supporto usa dimensioni di esempio variabili. In caso contrario, le dimensioni del campione sono fisse *in sz* byte.
 
 ## <a name="requirements"></a>Requisiti
 

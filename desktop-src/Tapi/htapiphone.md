@@ -13,7 +13,7 @@ ms.locfileid: "119003599"
 ---
 # <a name="htapiphone"></a>HTAPIPHONE
 
-Il **tipo di dati HTAPIPHONE** rappresenta l'handle opaco di TAPI per una struttura di dati del telefono. TAPI deve risolvere un valore di questo tipo in un riferimento all'istanza della struttura di dati appropriata. Il provider di servizi non deve tentare di fare riferimento a questo come se fosse un puntatore, fare supposizioni sui relativi valori o interpretarne la rappresentazione in modo diverso dal passaggio del valore a TAPI nei momenti appropriati.
+Il **tipo di dati HTAPIPHONE** rappresenta l'handle opaco di TAPI per una struttura di dati del telefono. TAPI deve risolvere un valore di questo tipo in un riferimento all'istanza della struttura di dati appropriata. Il provider di servizi non deve tentare di fare riferimento a questo come se fosse un puntatore, fare supposizioni sui relativi valori o interpretarne la rappresentazione in qualsiasi modo diverso dal passaggio del valore a TAPI nei momenti appropriati.
 
  
 

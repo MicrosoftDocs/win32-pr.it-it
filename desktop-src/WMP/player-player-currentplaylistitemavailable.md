@@ -55,7 +55,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Il nome della playlist corrente può essere usato per recuperare l'oggetto **Playlist** corrispondente usando *PlaylistCollection.* **Metodo getByName.**
+Il nome della playlist corrente può essere usato per recuperare l'oggetto **Playlist** corrispondente usando *PlaylistCollection*. **Metodo getByName.**
 
 Il valore dei parametri dell'evento viene specificato da Windows Media Player ed è accessibile o passato a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, inclusa l'maiuscola.
 

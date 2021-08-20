@@ -17,7 +17,7 @@ Aggiunta immediata di numeri interi atomici alla memoria. Restituisce il valore 
 
 
 
-| imm \_ atomic \_ iadd dst0 \[ .single component mask , \_ \_ \] dst1, dstAddress \[ .swizzle, \] src0 \[ .select \_ component\] |
+| imm \_ atomic \_ iadd dst0 \[ .single component mask , \_ \_ \] dst1, dstAddress \[ .swizzle \] , src0 \[ .select \_ component\] |
 |--------------------------------------------------------------------------------------------------------------|
 
 
@@ -41,7 +41,7 @@ Aggiunta immediata di numeri interi atomici alla memoria. Restituisce il valore 
 
 Questa istruzione esegue un singolo componente intero a 32 bit di aggiunta dell'operando *src0* con *dst1* a 32 bit per ogni indirizzo del componente *dstAddress*. La firma non fa distinzione tra maiuscole e minuscole.
 
-Se *dst1* è un u , potrebbe essere stato dichiarato come non \# elaborato, tipiato o strutturato. Se tipiggiato, deve essere dichiarato come UINT/SINT con il formato di risorsa associato che è R32 \_ \_ UINT/SINT.
+Se *dst1* è un u , potrebbe essere stato dichiarato come non \# elaborato, tipidato o strutturato. Se tipiggiato, deve essere dichiarato come UINT/SINT con il formato di risorsa associato che è R32 \_ \_ UINT/SINT.
 
 Se *dst1* è g \# , deve essere dichiarato come non elaborato o strutturato.
 

@@ -1,7 +1,7 @@
 ---
-description: Fornisce informazioni aggiuntive da utilizzare con il metodo CreateReferencePoint della \_ classe VirtualSystemReferencePointService di MSVM.
+description: Fornisce informazioni aggiuntive da usare con il metodo CreateReferencePoint della classe Msvm \_ VirtualSystemReferencePointService.
 ms.assetid: 6b997ba5-871c-4c33-9ed5-b9a13cbfaacd
-title: Classe Msvm_VirtualSystemReferencePointSettingData
+title: Msvm_VirtualSystemReferencePointSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ea36f9504d9c2d6b7e875f32bb7cd0a0efd167da
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 703b0b1cedc93e670ff8ac97c7dddf9041145a4eccc064e07562947aec898c0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118146373"
 ---
-# <a name="msvm_virtualsystemreferencepointsettingdata-class"></a>\_Classe MSVM VirtualSystemReferencePointSettingData
+# <a name="msvm_virtualsystemreferencepointsettingdata-class"></a>Classe Msvm \_ VirtualSystemReferencePointSettingData
 
-Fornisce informazioni aggiuntive da utilizzare con il metodo [**CreateReferencePoint**](msvm-virtualsystemreferencepointservice-createreferencepoint.md) della classe [**\_ VirtualSystemReferencePointService di MSVM**](msvm-virtualsystemreferencepointservice.md) .
+Fornisce informazioni aggiuntive da usare con il [**metodo CreateReferencePoint**](msvm-virtualsystemreferencepointservice-createreferencepoint.md) della [**classe Msvm \_ VirtualSystemReferencePointService.**](msvm-virtualsystemreferencepointservice.md)
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -39,20 +39,20 @@ class Msvm_VirtualSystemReferencePointSettingData : CIM_SettingData
 
 ## <a name="members"></a>Members
 
-La **classe \_ VirtualSystemReferencePointSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ VirtualSystemReferencePointSettingData** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ VirtualSystemReferencePointSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ VirtualSystemReferencePointSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **ConsistencyLevel**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -68,10 +68,10 @@ Livello di coerenza del punto di riferimento.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -80,7 +80,7 @@ Livello di coerenza del punto di riferimento.
 
 <dl> <dt>
 
-[**\_SETTINGDATA CIM**](cim-settingdata.md)
+[**CIM \_ SettingData**](cim-settingdata.md)
 </dt> </dl>
 
  

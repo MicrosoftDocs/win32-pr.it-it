@@ -3,7 +3,7 @@ title: Tipo semplice HexInt8Type
 description: Definisce un tipo esadecimale a 1 byte.
 ms.assetid: 390acf84-7b5c-45e7-83bd-9f3115099568
 keywords:
-- Log eventi di tipo semplice HexInt8Type
+- EventLog di tipo semplice HexInt8Type
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e68e56340ee535531fb6711dcf01a72d92665cbe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9d2d70b7258317f16ac4e134f011a85218fa1b63aa768136f68b1d21c901856e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118121007"
 ---
 # <a name="hexint8type-simple-type"></a>Tipo semplice HexInt8Type
 
@@ -38,11 +38,11 @@ Definisce un tipo esadecimale a 1 byte.
 
 ## <a name="patterns"></a>Modelli
 
-Il tipo semplice **HexInt8Type** è una [stringa](/dotnet/api/system.string) limitata dal modello seguente:
+Il **tipo semplice HexInt8Type** è una [stringa](/dotnet/api/system.string) limitata dal modello seguente:
 
 -   `0[xX][0-9A-Fa-f]{1,2}`
 
-    Il valore può contenere da uno a due caratteri esadecimali, ad esempio 0xA o 0xAC.
+    Il valore può contenere da uno a due caratteri esadecimali(ad esempio, 0xa o 0xac).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Il tipo semplice **HexInt8Type** è una [stringa](/dotnet/api/system.string) lim
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

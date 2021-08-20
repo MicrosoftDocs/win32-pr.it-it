@@ -1,25 +1,25 @@
 ---
-title: Porting degli elenchi di visualizzazione modificati
-description: Sebbene non sia possibile modificare gli elenchi di visualizzazione OpenGL, è possibile ottenere risultati simili nidificando gli elenchi di visualizzazione e quindi eliminando e creando nuove versioni dei sottoelenchi.
+title: Porting Edited Display Lists
+description: Anche se non è possibile modificare gli elenchi di visualizzazione OpenGL, è possibile ottenere risultati simili annidando gli elenchi di visualizzazione e quindi creando nuove versioni degli elenchi secondari.
 ms.assetid: b7f7ffed-c3de-43d4-bff2-f244faa3a27a
 keywords:
-- Porting di IRIS GL, elenchi di visualizzazione
-- porting da IRIS GL, elenchi di visualizzazione
-- porting in OpenGL da IRIS GL, elenchi di visualizzazione
-- Porting OpenGL da IRIS GL, elenchi di visualizzazione
-- visualizzare elenchi, porting da IRIS GL
+- Porting IRIS GL, elenchi di visualizzazione
+- porting da IRIS GL,visualizzare elenchi
+- porting a OpenGL da IRIS GL, visualizzazione di elenchi
+- Porting OpenGL da IRIS GL, visualizzazione di elenchi
+- elenchi di visualizzazione, porting da IRIS GL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5555c850d4695ba3732b61c0a41b7aedd8af0a9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 13f1630b0560091482d47f85e038d908dcfab202ae772c4d35dc388324b46075
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119485581"
 ---
-# <a name="porting-edited-display-lists"></a>Porting degli elenchi di visualizzazione modificati
+# <a name="porting-edited-display-lists"></a>Porting Edited Display Lists
 
-Sebbene non sia possibile modificare gli elenchi di visualizzazione OpenGL, è possibile ottenere risultati simili nidificando gli elenchi di visualizzazione e quindi eliminando e creando nuove versioni dei sottoelenchi. Ad esempio:
+Anche se non è possibile modificare gli elenchi di visualizzazione OpenGL, è possibile ottenere risultati simili annidando gli elenchi di visualizzazione e quindi creando nuove versioni degli elenchi secondari. Ad esempio:
 
 ``` syntax
 glNewList (1, GL_COMPILE); 
@@ -44,9 +44,9 @@ glNewList(2, GL_COPILE);
 glEndList;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

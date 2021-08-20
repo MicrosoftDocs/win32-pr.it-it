@@ -8,17 +8,17 @@ keywords:
 - Windows Media Player,registro
 - registro, impostazioni delle dipendenze dell'applicazione
 - registro, impostazioni delle dipendenze
-- registro, impostazioni per Windows Media Player
+- registro,impostazioni per Windows Media Player
 - impostazioni del Registro di sistema delle dipendenze
 - impostazioni del Registro di sistema delle dipendenze dell'applicazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb4b1692c6a4e1a8274472bbe9d718721c1ab4f1
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: aa210debc4045326eb3bbae1e4fc137db5fb5a5dec6b89e493aedd54f110f82f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861551"
 ---
 # <a name="registering-application-dependency-windows-media-player-sdk"></a>Registrazione della dipendenza dell'applicazione (Windows Media Player SDK)
 
@@ -34,7 +34,7 @@ I valori del Registro di sistema seguenti vengono usati per registrare la dipend
 -   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ MediaPlayer \\ Setup REF \\ *\_ TYPE* \\ Descriptor, "*APP*", "*REF \_ DESCRIPTOR*"
 -   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ MediaPlayer \\ Setup REF \\ *\_ TYPE* \\ Version, "*APP*", "*WMP \_ VERSION*"
 
-I valori del Registro di sistema seguenti vengono usati per registrare la dipendenza dal runtime di Windows Media Format SDK:
+I valori del Registro di sistema seguenti vengono usati per registrare la dipendenza dal runtime Windows Media Format SDK:
 
 -   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ WindowsMedia Setup REF \\ \\ *\_ TYPE* \\ App, "*APP*", "*APP \_ STRING*"
 -   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ WindowsMedia Setup REF \\ \\ *\_ TYPE* \\ Descriptor, "*APP*", "*REF \_ DESCRIPTOR*"
@@ -48,7 +48,7 @@ Sostituire con BlockingRefCounts per bloccare la dipendenza o con DependentRefCo
 
 *APP*
 
-Nome o breve descrittore dell'applicazione. Questa stringa non verrà usata nei messaggi visualizzati per l'utente. Questo valore è l'identificatore usato in tutti e tre i valori del Registro di sistema associati a ognuno dei componenti di runtime.
+Nome o descrittore breve dell'applicazione. Questa stringa non verrà usata nei messaggi visualizzati per l'utente. Questo valore è l'identificatore usato in tutti e tre i valori del Registro di sistema associati a ognuno dei componenti di runtime.
 
 *STRINGA \_ APP*
 
@@ -64,7 +64,7 @@ La versione Windows Media Player richiesta dall'applicazione. Se non viene speci
 
 *VERSIONE DI \_ WMF*
 
-Versione di Windows Media Format SDK richiesta dall'applicazione.
+Versione dell'WINDOWS Media Format SDK richiesto dall'applicazione.
 
 I tre valori del Registro di sistema di esempio seguenti illustrano come configurare i valori per l'applicazione:
 
@@ -76,7 +76,7 @@ I tre valori del Registro di sistema di esempio seguenti illustrano come configu
 
 <dl> <dt>
 
-[**Impostazioni del Registro di sistema**](registry-settings.md)
+[**Registro Impostazioni**](registry-settings.md)
 </dt> </dl>
 
  

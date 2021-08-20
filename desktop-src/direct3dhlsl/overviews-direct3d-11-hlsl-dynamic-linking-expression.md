@@ -1,6 +1,6 @@
 ---
 title: Restrizioni di utilizzo dell'interfaccia
-description: L'hardware GPU corrente non supporta informazioni variabili sullo slot in fase di esecuzione dello shader. Di conseguenza, i riferimenti all'interfaccia non possono essere modificati all'interno di un'espressione condizionale, ad esempio un'istruzione if o switch.
+description: L'hardware GPU corrente non supporta informazioni di slot variabili in fase di esecuzione dello shader. Di conseguenza, i riferimenti all'interfaccia non possono essere modificati all'interno di un'espressione condizionale, ad esempio un'istruzione if o switch.
 ms.assetid: 95a505d8-3ec4-49b7-bb2b-f29a655e4225
 ms.topic: article
 ms.date: 05/31/2018
@@ -18,7 +18,7 @@ ms.locfileid: "119672561"
 ---
 # <a name="interface-usage-restrictions"></a>Restrizioni di utilizzo dell'interfaccia
 
-L'hardware GPU corrente non supporta informazioni variabili sullo slot in fase di esecuzione dello shader. Di conseguenza, i riferimenti all'interfaccia non possono essere modificati all'interno di un'espressione condizionale, ad esempio un'istruzione if o switch.
+L'hardware GPU corrente non supporta informazioni di slot variabili in fase di esecuzione dello shader. Di conseguenza, i riferimenti all'interfaccia non possono essere modificati all'interno di un'espressione condizionale, ad esempio un'istruzione if o switch.
 
 Il codice shader seguente illustra quando si verificherà questa restrizione e un possibile approccio alternativo.
 
@@ -78,7 +78,7 @@ class C4 : A, B
 
 
 
-Non è possibile modificare un riferimento a un'interfaccia all'interno dell'espressione condizionale (un'istruzione if):
+Non è possibile modificare un riferimento all'interfaccia all'interno dell'espressione condizionale (istruzione if):
 
 
 ```
@@ -110,7 +110,7 @@ float main() : wicked
 
 
 
-Data la stessa dichiarazione di interfaccia e classe, è possibile usare un indice per fornire la stessa funzionalità ed evitare lo sroto della registrazione forzata del ciclo.
+Date le stesse dichiarazioni di interfaccia e classe, è possibile usare un indice per fornire la stessa funzionalità ed evitare la annullamento della registrazione forzata del ciclo.
 
 
 ```

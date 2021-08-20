@@ -1,11 +1,11 @@
 ---
 title: Metodo ID3DX11EffectPass GetAnnotationByName (D3dx11effect.h)
-description: Ottenere un'annotazione in base al nome. | Metodo ID3DX11EffectPass GetAnnotationByName (D3dx11effect.h)
+description: Ottiene un'annotazione in base al nome. | Metodo ID3DX11EffectPass GetAnnotationByName (D3dx11effect.h)
 ms.assetid: b54a4fb0-62c7-4d96-af30-f9ae04ff7dab
 keywords:
 - Metodo GetAnnotationByName Direct3D 11
-- Metodo GetAnnotationByName Interfaccia Direct3D 11, ID3DX11EffectPass
-- Id3DX11EffectPass interface Direct3D 11 , Metodo GetAnnotationByName
+- Metodo GetAnnotationByName Direct3D 11, interfaccia ID3DX11EffectPass
+- ID3DX11EffectPass interface Direct3D 11 , GetAnnotationByName method
 topic_type:
 - apiref
 api_name:
@@ -26,7 +26,7 @@ ms.locfileid: "118535077"
 ---
 # <a name="id3dx11effectpassgetannotationbyname-method"></a>Metodo ID3DX11EffectPass::GetAnnotationByName
 
-Ottenere un'annotazione in base al nome.
+Ottiene un'annotazione in base al nome.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,12 +56,12 @@ Nome dell'elemento Annotation.
 
 Tipo: **[ **ID3DX11EffectVariable**](id3dx11effectvariable.md)\***
 
-Puntatore a un [**oggetto ID3DX11EffectVariable.**](id3dx11effectvariable.md)
+Puntatore a [**id3DX11EffectVariable.**](id3dx11effectvariable.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra gli effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -72,7 +72,7 @@ Puntatore a un [**oggetto ID3DX11EffectVariable.**](id3dx11effectvariable.md)
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

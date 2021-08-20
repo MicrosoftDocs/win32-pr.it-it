@@ -109,7 +109,7 @@ Le chiamate a questo metodo avranno sempre esito negativo.
 
 <dl> <dt>
 
-[**Archivio IP**](ipstore.md)
+[**IPStore**](ipstore.md)
 </dt> </dl>
 
  

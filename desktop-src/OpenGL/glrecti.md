@@ -1,9 +1,9 @@
 ---
-title: funzione glRecti (GL. h)
+title: Funzione glRecti (Gl.h)
 description: La funzione glRecti disegna un rettangolo.
 ms.assetid: 8f618b5e-5406-4342-8f7a-83a65bad8a6f
 keywords:
-- funzione glRecti OpenGL
+- Funzione glRecti OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a17512c9720aea1d2b9dcf5c90b0bde4c67b8fc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0fa1432cc74dc87165fcddfa5e28542434758e11606d186302fc2cfe3c6453a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119491991"
 ---
-# <a name="glrecti-function"></a>glRecti (funzione)
+# <a name="glrecti-function"></a>Funzione glRecti
 
-La funzione **glRecti** disegna un rettangolo.
+La **funzione glRecti** disegna un rettangolo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,28 +43,28 @@ void WINAPI glRecti(
 
 <dl> <dt>
 
-*X1* 
+*x1* 
 </dt> <dd>
 
 Coordinata *x* del vertice di un rettangolo.
 
 </dd> <dt>
 
-*Y1* 
+*y1* 
 </dt> <dd>
 
 Coordinata *y* del vertice di un rettangolo.
 
 </dd> <dt>
 
-*X2* 
+*x2* 
 </dt> <dd>
 
 Coordinata *x* del vertice opposto del rettangolo.
 
 </dd> <dt>
 
-*Y2* 
+*y2* 
 </dt> <dd>
 
 Coordinata *y* del vertice opposto del rettangolo.
@@ -77,35 +77,35 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Il codice di errore seguente può essere recuperato dalla funzione [**glGetError**](glgeterror.md) .
+Il codice di errore seguente può essere recuperato dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **glRecti** supporta una specifica efficiente di rettangoli come due punti d'angolo. Ogni comando Rectangle accetta quattro argomenti, organizzati come due coppie consecutive di coordinate (*x*, *y*) o come due puntatori a matrici, ognuna contenente una coppia (*x*, *y*). Il rettangolo risultante è definito nel piano *z* = 0.
+La **funzione glRecti** supporta una specifica efficiente dei rettangoli come due punti d'angolo. Ogni comando rettangolo accetta quattro argomenti, organizzati come due coppie consecutive di coordinate (*x*, *y*) o come due puntatori alle matrici, ognuno contenente una coppia (*x*, *y*). Il rettangolo risultante è definito nel *piano z* = 0.
 
-La funzione **glRecti**(*x1,* *Y1,* *X2,* *Y2*) è esattamente equivalente alla sequenza seguente:
+La **funzione glRecti**(*x1,* *y1,* *x2,* *y2*) è esattamente equivalente alla sequenza seguente:
 
-**glBegin**( \_ poligono GL);
+**glBegin**(GL \_ POLYGON);
 
-**glVertex2**( *x1,* *Y1* );
+**glVertex2**( *x1,* *y1* );
 
-**glVertex2**( *X2,* *Y1* );
+**glVertex2**( *x2,* *y1* );
 
-**glVertex2**( *X2,* *Y2* );
+**glVertex2**( *x2,* *y2* );
 
-**glVertex2**( *x1,* *Y2* );
+**glVertex2**( *x1,* *y2* );
 
-**glEnd**();
+**glEnd**( );
 
-Si noti che se il secondo vertice è sopra e a destra del primo vertice, il rettangolo viene costruito con una bobina in senso antiorario.
+Si noti che se il secondo vertice si trova sopra e a destra del primo vertice, il rettangolo viene costruito con una avvolgimento in senso antiorario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -115,8 +115,8 @@ Si noti che se il secondo vertice è sopra e a destra del primo vertice, il rett
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -128,7 +128,7 @@ Si noti che se il secondo vertice è sopra e a destra del primo vertice, il rett
 [**glBegin**](glbegin.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glVertex**](glvertex-functions.md)

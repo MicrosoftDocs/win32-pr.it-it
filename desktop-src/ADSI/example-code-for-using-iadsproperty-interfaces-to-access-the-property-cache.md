@@ -5,7 +5,7 @@ ms.assetid: d2ac3a1e-642c-451c-a79e-baa38dacb4a2
 ms.tgt_platform: multiple
 keywords:
 - Codice di esempio ADSI , uso delle interfacce IADsProperty per accedere alla cache delle proprietà
-- Codice di esempio per l'uso delle interfacce IADsProperty per accedere alla cache delle proprietà ADSI
+- Codice di esempio per l'uso di interfacce IADsProperty per accedere alla cache delle proprietà ADSI
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a885a52b9c699153a17d33e0ec52edbb6f59c226e6844ac2c8c02b3ec082157c

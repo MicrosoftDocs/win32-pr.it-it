@@ -44,9 +44,9 @@ Specifica gli argomenti associati all'operazione della riga di comando.
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo C++, vedere la [**proprietà Arguments di IExecAction**](/windows/desktop/api/taskschd/nf-taskschd-iexecaction-get_arguments).
+Per lo sviluppo in C++, vedere la [**proprietà Arguments di IExecAction.**](/windows/desktop/api/taskschd/nf-taskschd-iexecaction-get_arguments)
 
-Per lo sviluppo di script, [**vedere ExecAction.Arguments**](execaction-arguments.md).
+Per lo sviluppo di script, [**vedere ExecAction.Arguments.**](execaction-arguments.md)
 
 ## <a name="examples"></a>Esempio
 
@@ -58,8 +58,8 @@ Per un esempio completo del codice XML per un'attività che usa un'azione esegui
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -67,7 +67,7 @@ Per un esempio completo del codice XML per un'attività che usa un'azione esegui
 
 <dl> <dt>
 
-[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

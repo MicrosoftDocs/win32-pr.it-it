@@ -4,12 +4,12 @@ description: Questa sezione contiene informazioni sugli elementi di programmazio
 ms.assetid: 13a7b6d0-4bf1-480f-b447-838a550a5866
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9bbfaea9b86c2d8dc42c84d050e5bec997ceb18
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6d103701a2f9babc8756cd1c2e05d45ee6ab1b380c7008ec7771b1c464738e3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118168571"
 ---
 # <a name="syslink"></a>SysLink
 
@@ -21,7 +21,7 @@ Questa sezione contiene informazioni sugli elementi di programmazione usati con 
 
 | Argomento                                    | Contenuto                                                                                       |
 |------------------------------------------|------------------------------------------------------------------------------------------------|
-| [Controlli SysLink](syslink-overview.md) | Il controllo SysLink rappresenta un modo pratico per incorporare collegamenti ipertestuali in una finestra.<br/> |
+| [Controlli SysLink](syslink-overview.md) | Il controllo SysLink offre un modo pratico per incorporare collegamenti ipertesto in una finestra.<br/> |
 
 
 
@@ -33,11 +33,11 @@ Questa sezione contiene informazioni sugli elementi di programmazione usati con 
 
 | Argomento                                           | Contenuto                                                                             |
 |-------------------------------------------------|--------------------------------------------------------------------------------------|
-| [**\_GETIDEALHEIGHT LM**](lm-getidealheight.md) | Recupera l'altezza preferita di un collegamento per la larghezza corrente del controllo.<br/> |
-| [**\_GETIDEALSIZE LM**](lm-getidealsize.md)     | Recupera l'altezza preferita di un collegamento per la larghezza corrente del controllo.<br/> |
-| [**GetItem di LM \_**](lm-getitem.md)               | Recupera gli Stati e gli attributi di un elemento.<br/>                           |
-| [**HITTEST di LM \_**](lm-hittest.md)               | Determina se l'utente ha fatto clic sul collegamento specificato.<br/>                   |
-| [**\_elemento GETitem**](lm-setitem.md)               | Imposta gli Stati e gli attributi di un elemento.<br/>                                |
+| [**LM \_ GETIDEALHEIGHT**](lm-getidealheight.md) | Recupera l'altezza preferita di un collegamento per la larghezza corrente del controllo.<br/> |
+| [**LM \_ GETIDEALSIZE**](lm-getidealsize.md)     | Recupera l'altezza preferita di un collegamento per la larghezza corrente del controllo.<br/> |
+| [**LM \_ GETITEM**](lm-getitem.md)               | Recupera gli stati e gli attributi di un elemento.<br/>                           |
+| [**LM \_ HITTEST**](lm-hittest.md)               | Determina se l'utente ha fatto clic sul collegamento specificato.<br/>                   |
+| [**LM \_ SETITEM**](lm-setitem.md)               | Imposta gli stati e gli attributi di un elemento.<br/>                                |
 
 
 
@@ -49,9 +49,9 @@ Questa sezione contiene informazioni sugli elementi di programmazione usati con 
 
 | Argomento                                | Contenuto                                                                                                                                                                           |
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**LHITTESTINFO**](/windows/win32/api/commctrl/ns-commctrl-lhittestinfo) | Utilizzato per ottenere informazioni sul collegamento corrispondente a una posizione specificata. <br/>                                                                                              |
-| [**LITEM**](/windows/win32/api/commctrl/ns-commctrl-litem)               | Utilizzato per impostare e recuperare le informazioni su un elemento di collegamento.<br/>                                                                                                                 |
-| [**NMLINK**](/windows/win32/api/commctrl/ns-commctrl-nmlink)             | [**NMLINK**](/windows/win32/api/commctrl/ns-commctrl-nmlink) contiene informazioni di notifica. Inviare questa struttura con i messaggi di risposta [nm \_ Click](nm-click-syslink.md) o [nm \_ ](nm-return.md) .<br/> |
+| [**LHITTESTINFO**](/windows/win32/api/commctrl/ns-commctrl-lhittestinfo) | Usato per ottenere informazioni sul collegamento corrispondente a una determinata posizione. <br/>                                                                                              |
+| [**LITEM**](/windows/win32/api/commctrl/ns-commctrl-litem)               | Usato per impostare e recuperare informazioni su un elemento di collegamento.<br/>                                                                                                                 |
+| [**NMLINK**](/windows/win32/api/commctrl/ns-commctrl-nmlink)             | [**NMLINK contiene**](/windows/win32/api/commctrl/ns-commctrl-nmlink) informazioni di notifica. Inviare questa struttura con i [messaggi NM \_ CLICK](nm-click-syslink.md) [o NM \_ RETURN.](nm-return.md)<br/> |
 
 
 

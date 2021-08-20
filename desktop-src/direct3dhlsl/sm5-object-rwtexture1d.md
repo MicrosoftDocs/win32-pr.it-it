@@ -29,14 +29,14 @@ Risorsa di lettura/scrittura.
 | Metodo                                                        | Descrizione                   |
 |---------------------------------------------------------------|-------------------------------|
 | [**GetDimensions**](sm5-object-rwtexture1d-getdimensions.md) | Ottiene le dimensioni della risorsa. |
-| [**Caricamento**](rwtexture1d-load.md)                              | Legge i dati delle trame.           |
+| [**Caricamento**](rwtexture1d-load.md)                              | Legge i dati della trama.           |
 | [**Operatore\[\]**](sm5-object-rwtexture1d-operatorindex.md)  | Ottiene una variabile di risorsa.     |
 
 
 
  
 
-È possibile aggiungere come **prefisso gli oggetti RWTexture1D** alla classe di archiviazione **globalmentecoherent**. Questa classe di archiviazione fa sì che le barriere di memoria e le sincronizzazioni scaricano i dati nell'intera GPU in modo che altri gruppi possano visualizzare le scritture. Senza questo identificatore, una barriera di memoria o una sincronizzazione scarica un UAV solo all'interno del gruppo corrente.
+È possibile aggiungere il **prefisso RWTexture1D** agli oggetti con la classe di archiviazione **globalmentecoherent.** Questa classe di archiviazione causa barriere di memoria e sincronizzazioni per scaricare i dati nell'intera GPU in modo che altri gruppi possano visualizzare le scritture. Senza questo identificatore, una barriera di memoria o una sincronizzazione scarica un UAV solo all'interno del gruppo corrente.
 
 Un **oggetto RWTexture1D** richiede un tipo di elemento in un'istruzione di dichiarazione per l'oggetto. Ad esempio, la dichiarazione seguente è corretta:
 
@@ -47,24 +47,24 @@ RWTexture1D<float> tex;
 
 
 
-Poiché un **oggetto RWTexture1D** è un oggetto di tipo UAV, le relative proprietà differiscono da un oggetto di tipo SRV (Shader Resource View), ad esempio un [**oggetto Texture1D.**](sm5-object-texture1d.md) Ad esempio, è possibile leggere e scrivere in un **oggetto RWTexture1D,** ma è possibile leggere solo da un **oggetto Texture1D.**
+Poiché un **oggetto RWTexture1D** è un oggetto di tipo UAV, le relative proprietà differiscono da un oggetto di tipo SRV (Shader Resource View), ad esempio [**un oggetto Texture1D.**](sm5-object-texture1d.md) Ad esempio, è possibile leggere e scrivere in un **oggetto RWTexture1D,** ma è possibile leggere solo da un **oggetto Texture1D.**
 
-Un **oggetto RWTexture1D** non può usare metodi di un [**oggetto Texture1D,**](sm5-object-texture1d.md) ad esempio [Sample.](dx-graphics-hlsl-to-sample.md) Tuttavia, poiché è possibile creare più tipi di visualizzazione per la stessa risorsa, è possibile dichiarare più tipi di trama come singola trama in più shader. Ad esempio, è possibile dichiarare e usare un **oggetto RWTexture1D** come *tex* in un compute shader e quindi dichiarare e usare un oggetto **Texture1D** come *tex* in un pixel shader.
+Un **oggetto RWTexture1D** non può usare i metodi di un [**oggetto Texture1D,**](sm5-object-texture1d.md) ad esempio [Sample.](dx-graphics-hlsl-to-sample.md) Tuttavia, poiché è possibile creare più tipi di visualizzazione per la stessa risorsa, è possibile dichiarare più tipi di trama come singola trama in più shader. Ad esempio, è possibile dichiarare e usare un oggetto **RWTexture1D** come *tex* in un compute shader e quindi dichiarare e usare un oggetto **Texture1D** come *tex* in un pixel shader.
 
 > [!Note]  
-> Il runtime applica determinati modelli di utilizzo quando si creano più tipi di visualizzazione per la stessa risorsa. Ad esempio, il runtime non consente di avere contemporaneamente attivo sia un mapping UAV per una risorsa che un mapping SRV per la stessa risorsa.
+> Il runtime applica determinati modelli di utilizzo quando si creano più tipi di visualizzazione per la stessa risorsa. Ad esempio, il runtime non consente di avere contemporaneamente sia un mapping UAV per una risorsa che un mapping SRV per la stessa risorsa.
 
  
 
 ## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questo oggetto è supportato nei modelli shader seguenti.
+Questo oggetto è supportato nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Modello shader 5 e](d3d11-graphics-reference-sm5.md) modelli shader superiori | sì       |
+| [Modello shader 5 e](d3d11-graphics-reference-sm5.md) modelli di shader superiori | sì       |
 
 
 

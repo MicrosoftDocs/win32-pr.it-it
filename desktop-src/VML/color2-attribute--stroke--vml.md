@@ -1,50 +1,50 @@
 ---
-title: Attributo color2 (Stroke) (la)
-description: Attributo color2 (Stroke) (la)
+title: Attributo Color2 (Stroke)(VML)
+description: Attributo Color2 (Stroke)(VML)
 ms.assetid: 60b8035e-9477-4f8b-817b-dd6c41bdfa79
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d577843b7d65de4f6197beabc877c308cf00154
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 108c767f7337f486f8b7df5a4506b3b3d487dabf146656890def0c5e1ad32a88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104473763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119867431"
 ---
-# <a name="color2-attribute-strokevml"></a>Attributo color2 (Stroke) (la)
+# <a name="color2-attribute-strokevml"></a>Attributo Color2 (Stroke)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce un secondo colore per i tratti. Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
-[Stroke](msdn-online-vml-stroke-element.md)
+[infarto](msdn-online-vml-stroke-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* color2 = " *Expression* " >
+<v: *element* color2=" *expression* ">
 
 Sintassi dello script
 
-*element* . color2 = "*Expression*"
+*element* .color2="*expression*"
 
-*espressione* = *elemento*. color2
+*expression* = *elemento*.color2
 
 **Osservazioni:**
 
-Un secondo colore viene usato quando il tipo di riempimento di un tratto è un modello.
+Un secondo colore viene usato quando il tipo di riempimento di un tratto è un motivo.
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
-Il tratto della forma è un riempimento di pattern in cui il riempimento viene definito dall'immagine di origine, ma lo sfondo trasparente viene definito dal secondo colore.
+Il tratto della forma è un riempimento a motivo in cui il riempimento è definito dall'immagine di origine, ma lo sfondo trasparente è definito dal secondo colore.
 
 
 ```HTML
@@ -58,6 +58,6 @@ Il tratto della forma è un riempimento di pattern in cui il riempimento viene d
 
 
 
- 
+ 
 
- 
+ 

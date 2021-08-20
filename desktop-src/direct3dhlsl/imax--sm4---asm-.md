@@ -1,6 +1,6 @@
 ---
 title: imax (sm4 - asm)
-description: Valore massimo intero per componente.
+description: Numero intero per componente massimo.
 ms.assetid: 005468AA-577E-441F-ACD5-37A691E62CDD
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "119672861"
 ---
 # <a name="imax-sm4---asm"></a>imax (sm4 - asm)
 
-Valore massimo intero per componente.
+Numero intero per componente massimo.
 
 
 
@@ -40,7 +40,7 @@ Valore massimo intero per componente.
 
 Il modificatore di negazione facoltativo sugli operandi di origine accetta il complemento 2 prima di eseguire l'operazione.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -52,9 +52,9 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
@@ -63,9 +63,9 @@ Questa funzione è supportata nei modelli shader seguenti.
 | [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
 | [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
 | [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
 | [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -75,7 +75,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

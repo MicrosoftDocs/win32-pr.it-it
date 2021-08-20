@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà InstanceParameters. DbExtensionSize'
-title: Proprietà InstanceParameters. DbExtensionSize
+description: Altre informazioni sulla proprietà InstanceParameters.DbExtensionSize
+title: InstanceParameters.DbExtensionSize - proprietà
 TOCTitle: 'DbExtensionSize property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.DbExtensionSize
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.dbextensionsize(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 402c37ca649a9e9ff70435c8a8ef58f79376842b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c78b0bc4f7b216d3a543e2fe137d4fbc8564c161827ffa034916cd56b5ed66c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118076826"
 ---
-# <a name="instanceparametersdbextensionsize-property"></a>Proprietà InstanceParameters. DbExtensionSize
+# <a name="instanceparametersdbextensionsize-property"></a>InstanceParameters.DbExtensionSize - proprietà
 
-Ottiene o imposta il numero di pagine aggiunte a un file di database ogni volta che è necessario aumentare per contenere più dati.
+Ottiene o imposta il numero di pagine aggiunte a un file di database ogni volta che è necessario aumentare le dimensioni per contenere più dati.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,7 +62,7 @@ public int DbExtensionSize { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -70,6 +70,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Classe InstanceParameters](./instanceparameters-class.md)
 
-[Membri di InstanceParameters](./instanceparameters-members.md)
+[Membri instanceParameters](./instanceparameters-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

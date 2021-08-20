@@ -74,7 +74,7 @@ Definisce gli elementi figlio e le informazioni di sequenziazione per [**l'eleme
 | [**Descrizione**](taskschedulerschema-description-registrationinfotype-element.md)               | string   | Specifica la descrizione dell'attività.<br/>                                                                  |
 | [**Documentazione**](taskschedulerschema-documentation-registrationinfotype-element.md)           | string   | Specifica qualsiasi documentazione aggiuntiva per l'attività.<br/>                                                    |
 | [**SecurityDescriptor**](taskschedulerschema-securitydescriptor-registrationinfotype-element.md) | string   | Specifica il descrittore di sicurezza dell'attività.<br/>                                                          |
-| [**fonte**](taskschedulerschema-source-registrationinfotype-element.md)                         | string   | Specifica la posizione di origine dell'attività. Ad esempio, da un componente, un servizio, un'applicazione o un utente.<br/> |
+| [**fonte**](taskschedulerschema-source-registrationinfotype-element.md)                         | string   | Specifica da dove ha origine l'attività. Ad esempio, da un componente, un servizio, un'applicazione o un utente.<br/> |
 | [**URI**](taskschedulerschema-uri-registrationinfotype-element.md)                               | anyURI   | Specifica l'URI dell'attività.<br/>                                                                          |
 | [**Versione**](taskschedulerschema-version-registrationinfotype-element.md)                       | string   | Specifica il numero di versione dell'attività.<br/>                                                               |
 
@@ -86,8 +86,8 @@ Definisce gli elementi figlio e le informazioni di sequenziazione per [**l'eleme
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

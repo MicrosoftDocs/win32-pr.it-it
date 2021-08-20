@@ -1,5 +1,5 @@
 ---
-description: Controlla il modo in cui le istanze vengono create o aggiornate a seconda dei flag specificati.
+description: Controlla la modalità di creazione o aggiornamento delle istanze a seconda dei flag specificati.
 ms.assetid: 9932edf2-2e5f-4c5e-9889-f2be4af11bf2
 ms.tgt_platform: multiple
 title: pragma instanceflags
@@ -13,16 +13,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: acc05e201fcf153ab2156d4a360ce36b4539cd57
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 107325b329fcc51f474dd3ac9ea3a16e8882ff55114012d87a303ac73647bb37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118817987"
 ---
 # <a name="pragma-instanceflags"></a>pragma instanceflags
 
-Il comando per il preprocessore **pragma instanceflags** controlla il modo in cui le istanze vengono create o aggiornate a seconda dei flag specificati.
+Il comando del preprocessore **pragma instanceflags** controlla la modalità di creazione o aggiornamento delle istanze a seconda dei flag specificati.
 
 Di seguito viene descritta la sintassi:
 
@@ -33,14 +33,14 @@ Di seguito viene descritta la sintassi:
 
 
 
-Il *\[ flag \]* deve essere uno degli argomenti seguenti.
+*\[ Flag \]* deve essere uno degli argomenti seguenti.
 
 
 
 | Flag       | Descrizione                                                                                                |
 |------------|------------------------------------------------------------------------------------------------------------|
 | createonly | Impedisce al compilatore di modificare le istanze esistenti nel file MOF.                                |
-| UpdateOnly | Impedisce al compilatore di creare nuove istanze se non esiste un'istanza specificata nel file MOF. |
+| updateonly | Impedisce al compilatore di creare nuove istanze se non esiste un'istanza specificata nel file MOF. |
 
 
 
@@ -48,7 +48,7 @@ Il *\[ flag \]* deve essere uno degli argomenti seguenti.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come utilizzare questo comando.
+L'esempio seguente illustra come usare questo comando.
 
 
 ```mof
@@ -72,7 +72,7 @@ Nell'esempio seguente viene illustrato come utilizzare questo comando.
 
 <dl> <dt>
 
-[Comandi del preprocessore](preprocessor-commands.md)
+[Comandi per il preprocessore](preprocessor-commands.md)
 </dt> </dl>
 
  

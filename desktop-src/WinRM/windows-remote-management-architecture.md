@@ -19,21 +19,21 @@ ms.locfileid: "120121596"
 ---
 # <a name="windows-remote-management-architecture"></a>Windows Architettura di gestione remota
 
-L Windows di gestione remota è costituita da componenti nei computer client e server. La figura seguente illustra i componenti in entrambi i computer, il modo in cui i componenti interagiscono con altri componenti e il protocollo usato per comunicare tra i computer.
+L Windows di gestione remota è costituita da componenti nei computer client e server. Nella figura seguente vengono illustrati i componenti in entrambi i computer, il modo in cui i componenti interagiscono con altri componenti e il protocollo utilizzato per comunicare tra i computer.
 
 ![Architettura di winrm](images/winrm-architecture.png)
 
 ## <a name="requesting-client"></a>Richiesta del client
 
-I componenti winrm seguenti si trovano nel computer che esegue lo script che richiede i dati.
+I componenti WinRM seguenti si trovano nel computer che esegue lo script che richiede i dati.
 
 -   Applicazione WinRM
 
-    Si tratta dello script o dello strumento da riga di comando **Winrm** che usa l'API di scripting WinRM per effettuare chiamate per richiedere dati o per eseguire metodi. Per altre informazioni, vedere [l'API di scripting winrm](winrm-scripting-api.md).
+    Si tratta dello script o dello strumento da riga di comando **Winrm** che usa l'API di scripting WinRM per effettuare chiamate per richiedere dati o eseguire metodi. Per altre informazioni, vedere [l'API di scripting WinRM.](winrm-scripting-api.md)
 
 -   WSMAuto.dll
 
-    Livello di Automazione che fornisce supporto per gli script.
+    Livello di automazione che fornisce supporto per gli script.
 
 -   WsmCL.dll
 
@@ -53,7 +53,7 @@ I componenti winrm seguenti si trovano nel computer che risponde.
 
 -   WSMAuto.dll
 
-    Livello di Automazione che fornisce supporto per gli script.
+    Livello di automazione che fornisce supporto per gli script.
 
 -   WsmCL.dll
 
@@ -61,7 +61,7 @@ I componenti winrm seguenti si trovano nel computer che risponde.
 
 -   WsmSvc.dll
 
-    Servizio [*listener*](windows-remote-management-glossary.md) WinRM.
+    Servizio [*listener WinRM.*](windows-remote-management-glossary.md)
 
 -   WsmProv.dll
 
@@ -77,7 +77,7 @@ I componenti winrm seguenti si trovano nel computer che risponde.
 
 -   Driver IPMI (Intelligent Platform Management Interface) e provider IPMI WMI
 
-    Questi componenti forniscono tutti i dati hardware richiesti usando le classi IPMI. Per altre informazioni, vedere [Provider IPMI](/previous-versions/windows/desktop/ipmiprv/ipmi-provider). L'hardware BMC deve essere stato rilevato da SMBIOS o dal dispositivo creato manualmente caricando il driver. Per altre informazioni, vedere [Installazione e configurazione per la Windows remota](installation-and-configuration-for-windows-remote-management.md).
+    Questi componenti forniscono tutti i dati hardware richiesti usando le classi IPMI. Per altre informazioni, vedere [Provider IPMI.](/previous-versions/windows/desktop/ipmiprv/ipmi-provider) L'hardware BMC deve essere stato rilevato da SMBIOS o dal dispositivo creato manualmente caricando il driver. Per altre informazioni, vedere [Installation and Configuration for Windows Remote Management](installation-and-configuration-for-windows-remote-management.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

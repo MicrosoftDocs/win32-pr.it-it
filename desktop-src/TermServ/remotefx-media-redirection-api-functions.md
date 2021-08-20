@@ -1,20 +1,20 @@
 ---
-title: Funzioni API di reindirizzamento supporti RemoteFX
-description: L'API di reindirizzamento dei supporti RemoteFX supporta le funzioni seguenti.
+title: RemoteFX Funzioni dell'API Di reindirizzamento multimediale
+description: L RemoteFX'API di reindirizzamento dei supporti supporta le funzioni seguenti.
 ms.assetid: 31E9D0A2-BDB1-4FA8-88AE-E3F5D60C7433
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 501fc3e176fcd563526016c8aa4ccc3c4df3f24f
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 75045858e131f67a8568d1a2124abc2c634696c13487b17da85f919f4e30068a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104397763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118127800"
 ---
-# <a name="remotefx-media-redirection-api-functions"></a>Funzioni API di reindirizzamento supporti RemoteFX
+# <a name="remotefx-media-redirection-api-functions"></a>RemoteFX Funzioni dell'API Di reindirizzamento multimediale
 
-L'API di reindirizzamento dei supporti RemoteFX supporta le funzioni seguenti.
+L RemoteFX'API di reindirizzamento dei supporti supporta le funzioni seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -23,13 +23,13 @@ L'API di reindirizzamento dei supporti RemoteFX supporta le funzioni seguenti.
 [**WTSSetRenderHint**](/windows/desktop/api/WtsHintApi/nf-wtshintapi-wtssetrenderhint)
 </dt> <dd>
 
-Utilizzato da un'applicazione che Visualizza contenuto che può essere ottimizzato per la visualizzazione in una sessione remota per identificare l'area di una finestra che rappresenta il contenuto effettivo.
+Usato da un'applicazione che visualizza contenuto che può essere ottimizzato per la visualizzazione in una sessione remota per identificare l'area di una finestra che rappresenta il contenuto effettivo.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

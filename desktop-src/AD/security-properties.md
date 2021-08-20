@@ -88,7 +88,7 @@ Non replicata. [**L'attributo badPwdCount**](/windows/desktop/ADSchema/a-badpwdc
 
 [**L'attributo homeDirectory**](/windows/desktop/ADSchema/a-homedirectory) specifica il percorso della home directory per l'utente. La stringa può essere Null.
 
-Se [**homeDrive è**](/windows/desktop/ADSchema/a-homedrive) impostato e specifica una lettera di unità, [**homeDirectory**](/windows/desktop/ADSchema/a-homedirectory) deve essere un percorso UNC. Il percorso deve essere un percorso UNC di rete della directory di \\ \\ condivisione del server \\ \\ form. Questo valore può essere una stringa Null.
+Se [**homeDrive è**](/windows/desktop/ADSchema/a-homedrive) impostato e specifica una lettera di unità, [**homeDirectory**](/windows/desktop/ADSchema/a-homedirectory) deve essere un percorso UNC. Il percorso deve essere un percorso UNC di rete della directory della \\ \\ condivisione del server \\ \\ form. Questo valore può essere una stringa Null.
 
 Se [**homeDrive**](/windows/desktop/ADSchema/a-homedrive) non è impostato, [**homeDirectory**](/windows/desktop/ADSchema/a-homedirectory) deve essere un percorso locale, ad esempio C: \\ mylocaldir.
 
@@ -136,7 +136,7 @@ Non replicata. [**L'attributo lastLogon**](/windows/desktop/ADSchema/a-lastlogon
 <span id="lmPwdHistory"></span><span id="lmpwdhistory"></span><span id="LMPWDHISTORY"></span>[**lmPwdHistory**](/windows/desktop/ADSchema/a-lmpwdhistory)
 </dt> <dd>
 
-[**L'attributo lmPwdHistory**](/windows/desktop/ADSchema/a-lmpwdhistory) è la cronologia delle password dell'utente in formato unidiredirezione LAN Manager (LM). L'OWF LM viene usato per la compatibilità con i client LAN Manager 2.x, Windows 95 e Windows 98. Questo attributo viene usato solo dal sistema operativo. Tenere presente che non è possibile derivare la password in testo non crittografato dal formato OWF della password.
+[**L'attributo lmPwdHistory**](/windows/desktop/ADSchema/a-lmpwdhistory) è la cronologia delle password dell'utente in formato unidiredirezione LAN Manager (LM). L'OWF LM viene usato per la compatibilità con i client DIN Manager 2.x, Windows 95 e Windows 98. Questo attributo viene usato solo dal sistema operativo. Tenere presente che non è possibile derivare la password in testo non crittografato dal formato OWF della password.
 
 </dd> <dt>
 
@@ -164,7 +164,7 @@ Non replicata. [**L'attributo logonCount**](/windows/desktop/ADSchema/a-logoncou
 <span id="memberOf"></span><span id="memberof"></span><span id="MEMBEROF"></span>[**Memberof**](/windows/desktop/ADSchema/a-memberof)
 </dt> <dd>
 
-[**L'attributo memberOf**](/windows/desktop/ADSchema/a-memberof) è un attributo multivalore che contiene gruppi di cui l'utente è un membro diretto, ad eccezione del gruppo primario, rappresentato da [**primaryGroupId**](/windows/desktop/ADSchema/a-primarygroupid). L'appartenenza al gruppo dipende dal controller di dominio da cui viene recuperato questo attributo:
+[**L'attributo memberOf**](/windows/desktop/ADSchema/a-memberof) è un attributo multivalore che contiene gruppi di cui l'utente è un membro diretto, ad eccezione del gruppo primario, rappresentato da [**primaryGroupId**](/windows/desktop/ADSchema/a-primarygroupid). L'appartenenza al gruppo dipende dal controller di dominio (DC) da cui viene recuperato questo attributo:
 
 -   In un controller di dominio per il dominio che contiene l'utente, [**memberOf**](/windows/desktop/ADSchema/a-memberof) per l'utente è completo rispetto all'appartenenza per i gruppi in tale dominio; tuttavia, **memberOf** non contiene l'appartenenza dell'utente ai gruppi locali e globali del dominio in altri domini.
 -   In un server GC, [**memberOf**](/windows/desktop/ADSchema/a-memberof) per l'utente è completo rispetto a tutte le appartenenze a gruppi universali.
@@ -184,24 +184,24 @@ Questo attributo non viene archiviato, ma è un attributo di back link calcolato
 
 </dd> <dt>
 
-<span id="otherMailbox"></span><span id="othermailbox"></span><span id="OTHERMAILBOX"></span>[**otherMailbox**](/windows/desktop/ADSchema/a-othermailbox)
+<span id="otherMailbox"></span><span id="othermailbox"></span><span id="OTHERMAILBOX"></span>[**Other(Altro)**](/windows/desktop/ADSchema/a-othermailbox)
 </dt> <dd>
 
-[**L'attributo otherMailbox**](/windows/desktop/ADSchema/a-othermailbox) è un attributo multivalore che contiene altri indirizzi di posta elettronica aggiuntivi in un modulo, ad esempio "CCMAIL: JeffSmith".
+[**L'attributo otherAttribute**](/windows/desktop/ADSchema/a-othermailbox) è un attributo multivalore che contiene altri indirizzi di posta elettronica aggiuntivi in un modulo, ad esempio "CCMAIL: JeffSmith".
 
 </dd> <dt>
 
 <span id="PasswordExpirationDate"></span><span id="passwordexpirationdate"></span><span id="PASSWORDEXPIRATIONDATE"></span>[**PasswordExpirationDate**](/windows/desktop/ADSI/iadsuser-property-methods)
 </dt> <dd>
 
-La data di scadenza della password non è un attributo nell'oggetto utente. Si tratta di un valore calcolato basato sulla somma di [**pwdLastSet**](/windows/desktop/ADSchema/a-pwdlastset) per l'utente e [**maxPwdAge**](/windows/desktop/ADSchema/a-maxpwdage) del dominio dell'utente. Per ottenere la data di scadenza della password, ottenere la [**proprietà IADsUser.PasswordExpirationDate.**](/windows/desktop/ADSI/iadsuser-property-methods) Non è possibile modificare questo attributo per un utente. impostare invece la [**proprietà IADsDomain.MaxPasswordAge**](/windows/desktop/ADSI/iadsdomain-property-methods) per modificare l'impostazione per il dominio.
+La data di scadenza della password non è un attributo dell'oggetto utente. Si tratta di un valore calcolato basato sulla somma di [**pwdLastSet**](/windows/desktop/ADSchema/a-pwdlastset) per l'utente e [**di maxPwdAge**](/windows/desktop/ADSchema/a-maxpwdage) del dominio dell'utente. Per ottenere la data di scadenza della password, ottenere la [**proprietà IADsUser.PasswordExpirationDate.**](/windows/desktop/ADSI/iadsuser-property-methods) Non è possibile modificare questo attributo per un utente. impostare invece la [**proprietà IADsDomain.MaxPasswordAge**](/windows/desktop/ADSI/iadsdomain-property-methods) per modificare l'impostazione per il dominio.
 
 </dd> <dt>
 
 <span id="primaryGroupID"></span><span id="primarygroupid"></span><span id="PRIMARYGROUPID"></span>[**primaryGroupId**](/windows/desktop/ADSchema/a-primarygroupid)
 </dt> <dd>
 
-[**L'attributo primaryGroupId**](/windows/desktop/ADSchema/a-primarygroupid) è un attributo a valore singolo che contiene [**l'elemento primaryGroupToken**](/windows/desktop/ADSchema/a-primarygrouptoken) del gruppo che rappresenta il gruppo primario dell'oggetto. Il gruppo primario dell'oggetto non è incluso [**nell'attributo memberOf.**](/windows/desktop/ADSchema/a-memberof) Ad esempio, per impostazione predefinita, il gruppo primario di un oggetto utente è **primaryGroupToken** del gruppo Domain Users, ma il gruppo Domain Users non fa parte dell'attributo **memberOf** dell'oggetto utente.
+[**L'attributo primaryGroupId**](/windows/desktop/ADSchema/a-primarygroupid) è un attributo a valore singolo che contiene [**il primaryGroupToken**](/windows/desktop/ADSchema/a-primarygrouptoken) del gruppo che è il gruppo primario dell'oggetto. Il gruppo primario dell'oggetto non è incluso [**nell'attributo memberOf.**](/windows/desktop/ADSchema/a-memberof) Ad esempio, per impostazione predefinita, il gruppo primario di un oggetto utente è **primaryGroupToken** del gruppo Domain Users, ma il gruppo Domain Users non fa parte dell'attributo **memberOf dell'oggetto** utente.
 
 </dd> <dt>
 
@@ -215,18 +215,18 @@ La data di scadenza della password non è un attributo nell'oggetto utente. Si t
 <span id="pwdLastSet"></span><span id="pwdlastset"></span><span id="PWDLASTSET"></span>[**pwdLastSet**](/windows/desktop/ADSchema/a-pwdlastset)
 </dt> <dd>
 
-[**L'attributo pwdLastSet**](/windows/desktop/ADSchema/a-pwdlastset) specifica l'ultima modifica della password. Questo valore viene archiviato come numero intero grande che rappresenta il numero di intervalli di 100 nanosecondi dal 1° gennaio 1601 (UTC).
+[**L'attributo pwdLastSet**](/windows/desktop/ADSchema/a-pwdlastset) specifica l'ultima modifica della password. Questo valore viene archiviato come intero grande che rappresenta il numero di intervalli di 100 nanosecondi dal 1° gennaio 1601 (UTC).
 
-Il sistema usa il valore di questo attributo e [**l'attributo maxPwdAge**](/windows/desktop/ADSchema/a-maxpwdage) del dominio che contiene l'oggetto utente per calcolare la data di scadenza della password. In altri, la somma di [**pwdLastSet**](/windows/desktop/ADSchema/a-pwdlastset) per l'utente e **maxPwdAge** del dominio dell'utente.
+Il sistema usa il valore di questo attributo e l'attributo [**maxPwdAge**](/windows/desktop/ADSchema/a-maxpwdage) del dominio che contiene l'oggetto utente per calcolare la data di scadenza della password. Ciò significa che la somma di [**pwdLastSet**](/windows/desktop/ADSchema/a-pwdlastset) per l'utente e **maxPwdAge** del dominio dell'utente.
 
-Questo attributo controlla se l'utente deve modificare la password al successivo accesso dell'utente. Se [**pwdLastSet**](/windows/desktop/ADSchema/a-pwdlastset) è zero, il valore predefinito, l'utente deve modificare la password all'accesso successivo. Il valore -1 indica che l'utente non deve modificare la password all'accesso successivo. Il sistema imposta questo valore su -1 dopo che l'utente ha impostato la password.
+Questo attributo controlla se l'utente deve modificare la password al successivo accesso dell'utente. Se [**pwdLastSet è**](/windows/desktop/ADSchema/a-pwdlastset) zero, il valore predefinito, l'utente deve modificare la password all'accesso successivo. Il valore -1 indica che l'utente non deve modificare la password all'accesso successivo. Il sistema imposta questo valore su -1 dopo che l'utente ha impostato la password.
 
 </dd> <dt>
 
 <span id="sAMAccountType"></span><span id="samaccounttype"></span><span id="SAMACCOUNTTYPE"></span>[**sAMAccountType**](/windows/desktop/ADSchema/a-samaccounttype)
 </dt> <dd>
 
-[**L'attributo sAMAccountType**](/windows/desktop/ADSchema/a-samaccounttype) specifica un numero intero che rappresenta il tipo di account. Questa proprietà viene impostata dal sistema operativo quando viene creato l'oggetto .
+[**L'attributo sAMAccountType**](/windows/desktop/ADSchema/a-samaccounttype) specifica un numero intero che rappresenta il tipo di conto. Questa proprietà viene impostata dal sistema operativo quando viene creato l'oggetto .
 
 </dd> <dt>
 
@@ -242,16 +242,16 @@ Questo attributo controlla se l'utente deve modificare la password al successivo
 
 [**L'attributo unicodePwd**](/windows/desktop/ADSchema/a-unicodepwd) è la password utente.
 
-Per impostare la password utente, usare il metodo [**IADsUser.ChangePassword,**](/windows/desktop/api/iads/nf-iads-iadsuser-changepassword) se lo script o l'applicazione consente all'utente di modificare la propria password o il metodo [**IADsUser.SetPassword,**](/windows/desktop/api/iads/nf-iads-iadsuser-setpassword) se lo script o l'applicazione consente a un amministratore di reimpostare una password.
+Per impostare la password utente, usare il metodo [**IADsUser.ChangePassword**](/windows/desktop/api/iads/nf-iads-iadsuser-changepassword) se lo script o l'applicazione consente all'utente di modificare la propria password oppure il metodo [**IADsUser.SetPassword,**](/windows/desktop/api/iads/nf-iads-iadsuser-setpassword) se lo script o l'applicazione consente a un amministratore di reimpostare una password.
 
-La password dell'utente in Windows NT unidirezione (OWF). Windows 2000 usa il Windows NT OWF. Questo attributo viene usato solo dal sistema operativo. Tenere presente che non è possibile ricavare la password in testo non crittografato dal formato OWF della password.
+Password dell'utente in Windows NT unidirezione (OWF). Windows 2000 usa il Windows NT OWF. Questo attributo viene usato solo dal sistema operativo. Tenere presente che non è possibile ricavare la password in testo non crittografato dal formato OWF della password.
 
 </dd> <dt>
 
 <span id="userAccountControl"></span><span id="useraccountcontrol"></span><span id="USERACCOUNTCONTROL"></span>[**Useraccountcontrol**](/windows/desktop/ADSchema/a-useraccountcontrol)
 </dt> <dd>
 
-[**L'attributo userAccountControl**](/windows/desktop/ADSchema/a-useraccountcontrol) specifica flag che controllano il comportamento di password, blocco, disabilitazione/abilitazione, script e home directory per l'utente. Questo attributo contiene anche un flag che indica il tipo di account dell'oggetto . L'oggetto utente ha in genere l'account UF \_ NORMAL \_ impostato.
+[**L'attributo userAccountControl**](/windows/desktop/ADSchema/a-useraccountcontrol) specifica i flag che controllano il comportamento di password, blocco, disabilitazione/abilitazione, script e home directory per l'utente. Questo attributo contiene anche un flag che indica il tipo di account dell'oggetto. Per l'oggetto utente è in genere impostato \_ l'account UF \_ NORMAL.
 
 I flag seguenti sono definiti in Lmaccess.h.
 
@@ -277,11 +277,11 @@ I flag seguenti descrivono il tipo di account. È possibile impostare un solo va
 
 | Flag                            | Descrizione                                                                                                                                                                                                                                     |
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| UF \_ NORMAL \_ ACCOUNT             | Si tratta di un tipo di account predefinito che rappresenta un utente tipico.                                                                                                                                                                                  |
+| ACCOUNT \_ NORMALE UF \_             | Si tratta di un tipo di account predefinito che rappresenta un utente tipico.                                                                                                                                                                                  |
 | UF \_ TEMP \_ DUPLICATE \_ ACCOUNT    | Si tratta di un account per gli utenti il cui account primario si trova in un altro dominio. Questo account fornisce l'accesso utente a questo dominio, ma non a qualsiasi dominio che considera attendibile questo dominio. User Manager fa riferimento a questo tipo di account come account utente locale. |
-| UF \_ WORKSTATION \_ TRUST \_ ACCOUNT | Si tratta di un account computer per Windows NT Workstation/Windows 2000 Professional o Windows NT Server/Windows 2000 Server membro di questo dominio.                                                                                     |
-| ACCOUNT TRUST DEL SERVER UF \_ \_ \_      | Si tratta di un account computer per un controller di Windows NT backup che è membro di questo dominio.                                                                                                                                           |
-| UF \_ INTERDOMAIN \_ TRUST \_ ACCOUNT | Si tratta di un'autorizzazione per considerare attendibile l'account per Windows NT dominio che considera attendibili altri domini.                                                                                                                                                            |
+| ACCOUNT DI \_ ATTENDIBILITÀ WORKSTATION UF \_ \_ | Si tratta di un account computer per una workstation Windows NT/Windows 2000 Professional o Windows NT Server/Windows 2000 Server membro di questo dominio.                                                                                     |
+| ACCOUNT TRUST DEL SERVER UF \_ \_ \_      | Si tratta di un account computer per un controller Windows NT backup di backup che è membro di questo dominio.                                                                                                                                           |
+| ACCOUNT TRUST TRA DOMINI UF \_ \_ \_ | Si tratta di un account di attendibilità per un Windows NT che considera attendibile altri domini.                                                                                                                                                            |
 
 
 
@@ -292,14 +292,14 @@ I flag seguenti descrivono il tipo di account. È possibile impostare un solo va
 <span id="userCertificate"></span><span id="usercertificate"></span><span id="USERCERTIFICATE"></span>[**Usercertificate**](/windows/desktop/ADSchema/a-usercertificate)
 </dt> <dd>
 
-[**L'attributo userCertificate**](/windows/desktop/ADSchema/a-usercertificate) è un attributo multivalore che contiene i certificati X509v3 con codifica DER rilasciati all'utente. Tenere presente che questo attributo contiene i certificati di chiave pubblica rilasciati a questo utente dal Servizio certificati Microsoft.
+[**L'attributo userCertificate**](/windows/desktop/ADSchema/a-usercertificate) è un attributo multivalore che contiene i certificati X509v3 con codifica DER rilasciati all'utente. Tenere presente che questo attributo contiene i certificati a chiave pubblica rilasciati a questo utente dal Servizio certificati Microsoft.
 
 </dd> <dt>
 
 <span id="userSharedFolder"></span><span id="usersharedfolder"></span><span id="USERSHAREDFOLDER"></span>[**userSharedFolder**](/windows/desktop/ADSchema/a-usersharedfolder)
 </dt> <dd>
 
-[**L'attributo userSharedFolder**](/windows/desktop/ADSchema/a-usersharedfolder) specifica un percorso UNC per la cartella dei documenti condivisi dell'utente. Il percorso deve essere un percorso UNC di rete della directory di \\ \\ condivisione del server del \\ \\ modulo. Questo valore può essere una stringa Null.
+[**L'attributo userSharedFolder**](/windows/desktop/ADSchema/a-usersharedfolder) specifica un percorso UNC della cartella documenti condivisi dell'utente. Il percorso deve essere un percorso UNC di rete della directory della \\ \\ condivisione del server \\ \\ form. Questo valore può essere una stringa Null.
 
 </dd> <dt>
 

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione BeginExternalBackupGrbit'
+description: Altre informazioni sull'enumerazione BeginExternalBackupGrbit
 title: Enumerazione BeginExternalBackupGrbit
 TOCTitle: BeginExternalBackupGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.BeginExternalBackupGrbit
@@ -28,21 +28,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b68cbfc75d0a71eacedb4bbd462fcd8a93d43690
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1fc99b08363e8954c8fd33d5c2f34447799ecf23b69cc5a72f40556433313030
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118084248"
 ---
 # <a name="beginexternalbackupgrbit-enumeration"></a>Enumerazione BeginExternalBackupGrbit
 
-Opzioni per [JetBeginExternalBackupInstance (JET_INSTANCE, BeginExternalBackupGrbit)](./api.jetbeginexternalbackupinstance-method.md).
+Opzioni per [JetBeginExternalBackupInstance(JET_INSTANCE, BeginExternalBackupGrbit)](./api.jetbeginexternalbackupinstance-method.md).
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -77,8 +77,8 @@ public enum BeginExternalBackupGrbit
 </tr>
 <tr class="even">
 <td></td>
-<td>Incremental</td>
-<td>Crea un backup incrementale anziché un backup completo. Ciò significa che verrà eseguito il backup solo dei file di log dall'ultimo backup completo o incrementale.</td>
+<td>Incrementale</td>
+<td>Crea un backup incrementale anziché un backup completo. Ciò significa che verrà eseguito il backup solo dei file di log dopo l'ultimo backup completo o incrementale.</td>
 </tr>
 </tbody>
 </table>
@@ -88,4 +88,4 @@ public enum BeginExternalBackupGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

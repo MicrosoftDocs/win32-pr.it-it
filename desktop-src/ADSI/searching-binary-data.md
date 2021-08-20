@@ -1,29 +1,29 @@
 ---
 title: Ricerca di dati binari
-description: Anche se la funzionalità di ricerca ADSI supporta solo la ricerca di dati di tipo stringa, è possibile eseguire la ricerca di dati binari.
+description: Anche se la funzionalità di ricerca ADSI supporta solo la ricerca di dati stringa, è possibile cercare dati binari.
 ms.assetid: 52b75ae0-dbf1-4310-8b6b-a176de9f1b7d
 ms.tgt_platform: multiple
 keywords:
 - Ricerca di dati binari ADSI
-- Dati binari ADSI
-- Dati binari ADSI, ricerca di dati binari
-- ADSI ADSI, codice di esempio C/C++, ricerca di dati binari
+- DATI BINARI ADSI
+- Dati binari ADSI , ricerca di dati binari
+- ADSI ADSI , Codice di esempio C/C++, Ricerca di dati binari
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0973ff7a769d68abf85e6557fef2e1d434ba3ff4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9f77ead11f4e2d02c6e7ef3e25975a7059c2c057dbc62f71e406bbda3e24c3b2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005421"
 ---
 # <a name="searching-binary-data"></a>Ricerca di dati binari
 
-Anche se la funzionalità di ricerca ADSI supporta solo la ricerca di dati di tipo stringa, è possibile eseguire la ricerca di dati binari. A tale scopo, utilizzare la funzione [**ADsEncodeBinaryData**](/windows/desktop/api/Adshlp/nf-adshlp-adsencodebinarydata) per convertire i dati binari in una stringa che può essere utilizzata con i metodi di ricerca. La ricerca di dati binari è particolarmente utile quando si cerca un GUID o un SID perché questi tipi di dati vengono archiviati come dati binari.
+Anche se la funzionalità di ricerca ADSI supporta solo la ricerca di dati stringa, è possibile cercare dati binari. A tale scopo, usare la [**funzione ADsEncodeBinaryData**](/windows/desktop/api/Adshlp/nf-adshlp-adsencodebinarydata) per convertire i dati binari in una stringa che può essere usata con i metodi di ricerca. La ricerca di dati binari è particolarmente utile quando si cerca un GUID o un SID perché questi tipi di dati vengono archiviati come dati binari.
 
-Quando si usa la funzione [**ADsEncodeBinaryData**](/windows/desktop/api/Adshlp/nf-adshlp-adsencodebinarydata) , è necessario liberare la memoria allocata usando la funzione [**FreeADsMem**](/windows/desktop/api/Adshlp/nf-adshlp-freeadsmem) .
+Quando si usa [**la funzione ADsEncodeBinaryData,**](/windows/desktop/api/Adshlp/nf-adshlp-adsencodebinarydata) la memoria allocata deve essere liberata usando la [**funzione FreeADsMem.**](/windows/desktop/api/Adshlp/nf-adshlp-freeadsmem)
 
-Nell'esempio di codice C++ riportato di seguito viene illustrato come compilare una stringa di query per cercare un oggetto con un valore **objectGUID** specifico.
+Nell'esempio di codice C++ seguente viene illustrato come compilare una stringa di query per cercare un oggetto con un **valore objectGUID** specifico.
 
 
 ```C++
@@ -60,9 +60,9 @@ if(pwszSearch)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

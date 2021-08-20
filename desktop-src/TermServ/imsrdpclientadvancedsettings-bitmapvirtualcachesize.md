@@ -1,26 +1,26 @@
 ---
 title: Proprietà IMsRdpClientAdvancedSettings BitmapVirtualCacheSize
-description: Specifica le dimensioni, in megabyte, del file della cache bitmap persistente da usare per il colore a 8 bit per pixel.
+description: Specifica le dimensioni, in megabyte, del file di cache bitmap persistente da utilizzare per il colore a 8 bit per pixel.
 ms.assetid: 4efcabd2-8671-40a3-ad12-af0b2b6e495a
 ms.tgt_platform: multiple
 keywords:
 - Proprietà BitmapVirtualCacheSize Servizi Desktop remoto
-- Proprietà BitmapVirtualCacheSize Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà BitmapVirtualCacheSize
-- Proprietà BitmapVirtualCacheSize Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà BitmapVirtualCacheSize
-- Proprietà BitmapVirtualCacheSize Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings3
+- Proprietà BitmapVirtualCacheSize Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto proprietà , BitmapVirtualCacheSize
+- Proprietà BitmapVirtualCacheSize Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto proprietà , BitmapVirtualCacheSize
+- Proprietà BitmapVirtualCacheSize Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
 - Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà BitmapVirtualCacheSize
-- Proprietà BitmapVirtualCacheSize Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà BitmapVirtualCacheSize
-- Proprietà BitmapVirtualCacheSize Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings5
+- Proprietà BitmapVirtualCacheSize Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto proprietà , BitmapVirtualCacheSize
+- Proprietà BitmapVirtualCacheSize Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
 - Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà BitmapVirtualCacheSize
-- Proprietà BitmapVirtualCacheSize Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà BitmapVirtualCacheSize
-- Proprietà BitmapVirtualCacheSize Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings7
+- Proprietà BitmapVirtualCacheSize Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto proprietà , BitmapVirtualCacheSize
+- Proprietà BitmapVirtualCacheSize Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
 - Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà BitmapVirtualCacheSize
-- Proprietà BitmapVirtualCacheSize Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà BitmapVirtualCacheSize
+- Proprietà BitmapVirtualCacheSize Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto proprietà , BitmapVirtualCacheSize
 topic_type:
 - apiref
 api_name:
@@ -63,7 +63,7 @@ ms.locfileid: "118353175"
 ---
 # <a name="imsrdpclientadvancedsettingsbitmapvirtualcachesize-property"></a>Proprietà IMsRdpClientAdvancedSettings::BitmapVirtualCacheSize
 
-Specifica le dimensioni, in megabyte, del file della cache bitmap persistente da usare per il colore a 8 bit per pixel.
+Specifica le dimensioni, in megabyte, del file di cache bitmap persistente da utilizzare per il colore a 8 bit per pixel.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -84,7 +84,7 @@ HRESULT get_BitmapVirtualCacheSize(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Nuova dimensione della cache. I valori validi sono compresi tra 1 e 32 inclusi. Si noti che le dimensioni massime per tutti i file di cache virtuale sono pari a 128 MB.
+Nuova dimensione della cache. I valori validi sono compresi tra 1 e 32 inclusi. Si noti che la dimensione massima per tutti i file di cache virtuale è 128 MB.
 
 ## <a name="error-codes"></a>Codici di errore
 

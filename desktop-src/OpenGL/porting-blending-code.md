@@ -1,66 +1,66 @@
 ---
-title: Porting del codice di fusione
-description: In IRIS GL, quando si disegnano i buffer di primo e indietro, la fusione viene eseguita leggendo uno dei buffer, combinando con tale colore e quindi scrivendo il risultato in entrambi i buffer. In OpenGL, tuttavia, ogni buffer viene letto a sua volta, mescolato e quindi scritto.
+title: Porting del codice di blending
+description: In IRIS GL, quando si disegna su buffer front e back, la fusione viene eseguita leggendo uno dei buffer, combinando con tale colore e quindi scrivendo il risultato in entrambi i buffer. In OpenGL, tuttavia, ogni buffer viene letto a sua volta, misto e quindi scritto.
 ms.assetid: 18334c6b-586d-44a3-aa95-d10589ba99f4
 keywords:
-- Porting di IRIS GL, fusione
+- porting IRIS GL, fusione
 - porting da IRIS GL, blending
 - porting in OpenGL da IRIS GL, blending
 - Porting OpenGL da IRIS GL, blending
 - sfumatura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7956c675848f454b660126a7a17869295a827438
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 13548a2f08821e4f80bf63230077f9a39540ba9b8a37763e7935d211ef0dcdc0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119485911"
 ---
-# <a name="porting-blending-code"></a>Porting del codice di fusione
+# <a name="porting-blending-code"></a>Porting del codice di blending
 
-In IRIS GL, quando si disegnano i buffer di primo e indietro, la fusione viene eseguita leggendo uno dei buffer, combinando con tale colore e quindi scrivendo il risultato in entrambi i buffer. In OpenGL, tuttavia, ogni buffer viene letto a sua volta, mescolato e quindi scritto.
+In IRIS GL, quando si disegna su buffer front e back, la fusione viene eseguita leggendo uno dei buffer, combinando con tale colore e quindi scrivendo il risultato in entrambi i buffer. In OpenGL, tuttavia, ogni buffer viene letto a sua volta, misto e quindi scritto.
 
-La tabella seguente elenca le funzioni di blending IRIS GL e le relative funzioni OpenGL equivalenti.
+Nella tabella seguente sono elencate le funzioni di fusione IRIS GL e le funzioni OpenGL equivalenti.
 
 
 
-| Funzione IRIS GL  | OpenGL (funzione)                            | Significato                     |
+| Funzione GL IRIS  | Funzione OpenGL                            | Significato                     |
 |-------------------|--------------------------------------------|-----------------------------|
-|                   | [**glEnable**](glenable.md) (GL \_ Blend) | Attiva la fusione.          |
-| **BlendFunction** | [**glBlendFunc**](glblendfunc.md)         | Specifica una funzione Blend. |
+|                   | [**glEnable**](glenable.md) ( GL \_ BLEND ) | Attiva la fusione.          |
+| **funzione di blend** | [**glBlendFunc**](glblendfunc.md)         | Specifica una funzione di blend. |
 
 
 
- 
+ 
 
-La funzione **glBlendFunc** di OpenGL e la funzione **BlendFunction** di Iris GL sono quasi identiche. La tabella seguente elenca i fattori di Blend di IRIS GL e i rispettivi equivalenti OpenGL.
+La funzione OpenGL **glBlendFunc** e la funzione **blendfunction** IRIS GL sono quasi identiche. La tabella seguente elenca i fattori di blend IRIS GL e i relativi equivalenti OpenGL.
 
 
 
-| GL IRIS          | OpenGL                     | Note             |
+| IRIS GL          | Opengl                     | Note             |
 |------------------|----------------------------|-------------------|
-| BF \_ zero         | \_zero GL                   |                   |
-| BF \_ uno          | GL \_ uno                    |                   |
-| \_sa BF           | \_alfa src \_ GL             |                   |
-| MSA di BF \_          | GL \_ 1 \_ meno \_ src \_ Alpha |                   |
-| BF \_ da           | \_alfa del DST GL \_             |                   |
-| \_MDA BF          | GL \_ 1 \_ meno \_ DST \_ Alpha |                   |
-| BF \_ SC           | \_colore GL src \_             |                   |
-| BF \_ MSC          | GL \_ uno \_ meno \_ il \_ colore src | Solo destinazione. |
-| \_DC BF           | \_colore GL DST \_             | Solo origine.      |
-| BF \_ MDC          | GL \_ uno \_ meno \_ il \_ colore DST | Solo origine.      |
-| \_Assistente al \_ \_ debug gestito min BF | \_ \_ satura Alpha di GL src \_   |                   |
+| BF \_ ZERO         | GL \_ ZERO                   |                   |
+| BF \_ ONE          | GL \_ ONE                    |                   |
+| BF \_ SA           | GL \_ SRC \_ ALPHA             |                   |
+| BF \_ MSA          | GL \_ ONE \_ MINUS \_ SRC \_ ALPHA |                   |
+| DAF BF \_           | GL \_ DST \_ ALPHA             |                   |
+| Assistente al debug \_ gestito di BF          | GL \_ ONE \_ MINUS \_ DST \_ ALPHA |                   |
+| BF \_ SC           | COLORE \_ GL \_ SRC             |                   |
+| BF \_ MSC          | GL \_ ONE \_ MINUS \_ SRC \_ COLOR | Solo destinazione. |
+| Controller di dominio BF \_           | COLORE \_ ORA \_ LEGALE GL             | Solo origine.      |
+| BF \_ MDC          | GL \_ ONE \_ MINUS \_ DST \_ COLOR | Solo origine.      |
+| BF \_ MIN \_ SA \_ MDA | GL \_ SRC \_ ALPHA \_ SATURATE   |                   |
 
 
 
- 
+ 
 
 ??
 
- 
+ 
 
- 
+ 
 
 
 

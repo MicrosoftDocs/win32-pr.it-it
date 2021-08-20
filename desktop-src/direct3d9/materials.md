@@ -27,7 +27,7 @@ La reflection diffusa e ambientale funzionano insieme per determinare il colore 
 
 ## <a name="emission"></a>Emissione
 
-I materiali possono essere usati per fare in modo che un oggetto di cui è stato eseguito il rendering sia auto-lumineso. Il membro Emissive della struttura [**D3DMATERIAL9**](d3dmaterial9.md) viene usato per descrivere il colore e la trasparenza della luce emessa. L'emissione influisce sul colore di un oggetto e può, ad esempio, rendere più chiaro un materiale scuro e assumere parte del colore emesso.
+I materiali possono essere usati per fare in modo che un oggetto di cui è stato eseguito il rendering sia auto-lumineso. Il membro Emissive della [**struttura D3DMATERIAL9**](d3dmaterial9.md) viene usato per descrivere il colore e la trasparenza della luce emessa. L'emissione influisce sul colore di un oggetto e può, ad esempio, rendere più chiaro un materiale scuro e assumere parte del colore emesso.
 
 È possibile usare la proprietà emissiva di un materiale per aggiungere l'effetto che un oggetto sta emettendo luce, senza incorrere nell'overhead di calcolo dovuto all'aggiunta di una luce alla scena. Nel caso del cristallo blu, la proprietà emissiva è utile se si vuole far apparire il cristallo in luce, ma non proiettare luce su altri oggetti nella scena. Tenere presente che i materiali con proprietà emissive non emettono luce che può essere riflessa da altri oggetti in una scena. Per ottenere questa luce riflessa, è necessario posizionare una luce aggiuntiva all'interno della scena.
 

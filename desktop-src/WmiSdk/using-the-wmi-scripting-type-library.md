@@ -24,7 +24,7 @@ ms.locfileid: "120120771"
 ## <a name="using-the-wmi-scripting-type-library-with-microsoft-visual-studio"></a>Uso della libreria dei tipi di scripting WMI con Microsoft Visual Studio
 
 > [!Note]  
-> Le funzionalità di Visual InterDev 6.0 sono state integrate [Microsoft Visual Studio .NET.](https://msdn.microsoft.com/vstudio/default.aspx)
+> Le funzionalità di Visual InterDev 6.0 sono state integrate [in Microsoft Visual Studio .NET.](https://msdn.microsoft.com/vstudio/default.aspx)
 
  
 
@@ -34,7 +34,7 @@ Nella procedura seguente viene descritto come abilitare l'ambiente di sviluppo i
 
 1.  Scegliere **Aggiungi riferimenti** dal menu **Project** riferimenti.
 2.  Nella scheda COM della casella **Aggiungi** riferimento selezionare Libreria Microsoft WMI Scripting V1.2.
-3.  Se non viene visualizzata alcuna opzione appropriata nell'elenco Riferimenti , aggiungerla usando **Sfoglia** nella **casella** Riferimenti . Viene **visualizzata** la casella **Aggiungi** riferimento che consente di individuare la libreria dei tipi WbemScripting.
+3.  Se non viene visualizzata alcuna opzione appropriata nell'elenco Riferimenti , aggiungerla usando **Sfoglia** nella **casella** Riferimenti . In **Sfoglia** viene visualizzata **una casella Aggiungi** riferimento che consente di individuare la libreria dei tipi WbemScripting.
 
     La libreria dei tipi WbemScripting si trova nel file Wbemdisp.tlb nella directory %windir% \\ System32 \\ Wbem.
 
@@ -48,7 +48,7 @@ Gli script possono connettersi con l'API di scripting per la libreria dei tipi W
 
 -   Specifica del GUID WbemScripting nei metodi VBScript [CreateObject](/previous-versions//xzysf6hc(v=vs.85)) [**e GetObject**](https://msdn.microsoft.com/library/e9waz863(v=VS.71).aspx).
 
-    In questo modo Windows host script per connettersi al set di oggetti WMI.
+    Questo avviso Windows Host script per connettersi al set di oggetti WMI.
 
     Nell'esempio di codice VBScript seguente viene creato [**un nuovo oggetto SWbemDateTime.**](swbemdatetime.md)
 
