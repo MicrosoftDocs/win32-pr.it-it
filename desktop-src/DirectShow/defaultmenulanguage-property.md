@@ -1,15 +1,15 @@
 ---
-description: La proprietà DefaultMenuLanguage recupera la lingua predefinita dei menu.
+description: La proprietà DefaultMenuLanguage recupera la lingua del menu predefinita.
 ms.assetid: 103f44f8-d9e3-4f88-a882-7bf3195a8546
 title: Proprietà DefaultMenuLanguage
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c9fe60090627095da3b3029086a61cbdc3426a9c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 77c1025cd15bbdfe242aceff048f92459e8b48fc04249a4c026e396c849e81c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104482437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953020"
 ---
 # <a name="defaultmenulanguage-property"></a>Proprietà DefaultMenuLanguage
 
@@ -18,7 +18,7 @@ ms.locfileid: "104482437"
 
  
 
-La `DefaultMenuLanguage` proprietà recupera la lingua predefinita dei menu.
+La `DefaultMenuLanguage` proprietà recupera la lingua di menu predefinita.
 
 ``` syntax
 [ iLang = ] MSWebDVD.DefaultMenuLanguage
@@ -26,11 +26,11 @@ La `DefaultMenuLanguage` proprietà recupera la lingua predefinita dei menu.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore LCID contenente l'ID lingua primario per la lingua audio predefinita.
+Restituisce un valore LCID contenente l'ID della lingua primaria per la lingua audio predefinita.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è di lettura/scrittura e non prevede alcun valore predefinito.
+Questa proprietà è di lettura/scrittura senza alcun valore predefinito.
 
  
 

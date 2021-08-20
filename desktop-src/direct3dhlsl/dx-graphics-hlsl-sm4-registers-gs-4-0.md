@@ -24,16 +24,16 @@ Questa sezione contiene informazioni di riferimento per i registri di input e ou
 
 
 
-| Registrazione                 | Nome | Conteggio              | L/S | Dimensione        | Indicizzabile in base a r\# | Valori predefiniti | Richiede L'elenco di controllo di accesso |
+| Registrazione                 | Nome | Conteggio              | L/S | Dimensione        | Indicizzabile in base a r\# | Valori predefiniti | Richiede la DCL |
 |--------------------------|------|--------------------|-----|------------------|------------------|----------|--------------|
 | R\#                      |      | 4096(r \# +x \# \[ n \] ) | L/S | 4                | No               | nessuno     | Sì          |
 | x \# \[ n\]                 |      | 4096(r \# +x \# \[ n \] ) | L/S | 4                | Sì              | Nessuno     | Sì          |
-| elemento \# \[ vertice \] \[ v\] |      | 32                 | R   | 4(comp) \* 6(vert) | Sì              | Nessuno     | Sì          |
+| Elemento \# \[ vertice \] \[ v\] |      | 32                 | R   | 4(comp) \* 6(vert) | Sì              | Nessuno     | Sì          |
 | vprim                    |      | 1                  | R   | 1                | No               | nessuno     | Sì          |
 | T\#                      |      | 128                | R   | 1                | No               | nessuno     | Sì          |
 | s\#                      |      | 16                 | R   | 1                | No               | nessuno     | Sì          |
-| Indice \# cb \[\]            |      | 15                 | R   | 4                | Sì(Contenuto)    | Nessuno     | Sì          |
-| Indice \[ icb\]             |      | 1                  | R   | 4                | Sì(Contenuto)    | Nessuno     | Sì          |
+| indice \# cb \[\]            |      | 15                 | R   | 4                | Sì (Contenuto)    | Nessuno     | Sì          |
+| Indice \[ icb\]             |      | 1                  | R   | 4                | Sì (Contenuto)    | Nessuno     | Sì          |
 
 
 
@@ -43,9 +43,9 @@ Questa sezione contiene informazioni di riferimento per i registri di input e ou
 
 
 
-| Registrazione | Nome            | Conteggio | L/S | Dimensione | Indicizzabile in base a r\# | Valori predefiniti | Richiede L'elenco di controllo di accesso |
+| Registrazione | Nome            | Conteggio | L/S | Dimensione | Indicizzabile in base a r\# | Valori predefiniti | Richiede la DCL |
 |----------|-----------------|-------|-----|-----------|------------------|----------|--------------|
-| NULL     | Risultato dell'eliminazione  | N/A   | W   | N/D       | N/D              | N/D      | No           |
+| NULL     | Risultato della eliminazione  | N/A   | W   | N/D       | N/D              | N/D      | No           |
 | o\#      | Registro di output | 32    | W   | N/D       | N/D              | 4        | Sì          |
 
 

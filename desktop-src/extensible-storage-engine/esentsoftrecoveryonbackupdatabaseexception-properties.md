@@ -17,7 +17,7 @@ ms.locfileid: "118771010"
 # <a name="esentsoftrecoveryonbackupdatabaseexception-properties"></a>Proprietà di EsentSoftRecoveryOnBackupDatabaseException
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
 Il [tipo EsentSoftRecoveryOnBackupDatabaseException](./esentsoftrecoveryonbackupdatabaseexception-class.md) espone i membri seguenti.
 

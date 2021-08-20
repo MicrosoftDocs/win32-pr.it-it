@@ -1,9 +1,9 @@
 ---
 title: WM/TrackNumber
-description: L'attributo WM/TrackNumber contiene il numero di traccia del contenuto. Questo attributo è basato su 1.
+description: L'attributo WM/TrackNumber contiene il numero di traccia del contenuto. Questo attributo è in base 1.
 ms.assetid: cd338cd9-a5de-4311-8089-1d5d90570f69
 keywords:
-- WM/TrackNumber windows Media Format
+- Formato multimediale windows WM/TrackNumber
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "117844114"
 ---
 # <a name="wmtracknumber"></a>WM/TrackNumber
 
-**L'attributo WM/TrackNumber** contiene il numero di traccia del contenuto. Questo attributo è basato su 1.
+**L'attributo WM/TrackNumber** contiene il numero di traccia del contenuto. Questo attributo è in base 1.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,11 +29,11 @@ g \_ wszWMTrackNumber
 
 ## <a name="data-type"></a>Tipo di dati
 
-**STRINGA DI TIPO WMT \_ \_**
+**STRINGA DI \_ TIPO \_ WMT**
 
 ## <a name="remarks"></a>Commenti
 
-Molte applicazioni esistenti scrivono il valore **per WM/TrackNumber** come **valore DWORD**. Se si crea un'applicazione che riproduce file da origini sconosciute, è necessario includere il codice per gestire sia valori stringa che **valori DWORD.**
+Molte applicazioni esistenti scrivono il valore **per WM/TrackNumber** come **valore DWORD.** Se si crea un'applicazione che riproduce file da origini sconosciute, è necessario includere il codice per gestire i valori **stringa e DWORD.**
 
 ## <a name="see-also"></a>Vedi anche
 

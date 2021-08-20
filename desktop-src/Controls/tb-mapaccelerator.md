@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_MAPACCELERATOR (COMmctrl. h)
-description: Determina l'ID del pulsante che corrisponde al carattere dell'acceleratore specificato.
+title: TB_MAPACCELERATOR messaggio (Commctrl.h)
+description: Determina l'ID del pulsante che corrisponde al carattere del tasto di scelta rapida specificato.
 ms.assetid: 724b593d-39af-4301-b721-0332844677b1
 keywords:
-- Controlli di Windows Message TB_MAPACCELERATOR
+- TB_MAPACCELERATOR di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -16,38 +16,38 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 029584d9e1614a3a135da5ebd3f4f446795fd9ca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f905ccf5ea01e3c06cb87a160a44598c2c4a7790c972f4ee83b245e3ed5c0111
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118168085"
 ---
-# <a name="tb_mapaccelerator-message"></a>TB \_ MAPACCELERATOR messaggio
+# <a name="tb_mapaccelerator-message"></a>MESSAGGIO \_ MAPACCELERATOR TB
 
-Determina l'ID del pulsante che corrisponde al carattere dell'acceleratore specificato.
+Determina l'ID del pulsante che corrisponde al carattere del tasto di scelta rapida specificato.
 
 ## <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
-*wParam* \[ in\]
+*wParam* \[ Pollici\]
 </dt> <dd>
 
 Carattere del tasto di scelta rapida.
 
 </dd> <dt>
 
-*lParam* \[ out\]
+*lParam* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un **uint**. In caso di esito positivo, il parametro conterrà l'ID del pulsante con *wParam* come carattere di accelerazione.
+Puntatore a **un OGGETTO UINT.** In caso di esito positivo, in caso di esito positivo, questo parametro conterà l'ID del pulsante con *wParam* come carattere di tasti di scelta rapida.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero se uno dei pulsanti presenta *wParam* come carattere dell'acceleratore oppure zero in caso contrario.
+Restituisce un valore diverso da zero se uno dei pulsanti ha *wParam* come carattere di scelta rapida oppure zero in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Restituisce un valore diverso da zero se uno dei pulsanti presenta *wParam* come
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **TB \_ MAPACCELERATORW** (Unicode) e **TB \_ MAPACCELERATORA** (ANSI)<br/>       |
 
 

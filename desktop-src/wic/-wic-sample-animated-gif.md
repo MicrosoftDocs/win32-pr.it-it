@@ -1,7 +1,7 @@
 ---
 description: Questo esempio illustra la decodifica di vari fotogrammi in un file GIF, la lettura dei metadati appropriati per ogni fotogramma, la composizione di fotogrammi e il rendering dell'animazione con Direct2D.
 ms.assetid: d71c66b5-d37c-4c8a-bfd7-b97c69c3b8e9
-title: Esempio di GIF animata WIC
+title: WIC Animated Gif Sample
 ms.topic: article
 ms.date: 03/19/2021
 ms.custom: project-verbatim
@@ -23,11 +23,11 @@ Questo esempio presenta i requisiti seguenti.
 | Requisito | Valore |
 |-|-|
 | Client minimo supportato | Windows 7 |
-| Sdk Windows minimo | [Windows Software Development Kit (SDK)](https://msdn.microsoft.com/windowsvista/bb980924.aspx) per Windows 7 |
+| Minimum Windows SDK | [Windows Software Development Kit (SDK)](https://msdn.microsoft.com/windowsvista/bb980924.aspx) per Windows 7 |
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-Questo esempio è disponibile in [WIC animated GIF](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/wic/wicanimatedgif).
+Questo esempio è disponibile in [WIC animated GIF (GIF animata WIC).](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/wic/wicanimatedgif)
 
 ## <a name="building-the-sample"></a>Compilare l'esempio
 
@@ -35,22 +35,22 @@ Questo esempio è disponibile in [WIC animated GIF](https://github.com/microsoft
 
 1. Aprire Esplora risorse, quindi spostarsi nella directory.
 2. Fare doppio clic sull'icona per il file con estensione sln (soluzione) per aprire il file in Visual Studio.
-3. Scegliere **Compila soluzione** dal menu **Compila**. L'applicazione verrà compilata nella \\ directory predefinita Debug o \\ Versione.
+3. Scegliere **Compila soluzione** dal menu **Compila**. L'applicazione verrà compilata nella \\ directory Debug o Release \\ predefinita.
 
 ### <a name="using-the-command-prompt"></a>Tramite il prompt dei comandi
 
-Per compilare l'esempio usando un prompt dei comandi.
+Per compilare l'esempio tramite un prompt dei comandi.
 
 1. Aprire il prompt dei comandi e passare alla directory di esempio.
 2. Digitare `msbuild WICAnimatedGif.sln`
 
 ## <a name="running-the-sample"></a>Esecuzione dell'esempio
 
-Dopo aver avviato l'applicazione, caricare un file di immagine usando il **comando** Apri del menu **File.** Il ridimensionamento della finestra è supportato.
+Dopo l'avvio dell'applicazione, caricare un file di immagine usando **il comando** Apri del menu **File.** Il ridimensionamento delle finestre è supportato.
 
 ## <a name="see-also"></a>Vedi anche
 
-[Codec di Windows Microsoft](-wic-lh.md)
+[Codec microsoft Windows Imaging](-wic-lh.md)
 
 [Guida per programmatori](-wic-programming-guide.md)
 

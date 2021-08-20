@@ -31,7 +31,7 @@ Nome distinto per il membro di un gruppo. Usato da groupOfUniqueNames.
 | CN                | uniqueMember                            |
 | Ldap-Display-Name | uniqueMember                            |
 | Dimensione              | \-                                      |
-| Privilegio di aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 2.5.4.50                                |
 | System-Id-Guid    | 8f888726-f80a-44d7-b1ee-cb9df21392c8    |
@@ -119,7 +119,7 @@ Nome distinto per il membro di un gruppo. Usato da groupOfUniqueNames.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| A valore singolo       | Falso                                                         |
+| Is-Single-Valued       | Falso                                                         |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
@@ -140,7 +140,7 @@ Nome distinto per il membro di un gruppo. Usato da groupOfUniqueNames.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| A valore singolo       | Falso                                                         |
+| Is-Single-Valued       | Falso                                                         |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                  |

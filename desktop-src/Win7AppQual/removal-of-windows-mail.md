@@ -1,7 +1,7 @@
 ---
-description: Rimozione di Windows posta elettronica
+description: Rimozione di Windows Posta elettronica
 ms.assetid: 356f0d79-12dd-49f0-b756-a46f20177efa
-title: Rimozione di Windows posta elettronica
+title: Rimozione di Windows Posta elettronica
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 2456fa5bdf9d981385f2b4832250358f7bfdab1b223aeb3658d8df4cc212237b
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118328935"
 ---
-# <a name="removal-of-windows-mail"></a>Rimozione di Windows posta elettronica
+# <a name="removal-of-windows-mail"></a>Rimozione di Windows Posta elettronica
 
 ## <a name="affected-platforms"></a>Piattaforme interessate
 
@@ -47,7 +47,7 @@ Microsoft sta deprecando l'Windows Mail e disabilitando l'API CoStartOutlookExpr
 
 La rimozione Windows Mail comporta quanto segue:
 
--   Tutti i punti di ingresso Windows Posta elettronica e Contatti(ad esempio, Menu Start, Collegamenti creati dall'utente, Start -> Esegui e così via) vengono rimossi o disabilitati. Alcune di queste vengono rimosse completamente, altre avranno esito negativo durante il tentativo di avvio.
+-   Tutti i punti di ingresso Windows Posta elettronica e Contatti (ad esempio, Menu Start, Collegamenti creati dall'utente, Start -> Esegui e così via) vengono rimossi o disabilitati. Alcune di queste vengono rimosse completamente, altre avranno esito negativo durante il tentativo di avvio.
 -   Tutte le DLL vengono spedite nella scatola
 -   Le API documentate pubblicamente continuano a funzionare come in Windows Vista
 -   Tutte le API che tentano di avviare l'interfaccia utente principale del browser sono state modificate per creare un errore invisibile all'utente. La funzione restituirà l'esito positivo, ma non mostrerà l'interfaccia utente all'utente. Le API che chiamano altre finestre di dialogo, ad esempio lo Spooler o la finestra di dialogo Account, continuano a mostrare tale interfaccia utente
@@ -68,7 +68,7 @@ Gli utenti devono installare Windows Live Mail o qualsiasi altro prodotto di pos
 
 Rilevare se è installato un gestore di posta elettronica predefinito. In caso contrario, consigliare all'utente di installare Windows Live Mail o qualsiasi altro prodotto in grado di leggere i file con estensione eml e nws.
 
-Non progettare codice che chiama l Windows aPI dell'interfaccia utente di Posta elettronica, perché non funzionerà. È necessario trovare altri modi per accedere ai file con estensione eml e nws. Inoltre, non appena possibile, interrompere l'affidamento su tutte le altre API Windows Mail.
+Non progettare codice che chiama l Windows aPI dell'interfaccia utente di Posta elettronica perché non funzionerà. È necessario trovare altri modi per accedere ai file con estensione eml e nws. Inoltre, non appena possibile, interrompere l'affidamento su tutte le altre API Windows Mail.
 
 ## <a name="compatibility-performance-reliability-and-usability-testing"></a>Test di compatibilità, prestazioni, affidabilità e usabilità
 

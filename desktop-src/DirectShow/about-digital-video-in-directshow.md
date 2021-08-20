@@ -34,7 +34,7 @@ Lo splitter DV e il decodificatore video DV funzionano insieme. La barra di divi
 
 ![Separatore dv e decodificatore dv](images/dv-filters1.png)
 
-DV Video Encoder e DV Muxer invertono il processo: il codificatore converte i video non compressi in video DV e il mux combina audio e video DV per creare un singolo flusso interleaved, come illustrato nel diagramma seguente.
+DV Video Encoder e DV Muxer invertono il processo: il codificatore converte il video non compresso in video DV e il mux combina audio e video DV per creare un singolo flusso interleaved, come illustrato nel diagramma seguente.
 
 ![Codificatore dv e muxer dv](images/dv-filters2.png)
 

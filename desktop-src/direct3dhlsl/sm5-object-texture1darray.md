@@ -22,36 +22,36 @@ ms.locfileid: "118508677"
 ---
 # <a name="texture1darray"></a>Texture1DArray
 
-Tipo Texture1DArray ([così come esiste nel modello shader 4)](dx-graphics-hlsl-to-type.md)e variabili di risorsa. Questo oggetto trama supporta i metodi seguenti oltre ai metodi nel modello shader 4.
+Tipo Texture1DArray ([così come esiste nel modello shader 4](dx-graphics-hlsl-to-type.md)) più variabili di risorsa. Questo oggetto trama supporta i metodi seguenti oltre ai metodi in Shader Model 4.
 
 
 
 | Metodo                                                                       | Descrizione                                                                                |
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | [**GetDimensions**](sm5-object-texture1darray-getdimensions.md)             | Ottiene le dimensioni della risorsa.                                                              |
-| [**Caricamento**](texture1darray-load.md)                                          | Legge i dati della trama.                                                                        |
+| [**Caricamento**](texture1darray-load.md)                                          | Legge i dati delle trame.                                                                        |
 | [**Mips. Operatore\[\]\[\]**](sm5-object-texture1darray-mipsoperatorindex.md) | Ottiene una variabile di risorsa di sola lettura.                                                        |
 | [**Operatore\[\]**](sm5-object-texture1darray-operatorindex.md)              | Ottiene una variabile di risorsa di sola lettura.                                                        |
-| [**Esempio**](texture1darray-sample.md)                                      | Campio una trama.                                                                         |
-| [**SampleBias**](texture1darray-samplebias.md)                              | Campita una trama, dopo aver applicato il valore di distorsione al livello mipmap.                      |
-| [**SampleCmp**](texture1darray-samplecmp.md)                                | Campio una trama, usando un valore di confronto per rifiutare i campioni.                             |
-| [**SampleCmpLevelZero**](texture1darray-samplecmplevelzero.md)              | Campio una trama (solo livello mipmap 0), usando un valore di confronto per rifiutare i campioni.       |
+| [**Esempio**](texture1darray-sample.md)                                      | Esempi di una trama.                                                                         |
+| [**SampleBias**](texture1darray-samplebias.md)                              | Campionamento di una trama, dopo l'applicazione del valore di distorsione al livello mipmap.                      |
+| [**SampleCmp**](texture1darray-samplecmp.md)                                | Esempi di una trama, usando un valore di confronto per rifiutare gli esempi.                             |
+| [**SampleCmpLevelZero**](texture1darray-samplecmplevelzero.md)              | Esempi di una trama (solo livello mipmap 0), usando un valore di confronto per rifiutare i campioni.       |
 | [**SampleGrad**](texture1darray-samplegrad.md)                              | Campionare una trama usando una sfumatura per influenzare il modo in cui viene calcolata la posizione del campione. |
-| [**SampleLevel**](texture1darray-samplelevel.md)                            | Campita una trama a livello di mipmap specificato.                                           |
+| [**SampleLevel**](texture1darray-samplelevel.md)                            | Campionamento di una trama al livello mipmap specificato.                                           |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello di shader minimo
+## <a name="minimum-shader-model"></a>Modello shader minimo
 
-Questo oggetto è supportato nei modelli di shader seguenti.
+Questo oggetto è supportato nei modelli shader seguenti.
 
 
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Modello shader 5 e](d3d11-graphics-reference-sm5.md) modelli di shader superiori | sì       |
+| [Modelli shader modello 5](d3d11-graphics-reference-sm5.md) e versioni successive | sì       |
 
 
 

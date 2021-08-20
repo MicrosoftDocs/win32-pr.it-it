@@ -1,6 +1,6 @@
 ---
 title: Funzione DsIsNTDSOnline (Ntdsbcli.h)
-description: Determina se Active Directory Domain Services sono online nel server specificato.
+description: Determina se Active Directory Domain Services online nel server specificato.
 ms.assetid: 8f46e4d8-6d05-402c-a5b4-291fd2d6609b
 ms.tgt_platform: multiple
 keywords:

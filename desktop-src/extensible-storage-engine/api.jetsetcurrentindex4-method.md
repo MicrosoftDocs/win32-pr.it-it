@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sul metodo Api.JetSetCurrentIndex4
+description: 'Altre informazioni su: Metodo Api.JetSetCurrentIndex4'
 title: Metodo Api.JetSetCurrentIndex4
 TOCTitle: 'JetSetCurrentIndex4 method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetSetCurrentIndex4(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.String,Microsoft.Isam.Esent.Interop.JET_INDEXID,Microsoft.Isam.Esent.Interop.SetCurrentIndexGrbit,System.Int32)
@@ -33,9 +33,9 @@ ms.locfileid: "118497885"
 ---
 # <a name="apijetsetcurrentindex4-method"></a>Metodo Api.JetSetCurrentIndex4
 
-Impostare l'indice corrente di un cursore.
+Imposta l'indice corrente di un cursore.
 
-**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
@@ -76,7 +76,7 @@ public static void JetSetCurrentIndex4(
   - sesid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione da usare.
+    Sessione da utilizzare.
 
 <!-- end list -->
 
@@ -111,7 +111,7 @@ public static void JetSetCurrentIndex4(
   - itagSequence  
     Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Numero di sequenza del valore della colonna multivalore che verrà usato per posizionare il cursore sul nuovo indice. Questo parametro viene usato solo in combinazione con [NoMove](./setcurrentindexgrbit-enumeration.md). Quando questo parametro non è presente o è impostato su zero, si presuppone che il relativo valore sia 1.
+    Numero di sequenza del valore della colonna multivalore che verrà utilizzato per posizionare il cursore sul nuovo indice. Questo parametro viene usato solo in combinazione con [NoMove.](./setcurrentindexgrbit-enumeration.md) Quando questo parametro non è presente o è impostato su zero, si presuppone che il relativo valore sia 1.
 
 ## <a name="see-also"></a>Vedi anche
 

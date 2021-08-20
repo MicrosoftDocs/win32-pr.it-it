@@ -1,5 +1,5 @@
 ---
-description: Proprio come il sistema usa i descrittori di sicurezza per controllare l'accesso agli oggetti a protezione diretta, un server può usare i descrittori di sicurezza per controllare l'accesso ai relativi oggetti privati. Per altre informazioni sul modello di Windows sicurezza, vedere Modello di controllo di accesso.
+description: Così come il sistema usa i descrittori di sicurezza per controllare l'accesso agli oggetti a protezione diretta, un server può usare i descrittori di sicurezza per controllare l'accesso ai relativi oggetti privati. Per altre informazioni sul modello di Windows sicurezza, vedere Modello di controllo di accesso.
 ms.assetid: d6219438-711a-4eda-a893-9095bce3a07d
 title: Controllo di accesso basato su ACL
 ms.topic: article
@@ -13,13 +13,13 @@ ms.locfileid: "117785166"
 ---
 # <a name="acl-based-access-control"></a>Controllo di accesso basato su ACL
 
-Proprio come il sistema [usa](security-descriptors.md) i descrittori di sicurezza per controllare l'accesso agli oggetti a protezione diretta, un server può usare i descrittori di sicurezza per controllare l'accesso ai relativi oggetti privati. Per altre informazioni sul modello di Windows di sicurezza, vedere [Modello di controllo di accesso](access-control-model.md).
+Così come il sistema usa [i descrittori](security-descriptors.md) di sicurezza per controllare l'accesso agli oggetti a protezione diretta, un server può usare i descrittori di sicurezza per controllare l'accesso ai relativi oggetti privati. Per altre informazioni sul modello di sicurezza Windows, vedere [Modello di controllo di accesso.](access-control-model.md)
 
-Un server protetto può [creare un descrittore di sicurezza](security-descriptors-for-private-objects.md) con un elenco DACL che specifica i tipi di accesso consentiti per i diversi [fiduciari.](trustees.md) In un caso semplice, il server potrebbe creare un singolo descrittore di sicurezza per controllare [l'accesso](checking-access-to-private-objects.md)a tutti i dati e le funzionalità del server. Per una granularità più fine della protezione, il server può creare descrittori di sicurezza per ogni oggetto privato o per diversi tipi di funzionalità.
+Un server protetto può [creare un descrittore di sicurezza](security-descriptors-for-private-objects.md) con un elenco DACL che specifica i tipi di accesso consentiti per vari [trustee.](trustees.md) In un caso semplice, il server può creare un singolo descrittore di sicurezza per controllare [l'accesso](checking-access-to-private-objects.md)a tutti i dati e le funzionalità del server. Per una granularità più fine della protezione, il server potrebbe creare descrittori di sicurezza per ognuno dei relativi oggetti privati o per diversi tipi di funzionalità.
 
-Ad esempio, quando un client chiede al server di creare un nuovo oggetto in un database, il server può creare un descrittore di sicurezza per il nuovo oggetto privato. Il server può quindi archiviare il descrittore di sicurezza con l'oggetto privato nel database. Quando un client tenta di accedere all'oggetto, il server recupera il descrittore di sicurezza per controllare i diritti di accesso del client. È importante notare che in un descrittore di sicurezza non è presente alcun elemento che lo associa all'oggetto o alla funzionalità che protegge. È invece il server protetto a mantenere l'associazione.
+Ad esempio, quando un client chiede al server di creare un nuovo oggetto in un database, il server può creare un descrittore di sicurezza per il nuovo oggetto privato. Il server può quindi archiviare il descrittore di sicurezza con l'oggetto privato nel database. Quando un client tenta di accedere all'oggetto , il server recupera il descrittore di sicurezza per controllare i diritti di accesso del client. È importante notare che in un descrittore di sicurezza non è presente alcun elemento che lo associa all'oggetto o alle funzionalità che protegge. È invece il server protetto a gestire l'associazione.
 
-È anche possibile controllare l'accesso all'oggetto privato. Per una [descrizione, vedere Controllo](auditing-access-to-private-objects.md) dell'accesso agli oggetti privati.
+È anche possibile controllare l'accesso all'oggetto privato. Per una [descrizione, vedere Controllo dell'accesso](auditing-access-to-private-objects.md) agli oggetti privati.
 
  
 

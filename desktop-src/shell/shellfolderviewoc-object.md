@@ -62,9 +62,9 @@ Inoltra gli eventi generati da un oggetto [**ShellFolderView**](shellfolderview.
 
 ## <a name="remarks"></a>Commenti
 
-[**L'oggetto ShellFolderView**](shellfolderview.md) genera due eventi, [**EnumDone**](shellfolderviewoc-enumdone.md) e [**SelectionChanged,**](shellfolderviewoc-selectionchanged.md)in genere gestiti dalle applicazioni. Tuttavia, alcune applicazioni devono gestire gli eventi da una serie di **oggetti ShellFolderView.** Ad esempio, un'applicazione potrebbe ospitare un controllo WebBrowser che consente agli utenti di spostarsi tra una serie di cartelle. Ogni cartella ha il proprio **oggetto ShellFolderView** con gli eventi associati. La gestione di questi eventi può essere difficile.
+[**L'oggetto ShellFolderView**](shellfolderview.md) genera due eventi, [**EnumDone**](shellfolderviewoc-enumdone.md) e [**SelectionChanged,**](shellfolderviewoc-selectionchanged.md)che vengono in genere gestiti dalle applicazioni. Tuttavia, alcune applicazioni devono gestire gli eventi da una serie di **oggetti ShellFolderView.** Ad esempio, un'applicazione potrebbe ospitare un controllo WebBrowser che consente agli utenti di spostarsi tra una serie di cartelle. Ogni cartella ha un proprio **oggetto ShellFolderView** con gli eventi associati. La gestione di questi eventi può essere difficile.
 
-**L'oggetto ShellFolderViewOC** semplifica la gestione degli eventi per tali scenari. Consente alle applicazioni di gestire gli eventi per tutti [**gli oggetti ShellFolderView**](shellfolderview.md) con una singola coppia di gestori di eventi **ShellFolderViewOC.** Ogni volta che l'utente passa a una nuova cartella, l'applicazione passa l'oggetto **ShellFolderView** associato **all'oggetto ShellFolderViewOC** chiamando [**SetFolderView.**](shellfolderviewoc-setfolderview.md) Quindi, quando viene generato un evento [**EnumDone**](shellfolderviewoc-enumdone.md) o [**SelectionChanged,**](shellfolderviewoc-selectionchanged.md) l'oggetto **ShellFolderViewOC** inoltra l'evento al proprio gestore per l'elaborazione.
+**L'oggetto ShellFolderViewOC** semplifica la gestione degli eventi per tali scenari. Consente alle applicazioni di gestire gli eventi per tutti [**gli oggetti ShellFolderView**](shellfolderview.md) con una singola coppia di gestori eventi **ShellFolderViewOC.** Ogni volta che l'utente passa a una nuova cartella, l'applicazione passa l'oggetto **ShellFolderView** associato all'oggetto **ShellFolderViewOC** chiamando [**SetFolderView**](shellfolderviewoc-setfolderview.md). Quindi, quando viene generato un evento [**EnumDone**](shellfolderviewoc-enumdone.md) o [**SelectionChanged,**](shellfolderviewoc-selectionchanged.md) l'oggetto **ShellFolderViewOC** inoltra l'evento al proprio gestore per l'elaborazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,8 +72,8 @@ Inoltra gli eventi generati da un oggetto [**ShellFolderView**](shellfolderview.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |

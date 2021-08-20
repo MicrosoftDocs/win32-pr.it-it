@@ -5,7 +5,7 @@ ms.assetid: 4a550eb1-a37e-43fd-9e08-801c4fd64e68
 keywords:
 - Metodo getByDriveSpecifier Windows Media Player
 - Metodo getByDriveSpecifier Windows Media Player, interfaccia IWMPCdromCollection
-- Interfaccia IWMPCdromCollection Windows Media Player, metodo getByDriveSpecifier
+- Interfaccia IWMPCdromCollection Windows Media Player , metodo getByDriveSpecifier
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe771fc893d4bf43b82dc825a2d33724926e8151
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9937694234fe7e46fe9b98d83357da19abf18f8d14e83794587f6f2050b0019b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116219"
 ---
-# <a name="iwmpcdromcollectiongetbydrivespecifier-method"></a>Metodo IWMPCdromCollection:: getByDriveSpecifier
+# <a name="iwmpcdromcollectiongetbydrivespecifier-method"></a>Metodo IWMPCdromCollection::getByDriveSpecifier
 
-Il metodo **getByDriveSpecifier** restituisce un'interfaccia **IWMPCdrom** associata a una lettera di unità specifica.
+Il **metodo getByDriveSpecifier** restituisce **un'interfaccia IWMPCdrom** associata a una lettera di unità specifica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,26 +53,26 @@ Implements IWMPCdromCollection.getByDriveSpecifier
 
 <dl> <dt>
 
-*bstrDriveSpecifier* \[ in\]
+*bstrDriveSpecifier* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che corrisponde alla lettera di unità seguita da un carattere due punti (":").
+**System.String che rappresenta** la lettera di unità seguita da due punti (":").
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Interfaccia **wmplib. IWMPCdrom** .
+Interfaccia **WMPLib.IWMPCdrom.**
 
 ## <a name="remarks"></a>Commenti
 
-Le lettere di unità devono essere specificate nel formato *x*:, dove *x* rappresenta la lettera di unità.
+Le lettere di unità devono essere fornite nel formato *X*:, dove *X* rappresenta la lettera di unità.
 
-Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **getByDriveSpecifier** per ottenere l'interfaccia **IWMPCdrom** che corrisponde a una lettera di unità fornita dall'utente in una casella di testo. Viene quindi chiamato il metodo **IWMPCdrom. EJECT** per rimuovere l'unità specificata. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+L'esempio seguente usa **getByDriveSpecifier** per ottenere **l'interfaccia IWMPCdrom** che corrisponde a una lettera di unità fornita dall'utente in una casella di testo. Il **metodo IWMPCdrom.eject** viene quindi chiamato per estrarre l'unità specificata. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -115,7 +115,7 @@ drive.eject()
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -128,16 +128,16 @@ drive.eject()
 [**Interfaccia IWMPCdrom (VB e C#)**](iwmpcdrom--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPCdrom. EJECT (VB e C#)**](wmplibiwmpcdrom-iwmpcdrom-eject--vb-and-c.md)
+[**IWMPCdrom.eject (VB e C#)**](wmplibiwmpcdrom-iwmpcdrom-eject--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaccia IWMPCdromCollection (VB e C#)**](iwmpcdromcollection--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
 </dt> </dl>
 
  

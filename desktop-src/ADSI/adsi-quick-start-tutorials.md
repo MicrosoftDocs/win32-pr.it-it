@@ -16,7 +16,7 @@ ms.locfileid: "118429119"
 ---
 # <a name="active-directory-service-interfaces-quick-start-tutorials"></a>Esercitazioni introduttive sulle interfacce del servizio Active Directory
 
-Le esercitazioni introduttive di Active Directory Service Interfaces (ADSI) sono una serie di esempi ADSI e documentazione di supporto progettata per acquisire familiarità con i modelli di programmazione usati per accedere ad Active Directory. Ogni esempio è breve e si basa su quello degli esempi precedenti. Le esercitazioni includono:
+Le esercitazioni introduttive di Active Directory Service Interfaces (ADSI) sono una serie di esempi ADSI e documentazione di supporto progettata per acquisire familiarità con i modelli di programmazione usati per accedere ad Active Directory. Ogni esempio è breve e si basa su esempi precedenti. Le esercitazioni includono:
 
 -   [Configurazione dell'ambiente di sviluppo](setting-up-your-development-environment.md)
 -   [Accesso ad Active Directory tramite Visual Basic](accessing-active-directory-using-visual-basic.md)

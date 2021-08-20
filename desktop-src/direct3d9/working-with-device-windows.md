@@ -1,5 +1,5 @@
 ---
-description: Questa sezione elenca un problema che può verificarsi quando si lavora con le finestre dei dispositivi nelle applicazioni Direct3D.
+description: Questa sezione elenca un problema che potrebbe verificarsi quando si lavora con le finestre dei dispositivi nelle applicazioni Direct3D.
 ms.assetid: 7cfd2ad6-fb85-4303-9fa4-6fe7d16d9951
 title: Uso di Device Windows (Direct3D 9)
 ms.topic: article
@@ -13,9 +13,9 @@ ms.locfileid: "118518831"
 ---
 # <a name="working-with-device-windows-direct3d-9"></a>Uso di Device Windows (Direct3D 9)
 
-Questa sezione elenca un problema che può verificarsi quando si lavora con le finestre dei dispositivi nelle applicazioni Direct3D.
+Questa sezione elenca un problema che potrebbe verificarsi quando si lavora con le finestre dei dispositivi nelle applicazioni Direct3D.
 
--   Direct3D collega solo le finestre dello stato attivo anziché la finestra del dispositivo con la funzione di elaborazione dei messaggi Direct3D ed elabora solo i messaggi della finestra attiva. La finestra attiva deve quindi essere l'elemento padre di qualsiasi finestra del dispositivo.
+-   Direct3D collega solo le finestre dello stato attivo anziché la finestra del dispositivo con la funzione di elaborazione dei messaggi Direct3D ed elabora solo i messaggi della finestra di stato attivo. Pertanto, la finestra dello stato attivo deve essere l'elemento padre di qualsiasi finestra del dispositivo.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

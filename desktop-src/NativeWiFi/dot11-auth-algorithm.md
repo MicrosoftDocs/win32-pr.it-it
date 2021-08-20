@@ -1,7 +1,7 @@
 ---
 description: Definisce un algoritmo di autenticazione LAN wireless.
 ms.assetid: ac4097df-46dc-4c64-b72a-7cb9dce8b418
-title: Enumerazione DOT11_AUTH_ALGORITHM (wlantypes. h)
+title: DOT11_AUTH_ALGORITHM enumerazione (Wlantypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - wlantypes.h
-ms.openlocfilehash: 1b14886c62448194b79eab2e0302ce5608ad282d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 774b2218a451f4cbaa85e6b77559c0d5761b0b132ebdf9d3f11c15ea6658e7bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117798471"
 ---
-# <a name="dot11_auth_algorithm-enumeration"></a>Enumerazione dell'algoritmo di \_ autenticazione DOT11 \_
+# <a name="dot11_auth_algorithm-enumeration"></a>Enumerazione DOT11 \_ AUTH \_ ALGORITHM
 
-Il tipo enumerato **\_ \_ algoritmo** di autenticazione DOT11 definisce un algoritmo di autenticazione LAN wireless.
+Il **tipo enumerato DOT11 \_ AUTH \_ ALGORITHM** definisce un algoritmo di autenticazione LAN wireless.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,86 +47,86 @@ typedef enum _DOT11_AUTH_ALGORITHM {
 
 <dl> <dt>
 
-<span id="DOT11_AUTH_ALGO_80211_OPEN"></span><span id="dot11_auth_algo_80211_open"></span>**DOT11 \_ AUTH \_ \_ 80211 \_ Open**
+<span id="DOT11_AUTH_ALGO_80211_OPEN"></span><span id="dot11_auth_algo_80211_open"></span>**DOT11 \_ AUTH \_ ALGO \_ 80211 \_ OPEN**
 </dt> <dd>
 
-Specifica un algoritmo di autenticazione di sistema aperto IEEE 802,11.
+Specifica un algoritmo di autenticazione Open System IEEE 802.11.
 
 </dd> <dt>
 
-<span id="DOT11_AUTH_ALGO_80211_SHARED_KEY"></span><span id="dot11_auth_algo_80211_shared_key"></span>**\_ \_ \_ Chiave condivisa algo 80211 \_ \_ di DOT11 auth**
+<span id="DOT11_AUTH_ALGO_80211_SHARED_KEY"></span><span id="dot11_auth_algo_80211_shared_key"></span>**DOT11 \_ AUTH \_ ALGO \_ 80211 \_ CHIAVE \_ CONDIVISA**
 </dt> <dd>
 
-Specifica un algoritmo di autenticazione con chiave condivisa 802,11 che richiede l'uso di una chiave di privacy equivalente cablata (WEP) pre-condivisa per l'autenticazione di 802,11.
+Specifica un algoritmo di autenticazione con chiave condivisa 802.11 che richiede l'uso di una chiave WEP (Wired Equivalent Privacy) precondi condivisa per l'autenticazione 802.11.
 
 </dd> <dt>
 
-<span id="DOT11_AUTH_ALGO_WPA"></span><span id="dot11_auth_algo_wpa"></span>**DOT11 \_ auth \_ algo \_ WPA**
+<span id="DOT11_AUTH_ALGO_WPA"></span><span id="dot11_auth_algo_wpa"></span>**DOT11 \_ AUTH \_ ALGO \_ WPA**
 </dt> <dd>
 
-Specifica un algoritmo WPA (Wi-Fi Protected Access). L'autenticazione della porta IEEE 802.1 X viene eseguita dal richiedente, dall'autenticatore e dal server di autenticazione. Le chiavi di crittografia vengono derivate dinamicamente tramite il processo di autenticazione.
+Specifica un Wi-Fi di accesso protetto (WPA). L'autenticazione della porta IEEE 802.1X viene eseguita dal server di autenticazione, autenticatore e supplicante. Le chiavi di crittografia vengono derivate dinamicamente tramite il processo di autenticazione.
 
-Questo algoritmo è valido solo per i tipi BSS dell'infrastruttura dei tipi dot11 \_ BSS \_ \_ .
+Questo algoritmo è valido solo per i tipi BSS dell'infrastruttura di tipo \_ dot11 \_ BSS. \_
 
-Quando l'algoritmo WPA è abilitato, la stazione 802,11 verrà associata solo a un punto di accesso le cui risposte beacon o Probe contengono la suite di autenticazione di tipo 1 (802.1 X) all'interno dell'elemento informazioni WPA (IE).
+Quando l'algoritmo WPA è abilitato, la stazione 802.11 verrà associata solo a un punto di accesso le cui risposte di tipo 1 (802.1X) contengono la suite di autenticazione di tipo 1 (802.1X) all'interno dell'elemento di informazioni WPA (IE).
 
 </dd> <dt>
 
-<span id="DOT11_AUTH_ALGO_WPA_PSK"></span><span id="dot11_auth_algo_wpa_psk"></span>**DOT11 \_ auth \_ algo \_ WPA \_ PSK**
+<span id="DOT11_AUTH_ALGO_WPA_PSK"></span><span id="dot11_auth_algo_wpa_psk"></span>**DOT11 \_ AUTH \_ ALGO \_ WPA \_ PSK**
 </dt> <dd>
 
-Specifica un algoritmo WPA che usa chiavi precondivise (PSK). L'autenticazione della porta IEEE 802.1 X viene eseguita dal supplicant e dall'autenticatore. Le chiavi di crittografia vengono derivate in modo dinamico tramite una chiave precondivisa utilizzata sia nel supplicant che nell'autenticatore.
+Specifica un algoritmo WPA che usa chiavi precondivise (PSK). L'autenticazione della porta IEEE 802.1X viene eseguita dal supplicante e dall'autenticatore. Le chiavi di crittografia vengono derivate dinamicamente tramite una chiave precondivisa usata sia nell'autenticatore che nel supplicante.
 
-Questo algoritmo è valido solo per i tipi BSS **dell' \_ \_ \_ infrastruttura dei tipi dot11 BSS**.
+Questo algoritmo è valido solo per i tipi BSS **dell'infrastruttura di tipo \_ dot11 BSS \_ \_**.
 
-Quando è abilitato l'algoritmo WPA PSK, la stazione 802,11 verrà associata solo a un punto di accesso le cui risposte di Beacon o Probe contengono la suite di autenticazione di tipo 2 (chiave precondivisa) all'interno dell'IE WPA.
+Quando l'algoritmo WPA PSK è abilitato, la stazione 802.11 verrà associata solo a un punto di accesso le cui risposte di tipo 2 (chiave precondivisa) contengono le risposte del beacon o del probe all'interno di WPA IE.
 
 </dd> <dt>
 
-<span id="DOT11_AUTH_ALGO_WPA_NONE"></span><span id="dot11_auth_algo_wpa_none"></span>**DOT11 \_ auth \_ algo \_ \_**
+<span id="DOT11_AUTH_ALGO_WPA_NONE"></span><span id="dot11_auth_algo_wpa_none"></span>**DOT11 \_ AUTH \_ ALGO \_ WPA \_ NONE**
 </dt> <dd>
 
 Questo valore non è supportato.
 
 </dd> <dt>
 
-<span id="DOT11_AUTH_ALGO_RSNA"></span><span id="dot11_auth_algo_rsna"></span>**\_RSNA di autenticazione DOT11 \_ algo \_**
+<span id="DOT11_AUTH_ALGO_RSNA"></span><span id="dot11_auth_algo_rsna"></span>**DOT11 \_ AUTH \_ ALGO \_ RSNA**
 </dt> <dd>
 
-Specifica un algoritmo di associazione alla rete di sicurezza (RSNA) 802.11 i robusti. WPA2 è un algoritmo di questo tipo. L'autenticazione della porta IEEE 802.1 X viene eseguita dal richiedente, dall'autenticatore e dal server di autenticazione. Le chiavi di crittografia vengono derivate dinamicamente tramite il processo di autenticazione.
+Specifica un algoritmo RSNA (Robust Security Network Association) 802.11i. WPA2 è un algoritmo di questo tipo. L'autenticazione della porta IEEE 802.1X viene eseguita dal server di autenticazione, autenticatore e supplicante. Le chiavi di crittografia vengono derivate dinamicamente tramite il processo di autenticazione.
 
-Questo algoritmo è valido solo per i tipi BSS **dell' \_ \_ \_ infrastruttura dei tipi dot11 BSS**.
+Questo algoritmo è valido solo per i tipi BSS **dell'infrastruttura di tipo \_ dot11 BSS \_ \_**.
 
-Quando l'algoritmo RSNA è abilitato, la stazione 802,11 verrà associata solo a un punto di accesso le cui risposte beacon o Probe contengono la suite di autenticazione di tipo 1 (802.1 X) all'interno di RSN IE.
+Quando l'algoritmo RSNA è abilitato, la stazione 802.11 verrà associata solo a un punto di accesso le cui risposte di tipo 1 (802.1X) contengono la suite di autenticazione di tipo 1 (802.1X) all'interno di RSN IE.
 
 </dd> <dt>
 
-<span id="DOT11_AUTH_ALGO_RSNA_PSK"></span><span id="dot11_auth_algo_rsna_psk"></span>**DOT11 \_ autenticazione \_ algo \_ RSNA \_ PSK**
+<span id="DOT11_AUTH_ALGO_RSNA_PSK"></span><span id="dot11_auth_algo_rsna_psk"></span>**DOT11 \_ AUTH \_ ALGO \_ RSNA \_ PSK**
 </dt> <dd>
 
-Specifica un algoritmo 802.11 i RSNA che usa PSK. L'autenticazione della porta IEEE 802.1 X viene eseguita dal supplicant e dall'autenticatore. Le chiavi di crittografia vengono derivate in modo dinamico tramite una chiave precondivisa utilizzata sia nel supplicant che nell'autenticatore.
+Specifica un algoritmo RSNA 802.11i che usa PSK. L'autenticazione della porta IEEE 802.1X viene eseguita dal supplicante e dall'autenticatore. Le chiavi di crittografia vengono derivate dinamicamente tramite una chiave precondivisa usata sia nell'autenticatore che nel supplicante.
 
-Questo algoritmo è valido solo per i tipi BSS **dell' \_ \_ \_ infrastruttura dei tipi dot11 BSS**.
+Questo algoritmo è valido solo per i tipi BSS **dell'infrastruttura di tipo \_ dot11 BSS \_ \_**.
 
-Quando l'algoritmo RSNA PSK è abilitato, la stazione 802,11 verrà associata solo a un punto di accesso le cui risposte beacon o Probe contengono la suite di autenticazione di tipo 2 (chiave precondivisa) all'interno di RSN IE.
+Quando l'algoritmo RSNA PSK è abilitato, la stazione 802.11 verrà associata solo a un punto di accesso le cui risposte di tipo beacon o probe contengono la suite di autenticazione di tipo 2 (chiave precondivisa) all'interno di RSN IE.
 
 </dd> <dt>
 
-<span id="DOT11_AUTH_ALGO_IHV_START"></span><span id="dot11_auth_algo_ihv_start"></span>**Avvio di DOT11 \_ auth \_ \_ IHV \_**
+<span id="DOT11_AUTH_ALGO_IHV_START"></span><span id="dot11_auth_algo_ihv_start"></span>**DOT11 \_ AUTH \_ ALGO \_ IHV \_ START**
 </dt> <dd>
 
 Indica l'inizio dell'intervallo che specifica gli algoritmi di autenticazione proprietari sviluppati da un IHV.
 
-**DOT11 \_ auth \_ \_ IHV \_ Start** Enumerator è valido solo quando il driver miniport funziona in modalità Extensible Station (ExtSTA).
+L'enumeratore **\_ DOT11 AUTH \_ ALGO \_ IHV \_ START** è valido solo quando il driver miniport funziona in modalità ExtSTA (Extensible Station).
 
 </dd> <dt>
 
-<span id="DOT11_AUTH_ALGO_IHV_END"></span><span id="dot11_auth_algo_ihv_end"></span>**DOT11 \_ Authentication \_ algo \_ IHV \_ end**
+<span id="DOT11_AUTH_ALGO_IHV_END"></span><span id="dot11_auth_algo_ihv_end"></span>**DOT11 \_ AUTH \_ ALGO \_ IHV \_ END**
 </dt> <dd>
 
 Indica la fine dell'intervallo che specifica gli algoritmi di autenticazione proprietari sviluppati da un IHV.
 
-L'enumeratore **end di DOT11 \_ auth \_ \_ IHV \_** è valido solo quando il driver miniport funziona in modalità ExtSTA.
+L'enumeratore **\_ DOT11 AUTH \_ ALGO \_ IHV \_ END** è valido solo quando il driver miniport funziona in modalità ExtSTA.
 
 </dd> </dl>
 
@@ -136,10 +136,10 @@ L'enumeratore **end di DOT11 \_ auth \_ \_ IHV \_** è valido solo quando il dri
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista, Windows XP con \[ solo app desktop SP3\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                        |
+| Client minimo supportato<br/> | Windows Vista, Windows XP solo con app desktop SP3 \[\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                        |
 | Componente ridistribuibile<br/>          | API LAN wireless per Windows XP con SP2<br/>                                                         |
-| Intestazione<br/>                   | <dl> <dt>Wlantypes. h (include Windot11. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wlantypes.h (includere Windot11.h)</dt> </dl> |
 
 
 
@@ -147,13 +147,13 @@ L'enumeratore **end di DOT11 \_ auth \_ \_ IHV \_** è valido solo quando il dri
 
 <dl> <dt>
 
-[**\_Coppia di \_ crittografia \_ AUTH DOT11**](dot11-auth-cipher-pair.md)
+[**DOT11 \_ AUTH \_ CIPHER \_ PAIR**](dot11-auth-cipher-pair.md)
 </dt> <dt>
 
-[**\_rete disponibile \_ WLAN**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_available_network)
+[**RETE DISPONIBILE \_ \_ WLAN**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_available_network)
 </dt> <dt>
 
-[**\_attributi di sicurezza WLAN \_**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_security_attributes)
+[**ATTRIBUTI DI SICUREZZA \_ \_ WLAN**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_security_attributes)
 </dt> </dl>
 
  

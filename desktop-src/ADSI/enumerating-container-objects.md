@@ -14,9 +14,9 @@ ms.locfileid: "118428560"
 ---
 # <a name="enumerating-container-objects"></a>Enumerazione di oggetti contenitore
 
-Per convenzione, tutti gli elementi di un'enumerazione in ADSI devono essere dello stesso tipo di dati di Automazione. Ad esempio, un'enumerazione non deve restituire alcuni elementi come **VARIANT** di tipo **VT \_ I4** e altri come **VARIANT** di tipo **VT \_ BSTR.**
+Per convenzione, tutti gli elementi di un'enumerazione in ADSI devono essere dello stesso tipo di dati di Automazione. Ad esempio, un'enumerazione non deve restituire alcuni elementi come **VARIANT** di tipo **VT \_ I4** e altri come **VARIANT** di **tipo VT \_ BSTR**.
 
-Per enumerare un elenco di elementi che un oggetto gestisce, un client richiede la creazione di un oggetto enumerazione per il tipo specifico di informazioni elencate. In ADSI, il client può elencare gli oggetti negli oggetti dello spazio dei nomi, negli oggetti contenitore generici, negli oggetti raccolta, negli oggetti membro o negli oggetti dello schema. ADSI fornisce un filtro che può essere impostato e modificato per limitare le corrispondenze in qualsiasi enumerazione tramite la [**proprietà IADsContainer.Filter.**](iadscontainer-property-methods.md) Esempi di implementazioni di oggetti enumeratore sono disponibili nel codice del componente del provider di esempio per gli oggetti contenitore ADs seguenti.
+Per enumerare un elenco di elementi mantenuti da un oggetto , un client richiede la creazione di un oggetto di enumerazione per il tipo specifico di informazioni elencate. In ADSI, il client può elencare gli oggetti negli oggetti dello spazio dei nomi, negli oggetti contenitore generici, negli oggetti raccolta, negli oggetti membro o negli oggetti dello schema. ADSI fornisce un filtro che può essere impostato e modificato per limitare le corrispondenze in qualsiasi enumerazione tramite la [**proprietà IADsContainer.Filter.**](iadscontainer-property-methods.md) Esempi di implementazioni di oggetti enumeratore sono disponibili nel codice del componente del provider di esempio per gli oggetti contenitore ADs seguenti.
 
 
 
@@ -30,7 +30,7 @@ Per enumerare un elenco di elementi che un oggetto gestisce, un client richiede 
 
  
 
-Per informazioni sul lato client, vedere [Raccolte e gruppi.](collections-and-groups.md)
+Per informazioni sul lato client, vedere [Raccolte e gruppi](collections-and-groups.md).
 
  
 

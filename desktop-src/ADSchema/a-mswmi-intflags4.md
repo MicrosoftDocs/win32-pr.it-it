@@ -1,6 +1,6 @@
 ---
 title: Attributo ms-WMI-intFlags4
-description: L'attributo ms-WMI-intFlags4 è riservato per l'uso interno.
+description: L'attributo ms-WMI-intFlags4 è riservato per uso interno.
 ms.assetid: 1f4d149f-5c74-4440-8d67-b1ab08689ce8
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "117837591"
 ---
 # <a name="ms-wmi-intflags4-attribute"></a>Attributo ms-WMI-intFlags4
 
-**L'attributo ms-WMI-intFlags4** è riservato per l'uso interno.
+**L'attributo ms-WMI-intFlags4** è riservato per uso interno.
 
 
 
@@ -32,7 +32,7 @@ ms.locfileid: "117837591"
 | CN                | ms-WMI-intFlags4                     |
 | Ldap-Display-Name | msWMI-intFlags4                      |
 | Dimensione              | 4 byte                              |
-| Privilegio di aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1681              |
 | System-Id-Guid    | bd74a7ac-c493-4c9c-bdfa-5c7b119ca6b2 |
@@ -57,7 +57,7 @@ ms.locfileid: "117837591"
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                            |
-| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                                             |
+| A valore singolo       | Vero                                                                                                                                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                     |
@@ -78,7 +78,7 @@ ms.locfileid: "117837591"
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                            |
-| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                                             |
+| A valore singolo       | Vero                                                                                                                                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                     |
@@ -99,7 +99,7 @@ ms.locfileid: "117837591"
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                            |
-| Is-Single-Valued       | Vero                                                                                                                                                                                                                                                                                             |
+| A valore singolo       | Vero                                                                                                                                                                                                                                                                                             |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                     |

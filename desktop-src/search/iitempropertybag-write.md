@@ -1,5 +1,5 @@
 ---
-description: Fa in modo che una o più proprietà siano salvate nel contenitore delle proprietà. L'interfaccia IItemPropertyBag è supportata solo in Windows XP e Windows Server 2003 e non deve più essere usata.
+description: Determina il salvataggio di una o più proprietà nel contenitore delle proprietà. L'interfaccia IItemPropertyBag è supportata solo in Windows XP e Windows Server 2003 e non deve più essere usata.
 ms.assetid: 35491fbc-fb1c-4bad-86e8-9f19856ed7cb
 title: Metodo IItemPropertyBag::Write
 ms.topic: reference
@@ -21,7 +21,7 @@ ms.locfileid: "117863110"
 ---
 # <a name="iitempropertybagwrite-method"></a>Metodo IItemPropertyBag::Write
 
-Fa in modo che una o più proprietà siano salvate nel contenitore delle proprietà. [**L'interfaccia IItemPropertyBag**](iitempropertybag.md) è supportata solo in Windows XP e Windows Server 2003 e non deve più essere usata.
+Determina il salvataggio di una o più proprietà nel contenitore delle proprietà. [**L'interfaccia IItemPropertyBag**](iitempropertybag.md) è supportata solo in Windows XP e Windows Server 2003 e non deve più essere usata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -78,7 +78,7 @@ Per visualizzare in anteprima gli allegati con un gestore di protocollo di terze
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
 | Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/> |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 | Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 3.0<br/>          |
 
 

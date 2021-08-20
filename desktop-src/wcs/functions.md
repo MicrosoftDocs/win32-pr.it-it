@@ -1,11 +1,11 @@
 ---
 title: Funzioni (WCS)
-description: Negli argomenti seguenti le funzioni WCS sono organizzate per categoria. In questo modo è possibile esplorare le funzioni che hanno usi correlati in un singolo argomento. Le pagine di riferimento alle funzioni sono disposte in ordine alfabetico.
+description: Negli argomenti seguenti le funzioni WCS sono organizzate per categoria. In questo modo è possibile esplorare le funzioni con utilizzi correlati in un singolo argomento. Le pagine di riferimento alle funzioni sono disposte in ordine alfabetico.
 ms.assetid: aba45dbd-6fc2-4788-87f0-043579fa53f9
 keywords:
-- Windows Sistema di colori (WCS), funzioni
-- WCS (Windows Color System), funzioni
-- gestione del colore delle immagini, funzioni
+- Windows Sistema colori (WCS), funzioni
+- WCS (Windows Color System),funzioni
+- gestione dei colori delle immagini, funzioni
 - gestione dei colori, funzioni
 - colori, funzioni
 - Informazioni di riferimento su WCS, funzioni
@@ -22,15 +22,15 @@ ms.locfileid: "117851947"
 ---
 # <a name="wcs-functions"></a>Funzioni WCS
 
-Negli argomenti seguenti le funzioni WCS sono organizzate per categoria. In questo modo è possibile esplorare le funzioni che hanno usi correlati in un singolo argomento. Le pagine di riferimento alle funzioni sono disposte in ordine alfabetico.
+Negli argomenti seguenti le funzioni WCS sono organizzate per categoria. In questo modo è possibile esplorare le funzioni con utilizzi correlati in un singolo argomento. Le pagine di riferimento alle funzioni sono disposte in ordine alfabetico.
 
 Le funzioni sono raggruppate nel modo seguente:
 
 -   [Funzioni di base da usare all'interno di un contesto di dispositivo](basic-functions-for-use-within-a-device-context.md)
--   [Funzioni avanzate per l'uso all'esterno di un contesto di dispositivo](advanced-functions-for-use-outside-of-a-device-context.md)
+-   [Funzioni avanzate da usare all'esterno di un contesto di dispositivo](advanced-functions-for-use-outside-of-a-device-context.md)
 -   [Funzioni di calibrazione e caratterizzazione dei dispositivi](device-calibration-and-characterization-functions.md)
 -   [Funzioni di gestione dei profili](profile-management-functions.md)
--   [Funzioni ICM2 per i moduli di gestione del colore (CMM) da implementare](wcs-functions-for-color-management-modules--cmms--to-implement.md)
+-   [Funzioni ICM2 per i moduli di gestione dei colori (CMM) da implementare](wcs-functions-for-color-management-modules--cmms--to-implement.md)
 -   [Elenco alfabetico di tutte le funzioni WCS](alphabetical-list-of-all-wcs-functions.md)
 
  

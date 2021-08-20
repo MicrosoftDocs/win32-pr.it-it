@@ -13,9 +13,9 @@ ms.locfileid: "117773182"
 ---
 # <a name="attributes-object"></a>Oggetto Attributes
 
-\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista, Windows XP. Usare invece la classe [**CryptographicAttributeObjectCollection**](/dotnet/api/system.security.cryptography.cryptographicattributeobjectcollection?view=dotnet-plat-ext-3.1&preserve-view=true) nello spazio [**dei nomi System.Security.Cryptography.**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true)\]
+\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista, Windows XP. Usare invece la [**classe CryptographicAttributeObjectCollection**](/dotnet/api/system.security.cryptography.cryptographicattributeobjectcollection?view=dotnet-plat-ext-3.1&preserve-view=true) nello spazio [**dei nomi System.Security.Cryptography.**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true)\]
 
-**L'oggetto** Attributes rappresenta una raccolta di [**oggetti**](attribute.md) Attribute. Ogni [**oggetto Attribute**](attribute.md) rappresenta un singolo attributo di un messaggio.
+**L'oggetto Attributes** rappresenta una raccolta di [**oggetti**](attribute.md) Attribute. Ogni [**oggetto Attribute**](attribute.md) rappresenta un singolo attributo di un messaggio.
 
 ## <a name="when-to-use"></a>Utilizzo
 
@@ -23,7 +23,7 @@ ms.locfileid: "117773182"
 
 -   Aggiungere o rimuovere un [**oggetto Attribute**](attribute.md) specifico dalla raccolta.
 -   Cancellare la raccolta.
--   Recupera il numero di attributi nella raccolta.
+-   Recuperare il numero di attributi nella raccolta.
 -   Recuperare un oggetto [**Attribute**](attribute.md) specifico dalla raccolta.
 -   Scorrere la raccolta.
 
@@ -43,7 +43,7 @@ ms.locfileid: "117773182"
 | Metodo                              | Descrizione                                                                       |
 |:------------------------------------|:----------------------------------------------------------------------------------|
 | [**Aggiungere**](attributes-add.md)       | Aggiunge un [**oggetto Attribute**](attribute.md) alla raccolta.<br/>       |
-| [**Cancella**](attributes-clear.md)   | Cancella tutti gli [**oggetti Attribute**](attribute.md) dall'insieme.<br/> |
+| [**Cancella**](attributes-clear.md)   | Cancella tutti [**gli oggetti Attribute**](attribute.md) dalla raccolta.<br/> |
 | [**Rimuovi**](attributes-remove.md) | Rimuove un [**oggetto Attribute**](attribute.md) dalla raccolta.<br/>  |
 
 
@@ -58,7 +58,7 @@ ms.locfileid: "117773182"
 
 | Proprietà                                           | Tipo di accesso          | Descrizione                                                                                                                                                                                                                     |
 |:---------------------------------------------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_NewEnum**](attributes-newenum.md)<br/> | Sola lettura<br/> | Recupera [**un'interfaccia IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) su un oggetto che può essere utilizzato per enumerare la raccolta. Questa proprietà è nascosta in Visual Basic Scripting Edition (VBScript).<br/> |
+| [**\_NewEnum**](attributes-newenum.md)<br/> | Sola lettura<br/> | Recupera [**un'interfaccia IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) su un oggetto che può essere usato per enumerare la raccolta. Questa proprietà è nascosta in Visual Basic Scripting Edition (VBScript).<br/> |
 | [**Conteggio**](attributes-count.md)<br/>       | Sola lettura<br/> | Recupera il numero di [**oggetti Attribute**](attribute.md) nella raccolta.<br/>                                                                                                                                    |
 | [**Elemento**](attributes-item.md)<br/>         | Sola lettura<br/> | Recupera [**l'oggetto Attribute**](attribute.md) che rappresenta l'attributo indicizzato. Si tratta della proprietà predefinita.<br/>                                                                                             |
 

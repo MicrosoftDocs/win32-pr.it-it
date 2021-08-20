@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione generica in cui un elemento gestito dipende da un altro oggetto. CIM \_ ConcreteDependency sottoclassi CIM \_ dipendenza per fornire una versione di classe concreta di \_ dipendenza CIM.
+description: Rappresenta un'associazione generica in cui un elemento gestito dipende da un altro. CiM \_ ConcreteDependency sottoclassi CIM Dependency per fornire una versione concreta della classe \_ della dipendenza \_ CIM.
 ms.assetid: c0e1527d-d350-410d-9b5f-c9d4dedf7393
-title: Classe CIM_ConcreteDependency
+title: CIM_ConcreteDependency classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 253f57b1fd29c3844f0e87d488974ced7bec98bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2c0e21ff96e33ddcaf1f5b06fe74f0bf223583dbb84f830dcf027235831da35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117813277"
 ---
-# <a name="cim_concretedependency-class"></a>CIM \_ ConcreteDependency (classe)
+# <a name="cim_concretedependency-class"></a>Classe CIM \_ ConcreteDependency
 
-Rappresenta un'associazione generica in cui un elemento gestito dipende da un altro oggetto. **CIM \_ ConcreteDependency** sottoclassi di [**\_ dipendenza CIM**](cim-dependency.md) per fornire una versione di classe concreta della **\_ dipendenza CIM**.
+Rappresenta un'associazione generica in cui un elemento gestito dipende da un altro. **CIM \_ ConcreteDependency** sottoclassi [**CIM \_ Dependency per**](cim-dependency.md) fornire una versione concreta della **classe \_ dependency CIM.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,26 +39,26 @@ class CIM_ConcreteDependency : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ConcreteDependency** presenta questi tipi di membri:
+La **classe CIM \_ ConcreteDependency** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ConcreteDependency** dispone di queste proprietà.
+La **classe CIM \_ ConcreteDependency** ha queste proprietà.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ Managed**
+Tipo di dati: **CIM \_ ManagedElement**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
 Oggetto indipendente nell'associazione.
@@ -68,13 +68,13 @@ Oggetto indipendente nell'associazione.
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ Managed**
+Tipo di dati: **CIM \_ ManagedElement**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
 Oggetto dipendente nell'associazione.
@@ -89,8 +89,8 @@ Oggetto dipendente nell'associazione.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Oggetto dipendente nell'associazione.
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

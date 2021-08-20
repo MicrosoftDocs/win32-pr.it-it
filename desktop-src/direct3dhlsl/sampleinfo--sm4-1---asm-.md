@@ -1,6 +1,6 @@
 ---
 title: sampleinfo (sm4.1 - asm)
-description: Esegue una query sul numero di esempi in una determinata visualizzazione di risorse shader o nel rasterizzatore.
+description: Esegue una query sul numero di campioni in una determinata visualizzazione delle risorse shader o nel rasterizzatore.
 ms.assetid: 1F0968D7-01E9-4213-9F83-172B88374C3C
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118510469"
 ---
 # <a name="sampleinfo-sm41---asm"></a>sampleinfo (sm4.1 - asm)
 
-Esegue una query sul numero di esempi in una determinata visualizzazione di risorse shader o nel rasterizzatore.
+Esegue una query sul numero di campioni in una determinata visualizzazione delle risorse shader o nel rasterizzatore.
 
 
 
@@ -37,13 +37,13 @@ Esegue una query sul numero di esempi in una determinata visualizzazione di riso
 
 ## <a name="remarks"></a>Commenti
 
-Questa istruzione restituisce il numero di esempi per la risorsa specificata o il rasterizzatore. È valido solo per le risorse che possono essere caricate usando [**ld2dms**](ld2dms--sm4-1---asm-.md) a meno che il rasterizzatore non sia *specificato come srcResource*. *srcResource* può essere un registro t \# (una visualizzazione di risorse shader) o un registro rasterizzatore.
+Questa istruzione restituisce il numero di campioni per la risorsa o l'rasterizzazione specificata. È valido solo per le risorse che possono essere caricate usando [**ld2dms,**](ld2dms--sm4-1---asm-.md) a meno che il rasterizzatore non sia *specificato come srcResource*. *srcResource può* essere un registro t \# (una visualizzazione di risorse shader) o un registro di rasterizzazione.
 
 L'istruzione calcola il vettore (SampleCount,0,0,0).
 
-Lo swizzle in *srcResource* consente di scorrere arbitrariamente i valori restituiti prima che siano scritti nella destinazione. Il valore restituito è a virgola mobile, a meno che non venga usato il modificatore \_ uint, nel qual caso il valore restituito è integer. Se non è presente alcuna risorsa associata a uno slot specificato, viene restituito 0.
+Lo swizzle in *srcResource* consente di eseguire lo swizzle arbitrario dei valori restituiti prima che siano scritti nella destinazione. Il valore restituito è a virgola mobile, a meno che non venga usato il \_ modificatore uint, nel qual caso il valore restituito è integer. Se non è presente alcuna risorsa associata a uno slot specificato, viene restituito 0.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -57,7 +57,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
 ## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
@@ -66,9 +66,9 @@ Questa funzione è supportata nei modelli shader seguenti.
 | [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
 | [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
 | [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
 | [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -78,7 +78,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

@@ -23,7 +23,7 @@ ms.locfileid: "118378881"
 ---
 # <a name="dependencymodule-property"></a>Dependency.Module - proprietà
 
-La proprietà **Module di** sola lettura dell'oggetto [**dependency**](dependency-object.md) restituisce il ModuleID del modulo richiesto dalla stringa corrente sotto forma di **BSTR.** ModuleID è lo stesso formato usato nella tabella [ModuleSignature](modulesignature-table.md).
+La proprietà **Module di** [](dependency-object.md) sola lettura dell'oggetto dipendenza restituisce il ModuleID del modulo richiesto dalla stringa corrente sotto forma di **BSTR**. ModuleID è lo stesso formato usato nella [tabella ModuleSignature](modulesignature-table.md).
 
 Questa proprietà è di sola lettura.
 
@@ -40,7 +40,7 @@ propVal = Dependency.Module
 
 ## <a name="c"></a>C++
 
-Vedere il [**metodo get \_ \_ Module di IMsmDependency.**](/windows/win32/api/mergemod/nf-mergemod-imsmdependency-get_module)
+Vedere il [**metodo IMsmDependency \_ get \_ Module.**](/windows/win32/api/mergemod/nf-mergemod-imsmdependency-get_module)
 
 ## <a name="requirements"></a>Requisiti
 

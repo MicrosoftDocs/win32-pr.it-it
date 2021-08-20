@@ -1,21 +1,21 @@
 ---
 description: Il metodo Get recupera il valore di una determinata proprietà del dispositivo audio.
 ms.assetid: 34cb3f3e-be4a-49e0-bf7d-6915906e2368
-title: 'Metodo ITAudioDeviceControl:: Get (Ipmsp. h)'
+title: Metodo ITAudioDeviceControl::Get (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4311dc18291fcfbbe533dbe17042e6ba19c1122
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d2877b48eab2ecab6259a034c9d74f4c32b9fae9233f5ceb0a0a409f43add014
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118865785"
 ---
-# <a name="itaudiodevicecontrolget-method"></a>Metodo ITAudioDeviceControl:: Get
+# <a name="itaudiodevicecontrolget-method"></a>Metodo ITAudioDeviceControl::Get
 
-\[ Questo metodo non è disponibile per l'utilizzo in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[Questo metodo non è disponibile per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client RTC offre funzionalità simili.\]
 
-Il metodo **Get** Recupera il valore di una determinata [**proprietà del dispositivo audio**](audiodeviceproperty.md).
+Il **metodo Get** recupera il valore di una determinata proprietà del dispositivo [**audio.**](audiodeviceproperty.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,24 +32,24 @@ HRESULT get_Call(
 
 <dl> <dt>
 
-*Proprietà* \[ di in\]
+*Proprietà* \[ Pollici\]
 </dt> <dd>
 
-Membro dell'enumerazione [**AudioDeviceProperty**](audiodeviceproperty.md) .
+Membro [**dell'enumerazione AudioDeviceProperty.**](audiodeviceproperty.md)
 
 </dd> <dt>
 
-*plValue* \[ out\]
+*plValue* \[ Cambio\]
 </dt> <dd>
 
-Valore della *Proprietà* di input.
+Valore della proprietà *di* input .
 
 </dd> <dt>
 
-*plFlags* \[ out\]
+*plFlags* \[ Cambio\]
 </dt> <dd>
 
-Valore dell'enumerazione [**TAPIControlFlags**](tapicontrolflags.md) che indica la modalità di controllo del valore della *Proprietà* .
+Valore [**dell'enumerazione TAPIControlFlags**](tapicontrolflags.md) che indica come viene *controllato il valore* della proprietà.
 
 </dd> </dl>
 
@@ -61,8 +61,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                                   | Descrizione                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | La memoria disponibile non è sufficiente per eseguire l'operazione.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per eseguire l'operazione.<br/> |
 
 
 
@@ -74,9 +74,9 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,1<br/>                                                         |
-| Intestazione<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
+| Versione TAPI<br/> | Richiede TAPI 3.1<br/>                                                         |
+| Intestazione<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 
@@ -91,7 +91,7 @@ Questo metodo può restituire uno di questi valori.
 [**TAPIControlFlags**](tapicontrolflags.md)
 </dt> <dt>
 
-[**AudioDeviceProperty**](audiodeviceproperty.md)
+[**Proprietà AudioDeviceProperty**](audiodeviceproperty.md)
 </dt> </dl>
 
  

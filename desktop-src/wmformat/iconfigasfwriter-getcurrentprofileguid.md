@@ -1,6 +1,6 @@
 ---
 title: Metodo IConfigAsfWriter GetCurrentProfileGuid
-description: Il metodo GetCurrentProfileGuid recupera l'oggetto corrente Windows GUID del profilo di sistema multimediale.
+description: Il metodo GetCurrentProfileGuid recupera il GUID Windows profilo di sistema multimediale corrente.
 ms.assetid: e7a2ecc0-48d4-446c-852a-0d7677cbbe71
 keywords:
 - Metodo GetCurrentProfileGuid windows Media Format

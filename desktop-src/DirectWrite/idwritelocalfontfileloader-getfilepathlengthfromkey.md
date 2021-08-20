@@ -1,10 +1,10 @@
 ---
 title: Metodo IDWriteLocalFontFileLoader GetFilePathLengthFromKey
-description: Ottiene la lunghezza del percorso file assoluto dalla chiave di riferimento del file del tipo di carattere.
+description: Ottiene la lunghezza del percorso assoluto del file dalla chiave di riferimento del file del tipo di carattere.
 ms.assetid: bdd84d75-5a7a-448a-a52c-0f5997ab07b9
 keywords:
 - Metodo GetFilePathLengthFromKey Direct Write
-- Metodo GetFilePathLengthFromKey Scrittura diretta, interfaccia IDWriteLocalFontFileLoader
+- Metodo GetFilePathLengthFromKey Direct Write, interfaccia IDWriteLocalFontFileLoader
 - Metodo GetFilePathLengthFromKey dell'interfaccia IDWriteLocalFontFileLoader
 topic_type:
 - apiref
@@ -25,7 +25,7 @@ ms.locfileid: "117816352"
 ---
 # <a name="idwritelocalfontfileloadergetfilepathlengthfromkey-method"></a>Metodo IDWriteLocalFontFileLoader::GetFilePathLengthFromKey
 
-Ottiene la lunghezza del percorso file assoluto dalla chiave di riferimento del file del tipo di carattere.
+Ottiene la lunghezza del percorso assoluto del file dalla chiave di riferimento del file del tipo di carattere.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,7 +58,7 @@ Chiave di riferimento del file del tipo di carattere che identifica in modo univ
 
 Tipo: **UINT32**
 
-Dimensioni della chiave di riferimento del file del tipo di carattere in byte.
+Dimensione in byte della chiave di riferimento del file del tipo di carattere.
 
 </dd> <dt>
 

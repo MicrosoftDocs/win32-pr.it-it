@@ -99,7 +99,7 @@ Impostare gli attributi seguenti nel tipo di supporto di output.
 </tr>
 <tr class="odd">
 <td><a href="mf-mt-pixel-aspect-ratio-attribute.md"><strong>MF_MT_PIXEL_ASPECT_RATIO</strong></a></td>
-<td>facoltativo. Specifica le proporzioni pixel. Il valore predefinito è 1:1.</td>
+<td>facoltativo. Specifica le proporzioni dei pixel. Il valore predefinito è 1:1.</td>
 </tr>
 </tbody>
 </table>
@@ -122,7 +122,7 @@ Le proprietà seguenti sono supportate in Windows 7.
 
 | Proprietà                                                                              | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CODECAPI_AVEncCommonRateControlMode**](../directshow/avenccommonratecontrolmode-property.md) | Imposta la modalità di controllo della frequenza. Vedere la sezione Osservazioni. La modalità predefinita è VBR (Variable Bit Rate) senza vincoli.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| [**CODECAPI_AVEncCommonRateControlMode**](../directshow/avenccommonratecontrolmode-property.md) | Imposta la modalità di controllo della frequenza. Vedere la sezione Osservazioni. La modalità predefinita è vbr (Variable Bit Rate) senza vincoli.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | [**CODECAPI_AVEncCommonQuality**](../directshow/avenccommonquality-property.md)                 | Imposta il livello di qualità. Questa proprietà si applica quando la modalità di controllo della frequenza è vbr basata sulla qualità (**eAVEncCommonRateControlMode_Quality**). L'intervallo valido è compreso tra 1 e 100. Il valore predefinito è 70. <br/> Per impostare questo parametro, impostare la proprietà prima di chiamare [**IMFTransform::SetOutputType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setoutputtype). <br/> Per impostare questo parametro in Windows 7, impostare la proprietà prima di chiamare [**IMFTransform::SetOutputType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setoutputtype). Il codificatore ignora le modifiche dopo l'impostazione del tipo di output. <br/> In Windows 8, questa proprietà può essere impostata in qualsiasi momento durante la codifica. Le modifiche vengono applicate a partire dal frame di input successivo. <br/> Internamente, il codificatore converte questa proprietà in un [valore AVEncVideoEncodeQP.](codecapi-avencvideoencodeqp.md) <br/> |
 
 
@@ -147,7 +147,7 @@ Le proprietà seguenti richiedono Windows 8.
 <tbody>
 <tr class="odd">
 <td><a href="codecapi-avencadaptivemode.md">CODECAPI_AVEncAdaptiveMode</a></td>
-<td>Imposta la modalità di codifica adattiva. Il codificatore H.264 supporta le modalità seguenti Windows 8:
+<td>Imposta la modalità di codifica adattiva. Il codificatore H.264 supporta le modalità seguenti in Windows 8:
 <ul>
 <li><strong>eAVEncAdaptiveMode_None</strong>. Nessuna codifica adattiva. (impostazione predefinita).</li>
 <li><strong>eAVEncAdaptiveMode_FrameRate</strong>. Modificare in modo adattivo la frequenza dei fotogrammi.</li>
@@ -160,43 +160,43 @@ Le proprietà seguenti richiedono Windows 8.
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/DirectShow/avenccommonmaxbitrate-property">CODECAPI_AVEncCommonMaxBitRate</a></td>
-<td>Per la codifica VBR vincolata, specifica la velocità di svuotamento del bucket che &quot; &quot; perde, in bit al secondo. Questa proprietà si applica quando la modalità di controllo della frequenza è <strong>eAVEncCommonRateControlMode_PeakConstrainedVBR</strong>. <br/> L'intervallo valido è [1 ... 2²²–1]. <br/></td>
+<td>Per la codifica VBR vincolata, specifica la velocità di svuotamento del bucket che &quot; &quot; perde, in bit al secondo. Questa proprietà si applica quando la modalità di controllo della frequenza è <strong>eAVEncCommonRateControlMode_PeakConstrainedVBR</strong>. <br/> L'intervallo valido è [1 ... 2°-1]. <br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/DirectShow/avenccommonmeanbitrate-property">CODECAPI_AVEncCommonMeanBitRate</a></td>
-<td>Imposta la velocità in bit media per il flusso di bit codificato, in bit al secondo. Questa proprietà viene ignorata se la modalità di controllo della frequenza è <strong>eAVEncCommonRateControlMode_Quality</strong>. <br/> L'intervallo valido è [1 ... 2²²–1]. <br/> Nelle modalità CBR e VBR senza vincoli, la velocità in bit media determina le dimensioni finali del file. In modalità CBR, la velocità in bit media è anche la velocità con cui i bit compressi vengono svuotati dal bucket che perde. Per altre informazioni, vedere &quot; &quot; The <a href="the-leaky-bucket-buffer-model.md">Leaky Bucket Buffer Model</a>.) <br/> In Windows 7, la velocità in bit media viene specificata dall'attributo MF_MT_AVG_BITRATE <a href="mf-mt-avg-bitrate-attribute.md">sul</a> tipo di supporto. <br/> In Windows 8, è possibile impostare la velocità in bit media usando l'attributo <a href="mf-mt-avg-bitrate-attribute.md">MF_MT_AVG_BITRATE</a> o la <a href="/windows/desktop/DirectShow/avenccommonmeanbitrate-property">proprietà CODECAPI_AVEncCommonMeanBitRate.</a> Se entrambe le proprietà sono impostate, CODECAPI_AVEncCommonMeanBitRate override. In Windows 8, è possibile impostare la velocità in bit media durante la codifica. Se la velocità in bit cambia, il codificatore usa la codifica adattiva.<br/></td>
+<td>Imposta la velocità in bit media per il flusso di bit codificato, in bit al secondo. Questa proprietà viene ignorata se la modalità di controllo della frequenza <strong>è eAVEncCommonRateControlMode_Quality</strong>. <br/> L'intervallo valido è [1 ... 2°-1]. <br/> Nelle modalità CBR e VBR senza vincoli, la velocità in bit media determina le dimensioni finali del file. In modalità CBR, la velocità in bit media è anche la frequenza con cui i bit compressi vengono svuotati dal bucket che perde. Per altre informazioni, vedere Il modello di buffer di &quot; bucket persi. &quot; <a href="the-leaky-bucket-buffer-model.md"></a> <br/> In Windows 7, la velocità in bit media viene specificata <a href="mf-mt-avg-bitrate-attribute.md">dall'attributo MF_MT_AVG_BITRATE</a> nel tipo di supporto. <br/> In Windows 8 è possibile impostare la velocità in bit media usando <a href="mf-mt-avg-bitrate-attribute.md">l'attributo MF_MT_AVG_BITRATE</a> o la <a href="/windows/desktop/DirectShow/avenccommonmeanbitrate-property">CODECAPI_AVEncCommonMeanBitRate</a> proprietà . Se entrambe le proprietà sono impostate, CODECAPI_AVEncCommonMeanBitRate override di . In Windows 8 è possibile impostare la velocità in bit media durante la codifica. Se la velocità in bit cambia, il codificatore usa la codifica adattiva.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/DirectShow/avenccommonqualityvsspeed-property">CODECAPI_AVEncCommonQualityVsSpeed</a></td>
 <td>Imposta il compromesso qualità/velocità. Intervallo valido:
 <ul>
-<li>0-33: bassa complessità</li>
+<li>0-33: Complessità bassa</li>
 <li>34-66: complessità media (impostazione predefinita)</li>
-<li>67-100: complessità elevata</li>
+<li>67-100: Complessità elevata</li>
 </ul>
 <br/> Questo valore influisce sul modo in cui il codificatore esegue varie operazioni di codifica, ad esempio la compensazione del movimento. A livelli di complessità più elevati, il codificatore viene eseguito più lentamente, ma produce una qualità migliore alla stessa velocità in bit.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="codecapi-avench264cabacenable.md">CODECAPI_AVEncH264CABACEnable</a></td>
-<td>Abilita o disabilita CABAC (codifica aritmetica binaria context-adaptive) per la codifica entropia H.264. Il valore predefinito è <strong>VARIANT_FALSE</strong>. <br/> CABAC non viene usato per il profilo baseline.<br/></td>
+<td>Abilita o disabilita CABAC (context-adaptive binary arithmetic coding) per la codifica entropia H.264. Il valore predefinito è <strong>VARIANT_FALSE</strong>. <br/> CABAC non viene usato per il profilo di base.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="codecapi-avench264spsid.md">CODECAPI_AVEncH264SPSID</a></td>
-<td>Imposta il valore di <strong>seq_parameter_set_id</strong> nell'unità NAL SPS del flusso di bit H.264. <br/></td>
+<td>Imposta il valore di <strong>seq_parameter_set_id</strong> nell'unità SPS NAL del flusso di bit H.264. <br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/DirectShow/avencmpvdefaultbpicturecount-property">CODECAPI_AVEncMPVDefaultBPictureCount</a></td>
 <td>Imposta il numero massimo di fotogrammi B consecutivi nel flusso di bit di output. I valori validi sono:
 <ul>
-<li>0: non usare fotogrammi B (impostazione predefinita).</li>
+<li>0: non usare frame B (impostazione predefinita).</li>
 <li>1: usare un frame B.</li>
-<li>2: usare due fotogrammi B.</li>
+<li>2: usare due frame B.</li>
 </ul>
-Per impostare questo parametro, impostare la proprietà prima di chiamare <a href="/windows/desktop/api/mftransform/nf-mftransform-imftransform-setoutputtype"><strong>IMFTransform::SetOutputType</strong></a>. <br/> Per Profilo di base, il numero di fotogrammi B è sempre zero. Il codificatore eseguirà l'override di valori diversi da zero.<br/> Per altri profili H.264, se questa proprietà è diversa da zero, il modello di codifica è IBBPBBP, dove il numero massimo di fotogrammi B consecutivi è uguale a <a href="/windows/desktop/DirectShow/avencmpvdefaultbpicturecount-property">CODECAPI_AVEncMPVDefaultBPictureCount</a>. <br/></td>
+Per impostare questo parametro, impostare la proprietà prima di chiamare <a href="/windows/desktop/api/mftransform/nf-mftransform-imftransform-setoutputtype"><strong>IMFTransform::SetOutputType</strong></a>. <br/> Per Profilo di base, il numero di fotogrammi B è sempre zero. Il codificatore eseguirà l'override di valori diversi da zero.<br/> Per altri profili H.264, se questa proprietà è diversa da zero, il modello di codifica è IBBPBBP, dove il numero massimo di fotogrammi B consecutivi è uguale <a href="/windows/desktop/DirectShow/avencmpvdefaultbpicturecount-property">a CODECAPI_AVEncMPVDefaultBPictureCount</a>. <br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/DirectShow/avencmpvgopsize-property">CODECAPI_AVEncMPVGOPSize</a></td>
-<td>Imposta il numero di immagini da un'intestazione GOP alla successiva, incluso l'ancoraggio iniziale ma non quello seguente. <br/> L'intervallo valido è [0 ... 2²²–1]. Se zero, il codificatore seleziona le dimensioni GOP. Il valore predefinito è zero. <br/></td>
+<td>Imposta il numero di immagini da un'intestazione GOP alla successiva, incluso l'ancoraggio iniziale ma non quello seguente. <br/> L'intervallo valido è [0 ... 2°-1]. Se zero, il codificatore seleziona le dimensioni GOP. Il valore predefinito è zero. <br/></td>
 </tr>
 <tr class="even">
 <td><a href="codecapi-avencnumworkerthreads.md">CODECAPI_AVEncNumWorkerThreads</a></td>
@@ -208,7 +208,7 @@ Per impostare questo parametro, impostare la proprietà prima di chiamare <a hre
 </tr>
 <tr class="even">
 <td><a href="codecapi-avencvideoencodeqp.md">CODECAPI_AVEncVideoEncodeQP</a></td>
-<td>Intervallo valido: 16-51. Il valore predefinito è 24. <br/> Questa proprietà si applica quando la modalità di controllo della frequenza è <strong>eAVEncCommonRateControlMode_Quality</strong>. <br/> Questa proprietà configura la stessa impostazione di codifica di <a href="/windows/desktop/DirectShow/avenccommonquality-property"><strong>AVEncCommonQuality</strong></a>. TUTTAVIA, <a href="codecapi-avencvideoencodeqp.md">AVEncVideoEncodeQP</a> consente all'applicazione di specificare direttamente il valore di QP. Se entrambe le proprietà sono impostate, AVEncVideoEncodeQP esegue l'override. <br/> Il valore predefinito 24 corrisponde al valore predefinito 70 per <a href="/windows/desktop/DirectShow/avenccommonquality-property"><strong>l'impostazione AVEncCommonQuality.</strong></a><br/></td>
+<td>Intervallo valido: 16-51. Il valore predefinito è 24. <br/> Questa proprietà si applica quando la modalità di controllo della frequenza <strong>eAVEncCommonRateControlMode_Quality</strong>. <br/> Questa proprietà configura la stessa impostazione di codifica di <a href="/windows/desktop/DirectShow/avenccommonquality-property"><strong>AVEncCommonQuality.</strong></a> TUTTAVIA, <a href="codecapi-avencvideoencodeqp.md">AVEncVideoEncodeQP</a> consente all'applicazione di specificare direttamente il valore di QP. Se entrambe le proprietà sono impostate, AVEncVideoEncodeQP esegue l'override di . <br/> Il valore predefinito di 24 corrisponde al valore predefinito di 70 per <a href="/windows/desktop/DirectShow/avenccommonquality-property"><strong>l'impostazione AVEncCommonQuality.</strong></a><br/></td>
 </tr>
 <tr class="odd">
 <td><a href="codecapi-avencvideoforcekeyframe.md">CODECAPI_AVEncVideoForceKeyFrame</a></td>
@@ -216,7 +216,7 @@ Per impostare questo parametro, impostare la proprietà prima di chiamare <a hre
 </tr>
 <tr class="even">
 <td><a href="codecapi-avencvideominqp.md">CODECAPI_AVEncVideoMinQP</a></td>
-<td>Intervallo valido: 0-51. Il valore predefinito è 0. <br/> Questa proprietà si applica a tutte le modalità di controllo della frequenza. Il codificatore non deve produrre un valore QP inferiore a quello specificato dalla CODECAPI_AVEncVideoMinQP <a href="codecapi-avencvideominqp.md">proprietà</a> .<br/></td>
+<td>Intervallo valido: 0-51. Il valore predefinito è 0. <br/> Questa proprietà si applica a tutte le modalità di controllo della frequenza. Il codificatore non deve produrre un valore QP inferiore a quello specificato dalla <a href="codecapi-avencvideominqp.md">CODECAPI_AVEncVideoMinQP</a> proprietà .<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="codecapi-avlowlatencymode.md">CODECAPI_AVLowLatencyMode</a></td>
@@ -237,10 +237,10 @@ Il codificatore supporta le modalità di controllo della frequenza seguenti.
 
 | Mode                                  | Costante                                            | Descrizione                                                                                                                                                                                                                                         |
 |---------------------------------------|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Velocità in bit costante (CBR)               | **eAVEncCommonRateControlMode_CBR**                | Il codificatore tenta di ottenere una velocità in bit costante, usando un modello "bucket che perde". La velocità in bit di destinazione viene specificata dalla [proprietà CODECAPI_AVEncCommonMeanBitRate](../directshow/avenccommonmeanbitrate-property.md) destinazione. <br/> Richiede Windows 8. <br/> |
-| Velocità in bit variabile vincolata (VBR)   | **eAVEncCommonRateControlMode_PeakConstrainedVBR** | Il codificatore usa un modello "bucket che perde" con una velocità in bit di picco. La frequenza di svuotamento per il bucket che perde viene data [dalla CODECAPI_AVEncCommonMaxBitRate](../directshow/avenccommonmaxbitrate-property.md) proprietà . <br/> Richiede Windows 8. <br/>     |
+| Velocità in bit costante (CBR)               | **eAVEncCommonRateControlMode_CBR**                | Il codificatore tenta di ottenere una velocità in bit costante, usando un modello di "bucket persa". La velocità in bit di destinazione viene specificata [dalla CODECAPI_AVEncCommonMeanBitRate](../directshow/avenccommonmeanbitrate-property.md) proprietà . <br/> Richiede Windows 8. <br/> |
+| Velocità in bit variabile vincolata (VBR)   | **eAVEncCommonRateControlMode_PeakConstrainedVBR** | Il codificatore usa un modello di "bucket di perdita" con una velocità in bit di picco. La frequenza di svuotamento per il bucket che perde viene specificata [dalla CODECAPI_AVEncCommonMaxBitRate](../directshow/avenccommonmaxbitrate-property.md) proprietà . <br/> Richiede Windows 8. <br/>     |
 | Velocità in bit variabile basata sulla qualità (VBR) | **eAVEncCommonRateControlMode_Quality**            | Il codificatore tenta di ottenere un livello di qualità costante, dato dalla [**proprietà AVEncCommonQuality.**](../directshow/avenccommonquality-property.md)                                                                                                           |
-| VBR senza vincoli                     | **eAVEncCommonRateControlMode_UnconstrainedVBR**   | Il codificatore tenta di ottenere la velocità in bit di destinazione specificata [**dall'attributo MF_MT_AVG_BITRATE**](mf-mt-avg-bitrate-attribute.md) nel tipo di supporto di output. Si tratta della modalità predefinita.                                                              |
+| VbR senza vincoli                     | **eAVEncCommonRateControlMode_UnconstrainedVBR**   | Il codificatore tenta di ottenere la velocità in bit di destinazione specificata [**dall'attributo MF_MT_AVG_BITRATE**](mf-mt-avg-bitrate-attribute.md) nel tipo di supporto di output. Si tratta della modalità predefinita.                                                              |
 
 
 
@@ -248,14 +248,14 @@ Il codificatore supporta le modalità di controllo della frequenza seguenti.
 
 Le modalità CBR e VBR vincolate richiedono Windows 8.
 
-In Windows 8 codificatore imposta gli attributi seguenti negli esempi di output:
+In Windows 8, il codificatore imposta gli attributi seguenti negli esempi di output:
 
 -   [MFSampleExtension_DecodeTimestamp](mfsampleextension-decodetimestamp.md)
 -   [MFSampleExtension_VideoEncodePictureType](mfsampleextension-videoencodepicturetype.md)
 -   [MFSampleExtension_VideoEncodeQP](mfsampleextension-videoencodeqp.md)
 
 > [!Note]  
-> Una versione precedente della documentazione ha erroneamente dichiarato che il codificatore è supportato Windows Server 2008 R2.
+> Una versione precedente della documentazione indica erroneamente che il codificatore è supportato in Windows Server 2008 R2.
 
  
 
@@ -263,14 +263,14 @@ In Windows 8 codificatore imposta gli attributi seguenti negli esempi di output:
 
 In Windows 8 codificatore supporta due modalità di codifica:
 
--   **Codifica della sezione.** In questa modalità, le sezioni vengono codificate in parallelo. Ogni sezione viene codificata in un thread diverso. Questa modalità ha bassa latenza, perché una singola immagine è codificata in parallelo. Tuttavia, questo approccio non viene ridimensionato con l'aumentare del numero di core, perché il numero di sezioni è delimitato dal numero di righe di macroblock nell'immagine di input.
+-   **Codifica della sezione.** In questa modalità, le sezioni vengono codificate in parallelo. Ogni sezione è codificata in un thread diverso. Questa modalità ha bassa latenza, perché una singola immagine viene codificata in parallelo. Tuttavia, questo approccio non viene ridimensionato con l'aumentare del numero di core, perché il numero di sezioni è delimitato dal numero di righe del blocco macro nell'immagine di input.
 -   **Codifica multi-frame.** In questa modalità il codificatore accetta più fotogrammi di input e li codifica in parallelo. Questa modalità offre prestazioni migliori in un ambiente multicore, ma introduce una maggiore latenza.
 
 Per impostazione predefinita, il codificatore è codificato in sezioni, per ridurre al minimo la latenza. Per abilitare la codifica multi-frame, [impostare la proprietà CODECAPI_AVLowLatencyMode](codecapi-avlowlatencymode.md) su **VARIANT_FALSE**.
 
 Per impostare il numero di thread di lavoro usati dal codificatore, impostare la [CODECAPI_AVEncNumWorkerThreads](codecapi-avencnumworkerthreads.md) proprietà .
 
-In Windows 7 il codificatore usa sempre la codifica slice.
+In Windows 7 il codificatore usa sempre la codifica delle sezioni.
 
 ### <a name="certified-hardware-encoder"></a>Codificatore hardware certificato
 
@@ -278,7 +278,7 @@ Se è presente un codificatore hardware certificato, verrà in genere usato al p
 
 Di seguito è riportato il set di proprietà **ICodecAPI** obbligatorie e facoltative che i codificatori possono superare la certificazione del codificatore HCK.
 
-Le seguenti Windows 8 e Windows 8.1 **proprietà ICodecAPI** sono obbligatorie:
+Le proprietà Windows 8 e Windows 8.1 **ICodecAPI** seguenti sono obbligatorie:
 
 -   [CODECAPI_AVEncCommonRateControlMode](../directshow/avenccommonratecontrolmode-property.md)
 -   [CODECAPI_AVEncCommonQuality](../directshow/avenccommonquality-property.md)
@@ -303,7 +303,7 @@ Le seguenti Windows 8.1 **proprietà ICodecAPI** sono facoltative, ma vengono te
 -   [CODECAPI_AVEncVideoMeanAbsoluteDifference](codecapi-avencvideomeanabsolutedifference.md)
 -   [CODECAPI_AVEncVideoMaxQP](codecapi-avencvideomaxqp.md)
 -   [CODECAPI_AVEncVideoROIEnabled](codecapi-avencvideoroienabled.md)
--   [CODECAPI_AVEncVideoTemporalLayerCount](codecapi-avencvideotemporallayercount.md) (dinamica)
+-   [CODECAPI_AVEncVideoTemporalLayerCount](codecapi-avencvideotemporallayercount.md) (dinamico)
 -   [CODECAPI_AVEncH264CABACEnable](codecapi-avench264cabacenable.md)
 
 Le proprietà Windows 8 e Windows 8.1 **ICodecAPI** sono facoltative, ma vengono testate in HCK, se supportate.

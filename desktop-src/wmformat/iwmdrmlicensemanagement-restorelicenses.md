@@ -5,7 +5,7 @@ ms.assetid: 83e4b748-0f69-4a9e-b531-047c9a2be1fe
 keywords:
 - Metodo RestoreLicenses windows Media Format
 - Metodo RestoreLicenses windows Media Format , interfaccia IWMDRMLicenseManagement
-- IWMDRMLicenseManagement interface windows Media Format , RestoreLicenses method
+- Interfaccia IWMDRMLicenseManagement windows Media Format, metodo RestoreLicenses
 topic_type:
 - apiref
 api_name:
@@ -55,7 +55,7 @@ Percorso UNC del percorso da cui verranno ripristinate le licenze.
 *dwFlags* \[ Pollici\]
 </dt> <dd>
 
-Flag che specificano le opzioni di ripristino da usare. L'unico flag attualmente supportato è WMDRM RESTORE INDIVIDUALIZE, che configura il metodo per eseguire l'individualizzazione come parte \_ \_ del ripristino, se necessario.
+Flag che specificano le opzioni di ripristino da utilizzare. L'unico flag attualmente supportato è WMDRM RESTORE INDIVIDUALIZE, che configura il metodo per eseguire l'individualizzazione come parte \_ \_ del ripristino, se necessario.
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ Puntatore che riceve un puntatore **all'interfaccia IUnknown** di un oggetto che
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
@@ -82,11 +82,11 @@ Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono 
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene eseguito in modo asincrono. Restituisce immediatamente dopo la chiamata e quindi genera una serie di eventi **MEWMDRMLicenseRestoreProgress** seguiti da un evento **MEWMDRMLicenseRestoreCompleted** al termine dell'elaborazione. Il valore di ogni evento **MEWMDRMLicenseRestoreProgress** ottenuto chiamando **IMFMediaEvent::GetValue** è un **puntatore IUnknown.** È possibile chiamare il **metodo QueryInterface** dell'interfaccia **IUnknown** recuperata per ottenere un'istanza dell'interfaccia [**IWMDRMLicenseBackupRestoreStatus.**](iwmdrmlicensebackuprestorestatus.md)
+Questo metodo viene eseguito in modo asincrono. Restituisce immediatamente dopo essere stato chiamato e quindi genera una serie di eventi **MEWMDRMLicenseRestoreProgress** seguiti da un evento **MEWMDRMLicenseRestoreCompleted** al termine dell'elaborazione. Il valore di ogni evento **MEWMDRMLicenseRestoreProgress** ottenuto chiamando **IMFMediaEvent::GetValue** è un **puntatore IUnknown.** È possibile chiamare il **metodo QueryInterface** dell'interfaccia **IUnknown** recuperata per ottenere un'istanza [**dell'interfaccia IWMDRMLicenseBackupRestoreStatus.**](iwmdrmlicensebackuprestorestatus.md)
 
-Per altre informazioni sull'uso dei metodi asincroni delle API estese Windows Media DRM Client, vedere [Using the Media Foundation Event Model](using-the-media-foundation-model.md).
+Per altre informazioni sull'uso dei metodi asincroni delle API estese del client DRM di Windows, vedere [Using the Media Foundation Event Model](using-the-media-foundation-model.md).
 
-Il backup può essere eseguito dal computer locale o da un computer diverso.
+Il backup può essere eseguito dal computer locale o da un altro computer.
 
 ## <a name="requirements"></a>Requisiti
 

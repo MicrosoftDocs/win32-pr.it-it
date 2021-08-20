@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione in cui un \_ oggetto CIM serviceAccessPoint richiede servizi di protocollo da un \_ oggetto CIM ProtocolEndpoint.
+description: Rappresenta un'associazione in cui un oggetto ServiceAccessPoint CIM richiede servizi \_ di protocollo da un oggetto \_ ProtocolEndpoint CIM.
 ms.assetid: d1ef774d-f0e0-43e7-8a9d-63c2fad5ca4a
-title: Classe CIM_BindsTo
+title: CIM_BindsTo classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ae32bd10d1e7d1944519fe8fb039453989c165fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b0b2dc2f767ad409cece300fc33ecde0e6a0d2f55ce659ea9d77fe332f3529a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117813422"
 ---
-# <a name="cim_bindsto-class"></a>CIM \_ BindsTo (classe)
+# <a name="cim_bindsto-class"></a>Classe \_ CiM BindsTo
 
-Rappresenta un'associazione in cui un oggetto [**CIM \_ serviceAccessPoint**](cim-serviceaccesspoint.md) richiede servizi di protocollo da un oggetto [**CIM \_ ProtocolEndpoint**](cim-protocolendpoint.md) .
+Rappresenta un'associazione in cui [**un oggetto \_ ServiceAccessPoint CIM**](cim-serviceaccesspoint.md) richiede servizi di protocollo da un [**oggetto \_ ProtocolEndpoint CIM.**](cim-protocolendpoint.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,45 +39,45 @@ class CIM_BindsTo : CIM_SAPSAPDependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ BindsTo** presenta questi tipi di membri:
+La **classe \_ CIM BindsTo** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ BindsTo** dispone di queste proprietà.
+La **classe CIM \_ BindsTo** ha queste proprietà.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ ProtocolEndpoint**
+Tipo di dati: **Protocollo \_ CIMEndpoint**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Endpoint di livello inferiore a cui si accede dal punto di accesso al servizio.
+Endpoint di livello inferiore a cui accede il punto di accesso del servizio.
 
 </dd> <dt>
 
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ serviceAccessPoint**
+Tipo di dati: **\_ CIM ServiceAccessPoint**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-Endpoint del protocollo o del punto di accesso dipendente dall'endpoint di livello inferiore.
+Punto di accesso o endpoint del protocollo che dipende dall'endpoint di livello inferiore.
 
 </dd> </dl>
 
@@ -89,8 +89,8 @@ Endpoint del protocollo o del punto di accesso dipendente dall'endpoint di livel
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Endpoint del protocollo o del punto di accesso dipendente dall'endpoint di livel
 
 <dl> <dt>
 
-[**\_SAPSAPDEPENDENCY CIM**](cim-sapsapdependency.md)
+[**CIM \_ SAPSAPDependency**](cim-sapsapdependency.md)
 </dt> </dl>
 
  

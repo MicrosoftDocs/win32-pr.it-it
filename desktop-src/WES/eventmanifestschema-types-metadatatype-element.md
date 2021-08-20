@@ -1,9 +1,9 @@
 ---
-title: tipi (MetadataType) (elemento)
+title: Elemento types (MetadataType)
 description: Definisce un elenco di tipi XML.
 ms.assetid: 55eb553e-1744-4fbc-987d-f763e80f3560
 keywords:
-- tipo di elemento EventLog
+- Elemento types EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 34bdc9af1283b245ec166386eae4708689f3ec9c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9520a98fccc586a8596c3f2ae8e684453ef56a68eaa411395e7e291f2a17d68e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104340923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117936849"
 ---
-# <a name="types-metadatatype-element"></a>tipi (MetadataType) (elemento)
+# <a name="types-metadatatype-element"></a>Elemento types (MetadataType)
 
 Definisce un elenco di tipi XML.
 
@@ -30,7 +30,7 @@ Definisce un elenco di tipi XML.
  />
 ```
 
-L'elemento **types** viene definito dal tipo complesso [**MetadataType**](eventmanifestschema-metadatatype-complextype.md) .
+**L'elemento** types è definito dal [**tipo complesso MetadataType.**](eventmanifestschema-metadatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **types** viene definito dal tipo complesso [**MetadataType**](eventm
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

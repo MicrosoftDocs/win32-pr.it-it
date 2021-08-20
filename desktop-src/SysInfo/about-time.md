@@ -23,7 +23,7 @@ Le funzioni correlate al tempo restituiscono l'ora in uno dei diversi formati. Ã
 | Locale           | [**SYSTEMTIME**](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) o [ **FILETIME**](/windows/win32/api/minwinbase/ns-minwinbase-filetime) | Ora di sistema o ora del file convertita nel fuso orario locale del sistema.                                                               |
 | File            | [**FILETIME**](/windows/win32/api/minwinbase/ns-minwinbase-filetime)                                         | Numero di intervalli di 100 nanosecondi dal 1Â° gennaio 1601.                                                                       |
 | MS-DOS          | **WORD**                                                                 | Parola imballata per la data, un'altra per l'ora.                                                                                   |
-| Windows         | **DWORD** o **ULONGLONG**                                               | Numero di millisecondi dall'ultimo avvio del sistema. Quando viene recuperato come valore DWORD, Windows cicli di tempo ogni 49,7 giorni. |
+| Windows         | **DWORD** o **ULONGLONG**                                               | Numero di millisecondi dall'ultimo avvio del sistema. Quando viene recuperato come valore DWORD, Windows ciclo di tempo ogni 49,7 giorni. |
 | Conteggio interrupt | **Ulonglong**                                                            | Numero di intervalli di 100 nanosecondi dall'ultimo avvio del sistema.                                                           |
 
 

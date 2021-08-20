@@ -1,5 +1,5 @@
 ---
-title: Strutture (API game controller XInput)
+title: Strutture (API XInput Game Controller)
 description: Strutture XInput disponibili.
 ms.assetid: 89bb00ea-0be3-9619-1629-a7b7894302d5
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118430834"
 ---
-# <a name="structures-xinput-game-controller-apis"></a>Strutture (API game controller XInput)
+# <a name="structures-xinput-game-controller-apis"></a>Strutture (API XInput Game Controller)
 
 Strutture XInput disponibili
 
@@ -20,8 +20,8 @@ Strutture XInput disponibili
 | Argomento                                                                         | Descrizione                                                                                                                                                                                        |
 |-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**INFORMAZIONI SULLA BATTERIA XINPUT \_ \_**](/windows/desktop/api/XInput/ns-xinput-xinput_battery_information)<br/> | Contiene informazioni sul tipo di batteria e sullo stato di carica.<br/>                                                                                                                                  |
-| [**FUNZIONALITÀ \_ XINPUT**](/windows/desktop/api/XInput/ns-xinput-xinput_capabilities)<br/>                | Descrive le funzionalità di un controller connesso. La [**funzione XInputGetCapabilities**](/windows/desktop/api/XInput/nf-xinput-xinputgetcapabilities) restituisce [**FUNZIONALITÀ XINPUT \_**](/windows/desktop/api/XInput/ns-xinput-xinput_capabilities). <br/> |
+| [**FUNZIONALITÀ \_ XINPUT**](/windows/desktop/api/XInput/ns-xinput-xinput_capabilities)<br/>                | Descrive le funzionalità di un controller connesso. La [**funzione XInputGetCapabilities**](/windows/desktop/api/XInput/nf-xinput-xinputgetcapabilities) restituisce [**XINPUT \_ CAPABILITIES**](/windows/desktop/api/XInput/ns-xinput-xinput_capabilities). <br/> |
 | [**XINPUT \_ GAMEPAD**](/windows/desktop/api/XInput/ns-xinput-xinput_gamepad)<br/>                          | Descrive lo stato corrente del controller Xbox.<br/>                                                                                                                                 |
-| [**SEQUENZA DI TASTI XINPUT \_**](/windows/desktop/api/XInput/ns-xinput-xinput_keystroke)<br/>                      | Specifica i dati della sequenza di tasti [**restituiti da XInputGetKeystroke.**](/windows/desktop/api/XInput/nf-xinput-xinputgetkeystroke)<br/>                                                                                                  |
-| [**STATO \_ XINPUT**](/windows/desktop/api/XInput/ns-xinput-xinput_state)<br/>                              | Rappresenta lo stato di un controller.<br/>                                                                                                                                                   |
+| [**XINPUT \_ KEYSTROKE**](/windows/desktop/api/XInput/ns-xinput-xinput_keystroke)<br/>                      | Specifica i dati della sequenza di tasti [**restituiti da XInputGetKeystroke.**](/windows/desktop/api/XInput/nf-xinput-xinputgetkeystroke)<br/>                                                                                                  |
+| [**XINPUT \_ STATE**](/windows/desktop/api/XInput/ns-xinput-xinput_state)<br/>                              | Rappresenta lo stato di un controller.<br/>                                                                                                                                                   |
 | [**VIBRAZIONE XINPUT \_**](/windows/desktop/api/XInput/ns-xinput-xinput_vibration)<br/>                      | Specifica i livelli di velocità del motore per la funzione di vibrazione di un controller.<br/>                                                                                                                |

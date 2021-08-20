@@ -78,7 +78,7 @@ Se non si ha esperienza con l'uso di una penna, l'introduzione migliore è impar
 Quando si prova a usare una penna, si scoprirà che:
 
 -   **I controlli di piccole dimensioni sono difficili da usare.** Le dimensioni dei controlli influiscono notevolmente sulla possibilità di interagire in modo efficace. I controlli di 10x10 pixel funzionano ragionevolmente per una penna, ma i controlli più grandi sono ancora più comodi da usare. Ad esempio, [i controlli di selezione](ctrl-spin-controls.md) (15x11 pixel) sono troppo piccoli per essere facilmente utilizzati con una penna.
--   **La mani è un fattore.** La mano a volte copre gli elementi che si potrebbe voler visualizzare o con cui interagire. Ad esempio, per i menu di scelta rapida degli utenti con la mano destra è difficile usarli se vengono visualizzati a destra del punto di clic, quindi è meglio se vengono visualizzati a sinistra. Windows consente agli utenti di indicare la propria mano nel Tablet PC Impostazioni pannello di controllo.
+-   **La mani è un fattore.** La mano a volte copre gli elementi che si potrebbe voler visualizzare o con cui interagire. Ad esempio, per i menu di scelta rapida degli utenti con la mano destra è difficile da usare se vengono visualizzati a destra del punto di clic, quindi è meglio se vengono visualizzati a sinistra. Windows consente agli utenti di indicare la propria mano nel Tablet PC Impostazioni pannello di controllo.
 -   **La localizzazione delle attività è utile.** Anche se è possibile spostare il puntatore su uno schermo da 14 pollici con un movimento del mouse di 3 pollici, l'uso di una penna richiede di spostare la mano per l'intero 14 pollici. Lo spostamento ripetuto tra destinazioni distanti può essere noioso, quindi è molto meglio mantenere le interazioni tra attività all'interno dell'intervallo di una mano a riposo, quando possibile. I menu di scelta rapida sono utili perché non richiedono alcun movimento della mano.
 -   **L'input e la selezione del testo sono difficili.** L'input di testo lungo è particolarmente difficile usando una penna, quindi il completamento automatico e i valori di testo predefiniti accettabili possono davvero semplificare le attività. La selezione del testo può anche essere piuttosto difficile, quindi le attività sono più semplici quando non richiedono un posizionamento preciso del cursore.
 -   **Le destinazioni di piccole dimensioni vicino al bordo dello schermo possono essere molto difficili da toccare.** Alcune cornici di visualizzazione si protendono e alcune tecnologie touchscreen sono meno sensibili ai bordi, rendendo i controlli vicino al bordo più difficili da usare. Ad esempio, i pulsanti Riduci a icona, Ingrandisci/Ripristina e Chiudi sulla barra del titolo possono essere più difficili da usare quando una finestra è ingrandita.
@@ -143,13 +143,13 @@ I gesti rapidi di navigazione hanno un mapping naturale, quindi sono facili da i
 
 | Flick                                     | Messaggio equivalente sintetizzato                                                            |
 |--------------------------------------|-------------------------------------------------------------|
-| Scorrere verso sinistra<br/>                | Comando Avanti (comando Indietro per Windows Vista)<br/> |
+| Scorrimento rapido verso sinistra<br/>                | Comando Avanti (comando Indietro per Windows Vista)<br/> |
 | Scorrere verso destra<br/>               | Comando Indietro (comando Inoltra per Windows Vista)<br/> |
 | Scorrere rapidamente verso l'alto<br/>                  | Scorrimento da tastiera verso il basso<br/>                             |
 | Scorrere rapidamente verso il basso<br/>                | Scorrimento da tastiera verso l'alto<br/>                               |
 | Diagonale verso l'alto a sinistra<br/>    | Eliminazione da tastiera<br/>                                  |
 | Diagonale verso il basso a sinistra<br/>  | Annullamento da tastiera<br/>                                    |
-| Diagonale verso l'alto a destra<br/>   | Copia da tastiera<br/>                                    |
+| Scorrimento rapido in diagonale verso l'alto a destra<br/>   | Copia da tastiera<br/>                                    |
 | Diagonale verso il basso a destra<br/> | Incolla da tastiera<br/>                                   |
 
 
@@ -164,7 +164,7 @@ Le applicazioni possono definire e gestire anche altri movimenti. Riconoscimento
 
 **La velocità di risposta è essenziale per creare esperienze di penna che si senta diretta e coinvolgente.** Per essere diretti, i movimenti devono avere effetto immediato e i punti di contatto di un oggetto devono rimanere sotto la penna senza problemi durante il movimento. Qualsiasi ritardo, risposta sgraziata, perdita di contatto o risultati imprecisi elimina la percezione della manipolazione diretta e anche della qualità.
 
-**La coerenza è essenziale per creare esperienze di penna che si senta naturale e intuitiva.** Dopo aver appreso un movimento standard, gli utenti si aspettano che il movimento abbia lo stesso effetto in tutti i programmi applicabili. Per evitare confusione e frustrazione, non assegnare mai significati non standard ai movimenti standard. Usare invece movimenti personalizzati per le interazioni univoche per il programma.
+**La coerenza è essenziale per la creazione di esperienze di penna che si senta naturale e intuitiva.** Dopo aver appreso un movimento standard, gli utenti si aspettano che il movimento abbia lo stesso effetto in tutti i programmi applicabili. Per evitare confusione e frustrazione, non assegnare mai significati non standard ai movimenti standard. Usare invece movimenti personalizzati per le interazioni univoche per il programma.
 
 **Modifica di input penna e testo**
 
@@ -178,70 +178,70 @@ In questo esempio, l'interfaccia utente di input viene ingrandita al 150%.
 
 **Se si eservino solo quattro operazioni...**
 
-1.  1. Fare in modo che Windows programmi di penna abbia una buona esperienza con la penna. Gli utenti devono essere in grado di eseguire in modo efficiente le attività più importanti del programma usando una penna (almeno quelle attività che non comportano molta digitazione o una manipolazione dettagliata dei pixel).
+1.  1. Fare in modo che Windows programmi di penna abbia una buona esperienza con la penna. Gli utenti dovrebbero essere in grado di eseguire in modo efficiente le attività più importanti del programma usando una penna (almeno quelle attività che non comportano molta digitazione o una manipolazione dettagliata dei pixel).
 2.  2. Provare ad aggiungere il supporto per la scrittura, il disegno e l'aggiunta di commenti direttamente usando l'input penna negli scenari più rilevanti.
-3.  3. Per creare un'esperienza diretta e coinvolgente, fare in modo che i movimenti abbia effetto immediato, mantenere i punti di contatto sotto la penna dell'utente in modo uniforme durante il movimento e fare in modo che l'effetto del movimento sia mappato direttamente al movimento dell'utente.
+3.  3. Per creare un'esperienza diretta e coinvolgente, fare in modo che i movimenti abbia effetto immediato, mantenere i punti di contatto sotto la penna dell'utente senza problemi durante il movimento e ottenere l'effetto della mappa dei movimenti direttamente sul movimento dell'utente.
 4.  4. Per creare un'esperienza naturale e intuitiva, supportare i movimenti standard appropriati e assegnare loro i significati standard. Usare movimenti personalizzati per le interazioni univoche per il programma.
 
 ## <a name="guidelines"></a>Indicazioni
 
 ### <a name="control-usage"></a>Controllare l'utilizzo
 
--   **Preferire l'uso di controlli comuni.** I controlli più comuni sono progettati per supportare un'esperienza di penna ottimale.
--   **Preferisce i controlli vincolati.** Usare controlli vincolati come elenchi e dispositivi di scorrimento quando possibile, anziché controlli non vincolati come caselle di testo, per ridurre la necessità di input di testo.
--   **Specificare i valori predefiniti appropriati.** Selezionare l'opzione più sicura (per evitare la perdita di dati o l'accesso al sistema) e l'opzione più sicura per impostazione predefinita. Se la sicurezza e la sicurezza non sono fattori, selezionare l'opzione più probabile o conveniente, eliminando così l'interazione non necessaria.
--   **Fornire il completamento automatico del testo.** Fornire un elenco dei valori di input più probabili o di recente per semplificare l'input di testo.
--   **Per le attività importanti che usano la selezione multipla, se in genere viene usato un elenco a selezione multipla standard, fornire un'opzione per usare un elenco di caselle di controllo.**
--   **Rispettare le metriche di sistema.** Usare le metriche di sistema per tutte le dimensioni e non per le dimensioni hardwire. Se necessario, gli utenti possono modificare le metriche di sistema o dpi in base alle proprie esigenze. Tuttavia, considerare questo come ultima risorsa perché gli utenti non devono in genere modificare le impostazioni di sistema per rendere utilizzabile l'interfaccia utente.
+-   **Preferisce l'uso di controlli comuni.** I controlli più comuni sono progettati per supportare un'esperienza di penna ottimale.
+-   **Preferisce i controlli vincolati.** Usare controlli vincolati come elenchi e dispositivi di scorrimento quando possibile, invece di controlli non vincolati come le caselle di testo, per ridurre la necessità di input di testo.
+-   **Specificare i valori predefiniti appropriati.** Selezionare l'opzione più sicura (per impedire la perdita di dati o l'accesso al sistema) e l'opzione più sicura per impostazione predefinita. Se la sicurezza e la sicurezza non sono fattori, selezionare l'opzione più probabile o comoda, eliminando così l'interazione non necessaria.
+-   **Specificare il completamento automatico del testo.** Fornire un elenco dei valori di input più probabili o di recente per semplificare molto l'input di testo.
+-   **Per le attività importanti che usano la selezione multipla, se in genere viene usato un elenco a selezione multipla standard, fornire un'opzione per utilizzare un elenco di caselle di controllo.**
+-   **Rispettare le metriche di sistema.** Usare le metriche di sistema per tutte le dimensioni non hardwire. Se necessario, gli utenti possono modificare le metriche di sistema o dpi in base alle proprie esigenze. Tuttavia, considerare questa opzione come ultima risorsa perché gli utenti in genere non devono modificare le impostazioni di sistema per rendere utilizzabile l'interfaccia utente.
 
-![Screenshot dei menu con ridimensionamento normale e di grandi dimensioni ](images/inter-pen-image8.png)
+![Screenshot dei menu con ridimensionamento normale e grande ](images/inter-pen-image8.png)
 
-In questo esempio la metrica di sistema per l'altezza del menu è stata modificata.
+In questo esempio è stata modificata la metrica di sistema per l'altezza del menu.
 
-### <a name="control-sizing-layout-and-spacing"></a>Ridimensionamento, layout e spaziatura dei controlli
+### <a name="control-sizing-layout-and-spacing"></a>Controllare il ridimensionamento, il layout e la spaziatura
 
--   **Per i controlli comuni, usare le dimensioni di controllo consigliate.** Queste sono sufficientemente grandi per un'esperienza di penna ottimale, ad eccezione dei controlli di selezione (che non sono utilizzabili con una penna ma sono ridondanti).
--   **Scegliere un layout che inserisca i controlli vicino al punto in cui è più probabile che verranno usati.** Mantenere le interazioni tra attività all'interno di un'area di piccole dimensioni, quando possibile. Evitare movimenti della mano a lunga distanza, in particolare per le attività comuni e per i trascinamenti.
+-   **Per i controlli comuni, usare le dimensioni dei controlli consigliate.** Queste sono sufficientemente grandi per un'esperienza di penna ottimale, ad eccezione dei controlli di selezione (che non sono utilizzabili con una penna ma sono ridondanti).
+-   **Scegliere un layout che posiziona i controlli vicino alla posizione in cui è più probabile che verranno usati.** Mantenere le interazioni tra attività all'interno di una piccola area, quando possibile. Evitare movimenti della mano a distanza lunga, soprattutto per le attività comuni e per i trascinamenti.
 -   **Usare la spaziatura consigliata.** La spaziatura consigliata è di tipo penna.
 -   **I controlli interattivi devono toccare o preferibilmente avere almeno 5 pixel (3 DLU) di spazio tra di essi.** In questo modo si evita confusione quando gli utenti toccano all'esterno della destinazione prevista.
--   **È consigliabile aggiungere più** della spaziatura verticale consigliata all'interno di gruppi di controlli, ad esempio collegamenti a comandi, caselle di controllo e pulsanti di opzione, nonché tra i gruppi. In questo modo è più facile differenziarli.
+-   **Prendere in considerazione l'aggiunta** di più della spaziatura verticale consigliata all'interno di gruppi di controlli, ad esempio collegamenti di comando, caselle di controllo e pulsanti di opzione, nonché tra i gruppi. In questo modo è più facile distinguerli.
 
 ### <a name="interaction"></a>Interazione
 
--   **Per i programmi progettati per accettare la grafia, abilitare l'input penna predefinito.** L'input penna predefinito consente agli utenti di immettere input penna semplicemente iniziando a scrivere, senza dover toccare, fornire un comando o eseguire operazioni speciali. In questo modo si offre l'esperienza più naturale con una penna. Per i programmi non progettati per accettare la grafia, gestire l'input penna nelle caselle di testo come selezione.
--   **Consentire agli utenti di ingrandire l'interfaccia utente del** contenuto se il programma ha attività che richiedono la modifica del testo. È consigliabile eseguire automaticamente lo zoom al 150% quando si usa una penna.
+-   **Per i programmi progettati per accettare la grafia, abilitare l'input penna predefinito.** L'input penna predefinito consente agli utenti di immettere input penna iniziando a scrivere, senza dover toccare, eseguire un comando o eseguire operazioni speciali. In questo modo si consente l'esperienza più naturale con una penna. Per i programmi non progettati per accettare la grafia, gestire l'input penna nelle caselle di testo come selezione.
+-   **Consentire agli utenti di ingrandire l'interfaccia utente del contenuto** se il programma ha attività che richiedono la modifica del testo. È consigliabile ingrandire automaticamente al 150% quando si usa una penna.
 -   **Poiché i movimenti vengono memorizzati, assegnare loro significati coerenti tra i programmi.** Non assegnare significati diversi ai movimenti con semantica fissa. Usare invece un movimento specifico del programma appropriato.
 
 ### <a name="handedness"></a>Manualità
 
--   **Se una finestra è contestuale, visualizzarla sempre accanto all'oggetto da cui è stata avviata.** Posizionarlo in modo che l'oggetto di origine non sia coperto dalla finestra.
+-   **Se una finestra è contestuale, visualizzarla sempre accanto all'oggetto da cui è stata avviata.** Posizionarlo fuori controllo in modo che l'oggetto di origine non sia coperto dalla finestra.
     -   Se viene visualizzato con il mouse, quando possibile posizionare l'offset della finestra contestuale verso il basso e verso destra.
 
-        ![Figura della finestra contestuale posizionata a destra dell'oggetto ](images/inter-pen-image9.png)
+        ![figura della finestra contestuale posizionata a destra dell'oggetto ](images/inter-pen-image9.png)
 
-        Mostra le finestre contestuali vicino all'oggetto da cui è stato avviato.
+        Mostra le finestre contestuali accanto all'oggetto da cui è stato avviato.
 
-    -   Se viene visualizzata con una penna, quando possibile posizionare la finestra contestuale in modo da non essere coperta dalla mano dell'utente. Per gli utenti con mano destra, visualizzare a sinistra; in caso contrario, viene visualizzato a destra.
+    -   Se viene visualizzato con una penna, quando possibile posizionare la finestra contestuale in modo da non essere coperta dalla mano dell'utente. Per gli utenti con la mano destra, visualizzare a sinistra; in caso contrario, viene visualizzato a destra.
 
-        ![Figura della finestra contestuale posizionata a sinistra dell'oggetto ](images/inter-pen-image10.png)
+        ![figura della finestra contestuale posizionata a sinistra dell'oggetto ](images/inter-pen-image10.png)
 
         Quando si usa una penna, visualizzare anche le finestre contestuali in modo che non siano coperte dalla mano dell'utente.
 
--   **Sviluppatori:** È possibile distinguere tra eventi del mouse ed eventi penna usando l'API [GetMessageExtraInfo.](../tablet/system-events-and-mouse-messages.md) È possibile determinare la mano [dell'utente](/previous-versions/ms819495(v=msdn.10)) usando l'API [SystemParametersInfo](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) con SPI \_ GETMENUDROPALIGNMENT.
+-   **Sviluppatori:** È possibile distinguere tra eventi del mouse ed eventi penna usando [l'API GetMessageExtraInfo.](../tablet/system-events-and-mouse-messages.md) È possibile determinare la mano [dell'utente usando](/previous-versions/ms819495(v=msdn.10)) l'API [SystemParametersInfo](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) con SPI \_ GETMENUDROPALIGNMENT.
 
 ### <a name="forgiveness"></a>Perdono
 
--   **Fornire un comando di annullamento.** Idealmente, è consigliabile fornire l'annullamento per tutti i comandi, ma il programma potrebbe avere alcuni comandi il cui effetto non può essere annullato.
--   **Fornire un feedback positivo al passaggio del mouse.** Indicare chiaramente quando la penna è su una destinazione selezionabile. Questo feedback è un ottimo modo per evitare la manipolazione accidentale.
--   **Ogni volta che è pratico, fornire un buon feedback sulla penna verso il basso, ma non intraprendere azioni fino a quando non si sposta o si alza la penna.** In questo modo, gli utenti possono correggere gli errori prima di commetterli.
--   **Quando pratico, consentire agli utenti di correggere facilmente gli errori.** Se un'azione ha effetto sulla penna verso l'alto, consentire agli utenti di correggere gli errori scorrendo mentre la penna è ancora in giù.
+-   **Specificare un comando di annullamento.** Idealmente, è consigliabile fornire l'annullamento per tutti i comandi, ma il programma potrebbe avere alcuni comandi il cui effetto non può essere annullato.
+-   **Fornire un buon feedback al passaggio del mouse.** Indicare chiaramente quando la penna è sopra una destinazione selezionabile. Questo feedback è un ottimo modo per impedire la manipolazione accidentale.
+-   **Quando possibile, fornire un buon feedback sulla pressione della penna verso il basso, ma non intraprendere azioni fino a quando uno spostamento o una penna verso l'alto.** In questo modo gli utenti possono correggere gli errori prima di commetterli.
+-   **Quando possibile, consentire agli utenti di correggere facilmente gli errori.** Se un'azione ha effetto sulla penna in su, consentire agli utenti di correggere gli errori scorrendo mentre la penna è ancora in giù.
 
 ## <a name="documentation"></a>Documentazione
 
 Quando si fa riferimento all'input penna:
 
--   Fare riferimento a un dispositivo di input stilo a forma di penna come penna. Per prima cosa, usare la penna del tablet.
--   Fare riferimento al pulsante sul lato di una penna come pulsante della penna, non come pulsante a forma di barra.
+-   Fare riferimento a un dispositivo di input dello stilo a forma di penna come penna. Per prima cosa, usare la penna del tablet.
+-   Fare riferimento al pulsante sul lato di una penna come pulsante della penna, non come pulsante della penna.
 -   Fare riferimento genericamente a tastiera, mouse, trackball, penna o dito come dispositivo di input.
--   Usare il tocco (e il doppio tocco) invece di fare clic quando si documentano procedure specifiche per l'uso di una penna. Toccare significa premere lo schermo e quindi alzarsi prima di un periodo di attesa. Può essere usato o meno per generare un clic del mouse. Per le interazioni che non coinvolgono la penna, continuare a usare il clic.
+-   Usare il tocco (e il doppio tocco) invece di fare clic quando si documentano procedure specifiche per l'uso di una penna. Toccare significa premere lo schermo e quindi sollevarsi prima di un periodo di attesa. Può essere usato o meno per generare un clic del mouse. Per le interazioni che non coinvolgono la penna, continuare a usare il clic.
 

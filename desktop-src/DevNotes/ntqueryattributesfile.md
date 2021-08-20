@@ -22,7 +22,7 @@ ms.locfileid: "117826807"
 ---
 # <a name="ntqueryattributesfile-function"></a>Funzione NtQueryAttributesFile
 
-\[Questa funzione può essere modificata o rimossa da Windows senza ulteriori comunicazioni.\]
+\[Questa funzione può essere modificata o rimossa da Windows senza preavviso.\]
 
 Recupera gli attributi di base per l'oggetto file specificato.
 
@@ -58,13 +58,13 @@ Puntatore a una struttura [FILE \_ BASIC \_ INFORMATION](https://msdn.microsoft.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un NTSTATUS o un codice di errore.
+Restituisce un CODICE NTSTATUS o di errore.
 
-I formati e il significato dei codici di errore NTSTATUS sono elencati nel file di intestazione Ntstatus.h disponibile nel WDK e sono descritti nella documentazione di WDK.
+I moduli e il significato dei codici di errore NTSTATUS sono elencati nel file di intestazione Ntstatus.h disponibile in WDK e sono descritti nella documentazione di WDK.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione. La libreria di importazione associata, Ntdll.lib, è disponibile nel WDK. È anche possibile usare le [**funzioni LoadLibrary**](-loadlibrary.md) e [**GetProcAddress**](-getprocaddress-.md) per collegarsi in modo dinamico Ntdll.dll.
+A questa funzione non è associato alcun file di intestazione. La libreria di importazione associata, Ntdll.lib, è disponibile in WDK. È anche possibile usare le [**funzioni LoadLibrary**](-loadlibrary.md) e [**GetProcAddress**](-getprocaddress-.md) per collegarsi dinamicamente Ntdll.dll.
 
 ## <a name="requirements"></a>Requisiti
 

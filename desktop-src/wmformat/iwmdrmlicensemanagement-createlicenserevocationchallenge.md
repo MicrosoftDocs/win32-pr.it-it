@@ -5,7 +5,7 @@ ms.assetid: 31fcf7a7-1af8-4474-abac-eddb1070975b
 keywords:
 - Metodo CreateLicenseRevocationChallenge windows Media Format
 - Metodo CreateLicenseRevocationChallenge windows Media Format , interfaccia IWMDRMLicenseManagement
-- Metodo CreateLicenseRevocationChallenge dell'interfaccia IWMDRMLicenseManagement di Windows Media Format
+- Metodo CreateLicenseRevocationChallenge dell'interfaccia IWMDRMLicenseManagement windows Media Format, CreateLicenseRevocationChallenge
 topic_type:
 - apiref
 api_name:

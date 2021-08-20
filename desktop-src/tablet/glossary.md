@@ -299,18 +299,18 @@ Unità di input penna interpretata da un riconoscitore. Per le lingue occidental
 <span id="tablet.tablet_glossary_recognizer"></span><span id="TABLET.TABLET_GLOSSARY_RECOGNIZER"></span>**Riconoscimento**
 </dt> <dd>
 
-Modulo software che riconosce ed elabora i componenti di un linguaggio o di un gruppo di linguaggi correlati oppure una classe di oggetti correlati, ad esempio note geometriche, movimenti di sistema e forme geometriche.
+Modulo software che riconosce ed elabora i componenti di un linguaggio o di un gruppo di linguaggi correlati o di una classe di oggetti correlati, ad esempio note musicali, movimenti di sistema e forme geometriche.
 
 </dd> <dt>
 
 <span id="tablet.tablet_glossary_recognizer_context"></span><span id="TABLET.TABLET_GLOSSARY_RECOGNIZER_CONTEXT"></span>**contesto del riconoscitore**
 </dt> <dd>
 
-Informazioni specifiche dell'applicazione utilizzate dal riconoscimento per eseguire il riconoscimento input penna.
+Informazioni specifiche dell'applicazione utilizzate dal riconoscimento per eseguire il riconoscimento dell'input penna.
 
 </dd> <dt>
 
-<span id="tablet.tablet_glossary_sketch_ink_object"></span><span id="TABLET.TABLET_GLOSSARY_SKETCH_INK_OBJECT"></span>**oggetto input penna sketch**
+<span id="tablet.tablet_glossary_sketch_ink_object"></span><span id="TABLET.TABLET_GLOSSARY_SKETCH_INK_OBJECT"></span>**oggetto input penna di sketch**
 </dt> <dd>
 
 Oggetto OLE che rappresenta l'input penna interpretato come disegno anziché come parola.
@@ -327,14 +327,14 @@ Elenco di parole che contiene tutte le parole scritte comunemente in una lingua.
 <span id="tablet.tablet_glossary_system_gesture"></span><span id="TABLET.TABLET_GLOSSARY_SYSTEM_GESTURE"></span>**movimento di sistema**
 </dt> <dd>
 
-Penna equivalente a un messaggio tradizionale del mouse, ad esempio clic con il pulsante sinistro o doppio clic.
+Una penna equivalente a un messaggio tradizionale del mouse, ad esempio il clic con il pulsante sinistro o il doppio clic.
 
 </dd> <dt>
 
 <span id="tablet.tablet_glossary_tablet_pc_managed_library"></span><span id="TABLET.TABLET_GLOSSARY_TABLET_PC_MANAGED_LIBRARY"></span>**Libreria gestita di Tablet PC**
 </dt> <dd>
 
-Set di oggetti gestiti che estende Microsoft .NET Framework per fornire il supporto per l'input e l'output della grafia in Tablet PC e l'interscambio dei dati con altri computer.
+Set di oggetti gestiti che estende Microsoft .NET Framework per fornire il supporto per l'input e l'output della scrittura manuale nel Tablet PC e l'interscambio dei dati con altri computer.
 
 </dd> <dt>
 

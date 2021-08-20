@@ -1,6 +1,6 @@
 ---
-title: TBN_DRAGOVER codice di notifica (Commctrl.h)
-description: Verifica se deve essere inviato un messaggio MARKBUTTON TB \_ per un pulsante trascinato. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
+title: TBN_DRAGOVER di notifica (Commctrl.h)
+description: Verifica se deve essere inviato un messaggio MARKBUTTON da TB \_ per un pulsante trascinato. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 2bb5c52e-0c90-4662-8ffd-045ecc7ed7e5
 keywords:
 - TBN_DRAGOVER del codice di notifica Windows controlli
@@ -23,7 +23,7 @@ ms.locfileid: "117829345"
 ---
 # <a name="tbn_dragover-notification-code"></a>Codice di notifica \_ TBN DRAGOVER
 
-Verifica se deve essere inviato un [**messaggio \_ MARKBUTTON TB**](tb-markbutton.md) per un pulsante trascinato. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
+Verifica se deve essere inviato un [**messaggio \_ MARKBUTTON da TB**](tb-markbutton.md) per un pulsante trascinato. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ TBN_DRAGOVER
 *lParam* 
 </dt> <dd>
 
-Puntatore a una [**struttura NMTBHOTITEM**](/windows/win32/api/commctrl/ns-commctrl-nmtbhotitem) che specifica l'elemento trascinato.
+Puntatore a una [**struttura NMTBHOTITEM**](/windows/win32/api/commctrl/ns-commctrl-nmtbhotitem) che specifica su quale elemento viene trascinato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-**FALSE se** la barra degli strumenti deve inviare un messaggio \_ MARKBUTTON TB; in caso **contrario, TRUE**.
+**FALSE se** la barra degli strumenti deve inviare un messaggio MARKBUTTON DA \_ TB; in caso **contrario, TRUE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,8 +55,8 @@ Puntatore a una [**struttura NMTBHOTITEM**](/windows/win32/api/commctrl/ns-commc
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

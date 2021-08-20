@@ -1,6 +1,6 @@
 ---
-title: Metodi di esempio texture1D::Texture1D
-description: Esempi di un oggetto Texture1D.
+title: Metodi di esempio Texture1D::Texture1D
+description: Campiono un oggetto Texture1D.
 ms.assetid: 852BC190-E370-4B55-AB64-F0771B1D2D19
 keywords:
 - Metodi di esempio HLSL
@@ -19,9 +19,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118505721"
 ---
-# <a name="texture1dsample-methods"></a>Metodi texture1D::Sample
+# <a name="texture1dsample-methods"></a>Metodi Texture1D::Sample
 
-Esempi di [**un oggetto Texture1D.**](sm5-object-texture1d.md)
+Campita un [**oggetto Texture1D.**](sm5-object-texture1d.md)
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,9 +29,9 @@ Esempi di [**un oggetto Texture1D.**](sm5-object-texture1d.md)
 
 | Metodo                                                                       | Descrizione                                                                                                                                  |
 |:-----------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Sample(S,float,int)**](dx-graphics-hlsl-to-sample.md)                    | Esempi di una trama.<br/>                                                                                                                |
-| [**Sample(S,float,int,float)**](t1d-sample-s-float-int-float-.md)           | Campionare una trama con un valore facoltativo in cui impostare i valori di livello di dettaglio (LOD) del campione.<br/>                                         |
-| [**Sample(S,float,int,float,uint)**](t1d-sample-s-float-int-float-uint-.md) | Campionare una trama con un valore facoltativo per impostare i valori di livello di dettaglio (LOD) del campione e restituisce lo stato dell'operazione.<br/> |
+| [**Sample(S,float,int)**](dx-graphics-hlsl-to-sample.md)                    | Campio una trama.<br/>                                                                                                                |
+| [**Sample(S,float,int,float)**](t1d-sample-s-float-int-float-.md)           | Campionare una trama con un valore facoltativo a cui impostare i valori del livello di dettaglio del campione.<br/>                                         |
+| [**Sample(S,float,int,float,uint)**](t1d-sample-s-float-int-float-uint-.md) | Campionare una trama con un valore facoltativo per impostare i valori loD (Level of Detail) del campione e restituisce lo stato dell'operazione.<br/> |
 
 
 

@@ -4,36 +4,36 @@ description: Viene illustrato come inclinare un oggetto.
 ms.assetid: bdc12ca3-eb0d-49ab-8ef7-f42f24fef7ff
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 691062e64d4255b1e2f7711b5ff700d72fd90063
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 849c292221a8b4503cdfd122e08b6f1b2521043b44732c33d851a86693853f2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103872826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118003498"
 ---
 # <a name="how-to-skew-an-object"></a>Come inclinare un oggetto
 
-Per inclinare (o inclinare) un oggetto significa distorcere un oggetto in base a un angolo specificato dall'asse x, dall'asse y o da entrambi. Ad esempio, quando si inclina un quadrato, diventa un parallelogramma.
+Per inclinare (o inclinare) un oggetto significa distorcere un oggetto in base a un angolo specificato rispetto all'asse x, all'asse y o a entrambi. Ad esempio, quando si inclina un quadrato, diventa un parallelogramma.
 
-Il metodo [**Matrix3x2F:: asimmetria**](/windows/win32/api/d2d1helper/nf-d2d1helper-matrix3x2f-skew) accetta 3 parametri:
+Il [**metodo Matrix3x2F::Skew**](/windows/win32/api/d2d1helper/nf-d2d1helper-matrix3x2f-skew) accetta 3 parametri:
 
--   *AngleX*: angolo di inclinazione dell'asse x, misurato in gradi in senso antiorario rispetto all'asse y.
--   *AngleY*: angolo di inclinazione dell'asse y, misurato in gradi in senso orario dall'asse x.
--   *centerPoint*: punto in cui viene eseguita l'asimmetria.
+-   *angleX:* angolo di inclinazione dell'asse x, misurato in gradi in senso antiorario rispetto all'asse y.
+-   *angleY:* angolo di inclinazione dell'asse y, misurato in gradi in senso orario rispetto all'asse x.
+-   *centerPoint:* punto su cui viene eseguita l'ancoraggio.
 
-Per stimare l'effetto di una trasformazione asimmetria, tenere presente che *AngleX* è l'angolo di inclinazione misurato in gradi in senso antiorario rispetto all'asse y. Se, ad esempio, *AngleX* è impostato su 30, l'oggetto inclina 30 gradi in senso antiorario lungo l'asse y relativo al *centerPoint*. Nella figura seguente viene mostrato un quadrato inclinato orizzontalmente di 30 gradi sull'angolo superiore sinistro del quadrato.
+Per stimare l'effetto di una trasformazione dell'affondo, si consideri che *angleX* è l'angolo di affondo misurato in gradi in senso antiorario rispetto all'asse y. Ad esempio, se *angleX* è impostato su 30, l'oggetto inclina di 30 gradi in senso antiorario lungo l'asse y rispetto al *centerPoint*. La figura seguente mostra un quadrato a inclinazione orizzontale di 30 gradi rispetto all'angolo superiore sinistro del quadrato.
 
-![illustrazione di un quadrato inclinato di 30 gradi in senso antiorario dall'asse y](images/skewx.png)
+![Illustrazione di un quadrato a 30 gradi in senso antiorario rispetto all'asse y](images/skewx.png)
 
-Analogamente, *AngleY* è un angolo di inclinazione misurato in gradi in senso orario dall'asse x. Se ad esempio *AngleY* è impostato su 30, l'oggetto inclina 30 gradi in senso orario lungo l'asse x relativo a *centerPoint*. Nella figura seguente viene mostrato un quadrato inclinato in verticale di 30 gradi sull'angolo superiore sinistro del quadrato.
+Analogamente, *angleY* è un angolo di inclinazione misurato in gradi in senso orario rispetto all'asse x. Ad esempio, se *angleY* è impostato su 30, l'oggetto inclina di 30 gradi in senso orario lungo l'asse x rispetto al *centerPoint*. La figura seguente mostra un quadrato a inclinazione verticale di 30 gradi rispetto all'angolo superiore sinistro del quadrato.
 
-![illustrazione di un quadrato inclinato di 30 gradi in senso orario dall'asse x](images/skewy.png)
+![Illustrazione di un quadrato a 30 gradi in senso orario rispetto all'asse x](images/skewy.png)
 
-Se si impostano sia *AngleX* che *AngleY* su 30 gradi e il *centerPoint* nell'angolo superiore sinistro del quadrato, viene visualizzato il quadrato inclinato seguente (con linee solide). Si noti che il quadrato inclinato è inclinato di 30 gradi in senso antiorario rispetto all'asse y e 30 gradi in senso orario dall'asse x.
+Se si *impostano sia angleX* che *angleY* su 30 gradi e *centerPoint* sull'angolo superiore sinistro del quadrato, verrà visualizzato il quadrato a sfalsato seguente (con contorno a tinta unita). Si noti che il quadrato affogato viene affogato di 30 gradi in senso antiorario rispetto all'asse y e di 30 gradi in senso orario rispetto all'asse x.
 
-![illustrazione di un quadrato inclinato di 30 gradi in senso antiorario dall'asse y e 30 gradi in senso orario dall'asse x](images/skewxy.png)
+![Illustrazione di un quadrato di 30 gradi in senso antiorario rispetto all'asse y e di 30 gradi in senso orario rispetto all'asse x](images/skewxy.png)
 
-L'esempio di codice seguente inclina il quadrato di 45 gradi orizzontalmente rispetto all'angolo superiore sinistro del quadrato.
+L'esempio di codice seguente inclina orizzontalmente il quadrato di 45 gradi rispetto all'angolo superiore sinistro del quadrato.
 
 
 ```C++
@@ -65,20 +65,20 @@ L'esempio di codice seguente inclina il quadrato di 45 gradi orizzontalmente ris
 
 
 
-Nella figura seguente viene illustrato l'effetto dell'applicazione della trasformazione asimmetria al quadrato, in cui il quadrato originale è un contorno tratteggiato e l'oggetto inclinato (parallelogramma) è un contorno a tinta unita. Si noti che l'angolo di inclinazione è di 45 gradi in senso antiorario rispetto all'asse y.
+Nella figura seguente viene illustrato l'effetto dell'applicazione della trasformazione a inclinazione al quadrato, in cui il quadrato originale è un contorno punteggiato e l'oggetto a inclinazione (parallelogramma) è un contorno a tinta unita. Si noti che l'angolo di inclinazione è di 45 gradi in senso antiorario rispetto all'asse y.
 
-![illustrazione di un quadrato inclinato di 45 gradi in senso antiorario dall'asse y](images/skew-ovw.png)
+![Illustrazione di un quadrato a 45 gradi in senso antiorario rispetto all'asse y](images/skew-ovw.png)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Cenni preliminari sulle trasformazioni Direct2D](direct2d-transforms-overview.md)
+[Panoramica delle trasformazioni Direct2D](direct2d-transforms-overview.md)
 </dt> <dt>
 
-[Riferimento Direct2D](reference.md)
+[Informazioni di riferimento su Direct2D](reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

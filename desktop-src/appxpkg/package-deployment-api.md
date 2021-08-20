@@ -32,10 +32,10 @@ Informazioni sull'API di distribuzione dei pacchetti, che è possibile usare per
 [Esempio di enumerazione dei pacchetti di app (FindPackages)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackages)
 </dt> <dt>
 
-[Enumerare i pacchetti di app in base al nome e all'esempio di editore (FindPackagesByNameAndPublisher)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackagesByNameAndPublisher)
+[Enumerare i pacchetti dell'app in base al nome e all'esempio di editore (FindPackagesByNameAndPublisher)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackagesByNameAndPublisher)
 </dt> <dt>
 
-[Enumerare i pacchetti dell'app in base all'esempio di SID utente (FindPackagesByUserSecurityId)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackagesByUserSecurityIda)
+[Enumerare i pacchetti dell'app in base all'esempio di SID dell'utente (FindPackagesByUserSecurityId)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackagesByUserSecurityIda)
 </dt> <dt>
 
 [Esempio di rimozione del pacchetto dell'app (RemovePackage)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerRemovePackage)

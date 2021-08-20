@@ -35,7 +35,7 @@ Le sezioni seguenti elencano i valori GUID usati in Windows Media Format SDK e l
 | [Identificatori dei tipi di supporti](media-type-identifiers.md)     | Elenca i valori GUID e le costanti associate per i tipi di supporti supportati da Windows Media Format SDK.             |
 | [Tipi di esclusione reciproca](mutual-exclusion-types.md)     | Elenca i valori GUID e le costanti associate per i tipi di esclusione reciproca supportati da Windows Media Format SDK.  |
 | [Tipi di condivisione della larghezza di banda](bandwidth-sharing-types.md)   | Elenca i valori GUID e le costanti associate per i tipi di condivisione della larghezza di banda supportati da Windows Media Format SDK. |
-| [Tipi di categoria limite](watermark-category-types.md) | Elenca i valori GUID e le costanti associate che identificano i valori limite DMO categorie.                                 |
+| [Tipi di categoria limite](watermark-category-types.md) | Elenca i valori GUID e le costanti associate che identificano la filigrana DMO categorie.                                 |
 
 
 

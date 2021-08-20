@@ -1,5 +1,5 @@
 ---
-description: Nell'esempio seguente viene illustrato un processo alternativo di codifica di un messaggio firmato, utilizzando tale messaggio firmato come contenuto interno per un messaggio in busta. In preparazione alla decodifica, il contenuto interno viene testato per determinarne il tipo di contenuto interno.
+description: Nell'esempio seguente viene illustrato un processo alternativo di codifica di un messaggio firmato, usando tale messaggio firmato come contenuto interno per un messaggio in busta. In preparazione per la decodifica, il contenuto interno viene testato per determinarne il tipo di contenuto interno.
 ms.assetid: ba174e3c-bc2f-48bd-a1bf-fec491dc0ce3
 title: Codice alternativo per la codifica di un messaggio in busta
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117773695"
 ---
 # <a name="alternate-code-for-encoding-an-enveloped-message"></a>Codice alternativo per la codifica di un messaggio in busta
 
-Nell'esempio seguente viene illustrato un processo alternativo di codifica di un messaggio firmato, utilizzando tale messaggio firmato come contenuto [*interno*](../secgloss/i-gly.md) per un messaggio in busta. In preparazione alla decodifica, il contenuto interno viene testato per determinarne il tipo di contenuto interno.
+Nell'esempio seguente viene illustrato un processo alternativo di codifica di un messaggio firmato, usando tale messaggio firmato come contenuto [*interno*](../secgloss/i-gly.md) per un messaggio in busta. In preparazione per la decodifica, il contenuto interno viene testato per determinarne il tipo di contenuto interno.
 
 Questo esempio illustra le funzioni CryptoAPI seguenti:
 
@@ -29,7 +29,7 @@ Questo esempio illustra le funzioni CryptoAPI seguenti:
 -   [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
 -   [**CryptReleaseContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext)
 
-Questo esempio usa anche le [**funzioni MyHandleError**](myhandleerror.md) e [**GetSignerCert**](getsignercert.md). Il codice C per queste funzioni è incluso nell'esempio. Per il codice che illustra queste e altre funzioni ausiliarie, [vedere per utilizzo generico funzioni](general-purpose-functions.md).
+Questo esempio usa anche le funzioni [**MyHandleError**](myhandleerror.md) [**e GetSignerCert**](getsignercert.md). Il codice C per queste funzioni è incluso nell'esempio. Per il codice che illustra queste e altre funzioni ausiliarie, vedere [Per utilizzo generico Functions](general-purpose-functions.md).
 
 
 ```C++

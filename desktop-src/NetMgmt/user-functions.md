@@ -1,6 +1,6 @@
 ---
 title: Funzioni utente
-description: Le funzioni utente di gestione della rete controllano l'account di un utente nel database di sicurezza, ovvero il database sam (Security Accounts Manager) o, nel caso dei controller di dominio, Active Directory. Le funzioni utente sono elencate di seguito.
+description: Le funzioni utente di gestione della rete controllano l'account di un utente nel database di sicurezza, ovvero il database di gestione degli account di sicurezza (SAM) o, nel caso dei controller di dominio, Active Directory. Le funzioni utente sono elencate di seguito.
 ms.assetid: cf0e5102-3924-46c0-8124-0aa04e95f48d
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "117796817"
 ---
 # <a name="user-functions"></a>Funzioni utente
 
-Le funzioni utente di gestione della rete controllano l'account di un utente nel database di sicurezza, ovvero il database sam (Security Accounts Manager) o, nel caso dei controller di dominio, Active Directory. Le funzioni utente sono elencate di seguito.
+Le funzioni utente di gestione della rete controllano l'account di un utente nel database di sicurezza, ovvero il database di gestione degli account di sicurezza (SAM) o, nel caso dei controller di dominio, Active Directory. Le funzioni utente sono elencate di seguito.
 
 
 
@@ -37,7 +37,7 @@ Ogni utente o applicazione che accede alle risorse di rete deve avere un account
 
 Dopo aver rimosso un account utente chiamando la [**funzione NetUserDel,**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuserdel) l'utente non può più accedere al server se non usando l'account guest.
 
-Poiché la password di un utente è riservata, non viene restituita dalla [**funzione NetUserEnum**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuserenum) o [**NetUserGetInfo.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusergetinfo) La password viene assegnata inizialmente quando si chiama [**NetUserAdd**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuseradd).
+Poiché la password di un utente è riservata, non viene restituita dalla [**funzione NetUserEnum**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuserenum) o [**NetUserGetInfo.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusergetinfo) La password viene inizialmente assegnata quando si chiama [**NetUserAdd**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuseradd).
 
 Le informazioni sull'account utente sono disponibili ai livelli seguenti:
 
@@ -72,20 +72,20 @@ Inoltre, i livelli di informazioni seguenti sono validi quando si chiama la [**f
 -   [**INFORMAZIONI \_ UTENTE \_ 1052**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1052)
 -   [**INFORMAZIONI \_ UTENTE \_ 1053**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1053)
 
-Le funzioni seguenti consentono alle applicazioni di controllare la conformità delle password.
+Le funzioni seguenti consentono alle applicazioni di verificare la conformità delle password.
 
 
 
 | Funzione                                                               | Descrizione                                                                                                |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 | [**NetValidatePasswordPolicyFree**](/windows/desktop/api/Lmaccess/nf-lmaccess-netvalidatepasswordpolicyfree) | Libera la memoria allocata dalla [**funzione NetValidatePasswordPolicy.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netvalidatepasswordpolicy) |
-| [**NetValidatePasswordPolicy**](/windows/desktop/api/Lmaccess/nf-lmaccess-netvalidatepasswordpolicy)         | Verifica che le password soddisfino i requisiti di complessità, aging, lunghezza minima e riutilizzo della cronologia.            |
+| [**NetValidatePasswordPolicy**](/windows/desktop/api/Lmaccess/nf-lmaccess-netvalidatepasswordpolicy)         | Verifica che le password soddisfino i requisiti di complessità, età, lunghezza minima e riutilizzo della cronologia.            |
 
 
 
  
 
-Se si sta programmando per Active Directory, è possibile chiamare determinati metodi ADSI (Active Directory Service Interface) per ottenere le stesse funzionalità che è possibile ottenere chiamando le funzioni utente di gestione della rete. Per altre informazioni, vedere [**IADsUser**](/windows/desktop/api/iads/nn-iads-iadsuser) e [**IADsComputer.**](/windows/desktop/api/iads/nn-iads-iadscomputer)
+Se si programma per Active Directory, è possibile chiamare determinati metodi ADSI (Active Directory Service Interface) per ottenere le stesse funzionalità che è possibile ottenere chiamando le funzioni utente di gestione della rete. Per altre informazioni, vedere [**IADsUser**](/windows/desktop/api/iads/nn-iads-iadsuser) e [**IADsComputer.**](/windows/desktop/api/iads/nn-iads-iadscomputer)
 
  
 

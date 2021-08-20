@@ -1,10 +1,10 @@
 ---
 title: Interfaccia INapComponentConfig (NapCommon.h)
-description: Fornisce metodi di configurazione del sistema di Protezione accesso alla rete per i validator dell'integrità del sistema.
+description: Fornisce metodi di configurazione di sistema di Protezione accesso alla rete per i validator dell'integrità del sistema.
 ms.assetid: 979b5c34-8efe-4c48-8236-53fbd25d4249
 keywords:
-- Interfaccia INapComponentConfig nap
-- Interfaccia INapComponentConfig nap , descritta
+- Interfaccia INapComponentConfig NAP
+- Interfaccia INapComponentConfig NAP, descritta
 topic_type:
 - apiref
 api_name:
@@ -29,7 +29,7 @@ ms.locfileid: "117800023"
 
  
 
-**L'interfaccia INapComponentConfig** fornisce metodi di configurazione del sistema di Protezione accesso alla rete per i validator dell'integrità del sistema.
+**L'interfaccia INapComponentConfig fornisce** metodi di configurazione di sistema di Protezione accesso alla rete per i validator di integrità del sistema.
 
 > [!Note]  
 > [**INapComponentConfig2**](inapcomponentconfig2.md) e [**INapComponentConfig3**](inapcomponentconfig3.md) ereditano tutti i metodi di questa interfaccia e devono essere usati.
@@ -70,7 +70,7 @@ Questa interfaccia non deve essere implementata dagli agenti di integrità del s
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                     |
 | Intestazione<br/>                   | <dl> <dt>NapCommon.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>NapCommon.idl</dt> </dl> |
 

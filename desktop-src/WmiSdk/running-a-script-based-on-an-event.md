@@ -1,5 +1,5 @@
 ---
-description: Il consumer standard implementato dalla classe ActiveScriptEventConsumer consente a un computer di eseguire uno script e di intervenire quando si verificano eventi importanti per garantire che un computer possa rilevare e risolvere automaticamente i problemi.
+description: Il consumer standard implementato dalla classe ActiveScriptEventConsumer consente a un computer di eseguire uno script ed eseguire azioni quando si verificano eventi importanti per garantire che un computer possa rilevare e risolvere automaticamente i problemi.
 ms.assetid: 0d2ac139-3e2b-4089-ae9c-289d376e27a2
 ms.tgt_platform: multiple
 title: Esecuzione di uno script basato su un evento
@@ -10,66 +10,66 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4dbb1e55c7828a79d6541182eff5ce20147a82c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b5950ae8a4e7260932fd4df559a73f3abea2bfaf7722444db0b92470649dd312
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118816739"
 ---
 # <a name="running-a-script-based-on-an-event"></a>Esecuzione di uno script basato su un evento
 
-Il consumer standard implementato dalla classe [**ActiveScriptEventConsumer**](activescripteventconsumer.md) consente a un computer di eseguire uno script e di intervenire quando si verificano eventi importanti per garantire che un computer possa rilevare e risolvere automaticamente i problemi.
+Il consumer standard implementato dalla classe [**ActiveScriptEventConsumer**](activescripteventconsumer.md) consente a un computer di eseguire uno script ed eseguire azioni quando si verificano eventi importanti per garantire che un computer possa rilevare e risolvere automaticamente i problemi.
 
-Questo consumer viene caricato per impostazione predefinita nello spazio dei nomi della **\\ sottoscrizione radice** .
+Questo consumer viene caricato per impostazione predefinita nello spazio dei nomi **della \\ sottoscrizione** radice.
 
-È possibile configurare le prestazioni di tutte le istanze di [**ActiveScriptEventConsumer**](activescripteventconsumer.md) in un sistema impostando i valori della proprietà **timeout** o **MaximumScripts** in una singola istanza di [**ScriptingStandardConsumerSetting**](scriptingstandardconsumersetting.md).
+È possibile configurare le prestazioni di tutte le istanze di [**ActiveScriptEventConsumer**](activescripteventconsumer.md) in un sistema impostando i valori della proprietà **Timeout** o **MaximumScripts** in una singola istanza di [**ScriptingStandardConsumerSetting**](scriptingstandardconsumersetting.md).
 
-La procedura di base per l'utilizzo di consumer standard è sempre la stessa ed è disponibile per il [monitoraggio e la risposta a eventi con consumer standard](monitoring-and-responding-to-events-with-standard-consumers.md). La procedura seguente che aggiunge alla procedura di base è specifica della classe [**ActiveScriptEventConsumer**](activescripteventconsumer.md) e descrive come creare un consumer di eventi che esegue uno script.
+La procedura di base per l'uso di consumer standard è sempre la stessa e si trova in Monitoraggio e risposta [agli eventi con consumer standard](monitoring-and-responding-to-events-with-standard-consumers.md). La procedura seguente che aggiunge alla routine di base è specifica della [**classe ActiveScriptEventConsumer**](activescripteventconsumer.md) e descrive come creare un consumer di eventi che esegue uno script.
 
 > [!Caution]  
-> La classe [**ActiveScriptEventConsumer**](activescripteventconsumer.md) presenta vincoli di sicurezza speciali. Questo consumer standard deve essere configurato da un membro locale del gruppo Administrators nel computer locale. Se si utilizza un account di dominio per creare la sottoscrizione, è necessario che l'account LocalSystem disponga delle autorizzazioni necessarie per il dominio per verificare che il creatore sia un membro del gruppo Administrators locale.
+> La [**classe ActiveScriptEventConsumer**](activescripteventconsumer.md) ha vincoli di sicurezza speciali. Questo consumer standard deve essere configurato da un membro locale del gruppo Administrators nel computer locale. Se si usa un account di dominio per creare la sottoscrizione, l'account LocalSystem deve disporre delle autorizzazioni necessarie per il dominio per verificare che l'autore sia membro del gruppo Administrators locale.
 
  
 
-Nella procedura seguente viene descritto come creare un consumer di eventi per l'esecuzione di uno script.
+La procedura seguente descrive come creare un consumer di eventi che esegue uno script.
 
 **Per creare un consumer di eventi che esegue uno script**
 
 1.  Scrivere lo script da eseguire quando si verifica un evento.
 
-    È possibile scrivere lo script in qualsiasi linguaggio, ma assicurarsi che nel computer sia installato un motore di scripting per la lingua scelta. Lo script non deve usare oggetti di scripting WMI.
+    È possibile scrivere lo script in qualsiasi linguaggio, ma assicurarsi che nel computer sia installato un motore di scripting per il linguaggio scelto. Lo script non deve usare oggetti di scripting WMI.
 
-    Solo un amministratore può configurare un consumer di script e lo script viene eseguito con le credenziali LocalSystem, che offre ampie funzionalità al consumer, ad eccezione dell'accesso alla rete. Tuttavia, lo script non ha accesso a dati di accesso utente specifici, ad esempio le variabili di ambiente e le condivisioni di rete.
+    Solo un amministratore può configurare un consumer di script e lo script viene eseguito con credenziali LocalSystem, che offre funzionalità generali al consumer, ad eccezione dell'accesso alla rete. Tuttavia, lo script non ha accesso a dati di accesso utente specifici, ad esempio variabili di ambiente e condivisioni di rete.
 
-2.  Nel file Managed Object Format (MOF) creare un'istanza di [**ActiveScriptEventConsumer**](activescripteventconsumer.md) per ricevere gli eventi richiesti nella query.
+2.  Nel file Managed Object Format (MOF) creare un'istanza di [**ActiveScriptEventConsumer**](activescripteventconsumer.md) per ricevere gli eventi richiesta nella query.
 
-    È possibile inserire il testo dello script in **ScriptText** oppure specificare il percorso e il nome file dello script in **ScriptFileName**. Per ulteriori informazioni, vedere [progettazione di classi Managed Object Format (MOF)](designing-managed-object-format--mof--classes.md).
+    È possibile inserire il testo dello script in **ScriptText** oppure specificare il percorso e il nome file dello script in **ScriptFileName**. Per altre informazioni, vedere [Progettazione di Managed Object Format (MOF).](designing-managed-object-format--mof--classes.md)
 
-3.  Creare un'istanza di [**\_ \_ EventFilter**](--eventfilter.md), denominarla, quindi creare una query per specificare il tipo di evento che attiva l'esecuzione dello script.
+3.  Creare un'istanza di [**\_ \_ EventFilter**](--eventfilter.md), assegnare un nome e quindi creare una query per specificare il tipo di evento, che attiva l'esecuzione dello script.
 
-    Per ulteriori informazioni, vedere [esecuzione di query con WQL](querying-with-wql.md).
+    Per altre informazioni, vedere [Esecuzione di query con WQL.](querying-with-wql.md)
 
-4.  Creare un'istanza di [**\_ \_ FilterToConsumerBinding**](--filtertoconsumerbinding.md) per associare il filtro all'istanza di [**ActiveScriptEventConsumer**](activescripteventconsumer.md).
-5.  Compilare il file MOF utilizzando [**Mofcomp.exe**](mofcomp.md).
+4.  Creare [**\_ \_ un'istanza di FilterToConsumerBinding**](--filtertoconsumerbinding.md) per associare il filtro all'istanza di [**ActiveScriptEventConsumer**](activescripteventconsumer.md).
+5.  Compilare il file MOF [**usando**](mofcomp.md)Mofcomp.exe.
 
-Gli esempi nella sezione seguente illustrano due modi per implementare uno script basato su eventi. Nel primo esempio viene utilizzato uno script definito in un file esterno, mentre nel secondo viene utilizzato uno script incorporato nel codice MOF. Gli esempi sono disponibili nel codice MOF, ma è possibile creare le istanze a livello di programmazione usando l' [API di scripting per WMI](scripting-api-for-wmi.md) o l' [API com per WMI](com-api-for-wmi.md).
+Gli esempi nella sezione seguente illustrano due modi per implementare uno script basato su eventi. Il primo esempio usa uno script definito in un file esterno e il secondo usa uno script incorporato nel codice MOF. Gli esempi sono nel codice MOF, ma è possibile creare le istanze a livello di codice usando [l'API scripting](scripting-api-for-wmi.md) per WMI o [l'API COM per WMI.](com-api-for-wmi.md)
 
-## <a name="example-using-an-external-script"></a>Esempio di utilizzo di uno script esterno
+## <a name="example-using-an-external-script"></a>Esempio di uso di uno script esterno
 
-Nella procedura seguente viene descritto come utilizzare l'esempio di script esterno.
+La procedura seguente descrive come usare l'esempio di script esterno.
 
 **Per usare l'esempio di script esterno**
 
-1.  Creare un file denominato c: \\Asec.vbs, quindi copiare lo script in questo esempio.
-2.  Copiare l'elenco MOF in un file di testo e salvarlo con un'estensione MOF.
+1.  Creare un file denominato c:Asec.vbs e quindi copiare al suo interno lo \\ script in questo esempio.
+2.  Copiare l'elenco MOF in un file di testo e salvarlo con estensione mof.
 3.  In una finestra del prompt dei comandi compilare il file MOF usando il comando seguente.
 
-    **Mofcomp** *nomefile * * *. mof**
+    **Nome file Mofcomp***.mof** *
 
-4.  Eseguire la calcolatrice, che consente di creare un processo di calc.exe. Attendere più di cinque secondi, chiudere la finestra del calcolatore e cercare \\ un file denominato ASEC. log nella directory C:.
+4.  Eseguire la calcolatrice, che crea un calc.exe processo. Attendere più di cinque secondi, chiudere la finestra calcolatrice e cercare nella directory C: un \\ file denominato ASEC.log.
 
-    Il testo seguente è simile al testo che sarà contenuto nel file ASEC. log.
+    Il testo seguente è simile al testo che sarà contenuto nel file ASEC.log.
 
     ``` syntax
     Time: 12/31/2002 2:56:33 PM; Entry made by: ASEC
@@ -77,7 +77,7 @@ Nella procedura seguente viene descritto come utilizzare l'esempio di script est
     KernelModeTime: 3125000 [hundreds of nanoseconds]
     ```
 
-Nell'esempio di codice VBScript riportato di seguito viene illustrato lo script che viene chiamato quando un evento viene ricevuto dall'utente permanente. L'oggetto **TargetEvent** è un'istanza di [**\_ \_ InstanceDeletionEvent**](--instancedeletionevent.md) in modo che disponga di una proprietà denominata **TargetInstance**, ovvero un'istanza di [**\_ processo Win32**](/windows/desktop/CIMWin32Prov/win32-process) utilizzata per generare l'evento. La classe di **\_ processo Win32** dispone delle proprietà **UserModeTime** e **KernelModeTime** inserite nel file di log creato dallo script.
+Nell'esempio di codice VBScript seguente viene illustrato lo script chiamato quando un evento viene ricevuto dal consumer permanente. **L'oggetto TargetEvent** è [**\_ \_ un'istanza di InstanceDeletionEvent,**](--instancedeletionevent.md) quindi ha una proprietà denominata **TargetInstance**, ovvero un'istanza [**di processo Win32 \_**](/windows/desktop/CIMWin32Prov/win32-process) usata per l'evento. La **classe Win32 \_ Process** ha le **proprietà UserModeTime** e **KernelModeTime** che vengono inserite nel file di log creato dallo script.
 
 
 ```VB
@@ -97,7 +97,7 @@ objFile.Close
 
 
 
-Nell'esempio di codice MOF seguente viene chiamato lo script quando viene ricevuto un evento. Crea il filtro, il consumer e l'associazione tra di essi nello spazio dei nomi della **\\ sottoscrizione radice** .
+L'esempio di codice MOF seguente chiama lo script quando viene ricevuto un evento. Crea il filtro, il consumer e l'associazione tra di essi nello spazio dei nomi **\\ della sottoscrizione** radice.
 
 ``` syntax
 #pragma namespace ("\\\\.\\root\\subscription")
@@ -126,16 +126,16 @@ instance of __FilterToConsumerBinding
 };
 ```
 
-## <a name="example-using-inline-script"></a>Esempio di utilizzo di script inline
+## <a name="example-using-inline-script"></a>Esempio di uso di script inline
 
-Nella procedura seguente viene descritto come utilizzare l'esempio di script inline.
+La procedura seguente descrive come usare l'esempio di script inline.
 
-**Per utilizzare l'esempio di script inline**
+**Per usare l'esempio di script inline**
 
-1.  Copiare l'elenco MOF in questa sezione in un file di testo e salvarlo con un'estensione MOF.
+1.  Copiare l'elenco MOF in questa sezione in un file di testo e salvarlo con estensione mof.
 2.  In una finestra del prompt dei comandi compilare il file MOF usando il comando seguente.
 
-    **Mofcomp** *nomefile * * *. mof**
+    **Nome file Mofcomp***.mof** *
 
 L'esempio di codice MOF seguente crea il filtro, il consumer e l'associazione tra di essi e contiene anche lo script inline.
 

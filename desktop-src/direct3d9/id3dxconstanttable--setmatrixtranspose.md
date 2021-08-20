@@ -1,5 +1,5 @@
 ---
-description: 'Metodo ID3DXConstantTable::SetMatrixTranspose: imposta una matrice trasposta.'
+description: 'Metodo ID3DXConstantTable::SetMatrixTranspose : imposta una matrice trasposta.'
 ms.assetid: 1c4d64ce-64bd-47d4-9912-879f4834c0e8
 title: Metodo ID3DXConstantTable::SetMatrixTranspose (D3DX9Shader.h)
 ms.topic: reference
@@ -47,7 +47,7 @@ HRESULT SetMatrixTranspose(
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore a [**un'interfaccia IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato alla tabella costante.
+Puntatore a [**un'interfaccia IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato alla tabella costante.
 
 </dd> <dt>
 

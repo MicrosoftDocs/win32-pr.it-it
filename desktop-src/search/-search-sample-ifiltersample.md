@@ -44,7 +44,7 @@ Questo esempio è disponibile nel percorso seguente.
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 
 1. Aprire Windows Explorer e passare alla directory **del progetto FilterBase.**
-2. Fare doppio clic sull'icona del file FilterBase.sln per aprire il progetto in Visual Studio.
+2. Fare doppio clic sull'icona per il file FilterBase.sln per aprire il progetto in Visual Studio.
 
     > [!NOTE]  
     > Il file sln è stato creato con una versione precedente di Visual Studio, pertanto sarà necessario aggiornarlo se si esegue Visual Studio 2012 o versione successiva. Ciò non inciderà sul comportamento dell'esempio.
@@ -53,7 +53,7 @@ Questo esempio è disponibile nel percorso seguente.
 
 ## <a name="running-the-sample"></a>Esecuzione dell'esempio
 
-1. Passare alla directory che contiene il nuovo eseguibile, usando la finestra del prompt dei comandi o Windows Explorer.
+1. Passare alla directory che contiene il nuovo eseguibile usando la finestra del prompt dei comandi o Windows Explorer.
 2. Al prompt dei comandi immettere o in Windows Explorer fare doppio clic `FilterBase.exe` sull'icona per FilterBase.exe.
 
 ## <a name="related-topics"></a>Argomenti correlati

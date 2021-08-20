@@ -23,13 +23,13 @@ Errore
 
 ## <a name="description"></a>Descrizione
 
-Quando [**get \_ accParent viene**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent) chiamato sull'elemento di destinazione, segnala di essere figlio dello stesso elemento padre più volte.
+Quando [**viene chiamato get \_ accParent**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent) sull'elemento di destinazione, segnala di essere figlio dello stesso elemento padre più volte.
 
-Questo problema può causare problemi di navigazione per gli strumenti automatizzati perché l'attraversamento di elementi potrebbe essere imprevedibile e imprevedibile.
+Questo problema può causare problemi di navigazione per gli strumenti automatizzati perché l'attraversamento degli elementi potrebbe essere irregolare e imprevedibile.
 
 ## <a name="possible-causes"></a>Possibili cause
 
-Implementazione di MSAA non corretta o non valida.
+Implementazione MSAA non corretta o non valida.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

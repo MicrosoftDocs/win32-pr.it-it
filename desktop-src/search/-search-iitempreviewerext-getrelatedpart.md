@@ -41,12 +41,12 @@ HRESULT GetRelatedPart(
 
 <dl> <dt>
 
-*Oggetto dwContext* \[ Pollici\]
+*dwContext* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **DWORD**
 
-Identificatore di contesto per l'operazione. Eseguire **l'override dell'impostazione predefinita di dwContext** per impostare l'identificatore di contesto su un valore a scelta.
+Identificatore di contesto per l'operazione. Eseguire **l'override dell'impostazione predefinita dwContext** per impostare l'identificatore di contesto su un valore di propria scelta.
 
 </dd> <dt>
 
@@ -64,7 +64,7 @@ Puntatore alla proprietà del contenuto collegato come stringa Unicode.
 
 Tipo: **DWORD**
 
-Valore di long integer senza segno che contiene l'indice in base zero della parte del corpo correlata.
+Valore long integer senza segno che contiene l'indice in base zero della parte del corpo correlata.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 [**L'interfaccia IItemPreviewerExt**](-search-iitempreviewerext.md) è supportata solo in Windows XP e Windows Server 2003 e non deve più essere usata.
 
-Per visualizzare in anteprima gli allegati con un gestore di protocollo di terze parti nei computer che eseguono Windows XP o Windows Server 2003, potrebbe essere necessario usare l'interfaccia [**IItemPreviewerExt**](-search-iitempreviewerext.md) e le API seguenti: le interfacce [**ISearchProtocolUI,**](-search-isearchprotocolui.md) [**IItemPropertyBag**](iitempropertybag.md) [**e ISearchItem,**](-search-isearchitem.md) la struttura [**LINKINFO**](-search-linkinfo.md) e l'enumerazione [**LINKTYPE.**](-search-linktype.md)
+Per visualizzare in anteprima gli allegati con un gestore di protocollo di terze parti nei computer che eseguono Windows XP o Windows Server 2003, potrebbe essere necessario usare l'interfaccia [**IItemPreviewerExt**](-search-iitempreviewerext.md) e le API seguenti: le interfacce [**ISearchProtocolUI,**](-search-isearchprotocolui.md) [**IItemPropertyBag**](iitempropertybag.md) e [**ISearchItem,**](-search-isearchitem.md) la struttura [**LINKINFO**](-search-linkinfo.md) e l'enumerazione [**LINKTYPE.**](-search-linktype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,7 +96,7 @@ Per visualizzare in anteprima gli allegati con un gestore di protocollo di terze
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
 | Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/> |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 | Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 3.0<br/>          |
 
 

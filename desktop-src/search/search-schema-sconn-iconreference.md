@@ -47,7 +47,7 @@ ms.locfileid: "117862586"
 
 ## <a name="remarks"></a>Commenti
 
-Il formato del riferimento deve essere specificato in un formato adatto per la [funzione PathParseIconLocation,](/windows/desktop/api/shlwapi/nf-shlwapi-pathparseiconlocationa) ad esempio <dll file name> , <icon index> .
+Il formato del riferimento deve essere specificato in un formato adatto per la [funzione PathParseIconLocation:](/windows/desktop/api/shlwapi/nf-shlwapi-pathparseiconlocationa) (ad esempio, <dll file name> , <icon index> ).
 
 ## <a name="example"></a>Esempio
 

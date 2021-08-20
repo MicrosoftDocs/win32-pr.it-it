@@ -1,7 +1,7 @@
 ---
 description: L'interfaccia ICertificatePolicies espone i metodi seguenti.
 ms.assetid: 6AFD3EFB-AAFB-4E0F-8221-14AC0CBFF5BF
-title: Metodi ICertificatePolicies
+title: Metodi di ICertificatePolicies
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 0cb227bf894009b9f21ebc1d72c65219c5f99fc571e2afb23c1d6a5a33b5290d
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117779480"
 ---
-# <a name="icertificatepolicies-methods"></a>Metodi ICertificatePolicies
+# <a name="icertificatepolicies-methods"></a>Metodi di ICertificatePolicies
 
 [**L'interfaccia ICertificatePolicies**](/windows/desktop/api/CertEnroll/nn-certenroll-icertificatepolicies) espone i metodi seguenti.
 

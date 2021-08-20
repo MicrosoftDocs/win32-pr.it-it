@@ -40,7 +40,7 @@ Determina se il valore specificato è NAN o QNAN.
 
 | Elemento                                                   | Descrizione                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*X*<br/> | \[in \] Valore specificato.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[in \] Il valore specificato.<br/> |
 
 
 
@@ -48,7 +48,7 @@ Determina se il valore specificato è NAN o QNAN.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore delle stesse dimensioni dell'input, con un valore impostato su **True** se il *parametro x* è NAN o QNAN. In caso contrario, **False**.
+Restituisce un valore delle stesse dimensioni dell'input, con un valore impostato su **True** se il *parametro x* è NAN o QNAN. In caso contrario, **False.**
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -71,7 +71,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                       | Supportato           |
 |------------------------------------------------------------------------------------|---------------------|
-| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader superiori | sì                 |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader superiori | sì                 |
 | [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sì (solo vs \_ \_ 1 1) |
 
 

@@ -13,10 +13,10 @@ ms.locfileid: "118346625"
 ---
 # <a name="vml-fill-element"></a>Elemento VML Fill
 
-Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
  
 
@@ -42,7 +42,7 @@ Gli attributi seguenti modificano un riempimento.
 | [Href](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/bb229574(v=vs.85)) | Definisce un URL per il file di immagine originale.              |
 | [ID](id-attribute--fill--vml.md)                                  | Definisce un identificatore univoco per il riempimento.              |
 | [Metodo](msdn-online-vml-method-attribute.md)                     | Definisce il metodo utilizzato per generare un riempimento sfumato.   |
-| [Sì](on-attribute--fill--vml.md)                                  | Determina se il riempimento deve essere visualizzato.          |
+| [Sì](on-attribute--fill--vml.md)                                  | Determina se il riempimento verrà visualizzato.          |
 | [Opacità](opacity-attribute--fill--vml.md)                        | Definisce la trasparenza di un riempimento.                    |
 | [Opacità2](msdn-online-vml-opacity2-attribute.md)                 | Definisce la trasparenza del secondo colore di riempimento.     |
 | [Origine](origin-attribute--fill--vml.md)                          | Definisce il centro di un'immagine.                        |

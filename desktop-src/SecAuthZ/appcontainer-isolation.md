@@ -15,7 +15,7 @@ ms.locfileid: "117784707"
 
 L'isolamento è l'obiettivo principale di un ambiente di esecuzione AppContainer. Isolando un'applicazione da risorse non necessarie e altre applicazioni, le opportunità di manipolazione dannosa sono ridotte al minimo. La concessione dell'accesso in base ai privilegi minimi impedisce alle applicazioni e agli utenti di accedere alle risorse oltre i propri diritti. Il controllo dell'accesso alle risorse protegge il processo, il dispositivo e la rete.
 
-La maggior parte delle vulnerabilità Windows l'applicazione. Alcuni esempi comuni includono l'interruzione di un'applicazione dal browser o l'invio di un documento non Internet Explorer e lo sfruttamento di plug-in, ad esempio flash. Più queste applicazioni possono essere isolate in un AppContainer, maggiore è la sicurezza del dispositivo e delle risorse. Anche se viene sfruttata la vulnerabilità in un'app, l'app non può accedere alle risorse oltre a quanto concesso a AppContainer. Le app dannose non possono assumere il controllo del resto del computer.
+La maggior parte delle vulnerabilità Windows l'applicazione. Alcuni esempi comuni includono l'interruzione di un'applicazione dal browser o l'invio di un documento non Internet Explorer e lo sfruttamento di plug-in, ad esempio flash. Più queste applicazioni possono essere isolate in un AppContainer, maggiore è la sicurezza del dispositivo e delle risorse. Anche se viene sfruttata la vulnerabilità in un'app, l'app non può accedere alle risorse oltre a quanto concesso ad AppContainer. Le app dannose non possono assumere il controllo del resto del computer.
 
 ## <a name="credential-isolation"></a>Isolamento delle credenziali
 
@@ -23,7 +23,7 @@ Gestione dell'identità e delle credenziali, AppContainer impedisce l'uso delle 
 
 ## <a name="device-isolation"></a>Isolamento del dispositivo
 
-Isolando l'applicazione dalle risorse del dispositivo, ad esempio sensori passivi (fotocamera, microfono, GPS) e money pump (3G/4G, telefono dial), l'ambiente AppContainer impedisce all'applicazione di sfruttare il dispositivo in modo dannoso. Queste risorse sono bloccate per impostazione predefinita e possono essere concesse l'accesso in base alle esigenze. In alcuni casi queste risorse sono ulteriormente protette dai "broker". Alcune risorse, ad esempio tastiera e mouse, sono sempre disponibili per AppContainer e per l'applicazione residente.
+Isolando l'applicazione dalle risorse del dispositivo, ad esempio sensori passivi (fotocamera, microfono, GPS) e money pump (3G/4G, telefono), l'ambiente AppContainer impedisce all'applicazione di sfruttare il dispositivo in modo dannoso. Queste risorse sono bloccate per impostazione predefinita e possono essere concesse l'accesso in base alle esigenze. In alcuni casi queste risorse sono ulteriormente protette dai "broker". Alcune risorse, ad esempio tastiera e mouse, sono sempre disponibili per AppContainer e per l'applicazione residente.
 
 ## <a name="file-isolation"></a>Isolamento dei file
 
@@ -35,7 +35,7 @@ Isolando l'applicazione dalle risorse di rete oltre a quelle allocate in modo sp
 
 ## <a name="process-isolation"></a>Isolamento del processo
 
-La creazione di sandbox degli oggetti kernel dell'applicazione, l'ambiente AppContainer impedisce all'applicazione di influenzare o influenzare altri processi dell'applicazione. Ciò impedisce a un'applicazione contenuta correttamente di danneggiare altri processi in caso di eccezione.
+La sandbox degli oggetti kernel dell'applicazione impedisce all'applicazione di influenzare o influenzare altri processi dell'applicazione. Ciò impedisce a un'applicazione contenuta correttamente di danneggiare altri processi in caso di eccezione.
 
 ## <a name="window-isolation"></a>Isolamento della finestra
 

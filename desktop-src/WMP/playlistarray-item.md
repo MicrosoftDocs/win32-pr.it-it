@@ -4,7 +4,7 @@ description: Il metodo item recupera la playlist in corrispondenza dell'indice s
 ms.assetid: cc851695-f9a2-4594-8bd3-3555c18bfa10
 keywords:
 - Metodo item Windows Media Player
-- Metodo item Windows Media Player , classe PlaylistArray
+- metodo item Windows Media Player , classe PlaylistArray
 - Metodo della classe PlaylistArray Windows Media Player , item
 topic_type:
 - apiref

@@ -1,6 +1,6 @@
 ---
-description: Notifica a un AppBar che lo stato di Nascondi automaticamente o sempre in primo piano della barra delle applicazioni è stato modificato&\# 8212, ovvero l'utente ha selezionato o cancellato l'&\# 0034; Always on top&\# 0034; o &\# 0034; Nascondi automaticamente&\# 0034; casella di controllo nella finestra delle proprietà della barra delle applicazioni.
-title: Messaggio ABN_STATECHANGE (Shellapi. h)
+description: Notifica a una barra delle app che lo stato di visualizzazione automatica o sempre in alto della barra delle applicazioni è stato modificato&8212; in altri caso, l'utente ha selezionato o \# cancellato il &\# 0034; Always on top&\# 0034; or &\# 0034; Nascondi automaticamente&casella di controllo \# 0034; nella finestra delle proprietà della barra delle applicazioni.
+title: ABN_STATECHANGE messaggio (Shellapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: ac2c00a2-ac20-40a5-947e-6b75a2620a0b
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 33879fcb5e9435e2245bc3d00a9fab75bf1cbdc5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b0017930bd3cf4c8cba356206cfa2207df04ea9c203018703a5f3064d0abb11b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117861583"
 ---
-# <a name="abn_statechange-message"></a>\_Messaggio STATECHANGE di ABN
+# <a name="abn_statechange-message"></a>Messaggio ABN \_ STATECHANGE
 
-Notifica a un AppBar che lo stato di Nascondi automaticamente o della barra delle applicazioni è stato modificato, ovvero l'utente ha selezionato o deselezionato la casella di controllo "always on top" o "Nascondi automaticamente" nella finestra delle proprietà della barra delle applicazioni.
+Notifica a una barra delle app che lo stato di visualizzazione automatica o sempre in alto della barra delle applicazioni è stato modificato, ad esempio l'utente ha selezionato o deselezionato la casella di controllo "Sempre in alto" o "Nascondi automaticamente" nella finestra delle proprietà della barra delle applicazioni.
 
 
 ```C++
@@ -33,7 +33,7 @@ ABN_STATECHANGE
 
 ## <a name="parameters"></a>Parametri
 
-Questo messaggio non contiene parametri.
+Questo messaggio non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
@@ -41,7 +41,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Un AppBar può utilizzare questo messaggio di notifica per impostare lo stato di conformità a quello della barra delle applicazioni, se lo si desidera.
+Una barra delle app può usare questo messaggio di notifica per impostarne lo stato in modo che sia conforme a quello della barra delle applicazioni, se necessario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Un AppBar può utilizzare questo messaggio di notifica per impostare lo stato di
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                           |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Shellapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shellapi.h</dt> </dl> |
 
 
 

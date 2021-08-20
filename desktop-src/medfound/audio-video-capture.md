@@ -20,7 +20,7 @@ Questa sezione descrive come usare le Microsoft Media Foundation per eseguire l'
     -   [Enumerazione dei dispositivi di acquisizione video](enumerating-video-capture-devices.md)
     -   [Gestione della perdita di dispositivi video](handling-video-device-loss.md)
     -   [Come impostare il formato di acquisizione video](how-to-set-the-video-capture-format.md)
-    -   [Come impostare la frequenza fotogrammi di acquisizione video](how-to-set-the-video-capture-frame-rate.md)
+    -   [Come impostare la frequenza dei fotogrammi di acquisizione video](how-to-set-the-video-capture-frame-rate.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

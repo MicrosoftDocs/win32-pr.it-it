@@ -1,10 +1,10 @@
 ---
 title: Attributo msSFU-30-Aliases
-description: Contiene parte della mappa della posta NIS.
+description: Contiene parte della mappa di posta NIS.
 ms.assetid: 8562d872-3447-45cb-bb8a-250ac57d7add
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo msSFU-30-Aliases
+- Attributo msSFU-30-Aliases Schema DI AD
 - Schema AD dell'attributo msSFU30Aliases
 topic_type:
 - apiref
@@ -23,16 +23,16 @@ ms.locfileid: "118424981"
 ---
 # <a name="mssfu-30-aliases-attribute"></a>Attributo msSFU-30-Aliases
 
-Contiene parte della mappa della posta NIS.
+Contiene parte della mappa di posta NIS.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | msSFU-30-Aliases                     |
+| CN                | MsSFU-30-Aliases                     |
 | Ldap-Display-Name | msSFU30Aliases                       |
 | Dimensione              | \-                                   |
-| Privilegio di aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.323          |
 | System-Id-Guid    | 20ebf171-c69a-4c31-b29d-dcb837d8912d |
@@ -119,7 +119,7 @@ Contiene parte della mappa della posta NIS.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                                           |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                        |
-| A valore singolo       | Falso                                                                                                                                                                                                                                                                                                                        |
+| Is-Single-Valued       | Falso                                                                                                                                                                                                                                                                                                                        |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                                        |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                                        |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                 |

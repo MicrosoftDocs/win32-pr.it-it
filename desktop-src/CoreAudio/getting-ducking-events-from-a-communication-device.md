@@ -1,5 +1,5 @@
 ---
-description: Un'applicazione multimediale che vuole offrire un'esperienza di papera personalizzata deve restare in ascolto delle notifiche degli eventi quando un flusso di comunicazione viene aperto o chiuso nel sistema.
+description: Un'applicazione multimediale che vuole offrire un'esperienza di ducking personalizzata deve restare in ascolto delle notifiche degli eventi quando un flusso di comunicazione viene aperto o chiuso nel sistema.
 ms.assetid: 709ad912-6b03-4ad3-bc47-ad8b6bd6de45
 title: Recupero di eventi di ducking
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117828262"
 ---
 # <a name="getting-ducking-events"></a>Recupero di eventi di ducking
 
-Un'applicazione multimediale che vuole offrire un'esperienza di papera personalizzata deve restare in ascolto delle notifiche degli eventi quando un flusso di comunicazione viene aperto o chiuso nel sistema. L'implementazione personalizzata può essere fornita usando MediaFoundation, DirectShow o DirectSound, che usano le API Audio core. Un client WASAPI diretto può anche eseguire l'override della gestione predefinita se sa quando viene avviata e terminata la sessione di comunicazione.
+Un'applicazione multimediale che vuole offrire un'esperienza di ducking personalizzata deve restare in ascolto delle notifiche degli eventi quando un flusso di comunicazione viene aperto o chiuso nel sistema. L'implementazione personalizzata può essere fornita usando MediaFoundation, DirectShow o DirectSound, che usano le API Core Audio. Un client WASAPI diretto può anche eseguire l'override della gestione predefinita se sa quando viene avviata e terminata la sessione di comunicazione.
 
 Per fornire un'implementazione personalizzata, un'applicazione multimediale deve ricevere notifiche dal sistema quando un'applicazione di comunicazione avvia o termina un flusso di comunicazione. L'applicazione multimediale deve [**implementare l'interfaccia IAudioVolumeDuckNotification**](/windows/desktop/api/AudioPolicy/nn-audiopolicy-iaudiovolumeducknotification) e registrare l'implementazione con il sistema audio. Al completamento della registrazione, l'applicazione multimediale riceve le notifiche degli eventi sotto forma di callback tramite i metodi nell'interfaccia . Per altre informazioni, vedere [Considerazioni sull'implementazione per l'applicazione di notifiche di tipo ducking.](handling-audio-ducking-events-from-communication-devices.md)
 
@@ -142,7 +142,7 @@ HRESULT CMediaPlayer::DuckingOptOut(bool DuckingOptOutChecked)
 [Esperienza di paperino predefinita](stream-attenuation.md)
 </dt> <dt>
 
-[Disabilitazione dell'esperienza di ducking predefinita](disabling-the-ducking-experience.md)
+[Disabilitazione dell'esperienza di papera predefinita](disabling-the-ducking-experience.md)
 </dt> <dt>
 
 [Fornire un comportamento di papera personalizzato](providing-a-custom-ducking-experience.md)
