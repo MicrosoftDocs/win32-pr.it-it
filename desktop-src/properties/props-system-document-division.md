@@ -4,12 +4,12 @@ ms.assetid: b1cc598d-d861-4526-b2ed-ab10db805ccb
 title: System.Document. Divisione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87e5933fa8134f1aed312106388cf0fee1544c98
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4c4b355a12660f70d01961e611d1a1bae188d9cdba94c430ac8654f8efbee900
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108101099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118053774"
 ---
 # <a name="systemdocumentdivision"></a>System.Document. Divisione
 

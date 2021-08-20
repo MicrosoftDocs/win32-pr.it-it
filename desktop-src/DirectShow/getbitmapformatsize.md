@@ -1,7 +1,7 @@
 ---
-description: La funzione GetBitmapFormatSize calcola la dimensione necessaria per una struttura VIDEOINFO che può ospitare una struttura BITMAPINFOHEADER specificata.
+description: La funzione GetBitmapFormatSize calcola le dimensioni necessarie per una struttura VIDEOINFO che può contenere una struttura BITMAPINFOHEADER specificata.
 ms.assetid: a559415a-070f-4674-be12-a65a46025809
-title: Funzione GetBitmapFormatSize (Wxutil. h)
+title: Funzione GetBitmapFormatSize (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 39a64f6d975e403de6c177906b23ef7e09f29ddf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a1325073180634c21c29ff8ad09d255368c7d13e5e7d0a42f6fe5db4d6beba1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118000293"
 ---
-# <a name="getbitmapformatsize-function"></a>GetBitmapFormatSize (funzione)
+# <a name="getbitmapformatsize-function"></a>Funzione GetBitmapFormatSize
 
-La `GetBitmapFormatSize` funzione calcola la dimensione necessaria per una struttura [**VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) che può ospitare una struttura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) specificata.
+La `GetBitmapFormatSize` funzione calcola le dimensioni necessarie per una struttura [**VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) che può contenere una [**struttura BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,19 +45,19 @@ LONG GetBitmapFormatSize(
 *pHeader* 
 </dt> <dd>
 
-Puntatore a una struttura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) .
+Puntatore a [**una struttura BITMAPINFOHEADER.**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce le dimensioni in byte.
+Restituisce le dimensioni, in byte.
 
 ## <a name="remarks"></a>Commenti
 
-Una struttura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) può essere seguita dalle maschere colori o dalle voci della tavolozza, pertanto può essere difficile determinare il numero di byte necessari per costruire una struttura [**VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) da una struttura **BITMAPINFOHEADER** esistente.
+Una [**struttura BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) può essere seguita da maschere di colore o voci della tavolozza, pertanto può essere difficile determinare il numero di byte necessari per costruire una struttura [**VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) da una struttura **BITMAPINFOHEADER esistente.**
 
-Per copiare una struttura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) in una struttura [**VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) , usare la macro [**header**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-header) , che calcola l'offset corretto.
+Per copiare [**una struttura BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) in [**una struttura VIDEOINFO,**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) usare la macro [**HEADER,**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-header) che calcola l'offset corretto.
 
 ## <a name="examples"></a>Esempio
 
@@ -81,8 +81,8 @@ if (pVi != NULL)
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
@@ -90,7 +90,7 @@ if (pVi != NULL)
 
 <dl> <dt>
 
-[Funzioni video e immagine](video-and-image-functions.md)
+[Funzioni per video e immagini](video-and-image-functions.md)
 </dt> </dl>
 
  

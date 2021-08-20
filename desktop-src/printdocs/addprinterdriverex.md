@@ -178,13 +178,13 @@ I file a cui viene fatto riferimento [**nella struttura DRIVER INFO \_ \_ 6**](d
 [**DRIVER \_ INFO \_ 2**](driver-info-2.md)
 </dt> <dt>
 
-[**INFORMAZIONI \_ DRIVER \_ 3**](driver-info-3.md)
+[**INFORMAZIONI \_ SUL DRIVER \_ 3**](driver-info-3.md)
 </dt> <dt>
 
-[**INFORMAZIONI \_ DRIVER \_ 4**](driver-info-4.md)
+[**INFORMAZIONI \_ SUL DRIVER \_ 4**](driver-info-4.md)
 </dt> <dt>
 
-[**INFORMAZIONI \_ DRIVER \_ 6**](driver-info-6.md)
+[**INFORMAZIONI \_ SUL DRIVER \_ 6**](driver-info-6.md)
 </dt> <dt>
 
 [**DeletePrinterDriverEx**](deleteprinterdriverex.md)

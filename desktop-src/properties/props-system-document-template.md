@@ -4,12 +4,12 @@ ms.assetid: 68a68689-e65c-4080-849f-e8a9ef457931
 title: System.Document. Modello
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc7ec2a9da7db25b67f009f673cabaebd638583f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a4fc4b498e5a2ea6be9f0b4b60c2e55d83cc950b96b102f8ffed2757e88bccf1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108100979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118053443"
 ---
 # <a name="systemdocumenttemplate"></a>System.Document. Modello
 

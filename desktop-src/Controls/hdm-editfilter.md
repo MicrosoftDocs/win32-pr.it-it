@@ -1,9 +1,9 @@
 ---
-title: Messaggio HDM_EDITFILTER (COMmctrl. h)
-description: Sposta lo stato attivo per l'input nella casella di modifica quando un pulsante di filtro dispone dello stato attivo.
+title: HDM_EDITFILTER messaggio (Commctrl.h)
+description: Sposta lo stato attivo per l'input nella casella di modifica quando un pulsante di filtro ha lo stato attivo.
 ms.assetid: 580f7872-4056-4d7d-8e69-274b4b4b5545
 keywords:
-- Controlli di Windows Message HDM_EDITFILTER
+- HDM_EDITFILTER dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 733c79bf747d3b55aa8dd38eb8fad8fdc83601e1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8636c17bfa9043891e5037df79be9c72c1ddc8f3aa2b4d13520f4289205b5099
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118006161"
 ---
-# <a name="hdm_editfilter-message"></a>\_Messaggio HDM EDITFILTER
+# <a name="hdm_editfilter-message"></a>Messaggio \_ HDM EDITFILTER
 
-Sposta lo stato attivo per l'input nella casella di modifica quando un pulsante di filtro dispone dello stato attivo.
+Sposta lo stato attivo per l'input nella casella di modifica quando un pulsante di filtro ha lo stato attivo.
 
 ## <a name="parameters"></a>Parametri
 
@@ -39,14 +39,14 @@ Valore che specifica la colonna da modificare.
 *lParam* 
 </dt> <dd>
 
-Flag che specifica come gestire le modifiche apportate alla modifica dell'utente. Utilizzare questo flag per specificare le operazioni da eseguire se l'utente è in corso di modifica del filtro quando viene inviato il messaggio.
+Flag che specifica come gestire le modifiche apportate dall'utente. Usare questo flag per specificare le operazioni da eseguire se l'utente sta modificando il filtro quando viene inviato il messaggio.
 
 
 
 | Valore                                                                                                                                      | Significato                                           |
 |--------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| <dl> <dt></dt>Valore <dt> **true**</dt> </dl>  | Annullare le modifiche apportate dall'utente. <br/> |
-| <dl> <dt></dt><dt> **False**</dt> </dl> | Accettare le modifiche apportate dall'utente. <br/>  |
+| <dl> <dt></dt><dt> **TRUE**</dt> </dl>  | Rimuovere le modifiche apportate dall'utente. <br/> |
+| <dl> <dt></dt><dt> **FALSE**</dt> </dl> | Accettare le modifiche apportate dall'utente. <br/>  |
 
 
 
@@ -56,7 +56,7 @@ Flag che specifica come gestire le modifiche apportate alla modifica dell'utente
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un Integer. Viene eseguito il cast di **LRESULT** a un Integer che indica **true**(1) o **false**(0).
+Restituisce un numero intero. Viene eseguito il cast di **LRESULT** a un numero intero che indica **TRUE**(1) o **FALSE**(0).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,9 +64,9 @@ Restituisce un Integer. Viene eseguito il cast di **LRESULT** a un Integer che i
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ Restituisce un Integer. Viene eseguito il cast di **LRESULT** a un Integer che i
 
 <dl> <dt>
 
-[**\_CLEARFILTER HDM**](hdm-clearfilter.md)
+[**HDM \_ CLEARFILTER**](hdm-clearfilter.md)
 </dt> </dl>
 
  

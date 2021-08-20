@@ -1,9 +1,9 @@
 ---
-title: Messaggio MCM_GETUNICODEFORMAT (COMmctrl. h)
-description: Recupera il flag del formato carattere Unicode per il controllo. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro GetUnicodeFormat di MonthCal.
+title: MCM_GETUNICODEFORMAT messaggio (Commctrl.h)
+description: Recupera il flag di formato carattere Unicode per il controllo . È possibile inviare questo messaggio in modo esplicito o usare la \_ macro MonthCal GetUnicodeFormat.
 ms.assetid: 28261e11-0fd0-407e-9f62-446536d62460
 keywords:
-- Controlli di Windows Message MCM_GETUNICODEFORMAT
+- MCM_GETUNICODEFORMAT di Windows messaggi
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4be573923f154958e1defd0be2adb02068076950
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1253fe4164067a484164f8198cda5c1f95a7f63a77acbfbf0ec563b3fec8401d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118005402"
 ---
-# <a name="mcm_getunicodeformat-message"></a>\_Messaggio GETUNICODEFORMAT MCM
+# <a name="mcm_getunicodeformat-message"></a>Messaggio \_ MCM GETUNICODEFORMAT
 
-Recupera il flag del formato carattere Unicode per il controllo. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ GetUnicodeFormat di MonthCal**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getunicodeformat) .
+Recupera il flag di formato carattere Unicode per il controllo . È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ MonthCal GetUnicodeFormat.**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getunicodeformat)
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,7 +41,7 @@ Restituisce il flag di formato Unicode per il controllo. Se questo valore è div
 
 ## <a name="remarks"></a>Commenti
 
-Per una descrizione di questo messaggio, vedere la sezione Osservazioni per [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat.md) .
+Per una descrizione di questo messaggio, vedere le osservazioni relative a [**CCM \_ GETUNICODEFORMAT.**](ccm-getunicodeformat.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Per una descrizione di questo messaggio, vedere la sezione Osservazioni per [**C
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Per una descrizione di questo messaggio, vedere la sezione Osservazioni per [**C
 
 <dl> <dt>
 
-[**\_SETUNICODEFORMAT MCM**](mcm-setunicodeformat.md)
+[**MCM \_ SETUNICODEFORMAT**](mcm-setunicodeformat.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Metodo OnStatus IDRMStatusCallback
-description: Il metodo OnStatus riceve i messaggi di stato dai processi DRM asincroni.
+title: Metodo IDRMStatusCallback OnStatus
+description: Il metodo OnStatus riceve messaggi di stato da processi DRM asincroni.
 ms.assetid: 2a128088-0924-4c54-b08d-a1c7ea91e541
 keywords:
-- OnStatus metodo Windows Media Format
-- Metodo OnStatus Windows Media Format, interfaccia IDRMStatusCallback
-- Interfaccia IDRMStatusCallback Windows Media Format, metodo OnStatus
+- Metodo OnStatus windows Media Format
+- Metodo OnStatus windows Media Format , interfaccia IDRMStatusCallback
+- Interfaccia IDRMStatusCallback windows Media Format, metodo OnStatus
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 754d59d74fb0365f423243e92565ac17b46628a5
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 2c9f8c0424752ababe684b426d78001f2783d62db9781fe3d6a23ed002e91773
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117847455"
 ---
-# <a name="idrmstatuscallbackonstatus-method"></a>Metodo IDRMStatusCallback:: OnStatus
+# <a name="idrmstatuscallbackonstatus-method"></a>Metodo IDRMStatusCallback::OnStatus
 
-Il metodo **OnStatus** riceve i messaggi di stato dai processi DRM asincroni.
+Il **metodo OnStatus** riceve messaggi di stato da processi DRM asincroni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,50 +45,50 @@ HRESULT OnStatus(
 
 <dl> <dt>
 
-*Stato* \[ di in\]
+*Stato* \[ Pollici\]
 </dt> <dd>
 
-Codice di stato. I codici di messaggio sono definiti nel tipo di enumerazione **\_ dello stato MSDRM** .
+Codice di stato. I codici di messaggio sono definiti nel **tipo di enumerazione \_ MSDRM STATUS.**
 
 </dd> <dt>
 
-*risorse umane* \[ in\]
+*hr* \[ Pollici\]
 </dt> <dd>
 
 Codice restituito che supporta il messaggio di stato.
 
 </dd> <dt>
 
-*dwType* \[ in\]
+*dwType* \[ Pollici\]
 </dt> <dd>
 
-Tipo di dati a cui punta *pValue*. Impostare su uno dei valori dell'enumerazione di [**\_ \_ tipo di dati DRM attr**](drm-attr-datatype.md) .
+Tipo di dati a cui punta *pValue*. Impostare su uno dei valori [**dell'enumerazione \_ DRM ATTR \_ DATATYPE.**](drm-attr-datatype.md)
 
 </dd> <dt>
 
-*pValue* \[ in\]
+*pValue* \[ Pollici\]
 </dt> <dd>
 
-Puntatore ai dati correlati al messaggio di stato. Il tipo di dati è determinato dal valore del parametro *dwType* . Per ulteriori informazioni, vedere l'enumerazione del tipo di dati di [**DRM \_ attr \_**](drm-attr-datatype.md) .
+Puntatore ai dati correlati al messaggio di stato. Il tipo di dati è determinato dal valore del *parametro dwType.* Per altre informazioni, vedere [**l'enumerazione \_ DRM ATTR \_ DATATYPE.**](drm-attr-datatype.md)
 
 </dd> <dt>
 
-*pvContext* \[ in\]
+*pvContext* \[ Pollici\]
 </dt> <dd>
 
-Parametro facoltativo che può essere usato per identificare l'oggetto che ha inviato il messaggio. Impostando *pvContext* quando si registra questo callback, è possibile utilizzare lo stesso callback per gestire più processi asincroni.
+Parametro facoltativo che può essere utilizzato per identificare l'oggetto che ha inviato il messaggio. Impostando *pvContext quando* si registra questo callback, è possibile usare lo stesso callback per gestire più processi asincroni.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -96,13 +96,13 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna.
+Nessuno.
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[**tipo di dati attr di DRM \_ \_**](drm-attr-datatype.md)
+[**TIPO DI \_ DATI ATTR \_ DRM**](drm-attr-datatype.md)
 </dt> <dt>
 
 [**Interfaccia IDRMStatusCallback**](idrmstatuscallback.md)

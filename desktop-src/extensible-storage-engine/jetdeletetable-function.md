@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetDeleteTable'
-title: JetDeleteTable (funzione)
+description: Altre informazioni sulla funzione JetDeleteTable
+title: Funzione JetDeleteTable
 TOCTitle: JetDeleteTable Function
 ms:assetid: e8a4131f-a69b-41f3-94c6-a1607fc23c1f
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294128(v=EXCHG.10)
@@ -20,21 +20,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c432f8e09ad706b6632e4e5ca49a89a263a84dbb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2cef71623dbd806f8215e4c3f2d0b71a1982888f9bf1ee42f420b9b9958ee114
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117891725"
 ---
-# <a name="jetdeletetable-function"></a>JetDeleteTable (funzione)
+# <a name="jetdeletetable-function"></a>Funzione JetDeleteTable
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jetdeletetable-function"></a>JetDeleteTable (funzione)
+## <a name="jetdeletetable-function"></a>Funzione JetDeleteTable
 
-La funzione **JetDeleteTable** Elimina una tabella in un database ESE.
+La **funzione JetDeleteTable** elimina una tabella in un database ESE.
 
 ```cpp
     JET_ERR JET_API JetDeleteTable(
@@ -50,7 +50,7 @@ La funzione **JetDeleteTable** Elimina una tabella in un database ESE.
 
 Contesto della sessione di database da usare per la chiamata API.
 
-*dbid*
+*Dbid*
 
 Identificatore del database da usare per la chiamata API.
 
@@ -60,7 +60,7 @@ Nome della tabella da eliminare.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore di](./extensible-storage-engine-errors.md) Archiviazione estendibile e Parametri di gestione [degli errori](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -80,15 +80,15 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errTableInUse</p></td>
-<td><p>È stato effettuato un tentativo di eliminare una tabella mentre un'altra sessione dispone di un ID di tabella aperto (<a href="gg269182(v=exchg.10).md">JET_TABLEID</a>) con <a href="gg294118(v=exchg.10).md">JetOpenTable</a> o <a href="gg269193(v=exchg.10).md">JetDupCursor</a>.</p></td>
+<td><p>È stato effettuato un tentativo di eliminare una tabella mentre un'altra sessione ha un ID tabella aperto (<a href="gg269182(v=exchg.10).md">JET_TABLEID</a>) con <a href="gg294118(v=exchg.10).md">JetOpenTable</a> o <a href="gg269193(v=exchg.10).md">JetDupCursor</a>.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Tabella JET_errCannotDeletetemporary</p></td>
+<td><p>JET_errCannotDeletetemporary tabella</p></td>
 <td><p>È stato effettuato un tentativo di eliminare una tabella temporanea. Una tabella temporanea viene eliminata automaticamente quando viene chiusa con <a href="gg294087(v=exchg.10).md">JetCloseTable</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errCannotDeleteTemplateTable</p></td>
-<td><p>È stato effettuato un tentativo di eliminare una tabella modello, ovvero una tabella da cui è possibile ereditare DDL.</p></td>
+<td><p>È stato effettuato un tentativo di eliminare una tabella modello, ovvero una tabella da cui È possibile ereditare DDL.</p></td>
 </tr>
 </tbody>
 </table>
@@ -112,11 +112,11 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
+<td><p>Usare ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>

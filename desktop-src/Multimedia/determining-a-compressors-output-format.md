@@ -1,25 +1,25 @@
 ---
-title: Determinazione del formato di output di un compressore
-description: Determinazione del formato di output di un compressore
+title: Determinazione del formato di output di un oggetto
+description: Determinazione del formato di output di un oggetto
 ms.assetid: 910bd77f-4c65-4ea2-bab2-96f42a2b6cf1
 keywords:
-- Gestione compressione video (VCM), formato di output
-- VCM (Video Compression Manager), formato di output
-- ICCompressGetFormat (macro)
-- ICCompressQuery (macro)
-- ICCompressGetSize (macro)
+- gestione compressione video(VCM), formato di output
+- VCM (Gestione compressione video),formato di output
+- Macro ICCompressGetFormat
+- Macro ICCompressQuery
+- Macro ICCompressGetSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c4356870598dc08ad84c4073be5ffa3c2ddbd5b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4160942c2b5524e57a3a7d7e4eb79128abd55bf5f62ea0926c1ba60e02ce70c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104117742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117989001"
 ---
-# <a name="determining-a-compressors-output-format"></a>Determinazione del formato di output di un compressore
+# <a name="determining-a-compressors-output-format"></a>Determinazione del formato di output di un oggetto
 
-Nell'esempio seguente viene utilizzata la macro di dimensioni [**ICCompressGetFormat**](/windows/desktop/api/Vfw/nf-vfw-iccompressgetformat) per determinare le dimensioni del buffer necessarie per i dati che specificano il formato di compressione, alloca un buffer delle dimensioni appropriate utilizzando la funzione [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) e recupera le informazioni sul formato di compressione utilizzando la macro **ICCompressGetFormat** .
+L'esempio seguente usa la macro [**ICCompressGetFormat**](/windows/desktop/api/Vfw/nf-vfw-iccompressgetformat) size per determinare le dimensioni del buffer necessarie per i dati che specificano il formato di compressione, alloca un buffer delle dimensioni appropriate usando la funzione [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) e recupera le informazioni sul formato di compressione usando la macro **ICCompressGetFormat.**
 
 
 ```C++
@@ -36,7 +36,7 @@ ICCompressGetFormat(hIC, lpbiIn, lpbiOut);
 
 
 
-Nell'esempio seguente viene usata la macro [**ICCompressQuery**](/windows/desktop/api/Vfw/nf-vfw-iccompressquery) per determinare se un compressore può gestire i formati di input e di output.
+Nell'esempio seguente viene utilizzata la macro [**ICCompressQuery**](/windows/desktop/api/Vfw/nf-vfw-iccompressquery) per determinare se un oggetto è in grado di gestire i formati di input e output.
 
 
 ```C++
@@ -58,7 +58,7 @@ if (ICCompressQuery(hIC, lpbiIn, lpbiOut) == ICERR_OK)
 
 
 
-Nell'esempio seguente viene utilizzata la macro [**ICCompressGetSize**](/windows/desktop/api/Vfw/nf-vfw-iccompressgetsize) per determinare le dimensioni del buffer e viene allocato un buffer di tale dimensione utilizzando [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc).
+L'esempio seguente usa la macro [**ICCompressGetSize**](/windows/desktop/api/Vfw/nf-vfw-iccompressgetsize) per determinare le dimensioni del buffer e alloca un buffer di tale dimensione usando [GlobalAlloc.](/windows/win32/api/winbase/nf-winbase-globalalloc)
 
 
 ```C++
@@ -74,6 +74,6 @@ lpOutput = (LPVOID)GlobalLock(h);
 
 
 
- 
+ 
 
- 
+ 

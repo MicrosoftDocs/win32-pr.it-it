@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà IndexInfo. IndexSegments'
-title: Proprietà IndexInfo. IndexSegments
+description: Altre informazioni sulla proprietà IndexInfo.IndexSegments
+title: IndexInfo.IndexSegments - proprietà
 TOCTitle: 'IndexSegments property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.IndexInfo.IndexSegments
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.indexinfo.indexsegments(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d366d3ddd5ba7a33faeb44459830dbaadcc221e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 966386c8698c101616d6b0c9292344572da5a0db21d36a12c4173111e689f6ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117896081"
 ---
-# <a name="indexinfoindexsegments-property"></a>Proprietà IndexInfo. IndexSegments
+# <a name="indexinfoindexsegments-property"></a>IndexInfo.IndexSegments - proprietà
 
 Ottiene i segmenti dell'indice.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,7 +58,7 @@ public IList<IndexSegment> IndexSegments { get; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Collections. Generic. IList](/dotnet/api/system.collections.generic.ilist-1)\<[IndexSegment](./indexsegment-class.md)\>  
+Tipo: [System.Collections.Generic.IList](/dotnet/api/system.collections.generic.ilist-1)\<[IndexSegment](./indexsegment-class.md)\>  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -66,6 +66,6 @@ Tipo: [System. Collections. Generic. IList](/dotnet/api/system.collections.gener
 
 [Classe IndexInfo](./indexinfo-class.md)
 
-[Membri di IndexInfo](./indexinfo-members.md)
+[Membri indexInfo](./indexinfo-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

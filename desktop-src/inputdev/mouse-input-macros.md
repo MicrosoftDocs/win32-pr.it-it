@@ -4,12 +4,12 @@ description: Macro di input del mouse
 ms.assetid: 0c90dea6-18a9-4d6a-80a4-847d5c4e815b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54055b0626a28000f9f52f3129e16c29722b090d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 400702f5d3e7fa1a47e669f3102d5d565435168b0e358a3f913c1cb7908921d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117884298"
 ---
 # <a name="mouse-input-macros"></a>Macro di input del mouse
 

@@ -64,7 +64,7 @@ Se il metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, rest
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente crea una factory.
+Nell'esempio seguente viene creata una factory.
 
 
 ```C++
@@ -87,9 +87,9 @@ HRESULT DemoApp::CreateDeviceIndependentResources()
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 7, Windows Vista con SP2 e l'aggiornamento della piattaforma per Windows app desktop di Vista \[ \| per le app UWP\]<br/>                          |
-| Server minimo supportato<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 e Aggiornamento della piattaforma per app desktop Windows Server 2008 \[ \| UWP\]<br/> |
-| Telefono minimo supportato<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 e Windows Runtime\]<br/>                                                  |
+| Client minimo supportato<br/> | Windows 7, Windows Vista con SP2 e Aggiornamento piattaforma per Windows app desktop di Vista \[ \| app UWP\]<br/>                          |
+| Server minimo supportato<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 e aggiornamento della piattaforma per Windows app desktop di Windows Server 2008 \[ app desktop \| UWP\]<br/> |
+| Telefono minimo supportato<br/>  | Windows Phone 8.1 \[ Windows Phone silverlight 8.1 e Windows Runtime\]<br/>                                                  |
 | Intestazione<br/>                   | <dl> <dt>D2d1.h</dt> </dl>                                                        |
 | Libreria<br/>                  | <dl> <dt>D2d1.lib</dt> </dl>                                                      |
 | DLL<br/>                      | <dl> <dt>D2d1.dll</dt> </dl>                                                      |

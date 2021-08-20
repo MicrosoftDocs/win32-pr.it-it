@@ -1,10 +1,10 @@
 ---
-description: Richiede la restituzione di dati oggetto generici che descrivono un oggetto nel file con estensione vsglog per l'evento specificato e nel formato specificato.
+description: Richiede di restituire dati oggetto generico che descrivono un oggetto nel file vsglog per l'evento specificato e nel formato specificato.
 MS-HAID: vspixengine.IGenericBufferDataRequest\_RequestAsync\_DumperType\_EventID\_DWORD\_IGenericBufferDataCallback\_ptr\_DWORD\_DWORD
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo IGenericBufferDataRequest:: RequestAsync'
+title: Metodo IGenericBufferDataRequest::RequestAsync
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 542E20F9-B91D-4A05-AEE8-9DD2E80B76DB
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 6d8860b2de7c3dce5c6f8b61467bfe147530ed76
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 1859c5527480f018223933603a2dedb0af54cfe009194a170d537f10e124d35a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117722068"
 ---
-# <a name="span-idvspixengineigenericbufferdatarequest_requestasync_dumpertype_eventid_dword_igenericbufferdatacallback_ptr_dword_dwordspanigenericbufferdatarequestrequestasync-method"></a><span id="vspixengine.igenericbufferdatarequest_requestasync_dumpertype_eventid_dword_igenericbufferdatacallback_ptr_dword_dword"></span>Metodo IGenericBufferDataRequest:: RequestAsync
+# <a name="span-idvspixengineigenericbufferdatarequest_requestasync_dumpertype_eventid_dword_igenericbufferdatacallback_ptr_dword_dwordspanigenericbufferdatarequestrequestasync-method"></a><span id="vspixengine.igenericbufferdatarequest_requestasync_dumpertype_eventid_dword_igenericbufferdatacallback_ptr_dword_dword"></span>Metodo IGenericBufferDataRequest::RequestAsync
 
-Richiede la restituzione di dati oggetto generici che descrivono un oggetto nel file con estensione vsglog per l'evento specificato e nel formato specificato.
+Richiede di restituire dati oggetto generico che descrivono un oggetto nel file vsglog per l'evento specificato e nel formato specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,28 +47,28 @@ HRESULT RequestAsync(
 *dumperType*   
 Formato specificato della rappresentazione testuale dell'oggetto (HTML, XML e così via)
 
-*eventID*   
-Evento specificato a cui associare il contenuto del buffer, ad esempio una destinazione di rendering può cambiare nel tempo.
+*Eventid*   
+Evento specificato a cui associare il contenuto del buffer( ad esempio, una destinazione di rendering potrebbe cambiare nel tempo).
 
 *RequestedDataUID*   
 Indirizzo dell'oggetto specificato.
 
 *requestCallback*   
-Indirizzo del callback utilizzato per notificare all'host i risultati.
+Indirizzo del callback utilizzato per inviare una notifica all'host dei risultati.
 
 *requestCookie*   
-Un cookie che identifica in modo univoco la richiesta e può essere usato per segnalare l'annullamento.
+Cookie che identifica in modo univoco la richiesta e può essere usato per segnalare l'annullamento.
 
 *progressIntervalMsecs*   
 Non usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

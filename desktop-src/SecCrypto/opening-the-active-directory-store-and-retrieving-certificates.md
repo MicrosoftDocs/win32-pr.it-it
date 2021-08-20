@@ -1,25 +1,25 @@
 ---
-description: È possibile recuperare i certificati da un archivio Active Directory in cui sono archiviati i certificati degli utenti di un dominio.
+description: I certificati possono essere recuperati da un archivio di Active Directory in cui sono archiviati i certificati degli utenti di un dominio.
 ms.assetid: 5c4d1629-88f3-41f4-afb3-7791cd590e6c
-title: Apertura dell'archivio Active Directory e recupero dei certificati
+title: Apertura dell'archivio di Active Directory e recupero dei certificati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd60c7414aaec8b069817b47fbd2493bb11d98c8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd2dc5810e97669e40b27bc374bee09f16c0a7c9a3b2bd4a1fa2951e1249a737
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117979122"
 ---
-# <a name="opening-the-active-directory-store-and-retrieving-certificates"></a>Apertura dell'archivio Active Directory e recupero dei certificati
+# <a name="opening-the-active-directory-store-and-retrieving-certificates"></a>Apertura dell'archivio di Active Directory e recupero dei certificati
 
-\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece il .NET Framework per implementare le funzionalità di sicurezza. Per altre informazioni, vedere [alternative all'uso di CAPICOM](alternatives-to-using-capicom.md).\]
+\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece il .NET Framework per implementare le funzionalità di sicurezza. Per altre informazioni, vedere [Alternative all'uso di CAPICOM.](alternatives-to-using-capicom.md)\]
 
-È possibile recuperare i [*certificati*](../secgloss/c-gly.md) da un archivio Active Directory in cui sono archiviati i certificati degli utenti di un dominio. Un archivio Active Directory può essere aperto solo in modalità di sola lettura e le applicazioni non possono aggiungere o rimuovere certificati da un archivio Active Directory con CAPICOM.
+[*I*](../secgloss/c-gly.md) certificati possono essere recuperati da un archivio di Active Directory in cui sono archiviati i certificati degli utenti di un dominio. Un archivio di Active Directory può essere aperto solo in modalità di sola lettura e le applicazioni non possono aggiungere o rimuovere certificati da un archivio di Active Directory tramite CAPICOM.
 
-In caso di errore di CAPICOM, viene restituito un valore decimale negativo di **Err. Number** . Per altre informazioni, vedere [**\_ \_ codice di errore di CAPICOM**](capicom-error-code.md). Per informazioni sui valori decimali positivi di **Err. Number**, vedere Winerror. h.
+In caso di errore CAPICOM, viene restituito un valore decimale negativo **Err.Number.** Per altre informazioni, vedere [**CAPICOM \_ ERROR \_ CODE**](capicom-error-code.md). Per informazioni sui valori decimali positivi **di Err.Number,** vedere Winerror.h.
 
-Nell'esempio seguente viene illustrata l'apertura di un archivio Active Directory e il recupero di certificati dall'archivio.
+L'esempio seguente illustra l'apertura di un archivio di Active Directory e il recupero di certificati da tale archivio.
 
 
 ```VB

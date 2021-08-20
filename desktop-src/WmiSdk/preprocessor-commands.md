@@ -1,22 +1,22 @@
 ---
-description: Un comando per il preprocessore è una riga di codice inserita in un file MOF che controlla il modo in cui il compilatore MOF compila il codice.
+description: Un comando del preprocessore è una riga di codice inserita all'interno di un file MOF che controlla il modo in cui il compilatore MOF compila il codice.
 ms.assetid: 48edf4d6-c939-4fe9-9a02-761a6b7b3bd6
 ms.tgt_platform: multiple
 title: Comandi del preprocessore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d9b95e7639917f9067e22ff579f3c408e023051
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a2c8cdcd4dd460abf86839530134c02521fc4610f360371fb2084ab6a153589
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117923239"
 ---
 # <a name="preprocessor-commands"></a>Comandi del preprocessore
 
-Un comando per il preprocessore è una riga di codice inserita in un file MOF che controlla il modo in cui il compilatore MOF compila il codice. Per la compilazione di file MOF sono disponibili due comandi per il preprocessore:
+Un comando del preprocessore è una riga di codice inserita all'interno di un file MOF che controlla il modo in cui il compilatore MOF compila il codice. Nella compilazione di file MOF vengono usati due comandi del preprocessore:
 
--   [\#includere](-include.md)
+-   [\#Includono](-include.md)
 -   [\#pragma](-pragma.md)
 
  

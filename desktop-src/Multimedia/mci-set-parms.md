@@ -1,9 +1,9 @@
 ---
-title: Struttura MCI_SET_PARMS (Mciapi. h)
-description: La \_ struttura set \_ parametri di MCI contiene informazioni per il \_ comando set di MCI.
+title: MCI_SET_PARMS struttura (Mciapi.h)
+description: La struttura MCI \_ SET \_ PARMS contiene informazioni per il comando MCI \_ SET.
 ms.assetid: 58811a0f-dc89-4303-b2b2-c98933ebab80
 keywords:
-- Struttura MCI_SET_PARMS di Windows Multimedia
+- MCI_SET_PARMS struttura Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 971affd319ecae817b9c1159ab0f307d0c2a5c91
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 10c223534410b7e5a0543683c354728e0d5093f38ad0a2582a047a2a5362faae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117986213"
 ---
-# <a name="mci_set_parms-structure"></a>\_ \_ Struttura parametri set MCI
+# <a name="mci_set_parms-structure"></a>Struttura MCI \_ SET \_ PARMS
 
-La **struttura \_ set \_ parametri di MCI** contiene informazioni per il comando [**\_ set di MCI**](mci-set.md) .
+La **struttura MCI \_ SET \_ PARMS** contiene informazioni per il [**comando MCI \_ SET.**](mci-set.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,14 +45,14 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La parola di ordine inferiore specifica un handle di finestra utilizzato per il \_ flag di notifica MCI.
+La parola più bassa specifica un handle di finestra utilizzato per il flag MCI \_ NOTIFY.
 
 </dd> <dt>
 
 **dwTimeFormat**
 </dt> <dd>
 
-Formato ora per il dispositivo.
+Formato dell'ora per il dispositivo.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Canale di output audio.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
+Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della [**funzione mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,7 +75,7 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -83,13 +83,13 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Strutture MCI**](mci-structures.md)
 </dt> <dt>
 
-[**SET di MCI \_**](mci-set.md)
+[**MCI \_ SET**](mci-set.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

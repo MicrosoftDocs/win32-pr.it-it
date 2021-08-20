@@ -1,19 +1,19 @@
 ---
-description: Specifica la costrizione del video.
+description: Specifica di vincolare il video.
 ms.assetid: 2C976D71-DBEA-4669-AFA7-167207D45273
-title: Attributo MFPROTECTION_CONSTRICTVIDEO (Mfidl. h)
+title: MFPROTECTION_CONSTRICTVIDEO attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c8b35c09859875e060c890af8ffddef8ec34bfd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b23eab8234ffa6fbf8b67c9e80765c7faebcd1b7b3e710fe20167bcd9baf918
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103755287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117872495"
 ---
-# <a name="mfprotection_constrictvideo-attribute"></a>\_Attributo CONSTRICTVIDEO di MFPROTECTION
+# <a name="mfprotection_constrictvideo-attribute"></a>Attributo MFPROTECTION \_ CONSTRICTVIDEO
 
-Specifica la costrizione del video.
+Specifica di vincolare il video.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -25,9 +25,9 @@ Specifica la costrizione del video.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -35,7 +35,7 @@ Specifica la costrizione del video.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

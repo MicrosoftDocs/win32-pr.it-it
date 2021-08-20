@@ -1,23 +1,23 @@
 ---
-description: Specifica il controllo da utilizzare durante la modifica della proprietà.
+description: Specifica il controllo da utilizzare quando si modifica la proprietà .
 ms.assetid: cef6d76f-664a-4808-a224-e82a5adb2d70
 title: editControl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 966f9742082fd6b5f939941a956eaae1ac4e427a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0bdb47a3866c156ff10dba8eed4584f814793b863e8f615ae5e1a10b8d687ed4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118055991"
 ---
 # <a name="editcontrol"></a>editControl
 
-Specifica il controllo da utilizzare durante la modifica della proprietà. Deve essere presente un solo elemento [editControl]() per ogni elemento [displayInfo](./propdesc-schema-displayinfo.md) .
+Specifica il controllo da utilizzare quando si modifica la proprietà . Deve essere presente un solo [elemento editControl]() per ogni [elemento displayInfo.](./propdesc-schema-displayinfo.md)
 
-Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato alcun elemento [editControl]() , le impostazioni predefinite degli attributi vengono applicate alla descrizione della proprietà.
+Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato alcun elemento [editControl,]() alla descrizione della proprietà vengono applicate le impostazioni predefinite dell'attributo.
 
-Se <typeInfo isInnate="true"> , questo elemento viene ignorato perché non è possibile modificare una proprietà innata.
+Se , questo elemento viene ignorato perché non è possibile modificare una <typeInfo isInnate="true"> proprietà innata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,7 +53,7 @@ Se <typeInfo isInnate="true"> , questo elemento viene ignorato perché non è po
 
 | Elemento padre                                   | Elementi figlio |
 |--------------------------------------------------|----------------|
-| [displayInfo](./propdesc-schema-displayinfo.md) | nessuno           |
+| [displayInfo](./propdesc-schema-displayinfo.md) | Nessuno           |
 
 
 
@@ -77,7 +77,7 @@ Se <typeInfo isInnate="true"> , questo elemento viene ignorato perché non è po
 <tbody>
 <tr class="odd">
 <td>controllo</td>
-<td>Pubblica. facoltativo. Il valore predefinito è &quot; default &quot; . I valori validi sono i seguenti. 
+<td>Pubblica. facoltativo. Il valore predefinito &quot; è &quot; Default. I valori validi sono i seguenti. 
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -92,7 +92,7 @@ Se <typeInfo isInnate="true"> , questo elemento viene ignorato perché non è po
 <tbody>
 <tr class="odd">
 <td>Predefinito</td>
-<td>Valore predefinito. Usa il controllo predefinito, in base all' <typeInfo type=&quot;&quot;> attributo. I tipi predefiniti sono elencati di seguito. Qualsiasi altro tipo comporta l'utilizzo del &quot; controllo di testo &quot; . 
+<td>Valore predefinito. Usa il controllo predefinito, in base <typeInfo type=&quot;&quot;> all'attributo . I tipi predefiniti sono elencati di seguito. Qualsiasi altro tipo comporta l'uso del &quot; controllo &quot; Text. 
 <table>
 <thead>
 <tr class="header">
@@ -106,7 +106,7 @@ Se <typeInfo isInnate="true"> , questo elemento viene ignorato perché non è po
 <td>Testo</td>
 </tr>
 <tr class="even">
-<td>String (multivalore)</td>
+<td>Stringa (multivalore)</td>
 <td>MultiValueText</td>
 </tr>
 <tr class="odd">
@@ -120,31 +120,31 @@ Se <typeInfo isInnate="true"> , questo elemento viene ignorato perché non è po
 </tr>
 <tr class="even">
 <td>Calendario</td>
-<td>Usa il controllo Calendar.</td>
+<td>Usa il controllo calendario.</td>
 </tr>
 <tr class="odd">
 <td>CheckboxDropList</td>
-<td>Usa il controllo elenco con le caselle di controllo.</td>
+<td>Usa il controllo elenco con caselle di controllo.</td>
 </tr>
 <tr class="even">
-<td>DropList</td>
+<td>Elenco a discesa</td>
 <td>Usa il controllo elenco a discesa.</td>
 </tr>
 <tr class="odd">
 <td>MultiLineText</td>
-<td>Utilizza il controllo di modifica del testo su più righe.</td>
+<td>Usa il controllo di modifica del testo su più righe.</td>
 </tr>
 <tr class="even">
 <td>MultiValueText</td>
-<td>Utilizza il controllo di modifica del testo multivalore.</td>
+<td>Usa il controllo di modifica del testo multivalore.</td>
 </tr>
 <tr class="odd">
 <td>Classificazione</td>
-<td>Usa il controllo della classificazione a 5 stelle.</td>
+<td>Usa il controllo classificazione a 5 stelle.</td>
 </tr>
 <tr class="even">
 <td>Testo</td>
-<td>Utilizza il controllo di modifica del testo.</td>
+<td>Usa il controllo di modifica del testo.</td>
 </tr>
 <tr class="odd">
 <td>IconList</td>

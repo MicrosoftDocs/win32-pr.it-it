@@ -1,9 +1,9 @@
 ---
 title: bindable (attributo)
-description: L'attributo \ Bindable \ indica che la proprietà supporta data binding.
+description: L'attributo \bindable\ indica che la proprietà supporta data binding.
 ms.assetid: ba09096d-a2f7-4958-827c-0fba19ded26f
 keywords:
-- attributo MIDL associabile
+- attributo associabile MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33911ba5ff55ef5e3dd377613dd98532ecd97486
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 01a673c696a810856b6c520680898e4f48e6cb5e5ed108a22f8ecd1132383416
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "106299660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117807864"
 ---
 # <a name="bindable-attribute"></a>bindable (attributo)
 
-L'attributo **\[ associabile \]** indica che la proprietà supporta data binding.
+**\[ L'attributo \] associabile** indica che la proprietà supporta data binding.
 
 ``` syntax
 [
@@ -37,57 +37,57 @@ interface | dispinterface interface-name
 
 <dl> <dt>
 
-*Interface-Attribute-List* 
+*interface-attribute-list* 
 </dt> <dd>
 
-Specifica un elenco di zero o più attributi IDL che si applicano all'interfaccia nel suo complesso. Quando sono presenti due o più attributi di interfaccia, devono essere separati da virgole.
+Specifica un elenco di zero o più attributi IDL che si applicano all'intera interfaccia. Quando sono presenti due o più attributi di interfaccia, devono essere separati da virgole.
 
 </dd> <dt>
 
-*Nome interfaccia* 
+*interface-name* 
 </dt> <dd>
 
 Specifica il nome dell'interfaccia.
 
 </dd> <dt>
 
-*elenco attributi* 
+*attribute-list* 
 </dt> <dd>
 
-Specifica zero o più attributi che si applicano al prototipo di funzione per una proprietà o un metodo in un'interfaccia o in un' [**interfaccia**](interface.md) [**Dispatch**](dispinterface.md). Gli attributi seguenti sono validi: [**\[ helpstring \]**](helpstring.md), [**\[ HelpContext \]**](helpcontext.md), [**\[ String \]**](string.md), [**\[ defaultbind \]**](defaultbind.md), [**\[ displaybind \]**](displaybind.md), [**\[ immediatebind \]**](immediatebind.md), [**\[ propget \]**](propget.md), [**\[ propput \]**](propput.md), [**\[ propputref \]**](propputref.md)e [**\[ vararg \]**](vararg.md). Se viene specificato **vararg** , l'ultimo parametro deve essere una matrice sicura di tipo Variant. Separare più attributi con virgole.
+Specifica zero o più attributi che si applicano al prototipo di funzione per una proprietà o un metodo in [**un'interfaccia o**](interface.md) [**interfaccia dispatch.**](dispinterface.md) Gli attributi seguenti sono validi: [**\[ \] helpstring**](helpstring.md), [**\[ \] helpcontext**](helpcontext.md), [**\[ string \]**](string.md), [**\[ defaultbind , \] displaybind**](defaultbind.md) [**\[ \]**](displaybind.md), [**\[ immediatebind \]**](immediatebind.md), propget [**\[ \]**](propget.md), [**\[ propput \]**](propput.md), [**\[ propputref \]**](propputref.md)e [**\[ vararg \]**](vararg.md). Se **si specifica vararg,** l'ultimo parametro deve essere una matrice sicura di tipo VARIANT. Separare più attributi con virgole.
 
 </dd> <dt>
 
-*returnType* 
+*Returntype* 
 </dt> <dd>
 
 Specifica il tipo restituito della funzione.
 
 </dd> <dt>
 
-*Nome funzione* 
+*function-name* 
 </dt> <dd>
 
-Specifica il nome della funzione a cui verrà applicato l'attributo **\[ associabile \]** .
+Specifica il nome della funzione a cui verrà applicato **\[ \] l'attributo** associabile.
 
 </dd> <dt>
 
 *params* 
 </dt> <dd>
 
-Elenco dei parametri della funzione.
+Elenco di parametri della funzione.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Grazie al supporto di data binding, l'attributo **\[ associabile \]** consente al client di ricevere notifiche ogni volta che una proprietà modifica il valore. Se si desidera che il client riceva una notifica di modifiche imminenti a una proprietà, utilizzare l'attributo [**\[ requestedit \]**](requestedit.md) .
+Supportando data binding, **\[ l'attributo \] associabile** consente al client di ricevere una notifica ogni volta che viene modificato il valore di una proprietà. Se si vuole che il client sia informato delle modifiche imminenti a una proprietà, usare [**\[ l'attributo requestedit. \]**](requestedit.md)
 
-Poiché l'attributo **\[ associabile \]** si riferisce alla proprietà nel suo complesso, è necessario specificare ogni volta che la proprietà è definita. Pertanto, è necessario specificare l'attributo sia nella funzione di accesso alla proprietà che nella funzione di impostazione della proprietà.
+Poiché **\[ l'attributo associabile \]** fa riferimento alla proprietà nel suo complesso, deve essere specificato ovunque sia definita la proprietà. Pertanto, è necessario specificare l'attributo sia nella funzione di accesso alle proprietà che nella funzione di impostazione delle proprietà.
 
 ### <a name="flags"></a>Flags
 
-FUNCFLAG \_ FBINDABLE, VARFLAG \_ FBINDABLE
+FUNCFLAG \_ ESNDABLE, VARFLAG \_ ESNDABLE
 
 ## <a name="examples"></a>Esempi
 
@@ -130,13 +130,13 @@ dispinterface MyObject
 [**immediatebind**](immediatebind.md)
 </dt> <dt>
 
-[**interfaccia**](interface.md)
+[**Interfaccia**](interface.md)
 </dt> <dt>
 
-[Esempio di file di FAD](/previous-versions/windows/desktop/automat/odl-file-example)
+[Esempio di file ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [**propget**](propget.md)
@@ -160,6 +160,6 @@ dispinterface MyObject
 [**vararg**](vararg.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

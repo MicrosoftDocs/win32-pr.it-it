@@ -1,29 +1,29 @@
 ---
-description: Generato dal motore dei criteri quando l'individualizzazione è completa. Per ulteriori informazioni, vedere evento MEIndividualizationStart.
+description: Generato dal motore dei criteri al termine dell'individualizzazione. Per altre informazioni, vedere EVENTO MEIndividualizationStart.
 ms.assetid: 44a4956f-19ba-410d-b96c-e7774cbe2d7e
-title: Evento MEIndividualizationCompleted (Mfobjects. h)
+title: Evento MEIndividualizationCompleted (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7143274d12a9ad113f714062ff8f88c1fb8277cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f992f9369432114dafdf4c606370075ea454a6d35d6e8894099fa24831e8b3d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117877784"
 ---
-# <a name="meindividualizationcompleted-event"></a>Evento MEIndividualizationCompleted
+# <a name="meindividualizationcompleted-event"></a>EVENTO MEIndividualizationCompleted
 
-Generato dal motore dei criteri quando l'individualizzazione è completa. Per ulteriori informazioni, vedere evento [MEIndividualizationStart](meindividualizationstart.md) .
+Generato dal motore dei criteri al termine dell'individualizzazione. Per altre informazioni, vedere [EVENTO MEIndividualizationStart.](meindividualizationstart.md)
 
 ## <a name="event-values"></a>Valori dell'evento
 
-I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
+I valori possibili recuperati [**da IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
 
 
 
 | VARTYPE              | Descrizione                           |
 |----------------------|---------------------------------------|
-| VT \_ vuoto<br/> | Nessun dato dell'evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Nessun dato dell'evento.<br/> <br/> |
 
 
 
@@ -33,9 +33,9 @@ I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop
 
 <dl> <dt>
 
-[Eventi Media Foundation](media-foundation-events.md)
+[Media Foundation eventi](media-foundation-events.md)
 </dt> </dl>
 
  

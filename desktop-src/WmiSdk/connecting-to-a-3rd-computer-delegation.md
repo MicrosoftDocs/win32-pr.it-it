@@ -5,53 +5,53 @@ ms.tgt_platform: multiple
 title: Delega con WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e8a624f3d437d977ff73b3854a59cfd634350e7
-ms.sourcegitcommit: b7a1da2711221fa99072079bf52399cbdfc6bd9d
+ms.openlocfilehash: ca844363816e7800aa8b293b86b1b5fe14a7d145773d209da53ebaba4e119abf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104401832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118109156"
 ---
 # <a name="delegating-with-wmi"></a>Delega con WMI
 
-Quando si esegue uno script in un sistema locale che ottiene dati da un sistema remoto, WMI fornisce le credenziali al provider dei dati nel sistema remoto. È necessario solo un livello di **rappresentazione, perché** è necessario solo un hop di rete. Tuttavia, se lo script si connette a WMI nel sistema remoto e tenta di aprire un file di log in un sistema remoto aggiuntivo, lo script avrà esito negativo a meno che il livello di rappresentazione non sia **delegato**. Il livello di rappresentazione del **delegato** è necessario per qualsiasi operazione che implica più di un hop di rete. Per ulteriori informazioni sulla sicurezza DCOM in WMI, vedere [impostazione della sicurezza del processo dell'applicazione client](setting-client-application-process-security.md). Per ulteriori informazioni su una connessione hop a una rete tra due computer, vedere la pagina [relativa alla connessione a WMI in un computer remoto](connecting-to-wmi-on-a-remote-computer.md).
+Quando si esegue uno script in un sistema locale che ottiene dati da un sistema remoto, WMI fornisce le credenziali al provider dei dati nel sistema remoto. Ciò richiede solo un livello di rappresentazione **impersonate**, perché è necessario un solo hop di rete. Tuttavia, se lo script si connette a WMI nel sistema remoto e tenta di aprire un file di log in un sistema remoto aggiuntivo, lo script ha esito negativo a meno che il livello di rappresentazione non sia **Delegato**. **Il livello** di rappresentazione delegato è richiesto da qualsiasi operazione che coinvolge più hop di rete. Per altre informazioni sulla sicurezza DCOM in WMI, vedere Impostazione della sicurezza del [processo dell'applicazione client](setting-client-application-process-security.md). Per altre informazioni su una connessione hop a una rete tra due computer, vedere [Connessione a WMI in un computer remoto](connecting-to-wmi-on-a-remote-computer.md).
 
-**Per utilizzare la delega per connettersi a un computer tramite un altro computer**
+**Per usare la delega per connettersi a un computer tramite un altro computer**
 
-1.  Abilitare la delega in Active Directory (**Active Directory utenti e computer** nel **Pannello di controllo** **attività amministrative**) sul controller di dominio. L'account nel sistema remoto deve essere contrassegnato come **trusted per la delega** e l'account nel sistema locale non deve essere contrassegnato come l' **account è sensibile e non può essere delegato**. il sistema locale, il sistema remoto e il controller di dominio devono essere membri dello stesso dominio o in domini trusted.
+1.  Abilitare la delega in Active Directory (**Utenti e computer di Active Directory** in **Pannello di controllo** **attività amministrative**) nel controller di dominio. L'account nel sistema remoto  deve essere contrassegnato come Trusted per la delega e l'account nel sistema locale non deve essere contrassegnato come Account sensibile e non può **essere delegato**. il sistema locale, il sistema remoto e il controller di dominio devono essere membri dello stesso dominio o in domini trusted.
 
-    **Nota**  L'uso della delega costituisce un rischio per la sicurezza perché fornisce ai processi esterni al controllo diretto la possibilità di usare le credenziali.
+    **Nota**  L'uso della delega è un rischio per la sicurezza perché offre ai processi esterni al controllo diretto la possibilità di usare le credenziali.
 
-2.  Modificare il codice nel modo seguente per indicare che si desidera utilizzare la delega.
+2.  Modificare il codice nel modo seguente per indicare che si vuole usare la delega.
 
     <dl> <dt>
 
-    <span id="PowerShell"></span><span id="powershell"></span><span id="POWERSHELL"></span>PowerShell
+    <span id="PowerShell"></span><span id="powershell"></span><span id="POWERSHELL"></span>Powershell
     </dt> <dd>
 
-    Impostare il parametro *-Impersonation* sul cmdlet WMI per **delegare**.
+    Impostare il *parametro -Impersonation* nel cmdlet WMI su **Delegate**.
 
     </dd> <dt>
 
-    <span id="VBScript"></span><span id="vbscript"></span><span id="VBSCRIPT"></span>VBScript
+    <span id="VBScript"></span><span id="vbscript"></span><span id="VBSCRIPT"></span>Vbscript
     </dt> <dd>
 
-    Impostare il parametro *ImpersonationLevel* su **delegate** nella chiamata a [SWbemLocator. ConnectServer](swbemlocator-connectserver.md) o a **delegate** nella stringa del [moniker](constructing-a-moniker-string.md) . È anche possibile impostare la rappresentazione in un oggetto [**SWbemSecurity**](swbemsecurity.md).
+    Impostare il *parametro impersonationLevel* su **Delegate** nella chiamata a [SWbemLocator.ConnectServer](swbemlocator-connectserver.md) **o Delegate** nella stringa [del moniker.](constructing-a-moniker-string.md) È anche possibile impostare la rappresentazione in un [**oggetto SWbemSecurity.**](swbemsecurity.md)
 
     </dd> <dt>
 
     <span id="C__"></span><span id="c__"></span>C++
     </dt> <dd>
 
-    Impostare il parametro del livello di rappresentazione sul **\_ delegato RPC C \_ Imp \_ level \_** nella chiamata a [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity) o [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket). Per ulteriori informazioni su quando effettuare queste chiamate, vedere [inizializzazione di com per un'applicazione WMI](initializing-com-for-a-wmi-application.md).
+    Impostare il parametro del livello di rappresentazione su **RPC C IMP LEVEL \_ \_ \_ \_ DELEGATE** nella chiamata a [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity) o [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket). Per altre informazioni su quando effettuare queste chiamate, vedere [Inizializzazione di COM per un'applicazione WMI](initializing-com-for-a-wmi-application.md).
 
-    Per passare l'identità del client ai server COM remoti in C++, impostare il mascheramento nella chiamata a [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket). Per altre informazioni, vedere [mascheramento](../com/cloaking.md).
+    Per passare l'identità client ai server COM remoti in C++, impostare cloaking nella chiamata a [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket). Per altre informazioni, vedere [Cloaking](../com/cloaking.md).
 
     </dd> </dl>
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene illustrata una stringa del moniker che imposta la rappresentazione da **delegare**. Tenere presente che l'autorità deve essere impostata su Kerberos.
+Nell'esempio di codice seguente viene illustrata una stringa del moniker che imposta la rappresentazione su **Delegate**. Tenere presente che l'autorità deve essere impostata su Kerberos.
 
 
 ```vb
@@ -60,7 +60,7 @@ set objWMIServices = Getobject("winmgmts:{impersonationLevel=Delegate,authority=
 
 
 
-Nell'esempio di codice seguente viene illustrato come impostare la rappresentazione su **delegate** (valore 4) utilizzando [**SWbemLocator. ConnectServer**](swbemlocator-connectserver.md).
+Nell'esempio di codice seguente viene illustrato come impostare la rappresentazione su **Delegate** (valore 4) usando [**SWbemLocator.ConnectServer**](swbemlocator-connectserver.md).
 
 
 ```vb

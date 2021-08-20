@@ -1,32 +1,32 @@
 ---
-title: Riferimento Command-Line MIDL
-description: Questa sezione contiene informazioni di riferimento per ogni opzione della riga di comando e opzione di commutazione riconosciuta dal compilatore MIDL di Microsoft RPC.
+title: Informazioni di riferimento Command-Line MIDL
+description: Questa sezione contiene informazioni di riferimento per ogni opzione della riga di comando e opzione riconosciuta dal compilatore MIDL RPC Microsoft.
 ms.assetid: a0e5efb0-a704-4dc5-bd7e-6c98466a2874
 keywords:
-- Microsoft Interface Definition Language MIDL, riferimento
-- riferimento alla riga di comando MIDL
+- Microsoft Interface Definition Language MIDL , informazioni di riferimento
+- informazioni di riferimento sulla riga di comando MIDL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1569e29daf8a2976379576a5f1671f5117e7990c
-ms.sourcegitcommit: 9cf1ed65dfbea1ba118b63d0656f30c3685d8520
+ms.openlocfilehash: d1b7b3182d6a121fb417e5621fe1fb590dba896ebd4d3960b14a99cec3b35af2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117991204"
 ---
-# <a name="midl-command-line-reference"></a>Riferimento Command-Line MIDL
+# <a name="midl-command-line-reference"></a>Informazioni di riferimento Command-Line MIDL
 
-Questa sezione contiene informazioni di riferimento per ogni opzione della riga di comando e opzione di commutazione riconosciuta dal compilatore MIDL di Microsoft RPC. Le voci di cambio sono disposte in ordine alfabetico. La [sintassi della riga di comando MIDL generale](general-midl-command-line-syntax.md) descrive la sintassi della riga di comando generale.
+Questa sezione contiene informazioni di riferimento per ogni opzione della riga di comando e opzione riconosciuta dal compilatore MIDL RPC Microsoft. Le voci switch sono disposte in ordine alfabetico. [Sintassi generale della riga di comando MIDL](general-midl-command-line-syntax.md) descrive la sintassi generale della riga di comando.
 
 <dl>
 
-[Sintassi della riga di comando MIDL generale](general-midl-command-line-syntax.md)  
+[Sintassi generale della riga di comando MIDL](general-midl-command-line-syntax.md)  
 [Comando del file di risposta](the-response-file-command.md)  
 [**/acf**](-acf.md)  
 [**/align**](-align.md)  
 [**/amd64**](-amd64.md)  
-[**configurazione di/app \_**](-app-config.md)  
-[\_compatibilità/backward](-backward-compat.md)  
+[**/app \_ config**](-app-config.md)  
+[/backward \_ compat](-backward-compat.md)  
 [**/c \_ ext**](-c-ext.md)  
 [**/caux**](-caux.md)  
 [**/char**](-char.md)  
@@ -36,77 +36,77 @@ Questa sezione contiene informazioni di riferimento per ogni opzione della riga 
 [**/cpp \_ opt**](-cpp-opt.md)  
 [**/cstruct_out**](-cstruct-out.md) 
  [ **/cstub**](-cstub.md)  
-[**/D**](-d.md)  
+[**/d**](-d.md)  
 [**/dlldata**](-dlldata.md)  
-[**/ENV**](-env.md)  
-[**/Error**](-error.md)  
-[**/Error**](-error.md)  
+[**/env**](-env.md)  
+[**/error**](-error.md)  
+[**/error**](-error.md)  
 [**/h**](-h.md)  
 [**/header**](-header.md)  
-[**/Help (/?)**](-help-.md)  
+[**/help (/?)**](-help-.md)  
 [**/ia64**](-ia64.md)  
-[**/I**](-i.md)  
-[**/IID**](-iid.md)  
-[**/Import**](-import.md)  
-[**/LCID**](-lcid.md)  
+[**/i**](-i.md)  
+[**/iid**](-iid.md)  
+[**/import**](-import.md)  
+[**/lcid**](-lcid.md)  
 [**/mktyplib203**](-mktyplib203.md)  
-[**/MS \_ ext**](-ms-ext.md)  
-[**\_Unione/MS**](-ms-union.md)  
-[**/MSC \_ ver**](-msc-ver.md)  
-[**/New**](-new.md)  
+[**/ms \_ ext**](-ms-ext.md)  
+[**/ms \_ union**](-ms-union.md)  
+[**/msc \_ ver**](-msc-ver.md)  
+[**/new**](-new.md)  
 [**/newtlb**](-newtlb.md)  
-[**/No \_ cpp,/nocpp**](-no-cpp-nocpp.md)  
-[**/No \_ default \_ EPV**](-no-default-epv.md)  
-[**/No \_ def \_ Idir**](-no-def-idir.md)  
-[**/No \_ Format \_ opz**](-no-format-opt.md)  
-[**/No \_ affidabile**](-no-robust.md)  
-[**avviso di/no \_**](-no-warn.md)  
+[**/no \_ cpp, /nocpp**](-no-cpp-nocpp.md)  
+[**/no \_ \_ epv predefinito**](-no-default-epv.md)  
+[**/no \_ def \_ idir**](-no-def-idir.md)  
+[**/no \_ format \_ opt**](-no-format-opt.md)  
+[**/no \_ robust**](-no-robust.md)  
+[**/no \_ warn**](-no-warn.md)  
 [**/nologo**](-nologo.md)  
 [**/notlb**](-notlb.md)  
 [**/o**](-o.md)  
-[**/OI**](-oi.md)  
-[**/Old**](-old.md)  
+[**/oi**](-oi.md)  
+[**/old**](-old.md)  
 [**/oldtlb**](-oldtlb.md)  
 [**/oldnames**](-oldnames.md)  
-[**/OS**](-os.md)  
+[**/Os**](-os.md)  
 [**/osf**](-osf.md)  
 [**/out**](-out.md)  
-[**/Pack**](-pack.md)  
+[**/pack**](-pack.md)  
 [**/prefix**](-prefix.md)  
 [**/protocol**](-protocol.md)  
 [**/proxy**](-proxy.md)  
-[**/Robust**](-robust.md)  
+[**/robust**](-robust.md)  
 [**/rpcss**](-rpcss.md)  
 [**/sal**](-sal.md)  
-[**/SAL \_ locale**](-sal-local.md)  
-[**/saux**](-saux.md)  
+[**/sal \_ local**](-sal-local.md)  
+[**/evax**](-saux.md)  
 [**/savePP**](-savepp.md)  
 [**/sstub**](-sstub.md)  
-[**\_controllo/Syntax**](-syntax-check.md)  
+[**/syntax \_ check**](-syntax-check.md)  
 [**/<system>**](-system-.md)  
 [**/target**](-target.md)  
-[**/TLB**](-tlb.md)  
-[**/U**](-u.md)  
-[**\_EPV/utilizza**](-use-epv.md)  
-[**\_timbro/Version**](-version-stamp.md)  
-[**/W**](-w.md)  
+[**/tlb**](-tlb.md)  
+[**/u**](-u.md)  
+[**/use \_ epv**](-use-epv.md)  
+[**/version \_ stamp**](-version-stamp.md)  
+[**/w**](-w.md)  
 [**/warn**](-warn.md)  
 [**/win32**](-win32.md)  
 [**/win64**](-win64.md)  
-[**/WX**](-wx.md)  
-[**/ZP**](-zp.md)  
-[**/ZS**](-zs.md)  
+[**/wx**](-wx.md)  
+[**/Zp**](-zp.md)  
+[**/Zs**](-zs.md)  
 </dl>
 
-Il compilatore MIDL può generare codice per diverse piattaforme e versioni di sistema. Per ulteriori informazioni sulle opzioni suggerite e su come generare codice ottimizzato per una determinata versione, vedere l'opzione [**/target**](-target.md) .
+Il compilatore MIDL può generare codice per piattaforme e versioni di sistema diverse. Consultare [**l'opzione /target**](-target.md) per altre informazioni sulle opzioni suggerite e su come generare codice ottimizzato per una determinata versione.
 
-Si noti che il segno meno (–) può essere sostituito con la barra (/) in tutte le opzioni della riga di comando MIDL che iniziano con una barra (/). Nell'esempio seguente viene illustrata l'equivalenza quando si richiama il compilatore MIDL.
+Si noti che il segno meno (-) può essere sostituito dalla barra (/) in tutte le opzioni della riga di comando MIDL che iniziano con una barra (/). Nell'esempio seguente viene illustrata l'equivalenza quando si richiama il compilatore MIDL.
 
 ## <a name="examples"></a>Esempio
 
-**MIDL/ACF My \_ ACF. ACF** *nomefile * * *. idl**
+**midl /acf my \_ acf.acf** *filename***.idl**
 
-**MIDL-ACF nome file ACF \_ . ACF** ** * *. idl**
+**midl -acf my \_ acf.acf** *filename***.idl**
 
  
 

@@ -1,21 +1,21 @@
 ---
-description: impostazioni locali \_ IINTLCURRDIGITS
+description: IMPOSTAZIONI \_ LOCALI IINTLCURRDIGITS
 ms.assetid: 37d2a352-fe8a-4705-8af9-2d0927b43afe
 title: LOCALE_IINTLCURRDIGITS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49a6a27793200df6a7f166f1737073f25f472686
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c1e1fc440a4c2740871ac08ea9dc69ef64beda17b3ce78e65456794574080e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117809585"
 ---
-# <a name="locale_iintlcurrdigits"></a>impostazioni locali \_ IINTLCURRDIGITS
+# <a name="locale_iintlcurrdigits"></a>IMPOSTAZIONI \_ LOCALI IINTLCURRDIGITS
 
-\[\_Il IINTLCURRDIGITS delle impostazioni locali non è supportato e può essere modificato o non disponibile in futuro. Usare invece [ \_ ICURRDIGITS delle impostazioni locali](locale-icurrdigits.md).\]
+\[LOCALE \_ IINTLCURRDIGITS non è supportato e potrebbe essere modificato o non disponibile in futuro. Usare invece [LOCALE \_ ICURRDIGITS](locale-icurrdigits.md).\]
 
-Numero di cifre frazionarie per il formato monetario internazionale. Il numero massimo di caratteri consentiti per questa stringa è tre, incluso un carattere di terminazione null. Il numero di cifre frazionarie per il formato monetario internazionale di dollari statunitensi è ad esempio 2, come in $345,25.
+Numero di cifre frazionarie per il formato monetario internazionale. Il numero massimo di caratteri consentiti per questa stringa è tre, incluso un carattere Null di terminazione. Ad esempio, il numero di cifre frazionarie per il formato monetario internazionale dei dollari statunitensi è 2, come in $345,25.
 
  
 

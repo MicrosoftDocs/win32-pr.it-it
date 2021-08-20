@@ -1,7 +1,7 @@
 ---
-description: La funzione GetNPPEtypeSapFilter Recupera il filtro ETYPE/SAP da un BLOB specificato.
+description: La funzione GetNPPEtypeSapFilter recupera il filtro Etype/Sap da un BLOB specificato.
 ms.assetid: c4891eff-ab2d-43ff-8d2b-3aa299570c0a
-title: Funzione GetNPPEtypeSapFilter (Netmon. h)
+title: Funzione GetNPPEtypeSapFilter (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 5359332d96fb85343300c5def12070c812bd99d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 593030c3b53e7e11b20b9fe1497a3989b2ff68650d3d2df73f52e6491529d58e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117982305"
 ---
-# <a name="getnppetypesapfilter-function"></a>GetNPPEtypeSapFilter (funzione)
+# <a name="getnppetypesapfilter-function"></a>Funzione GetNPPEtypeSapFilter
 
-La funzione **GetNPPEtypeSapFilter** Recupera il filtro ETYPE/SAP da un blob specificato.
+La **funzione GetNPPEtypeSapFilter** recupera il filtro Etype/Sap da un BLOB specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,64 +45,64 @@ DWORD GetNPPEtypeSapFilter(
 
 <dl> <dt>
 
-*hBlob* \[ in\]
+*hBlob* \[ Pollici\]
 </dt> <dd>
 
 Handle per il BLOB.
 
 </dd> <dt>
 
-*pnSaps* \[ out\]
+*pnSaps* \[ Cambio\]
 </dt> <dd>
 
-Puntatore al numero di protocolli restituito nella tabella SAP.
+Puntatore al numero restituito di protocolli nella tabella SAP.
 
 </dd> <dt>
 
-*pnEtypes* \[ out\]
+*pnEtypes* \[ Cambio\]
 </dt> <dd>
 
-Puntatore al numero restituito di ETYPE del nella tabella etype.
+Puntatore al numero restituito di Etypes nella tabella Etype.
 
 </dd> <dt>
 
-*ppSapTable* \[ out\]
+*ppSapTable* \[ Cambio\]
 </dt> <dd>
 
 Puntatore alla tabella SAP restituita.
 
 </dd> <dt>
 
-*ppEtypeTable* \[ out\]
+*ppEtypeTable* \[ Cambio\]
 </dt> <dd>
 
-Puntatore alla tabella ETYPE restituita.
+Puntatore alla tabella Etype restituita.
 
 </dd> <dt>
 
-*pFilterFlags* \[ out\]
+*pFilterFlags* \[ Cambio\]
 </dt> <dd>
 
 Puntatore ai flag di filtro restituiti.
 
 </dd> <dt>
 
-*hErrorBlob* \[ out\]
+*hErrorBlob* \[ Cambio\]
 </dt> <dd>
 
-Handle per un BLOB di errore, che specifica la posizione nel BLOB originale in cui si è verificato l'errore (se presente).
+Handle a un BLOB di errore, che specifica il percorso nel BLOB originale in cui si è verificato l'errore (se presente).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è NMERR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se la funzione ha esito negativo, il valore restituito è un valore NMERR che indica l'errore.
 
 ## <a name="remarks"></a>Commenti
 
-Le informazioni su ETYPE/SAP sono archiviate nella categoria **config** della sezione del **proprietario** di NPP.
+Le informazioni Etype/Sap vengono archiviate nella **categoria Config (Configurazione)** della sezione NPP **Owner (Proprietario** NPP).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -112,8 +112,8 @@ Le informazioni su ETYPE/SAP sono archiviate nella categoria **config** della se
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

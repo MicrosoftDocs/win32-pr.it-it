@@ -1,8 +1,8 @@
 ---
-description: Rappresenta un evento di creazione della classe, ovvero un tipo di evento intrinseco generato quando una nuova classe viene aggiunta allo spazio dei nomi.
+description: Rappresenta un evento di creazione della classe, ovvero un tipo di evento intrinseco generato quando viene aggiunta una nuova classe allo spazio dei nomi .
 ms.assetid: a946a8eb-498c-4104-b80f-e520b0e62e36
 ms.tgt_platform: multiple
-title: Classe __ClassCreationEvent
+title: __ClassCreationEvent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 18994ee7067e44a9199de9b62f7ff278a8bece00
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e420d9dad948b9bd8ebd0c6670b850b3a2f9d5f578ca36a25a986081a1c454a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118110698"
 ---
 # <a name="__classcreationevent-class"></a>\_\_Classe ClassCreationEvent
 
-La classe di sistema **\_ \_ ClassCreationEvent** rappresenta un evento di creazione della classe, ovvero un tipo di [evento intrinseco](determining-the-type-of-event-to-receive.md) generato quando una nuova classe viene aggiunta allo spazio dei nomi.
+La **\_ \_ classe di sistema ClassCreationEvent** rappresenta un evento [](determining-the-type-of-event-to-receive.md) di creazione della classe, ovvero un tipo di evento intrinseco generato quando viene aggiunta una nuova classe allo spazio dei nomi .
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,60 +43,60 @@ class __ClassCreationEvent : __ClassOperationEvent
 
 ## <a name="members"></a>Members
 
-La classe **\_ \_ ClassCreationEvent** dispone di questi tipi di membri:
+La **\_ \_ classe ClassCreationEvent** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **\_ \_ ClassCreationEvent** dispone di queste proprietà.
+La **\_ \_ classe ClassCreationEvent** ha queste proprietà.
 
 <dl> <dt>
 
-**descrittore di sicurezza \_**
+**DESCRITTORE \_ DI SICUREZZA**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrittore utilizzato dal provider di eventi per determinare gli utenti che possono ricevere l'evento. Questa proprietà viene ereditata dall' [**\_ \_ evento**](--event.md).
+Descrittore utilizzato dal provider di eventi per determinare quali utenti possono ricevere l'evento. Questa proprietà viene ereditata [**\_ \_ dall'evento**](--event.md).
 
 </dd> <dt>
 
-**TargetClass**
+**Classe di destinazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Copia della classe appena creata segnalata dall'evento di creazione della classe. Questa proprietà viene ereditata da [**\_ \_ ClassOperationEvent**](--classoperationevent.md).
+Copia della classe appena creata segnalata dall'evento di creazione della classe. Questa proprietà viene ereditata da [**\_ \_ ClassOperationEvent.**](--classoperationevent.md)
 
 </dd> <dt>
 
-**ORA di \_ creazione**
+**ORA \_ DI CREAZIONE**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore univoco che indica l'ora in cui è stato generato l'evento. Si tratta di un valore a 64 bit che rappresenta il numero di intervalli di 100-nanosecondi dopo il 1 ° gennaio 1601. Le informazioni sono nel formato UTC (Universal Time Coordinates). Questa proprietà viene ereditata dall' [**\_ \_ evento**](--event.md).
+Valore univoco che indica l'ora in cui è stato generato l'evento. Si tratta di un valore a 64 bit che rappresenta il numero di intervalli di 100 nanosecondi dopo il 1° gennaio 1601. Le informazioni sono nel formato UTC (Universal Time Coordinate). Questa proprietà viene ereditata [**\_ \_ dall'evento**](--event.md).
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **\_ \_ ClassCreationEvent** deriva da [**\_ \_ ClassOperationEvent**](--classoperationevent.md).
+La **\_ \_ classe ClassCreationEvent** è derivata da [**\_ \_ ClassOperationEvent.**](--classoperationevent.md)
 
 ## <a name="requirements"></a>Requisiti
 

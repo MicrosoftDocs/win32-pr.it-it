@@ -1,7 +1,7 @@
 ---
 description: Specifica i byte crittografati in una superficie video protetta.
 ms.assetid: 076f4f00-e86b-47e2-80dd-4d7434200138
-title: Struttura D3DENCRYPTED_BLOCK_INFO (D3d9types. h)
+title: D3DENCRYPTED_BLOCK_INFO struttura (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 21864dcc41ce86f139361af4357810137acf7f06
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94027dac3956376e32ad10cf7c1b600d9c65f3918e2781ab9da96d4d3891f43b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117879725"
 ---
-# <a name="d3dencrypted_block_info-structure"></a>Struttura delle informazioni sul \_ blocco D3DENCRYPTED \_
+# <a name="d3dencrypted_block_info-structure"></a>Struttura D3DENCRYPTED \_ BLOCK \_ INFO
 
 Specifica i byte crittografati in una superficie video protetta.
 
@@ -51,7 +51,7 @@ Numero di byte crittografati all'inizio del buffer.
 **NumBytesInSkipPattern**
 </dt> <dd>
 
-Il numero di byte che vengono ignorati dopo i primi **NumEncryptedBytesAtBeginning** byte e quindi dopo ogni blocco di **NumBytesInEncryptPattern** byte. I byte ignorati non sono crittografati.
+Numero di byte ignorati dopo i primi **byte NumEncryptedBytesAtBeginning** e quindi dopo ogni blocco di **byte NumBytesInEncryptPattern.** I byte ignorati non vengono crittografati.
 
 </dd> <dt>
 
@@ -68,9 +68,9 @@ Numero di byte crittografati dopo ogni blocco di byte ignorati.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>D3d9types. h (include d3d9. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                 |
+| Intestazione<br/>                   | <dl> <dt>D3d9types.h (includere D3d9.h)</dt> </dl> |
 
 
 

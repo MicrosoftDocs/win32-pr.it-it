@@ -4,12 +4,12 @@ ms.assetid: 05924c7d-e074-4835-b42c-53c77dc1bbb5
 title: PageBlendColorSpaceICCProfileURI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50db89757737ff5aa6a1358af418ee33809b960e
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 746a71a9b244b0b2fc9e533a6209de4170a369a7551b31454590eab3013594cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117686223"
 ---
 # <a name="pageblendcolorspaceiccprofileuri"></a>PageBlendColorSpaceICCProfileURI
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio di ICM_COMPRESS_GET_SIZE (VFW. h)
-description: Il \_ messaggio MCI compress \_ get \_ size richiede che il driver di compressione video fornisca la dimensione massima di un frame di dati quando viene compresso nel formato di output specificato. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro ICCompressGetSize.
+title: ICM_COMPRESS_GET_SIZE messaggio (Vfw.h)
+description: Il ICM messaggio COMPRESS GET SIZE richiede al driver di compressione video di specificare le dimensioni massime di un frame di dati quando vengono compressi \_ nel formato di output \_ \_ specificato. È possibile inviare questo messaggio in modo esplicito o tramite la macro ICCompressGetSize.
 ms.assetid: 6910e588-e60f-43b1-8fa6-113c2ec32a53
 keywords:
-- ICM_COMPRESS_GET_SIZE messaggi multimediali di Windows
+- ICM_COMPRESS_GET_SIZE messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38b0b61c78cc684de27d1e9a2747498e30eb3fe9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0ac84919b81eda747263877a79e8ce6fe6ab3bdfc50d37e77ce2026288fbe321
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117988174"
 ---
-# <a name="icm_compress_get_size-message"></a>\_ \_ Messaggio dimensioni compressione Get MCI \_
+# <a name="icm_compress_get_size-message"></a>\_ICM MESSAGGIO COMPRESS \_ GET \_ SIZE
 
-Il messaggio **MCI \_ compress \_ get \_ size** richiede che il driver di compressione video fornisca la dimensione massima di un frame di dati quando viene compresso nel formato di output specificato. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**ICCompressGetSize**](/windows/desktop/api/Vfw/nf-vfw-iccompressgetsize) .
+Il **ICM \_ messaggio COMPRESS GET \_ \_ SIZE** richiede al driver di compressione video di specificare le dimensioni massime di un frame di dati quando vengono compressi nel formato di output specificato. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**ICCompressGetSize.**](/windows/desktop/api/Vfw/nf-vfw-iccompressgetsize)
 
 
 ```C++
@@ -41,26 +41,26 @@ lParam = (DWORD_PTR) (LPVOID) lpbiOutput;
 <span id="lpbiInput"></span><span id="lpbiinput"></span><span id="LPBIINPUT"></span>*lpbiInput*
 </dt> <dd>
 
-Puntatore a una struttura [**BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) contenente il formato di input.
+Puntatore a una [**struttura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) contenente il formato di input.
 
 </dd> <dt>
 
 <span id="lpbiOutput"></span><span id="lpbioutput"></span><span id="LPBIOUTPUT"></span>*lpbiOutput*
 </dt> <dd>
 
-Puntatore a una struttura [**BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) contenente il formato di output.
+Puntatore a una [**struttura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) contenente il formato di output.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il numero massimo di byte che può essere occupato da un singolo frame compresso.
+Restituisce il numero massimo di byte che un singolo frame compresso può occupare.
 
 ## <a name="remarks"></a>Commenti
 
-In genere, le applicazioni inviano questo messaggio per determinare la dimensione di un buffer da allocare per il frame compresso.
+In genere, le applicazioni inviano questo messaggio per determinare le dimensioni di un buffer da allocare per il frame compresso.
 
-Il driver deve calcolare la dimensione del frame possibile più grande in base ai formati di input e di output.
+Il driver deve calcolare le dimensioni del frame più grande possibile in base ai formati di input e output.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,7 +70,7 @@ Il driver deve calcolare la dimensione del frame possibile più grande in base a
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

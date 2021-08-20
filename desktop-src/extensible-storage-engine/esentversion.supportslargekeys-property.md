@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà EsentVersion. SupportsLargeKeys'
-title: Proprietà EsentVersion. SupportsLargeKeys
+description: Altre informazioni sulla proprietà EsentVersion.SupportsLargeKeys
+title: Proprietà EsentVersion.SupportsLargeKeys
 TOCTitle: 'SupportsLargeKeys property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.EsentVersion.SupportsLargeKeys
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentversion.supportslargekeys(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 43ee88b7c0e190d9c717c087deeb5fc4556e6575
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19eb0afe6cdf1cc4dcdbc2f29706001b037fb5b9f3560c68f54e93186673111c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117706557"
 ---
-# <a name="esentversionsupportslargekeys-property"></a>Proprietà EsentVersion. SupportsLargeKeys
+# <a name="esentversionsupportslargekeys-property"></a>Proprietà EsentVersion.SupportsLargeKeys
 
-Ottiene un valore che indica se \> sono supportate le chiavi Large (255 byte). È possibile specificare le dimensioni della chiave per un indice nell'oggetto [JET_INDEXCREATE](./jet-indexcreate-class.md) .
+Ottiene un valore che indica se sono supportate chiavi di grandi dimensioni \> (255 byte). Le dimensioni della chiave per un indice possono essere specificate [nell'oggetto](./jet-indexcreate-class.md) JET_INDEXCREATE.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,7 +57,7 @@ public static bool SupportsLargeKeys { get; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -67,4 +67,4 @@ Tipo: [System. Boolean](/dotnet/api/system.boolean)
 
 [Membri di EsentVersion](./esentversion-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

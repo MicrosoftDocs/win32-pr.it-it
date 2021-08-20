@@ -1,7 +1,7 @@
 ---
 description: La funzione GetBitmapSize calcola il numero di byte richiesti da una bitmap indipendente dal dispositivo (DIB). Questa funzione chiama semplicemente la macro DIBSIZE.
 ms.assetid: ce23cdf2-9804-4d2e-b9ef-16e54b2d571e
-title: Funzione GetBitmapSize (Wxutil. h)
+title: Funzione GetBitmapSize (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 004201cf3ff839aa1301dcfff0240a73a9128e50
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5d736e0fa0766f1776fc53c39237242017de988050a469f4f16102d124d6f5f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328555"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118000263"
 ---
-# <a name="getbitmapsize-function"></a>GetBitmapSize (funzione)
+# <a name="getbitmapsize-function"></a>Funzione GetBitmapSize
 
-La `GetBitmapSize` funzione calcola il numero di byte richiesti da una bitmap indipendente dal dispositivo (DIB). Questa funzione chiama semplicemente la macro [**DIBSIZE**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-dibsize) .
+La `GetBitmapSize` funzione calcola il numero di byte richiesti da una bitmap indipendente dal dispositivo (DIB). Questa funzione chiama semplicemente la macro [**DIBSIZE.**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-dibsize)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ DWORD GetBitmapSize(
 *pHeader* 
 </dt> <dd>
 
-Puntatore a una struttura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) .
+Puntatore a una [**struttura BITMAPINFOHEADER.**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader)
 
 </dd> </dl>
 
@@ -59,8 +59,8 @@ Restituisce le dimensioni in byte.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Restituisce le dimensioni in byte.
 
 <dl> <dt>
 
-[Funzioni video e immagine](video-and-image-functions.md)
+[Funzioni per video e immagini](video-and-image-functions.md)
 </dt> </dl>
 
  

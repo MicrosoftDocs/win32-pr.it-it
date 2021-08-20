@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Metodo Transaction. Dispose'
-title: Transaction. Dispose (metodo)
+description: Altre informazioni sul metodo Transaction.Dispose
+title: Metodo Transaction.Dispose
 TOCTitle: 'Dispose method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.Transaction.Dispose
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.transaction.dispose(v=EXCHG.10)
@@ -14,17 +14,17 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: a4e99ef82dc7792be764b5946485e05658d2c927
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: faf2716ff77afcf7b372d1970ef61ec3d53c181260dff694da50a707e03a3d01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104565756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117890433"
 ---
-# <a name="transactiondispose-method"></a>Transaction. Dispose (metodo)
+# <a name="transactiondispose-method"></a>Metodo Transaction.Dispose
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
 ## <a name="overload-list"></a>Elenco di overload
 
@@ -39,13 +39,13 @@ Includi membri ereditati
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="dn350553(v=exchg.10).md">Dispose ()</a></td>
-<td>Eliminare questo oggetto, rilasciando la risorsa ESENT sottostante. Ereditato da <a href="dn319890(v=exchg.10).md">EsentResource</a>.</td>
+<td><a href="dn350553(v=exchg.10).md">Dispose()</a></td>
+<td>Eliminare questo oggetto, rilasciando la risorsa Esent sottostante. Ereditato da <a href="dn319890(v=exchg.10).md">EsentResource.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="dn350543(v=exchg.10).md">Dispose (valore booleano)</a></td>
-<td>Chiamato da Dispose e dal finalizzatore. Ereditato da <a href="dn319890(v=exchg.10).md">EsentResource</a>.</td>
+<td><a href="dn350543(v=exchg.10).md">Dispose(Boolean)</a></td>
+<td>Chiamato da Dispose e dal finalizzatore. Ereditato da <a href="dn319890(v=exchg.10).md">EsentResource.</a></td>
 </tr>
 </tbody>
 </table>
@@ -59,6 +59,6 @@ Inizio
 
 [Transaction (classe)](./transaction-class.md)
 
-[Membri transazione](./transaction-members.md)
+[Membri della transazione](./transaction-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

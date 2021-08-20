@@ -14,12 +14,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: f923f26e1371d11e27bfd58bcb69c053bfb5f1a3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3cb58c7262e46dde761d1494bc26b5a5701489f7e5aed167e1edf85bd9789f94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117813803"
 ---
 # <a name="udpip_fail-class"></a>Classe UdpIp \_ Fail
 
@@ -113,8 +113,8 @@ Identifica il protocollo. I possibili valori sono i seguenti:
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>       |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

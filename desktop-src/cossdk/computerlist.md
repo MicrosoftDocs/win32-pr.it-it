@@ -1,7 +1,7 @@
 ---
-description: Contiene un elenco dei computer nella cartella computer dello strumento di amministrazione Servizi componenti. Contiene un oggetto per ogni computer.
+description: Contiene un elenco dei computer nella cartella Computer dello strumento di amministrazione di Servizi componenti. Contiene un oggetto per ogni computer.
 ms.assetid: 56e32b47-a9f5-4888-b727-71ad0499da00
-title: Raccolta di computer
+title: Raccolta ComputerList
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,29 +12,29 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 379e5e07a86d06961de3f8f3936a260451bf43ae
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c798e65ef797965db4f8681898d31379717a329f6f097ea0282b5d4b6c1be300
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117917012"
 ---
-# <a name="computerlist-collection"></a>Raccolta di computer
+# <a name="computerlist-collection"></a>Raccolta ComputerList
 
-Contiene un elenco dei computer nella cartella **computer** dello strumento di amministrazione Servizi componenti. Contiene un oggetto per ogni computer.
+Contiene un elenco dei computer nella **cartella Computer** dello strumento di amministrazione di Servizi componenti. Contiene un oggetto per ogni computer.
 
-Questa raccolta supporta i metodi [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Questa raccolta supporta i [**metodi Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**e Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Membri
 
-La raccolta **nomecomputer** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
+La **raccolta ComputerList** eredita dall'interfaccia [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
 
 ## <a name="related-collections"></a>Raccolte correlate
 
 È possibile passare da questa raccolta a una delle raccolte seguenti:
 
--   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Errorinfo**](errorinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
 È possibile passare a questa raccolta dalle raccolte seguenti:
@@ -43,7 +43,7 @@ La raccolta **nomecomputer** eredita dall'interfaccia [**IUnknown**](/windows/de
 
 ## <a name="properties"></a>Proprietà
 
-Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](comadmincatalogobject.md) all'interno della raccolta:
+Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all'interno**](comadmincatalogobject.md) della raccolta:
 
 -   [Nome](#name)
 
@@ -53,7 +53,7 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 
 | Voce | Valore |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Nome del computer. Gli spazi aggiuntivi all'inizio e alla fine della stringa vengono rimossi. Questa proprietà viene restituita quando il metodo della proprietà [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
+| Descrizione    | Nome del computer. Gli spazi aggiuntivi all'inizio e alla fine della stringa vengono privati. Questa proprietà viene restituita quando il metodo della proprietà [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
 | Access         | WriteOnce                                                                                                                                                                                                                                                              |
 | Type           | string                                                                                                                                                                                                                                                                 |
 | Predefinito        | "Nuovo computer"                                                                                                                                                                                                                                                         |

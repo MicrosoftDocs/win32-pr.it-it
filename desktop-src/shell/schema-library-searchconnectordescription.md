@@ -1,19 +1,19 @@
 ---
-description: L' <searchConnectorDescription> elemento è l'elemento contenitore di primo livello di una definizione del connettore di ricerca.
+description: <searchConnectorDescription>L'elemento è l'elemento contenitore di primo livello di una definizione del connettore di ricerca.
 ms.assetid: 383CAA20-56CA-4bdc-AC79-E57A1D59785C
 title: Elemento searchConnectorDescription (schema della libreria)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: faa6c213d43a648ebea51b58b4c3103a0ee42f13
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 91be0345ae2770e28437f13cdc754a1855f050210b85a03a4eb5c6c3726af98b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117858250"
 ---
 # <a name="searchconnectordescription-element-library-schema"></a>Elemento searchConnectorDescription (schema della libreria)
 
-L' <searchConnectorDescription> elemento è l'elemento contenitore di primo livello di una definizione del connettore di ricerca. L' <searchConnectorDescription> elemento è un'estensione del <searchConnectorDescriptionType> tipo di elemento associato ai connettori di ricerca federata di Windows; tuttavia, non è possibile includere i connettori di ricerca per la ricerca federata di Windows o i gestori di protocollo in una raccolta.
+<searchConnectorDescription>L'elemento è l'elemento contenitore di primo livello di una definizione del connettore di ricerca. L'elemento è un'estensione del tipo di elemento associato ai connettori di ricerca federata Windows. Tuttavia, non è possibile includere connettori di ricerca per Windows Ricerca federata o gestori di protocollo in una <searchConnectorDescription> <searchConnectorDescriptionType> libreria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -97,13 +97,13 @@ L' <searchConnectorDescription> elemento è l'elemento contenitore di primo live
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-Vedere la documentazione dello schema in [Windows Search](/previous-versions/bb268030(v=msdn.10))
+Vedere la documentazione dello schema in [Windows Ricerca](/previous-versions/bb268030(v=msdn.10))
 
 
 
 | Elemento padre                                                                                               | Elementi figlio                        |
 |--------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| [Elemento searchConnectorDescriptionList (schema della libreria)](schema-library-searchconnectordescriptionlist.md) | <isSearchOnlyI. tem>             |
+| [Elemento searchConnectorDescriptionList (schema di libreria)](schema-library-searchconnectordescriptionlist.md) | <isSearchOnlyI.tem>             |
 |                                                                                                              | <description>                   |
 |                                                                                                              | <iconReference>                 |
 |                                                                                                              | <imageLink>                     |
@@ -140,16 +140,16 @@ Vedere la documentazione dello schema in [Windows Search](/previous-versions/bb2
 
 ## <a name="remarks"></a>Commenti
 
-L' <searchConnectorDescription> elemento di una libreria utilizza la stessa definizione dello schema di <searchConnectorDescription> per la ricerca federata di Windows. Sebbene usino gli stessi schemi, i connettori di ricerca per la ricerca federata di Windows non possono essere inclusi in una libreria.
+L'elemento di una libreria usa la stessa definizione dello schema di <searchConnectorDescription> <searchConnectorDescription> per Windows ricerca federata. Anche se usano gli stessi schemi, i connettori di Windows ricerca federata non possono essere inclusi in una libreria.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Schema Descrizione libreria](library-schema-entry.md)
+[Schema di descrizione della libreria](library-schema-entry.md)
 </dt> <dt>
 
-[Cerca nello schema di descrizione del connettore](../search/search-sconn-desc-schema-entry.md)
+[Schema di descrizione del connettore di ricerca](../search/search-sconn-desc-schema-entry.md)
 </dt> </dl>
 
  

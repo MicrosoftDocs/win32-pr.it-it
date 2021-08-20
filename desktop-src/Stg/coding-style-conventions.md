@@ -1,19 +1,19 @@
 ---
 title: Convenzioni di stile di codifica
-description: Le convenzioni di stile del codice vengono usate in questa serie di esempi per facilitare la chiarezza e la coerenza.
+description: In questa serie di esempio vengono usate convenzioni di stile di codifica per facilitare la chiarezza e la coerenza.
 ms.assetid: d5e81a52-79f6-4561-891c-05fee125a1b0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e28e65e19d69f060a5f85d86976c4bd3694f7611
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: fd6f45fcff7e8f5f8e6f152ec1449bdf12170028537fd4b579d25479572dc5ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103734962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117962441"
 ---
 # <a name="coding-style-conventions"></a>Convenzioni di stile di codifica
 
-Le convenzioni di stile del codice vengono usate in questa serie di esempi per facilitare la chiarezza e la coerenza. Vengono utilizzate le convenzioni di notazione "ungherese". Questi sono diventati una procedura di codifica comune nella programmazione Win32. Includono la notazione del prefisso variabile che assegna ai nomi delle variabili un suggerimento del tipo della variabile.
+In questa serie di esempio vengono usate convenzioni di stile di codifica per facilitare la chiarezza e la coerenza. Vengono usate le convenzioni di notazione "ungheresi". Queste sono diventate una pratica di codifica comune nella programmazione Win32. Includono notazioni di prefisso di variabile che forniscono ai nomi delle variabili un suggerimento del tipo della variabile.
 
 Nella tabella seguente sono elencati i prefissi comuni.
 
@@ -24,27 +24,27 @@ Nella tabella seguente sono elencati i prefissi comuni.
 | a      | Array                               |
 | b      | BOOL (int)                          |
 | c      | Char                                |
-| CB     | Conteggio di byte                      |
-| CR     | Valore riferimento colore               |
-| CX     | Conteggio di x (Short)                  |
+| Cb     | Conteggio dei byte                      |
+| Cr     | Valore di riferimento del colore               |
+| Cx     | Conteggio di x (short)                  |
 | dw     | DWORD (unsigned long)               |
 | f      | Flag (in genere più valori di bit) |
 | fn     | Funzione                            |
-| g\_    | Globale                              |
+| G\_    | Globale                              |
 | h      | Handle                              |
-| i      | Integer                             |
+| i      | Intero                             |
 | l      | long                                |
-| lp     | Puntatore lungo                        |
+| lp     | Puntatore long                        |
 | m\_    | Membro dati di una classe              |
-| n      | Int breve                           |
+| n      | Short int                           |
 | p      | Puntatore                             |
 | s      | string                              |
 | sz     | Stringa con terminazione zero              |
-| tm     | Metrica testo                         |
-| u      | Int senza segno                        |
-| ul     | Long senza segno (ULONG)               |
+| tm     | Metrica del testo                         |
+| u      | Unsigned int                        |
+| ul     | Unsigned long (ULONG)               |
 | w      | WORD (unsigned short)               |
-| x, y    | coordinate x, y (Short)            |
+| x,y    | Coordinate x, y (short)            |
 
 
 
@@ -54,34 +54,34 @@ Questi vengono spesso combinati, come nell'esempio seguente.
 
 
 
-| Combinazione di prefisso | Descrizione                                             |
+| Combinazione di prefissi | Descrizione                                             |
 |--------------------|---------------------------------------------------------|
 | pszMyString        | Puntatore a una stringa.                                  |
-| \_pszMyString m     | Puntatore a una stringa che rappresenta un membro dati di una classe. |
+| m \_ pszMyString     | Puntatore a una stringa che è un membro dati di una classe. |
 
 
 
  
 
-Le altre convenzioni sono elencate nella tabella seguente.
+Nella tabella seguente sono elencate altre convenzioni.
 
 
 
 | Convenzione       | Descrizione                                              |
 |------------------|----------------------------------------------------------|
-| CMyClass         | Prefisso "C" per i nomi delle classi C++.                          |
-| COMyObjectClass  | Prefisso "CO" per i nomi delle classi di oggetti COM.                  |
-| CFMyClassFactory | Prefisso "CF" per i nomi di class factory COM.                 |
-| IMyInterface     | Prefisso "I" per i nomi delle classi di interfacce COM.                |
-| CImpIMyInterface | Prefisso ' CImpI ' per le classi di implementazione dell'interfaccia COM. |
+| CMyClass         | Prefisso 'C' per i nomi di classe C++.                          |
+| COMyObjectClass  | Prefisso 'CO' per i nomi delle classi di oggetti COM.                  |
+| CFMyClassFactory | Prefisso 'CF' per i nomi class factory COM.                 |
+| Interfaccia IMyInterface     | Prefisso 'I' per i nomi delle classi di interfaccia COM.                |
+| CImpIMyInterface | Prefisso 'CImpI' per le classi di implementazione dell'interfaccia COM. |
 
 
 
  
 
-Alcune convenzioni coerenti per i blocchi di intestazione dei commenti vengono usate in questa serie di esempio come indicato di seguito.
+In questa serie di esempio vengono usate alcune convenzioni coerenti per i blocchi di intestazione dei commenti, come indicato di seguito.
 
-## <a name="file-header"></a>Intestazione del file
+## <a name="file-header"></a>Intestazione file
 
 ``` syntax
 /*+===================================================================
@@ -103,7 +103,7 @@ Alcune convenzioni coerenti per i blocchi di intestazione dei commenti vengono u
 ===================================================================+*/
 ```
 
-## <a name="plain-comment-block"></a>Blocco di commento semplice
+## <a name="plain-comment-block"></a>Blocco di commenti normale
 
 ``` syntax
 /*--------------------------------------------------------------------
@@ -112,7 +112,7 @@ Alcune convenzioni coerenti per i blocchi di intestazione dei commenti vengono u
 --------------------------------------------------------------------*/
 ```
 
-## <a name="class-declaration-header"></a>Intestazione della dichiarazione di classe
+## <a name="class-declaration-header"></a>Intestazione dichiarazione di classe
 
 ``` syntax
 /*C+C+++C+++C+++C+++C+++C+++C+++C+++C+++C+++C+++C+++C+++C+++C+++C+++C
@@ -132,7 +132,7 @@ Alcune convenzioni coerenti per i blocchi di intestazione dei commenti vengono u
 C---C---C---C---C---C---C---C---C---C---C---C---C---C---C---C---C-C*/
 ```
 
-## <a name="class-method-definition-header"></a>Intestazione definizione metodo classe
+## <a name="class-method-definition-header"></a>Intestazione di definizione del metodo di classe
 
 ``` syntax
 /*M+M+++M+++M+++M+++M+++M+++M+++M+++M+++M+++M+++M+++M+++M+++M+++M+++M
@@ -153,7 +153,7 @@ C---C---C---C---C---C---C---C---C---C---C---C---C---C---C---C---C-C*/
 M---M---M---M---M---M---M---M---M---M---M---M---M---M---M---M---M-M*/
 ```
 
-## <a name="unexported-or-local-function"></a>Funzione locale o non esportata
+## <a name="unexported-or-local-function"></a>Funzione non esportata o locale
 
 ``` syntax
 /*F+F+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -171,7 +171,7 @@ M---M---M---M---M---M---M---M---M---M---M---M---M---M---M---M---M-M*/
 -----------------------------------------------------------------F-F*/
 ```
 
-## <a name="exported-function-definition-header"></a>Intestazione di definizione della funzione esportata
+## <a name="exported-function-definition-header"></a>Intestazione della definizione di funzione esportata
 
 ``` syntax
 /*F+F+++F+++F+++F+++F+++F+++F+++F+++F+++F+++F+++F+++F+++F+++F+++F+++F
@@ -189,7 +189,7 @@ M---M---M---M---M---M---M---M---M---M---M---M---M---M---M---M---M-M*/
 F---F---F---F---F---F---F---F---F---F---F---F---F---F---F---F---F-F*/
 ```
 
-## <a name="com-interface-declaration-header"></a>Intestazione di dichiarazione dell'interfaccia COM
+## <a name="com-interface-declaration-header"></a>Intestazione della dichiarazione di interfaccia COM
 
 ``` syntax
 /*I+I+++I+++I+++I+++I+++I+++I+++I+++I+++I+++I+++I+++I+++I+++I+++I+++I
@@ -205,7 +205,7 @@ F---F---F---F---F---F---F---F---F---F---F---F---F---F---F---F---F-F*/
 I---I---I---I---I---I---I---I---I---I---I---I---I---I---I---I---I-I*/
 ```
 
-## <a name="com-object-class-declaration-header"></a>Intestazione di dichiarazione della classe di oggetti COM
+## <a name="com-object-class-declaration-header"></a>Intestazione della dichiarazione della classe di oggetti COM
 
 ``` syntax
 /*O+O+++O+++O+++O+++O+++O+++O+++O+++O+++O+++O+++O+++O+++O+++O+++O+++O
@@ -224,9 +224,9 @@ I---I---I---I---I---I---I---I---I---I---I---I---I---I---I---I---I-I*/
 O---O---O---O---O---O---O---O---O---O---O---O---O---O---O---O---O-O*/
 ```
 
-Tutte le convenzioni di blocco di commento hanno stringhe di token iniziali e finali coerenti. Questa coerenza supporta l'elaborazione automatica delle intestazioni in qualche modo. È ad esempio possibile scrivere script AWK per filtrare le intestazioni di funzione in un file di testo separato che può quindi fungere da base per un documento di specifica. Analogamente, è possibile usare strumenti come l'utilità di autoduck non supportata (attualmente disponibile nel CD-ROM della libreria di sviluppo della rete per sviluppatori Microsoft) per elaborare i blocchi di commento in queste intestazioni.
+Tutte queste convenzioni di blocco di commento hanno stringhe di token di inizio e di fine coerenti. Questa coerenza supporta in qualche modo l'elaborazione automatica delle intestazioni. Ad esempio, gli script AWK possono essere scritti per filtrare le intestazioni di funzione in un file di testo separato che può quindi fungere da base per un documento di specifica. Analogamente, è possibile usare strumenti come l'utilità AUTODUCK non supportata (attualmente disponibile nel CD-ROM della libreria di sviluppo di rete di Sviluppatore Microsoft) per elaborare i blocchi di commento in queste intestazioni.
 
-Nella tabella seguente sono elencate le stringhe dei token iniziali e finali utilizzate nelle esercitazioni di esempio.
+Nella tabella seguente sono elencate le stringhe di token di inizio e di fine usate nelle esercitazioni di esempio.
 
 
 
@@ -234,16 +234,16 @@ Nella tabella seguente sono elencate le stringhe dei token iniziali e finali uti
 |-------|----------------------------------|
 | /\*+  | Inizio intestazione file                |
 | +\*/  | Fine intestazione file                  |
-| /\*-  | Inizio intestazione blocco commento normale |
-| -\*/  | Fine intestazione blocco commento semplice   |
+| /\*-  | Inizio intestazione blocco di commento normale |
+| -\*/  | Fine intestazione del blocco di commenti normale   |
 | /\*C  | Inizio intestazione classe               |
 | C\*/  | Fine intestazione classe                 |
 | /\*M  | Inizio intestazione metodo              |
 | M\*/  | Fine intestazione metodo                |
 | /\*F  | Inizio intestazione funzione            |
 | F\*/  | Fine intestazione funzione              |
-| /\*I  | Inizio intestazione interfaccia           |
-| I\*/  | Fine intestazione interfaccia             |
+| /\*Ho  | Inizio intestazione interfaccia           |
+| Ho\*/  | Fine intestazione interfaccia             |
 | /\*O  | Inizio intestazione classe oggetto COM    |
 | O\*/  | Fine intestazione classe oggetto COM      |
 
@@ -251,9 +251,9 @@ Nella tabella seguente sono elencate le stringhe dei token iniziali e finali uti
 
  
 
-Queste intestazioni possono essere utilizzate anche come segnali visivi per l'analisi rapida dei file di origine. Consentono inoltre di accedere rapidamente ad alcune posizioni di origine se si configurano stringhe di ricerca nell'editor e quindi si ripete l'ultima ricerca per individuare rapidamente tali intestazioni.
+Queste intestazioni possono essere usate anche come segnali visivi per l'analisi rapida dei file di origine. Offrono anche praticità per raggiungere rapidamente una posizione di origine se si configurano stringhe di ricerca nell'editor e quindi si "ripete l'ultima ricerca" per individuare rapidamente queste intestazioni.
 
-Ad esempio, la stringa di ricerca "M + M" individua l'inizio delle intestazioni del metodo e "M-M" individua l'inizio del codice effettivo di definizione/implementazione del metodo.
+Ad esempio, la stringa di ricerca "M+M" individua l'inizio delle intestazioni del metodo e "M-M" individua l'inizio del codice di definizione/implementazione effettivo del metodo.
 
  
 

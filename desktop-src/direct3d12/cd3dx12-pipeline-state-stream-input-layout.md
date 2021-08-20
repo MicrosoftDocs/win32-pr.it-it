@@ -1,9 +1,9 @@
 ---
-title: Struttura CD3DX12_PIPELINE_STATE_STREAM_INPUT_LAYOUT (D3dx12. h)
-description: Struttura di supporto utilizzata per descrivere un layout di input come singolo oggetto adatto per la descrizione di un flusso.
+title: CD3DX12_PIPELINE_STATE_STREAM_INPUT_LAYOUT struttura (D3dx12.h)
+description: Struttura helper usata per descrivere un layout di input come singolo oggetto adatto per una descrizione del flusso.
 ms.assetid: CEAD9FA6-4FB0-492E-9E81-8C4900A1FBC5
 keywords:
-- Struttura CD3DX12_PIPELINE_STATE_STREAM_INPUT_LAYOUT
+- CD3DX12_PIPELINE_STATE_STREAM_INPUT_LAYOUT struttura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ba382552d700ddddee02cdc1343936e6bcf6837
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8d467d60444588001a115f9b1ad3667f35fc9edab69a64402f42b4885d70a86d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117912960"
 ---
-# <a name="cd3dx12_pipeline_state_stream_input_layout-structure"></a>\_Struttura di \_ \_ layout di input del flusso di stato della \_ pipeline CD3DX12 \_
+# <a name="cd3dx12_pipeline_state_stream_input_layout-structure"></a>Struttura DEL LAYOUT DI INPUT DEL FLUSSO \_ \_ DI \_ STATO \_ DELLA PIPELINE CD3DX12 \_
 
-Struttura di supporto utilizzata per descrivere un layout di input come singolo oggetto adatto per la descrizione di un flusso.
+Struttura helper usata per descrivere un layout di input come singolo oggetto adatto per una descrizione del flusso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,37 +44,37 @@ struct CD3DX12_PIPELINE_STATE_STREAM_INPUT_LAYOUT {
 
 <dl> <dt>
 
-**\_Layout di \_ input del flusso di stato della pipeline CD3DX12 \_ \_ \_**
+**LAYOUT DI \_ \_ \_ \_ \_ INPUT DEL FLUSSO DI STATO DELLA PIPELINE CD3DX12**
 </dt> <dd>
 
-Crea una nuova istanza non inizializzata di un \_ layout di input del flusso di stato della pipeline CD3DX12 \_ \_ \_ \_ .
+Crea una nuova istanza non inizializzata di un LAYOUT DI INPUT DEL FLUSSO DI STATO DELLA PIPELINE CD3DX12. \_ \_ \_ \_ \_
 
 </dd> <dt>
 
-**\_Layout di input del flusso di stato della pipeline CD3DX12 \_ \_ \_ \_ ( \_ layout input D3D12 \_ \_ desc const &i)**
+**LAYOUT DI INPUT FLUSSO DI STATO DELLA \_ PIPELINE \_ \_ \_ \_ CD3DX12 (LAYOUT DI INPUT D3D12 \_ \_ \_ DESC &i)**
 </dt> <dd>
 
-Crea una nuova istanza di un \_ layout di input del flusso di stato della pipeline CD3DX12 \_ \_ \_ \_ , inizializzata con un tipo di oggetto suboggetto di un **\_ \_ \_ \_ \_ \_ layout di input del tipo** di sottooggetto D3D12 di stato della pipeline e i dati di sottooggetti copiati da *i*, una struttura di [**\_ \_ layout \_ di input D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_input_layout_desc) .
+Crea una nuova istanza di un LAYOUT INPUT FLUSSO STATO PIPELINE CD3DX12, inizializzato con un tipo di oggetto secondario D3D12 PIPELINE STATE SUBOBJECT TYPE INPUT LAYOUT e dati di oggetto secondario copiati da i , una struttura \_ \_ \_ \_ \_ [**\_ \_ \_ DESC INPUT LAYOUT D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_input_layout_desc) **\_ \_ \_ \_ \_ \_** 
 
 </dd> <dt>
 
-**operator = ( \_ layout input \_ D3D12 \_ DESC const& i)**
+**operator=(D3D12 \_ INPUT \_ LAYOUT \_ DESC const& i)**
 </dt> <dd>
 
 Operatore di assegnazione di copia.
 
 </dd> <dt>
 
-**operatore D3D12 \_ input \_ layout \_ DESC () const**
+**operatore D3D12 \_ INPUT \_ LAYOUT \_ DESC() const**
 </dt> <dd>
 
-Conversione implicita in una struttura [**\_ \_ \_ desc di layout input D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_input_layout_desc) .
+Conversione implicita in [**una struttura D3D12 \_ INPUT LAYOUT \_ \_ DESC.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_input_layout_desc)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-\_ \_ \_ \_ \_ Il layout di input del flusso di stato della pipeline CD3DX12 è una specializzazione typedef del modello di [**\_ \_ \_ \_ sottooggetto flusso di stato della pipeline CD3DX12**](cd3dx12-pipeline-state-stream-subobject.md) e viene definito come segue:
+CD3DX12 PIPELINE STATE STREAM INPUT LAYOUT è una specializzazione typedef del modello \_ \_ \_ \_ \_ [**CD3DX12 \_ PIPELINE STATE STREAM \_ \_ \_ SUBOBJECT**](cd3dx12-pipeline-state-stream-subobject.md) e viene definita come segue:
 
 
 ```C++
@@ -91,7 +91,7 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<D3D12_INPUT_LAYOUT_DESC, D3D12_P
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -102,10 +102,10 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<D3D12_INPUT_LAYOUT_DESC, D3D12_P
 [Strutture helper per D3D12](helper-structures-for-d3d12.md)
 </dt> <dt>
 
-[**\_Sottooggetto \_ flusso di stato della pipeline CD3DX12 \_ \_**](cd3dx12-pipeline-state-stream-subobject.md)
+[**OGGETTO SECONDARIO FLUSSO DI STATO DELLA PIPELINE CD3DX12 \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-subobject.md)
 </dt> <dt>
 
-[**\_Tipo di \_ \_ sottooggetto stato della pipeline D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
+[**TIPO DI OGGETTO SECONDARIO STATO PIPELINE D3D12 \_ \_ \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
 </dt> </dl>
 
  

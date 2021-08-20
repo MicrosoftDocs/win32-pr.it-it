@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: aggiornamento. Salva elenco overload metodo'
-title: Elenco di overload del metodo Update. Save
+description: 'Altre informazioni su: Elenco di overload del metodo Update.Save'
+title: Elenco di overload del metodo Update.Save
 TOCTitle: 'Save method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.Update.Save
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.update.save(v=EXCHG.10)
@@ -14,17 +14,17 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: fbb960ad5be6e7774a52fed9dd75a4ff6c420197
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 6e5c888c6bd51d3ef581834c8f346979c365ef2f9413c8f5595a0200a0d30bba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117890133"
 ---
-# <a name="updatesave-method-overload-list"></a>Elenco di overload del metodo Update. Save
+# <a name="updatesave-method-overload-list"></a>Elenco di overload del metodo Update.Save
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
 ## <a name="overload-list"></a>Elenco di overload
 
@@ -39,13 +39,13 @@ Includi membri ereditati
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="dn351270(v=exchg.10).md">Salva ()</a></td>
-<td>Aggiornare il TableID.</td>
+<td><a href="dn351270(v=exchg.10).md">Save()</a></td>
+<td>Aggiornare il tableid.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="dn351199(v=exchg.10).md">Salva ([], Int32, Int32)</a></td>
-<td>Aggiornare il TableID.</td>
+<td><a href="dn351199(v=exchg.10).md">Save([], Int32, Int32)</a></td>
+<td>Aggiornare il tableid.</td>
 </tr>
 </tbody>
 </table>
@@ -61,4 +61,4 @@ Inizio
 
 [Aggiornare i membri](./update-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

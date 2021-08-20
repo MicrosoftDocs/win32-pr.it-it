@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_COLUMNBASE. ColumnID'
-title: Proprietà JET_COLUMNBASE. ColumnID
+description: 'Altre informazioni su: JET_COLUMNBASE.columnid'
+title: JET_COLUMNBASE.columnid
 TOCTitle: 'columnid property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_COLUMNBASE.columnid
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columnbase.columnid(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c14a870d54ebd858951e28ca7764abb3ecf68df5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2cef4a470d9d105c9c710db19a36dd9fde62c524c88336d93fcf15931f4f0947
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118076114"
 ---
-# <a name="jet_columnbasecolumnid-property"></a>Proprietà JET_COLUMNBASE. ColumnID
+# <a name="jet_columnbasecolumnid-property"></a>JET_COLUMNBASE.columnid
 
-Ottiene l'ColumnID della colonna.
+Ottiene l'id colonna della colonna.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ public JET_COLUMNID columnid { get; internal set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_COLUMNBASE](./jet-columnbase-class.md)
+[JET_COLUMNBASE classe](./jet-columnbase-class.md)
 
-[Membri JET_COLUMNBASE](./jet-columnbase-members.md)
+[JET_COLUMNBASE membri](./jet-columnbase-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

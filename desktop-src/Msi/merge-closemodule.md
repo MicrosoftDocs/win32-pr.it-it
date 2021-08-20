@@ -1,7 +1,7 @@
 ---
-description: Il metodo CloseModule dell'oggetto merge chiude il modulo Windows Installer Merge attualmente aperto.
+description: Il metodo CloseModule dell'oggetto Merge chiude il modulo unione Windows installer attualmente aperto.
 ms.assetid: a11f72cf-4c4e-4650-95f9-549169452622
-title: Metodo merge. CloseModule (Mergemod. h)
+title: Metodo Merge.CloseModule (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 8688ae06cedca1e3b75290f7831f7d3539e3ec21
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 83f0238a1e65a6c3551b7fea5262fe91d74705287aba0714dfbb4b3cc3a37976
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106323986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117805052"
 ---
-# <a name="mergeclosemodule-method"></a>Merge. CloseModule, metodo
+# <a name="mergeclosemodule-method"></a>Metodo Merge.CloseModule
 
-Il metodo **CloseModule** dell'oggetto [**merge**](merge-object.md) chiude il modulo Windows Installer Merge attualmente aperto.
+Il **metodo CloseModule** dell'oggetto [**Merge**](merge-object.md) chiude il modulo unione Windows installer attualmente aperto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,11 +44,11 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-La chiusura di un modulo merge non influirà sugli errori che non sono stati recuperati.
+La chiusura di un modulo unione non influirà sugli errori che non sono stati recuperati.
 
 ### <a name="c"></a>C++
 
-Vedere funzione [**CloseModule**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-closemodule) .
+Vedere [**Funzione CloseModule.**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-closemodule)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,8 +56,8 @@ Vedere funzione [**CloseModule**](/windows/win32/api/mergemod/nf-mergemod-imsmme
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | Mergemod.dll 1,0 o versione successiva<br/>                                                    |
-| Intestazione<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versione<br/> | Mergemod.dll 1.0 o versione successiva<br/>                                                    |
+| Intestazione<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

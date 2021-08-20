@@ -1,5 +1,5 @@
 ---
-description: Contiene le coordinate dello schermo nello spazio dei colori di International Commission on illuminazione (CIE) XYZ.
+description: Contiene le coordinate dello schermo nello spazio colori XYZ della International Commission on Illumination (CIE).
 ms.assetid: e44e8a5f-005d-4d58-84e3-135d4e396086
 title: Classe XYZinCIE
 ms.topic: reference
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: ba7f781a83f3e6ba5aa4683003386a0478d65088
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc84f1550d2ba20daa0fb92dd3ce6f8d934207cff09de6d8b3e8b961bd341b6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118110782"
 ---
 # <a name="xyzincie-class"></a>Classe XYZinCIE
 
-La classe WMI **XYZinCIE** contiene le coordinate dello schermo nello spazio dei colori di International Commission on illuminazione (CIE) XYZ.
+La classe WMI **XYZinCIE** contiene le coordinate dello schermo nello spazio colori XYZ della International Commission on Illumination (CIE).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,20 +38,20 @@ class XYZinCIE : WmiMonitorColorCharacteristics
 
 ## <a name="members"></a>Members
 
-La classe **XYZinCIE** dispone di questi tipi di membri:
+La **classe XYZinCIE** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **XYZinCIE** dispone di queste proprietà.
+La **classe XYZinCIE** ha queste proprietà.
 
 <dl> <dt>
 
 **X**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -64,7 +64,7 @@ Coordinata X.
 **S**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -76,9 +76,9 @@ Coordinata Y.
 
 ## <a name="remarks"></a>Commenti
 
-La classe [**WmiMonitorColorCharacteristics**](wmimonitorcolorcharacteristics.md) contiene istanze incorporate della classe **XYZinCIE** per descrivere le caratteristiche dei colori di un monitoraggio.
+La [**classe WmiMonitorColorCharacteristics**](wmimonitorcolorcharacteristics.md) contiene istanze incorporate della **classe XYZinCIE** per descrivere le caratteristiche di colore di un monitoraggio.
 
-Per calcolare la coordinata z, in base ai valori x e y, usare la relazione \| \| (x, y, z) \| \| = 1.
+Per calcolare la coordinata z, in base ai valori x e y, usare la relazione \| \| (x,y,z) \| \| = 1.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -88,8 +88,8 @@ Per calcolare la coordinata z, in base ai valori x e y, usare la relazione \| \|
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
-| Spazio dei nomi<br/>                | \\WMI radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Wmi \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

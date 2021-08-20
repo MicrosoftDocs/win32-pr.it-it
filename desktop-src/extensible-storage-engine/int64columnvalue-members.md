@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Membri Int64ColumnValue'
+description: 'Altre informazioni su: Membri int64ColumnValue'
 title: Membri Int64ColumnValue
 TOCTitle: Int64ColumnValue members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.Int64ColumnValue
@@ -17,9 +17,9 @@ ms.locfileid: "118076607"
 # <a name="int64columnvalue-members"></a>Membri Int64ColumnValue
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
-Valore [di colonna Int64.](/dotnet/api/system.int64)
+Valore [della colonna Int64.](/dotnet/api/system.int64)
 
 Il [tipo Int64ColumnValue](./int64columnvalue-class.md) espone i membri seguenti.
 
@@ -58,7 +58,7 @@ Inizio
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
-<td><a href="dn334166(v=exchg.10).md">Columnid</a></td>
+<td><a href="dn334166(v=exchg.10).md">Id colonna</a></td>
 <td>Ottiene o imposta l'elemento columnid da impostare o recuperare. Ereditato da <a href="dn334206(v=exchg.10).md">ColumnValue.</a></td>
 </tr>
 <tr class="even">
@@ -74,32 +74,32 @@ Inizio
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn334225(v=exchg.10).md">Length</a></td>
-<td>Ottiene la lunghezza in byte di un valore di colonna, ovvero zero se column è Null, in caso contrario corrisponde a Size per questa colonna di dimensioni fisse. Ereditato da <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T &gt; </a>.</td>
+<td>Ottiene la lunghezza in byte di un valore di colonna, che è zero se column è Null, in caso contrario corrisponde a Size per questa colonna a dimensione fissa. Ereditato da <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T. &gt; </a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn334169(v=exchg.10).md">RetrieveGrbit</a></td>
-<td>Ottiene o imposta le opzioni di recupero della colonna. Ereditato da <a href="dn334206(v=exchg.10).md">ColumnValue.</a></td>
+<td>Ottiene o imposta le opzioni di recupero delle colonne. Ereditato da <a href="dn334206(v=exchg.10).md">ColumnValue.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn334215(v=exchg.10).md">SetGrbit</a></td>
-<td>Ottiene o imposta le opzioni di aggiornamento della colonna. Ereditato da <a href="dn334206(v=exchg.10).md">ColumnValue.</a></td>
+<td>Ottiene o imposta le opzioni di aggiornamento delle colonne. Ereditato da <a href="dn334206(v=exchg.10).md">ColumnValue.</a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Proprietà protetta." alt="Protected property" /></td>
 <td><a href="dn335027(v=exchg.10).md">Dimensioni</a></td>
-<td>Ottiene le dimensioni del valore nella colonna. Viene restituito 0 per le colonne con dimensioni variabili, ad esempio binarie e stringa. Esegue l'override <a href="dn334172(v=exchg.10).md">di ColumnValue.Size.</a></td>
+<td>Ottiene le dimensioni del valore nella colonna. Viene restituito 0 per le colonne di dimensioni variabili, ad esempio binarie e stringa. Esegue l'override <a href="dn334172(v=exchg.10).md">di ColumnValue.Size.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn334180(v=exchg.10).md">Valore</a></td>
-<td>Ottiene o imposta il valore nello struct. Ereditato da <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T &gt; </a>.</td>
+<td>Ottiene o imposta il valore nello struct. Ereditato da <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T. &gt; </a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
-<td><a href="dn334226(v=exchg.10).md">Oggetto ValueAsObject</a></td>
-<td>Ottiene l'ultimo valore impostato o recuperato della colonna. Il valore viene restituito come oggetto generico. Ereditato da <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T &gt; </a>.</td>
+<td><a href="dn334226(v=exchg.10).md">ValueAsObject</a></td>
+<td>Ottiene l'ultimo valore impostato o recuperato della colonna. Il valore viene restituito come oggetto generico. Ereditato da <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T. &gt; </a></td>
 </tr>
 </tbody>
 </table>
@@ -121,7 +121,7 @@ Inizio
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
 <td><a href="dn334178(v=exchg.10).md">CheckDataCount</a></td>
-<td>Assicurarsi che i dati recuperati corrispondano esattamente alle dimensioni necessarie per la struttura. In caso di mancata corrispondenza, viene generata un'eccezione. Ereditato da <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T &gt; </a>.</td>
+<td>Assicurarsi che i dati recuperati siano esattamente delle dimensioni necessarie per la struttura. In caso di mancata corrispondenza, viene generata un'eccezione. Ereditato da <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T. &gt; </a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
@@ -130,7 +130,7 @@ Inizio
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizzare</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizza</a></td>
 <td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="even">
@@ -146,7 +146,7 @@ Inizio
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
 <td><a href="dn351018(v=exchg.10).md">GetValueFromBytes</a></td>
-<td>Dati recuperati da ESENT, decodificare i dati e impostare il valore nell'oggetto ColumnValue. (Esegue <a href="dn334208(v=exchg.10).md">l'override di ColumnValue.GetValueFromBytes([], Int32, Int32, Int32)</a>.</td>
+<td>Dati recuperati da ESENT, decodificare i dati e impostare il valore nell'oggetto ColumnValue. Esegue l'override <a href="dn334208(v=exchg.10).md">di ColumnValue.GetValueFromBytes([], Int32, Int32, Int32)</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
@@ -156,7 +156,7 @@ Inizio
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn334223(v=exchg.10).md">ToString</a></td>
-<td>Ottiene una rappresentazione di stringa di questo oggetto . Ereditato da <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T &gt; </a>.</td>
+<td>Ottiene una rappresentazione di stringa di questo oggetto . Ereditato da <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T. &gt; </a></td>
 </tr>
 </tbody>
 </table>

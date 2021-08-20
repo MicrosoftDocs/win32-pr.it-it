@@ -1,17 +1,17 @@
 ---
-description: System.Music.SynchronizedLyrics
+description: Sistema. Musica. SynchronizedLyrics
 ms.assetid: f68c20e5-ad75-4b99-b037-a45925dd37a2
-title: System.Music.SynchronizedLyrics
+title: Sistema. Musica. SynchronizedLyrics
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 763098a88cab5c1bf11d1751070aebfd2f47d15f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 76aeff18226abcd88d17833ecae561948e36eb5d29e4d21e2f500299b5ae287e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117682916"
 ---
-# <a name="systemmusicsynchronizedlyrics"></a>System.Music.SynchronizedLyrics
+# <a name="systemmusicsynchronizedlyrics"></a>Sistema. Musica. SynchronizedLyrics
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 

@@ -1,15 +1,15 @@
 ---
-description: Il metodo GetAudioLanguage recupera una stringa che indica quale lingua è disponibile nel flusso audio specificato.
+description: Il metodo GetAudioLanguage recupera una stringa che indica la lingua disponibile nel flusso audio specificato.
 ms.assetid: 5ff12058-eb00-4a2c-8d39-88282f68f001
 title: Metodo GetAudioLanguage
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af71ad7943fe5442ded09f0b599c64c4b7215dac
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 62f4842e370a11fde655ee1695e56dc148f9ebece2de01969b2603225efad7af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104520649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118000381"
 ---
 # <a name="getaudiolanguage-method"></a>Metodo GetAudioLanguage
 
@@ -18,7 +18,7 @@ ms.locfileid: "104520649"
 
  
 
-Il `GetAudioLanguage` metodo recupera una stringa che indica quale lingua è disponibile nel flusso audio specificato.
+Il `GetAudioLanguage` metodo recupera una stringa che indica la lingua disponibile nel flusso audio specificato.
 
 ``` syntax
 [ slang = ] MSWebDVD.GetAudioLanguage(iStream)
@@ -28,16 +28,16 @@ Il `GetAudioLanguage` metodo recupera una stringa che indica quale lingua è dis
 
 <dl> <dt>
 
-<span id="iStream"></span><span id="istream"></span><span id="ISTREAM"></span>*iStream*
+<span id="iStream"></span><span id="istream"></span><span id="ISTREAM"></span>*Istream*
 </dt> <dd>
 
-Specifica il numero di flusso audio nel titolo corrente come intero.
+Specifica il numero del flusso audio nel titolo corrente come Integer.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce una stringa leggibile che identifica la lingua del flusso audio nel titolo corrente.
+Restituisce una stringa leggibile dall'utente che identifica la lingua del flusso audio nel titolo corrente.
 
  
 

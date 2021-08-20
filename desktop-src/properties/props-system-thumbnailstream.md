@@ -1,5 +1,5 @@
 ---
-description: Dati che rappresentano l'anteprima in formato STREAM VT, supportati da codec Windows GDI+ e Windows quali .jpg \_ e .png.
+description: Dati che rappresentano l'anteprima in formato VT STREAM, supportati dai codec Windows GDI+ e Windows, ad esempio .jpg \_ e .png.
 ms.assetid: 7ffdf9e4-69b1-4946-8867-73696cd241e0
 title: System.ThumbnailStream
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117864260"
 ---
 # <a name="systemthumbnailstream"></a>System.ThumbnailStream
 
-Dati che rappresentano l'anteprima in formato STREAM VT, supportati da codec Windows GDI+ e Windows quali .jpg \_ e .png.
+Dati che rappresentano l'anteprima in formato VT STREAM, supportati dai codec Windows GDI+ e Windows, ad esempio .jpg \_ e .png.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1
 
@@ -55,7 +55,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -85,7 +85,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)
