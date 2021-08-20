@@ -1,9 +1,9 @@
 ---
-title: Messaggio MIM_LONGDATA (mmsystem. h)
-description: Il \_ messaggio LONGDATA MIM viene inviato a una funzione di callback input MIDI quando un buffer esclusivo del sistema è stato riempito con i dati e viene restituito all'applicazione.
+title: MIM_LONGDATA messaggio (Mmsystem.h)
+description: Il MIM LONGDATA viene inviato a una funzione di callback di input MIDI quando un buffer esclusivo di sistema è stato riempito con dati e viene \_ restituito all'applicazione.
 ms.assetid: 3a11ed21-e7c5-4b78-9536-f0d862e26a02
 keywords:
-- MIM_LONGDATA messaggi multimediali di Windows
+- MIM_LONGDATA messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bc5f83b1f0468540da18d0d8317dae42cbf33bc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 82605835ce8ac231346014215c854abfe9ae7a55fd81e81b8d6214fb8a230327
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137212"
 ---
-# <a name="mim_longdata-message"></a>\_Messaggio LONGDATA MIM
+# <a name="mim_longdata-message"></a>\_MIM Messaggio LONGDATA
 
-Il **messaggio \_ LONGDATA MIM** viene inviato a una funzione di callback input MIDI quando un buffer esclusivo del sistema è stato riempito con i dati e viene restituito all'applicazione.
+Il **MIM \_ LONGDATA** viene inviato a una funzione di callback di input MIDI quando un buffer esclusivo di sistema è stato riempito con dati e viene restituito all'applicazione.
 
 
 ```C++
@@ -41,24 +41,24 @@ dwParam2 = dwTimestamp
 <span id="lpMidiHdr"></span><span id="lpmidihdr"></span><span id="LPMIDIHDR"></span>*lpMidiHdr*
 </dt> <dd>
 
-Puntatore a una struttura [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) che identifica il buffer di input.
+Puntatore a [**una struttura MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) che identifica il buffer di input.
 
 </dd> <dt>
 
 <span id="dwTimestamp"></span><span id="dwtimestamp"></span><span id="DWTIMESTAMP"></span>*dwTimestamp*
 </dt> <dd>
 
-Tempo durante il quale i dati sono stati ricevuti dal driver di dispositivo di input. Il timestamp viene specificato in millisecondi, a partire da zero quando è stata chiamata la funzione [**midiInStart**](/windows/win32/api/mmeapi/nf-mmeapi-midiinstart) .
+Ora in cui i dati sono stati ricevuti dal driver del dispositivo di input. Il timestamp viene specificato in millisecondi, a partire da zero quando è stata chiamata la [**funzione midiInStart.**](/windows/win32/api/mmeapi/nf-mmeapi-midiinstart)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Il buffer restituito potrebbe non essere pieno. Per determinare il numero di byte registrati nel buffer restituito, usare il membro **dwBytesRecorded** della struttura [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) specificata da *lpMidiHdr*.
+Il buffer restituito potrebbe non essere pieno. Per determinare il numero di byte registrati nel buffer restituito, usare il **membro dwBytesRecorded** della [**struttura MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) specificata da *lpMidiHdr*.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,7 +68,7 @@ Il buffer restituito potrebbe non essere pieno. Per determinare il numero di byt
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Il buffer restituito potrebbe non essere pieno. Per determinare il numero di byt
 
 <dl> <dt>
 
-[MIDI (Musical Instrument Digital Interface)](musical-instrument-digital-interface--midi.md)
+[MidI (Musical Instrument Digital Interface)](musical-instrument-digital-interface--midi.md)
 </dt> <dt>
 
 [Messaggi MIDI](midi-messages.md)

@@ -1,5 +1,5 @@
 ---
-description: Windows Dispositivi portabili (WPD) supporta le proprietà seguenti dei parametri di comando.
+description: Windows Dispositivi portatili (WPD) supporta le proprietà seguenti dei parametri di comando.
 ms.assetid: 03eff101-5c36-48ea-9dcd-2c4ee29a2ac6
 title: Parametri del comando (PortableDevice.h)
 ms.topic: reference
@@ -22,22 +22,22 @@ ms.locfileid: "118431058"
 ---
 # <a name="command-parameters"></a>Parametri dei comandi
 
-Windows Dispositivi portabili (WPD) supporta le proprietà seguenti dei parametri di comando.
+Windows Dispositivi portatili (WPD) supporta le proprietà seguenti dei parametri di comando.
 
 
 
 
 | **Proprietà**                                            | **VarType**     | **Descrizione**                                                                                                                                                              |
 |---------------------------------------------------------|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **INFORMAZIONI COMUNI SUL \_ CLIENT DELLE \_ \_ PROPRIETÀ \_ WPD**          | **VT \_ UNKNOWN** | Interfaccia [**IPortableDeviceValues**](iportabledevicevalues.md) che il driver usa per identificare il client.                                                             |
-| **CONTESTO DELLE INFORMAZIONI \_ COMUNI SUL CLIENT DELLE \_ \_ PROPRIETÀ \_ \_ WPD** | **VT \_ LPWSTR**  | Contesto specificato dal driver che identifica un client per tutte le operazioni successive.                                                                                          |
-| **CATEGORIA DI COMANDI \_ COMUNI \_ DELLE PROPRIETÀ \_ \_ WPD**            | **VT \_ CLSID**   | Parte **GUID** del **valore PROPERTYKEY** del comando.                                                                                                            |
-| **ID COMANDO COMUNE \_ \_ DELLA PROPRIETÀ \_ WPD \_**                  | **VT \_ UI4**     | Parte PID (Persistent Unique ID) del **valore PROPERTYKEY** del comando.                                                                                          |
-| **DESTINAZIONE COMANDO COMUNE PROPRIETÀ WPD \_ \_ \_ \_**              | **VT \_ LPWSTR**  | Identificatore dell'oggetto di destinazione.                                                                                                                                                |
-| **CODICE DI ERRORE \_ DEL DRIVER COMUNE DELLE \_ \_ \_ PROPRIETÀ \_ WPD**          | **VT \_ UI4**     | Codice di errore specifico del driver restituito da un driver WPD.                                                                                                                       |
-| **HRESULT COMUNE \_ \_ DELLA PROPRIETÀ \_ WPD**                      | **ERRORE \_ VT**   | Valore **HRESULT** restituito da un driver WPD per una determinata operazione.                                                                                                   |
-| **ID OGGETTO COMUNE DELLE PROPRIETÀ \_ \_ \_ \_ WPD**                  | **VT \_ UNKNOWN** | Interfaccia [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) di tipo variant **VT \_ LPWSTR** che contiene un elenco di identificatori di oggetto. |
-| **ID UNIVOCI \_ \_ PERSISTENTI COMUNI DELLE PROPRIETÀ \_ \_ \_ WPD**      | **VT \_ UNKNOWN** | Interfaccia [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) di tipo variant **VT \_ LPWSTR** che contiene un elenco di PIN.               |
+| **INFORMAZIONI COMUNI SUL CLIENT DELLE PROPRIETÀ WPD \_ \_ \_ \_**          | **VT \_ UNKNOWN** | Interfaccia [**IPortableDeviceValues**](iportabledevicevalues.md) utilizzata dal driver per identificare il client.                                                             |
+| **CONTESTO DELLE INFORMAZIONI CLIENT \_ COMUNI \_ DELLA \_ PROPRIETÀ \_ \_ WPD** | **VT \_ LPWSTR**  | Contesto specificato dal driver che identifica un client per tutte le operazioni successive.                                                                                          |
+| **CATEGORIA DI COMANDI \_ COMUNI \_ DELLA PROPRIETÀ \_ \_ WPD**            | **VT \_ CLSID**   | Parte **GUID** del **valore PROPERTYKEY** del comando.                                                                                                            |
+| **ID COMANDO COMUNE DELLA PROPRIETÀ WPD \_ \_ \_ \_**                  | **Interfaccia utente \_ VT4**     | Parte PID (Persistent Unique ID) del **valore PROPERTYKEY** del comando.                                                                                          |
+| **DESTINAZIONE COMANDO COMUNE DELLA PROPRIETÀ WPD \_ \_ \_ \_**              | **VT \_ LPWSTR**  | Identificatore dell'oggetto di destinazione.                                                                                                                                                |
+| **CODICE DI ERRORE COMUNE \_ \_ DEL DRIVER DELLA \_ \_ PROPRIETÀ \_ WPD**          | **Interfaccia utente \_ VT4**     | Codice di errore specifico del driver restituito da un driver WPD.                                                                                                                       |
+| **HRESULT COMUNE \_ DELLA \_ PROPRIETÀ WPD \_**                      | **ERRORE \_ VT**   | Valore **HRESULT** restituito da un driver WPD per una determinata operazione.                                                                                                   |
+| **ID OGGETTO \_ COMUNI DELLE PROPRIETÀ \_ WPD \_ \_**                  | **VT \_ UNKNOWN** | Interfaccia [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) di tipo **variant VT \_ LPWSTR** che contiene un elenco di identificatori di oggetto. |
+| **ID UNIVOCI \_ \_ PERSISTENTI COMUNI DELLE PROPRIETÀ \_ \_ \_ WPD**      | **VT \_ UNKNOWN** | Interfaccia [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) di tipo **variant VT \_ LPWSTR** che contiene un elenco di PIN.               |
 
 
 

@@ -40,13 +40,13 @@ DrawPrimitive( D3DPT_TRIANGLELIST, // PrimitiveType
 
 ## <a name="scenario-2-drawing-two-triangles-with-indexing"></a>Scenario 2: Disegno di due triangoli con indicizzazione
 
-Come si noterà, il vertex buffer contiene dati duplicati nelle posizioni 0 e 4, 2 e 5. Ciò ha senso perché i due triangoli condividono due vertici comuni. Questi dati duplicati sono uno spreco e il vertex buffer può essere compresso usando un index buffer. Un buffer dei vertici più piccolo riduce la quantità di dati dei vertici che devono essere inviati all'adattatore grafico. Ancora più importante, l'uso di un index buffer consente all'adapter di archiviare i vertici in una cache dei vertici; se la primitiva disegnata contiene un vertice usato di recente, tale vertice può essere recuperato dalla cache anziché leggerlo dal vertex buffer, con un significativo aumento delle prestazioni.
+Come si noterà, il vertex buffer contiene dati duplicati nelle posizioni 0 e 4, 2 e 5. Ciò ha senso perché i due triangoli condividono due vertici comuni. Questi dati duplicati sono uno spreco e il buffer dei vertici può essere compresso usando un index buffer. Un buffer dei vertici più piccolo riduce la quantità di dati dei vertici che devono essere inviati all'adattatore grafico. Ancora più importante, l'uso di un index buffer consente all'adapter di archiviare i vertici in una cache dei vertici; se la primitiva disegnata contiene un vertice usato di recente, tale vertice può essere recuperato dalla cache anziché leggerlo dal vertex buffer, con un significativo aumento delle prestazioni.
 
 Un index buffer 'indici' nel vertex buffer, quindi ogni vertice univoco deve essere archiviato una sola volta nel vertex buffer. Il diagramma seguente illustra un approccio indicizzato allo scenario di disegno precedente.
 
 ![diagramma di un index buffer per il vertex buffer precedente](images/dip-fig3.png)
 
-Il index buffer archivia VB index, che fanno riferimento a un vertice specifico all'interno del vertex buffer. Un vertex buffer può essere pensato come una matrice di vertici, quindi VB Index è semplicemente l'indice nel vertex buffer per il vertice di destinazione. Analogamente, un indice IB è un indice nel index buffer. Ciò può generare molto confusione molto rapidamente se non si è attento, quindi assicurarsi di avere chiaro il vocabolario usato: indice dei valori di indice VB nel vertex buffer, indice dei valori dell'indice IB nel index buffer e index buffer stesso archivia i valori di indice VB.
+Il index buffer archivia VB di indice, che fanno riferimento a un vertice specifico all'interno del vertex buffer. Un vertex buffer può essere pensato come una matrice di vertici, quindi VB Index è semplicemente l'indice nel vertex buffer per il vertice di destinazione. Analogamente, un indice IB è un indice nel index buffer. Ciò può generare molto confusione molto rapidamente se non si è attento, quindi assicurarsi di avere chiaro il vocabolario usato: indice dei valori di indice VB nel vertex buffer, indice dei valori di indice IB nel index buffer e index buffer stesso archivia i valori di indice VB.
 
 La chiamata di disegno è illustrata di seguito. I significati di tutti gli argomenti vengono discussi a lungo per lo scenario di disegno successivo. Per il momento, è sufficiente notare che questa chiamata indica nuovamente a Direct3D di eseguire il rendering di un elenco di triangoli contenente due triangoli, a partire dalla posizione 0 all'interno del index buffer. Questa chiamata disegna gli stessi due triangoli nello stesso ordine di prima, assicurando un orientamento in senso orario appropriato:
 
@@ -65,9 +65,9 @@ DrawIndexedPrimitive( D3DPT_TRIANGLELIST, // PrimitiveType
 
 ## <a name="scenario-3-drawing-one-triangle-with-indexing"></a>Scenario 3: Disegno di un triangolo con indicizzazione
 
-Si finge ora di voler disegnare solo il secondo triangolo, ma si vuole usare lo stesso vertex buffer e lo stesso index buffer usati per disegnare l'intero quad, come illustrato nel diagramma seguente.
+Fingere ora di voler disegnare solo il secondo triangolo, ma di voler usare lo stesso vertex buffer e lo stesso index buffer usati per disegnare l'intero quad, come illustrato nel diagramma seguente.
 
-![diagramma del buffer index buffer e vertice per il secondo triangolo](images/dip-fig4.png)
+![diagramma del buffer index buffer e dei vertici per il secondo triangolo](images/dip-fig4.png)
 
 Per questa chiamata di disegno, il primo indice IB usato è 3; questo valore è denominato StartIndex. L'indice VB usato è 0. Questo valore è denominato MinIndex. Anche se sono necessari solo tre vertici per disegnare il triangolo, questi tre vertici vengono distribuiti in quattro posizioni adiacenti nel buffer dei vertici. Il numero di posizioni all'interno del blocco contiguo di memoria del vertex buffer richiesto per la chiamata di disegno è denominato NumVertices e verrà impostato su 4 in questa chiamata. I valori MinIndex e NumVertices sono in realtà solo suggerimenti per consentire a Direct3D di ottimizzare l'accesso alla memoria durante l'elaborazione dei vertici software e possono essere semplicemente impostati per includere l'intero vertex buffer al prezzo delle prestazioni.
 
@@ -88,7 +88,7 @@ DrawIndexedPrimitive( D3DPT_TRIANGLELIST, // PrimitiveType
 
 ## <a name="scenario-4-drawing-one-triangle-with-offset-indexing"></a>Scenario 4: Disegno di un triangolo con indicizzazione offset
 
-BaseVertexIndex è un valore che viene aggiunto in modo efficace a ogni indice VB archiviato nel index buffer. Ad esempio, se fosse stato passato un valore pari a 50 per BaseVertexIndex durante la chiamata precedente, ciò sarebbe funzionalmente uguale all'uso del index buffer nel diagramma seguente per la durata della chiamata DrawIndexedPrimitive:
+BaseVertexIndex è un valore che viene aggiunto in modo efficace a ogni indice VB archiviato nel index buffer. Ad esempio, se fosse stato passato un valore pari a 50 per BaseVertexIndex durante la chiamata precedente, funzionalmente sarebbe uguale all'uso del index buffer nel diagramma seguente per la durata della chiamata DrawIndexedPrimitive:
 
 ![diagramma di un index buffer con valore 50 per basevertexindex](images/dip-fig5.png)
 

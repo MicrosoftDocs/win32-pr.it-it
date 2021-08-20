@@ -1,7 +1,7 @@
 ---
 description: Questa classe è la classe del tipo di evento per gli eventi di invio TCP/IP IPv4. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: 51a61257-fcbf-4724-80e4-12bdf45b359e
-title: Classe TcpIp_SendIPV4
+title: TcpIp_SendIPV4 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,14 +22,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: a255c8a262c53e6dad4654946171fc19a43c6f5f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 425c785c885152349c4ffddc503fc36c1ec751ead6a35c63f17ec9f26d6d2fdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151110"
 ---
-# <a name="tcpip_sendipv4-class"></a>\_Classe SendIPV4 Tcpip
+# <a name="tcpip_sendipv4-class"></a>Classe \_ TcpIp SendIPV4
 
 Questa classe è la classe del tipo di evento per gli eventi di invio TCP/IP IPv4.
 
@@ -56,42 +56,42 @@ class TcpIp_SendIPV4 : TcpIp
 
 ## <a name="members"></a>Members
 
-La classe **TCPIP \_ SendIPV4** presenta questi tipi di membri:
+La **classe TcpIp \_ SendIPV4** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **TCPIP \_ SendIPV4** ha queste proprietà.
+La **classe TcpIp \_ SendIPV4** ha queste proprietà.
 
 <dl> <dt>
 
-ConnID
+connid
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (10), puntatore
+Qualificatori: WmiDataId(10), Puntatore
 </dt> </dl>
 
-Identificatore di connessione univoco per correlare gli eventi che appartengono alla stessa connessione.
+Identificatore di connessione univoco per correlare gli eventi appartenenti alla stessa connessione.
 
 </dd> <dt>
 
 daddr
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3), Extension ("IPAddrV4")
+Qualificatori: WmiDataId(3), Extension("IPAddrV4")
 </dt> </dl>
 
 Indirizzo IP di destinazione.
@@ -101,45 +101,45 @@ Indirizzo IP di destinazione.
 dport
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (5), Extension ("Port")
+Qualificatori: WmiDataId(5), Extension("Port")
 </dt> </dl>
 
 Numero di porta di destinazione.
 
 </dd> <dt>
 
-**EndTime**
+**Endtime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (8)
+Qualificatori: WmiDataId(8)
 </dt> </dl>
 
-Termina tempo richiesta di invio.
+Ora di fine della richiesta di invio.
 
 </dd> <dt>
 
 PID
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1)
+Qualificatori: WmiDataId(1)
 </dt> </dl>
 
 Identificatore del processo associato alla richiesta.
@@ -149,29 +149,29 @@ Identificatore del processo associato alla richiesta.
 saddr
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (4), Extension ("IPAddrV4")
+Qualificatori: WmiDataId(4), Extension("IPAddrV4")
 </dt> </dl>
 
 Indirizzo IP di origine.
 
 </dd> <dt>
 
-SeqNum
+seqnum
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (9)
+Qualificatori: WmiDataId(9)
 </dt> </dl>
 
 Numero di sequenza.
@@ -181,29 +181,29 @@ Numero di sequenza.
 size
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2)
+Qualificatori: WmiDataId(2)
 </dt> </dl>
 
 Dimensioni del pacchetto.
 
 </dd> <dt>
 
-Sport
+sport
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (6), Extension ("Port")
+Qualificatori: WmiDataId(6), Extension("Port")
 </dt> </dl>
 
 Numero di porta di origine.
@@ -213,16 +213,16 @@ Numero di porta di origine.
 **startime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (7)
+Qualificatori: WmiDataId(7)
 </dt> </dl>
 
-Ora di inizio della richiesta di invio.
+Ora di inizio dell'invio della richiesta.
 
 </dd> </dl>
 
@@ -232,8 +232,8 @@ Ora di inizio della richiesta di invio.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -241,7 +241,7 @@ Ora di inizio della richiesta di invio.
 
 <dl> <dt>
 
-[**TcpIp**](tcpip.md)
+[**Tcpip**](tcpip.md)
 </dt> </dl>
 
  

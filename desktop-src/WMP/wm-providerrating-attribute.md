@@ -1,9 +1,9 @@
 ---
 title: Attributo WM/ProviderRating
-description: L'attributo WM/ProviderRating è la classificazione dell'elemento assegnato dal provider dei valori dell'attributo.
+description: L'attributo WM/ProviderRating è la classificazione dell'elemento assegnato dal provider dei valori di attributo.
 ms.assetid: a1a76560-a8d9-486a-badc-56d7bf488c10
 keywords:
-- Media Player Windows per gli attributi WM/ProviderRating
+- Attributi WM/ProviderRating Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,35 +12,35 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc0f71985d948e59b8c0f98d50445a48263d67cf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ddcff262f21b4f31daff6f704dba1cb096f54bb295a21a3ae9a7c90f574af34f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116608"
 ---
 # <a name="wmproviderrating-attribute"></a>Attributo WM/ProviderRating
 
-L'attributo **WM/ProviderRating** è la classificazione dell'elemento assegnato dal provider dei valori dell'attributo.
+**L'attributo WM/ProviderRating** è la classificazione dell'elemento assegnato dal provider dei valori di attributo.
 
 ## <a name="applies-to"></a>Si applica a
 
 -   [Elementi audio](audio-item-attributes.md)
--   [Playlist CD](cd-playlist-attributes.md)
+-   [Playlist cd](cd-playlist-attributes.md)
 -   [Tracce CD](cd-track-attributes.md)
--   [Attributi di file di Windows Media usati di frequente](commonly-used-windows-media-file-attributes.md)
+-   [Attributi di file multimediali Windows comunemente usati](commonly-used-windows-media-file-attributes.md)
 -   [DVD](dvd-attributes.md)
 -   [Elementi video](video-item-attributes.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene archiviato nella libreria o nella cache e nel file multimediale digitale.
+Questo attributo viene archiviato sia nella libreria (o cache) che nel file multimediale digitale.
 
 **Rating** è un alias per questo attributo.
 
-La costante Windows Media Format SDK per questo attributo è g \_ wszWMProviderRating.
+La Windows media format SDK costante per questo attributo è g \_ wszWMProviderRating.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,7 +48,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -56,7 +56,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_DeviceStatus_OS01
-description: La \_ classe MDM DeviceStatus \_ OS01 viene usata dall'azienda per eseguire una query sul sistema operativo nei dispositivi con i criteri aziendali.
+title: MDM_DeviceStatus_OS01 classe
+description: La classe \_ MDM DeviceStatus OS01 viene usata dall'azienda per eseguire query sul sistema operativo nei dispositivi \_ con i criteri aziendali.
 ms.assetid: 887dc453-f6b5-4f09-8ce1-b87f71dd8396
 keywords:
-- Classe MDM_DeviceStatus_OS01
-- Classe MDM_DeviceStatus_OS01, descritta
+- MDM_DeviceStatus_OS01 classe
+- MDM_DeviceStatus_OS01 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01bff7a57d71b3d651ea2b97a0eac5b2ccd94255
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1ae98ed55f2fb4b5177b2596b99bb03ba8bdd6e74e3ba4e1c0e028928fdc0acb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118165844"
 ---
-# <a name="mdm_devicestatus_os01-class"></a>\_Classe MDM DeviceStatus \_ OS01
+# <a name="mdm_devicestatus_os01-class"></a>Classe \_ \_ OS01 DeviceStatus MDM
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La classe **MDM \_ DeviceStatus \_ OS01** viene usata dall'azienda per eseguire una query sul sistema operativo nei dispositivi con i criteri aziendali.
+La **classe \_ MDM DeviceStatus \_ OS01** viene usata dall'azienda per eseguire query sul sistema operativo nei dispositivi con i criteri aziendali.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -46,23 +46,23 @@ class MDM_DeviceStatus_OS01
 
 ## <a name="members"></a>Members
 
-La classe **MDM \_ DeviceStatus \_ OS01** presenta questi tipi di membri:
+La **classe \_ MDM DeviceStatus \_ OS01** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **MDM \_ DeviceStatus \_ OS01** dispone di queste proprietà.
+La **classe \_ MDM DeviceStatus \_ OS01** ha queste proprietà.
 
 <dl> <dt>
 
 [Edizione](/windows/client-management/mdm/devicestatus-csp#devicestatus-os-edition)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -70,32 +70,32 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Nodo per la query del sistema operativo.
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/DeviceStatus"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/DeviceStatus"
 
 </dd> </dl>
 
@@ -105,10 +105,10 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

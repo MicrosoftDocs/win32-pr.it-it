@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-Last-successful-Interactive-Access-Time
-description: Data e ora in cui è stata presentata la password corretta durante l'accesso con CTRL + ALT + CANC.
+title: Attributo ms-DS-Last-Successful-Interactive-Logon-Time
+description: Ora in cui è stata presentata la password corretta durante un accesso CTRL+ALT+CANC.
 ms.assetid: fb4ae04e-2209-4370-875c-1b156bd34343
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-Last-successful-Interactive-Access-Time
-- attributo msDS-LastSuccessfulInteractiveLogonTime-schema AD
+- Schema AD dell'attributo ms-DS-Last-Successful-Interactive-Logon-Time
+- Schema AD dell'attributo msDS-LastSuccessfulInteractiveLogonTime
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17660935dd55f22f3f592e15fa3e5095ed2931f9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d272b03ff2168aa9cbc0f0e0b3931b25427494cba7aed8623f9fb89d021812e0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103745138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119295544"
 ---
-# <a name="ms-ds-last-successful-interactive-logon-time-attribute"></a>attributo ms-DS-Last-successful-Interactive-Access-Time
+# <a name="ms-ds-last-successful-interactive-logon-time-attribute"></a>Attributo ms-DS-Last-Successful-Interactive-Logon-Time
 
-Data e ora in cui è stata presentata la password corretta durante l'accesso con CTRL + ALT + CANC.
+Ora in cui è stata presentata la password corretta durante un accesso CTRL+ALT+CANC.
 
 
 
 | Voce | Valore |
 |-------------------|----------------------------------------------|
-| CN                | ms-DS-Last-successful-Interactive-Access-Time |
-| LDAP-Display-Name | msDS-LastSuccessfulInteractiveLogonTime      |
+| CN                | ms-DS-Last-Successful-Interactive-Logon-Time |
+| Ldap-Display-Name | msDS-LastSuccessfulInteractiveLogonTime      |
 | Dimensione              | \-                                           |
-| Privilegio aggiornamento  | \-                                           |
+| Privilegio di aggiornamento  | \-                                           |
 | Frequenza di aggiornamento  | \-                                           |
 | Attribute-Id      | 1.2.840.113556.1.4.1970                      |
-| System-ID-GUID    | 011929e6-8b5d-4258-b64a-00b0b4949747         |
-| Sintassi            | [**Interval**](s-interval.md)               |
+| System-Id-Guid    | 011929e6-8b5d-4258-b64a-00b0b4949747         |
+| Sintassi            | [**Intervallo**](s-interval.md)               |
 
 
 
@@ -55,15 +55,15 @@ Data e ora in cui è stata presentata la password corretta durante l'accesso con
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Vero                              |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Data e ora in cui è stata presentata la password corretta durante l'accesso con
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Vero                              |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Data e ora in cui è stata presentata la password corretta durante l'accesso con
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Vero                              |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

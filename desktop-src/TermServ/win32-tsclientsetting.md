@@ -5,7 +5,7 @@ ms.assetid: 438baf22-adc2-410e-bf9b-4b17a05c5ce4
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSClientSetting classe Servizi Desktop remoto
-- Win32_TSClientSetting classe Servizi Desktop remoto , descritto
+- Win32_TSClientSetting classe Servizi Desktop remoto , descritta
 topic_type:
 - apiref
 api_name:
@@ -79,7 +79,7 @@ ms.locfileid: "118349365"
 ---
 # <a name="win32_tsclientsetting-class"></a>Classe \_ TSClientSetting Win32
 
-La **classe WMI Win32 \_ TSClientSetting** definisce le impostazioni di configurazione per la [**classe \_ Terminale Win32**](win32-terminal.md) correlata ai criteri di connessione.
+La classe WMI **\_ Win32 TSClientSetting** definisce le impostazioni di configurazione per la [**classe \_ Terminale Win32**](win32-terminal.md) correlata ai criteri di connessione.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà definite ed ereditate, in ordine alfabetico. Per informazioni di riferimento sui metodi, vedere la tabella dei metodi più avanti in questo argomento.
 
@@ -148,14 +148,14 @@ class Win32_TSClientSetting : Win32_TerminalSetting
 
 ## <a name="members"></a>Members
 
-La **classe Win32 \_ TSClientSetting** ha questi tipi di membri:
+La **classe \_ Win32 TSClientSetting** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La **classe Win32 \_ TSClientSetting** include questi metodi.
+La **classe \_ TSClientSetting Win32** include questi metodi.
 
 
 
@@ -176,7 +176,7 @@ La **classe Win32 \_ TSClientSetting** include questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La **classe Win32 \_ TSClientSetting** ha queste proprietà.
+La **classe \_ Win32 TSClientSetting** ha queste proprietà.
 
 <dl> <dt>
 
@@ -186,7 +186,7 @@ La **classe Win32 \_ TSClientSetting** ha queste proprietà.
 Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Specifica se abilitare la grafica RemoteFX grafica avanzata per RemoteApp.
@@ -232,7 +232,7 @@ Questa proprietà non è disponibile.
 
 **Windows 7 e Windows Server 2008 R2: **
 
-Specifica se abilitare o disabilitare la composizione di desktop remoto. Zero disabilita la composizione del desktop remoto e un valore diverso da zero la abiliterà.
+Specifica se abilitare o disabilitare la composizione di desktop remoto. Zero disabilita la composizione del desktop remoto e un valore diverso da zero la abilita.
 
 Usare il [**metodo SetAllowDwm**](setallowdwm-win32-tsclientsetting.md) per modificare questa proprietà.
 
@@ -249,7 +249,7 @@ Tipo di accesso: sola lettura
 
 Specifica se consentire il reindirizzamento dell'acquisizione audio.
 
-**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima di Windows Server 2008 R2 e Windows 7.
+**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima Windows Server 2008 R2 e Windows 7.
 
 <dt>
 
@@ -269,7 +269,7 @@ Specifica se consentire il reindirizzamento dell'acquisizione audio.
 
 </dd> <dt>
 
-**Mapping di audio**
+**Mapping audio**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **uint32**
@@ -312,7 +312,7 @@ Il mapping audio è disabilitato.
 Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Specifica se è preferibile la modalità AVC444.
@@ -340,7 +340,7 @@ Specifica se è preferibile la modalità AVC444.
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -349,7 +349,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrizione (stringa di una riga) dell'oggetto .
+Breve descrizione (stringa di una riga) dell'oggetto.
 
 Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -401,7 +401,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica la profondità del colore. Per i valori possibili, vedere il [**metodo SetColorDepth.**](win32-tsclientsetting-setcolordepth.md)
+Specifica la profondità del colore. Per i valori possibili, vedere [**il metodo SetColorDepth.**](win32-tsclientsetting-setcolordepth.md)
 
 <dt>
 
@@ -451,7 +451,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica se eseguire l'override dell'impostazione di colore massima dell'utente.
+Specifica se eseguire l'override dell'impostazione del colore massimo dell'utente.
 
 <dt>
 
@@ -479,7 +479,7 @@ Eseguire l'override dei criteri dell'utente.
 
 </dd> <dt>
 
-**COMPortMapping**
+**ComPortMapping**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **uint32**
@@ -553,13 +553,13 @@ Le unità verranno connesse automaticamente.
 
 </dd> <dt>
 
-**ConnectionPolicy**
+**Criteri di connessione**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Criteri utilizzati dal server per recuperare le impostazioni di connessione utente.
@@ -579,7 +579,7 @@ Le impostazioni di connessione dell'utente sono effettive.
 
 <span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>
 
-<span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>**Override del server** (1)
+<span id="Server-Override"></span><span id="server-override"></span><span id="SERVER-OVERRIDE"></span>**Sostituzione server** (1)
 
 
 </dt> <dd>
@@ -667,7 +667,7 @@ I processi di stampa devono essere inviati automaticamente alla stampante locale
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -722,7 +722,7 @@ Il mapping delle unità è disabilitato.
 Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Specifica la qualità dell'immagine per l'esperienza RDP.
@@ -747,7 +747,7 @@ Specifica la qualità dell'immagine per l'esperienza RDP.
 
 <span id="medium"></span><span id="MEDIUM"></span>
 
-**media** (3)
+**medium** (3)
 
 
 </dt> <dd></dd> </dl>
@@ -760,7 +760,7 @@ Specifica la qualità dell'immagine per l'esperienza RDP.
 Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Specifica se il server Host sessione Desktop remoto usa il renderer grafico hardware come scheda predefinita.
@@ -794,7 +794,7 @@ Tipo di dati: **datetime**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
+Qualificatori: [**mappingstring**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Data di installazione dell'oggetto. La mancanza di un valore non indica che l'oggetto non è installato.
@@ -851,7 +851,7 @@ Tipo di accesso: sola lettura
 
 Numero massimo di monitoraggi supportati dal server. Usare il [**metodo SetMaxMonitors**](setmaxmonitors-win32-tsclientsetting.md) per modificare questa proprietà.
 
-**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima di Windows Server 2008 R2 e Windows 7.
+**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima Windows Server 2008 R2 e Windows 7.
 
 </dd> <dt>
 
@@ -866,7 +866,7 @@ Tipo di accesso: sola lettura
 
 Risoluzione X massima supportata dal server. Usare il [**metodo SetMaxXResolution**](setmaxxresolution-win32-tsclientsetting.md) per modificare questa proprietà.
 
-**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima Windows Server 2008 R2 e Windows 7.
+**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima di Windows Server 2008 R2 e Windows 7.
 
 </dd> <dt>
 
@@ -881,14 +881,14 @@ Tipo di accesso: sola lettura
 
 Risoluzione Y massima supportata dal server. Usare il [**metodo SetMaxYResolution**](setmaxyresolution-win32-tsclientsetting.md) per modificare questa proprietà.
 
-**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima Windows Server 2008 R2 e Windows 7.
+**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima di Windows Server 2008 R2 e Windows 7.
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -909,7 +909,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica se consentire o meno Plug and Play reindirizzamento.
+Specifica se consentire Plug and Play reindirizzamento.
 
 <dt>
 
@@ -946,7 +946,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la proprietà **AdvancedRemoteAppGraphics** è configurata dal server o da Criteri di gruppo.
+Indica se la **proprietà AdvancedRemoteAppGraphics** è configurata dal server o dai criteri di gruppo.
 
 **Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima di Windows Server 2012 R2 e Windows 8.1.
 
@@ -1012,7 +1012,7 @@ Tipo di accesso: sola lettura
 
 Indica se la **proprietà AudioCaptureRedir** è configurata dal server o dai criteri di gruppo.
 
-**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima Windows Server 2008 R2 e Windows 7.
+**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima di Windows Server 2008 R2 e Windows 7.
 
 <dt>
 
@@ -1041,7 +1041,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la **proprietà AudioMapping** è configurata dal server, da Criteri di gruppo o per impostazione predefinita.
+Indica se la **proprietà AudioMapping** è configurata dal server, dai criteri di gruppo o per impostazione predefinita.
 
 <dt>
 
@@ -1077,7 +1077,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica come viene configurata la proprietà **AVC444ModePreferredis.**
+Indica la modalità di configurazione della proprietà **AVC444ModePreferredis.**
 
 **Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Server 2008 R2, Windows Vista e Windows Server 2008:** Questa proprietà non è disponibile prima di Windows 10 o Windows Server 2016.
 
@@ -1108,7 +1108,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la **proprietà ClipboardMapping** è configurata dal server, da Criteri di gruppo o per impostazione predefinita.
+Indica se la **proprietà ClipboardMapping** è configurata dal server, dai criteri di gruppo o per impostazione predefinita.
 
 <dt>
 
@@ -1144,7 +1144,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la **proprietà ColorDepth** è configurata dal server, da Criteri di gruppo o per impostazione predefinita.
+Indica se la **proprietà ColorDepth** è configurata dal server, dai criteri di gruppo o per impostazione predefinita.
 
 <dt>
 
@@ -1180,7 +1180,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la **proprietà ColorDepthPolicy** è configurata dal server, da Criteri di gruppo o per impostazione predefinita.
+Indica se la **proprietà ColorDepthPolicy** è configurata dal server, dai criteri di gruppo o per impostazione predefinita.
 
 <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio di ICM_COMPRESS_FRAMES_INFO (VFW. h)
-description: Il \_ \_ \_ messaggio di informazioni su Comprimi frame MCI notifica a un driver di compressione di impostare i parametri per la compressione in sospeso.
+title: ICM_COMPRESS_FRAMES_INFO messaggio (Vfw.h)
+description: Il ICM COMPRESS FRAMES INFO notifica a un driver di compressione di \_ impostare i parametri per la compressione in \_ \_ sospeso.
 ms.assetid: d2f6f3b7-dff6-4fef-a642-cb77b00119af
 keywords:
-- ICM_COMPRESS_FRAMES_INFO messaggi multimediali di Windows
+- ICM_COMPRESS_FRAMES_INFO messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cbb6df0eab7706ebfc03a5e3069d4323be26ecdb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2382a930b0ce12e212adf78ddaf3c7e1b3300e47597b4671d0eae223cb536f73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118140912"
 ---
-# <a name="icm_compress_frames_info-message"></a>\_ \_ Messaggio informazioni sui frame compressi MCI \_
+# <a name="icm_compress_frames_info-message"></a>\_ICM MESSAGGIO \_ COMPRIMI \_ FRAME INFO
 
-Il messaggio di **\_ informazioni su Comprimi \_ frame \_ MCI** notifica a un driver di compressione di impostare i parametri per la compressione in sospeso.
+Il **ICM COMPRESS FRAMES \_ \_ \_ INFO** notifica a un driver di compressione di impostare i parametri per la compressione in sospeso.
 
 
 ```C++
@@ -38,14 +38,14 @@ lParam = sizeof(ICCOMPRESSFRAMES);
 
 <dl> <dt>
 
-<span id="icf"></span><span id="ICF"></span>*ICF*
+<span id="icf"></span><span id="ICF"></span>*Icf*
 </dt> <dd>
 
-Puntatore a una struttura [**ICCOMPRESSFRAMES**](/windows/desktop/api/Vfw/ns-vfw-iccompressframes) . I membri **GetData** e **PutData** di questa struttura non vengono utilizzati con questo messaggio.
+Puntatore a [**una struttura ICCOMPRESSFRAMES.**](/windows/desktop/api/Vfw/ns-vfw-iccompressframes) I **membri GetData** **e PutData** di questa struttura non vengono usati con questo messaggio.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
 Dimensioni, in byte, di [**ICCOMPRESSFRAMES**](/windows/desktop/api/Vfw/ns-vfw-iccompressframes).
@@ -54,11 +54,11 @@ Dimensioni, in byte, di [**ICCOMPRESSFRAMES**](/windows/desktop/api/Vfw/ns-vfw-i
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce ICERR \_ OK se ha esito positivo o un errore in caso contrario.
+Restituisce ICERR \_ OK in caso di esito positivo o un errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Un compressore può utilizzare questo messaggio per determinare la quantità di spazio da allocare per ogni fotogramma durante la compressione.
+Un modello di compressione può usare questo messaggio per determinare la quantità di spazio da allocare per ogni frame durante la compressione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,7 +68,7 @@ Un compressore può utilizzare questo messaggio per determinare la quantità di 
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

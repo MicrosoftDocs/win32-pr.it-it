@@ -1,6 +1,6 @@
 ---
 description: 'Altre informazioni su: Membri StringColumnValue'
-title: Membri StringColumnValue
+title: Membri di StringColumnValue
 TOCTitle: StringColumnValue members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.StringColumnValue
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.stringcolumnvalue_members(v=EXCHG.10)
@@ -14,10 +14,10 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118071251"
 ---
-# <a name="stringcolumnvalue-members"></a>Membri StringColumnValue
+# <a name="stringcolumnvalue-members"></a>Membri di StringColumnValue
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
 Valore di colonna stringa Unicode.
 
@@ -58,7 +58,7 @@ Inizio
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
-<td><a href="dn334166(v=exchg.10).md">Columnid</a></td>
+<td><a href="dn334166(v=exchg.10).md">Id colonna</a></td>
 <td>Ottiene o imposta l'elemento columnid da impostare o recuperare. Ereditato da <a href="dn334206(v=exchg.10).md">ColumnValue.</a></td>
 </tr>
 <tr class="even">
@@ -74,22 +74,22 @@ Inizio
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn351195(v=exchg.10).md">Length</a></td>
-<td>Ottiene la lunghezza in byte di un valore di colonna, ovvero zero se column è Null, in caso contrario corrisponde alla lunghezza in byte del valore stringa. La lunghezza dei byte viene determinata presupponendo due byte per carattere. Esegue l'override <a href="dn334213(v=exchg.10).md">di ColumnValue.Length.</a></td>
+<td>Ottiene la lunghezza in byte di un valore di colonna, ovvero zero se column è Null. In caso contrario, corrisponde alla lunghezza in byte del valore stringa. La lunghezza dei byte viene determinata presupponendo due byte per carattere. Esegue l'override <a href="dn334213(v=exchg.10).md">di ColumnValue.Length.</a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn334169(v=exchg.10).md">RetrieveGrbit</a></td>
-<td>Ottiene o imposta le opzioni di recupero della colonna. Ereditato da <a href="dn334206(v=exchg.10).md">ColumnValue.</a></td>
+<td>Ottiene o imposta le opzioni di recupero delle colonne. Ereditato da <a href="dn334206(v=exchg.10).md">ColumnValue.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn334215(v=exchg.10).md">SetGrbit</a></td>
-<td>Ottiene o imposta le opzioni di aggiornamento della colonna. Ereditato da <a href="dn334206(v=exchg.10).md">ColumnValue.</a></td>
+<td>Ottiene o imposta le opzioni di aggiornamento delle colonne. Ereditato da <a href="dn334206(v=exchg.10).md">ColumnValue.</a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Proprietà protetta." alt="Protected property" /></td>
 <td><a href="dn351137(v=exchg.10).md">Dimensioni</a></td>
-<td>Ottiene le dimensioni del valore nella colonna. Viene restituito 0 per le colonne con dimensioni variabili, ad esempio binarie e stringa. Esegue l'override <a href="dn334172(v=exchg.10).md">di ColumnValue.Size.</a></td>
+<td>Ottiene le dimensioni del valore nella colonna. Viene restituito 0 per le colonne di dimensioni variabili, ad esempio binarie e stringa. Esegue l'override <a href="dn334172(v=exchg.10).md">di ColumnValue.Size.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -98,7 +98,7 @@ Inizio
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
-<td><a href="dn351202(v=exchg.10).md">Oggetto ValueAsObject</a></td>
+<td><a href="dn351202(v=exchg.10).md">ValueAsObject</a></td>
 <td>Ottiene l'ultimo valore impostato o recuperato della colonna. Il valore viene restituito come oggetto generico. Esegue l'override <a href="dn334214(v=exchg.10).md">di ColumnValue.ValueAsObject.</a></td>
 </tr>
 </tbody>
@@ -125,7 +125,7 @@ Inizio
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizzare</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizza</a></td>
 <td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
@@ -141,7 +141,7 @@ Inizio
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
 <td><a href="dn351134(v=exchg.10).md">GetValueFromBytes</a></td>
-<td>Dati recuperati da ESENT, decodificare i dati e impostare il valore nell'oggetto ColumnValue. (Esegue <a href="dn334208(v=exchg.10).md">l'override di ColumnValue.GetValueFromBytes([], Int32, Int32, Int32)</a>.</td>
+<td>Dati recuperati da ESENT, decodificare i dati e impostare il valore nell'oggetto ColumnValue. Esegue l'override <a href="dn334208(v=exchg.10).md">di ColumnValue.GetValueFromBytes([], Int32, Int32, Int32)</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
@@ -151,7 +151,7 @@ Inizio
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn351194(v=exchg.10).md">ToString</a></td>
-<td>Ottiene una rappresentazione di stringa di questo oggetto . Esegue l'override <a href="dn334163(v=exchg.10).md">di ColumnValue.ToString()</a>.</td>
+<td>Ottiene una rappresentazione di stringa di questo oggetto . Esegue l'override <a href="dn334163(v=exchg.10).md">di ColumnValue.ToString().</a></td>
 </tr>
 </tbody>
 </table>

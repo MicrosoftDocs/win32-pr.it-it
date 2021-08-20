@@ -1,9 +1,9 @@
 ---
-title: Messaggio TTM_ACTIVATE (COMmctrl. h)
-description: Attiva o disattiva un controllo ToolTip.
+title: TTM_ACTIVATE messaggio (Commctrl.h)
+description: Attiva o disattiva un controllo descrizione comando.
 ms.assetid: f37da001-748c-4c51-bb32-dc49031ff2fb
 keywords:
-- Controlli di Windows Message TTM_ACTIVATE
+- TTM_ACTIVATE del messaggio Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e200b769cd3d9e07cb63a5a540960bcc707f862d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f1b2a0c67fec22b11adc54f04ed7a6e4f3cb299ad67018b29f1239cebe0f8604
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118166394"
 ---
-# <a name="ttm_activate-message"></a>Messaggio di attivazione di TTM \_
+# <a name="ttm_activate-message"></a>Messaggio TTM \_ ACTIVATE
 
-Attiva o disattiva un controllo ToolTip.
+Attiva o disattiva un controllo descrizione comando.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Attiva o disattiva un controllo ToolTip.
 *wParam* 
 </dt> <dd>
 
-Flag di attivazione. Se questo parametro è **true**, il controllo ToolTip viene attivato. Se è **false**, il controllo ToolTip viene disattivato.
+Flag di attivazione. Se questo parametro è **TRUE,** il controllo descrizione comando viene attivato. Se è **FALSE, il** controllo descrizione comando viene disattivato.
 
 </dd> <dt>
 
@@ -49,9 +49,9 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

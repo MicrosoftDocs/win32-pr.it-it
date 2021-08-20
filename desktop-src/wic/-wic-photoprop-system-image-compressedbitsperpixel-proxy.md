@@ -1,5 +1,5 @@
 ---
-description: Proxy di proprietà per i criteri dei metadati delle foto System.Image.CompressedBitsPerPixel.
+description: Proxy di proprietà per i criteri dei metadati della foto System.Image.CompressedBitsPerPixel.
 ms.assetid: 422e92d5-2661-43c9-85d5-26f55c8d88d8
 title: System.Image.CompressedBitsPerPixel Proxy
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "118710356"
 ---
 # <a name="systemimagecompressedbitsperpixel-proxy"></a>System.Image.CompressedBitsPerPixel Proxy
 
-Proxy di proprietà per i criteri dei metadati delle foto System.Image.CompressedBitsPerPixel.
+Proxy di proprietà per i criteri dei metadati della foto System.Image.CompressedBitsPerPixel.
 
 ### <a name="description"></a>Descrizione
 
-Il proxy della proprietà restituisce una coppia razionale tramite il [membro uhVal PROPVARIANT.](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
+Il proxy di proprietà restituisce una coppia razionale tramite il membro [propVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) uhVal.
 
 ### <a name="containers"></a>Contenitori
 

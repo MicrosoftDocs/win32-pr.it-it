@@ -1,10 +1,10 @@
 ---
-title: Struttura WINBIO_EXTENDED_STORAGE_INFO ( \_ tipi WINBIO. h)
-description: Contiene informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore di archiviazione per un'unità biometrica.
+title: WINBIO_EXTENDED_STORAGE_INFO struttura (Winbio \_ types.h)
+description: Contiene informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore di archiviazione per un'unità biometrica.
 ms.assetid: 7A648610-E947-4967-A9AF-C8A9C0B81D92
 keywords:
-- Struttura di WINBIO_EXTENDED_STORAGE_INFO Windows Biometric Framework API
-- API Windows Biometric Framework puntatore alla struttura PWINBIO_EXTENDED_STORAGE_INFO
+- WINBIO_EXTENDED_STORAGE_INFO struttura Windows'API Biometric Framework
+- PWINBIO_EXTENDED_STORAGE_INFO puntatore alla struttura Windows'API Biometric Framework
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ac2559717a2040cfb617e85e0a51495be1b5987
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3e8a9f133baf77a77d3db33001e996accc9574f86ad708037900a5db7c0c5e8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910382"
 ---
-# <a name="winbio_extended_storage_info-structure"></a>\_Struttura delle \_ informazioni di archiviazione estesa WINBIO \_
+# <a name="winbio_extended_storage_info-structure"></a>Struttura DELLE INFORMAZIONI \_ \_ \_ SULL'ARCHIVIAZIONE ESTESA WINBIO
 
-Contiene informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore di archiviazione per un'unità biometrica.
+Contiene informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore di archiviazione per un'unità biometrica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -67,14 +67,14 @@ Funzionalità generiche del componente di archiviazione connesso a un'unità bio
 **Fattore**
 </dt> <dd>
 
-Tipo di unità biometrica per la quale questa struttura contiene informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore di archiviazione. Se, ad esempio, il valore del membro **Factor** è **WINBIO \_ , \_** la struttura delle **\_ informazioni di \_ archiviazione \_ estesa WINBIO** si applica a un lettore di impronte digitali e contiene le informazioni rilevanti nella struttura **specifico. Fingerprint** .
+Tipo di unità biometrica per cui questa struttura contiene informazioni sulle funzionalità e sui requisiti di registrazione della scheda di archiviazione. Ad esempio, se il valore del membro **Factor** è **WINBIO \_ TYPE \_ FINGERPRINT,** la struttura **WINBIO \_ EXTENDED STORAGE \_ \_ INFO** si applica a un lettore di impronta digitale e contiene le informazioni rilevanti nella **struttura Specifc.Fingerprint.**
 
 </dd> <dt>
 
 **Specifica**
 </dt> <dd>
 
-Informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore di archiviazione per un'unità biometrica correlata a un fattore biometrico specifico.
+Informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore di archiviazione per un'unità biometrica correlata a un fattore biometrico specifico.
 
 <dl> <dt>
 
@@ -85,24 +85,24 @@ Riservato. Deve essere zero.
 
 </dd> <dt>
 
-**FacialFeatures**
+**Funzionalità del viso**
 </dt> <dd>
 
-Informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore di archiviazione per un'unità biometrica correlata alle funzionalità facciali.
+Informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore di archiviazione per un'unità biometrica correlata alle caratteristiche facciali.
 
 <dl> <dt>
 
 **Capabilities**
 </dt> <dd>
 
-Funzionalità di riconoscimento facciali del componente di archiviazione connesso a un'unità biometrica specifica.
+Funzionalità di riconoscimento facciale del componente di archiviazione connesso a un'unità biometrica specifica.
 
 </dd> </dl> </dd> <dt>
 
 **Impronta digitale**
 </dt> <dd>
 
-Informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore di archiviazione per un'unità biometrica relativa ai modelli di impronta digitale.
+Informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore di archiviazione per un'unità biometrica correlata ai modelli di impronta digitale.
 
 <dl> <dt>
 
@@ -116,21 +116,21 @@ Funzionalità di riconoscimento delle impronte digitali del componente di archiv
 **Iris**
 </dt> <dd>
 
-Informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore di archiviazione per un'unità biometrica relativa ai modelli Iris.
+Informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore di archiviazione per un'unità biometrica correlata ai modelli iris.
 
 <dl> <dt>
 
 **Capabilities**
 </dt> <dd>
 
-Funzionalità di riconoscimento Iris del componente di archiviazione connesso a un'unità biometrica specifica
+Funzionalità di riconoscimento dell'iris del componente di archiviazione connesso a un'unità biometrica specifica
 
 </dd> </dl> </dd> <dt>
 
 **Chiamata vocale**
 </dt> <dd>
 
-Informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore di archiviazione per un'unità biometrica relativa ai modelli vocali.
+Informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore di archiviazione per un'unità biometrica correlata ai modelli vocali.
 
 <dl> <dt>
 
@@ -147,9 +147,9 @@ Funzionalità di riconoscimento vocale del componente di archiviazione connesso 
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>WinBio \_ types. h (includere WinBio. h per le applicazioni client o WinBio \_ Adapters. h per gli adapter)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                                                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                                                                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ types.h (includere Winbio.h per le applicazioni client o Winbio \_ adapters.h per gli adapter)</dt> </dl> |
 
 
 
@@ -157,10 +157,10 @@ Funzionalità di riconoscimento vocale del componente di archiviazione connesso 
 
 <dl> <dt>
 
-[**\_ \_ Costanti di tipo biometrico WINBIO**](winbio-biometric-type-constants.md)
+[**Costanti DI TIPO \_ BIOMETRICO WINBIO \_**](winbio-biometric-type-constants.md)
 </dt> <dt>
 
-[**\_Costanti della funzionalità WINBIO**](winbio-capability-constants.md)
+[**Costanti CAPABILITY WINBIO \_**](winbio-capability-constants.md)
 </dt> </dl>
 
  

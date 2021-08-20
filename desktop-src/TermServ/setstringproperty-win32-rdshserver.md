@@ -26,7 +26,7 @@ ms.locfileid: "118349392"
 ---
 # <a name="setstringproperty-method-of-the-win32_rdshserver-class"></a>Metodo SetStringProperty della classe RDSHServer Win32 \_
 
-Aggiorna il valore di una proprietà stringa di [**un oggetto \_ RDSHServer Win32.**](win32-rdshserver.md)
+Aggiorna il valore di una proprietà stringa di un [**oggetto \_ RDSHServer Win32.**](win32-rdshserver.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,7 +60,7 @@ Nuovo valore della proprietà.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI.
+Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,7 +70,7 @@ Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codic
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Root \\ CIMv2 \\ rdms<br/>                                                                |
+| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                |
 | Intestazione<br/>                   | <dl> <dt>Certenroll.h</dt> </dl>     |
 | MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |

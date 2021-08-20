@@ -1,126 +1,126 @@
 ---
-title: Arbitraggio di filtro
-description: L'arbitraggio di filtro è la logica incorporata in Windows Filtering Platform (WFP) che viene usata per determinare il modo in cui i filtri interagiscono tra loro durante le decisioni di filtro del traffico di rete.
+title: Filtra arbitraggio
+description: L'arbitraggio dei filtri è la logica incorporata nella piattaforma di filtro Windows (WFP) usata per determinare il modo in cui i filtri interagiscono tra loro quando si prendono decisioni relative ai filtri del traffico di rete.
 ms.assetid: d097f307-113e-4dc3-ad59-ddfb85061583
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fd7df778d1c24b7480de3321e7a1ec126d8e642
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 7640e94440cf040d9ca51b6c639dc66e3e8a767024d6dbcd01b9c0cd2b87a24b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103727007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151190"
 ---
-# <a name="filter-arbitration"></a>Arbitraggio di filtro
+# <a name="filter-arbitration"></a>Filtra arbitraggio
 
-L'arbitraggio di filtro è la logica incorporata in Windows Filtering Platform (WFP) che viene usata per determinare il modo in cui i filtri interagiscono tra loro durante le decisioni di filtro del traffico di rete.
+L'arbitraggio dei filtri è la logica incorporata nella piattaforma di filtro Windows (WFP) usata per determinare il modo in cui i filtri interagiscono tra loro quando si prendono decisioni relative ai filtri del traffico di rete.
 
-## <a name="filter-arbitration-behaviors"></a>Filtrare i comportamenti degli arbitri
+## <a name="filter-arbitration-behaviors"></a>Filtrare i comportamenti di arbitraggio
 
-I comportamenti seguenti caratterizzano il sistema di arbitraggio del filtro:
+I comportamenti seguenti caratterizzano il sistema di arbitraggio dei filtri:
 
--   Tutto il traffico può essere controllato. Nessun traffico può ignorare i filtri a un livello specificato.
--   Il traffico può essere bloccato da un filtro di callout tramite un **veto** anche se è stato consentito da un filtro con priorità superiore.
--   Più provider possono ispezionare il traffico allo stesso livello. Ad esempio, il firewall seguito da filtri di sistema di rilevamento delle intrusioni (ID) o IPsec seguito da filtri di qualità del servizio (QoS) può esaminare il traffico sullo stesso livello.
+-   Tutto il traffico può essere controllato. Nessun traffico può ignorare i filtri a un determinato livello.
+-   Il traffico può essere bloccato da un filtro callout tramite **un veto** anche se è consentito da un filtro con priorità più alta.
+-   Più provider possono controllare il traffico allo stesso livello. Ad esempio, il firewall seguito dai filtri del sistema di rilevamento delle intrusioni (IDS) o IPsec seguito dai filtri QoS (Quality of Service) può esaminare tutti il traffico allo stesso livello.
 
 ## <a name="filtering-model"></a>Modello di filtro
 
-Ogni livello di filtro è diviso in sottolivelli ordinati per priorità (detto anche peso). Il traffico di rete attraversa i livelli secondari dalla priorità più alta alla priorità più bassa. I sottolivelli vengono creati e gestiti dagli sviluppatori che usano l'API Pam.
+Ogni livello di filtro è suddiviso in sottostrati ordinati in base alla priorità (detto anche peso). Il traffico di rete attraversa i livelli secondari dalla priorità più alta alla priorità più bassa. I sotto-livelli vengono creati e gestiti dagli sviluppatori usando l'API WFP.
 
-All'interno di ogni sottolivello, i filtri vengono ordinati in base al peso. Il traffico di rete è indicato per i filtri corrispondenti dal peso più alto a quello più basso.
+All'interno di ogni livello secondario, i filtri vengono ordinati in base al peso. Il traffico di rete viene indicato per abbinare i filtri dal peso più alto al peso più basso.
 
-L'algoritmo di arbitraggio del filtro viene applicato a tutti i livelli secondari all'interno di un livello e la decisione di filtro finale viene eseguita dopo la valutazione di tutti i sottolivelli. Questo consente di individuare più funzionalità di corrispondenza.
+L'algoritmo di arbitraggio dei filtri viene applicato a tutti i sottostrati all'interno di un livello e la decisione finale del filtro viene presa dopo la valutazione di tutti i livelli secondari. In questo modo sono disponibili più funzionalità di corrispondenza.
 
-All'interno di un sottolivello, l'arbitraggio di filtro viene eseguito come segue:
+All'interno di un livello secondario, l'arbitraggio dei filtri viene eseguito come segue:
 
--   Consente di calcolare l'elenco dei filtri corrispondenti ordinati in base al peso, dal più alto al più basso.
--   Valutare i filtri corrispondenti in ordine fino a quando non viene restituito un "permesso" o un "blocco" (i filtri possono anche restituire "continua") o fino a quando l'elenco non è esaurito.
+-   Calcolare l'elenco di filtri corrispondenti ordinati in base al peso dal più alto al più basso.
+-   Valutare i filtri corrispondenti nell'ordine fino a quando non viene restituito "Permit" o "Block" (i filtri possono anche restituire "Continue") o finché l'elenco non viene esaurito.
 -   Ignorare i filtri rimanenti e restituire l'azione dall'ultimo filtro valutato.
 
-All'interno di un livello, l'arbitraggio di filtro viene eseguito come segue:
+All'interno di un livello, l'arbitraggio dei filtri viene eseguito come segue:
 
--   Eseguire l'arbitraggio di filtro a ogni sottolivello in ordine dalla priorità più alta alla priorità più bassa.
--   Valutare tutti i sottolivelli anche se un sottolivello con priorità più alta ha deciso di bloccare il traffico.
--   Restituisce l'azione risultante in base alle regole dei criteri descritte nella sezione seguente.
+-   Eseguire l'arbitraggio dei filtri a ogni livello secondario in ordine dalla priorità più alta alla priorità più bassa.
+-   Valutare tutti i livelli secondari anche se un livello secondario con priorità più alta ha deciso di bloccare il traffico.
+-   Restituire l'azione risultante in base alle regole dei criteri descritte nella sezione seguente.
 
-Il diagramma seguente illustra una configurazione di livello secondario di esempio. Le caselle esterne rappresentano i livelli. Le caselle interne rappresentano i sottolivelli che contengono filtri. Il carattere jolly ( \* ) in un filtro indica che tutto il traffico corrisponde al filtro.
+Il diagramma seguente illustra una configurazione di sottoprogetto di esempio. Le caselle esterne rappresentano i livelli. Le caselle interne rappresentano i sotto-livelli che contengono filtri. Il carattere jolly ( \* ) in un filtro indica che tutto il traffico corrisponde al filtro.
 
-![configurazione del sottolivello di esempio](images/fwp-sub-config2.png)
+![configurazione del livello secondario di esempio](images/fwp-sub-config2.png)
 
-L'unico modo per ignorare un filtro è se un filtro di peso superiore ha consentito o bloccato il traffico all'interno dello stesso sottolivello. Viceversa, un modo per garantire che un filtro veda sempre tutto il traffico all'interno di un livello consiste nell'aggiungere un sottolivello che contiene un singolo filtro che corrisponde a tutto il traffico.
+L'unico modo per ignorare un filtro è se un filtro con peso più elevato ha consentito o bloccato il traffico all'interno dello stesso sottostrato. Al contrario, un modo per garantire che un filtro veda sempre tutto il traffico all'interno di un livello è aggiungere un livello secondario che contiene un singolo filtro che corrisponde a tutto il traffico.
 
 ## <a name="configurable-override-policy"></a>Criteri di sostituzione configurabili
 
-Le regole descritte di seguito regolano le decisioni di arbitraggio all'interno di un livello. Queste regole vengono usate dal motore di filtro per decidere quale una delle azioni del sottolivello viene applicata al traffico di rete.
+Le regole descritte di seguito regolano le decisioni di arbitrati all'interno di un livello. Queste regole vengono usate dal motore di filtro per decidere quale delle azioni del livello secondario viene applicata al traffico di rete.
 
-Il criterio di base è il seguente.
+I criteri di base sono i seguenti.
 
--   Le azioni vengono valutate in ordine di priorità dei sottolivelli dalla priorità più alta alla priorità più bassa.
--   "Blocco" esegue l'override di "Consenti".
--   "Blocco" è finale (non può essere sottoposto a override) e arresta la valutazione. Il pacchetto viene eliminato.
+-   Le azioni vengono valutate in ordine di priorità dei livelli secondari dalla priorità più alta alla priorità più bassa.
+-   "Block" esegue l'override di "Permit".
+-   "Block" è finale (non può essere sottoposto a override) e arresta la valutazione. Il pacchetto viene eliminato.
 
-Il criterio di base non supporta lo scenario di un'eccezione non sottoposta a override da un firewall. Esempi tipici di questo tipo di scenario sono:
+I criteri di base non supportano lo scenario di un'eccezione non sottoposta a override da un firewall. Esempi tipici di questo tipo di scenario sono:
 
--   Porta di amministrazione remota necessaria per l'apertura anche in presenza di un firewall di terze parti.
--   Componenti che richiedono l'apertura di porte per funzionare, ad esempio Universal Plug and Play UPnP). Se l'amministratore ha abilitato in modo esplicito il componente, il firewall non deve bloccare automaticamente il traffico.
+-   La porta di amministrazione remota deve essere aperta anche in presenza di un firewall di terze parti.
+-   Componenti che richiedono l'apertura delle porte per il funzionamento ,ad esempio universal Plug and Play UPnP. Se l'amministratore ha abilitato in modo esplicito il componente, il firewall non deve bloccare automaticamente il traffico.
 
-Per supportare gli scenari precedenti, una decisione di filtro deve essere resa più difficile da ignorare rispetto a un'altra decisione di filtro gestendo l'autorizzazione per l'override dell'azione. Questa autorizzazione viene implementata come flag **FWPS \_ right \_ Action \_ Write** e viene impostata in base al filtro.
+Per supportare gli scenari precedenti, una decisione di filtro deve essere resa più difficile da sostituire rispetto a un'altra decisione di filtro gestendo l'autorizzazione di override dell'azione. Questa autorizzazione viene implementata come flag **FWPS \_ RIGHT \_ ACTION \_ WRITE** e viene impostata in base al filtro.
 
-L'algoritmo di valutazione gestisce l'azione corrente ("Consenti" o "blocco") insieme al flag di **\_ \_ \_ scrittura azione a destra FWPS** . Il flag controlla se un sottolivello con priorità inferiore è autorizzato a eseguire l'override dell'azione. Impostando o reimpostando il flag di **\_ \_ \_ scrittura dell'azione right FWPS** nella struttura [FWPS \_ classifica \_ OUT0](/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_classify_out0) , un provider determina il modo in cui le azioni possono o non possono essere sottoposte a override. Se il flag è impostato, indica che l'azione può essere sottoposta a override. Se il flag è assente, l'azione non può essere sottoposta a override.
+L'algoritmo di valutazione mantiene l'azione corrente ("Permit" o "Block") insieme al flag **FWPS \_ RIGHT \_ ACTION \_ WRITE.** Il flag controlla se a un livello secondario con priorità inferiore è consentito eseguire l'override dell'azione. Impostando o reimpostando il flag **FWPS \_ RIGHT \_ ACTION \_ WRITE** nella struttura [FWPS \_ CLASSIFY \_ OUT0,](/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_classify_out0) un provider regola il modo in cui le azioni possono o non possono essere sottoposte a override. Se il flag è impostato, indica che è possibile eseguire l'override dell'azione. Se il flag è assente, non è possibile eseguire l'override dell'azione.
 
 
 
-| Azione | Consenti override (FWPS \_ right \_ Action \_ Write è impostato) | Descrizione                                                                                                          |
+| Azione | Consenti override (FWPS \_ RIGHT ACTION WRITE è \_ \_ impostato) | Descrizione                                                                                                          |
 |--------|----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Consenti | Sì                                                | Il traffico può essere bloccato a un altro sottolivello. Questo è un permesso soft.<br/>                            |
-| Consenti | No                                                 | Il traffico può essere bloccato a un altro sottolivello solo da un **veto** di callout. Questa operazione è detta autorizzazione rigida.<br/> |
-| Blocca  | Sì                                                | Il traffico può essere consentito a un altro sottolivello. Questa operazione è denominata blocco soft.<br/>                           |
-| Blocca  | No                                                 | Il traffico non può essere consentito a un altro sottolivello. Questa operazione è denominata blocco rigido.<br/>                        |
+| Consenti | Sì                                                | Il traffico può essere bloccato a un altro livello secondario. Si tratta di un'autorizzazione soft.<br/>                            |
+| Consenti | No                                                 | Il traffico può essere bloccato a un altro livello secondario solo da un callout **Veto**. Si tratta di un'autorizzazione hard.<br/> |
+| Blocca  | Sì                                                | Il traffico può essere consentito a un altro livello secondario. Si tratta di un blocco soft.<br/>                           |
+| Blocca  | No                                                 | Il traffico non può essere consentito a un altro livello secondario. Si tratta di un blocco rigido.<br/>                        |
 
 
 
  
 
-L'azione di filtro può essere impostata impostando il membro del **tipo** nella struttura [**FWPM \_ ACTION0**](/windows/desktop/api/Fwpmtypes/ns-fwpmtypes-fwpm_action0) su **FWP \_ Action \_ Block** o **FWP \_ Action \_ permessi**. Insieme al tipo di azione, un filtro espone anche il flag **del \_ filtro FWPM flag \_ \_ Clear \_ Action \_ right**. Se questo flag è deselezionato, il tipo di azione è rigido e non è possibile eseguirne l'override tranne quando un permesso rigido viene sostituito da un **veto** , come illustrato più avanti, altrimenti è soft, che può essere sostituito da un'azione con priorità alta.
+L'azione di filtro può  essere impostata impostando il membro del tipo nella struttura [**FWPM \_ ACTION0**](/windows/desktop/api/Fwpmtypes/ns-fwpmtypes-fwpm_action0) su **FWP \_ ACTION \_ BLOCK** o **FWP \_ ACTION \_ PERMIT.** Insieme al tipo di azione, un filtro espone anche il flag **FWPM \_ FILTER FLAG CLEAR ACTION \_ \_ \_ \_ RIGHT**. Se questo flag è deselezionato, il tipo di azione è rigido e non può essere sottoposto a override se non quando un'autorizzazione hard viene sostituita da un **veto** come spiegato più avanti, altrimenti è soft che può essere sostituito da un'azione con priorità alta.
 
-Nella tabella seguente viene elencato il comportamento predefinito per le azioni di filtro e di callout.
+La tabella seguente elenca il comportamento predefinito per le azioni filtro e callout.
 
 | Azione         | Comportamento predefinito |
 |----------------|------------------|
-| Consenti filtro  | Permesso soft      |
-| Consenti callout | Permesso soft      |
-| Blocca filtro   | Blocco rigido       |
-| Blocco callout  | Blocco flessibile       |
+| Autorizzazione di filtro  | Autorizzazione soft      |
+| Autorizzazione callout | Autorizzazione soft      |
+| Blocco di filtri   | Blocco rigido       |
+| Blocco callout  | Blocco soft       |
 
 
 
  
 
-Un **veto** è un'azione "blocco" restituita dal filtro quando il flag **FWPS \_ right \_ Action \_ Write** è stato reimpostato prima di chiamare il filtro. Un **veto** bloccherà il traffico consentito con un permesso fisso.
+Un **veto** è un'azione "Blocca" restituita dal filtro quando il flag **FWPS \_ RIGHT ACTION \_ \_ WRITE** è stato reimpostato prima di chiamare il filtro. Un **veto blocderà** il traffico consentito con un permesso rigido.
 
-Quando viene emesso un **veto** , si tratta di un'indicazione del conflitto nella configurazione. Per attenuare il conflitto, vengono eseguite le azioni seguenti.
+Quando viene emesso un **veto,** è un'indicazione di conflitto nella configurazione. Per attenuare il conflitto, vengono eseguite le azioni seguenti.
 
 -   Il traffico è bloccato.
 -   Viene generato un evento di controllo.
 -   Viene generata una notifica.
     > [!Note]  
-    > La notifica viene ricevuta da tutte le entità che lo hanno sottoscritto. Questo include in genere il firewall (per rilevare le configurazioni errate) o le applicazioni (per rilevare se è stato eseguito l'override del relativo filtro specifico).
+    > La notifica viene ricevuta da tutte le entità che la hanno sottoscritta. Questo include in genere il firewall (per rilevare configurazioni erre) o le applicazioni (per rilevare se il filtro specifico viene sostituito).
 
      
 
     > [!Note]  
-    > Non è stata creata un'istanza dell'interfaccia utente obbligatoria quando viene eseguito l'override di un filtro "permesso rigido". Le notifiche della sostituzione vengono inviate a qualsiasi provider registrato per riceverli, che consente ai firewall o alle applicazioni che hanno creato i filtri "Consenti", di visualizzare l'interfaccia utente che richiede l'intervento dell'utente. Non esiste alcun valore nella presenza di una notifica dell'interfaccia utente della piattaforma per questi eventi di override, dal momento che gli ISV del firewall che non vogliono bloccarsi in modo invisibile possono eseguire questa operazione registrandosi in una posizione diversa in WFP o (meno preferibile) gestire tutta la logica in un driver di chiamata. Gli ISV che pensano di richiedere agli utenti è una scelta ottimale per l'esperienza utente e per creare la propria interfaccia utente.
+    > Non viene creata un'istanza obbligatoria dell'interfaccia utente quando viene eseguito l'override di un filtro "Hard Permit". Le notifiche dell'override vengono inviate a qualsiasi provider registrato per riceverle, che consente ai firewall o alle applicazioni che hanno creato i filtri "Consenti", di visualizzare l'interfaccia utente che richiede l'azione dell'utente. Non è necessario avere una notifica dell'interfaccia utente della piattaforma per questi eventi di override perché gli ISV del firewall che non vogliono bloccare in modo invisibile all'utente possono eseguire questa operazione registrando in una posizione diversa in WFP o (scelta meno preferita) gestire tutta la logica in un driver call-out. Gli ISV che ritieni che la richiesta di conferma agli utenti sia una buona idea vogliono essere proprietari dell'esperienza utente e creare la propria interfaccia utente.
 
      
 
-Il comportamento di mitigazione descritto in precedenza garantisce che un filtro "blocco rigido" non venga sottoposto a override automaticamente da un filtro "blocco" e copra lo scenario in cui una porta di amministrazione remota non può essere bloccata dal firewall. Per eseguire l'override invisibile all'utente dei filtri "hard", un firewall deve aggiungere i filtri all'interno di un sottolivello con priorità più alta.
+Il comportamento di mitigazione descritto in precedenza garantisce che un filtro "Hard Permit" non venga sostituito automaticamente da un filtro "Blocca" e copre lo scenario in cui una porta di amministrazione remota non può essere bloccata dal firewall. Per eseguire l'override invisibile all'utente dei filtri "Hard Permit" un firewall deve aggiungere i filtri all'interno di un livello secondario con priorità più alta.
 
 > [!Note]  
-> Poiché non è presente alcun arbitraggio tra livelli, il traffico consentito con "permesso fisso" può essere ancora bloccato a un altro livello. Se necessario, è responsabilità dell'autore del criterio garantire che il traffico sia consentito a ogni livello.
+> Poiché non è presente alcun arbitraggio tra livelli, il traffico consentito con "Hard Permit" può comunque essere bloccato a un altro livello. È responsabilità dell'autore dei criteri assicurarsi che il traffico sia consentito a ogni livello, se necessario.
 
  
 
-Le applicazioni utente che richiedono porte da aprire aggiungono filtri sottoponibili a override a un sottolivello con priorità bassa. Il firewall può sottoscrivere gli eventi di notifica del filtro e aggiungere un filtro corrispondente dopo la convalida dell'utente (o dei criteri).
+Le applicazioni utente che richiedono l'apertura delle porte aggiungono filtri sottoponibili a override a un livello secondario con priorità bassa. Il firewall può sottoscrivere gli eventi di notifica di aggiunta del filtro e aggiungere un filtro corrispondente dopo la convalida dell'utente (o dei criteri).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

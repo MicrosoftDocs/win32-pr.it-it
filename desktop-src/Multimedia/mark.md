@@ -1,9 +1,9 @@
 ---
-title: comando Mark
-description: Il comando Mark controlla la registrazione e l'eliminazione dei contrassegni sul nastro. I dispositivi VCR riconoscono questo comando.
+title: comando mark
+description: Il comando mark controlla la registrazione e la cancellazione dei contrassegni nella videotape. I dispositivi vcr riconoscono questo comando.
 ms.assetid: d5f7a546-dc46-459c-b5dc-0651bca842cb
 keywords:
-- contrassegna il comando Windows Multimedia
+- Comando mark Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 570968af05424597a7fe2b59e86e0364694e0e1f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e0f59f56a6d542120d088d764d1b301329a7f0b167f25952587a9e743878643e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138752"
 ---
-# <a name="mark-command"></a>comando Mark
+# <a name="mark-command"></a>comando mark
 
-Il comando Mark controlla la registrazione e l'eliminazione dei contrassegni sul nastro. I dispositivi VCR riconoscono questo comando.
+Il comando mark controlla la registrazione e la cancellazione dei contrassegni nella videotape. I dispositivi vcr riconoscono questo comando.
 
-Per inviare questo comando, chiamare la funzione [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con il set di parametri *lpszCommand* come indicato di seguito.
+Per inviare questo comando, chiamare la [**funzione mciSendString**](/previous-versions//dd757161(v=vs.85)) con il parametro *lpszCommand* impostato come indicato di seguito.
 
 ``` syntax
 _stprintf_s(
@@ -42,7 +42,7 @@ _stprintf_s(
 <span id="lpszDeviceID"></span><span id="lpszdeviceid"></span><span id="LPSZDEVICEID"></span>*lpszDeviceID*
 </dt> <dd>
 
-Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegnato quando il dispositivo viene aperto.
+Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegnato all'apertura del dispositivo.
 
 </dd> <dt>
 
@@ -55,8 +55,8 @@ Uno dei flag seguenti.
 
 | Valore | Significato                                                                                                                                |
 |-------|----------------------------------------------------------------------------------------------------------------------------------------|
-| erase | Cancella un contrassegno in corrispondenza della posizione corrente, se presente. Per cancellare un contrassegno, cercare innanzitutto il contrassegno e quindi eseguire il comando "Erase" del contrassegno. |
-| scrittura | Scrive un contrassegno nella posizione corrente. È possibile che il VCR debba essere in modalità riproduzione o registrazione affinché il comando abbia esito positivo.                    |
+| erase | Cancella un segno nella posizione corrente, se presente. Per cancellare un contrassegno, cercare prima di tutto il contrassegno e quindi eseguire il comando mark "erase". |
+| scrivere | Scrive un segno nella posizione corrente. Potrebbe essere necessario che il videoregistratore sia in modalità di riproduzione o registrazione per il successo del comando.                    |
 
 
 
@@ -67,17 +67,17 @@ Uno dei flag seguenti.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Può essere "Wait", "notify" o "test". Per ulteriori informazioni su questi flag, vedere [i flag Wait, Notify e test](the-wait-notify-and-test-flags.md).
+Può essere "wait", "notify" o "test". Per altre informazioni su questi flag, vedere [Flag di attesa, notifica e test](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero in caso di esito positivo o un errore.
+Restituisce zero in caso di esito positivo o un errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-I contrassegni sono segnali speciali scritti nel contenuto che possono essere rilevati dal VCR durante le ricerche ad alta velocità. I contrassegni sono specifici del VCR.
+I contrassegni sono segnali speciali scritti nel contenuto che possono essere rilevati dal videoregistratore durante ricerche ad alta velocità. I contrassegni sono specifici del videoregistratore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -94,7 +94,7 @@ I contrassegni sono segnali speciali scritti nel contenuto che possono essere ri
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Stringhe di comando MCI](mci-command-strings.md)

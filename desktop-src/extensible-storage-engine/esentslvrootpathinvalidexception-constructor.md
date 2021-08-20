@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentSLVRootPathInvalidException'
+description: Altre informazioni sul costruttore EsentSLVRootPathInvalidException
 title: Costruttore EsentSLVRootPathInvalidException
 TOCTitle: 'EsentSLVRootPathInvalidException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSLVRootPathInvalidException.#ctor
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1e4019afbaf16d7d40b41365ed19abcabb1744fc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1b0345b7e652f720566531b83ea801dd9ed9170c9563d4b6a7e3f6bce6ba886a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118079020"
 ---
 # <a name="esentslvrootpathinvalidexception-constructor"></a>Costruttore EsentSLVRootPathInvalidException
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,4 +58,4 @@ public EsentSLVRootPathInvalidException()
 
 [Membri di EsentSLVRootPathInvalidException](./esentslvrootpathinvalidexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

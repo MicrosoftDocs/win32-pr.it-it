@@ -3,29 +3,29 @@ title: Uso degli stili della finestra per modificare la finestra MCIWnd
 description: Uso degli stili della finestra per modificare la finestra MCIWnd
 ms.assetid: 85851c37-e3d3-45f8-9c0a-0e1392c414af
 keywords:
-- MCIWndCreate (funzione)
+- Funzione MCIWndCreate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bef1471c4da280540b5b08ed43704b73a6b16f6
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 90212b43d6d51c82eb9b6e1a26bb06c7215c2568594e04980294b0d87bd53e43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "106299672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118135609"
 ---
 # <a name="using-window-styles-to-change-the-mciwnd-window"></a>Uso degli stili della finestra per modificare la finestra MCIWnd
 
-Come con qualsiasi finestra, è possibile modificare l'aspetto e il comportamento di una finestra MCIWnd scegliendo tra gli stili standard della finestra specificati con la funzione [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindowa) . Inoltre, è possibile scegliere tra diversi altri stili di finestra specifici per le finestre di MCIWnd. Con questi stili, l'applicazione può modificare le finestre MCIWnd nei modi seguenti:
+Come per qualsiasi finestra, è possibile modificare l'aspetto e il comportamento di una finestra MCIWnd scegliendo tra gli stili di finestra standard specificati con la [funzione CreateWindow.](/windows/win32/api/winuser/nf-winuser-createwindowa) È anche possibile scegliere tra diversi altri stili di finestra specifici delle finestre MCIWnd. Con questi stili, l'applicazione può modificare queste finestre MCIWnd nei modi seguenti:
 
 -   Modificare le dimensioni della finestra.
 -   Nascondere o visualizzare i controlli.
 -   Invia messaggi di notifica.
 -   Visualizzare le informazioni nella barra del titolo.
 
-Per impostare gli stili della finestra, è possibile specificarli nella funzione [**MCIWndCreate**](/windows/desktop/api/Vfw/nf-vfw-mciwndcreatea) oppure usare la macro [**MCIWndChangeStyles**](/windows/desktop/api/Vfw/nf-vfw-mciwndchangestyles) per modificare lo stile di una finestra di MCIWnd esistente. È anche possibile eseguire una query su una finestra MCIWnd per gli stili correnti usando la macro [**MCIWndGetStyles**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetstyles) .
+È possibile impostare gli stili della finestra specificandoli nella funzione [**MCIWndCreate**](/windows/desktop/api/Vfw/nf-vfw-mciwndcreatea) oppure è possibile usare la macro [**MCIWndChangeStyles**](/windows/desktop/api/Vfw/nf-vfw-mciwndchangestyles) per modificare lo stile di una finestra MCIWnd esistente. È anche possibile eseguire una query su una finestra MCIWnd per i relativi stili correnti usando la macro [**MCIWndGetStyles.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetstyles)
 
-Per un elenco degli stili della finestra specifici di MCIWnd, vedere [**MCIWndCreate**](/windows/desktop/api/Vfw/nf-vfw-mciwndcreatea).
+Per un elenco degli stili di finestra specifici di MCIWnd, vedere [**MCIWndCreate**](/windows/desktop/api/Vfw/nf-vfw-mciwndcreatea).
 
- 
+ 
 
- 
+ 

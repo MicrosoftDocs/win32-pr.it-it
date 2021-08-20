@@ -1,11 +1,11 @@
 ---
 title: Metodo ID3DX11EffectVariable AsShaderResource (D3dx11effect.h)
-description: Ottenere una variabile di risorsa shader.
+description: Ottenere una variabile shader-resource.
 ms.assetid: 02db94eb-980a-4677-af89-3006aef6faca
 keywords:
 - Metodo AsShaderResource Direct3D 11
 - Metodo AsShaderResource Direct3D 11, interfaccia ID3DX11EffectVariable
-- ID3DX11EffectVariable interface Direct3D 11 , AsShaderResource method
+- ID3DX11EffectVariable interface Direct3D 11 , Metodo AsShaderResource
 topic_type:
 - apiref
 api_name:
@@ -26,7 +26,7 @@ ms.locfileid: "118531384"
 ---
 # <a name="id3dx11effectvariableasshaderresource-method"></a>Metodo ID3DX11EffectVariable::AsShaderResource
 
-Ottenere una variabile di risorsa shader.
+Ottenere una variabile shader-resource.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,16 +45,16 @@ Questo metodo non presenta parametri.
 
 Tipo: **[ **ID3DX11EffectShaderResourceVariable**](id3dx11effectshaderresourcevariable.md)\***
 
-Puntatore a una variabile di risorsa shader. Vedere [**ID3DX11EffectShaderResourceVariable.**](id3dx11effectshaderresourcevariable.md)
+Puntatore a una variabile shader-resource. Vedere [**ID3DX11EffectShaderResourceVariable**](id3dx11effectshaderresourcevariable.md).
 
 ## <a name="remarks"></a>Commenti
 
-AsShaderResource restituisce una versione della variabile dell'effetto specializzata in una variabile shader-risorsa. Analogamente a un cast, questa specializzazione restituirà un oggetto non valido se la variabile dell'effetto non contiene dati di risorse shader.
+AsShaderResource restituisce una versione della variabile effect specializzata in una variabile shader-resource. Analogamente a un cast, questa specializzazione restituirà un oggetto non valido se la variabile effect non contiene dati di risorse shader.
 
-Le applicazioni possono testare la validità dell'oggetto restituito chiamando [**IsValid.**](id3dx11effectvariable-isvalid.md)
+Le applicazioni possono testare la validità dell'oggetto restituito chiamando [**IsValid**](id3dx11effectvariable-isvalid.md).
 
 > [!Note]  
-> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra effetti 10 ed effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -65,7 +65,7 @@ Le applicazioni possono testare la validità dell'oggetto restituito chiamando [
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

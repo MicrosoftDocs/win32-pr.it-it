@@ -3,7 +3,7 @@ title: PLAYLIST.foregroundColor
 description: L'attributo foregroundColor specifica o recupera il colore di primo piano.
 ms.assetid: a83ceeec-033e-4060-b968-1d19bd7e391b
 keywords:
-- PROPRIETÀ PLAYLIST.foregroundColor Windows Media Player
+- PLAYLIST.foregroundColor Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -29,7 +29,7 @@ ms.locfileid: "118336757"
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una stringa di **lettura/scrittura contenente** qualsiasi valore di colore Internet Explorer Microsoft. Ha un valore predefinito uguale al colore del Windows di sistema.
+Questo attributo è una  stringa di lettura/scrittura contenente qualsiasi valore di colore Internet Explorer Microsoft. Ha un valore predefinito uguale al colore del testo Windows sistema.
 
 ## <a name="requirements"></a>Requisiti
 

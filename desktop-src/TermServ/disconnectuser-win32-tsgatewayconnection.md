@@ -46,7 +46,7 @@ uint32 DisconnectUser(
 *UserName* \[ Pollici\]
 </dt> <dd>
 
-Nome utente, in formato *Domain* **\\** _UserName,_ le cui connessioni devono essere disconnesse.
+Nome utente, in formato *Dominio* **\\** _UserName,_ le cui connessioni devono essere disconnesse.
 
 </dd> </dl>
 
@@ -56,9 +56,9 @@ Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo
 
 ## <a name="remarks"></a>Commenti
 
-Per chiamare questo metodo, è necessario essere membri del gruppo Administrators.
+Per chiamare questo metodo, è necessario essere un membro del gruppo Administrators.
 
-Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,7 +68,7 @@ Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                            |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                       |
-| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                             |
+| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                             |
 | Intestazione<br/>                   | <dl> <dt>Tsgauthenticationengine.h</dt> </dl> |
 | MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl>             |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>                |
@@ -79,7 +79,7 @@ Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows
 
 <dl> <dt>
 
-[**Win32 \_ TSGatewayConnection**](win32-tsgatewayconnection.md)
+[**Connessione \_ TSGateway Win32**](win32-tsgatewayconnection.md)
 </dt> </dl>
 
  

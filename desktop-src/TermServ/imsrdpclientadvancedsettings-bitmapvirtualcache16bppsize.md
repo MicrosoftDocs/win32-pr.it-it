@@ -84,7 +84,7 @@ HRESULT get_BitmapVirtualCache16BppSize(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Nuova dimensione della cache. I valori validi sono compresi tra 1 e 32 inclusi e il valore predefinito è 20. Si noti che le dimensioni massime per tutti i file di cache virtuale sono pari a 128 MB.
+Nuova dimensione della cache. I valori validi sono compresi tra 1 e 32 inclusi e il valore predefinito è 20. Si noti che le dimensioni massime per tutti i file della cache virtuale sono pari a 128 MB.
 
 ## <a name="error-codes"></a>Codici di errore
 

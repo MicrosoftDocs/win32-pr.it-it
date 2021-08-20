@@ -23,7 +23,7 @@ ms.locfileid: "118433907"
 ---
 # <a name="creating-licenses-locally"></a>Creazione di licenze in locale
 
-In alcuni casi, ad esempio durante [l'importazione DRM,](drm-import.md)è possibile creare licenze proprie. Windows Le licenze DRM multimediali possono essere scritte in diversi modi, ma per creare la propria licenza, è necessario usare lo schema binario Extensible Media Rights (XMR). Per altre informazioni, vedere [Creazione di una licenza XMR.](building-an-xmr-license.md)
+In alcuni casi, ad esempio durante [l'importazione DRM,](drm-import.md)è possibile creare licenze proprie. Windows Le licenze DRM multimediali possono essere scritte in modi diversi, ma per creare la propria licenza, è necessario usare lo schema binario XMR (Extensible Media Rights). Per altre informazioni, vedere [Creazione di una licenza XMR.](building-an-xmr-license.md)
 
 Quando si crea una licenza, è possibile aggiungerla all'archivio licenze locale chiamando il metodo [**IWMDRMLicenseManagement::StoreLicense.**](iwmdrmlicensemanagement-storelicense.md)
 

@@ -4,23 +4,23 @@ ms.assetid: 722d657d-332a-40df-ac30-bc2050deda74
 title: Apertura di un servizio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8b273b8709a4d750085f14075d605f88ed0faa6
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 578dfee696fd17b0e360d6e344844670ca92ac6b48152242492a458a9a279f56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110423921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806721"
 ---
 # <a name="opening-a-service"></a>Apertura di un servizio
 
-Prima che l'applicazione possa eseguire operazioni su un servizio, ad esempio l'enumerazione del contenuto o il recupero di descrizioni di eventi o metodi supportati, è necessario aprire il servizio. Nell'applicazione WpdServicesApiSample questa attività viene illustrata nel modulo ServiceEnumeration.cpp usando le interfacce descritte nella tabella seguente.
+Prima che l'applicazione possa eseguire operazioni su un servizio, ad esempio l'enumerazione del contenuto o il recupero di descrizioni di metodi o eventi supportati, è necessario aprire il servizio. Nell'applicazione WpdServicesApiSample questa attività viene illustrata nel modulo ServiceEnumeration.cpp usando le interfacce descritte nella tabella seguente.
 
 
 
 | Interfaccia                                                              | Descrizione                                        |
 |------------------------------------------------------------------------|----------------------------------------------------|
 | [**IPortableDeviceServiceManager**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager) | Usato per enumerare i servizi in un dispositivo.        |
-| [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)               | Usato per aprire una connessione a un servizio del dispositivo.     |
+| [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)               | Usato per aprire una connessione a un servizio dispositivo.     |
 | [**IPortableDeviceValues**](iportabledevicevalues.md)                 | Usato per contenere le informazioni client dell'applicazione. |
 
 
@@ -29,9 +29,9 @@ Prima che l'applicazione possa eseguire operazioni su un servizio, ad esempio l'
 
 Il metodo che apre un servizio è [**IPortableDeviceService::Open.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-open) Questo metodo accetta due argomenti: un identificatore Plug-and-Play (PnP) per il servizio e un [**oggetto IPortableDeviceValues**](iportabledevicevalues.md) che contiene le informazioni client dell'applicazione.
 
-Per ottenere un identificatore PnP per un determinato servizio, l'applicazione chiama il [**metodo IPortableDeviceServiceManager::GetDeviceServices.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicemanager-getdeviceservices) Questo metodo recupera una matrice di identificatori PnP per i servizi di un GUID di categoria di servizi (ad esempio, contatti SERVICE).
+Per ottenere un identificatore PnP per un determinato servizio, l'applicazione chiama il metodo [**IPortableDeviceServiceManager::GetDeviceServices.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicemanager-getdeviceservices) Questo metodo recupera una matrice di identificatori PnP per i servizi di un GUID di categoria di servizi (ad esempio, CONTATTI DEL SERVIZIO).
 
-L'applicazione di servizio di esempio recupera un identificatore PnP per i servizi Contatti all'interno del metodo **EnumerateContactsServices** nel modulo ServiceEnumeration.cpp. L'esempio di codice seguente è tratto da questo metodo.
+L'applicazione di servizio di esempio recupera un identificatore PnP per i servizi Contacts all'interno del **metodo EnumerateContactsServices** nel modulo ServiceEnumeration.cpp. L'esempio di codice seguente è tratto da questo metodo.
 
 
 ```C++
@@ -75,11 +75,11 @@ for (dwIndex = 0; dwIndex < cPnpDeviceIDs; dwIndex++)
 
 
 
-Dopo che l'applicazione ha recuperato l'identificatore PnP per il servizio, può configurare le informazioni client e chiamare [**IPortableDeviceService::Open.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-open)
+Dopo che l'applicazione ha recuperato l'identificatore PnP per il servizio, può configurare le informazioni client e chiamare [**IPortableDeviceService::Open**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-open).
 
 Nell'applicazione di esempio questo metodo viene chiamato all'interno **di ChooseDeviceService** nel modulo ServiceEnumeration.cpp.
 
-[**IPortableDeviceService supporta**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice) due CLSID per **CoCreateInstance.** **CLSID \_ PortableDeviceService restituisce** un **puntatore IPortableDeviceService** che non aggrega il gestore di marshalling a thread libero. **CLSID \_ PortableDeviceServiceFTM è** un nuovo CLSID che restituisce un **puntatore IPortableDeviceService** che aggrega il gestore di marshalling a thread libero. In caso contrario, entrambi i puntatori supportano la stessa funzionalità.
+[**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice) supporta due CLSID per **CoCreateInstance.** **CLSID \_ PortableDeviceService restituisce** un **puntatore IPortableDeviceService** che non aggrega il gestore di marshalling a thread libero. **CLSID \_ PortableDeviceServiceFTM è** un nuovo CLSID che restituisce un **puntatore IPortableDeviceService** che aggrega il gestore di marshalling a thread libero. In caso contrario, entrambi i puntatori supportano la stessa funzionalità.
 
 Le applicazioni che si trovano in apartment a thread singolo devono usare **CLSID \_ PortableDeviceServiceFTM,** in quanto questo elimina l'overhead del marshalling dei puntatori a interfaccia. **CLSID \_ PortableDeviceService è** ancora supportato per le applicazioni legacy.
 

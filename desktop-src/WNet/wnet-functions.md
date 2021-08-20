@@ -22,26 +22,26 @@ Windows Le funzioni di rete forniscono informazioni e utilità per la gestione d
 
 ## <a name="connection-functions"></a>Funzioni di connessione
 
-Chiamare le funzioni di connessione WNet seguenti per connettere un dispositivo locale a una risorsa di rete e per annullare le connessioni di rete.
+Chiamare le funzioni di connessione WNet seguenti per connettere un dispositivo locale a una risorsa di rete e annullare le connessioni di rete.
 
 
 
 | Funzione                                                                     | Descrizione                                                                                                                                                                                                                    |
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**MultinetGetConnectionPerformance**](/windows/win32/api/winnetwk/nf-winnetwk-multinetgetconnectionperformancea) | Restituisce informazioni sulle prestazioni previste di una connessione a una risorsa di rete.                                                                                                                                      |
-| [**WNetAddConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnectiona)                               | Connette un dispositivo locale a una risorsa di rete. Disponibile per la compatibilità con le versioni a 16 bit Windows.                                                                                                                   |
+| [**WNetAddConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnectiona)                               | Connette un dispositivo locale a una risorsa di rete. Disponibile per la compatibilità con le versioni a 16 bit di Windows.                                                                                                                   |
 | [**WNetAddConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnection2a)                             | Connette un dispositivo locale a una risorsa di rete.                                                                                                                                                                                 |
-| [**WNetAddConnection3**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnection3a)                             | Connette un dispositivo locale a una risorsa di rete. Questa funzione include un parametro in più rispetto alla funzione **WNetAddConnection2,** un handle per una finestra che il provider di rete può usare come finestra di proprietario per le finestre di dialogo. |
-| [**WNetCancelConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnectiona)                         | Annulla una connessione di rete. Disponibile per la compatibilità con le versioni a 16 bit Windows.                                                                                                                                    |
+| [**WNetAddConnection3**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnection3a)                             | Connette un dispositivo locale a una risorsa di rete. Questa funzione include un parametro in più rispetto alla funzione **WNetAddConnection2,** un handle a una finestra che il provider di rete può usare come finestra di proprietario per le finestre di dialogo. |
+| [**WNetCancelConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnectiona)                         | Annulla una connessione di rete. Disponibile per la compatibilità con le versioni a 16 bit di Windows.                                                                                                                                    |
 | [**WNetCancelConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnection2a)                       | Annulla una connessione di rete, offrendo la possibilità di aggiornare il profilo utente con informazioni sulle connessioni permanenti.                                                                                                  |
 | [**WNetConnectionDialog**](/windows/win32/api/winnetwk/nf-winnetwk-wnetconnectiondialog)                         | Avvia una finestra di dialogo di esplorazione generale per la connessione alle risorse di rete.                                                                                                                                                      |
-| [**WNetConnectionDialog1**](/windows/win32/api/winnetwk/nf-winnetwk-wnetconnectiondialog1a)                       | Avvia una finestra di dialogo di esplorazione generale per la connessione alle risorse di rete usando una [**struttura CONNECTDLGSTRUCT.**](/windows/win32/api/winnetwk/ns-winnetwk-connectdlgstructa)                                                                                  |
+| [**WNetConnectionDialog1**](/windows/win32/api/winnetwk/nf-winnetwk-wnetconnectiondialog1a)                       | Avvia una finestra di dialogo di esplorazione generale per la connessione alle risorse di rete, utilizzando una [**struttura CONNECTDLGSTRUCT.**](/windows/win32/api/winnetwk/ns-winnetwk-connectdlgstructa)                                                                                  |
 | [**WNetDisconnectDialog**](/windows/win32/api/winnetwk/nf-winnetwk-wnetdisconnectdialog)                         | Avvia una finestra di dialogo di esplorazione generale per la disconnessione dalle risorse di rete.                                                                                                                                                 |
-| [**WNetDisconnectDialog1**](/windows/win32/api/winnetwk/nf-winnetwk-wnetdisconnectdialog1a)                       | Avvia una finestra di dialogo di esplorazione generale per la disconnessione dalle risorse di rete usando una [**struttura DISCDLGSTRUCT.**](/windows/win32/api/winnetwk/ns-winnetwk-discdlgstructa)                                                                                   |
+| [**WNetDisconnectDialog1**](/windows/win32/api/winnetwk/nf-winnetwk-wnetdisconnectdialog1a)                       | Avvia una finestra di dialogo di esplorazione generale per la disconnessione dalle risorse di rete, utilizzando una [**struttura DISCDLGSTRUCT.**](/windows/win32/api/winnetwk/ns-winnetwk-discdlgstructa)                                                                                   |
 | [**WNetGetConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetconnectiona)                               | Recupera il nome della risorsa di rete associata a un dispositivo locale.                                                                                                                                                     |
 | [**WNetGetUniversalName**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetuniversalnamea)                         | Quando viene specificato un percorso basato su unità per una risorsa di rete, restituisce una forma più universale del nome.                                                                                                                               |
 | [**WNetRestoreConnectionW**](/windows/win32/api/winnetwk/nf-winnetwk-wnetrestoreconnectionw)                     | Ripristina la connessione a una risorsa di rete, richiedendo all'utente, se necessario, un nome e una password.                                                                                                                      |
-| [**WNetUseConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetuseconnectiona)                               | Connette un dispositivo locale a una risorsa di rete. seleziona automaticamente un dispositivo locale inutilizzato per il reindirizzamento alla risorsa di rete.                                                                                               |
+| [**Connessione WNetUseConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetuseconnectiona)                               | Connette un dispositivo locale a una risorsa di rete. seleziona automaticamente un dispositivo locale inutilizzato per il reindirizzamento alla risorsa di rete.                                                                                               |
 
 
 
@@ -62,7 +62,7 @@ Chiamare le funzioni WNet seguenti per enumerare le risorse di rete.
 |----------------------------------------------|-----------------------------------------------------------------------------------------|
 | [**WNetCloseEnum**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcloseenum)       | Termina un'enumerazione di risorse di rete.                                                    |
 | [**WNetEnumResource**](/windows/win32/api/winnetwk/nf-winnetwk-wnetenumresourcea) | Continua un'enumerazione delle risorse di rete avviate **dalla funzione WNetOpenEnum.** |
-| [**WNetOpenEnum**](/windows/win32/api/winnetwk/nf-winnetwk-wnetopenenuma)         | Avvia un'enumerazione di risorse di rete.                                             |
+| [**WNetOpenEnum**](/windows/win32/api/winnetwk/nf-winnetwk-wnetopenenuma)         | Avvia un'enumerazione delle risorse di rete.                                             |
 
 
 
@@ -70,7 +70,7 @@ Chiamare le funzioni WNet seguenti per enumerare le risorse di rete.
 
 ## <a name="information-functions"></a>Funzioni informative
 
-Chiamare le funzioni di utilità e informazioni WNet seguenti per recuperare il provider di rete e altre informazioni.
+Chiamare le seguenti funzioni di utilità e informazioni WNet per recuperare il provider di rete e altre informazioni.
 
 
 
@@ -100,7 +100,7 @@ Chiamare la funzione WNet seguente per recuperare il nome dell'utente associato 
 
  
 
-Molte delle funzioni WNet usano una [**struttura NETRESOURCE**](/windows/desktop/api/Winnetwk/ns-winnetwk-netresourcea) per archiviare informazioni su una risorsa di rete.
+Molte delle funzioni WNet usano una [**struttura NETRESOURCE**](/windows/desktop/api/Winnetwk/ns-winnetwk-netresourcea) per archiviare le informazioni su una risorsa di rete.
 
  
 

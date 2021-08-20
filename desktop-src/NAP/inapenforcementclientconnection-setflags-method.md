@@ -1,11 +1,11 @@
 ---
-title: Metodo seflags INapEnforcementClientConnection (NapEnforcementClient. h)
-description: Viene usato per distinguere le risposte per la prima volta da risposte dovute a SoHRequests memorizzate nella cache dalle forze di esecuzione. | Metodo seflags INapEnforcementClientConnection (NapEnforcementClient. h)
+title: Metodo INapEnforcementClientConnection SetFlags (NapEnforcementClient.h)
+description: Viene usato per distinguere le risposte per la prima volta dalle risposte a causa delle richieste SoHRequest memorizzate nella cache dagli imponitori. | Metodo INapEnforcementClientConnection SetFlags (NapEnforcementClient.h)
 ms.assetid: 2f35bcdf-662c-431f-a39e-a7c758f35603
 keywords:
-- Metodo seflags NAP
-- Metodo seflags NAP, interfaccia INapEnforcementClientConnection
-- Interfaccia NAP di INapEnforcementClientConnection, metodo seflags
+- Metodo SetFlags NAP
+- Metodo SetFlags NAP, interfaccia INapEnforcementClientConnection
+- Interfaccia INapEnforcementClientConnection NAP, metodo SetFlags
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7489997fb97f0e97c5a72d23646af8ae92272628
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 306ab4312138136dc00aec701d322ed82e95a731c8c4f418fb2cfaddd921ed50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118133993"
 ---
-# <a name="inapenforcementclientconnectionsetflags-method"></a>Metodo INapEnforcementClientConnection:: seflags
+# <a name="inapenforcementclientconnectionsetflags-method"></a>Metodo INapEnforcementClientConnection::SetFlags
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **INapEnforcementClientConnection:: Seflags** viene usato per distinguere le risposte per la prima volta da risposte dovute alla memorizzazione nella cache di SoHRequests da parte degli Enforcer.
+Il **metodo INapEnforcementClientConnection::SetFlags** viene usato per distinguere le risposte per la prima volta dalle risposte a causa delle richieste SoHRequest memorizzate nella cache dagli imponitori.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,23 +47,23 @@ HRESULT SetFlags(
 
 <dl> <dt>
 
-*flag* \[ in\]
+*flag* \[ Pollici\]
 </dt> <dd>
 
-Flag che determinano se il [**SoHResponse**](/windows/win32/api/naptypes/ns-naptypes-soh) è dovuto a un **SoHRequest** memorizzato nella cache. Se *Flags* ha un valore [**freshSoHRequest**](nap-type-constants.md), si tratta di una nuova richiesta; in caso contrario, è una richiesta memorizzata nella cache.
+Flag che determinano se [**SoHResponse**](/windows/win32/api/naptypes/ns-naptypes-soh) è dovuto a un oggetto **SoHRequest memorizzato nella** cache. Se *flags* ha un valore [**freshSoHRequest**](nap-type-constants.md), si tratta di una nuova richiesta. in caso contrario, si tratta di una richiesta memorizzata nella cache.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-È possibile che vengano restituiti anche altri codici di errore specifici di COM.
+Possono essere restituiti anche altri codici di errore specifici di COM.
 
 
 
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | Operazione riuscita.<br/>                                    |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Errore delle autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazione, accesso negato.<br/>                       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
 
 
@@ -80,10 +80,10 @@ Questo valore viene impostato da NapAgent.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                |
+| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

@@ -514,7 +514,7 @@ Il dispositivo non funziona correttamente a causa di un possibile problema di en
 
 <span id="Windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>
 
-<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows identificare tutte le risorse utilizzate dal dispositivo.** (16)
+<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows non è in grado di identificare tutte le risorse utilizzate dal dispositivo.** (16)
 
 
 </dt> <dd>
@@ -664,7 +664,7 @@ Il dispositivo è disabilitato. Il firmware del dispositivo non ha fornito le ri
 
 <span id="This_device_is_using_an_Interrupt_Request__IRQ__resource_that_another_device_is_using."></span><span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>
 
-<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Questo dispositivo usa una risorsa richiesta di interruzione (IRQ) in uso da un altro dispositivo.** (30)
+<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Questo dispositivo usa una risorsa richiesta di interrupt (IRQ) in uso da un altro dispositivo.** (30)
 
 
 </dt> <dd>
@@ -680,7 +680,7 @@ Il dispositivo usa una risorsa IRQ in uso da un altro dispositivo.
 
 </dt> <dd>
 
-Il dispositivo non funziona correttamente. Windows possibile caricare i driver di dispositivo necessari.
+Il dispositivo non funziona correttamente. Windows non è possibile caricare i driver di dispositivo necessari.
 
 </dd> </dl>
 
@@ -1146,7 +1146,7 @@ Tipo di dati: **string**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**SISTEMA CIM \_**](cim-system.md).**CreationClassName**"), [**chiave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**SISTEMA CIM \_**](cim-system.md).**CreationClassName**"), [**chiave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nome della classe di creazione del sistema di ambito.
@@ -1177,7 +1177,7 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevi
 
 La **classe CIM \_ UserDevice** è derivata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
-WMI non implementa questa classe. Per le classi WMI derivate **da CIM \_ UserDevice,** vedere [Classi Win32](win32-provider.md).
+WMI non implementa questa classe. Per le classi WMI derivate **da CIM \_ UserDevice**, vedere [Classi Win32](win32-provider.md).
 
 Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 

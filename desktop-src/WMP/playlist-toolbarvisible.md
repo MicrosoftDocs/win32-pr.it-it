@@ -1,6 +1,6 @@
 ---
 title: PLAYLIST.toolbarVisible
-description: L'attributo toolbarVisible specifica o recupera un valore che indica se viene visualizzata la barra degli strumenti playlist.
+description: L'attributo toolbarVisible specifica o recupera un valore che indica se viene visualizzata la barra degli strumenti Playlist.
 ms.assetid: cf5d1d53-ed0a-4018-8b07-758d6790260e
 keywords:
 - PLAYLIST.toolbarVisible Windows Media Player
@@ -21,7 +21,7 @@ ms.locfileid: "118335679"
 ---
 # <a name="playlisttoolbarvisible"></a>PLAYLIST.toolbarVisible
 
-**L'attributo toolbarVisible** specifica o recupera un valore che indica se viene visualizzata la barra degli strumenti playlist.
+**L'attributo toolbarVisible** specifica o recupera un valore che indica se viene visualizzata la barra degli strumenti Playlist.
 
 ``` syntax
         elementID.toolbarVisible

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetUpdate'
-title: API. JetUpdate, metodo
+description: Altre informazioni sul metodo Api.JetUpdate
+title: Metodo Api.JetUpdate
 TOCTitle: 'JetUpdate method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.Api.JetUpdate
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetupdate(v=EXCHG.10)
@@ -14,17 +14,17 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: aaebd60ecfeeb849c537505f7af3e9a0d5d49da3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0687c15e16fd150f14f9dfc17ee4ebb8b30cf5fd25f450424443742e8384215a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104555075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118084825"
 ---
-# <a name="apijetupdate-method"></a>API. JetUpdate, metodo
+# <a name="apijetupdate-method"></a>Metodo Api.JetUpdate
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
 ## <a name="overload-list"></a>Elenco di overload
 
@@ -39,13 +39,13 @@ Includi membri ereditati
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
-<td><a href="dn334036(v=exchg.10).md">JetUpdate (JET_SESID, JET_TABLEID)</a></td>
-<td>La funzione JetUpdate esegue un'operazione di aggiornamento, incluso l'inserimento di una nuova riga in una tabella o l'aggiornamento di una riga esistente. L'eliminazione di una riga di tabella viene eseguita chiamando <a href="dn292131(v=exchg.10).md">JetDelete (JET_SESID, JET_TABLEID)</a>.</td>
+<td><a href="dn334036(v=exchg.10).md">JetUpdate(JET_SESID, JET_TABLEID)</a></td>
+<td>La funzione JetUpdate esegue un'operazione di aggiornamento che include l'inserimento di una nuova riga in una tabella o l'aggiornamento di una riga esistente. L'eliminazione di una riga di tabella viene eseguita <a href="dn292131(v=exchg.10).md">chiamando JetDelete(JET_SESID, JET_TABLEID)</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
-<td><a href="dn334023(v=exchg.10).md">JetUpdate (JET_SESID, JET_TABLEID, [], Int32, Int32)</a></td>
-<td>La funzione JetUpdate esegue un'operazione di aggiornamento, incluso l'inserimento di una nuova riga in una tabella o l'aggiornamento di una riga esistente. L'eliminazione di una riga di tabella viene eseguita chiamando <a href="dn292131(v=exchg.10).md">JetDelete (JET_SESID, JET_TABLEID)</a>.</td>
+<td><a href="dn334023(v=exchg.10).md">JetUpdate(JET_SESID, JET_TABLEID, [], Int32, Int32)</a></td>
+<td>La funzione JetUpdate esegue un'operazione di aggiornamento che include l'inserimento di una nuova riga in una tabella o l'aggiornamento di una riga esistente. L'eliminazione di una riga di tabella viene eseguita <a href="dn292131(v=exchg.10).md">chiamando JetDelete(JET_SESID, JET_TABLEID)</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -59,6 +59,6 @@ Inizio
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

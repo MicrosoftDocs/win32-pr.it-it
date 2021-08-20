@@ -1,27 +1,27 @@
 ---
-description: Questa sezione è destinata agli sviluppatori che scrivono i propri programmi di installazione usando l'interfaccia utente interna del database di Windows Installer. Per informazioni generali sul programma di installazione, vedere informazioni su Windows Installer.
+description: Questa sezione è destinata agli sviluppatori che scrivono programmi di installazione personalizzati usando l'interfaccia utente interna del database Windows Installer. Per informazioni generali sul programma di installazione, vedere Informazioni Windows installer.
 ms.assetid: d4a4b34b-98e7-495b-a1e2-67586bfe9c1b
 title: Guida di riferimento all'interfaccia utente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 679cd2cfff2c231c8cfbf50b487f299c0acceedb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c87b1e7373091663faedd2865f0a20306aa4e4fed35c1b1a25ac4448332e17c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118141587"
 ---
 # <a name="user-interface-reference"></a>Guida di riferimento all'interfaccia utente
 
-Questa sezione è destinata agli sviluppatori che scrivono i propri programmi di installazione usando l'interfaccia utente interna del database di Windows Installer. Per informazioni generali sul programma di installazione, vedere [informazioni su Windows Installer](about-windows-installer.md).
+Questa sezione è destinata agli sviluppatori che scrivono programmi di installazione personalizzati usando l'interfaccia utente interna del database Windows Installer. Per informazioni generali sul programma di installazione, vedere [About Windows Installer](about-windows-installer.md).
 
-Per ulteriori informazioni su come creare un'interfaccia utente, vedere [utilizzo dell'interfaccia utente](using-the-user-interface.md).
+Per altre informazioni su come creare un'interfaccia utente, vedere [Using the Interfaccia utente](using-the-user-interface.md).
 
 [Finestre di dialogo](dialog-boxes.md)
 
  
 
-[Bit di stile finestra di dialogo](dialog-style-bits.md)
+[Bit di stile della finestra di dialogo](dialog-style-bits.md)
 
  
 
@@ -33,7 +33,7 @@ Per ulteriori informazioni su come creare un'interfaccia utente, vedere [utilizz
 
  
 
-[ControlEvents](control-events.md)
+[Eventi di controllo](control-events.md)
 
  
 

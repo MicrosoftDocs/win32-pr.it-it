@@ -1,48 +1,48 @@
 ---
-title: Comportamento della memorizzazione nella cache del PIN SSO EAP-TLS
-description: Fornisce un approccio dettagliato per la risoluzione dei problemi di ripresa della sessione e di riautenticazione di un utente mobile in un ambiente EAP-TLS SSO.
+title: Comportamento del pin EAP-TLS Caching SSO
+description: Fornisce un approccio passo per passo per risolvere gli aspetti relativi alla ripresa della sessione e alla ria autenticazione di un utente in roaming in un ambiente SSO EAP-TLS.
 ms.assetid: aeded6c9-315d-4115-9750-485f017dd8dd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b7c4e3058598f98327570fbcd0347cfb84e5825
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: a8bc8cb112a6def55085cbd0b94068407320e4116a4b0161d7d923319257258f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "104117237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118085885"
 ---
-# <a name="sso-eap-tls-pin-caching-behavior"></a>Comportamento della memorizzazione nella cache del PIN SSO EAP-TLS
+# <a name="sso-eap-tls-pin-caching-behavior"></a>Comportamento del pin EAP-TLS Caching SSO
 
-In questo argomento viene fornito un approccio dettagliato per la risoluzione dei problemi di ripresa della sessione e di riautenticazione di un utente mobile in un ambiente EAP-TLS SSO.
+Questo argomento fornisce un approccio passo per passo per risolvere gli aspetti relativi alla ripresa della sessione e alla ria autenticazione di un utente in roaming in un ambiente SSO EAP-TLS.
 
-## <a name="step-by-step-approach"></a>Approccio dettagliato
+## <a name="step-by-step-approach"></a>Approccio passo per passo
 
-L'elenco seguente rappresenta un approccio dettagliato per la risoluzione dei problemi di ripresa della sessione e di riautenticazione di un utente comune in un ambiente EAP-TLS SSO.
+L'elenco seguente rappresenta un approccio passo per passo per risolvere gli aspetti relativi alla ripresa della sessione e alla ria autenticazione di un utente in roaming in un ambiente SSO EAP-TLS.
 
--   Dopo la prima autenticazione riuscita in un ambiente SSO con EAP-TLS, il supplicant conserva tutte le informazioni relative alle credenziali utente per impostazione predefinita.
+-   Dopo la prima autenticazione riuscita in un ambiente SSO con EAP-TLS, il supplicato mantiene tutte le informazioni correlate alle credenziali utente per impostazione predefinita.
     > [!Note]  
-    > Anche se soggetto alla particolare implementazione del richiedente, è consigliabile che il richiedente mantenga l'intera struttura della [**\_ matrice di \_ \_ campi di input della configurazione EAP**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_config_input_field_array) utilizzata per l'ultima volta nella chiamata [**EapHostPeerQueryUserBlobFromCredentialInputFields**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerqueryuserblobfromcredentialinputfields) a EAPHost.
+    > Anche se soggetto all'implementazione supplicante specifica, è consigliabile che il supplicante manteni l'intera struttura [**EAP \_ CONFIG INPUT \_ FIELD \_ ARRAY**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_config_input_field_array) usata per ultima nella chiamata [**di EapHostPeerQueryUserBlobFromCredentialInputFields**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerqueryuserblobfromcredentialinputfields) a EAPHost.
 
-     
+     
 
--   Quando l'utente si sposta per la prima volta e viene avviata la riautenticazione, il richiedente chiama di nuovo [**EapHostPeerQueryUserBlobFromCredentialInputFields**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerqueryuserblobfromcredentialinputfields) con la stessa struttura della [**matrice di \_ \_ \_ campi di input della configurazione EAP**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_config_input_field_array) . il richiedente deve anche passare lo stesso BLOB utente mantenuto dopo la prima autenticazione riuscita.
--   EAPHost passa quindi le informazioni nel BLOB utente al metodo EAP.
--   Il metodo EAP aggiorna a sua volta il BLOB utente con i campi delle credenziali, il PIN, ad esempio, fornito in *pEapConfigInputFieldArray*, e mantiene i valori rimanenti, il certificato del server, ad esempio, come nel BLOB utente originale.
--   Una volta completati questi passaggi, il richiedente può riprendere l'autenticazione in modo normale chiamando la funzione di runtime [**EapHostPeerBeginSession**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerbeginsession) con questo blob utente.
+-   Quando l'utente viene prima in roaming e viene avviata la nuova autenticazione, il supplicato chiama di nuovo [**EapHostPeerQueryUserBlobFromCredentialInputFields**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerqueryuserblobfromcredentialinputfields) con la stessa struttura [**EAP \_ CONFIG INPUT \_ FIELD \_ ARRAY.**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_config_input_field_array) Il supplicant deve anche passare lo stesso BLOB utente mantenuto dopo la prima autenticazione riuscita.
+-   EAPHost passa quindi le informazioni nel BLOB dell'utente al metodo EAP.
+-   Il metodo EAP aggiorna a sua volta il BLOB dell'utente con i campi delle credenziali, ad esempio il PIN fornito in *pEapConfigInputFieldArray,* e mantiene i valori rimanenti, ad esempio il certificato del server, come nel BLOB dell'utente originale.
+-   Dopo aver completato questi passaggi, il supplicante può riprendere l'autenticazione in modo normale chiamando la funzione di run-time [**EapHostPeerBeginSession**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerbeginsession) con questo BLOB utente.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Scenari EAPHost SSO](why-eaphost-sso.md)
+[Scenari di EAPHost per l'accesso Single Sign-On](why-eaphost-sso.md)
 </dt> <dt>
 
 [SSO e PLAP](understanding-sso-and-plap.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

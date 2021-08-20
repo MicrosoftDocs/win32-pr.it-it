@@ -32,7 +32,7 @@ Attributo utilizzato per definire se la zona DNS è firmata o meno.
 | CN                | ms-DNS-Is-Signed                     |
 | Ldap-Display-Name | msDNS-IsSigned                       |
 | Dimensione              | \-                                   |
-| Aggiorna privilegio  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2130              |
 | System-Id-Guid    | aa12854c-d8fc-4d5e-91ca-368b8d829bee |
@@ -53,7 +53,7 @@ Attributo utilizzato per definire se la zona DNS è firmata o meno.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| A valore singolo       | Vero                                     |
+| Is-Single-Valued       | Vero                                     |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                             |
@@ -61,7 +61,7 @@ Attributo utilizzato per definire se la zona DNS è firmata o meno.
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000008                               |
 | System-Flags           | 0x00000010                               |
-| Classi usate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 

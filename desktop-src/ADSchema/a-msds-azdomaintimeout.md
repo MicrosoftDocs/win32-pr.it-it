@@ -1,6 +1,6 @@
 ---
 title: Attributo ms-DS-Az-Domain-Timeout
-description: Tempo, in millisecondi, dopo che un dominio è stato rilevato non raggiungibile e prima che il controller di dominio venga riprovato.
+description: Tempo, in millisecondi, dopo che un dominio è stato rilevato come non raggiungibile e prima che il controller di dominio venga tentato di nuovo.
 ms.assetid: b2523faa-7cf1-4325-a3fa-70c5f568adaa
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "118426734"
 ---
 # <a name="ms-ds-az-domain-timeout-attribute"></a>Attributo ms-DS-Az-Domain-Timeout
 
-Tempo, in millisecondi, dopo che un dominio è stato rilevato non raggiungibile e prima che il controller di dominio venga riprovato.
+Tempo, in millisecondi, dopo che un dominio è stato rilevato come non raggiungibile e prima che il controller di dominio venga tentato di nuovo.
 
 
 
@@ -32,7 +32,7 @@ Tempo, in millisecondi, dopo che un dominio è stato rilevato non raggiungibile 
 | CN                | ms-DS-Az-Domain-Timeout                 |
 | Ldap-Display-Name | msDS-AzDomainTimeout                    |
 | Dimensione              | \-                                      |
-| Privilegio di aggiornamento  | Amministratore di AzRoles                           |
+| Aggiorna privilegio  | AzRoles admin                           |
 | Frequenza di aggiornamento  | Durante l'inizializzazione o la modifica dei criteri. |
 | Attribute-Id      | 1.2.840.113556.1.4.1795                 |
 | System-Id-Guid    | 6448f56a-ca70-4e2e-b0af-d20e4ce653d0    |

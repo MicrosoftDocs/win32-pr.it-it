@@ -1,10 +1,10 @@
 ---
 title: Interfaccia ID3DX11EffectRasterizerVariable (D3dx11effect.h)
-description: Un'interfaccia rasterizer-variable accede allo stato del rasterizzatore.
+description: Un'interfaccia rasterizer-variable accede allo stato di rasterizzazione.
 ms.assetid: d039e3c5-c066-4658-bead-92a5d705ed89
 keywords:
-- ID3DX11EffectRasterizerVariable interface Direct3D 11
-- ID3DX11EffectRasterizerVariable interface Direct3D 11 , descritto
+- Interfaccia Id3DX11EffectRasterizerVariable Direct3D 11
+- INTERFACCIA ID3DX11EffectRasterizerVariable Direct3D 11 , descritta
 topic_type:
 - apiref
 api_name:
@@ -25,7 +25,7 @@ ms.locfileid: "118534187"
 ---
 # <a name="id3dx11effectrasterizervariable-interface"></a>Interfaccia ID3DX11EffectRasterizerVariable
 
-Un'interfaccia rasterizer-variable accede allo stato del rasterizzatore.
+Un'interfaccia rasterizer-variable accede allo stato di rasterizzazione.
 
 ## <a name="members"></a>Membri
 
@@ -35,15 +35,15 @@ Un'interfaccia rasterizer-variable accede allo stato del rasterizzatore.
 
 ### <a name="methods"></a>Metodi
 
-Questi metodi sono disponibili nell'interfaccia **ID3DX11EffectRasterizerVariable.**
+**L'interfaccia ID3DX11EffectRasterizerVariable** include questi metodi.
 
 
 
 | Metodo                                                                                   | Descrizione                                                            |
 |:-----------------------------------------------------------------------------------------|:-----------------------------------------------------------------------|
 | [**GetBackingStore**](id3dx11effectrasterizervariable-getbackingstore.md)               | Ottenere un puntatore a una variabile che contiene lo stato rasteriser.<br/> |
-| [**GetRasterizerState**](id3dx11effectrasterizervariable-getrasterizerstate.md)         | Ottenere un puntatore a un'interfaccia del rasterizzatore.<br/>                    |
-| [**SetRasterizerState**](id3dx11effectrasterizervariable-setrasterizerstate.md)         | Imposta lo stato del rasterizzatore.<br/>                                  |
+| [**GetRasterizerState**](id3dx11effectrasterizervariable-getrasterizerstate.md)         | Ottenere un puntatore a un'interfaccia di rasterizzazione.<br/>                    |
+| [**SetRasterizerState**](id3dx11effectrasterizervariable-setrasterizerstate.md)         | Imposta lo stato di rasterizzazione.<br/>                                  |
 | [**UndoSetRasterizerState**](id3dx11effectrasterizervariable-undosetrasterizerstate.md) | Ripristina uno stato di rasterizzazione impostato in precedenza.<br/>                  |
 
 
@@ -54,10 +54,10 @@ Questi metodi sono disponibili nell'interfaccia **ID3DX11EffectRasterizerVariabl
 
 Quando un effetto viene letto in memoria, viene creata un'interfaccia [**ID3DX11EffectVariable.**](id3dx11effectvariable.md)
 
-Le variabili degli effetti vengono salvate in memoria nell'archivio di backup. Quando viene applicata una tecnica, i valori nell'archivio di backup vengono copiati nel dispositivo. È possibile usare uno di questi metodi per restituire lo stato.
+Le variabili di effetto vengono salvate in memoria nell'archivio di backup. Quando viene applicata una tecnica, i valori nell'archivio di backup vengono copiati nel dispositivo. È possibile usare uno di questi metodi per restituire lo stato.
 
 > [!Note]  
-> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra effetti 10 ed effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -68,7 +68,7 @@ Le variabili degli effetti vengono salvate in memoria nell'archivio di backup. Q
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 
@@ -79,7 +79,7 @@ Le variabili degli effetti vengono salvate in memoria nell'archivio di backup. Q
 [**ID3DX11EffectVariable**](id3dx11effectvariable.md)
 </dt> <dt>
 
-[Interfacce di Effects 11](d3d11-graphics-reference-effects11-interfaces.md)
+[Interfacce effetti 11](d3d11-graphics-reference-effects11-interfaces.md)
 </dt> <dt>
 
 [Interfacce D3DX](d3d11-graphics-reference-d3dx11-interfaces.md)

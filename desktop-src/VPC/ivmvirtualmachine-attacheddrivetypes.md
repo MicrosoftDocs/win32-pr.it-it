@@ -1,6 +1,6 @@
 ---
-title: Proprietà IVMVirtualMachine AttachedDriveTypes (VPCCOMInterfaces. h)
-description: Matrice che indica il tipo di unità collegata a ogni posizione della macchina virtuale.
+title: Proprietà IVMVirtualMachine AttachedDriveTypes (VPCCOMInterfaces.h)
+description: Matrice che indica il tipo di unità collegata a ogni posizione nella macchina virtuale.
 ms.assetid: 6896c9cd-5448-4fbb-8c8e-eef306a5cea1
 keywords:
 - Proprietà AttachedDriveTypes Virtual PC
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a5f01802b7fa7e3a4f1ccbfc1b5c4bf70e06614
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: efbb326379faacdc9f48af84f5bff38ee1d29c16c18ca89765001db3eed3ee50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118123210"
 ---
-# <a name="ivmvirtualmachineattacheddrivetypes-property"></a>Proprietà IVMVirtualMachine:: AttachedDriveTypes
+# <a name="ivmvirtualmachineattacheddrivetypes-property"></a>Proprietà IVMVirtualMachine::AttachedDriveTypes
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Recupera una matrice che indica il tipo di unità collegata a ogni posizione della macchina virtuale (VM).
+Recupera una matrice che indica il tipo di unità collegata a ogni posizione nella macchina virtuale.
 
 Questa proprietà è di sola lettura.
 
@@ -45,7 +45,7 @@ HRESULT get_AttachedDriveTypes(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Variante di tipo VT **\_ Array** VT \| **\_ Variant** contenente voci di tipo **VT \_ Ui1**. La matrice contiene il valore [**VMDriveType**](vmdrivetype.md) di ogni dispositivo connesso a ogni percorso del bus. La matrice viene ordinata in base a \[ *busNumber* \] \[ *DeviceID* \] .
+Variante di tipo **VT \_ ARRAY** \| **VT \_ VARIANT** contenente voci di tipo **VT \_ UI1.** La matrice contiene il [**valore VMDriveType**](vmdrivetype.md) di ogni dispositivo connesso a ogni posizione del bus. La matrice è ordinata in base \[ *a busNumber* \] \[ *deviceID* \] .
 
 ## <a name="error-codes"></a>Codici di errore
 
@@ -54,9 +54,9 @@ Variante di tipo VT **\_ Array** VT \| **\_ Variant** contenente voci di tipo **
 | Nome/valore                                                                                                                                                    | Significato                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | L'operazione è stata completata.<br/>     |
-| <dl> <dt>E \_ PUNTATORE</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **null**.<br/>        |
-| <dl> <dt>Macchina virtuale \_ 0xA0040207 E \_ VM \_ sconosciute</dt> <dt></dt> </dl> | La configurazione è sconosciuta.<br/>     |
-| <dl> <dt>Disp \_ 0x80020009 \_ eccezione E</dt> <dt></dt> </dl> | Si è verificato un errore imprevisto.<br/> |
+| <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **NULL.**<br/>        |
+| <dl> <dt>Macchina virtuale \_ E \_ MACCHINA \_ VIRTUALE SCONOSCIUTA</dt> <dt>0xA0040207</dt> </dl> | La configurazione è sconosciuta.<br/>     |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/> |
 
 
 
@@ -66,12 +66,12 @@ Variante di tipo VT **\_ Array** VT \| **\_ Variant** contenente voci di tipo **
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMVirtualMachine è definito come f7092aa1-33ed-4F78-a59f-c00adfc2edd7<br/>          |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID \_ IVMVirtualMachine è definito come f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
 
 
 

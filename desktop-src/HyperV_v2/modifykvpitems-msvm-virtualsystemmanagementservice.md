@@ -1,7 +1,7 @@
 ---
 description: Modifica le coppie chiave-valore esistenti in una macchina virtuale.
 ms.assetid: A014F681-4429-4982-95AA-DF371925BB3B
-title: Metodo ModifyKvpItems della Msvm_VirtualSystemManagementService classe
+title: Metodo ModifyKvpItems della classe Msvm_VirtualSystemManagementService
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -41,7 +41,7 @@ uint32 ModifyKvpItems(
 
 <dl> <dt>
 
-*Sistema di destinazione* \[ Pollici\]
+*TargetSystem* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **CIM \_ ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem)**
@@ -53,7 +53,7 @@ Riferimento alla macchina virtuale in cui verranno modificate le coppie chiave-v
 *Elementi di dati* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **\[ \] string**
+Tipo: **\[ \] stringa**
 
 Matrice di coppie chiave-valore da modificare. Ogni elemento della matrice è un'istanza incorporata della [**classe Msvm \_ KvpExchangeDataItem.**](msvm-kvpexchangedataitem.md) Questo metodo ha esito negativo se una delle coppie chiave-valore specificate non esiste nel sistema di destinazione. Questa matrice può contenere al massimo 128 elementi.
 
@@ -76,13 +76,13 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-**Completata senza errori** (0)
+**Completato senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo verificati - Processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -100,7 +100,7 @@ Questo metodo restituisce uno dei valori seguenti.
 **Parametro non** valido (32773)
 </dt> <dt>
 
-**Il sistema è in uso** (32774)
+**Sistema in uso** (32774)
 </dt> <dt>
 
 **Stato non valido per questa operazione** (32775)
@@ -117,11 +117,11 @@ Questo metodo restituisce uno dei valori seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla [**classe Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) potrebbe essere limitato dal filtro di Controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
+L'accesso alla [**classe Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) potrebbe essere limitato dal filtro del controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Esempio
 
-L'esempio C# seguente modifica le coppie chiave-valore in una macchina virtuale. Le utilità a cui si fa riferimento sono disponibili in [Utilità comuni per gli esempi di virtualizzazione (V2).](common-utilities-for-the-virtualization-samples-v2.md)
+L'esempio C# seguente modifica le coppie chiave-valore in una macchina virtuale. Le utilità di riferimento sono disponibili in [Utilità comuni per gli esempi di virtualizzazione (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 > [!IMPORTANT]
 > Per funzionare correttamente, il codice seguente deve essere eseguito nel server host della macchina virtuale e deve essere eseguito con privilegi di amministratore.
@@ -201,7 +201,7 @@ namespace HyperVSamples
 
 
 
-Nell'esempio Visual Basic Scripting Edition (VBScript) seguente vengono modificata le coppie chiave-valore in una macchina virtuale.
+L'esempio Visual Basic Scripting Edition (VBScript) seguente modifica le coppie chiave-valore in una macchina virtuale.
 
 > [!IMPORTANT]
 > Per funzionare correttamente, il codice seguente deve essere eseguito nel server host della macchina virtuale e deve essere eseguito con privilegi di amministratore.
@@ -381,7 +381,7 @@ End Function
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
 | Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 

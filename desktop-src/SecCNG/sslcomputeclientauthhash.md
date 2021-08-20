@@ -1,7 +1,7 @@
 ---
-description: Calcola un hash da utilizzare durante l'autenticazione del certificato.
+description: Calcola un hash da usare durante l'autenticazione del certificato.
 ms.assetid: f4a12464-8ad6-4bf9-8b6e-49bdf5332b66
-title: Funzione SslComputeClientAuthHash (Sslprovider. h)
+title: Funzione SslComputeClientAuthHash (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: faea1699657efd92049068e48ff361c48242e9c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 59d1a4d8491175acb0f833cbafb430faae9b36b38a179970b7a99d6b0077591d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907162"
 ---
-# <a name="sslcomputeclientauthhash-function"></a>SslComputeClientAuthHash (funzione)
+# <a name="sslcomputeclientauthhash-function"></a>Funzione SslComputeClientAuthHash
 
-La funzione **SslComputeClientAuthHash** calcola un [*hash*](/windows/desktop/SecGloss/h-gly) da usare durante l'autenticazione del [*certificato*](/windows/desktop/SecGloss/c-gly) .
+La **funzione SslComputeClientAuthHash** calcola un [*hash*](/windows/desktop/SecGloss/h-gly) da usare durante l'autenticazione [*del*](/windows/desktop/SecGloss/c-gly) certificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,56 +46,56 @@ SECURITY_STATUS WINAPI SslComputeClientAuthHash(
 
 <dl> <dt>
 
-*hSslProvider* \[ in\]
+*hSslProvider* \[ Pollici\]
 </dt> <dd>
 
-Handle dell'istanza del provider di protocollo SSL ( [*Secure Sockets Layer Protocol*](/windows/desktop/SecGloss/s-gly) ).
+Handle dell'istanza del provider del protocollo SSL [*(Secure Sockets Layer*](/windows/desktop/SecGloss/s-gly) Protocol).
 
 </dd> <dt>
 
-*hMasterKey* \[ in\]
+*hMasterKey* \[ Pollici\]
 </dt> <dd>
 
-Handle dell'oggetto [*chiave master*](/windows/desktop/SecGloss/m-gly) .
+Handle [*dell'oggetto chiave master.*](/windows/desktop/SecGloss/m-gly)
 
 </dd> <dt>
 
-*hHandshakeHash* \[ in\]
+*hHandshakeHash* \[ Pollici\]
 </dt> <dd>
 
-Handle dell'hash dell'handshake calcolato fino a questo momento.
+Handle dell'hash dell'handshake calcolato finora.
 
 </dd> <dt>
 
-*pszAlgId* \[ in\]
+*pszAlgId* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa Unicode con terminazione null che identifica l' [*algoritmo di crittografia*](/windows/desktop/SecGloss/c-gly)richiesto. Può trattarsi di uno degli [**identificatori dell'algoritmo CNG**](cng-algorithm-identifiers.md) standard o dell'identificatore di un altro algoritmo registrato.
+Puntatore a una stringa Unicode con terminazione Null che identifica l'algoritmo [*di crittografia richiesto.*](/windows/desktop/SecGloss/c-gly) Può trattarsi di uno degli identificatori [**di algoritmo CNG**](cng-algorithm-identifiers.md) standard o dell'identificatore di un altro algoritmo registrato.
 
 </dd> <dt>
 
-*pbOutput* \[ out\]
+*pbOutput* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo di un buffer che riceve il [*BLOB della chiave*](/windows/desktop/SecGloss/k-gly). Il parametro *cbOutput* contiene la dimensione del buffer. Se questo parametro è **null**, questa funzione inserisce la dimensione richiesta, in byte, nel **valore DWORD** a cui fa riferimento il parametro *pcbResult* .
+Indirizzo di un buffer che riceve la [*chiave BLOB*](/windows/desktop/SecGloss/k-gly). Il *parametro cbOutput* contiene le dimensioni di questo buffer. Se questo parametro è **NULL,** questa funzione inserirà le dimensioni richieste, in byte, nel **valore DWORD** a cui punta *il parametro pcbResult.*
 
 </dd> <dt>
 
-*cbOutput* \[ in\]
+*cbOutput* \[ Pollici\]
 </dt> <dd>
 
-Lunghezza, in byte, del buffer *pbOutput* .
+Lunghezza, in byte, del buffer *pbOutput.*
 
 </dd> <dt>
 
-*pcbResult* \[ out\]
+*pcbResult* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un valore **DWORD** che specifica la lunghezza, in byte, dell'hash scritto nel buffer *pbOutput* .
+Puntatore a un **valore DWORD** che specifica la lunghezza, in byte, dell'hash scritto nel buffer *pbOutput.*
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Questo parametro è riservato per usi futuri.
@@ -108,13 +108,13 @@ Se la funzione ha esito positivo, restituisce zero.
 
 Se la funzione ha esito negativo, restituisce un valore di errore diverso da zero.
 
-I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
+I codici restituiti possibili includono, ma non sono limitati, i seguenti.
 
 
 
 | Codice/valore restituito                                                                                                                                                    | Descrizione                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| <dl> <dt>**Nte \_ 0x80090026L \_ handle non valido**</dt> <dt></dt> </dl> | Uno degli handle forniti non è valido.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ NON VALIDO**</dt> <dt>0x80090026L</dt> </dl> | Uno degli handle forniti non è valido.<br/> |
 
 
 
@@ -122,9 +122,9 @@ I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **SslComputeClientAuthHash** calcola l'hash che viene inviato nel messaggio di verifica del certificato dell'handshake SSL. Il valore hash viene calcolato creando un hash che contiene il master secret con un hash di tutti i messaggi di handshake precedenti inviati o ricevuti. Per ulteriori informazioni sulla sequenza di handshake SSL, vedere [la descrizione dell'handshake Secure Sockets Layer (SSL)](https://support.microsoft.com/kb/257591).
+La **funzione SslComputeClientAuthHash** calcola l'hash inviato nel messaggio di verifica del certificato dell'handshake SSL. Il valore hash viene calcolato creando un hash che contiene il master secret con un hash di tutti i messaggi di handshake precedenti inviati o ricevuti. Per altre informazioni sulla sequenza di handshake SSL, vedere [Descrizione dell'handshake Secure Sockets Layer (SSL).](https://support.microsoft.com/kb/257591)
 
-Il modo in cui viene calcolato l'hash dipende dal protocollo e dal pacchetto di crittografia utilizzati. Inoltre, l'hash dipende dal tipo di chiave di autenticazione client utilizzata; il parametro *pszAlgId* indica il tipo di chiave utilizzata per l'autenticazione client.
+Il modo in cui viene calcolato l'hash dipende dal protocollo e dalla suite di crittografia usati. Inoltre, l'hash dipende dal tipo di chiave di autenticazione client usata. Il *parametro pszAlgId* indica il tipo di chiave usata per l'autenticazione client.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -132,9 +132,9 @@ Il modo in cui viene calcolato l'hash dipende dal protocollo e dal pacchetto di 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

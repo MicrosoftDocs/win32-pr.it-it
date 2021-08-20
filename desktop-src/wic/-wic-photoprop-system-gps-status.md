@@ -1,7 +1,7 @@
 ---
 description: Criteri dei metadati delle foto per la proprietà System.GPS.Status.
 ms.assetid: 74ea0384-3b1f-4d5e-8713-7b3936813a3a
-title: Criteri dei metadati delle foto system.GPS.Status
+title: Criteri dei metadati delle foto di System.GPS.Status
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a99237b9fe14d9adbc97dd5de95158a8aa714caaa4a0a8440d9f3798a2155d20
@@ -11,11 +11,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118710516"
 ---
-# <a name="systemgpsstatus-photo-metadata-policy"></a>Criteri dei metadati delle foto system.GPS.Status
+# <a name="systemgpsstatus-photo-metadata-policy"></a>Criteri dei metadati delle foto di System.GPS.Status
 
 Criteri dei metadati delle foto per [la proprietà System.GPS.Status.](../properties/props-system-gps-status.md)
 
-### <a name="pkey"></a>Chiave PKEY
+### <a name="pkey"></a>PKEY
 
 Stato GPS PKEY \_ \_
 
@@ -67,7 +67,7 @@ I valori di schemi diversi vengono riconciliati.
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
@@ -108,7 +108,7 @@ I valori di schemi diversi vengono riconciliati.
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 

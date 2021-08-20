@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà ColumnInfo.Coltyp'
-title: ColumnInfo.Coltyp - proprietà
+description: Altre informazioni sulla proprietà ColumnInfo.Coltyp
+title: Proprietà ColumnInfo.Coltyp
 TOCTitle: 'Coltyp property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.ColumnInfo.Coltyp
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columninfo.coltyp(v=EXCHG.10)
@@ -33,11 +33,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118083978"
 ---
-# <a name="columninfocoltyp-property"></a>ColumnInfo.Coltyp - proprietà
+# <a name="columninfocoltyp-property"></a>Proprietà ColumnInfo.Coltyp
 
 Ottiene il tipo della colonna.
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
@@ -68,6 +68,6 @@ Tipo: [Microsoft.Isam.Esent.Interop.JET_coltyp](./jet-coltyp-enumeration.md)
 
 [Classe ColumnInfo](./columninfo-class.md)
 
-[Membri ColumnInfo](./columninfo-members.md)
+[Membri columnInfo](./columninfo-members.md)
 
 [Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

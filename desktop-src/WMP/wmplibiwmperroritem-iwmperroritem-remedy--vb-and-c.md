@@ -1,11 +1,11 @@
 ---
-title: Proprietà Remedy IWMPErrorItem
-description: Riservato per utilizzi futuri. | Proprietà Remedy IWMPErrorItem
+title: Proprietà del rimedio IWMPErrorItem
+description: Riservato per utilizzi futuri. | Proprietà del rimedio IWMPErrorItem
 ms.assetid: 6aa2878a-2947-4afe-b8cd-ed79a65b3d8f
 keywords:
-- Proprietà Remedy Media Player Windows
-- Proprietà Remedy Media Player Windows, interfaccia IWMPErrorItem
-- Interfaccia IWMPErrorItem Windows Media Player, proprietà Remedy
+- proprietà remedy Windows Media Player
+- proprietà remedy Windows Media Player, interfaccia IWMPErrorItem
+- Interfaccia IWMPErrorItem Windows Media Player , proprietà remedy
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd7d913d06ef51ac668a7e4d3c4bf692836fbc7c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5f184b17582e00be96dbd2e4e7a4f8a0af3acf800a0e76adebf3925acf4ac3c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118115814"
 ---
-# <a name="iwmperroritemremedy-property"></a>Proprietà IWMPErrorItem:: Remedy
+# <a name="iwmperroritemremedy-property"></a>Proprietà IWMPErrorItem::remedy
 
 Riservato per utilizzi futuri.
 
@@ -46,7 +46,7 @@ Public ReadOnly Property remedy As System.Int32
 
 ## <a name="property-value"></a>Valore proprietà
 
-**System. Int32** che rappresenta il rimedio.
+Oggetto **System.Int32** che rappresenta il rimedio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ Public ReadOnly Property remedy As System.Int32
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
