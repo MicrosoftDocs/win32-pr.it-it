@@ -1,7 +1,7 @@
 ---
-description: Puntatore a un oggetto CAMSchedule che gestisce le attività di pianificazione del clock.
+description: Puntatore a un oggetto CAMSchedule che gestisce le attività di pianificazione per l'orologio.
 ms.assetid: 6af7437f-313c-4a1e-a412-f82d3486264f
-title: 'Membro CBaseReferenceClock:: m_pSchedule (Refclock. h)'
+title: Membro CBaseReferenceClock::m_pSchedule (Refclock.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9b71b13d1d6a7678dba61cf30315d09e074669fd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 99a04cf89d012fb9ae01ee1a48ce46c36ebf8b6731072a7a858863b7372e736e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118158089"
 ---
-# <a name="cbasereferenceclockm_pschedule-member"></a>Membro pSchedule di CBaseReferenceClock:: m \_
+# <a name="cbasereferenceclockm_pschedule-member"></a>Membro CBaseReferenceClock::m \_ pSchedule
 
-Puntatore a un oggetto [**CAMSchedule**](camschedule.md) che gestisce le attività di pianificazione del clock.
+Puntatore a un [**oggetto CAMSchedule**](camschedule.md) che gestisce le attività di pianificazione per l'orologio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ CAMSchedule *m_pSchedule;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Refclock. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Refclock.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

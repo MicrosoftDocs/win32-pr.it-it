@@ -1,9 +1,9 @@
 ---
-title: Messaggio di WM_CAP_SINGLE_FRAME_CLOSE (VFW. h)
-description: Il \_ \_ \_ messaggio di chiusura singolo frame WM Cap \_ chiude il file di acquisizione aperto dal \_ \_ messaggio di apertura del singolo frame WM Cap \_ \_ . È possibile inviare questo messaggio in modo esplicito o utilizzando la macro capCaptureSingleFrameClose.
+title: WM_CAP_SINGLE_FRAME_CLOSE messaggio (Vfw.h)
+description: Il messaggio WM CAP SINGLE FRAME CLOSE chiude il file di acquisizione aperto dal messaggio \_ WM CAP SINGLE FRAME \_ \_ \_ \_ \_ \_ \_ OPEN. È possibile inviare questo messaggio in modo esplicito o usando la macro capCaptureSingleFrameClose.
 ms.assetid: fde5f34b-0781-49a2-a509-64192a1d9ec0
 keywords:
-- WM_CAP_SINGLE_FRAME_CLOSE messaggi multimediali di Windows
+- WM_CAP_SINGLE_FRAME_CLOSE messaggio Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e35523476dde1c74c4a20447d7c46d5eafc5e529
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6f304fd0c62818562e53c6129a15b266db6f1ac000de64fb779e5cdb3e437d43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134965"
 ---
-# <a name="wm_cap_single_frame_close-message"></a>\_Messaggio di \_ \_ chiusura frame singolo WM Cap \_
+# <a name="wm_cap_single_frame_close-message"></a>Messaggio DI \_ CHIUSURA DI UN SINGOLO \_ \_ FRAME \_ WM CAP
 
-Il messaggio di **\_ \_ \_ \_ chiusura singolo frame WM Cap** chiude il file di acquisizione aperto dal messaggio di [**\_ \_ \_ \_ apertura del singolo frame WM Cap**](wm-cap-single-frame-open.md) . È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**capCaptureSingleFrameClose**](/windows/desktop/api/Vfw/nf-vfw-capcapturesingleframeclose) .
+Il **messaggio WM CAP SINGLE FRAME \_ \_ \_ \_ CLOSE** chiude il file di acquisizione aperto dal messaggio [**WM CAP SINGLE FRAME \_ \_ \_ \_ OPEN.**](wm-cap-single-frame-open.md) È possibile inviare questo messaggio in modo esplicito o usando la macro [**capCaptureSingleFrameClose.**](/windows/desktop/api/Vfw/nf-vfw-capcapturesingleframeclose)
 
 
 ```C++
@@ -36,11 +36,11 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione è riuscita o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo o FALSE **in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Per informazioni sull'installazione delle funzioni di callback, vedere l' [**errore di callback di WM \_ Cap \_ set \_ \_**](wm-cap-set-callback-error.md) e [**WM \_ Cap \_ set callback message \_ \_ frame**](wm-cap-set-callback-frame.md) .
+Per informazioni sull'installazione delle funzioni di callback, vedere i [**messaggi WM CAP SET CALLBACK \_ \_ \_ \_ ERROR**](wm-cap-set-callback-error.md) e [**WM CAP SET CALLBACK \_ \_ \_ \_ FRAME.**](wm-cap-set-callback-frame.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,7 +50,7 @@ Per informazioni sull'installazione delle funzioni di callback, vedere l' [**err
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

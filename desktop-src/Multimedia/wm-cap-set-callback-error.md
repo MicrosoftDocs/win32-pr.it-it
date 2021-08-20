@@ -1,9 +1,9 @@
 ---
-title: Messaggio di WM_CAP_SET_CALLBACK_ERROR (VFW. h)
-description: Il \_ \_ \_ messaggio di errore del set di richiamata di WM Cap \_ imposta una funzione di callback di errore nell'applicazione client. AVICap chiama questa procedura quando si verificano errori. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro capSetCallbackOnError.
+title: WM_CAP_SET_CALLBACK_ERROR messaggio (Vfw.h)
+description: Il messaggio WM \_ CAP SET CALLBACK ERROR imposta una funzione di callback degli errori \_ \_ \_ nell'applicazione client. AVICap chiama questa procedura quando si verificano errori. È possibile inviare questo messaggio in modo esplicito o usando la macro capSetCallbackOnError.
 ms.assetid: 4eb57515-9b5a-466c-bbaa-fdee3bca19db
 keywords:
-- WM_CAP_SET_CALLBACK_ERROR messaggi multimediali di Windows
+- WM_CAP_SET_CALLBACK_ERROR messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 40f50d62112d71f78196a17b958dc7d3d10702e1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f2b631a66923fc614e1486405b1c8e64f152c0f0dd21c8abec292548c546d17b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118135103"
 ---
-# <a name="wm_cap_set_callback_error-message"></a>\_Messaggio di \_ errore di callback del set di estremità WM \_ \_
+# <a name="wm_cap_set_callback_error-message"></a>MESSAGGIO \_ DI ERRORE DI CALLBACK DI WM CAP \_ SET \_ \_
 
-Il messaggio di **\_ errore del set di \_ \_ richiamata \_ di WM Cap** imposta una funzione di callback di errore nell'applicazione client. AVICap chiama questa procedura quando si verificano errori. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**capSetCallbackOnError**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonerror) .
+Il **messaggio WM CAP SET CALLBACK \_ \_ \_ \_ ERROR** imposta una funzione di callback degli errori nell'applicazione client. AVICap chiama questa procedura quando si verificano errori. È possibile inviare questo messaggio in modo esplicito o usando la macro [**capSetCallbackOnError.**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonerror)
 
 
 ```C++
@@ -41,23 +41,23 @@ lParam = (LPARAM) (LPVOID) (fpProc);
 <span id="fpProc"></span><span id="fpproc"></span><span id="FPPROC"></span>*fpProc*
 </dt> <dd>
 
-Puntatore alla funzione di callback di errore, di tipo [**capErrorCallback**](/windows/desktop/api/Vfw/nc-vfw-caperrorcallbacka). Specificare **null** per questo parametro per disabilitare una funzione di callback degli errori installata in precedenza.
+Puntatore alla funzione di callback di errore di [**tipo capErrorCallback.**](/windows/desktop/api/Vfw/nc-vfw-caperrorcallbacka) Specificare **NULL per** questo parametro per disabilitare una funzione di callback degli errori installata in precedenza.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito **positivo o negativo** se è in corso l'acquisizione di flussi o una sessione di acquisizione a singolo frame.
+Restituisce **TRUE se** l'operazione ha esito positivo o **FALSE** se è in corso un'acquisizione di flusso o una sessione di acquisizione a frame singolo.
 
 ## <a name="remarks"></a>Commenti
 
-Le applicazioni possono facoltativamente impostare una funzione di callback degli errori. Se impostata, AVICap chiama la procedura di errore nelle situazioni seguenti:
+Le applicazioni possono facoltativamente impostare una funzione di callback degli errori. Se impostato, AVICap chiama la procedura di errore nelle situazioni seguenti:
 
 -   Disco pieno.
 -   Una finestra di acquisizione non può essere connessa a un driver di acquisizione.
 -   Non è possibile aprire un dispositivo audio waveform.
 -   Il numero di frame eliminati durante l'acquisizione supera la percentuale specificata.
--   Impossibile acquisire i frame a causa di problemi di interrupt della sincronizzazione verticale.
+-   I frame non possono essere acquisiti a causa di problemi di interruzione della sincronizzazione verticale.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,7 +67,7 @@ Le applicazioni possono facoltativamente impostare una funzione di callback degl
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

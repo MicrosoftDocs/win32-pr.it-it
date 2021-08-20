@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: a9a16fef951fdee5ed7fc580da61f43d848a8dec
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3b60c28776006526db461a978c45d2693b97f01b50f09d1ba6eb8ea029b2b2f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118146970"
 ---
 # <a name="stopservice-method-of-the-msvm_securityservice-class"></a>Metodo StopService della classe Msvm \_ SecurityService
 
@@ -43,7 +43,7 @@ In caso di esito positivo, restituisce un valore 0. In caso contrario, restituis
 
 <dl> <dt>
 
-**Completata senza errori** (0)
+**Completato senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)

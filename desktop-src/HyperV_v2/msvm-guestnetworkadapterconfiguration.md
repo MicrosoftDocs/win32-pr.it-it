@@ -1,7 +1,7 @@
 ---
 description: Rappresenta la configurazione di una scheda di rete all'interno del sistema operativo guest.
 ms.assetid: 154d4a0f-0c57-496a-a351-6caa74011544
-title: Classe Msvm_GuestNetworkAdapterConfiguration
+title: Msvm_GuestNetworkAdapterConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,18 +21,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ce5738bca4563aa77678cac2b7e33f5c4d5323e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c208a14a8db57303b3ccc857ca15a5d7f88369b7093b9931c0c9cb80012230d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118147976"
 ---
-# <a name="msvm_guestnetworkadapterconfiguration-class"></a>\_Classe MSVM GuestNetworkAdapterConfiguration
+# <a name="msvm_guestnetworkadapterconfiguration-class"></a>Classe Msvm \_ GuestNetworkAdapterConfiguration
 
 Rappresenta la configurazione di una scheda di rete all'interno del sistema operativo guest.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,26 +53,26 @@ class Msvm_GuestNetworkAdapterConfiguration
 
 ## <a name="members"></a>Members
 
-La **classe \_ GuestNetworkAdapterConfiguration di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ GuestNetworkAdapterConfiguration** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ GuestNetworkAdapterConfiguration di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ GuestNetworkAdapterConfiguration** ha queste proprietà.
 
 <dl> <dt>
 
 **DefaultGateways**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato")
 </dt> </dl>
 
 Matrice di stringhe che contengono i gateway IP predefiniti configurati nella scheda di rete all'interno del sistema operativo guest. Il numero massimo di gateway IP predefiniti che possono essere configurati in una singola scheda di rete è cinque.
@@ -82,7 +82,7 @@ Matrice di stringhe che contengono i gateway IP predefiniti configurati nella sc
 **DHCPEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -95,23 +95,23 @@ Specifica se DHCP è abilitato nella scheda di rete all'interno del sistema oper
 **DNSServers**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato")
 </dt> </dl>
 
-Matrice di stringhe che contiene i server DNS configurati nella scheda di rete all'interno del sistema operativo guest.
+Matrice di stringhe che contengono i server DNS configurati nella scheda di rete all'interno del sistema operativo guest.
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -127,13 +127,13 @@ Identificatore univoco per questo oggetto.
 **IPAddresses**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato")
 </dt> </dl>
 
 Matrice di stringhe che contengono gli indirizzi IP configurati nella scheda di rete all'interno del sistema operativo guest.
@@ -143,13 +143,13 @@ Matrice di stringhe che contengono gli indirizzi IP configurati nella scheda di 
 **IPAddressOrigins**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice UINT16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato")
 </dt> </dl>
 
 Origine degli indirizzi IP configurati nella scheda di rete all'interno del sistema operativo guest.
@@ -182,7 +182,7 @@ Origine degli indirizzi IP configurati nella scheda di rete all'interno del sist
 **ProtocolIFType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -232,16 +232,16 @@ Identifica i protocolli IP a cui si applicano le impostazioni specificate da que
 **Subnet**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato")
 </dt> </dl>
 
-Matrice di stringhe che contengono le subnet configurate nella scheda di rete all'interno del sistema operativo guest. Ogni elemento in questa matrice viene applicato all'elemento corrispondente nella matrice **IPAddresses** .
+Matrice di stringhe che contengono le subnet configurate nella scheda di rete all'interno del sistema operativo guest. Ogni elemento di questa matrice si applica all'elemento corrispondente nella **matrice IPAddresses.**
 
 </dd> </dl>
 
@@ -251,10 +251,10 @@ Matrice di stringhe che contengono le subnet configurate nella scheda di rete al
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
