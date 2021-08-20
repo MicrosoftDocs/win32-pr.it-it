@@ -1,25 +1,25 @@
 ---
-description: 'Altre informazioni su: ColumnValue Properties'
-title: Proprietà di ColumnValue
+description: Altre informazioni sulle proprietà ColumnValue
+title: Proprietà ColumnValue
 TOCTitle: ColumnValue properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.ColumnValue
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columnvalue_properties(v=EXCHG.10)
 ms:contentKeyID: 55100998
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5a9819d052bc2142cdbae6caedbda6678dc54cb4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 98012cc5b132233828f863c52eb07142ce897975789ff60839ff823f37d5ee8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104550658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117716866"
 ---
-# <a name="columnvalue-properties"></a>Proprietà di ColumnValue
+# <a name="columnvalue-properties"></a>Proprietà ColumnValue
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
-Il tipo [columnValue](./columnvalue-class.md) espone i membri seguenti.
+Il [tipo ColumnValue](./columnvalue-class.md) espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 
@@ -34,38 +34,38 @@ Il tipo [columnValue](./columnvalue-class.md) espone i membri seguenti.
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
-<td><a href="dn334166(v=exchg.10).md">ColumnID</a></td>
-<td>Ottiene o imposta ColumnID da impostare o recuperare.</td>
+<td><a href="dn334166(v=exchg.10).md">Id colonna</a></td>
+<td>Ottiene o imposta l'elemento columnid da impostare o recuperare.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn334212(v=exchg.10).md">Error (Errore) (Error (Errore)e)</a></td>
-<td>Ottiene l'avviso generato tramite il recupero o l'impostazione della colonna.</td>
+<td>Ottiene l'avviso generato dal recupero o dall'impostazione di questa colonna.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn334165(v=exchg.10).md">ItagSequence</a></td>
-<td>Ottiene o imposta la sequenza ITag della colonna.</td>
+<td>Ottiene o imposta la sequenza itag della colonna.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn334213(v=exchg.10).md">Length</a></td>
-<td>Ottiene la lunghezza in byte di un valore di colonna, che è zero se la colonna è null; in caso contrario, corrisponde alla dimensione per le colonne a dimensione fissa e rappresenta la lunghezza in byte effettivo del valore per le colonne di dimensioni variabili, ad esempio binario e stringa. Per le stringhe la lunghezza viene determinata in base al presupposto di due byte per carattere.</td>
+<td>Ottiene la lunghezza in byte di un valore di colonna, che è zero se column è Null. In caso contrario, corrisponde a Size per le colonne a dimensione fissa e rappresenta la lunghezza in byte del valore effettivo per le colonne di dimensioni variabili( binario e stringa). Per le stringhe, la lunghezza viene determinata presupponendo due byte per carattere.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn334169(v=exchg.10).md">RetrieveGrbit</a></td>
-<td>Ottiene o imposta le opzioni di recupero della colonna.</td>
+<td>Ottiene o imposta le opzioni di recupero delle colonne.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn334215(v=exchg.10).md">SetGrbit</a></td>
-<td>Ottiene o imposta le opzioni di aggiornamento della colonna.</td>
+<td>Ottiene o imposta le opzioni di aggiornamento delle colonne.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Proprietà protetta." alt="Protected property" /></td>
 <td><a href="dn334172(v=exchg.10).md">Dimensioni</a></td>
-<td>Ottiene la dimensione del valore nella colonna. Viene restituito 0 per le colonne di dimensioni variabili, ad esempio binario e stringa.</td>
+<td>Ottiene le dimensioni del valore nella colonna. Viene restituito 0 per le colonne di dimensioni variabili, ad esempio binarie e stringa.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -84,4 +84,4 @@ Inizio
 
 [Classe ColumnValue](./columnvalue-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

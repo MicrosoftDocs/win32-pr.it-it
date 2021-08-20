@@ -1,5 +1,5 @@
 ---
-description: "SystemConfig_Power classe: questa classe è la classe del tipo di evento per gli eventi di configurazione dell'alimentazione. La sintassi seguente è semplificata dal codice MOF."
+description: "SystemConfig_Power: questa classe è la classe del tipo di evento per gli eventi di configurazione dell'alimentazione. La sintassi seguente è semplificata dal codice MOF."
 ms.assetid: 7065b0b0-9a1d-4fce-a494-5762d5efb239
 title: SystemConfig_Power classe
 ms.topic: reference
@@ -20,14 +20,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: d7338faad8c313847ad7db7aaac5d4000abba5be
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 364a5a7261d8658937e063abed39d759a31352a77436cf58c02b9fa7c62cc3c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117814592"
 ---
-# <a name="systemconfig_power-class"></a>Classe SystemConfig \_ Power
+# <a name="systemconfig_power-class"></a>SystemConfig \_ Power class
 
 Questa classe è la classe del tipo di evento per gli eventi di configurazione dell'alimentazione.
 
@@ -52,13 +52,13 @@ class SystemConfig_Power : SystemConfig
 
 ## <a name="members"></a>Members
 
-La **classe SystemConfig \_ Power** ha questi tipi di membri:
+La **classe SystemConfig \_ Power** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe SystemConfig \_ Power** ha queste proprietà.
+Queste proprietà sono disponibili nella classe **SystemConfig \_ Power.**
 
 <dl> <dt>
 
@@ -196,8 +196,8 @@ True indica che il sistema supporta lo stato di sospensione S5.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>       |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

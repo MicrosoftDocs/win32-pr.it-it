@@ -1,11 +1,11 @@
 ---
-title: Proprietà RegisteredTask. Enabled
-description: Per gli script, ottiene o imposta un valore booleano che indica se l'attività registrata è abilitata.
+title: RegisteredTask.Enabled - proprietà
+description: Per lo scripting, ottiene o imposta un valore booleano che indica se l'attività registrata è abilitata.
 ms.assetid: ec8722a0-4055-4604-b506-a3c3f6e07954
 keywords:
-- Utilità di pianificazione proprietà abilitata
-- Utilità di pianificazione proprietà Enabled, oggetto RegisteredTask
-- Oggetto RegisteredTask Utilità di pianificazione, proprietà Enabled
+- Impostazione delle proprietà abilitata Utilità di pianificazione
+- Proprietà Enabled Utilità di pianificazione, oggetto RegisteredTask
+- Oggetto RegisteredTask Utilità di pianificazione proprietà Enabled
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 518ba354a1be11f301e84dcb7161e6e1b0e99ecb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 51f0b73ce0cebc35701484725496e6fe23b3284fe5a2ef7a3ae7faa8c400d731
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117943447"
 ---
-# <a name="registeredtaskenabled-property"></a>Proprietà RegisteredTask. Enabled
+# <a name="registeredtaskenabled-property"></a>RegisteredTask.Enabled - proprietà
 
-Per gli script, ottiene o imposta un valore booleano che indica se l'attività registrata è abilitata.
+Per lo scripting, ottiene o imposta un valore booleano che indica se l'attività registrata è abilitata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,9 +46,9 @@ Valore booleano che indica se l'attività registrata è abilitata.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

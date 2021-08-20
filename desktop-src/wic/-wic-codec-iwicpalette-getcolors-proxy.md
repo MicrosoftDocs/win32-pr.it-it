@@ -1,7 +1,7 @@
 ---
-description: Funzione proxy per il metodo getcolors.
+description: Funzione proxy per il metodo GetColors.
 ms.assetid: 31590de3-f35c-4253-9a80-2f59c795bf3f
-title: Funzione IWICPalette_GetColors_Proxy
+title: IWICPalette_GetColors_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: e39e8825b78175fabb5a37e331236e7bf0d9ed73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fca361a2e7385b4e3fb0757e28d25472ac84bc3fd4bb8d028406c51514ef9da7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118033547"
 ---
-# <a name="iwicpalette_getcolors_proxy-function"></a>\_Funzione proxy IWICPalette Getcolors \_
+# <a name="iwicpalette_getcolors_proxy-function"></a>Funzione proxy IWICPalette \_ \_ GetColors
 
-Funzione proxy per il metodo [**Getcolors**](/windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-getcolors) .
+Funzione proxy per il [**metodo GetColors.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-getcolors)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,37 +43,37 @@ HRESULT IWICPalette_GetColors_Proxy(
 
 <dl> <dt>
 
-*Questa \_ PTR* \[ in\]
+*QUESTO \_ PTR* \[ in\]
 </dt> <dd>
 
-Tipo: **[**IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) \** _
+Tipo: **[ **IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)\***
 
-Puntatore a questo oggetto [_ *IWICPalette* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) .
+Puntatore a [**questo oggetto IWICPalette.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)
 
 </dd> <dt>
 
-*colorCount* \[ in\]
+*colorCount* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Dimensioni della matrice *pColors* .
+Dimensione della matrice *pColors.*
 
 </dd> <dt>
 
-*pColors* \[ out\]
+*pColors* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **WICColor \** _
+Tipo: **WICColor \***
 
 Puntatore che riceve i colori della tavolozza.
 
 </dd> <dt>
 
-_pcActualColors * \[ out\]
+*pcActualColors* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **UINT \***
 
 Dimensioni effettive necessarie per ottenere i colori della tavolozza.
 
@@ -81,9 +81,9 @@ Dimensioni effettive necessarie per ottenere i colori della tavolozza.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -93,9 +93,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop vista\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

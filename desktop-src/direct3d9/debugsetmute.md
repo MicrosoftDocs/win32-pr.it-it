@@ -1,7 +1,7 @@
 ---
-description: DebugSetMute (funzione)
+description: Funzione DebugSetMute
 ms.assetid: c480d56e-63e6-42f0-b02a-75599882cf65
-title: DebugSetMute (funzione)
+title: Funzione DebugSetMute
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,17 +13,17 @@ api_type:
 - DllExport
 api_location:
 - d3d9.dll
-ms.openlocfilehash: e6de6d85e8c041d606e4ab53f6ff099e0e7167af
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e1f18aa307643b103bed02b4a97ade875564c0a4e55d456be86793b99d789312
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118095123"
 ---
-# <a name="debugsetmute-function"></a>DebugSetMute (funzione)
+# <a name="debugsetmute-function"></a>Funzione DebugSetMute
 
 > [!Note]  
-> Questa funzione è interna e non è destinata all'utilizzo da parte degli sviluppatori di software.
+> Questa funzione è interna e non deve essere usata dagli sviluppatori di software.
 
  
 
@@ -50,7 +50,7 @@ Questa funzione non restituisce un valore.
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Libreria<br/> | <dl> <dt>D3d9. lib</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3d9.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D3d9.dll</dt> </dl> |
 
 

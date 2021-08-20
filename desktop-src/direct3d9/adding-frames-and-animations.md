@@ -1,23 +1,23 @@
 ---
-description: In questa sezione viene illustrato come aggiungere frame e animazioni a un semplice cubo.
+description: In questa sezione viene illustrato come aggiungere fotogrammi e animazioni a un cubo semplice.
 ms.assetid: a909b1f1-b54d-469c-8689-003db41a8f25
 title: Aggiunta di frame e animazioni (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da88cf431825797943ed33df94742360f7629787
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2fbe0da64e5eabff72f0977a8a55f23d3e4756c7681aa2c806b6ee1d794362cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118097193"
 ---
 # <a name="adding-frames-and-animations-direct3d-9"></a>Aggiunta di frame e animazioni (Direct3D 9)
 
-In questa sezione viene illustrato come aggiungere frame e animazioni a un semplice cubo.
+In questa sezione viene illustrato come aggiungere fotogrammi e animazioni a un cubo semplice.
 
-## <a name="working-with-frames"></a>Utilizzo dei frame
+## <a name="working-with-frames"></a>Uso dei frame
 
-Si prevede che un frame prenda la struttura seguente.
+È previsto che un frame prenda la struttura seguente.
 
 
 ```
@@ -51,7 +51,7 @@ FrameTransformMatrix {
 
 ## <a name="working-with-animations"></a>Uso delle animazioni
 
-Un'animazione viene definita da un set di chiavi. Una chiave è un valore di ora associato a un'operazione di ridimensionamento, a un orientamento o a una posizione.
+Un'animazione è definita da un set di chiavi. Una chiave è un valore temporale associato a un'operazione di ridimensionamento, un orientamento o una posizione.
 
 
 ```
@@ -66,7 +66,7 @@ AnimationKey {
 
 
 
-Le animazioni vengono quindi raggruppate in AnimationSets:
+Le animazioni vengono quindi raggruppate in Oggetti AnimationSet:
 
 
 ```
@@ -78,7 +78,7 @@ AnimationSet AnimationSet0 { // The name is chosen for convenience.
 
 
 
-A questo punto, il cubo viene portato attraverso un'animazione.
+A questo punto, eseguire un'animazione per il cubo.
 
 
 ```
@@ -104,7 +104,7 @@ AnimationKey {
 
 
 
-Per ulteriori informazioni, vedere i modelli [**animazione**](animation.md) e [**animazioni**](animationset.md) .
+Per altre informazioni, vedere i modelli [**Animation**](animation.md) e [**AnimationSet.**](animationset.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

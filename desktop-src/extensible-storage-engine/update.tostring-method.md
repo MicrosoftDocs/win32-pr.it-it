@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo Update. ToString'
-title: Metodo Update. ToString
+description: 'Altre informazioni su: Metodo Update.ToString'
+title: Metodo Update.ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Update.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.update.tostring(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fbe92fbf6210e7e6dee833eea50c2ff08b9df542
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e7d9faa17c254069d3f8ee41cf1138d29ea3f706fa2b8e73cfc8ebcc0d0cf21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117890052"
 ---
-# <a name="updatetostring-method"></a>Metodo Update. ToString
+# <a name="updatetostring-method"></a>Metodo Update.ToString
 
-Restituisce una [stringa](/dotnet/api/system.string) che rappresenta l' [aggiornamento](./update-class.md)corrente.
+Restituisce un [oggetto String](/dotnet/api/system.string) che rappresenta l'oggetto [Update corrente.](./update-class.md)
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,8 +56,8 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Stringa](/dotnet/api/system.string) che rappresenta l' [aggiornamento](./update-class.md)corrente.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Valore [String](/dotnet/api/system.string) che rappresenta l'oggetto [Update corrente.](./update-class.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -67,4 +67,4 @@ Tipo: [System. String](/dotnet/api/system.string)
 
 [Aggiornare i membri](./update-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

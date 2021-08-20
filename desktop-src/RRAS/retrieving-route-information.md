@@ -1,27 +1,27 @@
 ---
-title: Recupero delle informazioni sulla Route
-description: Sono disponibili tre metodi per ottenere informazioni sulla Route da Gestione tabelle di routing.
+title: Recupero delle informazioni sulla route
+description: Esistono tre metodi usati per ottenere informazioni sulla route dal gestore tabelle di routing.
 ms.assetid: 8c943b4e-5c1a-4db5-babf-5f7ef9e9fa6a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2eaeb3a1e3c7d90975e5233780e662bbcc7d3bd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 77431f25ff28f37c102a208079933c97052c9d3da69b51d15e392ba5f43db0bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104116717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117788144"
 ---
-# <a name="retrieving-route-information"></a>Recupero delle informazioni sulla Route
+# <a name="retrieving-route-information"></a>Recupero delle informazioni sulla route
 
-Sono disponibili tre metodi per ottenere informazioni sulla Route da Gestione tabelle di routing.
+Esistono tre metodi usati per ottenere informazioni sulla route dal gestore tabelle di routing.
 
--   Enumerazione delle route (descritte in [enumerazione delle voci della tabella di routing](enumerating-routing-table-entries.md)).
--   Ricerca di route specifiche (descritte in [ricerca di informazioni specifiche nella tabella di routing](finding-specific-information-in-the-routing-table.md)).
--   Recupero delle destinazioni modificate (descritte in [ricezione di notifiche di modifiche](receiving-notification-of-changes.md)).
+-   Enumerazione delle route (descritta in [Enumerazione delle voci della tabella di routing](enumerating-routing-table-entries.md)).
+-   Ricerca di route specifiche (descritte in [Ricerca di informazioni specifiche nella tabella di routing](finding-specific-information-in-the-routing-table.md)).
+-   Recupero delle destinazioni modificate (descritto in [Ricezione di notifiche delle modifiche](receiving-notification-of-changes.md)).
 
- 
+ 
 
- 
+ 
 
 
 

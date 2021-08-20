@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà SystemParameters. LVChunkSizeMost'
-title: Proprietà SystemParameters. LVChunkSizeMost
+description: Altre informazioni sulla proprietà SystemParameters.LVChunkSizeMost
+title: SystemParameters.LVChunkSizeMost - proprietà
 TOCTitle: 'LVChunkSizeMost property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.SystemParameters.LVChunkSizeMost
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.lvchunksizemost(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 86eaad961eaf2c2a1aa69672701deaf9125ae149
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6088079cc1d7e3dd3d3f6f1d770efd71a13fe30215fc7e91fd432aa0ca8ec303
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104349146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117890533"
 ---
-# <a name="systemparameterslvchunksizemost-property"></a>Proprietà SystemParameters. LVChunkSizeMost
+# <a name="systemparameterslvchunksizemost-property"></a>SystemParameters.LVChunkSizeMost - proprietà
 
-Ottiene le dimensioni dei blocchi LV. Dipende dalle dimensioni della pagina del database.
+Ottiene le dimensioni dei blocchi lv. Dipende dalle dimensioni della pagina del database.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,7 +57,7 @@ public static int LVChunkSizeMost { get; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -65,6 +65,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [SystemParameters (classe)](./systemparameters-class.md)
 
-[Membri SystemParameters](./systemparameters-members.md)
+[Membri di SystemParameters](./systemparameters-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

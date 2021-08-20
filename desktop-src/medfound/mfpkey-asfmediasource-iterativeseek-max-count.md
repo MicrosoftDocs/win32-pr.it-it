@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117874254"
 ---
-# <a name="mfpkey_asfmediasource_iterativeseek_max_count-property"></a>MFPKEY \_ ASFMediaSource \_ IterativeSeek \_ Max Count - \_ proprietà
+# <a name="mfpkey_asfmediasource_iterativeseek_max_count-property"></a>Proprietà MFPKEY \_ ASFMediaSource \_ IterativeSeek \_ Max \_ Count
 
 Imposta il numero massimo di iterazioni di ricerca che l'origine multimediale ASF userà quando esegue la ricerca iterativa.
 
@@ -25,7 +25,7 @@ membro PROPVARIANT
 
 **Ulong**
 
-VT \_ UI4
+Interfaccia utente \_ VT4
 
 **ulVal**
 
@@ -33,9 +33,9 @@ VT \_ UI4
 
 ## <a name="remarks"></a>Commenti
 
-Usare questa proprietà per configurare l'origine multimediale ASF. Per impostare la proprietà, passare un **puntatore IPropertyStore** al resolver di origine. Per altre informazioni, vedere [Configurazione di un'origine multimediale.](configuring-a-media-source.md)
+Usare questa proprietà per configurare l'origine multimediale ASF. Per impostare la proprietà, passare un **puntatore IPropertyStore** al sistema di risoluzione di origine. Per altre informazioni, vedere [Configurazione di un'origine multimediale](configuring-a-media-source.md).
 
-Questa proprietà si applica solo quando è abilitata la ricerca iterativa. Per altre informazioni, vedere [MFPKEY \_ ASFMediaSource \_ IterativeSeekIfNoIndex.](mfpkey-asfmediasource-iterativeseekifnoindex.md)
+Questa proprietà si applica solo quando è abilitata la ricerca iterativa. Per altre informazioni, vedere [MFPKEY \_ ASFMediaSource \_ IterativeSeekIfNoIndex](mfpkey-asfmediasource-iterativeseekifnoindex.md).
 
 L'intervallo valido di questa proprietà è \[ compreso tra 1 e 10, \] inclusi. Con un numero più elevato, la ricerca iterativa tende a essere più accurata, ma richiede più tempo.
 
@@ -48,7 +48,7 @@ Il valore predefinito è 5.
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | Windows App desktop di Server 2008 R2 \[ \| app UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 R2 \[ \|\]<br/>                     |
 | Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 

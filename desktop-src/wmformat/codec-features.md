@@ -1,9 +1,9 @@
 ---
-title: Funzionalità codec
-description: Funzionalità codec
+title: Funzionalità dei codec
+description: Funzionalità dei codec
 ms.assetid: e0bbdf75-2369-4080-ae8e-aabaa8401dcf
 keywords:
-- Windows Media Format SDK, funzionalità codec
+- Windows MEDIA Format SDK, funzionalità codec
 - Windows Media Format SDK, funzionalità
 - codec, funzionalità
 ms.topic: article
@@ -15,9 +15,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117849162"
 ---
-# <a name="codec-features"></a>Funzionalità codec
+# <a name="codec-features"></a>Funzionalità dei codec
 
-L Windows Media Format SDK viene fornito con diversi codec audio e video. È possibile usare i codec forniti per comprimere e decomprimere il contenuto in base a un'ampia gamma di esigenze. Il codec utilizzato dal writer per comprimere i dati viene specificato dalle informazioni di configurazione del flusso nel profilo. Le informazioni del profilo vengono quindi archiviate nell'intestazione del file creato dal writer. Quindi, quando il file viene aperto dal lettore o dal lettore sincrono, le informazioni sul profilo nell'intestazione identificano il codec necessario per decomprimere i dati.
+L Windows Media Format SDK viene fornito con diversi codec audio e video. È possibile usare i codec forniti per comprimere e decomprimere il contenuto in base a un'ampia gamma di esigenze. Il codec utilizzato dal writer per comprimere i dati viene specificato dalle informazioni di configurazione del flusso nel profilo. Le informazioni del profilo vengono quindi archiviate nell'intestazione del file creato dal writer. Quindi, quando il file viene aperto dal lettore o dal lettore sincrono, le informazioni del profilo nell'intestazione identificano il codec necessario per decomprimere i dati.
 
 In questa sezione vengono illustrate le funzionalità seguenti.
 
@@ -30,8 +30,8 @@ In questa sezione vengono illustrate le funzionalità seguenti.
 -   [S/PDIF Audio Output](s-pdif-audio-output.md)
 -   [Immagine video](video-image.md)
 -   [Modelli di conformità dei dispositivi](device-conformance-templates.md)
--   [Problemi di complessità video Impostazioni](video-complexity-settings.md)
--   [Interpolazione di frame](frame-interpolation.md)
+-   [Complessità video Impostazioni](video-complexity-settings.md)
+-   [Interpolazione dei fotogrammi](frame-interpolation.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

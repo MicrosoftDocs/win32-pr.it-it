@@ -1,6 +1,6 @@
 ---
-title: Funzioni di Gestione router (trasporto)
-description: Usare le funzioni seguenti per amministrare i gestori router. Queste funzioni consentono inoltre a uno sviluppatore di leggere e scrivere le informazioni globali per i gestori di router e le informazioni globali per i client router,ad esempio i protocolli di routing.
+title: Funzioni di gestione router (trasporto)
+description: Usare le funzioni seguenti per amministrare i gestori router. Queste funzioni consentono inoltre a uno sviluppatore di leggere e scrivere le informazioni globali per i gestori di router e le informazioni globali per i client router, ad esempio i protocolli di routing.
 ms.assetid: c1093241-604d-498d-a358-f8e8585b95cd
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117787621"
 ---
-# <a name="router-manager-transport-functions"></a>Funzioni di Gestione router (trasporto)
+# <a name="router-manager-transport-functions"></a>Funzioni di gestione router (trasporto)
 
-Usare le funzioni seguenti per amministrare i gestori router. Queste funzioni consentono inoltre a uno sviluppatore di leggere e scrivere le informazioni globali per i gestori di router e le informazioni globali per i client router,ad esempio i protocolli di routing.
+Usare le funzioni seguenti per amministrare i gestori router. Queste funzioni consentono inoltre a uno sviluppatore di leggere e scrivere le informazioni globali per i gestori di router e le informazioni globali per i client router, ad esempio i protocolli di routing.
 
 
 

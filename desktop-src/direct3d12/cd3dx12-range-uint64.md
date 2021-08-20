@@ -1,9 +1,9 @@
 ---
-title: Struttura CD3DX12_RANGE_UINT64 (D3dx12. h)
-description: Struttura di supporto per consentire l'inizializzazione semplificata di una struttura D3D12 dell' \_ intervallo \_ UInt64.
+title: CD3DX12_RANGE_UINT64 struttura (D3dx12.h)
+description: Struttura helper per consentire l'inizializzazione semplice di una struttura D3D12 \_ RANGE \_ UINT64.
 ms.assetid: 789A2C46-B7D4-462E-9C10-69FD63D27491
 keywords:
-- Struttura CD3DX12_RANGE_UINT64
+- CD3DX12_RANGE_UINT64 struttura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 89c408197afb1254cae922c402939f6f169708d4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a07cb6a095c707b06b5b9982d29d73bb7bb9b6a32fca02233c50298a9804065a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118098700"
 ---
-# <a name="cd3dx12_range_uint64-structure"></a>Struttura CD3DX12 dell' \_ intervallo \_ UInt64
+# <a name="cd3dx12_range_uint64-structure"></a>Struttura CD3DX12 \_ RANGE \_ UINT64
 
-Struttura di supporto per consentire l'inizializzazione semplificata di una struttura [**D3D12 dell' \_ intervallo \_ UInt64**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_range_uint64) .
+Struttura helper per consentire l'inizializzazione semplice di [**una struttura D3D12 \_ RANGE \_ UINT64.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_range_uint64)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,31 +44,31 @@ struct CD3DX12_RANGE_UINT64  : public D3D12_RANGE_UINT64{
 
 <dl> <dt>
 
-**\_Intervallo CD3DX12 \_ UInt64 ()**
+**CD3DX12 \_ RANGE \_ UINT64()**
 </dt> <dd>
 
-Crea una nuova istanza non inizializzata di un \_ intervallo CD3DX12 \_ UInt64.
+Crea una nuova istanza non inizializzata di un OGGETTO CD3DX12 \_ RANGE \_ UINT64.
 
 </dd> <dt>
 
-**intervallo CD3DX12 esplicito \_ \_ UInt64 (const D3D12 \_ Range \_ UInt64 &o)**
+**explicit CD3DX12 \_ RANGE \_ UINT64(const D3D12 \_ RANGE \_ UINT64 &o)**
 </dt> <dd>
 
-Crea una nuova istanza di un intervallo di CD3DX12 \_ \_ UInt64, inizializzato con i valori copiati da un [**\_ intervallo D3D12 \_ UInt64**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_range_uint64) struttura.
+Crea una nuova istanza di un OGGETTO CD3DX12 RANGE UINT64, inizializzato con i valori copiati da una \_ \_ struttura [**D3D12 \_ RANGE \_ UINT64.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_range_uint64)
 
 </dd> <dt>
 
-**CD3DX12 \_ Range \_ UINT64 (UInt64 Begin, UInt64 end)**
+**CD3DX12 \_ RANGE \_ UINT64(UINT64 begin, UINT64 end)**
 </dt> <dd>
 
-Crea una nuova istanza di un DESC1 di CD3DX12 \_ Depth \_ stencil \_ , inizializzata con i valori passati nell'elenco di parametri.
+Crea una nuova istanza di UN STENCIL CD3DX12 \_ DEPTH \_ DESC1, inizializzata con i valori passati \_ nell'elenco di parametri.
 
 </dd> <dt>
 
-**operatore const D3D12 \_ Range \_ UInt64& () const**
+**Operatore const D3D12 \_ RANGE \_ UINT64&() const**
 </dt> <dd>
 
-Conversione implicita in una \_ struttura D3D12 dell'intervallo \_ UInt64. Poiché l' \_ intervallo \_ di D3D12 UInt64 è il tipo sottostante dell'intervallo di CD3DX12 \_ \_ UInt64, l'oggetto viene semplicemente restituito come \_ riferimento a un intervallo const D3D12 \_ a se stesso.
+Conversione implicita in una struttura D3D12 \_ RANGE \_ UINT64. Poiché D3D12 RANGE UINT64 è il tipo sottostante di CD3DX12 RANGE UINT64, l'oggetto viene semplicemente restituito come riferimento \_ \_ \_ \_ \_ UINT64 const D3D12 RANGE a se \_ stesso.
 
 </dd> </dl>
 
@@ -78,7 +78,7 @@ Conversione implicita in una \_ struttura D3D12 dell'intervallo \_ UInt64. Poich
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -89,7 +89,7 @@ Conversione implicita in una \_ struttura D3D12 dell'intervallo \_ UInt64. Poich
 [Strutture helper per D3D12](helper-structures-for-d3d12.md)
 </dt> <dt>
 
-[**\_Intervallo D3D12 \_ UInt64**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_range_uint64)
+[**D3D12 \_ RANGE \_ UINT64**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_range_uint64)
 </dt> </dl>
 
  

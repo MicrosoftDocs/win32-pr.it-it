@@ -1,23 +1,23 @@
 ---
-description: Tutti i puntatori restituiti dalle funzioni dell'infrastruttura peer devono essere liberati tramite PeerGraphFreeData o PeerFreeData.
+description: Tutti i puntatori restituiti dalle funzioni dell'infrastruttura peer devono essere liberati usando PeerGraphFreeData o PeerFreeData.
 ms.assetid: c7669404-2550-4f0d-908e-540d9a34008f
-title: Liberare dati peer
+title: Freeing Peer Data
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1addb0533d5d05e329e19bfe27a89f5616473a51
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9492fec9a22da8252188a75d6d4cee73d2055d29f47e25fc7d55a26cc7909c70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104050023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117794578"
 ---
-# <a name="freeing-peer-data"></a>Liberare dati peer
+# <a name="freeing-peer-data"></a>Freeing Peer Data
 
-Tutti i puntatori restituiti dalle funzioni dell'infrastruttura peer devono essere liberati tramite [**PeerGraphFreeData**](/windows/desktop/api/P2P/nf-p2p-peergraphfreedata) o [**PeerFreeData**](/windows/desktop/api/P2P/nf-p2p-peerfreedata). Queste funzioni devono essere chiamate solo per le strutture che vengono restituite direttamente da una funzione dell'infrastruttura peer. Non chiamare una funzione FreeData diversa per liberare puntatori annidati, ad esempio, non chiamare una funzione FreeData sui puntatori in una struttura di [**\_ record peer**](/windows/desktop/api/P2P/ns-p2p-peer_record) .
+Tutti i puntatori restituiti dalle funzioni dell'infrastruttura peer devono essere liberati usando [**PeerGraphFreeData**](/windows/desktop/api/P2P/nf-p2p-peergraphfreedata) [**o PeerFreeData.**](/windows/desktop/api/P2P/nf-p2p-peerfreedata) Queste funzioni devono essere chiamate solo per le strutture restituite direttamente da una funzione dell'infrastruttura peer. Non chiamare una funzione FreeData diversa per liberare puntatori annidati, ad esempio non chiamare una funzione FreeData sui puntatori in una struttura [**PEER \_ RECORD.**](/windows/desktop/api/P2P/ns-p2p-peer_record)
 
-## <a name="example-of-freeing-data"></a>Esempio di liberazione dei dati
+## <a name="example-of-freeing-data"></a>Esempio di freeing dei dati
 
-Il frammento di codice seguente illustra come recuperare le proprietà associate a un grafo, quindi liberare i dati restituiti.
+Il frammento di codice seguente illustra come recuperare le proprietà associate a un grafo e quindi liberare i dati restituiti.
 
 
 ```C++

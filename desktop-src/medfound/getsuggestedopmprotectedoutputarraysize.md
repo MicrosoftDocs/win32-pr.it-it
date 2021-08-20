@@ -1,5 +1,5 @@
 ---
-description: Ottiene le dimensioni della matrice da allocare prima di chiamare CreateOPMProtectedOutputs.
+description: Ottiene le dimensioni della matrice che deve essere allocata prima di chiamare CreateOPMProtectedOutputs.
 ms.assetid: 65edce14-f225-4b7f-b953-32b085e1cabf
 title: Funzione GetSuggestedOPMProtectedOutputArraySize
 ms.topic: reference
@@ -23,11 +23,11 @@ ms.locfileid: "117879378"
 # <a name="getsuggestedopmprotectedoutputarraysize-function"></a>Funzione GetSuggestedOPMProtectedOutputArraySize
 
 > [!IMPORTANT]
-> Questa funzione viene usata da [Output Protection Manager](output-protection-manager.md) (OPM) per accedere alle funzionalità nel driver di visualizzazione. Le applicazioni non devono chiamare questa funzione.
+> Questa funzione viene usata da [Output Protection Manager](output-protection-manager.md) (OPM) per accedere alle funzionalità nel driver video. Le applicazioni non devono chiamare questa funzione.
 
  
 
-Ottiene le dimensioni della matrice da allocare prima di [**chiamare CreateOPMProtectedOutputs.**](createopmprotectedoutputs.md)
+Ottiene la dimensione della matrice che deve essere allocata prima [**di chiamare CreateOPMProtectedOutputs.**](createopmprotectedoutputs.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ NTSTATUS WINAPI GetSuggestedOPMProtectedOutputArraySize(
 *pstrDeviceName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una [**struttura \_ STRING UNICODE**](/windows/win32/api/subauth/ns-subauth-unicode_string) contenente il nome del dispositivo di visualizzazione, come restituito dalla [**funzione GetMonitorInfo.**](/windows/win32/api/winuser/nf-winuser-getmonitorinfoa)
+Puntatore a una [**struttura \_ STRING UNICODE**](/windows/win32/api/subauth/ns-subauth-unicode_string) che contiene il nome del dispositivo di visualizzazione, come restituito dalla [**funzione GetMonitorInfo.**](/windows/win32/api/winuser/nf-winuser-getmonitorinfoa)
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Se il metodo ha esito positivo, restituisce **STATUS \_ SUCCESS**. In caso contr
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi dinamicamente Gdi32.dll.
+A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi in modo dinamico Gdi32.dll.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,8 +73,8 @@ A questa funzione non è associata alcuna libreria di importazione. Per chiamare
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Gdi32.dll</dt> </dl> |
 
 

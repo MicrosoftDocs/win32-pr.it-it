@@ -1,5 +1,5 @@
 ---
-description: 'UdpIp_V0 classe: questa classe è la classe padre per gli eventi UDP/IP. La sintassi seguente è semplificata dal codice MOF.'
+description: 'UdpIp_V0: questa classe è la classe padre per gli eventi UDP/IP. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: 2c7ac6b2-7dd7-4da7-ae0b-ac0ffffeb74b
 title: UdpIp_V0 classe
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 845466d630a671416ac465d0b73d99976d4521e9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6b6a2426a1bd42a028d40d166230b5e36941dbe2a460e6201caa49d1ed93571d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117813719"
 ---
 # <a name="udpip_v0-class"></a>Classe UdpIp \_ V0
 
@@ -44,7 +44,7 @@ La **classe UdpIp \_ V0** non definisce membri.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                   |
 
 

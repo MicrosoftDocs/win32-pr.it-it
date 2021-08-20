@@ -1,6 +1,6 @@
 ---
 title: OP_BLOB
-description: OP_BLOB definizione IDL
+description: OP_BLOB IDL Definition
 ms.assetid: c215c793-5fad-4baa-97c0-c809040dda1e
 ms.topic: reference
 ms.date: 10/12/2020
@@ -30,7 +30,7 @@ typedef struct _OP_BLOB
 
 ### <a name="cbblob"></a>cbBlob
 
-Specifica le dimensioni di pBlob in byte.
+Specifica la dimensione di pBlob in byte.
 
 ### <a name="pblob"></a>pBlob
 

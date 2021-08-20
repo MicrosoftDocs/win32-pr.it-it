@@ -3,7 +3,7 @@ title: HasImage
 description: L'attributo HasImage è un attributo a livello di file che specifica se il file contiene flussi di immagini.
 ms.assetid: 3b67288f-4f04-47a4-91ca-c456107d9d7b
 keywords:
-- HasImage Windows Media Format
+- Formato di Windows Media HasImage
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d32337fbdaeaee792836cd0b4ee1e8fb3baf9c9
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: c5e4a8fbdcc372fb68ce8659e56acddee8e58bd52777a5444aea368935169fcb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103718103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117655607"
 ---
 # <a name="hasimage"></a>HasImage
 
-L'attributo **HasImage** è un attributo a livello di file che specifica se il file contiene flussi di immagini.
+**L'attributo HasImage** è un attributo a livello di file che specifica se il file contiene flussi di immagini.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,13 +29,13 @@ g \_ wszWMHasImage
 
 ## <a name="data-type"></a>Tipo di dati
 
-**\_tipo WMT \_ bool**
+**TIPO WMT \_ \_ BOOL**
 
 ## <a name="remarks"></a>Commenti
 
 Si tratta di un attributo codificato.
 
-Questo attributo non può essere duplicato a livello di file. Se questo attributo viene utilizzato per un singolo flusso, verrà considerato come metadati personalizzati e non verrà trasmesso il significato normale agli oggetti di Windows Media Format SDK.
+Questo attributo non può essere duplicato a livello di file. Se questo attributo viene usato per un singolo flusso, verrà considerato come metadati personalizzati e non trasmetterà il significato normale agli oggetti di Windows Media Format SDK.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -44,9 +44,9 @@ Questo attributo non può essere duplicato a livello di file. Se questo attribut
 [**Elenco degli attributi**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

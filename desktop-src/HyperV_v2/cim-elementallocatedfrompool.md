@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione in cui un \_ oggetto logico CIM rappresenta una risorsa allocata da un \_ oggetto ResourcePool CIM.
+description: Rappresenta un'associazione in cui un oggetto \_ CIM LogicalElement rappresenta una risorsa allocata da un oggetto \_ CIM ResourcePool.
 ms.assetid: 5e3c95c5-1cbb-40de-b285-0bf9b34a5ca8
-title: Classe CIM_ElementAllocatedFromPool
+title: CIM_ElementAllocatedFromPool classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5fc6d58f5ebf82013f38b39027e0cd02e0e3595a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa1eb526054c665366211ec4fe3a5abdb1a001bddc098fba2c867479f23b18a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812558"
 ---
-# <a name="cim_elementallocatedfrompool-class"></a>CIM \_ ElementAllocatedFromPool (classe)
+# <a name="cim_elementallocatedfrompool-class"></a>Classe CIM \_ ElementAllocatedFromPool
 
-Rappresenta un'associazione in cui un [**oggetto \_ logico CIM**](cim-logicalelement.md) rappresenta una risorsa allocata da un [**oggetto \_ ResourcePool CIM**](cim-resourcepool.md) .
+Rappresenta un'associazione in cui un [**oggetto \_ CIM LogicalElement**](cim-logicalelement.md) rappresenta una risorsa allocata da un [**oggetto \_ CIM ResourcePool.**](cim-resourcepool.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,13 +39,13 @@ class CIM_ElementAllocatedFromPool : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ElementAllocatedFromPool** presenta questi tipi di membri:
+La **classe CIM \_ ElementAllocatedFromPool** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ElementAllocatedFromPool** dispone di queste proprietà.
+La **classe CIM \_ ElementAllocatedFromPool** ha queste proprietà.
 
 <dl> <dt>
 
@@ -58,7 +58,7 @@ Tipo di dati: **CIM \_ ResourcePool**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 Pool di risorse.
@@ -68,13 +68,13 @@ Pool di risorse.
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ LogicalElement CIM**
+Tipo di dati: **CIM \_ LogicalElement**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
 Risorsa allocata.
@@ -89,8 +89,8 @@ Risorsa allocata.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Risorsa allocata.
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

@@ -66,8 +66,8 @@ Restituisce un **valore HRESULT.** Di seguito sono indicati alcuni valori possib
 | Codice restituito                                                                                  | Descrizione                           |
 |----------------------------------------------------------------------------------------------|---------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>         | Operazione completata.<br/>                   |
-| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>    | Argomento del puntatore **NULL.**<br/> |
-| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl> | Errore imprevisto.<br/>        |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>    | Argomento del puntatore **NULL.**<br/> |
+| <dl> <dt>**E \_ IMPREVISTO**</dt> </dl> | Errore imprevisto.<br/>        |
 
 
 
@@ -75,9 +75,9 @@ Restituisce un **valore HRESULT.** Di seguito sono indicati alcuni valori possib
 
 ## <a name="remarks"></a>Commenti
 
-Anche *se ppUnk* specifica una matrice di puntatori **IUnknown,** la **classe CBasePropertyPage** è progettata solo per supportare un oggetto associato. Se *cObjects* è maggiore di 1, il metodo restituisce E \_ UNEXPECTED.
+Anche *se ppUnk* specifica una matrice di **puntatori IUnknown,** la **classe CBasePropertyPage** è progettata solo per supportare un oggetto associato. Se *cObjects* è maggiore di 1, il metodo restituisce E \_ UNEXPECTED.
 
-Se *cObjects* è uguale a 1, questo metodo chiama il [**metodo CBasePropertyPage::OnConnect.**](cbasepropertypage-onconnect.md) Se *cObjects* è uguale a 0, questo metodo chiama il [**metodo CBasePropertyPage::OnDisconnect.**](cbasepropertypage-ondisconnect.md) La classe derivata deve eseguire l'override di entrambi questi metodi. Per informazioni dettagliate, vedere le osservazioni per tali metodi.
+Se *cObjects* è uguale a 1, questo metodo chiama il [**metodo CBasePropertyPage::OnConnect.**](cbasepropertypage-onconnect.md) Se *cObjects* è uguale a 0, questo metodo chiama il metodo [**CBasePropertyPage::OnDisconnect.**](cbasepropertypage-ondisconnect.md) La classe derivata deve eseguire l'override di entrambi questi metodi. Per informazioni dettagliate, vedere le osservazioni relative a tali metodi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,7 +85,7 @@ Se *cObjects* è uguale a 1, questo metodo chiama il [**metodo CBasePropertyPage
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Cprop.h (includere Flussi.h)</dt> </dl>                                                                                     |
+| Intestazione<br/>  | <dl> <dt>Cprop.h (include Flussi.h)</dt> </dl>                                                                                     |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

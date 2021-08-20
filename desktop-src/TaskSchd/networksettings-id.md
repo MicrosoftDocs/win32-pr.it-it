@@ -1,11 +1,11 @@
 ---
-title: Proprietà NetworkSettings.Id
-description: Per gli script, ottiene o imposta un valore GUID che identifica un profilo di rete.
+title: NetworkSettings.Id proprietà
+description: Per lo scripting, ottiene o imposta un valore GUID che identifica un profilo di rete.
 ms.assetid: d4dd2972-c4cd-434a-b5dc-02ea64fd2137
 keywords:
-- ID Utilità di pianificazione proprietà
-- ID Utilità di pianificazione proprietà, oggetto NetworkSettings
-- Utilità di pianificazione oggetto NetworkSettings, proprietà ID
+- Proprietà Id Utilità di pianificazione
+- Proprietà Id Utilità di pianificazione , oggetto NetworkSettings
+- Proprietà Id dell'Utilità di pianificazione NetworkSettings
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2442bf56f24f2a9409300164ec3697aab9d45b2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3c5beb3c5001dd86fa5bdfc15a9385893a926f7cf2631e6476e224bb4764e1c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117943778"
 ---
-# <a name="networksettingsid-property"></a>Proprietà NetworkSettings.Id
+# <a name="networksettingsid-property"></a>NetworkSettings.Id proprietà
 
-Per gli script, ottiene o imposta un valore GUID che identifica un profilo di rete.
+Per lo scripting, ottiene o imposta un valore GUID che identifica un profilo di rete.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,9 +46,9 @@ Valore GUID che identifica un profilo di rete.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

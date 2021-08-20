@@ -3,15 +3,15 @@ title: Panoramica delle modifiche avanzate
 description: Leggere una panoramica grafica delle modifiche avanzate per le applicazioni. Informazioni su espansione, rotazione e traslazione.
 ms.assetid: a0c3fecb-d3c7-4f12-90be-5f77f4f5883e
 keywords:
-- Windows Touch,manipolazioni
-- Windows Touch, manipolazioni avanzate
-- Windows Touch, manipolazioni complesse
-- Windows Touch,espansione
-- Windows Touch,espansione avanzata
-- Windows Touch,rotazione
-- Windows Touch,rotazione avanzata
-- Windows Touch,traduzione
-- Windows Touch, traduzione avanzata
+- Windows Tocco, manipolazioni
+- Windows Tocco, manipolazioni avanzate
+- Windows Tocco, manipolazioni complesse
+- Windows Tocco, espansione
+- Windows Tocco, espansione avanzata
+- Windows Tocco, rotazione
+- Windows Tocco, rotazione avanzata
+- Windows Tocco, traduzione
+- Windows Tocco, traduzione avanzata
 - manipolazioni, avanzate
 - manipolazioni, complesse
 - manipolazioni, espansione
@@ -20,23 +20,23 @@ keywords:
 - manipolazioni, rotazione avanzata
 - manipolazioni, traduzione
 - manipolazioni, traduzione avanzata
-- espansione,avanzate
+- espansione, avanzate
 - rotazione, avanzate
 - traduzione, avanzate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04dea220c213de75820075c9375a04e1800a880d
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 7c8237f1ac70a7d7b37cbbfe8655d0ac8678439710872ed33509f5eeae92a626
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118030660"
 ---
 # <a name="advanced-manipulations-overview"></a>Panoramica delle modifiche avanzate
 
 Questa sezione illustra le modifiche avanzate per le applicazioni.
 
-Ai fini dell'usabilità, è possibile aggiungere modifiche complesse all'applicazione in modo che gli oggetti possano essere manipolati con un livello di granularità fine. Le sezioni seguenti descrivono le modifiche avanzate.
+Ai fini dell'usabilità, è possibile aggiungere modifiche complesse all'applicazione in modo che gli oggetti possano essere manipolati con un livello di granularità preciso. Le sezioni seguenti descrivono le modifiche avanzate.
 
 ### <a name="advanced-expansion"></a>Espansione avanzata
 
