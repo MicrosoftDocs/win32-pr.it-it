@@ -1,7 +1,7 @@
 ---
 description: Crea o apre un file.
 ms.assetid: 2a993f45-7f87-4b9e-bccc-277477558d3c
-title: Funzione _CreateFile
+title: _CreateFile funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - Msmdun80.dll
 - Sqlunirl.dll
-ms.openlocfilehash: becd7fed9e32385409b78e00169191a12b550e3b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8ff69057397fd887d4c7489c350579e7c3a31e432c3716b3107fc483315376fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956760"
 ---
-# <a name="_createfile-function"></a>\_CreateFile (funzione)
+# <a name="_createfile-function"></a>\_Funzione CreateFile
 
-\[Questa funzione è un wrapper della funzione **CreateFile** . Questa funzione può essere modificata o non disponibile in futuro. Le applicazioni devono chiamare **CreateFile** direttamente.\]
+\[Questa funzione è un wrapper sulla **funzione CreateFile.** Questa funzione potrebbe essere modificata o non disponibile in futuro. Le applicazioni devono **chiamare direttamente CreateFile.**\]
 
-Crea o apre un file. Vedere [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea).
+Crea o apre un file. Vedere [**CreateFile.**](/windows/desktop/api/fileapi/nf-fileapi-createfilea)
 
 ## <a name="syntax"></a>Sintassi
 

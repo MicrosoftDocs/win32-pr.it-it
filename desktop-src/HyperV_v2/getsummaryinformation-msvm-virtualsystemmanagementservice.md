@@ -1,7 +1,7 @@
 ---
-description: Restituisce informazioni di riepilogo sulla macchina virtuale.
+description: Restituisce informazioni di riepilogo sulle macchine virtuali.
 ms.assetid: CDDC2B5A-8172-4E6D-A206-CEAB9E54C69A
-title: Metodo GetSummaryInformation della classe Msvm_VirtualSystemManagementService
+title: Metodo GetSummaryInformation della Msvm_VirtualSystemManagementService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1399acd40f768fdb857d6a4a26e80a52d29111b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: efa879cd3da0f5e8a4cc8cf1e9873390c94a94bae0eef3dd8d36c59c9e1680e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104342801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119253651"
 ---
-# <a name="getsummaryinformation-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo GetSummaryInformation della classe MSVM \_ VirtualSystemManagementService
+# <a name="getsummaryinformation-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo GetSummaryInformation della classe Msvm \_ VirtualSystemManagementService
 
-Restituisce informazioni di riepilogo sulla macchina virtuale.
+Restituisce informazioni di riepilogo sulle macchine virtuali.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ uint32 GetSummaryInformation(
 
 <dl> <dt>
 
-*SettingData* \[ in\]
+*Impostazione dei dati* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **CIM \_ VirtualSystemSettingData \[ \]**
+Tipo: **CIM \_ \[ \] VirtualSystemSettingData**
 
-Matrice di istanze [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)) che specificano le macchine virtuali o gli snapshot per cui è necessario recuperare le informazioni. Se questo parametro è **null**, vengono recuperate le informazioni per tutte le macchine virtuali.
+Matrice di [**istanze CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)) che specificano le macchine virtuali o gli snapshot per cui devono essere recuperate le informazioni. Se questo parametro è **Null,** vengono recuperate le informazioni per tutte le macchine virtuali.
 
 </dd> <dt>
 
-*RequestedInformation* \[ in\]
+*RequestedInformation* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **UInt32 \[ \]**
+Tipo: **uint32 \[ \]**
 
-Matrice di valori di enumerazione, che corrisponde alle proprietà della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) , che specificano i dati da recuperare per le macchine virtuali e gli snapshot specificati nella matrice *SettingData* .
+Matrice di valori di enumerazione, che corrispondono alle proprietà nella classe [**Msvm \_ SummaryInformation,**](msvm-summaryinformation.md) che specificano i dati da recuperare per le macchine virtuali e gli snapshot specificati nella matrice *SettingData.*
 
 <dt>
 
@@ -66,7 +66,7 @@ Matrice di valori di enumerazione, che corrisponde alle proprietà della classe 
 
 </dt> <dd>
 
-Corrisponde alla proprietà **Name** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **Name** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Corrisponde alla proprietà **Name** della classe [**MSVM \_ SummaryInformation*
 
 </dt> <dd>
 
-Corrisponde alla proprietà **ElementName** della classe SummaryInformation di [**MSVM \_**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **ElementName** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Corrisponde alla proprietà **ElementName** della classe SummaryInformation di [
 
 </dt> <dd>
 
-Corrisponde alla proprietà **creationTime** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **CreationTime** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -99,7 +99,7 @@ Corrisponde alla proprietà **creationTime** della classe [**MSVM \_ SummaryInfo
 
 </dt> <dd>
 
-Corrisponde alla proprietà **Notes** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **Notes** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -110,18 +110,18 @@ Corrisponde alla proprietà **Notes** della classe [**MSVM \_ SummaryInformation
 
 </dt> <dd>
 
-Corrisponde alla proprietà **NumberOfProcessors** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **NumberOfProcessors** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
 <span id="Small_Thumbnail_Image__80x60_"></span><span id="small_thumbnail_image__80x60_"></span><span id="SMALL_THUMBNAIL_IMAGE__80X60_"></span>
 
-<span id="Small_Thumbnail_Image__80x60_"></span><span id="small_thumbnail_image__80x60_"></span><span id="SMALL_THUMBNAIL_IMAGE__80X60_"></span>**Piccola immagine di anteprima (80x60)** (5)
+<span id="Small_Thumbnail_Image__80x60_"></span><span id="small_thumbnail_image__80x60_"></span><span id="SMALL_THUMBNAIL_IMAGE__80X60_"></span>**Immagine di anteprima piccola (80x60)** (5)
 
 
 </dt> <dd>
 
-Corrisponde alla proprietà **ThumbnailImage** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) . Verrà recuperata un'immagine di anteprima con dimensioni pari a 80 60.
+Corrisponde alla proprietà **ThumbnailImage** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md) Verrà recuperata un'immagine di anteprima con dimensioni di 80 60.
 
 </dd> <dt>
 
@@ -132,7 +132,7 @@ Corrisponde alla proprietà **ThumbnailImage** della classe [**MSVM \_ SummaryIn
 
 </dt> <dd>
 
-Corrisponde alla proprietà **ThumbnailImage** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) . Verrà recuperata un'immagine di anteprima con dimensioni pari a 160 120.
+Corrisponde alla proprietà **ThumbnailImage** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md) Verrà recuperata un'immagine di anteprima con dimensioni di 160 120.
 
 </dd> <dt>
 
@@ -143,7 +143,7 @@ Corrisponde alla proprietà **ThumbnailImage** della classe [**MSVM \_ SummaryIn
 
 </dt> <dd>
 
-Corrisponde alla proprietà **ThumbnailImage** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) . Verrà recuperata un'immagine di anteprima con dimensioni pari a 320 240.
+Corrisponde alla proprietà **ThumbnailImage** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md) Verrà recuperata un'immagine di anteprima con dimensioni di 320 240.
 
 </dd> <dt>
 
@@ -154,7 +154,7 @@ Corrisponde alla proprietà **ThumbnailImage** della classe [**MSVM \_ SummaryIn
 
 </dt> <dd>
 
-Corrisponde alla proprietà **AllocatedGPU** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **AllocatedGPU** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -200,7 +200,7 @@ Corrisponde alla proprietà **AllocatedGPU** della classe [**MSVM \_ SummaryInfo
 
 </dt> <dd>
 
-Corrisponde alla proprietà **EnabledState** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **EnabledState** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -211,7 +211,7 @@ Corrisponde alla proprietà **EnabledState** della classe [**MSVM \_ SummaryInfo
 
 </dt> <dd>
 
-Corrisponde alla proprietà **ProcessorLoad** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **ProcessorLoad** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -222,7 +222,7 @@ Corrisponde alla proprietà **ProcessorLoad** della classe [**MSVM \_ SummaryInf
 
 </dt> <dd>
 
-Corrisponde alla proprietà **ProcessorLoadHistory** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **ProcessorLoadHistory** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -233,7 +233,7 @@ Corrisponde alla proprietà **ProcessorLoadHistory** della classe [**MSVM \_ Sum
 
 </dt> <dd>
 
-Corrisponde alla proprietà **MemoryUsage** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **MemoryUsage** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -244,18 +244,18 @@ Corrisponde alla proprietà **MemoryUsage** della classe [**MSVM \_ SummaryInfor
 
 </dt> <dd>
 
-Corrisponde alla proprietà **heartbeat** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **Heartbeat** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
 <span id="Uptime"></span><span id="uptime"></span><span id="UPTIME"></span>
 
-<span id="Uptime"></span><span id="uptime"></span><span id="UPTIME"></span>**Tempo di esecuzione** (105)
+<span id="Uptime"></span><span id="uptime"></span><span id="UPTIME"></span>**Tempo di attività** (105)
 
 
 </dt> <dd>
 
-Corrisponde alla proprietà di **tempo di esecuzione** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **UpTime** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -266,7 +266,7 @@ Corrisponde alla proprietà di **tempo di esecuzione** della classe [**MSVM \_ S
 
 </dt> <dd>
 
-Corrisponde alla proprietà **GuestOperatingSystem** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **GuestOperatingSystem** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -277,7 +277,7 @@ Corrisponde alla proprietà **GuestOperatingSystem** della classe [**MSVM \_ Sum
 
 </dt> <dd>
 
-Corrisponde alla proprietà **Snapshots** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **Snapshots** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -288,7 +288,7 @@ Corrisponde alla proprietà **Snapshots** della classe [**MSVM \_ SummaryInforma
 
 </dt> <dd>
 
-Corrisponde alla proprietà **AsynchronousTasks** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **AsynchronousTasks** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -299,7 +299,7 @@ Corrisponde alla proprietà **AsynchronousTasks** della classe [**MSVM \_ Summar
 
 </dt> <dd>
 
-Corrisponde alla proprietà **HealthState** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **HealthState** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -310,7 +310,7 @@ Corrisponde alla proprietà **HealthState** della classe [**MSVM \_ SummaryInfor
 
 </dt> <dd>
 
-Corrisponde alla proprietà **OperationalStatus** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **OperationalStatus** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -321,7 +321,7 @@ Corrisponde alla proprietà **OperationalStatus** della classe [**MSVM \_ Summar
 
 </dt> <dd>
 
-Corrisponde alla proprietà **StatusDescriptions** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **StatusDescriptions** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -332,7 +332,7 @@ Corrisponde alla proprietà **StatusDescriptions** della classe [**MSVM \_ Summa
 
 </dt> <dd>
 
-Corrisponde alla proprietà **MemoryAvailable** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **MemoryAvailable** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -343,46 +343,46 @@ Corrisponde alla proprietà **MemoryAvailable** della classe [**MSVM \_ SummaryI
 
 </dt> <dd>
 
-Corrisponde alla proprietà **AvailableMemoryBuffer** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **AvailableMemoryBuffer** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
 <span id="Replication_Mode"></span><span id="replication_mode"></span><span id="REPLICATION_MODE"></span>
 
-<span id="Replication_Mode"></span><span id="replication_mode"></span><span id="REPLICATION_MODE"></span>**Modalità di replica** (114)
+<span id="Replication_Mode"></span><span id="replication_mode"></span><span id="REPLICATION_MODE"></span>**Modalità di** replica (114)
 
 
 </dt> <dd>
 
-Corrisponde alla proprietà **ReplicationMode** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **ReplicationMode** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
 <span id="Replication_State"></span><span id="replication_state"></span><span id="REPLICATION_STATE"></span>
 
-<span id="Replication_State"></span><span id="replication_state"></span><span id="REPLICATION_STATE"></span>**Stato di replica** (115)
+<span id="Replication_State"></span><span id="replication_state"></span><span id="REPLICATION_STATE"></span>**Stato replica** (115)
 
 
 </dt> <dd>
 
-Corrisponde alla proprietà **ReplicationState** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **ReplicationState** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
 <span id="Replication_HealthTest_Replica_System"></span><span id="replication_healthtest_replica_system"></span><span id="REPLICATION_HEALTHTEST_REPLICA_SYSTEM"></span>
 
-<span id="Replication_HealthTest_Replica_System"></span><span id="replication_healthtest_replica_system"></span><span id="REPLICATION_HEALTHTEST_REPLICA_SYSTEM"></span>**Sistema di replica HealthTest di replica** (116)
+<span id="Replication_HealthTest_Replica_System"></span><span id="replication_healthtest_replica_system"></span><span id="REPLICATION_HEALTHTEST_REPLICA_SYSTEM"></span>**Integrità replicaTest Replica System** (116)
 
 
 </dt> <dd>
 
-Corrisponde alla proprietà **ReplicationHealth** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **ReplicationHealth** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
 <span id="Application_Health"></span><span id="application_health"></span><span id="APPLICATION_HEALTH"></span>
 
-<span id="Application_Health"></span><span id="application_health"></span><span id="APPLICATION_HEALTH"></span>**Integrità dell'applicazione** (117)
+<span id="Application_Health"></span><span id="application_health"></span><span id="APPLICATION_HEALTH"></span>**Integrità applicazione** (117)
 
 
 </dt> <dd></dd> <dt>
@@ -394,7 +394,7 @@ Corrisponde alla proprietà **ReplicationHealth** della classe [**MSVM \_ Summar
 
 </dt> <dd>
 
-Corrisponde alla proprietà **ReplicationState** della classe [**MSVM \_ ReplicationRelationship**](msvm-replicationrelationship.md) . Si tratta di una matrice per tutti i valori dello stato di replica tra relazioni primarie ed estese. il valore di indice 0 è sempre per la relazione primaria e, se la replica estesa è abilitata, viene restituita nell'indice 1.
+Corrisponde alla proprietà **ReplicationState** della [**classe Msvm \_ ReplicationRelationship.**](msvm-replicationrelationship.md) Si tratta di una matrice per tutti i valori dello stato di replica nella relazione primaria ed estesa. Il valore di indice 0 è sempre per la relazione primaria e, se la replica estesa è abilitata, viene restituito nell'indice 1.
 
 </dd> <dt>
 
@@ -405,7 +405,7 @@ Corrisponde alla proprietà **ReplicationState** della classe [**MSVM \_ Replica
 
 </dt> <dd>
 
-Corrisponde alla proprietà **ReplicationHealth** della classe [**MSVM \_ ReplicationRelationship**](msvm-replicationrelationship.md) . Si tratta di una matrice per tutti i valori di integrità della replica tra relazioni primarie ed estese. il valore di indice 0 è sempre per la relazione primaria e, se la replica estesa è abilitata, viene restituita nell'indice 1.
+Corrisponde alla proprietà **ReplicationHealth** della [**classe Msvm \_ ReplicationRelationship.**](msvm-replicationrelationship.md) Matrice per tutti i valori di integrità della replica nella relazione primaria ed estesa. Il valore di indice 0 è sempre per la relazione primaria e, se la replica estesa è abilitata, viene restituito nell'indice 1.
 
 </dd> <dt>
 
@@ -416,7 +416,7 @@ Corrisponde alla proprietà **ReplicationHealth** della classe [**MSVM \_ Replic
 
 </dt> <dd>
 
-Corrisponde alla proprietà **SwapFilesInUse** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **SwapFilesInUse** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -434,7 +434,7 @@ Corrisponde alla proprietà **SwapFilesInUse** della classe [**MSVM \_ SummaryIn
 
 </dt> <dd>
 
-Corrisponde alla proprietà **Name** della classe [**MSVM \_ ReplicationProvider**](msvm-replicationprovider.md) .
+Corrisponde alla proprietà **Name** della [**classe Msvm \_ ReplicationProvider.**](msvm-replicationprovider.md)
 
 </dd> <dt>
 
@@ -452,7 +452,7 @@ Corrisponde alla proprietà **Name** della classe [**MSVM \_ ReplicationProvider
 
 </dt> <dd>
 
-Corrisponde alla proprietà **IntegrationServicesVersionState** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **IntegrationServicesVersionState** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -463,7 +463,7 @@ Corrisponde alla proprietà **IntegrationServicesVersionState** della classe [**
 
 </dt> <dd>
 
-Corrisponde alla proprietà **OtherEnabledState** della classe [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md) .
+Corrisponde alla proprietà **OtherEnabledState** della [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -474,17 +474,17 @@ Corrisponde alla proprietà **OtherEnabledState** della classe [**MSVM \_ Summar
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*SummaryInformation* \[ out\]
+*Informazioni di riepilogo* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **MSVM \_ SummaryInformationBase**](msvm-summaryinformationbase.md)\[\]**
+Tipo: **[ **Msvm \_ SummaryInformationBase**](msvm-summaryinformationbase.md)\[\]**
 
-Matrice di istanze di [**MSVM \_ SummaryInformationBase**](msvm-summaryinformationbase.md) contenenti le informazioni richieste per le macchine virtuali e/o gli snapshot specificati nella matrice *SettingData* . Questa matrice avrà lo stesso numero di elementi della matrice *SettingData* . Ognuna di queste voci conterrà la proprietà **Name** , anche se questa proprietà non è stata richiesta. Se la macchina virtuale o lo snapshot non è stato trovato o non è disponibile, la proprietà **Name** della voce di informazioni di riepilogo corrispondente sarà vuota.
+Matrice di istanze [**di Msvm \_ SummaryInformationBase**](msvm-summaryinformationbase.md) contenente le informazioni richieste per le macchine virtuali e/o gli snapshot specificati nella *matrice SettingData.* Questa matrice avrà lo stesso numero di elementi della *matrice SettingData.* Ognuna di queste voci conterrà la **proprietà Name,** anche se questa proprietà non è stata richiesta. Se non è possibile trovare la macchina virtuale o lo snapshot o non è disponibile, la **proprietà Name** della voce di informazioni di riepilogo corrispondente sarà vuota.
 
-Le proprietà non specificate nel parametro *RequestedInformation* avranno un valore **null** .
+Le proprietà non specificate nel *parametro RequestedInformation* avranno un **valore** Null.
 
 > [!Note]  
-> DataType aggiornato da in Windows 10, versione 1703 da [**MSVM \_ SummaryInformation**](msvm-summaryinformation.md).
+> Tipo di dati aggiornato da in Windows 10 versione 1703 da [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md).
 
  
 
@@ -492,16 +492,16 @@ Le proprietà non specificate nel parametro *RequestedInformation* avranno un va
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
 **Non riuscito** (32768)
@@ -513,25 +513,25 @@ Questo metodo restituisce uno dei valori seguenti.
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
-Il **sistema è in uso** (32774)
+**Il sistema è in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -539,14 +539,14 @@ Il **sistema è in uso** (32774)
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla [**classe \_ VirtualSystemManagementService di MSVM**](msvm-virtualsystemmanagementservice.md) potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla [**classe Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) potrebbe essere limitato dal filtro di Controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio C# seguente vengono visualizzate le informazioni di riepilogo. Le utilità a cui si fa riferimento sono disponibili in [utilità comuni per gli esempi di virtualizzazione (v2)](common-utilities-for-the-virtualization-samples-v2.md).
+L'esempio C# seguente visualizza informazioni di riepilogo. Le utilità a cui si fa riferimento sono disponibili in [Utilità comuni per gli esempi di virtualizzazione (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 > [!IMPORTANT]
-> Per funzionare correttamente, il codice seguente deve essere eseguito sul server host della macchina virtuale e deve essere eseguito con privilegi di amministratore.
+> Per funzionare correttamente, il codice seguente deve essere eseguito nel server host della macchina virtuale e deve essere eseguito con privilegi di amministratore.
 
  
 
@@ -663,10 +663,10 @@ public class GetSummaryInformationClassV2
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -675,13 +675,13 @@ public class GetSummaryInformationClassV2
 
 <dl> <dt>
 
-[**\_VirtualSystemManagementService MSVM**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> <dt>
 
-[**\_VIRTUALSYSTEMSETTINGDATA CIM**](/previous-versions//cc136954(v=vs.85))
+[**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))
 </dt> <dt>
 
-[**\_SummaryInformation MSVM**](msvm-summaryinformation.md)
+[**Msvm \_ SummaryInformation**](msvm-summaryinformation.md)
 </dt> </dl>
 
  

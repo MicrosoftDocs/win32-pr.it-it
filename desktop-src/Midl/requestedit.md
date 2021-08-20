@@ -1,9 +1,9 @@
 ---
 title: requestedit (attributo)
-description: L'attributo \ requestedit \ indica che la proprietà supporta la notifica OnRequestEdit.
+description: L'attributo \ requestedit\ indica che la proprietà supporta la notifica OnRequestEdit.
 ms.assetid: 63f38d83-596b-4031-bb6a-972374cd0c60
 keywords:
-- attributo MIDL di requestedit
+- attributo requestedit MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18d83beea34f008e6e96fcd493d8410d7d2c5b88
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 51a894e5d4a09e7535e10a73e1bd118245e5886e0cdbb23b0f0645e588ab4adf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "106299632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146354"
 ---
 # <a name="requestedit-attribute"></a>requestedit (attributo)
 
-L'attributo **\[ \] requestedit** indica che la proprietà supporta la notifica **OnRequestEdit** .
+**\[ L'attributo \] requestedit** indica che la proprietà supporta la **notifica OnRequestEdit.**
 
 ``` syntax
 [requestedit [,optional-attributes]] return-type function-name(params)
@@ -31,21 +31,21 @@ L'attributo **\[ \] requestedit** indica che la proprietà supporta la notifica 
 
 <dl> <dt>
 
-*facoltativo-attributi* 
+*attributi facoltativi* 
 </dt> <dd>
 
 Zero o più attributi MIDL.
 
 </dd> <dt>
 
-*tipo restituito* 
+*return-type* 
 </dt> <dd>
 
 Specifica il tipo restituito della funzione.
 
 </dd> <dt>
 
-*Nome funzione* 
+*function-name* 
 </dt> <dd>
 
 Specifica il nome della funzione nel file IDL.
@@ -61,7 +61,7 @@ Zero o più parametri di funzione.
 
 ## <a name="remarks"></a>Commenti
 
-Il supporto della notifica **OnRequestEdit** significa che, prima che venga apportata una modifica, l'oggetto invierà al client una richiesta di autorizzazione per la modifica di una proprietà. Un oggetto può supportare data binding ma non avere questo attributo.
+Il supporto **della notifica OnRequestEdit** significa che, prima che venga apportata una modifica, l'oggetto invierà al client una richiesta di autorizzazione per modificare una proprietà. Un oggetto può supportare data binding ma non dispone di questo attributo.
 
 ### <a name="flags"></a>Flags
 
@@ -82,15 +82,15 @@ properties:
 [TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[Esempio di file di FAD](/previous-versions/windows/desktop/automat/odl-file-example)
+[Esempio di file ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
 [Generazione di una libreria dei tipi con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,42 +1,42 @@
 ---
-description: MpEG-2 Tipi di supporti demultiplexer
+description: Tipi di supporti demultiplexer MPEG-2
 ms.assetid: 240d1753-df8c-45fe-b5a7-9faa96fc5b18
-title: MpEG-2 Tipi di supporti demultiplexer
+title: Tipi di supporti demultiplexer MPEG-2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b9b5276b975771ba62118976c8e63b4d5faa53d
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 99b46b52580f96ec931f3a7eaf7d5bbf1462d4faa1862a330e501476fc92867a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952300"
 ---
-# <a name="mpeg-2-demultiplexer-media-types"></a>MpEG-2 Tipi di supporti demultiplexer
+# <a name="mpeg-2-demultiplexer-media-types"></a>Tipi di supporti demultiplexer MPEG-2
 
 Il [filtro MPEG-2 Demultiplexer](mpeg-2-demultiplexer.md) riconosce i tipi di supporti seguenti.
 
 ### <a name="input-types"></a>Tipi di input
 
-Il tipo principale è sempre **MEDIATYPE \_ Stream.** Il sottotipo può essere uno dei seguenti.
+Il tipo principale è sempre **MEDIATYPE \_ Stream**. Il sottotipo può essere uno dei seguenti.
 
 
 
 | GUID                                             | Descrizione                                                                                                                                                                                               |
 |--------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **TRASPORTO \_ \_ MPEG2 DEL SOTTOTIPO KSDATAFORMAT \_ \_** | Flusso di trasporto da un filtro di dispositivo BDA (Broadcast Driver Architecture). Il demultiplex MPEG-2 tratta questo sottotipo in modo identico a **MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT.**                                |
+| **SOTTOTIPO KSDATAFORMAT \_ \_ BDA \_ MPEG2 \_ TRANSPORT** | Flusso di trasporto da un filtro di dispositivo BDA (Broadcast Driver Architecture). Il demultiplexer MPEG-2 considera questo sottotipo in modo identico a **MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT**.                                |
 | **PROGRAMMA \_ MPEG2 \_ MEDIASUBTYPE**                 | Flusso del programma                                                                                                                                                                                            |
 | **MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT**               | Flusso di trasporto (TS), con pacchetti da 188 byte                                                                                                                                                              |
-| **MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT \_ STRIDE**       | Flusso di trasporto con pacchetti "strided". Questo sottotipo indica che i pacchetti TS possono essere riempiti con byte aggiuntivi. Per altre informazioni, vedere [**MPEG2 \_ TRANSPORT \_ STRIDE.**](mpeg2-transport-stride.md) |
+| **MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT \_ STRIDE**       | Flusso di trasporto con pacchetti "strided". Questo sottotipo indica che i pacchetti TS possono essere riempiti con byte aggiuntivi. Per altre informazioni, vedere [**MPEG2 \_ TRANSPORT \_ STRIDE**](mpeg2-transport-stride.md). |
 
 
 
  
 
-Per i pacchetti di trasporto strided **(MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT \_ STRIDE),** ogni campione di supporti deve contenere un numero integrale di pacchetti di trasporto, come descritto in [**MPEG2 \_ TRANSPORT \_ STRIDE**](mpeg2-transport-stride.md). Per tutti gli altri tipi di input, non sono presenti restrizioni sui limiti di esempio. I singoli pacchetti possono estendersi oltre i limiti del campione.
+Per i pacchetti di trasporto strided (**MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT \_ STRIDE**), ogni campione di supporti deve contenere un numero integrale di pacchetti di trasporto, come descritto in [**MPEG2 \_ TRANSPORT \_ STRIDE**](mpeg2-transport-stride.md). Per tutti gli altri tipi di input, non sono presenti restrizioni sui limiti del campione. I singoli pacchetti possono estendersi a limiti di esempio.
 
 ### <a name="output-types"></a>Tipi di output
 
-Il demultiplexer MPEG-2 non convalida i tipi di output. Il filtro downstream è responsabile dell'analisi dei dati ricevuti dal demultiplexer. Tuttavia, i tipi seguenti sono comunemente accettati dai filtri downstream come output dal demultiplexer.
+Il demultiplexer MPEG-2 non convalida i tipi di output. il filtro downstream è responsabile dell'analisi dei dati ricevuti dal demultiplexer. Tuttavia, i tipi seguenti sono comunemente accettati dai filtri downstream come output dal demultiplexer.
 
 ### <a name="mpeg-2-sections"></a>Sezioni MPEG-2
 
@@ -64,7 +64,7 @@ Il demultiplexer MPEG-2 non convalida i tipi di output. Il filtro downstream è 
 </tr>
 <tr class="odd">
 <td>Tipo di formato</td>
-<td>nessuno</td>
+<td>Nessuno</td>
 </tr>
 </tbody>
 </table>
@@ -77,7 +77,7 @@ Il demultiplexer MPEG-2 non convalida i tipi di output. Il filtro downstream è 
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |------------------|------------------------------------------|
 | Tipo principale       | **MEDIATYPE \_ Video**                     |
 | Subtype          | **MEDIASUBTYPE \_ MPEG2 \_ VIDEO**           |
@@ -92,7 +92,7 @@ Il demultiplexer MPEG-2 non convalida i tipi di output. Il filtro downstream è 
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |------------------|--------------------------------------|
 | Tipo principale       | **MEDIATYPE \_ Audio**                 |
 | Subtype          | **MEDIASUBTYPE \_ MPEG2 \_ AUDIO**       |

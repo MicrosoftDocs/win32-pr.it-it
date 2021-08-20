@@ -1,7 +1,7 @@
 ---
-description: Il metodo IsDefaultTargetRect determina se il renderer usa il rettangolo di destinazione predefinito (Virtual pure).
+description: Il metodo IsDefaultTargetRect determina se il renderer usa il rettangolo di destinazione predefinito (virtuale puro).
 ms.assetid: 60c09515-7a34-421c-b3e8-ce746a935583
-title: Metodo CBaseControlVideo. IsDefaultTargetRect (Ctlutil. h)
+title: Metodo CBaseControlVideo.IsDefaultTargetRect (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e267cc65345d18800beccbc80ac7952c89d781d8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c11d5b99610ff88a9e5f4088aa47efdcd8f3d9d676f0b17fad4d8e316324e807
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955240"
 ---
-# <a name="cbasecontrolvideoisdefaulttargetrect-method"></a>CBaseControlVideo. IsDefaultTargetRect, metodo
+# <a name="cbasecontrolvideoisdefaulttargetrect-method"></a>Metodo CBaseControlVideo.IsDefaultTargetRect
 
 Il `IsDefaultTargetRect` metodo determina se il renderer usa il rettangolo di destinazione predefinito (virtuale puro).
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se il renderer utilizza la destinazione predefinita; in caso contrario, restituisce \_ false.
+Restituisce S \_ OK se il renderer usa la destinazione predefinita; in caso contrario, restituisce S \_ FALSE.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro deve essere implementata nella classe derivata. Viene chiamato dalla funzione membro [**CBaseControlVideo:: IsUsingDefaultDestination**](cbasecontrolvideo-isusingdefaultdestination.md) .
+Questa funzione membro deve essere implementata nella classe derivata. Viene chiamato dalla funzione membro [**CBaseControlVideo::IsUsingDefaultDestination.**](cbasecontrolvideo-isusingdefaultdestination.md)
 
 Nell'esempio seguente viene illustrata un'implementazione di questa funzione in una classe derivata.
 
@@ -74,7 +74,7 @@ HRESULT CVideoText::IsDefaultTargetRect()
 
 
 
-In questo esempio, CVideoText è una classe derivata da [**CBaseControlVideo**](cbasecontrolvideo.md), m \_ pRenderer include un oggetto di una classe derivata da [**CBaseVideoRenderer**](cbasevideorenderer.md)e il \_ membro dati DrawImage m, definito nella classe derivata, include un oggetto [**CDrawImage**](cdrawimage.md) . Il \_ membro dati mtIn m, definito anche nella classe derivata, include un oggetto [**CMediaType**](cmediatype.md) con tipo di supporto del PIN di input.
+In questo esempio CVideoText è una classe derivata da [**CBaseControlVideo,**](cbasecontrolvideo.md)m pRenderer contiene un oggetto di una classe derivata da \_ [**CBaseVideoRenderer**](cbasevideorenderer.md)e il membro dati m DrawImage, definito nella classe derivata, contiene un oggetto \_ [**CDrawImage.**](cdrawimage.md) Il membro dati m mtIn, definito anche nella classe derivata, contiene un oggetto CMediaType con il tipo di supporto \_ del pin di input. [](cmediatype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,8 +82,8 @@ In questo esempio, CVideoText è una classe derivata da [**CBaseControlVideo**](
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

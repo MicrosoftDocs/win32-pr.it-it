@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Exstrace.dll
-ms.openlocfilehash: 342670dc406cb84588984d0a9ab10fae280c5483
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ac099b0b69c1417c428aefe04b8e6591f945545a2b69196da588ebce8de23f18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076175"
 ---
 # <a name="asyncstringtrace-function"></a>Funzione AsyncStringTrace
 
@@ -70,7 +70,7 @@ Questa funzione restituisce la lunghezza dell'istruzione di traccia, in byte.
 
 Exstrace.dll è un componente facoltativo che viene installato con il Simple Mail Transfer Protocol (SMTP) e il protocollo NNTP (Network News Transfer Protocol).
 
-Il **tipo di dati va \_ list** è un tipo standard usato per contenere le informazioni necessarie per le macro **va \_ arg** e **va \_ end.** Per altre informazioni, vedere [Tipi standard.](/cpp/c-runtime-library/standard-types?view=vs-2019)
+Il **tipo di dati va \_ list** è un tipo standard usato per contenere le informazioni necessarie per le macro **va \_ arg** e **va \_ end.** Per altre informazioni, vedere [Tipi standard](/cpp/c-runtime-library/standard-types?view=vs-2019).
 
 A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress)
 

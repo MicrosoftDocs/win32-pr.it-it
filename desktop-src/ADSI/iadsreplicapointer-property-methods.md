@@ -1,6 +1,6 @@
 ---
 title: Metodi della proprietà IADsReplicaPointer (Iads.h)
-description: Il metodo di proprietà dell'interfaccia IADsReplicaPointer imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere Metodi delle proprietà di interfaccia.
+description: Il metodo di proprietà dell'interfaccia IADsReplicaPointer imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere Metodi delle proprietà dell'interfaccia.
 ms.assetid: fc520ea4-b2c2-44c0-8bec-25f8d4a77074
 ms.tgt_platform: multiple
 keywords:
@@ -39,7 +39,7 @@ ms.locfileid: "117839721"
 ---
 # <a name="iadsreplicapointer-property-methods"></a>Metodi della proprietà IADsReplicaPointer
 
-Il metodo di proprietà [**dell'interfaccia IADsReplicaPointer**](/windows/desktop/api/Iads/nn-iads-iadsreplicapointer) imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere [Metodi delle proprietà di interfaccia.](interface-property-methods.md)
+Il metodo di proprietà [**dell'interfaccia IADsReplicaPointer**](/windows/desktop/api/Iads/nn-iads-iadsreplicapointer) imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere [Metodi delle proprietà dell'interfaccia](interface-property-methods.md).
 
 ## <a name="properties"></a>Proprietà
 
@@ -52,10 +52,10 @@ Numero di repliche esistenti.
 
 <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **LONG**
+Tipo di dati scripting: **LONG**
 </dt> <dt>
 
 
@@ -80,10 +80,10 @@ Indirizzo di rete suggerito come riferimento probabile a un nodo che porta al se
 
 <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **VARIANT**
+Tipo di dati scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -108,10 +108,10 @@ Numero di identificazione della replica.
 
 <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **LONG**
+Tipo di dati scripting: **LONG**
 </dt> <dt>
 
 
@@ -136,10 +136,10 @@ Tipo di replica (master, secondaria o di sola lettura).
 
 <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **LONG**
+Tipo di dati scripting: **LONG**
 </dt> <dt>
 
 
@@ -164,10 +164,10 @@ Nome del server dei nomi che contiene la replica.
 
 <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -197,7 +197,7 @@ HRESULT put_ServerName(
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsReplicaPointer è definito come F60FB803-4080-11D1-A3AC-00C04FB950DC<br/>   |
+| IID<br/>                      | \_IADsReplicaPointer IID è definito come F60FB803-4080-11D1-A3AC-00C04FB950DC<br/>   |
 
 
 

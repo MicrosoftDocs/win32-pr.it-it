@@ -1,46 +1,46 @@
 ---
-title: Informazioni di riferimento sui canali virtuali grafici
-description: La Guida di riferimento ai canali virtuali grafici contiene elementi di programmazione che consentono di creare un canale di grafica virtuale.
+title: Informazioni di riferimento sui canali virtuali di grafica
+description: Il riferimento ai canali virtuali di grafica contiene elementi di programmazione che consentono di creare un canale di grafica virtuale.
 ms.assetid: F6A53BAF-638D-4BF1-ABDE-0712D17FA56B
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2320135dc9aa9bf01e39fc071b45ab17043328e
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: aebd6dd4115577222b34b11c3e7142871c74238166049ff99e8bffc18d11fa38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103857425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059394"
 ---
-# <a name="graphics-virtual-channels-reference"></a>Informazioni di riferimento sui canali virtuali grafici
+# <a name="graphics-virtual-channels-reference"></a>Informazioni di riferimento sui canali virtuali di grafica
 
-La Guida di riferimento ai canali virtuali grafici contiene elementi di programmazione che consentono di creare un canale di grafica virtuale.
+Il riferimento ai canali virtuali di grafica contiene elementi di programmazione che consentono di creare un canale di grafica virtuale.
 
-Nella figura seguente viene illustrata l'interazione tra il servizio di grafica RemoteFX e il canale virtuale Graphics.
+La figura seguente mostra l'interazione tra il RemoteFX grafica e il canale virtuale di grafica.
 
-![interazione tra il servizio di grafica RemoteFX e il canale virtuale grafico](images/graphics-virtual-channel-connection-sequence.png)
+![interazione tra il servizio di grafica remotefx e il canale virtuale di grafica](images/graphics-virtual-channel-connection-sequence.png)
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 <dl> <dt>
 
-[Interfacce di canali virtuali grafici](graphics-virtual-channels-interfaces.md)
+[Interfacce dei canali virtuali di grafica](graphics-virtual-channels-interfaces.md)
 </dt> <dd>
 
-L'API canali virtuali grafici supporta le interfacce seguenti.
+L'API dei canali virtuali di grafica supporta le interfacce seguenti.
 
 </dd> <dt>
 
 [Enumerazioni di canali virtuali grafici](graphics-virtual-channels-enumerations.md)
 </dt> <dd>
 
-L'API canali virtuali grafici definisce le enumerazioni seguenti.
+L'API dei canali virtuali di grafica definisce le enumerazioni seguenti.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

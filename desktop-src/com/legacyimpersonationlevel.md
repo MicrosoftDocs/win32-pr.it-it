@@ -3,50 +3,50 @@ title: LegacyImpersonationLevel
 description: Imposta il livello predefinito di rappresentazione per le applicazioni che non chiamano CoInitializeSecurity.
 ms.assetid: 3f42c6d7-729d-4406-9391-4bfe28f7a59d
 keywords:
-- Valore LegacyImpersonationLevel del registro di sistema COM
+- Valore com del Registro di sistema LegacyImpersonationLevel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74fa00494eb71e49c35bfa37b434afc5c999e73e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cd032e83290c18fc3a2588e382ade7730fa2ea39a7847e375b1e887cdbbb90f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048079"
 ---
 # <a name="legacyimpersonationlevel"></a>LegacyImpersonationLevel
 
-Imposta il livello predefinito di rappresentazione per le applicazioni che non chiamano [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity).
+Imposta il livello predefinito di rappresentazione per le applicazioni che non chiamano [**CoInitializeSecurity.**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity)
 
 > [!Caution]  
-> Non è consigliabile modificare questo valore, perché questo influirà su tutte le applicazioni server COM che non impostano la propria sicurezza a livello di processo e potrebbe impedire il corretto funzionamento. Se si modifica questo valore in modo da influire sulle impostazioni di sicurezza di una particolare applicazione COM, è necessario modificare le impostazioni di sicurezza a livello di processo per quella particolare applicazione COM. Per altre informazioni sull'impostazione della sicurezza a livello di processo, vedere [impostazione della sicurezza a livello di processo](setting-processwide-security.md).
+> Non è consigliabile modificare questo valore, perché ciò influirà su tutte le applicazioni server COM che non impostano la propria sicurezza a livello di processo e potrebbero impedirne il corretto funzionamento. Se si modifica questo valore per influire sulle impostazioni di sicurezza per una particolare applicazione COM, è invece necessario modificare le impostazioni di sicurezza a livello di processo per tale applicazione COM specifica. Per altre informazioni sull'impostazione della sicurezza a livello di processo, vedere [Impostazione della sicurezza a livello di processo.](setting-processwide-security.md)
 
- 
+ 
 
 ## <a name="registry-entry"></a>Voce del Registro di sistema
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ole
-   LegacyImpersonationLevel = value
+   LegacyImpersonationLevel = value
 ```
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta di un valore **reg \_ Word** equivalente alle costanti a livello di RPC \_ C \_ \_ .
+Si tratta di **\_ un valore REG WORD** equivalente alle costanti IMP LEVEL RPC \_ \_ \_ C.
 
 
 
 | Valore | Costante                        |
 |-------|---------------------------------|
-| 1     | \_ \_ livello IMP C \_ RPC \_ Anonimo   |
-| 2     | \_ \_ \_ Identificazione livello IMP C \_ RPC    |
-| 3     | RAPPRESENTAZIONE a livello di RPC \_ C \_ Imp \_ \_ |
-| 4     | \_ \_ \_ delegato livello IMP C \_ RPC    |
+| 1     | RPC \_ C \_ IMP \_ LEVEL \_ ANONYMOUS   |
+| 2     | RPC \_ C \_ IMP \_ LEVEL \_ IDENTIFY    |
+| 3     | RPC \_ C \_ IMP \_ LEVEL \_ IMPERSONATE |
+| 4     | DELEGATO \_ DEL LIVELLO IMP RPC C \_ \_ \_    |
 
 
 
- 
+ 
 
-Se il valore del registro di sistema non è presente, il livello di rappresentazione predefinito stabilito dal sistema è 2 ( \_ Identificazione del livello di RPC C \_ \_ \_ ).
+Se questo valore del Registro di sistema non è presente, il livello di rappresentazione predefinito stabilito dal sistema è 2 (RPC \_ C \_ IMP LEVEL \_ \_ IDENTIFY).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -58,9 +58,9 @@ Se il valore del registro di sistema non è presente, il livello di rappresentaz
 [Impostazione della sicurezza a livello di processo](setting-processwide-security.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

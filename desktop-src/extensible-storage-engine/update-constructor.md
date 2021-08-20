@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: costruttore di aggiornamento'
-title: Aggiorna Costruttore
+description: 'Altre informazioni su: Costruttore di aggiornamento'
+title: Costruttore di aggiornamento
 TOCTitle: 'Update constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Update.#ctor(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_prep)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.update.update(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 841403523e0cae7c71fb8fa0861c1d400a26a726
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58c42652ec9a6e8ece773338b9ef669833061ad2e25f29a54ded3d1c5d5cb6ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978251"
 ---
-# <a name="update-constructor"></a>Aggiorna Costruttore
+# <a name="update-constructor"></a>Costruttore di aggiornamento
 
-Inizializza una nuova istanza della classe Update. Viene avviato automaticamente un aggiornamento. Se non viene salvato in modo esplicito, l'aggiornamento verrà annullato.
+Inizializza una nuova istanza della classe Update. Viene avviato automaticamente un aggiornamento. L'aggiornamento verrà annullato se non viene salvato in modo esplicito.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -67,21 +67,21 @@ public Update(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione per la quale avviare la transazione.
+    Sessione per cui avviare la transazione.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    TableID per cui preparare l'aggiornamento.
+    Tableid per cui preparare l'aggiornamento.
 
 <!-- end list -->
 
-  - Prep  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_prep](./jet-prep-enumeration.md)  
+  - Preparazione  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_prep](./jet-prep-enumeration.md)  
     
     Tipo di aggiornamento.
 
@@ -93,4 +93,4 @@ public Update(
 
 [Aggiornare i membri](./update-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

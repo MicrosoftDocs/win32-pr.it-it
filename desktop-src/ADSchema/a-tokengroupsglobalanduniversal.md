@@ -1,10 +1,10 @@
 ---
-title: Attributo token-Groups-Global-and-Universal
+title: Attributo Token-Groups-Global-And-Universal
 description: Gruppi di token per Exchange.
 ms.assetid: 4a146250-3dbc-4a91-baac-faa39d7d6253
 ms.tgt_platform: multiple
 keywords:
-- Token-Groups-Global-and-Universal attribute AD schema
+- Token-Groups-Global-And-Universal attribute AD Schema
 - Schema AD dell'attributo tokenGroupsGlobalAndUniversal
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4225af8b33a59eea2263c3590380f7d363736619
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d9296396ec01ac39779cb23ef06b7aca29b35b3e571cc120bf45bdbe0ce6a7f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081335"
 ---
-# <a name="token-groups-global-and-universal-attribute"></a>Attributo token-Groups-Global-and-Universal
+# <a name="token-groups-global-and-universal-attribute"></a>Attributo Token-Groups-Global-And-Universal
 
 Gruppi di token per Exchange.
 
@@ -29,14 +29,14 @@ Gruppi di token per Exchange.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Token-gruppi-globale e universale    |
-| LDAP-Display-Name | tokenGroupsGlobalAndUniversal        |
+| CN                | Token-Groups-Global-and-Universal    |
+| Ldap-Display-Name | tokenGroupsGlobalAndUniversal        |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1418              |
-| System-ID-GUID    | 46a9b11d-60ae-405a-b7e8-ff8a58d456d2 |
-| Sintassi            | [**Stringa (SID)**](s-string-sid.md)  |
+| System-Id-Guid    | 46a9b11d-60ae-405a-b7e8-ff8a58d456d2 |
+| Sintassi            | [**String(Sid)**](s-string-sid.md)  |
 
 
 
@@ -58,15 +58,15 @@ Gruppi di token per Exchange.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x08000014                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Gruppi di token per Exchange.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x08000014                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Gruppi di token per Exchange.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x08000014                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Gruppi di token per Exchange.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x08000014                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Gruppi di token per Exchange.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x08000014                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Gruppi di token per Exchange.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x08000014                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 

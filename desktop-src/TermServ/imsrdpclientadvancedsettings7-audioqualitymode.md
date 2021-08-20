@@ -1,14 +1,14 @@
 ---
-title: Proprietà AudioQualityMode di IMsRdpClientAdvancedSettings7
+title: Proprietà AudioQualityMode IMsRdpClientAdvancedSettings7
 description: Specifica o recupera un valore che indica l'impostazione della modalità di qualità audio per l'audio reindirizzato. Per impostazione predefinita, questo valore è impostato su 0.
 ms.assetid: 9945c524-ca50-41ae-a7cf-1386cd758c0f
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà AudioQualityMode
-- Servizi Desktop remoto proprietà AudioQualityMode, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà AudioQualityMode
-- Servizi Desktop remoto proprietà AudioQualityMode, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà AudioQualityMode
+- Proprietà AudioQualityMode Servizi Desktop remoto
+- Proprietà AudioQualityMode Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto proprietà , AudioQualityMode
+- Proprietà AudioQualityMode Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto proprietà , AudioQualityMode
 topic_type:
 - apiref
 api_name:
@@ -24,14 +24,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fdfc19176e03f8979e5adb25bf0c9eaf4ceed9f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1635c2ed01144a640b624a014959a4847ae5f746502267444d958a20b959eef9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001309"
 ---
-# <a name="imsrdpclientadvancedsettings7audioqualitymode-property"></a>Proprietà IMsRdpClientAdvancedSettings7:: AudioQualityMode
+# <a name="imsrdpclientadvancedsettings7audioqualitymode-property"></a>Proprietà IMsRdpClientAdvancedSettings7::AudioQualityMode
 
 Specifica o recupera un valore che indica l'impostazione della modalità di qualità audio per l'audio reindirizzato. Per impostazione predefinita, questo valore è impostato su 0.
 
@@ -63,14 +63,14 @@ I valori possibili sono:
 0
 </dt> <dd>
 
-Qualità audio dinamica. Questa è l'impostazione predefinita per la qualità audio. Il server regola dinamicamente la qualità dell'output audio in risposta alle condizioni della rete e alle funzionalità client e server.
+Qualità audio dinamica. Questa è l'impostazione predefinita per la qualità dell'audio. Il server regola dinamicamente la qualità dell'output audio in risposta alle condizioni di rete e alle funzionalità client e server.
 
 </dd> <dt>
 
 1
 </dt> <dd>
 
-Qualità audio media. Il server utilizza un formato fisso ma compresso per l'output audio.
+Qualità audio media. Il server usa un formato fisso ma compresso per l'output audio.
 
 </dd> <dt>
 

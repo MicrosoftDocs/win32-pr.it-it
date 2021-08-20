@@ -1,10 +1,10 @@
 ---
-title: Attributo When-Changed
-description: Data dell'Ultima modifica apportata all'oggetto. Questo valore non viene replicato ed esiste nel catalogo globale.
+title: When-Changed attributo
+description: Data dell'ultima modifica dell'oggetto. Questo valore non viene replicato ed è presente nel catalogo globale.
 ms.assetid: 32dc9458-5692-4bce-abc1-7bea3ea680a9
 ms.tgt_platform: multiple
 keywords:
-- Schema AD When-Changed attribute
+- When-Changed schema AD dell'attributo
 - Schema AD dell'attributo whenChanged
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7c3608a33aa5d5ac52b226cd7a3d94ff0b95520
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1f90dcfa593099c08a6f74933211a5eff6f0fda28a6440d1f89b223905fd6032
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103874766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081235"
 ---
-# <a name="when-changed-attribute"></a>Attributo When-Changed
+# <a name="when-changed-attribute"></a>When-Changed attributo
 
-Data dell'Ultima modifica apportata all'oggetto. Questo valore non viene replicato ed esiste nel catalogo globale.
+Data dell'ultima modifica dell'oggetto. Questo valore non viene replicato ed è presente nel catalogo globale.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------------------------|
 | CN                | When-Changed                                                  |
-| LDAP-Display-Name | whenChanged                                                   |
+| Ldap-Display-Name | whenChanged                                                   |
 | Dimensione              | 8 byte                                                       |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.                              |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.                              |
 | Frequenza di aggiornamento  | Ogni volta che l'oggetto viene modificato.                              |
 | Attribute-Id      | 1.2.840.113556.1.2.3                                          |
-| System-ID-GUID    | bf967a77-0de6-11d0-a285-00aa003049e2                          |
+| System-Id-Guid    | bf967a77-0de6-11d0-a285-00aa003049e2                          |
 | Sintassi            | [**String(Generalized-Time)**](s-string-generalized-time.md) |
 
 
@@ -44,7 +44,7 @@ Data dell'Ultima modifica apportata all'oggetto. Questo valore non viene replica
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Data dell'Ultima modifica apportata all'oggetto. Questo valore non viene replica
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x3008                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Data dell'Ultima modifica apportata all'oggetto. Questo valore non viene replica
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x3008                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Data dell'Ultima modifica apportata all'oggetto. Questo valore non viene replica
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x3008                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Data dell'Ultima modifica apportata all'oggetto. Questo valore non viene replica
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x3008                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Data dell'Ultima modifica apportata all'oggetto. Questo valore non viene replica
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x3008                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Data dell'Ultima modifica apportata all'oggetto. Questo valore non viene replica
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x3008                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Data dell'Ultima modifica apportata all'oggetto. Questo valore non viene replica
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x3008                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

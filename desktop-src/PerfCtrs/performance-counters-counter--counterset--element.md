@@ -1,7 +1,7 @@
 ---
 description: Identifica un contatore in un insieme di contatori fornito dal provider.
 ms.assetid: 5b39804f-c117-4f1f-b100-d02674d1e8ad
-title: Elemento Counter (Countert)
+title: Elemento counter (counterSet)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 89772b06c2f97de4d2414e3923f026b69774631f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 98c4c5d8c683e23faebcdfdfe60820571fc6e70acc2e132c7f221ec88f7f7c36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061119"
 ---
-# <a name="counter-counterset-element"></a>Elemento Counter (Countert)
+# <a name="counter-counterset-element"></a>Elemento counter (counterSet)
 
 Identifica un contatore in un insieme di contatori fornito dal provider.
 
@@ -26,7 +26,7 @@ Identifica un contatore in un insieme di contatori fornito dal provider.
  />
 ```
 
-L'elemento contatore viene definito dal tipo [**complesso del**](performance-counters-counterset-complex-type.md) **contatore** .
+**L'elemento** counter è definito dal tipo [**complesso counterSet.**](performance-counters-counterset-complex-type.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -34,8 +34,8 @@ L'elemento contatore viene definito dal tipo [**complesso del**](performance-cou
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -46,7 +46,7 @@ L'elemento contatore viene definito dal tipo [**complesso del**](performance-cou
 **Elementi padre**
 </dt> <dt>
 
-[**Contatore (provider)**](performance-counters-counterset--provider--element.md)
+[**counterSet (provider)**](performance-counters-counterset--provider--element.md)
 </dt> </dl>
 
  

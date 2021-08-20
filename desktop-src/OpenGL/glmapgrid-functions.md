@@ -3,30 +3,30 @@ title: Funzioni glMapGrid
 description: Queste funzioni definiscono una mesh unidimensionale o bidimensionale.
 ms.assetid: 87532b49-a506-44a7-be2f-b74c289f1a19
 keywords:
-- OpenGL, funzioni glMapGrid
-- Riferimento OpenGL, funzioni glMapGrid
-- informazioni di riferimento per le funzioni OpenGL, glMapGrid
-- OpenGL, funzioni map
-- Guida di riferimento a OpenGL, funzioni map
+- Funzioni OpenGL,glMapGrid
+- Informazioni di riferimento su OpenGL, funzioni glMapGrid
+- informazioni di riferimento per le funzioni OpenGL,glMapGrid
+- OpenGL, funzioni di mapping
+- Informazioni di riferimento su OpenGL, funzioni di mapping
 - informazioni di riferimento per OpenGL, funzioni map
-- funzioni glMapGrid
+- Funzioni glMapGrid
 - Funzioni map
 - funzioni mesh unidimensionali
 - funzioni mesh bidimensionali
-- OpenGL, funzioni mesh unidimensionali
-- Guida di riferimento a OpenGL, funzioni mesh unidimensionali
-- informazioni di riferimento per le funzioni mesh unidimensionali OpenGL
-- OpenGL, funzioni mesh bidimensionali
-- Guida di riferimento a OpenGL, funzioni mesh bidimensionali
-- informazioni di riferimento sulle funzioni mesh bidimensionali OpenGL
+- Funzioni mesh unidimensionali OpenGL
+- Riferimento OpenGL, funzioni mesh unidimensionali
+- informazioni di riferimento per le funzioni di mesh unidimensionali OpenGL
+- Funzioni di mesh openGL,bidimensionali
+- Informazioni di riferimento su OpenGL, funzioni mesh bidimensionali
+- informazioni di riferimento per le funzioni di mesh openGL e bidimensionali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6198210a5aaedd8f67e3a180b5a2acbed98a2d40
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 43bc03268cd65c607cf9fe09c157fc7a5302d7e6be1b615ff49b8554892b9acb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118938464"
 ---
 # <a name="glmapgrid-functions"></a>Funzioni glMapGrid
 
@@ -37,9 +37,9 @@ Queste funzioni definiscono una mesh unidimensionale o bidimensionale:
 -   [**glMapGrid2d**](glmapgrid2d.md)
 -   [**glMapGrid2f**](glmapgrid2f.md)
 
- 
+ 
 
- 
+ 
 
 
 

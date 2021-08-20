@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectVariable GetMemberBySemantic (D3dx11effect. h)
+title: Metodo ID3DX11EffectVariable GetMemberBySemantic (D3dx11effect.h)
 description: Ottenere un membro della struttura in base alla semantica.
 ms.assetid: e4ae1f6a-43d2-45df-9dba-833d4f767818
 keywords:
 - Metodo GetMemberBySemantic Direct3D 11
 - Metodo GetMemberBySemantic Direct3D 11, interfaccia ID3DX11EffectVariable
-- Interfaccia ID3DX11EffectVariable Direct3D 11, metodo GetMemberBySemantic
+- ID3DX11EffectVariable interface Direct3D 11 , GetMemberBySemantic method
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5af8b628247dcc89f8df99c6ffebb04d500e76a1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 46155fc961836b187e0a12ab3571a4edcb67740c7e4dd26fb92350009b95edef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104996217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045819"
 ---
-# <a name="id3dx11effectvariablegetmemberbysemantic-method"></a>Metodo ID3DX11EffectVariable:: GetMemberBySemantic
+# <a name="id3dx11effectvariablegetmemberbysemantic-method"></a>Metodo ID3DX11EffectVariable::GetMemberBySemantic
 
 Ottenere un membro della struttura in base alla semantica.
 
@@ -56,14 +56,14 @@ Semantica.
 
 Tipo: **[ **ID3DX11EffectVariable**](id3dx11effectvariable.md)\***
 
-Puntatore a un [**ID3DX11EffectVariable**](id3dx11effectvariable.md).
+Puntatore a [**id3DX11EffectVariable.**](id3dx11effectvariable.md)
 
 ## <a name="remarks"></a>Commenti
 
-Se la variabile Effect è una struttura, usare questo metodo per cercare un membro in base alla semantica associata.
+Se la variabile dell'effetto è una struttura, usare questo metodo per cercare un membro in base alla semantica associata.
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -73,8 +73,8 @@ Se la variabile Effect è una struttura, usare questo metodo per cercare un memb
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

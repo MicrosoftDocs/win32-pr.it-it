@@ -1,42 +1,42 @@
 ---
-description: La classe PrivateFontCollection eredita dalla classe base astratta FontCollection. È possibile usare un oggetto PrivateFontCollection per mantenere un set di tipi di carattere specifici per l'applicazione.
+description: La classe PrivateFontCollection eredita dalla classe di base astratta FontCollection. È possibile usare un oggetto PrivateFontCollection per mantenere un set di tipi di carattere specifici per l'applicazione.
 ms.assetid: ae12afcf-12cc-4c84-9aba-de56fc39437b
 title: Creazione di raccolte private di tipi di carattere
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 084e8a2d6f79f60e0719f04fbabb778b9483bd80
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df673273611ed329e933c84e6540ed984088202590dc1d1c644ccdedca2c80c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118977591"
 ---
 # <a name="creating-a-private-font-collection"></a>Creazione di raccolte private di tipi di carattere
 
-La classe [**PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) eredita dalla classe base astratta [**FontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontcollection) . È possibile usare un oggetto **PrivateFontCollection** per mantenere un set di tipi di carattere specifici per l'applicazione.
+La [**classe PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) eredita dalla classe di base astratta [**FontCollection.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontcollection) È possibile usare un **oggetto PrivateFontCollection** per mantenere un set di tipi di carattere specifici per l'applicazione.
 
-Una raccolta di tipi di carattere privata può includere i tipi di carattere del sistema installato e i tipi di carattere che non sono stati installati nel computer. Per aggiungere un file del tipo di carattere a una raccolta di tipi di carattere privata, chiamare il metodo [**PrivateFontCollection:: AddFontFile**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-privatefontcollection-addfontfile) di un oggetto [**PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) .
+Una raccolta di caratteri privati può includere i tipi di carattere di sistema installati e i tipi di carattere che non sono stati installati nel computer. Per aggiungere un file di tipo di carattere a una raccolta di caratteri privata, chiamare il metodo [**PrivateFontCollection::AddFontFile**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-privatefontcollection-addfontfile) di un [**oggetto PrivateFontCollection.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection)
 
 > [!Note]  
-> Quando si usa l'API GDI+, non è mai necessario consentire all'applicazione di scaricare tipi di carattere arbitrari da origini non attendibili. Il sistema operativo richiede privilegi elevati per assicurarsi che tutti i tipi di carattere installati siano attendibili.
+> Quando si usa l'API GDI+, non è mai necessario consentire all'applicazione di scaricare tipi di carattere arbitrari da origini non attendibili. Il sistema operativo richiede privilegi elevati per garantire che tutti i tipi di carattere installati siano attendibili.
 
  
 
-Il metodo [**FontCollection:: GetFamilies**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontcollection-getfamilies) di un oggetto [**PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) restituisce una matrice di oggetti [**FontFamily**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) . Prima di chiamare **FontCollection:: GetFamilies**, è necessario allocare un buffer sufficientemente grande da mantenere tale matrice. Per determinare le dimensioni del buffer richiesto, chiamare il metodo [**FontCollection:: GetFamilyCount**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontcollection-getfamilycount) e moltiplicare il valore restituito da **sizeof**(**FontFamily**).
+Il [**metodo FontCollection::GetFamilies**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontcollection-getfamilies) di un [**oggetto PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) restituisce una matrice [**di oggetti FontFamily.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) Prima di chiamare **FontCollection::GetFamilies,** è necessario allocare un buffer sufficientemente grande da contenere tale matrice. Per determinare le dimensioni del buffer richiesto, chiamare il metodo [**FontCollection::GetFamilyCount**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontcollection-getfamilycount) e moltiplicare il valore restituito per **sizeof**(**FontFamily**).
 
-Il numero di famiglie di caratteri in una raccolta di tipi di carattere privata non è necessariamente uguale al numero di file del tipo di carattere aggiunti alla raccolta. Si supponga, ad esempio, di aggiungere i file ArialBd. TFF, Times. tff e TimesBd. TFF a una raccolta. Saranno presenti tre file, ma solo due famiglie della raccolta, poiché Times. tff e TimesBd. tff appartengono alla stessa famiglia.
+Il numero di famiglie di tipi di carattere in una raccolta di tipi di carattere privata non corrisponde necessariamente al numero di file di tipi di carattere aggiunti alla raccolta. Si supponga, ad esempio, di aggiungere i file ArialBd.tff, Times.tff e TimesBd.tff a una raccolta. Nella raccolta saranno presenti tre file, ma solo due famiglie, perché Times.tff e TimesBd.tff appartengono alla stessa famiglia.
 
-Nell'esempio seguente vengono aggiunti i tre file del tipo di carattere seguenti a un oggetto [**PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) :
+L'esempio seguente aggiunge i tre file del tipo di carattere seguenti a un [**oggetto PrivateFontCollection:**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection)
 
--   C: \\ WinNT \\ fonts \\ Arial. tff (Arial, Regular)
--   C: \\ WinNT \\ fonts \\ Courbi. tff (Courier New, Bold Italic)
--   C: \\ WinNT \\ fonts \\ TimesBd. tff (Times New Roman, Bold)
+-   C: \\ WINNT \\ Fonts \\ Arial.tff (Arial, regular)
+-   C: \\ WINNT \\ Fonts \\ CourBI.tff (Courier New, grassetto corsivo)
+-   C: \\ WinNT \\ Fonts \\ TimesBd.tff (Times New Roman, bold)
 
-Il codice chiama il metodo [**FontCollection:: GetFamilyCount**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontcollection-getfamilycount) dell'oggetto [**PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) per determinare il numero di famiglie nella raccolta privata, quindi chiama [**FontCollection:: GetFamilies**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontcollection-getfamilies) per recuperare una matrice di oggetti [**FontFamily**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) .
+Il codice chiama il metodo [**FontCollection::GetFamilyCount**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontcollection-getfamilycount) dell'oggetto [**PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) per determinare il numero di famiglie nella raccolta privata e quindi chiama [**FontCollection::GetFamilies**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontcollection-getfamilies) per recuperare una matrice [**di oggetti FontFamily.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontfamily)
 
-Per ogni oggetto [**FontFamily**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) della raccolta, il codice chiama il metodo [**FontFamily:: IsStyleAvailable**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontfamily-isstyleavailable) per determinare se sono disponibili diversi stili (Regular, Bold, Italic, Bold Italic, Underline e Strike). Gli argomenti passati al metodo **FontFamily:: IsStyleAvailable** sono membri dell'enumerazione [**FontStyle**](/windows/win32/api/Gdiplusenums/ne-gdiplusenums-fontstyle) , dichiarata in Gdiplusenums. h.
+Per ogni oggetto [**FontFamily**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) nella raccolta, il codice chiama il metodo [**FontFamily::IsStyleAvailable**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontfamily-isstyleavailable) per determinare se sono disponibili vari stili (normale, grassetto, corsivo, corsivo grassetto, sottolineatura e barrato). Gli argomenti passati al metodo **FontFamily::IsStyleAvailable** sono membri dell'enumerazione [**FontStyle,**](/windows/win32/api/Gdiplusenums/ne-gdiplusenums-fontstyle) dichiarata in Gdiplusenums.h.
 
-Se è disponibile una particolare combinazione di famiglia/stile, viene creato un oggetto del [**tipo di carattere**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-font) usando tale famiglia e stile. Il primo argomento passato al costruttore del **tipo di carattere** è il nome della famiglia di caratteri (non un oggetto [**FontFamily**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) come nel caso di altre varianti del costruttore del **tipo di carattere** ) e l'argomento finale è l'indirizzo dell'oggetto [**PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) . Dopo la creazione dell'oggetto **font** , il relativo indirizzo viene passato al metodo [DrawString](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawstring(constwchar_int_constfont_constpointf__constbrush)) della classe [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) per visualizzare il nome della famiglia insieme al nome dello stile.
+Se è disponibile una particolare combinazione famiglia/stile, viene costruito un [**oggetto Font**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-font) usando la famiglia e lo stile. Il primo argomento passato al costruttore **Font** è il nome della famiglia di caratteri (non un [**oggetto FontFamily**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) come nel caso di altre varianti del costruttore **Font)** e l'argomento finale è l'indirizzo dell'oggetto [**PrivateFontCollection.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) Dopo la **costruzione dell'oggetto** Font, il relativo indirizzo viene passato al metodo [DrawString](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawstring(constwchar_int_constfont_constpointf__constbrush)) della [**classe Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) per visualizzare il nome della famiglia insieme al nome dello stile.
 
 
 ```
@@ -177,21 +177,21 @@ delete pFontFamily;
 
 Nella figura seguente viene illustrato l'output del codice precedente.
 
-![Screenshot di una finestra in cui sono elencati nove nomi di caratteri, ognuno dei quali illustra il tipo di carattere denominato](images/fontstext7.png)
+![Screenshot di una finestra in cui sono elencati nove nomi di carattere, ognuno dei quali illustra il tipo di carattere denominato](images/fontstext7.png)
 
-Arial. TFF, che è stato aggiunto alla raccolta di tipi di carattere privati nell'esempio di codice precedente, è il file del tipo di carattere per lo stile normale Arial. Si noti, tuttavia, che l'output del programma mostra diversi stili disponibili diversi da Regular per la famiglia di caratteri Arial. Ciò è dovuto al fatto che Windows GDI+ è in grado di simulare gli stili in grassetto, corsivo e corsivo in grassetto dallo stile normale. GDI+ può inoltre produrre sottolineature e strikeouts dallo stile normale.
+Arial.tff (che è stato aggiunto alla raccolta di caratteri privati nell'esempio di codice precedente) è il file del tipo di carattere per lo stile regolare Arial. Si noti, tuttavia, che l'output del programma mostra diversi stili disponibili diversi da quelli normali per la famiglia di caratteri Arial. Ciò è dovuto Windows GDI+ possibile simulare gli stili grassetto, corsivo e corsivo grassetto dello stile normale. GDI+ possono anche produrre sottolineature e barrati dallo stile normale.
 
-Analogamente, GDI+ è in grado di simulare lo stile corsivo grassetto dallo stile grassetto o corsivo. L'output del programma mostra che lo stile corsivo in grassetto è disponibile per la famiglia Times anche se TimesBd. tff (Times New Roman, Bold) è l'unico file di volte nella raccolta.
+Analogamente, GDI+ può simulare lo stile corsivo grassetto dallo stile grassetto o corsivo. L'output del programma mostra che lo stile corsivo grassetto è disponibile per la famiglia Times anche se TimesBd.tff (Times New Roman, bold) è l'unico file Times nella raccolta.
 
-Questa tabella specifica i tipi di carattere non di sistema supportati da GDI+.
+Questa tabella specifica i tipi di carattere non di sistema supportati GDI+ sistema.
 
 
 
-|                     | GDI | GDI+ in Windows 7 | GDI+ in Windows 8 | DirectWrite |
+|                     | GDI | GDI+ su Windows 7 | GDI+ su Windows 8 | DirectWrite |
 |---------------------|-----|-------------------|-------------------|-------------|
-| . FON                | sì | no                | no                | no          |
-| . FNT                | sì | no                | no                | no          |
-| . TTF                | sì | sì               | sì               | sì         |
+| . Fon                | sì | no                | no                | no          |
+| . Fnt                | sì | no                | no                | no          |
+| . Ttf                | sì | sì               | sì               | sì         |
 | . OTF con TrueType  | sì | sì               | sì               | sì         |
 | . OTF con Adobe CFF | sì | no                | sì               | sì         |
 | Adobe Type 1        | sì | no                | no                | no          |

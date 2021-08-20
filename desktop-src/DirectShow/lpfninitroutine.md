@@ -1,7 +1,7 @@
 ---
 description: Puntatore a una funzione che viene chiamata dal punto di ingresso della DLL.
 ms.assetid: 30196657-38ab-42ca-b673-b0894999e566
-title: Puntatore alla funzione LPFNInitRoutine (ComBase. h)
+title: Puntatore a funzione LPFNInitRoutine (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - UserDefined
 api_location:
 - Combase.h
-ms.openlocfilehash: 375660399180196e2434030ea7551733affc4062
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c07f22b9dc261fe9d7b073a1f1ab93aa49e482fb70c53288aeaf606e6be9aec9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685081"
 ---
 # <a name="lpfninitroutine-function-pointer"></a>Puntatore alla funzione LPFNInitRoutine
 
@@ -40,17 +40,17 @@ typedef void ( CALLBACK *LPFNInitRoutine)(
 
 <dl> <dt>
 
-*bLoading* 
+*bLoad* 
 </dt> <dd>
 
-**True** quando la dll viene caricata, **false** quando la dll viene scaricata.
+**TRUE** quando viene caricata la DLL, **FALSE** quando la DLL viene scaricata.
 
 </dd> <dt>
 
 *rclsid* 
 </dt> <dd>
 
-Puntatore al CLISD dell'oggetto, specificato nella variabile membro [**\_ CLSID CFactoryTemplate:: m**](cfactorytemplate-m-clsid.md) .
+Puntatore all'interfaccia della riga di comando dell'oggetto, specificata nella variabile membro [**\_ ClsID CFactoryTemplate::m.**](cfactorytemplate-m-clsid.md)
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Questo puntatore a funzione non restituisce un valore.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>ComBase. h (Includi Streams. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Combase.h (includere Flussi.h)</dt> </dl> |
 
 
 

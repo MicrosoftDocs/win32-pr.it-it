@@ -1,15 +1,15 @@
 ---
-description: L'evento ChangeCurrentAudioStream viene inviato quando il disco Abilita o Disabilita la modifica del flusso audio.
+description: L'evento ChangeCurrentAudioStream viene inviato quando il disco abilita o disabilita la modifica del flusso audio.
 ms.assetid: b3a146e7-cfc6-4fb2-92af-598bf695e816
-title: ChangeCurrentAudioStream (Segment. h)
+title: ChangeCurrentAudioStream (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ab22bd76b87eb3a80255b85d505791fa34e3862
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 07527d2aaa2ca979ba0dae833d378a3176617e873f346e5c2465e911be497a7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074214"
 ---
 # <a name="changecurrentaudiostream"></a>ChangeCurrentAudioStream
 
@@ -18,7 +18,7 @@ ms.locfileid: "106329789"
 
  
 
-L' `ChangeCurrentAudioStream` evento viene inviato quando il disco Abilita o Disabilita la modifica del flusso audio.
+`ChangeCurrentAudioStream`L'evento viene inviato quando il disco abilita o disabilita la modifica del flusso audio.
 
 ``` syntax
 ChangeCurrentAudioStream(bEnabled)
@@ -41,7 +41,7 @@ Specifica se l'operazione è abilitata o disabilitata come valore booleano.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Segmento. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 

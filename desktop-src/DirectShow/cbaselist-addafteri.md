@@ -1,7 +1,7 @@
 ---
 description: Il metodo AddAfterI inserisce un elemento dopo la posizione specificata.
 ms.assetid: 6da6c1ed-5f22-4364-b636-64b5a0ce1560
-title: Metodo CBaseList. AddAfterI (Wxlist. h)
+title: Metodo CBaseList.AddAfterI (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 760c0bea3a213d7126ea795e9575b3897117f7a1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b72be7342e6085b773ef2493f5ad138f73349dffcdafc1a60a380692df3f16ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016989"
 ---
-# <a name="cbaselistaddafteri-method"></a>CBaseList. AddAfterI, metodo
+# <a name="cbaselistaddafteri-method"></a>Metodo CBaseList.AddAfterI
 
 Il `AddAfterI` metodo inserisce un elemento dopo la posizione specificata.
 
@@ -63,7 +63,7 @@ Restituisce l'indicatore di posizione dell'elemento inserito.
 
 ## <a name="remarks"></a>Commenti
 
-Se *pos* è **null**, questo metodo aggiunge l'elemento all'inizio dell'elenco (equivalente alla chiamata al metodo [**CBaseList:: AddHeadI**](cbaselist-addheadi.md) ).
+Se *pos* è **NULL,** questo metodo aggiunge l'elemento all'intestazione dell'elenco (equivalente a chiamare il metodo [**CBaseList::AddHeadI).**](cbaselist-addheadi.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Se *pos* è **null**, questo metodo aggiunge l'elemento all'inizio dell'elenco (
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxlist. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxlist.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

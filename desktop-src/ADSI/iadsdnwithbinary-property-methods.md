@@ -1,10 +1,10 @@
 ---
-title: Metodi di proprietà IADsDNWithBinary (IADs. h)
-description: Il metodo Property dell'interfaccia IADsDNWithBinary imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere Metodi della proprietà di interfaccia.
+title: Metodi della proprietà IADsDNWithBinary (Iads.h)
+description: Il metodo di proprietà dell'interfaccia IADsDNWithBinary imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere Metodi delle proprietà dell'interfaccia.
 ms.assetid: 3e9ceabb-7a38-4a63-ab62-240ff521e373
 ms.tgt_platform: multiple
 keywords:
-- Metodi di proprietà IADsDNWithBinary ADSI
+- Metodi della proprietà IADsDNWithBinary ADSI
 topic_type:
 - apiref
 api_name:
@@ -21,16 +21,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: adf0398a141596de677d7d1739e84ff7525da9a2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bc8ab9fb355f2602d290c064f6636a13375ea92fdfbf0d6d47c1c6cf8d61e335
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023499"
 ---
-# <a name="iadsdnwithbinary-property-methods"></a>Metodi di proprietà IADsDNWithBinary
+# <a name="iadsdnwithbinary-property-methods"></a>Metodi della proprietà IADsDNWithBinary
 
-Il metodo Property dell'interfaccia [**IADsDNWithBinary**](/windows/desktop/api/Iads/nn-iads-iadsdnwithbinary) imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere [metodi della proprietà di interfaccia](interface-property-methods.md).
+Il metodo di proprietà [**dell'interfaccia IADsDNWithBinary**](/windows/desktop/api/Iads/nn-iads-iadsdnwithbinary) imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere [Metodi delle proprietà dell'interfaccia](interface-property-methods.md).
 
 ## <a name="properties"></a>Proprietà
 
@@ -43,10 +43,10 @@ GUID di un oggetto associato a un DN.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -71,10 +71,10 @@ Stringa DN associata al GUID di un oggetto.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -102,9 +102,9 @@ HRESULT put_DNString(
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsDNWithBinary è definito come 7E99C0A2-F935-11D2-BA96-00C04FB6D0D1<br/>     |
+| IID<br/>                      | \_IADsDNWithBinary IID è definito come 7E99C0A2-F935-11D2-BA96-00C04FB6D0D1<br/>     |
 
 
 
@@ -115,7 +115,7 @@ HRESULT put_DNString(
 [**IADsDNWithBinary**](/windows/desktop/api/Iads/nn-iads-iadsdnwithbinary)
 </dt> <dt>
 
-[**\_DN Ads \_ con \_ binario**](/windows/win32/api/iads/ns-iads-ads_dn_with_binary)
+[**ADS \_ DN \_ CON \_ BINARIO**](/windows/win32/api/iads/ns-iads-ads_dn_with_binary)
 </dt> </dl>
 
  

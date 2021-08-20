@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentDatabaseInvalidPagesException'
+description: Altre informazioni sul costruttore EsentDatabaseInvalidPagesException
 title: Costruttore EsentDatabaseInvalidPagesException
 TOCTitle: 'EsentDatabaseInvalidPagesException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDatabaseInvalidPagesException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 56ac59b1f9e2bae1e5dda23cc05956584d321dae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b5d97563716e4569daa89a0c6cb52516643c6ae6a44a6fac9861c8b1236eb4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119041469"
 ---
 # <a name="esentdatabaseinvalidpagesexception-constructor"></a>Costruttore EsentDatabaseInvalidPagesException
 
 Inizializza una nuova istanza della classe EsentDatabaseInvalidPagesException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentDatabaseInvalidPagesException()
 
 [Membri di EsentDatabaseInvalidPagesException](./esentdatabaseinvalidpagesexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

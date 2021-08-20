@@ -1,11 +1,11 @@
 ---
 title: Metodo IMediaRenderer IsVideoSupported
-description: Recupera un valore che indica se ricevitore è in grado di riprodurre contenuto video.
+description: Recupera un valore che indica se la dmr è in grado di riprodurre contenuto video.
 ms.assetid: AE9A14D0-A7A2-4A71-9454-06A05C7D85F9
 keywords:
-- API di streaming multimediale del metodo IsVideoSupported
-- API di streaming multimediale del metodo IsVideoSupported, interfaccia IMediaRenderer
-- API di streaming multimediale dell'interfaccia IMediaRenderer, metodo IsVideoSupported
+- Metodo IsVideoSupported API Streaming multimediale
+- Metodo IsVideoSupported API Streaming multimediale, interfaccia IMediaRenderer
+- Interfaccia IMediaRenderer API Streaming multimediale , metodo IsVideoSupported
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9808841bf60a384d6a4566e75f53248b0f86338c
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 0c1f6fa149c6c5025d3fd2c785dc2f4a8451fabed3906b559674d8038662c21d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104334628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972310"
 ---
-# <a name="imediarendererisvideosupported-method"></a>Metodo IMediaRenderer:: IsVideoSupported
+# <a name="imediarendererisvideosupported-method"></a>Metodo IMediaRenderer::IsVideoSupported
 
-Recupera un valore che indica se ricevitore è in grado di riprodurre contenuto video.
+Recupera un valore che indica se la dmr è in grado di riprodurre contenuto video.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,22 +41,22 @@ HRESULT IsVideoSupported(
 
 <dl> <dt>
 
-*valore* \[ di out\]
+*value* \[ Cambio\]
 </dt> <dd>
 
-Valore booleano che è **true** se ricevitore è in grado di riprodurre contenuto video e **false** in caso contrario.
+Valore booleano True **se** la dmr è in grado di riprodurre contenuto video e **False** in caso contrario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 

@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: c63b8afdaf699fde6871c198a8235772c59da1ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 57616d6701ab4663fa6757ddec5df4886ec02faaf5088f61b6cb466ca834ec81
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684391"
 ---
 # <a name="networktype-networkitemtype-element"></a>Elemento networkType (networkItemType)
 
-L'elemento networkType (networkItemType) specifica un tipo di rete. Esistono due tipi di reti: reti di infrastruttura (SSE) e reti ad hoc (IBSS).
+L'elemento networkType (networkItemType) specifica un tipo di rete. Esistono due tipi di reti: reti di infrastruttura (ESS) e reti ad hoc (IBSS).
 
 ``` syntax
 <xs:element name="networkType"
@@ -29,7 +29,7 @@ L'elemento networkType (networkItemType) specifica un tipo di rete. Esistono due
  />
 ```
 
-L'elemento **networkType** è definito dal tipo complesso [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) .
+**L'elemento networkType** è definito dal tipo complesso [**networkItemType.**](wlan-policyschema-networkitemtype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,8 +37,8 @@ L'elemento **networkType** è definito dal tipo complesso [**networkItemType**](
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -55,10 +55,10 @@ L'elemento **networkType** è definito dal tipo complesso [**networkItemType**](
 **Possibili elementi padre immediati nell'istanza dello schema**
 </dt> <dt>
 
-[**rete (Consenti)**](wlan-policyschema-network-allowlist-element.md)
+[**network (allowList)**](wlan-policyschema-network-allowlist-element.md)
 </dt> <dt>
 
-[**rete (blocco)**](wlan-policyschema-network-blocklist-element.md)
+[**network (blockList)**](wlan-policyschema-network-blocklist-element.md)
 </dt> </dl>
 
  

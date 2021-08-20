@@ -1,56 +1,56 @@
 ---
-title: Attributo CoordSize di la
-description: Attributo CoordSize di la
+title: Attributo VML CoordSize
+description: Attributo VML CoordSize
 ms.assetid: 4e7a7eca-7db2-4522-be8e-e817601625ed
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a0e1fee484071c04c7184e0f200aed9b52aadf9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bce9ce79507e789c38512e775100aa27eda25dc61d5f2af56f9a677daf04d238
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106299858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999191"
 ---
-# <a name="vml-coordsize-attribute"></a>Attributo CoordSize di la
+# <a name="vml-coordsize-attribute"></a>Attributo VML CoordSize
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Specifica le unità orizzontali e verticali del rettangolo che delimita una forma. Proprietà di lettura/scrittura. [IVgVector2D](msdn-online-vml-ivgvector2d-data-type.md).
 
 **Si applica a**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* coordsize = " *Expression* " >
+<v: *element* coordsize=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . coordsize = "*Expression*"
+*element* .coordsize="*expression*"
 
-*espressione* = *elemento*. coordsize
+*expression* = *elemento*.coordsize
 
 **Osservazioni:**
 
-Se non specificato, le dimensioni della coordinata corrispondono al riquadro delimitatore della forma.
+Se non viene specificato, le dimensioni delle coordinate sono le stesse del rettangolo di selezione della forma.
 
 Si noti che questo attributo è un vettore e che le unità sono relative alla lunghezza e alla larghezza del rettangolo di delimitazione.
 
-Si noti inoltre che è possibile effettuare il mapping tra **coordsize** e il rettangolo di delimitazione. Assicurarsi che la **larghezza coordsize** e l' **altezza coordsize** corrispondano alla larghezza e all' **altezza** dello **stile** , se non si vuole distorcere la forma.
+Si noti anche che il mapping **tra coordsize** e il rettangolo di selezione può essere reso anisotropo. Assicurarsi che la larghezza e l'altezza  **coordsize** siano uguali  alla larghezza e all'altezza dello stile se non si vuole distorcere la forma. 
 
-Durante lo scripting, poiché si tratta di un vettore 2D, è possibile accedere separatamente ai valori x e y e determinare anche il tipo di unità previste.
+Nello scripting, poiché si tratta di un vettore 2D, è possibile accedere separatamente ai valori x e y e determinare il tipo di unità previsto.
 
-*Attributo standard la*
+*Attributo standard VML*
 
 **Esempio**
 
-La forma è 100 punti alti e 100 punti di larghezza, ma ogni unità orizzontale e verticale nello spazio delle coordinate è 1/10 di un punto.
+La forma è alta 100 punti e larga 100 punti, ma ogni unità orizzontale e verticale nello spazio delle coordinate è 1/10 di punto.
 
 
 ```HTML
@@ -64,8 +64,8 @@ La forma è 100 punti alti e 100 punti di larghezza, ma ogni unità orizzontale 
 
 
 
-[Esempio di attributo CoordSize](/previous-versions/bb229665(v=vs.85)). (Richiede Microsoft Internet Explorer 5 o versione successiva).
+[Esempio di attributo CoordSize](/previous-versions/bb229665(v=vs.85)). Richiede Microsoft Internet Explorer 5 o versione successiva.
 
- 
+ 
 
- 
+ 

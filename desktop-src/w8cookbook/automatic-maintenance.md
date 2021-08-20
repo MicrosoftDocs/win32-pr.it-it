@@ -1,81 +1,81 @@
 ---
-title: Manutenzione automatica (Cookbook per la compatibilità per Windows)
+title: Manutenzione automatica (Guida di cookbook sulla compatibilità per Windows)
 description: Manutenzione automatica
 ms.assetid: D3B61105-D118-42A4-8F3D-ED92EFAF597F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 320625fa0ac8e56368396a7f1be88def0ac3c526
-ms.sourcegitcommit: ea4baf9953a78d2d6bd530b680601e39f3884541
+ms.openlocfilehash: d4a839191d84f3f20fcc598b42433c888b090b2b174dd6891c0b5b9fc72f0af5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "104474502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028869"
 ---
 # <a name="automatic-maintenance"></a>Manutenzione automatica
 
 ## <a name="platforms"></a>Piattaforme
 
-**Client** -Windows 8  
+**Client** : Windows 8  
 **Server** : Windows Server 2012  
 
 
 ## <a name="description"></a>Descrizione
 
-Windows dipende dall'esecuzione della posta in arrivo e dall'attività di manutenzione di terze parti per gran parte del suo valore aggiunto, inclusi Windows Update e la deframmentazione automatica del disco, nonché gli aggiornamenti e le analisi antivirus. Inoltre, le aziende utilizzano spesso attività di manutenzione, ad esempio l'analisi di protezione accesso alla rete (NAP), per consentire l'applicazione degli standard di sicurezza in tutte le workstation aziendali.
+Windows dipende dall'esecuzione della posta in arrivo e dalle attività di manutenzione di terze parti per gran parte del valore aggiunto, tra cui l'aggiornamento di Windows e la deframmentazione automatica del disco, nonché gli aggiornamenti e le analisi antivirus. Inoltre, le aziende usano spesso attività di manutenzione come l'analisi di Protezione accesso alla rete (NAP) per applicare gli standard di sicurezza in tutte le workstation aziendali.
 
-L'attività di manutenzione in Windows è progettata per essere eseguita in background con un'interazione utente limitata e un minimo effetto sulle prestazioni e sull'efficienza energetica. Tuttavia, in Windows 7 e versioni precedenti, le prestazioni e l'efficienza energetica sono ancora interessate a causa della pianificazione non deterministica e molto variegata delle diverse attività di manutenzione di Windows. La velocità di risposta agli utenti viene ridotta quando viene eseguita l'attività di manutenzione mentre gli utenti usano attivamente il computer. Spesso le app richiedono inoltre all'utente di aggiornare il software e di eseguire la manutenzione in background e indirizzare gli utenti a più esperienze, tra cui centro operativo, pannello di controllo, Windows Update, Utilità di pianificazione snap-in MMC e controlli di terze parti.
+L'attività di Windows è progettata per essere eseguita in background con interazione utente limitata e impatto minimo sulle prestazioni e sull'efficienza energetica. Tuttavia, in Windows 7 e versioni precedenti, le prestazioni e l'efficienza energetica sono ancora interessate dalla pianificazione non deterministica e ampiamente variata delle diverse attività di manutenzione in Windows. La velocità di risposta agli utenti si riduce quando viene eseguita un'attività di manutenzione mentre gli utenti usano attivamente il computer. Le app spesso chiedono spesso all'utente di aggiornare il software ed eseguire la manutenzione in background e indirizzano gli utenti a più esperienze, tra cui Centro notifiche, Pannello di controllo, aggiornamento Windows, snap-in MMC Utilità di pianificazione e controlli di terze parti.
 
-L'obiettivo della manutenzione automatica è combinare tutte le attività di manutenzione in background in Windows e aiutare gli sviluppatori di terze parti ad aggiungere le attività di manutenzione a Windows senza influire negativamente sulle prestazioni e sull'efficienza energetica. Inoltre, la manutenzione automatica consente agli utenti e alle aziende di controllare la pianificazione e la configurazione delle attività di manutenzione.
+L'obiettivo di Manutenzione automatica è combinare tutte le attività di manutenzione in background in Windows e aiutare gli sviluppatori di terze parti ad aggiungere la propria attività di manutenzione a Windows senza influire negativamente sulle prestazioni e sull'efficienza energetica. Inoltre, Manutenzione automatica utenti e aziende di avere il controllo della pianificazione e della configurazione delle attività di manutenzione.
 
 **Problemi principali**
 
-La manutenzione automatica è progettata per risolvere i problemi relativi alle attività di manutenzione in Windows:
+Manutenzione automatica è progettato per risolvere questi problemi relativi all'attività di manutenzione in Windows:
 
--   Pianificazione scadenza
+-   Pianificazione delle scadenze
 -   Conflitti di utilizzo delle risorse
 -   Efficienza energetica
 -   Trasparenza per l'utente
 
 ## <a name="functionality"></a>Funzionalità
 
-La manutenzione automatica facilita l'efficienza di inattività e consente l'esecuzione di tutte le attività in modo tempestivo e in ordine di priorità. Consente inoltre di abilitare la visibilità e il controllo unificato delle attività di manutenzione e consente agli sviluppatori di terze parti di aggiungere le attività di manutenzione a Windows senza influire negativamente sulle prestazioni e sull'efficienza energetica. A tale scopo, offre una modalità completamente automatica, la modalità avviata dall'utente, l'arresto automatico, le scadenze e le notifiche e il controllo aziendale. Ognuno di essi è descritto di seguito.
+Manutenzione automatica agevola l'efficienza di inattività e consente l'esecuzione di tutte le attività in modo ordinato e prioritario. Consente inoltre di abilitare visibilità unificata e controllo sulle attività di manutenzione e consente agli sviluppatori di terze parti di aggiungere la propria attività di manutenzione Windows senza influire negativamente sulle prestazioni e sull'efficienza energetica. A tale scopo, offre una modalità completamente automatica, la modalità avviata dall'utente, l'arresto automatico, le scadenze e le notifiche e il controllo aziendale. Queste sono descritte di seguito.
 
 **Modalità completamente automatica**
 
-Questa modalità predefinita consente la pianificazione intelligente durante il tempo di inattività del PC e in orari pianificati, ovvero l'esecuzione e la sospensione automatica delle attività di manutenzione senza alcun intervento da parte dell'utente. L'utente può impostare una pianificazione settimanale o giornaliera. Tutte le attività di manutenzione non sono interattive ed eseguite in modo invisibile all'utente.
+Questa modalità predefinita consente la pianificazione intelligente durante il tempo di inattività del PC e in orari pianificati, ovvero l'esecuzione e la sospensione automatica dell'attività di manutenzione senza alcun intervento dell'utente. L'utente può impostare una pianificazione settimanale o giornaliera. Tutte le attività di manutenzione non sono interattive e vengono eseguite in modo invisibile all'utente.
 
-Il computer viene ripreso automaticamente dalla modalità di sospensione quando non è probabile che il sistema sia in uso, rispettando i criteri di risparmio energia, che nel caso dei portatili, per impostazione predefinita è possibile abilitare la riattivazione solo se si trova in alimentazione AC. Le risorse di sistema complete a potenza elevata vengono usate per completare l'attività di manutenzione nel minor tempo possibile. Se il sistema è stato ripreso dalla sospensione per la manutenzione automatica, viene richiesto di tornare alla modalità sospensione.
+Il computer viene ripreso automaticamente dalla sospensione quando è probabile che il sistema non sia in uso, rispettando i criteri di risparmio energia, che nel caso dei portatili consentono per impostazione predefinita la riattivazione solo se è alimentato da CA. Le risorse di sistema complete a potenza elevata vengono usate per completare l'attività di manutenzione il più rapidamente possibile. Se il sistema è stato ripreso dalla sospensione per Manutenzione automatica, viene richiesto di tornare in sospensione.
 
-Eventuali interazioni utente richieste correlate a attività come la configurazione vengono eseguite al di fuori dell'esecuzione automatica della manutenzione.
+Tutte le interazioni utente necessarie correlate ad attività quali la configurazione vengono eseguite al di fuori Manutenzione automatica esecuzione.
 
 **Modalità avviata dall'utente**
 
-Se gli utenti devono prepararsi per la corsa, prevedere un tempo di alimentazione della batteria per un tempo prolungato o voler ottimizzare le prestazioni e la velocità di risposta, hanno la possibilità di avviare la manutenzione automatica su richiesta. Gli utenti possono configurare gli attributi di manutenzione automatica, inclusa la pianificazione di esecuzione automatica. Possono visualizzare lo stato corrente dell'esecuzione di manutenzione automatica e possono arrestare la manutenzione automatica, se necessario.
+Se gli utenti devono prepararsi per il viaggio, aspettarsi di essere alimentato a batteria per un periodo prolungato o di voler ottimizzare le prestazioni e la velocità di risposta, hanno la possibilità di avviare Manutenzione automatica su richiesta. Gli utenti possono configurare Manutenzione automatica, inclusa la pianificazione dell'esecuzione automatica. Possono visualizzare lo stato corrente dell'esecuzione Manutenzione automatica e arrestare l Manutenzione automatica se necessario.
 
 **Arresto automatico**
 
-La manutenzione automatica interrompe automaticamente le attività di manutenzione in corso se l'utente inizia a interagire con il computer. L'attività di manutenzione viene ripresa quando il sistema torna allo stato inattivo.
+Manutenzione automatica automaticamente le attività di manutenzione in esecuzione se l'utente inizia a interagire con il computer. L'attività di manutenzione riprenderà quando il sistema torna allo stato di inattività.
 
 > [!Note]  
-> Tutte le attività nella manutenzione automatica devono supportare l'arresto in 2 secondi o meno. L'utente deve ricevere una notifica che indica che l'attività è stata arrestata.
+> Tutte le attività in Manutenzione automatica devono supportare l'arresto in un massimo di 2 secondi. All'utente deve essere notificato che l'attività è stata arrestata.
 
- 
+ 
 
-**Scadenze e notifiche**
+**Scadenze e notifica**
 
-L'attività di manutenzione critica deve essere eseguita all'interno di un intervallo di tempo predefinito. Se non è stato possibile eseguire attività critiche nell'intervallo di tempo specificato, la manutenzione automatica verrà avviata automaticamente alla successiva opportunità di inattività del sistema disponibile. Tuttavia, se lo stato dell'attività resta dietro la scadenza, la manutenzione automatica invierà una notifica all'utente sull'attività e fornirà un'opzione per un'esecuzione manuale della manutenzione automatica. Tutte le attività pianificate per la manutenzione verranno eseguite, sebbene le attività più affamate abbiano la precedenza. Questa attività può influisca sulle prestazioni e sulla velocità di risposta del sistema; Pertanto, la manutenzione automatica invierà una notifica all'utente dell'esecuzione dell'attività di manutenzione critica.
+L'attività di manutenzione critica deve essere eseguita all'interno di un intervallo di tempo predefinito. Se le attività critiche non sono state in grado di essere eseguite entro il tempo designato, Manutenzione automatica l'esecuzione verrà avviata automaticamente alla successiva opportunità di inattività del sistema disponibile. Tuttavia, se lo stato dell'attività rimane entro la scadenza, Manutenzione automatica notifica all'utente l'attività e fornisce un'opzione per un'esecuzione manuale di Manutenzione automatica. Tutte le attività pianificate per la manutenzione verranno eseguite, anche se le attività più care hanno la precedenza. Questa attività può influire sulla velocità di risposta e sulle prestazioni del sistema. Pertanto, Manutenzione automatica notifica all'utente che è in esecuzione un'attività di manutenzione critica.
 
-**Controllo Enterprise**
+**Enterprise controllo**
 
-I professionisti IT aziendali dovrebbero essere in grado di determinare quando viene eseguita la manutenzione automatica sui sistemi Windows, applicare tale pianificazione tramite interfacce di gestione standardizzate e recuperare i dati degli eventi sullo stato dei tentativi di esecuzione automatica della manutenzione. Inoltre, i professionisti IT devono essere in grado di richiamare attività di manutenzione automatica specifiche in modalità remota tramite interfacce di gestione standard. Ogni volta che viene eseguita la manutenzione automatica, la creazione di rapporti di stato, incluse le notifiche quando non è stato possibile eseguire la manutenzione automatica perché l'utente ha sospeso manualmente l'attività, viene eseguito. I professionisti IT dovrebbero prendere in considerazione la possibilità di trasferire gli script di accesso alla manutenzione automatica per semplificare l'esperienza di accesso dell'utente.
+Enterprise I professionisti IT devono essere in grado di determinare quando Manutenzione automatica viene eseguito nei propri sistemi Windows, applicare tale pianificazione tramite interfacce di gestione standardizzate e recuperare i dati degli eventi sullo stato dei tentativi di Manutenzione automatica'esecuzione. Inoltre, i professionisti IT devono essere in grado di richiamare attività Manutenzione automatica in remoto tramite interfacce di gestione standard. Ogni volta Manutenzione automatica, viene eseguita la segnalazione dello stato, incluse le notifiche Manutenzione automatica non è stato possibile eseguire l'attività perché l'utente ha sospeso manualmente l'attività. I professionisti IT devono prendere in considerazione lo spostamento degli script di accesso Manutenzione automatica per rendere più rapida l'esperienza di accesso dell'utente.
 
-## <a name="creating-an-automatic-maintenance-task"></a>Creazione di un'attività di manutenzione automatica
+## <a name="creating-an-automatic-maintenance-task"></a>Creazione di un'Manutenzione automatica lavoro
 
-In questa sezione viene illustrato in dettaglio come gli sviluppatori possono creare un'attività utilizzando una definizione di attività in linguaggio XML o C. Tenere presente che l'attività di manutenzione non deve avviare alcuna interfaccia utente che richiede l'interazione dell'utente, perché la manutenzione automatica è completamente invisibile e viene eseguita quando l'utente non è presente. Infatti, se l'utente interagisce con il computer durante la manutenzione automatica, le attività in corso verranno terminate fino al periodo di inattività successivo.
+Questa sezione illustra in dettaglio come gli sviluppatori possono creare un'attività usando una definizione di attività in linguaggio XML o C. Tenere presente che le attività di manutenzione non devono avviare alcuna interfaccia utente che richieda l'interazione dell'utente, perché Manutenzione automatica è completamente invisibile all'utente e viene eseguita quando l'utente non è presente. In effetti, se l'utente interagisce con il computer durante Manutenzione automatica, tutte le attività in corso verranno terminate fino al periodo di inattività successivo.
 
-**Utilizzo di XML**
+**Uso di XML**
 
-Utilità di pianificazione include uno strumento da riga di comando incorporato, schtasks.exe, che consente di importare una definizione di attività in formato XML. Lo schema per la definizione di attività è documentato in https://msdn.microsoft.com/library/aa383609(v=VS.85).aspx . Di seguito è riportato un esempio di un'attività di manutenzione automatica definita in XML.
+Utilità di pianificazione include uno strumento da riga di comando predefinito, schtasks.exe, che può importare una definizione di attività in formato XML. Lo schema per la definizione dell'attività è documentato in https://msdn.microsoft.com/library/aa383609(v=VS.85).aspx . Di seguito è riportato un esempio di Manutenzione automatica attività definita in XML.
 
 
 ```
@@ -123,13 +123,13 @@ Utilità di pianificazione include uno strumento da riga di comando incorporato,
 
 
 
-Per salvare l'attività in un computer Windows, salvare il codice XML precedente come file di testo e usare la riga di comando seguente:
+Per salvare l'attività in un computer Windows, salvare il codice XML precedente come file di testo e usare questa riga di comando:
 
 `Schtasks.exe /create /tn <task name> /xml <text file name>`
 
-**Utilizzo di C**
+**Uso di C**
 
-È anche possibile creare un'attività di manutenzione automatica usando il codice C. Di seguito è riportato un esempio di codice che può essere usato per configurare le impostazioni di manutenzione automatica di un'attività:
+È Manutenzione automatica possibile creare un'attività usando il codice C. Di seguito è riportato un esempio di codice che può essere usato per configurare le impostazioni Manutenzione automatica attività:
 
 
 ```
@@ -402,26 +402,26 @@ CleanUp:
 
 
 
-## <a name="validating-tasks"></a>Convalida di attività
+## <a name="validating-tasks"></a>Convalida delle attività
 
-Verificare che l'attività sia stata creata correttamente e venga eseguita come parte della manutenzione.
+Verificare che l'attività sia stata creata correttamente ed eseguita come parte della manutenzione.
 
 **Convalida della creazione di attività**
 
-Usare questa riga di comando per esportare la definizione di attività in un file e assicurarsi che la definizione di attività sia come previsto:
+Usare questa riga di comando per esportare la definizione dell'attività in un file e assicurarsi che la definizione dell'attività sia quella prevista:
 
 `Schtasks.exe /Query /tn<task name> /xml <text file name>`
 
 **Convalida dell'esecuzione dell'attività**
 
-Eseguire questa riga di comando per avviare l'attività e verificare che l'interfaccia utente di Utilità di pianificazione (taskschd. msc) indichi che l'attività è stata eseguita:
+Eseguire questa riga di comando per avviare l'attività e verificare che l'interfaccia utente di Utilità di pianificazione (taskschd.msc) mostra che l'attività è stata eseguita:
 
 `Schtasks.exe /Run /tn<task name>`
 
 ## <a name="resources"></a>Risorse
 
--   [Pianificazione attività 2,0](/previous-versions/bb756979(v=msdn.10))
+-   [Pianificazione attività 2.0](/previous-versions/bb756979(v=msdn.10))
 
- 
+ 
 
- 
+ 

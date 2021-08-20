@@ -4,12 +4,12 @@ description: Gestione degli errori COM in Java e Visual Basic
 ms.assetid: 1130a038-3c18-4530-a6d7-9f538352297f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11c55c1c2414c69ff9398845858baadebd58cbf9
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 1ba8e179ca3e7a1d57fdae63e8ad20d14a6fff358fab1fff24bfe7ae8df185d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110424011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048519"
 ---
 # <a name="com-error-handling-in-java-and-visual-basic"></a>Gestione degli errori COM in Java e Visual Basic
 
@@ -29,7 +29,7 @@ Le tre interfacce che forniscono supporto per **HRESULT** sono elencate e descri
 
  
 
-Le tre funzioni che forniscono supporto per **HRESULT** sono elencate e descritte brevemente nella tabella seguente.
+Le tre funzioni che forniscono il supporto per **HRESULT** sono elencate e descritte brevemente nella tabella seguente.
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Specifica i parametri di controllo della velocità video per un codificatore video.
+description: Specifica i parametri di controllo della frequenza video per un codificatore video.
 ms.assetid: 8AF841A8-E121-4C41-BD3F-26760232E857
-title: Proprietà CODECAPI_AVEncVideoRateControlParams (codecapit. h)
+title: CODECAPI_AVEncVideoRateControlParams proprietà (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 63e292ee5b1b8a9dc8a63d0e445ffbf60b9c91b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df0af9d4eb903725b1a4ae326d71ce07072428e0667a7032a86448f1e270f734
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974880"
 ---
-# <a name="codecapi_avencvideoratecontrolparams-property"></a>Proprietà AVEncVideoRateControlParams di codecapi \_
+# <a name="codecapi_avencvideoratecontrolparams-property"></a>PROPRIETÀ CODECAPI \_ AVEncVideoRateControlParams
 
-Specifica i parametri di controllo della velocità video per un codificatore video.
+Specifica i parametri di controllo della frequenza video per un codificatore video.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,7 +21,7 @@ Specifica i parametri di controllo della velocità video per un codificatore vid
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncVideoRateControlParams**
+**CODECAPI \_ AVEncVideoRateControlParams**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -29,9 +29,9 @@ Specifica i parametri di controllo della velocità video per un codificatore vid
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                     |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                     |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -39,7 +39,7 @@ Specifica i parametri di controllo della velocità video per un codificatore vid
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

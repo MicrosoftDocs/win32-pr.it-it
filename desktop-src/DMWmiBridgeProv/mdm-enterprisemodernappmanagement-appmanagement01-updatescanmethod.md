@@ -1,11 +1,11 @@
 ---
 title: Metodo UpdateScanMethod della classe MDM_EnterpriseModernAppManagement_AppManagement01
-description: Metodo per avviare l'analisi del Windows Update. Vedere anche UpdateScan.
+description: Metodo per avviare l'Windows di aggiornamento. Vedere anche UpdateScan.
 ms.assetid: 61d17072-0fe5-4d5b-8e9e-fed536883ac9
 keywords:
 - Metodo UpdateScanMethod
-- Metodo UpdateScanMethod, classe MDM_EnterpriseModernAppManagement_AppManagement01
-- Classe MDM_EnterpriseModernAppManagement_AppManagement01, metodo UpdateScanMethod
+- Metodo UpdateScanMethod, MDM_EnterpriseModernAppManagement_AppManagement01 classe
+- MDM_EnterpriseModernAppManagement_AppManagement01 classe, metodo UpdateScanMethod
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af6cb5b744243b78f737ea44fbc27ef40708c6f6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 442c8720c36ac3730636a7889f4f7b663e77edc819c09af090a4430a48f3ca2e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119216391"
 ---
 # <a name="updatescanmethod-method-of-the-mdm_enterprisemodernappmanagement_appmanagement01-class"></a>Metodo UpdateScanMethod della classe MDM \_ EnterpriseModernAppManagement \_ AppManagement01
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Metodo per avviare l'analisi del Windows Update. Vedere anche [UpdateScan](/windows/client-management/mdm/enterprisemodernappmanagement-csp).
+Metodo per avviare l'Windows di aggiornamento. Vedere anche [UpdateScan.](/windows/client-management/mdm/enterprisemodernappmanagement-csp)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,10 +48,10 @@ Questo metodo non presenta parametri.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -60,10 +60,10 @@ Questo metodo non presenta parametri.
 
 <dl> <dt>
 
-[**\_AppManagement01 ENTERPRISEMODERNAPPMANAGEMENT \_ MDM**](mdm-enterprisemodernappmanagement-appmanagement01.md)
+[**MDM \_ EnterpriseModernAppManagement \_ AppManagement01**](mdm-enterprisemodernappmanagement-appmanagement01.md)
 </dt> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

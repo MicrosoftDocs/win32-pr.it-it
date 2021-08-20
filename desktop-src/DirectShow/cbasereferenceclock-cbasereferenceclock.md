@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9840bb9d733641ada7c45b0df1470a4150b8ec85
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6ea08e5555aa6286dac80642f19969e6e669a4ec6ccddb4e530d13e0253b4bf2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954990"
 ---
 # <a name="cbasereferenceclockcbasereferenceclock-constructor"></a>Costruttore CBaseReferenceClock.CBaseReferenceClock
 
@@ -48,14 +48,14 @@ CBaseReferenceClock(
 *Pname* 
 </dt> <dd>
 
-Puntatore a una stringa contenente il nome dell'oggetto. Per altre informazioni, vedere [**CBaseObject.**](cbaseobject.md)
+Puntatore a una stringa contenente il nome dell'oggetto. Per altre informazioni, vedere [**CBaseObject**](cbaseobject.md).
 
 </dd> <dt>
 
 *Punk* 
 </dt> <dd>
 
-Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia IUnknown dell'oggetto aggregatore. In caso contrario, impostare questo parametro su **NULL.**
+Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia IUnknown dell'oggetto di aggregazione. In caso contrario, impostare questo parametro su **NULL.**
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Puntatore a un **valore HRESULT.** Se si verifica un errore, il metodo restituis
 *pSched* 
 </dt> <dd>
 
-Puntatore a [**un oggetto CAMSchedule.**](camschedule.md) Se **NULL,** questo metodo crea un nuovo **oggetto CAMSchedule.**
+Puntatore a un [**oggetto CAMSchedule.**](camschedule.md) Se **NULL,** questo metodo crea un nuovo **oggetto CAMSchedule.**
 
 </dd> </dl>
 
@@ -79,7 +79,7 @@ Puntatore a [**un oggetto CAMSchedule.**](camschedule.md) Se **NULL,** questo me
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Refclock.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Refclock.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

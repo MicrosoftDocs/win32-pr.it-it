@@ -1,19 +1,19 @@
 ---
 description: Si verifica quando InkRecognizerContext ha generato risultati dal metodo BackgroundRecognize.
 ms.assetid: 0cc319af-cd0b-4089-928b-cae6c86f6f61
-title: Evento InkRecognizerContext. Recognition (Msinkaut. h)
+title: Evento InkRecognizerContext.Recognition (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86da1a7470169f9f978e92a87f3e32f7e63acb42
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4f6c4799f3366003d14451a19a7bea19ea35aadcce9226f25f1fe80a14ab19e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966940"
 ---
-# <a name="inkrecognizercontextrecognition-event"></a>Evento InkRecognizerContext. Recognition
+# <a name="inkrecognizercontextrecognition-event"></a>Evento InkRecognizerContext.Recognition
 
-Si verifica quando [**InkRecognizerContext**](inkrecognizercontext-class.md) ha generato risultati dal metodo [**BackgroundRecognize**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-backgroundrecognize) .
+Si verifica quando [**InkRecognizerContext ha**](inkrecognizercontext-class.md) generato risultati dal [**metodo BackgroundRecognize.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-backgroundrecognize)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,25 +32,25 @@ void Recognition(
 
 <dl> <dt>
 
-*RecognizedString* \[ in\]
+*RecognizedString* \[ Pollici\]
 </dt> <dd>
 
-Testo del risultato del riconoscimento con la massima confidenza.
+Testo del risultato del riconoscimento con la massima attendibilità.
 
-Per ulteriori informazioni sul tipo di dati BSTR, vedere [utilizzando la libreria com](using-the-com-library.md).
+Per altre informazioni sul tipo di dati BSTR, vedere [Using the COM Library](using-the-com-library.md).
 
 </dd> <dt>
 
-*CustomData* \[ in\]
+*CustomData* \[ Pollici\]
 </dt> <dd>
 
 Oggetto che contiene i dati personalizzati per il risultato del riconoscimento.
 
-Per ulteriori informazioni sulla struttura VARIANT, vedere [utilizzando la libreria com](using-the-com-library.md).
+Per altre informazioni sulla struttura VARIANT, vedere [Using the COM Library](using-the-com-library.md).
 
 </dd> <dt>
 
-*RecognitionStatus* \[ in\]
+*RecognitionStatus* \[ Pollici\]
 </dt> <dd>
 
 Stato di riconoscimento del risultato del riconoscimento più recente.
@@ -63,9 +63,9 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Il comportamento del Application Programming Interface (API) è imprevedibile se si tenta di ottenere l'accesso all'oggetto [**InkRecognizerContext**](inkrecognizercontext-class.md) originale dal gestore dell'evento di riconoscimento. Non tentare di eseguire questa operazione. In alternativa, se è necessario eseguire questa operazione, creare un flag e impostarlo nel gestore dell'evento di [riconoscimento](ink-recognition.md) . È quindi possibile eseguire il polling del flag per determinare quando modificare le proprietà **InkRecognizerContext** all'esterno del gestore eventi.
+Il comportamento dell'API (Application Programming Interface) è imprevedibile se si tenta di ottenere l'accesso all'oggetto [**InkRecognizerContext**](inkrecognizercontext-class.md) originale dal gestore dell'evento di riconoscimento. Non tentare di eseguire questa operazione. Se invece è necessario eseguire questa operazione, creare un flag e impostarlo nel gestore [dell'evento](ink-recognition.md) Recognition. È quindi possibile eseguire il polling del flag per determinare quando modificare le **proprietà InkRecognizerContext** all'esterno del gestore eventi.
 
-Questo metodo di evento è definito nell' \_ interfaccia IInkEvents. L' \_ interfaccia IInkEvents implementa l'interfaccia [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificatore di DISPID \_ IRERecognition.
+Questo metodo di evento è definito \_ nell'interfaccia IInkEvents. \_L'interfaccia IInkEvents implementa [**l'interfaccia IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificatore \_ di DISPID IRERecognition.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,9 +73,9 @@ Questo metodo di evento è definito nell' \_ interfaccia IInkEvents. L' \_ inter
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -93,7 +93,7 @@ Questo metodo di evento è definito nell' \_ interfaccia IInkEvents. L' \_ inter
 [**Enumerazione InkRecognitionStatus**](/windows/desktop/api/msinkaut/ne-msinkaut-inkrecognitionstatus)
 </dt> <dt>
 
-[**Recognize (metodo)**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-recognize)
+[**Metodo Recognize**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-recognize)
 </dt> <dt>
 
 [**Interfaccia IInkRecognitionResult**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionresult)

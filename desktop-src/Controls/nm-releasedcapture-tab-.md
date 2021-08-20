@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica del NM_RELEASEDCAPTURE (scheda) (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo struttura a schede che il controllo sta rilasciando l'acquisizione del mouse. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: NM_RELEASEDCAPTURE (scheda) codice di notifica (Commctrl.h)
+description: Notifica alla finestra padre di un controllo Struttura a schede che il controllo sta rilasciando mouse capture. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 17f87666-692c-4c2f-9ef5-6d2593e0de97
 keywords:
-- Codice di notifica di NM_RELEASEDCAPTURE (tabulazione) controlli di Windows
+- NM_RELEASEDCAPTURE di notifica (scheda) Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad9c9049b63afb18413aea9fa77b7947e97e93b1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6c262d5a36fe868ef4c15333f02a21a02ad67788c68d5826b839d00c1843387b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119261611"
 ---
-# <a name="nm_releasedcapture-tab-notification-code"></a>\_Codice di notifica RELEASEDCAPTURE (TAB) Nm
+# <a name="nm_releasedcapture-tab-notification-code"></a>Codice di notifica NM \_ RELEASEDCAPTURE (scheda)
 
-Notifica alla finestra padre di un controllo struttura a schede che il controllo sta rilasciando l'acquisizione del mouse. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo Struttura a schede che il controllo sta rilasciando mouse capture. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ NM_RELEASEDCAPTURE
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive su questa notifica.
+Puntatore a [**una struttura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive su questa notifica.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

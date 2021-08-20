@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetGetRecordPosition'
-title: API. JetGetRecordPosition, metodo
+description: Altre informazioni sul metodo Api.JetGetRecordPosition
+title: Metodo Api.JetGetRecordPosition
 TOCTitle: 'JetGetRecordPosition method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetRecordPosition(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_RECPOS@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgetrecordposition(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 00350853172d784c270c197e7c58ad6fa616560f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 12d4e52ff2b9f2d9935ac7c585b146442f1dc418de5339b1600dc3a89e234e53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042559"
 ---
-# <a name="apijetgetrecordposition-method"></a>API. JetGetRecordPosition, metodo
+# <a name="apijetgetrecordposition-method"></a>Metodo Api.JetGetRecordPosition
 
-Restituisce la posizione frazionaria del record corrente nell'indice corrente sotto forma di struttura [JET_RECPOS](./jet-recpos-class.md) . Vedere anche [JetGotoPosition (JET_SESID, JET_TABLEID, JET_RECPOS)](./api.jetgotoposition-method.md).
+Restituisce la posizione frazionaria del record corrente nell'indice corrente sotto forma di JET_RECPOS [struttura](./jet-recpos-class.md) . Vedere anche [JetGotoPosition(JET_SESID, JET_TABLEID, JET_RECPOS)](./api.jetgotoposition-method.md).
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -65,21 +65,21 @@ public static void JetGetRecordPosition(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     Sessione da utilizzare.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Cursore posizionato sul record.
 
 <!-- end list -->
 
   - recpos  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_RECPOS](./jet-recpos-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_RECPOS](./jet-recpos-class.md)  
     
     Restituisce la posizione frazionaria approssimativa del record.
 
@@ -89,6 +89,6 @@ public static void JetGetRecordPosition(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

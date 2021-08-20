@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un servizio di invio per il traffico di rete. Il servizio elabora gli endpoint del protocollo ricevuti dai pacchetti, li ignora o invia i pacchetti ad altri endpoint del protocollo.
+description: Rappresenta un servizio di inoltro per il traffico di rete. Il servizio elabora i pacchetti ricevuti dagli endpoint di protocollo rimuovendoli o inviandoli ad altri endpoint di protocollo.
 ms.assetid: 366ae2bf-a436-4ad2-b212-39958a7fbc43
-title: Classe CIM_ForwardingService
+title: CIM_ForwardingService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 12ebb33d6c63b637c9342bd7a869993019abb26b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63dd03c6e458ee88ef73dea89d006d6d733dd147ed2d4ad7433901c18cbb25d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401585"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014659"
 ---
-# <a name="cim_forwardingservice-class"></a>CIM \_ ForwardingService (classe)
+# <a name="cim_forwardingservice-class"></a>Classe CIM \_ ForwardingService
 
-Rappresenta un servizio di invio per il traffico di rete. Il servizio elabora gli endpoint del protocollo ricevuti dai pacchetti, li ignora o invia i pacchetti ad altri endpoint del protocollo.
+Rappresenta un servizio di inoltro per il traffico di rete. Il servizio elabora i pacchetti ricevuti dagli endpoint di protocollo rimuovendoli o inviandoli ad altri endpoint di protocollo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,36 +39,36 @@ class CIM_ForwardingService : CIM_NetworkService
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ForwardingService** presenta questi tipi di membri:
+La **classe CIM \_ ForwardingService** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ForwardingService** dispone di queste proprietà.
+La **classe CIM \_ ForwardingService** ha queste proprietà.
 
 <dl> <dt>
 
 **OtherProtocolType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ForwardingService**.**ProtocolType**")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ForwardingService**.**ProtocolType**")
 </dt> </dl>
 
-Definisce il tipo di protocollo da trasmettere quando il valore della proprietà **ProtocolType** è 1 (other).
+Definisce il tipo di protocollo da inoltrare quando il valore della **proprietà ProtocolType** è 1 (Altro).
 
 </dd> <dt>
 
-**ProtocolType**
+**Protocoltype**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -77,7 +77,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ForwardingService**.**OtherProtocolType**")
 </dt> </dl>
 
-Tipo di protocollo da trasmettere.
+Tipo di protocollo da inoltrare.
 
 <dt>
 
@@ -160,7 +160,7 @@ Tipo di protocollo da trasmettere.
 
 <span id="VINES"></span><span id="vines"></span>
 
-**Viti** (11)
+**VINES** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -195,7 +195,7 @@ Tipo di protocollo da trasmettere.
 
 <span id="TokenRing"></span><span id="tokenring"></span><span id="TOKENRING"></span>
 
-**Tokenring** (16)
+**TokenRing** (16)
 
 
 </dt> <dd></dd> <dt>
@@ -209,7 +209,7 @@ Tipo di protocollo da trasmettere.
 
 <span id="Infiniband"></span><span id="infiniband"></span><span id="INFINIBAND"></span>
 
-**InfiniBand** (18)
+**Infiniband** (18)
 
 
 </dt> <dd></dd> <dt>
@@ -231,8 +231,8 @@ Tipo di protocollo da trasmettere.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -241,7 +241,7 @@ Tipo di protocollo da trasmettere.
 
 <dl> <dt>
 
-[**NetworkService di CIM \_**](cim-networkservice.md)
+[**CIM \_ NetworkService**](cim-networkservice.md)
 </dt> </dl>
 
  

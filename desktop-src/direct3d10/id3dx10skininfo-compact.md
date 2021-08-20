@@ -1,7 +1,7 @@
 ---
-description: Limitare il numero di ossa che possono influenzare un vertice e/o limitare la quantità di influenza che può avere un osso su un vertice.
+description: Limitare il numero di emische che possono influenzare un vertice e/o limitare la quantità di influenza che può avere un recidro su un vertice.
 ms.assetid: 75c4d2eb-0a43-494d-9642-4c08aa814794
-title: 'Metodo ID3DX10SkinInfo:: Compact (D3DX10. h)'
+title: Metodo ID3DX10SkinInfo::Compact (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 379343688a1fd2ffe5ebd968dc984fa09faada7d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3aab3534ea55d2f6675ef1e65b03d19f4c516562b242e284ee2865f98bc03f18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104401944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046909"
 ---
-# <a name="id3dx10skininfocompact-method"></a>Metodo ID3DX10SkinInfo:: Compact
+# <a name="id3dx10skininfocompact-method"></a>Metodo ID3DX10SkinInfo::Compact
 
-Limitare il numero di ossa che possono influenzare un vertice e/o limitare la quantità di influenza che può avere un osso su un vertice.
+Limitare il numero di emische che possono influenzare un vertice e/o limitare la quantità di influenza che può avere un recidro su un vertice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ HRESULT Compact(
 
 <dl> <dt>
 
-*MaxPerVertexInfluences* \[ in\]
+*MaxPerVertexInfluences* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero massimo di ossa che possono influenzare qualsiasi vertice specificato. Questo valore viene ignorato se è maggiore del valore restituito da [**ID3DX10SkinInfo:: GetMaxBoneInfluences**](id3dx10skininfo-getmaxboneinfluences.md).
+Numero massimo di animali che possono influenzare qualsiasi vertice specificato. Questo valore viene ignorato se è maggiore del valore restituito da [**ID3DX10SkinInfo::GetMaxBoneInfluences**](id3dx10skininfo-getmaxboneinfluences.md).
 
 </dd> <dt>
 
-*ScaleMode* \[ in\]
+*ScaleMode* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Flag che descrive come ridimensionare i pesi rimanenti su un determinato vertice dopo che alcuni sono stati tagliati da MinWeight. Se D3DX10 \_ SKININFO \_ non \_ viene specificato alcun ridimensionamento, i pesi non verranno ridimensionati. Se \_ \_ si specifica d3dx10 SKININFO scale \_ a \_ 1, i pesi maggiori di MinWeight verranno scalati in modo da aggiungerli fino a 1,0. Se \_ \_ si specifica d3dx10 SKININFO scale \_ to \_ Total, i pesi maggiori di MinWeight verranno ridimensionati in modo da aggiungerli al totale originale.
+Flag che descrive come ridimensionare i pesi rimanenti su un determinato vertice dopo che alcuni sono stati sfalsati da MinWeight. Se si specifica D3DX10 SKININFO NO SCALING, i pesi non \_ \_ verranno \_ ridimensionati. Se si specifica D3DX10 SKININFO SCALE TO 1, i pesi maggiori di MinWeight verranno ridimensionati in modo da aggiungere fino a \_ \_ \_ \_ 1,0. Se si specifica D3DX10 SKININFO SCALE TO TOTAL, i pesi maggiori di MinWeight verranno ridimensionati in modo da aggiungere fino al totale \_ \_ \_ \_ originale.
 
 </dd> <dt>
 
-*MinWeight* \[ in\]
+*MinWeight* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-Percentuale minima di influenza, o peso, che qualsiasi osso può avere su qualsiasi vertice. Questo valore deve essere compreso tra 0 e 1.
+Percentuale minima di influenza, o peso, che qualsiasi cane può avere su qualsiasi vertice. Questo valore deve essere compreso tra 0 e 1.
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Percentuale minima di influenza, o peso, che qualsiasi osso può avere su qualsi
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere: E \_ OutOfMemory o e \_ INVALIDARG.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere E \_ OUTOFMEMORY o E \_ INVALIDARG.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,8 +81,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

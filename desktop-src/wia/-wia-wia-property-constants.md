@@ -1,34 +1,34 @@
 ---
-description: Le costanti di proprietà di acquisizione immagini Windows (WIA) includono i gruppi di costanti seguenti supportati da Windows Millennium Edition (Windows Me), Windows XP e versioni successive.
+description: Windows Le costanti della proprietà Acquisizione immagini (WIA) includono i gruppi di costanti seguenti supportati da Windows Millennium Edition (Windows Me), Windows XP e versioni successive.
 ms.assetid: 275b52a2-7e62-4c36-9d51-cbeb18b934c6
 title: Costanti della proprietà WIA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f65c92d7bf8cf1b66efa34141dd94e3c281f7840
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dd419cbf8d17e10a9b5f9ed427b27fce5d311b31e99693b2378fc7fdce44cb15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965440"
 ---
 # <a name="wia-property-constants"></a>Costanti della proprietà WIA
 
-Le costanti di proprietà di acquisizione immagini Windows (WIA) includono i gruppi di costanti seguenti supportati da Windows Millennium Edition (Windows Me), Windows XP e versioni successive.
+Windows Le costanti della proprietà Acquisizione immagini (WIA) includono i gruppi di costanti seguenti supportati da Windows Millennium Edition (Windows Me), Windows XP e versioni successive.
 
--   [**Costanti della proprietà informazioni sul dispositivo**](-wia-wiadeviceinfoprop.md)
--   [**Costanti della proprietà del dispositivo comune**](-wia-wiaitempropcommondevice.md)
--   [**Costanti della proprietà del dispositivo dello scanner**](-wia-wiaitempropscannerdevice.md)
--   [**Costanti comuni della proprietà dell'elemento WIA**](-wia-wiaitempropcommonitem.md)
--   [**Costanti della proprietà elemento WIA dello scanner**](-wia-wiaitempropscanneritem.md)
+-   [**Costanti delle proprietà relative alle informazioni sul dispositivo**](-wia-wiadeviceinfoprop.md)
+-   [**Costanti comuni delle proprietà dei dispositivi**](-wia-wiaitempropcommondevice.md)
+-   [**Costanti delle proprietà del dispositivo scanner**](-wia-wiaitempropscannerdevice.md)
+-   [**Costanti comuni delle proprietà degli elementi WIA**](-wia-wiaitempropcommonitem.md)
+-   [**Costanti delle proprietà degli elementi WIA dello scanner**](-wia-wiaitempropscanneritem.md)
 
-I gruppi di costanti seguenti sono supportati da Windows me, Windows XP e Windows Server 2003; ma non sono supportate da Windows Vista e versioni successive.
+I gruppi di costanti seguenti sono supportati da Windows Me, Windows XP e Windows Server 2003; ma non sono supportati da Windows Vista e versioni successive.
 
--   [**Costanti della proprietà del dispositivo della fotocamera**](-wia-wiaitempropcameradevice.md)
--   [**Costanti della proprietà Item WIA della fotocamera**](-wia-wiaitempropcameraitem.md)
+-   [**Costanti delle proprietà del dispositivo fotocamera**](-wia-wiaitempropcameradevice.md)
+-   [**Costanti delle proprietà degli elementi WIA della fotocamera**](-wia-wiaitempropcameraitem.md)
 
-Il gruppo di costanti seguente è supportato da Windows me e Windows XP. ma non è supportato da Windows Server 2003 e versioni successive.
+Il gruppo di costanti seguente è supportato da Windows Me e Windows XP; ma non è supportato da Windows Server 2003 e versioni successive.
 
--   [**Costanti della proprietà del dispositivo WIA video**](-wia-wiaitempropvideodevice.md)
+-   [**Costanti delle proprietà del dispositivo WIA video**](-wia-wiaitempropvideodevice.md)
 
  
 

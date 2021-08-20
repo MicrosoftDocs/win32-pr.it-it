@@ -1,7 +1,7 @@
 ---
-description: Contiene la descrizione di un criterio LAN cablata.
+description: Contiene la descrizione di un criterio lan cablato.
 ms.assetid: afd282cf-b6cc-4b32-9f3a-293c1a1a3ea0
-title: Description (LANPolicy)-elemento
+title: Elemento description (LANPolicy)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: bc3d94a97701ced93367794a8a43a5da0c316005
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2769fcf09bee8ee2aa7ed46c0ba191b96d1e01342bfa640e47cb7087e87df6a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685231"
 ---
-# <a name="description-lanpolicy-element"></a>Description (LANPolicy)-elemento
+# <a name="description-lanpolicy-element"></a>Elemento description (LANPolicy)
 
-L'elemento Description (LANPolicy) contiene la descrizione di un criterio LAN cablata.
+L'elemento description (LANPolicy) contiene la descrizione di un criterio LAN cablato.
 
 ``` syntax
 <xs:element name="description"
@@ -29,7 +29,7 @@ L'elemento Description (LANPolicy) contiene la descrizione di un criterio LAN ca
  />
 ```
 
-L'elemento **Description** è definito dall'elemento [**LANPolicy**](lan-policyschema-lanpolicy-element.md) .
+**L'elemento** description è definito dall'elemento [**LANPolicy.**](lan-policyschema-lanpolicy-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,8 +37,8 @@ L'elemento **Description** è definito dall'elemento [**LANPolicy**](lan-policys
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

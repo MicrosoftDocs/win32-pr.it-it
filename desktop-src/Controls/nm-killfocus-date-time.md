@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica NM_KILLFOCUS (data/ora) (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo selezione data e ora che il controllo ha perso lo stato attivo per l'input. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: NM_KILLFOCUS di notifica (data e ora) (Commctrl.h)
+description: Notifica alla finestra padre di un controllo selezione data e ora che il controllo ha perso lo stato attivo per l'input. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 33d6b88b-9608-4227-a822-1dc7a77d3a3f
 keywords:
-- NM_KILLFOCUS (data/ora) del codice di notifica controlli Windows
+- NM_KILLFOCUS di notifica (data e ora) Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af47dca130d1025341e2a3c625c1bf7a9c44c42a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1a0147fd5d79998024df8c12d9be4a9a71ee3c1751a3f31d21d090ea2c7e9a92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018839"
 ---
-# <a name="nm_killfocus-date-time-notification-code"></a>\_Codice di notifica di KILLFOCUS (data/ora) Nm
+# <a name="nm_killfocus-date-time-notification-code"></a>Codice \_ di notifica NM KILLFOCUS (data e ora)
 
-Notifica alla finestra padre di un controllo selezione data e ora che il controllo ha perso lo stato attivo per l'input. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo selezione data e ora che il controllo ha perso lo stato attivo per l'input. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ NM_KILLFOCUS
 *lParam* 
 </dt> <dd>
 
-Indirizzo di una struttura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive su questa notifica.
+Indirizzo di una [**struttura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive sulla notifica.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Il valore restituito viene ignorato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

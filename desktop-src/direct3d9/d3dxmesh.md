@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: a312c2618960691184182039afe38acc8947eb6a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6b83389ae4d92027245877e24e01621f0d93f123dee9ff4f040586b3e7c5111d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118525273"
 ---
 # <a name="d3dxmesh-enumeration"></a>Enumerazione D3DXMESH
 
@@ -102,7 +102,7 @@ Usare il flag [**di utilizzo D3DPOOL \_ SYSTEMMEM**](./d3dpool.md) per i vertex 
 
 </dd> <dt>
 
-<span id="D3DXMESH_VB_MANAGED"></span><span id="d3dxmesh_vb_managed"></span>**D3DXMESH \_ VB \_ MANAGED**
+<span id="D3DXMESH_VB_MANAGED"></span><span id="d3dxmesh_vb_managed"></span>**D3DXMESH \_ VB \_ GESTITO**
 </dt> <dd>
 
 Usare il flag [**di utilizzo D3DPOOL \_ MANAGED**](./d3dpool.md) per i vertex buffer.
@@ -119,7 +119,7 @@ Usare il flag [**di utilizzo D3DUSAGE \_ WRITEONLY**](d3dusage.md) per i vertex 
 <span id="D3DXMESH_VB_DYNAMIC"></span><span id="d3dxmesh_vb_dynamic"></span>**D3DXMESH \_ VB \_ DYNAMIC**
 </dt> <dd>
 
-Usare il flag [**D3DUSAGE \_ DYNAMIC**](d3dusage.md) usage per i vertex buffer.
+Usare il flag [**di utilizzo D3DUSAGE \_ DYNAMIC**](d3dusage.md) per i vertex buffer.
 
 </dd> <dt>
 
@@ -140,7 +140,7 @@ Usare il flag [**di utilizzo D3DPOOL \_ SYSTEMMEM**](./d3dpool.md) per i buffer 
 <span id="D3DXMESH_IB_MANAGED"></span><span id="d3dxmesh_ib_managed"></span>**D3DXMESH \_ IB \_ MANAGED**
 </dt> <dd>
 
-Usare il flag [**di utilizzo gestito D3DPOOL \_**](./d3dpool.md) per i buffer di indice.
+Usare il flag [**di utilizzo D3DPOOL \_ MANAGED**](./d3dpool.md) per i buffer di indice.
 
 </dd> <dt>
 
@@ -154,28 +154,28 @@ Usare il flag [**di utilizzo D3DUSAGE \_ WRITEONLY**](d3dusage.md) per i buffer 
 <span id="D3DXMESH_IB_DYNAMIC"></span><span id="d3dxmesh_ib_dynamic"></span>**D3DXMESH \_ IB \_ DYNAMIC**
 </dt> <dd>
 
-Usare il flag [**D3DUSAGE \_ DYNAMIC**](d3dusage.md) usage per i buffer di indice.
+Usare il flag [**di utilizzo D3DUSAGE \_ DYNAMIC**](d3dusage.md) per i buffer di indice.
 
 </dd> <dt>
 
-<span id="D3DXMESH_IB_SOFTWAREPROCESSING"></span><span id="d3dxmesh_ib_softwareprocessing"></span>**SOFTWARE IB D3DXMESHPROCESSING \_ \_**
+<span id="D3DXMESH_IB_SOFTWAREPROCESSING"></span><span id="d3dxmesh_ib_softwareprocessing"></span>**D3DXMESH \_ IB \_ SOFTWAREPROCESSING**
 </dt> <dd>
 
 Usare il flag [**di utilizzo D3DUSAGE \_ SOFTWAREPROCESSING**](d3dusage.md) per i buffer di indice.
 
 </dd> <dt>
 
-<span id="D3DXMESH_VB_SHARE"></span><span id="d3dxmesh_vb_share"></span>**D3DXMESH \_ VB \_ SHARE**
+<span id="D3DXMESH_VB_SHARE"></span><span id="d3dxmesh_vb_share"></span>**Condivisione VB D3DXMESH \_ \_**
 </dt> <dd>
 
-Forza le mesh clonate a condividere i vertex buffer.
+Forza le mesh clonate a condividere i buffer dei vertici.
 
 </dd> <dt>
 
 <span id="D3DXMESH_USEHWONLY"></span><span id="d3dxmesh_usehwonly"></span>**D3DXMESH \_ USEHWONLY**
 </dt> <dd>
 
-Usare solo l'elaborazione hardware. Per il dispositivo in modalità mista, questo flag fa sì che il sistema usi l'hardware (se supportato nell'hardware) o per impostazione predefinita l'elaborazione software.
+Usare solo l'elaborazione hardware. Per il dispositivo in modalità mista, questo flag fa sì che il sistema usi l'hardware (se supportato nell'hardware) o che per impostazione predefinita usi l'elaborazione software.
 
 </dd> <dt>
 
@@ -216,7 +216,7 @@ Equivale a specificare sia D3DXMESH \_ VB \_ SOFTWAREPROCESSING che D3DXMESH \_ 
 
 ## <a name="remarks"></a>Commenti
 
-Una mesh a 32 bit (D3DXMESH 32BIT) può teoricamente \_ supportare (2^32)-1 visi e vertici. Tuttavia, l'allocazione di memoria per una mesh di grandi dimensioni in un sistema operativo a 32 bit non è pratica.
+Una mesh a 32 bit (D3DXMESH 32BIT) può teoricamente \_ supportare (2^32)-1 visi e vertici. Tuttavia, l'allocazione di memoria per una rete di grandi dimensioni in un sistema operativo a 32 bit non è pratica.
 
 ## <a name="requirements"></a>Requisiti
 

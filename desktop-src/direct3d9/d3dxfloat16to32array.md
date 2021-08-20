@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXFloat16To32Array (D3dx9math.h): converte una matrice di valori float a 16 bit in float a 32 bit.'
+description: 'Funzione D3DXFloat16To32Array (D3dx9math.h): converte una matrice di valori float a 16 bit in valori float a 32 bit.'
 ms.assetid: cabb2888-76e4-403b-99ab-f7d62478bf43
 title: Funzione D3DXFloat16To32Array (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 171b148b112cf2064d0d9a3f89451ab0fc8c2d75
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4c5ce94dcadac8952792e31b51ad84fc2326668500c625728a0af5fd985f1d31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118526038"
 ---
 # <a name="d3dxfloat16to32array-function-d3dx9mathh"></a>Funzione D3DXFloat16To32Array (D3dx9math.h)
 
-Converte una matrice di valori float a 16 bit in float a 32 bit.
+Converte una matrice di valori float a 16 bit in valori float a 32 bit.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,7 +56,7 @@ Puntatore alla matrice di valori float a 32 bit.
 
 Tipo: **const [**D3DXFLOAT16**](d3dxfloat16.md) \***
 
-Puntatore a una matrice di float a 16 bit.
+Puntatore a una matrice di valori float a 16 bit.
 
 </dd> <dt>
 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetGetTableInfo (JET_SESID, JET_TABLEID, String, JET_TblInfo)'
-title: Metodo API. JetGetTableInfo (JET_SESID, JET_TABLEID, String, JET_TblInfo)
+description: 'Altre informazioni su: Metodo Api.JetGetTableInfo (JET_SESID, JET_TABLEID, String, JET_TblInfo)'
+title: Metodo Api.JetGetTableInfo (JET_SESID, JET_TABLEID, String, JET_TblInfo)
 TOCTitle: JetGetTableInfo method (JET_SESID, JET_TABLEID, String, JET_TblInfo)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetTableInfo(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.String@,Microsoft.Isam.Esent.Interop.JET_TblInfo)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgettableinfo(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 01431c018e633a5851f8ca88eb2f2e6f0e9065a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a742aaa8ee6bd8c296f0a6aa912a9a4ca8f4ed48cf560e77ce469a13a2712fb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119117607"
 ---
-# <a name="apijetgettableinfo-method-jet_sesid-jet_tableid-string-jet_tblinfo"></a>Metodo API. JetGetTableInfo (JET_SESID, JET_TABLEID, String, JET_TblInfo)
+# <a name="apijetgettableinfo-method-jet_sesid-jet_tableid-string-jet_tblinfo"></a>Metodo Api.JetGetTableInfo (JET_SESID, JET_TABLEID, String, JET_TblInfo)
 
 Recupera varie informazioni su una tabella in un database.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,34 +64,34 @@ public static void JetGetTableInfo(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     Sessione da utilizzare.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Tabella per cui recuperare le informazioni.
+    Tabella su cui recuperare le informazioni.
 
 <!-- end list -->
 
   - result  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Informazioni recuperate.
 
 <!-- end list -->
 
   - infoLevel  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TblInfo](./jet-tblinfo-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TblInfo](./jet-tblinfo-enumeration.md)  
     
     Tipo di informazioni da recuperare.
 
 ## <a name="remarks"></a>Commenti
 
-Questo overload viene utilizzato con [Name](./jet-tblinfo-enumeration.md) e [TemplateTableName](./jet-tblinfo-enumeration.md).
+Questo overload viene usato con [Name e](./jet-tblinfo-enumeration.md) [TemplateTableName.](./jet-tblinfo-enumeration.md)
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -99,8 +99,8 @@ Questo overload viene utilizzato con [Name](./jet-tblinfo-enumeration.md) e [Tem
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Overload JetGetTableInfo](./api.jetgettableinfo-method.md)
+[Overload di JetGetTableInfo](./api.jetgettableinfo-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

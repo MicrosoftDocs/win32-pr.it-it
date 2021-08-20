@@ -1,11 +1,11 @@
 ---
-title: Proprietà ActiveBasicDevice IsVideoSupported (PlayToDevice. h)
+title: Proprietà ActiveBasicDevice IsVideoSupported (PlayToDevice.h)
 description: Ottiene un valore che indica se il dispositivo supporta il video.
 ms.assetid: E8D33A04-748D-42F8-878F-35D973A6B559
 keywords:
-- API di streaming multimediale della proprietà IsVideoSupported
-- API di streaming multimediale della proprietà IsVideoSupported, interfaccia ActiveBasicDevice
-- API di streaming multimediale dell'interfaccia ActiveBasicDevice, proprietà IsVideoSupported
+- Proprietà IsVideoSupported API Streaming multimediale
+- Proprietà IsVideoSupported API Streaming multimediale, interfaccia ActiveBasicDevice
+- Interfaccia ActiveBasicDevice API Streaming multimediale , proprietà IsVideoSupported
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2be369b34355b199cd47518065724242b9a422e6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 91bb115aad422546746a44824c847bd0ae80c188264e8539e569a26e16eefa93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972520"
 ---
-# <a name="activebasicdeviceisvideosupported-property"></a>Proprietà ActiveBasicDevice:: IsVideoSupported
+# <a name="activebasicdeviceisvideosupported-property"></a>Proprietà ActiveBasicDevice::IsVideoSupported
 
 Ottiene un valore che indica se il dispositivo supporta il video.
 
@@ -53,10 +53,10 @@ Puntatore a un **valore booleano** che indica se il dispositivo supporta il vide
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>PlayToDevice. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>PlayToDevice. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>PlayToDevice.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>PlayToDevice.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Playtodevice.dll</dt> </dl> |
 
 

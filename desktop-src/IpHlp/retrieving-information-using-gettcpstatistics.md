@@ -1,25 +1,25 @@
 ---
-description: La funzione GetTcpStatistics compila un puntatore a una \_ struttura TCPSTATS MIB con informazioni sulle statistiche del protocollo TCP per il computer locale.
+description: La funzione GetTcpStatistics riempie un puntatore a una struttura MIB TCPSTATS con informazioni sulle statistiche del protocollo \_ TCP per il computer locale.
 ms.assetid: cb405d46-cf3e-4f3c-870a-935a0cc8118f
 title: Recupero di informazioni tramite GetTcpStatistics
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3f4d4d42c2716d258ff72e3dd91ab750baaed20
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fb51b1a71c9dc0ff98a40c31894aa3fcf8c0c0ace7b6b05812940cb9808cced
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146594"
 ---
 # <a name="retrieving-information-using-gettcpstatistics"></a>Recupero di informazioni tramite GetTcpStatistics
 
-La funzione [**GetTcpStatistics**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-gettcpstatistics) compila un puntatore a una struttura [**\_ TCPSTATS MIB**](/windows/win32/api/tcpmib/ns-tcpmib-mib_tcpstats_lh) con informazioni sulle statistiche del protocollo TCP per il computer locale.
+La [**funzione GetTcpStatistics**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-gettcpstatistics) riempie un puntatore a una struttura [**\_ MIB TCPSTATS**](/windows/win32/api/tcpmib/ns-tcpmib-mib_tcpstats_lh) con informazioni sulle statistiche del protocollo TCP per il computer locale.
 
 **Per usare GetTcpStatistics**
 
 1.  Dichiarare alcune variabili necessarie.
 
-    Dichiarare una  variabile DWORD `dwRetVal` che verrà usata da per il controllo degli errori delle chiamate di funzione. Dichiarare un puntatore a una variabile [**MIB \_ TCPSTATS**](/windows/win32/api/tcpmib/ns-tcpmib-mib_tcpstats_lh) denominata *pTCPStats* e allocare memoria per la struttura. Verificare che la memoria sia stata allocata.
+    Dichiarare una **variabile DWORD** che `dwRetVal` verrà utilizzata per le chiamate di funzione di controllo degli errori. Dichiarare un puntatore a [**una variabile \_ MIB TCPSTATS**](/windows/win32/api/tcpmib/ns-tcpmib-mib_tcpstats_lh) denominata *pTCPStats* e allocare memoria per la struttura. Verificare che sia possibile allocare memoria.
 
     ```C++
     DWORD dwRetVal = 0;
@@ -33,7 +33,7 @@ La funzione [**GetTcpStatistics**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-get
 
     
 
-2.  Chiamare la funzione [**GetTcpStatistics**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-gettcpstatistics) con il parametro *pTCPStats* per recuperare le statistiche TCP per IPv4 nel computer locale. Verificare la presenza di errori e restituire il valore di errore nella variabile **DWORD** `dwRetVal` . Se si verifica un errore, la `dwRetVal` variabile può essere utilizzata per il controllo degli errori e la creazione di report più completi.
+2.  Chiamare la [**funzione GetTcpStatistics**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-gettcpstatistics) con il *parametro pTCPStats* per recuperare le statistiche TCP per IPv4 nel computer locale. Verificare la presenza di errori e restituire il valore di errore nella **variabile DWORD** `dwRetVal` . Se si verifica un errore, la variabile può essere utilizzata per il controllo degli errori e la creazione di report `dwRetVal` più estesi.
     ```C++
         if ((dwRetVal = GetTcpStatistics(pTCPStats)) != NO_ERROR) {
             printf("GetTcpStatistics failed with error: %ld\n", dwRetVal);
@@ -42,7 +42,7 @@ La funzione [**GetTcpStatistics**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-get
 
     
 
-3.  Se la chiamata ha avuto esito positivo, accedere ai dati restituiti nell' [**\_ TCPSTATS MIB**](/windows/win32/api/tcpmib/ns-tcpmib-mib_tcpstats_lh) a cui punta il parametro *pTCPStats* .
+3.  Se la chiamata ha esito positivo, accedere ai dati restituiti in [**\_ MIB TCPSTATS**](/windows/win32/api/tcpmib/ns-tcpmib-mib_tcpstats_lh) a cui punta *il parametro pTCPStats.*
     ```C++
     printf("\tNumber of active opens:  %u\n", pTCPStats->dwActiveOpens);
     printf("\tNumber of passive opens: %u\n", pTCPStats->dwPassiveOpens);
@@ -53,7 +53,7 @@ La funzione [**GetTcpStatistics**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-get
 
     
 
-4.  Liberare la memoria allocata per la struttura [**\_ TCPSTATS MIB**](/windows/win32/api/tcpmib/ns-tcpmib-mib_tcpstats_lh) a cui punta il parametro *pTCPStats* . Questa operazione deve essere eseguita quando l'applicazione non necessita più dei dati restituiti dal parametro *pTCPStats* .
+4.  Liberare la memoria allocata [**per la struttura \_ MIB TCPSTATS**](/windows/win32/api/tcpmib/ns-tcpmib-mib_tcpstats_lh) a cui punta *il parametro pTCPStats.* Questa operazione deve essere eseguita quando l'applicazione non necessita più dei dati restituiti dal *parametro pTCPStats.*
     ```C++
     if (pTCPStats)
         free(pTCPStats);
@@ -61,11 +61,11 @@ La funzione [**GetTcpStatistics**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-get
 
     
 
-Passaggio successivo: [recupero di informazioni tramite GetIPStatistics](retrieving-information-using-getipstatistics.md)
+Passaggio successivo: [Recupero di informazioni tramite GetIpStatistics](retrieving-information-using-getipstatistics.md)
 
-Passaggio precedente: [recupero di informazioni tramite GetIPStatistics](retrieving-information-using-getipstatistics.md)
+Passaggio precedente: [Recupero di informazioni tramite GetIpStatistics](retrieving-information-using-getipstatistics.md)
 
-## <a name="complete-source-code"></a>Completa codice sorgente
+## <a name="complete-source-code"></a>Codice sorgente completo
 
 -   [Codice sorgente completo dell'applicazione helper IP](complete-ip-helper-application-source-code.md)
 

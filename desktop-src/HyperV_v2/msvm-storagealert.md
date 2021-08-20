@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un evento generato ogni volta che viene modificata la proprietà OperationalStatus della \_ classe MSVM ResourcePool o MSVM \_ disco logico.
+description: Rappresenta un evento generato ogni volta che la proprietà OperationalStatus della classe Msvm ResourcePool o \_ Msvm \_ LogicalDisk cambia.
 ms.assetid: 20E7C22A-A151-4EDC-90D8-4BCD53C42355
-title: Classe Msvm_StorageAlert
+title: Msvm_StorageAlert classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -25,16 +25,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: fa7f0430631082a9690cf2083f6b075ca62ee26b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 478b4617f56c73e425d833842b313767f85c385e9142314a7ca8978b5783f492
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104057820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950230"
 ---
-# <a name="msvm_storagealert-class"></a>\_Classe MSVM StorageAlert
+# <a name="msvm_storagealert-class"></a>Classe Msvm \_ StorageAlert
 
-Rappresenta un evento generato ogni volta che viene modificata la proprietà **OperationalStatus** della classe [**MSVM \_ ResourcePool**](msvm-resourcepool.md) o [**MSVM \_ disco logico**](msvm-logicaldisk.md) .
+Rappresenta un evento generato ogni volta che la **proprietà OperationalStatus** della [**classe Msvm \_ ResourcePool**](msvm-resourcepool.md) o [**Msvm \_ LogicalDisk**](msvm-logicaldisk.md) cambia.
 
 La sintassi seguente è semplificata dal codice MOF e include queste proprietà.
 
@@ -61,31 +61,31 @@ class Msvm_StorageAlert : CIM_AlertIndication
 
 ## <a name="members"></a>Members
 
-La **classe \_ StorageAlert di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ StorageAlert** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ StorageAlert di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ StorageAlert** ha queste proprietà.
 
 <dl> <dt>
 
 **AlertingElementFormat**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **ModelCorrespondence** ("CIM \_ AlertIndication. AlertingManagedElement", "CIM \_ AlertIndication. OtherAlertingElementFormat")
+Qualificatori: **ModelCorrespondence** ("CIM \_ AlertIndication.AlertingManagedElement", "CIM \_ AlertIndication.OtherAlertingElementFormat")
 </dt> </dl>
 
-Specifica il formato della proprietà **AlertingManagedElement** . Il formato è CIMObjectPath, con formato *<NamespacePath> : <ClassName> . <Prop1> = \\ " <Value1> \\ ", " <Prop2> = \\ " <Value2> \\ "*, che specifica un'istanza nello schema CIM.
+Specifica il formato della **proprietà AlertingManagedElement.** Il formato è CIMObjectPath, con il formato *<NamespacePath> : . " <ClassName> <Prop1> = \\ <Value1> \\ ", <Prop2> = \\ " <Value2> \\ " " "*, che specifica un'istanza nello schema CIM.
 
-Questa proprietà viene ereditata dalla classe **CIM \_ AlertIndication** .
+Questa proprietà viene ereditata dalla **classe \_ CIM AlertIndication.**
 
 I valori possibili sono:
 
@@ -105,20 +105,20 @@ I valori possibili sono:
 **AlertingManagedElement**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Percorsi WMI dell'istanza per la quale viene generato l'avviso.
+Percorsi WMI dell'istanza per cui viene generato l'avviso.
 
 </dd> <dt>
 
 **AlertType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -136,7 +136,7 @@ Specifica la classificazione primaria dell'avviso. I valori possibili per questa
 **EventTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -149,91 +149,91 @@ Data e ora in cui è stato rilevato l'evento sottostante.
 **Messaggio**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Messaggio formattato costruito combinando alcuni o tutti gli elementi dinamici specificati nella proprietà **MessageArguments** con gli elementi statici identificati in modo univoco dalla proprietà **MessageID** in un registro messaggi o in un altro catalogo associato alla proprietà **OwningEntity** .
+Messaggio formattato costruito combinando alcuni o tutti gli elementi dinamici specificati nella proprietà **MessageArguments** con gli elementi statici identificati in modo univoco dalla **proprietà MessageID** in un registro messaggi o in un altro catalogo associato alla **proprietà OwningEntity.**
 
 </dd> <dt>
 
-**MessageArguments**
+**Argomenti di messaggio**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice che contiene il contenuto dinamico del messaggio. Se il valore di **MessageID** è 32930, l'argomento nella posizione 0 è il **PoolID** dell'istanza di [**MSVM \_ ResourcePool**](msvm-resourcepoolcomponent.md) per la quale viene generato l'avviso.
+Matrice contenente il contenuto dinamico del messaggio. Se il valore di **MessageID** è 32930, l'argomento nella posizione 0 è **il PoolID** dell'istanza [**di Msvm \_ ResourcePool**](msvm-resourcepoolcomponent.md) per cui viene generato l'avviso.
 
 </dd> <dt>
 
 **MessageID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identifica in modo univoco, all'interno dell'ambito della proprietà **OwningEntity** , il formato della proprietà del **messaggio** . I valori possibili per questa proprietà sono:
+Identifica in modo univoco, nell'ambito **della proprietà OwningEntity,** il formato della **proprietà** Message. I valori possibili per questa proprietà sono:
 
-32930 ("messaggio di velocità effettiva di QoS insufficiente nel pool di archiviazione")
+32930 ("Archiviazione di velocità effettiva insufficiente del pool QoS")
 
 </dd> <dt>
 
 **OtherAlertingElementFormat**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa che definisce i valori "other" per **AlertingManagedElement**. Questo valore deve essere impostato su un valore non NULL quando **AlertingManagedElement** è impostato su un valore pari a 1 ("altro"). Per tutti gli altri valori di **AlertingManagedElement**, il valore di questa stringa deve essere impostato su null.
+Stringa che definisce i valori "Other" per **AlertingManagedElement.** Questo valore DEVE essere impostato su un valore non NULL quando **AlertingManagedElement** è impostato su un valore pari a 1 ("Altro"). Per tutti gli altri valori **di AlertingManagedElement,** il valore di questa stringa deve essere impostato su NULL.
 
-Questa proprietà viene ereditata dalla classe **CIM \_ AlertIndication** .
+Questa proprietà viene ereditata dalla **classe \_ CIM AlertIndication.**
 
 </dd> <dt>
 
 **OwningEntity**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identifica in modo univoco l'entità a cui appartiene la definizione del formato del **messaggio** descritto in questa istanza. Il valore di questa proprietà è sempre "Microsoft-Windows-Hyper-V".
+Identifica in modo univoco l'entità proprietaria della definizione del formato del **messaggio** descritto in questa istanza. Il valore di questa proprietà è sempre "Microsoft-Windows- Hyper-V".
 
-"Microsoft-Windows-Hyper-V"
+"Microsoft-Windows- Hyper-V"
 
 </dd> <dt>
 
 **PerceivedSeverity**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrive il livello di gravità dell'indicazione di avviso. I valori possibili per questa proprietà sono:
+Descrive la gravità dell'indicazione di avviso. I valori possibili per questa proprietà sono:
 
 <dl> <dt>
 
 <span id="Information"></span><span id="information"></span><span id="INFORMATION"></span>**Informazioni** (2)
 </dt> <dt>
 
-<span id="Degraded_Warning"></span><span id="degraded_warning"></span><span id="DEGRADED_WARNING"></span>**Danneggiato/avviso** (3)
+<span id="Degraded_Warning"></span><span id="degraded_warning"></span><span id="DEGRADED_WARNING"></span>**Danneggiato/Avviso** (3)
 </dt> </dl>
 
 </dd> <dt>
@@ -241,17 +241,17 @@ Descrive il livello di gravità dell'indicazione di avviso. I valori possibili p
 **ProbableCause**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrive la causa probabile della situazione che ha generato l'indicazione di avviso.
+Descrive la probabile causa della situazione che ha causato l'indicazione di avviso.
 
 <dl> <dt>
 
-<span id="Storage_Capacity_Problem"></span><span id="storage_capacity_problem"></span><span id="STORAGE_CAPACITY_PROBLEM"></span>**Problema di capacità di archiviazione** (50)
+<span id="Storage_Capacity_Problem"></span><span id="storage_capacity_problem"></span><span id="STORAGE_CAPACITY_PROBLEM"></span>**Archiviazione problema di capacità** (50)
 </dt> <dt>
 
 <span id="Previous_Alert_Cleared"></span><span id="previous_alert_cleared"></span><span id="PREVIOUS_ALERT_CLEARED"></span>**Avviso precedente cancellato** (59)
@@ -262,24 +262,24 @@ Descrive la causa probabile della situazione che ha generato l'indicazione di av
 **ProbableCauseDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione testuale che corrisponde al valore della proprietà **ProbableCause** .
+Descrizione testuale corrispondente al valore della **proprietà ProbableCause.**
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Il provider WMI Hyper-V non genera eventi per i singoli dischi virtuali, in modo da evitare che i client vengano sovraccaricati con eventi in caso di malfunzionamenti su larga scala dei sistemi di archiviazione sottostanti.
+Il provider WMI Hyper-V non genererà eventi per i singoli dischi virtuali per evitare di inondare i client di eventi in caso di malfunzionamenti su larga scala dei sistemi di archiviazione sottostanti.
 
-Quando un client riceve un evento **MSVM \_ StorageAlert** , se il valore della proprietà **ProbableCause** è 50 (problema di capacità di archiviazione), il client può individuare i dischi virtuali che operano al di fuori dei criteri QoS usando una di queste procedure:
+Quando un client riceve un evento **Msvm \_ StorageAlert,** se il valore della proprietà **ProbableCause** è 50 ( Archiviazione Capacity Problem ), il client può individuare quali dischi virtuali operano al di fuori dei criteri QoS usando una delle procedure seguenti:
 
--   Eseguire una query su tutte le istanze di [**\_ disco logico MSVM**](msvm-logicaldisk.md) allocate dal pool di risorse per il quale è stato generato l'evento. Queste **istanze \_ disco logico di MSVM** sono associate al pool di risorse tramite l'associazione [**MSVM \_ ElementAllocatedFromPool**](msvm-elementallocatedfrompool.md) .
--   Filtrare l'elenco dei risultati selezionando le istanze il cui OperationalStatus contiene una velocità effettiva insufficiente.
+-   Eseguire una query [**su tutte le istanze di \_ Msvm LogicalDisk**](msvm-logicaldisk.md) allocate dal pool di risorse per cui è stato generato l'evento. Queste **istanze di Msvm \_ LogicalDisk** sono associate al pool di risorse tramite [**l'associazione Msvm \_ ElementAllocatedFromPool.**](msvm-elementallocatedfrompool.md)
+-   Filtrare l'elenco dei risultati selezionando le istanze il cui OperationalStatus contiene Velocità effettiva insufficiente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -287,10 +287,10 @@ Quando un client riceve un evento **MSVM \_ StorageAlert** , se il valore della 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                                 |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -299,13 +299,13 @@ Quando un client riceve un evento **MSVM \_ StorageAlert** , se il valore della 
 
 <dl> <dt>
 
-[**\_ALERTINDICATION CIM**](cim-alertindication.md)
+[**CIM \_ AlertIndication**](cim-alertindication.md)
 </dt> <dt>
 
-[**\_Disco logico MSVM**](msvm-logicaldisk.md)
+[**Msvm \_ LogicalDisk**](msvm-logicaldisk.md)
 </dt> <dt>
 
-[**\_ResourcePool MSVM**](msvm-resourcepoolcomponent.md)
+[**Msvm \_ ResourcePool**](msvm-resourcepoolcomponent.md)
 </dt> </dl>
 
  

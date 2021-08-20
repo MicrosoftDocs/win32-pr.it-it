@@ -4,25 +4,25 @@ description: L'interfaccia IVMVirtualMachineCollection espone le proprietà segu
 ms.assetid: 5658AA88-8F02-46EC-AC9A-60A9A6F935EE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f0544b7fe9c264efbbe2969ae47719cebd83749
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ae6cd85272541d9fd84e8354d6f1e20810598312a273743548af10a4156268d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104473342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056769"
 ---
 # <a name="ivmvirtualmachinecollection-properties"></a>Proprietà di IVMVirtualMachineCollection
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-L'interfaccia [**IVMVirtualMachineCollection**](ivmvirtualmachinecollection.md) espone le proprietà seguenti.
+[**L'interfaccia IVMVirtualMachineCollection**](ivmvirtualmachinecollection.md) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 -   [**\_Proprietà NewEnum**](ivmvirtualmachinecollection--newenum.md)
 -   [**Proprietà Count**](ivmvirtualmachinecollection-count.md)
--   [**Item (proprietà)**](ivmvirtualmachinecollection-item.md)
+-   [**Proprietà Item**](ivmvirtualmachinecollection-item.md)
 
- 
+ 
 
- 
+ 

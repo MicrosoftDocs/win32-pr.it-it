@@ -1,27 +1,27 @@
 ---
-description: Il Windows Installer imposta la proprietà OriginalDatabase sul percorso del database di installazione utilizzato per avviare l'installazione.
+description: Il Windows di installazione imposta la proprietà OriginalDatabase sul percorso del database di installazione usato per avviare l'installazione.
 ms.assetid: 985c70a4-1575-4226-a8c2-a7a21f7a0dbd
-title: Proprietà OriginalDatabase
+title: OriginalDatabase - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 592bc86a9ef53602f686e48b3c98dad17a49cfe1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 28b8ec6b77d013ee89d081c0ff20e3ad00750454e1fa9299d364fdb94e69ccb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119145534"
 ---
-# <a name="originaldatabase-property"></a>Proprietà OriginalDatabase
+# <a name="originaldatabase-property"></a>OriginalDatabase - proprietà
 
-Il Windows Installer imposta la proprietà **OriginalDatabase** sul percorso del database di installazione utilizzato per avviare l'installazione. Se l'installazione viene avviata da una riga di comando, il valore varia a seconda che l'opzione di recaching Package (il flag-v) sia presente nella proprietà [**REINSTALLMODE**](reinstallmode.md) .
+Il Windows di installazione imposta **la proprietà OriginalDatabase** sul percorso del database di installazione usato per avviare l'installazione. Se l'installazione viene avviata da una riga di comando, il valore dipende dal fatto che l'opzione del pacchetto recache (il flag -v) sia presente nella [**proprietà REINSTALLMODE.**](reinstallmode.md)
 
 
 
 | Metodo di installazione                                                                                                                                                                                  | Valore OriginalDatabase                        |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| Qualsiasi installazione avviata richiamando il percorso del pacchetto di installazione (file MSI).                                                                                                              | Percorso del pacchetto di installazione (file MSI). |
-| Installazione avviata da una riga di comando. L'installazione non è stata avviata da un percorso del pacchetto. L'opzione recache (flag-v) è presente nella proprietà [**REINSTALLMODE**](reinstallmode.md) .     | Percorso del database nell'origine.           |
-| Installazione avviata da una riga di comando. L'installazione non è stata avviata da un percorso del pacchetto. L'opzione recache (flag-v) non è presente nella proprietà [**REINSTALLMODE**](reinstallmode.md) . | Percorso del database memorizzato nella cache.                  |
+| Qualsiasi installazione avviata richiamando il percorso del pacchetto di installazione (.msi file).                                                                                                              | Percorso del pacchetto di installazione (.msi file). |
+| Installazione avviata dalla riga di comando. L'installazione non viene avviata da un percorso del pacchetto. L'opzione recache (flag -v) è presente nella [**proprietà REINSTALLMODE.**](reinstallmode.md)     | Percorso del database nell'origine.           |
+| Installazione avviata dalla riga di comando. L'installazione non viene avviata da un percorso del pacchetto. L'opzione recache (flag -v) non è presente nella [**proprietà REINSTALLMODE.**](reinstallmode.md) | Percorso del database memorizzato nella cache.                  |
 
 
 
@@ -29,7 +29,7 @@ Il Windows Installer imposta la proprietà **OriginalDatabase** sul percorso del
 
 ## <a name="remarks"></a>Commenti
 
-Durante la prima installazione, un'azione personalizzata sequenziata prima dell' [azione ResolveSource](resolvesource-action.md) può utilizzare la proprietà **OriginalDatabase** per determinare il percorso dell'origine di installazione.
+Durante la prima installazione, un'azione personalizzata sequenziata prima dell'azione [ResolveSource](resolvesource-action.md) può usare la proprietà **OriginalDatabase** per determinare il percorso dell'origine dell'installazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,7 +37,7 @@ Durante la prima installazione, un'azione personalizzata sequenziata prima dell'
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Per informazioni [Windows service](windows-installer-portal.md) pack minimo necessario per Run-Time versione del programma di installazione di Windows, vedere i requisiti minimi Windows Service Pack.<br/> |
 
 
 

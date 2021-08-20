@@ -3,7 +3,7 @@ title: Elemento WeeksInterval (weeklyScheduleType)
 description: Specifica l'intervallo tra le settimane nella pianificazione.
 ms.assetid: 6cbf1e7e-a695-4012-97fd-fe3360c362c4
 keywords:
-- Utilità di pianificazione elemento WeeksInterval
+- Elemento WeeksInterval Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 747ca4b73ff18bdb3e29d8b909d72b8d2367d89b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4c59e4f4b163e5e96418c84bf2925e45cf3a54da1bbb50e17ad9282409438ff3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059759"
 ---
 # <a name="weeksinterval-weeklyscheduletype-element"></a>Elemento WeeksInterval (weeklyScheduleType)
 
@@ -43,7 +43,7 @@ Specifica l'intervallo tra le settimane nella pianificazione.
 </xs:element>
 ```
 
-L'elemento è definito dal tipo complesso [**weeklyScheduleType**](taskschedulerschema-weeklyscheduletype-complextype.md) .
+L'elemento è definito dal tipo complesso [**weeklyScheduleType.**](taskschedulerschema-weeklyscheduletype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -57,13 +57,13 @@ L'elemento è definito dal tipo complesso [**weeklyScheduleType**](taskscheduler
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo di script, l'intervallo settimanale viene specificato tramite la proprietà [**WeeklyTrigger. WeeksInterval**](weeklytrigger-weeksinterval.md) .
+Per lo sviluppo di script, l'intervallo settimanale viene specificato usando la [**proprietà WeeklyTrigger.WeeksInterval.**](weeklytrigger-weeksinterval.md)
 
-Per lo sviluppo in C++, l'intervallo settimanale viene specificato con la proprietà [**IWeeklyTrigger:: WeeksInterval**](/windows/desktop/api/taskschd/nf-taskschd-iweeklytrigger-get_weeksinterval) .
+Per lo sviluppo C++, l'intervallo settimanale viene specificato usando la [**proprietà IWeeklyTrigger::WeeksInterval.**](/windows/desktop/api/taskschd/nf-taskschd-iweeklytrigger-get_weeksinterval)
 
 ## <a name="examples"></a>Esempio
 
-Il codice XML seguente definisce un trigger di calendario settimanale che avvia un'attività dal lunedì al venerdì (alle 8:00 AM) ogni settimana.
+Il codice XML seguente definisce un trigger di calendario settimanale che avvia un'attività dal lunedì al venerdì (alle 8:00) ogni settimana.
 
 
 ```XML
@@ -91,8 +91,8 @@ Il codice XML seguente definisce un trigger di calendario settimanale che avvia 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -100,7 +100,7 @@ Il codice XML seguente definisce un trigger di calendario settimanale che avvia 
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

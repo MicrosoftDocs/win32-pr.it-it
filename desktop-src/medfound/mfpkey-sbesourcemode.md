@@ -1,31 +1,31 @@
 ---
-description: Imposta la configurazione di flusso per l'origine del supporto WTV.
+description: Imposta la configurazione del flusso per l'origine multimediale WTV.
 ms.assetid: 2181723A-C6E8-42BD-979C-5C26FE3986C4
-title: Proprietà MFPKEY_SBESourceMode (Mfidl. h)
+title: MFPKEY_SBESourceMode proprietà (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b82835a4cfc363e3ae2d054cce68f95c655447dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 86c6b4fc0b248000f0540fd47fd7bbf8bba907994d1351144521bf162d330340
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973370"
 ---
-# <a name="mfpkey_sbesourcemode-property"></a>\_Proprietà SBESourceMode di MFPKEY
+# <a name="mfpkey_sbesourcemode-property"></a>MFPKEY \_ SBESourceMode - proprietà
 
-Imposta la configurazione di flusso per l'origine del supporto WTV.
+Imposta la configurazione del flusso per l'origine multimediale WTV.
 
 
 
 Tipo di dati
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 membro PROPVARIANT
 
 **INT**
 
-\_int VT
+VT \_ INT
 
 **intVal**
 
@@ -33,14 +33,14 @@ membro PROPVARIANT
 
 ## <a name="remarks"></a>Commenti
 
-Usare questa proprietà per configurare l'origine del supporto WTV. Per impostare la proprietà, passare un puntatore [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) al resolver di origine. Per altre informazioni, vedere [configurazione di un'origine multimediale](configuring-a-media-source.md).
+Usare questa proprietà per configurare l'origine multimediale WTV. Per impostare la proprietà, passare un [**puntatore IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) al sistema di risoluzione di origine. Per altre informazioni, vedere [Configurazione di un'origine multimediale](configuring-a-media-source.md).
 
-L'origine multimediale WTV legge i file di Windows registrato TV (con estensione wtv e MS-DRV).
+L'origine multimediale WTV legge Windows file di Show TV registrato (con estensione wtv e ms-drv).
 
 Questa proprietà deve avere uno dei valori seguenti.
 
--   1: esegue il mapping dei flussi audio disponibili a un singolo output, in base al sistema locale. Questa modalità è appropriata per la riproduzione. (impostazione predefinita).
--   2. Vengono selezionati tutti i flussi audio e i sottoflussi, ad esempio didascalia e flussi di dati. Questa modalità è appropriata per la remuxing o la transcodifica.
+-   1: eseguire il mapping dei flussi audio disponibili a un singolo output, in base al sistema locale. Questa modalità è appropriata per la riproduzione. (impostazione predefinita).
+-   2. Vengono selezionati tutti i flussi audio e i flussi secondari, ad esempio i flussi di dati e i sottotitoli. Questa modalità è appropriata per la modifica o la transcoding.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,9 +48,9 @@ Questa proprietà deve avere uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                  |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -58,7 +58,7 @@ Questa proprietà deve avere uno dei valori seguenti.
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  
