@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 78ea10e751fd7fe902b1631376e9eb2023d31c12
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: 4a88e9365f6871bd1c773215192eaf94060b16551484fcf321897d66b8230e25
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112011064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118089972"
 ---
 # <a name="vs_1_1"></a>vs \_ 1 \_ 1
 

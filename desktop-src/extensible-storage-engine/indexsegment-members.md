@@ -1,27 +1,27 @@
 ---
-description: 'Altre informazioni su: membri di IndexSegment'
-title: Membri di IndexSegment
+description: 'Altre informazioni su: Membri indexSegment'
+title: Membri indexSegment
 TOCTitle: IndexSegment members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.IndexSegment
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.indexsegment_members(v=EXCHG.10)
 ms:contentKeyID: 55103282
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: d8d85b9544a6bfe65f72cec859c622b9a328a244
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0804e105ae04e87326b379482e5501221a54269109ad6a6cdf594f253bf241e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118077285"
 ---
-# <a name="indexsegment-members"></a>Membri di IndexSegment
+# <a name="indexsegment-members"></a>Membri indexSegment
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
 Descrive un segmento di un indice.
 
-Il tipo [IndexSegment](./indexsegment-class.md) espone i membri seguenti.
+Il [tipo IndexSegment](./indexsegment-class.md) espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 
@@ -52,7 +52,7 @@ Il tipo [IndexSegment](./indexsegment-class.md) espone i membri seguenti.
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn350922(v=exchg.10).md">IsASCII</a></td>
-<td>Ottiene un valore che indica se il segmento di indice è posizionato su una colonna di testo ASCII. Questo valore è significativo solo per i segmenti di colonna di testo.</td>
+<td>Ottiene un valore che indica se il segmento di indice si trova su una colonna di testo ASCII. Questo valore è significativo solo per i segmenti di colonna di testo.</td>
 </tr>
 </tbody>
 </table>
@@ -73,38 +73,38 @@ Inizio
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="dn350913(v=exchg.10).md">Equals (oggetto)</a></td>
-<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza. Esegue l'override di <a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object. Equals (Object)</a>.</td>
+<td><a href="dn350913(v=exchg.10).md">Equals(Object)</a></td>
+<td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza. Esegue l'override <a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">di Object.Equals(Object)</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="dn350936(v=exchg.10).md">Uguale a (IndexSegment)</a></td>
+<td><a href="dn350936(v=exchg.10).md">Equals(IndexSegment)</a></td>
 <td>Restituisce un valore che indica se questa istanza è uguale a un'altra istanza.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizzare</a></td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn350915(v=exchg.10).md">GetHashCode</a></td>
-<td>Restituisce il codice hash per l'istanza. Esegue l'override di <a href="/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object. GetHashCode ()</a>.</td>
+<td>Restituisce il codice hash per l'istanza. Esegue l'override <a href="/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">di Object.GetHashCode()</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
 <td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn350937(v=exchg.10).md">ToString</a></td>
-<td>Generare una rappresentazione di stringa dell'istanza. Esegue l'override di <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>.</td>
+<td>Generare una rappresentazione di stringa dell'istanza di . Esegue l'override <a href="/dotnet/api/system.object.tostring#System_Object_ToString">di Object.ToString()</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -118,4 +118,4 @@ Inizio
 
 [Classe IndexSegment](./indexsegment-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

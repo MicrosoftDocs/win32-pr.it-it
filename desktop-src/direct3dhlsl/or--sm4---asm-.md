@@ -1,23 +1,23 @@
 ---
-title: o (SM4-ASM)
-description: OR bit per bit.
+title: o (sm4 - asm)
+description: Or bit per bit.
 ms.assetid: BBC06F8C-4C86-4077-A1F9-383D6A8FBED3
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62064189725b246cc48bbde03a9c094d13f8b9a0
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
-ms.translationtype: HT
+ms.openlocfilehash: a65d6ee2c5e5559d7d5e877a2bdef83b13a45a06ca0f00c980baa4811579f03c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104993152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118088744"
 ---
-# <a name="or-sm4---asm"></a>o (SM4-ASM)
+# <a name="or-sm4---asm"></a>o (sm4 - asm)
 
-OR bit per bit.
+Or bit per bit.
 
 
 
-| o dest \[ . mask \] , src0 \[ . Swizzle \] , src1 \[ . Swizzle\] |
+| o dest \[ \] .mask, src0 \[ .swizzle, \] src1 \[ .swizzle\] |
 |------------------------------------------------------|
 
 
@@ -28,9 +28,9 @@ OR bit per bit.
 
 | Elemento                                                            | Descrizione                                         |
 |-----------------------------------------------------------------|-----------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[nel \] risultato dell'operazione.<br/>      |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nei \] componenti a o con *src1*.<br/> |
-| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[nei \] componenti a o con *src0*.<br/> |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Risultato dell'operazione.<br/>      |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] I componenti in OR con *src1*.<br/> |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[in \] I componenti in OR con *src0*.<br/> |
 
 
 
@@ -38,7 +38,7 @@ OR bit per bit.
 
 ## <a name="remarks"></a>Commenti
 
-Questa istruzione esegue un'operazione logica di componente o di ogni coppia di valori a 32 bit da *src0* e *src1*. I risultati a 32 bit vengono posizionati in *dest*.
+Questa istruzione esegue un OR logico per componente di ogni coppia di valori a 32 bit da *src0* e *src1*. I risultati a 32 bit vengono inseriti in *dest*.
 
 Questa istruzione si applica alle fasi dello shader seguenti:
 
@@ -52,7 +52,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -60,12 +60,12 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -75,7 +75,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

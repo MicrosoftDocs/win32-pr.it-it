@@ -4,66 +4,66 @@ ms.assetid: 50bf2947-27ee-4092-9d3a-a1c13ee80e95
 title: Tipi di supporti video non compressi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c90a48aed62f22a492ac22dae93761c1046750a
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 69d01dab1179e0fc77872a7122e915e67c4c70dc98afd9586f02569c53e61547
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104530487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118057588"
 ---
 # <a name="uncompressed-video-media-types"></a>Tipi di supporti video non compressi
 
-In questo argomento viene descritto come creare un tipo di supporto che descrive un formato video non compresso. Per ulteriori informazioni sui tipi di supporto in genere, vedere [informazioni sui tipi di supporto](about-media-types.md).
+In questo argomento viene descritto come creare un tipo di supporto che descrive un formato video non compresso. Per altre informazioni sui tipi di supporti in genere, vedere [About Media Types](about-media-types.md).
 
-Per creare un tipo di video completo non compresso, impostare gli attributi seguenti sul puntatore all'interfaccia [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) .
+Per creare un tipo di video non compresso completo, impostare gli attributi seguenti sul puntatore [**all'interfaccia IMFMediaType.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 
 
 
 | Attributo                                                                            | Descrizione                                                                                                                                                                                                                         |
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_ \_ tipo principale MF \_ mt**](mf-mt-major-type-attribute.md)                            | Tipo principale. Impostare su **MFMediaType \_ video**.                                                                                                                                                                                          |
-| [**sottotipo MF \_ mt \_**](mf-mt-subtype-attribute.md)                                   | Sottotipo. Vedere [GUID del sottotipo video](video-subtype-guids.md).                                                                                                                                                                        |
-| [**\_ \_ stride predefinito MF \_ mt**](mf-mt-default-stride-attribute.md)                    | Stride della superficie. Lo *stride* è il numero di byte necessari per passare da una riga di pixel a quella successiva. Impostare questo attributo se lo stride in byte non corrisponde alla larghezza del video in byte. In caso contrario, è possibile omettere questo attributo. |
-| [**\_ \_ frequenza fotogrammi MF mt \_**](mf-mt-frame-rate-attribute.md)                            | Frequenza di fotogrammi.                                                                                                                                                                                                                         |
-| [**\_dimensioni del \_ frame MF mt \_**](mf-mt-frame-size-attribute.md)                            | Dimensioni del frame.                                                                                                                                                                                                                         |
-| [**\_modalità di \_ intreccio MF mt \_**](mf-mt-interlace-mode-attribute.md)                    | Modalità interlacciamento.                                                                                                                                                                                                                   |
-| [**\_ \_ tutti gli esempi MF mt \_ \_ Independent**](mf-mt-all-samples-independent-attribute.md) | Specifica se ogni esempio è indipendente. Impostare su **true** per i formati non compressi.                                                                                                                                             |
-| [**proporzioni MF \_ mt \_ pixel \_ \_**](mf-mt-pixel-aspect-ratio-attribute.md)           | Proporzioni pixel.                                                                                                                                                                                                                 |
+| [**MF \_ MT \_ MAJOR \_ TYPE**](mf-mt-major-type-attribute.md)                            | Tipo principale. Impostare su **MFMediaType \_ Video.**                                                                                                                                                                                          |
+| [**MF \_ MT \_ SUBTYPE**](mf-mt-subtype-attribute.md)                                   | Sottotipo. Vedere [VIDEO Subtype GUID (GUID sottotipo video).](video-subtype-guids.md)                                                                                                                                                                        |
+| [**MF \_ MT \_ DEFAULT \_ STRIDE**](mf-mt-default-stride-attribute.md)                    | Stride della superficie. Lo *stride* è il numero di byte necessari per passare da una riga di pixel a quella successiva. Impostare questo attributo se lo stride in byte non corrisponde alla larghezza del video in byte. In caso contrario, è possibile omettere questo attributo. |
+| [**FREQUENZA \_ DEI \_ FOTOGRAMMI MF MT \_**](mf-mt-frame-rate-attribute.md)                            | Frequenza dei fotogrammi.                                                                                                                                                                                                                         |
+| [**DIMENSIONI DEL \_ FRAME MF \_ \_ MT**](mf-mt-frame-size-attribute.md)                            | Dimensioni del frame.                                                                                                                                                                                                                         |
+| [**MODALITÀ \_ INTERLACE MF MT \_ \_**](mf-mt-interlace-mode-attribute.md)                    | Modalità di interlacciamento.                                                                                                                                                                                                                   |
+| [**MF \_ MT \_ ALL \_ SAMPLES \_ INDEPENDENT**](mf-mt-all-samples-independent-attribute.md) | Specifica se ogni campione è indipendente. Impostare su **TRUE per** i formati non compressi.                                                                                                                                             |
+| [**PROPORZIONI \_ IN PIXEL MF MT \_ \_ \_**](mf-mt-pixel-aspect-ratio-attribute.md)           | Proporzioni pixel.                                                                                                                                                                                                                 |
 
 
 
  
 
-Inoltre, se si conoscono i valori corretti, impostare gli attributi seguenti. (In caso contrario, omettere questi attributi).
+Inoltre, impostare gli attributi seguenti se si conoscono i valori corretti. In caso contrario, omettere questi attributi.
 
 
 
 | Attributo                                                                    | Descrizione        |
 |------------------------------------------------------------------------------|--------------------|
-| [**\_ \_ principali video MF \_ mt**](mf-mt-video-primaries-attribute.md)          | Colori primari.   |
-| [**\_funzione di \_ trasferimento MF mt \_**](mf-mt-transfer-function-attribute.md)      | Funzione transfer. |
-| [**\_ \_ matrice YUV MF \_ mt**](mf-mt-yuv-matrix-attribute.md)                    | Matrice di traslazione.   |
-| [**posizione \_ di \_ Chroma del video MF mt \_ \_**](mf-mt-video-chroma-siting-attribute.md) | Ubicazione Chroma.     |
-| [**\_ \_ \_ intervallo nominale video MF \_ mt**](mf-mt-video-nominal-range-attribute.md) | Intervallo nominale.     |
+| [**PRIMARIE \_ VIDEO MF MT \_ \_**](mf-mt-video-primaries-attribute.md)          | Primarie di colore.   |
+| [**FUNZIONE MF \_ MT \_ TRANSFER \_**](mf-mt-transfer-function-attribute.md)      | Funzione transfer. |
+| [**MF \_ MT \_ YUV \_ MATRIX**](mf-mt-yuv-matrix-attribute.md)                    | Matrice di trasferimento.   |
+| [**MF \_ MT \_ VIDEO \_ CHROMA \_ SITING**](mf-mt-video-chroma-siting-attribute.md) | Siting di chroma.     |
+| [**MF \_ MT \_ VIDEO \_ NOMINAL \_ RANGE**](mf-mt-video-nominal-range-attribute.md) | Intervallo nominale.     |
 
 
 
  
 
-Per ulteriori informazioni, vedere [informazioni sui colori estese](extended-color-information.md). Ad esempio, se si crea un tipo di supporto che descrive uno standard video e lo standard definisce la posizione Chroma, aggiungere queste informazioni al tipo di supporto. Questa operazione consente di mantenere la fedeltà dei colori in tutta la pipeline.
+Per altre informazioni, vedere [Extended Color Information](extended-color-information.md). Ad esempio, se si crea un tipo di supporto che descrive uno standard video e lo standard definisce il siting di chroma, aggiungere queste informazioni al tipo di supporto. In questo modo è possibile mantenere la fedeltà dei colori in tutta la pipeline.
 
-Le funzioni seguenti possono risultare utili durante la creazione di un tipo di supporto video.
+Le funzioni seguenti possono essere utili quando si crea un tipo di supporto video.
 
 
 
 | Funzione                                                                     | Descrizione                                                                                                                                                                          |
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**MFAverageTimePerFrameToFrameRate**](/windows/desktop/api/mfapi/nf-mfapi-mfaveragetimeperframetoframerate) | Calcola la frequenza dei fotogrammi, in base alla durata media del frame.                                                                                                                         |
-| [**MFCalculateImageSize**](/windows/desktop/api/mfapi/nf-mfapi-mfcalculateimagesize)                         | Calcola la dimensione dell'immagine per un formato video non compresso.                                                                                                                          |
-| [**MFFrameRateToAverageTimePerFrame**](/windows/desktop/api/mfapi/nf-mfapi-mfframeratetoaveragetimeperframe) | Calcola la durata media di un frame video, in base alla frequenza dei fotogrammi.                                                                                                              |
-| [**MFGetStrideForBitmapInfoHeader**](/windows/desktop/api/mfapi/nf-mfapi-mfgetstrideforbitmapinfoheader)     | Restituisce lo stride di superficie minimo per un formato video. Per ulteriori informazioni, vedere [Image stride](image-stride.md).                                                                   |
-| [**MFInitVideoFormat**](/windows/desktop/api/mfapi/nf-mfapi-mfinitvideoformat)                               | Inizializza una struttura [**MFVIDEOFORMAT**](/windows/desktop/api/mfobjects/ns-mfobjects-mfvideoformat) per alcuni formati video standard, ad esempio NTSC Television. È quindi possibile usare la struttura per inizializzare un tipo di supporto. |
-| [**MFIsFormatYUV**](/windows/desktop/api/mfapi/nf-mfapi-mfisformatyuv)                                       | Esegue una query se un formato video è un formato YUV.                                                                                                                                      |
+| [**MFAverageTimePerFrameToFrameRate**](/windows/desktop/api/mfapi/nf-mfapi-mfaveragetimeperframetoframerate) | Calcola la frequenza dei fotogrammi, in base alla durata media dei fotogrammi.                                                                                                                         |
+| [**MFCalculateImageSize**](/windows/desktop/api/mfapi/nf-mfapi-mfcalculateimagesize)                         | Calcola le dimensioni dell'immagine per un formato video non compresso.                                                                                                                          |
+| [**MFFrameRateToAverageTimePerFrame**](/windows/desktop/api/mfapi/nf-mfapi-mfframeratetoaveragetimeperframe) | Calcola la durata media di un fotogramma video, in base alla frequenza dei fotogrammi.                                                                                                              |
+| [**MFGetStrideForBitmapInfoHeader**](/windows/desktop/api/mfapi/nf-mfapi-mfgetstrideforbitmapinfoheader)     | Restituisce lo stride minimo della superficie per un formato video. Per altre informazioni, vedere [Stride immagine.](image-stride.md)                                                                   |
+| [**MFInitVideoFormat**](/windows/desktop/api/mfapi/nf-mfapi-mfinitvideoformat)                               | Inizializza una [**struttura MFVIDEOFORMAT**](/windows/desktop/api/mfobjects/ns-mfobjects-mfvideoformat) per alcuni formati video standard, ad esempio tv NTSC. È quindi possibile usare la struttura per inizializzare un tipo di supporto. |
+| [**MFIsFormatYUV**](/windows/desktop/api/mfapi/nf-mfapi-mfisformatyuv)                                       | Esegue una query per determinare se un formato video è un formato YUV.                                                                                                                                      |
 
 
 
@@ -71,7 +71,7 @@ Le funzioni seguenti possono risultare utili durante la creazione di un tipo di 
 
 ## <a name="examples"></a>Esempio
 
-In questo esempio viene illustrata una funzione che compila le informazioni più comuni per un formato video non compresso. La funzione restituisce un puntatore di interfaccia [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) . È quindi possibile aggiungere altri attributi al tipo di supporto in base alle esigenze.
+Questo esempio mostra una funzione che inserisce le informazioni più comuni per un formato video non compresso. La funzione restituisce un [**puntatore a interfaccia IMFMediaType.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) È quindi possibile aggiungere altri attributi al tipo di supporto in base alle esigenze.
 
 
 ```C++
@@ -189,7 +189,7 @@ done:
 
 
 
-Nell'esempio successivo viene preso come input un formato video codificato e viene creato un tipo di video non compresso corrispondente. Questo tipo può essere impostato su un codificatore o un decodificatore, ad esempio.
+L'esempio seguente accetta un formato video codificato come input e crea un tipo di video non compresso corrispondente. Questo tipo, ad esempio, può essere impostato su un codificatore o decodificatore.
 
 
 ```C++
@@ -275,19 +275,19 @@ HRESULT ConvertVideoTypeToUncompressedType(
 
 <dl> <dt>
 
-[Informazioni sui colori estesi](extended-color-information.md)
+[Informazioni estese sui colori](extended-color-information.md)
 </dt> <dt>
 
-[Stride immagine](image-stride.md)
+[Stride dell'immagine](image-stride.md)
 </dt> <dt>
 
-[Tipi di supporto](media-types.md)
+[Tipi di supporti](media-types.md)
 </dt> <dt>
 
-[Tipi di supporti video](video-media-types.md)
+[Tipi di file multimediali video](video-media-types.md)
 </dt> <dt>
 
-[GUID del sottotipo video](video-subtype-guids.md)
+[GUID sottotipo video](video-subtype-guids.md)
 </dt> </dl>
 
  

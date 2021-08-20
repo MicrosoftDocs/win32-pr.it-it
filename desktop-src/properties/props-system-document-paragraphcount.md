@@ -4,12 +4,12 @@ ms.assetid: feb712fb-3125-4f5d-b428-97d3586d41e8
 title: System.Document. ParagraphCount
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee958b171591817611eddc84c119bf7d18e9ec30
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5181de73e5a60c9ca54a8f2cdcddd9483cb2a88175ec31233ba90ba6f6112b64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118053696"
 ---
 # <a name="systemdocumentparagraphcount"></a>System.Document. ParagraphCount
 
