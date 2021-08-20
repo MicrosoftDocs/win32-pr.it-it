@@ -1,9 +1,9 @@
 ---
-title: MCI_TMSF_TRACK macro (Mciapi. h)
-description: La \_ macro MCI TMSF \_ Track Recupera il componente Tracks da un parametro contenente le informazioni sulle tracce compresse/minuti/secondi/frame (TMSF).
+title: MCI_TMSF_TRACK macro (Mciapi.h)
+description: La macro MCI TMSF TRACK recupera il componente tracks da un parametro contenente le informazioni di \_ \_ traccia/minuti/secondi/fotogrammi (TMSF).
 ms.assetid: 3455442c-5c66-47c7-b06b-1a2de0e2dfed
 keywords:
-- MCI_TMSF_TRACK macro Windows Multimedia
+- MCI_TMSF_TRACK macro Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fa8512169d0e5b3d6892dd1bf615a220143e6d4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7090a2a9b652d7c989aadd70d8843ece04bf467bbbe353c22c3f76fee8a9712b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137952"
 ---
-# <a name="mci_tmsf_track-macro"></a>\_Macro di \_ rilevamento MCI TMSF
+# <a name="mci_tmsf_track-macro"></a>Macro MCI \_ TMSF \_ TRACK
 
-La macro **MCI \_ TMSF \_ Track** Recupera il componente Tracks da un parametro contenente le informazioni sulle tracce compresse/minuti/secondi/frame (TMSF).
+La macro **MCI \_ TMSF \_ TRACK** recupera il componente tracks da un parametro contenente le informazioni di traccia/minuti/secondi/fotogrammi (TMSF).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,19 +43,19 @@ BYTE MCI_TMSF_TRACK(
 *dwTMSF* 
 </dt> <dd>
 
-Ora nel formato TMSF.
+Ora in formato TMSF.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il componente Tracks delle informazioni TMSF specificate.
+Restituisce il componente tracks delle informazioni TMSF specificate.
 
 ## <a name="remarks"></a>Commenti
 
-L'ora nel formato TMSF viene espressa come valore **DWORD** con il byte meno significativo contenente le tracce, il successivo byte meno significativo che contiene minuti, il successivo byte meno significativo contenente i secondi e il byte più significativo contenente i frame.
+L'ora in formato TMSF viene espressa come valore **DWORD** con il byte meno significativo contenente tracce, il byte meno significativo successivo contenente minuti, il byte meno significativo successivo contenente secondi e il byte più significativo contenente frame.
 
-La macro **MCI \_ TMSF \_ Track** viene definita nel modo seguente:
+La macro **MCI \_ TMSF \_ TRACK** è definita come segue:
 
 
 ```C++
@@ -72,7 +72,7 @@ La macro **MCI \_ TMSF \_ Track** viene definita nel modo seguente:
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ La macro **MCI \_ TMSF \_ Track** viene definita nel modo seguente:
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Macro MCI](mci-macros.md)

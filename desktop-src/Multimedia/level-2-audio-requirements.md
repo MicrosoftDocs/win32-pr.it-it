@@ -3,50 +3,50 @@ title: Requisiti audio di livello 2
 description: Requisiti audio di livello 2
 ms.assetid: 203648f2-9d20-438d-975b-b80e50b0fb9b
 keywords:
-- PC multimediali (MPC), livello 2
-- MPC (PC multimediale), livello 2
-- Consiglio marketing per PC multimediali, livello 2
-- Livello 2 di MPC, requisiti audio
+- PC multimediale (MPC), livello 2
+- MPC (Multimedia PC),Livello 2
+- Multimedia PC Marketing Council,Level 2
+- MPC Livello 2, requisiti audio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e20458f8dcb26149c9fa697587faf93cf10c0f27
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f5a2bc9398a25ac916352f41ad2ddc2325820354d1c7beb511b03b27004fadd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103709364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118139832"
 ---
 # <a name="level-2-audio-requirements"></a>Requisiti audio di livello 2
 
 Il sottosistema audio di un PC che soddisfa la specifica di livello 2 include gli elementi seguenti:
 
--   Un driver CD-ROM con output di CD-DA (Red Book Audio) e controllo del volume
--   Un'applicazione livello dati a 16 bit con le caratteristiche seguenti:
-    -   Campionamento lineare PCM (Pulse Code Modulation)
-    -   Funzionalità di trasferimento con memorizzazione nel buffer di DMA o FIFO con interrupt sul buffer vuoto
-    -   Frequenza di campionamento obbligatorie di 44,1, 22,05 e 11,025 kHz
+-   Driver CD-ROM con output CD-DA (audio Red Book) e controllo del volume
+-   Applicazione livello dati a 16 bit con le caratteristiche seguenti:
+    -   Campionamento PCM lineare (pulse code modulation)
+    -   Funzionalità di trasferimento con buffer DMA o FIFO con interrupt nel buffer vuoto
+    -   Frequenze di campionamento obbligatorie di 44,1, 22,05 e 11,025 kHz
     -   Canali stereo
-    -   Utilizzo della larghezza di banda della CPU pari al 10% o inferiore quando si esegue l'output dell'audio della frequenza di campionamento 22,05 o 11,025 kHz oppure una larghezza di banda della CPU del 15% o meno quando si esegue l'output della frequenza di campionamento 44,1 di
+    -   Utilizzo della larghezza di banda della CPU del 10% o inferiore durante l'output audio di una frequenza di campionamento di 22,05 o 11,025 kHz o una larghezza di banda della CPU del 15% o inferiore durante l'output audio di una frequenza di campionamento di 44,1 kHz
 
 <!-- -->
 
 -   ADC a 16 bit con le caratteristiche seguenti:
     -   Campionamento PCM lineare
-    -   Funzionalità di trasferimento con memorizzazione nel buffer di DMA o FIFO con interrupt sul buffer vuoto
-    -   Frequenza di campionamento obbligatorie di 44,1, 22,05 e 11,025 kHz
-    -   Input microfono
+    -   Funzionalità di trasferimento con buffer DMA o FIFO con interrupt nel buffer vuoto
+    -   Frequenze di campionamento obbligatorie di 44,1, 22,05 e 11,025 kHz
+    -   Input del microfono
 
 <!-- -->
 
--   Funzionalità del sintetizzatore interno con multivoice, multitimbrico, sei note di melodia simultanee più due note di percussione simultanee
+-   Funzionalità di sintetizzatore interno con multivoice, multitimbral, sei note simultanee più due note percussive simultanee
 -   Combinazione interna con le funzionalità seguenti:
-    -   Può combinare tre origini audio e presentare l'output come segnale audio stereo a livello di riga nel pannello indietro
-    -   Le origini di mixaggio sono il CD rosso del libro, il sintetizzatore e l'applicazione livello dati
-    -   Ogni origine di combinazione dispone di un controllo del volume a 3 bit con una conicità logaritmica
+    -   Può combinare tre origini audio e presentare l'output come segnale audio stereo a livello di linea nel pannello indietro
+    -   Le origini di combinazione sono audio CD Red Book, sintetizzatore e applicazione livello dati
+    -   Ogni origine di combinazione ha un controllo del volume a 3 bit con un taper logaritmico
 
- 
+ 
 
- 
+ 
 
 
 

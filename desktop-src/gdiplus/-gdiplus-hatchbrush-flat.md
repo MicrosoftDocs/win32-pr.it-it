@@ -1,19 +1,19 @@
 ---
-description: Windows GDI+ espone un'API flat costituita da circa 600 funzioni. Queste funzioni api flat vengono incapsulate dalla classe HatchBrush C++.
+description: Windows GDI+ un'API flat costituita da circa 600 funzioni. Queste funzioni api flat vengono incapsulate dalla classe HatchBrush C++.
 ms.assetid: c7d9e633-8c3d-4e77-811d-306cd785a7ad
 title: Funzioni di HatchBrush
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8aa455c1194ca4f3397673d1a4412dc9ed7e3473
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 74f550f3f3567a5835c7a220d0384dc1c6bbd24133577b9b89a6a37a0aae8840
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118067015"
 ---
 # <a name="hatchbrush-functions"></a>Funzioni di HatchBrush
 
-Windows GDI+ espone un'API flat costituita da circa 600 funzioni, implementate in Gdiplus.dll e dichiarate in Gdiplusflat.h. Le funzioni nell'API flat GDI+ vengono incapsulate da una raccolta di circa 40 classi C++. È consigliabile non chiamare direttamente le funzioni nell'API flat. Ogni volta che si effettuano chiamate a GDI+, è necessario chiamare i metodi e le funzioni forniti dai wrapper C++. Il Servizio Supporto Tecnico Clienti Microsoft non fornirà supporto per il codice che chiama direttamente l'API flat. Per altre informazioni sull'uso di questi metodi wrapper, vedere [API flat GDI+.](-gdiplus-flatapi-flat.md)
+Windows GDI+ un'API flat costituita da circa 600 funzioni, implementate in Gdiplus.dll e dichiarate in Gdiplusflat.h. Le funzioni nell'API GDI+ flat vengono incapsulate da una raccolta di circa 40 classi C++. È consigliabile non chiamare direttamente le funzioni nell'API flat. Ogni volta che si effettuano GDI+, è consigliabile eseguire questa operazione chiamando i metodi e le funzioni forniti dai wrapper C++. Il Servizio Supporto Tecnico Clienti Microsoft non fornirà il supporto per il codice che chiama direttamente l'API flat. Per altre informazioni sull'uso di questi metodi wrapper, [vedere GDI+'API Flat.](-gdiplus-flatapi-flat.md)
 
 Le funzioni API flat seguenti vengono incapsulate dalla [**classe HatchBrush**](/windows/desktop/api/gdiplusbrush/nl-gdiplusbrush-hatchbrush) C++.
 

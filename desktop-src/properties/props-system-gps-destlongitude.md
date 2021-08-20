@@ -4,16 +4,16 @@ ms.assetid: 72a3fb10-4554-4a4d-bb73-ee515341b9c1
 title: System.GPS.DestLongitude
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a64f4fe5229195bcbc976d78f9a0b09b053a94ca
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: ae1e7b3482a5e632f774f500bcfe254667c120a3b5ea653c3725a354cbf95025
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111988886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117866404"
 ---
 # <a name="systemgpsdestlongitude"></a>System.GPS.DestLongitude
 
-Indica la latitudine del punto di destinazione. Si tratta di una matrice di tre valori, come indicato di seguito: l'indice 0 è il gradi, l'indice 1 è il numero di minuti, l'indice 2 i secondi. Ognuno viene calcolato dai valori in PKEY \_ GPS \_ DestLongitudeNumerator e PKEY \_ GPS \_ DestLongitudeDenominator.
+Indica la latitudine del punto di destinazione. Si tratta di una matrice di tre valori, come indicato di seguito: index 0 is the degrees, index 1 is the minutes, index 2 is the seconds. Ognuno viene calcolato dai valori in PKEY \_ GPS \_ DestLongitudeNumerator e PKEY \_ GPS \_ DestLongitudeDenominator.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 

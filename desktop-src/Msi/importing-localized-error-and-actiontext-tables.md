@@ -1,23 +1,23 @@
 ---
-description: Le versioni in lingua localizzata della tabella degli errori e della tabella ActionText sono fornite da Windows Installer SDK. Le versioni in lingua francese di queste tabelle, Error. FRA e ActionTe. FRA, si trovano nella cartella Intl del Windows Installer SDK.
+description: Le versioni localizzate della tabella Error e della tabella ActionText vengono fornite da Windows Installer SDK. Le versioni in lingua francese di queste tabelle, Error.FRA e ActionTe.FRA, si trovano nella cartella Intl di Windows Installer SDK.
 ms.assetid: 8de687c8-c7da-497e-8a90-2404096ad100
-title: Importazione delle tabelle ActionText e degli errori localizzati
+title: Importazione di tabelle Error e ActionText localizzate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15d48a68ca1053a1a1c66899a17802ac337c3ba2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bda0916f634d986874cd17f9871fa602277b180e1ba436e9d9786fb061f3ac4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118142237"
 ---
-# <a name="importing-localized-error-and-actiontext-tables"></a>Importazione delle tabelle ActionText e degli errori localizzati
+# <a name="importing-localized-error-and-actiontext-tables"></a>Importazione di tabelle Error e ActionText localizzate
 
-Le versioni in lingua localizzata della [tabella degli errori](error-table.md) e della [tabella ActionText](actiontext-table.md) sono fornite da Windows Installer SDK. Le versioni in lingua francese di queste tabelle, Error. FRA e ActionTe. FRA, si trovano nella cartella Intl del Windows Installer SDK.
+Le versioni localizzate della [tabella Error e](error-table.md) della tabella [ActionText](actiontext-table.md) vengono fornite da Windows Installer SDK. Le versioni in lingua francese di queste tabelle, Error.FRA e ActionTe.FRA, si trovano nella cartella Intl di Windows Installer SDK.
 
-È possibile utilizzare l'Editor tabella Orca o l'utilità Msidb.exe fornita con l'SDK per importare le versioni in francese di queste tabelle nel database.
+È possibile usare l'editor di tabelle Orca o l'utilità Msidb.exe fornita con l'SDK per importare le versioni in francese di queste tabelle nel database.
 
-Un esempio di utilizzo di [**MsiDatabaseImport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta) e del [**Metodo Import**](database-import.md) dell' [**oggetto di database**](database-object.md) viene fornito in Windows Installer SDK come WiImport.vbs di utilità. Il frammento di codice seguente, Imp.vbs, illustra anche l'uso del metodo Import ed è da usare con Windows script host.
+Un esempio di uso [**di MsiDatabaseImport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta) e del metodo [**Import**](database-import.md) dell'oggetto [**Database**](database-object.md) è disponibile in Windows Installer SDK come utilità WiImport.vbs. Il frammento di codice seguente, Imp.vbs, illustra anche l'uso del metodo Import ed è per l'uso con Windows host script.
 
 
 ```VB
@@ -50,15 +50,15 @@ Wscript.Quit 0
 
 
 
-Per importare e sostituire la tabella degli errori con Error. FRA è possibile utilizzare una riga di comando simile alla seguente.
+Per importare e sostituire la tabella Error con Error.FRA, è possibile usare una riga di comando come la seguente.
 
-**Cscript Imp.vbs MNPFren.msi C: \\ Nota il \_ programma di installazione \\ francese Error. fra**
+**Cscript Imp.vbs MNPFren.msi C: \\ Nota Errore francese del programma di \_ \\ installazione.FRA**
 
-Per importare e sostituire la tabella ActionText con ActionTe. FRA, è possibile usare una riga di comando simile alla seguente.
+Per importare e sostituire la tabella ActionText con ActionTe.FRA, è possibile usare una riga di comando come la seguente.
 
-**Cscript Imp.vbs MNPFren.msi C: \\ Note \_ Installer \\ francese ActionTe. fra**
+**Cscript Imp.vbs MNPFren.msi C: \\ Note \_ Installer \\ French ActionTe.FRA**
 
-Eseguire di nuovo la convalida in MNPFren.msi come descritto in [convalida di un aggiornamento dell'installazione](validating-an-installation-upgrade.md).
+Eseguire nuovamente la convalida in MNPFren.msi come descritto in [Convalida di un aggiornamento dell'installazione.](validating-an-installation-upgrade.md)
 
 [Continua](localizing-database-columns.md)
 

@@ -1,10 +1,10 @@
 ---
 title: WMDRM_OUTPUT_PROTECTION_LEVELS struttura (Wmdrmsdk.h)
-description: La struttura WMDRM OUTPUT PROTECTION LEVELS contiene i livelli di protezione \_ \_ dell'output (OPL) richiesti da una licenza \_ per eseguire varie azioni.
+description: La struttura WMDRM OUTPUT PROTECTION LEVELS contiene i livelli di protezione dell'output richiesti da una licenza \_ \_ per eseguire varie \_ azioni.
 ms.assetid: 6b284180-1033-4c57-b010-6d4ab4bc593a
 keywords:
 - WMDRM_OUTPUT_PROTECTION_LEVELS struttura windows Media Format
-- struttura windows Media Format
+- Struttura windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -22,9 +22,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117843962"
 ---
-# <a name="wmdrm_output_protection_levels-structure"></a>Struttura DEI LIVELLI DI \_ PROTEZIONE \_ DELL'OUTPUT \_ DI WMDRM
+# <a name="wmdrm_output_protection_levels-structure"></a>Struttura WMDRM \_ OUTPUT \_ PROTECTION \_ LEVELS
 
-La **struttura WMDRM \_ OUTPUT PROTECTION \_ \_ LEVELS** contiene i livelli di protezione dell'output (OPL) richiesti da una licenza per eseguire varie azioni.
+La **struttura WMDRM \_ OUTPUT PROTECTION \_ \_ LEVELS** contiene i livelli di protezione dell'output richiesti da una licenza per eseguire varie azioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ typedef struct WMDRM_OUTPUT_PROTECTION_LEVELS {
 **wCompressedDigitalVideo**
 </dt> <dd>
 
-OPL minimo necessario per ricevere video digitali compressi.
+OPL minimo necessario per ricevere video digitale compresso.
 
 </dd> <dt>
 

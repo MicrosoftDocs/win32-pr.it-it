@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 9f138b4e-6a84-4c7e-9521-5f8ffe0eaebf
-ms.openlocfilehash: 699b6d5473d97548a22e220372b9f53633cb2346
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 06ebb05717f663fe8b18c75135479ddd09b12dadac6733de9e408cd5b91a3e34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109840912"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118047154"
 ---
 # <a name="shextracticonsw-function"></a>Funzione SHExtractIconsW
 
@@ -108,7 +108,7 @@ Quando questa funzione viene restituita, contiene un puntatore all'identificator
 
 Tipo: **UINT**
 
-Numero di icone da estrarre dalla risorsa denominata in *pszFileName*. Questo parametro è valido solo quando la risorsa è un file con estensione exe o dll.
+Numero di icone da estrarre dalla risorsa denominata in *pszFileName*. Questo parametro è valido solo quando la risorsa è un .exe o .dll file.
 
 </dd> <dt>
 
@@ -117,7 +117,7 @@ Numero di icone da estrarre dalla risorsa denominata in *pszFileName*. Questo pa
 
 Tipo: **UINT**
 
-Flag che controllano questa funzione. Per i valori possibili, vedere il *parametro fuLoad* della [**funzione LoadImage.**](/windows/win32/api/winuser/nf-winuser-loadimagea)
+Flag che controllano questa funzione. Per i valori possibili, *vedere il parametro fuLoad* della [**funzione LoadImage.**](/windows/win32/api/winuser/nf-winuser-loadimagea)
 
 </dd> </dl>
 
@@ -138,9 +138,9 @@ Valore diverso da zero in caso di esito positivo. in caso contrario, zero.
 -   Cursore animato (.ani)
 -   Bitmap (.bmp)
 
-Estrazioni da Windows 3. *Sono* supportati anche i file eseguibili a 16 bit (exe o dll).
+Estrazioni da Windows 3. *Sono* supportati anche i file eseguibili a 16 bit (.exe o .dll).
 
-I *parametri cxIcon* *e cyIcon* specificano le dimensioni delle icone da estrarre. È possibile estrarre due dimensioni tramite ogni parametro suddividendo il valore tra LOWORD e HIWORD. Inserire la prima dimensione desiderata nel valore LOWORD del parametro e la seconda dimensione in HIWORD. MakeLONG [](/previous-versions/windows/desktop/legacy/ms632660(v=vs.85))(24, 48) per *cxIcon* e *cyIcon,* ad esempio, estrae icone con dimensioni di 24 e 48.
+I *parametri cxIcon* *e cyIcon* specificano le dimensioni delle icone da estrarre. È possibile estrarre due dimensioni tramite ogni parametro suddividendo il valore tra i valori LOWORD e HIWORD. Inserire la prima dimensione desiderata nel valore LOWORD del parametro e la seconda dimensione in HIWORD. MakeLONG [](/previous-versions/windows/desktop/legacy/ms632660(v=vs.85))(24, 48) per *cxIcon* e *cyIcon,* ad esempio, estrae icone con dimensioni di 24 e 48.
 
 Il processo chiamante è responsabile dell'eliminazione di tutte le icone estratte tramite questa funzione chiamando la [**funzione DestroyIcon.**](/windows/win32/api/winuser/nf-winuser-destroyicon)
 
@@ -152,8 +152,8 @@ Il processo chiamante è responsabile dell'eliminazione di tutte le icone estrat
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                        |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **SHExtractIconsW** (Unicode)<br/>                                                                      |
 

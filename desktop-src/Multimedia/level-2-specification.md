@@ -3,26 +3,26 @@ title: Specifica di livello 2
 description: Specifica di livello 2
 ms.assetid: 2dd1b5b1-f9a2-441f-95f6-5b02bf00949e
 keywords:
-- PC multimediali (MPC), livello 2
-- MPC (PC multimediale), livello 2
+- PC multimediale (MPC), livello 2
+- MPC (PC multimediale),livello 2
 - Consiglio marketing per PC multimediali, livello 2
-- Livello 2 di MPC, informazioni
+- MPC Level 2,about
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5456c9ac8b1245c89f0a4831964f73dd3694ed9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1641349849a03d130b599f78592d4907e8627169a78406cab858ae19918b04fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118139707"
 ---
 # <a name="level-2-specification"></a>Specifica di livello 2
 
-La specifica di livello 2 è stata sviluppata per favorire l'adozione di funzionalità multimediali avanzate. Questa specifica si basa sui requisiti impostati nella specifica di livello 1 ed è un superset di esso. La specifica di livello 2 definisce la funzionalità minima di sistema per le funzionalità multimediali avanzate. Non è un Consiglio per una configurazione di sistema.
+La specifica di livello 2 è stata sviluppata per favorire l'adozione di funzionalità multimediali avanzate. Questa specifica si basa sui requisiti impostati nella specifica di livello 1 ed è un superset di esso. La specifica di livello 2 definisce le funzionalità minime del sistema per le funzionalità multimediali avanzate. Non è una raccomandazione per una configurazione di sistema.
 
- 
+ 
 
- 
+ 
 
 
 

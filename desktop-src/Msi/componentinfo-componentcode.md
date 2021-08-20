@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: a0a73602e30da1e2aebdf09bc18eaa1515be1470
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6d6c6659498b2179c50b6a8a059128ce54e6a5b3e5fb63e992636329b90c1618
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118144685"
 ---
 # <a name="componentinfocomponentcode-property"></a>ComponentInfo.ComponentCode - proprietà
 
@@ -36,9 +36,9 @@ Codice del componente in questione. Questa proprietà chiama la [**funzione MsiG
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5.0 o versione successiva.<br/>                                         |
+| Versione<br/> | Windows Programma di installazione 5.0 o versione successiva.<br/>                                         |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl> |
-| IID<br/>     | IID IComponentInfo è definito come \_ 000C1099-0000-0000-C000-000000000046<br/>  |
+| IID<br/>     | IID \_ IComponentInfo è definito come 000C1099-0000-0000-C000-000000000046<br/>  |
 
 
 

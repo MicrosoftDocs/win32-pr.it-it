@@ -1,5 +1,5 @@
 ---
-description: Blocca e sblocca il supporto in un dispositivo di accesso rimovibile.
+description: Blocca e sblocca i supporti in un dispositivo di accesso rimovibile.
 ms.assetid: 357ee552-82d0-4201-bcc2-0acf208e16a0
 title: Metodo LockMedia della classe CIM_MediaAccessDevice
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 12c4aa6c6ba9e57a2ab88e58624b246fb98065f3
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 0b5ad5319ef0b4a5dec3b910a8229ba5b9cae19b046c02195b8dcc22c6af9ce1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104058423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117995497"
 ---
-# <a name="lockmedia-method-of-the-cim_mediaaccessdevice-class"></a>Metodo LockMedia della classe CIM \_ MediaAccessDevice
+# <a name="lockmedia-method-of-the-cim_mediaaccessdevice-class"></a>Metodo LockMedia della classe \_ MediaAccessDevice CIM
 
-Blocca e sblocca il supporto in un dispositivo di accesso rimovibile.
+Blocca e sblocca i supporti in un dispositivo di accesso rimovibile.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,16 +39,16 @@ uint32 LockMedia(
 
 <dl> <dt>
 
-*Blocca* \[ in\]
+*Blocco* \[ Pollici\]
 </dt> <dd>
 
-Se **true**, blocca il supporto. Se **false**, rilascia il supporto.
+Se **TRUE,** blocca il supporto. Se **FALSE,** rilascia il supporto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un errore.
+Restituisce un valore 0 se l'operazione ha esito positivo. In caso contrario, restituisce un errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -68,7 +68,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 
 <dl> <dt>
 
-[**\_MEDIAACCESSDEVICE CIM**](cim-mediaaccessdevice.md)
+[**CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md)
 </dt> </dl>
 
  

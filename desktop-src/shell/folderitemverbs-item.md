@@ -1,7 +1,7 @@
 ---
 description: Recupera l'oggetto FolderItemVerb per un elemento specificato nella raccolta.
 ms.assetid: 65871926-0920-4ad6-82da-7aba0a3c0fab
-title: Metodo FolderItemVerbs. Item (shldisp. h)
+title: Metodo FolderItemVerbs.Item (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 013215af3f5005e68b396312d0ef13fa974d8a32
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 86cb3ee7c9d62d943a369dd18cb4471e0682c1c1d0f5e6193a6f34b8c0451203
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104979658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117859853"
 ---
-# <a name="folderitemverbsitem-method"></a>Metodo FolderItemVerbs. Item
+# <a name="folderitemverbsitem-method"></a>Metodo FolderItemVerbs.Item
 
-Recupera l'oggetto [**FolderItemVerb**](folderitemverb.md) per un elemento specificato nella raccolta.
+Recupera [**l'oggetto FolderItemVerb**](folderitemverb.md) per un elemento specificato nella raccolta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,12 +39,12 @@ retVal = FolderItemVerbs.Item(
 
 <dl> <dt>
 
-*iIndex* \[ in\]
+*iIndex* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
-Indice in base zero dell'elemento da recuperare. Questo valore deve essere minore del valore della proprietà [**count**](folderitemverbs-count.md) .
+Indice in base zero dell'elemento da recuperare. Questo valore deve essere minore del valore della [**proprietà**](folderitemverbs-count.md) Count.
 
 </dd> </dl>
 
@@ -52,13 +52,13 @@ Indice in base zero dell'elemento da recuperare. Questo valore deve essere minor
 
 Tipo: **[ **IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch)\*\***
 
-Oggetto che riceve l'oggetto [**FolderItemVerb**](folderitemverb.md) .
+Oggetto che riceve [**l'oggetto FolderItemVerb.**](folderitemverb.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene utilizzato **Item** per recuperare i primi verbi della raccolta disponibili per la cartella del pannello di controllo e visualizzarne il nome. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+Nell'esempio seguente viene **utilizzato Item** per recuperare i primi verbi nella raccolta disponibile per la cartella Pannello di controllo e visualizzarne il nome. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -93,7 +93,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -176,11 +176,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 
