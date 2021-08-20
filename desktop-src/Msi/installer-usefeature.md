@@ -1,7 +1,7 @@
 ---
-description: Il metodo UseFeature dell'oggetto Installer incrementa il conteggio di utilizzo per una particolare funzionalità e restituisce lo stato di installazione per tale funzionalità. Questo metodo deve essere usato per indicare l'intenzione di un'applicazione di usare una funzionalità.
+description: Il metodo UseFeature dell'oggetto Installer incrementa il conteggio di utilizzo per una particolare funzionalità e restituisce lo stato di installazione per tale funzionalità. Questo metodo deve essere usato per indicare la finalità di un'applicazione di usare una funzionalità.
 ms.assetid: c9ea812c-2f95-4ba4-ad8e-b96f7fc14bb1
-title: Installer. UseFeature, metodo
+title: Metodo Installer.UseFeature
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 355e7f4e64a5cb69ffc0371473cb0db1ac6313a7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b320ce72271bb7ee90ac85a376b103d868e6f740a2e853daf58bb478dc79ad6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118142156"
 ---
-# <a name="installerusefeature-method"></a>Installer. UseFeature, metodo
+# <a name="installerusefeature-method"></a>Metodo Installer.UseFeature
 
-Il metodo **UseFeature** dell'oggetto [**Installer**](installer-object.md) incrementa il conteggio di utilizzo per una particolare funzionalità e restituisce lo stato di installazione per tale funzionalità. Questo metodo deve essere usato per indicare l'intenzione di un'applicazione di usare una funzionalità.
+Il **metodo UseFeature** dell'oggetto [**Installer**](installer-object.md) incrementa il conteggio di utilizzo per una particolare funzionalità e restituisce lo stato di installazione per tale funzionalità. Questo metodo deve essere usato per indicare la finalità di un'applicazione di usare una funzionalità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ Installer.UseFeature(
 *Prodotto* 
 </dt> <dd>
 
-Specifica il codice del prodotto.
+Specifica il codice prodotto del prodotto.
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo **UseFeature** deve essere usato solo su funzionalità note per la pubblicazione. L'applicazione deve determinare lo stato della funzionalità chiamando la proprietà [**FeatureState**](installer-featurestate.md) o la proprietà [**features**](installer-features.md) o i rispettivi equivalenti API.
+Il **metodo UseFeature** deve essere usato solo per le funzionalità note per la pubblicazione. L'applicazione deve determinare lo stato della funzionalità chiamando la proprietà [**FeatureState**](installer-featurestate.md) o [**la proprietà Features**](installer-features.md) o gli equivalenti dell'API.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,9 +76,9 @@ Il metodo **UseFeature** deve essere usato solo su funzionalità note per la pub
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller è definito come \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

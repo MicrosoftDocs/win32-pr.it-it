@@ -1,7 +1,7 @@
 ---
-description: Il metodo WriteBitmapBits recupera un frame video nel tempo di supporto specificato e lo scrive in un file. Il fotogramma video è sempre in formato RGB a 24 bit.
+description: Il metodo WriteBitmapBits recupera un fotogramma video all'ora del contenuto multimediale specificato e lo scrive in un file. Il fotogramma video è sempre in formato RGB a 24 bit.
 ms.assetid: 8b21f37b-553d-4de2-8725-c94c29fa3a1a
-title: 'Metodo IMediaDet:: WriteBitmapBits (qedit. h)'
+title: Metodo IMediaDet::WriteBitmapBits (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 79bf54f136cc2ab9db1208ad6c2b4e5cb12bd950
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fc2a967f5b0e99c50317e9dc226a4b345c6790a8ce2b6e5d42eb50dfdc3b105b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118154156"
 ---
-# <a name="imediadetwritebitmapbits-method"></a>Metodo IMediaDet:: WriteBitmapBits
+# <a name="imediadetwritebitmapbits-method"></a>Metodo IMediaDet::WriteBitmapBits
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il `WriteBitmapBits` metodo recupera un frame video nel tempo di supporto specificato e lo scrive in un file. Il fotogramma video è sempre in formato RGB a 24 bit.
+Il `WriteBitmapBits` metodo recupera un fotogramma video all'ora del contenuto multimediale specificato e lo scrive in un file. Il fotogramma video è sempre in formato RGB a 24 bit.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,21 +51,21 @@ HRESULT WriteBitmapBits(
 *StreamTime* 
 </dt> <dd>
 
-Ora in cui recuperare il frame del video.
+Ora in cui recuperare il fotogramma video.
 
 </dd> <dt>
 
 *Larghezza* 
 </dt> <dd>
 
-Larghezza dell'immagine in pixel.
+Larghezza dell'immagine, in pixel.
 
 </dd> <dt>
 
 *Altezza* 
 </dt> <dd>
 
-Altezza, in pixel, dell'immagine.
+Altezza dell'immagine, in pixel.
 
 </dd> <dt>
 
@@ -78,17 +78,17 @@ Percorso del file in cui salvare la bitmap. Se il file esiste già, questo metod
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK. l'operazione è riuscita. In caso contrario, restituisce un valore **HRESULT** che indica la cause dell'errore. I codici di errore possibili includono i seguenti:
+Restituisce \_ L'operazione ha esito positivo. In caso contrario, restituisce **un valore HRESULT** che indica la causa dell'errore. I codici di errore possibili sono i seguenti:
 
 
 
 | Codice restituito                                                                                             | Descrizione                                                                                       |
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| <dl> <dt>**E \_ NOinterface**</dt> </dl>           | Non è stato possibile aggiungere il filtro [**grabber di esempio**](sample-grabber-filter.md) al grafo.<br/> |
-| <dl> <dt>**E \_ non riescono**</dt> </dl>                  | Esito negativo.<br/>                                                                               |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl>           | Memoria insufficiente.<br/>                                                                   |
-| <dl> <dt>**E \_ imprevisto**</dt> </dl>            | Errore imprevisto.<br/>                                                                      |
-| <dl> <dt>**STG \_ E \_ AccessDenied**</dt> </dl>     | Impossibile sovrascrivere il file.<br/>                                                                 |
+| <dl> <dt>**E \_ NOINTERFACE**</dt> </dl>           | Impossibile aggiungere il [**filtro Sample Grabber**](sample-grabber-filter.md) al grafico.<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>                  | Esito negativo.<br/>                                                                               |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>           | Memoria insufficiente.<br/>                                                                   |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl>            | Errore imprevisto.<br/>                                                                      |
+| <dl> <dt>**STG \_ E \_ ACCESSDENIED**</dt> </dl>     | Impossibile sovrascrivere il file.<br/>                                                                 |
 | <dl> <dt>**VFW \_ E \_ INVALIDMEDIATYPE**</dt> </dl> | Tipo di supporto non valido.<br/>                                                                    |
 
 
@@ -97,17 +97,17 @@ Restituisce \_ OK. l'operazione è riuscita. In caso contrario, restituisce un v
 
 ## <a name="remarks"></a>Commenti
 
-Prima di chiamare questo metodo, impostare il nome e il flusso del file chiamando [**IMediaDet::p UT \_ filename**](imediadet-put-filename.md) e [**IMediaDet::p UT \_ CurrentStream**](imediadet-put-currentstream.md).
+Prima di chiamare questo metodo, impostare il nome file e il flusso chiamando [**IMediaDet::p ut \_ Filename**](imediadet-put-filename.md) e [**IMediaDet::p ut \_ CurrentStream.**](imediadet-put-currentstream.md)
 
-Questo metodo inserisce il rilevatore multimediale in modalità di cattura bitmap. Una volta che questo metodo è stato chiamato, i vari metodi di informazioni sui flussi in **IMediaDet** non funzionano, a meno che non si crei una nuova istanza del rilevamento multimediale.
+Questo metodo imposta il rilevatore multimediale in modalità di cattura bitmap. Dopo aver chiamato questo metodo, i vari metodi di informazioni di flusso in **IMediaDet** non funzionano, a meno che non si crei una nuova istanza del rilevatore multimediale.
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -117,8 +117,8 @@ Questo metodo inserisce il rilevatore multimediale in modalità di cattura bitma
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

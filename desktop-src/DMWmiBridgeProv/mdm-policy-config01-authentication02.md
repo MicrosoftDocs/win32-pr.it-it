@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Config01_Authentication02
-description: La \_ classe Authentication02 dei criteri MDM \_ Config01 \_ rappresenta i criteri di gestione dell'autenticazione disponibili.
+title: MDM_Policy_Config01_Authentication02 classe
+description: La classe MDM \_ Policy \_ Config01 \_ Authentication02 rappresenta i criteri di gestione dell'autenticazione disponibili.
 ms.assetid: 928e0b60-5533-45dc-90e6-be7d70210138
 keywords:
-- Classe MDM_Policy_Config01_Authentication02
-- Classe MDM_Policy_Config01_Authentication02, descritta
+- MDM_Policy_Config01_Authentication02 classe
+- MDM_Policy_Config01_Authentication02 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfab66a548f4a92c445f748aca1bb15758ac48c0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ed19a034776a03b8eb6bcc23100a00e643a3f20bc98c8de2d00071846bddfbab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118165537"
 ---
-# <a name="mdm_policy_config01_authentication02-class"></a>\_ \_ Classe Config01 Authentication02 di criteri \_ MDM
+# <a name="mdm_policy_config01_authentication02-class"></a>Classe \_ MDM Policy \_ Config01 \_ Authentication02
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La **classe \_ \_ \_ Authentication02 dei criteri MDM Config01** rappresenta i criteri di gestione dell'autenticazione disponibili.
+La **classe MDM Policy \_ \_ Config01 \_ Authentication02** rappresenta i criteri di gestione dell'autenticazione disponibili.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -49,13 +49,13 @@ class MDM_Policy_Config01_Authentication02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ Config01 \_ Authentication02 dei criteri MDM** ha questi tipi di membri:
+La **classe MDM Policy \_ \_ Config01 \_ Authentication02** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ Authentication02 dei criteri MDM Config01** ha queste proprietà.
+La **classe MDM Policy \_ \_ Config01 \_ Authentication02** ha queste proprietà.
 
 <dl> <dt>
 
@@ -65,7 +65,7 @@ La **classe \_ \_ \_ Authentication02 dei criteri MDM Config01** ha queste propr
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -76,7 +76,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -87,7 +87,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -98,7 +98,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -106,32 +106,32 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica il nome del nodo padre. Per questa classe la stringa è "Authentication".
+Identifica il nome del nodo padre. Per questa classe, la stringa è "Authentication".
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/Policy/Config"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/Policy/Config"
 
 </dd> </dl>
 
@@ -141,10 +141,10 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ DMMap MDM CIMv2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | DMMap \\ MDM CIMv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -153,7 +153,7 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 
 <dl> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

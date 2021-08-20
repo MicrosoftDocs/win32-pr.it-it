@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: edcc4b6a7f34c12be7013f2ae1e0b2e6d991a5d6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0bf61b8907e7089a22ba160e573c4ca1372b4f1aee4f8a48d45965c7556d4b76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118093685"
 ---
 # <a name="id3dxtextureshadergetconstant-method"></a>Metodo ID3DXTextureShader::GetConstant
 
@@ -46,7 +46,7 @@ D3DXHANDLE GetConstant(
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Handle [per](handles.md) la struttura dei dati padre. Se la costante è un parametro di primo livello (non è presente alcuna struttura di dati padre), usare **NULL.**
+Handle [per](handles.md) la struttura dei dati padre. Se la costante è un parametro di primo livello (non esiste una struttura di dati padre), usare **NULL.**
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Indice in base zero della costante.
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Restituisce un identificatore univoco per la costante.
+Restituisce un identificatore univoco alla costante.
 
 ## <a name="remarks"></a>Commenti
 

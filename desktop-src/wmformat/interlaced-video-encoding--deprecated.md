@@ -1,6 +1,6 @@
 ---
 title: Codifica video interlacciata (Windows Media Format 11 SDK)
-description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec video e audio multimediale e API DSP). | Codifica video interlacciata (Windows Media Format 11 SDK)
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec audio e video multimediali e DSP). | Codifica video interlacciata (Windows Media Format 11 SDK)
 ms.assetid: f9015e77-02b1-494f-af54-e27901511236
 keywords:
 - Formato multimediale Windows per la codifica video interlacciata
@@ -21,7 +21,7 @@ ms.locfileid: "118433650"
 ---
 # <a name="interlaced-video-encoding-windows-media-format-11-sdk"></a>Codifica video interlacciata (Windows Media Format 11 SDK)
 
-Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e API DSP).
 
  
 

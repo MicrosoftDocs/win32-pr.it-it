@@ -1,29 +1,29 @@
 ---
-description: Creazione del grafico di filtro
+description: Compilazione del filtro Graph
 ms.assetid: 7e8ad125-4f1c-46dc-8de2-7de499edab24
-title: Creazione del grafico di filtro
+title: Compilazione del filtro Graph
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57904c6396569d5e50817bf052f9be4ba56b010b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8ce45db92d6a8ff3701611723e5326b2e8192d1018454f1558494856ae57ba14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104482541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118159293"
 ---
-# <a name="building-the-filter-graph"></a>Creazione del grafico di filtro
+# <a name="building-the-filter-graph"></a>Compilazione del filtro Graph
 
-Questo articolo [descrive i](the-filter-graph-and-its-components.md) blocchi predefiniti di base di un grafico filtro DirectShow. In questa sezione viene esaminato il modo in cui questi blocchi predefiniti vengono creati e connessi insieme in modo che possano iniziare a elaborare i dati. Questa sezione contiene i seguenti argomenti:
+[L'articolo The Filter Graph e i relativi componenti](the-filter-graph-and-its-components.md) descrivono i blocchi predefiniti di base di un DirectShow di filtro. Questa sezione esamina il modo in cui questi blocchi predefiniti vengono creati e connessi insieme in modo che possano iniziare a elaborare i dati. Questa sezione contiene i seguenti argomenti:
 
--   [Componenti per la creazione di grafici](graph-building-components.md)
--   [Panoramica della creazione di grafici](overview-of-graph-building.md)
--   [Connessione intelligente](intelligent-connect.md)
+-   [Graph componenti di compilazione](graph-building-components.md)
+-   [Panoramica della Graph compilazione](overview-of-graph-building.md)
+-   [Gestione Connessione](intelligent-connect.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Informazioni su DirectShow](about-directshow.md)
+[Informazioni DirectShow](about-directshow.md)
 </dt> </dl>
 
  

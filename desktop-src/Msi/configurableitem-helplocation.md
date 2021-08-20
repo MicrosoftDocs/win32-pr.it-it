@@ -1,7 +1,7 @@
 ---
-description: La proprietà HelpLocation restituisce il valore dalla colonna HelpLocation della tabella ModuleConfiguration.
+description: La proprietà HelpLocation restituisce il valore della colonna HelpLocation della tabella ModuleConfiguration.
 ms.assetid: fe011188-c831-4fbd-b2dd-1ad4c08451ed
-title: Proprietà ConfigurableItem. HelpLocation (Mergemod. h)
+title: Proprietà ConfigurableItem.HelpLocation (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 90e43b0d8bcae05273fa7093e3df570b10b124cb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e34f02f8d31e4ae37adff63ac56ba7206097c956c58fe02beba40b4d9bb47f91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118144017"
 ---
-# <a name="configurableitemhelplocation-property"></a>Proprietà ConfigurableItem. HelpLocation
+# <a name="configurableitemhelplocation-property"></a>ConfigurableItem.HelpLocation - proprietà
 
-La proprietà **HelpLocation** restituisce il valore dalla colonna HelpLocation della [tabella ModuleConfiguration](moduleconfiguration-table.md).
+La **proprietà HelpLocation** restituisce il valore della colonna HelpLocation della [tabella ModuleConfiguration](moduleconfiguration-table.md).
 
 Questa proprietà è di sola lettura.
 
@@ -40,7 +40,7 @@ propVal = ConfigurableItem.HelpLocation
 
 ## <a name="c"></a>C++
 
-Vedere [**ottenere \_**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_helplocation) la funzione HelpLocation.
+Vedere [**la funzione get \_ HelpLocation.**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_helplocation)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,8 +48,8 @@ Vedere [**ottenere \_**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigura
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | Mergemod.dll 2,0 o versione successiva<br/>                                                    |
-| Intestazione<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versione<br/> | Mergemod.dll 2.0 o versione successiva<br/>                                                    |
+| Intestazione<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

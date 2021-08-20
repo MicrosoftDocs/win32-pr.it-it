@@ -1,20 +1,20 @@
 ---
-title: Funzioni di base dell'API shell client
-description: La tabella seguente fornisce una panoramica delle funzioni principali per l'API della shell client di Gestione remota Windows (WinRM).
+title: Funzioni principali dell'API della shell client
+description: La tabella seguente offre una panoramica delle funzioni di base per l Windows aPI della shell client di gestione remota (WinRM).
 ms.assetid: cd0e6b55-03e8-4ebe-aea8-35d268cdb18c
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ebfe3390b3808cd0abbe9d6bf4ea83ccb0a92338
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f36a081723af60acf08aa9b4123cc124c2635371bfb50053da457289343ceec5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118113344"
 ---
-# <a name="client-shell-api-core-functions"></a>Funzioni di base dell'API shell client
+# <a name="client-shell-api-core-functions"></a>Funzioni principali dell'API della shell client
 
-La tabella seguente fornisce una panoramica delle funzioni principali per l'API della shell client di Gestione remota Windows (WinRM).
+La tabella seguente offre una panoramica delle funzioni di base per l Windows aPI della shell client di gestione remota (WinRM).
 
 
 
@@ -22,31 +22,31 @@ La tabella seguente fornisce una panoramica delle funzioni principali per l'API 
 |------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**WSManCloseCommand**](/windows/desktop/api/Wsman/nf-wsman-wsmanclosecommand)                   | Chiude un comando.                                                                                                                                                               |
 | [**WSManCloseOperation**](/windows/desktop/api/Wsman/nf-wsman-wsmancloseoperation)               | Chiude un'operazione.                                                                                                                                                            |
-| [**WSManCloseSession**](/windows/desktop/api/Wsman/nf-wsman-wsmanclosesession)                   | Chiude una sessione WinRM.                                                                                                                                                         |
-| [**WSManCloseShell**](/windows/desktop/api/Wsman/nf-wsman-wsmancloseshell)                       | Chiude un oggetto Shell.                                                                                                                                                          |
-| [**WSManConnectShell**](/windows/desktop/api/Wsman/nf-wsman-wsmanconnectshell)                   | Consente di connettersi a una sessione del server esistente.                                                                                                                                         |
-| [**WSManConnectShellCommand**](/windows/desktop/api/Wsman/nf-wsman-wsmanconnectshellcommand)     | Stabilisce la connessione a un comando esistente in esecuzione in una shell.                                                                                                                             |
-| [**WSManCreateSession**](/windows/desktop/api/Wsman/nf-wsman-wsmancreatesession)                 | Crea una sessione WinRM.                                                                                                                                                        |
-| [**WSManCreateShell**](/windows/desktop/api/Wsman/nf-wsman-wsmancreateshell)                     | Crea un oggetto Shell.                                                                                                                                                         |
-| [**WSManCreateShellEx**](/windows/desktop/api/Wsman/nf-wsman-wsmancreateshellex)                 | Crea un oggetto Shell utilizzando la stessa funzionalità della funzione [**WSManCreateShell**](/windows/desktop/api/Wsman/nf-wsman-wsmancreateshell) , con l'aggiunta di un ID di shell specificato dal client.          |
-| [**WSManDeinitialize**](/windows/desktop/api/Wsman/nf-wsman-wsmandeinitialize)                   | Deinizializza lo stack client WinRM.                                                                                                                                           |
-| [**WSManDisconnectShell**](/windows/desktop/api/Wsman/nf-wsman-wsmandisconnectshell)             | Disconnette la connessione di rete di una shell attiva e i comandi associati.                                                                                              |
+| [**WSManCloseSession**](/windows/desktop/api/Wsman/nf-wsman-wsmanclosesession)                   | Chiude una sessione di Gestione remota Windows.                                                                                                                                                         |
+| [**WSManCloseShell**](/windows/desktop/api/Wsman/nf-wsman-wsmancloseshell)                       | Chiude un oggetto shell.                                                                                                                                                          |
+| [**WSManConnectShell**](/windows/desktop/api/Wsman/nf-wsman-wsmanconnectshell)                   | Si connette a una sessione del server esistente.                                                                                                                                         |
+| [**WSManConnectShellCommand**](/windows/desktop/api/Wsman/nf-wsman-wsmanconnectshellcommand)     | Si connette a un comando esistente in esecuzione in una shell.                                                                                                                             |
+| [**WSManCreateSession**](/windows/desktop/api/Wsman/nf-wsman-wsmancreatesession)                 | Crea una sessione winrm.                                                                                                                                                        |
+| [**WSManCreateShell**](/windows/desktop/api/Wsman/nf-wsman-wsmancreateshell)                     | Crea un oggetto shell.                                                                                                                                                         |
+| [**WSManCreateShellEx**](/windows/desktop/api/Wsman/nf-wsman-wsmancreateshellex)                 | Crea un oggetto shell usando la stessa funzionalità della [**funzione WSManCreateShell,**](/windows/desktop/api/Wsman/nf-wsman-wsmancreateshell) con l'aggiunta di un ID shell specificato dal client.          |
+| [**WSManDeinitialize**](/windows/desktop/api/Wsman/nf-wsman-wsmandeinitialize)                   | Deinitializes the WinRM client stack.                                                                                                                                           |
+| [**WSManDisconnectShell**](/windows/desktop/api/Wsman/nf-wsman-wsmandisconnectshell)             | Disconnette la connessione di rete di una shell attiva e dei comandi associati.                                                                                              |
 | [**WSManInitialize**](/windows/desktop/api/Wsman/nf-wsman-wsmaninitialize)                       | Inizializza WinRM.                                                                                                                                                              |
 | [**WSManReceiveShellOutput**](/windows/desktop/api/Wsman/nf-wsman-wsmanreceiveshelloutput)       | Riceve l'output della shell.                                                                                                                                                          |
-| [**WSManReconnectShell**](/windows/desktop/api/Wsman/nf-wsman-wsmanreconnectshell)               | Riconnette una sessione della shell precedentemente disconnessa. Per riconnettere i comandi associati della sessione della shell, usare [**WSManReconnectShellCommand**](/windows/desktop/api/Wsman/nf-wsman-wsmanreconnectshellcommand). |
+| [**WSManReconnectShell**](/windows/desktop/api/Wsman/nf-wsman-wsmanreconnectshell)               | Riconnette una sessione della shell disconnessa in precedenza. Per riconnettere i comandi associati della sessione shell, usare [**WSManReconnectShellCommand**](/windows/desktop/api/Wsman/nf-wsman-wsmanreconnectshellcommand). |
 | [**WSManReconnectShellCommand**](/windows/desktop/api/Wsman/nf-wsman-wsmanreconnectshellcommand) | Riconnette un comando precedentemente disconnesso.                                                                                                                                   |
 | [**WSManRunShellCommand**](/windows/desktop/api/Wsman/nf-wsman-wsmanrunshellcommand)             | Esegue un comando della shell.                                                                                                                                                           |
-| [**WSManRunShellCommandEx**](/windows/desktop/api/Wsman/nf-wsman-wsmanrunshellcommandex)         | Fornisce la stessa funzionalità della funzione [**WSManRunShellCommand**](/windows/desktop/api/Wsman/nf-wsman-wsmanrunshellcommand) , con l'aggiunta di un'opzione di ID di comando.                                 |
+| [**WSManRunShellCommandEx**](/windows/desktop/api/Wsman/nf-wsman-wsmanrunshellcommandex)         | Fornisce la stessa funzionalità della funzione [**WSManRunShellCommand,**](/windows/desktop/api/Wsman/nf-wsman-wsmanrunshellcommand) con l'aggiunta di un'opzione di ID di comando.                                 |
 | [**WSManSendShellInput**](/windows/desktop/api/Wsman/nf-wsman-wsmansendshellinput)               | Invia l'input a una shell.                                                                                                                                                         |
 | [**WSManSignalShell**](/windows/desktop/api/Wsman/nf-wsman-wsmansignalshell)                     | Segnala una shell.                                                                                                                                                                |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

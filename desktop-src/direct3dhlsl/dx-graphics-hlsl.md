@@ -1,6 +1,6 @@
 ---
-title: High-Level Shader Language (HLSL)
-description: HLSL è il linguaggio shader di alto livello di tipo C usato con shader programmabili in DirectX.
+title: Linguaggio shader di alto livello (HLSL)
+description: HLSL è il linguaggio shader di alto livello simile a C che si usa con shader programmabili in DirectX.
 ms.assetid: 09cdd8d6-0cf5-4f7e-b480-f748d2fa9ca9
 ms.topic: article
 ms.date: 01/11/2021
@@ -10,40 +10,40 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.custom: contperf-fy21q3
-ms.openlocfilehash: c0876cda302d4c6215b640c210e880795273cd6c
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 9f518102b7b3305103ed85231a791c542418a04c
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104981042"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812897"
 ---
-# <a name="high-level-shader-language-hlsl"></a>High-Level Shader Language (HLSL)
+# <a name="high-level-shader-language-hlsl"></a>Linguaggio shader di alto livello (HLSL)
 
-HLSL è il linguaggio shader di alto livello di tipo C usato con shader programmabili in DirectX.
+HLSL è il linguaggio shader di alto livello simile a C che si usa con shader programmabili in DirectX.
 
-Ad esempio, è possibile usare HLSL per scrivere un [vertex shader](../direct3d11/vertex-shader-stage.md)o un [pixel shader](../direct3d11/pixel-shader-stage.md)e usare gli shader nell'implementazione del renderer nell'applicazione [Direct3D](../direct3d12/directx-12-programming-guide.md) .
+Ad esempio, è possibile usare HLSL per scrivere un [vertex shader](../direct3d11/vertex-shader-stage.md)o [un pixel shader](../direct3d11/pixel-shader-stage.md)e usare tali shader nell'implementazione del renderer nell'applicazione [Direct3D.](../direct3d12/directx-12-programming-guide.md)
 
-In alternativa, è possibile usare HLSL per scrivere un compute shader, ad esempio per implementare una simulazione fisica. Tuttavia, se, ad esempio, si è inclini a scrivere un proprio operatore di convoluzione (per l'elaborazione di immagini) come HLSL in un compute shader, si otterranno prestazioni migliori in tale scenario se si usa [Direct Machine Learning (DirectML)](../direct3d12/dml.md) .
+Oppure è possibile usare HLSL per scrivere un compute shader, ad esempio per implementare una simulazione fisica. Se, ad esempio, si è in grado di scrivere un operatore di convoluzione personalizzato (per l'elaborazione di immagini) come HLSL in un compute shader, si otterrà prestazioni migliori in questo scenario se si usa [Direct Machine Learning (DirectML).](/windows/ai/directml/dml)
 
-HLSL è stato creato (a partire da DirectX 9) per configurare la [pipeline](../direct3d11/overviews-direct3d-11-graphics-pipeline.md)3D programmabile. È possibile programmare l'intera pipeline con le istruzioni HLSL.
+HLSL è stato creato (a partire da DirectX 9) per configurare la pipeline 3D [programmabile.](../direct3d11/overviews-direct3d-11-graphics-pipeline.md) È possibile programmare l'intera pipeline con istruzioni HLSL.
 
-## <a name="where-to-go-next"></a>Dove andare avanti
+## <a name="where-to-go-next"></a>Dove andare dopo
 
-* [Guida per programmatori per HLSL](./dx-graphics-hlsl-pguide.md)
-* [Riferimento per HLSL](./dx-graphics-hlsl-reference.md)
+* [Guida alla programmazione per HLSL](./dx-graphics-hlsl-pguide.md)
+* [Informazioni di riferimento per HLSL](./dx-graphics-hlsl-reference.md)
 
-### <a name="programming-guide-for-hlsl"></a>Guida per programmatori per HLSL
+### <a name="programming-guide-for-hlsl"></a>Guida alla programmazione per HLSL
 
-Per un'introduzione concettuale a HLSL, vedere la [Guida alla programmazione di HLSL](./dx-graphics-hlsl-pguide.md).
+Per un'introduzione concettuale a HLSL, vedere la Guida [alla programmazione per HLSL.](./dx-graphics-hlsl-pguide.md)
 
-Nella Guida alla programmazione vengono illustrati i diversi tipi di fasi dello shader e viene illustrato come creare, compilare, ottimizzare, associare e collegare shader.
+La guida alla programmazione illustra i diversi tipi di fasi dello shader e come creare, compilare, ottimizzare, associare e collegare gli shader.
 
-Sono inoltre disponibili panoramiche e note sulla versione per le generazioni successive di versioni del modello shader rilasciate, tornando a HLSL Shader Model 5 (informazioni su).
+Sono disponibili anche panoramiche e note sulla versione relative alle generazioni successive di versione del modello shader rilasciate, fino al modello di shader HLSL 5.
 
-### <a name="reference-for-hlsl"></a>Riferimento per HLSL
+### <a name="reference-for-hlsl"></a>Informazioni di riferimento per HLSL
 
-Per la documentazione di riferimento di HLSL, vedere il [riferimento per HLSL](./dx-graphics-hlsl-reference.md).
+Per la documentazione di riferimento di HLSL, vedere [Informazioni di riferimento per HLSL.](./dx-graphics-hlsl-reference.md)
 
-La sezione di riferimento include un elenco completo della sintassi del linguaggio e delle funzioni intrinseche integrate in HLSL per semplificare i requisiti di codifica.
+La sezione di riferimento include un elenco completo della sintassi del linguaggio e delle funzioni intrinseche incorporate in HLSL per semplificare i requisiti di codifica.
 
-È disponibile anche una discussione sui modelli di shader e i profili e il contenuto di riferimento del modello shader che torna a HLSL Shader Model 1. Sono disponibili anche le istruzioni per gli assembly, lo strumento D3DCompiler e informazioni sugli errori e gli avvisi che possono essere restituiti da uno shader.
+È anche possibile trovare una descrizione dei modelli di shader rispetto ai profili e del contenuto di riferimento del modello shader fino al modello di shader HLSL 1. Sono disponibili anche contenuti relativi alle istruzioni per l'assembly, allo strumento D3DCompiler e alle informazioni sugli errori e gli avvisi che possono essere restituiti da uno shader.

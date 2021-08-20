@@ -1,20 +1,20 @@
 ---
-title: Acquisizione della tabella delle interfacce MIB II
+title: Recupero della tabella delle interfacce MIB II
 description: Il codice seguente usa MprAdminMIBEntryGet per ottenere la tabella delle interfacce MIB II dal computer locale.
 ms.assetid: 76152cd8-f285-42b3-8ee5-bbab1d14b99f
 keywords:
 - MIB, recupero delle interfacce
-- Acquisizione delle interfacce MIB
+- Recupero delle interfacce MIB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05eb1bb10822ce7dc770e58c5aed36167340a9be
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d7f1fba73882ba81c17aeaf560b134358c9593e579babb6cf4d26dda8d968037
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103963384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074021"
 ---
-# <a name="obtaining-the-mib-ii-interfaces-table"></a>Acquisizione della tabella delle interfacce MIB II
+# <a name="obtaining-the-mib-ii-interfaces-table"></a>Recupero della tabella delle interfacce MIB II
 
 Il codice seguente usa [**MprAdminMIBEntryGet**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminmibentryget) per ottenere la tabella delle interfacce MIB II dal computer locale.
 
@@ -116,15 +116,15 @@ int __cdecl main(){
 
 <dl> <dt>
 
-[**\_informazioni opache MIB \_**](/windows/desktop/api/iprtrmib/ns-iprtrmib-mib_opaque_info)
+[**INFORMAZIONI \_ OPAQUE MIB \_**](/windows/desktop/api/iprtrmib/ns-iprtrmib-mib_opaque_info)
 </dt> <dt>
 
-[**\_query opaca MIB \_**](/windows/desktop/api/iprtrmib/ns-iprtrmib-mib_opaque_query)
+[**MIB \_ OPAQUE \_ QUERY**](/windows/desktop/api/iprtrmib/ns-iprtrmib-mib_opaque_query)
 </dt> <dt>
 
 [**MprAdminMIBEntryGet**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminmibentryget)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

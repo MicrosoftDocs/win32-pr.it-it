@@ -1,11 +1,11 @@
 ---
-title: Metodo ISoftKbd SetSoftKeyboardColors (Softkbdc. h)
+title: Metodo ISoftKbd SetSoftKeyboardColors (Softkbdc.h)
 description: Il metodo ISoftKbd SetSoftKeyboardColors imposta il colore della tastiera soft per il tipo di colore specificato.
 ms.assetid: 1abbff35-a5ef-4119-9367-60b6e0961c59
 keywords:
-- Framework servizi di testo Metodo SetSoftKeyboardColors
-- Framework dei servizi di testo del metodo SetSoftKeyboardColors, interfaccia ISoftKbd
-- ISoftKbd Interface Text Services Framework, metodo SetSoftKeyboardColors
+- Metodo SetSoftKeyboardColors Framework servizi di testo
+- Metodo SetSoftKeyboardColors Framework servizi di testo, interfaccia ISoftKbd
+- Interfaccia ISoftKbd Framework servizi di testo metodo SetSoftKeyboardColors
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38357331db2440c35ca7557d08c97729fde9c9f0
-ms.sourcegitcommit: d6bf2018c588c9782e1eed21b3cdea3523ec6955
+ms.openlocfilehash: b572d62895a4f5df503df3ed78bfcf931af331ded25596267f0dd5b4286a4c4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "106320173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118877372"
 ---
-# <a name="isoftkbdsetsoftkeyboardcolors-method"></a>Metodo ISoftKbd:: SetSoftKeyboardColors
+# <a name="isoftkbdsetsoftkeyboardcolors-method"></a>Metodo ISoftKbd::SetSoftKeyboardColors
 
-Il metodo **ISoftKbd:: SetSoftKeyboardColors** imposta il colore della tastiera soft per il tipo di colore specificato.
+Il **metodo ISoftKbd::SetSoftKeyboardColors** imposta il colore della tastiera soft per il tipo di colore specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,14 +43,14 @@ HRESULT SetSoftKeyboardColors(
 
 <dl> <dt>
 
-*ColorType* \[ in\]
+*colorType* \[ Pollici\]
 </dt> <dd>
 
-Valore che specifica il tipo di colore per la tastiera soft. I valori possibili sono definiti per l'enumerazione [**ColorType**](/windows/win32/api/icm/ne-icm-colortype) .
+Valore che specifica il tipo di colore per la tastiera soft. I valori possibili sono definiti per [**l'enumerazione COLORTYPE.**](/windows/win32/api/icm/ne-icm-colortype)
 
 </dd> <dt>
 
-*Colore* \[ in\]
+*Colore* \[ Pollici\]
 </dt> <dd>
 
 Valore [**COLORREF**](/windows/desktop/gdi/colorref) a 32 bit che specifica un colore RGB.
@@ -65,7 +65,7 @@ Questo metodo può restituire uno di questi valori.
 
 | Valore                                                                                        | Descrizione                                  |
 |----------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Il metodo è stato eseguito correttamente.<br/>        |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Il metodo è stato eseguito correttamente.<br/>        |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Uno dei parametri non è valido.<br/> |
 
 
@@ -80,9 +80,9 @@ Questo metodo può restituire uno di questi valori.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                             |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
-| Componente ridistribuibile<br/>          | TSF 1,0 su Windows 2000 Professional<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
-| IDL<br/>                      | <dl> <dt>Softkbd. idl</dt> </dl> |
+| Componente ridistribuibile<br/>          | TSF 1.0 in Windows 2000 Professional<br/>                                        |
+| Intestazione<br/>                   | <dl> <dt>Softkbdc.h</dt> </dl>  |
+| Idl<br/>                      | <dl> <dt>Softkbd.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Softkbd.dll</dt> </dl> |
 
 

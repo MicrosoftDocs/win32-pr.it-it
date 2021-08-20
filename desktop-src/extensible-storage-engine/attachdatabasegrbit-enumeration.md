@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione AttachDatabaseGrbit'
+description: Altre informazioni sull'enumerazione AttachDatabaseGrbit
 title: Enumerazione AttachDatabaseGrbit
 TOCTitle: AttachDatabaseGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.AttachDatabaseGrbit
@@ -30,12 +30,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 81525e97f1b6266ba15baab50168404566bd7bcd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ed3d25afcd9d53284a684e9af131f3c7a5c75ac6d9b52f5e1b7345e8adde6fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118084390"
 ---
 # <a name="attachdatabasegrbit-enumeration"></a>Enumerazione AttachDatabaseGrbit
 
@@ -43,8 +43,8 @@ Opzioni per JetAttachDatabase.
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -80,12 +80,12 @@ public enum AttachDatabaseGrbit
 <tr class="even">
 <td></td>
 <td>ReadOnly</td>
-<td>Impedisce le modifiche al database.</td>
+<td>Impedisce modifiche al database.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DeleteCorruptIndexes</td>
-<td>Se JET_paramEnableIndexChecking è stato impostato, verranno eliminati tutti gli indici sui dati Unicode.</td>
+<td>Se JET_paramEnableIndexChecking è stato impostato, tutti gli indici sui dati Unicode verranno eliminati.</td>
 </tr>
 </tbody>
 </table>
@@ -95,4 +95,4 @@ public enum AttachDatabaseGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

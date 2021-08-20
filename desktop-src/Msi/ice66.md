@@ -1,25 +1,25 @@
 ---
-description: ICE66 utilizza le tabelle nel database per determinare lo schema che deve essere utilizzato dal database.
+description: ICE66 usa le tabelle del database per determinare lo schema che il database deve usare.
 ms.assetid: 7cf929a0-2c4c-40ca-a902-dfd9dcd203b8
 title: ICE66
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea1436ad791941c96c0484a02f40a60fc9939e73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 023450a451a412c47c21904ab96a13e4513c71f8327966dffa5b657b1b65bb65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787401"
 ---
 # <a name="ice66"></a>ICE66
 
-ICE66 utilizza le tabelle nel database per determinare lo schema che deve essere utilizzato dal database.
+ICE66 usa le tabelle del database per determinare lo schema che il database deve usare.
 
-Alcune funzionalità possono essere disponibili solo se il pacchetto viene installato in un sistema con una versione di Windows Installer corrente.
+Alcune funzionalità possono essere disponibili solo se il pacchetto è installato in un sistema con una versione Windows installer.
 
 ## <a name="result"></a>Risultato
 
-ICE66 pubblica un avviso se il database utilizza uno schema errato.
+ICE66 invia un avviso se il database usa lo schema errato.
 
 ## <a name="example"></a>Esempio
 
@@ -29,15 +29,15 @@ ICE66 segnala l'avviso seguente per l'esempio illustrato.
 WARNING: Complete functionality of the IsolatedComponents table is only available with Windows Installer versions 1.1 or greater. Your schema is 100.
 ```
 
-Questo avviso può essere ignorato se si desidera che il pacchetto venga installato utilizzando una versione di Windows Installer corrente. Se ad esempio si desidera che il pacchetto sia installabile solo nella versione 2,0 o successive, modificare lo schema del pacchetto (PID \_ PageCount) in 200.
+Questo avviso può essere ignorato se si vuole che il pacchetto sia installato usando una versione Windows installer. Ad esempio, se si vuole che il pacchetto sia installabile solo nella versione 2.0 o successiva, modificare lo schema del pacchetto (PID \_ PAGECOUNT) su 200.
 
 [Tabella IsolatedComponent](isolatedcomponent-table.md)
 
 
 
-| Componente \_ condiviso | \_Applicazione componente |
+| Componente \_ condiviso | Applicazione \_ componente |
 |-------------------|------------------------|
-| Component1        | Component2             |
+| Componente1        | Componente2             |
 
 
 
@@ -49,21 +49,21 @@ Questo avviso può essere ignorato se si desidera che il pacchetto venga install
 
 | PIDt           | Valore |
 |----------------|-------|
-| \_PageCount PID | 100   |
+| PID \_ PAGECOUNT | 100   |
 
 
 
  
 
-## <a name="table-used-during-execution"></a>Tabella utilizzata durante l'esecuzione:
+## <a name="table-used-during-execution"></a>Tabella usata durante l'esecuzione:
 
-[\_Tabella colonne](-columns-table.md)
+[\_Tabella Columns](-columns-table.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Riferimento ghiaccio](ice-reference.md)
+[Informazioni di riferimento su ICE](ice-reference.md)
 </dt> </dl>
 
  

@@ -1,36 +1,36 @@
 ---
-description: L'attributo Height specifica l'altezza del video di output in pixel.
+description: L'attributo height specifica l'altezza del video di output, in pixel.
 ms.assetid: 8dbae3e2-31bb-4ab0-bba8-b79061338ea4
-title: Attributo Height
+title: Attributo height
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2875a7b14dfa887f200baf07463a96ce27238e27
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b5036cd5e38ad4f90827c3ee8c79ebb677992b5ad4fdc038dca5eaccab7c3085
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104125340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564611"
 ---
-# <a name="height-attribute"></a>Attributo Height
+# <a name="height-attribute"></a>Attributo height
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-L' `height` attributo specifica l'altezza, in pixel, del video di output.
+`height`L'attributo specifica l'altezza del video di output, in pixel.
 
 ## <a name="possible-values"></a>Valori possibili
 
-Valore a virgola mobile. Il valore deve includere lo zero iniziali prima della posizione decimale. Ad esempio, 0,3, not. 3. Non usare più di sette cifre decimali.
+Valore a virgola mobile. Il valore deve includere lo zero iniziale prima della posizione decimale. Ad esempio, 0.3, non .3. Non usare più di sette cifre decimali.
 
 ## <a name="applies-to"></a>Si applica a
 
-[**gruppo**](group-element.md)
+[**Gruppo**](group-element.md)
 
 ## <a name="remarks"></a>Commenti
 
-Impostare questo attributo solo se l'attributo **Type** è `video` .
+Impostare questo attributo solo se **l'attributo di** tipo è `video` .
 
 ## <a name="see-also"></a>Vedi anche
 

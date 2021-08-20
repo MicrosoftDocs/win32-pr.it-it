@@ -1,6 +1,6 @@
 ---
 title: UAS-Compat attributo
-description: Indica se la sicurezza account manager le dimensioni dei dati per rendere compatibile Active Directory con il sistema di account utente LanManager.
+description: Indica se l'account manager di sicurezza implicherà dimensioni dei dati per rendere Active Directory compatibile con il sistema di account utente (UAS) LanManager.
 ms.assetid: 745e271e-28f4-4012-83a8-606d88de0221
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "118681540"
 ---
 # <a name="uas-compat-attribute"></a>UAS-Compat attributo
 
-Indica se la sicurezza account manager le dimensioni dei dati per rendere compatibile Active Directory con il sistema di account utente LanManager. Se questo valore è 0, non vengono applicati limiti. Se questo valore è 1, vengono applicati i limiti seguenti.
+Indica se l'account manager di sicurezza implicherà dimensioni dei dati per rendere Active Directory compatibile con il sistema di account utente (UAS) LanManager. Se questo valore è 0, non vengono applicati limiti. Se questo valore è 1, vengono applicati i limiti seguenti.
 
 
 
@@ -36,7 +36,7 @@ Indica se la sicurezza account manager le dimensioni dei dati per rendere compat
 | Commenti<br/>            | Da 0 a 48 caratteri<br/>  |
 | Home directory<br/>      | Da 0 a 256 caratteri<br/> |
 | Percorso script<br/>         | Da 0 a 256 caratteri<br/> |
-| Unità di tempo per settimana<br/> | 168 bit (21 byte)<br/> |
+| Unità di tempo alla settimana<br/> | 168 bit (21 byte)<br/> |
 
 
 
@@ -49,7 +49,7 @@ Indica se la sicurezza account manager le dimensioni dei dati per rendere compat
 | CN                | UAS-Compat                           |
 | Ldap-Display-Name | uASCompat                            |
 | Dimensione              | \-                                   |
-| Privilegio di aggiornamento  | Eseguita da un amministratore.       |
+| Aggiorna privilegio  | Eseguita da un amministratore.       |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.155               |
 | System-Id-Guid    | bf967a61-0de6-11d0-a285-00aa003049e2 |

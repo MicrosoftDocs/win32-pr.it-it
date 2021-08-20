@@ -1,41 +1,41 @@
 ---
-title: Digitare 1 negozi online
-description: Digitare 1 negozi online
+title: Tipo 1 Punti vendita online
+description: Tipo 1 Punti vendita online
 ms.assetid: 57478b75-1eb9-446f-b13f-aa98f83ffb7d
 keywords:
-- Windows Media Player Online Stores, digitare 1 Store online
-- negozi online, digitare 1 negozi online
-- digitare 1 Store online, informazioni
-- Windows Media Player, digitare 1 negozi online
+- Windows Media Player online, digitare 1 store online
+- online stores,type 1 online stores
+- type 1 online stores,about
+- Windows Media Player, digitare 1 negozio online
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cef0325549c0f5459e301a3ce5b26ad7eaa40c1a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b46823433217b2502ec2e9e8bbbf22cf2dc9a391b23a9d22dc81a48cfb3ddff5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104516012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118117508"
 ---
-# <a name="type-1-online-stores"></a>Digitare 1 negozi online
+# <a name="type-1-online-stores"></a>Tipo 1 Punti vendita online
 
 > [!Note]  
-> In questa sezione viene descritta la funzionalità progettata per l'utilizzo da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di un negozio online non è supportato.
 
- 
+ 
 
-Windows Media Player 11 supporta gli archivi online di tipo 1 e di tipo 2. Gli archivi di tipo 1 sono più profondamente integrati nell'interfaccia utente del lettore rispetto ai negozi di tipo 2. Questa documentazione, applicabile solo ai negozi di tipo 1, è divisa nelle sezioni seguenti.
+Windows Media Player 11 supporta i negozi online di tipo 1 e 2. I negozi di tipo 1 sono più integrati nell'interfaccia utente del lettore rispetto ai negozi di tipo 2. Questa documentazione, che si applica solo ai negozi di tipo 1, è suddivisa nelle sezioni seguenti.
 
 
 
 | Sezione                                                                                      | Descrizione                                                                                                                                      |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Informazioni sugli archivi online di tipo 1](about-type-1-online-stores.md)                                 | Vengono illustrate le principali funzionalità dei negozi online di tipo 1, inclusi i cataloghi scaricabili, l'integrazione della libreria e le pagine di individuazione.               |
-| [Guida per programmatori per i negozi di tipo 1 online](programming-guide-for-type-1-online-stores.md) | Vengono fornite informazioni aggiuntive sulla creazione di un plug-in di archiviazione di tipo 1 online.                                                                                     |
-| [Riferimento per negozi online di tipo 1](reference-for-type-1-online-stores.md)                 | Fornisce un riferimento dettagliato per le interfacce, gli oggetti, le enumerazioni, le strutture, le costanti e le voci del registro di sistema utilizzate dagli archivi online di tipo 1. |
+| [Informazioni sui negozi online di tipo 1](about-type-1-online-stores.md)                                 | Vengono illustrate le principali funzionalità degli store online di tipo 1, inclusi i cataloghi scaricabili, l'integrazione delle librerie e le pagine di individuazione.               |
+| [Guida di programmazione per gli store online di tipo 1](programming-guide-for-type-1-online-stores.md) | Fornisce indicazioni sulla creazione di un plug-in del negozio online di tipo 1.                                                                                     |
+| [Riferimento per negozi online di tipo 1](reference-for-type-1-online-stores.md)                 | Fornisce informazioni di riferimento dettagliate su interfacce, oggetti, enumerazioni, strutture, costanti e voci del Registro di sistema utilizzate dai negozi online di tipo 1. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -44,12 +44,12 @@ Windows Media Player 11 supporta gli archivi online di tipo 1 e di tipo 2. Gli a
 [**Informazioni comuni ai negozi online di tipo 1 e di tipo 2**](information-common-to-type-1-and-type-2-online-stores.md)
 </dt> <dt>
 
-[**Windows Media Player Online Stores**](windows-media-player-online-stores.md)
+[**Windows Media Player Negozi online**](windows-media-player-online-stores.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

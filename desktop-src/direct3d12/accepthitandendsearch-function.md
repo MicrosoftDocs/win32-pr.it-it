@@ -1,7 +1,7 @@
 ---
-description: Usato in un qualsiasi hit shader per confermare l'hit corrente e quindi arrestare la ricerca di altri riscontri per il raggio.
+description: Usato in un hit shader per eseguire il commit dell'hit corrente e quindi interrompere la ricerca di altri riscontri per il raggio.
 ms.assetid: ''
-title: AcceptHitAndEndSearch (funzione)
+title: Funzione AcceptHitAndEndSearch
 ms.date: 05/31/2018
 ms.localizationpriority: low
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 - AcceptHitAndEndSearch
 api_type:
 - NA
-ms.openlocfilehash: 25bbac15a26beb535a91155cdd4c411c3c669e0d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 35073145a9b9a4788c6aed3bbae0633f0a9f5b85
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304925"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121813040"
 ---
-# <a name="accepthitandendsearch-function"></a>AcceptHitAndEndSearch (funzione)
+# <a name="accepthitandendsearch-function"></a>Funzione AcceptHitAndEndSearch
 
-Usato in un [qualsiasi hit shader](any-hit-shader.md) per confermare l'hit corrente e quindi arrestare la ricerca di altri riscontri per il raggio. Se è in esecuzione un'intersezione dello shader, l'esecuzione viene arrestata.  L'esecuzione passa all' [hit shader più vicino](closest-hit-shader.md), se abilitato, con il riscontro più vicino registrato fino a questo punto.
+Usato in un [hit shader per](any-hit-shader.md) eseguire il commit dell'hit corrente e quindi interrompere la ricerca di altri riscontri per il raggio. Se è in esecuzione uno shader di intersezione, l'esecuzione viene arrestata.  L'esecuzione passa [all'hit shader più vicino,](closest-hit-shader.md)se abilitato, con l'hit più vicino registrato fino a questo momento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,26 +38,15 @@ void AcceptHitAndEndSearch();
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione può essere chiamata dai seguenti tipi di shader raytracing:
+Questa funzione può essere chiamata dai tipi di shader raytracing seguenti:
 
-* [**Richiamabile shader**](callable-shader.md)
+* [**Shader chiamabile**](callable-shader.md)
 * [**Hit shader più vicino**](closest-hit-shader.md)
-* [**Lo shader manca**](miss-shader.md)
-* [**Shader di generazione del Ray**](ray-generation-shader.md)
+* [**Miss Shader**](miss-shader.md)
+* [**Ray Generation Shader**](ray-generation-shader.md)
 
 
 
 ## <a name="see-also"></a>Vedi anche
 
-<dl> <dt>
-
-[Guida di riferimento a Direct3D 12 raytracing HLSL](direct3d-12-raytracing-hlsl-reference.md)
-</dt> </dl>
-
- 
-
- 
-
-
-
-
+* [Informazioni di riferimento su HLSL di raytracing Direct3D 12](direct3d-12-raytracing-hlsl-reference.md)

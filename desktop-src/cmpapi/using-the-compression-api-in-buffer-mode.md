@@ -4,24 +4,24 @@ ms.assetid: 0A062E5D-E5FA-4098-B76E-E136FC74D853
 title: Uso dell'API di compressione in modalità buffer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 676a5bea1ea4fa673bbf9a8fc2caf9fe84d9bc1e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 79a63b8a7dabc7b61c85abb192f855f094a6e271a99997b9e98b849614d53527
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048939"
 ---
 # <a name="using-the-compression-api-in-buffer-mode"></a>Uso dell'API di compressione in modalità buffer
 
-Gli esempi seguenti illustrano l'uso dell'API di compressione in modalità buffer. La modalità buffer è stata sviluppata per semplicità d'uso e suddivide automaticamente il buffer di input in blocchi di dimensioni appropriate per l'algoritmo di compressione selezionato. La modalità buffer formatta e archivia automaticamente le dimensioni del buffer non compresso nel buffer compresso in cui è disponibile per il decompressore. La dimensione del buffer compresso non viene salvata automaticamente e l'applicazione deve salvare questa operazione per la decompressione. Non includere il flag **compress \_ RAW** quando si chiama [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) o [**CREATEDECOMPRESSOR**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor) se si vuole usare l'API di compressione in modalità buffer.
+Gli esempi seguenti illustrano l'uso dell'API di compressione in modalità buffer. La modalità buffer è stata sviluppata per semplificare l'uso e suddivide automaticamente il buffer di input in blocchi di dimensioni appropriate per l'algoritmo di compressione selezionato. La modalità buffer formatta e archivia automaticamente le dimensioni del buffer non compresso nel buffer compresso in cui è disponibile per il decompressore. Le dimensioni del buffer compresso non vengono salvate automaticamente e l'applicazione deve salvarlo per la decompressione. Non includere il flag **COMPRESS \_ RAW** quando si chiama [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) o [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor) se si vuole usare l'API di compressione in modalità buffer.
 
-La modalità buffer è consigliata per la maggior parte dei casi. Per altre informazioni su come usare la modalità blocco, vedere [uso dell'API di compressione in modalità blocco](using-the-compression-api-in-block-mode.md)
+La modalità buffer è consigliata per la maggior parte dei casi. Per altre informazioni su come usare la modalità blocco, vedere [Uso dell'API di compressione in modalità blocco](using-the-compression-api-in-block-mode.md)
 
-Le applicazioni che usano la modalità buffer o blocco hanno la possibilità di specificare una routine di allocazione della memoria personalizzata quando si chiama [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) o [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor). Per un esempio di una semplice routine di allocazione personalizzata, vedere la sezione [utilizzo dell'API di compressione in modalità blocco](using-the-compression-api-in-block-mode.md) .
+Le applicazioni che usano la modalità buffer o blocco hanno la possibilità di specificare una routine di allocazione della memoria personalizzata quando si chiama [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) [**o CreateDecompressor.**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor) Vedere la [sezione Uso dell'API di compressione in modalità](using-the-compression-api-in-block-mode.md) blocco per un esempio di una semplice routine di allocazione personalizzata.
 
-**Windows 8 e Windows Server 2012:** Per usare il codice di esempio seguente, è necessario che sia in esecuzione Windows 8 o Windows Server 2012 e che "compressapi. h" e "cabinet.dll" e siano collegati a "cabinet. lib".
+**Windows 8 e Windows Server 2012:** Per usare il codice di esempio seguente, è necessario eseguire Windows 8 o Windows Server 2012 e avere "compressapi.h" e "cabinet.dll" e il collegamento a "Cabinet.lib".
 
-Il frammento di codice seguente illustra la compressione dei file con l'algoritmo di compressione XPRESS e la codifica Huffman usando l'API di compressione in modalità buffer. L'applicazione accetta un file, comprime il contenuto e genera un file compresso. Prima di tutto l'applicazione chiama [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) con **compress \_ algorithm \_ Xpress \_ Huff** per generare un compressore. Chiama quindi [**Compress**](/windows/desktop/api/compressapi/nf-compressapi-compress), con *CompressedBufferSize* impostato su 0, per eseguire una query per la dimensione richiesta del buffer compresso. Alloca un buffer di output al valore *CompressedBufferSize* . L'applicazione chiama **Compress** una seconda volta per eseguire la compressione effettiva. Infine, l'applicazione scrive i dati compressi nel file di output.
+Il frammento di codice seguente illustra la compressione dei file con l'algoritmo di compressione XPRESS e la codifica Huffman usando l'API di compressione in modalità buffer. L'applicazione accetta un file, comprime il contenuto e genera un file compresso. Prima di tutto, [**l'applicazione chiama CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) con **COMPRESS ALGORITHM \_ \_ XPRESS \_ HUFF** per generare un messaggio. Chiama quindi [**Comprimi**](/windows/desktop/api/compressapi/nf-compressapi-compress), con *CompressedBufferSize* impostato su 0, per eseguire una query per le dimensioni richieste del buffer compresso. Alloca un buffer di output al *valore CompressedBufferSize.* L'applicazione chiama **Comprimi** una seconda volta per eseguire la compressione effettiva. Infine, l'applicazione scrive i dati compressi nel file di output.
 
 
 ```C++
@@ -237,7 +237,7 @@ done:
 
 
 
-Il frammento di codice seguente illustra la decompressione di file usando l'API di compressione in modalità buffer.
+Il frammento di codice seguente illustra la decompressione dei file usando l'API di compressione in modalità buffer.
 
 
 ```C++

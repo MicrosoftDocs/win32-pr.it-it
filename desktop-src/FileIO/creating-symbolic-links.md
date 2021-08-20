@@ -4,12 +4,12 @@ ms.assetid: 3821478d-87bb-4e47-8263-d977cf665503
 title: Creazione di collegamenti simbolici
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 252b999b05004fd7735b16582783ef0c3afb0013
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 0340dc362ff550ab2d74e533ac66e74622c965266440103d6f6ec155bfa80f21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111387707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118150857"
 ---
 # <a name="creating-symbolic-links"></a>Creazione di collegamenti simbolici
 
@@ -19,7 +19,7 @@ I collegamenti simbolici possono essere collegamenti assoluti o relativi. I coll
 
 -   Punto (. e ..) convenzioni, ad esempio ".. \\ " risolve il percorso relativo alla directory padre.
 -   Nomi senza barre ( ) : \\ ad esempio, "tmp" risolve il percorso relativo alla directory corrente.
--   Relativo alla radice, ad esempio , \\ "Windows \\ System32" viene risolto nell'unità corrente : Windows \\ \\ System32. directory
+-   Relativo alla radice, ad esempio " Windows System32" viene risolto \\ nell'unità corrente : Windows \\  \\ \\ System32". directory
 -   Relativo alla directory di lavoro corrente, ad esempio se la directory di lavoro corrente è "C: \\ Windows \\ System32", "C:File.txt" viene risolto in "C: \\ Windows \\ System32 \\File.txt".
 
     **Nota**  Se si specifica un collegamento relativo alla directory di lavoro corrente, viene creato come collegamento assoluto, a causa del modo in cui la directory di lavoro corrente viene elaborata in base all'utente e al thread.
@@ -46,7 +46,7 @@ In questo esempio il percorso originale contiene un componente '*x*', che è un 
 
 X: C: \\ alpha beta link gamma \\ \\ \\ \\ file
 
-Collegamento: "link" esegue il mapping a ".. \\ .. \\ theta"
+Collegamento: "link" è mappato a ".. \\ .. \\ theta"
 
 Percorso modificato: "C: \\ alpha \\ beta \\ .. \\ .. \\ theta \\ gamma \\ file"
 

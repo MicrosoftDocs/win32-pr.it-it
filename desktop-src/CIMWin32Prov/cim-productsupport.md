@@ -1,5 +1,5 @@
 ---
-description: La classe CIM ProductSupport rappresenta un'associazione tra il prodotto e l'accesso al supporto che indica come viene ottenuto \_ il supporto per il prodotto.
+description: La classe CIM ProductSupport rappresenta un'associazione tra l'accesso al prodotto e al supporto tecnico che indica come viene ottenuto \_ il supporto per il prodotto.
 ms.assetid: 61c62556-0cf3-438c-b9c7-152505bf7ed6
 ms.tgt_platform: multiple
 title: CIM_ProductSupport classe
@@ -25,10 +25,10 @@ ms.locfileid: "118421448"
 ---
 # <a name="cim_productsupport-class"></a>Classe CIM \_ ProductSupport
 
-La **classe CIM \_ ProductSupport** rappresenta un'associazione tra il prodotto e l'accesso al supporto che indica come viene ottenuto il supporto per il prodotto. Per un prodotto sono disponibili vari tipi di supporto. lo stesso oggetto di supporto può fornire assistenza per più prodotti.
+La **classe CIM \_ ProductSupport** rappresenta un'associazione tra l'accesso al prodotto e al supporto tecnico che indica come viene ottenuto il supporto per il prodotto. Per un prodotto sono disponibili vari tipi di supporto. Lo stesso oggetto di supporto può fornire assistenza per più prodotti.
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,7 +47,7 @@ class CIM_ProductSupport
 
 ## <a name="members"></a>Members
 
-La **classe CIM \_ ProductSupport** ha questi tipi di membri:
+La **classe CIM \_ ProductSupport** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
@@ -60,7 +60,7 @@ La **classe CIM \_ ProductSupport** ha queste proprietà.
 **Prodotto**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **PRODOTTO CIM \_**
+Tipo di dati: **PRODOTTO \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -87,7 +87,7 @@ Riferimento al supporto tecnico del prodotto.
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 

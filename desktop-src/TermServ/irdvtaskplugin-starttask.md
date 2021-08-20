@@ -4,9 +4,9 @@ description: Chiamato per avviare l'attività di aggiornamento nella macchina vi
 ms.assetid: c1e9f18b-1e83-4a29-8646-8adde94e8c14
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo StartTask
+- Metodo StartTask Servizi Desktop remoto
 - Metodo StartTask Servizi Desktop remoto, interfaccia IRDVTaskPlugin
-- Interfaccia IRDVTaskPlugin Servizi Desktop remoto, metodo StartTask
+- Interfaccia IRDVTaskPlugin Servizi Desktop remoto , metodo StartTask
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 51c499549378700a90d8fc78d075bc07c1f874cf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0e0bb9104ee1bbd3f0f6c2e8cc04b691205f2e40cb2221b79b5e9f251492a3a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118129258"
 ---
-# <a name="irdvtaskpluginstarttask-method"></a>Metodo IRDVTaskPlugin:: StartTask
+# <a name="irdvtaskpluginstarttask-method"></a>Metodo IRDVTaskPlugin::StartTask
 
 Chiamato per avviare l'attività di aggiornamento nella macchina virtuale.
 
@@ -44,30 +44,30 @@ HRESULT StartTask(
 
 <dl> <dt>
 
-*Etichetta* \[ di in\]
+*Etichetta* \[ Pollici\]
 </dt> <dd>
 
-Etichetta per l'attività. Si tratta dell'etichetta passata all'agente trigger nel metodo [**ScheduleTask**](irdvtaskpluginnotifysink-scheduletask.md) .
+Etichetta per l'attività. Si tratta dell'etichetta passata all'agente trigger nel [**metodo ScheduleTask.**](irdvtaskpluginnotifysink-scheduletask.md)
 
 </dd> <dt>
 
-*Identificatore* \[ di in\]
+*Identificatore* \[ Pollici\]
 </dt> <dd>
 
-Identificatore dell'attività. Si tratta dell'identificatore passato all'agente trigger nel metodo [**ScheduleTask**](irdvtaskpluginnotifysink-scheduletask.md) .
+Identificatore dell'attività. Si tratta dell'identificatore passato all'agente trigger nel [**metodo ScheduleTask.**](irdvtaskpluginnotifysink-scheduletask.md)
 
 </dd> <dt>
 
-*Contesto* \[ in\]
+*Contesto* \[ Pollici\]
 </dt> <dd>
 
-Dati facoltativi per l'attività. Si tratta dei dati passati all'agente trigger nel metodo [**ScheduleTask**](irdvtaskpluginnotifysink-scheduletask.md) .
+Dati facoltativi per l'attività. Si tratta dei dati passati all'agente trigger nel [**metodo ScheduleTask.**](irdvtaskpluginnotifysink-scheduletask.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 

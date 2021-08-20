@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4422f04be1833d66280392704630fcb670eba810
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47562ac8aac79a8aa4401abd17c667df1917ee38dd2874a4208d46d8de438b05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106320006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118147240"
 ---
-# <a name="modifysecuritysettings-method-of-the-msvm_securityservice-class"></a>Metodo ModifySecuritySettings della classe MSVM \_ SecurityService
+# <a name="modifysecuritysettings-method-of-the-msvm_securityservice-class"></a>Metodo ModifySecuritySettings della classe Msvm \_ SecurityService
 
 Modifica le impostazioni di sicurezza correnti di una macchina virtuale.
 
@@ -40,23 +40,23 @@ uint32 ModifySecuritySettings(
 
 <dl> <dt>
 
-*SecuritySettingData* \[ in\]
+*SecuritySettingData* \[ Pollici\]
 </dt> <dd>
 
-Nuovi dati dell'impostazione di sicurezza.
+I nuovi dati delle impostazioni di sicurezza.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Parametro facoltativo per il monitoraggio dello stato di avanzamento dell'operazione, che viene utilizzato se non è stato possibile eseguire in modo sincrono il metodo. Se l'operazione viene eseguita in modo asincrono, il valore restituito è 4096.
+Parametro facoltativo per il monitoraggio dello stato dell'operazione, che viene utilizzato se non è stato possibile eseguire il metodo in modo sincrono. Se l'operazione viene eseguita in modo asincrono, il valore restituito è 4096.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, restituisce 0. in caso contrario, restituisce un errore.
+In caso di esito positivo, restituisce un valore 0. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -66,13 +66,13 @@ In caso di esito positivo, restituisce 0. in caso contrario, restituisce un erro
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non valido** (4)
+**Parametro non** valido (4)
 </dt> <dt>
 
 **Stato non valido** (5)
@@ -84,13 +84,13 @@ In caso di esito positivo, restituisce 0. in caso contrario, restituisce un erro
 **DMTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -99,10 +99,10 @@ In caso di esito positivo, restituisce 0. in caso contrario, restituisce un erro
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                                               |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                                               |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -111,7 +111,7 @@ In caso di esito positivo, restituisce 0. in caso contrario, restituisce un erro
 
 <dl> <dt>
 
-[**\_SecurityService MSVM**](msvm-securityservice.md)
+[**Msvm \_ SecurityService**](msvm-securityservice.md)
 </dt> </dl>
 
  

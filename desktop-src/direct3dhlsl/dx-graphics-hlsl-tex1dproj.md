@@ -1,9 +1,9 @@
 ---
 title: tex1Dproj
-description: Campiona una trama 1D usando una divisione proiezioni; la coordinata di trama è divisa per t. w prima che la ricerca avvenga.
+description: Campiota una trama 1D usando una divisione proiettativa; la coordinata della trama viene divisa per t.w prima che venga verificata la ricerca.
 ms.assetid: 7cfe996d-3967-40da-b0e7-e03938478594
 keywords:
-- HLSL tex1Dproj
+- tex1Dproj HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 34fc1c019ab5479fe8a23446c94073e19ca68de7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 04b8de660e00b3e2e6a47b13dbc65d9a123a4d62040310b6fd5b19bc0c1f8ac6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104976783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118090529"
 ---
 # <a name="tex1dproj"></a>tex1Dproj
 
-Campiona una trama 1D usando una divisione proiezioni; la coordinata di trama è divisa per t. w prima che la ricerca avvenga.
+Campiota una trama 1D usando una divisione proiettativa; la coordinata della trama viene divisa per t.w prima che venga verificata la ricerca.
 
 
 
-| tex1Dproj RET (s, t) |
+| ret tex1Dproj(s, t) |
 |---------------------|
 
 
@@ -40,7 +40,7 @@ Campiona una trama 1D usando una divisione proiezioni; la coordinata di trama è
 | Elemento                                                   | Descrizione                               |
 |--------------------------------------------------------|-------------------------------------------|
 | <span id="s"></span><span id="S"></span>*s*<br/> | \[nello \] stato del campionatore.<br/>      |
-| <span id="t"></span><span id="T"></span>*t*<br/> | \[nella \] coordinata di trama.<br/> |
+| <span id="t"></span><span id="T"></span>*T*<br/> | \[in \] Coordinata trama.<br/> |
 
 
 
@@ -48,7 +48,7 @@ Campiona una trama 1D usando una divisione proiezioni; la coordinata di trama è
 
 ## <a name="return-value"></a>Valore restituito
 
-Valore dei dati della trama.
+Valore dei dati di trama.
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -56,15 +56,15 @@ Valore dei dati della trama.
 
 | Nome | Ingresso/Uscita | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md) | Dimensione |
 |------|--------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|------|
-| s    | in ingresso     | [**oggetto**](dx-graphics-hlsl-intrinsic-functions.md) | [sampler1D](dx-graphics-hlsl-sampler.md)                      | 1    |
-| u    | in ingresso     | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
-| RET  | in uscita    | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
+| s    | in     | [**Oggetto**](dx-graphics-hlsl-intrinsic-functions.md) | [sampler1D](dx-graphics-hlsl-sampler.md)                      | 1    |
+| t    | in     | [**Vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
+| Ret  | in uscita    | [**Vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -72,10 +72,10 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                              | Supportato               |
 |-----------------------------------------------------------|-------------------------|
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | Sì (solo pixel shader) |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | Sì (solo pixel shader) |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | Sì (solo pixel shader) |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no                      |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì (solo pixel shader) |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | sì (solo pixel shader) |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | sì (solo pixel shader) |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no                      |
 
 
 

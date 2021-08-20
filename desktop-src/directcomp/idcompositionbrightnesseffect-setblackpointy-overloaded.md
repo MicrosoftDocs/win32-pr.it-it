@@ -1,5 +1,5 @@
 ---
-title: Metodi SetBlackPointY di idcompositionbrightnesseffect (Dcomp. h)
+title: Metodi idcompositionbrightnesseffect SetBlackPointY (Dcomp.h)
 description: Imposta il valore y del punto nero.
 ms.assetid: 8d0aa548-90ad-4025-2e7a-8e5b07134665
 keywords:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 5be06e735a53de9bf56c8ee484cdcff8d568cadf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c1b557dd0aed2e2224d9f692e60bb07479409d80e04f8e9397d6bd4070fd6869
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118088714"
 ---
-# <a name="idcompositionbrightnesseffectsetblackpointy-methods"></a>Metodi idcompositionbrightnesseffect:: SetBlackPointY
+# <a name="idcompositionbrightnesseffectsetblackpointy-methods"></a>Metodi idcompositionbrightnesseffect::SetBlackPointY
 
 Imposta il valore y del punto nero.
 
@@ -40,7 +40,7 @@ Imposta il valore y del punto nero.
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

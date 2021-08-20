@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Result01_EventLogService02
-description: La \_ \_ classe Result01 EventLogService02 dei criteri MDM \_ rappresenta il comportamento del log eventi.
+title: MDM_Policy_Result01_EventLogService02 classe
+description: La classe Mdm \_ Policy \_ Result01 \_ EventLogService02 rappresenta il comportamento del registro eventi.
 ms.assetid: 6d4908e9-d283-486a-8309-57d5c5ec83d0
 keywords:
-- Classe MDM_Policy_Result01_EventLogService02
-- Classe MDM_Policy_Result01_EventLogService02, descritta
+- MDM_Policy_Result01_EventLogService02 classe
+- MDM_Policy_Result01_EventLogService02 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 914a00c3646490e5d4679579aab7a38474a34f00
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 347de279b06a81b08f48e5180a9e3e8ecd9b625dcbcc1bce5c95f12121fe0717
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118164315"
 ---
-# <a name="mdm_policy_result01_eventlogservice02-class"></a>\_ \_ Classe Result01 EventLogService02 di criteri \_ MDM
+# <a name="mdm_policy_result01_eventlogservice02-class"></a>Classe \_ \_ \_ EventLogService02 di MDM Policy Result01
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La \_ \_ classe Result01 EventLogService02 dei criteri MDM \_ rappresenta il comportamento del log eventi.
+La classe Mdm \_ Policy \_ Result01 \_ EventLogService02 rappresenta il comportamento del registro eventi.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -49,23 +49,23 @@ class MDM_Policy_Result01_EventLogService02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ Result01 \_ EventLogService02 dei criteri MDM** ha questi tipi di membri:
+La **classe MDM Policy \_ \_ Result01 \_ EventLogService02** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ EventLogService02 dei criteri MDM Result01** ha queste proprietà.
+La **classe MDM Policy \_ \_ Result01 \_ EventLogService02** ha queste proprietà.
 
 <dl> <dt>
 
 [ControlEventLogBehavior](/windows/client-management/mdm/policy-csp-eventlogservice#eventlogservice-controleventlogbehavior)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -73,27 +73,27 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -101,10 +101,10 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 [SpecifyMaximumFileSizeApplicationLog](/windows/client-management/mdm/policy-csp-eventlogservice#eventlogservice-specifymaximumfilesizeapplicationlog)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -112,10 +112,10 @@ Tipo di accesso: lettura/scrittura
 [SpecifyMaximumFileSizeSecurityLog](/windows/client-management/mdm/policy-csp-eventlogservice#eventlogservice-specifymaximumfilesizesecuritylog)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -123,10 +123,10 @@ Tipo di accesso: lettura/scrittura
 [SpecifyMaximumFileSizeSystemLog](/windows/client-management/mdm/policy-csp-eventlogservice#eventlogservice-specifymaximumfilesizesystemlog)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -137,10 +137,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

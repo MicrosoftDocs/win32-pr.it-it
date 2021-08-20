@@ -4,21 +4,21 @@ ms.assetid: 5ed90dc2-419e-40d4-adb4-164166254cd0
 title: Source (Sorgente)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1edd85c773c1fa8b8b0dedfd3d8af34e1ba19c8a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 43555cd7a6d0646912dddf1da287e94f6070c93e154cbf3d27029865ff21daaa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104521866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075711"
 ---
 # <a name="source"></a>Source (Sorgente)
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-L'oggetto di origine rappresenta una clip di origine nella sequenza temporale. Per creare questo oggetto, chiamare il metodo [**IAMTimeline:: CreateEmptyNode**](iamtimeline-createemptynode.md) .
+L'oggetto di origine rappresenta un clip di origine nella sequenza temporale. Per creare questo oggetto, chiamare il [**metodo IAMTimeline::CreateEmptyNode.**](iamtimeline-createemptynode.md)
 
 L'oggetto di origine espone le interfacce seguenti:
 
@@ -34,7 +34,7 @@ L'oggetto di origine espone le interfacce seguenti:
 [Modello di sequenza temporale](the-timeline-model.md)
 </dt> <dt>
 
-[Utilizzo di origini](working-with-sources.md)
+[Uso delle origini](working-with-sources.md)
 </dt> </dl>
 
  

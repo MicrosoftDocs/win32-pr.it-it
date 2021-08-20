@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectVariable AsInterface (D3dx11effect. h)
-description: Ottiene una variabile di interfaccia.
+title: Metodo ID3DX11EffectVariable AsInterface (D3dx11effect.h)
+description: Ottenere una variabile di interfaccia.
 ms.assetid: 5b1e5d05-ab36-42c2-9990-154baff5e9a4
 keywords:
 - Metodo AsInterface Direct3D 11
 - Metodo AsInterface Direct3D 11, interfaccia ID3DX11EffectVariable
-- Interfaccia ID3DX11EffectVariable Direct3D 11, metodo AsInterface
+- ID3DX11EffectVariable interface Direct3D 11 , Metodo AsInterface
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0134aceea3202e0965bf05b709d29279be2fc29
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 95fd7000e8529d04054ccaed84642e12d55417929789c569cc1f9893c2726f4e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103761938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119565651"
 ---
-# <a name="id3dx11effectvariableasinterface-method"></a>Metodo ID3DX11EffectVariable:: AsInterface
+# <a name="id3dx11effectvariableasinterface-method"></a>Metodo ID3DX11EffectVariable::AsInterface
 
-Ottiene una variabile di interfaccia.
+Ottenere una variabile di interfaccia.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,7 +50,7 @@ Puntatore a una variabile di interfaccia. Vedere [**ID3DX11EffectInterfaceVariab
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra effetti 10 ed effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -60,8 +60,8 @@ Puntatore a una variabile di interfaccia. Vedere [**ID3DX11EffectInterfaceVariab
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

@@ -1,14 +1,14 @@
 - name: COM+ (Servizi componenti)
   href: component-services-portal.md
   items:
-    - name: 'Novità di COM+ 1,5'
+    - name: Novità di COM+ 1.5
       href: what-s-new-in-com--1-5.md
     - name: Panoramica degli sviluppatori COM+
       href: com--developers-overview.md
       items:
-        - name: Panoramica della programmazione COM+
+        - name: Cenni preliminari sulla programmazione COM+
           href: com--programming-overview.md
-        - name: Panoramica dell'applicazione COM+
+        - name: Cenni preliminari sull'applicazione COM+
           href: com--application-overview.md
           items:
             - name: Tipi di applicazioni COM+
@@ -32,16 +32,16 @@
               items:
                 - name: Attributo del modello di threading
                   href: threading-model-attribute.md
-                - name: Appartamenti neutri
+                - name: Neutral Apartment
                   href: neutral-apartments.md
-        - name: Principali servizi COM+
+        - name: COM+ Services Primer
           href: com--services-primer.md
           items:
-            - name: 'Passaggio 1: creazione di un componente transazionale'
+            - name: 'Passaggio 1: Creazione di un componente transazionale'
               href: step-1--creating-a-transactional-component.md
-            - name: 'Passaggio 2: estensione di una transazione tra i componenti'
+            - name: 'Passaggio 2: Estensione di una transazione tra componenti'
               href: step-2--extending-a-transaction-across-multiple-components.md
-            - name: 'Passaggio 3: riutilizzo dei componenti'
+            - name: 'Passaggio 3: Riutilizzo dei componenti'
               href: step-3--reusing-components.md
     - name: Servizi COM+
       href: com--services.md
@@ -56,7 +56,7 @@
               items:
                 - name: Configurazione dei valori del pool di applicazioni COM+
                   href: configuring-com--application-pooling-values.md
-        - name: Riciclo di applicazioni COM+
+        - name: Riciclo delle applicazioni COM+
           href: com--application-recycling.md
           items:
             - name: Concetti relativi al riciclo delle applicazioni COM+
@@ -69,17 +69,17 @@
         - name: Applicazioni COM+ in esecuzione come applicazioni di servizio
           href: com--applications-running-as-service-applications.md
           items:
-            - name: Concetti relativi all'applicazione del servizio COM+
+            - name: Concetti relativi alle applicazioni di servizio COM+
               href: com--service-application-concepts.md
-            - name: Attività delle applicazioni del servizio COM+
+            - name: Attività dell'applicazione di servizio COM+
               href: com--service-application-tasks.md
               items:
                 - name: Configurazione di un'applicazione server COM+ come applicazione di servizio
                   href: configuring-a-com--server-application-as-a-service-application.md
-        - name: Gestione risorse di compensazione COM+
+        - name: COM+ Compensating Resource Manager
           href: com--compensating-resource-manager.md
           items:
-            - name: Concetti Gestione risorse di compensazione COM+
+            - name: Concetti relativi alla compensazione Resource Manager COM+
               href: com--compensating-resource-manager-concepts.md
               items:
                 - name: Considerazioni sulla sicurezza di COM+ CRM
@@ -88,24 +88,24 @@
                   href: com--crm-operating-process.md
                 - name: Avvio e ripristino di COM+ CRM
                   href: com--crm-startup-and-recovery.md
-                - name: Utilizzo di COM+ CRM in un ambiente cluster
+                - name: Uso di COM+ CRM in un ambiente cluster
                   href: using-the-com--crm-in-a-cluster-environment.md
                 - name: Gestione degli errori in COM+ CRM
                   href: error-handling-in-the-com--crm.md
-                - name: Impostazioni del registro di sistema COM+ CRM
+                - name: Registro COM+ CRM Impostazioni
                   href: com--crm-registry-settings.md
-                - name: Risoluzione dei problemi relativi a COM+ CRM
+                - name: Risoluzione dei problemi di COM+ CRM
                   href: troubleshooting-the-com--crm.md
                 - name: Suggerimenti di progettazione per lo sviluppo di un CRM COM+
                   href: design-suggestions-for-developing-a-com--crm.md
-                - name: Interfacce di monitoraggio COM+ CRM
+                - name: Interfacce di monitoraggio CRM COM+
                   href: com--crm-monitoring-interfaces.md
                 - name: Interfacce COM+ CRM
                   href: com--crm-interfaces.md
-            - name: Attività di Gestione risorse di compensazione COM+
+            - name: COM+ Compensating Resource Manager Tasks
               href: com--compensating-resource-manager-tasks.md
               items:
-                - name: Configurazione dei componenti di COM+ CRM
+                - name: Configurazione dei componenti COM+ CRM
                   href: configuring-com--crm-components.md
         - name: Eventi COM+
           href: com--events.md
@@ -119,7 +119,7 @@
                   href: subscriptions.md
                 - name: Pubblicazione e distribuzione di eventi in COM+
                   href: publishing-and-delivering-events-in-com-.md
-                - name: Filtro di eventi in COM+
+                - name: Applicazione di filtri agli eventi in COM+
                   href: filtering-events-in-com-.md
                 - name: Uso di eventi COM+ con componenti in coda COM+
                   href: using-com--events-with-com--queued-components.md
@@ -136,42 +136,42 @@
                   href: registering-a-transient-subscription.md
                 - name: Pubblicazione di un evento
                   href: publishing-an-event.md
-                - name: Creazione di un filtro editore
+                - name: Creazione di un Publisher filtro
                   href: creating-a-publisher-filter.md
         - name: Concetti relativi alla strumentazione COM+
           href: com--instrumentation-concepts.md
           items:
             - name: Interfacce di strumentazione COM+
               href: com--instrumentation-interfaces.md
-        - name: Attivazione JIT (just-in-Time) COM+
+        - name: Attivazione just-in-time com+
           href: com--just-in-time-activation.md
           items:
-            - name: Concetti relativi all'attivazione JIT di COM+
+            - name: Concetti relativi all'attivazione just-in-time di COM+
               href: com--just-in-time-activation-concepts.md
               items:
                 - name: Transazioni e attivazione JIT COM+
                   href: transactions-and-com--jit-activation.md
                 - name: Pool di oggetti e attivazione JIT COM+
                   href: object-pooling-and-com--jit-activation.md
-            - name: Attività di attivazione JIT di COM+
+            - name: Attività di attivazione JUST-IN-Time di COM+
               href: com--just-in-time-activation-tasks.md
               items:
                 - name: Abilitazione dell'attivazione JIT per un componente
                   href: enabling-jit-activation-for-a-component.md
-                - name: Impostazione del bit completato
+                - name: Impostazione del bit done
                   href: setting-the-done-bit.md
-                - name: Abilitazione dell'operazione automatica per un metodo
+                - name: Abilitazione del completamento automatico per un metodo
                   href: enabling-auto-done-for-a-method.md
                 - name: Applicazione dell'attivazione nel contesto predefinito
                   href: enforcing-activation-in-the-default-context.md
                 - name: Applicazione dell'attivazione nel contesto del chiamante
                   href: enforcing-activation-in-the-caller-s-context.md
-        - name: Controlli di attivazione Low-Memory COM+
+        - name: Com+ Low-Memory di attivazione
           href: com--low-memory-activation-gates.md
           items:
-            - name: Concetti di COM+ Low-Memory Activation Gates
+            - name: Concetti relativi ai Low-Memory di attivazione di COM+
               href: com--low-memory-activation-gates-concepts.md
-            - name: Attività di controllo di attivazione Low-Memory COM+
+            - name: Attività dei Low-Memory di attivazione com+
               href: com--low-memory-activation-gates-tasks.md
         - name: Stringhe del costruttore di oggetti COM+
           href: com--object-constructor-strings.md
@@ -195,16 +195,16 @@
                   href: how-object-pooling-works.md
                 - name: Miglioramento delle prestazioni con il pool di oggetti
                   href: improving-performance-with-object-pooling.md
-                - name: Requisiti per gli oggetti pool
+                - name: Requisiti per gli oggetti in pool
                   href: requirements-for-poolable-objects.md
-                - name: Raggruppamento di oggetti transazionali
+                - name: Pooling di oggetti transazionali
                   href: pooling-transactional-objects.md
                 - name: Controllo della durata e dello stato degli oggetti
                   href: controlling-object-lifetime-and-state.md
             - name: Attività del pool di oggetti COM+
               href: com--object-pooling-tasks.md
               items:
-                - name: Configurazione di un componente da raggruppare
+                - name: Configurazione di un componente per il pooling
                   href: configuring-a-component-to-be-pooled.md
                 - name: Monitoraggio delle statistiche degli oggetti
                   href: monitoring-object-statistics.md
@@ -238,24 +238,24 @@
                       href: locating-a-component-for-activation.md
                 - name: Componenti e partizioni in coda COM+
                   href: com--queued-components-and-partitions.md
-                - name: Limitazioni relative alla progettazione di applicazioni
+                - name: Restrizioni di progettazione delle applicazioni
                   href: application-design-restrictions.md
-            - name: Attività partizioni COM+
+            - name: Attività relative alle partizioni COM+
               href: com--partitions-tasks.md
               items:
                 - name: Creazione e configurazione di partizioni COM+
                   href: creating-and-configuring-com--partitions.md
                 - name: Gestione delle partizioni locali
                   href: managing-local-partitions.md
-                - name: Gestione di partizioni all'interno Active Directory
+                - name: Gestione delle partizioni all'interno di Active Directory
                   href: managing-partitions-within-active-directory.md
                 - name: Impostazione dei diritti amministrativi per una partizione
                   href: setting-administrative-rights-for-a-partition.md
                 - name: Raggruppamento di applicazioni in partizioni
                   href: grouping-applications-into-partitions.md
-                - name: Raccolta delle metriche della partizione
+                - name: Raccolta delle metriche delle partizioni
                   href: collecting-partition-metrics.md
-                - name: Configurazione della cache della partizione
+                - name: Configurazione della cache delle partizioni
                   href: configuring-the-partition-cache.md
         - name: Componenti in coda COM+
           href: com--queued-components.md
@@ -285,52 +285,52 @@
                 - name: Errori dei componenti in coda
                   href: queued-components-errors.md
                   items:
-                    - name: Errori Server-Side
+                    - name: Server-Side errori
                       href: server-side-errors.md
-                    - name: Errori Client-Side
+                    - name: Client-Side errori
                       href: client-side-errors.md
-                    - name: Errori persistenti Client-Side
+                    - name: Errori Client-Side persistenti
                       href: persistent-client-side-failures.md
             - name: Attività dei componenti in coda COM+
               href: com--queued-components-tasks.md
               items:
-                - name: Creazione di componenti accodabili
+                - name: Creazione di componenti accodamento
                   href: creating-queuable-components.md
                 - name: Creazione di code di componenti
                   href: creating-component-queues.md
                 - name: Specifica del protocollo di autenticazione
                   href: specifying-the-authentication-protocol.md
-                - name: Attivazione di code di componenti
+                - name: Attivazione delle code dei componenti
                   href: activating-component-queues.md
-                - name: Utilizzo del moniker della coda
+                - name: Uso del moniker della coda
                   href: using-the-queue-moniker.md
                 - name: Gestione degli errori nei componenti in coda
                   href: handling-errors-in-queued-components.md
-        - name: Servizio di dispenser di risorse COM+
+        - name: Servizio dispenser di risorse COM+
           href: com--resource-dispenser-service.md
           items:
-            - name: Concetti relativi al dispenser di risorse COM+
+            - name: Concetti relativi ai distributori di risorse COM+
               href: com--resource-dispenser-concepts.md
               items:
-                - name: Gestore di distribuzioni COM+
+                - name: COM+ Dispenser Manager
                   href: com--dispenser-manager.md
                 - name: Tipi di thread del dispenser di risorse COM+
                   href: com--resource-dispenser-thread-types.md
-                - name: Stati risorse in pool disponibili per il dispenser di risorse COM+
+                - name: Stati delle risorse in pool disponibili per il dispenser di risorse COM+
                   href: pooled-resource-states-available-to-com--resource-dispenser.md
                 - name: Integrazione di una risorsa in una transazione
                   href: enlisting-a-resource-in-a-transaction.md
-                - name: Processo di allocazione delle risorse del dispenser di risorse
+                - name: Processo di allocazione delle risorse del distributore di risorse
                   href: resource-dispenser-resource-allocation-process.md
                 - name: Rilevamento di risorse non allocate
                   href: tracking-non-allocated-resources.md
                 - name: Recupero automatico delle risorse
                   href: automatic-resource-reclamation.md
-                - name: Tipi utilizzati nelle interfacce del dispenser di risorse COM+
+                - name: Tipi usati nelle interfacce del dispenser di risorse COM+
                   href: types-used-in-com--resource-dispenser-interfaces.md
-                - name: Interfacce del dispenser di risorse COM+
+                - name: Interfacce del distributore di risorse COM+
                   href: com--resource-dispenser-interfaces.md
-            - name: Attività del dispenser di risorse COM+
+            - name: Attività del distributore di risorse COM+
               href: com--resource-dispenser-tasks.md
               items:
                 - name: Implementazione di un dispenser di risorse COM+
@@ -338,13 +338,13 @@
         - name: Sicurezza COM+
           href: com--security.md
           items:
-            - name: Concetti sulla sicurezza COM+
+            - name: Concetti relativi alla sicurezza COM+
               href: com--security-concepts.md
               items:
-                - name: Amministrazione della sicurezza Role-Based
+                - name: Role-Based di sicurezza
                   href: role-based-security-administration.md
                   items:
-                    - name: Utilizzo dei ruoli per l'autorizzazione client
+                    - name: Uso dei ruoli per l'autorizzazione client
                       href: using-roles-for-client-authorization.md
                     - name: Progettazione efficace dei ruoli
                       href: designing-roles-effectively.md
@@ -354,10 +354,10 @@
                       href: security-call-context-information.md
                     - name: Proprietà del contesto di sicurezza
                       href: security-context-property.md
-                - name: Sicurezza del componente a livello di codice
+                - name: Sicurezza dei componenti a livello di codice
                   href: programmatic-component-security.md
                   items:
-                    - name: Verifica dell'appartenenza ai ruoli
+                    - name: Controllo dell'appartenenza al ruolo
                       href: checking-role-membership.md
                     - name: Determinare se Role-Based sicurezza è abilitata
                       href: determining-whether-role-based-security-is-enabled.md
@@ -368,7 +368,7 @@
                   items:
                     - name: Negoziazione del livello di autenticazione
                       href: negotiation-of-authentication-level.md
-                - name: Rappresentazione e delega client
+                - name: Rappresentazione e delega del client
                   href: client-impersonation-and-delegation.md
                   items:
                     - name: Client-Side requisiti per la rappresentazione
@@ -379,22 +379,22 @@
                       href: cloaking.md
                 - name: Uso dei criteri di restrizione software in COM+
                   href: using-the-software-restriction-policy-in-com-.md
-                - name: Sicurezza delle applicazioni di libreria
+                - name: Sicurezza delle applicazioni della libreria
                   href: library-application-security.md
                   items:
                     - name: Configurazione della sicurezza per le applicazioni di libreria
                       href: configuring-security-for-library-applications.md
-                - name: Sicurezza delle applicazioni a più livelli
+                - name: Sicurezza delle applicazioni multilivello
                   href: multi-tier-application-security.md
                   items:
-                    - name: Decidere dove applicare la protezione
+                    - name: Scelta della posizione in cui applicare la sicurezza
                       href: deciding-where-to-enforce-security.md
-                    - name: Scenari di base per la protezione dei dati nelle applicazioni multilivello
+                    - name: Scenari di base per la protezione dei dati in applicazioni multilivello
                       href: basic-scenarios-for-securing-data-in-multi-tier-applications.md
             - name: Attività di sicurezza COM+
               href: com--security-tasks.md
               items:
-                - name: Configurazione della sicurezza Role-Based
+                - name: Configurazione della Role-Based sicurezza
                   href: configuring-role-based-security.md
                   items:
                     - name: Abilitazione dei controlli di accesso per un'applicazione
@@ -410,17 +410,17 @@
                 - name: Gestione degli utenti nei ruoli
                   href: managing-users-in-roles.md
                   items:
-                    - name: Abilitazione del controllo dell'autorizzazione Role-Based
+                    - name: Abilitazione Role-Based di autorizzazione
                       href: enabling-role-based-authorization-checking.md
                     - name: Assegnazione di un account utente o di un gruppo a un ruolo
                       href: assigning-a-user-account-or-group-to-a-role.md
                     - name: Rimozione di un account utente o di un gruppo da un ruolo
                       href: removing-a-user-account-or-group-from-a-role.md
-                    - name: Trasferimento di un account utente o di un gruppo a un ruolo diverso
+                    - name: Spostamento di un account utente o di un gruppo in un ruolo diverso
                       href: moving-a-user-account-or-group-to-a-different-role.md
                 - name: Impostazione di un livello di autenticazione per un'applicazione server
                   href: setting-an-authentication-level-for-a-server-application.md
-                - name: Abilitazione dell'autenticazione per un'applicazione di libreria
+                - name: Abilitazione dell'autenticazione per un'applicazione libreria
                   href: enabling-authentication-for-a-library-application.md
                 - name: Impostazione di un livello di rappresentazione
                   href: setting-an-impersonation-level.md
@@ -431,7 +431,7 @@
           items:
             - name: Concetti relativi ai servizi COM+ senza componenti
               href: com--services-without-components-concepts.md
-            - name: Servizi COM+ senza attività componenti
+            - name: Attività servizi COM+ senza componenti
               href: com--services-without-components-tasks.md
               items:
                 - name: Configurazione dei servizi COM+ con CServiceConfig
@@ -440,25 +440,25 @@
                   href: using-com--services-through-cocreateactivity.md
                 - name: Uso dei servizi COM+ tramite CoEnterServiceDomain e CoLeaveServiceDomain
                   href: using-com--services-through-coenterservicedomain-and-coleaveservicedomain.md
-        - name: Gestione proprietà condivise COM+
+        - name: Com+ Shared Gestione proprietà
           href: com--shared-property-manager.md
           items:
-            - name: Concetti di Gestione proprietà condivisi COM+
+            - name: Concetti relativi alle Gestione proprietà com+
               href: com--shared-property-manager-concepts.md
               items:
                 - name: Gruppi di proprietà condivise
                   href: shared-property-groups.md
-            - name: Esempio di Gestione proprietà condiviso COM+
+            - name: Esempio di Gestione proprietà com+
               href: com--shared-property-manager-sample.md
         - name: Servizio SOAP COM+
           href: com--soap-service.md
           items:
-            - name: Concetti relativi al servizio SOAP COM+
+            - name: Concetti relativi ai servizi SOAP COM+
               href: com--soap-service-concepts.md
               items:
-                - name: Panoramica del servizio SOAP COM+
+                - name: Cenni preliminari sul servizio SOAP COM+
                   href: com--soap-service-overview.md
-                - name: Considerazioni sulla sicurezza del servizio SOAP COM+
+                - name: Considerazioni sulla sicurezza dei servizi SOAP COM+
                   href: com--soap-service-security-considerations.md
             - name: Attività del servizio SOAP COM+
               href: com--soap-service-tasks.md
@@ -471,9 +471,9 @@
                   href: accessing-xml-web-services-in-wko-mode.md
                 - name: Accesso ai servizi Web XML in modalità CAO
                   href: accessing-xml-web-services-in-cao-mode.md
-                - name: Esportazione di un'applicazione SOAP-Enabled
+                - name: Esportazione di un'SOAP-Enabled di distribuzione
                   href: exporting-a-soap-enabled-application.md
-                - name: Importazione di un'applicazione SOAP-Enabled
+                - name: Importazione di unSOAP-Enabled app
                   href: importing-a-soap-enabled-application.md
         - name: Sincronizzazione COM+
           href: com--synchronization.md
@@ -495,45 +495,45 @@
         - name: Transazioni COM+
           href: com--transactions.md
           items:
-            - name: Concetti sulle transazioni COM+
+            - name: Concetti relativi alle transazioni COM+
               href: com--transactions-concepts.md
               items:
                 - name: Proprietà ACID
                   href: acid-properties.md
-                - name: Configurazione di transazioni
+                - name: Configurazione delle transazioni
                   href: configuring-transactions.md
-                - name: Configurazione di livelli di isolamento delle transazioni
+                - name: Configurazione dei livelli di isolamento delle transazioni
                   href: configuring-transaction-isolation-levels.md
                 - name: Gestione delle transazioni automatiche in COM+
                   href: managing-automatic-transactions-in-com-.md
                   items:
-                    - name: Flag coerenti e done
+                    - name: Flag coerenti e con completamento
                       href: consistent-and-done-flags.md
                     - name: Velocizzare le transazioni inviando una notifica all'oggetto radice
                       href: speeding-transactions-by-notifying-the-root-object.md
-                    - name: Terminazione di una transazione automatica mediante una chiamata a Tocomplete
+                    - name: Terminazione di una transazione automatica chiamando SetComplete
                       href: terminating-an-automatic-transaction-by-calling-setcomplete.md
-                - name: Utilizzo di componenti non transazionali in una transazione
+                - name: Uso di componenti non transazionali in una transazione
                   href: using-non-transactional-components-in-a-transaction.md
                 - name: Bring Your Own Transaction (BYOT)
                   href: bring-your-own-transaction--byot-.md
                   items:
-                    - name: Eredità di transazioni manuali
+                    - name: Ereditarietà delle transazioni manuali
                       href: inheriting-manual-transactions.md
             - name: Attività delle transazioni COM+
               href: com--transactions-tasks.md
               items:
-                - name: Impostazione dell'attributo Transaction
+                - name: Impostazione dell'attributo transaction
                   href: setting-the-transaction-attribute.md
                 - name: Impostazione del livello di isolamento delle transazioni
                   href: setting-the-transaction-isolation-level.md
                 - name: Impostazione della transazione Time-Out
                   href: setting-the-transaction-time-out.md
-                - name: Impostazione dei flag coerenti e done
+                - name: Impostazione dei flag Coerenti e Done
                   href: setting-the-consistent-and-done-flags.md
                 - name: Creazione di oggetti BYOT
                   href: creating-byot-objects.md
-    - name: Attività generali COM+
+    - name: Attività generali di COM+
       href: com--general-tasks.md
       items:
         - name: Creazione di applicazioni COM+
@@ -558,7 +558,7 @@
           items:
             - name: Configurazione di applicazioni di libreria
               href: configuring-library-applications.md
-            - name: Uso di file di configurazione Per-Application
+            - name: Uso Per-Application file di configurazione
               href: using-per-application-configuration-files.md
         - name: Distribuzione di applicazioni COM+
           href: deploying-com--applications.md
@@ -574,7 +574,7 @@
               items:
                 - name: Uso di COMREPL
                   href: using-comrepl.md
-                - name: Cosa viene replicato
+                - name: Elementi replicati
                   href: what-gets-replicated.md
                 - name: Fasi di replica
                   href: replication-phases.md
@@ -590,22 +590,22 @@
             - name: Debug di componenti scritti in Visual Basic
               href: debugging-components-written-in-visual-basic.md
               items:
-                - name: Debug nell'IDE di Visual Basic
+                - name: Debug nell'IDE Visual Basic
                   href: debugging-in-the-visual-basic-ide.md
                 - name: Debug di componenti Visual Basic compilati
                   href: debugging-compiled-visual-basic-components.md
-                - name: Supporto per il debug di Visual Basic COM+ a differenza di MTS
+                - name: Supporto del debug Visual Basic COM+ a differenza di MTS
                   href: com--visual-basic-debugging-support-contrasted-with-mts.md
         - name: Gestione degli errori in COM+
           href: handling-errors-in-com-.md
           items:
             - name: Strategie per la gestione degli errori in COM+
               href: strategies-for-handling-errors-in-com-.md
-            - name: Modalità di modifica dei valori restituiti da COM+
+            - name: Come COM+ modifica i valori restituiti
               href: how-com--modifies-return-values.md
-            - name: Criteri di isolamento degli errori e FailFast
+            - name: Isolamento degli errori e criteri failfast
               href: fault-isolation-and-failfast-policy.md
-            - name: Individuazione dell'origine di un errore
+            - name: Ricerca dell'origine di un errore
               href: finding-the-source-of-an-error.md
             - name: Interpretazione dei codici di errore
               href: interpreting-error-codes.md
@@ -621,23 +621,23 @@
               items:
                 - name: Accesso al catalogo COM+
                   href: accessing-the-com--catalog.md
-                - name: Descrizione riepilogativa delle classi COMAdmin
+                - name: Descrizione di riepilogo delle classi COMAdmin
                   href: summary-description-of-the-comadmin-classes.md
             - name: Recupero di raccolte nel catalogo COM+
               href: retrieving-collections-on-the-com--catalog.md
               items:
-                - name: Esplorazione della gerarchia della raccolta COM+
+                - name: Esplorazione della gerarchia di raccolte COM+
                   href: navigating-the-com--collection-hierarchy.md
                 - name: Popolamento di raccolte COM+
                   href: populating-com--collections.md
                 - name: Esecuzione di query per le raccolte correlate disponibili
                   href: querying-for-available-related-collections.md
-            - name: Modifica di proprietà nel catalogo COM+
+            - name: Modifica delle proprietà nel catalogo COM+
               href: setting-properties-and-saving-changes-to-the-com--catalog.md
               items:
                 - name: Recupero e impostazione delle proprietà
                   href: getting-and-setting-properties.md
-                - name: Salvataggio o eliminazione di modifiche
+                - name: Salvataggio o rimozione delle modifiche
                   href: saving-or-discarding-changes.md
                 - name: Interdipendenze tra proprietà
                   href: interdependencies-between-properties.md
@@ -647,7 +647,7 @@
               href: handling-com--administration-errors.md
             - name: Operazioni di amministrazione COM+ all'interno delle transazioni
               href: com--administration-operations-within-transactions.md
-            - name: Esempio introduttivo di utilizzo del catalogo di amministrazione COM+
+            - name: Esempio introduttivo sull'uso del catalogo di amministrazione COM+
               href: introductory-example-using-the-com--administration-catalog.md
         - name: Progettazione di applicazioni COM+
           href: designing-com--applications.md
@@ -662,16 +662,16 @@
             - name: Progettazione dell'applicazione COM+ tramite UML
               href: designing-the-com--application-using-uml.md
               items:
-                - name: 'Modello concettuale: requisiti delle applicazioni'
+                - name: 'Modello concettuale: Requisiti dell''applicazione'
                   href: the-conceptual-model--application-requirements.md
-                - name: 'Modello logico: definizione dell''applicazione e pianificazione'
+                - name: 'Modello logico: definizione e pianificazione dell''applicazione'
                   href: the-logical-model--application-definition-and-planning.md
                   items:
-                    - name: Uso di un modello di architettura Three-Tier
+                    - name: Uso di un Three-Tier di architettura
                       href: using-a-three-tier-architecture-model.md
-                - name: 'Modello fisico: architettura dell''applicazione'
+                - name: 'Modello fisico: Architettura dell''applicazione'
                   href: the-physical-model--application-architecture.md
-            - name: Suggerimenti di progettazione generali per l'utilizzo di COM+
+            - name: Progettazione generale Suggerimenti per l'uso di COM+
               href: general-design-tips-for-using-com-.md
               items:
                 - name: Progettazione per la scalabilità
@@ -688,9 +688,9 @@
             - name: Ottimizzazione delle interazioni con il livello di logica di business COM+
               href: optimizing-interactions-with-the-com--business-logic-tier.md
               items:
-                - name: Ottimizzazione delle interazioni tra il livello di logica di business COM+ e il livello di presentazione
+                - name: Ottimizzazione delle interazioni tra il livello della logica di business COM+ e il livello presentazione
                   href: optimizing-interactions-between-the-com--business-logic-tier-and-the-presentation-tier.md
-                - name: Ottimizzazione delle interazioni tra il livello di logica di business COM+ e il livello dati
+                - name: Ottimizzazione delle interazioni tra il livello della logica di business COM+ e il livello dati
                   href: optimizing-interactions-between-the-com--business-logic-tier-and-the-data-tier.md
         - name: Conversione di pacchetti MTS in applicazioni COM+
           href: conversion-of-mts-packages-to-com--applications.md
@@ -699,14 +699,14 @@
               href: automatic-conversion-from-mts.md
             - name: Conversione manuale da MTS
               href: manual-conversion-from-mts.md
-            - name: Risultati e problemi di conversione COM+
+            - name: Risultati e problemi della conversione COM+
               href: com--conversion-results-and-issues.md
             - name: Libreria di amministrazione MTS
               href: mts-administration-library.md
-    - name: Riferimento COM+
+    - name: Informazioni di riferimento su COM+
       href: com--reference.md
       items:
-        - name: Informazioni di riferimento sull'amministrazione COM+
+        - name: Informazioni di riferimento sull'amministrazione com+
           href: com--administration-reference.md
           items:
             - name: Classi di amministrazione COM+
@@ -729,11 +729,11 @@
                   href: applications.md
                 - name: Componenti
                   href: components.md
-                - name: Computer
+                - name: Elenco computer
                   href: computerlist.md
                 - name: DCOMProtocols
                   href: dcomprotocols.md
-                - name: ErrorInfo
+                - name: Errorinfo
                   href: errorinfo.md
                 - name: EventClassesForIID
                   href: eventclassesforiid.md
@@ -747,7 +747,7 @@
                   href: legacycomponents.md
                 - name: LegacyServers
                   href: legacyservers.md
-                - name: LocalComputer
+                - name: Computer locale
                   href: localcomputer.md
                 - name: MethodsForInterface
                   href: methodsforinterface.md
@@ -755,9 +755,9 @@
                   href: partitions.md
                 - name: PartitionUsers
                   href: partitionusers.md
-                - name: PropertyInfo
+                - name: Propertyinfo
                   href: propertyinfo.md
-                - name: PublisherProperties
+                - name: Proprietà server di pubblicazione
                   href: publisherproperties.md
                 - name: RelatedCollectionInfo
                   href: relatedcollectioninfo.md
@@ -773,11 +773,11 @@
                   href: rolesforpartition.md
                 - name: Radice
                   href: root.md
-                - name: SubscriberProperties
+                - name: Proprietà Sottoscrittore
                   href: subscriberproperties.md
                 - name: SubscriptionsForComponent
                   href: subscriptionsforcomponent.md
-                - name: TransientPublisherProperties
+                - name: Proprietà del server di pubblicazione temporaneo
                   href: transientpublisherproperties.md
                 - name: TransientSubscriberProperties
                   href: transientsubscriberproperties.md
@@ -797,7 +797,7 @@
                 - name: ICatalogCollection
                   href: /windows/desktop/api/ComAdmin/nn-comadmin-icatalogcollection
                   items:
-                    - name: Proprietà _NewEnum
+                    - name: _NewEnum proprietà
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-get__newenum
                     - name: Aggiungi metodo
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add
@@ -817,17 +817,17 @@
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-get_item
                     - name: Proprietà Name
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-get_name
-                    - name: Popolamento (metodo)
+                    - name: Metodo Populate
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate
                     - name: Metodo PopulateByKey
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populatebykey
                     - name: Metodo PopulateByQuery
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populatebyquery
-                    - name: Remove (metodo)
+                    - name: Metodo Remove
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove
                     - name: Proprietà RemoveEnabled
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-get_removeenabled
-                    - name: SaveChanges (metodo)
+                    - name: Metodo SaveChanges
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges
                 - name: ICatalogObject
                   href: /windows/desktop/api/ComAdmin/nn-comadmin-icatalogobject
@@ -836,11 +836,11 @@
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-ispropertyreadonly
                     - name: Metodo IsPropertyWriteOnly
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-ispropertywriteonly
-                    - name: Proprietà chiave
+                    - name: Proprietà Key
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key
                     - name: Proprietà Name
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name
-                    - name: Proprietà valida
+                    - name: Proprietà valid
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_valid
                     - name: Proprietà Value
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_value
@@ -849,7 +849,7 @@
                   items:
                     - name: Metodo BackupREGDB
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-backupregdb
-                    - name: Metodo Connect
+                    - name: Connessione Metodo
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-connect
                     - name: Metodo ExportApplication
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-exportapplication
@@ -930,7 +930,7 @@
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog2-getcomponentversioncount
                     - name: Metodo GetPartitionID
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog2-getpartitionid
-                    - name: Getpartitionname (metodo)
+                    - name: Metodo GetPartitionName
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog2-getpartitionname
                     - name: Proprietà GlobalPartitionID
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog2-get_globalpartitionid
@@ -960,7 +960,7 @@
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog2-resumeapplicationinstances
                     - name: Metodo ShutdownApplicationInstances
                       href: /windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog2-shutdownapplicationinstances
-        - name: Guida di riferimento alla programmazione COM+
+        - name: Informazioni di riferimento sulla programmazione COM+
           href: com--programming-reference.md
           items:
             - name: Classi COM+
@@ -978,13 +978,13 @@
                   href: securitycallers.md
                 - name: SecurityIdentity
                   href: securityidentity.md
-                - name: SharedProperty
+                - name: Proprietà condivisa
                   href: sharedproperty.md
                 - name: SharedPropertyGroup
                   href: sharedpropertygroup.md
-                - name: SharedPropertyGroupManager
+                - name: Sharedpropertygroupmanager
                   href: sharedpropertygroupmanager.md
-                - name: TransactionContext
+                - name: Transactioncontext
                   href: transactioncontext.md
                 - name: TransactionContextEx
                   href: transactioncontextex.md
@@ -995,7 +995,7 @@
                   href: /windows/desktop/api/ComAdmin/ne-comadmin-comadmintxisolationleveloptions
                 - name: COMPLUS_APPTYPE
                   href: /windows/win32/api/ComSvcs/ne-comsvcs-complus_apptype
-                - name: CRMFLAGS
+                - name: FLAG CRM
                   href: /windows/win32/api/ComSvcs/ne-comsvcs-crmflags
                 - name: CRMREGFLAGS
                   href: /windows/win32/api/ComSvcs/ne-comsvcs-crmregflags
@@ -1062,7 +1062,7 @@
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-contextinfo-getactivityid
                     - name: Metodo GetContextId
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-contextinfo-getcontextid
-                    - name: Metodo getTransaction
+                    - name: Metodo GetTransaction
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-contextinfo-gettransaction
                     - name: Metodo GetTransactionId
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-contextinfo-gettransactionid
@@ -1195,16 +1195,16 @@
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icominstance2events-onobjectcreate2
                     - name: Metodo OnObjectDestroy2
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icominstance2events-onobjectdestroy2
-                - name: ICOMLBArguments
+                - name: Argomenti ICOMLBArguments
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-icomlbarguments
                   items:
-                    - name: Metodo getclsid
+                    - name: Metodo GetCLSID
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icomlbarguments-getclsid
-                    - name: GetMachineName (metodo)
+                    - name: Metodo GetMachineName
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icomlbarguments-getmachinename
-                    - name: Metodo seclsid
+                    - name: Metodo SetCLSID
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icomlbarguments-setclsid
-                    - name: ComputerName (metodo)
+                    - name: Metodo SetMachineName
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icomlbarguments-setmachinename
                 - name: IComLTxEvents
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-icomltxevents
@@ -1350,9 +1350,9 @@
                 - name: IComTrackingInfoCollection
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-icomtrackinginfocollection
                   items:
-                    - name: Count (metodo)
+                    - name: Metodo Count
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icomtrackinginfocollection-count
-                    - name: Item (metodo)
+                    - name: Metodo Item
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icomtrackinginfocollection-item
                     - name: Metodo Type
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icomtrackinginfocollection-type
@@ -1361,7 +1361,7 @@
                   items:
                     - name: Metodo OnNewTrackingInfo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icomtrackinginfoevents-onnewtrackinginfo
-                - name: IComTrackingInfoObject
+                - name: Oggetto IComTrackingInfoObject
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-icomtrackinginfoobject
                   items:
                     - name: Metodo GetValue
@@ -1369,7 +1369,7 @@
                 - name: IComTrackingInfoProperties
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-icomtrackinginfoproperties
                   items:
-                    - name: Metodo getpropname
+                    - name: Metodo GetPropName
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icomtrackinginfoproperties-getpropname
                     - name: Metodo PropCount
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icomtrackinginfoproperties-propcount
@@ -1403,7 +1403,7 @@
                 - name: IContextProperties
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-icontextproperties
                   items:
-                    - name: Count (metodo)
+                    - name: Metodo Count
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icontextproperties-count
                     - name: Metodo EnumNames
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icontextproperties-enumnames
@@ -1441,12 +1441,12 @@
                 - name: ICreateWithTipTransactionEx
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-icreatewithtiptransactionex
                   items:
-                    - name: CreateInstance (metodo)
+                    - name: Metodo CreateInstance
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icreatewithtiptransactionex-createinstance
                 - name: ICreateWithTransactionEx
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-icreatewithtransactionex
                   items:
-                    - name: CreateInstance (metodo)
+                    - name: Metodo CreateInstance
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icreatewithtransactionex-createinstance
                 - name: ICrmCompensator
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-icrmcompensator
@@ -1514,7 +1514,7 @@
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icrmlogcontrol-forcetransactiontoabort
                     - name: Metodo ForgetLogRecord
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icrmlogcontrol-forgetlogrecord
-                    - name: Metodo get_TransactionUOW
+                    - name: get_TransactionUOW metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icrmlogcontrol-get_transactionuow
                     - name: Metodo RegisterCompensator
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icrmlogcontrol-registercompensator
@@ -1525,22 +1525,22 @@
                 - name: ICrmMonitor
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-icrmmonitor
                   items:
-                    - name: Metodo getclerks
+                    - name: Metodo GetClerks
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icrmmonitor-getclerks
                     - name: Metodo HoldClerk
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icrmmonitor-holdclerk
                 - name: ICrmMonitorClerks
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-icrmmonitorclerks
                   items:
-                    - name: ActivityId (metodo)
+                    - name: Metodo ActivityId
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icrmmonitorclerks-activityid
-                    - name: Description (metodo)
+                    - name: Metodo Description
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icrmmonitorclerks-description
-                    - name: Metodo get__NewEnum
+                    - name: get__NewEnum metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icrmmonitorclerks-get__newenum
-                    - name: Metodo get_Count
+                    - name: get_Count metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icrmmonitorclerks-get_count
-                    - name: Item (metodo)
+                    - name: Metodo Item
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icrmmonitorclerks-item
                     - name: Metodo ProgIdCompensator
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icrmmonitorclerks-progidcompensator
@@ -1549,11 +1549,11 @@
                 - name: ICrmMonitorLogRecords
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-icrmmonitorlogrecords
                   items:
-                    - name: Metodo get_Count
+                    - name: metodo get_Count
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icrmmonitorlogrecords-get_count
-                    - name: Metodo get_StructuredRecords
+                    - name: metodo get_StructuredRecords
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icrmmonitorlogrecords-get_structuredrecords
-                    - name: Metodo get_TransactionState
+                    - name: metodo get_TransactionState
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icrmmonitorlogrecords-get_transactionstate
                     - name: Metodo GetLogRecord
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-icrmmonitorlogrecords-getlogrecord
@@ -1566,7 +1566,7 @@
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-idispenserdriver-createresource
                     - name: Metodo DestroyResource
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-idispenserdriver-destroyresource
-                    - name: Metodo DestroyResourceS
+                    - name: Metodo DestroyResources
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-idispenserdriver-destroyresources
                     - name: Metodo EnlistResource
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-idispenserdriver-enlistresource
@@ -1603,7 +1603,7 @@
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-ienumnames-reset
                     - name: Metodo Skip
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-ienumnames-skip
-                - name: IEventClass
+                - name: Classe IEvent
                   href: /windows/desktop/api/eventsys/nn-eventsys-ieventclass
                   items:
                     - name: Proprietà CustomConfigCLSID
@@ -1618,7 +1618,7 @@
                       href: /windows/desktop/api/eventsys/nf-eventsys-ieventclass-get_firinginterfaceid
                     - name: Proprietà OwnerSID
                       href: /windows/desktop/api/eventsys/nf-eventsys-ieventclass-get_ownersid
-                    - name: TypeLib (proprietà)
+                    - name: Proprietà TypeLib
                       href: /windows/desktop/api/eventsys/nf-eventsys-ieventclass-get_typelib
                 - name: IEventClass2
                   href: /windows/desktop/api/eventsys/nn-eventsys-ieventclass2
@@ -1636,7 +1636,7 @@
                   items:
                     - name: Proprietà AllowInprocActivation
                       href: /windows/desktop/api/Eventsys/nf-eventsys-ieventcontrol-get_allowinprocactivation
-                    - name: GetSubscriptions (metodo)
+                    - name: Metodo GetSubscriptions
                       href: /windows/desktop/api/Eventsys/nf-eventsys-ieventcontrol-getsubscriptions
                     - name: Metodo SetDefaultQuery
                       href: /windows/desktop/api/Eventsys/nf-eventsys-ieventcontrol-setdefaultquery
@@ -1661,7 +1661,7 @@
                 - name: IEventObjectCollection
                   href: /windows/desktop/api/Eventsys/nn-eventsys-ieventobjectcollection
                   items:
-                    - name: Proprietà _NewEnum
+                    - name: _NewEnum proprietà
                       href: /windows/desktop/api/Eventsys/nf-eventsys-ieventobjectcollection-get__newenum
                     - name: Aggiungi metodo
                       href: /windows/desktop/api/Eventsys/nf-eventsys-ieventobjectcollection-add
@@ -1671,7 +1671,7 @@
                       href: /windows/desktop/api/Eventsys/nf-eventsys-ieventobjectcollection-get_item
                     - name: Proprietà NewEnum
                       href: /windows/desktop/api/Eventsys/nf-eventsys-ieventobjectcollection-get_newenum
-                    - name: Remove (metodo)
+                    - name: Metodo Remove
                       href: /windows/desktop/api/Eventsys/nf-eventsys-ieventobjectcollection-remove
                 - name: IEventProperty
                   href: /windows/desktop/api/Eventsys/nn-eventsys-ieventproperty
@@ -1701,11 +1701,11 @@
                       href: /windows/desktop/api/EventSys/nf-eventsys-ieventsubscription-get_interfaceid
                     - name: Proprietà MachineName
                       href: /windows/desktop/api/EventSys/nf-eventsys-ieventsubscription-get_machinename
-                    - name: MethodName (proprietà)
+                    - name: Proprietà MethodName
                       href: /windows/desktop/api/EventSys/nf-eventsys-ieventsubscription-get_methodname
                     - name: Proprietà OwnerSID
                       href: /windows/desktop/api/EventSys/nf-eventsys-ieventsubscription-get_ownersid
-                    - name: Proprietà di lettura
+                    - name: Proprietà PerUser
                       href: /windows/desktop/api/EventSys/nf-eventsys-ieventsubscription-get_peruser
                     - name: Proprietà PublisherID
                       href: /windows/desktop/api/EventSys/nf-eventsys-ieventsubscription-get_publisherid
@@ -1723,7 +1723,7 @@
                       href: /windows/desktop/api/EventSys/nf-eventsys-ieventsubscription-get_subscriberinterface
                     - name: Proprietà SubscriptionID
                       href: /windows/desktop/api/EventSys/nf-eventsys-ieventsubscription-get_subscriptionid
-                    - name: Subscriptionname (proprietà)
+                    - name: Proprietà SubscriptionName
                       href: /windows/desktop/api/EventSys/nf-eventsys-ieventsubscription-get_subscriptionname
                 - name: IEventSubscription2
                   href: ieventsubscription2.md
@@ -1750,13 +1750,13 @@
                       href: /windows/desktop/api/EventSys/nf-eventsys-ieventsystem-get_eventobjectchangeeventclassid
                     - name: Metodo di query
                       href: /windows/desktop/api/EventSys/nf-eventsys-ieventsystem-query
-                    - name: Querys (metodo)
+                    - name: Metodo QueryS
                       href: /windows/desktop/api/EventSys/nf-eventsys-ieventsystem-querys
-                    - name: Remove (metodo)
+                    - name: Metodo Remove
                       href: /windows/desktop/api/EventSys/nf-eventsys-ieventsystem-remove
-                    - name: Metodo di rimozione
+                    - name: Metodo RemoveS
                       href: /windows/desktop/api/EventSys/nf-eventsys-ieventsystem-removes
-                    - name: Store (metodo)
+                    - name: Metodo Store
                       href: /windows/desktop/api/EventSys/nf-eventsys-ieventsystem-store
                 - name: IEventSystem2
                   href: ieventsystem2.md
@@ -1790,7 +1790,7 @@
                 - name: IGetContextProperties
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-igetcontextproperties
                   items:
-                    - name: Count (metodo)
+                    - name: Metodo Count
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-igetcontextproperties-count
                     - name: Metodo EnumNames
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-igetcontextproperties-enumnames
@@ -1814,11 +1814,11 @@
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iholder-requestdestroyresource
                     - name: Metodo TrackResource
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iholder-trackresource
-                    - name: Metodo TrackResourceS
+                    - name: Metodo TrackResources
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iholder-trackresources
                     - name: Metodo UntrackResource
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iholder-untrackresource
-                    - name: Metodo UntrackResourceS
+                    - name: Metodo UntrackResources
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iholder-untrackresources
                 - name: IManagedActivationEvents
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-imanagedactivationevents
@@ -1846,24 +1846,24 @@
                 - name: IManagedPooledObj
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-imanagedpooledobj
                   items:
-                    - name: Metodo demantenuto
+                    - name: Metodo SetHeld
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imanagedpooledobj-setheld
                 - name: IMessageMover
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-imessagemover
                   items:
-                    - name: Metodo get_CommitBatchSize
+                    - name: get_CommitBatchSize metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imessagemover-get_commitbatchsize
-                    - name: Metodo get_DestPath
+                    - name: get_DestPath metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imessagemover-get_destpath
-                    - name: Metodo get_SourcePath
+                    - name: get_SourcePath metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imessagemover-get_sourcepath
                     - name: Metodo MoveMessages
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imessagemover-movemessages
-                    - name: Metodo put_CommitBatchSize
+                    - name: put_CommitBatchSize metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imessagemover-put_commitbatchsize
-                    - name: Metodo put_DestPath
+                    - name: put_DestPath metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imessagemover-put_destpath
-                    - name: Metodo put_SourcePath
+                    - name: put_SourcePath metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imessagemover-put_sourcepath
                 - name: IMTSActivity
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-imtsactivity
@@ -1876,7 +1876,7 @@
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imtsactivity-synchronouscall
                     - name: Metodo UnbindFromThread
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imtsactivity-unbindfromthread
-                - name: IMTSCall
+                - name: CHIAMATA IMTS
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-imtscall
                   items:
                     - name: Metodo OnCall
@@ -1884,37 +1884,37 @@
                 - name: IMtsEventInfo
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-imtseventinfo
                   items:
-                    - name: Metodo get_Count
+                    - name: get_Count metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imtseventinfo-get_count
-                    - name: Metodo get_DisplayName
+                    - name: get_DisplayName metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imtseventinfo-get_displayname
-                    - name: Metodo get_EventID
+                    - name: get_EventID metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imtseventinfo-get_eventid
-                    - name: Metodo get_Names
+                    - name: get_Names metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imtseventinfo-get_names
-                    - name: Metodo get_Value
+                    - name: get_Value metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imtseventinfo-get_value
                 - name: IMtsEvents
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-imtsevents
                   items:
-                    - name: Metodo get_FireEvents
+                    - name: get_FireEvents metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imtsevents-get_fireevents
-                    - name: Metodo get_PackageGuid
+                    - name: get_PackageGuid metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imtsevents-get_packageguid
-                    - name: Metodo get_PackageName
+                    - name: get_PackageName metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imtsevents-get_packagename
                     - name: Metodo GetProcessID
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imtsevents-getprocessid
-                    - name: Metodo postEvent
+                    - name: Metodo PostEvent
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imtsevents-postevent
                 - name: IMtsGrp
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-imtsgrp
                   items:
-                    - name: Metodo get_Count
+                    - name: get_Count metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imtsgrp-get_count
-                    - name: Item (metodo)
+                    - name: Metodo Item
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imtsgrp-item
-                    - name: Refresh (metodo)
+                    - name: Metodo Refresh
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-imtsgrp-refresh
                 - name: IMTSLocator
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-imtslocator
@@ -1928,7 +1928,7 @@
                       href: /windows/desktop/api/EventSys/nf-eventsys-imultiinterfaceeventcontrol-get_allowinprocactivation
                     - name: Proprietà FireInParallel
                       href: /windows/desktop/api/EventSys/nf-eventsys-imultiinterfaceeventcontrol-get_fireinparallel
-                    - name: GetSubscriptions (metodo)
+                    - name: Metodo GetSubscriptions
                       href: /windows/desktop/api/EventSys/nf-eventsys-imultiinterfaceeventcontrol-getsubscriptions
                     - name: Metodo SetDefaultQuery
                       href: /windows/desktop/api/EventSys/nf-eventsys-imultiinterfaceeventcontrol-setdefaultquery
@@ -1944,17 +1944,17 @@
                 - name: IObjectConstruct
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-iobjectconstruct
                   items:
-                    - name: Costrutte (metodo)
+                    - name: Metodo Construct
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iobjectconstruct-construct
                 - name: IObjectConstructString
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-iobjectconstructstring
                   items:
-                    - name: Metodo get_ConstructString
+                    - name: get_ConstructString metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iobjectconstructstring-get_constructstring
                 - name: IObjectContext
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-iobjectcontext
                   items:
-                    - name: CreateInstance (metodo)
+                    - name: Metodo CreateInstance
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-createinstance
                     - name: Metodo DisableCommit
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-disablecommit
@@ -1968,7 +1968,7 @@
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-issecurityenabled
                     - name: Metodo SetAbort
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-setabort
-                    - name: Metodo secomplete
+                    - name: Metodo SetComplete
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-setcomplete
                 - name: IObjectContextActivity
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-iobjectcontextactivity
@@ -1982,7 +1982,7 @@
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontextinfo-getactivityid
                     - name: Metodo GetContextId
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontextinfo-getcontextid
-                    - name: Metodo getTransaction
+                    - name: Metodo GetTransaction
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontextinfo-gettransaction
                     - name: Metodo GetTransactionId
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontextinfo-gettransactionid
@@ -2035,7 +2035,7 @@
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iprocessinitializer-shutdown
                     - name: Metodo Startup
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iprocessinitializer-startup
-                - name: IPublisherFilter
+                - name: Filtro IPublisherFilter
                   href: /windows/desktop/api/EventSys/nn-eventsys-ipublisherfilter
                   items:
                     - name: Metodo Initialize
@@ -2045,11 +2045,11 @@
                 - name: ISecurityCallContext
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallcontext
                   items:
-                    - name: Metodo get__NewEnum
+                    - name: get__NewEnum metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallcontext-get__newenum
-                    - name: Metodo get_Count
+                    - name: get_Count metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallcontext-get_count
-                    - name: Metodo get_Item
+                    - name: get_Item metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallcontext-get_item
                     - name: Metodo IsCallerInRole
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallcontext-iscallerinrole
@@ -2060,20 +2060,20 @@
                 - name: ISecurityCallersColl
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallerscoll
                   items:
-                    - name: Metodo get__NewEnum
+                    - name: get__NewEnum metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallerscoll-get__newenum
-                    - name: Metodo get_Count
+                    - name: get_Count metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallerscoll-get_count
-                    - name: Metodo get_Item
+                    - name: get_Item metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallerscoll-get_item
                 - name: ISecurityIdentityColl
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-isecurityidentitycoll
                   items:
-                    - name: Metodo get__NewEnum
+                    - name: get__NewEnum metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isecurityidentitycoll-get__newenum
-                    - name: Metodo get_Count
+                    - name: get_Count metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isecurityidentitycoll-get_count
-                    - name: Metodo get_Item
+                    - name: get_Item metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isecurityidentitycoll-get_item
                 - name: ISecurityProperty
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-isecurityproperty
@@ -2102,7 +2102,7 @@
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isendmethodevents-sendmethodcall
                     - name: Metodo SendMethodReturn
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isendmethodevents-sendmethodreturn
-                - name: IServiceActivity
+                - name: Attività IServiceActivity
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-iserviceactivity
                   items:
                     - name: Metodo AsynchronousCall
@@ -2152,25 +2152,25 @@
                 - name: IServicePoolConfig
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-iservicepoolconfig
                   items:
-                    - name: Metodo get_ClassFactory
+                    - name: get_ClassFactory metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iservicepoolconfig-get_classfactory
-                    - name: Metodo get_CreationTimeout
+                    - name: get_CreationTimeout metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iservicepoolconfig-get_creationtimeout
-                    - name: Metodo get_MaxPoolSize
+                    - name: get_MaxPoolSize metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iservicepoolconfig-get_maxpoolsize
-                    - name: Metodo get_MinPoolSize
+                    - name: get_MinPoolSize metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iservicepoolconfig-get_minpoolsize
-                    - name: Metodo get_TransactionAffinity
+                    - name: get_TransactionAffinity metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iservicepoolconfig-get_transactionaffinity
-                    - name: Metodo put_ClassFactory
+                    - name: put_ClassFactory metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iservicepoolconfig-put_classfactory
-                    - name: Metodo put_CreationTimeout
+                    - name: put_CreationTimeout metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iservicepoolconfig-put_creationtimeout
-                    - name: Metodo put_MaxPoolSize
+                    - name: put_MaxPoolSize metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iservicepoolconfig-put_maxpoolsize
-                    - name: Metodo put_MinPoolSize
+                    - name: put_MinPoolSize metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iservicepoolconfig-put_minpoolsize
-                    - name: Metodo put_TransactionAffinity
+                    - name: put_TransactionAffinity metodo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iservicepoolconfig-put_transactionaffinity
                 - name: IServiceSxSConfig
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-iservicesxsconfig
@@ -2215,7 +2215,7 @@
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iservicetransactionconfigbase-bringyourowntransaction
                     - name: Metodo ConfigureTransaction
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iservicetransactionconfigbase-configuretransaction
-                    - name: IsolationLevel (metodo)
+                    - name: Metodo IsolationLevel
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iservicetransactionconfigbase-isolationlevel
                     - name: Metodo NewTransactionDescription
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-iservicetransactionconfigbase-newtransactiondescription
@@ -2224,9 +2224,9 @@
                 - name: ISharedProperty
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-isharedproperty
                   items:
-                    - name: Metodo get_Value
+                    - name: metodo get_Value
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isharedproperty-get_value
-                    - name: Metodo put_Value
+                    - name: metodo put_Value
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isharedproperty-put_value
                 - name: ISharedPropertyGroup
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-isharedpropertygroup
@@ -2235,25 +2235,25 @@
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createproperty
                     - name: Metodo CreatePropertyByPosition
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createpropertybyposition
-                    - name: Metodo get_Property
+                    - name: metodo get_Property
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-get_property
-                    - name: Metodo get_PropertyByPosition
+                    - name: metodo get_PropertyByPosition
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-get_propertybyposition
                 - name: ISharedPropertyGroupManager
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-isharedpropertygroupmanager
                   items:
                     - name: Metodo CreatePropertyGroup
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroupmanager-createpropertygroup
-                    - name: Metodo get__NewEnum
+                    - name: metodo get__NewEnum
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroupmanager-get__newenum
-                    - name: Metodo get_Group
+                    - name: metodo get_Group
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroupmanager-get_group
                 - name: ISystemAppEventData
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-isystemappeventdata
                   items:
                     - name: Metodo OnDataChanged
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isystemappeventdata-ondatachanged
-                    - name: Metodo Startup
+                    - name: Metodo di avvio
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-isystemappeventdata-startup
                 - name: IThreadPoolKnobs
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-ithreadpoolknobs
@@ -2285,7 +2285,7 @@
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-itransactioncontext-abort
                     - name: Metodo Commit
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-itransactioncontext-commit
-                    - name: CreateInstance (metodo)
+                    - name: Metodo CreateInstance
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-itransactioncontext-createinstance
                 - name: ITransactionContextEx
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-itransactioncontextex
@@ -2294,7 +2294,7 @@
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-itransactioncontextex-abort
                     - name: Metodo Commit
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-itransactioncontextex-commit
-                    - name: CreateInstance (metodo)
+                    - name: Metodo CreateInstance
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-itransactioncontextex-createinstance
                 - name: ITransactionProperty
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-itransactionproperty
@@ -2310,11 +2310,11 @@
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-itransactionproxy-commit
                     - name: Metodo CreateVoter
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-itransactionproxy-createvoter
-                    - name: GetIdentifier (metodo)
+                    - name: Metodo GetIdentifier
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-itransactionproxy-getidentifier
                     - name: Metodo GetIsolationLevel
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-itransactionproxy-getisolationlevel
-                    - name: Metodo Isvalidable
+                    - name: Metodo IsReusable
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-itransactionproxy-isreusable
                     - name: Metodo Promote
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-itransactionproxy-promote
@@ -2332,24 +2332,24 @@
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-itransactionstatus-gettransactionstatus
                     - name: Metodo SetTransactionStatus
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-itransactionstatus-settransactionstatus
-                - name: ObjectContext
+                - name: Objectcontext
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-objectcontext
                   items:
-                    - name: CreateInstance (metodo)
+                    - name: Metodo CreateInstance
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-objectcontext-createinstance
                     - name: Metodo DisableCommit
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-objectcontext-disablecommit
                     - name: Metodo EnableCommit
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-objectcontext-enablecommit
-                    - name: Metodo get__NewEnum
+                    - name: metodo get__NewEnum
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-objectcontext-get__newenum
-                    - name: Metodo get_ContextInfo
+                    - name: metodo get_ContextInfo
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-objectcontext-get_contextinfo
-                    - name: Metodo get_Count
+                    - name: metodo get_Count
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-objectcontext-get_count
-                    - name: Metodo get_Item
+                    - name: metodo get_Item
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-objectcontext-get_item
-                    - name: Metodo get_Security
+                    - name: metodo get_Security
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-objectcontext-get_security
                     - name: Metodo IsCallerInRole
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-objectcontext-iscallerinrole
@@ -2359,7 +2359,7 @@
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-objectcontext-issecurityenabled
                     - name: Metodo SetAbort
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-objectcontext-setabort
-                    - name: Metodo secomplete
+                    - name: Metodo SetComplete
                       href: /windows/desktop/api/ComSvcs/nf-comsvcs-objectcontext-setcomplete
                 - name: ObjectControl
                   href: /windows/desktop/api/ComSvcs/nn-comsvcs-objectcontrol

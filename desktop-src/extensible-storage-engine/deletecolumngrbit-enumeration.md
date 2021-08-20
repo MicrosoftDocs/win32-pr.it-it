@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione DeleteColumnGrbit'
+description: Altre informazioni sull'enumerazione DeleteColumnGrbit
 title: Enumerazione DeleteColumnGrbit
 TOCTitle: DeleteColumnGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.DeleteColumnGrbit
@@ -28,21 +28,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3191d3c73883d0bd27b4944718f2a0b3423e2c8b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9164d4789cfa836ff5d74f358d78363c2c18f2031dc0a921621d40f634cadbcb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118083340"
 ---
 # <a name="deletecolumngrbit-enumeration"></a>Enumerazione DeleteColumnGrbit
 
-Opzioni per [JetDeleteColumn2 (JET_SESID, JET_TABLEID, String, DeleteColumnGrbit)](./api.jetdeletecolumn2-method.md).
+Opzioni per [JetDeleteColumn2(JET_SESID, JET_TABLEID, String, DeleteColumnGrbit)](./api.jetdeletecolumn2-method.md).
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -78,7 +78,7 @@ public enum DeleteColumnGrbit
 <tr class="even">
 <td></td>
 <td>IgnoreTemplateColumns</td>
-<td>L'API deve solo tentare di eliminare le colonne nella tabella derivata. Se una colonna con tale nome esiste nella tabella di base, verrà ignorata.</td>
+<td>L'API deve tentare di eliminare solo le colonne nella tabella derivata. Se nella tabella di base esiste una colonna con tale nome, questa verrà ignorata.</td>
 </tr>
 </tbody>
 </table>
@@ -88,4 +88,4 @@ public enum DeleteColumnGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

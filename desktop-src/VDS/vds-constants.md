@@ -4,21 +4,21 @@ ms.assetid: a3a8b549-51bc-48eb-9215-04c7311e03a3
 title: Costanti VDS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9979cd4416b5305c61f6275612422b1f4cfe43a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e9fa0c6196e1085de3a5433750b890e2ad3bc42f4a86022587f02157521eacf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118125694"
 ---
 # <a name="vds-constants"></a>Costanti VDS
 
-\[A partire da Windows 8 e Windows Server 2012, l'interfaccia com del [servizio dischi virtuali](virtual-disk-service-portal.md) viene sostituita dall' [API di gestione archiviazione di Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[A partire da Windows 8 e Windows Server 2012, [l'interfaccia](virtual-disk-service-portal.md) COM del servizio dischi virtuali viene sostituita dal Windows Archiviazione API Gestione [.](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal)\]
 
 Le costanti VDS sono classificate come segue:
 
 -   [Costanti di stato dell'oggetto](#object-status-constants)
--   [Costanti degli hint di automagic](#automagic-hints-constants)
+-   [Costanti dei suggerimenti automagic](#automagic-hints-constants)
 -   [Costanti varie](#miscellaneous-constants)
 
 ### <a name="object-status-constants"></a>Costanti di stato dell'oggetto
@@ -27,31 +27,31 @@ Le costanti VDS sono classificate come segue:
 
 | Costante           | Valore |
 |--------------------|-------|
-| STATO \_ sconosciuto    | 0     |
-| STATO \_ online     | 1     |
-| STATO \_ non \_ pronto | 2     |
-| STATO \_ nessun \_ supporto  | 3     |
-| STATO \_ offline    | 4     |
-| STATO \_ non riuscito     | 5     |
-| STATO \_ mancante    | 6     |
+| STATO \_ SCONOSCIUTO    | 0     |
+| STATO \_ ONLINE     | 1     |
+| STATO \_ NON \_ PRONTO | 2     |
+| STATO \_ NO \_ MEDIA  | 3     |
+| STATO \_ OFFLINE    | 4     |
+| STATO \_ NON RIUSCITO     | 5     |
+| STATO \_ MANCANTE    | 6     |
 
 
 
  
 
-### <a name="automagic-hints-constants"></a>Costanti degli hint di automagic
+### <a name="automagic-hints-constants"></a>Costanti dei suggerimenti automagic
 
 
 
 | Costante                               | Valore   |
 |----------------------------------------|---------|
-| \_MOSTLYREADS hint \_ VDS                 | 0x0002L |
-| \_OPTIMIZEFORSEQUENTIALREADS hint \_ VDS  | 0x0004L |
-| \_OPTIMIZEFORSEQUENTIALWRITES hint \_ VDS | 0x0008L |
-| \_REMAPENABLED hint \_ VDS                | 0x0020L |
-| \_WRITETHROUGHCACHINGENABLED hint \_ VDS  | 0x0040L |
-| \_HARDWARECHECKSUMENABLED hint \_ VDS     | 0x0080L |
-| HINT VDS che è stato \_ \_ ritirato                  | 0x0100L |
+| HINT VDS \_ \_ PRINCIPALMENTEREADS                 | 0x0002L |
+| OTTIMIZZAZIONE \_ HINT \_ VDSFORSEQUENTIALREADS  | 0x0004L |
+| OTTIMIZZAZIONE \_ HINT \_ VDSFORSEQUENTIALWRITES | 0x0008L |
+| \_REMAPENABLED DELL'HINT \_ VDS                | 0x0020L |
+| \_WRITETHROUGHCACHINGENABLED DELL'HINT VDS \_  | 0x0040L |
+| SUGGERIMENTO VDS \_ \_ HARDWARECHECKSUMENABLED     | 0x0080L |
+| VDS \_ HINT \_ ISYANKABLE                  | 0x0100L |
 
 
 
@@ -63,16 +63,16 @@ Le costanti VDS sono classificate come segue:
 
 | Costante                     | Valore      |
 |------------------------------|------------|
-| \_min priorità di ricompilazione VDS \_ \_  | 0x0001L    |
-| \_ \_ informazioni lun versione \_ VDS   | 1          |
-| \_lunghezza max ComputerName \_    | 15         |
-| \_lunghezza massima ProviderName \_    | 200        |
-| \_lunghezza massima VERSIONSTRING \_   | 16         |
-| \_prop lettera di unità \_          | N/D        |
-| dimensioni MASSIMe del \_ \_ nome FS \_          | 8          |
-| il \_ membro IDX non è valido \_         | 0xFFFFFFFF |
-| \_ \_ lunghezza nome partizione \_ GPT | 36         |
-| \_percorso massimo                    | 260        |
+| PRIORITÀ DI \_ \_ RICOMPILAZIONE VDS \_ MIN  | 0x0001L    |
+| INFORMAZIONI SUL LUN VER \_ VDS \_ \_   | 1          |
+| LUNGHEZZA \_ MASSIMA \_ COMPUTERNAME    | 15         |
+| LUNGHEZZA \_ MASSIMA \_ PROVIDERNAME    | 200        |
+| LUNGHEZZA \_ MASSIMA \_ VERSIONSTRING   | 16         |
+| PROP \_ LETTERA \_ DI UNITÀ          | N/A        |
+| DIMENSIONI \_ MASSIME \_ DEI NOMI \_ FS          | 8          |
+| IDX \_ \_ MEMBRO NON VALIDO         | 0xffffffff |
+| LUNGHEZZA NOME PARTIZIONE GPT \_ \_ \_ | 36         |
+| MAX \_ PATH                    | 260        |
 
 
 
@@ -82,7 +82,7 @@ Le costanti VDS sono classificate come segue:
 
 <dl> <dt>
 
-[Riferimento VDS](vds-reference.md)
+[Informazioni di riferimento su VDS](vds-reference.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Il denominatore di PKEY \_ GPS \_ DestLatitude.
+description: Denominatore della \_ \_ DestLatitude GPS PKEY.
 ms.assetid: 1893d5f0-8703-41cf-854a-c6236553c06a
-title: System. GPS. DestLatitudeDenominator
+title: System.GPS.DestLatitudeDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f03ea5ae0171e81bc9ff555ff3b52f9fd1674031
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cedafeed5c2f366e753d2aaa58860f0b91ae8fb561dd3e51550ab46a60595fd8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118053190"
 ---
-# <a name="systemgpsdestlatitudedenominator"></a>System. GPS. DestLatitudeDenominator
+# <a name="systemgpsdestlatitudedenominator"></a>System.GPS.DestLatitudeDenominator
 
-Il denominatore di PKEY \_ GPS \_ DestLatitude.
+Denominatore della \_ \_ DestLatitude GPS PKEY.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,13 +32,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,13 +62,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

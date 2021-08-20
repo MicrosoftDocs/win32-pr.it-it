@@ -1,7 +1,7 @@
 ---
 description: Questo operatore verifica la disuguaglianza tra gli oggetti CMediaType.
 ms.assetid: 9caf4cb9-f049-42e7-abe4-79f8bf0ea542
-title: 'Metodo CMediaType. CMediaType:: operator! = (mtype. h)'
+title: Metodo CMediaType.CMediaType::operator!= (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fe3d5b60ed1990423d5ad9375ffdf192da313b8d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c17db60821be2f5243afab83ed62ec9b5b5b50e5d7a3f500d159ec185260a402
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326401"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156239"
 ---
-# <a name="cmediatypecmediatypeoperator-method"></a>Metodo CMediaType. CMediaType:: operator! =
+# <a name="cmediatypecmediatypeoperator-method"></a>Metodo CMediaType.CMediaType::operator!=
 
-Questo operatore verifica la disuguaglianza tra gli oggetti [**CMediaType**](cmediatype.md) .
+Questo operatore verifica la disuguaglianza tra [**gli oggetti CMediaType.**](cmediatype.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ BOOL CMediaType::operator!=(
 
 <dl> <dt>
 
-*RT* \[ Ref\]
+*rt* \[ Ref\]
 </dt> <dd>
 
-Riferimento all'oggetto **CMediaType** da confrontare.
+Riferimento **all'oggetto CMediaType** da confrontare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se *RT* non è uguale all'oggetto. In caso contrario, restituisce **false**.
+Restituisce **TRUE** se *rt* non è uguale a questo oggetto. In caso contrario, **restituisce FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce **true** se *RT* non è uguale all'oggetto. In caso contrario, resti
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Mtype. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Mtype.h (includere Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

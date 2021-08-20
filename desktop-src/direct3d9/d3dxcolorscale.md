@@ -47,7 +47,7 @@ D3DXCOLOR* D3DXColorScale(
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Puntatore a [**una struttura D3DXCOLOR**](d3dxcolor.md) che è il risultato dell'operazione.
+Puntatore a [**una struttura D3DXCOLOR**](d3dxcolor.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetTargetRect Recupera il rettangolo di destinazione corrente.
+description: Il metodo GetTargetRect recupera il rettangolo di destinazione corrente.
 ms.assetid: b6542b06-af36-4666-b6fa-d9fa3c6c7044
-title: Metodo CDrawImage. GetTargetRect (Winutil. h)
+title: Metodo CDrawImage.GetTargetRect (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 547dd12117cec95ad1cb0159667a8dd72a95a6e5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1ba520b0bb48ed60ba2a9c48165eb83959107ecd777bdecc8bce12e7672d221e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076411"
 ---
-# <a name="cdrawimagegettargetrect-method"></a>CDrawImage. GetTargetRect, metodo
+# <a name="cdrawimagegettargetrect-method"></a>Metodo CDrawImage.GetTargetRect
 
 Il `GetTargetRect` metodo recupera il rettangolo di destinazione corrente.
 
@@ -45,7 +45,7 @@ void GetTargetRect(
 *pTargetRect* 
 </dt> <dd>
 
-Puntatore a una struttura **Rect** che riceve il rettangolo di destinazione.
+Puntatore a una **struttura RECT** che riceve il rettangolo di destinazione.
 
 </dd> </dl>
 
@@ -59,8 +59,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

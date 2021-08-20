@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_COLUMNBASE Class'
-title: Classe JET_COLUMNBASE
+description: 'Altre informazioni su: JET_COLUMNBASE classe'
+title: JET_COLUMNBASE classe
 TOCTitle: JET_COLUMNBASE class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_COLUMNBASE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columnbase(v=EXCHG.10)
@@ -24,14 +24,14 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c05dd9db9c52d3dc3b2a7d0f68a9c94fd6251193
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44847867357577397f5d7d926759a11a64323e561d11841290a1b5ace42d7552
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119781101"
 ---
-# <a name="jet_columnbase-class"></a>Classe JET_COLUMNBASE
+# <a name="jet_columnbase-class"></a>JET_COLUMNBASE classe
 
 Descrive una colonna in una tabella di un database ESENT.
 
@@ -40,8 +40,8 @@ Descrive una colonna in una tabella di un database ESENT.
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_COLUMNBASE  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -65,6 +65,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri JET_COLUMNBASE](./jet-columnbase-members.md)
+[JET_COLUMNBASE membri](./jet-columnbase-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,19 +1,19 @@
 ---
-description: Informazioni sulla proprietà System.PropGroup.GPS. Non usare questa proprietà per ottenere o impostare valori. È destinato solo a un marcatore.
+description: Informazioni sulla proprietà System.PropGroup.GPS. Non usare questa proprietà per ottenere o impostare valori. È inteso solo come marcatore.
 ms.assetid: bdc3d22c-d055-47f7-86ad-6e050608ad12
 title: System.PropGroup.GPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3544f433ef83d64b65f1ad33a8d732ccf80b8181
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: a8a101c15bc819b1cbe834c387d3e44326eccb047d67569ae43818f29966996b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945101"
 ---
 # <a name="systempropgroupgps"></a>System.PropGroup.GPS
 
-Separatore di gruppi di proprietà usato negli elenchi di proprietà per separare i file audio da altri tipi. Non usare questa proprietà per ottenere o impostare valori. È destinato solo a un marcatore.
+Separatore del gruppo di proprietà utilizzato negli elenchi di proprietà per separare i file audio da altri tipi. Non usare questa proprietà per ottenere o impostare valori. È inteso solo come marcatore.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -38,7 +38,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -68,7 +68,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

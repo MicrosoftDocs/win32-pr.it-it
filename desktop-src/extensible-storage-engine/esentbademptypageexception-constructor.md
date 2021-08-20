@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentBadEmptyPageException'
+description: Altre informazioni sul costruttore EsentBadEmptyPageException
 title: Costruttore EsentBadEmptyPageException
 TOCTitle: 'EsentBadEmptyPageException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentBadEmptyPageException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 339940c777c571b8766a93f60f3486170769efcc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e1720a11ac294fdf10a6cc70be8a1d941f6530da7409907d78dcad7a63f4c131
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119785981"
 ---
 # <a name="esentbademptypageexception-constructor"></a>Costruttore EsentBadEmptyPageException
 
 Inizializza una nuova istanza della classe EsentBadEmptyPageException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentBadEmptyPageException()
 
 [Membri di EsentBadEmptyPageException](./esentbademptypageexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

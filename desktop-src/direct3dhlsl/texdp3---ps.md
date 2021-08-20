@@ -1,6 +1,6 @@
 ---
-title: texdp3-PS
-description: Esegue un prodotto punto a tre componenti tra i dati nel numero di registro della trama e il set di coordinate di trama corrispondente al numero di registro di destinazione.
+title: texdp3 - ps
+description: Esegue un prodotto punto a tre componenti tra i dati nel numero del registro trame e il set di coordinate della trama corrispondente al numero del registro di destinazione.
 ms.assetid: 82e02f3f-4b88-4007-b4be-0c66223d9c66
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,44 +9,44 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 64cc14ee66123ea3e25941579b9838977a753174
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: e39f2682aac7741af304269b0584f3552158b2f83596c7fd55f1c83948d09f0a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104335452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119788201"
 ---
-# <a name="texdp3---ps"></a>texdp3-PS
+# <a name="texdp3---ps"></a>texdp3 - ps
 
-Esegue un prodotto punto a tre componenti tra i dati nel numero di registro della trama e il set di coordinate di trama corrispondente al numero di registro di destinazione.
+Esegue un prodotto punto a tre componenti tra i dati nel numero del registro trame e il set di coordinate della trama corrispondente al numero del registro di destinazione.
 
 ## <a name="syntax"></a>Sintassi
 
 
 
-| texdp3 DST, src |
+| texdp3 dst, src |
 |-----------------|
 
 
 
- 
+ 
 
 dove
 
--   DST è il registro di destinazione.
+-   dst è il registro di destinazione.
 -   src è un registro di origine.
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni dei pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | texdp3                |      | x    | x    |      |      |      |       |      |       |
 
 
 
- 
+ 
 
 I registri di trama devono usare la sequenza seguente.
 
@@ -63,22 +63,22 @@ texdp3 t(m), t(n)  // where m > n
 
 
 
-Di seguito sono riportate informazioni più dettagliate sul modo in cui viene eseguito il prodotto punto.
+Di seguito sono fornite informazioni più dettagliate sul modo in cui viene ottenuto il prodotto dot.
 
-L'istruzione texdp3 esegue un prodotto punto a tre componenti e lo replica in tutti e quattro i canali colori.
+L'istruzione texdp3 esegue un prodotto dot a tre componenti e lo replica in tutti e quattro i canali di colore.
 
-t (m)<sub>RGBA</sub> = TextureCoordinates (fase m)<sub>UVW</sub> \* t (n)<sub>RGB</sub>
+t(m)<sub>RGBA</sub> = TextureCoordinates(stage m)<sub>UVW</sub> \* t(n)<sub>RGB</sub>
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
+[Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

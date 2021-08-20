@@ -1,6 +1,6 @@
 ---
 title: DownloadItem.progress
-description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato. La proprietà progress recupera lo stato del download in byte.
+description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato. La proprietà progress recupera lo stato di avanzamento del download in byte.
 ms.assetid: 58644eac-8dd0-4e9d-8055-03833c863a6e
 keywords:
 - DownloadItem.progress Windows Media Player
@@ -24,11 +24,11 @@ ms.locfileid: "118340731"
 # <a name="downloaditemprogress"></a>DownloadItem.progress
 
 > [!Note]  
-> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato.
 
  
 
-La **proprietà progress** recupera lo stato del download in byte.
+La **proprietà** progress recupera lo stato di avanzamento del download in byte.
 
 ## <a name="syntax"></a>Sintassi
 

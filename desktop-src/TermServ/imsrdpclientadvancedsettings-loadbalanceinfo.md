@@ -1,6 +1,6 @@
 ---
-title: Proprietà LoadBalanceInfo IMsRdpClientAdvancedSettings
-description: Specifica il cookie di bilanciamento del carico che verrà inserito nel pacchetto di richiesta di connessione X.224 nella sequenza di connessione del protocollo server host sessione Desktop remoto (Host sessione Desktop remoto).
+title: Proprietà LoadBalanceInfo di IMsRdpClientAdvancedSettings
+description: Specifica il cookie di bilanciamento del carico che verrà inserito nel pacchetto di richiesta di connessione X.224 nella sequenza di connessione del protocollo del protocollo Desktop remoto Session Host (Host sessione Desktop remoto).
 ms.assetid: 25f12a2e-00a2-42a8-afd3-81efcd94da94
 ms.tgt_platform: multiple
 keywords:
@@ -63,7 +63,7 @@ ms.locfileid: "118353040"
 ---
 # <a name="imsrdpclientadvancedsettingsloadbalanceinfo-property"></a>Proprietà IMsRdpClientAdvancedSettings::LoadBalanceInfo
 
-Specifica il cookie di bilanciamento del carico che verrà inserito nel pacchetto di richiesta di connessione X.224 nella sequenza di connessione del protocollo server host sessione Desktop remoto (Host sessione Desktop remoto).
+Specifica il cookie di bilanciamento del carico che verrà inserito nel pacchetto di richiesta di connessione X.224 nella sequenza di connessione del protocollo del protocollo Desktop remoto Session Host (Host sessione Desktop remoto).
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -92,7 +92,7 @@ Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Le informazioni sul bilanciamento del carico vengono usate dai router di bilanciamento del carico per scegliere il server migliore per il client quando si usano farm di server Host sessione Desktop remoto. Il server Host sessione Desktop remoto stesso non usa queste informazioni e le rimuoverà.
+Le informazioni di bilanciamento del carico vengono usate dai router di bilanciamento del carico per scegliere il server migliore per il client quando si usano farm di server Host sessione Desktop remoto. Il server Host sessione Desktop remoto stesso non usa queste informazioni e le rimuove.
 
 Il cookie usa la sintassi seguente, con distinzione tra maiuscole e minuscole:
 
@@ -104,9 +104,9 @@ Ad esempio, il cookie usato per accedere all'indirizzo IP 172.31.249.216, il num
 
 **Cookie: msts=3640205228.15629.0000 \\ r \\ n**
 
-Gli ultimi quattro zeri sono facoltativi e sono riservati. È necessario il separatore decimale finale, così come il ritorno a capo e il avanzamento riga finali. La lunghezza della stringa, in caratteri, deve essere un multiplo pari di 2, quindi aggiungere uno spazio se necessario.
+Gli ultimi quattro zeri sono facoltativi e sono riservati. Il separatore decimale finale è obbligatorio, così come il ritorno a capo e l'avanzamento riga finali. La lunghezza della stringa, in caratteri, deve essere un multiplo pari a 2, quindi aggiungere uno spazio, se necessario.
 
-Se non viene specificato alcun cookie, il valore predefinito **è Cookie: mstshash=**_UserName_*_\\ r \\ n_*.
+Se non viene specificato alcun cookie, il valore predefinito è **Cookie: mstshash=**_UserName_*_\\ r \\ n_*.
 
 Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 

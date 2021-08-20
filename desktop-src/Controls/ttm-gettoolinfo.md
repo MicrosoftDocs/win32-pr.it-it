@@ -1,9 +1,9 @@
 ---
-title: Messaggio TTM_GETTOOLINFO (COMmctrl. h)
-description: Recupera le informazioni che un controllo ToolTip gestisce su uno strumento.
+title: TTM_GETTOOLINFO messaggio (Commctrl.h)
+description: Recupera le informazioni mantenute da un controllo descrizione comando su uno strumento.
 ms.assetid: b94d3b78-2437-4c60-ba46-b3f57cf9c876
 keywords:
-- Controlli di Windows Message TTM_GETTOOLINFO
+- TTM_GETTOOLINFO dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc0de37b97be3bec495c8777b2ddd1cc6fc1bd42
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 77f19243603ab5d2ba62d498a5595528e39b33658c7a8e4aa0638888806684ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118166374"
 ---
-# <a name="ttm_gettoolinfo-message"></a>\_Messaggio TTM GETTOOLINFO
+# <a name="ttm_gettoolinfo-message"></a>TTM \_ GETTOOLINFO message
 
-Recupera le informazioni che un controllo ToolTip gestisce su uno strumento.
+Recupera le informazioni mantenute da un controllo descrizione comando su uno strumento.
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,21 +37,21 @@ Recupera le informazioni che un controllo ToolTip gestisce su uno strumento.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) . Quando si invia il messaggio, i membri **HWND** e **UID** identificano uno strumento e il membro **cbSize** deve specificare le dimensioni della struttura. Quando si usa questo messaggio per recuperare il testo della descrizione comando, verificare che il membro **lpszText** della struttura **TOOLINFO** punti a un buffer valido di dimensione adquate
+Puntatore a una [**struttura TOOLINFO.**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) Quando si invia il messaggio, i **membri hwnd** e **uId** identificano uno strumento e il membro **cbSize** deve specificare le dimensioni della struttura. Quando si usa questo messaggio per recuperare il testo della descrizione comando, assicurarsi che il membro **lpszText** della struttura **TOOLINFO** punti a un buffer valido di dimensioni adquate
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Se il controllo ToolTip include lo strumento, la struttura [**TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) riceve informazioni sullo strumento.
+Se il controllo descrizione comando include lo strumento, la [**struttura TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) riceve informazioni sullo strumento.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene riposizionato un controllo ToolTip.
+Nell'esempio seguente viene riposizionato un controllo descrizione comando.
 
 
 ```C++
@@ -95,9 +95,9 @@ HRESULT MyToolTipClass::OffsetTooltip(int xOffset, int yOffset)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **TTM \_ GETTOOLINFOW** (Unicode) e **TTM \_ GETTOOLINFOA** (ANSI)<br/>           |
 
 
