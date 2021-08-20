@@ -1,5 +1,5 @@
 ---
-description: La maggior parte delle funzioni getXbyY viene convertita dal32.dll Ws2 in una sequenza \_ WSALookupServiceBegin, WSALookupServiceNext e WSALookupServiceEnd che usa uno di un set di GUID speciali come classe del servizio.
+description: La maggior parte delle funzioni getXbyY viene convertita dalla sequenza Ws232.dll in una sequenza \_ WSALookupServiceBegin, WSALookupServiceNext e WSALookupServiceEnd che usa uno di un set di GUID speciali come classe del servizio.
 ms.assetid: c64db095-bd7c-489a-871a-fb887624967c
 title: Approccio di base per GetXbyY nell'API
 ms.topic: article

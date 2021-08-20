@@ -1,11 +1,11 @@
 ---
 title: Metodo INapEnforcementClientBinding NotifySoHChangeFailure (NapEnforcementClient.h)
-description: Viene usato dal client di imposizione per informare NapAgent che non è stato in grado di elaborare una notifica NotifySoHChange INapEnforcementClientCallback precedente.
+description: Viene usato dal client di imposizione per informare NapAgent che non è stato possibile elaborare un oggetto INapEnforcementClientCallback NotifySoHChange precedente.
 ms.assetid: 2de1626c-ffda-4191-90c4-72d0275965d9
 keywords:
-- Metodo NotifySoHChangeFailure nap
+- Metodo NotifySoHChangeFailure NAP
 - Metodo NotifySoHChangeFailure NAP , interfaccia INapEnforcementClientBinding
-- Metodo NotifySoHChangeFailure dell'interfaccia INapEnforcementClientBinding nap
+- Metodo NotifySoHChangeFailure dell'interfaccia INapEnforcementClientBinding NAP
 topic_type:
 - apiref
 api_name:
@@ -30,7 +30,7 @@ ms.locfileid: "118134219"
 
  
 
-Il metodo **INapEnforcementClientBinding::NotifySoHChangeFailure** viene usato dal client di imposizione per informare NapAgent che non è stato possibile elaborare un [**INapEnforcementClientCallback::NotifySoHChange precedente.**](inapenforcementclientcallback-notifysohchange-method.md)
+Il metodo **INapEnforcementClientBinding::NotifySoHChangeFailure** viene usato dal client di imposizione per informare NapAgent che non è stato possibile elaborare un [**oggetto INapEnforcementClientCallback::NotifySoHChange precedente.**](inapenforcementclientcallback-notifysohchange-method.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,9 +54,9 @@ Possono essere restituiti anche altri codici di errore specifici di COM.
 | Codice restituito                                                                                             | Descrizione                                                        |
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                   | L'operazione è riuscita.<br/>                            |
-| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl>         | Errore di autorizzazioni, accesso negato.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>          | Limite di risorse di sistema: impossibile eseguire l'operazione.<br/> |
-| <dl> <dt>**PROTEZIONE \_ ACCESSO ALLA RETE NON \_ \_ INIZIALIZZATA**</dt> </dl> | L'applicazione non è stata inizializzata in precedenza.<br/>       |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl>         | Errore di autorizzazione, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>          | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
+| <dl> <dt>**PROTEZIONE \_ ACCESSO ALLA RETE E NON \_ \_ INIZIALIZZATA**</dt> </dl> | L'applicazione non è stata inizializzata in precedenza.<br/>       |
 
 
 
@@ -64,7 +64,7 @@ Possono essere restituiti anche altri codici di errore specifici di COM.
 
 ## <a name="remarks"></a>Commenti
 
-Come risultato di questo metodo, chiamare i tentativi di NapAgent applicando la modifica SoH in un secondo momento chiamando nuovamente [**INapEnforcementClientCallback::NotifySoHChange.**](inapenforcementclientcallback-notifysohchange-method.md) Dopo che il client di imposizione ha chiamato [**INapEnforcementClientBinding::GetSoHRequest,**](inapenforcementclientbinding-getsohrequest-method.md)deve applicare la modifica, ad esempio non vengono gestiti errori da NapAgent dopo questo punto.
+Come risultato di questo metodo, i tentativi di NapAgent di applicare la modifica SoH in un secondo momento chiamando di nuovo [**INapEnforcementClientCallback::NotifySoHChange.**](inapenforcementclientcallback-notifysohchange-method.md) Dopo che il client di imposizione ha chiamato [**INapEnforcementClientBinding::GetSoHRequest,**](inapenforcementclientbinding-getsohrequest-method.md)deve applicare la modifica, ad esempio nessun errore viene gestito da NapAgent dopo questo punto.
 
 Il client di imposizione deve chiamare il metodo [**INapEnforcementClientBinding::Initialize**](inapenforcementclientbinding-initialize-method.md) prima di chiamare questo o qualsiasi altro metodo [**dell'interfaccia INapEnforcementClientBinding.**](inapenforcementclientbinding.md)
 
@@ -74,8 +74,8 @@ Il client di imposizione deve chiamare il metodo [**INapEnforcementClientBinding
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                |
 | Intestazione<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |

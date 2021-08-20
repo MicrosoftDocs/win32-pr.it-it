@@ -1,19 +1,19 @@
 ---
 title: Uso di Netsh per gestire le tracce
-description: In Windows 7 è netsh.exe da un prompt dei comandi per abilitare e configurare le tracce di rete. In questa sezione vengono descritti alcuni dei comandi netsh.exe che consentono di risolvere i problemi di traccia, inclusa la nuova funzionalità di traccia netsh.
+description: In Windows 7 è possibile netsh.exe da un prompt dei comandi per abilitare e configurare le tracce di rete. In questa sezione vengono descritti alcuni dei comandi netsh.exe che consentono di risolvere i problemi di traccia, inclusa la nuova funzionalità di traccia netsh.
 ms.assetid: f0f0fc7b-7cfa-43c7-89a3-3b80050875f8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c1cf869f60b69e227e78e19e8e05d3765ddb67d
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 07c4be1c89c496245cb67bec4aef8614f5efef5db003e6c79cef2e54314c3071
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118133254"
 ---
 # <a name="using-netsh-to-manage-traces"></a>Uso di Netsh per gestire le tracce
 
-In Windows 7 è netsh.exe da un prompt dei comandi per abilitare e configurare le tracce di rete. In questa sezione vengono descritti alcuni dei comandi netsh.exe che consentono di risolvere i problemi di traccia, inclusa la nuova **funzionalità di traccia netsh.** Si noti che i comandi netsh devono essere eseguiti da un prompt dei comandi con privilegi elevati.
+In Windows 7 è possibile netsh.exe da un prompt dei comandi per abilitare e configurare le tracce di rete. In questa sezione vengono descritti alcuni dei comandi netsh.exe che consentono di risolvere i problemi di traccia, inclusa la nuova **funzionalità di traccia netsh.** Si noti che i comandi netsh devono essere eseguiti da un prompt dei comandi con privilegi elevati.
 
 ## <a name="collecting-traces"></a>Raccolta di tracce
 
@@ -21,7 +21,7 @@ Gli scenari sono set predefiniti di provider di traccia che possono essere abili
 
 Dopo aver identificato uno scenario rilevante per i problemi, è possibile visualizzare un elenco di tutti i provider inclusi in tale scenario. Ad esempio, per visualizzare tutti i provider abilitati nello scenario InternetClient, digitare **netsh trace show scenario internetclient**.
 
-È possibile avviare una traccia per tutti i provider in un determinato scenario o set di scenari. Ad esempio, per avviare una traccia per tutti i provider abilitati nello scenario InternetClient, digitare **netsh trace start scenario=internetclient**. Per acquisire i provider per più di uno scenario, è possibile specificare tutti gli scenari appropriati, ad esempio **netsh trace start scenario=FileSharing scenario=DirectAccess.** Si noti che è possibile attivare una sola sessione di traccia alla volta. Non è possibile acquisire simultaneamente informazioni di traccia da set diversi di provider in file separati.
+È possibile avviare una traccia per tutti i provider in un determinato scenario o set di scenari. Ad esempio, per avviare una traccia per tutti i provider abilitati nello scenario InternetClient, digitare **netsh trace start scenario=internetclient**. Per acquisire i provider per più di uno scenario, è possibile specificare tutti gli scenari appropriati, ad esempio **netsh trace start scenario=FileSharing scenario=DirectAccess.** Si noti che è possibile attivare una sola sessione di traccia alla volta. Non è possibile acquisire simultaneamente informazioni di traccia da diversi set di provider in file separati.
 
 È anche possibile avviare una traccia per provider aggiuntivi non inclusi in tale scenario specifico. Ad esempio, potrebbe essere necessario avviare tracce per tutti i provider abilitati nello scenario WLAN e anche per il provider DHCP. A tale scopo, digitare **netsh trace start scenario=wlan provider=Microsoft-Windows-Dhcp-Client**.
 
@@ -33,7 +33,7 @@ Per arrestare la traccia, digitare **netsh trace stop**.
 
 ## <a name="using-the-output-files"></a>Uso dei file di output
 
-Quando la traccia viene arrestata, per impostazione predefinita vengono generati due file: un file di log di traccia eventi (ETL) e .cab file.
+Quando la traccia viene arrestata, per impostazione predefinita vengono generati due file: un file di log di traccia eventi (ETL) e un file .cab file.
 
 Gli eventi di traccia vengono raccolti nel file ETL, che può essere visualizzato usando strumenti come Network Monitor. Il file ETL verrà denominato nettrace.etl per impostazione predefinita oppure è possibile specificare un nome diverso includendo **tracefile=filename.etl** all'avvio della traccia.
 
@@ -58,20 +58,20 @@ In questo esempio il livello è impostato su 5, il che significa che verrà visu
 | Level      | Impostazione              | Descrizione                                                                           |
 |-------|---------------|----------------------------------------------------------------------------|
 | 1     | Critico      | Verranno visualizzati solo gli eventi critici.                                        |
-| 2     | Errors        | Verranno visualizzati gli errori e gli eventi critici.                                  |
+| 2     | Errors        | Verranno visualizzati gli eventi critici e gli errori.                                  |
 | 3     | Avvisi      | Verranno visualizzati eventi critici, errori e avvisi.                       |
-| 4     | Informativa | Verranno visualizzati eventi critici, errori, avvisi ed eventi in informazioni. |
+| 4     | Informativo | Verranno visualizzati eventi critici, errori, avvisi ed eventi in informazioni. |
 | 5     | Dettagliato       | Verranno visualizzati tutti gli eventi.                                                  |
 
 
 
  
 
-Le parole **chiave ut:ReceivePath** e **ut:SentPath** filtrano gli eventi in modo da visualizzare solo gli eventi tracciati nel percorso di ricezione o invio. È possibile trovare un elenco completo di parole chiave per un provider specifico digitando **netsh trace show provider** seguito dal nome del provider. Ad esempio, **digitando netsh trace show provider Microsoft-Windows-TCPIP** verranno visualizzate informazioni sul provider Microsoft-Windows-TCPIP, incluso un elenco di parole chiave.
+Le parole **chiave ut:ReceivePath** e **ut:SentPath** filtrano gli eventi in modo da visualizzare solo gli eventi tracciati nel percorso di ricezione o di invio. È possibile trovare un elenco completo di parole chiave per un provider specifico digitando **netsh trace show provider** seguito dal nome del provider. Ad esempio, digitando **netsh trace show provider Microsoft-Windows-TCPIP** verranno visualizzate informazioni sul provider Microsoft-Windows-TCPIP, incluso un elenco di parole chiave.
 
-Netsh supporta anche la funzionalità di filtro dei pacchetti (simile a Network Monitor) quando l'acquisizione di pacchetti è attivata (impostando **capture = yes).** Il filtro dei pacchetti può essere usato per acquisire un numero limitato di pacchetti in un file di traccia. Ad esempio, **netsh trace start capture = yes ipv4.address == x.x.x.x** , dove x.x.x.x è l'indirizzo IP, acquisisce solo i pacchetti con traffico ipv4 con l'indirizzo di origine o di destinazione specifico.
+Netsh supporta anche la funzionalità di filtro dei pacchetti (simile a Network Monitor) quando l'acquisizione di pacchetti è attivata (impostando **capture = yes**). Il filtro dei pacchetti può essere usato per acquisire un numero limitato di pacchetti in un file di traccia. Ad esempio, **netsh trace start capture = yes ipv4.address == x.x.x.x** , dove x.x.x.x è l'indirizzo IP, acquisisce solo i pacchetti con traffico ipv4 con l'indirizzo di origine o di destinazione specifico.
 
-Per altre informazioni su come usare il filtro dei pacchetti, è possibile digitare **netsh trace show capturefilterHelp**.
+Per altre informazioni su come usare il filtro dei pacchetti, è possibile digitare **netsh trace show capturefilterHelp.**
 
  
 

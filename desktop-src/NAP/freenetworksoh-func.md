@@ -1,9 +1,9 @@
 ---
-title: Funzione FreeNetworkSoH (NapUtil. h)
+title: Funzione FreeNetworkSoH (NapUtil.h)
 description: Libera una struttura di dati NetworkSoH.
 ms.assetid: a27d54a0-8b9c-4bf7-909c-1de5db55f429
 keywords:
-- NAP funzione FreeNetworkSoH
+- Funzione FreeNetworkSoH nap
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9ea2b72011332939aa0c814203d0004949c8341
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f0c2d3db800860295e0fa6173422ffeec0ca144550cc3ddfdf8a1ea391b6c6eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134752"
 ---
-# <a name="freenetworksoh-function"></a>FreeNetworkSoH (funzione)
+# <a name="freenetworksoh-function"></a>Funzione FreeNetworkSoH
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-La funzione **FreeNetworkSoH** libera una struttura di dati [**NetworkSoH**](/windows/win32/api/naptypes/ns-naptypes-networksoh) .
+La **funzione FreeNetworkSoH** libera una struttura di dati [**NetworkSoH.**](/windows/win32/api/naptypes/ns-naptypes-networksoh)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,22 +45,22 @@ NAPAPI VOID WINAPI FreeNetworkSoH(
 
 <dl> <dt>
 
-*networkSoh* \[ in\]
+*networkSoh* \[ Pollici\]
 </dt> <dd>
 
-Puntatore alla struttura di dati [**NetworkSoH**](/windows/win32/api/naptypes/ns-naptypes-networksoh) da liberare.
+Puntatore alla [**struttura di dati NetworkSoH**](/windows/win32/api/naptypes/ns-naptypes-networksoh) da liberare.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Tutte le interfacce COM supportate dal sistema NAP utilizzano le regole di gestione della memoria COM standard e gli allocatori di memoria COM (**CoTaskMemAlloc** e **CoTaskMemFree**):
+Tutte le interfacce COM supportate dal sistema nap usano le regole di gestione della memoria COM standard e gli allocatori di memoria COM (**CoTaskMemAlloc** e **CoTaskMemFree**):
 
--   I parametri **in** vengono allocati e liberati dal chiamante.
--   I parametri **out** vengono allocati dal chiamato e liberati dal chiamante utilizzando **CoTaskMem**.
--   I parametri **in/out** vengono allocati dal chiamante, liberati e riallocati dal chiamato e infine liberati dal chiamante, usando **CoTaskMem**.
+-   **I** parametri in vengono allocati e liberati dal chiamante.
+-   **I** parametri out vengono allocati dal chiamato e liberati dal chiamante usando **CoTaskMem**.
+-   **I parametri in/out** vengono allocati dal chiamante, liberati e riallocati dal chiamato e infine liberati dal chiamante, usando **CoTaskMem**.
 
-Tutte le funzioni di protezione accesso alla rete per liberare memoria liberano anche tutti i puntatori incorporati.
+Tutte le funzioni di Protezione accesso alla rete per liberare memoria liberano anche tutti i puntatori incorporati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,9 +68,9 @@ Tutte le funzioni di protezione accesso alla rete per liberare memoria liberano 
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>NapUtil. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>NapUtil.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl> |
 
 

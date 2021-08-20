@@ -1,5 +1,5 @@
 ---
-description: Il ritaglio comporta la limitazione del disegno a una determinata area. La figura seguente mostra la stringa &\# 0034; Hello&\# 0034; ritagliato in un'area a forma di memoria.
+description: Il ritaglio comporta la limitazione del disegno a una determinata area. La figura seguente mostra la stringa &\# 0034; Hello&\# 0034; ritagliato in un'area a forma di cuore.
 ms.assetid: 58cc052d-31af-4410-81b9-defbad08a1dc
 title: Ritaglio (GDI+)
 ms.topic: article

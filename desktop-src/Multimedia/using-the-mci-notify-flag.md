@@ -1,22 +1,22 @@
 ---
-title: Uso del flag di MCI_NOTIFY
-description: Uso del flag di notifica di MCI \_
+title: Uso del flag MCI_NOTIFY
+description: Uso del flag NOTIFY MCI \_
 ms.assetid: 1d1803c8-f315-463e-ae0d-a258aa3af3c9
 keywords:
-- Flag di MCI_NOTIFY
-- Comando MCI_PLAY
+- MCI_NOTIFY flag
+- MCI_PLAY comando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 472613d2e6efcd6b30c88ed64dfa7875b4742527
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6b0e7269ee7d80dd47372d9210fbdbc1332b3a88a96e2a17d6719c9945ab30aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118136139"
 ---
-# <a name="using-the-mci_notify-flag"></a>Uso del flag di notifica di MCI \_
+# <a name="using-the-mci_notify-flag"></a>Uso del flag NOTIFY MCI \_
 
-Nell'esempio seguente viene illustrato come \_ usare il flag di notifica MCI con il comando [**MCI \_ Play**](mci-play.md) . L'handle alla routine della finestra che elaborerà il messaggio [**mm \_ MCINOTIFY**](mm-mcinotify.md) viene specificato in *HWND*.
+L'esempio seguente illustra l'uso del flag MCI \_ NOTIFY con il comando [**MCI \_ PLAY.**](mci-play.md) L'handle per la routine della finestra che eelaborare il [**messaggio \_ MM MCINOTIFY**](mm-mcinotify.md) è specificato in *hwnd*.
 
 
 ```C++
@@ -31,9 +31,9 @@ mciSendCommand(wMCIDeviceID, MCI_PLAY, dwFlags, (DWORD)(LPSTR)&mciPlay);
 
 
 
- 
+ 
 
- 
+ 
 
 
 

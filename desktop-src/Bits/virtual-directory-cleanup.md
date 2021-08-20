@@ -17,10 +17,10 @@ BITS estende le directory virtuali IIS per supportare i caricamenti. Ogni direct
 
 BITS aggiunge un elemento di lavoro [al Utilità di pianificazione](/windows/desktop/TaskSchd/task-scheduler-start-page) per ogni directory virtuale creata e abilitata. L'elemento di lavoro elimina le risorse associate alle sessioni chiuse. Per impostazione predefinita, la pulizia viene eseguita ogni 12 ore. Se due directory virtuali puntano alla stessa directory fisica, il processo di pulizia avviato da una delle directory elimina le risorse associate a tutte le sessioni chiuse nella directory fisica.
 
-Usare la scheda Estensione BITS o le [interfacce Utilità di pianificazione](/windows/desktop/TaskSchd/task-scheduler-start-page) per modificare la pianificazione della pulizia in base alle esigenze dell'applicazione. È anche possibile chiamare il [**metodo IBITSExtensionSetup::GetCleanupTask**](/windows/desktop/api/Bitscfg/nf-bitscfg-ibitsextensionsetup-getcleanuptask) per recuperare un puntatore di interfaccia all'attività di pulizia associata alla directory virtuale.
+Usare la scheda Estensione BITS o le [Utilità di pianificazione](/windows/desktop/TaskSchd/task-scheduler-start-page) per modificare la pianificazione della pulizia in base alle esigenze dell'applicazione. È anche possibile chiamare il [**metodo IBITSExtensionSetup::GetCleanupTask**](/windows/desktop/api/Bitscfg/nf-bitscfg-ibitsextensionsetup-getcleanuptask) per recuperare un puntatore di interfaccia all'attività di pulizia associata alla directory virtuale.
 
 > [!Note]  
-> Se la Utilità di pianificazione è disabilitata dopo l'a attivazione della directory virtuale, il processo di pulizia della directory virtuale non funzionerà.
+> Se la Utilità di pianificazione è disabilitata dopo l'avirtualizzazione della directory virtuale, il processo di pulizia della directory virtuale non funzionerà.
 
  
 

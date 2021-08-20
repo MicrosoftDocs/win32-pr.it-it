@@ -1,6 +1,6 @@
 ---
 title: 802.11 Wireless Diagnostics Extensible Helper Classes
-description: L'infrastruttura di diagnostica wireless predefinita ha due punti di estensione. Classe helper padrePurposeRevised Native Wifi (RNWF) Extensible Helper ClassDiagnoses issues related to 802.11 connectivity extensions (Classe helper estendibile RNWF)Diagnostica i problemi relativi alle estensioni di connettività 802.11.
+description: L'infrastruttura di diagnostica wireless predefinita ha due punti di estensione. Classe helper padrePurposeRevised Native Wifi (RNWF) Extensible Helper ClassDiagnoses issues related to 802.11 connectivity extensions (Classe helper padrePurposeRevised Native Wifi (RNWF) Extensible Helper ClassDiagnoses issues related to 802.11 connectivity extensions (Classe helper padrePurposeRevised Native Wifi (RNWF) Extensible Helper ClassDiagnoses issues related to 802.11 connectivity extensions (Classe helper
 ms.assetid: b54f836d-4fae-4e71-bf7b-af5a6e9e615c
 ms.topic: article
 ms.date: 05/31/2018
@@ -17,33 +17,33 @@ L'infrastruttura di diagnostica wireless predefinita ha due punti di estensione.
 
 | Classe helper padre                                | Scopo                                                           |
 |----------------------------------------------------|-------------------------------------------------------------------|
-| Classe helper estendibile RNWF (Native Wifi) modificata | Diagnostica i problemi relativi alle estensioni di connettività 802.11.       |
-| Classe helper L2Security Extensible                 | Diagnostica i problemi relativi alle estensioni del protocollo di sicurezza di livello 2. |
+| Revisione della classe helper estendibile Wi-Fi nativa (RNWF) | Diagnostica i problemi relativi alle estensioni di connettività 802.11.       |
+| Classe helper estendibile L2Security                 | Diagnostica i problemi relativi alle estensioni del protocollo di sicurezza di livello 2. |
 
 
 
  
 
 > [!Note]  
-> Una classe helper di terze parti deve eseguire la registrazione con entrambe le classi helper padre per garantire che venga chiamata la classe di terze parti. Per altre informazioni sulla registrazione, vedere [Registrazione delle estensioni della classe helper NDF.](registering-ndf-helper-class-extensions.md)
+> Una classe helper di terze parti deve registrarsi con entrambe le classi helper padre per assicurarsi che venga chiamata la classe di terze parti. Per altre informazioni sulla registrazione, vedere Registrazione delle estensioni della [classe helper NDF](registering-ndf-helper-class-extensions.md).
 
  
 
-## <a name="rnwf-extensible-helper-class"></a>Classe helper Estendibile RNWF
+## <a name="rnwf-extensible-helper-class"></a>Classe helper estendibile RNWF
 
-Nome della classe helper padre
+Nome classe helper padre
 
 ``` syntax
 Parent = L"RNWF Extensible Helper Class";
 ```
 
-La classe helper estendibile RNWF (Native Wifi) modificata è l'elemento padre per le classi helper di terze parti che diagnosticano i problemi correlati all'estensione dei protocolli 802.11 usati dal Wi-Fi nativo.
+La classe helper estendibile Revised Native Wifi (RNWF) è l'elemento padre per le classi helper di terze parti che diagnosticano i problemi correlati all'estensione dei protocolli 802.11 usati dal Wi-Fi nativo.
 
 I due attributi chiave forniti dalla classe helper RNWF sono il GUID dell'interfaccia in cui si è verificato il problema e il contesto di connessione.
 
 -   GUID interfaccia: questo attributo è denominato "ID interfaccia" ed è di tipo **AT \_ GUID**.
 
--   Contesto di connessione: questo attributo è denominato ID di rete ed è di tipo AT \_ OCTET \_ STRING. Questa stringa è in realtà un buffer della struttura \_ WHV WLAN ID definita \_ in \_ Wlanihv.h. Questa struttura è definita come segue.
+-   Contesto di connessione: questo attributo è denominato ID di rete ed è di tipo AT \_ OCTET \_ STRING. Questa stringa è in realtà un buffer della struttura \_ WLAN ID WLAN IHV \_ WDIAG definita in \_ Wlanihv.h. Questa struttura è definita come segue.
 
     ``` syntax
 #define WDIAG_IHV_WLAN_ID_FLAG_SECURITY_ENABLED               0x00000001
@@ -60,11 +60,11 @@ I due attributi chiave forniti dalla classe helper RNWF sono il GUID dell'interf
     ```
 
 > [!Note]  
-> **WDIAG \_ IHV \_ WLAN \_ ID FLAG \_ SECURITY \_ \_ ENABLED** è l'unico **valore dwFlags** possibile.
+> **WDIAG \_ IHV \_ WLAN \_ ID FLAG \_ SECURITY \_ \_ ENABLED** è l'unico valore **dwFlags** possibile.
 
  
 
-L'attributo corrispondente per la classe helper di terze parti deve essere uguale all'ID servizio del modulo software corrispondente. Questo è anche lo stesso nome che la terza parte deve essere registrata nel Registro di sistema. La diagnostica wireless eseguirà una query sull'ID servizio durante la sessione wireless in cui si è verificato il problema. Le informazioni verranno restituite a NDF, che determinerà se la classe helper di terze parti è presente e registrata e quindi la chiamerà.
+L'attributo corrispondente per la classe helper di terze parti deve essere uguale all'ID servizio del modulo software corrispondente. Questo è anche lo stesso nome che la terza parte deve essere registrata nel Registro di sistema. Diagnostica wireless eseguirà una query sull'ID servizio durante la sessione wireless in cui si è verificato il problema. Le informazioni verranno restituite a NDF, che determinerà se la classe helper di terze parti è presente e registrata e quindi la chiama.
 
 Nella tabella seguente sono elencati gli attributi corrispondenti per la classe helper estendibile RNWF.
 
@@ -72,15 +72,15 @@ Nella tabella seguente sono elencati gli attributi corrispondenti per la classe 
 
 | Nome          | Type    | valore                         |
 |---------------|---------|-------------------------------|
-| DIAGNOSTICSID | REG \_ SZ | \[Stringa GUID DiagnosticsID \_ \_ |
+| DiagnosticsID | REG \_ SZ | \[Stringa GUID DiagnosticsID \_ \_ |
 
 
 
  
 
-## <a name="l2security-extensible-helper-class"></a>Classe helper L2Security Extensible
+## <a name="l2security-extensible-helper-class"></a>Classe helper estendibile L2Security
 
-Nome della classe helper padre
+Nome classe helper padre
 
 ``` syntax
 Parent = L"Extensible L2Sec Helper Class";
@@ -92,7 +92,7 @@ I due attributi chiave forniti dalla classe helper di sicurezza di livello 2 son
 
 -   GUID interfaccia: questo attributo è denominato "ID interfaccia" ed è di tipo **AT \_ GUID**.
 
--   Contesto di connessione: questo attributo è denominato ID di rete ed è di tipo AT \_ OCTET \_ STRING. Questa stringa è in realtà un buffer della struttura \_ WHV WLAN ID definita \_ in \_ wlanihv.h. Questa struttura è definita come segue.
+-   Contesto di connessione: questo attributo è denominato ID di rete ed è di tipo AT \_ OCTET \_ STRING. Questa stringa è in realtà un buffer della struttura \_ WLAN ID WLAN IHV \_ WDIAG \_ definita in wlanihv.h. Questa struttura è definita come segue.
 
     ``` syntax
 #define WDIAG_IHV_WLAN_ID_FLAG_SECURITY_ENABLED               0x00000001
@@ -109,19 +109,19 @@ I due attributi chiave forniti dalla classe helper di sicurezza di livello 2 son
     ```
 
 > [!Note]  
-> **WDIAG \_ IHV \_ WLAN \_ ID FLAG \_ SECURITY \_ \_ ENABLED** è l'unico **valore dwFlags** possibile.
+> **WDIAG \_ IHV \_ WLAN \_ ID FLAG \_ SECURITY \_ \_ ENABLED** è l'unico valore **dwFlags** possibile.
 
  
 
-L'attributo corrispondente per la classe helper di terze parti deve essere uguale all'ID servizio del modulo software corrispondente. Questo è anche lo stesso nome che la terza parte deve essere registrata nel Registro di sistema. La diagnostica wireless eseguirà una query sull'ID servizio durante la sessione wireless in cui si è verificato il problema. Le informazioni verranno restituite a NDF, che determinerà se la classe helper di terze parti è presente e registrata e quindi la chiamerà.
+L'attributo corrispondente per la classe helper di terze parti deve essere uguale all'ID servizio del modulo software corrispondente. Questo è anche lo stesso nome che la terza parte deve essere registrata nel Registro di sistema. Diagnostica wireless eseguirà una query sull'ID servizio durante la sessione wireless in cui si è verificato il problema. Le informazioni verranno restituite a NDF, che determinerà se la classe helper di terze parti è presente e registrata e quindi la chiama.
 
-Nella tabella seguente sono elencati gli attributi corrispondenti per la classe helper estendibile Layer 2 Security.
+Nella tabella seguente sono elencati gli attributi corrispondenti per la classe helper estendibile Di livello 2 Security.
 
 
 
 | Nome          | Type    | valore                         |
 |---------------|---------|-------------------------------|
-| DIAGNOSTICSID | REG \_ SZ | \[Stringa GUID DiagnosticsID \_ \_ |
+| DiagnosticsID | REG \_ SZ | \[Stringa GUID DiagnosticsID \_ \_ |
 
 
 
@@ -129,15 +129,15 @@ Nella tabella seguente sono elencati gli attributi corrispondenti per la classe 
 
 ## <a name="matching-attributes"></a>Attributi corrispondenti
 
-**DIAGNOSTICSID**
+**DiagnosticsID**
 
-802.11 Diagnostica wireless eseguirà una query su *DiagnosticsID* dal servizio Wi-Fi nativo di base per verificare se eventuali estensioni wireless di terze parti o moduli di sicurezza sono installati e coinvolti nella connessione. Diagnostica wireless fornirà quindi ipotesi a queste classi helper di terze parti usando *DiagnosticsID* come attributo corrispondente. Tutte le classi helper di terze parti devono essere incluse in e installate con il pacchetto driver associato. DiagnosticsID *verrà* definito nel file INF del miniport come chiave del Registro di sistema nella [direttiva AddReg.](https://msdn.microsoft.com/library/ms794514.aspx)
+Diagnostica wireless 802.11 eseguirà una query su *DiagnosticsID* dal servizio Wi-Fi nativo principale per verificare se eventuali estensioni wireless o moduli di sicurezza di terze parti sono installati e coinvolti nella connessione. Diagnostica wireless fornirà quindi ipotesi a queste classi helper di terze parti usando *DiagnosticsID* come attributo corrispondente. Tutte le classi helper di terze parti devono essere incluse in e installate con il pacchetto driver associato. DiagnosticsID verrà definito nel file INF del miniport come chiave del Registro di sistema nella [direttiva AddReg.](https://msdn.microsoft.com/library/ms794514.aspx) 
 
 ``` syntax
 HKR,Ndi\IHVExtensions, DiagnosticsID,0, "<Diagnostics ID GUID>"
 ```
 
-Questa chiave definisce l'ID della classe helper wireless per il modulo software di terze parti. Questa chiave è facoltativa per il framework di estendibilità, ma è necessaria se l'implementazione include una classe helper wireless IHV che si collega alla funzione NDF e può diagnosticare i problemi di connettività correlati alle estensioni wireless o di sicurezza RNWF. Le classi helper di diagnostica WLAN MS eseguiranno una query su questo ID dal Servizio configurazione automatica wireless quando vengono installati i moduli IHV e fornirà questo ID come attributo di riferimento o corrispondente a NDF durante una sessione di diagnostica in modo che NDF possa chiamare la classe helper wireless di terze parti appropriata quando necessario.
+Questa chiave definisce l'ID della classe helper wireless per il modulo software di terze parti. Questa chiave è facoltativa per il framework di estendibilità, ma è necessaria se l'implementazione include una classe helper wireless IHV che si collega a NDF e può diagnosticare i problemi di connettività correlati alle estensioni wireless o di sicurezza RNWF. Le classi helper di diagnostica WLAN MS eseguiranno una query su questo ID dal servizio configurazione automatica wireless quando vengono installati i moduli IHV e forniranno questo ID come attributo di riferimento o corrispondente a NDF durante una sessione di diagnostica in modo che NDF possa chiamare la classe helper wireless di terze parti appropriata quando necessario.
 
 **\[Stringa GUID DiagnosticsID \_ \_\]**
 
@@ -147,19 +147,19 @@ Questo valore deve essere una stringa di tutte le lettere maiuscole. Ad esempio,
 
 Le classi helper di diagnostica wireless 802.11 attualmente diagnosticano i problemi wireless nelle aree seguenti.
 
--   Eventuali problemi di connettività 802.11, tra cui l'associazione 802.11, l'autenticazione 802.11, le impostazioni di sicurezza 802.11 correlate agli standard 802.11 & protocolli supportati in modo nativo nel sistema operativo e problemi di prestazioni.
--   Problemi di sicurezza di livello 2 relativi alle configurazioni 802.1x ed eventuali problemi relativi all'autenticazione di livello 2 tramite metodi supportati in modo nativo in Windows Vista e Windows Server 2008.
+-   Eventuali problemi di connettività 802.11, tra cui l'associazione 802.11, l'autenticazione 802.11, le impostazioni di sicurezza 802.11 relative ai protocolli & standard 802.11 supportati in modo nativo nel sistema operativo e i problemi di prestazioni.
+-   Problemi di sicurezza di livello 2 relativi alle configurazioni 802.1x ed eventuali problemi relativi all'autenticazione di livello 2 usando metodi supportati in modo nativo in Windows Vista e Windows Server 2008.
 -   Mancata corrispondenza della configurazione nelle impostazioni del profilo tra il client e il punto di accesso o l'infrastruttura e i servizi di rete.
 
 Le classi helper di diagnostica wireless 802.11 attualmente non diagnosticano i problemi wireless nelle aree seguenti.
 
--   Problemi relativi alle estensioni 802.11 di terze parti, incluse eventuali impostazioni del profilo o del driver correlate a tali estensioni.
+-   Problemi relativi alle estensioni 802.11 di terze parti, incluse eventuali impostazioni del profilo o del driver correlate a queste estensioni.
 -   Problemi relativi ai metodi EAP di terze parti.
 -   Problemi relativi al driver miniport wireless.
--   Eventuali problemi relativi al protocollo di sicurezza 802.11 e di livello 2 o agli standard non supportati in modo nativo.
+-   Qualsiasi protocollo di sicurezza 802.11 e di livello 2 o problemi correlati agli standard non supportati in modo nativo.
 -   Problemi a livello di sistema o di componente che potrebbero influire sulla connettività wireless, ad esempio risparmio energia, spazio su disco insufficiente, condizioni di memoria e problemi hardware.
 
-Inoltre, diagnostica wireless 802.11 non analizza [**i casi di utilizzo**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-highutilization) elevato. I problemi di prestazioni wireless identificati verranno analizzati e segnalati come [**casi lowhealth.**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-lowhealth)
+Inoltre, Diagnostica wireless 802.11 non analizza i [**casi di utilizzo**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-highutilization) elevato. I problemi di prestazioni wireless identificati verranno analizzati e segnalati come [**casi lowhealth.**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-lowhealth)
 
  
 

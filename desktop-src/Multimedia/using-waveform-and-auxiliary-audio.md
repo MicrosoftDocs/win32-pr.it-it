@@ -1,40 +1,40 @@
 ---
-title: Uso di forme d'onda e audio ausiliario
-description: Uso di forme d'onda e audio ausiliario
+title: Uso di Waveform e audio ausiliario
+description: Uso di Waveform e audio ausiliario
 ms.assetid: fe3e1397-7cf9-4347-9093-be80341ead7c
 keywords:
-- Multimedia di Windows, audio Waveform
-- Multimedia, audio Waveform
+- Windows multimediali, audio waveform
+- multimediali, audio waveform
 - audio multimediale, forma d'onda
 - audio, forma d'onda
-- Multimedia di Windows, audio ausiliario
-- Multimedia, audio ausiliario
+- Windows multimediali, audio ausiliario
+- multimediali, audio ausiliario
 - audio multimediale, ausiliario
 - audio, ausiliario
-- audio Waveform, informazioni
+- audio waveform, about
 - audio ausiliario, informazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2050760a3716ddbc0c59504f1e035a7364f02e78
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d59f27e845d6edd4b49bcd3a27263941859767b29c89cf770bbf31accfc6dadf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118135930"
 ---
-# <a name="using-waveform-and-auxiliary-audio"></a>Uso di forme d'onda e audio ausiliario
+# <a name="using-waveform-and-auxiliary-audio"></a>Uso di Waveform e audio ausiliario
 
-Questa sezione illustra l'implementazione di una forma d'onda e audio ausiliario nell'applicazione. Vengono trattati i seguenti argomenti:
+Questa sezione illustra l'implementazione di audio waveform e ausiliario nell'applicazione. Vengono trattati i seguenti argomenti:
 
 -   [Riproduzione di risorse WAVE](playing-wave-resources.md)
 -   [Uso della struttura WAVEFORMATEX](using-the-waveformatex-structure.md)
 -   [Determinazione del supporto del formato non standard](determining-nonstandard-format-support.md)
--   [Esempio di scrittura di dati di forma d'onda](example-of-writing-waveform-data.md)
--   [Elaborazione del \_ messaggio mm WOM \_ done](processing-the-mm-wom-done-message.md)
+-   [Esempio di scrittura di dati Waveform](example-of-writing-waveform-data.md)
+-   [Elaborazione del messaggio \_ MM WOM \_ DONE](processing-the-mm-wom-done-message.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Metodo INapComponentConfig IsUISupported (NapCommon. h)
+title: Metodo INapComponentConfig IsUISupported (NapCommon.h)
 description: Specifica se il componente supporta un'interfaccia utente personalizzata.
 ms.assetid: 044f8014-f041-4e9c-922a-2691b799ba84
 keywords:
-- NAP metodo IsUISupported
-- Metodo IsUISupported NAP, interfaccia INapComponentConfig
-- Interfaccia INapComponentConfig NAP, metodo IsUISupported
+- Metodo IsUISupported nap
+- Metodo IsUISupported NAP , interfaccia INapComponentConfig
+- Interfaccia INapComponentConfig NAP , metodo IsUISupported
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab7d3f6b87ba5e483b466e6746f0f63d039cb205
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e343b037e4f77b4c1e342ffa78278854b11d714e09e9e57188d83fc9f93a180
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134489"
 ---
-# <a name="inapcomponentconfigisuisupported-method"></a>Metodo INapComponentConfig:: IsUISupported
+# <a name="inapcomponentconfigisuisupported-method"></a>Metodo INapComponentConfig::IsUISupported
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **IsUISupported** specifica se il componente supporta un'interfaccia utente personalizzata.
+Il **metodo IsUISupported** specifica se il componente supporta un'interfaccia utente personalizzata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,24 +47,24 @@ HRESULT IsUISupported(
 
 <dl> <dt>
 
-*supportato* \[ out\]
+*isSupported* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un BOOL che è impostato su **true** se il componente supporta un'interfaccia utente personalizzata e **false** in caso contrario.
+Puntatore a un oggetto BOOL impostato su **TRUE se** il componente supporta un'interfaccia utente personalizzata e FALSE in caso **contrario.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei seguenti codici di errore in base al risultato di questa operazione.
+Restituisce uno dei codici di errore seguenti in base al risultato di questa operazione.
 
 
 
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | L'operazione è riuscita.<br/>                            |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Errore delle autorizzazioni, accesso negato.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite risorse di sistema: impossibile eseguire l'operazione.<br/> |
 
 
 
@@ -72,7 +72,7 @@ Restituisce uno dei seguenti codici di errore in base al risultato di questa ope
 
 ## <a name="remarks"></a>Commenti
 
-L'interfaccia utente personalizzata di un componente deve essere avviata con [**INapComponentConfig:: InvokeUI**](inapcomponentconfig-invokeui.md).
+L'interfaccia utente personalizzata di un componente deve essere avviata usando [**INapComponentConfig::InvokeUI**](inapcomponentconfig-invokeui.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,9 +81,9 @@ L'interfaccia utente personalizzata di un componente deve essere avviata con [**
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>NapCommon.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapCommon.idl</dt> </dl> |
 
 
 

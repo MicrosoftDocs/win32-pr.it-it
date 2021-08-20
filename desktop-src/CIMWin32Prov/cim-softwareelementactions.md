@@ -1,8 +1,8 @@
 ---
-description: L' \_ associazione CIM SoftwareElementActions identifica le azioni per un elemento software.
+description: L'associazione CIM \_ SoftwareElementActions identifica le azioni per un elemento software.
 ms.assetid: 2f8a584c-dff0-48f8-bc5f-2b833b5c0b18
 ms.tgt_platform: multiple
-title: Classe CIM_SoftwareElementActions
+title: CIM_SoftwareElementActions classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1f51cc122cdf354be9611ca1cca4ebcbe1635d14
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f3ee22c018c1bcc3a3850ac2b9c4c3bcba32780ea66927245fcf0b02eae74232
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118421292"
 ---
-# <a name="cim_softwareelementactions-class"></a>CIM \_ SoftwareElementActions (classe)
+# <a name="cim_softwareelementactions-class"></a>Classe CIM \_ SoftwareElementActions
 
-L'associazione **CIM \_ SoftwareElementActions** identifica le azioni per un elemento software.
+**L'associazione CIM \_ SoftwareElementActions** identifica le azioni per un elemento software.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice Managed Object Format (MOF) e include tutte le relative proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,29 +47,29 @@ class CIM_SoftwareElementActions
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ SoftwareElementActions** presenta questi tipi di membri:
+La **classe CIM \_ SoftwareElementActions** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ SoftwareElementActions** dispone di queste proprietà.
+La **classe CIM \_ SoftwareElementActions** ha queste proprietà.
 
 <dl> <dt>
 
 **Azione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ azione CIM**
+Tipo di dati: **Azione CIM \_**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (false), [**debole**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificatori: [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (FALSE), [**Weak**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Riferimento a un'istanza di [**\_ azione CIM**](cim-action.md) .
+Riferimento a [**un'istanza \_ dell'azione CIM.**](cim-action.md)
 
 </dd> <dt>
 
@@ -82,18 +82,18 @@ Tipo di dati: **CIM \_ SoftwareElement**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificatori: [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Riferimento a un'istanza di [**CIM \_ SoftwareElement**](cim-softwareelement.md) .
+Riferimento a [**un'istanza CiM \_ SoftwareElement.**](cim-softwareelement.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-WMI non implementa questa classe. Per le classi WMI derivate da **CIM \_ SoftwareElementActions**, vedere [Win32 Classes](win32-provider.md).
+WMI non implementa questa classe. Per le classi WMI derivate **da CIM \_ SoftwareElementActions,** vedere [Classi Win32.](win32-provider.md)
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -104,7 +104,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

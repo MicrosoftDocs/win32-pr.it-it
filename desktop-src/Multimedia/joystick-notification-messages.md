@@ -1,26 +1,26 @@
 ---
-title: Messaggi di notifica del joystick
-description: Messaggi di notifica del joystick
+title: Messaggi di notifica del rossetto
+description: Messaggi di notifica del rossetto
 ms.assetid: 9e8ccc1b-85a9-44bf-b561-6ad4c10cddd1
 keywords:
-- joystick, notifiche
-- joystick, messaggi
-- joystick, posizione
-- joystick, pulsanti
-- Messaggi di MM_JOY1
-- Messaggi di MM_JOY2
+- rossetti, notifiche
+- rossetti, messaggi
+- rossetti, posizione
+- tasti di scelta, pulsanti
+- MM_JOY1 messaggi
+- MM_JOY2 messaggi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 698f999dab49ea6684e9184f6ed5c46286518b97
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 27113adeb6f9fd4444f8fc30431df0eab686db667fa2674e81d7f5d4e568be64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118140341"
 ---
-# <a name="joystick-notification-messages"></a>Messaggi di notifica del joystick
+# <a name="joystick-notification-messages"></a>Messaggi di notifica del rossetto
 
-I messaggi del joystick notificano all'applicazione che un joystick è stato modificato o che uno dei pulsanti è stato modificato. I messaggi che iniziano con MM \_ JOY1 vengono inviati alla funzione se l'applicazione richiede input dal joystick usando l'identificatore JOYSTICKID1 e i \_ messaggi mm JOY2 vengono inviati se l'applicazione richiede input dal joystick usando l'identificatore JOYSTICKID2.
+I messaggi di joystick notificano all'applicazione che un joystick ha cambiato posizione o che uno dei relativi pulsanti ha modificato gli stati. I messaggi che iniziano con MM JOY1 vengono inviati alla funzione se l'applicazione richiede l'input dal joystick usando l'identificatore JOYSTICKID1 e i messaggi MM JOY2 vengono inviati se l'applicazione richiede l'input dal joystick usando l'identificatore \_ \_ JOYSTICKID2.
 
 I messaggi nella tabella seguente identificano lo stato dei pulsanti del joystick:
 
@@ -28,24 +28,24 @@ I messaggi nella tabella seguente identificano lo stato dei pulsanti del joystic
 
 | Message                                         | Descrizione                                                     |
 |-------------------------------------------------|-----------------------------------------------------------------|
-| [**\_JOY1BUTTONDOWN mm**](mm-joy1buttondown.md) | È stato premuto un pulsante sul joystick JOYSTICKID1.              |
-| [**\_JOY1BUTTONUP mm**](mm-joy1buttonup.md)     | È stato rilasciato un pulsante sul joystick JOYSTICKID1.             |
-| [**\_JOY1MOVE mm**](mm-joy1move.md)             | La posizione del JOYSTICKID1 del joystick è cambiata nella direzione x o y. |
-| [**\_JOY1ZMOVE mm**](mm-joy1zmove.md)           | La posizione del JOYSTICKID1 del joystick è cambiata nella direzione z.       |
-| [**\_JOY2BUTTONDOWN mm**](mm-joy2buttondown.md) | È stato premuto un pulsante sul joystick JOYSTICKID2.              |
-| [**\_JOY2BUTTONUP mm**](mm-joy2buttonup.md)     | È stato rilasciato un pulsante sul joystick JOYSTICKID2.             |
-| [**\_JOY2MOVE mm**](mm-joy2move.md)             | La posizione del JOYSTICKID2 del joystick è cambiata nella direzione x o y  |
-| [**\_JOY2ZMOVE mm**](mm-joy2zmove.md)           | La posizione del JOYSTICKID2 del joystick è cambiata nella direzione z.       |
+| [**MM \_ JOY1BUTTONDOWN**](mm-joy1buttondown.md) | È stato premuto un pulsante in joystick JOYSTICKID1.              |
+| [**MM \_ JOY1BUTTONUP**](mm-joy1buttonup.md)     | È stato rilasciato un pulsante in joystick JOYSTICKID1.             |
+| [**MM \_ JOY1MOVE**](mm-joy1move.md)             | Joystick JOYSTICKID1 ha modificato la posizione nella direzione x o y. |
+| [**MM \_ JOY1ZMOVE**](mm-joy1zmove.md)           | Il joystick JOYSTICKID1 ha modificato la posizione nella direzione z.       |
+| [**MM \_ JOY2BUTTONDOWN**](mm-joy2buttondown.md) | È stato premuto un pulsante in joystick JOYSTICKID2.              |
+| [**MM \_ JOY2BUTTONUP**](mm-joy2buttonup.md)     | È stato rilasciato un pulsante in joystick JOYSTICKID2.             |
+| [**MM \_ JOY2MOVE**](mm-joy2move.md)             | La posizione di Joystick JOYSTICKID2 è stata modificata nella direzione x o y  |
+| [**MM \_ JOY2ZMOVE**](mm-joy2zmove.md)           | Joystick JOYSTICKID2 ha modificato la posizione nella direzione z.       |
 
 
 
- 
+ 
 
-Tutti i messaggi segnalano i pulsanti inesistenti come rilasciati.
+Tutti i messaggi segnalano pulsanti inesistenti come rilasciati.
 
- 
+ 
 
- 
+ 
 
 
 

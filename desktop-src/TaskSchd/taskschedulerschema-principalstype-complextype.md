@@ -3,7 +3,7 @@ title: Tipo complesso principalsType
 description: Definisce l'elemento figlio per l'elemento Principals.
 ms.assetid: a501534b-eb0f-480f-a2c9-d2015262a9a7
 keywords:
-- Tipo complesso principalsType Utilità di pianificazione
+- Tipi complessi principalsType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:

@@ -1,11 +1,11 @@
 ---
-title: Metodo GetConnection INapEnforcementClientCallback (NapEnforcementClient. h)
+title: Metodo GetConnections INapEnforcementClientCallback (NapEnforcementClient.h)
 description: Viene chiamato da NapAgent e implementato dal client di imposizione per restituire un set di connessioni.
 ms.assetid: 8f697217-5799-48e4-9f0b-715f516e48d9
 keywords:
-- Metodo GetConnection NAP
-- Metodo GetConnection NAP, interfaccia INapEnforcementClientCallback
-- Interfaccia NAP di INapEnforcementClientCallback, Metodo GetConnection
+- Metodo GetConnections nap
+- Metodo GetConnections NAP, interfaccia INapEnforcementClientCallback
+- Interfaccia INapEnforcementClientCallback NAP, metodo GetConnections
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9acdc68dbc69cabe710414f3fa2501585f3e384e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e4f6c6fdb4adc416cb25fa0e402c8fee2d8baf3270400f15a8de67966eff7a9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134030"
 ---
-# <a name="inapenforcementclientcallbackgetconnections-method"></a>Metodo INapEnforcementClientCallback:: GetConnection
+# <a name="inapenforcementclientcallbackgetconnections-method"></a>Metodo INapEnforcementClientCallback::GetConnections
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo di callback **INapEnforcementClientCallback:: GetConnection** viene chiamato da napagent e implementato dal client di imposizione per restituire un set di connessioni.
+Il metodo di callback **INapEnforcementClientCallback::GetConnections** viene chiamato da NapAgent e implementato dal client di imposizione per restituire un set di connessioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,10 +47,10 @@ HRESULT GetConnections(
 
 <dl> <dt>
 
-*connessioni* \[ di out\]
+*connessioni* \[ Cambio\]
 </dt> <dd>
 
-Puntatore al set corrente di [**connessioni**](connections-struct.md)gestite.
+Puntatore al set corrente di connessioni [**gestite.**](connections-struct.md)
 
 </dd> </dl>
 
@@ -62,8 +62,8 @@ Questo metodo di callback deve restituire uno dei codici di errore seguenti.
 
 | Codice restituito                                                                                                | Descrizione                                                                                                                                                                                                           |
 |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                       | Restituisce questo valore se l'operazione ha esito positivo.<br/>                                                                                                                                                              |
-| <dl> <dt>**\_server RPC \_ non \_ disponibile**</dt> </dl> | Se si restituisce questo valore, l'imposizione viene rimossa dall'elenco associato-SHA e viene scaricata la voce della cache NapAgent corrispondente. L'SHA in errore può quindi reinizializzarsi con NapAgent.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                       | Restituisce questo valore se l'operazione ha avuto esito positivo.<br/>                                                                                                                                                              |
+| <dl> <dt>**SERVER \_ RPC S NON \_ \_ DISPONIBILE**</dt> </dl> | Se si restituisce questo valore, l'applicatore viene rimosso dall'elenco bound-SHA e la voce della cache NapAgent corrispondente viene scaricata. L'SHA che ha esito negativo può quindi inizializzarsi nuovamente con NapAgent.<br/> |
 
 
 
@@ -75,10 +75,10 @@ Questo metodo di callback deve restituire uno dei codici di errore seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                |
+| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 
 
 

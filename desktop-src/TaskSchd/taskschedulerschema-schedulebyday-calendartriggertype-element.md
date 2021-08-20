@@ -3,7 +3,7 @@ title: Elemento ScheduleByDay (calendarTriggerType)
 description: Specifica una pianificazione giornaliera.
 ms.assetid: 5a6097ce-a855-4b08-84c5-71f06343805e
 keywords:
-- trigger giornaliero Utilità di pianificazione elemento XML
+- trigger giornaliero Utilità di pianificazione, elemento XML
 - Elemento ScheduleByDay Utilità di pianificazione
 topic_type:
 - apiref
@@ -31,7 +31,7 @@ Specifica una pianificazione giornaliera. Ad esempio, l'attività inizia alle 8:
  />
 ```
 
-**L'elemento ScheduleByDay** è definito dal [**tipo complesso calendarTriggerType.**](taskschedulerschema-calendartriggertype-complextype.md)
+**L'elemento ScheduleByDay** è definito dal tipo complesso [**calendarTriggerType.**](taskschedulerschema-calendartriggertype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -39,7 +39,7 @@ Specifica una pianificazione giornaliera. Ad esempio, l'attività inizia alle 8:
 
 | Elemento                                                                             | Derivato da                                                                       | Descrizione                                                                                |
 |-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md) | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) | Specifica un trigger giornaliero, settimanale, mensile o mensile del giorno della settimana.<br/> |
+| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md) | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) | Specifica un trigger giornaliero, settimanale, mensile o mensile.<br/> |
 
 
 
@@ -55,17 +55,17 @@ Specifica una pianificazione giornaliera. Ad esempio, l'attività inizia alle 8:
 
 ## <a name="remarks"></a>Commenti
 
-L'elemento figlio elencato in precedenza è definito dai tipi [**di elemento complessi dailyScheduleType.**](taskschedulerschema-dailyscheduletype-complextype.md)
+L'elemento figlio elencato in precedenza è definito dai tipi di elementi complessi [**dailyScheduleType.**](taskschedulerschema-dailyscheduletype-complextype.md)
 
 L'ora del giorno in cui l'attività viene avviata viene impostata [**dall'elemento StartBoundary.**](taskschedulerschema-startboundary-triggerbasetype-element.md)
 
 Per lo sviluppo di script, viene specificato un trigger giornaliero usando [**l'oggetto DailyTrigger.**](weeklytrigger.md)
 
-Per lo sviluppo in C++, viene specificato un trigger giornaliero usando [**l'interfaccia IDailyTrigger.**](/windows/desktop/api/taskschd/nn-taskschd-idailytrigger)
+Per lo sviluppo C++, viene specificato un trigger giornaliero tramite [**l'interfaccia IDailyTrigger.**](/windows/desktop/api/taskschd/nn-taskschd-idailytrigger)
 
 ## <a name="examples"></a>Esempio
 
-Nel codice XML seguente viene definito un trigger di calendario giornaliero che avvia l'attività ogni giorno.
+Il codice XML seguente definisce un trigger di calendario giornaliero che avvia l'attività ogni giorno.
 
 
 ```XML
@@ -88,8 +88,8 @@ Per un esempio completo del codice XML per un'attività che specifica una pianif
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -97,7 +97,7 @@ Per un esempio completo del codice XML per un'attività che specifica una pianif
 
 <dl> <dt>
 
-[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
+[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

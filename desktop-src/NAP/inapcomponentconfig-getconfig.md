@@ -1,11 +1,11 @@
 ---
-title: Metodo GetConfig INapComponentConfig (NapCommon. h)
-description: Recupera la configurazione del componente convalida integrità sistema (convalida integrità sistema).
+title: Metodo GetConfig INapComponentConfig (NapCommon.h)
+description: Recupera la configurazione del componente shv (System Health Validator).
 ms.assetid: 57a1d3a7-05c0-4e0f-91b8-b3cf8982d04f
 keywords:
 - Metodo GetConfig NAP
 - Metodo GetConfig NAP, interfaccia INapComponentConfig
-- Interfaccia NAP di INapComponentConfig, metodo GetConfig
+- Interfaccia INapComponentConfig NAP, metodo GetConfig
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3e07465d768c8902166150e53d4200e775e2597
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d8dc5495df10e3a5ff3907941644c5558aea35d29b52c8773fb56314c4a8620c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134499"
 ---
-# <a name="inapcomponentconfiggetconfig-method"></a>Metodo INapComponentConfig:: GetConfig
+# <a name="inapcomponentconfiggetconfig-method"></a>Metodo INapComponentConfig::GetConfig
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **GetConfig** recupera la configurazione del componente convalida integrità sistema (convalida integrità sistema).
+Il **metodo GetConfig** recupera la configurazione del componente shv (System Health Validator).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,20 +48,20 @@ HRESULT GetConfig(
 
 <dl> <dt>
 
-*bCount* \[ out\]
+*bCount* \[ Cambio\]
 </dt> <dd>
 
-Dimensione, in byte, del BLOB di configurazione *dei dati* .
+Dimensione, in byte, del BLOB *di configurazione* dei dati.
 
 </dd> <dt>
 
-*dati* \[ di out\]
+*dati* \[ Cambio\]
 </dt> <dd>
 
-Puntatore all'indirizzo dei dati di configurazione del componente di convalida integrità di sistema.
+Puntatore all'indirizzo dei dati di configurazione del componente SHV.
 
 > [!Note]  
-> I dati di configurazione esportati da un computer x86 usando il metodo **GetConfig** possono essere importati in un computer x64 usando il metodo [**Seconfig**](inapcomponentconfig-setconfig.md) e viceversa. Di conseguenza, i dati di configurazione devono essere in un formato indipendente dall'architettura, ad esempio XML. L'utilizzo di XML anziché di un flusso di byte rende più semplice l'utilizzo dei dati di configurazione in architetture diverse. Gli elementi XML utilizzati nei dati di configurazione sono determinati dall'implementatore.
+> I dati di configurazione esportati da un computer x86 usando il metodo **GetConfig** possono essere importati in un computer x64 usando il metodo [**SetConfig**](inapcomponentconfig-setconfig.md) e viceversa. Pertanto, i dati di configurazione devono essere in un formato indipendente dall'architettura, ad esempio XML. L'uso di XML anziché di un flusso di byte semplifica l'uso dei dati di configurazione in architetture diverse. Gli elementi XML utilizzati nei dati di configurazione sono determinati dall'implementatore.
 
  
 
@@ -69,14 +69,14 @@ Puntatore all'indirizzo dei dati di configurazione del componente di convalida i
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei seguenti codici di errore in base al risultato di questa operazione.
+Restituisce uno dei codici di errore seguenti in base al risultato di questa operazione.
 
 
 
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | L'operazione è riuscita.<br/>                            |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Errore delle autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazione, accesso negato.<br/>                       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
 
 
@@ -85,7 +85,7 @@ Restituisce uno dei seguenti codici di errore in base al risultato di questa ope
 
 ## <a name="remarks"></a>Commenti
 
-Il parametro data deve essere allocato dal chiamato (implementatore del componente) utilizzando **CoTaskMemAlloc** e liberato dal chiamante utilizzando **CoTaskMemFree**.
+Il parametro di dati deve essere allocato dal chiamato (implementatore del componente) usando **CoTaskMemAlloc** e liberato dal chiamante usando **CoTaskMemFree.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -94,9 +94,9 @@ Il parametro data deve essere allocato dal chiamato (implementatore del componen
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>NapCommon.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapCommon.idl</dt> </dl> |
 
 
 
@@ -107,7 +107,7 @@ Il parametro data deve essere allocato dal chiamato (implementatore del componen
 [**INapComponentConfig**](inapcomponentconfig.md)
 </dt> <dt>
 
-[**INapComponentConfig:: Seconfig**](inapcomponentconfig-setconfig.md)
+[**INapComponentConfig::SetConfig**](inapcomponentconfig-setconfig.md)
 </dt> </dl>
 
  

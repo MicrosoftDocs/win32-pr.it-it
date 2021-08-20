@@ -1,6 +1,6 @@
 ---
-title: MCI_MAKE_TMSF macro (Mciapi. h)
-description: La \_ macro MCI make \_ TMSF crea un valore di ora in formato tracce/minuti/secondi/frame (TMSF) compresso dai valori di tracce, minuti, secondi e frame specificati.
+title: MCI_MAKE_TMSF macro (Mciapi.h)
+description: La macro MCI MAKE TMSF crea un valore di ora in formato \_ \_ tracce/minuti/secondi/fotogrammi (TMSF) dai valori di tracce, minuti, secondi e fotogrammi specificati.
 ms.assetid: ff2d6938-0ff7-46d5-92be-42b4b6f35524
 keywords:
 - MCI_MAKE_TMSF macro Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f06cd6a400f742b49dc29063e8473465ad7e32dc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ec038e0eb1e46c46162c9a2139f03881689db5fe1ee5993a8e135e5d92d67984
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138404"
 ---
-# <a name="mci_make_tmsf-macro"></a>MCI \_ make \_ TMSF (macro)
+# <a name="mci_make_tmsf-macro"></a>Macro \_ TMSF MCI MAKE \_
 
-La macro **MCI \_ make \_ TMSF** crea un valore di ora in formato tracce/minuti/secondi/frame (TMSF) compresso dai valori di tracce, minuti, secondi e frame specificati.
+La macro **\_ MCI MAKE \_ TMSF** crea un valore di ora in formato tracce/minuti/secondi/fotogrammi (TMSF) dai valori di tracce, minuti, secondi e fotogrammi specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,7 +50,7 @@ Numero di tracce.
 
 </dd> <dt>
 
-*minuti* 
+*Minuti* 
 </dt> <dd>
 
 Numero di minuti.
@@ -73,13 +73,13 @@ Numero di frame.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'ora nel formato TMSF compresso.
+Restituisce l'ora in formato TMSF in formato packed.
 
 ## <a name="remarks"></a>Commenti
 
-L'ora nel formato TMSF viene espressa come valore **DWORD** con il byte meno significativo contenente le tracce, il successivo byte meno significativo che contiene minuti, il successivo byte meno significativo contenente i secondi e il byte più significativo contenente i frame.
+L'ora in formato TMSF è espressa come valore **DWORD** con il byte meno significativo contenente tracce, il byte meno significativo successivo contenente minuti, il byte meno significativo successivo contenente i secondi e il byte più significativo contenente frame.
 
-La macro **MCI \_ make \_ TMSF** è definita nel modo seguente:
+La macro **\_ \_ TMSF MCI MAKE** è definita come segue:
 
 
 ```C++
@@ -99,7 +99,7 @@ La macro **MCI \_ make \_ TMSF** è definita nel modo seguente:
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -107,7 +107,7 @@ La macro **MCI \_ make \_ TMSF** è definita nel modo seguente:
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Macro MCI](mci-macros.md)

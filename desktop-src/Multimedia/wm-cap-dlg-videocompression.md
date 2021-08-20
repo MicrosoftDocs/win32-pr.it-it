@@ -40,7 +40,7 @@ Restituisce **TRUE in** caso di esito positivo o FALSE **in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Usare questo messaggio con driver di acquisizione che forniscono frame solo nel formato \_ RGB bi. Questo messaggio è particolarmente utile nell'operazione di acquisizione passaggio per combinare l'acquisizione e la compressione in una singola operazione. La compressione dei fotogrammi con un software come parte di un'operazione di acquisizione in tempo reale è molto probabilmente troppo dispendiosa in termini di tempo.
+Usare questo messaggio con driver di acquisizione che forniscono frame solo nel formato \_ RGB BI. Questo messaggio è particolarmente utile nell'operazione di acquisizione passaggio per combinare l'acquisizione e la compressione in una singola operazione. La compressione dei fotogrammi con un software come parte di un'operazione di acquisizione in tempo reale è molto probabilmente troppo dispendiosa in termini di tempo.
 
 La compressione non influisce sui frame copiati negli Appunti.
 

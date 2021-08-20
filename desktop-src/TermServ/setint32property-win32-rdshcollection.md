@@ -1,12 +1,12 @@
 ---
-title: Metodo SetInt32Property della classe Win32_RDSHCollection
-description: Aggiorna un valore della proprietà Integer di un \_ oggetto Win32 RDSHCollection.
+title: Metodo SetInt32Property della Win32_RDSHCollection classe
+description: Aggiorna un valore della proprietà Integer di un oggetto \_ RDSHCollection Win32.
 ms.assetid: 2a9a5d83-d147-43b3-b57c-6c744da0923d
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SetInt32Property
-- Metodo SetInt32Property Servizi Desktop remoto, classe Win32_RDSHCollection
-- Classe Win32_RDSHCollection Servizi Desktop remoto, metodo SetInt32Property
+- Metodo SetInt32Property Servizi Desktop remoto
+- Metodo SetInt32Property Servizi Desktop remoto , Win32_RDSHCollection classe
+- Win32_RDSHCollection classe Servizi Desktop remoto, metodo SetInt32Property
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 136bb8ccf34004f747829fb43ee8080ccd1d3132
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d19af81a807d6a2eb27693b88428df925644675093d3fbb80cb809a6011fb22b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118127456"
 ---
-# <a name="setint32property-method-of-the-win32_rdshcollection-class"></a>Metodo SetInt32Property della \_ classe RDSHCollection Win32
+# <a name="setint32property-method-of-the-win32_rdshcollection-class"></a>Metodo SetInt32Property della classe RDSHCollection Win32 \_
 
-Aggiorna un valore della proprietà Integer di un oggetto [**Win32 \_ RDSHCollection**](win32-rdshcollection.md) .
+Aggiorna un valore della proprietà Integer di [**un oggetto \_ RDSHCollection Win32.**](win32-rdshcollection.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,14 +44,14 @@ uint32 SetInt32Property(
 
 <dl> <dt>
 
-*Chiave* \[ di in\]
+*Chiave* \[ Pollici\]
 </dt> <dd>
 
 Chiave che identifica la proprietà da aggiornare.
 
 </dd> <dt>
 
-*Valore* \[ di in\]
+*Valore* \[ Pollici\]
 </dt> <dd>
 
 Nuovo valore della proprietà.
@@ -60,7 +60,7 @@ Nuovo valore della proprietà.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI.
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,8 +70,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Root \\ CIMv2 \\ rdms<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -80,7 +80,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RDSHCollection Win32**](win32-rdshcollection.md)
+[**Win32 \_ RDSHCollection**](win32-rdshcollection.md)
 </dt> </dl>
 
  
