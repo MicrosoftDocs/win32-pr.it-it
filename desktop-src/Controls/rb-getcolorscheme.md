@@ -1,9 +1,9 @@
 ---
-title: Messaggio RB_GETCOLORSCHEME (COMmctrl. h)
+title: RB_GETCOLORSCHEME messaggio (Commctrl.h)
 description: Recupera le informazioni sulla combinazione di colori dal controllo Rebar.
 ms.assetid: 01f81c4b-bbc9-43ae-a1f5-1e289c6fa278
 keywords:
-- Controlli di Windows Message RB_GETCOLORSCHEME
+- RB_GETCOLORSCHEME controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a3d154fd14b93127aa22148f2882f70018225cb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b918b46d1077c0074584be2d609d486097cc2e40f7a5c62a03db914fce58e320
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118169621"
 ---
-# <a name="rb_getcolorscheme-message"></a>\_Messaggio GETCOLORSCHEME RB
+# <a name="rb_getcolorscheme-message"></a>Messaggio RB \_ GETCOLORSCHEME
 
 Recupera le informazioni sulla combinazione di colori dal controllo Rebar.
 
@@ -35,13 +35,13 @@ Recupera le informazioni sulla combinazione di colori dal controllo Rebar.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**ColorScheme**](/windows/win32/api/commctrl/ns-commctrl-colorscheme) che riceverà le informazioni sulla combinazione di colori. Prima di inviare questo messaggio, è necessario impostare il membro **dwSize** della struttura su **sizeof**(ColorScheme).
+Puntatore a [**una struttura COLORSCHEME**](/windows/win32/api/commctrl/ns-commctrl-colorscheme) che riceverà le informazioni sulla combinazione di colori. È necessario impostare il **membro dwSize** di questa struttura su **sizeof**(COLORSCHEME) prima di inviare questo messaggio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso contrario.
+Restituisce un valore diverso da zero in caso di esito positivo oppure zero in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso c
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

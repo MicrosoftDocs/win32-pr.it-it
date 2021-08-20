@@ -1,10 +1,10 @@
 ---
-title: Metodo INapClientManagement RegisterEnforcementClient (NapManagement. h)
-description: Registra un client di imposizione con il sistema NAP.
+title: Metodo INapClientManagement RegisterEnforcementClient (NapManagement.h)
+description: Registra un client di imposizione con il sistema protezione accesso alla rete.
 ms.assetid: 26ea45ea-a366-4162-91dc-06bcd0261c56
 keywords:
-- NAP metodo RegisterEnforcementClient
-- Metodo RegisterEnforcementClient NAP, interfaccia INapClientManagement
+- Metodo RegisterEnforcementClient NAP
+- Metodo RegisterEnforcementClient NAP , interfaccia INapClientManagement
 - Interfaccia INapClientManagement NAP, metodo RegisterEnforcementClient
 topic_type:
 - apiref
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc8ed4b5fe5a97d60b764341f21f25628c3c3434
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1e22deffb8f144e8f7176bd78fb18978228a26251be5591df61a322e5da17d3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134563"
 ---
-# <a name="inapclientmanagementregisterenforcementclient-method"></a>Metodo INapClientManagement:: RegisterEnforcementClient
+# <a name="inapclientmanagementregisterenforcementclient-method"></a>Metodo INapClientManagement::RegisterEnforcementClient
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **RegisterEnforcementClient** registra un client di imposizione con il sistema NAP.
+Il **metodo RegisterEnforcementClient** registra un client di imposizione con il sistema nap.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,25 +47,25 @@ HRESULT RegisterEnforcementClient(
 
 <dl> <dt>
 
-*applicazione* \[ in\]
+*enforcer* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura di dati [**NapComponentRegistrationInfo**](/windows/win32/api/naptypes/ns-naptypes-napcomponentregistrationinfo) che contiene le informazioni di registrazione associate al client di imposizione.
+Puntatore a una [**struttura di dati NapComponentRegistrationInfo**](/windows/win32/api/naptypes/ns-naptypes-napcomponentregistrationinfo) che contiene le informazioni di registrazione associate al client di imposizione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un codice di stato HRESULT incluso ma non limitato a uno dei valori seguenti.
+Il metodo restituisce un codice di stato HRESULT che include, a sua volta, uno degli elementi seguenti.
 
 
 
 | Codice restituito                                                                                            | Descrizione                                                                       |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                   | Operazione riuscita.<br/>                                                  |
-| <dl> <dt>**E \_ AccessDenied**</dt> </dl>         | Errore delle autorizzazioni, accesso negato.<br/>                                      |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl>          | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/>                |
-| <dl> <dt>**protezione accesso alla rete \_ E \_ ID in conflitto \_**</dt> </dl> | Un agente di imposizione che usa l'identificatore specificato è già registrato.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                   | Operazione riuscita.<br/>                                                  |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl>         | Errore di autorizzazione, accesso negato.<br/>                                      |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>          | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/>                |
+| <dl> <dt>**ID \_ IN CONFLITTO DI PROTEZIONE ACCESSO ALLA RETE \_ \_ E**</dt> </dl> | Un agente di imposizione che usa l'identificatore specificato è già registrato.<br/> |
 
 
 
@@ -77,10 +77,10 @@ Il metodo restituisce un codice di stato HRESULT incluso ma non limitato a uno d
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                               |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                         |
-| Intestazione<br/>                   | <dl> <dt>NapManagement. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapManagement. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                               |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                         |
+| Intestazione<br/>                   | <dl> <dt>NapManagement.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapManagement.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>        |
 
 

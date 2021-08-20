@@ -1,5 +1,5 @@
 ---
-title: Riferimento (OLE e trasferimento dei dati)
+title: Riferimento (OLE e trasferimento di dati)
 description: Gli elementi di programmazione seguenti vengono usati per implementare documenti composti ed eseguire il trasferimento dei dati tra applicazioni.
 ms.assetid: 980a3298-1ecc-4ddc-8020-5b6b7202a1e7
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118309907"
 ---
-# <a name="reference-ole-and-data-transfer"></a>Riferimento (OLE e trasferimento dei dati)
+# <a name="reference-ole-and-data-transfer"></a>Riferimento (OLE e trasferimento di dati)
 
 Gli elementi di programmazione seguenti vengono usati per implementare documenti composti ed eseguire il trasferimento dei dati tra applicazioni.
 

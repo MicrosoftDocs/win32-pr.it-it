@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6bc5a908336f011973690bd3ca3d598583b0d32d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
-ms.translationtype: HT
+ms.openlocfilehash: 785e284b356acfa95615ac806b0433eb39ad737db5a6cca85365ecd0b48d27db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104976847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118091228"
 ---
 # <a name="any"></a>any
 
@@ -26,7 +26,7 @@ Determina se i componenti del valore specificato sono diversi da zero.
 
 
 
-| *ret* any (*x*) |
+| *ret* any(*x*) |
 |----------------|
 
 
@@ -39,7 +39,7 @@ Determina se i componenti del valore specificato sono diversi da zero.
 
 | Elemento                                                   | Descrizione                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*x*<br/> | \[nel \] valore specificato.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[in \] Il valore specificato.<br/> |
 
 
 
@@ -47,11 +47,11 @@ Determina se i componenti del valore specificato sono diversi da zero.
 
 ## <a name="return-value"></a>Valore restituito
 
-**True** se i componenti del parametro *x* sono diversi da zero. in caso contrario, **false**.
+**True** se i componenti del *parametro x* sono diversi da zero. in caso contrario, **false**.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione è simile alla funzione intrinseca [**All**](dx-graphics-hlsl-all.md) HLSL. La funzione **any** determina se i componenti del valore specificato sono diversi da zero, mentre la funzione **All** determina se tutti i componenti del valore specificato sono diversi da zero.
+Questa funzione è simile a tutte [**le funzioni**](dx-graphics-hlsl-all.md) intrinseche HLSL. La **funzione any** determina se i componenti del valore specificato sono diversi da zero, mentre la funzione **all** determina se tutti i componenti del valore specificato sono diversi da zero.
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -59,14 +59,14 @@ Questa funzione è simile alla funzione intrinseca [**All**](dx-graphics-hlsl-al
 
 | Nome  | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md)                                                         | Dimensione |
 |-------|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|------|
-| *x*   | [**scalare**](dx-graphics-hlsl-intrinsic-functions.md), **vettore** o **matrice** | [**float**](/windows/desktop/WinProg/windows-data-types), [**int**](/windows/desktop/WinProg/windows-data-types), [**bool**](/windows/desktop/WinProg/windows-data-types) | any  |
-| *RET* | [**scalare**](dx-graphics-hlsl-intrinsic-functions.md)                            | [**bool**](/windows/desktop/WinProg/windows-data-types)                                                                                 | 1    |
+| *x*   | [**scalare,**](dx-graphics-hlsl-intrinsic-functions.md) **vettore** o **matrice** | [**float**](/windows/desktop/WinProg/windows-data-types), [**int**](/windows/desktop/WinProg/windows-data-types), [**bool**](/windows/desktop/WinProg/windows-data-types) | any  |
+| *Ret* | [**Scalare**](dx-graphics-hlsl-intrinsic-functions.md)                            | [**Bool**](/windows/desktop/WinProg/windows-data-types)                                                                                 | 1    |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -74,8 +74,8 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                       | Supportato             |
 |------------------------------------------------------------------------------------|-----------------------|
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader più elevati | sì                   |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1 e PS \_ 1 \_ 4 |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader superiori | sì                   |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1 e ps \_ 1 \_ 4 |
 
 
 

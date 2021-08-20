@@ -58,7 +58,7 @@ Spazio da cui vengono allocati i pool di RID.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| Is-Single-Valued       | Vero                                           |
+| A valore singolo       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                   |
@@ -79,7 +79,7 @@ Spazio da cui vengono allocati i pool di RID.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| Is-Single-Valued       | Vero                                           |
+| A valore singolo       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                   |
@@ -100,7 +100,7 @@ Spazio da cui vengono allocati i pool di RID.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| Is-Single-Valued       | Vero                                           |
+| A valore singolo       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                   |

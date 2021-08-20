@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 309050be35748f39eefc8b40b8e590f8f6889fde
-ms.sourcegitcommit: 07ba02719c9779e082b108ae74f9699fb0236c34
+ms.openlocfilehash: 721931bfa05a96ca47fd69f643a02076201bb5f93eff003afa83714f2d14b519
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108644193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950950"
 ---
 # <a name="add-sslcert"></a>add sslcert
 
@@ -45,7 +45,7 @@ add sslcert [ipport=]IP Address:port
 
 <dl> <dt>
 
-<span id="_ipport__IP_Address_port"></span><span id="_ipport__ip_address_port"></span><span id="_IPPORT__IP_ADDRESS_PORT"></span>**\[ipport=INDIRIZZO IP:porta\]**
+<span id="_ipport__IP_Address_port"></span><span id="_ipport__ip_address_port"></span><span id="_IPPORT__IP_ADDRESS_PORT"></span>**\[ipport=Indirizzo IP:porta\]**
 </dt> <dd>
 
 Specifica l'indirizzo IP e la porta per il binding.
@@ -125,7 +125,7 @@ Specifica il nome dell'archivio in LOCAL \_ MACHINE in cui è archiviato SslCtlI
 <span id="_dsmapperusage__enable_disable__"></span><span id="_DSMAPPERUSAGE__ENABLE_DISABLE__"></span>**\[dsmapperusage={enable \| disable}\]**
 </dt> <dd>
 
-Attiva o disattiva i mapping DS. L'impostazione predefinita corrisponde alla disabilitazione.
+Attiva o disattiva i matrici DS. L'impostazione predefinita corrisponde alla disabilitazione.
 
 </dd> <dt>
 
@@ -138,9 +138,9 @@ Attiva o disattiva la negoziazione del certificato. L'impostazione predefinita c
 
 ## <a name="examples"></a>Esempio
 
-**aggiungere sslcert ipport=1.1.1.1:443**
+**add sslcert ipport=1.1.1.1:443**
 
-**certhash=0102030405060708090A0B0C0D0E0F101121314**
+**certhash=0102030405060708090A0B0C0D0E0F1011121314**
 
 **appid={00112233-4455-6677-8899-AABBCCDDEEFF}**
 

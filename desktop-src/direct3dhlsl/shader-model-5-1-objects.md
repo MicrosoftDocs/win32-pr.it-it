@@ -4,18 +4,18 @@ description: Gli oggetti seguenti sono stati aggiunti al modello shader 5.1.
 ms.assetid: 2958618D-54C6-4860-9910-B45AAB73CCFD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 376ce272e789501e21f5866be37f56daf31bc829
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 1f253c9d6a82e5a464e55761625ba8f88dd7953e3f293fc142a69019a3889830
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111825718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119671632"
 ---
 # <a name="shader-model-51-objects"></a>Oggetti modello shader 5.1
 
 Gli oggetti seguenti sono stati aggiunti al modello shader 5.1.
 
-Per le viste [ordine rasterizzatore](/windows/desktop/direct3d11/rasterizer-order-views) (disponibili in D3D11.3 e D3D12), gli oggetti seguenti sono nuovi e sono consentiti solo nella pixel shader. Si noti che i metodi supportati sono identici agli oggetti UAV corrispondenti.
+Per le viste [ordine rasterizzatore](/windows/desktop/direct3d11/rasterizer-order-views) (disponibili in D3D11.3 e D3D12), gli oggetti seguenti sono nuovi e sono consentiti solo nel pixel shader. Si noti che i metodi supportati sono identici agli oggetti UAV corrispondenti.
 
 
 

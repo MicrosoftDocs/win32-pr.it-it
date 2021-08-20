@@ -1,7 +1,7 @@
 ---
-description: Il metodo OnStartStreaming Reimposta tutte le volte che controllano il flusso.
+description: Il metodo OnStartStreaming reimposta tutte le volte che controlla il flusso.
 ms.assetid: a2bb07f2-6880-4030-96c5-d146982dfe66
-title: Metodo CBaseVideoRenderer. OnStartStreaming (Renbase. h)
+title: Metodo CBaseVideoRenderer.OnStartStreaming (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 403d465d4ff9fe8ae9101b13e2ec5e6c04bdddf2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b2a55d509c900c7be68d3225826c208755d31ef66e0c24119bd1d044dad1aefc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118157056"
 ---
-# <a name="cbasevideorendereronstartstreaming-method"></a>CBaseVideoRenderer. OnStartStreaming, metodo
+# <a name="cbasevideorendereronstartstreaming-method"></a>Metodo CBaseVideoRenderer.OnStartStreaming
 
-Il `OnStartStreaming` metodo reimposta tutte le volte che controllano il flusso.
+Il `OnStartStreaming` metodo reimposta tutte le volte che controlla il flusso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro esegue l'override di [**CBaseRenderer:: OnStartStreaming**](cbaserenderer-onstartstreaming.md).
+Questa funzione membro esegue l'override di [**CBaseRenderer::OnStartStreaming**](cbaserenderer-onstartstreaming.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Questa funzione membro esegue l'override di [**CBaseRenderer:: OnStartStreaming*
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

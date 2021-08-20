@@ -4,12 +4,12 @@ ms.assetid: 2217a69e-5b39-4827-82cd-99a02e9d39c6
 title: Evento InkOverlay.TabletRemoved (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a5572ec4c8afd664ef96534e93c402ec2141f65
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0dea3243963e77811c49b66e21b71779872bce211109293f3fe69a3e6281d31e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118042113"
 ---
 # <a name="inkoverlaytabletremoved-event"></a>Evento InkOverlay.TabletRemoved
 
@@ -51,7 +51,7 @@ Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollec
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

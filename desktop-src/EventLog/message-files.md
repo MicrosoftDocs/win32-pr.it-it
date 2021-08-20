@@ -1,21 +1,21 @@
 ---
-description: Ogni origine evento deve registrare i file di messaggio contenenti stringhe di descrizione per ogni identificatore evento, categoria di eventi e parametro.
+description: Ogni origine evento deve registrare i file di messaggio contenenti stringhe di descrizione per ogni identificatore di evento, categoria di eventi e parametro.
 ms.assetid: 0c251a45-1414-4855-a6f5-86ebdfab2693
 title: File di messaggio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb20d5919c75f06bfd7b6db9b47216566ab6ac8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44de0c91a098ab1b916a73d99a02d0d31a8b5b7690936322166e65baef4bd13c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951410"
 ---
 # <a name="message-files"></a>File di messaggio
 
-Ogni [origine evento](event-sources.md) deve registrare i file di messaggio contenenti stringhe di descrizione per ogni [identificatore evento](event-identifiers.md), [categoria di eventi](event-categories.md)e [parametro](event-identifiers.md). Registrare questi file nei valori del registro di sistema **EventMessageFile**, **CategoryMessageFile** e **ParameterMessageFile** per l'origine evento.
+Ogni [origine evento deve](event-sources.md) registrare file di messaggio contenenti stringhe di descrizione per ogni [identificatore](event-identifiers.md)di evento, categoria [di eventi](event-categories.md)e [parametro](event-identifiers.md). Registrare questi file nei valori del Registro di sistema **EventMessageFile**, **CategoryMessageFile** e **ParameterMessageFile** per l'origine evento.
 
-È possibile creare un file di messaggio contenente le descrizioni per gli identificatori, le categorie e i parametri degli eventi oppure creare tre file di messaggio distinti. Gli identificatori di messaggio per tutti i messaggi devono essere univoci se si specificano i messaggi in un file o in tre file. Diverse applicazioni possono condividere lo stesso file di messaggio. Per ulteriori informazioni sui file dei messaggi, vedere [**compilatore di messaggi**](/windows/desktop/WES/message-compiler--mc-exe-). Per informazioni dettagliate sulla sintassi di un file di messaggio, vedere [file di testo del messaggio](message-text-files.md).
+È possibile creare un file di messaggio contenente descrizioni per gli identificatori di evento, le categorie e i parametri oppure creare tre file di messaggio separati. Gli identificatori di messaggio per tutti i messaggi devono essere univoci indipendentemente dal fatto che si specificano i messaggi in uno o tre file. Diverse applicazioni possono condividere lo stesso file di messaggio. Per altre informazioni sui file di messaggio, vedere [**Message Compiler.**](/windows/desktop/WES/message-compiler--mc-exe-) Per informazioni dettagliate sulla sintassi di un file di messaggio, vedere [File di testo dei messaggi.](message-text-files.md)
 
 ## <a name="example-message-file"></a>File di messaggio di esempio
 
@@ -125,14 +125,14 @@ drive%0
 .
 ```
 
-L'applicazione per la visualizzazione degli eventi può utilizzare la procedura seguente per ottenere l'accesso alle [stringhe di messaggio](event-identifiers.md) nella dll del messaggio.
+L'applicazione di visualizzazione degli eventi può utilizzare la procedura seguente per ottenere l'accesso alle stringhe [di messaggio](event-identifiers.md) nella DLL del messaggio.
 
-**Per ottenere le stringhe di descrizione**
+**Per ottenere stringhe di descrizione**
 
-1.  Chiamare la funzione [**RegOpenKey**](/windows/desktop/api/winreg/nf-winreg-regopenkeya) per aprire l'origine evento.
-2.  Chiamare la funzione [**RegQueryValueEx**](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) per ottenere il contenuto del valore **EventMessageFile** per l'origine evento, ovvero il nome della dll del messaggio.
-3.  Chiamare la funzione [**LoadLibraryEx**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa) per caricare la dll del messaggio determinata dal passaggio 2.
-4.  Chiamare la funzione [**FormatMessage**](/windows/desktop/api/winbase/nf-winbase-formatmessage) con l'identificatore del messaggio per ottenere la descrizione dalla dll. Si noti che gli identificatori dei messaggi sono definiti in. File H generato dal compilatore di messaggi. La funzione **FormatMessage** sostituisce le stringhe di inserimento usando i valori degli argomenti passati, ma non sostituisce le stringhe di inserimento dei parametri. prima di visualizzare la stringa, è necessario sostituire le stringhe di inserimento dei parametri.
+1.  Chiamare la [**funzione RegOpenKey**](/windows/desktop/api/winreg/nf-winreg-regopenkeya) per aprire l'origine evento.
+2.  Chiamare la [**funzione RegQueryValueEx**](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) per ottenere il contenuto del valore **EventMessageFile** per l'origine evento, ovvero il nome della DLL del messaggio.
+3.  Chiamare la [**funzione LoadLibraryEx**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa) per caricare la DLL del messaggio determinata dal passaggio 2.
+4.  Chiamare la [**funzione FormatMessage**](/windows/desktop/api/winbase/nf-winbase-formatmessage) con l'identificatore del messaggio per ottenere la descrizione dalla DLL. Si noti che gli identificatori dei messaggi sono definiti in . File H generato dal compilatore di messaggi. La **funzione FormatMessage** sostituirà le stringhe di inserimento usando i valori degli argomenti passati, ma non sostituirà le stringhe di inserimento dei parametri. È necessario sostituire manualmente le stringhe di inserimento dei parametri prima di visualizzare la stringa.
 
  
 

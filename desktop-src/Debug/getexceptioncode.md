@@ -1,7 +1,7 @@
 ---
-description: Recupera un codice che identifica il tipo di eccezione che si verifica. La funzione può essere chiamata solo dall'interno dell'espressione di filtro o del blocco del gestore di eccezioni di un gestore di eccezioni.
+description: Recupera un codice che identifica il tipo di eccezione che si verifica. La funzione può essere chiamata solo dall'interno dell'espressione di filtro o del blocco del gestore eccezioni di un gestore di eccezioni.
 ms.assetid: f3c4a9f3-c9ae-4d20-85a7-787cb32278d1
-title: GetExceptionCode (macro)
+title: Macro GetExceptionCode
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,19 +12,19 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 3b87b77ddb2d2e2af3a22e30d1204cf178ee6981
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5c1badd5317b5a12eb97ed6418873b5c576f520f4a8106361abb1a6f7c95921e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162662"
 ---
-# <a name="getexceptioncode-macro"></a>GetExceptionCode (macro)
+# <a name="getexceptioncode-macro"></a>Macro GetExceptionCode
 
-Recupera un codice che identifica il tipo di eccezione che si verifica. La funzione può essere chiamata solo dall'interno dell'espressione di filtro o del blocco del gestore di eccezioni di un gestore di eccezioni.
+Recupera un codice che identifica il tipo di eccezione che si verifica. La funzione può essere chiamata solo dall'interno dell'espressione di filtro o del blocco del gestore eccezioni di un gestore di eccezioni.
 
 > [!Note]  
-> Il compilatore di ottimizzazione di Microsoft C/C++ interpreta questa funzione come una parola chiave e il suo utilizzo al di fuori della sintassi di gestione delle eccezioni appropriata genera un errore del compilatore.
+> Il compilatore di ottimizzazione di Microsoft C/C++ interpreta questa funzione come una parola chiave e il relativo uso al di fuori della sintassi di gestione delle eccezioni appropriata genera un errore del compilatore.
 
  
 
@@ -39,39 +39,39 @@ DWORD GetExceptionCode(void);
 
 ## <a name="parameters"></a>Parametri
 
-Questa macro non contiene parametri.
+Questa macro non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito identifica il tipo di eccezione. La tabella seguente identifica i codici di eccezione che possono verificarsi a causa di errori di programmazione comuni. Questi valori sono definiti in WinBase. h e WinNT. h.
+Il valore restituito identifica il tipo di eccezione. La tabella seguente identifica i codici di eccezione che possono verificarsi a causa di errori di programmazione comuni. Questi valori sono definiti in WinBase.h e WinNT.h.
 
 
 
 | Codice restituito                                                                                                         | Descrizione                                                                                                                                                                                                                                                                                                                 |
 |---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_violazione di accesso alle eccezioni \_**</dt> </dl>         | Il thread tenta di leggere o scrivere in un indirizzo virtuale per cui non ha accesso.<br/> Questo valore è definito come violazione di accesso allo stato \_ \_ .<br/>                                                                                                                                                 |
-| <dl> <dt>**\_ \_ superati i limiti della matrice di eccezioni \_**</dt> </dl>   | Il thread tenta di accedere a un elemento di matrice fuori limite e l'hardware sottostante supporta il controllo dei limiti.<br/> Questo valore è definito come limiti della matrice di stato \_ \_ \_ superati.<br/>                                                                                                                 |
-| <dl> <dt>**punto di \_ interruzione eccezione**</dt> </dl>                | Viene rilevato un punto di interruzione.<br/> Questo valore è definito come punto di interruzione dello stato \_ .<br/>                                                                                                                                                                                                                             |
-| <dl> <dt>**disallineamento del tipo di dati eccezione \_ \_**</dt> </dl>    | Il thread tenta di leggere o scrivere dati non allineati all'hardware che non fornisce l'allineamento. Ad esempio, i valori a 16 bit devono essere allineati su limiti di 2 byte, valori a 32 bit su limiti di 4 byte e così via.<br/> Questo valore è definito come disallineamento del tipo di dati di stato \_ \_ .<br/>                    |
-| <dl> <dt>**\_operando di eccezione flt \_ denormal \_**</dt> </dl>    | Uno degli operandi in un'operazione a virgola mobile è denormalizzato. Un valore denormalizzato è troppo piccolo per essere rappresentato come valore a virgola mobile standard.<br/> Questo valore è definito come \_ \_ operando denormalizzato di stato float \_ .<br/>                                                                                  |
-| <dl> <dt>**ECCEZIONE \_ flt \_ divisione \_ per \_ zero**</dt> </dl>     | Il thread tenta di dividere un valore a virgola mobile per un divisore a virgola mobile pari a 0 (zero).<br/> Questo valore è definito come \_ float \_ di stato divisione \_ per \_ zero.<br/>                                                                                                                                               |
-| <dl> <dt>**risultato di eccezione \_ flt \_ inesatto \_**</dt> </dl>      | Il risultato di un'operazione a virgola mobile non può essere rappresentato esattamente come una frazione decimale.<br/> Questo valore è definito come \_ \_ risultato inesatto float di stato \_ .<br/>                                                                                                                                                |
-| <dl> <dt>**\_operazione FLT di eccezione \_ non valida \_**</dt> </dl>   | Eccezione a virgola mobile non inclusa nell'elenco.<br/> Questo valore è definito come operazione di stato \_ float \_ non valido \_ .<br/>                                                                                                                                                                             |
-| <dl> <dt>**\_overflow flt \_ eccezione**</dt> </dl>             | L'esponente di un'operazione a virgola mobile è maggiore della grandezza consentita dal tipo corrispondente.<br/> Questo valore è definito come overflow di stato \_ float \_ .<br/>                                                                                                                                         |
-| <dl> <dt>**\_ \_ controllo dello stack flt eccezione \_**</dt> </dl>         | Si è verificato un overflow o un overflow dello stack a causa di un'operazione a virgola mobile.<br/> Questo valore è definito come \_ \_ controllo dello stack float di stato \_ .<br/>                                                                                                                                                                 |
-| <dl> <dt>**UNDERFLOW di eccezione \_ flt \_**</dt> </dl>            | L'esponente di un'operazione a virgola mobile è minore della grandezza consentita dal tipo corrispondente.<br/> Questo valore è definito come underflow di stato \_ float \_ .<br/>                                                                                                                                           |
-| <dl> <dt>**\_pagina di protezione delle eccezioni \_**</dt> </dl>               | Il thread ha eseguito l'accesso alla memoria allocata con il \_ modificatore di Page Guard.<br/> Questo valore è definito come violazione della pagina di Guard di stato \_ \_ \_ .<br/>                                                                                                                                                                          |
-| <dl> <dt>**\_istruzione non valida eccezione \_**</dt> </dl>      | Il thread tenta di eseguire un'istruzione non valida.<br/> Questo valore è definito come istruzione di stato non \_ valida \_ .<br/>                                                                                                                                                                                            |
-| <dl> <dt>**ECCEZIONE \_ nell' \_ errore di pagina \_**</dt> </dl>           | Il thread tenta di accedere a una pagina che non è presente e il sistema non è in grado di caricare la pagina. Ad esempio, questa eccezione può verificarsi se una connessione di rete viene persa durante l'esecuzione di un programma in una rete.<br/> Questo valore è definito come stato \_ nell' \_ errore di pagina \_ .<br/>                                   |
-| <dl> <dt>**ECCEZIONE \_ int \_ Divide \_ per \_ zero**</dt> </dl>     | Il thread tenta di dividere un valore integer per un divisore integer pari a 0 (zero).<br/> Questo valore è definito come intero dello stato \_ \_ diviso \_ per \_ zero.<br/>                                                                                                                                                         |
-| <dl> <dt>**\_overflow int \_ eccezione**</dt> </dl>             | Il risultato di un'operazione Integer crea un valore troppo grande per essere utilizzato dal registro di destinazione. In alcuni casi, questa operazione comporterà l'esecuzione del bit del risultato più significativo. Alcune operazioni non impostano il flag Carry.<br/> Questo valore è definito come overflow di Integer dello stato \_ \_ .<br/> |
-| <dl> <dt>**\_disposizione non valida eccezione \_**</dt> </dl>      | Un gestore di eccezioni restituisce una disposizione non valida al dispatcher di eccezioni. I programmatori che usano un linguaggio di alto livello, ad esempio C, non dovrebbero mai riscontrare questa eccezione.<br/> Questo valore è definito come stato \_ non valido \_ .<br/>                                                                      |
-| <dl> <dt>**\_handle non valido eccezione \_**</dt> </dl>           | Il thread usava un handle per un oggetto kernel non valido, probabilmente perché era stato chiuso.<br/> Questo valore è definito come handle di stato \_ non valido \_ .<br/>                                                                                                                                                 |
-| <dl> <dt>**eccezione non \_ continuabile \_ eccezione**</dt> </dl> | Il thread tenta di continuare l'esecuzione dopo che si è verificata un'eccezione non continua.<br/> Questo valore è definito come eccezione di stato non \_ continuabile \_ .<br/>                                                                                                                                                       |
-| <dl> <dt>**\_istruzione priv dell'eccezione \_**</dt> </dl>         | Il thread tenta di eseguire un'istruzione con un'operazione non consentita nella modalità computer corrente.<br/> Questo valore è definito come istruzione con privilegi di stato \_ \_ .<br/>                                                                                                                           |
-| <dl> <dt>**\_singolo \_ passaggio eccezione**</dt> </dl>              | Un trap di traccia o un altro meccanismo di istruzione singola segnala l'esecuzione di un'istruzione.<br/> Questo valore è definito come \_ singolo passaggio di stato \_ .<br/>                                                                                                                                                           |
-| <dl> <dt>**\_overflow dello stack di eccezioni \_**</dt> </dl>           | Il thread usa il relativo stack.<br/> Questo valore è definito come \_ overflow dello stack di stato \_ .<br/>                                                                                                                                                                                                                       |
-| <dl> <dt>**consolidamento dello stato di \_ rimozione \_**</dt> </dl>          | È stato eseguito un consolidamento dei frame.<br/>                                                                                                                                                                                                                                                                         |
+| <dl> <dt>**VIOLAZIONE \_ DI ACCESSO ALLE \_ ECCEZIONI**</dt> </dl>         | Il thread tenta di leggere o scrivere in un indirizzo virtuale per il quale non ha accesso.<br/> Questo valore è definito come VIOLAZIONE \_ DI ACCESSO \_ DI STATO.<br/>                                                                                                                                                 |
+| <dl> <dt>**LIMITI \_ DELLA MATRICE DI \_ \_ ECCEZIONI SUPERATI**</dt> </dl>   | Il thread tenta di accedere a un elemento della matrice non in limiti e l'hardware sottostante supporta il controllo dei limiti.<br/> Questo valore è definito come STATUS \_ ARRAY \_ BOUNDS \_ EXCEEDED.<br/>                                                                                                                 |
+| <dl> <dt>**PUNTO DI INTERRUZIONE \_ ECCEZIONE**</dt> </dl>                | Viene rilevato un punto di interruzione.<br/> Questo valore è definito come STATUS \_ BREAKPOINT.<br/>                                                                                                                                                                                                                             |
+| <dl> <dt>**EXCEPTION \_ DATATYPE \_ MISALIGNMENT**</dt> </dl>    | Il thread tenta di leggere o scrivere dati non allineati su hardware che non fornisce allineamento. Ad esempio, i valori a 16 bit devono essere allineati su limiti a 2 byte, valori a 32 bit su limiti a 4 byte e così via.<br/> Questo valore è definito come STATUS \_ DATATYPE \_ MISALIGNMENT.<br/>                    |
+| <dl> <dt>**\_ \_ OPERANDO DENORMALE FLT \_ ECCEZIONE**</dt> </dl>    | Uno degli operandi in un'operazione a virgola mobile è denormale. Un valore denormale è troppo piccolo per essere rappresentato come valore a virgola mobile standard.<br/> Questo valore è definito come \_ OPERANDO DENORMALE DI STATUS \_ \_ FLOAT.<br/>                                                                                  |
+| <dl> <dt>**EXCEPTION \_ FLT \_ DIVIDE \_ BY \_ ZERO**</dt> </dl>     | Il thread tenta di dividere un valore a virgola mobile per un divisore a virgola mobile pari a 0 (zero).<br/> Questo valore è definito come STATUS \_ FLOAT \_ DIVIDE BY \_ \_ ZERO.<br/>                                                                                                                                               |
+| <dl> <dt>**RISULTATO \_ \_ DELL'ECCEZIONE FLT INEXACT \_**</dt> </dl>      | Il risultato di un'operazione a virgola mobile non può essere rappresentato esattamente come frazione decimale.<br/> Questo valore è definito come STATUS \_ FLOAT \_ INEXACT \_ RESULT.<br/>                                                                                                                                                |
+| <dl> <dt>**EXCEPTION \_ FLT \_ INVALID \_ OPERATION**</dt> </dl>   | Eccezione a virgola mobile non inclusa nell'elenco.<br/> Questo valore è definito come STATUS \_ FLOAT \_ INVALID \_ OPERATION.<br/>                                                                                                                                                                             |
+| <dl> <dt>**EXCEPTION \_ FLT \_ OVERFLOW**</dt> </dl>             | L'esponente di un'operazione a virgola mobile è maggiore della grandezza consentita dal tipo corrispondente.<br/> Questo valore è definito come STATUS \_ FLOAT \_ OVERFLOW.<br/>                                                                                                                                         |
+| <dl> <dt>**CONTROLLO \_ STACK FLT \_ \_ ECCEZIONI**</dt> </dl>         | Overflow o underflow dello stack a causa di un'operazione a virgola mobile.<br/> Questo valore è definito come STATUS \_ FLOAT \_ STACK \_ CHECK.<br/>                                                                                                                                                                 |
+| <dl> <dt>**UNDERFLOW \_ FLT \_ ECCEZIONE**</dt> </dl>            | L'esponente di un'operazione a virgola mobile è minore della grandezza consentita dal tipo corrispondente.<br/> Questo valore è definito come STATUS \_ FLOAT \_ UNDERFLOW.<br/>                                                                                                                                           |
+| <dl> <dt>**PAGINA \_ EXCEPTION \_ GUARD**</dt> </dl>               | Il thread ha eseguito l'accesso alla memoria allocata con il modificatore PAGE \_ GUARD.<br/> Questo valore è definito come VIOLAZIONE DI PAGINA DI STATUS \_ \_ \_ GUARD.<br/>                                                                                                                                                                          |
+| <dl> <dt>**ISTRUZIONE DI \_ ECCEZIONE NON \_ VALIDA**</dt> </dl>      | Il thread tenta di eseguire un'istruzione non valida.<br/> Questo valore è definito come ISTRUZIONE STATUS \_ \_ ILLEGAL.<br/>                                                                                                                                                                                            |
+| <dl> <dt>**ECCEZIONE \_ \_ NELL'ERRORE \_ DI PAGINA**</dt> </dl>           | Il thread tenta di accedere a una pagina non presente e il sistema non è in grado di caricare la pagina. Ad esempio, questa eccezione può verificarsi se una connessione di rete viene persa durante l'esecuzione di un programma in rete.<br/> Questo valore è definito come STATUS \_ IN \_ PAGE \_ ERROR.<br/>                                   |
+| <dl> <dt>**EXCEPTION \_ INT \_ DIVIDE \_ BY \_ ZERO**</dt> </dl>     | Il thread tenta di dividere un valore intero per un divisore intero pari a 0 (zero).<br/> Questo valore è definito come STATUS \_ INTEGER \_ DIVIDE BY \_ \_ ZERO.<br/>                                                                                                                                                         |
+| <dl> <dt>**EXCEPTION \_ INT \_ OVERFLOW**</dt> </dl>             | Il risultato di un'operazione integer crea un valore troppo grande per essere mantenuto dal registro di destinazione. In alcuni casi, ciò comporta un'operazione di estrazione del bit più significativo del risultato. Alcune operazioni non impostano il flag carry.<br/> Questo valore è definito come STATUS \_ INTEGER \_ OVERFLOW.<br/> |
+| <dl> <dt>**DISPOSIZIONE \_ ECCEZIONE \_ NON VALIDA**</dt> </dl>      | Un gestore di eccezioni restituisce una disposizione non valida al dispatcher di eccezioni. I programmatori che usano un linguaggio di alto livello, ad esempio C, non devono mai riscontrare questa eccezione.<br/> Questo valore è definito come STATUS \_ INVALID \_ DISPOSITION.<br/>                                                                      |
+| <dl> <dt>**HANDLE DI \_ ECCEZIONE NON \_ VALIDO**</dt> </dl>           | Il thread ha usato un handle per un oggetto kernel non valido (probabilmente perché è stato chiuso).<br/> Questo valore è definito come HANDLE DI \_ STATO NON \_ VALIDO.<br/>                                                                                                                                                 |
+| <dl> <dt>**EXCEPTION \_ NONCONTINUABLE \_ EXCEPTION**</dt> </dl> | Il thread tenta di continuare l'esecuzione dopo che si verifica un'eccezione non continuabile.<br/> Questo valore è definito come STATUS \_ NONCONTINUABLE \_ EXCEPTION.<br/>                                                                                                                                                       |
+| <dl> <dt>**ISTRUZIONE \_ PRIV \_ EXCEPTION**</dt> </dl>         | Il thread tenta di eseguire un'istruzione con un'operazione non consentita nella modalità computer corrente.<br/> Questo valore è definito come ISTRUZIONE CON \_ PRIVILEGI \_ DI STATO.<br/>                                                                                                                           |
+| <dl> <dt>**SINGOLO \_ PASSAGGIO \_ DELL'ECCEZIONE**</dt> </dl>              | Una trap di traccia o un altro meccanismo di istruzione singola segnala l'esecuzione di un'istruzione.<br/> Questo valore è definito come STATUS \_ SINGLE \_ STEP.<br/>                                                                                                                                                           |
+| <dl> <dt>**OVERFLOW \_ DELLO STACK DI \_ ECCEZIONI**</dt> </dl>           | Il thread usa lo stack.<br/> Questo valore è definito come STATUS \_ STACK \_ OVERFLOW.<br/>                                                                                                                                                                                                                       |
+| <dl> <dt>**CONSOLIDAMENTO \_ STATO RIMOZIONE \_**</dt> </dl>          | È stato eseguito un consolidamento dei frame.<br/>                                                                                                                                                                                                                                                                         |
 
 
 
@@ -79,19 +79,19 @@ Il valore restituito identifica il tipo di eccezione. La tabella seguente identi
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **GetExceptionCode** può essere chiamata solo dall'interno dell'espressione di filtro o del blocco del gestore di eccezioni di un gestore di eccezioni. L'espressione di filtro viene valutata se si verifica un'eccezione durante l'esecuzione del blocco **\_ \_ try** e determina se il blocco **\_ \_ except** viene eseguito o meno.
+La **funzione GetExceptionCode** può essere chiamata solo dall'interno dell'espressione di filtro o del blocco del gestore eccezioni di un gestore di eccezioni. L'espressione di filtro viene valutata se si verifica un'eccezione durante l'esecuzione del blocco **\_ \_ try** e determina se viene eseguito o meno il **\_ \_ blocco** except.
 
-L'espressione di filtro può richiamare una funzione di filtro. La funzione Filter non può chiamare **GetExceptionCode**. Tuttavia, il valore restituito di **GetExceptionCode** può essere passato come parametro a una funzione di filtro. Il valore restituito della funzione [**GetExceptionInformation**](getexceptioninformation.md) può essere passato anche come parametro a una funzione di filtro. **GetExceptionInformation** restituisce un puntatore a una struttura che include le informazioni sul codice di eccezione.
+L'espressione di filtro può richiamare una funzione di filtro. La funzione di filtro non può **chiamare GetExceptionCode**. Tuttavia, il valore restituito di **GetExceptionCode** può essere passato come parametro a una funzione di filtro. Il valore restituito della [**funzione GetExceptionInformation**](getexceptioninformation.md) può anche essere passato come parametro a una funzione di filtro. **GetExceptionInformation restituisce** un puntatore a una struttura che include le informazioni sul codice dell'eccezione.
 
-Quando sono presenti gestori nidificati, ogni espressione di filtro viene valutata fino a quando non viene valutata come gestore di esecuzione delle eccezioni \_ \_ oppure \_ l'esecuzione dell'eccezione continua \_ . Ogni espressione di filtro può richiamare **GetExceptionCode** per ottenere il codice di eccezione.
+Se sono presenti gestori annidati, ogni espressione di filtro viene valutata fino a quando non ne viene valutata una come EXCEPTION \_ EXECUTE HANDLER o EXCEPTION CONTINUE \_ \_ \_ EXECUTION. Ogni espressione di filtro può richiamare **GetExceptionCode** per ottenere il codice dell'eccezione.
 
-Il codice di eccezione restituito è il codice generato da un'eccezione hardware oppure il codice specificato nella funzione [**RaiseException**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception) per un'eccezione generata dal software.
+Il codice di eccezione restituito è il codice generato da un'eccezione hardware o il codice specificato nella [**funzione RaiseException**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception) per un'eccezione generata dal software.
 
 Quando si gestisce l'eccezione del punto di interruzione, è importante incrementare il puntatore all'istruzione nel record di contesto per continuare da questa eccezione.
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio, vedere [uso di un gestore di eccezioni](using-an-exception-handler.md).
+Per un esempio, vedere [Uso di un gestore eccezioni.](using-an-exception-handler.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -99,8 +99,8 @@ Per un esempio, vedere [uso di un gestore di eccezioni](using-an-exception-handl
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
 
 
 
@@ -114,10 +114,10 @@ Per un esempio, vedere [uso di un gestore di eccezioni](using-an-exception-handl
 [**RaiseException**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception)
 </dt> <dt>
 
-[Funzioni di gestione delle eccezioni strutturate](structured-exception-handling-functions.md)
+[Funzioni di gestione strutturata delle eccezioni](structured-exception-handling-functions.md)
 </dt> <dt>
 
-[Cenni preliminari sulla gestione delle eccezioni strutturata](structured-exception-handling.md)
+[Cenni preliminari sulla gestione strutturata delle eccezioni](structured-exception-handling.md)
 </dt> </dl>
 
  

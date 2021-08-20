@@ -1,7 +1,7 @@
 ---
-description: L' \_ enumerazione DEXTERF Track \_ Search \_ flags specifica le condizioni di limite in una ricerca di un oggetto nella sequenza temporale.
+description: L'enumerazione TRACK \_ SEARCH FLAGS specifica le condizioni limite per la ricerca di un oggetto nella sequenza \_ \_ temporale.
 ms.assetid: 9a66ea17-5c2c-41fd-8a7b-c9918b10c8c9
-title: Enumerazione DEXTERF_TRACK_SEARCH_FLAGS (qedit. h)
+title: DEXTERF_TRACK_SEARCH_FLAGS enumerazione (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - HeaderDef
 api_location:
 - Qedit.h
-ms.openlocfilehash: 09923d6be01bdf4a213db645a34b038dda15d86f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 55d7c70dffbf57ae4d9788a10dfea02911a998e21ab5ea8e3d9ad7fffcf91624
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952940"
 ---
-# <a name="dexterf_track_search_flags-enumeration"></a>\_ \_ Enumerazione flag di ricerca DEXTERF Track \_
+# <a name="dexterf_track_search_flags-enumeration"></a>Enumerazione FLAGSF \_ TRACK \_ SEARCH \_ FLAGS
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-L' `DEXTERF_TRACK_SEARCH_FLAGS` enumerazione specifica le condizioni di limite in una ricerca di un oggetto nella sequenza temporale.
+`DEXTERF_TRACK_SEARCH_FLAGS`L'enumerazione specifica le condizioni limite per la ricerca di un oggetto nella sequenza temporale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,21 +46,21 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="DEXTERF_BOUNDING"></span><span id="dexterf_bounding"></span>**\_delimitatore DEXTERF**
+<span id="DEXTERF_BOUNDING"></span><span id="dexterf_bounding"></span>**DELIMITAZIONE DI \_ BOUNDING DI BOUNDF**
 </dt> <dd>
 
-Cerca un oggetto che si estende sul tempo specificato.
+Cercare un oggetto che si estende nell'ora specificata.
 
 </dd> <dt>
 
-<span id="DEXTERF_EXACTLY_AT"></span><span id="dexterf_exactly_at"></span>**DEXTERF \_ esattamente \_ alle**
+<span id="DEXTERF_EXACTLY_AT"></span><span id="dexterf_exactly_at"></span>**EVASO \_ \_ ESATTAMENTE ALLE ORE**
 </dt> <dd>
 
-Cercare un oggetto che si avvii esattamente all'ora specificata.
+Cercare un oggetto che inizia esattamente all'ora specificata.
 
 </dd> <dt>
 
-<span id="DEXTERF_FORWARDS"></span><span id="dexterf_forwards"></span>**DEXTERF \_ inoltri**
+<span id="DEXTERF_FORWARDS"></span><span id="dexterf_forwards"></span>**FORWARDS DI \_ EF**
 </dt> <dd>
 
 Cercare un oggetto che inizia all'ora specificata o successiva.
@@ -69,15 +69,15 @@ Cercare un oggetto che inizia all'ora specificata o successiva.
 
 ## <a name="remarks"></a>Commenti
 
-Queste condizioni di limite sono riepilogate nella tabella seguente.
+Queste condizioni limite sono riepilogate nella tabella seguente.
 
 
 
 | Valore di enumerazione    | Condizione limite                        |
 |----------------------|-------------------------------------------|
-| \_delimitatore DEXTERF    | Start <= TimeStop > Time<br/> |
-| DEXTERF \_ esattamente \_ alle | Inizio = = ora                             |
-| DEXTERF \_ inoltri    | Inizio >= ora                          |
+| DELIMITAZIONE DI \_ BOUNDING DI BOUNDF    | Start <= TimeStop > Time<br/> |
+| EVASO \_ \_ ESATTAMENTE ALLE ORE | Start == Time                             |
+| FORWARDS DI \_ EF    | Start >= Time                          |
 
 
 
@@ -85,7 +85,7 @@ Queste condizioni di limite sono riepilogate nella tabella seguente.
 
 -   Start: ora di inizio dell'oggetto recuperato.
 -   Stop: ora di arresto dell'oggetto recuperato.
--   Ora: tempo di ricerca specificato.
+-   Time: tempo di ricerca specificato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -93,7 +93,7 @@ Queste condizioni di limite sono riepilogate nella tabella seguente.
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Qedit. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Qedit.h</dt> </dl> |
 
 
 

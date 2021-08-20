@@ -1,7 +1,7 @@
 ---
-description: Il metodo OnReceiveFirstSample viene chiamato quando il filtro riceve un campione mentre è sospeso.
+description: Il metodo OnReceiveFirstSample viene chiamato quando il filtro riceve un campione durante la sospensione.
 ms.assetid: 5bd481bf-a62d-4d3c-b875-b94298d12730
-title: Metodo CBaseRenderer. OnReceiveFirstSample (Renbase. h)
+title: Metodo CBaseRenderer.OnReceiveFirstSample (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2368b0e2abda3bcdd08872d730f8b9902dad43ac
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 882a356f47aa146ec8ba1b06d7af43235c8213334c0d82d0a241c590654bf2a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118157701"
 ---
-# <a name="cbaserendereronreceivefirstsample-method"></a>CBaseRenderer. OnReceiveFirstSample, metodo
+# <a name="cbaserendereronreceivefirstsample-method"></a>Metodo CBaseRenderer.OnReceiveFirstSample
 
-Il `OnReceiveFirstSample` metodo viene chiamato quando il filtro riceve un campione mentre è sospeso.
+Il `OnReceiveFirstSample` metodo viene chiamato quando il filtro riceve un campione durante la sospensione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,9 +55,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo [**CBaseRenderer:: Receive**](cbaserenderer-receive.md) chiama questo metodo. Non esegue alcuna operazione nella classe di base, ma la classe derivata può eseguirne l'override. Questo metodo è destinato principalmente ai renderer di video. Quando un renderer video viene sospeso, viene in genere visualizzato il primo campione come immagine ancora.
+Il [**metodo CBaseRenderer::Receive**](cbaserenderer-receive.md) chiama questo metodo. Non esegue alcuna operazione nella classe di base, ma la classe derivata può eseguirne l'override. Questo metodo è destinato principalmente ai renderer video. Quando un renderer video viene sospeso, in genere visualizza il primo esempio come immagine non ancorata.
 
-La ricerca del grafico mentre viene sospesa causa anche la chiamata del metodo.
+La ricerca del grafo in pausa comporta anche la chiamata di questo metodo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ La ricerca del grafico mentre viene sospesa causa anche la chiamata del metodo.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: La proprietà Type restituisce il valore della colonna Type della tabella ModuleConfiguration.
+description: La proprietà Type restituisce il valore dalla colonna Type della tabella ModuleConfiguration .
 ms.assetid: af2cb859-2e9d-4bca-867b-cdc61d9758cd
-title: Proprietà ConfigurableItem. Type (Mergemod. h)
+title: Proprietà ConfigurableItem.Type (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 89383fa076e3509a50ac3a7cc319709bbfdd0a9e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 86642bf86e724ee337d97baae56d8740fcf421158a6547786cbc9bf6b919a4bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118143700"
 ---
-# <a name="configurableitemtype-property"></a>Proprietà ConfigurableItem. Type
+# <a name="configurableitemtype-property"></a>ConfigurableItem.Type - proprietà
 
-La proprietà **Type** restituisce il valore della colonna Type della tabella ModuleConfiguration.
+La **proprietà Type** restituisce il valore dalla colonna Type della tabella ModuleConfiguration .
 
 Questa proprietà è di sola lettura.
 
@@ -40,7 +40,7 @@ propVal = ConfigurableItem.Type
 
 ## <a name="c"></a>C++
 
-Vedere [**get \_ Type function (oggetto ConfigurableItem)**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_type).
+Vedere [**Funzione get Type \_ (oggetto ConfigurableItem).**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_type)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,8 +48,8 @@ Vedere [**get \_ Type function (oggetto ConfigurableItem)**](/windows/desktop/ap
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | Mergemod.dll 2,0 o versione successiva<br/>                                                    |
-| Intestazione<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versione<br/> | Mergemod.dll 2.0 o versione successiva<br/>                                                    |
+| Intestazione<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

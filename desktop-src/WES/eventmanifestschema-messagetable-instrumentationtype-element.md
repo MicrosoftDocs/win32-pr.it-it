@@ -3,7 +3,7 @@ title: Elemento messageTable (EventsType)
 description: Contiene un riferimento a una stringa nella sezione localizzazione del manifesto. | Elemento messageTable (EventsType)
 ms.assetid: 4dcc1afe-8f2b-4baf-b40b-406f60368575
 keywords:
-- EventLog elemento messageTable
+- Elemento messageTable EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 85ce478fb30389ba911ef9dd76473a6261974f55
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e5a2bcf374e336047deaa1339ac749fde3fa7c4f27b38e046f6c9bc651c0e0ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120890"
 ---
 # <a name="messagetable-eventstype-element"></a>Elemento messageTable (EventsType)
 
@@ -56,7 +56,7 @@ Contiene un riferimento a una stringa nella sezione localizzazione del manifesto
 </xs:element>
 ```
 
-L'elemento **messageTable** è definito dal tipo complesso [**EventsType**](eventmanifestschema-eventstype-complextype.md) .
+**L'elemento messageTable** è definito dal [**tipo complesso EventsType.**](eventmanifestschema-eventstype-complextype.md)
 
 ## <a name="child-elements"></a>Elementi figlio
 
@@ -74,10 +74,10 @@ L'elemento **messageTable** è definito dal tipo complesso [**EventsType**](even
 
 | Nome    | Tipo   | Descrizione                                                                                        |
 |---------|--------|----------------------------------------------------------------------------------------------------|
-| message | string | Riferimento alla stringa localizzata nella tabella di stringhe.<br/>                                |
+| message | string | Riferimento alla stringa localizzata nella tabella delle stringhe.<br/>                                |
 | mid     | string | Non usato.<br/>                                                                               |
-| simbolo  | string | Nome simbolico che si desidera venga creato dal compilatore di messaggi per questa stringa di messaggio.<br/> |
-| Valore   | string | Numero da utilizzare come identificatore del messaggio per questo messaggio.<br/>                           |
+| simbolo  | string | Nome simbolico che si desidera che il compilatore di messaggi crei per questa stringa di messaggio.<br/> |
+| Valore   | string | Numero da utilizzare come identificatore del messaggio.<br/>                           |
 
 
 
@@ -87,8 +87,8 @@ L'elemento **messageTable** è definito dal tipo complesso [**EventsType**](even
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -99,7 +99,7 @@ L'elemento **messageTable** è definito dal tipo complesso [**EventsType**](even
 **Elementi padre**
 </dt> <dt>
 
-[**Elemento Events (InstrumentationType)**](eventmanifestschema-events-instrumentationtype-element.md)
+[**Elemento events (InstrumentationType)**](eventmanifestschema-events-instrumentationtype-element.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 24b12936-7dfc-4c8d-970c-d8354ad46d1d
 title: Valori della modalità frase IME
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 285636ab097bd536e5bd0e4e1869f12c648c3cbb
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 1c471282ebf50657b45f7c1c22938b27fff5a62c08c48ab4191dd84048a4b6b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118146130"
 ---
 # <a name="ime-sentence-mode-values"></a>Valori della modalità frase IME
 

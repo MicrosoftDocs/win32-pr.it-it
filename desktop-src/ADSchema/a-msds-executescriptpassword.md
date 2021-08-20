@@ -32,7 +32,7 @@ Usato durante la ridenominazione del dominio. Questo valore non può essere scri
 | CN                | ms-DS-ExecuteScriptPassword                           |
 | Ldap-Display-Name | msDS-ExecuteScriptPassword                            |
 | Dimensione              | \-                                                    |
-| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.                      |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.                      |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1783                               |
 | System-Id-Guid    | 9d054a5a-d187-46c1-9d85-42dfc44a56dd                  |

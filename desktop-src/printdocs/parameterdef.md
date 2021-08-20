@@ -4,20 +4,20 @@ ms.assetid: cb00edc9-2c8a-446d-989b-a4429ee8f544
 title: ParameterDef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2682e3da11f471401e95e3f6515de5e18b6be895
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: c4d7a0c8b86a8fef2d71cae1135eadca2c361e2062555d80a3a19f862f94ad7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033979"
 ---
 # <a name="parameterdef"></a>ParameterDef
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Un elemento ParameterDef definisce le caratteristiche valide dell'input del parametro. Il valore viene immesso tramite un elemento ParameterInit.
 
-## <a name="element-tag"></a>Tag di elemento
+## <a name="element-tag"></a>Element Tag
 
 <ParameterDef>
 
@@ -29,13 +29,13 @@ Nella tabella seguente sono elencati gli attributi XML che possono essere relati
 
 | Attributo XML   | Dettagli                                                                                                                                                                          |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| name<br/> | Definisce un nome univoco per il parametro nel contesto del documento corrente. Gli attributi di nome ParameterDef duplicati rendono il documento PrintCapabilities non valido.<br/> |
+| name<br/> | Definisce un nome univoco per il parametro nel contesto del documento corrente. Gli attributi del nome ParameterDef duplicati rendono il documento PrintCapabilities non valido.<br/> |
 
 
 
  
 
-Per altre informazioni, vedere la [sezione Attributi XML.](xml-attributes.md)
+Per altre informazioni, vedere la [sezione Attributi](xml-attributes.md) XML.
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
@@ -50,7 +50,7 @@ Nella tabella seguente sono elencati gli elementi che possono essere elementi pa
 </colgroup>
 <thead>
 <tr class="header">
-<th>Categoria</th>
+<th>Category</th>
 <th>Dettagli</th>
 </tr>
 </thead>
@@ -68,8 +68,8 @@ Nella tabella seguente sono elencati gli elementi che possono essere elementi pa
 <li>Obbligatorio <br/></li>
 <li>MaxLength o MaxValue<br/></li>
 <li>MinLength o MinValue<br/></li>
-<li>Multiplo* <br/></li>
-<li>UnitType <br/></li>
+<li>Multiple* <br/></li>
+<li>Tipo di unità <br/></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -83,7 +83,7 @@ Nella tabella seguente sono elencati gli elementi che possono essere elementi pa
 
  
 
-\*Obbligatorio quando DataType è intero o decimale. Facoltativo quando DataType è string.
+\*Obbligatorio quando DataType è integer o decimal. Facoltativo quando DataType è string.
 
 ## <a name="configuration-dependencies"></a>Dipendenze di configurazione
 
@@ -91,7 +91,7 @@ Un ParameterDef e il relativo contenuto a qualsiasi livello di annidamento potre
 
 ## <a name="example"></a>Esempio
 
-L'esempio seguente imposta tutti gli elementi Property necessari per questo parametro. L'esempio in [ParameterInit](parameterinit.md) illustra come inizializzare questo parametro.
+Nell'esempio seguente vengono impostate tutte le proprietà obbligatorie per questo parametro. L'esempio in [ParameterInit](parameterinit.md) illustra come inizializzare questo parametro.
 
 ``` syntax
 <psf:ParameterDef name="psk:PageMediaSizeMediaSizeHeight">

@@ -1,23 +1,23 @@
 ---
 title: Windows Mixed Reality
-description: Informazioni sulle API desktop per i dispositivi di realtà mista di Windows. Per altre informazioni, vedere il contenuto di riferimento dell'API per la realtà mista o Windows. graphics. olografico Windows Runtime.
+description: Informazioni sulle API desktop per Windows Mixed Reality dispositivi. Per altre informazioni, vedere l'elenco Dev Center realtà mista o Windows. Contenuto di riferimento dell'API Windows runtime Graphics.Holographic.
 Search.Product: eADQiWindows 10XVcnh
 ms.assetid: 301eb8a0-26eb-4909-81e2-480c4701fb6e
 ms.topic: article
 ms.date: 01/15/2019
-ms.openlocfilehash: aa2db0cc81e47bc459b14506c31876e5dc8d6f13
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: 3230123e0ab83c49b231a802a34f463b776ddaeaaff30863d2c9d9b51b7a7601
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "104398349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119846851"
 ---
 # <a name="windows-mixed-reality"></a>Windows Mixed Reality
 
-Informazioni sulle API desktop per i dispositivi di realtà mista di Windows. Per altre informazioni, vedere il contenuto di riferimento dell'API per la [realtà mista](/windows/mixed-reality) o [Windows. graphics. olografico](/uwp/api/windows.graphics.holographic) Windows Runtime.
+Informazioni sulle API desktop per Windows Mixed Reality dispositivi. Per altre informazioni, vedere l'elenco Dev Center realtà [mista](/windows/mixed-reality) [o Windows. Contenuto di riferimento dell'API Windows runtime Graphics.Holographic.](/uwp/api/windows.graphics.holographic)
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 | Argomento | Descrizione |
 |-|-|
-| [Interfacce COM della realtà mista di Windows](mixed-reality-com-interfaces.md) | Gli argomenti contenuti in questa sezione forniscono le specifiche di riferimento per le interfacce di realtà miste di Windows. |
+| [Windows Mixed Reality Interfacce COM](mixed-reality-com-interfaces.md) | Negli argomenti contenuti in questa sezione vengono fornite le specifiche di riferimento per Windows Mixed Reality interfacce. |

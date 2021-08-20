@@ -39,7 +39,7 @@ Questa funzione deve essere implementata per restituire S \_ OK per continuare a
 
 ## <a name="remarks"></a>Commenti
 
-Assicurarsi di specificare la convenzione Windows di chiamata [**dei tipi di**](../winprog/windows-data-types.md) dati quando si dichiara la funzione di callback. In caso contrario, possono verificarsi overflow dello stack.
+Assicurarsi di specificare la convenzione Windows di chiamata [**dei tipi**](../winprog/windows-data-types.md) di dati quando si dichiara la funzione di callback. In caso contrario, possono verificarsi overflow dello stack.
 
 
 

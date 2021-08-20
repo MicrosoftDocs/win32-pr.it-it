@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_NCPOINTERDOWN
-description: Inviato quando un puntatore fa contatto sull'area non client di una finestra.
+title: WM_NCPOINTERDOWN messaggio
+description: Pubblicato quando un puntatore contatta l'area non client di una finestra.
 ms.assetid: 3bdc37da-217c-4be1-bf0b-99704bda1322
 keywords:
-- Messaggi e notifiche di input del messaggio WM_NCPOINTERDOWN
+- WM_NCPOINTERDOWN messaggi di input e notifiche
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 6f4c3ef8ed75c5bd29250cd2f9ce4d666b6d961d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 419af1c613c979d30f479fc0739cd82f01b538f9ff4d3caa63839af8a40b0caf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119036059"
 ---
-# <a name="wm_ncpointerdown-message"></a>Messaggio WM_NCPOINTERDOWN
+# <a name="wm_ncpointerdown-message"></a>WM_NCPOINTERDOWN messaggio
 
-Inviato quando un puntatore fa contatto sull'area non client di una finestra. Il messaggio è destinato alla finestra su cui il puntatore crea il contatto. Il puntatore viene acquisito in modo implicito nella finestra in modo che la finestra continui a ricevere l'input per il puntatore finché non interrompe il contatto.
+Pubblicato quando un puntatore contatta l'area non client di una finestra. Il messaggio è destinato alla finestra su cui il puntatore contatta. Il puntatore viene acquisito in modo implicito nella finestra in modo che la finestra continui a ricevere input per il puntatore fino a quando non interrompe il contatto.
 
-Se una finestra ha acquisito questo puntatore, questo messaggio non viene inviato. Al contrario, viene pubblicato un [**WM_POINTERDOWN**](wm-pointerdown.md) nella finestra che ha acquisito il puntatore.
+Se una finestra ha acquisito questo puntatore, questo messaggio non viene pubblicato. Al contrario, [**viene WM_POINTERDOWN**](wm-pointerdown.md) nella finestra che ha acquisito questo puntatore.
 
 > \[! Importante\]  
-> Le applicazioni desktop devono essere compatibili con DPI. Se l'app non è compatibile con DPI, le coordinate dello schermo contenute nei messaggi puntatore e le strutture correlate potrebbero sembrare non accurate a causa della virtualizzazione DPI. La virtualizzazione DPI fornisce il supporto per il ridimensionamento automatico per le applicazioni che non sono compatibili con DPI ed è attivo per impostazione predefinita (gli utenti possono disabilitarlo). Per altre informazioni, vedere [scrittura di applicazioni Win32 ad alta risoluzione](/previous-versions//dd464660(v=vs.85)).
+> Le app desktop devono essere in grado di riconoscere DPI. Se l'app non è in grado di riconoscere DPI, le coordinate dello schermo contenute nei messaggi del puntatore e nelle strutture correlate potrebbero apparire inesatte a causa della virtualizzazione DPI. La virtualizzazione DPI offre il supporto automatico del ridimensionamento per le applicazioni che non supportano DPI ed è attiva per impostazione predefinita (gli utenti possono disattivarla). Per altre informazioni, vedere [Writing High-DPI Win32 Applications](/previous-versions//dd464660(v=vs.85)).
 
  
 
@@ -50,7 +50,7 @@ Contiene l'identificatore del puntatore e informazioni aggiuntive. Usare le macr
 
 [**GET_POINTERID_WPARAM**](/previous-versions/windows/desktop/api)(wParam): identificatore del puntatore.
 
-[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))(wParam): valore hit-test restituito dall'elaborazione del messaggio di [**WM_NCHITTEST**](../inputdev/wm-nchittest.md) .
+[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))(wParam): valore dell'hit test restituito dall'elaborazione [**WM_NCHITTEST**](../inputdev/wm-nchittest.md) messaggio.
 
 </dd> <dt>
 
@@ -60,26 +60,26 @@ Contiene l'identificatore del puntatore e informazioni aggiuntive. Usare le macr
 Contiene la posizione del punto del puntatore.
 
 > [!Note]  
-> Poiché il puntatore può rendere il contatto con il dispositivo su un'area non banale, questa posizione del punto può essere una semplificazione di un'area del puntatore più complessa. Laddove possibile, un'applicazione deve usare le informazioni complete sull'area del puntatore anziché la posizione del punto.
+> Poiché il puntatore può contattare il dispositivo su un'area non semplice, questa posizione del punto può essere una semplificazione di un'area del puntatore più complessa. Quando possibile, un'applicazione deve usare le informazioni complete sull'area del puntatore anziché la posizione del punto.
 
  
 
-Utilizzare le macro seguenti per recuperare le coordinate dello schermo fisico del punto.
+Usare le macro seguenti per recuperare le coordinate fisiche dello schermo del punto.
 
--   [**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam)(lParam): coordinata X (punto orizzontale).
--   [**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam)(lParam): coordinata Y (punto verticale).
+-   [**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam)(lParam): coordinata x (punto orizzontale).
+-   [**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam)(lParam): coordinata y (punto verticale).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 Se l'applicazione non elabora questo messaggio, deve chiamare [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca).
 
 ## <a name="remarks"></a>Commenti
 
-Se l'applicazione non elabora questo messaggio, [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca) può eseguire una o più azioni di sistema a seconda del risultato dell'hit test incluso nel messaggio. In genere, le applicazioni non devono necessariamente gestire questo messaggio.
+Se l'applicazione non elabora questo messaggio, [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca) può eseguire una o più azioni di sistema a seconda del risultato dell'hit test incluso nel messaggio. In genere, le applicazioni non devono gestire questo messaggio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -87,9 +87,9 @@ Se l'applicazione non elabora questo messaggio, [**DefWindowProc**](/windows/win
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                               |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                               |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

@@ -1,50 +1,50 @@
 ---
-title: Attributo Color (Stroke) (la)
-description: Attributo Color (Stroke) (la)
+title: Attributo Color (Stroke)(VML)
+description: Attributo Color (Stroke)(VML)
 ms.assetid: 8fa19789-0bd6-4e9f-8af4-566155eafc6a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: faa91522adcba5fa854d4749dc257f5489969270
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a17b3dd30d95765c98ec754526349b2bdc274696112043065fa7ddc7d894b582
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118125371"
 ---
-# <a name="color-attribute-strokevml"></a>Attributo Color (Stroke) (la)
+# <a name="color-attribute-strokevml"></a>Attributo Color (Stroke)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Definisce il colore di un tratto. Proprietà di lettura/scrittura. **VgColor**.
 
 **Si applica a**
 
-[Stroke](msdn-online-vml-stroke-element.md)
+[infarto](msdn-online-vml-stroke-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* color = " *Expression* " >
+<v: *element* color=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . Color = "*Expression*"
+*element* .color="*expression*"
 
-*espressione* = *elemento*. Color
+*expression* = *elemento*.color
 
 **Osservazioni:**
 
-Esegue l'override dell'attributo **StrokeColor** di una forma. Il valore predefinito è **nero**.
+Esegue l'override **dell'attributo StrokeColor** di una forma. Il valore predefinito è **nero.**
 
-*Attributo standard la*
+*Attributo standard VML*
 
 **Esempio**
 
-Il colore del tratto della forma è **verde**, non **rosso**.
+La forma ha un colore del tratto **verde,** non **rosso.**
 
 
 ```HTML
@@ -58,6 +58,6 @@ Il colore del tratto della forma è **verde**, non **rosso**.
 
 
 
- 
+ 
 
- 
+ 

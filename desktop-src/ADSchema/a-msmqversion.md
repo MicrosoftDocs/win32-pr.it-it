@@ -1,10 +1,10 @@
 ---
-title: Attributo MSMQ-Version
-description: Numero di versione delle informazioni su MSMQ DS.
+title: MSMQ-Version attributo
+description: Numero di versione delle informazioni MSMQ DS.
 ms.assetid: 9ab65547-a71b-42f3-9e2f-424d2e0ee3ab
 ms.tgt_platform: multiple
 keywords:
-- Schema AD MSMQ-Version attribute
+- MSMQ-Version schema AD dell'attributo
 - Schema AD dell'attributo mSMQVersion
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dcd5307a7b928b85c6a09404ef291252e5009655
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8320315e6aa1b074f377d96674bc32e461df232e45a16be6a6f6d52886411354
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104048828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118013375"
 ---
-# <a name="msmq-version-attribute"></a>Attributo MSMQ-Version
+# <a name="msmq-version-attribute"></a>MSMQ-Version attributo
 
-Numero di versione delle informazioni su MSMQ DS.
+Numero di versione delle informazioni MSMQ DS.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | MSMQ-Version                         |
-| LDAP-Display-Name | mSMQVersion                          |
+| Ldap-Display-Name | mSMQVersion                          |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.942               |
-| System-ID-GUID    | 9a0dc336-c100-11d1-bbc5-0080c76670c0 |
+| System-Id-Guid    | 9a0dc336-c100-11d1-bbc5-0080c76670c0 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Numero di versione delle informazioni su MSMQ DS.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MSMQ-Enterprise-impostazioni**](c-msmqenterprisesettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Enterprise-Impostazioni**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Numero di versione delle informazioni su MSMQ DS.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MSMQ-Enterprise-impostazioni**](c-msmqenterprisesettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Enterprise-Impostazioni**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Numero di versione delle informazioni su MSMQ DS.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MSMQ-Enterprise-impostazioni**](c-msmqenterprisesettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Enterprise-Impostazioni**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Numero di versione delle informazioni su MSMQ DS.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MSMQ-Enterprise-impostazioni**](c-msmqenterprisesettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Enterprise-Impostazioni**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Numero di versione delle informazioni su MSMQ DS.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MSMQ-Enterprise-impostazioni**](c-msmqenterprisesettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Enterprise-Impostazioni**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Numero di versione delle informazioni su MSMQ DS.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**MSMQ-Enterprise-impostazioni**](c-msmqenterprisesettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Enterprise-Impostazioni**](c-msmqenterprisesettings.md)<br/> |
 
 
 

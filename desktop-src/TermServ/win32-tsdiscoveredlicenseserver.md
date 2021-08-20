@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSDiscoveredLicenseServer
+title: Win32_TSDiscoveredLicenseServer classe
 description: Fornisce informazioni dettagliate sul server licenze Desktop remoto individuato.
 ms.assetid: 88523f30-26ad-4f78-a214-f54b7bc1c676
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_TSDiscoveredLicenseServer Servizi Desktop remoto
-- Classe Win32_TSDiscoveredLicenseServer Servizi Desktop remoto, descritta
+- Win32_TSDiscoveredLicenseServer classe Servizi Desktop remoto
+- Win32_TSDiscoveredLicenseServer classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -21,14 +21,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d633031df533068f2cf5da65f2f6820a93c78513
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8ea5698083f0a639b0cd955126418f5024906d4f140dc22c54aacf1460f24c0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118127001"
 ---
-# <a name="win32_tsdiscoveredlicenseserver-class"></a>Win32 \_ TSDiscoveredLicenseServer (classe)
+# <a name="win32_tsdiscoveredlicenseserver-class"></a>Classe Win32 \_ TSDiscoveredLicenseServer
 
 Fornisce informazioni dettagliate sul server licenze Desktop remoto individuato.
 
@@ -48,31 +48,31 @@ class Win32_TSDiscoveredLicenseServer
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ TSDiscoveredLicenseServer** presenta questi tipi di membri:
+La **classe \_ Win32 TSDiscoveredLicenseServer** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ TSDiscoveredLicenseServer** dispone di queste proprietà.
+La **classe Win32 \_ TSDiscoveredLicenseServer** ha queste proprietà.
 
 <dl> <dt>
 
 **HowDiscovered**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificatori: [ **DEPRECATO**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Questa proprietà non è più supportata.
 
-**Windows Server 2008:** Metodo di individuazione del server licenze Desktop remoto.
+**Windows Server 2008:** Metodo Desktop remoto di individuazione del server licenze.
 
 <dt>
 
@@ -83,7 +83,7 @@ Questa proprietà non è più supportata.
 
 </dt> <dd>
 
-Il server licenze è stato individuato tramite criteri di gruppo.
+Il server licenze è stato individuato tramite Criteri di gruppo.
 
 </dd> <dt>
 
@@ -94,7 +94,7 @@ Il server licenze è stato individuato tramite criteri di gruppo.
 
 </dt> <dd>
 
-Il server licenze è stato individuato tramite un'impostazione del registro di sistema.
+Il server licenze è stato individuato usando un'impostazione del Registro di sistema.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Il server licenze è stato individuato tramite un'impostazione del registro di s
 
 </dt> <dd>
 
-Il server licenze è stato individuato utilizzando l'ambito di individuazione del gruppo di lavoro.
+Il server licenze è stato individuato usando l'ambito di individuazione del gruppo di lavoro.
 
 </dd> <dt>
 
@@ -116,7 +116,7 @@ Il server licenze è stato individuato utilizzando l'ambito di individuazione de
 
 </dt> <dd>
 
-Il server licenze è stato individuato utilizzando l'ambito di individuazione dominio.
+Il server licenze è stato individuato usando l'ambito di individuazione del dominio.
 
 </dd> <dt>
 
@@ -127,7 +127,7 @@ Il server licenze è stato individuato utilizzando l'ambito di individuazione do
 
 </dt> <dd>
 
-Il server licenze è stato individuato utilizzando l'ambito di individuazione foresta.
+Il server licenze è stato individuato usando l'ambito di individuazione della foresta.
 
 </dd> </dl>
 
@@ -136,13 +136,13 @@ Il server licenze è stato individuato utilizzando l'ambito di individuazione fo
 **IsAdminOnLS**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se l'account utilizzato per eseguire lo script o il file exe che utilizza la classe **Win32 \_ TSDiscoveredLicenseServer** dispone dell'accesso di amministratore al server licenze.
+Indica se l'account usato per eseguire lo script o il file .exe che usa la classe **Win32 \_ TSDiscoveredLicenseServer** ha accesso come amministratore al server licenze.
 
 <dt>
 
@@ -153,7 +153,7 @@ Indica se l'account utilizzato per eseguire lo script o il file exe che utilizza
 
 </dt> <dd>
 
-L'account utilizzato non dispone dell'accesso di amministratore al server licenze.
+L'account usato non dispone dell'accesso di amministratore al server licenze.
 
 </dd> <dt>
 
@@ -164,18 +164,18 @@ L'account utilizzato non dispone dell'accesso di amministratore al server licenz
 
 </dt> <dd>
 
-L'account utilizzato dispone di accesso amministrativo al server licenze.
+L'account usato ha accesso come amministratore al server licenze.
 
 </dd> <dt>
 
 <span id="Dont_know"></span><span id="dont_know"></span><span id="DONT_KNOW"></span>
 
-<span id="Dont_know"></span><span id="dont_know"></span><span id="DONT_KNOW"></span>Non **so** (2)
+<span id="Dont_know"></span><span id="dont_know"></span><span id="DONT_KNOW"></span>**Non so** (2)
 
 
 </dt> <dd>
 
-Non è possibile determinare se l'account utilizzato dispone di accesso amministrativo al server licenze.
+Non è possibile determinare se l'account in uso dispone dell'accesso di amministratore al server licenze.
 
 </dd> </dl>
 
@@ -184,13 +184,13 @@ Non è possibile determinare se l'account utilizzato dispone di accesso amminist
 **IsLSAvailable**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se il server licenze è disponibile, ovvero se è possibile stabilire \[ una \] connessione RPC al server.
+Indica se il server licenze è disponibile (se è possibile stabilire una connessione RPC remote procedure call \[ \] al server).
 
 <dt>
 
@@ -221,13 +221,13 @@ Il server licenze è disponibile.
 **IssuingCALs**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se il server licenze è autorizzato a emettere le licenze CAL (Client Access License) di Servizi Desktop remoto al server Host sessione Desktop remoto.
+Indica se il server licenze è autorizzato a rilasciare Servizi Desktop remoto licenze CAL Servizi Desktop remoto al server Host sessione Desktop remoto.
 
 <dt>
 
@@ -238,7 +238,7 @@ Indica se il server licenze è autorizzato a emettere le licenze CAL (Client Acc
 
 </dt> <dd>
 
-Il server licenze non è autorizzato ad emettere licenze CAL Servizi Desktop remoto per il server Host sessione Desktop remoto.
+Il server licenze non è autorizzato a rilasciare licenze CAL Servizi Desktop remoto al server Host sessione Desktop remoto.
 
 </dd> <dt>
 
@@ -249,13 +249,13 @@ Il server licenze non è autorizzato ad emettere licenze CAL Servizi Desktop rem
 
 </dt> <dd>
 
-Il server licenze può emettere licenze CAL Servizi Desktop remoto per il server Host sessione Desktop remoto.
+Il server licenze è autorizzato a rilasciare licenze CAL Servizi Desktop remoto al server Host sessione Desktop remoto.
 
 </dd> <dt>
 
 <span id="Dont_know"></span><span id="dont_know"></span><span id="DONT_KNOW"></span>
 
-<span id="Dont_know"></span><span id="dont_know"></span><span id="DONT_KNOW"></span>Non **so** (2)
+<span id="Dont_know"></span><span id="dont_know"></span><span id="DONT_KNOW"></span>**Non so** (2)
 
 
 </dt> <dd>
@@ -269,13 +269,13 @@ Non è possibile determinare se il server licenze è autorizzato a rilasciare li
 **LicenseServer**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Nome del server licenze Desktop remoto individuato.
@@ -284,7 +284,7 @@ Nome del server licenze Desktop remoto individuato.
 
 ## <a name="remarks"></a>Commenti
 
-Per connettersi allo \\ \\ \\ spazio dei nomi CIMV2 TerminalServices radice, il livello di autenticazione deve includere la riservatezza dei pacchetti. Per le chiamate C/C++, si tratta di un livello di autenticazione del livello di autenticazione **RPC \_ C \_ \_ \_ PKT \_ privacy**. Per Visual Basic e le chiamate di scripting, si tratta di un livello di autenticazione di **WbemAuthenticationLevelPktPrivacy** o "su PktPrivacy", con un valore pari a 6. Il seguente esempio di Visual Basic Scripting Edition (VBScript) illustra come connettersi a un computer remoto con la privacy dei pacchetti.
+Per connettersi allo spazio \\ dei \\ nomi CIMV2 \\ TerminalServices radice, il livello di autenticazione deve includere la privacy dei pacchetti. Per le chiamate C/C++, questo è un livello di autenticazione di **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**. Per Visual Basic e le chiamate di scripting, si tratta di un livello di autenticazione **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con valore 6. Nell'esempio Visual Basic Scripting Edition (VBScript) seguente viene illustrato come connettersi a un computer remoto con privacy dei pacchetti.
 
 
 ```VB
@@ -295,7 +295,7 @@ Set objServices = GetObject( _
 
 
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -306,7 +306,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 

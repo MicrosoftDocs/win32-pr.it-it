@@ -1,6 +1,6 @@
 ---
 title: Interfaccia IMsRdpClientNonScriptable2
-description: Fornisce l'accesso alle proprietà non leggibili della sessione remota di un client nel controllo Desktop remoto ActiveX client. Deriva dall'interfaccia IMsRdpClientNonScriptable.
+description: Fornisce l'accesso alle proprietà non leggibili della sessione remota di un client nel Desktop remoto ActiveX controllo. Deriva dall'interfaccia IMsRdpClientNonScriptable.
 ms.assetid: 06a5ffc9-3c9e-44d6-a5b5-9ccb7488deff
 ms.tgt_platform: multiple
 keywords:
@@ -25,7 +25,7 @@ ms.locfileid: "118352138"
 ---
 # <a name="imsrdpclientnonscriptable2-interface"></a>Interfaccia IMsRdpClientNonScriptable2
 
-Fornisce l'accesso alle proprietà non leggibili della sessione remota di un client nel controllo Desktop remoto ActiveX client. Deriva [**dall'interfaccia IMsRdpClientNonScriptable.**](imsrdpclientnonscriptable-interface.md) I metodi di questa interfaccia sono accessibili solo tramite vtable. non sono disponibili per l'uso per i client che supportano script.
+Fornisce l'accesso alle proprietà non leggibili della sessione remota di un client nel Desktop remoto ActiveX controllo. Deriva [**dall'interfaccia IMsRdpClientNonScriptable.**](imsrdpclientnonscriptable-interface.md) I metodi di questa interfaccia sono accessibili solo tramite vtable. non sono disponibili per l'uso per i client che supportano script.
 
 ## <a name="members"></a>Membri
 
@@ -41,7 +41,7 @@ Queste proprietà sono disponibili **nell'interfaccia IMsRdpClientNonScriptable2
 
 | Proprietà                                                                                   | Tipo di accesso           | Descrizione                                                                                                                                                                                                  |
 |:-------------------------------------------------------------------------------------------|:----------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**UIParentWindowHandle**](imsrdpclientnonscriptable2-uiparentwindowhandle.md)<br/> | Lettura/Scrittura<br/> | Handle di finestra che deve essere la finestra padre per il controllo . In questo modo tutte le finestre visualizzate dal controllo possono essere correttamente modali rispetto alle finestre visualizzate dall'applicazione padre.<br/> |
+| [**UIParentWindowHandle**](imsrdpclientnonscriptable2-uiparentwindowhandle.md)<br/> | Lettura/Scrittura<br/> | Handle di finestra che deve essere la finestra padre per il controllo . In questo modo tutte le finestre visualizzate dal controllo possono essere modali correttamente rispetto alle finestre visualizzate dall'applicazione padre.<br/> |
 
 
 

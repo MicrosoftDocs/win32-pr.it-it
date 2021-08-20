@@ -4,12 +4,12 @@ ms.assetid: 424cd8c0-b8f9-45a6-95f6-7d5644a05666
 title: System.Document. Collaboratore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cfd623290ee3b7683846bb6f99032bd5e6d12b45
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bf6da4b30bd8d81922461aaf8eae9a177b752f0c822485ca08c907d1eeaf1bc9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108101109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845231"
 ---
 # <a name="systemdocumentcontributor"></a>System.Document. Collaboratore
 
@@ -36,7 +36,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -66,7 +66,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

@@ -1,9 +1,9 @@
 ---
-title: Messaggio di MCIWNDM_GETERROR (VFW. h)
-description: Il \_ messaggio MCIWNDM GetError recupera l'ultimo errore MCI rilevato. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro MCIWndGetError.
+title: MCIWNDM_GETERROR messaggio (Vfw.h)
+description: Il messaggio MCIWNDM \_ GETERROR recupera l'ultimo errore MCI rilevato. È possibile inviare questo messaggio in modo esplicito o tramite la macro MCIWndGetError.
 ms.assetid: f110a9b3-5b05-4bf0-85d1-b49ce7396222
 keywords:
-- MCIWNDM_GETERROR messaggi multimediali di Windows
+- MCIWNDM_GETERROR messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c2977bb079351824b48da21f4ba3cc2dc5afe7e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b748aec6cf686ecf47baf8deae621514e620971f5e1da667f8e4f0aae708ab80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137722"
 ---
-# <a name="mciwndm_geterror-message"></a>\_Messaggio GETERROR MCIWNDM
+# <a name="mciwndm_geterror-message"></a>Messaggio MCIWNDM \_ GETERROR
 
-Il messaggio **MCIWNDM \_ GetError** recupera l'ultimo errore MCI rilevato. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**MCIWndGetError**](/windows/desktop/api/Vfw/nf-vfw-mciwndgeterror) .
+Il **messaggio MCIWNDM \_ GETERROR** recupera l'ultimo errore MCI rilevato. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**MCIWndGetError.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgeterror)
 
 
 ```C++
@@ -45,7 +45,7 @@ Dimensione, in byte, del buffer degli errori.
 
 </dd> <dt>
 
-<span id="lp"></span><span id="LP"></span>*LP*
+<span id="lp"></span><span id="LP"></span>*Lp*
 </dt> <dd>
 
 Puntatore a un buffer definito dall'applicazione utilizzato per restituire la stringa di errore.
@@ -54,11 +54,11 @@ Puntatore a un buffer definito dall'applicazione utilizzato per restituire la st
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore di errore integer in caso di esito positivo.
+Restituisce il valore di errore intero in caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Se *LP* è un puntatore valido, nel buffer viene restituita una stringa con terminazione null corrispondente all'errore. Se la stringa di errore è più lunga del buffer, MCIWnd lo tronca.
+Se *lp* è un puntatore valido, nel buffer viene restituita una stringa con terminazione Null corrispondente all'errore. Se la stringa di errore è più lunga del buffer, MCIWnd la tronca.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,7 +68,7 @@ Se *LP* è un puntatore valido, nel buffer viene restituita una stringa con term
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

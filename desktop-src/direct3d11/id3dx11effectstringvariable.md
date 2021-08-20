@@ -1,10 +1,10 @@
 ---
-title: Interfaccia ID3DX11EffectStringVariable (D3dx11effect. h)
-description: Un'interfaccia a variabili di stringa accede a una variabile di stringa.
+title: Interfaccia ID3DX11EffectStringVariable (D3dx11effect.h)
+description: Un'interfaccia stringa-variabile accede a una variabile stringa.
 ms.assetid: 8304d7cc-de30-41fe-af12-e11bf7ae32ce
 keywords:
-- Interfaccia ID3DX11EffectStringVariable Direct3D 11
-- Interfaccia ID3DX11EffectStringVariable Direct3D 11, descritta
+- INTERFACCIA ID3DX11EffectStringVariable Direct3D 11
+- INTERFACCIA ID3DX11EffectStringVariable Direct3D 11 , descritta
 topic_type:
 - apiref
 api_name:
@@ -16,32 +16,32 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a45eb5e0825bd8487396ed850c9d79665e5f1044
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7ab830bf6fe077c64dc864eeb064fc9fa5e1208b42e5cef233eb581d79d8f72a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104995810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118532989"
 ---
 # <a name="id3dx11effectstringvariable-interface"></a>Interfaccia ID3DX11EffectStringVariable
 
-Un'interfaccia a variabili di stringa accede a una variabile di stringa.
+Un'interfaccia stringa-variabile accede a una variabile stringa.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **ID3DX11EffectStringVariable** eredita da [**ID3DX11EffectVariable**](id3dx11effectvariable.md). **ID3DX11EffectStringVariable** dispone anche di questi tipi di membri:
+**L'interfaccia ID3DX11EffectStringVariable** eredita da [**ID3DX11EffectVariable.**](id3dx11effectvariable.md) **ID3DX11EffectStringVariable** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **ID3DX11EffectStringVariable** dispone di questi metodi.
+**L'interfaccia ID3DX11EffectStringVariable** include questi metodi.
 
 
 
 | Metodo                                                               | Descrizione                         |
 |:---------------------------------------------------------------------|:------------------------------------|
-| [**GetString**](id3dx11effectstringvariable-getstring.md)           | Ottiene la stringa.<br/>          |
+| [**Getstring**](id3dx11effectstringvariable-getstring.md)           | Ottenere la stringa.<br/>          |
 | [**GetStringArray**](id3dx11effectstringvariable-getstringarray.md) | Ottiene una matrice di stringhe.<br/> |
 
 
@@ -51,7 +51,7 @@ L'interfaccia **ID3DX11EffectStringVariable** dispone di questi metodi.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra effetti 10 ed effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -61,8 +61,8 @@ L'interfaccia **ID3DX11EffectStringVariable** dispone di questi metodi.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ L'interfaccia **ID3DX11EffectStringVariable** dispone di questi metodi.
 [**ID3DX11EffectVariable**](id3dx11effectvariable.md)
 </dt> <dt>
 
-[Interfacce Effects 11](d3d11-graphics-reference-effects11-interfaces.md)
+[Interfacce di Effects 11](d3d11-graphics-reference-effects11-interfaces.md)
 </dt> <dt>
 
 [Interfacce D3DX](d3d11-graphics-reference-d3dx11-interfaces.md)

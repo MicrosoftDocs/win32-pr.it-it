@@ -1,5 +1,5 @@
 ---
-title: Identificatori provider predefiniti (Fwpmu. h)
+title: Identificatori di provider predefiniti (Fwpmu.h)
 description: Gli identificatori per i provider incorporati in Windows Filtering Platform (WFP) sono rappresentati da un GUID.
 ms.assetid: 61bc1e2d-f6ee-45db-892f-c49680d27072
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 060f6d63d703d7c91e5538b7bfdd8758ee2e1cde
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c8982fe6ebbe3f4cf5135f2b67f07826ddf9d3f970ca0568c7095931c617cdce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951310"
 ---
-# <a name="built-in-provider-identifiers"></a>Identificatori provider predefiniti
+# <a name="built-in-provider-identifiers"></a>Identificatori di provider predefiniti
 
 Gli identificatori per i provider incorporati in Windows Filtering Platform (WFP) sono rappresentati da un GUID.
 
@@ -30,7 +30,7 @@ Questi identificatori sono definiti nel modo seguente.
 
 <dl> <dt>
 
-<span id="FWPM_PROVIDER_IKEEXT"></span><span id="fwpm_provider_ikeext"></span>**\_provider FWPM \_ IKEEXT**
+<span id="FWPM_PROVIDER_IKEEXT"></span><span id="fwpm_provider_ikeext"></span>**FWPM \_ PROVIDER \_ IKEEXT**
 </dt> <dd> <dl> <dt>
 
 {10ad9216-ccde-456c-8b16-e9f04e60a90b}
@@ -43,7 +43,7 @@ Usato per identificare tutti i filtri aggiunti da IKE/AuthIP.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_PROVIDER_IPSEC_DOS_CONFIG"></span><span id="fwpm_provider_ipsec_dos_config"></span>**\_ \_ \_ configurazione DOS IPSec provider \_ FWPM**
+<span id="FWPM_PROVIDER_IPSEC_DOS_CONFIG"></span><span id="fwpm_provider_ipsec_dos_config"></span>**CONFIGURAZIONE \_ \_ DOS IPSEC DEL PROVIDER \_ FWPM \_**
 </dt> <dd> <dl> <dt>
 
 {3c6c0519-c05c-4bb9-8338-2327814ce8bf}
@@ -51,7 +51,7 @@ Usato per identificare tutti i filtri aggiunti da IKE/AuthIP.
 
 
 
-Utilizzato per identificare tutti i filtri aggiunti dalla protezione DoS IPsec.
+Usato per identificare tutti i filtri aggiunti da Protezione DoS IPsec.
 
 > [!Note]  
 > Disponibile solo in Windows 7 e Windows Server 2008 R2.
@@ -61,7 +61,7 @@ Utilizzato per identificare tutti i filtri aggiunti dalla protezione DoS IPsec.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_PROVIDER_TCP_CHIMNEY_OFFLOAD"></span><span id="fwpm_provider_tcp_chimney_offload"></span>**\_provider FWPM \_ TCP \_ Chimney \_ OFFLOAD**
+<span id="FWPM_PROVIDER_TCP_CHIMNEY_OFFLOAD"></span><span id="fwpm_provider_tcp_chimney_offload"></span>**FWPM \_ PROVIDER \_ TCP \_ CHIMNEY \_ OFFLOAD**
 </dt> <dd> <dl> <dt>
 
 {896aa19e-9a34-4bcb-ae79-beb9127c84b9}
@@ -69,12 +69,12 @@ Utilizzato per identificare tutti i filtri aggiunti dalla protezione DoS IPsec.
 
 
 
-Utilizzato per identificare tutti i filtri aggiunti da TCP Chimney Offload.
+Usato per identificare tutti i filtri aggiunti da TCP Chimney Offload.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_PROVIDER_TCP_TEMPLATES"></span><span id="fwpm_provider_tcp_templates"></span>**\_ \_ modelli TCP del provider FWPM \_**
+<span id="FWPM_PROVIDER_TCP_TEMPLATES"></span><span id="fwpm_provider_tcp_templates"></span>**MODELLI TCP DEL PROVIDER FWPM \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 {76cfcd30-3394-432d-bed3-441ae50e63c3}
@@ -82,7 +82,7 @@ Utilizzato per identificare tutti i filtri aggiunti da TCP Chimney Offload.
 
 
 
-Utilizzato per identificare tutti i filtri aggiunti dai modelli TCP.
+Consente di identificare tutti i filtri aggiunti dai modelli TCP.
 
 > [!Note]  
 > Disponibile solo in Windows 8 e Windows Server 2012.
@@ -98,9 +98,9 @@ Utilizzato per identificare tutti i filtri aggiunti dai modelli TCP.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Fwpmu.h</dt> </dl> |
 
 
 

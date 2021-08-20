@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentBackupInProgressException'
+description: Altre informazioni sul costruttore EsentBackupInProgressException
 title: Costruttore EsentBackupInProgressException
 TOCTitle: 'EsentBackupInProgressException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentBackupInProgressException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b2a91c34ddc2fee3ea8bb9eecb3ad5b67c8a2af2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 392f02d64377ff6776f3b01188b5df91ec0c9c723579e438c62314a2d4fc7500
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104058009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118083212"
 ---
 # <a name="esentbackupinprogressexception-constructor"></a>Costruttore EsentBackupInProgressException
 
 Inizializza una nuova istanza della classe EsentBackupInProgressException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentBackupInProgressException()
 
 [Membri di EsentBackupInProgressException](./esentbackupinprogressexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

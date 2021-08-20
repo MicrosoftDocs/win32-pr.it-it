@@ -1,7 +1,7 @@
 ---
-description: Il metodo set imposta il tipo di supporto da un altro tipo di supporto.
+description: Il metodo Set imposta il tipo di supporto da un altro tipo di supporto.
 ms.assetid: b3cf65c2-48db-4ee0-9a74-c1652f017eed
-title: Metodo CMediaType. set (mtype. h)-mtype [Ref] parametro
+title: Metodo CMediaType.Set (Mtype.h) - mtype [ref] parameter
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e8fd9145ee33dbe4b589b34833836466efa62ada
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 350e88cefa7c0f5f6946218d220fcad4a118cf53e203a68eeb9f75c0d0eace1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156064"
 ---
-# <a name="cmediatypeset-method-mtypeh"></a>Metodo CMediaType. set (mtype. h)
+# <a name="cmediatypeset-method-mtypeh"></a>Metodo CMediaType.Set (Mtype.h)
 
 Il `Set` metodo imposta il tipo di supporto da un altro tipo di supporto.
 
@@ -45,13 +45,13 @@ HRESULT Set(
 *mtype* \[ Ref\]
 </dt> <dd>
 
-Riferimento a una struttura del [**\_ \_ tipo di supporto am**](/windows/win32/api/strmif/ns-strmif-am_media_type) .
+Riferimento a una [**struttura AM \_ MEDIA \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce S \_ OK o e \_ OutOfMemory.
+Restituisce S \_ OK o E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
@@ -63,8 +63,8 @@ Questo metodo copia l'intero tipo di supporto da *mtype*.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Mtype. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Mtype.h (includere Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Rappresenta lo stato configurato del componente dell'interfaccia del servizio Guest.
+description: Rappresenta lo stato configurato del componente dell'interfaccia del servizio guest.
 ms.assetid: 82B58459-9819-4F51-BEE5-AB57E444CF55
-title: Classe Msvm_GuestServiceInterfaceComponentSettingData
+title: Msvm_GuestServiceInterfaceComponentSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -34,16 +34,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 0ada39e4428040cf7e6732232ce789f7d837c9c8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6e1171e5f303d5b122f0d2202978415206a26e94c15e69f09af73b811c33dcb2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118147807"
 ---
-# <a name="msvm_guestserviceinterfacecomponentsettingdata-class"></a>\_Classe MSVM GuestServiceInterfaceComponentSettingData
+# <a name="msvm_guestserviceinterfacecomponentsettingdata-class"></a>Classe Msvm \_ GuestServiceInterfaceComponentSettingData
 
-Rappresenta lo stato configurato del componente dell'interfaccia del servizio Guest. Questa classe deriva dalla classe [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata) .
+Rappresenta lo stato configurato del componente dell'interfaccia del servizio guest. Questa classe deriva dalla [**classe CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -79,20 +79,20 @@ class Msvm_GuestServiceInterfaceComponentSettingData : CIM_ResourceAllocationSet
 
 ## <a name="members"></a>Members
 
-La **classe \_ GuestServiceInterfaceComponentSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ GuestServiceInterfaceComponentSettingData** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ GuestServiceInterfaceComponentSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ GuestServiceInterfaceComponentSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **Indirizzo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -105,59 +105,59 @@ Indirizzo della risorsa. Ad esempio, l'indirizzo MAC di una porta Ethernet.
 **AllocationUnits**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà specifica le unità di allocazione utilizzate dalle proprietà di prenotazione e limite. Ad esempio, quando ResourceType = Processor, AllocationUnits può essere impostato su MHz. Quando ResourceType = Memory, AllocationUnits può essere impostato su MB
+Questa proprietà specifica le unità di allocazione usate dalle proprietà Reservation e Limit. Ad esempio, quando ResourceType=Processor, AllocationUnits può essere impostato su MHz. Quando ResourceType=Memory, AllocationUnits può essere impostato su MB
 
 </dd> <dt>
 
 **AutomaticAllocation**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà specifica se la risorsa verrà allocata automaticamente. Se, ad esempio, è impostato su true, quando il computer virtuale che lo utilizza è acceso, questa risorsa verrebbe allocata. Il valore false indica che la risorsa deve essere allocata in modo esplicito. Ad esempio, l'impostazione può rappresentare supporti rimovibili (ovvero CDROM o floppy) in cui, in fase di accensione, il supporto non è presente. Per allocare la risorsa è necessaria un'operazione esplicita.
+Questa proprietà specifica se la risorsa verrà allocata automaticamente. Ad esempio, se impostato su true, quando il sistema di computer virtuale in uso è acceso, questa risorsa viene allocata. Il valore false indica che la risorsa deve essere allocata in modo esplicito. Ad esempio, l'impostazione può rappresentare supporti rimovibili ,ovvero cdrom o floppy, in cui al momento dell'accensione il supporto non è presente. Per allocare la risorsa è necessaria un'operazione esplicita.
 
 </dd> <dt>
 
 **AutomaticDeallocation**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà specifica se la risorsa verrà deallocata automaticamente. Se, ad esempio, si imposta su true, quando il computer virtuale che lo utilizza è spento, questa risorsa verrebbe deallocata. Se impostata su false, la risorsa rimane allocata e deve essere deallocata in modo esplicito.
+Questa proprietà specifica se la risorsa verrà deallocata automaticamente. Ad esempio, se impostata su true, quando il sistema di computer virtuale in uso è spento, questa risorsa viene deallocata. Se impostato su false, la risorsa rimarrà allocata e deve essere deallocata in modo esplicito.
 
 </dd> <dt>
 
 **Connection**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Elemento a cui è connessa questa risorsa. Ad esempio, una rete denominata o una porta di commutazione.
+Oggetto a cui è connessa questa risorsa. Ad esempio, una porta di rete o commutatore denominata.
 
 </dd> <dt>
 
 **ConsumerVisibility**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -170,11 +170,11 @@ Descrive la visibilità dei consumer per la risorsa allocata.
 | Valore                                                                                                                                                                                                                                                                  | Significato                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt>**Sconosciuto**</dt> <dt>0</dt> </dl>                                            | Sconosciuto.<br/>                                                                                                                                                                                                                                         |
-| <span id="Passed-Through"></span><span id="passed-through"></span><span id="PASSED-THROUGH"></span><dl> <dt>**Passato-a**</dt> <dt>2</dt> </dl>                | La risorsa host o sottostante viene utilizzata e passata al consumer, possibilmente utilizzando il partizionamento. Nella proprietà DeviceID deve essere presente almeno un elemento.<br/>                                                                        |
-| <span id="Virtualized"></span><span id="virtualized"></span><span id="VIRTUALIZED"></span><dl> <dt>**Virtualizzato**</dt> <dt>3</dt> </dl>                            | La risorsa è virtualizzata e non può essere mappata direttamente a una risorsa host o sottostante. Alcune implementazioni possono supportare un'assegnazione specifica per le risorse virtualizzate, nel qual caso le risorse host vengono esposte tramite la proprietà DeviceID.<br/> |
+| <span id="Passed-Through"></span><span id="passed-through"></span><span id="PASSED-THROUGH"></span><dl> <dt>**Pass-through**</dt> <dt>2</dt> </dl>                | La risorsa sottostante o host viene utilizzata e passata al consumer, possibilmente usando il partizionamento. Almeno un elemento deve essere presente nella proprietà DeviceID.<br/>                                                                        |
+| <span id="Virtualized"></span><span id="virtualized"></span><span id="VIRTUALIZED"></span><dl> <dt>**Virtualizzato**</dt> <dt>3</dt> </dl>                            | La risorsa è virtualizzata e potrebbe non essere mappata direttamente a una risorsa sottostante/host. Alcune implementazioni possono supportare l'assegnazione specifica per le risorse virtualizzate, nel qual caso le risorse host vengono esposte usando la proprietà DeviceID.<br/> |
 | <span id="Not_represented"></span><span id="not_represented"></span><span id="NOT_REPRESENTED"></span><dl> <dt>**Non rappresentato**</dt> <dt>4</dt> </dl>            | Una rappresentazione della risorsa non esiste nel contesto del consumer di risorse.<br/>                                                                                                                                                     |
-| <span id="DMTF_reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF riservato**</dt> <dt>..</dt> </dl>                   |                                                                                                                                                                                                                                                             |
-| <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span><dl> 32767 <dt>**riservato al fornitore**</dt> <dt>.. 65535</dt> </dl> |                                                                                                                                                                                                                                                             |
+| <span id="DMTF_reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF riservato.**</dt> <dt></dt> </dl>                   |                                                                                                                                                                                                                                                             |
+| <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span><dl> <dt>**Fornitore riservato**</dt> <dt>32767..65535</dt> </dl> |                                                                                                                                                                                                                                                             |
 
 
 
@@ -185,18 +185,18 @@ Descrive la visibilità dei consumer per la risorsa allocata.
 **DefaultEnabledStatePolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Per impostazione predefinita, gli stati abilitati e disabilitati dei servizi di comunicazione Guest.
+Stati abilitati e disabilitati dei servizi di comunicazione guest per impostazione predefinita.
 
-Si tratta di una proprietà di sola lettura, ma è possibile modificarla utilizzando il metodo [**ModifyResourceSettings**](cim-virtualsystemmanagementservice-modifyresourcesettings.md) della [**classe \_ VirtualSystemManagementService di MSVM**](msvm-virtualsystemmanagementservice.md) .
+Si tratta di una proprietà di sola lettura, ma può essere modificata usando il [**metodo ModifyResourceSettings**](cim-virtualsystemmanagementservice-modifyresourcesettings.md) della [**classe Msvm \_ VirtualSystemManagementService.**](msvm-virtualsystemmanagementservice.md)
 
 > [!Note]  
-> Aggiunto in Windows 10.
+> Aggiunta in Windows 10.
 
  
 
@@ -221,20 +221,20 @@ Si tratta di una proprietà di sola lettura, ma è possibile modificarla utilizz
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per questa istanza di SettingData. Inoltre, il nome visualizzato può essere utilizzato come proprietà di indice per una ricerca o una query. Nota: non è necessario che il nome sia univoco all'interno di uno spazio dei nomi.
+Nome visualizzato per questa istanza di SettingData. Inoltre, il nome visualizzato può essere usato come proprietà di indice per una ricerca o una query. Nota: il nome non deve essere univoco all'interno di uno spazio dei nomi.
 
 </dd> <dt>
 
 **EnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -242,7 +242,7 @@ Tipo di accesso: sola lettura
 
 Stati abilitati e disabilitati di un elemento.
 
-Si tratta di una proprietà di sola lettura, ma può essere modificata usando il metodo [**ModifyVirtualSystemResources**](/previous-versions/windows/desktop/virtual/modifyvirtualsystemresources-msvm-virtualsystemmanagementservice) (o [**ModifyResourceSettings**](cim-virtualsystemmanagementservice-modifyresourcesettings.md) in Windows 10 o versione successiva) della classe [**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) .
+Si tratta di una proprietà di sola lettura, ma può essere modificata usando il metodo [**ModifyVirtualSystemResources**](/previous-versions/windows/desktop/virtual/modifyvirtualsystemresources-msvm-virtualsystemmanagementservice) (o [**ModifyResourceSettings**](cim-virtualsystemmanagementservice-modifyresourcesettings.md) in Windows 10 o versioni successive) della classe [**Msvm \_ VirtualSystemManagementService.**](msvm-virtualsystemmanagementservice.md)
 
 I valori validi sono:
 
@@ -267,20 +267,20 @@ I valori validi sono:
 **HostResource**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà espone un'assegnazione specifica a un host o a risorse sottostanti. Le istanze incorporate devono contenere solo proprietà chiave e essere considerate come percorsi di oggetti. Se la risorsa virtuale può essere pianificata su una serie di risorse sottostanti, questa proprietà deve rimanere **null**. In tal caso, è possibile usare le associazioni DeviceAllocatedFromPool o ResourceAllocationFromPool per determinare il pool di risorse host in cui la risorsa virtuale può essere pianificata. Se viene utilizzata un'assegnazione specifica, tutte le risorse sottostanti utilizzate da questa risorsa virtuale verranno elencate in questa matrice. In genere, la matrice conterrà un elemento, tuttavia per le allocazioni di aggregazione, ad esempio più processori, è possibile specificare più risorse host.
+Questa proprietà espone un'assegnazione specifica alle risorse host o sottostanti. Le istanze incorporate devono contenere solo le proprietà chiave e essere considerate come percorsi oggetto. Se la risorsa virtuale può essere pianificata in un numero di risorse sottostanti, questa proprietà deve rimanere **NULL.** In tal caso, è possibile usare le associazioni DeviceAllocatedFromPool o ResourceAllocationFromPool per determinare il pool di risorse host in cui può essere pianificata questa risorsa virtuale. Se viene utilizzata un'assegnazione specifica, tutte le risorse sottostanti usate da questa risorsa virtuale verranno elencate in questa matrice. In genere, la matrice conterrà un elemento, tuttavia per le allocazioni aggregate, ad esempio più processori, è possibile che siano specificate più risorse host.
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -289,33 +289,33 @@ Tipo di accesso: sola lettura
 Qualificatori: **chiave**
 </dt> </dl>
 
-All'interno dell'ambito dello spazio dei nomi di creazione di istanze, InstanceID indica in modo opaco e univoco un'istanza di questa classe. Per garantire l'univocità all'interno dello spazio dei nomi, il valore di InstanceID deve essere costruito usando l'algoritmo "preferito" seguente: *OrgID*:*localizzato* in cui *OrgID* e *LocalId* sono separati da due punti (:) e dove *OrgID* deve includere un nome con copyright, un marchio o in altro modo univoco di proprietà dell'entità di business che crea o definisce InstanceID o che è un ID registrato assegnato all'entità di business da un'autorità globale riconosciuta. (Questo requisito è simile a *SchemaName* \_ Struttura *ClassName* dei nomi delle classi dello schema. Inoltre, per garantire l'univocità, *OrgID* non deve contenere i due punti (:). Quando si utilizza questo algoritmo, i primi due punti da visualizzare in InstanceID devono comparire tra *OrgID* e *localizzato*. *Localizzato* viene scelto dall'entità business e non deve essere riutilizzato per identificare elementi diversi (reali) sottostanti. Se non viene utilizzato l'algoritmo "preferito" precedente, l'entità di definizione deve garantire che l'ID istanza risultante non venga riutilizzato in tutte le InstanceID generate da questo o da altri provider per lo spazio dei nomi di questa istanza. Per le istanze definite da DMTF, è necessario usare l'algoritmo "preferenziale" con *OrgID* impostato su CIM.
+Nell'ambito dello spazio dei nomi che crea un'istanza, InstanceID identifica in modo opaco e univoco un'istanza di questa classe. Per garantire l'univocità all'interno di NameSpace, il valore di InstanceID deve essere costruito usando l'algoritmo "preferito" seguente: *OrgID:**LocalID* Dove *OrgID* e *LocalID* sono separati da due punti (:) e dove *OrgID* deve includere un nome protetto da copyright, con marchio o altrimenti univoco di proprietà dell'entità aziendale che crea o definisce InstanceID o che è un ID registrato assegnato all'entità aziendale da un'autorità globale riconosciuta. Questo requisito è simile a *SchemaName* \_ *Struttura ClassName* dei nomi delle classi schema. Inoltre, per garantire l'univocità, *OrgID* non deve contenere i due punti (:). Quando si usa questo algoritmo, i primi due punti da visualizzare in InstanceID devono essere compresi tra *OrgID* e *LocalID*. *LocalID* viene scelto dall'entità business e non deve essere riutilizzato per identificare diversi elementi sottostanti (reali). Se non viene usato l'algoritmo "preferito" precedente, l'entità di definizione deve garantire che l'InstanceID risultante non sia riutilizzato in alcun InstanceID prodotto da questo o da altri provider per lo spazio dei nomi di questa istanza. Per le istanze definite da DMTF, l'algoritmo "preferito" deve essere usato con *OrgID* impostato su CIM.
 
 </dd> <dt>
 
 **Limite**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà specifica il limite superiore o la quantità massima di risorse che verrà concessa per l'allocazione. Ad esempio, un sistema che supporta il paging della memoria può supportare l'impostazione del limite di un'allocazione di memoria inferiore a quella del VirtualQuantity, forzando così il paging per l'allocazione.
+Questa proprietà specifica il limite superiore o la quantità massima di risorse che verrà concessa per questa allocazione. Ad esempio, un sistema che supporta il paging di memoria può supportare l'impostazione del limite di un'allocazione di memoria al di sotto di quella di VirtualQuantity, forzando l'esecuzione del paging per questa allocazione.
 
 </dd> <dt>
 
 **MappingBehavior**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica il modo in cui viene eseguito il mapping della risorsa alle risorse sottostanti. Se la matrice HostResource contiene voci, questa proprietà riflette il modo in cui viene eseguito il mapping della risorsa a tali risorse specifiche.
+Specifica il mapping di questa risorsa alle risorse sottostanti. Se la matrice HostResource contiene voci, questa proprietà riflette il mapping della risorsa a tali risorse specifiche.
 
 <dl> <dt>
 
@@ -328,16 +328,16 @@ Specifica il modo in cui viene eseguito il mapping della risorsa alle risorse so
 <span id="Dedicated"></span><span id="dedicated"></span><span id="DEDICATED"></span>**Dedicato** (2)
 </dt> <dt>
 
-<span id="Soft_Affinity"></span><span id="soft_affinity"></span><span id="SOFT_AFFINITY"></span>**Affinità Soft** (3)
+<span id="Soft_Affinity"></span><span id="soft_affinity"></span><span id="SOFT_AFFINITY"></span>**Affinità soft** (3)
 </dt> <dt>
 
-<span id="Hard_Affinity"></span><span id="hard_affinity"></span><span id="HARD_AFFINITY"></span>**Affinità hardware** (4)
+<span id="Hard_Affinity"></span><span id="hard_affinity"></span><span id="HARD_AFFINITY"></span>**Affinità rigida** (4)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF riservato** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DmTF Reserved** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornitore riservato** (32767.. 65535)
+<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Vendor Reserved** (32767..65535)
 </dt> </dl>
 
 </dd> <dt>
@@ -345,20 +345,20 @@ Specifica il modo in cui viene eseguito il mapping della risorsa alle risorse so
 **OtherResourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa che descrive il tipo di risorsa quando non è disponibile un valore ben definito e ResourceType ha il valore "other".
+Stringa che descrive il tipo di risorsa quando non è disponibile un valore ben definito e ResourceType ha il valore "Other".
 
 </dd> <dt>
 
 **Parent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -368,36 +368,36 @@ Elemento padre della risorsa. Ad esempio, un controller per l'allocazione corren
 
 </dd> <dt>
 
-**PoolID**
+**POOLID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà specifica il ResourcePool da cui la risorsa è attualmente allocata o il ResourcePool da cui verrà allocata la risorsa quando si verifica l'allocazione.
+Questa proprietà specifica da quale ResourcePool è attualmente allocata la risorsa o da quale ResourcePool verrà allocata la risorsa quando si verifica l'allocazione.
 
 </dd> <dt>
 
 **Prenotazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà specifica la quantità di risorse garantita per l'allocazione. Nel sistema che supporta l'overcommit delle risorse, questo valore viene in genere usato per il controllo dell'ammissione per impedire che un'allocazione venga accettata, impedendo così l'esaurimento delle risorse.
+Questa proprietà specifica la quantità di risorse che sarà disponibile per questa allocazione. Nel sistema che supporta l'over-commitment delle risorse, questo valore viene in genere usato per il controllo di ammissione per impedire l'accettazione di un'allocazione, impedendo così l'esaurimento delle risorse.
 
 </dd> <dt>
 
 **ResourceSubType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -410,13 +410,13 @@ Stringa che descrive un sottotipo specifico dell'implementazione per questa riso
 **ResourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo di risorsa rappresentata da questa impostazione di allocazione.
+Tipo di risorsa rappresentato da questa impostazione di allocazione.
 
 <dl> <dt>
 
@@ -435,13 +435,13 @@ Tipo di risorsa rappresentata da questa impostazione di allocazione.
 <span id="IDE_Controller"></span><span id="ide_controller"></span><span id="IDE_CONTROLLER"></span>**Controller IDE** (5)
 </dt> <dt>
 
-<span id="Parallel_SCSI_HBA"></span><span id="parallel_scsi_hba"></span><span id="PARALLEL_SCSI_HBA"></span>**HBA SCSI parallelo** (6)
+<span id="Parallel_SCSI_HBA"></span><span id="parallel_scsi_hba"></span><span id="PARALLEL_SCSI_HBA"></span>**HBA SCSI parallela** (6)
 </dt> <dt>
 
-<span id="FC_HBA"></span><span id="fc_hba"></span>**HBA FC** (7)
+<span id="FC_HBA"></span><span id="fc_hba"></span>**FC HBA** (7)
 </dt> <dt>
 
-<span id="iSCSI_HBA"></span><span id="iscsi_hba"></span><span id="ISCSI_HBA"></span>**HBA iSCSI** (8)
+<span id="iSCSI_HBA"></span><span id="iscsi_hba"></span><span id="ISCSI_HBA"></span>**ISCSI HBA** (8)
 </dt> <dt>
 
 <span id="IB_HCA"></span><span id="ib_hca"></span>**IB HCA** (9)
@@ -450,13 +450,13 @@ Tipo di risorsa rappresentata da questa impostazione di allocazione.
 <span id="Ethernet_Adapter"></span><span id="ethernet_adapter"></span><span id="ETHERNET_ADAPTER"></span>**Scheda Ethernet** (10)
 </dt> <dt>
 
-<span id="Other_Network_Adapter"></span><span id="other_network_adapter"></span><span id="OTHER_NETWORK_ADAPTER"></span>**Altra scheda di rete** (11)
+<span id="Other_Network_Adapter"></span><span id="other_network_adapter"></span><span id="OTHER_NETWORK_ADAPTER"></span>**Altra scheda di** rete (11)
 </dt> <dt>
 
-<span id="I_O_Slot"></span><span id="i_o_slot"></span><span id="I_O_SLOT"></span>**Slot I/O** (12)
+<span id="I_O_Slot"></span><span id="i_o_slot"></span><span id="I_O_SLOT"></span>**Slot di I/O** (12)
 </dt> <dt>
 
-<span id="I_O_Device"></span><span id="i_o_device"></span><span id="I_O_DEVICE"></span>**Dispositivo I/O** (13)
+<span id="I_O_Device"></span><span id="i_o_device"></span><span id="I_O_DEVICE"></span>**Dispositivo di I/O** (13)
 </dt> <dt>
 
 <span id="Floppy_Drive"></span><span id="floppy_drive"></span><span id="FLOPPY_DRIVE"></span>**Unità floppy** (14)
@@ -477,10 +477,10 @@ Tipo di risorsa rappresentata da questa impostazione di allocazione.
 <span id="USB_Controller"></span><span id="usb_controller"></span><span id="USB_CONTROLLER"></span>**Controller USB** (19)
 </dt> <dt>
 
-<span id="Graphics_controller"></span><span id="graphics_controller"></span><span id="GRAPHICS_CONTROLLER"></span>**Controller grafica** (20)
+<span id="Graphics_controller"></span><span id="graphics_controller"></span><span id="GRAPHICS_CONTROLLER"></span>**Controller grafico** (20)
 </dt> <dt>
 
-<span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>**Extent di archiviazione** (21)
+<span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>**Archiviazione extent** (21)
 </dt> <dt>
 
 <span id="Disk"></span><span id="disk"></span><span id="DISK"></span>**Disco** (22)
@@ -489,10 +489,10 @@ Tipo di risorsa rappresentata da questa impostazione di allocazione.
 <span id="Tape"></span><span id="tape"></span><span id="TAPE"></span>**Nastro** (23)
 </dt> <dt>
 
-<span id="Other_storage_device"></span><span id="other_storage_device"></span><span id="OTHER_STORAGE_DEVICE"></span>**Altro dispositivo di archiviazione** (24)
+<span id="Other_storage_device"></span><span id="other_storage_device"></span><span id="OTHER_STORAGE_DEVICE"></span>**Altro dispositivo di** archiviazione (24)
 </dt> <dt>
 
-<span id="Firewire_Controller"></span><span id="firewire_controller"></span><span id="FIREWIRE_CONTROLLER"></span>**Controller FireWire** (25)
+<span id="Firewire_Controller"></span><span id="firewire_controller"></span><span id="FIREWIRE_CONTROLLER"></span>**Firewire Controller** (25)
 </dt> <dt>
 
 <span id="Partitionable_Unit"></span><span id="partitionable_unit"></span><span id="PARTITIONABLE_UNIT"></span>**Unità partizionabile** (26)
@@ -510,7 +510,7 @@ Tipo di risorsa rappresentata da questa impostazione di allocazione.
 <span id="DMTF_reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF riservato** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornitore riservato** (32767.. 65535)
+<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Vendor Reserved** (32767..65535)
 </dt> </dl>
 
 </dd> <dt>
@@ -518,26 +518,26 @@ Tipo di risorsa rappresentata da questa impostazione di allocazione.
 **VirtualQuantity**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà specifica la quantità di risorse presentate al consumer. Ad esempio, quando ResourceType = Processor, questa proprietà riflette il numero di processori discreti presentati al sistema del computer virtuale. Quando ResourceType = Memory, questa proprietà può riflettere il numero di MB restituiti al sistema del computer virtuale.
+Questa proprietà specifica la quantità di risorse presentate al consumer. Ad esempio, quando ResourceType=Processor, questa proprietà riflette il numero di processori discreti presentati al sistema di computer virtuale. Quando ResourceType=Memory, questa proprietà può riflettere il numero di MB segnalati al sistema di computer virtuale.
 
 </dd> <dt>
 
 **Weight**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà specifica una priorità relativa per l'allocazione in relazione alle altre allocazioni dello stesso ResourcePool. Questa proprietà non dispone di unità di misura ed è pertinente solo se confrontata con altre allocazioni che competono per le stesse risorse host.
+Questa proprietà specifica una priorità relativa per questa allocazione in relazione ad altre allocazioni dallo stesso Pool di risorse. Questa proprietà non ha unità di misura ed è rilevante solo se confrontata con altre allocazioni in competizione per le stesse risorse host.
 
 </dd> </dl>
 
@@ -547,10 +547,10 @@ Questa proprietà specifica una priorità relativa per l'allocazione in relazion
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                                 |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -559,10 +559,10 @@ Questa proprietà specifica una priorità relativa per l'allocazione in relazion
 
 <dl> <dt>
 
-[**\_RESOURCEALLOCATIONSETTINGDATA CIM**](cim-resourceallocationsettingdata.md)
+[**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md)
 </dt> <dt>
 
-[**\_RESOURCEALLOCATIONSETTINGDATA CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
+[**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 </dt> </dl>
 
  

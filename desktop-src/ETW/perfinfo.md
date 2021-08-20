@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 93f12242fef86e5eab81bb702b783eb1f4c1915c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 641ebb361d14fa8abb0c8199cf113cfd85a2e6700e262447c1302f3f1b66231a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151407"
 ---
 # <a name="perfinfo-class"></a>Classe PerfInfo
 
@@ -36,29 +36,29 @@ class PerfInfo : MSNT_SystemTrace
 
 ## <a name="members"></a>Members
 
-La classe **PerfInfo** non definisce membri.
+La **classe PerfInfo** non definisce membri.
 
 ## <a name="remarks"></a>Commenti
 
-Per abilitare gli eventi di chiamata di procedura posticipata in una sessione di registrazione del kernel NT, specificare il flag **DPC del \_ flag di traccia \_ \_ eventi** nel membro **EnableFlags** di una struttura di [**\_ \_ proprietà della traccia eventi**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) quando si chiama la funzione [**StartTrace**](/windows/win32/api/evntrace/nf-evntrace-starttracea) . È anche possibile specificare uno o più dei flag seguenti:
+Per abilitare gli eventi DPC (Deferred Procedure Call) in una sessione di registrazione del kernel NT, specificare il flag **\_ \_ \_ DPC EVENT TRACE FLAG** nel membro **EnableFlags** di una struttura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) quando si chiama la funzione [**StartTrace.**](/windows/win32/api/evntrace/nf-evntrace-starttracea) È anche possibile specificare uno o più dei flag seguenti:
 
--   **\_interrupt del \_ flag di traccia eventi \_**
--   **\_ \_ profilo contrassegno di traccia eventi \_**
--   **\_flag di traccia evento \_ \_ SYSTEMCALL**
+-   **EVENT \_ TRACE \_ FLAG \_ INTERRUPT**
+-   **PROFILO \_ FLAG DI TRACCIA \_ \_ EVENTI**
+-   **EVENT \_ TRACE \_ FLAG \_ SYSTEMCALL**
 
-I consumer di traccia degli eventi possono implementare un'elaborazione speciale per gli eventi DPC chiamando la funzione [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) e specificando [**PerfInfoGuid**](nt-kernel-logger-constants.md) come parametro *pGuid* . Usare i tipi di evento seguenti per identificare l'evento effettivo quando si utilizzano gli eventi.
+I consumer di traccia eventi possono implementare un'elaborazione speciale per gli eventi DPC chiamando la [**funzione SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) e specificando [**PerfInfoGuid**](nt-kernel-logger-constants.md) come *parametro pGuid.* Usare i tipi di evento seguenti per identificare l'evento effettivo quando si utilizzano gli eventi.
 
 
 
 | Tipo di evento           | Descrizione                                                                                                          |
 |----------------------|----------------------------------------------------------------------------------------------------------------------|
 | Valore del tipo di evento, 46 | Evento del profilo campionato. La classe MOF [**SampledProfile**](sampledprofile.md) definisce i dati dell'evento per questo evento. |
-| Valore del tipo di evento, 51 | Evento di chiamata di sistema Enter. La classe MOF [**SysCallEnter**](syscallenter.md) definisce i dati dell'evento per questo evento.   |
-| Valore del tipo di evento, 52 | Evento di uscita chiamata di sistema. La classe MOF [**SysCallExit**](syscallexit.md) definisce i dati dell'evento per questo evento.      |
-| Valore del tipo di evento, 66 | Evento DPC a thread. La classe [**DPC**](dpc.md) MOF definisce i dati dell'evento per questo evento.                          |
-| Valore del tipo di evento, 67 | Evento di interrupt service routine (ISR). La classe MOF [**ISR**](isr.md) definisce i dati dell'evento per questo evento.       |
-| Valore del tipo di evento, 68 | Evento DPC. La classe [**DPC**](dpc.md) MOF definisce i dati dell'evento per questo evento.                                   |
-| Valore del tipo di evento, 69 | Evento timer DPC. La classe [**DPC**](dpc.md) MOF definisce i dati dell'evento per questo evento.                             |
+| Valore del tipo di evento, 51 | Evento enter della chiamata di sistema. La [**classe MOF SysCallEnter**](syscallenter.md) definisce i dati dell'evento per questo evento.   |
+| Valore del tipo di evento, 52 | Evento di uscita della chiamata di sistema. La [**classe MOF SysCallExit**](syscallexit.md) definisce i dati dell'evento per questo evento.      |
+| Valore del tipo di evento, 66 | Evento DPC con thread. La [**classe MOF DPC**](dpc.md) definisce i dati dell'evento per questo evento.                          |
+| Valore del tipo di evento, 67 | Evento di routine del servizio di interruzione (ISR). La classe MOF [**ISR**](isr.md) definisce i dati dell'evento per questo evento.       |
+| Valore del tipo di evento, 68 | Evento DPC. La [**classe MOF DPC**](dpc.md) definisce i dati dell'evento per questo evento.                                   |
+| Valore del tipo di evento, 69 | Evento timer DPC. La [**classe MOF DPC**](dpc.md) definisce i dati dell'evento per questo evento.                             |
 
 
 
@@ -70,8 +70,8 @@ I consumer di traccia degli eventi possono implementare un'elaborazione speciale
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

@@ -32,7 +32,7 @@ Proprietà segnaposto del server terminal 01.
 | CN                | MS-TSLS-Property01                          |
 | Ldap-Display-Name | msTSLSProperty01                            |
 | Dimensione              | \-                                          |
-| Aggiorna privilegio  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2009                     |
 | System-Id-Guid    | 87e53590-971d-4a52-955b-4794d15a84ae        |

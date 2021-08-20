@@ -31,7 +31,7 @@ Un'istanza di questa classe contiene la definizione di una proprietà nelle riso
 |-------------------|--------------------------------------|
 | CN                | ms-DS-Resource-Property              |
 | Ldap-Display-Name | msDS-ResourceProperty                |
-| Aggiorna privilegio  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Schema-Id-Guid    | 5b283d5e-8404-4195-9339-8450188c501a |
 
@@ -59,7 +59,7 @@ Un'istanza di questa classe contiene la definizione di una proprietà nelle riso
 | Possibili superiori          | [**ms-DS-Resource-Properties**](c-msds-resourceproperties.md)                                   |
 | Classi ausiliarie           | \-                                                                                               |
 | NT-Security-Descriptor      | O:BAG:BAD:S:                                                                                     |
-| Descrittore di sicurezza predefinito | D:(A;; RPWPCRCCDCLOLORCWOWDSDDTDTSW;;; EA)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;;; Au) |
+| Descrittore di sicurezza predefinito | D:(A;; RPWPCRCCDCLCLOLORCWOWDSDDTDTDTSW;;; EA)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;;; Au) |
 | System-Flags                | 0x00000010                                                                                       |
 
 
@@ -72,16 +72,16 @@ Questa classe contiene gli attributi seguenti per Windows Server 2012:
 
 | Attributo                                                                                        | Obbligatorio | Derivato da                                                                      |
 |--------------------------------------------------------------------------------------------------|-----------|-----------------------------------------------------------------------------------|
-| [**Descrizione dell'amministratore**](a-admindescription.md)                                                  | Falso     | [**In alto**](c-top.md)<br/>                                                   |
+| [**Admin-Description**](a-admindescription.md)                                                  | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Admin-Display-Name**](a-admindisplayname.md)                                                 | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Attributi consentiti**](a-allowedattributes.md)                                                | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)                             | Falso     | [**In alto**](c-top.md)<br/>                                                   |
-| [**Classi figlio consentite**](a-allowedchildclasses.md)                                           | Falso     | [**In alto**](c-top.md)<br/>                                                   |
+| [**Classi consentite-figlio**](a-allowedchildclasses.md)                                           | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)                        | Falso     | [**In alto**](c-top.md)<br/>                                                   |
-| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/>                                                   |
+| [**Testa di ponte-Server-List-BL**](a-bridgeheadserverlistbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Canonical-Name**](a-canonicalname.md)                                                        | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Nome comune**](a-cn.md)                                                                      | Falso     | [**In alto**](c-top.md)<br/>                                                   |
-| [**Creazione timestamp**](a-createtimestamp.md)                                                   | Falso     | [**In alto**](c-top.md)<br/>                                                   |
+| [**Create-Time-Stamp**](a-createtimestamp.md)                                                   | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Descrizione**](a-description.md)                                                             | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Nome visualizzato**](a-displayname.md)                                                            | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Display-Name-Printable**](a-displaynameprintable.md)                                         | Falso     | [**In alto**](c-top.md)<br/>                                                   |
@@ -160,12 +160,12 @@ Questa classe contiene gli attributi seguenti per Windows Server 2012:
 | [**Obj-Dist-Name**](a-distinguishedname.md)                                                     | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Categoria di oggetti**](a-objectcategory.md)                                                      | Vero      | [**In alto**](c-top.md)<br/>                                                   |
 | [**Classe object**](a-objectclass.md)                                                            | Vero      | [**In alto**](c-top.md)<br/>                                                   |
-| [**Guid oggetto**](a-objectguid.md)                                                              | Falso     | [**In alto**](c-top.md)<br/>                                                   |
+| [**Object-Guid**](a-objectguid.md)                                                              | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Versione oggetto**](a-objectversion.md)                                                        | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Altri oggetti noti**](a-otherwellknownobjects.md)                                      | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)                        | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                                           | Falso     | [**In alto**](c-top.md)<br/>                                                   |
-| [**Possibili eserezioni**](a-possibleinferiors.md)                                                | Falso     | [**In alto**](c-top.md)<br/>                                                   |
+| [**Possibili inevasi**](a-possibleinferiors.md)                                                | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                                               | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Indirizzi proxy**](a-proxyaddresses.md)                                                      | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                                       | Falso     | [**In alto**](c-top.md)<br/>                                                   |
@@ -179,15 +179,15 @@ Questa classe contiene gli attributi seguenti per Windows Server 2012:
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                                               | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                                               | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)                                   | Falso     | [**In alto**](c-top.md)<br/>                                                   |
-| [**Oggetto sito -BL**](a-siteobjectbl.md)                                                         | Falso     | [**In alto**](c-top.md)<br/>                                                   |
-| [**Structural-Object-Class**](a-structuralobjectclass.md)                                       | Falso     | [**In alto**](c-top.md)<br/>                                                   |
-| [**Riferimenti secondari**](a-subrefs.md)                                                                    | Falso     | [**In alto**](c-top.md)<br/>                                                   |
+| [**Site-Object-BL**](a-siteobjectbl.md)                                                         | Falso     | [**In alto**](c-top.md)<br/>                                                   |
+| [**Classe structural-object**](a-structuralobjectclass.md)                                       | Falso     | [**In alto**](c-top.md)<br/>                                                   |
+| [**Sottori ref**](a-subrefs.md)                                                                    | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                                                 | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Flag di sistema**](a-systemflags.md)                                                            | Falso     | [**In alto**](c-top.md)<br/>                                                   |
-| [**USN modificato**](a-usnchanged.md)                                                              | Falso     | [**In alto**](c-top.md)<br/>                                                   |
+| [**Modifica di USN**](a-usnchanged.md)                                                              | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Creato da USN**](a-usncreated.md)                                                              | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                                       | Falso     | [**In alto**](c-top.md)<br/>                                                   |
-| [**USN intersito**](a-usnintersite.md)                                                          | Falso     | [**In alto**](c-top.md)<br/>                                                   |
+| [**USN-Intersite**](a-usnintersite.md)                                                          | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                                      | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**USN-Source**](a-usnsource.md)                                                                | Falso     | [**In alto**](c-top.md)<br/>                                                   |
 | [**Wbem-Path**](a-wbempath.md)                                                                  | Falso     | [**In alto**](c-top.md)<br/>                                                   |
