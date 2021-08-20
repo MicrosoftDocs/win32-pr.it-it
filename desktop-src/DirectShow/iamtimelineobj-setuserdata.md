@@ -1,7 +1,7 @@
 ---
-description: Il Metodo SetUserData imposta i dati persistenti definiti dall'applicazione.
+description: Il metodo SetUserData imposta i dati persistenti definiti dall'applicazione.
 ms.assetid: 195d8e92-a25c-40ff-8cc7-c1f05bdd76ab
-title: 'Metodo IAMTimelineObj:: SetUserData (qedit. h)'
+title: Metodo IAMTimelineObj::SetUserData (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 7e09aafd614234827a704d8b9997f27981eb7c45
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c136be271e5ef34423096a807e833ca5e3f3eb5412a4938d8750400cd1a88902
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118154940"
 ---
-# <a name="iamtimelineobjsetuserdata-method"></a>Metodo IAMTimelineObj:: SetUserData
+# <a name="iamtimelineobjsetuserdata-method"></a>Metodo IAMTimelineObj::SetUserData
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `SetUserData` metodo imposta i dati persistenti definiti dall'applicazione.
+Il `SetUserData` metodo imposta dati persistenti definiti dall'applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,23 +56,23 @@ Puntatore a un buffer contenente i dati.
 *Dimensioni* 
 </dt> <dd>
 
-Dimensioni dei dati in byte.
+Dimensioni dei dati, in byte.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -82,8 +82,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

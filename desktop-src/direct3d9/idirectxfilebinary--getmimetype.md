@@ -1,7 +1,7 @@
 ---
-description: Recupera il tipo di Multipurpose Internet Mail Extensions (MIME) per i dati binari. Deprecato.
+description: Recupera il Multipurpose Internet Mail Extensions (MIME) per i dati binari. Deprecato.
 ms.assetid: 57c42ace-4313-40d8-9992-eaf12edf3a30
-title: 'Metodo IDirectXFileBinary:: GetMimeType (DXFile. h)'
+title: Metodo IDirectXFileBinary::GetMimeType (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 965006dc6fbad1176307341a19fd1f186e670104
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1a3443577a8d7b837ce43ef468d28d01ebde7b265b4e27dd72c481329b7003e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118093476"
 ---
-# <a name="idirectxfilebinarygetmimetype-method"></a>Metodo IDirectXFileBinary:: GetMimeType
+# <a name="idirectxfilebinarygetmimetype-method"></a>Metodo IDirectXFileBinary::GetMimeType
 
-Recupera il tipo di Multipurpose Internet Mail Extensions (MIME) per i dati binari. Deprecato.
+Recupera il Multipurpose Internet Mail Extensions (MIME) per i dati binari. Deprecato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT GetMimeType(
 
 <dl> <dt>
 
-*pszMimeType* \[ out\]
+*pszMimeType* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)\***
 
-Indirizzo di un puntatore per la ricezione della stringa di tipo MIME.
+Indirizzo di un puntatore per ricevere la stringa di tipo MIME.
 
 </dd> </dl>
 
@@ -57,7 +57,7 @@ Se il metodo ha esito positivo, il valore restituito è DXFILE \_ OK. Se il meto
 
 ## <a name="remarks"></a>Commenti
 
-Quando non è specificato alcun tipo MIME in un file DirectX per un oggetto binario, la funzione imposterà pszMimeType su **null**.
+Quando non è specificato alcun tipo MIME in un file DirectX per un oggetto binario, la funzione imposta pszMimeType su **NULL.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Quando non è specificato alcun tipo MIME in un file DirectX per un oggetto bina
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 

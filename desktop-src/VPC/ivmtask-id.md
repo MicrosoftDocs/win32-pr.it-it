@@ -1,10 +1,10 @@
 ---
-title: Proprietà ID IVMTask (VPCCOMInterfaces. h)
+title: Proprietà IVMTask ID (VPCCOMInterfaces.h)
 description: Recupera un identificatore univoco per questa attività.
 ms.assetid: 56a63b94-139b-4445-aef6-1b988e548b4b
 keywords:
-- ID proprietà PC virtuale
-- ID proprietà Virtual PC, interfaccia IVMTask
+- Proprietà ID Virtual PC
+- Proprietà ID Virtual PC , interfaccia IVMTask
 - Interfaccia IVMTask Virtual PC, proprietà ID
 topic_type:
 - apiref
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 821650fcec725a43d86e539bd7f6cc9e7a6e2677
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 45bb5efed1e7c0398113b20e1bf2b9de6edc81bf39958a34895219e7250facbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118123241"
 ---
-# <a name="ivmtaskid-property"></a>Proprietà IVMTask:: ID
+# <a name="ivmtaskid-property"></a>Proprietà IVMTask::ID
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera un identificatore univoco per questa attività.
 
@@ -54,8 +54,8 @@ Identificatore univoco.
 | Nome/valore                                                                                                                                                    | Significato                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | L'operazione è stata completata.<br/>     |
-| <dl> <dt>E \_ PUNTATORE</dt> <dt>0x80004003</dt> </dl>         | Il valore del parametro è **null**.<br/>  |
-| <dl> <dt>Disp \_ 0x80020009 \_ eccezione E</dt> <dt></dt> </dl> | Si è verificato un errore imprevisto.<br/> |
+| <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl>         | Il valore del parametro è **NULL.**<br/>  |
+| <dl> <dt>DISP \_ E \_ ECCEZIONE</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/> |
 
 
 
@@ -65,11 +65,11 @@ Identificatore univoco.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 | IID<br/>                      | IID \_ IVMTask è definito come ab72b222-6e9c-48ae-aa54-85e3e635767c<br/>                    |
 
 
@@ -78,7 +78,7 @@ Identificatore univoco.
 
 <dl> <dt>
 
-[**IVMTask**](ivmtask.md)
+[**Attività IVM**](ivmtask.md)
 </dt> </dl>
 
  

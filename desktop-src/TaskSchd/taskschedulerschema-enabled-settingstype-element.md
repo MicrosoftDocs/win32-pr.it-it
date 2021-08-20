@@ -3,7 +3,7 @@ title: Elemento Enabled (settingsType)
 description: Specifica che l'attività è abilitata. L'attività può essere eseguita solo quando questa impostazione è True.
 ms.assetid: d28f0d54-1205-4b70-a178-72d809da9ce1
 keywords:
-- Elemento enabled Utilità di pianificazione
+- Elemento Enabled Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -46,13 +46,13 @@ Specifica che l'attività è abilitata. L'attività può essere eseguita solo qu
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo C++, vedere [**Proprietà Enabled di ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_enabled).
+Per lo sviluppo in C++, [**vedere Proprietà Enabled di ITaskSettings.**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_enabled)
 
-Per lo sviluppo di script, vedere [**TaskSettings.Enabled**](tasksettings-enabled.md).
+Per lo sviluppo di script, vedere [**TaskSettings.Enabled.**](tasksettings-enabled.md)
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio completo del codice XML per un'attività abilitata, vedere [Time Trigger Example (XML) .](time-trigger-example--xml-.md)
+Per un esempio completo del codice XML per un'attività abilitata, vedere [Esempio di trigger temporale (XML).](time-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,8 +60,8 @@ Per un esempio completo del codice XML per un'attività abilitata, vedere [Time 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Richiama la funzionalità helper per l'interfaccia IDispatch.
 ms.assetid: ccef47af-d9dd-48c3-93d3-ee997dacf7a8
-title: InvokeIDispatch (funzione)
+title: Funzione InvokeIDispatch
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - InkObj.dll
 - InkObj.dll.dll
-ms.openlocfilehash: e4989e3ec23a1ffa97ba317831143ecf0920ef9b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9708ebc5675d918c959be132d16037ac4e128650280b8243dcfe5c48834b602b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118041871"
 ---
-# <a name="invokeidispatch-function"></a>InvokeIDispatch (funzione)
+# <a name="invokeidispatch-function"></a>Funzione InvokeIDispatch
 
 Richiama la funzionalità helper per l'interfaccia IDispatch.
 
@@ -52,7 +52,7 @@ Istanza dell'interfaccia IDispatch.
 
 </dd> <dt>
 
-*DISPID* 
+*Dispid* 
 </dt> <dd>
 
 Metodo, proprietà o argomento da passare.
@@ -66,7 +66,7 @@ Parametri da passare.
 
 </dd> <dt>
 
-*pvarResult* \[ out\]
+*pVarResult* \[ Cambio\]
 </dt> <dd>
 
 Struttura che riceve i valori recuperati.
@@ -75,13 +75,13 @@ Struttura che riceve i valori recuperati.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, i codici restituiti possibili includono, ma non sono limitati, i valori mostrati nella tabella seguente.
+Se il metodo ha esito positivo, restituisce S \_ OK. In caso di esito negativo, i possibili codici restituiti includono, ma non sono limitati, i valori illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                  | Descrizione                                      |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------|
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il valore di *pDispatch* non è valido.<br/> |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il valore per *pDispatch non* è valido.<br/> |
 
 
 
@@ -93,7 +93,7 @@ Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, i cod
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                         |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                         |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                             |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl> |
 

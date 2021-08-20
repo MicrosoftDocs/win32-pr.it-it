@@ -54,7 +54,7 @@ Definisce l'elemento figlio e le informazioni di sequenziazione per [**l'element
 
 ## <a name="remarks"></a>Commenti
 
-Oltre all'elemento figlio definito qui, [**l'elemento BootTrigger**](taskschedulerschema-boottrigger-triggergroup-element.md) usa anche gli elementi figlio definiti dal tipo complesso [**triggerBaseType.**](taskschedulerschema-triggerbasetype-complextype.md)
+Oltre all'elemento figlio definito qui, [**l'elemento BootTrigger**](taskschedulerschema-boottrigger-triggergroup-element.md) usa anche gli elementi figlio definiti dal [**tipo complesso triggerBaseType.**](taskschedulerschema-triggerbasetype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,8 +62,8 @@ Oltre all'elemento figlio definito qui, [**l'elemento BootTrigger**](taskschedul
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

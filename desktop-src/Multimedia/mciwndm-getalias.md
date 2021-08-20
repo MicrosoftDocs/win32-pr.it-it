@@ -1,9 +1,9 @@
 ---
-title: Messaggio di MCIWNDM_GETALIAS (VFW. h)
-description: Il \_ messaggio MCIWNDM getAlias recupera l'alias utilizzato per aprire un file o un dispositivo MCI con la funzione mciSendString. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro MCIWndGetAlias.
+title: MCIWNDM_GETALIAS messaggio (Vfw.h)
+description: Il messaggio MCIWNDM GETALIAS recupera l'alias usato per aprire un \_ dispositivo o un file MCI con la funzione mciSendString. È possibile inviare questo messaggio in modo esplicito o tramite la macro MCIWndGetAlias.
 ms.assetid: 37131b89-275c-4ab6-9278-0e08c42471bd
 keywords:
-- MCIWNDM_GETALIAS messaggi multimediali di Windows
+- MCIWNDM_GETALIAS messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e971c50b9abc450387ac29f9a7331bfdca5c38c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 857ea90205b5204cd7c4af19f27a420684e59543717b2689f178d97cd5a600de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137752"
 ---
-# <a name="mciwndm_getalias-message"></a>\_Messaggio GETALIAS MCIWNDM
+# <a name="mciwndm_getalias-message"></a>Messaggio MCIWNDM \_ GETALIAS
 
-Il messaggio **MCIWNDM \_ getAlias** recupera l'alias utilizzato per aprire un file o un dispositivo MCI con la funzione [**mciSendString**](/previous-versions//dd757161(v=vs.85)) . È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**MCIWndGetAlias**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetalias) .
+Il **messaggio MCIWNDM \_ GETALIAS** recupera l'alias usato per aprire un dispositivo o un file MCI con la [**funzione mciSendString.**](/previous-versions//dd757161(v=vs.85)) È possibile inviare questo messaggio in modo esplicito o tramite la macro [**MCIWndGetAlias.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetalias)
 
 
 ```C++
@@ -46,7 +46,7 @@ Restituisce l'alias del dispositivo.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: rifrangono
-description: Restituisce un vettore di rifrazione usando un raggio di immissione, una normale della superficie e un indice di rifrazione.
+title: refract
+description: Restituisce un vettore di refrazione usando un raggio di ingresso, una normale della superficie e un indice di refrazione.
 ms.assetid: 9f9467d7-dd9b-472a-bbdc-752394d382c6
 keywords:
-- HLSL di rifrazione
+- refract HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9e499d078a020ade1ff9ff2566c3fd15b2a820d2
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3895f39d7559fbc8707d3306d8183bfcef60890fa0393a788d17822137b8de2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104993568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118090978"
 ---
-# <a name="refract"></a>rifrangono
+# <a name="refract"></a>refract
 
-Restituisce un vettore di rifrazione usando un raggio di immissione, una normale della superficie e un indice di rifrazione.
+Restituisce un vettore di refrazione usando un raggio di ingresso, una normale della superficie e un indice di refrazione.
 
 
 
-| rifrazione *ret* (*i*, *n*,?) |
+| *ret* refract(*i*, *n*, ?) |
 |----------------------------|
 
 
@@ -39,9 +39,9 @@ Restituisce un vettore di rifrazione usando un raggio di immissione, una normale
 
 | Elemento                                                   | Descrizione                                                  |
 |--------------------------------------------------------|--------------------------------------------------------------|
-| <span id="i"></span><span id="I"></span>*i*<br/> | \[in \] un vettore a virgola mobile e direzione raggio.<br/>    |
-| <span id="n"></span><span id="N"></span>*n*<br/> | \[in \] un vettore a virgola mobile, superficie normale.<br/>   |
-| *?*<br/>                                         | \[in \] una virgola mobile, indice rifrazione scalare.<br/> |
+| <span id="i"></span><span id="I"></span>*Ho*<br/> | \[in \] Un vettore di direzione del raggio a virgola mobile.<br/>    |
+| <span id="n"></span><span id="N"></span>*N*<br/> | \[in \] un vettore normale della superficie a virgola mobile.<br/>   |
+| *?*<br/>                                         | \[in \] un indice a virgola mobile a virgola mobile scalare dell'indice di refrazione.<br/> |
 
 
 
@@ -49,7 +49,7 @@ Restituisce un vettore di rifrazione usando un raggio di immissione, una normale
 
 ## <a name="return-value"></a>Valore restituito
 
-Vettore di rifrazione A virgola mobile. Se l'angolo tra il raggio i e la normale della superficie n è troppo grande per un indice di rifrazione specificato, il valore restituito è (0, 0, 0).
+Vettore di rifrazione a virgola mobile. Se l'angolo tra il raggio di ingresso i e la normale della superficie n è troppo grande per un determinato indice di refrazione ?, il valore restituito è (0,0,0).
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -57,25 +57,25 @@ Vettore di rifrazione A virgola mobile. Se l'angolo tra il raggio i e la normale
 
 | Nome              | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md) | Dimensione                           |
 |-------------------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *i*               | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
-| *n*               | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | le stesse dimensioni di input *i* |
-| ?                 | [**scalare**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 1                              |
-| vettore di rifrazione | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | le stesse dimensioni di input *i* |
+| *i*               | [**Vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
+| *n*               | [**Vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | stesse dimensioni dell'input *i* |
+| ?                 | [**Scalare**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 1                              |
+| vettore di refrazione | [**Vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | stesse dimensioni dell'input *i* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                                                       | Supportato           |
 |------------------------------------------------------------------------------------|---------------------|
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader più elevati | sì                 |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | Sì ( \_ solo vs 1 \_ 1) |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader superiori | sì                 |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md)                          | sì (solo \_ vs 1 \_ 1) |
 
 
 

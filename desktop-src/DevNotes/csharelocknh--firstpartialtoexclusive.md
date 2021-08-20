@@ -1,7 +1,7 @@
 ---
 description: Modifica un blocco parziale in un blocco esclusivo.
 ms.assetid: 4999b539-620e-4fb3-b8d4-92767da1225f
-title: 'Metodo CShareLockNH:: FirstPartialToExclusive'
+title: Metodo CShareLockNH::FirstPartialToExclusive
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Rwnh.dll
-ms.openlocfilehash: 65931cb4747c829a0386c7cc76a1ce7e64d41d60
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e56ce4b784d808c073d16e9833a89b27f24a264b35ea3cadc4d84f5b503970ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162402"
 ---
-# <a name="csharelocknhfirstpartialtoexclusive-method"></a>Metodo CShareLockNH:: FirstPartialToExclusive
+# <a name="csharelocknhfirstpartialtoexclusive-method"></a>Metodo CShareLockNH::FirstPartialToExclusive
 
 Modifica un blocco parziale in un blocco esclusivo.
 
@@ -43,7 +43,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

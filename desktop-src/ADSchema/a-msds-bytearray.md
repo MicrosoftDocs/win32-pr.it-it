@@ -120,7 +120,7 @@ Attributo per l'archiviazione di dati binari.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| A valore singolo       | Falso                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
@@ -141,7 +141,7 @@ Attributo per l'archiviazione di dati binari.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| A valore singolo       | Falso                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |

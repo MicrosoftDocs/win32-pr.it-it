@@ -1,9 +1,9 @@
 ---
-title: Descrizione comando DISELIDER.toolTip
+title: Descrizione comando CUSTOMSLIDER.tooltip
 description: L'attributo toolTip specifica o recupera il testo della descrizione comando per il dispositivo di scorrimento.
 ms.assetid: ac82b811-8396-4a02-b617-627e808b8faf
 keywords:
-- WINDOWS MEDIA PLAYER
+- Controllo CUSTOMSLIDER.toolTip Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -19,7 +19,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118340910"
 ---
-# <a name="customslidertooltip"></a>Descrizione comando DISELIDER.toolTip
+# <a name="customslidertooltip"></a>Descrizione comando CUSTOMSLIDER.tooltip
 
 **L'attributo toolTip** specifica o recupera il testo della descrizione comando per il dispositivo di scorrimento.
 
@@ -37,7 +37,7 @@ Quando questo attributo è impostato su "" (stringa vuota), non viene visualizza
 
 ## <a name="examples"></a>Esempio
 
-Vedere [l'attributo positionImage](customslider-positionimage.md) per un esempio che illustra come vengono usati gli attributi dell'elementoLIDER. 
+Vedere [l'attributo positionImage](customslider-positionimage.md) per un esempio che illustra come vengono usati gli attributi **dell'elemento CUSTOMSLIDER.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,7 +53,7 @@ Vedere [l'attributo positionImage](customslider-positionimage.md) per un esempio
 
 <dl> <dt>
 
-[**Elemento INSODELIDER**](customslider-element.md)
+[**Elemento CUSTOMSLIDER**](customslider-element.md)
 </dt> </dl>
 
  

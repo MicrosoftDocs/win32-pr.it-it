@@ -1,9 +1,9 @@
 ---
-title: Transazione XTYP_EXECUTE (DDEML. h)
-description: Un client utilizza XTYP \_ Execute Transaction per inviare una stringa di comando al server. Una funzione di callback del server Dynamic Data Exchange (DDE), DdeCallback, riceve questa transazione quando un client specifica XTYP \_ Execute nella funzione DdeClientTransaction.
+title: XTYP_EXECUTE transazione (Ddeml.h)
+description: Un client utilizza la transazione EXECUTE XTYP \_ per inviare una stringa di comando al server. Una funzione di callback del server Dynamic Data Exchange (DDE) DdeCallback riceve questa transazione quando un client specifica XTYP EXECUTE nella \_ funzione DdeClientTransaction.
 ms.assetid: 6001eb7d-59c0-49ec-97ce-26132891188c
 keywords:
-- Scambio di dati delle transazioni XTYP_EXECUTE
+- XTYP_EXECUTE dati della transazione Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ff08bfa60d07f3b8333f1de808359f77984cbba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6dd6d23b485de31693fc5ad3a648414e3cc18251f741f69885de0fda714d8f27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118102122"
 ---
-# <a name="xtyp_execute-transaction"></a>XTYP \_ Execute Transaction
+# <a name="xtyp_execute-transaction"></a>Transazione EXECUTE XTYP \_
 
-Un client utilizza **XTYP \_ Execute** Transaction per inviare una stringa di comando al server. Una funzione di callback del server Dynamic Data Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), riceve questa transazione quando un client specifica **XTYP \_ Execute** nella funzione [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction) .
+Un client utilizza la **transazione \_ EXECUTE XTYP** per inviare una stringa di comando al server. Una funzione di callback del server Dynamic Data Exchange [*(DDE) DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback)riceve questa transazione quando un client specifica **XTYP \_ EXECUTE** nella [**funzione DdeClientTransaction.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
 
 
 ```C++
@@ -95,15 +95,15 @@ Non usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Una funzione di callback del server deve restituire **\_ fack DDE** se elabora questa transazione, **DDE \_ FBUSY** se è troppo occupato per elaborare la transazione o **\_ FNOTPROCESSED DDE** se rifiuta questa transazione.
+Una funzione di callback del server deve restituire **DDE \_ FACK** se elabora questa **transazione, DDE \_ FBUSY** se è troppo occupato per elaborare la transazione o **DDE \_ FNOTPROCESSED** se rifiuta questa transazione.
 
 ## <a name="remarks"></a>Commenti
 
-Questa transazione viene filtrata se l'applicazione server specificata il flag **CBF \_ Fail \_ executes** nella funzione [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) .
+Questa transazione viene filtrata se l'applicazione server ha specificato il flag **CBF \_ FAIL \_ EXECUTES** nella [**funzione DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 
-Un'applicazione deve liberare l'handle di dati ottenuto durante la transazione. Un'applicazione, tuttavia, deve copiare la stringa di comando associata all'handle di dati se l'applicazione deve elaborare la stringa dopo che la funzione di callback restituisce. Un'applicazione può usare la funzione [**DdeGetData**](/windows/desktop/api/Ddeml/nf-ddeml-ddegetdata) per copiare i dati.
+Un'applicazione deve liberare l'handle di dati ottenuto durante questa transazione. Un'applicazione deve tuttavia copiare la stringa di comando associata all'handle di dati se l'applicazione deve elaborare la stringa dopo la fine della funzione di callback. Un'applicazione può usare [**la funzione DdeGetData**](/windows/desktop/api/Ddeml/nf-ddeml-ddegetdata) per copiare i dati.
 
-Poiché la maggior parte delle applicazioni client prevede che un'applicazione server esegua in modo sincrono un' **\_ esecuzione XTYP** , un server deve tentare di eseguire tutte le elaborazioni di **XTYP \_ Execute** Transaction dall'interno della funzione di callback DDE oppure restituendo il codice restituito del **\_ blocco CBR** . Se il parametro *hData* è un comando che indica al server di terminare, il server deve eseguire tale operazione dopo l'elaborazione di **XTYP \_ Execute** Transaction.
+Poiché la maggior parte delle applicazioni client prevede che un'applicazione server eserciti una transazione **\_ EXECUTE XTYP** in modo sincrono, un server deve tentare di eseguire tutte le elaborazioni della transazione **\_ EXECUTE XTYP** dall'interno della funzione di callback DDE o tramite la restituzione del codice **restituito CBR \_ BLOCK.** Se il *parametro hdata* è un comando che indica al server di terminare, il server deve eseguire questa operazione dopo l'elaborazione della **transazione \_ EXECUTE XTYP.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -113,7 +113,7 @@ Poiché la maggior parte delle applicazioni client prevede che un'applicazione s
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                             |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                   |
-| Intestazione<br/>                   | <dl> <dt>DDEML. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ddeml.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -124,7 +124,7 @@ Poiché la maggior parte delle applicazioni client prevede che un'applicazione s
 **Riferimento**
 </dt> <dt>
 
-[**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
+[**Ddeclienttransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
 </dt> <dt>
 
 [**DdeGetData**](/windows/desktop/api/Ddeml/nf-ddeml-ddegetdata)
@@ -136,7 +136,7 @@ Poiché la maggior parte delle applicazioni client prevede che un'applicazione s
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria di gestione Dynamic Data Exchange](dynamic-data-exchange-management-library.md)
+[Dynamic Data Exchange Management Library](dynamic-data-exchange-management-library.md)
 </dt> </dl>
 
  

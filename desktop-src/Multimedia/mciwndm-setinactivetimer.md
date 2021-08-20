@@ -1,9 +1,9 @@
 ---
-title: Messaggio di MCIWNDM_SETINACTIVETIMER (VFW. h)
-description: Il \_ messaggio MCIWNDM SETINACTIVETIMER imposta il periodo di aggiornamento usato da MCIWnd per aggiornare il controllo TrackBar nella finestra MCIWnd, aggiornare le informazioni sulla posizione visualizzate nella barra del titolo della finestra e inviare messaggi di notifica alla finestra padre quando la finestra MCIWnd è inattiva. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro MCIWndSetInactiveTimer.
+title: MCIWNDM_SETINACTIVETIMER messaggio (Vfw.h)
+description: Il messaggio MCIWNDM SETINACTIVETIMER imposta il periodo di aggiornamento usato da MCIWnd per aggiornare il trackbar nella finestra MCIWnd, aggiornare le informazioni sulla posizione visualizzate nella barra del titolo della finestra e inviare messaggi di notifica alla finestra padre quando la \_ finestra MCIWnd è inattiva. È possibile inviare questo messaggio in modo esplicito o tramite la macro MCIWndSetInactiveTimer.
 ms.assetid: 8900c372-0493-4a63-a027-ef6ecf8f8254
 keywords:
-- MCIWNDM_SETINACTIVETIMER messaggi multimediali di Windows
+- MCIWNDM_SETINACTIVETIMER messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba4504d84b254dfb67616568f5f97bba8e3bc2e3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0e4161d52335e050fb8e9bcb702986492b5cd230713fcd15810a71590a92b030
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137648"
 ---
-# <a name="mciwndm_setinactivetimer-message"></a>\_Messaggio MCIWNDM SETINACTIVETIMER
+# <a name="mciwndm_setinactivetimer-message"></a>Messaggio DI MCIWNDM \_ SETINACTIVETIMER
 
-Il messaggio **MCIWNDM \_ SETINACTIVETIMER** imposta il periodo di aggiornamento usato da MCIWnd per aggiornare il controllo TrackBar nella finestra MCIWnd, aggiornare le informazioni sulla posizione visualizzate nella barra del titolo della finestra e inviare messaggi di notifica alla finestra padre quando la finestra MCIWnd è inattiva. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**MCIWndSetInactiveTimer**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetinactivetimer) .
+Il messaggio **MCIWNDM \_ SETINACTIVETIMER** imposta il periodo di aggiornamento usato da MCIWnd per aggiornare il trackbar nella finestra MCIWnd, aggiornare le informazioni sulla posizione visualizzate nella barra del titolo della finestra e inviare messaggi di notifica alla finestra padre quando la finestra MCIWnd è inattiva. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**MCIWndSetInactiveTimer.**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetinactivetimer)
 
 
 ```C++
@@ -38,16 +38,16 @@ lParam = 0;
 
 <dl> <dt>
 
-<span id="inactive"></span><span id="INACTIVE"></span>*inattivo*
+<span id="inactive"></span><span id="INACTIVE"></span>*Inattivo*
 </dt> <dd>
 
-Periodo di aggiornamento, in millisecondi. Il valore predefinito è 2000 millisecondi.
+Periodo di aggiornamento, espresso in millisecondi. Il valore predefinito è 2000 millisecondi.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non restituisce un valore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,7 +57,7 @@ Questo messaggio non restituisce alcun valore.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

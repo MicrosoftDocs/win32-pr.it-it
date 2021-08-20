@@ -1,9 +1,9 @@
 ---
 title: Funzione di callback ReaderScroll
-description: Funzione di callback definita dall'applicazione utilizzata quando il puntatore del mouse viene spostato all'interno della parte della finestra della modalità Reader dichiarata come area di scorrimento attiva.
+description: Funzione di callback definita dall'applicazione utilizzata quando il puntatore del mouse viene spostato all'interno della parte della finestra in modalità lettore dichiarata come area di scorrimento attiva.
 ms.assetid: b1feb661-e3bc-4fcd-9acf-ac000c3066bd
 keywords:
-- Controlli Windows per la funzione di callback ReaderScroll
+- Funzione di callback ReaderScroll Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0db5a80b84a30362e3bdbce45fe7485ad0dd6884
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 554530e556161b4128199cda0a1a9d791f4f0ed75e8915c311d8945445486ac3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118169111"
 ---
 # <a name="readerscroll-callback-function"></a>Funzione di callback ReaderScroll
 
-\[*ReaderScroll* è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile.\]
+\[*ReaderScroll* è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile.\]
 
-Funzione di callback definita dall'applicazione utilizzata quando il puntatore del mouse viene spostato all'interno della parte della finestra della modalità Reader dichiarata come area di scorrimento attiva.
+Funzione di callback definita dall'applicazione utilizzata quando il puntatore del mouse viene spostato all'interno della parte della finestra in modalità lettore dichiarata come area di scorrimento attiva.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,12 +44,12 @@ BOOL CALLBACK ReaderScroll(
 
 <dl> <dt>
 
-*prmi* \[ in\]
+*prmi* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **PREADERMODEINFO**
 
-Puntatore alla struttura [**READERMODEINFO**](readermodeinfo.md) passata alla funzione [**DoReaderMode**](doreadermode.md) . Questa struttura definisce la finestra modalità lettore e l'area di scorrimento attiva.
+Puntatore alla [**struttura READERMODEINFO**](readermodeinfo.md) passata alla [**funzione DoReaderMode.**](doreadermode.md) Questa struttura definisce la finestra in modalità lettore e l'area di scorrimento attiva.
 
 </dd> <dt>
 
@@ -58,32 +58,32 @@ Puntatore alla struttura [**READERMODEINFO**](readermodeinfo.md) passata alla fu
 
 Tipo: **int**
 
-Distanza per scorrere orizzontalmente. Se il \_ flag RMF VERTICALONLY è impostato nella struttura [**READERMODEINFO**](readermodeinfo.md) , questo valore è sempre 0.
+Distanza di scorrimento orizzontale. Se il flag RMF \_ VERTICALONLY è impostato nella [**struttura READERMODEINFO,**](readermodeinfo.md) questo valore è sempre 0.
 
 </dd> <dt>
 
-*dy* \[ in\]
+*dy* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int**
 
-Distanza di scorrimento verticale. Se il \_ flag RMF HORIZONTALONLY è impostato nella struttura [**READERMODEINFO**](readermodeinfo.md) , questo valore è sempre 0.
+Distanza di scorrimento verticale. Se il flag RMF \_ HORIZONTALONLY è impostato nella [**struttura READERMODEINFO,**](readermodeinfo.md) questo valore è sempre 0.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **bool**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BOOL**](/windows/desktop/WinProg/windows-data-types)**
 
-Questa funzione deve sempre restituire **true**.
+Questa funzione deve sempre restituire **TRUE.**
 
 ## <a name="remarks"></a>Commenti
 
-Quando l'applicazione riceve la notifica da questa funzione, l'applicazione è responsabile dello scorrimento della finestra modalità lettore nella direzione specificata dai parametri *dx* e *dy* .
+Quando l'applicazione riceve una notifica da questa funzione, l'applicazione è responsabile dello scorrimento della finestra in modalità lettore nella direzione specificata dai *parametri dx* *e dy.*
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrata un'implementazione di questa funzione utilizzando una funzione personalizzata per eseguire lo scorrimento.
+L'esempio seguente illustra un'implementazione di questa funzione usando una funzione personalizzata per eseguire lo scorrimento.
 
 
 ```C++
@@ -108,8 +108,8 @@ ReaderScrollCallback(PREADERMODEINFO prmi, int dx, int dy)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista, \[ solo app desktop di Windows Vista\]<br/> |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>          |
+| Client minimo supportato<br/> | Windows Vista, Windows solo \[ app desktop Vista\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>          |
 
 
 

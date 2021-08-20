@@ -1,7 +1,7 @@
 ---
 description: La proprietà DisplayName dell'oggetto ConfigurableItem restituisce il valore della colonna DisplayName della tabella ModuleConfiguration.
 ms.assetid: f2025bab-73b0-46d2-a276-0ad17fdd9783
-title: Proprietà ConfigurableItem. DisplayName (Mergemod. h)
+title: Proprietà ConfigurableItem.DisplayName (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 079138c978ee670b681186c5ee265a8002881b79
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5a9dba853ad875e5167b8ff642c2cf106ba600dcb4c951def5c249e8230d0365
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118143977"
 ---
-# <a name="configurableitemdisplayname-property"></a>Proprietà ConfigurableItem. DisplayName
+# <a name="configurableitemdisplayname-property"></a>ConfigurableItem.DisplayName - proprietà
 
-La proprietà **DisplayName** dell'oggetto [**ConfigurableItem**](configurableitem-object.md) restituisce il valore della colonna DisplayName della [tabella ModuleConfiguration](moduleconfiguration-table.md).
+La **proprietà DisplayName** [**dell'oggetto ConfigurableItem**](configurableitem-object.md) restituisce il valore della colonna DisplayName della [tabella ModuleConfiguration](moduleconfiguration-table.md).
 
 Questa proprietà è di sola lettura.
 
@@ -40,7 +40,7 @@ propVal = ConfigurableItem.DisplayName
 
 ## <a name="c"></a>C++
 
-Vedere [**ottenere \_**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_displayname) la funzione DisplayName.
+Vedere [**la funzione get \_ DisplayName.**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_displayname)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,8 +48,8 @@ Vedere [**ottenere \_**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigura
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | Mergemod.dll 2,0 o versione successiva<br/>                                                    |
-| Intestazione<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versione<br/> | Mergemod.dll 2.0 o versione successiva<br/>                                                    |
+| Intestazione<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

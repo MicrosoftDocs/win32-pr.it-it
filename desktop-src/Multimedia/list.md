@@ -1,9 +1,9 @@
 ---
 title: comando list
-description: Il comando list determina il numero e i tipi di input video e audio. I dispositivi Digital-video e VCR riconoscono questo comando.
+description: Il comando list determina il numero e i tipi di input video e audio. I dispositivi video e videoregistratori digitali riconoscono questo comando.
 ms.assetid: b3fe3819-0b8a-4de5-9c79-03e1e089436f
 keywords:
-- elenco dei comandi multimediali di Windows
+- Comando list Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5d0a171c6768caf1b947a0d07cb46e5cccd28c6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b8881c85d146ce869e41d234a72190901135d233f8e45d580d5f568c4ccc48da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118139474"
 ---
 # <a name="list-command"></a>comando list
 
-Il comando list determina il numero e i tipi di input video e audio. I dispositivi Digital-video e VCR riconoscono questo comando.
+Il comando list determina il numero e i tipi di input video e audio. I dispositivi video e videoregistratori digitali riconoscono questo comando.
 
-Per inviare questo comando, chiamare la funzione [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con il set di parametri *lpszCommand* come indicato di seguito.
+Per inviare questo comando, chiamare la [**funzione mciSendString**](/previous-versions//dd757161(v=vs.85)) con il parametro *lpszCommand* impostato come indicato di seguito.
 
 ``` syntax
 _stprintf_s(
@@ -42,47 +42,47 @@ _stprintf_s(
 <span id="lpszDeviceID"></span><span id="lpszdeviceid"></span><span id="LPSZDEVICEID"></span>*lpszDeviceID*
 </dt> <dd>
 
-Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegnato quando il dispositivo viene aperto.
+Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegnato all'apertura del dispositivo.
 
 </dd> <dt>
 
 <span id="lpszList"></span><span id="lpszlist"></span><span id="LPSZLIST"></span>*lpszList*
 </dt> <dd>
 
-Flag che identifica il numero e i tipi di input audio e video. Nella tabella seguente sono elencati i tipi di dispositivo che riconoscono il comando **List** e i flag utilizzati da ogni tipo.
+Flag che identifica il numero e i tipi di input video e audio. Nella tabella seguente sono elencati i tipi di dispositivo che riconoscono il **comando list** e i flag usati da ogni tipo.
 
 
 
 | Valore        | Significato                                                                           | Significato                                                                                                                      |
 |--------------|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| digitalvideo | *Indice* streamcountnumber audio *algoritmo* algoritmo algorithmaudio di qualità audio | Still algorithmstill *Quality Algorithm Algorithm video algorithmvideo* Stream algorithm *algoritmo video SourceVideo* |
-| VCR          | *Indice* numero di origine countaudio origine audio                                     | *Indice* numero di origine countvideo origine video                                                                                |
+| digitalvideo | algoritmo audioaudio quality *algorithm* audio streamcountnumber *index* | still algorithmstill quality *algorithm* video algorithmvideo quality *algorithm* video sourcevideo algorithm video sourcevideo |
+| Vcr          | indice del numero di  origine audioaudio                                     | video source countvideo source number *index*                                                                                |
 
 
 
  
 
-Nella tabella seguente sono elencati i flag che è possibile specificare nel parametro **lpszList** e i relativi significati.
+Nella tabella seguente sono elencati i flag che è possibile specificare nel **parametro lpszList** e i relativi significati.
 
 
 
 | Valore                               | Significato                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | algoritmo audio                     | Specifica che il comando deve recuperare i nomi degli algoritmi audio.                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| *algoritmo* algoritmo di qualità audio | Specifica che il comando deve recuperare i livelli di qualità associati all' *algoritmo* specificato. Se *Algorithm* è "Current", viene restituito il livello di qualità dell'algoritmo corrente.                                                                                                                                                                                                                                                                                                   |
-| conteggio origine audio                  | Restituisce il numero totale di input audio.                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| *Indice* numero di origine audio         | Restituisce il tipo di input audio dell' *Indice* di origine.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| flusso audio                        | Specifica che il comando deve recuperare i nomi dei flussi audio associati all'area di lavoro. Queste stringhe (ad esempio "inglese" o "tedesco") sono incorporate nel file e identificano il flusso.                                                                                                                                                                                                                                                                                    |
+| Algoritmo di algoritmo di qualità *audio* | Specifica che il comando deve recuperare i livelli di qualità associati all'algoritmo *specificato.* Se *l'algoritmo* è "current", viene restituito il livello di qualità dell'algoritmo corrente.                                                                                                                                                                                                                                                                                                   |
+| conteggio delle origini audio                  | Restituisce il numero totale di input audio.                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Indice del numero di origine *audio*         | Restituisce il tipo di input audio dell'indice *di origine.*                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| flusso audio                        | Specifica che il comando deve recuperare i nomi dei flussi audio associati all'area di lavoro. Queste stringhe,ad esempio "English" o "German" vengono incorporate nel file e identificano il flusso.                                                                                                                                                                                                                                                                                    |
 | count                               | Restituisce il numero di opzioni del tipo specificato.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| *Indice* numero                      | Restituisce una stringa che descrive un'opzione specifica (identificata dall' *Indice*) del tipo di opzione specificato. *Index* deve essere un numero intero compreso tra 1 e il valore restituito da "count".                                                                                                                                                                                                                                                                                                         |
-| algoritmo still                     | Specifica che il comando deve recuperare i nomi degli algoritmi ancora.                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| *algoritmo* di algoritmo di qualità ancora | Specifica che il comando deve recuperare i livelli di qualità associati all' *algoritmo* ancora specificato. Se *Algorithm* è "Current", viene restituito il livello di qualità dell'algoritmo corrente.                                                                                                                                                                                                                                                                                             |
+| indice *dei numeri*                      | Restituisce una stringa che descrive un'opzione specifica (identificata *dall'indice*) del tipo di opzione specificato. *Index* deve essere un numero intero compreso tra 1 e il valore restituito da "count".                                                                                                                                                                                                                                                                                                         |
+| algoritmo still                     | Specifica che il comando deve recuperare i nomi degli algoritmi.                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Algoritmo di *algoritmo* still quality | Specifica che il comando deve recuperare i livelli di qualità associati all'algoritmo still *specificato.* Se *l'algoritmo* è "current", viene restituito il livello di qualità dell'algoritmo corrente.                                                                                                                                                                                                                                                                                             |
 | algoritmo video                     | Specifica che il comando deve recuperare i nomi degli algoritmi video.                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| *algoritmo* algoritmo di qualità video | Specifica che il comando deve recuperare i livelli di qualità associati all' *algoritmo* video specificato. Se *Algorithm* è "Current", viene restituito il livello di qualità dell'algoritmo corrente.                                                                                                                                                                                                                                                                                             |
-| origine video                        | Specifica che il comando deve restituire informazioni sulle origini video. Quando viene usato con il flag "count", restituisce il numero di origini video. Quando viene usato con il flag "Number", restituisce il tipo di un'origine video. MCI definisce le costanti seguenti per il tipo: "NTSC", "RGB", "PAL", "SECAM", "SVIDEO" e "generico". Potrebbe essere restituita più di un'origine di ogni tipo. Il tipo di origine "generico" viene usato quando è consentito più di un segnale per quel connettore. |
-| conteggio origine video                  | Restituisce il numero totale di input video.                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| *Indice* numero origine video         | Restituisce il tipo di input video dell' *Indice* di origine.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| flusso video                        | Specifica che il comando deve recuperare i nomi dei flussi video associati all'area di lavoro. Queste stringhe (ad esempio "fine divertente" o "fine triste") sono incorporate nel file e identificano il flusso.                                                                                                                                                                                                                                                                               |
+| Algoritmo di algoritmo di qualità *video* | Specifica che il comando deve recuperare i livelli di qualità associati all'algoritmo video *specificato.* Se *l'algoritmo* è "current", viene restituito il livello di qualità dell'algoritmo corrente.                                                                                                                                                                                                                                                                                             |
+| origine video                        | Specifica che il comando deve restituire informazioni sulle origini video. Se usato con il flag "count", restituisce il numero di origini video. Se usato con il flag "number", restituisce il tipo di un'origine video. MCI definisce le costanti seguenti per il tipo: "ntsc", "rgb", "pal", "secam", "svideo" e "generic". Potrebbe essere presente più di un'origine di ogni tipo restituito. Il tipo di origine "generico" viene usato quando per il connettore sono consentiti più segnali. |
+| conteggio delle origini video                  | Restituisce il numero totale di input video.                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Indice del numero di origine *video*         | Restituisce il tipo di input video dell'indice *di origine.*                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| flusso video                        | Specifica che il comando deve recuperare i nomi dei flussi video associati all'area di lavoro. Queste stringhe, ad esempio "terminazione divertente" o "fine tristi", vengono incorporate nel file e identificano il flusso.                                                                                                                                                                                                                                                                               |
 
 
 
@@ -93,17 +93,17 @@ Nella tabella seguente sono elencati i flag che è possibile specificare nel par
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Può essere "Wait", "notify" o "test". Per ulteriori informazioni su questi flag, vedere [i flag Wait, Notify e test](the-wait-notify-and-test-flags.md).
+Può essere "wait", "notify" o "test". Per altre informazioni su questi flag, vedere [Flag di attesa, notifica e test](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero in caso di esito positivo o un errore.
+Restituisce zero in caso di esito positivo o un errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Per i dispositivi VCR, è necessario specificare "origine video" o "origine audio" con i flag "conteggio" o "numero". Se si specifica "count", viene restituito il numero totale di input di video o audio. Se si specifica "Number", il driver restituisce un tipo corrispondente all'input. Il tipo può essere uno dei seguenti: "Tuner", "line", "SVIDEO", "aux" o "Generic". In genere, è necessario prima eseguire una query sul VCR per il "conteggio" e quindi usare il conteggio come intervallo per il flag "Number". I numeri "Source" iniziano da 1.
+Per i dispositivi VCR, è necessario specificare "origine video" o "origine audio" con i flag "count" o "number". Se si specifica "count", viene restituito il numero totale di input video o audio. Se viene specificato "number", il driver restituisce un tipo corrispondente all'input. Il tipo può essere uno dei seguenti: "tuner", "line", "svideo", "aux" o "generic". In genere, è necessario eseguire prima una query sul videoregistratore per il "conteggio" e quindi usare il conteggio come intervallo per il flag "number". I numeri di origine iniziano da 1.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -120,7 +120,7 @@ Per i dispositivi VCR, è necessario specificare "origine video" o "origine audi
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Stringhe di comando MCI](mci-command-strings.md)

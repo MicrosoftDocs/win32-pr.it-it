@@ -1,6 +1,6 @@
 ---
 title: Metodo IsSecureAccessAllowed della classe Win32_TSLicenseServer
-description: Recupera un valore che indica se Desktop remoto un server host sessione Desktop remoto è autorizzato a richiedere Servizi Desktop remoto licenze di accesso client (Servizi Desktop remoto \ 160; licenze CAL) dal server Desktop remoto licenze.
+description: Recupera un valore che indica se Desktop remoto un server Host sessione Desktop remoto è autorizzato a richiedere Servizi Desktop remoto licenze di accesso client (Servizi Desktop remoto \ 160; licenze CAL) dal server Desktop remoto licenze.
 ms.assetid: b9124808-79be-4b94-b12b-f093d5e8195a
 ms.tgt_platform: multiple
 keywords:
@@ -26,7 +26,7 @@ ms.locfileid: "118351363"
 ---
 # <a name="issecureaccessallowed-method-of-the-win32_tslicenseserver-class"></a>Metodo IsSecureAccessAllowed della classe \_ TSLicenseServer Win32
 
-Recupera Desktop remoto un valore che indica se a un server host sessione Desktop remoto è consentito richiedere Servizi Desktop remoto licenze CAL (Client Access License) dal server licenze Desktop remoto servizi Desktop remoto.
+Recupera un Desktop remoto valore che indica se a un server host sessione Desktop remoto è consentito richiedere Servizi Desktop remoto licenze CAL (Client Access License) Servizi Desktop remoto dal server licenze Desktop remoto servizi Desktop remoto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -66,9 +66,9 @@ Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo
 
 Per chiamare questo metodo, è necessario essere membri del gruppo Administrators.
 
-Il valore restituito si basa sull'impostazione dei criteri di gruppo "gruppo di sicurezza del server licenze" e sull'appartenenza al gruppo locale Computer Terminal Server Desktop remoto server licenze.
+Il valore restituito si basa sull'impostazione dei criteri di gruppo "gruppo di sicurezza del server licenze" e sull'appartenenza al gruppo locale Computer Terminal Server nel server licenze Desktop remoto licenze.
 
-Managed Object Format file MOF contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 

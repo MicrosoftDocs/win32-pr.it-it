@@ -4,22 +4,22 @@ ms.assetid: bde7cef8-f43e-4a11-8b77-fed5585d390a
 title: Implementazione di IMediaBuffer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3425b3f612667a0b6577de385d59362bd8dafd0
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 5033fcf18812f2a31e175c05b0d4d8eeee18484d0cc20e640ae30f9390a68f76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118154119"
 ---
 # <a name="implementing-imediabuffer"></a>Implementazione di IMediaBuffer
 
-Nel modello di flusso DMO predefinito i buffer vengono gestiti tramite l'interfaccia [**IMediaBuffer**](/previous-versions/windows/desktop/api/Mediaobj/nn-mediaobj-imediabuffer) . Il client di DMO è responsabile dell'implementazione di un oggetto che espone questa interfaccia. L'interfaccia **IMediaBuffer** prevede tre metodi:
+Nel modello di DMO di streaming predefinito, i buffer vengono gestiti tramite [**l'interfaccia IMediaBuffer.**](/previous-versions/windows/desktop/api/Mediaobj/nn-mediaobj-imediabuffer) Il client del DMO è responsabile dell'implementazione di un oggetto che espone questa interfaccia. **L'interfaccia IMediaBuffer** ha tre metodi:
 
--   **GetBufferAndLength** restituisce l'indirizzo del buffer (ovvero il blocco effettivo della memoria che include i dati) e le dimensioni dei dati validi nel buffer.
--   **GetMaxLength** restituisce la dimensione del buffer.
--   **Selength** specifica la lunghezza dei dati validi nel buffer.
+-   **GetBufferAndLength** restituisce l'indirizzo del buffer, ovvero il blocco di memoria effettivo che contiene i dati, e le dimensioni di tutti i dati validi nel buffer.
+-   **GetMaxLength** restituisce le dimensioni del buffer.
+-   **SetLength** specifica la lunghezza dei dati validi nel buffer.
 
-L'elaborazione sul posto non richiede l'interfaccia **IMediaBuffer** . Il codice seguente illustra un'implementazione minima di **IMediaBuffer**:
+L'elaborazione sul posto non richiede **l'interfaccia IMediaBuffer.** Il codice seguente illustra un'implementazione minima di **IMediaBuffer**:
 
 
 ```C++

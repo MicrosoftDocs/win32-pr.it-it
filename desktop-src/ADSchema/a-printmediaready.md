@@ -1,10 +1,10 @@
 ---
-title: Print-supporto-Ready-attributo
-description: Elenco di supporti disponibili per una stampante.
+title: Attributo Print-Media-Ready
+description: Elenco dei supporti disponibili per una stampante.
 ms.assetid: ae9f0b3d-fd35-4d17-81d0-f29f6aa8e8c0
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo Print-Ready
+- Schema AD dell'attributo Print-Media-Ready
 - Schema AD dell'attributo printMediaReady
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed1304d7a8ba902b95a997800e0bc6ee54ad341f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ad61f030fa7461f1f33e13e1f5533c55b1633fc064a333732ee8f35e4cd368f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118011797"
 ---
-# <a name="print-media-ready-attribute"></a>Print-supporto-Ready-attributo
+# <a name="print-media-ready-attribute"></a>Attributo Print-Media-Ready
 
-Elenco di supporti disponibili per una stampante.
+Elenco dei supporti disponibili per una stampante.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Stampa-pronto per supporti                           |
-| LDAP-Display-Name | printMediaReady                             |
+| CN                | Print-Media-Ready                           |
+| Ldap-Display-Name | printMediaReady                             |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.289                      |
-| System-ID-GUID    | 3bcbfcf5-4d3d-11d0-a1a6-00c04fd930c9        |
+| System-Id-Guid    | 3bcbfcf5-4d3d-11d0-a1a6-00c04fd930c9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Elenco di supporti disponibili per una stampante.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Falso                                          |
+| Is-Single-Valued       | Falso                                          |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Elenco di supporti disponibili per una stampante.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Falso                                          |
+| Is-Single-Valued       | Falso                                          |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Elenco di supporti disponibili per una stampante.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Falso                                          |
+| Is-Single-Valued       | Falso                                          |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Elenco di supporti disponibili per una stampante.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Falso                                          |
+| A valore singolo       | Falso                                          |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Elenco di supporti disponibili per una stampante.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Falso                                          |
+| A valore singolo       | Falso                                          |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Elenco di supporti disponibili per una stampante.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Falso                                          |
+| A valore singolo       | Falso                                          |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Attributo MSMQ-computer-Type
-description: Sostituito da MSMQ-computer-Type-es.
+title: Attributo MSMQ-Computer-Type
+description: Sostituito da MSMQ-Computer-Type-Ex.
 ms.assetid: 8d6db21b-3467-423b-9bab-f875701e1659
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo MSMQ-computer-Type
+- Schema AD dell'attributo MSMQ-Computer-Type
 - Schema AD dell'attributo mSMQComputerType
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 012c6216986e6041c5ae5756da3bcc94a9299366
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6d4e22a9837ee737133d94008921817e627adc3c220ae9909bc66fd5ea3f9e67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118014003"
 ---
-# <a name="msmq-computer-type-attribute"></a>Attributo MSMQ-computer-Type
+# <a name="msmq-computer-type-attribute"></a>Attributo MSMQ-Computer-Type
 
-Sostituito da MSMQ-computer-Type-es.
+Sostituito da MSMQ-Computer-Type-Ex.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MSMQ-computer-Type                          |
-| LDAP-Display-Name | mSMQComputerType                            |
+| CN                | Tipo di computer MSMQ                          |
+| Ldap-Display-Name | mSMQComputerType                            |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.933                      |
-| System-ID-GUID    | 9a0dc32e-c100-11d1-bbc5-0080c76670c0        |
+| System-Id-Guid    | 9a0dc32e-c100-11d1-nette5-0080c76670c0        |
 | Sintassi            | [**String(Teletex)**](s-string-teletex.md) |
 
 
@@ -58,15 +58,15 @@ Sostituito da MSMQ-computer-Type-es.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Sostituito da MSMQ-computer-Type-es.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Sostituito da MSMQ-computer-Type-es.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Sostituito da MSMQ-computer-Type-es.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| A valore singolo       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Sostituito da MSMQ-computer-Type-es.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| A valore singolo       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Sostituito da MSMQ-computer-Type-es.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| A valore singolo       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_SessionDirectoryCluster
-description: Fornisce le proprietà per la visualizzazione delle proprietà di una farm in Connessione Desktop remoto broker (gestore connessione Desktop remoto).
+title: Win32_SessionDirectoryCluster classe
+description: Fornisce le proprietà per la visualizzazione delle proprietà di una farm in Connessione Desktop remoto Broker (Gestore connessione Desktop remoto).
 ms.assetid: a4a924fd-88ea-46db-968e-378c3dc46cfc
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_SessionDirectoryCluster Servizi Desktop remoto
-- Classe Win32_SessionDirectoryCluster Servizi Desktop remoto, descritta
+- Win32_SessionDirectoryCluster classe Servizi Desktop remoto
+- Win32_SessionDirectoryCluster classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -19,19 +19,19 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3979dbe5403ca8f18e941b01e95774dabefe3211
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8f1dba262ddb332f03c7f398c4f205e73a9c9e94054d4164fb94c8c01dc8b505
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118127081"
 ---
-# <a name="win32_sessiondirectorycluster-class"></a>Win32 \_ SessionDirectoryCluster (classe)
+# <a name="win32_sessiondirectorycluster-class"></a>Classe \_ SessionDirectoryCluster Win32
 
-Fornisce le proprietà per la visualizzazione delle proprietà di una farm in Connessione Desktop remoto broker (gestore connessione Desktop remoto).
+Fornisce le proprietà per la visualizzazione delle proprietà di una farm in Connessione Desktop remoto Broker (Gestore connessione Desktop remoto).
 
 > [!Note]  
-> In Windows Server 2008 R2 il nome di gestore sessioni Servizi terminal è stato modificato in Gestore connessione Desktop remoto. Queste proprietà si applicano a tutti i sistemi operativi supportati se non diversamente specificato.
+> In Windows Server 2008 R2 il nome di Gestore sessione Servizi terminal è stato modificato in Gestore connessione Desktop remoto. Queste proprietà si applicano a tutti i sistemi operativi supportati, se non diversamente specificato.
 
  
 
@@ -49,26 +49,26 @@ class Win32_SessionDirectoryCluster
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ SessionDirectoryCluster** presenta questi tipi di membri:
+La **classe \_ Win32 SessionDirectoryCluster** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ SessionDirectoryCluster** dispone di queste proprietà.
+La **classe \_ Win32 SessionDirectoryCluster** ha queste proprietà.
 
 <dl> <dt>
 
 **ClusterName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Nome della farm in Gestore connessione Desktop remoto.
@@ -78,7 +78,7 @@ Nome della farm in Gestore connessione Desktop remoto.
 **NumberOfServers**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -91,13 +91,13 @@ Numero di server nella farm in Gestore connessione Desktop remoto.
 **SingleSessionMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Modalità a sessione singola della farm in Gestore connessione Desktop remoto.
+Modalità sessione singola della farm in Gestore connessione Desktop remoto.
 
 <dt>
 
@@ -119,7 +119,7 @@ La farm in Gestore connessione Desktop remoto è in modalità sessione singola.
 
 ## <a name="remarks"></a>Commenti
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -130,7 +130,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
 | Spazio dei nomi<br/>                | Root\\CIMv2<br/>                                                                 |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 
@@ -139,10 +139,10 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_SessionDirectoryServer Win32**](win32-sessiondirectoryserver.md)
+[**Win32 \_ SessionDirectoryServer**](win32-sessiondirectoryserver.md)
 </dt> <dt>
 
-[**\_SessionDirectorySession Win32**](win32-sessiondirectorysession.md)
+[**Win32 \_ SessionDirectorySession**](win32-sessiondirectorysession.md)
 </dt> </dl>
 
  

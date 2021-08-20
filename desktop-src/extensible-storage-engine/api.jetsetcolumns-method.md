@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetSetColumns'
-title: API. JetSetColumns, metodo
+description: Altre informazioni sul metodo Api.JetSetColumns
+title: Metodo Api.JetSetColumns
 TOCTitle: 'JetSetColumns method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetSetColumns(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_SETCOLUMN[],System.Int32)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetsetcolumns(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 59d1d16a21996937357d0358625772a4b6712019
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a0d84c982fe3a3e7834210741f5bd20cc52615197756653c743f5cd67d0b59dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103750754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118084930"
 ---
-# <a name="apijetsetcolumns-method"></a>API. JetSetColumns, metodo
+# <a name="apijetsetcolumns-method"></a>Metodo Api.JetSetColumns
 
-Consente a un'applicazione di impostare più valori di colonna in un'unica operazione. Una matrice di strutture di [JET_SETCOLUMN](./jet-setcolumn-class.md) viene utilizzata per descrivere il set di valori di colonna da impostare e per descrivere i buffer di input per ogni valore di colonna da impostare.
+Consente a un'applicazione di impostare più valori di colonna in una singola operazione. Una matrice di [JET_SETCOLUMN](./jet-setcolumn-class.md) per descrivere il set di valori di colonna da impostare e per descrivere i buffer di input per ogni valore di colonna da impostare.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -73,35 +73,35 @@ public static JET_wrn JetSetColumns(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     Sessione da utilizzare.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Cursore su cui impostare le colonne.
 
 <!-- end list -->
 
-  - SetColumns  
-    Tipo \[\]  
+  - setcolumns  
+    digitare: \[\]  
     
-    Matrice di [JET_SETCOLUMN](./jet-setcolumn-class.md) strutture che descrivono i dati da impostare.
+    Matrice di [JET_SETCOLUMN](./jet-setcolumn-class.md) che descrivono i dati da impostare.
 
 <!-- end list -->
 
-  - numColumns  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+  - Numcolumns  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Numero di voci nel parametro secolumns.
+    Numero di voci nel parametro setcolumns.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
-Avviso. Se l'ultimo set di colonne presenta un avviso, questo avviso verrà restituito da JetSetColumns stesso.  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
+Avviso. Se l'ultimo set di colonne contiene un avviso, questo avviso verrà restituito da JetSetColumns stesso.  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -109,6 +109,6 @@ Avviso. Se l'ultimo set di colonne presenta un avviso, questo avviso verrà rest
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

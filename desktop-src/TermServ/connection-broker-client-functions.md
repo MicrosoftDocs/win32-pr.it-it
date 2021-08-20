@@ -1,6 +1,6 @@
 ---
-title: funzioni client di Connessione Desktop remoto Broker
-description: L Connessione Desktop remoto API client di Service Broker definisce le funzioni seguenti.
+title: Connessione Desktop remoto funzioni client di Broker
+description: L Connessione Desktop remoto API client di Broker definisce le funzioni seguenti.
 ms.assetid: EE0E7CE4-8A92-44E1-94CF-9077E00E6578
 ms.tgt_platform: multiple
 ms.topic: reference
@@ -12,9 +12,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118131300"
 ---
-# <a name="remote-desktop-connection-broker-client-functions"></a>funzioni client di Connessione Desktop remoto Broker
+# <a name="remote-desktop-connection-broker-client-functions"></a>Connessione Desktop remoto funzioni client di Broker
 
-L Connessione Desktop remoto API client di Service Broker definisce le funzioni seguenti.
+L Connessione Desktop remoto API client di Broker definisce le funzioni seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

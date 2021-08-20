@@ -1,41 +1,41 @@
 ---
-title: Mapping di dispositivi Waveform-Audio
-description: Mapping di dispositivi Waveform-Audio
+title: Mapping Waveform-Audio dispositivi
+description: Mapping Waveform-Audio dispositivi
 ms.assetid: e23919c9-c5fa-4406-920c-1fdbeea4821d
 keywords:
-- audio multimediale, mapping della forma d'onda-dispositivi audio
-- audio, mapping della forma d'onda-dispositivi audio
-- Gestione compressione audio (ACM), mapping di forme d'onda-dispositivi audio
-- ACM (Gestione compressione audio), mapping di forme d'onda-dispositivi audio
-- mapping della forma d'onda-dispositivi audio
-- audio multimediale, Mapper
-- audio, Mapper
-- Gestione compressione audio (ACM), Mapper
-- ACM (Gestione compressione audio), Mapper
+- audio multimediale, mapping di dispositivi waveform-audio
+- audio, mapping di dispositivi waveform-audio
+- gestione compressione audio(ACM), mapping di dispositivi waveform-audio
+- ACM (gestione compressione audio), mapping di dispositivi waveform-audio
+- mapping di dispositivi waveform-audio
+- audio multimediale, mapper
+- audio, mapper
+- gestione compressione audio(ACM), mapper
+- ACM (gestione compressione audio), mapper
 - mapper
-- audio Waveform, mapping dei dispositivi
+- audio waveform, mapping dei dispositivi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9cdd269e21eb992244dd0e5979c7e0d193ba92b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7b4204a79eebd5fed3c8f96712aa3cd83c50056b1c194bafe2ce485a5b4b68f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138772"
 ---
-# <a name="mapping-waveform-audio-devices"></a>Mapping di dispositivi Waveform-Audio
+# <a name="mapping-waveform-audio-devices"></a>Mapping Waveform-Audio dispositivi
 
-Windows fornisce un set di funzioni standard per i dispositivi audio. Queste funzioni rilasciano chiamate ai driver di dispositivo che gestiscono i dispositivi hardware. Il sistema usa un modulo denominato "Mapper" per gestire i dispositivi installati. Il Mapper utilizza hook speciali nell'interfaccia del driver per intercettare le chiamate e fungere da intermediario tra il sistema e i driver installati nel sistema. Il Mapper è responsabile della corrispondenza delle richieste di un'applicazione per l'accesso a un dispositivo con i dispositivi disponibili e per la ricerca di un dispositivo che soddisfi i requisiti audio dell'applicazione corrente. Il sistema fornisce Mapper per i tipi di driver standard: Waveform-Audio, MIDI (Musical Instrument Digital Interface) e dispositivi ausiliari.
+Windows fornisce un set di funzioni standard per i dispositivi audio. Queste funzioni emettere chiamate ai driver di dispositivo che gestiscono i dispositivi hardware. Il sistema usa un modulo denominato "mapper" per gestire i dispositivi installati. Il mapper usa hook speciali nell'interfaccia del driver per intercettare le chiamate e fungere da intermediario tra il sistema e i driver installati nel sistema. Il mapper è responsabile della corrispondenza delle richieste di accesso di un'applicazione a un dispositivo con i dispositivi disponibili e della ricerca di un dispositivo che soddisfi i requisiti audio dell'applicazione corrente. Il sistema fornisce mapper per i tipi di driver standard: waveform-audio, MIDI (Musical Instrument Digital Interface) e dispositivi ausiliari.
 
-ACM è un'estensione del sistema multimediale di base e viene installato come Mapper. Questo significa che ACM usa i hook del mapper dell'interfaccia del driver per i dispositivi audio e della forma d'onda. L'uso di questi hook consente all'ACM di decodificare o codificare i dati dell'audio della forma d'onda prima di passarli a o da un driver di dispositivo Waveform-Audio. La differenza tra l'ACM e il mapper di sistema standard consiste nel fatto che l'ACM può cercare un dispositivo audio Waveform che supporta un formato specificato o trovare una combinazione di un dispositivo audio e di una forma d'onda, un compressore o un decompressore ACM che supporti un formato specificato.
+ACM è un'estensione del sistema multimediale di base e viene installato come mapper. Ciò significa che ACM usa gli hook del mapper dell'interfaccia driver per i dispositivi waveform-audio. L'uso di questi hook consente a ACM di decodificare o codificare i dati audio della forma d'onda prima di passarlo a o da un driver di dispositivo waveform-audio. La differenza tra ACM e il mapper di sistema standard è che ACM può cercare un dispositivo audio-forma d'onda che supporti un formato specificato o trovare una combinazione di un dispositivo waveform-audio e un dispositivo di compressione o decompressore ACM che supporta un formato specificato.
 
-Quando un'applicazione richiede che il sistema apra un dispositivo audio waveform per l'input o l'output, la richiesta specifica il formato e il dispositivo. Quando il dispositivo specificato è il Mapper, è necessario che il mapper trovi un dispositivo che supporta il formato specificato. Il mapper implementato in ACM Cerca un dispositivo audio Waveform installato che supporta il formato specificato. Se l'ACM non riesce a trovare un dispositivo di questo tipo, Cerca un dispositivo audio e una forma d'onda, un compressore o un decompressore che insieme supporti il formato. In particolare, l'ACM Cerca un compressore o un decompressore che converte il formato specificato in un formato supportato da un dispositivo audio e una forma d'onda installata. Dopo che l'ACM ha individuato un dispositivo che supporta il formato convertito, può rispettare le richieste di riproduzione o registrazione del formato originariamente richiesto, anche se non è supportato direttamente da un dispositivo wave-audio installato.
+Quando un'applicazione richiede al sistema di aprire un dispositivo waveform-audio per l'input o l'output, la richiesta specifica il formato e il dispositivo. Quando il dispositivo specificato è il mapper, il mapper deve trovare un dispositivo che supporta il formato specificato. Il mapper implementato in ACM cerca un dispositivo waveform-audio installato che supporta il formato specificato. Se ACM non riesce a trovare un dispositivo di questo tipo, cerca un dispositivo waveform-audio e un dispositivo di compressione o decompressore che insieme supportano il formato. In particolare, ACM cerca un compressore o un decompressore che converte il formato specificato in un formato supportato da un dispositivo waveform-audio installato. Dopo aver individuato un dispositivo che supporta il formato convertito, ACM può rispettare le richieste di riproduzione o registrazione del formato originariamente richiesto, anche se nessun dispositivo waveform-audio installato supporta direttamente tale formato.
 
-Oltre alla conversione del formato, ACM offre anche servizi per supportare la compressione, la decompressione, il filtraggio, la selezione del formato e la selezione dei filtri. Fornisce un'API standard che supporta chiamando i relativi driver.
+Oltre alla conversione del formato, ACM offre anche servizi per supportare la compressione, la decompressione, il filtro, la selezione del formato e la selezione dei filtri. Fornisce un'API standard che supporta chiamando i propri driver.
 
- 
+ 
 
- 
+ 
 
 
 

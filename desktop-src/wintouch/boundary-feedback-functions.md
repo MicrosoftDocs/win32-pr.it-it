@@ -1,30 +1,30 @@
 ---
-title: Funzioni (Commenti dei limiti)
-description: In questa sezione vengono descritte le funzioni di feedback dei limiti.
+title: Funzioni (feedback sui limiti)
+description: Questa sezione descrive le funzioni di feedback sui limiti.
 ms.assetid: 7872a4cb-6ae0-449a-866a-58f909b6ef9f
 keywords:
-- Windows Touch, commenti sui limiti
-- Windows Touch, funzioni
-- Commenti sui limiti, funzioni
+- Windows Tocco, feedback sui limiti
+- Windows Tocco, funzioni
+- feedback sui limiti, funzioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d458815e6c2270a3fec727f74452e3c5451a9228
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: f738b9c6d71e649dcddb7605e92cae363d008eb35159feab566eab9fc9d7f869
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104047693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118030395"
 ---
-# <a name="functions-boundary-feedback"></a>Funzioni (Commenti dei limiti)
+# <a name="functions-boundary-feedback"></a>Funzioni (feedback sui limiti)
 
-In questa sezione vengono descritte le funzioni di feedback dei limiti.
+Questa sezione descrive le funzioni di feedback sui limiti.
 
 
 
 | Funzione                                               | Descrizione                                                                                        |
 |--------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| [**BeginPanningFeedback**](/windows/win32/api/uxtheme/nf-uxtheme-beginpanningfeedback)     | Questa funzione viene richiamata dall'utente prima di usare il feedback del limite.                               |
-| [**EndPanningFeedback**](/windows/win32/api/uxtheme/nf-uxtheme-endpanningfeedback)     | Questa funzione viene chiamata al completamento del feedback dei limiti e, facoltativamente, attiva un'animazione. |
+| [**BeginPanningFeedback**](/windows/win32/api/uxtheme/nf-uxtheme-beginpanningfeedback)     | Questa funzione viene richiamata dall'utente prima di usare il feedback sui limiti.                               |
+| [**EndPanningFeedback**](/windows/win32/api/uxtheme/nf-uxtheme-endpanningfeedback)     | Questa funzione viene chiamata al completamento del feedback sui limiti e, facoltativamente, attiva un'animazione. |
 | [**UpdatePanningFeedback**](/windows/win32/api/uxtheme/nf-uxtheme-updatepanningfeedback) | Questa funzione viene chiamata durante il feedback dei limiti e, facoltativamente, attiva un'animazione.             |
 
 
@@ -35,7 +35,7 @@ In questa sezione vengono descritte le funzioni di feedback dei limiti.
 
 <dl> <dt>
 
-[Commenti sui limiti](boundary-feedback.md)
+[Feedback sui limiti](boundary-feedback.md)
 </dt> </dl>
 
  

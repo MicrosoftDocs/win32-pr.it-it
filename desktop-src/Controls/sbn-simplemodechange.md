@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica SBN_SIMPLEMODECHANGE (COMmctrl. h)
-description: Inviato da un controllo barra di stato quando la modalità semplice cambia a causa di un \_ messaggio semplice SB. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: SBN_SIMPLEMODECHANGE codice di notifica (Commctrl.h)
+description: Inviato da un controllo barra di stato quando la modalità semplice cambia a causa di un messaggio SB \_ SIMPLE. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: b2df8feb-5028-4488-a99b-4ceff5b48a92
 keywords:
-- Controlli di Windows per il codice di notifica SBN_SIMPLEMODECHANGE
+- SBN_SIMPLEMODECHANGE codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b998f0c39ecb00322bf5a423f99b3231338283f4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 813158c851e628a60a081a4a3eef90abb2eceac1a64fd81c33a75375229681da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118408857"
 ---
-# <a name="sbn_simplemodechange-notification-code"></a>\_Codice di notifica SIMPLEMODECHANGE di SBN
+# <a name="sbn_simplemodechange-notification-code"></a>Codice di notifica SBN \_ SIMPLEMODECHANGE
 
-Inviato da un controllo barra di stato quando la modalità semplice cambia a causa di un messaggio [**\_ semplice SB**](sb-simple.md) . Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Inviato da un controllo barra di stato quando la modalità semplice cambia a causa di un [**messaggio SB \_**](sb-simple.md) SIMPLE. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ SBN_SIMPLEMODECHANGE
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) contenente informazioni sul codice di notifica.
+Puntatore a [**una struttura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni sul codice di notifica.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Il valore restituito viene ignorato dalla barra di stato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

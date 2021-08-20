@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: funzione EtwEventWrite'
+description: Altre informazioni sulla funzione EtwEventWrite
 title: EtwEventWrite
 ms.topic: reference
 ms.date: 05/31/2018
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 api_location:
 - ntetw.h
-ms.openlocfilehash: 149f611dfb298749befca805509e05fa2dec497a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b8e06c2a0922038e37766f44c0b9fcd7c85bbb7fd4fa4bd0841192be9e4e9087
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162102"
 ---
-# <a name="etweventwrite-function"></a>EtwEventWrite (funzione)
+# <a name="etweventwrite-function"></a>Funzione EtwEventWrite
 
 [La funzione EtwEventWrite e le strutture restituite sono interne al sistema operativo e soggette a modifiche da una versione di Windows a un'altra.]
 
@@ -49,7 +49,7 @@ RegHandle per il provider.
 
 </dd> <dt>
 
-*EventDescriptor*
+*Eventdescriptor*
 </dt> <dd>
 
 Descrittore dell'evento da registrare.
@@ -77,13 +77,13 @@ Codice di errore Win32.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione EtwEventWrite e le strutture restituite sono interne al sistema operativo e sono soggette a modifiche da una versione di Windows a un'altra. Per mantenere la compatibilità dell'applicazione, è preferibile usare invece le funzioni pubbliche.
+La funzione EtwEventWrite e le strutture restituite sono interne al sistema operativo e soggette a modifiche da una versione di Windows a un'altra. Per mantenere la compatibilità dell'applicazione, è invece meglio usare le funzioni pubbliche.
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Piattaforma di destinazione** | Windows |
-| **Intestazione** | ntetw. h |
+| **Intestazione** | ntetw.h |
 
 ## <a name="see-also"></a>Vedi anche
 

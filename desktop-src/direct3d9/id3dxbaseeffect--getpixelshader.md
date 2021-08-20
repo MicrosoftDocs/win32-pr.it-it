@@ -1,7 +1,7 @@
 ---
 description: Ottiene un pixel shader.
 ms.assetid: 173a20a5-dda0-493f-a161-2dc2881e71f2
-title: 'Metodo ID3DXBaseEffect:: GetPixelShader (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::GetPixelShader (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: e555bac2e20ebab1cb0aec3d313cab8ad05e833e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bb948510e2b54582169db5cfdfe4e4f43bf2d931de895cbb06f7f3f3cd1cafce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118094115"
 ---
-# <a name="id3dxbaseeffectgetpixelshader-method"></a>Metodo ID3DXBaseEffect:: GetPixelShader
+# <a name="id3dxbaseeffectgetpixelshader-method"></a>Metodo ID3DXBaseEffect::GetPixelShader
 
 Ottiene un pixel shader.
 
@@ -41,21 +41,21 @@ HRESULT GetPixelShader(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9)](handles.md).
 
 </dd> <dt>
 
-*ppPShader* \[ out\]
+*ppPShader* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DPIXELSHADER9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dpixelshader9)\***
 
-Restituisce un oggetto pixel shader. Vedere l'oggetto [**IDirect3DPixelShader9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dpixelshader9) .
+Restituisce un pixel shader oggetto . Vedere [**Oggetto IDirect3DPixelShader9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dpixelshader9)
 
 </dd> </dl>
 
@@ -71,8 +71,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

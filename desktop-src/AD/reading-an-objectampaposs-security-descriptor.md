@@ -1,27 +1,27 @@
 ---
 title: Lettura del descrittore di sicurezza di un oggetto
-description: Nell'esempio di codice seguente vengono usate le interfacce IADs per enumerare le proprietà del descrittore di sicurezza di un oggetto directory, DACL e le voci ACE dell'elenco DACL.
+description: Nell'esempio di codice seguente vengono utilizzate le interfacce IADs per enumerare le proprietà del descrittore di sicurezza di un oggetto directory, dell'elenco DACL e delle voci ACE dell'elenco DACL.
 ms.assetid: a8d0a6aa-9fbd-4392-b28b-f2eadef3935c
 ms.tgt_platform: multiple
 keywords:
-- Lettura di un descrittore di sicurezza di un oggetto
-- Active Directory, esempio di codice Visual Basic, lettura del descrittore di sicurezza di un oggetto
+- Lettura del descrittore di sicurezza di un oggetto AD
+- Active Directory, codice di esempio Visual Basic , lettura del descrittore di sicurezza di un oggetto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68a232b559109ed45fad8060882768968156e4a7
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 9288f7e3bed71dc5bbeefdd3cf1a48cebd86efd293b74b46dbaf7a44e7389f6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103872261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118184824"
 ---
 # <a name="reading-an-objects-security-descriptor"></a>Lettura del descrittore di sicurezza di un oggetto
 
-Nell'esempio di codice seguente vengono usate le interfacce [**IADs**](/windows/desktop/api/iads/nn-iads-iads) per enumerare le proprietà del descrittore di sicurezza di un oggetto directory, DACL e le voci ACE dell'elenco DACL.
+Nell'esempio di codice seguente vengono utilizzate le interfacce [**IADs**](/windows/desktop/api/iads/nn-iads-iads) per enumerare le proprietà del descrittore di sicurezza di un oggetto directory, dell'elenco DACL e delle voci ACE dell'elenco DACL.
 
-Nell'esempio di codice seguente viene usato il metodo [**IADs. Get**](/windows/desktop/api/iads/nf-iads-iads-get) per recuperare la proprietà **ntSecurityDescriptor** dell'oggetto directory. La versione C++ di questo metodo restituisce una **variante** che contiene un puntatore [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) . Nell'esempio di codice viene quindi chiamato **QueryInterface** su tale puntatore **IDispatch** per ottenere un'interfaccia [**IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor) per il descrittore di sicurezza dell'oggetto.
+Nell'esempio di codice seguente viene utilizzato il [**metodo IADs.Get**](/windows/desktop/api/iads/nf-iads-iads-get) per recuperare la **proprietà nTSecurityDescriptor** dell'oggetto directory. La versione C++ di questo metodo restituisce **un elemento VARIANT** che contiene un [**puntatore IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) L'esempio di codice chiama quindi **QueryInterface** sul puntatore **IDispatch** per ottenere un'interfaccia [**IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor) al descrittore di sicurezza dell'oggetto.
 
-Nell'esempio di codice vengono quindi utilizzati i metodi [**IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor) per recuperare dati dal descrittore di sicurezza. Tenere presente che i dati, disponibili tramite **IADsSecurityDescriptor**, dipendono dai diritti di accesso del chiamante. Le proprietà [**IADsSecurityDescriptor. DiscretionaryAcl**](/windows/desktop/ADSI/iadssecuritydescriptor-property-methods) e **IADsSecurityDescriptor. Owner** avranno esito negativo se il chiamante non dispone dell'accesso in **lettura al \_ controllo** per l'oggetto. Analogamente, una chiamata al metodo **get \_ SystemAcl** ha esito negativo se il chiamante non dispone del privilegio **se il \_ \_ nome di sicurezza** è abilitato.
+Nell'esempio di codice vengono quindi [**utilizzati i metodi IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor) per recuperare i dati dal descrittore di sicurezza. Tenere presente che i dati, disponibili tramite **IADsSecurityDescriptor,** dipendono dai diritti di accesso del chiamante. Le [**proprietà IADsSecurityDescriptor.DiscretionaryAcl**](/windows/desktop/ADSI/iadssecuritydescriptor-property-methods) e **IADsSecurityDescriptor.Owner** avranno esito negativo se il chiamante non dispone dell'accesso **READ \_ CONTROL** all'oggetto. Analogamente, una chiamata al metodo **get \_ SystemAcl** avrà esito negativo se il chiamante non dispone del privilegio SECURITY NAME edizione Standard **security \_ \_ name** abilitato.
 
 
 ```VB
@@ -454,6 +454,6 @@ return iReturn;
 
 
 
- 
+ 
 
- 
+ 

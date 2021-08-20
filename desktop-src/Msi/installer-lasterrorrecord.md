@@ -1,7 +1,7 @@
 ---
-description: Il metodo LastErrorRecord dell'oggetto Installer restituisce un oggetto record che contiene i parametri di errore per l'errore più recente della funzione che ha prodotto il record di errore.
+description: Il metodo LastErrorRecord dell'oggetto Installer restituisce un oggetto Record che contiene i parametri di errore per l'errore più recente dalla funzione che ha generato il record di errore.
 ms.assetid: 48fe46bc-6c10-4bd5-89bc-013e650a44e6
-title: Installer. LastErrorRecord, metodo
+title: Metodo Installer.LastErrorRecord
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: b368f30b04734b2d253a7d5f2aa64f0d61c930e0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb9dad1962cace623a4a52991d3650451a0a6d5f660aad88e46c4fe393ce4e4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118142110"
 ---
-# <a name="installerlasterrorrecord-method"></a>Installer. LastErrorRecord, metodo
+# <a name="installerlasterrorrecord-method"></a>Metodo Installer.LastErrorRecord
 
-Il metodo **LastErrorRecord** dell'oggetto [**Installer**](installer-object.md) restituisce un oggetto [**record**](record-object.md) che contiene i parametri di errore per l'errore più recente della funzione che ha prodotto il record di errore.
+Il **metodo LastErrorRecord** dell'oggetto [**Installer**](installer-object.md) restituisce un [**oggetto Record**](record-object.md) che contiene i parametri di errore per l'errore più recente dalla funzione che ha generato il record di errore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,24 +43,24 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-L'oggetto [**record**](record-object.md) viene reimpostato dopo l'esecuzione di questa funzione di qualsiasi funzione che genera un record di errore.
+[**L'oggetto Record**](record-object.md) viene reimpostato dopo l'esecuzione di questa funzione di qualsiasi funzione che genera un record di errore.
 
-Solo le seguenti funzioni designate generano un record di errore:
+Solo le funzioni designate seguenti generano un record di errore:
 
 -   [**Metodo OpenDatabase (oggetto Installer)**](installer-opendatabase.md)
--   [**Commit**](database-commit.md)
--   [**OpenView**](database-openview.md)
+-   [**Eseguire il commit**](database-commit.md)
+-   [**Openview**](database-openview.md)
 -   [**Importa**](database-import.md)
 -   [**Esportazione**](database-export.md)
 -   [**Unione**](database-merge.md)
 -   [**GenerateTransform**](database-generatetransform.md)
 -   [**ApplyTransform**](database-applytransform.md)
--   [**Execute**](view-execute.md)
--   [**Modificare**](view-modify.md)
--   [**Sestream**](record-setstream.md)
+-   [**Eseguire**](view-execute.md)
+-   [**Modifica**](view-modify.md)
+-   [**SetStream**](record-setstream.md)
 -   [**SummaryInformation**](database-summaryinformation.md)
 -   [**SourcePath**](session-sourcepath.md)
--   [**TargetPath**](session-targetpath.md)
+-   [**Targetpath**](session-targetpath.md)
 -   [**ComponentCurrentState**](session-componentcurrentstate.md)
 -   [**ComponentRequestState**](session-componentrequeststate.md)
 -   [**FeatureCurrentState**](session-featurecurrentstate.md)
@@ -69,7 +69,7 @@ Solo le seguenti funzioni designate generano un record di errore:
 -   [**FeatureValidStates**](session-featurevalidstates.md)
 -   [**SetInstallLevel**](session-setinstalllevel.md)
 
-Nell'esempio seguente in VBScript viene utilizzata una chiamata a [**OpenDatabase**](installer-opendatabase.md) per illustrare come ottenere informazioni estese sugli errori da uno dei metodi o delle proprietà che supportano il metodo **LastErrorRecord** . L'esempio crea un messaggio di errore quando il metodo **OpenDatabase** ha esito negativo. L'oggetto **Err** viene utilizzato per determinare se si è verificato un errore.
+L'esempio seguente in VBScript usa una chiamata a [**OpenDatabase**](installer-opendatabase.md) per illustrare come ottenere informazioni estese sugli errori da uno dei metodi o delle proprietà che supportano il **metodo LastErrorRecord.** L'esempio crea un messaggio di errore quando il **metodo OpenDatabase ha** esito negativo. **L'oggetto Err** viene usato per determinare se è stato rilevato un errore.
 
 
 ```VB
@@ -109,9 +109,9 @@ End If
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller è definito come \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

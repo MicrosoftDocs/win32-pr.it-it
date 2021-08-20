@@ -1,9 +1,9 @@
 ---
-title: Factory non corretta D1108
+title: D1108 Factory errata
 ms.assetid: eb851118-0541-4c9a-a22d-b98f041852bb
-description: La risorsa è stata allocata dalla Factory 1 e usata con la Factory 2.
+description: La risorsa è stata allocata dalla factory 1 e usata con la factory 2.
 keywords:
-- Direct2D Factory D1108 errato
+- D1108 Factory errato Direct2D
 topic_type:
 - apiref
 api_name:
@@ -13,39 +13,39 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 17c58c72a56af8c480a176259d9fbcb9df586942
-ms.sourcegitcommit: 80ee822f6ebcbcc8f60042e0d14a39ef6989c731
+ms.openlocfilehash: c9eeadfb38acd39e5861c5661e2f4117ef2a8ce415e3e21374f197763d4b315e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "106334161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118160992"
 ---
-# <a name="d1108-wrong-factory"></a>D1108: Factory non corretta
+# <a name="d1108-wrong-factory"></a>D1108: Factory errata
 
-La \[ *risorsa* risorsa \] è stata allocata dalla factory factory \[ *1* \] e usata con Factory factory \[ *2* \] .
+La risorsa \[ *di risorsa* \] è stata allocata dalla factory \[ *1* \] e usata con factory factory \[ *2.* \]
 
 ## <a name="placeholders"></a>Segnaposto
 
 <dl> <dt>
 
-<span id="resource"></span><span id="RESOURCE"></span>*risorse*
+<span id="resource"></span><span id="RESOURCE"></span>*Risorsa*
 </dt> <dd>
 
 Indirizzo dell'interfaccia.
 
 </dd> <dt>
 
-<span id="factory_1"></span><span id="FACTORY_1"></span>*Factory 1*
+<span id="factory_1"></span><span id="FACTORY_1"></span>*factory 1*
 </dt> <dd>
 
-Indirizzo della Factory a cui è stata allocata la *risorsa*.
+Indirizzo della factory che ha allocato *la risorsa*.
 
 </dd> <dt>
 
-<span id="factory_2"></span><span id="FACTORY_2"></span>*Factory 2*
+<span id="factory_2"></span><span id="FACTORY_2"></span>*factory 2*
 </dt> <dd>
 
-Indirizzo della factory in cui è stata usata la *risorsa* .
+Indirizzo della factory con cui è *stata usata* la risorsa.
 
 </dd> </dl> 
 
@@ -56,7 +56,7 @@ Indirizzo della factory in cui è stata usata la *risorsa* .
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente vengono prima creati due oggetti [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) abilitati per il debug; viene quindi creata una geometria dalla prima Factory e un pennello dalla seconda Factory. Infine, chiama [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry), passando la geometria e il pennello.
+Nell'esempio seguente vengono innanzitutto creati due oggetti [**ID2D1Factory abilitati**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) per il debug. crea quindi una geometria dalla prima factory e un pennello dalla seconda factory. Infine, chiama [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry), passando la geometria e il pennello.
 
 
 ```C++
@@ -166,7 +166,7 @@ Nell'esempio seguente vengono prima creati due oggetti [**ID2D1Factory**](/windo
 
 
 
-Questo esempio produce il seguente messaggio di debug:
+In questo esempio viene generato il messaggio di debug seguente:
 
 
 ```
@@ -178,7 +178,7 @@ by factory [002ED698] and used with factory [002ED470].
 
 ## <a name="possible-causes"></a>Possibili cause
 
-Utilizzo di risorse non valido. Una risorsa allocata da una factory è stata usata con un'altra Factory.
+Utilizzo delle risorse non valido. Una risorsa allocata da una factory è stata usata con un'altra factory.
 
  
 

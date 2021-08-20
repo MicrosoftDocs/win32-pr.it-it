@@ -4,9 +4,9 @@ description: Chiamato quando l'agente attività viene arrestato.
 ms.assetid: b693a318-1da7-4207-8046-a62b7ccca471
 ms.tgt_platform: multiple
 keywords:
-- Termina il metodo Servizi Desktop remoto
+- Termina metodo Servizi Desktop remoto
 - Metodo Terminate Servizi Desktop remoto, interfaccia IRDVTaskPlugin
-- Interfaccia IRDVTaskPlugin Servizi Desktop remoto, metodo Terminate
+- Metodo Terminate dell'interfaccia IRDVTaskPlugin Servizi Desktop remoto ,
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 178f0a7c054169d972acb6b60a9cc80578fd13e9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0ccfcb1a59f0db6d29881d139d16bd08308a40df2c1233beab66b0b4814caa84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118129268"
 ---
-# <a name="irdvtaskpluginterminate-method"></a>Metodo IRDVTaskPlugin:: terminate
+# <a name="irdvtaskpluginterminate-method"></a>Metodo IRDVTaskPlugin::Terminate
 
 Chiamato quando l'agente attività viene arrestato.
 
@@ -42,16 +42,16 @@ HRESULT Terminate(
 
 <dl> <dt>
 
-*risorse umane* \[ in\]
+*hr* \[ Pollici\]
 </dt> <dd>
 
-Indica se l'arresto è dovuto a un arresto normale o a un errore. Se l'arresto è normale, questo contiene **S \_ OK**. In caso contrario, contiene un codice di errore **HRESULT** .
+Indica se l'arresto è dovuto a un arresto normale o a un errore. Se l'arresto è normale, contiene **S \_ OK**. In caso contrario, contiene un **codice di errore HRESULT.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 

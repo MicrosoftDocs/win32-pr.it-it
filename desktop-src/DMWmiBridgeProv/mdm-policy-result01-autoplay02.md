@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Result01_Autoplay02
-description: La \_ classe Autoplay02 dei criteri MDM \_ Result01 \_ rappresenta i criteri AutoPlay disponibili.
+title: MDM_Policy_Result01_Autoplay02 classe
+description: La classe MDM \_ \_ Policy Result01 \_ Autoplay02 rappresenta i criteri di riproduzione automatica disponibili.
 ms.assetid: f116015d-f10e-4d17-9c0b-7253894e6c0f
 keywords:
-- Classe MDM_Policy_Result01_Autoplay02
-- Classe MDM_Policy_Result01_Autoplay02, descritta
+- MDM_Policy_Result01_Autoplay02 classe
+- MDM_Policy_Result01_Autoplay02 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9abf48754cff1513d6d373c9addb34b8ec9acc26
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 543b842faacdca68af17e8e96199797abfb3e2980145d2bf0272c0583e63e2c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118164591"
 ---
-# <a name="mdm_policy_result01_autoplay02-class"></a>\_ \_ Classe Result01 Autoplay02 di criteri \_ MDM
+# <a name="mdm_policy_result01_autoplay02-class"></a>Classe \_ Mdm Policy \_ Result01 \_ Autoplay02
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La \_ classe Autoplay02 dei criteri MDM \_ Result01 \_ rappresenta i criteri AutoPlay disponibili.
+La classe MDM \_ \_ Policy Result01 \_ Autoplay02 rappresenta i criteri di riproduzione automatica disponibili.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -48,23 +48,23 @@ class MDM_Policy_Result01_Autoplay02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ Result01 \_ Autoplay02 dei criteri MDM** ha questi tipi di membri:
+La **classe MDM Policy \_ \_ Result01 \_ Autoplay02** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ Autoplay02 dei criteri MDM Result01** ha queste proprietà.
+La **classe MDM Policy \_ \_ Result01 \_ Autoplay02** ha queste proprietà.
 
 <dl> <dt>
 
 [DisallowAutoplayForNonVolumeDevices](/windows/client-management/mdm/policy-csp-autoplay#autoplay-disallowautoplayfornonvolumedevices)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -72,27 +72,27 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -100,10 +100,10 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 [SetDefaultAutoRunBehavior](/windows/client-management/mdm/policy-csp-autoplay#autoplay-setdefaultautorunbehavior)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -111,10 +111,10 @@ Tipo di accesso: lettura/scrittura
 [TurnOffAutoPlay](/windows/client-management/mdm/policy-csp-autoplay#autoplay-turnoffautoplay)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -125,10 +125,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

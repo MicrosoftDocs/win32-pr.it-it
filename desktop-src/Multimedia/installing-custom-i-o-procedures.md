@@ -9,19 +9,19 @@ keywords:
 - I/O (input e output), procedure personalizzate
 - installazione di procedure di I/O personalizzate
 - I/O personalizzato
-- mmioInstallIOProc (funzione)
+- Funzione mmioInstallIOProc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1574b7076e7344fa8e800ef1f18ad13fcfd3f3af
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4ec92542efe80c24e1e620983d78b4b9a6c246ff003934a1ace1cae159fbd1da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104399015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118140466"
 ---
 # <a name="installing-custom-io-procedures"></a>Installazione di procedure di I/O personalizzate
 
-Per installare una routine di I/O associata a. Estensione del nome file ARC, usare la funzione [**mmioInstallIOProc**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioinstallioproc) come segue:
+Per installare una procedura di I/O associata a . ESTENSIONE ARC, usare la [**funzione mmioInstallIOProc**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioinstallioproc) come indicato di seguito:
 
 
 ```C++
@@ -31,16 +31,16 @@ mmioInstallIOProc (mmioFOURCC('A', 'R', 'C', ' '),
 
 
 
-Quando si installa una procedura di I/O tramite [**mmioInstallIOProc**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioinstallioproc), la procedura rimane installata finché non viene rimossa. La procedura di I/O viene utilizzata per tutti i file aperti purché il file abbia l'estensione del nome file appropriata.
+Quando si installa una procedura di I/O usando [**mmioInstallIOProc**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioinstallioproc), la procedura rimane installata fino a quando non viene rimosso. La procedura di I/O viene usata per qualsiasi file aperto, purché il file abbia l'estensione di file appropriata.
 
-È anche possibile installare temporaneamente una routine di I/O tramite la funzione [**mmioOpen**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioopen) . In questo caso, la procedura di I/O viene utilizzata solo con un file aperto utilizzando **mmioOpen** e viene rimosso quando il file viene chiuso utilizzando la funzione [**mmioClose**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioclose) . Per specificare una routine di I/O quando si apre un file usando **mmioOpen**, usare il parametro *lpmmioinfo* per fare riferimento a una struttura [**MMIOINFO**](/previous-versions//dd757322(v=vs.85)) come indicato di seguito:
+È anche possibile installare temporaneamente una procedura di I/O usando la funzione [**mmioOpen.**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioopen) In questo caso, la procedura di I/O viene usata solo con un file aperto tramite **mmioOpen** e viene rimossa quando il file viene chiuso tramite la funzione [**mmioClose.**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioclose) Per specificare una procedura di I/O quando si apre un file usando **mmioOpen,** usare il *parametro lpmmioinfo* per fare riferimento a una [**struttura MMIOINFO**](/previous-versions//dd757322(v=vs.85)) come indicato di seguito:
 
-1.  Impostare il membro **fccIOProc** su **null**.
-2.  Impostare il membro **pIOProc** sull'indirizzo dell'istanza di routine della procedura di i/O.
-3.  Impostare tutti gli altri membri su zero (a meno che non si stia aprendo un file di memoria o leggendo o scrivendo direttamente nel buffer di I/O di file).
+1.  Impostare il **membro fccIOProc** su **NULL.**
+2.  Impostare il **membro pIOProc** sull'indirizzo dell'istanza della procedura di I/O.
+3.  Impostare tutti gli altri membri su zero ,a meno che non si aperi un file di memoria o non si leggono o si scrivono direttamente nel buffer di I/O del file.
 
 Assicurarsi di rimuovere tutte le procedure di I/O installate prima di uscire dall'applicazione.
 
- 
+ 
 
- 
+ 

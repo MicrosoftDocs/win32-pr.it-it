@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: d1c932f06350324e0d84559724f7ba0412dfb3e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ed9e490ecc0eec1dcb4f6549281631f0b43e855ad4fb825b6c07517abe26a6c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118149534"
 ---
-# <a name="modifyreplicationsettings-method-of-the-msvm_replicationservice-class"></a>Metodo ModifyReplicationSettings della classe MSVM \_ ReplicationService
+# <a name="modifyreplicationsettings-method-of-the-msvm_replicationservice-class"></a>Metodo ModifyReplicationSettings della classe Msvm \_ ReplicationService
 
 Modifica le impostazioni di replica per una macchina virtuale. Quando un client chiama questo metodo per una macchina virtuale di replica, modifica le impostazioni di replica della relazione di replica con la replica estesa.
 
@@ -41,21 +41,21 @@ uint32 ModifyReplicationSettings(
 
 <dl> <dt>
 
-*ComputerSystem* \[ in\]
+*ComputerSystem* \[ Pollici\]
 </dt> <dd>
 
-Riferimento a un'istanza di [**CIM \_ ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem) che rappresenta la macchina virtuale per cui devono essere modificate le impostazioni di replica.
+Riferimento a [**un'istanza \_ ComputerSystem CIM**](/windows/desktop/CIMWin32Prov/cim-computersystem) che rappresenta la macchina virtuale per cui devono essere modificate le impostazioni di replica.
 
 </dd> <dt>
 
-*ReplicationSettingData* \[ in\]
+*ReplicationSettingData* \[ Pollici\]
 </dt> <dd>
 
-Rappresentazione di stringa della classe [**\_ ReplicationSettingData MSVM**](msvm-replicationsettingdata.md) che definisce le nuove impostazioni di replica.
+Rappresentazione di stringa della [**classe Msvm \_ ReplicationSettingData**](msvm-replicationsettingdata.md) che definisce le nuove impostazioni di replica.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -68,10 +68,10 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
 **Non riuscito** (32768)
@@ -83,25 +83,25 @@ Questo metodo restituisce uno dei valori seguenti.
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
-Il **sistema è in uso** (32774)
+**Il sistema è in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -112,23 +112,23 @@ Il **sistema è in uso** (32774)
 
 ## <a name="remarks"></a>Commenti
 
-**ModifyReplicationSettings** accetta un'istanza di [**MSVM \_ ReplicationSettingData**](msvm-replicationsettingdata.md) (FRSD) come input. Il FRSD associato per la macchina virtuale come provider da host a host è la scelta predefinita. FRSD di input viene convalidato per le impostazioni valide per ogni proprietà del provider predefinito. In questa tabella vengono riepilogate le differenze di convalida rispetto al provider esterno.
+**ModifyReplicationSettings** accetta [**un'istanza \_ msvm ReplicationSettingData**](msvm-replicationsettingdata.md) (FRSD) come input. Il frsd associato per la macchina virtuale come provider da host a host è la scelta predefinita. Il file FRSD di input viene convalidato per verificare la validità delle impostazioni per ogni proprietà per il provider predefinito. In questa tabella vengono riepilogate le differenze di convalida rispetto al provider esterno.
 
 
 
 | Proprietà                                             | Provider esterni                                 |
 |------------------------------------------------------|----------------------------------------------------|
-| ReplicationProvider                                  | Uguale al provider predefinito                           |
+| Provider di replica                                  | Uguale al provider predefinito                           |
 | AuthenticationType                                   | Ignorato                                            |
 | CertificateThumbPrint                                | Ignorato                                            |
 | RootCertificateThumbPrint (RO)                       | Ignorato                                            |
 | CompressionEnabled                                   | Uguale al provider predefinito                           |
 | BypassProxyServer                                    | Uguale al provider predefinito                           |
-| RecoveryConnectionPoint                              | Ignorato \* (può cambiare se il provider ha requisito) |
+| RecoveryConnectionPoint                              | Ignorato \* (può cambiare se il provider ha un requisito) |
 | RecoveryHostSystem (RO)                              | Ignorato                                            |
 | PrimaryConnectionPoint (RO)                          | Uguale al provider predefinito                           |
 | PrimaryHostSystem (RO)                               | Uguale al provider predefinito                           |
-| RecoveryServerPortNumber                             | Ignorato \* (può cambiare se il provider ha requisito) |
+| RecoveryServerPortNumber                             | Ignorato \* (può cambiare se il provider ha un requisito) |
 | ReplicateHostKvpItems                                | Ignorato                                            |
 | ApplicationConsistentSnapshotInterval                | Uguale al provider predefinito                           |
 | RecoveryHistory                                      | Uguale al provider predefinito                           |
@@ -149,10 +149,10 @@ Il **sistema è in uso** (32774)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -161,7 +161,7 @@ Il **sistema è in uso** (32774)
 
 <dl> <dt>
 
-[**\_ReplicationService MSVM**](msvm-replicationservice.md)
+[**Msvm \_ ReplicationService**](msvm-replicationservice.md)
 </dt> </dl>
 
  

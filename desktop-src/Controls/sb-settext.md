@@ -1,9 +1,9 @@
 ---
-title: Messaggio SB_SETTEXT (COMmctrl. h)
+title: SB_SETTEXT messaggio (Commctrl.h)
 description: Imposta il testo nella parte specificata di una finestra di stato.
 ms.assetid: 6039a61c-6ec6-42cd-94d5-5f1cf2998586
 keywords:
-- Controlli di Windows Message SB_SETTEXT
+- SB_SETTEXT di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a466187b4ccd00a974b992eacec11938f45001da
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0fcf0a7928e87cbc614a59dc64b433223afa97bbdac3f45f1635cb8cfe7b34a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120695"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118408884"
 ---
-# <a name="sb_settext-message"></a>\_Messaggio di testo SB
+# <a name="sb_settext-message"></a>Messaggio \_ SETTEXT SB
 
 Imposta il testo nella parte specificata di una finestra di stato.
 
@@ -34,11 +34,11 @@ Imposta il testo nella parte specificata di una finestra di stato.
 *wParam* 
 </dt> <dd>
 
-Il [**LOBYTE**](/previous-versions/windows/desktop/legacy/ms632658(v=vs.85)) della parola di ordine inferiore specifica l'indice in base zero della parte da impostare. Se **LOBYTE** è impostato su SB \_ SIMPLEID, si presuppone che la finestra di stato sia una barra di stato in modalità semplice, ovvero una barra di stato con una sola parte.
+Il [**LOBYTE**](/previous-versions/windows/desktop/legacy/ms632658(v=vs.85)) della parola meno importante specifica l'indice in base zero della parte da impostare. Se **l'opzione LOBYTE** è impostata su SB SIMPLEID, si presuppone che la finestra di stato sia una barra di stato in modalità semplice, ad esempio una barra di stato con \_ una sola parte.
 
-Il [**HIBYTE**](/previous-versions/windows/desktop/legacy/ms632656(v=vs.85)) della parola di ordine inferiore specifica il tipo di operazione di disegno. Questo parametro può avere uno dei valori seguenti.
+[**L'HIBYTE**](/previous-versions/windows/desktop/legacy/ms632656(v=vs.85)) della parola meno ordinata specifica il tipo di operazione di disegno. Questo parametro può avere uno dei valori seguenti.
 
-La parola più ordinata di *wParam* viene ignorata.
+La parola di ordine superiore *di wParam viene* ignorata.
 
 
 
@@ -56,7 +56,7 @@ La parola più ordinata di *wParam* viene ignorata.
 <tbody>
 <tr class="odd">
 <td><span id="0"></span><dl> <dt><strong>0</strong></dt> </dl></td>
-<td>Il testo viene disegnato con un bordo da visualizzare in basso rispetto al piano della finestra.<br/></td>
+<td>Il testo viene disegnato con un bordo inferiore al piano della finestra.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="SBT_NOBORDERS"></span><span id="sbt_noborders"></span><dl> <dt><strong>SBT_NOBORDERS</strong></dt> </dl></td>
@@ -67,13 +67,13 @@ La parola più ordinata di *wParam* viene ignorata.
 <td>Il testo viene disegnato dalla finestra padre. <br/>
 <blockquote>
 [!Note]<br />
-Una barra di stato in modalità semplice non supporta il disegno del proprietario.
+Una barra di stato in modalità semplice non supporta il disegno da parte del proprietario.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td><span id="SBT_POPOUT"></span><span id="sbt_popout"></span><dl> <dt><strong>SBT_POPOUT</strong></dt> </dl></td>
-<td>Il testo viene disegnato con un bordo da visualizzare più in alto rispetto al piano della finestra.<br/></td>
+<td>Il testo viene disegnato con un bordo superiore al piano della finestra.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="SBT_RTLREADING"></span><span id="sbt_rtlreading"></span><dl> <dt><strong>SBT_RTLREADING</strong></dt> </dl></td>
@@ -95,19 +95,19 @@ Una barra di stato in modalità semplice non supporta il disegno del proprietari
 *lParam* 
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il testo da impostare. Se *wParam* è SBT \_ OWNERDRAW, questo parametro rappresenta 32 bit di dati. La finestra padre deve interpretare i dati e creare il testo quando riceve il messaggio [**WM \_ DrawItem**](wm-drawitem.md) .
+Puntatore a una stringa con terminazione Null che specifica il testo da impostare. Se *wParam* è SBT \_ OWNERDRAW, questo parametro rappresenta 32 bit di dati. La finestra padre deve interpretare i dati e disegnare il testo quando riceve il [**messaggio WM \_ DRAWITEM.**](wm-drawitem.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Il messaggio invalida la parte della finestra che è stata modificata, causando la visualizzazione del nuovo testo quando la finestra successiva riceve il messaggio di [**\_ disegno WM**](/windows/desktop/gdi/wm-paint) .
+Il messaggio invalida la parte della finestra che è stata modificata, causando la visualizzazione del nuovo testo alla successiva ricezione del messaggio [**WM \_ PAINT**](/windows/desktop/gdi/wm-paint) da parte della finestra.
 
-Normale testo visualizzato da sinistra a destra (LTR). È possibile eseguire il *mirroring* di Windows per visualizzare lingue quali l'ebraico o l'arabo con lettura da destra a sinistra (RTL). Se \_ si imposta SBT RTLREADING, la stringa *lParam* verrà letta nella direzione opposta dal testo nella finestra padre.
+Le finestre normali visualizzano il testo da sinistra a destra. Windows possibile eseguire *il mirroring per* visualizzare lingue come l'ebraico o l'arabo che leggono da destra a sinistra (RTL). Se la proprietà SBT RTLREADING è impostata, la stringa lParam verrà letta nella direzione opposta rispetto al testo \_ nella finestra padre. 
 
 ## <a name="requirements"></a>Requisiti
 
@@ -115,10 +115,10 @@ Normale testo visualizzato da sinistra a destra (LTR). È possibile eseguire il 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
-| Nomi Unicode e ANSI<br/>   | **SB \_ SETTEXTW** (Unicode) e **SB \_ setexta** (ANSI)<br/>                     |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Nomi Unicode e ANSI<br/>   | **SB \_ SETTEXTW** (Unicode) e **SB \_ SETTEXTA** (ANSI)<br/>                     |
 
 
 
@@ -126,7 +126,7 @@ Normale testo visualizzato da sinistra a destra (LTR). È possibile eseguire il 
 
 <dl> <dt>
 
-[**SB \_ GETtext**](sb-gettext.md)
+[**SB \_ GETTEXT**](sb-gettext.md)
 </dt> </dl>
 
  

@@ -1,23 +1,23 @@
 ---
-title: Individuazione e apertura di commediatori e decompressori
-description: Individuazione e apertura di commediatori e decompressori
+title: Individuazione e apertura di proiettori e decompressori
+description: Individuazione e apertura di proiettori e decompressori
 ms.assetid: ed931f01-dbfc-4fdc-b725-c062302b037b
 keywords:
-- Gestione compressione video (VCM), apertura di compressatori
-- VCM (Gestione compressione video), apertura di comprimeri
-- ICLocate (funzione)
+- gestione compressione video(VCM), apertura di compresse
+- VCM (gestione compressione video), apertura di compresse
+- Funzione ICLocate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d45b07c619095b4d50bdbdde5c3d2b1ca9209471
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c861c9fb5c317b6b0fc3a48552db200389739ebd8a53dbf15fbdbd0564ba8f76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118139302"
 ---
-# <a name="locating-and-opening-compressors-and-decompressors"></a>Individuazione e apertura di commediatori e decompressori
+# <a name="locating-and-opening-compressors-and-decompressors"></a>Individuazione e apertura di proiettori e decompressori
 
-Nell'esempio seguente viene usata la funzione [**ICLocate**](/windows/desktop/api/Vfw/nf-vfw-iclocate) per trovare un commutatore in grado di comprimere una bitmap a 8 bit per pixel.
+Nell'esempio seguente viene utilizzata [**la funzione ICLocate**](/windows/desktop/api/Vfw/nf-vfw-iclocate) per trovare un compressore in grado di comprimere una bitmap a 8 bit per pixel.
 
 
 ```C++
@@ -41,7 +41,7 @@ hIC = ICLocate (ICTYPE_VIDEO, 0L, (LPBITMAPINFOHEADER) &bih,
 
 
 
-Nell'esempio seguente vengono enumerati i decompressori del sistema per individuarne uno in grado di gestire il formato delle relative immagini. Questo esempio usa **ICTYPE \_ video** (equivalente al codice a quattro caratteri "vidc") e la macro [**ICDecompressQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressquery) per determinare se un compressore o un decompressore supporta il formato di immagine.
+Nell'esempio seguente vengono enumerati i decompressori nel sistema per trovarne uno in grado di gestire il formato delle relative immagini. Questo esempio usa **ICTYPE \_ VIDEO** (che equivale al codice a quattro caratteri "VIDC") e la macro [**ICDecompressQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressquery) per determinare se un compilatore o un decompressore supporta il formato dell'immagine.
 
 
 ```C++
@@ -71,7 +71,7 @@ for (i=0; ICInfo(fccType, i, &icinfo); i++)
 
 
 
-Nell'esempio seguente viene effettuato un tentativo di individuare un compressore specifico per comprimere il formato RGB a 8 bit in un formato RLE a 8 bit.
+L'esempio seguente tenta di individuare uno specifico compressore per comprimere il formato RGB a 8 bit in un formato RLE a 8 bit.
 
 
 ```C++
@@ -104,12 +104,12 @@ hIC = ICLocate (ICTYPE_VIDEO, 0L,
 
 <dl> <dt>
 
-[Utilizzo di Gestione compressione video](using-the-video-compression-manager.md)
+[Uso di Gestione compressione video](using-the-video-compression-manager.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio MM_JOY2BUTTONDOWN (mmsystem. h)
-description: Il \_ messaggio mm JOY2BUTTONDOWN notifica alla finestra che ha acquisito il joystick JOYSTICKID2 che è stato premuto un pulsante.
+title: MM_JOY2BUTTONDOWN messaggio (Mmsystem.h)
+description: Il messaggio MM JOY2BUTTONDOWN notifica alla finestra che ha acquisito \_ il joystick JOYSTICKID2 che è stato premuto un pulsante.
 ms.assetid: b4cd48ea-91ad-48e9-b0ae-58d8ee124171
 keywords:
-- MM_JOY2BUTTONDOWN messaggi multimediali di Windows
+- MM_JOY2BUTTONDOWN messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f155fcdc21247e01fd5d730f3f7d4daaba705e65
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 02e9ad78e914fb74e51f8ebe7a47a65677ac06d27d53eb8f64739ba641f235b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137202"
 ---
-# <a name="mm_joy2buttondown-message"></a>\_Messaggio JOY2BUTTONDOWN mm
+# <a name="mm_joy2buttondown-message"></a>Messaggio \_ MM JOY2BUTTONDOWN
 
-Il messaggio **mm \_ JOY2BUTTONDOWN** notifica alla finestra che ha acquisito il joystick JOYSTICKID2 che è stato premuto un pulsante.
+Il **messaggio MM \_ JOY2BUTTONDOWN** notifica alla finestra che ha acquisito il joystick JOYSTICKID2 che è stato premuto un pulsante.
 
 
 ```C++
@@ -48,10 +48,10 @@ Identifica il pulsante che ha modificato lo stato e i pulsanti premuti. I possib
 
 | Requisito | Valore |
 |-----------------|-------------------------------------------|
-| GIOIA \_ BUTTON1CHG | Il primo pulsante del joystick è stato modificato.  |
-| GIOIA \_ BUTTON2CHG | Il secondo pulsante del joystick è stato modificato. |
-| GIOIA \_ BUTTON3CHG | Il terzo pulsante del joystick è stato modificato.  |
-| GIOIA \_ BUTTON4CHG | Il quarto pulsante del joystick è stato modificato. |
+| JOY \_ BUTTON1CHG | Lo stato del primo pulsante del joystick è stato modificato.  |
+| PULSANTE \_ DI JOY2CHG | Lo stato del secondo pulsante del joystick è stato modificato. |
+| PULSANTE \_ DI JOY3CHG | Lo stato del terzo pulsante del joystick è stato modificato.  |
+| PULSANTE \_ DI JOY4CHG | Lo stato del quarto pulsante del joystick è stato modificato. |
 
 
 
@@ -63,10 +63,10 @@ e uno o più degli elementi seguenti:
 
 | Requisito | Valore |
 |--------------|------------------------------------|
-| GIOIA \_ Button1 | Viene premuto il primo pulsante del joystick.  |
-| GIOIA \_ Button2 | Viene premuto il secondo pulsante del joystick. |
-| GIOIA \_ Button3 | Viene premuto il terzo pulsante del joystick.  |
-| GIOIA \_ BUTTON4 | Viene premuto il quarto pulsante del joystick. |
+| PULSANTE \_ DI CONTROLLO DELLA ERTA1 | Viene premuto il primo pulsante del joystick.  |
+| PULSANTE \_ DI CONTROLLO DELLA ERTA2 | Viene premuto il secondo pulsante del joystick. |
+| PULSANTE \_ DI CONTROLLO DELLA ERTA3 | Viene premuto il terzo pulsante del joystick.  |
+| PULSANTE \_ DI GIOIA4 | Viene premuto il quarto pulsante del joystick. |
 
 
 
@@ -96,7 +96,7 @@ Coordinata y del joystick rispetto all'angolo superiore sinistro dell'area clien
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 

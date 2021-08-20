@@ -1,26 +1,26 @@
 ---
-title: Proprietà IMsRdpClientAdvancedSettings BitmapPersistence
-description: Specifica se deve essere utilizzata la memorizzazione nella cache delle bitmap persistenti. La memorizzazione nella cache persistente può migliorare le prestazioni, ma richiede ulteriore spazio su disco.
+title: Proprietà BitmapPersistence IMsRdpClientAdvancedSettings
+description: Specifica se deve essere utilizzata la memorizzazione nella cache delle bitmap persistenti. La memorizzazione nella cache persistente può migliorare le prestazioni, ma richiede spazio su disco aggiuntivo.
 ms.assetid: ffaa9277-9dd7-4b2a-9de5-009b7e8766bc
 ms.tgt_platform: multiple
 keywords:
 - Proprietà BitmapPersistence Servizi Desktop remoto
-- Proprietà BitmapPersistence Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings
+- Proprietà BitmapPersistence Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings
 - Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà BitmapPersistence
-- Proprietà BitmapPersistence Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà BitmapPersistence
-- Interfaccia bitmapPersistence Servizi Desktop remoto , IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà BitmapPersistence
-- Proprietà BitmapPersistence Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà BitmapPersistence
-- Proprietà BitmapPersistence Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà BitmapPersistence
-- Proprietà BitmapPersistence Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà BitmapPersistence
+- Proprietà BitmapPersistence Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto proprietà , BitmapPersistence
+- Proprietà BitmapPersistence Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto proprietà , BitmapPersistence
+- Proprietà BitmapPersistence Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto proprietà , BitmapPersistence
+- Proprietà BitmapPersistence Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto proprietà , BitmapPersistence
+- Proprietà BitmapPersistence Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto proprietà , BitmapPersistence
 - Proprietà BitmapPersistence Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà BitmapPersistence
-- Proprietà BitmapPersistence Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà BitmapPersistence
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto proprietà , BitmapPersistence
+- Proprietà BitmapPersistence Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto proprietà , BitmapPersistence
 topic_type:
 - apiref
 api_name:
@@ -63,7 +63,7 @@ ms.locfileid: "118353458"
 ---
 # <a name="imsrdpclientadvancedsettingsbitmappersistence-property"></a>Proprietà IMsRdpClientAdvancedSettings::BitmapPersistence
 
-Specifica se deve essere utilizzata la memorizzazione nella cache delle bitmap persistenti. La memorizzazione nella cache persistente può migliorare le prestazioni, ma richiede ulteriore spazio su disco.
+Specifica se deve essere utilizzata la memorizzazione nella cache delle bitmap persistenti. La memorizzazione nella cache persistente può migliorare le prestazioni, ma richiede spazio su disco aggiuntivo.
 
 Si tratta di una proprietà di lettura/scrittura.
 

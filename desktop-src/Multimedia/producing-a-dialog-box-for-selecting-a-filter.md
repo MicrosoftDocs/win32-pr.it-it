@@ -3,27 +3,27 @@ title: Creazione di una finestra di dialogo per la selezione di un filtro
 description: Creazione di una finestra di dialogo per la selezione di un filtro
 ms.assetid: 4cbb9276-6ce6-4cf4-a000-2b4f9ac42b31
 keywords:
-- Gestione compressione audio (ACM), creazione di finestre di dialogo
-- ACM (Gestione compressione audio), creazione di finestre di dialogo
+- Gestione compressione audio,creazione di finestre di dialogo
+- ACM (Audio Compression Manager), creazione di finestre di dialogo
 - Esempi di ACM, creazione di finestre di dialogo
 - creazione di finestre di dialogo
-- acmFilterChoose (funzione)
-- Gestione compressione audio (ACM), selezione dei filtri
-- ACM (Gestione compressione audio), selezione dei filtri
+- Funzione acmFilterChoose
+- gestione compressione audio(ACM), selezione dei filtri
+- ACM (Audio Compression Manager), selezione dei filtri
 - Esempi di ACM, selezione di filtri
-- selezione dei filtri
+- selezione di filtri
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87225c1aebf2a06c738a1b48b03b94ed81bf6c2d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 70015f7e546337983725ae85c683acf5e9b75423e0de0734de4e1293480933ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118136605"
 ---
 # <a name="producing-a-dialog-box-for-selecting-a-filter"></a>Creazione di una finestra di dialogo per la selezione di un filtro
 
-Un'applicazione può consentire agli utenti di selezionare un'operazione di filtro arbitraria e applicarla ai dati audio della forma d'onda. Nell'esempio seguente, l'applicazione alloca un buffer per conservare il filtro e quindi utilizza la funzione [**acmFilterChoose**](/windows/desktop/api/Msacm/nf-msacm-acmfilterchoose) per selezionare il filtro. Le funzioni in questo esempio devono essere chiamate con il filtro o il tag di filtro appropriato.
+Un'applicazione può consentire agli utenti di selezionare un'operazione di filtro arbitraria e applicarla ai dati audio waveform. Nell'esempio seguente l'applicazione alloca un buffer per contenere il filtro e quindi usa la [**funzione acmFilterChoose**](/windows/desktop/api/Msacm/nf-msacm-acmfilterchoose) per selezionare il filtro. Le funzioni in questo esempio devono essere chiamate con il filtro o il tag di filtro appropriato.
 
 
 ```C++
@@ -74,9 +74,9 @@ return (mmr);
 
 
 
- 
+ 
 
- 
+ 
 
 
 

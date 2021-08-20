@@ -212,7 +212,7 @@ La **classe MsRdpClient10NotSafeForScripting** dispone di queste proprietà.
 <tr class="odd">
 <td style="text-align: left;"><a href="imstscnonscriptable-cleartextpassword.md"><strong>ClearTextPassword</strong></a><br/></td>
 <td style="text-align: left;">Sola scrittura<br/></td>
-<td style="text-align: left;">La Desktop remoto ActiveX password di controllo, in formato testo non crittografato.<br/></td>
+<td style="text-align: left;">Password Desktop remoto ActiveX controllo, in formato testo non crittografato.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclient-colordepth.md"><strong>ColorDepth</strong></a><br/></td>
@@ -262,7 +262,7 @@ La **classe MsRdpClient10NotSafeForScripting** dispone di queste proprietà.
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable5-disableremoteappcapscheck.md"><strong>DisableRemoteAppCapsCheck</strong></a><br/></td>
 <td style="text-align: left;">Lettura/Scrittura<br/></td>
-<td style="text-align: left;">Specifica se il controllo Desktop remoto ActiveX controllo non deve verificare la presenza di funzionalità RemoteApp nel server.<br/></td>
+<td style="text-align: left;">Specifica se il Desktop remoto ActiveX controllo non deve verificare la presenza di funzionalità RemoteApp nel server.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imstscax-disconnectedtext.md"><strong>DisconnectedText</strong></a><br/></td>
@@ -400,17 +400,17 @@ Quando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 <td style="text-align: left;">Oggetto che supporta <a href="itsremoteprogram2.md"><strong>l'interfaccia ITSRemoteProgram2.</strong></a><br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="imsrdpclient10-remoteprogram3.md"><strong>Programma remoto3</strong></a><br/></td>
+<td style="text-align: left;"><a href="imsrdpclient10-remoteprogram3.md"><strong>RemoteProgram3</strong></a><br/></td>
 <td style="text-align: left;">Sola lettura<br/></td>
 <td style="text-align: left;">Oggetto che supporta <a href="itsremoteprogram3.md"><strong>l'interfaccia ITSRemoteProgram3.</strong></a><br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="imstscax-securedsettings.md"><strong>Impostazioni protette</strong></a><br/></td>
+<td style="text-align: left;"><a href="imstscax-securedsettings.md"><strong>SecuredSettings</strong></a><br/></td>
 <td style="text-align: left;">Sola lettura<br/></td>
 <td style="text-align: left;">Puntatore <a href="imstscsecuredsettings-interface.md"><strong>a interfaccia IMsTscSecuredSettings.</strong></a><br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="imsrdpclient-securedsettings2.md"><strong>Impostazioni protette2</strong></a><br/></td>
+<td style="text-align: left;"><a href="imsrdpclient-securedsettings2.md"><strong>SecuredSettings2</strong></a><br/></td>
 <td style="text-align: left;">Sola lettura<br/></td>
 <td style="text-align: left;">Puntatore <a href="imsrdpclientsecuredsettings-interface.md"><strong>all'interfaccia IMsRdpClientSecuredSettings,</strong></a> usata per impostare le impostazioni protette per il controllo client.<br/></td>
 </tr>
@@ -442,15 +442,15 @@ Quando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclient5-transportsettings.md"><strong>TransportSettings</strong></a><br/></td>
 <td style="text-align: left;">Sola lettura<br/></td>
-<td style="text-align: left;">Impostazione di Gateway Desktop remoto del client.<br/></td>
+<td style="text-align: left;">Impostazione di Gateway Desktop remoto client.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclient6-transportsettings2.md"><strong>TransportSettings2</strong></a><br/></td>
 <td style="text-align: left;">Sola lettura<br/></td>
-<td style="text-align: left;">Interfaccia per <a href="imsrdpclienttransportsettings2.md"><strong>IMsRdpClientTransportSettings2.</strong></a><br/></td>
+<td style="text-align: left;">Interfaccia di <a href="imsrdpclienttransportsettings2.md"><strong>IMsRdpClientTransportSettings2.</strong></a><br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="imsrdpclient7-transportsettings3.md"><strong>Impostazioni di trasporto3</strong></a><br/></td>
+<td style="text-align: left;"><a href="imsrdpclient7-transportsettings3.md"><strong>TransportSettings3</strong></a><br/></td>
 <td style="text-align: left;">Sola lettura<br/></td>
 <td style="text-align: left;">Oggetto che supporta <a href="imsrdpclienttransportsettings3.md"><strong>l'interfaccia IMsRdpClientTransportSettings3.</strong></a><br/></td>
 </tr>
@@ -462,22 +462,22 @@ Quando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable4-trustedzonesite.md"><strong>TrustedZoneSite</strong></a><br/></td>
 <td style="text-align: left;">Lettura/Scrittura<br/></td>
-<td style="text-align: left;">Specifica se il sito Web da cui l'utente ha avviato la connessione si trova nell'elenco di siti attendibili del computer client.<br/></td>
+<td style="text-align: left;">Specifica se il sito Web da cui l'utente ha avviato la connessione si trova nell'elenco dei siti attendibili del computer client.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable2-uiparentwindowhandle.md"><strong>UIParentWindowHandle</strong></a><br/></td>
 <td style="text-align: left;">Lettura/Scrittura<br/></td>
-<td style="text-align: left;">Handle di finestra che deve essere la finestra padre per il controllo . In questo modo tutte le finestre visualizzate dal controllo saranno correttamente modali rispetto alle finestre visualizzate dall'applicazione padre.<br/></td>
+<td style="text-align: left;">Handle di finestra che deve essere la finestra padre per il controllo . In questo modo tutte le finestre visualizzate dal controllo possono essere correttamente modali rispetto alle finestre visualizzate dall'applicazione padre.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable5-usemultimon.md"><strong>UseMultimon</strong></a><br/></td>
 <td style="text-align: left;">Lettura/Scrittura<br/></td>
-<td style="text-align: left;">Specifica se il Desktop remoto ActiveX deve utilizzare più monitor.<br/></td>
+<td style="text-align: left;">Specifica se il controllo Desktop remoto ActiveX deve usare più monitor.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdppreferredredirectioninfo-useredirectionservername.md"><strong>UseRedirectionServerName</strong></a><br/></td>
 <td style="text-align: left;">Lettura/Scrittura<br/></td>
-<td style="text-align: left;">Indica se utilizzare il nome del server di reindirizzamento.<br/></td>
+<td style="text-align: left;">Indica se usare il nome del server di reindirizzamento.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imstscax-username.md"><strong>Nome utente</strong></a><br/></td>
