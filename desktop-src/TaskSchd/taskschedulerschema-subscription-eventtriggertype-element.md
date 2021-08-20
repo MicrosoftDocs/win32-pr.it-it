@@ -30,7 +30,7 @@ Specifica la query XPath che identifica l'evento che attiva il trigger.
  />
 ```
 
-**L'elemento Subscription** è definito dal tipo complesso [**eventTriggerType.**](taskschedulerschema-eventtriggertype-complextype.md)
+**L'elemento Subscription** è definito dal [**tipo complesso eventTriggerType.**](taskschedulerschema-eventtriggertype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -46,7 +46,7 @@ Specifica la query XPath che identifica l'evento che attiva il trigger.
 
 Per lo sviluppo di script, la sottoscrizione di eventi viene specificata dalla [**proprietà EventTrigger.Subscription.**](eventtrigger-subscription.md)
 
-Per lo sviluppo C++, la sottoscrizione di eventi viene specificata dalla [**proprietà IEventTrigger::Subscription.**](/windows/desktop/api/taskschd/nf-taskschd-ieventtrigger-get_subscription)
+Per lo sviluppo in C++, la sottoscrizione di eventi viene specificata dalla [**proprietà IEventTrigger::Subscription.**](/windows/desktop/api/taskschd/nf-taskschd-ieventtrigger-get_subscription)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Per lo sviluppo C++, la sottoscrizione di eventi viene specificata dalla [**prop
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -63,7 +63,7 @@ Per lo sviluppo C++, la sottoscrizione di eventi viene specificata dalla [**prop
 
 <dl> <dt>
 
-[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

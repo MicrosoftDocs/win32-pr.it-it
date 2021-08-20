@@ -1,7 +1,7 @@
 ---
 description: Disattiva la sottoclasse per il controllo specificato.
 ms.assetid: d4d34624-7d85-4c53-8318-b3e5d6f95f7a
-title: Ctl3dUnsubclassCtl (funzione)
+title: Funzione Ctl3dUnsubclassCtl
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Ctl3d32.dll
-ms.openlocfilehash: ec62c2ecab6d8c90a9c9b7b2570bf5d76afd0589
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: db0f87b7aec956a74a0c54871da4019c1ddd4f1bcd57fce3806218003fcb70bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162122"
 ---
-# <a name="ctl3dunsubclassctl-function"></a>Ctl3dUnsubclassCtl (funzione)
+# <a name="ctl3dunsubclassctl-function"></a>Funzione Ctl3dUnsubclassCtl
 
 Disattiva la sottoclasse per il controllo specificato.
 
@@ -39,20 +39,20 @@ BOOL WINAPI Ctl3dUnsubclassCtl(
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
-Handle per la finestra del controllo.
+Handle per la finestra di controllo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se il controllo è sottoclassato correttamente; in caso contrario, restituisce **false**.
+Restituisce **TRUE se** il controllo è sottoclassato correttamente; In caso contrario, restituisce **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

@@ -23,7 +23,7 @@ La figura seguente illustra la relazione tra l'oggetto provider e il set di ogge
 
 ![Diagramma che mostra la relazione tra 'Provider' e 'Subsystem', 'Controller', 'LUN', 'LUN plex', 'Drive' e 'Spindle'. ](images/vdshwobjects.png)
 
-Un oggetto provider può contenere un numero qualsiasi di sottosistemi. Tutti i provider hardware sono in grado di gestire più istanze dello stesso modello di sottosistema. Molti provider di hardware sono anche in grado di gestire più istanze di modelli di sottosistema diversi. Un singolo computer può ospitare un numero qualsiasi di provider di hardware.
+Un oggetto provider può contenere un numero qualsiasi di sottosistemi. Tutti i provider di hardware sono in grado di gestire più istanze dello stesso modello di sottosistema. Molti provider di hardware sono anche in grado di gestire più istanze di modelli di sottosistema diversi. Un singolo computer può ospitare un numero qualsiasi di provider di hardware.
 
 Un oggetto sottosistema può contenere un numero qualsiasi di controller e unità e può visualizzare qualsiasi numero di LUN. Un oggetto LUN è costituito da almeno un plex LUN e ogni lun plex esegue il mapping a una o più unità, a seconda del tipo di plex. Gli oggetti controller possono gestire l'input/output dei dati per un numero qualsiasi di oggetti LUN.
 

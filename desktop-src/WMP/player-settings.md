@@ -1,6 +1,6 @@
 ---
 title: Player.settings
-description: La proprietà settings recupera l'oggetto Impostazioni.
+description: La proprietà settings recupera l Impostazioni o object.
 ms.assetid: 9edd7d27-893a-4a32-8aaf-5efec6c50903
 keywords:
 - Player.settings Windows Media Player
@@ -23,7 +23,7 @@ ms.locfileid: "118337965"
 ---
 # <a name="playersettings"></a>Player.settings
 
-La **proprietà settings** recupera l'oggetto Impostazioni.
+La **proprietà** settings recupera l Impostazioni o object.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,7 +31,7 @@ La **proprietà settings** recupera l'oggetto Impostazioni.
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un oggetto Impostazioni di sola lettura.
+Questa proprietà è un oggetto Impostazioni sola lettura.
 
 ## <a name="requirements"></a>Requisiti
 

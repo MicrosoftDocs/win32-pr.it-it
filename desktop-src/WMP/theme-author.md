@@ -1,9 +1,9 @@
 ---
-title: THEME. Author
-description: L'attributo Author specifica o Recupera il nome dell'autore dell'interfaccia.
+title: THEME.author
+description: L'attributo author specifica o recupera il nome dell'autore dell'interfaccia.
 ms.assetid: 05d91024-38ea-4327-8ee1-a9242a13fd73
 keywords:
-- TEMA. crea Windows Media Player
+- THEME.author Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed6930ea13994fc860f614766663983d46167eb0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bf88ce6cdb19aa2c3c1dd1868ffb2981ea57ff8eaaa4a30b57066fb0f4a4d510
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118117883"
 ---
-# <a name="themeauthor"></a>THEME. Author
+# <a name="themeauthor"></a>THEME.author
 
-L'attributo **Author** specifica o Recupera il nome dell'autore dell'interfaccia.
+**L'attributo** author specifica o recupera il nome dell'autore dell'interfaccia.
 
 ``` syntax
 theme.author
@@ -29,7 +29,7 @@ theme.author
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura senza valore predefinito.
+Questo attributo è una stringa **di** lettura/scrittura senza alcun valore predefinito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,7 +37,7 @@ Questo attributo è una **stringa** di lettura/scrittura senza valore predefinit
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -48,7 +48,7 @@ Questo attributo è una **stringa** di lettura/scrittura senza valore predefinit
 [**Elemento THEME**](theme-element.md)
 </dt> <dt>
 
-[**THEME. authorVersion**](theme-authorversion.md)
+[**THEME.authorVersion**](theme-authorversion.md)
 </dt> </dl>
 
  

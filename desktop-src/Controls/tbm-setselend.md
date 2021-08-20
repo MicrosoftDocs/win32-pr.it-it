@@ -1,9 +1,9 @@
 ---
-title: Messaggio TBM_SETSELEND (COMmctrl. h)
-description: Imposta la posizione logica finale dell'intervallo di selezione corrente in un TrackBar. Questo messaggio viene ignorato se il TrackBar non ha lo \_ stile ENABLESELRANGE di TBS.
+title: TBM_SETSELEND messaggio (Commctrl.h)
+description: Imposta la posizione logica finale dell'intervallo di selezione corrente in un trackbar. Questo messaggio viene ignorato se il trackbar non ha lo stile \_ TBS ENABLESELRANGE.
 ms.assetid: 1feec14c-1607-49d5-a147-af2443f82dc1
 keywords:
-- Controlli di Windows Message TBM_SETSELEND
+- TBM_SETSELEND dei messaggi Windows
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 146446df4daf8e8ac7c0f3499149ba0f46940880
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b9ee524bf6a519a7d0071e4149ed03191a9aec989e2deefe596cca1072dbd098
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104118967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118167066"
 ---
-# <a name="tbm_setselend-message"></a>\_Messaggio SEselend TBM
+# <a name="tbm_setselend-message"></a>TBM \_ SETSELEND message
 
-Imposta la posizione logica finale dell'intervallo di selezione corrente in un TrackBar. Questo messaggio viene ignorato se il TrackBar non ha lo stile [**\_ ENABLESELRANGE di TBS**](trackbar-control-styles.md) .
+Imposta la posizione logica finale dell'intervallo di selezione corrente in un trackbar. Questo messaggio viene ignorato se il trackbar non ha lo stile [**\_ TBS ENABLESELRANGE.**](trackbar-control-styles.md)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,14 +32,14 @@ Imposta la posizione logica finale dell'intervallo di selezione corrente in un T
 *wParam* 
 </dt> <dd>
 
-Ridisegni flag. Se questo parametro è **true**, il messaggio riestrae il TrackBar dopo l'impostazione dell'intervallo di selezione. Se questo parametro è **false**, il messaggio imposta l'intervallo di selezione senza ricreare il TrackBar.
+Flag di ridisegno. Se questo parametro è **TRUE,** il messaggio ridisegna il trackbar dopo l'impostazione dell'intervallo di selezione. Se questo parametro è **FALSE,** il messaggio imposta l'intervallo di selezione, ma non ridisegna il trackbar.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Fine della posizione logica dell'intervallo di selezione.
+Posizione logica finale dell'intervallo di selezione.
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -66,7 +66,7 @@ Nessun valore restituito.
 **Riferimento**
 </dt> <dt>
 
-[**TBM \_ GETselend**](tbm-getselend.md)
+[**TBM \_ GETSELEND**](tbm-getselend.md)
 </dt> <dt>
 
 [**TBM \_ GETSELSTART**](tbm-getselstart.md)

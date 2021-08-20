@@ -1,9 +1,9 @@
 ---
-title: Messaggio SB_GETPARTS (COMmctrl. h)
-description: Recupera un conteggio delle parti in una finestra di stato. Il messaggio recupera inoltre la coordinata del bordo destro del numero di parti specificato.
+title: SB_GETPARTS messaggio (Commctrl.h)
+description: Recupera un conteggio delle parti in una finestra di stato. Il messaggio recupera anche la coordinata del bordo destro del numero specificato di parti.
 ms.assetid: 2535f490-4d6b-468a-b13c-096941e61bf4
 keywords:
-- Controlli di Windows Message SB_GETPARTS
+- SB_GETPARTS di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cee0f33331c579490cf66a38b9ce6655215ae673
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4318579b67adda9ab55a9dad4ad73949214758443c5e2151ce40cbb996fd90cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118168757"
 ---
-# <a name="sb_getparts-message"></a>\_Messaggio SB GETparts
+# <a name="sb_getparts-message"></a>Messaggio \_ GETPARTS SB
 
-Recupera un conteggio delle parti in una finestra di stato. Il messaggio recupera inoltre la coordinata del bordo destro del numero di parti specificato.
+Recupera un conteggio delle parti in una finestra di stato. Il messaggio recupera anche la coordinata del bordo destro del numero specificato di parti.
 
 ## <a name="parameters"></a>Parametri
 
@@ -39,7 +39,7 @@ Numero di parti per le quali recuperare le coordinate. Se questo parametro è ma
 *lParam* 
 </dt> <dd>
 
-Puntatore a una matrice di interi che ha lo stesso numero di elementi delle parti specificate da *wParam*. Ogni elemento nella matrice riceve la coordinata client del bordo destro della parte corrispondente. Se un elemento è impostato su-1, la posizione del bordo destro della parte viene estesa al bordo destro della finestra. Per recuperare il numero corrente di parti, impostare questo parametro su zero.
+Puntatore a una matrice di interi con lo stesso numero di elementi delle parti specificate da *wParam*. Ogni elemento nella matrice riceve la coordinata client del bordo destro della parte corrispondente. Se un elemento è impostato su -1, la posizione del bordo destro per tale parte si estende al bordo destro della finestra. Per recuperare il numero corrente di parti, impostare questo parametro su zero.
 
 </dd> </dl>
 
@@ -57,9 +57,9 @@ Questo messaggio restituisce sempre il numero di parti nella barra di stato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,24 +1,24 @@
 ---
-title: Attributo del metodo la
-description: Attributo del metodo la
+title: Attributo del metodo VML
+description: Attributo del metodo VML
 ms.assetid: 42ab9d78-f004-4571-a566-03edd8341d19
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2f7440e1e793e7ad34860524f63a3bfc38456f1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 84d6b5ae67f94a2fc6e27451fb1a947c8341d1f77c08a721ca7946250cee3b7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118124764"
 ---
-# <a name="vml-method-attribute"></a>Attributo del metodo la
+# <a name="vml-method-attribute"></a>Attributo del metodo VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce il metodo utilizzato per generare un riempimento sfumato. Proprietà di lettura/scrittura. **VgSigmaType**.
 
@@ -26,15 +26,15 @@ Definisce il metodo utilizzato per generare un riempimento sfumato. Proprietà d
 
 [Fill](msdn-online-vml-fill-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* Method = " *Expression* " >
+<v: *element* method=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . Method = "*Expression*"
+*element* .method="*expression*"
 
-*espressione* = *element*. Method
+*expression* = *element*.method
 
 **Osservazioni:**
 
@@ -44,16 +44,16 @@ I possibili valori sono:
 
 | Valore  | Descrizione          |
 |--------|----------------------|
-| nessuno   | Nessun riempimento Sigma.       |
-| Lineari | Riempimento Sigma lineare.   |
-| Sigma  | Riempimento Sigma. Valore predefinito. |
-| Qualsiasi    | Qualsiasi riempimento Sigma.      |
+| nessuno   | Nessun riempimento sigma.       |
+| Lineari | Riempimento sigma lineare.   |
+| Sigma  | Riempimento sigma. Valore predefinito. |
+| Qualsiasi    | Qualsiasi riempimento sigma.      |
 
 
 
- 
+ 
 
-*Attributo standard la*
+*Attributo standard VML*
 
 **Esempio**
 
@@ -72,6 +72,6 @@ La forma avrà un riempimento sfumato lineare rosso.
 
 
 
- 
+ 
 
- 
+ 

@@ -4,12 +4,12 @@ ms.assetid: 8b527307-51bf-47b3-a0b2-3421cc5278b7
 title: Tabella CompLocator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e9fcb4a3c4f2e2c6f3ca3c92f6dc7466326bd11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ad6a51ad618521ff49b2a5b13f76fcfbae4207b5cdf4d77e76d3e128816bbb82
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104530240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118145080"
 ---
 # <a name="complocator-table"></a>Tabella CompLocator
 
@@ -22,7 +22,7 @@ La tabella CompLocator contiene le informazioni seguenti.
 | Colonna      | Tipo                         | Chiave | Nullable |
 |-------------|------------------------------|-----|----------|
 | Firma\_ | [Identificatore](identifier.md) | S   | N        |
-| ComponentId | [GUID](guid.md)             | N   | N        |
+| Componentid | [GUID](guid.md)             | N   | N        |
 | Tipo        | [Integer](integer.md)       | N   | S        |
 
 
@@ -36,20 +36,20 @@ La tabella CompLocator contiene le informazioni seguenti.
 <span id="Signature_"></span><span id="signature_"></span><span id="SIGNATURE_"></span>Firma\_
 </dt> <dd>
 
-Questa colonna rappresenta una firma del file univoca ed è anche la chiave esterna nella [tabella della firma](signature-table.md). Se la chiave è assente dalla tabella di firma, si presuppone che la ricerca sia per la presenza di una directory a cui punta la tabella CompLocator.
+Questa colonna rappresenta una firma di file univoca ed è anche la chiave esterna nella [tabella della firma](signature-table.md). Se la chiave è assente dalla tabella delle firme, si presuppone che la ricerca sia per la presenza di una directory a cui punta la tabella CompLocator.
 
 </dd> <dt>
 
-<span id="ComponentId"></span><span id="componentid"></span><span id="COMPONENTID"></span>ComponentId
+<span id="ComponentId"></span><span id="componentid"></span><span id="COMPONENTID"></span>Componentid
 </dt> <dd>
 
-ID del componente il cui percorso della chiave deve essere utilizzato per la ricerca. Deve corrispondere al GUID di un componente visualizzato nel campo ComponentId della [tabella Component](component-table.md). Potrebbe trattarsi dell'ID componente di un componente che appartiene a un altro prodotto installato nel computer. Non deve essere il GUID di un componente Pubblicato visualizzato nel campo ComponentId della [tabella PublishComponent](publishcomponent-table.md).
+ID componente del componente il cui percorso della chiave deve essere usato per la ricerca. Deve essere il GUID di un componente visualizzato nel campo ComponentId della [tabella dei componenti](component-table.md). Può trattarsi dell'ID componente di un componente appartenente a un altro prodotto installato nel computer. Non deve essere il GUID di un componente pubblicato visualizzato nel campo ComponentId della [tabella PublishComponent](publishcomponent-table.md).
 
-Per trovare il valore GUID ID componente per un file installato da un altro prodotto, passare al pacchetto di installazione del prodotto. Passare alla [tabella file](file-table.md) e individuare la riga che contiene l'identificatore del file. La \_ colonna Component di questa riga contiene l'identificatore del componente per il componente che controlla il file. Passare alla [tabella dei componenti](component-table.md) e trovare la riga che contiene l'identificatore del componente nella colonna componente. La colonna ComponentId di questa riga contiene il GUID ID componente.
+Per trovare il valore GUID dell'ID componente per un file installato da un altro prodotto, passare al pacchetto di installazione del prodotto. Passare alla tabella [File e](file-table.md) trovare la riga che contiene l'identificatore di file per il file. La colonna \_ Componente di questa riga contiene l'identificatore del componente che controlla il file. Passare alla tabella [Componente e](component-table.md) trovare la riga che contiene l'identificatore del componente nella colonna Componente. La colonna ComponentId di questa riga contiene il GUID dell'ID componente.
 
 </dd> <dt>
 
-<span id="Type"></span><span id="type"></span><span id="TYPE"></span>Tipo
+<span id="Type"></span><span id="type"></span><span id="TYPE"></span>digitare
 </dt> <dd>
 
 Valore booleano che determina se il percorso della chiave del componente è un nome file o un percorso di directory.
@@ -71,11 +71,11 @@ Nella tabella seguente sono elencati i valori validi. Se assente, Type è impost
 
 ## <a name="remarks"></a>Commenti
 
-Questa tabella viene utilizzata con la [tabella AppSearch](appsearch-table.md).
+Questa tabella viene usata con [la tabella AppSearch](appsearch-table.md).
 
-In genere, le colonne in questa tabella non sono localizzate. Se un autore decide di cercare i prodotti in più lingue, è possibile che nella tabella sia inclusa una voce separata per ogni lingua.
+In genere, le colonne in questa tabella non sono localizzate. Se un autore decide di cercare prodotti in più lingue, nella tabella può essere inclusa una voce separata per ogni lingua.
 
-Per ulteriori informazioni, vedere [ricerca di applicazioni esistenti, file, voci del registro di sistema o voci del file ini](searching-for-existing-applications-files-registry-entries-or--ini-file-entries.md).
+Per altre informazioni, vedere [Ricerca di applicazioni, file, voci](searching-for-existing-applications-files-registry-entries-or--ini-file-entries.md)del Registro di sistema o .ini file esistenti .
 
 ## <a name="validation"></a>Convalida
 

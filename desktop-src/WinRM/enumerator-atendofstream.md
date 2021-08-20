@@ -1,12 +1,12 @@
 ---
-title: Proprietà Enumerator. AtEndOfStream (WSManDisp. h)
-description: Ottiene un valore booleano che indica se sono presenti altri elementi nella raccolta.
+title: Proprietà Enumerator.AtEndOfStream (WSManDisp.h)
+description: Ottiene un valore booleano che indica se sono presenti altri elementi nell'insieme.
 ms.assetid: 5e80674a-7889-4753-b0dd-4d7b44eba00a
 ms.tgt_platform: multiple
 keywords:
-- Gestione remota Windows proprietà AtEndOfStream
-- Gestione remota Windows proprietà AtEndOfStream, oggetto enumeratore
-- Enumeratore Gestione remota Windows oggetto, proprietà AtEndOfStream
+- Proprietà AtEndOfStream Windows gestione remota
+- Proprietà AtEndOfStream Windows, oggetto Enumeratore di Gestione remota
+- Oggetto Enumerator Windows gestione remota, proprietà AtEndOfStream
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 023798f6c868e434218dd1a4dbdf1928bf4526a0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b1077837f82d650b57dfea0316ef15094b18749eefdb6957e62e6afd92cfe672
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118113202"
 ---
-# <a name="enumeratoratendofstream-property"></a>Proprietà Enumerator. AtEndOfStream
+# <a name="enumeratoratendofstream-property"></a>Enumerator.AtEndOfStream - proprietà
 
-Ottiene un valore booleano che indica se sono presenti altri elementi nella raccolta.
+Ottiene un valore booleano che indica se sono presenti altri elementi nell'insieme.
 
 Questa proprietà è di sola lettura.
 
@@ -45,12 +45,12 @@ Enumerator.AtEndOfStream As BOOLEAN
 
 <span id="True"></span><span id="true"></span><span id="TRUE"></span>
 
-<span id="True"></span><span id="true"></span><span id="TRUE"></span>**True**
+<span id="True"></span><span id="true"></span><span id="TRUE"></span>**Vero**
 
 
 </dt> <dd>
 
-Non sono presenti altri elementi nella raccolta.
+Nella raccolta non sono presenti altri elementi.
 
 </dd> <dt>
 
@@ -67,11 +67,11 @@ Sono disponibili altri elementi.
 
 ## <a name="remarks"></a>Commenti
 
-Se si libera l'oggetto [**enumeratore**](enumerator.md) dopo avere ottenuto tutti i dati necessari, eventuali richieste di enumerazione in sospeso verranno rimosse. Per ulteriori informazioni, vedere [enumerazione o visualizzazione di un elenco di tutte le istanze di una risorsa](enumerating-or-listing-all-instances-of-a-resource.md).
+Se si libera [**l'oggetto Enumerator**](enumerator.md) dopo aver ottenuto tutti i dati necessari, le eventuali richieste di enumerazione in sospeso vengono rimosse. Per altre informazioni, vedere [Enumerazione o elenco di tutte le istanze di una risorsa.](enumerating-or-listing-all-instances-of-a-resource.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio VBScript seguente vengono enumerate le istanze del sistema operativo. Si noti che la liberazione dell'oggetto di enumerazione pulisce tutte le richieste di enumerazione in sospeso. La subroutine DiplayOutput formatta l'output dei dati in modo analogo allo strumento WinRM. cmd.
+Nell'esempio di VBScript seguente vengono enumerate le istanze del sistema operativo. Si noti che la rimozione dell'oggetto enumerazione elimina tutte le richieste di enumerazione in sospeso. La subroutine DisplayOutput formatta l'output dei dati nello stesso modo dello strumento WinRM.cmd.
 
 
 ```VB
@@ -115,9 +115,9 @@ End Sub
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 

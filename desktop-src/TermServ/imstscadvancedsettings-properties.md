@@ -1,36 +1,36 @@
 ---
-title: Proprietà di IMsTscAdvancedSettings
+title: Proprietà IMsTscAdvancedSettings
 description: L'interfaccia IMsTscAdvancedSettings espone le proprietà seguenti.
 ms.assetid: D0BAD14F-91E2-4314-92E6-E4E9EE53F35C
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 041416ae3bf1f9b60c1472c87d6d65dc03ded9dc
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: c24102bddf35484a0849d3bd73804ab611632f0e41a581742a79c51644ac6a1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104397722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118129683"
 ---
-# <a name="imstscadvancedsettings-properties"></a>Proprietà di IMsTscAdvancedSettings
+# <a name="imstscadvancedsettings-properties"></a>Proprietà IMsTscAdvancedSettings
 
-L'interfaccia [**IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md) espone le proprietà seguenti.
+[**L'interfaccia IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**Proprietà allowBackgroundInput**](imstscadvancedsettings-allowbackgroundinput.md)
--   [**Proprietà BitmapPeristence**](imstscadvancedsettings-bitmapperistence.md)
--   [**Comprimi proprietà**](imstscadvancedsettings-compress.md)
--   [**Proprietà ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md)
--   [**Proprietà DisableRdpdr**](imstscadvancedsettings-disablerdpdr.md)
--   [**Proprietà IconFile**](imstscadvancedsettings-iconfile.md)
--   [**Proprietà IconIndex**](imstscadvancedsettings-iconindex.md)
+-   [**allowBackgroundInput - proprietà**](imstscadvancedsettings-allowbackgroundinput.md)
+-   [**BitmapPeristence - proprietà**](imstscadvancedsettings-bitmapperistence.md)
+-   [**Proprietà Compress**](imstscadvancedsettings-compress.md)
+-   [**ContainerHandledFullScreen - proprietà**](imstscadvancedsettings-containerhandledfullscreen.md)
+-   [**DisableRdpdr - proprietà**](imstscadvancedsettings-disablerdpdr.md)
+-   [**IconFile - proprietà**](imstscadvancedsettings-iconfile.md)
+-   [**IconIndex - proprietà**](imstscadvancedsettings-iconindex.md)
 -   [**Proprietà KeyBoardLayoutStr**](imstscadvancedsettings-keyboardlayoutstr.md)
 -   [**Proprietà PluginDlls**](imstscadvancedsettings-plugindlls.md)
 
- 
+ 
 
- 
+ 
 
 
 

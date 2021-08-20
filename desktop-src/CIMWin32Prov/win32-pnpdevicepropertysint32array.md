@@ -1,8 +1,8 @@
 ---
-description: Rappresenta una proprietà del dispositivo PnP costituita da una matrice di elementi sint32.
+description: Rappresenta una proprietà del dispositivo PnP costituita da una matrice di elementi Sint32.
 ms.assetid: 8CA6421B-6AC7-4590-9142-4093AA7BE019
 ms.tgt_platform: multiple
-title: Classe Win32_PnPDevicePropertySint32Array
+title: Win32_PnPDevicePropertySint32Array classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,16 +19,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c409043a2fb8bbdedf0ae4c038f99d96fbc6b436
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3811907e08d5802b18fbfa81438ae3544f26094c1e3ae005dfa2642d6c2763c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118008817"
 ---
-# <a name="win32_pnpdevicepropertysint32array-class"></a>Win32 \_ PnPDevicePropertySint32Array (classe)
+# <a name="win32_pnpdevicepropertysint32array-class"></a>Classe \_ Win32 PnPDevicePropertySint32Array
 
-Rappresenta una proprietà del dispositivo PnP costituita da una matrice di elementi **sint32** .
+Rappresenta una proprietà del dispositivo PnP costituita da una matrice di **elementi Sint32.**
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -47,20 +47,20 @@ class Win32_PnPDevicePropertySint32Array : Win32_PnPDeviceProperty
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ PnPDevicePropertySint32Array** presenta questi tipi di membri:
+La **classe Win32 \_ PnPDevicePropertySint32Array** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ PnPDevicePropertySint32Array** dispone di queste proprietà.
+La **classe Win32 \_ PnPDevicePropertySint32Array** ha queste proprietà.
 
 <dl> <dt>
 
 **Dati**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **sint32**
+Tipo di dati: **matrice Sint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -70,10 +70,10 @@ Valore della proprietà.
 
 </dd> <dt>
 
-**DeviceID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -81,60 +81,60 @@ Tipo di accesso: sola lettura
 
 Identifica il dispositivo PnP.
 
-Questa proprietà viene ereditata da [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Questa proprietà viene ereditata da [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
 
 </dd> <dt>
 
 **Chiave**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore della coppia chiave Name-Value che identifica la proprietà **dei dati** .
+Valore della coppia chiaveName-Value che identifica la **proprietà** Data.
 
-Questa proprietà viene ereditata da [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Questa proprietà viene ereditata da [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
 
 </dd> <dt>
 
-**KeyName**
+**Keyname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome della coppia di Name-Value chiave che identifica la proprietà **dei dati** .
+Nome della coppia chiaveName-Value che identifica la **proprietà** Data.
 
-Questa proprietà viene ereditata da [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Questa proprietà viene ereditata da [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
 
 </dd> <dt>
 
 **Tipo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **Uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo della proprietà dei **dati** .
+Tipo della **proprietà Data.**
 
-Questa proprietà viene ereditata da [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Questa proprietà viene ereditata da [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
 
-I valori possibili sono.
+I valori possibili sono .
 
 <dt>
 
 <span id="Empty"></span><span id="empty"></span><span id="EMPTY"></span>
 
-**Empty** (0)
+**Vuoto** (0)
 
 
 </dt> <dd></dd> <dt>
@@ -183,7 +183,7 @@ I valori possibili sono.
 
 <span id="Uint32"></span><span id="uint32"></span><span id="UINT32"></span>
 
-**UInt32** (7)
+**Uint32** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -218,7 +218,7 @@ I valori possibili sono.
 
 <span id="Decimal"></span><span id="decimal"></span><span id="DECIMAL"></span>
 
-**Decimale** (12)
+**Decimal** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -246,14 +246,14 @@ I valori possibili sono.
 
 <span id="FileTime"></span><span id="filetime"></span><span id="FILETIME"></span>
 
-**FILETIME** (16)
+**FileTime** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Boolean"></span><span id="boolean"></span><span id="BOOLEAN"></span>
 
-**Valore booleano** (17)
+**Boolean** (17)
 
 
 </dt> <dd></dd> <dt>
@@ -302,7 +302,7 @@ I valori possibili sono.
 
 <span id="NTStatus"></span><span id="ntstatus"></span><span id="NTSTATUS"></span>
 
-**NTSTATUS** (24)
+**NTStatus** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -319,7 +319,7 @@ I valori possibili sono.
 **Reserved**
 
 
-</dt> <dd>26 – 4097</dd> <dt>
+</dt> <dd>26–4097</dd> <dt>
 
 <span id="SByteArray"></span><span id="sbytearray"></span><span id="SBYTEARRAY"></span>
 
@@ -344,7 +344,7 @@ I valori possibili sono.
 
 <span id="UInt16Array"></span><span id="uint16array"></span><span id="UINT16ARRAY"></span>
 
-**Uint16Array** (4101)
+**UInt16Array** (4101)
 
 
 </dt> <dd></dd> <dt>
@@ -421,7 +421,7 @@ I valori possibili sono.
 
 <span id="StringList"></span><span id="stringlist"></span><span id="STRINGLIST"></span>
 
-**String** (4112)
+**StringList** (4112)
 
 
 </dt> <dd></dd> <dt>
@@ -477,14 +477,14 @@ I valori possibili sono.
 
 <span id="Unknown_-_check_in_devpropdef.h"></span><span id="unknown_-_check_in_devpropdef.h"></span><span id="UNKNOWN_-_CHECK_IN_DEVPROPDEF.H"></span>
 
-**Unknown-check in devpropdef. h** (4120)
+**Sconosciuto: archiviare devpropdef.h** (4120)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="TBD"></span><span id="tbd"></span>
 
-Da **definire (8217** )
+**TBD** (8217)
 
 
 </dt> <dd></dd> <dt>
@@ -494,7 +494,7 @@ Da **definire (8217** )
 **Reserved**
 
 
-</dt> <dd>8218-4294967295</dd> </dl>
+</dt> <dd>8218–4294967295</dd> </dl>
 
 </dd> </dl>
 
@@ -504,10 +504,10 @@ Da **definire (8217** )
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>Cimwin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Cimwin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -516,10 +516,10 @@ Da **definire (8217** )
 
 <dl> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema informatico](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_PnPDeviceProperty Win32**](win32-pnpdeviceproperty.md)
+[**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md)
 </dt> <dt>
 
 [**GetDeviceProperties**](getdeviceproperties-win32-pnpentity.md)

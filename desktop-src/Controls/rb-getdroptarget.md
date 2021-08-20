@@ -1,9 +1,9 @@
 ---
-title: Messaggio RB_GETDROPTARGET (COMmctrl. h)
-description: Recupera un puntatore all'interfaccia IDropTarget del controllo Rebar.
+title: RB_GETDROPTARGET messaggio (Commctrl.h)
+description: Recupera il puntatore a interfaccia IDropTarget di un controllo rebar.
 ms.assetid: f429c5d1-406b-47f0-a654-47cabccc1d0e
 keywords:
-- Controlli di Windows Message RB_GETDROPTARGET
+- RB_GETDROPTARGET dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55b7960cc13230a2715348bc55e5e65de6f72e5a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5793d2192ef65f193ff27d40cc14660c90d067034d8c1304e1bde1a354a4f493
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118169611"
 ---
-# <a name="rb_getdroptarget-message"></a>\_Messaggio GETDROPTARGET RB
+# <a name="rb_getdroptarget-message"></a>Messaggio RB \_ GETDROPTARGET
 
-Recupera un puntatore all'interfaccia [**IDropTarget**](/windows/desktop/api/oleidl/nn-oleidl-idroptarget) del controllo Rebar.
+Recupera il puntatore a interfaccia [**IDropTarget**](/windows/desktop/api/oleidl/nn-oleidl-idroptarget) di un controllo rebar.
 
 ## <a name="parameters"></a>Parametri
 
@@ -39,13 +39,13 @@ Deve essere zero.
 *lParam* 
 </dt> <dd>
 
-Puntatore a un puntatore [**IDropTarget**](/windows/desktop/api/oleidl/nn-oleidl-idroptarget) che riceve il puntatore a interfaccia. È responsabilità del chiamante chiamare il [**rilascio**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) su questo puntatore quando non è più necessario.
+Puntatore a un [**puntatore IDropTarget**](/windows/desktop/api/oleidl/nn-oleidl-idroptarget) che riceve il puntatore a interfaccia. È responsabilità del chiamante chiamare [**Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) su questo puntatore quando non è più necessario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito per questo messaggio non viene utilizzato.
+Il valore restituito per questo messaggio non viene usato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Il valore restituito per questo messaggio non viene utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

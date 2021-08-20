@@ -1,20 +1,20 @@
 ---
-title: Metodi ITSGPolicyEngine
+title: Metodi di ITSGPolicyEngine
 description: L'interfaccia ITSGPolicyEngine espone i metodi seguenti.
 ms.assetid: 23D48B25-02A6-4CC7-9EB5-E48C13A7459E
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 03e1bd89e983caf15f668d970a9560012d5a1769
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: dc813f99b05b72c462687f63e5818735e81910865cc63e00a6bb745f04fa1233
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104329316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118128826"
 ---
-# <a name="itsgpolicyengine-methods"></a>Metodi ITSGPolicyEngine
+# <a name="itsgpolicyengine-methods"></a>Metodi di ITSGPolicyEngine
 
-L'interfaccia [**ITSGPolicyEngine**](/windows/desktop/api/TSGPolicyEngine/nn-tsgpolicyengine-itsgpolicyengine) espone i metodi seguenti.
+[**L'interfaccia ITSGPolicyEngine**](/windows/desktop/api/TSGPolicyEngine/nn-tsgpolicyengine-itsgpolicyengine) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -23,9 +23,9 @@ L'interfaccia [**ITSGPolicyEngine**](/windows/desktop/api/TSGPolicyEngine/nn-tsg
 -   [**Metodo IsQuarantineEnabled**](/windows/desktop/api/TSGPolicyEngine/nf-tsgpolicyengine-itsgpolicyengine-isquarantineenabled)
 -   [**Metodo Refresh**](/windows/desktop/api/TSGPolicyEngine/nf-tsgpolicyengine-itsgpolicyengine-refresh)
 
- 
+ 
 
- 
+ 
 
 
 

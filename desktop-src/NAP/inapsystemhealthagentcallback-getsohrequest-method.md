@@ -1,9 +1,9 @@
 ---
-title: Metodo INapSystemHealthAgentCallback GetSoHRequest (NapSystemHealthAgent. h)
-description: Viene chiamato da NapAgent per eseguire una query sulla richiesta di rapporto di integrità dell'agente integrità sistema.
+title: Metodo INapSystemHealthAgentCallback GetSoHRequest (NapSystemHealthAgent.h)
+description: Viene chiamato da NapAgent per eseguire una query sulla richiesta SoH dell'agente integrità sistema.
 ms.assetid: 4161a3e7-2f7a-40d1-b973-47f991bba5d0
 keywords:
-- NAP metodo GetSoHRequest
+- Metodo GetSoHRequest NAP
 - Metodo GetSoHRequest NAP, interfaccia INapSystemHealthAgentCallback
 - Interfaccia INapSystemHealthAgentCallback NAP, metodo GetSoHRequest
 topic_type:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0fd95ce79587b5e7e259323286cfce138dd2df2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d6c9203a782be34be66e84fa8238a678647a4359df8cde3408aa8de99e73fcce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118133770"
 ---
-# <a name="inapsystemhealthagentcallbackgetsohrequest-method"></a>Metodo INapSystemHealthAgentCallback:: GetSoHRequest
+# <a name="inapsystemhealthagentcallbackgetsohrequest-method"></a>Metodo INapSystemHealthAgentCallback::GetSoHRequest
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **INapSystemHealthAgentCallback:: GetSoHRequest** viene chiamato da napagent per eseguire una query sulla richiesta di integrità dell'agente integrità sistema.
+Il **metodo INapSystemHealthAgentCallback::GetSoHRequest** viene chiamato da NapAgent per eseguire una query sulla richiesta SoH dell'agente integrità del sistema.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,10 +47,10 @@ HRESULT GetSoHRequest(
 
 <dl> <dt>
 
-*richiesta* \[ in\]
+*richiesta* \[ Pollici\]
 </dt> <dd>
 
-Puntatore COM a un oggetto [**INapSystemHealthAgentRequest**](inapsystemhealthagentrequest.md) che identifica l'oggetto Request.
+Puntatore COM a un [**oggetto INapSystemHealthAgentRequest**](inapsystemhealthagentrequest.md) che identifica l'oggetto richiesta.
 
 </dd> </dl>
 
@@ -60,44 +60,44 @@ Puntatore COM a un oggetto [**INapSystemHealthAgentRequest**](inapsystemhealthag
 
 | Codice restituito                                                                                                                      | Descrizione                                                                                                                                        |
 |----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                                             | Indica l'esito positivo dell'operazione.<br/>                                                                                                                      |
-| <dl> <dt>**HRESULT \_ da \_ Win32 ( \_ server RPC \_ non \_ disponibile)**</dt> </dl> | Se questo codice viene restituito dall'implementazione, NapAgent rimuove l'SHA dall'elenco Bound-SHA e Scarica la voce della cache.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                                             | Indica l'esito positivo dell'operazione.<br/>                                                                                                                      |
+| <dl> <dt>**HRESULT \_ DA \_ WIN32 (SERVER \_ RPC S NON \_ \_ DISPONIBILE)**</dt> </dl> | Se questo codice viene restituito dall'implementazione, NapAgent rimuove l'sha dall'elenco bound-SHA e scarica la voce della cache.<br/> |
 
 
 
  
 
-Quando un valore restituito (ad eccezione di **HRESULT \_ da \_ Win32 (server RPC non \_ \_ \_ disponibile)**) viene restituito dall'implementazione, il sistema di protezione accesso alla rete crea e restituisce un [**SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) all'oggetto convalida integrità corrispondente con i tipi e i valori di attributo seguenti:
+Quando un valore restituito (ad eccezione di **HRESULT \_ FROM \_ WIN32(RPC \_ S SERVER \_ \_ UNAVAILABLE)**) viene restituito dall'implementazione, il sistema nap costruisce e restituisce [**un SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) alla shv corrispondente con i tipi di attributo e i valori seguenti:
 
 -   [**sohAttributeTypeSystemHealthId**](sohattributetype-enum.md)= <id>
 -   [**sohAttributeTypeFailureCategory**](sohattributetype-enum.md) =  [ **failureCategoryClientComponent**](/windows/win32/api/naptypes/ne-naptypes-failurecategory)
--   [**sohAttributeTypeErrorCodes**](sohattributetype-enum.md) = errore <-codice>
+-   [**sohAttributeTypeErrorCodes**](sohattributetype-enum.md) = <codice di errore>
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di callback viene dichiarato dal sistema NAP e deve essere implementato dal writer SHA.
+Questo metodo di callback viene dichiarato dal sistema nap e deve essere implementato dal writer SHA.
 
-Questo metodo deve elaborare la richiesta e restituire immediatamente un risultato. Ritardare la restituzione di questo metodo influisce negativamente sulle prestazioni e la velocità di risposta del sistema e può causare il timeout di altre parti del sistema operativo.
+Questo metodo deve elaborare la richiesta e restituire immediatamente un valore. Il ritardo della restituzione di questo metodo influisce negativamente sulle prestazioni e sulla velocità di risposta del sistema e può causare il timeout di altre parti del sistema operativo.
 
-Il monitoraggio dello stato di integrità non deve essere eseguito come parte di questa chiamata, soprattutto se si tratta di un utilizzo intensivo del calcolo e richiede molto tempo. Il monitoraggio dello stato di integrità e il calcolo del rapporto di integrità devono essere eseguiti in un thread o un servizio separato. L'unica funzione di questo metodo deve essere quella di impostare il rapporto di integrità SHA e restituire.
+Il monitoraggio dello stato di integrità non deve essere eseguito come parte di questa chiamata, soprattutto se è a elevato utilizzo di calcolo e richiede molto tempo. Il monitoraggio dello stato di integrità e il calcolo SoH devono essere eseguiti in un thread o in un servizio separato. L'unica funzione di questo metodo deve essere impostare il soH dell'SHA e restituire.
 
-Se la generazione di un rapporto di integrità da parte di SHA richiede molto tempo, il rapporto di integrità memorizzato nella cache deve essere restituito a NapAgent. Se non viene restituito alcun rapporto di integrità memorizzato nella cache, l'SHA dovrebbe restituire immediatamente un rapporto di integrità con i tipi e i valori di attributo seguenti:
+Se la generazione di un soH da parte dell'SHA può richiedere molto tempo, il file SoH memorizzato nella cache deve essere restituito a NapAgent. Se non è presente alcun SoH memorizzato nella cache da restituire, l'SHA deve restituire immediatamente un soh con i tipi di attributo e i valori seguenti:
 
 -   [**sohAttributeTypeSystemHealthId**](sohattributetype-enum.md)= <id>
 -   [**sohAttributeTypeFailureCategory**](sohattributetype-enum.md) =  [ **failureCategoryClientCommunication**](/windows/win32/api/naptypes/ne-naptypes-failurecategory)
--   [**sohAttributeTypeErrorCodes**](sohattributetype-enum.md)  =  [ **NAP \_ E \_ nessun rapporto di \_ \_ integrità memorizzato nella cache**](nap-error-constants.md)
+-   [**sohAttributeTypeErrorCodes**](sohattributetype-enum.md)  =  [ **NAP \_ E NO \_ \_ CACHED \_ SOH**](nap-error-constants.md)
 
-Quando è stato generato il rapporto di integrità, SHA deve chiamare [**INapSystemHealthAgentBinding:: NotifySoHChange**](inapsystemhealthagentbinding-notifysohchange-method.md) per notificare al napagent la modifica dell'integrità del sistema.
+Dopo la generazione del soh, l'SHA deve chiamare [**INapSystemHealthAgentBinding::NotifySoHChange**](inapsystemhealthagentbinding-notifysohchange-method.md) per notificare a NapAgent la modifica dell'integrità del sistema.
 
-NapAgent chiama questo metodo per eseguire una query sul SoHRequest dell'agente integrità sistema. SHA può eseguire una query sull'oggetto [**INapSystemHealthAgentRequest**](inapsystemhealthagentrequest.md) passato per i parametri necessari per calcolare il SoHRequest. SHA deve impostare il SoHRequest calcolato nell'oggetto Request. Al termine della chiamata, il SHA non deve conservare riferimenti all'oggetto Request.
+NapAgent chiama questo metodo per eseguire una query su SoHRequest dell'agente di integrità del sistema. L'SHA può eseguire una query [**sull'oggetto INapSystemHealthAgentRequest**](inapsystemhealthagentrequest.md) passato per i parametri necessari per calcolare SoHRequest. L'SHA deve impostare l'oggetto SoHRequest calcolato nell'oggetto richiesta. L'SHA non deve contenere riferimenti all'oggetto richiesta al termine della chiamata.
 
-Quando questo metodo viene chiamato, se è presente un rapporto di integrità nella cache di NapAgent, viene impostato sull'oggetto Request. SHA può eseguire una query per l'oggetto usando **GetSoHRequest**. Se SHA non imposta un nuovo rapporto di integrità, viene usato il valore memorizzato nella cache.
+Quando questo metodo viene chiamato, se è presente un soh nella cache di NapAgent, viene impostato sull'oggetto richiesta. L'SHA può eseguire una query usando **GetSoHRequest.** Se SHA non imposta un nuovo soh, viene usato quello memorizzato nella cache.
 
-Per i SHAs non associati registrati con il sistema, il sistema di protezione accesso alla rete crea e invia un SoHRequest al servizio di convalida dell'integrità di sistema corrispondente con i tipi e i valori di attributo seguenti:
+Per le sha non associate registrate con il sistema, il sistema nap costruisce e invia un SoHRequest al shv corrispondente con i tipi di attributo e i valori seguenti:
 
 -   [**sohAttributeTypeSystemHealthId**](sohattributetype-enum.md)= <id>
 -   [**sohAttributeTypeFailureCategory**](sohattributetype-enum.md) =  [ **failureCategoryClientComponent**](/windows/win32/api/naptypes/ne-naptypes-failurecategory)
--   [**sohAttributeTypeErrorCodes**](sohattributetype-enum.md)  =  [ **NAP \_ E \_ non \_ inizializzato**](nap-error-constants.md)
+-   [**sohAttributeTypeErrorCodes**](sohattributetype-enum.md)  =  [ **PROTEZIONE \_ ACCESSO ALLA RETE E \_ NON \_ INIZIALIZZATA**](nap-error-constants.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -105,10 +105,10 @@ Per i SHAs non associati registrati con il sistema, il sistema di protezione acc
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>NapSystemHealthAgent. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                |
+| Intestazione<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 
 
 

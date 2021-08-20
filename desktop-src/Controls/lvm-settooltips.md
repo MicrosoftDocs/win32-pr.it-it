@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_SETTOOLTIPS (COMmctrl. h)
-description: Imposta il controllo ToolTip che il controllo visualizzazione elenco utilizzerà per visualizzare le descrizioni comandi. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro ListView Setooltips.
+title: LVM_SETTOOLTIPS messaggio (Commctrl.h)
+description: Imposta il controllo descrizione comando che verrà utilizzato dal controllo visualizzazione elenco per visualizzare le descrizioni comando. Puoi inviare questo messaggio in modo esplicito o usare la \_ macro ListView SetToolTips.
 ms.assetid: 5b4335a4-e9f0-4b13-b00b-516af3b60bf1
 keywords:
-- Controlli di Windows Message LVM_SETTOOLTIPS
+- LVM_SETTOOLTIPS del messaggio Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,23 +14,23 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ff749c24a35cf73de2d75b8a3b516197b57aac4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7bf2256d94630b8e792fd1f148864f3588b27e73ea5781eb0bdcd24bf9571507
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118170397"
 ---
-# <a name="lvm_settooltips-message"></a>Messaggio di controllo delle \_ descrizioni LVM
+# <a name="lvm_settooltips-message"></a>Messaggio \_ LVM SETTOOLTIPS
 
-Imposta il controllo ToolTip che il controllo visualizzazione elenco utilizzerà per visualizzare le descrizioni comandi. È possibile inviare questo messaggio in modo esplicito o usare la macro [**ListView \_ setooltips**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settooltips) .
+Imposta il controllo descrizione comando che verrà utilizzato dal controllo visualizzazione elenco per visualizzare le descrizioni comando. Puoi inviare questo messaggio in modo esplicito o usare la macro [**\_ ListView SetToolTips.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settooltips)
 
 ## <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
 *wParam* 
-</dt> <dd>Handle per il controllo ToolTip da impostare.</dd> <dt>
+</dt> <dd>Handle per il controllo descrizione comando da impostare.</dd> <dt>
 
 *lParam* 
 </dt> <dd>
@@ -41,7 +41,7 @@ Deve essere zero.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'handle per il controllo ToolTip precedente.
+Restituisce l'handle al controllo descrizione comando precedente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce l'handle per il controllo ToolTip precedente.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Restituisce l'handle per il controllo ToolTip precedente.
 
 <dl> <dt>
 
-[**\_GETtooltips LVM**](lvm-gettooltips.md)
+[**LVM \_ GETTOOLTIPS**](lvm-gettooltips.md)
 </dt> </dl>
 
  

@@ -1,25 +1,25 @@
 ---
-title: Associazione a un oggetto tramite un SID
-description: In Windows Server 2003, è possibile eseguire l'associazione a un oggetto usando l'ID di sicurezza (SID) dell'oggetto e un GUID. Il SID dell'oggetto viene archiviato nell'attributo objectSID. Il binding a un SID non funziona in Windows 2000.
+title: Associazione a un oggetto usando un SID
+description: In Windows Server 2003 è possibile eseguire l'associazione a un oggetto usando l'identificatore di sicurezza (SID) dell'oggetto e un GUID. Il SID dell'oggetto viene archiviato nell'attributo objectSID. L'associazione a un SID non funziona Windows 2000.
 ms.assetid: 18b4613c-eb93-4204-96f2-0f91d7900587
 ms.tgt_platform: multiple
 keywords:
-- Associazione a un oggetto tramite un annuncio SID
-- Active Directory, utilizzo di, associazione, associazione a un oggetto tramite un SID
+- Associazione a un oggetto tramite un SID AD
+- Active Directory, uso, associazione, associazione a un oggetto usando un SID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9ad4ecf2d6faa385ab8085730e4f1cb0689e403
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 11508d82ddc415e304503a7fee67296b8d2fc966262cf054437fe8a4bd5523a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104472691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118023763"
 ---
-# <a name="binding-to-an-object-using-a-sid"></a>Associazione a un oggetto tramite un SID
+# <a name="binding-to-an-object-using-a-sid"></a>Associazione a un oggetto usando un SID
 
-In Windows Server 2003, è possibile eseguire l'associazione a un oggetto usando l'ID di sicurezza (SID) dell'oggetto e un GUID. Il SID dell'oggetto viene archiviato nell'attributo **objectSID** . Il binding a un SID non funziona in Windows 2000.
+In Windows Server 2003 è possibile eseguire l'associazione a un oggetto usando l'identificatore di sicurezza (SID) dell'oggetto e un GUID. Il SID dell'oggetto viene archiviato **nell'attributo objectSID.** L'associazione a un SID non funziona Windows 2000.
 
-Il provider LDAP per Active Directory Domain Services fornisce un metodo per l'associazione a un oggetto tramite il SID dell'oggetto. Il formato della stringa di associazione è:
+Il provider LDAP per Active Directory Domain Services un metodo da associare a un oggetto usando il SID dell'oggetto. Il formato della stringa di associazione è:
 
 
 ```C++
@@ -28,7 +28,7 @@ LDAP://servername/<SID=XXXXX>
 
 
 
-In questo esempio "ServerName" è il nome del server di directory e "XXXXX" è la rappresentazione di stringa del valore esadecimale del SID. "ServerName" è facoltativo. La stringa SID viene specificata in un form in cui ogni carattere della stringa è la rappresentazione esadecimale di ogni byte del SID. Ad esempio, se la matrice è:
+In questo esempio "servername" è il nome del server di directory e "XXXXX" è la rappresentazione di stringa del valore esadecimale del SID. "servername" è facoltativo. La stringa SID viene specificata in un formato in cui ogni carattere nella stringa è la rappresentazione esadecimale di ogni byte del SID. Ad esempio, se la matrice è:
 
 
 ```C++
@@ -37,27 +37,27 @@ In questo esempio "ServerName" è il nome del server di directory e "XXXXX" è l
 
 
 
-la stringa di associazione SID è " &lt; SID = AB14E2 &gt; ". La funzione [**ADsEncodeBinaryData**](/windows/desktop/api/adshlp/nf-adshlp-adsencodebinarydata) non deve essere usata per convertire la matrice SID in una stringa perché precede ogni carattere byte con una barra rovesciata, che non è un formato di stringa di binding valido.
+la stringa di associazione SID sarà " &lt; SID=AB14E2 &gt; ". La [**funzione ADsEncodeBinaryData**](/windows/desktop/api/adshlp/nf-adshlp-adsencodebinarydata) non deve essere usata per convertire la matrice SID in una stringa perché precede ogni carattere di byte con una barra rovesciata, che non è un formato di stringa di associazione valido.
 
-La stringa SID può inoltre assumere il formato " &lt; SID = S-x-x-xx-xxxxxxxxxx-xxxxxxxxxx-xxxxxxxxx-XXX &gt; ", dove la parte "S-X-x-xx-XXXXXXXXXX-xxxxxxxxxx-xxxxxxxxx-xxx" è uguale alla stringa restituita dalla funzione [**ConvertSidToStringSid**](/windows/desktop/api/sddl/nf-sddl-convertsidtostringsida) .
+La stringa SID può anche assumere il formato " &lt; SID=S-X-X-XX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXX-XXX ", dove la parte &gt; "S-X-X-XX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXX-XXX" corrisponde alla stringa restituita dalla funzione [**ConvertSidToStringSid.**](/windows/desktop/api/sddl/nf-sddl-convertsidtostringsida)
 
-Quando si esegue l'associazione utilizzando il SID dell'oggetto, alcuni metodi e proprietà [**IADs**](/windows/desktop/api/iads/nn-iads-iads) e [**IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) non sono supportati. Le proprietà **IADs** seguenti non sono supportate dagli oggetti ottenuti tramite binding mediante il SID dell'oggetto:
+Quando si esegue l'associazione usando il SID dell'oggetto, alcuni [**metodi**](/windows/desktop/api/iads/nn-iads-iads) e proprietà [**IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) non sono supportati. Le proprietà **IAD** seguenti non sono supportate dagli oggetti ottenuti tramite l'associazione tramite il SID dell'oggetto:
 
 -   [**ADsPath**](/windows/desktop/ADSI/iads-property-methods)
 -   [**Nome**](/windows/desktop/ADSI/iads-property-methods)
 -   [**Padre**](/windows/desktop/ADSI/iads-property-methods)
 
-I metodi **IADsContainer** seguenti non sono supportati dagli oggetti ottenuti dall'associazione usando il SID dell'oggetto:
+I metodi **IADsContainer** seguenti non sono supportati dagli oggetti ottenuti tramite l'associazione tramite il SID dell'oggetto:
 
--   [**GetObject**](/windows/desktop/api/iads/nf-iads-iadscontainer-getobject)
--   [**Creare**](/windows/desktop/api/iads/nf-iads-iadscontainer-create)
--   [**Delete**](/windows/desktop/api/iads/nf-iads-iadscontainer-delete)
+-   [**Getobject**](/windows/desktop/api/iads/nf-iads-iadscontainer-getobject)
+-   [**Crea**](/windows/desktop/api/iads/nf-iads-iadscontainer-create)
+-   [**Elimina**](/windows/desktop/api/iads/nf-iads-iadscontainer-delete)
 -   [**CopyHere**](/windows/desktop/api/iads/nf-iads-iadscontainer-copyhere)
 -   [**MoveHere**](/windows/desktop/api/iads/nf-iads-iadscontainer-movehere)
 
-Per utilizzare questi metodi e proprietà dopo l'associazione a un oggetto utilizzando il SID oggetto, utilizzare il metodo [**IADs. Get**](/windows/desktop/api/iads/nf-iads-iads-get) per recuperare il nome distinto dell'oggetto e quindi utilizzare il nome distinto per associare nuovamente l'oggetto.
+Per usare questi metodi e proprietà dopo l'associazione a un oggetto usando il SID dell'oggetto, usare il metodo [**IADs.Get**](/windows/desktop/api/iads/nf-iads-iads-get) per recuperare il nome distinto dell'oggetto e quindi usare il nome distinto per eseguire nuovamente l'associazione all'oggetto.
 
-Nell'esempio di codice seguente viene illustrato come convertire un **objectSID** in una stringa associabile.
+Nell'esempio di codice seguente viene illustrato come convertire **un objectSid** in una stringa associabile.
 
 
 ```C++
@@ -174,6 +174,6 @@ HRESULT VariantArrayToBytes(VARIANT Variant,
 
 
 
- 
+ 
 
- 
+ 

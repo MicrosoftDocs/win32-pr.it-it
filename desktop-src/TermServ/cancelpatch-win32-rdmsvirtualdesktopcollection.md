@@ -5,7 +5,7 @@ ms.assetid: fb0d6831-5c69-4017-b725-1a5038ad69f5
 ms.tgt_platform: multiple
 keywords:
 - Metodo CancelPatch Servizi Desktop remoto
-- Metodo CancelPatch Servizi Desktop remoto , Win32_RDMSVirtualDesktopCollection classe
+- Il metodo CancelPatch Servizi Desktop remoto , Win32_RDMSVirtualDesktopCollection classe
 - Win32_RDMSVirtualDesktopCollection classe Servizi Desktop remoto , metodo CancelPatch
 topic_type:
 - apiref
@@ -24,7 +24,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118131330"
 ---
-# <a name="cancelpatch-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Metodo CancelPatch della classe \_ RDMSVirtualDesktopCollection Win32
+# <a name="cancelpatch-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Metodo CancelPatch della classe \_ WIN32 RDMSVirtualDesktopCollection
 
 Annulla un processo di provisioning degli aggiornamenti software per le macchine virtuali in una raccolta di desktop virtuali.
 
@@ -43,7 +43,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI.
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,7 +53,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                |
+| Spazio dei nomi<br/>                | Root \\ CIMv2 \\ rdms<br/>                                                                |
 | MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 

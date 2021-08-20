@@ -1,38 +1,38 @@
 ---
-title: Archiviazione ottica di livello 2
-description: Archiviazione ottica di livello 2
+title: Livello 2- Ottico Archiviazione
+description: Livello 2- Ottico Archiviazione
 ms.assetid: b96cba24-34f9-407b-a003-59b7ca035917
 keywords:
-- PC multimediali (MPC), livello 2
-- MPC (PC multimediale), livello 2
-- Consiglio marketing per PC multimediali, livello 2
-- Livello 2 di MPC, archiviazione ottica
+- PC multimediale (MPC), livello 2
+- MPC (Multimedia PC),Livello 2
+- Multimedia PC Marketing Council,Level 2
+- MPC Livello 2, archiviazione ottico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cb0c6cafe77b7a09af89b49d12d74ce718bbc39
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f7501dc69f1239f9768717317c4bad74c0c15c76a815170939b21b72d55e558e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855877"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118139717"
 ---
-# <a name="level-2-optical-storage"></a>Archiviazione ottica di livello 2
+# <a name="level-2-optical-storage"></a>Livello 2- Ottico Archiviazione
 
-Il dispositivo di archiviazione ottico con prestazioni minime è un'unità CD-ROM a doppia velocità che soddisfa i criteri seguenti:
+Il dispositivo di archiviazione ottico a prestazioni minime è un'unità CD-ROM a doppia velocità che soddisfa i criteri seguenti:
 
--   Velocità di trasferimento dati prolungata di 300 kilobyte al secondo
--   Un utilizzo della larghezza di banda della CPU pari o inferiore al 40% quando si mantiene una velocità di trasferimento dati prolungata di 150 kilobyte al secondo o una larghezza di banda della CPU pari al 60% o inferiore quando si mantiene una velocità di trasferimento dati prolungata di 300 kilobyte al secondo
--   Tempo medio di ricerca di 400 millisecondi o inferiore
--   Classificazione con intervallo di tempo medio di 10.000 ore-tra-errori
--   CD-ROM XA pronto (modalità 1, in grado di supportare la modalità 2 form 1, in grado di supportare il form 2)
--   Supporto multisessione
--   Driver MSCDEX-2,2 o equivalente che implementa le funzioni audio estese
+-   Una velocità di trasferimento dati costante di 300 kilobyte al secondo
+-   Un utilizzo della larghezza di banda della CPU del 40% o inferiore quando si mantiene una velocità di trasferimento dati sostenuta di 150 kilobyte al secondo o una larghezza di banda della CPU del 60% o inferiore quando si mantiene una velocità di trasferimento dati sostenuta di 300 kilobyte al secondo
+-   Un tempo medio di ricerca di 400 millisecondi o inferiore
+-   Una classificazione di 10.000 ore media-tempo-tra errori
+-   Cd-ROM XA ready (modalità 1 idonea, modalità 2 form 1, modalità 2 idonea)
+-   Supporto per più sessioni
+-   Driver MSCDEX-2.2 o equivalente che implementa le funzioni audio estese
 
-La larghezza di banda consigliata per la CPU deve essere raggiunta usando una dimensione del blocco di lettura pari ad almeno 16K e un lead time di non più del tempo necessario per caricare un blocco di lettura di dati nel buffer CD-ROM.
+La larghezza di banda della CPU consigliata deve essere raggiunta usando una dimensione del blocco di lettura di almeno 16 KB e un lead time non superiore al tempo necessario per caricare un blocco di lettura di dati nel buffer CD-ROM.
 
- 
+ 
 
- 
+ 
 
 
 

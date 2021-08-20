@@ -1,11 +1,11 @@
 ---
-title: Proprietà burnPlaylist di IWMPCdromBurn
+title: Proprietà burnPlaylist IWMPCdromPlaylist
 description: La proprietà burnPlaylist ottiene la playlist corrente da masterizzare nel CD.
 ms.assetid: 973032de-7249-4ccd-9909-ccc888f4490f
 keywords:
-- Finestra delle proprietà di burnPlaylist Media Player
-- Proprietà di burnPlaylist Media Player Windows, interfaccia IWMPCdromBurn
-- Interfaccia IWMPCdromBurn Windows Media Player, proprietà burnPlaylist
+- Proprietà burnPlaylist Windows Media Player
+- Proprietà burnPlaylist Windows Media Player, interfaccia IWMPCdromCombo
+- Interfaccia IWMPCdrom Windows Media Player , proprietà burnPlaylist
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cae095696b9c106926fb7f363430574b2eb87cea
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 186996632a5b25c89019f9bbb692d9804ae33130650d4b0a29c0cb51e30d0792
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116594"
 ---
-# <a name="iwmpcdromburnburnplaylist-property"></a>Proprietà IWMPCdromBurn:: burnPlaylist
+# <a name="iwmpcdromburnburnplaylist-property"></a>Proprietà IWMPCdromComb::burnPlaylist
 
-La proprietà **burnPlaylist** ottiene la playlist corrente da masterizzare nel CD.
+La **proprietà burnPlaylist** ottiene la playlist corrente da masterizzare nel CD.
 
 Questa proprietà è di sola lettura.
 
@@ -49,7 +49,7 @@ Public ReadOnly Property burnPlaylist As IWMPPlaylist
 
 ## <a name="property-value"></a>Valore proprietà
 
-Interfaccia **wmplib. IWMPPlaylist** della playlist da masterizzare.
+Interfaccia **WMPLib.IWMPPlaylist** della playlist da masterizzare.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,7 +67,7 @@ Interfaccia **wmplib. IWMPPlaylist** della playlist da masterizzare.
 
 <dl> <dt>
 
-[**Interfaccia IWMPCdromBurn (VB e C#)**](iwmpcdromburn--vb-and-c.md)
+[**Interfaccia IWMPCdrom Sistema (VB e C#)**](iwmpcdromburn--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaccia IWMPPlaylist (VB e C#)**](iwmpplaylist--vb-and-c.md)

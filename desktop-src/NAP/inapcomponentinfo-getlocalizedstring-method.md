@@ -1,10 +1,10 @@
 ---
-title: Metodo INapComponentInfo GetLocalizedString (NapCommon. h)
-description: Viene utilizzato dal sistema NAP per ottenere le stringhe localizzate.
+title: Metodo INapComponentInfo GetLocalizedString (NapCommon.h)
+description: Viene usato dal sistema di Protezione accesso alla rete per ottenere stringhe localizzate.
 ms.assetid: ad5be180-6329-4c91-b4d1-871a4d83c323
 keywords:
-- NAP metodo GetLocalizedString
-- Metodo GetLocalizedString NAP, interfaccia INapComponentInfo
+- Metodo GetLocalizedString nap
+- Metodo GetLocalizedString NAP , interfaccia INapComponentInfo
 - Interfaccia INapComponentInfo NAP, metodo GetLocalizedString
 topic_type:
 - apiref
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 781e4e8c93f58039c72a98f40a529243e5722d23
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e7be55595bf6c5af6e435d9c53c9b473a721005699da494319ba55eaa828da2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134364"
 ---
-# <a name="inapcomponentinfogetlocalizedstring-method"></a>Metodo INapComponentInfo:: GetLocalizedString
+# <a name="inapcomponentinfogetlocalizedstring-method"></a>Metodo INapComponentInfo::GetLocalizedString
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo di callback **INapComponentInfo:: GetLocalizedString** viene utilizzato dal sistema NAP per ottenere le stringhe localizzate.
+Il metodo di callback **INapComponentInfo::GetLocalizedString** viene usato dal sistema di Protezione accesso alla rete per ottenere stringhe localizzate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,17 +48,17 @@ HRESULT GetLocalizedString(
 
 <dl> <dt>
 
-*msgid* \[ in\]
+*msgId* \[ Pollici\]
 </dt> <dd>
 
-[**MessageID**](nap-datatypes.md) che contiene l'ID risorsa della stringa da localizzare.
+MessageId [**che**](nap-datatypes.md) contiene l'ID risorsa della stringa da localizzare.
 
 </dd> <dt>
 
-*stringa* \[ di out\]
+*string* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un puntatore a un [**CountedString**](/windows/win32/api/naptypes/ns-naptypes-countedstring) che contiene la versione localizzata del messaggio.
+Puntatore a un puntatore a [**un oggetto CountedString**](/windows/win32/api/naptypes/ns-naptypes-countedstring) che contiene la versione localizzata del messaggio.
 
 </dd> </dl>
 
@@ -71,8 +71,8 @@ Restituisce uno di questi codici di errore in base al risultato di questa operaz
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | L'operazione è riuscita.<br/>                            |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Errore delle autorizzazioni, accesso negato.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema: impossibile eseguire l'operazione.<br/> |
 
 
 
@@ -88,10 +88,10 @@ Le stringhe devono essere localizzate in base all'ID lingua del thread chiamante
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>NapCommon.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapCommon.idl</dt> </dl> |
 
 
 

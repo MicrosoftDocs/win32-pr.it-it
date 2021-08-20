@@ -1,39 +1,39 @@
 ---
 title: Porting del codice in modalità MSINGLE
-description: OpenGL non ha un equivalente per la modalità MSINGLE, a matrice singola.
+description: OpenGL non ha alcun equivalente per la modalità a matrice singola MSINGLE.
 ms.assetid: 7de933b8-150c-432d-89ee-5f5799ad8443
 keywords:
-- Porting di IRIS GL, modalità MSINGLE
+- Porting IRIS GL, modalità MSINGLE
 - porting da IRIS GL, modalità MSINGLE
-- porting in OpenGL da IRIS GL, modalità MSINGLE
+- porting a OpenGL da IRIS GL, modalità MSINGLE
 - Porting OpenGL da IRIS GL, modalità MSINGLE
 - Modalità MSINGLE
-- Porting di IRIS GL, modalità a matrice singola
+- Porting IRIS GL, modalità a matrice singola
 - porting da IRIS GL, modalità a matrice singola
-- porting in OpenGL da IRIS GL, modalità a matrice singola
+- porting a OpenGL da IRIS GL, modalità a matrice singola
 - Porting OpenGL da IRIS GL, modalità a matrice singola
 - modalità a matrice singola
-- modalità a doppia matrice
+- modalità a matrice doppia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b8c62f93fa8e027dd1c91ca0bd40bc8e6ffaf9f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 83716cead9134ba7823f4206fb6479d323bd35bddee480e9353a7ceb9aad38ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118132390"
 ---
 # <a name="porting-msingle-mode-code"></a>Porting del codice in modalità MSINGLE
 
-OpenGL non ha un equivalente per la modalità **MSINGLE**, a matrice singola. Anche se l'uso di questa modalità è stato sconsigliato, è l'impostazione predefinita per IRIS GL. Se il programma IRIS GL usa la modalità a matrice singola, è necessario riscriverlo per usare solo la modalità a matrice doppia. OpenGL è sempre in modalità a doppia matrice ed è inizialmente in modalità GL \_ MODELVIEW.
+OpenGL non ha alcun equivalente per **MSINGLE,** modalità a matrice singola. Anche se l'uso di questa modalità è stato sconsigliato, è l'impostazione predefinita per IRIS GL. Se il programma IRIS GL usa la modalità a matrice singola, è necessario riscriverla per usare solo la modalità a matrice doppia. OpenGL è sempre in modalità a matrice doppia e inizialmente è in \_ modalità GL MODELVIEW.
 
-La maggior parte del codice IRIS GL in modalità MSINGLE è simile a quanto segue:
+La maggior parte del codice GL IRIS in modalità MSINGLE è simile alla seguente:
 
 ``` syntax
 projectionmatrix();
 ```
 
-dove *ProjectionMatrix* è uno dei seguenti: **Ortho**, **ortho2**, **Perspective** o **Window**. Per eseguire la porta in OpenGL, sostituire la funzione *ProjectionMatrix* in modalità **MSINGLE** con:
+dove *projectionmatrix* è uno dei seguenti: **ortho**, **ortho2**, **perspective** o **window**. Per eseguire la porta a OpenGL, sostituire la funzione *projectionmatrix* **MSINGLE** -mode con:
 
 
 ```C++
@@ -49,9 +49,9 @@ glLoadMatrix( identity matrix );
 
 
 
- 
+ 
 
- 
+ 
 
 
 

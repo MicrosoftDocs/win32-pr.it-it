@@ -1,46 +1,46 @@
 ---
-title: Attributo FitPath di la
-description: Attributo FitPath di la
+title: Attributo VmL FitPath
+description: Attributo VmL FitPath
 ms.assetid: f15775ed-f7b7-45d9-83ed-e307daf7451b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1805e59a50c63248ed936f6a849869057a34a6e5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8863fb4d8a382ac9ccddaf7cc55fe5e8ceeff221dc1f816e340fa0a78cf9d7b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104224022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118124784"
 ---
-# <a name="vml-fitpath-attribute"></a>Attributo FitPath di la
+# <a name="vml-fitpath-attribute"></a>Attributo VmL FitPath
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Definisce se il testo corrisponde al percorso di una forma. Proprietà di lettura/scrittura. **VgTriState**.
+Definisce se il testo si adatta al percorso di una forma. Proprietà di lettura/scrittura. **VgTriState**.
 
 **Si applica a**
 
 [TextPath](msdn-online-vml-textpath-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* fitpath = " *Expression* " >
+<v: *elemento* fitpath=" *espressione* ">
 
 **Sintassi dello script**
 
-*element* . fitpath = "*Expression*"
+*element* .fitpath="*expression*"
 
-*espressione* = *elemento*. fitpath
+*expression* = *elemento*.fitpath
 
 **Osservazioni:**
 
-Se **true**, ridimensiona il testo per riempire il percorso su cui si trova. Il valore predefinito è **False**.
+Se **True,** ridimensiona il testo per riempire il percorso su cui si trova. Il valore predefinito è **False**.
 
-*Attributo standard la*
+*Attributo standard VML*
 
 **Esempio**
 
@@ -58,6 +58,6 @@ Il testo si adatterà al percorso.
 
 
 
- 
+ 
 
- 
+ 

@@ -1,30 +1,30 @@
 ---
-title: Proprietà ConnectingText di IMsTscAx
-description: Specifica il testo visualizzato al centro del controllo mentre è in corso la connessione del controllo.
+title: Proprietà IMsTscAx ConnectingText
+description: Specifica il testo visualizzato al centro nel controllo mentre il controllo è connesso.
 ms.assetid: 9bc82074-988f-491b-80e3-00c3f7ba437a
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà ConnectingText
-- Servizi Desktop remoto proprietà ConnectingText, interfaccia IMsTscAx
-- Interfaccia IMsTscAx Servizi Desktop remoto, proprietà ConnectingText
-- Servizi Desktop remoto proprietà ConnectingText, interfaccia IMsRdpClient
-- Interfaccia IMsRdpClient Servizi Desktop remoto, proprietà ConnectingText
-- Servizi Desktop remoto proprietà ConnectingText, interfaccia IMsRdpClient2
-- Interfaccia IMsRdpClient2 Servizi Desktop remoto, proprietà ConnectingText
-- Servizi Desktop remoto proprietà ConnectingText, interfaccia IMsRdpClient3
-- Interfaccia IMsRdpClient3 Servizi Desktop remoto, proprietà ConnectingText
-- Servizi Desktop remoto proprietà ConnectingText, interfaccia IMsRdpClient4
-- Interfaccia IMsRdpClient4 Servizi Desktop remoto, proprietà ConnectingText
-- Servizi Desktop remoto proprietà ConnectingText, interfaccia IMsRdpClient5
-- Interfaccia IMsRdpClient5 Servizi Desktop remoto, proprietà ConnectingText
-- Servizi Desktop remoto proprietà ConnectingText, interfaccia IMsRdpClient6
-- Interfaccia IMsRdpClient6 Servizi Desktop remoto, proprietà ConnectingText
-- Servizi Desktop remoto proprietà ConnectingText, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, proprietà ConnectingText
-- Servizi Desktop remoto proprietà ConnectingText, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, proprietà ConnectingText
-- Servizi Desktop remoto proprietà ConnectingText, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, proprietà ConnectingText
+- Proprietà ConnectingText Servizi Desktop remoto
+- Proprietà ConnectingText Servizi Desktop remoto , interfaccia IMsTscAx
+- Interfaccia IMsTscAx Servizi Desktop remoto , proprietà ConnectingText
+- Proprietà ConnectingText Servizi Desktop remoto , interfaccia IMsRdpClient
+- Interfaccia IMsRdpClient Servizi Desktop remoto proprietà ConnectingText
+- Proprietà ConnectingText Servizi Desktop remoto , interfaccia IMsRdpClient2
+- Interfaccia IMsRdpClient2 Servizi Desktop remoto , proprietà ConnectingText
+- Proprietà ConnectingText Servizi Desktop remoto , interfaccia IMsRdpClient3
+- Interfaccia IMsRdpClient3 Servizi Desktop remoto , proprietà ConnectingText
+- Proprietà ConnectingText Servizi Desktop remoto , interfaccia IMsRdpClient4
+- Interfaccia IMsRdpClient4 Servizi Desktop remoto , proprietà ConnectingText
+- Proprietà ConnectingText Servizi Desktop remoto , interfaccia IMsRdpClient5
+- Interfaccia IMsRdpClient5 Servizi Desktop remoto , proprietà ConnectingText
+- Proprietà ConnectingText Servizi Desktop remoto , interfaccia IMsRdpClient6
+- Interfaccia IMsRdpClient6 Servizi Desktop remoto , proprietà ConnectingText
+- Proprietà ConnectingText Servizi Desktop remoto , interfaccia IMsRdpClient7
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto , proprietà ConnectingText
+- Proprietà ConnectingText Servizi Desktop remoto , interfaccia IMsRdpClient8
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto , proprietà ConnectingText
+- Proprietà ConnectingText Servizi Desktop remoto , interfaccia IMsRdpClient9
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto , proprietà ConnectingText
 topic_type:
 - apiref
 api_name:
@@ -64,16 +64,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 433da7d159f1fe5bf44114a0b76ed9b4d807046f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7342e47658e77d9fb29ef03ab1995e5263c78a8e31d2f020852e5fa10864a031
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118129673"
 ---
-# <a name="imstscaxconnectingtext-property"></a>Proprietà IMsTscAx:: ConnectingText
+# <a name="imstscaxconnectingtext-property"></a>Proprietà IMsTscAx::ConnectingText
 
-Specifica il testo visualizzato al centro del controllo mentre è in corso la connessione del controllo.
+Specifica il testo visualizzato al centro nel controllo mentre il controllo è connesso.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -98,21 +98,21 @@ Nuovo testo visualizzato.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Se l'operazione ha esito positivo, restituire **S \_ OK** .
+Restituisce **S \_ OK in** caso di esito positivo.
 
-Restituisce un valore **HRESULT** diverso da zero se si verifica un errore.
+Restituisce un **HRESULT** diverso da zero se si verifica un errore.
 
 ## <a name="remarks"></a>Commenti
 
-Un esempio di testo della connessione è "connessione al server...".
+Un esempio di testo di connessione è "Connessione al server ...".
 
-L'impostazione della proprietà **ConnectingText** è facoltativa. Se non è impostato, il controllo appare vuoto prima che venga stabilita una connessione.
+L'impostazione **della proprietà ConnectingText** è facoltativa. Se non è impostato, il controllo viene visualizzato vuoto prima che venga stabilita una connessione.
 
-Questa proprietà può essere impostata solo se il controllo non è nello stato connesso. Restituisce **e ha \_ esito negativo** se viene chiamato quando il controllo è connesso. È possibile verificare se il controllo è connesso rispondendo agli eventi di connessione in [**IMsTscAxEvents**](imstscaxevents-interface.md) o esaminando la proprietà [**connessa**](imstscax-connected.md) .
+Questa proprietà può essere impostata solo se il controllo non è nello stato connesso. Restituisce **E \_ FAIL** se viene chiamato quando il controllo è connesso. È possibile verificare se il controllo è connesso rispondendo agli eventi di connessione in [**IMsTscAxEvents**](imstscaxevents-interface.md) o esaminando la [**proprietà Connected.**](imstscax-connected.md)
 
-Il metodo della proprietà **get \_ ConnectingText** alloca la memoria necessaria per il buffer a cui punta il parametro *pConnectingText* . La chiamata di applicazioni C/C++ deve liberare la memoria con una chiamata alla funzione [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) . Questa operazione non è necessaria per Visual Basic e client di scripting.
+Il **metodo della proprietà get \_ ConnectingText** alloca la memoria necessaria per il buffer a cui punta il *parametro pConnectingText.* Le chiamate alle applicazioni C/C++ devono liberare la memoria con una chiamata alla [**funzione SysFreeString.**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) Questa operazione non è necessaria per i client Visual Basic e script.
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -124,7 +124,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscAx è definito come 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
+| IID<br/>                      | IMsTscAx IID è definito come \_ 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
 
 
 

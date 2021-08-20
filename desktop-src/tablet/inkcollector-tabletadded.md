@@ -4,12 +4,12 @@ ms.assetid: c5f90fce-faf7-411b-a4d6-deb5d0f22f4a
 title: Evento InkCollector.TabletAdded (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad3088eff151d9857f8a1449d3c99805c949b790
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c14edc2842bd077a87fea1ac17a3170e6ceb7d40ed9afef2ca52b5f5c634a137
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118043060"
 ---
 # <a name="inkcollectortabletadded-event"></a>Evento InkCollector.TabletAdded
 
@@ -51,7 +51,7 @@ Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollec
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

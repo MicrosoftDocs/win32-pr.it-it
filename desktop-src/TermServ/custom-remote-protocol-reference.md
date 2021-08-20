@@ -17,7 +17,7 @@ ms.locfileid: "118131131"
 ---
 # <a name="remote-desktop-protocol-provider-reference"></a>Remote Desktop Protocol riferimento al provider
 
-L Remote Desktop Protocol API provider può essere usata per creare un protocollo che personalizza l'interazione tra il servizio Servizi Desktop remoto client desktop. Per ulteriori informazioni, vedere gli argomenti seguenti.
+L Remote Desktop Protocol API provider può essere usata per creare un protocollo che personalizza l'interazione tra il servizio Servizi Desktop remoto e i client desktop. Per ulteriori informazioni, vedere gli argomenti seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -30,7 +30,7 @@ L Remote Desktop Protocol API provider può essere usata per creare un protocoll
 
 <dl> <dt>
 
-[Creazione di un Remote Desktop Protocol provider](creating-a-custom-remote-protocol.md)
+[Creazione di un provider di Remote Desktop Protocol](creating-a-custom-remote-protocol.md)
 </dt> <dt>
 
 [Protocolli Desktop remoto personalizzati](custom-remote-desktop-protocols.md)
