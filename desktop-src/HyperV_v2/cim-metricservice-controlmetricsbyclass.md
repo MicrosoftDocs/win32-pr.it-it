@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: fda8407d49ed3eec7ff86abc94ced6b63d2d77c6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0ebd529faaea7995144481802d755eb705163d94e68133d493f6368ac0bc015a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900251"
 ---
 # <a name="controlmetricsbyclass-method-of-the-cim_metricservice-class"></a>Metodo ControlMetricsByClass della classe \_ CIM MetricService
 
@@ -44,14 +44,14 @@ uint32 ControlMetricsByClass(
 *Oggetto* \[ Pollici\]
 </dt> <dd>
 
-Identifica la [**classe CIM \_ ManagedElement**](cim-managedelement.md) per cui verranno controllate le metriche.
+Identifica la [**classe \_ CiM ManagedElement**](cim-managedelement.md) per cui verranno controllate le metriche.
 
 </dd> <dt>
 
 *Definizione* \[ Pollici\]
 </dt> <dd>
 
-Identifica una [**\_ baseMetricDefinition CIM**](cim-basemetricdefinition.md) per cui verranno controllate le metriche.
+Identifica un [**oggetto \_ BaseMetricDefinition CIM**](cim-basemetricdefinition.md) per il quale verranno controllate le metriche.
 
 </dd> <dt>
 
@@ -78,28 +78,28 @@ Indica l'operazione desiderata da eseguire sulle metriche.
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Reimposta** (4)
+**Reimpostazione** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DmTF riservato** (..)
+**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32768..65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un errore.
+Restituisce un valore 0 se l'operazione ha esito positivo. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -125,7 +125,7 @@ Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un err
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

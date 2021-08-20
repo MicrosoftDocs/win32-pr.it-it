@@ -1,25 +1,25 @@
 ---
-description: I componenti di illuminazione diffusa e speculare dell'equazione di illuminazione globale contengono termini che descrivono l'attenuazione chiara e il cono Spotlight. Questi termini sono descritti di seguito.
+description: I componenti di illuminazione diffusa e speculare dell'equazione di illuminazione globale contengono termini che descrivono l'attenuazione della luce e il cono dei riflettori. Questi termini sono descritti di seguito.
 ms.assetid: 960b5fc2-3074-4e51-b3de-5ed370379b01
-title: Attenuazione e fattore Spotlight (Direct3D 9)
+title: Attenuazione e fattore spotlight (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 623bb3cb2b1c2a3ee9e0e5d9419ff71dd9a303b6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cb80fff287749e2979a89f2e20c830fdad3961d90ec05bf90a4ee2f6a51f8bcf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104564255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850617"
 ---
-# <a name="attenuation-and-spotlight-factor-direct3d-9"></a>Attenuazione e fattore Spotlight (Direct3D 9)
+# <a name="attenuation-and-spotlight-factor-direct3d-9"></a>Attenuazione e fattore spotlight (Direct3D 9)
 
-I componenti di illuminazione diffusa e speculare dell'equazione di illuminazione globale contengono termini che descrivono l'attenuazione chiara e il cono Spotlight. Questi termini sono descritti di seguito.
+I componenti di illuminazione diffusa e speculare dell'equazione di illuminazione globale contengono termini che descrivono l'attenuazione della luce e il cono dei riflettori. Questi termini sono descritti di seguito.
 
 ## <a name="attenuation"></a>Attenuazione
 
-L'attenuazione di una luce dipende dal tipo di luce e dalla distanza tra la luce e la posizione del vertice. Per calcolare l'attenuazione, usare una delle equazioni seguenti.
+L'attenuazione di una luce dipende dal tipo di luce e dalla distanza tra la luce e la posizione dei vertici. Per calcolare l'attenuazione, usare una delle equazioni seguenti.
 
-Atten = 1/(att0<sub>i</sub> + Att1<sub>i</sub> \* d + ATT2<sub>i</sub> \* d ²)
+Atten = 1/( att0<sub>i</sub> + att1<sub>i</sub> \* d + att2<sub>i</sub> \* d²)
 
 Dove:
 
@@ -27,10 +27,10 @@ Dove:
 
 | Parametro        | Valore predefinito | Tipo  | Descrizione                                     | Range          |
 |------------------|---------------|-------|-------------------------------------------------|----------------|
-| att0<sub></sub> | 0,0           | FLOAT | Fattore di attenuazione costante                     | da 0 a + infinito |
-| Att1<sub></sub> | 0,0           | FLOAT | Fattore di attenuazione lineare                       | da 0 a + infinito |
-| ATT2<sub></sub> | 0,0           | FLOAT | Fattore di attenuazione quadratica                    | da 0 a + infinito |
-| d                | N/D           | FLOAT | Distanza dalla posizione del vertice alla posizione chiara | N/D            |
+| att0<sub>i</sub> | 0,0           | FLOAT | Fattore di attenuazione costante                     | Da 0 a +infinito |
+| att1<sub>i</sub> | 0,0           | FLOAT | Fattore di attenuazione lineare                       | Da 0 a +infinito |
+| att2<sub>i</sub> | 0,0           | FLOAT | Fattore di attenuazione quadratica                    | Da 0 a +infinito |
+| d                | N/A           | FLOAT | Distanza dalla posizione del vertice alla posizione della luce | N/A            |
 
 
 
@@ -39,7 +39,7 @@ Dove:
 -   Atten = 1, se la luce è una luce direzionale.
 -   Atten = 0, se la distanza tra la luce e il vertice supera l'intervallo della luce.
 
-I valori att0, att1, att2 sono specificati dai membri Attenuation0, Attenuation1 e Attenuation2 di [**D3DLIGHT9**](d3dlight9.md).
+I valori att0, att1, att2 vengono specificati dai membri Attenuation0, Attenuation1 e Attenuation2 di [**D3DLIGHT9.**](d3dlight9.md)
 
 La distanza tra la luce e la posizione del vertice è sempre positiva.
 
@@ -51,32 +51,32 @@ Dove:
 
 | Parametro       | Valore predefinito | Tipo      | Descrizione                                                 |
 |-----------------|---------------|-----------|-------------------------------------------------------------|
-| <sub>Dir</sub> | N/D           | D3DVECTOR | Vettore direzione dalla posizione vertice alla posizione chiara |
+| L<sub>dir</sub> | N/A           | D3DVECTOR | Vettore di direzione dalla posizione del vertice alla posizione della luce |
 
 
 
  
 
-Se d è maggiore dell'intervallo della luce, ovvero il membro di intervallo di una struttura [**D3DLIGHT9**](d3dlight9.md) , Direct3D non esegue ulteriori calcoli di attenuazione e non applica alcun effetto dalla luce al vertice.
+Se d è maggiore dell'intervallo della luce, vale a vedere il membro Range di una struttura [**D3DLIGHT9,**](d3dlight9.md) Direct3D non esegue ulteriori calcoli di attenuazione e non applica alcun effetto dalla luce al vertice.
 
-Le costanti di attenuazione agiscono come coefficienti nella formula: è possibile produrre una serie di curve di attenuazione apportando semplici regolazioni. È possibile impostare Attenuation1 su 1,0 per creare una luce che non si attenua, ma che sia ancora limitata da intervallo, oppure è possibile sperimentare valori diversi per ottenere vari effetti di attenuazione.
+Le costanti di attenuazione fungono da coefficienti nella formula: è possibile produrre un'ampia gamma di curve di attenuazione apportando semplici modifiche. È possibile impostare Attenuation1 su 1.0 per creare una luce che non si attenua ma è ancora limitata in base all'intervallo oppure è possibile sperimentare valori diversi per ottenere vari effetti di attenuazione.
 
-L'attenuazione nell'intervallo massimo della luce non è 0,0. Per evitare che le luci vengano visualizzate improvvisamente quando si trovano nell'intervallo di luce, un'applicazione può aumentare l'intervallo di luce. In alternativa, l'applicazione può impostare costanti di attenuazione in modo che il fattore di attenuazione si avvicini a 0,0 nell'intervallo chiaro. Il valore di attenuazione viene moltiplicato per i componenti rosso, verde e blu del colore della luce per ridimensionare l'intensità della luce come fattore della luce della distanza che passa a un vertice.
+L'attenuazione all'intervallo massimo della luce non è 0,0. Per evitare che le luci si presentino improvvisamente quando si trova al raggio di luce, un'applicazione può aumentare la gamma di luce. In caso contrario, l'applicazione può impostare costanti di attenuazione in modo che il fattore di attenuazione sia vicino a 0,0 alla gamma di luce. Il valore di attenuazione viene moltiplicato per i componenti rosso, verde e blu del colore della luce per ridimensionare l'intensità della luce come fattore della distanza che la luce viaggia verso un vertice.
 
 ## <a name="spotlight-factor"></a>Fattore Spotlight
 
-L'equazione seguente specifica il fattore Spotlight.
+L'equazione seguente specifica il fattore spotlight.
 
-![equazione del fattore Spotlight](images/dx8light9.png)
+![equazione del fattore spotlight](images/dx8light9.png)
 
 
 
 | Parametro         | Valore predefinito | Tipo  | Descrizione                              | Range                    |
 |-------------------|---------------|-------|------------------------------------------|--------------------------|
-| Rho<sub>i</sub>   | N/D           | FLOAT | coseno (angolo) per Spotlight i            | N/D                      |
-| <sub>i</sub>   | 0,0           | FLOAT | Angolo penombra del faretto i in radianti | \[Theta<sub>i</sub>, pi) |
-| Theta<sub>i</sub> | 0,0           | FLOAT | Angolo umbra del faretto i in radianti    | \[0, pi greco)                 |
-| falloff           | 0,0           | FLOAT | Fattore di interruzione                           | (-infinito, + infinito)   |
+| rho<sub>i</sub>   | N/A           | FLOAT | coseno (angolo) per spotlight i            | N/A                      |
+| phi<sub>i</sub>   | 0,0           | FLOAT | Angolo penumbra del riflettore i in radianti | \[theta<sub>i</sub>, pi greco) |
+| theta<sub>i</sub> | 0,0           | FLOAT | Angolo umbra di riflettore i in radianti    | \[0, pi greco)                 |
+| Falloff           | 0,0           | FLOAT | Fattore di falloff                           | (-infinity, +infinito)   |
 
 
 
@@ -84,7 +84,7 @@ L'equazione seguente specifica il fattore Spotlight.
 
 Dove:
 
-Rho = Norm (L<sub>DCS</sub>)<sup>.</sup> norma (L<sub>dir</sub>)
+rho = norm(L<sub>dcs</sub>)<sup>.</sup> norm(L<sub>dir</sub>)
 
 e:
 
@@ -92,14 +92,14 @@ e:
 
 | Parametro       | Valore predefinito | Tipo      | Descrizione                                                 |
 |-----------------|---------------|-----------|-------------------------------------------------------------|
-| <sub>Controller di dominio</sub> L | N/D           | D3DVECTOR | Il negativo della direzione della luce nello spazio della fotocamera         |
-| <sub>Dir</sub> | N/D           | D3DVECTOR | Vettore direzione dalla posizione vertice alla posizione chiara |
+| L<sub>dcs</sub> | N/A           | D3DVECTOR | Negativo della direzione della luce nello spazio della fotocamera         |
+| L<sub>dir</sub> | N/A           | D3DVECTOR | Vettore di direzione dalla posizione del vertice alla posizione della luce |
 
 
 
  
 
-Una volta calcolata l'attenuazione della luce, Direct3D Considera anche gli effetti Spotlight, se applicabile, l'angolo che la luce riflette da una superficie e la reflection del materiale corrente per calcolare i componenti diffusi e speculari per il vertice. Per altre informazioni, vedere [Spotlight](light-types.md).
+Dopo aver calcolato l'attenuazione della luce, Direct3D considera anche gli effetti in evidenza, se applicabile, l'angolo che la luce riflette da una superficie e la riflettenza del materiale corrente per calcolare i componenti diffusa e speculare per tale vertice. Per altre informazioni, vedere [SpotLight.](light-types.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

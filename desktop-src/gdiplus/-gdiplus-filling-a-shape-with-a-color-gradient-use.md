@@ -13,7 +13,7 @@ ms.locfileid: "118067241"
 ---
 # <a name="filling-a-shape-with-a-color-gradient"></a>Riempimento di una forma con una sfumatura di colore
 
-È possibile riempire una forma con un colore che cambia gradualmente usando un pennello sfumato. Windows GDI+ pennelli sfumatura lineare e pennelli sfumatura percorso. La figura seguente mostra un rettangolo riempito con un pennello sfumato lineare e un'ellisse riempita con un pennello sfumatura percorso.
+È possibile riempire una forma con un colore che cambia gradualmente usando un pennello sfumato. Windows GDI+ offre pennelli lineari a sfumatura e pennelli sfumatura percorso. La figura seguente mostra un rettangolo riempito con un pennello sfumato lineare e un'ellisse riempita con un pennello sfumatura percorso.
 
 ![Figura che mostra un rettangolo riempito dall'alto a sinistra in basso a destra e un'ellisse che si riempie dal centro al bordo](images/gradient2.png)
 

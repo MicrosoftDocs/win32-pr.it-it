@@ -3,28 +3,28 @@ title: Limitazione dell'ambito di riproduzione
 description: Limitazione dell'ambito di riproduzione
 ms.assetid: 080ab96f-1cb5-48d4-ac0a-8fd9ba68a31a
 keywords:
-- MCIWndPlayFrom (macro)
-- MCIWndPlayTo (macro)
-- MCIWndPlayFromTo (macro)
+- Macro MCIWndPlayFrom
+- Macro MCIWndPlayTo
+- Macro MCIWndPlayFromTo
 - Comandi di riproduzione MCI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 465bcf7a7b6b5811de8413a1c89f7befcf81037f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 064f62e913c33bef0582efaa950ee376e31a5b06a54d0e70674192e31a679a9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118139484"
 ---
 # <a name="limiting-the-playback-scope"></a>Limitazione dell'ambito di riproduzione
 
-Il controllo della riproduzione inizia con la macro [**MCIWndPlay**](/windows/desktop/api/Vfw/nf-vfw-mciwndplay) , che riproduce il contenuto o il file associato a una finestra di MCIWnd dalla posizione di riproduzione corrente fino alla fine del contenuto. Se si vuole limitare la riproduzione a una parte specifica del contenuto o del file, è possibile scegliere tra le altre macro MCIWnd di riproduzione: [**MCIWndPlayFrom**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayfrom), [**MCIWndPlayTo**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayto)e [**MCIWndPlayFromTo**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayfromto).
+Il controllo della riproduzione inizia con la macro [**MCIWndPlay,**](/windows/desktop/api/Vfw/nf-vfw-mciwndplay) che riproduce il contenuto o il file associato a una finestra MCIWnd dalla posizione di riproduzione corrente alla fine del contenuto. Se si vuole limitare la riproduzione a una parte specifica del contenuto o del file, è possibile scegliere tra le altre macro MCIWnd di riproduzione: [**MCIWndPlayFrom,**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayfrom) [**MCIWndPlayTo**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayto)e [**MCIWndPlayFromTo.**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayfromto)
 
-È anche necessario impostare un formato di ora appropriato. Il formato dell'ora determina se il contenuto viene misurato in frame, millisecondi, tracce o altre unità.
+È anche necessario impostare un formato di ora appropriato. Il formato dell'ora determina se il contenuto viene misurato in fotogrammi, millisecondi, tracce o altre unità.
 
-Nell'esempio seguente viene creata una finestra MCIWnd e vengono forniti i comandi di menu per riprodurre l'ultimo terzo, il primo terzo o il terzo medio del contenuto. Questi comandi di menu usano **MCIWndPlayFrom**, **MCIWndPlayTo** e **MCIWndPlayFromTo** per riprodurre i segmenti di contenuto. Nell'esempio vengono inoltre utilizzate le macro [**MCIWndGetStart**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetstart) e [**MCIWndGetEnd**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetend) per identificare l'inizio e la fine del contenuto e viene utilizzata la macro [**MCIWndHome**](/windows/desktop/api/Vfw/nf-vfw-mciwndhome) per spostare la posizione di riproduzione all'inizio del contenuto.
+L'esempio seguente crea una finestra MCIWnd e fornisce comandi di menu per riprodurre l'ultimo terzo, primo terzo o terzo intermedio del contenuto. Questi comandi di menu **usano MCIWndPlayFrom,** **MCIWndPlayTo** e **MCIWndPlayFromTo** per riprodurre i segmenti di contenuto. L'esempio usa anche le macro [**MCIWndGetStart**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetstart) e [**MCIWndGetEnd**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetend) per identificare l'inizio e la fine del contenuto e usa la macro [**MCIWndHome**](/windows/desktop/api/Vfw/nf-vfw-mciwndhome) per spostare la posizione di riproduzione all'inizio del contenuto.
 
-La funzione [**MCIWndCreate**](/windows/desktop/api/Vfw/nf-vfw-mciwndcreatea) usa gli stili WS \_ Caption e MCIWNDF \_ ShowAll, oltre agli stili standard della finestra per visualizzare il nome del file, la modalità e la posizione di riproduzione corrente nella barra del titolo della finestra MCIWnd.
+La funzione [**MCIWndCreate**](/windows/desktop/api/Vfw/nf-vfw-mciwndcreatea) usa gli stili WS CAPTION e MCIWNDF SHOWALL oltre agli stili della finestra standard per visualizzare il nome file, la modalità e la posizione di riproduzione corrente nella barra del titolo della \_ \_ finestra MCIWnd.
 
 
 ```C++
@@ -83,9 +83,9 @@ case WM_COMMAND:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

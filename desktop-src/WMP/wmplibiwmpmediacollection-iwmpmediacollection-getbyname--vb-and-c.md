@@ -1,11 +1,11 @@
 ---
-title: IWMPMediaCollection (metodo getByName)
-description: Il metodo getByName restituisce un'interfaccia IWMPPlaylist che consente di accedere agli elementi multimediali con il nome specificato.
+title: Metodo getByName IWMPMediaCollection
+description: Il metodo getByName restituisce un'interfaccia IWMPPlaylist che fornisce l'accesso agli elementi multimediali con il nome specificato.
 ms.assetid: 137e938c-eb9f-4a87-8962-880e71a11ca2
 keywords:
-- metodo getByName Media Player Windows
-- metodo getByName Media Player Windows, interfaccia IWMPMediaCollection
-- Interfaccia IWMPMediaCollection Windows Media Player, metodo getByName
+- Metodo getByName Windows Media Player
+- Metodo getByName Windows Media Player, interfaccia IWMPMediaCollection
+- Interfaccia IWMPMediaCollection Windows Media Player metodo , getByName
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64c68e2a5359eadf9c6212571ed948c103c01bdf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8c2e9eba2f4aa55e650a7e69572cc884fa237eb72869a0bbd882a42b546634c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053589"
 ---
-# <a name="iwmpmediacollectiongetbyname-method"></a>Metodo IWMPMediaCollection:: getByName
+# <a name="iwmpmediacollectiongetbyname-method"></a>Metodo IWMPMediaCollection::getByName
 
-Il `getByName` metodo restituisce un'interfaccia **IWMPPlaylist** che consente di accedere agli elementi multimediali con il nome specificato.
+Il `getByName` metodo restituisce **un'interfaccia IWMPPlaylist** che fornisce l'accesso agli elementi multimediali con il nome specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,26 +53,26 @@ Implements IWMPMediaCollection.getByName
 
 <dl> <dt>
 
-*bstrName* \[ in\]
+*bstrName* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta il nome specificato.
+Oggetto **System.String** che rappresenta il nome specificato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Interfaccia **wmplib. IWMPPlaylist** per gli elementi multimediali recuperati.
+Interfaccia **WMPLib.IWMPPlaylist** per gli elementi multimediali recuperati.
 
 ## <a name="remarks"></a>Commenti
 
-Prima di chiamare questo metodo, è necessario disporre dell'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di chiamare questo metodo, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
-Esistono due modi per recuperare un'interfaccia **IWMPMediaCollection** e il comportamento del `getByName` metodo dipende da quali di questi due modi si usano. Se si recupera l'interfaccia chiamando [AxWindowsMediaPlayer. mediacollection](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md), il `getByName` metodo restituisce tutti gli elementi multimediali nella libreria. Tuttavia, se si recupera l'interfaccia chiamando [IWMPLibrary. mediacollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), il `getByName` metodo restituisce solo gli elementi audio della raccolta con l'attributo e il valore specificati.
+Esistono due modi per recuperare **un'interfaccia IWMPMediaCollection** e il comportamento del metodo dipende da quale di questi due modi `getByName` si usa. Se si recupera l'interfaccia chiamando [AxWindowsMediaPlayer.mediaCollection](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md), il metodo restituisce tutti gli elementi `getByName` multimediali nella libreria. Tuttavia, se si recupera l'interfaccia chiamando [IWMPLibrary.mediaCollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), il metodo restituisce solo gli elementi audio nella libreria con l'attributo e `getByName` il valore specificati.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato `getByName` per recuperare tre elementi dalla libreria. Ogni elemento viene quindi aggiunto alla playlist corrente. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+Nell'esempio seguente `getByName` viene utilizzato per recuperare tre elementi dalla libreria . Ogni elemento viene quindi aggiunto alla playlist corrente. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -133,7 +133,7 @@ player.currentPlaylist.appendItem(three.Item(0))
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

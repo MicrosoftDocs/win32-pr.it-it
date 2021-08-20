@@ -1,9 +1,9 @@
 ---
-title: Struttura MCI_OVLY_OPEN_PARMS (mmsystem. h)
-description: La \_ struttura OVLY \_ Open \_ parametri di MCI contiene informazioni per il \_ comando di apertura MCI per i dispositivi con sovrimpressione video.
+title: MCI_OVLY_OPEN_PARMS struttura (Mmsystem.h)
+description: La struttura MCI OVLY OPEN PARMS contiene informazioni per \_ \_ il comando \_ MCI OPEN per i dispositivi di \_ sovrapposizione video.
 ms.assetid: 1559ae40-4aa5-4dfc-b337-7b056c706b67
 keywords:
-- Struttura MCI_OVLY_OPEN_PARMS di Windows Multimedia
+- MCI_OVLY_OPEN_PARMS struttura Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e64b864b4b0366421828960504aff3f5a83836b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a2f13d0e9f8a7a4b9f5477459286bc56b9c98b1f9564e8432329681aeaef66d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138277"
 ---
-# <a name="mci_ovly_open_parms-structure"></a>\_ \_ Struttura parametri aperta OVLY MCI \_
+# <a name="mci_ovly_open_parms-structure"></a>Struttura MCI \_ OVLY \_ OPEN \_ PARMS
 
-La **struttura \_ OVLY \_ Open \_ parametri di MCI** contiene informazioni per il comando di [**\_ apertura MCI**](mci-open.md) per i dispositivi con sovrimpressione video.
+La **struttura MCI \_ OVLY \_ OPEN \_ PARMS** contiene informazioni per il [**comando MCI \_ OPEN**](mci-open.md) per i dispositivi di sovrapposizione video.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La parola di ordine inferiore specifica un handle di finestra utilizzato per il \_ flag di notifica MCI.
+La parola più bassa specifica un handle di finestra utilizzato per il flag MCI \_ NOTIFY.
 
 </dd> <dt>
 
@@ -63,21 +63,21 @@ Identificatore restituito all'applicazione.
 **lpstrDeviceType**
 </dt> <dd>
 
-Nome o identificatore costante del tipo di dispositivo. Il nome del dispositivo viene in genere ottenuto dal registro di sistema o dal file di SYSTEM.INI. Se questo membro è una costante, può essere uno dei valori elencati nei tipi di [dispositivo MCI](mci-device-types.md).
+Nome o identificatore costante del tipo di dispositivo. Il nome del dispositivo viene in genere ottenuto dal Registro di sistema o SYSTEM.INI file. Se questo membro è una costante, può essere uno dei valori elencati in [McI Device Types](mci-device-types.md).
 
 </dd> <dt>
 
 **lpstrElementName**
 </dt> <dd>
 
-Nome dell'elemento del dispositivo (in genere un percorso).
+Nome dell'elemento dispositivo (in genere un percorso).
 
 </dd> <dt>
 
 **lpstrAlias**
 </dt> <dd>
 
-Alias del dispositivo facoltativo.
+Alias dispositivo facoltativo.
 
 </dd> <dt>
 
@@ -97,9 +97,9 @@ Handle per la finestra padre.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
+Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della [**funzione mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
 
-Se non si usano i membri dati estesi, è possibile usare la struttura [**\_ \_ parametri Open**](mci-open-parms.md) di MCI al posto di **MCI \_ OVLY \_ Open \_ parametri** .
+Se non si usano i membri dati estesi, è possibile usare la struttura [**MCI \_ OPEN \_ PARMS**](mci-open-parms.md) al posto di **MCI \_ OVLY \_ OPEN \_ PARMS.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -109,7 +109,7 @@ Se non si usano i membri dati estesi, è possibile usare la struttura [**\_ \_ p
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                            |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h</dt> </dl> |
 
 
 
@@ -117,16 +117,16 @@ Se non si usano i membri dati estesi, è possibile usare la struttura [**\_ \_ p
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Strutture MCI**](mci-structures.md)
 </dt> <dt>
 
-[**\_aperto MCI**](mci-open.md)
+[**MCI \_ OPEN**](mci-open.md)
 </dt> <dt>
 
-[**\_parametri aperto \_ MCI**](mci-open-parms.md)
+[**MCI \_ OPEN \_ PARMS**](mci-open-parms.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

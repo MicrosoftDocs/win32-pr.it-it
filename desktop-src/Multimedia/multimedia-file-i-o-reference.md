@@ -1,30 +1,30 @@
 ---
-title: Riferimento I/O file multimediale
-description: Riferimento I/O file multimediale
+title: Informazioni di riferimento su I/O file multimediali
+description: Informazioni di riferimento su I/O file multimediali
 ms.assetid: 1f24432e-7407-4b97-80ab-0a0c40c09253
 keywords:
-- Windows Multimedia, riferimento I/O file
-- Multimedia, riferimento I/O file
-- input multimediale, riferimento I/O file
-- I/O file multimediale, informazioni di riferimento
-- I/O di file, riferimento
-- input e output (I/O), riferimento
-- I/O (input e output), riferimento
-- informazioni di riferimento per l'I/O del file multimediale, informazioni
-- riferimento I/O file multimediale, informazioni
-- riferimento I/O file, informazioni
+- Windows multimediali, informazioni di riferimento su I/O file
+- multimediali, informazioni di riferimento su I/O di file
+- input multimediale, informazioni di riferimento su I/O di file
+- I/O di file multimediali, informazioni di riferimento
+- I/O file, informazioni di riferimento
+- input e output (I/O),informazioni di riferimento
+- I/O (input e output),informazioni di riferimento
+- informazioni di riferimento sull'I/O di file multimediali, informazioni
+- informazioni di riferimento sull'I/O dei file multimediali, informazioni
+- file I/O reference,about
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a0f833b7fb6677e064c19897e276d3961038cfc
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 06d61b06c16b12a9276adc0d858a3170dae2f7d636cc63a9ac6cc032a65c978c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103724818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118136902"
 ---
-# <a name="multimedia-file-io-reference"></a>Riferimento I/O file multimediale
+# <a name="multimedia-file-io-reference"></a>Informazioni di riferimento su I/O file multimediali
 
-Questa sezione descrive le funzioni, le macro, i messaggi e le strutture associati all'input e all'output del file multimediale. Questi elementi vengono raggruppati come indicato di seguito.
+In questa sezione vengono descritte le funzioni, le macro, i messaggi e le strutture associate all'input e all'output di file multimediali. Questi elementi sono raggruppati nel modo seguente.
 
 ## <a name="basic-io"></a>I/O di base
 
@@ -44,7 +44,7 @@ Questa sezione descrive le funzioni, le macro, i messaggi e le strutture associa
 -   [**mmioSetBuffer**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmiosetbuffer)
 -   [**mmioSetInfo**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmiosetinfo)
 
-## <a name="riff-io"></a>I/O RIFF
+## <a name="riff-io"></a>RIFF I/O
 
 -   [**mmioAscend**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioascend)
 -   [**MMCKINFO**](/windows/win32/api/mmiscapi/ns-mmiscapi-mmckinfo)
@@ -57,22 +57,22 @@ Questa sezione descrive le funzioni, le macro, i messaggi e le strutture associa
 
 -   [**IOProc**](/previous-versions//dd757098(v=vs.85))
 -   [**mmioInstallIOProc**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioinstallioproc)
--   [**chiusura di MMIOM \_**](mmiom-close.md)
--   [**MMIOM \_ aperto**](mmiom-open.md)
--   [**MMIOM di \_ lettura**](mmiom-read.md)
--   [**ridenominazione MMIOM \_**](mmiom-rename.md)
--   [**MMIOM \_ Seek**](mmiom-seek.md)
--   [**\_scrittura MMIOM**](mmiom-write.md)
--   [**\_WRITEFLUSH MMIOM**](mmiom-writeflush.md)
+-   [**MMIOM \_ CLOSE**](mmiom-close.md)
+-   [**MMIOM \_ OPEN**](mmiom-open.md)
+-   [**MMIOM \_ READ**](mmiom-read.md)
+-   [**MMIOM \_ RENAME**](mmiom-rename.md)
+-   [**MMIOM \_ SEEK**](mmiom-seek.md)
+-   [**MMIOM \_ WRITE**](mmiom-write.md)
+-   [**MMIOM \_ WRITEFLUSH**](mmiom-writeflush.md)
 -   [**mmioSendMessage**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmiosendmessage)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[I/O file multimediale](multimedia-file-i-o.md)
+[I/O file multimediali](multimedia-file-i-o.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

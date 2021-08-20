@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Windows8Api. JetResizeDatabase, metodo'
-title: Metodo Windows8Api. JetResizeDatabase (Microsoft. ISAM. esent. Interop. Windows8)
+description: Altre informazioni sul metodo Windows8Api.JetResizeDatabase
+title: Metodo Windows8Api.JetResizeDatabase (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'JetResizeDatabase method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.Windows8Api.JetResizeDatabase(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_DBID,System.Int32,System.Int32@,Microsoft.Isam.Esent.Interop.Windows8.ResizeDatabaseGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8api.jetresizedatabase(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: dcca9a4006f8c8da1758a85d12d716b5ce1bba23
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02ffc2aed2a5bf9a24ef086d244ae0917830ee9e0f3280d39fa78b18d11a4b06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119966811"
 ---
-# <a name="windows8apijetresizedatabase-method"></a>Windows8Api. JetResizeDatabase, metodo
+# <a name="windows8apijetresizedatabase-method"></a>Metodo Windows8Api.JetResizeDatabase
 
 Ridimensiona un database attualmente aperto.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -71,35 +71,35 @@ public static void JetResizeDatabase(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione da utilizzare.
+    Sessione da usare.
 
 <!-- end list -->
 
   - dbid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_DBID](./jet-dbid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_DBID](./jet-dbid-structure.md)  
     
-    Database da incrementare.
+    Database da aumentare.
 
 <!-- end list -->
 
   - desiredPages  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Dimensioni desiderate del database, in pagine.
 
 <!-- end list -->
 
   - actualPages  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Dimensioni del database, in pagine, dopo la chiamata a.
+    Dimensioni del database, in pagine, dopo la chiamata.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. Windows8. ResizeDatabaseGrbit](./resizedatabasegrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Windows8.ResizeDatabaseGrbit](./resizedatabasegrbit-enumeration.md)  
     
     Opzioni di ridimensionamento.
 
@@ -111,4 +111,4 @@ public static void JetResizeDatabase(
 
 [Membri di Windows8Api](./windows8api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

@@ -1,23 +1,23 @@
 ---
-description: L'API del sensore fornisce notifiche degli eventi tramite interfacce di callback.
+description: L'API Sensor fornisce notifiche degli eventi tramite interfacce di callback.
 ms.assetid: 0c396d54-cb2e-4b07-999f-3f4001db2a02
-title: Uso degli eventi dell'API del sensore
+title: Uso degli eventi dell'API Sensor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a54fcb14138c1b20470a2b716e5cce86235c3102
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ba26e99ef039808ea8c3d6bee9ac8a5b0d6b1a231fb2a4b62c2bb05a2489099
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120126501"
 ---
-# <a name="using-sensor-api-events"></a>Uso degli eventi dell'API del sensore
+# <a name="using-sensor-api-events"></a>Uso degli eventi dell'API Sensor
 
-L'API del sensore fornisce notifiche degli eventi tramite interfacce di callback.
+L'API Sensor fornisce notifiche degli eventi tramite interfacce di callback.
 
-Per ricevere l'evento notifica, il programma deve implementare le interfacce di callback COM richieste. Per ricevere gli eventi dai sensori, è necessario implementare [**ISensorEvents**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensorevents). Per ricevere gli eventi da Gestione sensori, è necessario implementare [**ISensorManagerEvents**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensormanagerevents).
+Per ricevere notifiche degli eventi, il programma deve implementare le interfacce di callback COM necessarie. Per ricevere eventi dai sensori, è necessario implementare [**ISensorEvents.**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensorevents) Per ricevere eventi dal gestore dei sensori, è necessario implementare [**ISensorManagerEvents.**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensormanagerevents)
 
-Il codice di esempio seguente crea una classe che implementa [**ISensorEvents**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensorevents).
+Nell'esempio di codice seguente viene creata una classe che implementa [**ISensorEvents.**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensorevents)
 
 
 ```C++
@@ -200,9 +200,9 @@ public:
 
 
 
-Dopo l'implementazione dell'interfaccia di callback, è possibile fornire un sensore particolare con un puntatore a un'istanza della classe di callback per iniziare a ricevere notifiche di eventi dal sensore.
+Dopo aver implementato l'interfaccia di callback, è possibile fornire a un particolare sensore un puntatore a un'istanza della classe di callback per iniziare a ricevere notifiche degli eventi dal sensore.
 
-Il codice di esempio seguente crea un'istanza della classe di callback e quindi richiede l'evento notifiche da un sensore.
+Il codice di esempio seguente crea un'istanza della classe di callback e quindi richiede le notifica degli eventi da un sensore.
 
 
 ```C++
@@ -231,9 +231,9 @@ if(SUCCEEDED(hr))
 
 
 
-È possibile scrivere codice simile per ricevere eventi da Gestione sensori.
+È possibile scrivere codice simile per ricevere eventi dal gestore dei sensori.
 
-Nell'esempio di codice seguente viene illustrato come arrestare la ricezione delle notifiche degli eventi.
+Nell'esempio di codice seguente viene illustrato come arrestare la ricezione di notifiche degli eventi.
 
 
 ```C++
@@ -247,9 +247,9 @@ if(SUCCEEDED(hr))
 
 ## <a name="requesting-a-report-interval"></a>Richiesta di un intervallo di report
 
-È possibile suggerire un valore per la frequenza con cui Applicaton riceve gli eventi di aggiornamento dei dati. Tuttavia, non è necessario che i sensori forniscano eventi a un determinato intervallo. È necessario tenere presente che il valore suggerito potrebbe non corrispondere all'intervallo di report effettivo usato dal sensore per generare eventi. Per individuare l'intervallo effettivo del report, recuperare il valore della \_ Proprietà Sensor \_ Current \_ report \_ Interval, come descritto in [recupero e impostazione delle proprietà del sensore](setting-and-retrieving-sensor-properties.md).
+È possibile suggerire un valore per la frequenza con cui l'applicazione riceve gli eventi aggiornati dei dati. Tuttavia, i sensori non sono necessari per fornire eventi in un determinato intervallo. È necessario tenere presente che il valore suggerito potrebbe non corrispondere all'intervallo di report effettivo utilizzato dal sensore per generare eventi. Per conoscere l'intervallo di report effettivo, recuperare il valore della proprietà SENSOR PROPERTY CURRENT REPORT INTERVAL, come descritto in Recupero e impostazione delle proprietà \_ \_ del \_ \_ [sensore.](setting-and-retrieving-sensor-properties.md)
 
-Nell'esempio di codice seguente viene creata una funzione di supporto che richiede un nuovo valore per \_ la \_ \_ Proprietà Sensor \_ intervallo report corrente. La funzione accetta un puntatore al sensore per il quale impostare la proprietà e un valore **ULONG** che indica il nuovo intervallo del report da impostare.
+Nell'esempio di codice seguente viene creata una funzione helper che richiede un nuovo valore per la proprietà SENSOR \_ PROPERTY \_ CURRENT REPORT \_ \_ INTERVAL. La funzione accetta un puntatore al sensore per il quale impostare la proprietà e un valore **ULONG** che indica il nuovo intervallo di report da impostare.
 
 
 ```C++
@@ -315,7 +315,7 @@ HRESULT SetCurrentReportInterval(ISensor* pSensor, ULONG ulNewInterval)
 
 <dl> <dt>
 
-[Informazioni sugli eventi dell'API del sensore](about-sensor-events.md)
+[Informazioni sugli eventi dell'API Sensor](about-sensor-events.md)
 </dt> </dl>
 
  

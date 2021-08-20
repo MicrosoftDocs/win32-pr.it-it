@@ -4,21 +4,21 @@ ms.assetid: 43ae9f70-34a1-48ca-be61-e974e2daebd7
 title: Controllo dei formati DXVA-HD supportati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d07d47043ed200d256e2bef8fa2c9ab6717f3b82
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c92b28586148bb96a918c8a230a25ff1477af73e0604d3b62e11e644e8276b7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035409"
 ---
 # <a name="checking-supported-dxva-hd-formats"></a>Controllo dei formati DXVA-HD supportati
 
 ## <a name="checking-supported-input-formats"></a>Controllo dei formati di input supportati
 
-Per ottenere un elenco dei formati di input supportati dal dispositivo Microsoft DirectX Video Acceleration High Definition (DXVA-HD), seguire questa procedura:
+Per ottenere un elenco dei formati di input supportati dal dispositivo DXVA-HD (Microsoft DirectX Video Acceleration High Definition), eseguire le operazioni seguenti:
 
 1.  Chiamare [**IDXVAHD \_ Device::GetVideoProcessorDeviceCaps**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-getvideoprocessordevicecaps) per ottenere le funzionalità del dispositivo.
-2.  Controllare il **membro InputFormatCount** della [**struttura DXVAHD \_ VPDEVCAPS.**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) Questo membro fornisce il numero di formati di input supportati.
+2.  Controllare il **membro InputFormatCount** della struttura [**\_ VPDEVCAPS DXVAHD.**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) Questo membro fornisce il numero di formati di input supportati.
 3.  Allocare una matrice di **valori D3DFORMAT** di dimensioni **InputFormatCount**.
 4.  Passare questa matrice al [**metodo IDXVAHD \_ Device::GetVideoProcessorInputFormats.**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-getvideoprocessorinputformats) I metodi riempiono la matrice con un elenco di formati di input.
 
@@ -73,10 +73,10 @@ done:
 
 ## <a name="checking-supported-output-formats"></a>Controllo dei formati di output supportati
 
-Per ottenere un elenco dei formati di output supportati dal dispositivo DXVA-HD, seguire questa procedura:
+Per ottenere un elenco dei formati di output supportati dal dispositivo DXVA-HD, eseguire le operazioni seguenti:
 
 1.  Chiamare [**IDXVAHD \_ Device::GetVideoProcessorDeviceCaps**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-getvideoprocessordevicecaps) per ottenere le funzionalità del dispositivo.
-2.  Controllare il **membro OutputFormatCount** della [**struttura DXVAHD \_ VPDEVCAPS.**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) Questo membro fornisce il numero di formati di input supportati.
+2.  Controllare il **membro OutputFormatCount** della [**struttura \_ VPDEVCAPS DXVAHD.**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) Questo membro fornisce il numero di formati di input supportati.
 3.  Allocare una matrice di **valori D3DFORMAT** di dimensioni **OutputFormatCount**.
 4.  Passare questa matrice al [**metodo IDXVAHD \_ Device::GetVideoProcessorOutputFormats.**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-getvideoprocessoroutputformats) I metodi riempiono la matrice con un elenco di formati di output.
 

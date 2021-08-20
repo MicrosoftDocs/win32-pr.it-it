@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: classe Windows7Grbits'
-title: Classe Windows7Grbits (Microsoft. ISAM. esent. Interop. Windows7)
+description: 'Altre informazioni su: Classe Windows7Grbits'
+title: Classe Windows7Grbits (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: Windows7Grbits class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows7.Windows7Grbits
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.windows7grbits(v=EXCHG.10)
@@ -24,24 +24,24 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 900943a30295631dafcb49a5fe866e3728c22a11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3725ef2ea1c3a2c84bb5d087527b0370fff6385e0638e764f1180ff756712130
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967161"
 ---
 # <a name="windows7grbits-class"></a>Classe Windows7Grbits
 
-Grbits che sono stati aggiunti alla versione Windows 7 di ESENT.
+Grbit aggiunti alla versione Windows 7 di ESENT.
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. Windows7. Windows7Grbits  
+  Microsoft.Isam.Esent.Interop.Windows7.Windows7Grbits  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -66,4 +66,4 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 [Membri di Windows7Grbits](./windows7grbits-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)

@@ -57,7 +57,7 @@ Dimensione, in byte, della struttura .
 **fCommercial**
 </dt> <dd>
 
-**TRUE** per firmare l'oggetto come editore commerciale. in caso contrario, **FALSE.**
+**TRUE** per firmare l'oggetto come editore commerciale; in caso contrario, **FALSE.**
 
 </dd> <dt>
 

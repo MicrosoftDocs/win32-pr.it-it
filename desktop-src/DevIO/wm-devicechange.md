@@ -4,12 +4,12 @@ ms.assetid: b64a3983-ee75-4199-9778-1e5b7cec59e4
 title: WM_DEVICECHANGE messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 91cc45d7a7978d5501e51cc1355c43afcf12b956
-ms.sourcegitcommit: 8c1942ac6731488abbeae46a7dbe3da166fee2d6
+ms.openlocfilehash: b32936d36e01a34acc9ace512703db7584768e8b51a9fe06a791b2a285ee2add
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107581503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017799"
 ---
 # <a name="wm_devicechange-message"></a>Messaggio \_ DEVICECHANGE WM
 
@@ -54,13 +54,13 @@ Evento che si è verificato. Questo parametro può essere uno dei valori seguent
 | **[DBT \_ CONFIGCHANGED](dbt-configchanged.md)**</br>0x0018 | La configurazione corrente è stata modificata a causa di un'ancoraggio o un disinseramento. |
 | **[DBT \_ CONFIGCHANGECANCELED](dbt-configchangecanceled.md)**</br>0x0019 | Una richiesta di modifica della configurazione corrente (ancora o disanco) è stata annullata. |
 | **[DBT \_ DEVICEARRIVAL](dbt-devicearrival.md)**</br>0x8000 | Un dispositivo o un elemento multimediale è stato inserito ed è ora disponibile. |
-| **[DBT \_ DEVICEQUERYREMOVE](dbt-devicequeryremove.md)**</br>0x8001 | È richiesta l'autorizzazione per rimuovere un dispositivo o un elemento multimediale. Qualsiasi applicazione può rifiutare questa richiesta e annullare la rimozione. |
-| **[DBT \_ DEVICEQUERYREMOVEFAILED](dbt-devicequeryremovefailed.md)**</br>0x8002 | Una richiesta di rimozione di un dispositivo o di un elemento multimediale è stata annullata. |
+| **[DBT \_ DEVICEQUERYREMOVE](dbt-devicequeryremove.md)**</br>0x8001 | È richiesta l'autorizzazione per rimuovere un dispositivo o un supporto. Qualsiasi applicazione può negare questa richiesta e annullare la rimozione. |
+| **[DBT \_ DEVICEQUERYREMOVEFAILED](dbt-devicequeryremovefailed.md)**</br>0x8002 | Una richiesta di rimozione di un dispositivo o di un supporto è stata annullata. |
 | **[DBT \_ DEVICEREMOVEPENDING](dbt-deviceremovepending.md)**</br>0x8003 | Un dispositivo o un elemento multimediale sta per essere rimosso. Non può essere negato. |
 | **[DBT \_ DEVICEREMOVECOMPLETE](dbt-deviceremovecomplete.md)**</br>0x8004 | Un dispositivo o un elemento multimediale è stato rimosso. |
 | **[DBT \_ DEVICETYPESPECIFIC](dbt-devicetypespecific.md)**</br>0x8005 | Si è verificato un evento specifico del dispositivo. |
 | **[DBT \_ CUSTOMEVENT](dbt-customevent.md)**</br>0x8006 | Si è verificato un evento personalizzato. |
-| **[DBT \_ USERDEFINED](dbt-userdefined.md)**</br>0xFFFF | Il significato di questo messaggio è definito dall'utente. |
+| **[DBT \_ DEFINITO DALL'UTENTE](dbt-userdefined.md)**</br>0xFFFF | Il significato di questo messaggio è definito dall'utente. |
 
 </dd> <dt>
 
@@ -126,5 +126,5 @@ Per i dispositivi che offrono funzionalità di controllo software, ad esempio l'
 [DBT \_ QUERYCHANGECONFIG](dbt-querychangeconfig.md)
 </dt> <dt>
 
-[DBT \_ DEFINITO DALL'UTENTE](dbt-userdefined.md)
+[DBT \_ USERDEFINED](dbt-userdefined.md)
 </dt> </dl>

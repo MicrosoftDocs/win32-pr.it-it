@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_REPLACEBITMAP (COMmctrl. h)
+title: TB_REPLACEBITMAP messaggio (Commctrl.h)
 description: Sostituisce una bitmap esistente con una nuova bitmap.
 ms.assetid: abad5c7a-ebdd-46b5-a465-fe64ff8eb127
 keywords:
-- Controlli di Windows Message TB_REPLACEBITMAP
+- TB_REPLACEBITMAP di Windows messaggi
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0216d73f70f9bef8230d7e725834d63d60012798
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 11dd964691b8b854feb09f93bc03673c46103bb34842e326e0f433cfd1fcc77f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119968051"
 ---
-# <a name="tb_replacebitmap-message"></a>TB \_ REPLACEBITMAP messaggio
+# <a name="tb_replacebitmap-message"></a>TB \_ REPLACEBITMAP message
 
 Sostituisce una bitmap esistente con una nuova bitmap.
 
@@ -35,13 +35,13 @@ Sostituisce una bitmap esistente con una nuova bitmap.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**TBREPLACEBITMAP**](/windows/desktop/api/Commctrl/ns-commctrl-tbreplacebitmap) che contiene le informazioni della bitmap da sostituire e la nuova bitmap.
+Puntatore a [**una struttura TBREPLACEBITMAP**](/windows/desktop/api/Commctrl/ns-commctrl-tbreplacebitmap) che contiene le informazioni della bitmap da sostituire e della nuova bitmap.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso contrario.
+Restituisce un valore diverso da zero in caso di esito positivo oppure zero in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso c
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

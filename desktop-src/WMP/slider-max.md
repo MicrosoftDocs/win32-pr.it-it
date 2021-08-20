@@ -1,6 +1,6 @@
 ---
 title: SLIDER.max
-description: L'attributo max specifica o recupera il valore massimo dell'intervallo definito dal controllo dispositivo di scorrimento.
+description: L'attributo max specifica o recupera il valore massimo dell'intervallo definito dal dispositivo di scorrimento.
 ms.assetid: c38e7868-d144-4e40-871a-e70181a6dfb5
 keywords:
 - SLIDER.max Windows Media Player
@@ -21,7 +21,7 @@ ms.locfileid: "118995181"
 ---
 # <a name="slidermax"></a>SLIDER.max
 
-**L'attributo max** specifica o recupera il valore massimo dell'intervallo definito dal controllo dispositivo di scorrimento.
+**L'attributo max** specifica o recupera il valore massimo dell'intervallo definito dal dispositivo di scorrimento.
 
 ``` syntax
         elementID.max
@@ -29,13 +29,13 @@ ms.locfileid: "118995181"
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un numero **di** lettura/scrittura (**float**) con valore predefinito 100.
+Questo attributo è un numero **di** lettura/scrittura (**float**) con un valore predefinito di 100.
 
 ## <a name="remarks"></a>Commenti
 
 Il valore specificato per **max** deve essere maggiore di quello per **min**.
 
-Vedere **CUSTOMSLIDER**. [Attributo positionImage](customslider-positionimage.md) per un esempio che illustra come vengono usati gli attributi **dell'elemento SLIDER.**
+Vedere **l'oggetto ELIDER**. [Attributo positionImage](customslider-positionimage.md) per un esempio che illustra come vengono usati gli attributi dell'elemento **SLIDER.**
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,35 +1,35 @@
 ---
-description: Per fare in modo che l'applicazione monitoraware sia in funzione nei sistemi con e senza supporto per più monitor, collegare l'applicazione a multimon. h.
+description: Per fare in modo che l'applicazione monitoraware funzioni sia nei sistemi con e senza supporto di più monitor, collegare l'applicazione a Multimon.h.
 ms.assetid: 8667305e-ca76-49cb-878e-07814431e6db
-title: Più applicazioni di monitoraggio su sistemi diversi
+title: Più applicazioni di monitoraggio in sistemi diversi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec5d470861136ac9362d986b8647c86abee7021b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4c597261063f49b6e6856576e3528698291348afb2b8478d854a824b92d2cc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119037719"
 ---
-# <a name="multiple-monitor-applications-on-different-systems"></a>Più applicazioni di monitoraggio su sistemi diversi
+# <a name="multiple-monitor-applications-on-different-systems"></a>Più applicazioni di monitoraggio in sistemi diversi
 
-Per fare in modo che l'applicazione monitoraware sia in funzione nei sistemi con e senza supporto per più monitor, collegare l'applicazione a multimon. h. È anche necessario definire gli \_ \_ Stub di compilazione multimon in un solo file C. Se il sistema non supporta più monitoraggi, restituisce i valori predefiniti di [**GetSystemMetrics**](/windows/win32/api/winuser/nf-winuser-getsystemmetrics) e le funzioni di monitoraggio multiplo agiscono come se fosse presente una sola visualizzazione. Su più sistemi di monitoraggio, l'applicazione funzionerà normalmente.
+Per fare in modo che l'applicazione monitoraware funzioni sia nei sistemi con e senza supporto di più monitor, collegare l'applicazione a Multimon.h. È anche necessario definire STUBS COMPILE \_ MULTIMON \_ in esattamente un file C. Se il sistema non supporta più monitor, restituisce i valori predefiniti da [**GetSystemMetrics**](/windows/win32/api/winuser/nf-winuser-getsystemmetrics) e le funzioni di monitoraggio multiple agiscono come se fosse presente una sola visualizzazione. In più sistemi di monitoraggio, l'applicazione funzionerà normalmente.
 
-Poiché le coordinate negative possono essere facilmente rilevate in un sistema a più monitor, è necessario recuperare le coordinate compresse in lParam usando le macro **get \_ X \_ lParam** e **get \_ Y \_ lParam** .
+Poiché le coordinate negative possono verificarsi facilmente in un sistema multimonitor, è consigliabile recuperare le coordinate che vengono imballate in lParam usando le macro **GET \_ X \_ LPARAM** e **GET Y \_ \_ LPARAM.**
 
-Non usare coordinate negative o coordinate maggiori di SM \_ CXSCREEN e SM \_ CYSCREEN per nascondere una finestra. Le finestre che usano questi limiti per nascondere possono essere visualizzate in un altro monitor. Analogamente, non usare questi limiti per tenere visibile una finestra perché ciò può causare la visualizzazione di una finestra sul monitor primario. È consigliabile riesaminare le applicazioni esistenti per questi problemi. Tuttavia, è possibile ridurre al minimo i problemi nelle applicazioni esistenti eseguendo l'applicazione sul monitor primario o mantenendo il monitor principale nell'angolo superiore sinistro dello schermo virtuale.
+Non usare coordinate negative o coordinate maggiori di SM \_ CXSCREEN e SM \_ CYSCREEN per nascondere una finestra. Windows che usano questi limiti per nascondere possono essere visualizzati in un altro monitoraggio. Analogamente, non usare questi limiti per mantenere visibile una finestra perché ciò può causare lo snap di una finestra al monitoraggio primario. È meglio rieseminare le applicazioni esistenti per questi problemi. Tuttavia, è possibile ridurre al minimo i problemi nelle applicazioni esistenti eseguendo l'applicazione sul monitoraggio primario o mantenendo il monitoraggio primario nell'angolo superiore sinistro dello schermo virtuale.
 
-Si noti che SM \_ CXMAXTRACK e SM \_ CYMAXTRACK sono definiti per il desktop, non solo un monitor. Potrebbe essere necessario ridefinire Windows con questi limiti.
+Si noti che SM CXMAXTRACK e SM CYMAXTRACK sono definiti per il \_ \_ desktop, non un solo monitoraggio. Windows usare questi limiti potrebbe essere necessario ridefinire.
 
-Una finestra padre o correlata potrebbe non trovarsi nello stesso monitoraggio di una finestra figlio. Per individuare il monitoraggio di una finestra, le applicazioni devono utilizzare la funzione [**MonitorFromWindow**](/windows/desktop/api/Winuser/nf-winuser-monitorfromwindow) .
+Una finestra padre o correlata potrebbe non essere sullo stesso monitor di una finestra figlio. Per individuare il monitoraggio di una finestra, le applicazioni devono usare la [**funzione MonitorFromWindow.**](/windows/desktop/api/Winuser/nf-winuser-monitorfromwindow)
 
-Per visualizzare un screen saver su tutti i monitoraggi, collegare con la versione più recente di scrnsave. lib. In caso contrario, il screen saver può essere visualizzato solo sul monitor primario e lasciare invariati gli altri monitor. Gli screen saver collegati con la versione più recente di scrnsave. lib funzioneranno su sistemi di monitoraggio singoli e multipli. Per avere un screen saver diverso su ciascun monitor, usare le funzioni di monitoraggio multiplo per gestire ogni monitoraggio separatamente.
+Per visualizzare un screen saver su tutti i monitoraggi, collegarsi alla versione più recente di Scrnsave.lib. In caso contrario, screen saver solo sul monitor primario e lasciare invariati gli altri monitoraggi. Gli screen saver collegati alla versione più recente di Scrnsave.lib funzioneranno sia in sistemi a monitor singolo che a più monitor. Per avere un'screen saver diversa in ogni monitoraggio, usare le funzioni di monitoraggio multiple per gestire ogni monitoraggio separatamente.
 
-I dispositivi di input che inviano coordinate al sistema in coordinate assolute, ad esempio i tablet, hanno un input di cursore limitato al monitor primario. Per passare dall'input del tablet tra i monitoraggi, vedere le istruzioni riportate nell'OEM.
+I dispositivi di input che recapitano le coordinate al sistema in coordinate assolute, ad esempio i tablet, hanno l'input del cursore limitato al monitor primario. Per cambiare l'input del tablet da un monitor all'altro, vedere le istruzioni dell'OEM.
 
-Per eseguire il mapping dell'input del mouse inviato in coordinate assolute all'intero schermo virtuale, usare la struttura di [**input**](/windows/win32/api/winuser/ns-winuser-input) con MOUSEEVENTF \_ Absolute e MOUSEEVENTF \_ VIRTUALDESKTOP.
+Per eseguire il mapping dell'input del mouse inviato in coordinate assolute all'intero schermo virtuale, usare la struttura [**INPUT**](/windows/win32/api/winuser/ns-winuser-input) con MOUSEEVENTF \_ ABSOLUTE e MOUSEEVENTF \_ VIRTUALDESKTOP.
 
-La funzione [**BitBlt**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt) funziona bene per più sistemi di monitoraggio. Tuttavia, le funzioni [**MaskBlt**](/windows/desktop/api/Wingdi/nf-wingdi-maskblt), [**PlgBlt**](/windows/desktop/api/Wingdi/nf-wingdi-plgblt), [**StretchBlt**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt)e [**TransparentBlt**](/windows/desktop/api/WinGdi/nf-wingdi-transparentblt) avranno esito negativo se i contesti di dispositivo di origine e di destinazione sono diversi.
+La [**funzione BitBlt**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt) funziona bene per più sistemi di monitoraggio. Tuttavia, le [**funzioni MaskBlt**](/windows/desktop/api/Wingdi/nf-wingdi-maskblt), [**PlgBlt**](/windows/desktop/api/Wingdi/nf-wingdi-plgblt), [**StretchBlt**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt)e [**TransparentBlt**](/windows/desktop/api/WinGdi/nf-wingdi-transparentblt) avranno esito negativo se i contesti di dispositivo di origine e di destinazione sono diversi.
 
  
 

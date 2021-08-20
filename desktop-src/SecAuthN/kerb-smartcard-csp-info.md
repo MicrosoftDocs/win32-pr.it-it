@@ -1,7 +1,7 @@
 ---
-description: Contiene informazioni su un provider del servizio di crittografia (CSP) per smart card.
+description: Contiene informazioni su un smart card provider del servizio di crittografia (CSP).
 ms.assetid: b3e6722a-25dd-4137-b224-4082e846ddec
-title: Struttura KERB_SMARTCARD_CSP_INFO
+title: KERB_SMARTCARD_CSP_INFO struttura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 03b1a8084e291dde5a4f1f2017e4e97f57640bca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 190c3e770a50acb7363fb10c469a7400831bc7b512d2b8158d687c83403b6df9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127341"
 ---
-# <a name="kerb_smartcard_csp_info-structure"></a>\_Struttura delle \_ informazioni CSP per la smart card \_
+# <a name="kerb_smartcard_csp_info-structure"></a>Struttura KERB \_ SMARTCARD \_ CSP \_ INFO
 
-La struttura di **\_ \_ \_ informazioni CSP** per la smart card di bordo contiene informazioni su un [*provider del servizio di crittografia*](../secgloss/c-gly.md) (CSP) per smart card.
+La **struttura KERB \_ SMARTCARD \_ CSP \_ INFO** contiene informazioni su smart card [*cryptographic service provider*](../secgloss/c-gly.md) (CSP).
 
 Questa struttura non è dichiarata in un'intestazione pubblica.
 
@@ -55,7 +55,7 @@ typedef struct _KERB_SMARTCARD_CSP_INFO {
 **dwCspInfoLen**
 </dt> <dd>
 
-Dimensione, in byte, della struttura, inclusi i dati accodati.
+Dimensione, in byte, di questa struttura, inclusi i dati accodati.
 
 </dd> <dt>
 
@@ -90,14 +90,14 @@ Riservato.
 **KeySpec**
 </dt> <dd>
 
-Chiave privata da usare dal contenitore di chiavi specificato all'interno del buffer **bBuffer**. La chiave può essere uno dei valori seguenti, definiti in WinCrypt. h.
+Chiave privata da usare dal contenitore di chiavi specificato all'interno del buffer **bBuffer**. La chiave può essere uno dei valori seguenti, definiti in WinCrypt.h.
 
 
 
 | Valore                                                                                                                                                                                                                   | Significato                                   |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| <span id="AT_KEYEXCHANGE"></span><span id="at_keyexchange"></span><dl> <dt>**Al \_ SCAMBIO**</dt> di stato <dt>1</dt> </dl> | La chiave è una chiave di scambio chiave.<br/> |
-| <span id="AT_SIGNATURE"></span><span id="at_signature"></span><dl> <dt>**Al \_ FIRMA**</dt> <dt>2</dt> </dl>       | La chiave è una chiave di firma.<br/>    |
+| <span id="AT_KEYEXCHANGE"></span><span id="at_keyexchange"></span><dl> <dt>**AT \_ KEYEXCHANGE**</dt> <dt>1</dt> </dl> | La chiave è una chiave di scambio delle chiavi.<br/> |
+| <span id="AT_SIGNATURE"></span><span id="at_signature"></span><dl> <dt>**AT \_ FIRMA**</dt> <dt>2</dt> </dl>       | La chiave è una chiave di firma.<br/>    |
 
 
 
@@ -108,10 +108,10 @@ Chiave privata da usare dal contenitore di chiavi specificato all'interno del bu
 **nCardNameOffset**
 </dt> <dd>
 
-Il numero di caratteri nel buffer **bBuffer** che precede il nome della smart card nel buffer.
+Numero di caratteri nel buffer **bBuffer** che precedono il nome del smart card nel buffer.
 
 > [!IMPORTANT]
-> Se non viene specificato il nome della smart card, il buffer deve contenere una stringa vuota.
+> Se il nome del smart card non viene specificato, il buffer deve contenere una stringa vuota.
 
  
 
@@ -120,10 +120,10 @@ Il numero di caratteri nel buffer **bBuffer** che precede il nome della smart ca
 **nReaderNameOffset**
 </dt> <dd>
 
-Il numero di caratteri nel buffer **bBuffer** che precede il nome del lettore di smart card nel buffer.
+Numero di caratteri nel buffer **bBuffer** che precedono il nome del smart card lettore nel buffer.
 
 > [!IMPORTANT]
-> Se non viene specificato il nome del lettore di smart card, il buffer deve contenere una stringa vuota.
+> Se il nome del smart card lettore non viene specificato, il buffer deve contenere una stringa vuota.
 
  
 
@@ -132,21 +132,21 @@ Il numero di caratteri nel buffer **bBuffer** che precede il nome del lettore di
 **nContainerNameOffset**
 </dt> <dd>
 
-Il numero di caratteri nel buffer **bBuffer** che precede il nome del contenitore di chiavi nel buffer. Questa stringa non può essere vuota.
+Numero di caratteri nel buffer **bBuffer** che precedono il nome del contenitore di chiavi in tale buffer. Questa stringa non può essere vuota.
 
 </dd> <dt>
 
 **nCSPNameOffset**
 </dt> <dd>
 
-Il numero di caratteri nel buffer **bBuffer** che precede il nome del CSP nel buffer.
+Numero di caratteri nel buffer **bBuffer** che precedono il nome del provider di servizi di configurazione nel buffer.
 
 </dd> <dt>
 
 **bBuffer**
 </dt> <dd>
 
-Matrice di caratteri inizializzata su una lunghezza di `sizeof(DWORD)` . Questo buffer contiene i nomi a cui fanno riferimento i membri **nCardNameOffset**, **nReaderNameOffset**, **nContainerNameOffset** e **nCSPNameOffset** , nonché tutti i dati aggiuntivi forniti dal CSP.
+Matrice di caratteri inizializzata su una lunghezza di `sizeof(DWORD)` . Questo buffer contiene i nomi a cui fa riferimento i membri **nCardNameOffset**, **nReaderNameOffset**, **nContainerNameOffset** e **nCSPNameOffset,** nonché eventuali dati aggiuntivi forniti dal provider di servizi di configurazione.
 
 Tutti i nomi non specificati devono essere rappresentati in questo buffer da stringhe vuote.
 
@@ -154,7 +154,7 @@ Tutti i nomi non specificati devono essere rappresentati in questo buffer da str
 
 ## <a name="remarks"></a>Commenti
 
-Quando questa struttura viene serializzata, i membri della struttura devono essere allineati ai limiti che sono multipli di 2 byte.
+Quando questa struttura viene serializzata, i membri della struttura devono essere allineati a limiti multipli di 2 byte.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -162,8 +162,8 @@ Quando questa struttura viene serializzata, i membri della struttura devono esse
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -171,7 +171,7 @@ Quando questa struttura viene serializzata, i membri della struttura devono esse
 
 <dl> <dt>
 
-[**\_accesso al certificato da marciapiede \_**](/windows/desktop/api/Ntsecapi/ns-ntsecapi-kerb_certificate_logon)
+[**ACCESSO AL CERTIFICATO KERB \_ \_**](/windows/desktop/api/Ntsecapi/ns-ntsecapi-kerb_certificate_logon)
 </dt> </dl>
 
  

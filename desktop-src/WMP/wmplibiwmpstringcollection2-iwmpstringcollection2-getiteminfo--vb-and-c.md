@@ -1,11 +1,11 @@
 ---
 title: Metodo IWMPStringCollection2 getItemInfo
-description: Il metodo getItemInfo restituisce la stringa corrispondente all'indice e al nome dell'elemento della raccolta di stringhe specificato.
+description: Il metodo getItemInfo restituisce la stringa corrispondente all'indice e al nome dell'elemento della raccolta di stringhe specificati.
 ms.assetid: 4a107e85-9eb7-42be-b1f9-8e9e92e6e509
 keywords:
-- metodo getItemInfo Windows Media Player
-- metodo getItemInfo Windows Media Player, interfaccia IWMPStringCollection2
-- Interfaccia IWMPStringCollection2 Windows Media Player, metodo getItemInfo
+- Metodo getItemInfo Windows Media Player
+- Metodo getItemInfo Windows Media Player, interfaccia IWMPStringCollection2
+- Interfaccia IWMPStringCollection2 Windows Media Player metodo , getItemInfo
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4741c4a3ba74b03038974d8b66bc42c23830ebb3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6f3f5371d55384544e4135e702b686cc7ce36707d204529ca7a4e68a3734d8ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899841"
 ---
-# <a name="iwmpstringcollection2getiteminfo-method"></a>Metodo IWMPStringCollection2:: getItemInfo
+# <a name="iwmpstringcollection2getiteminfo-method"></a>Metodo IWMPStringCollection2::getItemInfo
 
-Il metodo **GetItemInfo** restituisce la stringa corrispondente all'indice e al nome dell'elemento della raccolta di stringhe specificato.
+Il **metodo getItemInfo** restituisce la stringa corrispondente all'indice e al nome dell'elemento della raccolta di stringhe specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,29 +55,29 @@ Implements IWMPStringCollection2.getItemInfo
 
 <dl> <dt>
 
-*lCollectionIndex* \[ in\]
+*lCollectionIndex* \[ Pollici\]
 </dt> <dd>
 
-**System. Int32** che specifica l'indice in base zero dell'elemento della raccolta di stringhe da cui ottenere l'attributo.
+**System.Int32 che** specifica l'indice in base zero dell'elemento della raccolta di stringhe da cui ottenere l'attributo.
 
 </dd> <dt>
 
-*bstrItemName* \[ in\]
+*bstrItemName* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta il nome dell'attributo.
+**System.String che** rappresenta il nome dell'attributo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-**System. String** che rappresenta il nome dell'elemento della raccolta di stringhe. Per gli attributi il cui valore sottostante è **System. Boolean**, viene restituita la stringa "true" o "false".
+**System.String che** rappresenta il nome dell'elemento della raccolta di stringhe. Per gli attributi il cui valore sottostante **è System.Boolean**, restituisce la stringa "true" o "false".
 
 ## <a name="remarks"></a>Commenti
 
-Per recuperare gli attributi con più valori e attributi con valori complessi, usare il metodo **getItemInfoByType** .
+Per recuperare attributi con più valori e attributi con valori complessi, usare il **metodo getItemInfoByType.**
 
-Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -98,7 +98,7 @@ Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per a
 [**Interfaccia IWMPStringCollection2**](iwmpstringcollection2--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPStringCollection2. getItemInfoByType (VB e C#)**](wmplibiwmpstringcollection2-iwmpstringcollection2-getiteminfobytype--vb-and-c.md)
+[**IWMPStringCollection2.getItemInfoByType (VB e C#)**](wmplibiwmpstringcollection2-iwmpstringcollection2-getiteminfobytype--vb-and-c.md)
 </dt> </dl>
 
  

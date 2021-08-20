@@ -1,17 +1,17 @@
 ---
 description: Specifica se i riferimenti alle funzioni stub devono essere inclusi nelle strutture delle operazioni nelle definizioni dei tipi di porta per le operazioni di notifica.
 ms.assetid: 8a2fd7b2-e37b-465a-ba83-a68877a2e0c3
-title: elemento eventStubFunction
+title: eventStubFunction - elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80777a53d37e7651559a09b8e8445d4314aaca63
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 34e0b42416adc29c75fcafffedabf558bf6455df6cecf2bfebc344f747fff971
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856721"
 ---
-# <a name="eventstubfunction-element"></a>elemento eventStubFunction
+# <a name="eventstubfunction-element"></a>eventStubFunction - elemento
 
 Specifica se i riferimenti alle funzioni stub devono essere inclusi nelle strutture delle operazioni nelle definizioni dei tipi di porta per le operazioni di notifica.
 
@@ -41,15 +41,15 @@ Non ci sono elementi figlio.
 
 ## <a name="remarks"></a>Commenti
 
-I riferimenti alle funzioni stub si verificano negli scenari client per le operazioni di notifica (eventi).
+I riferimenti alle funzioni stub si verificano in scenari client per le operazioni di notifica (eventi).
 
-I valori validi per questo elemento sono 1 (riferimenti alle funzioni TRUE/stub inclusi) e 0 (false/nessun riferimento a funzioni stub incluse).
+I valori validi per questo elemento sono 1 (sono inclusi riferimenti a funzioni TRUE/stub) e 0 (false/nessun riferimento alla funzione stub incluso).
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

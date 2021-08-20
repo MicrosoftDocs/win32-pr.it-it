@@ -1,7 +1,7 @@
 ---
 description: La proprietà Format dell'oggetto ConfigurableItem restituisce il valore della colonna Format della tabella ModuleConfiguration.
 ms.assetid: e75ed650-7309-4e24-9c35-82ebf27d011b
-title: Proprietà ConfigurableItem. Format (Mergemod. h)
+title: Proprietà ConfigurableItem.Format (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 20db09126e9b10aac5c31a3748c4f1606f3f3bab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ee8770029c8465d1e1a60349010847ff38fdac928bb61cd02b0e5a2b034538c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118144006"
 ---
-# <a name="configurableitemformat-property"></a>Proprietà ConfigurableItem. Format
+# <a name="configurableitemformat-property"></a>ConfigurableItem.Format - proprietà
 
-La proprietà **Format** dell'oggetto [**ConfigurableItem**](configurableitem-object.md) restituisce il valore della colonna Format della [tabella ModuleConfiguration](moduleconfiguration-table.md).
+La **proprietà Format** [**dell'oggetto ConfigurableItem**](configurableitem-object.md) restituisce il valore della colonna Format della [tabella ModuleConfiguration](moduleconfiguration-table.md).
 
 Questa proprietà è di sola lettura.
 
@@ -57,7 +57,7 @@ Questa proprietà può avere solo i valori seguenti.
 
 ### <a name="c"></a>C++
 
-Vedere [**ottenere \_**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_format) la funzione Format.
+Vedere [**la funzione get \_**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_format) Format.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Vedere [**ottenere \_**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigura
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | Mergemod.dll 2,0 o versione successiva<br/>                                                    |
-| Intestazione<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versione<br/> | Mergemod.dll 2.0 o versione successiva<br/>                                                    |
+| Intestazione<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

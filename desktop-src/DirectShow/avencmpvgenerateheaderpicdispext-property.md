@@ -35,7 +35,7 @@ Se il valore è **VARIANT \_ TRUE,** il codificatore genera intestazioni di este
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| UWP\]<br/>                     |
+| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop \| UWP\]<br/>                     |
 | Server minimo supportato<br/> | app \[ desktop UWP di Windows 2000 Server \|\]<br/>                           |
 | Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 

@@ -1,40 +1,40 @@
 ---
 title: Tipo di controllo Tab
-description: In questo argomento vengono fornite informazioni sul supporto di automazione interfaccia utente Microsoft per il tipo di controllo Tab.
+description: In questo argomento vengono fornite informazioni sul supporto Automazione interfaccia utente microsoft per il tipo di controllo Tab.
 ms.assetid: 49e3f025-f49b-44b1-90ca-09f40dce8f2a
 keywords:
-- Automazione interfaccia utente, supporto per il tipo di controllo Tab
-- Automazione interfaccia utente, tipo di controllo Tab
-- Automazione interfaccia utente, struttura ad albero per il tipo di controllo Tab
-- Automazione interfaccia utente, proprietà per il tipo di controllo Tab
-- Automazione interfaccia utente, pattern di controllo per il tipo di controllo Tab
-- Automazione interfaccia utente, eventi per il tipo di controllo Tab
+- Automazione interfaccia utente,supporto per il tipo di controllo Tab
+- Automazione interfaccia utente,Tipo di controllo Tab
+- Automazione interfaccia utente,struttura ad albero per il tipo di controllo Tab
+- Automazione interfaccia utente,proprietà per il tipo di controllo Tab
+- Automazione interfaccia utente,pattern di controllo per il tipo di controllo Tab
+- Automazione interfaccia utente,eventi per il tipo di controllo Tab
 - strutture ad albero, tipo di controllo Tab
-- Proprietà, tipo di controllo Tab
+- proprietà, tipo di controllo Tab
 - pattern di controllo, tipo di controllo Tab
 - eventi, tipo di controllo Tab
-- supporto per il tipo di controllo Tab
+- Supporto per il tipo di controllo Tab
 - Tab (tipo di controllo)
 - tipi di controllo, struttura ad albero per il tipo di controllo Tab
 - tipi di controllo, pattern di controllo per il tipo di controllo Tab
 - tipi di controllo, supporto per Tab
-- tipi di controllo, scheda
+- tipi di controllo, tab
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 769a03617830c33fce4a8f64c594010b2120785b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f6a83263db87a68e258598ea46ca903af2ddb39c
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955598"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482497"
 ---
 # <a name="tab-control-type"></a>Tipo di controllo Tab
 
-In questo argomento vengono fornite informazioni sul supporto di automazione interfaccia utente Microsoft per il tipo di controllo **Tab** .
+In questo argomento vengono fornite informazioni sul supporto Automazione interfaccia utente microsoft per il **tipo di controllo** Tab.
 
 Un controllo Struttura a schede è simile ai separatori in un blocco per appunti o alle etichette in un archivio. L'uso del controllo Struttura a schede consente a un'applicazione di definire più pagine per la stessa area di una finestra o una finestra di dialogo.
 
-Nelle sezioni seguenti vengono definiti la struttura ad albero, le proprietà, i pattern di controllo e gli eventi di automazione interfaccia utente necessari per il tipo di controllo **Tab** . I requisiti di automazione interfaccia utente si applicano a tutti i controlli struttura a schede in cui la piattaforma/Framework dell'interfaccia utente integra il supporto di automazione interfaccia utente per i tipi di controllo e
+Le sezioni seguenti definiscono la struttura ad Automazione interfaccia utente struttura ad albero, le proprietà, i pattern di controllo e gli eventi per il **tipo di controllo** Tab. I Automazione interfaccia utente si applicano a tutti i controlli struttura a schede in cui il framework o la piattaforma dell'interfaccia utente Automazione interfaccia utente il supporto per i tipi di controllo e i pattern di controllo.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -46,160 +46,98 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="typical-tree-structure"></a>Struttura ad albero tipica
 
-Nella tabella seguente viene illustrata una tipica visualizzazione del controllo e del contenuto della struttura ad albero di automazione interfaccia utente relativa ai controlli struttura a schede e viene descritto il possibile contenuto di ogni visualizzazione. Per altre informazioni sull'albero di automazione interfaccia utente, vedere [Cenni preliminari sull'albero di automazione interfaccia utente](uiauto-treeoverview.md).
+La tabella seguente illustra un controllo tipico e una visualizzazione contenuto dell'albero Automazione interfaccia utente relativo ai controlli struttura a schede e descrive gli elementi che possono essere contenuti in ogni visualizzazione. Per altre informazioni sull'albero Automazione interfaccia utente, vedere Automazione interfaccia utente [Tree Overview](uiauto-treeoverview.md).
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Visualizzazione controlli</th>
-<th>Visualizzazione contenuto</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>Scheda
-<ul>
-<li>TabItem (1 o più)</li>
-<li>ScrollBar (0 o 1)
-<ul>
-<li>Button (0 o 2)</li>
-</ul></li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li>Scheda
-<ul>
-<li>TabItem (1 o più)</li>
-</ul></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Visualizzazione controlli | Visualizzazione contenuto | 
+|--------------|--------------|
+| <ul><li>Scheda<ul><li>TabItem (1 o più)</li><li>ScrollBar (0 o 1)<ul><li>Button (0 o 2)</li></ul></li></ul></li></ul> | <ul><li>Scheda<ul><li>TabItem (1 o più)</li></ul></li></ul> | 
 
 
 
- 
 
-I controlli struttura a schede hanno elementi di automazione interfaccia utente figlio basati sul tipo di controllo [TabItem](uiauto-supporttabitemcontroltype.md) . Quando gli elementi della scheda sono raggruppati, ad esempio in Microsoft Office applicazioni, il tipo di controllo **Tab** **può ospitare anche** tipi di controllo per gli elementi di scheda raggruppati, come illustrato nella struttura ad albero seguente.
+ 
 
-
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Visualizzazione controlli</th>
-<th>Visualizzazione contenuto</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>Scheda
-<ul>
-<li>TabItem (1 o più)</li>
-<li>Group (0 o più)
-<ul>
-<li>TabItem (0 o più)</li>
-</ul></li>
-<li>ScrollBar (0 o 1)
-<ul>
-<li>Button (0 o 2)</li>
-</ul></li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li>Scheda
-<ul>
-<li>TabItem (1 o più)</li>
-<li>Group (0 o più)
-<ul>
-<li>TabItem (0 o più)</li>
-</ul></li>
-</ul></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+I controlli Struttura a schede Automazione interfaccia utente elementi figlio in base al [tipo di controllo TabItem.](uiauto-supporttabitemcontroltype.md) Quando gli elementi della scheda sono raggruppati( ad esempio, come nelle  applicazioni Microsoft Office), il tipo di controllo Scheda può ospitare anche i tipi di controllo Gruppi per gli elementi delle schede raggruppate, come illustrato nella struttura ad albero seguente. 
 
 
 
- 
+
+| Visualizzazione controlli | Visualizzazione contenuto | 
+|--------------|--------------|
+| <ul><li>Scheda<ul><li>TabItem (1 o più)</li><li>Group (0 o più)<ul><li>TabItem (0 o più)</li></ul></li><li>ScrollBar (0 o 1)<ul><li>Button (0 o 2)</li></ul></li></ul></li></ul> | <ul><li>Scheda<ul><li>TabItem (1 o più)</li><li>Group (0 o più)<ul><li>TabItem (0 o più)</li></ul></li></ul></li></ul> | 
+
+
+
+
+ 
 
 ## <a name="relevant-properties"></a>Proprietà rilevanti
 
-La tabella seguente elenca le proprietà di automazione interfaccia utente il cui valore o la cui definizione è particolarmente rilevante per i controlli struttura a schede. Per altre informazioni sulle proprietà di automazione interfaccia utente, vedere [recupero di proprietà da elementi di automazione interfaccia utente](uiauto-propertiesforclients.md).
+La tabella seguente elenca le proprietà Automazione interfaccia utente il cui valore o la cui definizione è particolarmente rilevante per i controlli struttura a schede. Per altre informazioni sulle Automazione interfaccia utente, vedere [Recupero di proprietà da Automazione interfaccia utente elementi](uiauto-propertiesforclients.md).
 
 
 
-| Proprietà di automazione interfaccia utente                                                                                              | Valore      | Note                                                                                                                                                                                                                                                                                                                                                                         |
+| Proprietà di automazione interfaccia utente                                                                                              | valore      | Note                                                                                                                                                                                                                                                                                                                                                                         |
 |---------------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_AUTOMATIONIDPROPERTYID UIA**](uiauto-automation-element-propids.md)                 | Vedere le note. | Il valore di questa proprietà deve essere univoco tra tutti gli elementi peer nella visualizzazione non elaborata della struttura ad albero di automazione interfaccia utente.                                                                                                                                                                                                                                                                  |
-| [**\_BOUNDINGRECTANGLEPROPERTYID UIA**](uiauto-automation-element-propids.md)       | Vedere le note. | Il rettangolo più esterno che contiene l'intero controllo.                                                                                                                                                                                                                                                                                                                      |
-| [**\_CLICKABLEPOINTPROPERTYID UIA**](uiauto-automation-element-propids.md)             | No         | Il controllo struttura a schede non dispone di punti selezionabili.                                                                                                                                                                                                                                                                                                                               |
-| [**\_CONTROLTYPEPROPERTYID UIA**](uiauto-automation-element-propids.md)                   | **TAB**    |                                                                                                                                                                                                                                                                                                                                                                               |
-| [**\_ISCONTENTELEMENTPROPERTYID UIA**](uiauto-automation-element-propids.md)         | true       | Il controllo struttura a schede viene sempre incluso nella visualizzazione contenuto dell'albero di automazione interfaccia utente.                                                                                                                                                                                                                                                                                             |
-| [**\_ISCONTROLELEMENTPROPERTYID UIA**](uiauto-automation-element-propids.md)         | true       | Il controllo struttura a schede viene sempre incluso nella visualizzazione controlli dell'albero di automazione interfaccia utente.                                                                                                                                                                                                                                                                                             |
-| [**\_ISKEYBOARDFOCUSABLEPROPERTYID UIA**](uiauto-automation-element-propids.md)   | true       | Il tipo di controllo Tab deve essere in grado di ricevere lo stato attivo. In genere, un client di automazione interfaccia utente chiama [**IUIAutomationElement:: SetFocus**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-setfocus) su un controllo struttura a schede e uno dei relativi elementi inoltrerà lo stato attivo al controllo struttura a schede. È possibile che alcuni contenitori di schede assumano lo stato attivo senza che lo stato attivo venga impostato su uno dei relativi elementi. |
-| [**\_LABELEDBYPROPERTYID UIA**](uiauto-automation-element-propids.md)                       | Vedere le note. | I controlli Struttura a schede in genere includono un'etichetta di testo statico che viene esposta tramite questa proprietà.                                                                                                                                                                                                                                                                                        |
-| [**\_LOCALIZEDCONTROLTYPEPROPERTYID UIA**](uiauto-automation-element-propids.md) | Vedere le note. | Stringa localizzata corrispondente al tipo di controllo **Tab** . Il valore predefinito è "tab" per en-US o inglese (Stati Uniti).                                                                                                                                                                                                                                                  |
-| [**\_NAMEPROPERTYID UIA**](uiauto-automation-element-propids.md)                                 | Vedere le note. | Il controllo struttura a schede raramente richiede una proprietà **Name** .                                                                                                                                                                                                                                                                                                                          |
-| [**\_ORIENTATIONPROPERTYID UIA**](uiauto-automation-element-propids.md)                   | Vedere le note. | Il controllo Struttura a schede deve sempre indicare se è posizionato orizzontalmente o verticalmente.                                                                                                                                                                                                                                                                                     |
+| [**UIA \_ AutomationIdPropertyId**](uiauto-automation-element-propids.md)                 | Vedere le note. | Il valore di questa proprietà deve essere univoco tra tutti gli elementi peer nella visualizzazione non elaborata dell'Automazione interfaccia utente albero.                                                                                                                                                                                                                                                                  |
+| [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vedere le note. | Il rettangolo più esterno che contiene l'intero controllo.                                                                                                                                                                                                                                                                                                                      |
+| [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | No         | Il controllo Struttura a schede non dispone di punti selezionabili.                                                                                                                                                                                                                                                                                                                               |
+| [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **TAB**    |                                                                                                                                                                                                                                                                                                                                                                               |
+| [**\_IsContentElementPropertyId dell'interfaccia utente**](uiauto-automation-element-propids.md)         | true       | Il controllo Struttura a schede è sempre incluso nella visualizzazione contenuto dell'Automazione interfaccia utente struttura ad albero.                                                                                                                                                                                                                                                                                             |
+| [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | true       | Il controllo Struttura a schede è sempre incluso nella visualizzazione controlli dell'Automazione interfaccia utente struttura ad albero.                                                                                                                                                                                                                                                                                             |
+| [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | true       | Il tipo di controllo Tab deve essere in grado di ricevere lo stato attivo. In genere, un client Automazione interfaccia utente chiama [**IUIAutomationElement::SetFocus**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-setfocus) su un controllo struttura a schede e uno dei relativi elementi inoltra lo stato attivo della tastiera al controllo Struttura a schede. È possibile che alcuni contenitori di schede assumano lo stato attivo senza che lo stato attivo venga impostato su uno dei relativi elementi. |
+| [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | Vedere le note. | I controlli Struttura a schede in genere includono un'etichetta di testo statico che viene esposta tramite questa proprietà.                                                                                                                                                                                                                                                                                        |
+| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vedere le note. | Stringa localizzata corrispondente al **tipo di controllo** Tab. Il valore predefinito è "tab" per en-US o english (Stati Uniti).                                                                                                                                                                                                                                                  |
+| [**UIA \_ NamePropertyId**](uiauto-automation-element-propids.md)                                 | Vedere le note. | Il controllo Struttura a schede raramente richiede **una proprietà** Name.                                                                                                                                                                                                                                                                                                                          |
+| [**UIA \_ OrientationPropertyId**](uiauto-automation-element-propids.md)                   | Vedere le note. | Il controllo Struttura a schede deve sempre indicare se è posizionato orizzontalmente o verticalmente.                                                                                                                                                                                                                                                                                     |
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Pattern di controllo obbligatori
 
-La tabella seguente elenca i pattern di controllo di automazione interfaccia utente che devono essere supportati da tutti i controlli struttura a schede. Per altre informazioni sui pattern di controllo, vedere [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
+Nella tabella seguente sono elencati i Automazione interfaccia utente che devono essere supportati da tutti i controlli struttura a schede. Per altre informazioni sui pattern di controllo, vedere [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
 
 
 
 | Pattern di controllo/proprietà del pattern                                             | Supporto/valore | Note                                                                                                                                                                  |
 |------------------------------------------------------------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider)                      | Necessario      | Tutti i controlli struttura a schede devono supportare il pattern di controllo [Selection](uiauto-implementingselection.md) .                                                                       |
+| [**ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider)                      | Obbligatoria      | Tutti i controlli Struttura a schede devono supportare il [pattern di](uiauto-implementingselection.md) controllo Selezione.                                                                       |
 | [**IsSelectionRequired**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-get_isselectionrequired) | true          | I controlli Struttura a schede richiedono sempre una selezione.                                                                                                                  |
 | [**CanSelectMultiple**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-get_canselectmultiple)     | FALSE         | I controlli Struttura a schede sono sempre contenitori a selezione singola.                                                                                                                   |
-| [**IScrollProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollprovider)                            | Dipende da       | Il pattern di controllo [Scroll](uiauto-implementingscroll.md) deve essere supportato se il controllo struttura a schede include widget che consentono lo scorrimento di un set di elementi di schede. |
+| [**IScrollProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollprovider)                            | Dipende da       | Il [pattern di](uiauto-implementingscroll.md) controllo Scroll deve essere supportato se il controllo Struttura a schede include widget che consentono lo scorrimento di un set di elementi della scheda. |
 
 
 
- 
+ 
 
 ## <a name="required-events"></a>Eventi obbligatori
 
-La tabella seguente elenca gli eventi di automazione interfaccia utente necessari per supportare i controlli struttura a schede. Per altre informazioni sugli eventi, vedere [UI Automation Events Overview](uiauto-eventsoverview.md).
+Nella tabella seguente sono elencati Automazione interfaccia utente eventi che i controlli Struttura a schede devono supportare. Per altre informazioni sugli eventi, vedere [UI Automation Events Overview](uiauto-eventsoverview.md).
 
 
 
-| Evento di automazione interfaccia utente                                                                                                                                        | Note                                                                                                                      |
+| Automazione interfaccia utente evento                                                                                                                                        | Note                                                                                                                      |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| [**\_AUTOMATIONFOCUSCHANGEDEVENTID UIA**](uiauto-event-ids.md)                                                           |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà BoundingRectanglePropertyId.                      |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà IsEnabledPropertyId.                                      | Se il controllo supporta la proprietà [**IsEnabled**](uiauto-automation-element-propids.md) , deve supportare questo evento.   |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà IsOffscreenPropertyId.                                  | Se il controllo supporta la proprietà [**IsOffscreen**](uiauto-automation-element-propids.md) , deve supportare questo evento. |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ScrollHorizontallyScrollablePropertyId.   | Se il controllo supporta il pattern di controllo [Scroll](uiauto-implementingscroll.md) , deve supportare questo evento.           |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ScrollHorizontalScrollPercentPropertyId. | Se il controllo supporta il pattern di controllo [Scroll](uiauto-implementingscroll.md) , deve supportare questo evento.           |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ScrollHorizontalViewSizePropertyId.           | Se il controllo supporta il pattern di controllo [Scroll](uiauto-implementingscroll.md) , deve supportare questo evento.           |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ScrollVerticallyScrollablePropertyId.       | Se il controllo supporta il pattern di controllo [Scroll](uiauto-implementingscroll.md) , deve supportare questo evento.           |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ScrollVerticalScrollPercentPropertyId.     | Se il controllo supporta il pattern di controllo [Scroll](uiauto-implementingscroll.md) , deve supportare questo evento.           |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ScrollVerticalViewSizePropertyId.               | Se il controllo supporta il pattern di controllo [Scroll](uiauto-implementingscroll.md) , deve supportare questo evento.           |
-| [**\_STRUCTURECHANGEDEVENTID UIA**](uiauto-event-ids.md)                                                                       |                                                                                                                            |
+| [**UIA \_ AutomationFocusChangedEventId**](uiauto-event-ids.md)                                                           |                                                                                                                            |
+| [**Interfaccia \_ utente Evento di modifica della proprietà BoundingRectanglePropertyId.**](uiauto-automation-element-propids.md)                      |                                                                                                                            |
+| [**Interfaccia \_ utente Evento di modifica della proprietà IsEnabledPropertyId.**](uiauto-automation-element-propids.md)                                      | Se il controllo supporta la [**proprietà IsEnabled,**](uiauto-automation-element-propids.md) deve supportare questo evento.   |
+| [**Interfaccia \_ utente Evento di modifica della proprietà IsOffscreenPropertyId.**](uiauto-automation-element-propids.md)                                  | Se il controllo supporta la [**proprietà IsOffscreen,**](uiauto-automation-element-propids.md) deve supportare questo evento. |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ScrollHorizontallyScrollablePropertyId.**](uiauto-control-pattern-propids.md)   | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.           |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ScrollHorizontalScrollPercentPropertyId.**](uiauto-control-pattern-propids.md) | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.           |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ScrollHorizontalViewSizePropertyId.**](uiauto-control-pattern-propids.md)           | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.           |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ScrollVerticallyScrollablePropertyId.**](uiauto-control-pattern-propids.md)       | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.           |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ScrollVerticalScrollPercentPropertyId.**](uiauto-control-pattern-propids.md)     | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.           |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ScrollVerticalViewSizePropertyId.**](uiauto-control-pattern-propids.md)               | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.           |
+| [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                                       |                                                                                                                            |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -214,9 +152,9 @@ La tabella seguente elenca gli eventi di automazione interfaccia utente necessar
 [Cenni preliminari su automazione interfaccia utente](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

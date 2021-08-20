@@ -1,11 +1,11 @@
 ---
-title: Proprietà Name di IWMPPlaylist
-description: La proprietà Name ottiene o imposta il nome della playlist.
+title: Proprietà name di IWMPPlaylist
+description: La proprietà name ottiene o imposta il nome della playlist.
 ms.assetid: abf25a49-5e07-43e6-ab45-6bc09c952c45
 keywords:
-- Proprietà nome Windows Media Player
-- Proprietà nome Windows Media Player, interfaccia IWMPPlaylist
-- Interfaccia IWMPPlaylist Windows Media Player, proprietà Name
+- proprietà name Windows Media Player
+- proprietà name Windows Media Player , interfaccia IWMPPlaylist
+- Interfaccia IWMPPlaylist Windows Media Player , proprietà name
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c36075362105370cc7177157d47aede0b3376049
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 64dd1702c5964e09f92c088d071b9c8de977d93c0d03f68da72d26e132017744
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053459"
 ---
-# <a name="iwmpplaylistname-property"></a>Proprietà IWMPPlaylist:: Name
+# <a name="iwmpplaylistname-property"></a>Proprietà IWMPPlaylist::name
 
-La proprietà **Name** Ottiene o imposta il nome della playlist.
+La **proprietà name** ottiene o imposta il nome della playlist.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,11 +46,11 @@ Public Property name As System.String
 
 ## <a name="property-value"></a>Valore proprietà
 
-**System. String** che rappresenta il nome della playlist.
+Oggetto **System.String** che rappresenta il nome della playlist.
 
 ## <a name="remarks"></a>Commenti
 
-Prima di utilizzare questa proprietà, è necessario disporre dell'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di usare questa proprietà, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,7 +58,7 @@ Prima di utilizzare questa proprietà, è necessario disporre dell'accesso in le
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -71,10 +71,10 @@ Prima di utilizzare questa proprietà, è necessario disporre dell'accesso in le
 [**Interfaccia IWMPPlaylist (VB e C#)**](iwmpplaylist--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
 </dt> </dl>
 
  

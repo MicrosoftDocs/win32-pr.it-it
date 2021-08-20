@@ -1,9 +1,9 @@
 ---
-title: 'Funzione Texture2D:: Gather (S, float, int)'
-description: "Restituisce i quattro valori Texel che verrebbero usati in un'operazione di filtro bi-lineare. | Funzione Texture2D:: Gather (S, float, int)"
+title: Funzione Texture2D::Gather(S,float,int)
+description: Restituisce i quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare. | Funzione Texture2D::Gather(S,float,int)
 ms.assetid: 5d196c1c-8cc9-4add-9d33-654294314ee2
 keywords:
-- Raccolta HLSL funzione
+- Funzione Gather HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4d0a58be0580572441f91a3b3f637601d70cd9c8
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 263c3672f55e2f461d9a6c160a60b8222ddeda32ec239b846680d30af0f7fedc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103761759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853281"
 ---
-# <a name="texture2dgathersfloatint-function"></a>Funzione Texture2D:: Gather (S, float, int)
+# <a name="texture2dgathersfloatint-function"></a>Funzione Texture2D::Gather(S,float,int)
 
-Restituisce i quattro valori Texel che verrebbero usati in un'operazione di filtro bi-lineare.
+Restituisce i quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,27 +41,27 @@ TemplateType Gather(
 *s* \[ in\]
 </dt> <dd>
 
-Tipo: **Sampler**
+Tipo: **sampler**
 
 Indice del campionatore in base zero.
 
 </dd> <dt>
 
-*posizione* \[ in\]
+*location* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float2**
 
-Coordinate di esempio (u, v).
+Coordinate di esempio (u,v).
 
 </dd> <dt>
 
-*offset* \[ in\]
+*offset* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int2**
 
-Offset applicato alle coordinate di trama prima del campionamento.
+Offset applicato alle coordinate della trama prima del campionamento.
 
 </dd> </dl>
 
@@ -69,7 +69,7 @@ Offset applicato alle coordinate di trama prima del campionamento.
 
 Tipo: **TemplateType**
 
-Valore a quattro componenti il cui tipo corrisponde al tipo di modello.
+Valore a quattro componenti il cui tipo è uguale al tipo di modello.
 
 ## <a name="remarks"></a>Commenti
 
@@ -79,7 +79,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -91,10 +91,10 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 <dl> <dt>
 
-[Metodi di raccolta](texture2d-gather.md)
+[Metodi Gather](texture2d-gather.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

@@ -22,28 +22,28 @@ Le funzioni Windows seguenti gestiscono i formati pixel.
 | Windows Funzione                                               | Descrizione                                                                                                                                                           |
 |----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**ChoosePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-choosepixelformat)                 | Ottiene il formato pixel del contesto di dispositivo che corrisponde più vicino a un formato pixel specificato.                                                                      |
-| [**SetPixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-setpixelformat)                       | Imposta il formato pixel corrente di un contesto di dispositivo sul formato pixel specificato da un indice del formato pixel.                                                                   |
+| [**SetPixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-setpixelformat)                       | Imposta il formato pixel corrente di un contesto di dispositivo sul formato pixel specificato da un indice di formato pixel.                                                                   |
 | [**GetPixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-getpixelformat)                       | Ottiene l'indice del formato pixel del formato pixel corrente di un contesto di dispositivo.                                                                                            |
-| [**DescribePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-describepixelformat)             | Dati un contesto di dispositivo e un indice di formato pixel, inserisce una struttura di dati [**PIXELFORMATDESCRIPTOR**](/windows/win32/api/wingdi/ns-wingdi-pixelformatdescriptor) con le proprietà del formato pixel. |
-| [**GetEnhMetaFilePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-getenhmetafilepixelformat) | Recupera le informazioni sul formato pixel per un metafile avanzato.                                                                                                          |
+| [**DescribePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-describepixelformat)             | Dato un contesto di dispositivo e un indice di formato pixel, inserisce una struttura di dati [**PIXELFORMATDESCRIPTOR**](/windows/win32/api/wingdi/ns-wingdi-pixelformatdescriptor) con le proprietà del formato pixel. |
+| [**GetEnhMetaFilePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-getenhmetafilepixelformat) | Recupera informazioni sul formato pixel per un metafile avanzato.                                                                                                          |
 
 
 
  
 
-La [**funzione ChoosePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-choosepixelformat) restituisce un indice in formato pixel in base uno che identifica la corrispondenza migliore dai formati pixel supportati dal contesto di dispositivo.
+La [**funzione ChoosePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-choosepixelformat) restituisce un indice in formato pixel in base 1 che identifica la corrispondenza migliore dai formati di pixel supportati dal contesto di dispositivo.
 
-La [**funzione SetPixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-setpixelformat) identifica il formato desiderato usando un indice in formato pixel basato su uno. In genere, si chiama **ChoosePixelFormat** per trovare un formato pixel più adatto e quindi si chiama **SetPixelFormat** con il risultato **di ChoosePixelFormat**.
+La [**funzione SetPixelFormat identifica**](/windows/desktop/api/wingdi/nf-wingdi-setpixelformat) il formato desiderato usando un indice in formato pixel in base uno. In genere, si chiama **ChoosePixelFormat per** trovare un formato pixel con la corrispondenza migliore e quindi si chiama **SetPixelFormat con** il risultato **di ChoosePixelFormat.**
 
-Se si chiama **SetPixelFormat per** un contesto di dispositivo che fa riferimento a una finestra, **SetPixelFormat** modifica anche il formato pixel della finestra. L'impostazione del formato pixel di una finestra più volte può causare complicazioni significative per Gestione finestre e per le applicazioni multithread, quindi non è consentito. È possibile impostare il formato pixel di una finestra una sola volta; Successivamente, il formato pixel della finestra non può essere modificato.
+Se si chiama **SetPixelFormat per un** contesto di dispositivo che fa riferimento a una finestra, **SetPixelFormat** modifica anche il formato pixel della finestra. L'impostazione del formato pixel di una finestra più volte può causare complicazioni significative per Gestione finestre e per le applicazioni multithread, quindi non è consentito. È possibile impostare il formato pixel di una finestra una sola volta. Successivamente, il formato pixel della finestra non può essere modificato.
 
-La [**funzione GetPixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-getpixelformat) restituisce un indice in formato pixel in base uno.
+La [**funzione GetPixelFormat restituisce**](/windows/desktop/api/wingdi/nf-wingdi-getpixelformat) un indice in formato pixel in base uno.
 
-La [**funzione DescribePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-describepixelformat) accetta quanto segue come parametri:
+La [**funzione DescribePixelFormat accetta**](/windows/desktop/api/wingdi/nf-wingdi-describepixelformat) quanto segue come parametri:
 
 -   Handle per un contesto di dispositivo
 -   Indice in formato pixel
--   Puntatore a una struttura di [**dati PIXELFORMATDESCRIPTOR**](/windows/win32/api/wingdi/ns-wingdi-pixelformatdescriptor)
+-   Puntatore a una struttura [**di dati PIXELFORMATDESCRIPTOR**](/windows/win32/api/wingdi/ns-wingdi-pixelformatdescriptor)
 
 La [**funzione DescribePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-describepixelformat) restituisce con i membri di **PIXELFORMATDESCRIPTOR** impostati in modo appropriato.
 

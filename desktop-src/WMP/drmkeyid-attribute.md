@@ -1,6 +1,6 @@
 ---
 title: Attributo DRMKeyID
-description: L'attributo DRMKeyID identifica i diritti di utilizzo del supporto per il contenuto protetto tramite Digital Rights Management (DRM).
+description: L'attributo DRMKeyID identifica i diritti di utilizzo dei supporti per il contenuto protetto tramite DRM (Digital Rights Management).
 ms.assetid: 37d2ddf9-9b87-42fd-84c0-0bd2a256056a
 keywords:
 - Attributo DRMKeyID Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a9a2427e41c7d9f4bdec61d3c351d6921d445650
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 077402cc8d0b15de598f7a731bd2f4e3bf0c9cd9d6765d6480a5e2fad0297bf5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863391"
 ---
 # <a name="drmkeyid-attribute"></a>Attributo DRMKeyID
 
-L'attributo **DRMKeyID** identifica i diritti di utilizzo del supporto per il contenuto protetto tramite Digital Rights Management (DRM).
+**L'attributo DRMKeyID** identifica i diritti di utilizzo dei supporti per il contenuto protetto tramite DRM (Digital Rights Management).
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -30,9 +30,9 @@ L'attributo **DRMKeyID** identifica i diritti di utilizzo del supporto per il co
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene in genere usato per l'esecuzione di query e la visualizzazione dei diritti di utilizzo dei supporti.
+Questo attributo viene in genere usato per l'esecuzione di query e la visualizzazione dei diritti di utilizzo dei file multimediali.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,7 +48,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

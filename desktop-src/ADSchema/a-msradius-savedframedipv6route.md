@@ -1,11 +1,11 @@
 ---
-title: attributo MS-RADIUS-SavedFramedIpv6Route
-description: Fornisce le informazioni di routing da configurare per l'utente nel server NAS. | attributo MS-RADIUS-SavedFramedIpv6Route
+title: Attributo ms-RADIUS-SavedFramedIpv6Route
+description: Fornisce informazioni di routing da configurare per l'utente sul nas. | Attributo ms-RADIUS-SavedFramedIpv6Route
 ms.assetid: dc524a96-0580-4ada-bf05-87cc120f38d8
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo MS-RADIUS-SavedFramedIpv6Route
-- msRADIUS-schema AD attributo SavedFramedIpv6Route
+- Attributo MS-RADIUS-SavedFramedIpv6Route Schema AD
+- Attributo msRADIUS-SavedFramedIpv6Route Schema AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c91b66008d19cf557fc2f4f6ec0ce8a34750df12
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 3fc6c62b476e946ab4c3f875470793996151978495c6c8eb6b84b9c52adb7149
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104352441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118013308"
 ---
-# <a name="ms-radius-savedframedipv6route-attribute"></a>attributo MS-RADIUS-SavedFramedIpv6Route
+# <a name="ms-radius-savedframedipv6route-attribute"></a>Attributo ms-RADIUS-SavedFramedIpv6Route
 
-Fornisce le informazioni di routing da configurare per l'utente nel server NAS.
+Fornisce informazioni di routing da configurare per l'utente sul nas.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MS-RADIUS-SavedFramedIpv6Route       |
-| LDAP-Display-Name | msRADIUS-SavedFramedIpv6Route        |
+| CN                | ms-RADIUS-SavedFramedIpv6Route       |
+| Ldap-Display-Name | msRADIUS-SavedFramedIpv6Route        |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1918              |
-| System-ID-GUID    | 9666bb5c-df9d-4d41-b437-2eec7e27c9b3 |
+| System-Id-Guid    | 9666bb5c-df9d-4d41-b437-2eec7e27c9b3 |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -55,15 +55,15 @@ Fornisce le informazioni di routing da configurare per l'utente nel server NAS.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000000                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Fornisce le informazioni di routing da configurare per l'utente nel server NAS.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000000                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Fornisce le informazioni di routing da configurare per l'utente nel server NAS.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000000                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

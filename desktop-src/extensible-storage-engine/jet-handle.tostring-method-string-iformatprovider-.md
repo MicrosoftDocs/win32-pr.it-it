@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c2891e33712027c3387e2d45ff73111e7bf54126
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f807f13bedb879377449cd494cd245b3ad1073488597190866a190b3253f9cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104348811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039169"
 ---
 # <a name="jet_handletostring-method-string-iformatprovider"></a>JET_HANDLE. Metodo ToString (String, IFormatProvider)
 
 Formatta il valore dell'istanza corrente usando il formato specificato.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,34 +62,34 @@ public string ToString(
 #### <a name="parameters"></a>Parametri
 
   - format  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    [Stringa](/dotnet/api/system.string) che specifica il formato da utilizzare. -oppure-null per usare il formato predefinito definito per il tipo dell'implementazione di [IFormattable](/dotnet/api/system.iformattable) .
+    Stringa [che](/dotnet/api/system.string) specifica il formato da usare. -oppure- null per usare il formato predefinito definito per il tipo [dell'implementazione di IFormattable.](/dotnet/api/system.iformattable)
 
 <!-- end list -->
 
-  - formatProvider  
-    Tipo: [System. IFormatProvider](/dotnet/api/system.iformatprovider)  
+  - Formatprovider  
+    Tipo: [System.IFormatProvider](/dotnet/api/system.iformatprovider)  
     
-    [IFormatProvider](/dotnet/api/system.iformatprovider) da utilizzare per formattare il valore. -oppure-null per ottenere le informazioni sul formato numerico dalle impostazioni locali correnti del sistema operativo.
+    Oggetto [IFormatProvider](/dotnet/api/system.iformatprovider) da usare per formattare il valore. -oppure- Null per ottenere le informazioni sul formato numerico dalle impostazioni locali correnti del sistema operativo.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Stringa](/dotnet/api/system.string) contenente il valore dell'istanza corrente nel formato specificato.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Valore [String](/dotnet/api/system.string) contenente il valore dell'istanza corrente nel formato specificato.  
 
 #### <a name="implements"></a>Implementazioni
 
-[IFormattable. ToString (String, IFormatProvider)](/dotnet/api/system.iformattable.tostring#System_IFormattable_ToString_System_String_System_IFormatProvider_)  
+[IFormattable.ToString(String, IFormatProvider)](/dotnet/api/system.iformattable.tostring#System_IFormattable_ToString_System_String_System_IFormatProvider_)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_HANDLE](./jet-handle-structure.md)
+[JET_HANDLE struttura](./jet-handle-structure.md)
 
-[Membri JET_HANDLE](./jet-handle-members.md)
+[JET_HANDLE membri](./jet-handle-members.md)
 
-[Overload ToString](./jet-handle.tostring-method.md)
+[Overload di ToString](./jet-handle.tostring-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
