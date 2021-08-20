@@ -4,8 +4,8 @@ description: Per configurare l'indicizzatore
 ms.assetid: 0e28e8dd-1586-45e6-8a08-5245d465d068
 keywords:
 - Windows Media Format SDK, configurazione di indicizzatori
-- Advanced Systems Format (ASF), configurazione di indicizzatori
-- ASF (Advanced Systems Format), configurazione di indicizzatori
+- Advanced Systems Format (ASF), configurazione degli indicizzatori
+- ASF (Advanced Systems Format), configurazione degli indicizzatori
 - indici, configurazione di indicizzatori
 ms.topic: article
 ms.date: 05/31/2018
@@ -20,9 +20,9 @@ ms.locfileid: "117845626"
 
 È possibile configurare l'indicizzatore prima di usarlo per indicizzare un file ASF. Ogni flusso nel file può essere configurato separatamente oppure è possibile impostare la stessa configurazione per tutti i flussi.
 
-Se si configurano più file per l'indicizzazione in un file, è necessario configurarli tutti e quindi iniziare l'indicizzazione. Se si configura e si indicizza un flusso e quindi si configura un altro flusso nello stesso file, avviando nuovamente l'indicizzatore verrà eliminato il primo indice. Questo deve essere conforme al formato di file ASF.
+Se si configurano più elementi per l'indicizzazione in un file, è necessario configurarli tutti e quindi iniziare l'indicizzazione. Se si configura e indicizza un flusso e quindi si configura un altro flusso nello stesso file, avviando nuovamente l'indicizzatore verrà eliminato il primo indice. Questo è conforme al formato di file ASF.
 
-Nel codice seguente viene illustrato come configurare l'indicizzatore. Il codice presuppone che il file da indicizzare abbia due flussi: il primo è un flusso audio che non deve essere indicizzato e il secondo è un flusso video. Questo codice illustra solo come configurare l'indicizzatore. Per indicizzare un file, è necessario seguire i passaggi descritti in [Per indicizzare un file ASF.](to-index-an-asf-file.md)
+Il codice seguente illustra come configurare l'indicizzatore. Il codice presuppone che il file da indicizzare abbia due flussi: il primo è un flusso audio che non deve essere indicizzato e il secondo è un flusso video. Questo codice illustra solo come configurare l'indicizzatore. Per indicizzare un file, è necessario seguire i passaggi presentati in [Per indicizzare un file ASF.](to-index-an-asf-file.md)
 
 
 ```C++
@@ -65,7 +65,7 @@ pMyIndexer = NULL;
 
 
 > [!Note]  
-> Il tipo di indice predefinito è WMT \_ IT \_ NEAREST CLEAN \_ \_ POINT. Anche se è possibile impostare il tipo di indice su altri valori, in questo modo si riducono le prestazioni di ricerca.
+> Il tipo di indice predefinito è WMT \_ IT \_ NEAREST CLEAN \_ \_ POINT. Anche se è possibile impostare il tipo di indice su altri valori, questa operazione riduce le prestazioni di ricerca.
 
  
 

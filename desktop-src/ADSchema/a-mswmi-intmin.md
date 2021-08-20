@@ -1,11 +1,11 @@
 ---
-title: attributo ms-WMI-intMin
+title: Attributo ms-WMI-intMin
 description: Valore minimo per un oggetto parametro integer WMI a 32 bit.
 ms.assetid: 55f0f7ad-33d8-48e2-9924-49897085b078
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-WMI-intMin
-- msWMI-schema AD attributo IntMin
+- Schema AD dell'attributo msWMI-IntMin
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 69920496485e1b774bbef430466cd44529c57aa1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 677117d851bcf6128390be509286dad1ae2de419f1271081246b68c05ab42500
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117837375"
 ---
-# <a name="ms-wmi-intmin-attribute"></a>attributo ms-WMI-intMin
+# <a name="ms-wmi-intmin-attribute"></a>Attributo ms-WMI-intMin
 
 Valore minimo per un oggetto parametro integer WMI a 32 bit.
 
@@ -29,13 +29,13 @@ Valore minimo per un oggetto parametro integer WMI a 32 bit.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MS-WMI-intMin                        |
-| LDAP-Display-Name | msWMI-IntMin                         |
+| CN                | ms-WMI-intMin                        |
+| Ldap-Display-Name | msWMI-IntMin                         |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | Amministratore Criteri di gruppo           |
+| Aggiorna privilegio  | Criteri di gruppo amministratore           |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1630              |
-| System-ID-GUID    | 68c2e3ba-9837-4c70-98e0-f0c33695d023 |
+| System-Id-Guid    | 68c2e3ba-9837-4c70-98e0-f0c33695d023 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -57,15 +57,15 @@ Valore minimo per un oggetto parametro integer WMI a 32 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -78,15 +78,15 @@ Valore minimo per un oggetto parametro integer WMI a 32 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -99,15 +99,15 @@ Valore minimo per un oggetto parametro integer WMI a 32 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -120,15 +120,15 @@ Valore minimo per un oggetto parametro integer WMI a 32 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -141,15 +141,15 @@ Valore minimo per un oggetto parametro integer WMI a 32 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

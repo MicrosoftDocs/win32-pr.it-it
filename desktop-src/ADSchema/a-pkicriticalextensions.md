@@ -29,10 +29,10 @@ Elenco di estensioni critiche nel modello di certificato.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Estensioni PKI critiche                     |
+| CN                | PKI-Critical-Extensions                     |
 | Ldap-Display-Name | pKICriticalExtensions                       |
 | Dimensione              | \-                                          |
-| Aggiorna privilegio  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1330                     |
 | System-Id-Guid    | fc5a9106-3b9d-11d2-90cc-00c04fd91ab1        |

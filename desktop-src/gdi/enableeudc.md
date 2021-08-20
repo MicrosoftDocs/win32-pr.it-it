@@ -1,7 +1,7 @@
 ---
-description: Questa funzione Abilita o Disabilita il supporto per i caratteri definiti dall'utente finale (EUDC).
+description: Questa funzione abilita o disabilita il supporto per i caratteri definiti dall'utente finale (EUDC).
 ms.assetid: 9e531d8c-6008-4189-ae25-cda707be5e2c
-title: EnableEUDC (funzione)
+title: Funzione EnableEUDC
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Gdi32.dll
-ms.openlocfilehash: 755ce2e0a659593b17487e86e28f5d454e48122c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5767be62d23e992223500bf7192fc89efe04f03288280c73445378e083cc1613
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117699476"
 ---
-# <a name="enableeudc-function"></a>EnableEUDC (funzione)
+# <a name="enableeudc-function"></a>Funzione EnableEUDC
 
-Questa funzione Abilita o Disabilita il supporto per i caratteri definiti dall'utente finale (EUDC).
+Questa funzione abilita o disabilita il supporto per i caratteri definiti dall'utente finale (EUDC).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,10 +39,10 @@ BOOL EnableEUDC(
 
 <dl> <dt>
 
-*fEnableEUDC* \[ in\]
+*fEnableEUDC* \[ Pollici\]
 </dt> <dd>
 
-Valore booleano impostato su **true** per abilitare EUDC e su **false** per disabilitare EUDC.
+Valore booleano impostato su **TRUE per** abilitare EUDC e **su FALSE** per disabilitare EUDC.
 
 </dd> </dl>
 
@@ -54,11 +54,11 @@ Se la funzione ha esito negativo, il valore restituito è zero.
 
 ## <a name="remarks"></a>Commenti
 
-Se EUDC è disabilitato, il tentativo di visualizzare i caratteri EUDC provocherà glifi mancanti o errati.
+Se EUDC è disabilitato, il tentativo di visualizzare i caratteri EUDC causa la mancanza o la mancata visualizzazione di glifi.
 
-Durante la multisessione, questa funzione influiscono solo sulla sessione corrente.
+Durante più sessioni, questa funzione influisce solo sulla sessione corrente.
 
-Si consiglia di utilizzare questa funzione con Windows XP SP2 o versione successiva.
+È consigliabile usare questa funzione con Windows XP SP2 o versione successiva.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,7 +68,7 @@ Si consiglia di utilizzare questa funzione con Windows XP SP2 o versione success
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Libreria<br/>                  | <dl> <dt>Gdi32. lib</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Gdi32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Gdi32.dll</dt> </dl> |
 
 

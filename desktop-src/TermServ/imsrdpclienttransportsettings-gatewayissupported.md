@@ -1,12 +1,12 @@
 ---
-title: Proprietà GatewayIsSupported di IMsRdpClientTransportSettings
-description: Specifica se Desktop remoto Gateway Desktop remoto è supportato.
+title: Proprietà IMsRdpClientTransportSettings GatewayIsSupported
+description: Specifica se Desktop remoto Gateway desktop remoto è supportato.
 ms.assetid: 31edd35b-251d-404d-bec8-e082bb2427b3
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà GatewayIsSupported
-- Servizi Desktop remoto proprietà GatewayIsSupported, interfaccia IMsRdpClientTransportSettings
-- Interfaccia IMsRdpClientTransportSettings Servizi Desktop remoto, proprietà GatewayIsSupported
+- Proprietà GatewayIsSupported Servizi Desktop remoto
+- Proprietà GatewayIsSupported Servizi Desktop remoto, interfaccia IMsRdpClientTransportSettings
+- Interfaccia IMsRdpClientTransportSettings Servizi Desktop remoto , proprietà GatewayIsSupported
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de79033c2ab9bae73aae4213e72a54590170a184
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 25de5a5ae30946c93fc27cdded10117fc29fa2a8cf587315ccdc50b922f5f10e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117941098"
 ---
-# <a name="imsrdpclienttransportsettingsgatewayissupported-property"></a>Proprietà IMsRdpClientTransportSettings:: GatewayIsSupported
+# <a name="imsrdpclienttransportsettingsgatewayissupported-property"></a>Proprietà IMsRdpClientTransportSettings::GatewayIsSupported
 
-Specifica se Desktop remoto Gateway Desktop remoto è supportato.
+Specifica se Desktop remoto Gateway desktop remoto è supportato.
 
 Questa proprietà è di sola lettura.
 
@@ -48,7 +48,7 @@ Specifica se Gateway Desktop remoto è supportato.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="requirements"></a>Requisiti
 

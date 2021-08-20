@@ -6,34 +6,34 @@ keywords:
 - buffer costante, creazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1abb6718ad223ff389aa0b7ebf10ad1ec8bacd71
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2359698c4dfc72bfe3c3c9747e29ddfa5f6aecd2aaa32b99d75fbe38e956ac4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103729562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117912822"
 ---
-# <a name="how-to-create-a-constant-buffer"></a>Procedura: creare un buffer costante
+# <a name="how-to-create-a-constant-buffer"></a>Procedura: Creare un buffer costante
 
-I [buffer costanti](overviews-direct3d-11-resources-buffers-intro.md) contengono dati costanti dello shader. In questo argomento viene illustrato come inizializzare un [buffer costante](overviews-direct3d-11-resources-buffers-intro.md) in preparazione per il rendering.
+[I buffer costanti contengono](overviews-direct3d-11-resources-buffers-intro.md) dati costanti dello shader. In questo argomento viene illustrato come inizializzare un [buffer costante](overviews-direct3d-11-resources-buffers-intro.md) in preparazione per il rendering.
 
 **Per inizializzare un buffer costante**
 
 1.  Definire una struttura che descrive i dati costanti del vertex shader.
-2.  Allocare memoria per la struttura definita nel passaggio 1. Riempire questo buffer con i dati costanti del vertex shader. È possibile usare **malloc** o **New** per allocare la memoria oppure è possibile allocare memoria per la struttura dallo stack.
-3.  Creare una descrizione del buffer compilando una struttura [**d3d11 \_ buffer \_ desc**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_buffer_desc) . Passare il \_ flag del \_ buffer costante di binding d3d11 \_ al membro **BindFlags** e passare le dimensioni della struttura di descrizione del buffer costante in byte al membro **ByteWidth** .
+2.  Allocare memoria per la struttura definita nel passaggio 1. Riempire questo buffer con dati costanti del vertex shader. È possibile usare **malloc** o **new** per allocare la memoria oppure è possibile allocare memoria per la struttura dallo stack.
+3.  Creare una descrizione del buffer compilando una [**struttura D3D11 \_ BUFFER \_ DESC.**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_buffer_desc) Passare il flag D3D11 BIND CONSTANT BUFFER al membro \_ \_ \_ **BindFlags** e passare le dimensioni della struttura di descrizione costante del buffer in byte al **membro ByteWidth.**
 
     > [!Note]  
-    > \_ \_ \_ Non è possibile combinare il flag del buffer costante di binding d3d11 con altri flag.
+    > Il flag D3D11 \_ BIND CONSTANT BUFFER non può essere combinato con altri \_ \_ flag.
 
-     
+     
 
-4.  Creare una descrizione dei dati della sottorisorsa compilando una struttura di [**\_ \_ dati della sottorisorsa d3d11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_subresource_data) . Il membro **pSysMem** della struttura **dei \_ \_ dati della sottorisorsa d3d11** deve puntare direttamente ai dati costanti del vertex shader creati nel passaggio 2.
-5.  Chiamare [**ID3D11Device:: CreateBuffer**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createbuffer) passando la struttura [**\_ \_ Desc del buffer D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_buffer_desc) , la [**struttura \_ \_ dei dati della sottorisorsa d3d11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_subresource_data) e l'indirizzo di un puntatore all'interfaccia [**ID3D11Buffer**](/windows/desktop/api/D3D11/nn-d3d11-id3d11buffer) da inizializzare.
+4.  Creare una descrizione dei dati della sottorisorsa compilando una [**struttura D3D11 \_ SUBRESOURCE \_ DATA.**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_subresource_data) Il **membro pSysMem** della struttura **\_ SUBRESOURCE \_ DATA D3D11** deve puntare direttamente ai dati costanti del vertex shader creati nel passaggio 2.
+5.  Chiamare [**ID3D11Device::CreateBuffer**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createbuffer) durante il passaggio della struttura [**D3D11 \_ BUFFER \_ DESC,**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_buffer_desc) della struttura [**\_ SUBRESOURCE \_ DATA D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_subresource_data) e dell'indirizzo di un puntatore all'interfaccia [**ID3D11Buffer**](/windows/desktop/api/D3D11/nn-d3d11-id3d11buffer) da inizializzare.
 
 Questi esempi di codice illustrano come creare un buffer costante.
 
-Questo esempio si basa sul presupposto che **g \_ pd3dDevice** sia un oggetto [**ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device) valido e che **g \_ pd3dContext** sia un oggetto [**sul ID3D11DeviceContext**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext) valido.
+Questo esempio presuppone che **g \_ pd3dDevice** sia un oggetto [**ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device) valido e **che g \_ pd3dContext** sia un oggetto [**ID3D11DeviceContext**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext) valido.
 
 
 ```C++
@@ -88,7 +88,7 @@ g_pd3dContext->VSSetConstantBuffers( 0, 1, &g_pConstantBuffer11 );
 
 
 
-In questo esempio viene illustrata la definizione cbuffer HLSL associata.
+Questo esempio illustra la definizione di cbuffer HLSL associata.
 
 ``` syntax
 cbuffer VS_CONSTANT_BUFFER : register(b0)
@@ -103,9 +103,9 @@ cbuffer VS_CONSTANT_BUFFER : register(b0)
 ```
 
 > [!Note]  
-> Assicurarsi di associare il layout della \_ memoria del buffer costante di Visual Studio \_ in C++ con il layout HLSL. Per informazioni sul modo in cui HLSL gestisce il layout in memoria, vedere [regole di compressione per variabili costanti](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-packing-rules).
+> Assicurarsi di associare il layout di memoria DI VS \_ CONSTANT \_ BUFFER in C++ con il layout HLSL. Per informazioni sul modo in cui HLSL gestisce il layout in memoria, vedere [Packing Rules for Constant Variables](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-packing-rules).
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -117,6 +117,6 @@ cbuffer VS_CONSTANT_BUFFER : register(b0)
 [Come usare Direct3D 11](how-to-use-direct3d-11.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

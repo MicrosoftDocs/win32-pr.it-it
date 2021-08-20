@@ -1,23 +1,23 @@
 ---
-description: "Con l'arresto del sistema vengono usati gli elementi seguenti:"
+description: "Gli elementi seguenti vengono usati con l'arresto del sistema:"
 ms.assetid: 6337acad-a55b-4524-acda-2edf6eca9e3b
-title: Riferimento per l'arresto del sistema
+title: Informazioni di riferimento per l'arresto del sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46ac5e9462b32ee0518ad169ae27dab3f6bc8d16
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5b91629c27fd4bae34a992c4d88a4d8b893cd1b0167d60ab71e0a844f84f6b2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117963501"
 ---
-# <a name="system-shutdown-reference"></a>Riferimento per l'arresto del sistema
+# <a name="system-shutdown-reference"></a>Informazioni di riferimento per l'arresto del sistema
 
-Con l'arresto del sistema vengono usati gli elementi seguenti:
+Gli elementi seguenti vengono usati con l'arresto del sistema:
 
 -   [Funzioni di arresto del sistema](system-shutdown-functions.md)
--   [Messaggi di chiusura del sistema](system-shutdown-messages.md)
--   [Codici motivo dell'arresto del sistema](system-shutdown-reason-codes.md)
+-   [Messaggi di arresto del sistema](system-shutdown-messages.md)
+-   [Codici motivo arresto sistema](system-shutdown-reason-codes.md)
 
  
 

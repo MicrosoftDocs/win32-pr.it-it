@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117876007"
 ---
-# <a name="mf_stream_sink_supports_rotation-attribute"></a>SINK DI FLUSSO MF \_ \_ SUPPORTA \_ \_ L'ATTRIBUTO ROTATION
+# <a name="mf_stream_sink_supports_rotation-attribute"></a>IL SINK DI FLUSSO MF \_ \_ SUPPORTA \_ \_ L'ATTRIBUTO ROTATION
 
 Indica se il sink di flusso supporta la rotazione video.
 

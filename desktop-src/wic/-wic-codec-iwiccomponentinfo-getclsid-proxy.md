@@ -1,7 +1,7 @@
 ---
-description: Funzione proxy per il metodo getclsid.
+description: Funzione proxy per il metodo GetCLSID.
 ms.assetid: c6a8d752-590f-43d6-bac8-72b5bd259ad0
-title: Funzione IWICComponentInfo_GetCLSID_Proxy
+title: IWICComponentInfo_GetCLSID_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: fc63d3f30605c0f5343502bcb96e989cc8496540
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a50fe02c96991e592f8195599b02dfadc2fea65335162a1133be22096239d81a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319560"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117668414"
 ---
-# <a name="iwiccomponentinfo_getclsid_proxy-function"></a>IWICComponentInfo \_ \_ funzione proxy getclsid
+# <a name="iwiccomponentinfo_getclsid_proxy-function"></a>Funzione proxy IWICComponentInfo \_ \_ GetCLSID
 
-Funzione proxy per il metodo [**getclsid**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getclsid) .
+Funzione proxy per il [**metodo GetCLSID.**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getclsid)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,19 +41,19 @@ HRESULT IWICComponentInfo_GetCLSID_Proxy(
 
 <dl> <dt>
 
-*Questa \_ PTR* \[ in\]
+*QUESTO \_ PTR* \[ in\]
 </dt> <dd>
 
-Tipo: **[**IWICComponentInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo) \** _
+Tipo: **[ **IWICComponentInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo)\***
 
-Puntatore a questo oggetto [_ *IWICComponentInfo* *](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo) .
+Puntatore a [**questo oggetto IWICComponentInfo.**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo)
 
 </dd> <dt>
 
-*pCLSID* \[ out\]
+*pclsid* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **CLSID \** _
+Tipo: **CLSID \***
 
 Puntatore che riceve il CLSID del componente.
 
@@ -61,9 +61,9 @@ Puntatore che riceve il CLSID del componente.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -73,9 +73,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop vista\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

@@ -23,7 +23,7 @@ Stringa di caratteri wide
 
 Questo attributo si applica ai descrittori di presentazione per il contenuto asf.
 
-Il [**metodo IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) recupera il campo KEY ID, lo converte in una stringa di caratteri wide e quindi popola una matrice di **WCHAR** con terminazione Null. La dimensione della matrice è uguale al campo Lunghezza ID chiave dell'intestazione di crittografia del contenuto.
+Il [**metodo IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) recupera il campo KEY ID, lo converte in una stringa di caratteri wide e quindi popola una matrice con terminazione Null di **WCHAR.** La dimensione della matrice è uguale al campo Lunghezza ID chiave dell'intestazione di crittografia del contenuto.
 
 ## <a name="requirements"></a>Requisiti
 

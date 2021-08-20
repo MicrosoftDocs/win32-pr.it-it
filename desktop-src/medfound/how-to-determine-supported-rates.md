@@ -13,13 +13,13 @@ ms.locfileid: "117878943"
 ---
 # <a name="how-to-determine-supported-rates"></a>Come determinare le tariffe supportate
 
-Prima di modificare la velocità di riproduzione, un'applicazione deve verificare se la velocità di riproduzione è supportata dagli oggetti nella pipeline. [**L'interfaccia IMFRateSupport**](/windows/desktop/api/mfidl/nn-mfidl-imfratesupport) fornisce metodi per ottenere il numero massimo di velocità in avanti e inversa, la frequenza supportata più vicina a una frequenza richiesta e la velocità più lenta. Ognuna di queste query di frequenza può specificare la direzione di riproduzione e se usare il thinning. La velocità di riproduzione esatta viene eseguita tramite [**l'interfaccia IMFRateControl.**](/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol)
+Prima di modificare la velocità di riproduzione, un'applicazione deve controllare se la velocità di riproduzione è supportata dagli oggetti nella pipeline. [**L'interfaccia IMFRateSupport**](/windows/desktop/api/mfidl/nn-mfidl-imfratesupport) fornisce metodi per ottenere la velocità massima in avanti e inversa, la frequenza supportata più vicina a una frequenza richiesta e la velocità più lenta. Ognuna di queste query di frequenza può specificare la direzione di riproduzione e se usare il thinning. La velocità di riproduzione esatta viene eseguita tramite [**l'interfaccia IMFRateControl.**](/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol)
 
-Per informazioni sulla modifica delle frequenze di riproduzione, vedere [How to Set the Playback Rate on the Media Session (Come impostare la velocità di riproduzione nella sessione multimediale).](how-to-set-the-playback-rate-on-the-media-session.md)
+Per informazioni sulla modifica delle frequenze di riproduzione, vedere [How to Set the Playback Rate on the Media Session](how-to-set-the-playback-rate-on-the-media-session.md).
 
-Per informazioni generali sulle frequenze di riproduzione, vedere [About Rate Control](about-rate-control.md).
+Per informazioni generali sulle frequenze di riproduzione, vedere [Informazioni sul controllo della frequenza.](about-rate-control.md)
 
-## <a name="to-determine-the-current-playback-rate"></a>Per determinare la velocità di riproduzione corrente
+## <a name="to-determine-the-current-playback-rate"></a>Per determinare la frequenza di riproduzione corrente
 
 1.  Ottenere il servizio di controllo della frequenza dalla sessione multimediale.
 
@@ -34,11 +34,11 @@ Per informazioni generali sulle frequenze di riproduzione, vedere [About Rate Co
 
     
 
-    Passare un puntatore a [**interfaccia IMFMediaSession**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasession) inizializzato nel parametro *punkObject* [**di MFGetService**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice).
+    Passare un puntatore a [**interfaccia IMFMediaSession**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasession) inizializzato nel *parametroobject di* [**MFGetService.**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice)
 
     L'applicazione deve eseguire una query per il servizio di controllo della frequenza tramite la sessione multimediale. Internamente, la sessione multimediale esegue una query sugli oggetti nella topologia.
 
-2.  Chiamare il [**metodo IMFRateControl::GetRate**](/windows/desktop/api/mfidl/nf-mfidl-imfratecontrol-getrate) per ottenere la velocità di riproduzione corrente.
+2.  Chiamare il [**metodo IMFRateControl::GetRate**](/windows/desktop/api/mfidl/nf-mfidl-imfratecontrol-getrate) per ottenere la frequenza di riproduzione corrente.
 
     ```C++
     hr = pRateControl->GetRate(&bThin, &rate);
@@ -46,11 +46,11 @@ Per informazioni generali sulle frequenze di riproduzione, vedere [About Rate Co
 
     
 
-    Il *parametro pfThin* di [**GetRate**](/windows/desktop/api/mfidl/nf-mfidl-imfratecontrol-getrate) riceve un **valore BOOL** che indica se il flusso è attualmente in fase di thin. L'applicazione deve passare **NULL** se non vuole eseguire query sul supporto di thinning per il flusso. Il *parametro pflRate* riceve la velocità di riproduzione corrente.
+    Il *parametro pfThin* di [**GetRate**](/windows/desktop/api/mfidl/nf-mfidl-imfratecontrol-getrate) riceve un valore **BOOL** che indica se il flusso è attualmente in fase di thinning. L'applicazione deve passare **NULL** se non desidera eseguire query sul supporto di thinning per il flusso. Il *parametro pflRate* riceve la frequenza di riproduzione corrente.
 
 ## <a name="to-determine-the-nearest-supported-rate"></a>Per determinare la tariffa supportata più vicina
 
-1.  Ottenere il servizio di supporto della frequenza dalla sessione multimediale.
+1.  Ottenere il servizio di supporto tariffa dalla sessione multimediale.
 
     ```C++
     IMFRateSupport *pRateSupport = NULL;
@@ -63,7 +63,7 @@ Per informazioni generali sulle frequenze di riproduzione, vedere [About Rate Co
 
     
 
-    Passare un puntatore a [**interfaccia IMFMediaSession**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasession) inizializzato nel parametro *punkObject* [**di MFGetService**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice).
+    Passare un puntatore a [**interfaccia IMFMediaSession**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasession) inizializzato nel *parametroobject di* [**MFGetService.**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice)
 
 2.  Chiamare il [**metodo IMFRateSupport::IsRateSupported**](/windows/desktop/api/mfidl/nf-mfidl-imfratesupport-isratesupported) per recuperare la frequenza supportata più vicina a una velocità di riproduzione richiesta.
 
@@ -78,15 +78,15 @@ Per informazioni generali sulle frequenze di riproduzione, vedere [About Rate Co
 
     
 
-    L'esempio esegue una query per determinare se una velocità di riproduzione di 4.0 è supportata con il thinning. Ciò viene indicato passando **TRUE** nel parametro *fThin* di [**IsRateSupported.**](/windows/desktop/api/mfidl/nf-mfidl-imfratesupport-isratesupported) Se questa frequenza è supportata, *actualRate* contiene la velocità di riproduzione di 4.0 e la chiamata ha esito positivo con il valore restituito S \_ OK. Se la velocità di riproduzione esatta non è supportata, la frequenza supportata più vicina viene ricevuta in *actualRate*. Se la frequenza non è supportata e non è disponibile la velocità di riproduzione più vicina, la chiamata restituisce un codice di errore appropriato.
+    L'esempio esegue una query per determinare se una velocità di riproduzione di 4.0 è supportata con il thinning. Ciò è indicato passando **TRUE** nel *parametro fThin* di [**IsRateSupported.**](/windows/desktop/api/mfidl/nf-mfidl-imfratesupport-isratesupported) Se questa frequenza è supportata, *actualRate* contiene la velocità di riproduzione di 4,0 e la chiamata ha esito positivo con un valore restituito S \_ OK. Se la velocità di riproduzione esatta non è supportata, viene ricevuta la frequenza supportata più vicina in *actualRate.* Se la frequenza non è supportata e non è disponibile alcuna velocità di riproduzione più vicina, la chiamata restituisce un codice di errore appropriato.
 
     Questi valori possono cambiare a seconda dei componenti della pipeline caricati. Pertanto, è necessario eseguire nuovamente una query dei valori ogni volta che si carica una nuova topololgy.
 
-    Se la velocità di riproduzione desiderata non è supportata, è possibile eseguire una query su ogni oggetto nella topologia singolarmente, per determinare se un componente specifico non supporta la frequenza. Potrebbe essere possibile ricompilare la topologia senza questo componente e quindi riprodurre alla velocità desiderata. Ad esempio, se ogni componente ad eccezione del renderer audio supporta una determinata frequenza, è possibile ricompilare la topologia senza il ramo audio e riprodurre alla velocità desiderata senza audio.
+    Se la velocità di riproduzione desiderata non è supportata, è possibile eseguire una query su ogni oggetto della topologia singolarmente per verificare se un determinato componente non supporta la frequenza. Potrebbe essere possibile ricompilare la topologia senza questo componente e quindi riprodurre alla velocità desiderata. Ad esempio, se ogni componente ad eccezione del renderer audio supporta una determinata frequenza, è possibile ricompilare la topologia senza il ramo audio e riprodurre alla velocità desiderata senza audio.
 
 ## <a name="to-determine-the-slowest-supported-rate"></a>Per determinare la frequenza supportata più lenta
 
-1.  Ottenere il servizio di supporto della frequenza dalla sessione multimediale.
+1.  Ottenere il servizio di supporto tariffa dalla sessione multimediale.
 
     ```C++
     IMFRateSupport *pRateSupport = NULL;
@@ -99,7 +99,7 @@ Per informazioni generali sulle frequenze di riproduzione, vedere [About Rate Co
 
     
 
-    Passare un puntatore a [**interfaccia IMFMediaSession**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasession) inizializzato nel parametro *punkObject* [**di MFGetService**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice).
+    Passare un puntatore a [**interfaccia IMFMediaSession**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasession) inizializzato nel *parametroobject di* [**MFGetService.**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice)
 
 2.  Chiamare il [**metodo IMFRateSupport::GetSlowestRate**](/windows/desktop/api/mfidl/nf-mfidl-imfratesupport-getslowestrate) per recuperare la frequenza supportata più lenta.
 
@@ -113,7 +113,7 @@ Per informazioni generali sulle frequenze di riproduzione, vedere [About Rate Co
 
     
 
-    L'esempio esegue una query per la velocità di riproduzione inversa più lenta con thinning. La frequenza del limite inferiore viene ricevuta *nel parametro slowestRate* [**di GetSlowestRate**](/windows/desktop/api/mfidl/nf-mfidl-imfratesupport-getslowestrate).
+    L'esempio esegue una query per la velocità di riproduzione inversa più lenta con thinning. La frequenza del limite inferiore viene ricevuta *nel parametro slowestRate* [**di GetSlowestRate.**](/windows/desktop/api/mfidl/nf-mfidl-imfratesupport-getslowestrate)
 
     Se la riproduzione inversa o il thinning non è supportato, la chiamata restituisce un codice di errore appropriato.
 

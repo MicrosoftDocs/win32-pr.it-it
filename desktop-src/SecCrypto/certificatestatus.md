@@ -1,5 +1,5 @@
 ---
-description: Contiene informazioni su come costruire una catena di certificati di attendibilità.
+description: Contiene informazioni su come costruire una catena di certificati attendibili.
 ms.assetid: 120cd79e-7c9b-45f3-8596-091b674e73d8
 title: Oggetto CertificateStatus
 ms.topic: reference
@@ -24,7 +24,7 @@ ms.locfileid: "117770000"
 
 \[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece la [**struttura X509ChainStatus**](/dotnet/api/system.security.cryptography.x509certificates.x509chainstatus?view=netcore-3.1) nello spazio dei nomi [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-**L'oggetto CertificateStatus** contiene informazioni su come costruire una catena di certificati di attendibilità.
+**L'oggetto CertificateStatus** contiene informazioni su come costruire una catena di certificati attendibili.
 
 ## <a name="members"></a>Membri
 
@@ -43,7 +43,7 @@ ms.locfileid: "117770000"
 |:---------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------|
 | [**ApplicationPolicies**](certificatestatus-applicationpolicies.md) | Restituisce una [**raccolta di OID**](oids.md) che rappresenta gli OID dei criteri dell'applicazione.<br/>                                           |
 | [**CertificatePolicies**](certificatestatus-certificatepolicies.md) | Restituisce una [**raccolta di OID**](oids.md) che rappresenta gli OID dei criteri del certificato utilizzati durante la compilazione della catena.<br/>                |
-| [**EKU**](certificatestatus-eku.md)                                 | Restituisce [**l'oggetto EKU**](eku.md) utilizzato per impostare gli elementi EKU da controllare per stabilire lo stato di validità di un certificato.<br/> |
+| [**EKU**](certificatestatus-eku.md)                                 | Restituisce [**l'oggetto EKU**](eku.md) usato per impostare gli elementi EKU da controllare per stabilire lo stato di validità di un certificato.<br/> |
 
 
 
@@ -57,11 +57,11 @@ ms.locfileid: "117770000"
 
 | Proprietà                                                                        | Tipo di accesso           | Descrizione                                                                                                                                                                                                                                                       |
 |:--------------------------------------------------------------------------------|:----------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Certificati**](certificatestatus-certificates.md)<br/>               | Lettura/Scrittura<br/> | Imposta o recupera la raccolta di certificati che possono essere usati per compilare la catena di certificati.<br/> **CAPICOM 2.0.0.3 e versioni precedenti:** La [**proprietà Certificates**](certificatestatus-certificates.md) non è supportata.<br/>                    |
-| [**CheckFlag**](certificatestatus-checkflag.md)<br/>                     | Lettura/Scrittura<br/> | Flag di controllo di validità. I valori possono essere uniti usando un **operatore OR** logico. Il flag di controllo predefinito è [**CAPICOM \_ CHECK ONLINE \_ \_ ALL.**](capicom-check-flag.md)<br/>                                                                                     |
-| [**Risultato**](certificatestatus-result.md)<br/>                           | Sola lettura<br/>  | Indica se il certificato è valido. La validità del certificato viene verificata usando l'impostazione corrente della [**proprietà CheckFlag**](certificatestatus-checkflag.md) e le impostazioni dei criteri del certificato. Si tratta della proprietà predefinita.<br/> |
+| [**Certificati**](certificatestatus-certificates.md)<br/>               | Lettura/Scrittura<br/> | Imposta o recupera la raccolta di certificati che possono essere utilizzati per compilare la catena di certificati.<br/> **CAPICOM 2.0.0.3 e versioni precedenti:** La [**proprietà Certificates**](certificatestatus-certificates.md) non è supportata.<br/>                    |
+| [**Flag di controllo**](certificatestatus-checkflag.md)<br/>                     | Lettura/Scrittura<br/> | Flag di controllo di validità. I valori possono essere uniti tramite un **operatore OR** logico. Il flag di controllo predefinito è [**CAPICOM \_ CHECK ONLINE \_ \_ ALL.**](capicom-check-flag.md)<br/>                                                                                     |
+| [**Risultato**](certificatestatus-result.md)<br/>                           | Sola lettura<br/>  | Indica se il certificato è valido. La validità del certificato viene verificata usando l'impostazione corrente [**della proprietà CheckFlag**](certificatestatus-checkflag.md) e le impostazioni dei criteri del certificato. Si tratta della proprietà predefinita.<br/> |
 | [**UrlRetrievalTimeout**](certificatestatus-urlretrievaltimeout.md)<br/> | Lettura/Scrittura<br/> | Imposta o recupera l'intervallo di tempo prima che un URL venga determinato come non raggiungibile.<br/>                                                                                                                                                                     |
-| [**VerificationTime**](certificatestatus-verificationtime.md)<br/>       | Lettura/Scrittura<br/> | Imposta o recupera l'ora di verifica del certificato.<br/>                                                                                                                                                                                          |
+| [**VerificationTime**](certificatestatus-verificationtime.md)<br/>       | Lettura/Scrittura<br/> | Imposta o recupera l'ora in cui il certificato è stato verificato.<br/>                                                                                                                                                                                          |
 
 
 
@@ -71,7 +71,7 @@ ms.locfileid: "117770000"
 
 Impossibile **creare l'oggetto CertificateStatus.**
 
-**L'oggetto CertificateStatus** viene restituito dal [**metodo Certificate.IsValid.**](certificate-isvalid.md)
+**L'oggetto CertificateStatus** viene [**restituito dal metodo Certificate.IsValid.**](certificate-isvalid.md)
 
 ## <a name="requirements"></a>Requisiti
 

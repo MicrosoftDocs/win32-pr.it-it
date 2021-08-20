@@ -1,8 +1,8 @@
 ---
-description: Un oggetto dell'SWbemQualifierSet è una raccolta di oggetti oggetto SWbemQualifier.
+description: Un oggetto SWbemQualifierSet è una raccolta di oggetti SWbemQualifier.
 ms.assetid: 7ac5469c-357b-499d-a558-30bf760c5311
 ms.tgt_platform: multiple
-title: Oggetto dell'SWbemQualifierSet (wbemdisp. h)
+title: Oggetto SWbemQualifierSet (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,38 +15,38 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: e74b495313e8061cc6e08e255d1d055bb2f72a92
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1ed8ec4c244c2ecc2ab2f14200744d4f6d7c78a7891638b96e0b2efb71c408ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104058262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117921980"
 ---
-# <a name="swbemqualifierset-object"></a>Oggetto dell'SWbemQualifierSet
+# <a name="swbemqualifierset-object"></a>Oggetto SWbemQualifierSet
 
-Un oggetto **dell'SWbemQualifierSet** è una raccolta di oggetti [**oggetto SWbemQualifier**](swbemqualifier.md) . Gli elementi vengono aggiunti alla raccolta usando il metodo [**Add**](swbemqualifierset-add.md) , recuperati dalla raccolta usando il metodo [**Item**](swbemqualifierset-item.md) e rimossi dalla raccolta usando il metodo [**Remove**](swbemqualifierset-remove.md) . Questo oggetto non può essere creato dalla chiamata [CreateObject](creating-an-object-using-vbscript.md) di VBScript.
+Un **oggetto SWbemQualifierSet** è una raccolta di [**oggetti SWbemQualifier.**](swbemqualifier.md) Gli elementi vengono aggiunti alla raccolta usando il [**metodo Add,**](swbemqualifierset-add.md) recuperati dalla raccolta usando il [**metodo Item**](swbemqualifierset-item.md) e rimossi dalla raccolta usando il [**metodo Remove.**](swbemqualifierset-remove.md) Questo oggetto non può essere creato dalla chiamata [CreateObject](creating-an-object-using-vbscript.md) di VBScript.
 
-Per ulteriori informazioni, vedere [accesso a una raccolta](accessing-a-collection.md).
+Per altre informazioni, vedere [Accesso a una raccolta](accessing-a-collection.md).
 
-Gli oggetti [**oggetto SWbemQualifier**](swbemqualifier.md) che costituiscono una raccolta **dell'SWbemQualifierSet** descrivono i qualificatori associati a una classe WMI, un'istanza, un metodo o un parametro del metodo.
+Gli [**oggetti SWbemQualifier**](swbemqualifier.md) che costituiscono una raccolta **SWbemQualifierSet** descrivono i qualificatori associati a una classe, un'istanza, un metodo o un parametro del metodo WMI.
 
 ## <a name="members"></a>Membri
 
-L'oggetto **dell'SWbemQualifierSet** dispone di questi tipi di membri:
+**L'oggetto SWbemQualifierSet** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'oggetto **dell'SWbemQualifierSet** dispone di questi metodi.
+**L'oggetto SWbemQualifierSet** dispone di questi metodi.
 
 
 
 | Metodo                                     | Descrizione                                                                                                 |
 |:-------------------------------------------|:------------------------------------------------------------------------------------------------------------|
-| [**Aggiungere**](swbemqualifierset-add.md)       | Aggiunge un oggetto [**oggetto SWbemQualifier**](swbemqualifier.md) alla raccolta **dell'SWbemQualifierSet** .<br/> |
-| [**Elemento**](swbemqualifierset-item.md)     | Restituisce un oggetto denominato [**oggetto SWbemQualifier**](swbemqualifier.md) dalla raccolta.<br/>             |
+| [**Aggiungere**](swbemqualifierset-add.md)       | Aggiunge un [**oggetto SWbemQualifier**](swbemqualifier.md) alla **raccolta SWbemQualifierSet.**<br/> |
+| [**Elemento**](swbemqualifierset-item.md)     | Restituisce un [**oggetto SWbemQualifier**](swbemqualifier.md) denominato dalla raccolta.<br/>             |
 | [**Rimuovi**](swbemqualifierset-remove.md) | Elimina un qualificatore denominato dalla raccolta.<br/>                                                   |
 
 
@@ -55,13 +55,13 @@ L'oggetto **dell'SWbemQualifierSet** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-L'oggetto **dell'SWbemQualifierSet** dispone di queste proprietà.
+**L'oggetto SWbemQualifierSet** ha queste proprietà.
 
 
 
 | Proprietà                                            | Tipo di accesso          | Descrizione                                                                     |
 |:----------------------------------------------------|:---------------------|:--------------------------------------------------------------------------------|
-| [**Conteggio**](swbemqualifierset-count.md)<br/> | Sola lettura<br/> | Contiene il numero di elementi in una raccolta **dell'SWbemQualifierSet** .<br/> |
+| [**Conteggio**](swbemqualifierset-count.md)<br/> | Sola lettura<br/> | Contiene il numero di elementi in una **raccolta SWbemQualifierSet.**<br/> |
 
 
 
@@ -75,11 +75,11 @@ L'oggetto **dell'SWbemQualifierSet** dispone di queste proprietà.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_Dell'SWBEMQUALIFIERSET CLSID<br/>                                                     |
-| IID<br/>                      | \_ISWBEMQUALIFIERSET IID<br/>                                                      |
+| CLSID<br/>                    | CLSID \_ SWbemQualifierSet<br/>                                                     |
+| IID<br/>                      | IID \_ ISWbemQualifierSet<br/>                                                      |
 
 
 
@@ -87,7 +87,7 @@ L'oggetto **dell'SWbemQualifierSet** dispone di queste proprietà.
 
 <dl> <dt>
 
-[Oggetti API di scripting](scripting-api-objects.md)
+[Scripting di oggetti API](scripting-api-objects.md)
 </dt> </dl>
 
  

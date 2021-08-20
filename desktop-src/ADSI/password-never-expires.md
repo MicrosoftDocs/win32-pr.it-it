@@ -1,11 +1,11 @@
 ---
 title: La password non scade mai (provider LDAP)
-description: Per abilitare l'opzione password never expires usando il provider LDAP, impostare il flag ADS \_ UF \_ DONT \_ EXPIRE \_ PASSWD sull'attributo user userAccountControl.
+description: Per abilitare l'opzione password never expires usando il provider LDAP, impostare il flag ADS \_ UF \_ DONT \_ EXPIRE \_ PASSWD sull'attributo useraccountControl.
 ms.assetid: b8d7e7fe-c846-45c4-9c5f-770530453836
 ms.tgt_platform: multiple
 keywords:
 - La password non scade mai ad ADSI, provider LDAP
-- Provider LDAP ADSI, esempi di gestione utenti,Password mai scaduta
+- Provider LDAP ADSI, esempi di gestione degli utenti,Password non scade mai
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: dfa48145fa2b78c7685cdf52ab58b1e681df48c7d10a80f0ac7462fa7d4cb868
@@ -17,7 +17,7 @@ ms.locfileid: "117838931"
 ---
 # <a name="password-never-expires-ldap-provider"></a>La password non scade mai (provider LDAP)
 
-Per abilitare l'opzione password never expires usando il provider LDAP, impostare il flag [**ADS \_ UF \_ DONT \_ EXPIRE \_ PASSWD**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum) sull'attributo [**user userAccountControl.**](/windows/desktop/ADSchema/a-useraccountcontrol)
+Per abilitare l'opzione password never expires usando il provider LDAP, impostare il flag [**ADS \_ UF \_ DONT \_ EXPIRE \_ PASSWD**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum) sull'attributo [**useraccountControl.**](/windows/desktop/ADSchema/a-useraccountcontrol)
 
 
 ```VB

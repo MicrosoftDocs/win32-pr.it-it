@@ -4,16 +4,16 @@ ms.assetid: 3c84c2ad-6bac-4f14-a633-51d4529314af
 title: Uso di oggetti timer waitable
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73a23b0d9f6ab74df325be81eb9236bffe6a0c6d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a13cb6c9e049e10a43b854b8d3c937eef513ea6ad5cf4feff8efcf5b9c0486e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117959140"
 ---
 # <a name="using-waitable-timer-objects"></a>Uso di oggetti timer waitable
 
-Nell'esempio seguente viene creato un timer che verrà segnalato dopo un ritardo di 10 secondi. Per prima cosa, il codice usa la funzione [**CreateWaitableTimer**](/windows/win32/api/synchapi/nf-synchapi-createwaitabletimerw) per creare un [oggetto timer in attesa](waitable-timer-objects.md). USA quindi la funzione [**SetWaitableTimer**](/windows/win32/api/synchapi/nf-synchapi-setwaitabletimer) per impostare il timer. Il codice usa la funzione [**WaitForSingleObject**](/windows/win32/api/winbase/nf-winbase-registerwaitforsingleobject) per determinare quando il timer è stato segnalato.
+Nell'esempio seguente viene creato un timer che verrà segnalato dopo un ritardo di 10 secondi. In primo luogo, il codice usa [**la funzione CreateWaitableTimer**](/windows/win32/api/synchapi/nf-synchapi-createwaitabletimerw) per creare un [oggetto timer waitable.](waitable-timer-objects.md) Usa quindi la [**funzione SetWaitableTimer**](/windows/win32/api/synchapi/nf-synchapi-setwaitabletimer) per impostare il timer. Il codice usa la [**funzione WaitForSingleObject**](/windows/win32/api/winbase/nf-winbase-registerwaitforsingleobject) per determinare quando il timer è stato segnalato.
 
 
 ```C++

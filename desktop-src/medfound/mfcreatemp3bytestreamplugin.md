@@ -1,7 +1,7 @@
 ---
-description: Crea un gestore del flusso di byte per l'origine dei supporti MP3.
+description: Crea un gestore del flusso di byte per l'origine multimediale MP3.
 ms.assetid: A213BAEF-D98F-485B-8840-BE131E9B26C0
-title: MFCreateMP3ByteStreamPlugin (funzione)
+title: Funzione MFCreateMP3ByteStreamPlugin
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 0b8bcd153471ddd8acd648d5775b4dc964693a56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2d2d07905932e589e8873722bd0889cec6dc321c28dbc2d1c8704f880df4991
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117690973"
 ---
-# <a name="mfcreatemp3bytestreamplugin-function"></a>MFCreateMP3ByteStreamPlugin (funzione)
+# <a name="mfcreatemp3bytestreamplugin-function"></a>Funzione MFCreateMP3ByteStreamPlugin
 
-\[Questa API non è supportata e può essere modificata o non disponibile in futuro. Al contrario, le applicazioni devono usare il [resolver di origine](source-resolver.md) per creare l'origine multimediale MP3.\]
+\[Questa API non è supportata e potrebbe essere modificata o non disponibile in futuro. Le applicazioni devono invece usare il [sistema di risoluzione dei problemi di](source-resolver.md) origine per creare l'origine multimediale MP3.\]
 
-Crea un gestore del flusso di byte per l'origine dei supporti MP3.
+Crea un gestore del flusso di byte per l'origine multimediale MP3.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,27 +41,27 @@ HRESULT __stdcall MFCreateMP3ByteStreamPlugin(
 
 <dl> <dt>
 
-*riid* \[ in\]
+*riid* \[ Pollici\]
 </dt> <dd>
 
-Identificatore di interfaccia (IID) dell'interfaccia richiesta. Impostare questo parametro su **IID \_ IMFByteStreamHandler** per ricevere un puntatore all'interfaccia [**IMFByteStreamHandler**](/windows/desktop/api/mfidl/nn-mfidl-imfbytestreamhandler) .
+Identificatore di interfaccia (IID) dell'interfaccia richiesta. Impostare questo parametro su **IID \_ IMFByteStreamHandler** per ricevere un puntatore [**all'interfaccia IMFByteStreamHandler.**](/windows/desktop/api/mfidl/nn-mfidl-imfbytestreamhandler)
 
 </dd> <dt>
 
-*ppvHandler* \[ out\]
+*ppvHandler* \[ Cambio\]
 </dt> <dd>
 
-Riceve un puntatore all'interfaccia. Il chiamante deve rilasciare l'interfaccia.
+Riceve un puntatore all'interfaccia . Il chiamante deve rilasciare l'interfaccia .
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per eseguire il collegamento dinamico a mf.dll.
+A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi dinamicamente mf.dll.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,8 +69,8 @@ A questa funzione non è associata alcuna libreria di importazione. Per chiamare
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 | Fine del supporto client<br/>    | Windows Vista<br/>                             |
 | Fine del supporto server<br/>    | Windows Server 2008<br/>                       |
 
@@ -80,10 +80,10 @@ A questa funzione non è associata alcuna libreria di importazione. Per chiamare
 
 <dl> <dt>
 
-[Funzioni Media Foundation](media-foundation-functions.md)
+[Media Foundation funzioni](media-foundation-functions.md)
 </dt> <dt>
 
-[Gestori di schemi e gestori di Byte-Stream](scheme-handlers-and-byte-stream-handlers.md)
+[Gestori di schemi e Byte-Stream di schema](scheme-handlers-and-byte-stream-handlers.md)
 </dt> <dt>
 
 [Resolver di origine](source-resolver.md)

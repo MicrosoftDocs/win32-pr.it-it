@@ -3,7 +3,7 @@ title: PGN_HOTITEMCHANGE messaggio (Commctrl.h)
 description: Notifica alla finestra padre di un controllo pager che l'elemento con stato attiva (evidenziato) è stato modificato. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 0f59677c-0251-49f4-b909-6fac6d93f354
 keywords:
-- PGN_HOTITEMCHANGE di controllo Windows messaggio
+- PGN_HOTITEMCHANGE controlli Windows messaggio
 topic_type:
 - apiref
 api_name:

@@ -1,37 +1,37 @@
 ---
-description: In Direct3D 10 lo stato del dispositivo è raggruppato in oggetti di stato che riducono notevolmente il costo delle modifiche dello stato.
+description: In Direct3D 10 lo stato del dispositivo è raggruppato in oggetti di stato che riducono notevolmente il costo delle modifiche di stato.
 ms.assetid: b2839da9-60ed-4f6c-9cc7-eac53647cca7
 title: Oggetti di stato (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a51c05e3e220e510c462265941549f91e6368a9
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: 7ab6ac319cba3f432c8eb9cc8781c16b8ed3398fc4883d11aedbf1efcd191a7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117914496"
 ---
 # <a name="state-objects-direct3d-10"></a>Oggetti di stato (Direct3D 10)
 
-In Direct3D 10 lo stato del dispositivo è raggruppato in oggetti di stato che riducono notevolmente il costo delle modifiche dello stato. Sono disponibili diversi oggetti stato e ognuno è progettato per inizializzare un set di stato per una determinata fase della pipeline. È possibile creare fino a 4096 di ogni tipo di oggetto stato.
+In Direct3D 10 lo stato del dispositivo è raggruppato in oggetti di stato che riducono notevolmente il costo delle modifiche di stato. Sono disponibili diversi oggetti di stato, ognuno dei quali è progettato per inizializzare un set di stati per una determinata fase della pipeline. È possibile creare fino a 4096 di ogni tipo di oggetto stato.
 
 -   [Stato del layout di input](#input-layout-state)
 -   [Stato rasterizzazione](#rasterizer-state)
 -   [Stato depth-stencil](#depth-stencil-state)
--   [Stato di blend](#blend-state)
+-   [Stato blend](#blend-state)
 -   [Stato del campionatore](#sampler-state)
 -   [Considerazioni sulle prestazioni](#performance-considerations)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="input-layout-state"></a>Input-Layout stato
 
-Questo gruppo di stato (vedere [**D3D10 \_ INPUT \_ ELEMENT \_ DESC)**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc)determina il modo in cui la fase dell'assembler di [input](../direct3d11/d3d10-graphics-programming-guide-input-assembler-stage.md) legge i dati dai buffer di input e lo assembla per l'uso da parte del vertex shader. Include lo stato, ad esempio il numero di elementi nel buffer di input e la firma dei dati di input. La fase dell'assembler di input è una nuova fase della pipeline il cui processo è quello di trasmettere le primitive dalla memoria alla pipeline.
+Questo gruppo di stato (vedere [**D3D10 \_ INPUT \_ ELEMENT \_ DESC)**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc)determina il modo in cui la fase [dell'assembler](../direct3d11/d3d10-graphics-programming-guide-input-assembler-stage.md) di input legge i dati dai buffer di input e lo assembla per l'uso da parte del vertex shader. Sono inclusi lo stato, ad esempio il numero di elementi nel buffer di input e la firma dei dati di input. La fase input-assembler è una nuova fase della pipeline il cui processo è lo streaming di primitive dalla memoria alla pipeline.
 
-Per creare un oggetto input-layout-state, vedere [**CreateInputLayout**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createinputlayout).
+Per creare un oggetto input-layout-state, vedere [**CreateInputLayout.**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createinputlayout)
 
 ## <a name="rasterizer-state"></a>Stato rasterizzazione
 
-Questo gruppo di stato (vedere [**D3D10 \_ RASTERIZER \_ DESC)**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_rasterizer_desc)inizializza la fase [del rasterizzatore](../direct3d11/d3d10-graphics-programming-guide-rasterizer-stage.md). Questo oggetto include lo stato, ad esempio le modalità di riempimento o di interruzione, l'abilitazione di un rettangolo di forbice per il ritaglio e l'impostazione di parametri multicampionamento. Questa fase rasterizza le primitive in pixel, eseguendo operazioni come il ritaglio e il mapping delle primitive al viewport.
+Questo gruppo di stato (vedere [**D3D10 \_ RASTERIZER \_ DESC)**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_rasterizer_desc)inizializza la fase [di rasterizzazione](../direct3d11/d3d10-graphics-programming-guide-rasterizer-stage.md). Questo oggetto include lo stato, ad esempio le modalità fill o cull, l'abilitazione di un rettangolo di forbice per il ritaglio e l'impostazione di parametri multicampionamento. Questa fase rasterizza le primitive in pixel, eseguendo operazioni come il ritaglio e il mapping delle primitive al viewport.
 
 Per creare un oggetto stato di rasterizzazione, vedere [**CreateRasterizerState.**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-createrasterizerstate)
 

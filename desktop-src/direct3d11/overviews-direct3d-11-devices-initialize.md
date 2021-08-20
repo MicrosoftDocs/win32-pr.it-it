@@ -1,25 +1,25 @@
 ---
 title: Come creare un dispositivo e un contesto immediato
-description: Questo argomento illustra come inizializzare un dispositivo.
+description: In questo argomento viene illustrato come inizializzare un dispositivo.
 ms.assetid: 02a20ada-b3aa-435e-8d66-117a19222f9f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 530f2b9cbc77f5404b4e9e8973d326a8708d6436
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3d6e223a283f45052b4e0a5bc450d4d6e036dee4d714aa3716e4965cec48f800
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104046774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117913432"
 ---
-# <a name="how-to-create-a-device-and-immediate-context"></a>Procedura: creare un dispositivo e un contesto immediato
+# <a name="how-to-create-a-device-and-immediate-context"></a>Procedura: Creare un dispositivo e un contesto immediato
 
-Questo argomento illustra come inizializzare un [dispositivo](overviews-direct3d-11-devices-intro.md). L'inizializzazione di un [dispositivo](overviews-direct3d-11-devices-intro.md) è una delle prime attività che l'applicazione deve completare prima di poter eseguire il rendering della scena.
+In questo argomento viene illustrato come inizializzare un [dispositivo](overviews-direct3d-11-devices-intro.md). L'inizializzazione [di](overviews-direct3d-11-devices-intro.md) un dispositivo è una delle prime attività che l'applicazione deve completare prima di poter eseguire il rendering della scena.
 
 **Per creare un dispositivo e un contesto immediato**
 
-Compilare la struttura [**\_ desc della \_ catena \_ di scambio DXGI**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc) con informazioni sui formati e le dimensioni del buffer. Per altre informazioni, vedere Creazione di una catena di scambio.
+Compilare la [**struttura \_ \_ \_ DESC DXGI SWAP CHAIN**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc) con informazioni sui formati e le dimensioni del buffer. Per altre informazioni, vedere Creazione di una catena di scambio.
 
-Nell'esempio di codice seguente viene illustrato come compilare la [**struttura \_ \_ \_ desc della catena di scambio DXGI**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc) .
+L'esempio di codice seguente illustra come compilare la struttura [**DXGI \_ SWAP \_ CHAIN \_ DESC.**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc)
 
 
 ```
@@ -40,7 +40,7 @@ sd.Windowed = TRUE;
 
 
 
-Usando la [**struttura \_ \_ \_ desc della catena di scambio DXGI**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc) del passaggio uno, chiamare [**D3D11CreateDeviceAndSwapChain**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) per inizializzare il dispositivo e la catena di scambio nello stesso momento.
+Usando la struttura [**\_ \_ \_ DESC DXGI SWAP CHAIN**](/windows/desktop/api/dxgi/ns-dxgi-dxgi_swap_chain_desc) del passaggio [**1, chiamare D3D11CreateDeviceAndSwapChain**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) per inizializzare il dispositivo e la catena di scambio contemporaneamente.
 
 
 ```
@@ -68,7 +68,7 @@ if( FAILED (hr = D3D11CreateDeviceAndSwapChain( NULL,
 
 
 > [!Note]  
-> Se si richiede un dispositivo di [**\_ \_ livello \_ \_ 1 di funzionalità D3D**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_feature_level) in un computer con solo il runtime Direct3D 11,0, [**D3D11CreateDeviceAndSwapChain**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) si chiude immediatamente con **E \_ INVALIDARG**. Per richiedere in modo sicuro tutti i livelli di funzionalità possibili in un computer con il runtime DirectX 11,0 o DirectX 11,1, usare questo codice:
+> Se si richiede un dispositivo [**D3D \_ FEATURE \_ LEVEL \_ 11 \_ 1**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_feature_level) in un computer con solo il runtime Direct3D 11.0, [**D3D11CreateDeviceAndSwapChain**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain) esce immediatamente con **E \_ INVALIDARG**. Per richiedere in modo sicuro tutti i livelli di funzionalità possibili in un computer con il runtime DirectX 11.0 o DirectX 11.1, usare questo codice:
 >
 > <span codelanguage=""></span>
 >
@@ -98,11 +98,10 @@ if( FAILED (hr = D3D11CreateDeviceAndSwapChain( NULL,
 >     return hr;</code></pre></td>
 > </tr>
 > </tbody>
-> </table> 
+> </table>
+>  
 >
->  
->
-> Creare una visualizzazione di destinazione del rendering chiamando [**ID3D11Device:: CreateRenderTargetView**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createrendertargetview) e associare il buffer nascosto come destinazione di rendering chiamando [**sul ID3D11DeviceContext:: OMSetRenderTargets**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetrendertargets).
+> Creare una visualizzazione di destinazione di rendering chiamando [**ID3D11Device::CreateRenderTargetView**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createrendertargetview) e associando il buffer nascosto come destinazione di rendering chiamando [**ID3D11DeviceContext::OMSetRenderTargets**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetrendertargets).
 >
 > <span codelanguage=""></span>
 >
@@ -128,7 +127,7 @@ if( FAILED (hr = D3D11CreateDeviceAndSwapChain( NULL,
 > </tbody>
 > </table> 
 >
-> Creare un viewport per definire quali parti della destinazione di rendering saranno visibili. Definire il viewport usando la struttura del [**\_ viewport d3d11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_viewport) e impostare il viewport usando il metodo [**sul ID3D11DeviceContext:: RSSetViewports**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetviewports) .
+> Creare un viewport per definire quali parti della destinazione di rendering saranno visibili. Definire il viewport usando la struttura [**\_ VIEWPORT D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_viewport) e impostare il viewport usando il [**metodo ID3D11DeviceContext::RSSetViewports.**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetviewports)
 >
 > <span codelanguage="ManagedCPlusPlus"></span>
 >
@@ -166,7 +165,7 @@ if( FAILED (hr = D3D11CreateDeviceAndSwapChain( NULL,
 [Come usare Direct3D 11](how-to-use-direct3d-11.md)
 </dt> </dl>
 >
->  
+>  
 >
->  
+>  
 >

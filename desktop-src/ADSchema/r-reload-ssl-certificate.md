@@ -1,10 +1,10 @@
 ---
-title: Ricarica-SSL-diritto esteso certificato
-description: Ricarica-SSL-diritto esteso certificato
+title: Diritto esteso Reload-SSL-Certificate
+description: Diritto esteso Reload-SSL-Certificate
 ms.assetid: 0546b2a7-3ce1-4649-af8b-44674f62d040
 ms.tgt_platform: multiple
 keywords:
-- Ricarica-SSL-schema AD esteso a destra del certificato
+- Reload-SSL-Certificate extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,21 +13,21 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d103e8fdd55fd9c0589c09fa5a89a4abd43bfa3f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 06b1236c1b9a637f6bc31b2ad847a85674b79f751e6b02ef87bcdddf7f8cf646
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103874850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117836096"
 ---
-# <a name="reload-ssl-certificate-extended-right"></a>Ricarica-SSL-diritto esteso certificato
+# <a name="reload-ssl-certificate-extended-right"></a>Diritto esteso Reload-SSL-Certificate
 
 
 
 | Voce | Valore |
 |--------------|--------------------------------------|
-| CN           | Ricarica-SSL-certificate               |
-| Display-Name | Ricarica certificato SSL/TLS           |
+| CN           | Ricaricare il certificato SSL               |
+| Display-Name | Ricaricare il certificato SSL/TLS           |
 | Rights-GUID  | 1a60ea8d-58a6-4b20-bcdc-fb71eb8a9ff8 |
 
 
@@ -45,7 +45,7 @@ ms.locfileid: "103874850"
 | Voce | Valore |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localization-display-ID | 76                                       |
+| Localization-Display-ID | 76                                       |
 
 
 
@@ -56,7 +56,7 @@ ms.locfileid: "103874850"
 | Voce | Valore |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localization-display-ID | 76                                       |
+| Localization-Display-ID | 76                                       |
 
 
 
@@ -67,7 +67,7 @@ ms.locfileid: "103874850"
 | Voce | Valore |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localization-display-ID | 76                                       |
+| Localization-Display-ID | 76                                       |
 
 
 

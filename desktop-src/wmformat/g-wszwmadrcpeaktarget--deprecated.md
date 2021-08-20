@@ -1,9 +1,9 @@
 ---
-title: g_wszWMADRCPeakTarget (Wmcodecdsp. h)
-description: Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere Windows Media Audio e codec video e API DSP. | g_wszWMADRCPeakTarget (Wmcodecdsp. h)
+title: g_wszWMADRCPeakTarget (Wmcodecdsp.h)
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec audio e video multimediali e DSP). | g_wszWMADRCPeakTarget (Wmcodecdsp.h)
 ms.assetid: f2d54b07-8420-4722-bd64-5e1afe55449a
 keywords:
-- g_wszWMADRCPeakTarget formato Windows Media
+- g_wszWMADRCPeakTarget Windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b74fc0a94c6c6398ef91febf90820573d9b41f14
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3b3cd440c51232bd3d2bb650e5948a008e97920db1dd9e1891157841cc82d3e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117848022"
 ---
 # <a name="g_wszwmadrcpeaktarget"></a>g \_ wszWMADRCPeakTarget
 
-Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere [Windows Media audio e codec video e API DSP.](/previous-versions//dd464626(v=vs.85))
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e API DSP).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,7 +31,7 @@ Per la documentazione corrente sui codec Windows Media e sui processori di segna
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

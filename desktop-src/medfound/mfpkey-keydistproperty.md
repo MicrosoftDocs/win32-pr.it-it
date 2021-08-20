@@ -1,19 +1,19 @@
 ---
-description: Specifica il tempo massimo, in millisecondi, tra i fotogrammi chiave nell'output del codec.
+description: Specifica il tempo massimo, in millisecondi, tra fotogrammi chiave nell'output del codec.
 ms.assetid: 2a52e6a5-10a0-46dd-aa31-cb55094903b5
-title: Proprietà MFPKEY_KEYDIST (Wmcodecdsp. h)
+title: MFPKEY_KEYDIST proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d55925811db71f24cf360113aa6d03a325bcdc11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d3c59e3002cff6d0962f0ebf77dc20b2858ab5db3cfda8acceb9c5577d7cb7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117689930"
 ---
-# <a name="mfpkey_keydist-property"></a>\_Proprietà MFPKEY
+# <a name="mfpkey_keydist-property"></a>Proprietà MFPKEY \_ KEYDIST
 
-Specifica il tempo massimo, in millisecondi, tra i fotogrammi chiave nell'output del codec.
+Specifica il tempo massimo, in millisecondi, tra fotogrammi chiave nell'output del codec.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
@@ -41,7 +41,7 @@ Il valore predefinito dipende dalla versione di Windows in esecuzione, come illu
 
 ## <a name="remarks"></a>Commenti
 
-La logica interna del codec determina la posizione effettiva di ogni fotogramma chiave. La distanza tra due fotogrammi chiave può essere inferiore al valore di questa proprietà, tuttavia, non sarà mai maggiore.
+La logica interna del codec determina la posizione effettiva di ogni fotogramma chiave. La distanza tra due fotogrammi chiave può essere minore del valore di questa proprietà, ma non sarà mai maggiore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ La logica interna del codec determina la posizione effettiva di ogni fotogramma 
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ La logica interna del codec determina la posizione effettiva di ogni fotogramma 
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

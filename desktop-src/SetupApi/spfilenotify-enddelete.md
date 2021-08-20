@@ -1,19 +1,19 @@
 ---
-description: La \_ notifica ENDDELETE di SPFILENOTIFY viene restituita alla routine di callback quando una coda completa un'operazione di eliminazione. Questa notifica viene inviata anche se l'utente annulla o se si verifica un errore.
+description: La notifica SPFILENOTIFY \_ ENDDELETE viene restituita alla routine di callback quando una coda completa un'operazione di eliminazione. Questa notifica viene inviata anche se l'utente annulla o si verifica un errore.
 ms.assetid: 78859854-8411-4c51-9c3c-628315cf1c41
-title: Messaggio SPFILENOTIFY_ENDDELETE (Setupapi. h)
+title: SPFILENOTIFY_ENDDELETE messaggio (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4ee4762dc33f8b8ec16a6be273cb42f41aeafce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 638bf333c034ececd5a22536805b2adab970df9f15e70d9f4a9f161229937aa6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117964604"
 ---
-# <a name="spfilenotify_enddelete-message"></a>\_Messaggio SPFILENOTIFY ENDDELETE
+# <a name="spfilenotify_enddelete-message"></a>MESSAGGIO SPFILENOTIFY \_ ENDDELETE
 
-La **notifica \_ ENDDELETE di SPFILENOTIFY** viene restituita alla routine di callback quando una coda completa un'operazione di eliminazione. Questa notifica viene inviata anche se l'utente annulla o se si verifica un errore.
+La **notifica SPFILENOTIFY \_ ENDDELETE** viene restituita alla routine di callback quando una coda completa un'operazione di eliminazione. Questa notifica viene inviata anche se l'utente annulla o si verifica un errore.
 
 
 ```C++
@@ -32,7 +32,7 @@ SPFILENOTIFY_ENDDELETE
 *Param1* 
 </dt> <dd>
 
-Puntatore a una struttura [**FILEpaths**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a) . Il membro **Win32Error** della struttura **filePaths** indica il risultato di un'operazione di copia.
+Puntatore a una [**struttura FILEPATHS.**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a) Il **membro Win32Error** della struttura **FILEPATHS** indica il risultato di un'operazione di copia.
 
 </dd> <dt>
 
@@ -53,9 +53,9 @@ Il codice restituito viene ignorato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Il codice restituito viene ignorato.
 [Notifications](notifications.md)
 </dt> <dt>
 
-[**FILEPATHS**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a)
+[**Filepaths**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a)
 </dt> <dt>
 
 [**SetupCommitFileQueue**](/windows/desktop/api/Setupapi/nf-setupapi-setupcommitfilequeuea)

@@ -13,16 +13,16 @@ ms.locfileid: "117880396"
 ---
 # <a name="content-protection-commands"></a>protezione del contenuto comandi
 
-Elenca i comandi per [**il metodo IDirect3DAuthenticatedChannel9::Configure.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure)
+Elenca i comandi per il [**metodo IDirect3DAuthenticatedChannel9::Configure.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure)
 
 
 
 | Comando                                                                                                           | Descrizione                                                                                                           |
 |-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | [**D3DAUTHENTICATEDCONFIGURE \_ INITIALIZE**](d3dauthenticatedconfigure-initialize.md)                             | Inizializza il canale autenticato.                                                                                |
-| [**D3DAUTHENTICATEDCONFIGURARE \_ CRYPTOSESSION**](d3dauthenticatedconfigure-cryptosession.md)                       | Associa una sessione di crittografia a un dispositivo decodificatore DXVA-2 (DirectX Video Acceleration 2) e a un dispositivo Direct3D. |
-| [**D3DAUTHENTICATEDCONFIGURARE \_ LA CRITTOGRAFIAWHENACCESSIBLE**](d3dauthenticatedconfigure-encryptionwhenaccessible.md) | Imposta il livello di crittografia che viene eseguito prima che il contenuto protetto diventi accessibile alla CPU o al bus.         |
-| [**D3DAUTHENTICATEDCONFIGURARE LA \_ PROTEZIONE**](d3dauthenticatedconfigure-protection.md)                             | Abilita o disabilita la protezione per il dispositivo.                                                                        |
+| [**D3DAUTHENTICATEDCONFIGURE \_ CRYPTOSESSION**](d3dauthenticatedconfigure-cryptosession.md)                       | Associa una sessione di crittografia a un dispositivo decodificatore DirectX Video Acceleration 2 (DXVA-2) e a un dispositivo Direct3D. |
+| [**D3DAUTHENTICATEDCONFIGURE \_ ENCRYPTIONWHENACCESSIBLE**](d3dauthenticatedconfigure-encryptionwhenaccessible.md) | Imposta il livello di crittografia eseguito prima che il contenuto protetto diventi accessibile alla CPU o al bus.         |
+| [**PROTEZIONE D3DAUTHENTICATEDCONFIGURE \_**](d3dauthenticatedconfigure-protection.md)                             | Abilita o disabilita la protezione per il dispositivo.                                                                        |
 | [**D3DAUTHENTICATEDCONFIGURE \_ SHAREDRESOURCE**](d3dauthenticatedconfigure-sharedresource.md)                     | Consente a un processo di aprire una risorsa condivisa o di disabilitare l'apertura di risorse condivise da parte di un processo.                     |
 
 
@@ -36,7 +36,7 @@ Elenca i comandi per [**il metodo IDirect3DAuthenticatedChannel9::Configure.**](
 [API Video Direct3D](direct3d-video-apis.md)
 </dt> <dt>
 
-[Criteri basati su GPU protezione del contenuto](gpu-based-content-protection.md)
+[Impostazioni basate su GPU protezione del contenuto](gpu-based-content-protection.md)
 </dt> </dl>
 
  

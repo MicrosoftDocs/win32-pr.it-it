@@ -16,7 +16,7 @@ ms.locfileid: "117839383"
 ---
 # <a name="namespaces"></a>Spazi dei nomi
 
-Gli oggetti che risiedono all'interno di uno spazio dei nomi specificato sono identificati da un nome univoco. Ad esempio, i file archiviati in un'unità disco del PC si trovano nello spazio file system spazio dei nomi . Il nome univoco di un file si basa sulla posizione in cui è archiviato nello spazio dei nomi file system dati. Esempio:
+Gli oggetti che risiedono all'interno di uno spazio dei nomi specificato sono identificati da un nome univoco. Ad esempio, i file archiviati in un'unità disco del PC si trovano nello spazio file system dati. Il nome univoco di un file si basa sulla posizione in cui è archiviato nello spazio dei nomi file system. Esempio:
 
 
 ```C++

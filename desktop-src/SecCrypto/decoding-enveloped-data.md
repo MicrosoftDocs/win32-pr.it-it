@@ -13,42 +13,42 @@ ms.locfileid: "117767811"
 ---
 # <a name="decoding-enveloped-data"></a>Decodifica dei dati in busta
 
-Le attività generali necessarie per decodificare un messaggio in busta sono illustrate nella figura seguente e descritte nell'elenco che lo segue.
+Le attività generali necessarie per decodificare un messaggio in busta sono illustrate nella figura seguente e descritte nell'elenco che segue.
 
 ![decodifica di dati in busta](images/decemsg.png)
 
-La sequenza di eventi per decodificare i dati in busta usando la gestione delle chiavi di trasporto chiave, come illustrato nella figura precedente, è la seguente:
+La sequenza di eventi per la decodifica dei dati in busta usando la gestione delle chiavi di trasporto delle chiavi, come illustrato nella figura precedente, è la seguente:
 
--   Viene recuperato un [*puntatore al*](../secgloss/d-gly.md) messaggio con busta digitale.
+-   Viene recuperato un [*puntatore al*](../secgloss/d-gly.md) messaggio in busta digitale.
 -   Viene [*aperto un archivio*](../secgloss/c-gly.md) certificati.
 -   Dal messaggio viene recuperato l'ID destinatario (ID).
 -   L'ID destinatario viene usato per recuperare il certificato.
 -   Viene [*recuperata*](../secgloss/p-gly.md) la chiave privata associata al certificato.
--   La chiave privata viene usata per [*decrittografare*](../secgloss/s-gly.md) la chiave simmetrica ([*sessione*](../secgloss/s-gly.md)).
+-   La chiave privata viene usata per decrittografare [*la chiave simmetrica*](../secgloss/s-gly.md) ([*sessione*](../secgloss/s-gly.md)).
 -   L'algoritmo di crittografia viene recuperato dal messaggio.
 -   Usando la chiave privata e l'algoritmo di crittografia, i dati vengono decrittografati.
 
-La procedura seguente usa funzioni di messaggi di basso livello per eseguire le attività appena elencate.
+Nella procedura seguente vengono utilizzate funzioni di messaggi di basso livello per eseguire le attività appena elencate.
 
 **Per decodificare un messaggio in busta**
 
-1.  Ottenere un puntatore al BLOB codificato.
-2.  Chiamare [**CryptMsgOpenToDecode,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentodecode)passando gli argomenti necessari.
+1.  Ottiene un puntatore al BLOB codificato.
+2.  Chiamare [**CryptMsgOpenToDecode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentodecode)passando gli argomenti necessari.
 3.  Chiamare [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate) una volta, passando l'handle recuperato nel passaggio 2 e un puntatore ai dati da decodificare. In questo modo vengono eseguite le azioni appropriate sul messaggio, a seconda del tipo di messaggio.
-4.  Chiamare [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam), passando l'handle recuperato nel passaggio 2 e CMSG TYPE PARAM per verificare che il messaggio sia del tipo di dati in \_ \_ busta.
-5.  Chiamare nuovamente [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam), passando CMSG INNER CONTENT TYPE PARAM per ottenere il tipo di dati \_ del contenuto \_ \_ \_ [*interno.*](../secgloss/i-gly.md)
-6.  Se il tipo di dati del contenuto interno è **data**, procedere con la decrittografia e la decodifica del contenuto. In caso contrario, eseguire una procedura di decodifica appropriata per il tipo di dati content.
-7.  Supponendo che il tipo di contenuto interno sia "data", inizializzare la struttura di dati [**CMSG \_ CTRL \_ DECRYPT \_ PARA**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_ctrl_decrypt_para) e chiamare [**CryptMsgControl**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcontrol), passando CMSG CTRL DECRYPT e l'indirizzo della \_ \_ struttura. Il contenuto verrà decrittografato.
-8.  Chiamare [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam), passando CMSG CONTENT PARAM per ottenere un puntatore al BLOB dei dati di contenuto decodificato \_ \_ **(stringa BYTE).**
+4.  Chiamare [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam), passando l'handle recuperato nel passaggio 2 e CMSG TYPE PARAM per verificare che il messaggio sia \_ del tipo di dati in \_ busta.
+5.  Chiamare di [**nuovo CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam)passando CMSG INNER CONTENT TYPE PARAM per ottenere il tipo di dati \_ del contenuto \_ \_ \_ [*interno.*](../secgloss/i-gly.md)
+6.  Se il tipo di dati del contenuto interno **è data**, procedere con la decrittografia e la decodifica del contenuto. In caso contrario, eseguire una procedura di decodifica appropriata per il tipo di dati del contenuto.
+7.  Supponendo che il tipo di contenuto interno sia "data", inizializzare la struttura dei dati [**CMSG \_ CTRL \_ DECRYPT \_ PARA**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_ctrl_decrypt_para) e chiamare [**CryptMsgControl**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcontrol)passando CMSG CTRL DECRYPT e l'indirizzo della \_ \_ struttura. Il contenuto verrà decrittografato.
+8.  Chiamare [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam)passando CMSG CONTENT PARAM per ottenere un puntatore al BLOB dei dati di contenuto decodificato \_ \_ **(stringa BYTE).**
 9.  Chiamare [**CryptMsgClose**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgclose) per chiudere il messaggio.
 
-Il risultato di questa procedura è che il messaggio viene decodificato e decrittografato e un puntatore viene recuperato nel BLOB dei dati del contenuto.
+Il risultato di questa procedura è che il messaggio viene decodificato e decrittografato e viene recuperato un puntatore al BLOB dei dati del contenuto.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Programma C di esempio: codifica di un messaggio con busta e firmato](example-c-program-encoding-an-enveloped-signed-message.md)
+[Programma C di esempio: codifica di un messaggio in busta, firmato](example-c-program-encoding-an-enveloped-signed-message.md)
 </dt> </dl>
 
  

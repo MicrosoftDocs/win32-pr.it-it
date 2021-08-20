@@ -1,17 +1,17 @@
 ---
-description: System.Music.Composer
+description: Sistema. Musica. Composer
 ms.assetid: 60eda2b4-2631-41dc-94ee-181a69e9c5f4
-title: System.Music.Composer
+title: Sistema. Musica. Composer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86006f7f6271588bd154bfc5558072fe03813f39
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 24be57c2e54dfe2b1ed1d83b575d622f5e67144bc629872cdf64c29df423c319
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118052812"
 ---
-# <a name="systemmusiccomposer"></a>System.Music.Composer
+# <a name="systemmusiccomposer"></a>Sistema. Musica. Composer
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 

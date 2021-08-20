@@ -1,17 +1,17 @@
 ---
 description: Specifica se un file ASF (Advanced Systems Format) contiene flussi non audio o video.
 ms.assetid: ccd61f50-29fb-4a50-80c9-d23d71d768f3
-title: Attributo MF_PD_ASF_INFO_HAS_NON_AUDIO_VIDEO (Wmcontainer. h)
+title: MF_PD_ASF_INFO_HAS_NON_AUDIO_VIDEO attributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12d1759427059494a8d0b84c64ac169ce640ab2a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7033eb93ccfdf1c7431b92bebb2ee0e4e4193e5055328923ac81c81fa1ccd244
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117876262"
 ---
-# <a name="mf_pd_asf_info_has_non_audio_video-attribute"></a>Le \_ informazioni di MF PD \_ ASF \_ hanno un \_ \_ \_ \_ attributo video non audio
+# <a name="mf_pd_asf_info_has_non_audio_video-attribute"></a>MF \_ PD \_ ASF \_ INFO HA \_ \_ \_ l'attributo VIDEO NON AUDIO \_
 
 Specifica se un file ASF (Advanced Systems Format) contiene flussi non audio o video.
 
@@ -23,9 +23,9 @@ Considera come valore booleano.
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo si applica ai descrittori di presentazione per il contenuto ASF. Se il valore è **true**, il file contiene almeno un flusso non audio o video. Tra gli esempi sono inclusi i flussi di immagini, i comandi script e i dati arbitrari personalizzati.
+Questo attributo si applica ai descrittori di presentazione per il contenuto di ASF. Se il valore è **TRUE,** il file ha almeno un flusso che non è audio o video. Ad esempio, flussi di immagini, comandi di script e dati arbitrari personalizzati.
 
-Il metodo [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) genera questo attributo dai metadati ASF.
+Il [**metodo IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) genera questo attributo dai metadati asf.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,9 +33,9 @@ Il metodo [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
@@ -43,22 +43,22 @@ Il metodo [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFPresentationDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationdescriptor)
 </dt> <dt>
 
-[Attributi del descrittore della presentazione](presentation-descriptor-attributes.md)
+[Attributi del descrittore di presentazione](presentation-descriptor-attributes.md)
 </dt> <dt>
 
-[Oggetto intestazione ASF](asf-file-structure.md)
+[Oggetto Intestazione ASF](asf-file-structure.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Nell'esempio seguente viene usata la funzione ExitWindowsEx per arrestare il sistema.
+description: Nell'esempio seguente viene utilizzata la funzione ExitWindowsEx per arrestare il sistema.
 ms.assetid: bf8723aa-1c7f-4761-9034-d5a9447a4bc4
 title: Come arrestare il sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3880319e0ada6c82c6c6c12a7f3b5faf00415a93
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb366a3a6159cd43cf1f88f050d01ea75d365035c2f55598f69e91e89fc81de0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117963622"
 ---
 # <a name="how-to-shut-down-the-system"></a>Come arrestare il sistema
 
-Nell'esempio seguente viene usata la funzione [**ExitWindowsEx**](/windows/desktop/api/Winuser/nf-winuser-exitwindowsex) per arrestare il sistema. Quando si arresta lo svuotamento dei buffer di file su disco e il sistema viene portato a una condizione in cui è sicuro spegnere il computer. L'applicazione deve prima abilitare il privilegio di arresto del nome di SE \_ \_ . Per ulteriori informazioni, vedere [privilegi](../secauthz/privileges.md).
+Nell'esempio seguente viene [**utilizzata la funzione ExitWindowsEx**](/windows/desktop/api/Winuser/nf-winuser-exitwindowsex) per arrestare il sistema. L'arresto scarica i buffer di file su disco e porta il sistema a una condizione in cui è sicuro spegnere il computer. L'applicazione deve prima abilitare il privilegio \_ EDIZIONE STANDARD SHUTDOWN \_ NAME. Per altre informazioni, vedere [Privilegi](../secauthz/privileges.md).
 
 
 ```C++
@@ -64,13 +64,13 @@ BOOL MySystemShutdown()
 
 
 
-Il parametro finale nella chiamata a [**ExitWindowsEx**](/windows/desktop/api/Winuser/nf-winuser-exitwindowsex) indica che il sistema è stato arrestato per un aggiornamento della pianificazione del sistema operativo. Per ulteriori informazioni, vedere [codici motivo dell'arresto del sistema](system-shutdown-reason-codes.md).
+Il parametro finale nella chiamata [**a ExitWindowsEx**](/windows/desktop/api/Winuser/nf-winuser-exitwindowsex) indica che il sistema è stato arrestato per un aggiornamento di pianificazione del sistema operativo. Per altre informazioni, vedere [Codici motivo arresto sistema](system-shutdown-reason-codes.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Chiusura in corso](shutting-down.md)
+[Arresto](shutting-down.md)
 </dt> </dl>
 
  

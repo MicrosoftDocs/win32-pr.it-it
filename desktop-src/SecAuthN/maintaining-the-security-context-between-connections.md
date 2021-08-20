@@ -13,7 +13,7 @@ ms.locfileid: "117787048"
 ---
 # <a name="maintaining-the-security-context-between-connections"></a>Gestione del contesto di sicurezza tra le connessioni
 
-Per ridurre il traffico del controller di dominio e migliorare le prestazioni, il lato client Microsoft Digest memorizza nella cache le informazioni ricevute dopo l'autenticazione con un server. Le applicazioni client devono memorizzare nella cache solo l'handle nel [*contesto di sicurezza*](../secgloss/s-gly.md) stabilito. Nella tabella seguente vengono descritte le informazioni memorizzate nella cache dal pacchetto di sicurezza.
+Per ridurre il traffico del controller di dominio e migliorare le prestazioni, il lato client Microsoft Digest memorizza nella cache le informazioni ricevute dopo l'autenticazione con un server. Le applicazioni client devono memorizzare nella cache solo l'handle nel [*contesto di*](../secgloss/s-gly.md) sicurezza stabilito. Nella tabella seguente vengono descritte le informazioni memorizzate nella cache dal pacchetto di sicurezza.
 
 
 

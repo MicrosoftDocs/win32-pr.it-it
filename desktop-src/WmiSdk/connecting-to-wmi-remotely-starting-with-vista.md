@@ -1,5 +1,5 @@
 ---
-description: Per la connessione a uno spazio dei nomi WMI in un computer remoto potrebbe essere necessario modificare le impostazioni di Windows Firewall, controllo dell'account utente (UAC), DCOM o Common Information Model Object Manager (CIMOM).
+description: Per la connessione a uno spazio dei nomi WMI in un computer remoto potrebbe essere necessario modificare le impostazioni per Windows Firewall, Controllo dell'account utente, DCOM o Common Information Model Object Manager (CIMOM).
 ms.assetid: 028b3101-0945-4288-bf32-ef4ad12a55f9
 ms.tgt_platform: multiple
 title: Configurazione di una connessione WMI remota
@@ -10,117 +10,117 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6ee254e12ecd806cd286d4a55746e203a3136b6c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b88aa453646e60bf17e31f1197d76506bb4f75453eb800dc0fa272946a3bf8df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117925703"
 ---
 # <a name="setting-up-a-remote-wmi-connection"></a>Configurazione di una connessione WMI remota
 
-Per la connessione a uno spazio dei nomi WMI in un computer remoto potrebbe essere necessario modificare le impostazioni di [Windows Firewall](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754274(v=ws.11)), [controllo dell'account utente (UAC)](/previous-versions/aa905108(v=msdn.10)), DCOM o Common Information Model Object Manager (CIMOM).
+La connessione a uno spazio dei nomi WMI in un computer remoto può richiedere la modifica delle impostazioni per [Windows Firewall](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754274(v=ws.11)), Controllo [dell'account](/previous-versions/aa905108(v=msdn.10))utente , DCOM o Common Information Model Object Manager (CIMOM).
 
-Le sezioni seguenti sono illustrate in questo argomento:
+In questo argomento vengono illustrate le sezioni seguenti:
 
--   [Impostazioni Windows Firewall](#windows-firewall-settings)
+-   [Windows Firewall Impostazioni](#windows-firewall-settings)
 -   [Impostazioni di Controllo dell'account utente](#user-account-control-settings)
--   [Impostazioni DCOM](#dcom-settings)
--   [Impostazioni CIMOM](#cimom-settings)
+-   [DCOM Impostazioni](#dcom-settings)
+-   [CiMOM Impostazioni](#cimom-settings)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="windows-firewall-settings"></a>Impostazioni di Windows Firewall
 
-Le impostazioni WMI per Windows Firewall impostazioni abilitano solo le connessioni WMI, anziché altre applicazioni DCOM.
+Le impostazioni WMI per Windows firewall abilitano solo le connessioni WMI, anziché altre applicazioni DCOM.
 
-È necessario impostare un'eccezione nel firewall per WMI nel computer di destinazione remoto. L'eccezione per WMI consente a WMI di ricevere connessioni remote e callback asincroni per Unsecapp.exe. Per ulteriori informazioni, vedere [impostazione della sicurezza in una chiamata asincrona](setting-security-on-an-asynchronous-call.md).
+È necessario impostare un'eccezione nel firewall per WMI nel computer di destinazione remoto. L'eccezione per WMI consente a WMI di ricevere connessioni remote e callback asincroni Unsecapp.exe. Per altre informazioni, vedere [Impostazione della sicurezza in una chiamata asincrona.](setting-security-on-an-asynchronous-call.md)
 
-Se un'applicazione client crea un sink personalizzato, è necessario aggiungerlo esplicitamente alle eccezioni del firewall per consentire la riuscita dei callback.
+Se un'applicazione client crea un proprio sink, tale sink deve essere aggiunto in modo esplicito alle eccezioni del firewall per consentire l'esito positivo dei callback.
 
-L'eccezione per WMI funziona anche se WMI è stato avviato con una porta fissa, usando il comando **winmgmt/standalonehost** . Per ulteriori informazioni, vedere [configurazione di una porta fissa per WMI](setting-up-a-fixed-port-for-wmi.md).
+L'eccezione per WMI funziona anche se WMI è stato avviato con una porta fissa, usando il **comando winmgmt /standalonehost.** Per altre informazioni, vedere [Impostazione di una porta fissa per WMI.](setting-up-a-fixed-port-for-wmi.md)
 
-È possibile abilitare o disabilitare il traffico WMI tramite l'interfaccia utente di Windows Firewall.
+È possibile abilitare o disabilitare il traffico WMI tramite l'interfaccia Windows'interfaccia utente del firewall.
 
-**Per abilitare o disabilitare il traffico WMI mediante l'interfaccia utente del firewall**
+**Per abilitare o disabilitare il traffico WMI tramite l'interfaccia utente del firewall**
 
-1.  Nel **Pannello di controllo** fare clic su **sicurezza** e quindi su **Windows Firewall**.
-2.  Fare clic su **Cambia impostazioni** , quindi fare clic sulla scheda **eccezioni** .
-3.  Nella finestra eccezioni selezionare la casella di controllo **Strumentazione gestione Windows (WMI)** per abilitare il traffico WMI attraverso il firewall. Per disabilitare il traffico WMI, deselezionare la casella di controllo.
+1.  Nel **Pannello di controllo** fare clic su **Sicurezza** e quindi su **Windows Firewall**.
+2.  Fare **clic Impostazioni** modifica e quindi sulla **scheda** Eccezioni .
+3.  Nella finestra Eccezioni selezionare la casella di controllo Windows **Management Instrumentation (WMI) per** abilitare il traffico WMI attraverso il firewall. Per disabilitare il traffico WMI, deselezionare la casella di controllo.
 
 È possibile abilitare o disabilitare il traffico WMI attraverso il firewall al prompt dei comandi.
 
-**Per abilitare o disabilitare il traffico WMI al prompt dei comandi utilizzando il gruppo di regole WMI**
+**Per abilitare o disabilitare il traffico WMI al prompt dei comandi usando il gruppo di regole WMI**
 
 -   Usare i comandi seguenti al prompt dei comandi. Digitare quanto segue per abilitare il traffico WMI attraverso il firewall.
 
-    **netsh advfirewall firewall set Rule Group = "Strumentazione gestione Windows (WMI)" nuovo enable = Yes**
+    **netsh advfirewall firewall set rule group="windows management instrumentation (wmi)" new enable=yes**
 
     Digitare il comando seguente per disabilitare il traffico WMI attraverso il firewall.
 
-    **netsh advfirewall firewall set Rule Group = "Strumentazione gestione Windows (WMI)" nuovo Enable = no**
+    **netsh advfirewall firewall set rule group="windows management instrumentation (wmi)" new enable=no**
 
-Anziché utilizzare il singolo comando del gruppo di regole WMI, è possibile utilizzare i singoli comandi per ogni DCOM, servizio WMI e sink.
+Anziché usare il singolo comando del gruppo di regole WMI, è anche possibile usare singoli comandi per ogni DCOM, servizio WMI e sink.
 
-**Per abilitare il traffico WMI con regole separate per DCOM, WMI, il sink di callback e le connessioni in uscita**
+**Per abilitare il traffico WMI usando regole separate per DCOM, WMI, sink di callback e connessioni in uscita**
 
 1.  Per stabilire un'eccezione del firewall per la porta DCOM 135, usare il comando seguente.
 
-    **netsh advfirewall firewall add rule dir = in Name = "DCOM" Program =% SystemRoot% \\ system32 \\svchost.exe Service = RPCSS action = allow Protocol = TCP LocalPort = 135**
+    **netsh advfirewall firewall add rule dir=in name="DCOM" program=%systemroot% \\ system32 \\svchost.exe service=rpcss action=allow protocol=TCP localport=135**
 
-2.  Per stabilire un'eccezione del firewall per il servizio WMI, utilizzare il comando seguente.
+2.  Per stabilire un'eccezione del firewall per il servizio WMI, usare il comando seguente.
 
-    **netsh advfirewall firewall add rule dir = in Name = "WMI" Program =% SystemRoot% \\ system32 \\svchost.exe Service = WinMgmt action = allow Protocol = TCP LocalPort = any**
+    **netsh advfirewall firewall add rule dir=in name ="WMI" program=%systemroot% \\ system32 \\svchost.exe service=winmgmt action = allow protocol=TCP localport=any**
 
-3.  Per stabilire un'eccezione del firewall per il sink che riceve i callback da un computer remoto, usare il comando seguente.
+3.  Per stabilire un'eccezione del firewall per il sink che riceve callback da un computer remoto, usare il comando seguente.
 
-    **netsh advfirewall firewall add rule dir = in Name = "UnsecApp" Program =% SystemRoot% \\ system32 \\ WBEM \\unsecapp.exe action = allow**
+    **netsh advfirewall firewall add rule dir=in name ="UnsecApp" program=%systemroot% \\ system32 \\ wbem \\unsecapp.exe action=allow**
 
-4.  Per stabilire un'eccezione del firewall per le connessioni in uscita a un computer remoto con cui il computer locale comunica in modo asincrono, utilizzare il comando seguente.
+4.  Per stabilire un'eccezione del firewall per le connessioni in uscita a un computer remoto con cui il computer locale comunica in modo asincrono, usare il comando seguente.
 
-    **netsh advfirewall firewall add rule dir = out Name = "WMI \_ out" Program =% SystemRoot% \\ system32 \\svchost.exe Service = WinMgmt action = allow Protocol = TCP LocalPort = any**
+    **netsh advfirewall firewall add rule dir=out name ="WMI \_ OUT" program=%systemroot% \\ system32 \\svchost.exe service=winmgmt action=allow protocol=TCP localport=any**
 
-Per disabilitare le eccezioni del firewall separatamente, usare i comandi seguenti.
+Per disabilitare separatamente le eccezioni del firewall, usare i comandi seguenti.
 
-**Per disabilitare il traffico WMI con regole separate per DCOM, WMI, il sink di callback e le connessioni in uscita**
+**Per disabilitare il traffico WMI usando regole separate per DCOM, WMI, sink di callback e connessioni in uscita**
 
 1.  Per disabilitare l'eccezione DCOM.
 
-    **netsh advfirewall firewall delete rule name = "DCOM"**
+    **netsh advfirewall firewall delete rule name="DCOM"**
 
 2.  Per disabilitare l'eccezione del servizio WMI.
 
-    **netsh advfirewall firewall delete rule name = "WMI"**
+    **netsh advfirewall firewall delete rule name="WMI"**
 
-3.  Per disabilitare l'eccezione del sink.
+3.  Per disabilitare l'eccezione sink.
 
-    **netsh advfirewall firewall delete rule name = "UnsecApp"**
+    **netsh advfirewall firewall delete rule name="UnsecApp"**
 
 4.  Per disabilitare l'eccezione in uscita.
 
-    **netsh advfirewall firewall delete rule name = "WMI \_ out"**
+    **netsh advfirewall firewall delete rule name="WMI \_ OUT"**
 
 ## <a name="user-account-control-settings"></a>Impostazioni di Controllo dell'account utente
 
-Controllo dell'account utente (UAC) l'applicazione di filtri ai token può influire sulle operazioni consentite negli spazi dei nomi WMI o sui dati restituiti. In controllo dell'account utente, tutti gli account nel gruppo Administrators locale vengono eseguiti con un [*token di accesso*](/windows/desktop/SecGloss/a-gly)utente standard, noto anche come filtro di accesso del controllo dell'account utente. Un account amministratore può eseguire uno script con privilegi elevati, ovvero "Esegui come amministratore".
+Il filtro dei token di accesso di Controllo dell'account utente può influire sulle operazioni consentite negli spazi dei nomi WMI o sui dati restituiti. In Controllo dell'account utente tutti gli account nel gruppo Administrators locale vengono eseguiti con un [*token*](/windows/desktop/SecGloss/a-gly)di accesso utente standard, noto anche come filtro dei token di accesso di Controllo dell'account utente. Un account amministratore può eseguire uno script con privilegi elevati: "Esegui come amministratore".
 
-Quando non ci si connette all'account Administrator predefinito, il controllo dell'account utente influiscono sulle connessioni a un computer remoto in modo diverso a seconda che i due computer si trovino in un dominio o in un gruppo di lavoro. Per ulteriori informazioni su UAC e connessioni remote, vedere [controllo dell'account utente e WMI](user-account-control-and-wmi.md).
+Quando non ci si connette all'account administrator predefinito, controllo dell'account utente influisce sulle connessioni a un computer remoto in modo diverso a seconda che i due computer si uniranno a un dominio o a un gruppo di lavoro. Per altre informazioni sul controllo dell'account utente e sulle connessioni remote, vedere [Controllo dell'account utente e WMI.](user-account-control-and-wmi.md)
 
-## <a name="dcom-settings"></a>Impostazioni DCOM
+## <a name="dcom-settings"></a>DCOM Impostazioni
 
-Per ulteriori informazioni sulle impostazioni DCOM, vedere [protezione di una connessione WMI remota](securing-a-remote-wmi-connection.md). Tuttavia, UAC influiscono sulle connessioni per gli account utente non di dominio. Se ci si connette a un computer remoto usando un account utente non di dominio incluso nel gruppo Administrators locale del computer remoto, è necessario concedere in modo esplicito l'accesso DCOM remoto, l'attivazione e i diritti di avvio per l'account.
+Per altre informazioni sulle impostazioni DCOM, vedere [Protezione di una connessione WMI remota.](securing-a-remote-wmi-connection.md) Tuttavia, Controllo dell'account utente influisce sulle connessioni per gli account utente non di dominio. Se ci si connette a un computer remoto usando un account utente non di dominio incluso nel gruppo Administrators locale del computer remoto, è necessario concedere esplicitamente diritti di accesso, attivazione e avvio DCOM remoto all'account.
 
-## <a name="cimom-settings"></a>Impostazioni CIMOM
+## <a name="cimom-settings"></a>CiMOM Impostazioni
 
-Se la connessione remota è tra computer che non hanno una relazione di trust, è necessario aggiornare le impostazioni CIMOM. in caso contrario, la connessione asincrona avrà esito negativo. Questa impostazione non deve essere modificata per i computer nello stesso dominio o in domini trusted.
+Le impostazioni CIMOM devono essere aggiornate se la connessione remota è tra computer che non hanno una relazione di trust. In caso contrario, una connessione asincrona avrà esito negativo. Questa impostazione non deve essere modificata per i computer nello stesso dominio o in domini trusted.
 
-La seguente voce del registro di sistema deve essere modificata per consentire callback anonimi:
+La voce del Registro di sistema seguente deve essere modificata per consentire i callback anonimi:
 
-**HKEY \_ SOFTWARE del \_ computer locale** \\  \\ **Microsoft** \\ **WBEM** \\ **CIMOM** \\ **AllowAnonymousCallback**<dl> <dt>
+**HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE** \\ **Microsoft** \\ **WBEM** \\ **CIMOM** \\ **AllowAnonymousCallback**<dl> <dt>
 
                Data type
 </dt> <dd>               REG \_ DWORD</dd> </dl>
 
-Se il valore **AllowAnonymousCallback** è impostato su 0, il servizio WMI impedisce i callback anonimi al client. Se il valore è impostato su 1, il servizio WMI consente callback anonimi al client.
+Se il **valore AllowAnonymousCallback** è impostato su 0, il servizio WMI impedisce i callback anonimi al client. Se il valore è impostato su 1, il servizio WMI consente callback anonimi al client.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

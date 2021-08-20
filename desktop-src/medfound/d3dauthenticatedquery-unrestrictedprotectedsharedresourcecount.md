@@ -1,7 +1,7 @@
 ---
 description: Restituisce il numero di risorse condivise protette che possono essere aperte da qualsiasi processo senza restrizioni.
 ms.assetid: afbd7bb9-de71-4992-919e-e1517228dc69
-title: D3DAUTHENTICATEDQUERY_UNRESTRICTEDPROTECTEDSHAREDRESOURCECOUNT (D3d9types. h)
+title: D3DAUTHENTICATEDQUERY_UNRESTRICTEDPROTECTEDSHAREDRESOURCECOUNT (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: b2d834927d21c59ed5c70dcf3a001d100340405d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a227d8aa23e7f070cebb1c73092bd0af170927eda582e417839375512e891df7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117879745"
 ---
-# <a name="d3dauthenticatedquery_unrestrictedprotectedsharedresourcecount"></a>\_UNRESTRICTEDPROTECTEDSHAREDRESOURCECOUNT D3DAUTHENTICATEDQUERY
+# <a name="d3dauthenticatedquery_unrestrictedprotectedsharedresourcecount"></a>D3DAUTHENTICATEDQUERY \_ UNRESTRICTEDPROTECTEDSHAREDRESOURCECOUNT
 
 Restituisce il numero di risorse condivise protette che possono essere aperte da qualsiasi processo senza restrizioni.
 
@@ -28,9 +28,9 @@ Restituisce il numero di risorse condivise protette che possono essere aperte da
 
 | Requisito | Valore |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| GUID query  | **\_UNRESTRICTEDPROTECTEDSHAREDRESOURCECOUNT D3DAUTHENTICATEDQUERY**                                                                                                    |
-| Dati di input  | [**\_Input query \_ D3DAUTHENTICATEDCHANNEL**](d3dauthenticatedchannel-query-input.md)                                                                                   |
-| Restituisce i dati | [**\_Output QUERYUNRESTRICTEDPROTECTEDSHAREDRESOURCECOUNT \_ D3DAUTHENTICATEDCHANNEL**](d3dauthenticatedchannel-queryunrestrictedprotectedsharedresourcecount-output.md) |
+| Query GUID  | **D3DAUTHENTICATEDQUERY \_ UNRESTRICTEDPROTECTEDSHAREDRESOURCECOUNT**                                                                                                    |
+| Dati di input  | [**INPUT DI QUERY D3DAUTHENTICATEDCHANNEL \_ \_**](d3dauthenticatedchannel-query-input.md)                                                                                   |
+| Restituisce i dati | [**OUTPUT DI D3DAUTHENTICATEDCHANNEL \_ QUERYUNRESTRICTEDPROTECTEDSHAREDRESOURCECOUNT \_**](d3dauthenticatedchannel-queryunrestrictedprotectedsharedresourcecount-output.md) |
 
 
 
@@ -38,7 +38,7 @@ Restituisce il numero di risorse condivise protette che possono essere aperte da
 
 ## <a name="remarks"></a>Commenti
 
-L'unico tipo di canale che supporta questa query è il **\_ \_ software del driver D3DAUTHENTICATEDCHANNEL**.
+L'unico tipo di canale che supporta questa query è **D3DAUTHENTICATEDCHANNEL \_ DRIVER \_ SOFTWARE**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,9 +46,9 @@ L'unico tipo di canale che supporta questa query è il **\_ \_ software del driv
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                             |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -56,13 +56,13 @@ L'unico tipo di canale che supporta questa query è il **\_ \_ software del driv
 
 <dl> <dt>
 
-[Query di protezione del contenuto](content-protection-queries.md)
+[protezione del contenuto query](content-protection-queries.md)
 </dt> <dt>
 
-[protezione del contenuto basate su GPU](gpu-based-content-protection.md)
+[Impostazioni basate su GPU protezione del contenuto](gpu-based-content-protection.md)
 </dt> <dt>
 
-[**IDirect3DAuthenticatedChannel9:: query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
+[**IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: A partire da Windows Vista, un uso più ampio è costituito da immagini di anteprima specifiche dei file rispetto alle versioni precedenti di Windows.
-title: Compilazione di gestori di anteprime
+description: A Windows Vista, viene fatto un uso maggiore delle immagini di anteprima specifiche del file rispetto alle versioni precedenti di Windows.
+title: Creazione di gestori di anteprime
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 218264a9-ed26-4049-a721-232943f6ec53
@@ -9,32 +9,32 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: c05e13f24a2f4d70a58bab904150b1e488f74854
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4923c01b0387069a8d50ae4d293c40db496f126fdb40ca37d1309dc0201cd51d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118050858"
 ---
-# <a name="building-thumbnail-handlers"></a>Compilazione di gestori di anteprime
+# <a name="building-thumbnail-handlers"></a>Creazione di gestori di anteprime
 
-A partire da Windows Vista, un uso più ampio è costituito da immagini di anteprima specifiche dei file rispetto alle versioni precedenti di Windows. Vengono usati in tutte le visualizzazioni, nelle finestre di dialogo e per qualsiasi tipo di file che li fornisce. È stata modificata anche la visualizzazione delle anteprime. È disponibile una gamma continua di dimensioni selezionabili dall'utente anziché le dimensioni discrete, ad esempio icone e anteprime.
+A Windows Vista, viene fatto un uso maggiore delle immagini di anteprima specifiche del file rispetto alle versioni precedenti di Windows. Vengono usati in tutte le visualizzazioni, nei dialoghe e per qualsiasi tipo di file che le fornisce. È stata modificata anche la visualizzazione dell'anteprima. È disponibile una gamma continua di dimensioni selezionabili dall'utente anziché le dimensioni discrete, ad esempio icone e anteprime.
 
-L'interfaccia [**IThumbnailProvider**](/windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailprovider) rende più semplice la creazione di un'anteprima rispetto alla precedente [**IExtractImage**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iextractimage) o [**IExtractImage2**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iextractimage2). Si noti, tuttavia, che il codice esistente che usa **IExtractImage** o **IExtractImage2** è ancora valido e supportato.
+[**L'interfaccia IThumbnailProvider**](/windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailprovider) rende più semplice fornire un'anteprima rispetto a [**IExtractImage**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iextractimage) o [**IExtractImage2 meno recente.**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iextractimage2) Si noti, tuttavia, che il codice esistente che usa **IExtractImage** o **IExtractImage2** è ancora valido e supportato.
 
-## <a name="the-recipethumbnailprovider-sample"></a>Esempio RecipeThumbnailProvider
+## <a name="the-recipethumbnailprovider-sample"></a>Esempio recipeThumbnailProvider
 
-Il campione [RecipeThumbnailProvider](samples-recipethumbnailprovider.md) sezionato in questa sezione è incluso in Windows Software Development Kit (SDK). Il percorso di installazione predefinito è C: \\ programmi \\ Microsoft SDK \\ Windows \\ v 6.0 \\ Samples \\ WinUI \\ Shell \\ AppShellIntegration \\ RecipeThumbnailProvider. Tuttavia, la maggior parte del codice è inclusa anche qui.
+[L'esempio RecipeThumbnailProvider](samples-recipethumbnailprovider.md) illustrato in questa sezione è incluso in Windows Software Development Kit (SDK). Il percorso di installazione predefinito è C: \\ Programmi Microsoft SDK Windows \\ \\ \\ v6.0 \\ Samples \\ WinUI Shell \\ \\ AppShellIntegration \\ RecipeThumbnailProvider. Tuttavia, anche la maggior parte del codice è inclusa qui.
 
-L'esempio [RecipeThumbnailProvider](samples-recipethumbnailprovider.md) illustra l'implementazione di un gestore di anteprime per un nuovo tipo di file registrato con l'estensione recipe. Nell'esempio viene illustrato l'utilizzo delle diverse API del gestore di anteprime per registrare i server COM (thumbnail Extraction Component Object Model) per i tipi di file personalizzati. In questo argomento viene illustrato il codice di esempio, in cui sono evidenziate le opzioni e le linee guida di codifica.
+[L'esempio RecipeThumbnailProvider](samples-recipethumbnailprovider.md) illustra l'implementazione di un gestore di anteprime per un nuovo tipo di file registrato con estensione recipe. L'esempio illustra l'uso delle diverse API del gestore di anteprime per registrare i server COM (Thumbnail Extraction Component Object Model) per tipi di file personalizzati. Questo argomento illustra il codice di esempio, evidenziando le scelte e le linee guida per la scrittura del codice.
 
-Un gestore di anteprime deve sempre implementare [**IThumbnailProvider**](/windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailprovider) in concerto con una di queste interfacce:
+Un gestore di anteprime deve implementare [**sempre IThumbnailProvider**](/windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailprovider) insieme a una di queste interfacce:
 
 -   [**IInitializeWithStream**](/windows/desktop/api/Propsys/nn-propsys-iinitializewithstream)
 -   [**IInitializeWithItem**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem)
 -   [**IInitializeWithFile**](/windows/desktop/api/Propsys/nn-propsys-iinitializewithfile)
 
-In alcuni casi non è possibile inizializzare con i flussi. Negli scenari in cui il gestore di anteprime non implementa [**IInitializeWithStream**](/windows/desktop/api/Propsys/nn-propsys-iinitializewithstream), è necessario rifiutare esplicitamente l'esecuzione nel processo isolato in cui l'indicizzatore di sistema lo inserisce per impostazione predefinita quando viene apportata una modifica al flusso. Per rifiutare esplicitamente la funzionalità di isolamento dei processi, impostare il valore del registro di sistema seguente.
+In alcuni casi l'inizializzazione con i flussi non è possibile. Negli scenari in cui il gestore di anteprime non implementa [**IInitializeWithStream,**](/windows/desktop/api/Propsys/nn-propsys-iinitializewithstream)deve rifiutare esplicitamente l'esecuzione nel processo isolato in cui l'indicizzatore di sistema lo inserisce per impostazione predefinita quando viene apportata una modifica al flusso. Per rifiutare esplicitamente la funzionalità di isolamento del processo, impostare il valore del Registro di sistema seguente.
 
 ```
 HKEY_CLASSES_ROOT
@@ -43,13 +43,13 @@ HKEY_CLASSES_ROOT
          DisableProcessIsolation = 1
 ```
 
-Se si implementa [**IInitializeWithStream**](/windows/desktop/api/Propsys/nn-propsys-iinitializewithstream) e si esegue un'inizializzazione basata sul flusso, il gestore è più sicuro e affidabile. In genere, la disabilitazione dell'isolamento dei processi è destinata solo ai gestori legacy; evitare di disabilitare questa funzionalità per qualsiasi nuovo codice. Quando possibile, **IInitializeWithStream** deve essere la prima scelta dell'interfaccia di inizializzazione.
+Se si implementa [**IInitializeWithStream e si**](/windows/desktop/api/Propsys/nn-propsys-iinitializewithstream) esegue un'inizializzazione basata su flusso, il gestore è più sicuro e affidabile. In genere, la disabilitazione dell'isolamento dei processi è destinata solo ai gestori legacy. evitare di disabilitare questa funzionalità per qualsiasi nuovo codice. **IInitializeWithStream deve essere la** prima scelta dell'interfaccia di inizializzazione quando possibile.
 
-Poiché il file di immagine nell'esempio non è incorporato nel file con estensione Recipe e non fa parte del relativo flusso di file, nell'esempio viene utilizzato [**IInitializeWithItem**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem) . L'implementazione del metodo [**IInitializeWithItem:: Initialize**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iinitializewithitem-initialize) passa semplicemente i parametri alle variabili della classe privata.
+Poiché il file di immagine nell'esempio non è incorporato nel file con estensione recipe e non fa parte del flusso di file, nell'esempio viene usato [**IInitializeWithItem.**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem) L'implementazione [**del metodo IInitializeWithItem::Initialize**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iinitializewithitem-initialize) passa semplicemente i parametri alle variabili di classe private.
 
-[**IThumbnailProvider**](/windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailprovider) dispone di un solo metodo, ovvero [**GetThumbnail**](/windows/desktop/api/Thumbcache/nf-thumbcache-ithumbnailprovider-getthumbnail), che viene chiamato con le dimensioni massime desiderate dell'immagine, in pixel. Anche se il parametro è denominato *CX*, il relativo valore viene usato come dimensione massima delle dimensioni x e y dell'immagine. Se l'anteprima recuperata non è quadrata, l'asse più lungo è limitato da *CX* e le proporzioni dell'immagine originale vengono mantenute.
+[**IThumbnailProvider**](/windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailprovider) ha un solo metodo,[**GetThumbnail,**](/windows/desktop/api/Thumbcache/nf-thumbcache-ithumbnailprovider-getthumbnail)che viene chiamato con le dimensioni desiderate più grandi dell'immagine, in pixel. Anche se il parametro è *denominato cx*, il relativo valore viene usato come dimensione massima delle dimensioni x e y dell'immagine. Se l'anteprima recuperata non è quadrata, l'asse più lungo è limitato da *cx* e le proporzioni dell'immagine originale vengono mantenute.
 
-Quando restituisce, [**GetThumbnail**](/windows/desktop/api/Thumbcache/nf-thumbcache-ithumbnailprovider-getthumbnail) fornisce un handle per l'immagine recuperata. Fornisce inoltre un valore che indica il formato di colore dell'immagine e se dispone di informazioni Alpha valide.
+Quando viene restituito, [**GetThumbnail**](/windows/desktop/api/Thumbcache/nf-thumbcache-ithumbnailprovider-getthumbnail) fornisce un handle per l'immagine recuperata. Fornisce anche un valore che indica il formato del colore dell'immagine e se contiene informazioni alfa valide.
 
 L'implementazione di GetThumbnail nell'esempio inizia con una chiamata al metodo **\_ GetBase64EncodedImageString** privato.
 
@@ -65,11 +65,11 @@ IFACEMETHODIMP CRecipeThumbProvider::GetThumbnail(UINT cx,
 
 
 
-Il tipo di file Recipe è semplicemente un file XML registrato come estensione del nome file univoco. Include un elemento denominato **Picture** che fornisce il percorso relativo e il nome file dell'immagine da usare come anteprima per il file. Recipe specifico. L'elemento **Picture** è costituito dall'attributo **source** che specifica un'immagine con codifica base 64 e da un attributo di **dimensione** facoltativo.
+Il tipo di file con estensione recipe è semplicemente un file XML registrato come estensione di file univoca. Include un elemento denominato **Picture** che fornisce il percorso relativo e il nome file dell'immagine da usare come anteprima per questo particolare file con estensione recipe. **L'elemento Picture** è costituito **dall'attributo Source** che specifica un'immagine codificata in base 64 e da un attributo **Size** facoltativo.
 
-**Size** ha due valori, Small e large. In questo modo è possibile fornire più nodi **immagine** con immagini separate. L'immagine recuperata dipende quindi dal valore di dimensione massima (*CX*) fornito nella chiamata a [**GetThumbnail**](/windows/desktop/api/Thumbcache/nf-thumbcache-ithumbnailprovider-getthumbnail). Poiché Windows non ridimensiona mai l'immagine con dimensioni maggiori di quelle massime, è possibile fornire diverse immagini per risoluzioni diverse. Per semplicità, tuttavia, l'esempio omette l'attributo **size** e fornisce solo un'immagine per tutte le situazioni.
+**Size** ha due valori, Small e Large. In questo modo è possibile fornire più **nodi Immagine** con immagini separate. L'immagine recuperata dipende quindi dal valore delle dimensioni massime (*cx*) fornito nella chiamata a [**GetThumbnail**](/windows/desktop/api/Thumbcache/nf-thumbcache-ithumbnailprovider-getthumbnail). Poiché Windows dimensioni dell'immagine non superano mai le dimensioni massime, è possibile specificare immagini diverse per risoluzioni diverse. Tuttavia, per semplicità, l'esempio omette **l'attributo Size** e fornisce una sola immagine per tutte le situazioni.
 
-Il metodo **\_ GetBase64EncodedImageString** , la cui implementazione è illustrata di seguito, USA le API XML Document Object Model (Dom) per recuperare il nodo **immagine** . Da tale nodo estrae l'immagine dai dati dell'attributo di **origine** .
+Il **\_ metodo GetBase64EncodedImageString,** la cui implementazione è illustrata qui, usa LE API DOM (XML Document Object Model) per recuperare il **nodo** Picture. Da tale nodo estrae l'immagine dai dati **dell'attributo** Source.
 
 
 ```C++
@@ -146,7 +146,7 @@ IFACEMETHODIMP CRecipeThumbProvider::GetThumbnail(UINT cx,
 
 
 
-Il metodo **\_ GetStreamFromString** , la cui implementazione è illustrata di seguito, che converte l'immagine codificata in un flusso.
+Il **\_ metodo GetStreamFromString,** la cui implementazione è illustrata qui, che converte l'immagine codificata in un flusso.
 
 
 ```C++
@@ -197,7 +197,7 @@ HRESULT CRecipeThumbProvider::_GetStreamFromString(PCWSTR pszImageName,
 
 
 
-**GetThumbnail** usa quindi le API di Windows Imaging Component (WIC) per estrarre una bitmap dal flusso e ottenere un handle per tale bitmap. Le informazioni alfa sono impostate, l'oggetto WIC è stato chiuso correttamente e il metodo termina correttamente.
+**GetThumbnail** usa quindi le API WIC (Windows Imaging Component) per estrarre una bitmap dal flusso e ottenere un handle per tale bitmap. Le informazioni alfa vengono impostate, wic viene chiuso correttamente e il metodo termina correttamente.
 
 
 ```C++
@@ -235,10 +235,10 @@ IFACEMETHODIMP CRecipeThumbProvider::GetThumbnail(UINT cx,
 [Gestori di anteprime](thumbnail-providers.md)
 </dt> <dt>
 
-[Linee guida per gestore anteprime](thumbnail-provider-guidelines.md)
+[Linee guida per il gestore di anteprime](thumbnail-provider-guidelines.md)
 </dt> <dt>
 
-[**argomenti di IID \_ PPV \_**](/windows/win32/api/combaseapi/nf-combaseapi-iid_ppv_args)
+[**IID \_ PPV \_ ARGS**](/windows/win32/api/combaseapi/nf-combaseapi-iid_ppv_args)
 </dt> </dl>
 
  

@@ -17,7 +17,7 @@ Specifica se il codificatore esegue l'elaborazione di immagini stereo. Lettura/s
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
-Disponibile solo tramite [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
+Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
 
 ## <a name="data-type"></a>Tipo di dati
 

@@ -15,7 +15,7 @@ ms.locfileid: "117782527"
 
 Creare un criterio di autorizzazione prima o durante l'installazione di un'applicazione.
 
-Quando si usa l'API di Gestione autorizzazioni per creare un criterio di autorizzazione, seguire le istruzioni fornite negli argomenti seguenti.
+Quando si usa l'API gestione autorizzazioni per creare un criterio di autorizzazione, seguire le istruzioni fornite negli argomenti seguenti.
 
 
 

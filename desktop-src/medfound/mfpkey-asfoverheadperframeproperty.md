@@ -1,17 +1,17 @@
 ---
 description: Specifica l'overhead, in byte per pacchetto, necessario per il contenitore usato per archiviare il contenuto compresso.
 ms.assetid: 73ec52de-c74a-45b3-a453-7f32510b4484
-title: Proprietà MFPKEY_ASFOVERHEADPERFRAME (Wmcodecdsp. h)
+title: MFPKEY_ASFOVERHEADPERFRAME proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 208acf55871b18bb029279a27abd36a33ea8c79c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 481c99c50a305219d0548007755d6b6ba27239e39bef5cb47d61ff3d665dfa47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117874082"
 ---
-# <a name="mfpkey_asfoverheadperframe-property"></a>\_Proprietà ASFOVERHEADPERFRAME di MFPKEY
+# <a name="mfpkey_asfoverheadperframe-property"></a>Proprietà MFPKEY \_ ASFOVERHEADPERFRAME
 
 Specifica l'overhead, in byte per pacchetto, necessario per il contenitore usato per archiviare il contenuto compresso.
 
@@ -29,7 +29,7 @@ VT \_ I4
 
 ## <a name="remarks"></a>Commenti
 
-Se si utilizza la struttura di file ASF (Advanced Systems Format), non modificare il valore predefinito. Se i dati non vengono archiviati in un file ASF, è necessario impostare questo valore su 0.
+Se si usa la struttura di file ASF (Advanced Systems Format), non modificare questo valore rispetto all'impostazione predefinita. Se i dati non vengono archiviati in un file ASF, è necessario impostare questo valore su 0.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,9 +37,9 @@ Se si utilizza la struttura di file ASF (Advanced Systems Format), non modificar
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Se si utilizza la struttura di file ASF (Advanced Systems Format), non modificar
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

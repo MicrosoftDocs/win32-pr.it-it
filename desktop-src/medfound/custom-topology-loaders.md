@@ -1,28 +1,28 @@
 ---
-description: Caricatori topologia personalizzati
+description: Caricatori di topologia personalizzati
 ms.assetid: 3982b07e-3179-45c1-9f17-f2114363f53d
-title: Caricatori topologia personalizzati
+title: Caricatori di topologia personalizzati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34a8f9e24b207d43620e7b2d09080d244b0a9e72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02ca9cf393b83693199cea984183bf88186f74322ed816352e3c43d19a6e880b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117880386"
 ---
-# <a name="custom-topology-loaders"></a>Caricatori topologia personalizzati
+# <a name="custom-topology-loaders"></a>Caricatori di topologia personalizzati
 
-Quando un'applicazione Accoda una topologia parziale nella sessione multimediale, la sessione multimediale usa un caricatore della topologia per risolvere la topologia. Per impostazione predefinita, la sessione multimediale usa l'implementazione Media Foundation standard del caricatore della topologia, ma è anche possibile fornire un'implementazione personalizzata. In questo modo si ottiene un maggiore controllo sulla topologia finale. Un caricatore di topologia personalizzato deve implementare l'interfaccia [**IMFTopoLoader**](/windows/desktop/api/mfidl/nn-mfidl-imftopoloader) .
+Quando un'applicazione accoda una topologia parziale nella sessione multimediale, la sessione multimediale usa un caricatore di topologia per risolvere la topologia. Per impostazione predefinita, la sessione multimediale usa l'implementazione Media Foundation standard del caricatore della topologia, ma è anche possibile fornire un'implementazione personalizzata. In questo modo si ha maggiore controllo sulla topologia finale. Un caricatore di topologia personalizzato deve implementare [**l'interfaccia IMFTopoLoader.**](/windows/desktop/api/mfidl/nn-mfidl-imftopoloader)
 
 Per impostare un caricatore di topologia personalizzato nella sessione multimediale, eseguire le operazioni seguenti:
 
-1.  Creare un archivio di attributi vuoto chiamando [**MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes).
-2.  Impostare l' [**attributo \_ \_ TOPOLOADER della sessione MF**](mf-session-topoloader-attribute.md) nell'archivio di attributi. Il valore dell'attributo è il CLSID del caricatore personalizzato.
-3.  Chiamare [**MFCreateMediaSession**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatemediasession) per creare la sessione multimediale per il contenuto non protetto oppure [**MFCreatePMPMediaSession**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatepmpmediasession) per creare la sessione multimediale all'interno del percorso multimediale protetto (PMP).
+1.  Creare un archivio attributi vuoto chiamando [**MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes).
+2.  Impostare [**l'attributo \_ MF SESSION \_ TOPOLOADER**](mf-session-topoloader-attribute.md) nell'archivio attributi. Il valore dell'attributo è il CLSID del caricatore personalizzato.
+3.  Chiamare [**MFCreateMediaSession**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatemediasession) per creare la sessione multimediale per il contenuto non protetto oppure [**MFCreatePMPMediaSession**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatepmpmediasession) per creare la sessione multimediale all'interno del percorso del supporto protetto (PMP).
 
 > [!Note]  
-> Per usare un caricatore di topologia personalizzato all'interno di PMP, il caricatore della topologia deve essere un componente attendibile. Per altre informazioni, vedere [percorso multimediale protetto](protected-media-path.md).
+> Per usare un caricatore di topologia personalizzato all'interno del PMP, il caricatore di topologia deve essere un componente attendibile. Per altre informazioni, vedere [Percorso del supporto protetto.](protected-media-path.md)
 
  
 
@@ -68,9 +68,9 @@ HRESULT CreateSession_CustomTopoLoader(REFCLSID clsid, IMFMediaSession **ppSessi
 
 
 
-Non è necessario implementare l'intero algoritmo di caricamento della topologia nel caricatore della topologia. In alternativa, è possibile eseguire il wrapping del caricatore della topologia Media Foundation standard. Nell'implementazione del metodo [**IMFTopoLoader:: Load**](/windows/desktop/api/mfidl/nf-mfidl-imftopoloader-load) , modificare la topologia in base alle esigenze e passare la topologia modificata al caricatore della topologia standard. Il caricatore della topologia standard completa quindi la topologia. È anche possibile modificare la topologia completata prima di passarla di nuovo alla sessione multimediale.
+Non è necessario implementare l'intero algoritmo di caricamento della topologia nel caricatore della topologia. In alternativa, è possibile eseguire il wrapping del caricatore Media Foundation topologia standard. Nell'implementazione del [**metodo IMFTopoLoader::Load**](/windows/desktop/api/mfidl/nf-mfidl-imftopoloader-load) modificare la topologia in base alle esigenze e passare la topologia modificata al caricatore della topologia standard. Il caricatore della topologia standard completa quindi la topologia. È anche possibile modificare la topologia completata prima di passarla nuovamente alla sessione multimediale.
 
-Il codice seguente illustra la struttura generale di questo approccio. Non vengono visualizzati i dettagli del metodo [**Load**](/windows/desktop/api/mfidl/nf-mfidl-imftopoloader-load) , perché questi dipendono dai requisiti specifici dell'applicazione.
+Il codice seguente illustra la struttura generale di questo approccio. Non vengono visualizzati dettagli del metodo [**Load,**](/windows/desktop/api/mfidl/nf-mfidl-imftopoloader-load) perché dipendono dai requisiti specifici dell'applicazione.
 
 
 ```C++
