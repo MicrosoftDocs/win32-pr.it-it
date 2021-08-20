@@ -1,19 +1,19 @@
 ---
 title: Proprietà utente MS-CHAPv2 EAP
-description: Informazioni sulle proprietà dell'utente MS-CHAPv2 EAP. Vedere un esempio che è un'istanza dello schema legacy mschapv2userpropertiesv1.
+description: Informazioni sulle proprietà utente MS-CHAPv2 EAP. Vedere un esempio che è un'istanza dello schema legacy mschapv2userpropertiesv1.
 ms.assetid: f360913d-be5d-4ef0-96c9-652e4d08d9cd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0082d1672d32b87fe98816fb5baeac791df343d0
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: 334405e8c06105f3396ad533138128666421ba51b4c514f4a0bd99f9b9caa30a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104399860"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086580"
 ---
 # <a name="eap-ms-chapv2-user-properties"></a>Proprietà utente MS-CHAPv2 EAP
 
-Questo esempio è un'istanza dello schema legacy [mschapv2userpropertiesv1](mschapv2userpropertiesv1schema-schema.md) .
+Questo esempio è un'istanza dello schema [legacy mschapv2userpropertiesv1.](mschapv2userpropertiesv1schema-schema.md)
 
 ``` syntax
 <?xml version="1.0" ?> 
@@ -51,9 +51,9 @@ Questo esempio è un'istanza dello schema legacy [mschapv2userpropertiesv1](msch
 [EAPHost e schema legacy](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

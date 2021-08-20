@@ -1,7 +1,7 @@
 ---
 description: Il metodo GetCurrentSample recupera l'esempio corrente.
 ms.assetid: cfdc66e3-7d32-47b7-87f6-99dd9513c93b
-title: Metodo CBaseRenderer. GetCurrentSample (Renbase. h)
+title: Metodo CBaseRenderer.GetCurrentSample (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 48c42ff02b22d30138fcad7d1e8af5e57a391b99
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5ffe3cdf95d5ab248956e670c04572140fa4621fff5b0cb5183f9a7cbd9b837e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117822722"
 ---
-# <a name="cbaserenderergetcurrentsample-method"></a>CBaseRenderer. GetCurrentSample, metodo
+# <a name="cbaserenderergetcurrentsample-method"></a>Metodo CBaseRenderer.GetCurrentSample
 
 Il `GetCurrentSample` metodo recupera l'esempio corrente.
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un puntatore all'interfaccia [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) dell'esempio oppure **null** se non è disponibile alcun campione.
+Restituisce un puntatore all'interfaccia [**IMediaSample dell'esempio**](/windows/desktop/api/Strmif/nn-strmif-imediasample) oppure **NULL** se non è disponibile alcun esempio.
 
 ## <a name="remarks"></a>Commenti
 
-A meno che il metodo non restituisca **null**, il metodo chiama **AddRef** sul puntatore [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) prima di restituirlo. Il chiamante deve rilasciare il puntatore. In modo implicito, è necessario assegnare il valore restituito a una variabile, in modo che sia possibile rilasciarlo in un secondo momento.
+A meno che il metodo non **restituisca NULL,** il metodo chiama **AddRef** sul puntatore [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) prima di restituirlo. Il chiamante deve rilasciare il puntatore . Per implicazione, è necessario assegnare il valore restituito a una variabile, in modo da poterlo rilasciare in un secondo momento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ A meno che il metodo non restituisca **null**, il metodo chiama **AddRef** sul p
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

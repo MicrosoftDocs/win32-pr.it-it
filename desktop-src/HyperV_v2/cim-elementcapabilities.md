@@ -1,7 +1,7 @@
 ---
 description: Rappresenta un'associazione tra un elemento gestito e le relative funzionalità.
 ms.assetid: 0e080042-4a56-40b7-acc5-cf69eb2a0604
-title: Classe CIM_ElementCapabilities
+title: CIM_ElementCapabilities classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7c705d0bb4743d4919ca840f51b3324510558078
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f5b5aad32feac6ef1daba5f9139764d5964467dbfbfb2119c0ec01b6bfe4257b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812315"
 ---
-# <a name="cim_elementcapabilities-class"></a>CIM \_ ElementCapabilities (classe)
+# <a name="cim_elementcapabilities-class"></a>Classe CIM \_ ElementCapabilities
 
 Rappresenta un'associazione tra un elemento gestito e le relative funzionalità.
 
@@ -41,20 +41,20 @@ class CIM_ElementCapabilities
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ElementCapabilities** presenta questi tipi di membri:
+La **classe CIM \_ ElementCapabilities** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ElementCapabilities** dispone di queste proprietà.
+La **classe CIM \_ ElementCapabilities** ha queste proprietà.
 
 <dl> <dt>
 
 **Capabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ funzionalità CIM**
+Tipo di dati: **funzionalità CIM \_**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -70,7 +70,7 @@ Funzionalità associate all'elemento gestito.
 **Caratteristiche**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -82,7 +82,7 @@ Set di informazioni descrittive sulle funzionalità.
 
 <span id="Default"></span><span id="default"></span><span id="DEFAULT"></span>
 
-**Impostazione predefinita** (2)
+**Impostazione** predefinita (2)
 
 
 </dt> <dd></dd> <dt>
@@ -103,7 +103,7 @@ Set di informazioni descrittive sulle funzionalità.
 
 <span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -113,13 +113,13 @@ Set di informazioni descrittive sulle funzionalità.
 **ManagedElement**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ Managed**
+Tipo di dati: **CIM \_ ManagedElement**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**chiave**](/windows/desktop/WmiSdk/key-qualifier), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 Elemento gestito.
@@ -134,8 +134,8 @@ Elemento gestito.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

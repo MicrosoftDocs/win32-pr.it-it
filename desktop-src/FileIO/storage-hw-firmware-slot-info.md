@@ -1,7 +1,7 @@
 ---
 description: Questa struttura contiene informazioni su uno slot in un dispositivo.
 ms.assetid: 37475351-DE0F-4B80-B26B-1482FBCC16CD
-title: Struttura STORAGE_HW_FIRMWARE_SLOT_INFO (winioctl. h)
+title: STORAGE_HW_FIRMWARE_SLOT_INFO struttura (Winioctl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - winioctl.h.h
-ms.openlocfilehash: afb38e3dc866f31b6ada6797dcb611bce1ac81a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6db9bc5341bf3efec18390d171c205cc57b933afe166af6df48657b668cc85ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117996455"
 ---
-# <a name="storage_hw_firmware_slot_info-structure"></a>\_Struttura di \_ \_ informazioni slot del firmware HW di archiviazione \_
+# <a name="storage_hw_firmware_slot_info-structure"></a>Struttura DELLE \_ INFORMAZIONI DELLO SLOT DEL FIRMWARE HW DI \_ \_ \_ ARCHIVIAZIONE
 
 Questa struttura contiene informazioni su uno slot in un dispositivo.
 
@@ -45,10 +45,10 @@ typedef struct _STORAGE_HW_FIRMWARE_SLOT_INFO {
 
 <dl> <dt>
 
-**Versione**
+**Version**
 </dt> <dd>
 
-Versione della struttura. Deve essere impostato su sizeof ( \_ informazioni slot del firmware HW di archiviazione \_ \_ \_ )
+Versione di questa struttura. Deve essere impostato su sizeof(STORAGE \_ HW \_ FIRMWARE SLOT \_ \_ INFO)
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Dimensione della struttura.
 **SlotNumber**
 </dt> <dd>
 
-Numero di slot dello slot.
+Numero di slot di questo slot.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Indica se questo slot è di sola lettura o meno.
 
 </dd> <dt>
 
-**Reserved0**
+**Riservato0**
 </dt> <dd>
 
 Riservato per utilizzi futuri.
@@ -100,9 +100,9 @@ Revisione del firmware in questo slot.
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                                 |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                                        |
-| Intestazione<br/>                   | <dl> <dt>Winioctl. h. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                                 |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                                        |
+| Intestazione<br/>                   | <dl> <dt>Winioctl.h.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -110,25 +110,25 @@ Revisione del firmware in questo slot.
 
 <dl> <dt>
 
-[**\_attivazione del \_ firmware di archiviazione IOCTL \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_activate)
+[**ATTIVAZIONE DEL FIRMWARE DI ARCHIVIAZIONE IOCTL \_ \_ \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_activate)
 </dt> <dt>
 
-[**\_attivazione del \_ firmware \_ HW di archiviazione**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_activate)
+[**ATTIVAZIONE \_ FIRMWARE HW \_ DI \_ ARCHIVIAZIONE**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_activate)
 </dt> <dt>
 
-[**\_download del \_ firmware di archiviazione IOCTL \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_download)
+[**DOWNLOAD DEL FIRMWARE DI ARCHIVIAZIONE IOCTL \_ \_ \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_download)
 </dt> <dt>
 
-[**\_download del \_ firmware \_ HW di archiviazione**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_download)
+[**DOWNLOAD \_ DEL FIRMWARE HW DI \_ \_ ARCHIVIAZIONE**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_download)
 </dt> <dt>
 
-[**\_informazioni sul \_ firmware di archiviazione \_ IOCTL \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_get_info)
+[**INFORMAZIONI SUL \_ FIRMWARE DI \_ ARCHIVIAZIONE \_ IOCTL \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_get_info)
 </dt> <dt>
 
-[**\_informazioni sul \_ firmware \_ HW di archiviazione**](storage-hw-firmware-info.md)
+[**INFORMAZIONI \_ SUL FIRMWARE HW DI \_ \_ ARCHIVIAZIONE**](storage-hw-firmware-info.md)
 </dt> <dt>
 
-[**\_query sulle \_ informazioni del firmware HW \_ di archiviazione \_**](storage-hw-firmware-info-query.md)
+[**\_QUERY DI INFORMAZIONI SUL FIRMWARE HW DI \_ \_ \_ ARCHIVIAZIONE**](storage-hw-firmware-info-query.md)
 </dt> </dl>
 
  

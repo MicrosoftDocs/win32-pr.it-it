@@ -1,8 +1,8 @@
 ---
-description: Estende la funzionalità di SWbemServices.
+description: Estende le funzionalità di SWbemServices.
 ms.assetid: def514a9-eca4-41de-87cd-c9f964a71f68
 ms.tgt_platform: multiple
-title: Oggetto SWbemServicesEx (wbemdisp. h)
+title: Oggetto SWbemServicesEx (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,32 +15,32 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 8ed41cbab38e24958705c24aefc9ea5e9e67357e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7b63cbf6bc048350546b431b4f967c815450abf2d79c7ba79ab8f84e562a1bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118107839"
 ---
 # <a name="swbemservicesex-object"></a>Oggetto SWbemServicesEx
 
-L'oggetto **SWbemServicesEx** estende la funzionalità di [**SWbemServices**](swbemservices.md). I metodi [**put**](swbemservicesex-put.md) e [**PutAsync**](swbemservicesex-putasync.md) consentono il salvataggio di una classe o di un'istanza in più spazi dei nomi o in uno spazio dei nomi diverso da quello in cui è stata creata un'istanza. Questo oggetto non può essere creato dalla chiamata [CreateObject](/previous-versions//xzysf6hc(v=vs.85)) di VBScript.
+**L'oggetto SWbemServicesEx** estende le funzionalità di [**SWbemServices.**](swbemservices.md) I [**metodi Put**](swbemservicesex-put.md) e [**PutAsync**](swbemservicesex-putasync.md) consentono di salvare una classe o un'istanza in più spazi dei nomi o in uno spazio dei nomi diverso da quello in cui è stata creata un'istanza. Questo oggetto non può essere creato dalla chiamata [createObject](/previous-versions//xzysf6hc(v=vs.85)) vbscript.
 
 ## <a name="members"></a>Membri
 
-L'oggetto **SWbemServicesEx** dispone di questi tipi di membri:
+**L'oggetto SWbemServicesEx** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'oggetto **SWbemServicesEx** dispone di questi metodi.
+**L'oggetto SWbemServicesEx** include questi metodi.
 
 
 
 | Metodo                                       | Descrizione                                                                                                                                                                                                               |
 |:---------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Mettere**](swbemservicesex-put.md)           | Salva l'oggetto nello spazio dei nomi associato all'oggetto **SWbemServicesEx** e restituisce un oggetto [**SWbemObjectPath**](swbemobjectpath.md) che contiene il percorso dell'oggetto in cui sono stati scritti i dati.<br/> |
+| [**Mettere**](swbemservicesex-put.md)           | Salva l'oggetto nello spazio dei nomi associato all'oggetto **SWbemServicesEx** e restituisce un [**oggetto SWbemObjectPath**](swbemobjectpath.md) che contiene il percorso dell'oggetto in cui sono stati scritti i dati.<br/> |
 | [**PutAsync**](swbemservicesex-putasync.md) | Salva un oggetto in modo asincrono in uno spazio dei nomi.<br/>                                                                                                                                                                 |
 
 
@@ -49,7 +49,7 @@ L'oggetto **SWbemServicesEx** dispone di questi metodi.
 
 ## <a name="remarks"></a>Commenti
 
-I metodi di questa classe possono essere chiamati sia in modalità semisincrono che in modalità asincrona. Per ulteriori informazioni, vedere [chiamata a un metodo](calling-a-method.md).
+I metodi in questa classe possono essere chiamati in modalità semisincrono o asincrona. Per altre informazioni, vedere [Chiamata di un metodo](calling-a-method.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,11 +59,11 @@ I metodi di questa classe possono essere chiamati sia in modalità semisincrono 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_ISWBEMSERVICESEX CLSID<br/>                                                      |
-| IID<br/>                      | \_ISWBEMSERVICESEX IID<br/>                                                        |
+| CLSID<br/>                    | CLSID \_ ISWbemServicesEx<br/>                                                      |
+| IID<br/>                      | IID \_ ISWbemServicesEx<br/>                                                        |
 
 
 
@@ -71,10 +71,10 @@ I metodi di questa classe possono essere chiamati sia in modalità semisincrono 
 
 <dl> <dt>
 
-[Oggetti API di scripting](scripting-api-objects.md)
+[Scripting di oggetti API](scripting-api-objects.md)
 </dt> <dt>
 
-[Chiamata a un metodo](calling-a-method.md)
+[Chiamata di un metodo](calling-a-method.md)
 </dt> </dl>
 
  

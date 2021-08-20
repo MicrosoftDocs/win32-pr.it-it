@@ -1,7 +1,7 @@
 ---
-description: Rappresenta una voce nel database di inoltri associato alla \_ classe TRANSPARENTBRIDGINGSERVICE CIM.
+description: Rappresenta una voce nel database di inoltro associato alla classe CIM \_ TransparentBridgingService.
 ms.assetid: 4c3afe7c-f7e5-4a83-8ba1-f0b1909cee52
-title: Classe CIM_DynamicForwardingEntry
+title: CIM_DynamicForwardingEntry classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,16 +20,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 65cf4f1bc5e678089d54dd99a09a6d3b7aeb3dfe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5c53d39ff56bfe36f49ed9e224508e013a5f17977355145d316da147c266a8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812568"
 ---
-# <a name="cim_dynamicforwardingentry-class"></a>CIM \_ DynamicForwardingEntry (classe)
+# <a name="cim_dynamicforwardingentry-class"></a>Classe CIM \_ DynamicForwardingEntry
 
-Rappresenta una voce nel database di inoltri associato alla classe [**\_ TransparentBridgingService CIM**](cim-transparentbridgingservice.md) .
+Rappresenta una voce nel database di inoltro associato alla [**classe CIM \_ TransparentBridgingService.**](cim-transparentbridgingservice.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,42 +49,42 @@ class CIM_DynamicForwardingEntry : CIM_LogicalElement
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ DynamicForwardingEntry** presenta questi tipi di membri:
+La **classe CIM \_ DynamicForwardingEntry** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ DynamicForwardingEntry** dispone di queste proprietà.
+La **classe CIM \_ DynamicForwardingEntry** ha queste proprietà.
 
 <dl> <dt>
 
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome della classe o della sottoclasse utilizzata per creare l'istanza. Se utilizzata con le altre proprietà chiave di questa classe, questa proprietà consente di identificare in modo univoco tutte le istanze di questa classe e le relative sottoclassi.
+Nome della classe o della sottoclasse utilizzata per creare l'istanza. Se usata con le altre proprietà chiave di questa classe, questa proprietà consente l'identificazione univoca di tutte le istanze di questa classe e delle relative sottoclassi.
 
 </dd> <dt>
 
 **DynamicStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Bridge-MIB. dot1dTpFdbStatus ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| BRIDGE-MIB.dot1dTpFdbStatus")
 </dt> </dl>
 
 Stato della voce.
@@ -128,48 +128,48 @@ Stato della voce.
 
 </dd> <dt>
 
-**MACAddress**
+**Macaddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (12), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Bridge-MIB. dot1dTpFdbAddress ")
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (12), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| BRIDGE-MIB.dot1dTpFdbAddress")
 </dt> </dl>
 
-Indirizzo MAC unicast per il quale il servizio bridging filtra le informazioni. L'indirizzo MAC è formattato come dodici cifre esadecimali, ad esempio 010203040506, con ogni coppia che rappresenta uno dei sei ottetti dell'indirizzo MAC in un ordine di bit canonico in base a RFC 2469.
+Indirizzo MAC Unicast per cui il servizio di bridging filtra le informazioni. L'indirizzo MAC è formattato come dodici cifre esadecimali, ad esempio 010203040506, con ogni coppia che rappresenta uno dei sei ottetti dell'indirizzo MAC in ordine di bit canonico in base a RFC 2469.
 
 </dd> <dt>
 
 **ServiceCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**propagato**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ servizio CIM**](cim-service.md).**CreationClassName**")
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**SERVIZIO CIM \_**](cim-service.md).**CreationClassName**")
 </dt> </dl>
 
 Valore **CreationClassName** dell'oggetto servizio di ambito.
 
 </dd> <dt>
 
-**ServiceName**
+**Servicename**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**propagato**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ servizio CIM**](cim-service.md).**Nome**")
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ Service**](cim-service.md).**Nome**")
 </dt> </dl>
 
 Nome del servizio di ambito.
@@ -179,29 +179,29 @@ Nome del servizio di ambito.
 **SystemCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**propagato**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ sistema CIM**](cim-system.md).**CreationClassName**")
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ System**](cim-system.md).**CreationClassName**")
 </dt> </dl>
 
 Valore **CreationClassName** dell'oggetto di sistema di ambito.
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**propagato**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ sistema CIM**](cim-system.md).**Nome**")
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ System**](cim-system.md).**Nome ")**
 </dt> </dl>
 
 Nome del sistema di ambito.
@@ -216,8 +216,8 @@ Nome del sistema di ambito.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -226,7 +226,7 @@ Nome del sistema di ambito.
 
 <dl> <dt>
 
-[**\_LogicalElement CIM**](cim-logicalelement.md)
+[**CIM \_ LogicalElement**](cim-logicalelement.md)
 </dt> </dl>
 
  

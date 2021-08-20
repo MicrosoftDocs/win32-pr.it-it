@@ -1,34 +1,34 @@
 ---
-title: LA drop-attributo
-description: LA drop-attributo
+title: Attributo VML Drop
+description: Attributo VML Drop
 ms.assetid: 6bd38f85-5ad9-4f8a-8a32-13a5c4b4f031
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d05e81e89e32a4ce729897ac14c1d9c73252f744
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a16d9a5463f75f4ed9d0c5dc4bf18fb873f2ca8f7eb4147179ac68ba37adba9e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118124846"
 ---
-# <a name="vml-drop-attribute"></a>LA drop-attributo
+# <a name="vml-drop-attribute"></a>Attributo VML Drop
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina la posizione in cui verrà inserito il rilascio di un callout. Proprietà di lettura/scrittura. **Stringa**.
+Determina la posizione in cui verrà inserito il callout. Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
 [Callout](msdn-online-vml-callout-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<o: *element* drop = " *Expression* " >
+<o: *element* drop=" *expression* ">
 
 **Osservazioni:**
 
@@ -38,8 +38,8 @@ I possibili valori sono:
 -   center
 -   bottom
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
- 
+ 
 
- 
+ 

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione SetColumnGrbit'
+description: Altre informazioni sull'enumerazione SetColumnGrbit
 title: Enumerazione SetColumnGrbit
 TOCTitle: SetColumnGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.SetColumnGrbit
@@ -44,12 +44,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 893f8e79b910a305bf6caccacd2d928e947be693
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8cfde1fe2bb0cefeb108cd957b043b14fc6b224375ae82b894eab0b9a0cb8865
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104485228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118071477"
 ---
 # <a name="setcolumngrbit-enumeration"></a>Enumerazione SetColumnGrbit
 
@@ -57,8 +57,8 @@ Opzioni per JetSetColumn.
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -94,47 +94,47 @@ public enum SetColumnGrbit
 <tr class="even">
 <td></td>
 <td>AppendLV</td>
-<td>Questa opzione consente di accodare i dati a una colonna di tipo JET_coltypLongText o JET_coltypLongBinary. È possibile ottenere lo stesso comportamento determinando la dimensione del valore Long esistente e specificando ibLongValue in psetinfo. Tuttavia, è più semplice utilizzare questo grbit poiché la conoscenza della dimensione del valore della colonna esistente non è necessaria.</td>
+<td>Questa opzione viene usata per aggiungere dati a una colonna di tipo JET_coltypLongText o JET_coltypLongBinary. Lo stesso comportamento può essere ottenuto determinando le dimensioni del valore long esistente e specificando ibLongValue in psetinfo. Tuttavia, è più semplice usare questo grbit poiché non è necessario conoscere le dimensioni del valore di colonna esistente.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>OverwriteLV</td>
-<td>Questa opzione consente di sostituire il valore Long esistente con i dati appena forniti. Quando si utilizza questa opzione, è come se il valore Long esistente fosse stato impostato su 0 (zero) lunghezza prima dell'impostazione dei nuovi dati.</td>
+<td>Questa opzione viene usata per sostituire il valore long esistente con i nuovi dati forniti. Quando si usa questa opzione, è come se il valore long esistente fosse stato impostato su una lunghezza pari a 0 (zero) prima di impostare i nuovi dati.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>RevertToDefaultValue</td>
-<td>Questa opzione è applicabile solo per le colonne con tag, sparse o multivalore. Causa la restituzione del valore predefinito della colonna nelle successive operazioni di recupero della colonna. Tutti i valori di colonna esistenti vengono rimossi.</td>
+<td>Questa opzione è applicabile solo alle colonne con tag, di tipo sparse o multivalore. Fa in modo che la colonna restituirà il valore predefinito della colonna nelle successive operazioni di recupero della colonna. Tutti i valori di colonna esistenti vengono rimossi.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SeparateLV</td>
-<td>Questa opzione viene usata per forzare un valore Long, ovvero colonne di tipo JET_coltyp. LongText o JET_coltyp. LongBinary, da archiviare separatamente dal resto dei dati del record. Questa situazione si verifica in genere quando la dimensione del valore Long impedisce che venga archiviata con i dati dei record rimanenti. Tuttavia, questa opzione può essere usata per forzare l'archiviazione separata del valore Long. Si noti che non è possibile forzare la separazione dei valori long di quattro byte di dimensioni minori. In questi casi, l'opzione viene ignorata.</td>
+<td>Questa opzione viene usata per forzare un valore long, colonne di tipo JET_coltyp. LongText o JET_coltyp. LongBinary, da archiviare separatamente dal resto dei dati del record. Ciò si verifica in genere quando le dimensioni del valore long ne impediscono l'archiviazione con i dati dei record rimanenti. Tuttavia, questa opzione può essere usata per forzare l'archiviazione separata del valore long. Si noti che non è possibile forzare la separazione di valori lunghi di quattro byte di dimensioni inferiori. In questi casi, l'opzione viene ignorata.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>SizeLV</td>
-<td>Questa opzione viene usata per interpretare il buffer di input come numero intero di byte da impostare come lunghezza del valore Long descritto dal ColumnID specificato e, se specificato, il numero di sequenza in psetinfo- &gt; itagSequence. Se la dimensione specificata è maggiore del valore della colonna esistente, la colonna verrà estesa con 0. Se le dimensioni sono inferiori al valore della colonna esistente, il valore verrà troncato.</td>
+<td>Questa opzione viene usata per interpretare il buffer di input come numero intero di byte da impostare come lunghezza del valore long descritto da columnid specificato e, se specificato, il numero di sequenza in psetinfo- &gt; itagSequence. Se le dimensioni specificate sono maggiori del valore della colonna esistente, la colonna verrà estesa con 0. Se le dimensioni sono inferiori al valore della colonna esistente, il valore verrà troncato.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>UniqueMultiValues</td>
-<td>Questa opzione viene utilizzata per applicare che tutti i valori di una colonna multivalore sono distinti. Questa opzione consente di confrontare i dati della colonna di origine, senza alcuna trasformazione, con altri valori di colonna esistenti e viene restituito un errore se viene trovato un duplicato. Se viene specificata questa opzione, non è possibile specificare anche AppendLV, OverwriteLV e SizeLV.</td>
+<td>Questa opzione viene utilizzata per imporre che tutti i valori in una colonna multivalore siano distinti. Questa opzione confronta i dati della colonna di origine, senza alcuna trasformazione, con altri valori di colonna esistenti e viene restituito un errore se viene trovato un duplicato. Se viene specificata questa opzione, non è possibile specificare anche AppendLV, OverwriteLV e SizeLV.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>UniqueNormalizedMultiValues</td>
-<td>Questa opzione viene utilizzata per applicare che tutti i valori di una colonna multivalore sono distinti. Questa opzione Confronta la chiave di trasformazione normalizzata dei dati della colonna, ad altri valori di colonna esistenti trasformati in modo simile e viene restituito un errore se viene trovato un duplicato. Se viene specificata questa opzione, non è possibile specificare anche AppendLV, OverwriteLV e SizeLV.</td>
+<td>Questa opzione viene utilizzata per imporre che tutti i valori in una colonna multivalore siano distinti. Questa opzione confronta la trasformazione normalizzata della chiave dei dati della colonna con altri valori di colonna esistenti trasformati in modo analogo e viene restituito un errore se viene trovato un duplicato. Se viene specificata questa opzione, non è possibile specificare anche AppendLV, OverwriteLV e SizeLV.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>ZeroLength</td>
-<td>Questa opzione viene utilizzata per impostare un valore su una lunghezza pari a zero. In genere, un valore di colonna è impostato su NULL passando un cbMax di 0 (zero). Tuttavia, per alcuni tipi, ad esempio JET_coltyp. Text, un valore di colonna può essere 0 (zero) Length anziché NULL e questa opzione viene usata per distinguere tra NULL e 0 (zero) Length.</td>
+<td>Questa opzione viene usata per impostare un valore di lunghezza zero. In genere, un valore di colonna viene impostato su NULL passando un valore cbMax pari a 0 (zero). Tuttavia, per alcuni tipi, ad esempio JET_coltyp. Testo, un valore di colonna può avere una lunghezza pari a 0 (zero) anziché NULL e questa opzione viene usata per distinguere tra NULL e lunghezza 0 (zero).</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>IntrinsicLV</td>
-<td>Provare a archiviare le colonne con valore Long nel record, anche se superano le dimensioni di separazione predefinite.</td>
+<td>Provare a archiviare le colonne con valori lunghi nel record, anche se superano le dimensioni di separazione predefinite.</td>
 </tr>
 </tbody>
 </table>
@@ -144,7 +144,7 @@ public enum SetColumnGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
 
 [Compressed](./windows7grbits.compressed-field.md)
 

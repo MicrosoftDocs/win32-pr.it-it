@@ -11,18 +11,18 @@ api_name:
 - SubscriberID
 api_type:
 - Schema
-ms.openlocfilehash: ca098383aadd51e1e05d6b02bdd02a563eb0a09c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42290b0a80e85b2fdd1c794aced78571e939010b0e260bf1bdeba15f221cc103
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118065885"
 ---
 # <a name="subscriberid-mbnprofile-element"></a>Elemento SubscriberID (MBNProfile)
 
-L'elemento **SubscriberID (MBNProfile)** identifica l'identificatore univoco del profilo.
+**L'elemento SubscriberID (MBNProfile)** identifica l'identificatore univoco del profilo.
 
-Per una rete GSM questo deve contenere IMSI (International Mobile Subscriber Identity) della SIM e per i dispositivi CDMA deve contenere il numero minimo di identificazione mobile del dispositivo.
+Per una rete GSM deve contenere l'IMSI (International Mobile Subscriber Identity) della SIM e per i dispositivi CDMA deve contenere il MIN (Numero di identificazione mobile) del dispositivo.
 
 L'elemento è una stringa numerica con una lunghezza massima di 15 cifre.
 
@@ -34,7 +34,7 @@ L'elemento è obbligatorio.
  />
 ```
 
-L'elemento **SubscriberID** è definito dall'elemento [**MBNProfile**](schema-mbnprofile-element.md) .
+**L'elemento SubscriberID** è definito dall'elemento [**MBNProfile.**](schema-mbnprofile-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -42,7 +42,7 @@ L'elemento **SubscriberID** è definito dall'elemento [**MBNProfile**](schema-mb
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop \| app UWP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                         |
 
 

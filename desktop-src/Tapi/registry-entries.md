@@ -1,25 +1,25 @@
 ---
-description: I terminali collegabili sono classificati in superclassi terminal.
+description: I terminali collegabili sono classificati in superclassi del terminale.
 ms.assetid: 0ab2896e-3634-47f7-b1f4-e7d1ffcb3592
-title: Voci del registro di sistema (API di telefonia)
+title: Voci del Registro di sistema (API Di telefonia)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 035126f614e526f3b1557f5323d52b3bf6b2b12c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: afd6e4e4d91b65e3ef886fd4d2d44b571f4ac4696697aef8b8d8b2715e273e18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117761168"
 ---
-# <a name="registry-entries-telephony-api"></a>Voci del registro di sistema (API di telefonia)
+# <a name="registry-entries-telephony-api"></a>Voci del Registro di sistema (API Di telefonia)
 
-I terminali collegabili sono classificati in superclassi terminal. Ogni superclasse terminal include una voce nel registro di sistema con la seguente chiave:
+I terminali collegabili sono classificati in superclassi del terminale. Ogni superclasse terminale ha una voce nel Registro di sistema nella chiave seguente:
 
-**HKEY \_ \_Computer locale** \\ **software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **telefonia** \\ **TerminalManager**
+**HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Telefonia** \\ **TerminalManager**
 
-Sotto la chiave della superclasse terminale sono presenti voci per ogni terminale collegabile all'interno della superclasse terminal.
+Sotto la chiave Terminal Superclass (Superclasse terminale) sono presenti voci per ogni terminale collegabile all'interno della Superclasse terminale.
 
-La voce per ogni superclasse terminal è identificata da un CLSID della superclasse terminale. Si tratta di un identificatore univoco per una classe terminale. La classe terminal ha un attributo facoltativo: Name, che è un nome descrittivo per la classe terminal. Ogni terminale innestabile è identificato da una classe di terminali CLSID; ovvero un GUID. Gli attributi per il terminale collegabile sono archiviati in valori di chiave del terminale di collegamento. Gli attributi per un terminale collegabile sono i seguenti.
+La voce per ogni Superclasse terminale è identificata da un CLSID della superclasse terminale. Si tratta di un identificatore univoco per una classe terminale. La classe terminale ha un attributo facoltativo: name, ovvero un nome descrittivo per la classe terminale. Ogni terminale collegabile è identificato da una classe terminale CLSID. ad esempio un GUID. Gli attributi per il terminale collegabile vengono archiviati in valori di chiave del terminale collegabile. Gli attributi per un terminale collegabile sono i seguenti.
 
 
 
@@ -28,7 +28,7 @@ La voce per ogni superclasse terminal è identificata da un CLSID della supercla
 | Nome           | REG \_ SZ  | Nome descrittivo del terminale                                                            |
 | Company        | REG \_ SZ  | Nome azienda                                                                      |
 | Versione        | REG \_ SZ  | Informazioni sulla versione                                                               |
-| CLSID          | REG \_ SZ  | CLSID terminale (usato nel metodo COM [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) ) |
+| CLSID          | REG \_ SZ  | CLSID del terminale (usato nel metodo [**Com CoCreateInstance)**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) |
 | Indicazioni     | DWORD    | Direzione del terminale                                                                |
 | MediaTypes     | DWORD    | Tipi di supporti terminali supportati                                                    |
 
@@ -36,13 +36,13 @@ La voce per ogni superclasse terminal è identificata da un CLSID della supercla
 
  
 
-Per una classe terminal gli attributi sono i seguenti.
+Per una classe terminale, gli attributi sono i seguenti.
 
 
 
 | CLSID | Nome della chiave | Identificatore pubblico            |
 |-------|----------|------------------------------|
-| Nome  | REG \_ SZ  | Nome descrittivo della classe Terminal |
+| Nome  | REG \_ SZ  | Nome descrittivo della classe terminale |
 
 
 

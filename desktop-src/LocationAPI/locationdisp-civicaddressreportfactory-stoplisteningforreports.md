@@ -1,7 +1,7 @@
 ---
 description: Arresta gli eventi del report degli indirizzi civici.
 ms.assetid: 6efe26bc-842d-49fc-aec2-e0dfa7f1eb0a
-title: Metodo LocationDisp. CivicAddressReportFactory. StopListeningForReports (LocationApi. h)
+title: Metodo LocationDisp.CivicAddressReportFactory.StopListeningForReports (Locationapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - locationapi.h
-ms.openlocfilehash: 36c58e9db0edb66735dcbd58c8e1968cfa8b1fbd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0fc1bc3b207b6d1e25e247032e2549180cd50bdafcba4877520dc7ef5eb00649
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117993013"
 ---
-# <a name="locationdispcivicaddressreportfactorystoplisteningforreports-method"></a>LocationDisp. CivicAddressReportFactory. StopListeningForReports, metodo
+# <a name="locationdispcivicaddressreportfactorystoplisteningforreports-method"></a>Metodo LocationDisp.CivicAddressReportFactory.StopListeningForReports
 
-\[Il modello a oggetti dell'API location è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere al percorso da un sito Web, usare invece l' [API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare l'API [**Windows. Devices. Geolocation**](/uwp/api/Windows.Devices.Geolocation) .\]
+\[Il modello a oggetti dell'API Location è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere invece alla posizione da un sito Web, usare [l'API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare il [**Windows. API Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
 
 Arresta gli eventi del report degli indirizzi civici.
 
@@ -45,7 +45,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio di come usare questo metodo, vedere [ascolto di eventi di report di indirizzi civici](/uwp/api/Windows.Devices.Geolocation).
+Per un esempio di come usare questo metodo, vedere [Ascolto di eventi del report degli indirizzi civici](/uwp/api/Windows.Devices.Geolocation).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Per un esempio di come usare questo metodo, vedere [ascolto di eventi di report 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                               |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                |
-| Intestazione<br/>                   | <dl> <dt>LocationApi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Locationapi.h</dt> </dl> |
 
 
 

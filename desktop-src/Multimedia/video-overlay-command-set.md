@@ -1,47 +1,47 @@
 ---
-title: Set di comandi Video-Overlay
-description: Set di comandi Video-Overlay
+title: Video-Overlay set di comandi
+description: Video-Overlay set di comandi
 ms.assetid: e1f9da94-00c2-472e-a78d-1b65e656c8ea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1eabbc829012b36cfc0970912577a1ef1885f461
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2c97ce4b4997c9a5d504834018cf88ce7acd619e556d667bf770c78b038f53ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104328876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117800803"
 ---
-# <a name="video-overlay-command-set"></a>Set di comandi Video-Overlay
+# <a name="video-overlay-command-set"></a>Video-Overlay set di comandi
 
-I dispositivi overlay video supportano il set di comandi seguente.
+I dispositivi di sovrapposizione video supportano il set di comandi seguente.
 
 
 
-| Formato stringa                      | Form messaggio                              |
+| Formato stringa                      | Modulo del messaggio                              |
 |----------------------------------|-------------------------------------------|
-| [**interruzione**](break.md)           | [**\_interruzioni MCI**](mci-break.md)           |
-| [**funzionalità**](capability.md) | [**\_GETDEVCAPS MCI**](mci-getdevcaps.md) |
-| [**vicino**](close.md)           | [**\_chiusura MCI**](mci-close.md)           |
-| [**congelare**](freeze.md)         | [**\_blocco MCI**](mci-freeze.md)         |
-| [**informazioni**](info.md)             | [**\_informazioni MCI**](mci-info.md)             |
-| [**carico**](load.md)             | [**\_carico MCI**](mci-load.md)             |
-| [**aprire**](open.md)             | [**\_aperto MCI**](mci-open.md)             |
-| [**mettere**](put.md)               | [**\_put MCI**](mci-put.md)               |
-| [**salvare**](save.md)             | [**salvataggio di MCI \_**](mci-save.md)             |
-| [**set**](set.md)               | [**SET di MCI \_**](mci-set.md)               |
-| [**stato**](status.md)         | [**\_stato MCI**](mci-status.md)         |
-| [sysinfo](sysinfo.md)           | [**\_sysinfo MCI**](mci-sysinfo.md)       |
-| [**Sblocca**](unfreeze.md)     | [**\_Sblocca MCI**](mci-unfreeze.md)     |
-| [**dove**](where.md)           | [**MCI \_ dove**](mci-where.md)           |
-| [**finestra**](window.md)         | [**\_finestra MCI**](mci-window.md)         |
+| [**Pausa**](break.md)           | [**INTERRUZIONE \_ MCI**](mci-break.md)           |
+| [**Capacità**](capability.md) | [**MCI \_ GETDEVCAPS**](mci-getdevcaps.md) |
+| [**Vicino**](close.md)           | [**MCI \_ CLOSE**](mci-close.md)           |
+| [**Congelare**](freeze.md)         | [**BLOCCO \_ MCI**](mci-freeze.md)         |
+| [**Informazioni**](info.md)             | [**INFORMAZIONI \_ MCI**](mci-info.md)             |
+| [**Carico**](load.md)             | [**CARICO \_ MCI**](mci-load.md)             |
+| [**apre**](open.md)             | [**MCI \_ OPEN**](mci-open.md)             |
+| [**Mettere**](put.md)               | [**MCI \_ PUT**](mci-put.md)               |
+| [**Salvare**](save.md)             | [**MCI \_ SAVE**](mci-save.md)             |
+| [**Impostare**](set.md)               | [**MCI \_ SET**](mci-set.md)               |
+| [**Stato**](status.md)         | [**STATO \_ MCI**](mci-status.md)         |
+| [Sysinfo](sysinfo.md)           | [**MCI \_ SYSINFO**](mci-sysinfo.md)       |
+| [**Sbloccare**](unfreeze.md)     | [**MCI \_ UNFREEZE**](mci-unfreeze.md)     |
+| [**Dove**](where.md)           | [**MCI \_ WHERE**](mci-where.md)           |
+| [**Finestra**](window.md)         | [**FINESTRA \_ MCI**](mci-window.md)         |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

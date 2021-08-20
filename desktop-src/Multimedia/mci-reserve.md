@@ -1,9 +1,9 @@
 ---
-title: Comando MCI_RESERVE (mmsystem. h)
-description: Il \_ comando MCI Reserve alloca spazio su disco contiguo per l'area di lavoro dell'istanza del driver di dispositivo da usare con la registrazione successiva. I dispositivi digitali video riconoscono questo comando.
+title: MCI_RESERVE comando (Mmsystem.h)
+description: Il comando MCI RESERVE alloca spazio su disco contiguo per l'area di lavoro dell'istanza del driver di \_ dispositivo per l'uso con la registrazione successiva. I dispositivi video digitali riconoscono questo comando.
 ms.assetid: 01f0a377-0179-4b05-a642-af152a7a12ae
 keywords:
-- Comando MCI_RESERVE Windows Multimedia
+- MCI_RESERVE comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b89eb457b63012aa9ee5624efef95945258d42c8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0f21570d37fba9bc0c9595715715a9291aedd30650081edfa5d50f7264cf16c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117803462"
 ---
-# <a name="mci_reserve-command"></a>\_Comando di riserva MCI
+# <a name="mci_reserve-command"></a>Comando MCI \_ RESERVE
 
-Il \_ comando MCI Reserve alloca spazio su disco contiguo per l'area di lavoro dell'istanza del driver di dispositivo da usare con la registrazione successiva. I dispositivi digitali video riconoscono questo comando.
+Il comando MCI RESERVE alloca spazio su disco contiguo per l'area di lavoro dell'istanza del driver di \_ dispositivo per l'uso con la registrazione successiva. I dispositivi video digitali riconoscono questo comando.
 
-Per inviare questo comando, chiamare la funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con i parametri seguenti.
+Per inviare questo comando, chiamare [**la funzione mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con i parametri seguenti.
 
 
 ```C++
@@ -50,45 +50,45 @@ Identificatore del dispositivo MCI che deve ricevere il messaggio di comando.
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-\_Test MCI notifica, MCI \_ Wait o MCI \_ . Per informazioni su questi flag, vedere [i flag Wait, Notify e test](the-wait-notify-and-test-flags.md).
+MCI \_ NOTIFY, MCI \_ WAIT o MCI \_ TEST. Per informazioni su questi flag, vedere [Wait, Notify e Test Flags.](the-wait-notify-and-test-flags.md)
 
 </dd> <dt>
 
 <span id="lpReserve"></span><span id="lpreserve"></span><span id="LPRESERVE"></span>*lpReserve*
 </dt> <dd>
 
-Puntatore a una [**struttura \_ \_ \_ parametri della riserva DGV di MCI**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_reserve_parmsa) .
+Puntatore a [**una struttura MCI \_ DGV \_ RESERVE \_ PARMS.**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_reserve_parmsa)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero in caso di esito positivo o un errore.
+Restituisce zero in caso di esito positivo o un errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Se l'area di lavoro contiene dati non salvati, i dati andranno perduti. Se lo spazio su disco non è riservato prima della registrazione, il comando [MCI \_ record](mci-record.md) esegue una riserva implicita con parametri predefiniti specifici del dispositivo. In alcune implementazioni, Reserve non è obbligatorio e potrebbe essere ignorato dal driver di dispositivo. Il mantenimento dello spazio in modo esplicito garantisce un maggiore controllo sul momento in cui si verifica il ritardo nell'allocazione dei dischi, sulla quantità di spazio allocato e sulla posizione di allocazione dello spazio su disco. La quantità e la posizione dello spazio su disco già riservata per questa istanza del dispositivo possono essere modificate rilasciando la riserva di MCI \_ . Qualsiasi spazio su disco allocato e ancora inutilizzato non viene deallocato fino al salvataggio dei dati registrati o fino alla chiusura dell'istanza del driver di dispositivo.
+Se l'area di lavoro contiene dati non salvati, questi dati vengono persi. Se lo spazio su disco non è riservato prima della registrazione, il [comando MCI \_ RECORD](mci-record.md) esegue una riserva implicita con parametri predefiniti specifici del dispositivo. In alcune implementazioni, reserve non è obbligatorio e potrebbe essere ignorato dal driver di dispositivo. Riservando esplicitamente spazio è possibile controllare meglio quando si verifica il ritardo per l'allocazione del disco, la quantità di spazio allocata e la posizione in cui viene allocato lo spazio su disco. La quantità e la posizione dello spazio su disco già riservato per questa istanza del dispositivo possono essere modificate emettendo nuovamente MCI \_ RESERVE. Lo spazio su disco allocato e ancora inutilizzato non viene deallocato fino a quando non vengono salvati i dati registrati o fino alla chiusura dell'istanza del driver di dispositivo.
 
-Se il video è disattivato con il \_ flag MCI off del comando [MCI \_ sevideo](mci-setvideo.md) , lo spazio riservato non include alcun video. Se l'audio è disattivato con il \_ flag MCI off del comando [MCI \_ sefonica](mci-setaudio.md) , lo spazio riservato non include alcun audio. Se l'audio e il video sono spenti o se le dimensioni richieste sono pari a zero, nessuno spazio viene riservato e lo spazio riservato esistente viene deallocato.
+Se il video è disattivato con il flag MCI OFF del comando \_ [MCI \_ SETVIDEO,](mci-setvideo.md) lo spazio riservato non include alcun video. Se l'audio è disattivato con il flag MCI OFF del comando \_ [MCI \_ SETAUDIO,](mci-setaudio.md) lo spazio riservato non include audio. Se sia l'audio che il video sono disattivati o se le dimensioni richieste sono pari a zero, non viene riservato spazio e viene deallocato qualsiasi spazio riservato esistente.
 
-I flag aggiuntivi seguenti si applicano ai dispositivi digitali video:
+I flag aggiuntivi seguenti si applicano ai dispositivi video digitali:
 
 <dl> <dt>
 
-<span id="MCI_DGV_RESERVE_IN"></span><span id="mci_dgv_reserve_in"></span>\_riserva DGV \_ MCI \_ in
+<span id="MCI_DGV_RESERVE_IN"></span><span id="mci_dgv_reserve_in"></span>MCI \_ DGV \_ RESERVE \_ IN
 </dt> <dd>
 
-Il membro **lpstrPath** della struttura identificata da *lpReserve* contiene un indirizzo di un buffer contenente il percorso di un file temporaneo. Il buffer contiene solo l'unità e il percorso della directory del file utilizzato per contenere i dati registrati. il nome file viene specificato dal driver di dispositivo. Questo file temporaneo viene eliminato quando l'istanza del dispositivo viene chiusa, a meno che non venga salvata in modo esplicito. Se questo flag viene omesso, il driver di dispositivo specifica la posizione in cui è allocato lo spazio su disco.
+Il **membro lpstrPath** della struttura identificata da *lpReserve* contiene un indirizzo di un buffer contenente la posizione di un file temporaneo. Il buffer contiene solo l'unità e il percorso di directory del file usato per contenere i dati registrati. il nome file viene specificato dal driver di dispositivo. Questo file temporaneo viene eliminato alla chiusura dell'istanza del dispositivo, a meno che non venga salvato in modo esplicito. Se questo flag viene omesso, il driver di dispositivo specifica dove viene allocato lo spazio su disco.
 
 </dd> <dt>
 
-<span id="MCI_DGV_RESERVE_SIZE"></span><span id="mci_dgv_reserve_size"></span>\_ \_ dimensioni riserva DGV \_ MCI
+<span id="MCI_DGV_RESERVE_SIZE"></span><span id="mci_dgv_reserve_size"></span>MCI \_ DGV \_ RESERVE \_ SIZE
 </dt> <dd>
 
-Il membro **dwSize** della struttura identificata da *lpReserve* specifica la quantità approssimativa di spazio su disco da riservare nell'area di lavoro per la registrazione. Il valore viene specificato nel formato dell'ora corrente. La quantità di spazio su disco è stimata dal tempo richiesto e da quali formati di file e algoritmi video e audio e valori di qualità sono attivi. Se questo flag viene omesso, è possibile che il driver di dispositivo usi un valore predefinito che definisce.
+Il **membro dwSize** della struttura identificata da *lpReserve* specifica la quantità approssimativa di spazio su disco da riservare nell'area di lavoro per la registrazione. Il valore è specificato nel formato di ora corrente. La quantità di spazio su disco viene stimata a partire dal tempo richiesto e da quale formato di file, algoritmo video e audio e valori di qualità sono effettivi. Se questo flag viene omesso, il driver di dispositivo potrebbe usare un valore predefinito definito.
 
 </dd> </dl>
 
@@ -100,7 +100,7 @@ Il membro **dwSize** della struttura identificata da *lpReserve* specifica la qu
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -108,7 +108,7 @@ Il membro **dwSize** della struttura identificata da *lpReserve* specifica la qu
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Comandi MCI](mci-commands.md)

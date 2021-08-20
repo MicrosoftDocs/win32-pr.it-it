@@ -1,7 +1,7 @@
 ---
-description: Accoda il segmento multimediale specificato a IMFSourceBuffer.
+description: Aggiunge il segmento multimediale specificato a IMFSourceBuffer.
 ms.assetid: 824fa23d-57d9-411a-af8a-fb65dca124b2
-title: 'Metodo IMFSourceBuffer:: Append'
+title: Metodo IMFSourceBuffer::Append
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 00c9b6a0af2e48482311a8a0e1bc39dc4ce951aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef0e42f942a7d7e4477f52e152ef0f745f6a12b5812cba1a9bb1b0d95679ae7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118062848"
 ---
-# <a name="imfsourcebufferappend-method"></a>Metodo IMFSourceBuffer:: Append
+# <a name="imfsourcebufferappend-method"></a>Metodo IMFSourceBuffer::Append
 
-Accoda il segmento multimediale specificato a [**IMFSourceBuffer**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfsourcebuffer).
+Aggiunge il segmento multimediale specificato a [**IMFSourceBuffer**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfsourcebuffer).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,23 +40,23 @@ HRESULT Append(
 
 <dl> <dt>
 
-*pData* \[ in\]
+*pData* \[ Pollici\]
 </dt> <dd>
 
-Dati multimediali da accodare.
+Dati multimediali da aggiungere.
 
 </dd> <dt>
 
-*Len* \[ in\]
+*len* \[ Pollici\]
 </dt> <dd>
 
-Lunghezza dei dati multimediali archiviati in *pData*.
+Lunghezza dei dati multimediali archiviati in *pData.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,9 +64,9 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                 |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

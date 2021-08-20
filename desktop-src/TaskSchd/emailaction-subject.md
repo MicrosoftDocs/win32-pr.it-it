@@ -1,11 +1,11 @@
 ---
-title: Proprietà EmailAction. Subject
+title: Proprietà EmailAction.Subject
 description: Per lo scripting, ottiene o imposta l'oggetto del messaggio di posta elettronica.
 ms.assetid: ea398af1-9ae6-4bcf-9618-bb840b15127e
 keywords:
-- Proprietà Subject Utilità di pianificazione
-- Utilità di pianificazione proprietà Subject, oggetto EmailAction
-- Oggetto EmailAction Utilità di pianificazione, proprietà Subject
+- Proprietà subject Utilità di pianificazione
+- Proprietà Subject Utilità di pianificazione , oggetto EmailAction
+- Oggetto EmailAction Utilità di pianificazione proprietà , Subject
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6236ded39993c4cb2499e64ba2e31959df91449e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7474fa4b7a6de59fd59a98c27a4877ab10c1acb6beac3c1682fccd05702aa275
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117943788"
 ---
-# <a name="emailactionsubject-property"></a>Proprietà EmailAction. Subject
+# <a name="emailactionsubject-property"></a>Proprietà EmailAction.Subject
 
-\[Questo oggetto non è più supportato. Per una soluzione alternativa, usare IExecAction con il cmdlet [**Send-MailMessage**](/powershell/module/microsoft.powershell.utility/send-mailmessage?view=powershell-7&preserve-view=true) di PowerShell.\]
+\[Questo oggetto non è più supportato. Usare IExecAction con il cmdlet [**Send-MailMessage**](/powershell/module/microsoft.powershell.utility/send-mailmessage?view=powershell-7&preserve-view=true) di PowerShell come soluzione alternativa.\]
 
 Per lo scripting, ottiene o imposta l'oggetto del messaggio di posta elettronica.
 
@@ -46,7 +46,7 @@ Oggetto del messaggio di posta elettronica.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si imposta il valore di questa proprietà, il valore può essere un testo recuperato da un file Resource. dll. Una stringa specializzata viene utilizzata per fare riferimento al testo dal file di risorse. Il formato della stringa è $ (@ \[ dll \] , \[ resourceId \] ) in cui \[ dll \] è il percorso del file con estensione dll che contiene la risorsa e \[ resourceId \] è l'identificatore per il testo della risorsa. Se ad esempio si imposta il valore di questa proprietà su $ (@% SystemRoot% \\ system32 \\ResourceName.dll,-101), la proprietà verrà impostata sul valore del testo della risorsa con un identificatore uguale a-101 nel file% SystemRoot% \\ system32 \\ResourceName.dll.
+Quando si imposta il valore di questa proprietà, il valore può essere testo recuperato da una risorsa .dll file. Viene usata una stringa specializzata per fare riferimento al testo del file di risorse. Il formato della stringa è $(@ Dll , ResourceID ) dove Dll è il percorso del file .dll che contiene la risorsa e ResourceID è l'identificatore per il testo \[ \] della \[ \] \[ \] \[ \] risorsa. Ad esempio, l'impostazione di questo valore della proprietà su $(@ %SystemRoot% System32ResourceName.dll, -101) imposta la proprietà sul valore del testo della risorsa con un identificatore uguale a \\ \\ -101 nel file diResourceName.dll %SystemRoot% \\ System32. \\
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,11 +54,11 @@ Quando si imposta il valore di questa proprietà, il valore può essere un testo
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                    |
 | Fine del supporto server<br/>    | Windows Server 2008 R2<br/>                                                       |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

@@ -1,50 +1,50 @@
 ---
-title: Attributo size (VMLFrame)
-description: Attributo size (VMLFrame)
+title: Attributo Size (VMLFrame)
+description: Attributo Size (VMLFrame)
 ms.assetid: 95d953fa-cbe2-4ebc-9b23-408347232fee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 779b0401c414a3536e22bdb7328b2b08b2fbcf45
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c32d496bc40b5b84b7a8a16bf6b84a2926010d56dcc311659dd63300363a7067
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104046808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117754126"
 ---
-# <a name="size-attribute-vmlframe"></a>Attributo size (VMLFrame)
+# <a name="size-attribute-vmlframe"></a>Attributo Size (VMLFrame)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Definisce le dimensioni dell'area di visualizzazione del frame. Proprietà di lettura/scrittura. **VgVector2D**.
+Definisce le dimensioni dell'area di ritaglio del fotogramma. Proprietà di lettura/scrittura. **VgVector2D**.
 
 **Si applica a**
 
 [VMLFrame](msdn-online-vml-vmlframe-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* size = " *Expression* " >
+<v: *element* size=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . size = "*Expression*"
+*element* .size="*expression*"
 
-*espressione* = *element*. size
+*expression* = *elemento*.size
 
 **Osservazioni:**
 
-Il valore predefinito è 0,0. Si noti che la **dimensione** funziona solo se il [clip](msdn-online-vml-clip-attribute.md) è **true**. In questo attributo, le dimensioni sono definite come larghezza e altezza del frame.
+Il valore predefinito è 0,0. Si noti **che Size** funziona solo se [Clip](msdn-online-vml-clip-attribute.md) è **True.** In questo attributo le dimensioni sono definite come larghezza e altezza del frame.
 
-*Attributo standard la*
+*Attributo standard VML*
 
 **Esempio**
 
-Le dimensioni dell'area di ridimensionamento saranno 50pt, 50pt.
+Le dimensioni dell'area di ritaglio saranno di 50 pt, 50pt.
 
 
 ```HTML
@@ -57,6 +57,6 @@ Le dimensioni dell'area di ridimensionamento saranno 50pt, 50pt.
 
 
 
- 
+ 
 
- 
+ 

@@ -1,24 +1,24 @@
 ---
-title: Attributo Direction la
-description: Attributo Direction la
+title: Attributo di direzione VML
+description: Attributo di direzione VML
 ms.assetid: bf6e0169-f0d4-4dfb-b59e-b5601049fd7a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a5bd45d4baaed100537207a02fc4308b964dfa2
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2dd7b3f49879f91900682c2e042e500396db7b2d056746037e92f4d590ee1dd7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103728831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118124847"
 ---
-# <a name="vml-direction-attribute"></a>Attributo Direction la
+# <a name="vml-direction-attribute"></a>Attributo di direzione VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Definisce la direzione del testo nella casella di testo. Proprietà di lettura/scrittura. **Stringa**.
 
@@ -26,9 +26,9 @@ Definisce la direzione del testo nella casella di testo. Proprietà di lettura/s
 
 [TextBox](msdn-online-vml-textbox-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* Style = "Direction: *Expression* " >
+<v: *element* style="direction: *expression* ">
 
 **Osservazioni:**
 
@@ -38,16 +38,16 @@ I possibili valori sono:
 
 | Valore   | Descrizione                                                                                |
 |---------|--------------------------------------------------------------------------------------------|
-| LTR     | Il testo viene visualizzato da sinistra a destra. Valore predefinito.                                                  |
-| RTL     | Il testo viene visualizzato da destra a sinistra.                                                           |
+| Ltr     | Il testo viene visualizzato da sinistra a destra. Valore predefinito.                                                  |
+| Rtl     | Il testo viene visualizzato da destra a sinistra.                                                           |
 | contesto | Indica che il tag **MSO-Direction-Alt** verrà scritto con il valore "context". |
 
 
 
- 
+ 
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
- 
+ 
 
- 
+ 

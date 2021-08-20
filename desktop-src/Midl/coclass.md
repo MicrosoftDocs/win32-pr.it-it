@@ -1,9 +1,9 @@
 ---
 title: coclass (attributo)
-description: L'istruzione coclass fornisce un elenco delle interfacce supportate per un oggetto Component.
+description: L'istruzione coclass fornisce un elenco delle interfacce supportate per un oggetto componente.
 ms.assetid: 2c636327-ad18-4087-b495-d1aa84a07f48
 keywords:
-- attributo coclass MIDL
+- Attributo coclass MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ba95b38675869637c679a2409a82fb812709ec8
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: cbd64ed5565797444b58ea71c0b7daf6c083c4810b0876a8b990a7dd281a84c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104398960"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117807307"
 ---
 # <a name="coclass-attribute"></a>coclass (attributo)
 
-L'istruzione **coclass** fornisce un elenco delle interfacce supportate per un oggetto Component.
+**L'istruzione coclass** fornisce un elenco delle interfacce supportate per un oggetto componente.
 
 ``` syntax
 [
@@ -43,37 +43,37 @@ coclass classname
 
 <dl> <dt>
 
-*coclass-Attribute-List* 
+*coclass-attribute-list* 
 </dt> <dd>
 
-L' **\[** attributo [**UUID**](uuid.md) **\]** è obbligatorio in una **coclasse**. Si tratta dello stesso **\[ UUID \]** registrato come CLSID nel database di registrazione del sistema. Gli **\[** attributi [**helpstring**](helpstring.md) **\]** , **\[** [**HelpContext**](helpcontext.md) **\]** , **\[** [**licensed**](licensed.md) **\]** , **\[** [**Version**](version.md) **\]** , **\[** [**Control**](control.md) **\]** , **\[** [**Hidden**](hidden.md) **\]** e **\[** [**appobject**](appobject.md) **\]** sono accettati, ma non necessari, prima di una definizione di **coclasse** .
+**\[** [**L'attributo uuid**](uuid.md) **\]** è obbligatorio in una **coclasse**. Si tratta dello stesso **\[ uuid \]** registrato come CLSID nel database di registrazione del sistema. Gli attributi helpstring , helpcontext , licensed , version , control , hidden e appobject vengono accettati, ma non **\[** [](helpstring.md) **\]** **\[** [](helpcontext.md) **\]** **\[** [](licensed.md) **\]** **\[** [](version.md) **\]** **\[** [](control.md) **\]** **\[** [](hidden.md) **\]** **\[** [](appobject.md) **\]** obbligatori, prima di una **definizione di coclasse.**
 
 </dd> <dt>
 
-*ClassName* 
+*Classname* 
 </dt> <dd>
 
 Nome con cui l'oggetto comune è noto nella libreria dei tipi.
 
 </dd> <dt>
 
-*Interface-attributi* 
+*attributi di interfaccia* 
 </dt> <dd>
 
-Attributi facoltativi per l'interfaccia o l'interfaccia dispatch. Gli **\[** attributi [**source**](source.md) **\]** , **\[** [**default**](default.md) **\]** e **\[** [**Restricted**](restricted.md) **\]** sono accettati in un'interfaccia o in un'interfaccia dispatch all'interno di una **coclasse**.
+Attributi facoltativi per l'interfaccia o l'interfaccia dispatch. Gli **\[** [**attributi di**](source.md) **\]** origine , **\[** [**predefinito**](default.md) **\]** e **\[** [**con**](restricted.md) restrizioni **\]** vengono accettati in un'interfaccia o interfaccia dispatch all'interno di una **coclasse**.
 
 </dd> <dt>
 
-*NomeInterfaccia* 
+*interfacename* 
 </dt> <dd>
 
-Interfaccia dichiarata con la parola chiave [**Interface**](interface.md) o interfaccia dispatch dichiarata con la parola chiave [**Dispatch**](dispinterface.md) .
+Un'interfaccia dichiarata con la [**parola chiave interface**](interface.md) o un'interfaccia dispatch dichiarata con la parola chiave [**dispinterface.**](dispinterface.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Il Component Object Model Microsoft definisce una classe come implementazione che consente **QueryInterface** tra un set di interfacce.
+Microsoft Component Object Model definisce una classe come un'implementazione che consente **QueryInterface** tra un set di interfacce.
 
 ## <a name="examples"></a>Esempi
 
@@ -107,10 +107,10 @@ coclass mycoclass
 [**appobject**](appobject.md)
 </dt> <dt>
 
-[**controllo**](control.md)
+[**Controllo**](control.md)
 </dt> <dt>
 
-[**predefinita**](default.md)
+[**Predefinito**](default.md)
 </dt> <dt>
 
 [**dispinterface**](dispinterface.md)
@@ -119,7 +119,7 @@ coclass mycoclass
 [Generazione di una libreria dei tipi con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[Esempio di file di FAD](/previous-versions/windows/desktop/automat/odl-file-example)
+[Esempio di file ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
 [**helpstring**](helpstring.md)
@@ -128,33 +128,33 @@ coclass mycoclass
 [**helpcontext**](helpcontext.md)
 </dt> <dt>
 
-[**nascosto**](hidden.md)
+[**Nascosto**](hidden.md)
 </dt> <dt>
 
-[**interfaccia**](interface.md)
+[**Interfaccia**](interface.md)
 </dt> <dt>
 
 [**licensed**](licensed.md)
 </dt> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[**limitato**](restricted.md)
+[**Limitato**](restricted.md)
 </dt> <dt>
 
-[**origine**](source.md)
+[**fonte**](source.md)
 </dt> <dt>
 
 [TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> <dt>
 
-[**uuid**](uuid.md)
+[**Uuid**](uuid.md)
 </dt> <dt>
 
 [**Versione**](version.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

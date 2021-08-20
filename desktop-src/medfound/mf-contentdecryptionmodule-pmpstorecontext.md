@@ -1,18 +1,18 @@
 ---
-description: Specifica una stringa di contesto usata dalle implementazioni del modulo di decrittografia del contenuto (CDM) che usano MediaProtectionPMPServer.
+description: Specifica una stringa di contesto utilizzata dalle implementazioni cdM (Content Decryption Module) che usano MediaProtectionPMPServer.
 title: MF_CONTENTDECRYPTIONMODULE_PMPSTORECONTEXT (mfcontentdecryptionmodule.h)
 ms.topic: reference
 ms.date: 01/31/2020
-ms.openlocfilehash: 49e12aeba9cce988c58fca94c33e7b4179530a56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e82bfb5bcf833957fa07ec5aa5c6dacdab346905692ab7cfcf6cbb18b940817b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118060715"
 ---
-# <a name="mf_contentdecryptionmodule_pmpstorecontext-property"></a>\_ \_ Proprietà PMPSTORECONTEXT di MF CONTENTDECRYPTIONMODULE
+# <a name="mf_contentdecryptionmodule_pmpstorecontext-property"></a>Proprietà MF \_ CONTENTDECRYPTIONMODULE \_ PMPSTORECONTEXT
 
-Specifica una stringa di contesto usata dalle implementazioni del modulo di decrittografia del contenuto (CDM) che usano [MediaProtectionPMPServer](/uwp/api/windows.media.protection.mediaprotectionpmpserver).
+Specifica una stringa di contesto utilizzata dalle implementazioni di Content Decryption Module (CDM) che usano [MediaProtectionPMPServer](/uwp/api/windows.media.protection.mediaprotectionpmpserver).
 
 
 ## <a name="data-type"></a>Tipo di dati
@@ -25,14 +25,14 @@ Specifica una stringa di contesto usata dalle implementazioni del modulo di decr
 
 ## <a name="property-value"></a>Valore proprietà
 
-Stringa di contesto utilizzata dalle implementazioni del modulo di decrittografia del contenuto (CDM).
+Stringa di contesto utilizzata dalle implementazioni di Content Decryption Module (CDM).
 
 ## <a name="remarks"></a>Commenti
 
-Il responsabile dell'implementazione CDM deve cercare questo valore e passare il valore al [Costruttore MediaProtectionPMPServer](/uwp/api/windows.media.protection.mediaprotectionpmpserver.-ctor) usando il nome della proprietà "Windows. Media. Protection. PMPStoreContext".
+L'implementatore CDM deve cercare questo valore e passare il valore al costruttore [MediaProtectionPMPServer](/uwp/api/windows.media.protection.mediaprotectionpmpserver.-ctor) usando il nome della proprietà "Windows. Media.Protection.PMPStoreContext".
 
 
-Le app non devono creare questa proprietà quando viene chiamato [IMFContentDecryptionModuleAccess:: CreateContentDecryptionModule](/windows/win32/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmoduleaccess-createcontentdecryptionmodule).
+Le app non devono creare questa proprietà quando chiamano [IMFContentDecryptionModuleAccess::CreateContentDecryptionModule](/windows/win32/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmoduleaccess-createcontentdecryptionmodule).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -40,14 +40,14 @@ Le app non devono creare questa proprietà quando viene chiamato [IMFContentDecr
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Aggiornamento di Windows 10 aprile 2020<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>mfcontentdecryptionmodule. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10 Aggiornamento di aprile 2020<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>mfcontentdecryptionmodule.h</dt> </dl> |
 
 
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Proprietà Media Foundation](media-foundation-properties.md)
+- [Media Foundation proprietà](media-foundation-properties.md)
 - [MediaProtectionPMPServer](/uwp/api/windows.media.protection.mediaprotectionpmpserver)
 
 

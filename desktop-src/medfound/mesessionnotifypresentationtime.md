@@ -1,29 +1,29 @@
 ---
 description: Generato dalla sessione multimediale all'avvio di una nuova presentazione. Questo evento indica quando verrà avviata la presentazione e l'offset tra l'ora di presentazione e l'ora di origine.
 ms.assetid: 67c7d5f3-ffaf-4359-a59c-bb26b992b6cd
-title: Evento MESessionNotifyPresentationTime (Mfobjects. h)
+title: Evento MESessionNotifyPresentationTime (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7b0cd8811d98094ab58ddcf844ec73e1470d120
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d10c1b1e443bd2c6a56a926d5355de5606bf2f2e25618269f8d4ed735538d92f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118061765"
 ---
-# <a name="mesessionnotifypresentationtime-event"></a>Evento MESessionNotifyPresentationTime
+# <a name="mesessionnotifypresentationtime-event"></a>EVENTO MESessionNotifyPresentationTime
 
 Generato dalla sessione multimediale all'avvio di una nuova presentazione. Questo evento indica quando verrà avviata la presentazione e l'offset tra l'ora di presentazione e l'ora di origine.
 
 ## <a name="event-values"></a>Valori dell'evento
 
-I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
+I valori possibili recuperati [**da IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
 
 
 
 | VARTYPE              | Descrizione                           |
 |----------------------|---------------------------------------|
-| VT \_ vuoto<br/> | Nessun dato dell'evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Nessun dato dell'evento.<br/> <br/> |
 
 
 
@@ -35,9 +35,9 @@ Per questo evento sono definiti gli attributi seguenti.
 
 | Attributo                                                                                                                   | Descrizione                                                                                                     |
 |-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [**\_ora di \_ presentazione di inizio evento \_ MF \_**](mf-event-start-presentation-time-attribute.md)<br/>                       | Ora di inizio della presentazione.<br/> <br/>                                                      |
-| [**\_ \_ \_ offset ora presentazione evento \_ MF**](mf-event-presentation-time-offset-attribute.md)<br/>                     | Offset tra l'ora di presentazione e i timestamp dell'origine multimediale.<br/> <br/>                 |
-| [**\_ \_ \_ \_ ora di presentazione dell'avvio \_ dell'evento MF nell' \_ output**](mf-event-start-presentation-time-at-output-attribute.md)<br/> | Tempo di presentazione quando i sink del supporto eseguiranno il rendering del primo campione della nuova topologia.<br/> <br/> |
+| [**ORA DI INIZIO \_ PRESENTAZIONE \_ \_ DELL'EVENTO \_ MF**](mf-event-start-presentation-time-attribute.md)<br/>                       | Ora di inizio della presentazione.<br/> <br/>                                                      |
+| [**OFFSET \_ DELL'ORA \_ DI PRESENTAZIONE \_ DELL'EVENTO \_ MF**](mf-event-presentation-time-offset-attribute.md)<br/>                     | Offset tra l'ora di presentazione e i timestamp dell'origine multimediale.<br/> <br/>                 |
+| [**ORA DI INIZIO PRESENTAZIONE DELL'EVENTO MF \_ \_ \_ \_ \_ \_ ALL'OUTPUT**](mf-event-start-presentation-time-at-output-attribute.md)<br/> | Ora di presentazione in cui i sink multimediali eseguiranno il rendering del primo esempio della nuova topologia.<br/> <br/> |
 
 
 
@@ -47,9 +47,9 @@ Per questo evento sono definiti gli attributi seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 
 
@@ -60,7 +60,7 @@ Per questo evento sono definiti gli attributi seguenti.
 [**IMFMediaSession**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasession)
 </dt> <dt>
 
-[Eventi Media Foundation](media-foundation-events.md)
+[Media Foundation eventi](media-foundation-events.md)
 </dt> </dl>
 
  

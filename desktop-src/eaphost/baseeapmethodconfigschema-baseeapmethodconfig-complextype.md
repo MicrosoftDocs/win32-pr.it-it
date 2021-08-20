@@ -3,7 +3,7 @@ title: Tipo complesso BaseEapMethodConfig
 description: Informazioni sul tipo complesso BaseEapMethodConfig. Questo tipo è un elemento segnaposto per la configurazione del metodo.
 ms.assetid: 9aafd6ad-2342-4882-99d3-2f2e6c3d67b5
 keywords:
-- BaseEapMethodConfig di tipo complesso EAPHost
+- Tipo complesso BaseEapMethodConfig EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ac7d628b554696fffd254a45b9b1021d68e2a55e
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 8decb1746391c1337440eb475a8a8face3f8b7466b73015db48e3991841a3c43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104399740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086776"
 ---
 # <a name="baseeapmethodconfig-complex-type"></a>Tipo complesso BaseEapMethodConfig
 
-Il tipo complesso **BaseEapMethodConfig** è un elemento segnaposto per la configurazione del metodo.
+Il **tipo complesso BaseEapMethodConfig** è un elemento segnaposto per la configurazione del metodo.
 
 ``` syntax
 <xs:complexType name="BaseEapMethodConfig">
@@ -40,16 +40,16 @@ Il tipo complesso **BaseEapMethodConfig** è un elemento segnaposto per la confi
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo EAP esegue la convalida dello schema sul contenuto dell'elemento **BaseEapMethodConfig** .
+Il metodo EAP esegue la convalida dello schema sul contenuto **dell'elemento BaseEapMethodConfig.**
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

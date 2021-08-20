@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Metodo Session. ReleaseResource'
-title: Session. ReleaseResource, metodo
+description: 'Altre informazioni su: Metodo Session.ReleaseResource'
+title: Metodo Session.ReleaseResource
 TOCTitle: 'ReleaseResource method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Session.ReleaseResource
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.session.releaseresource(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e1ed4392deaa285c4446f07205c0d7cc688b8940
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: efd2152b16a9148d9a33df6cbfaa53a0f80234ab437315581d928ae56dda1402
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117890659"
 ---
-# <a name="sessionreleaseresource-method"></a>Session. ReleaseResource, metodo
+# <a name="sessionreleaseresource-method"></a>Metodo Session.ReleaseResource
 
-Liberare il JET_SESID sottostante.
+Liberare l'oggetto JET_SESID.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ protected override void ReleaseResource()
 
 [Membri della sessione](./session-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

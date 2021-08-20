@@ -1,7 +1,7 @@
 ---
 description: Contiene il nome del verbo.
 ms.assetid: d18fddac-eb51-4031-a572-1bfef2f757a9
-title: Proprietà FolderItemVerb.Name (shldisp. h)
+title: FolderItemVerb.Name proprietà (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 5d352f02486f1d7304d4c474aa836401bfef635e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec48bf4d555a8352383c0bfb8a2216c211b2f1b1ddaf25ae2910f4a647205e35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104976999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118049928"
 ---
-# <a name="folderitemverbname-property"></a>Proprietà FolderItemVerb.Name
+# <a name="folderitemverbname-property"></a>FolderItemVerb.Name proprietà
 
 Contiene il nome del verbo.
 
@@ -37,13 +37,13 @@ strName = FolderItemVerb.Name
 
 ## <a name="property-value"></a>Valore proprietà
 
-Variabile di tipo [**BSTR**](/previous-versions/windows/desktop/automat/bstr) che riceve la proprietà Name.
+Variabile di tipo [**BSTR che**](/previous-versions/windows/desktop/automat/bstr) riceve la proprietà Name.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **Name** per recuperare il nome del primo elemento nella raccolta di verbi a cui risponde la cartella del programma dell'utente. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+Nell'esempio seguente **viene utilizzato Name** per recuperare il nome del primo elemento nella raccolta di verbi a cui risponde la cartella Program dell'utente. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -74,7 +74,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -147,11 +147,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

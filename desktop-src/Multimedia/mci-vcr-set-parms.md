@@ -1,9 +1,9 @@
 ---
-title: Struttura MCI_VCR_SET_PARMS (VCR. h)
-description: La \_ struttura parametri di MCI VCR \_ set contiene i \_ parametri per il \_ comando set MCI per i registratori di nastri video.
+title: MCI_VCR_SET_PARMS struttura (Vcr.h)
+description: La struttura MCI VCR SET PARMS contiene i parametri per \_ \_ il comando \_ MCI SET per i \_ registratori di videocassette.
 ms.assetid: f55515f5-14f6-47e4-8be2-4524975fc950
 keywords:
-- Struttura MCI_VCR_SET_PARMS di Windows Multimedia
+- MCI_VCR_SET_PARMS struttura Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0066adf80446843fe5a3e1e3defbb2109484cbb6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9fe32f93500ae4c294bad372868e9f7818c672824611bcbc29c3315eb75a9742
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117802986"
 ---
-# <a name="mci_vcr_set_parms-structure"></a>\_ \_ Struttura parametri set VCR MCI \_
+# <a name="mci_vcr_set_parms-structure"></a>Struttura MCI \_ VCR \_ SET \_ PARMS
 
-La struttura **parametri di MCI \_ VCR \_ set \_** contiene i parametri per il comando [**\_ set MCI**](mci-set.md) per i registratori di nastri video.
+La **struttura MCI \_ VCR SET \_ \_ PARMS** contiene i parametri per il [**comando MCI \_ SET**](mci-set.md) per i registratori di videocassette.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,7 +57,7 @@ typedef struct tagMCI_VCR_SET_PARMS {
 **dwCallback**
 </dt> <dd>
 
-La parola di ordine inferiore specifica un handle di finestra utilizzato per il \_ flag di notifica MCI.
+La parola di ordine basso specifica un handle di finestra usato per il flag MCI \_ NOTIFY.
 
 </dd> <dt>
 
@@ -78,14 +78,14 @@ Non usato.
 **dwTimeMode**
 </dt> <dd>
 
-Costante che specifica l'origine dell'intervallo utilizzata dal dispositivo. L'origine dell'intervallo è un timecode registrato in un nastro o i contatori nel dispositivo che rilevano lo spostamento del nastro.
+Costante che specifica l'origine di temporizzazione usata dal dispositivo. L'origine di temporizzazione è un codice di tempo registrato nella videotape o i contatori nel dispositivo che inserivano lo spostamento della videotape.
 
 </dd> <dt>
 
 **dwRecordFormat**
 </dt> <dd>
 
-Velocità di registrazione.
+Frequenza di registrazione.
 
 </dd> <dt>
 
@@ -99,28 +99,28 @@ Formato di un nuovo valore di ora del contatore.
 **dwIndex**
 </dt> <dd>
 
-Contenuto della visualizzazione sullo schermo.
+Contenuto della visualizzazione su schermo.
 
 </dd> <dt>
 
 **dwTracking**
 </dt> <dd>
 
-Regolazione della velocità utilizzata per tenere traccia della frequenza di riproduzione dei VCR.
+Regolazione della velocità usata per tenere traccia della velocità di riproduzione del videoregistratore.
 
 </dd> <dt>
 
 **dwSpeed**
 </dt> <dd>
 
-Velocità di riproduzione usata dal dispositivo come numero intero. La velocità di riproduzione normale è 1000, la velocità doppia è 2000 e la metà della velocità è 500.
+Velocità di riproduzione usata dal dispositivo come numero intero. La velocità di riproduzione normale è 1000, la doppia velocità è 2000 e la metà velocità è 500.
 
 </dd> <dt>
 
 **dwLength**
 </dt> <dd>
 
-Lunghezza del nastro quando la lunghezza non è rilevabile dal dispositivo.
+Lunghezza della videotape quando la lunghezza non è rilevabile dal dispositivo.
 
 </dd> <dt>
 
@@ -134,34 +134,34 @@ Nuovo valore del contatore.
 **dwClock**
 </dt> <dd>
 
-Nuova ora di clock.
+Nuova ora dell'orologio.
 
 </dd> <dt>
 
 **dwPauseTimeout**
 </dt> <dd>
 
-Nuovo valore di timeout per il comando Sospendi.
+Nuovo valore di timeout per il comando pause.
 
 </dd> <dt>
 
 **dwPrerollDuration**
 </dt> <dd>
 
-Lunghezza del nastro necessaria per stabilizzare l'output del VCR.
+Lunghezza della videotape necessaria per stabilizzare l'output del videoregistratore.
 
 </dd> <dt>
 
 **dwPostrollDuration**
 </dt> <dd>
 
-Lunghezza del nastro necessaria per bloccare il trasporto VCR quando viene emesso un comando [**MCI \_ Stop**](mci-stop.md) o [**MCI \_ pause**](mci-pause.md) .
+Lunghezza della videotape necessaria per bloccare il trasporto del videoregistratore quando viene eseguito un comando [**MCI \_ STOP**](mci-stop.md) o [**MCI \_ PAUSE.**](mci-pause.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
+Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel *parametro fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -171,7 +171,7 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VCR. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vcr.h</dt> </dl> |
 
 
 
@@ -179,19 +179,19 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Strutture MCI**](mci-structures.md)
 </dt> <dt>
 
-[**\_pausa MCI**](mci-pause.md)
+[**MCI \_ PAUSE**](mci-pause.md)
 </dt> <dt>
 
-[**SET di MCI \_**](mci-set.md)
+[**MCI \_ SET**](mci-set.md)
 </dt> <dt>
 
-[**\_arresto MCI**](mci-stop.md)
+[**ARRESTO \_ MCI**](mci-stop.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

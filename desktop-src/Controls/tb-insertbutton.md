@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_INSERTBUTTON (COMmctrl. h)
+title: TB_INSERTBUTTON messaggio (Commctrl.h)
 description: Inserisce un pulsante in una barra degli strumenti.
 ms.assetid: 6be27817-5d86-4649-bd63-173845197763
 keywords:
-- Controlli di Windows Message TB_INSERTBUTTON
+- TB_INSERTBUTTON dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e08eed328a99d4a8927a7e09084bf122f2e4e84
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 909a4e039450e001757cd054cf27a15d24af392d6a55841c2857e2312252145c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829652"
 ---
-# <a name="tb_insertbutton-message"></a>TB \_ INSERTBUTTON messaggio
+# <a name="tb_insertbutton-message"></a>Messaggio \_ INSERTBUTTON TB
 
 Inserisce un pulsante in una barra degli strumenti.
 
@@ -34,20 +34,20 @@ Inserisce un pulsante in una barra degli strumenti.
 *wParam* 
 </dt> <dd>
 
-Indice in base zero di un pulsante. Il messaggio inserisce il pulsante nuovo a sinistra di questo pulsante.
+Indice in base zero di un pulsante. Il messaggio inserisce il nuovo pulsante a sinistra di questo pulsante.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) contenente informazioni sul pulsante da inserire.
+Puntatore a [**una struttura TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) contenente informazioni sul pulsante da inserire.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Restituisce **true** se l'operazione ha esito positivo o **false** in caso contr
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **TB \_ INSERTBUTTONW** (Unicode) e **TB \_ INSERTBUTTONA** (ANSI)<br/>           |
 
 

@@ -1,21 +1,21 @@
 ---
-title: Informazioni di riferimento sull'archiviazione strutturata
-description: In questa sezione viene fornito materiale di riferimento per gli elementi di programmazione dell'archiviazione strutturata.
+title: Informazioni di Archiviazione strutturate
+description: Questa sezione fornisce materiale di riferimento per gli elementi di programmazione di Structured Archiviazione.
 ms.assetid: ecdc8e7c-8d7e-484b-bec8-200fec49fb2d
 keywords:
-- Structured Storage Strctd STG, riferimento
+- Struttura Archiviazione Strctd Stg , riferimento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 329d18712f4da9a821ed6929a43eb68c2549bf48
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0447d6ae04633be706edfa298d821988d812c363ea8a28d79776a3d0c01a37b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103710015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117959793"
 ---
-# <a name="structured-storage-reference"></a>Informazioni di riferimento sull'archiviazione strutturata
+# <a name="structured-storage-reference"></a>Informazioni di Archiviazione strutturate
 
-In questa sezione viene fornito materiale di riferimento per gli elementi di programmazione dell'archiviazione strutturata.
+Questa sezione fornisce materiale di riferimento per gli elementi di programmazione di Structured Archiviazione.
 
 -   [Interfacce](interfaces.md)
 -   [Funzioni](functions.md)
@@ -24,9 +24,9 @@ In questa sezione viene fornito materiale di riferimento per gli elementi di pro
 -   [Costanti](constants.md)
 -   [Esempi](samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

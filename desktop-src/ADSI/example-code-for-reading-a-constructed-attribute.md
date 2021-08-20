@@ -1,22 +1,22 @@
 ---
 title: Codice di esempio per la lettura di un attributo costruito
-description: Questo argomento contiene esempi di codice VB e C++ che illustrano come leggere un attributo costruito.
+description: Questo argomento contiene esempi VB codice C++ che illustrano come leggere un attributo costruito.
 ms.assetid: c4acc848-f89e-4cd1-905a-2ed20443b03c
 ms.tgt_platform: multiple
 keywords:
 - Codice di esempio per la lettura di un attributo costruito ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb69bf99807d87e711d0d54d2c5b228d304149e5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bcd51e5649ec0b2b9e654eb160c4fe8708f4743fbdd1dfe55e85231c7a451e2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117840011"
 ---
 # <a name="example-code-for-reading-a-constructed-attribute"></a>Codice di esempio per la lettura di un attributo costruito
 
-Nell'esempio di codice riportato di seguito viene illustrato un metodo che può essere utilizzato per recuperare un valore di attributo che funzionerà con tutti i tipi di attributi.
+Nell'esempio di codice seguente viene illustrato un metodo che può essere usato per recuperare un valore di attributo che funzionerà con tutti i tipi di attributi.
 
 
 ```VB
@@ -43,7 +43,7 @@ End Function
 
 
 
-Nell'esempio di codice riportato di seguito viene illustrato un metodo che può essere utilizzato per recuperare un valore di attributo che funzionerà con tutti i tipi di attributi.
+Nell'esempio di codice seguente viene illustrato un metodo che può essere usato per recuperare un valore di attributo che funzionerà con tutti i tipi di attributi.
 
 
 ```C++
@@ -93,9 +93,9 @@ HRESULT GetAttribute(IADs *pads, BSTR bstrAttribute, VARIANT *pvar)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

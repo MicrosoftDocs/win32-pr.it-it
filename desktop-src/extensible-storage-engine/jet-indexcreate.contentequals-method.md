@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1e5c61d37cde77137d465aac6791e81a7e5d594e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a607c191d53e14c8f5f8cdc88a8728467af18b2b1b502b37cdbdaf6ef9df991
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117894938"
 ---
 # <a name="jet_indexcreatecontentequals-method"></a>JET_INDEXCREATE. Metodo ContentEquals
 
-Restituisce un valore che indica se questa istanza è uguale a un'altra istanza.
+Restituisce un valore che indica se questa istanza è uguale a un'altra istanza di .
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,25 +62,25 @@ public bool ContentEquals(
 #### <a name="parameters"></a>Parametri
 
   - altro  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INDEXCREATE](./jet-indexcreate-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INDEXCREATE](./jet-indexcreate-class.md)  
     
-    Istanza di da confrontare con questa istanza.
+    Istanza da confrontare con questa istanza.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True se le due istanze sono uguali.  
 
 #### <a name="implements"></a>Implementazioni
 
-[IContentEquatable \<T\> . ContentEquals (T)](./icontentequatable-t-.contentequals-method.md)  
+[Oggetto IContentEquatable. \<T\> ContentEquals(T)](./icontentequatable-t-.contentequals-method.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_INDEXCREATE](./jet-indexcreate-class.md)
+[JET_INDEXCREATE classe](./jet-indexcreate-class.md)
 
-[Membri JET_INDEXCREATE](./jet-indexcreate-members.md)
+[JET_INDEXCREATE membri](./jet-indexcreate-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

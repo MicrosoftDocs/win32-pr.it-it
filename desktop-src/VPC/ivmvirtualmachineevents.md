@@ -1,10 +1,10 @@
 ---
-title: Interfaccia IVMVirtualMachineEvents (VPCCOMInterfaces. h)
-description: Definisce l'interfaccia evento in uscita per l'interfaccia IVMVirtualMachine.
+title: Interfaccia IVMVirtualMachineEvents (VPCCOMInterfaces.h)
+description: Definisce l'interfaccia eventi in uscita per l'interfaccia IVMVirtualMachine.
 ms.assetid: 52901a95-0f4f-4503-97c5-1459179feeb8
 keywords:
 - Interfaccia IVMVirtualMachineEvents Virtual PC
-- Interfaccia IVMVirtualMachineEvents Virtual PC, descritta
+- Interfaccia IVMVirtualMachineEvents Virtual PC , descritta
 topic_type:
 - apiref
 api_name:
@@ -15,45 +15,45 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fddcc2ded96f5a39a520d3b5a712e63fbb0a65d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c6686585333f33d4732284ab448a82ac722fea03315b08aaa276f2eeabaf2e02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118122621"
 ---
 # <a name="ivmvirtualmachineevents-interface"></a>Interfaccia IVMVirtualMachineEvents
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Definisce l'interfaccia evento in uscita per l'interfaccia [**IVMVirtualMachine**](ivmvirtualmachine.md) . Il client implementa questi metodi per ricevere gli eventi inviati da [**IVMVirtualMachine**](ivmvirtualmachine.md).
+Definisce l'interfaccia eventi in uscita per [**l'interfaccia IVMVirtualMachine.**](ivmvirtualmachine.md) Il client implementa questi metodi per ricevere gli eventi inviati da [**IVMVirtualMachine.**](ivmvirtualmachine.md)
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IVMVirtualMachineEvents** eredita dall'interfaccia [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) . **IVMVirtualMachineEvents** dispone anche di questi tipi di membri:
+**L'interfaccia IVMVirtualMachineEvents** eredita dall'interfaccia [**IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) **IVMVirtualMachineEvents** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IVMVirtualMachineEvents** dispone di questi metodi.
+Questi metodi sono disponibili nell'interfaccia **IVMVirtualMachineEvents.**
 
 
 
 | Metodo                                                                                   | Descrizione                                                                                                                                     |
 |:-----------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**OnAdditionsAvailable**](ivmvirtualmachineevents-onadditionsavailable.md)             | Riceve la notifica che i componenti di integrazione sono disponibili in una macchina virtuale.<br/>                                                |
-| [**OnAdditionsUninstalled**](ivmvirtualmachineevents-onadditionsuninstalled.md)         | Riceve una notifica di disinstallazione dei componenti di integrazione in una macchina virtuale.<br/>                                              |
+| [**OnAdditionsUninstalled**](ivmvirtualmachineevents-onadditionsuninstalled.md)         | Riceve la notifica che i componenti di integrazione vengono disinstallati in una macchina virtuale.<br/>                                              |
 | [**OnConfigurationChanged**](ivmvirtualmachineevents-onconfigurationchanged.md)         | Riceve la notifica che un valore nella configurazione per questa macchina virtuale è stato modificato.<br/>                                        |
-| [**OnDiskOutOfSpace**](ivmvirtualmachineevents-ondiskoutofspace.md)                     | Riceve una notifica che indica che un disco richiesto per una macchina virtuale è insufficiente e non è possibile eseguire la macchina virtuale.<br/>           |
-| [**OnEnhancedVideoModeChanged**](ivmvirtualmachineevents-onenhancedvideomodechanged.md) | Riceve una notifica della modifica del supporto di una macchina virtuale per la modalità video avanzata.<br/>                                          |
+| [**OnDiskOutOfSpace**](ivmvirtualmachineevents-ondiskoutofspace.md)                     | Riceve una notifica che un disco necessario per una macchina virtuale non è disponibile e che la macchina virtuale non è in grado di eseguire.<br/>           |
+| [**OnEnhancedVideoModeChanged**](ivmvirtualmachineevents-onenhancedvideomodechanged.md) | Riceve una notifica che indica che il supporto di una macchina virtuale per la modalità video avanzata è stato modificato.<br/>                                          |
 | [**OnGuestLogoff**](ivmvirtualmachineevents-onguestlogoff.md)                           | Riceve la notifica che un utente si è disconnesso dal sistema operativo guest.<br/>                                                    |
 | [**OnGuestShutdown**](ivmvirtualmachineevents-onguestshutdown.md)                       | Riceve la notifica che il sistema operativo guest è stato arrestato.<br/>                                                                     |
-| [**OnHeartbeatStopped**](ivmvirtualmachineevents-onheartbeatstopped.md)                 | Riceve una notifica di arresto dell'heartbeat di una macchina virtuale. Ciò indica in genere che si è verificato un arresto anomalo del sistema operativo guest.<br/> |
+| [**OnHeartbeatStopped**](ivmvirtualmachineevents-onheartbeatstopped.md)                 | Riceve una notifica che indica che l'heartbeat di una macchina virtuale è stato arrestato. Ciò indica in genere che il sistema operativo guest si è arrestato in modo anomalo.<br/> |
 | [**OnRequestShutdown**](ivmvirtualmachineevents-onrequestshutdown.md)                   | Riceve la notifica che è stata effettuata una richiesta di arresto.<br/>                                                                         |
 | [**OnReset**](ivmvirtualmachineevents-onreset.md)                                       | Riceve la notifica che una macchina virtuale è stata reimpostata.<br/>                                                                         |
-| [**OnStateChange**](ivmvirtualmachineevents-onstatechange.md)                           | Riceve una notifica che lo stato di una macchina virtuale è stato modificato.<br/>                                                                    |
-| [**OnTripleFault**](ivmvirtualmachineevents-ontriplefault.md)                           | Riceve una notifica che una macchina virtuale presenta tre errori.<br/>                                                                     |
+| [**OnStateChange**](ivmvirtualmachineevents-onstatechange.md)                           | Riceve una notifica che indica che lo stato di una macchina virtuale è stato modificato.<br/>                                                                    |
+| [**OnTripleFault**](ivmvirtualmachineevents-ontriplefault.md)                           | Riceve una notifica che indica che si è triplicato l'errore di una macchina virtuale.<br/>                                                                     |
 
 
 
@@ -65,12 +65,12 @@ L'interfaccia **IVMVirtualMachineEvents** dispone di questi metodi.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | DIID \_ IVMVirtualMachineEvents è definito come 9d84f560-BB67-4961-BD12-a4da780c67e4<br/>   |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | DIID \_ IVMVirtualMachineEvents è definito come 9d84f560-bb67-4961-bd12-a4da780c67e4<br/>   |
 
 
 

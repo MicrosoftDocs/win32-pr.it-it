@@ -1,9 +1,9 @@
 ---
-title: Elemento EAP (proprietà di connessione)
-description: Informazioni sull'elemento EAP. Questo elemento acquisisce il tipo di metodo selezionato e la configurazione specifica del metodo. | Elemento EAP (proprietà di connessione)
+title: Elemento Eap (proprietà connection)
+description: Informazioni sull'elemento Eap. Questo elemento acquisisce il tipo di metodo selezionato e la configurazione specifica del metodo. | Elemento Eap (proprietà connection)
 ms.assetid: 4e9f3869-257e-4b03-93f6-2eec94eaacee
 keywords:
-- EAPHost (elemento EAP)
+- Elemento Eap EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c39812d00ecf9a1183eb81fc03b09b146d751f0e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7750bdb9a5f3c2d6c187b0f765eeb9d7ad88c015403719c16d0b683637b10027
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086945"
 ---
-# <a name="eap-element-connection-properties"></a>Elemento EAP (proprietà di connessione)
+# <a name="eap-element-connection-properties"></a>Elemento Eap (proprietà connection)
 
-L'elemento **EAP** acquisisce il tipo di metodo selezionato e la configurazione specifica del metodo.
+**L'elemento Eap** acquisisce il tipo di metodo selezionato e la configurazione specifica del metodo.
 
 ``` syntax
 <xs:element name="Eap
@@ -35,16 +35,16 @@ L'elemento **EAP** acquisisce il tipo di metodo selezionato e la configurazione 
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo può definire gli elementi costitutivi all'interno dell'elemento **EAP** . Il metodo esegue inoltre la convalida dello schema sugli elementi in **EAP**.
+Il metodo può definire gli elementi costitutivi all'interno **dell'elemento Eap.** Il metodo esegue anche la convalida dello schema sugli elementi in **Eap.**
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -52,7 +52,7 @@ Il metodo può definire gli elementi costitutivi all'interno dell'elemento **EAP
 
 <dl> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema baseeapconnectionpropertiesv1](baseeapconnectionpropertiesv1schema-schema.md)

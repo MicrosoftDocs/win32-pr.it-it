@@ -1,24 +1,24 @@
 ---
-description: 'VSS fornisce un meccanismo di gestione degli errori ben definito che consente agli sviluppatori e agli amministratori di gestire il sistema e gestire gli errori:'
+description: 'VSS offre un meccanismo di gestione degli errori ben definito per consentire a sviluppatori e amministratori di gestire il sistema e gestire gli errori:'
 ms.assetid: 6377d937-5739-45f5-9195-5d18be4069ce
-title: Gestione degli eventi e degli errori in VSS
+title: Gestione di eventi ed errori in VSS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7f6f1220d9d150fd0d03f7ffeff4dbdd1f6256f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 431974532a8b24fd83fbeec62d3c593842b7fd1cede0b22c58f33f891b6b1359
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118122115"
 ---
-# <a name="event-and-error-handling-under-vss"></a>Gestione degli eventi e degli errori in VSS
+# <a name="event-and-error-handling-under-vss"></a>Gestione di eventi ed errori in VSS
 
-VSS fornisce un meccanismo di gestione degli errori ben definito che consente agli sviluppatori e agli amministratori di gestire il sistema e gestire gli errori:
+VSS offre un meccanismo di gestione degli errori ben definito per consentire a sviluppatori e amministratori di gestire il sistema e gestire gli errori:
 
 -   [Determinazione dello stato del writer](determining-writer-status.md)
--   [Registrazione degli errori VSS](vss-error-logging.md)
--   [Errori e veto del writer](writer-errors-and-vetoes.md)
--   [Interruzione delle operazioni VSS](aborting-vss-operations.md)
+-   [Registrazione degli errori di VSS](vss-error-logging.md)
+-   [Errori e veti del writer](writer-errors-and-vetoes.md)
+-   [Interruzione delle operazioni vss](aborting-vss-operations.md)
 -   [Gestione degli eventi BackupShutdown](handling-backupshutdown-events.md)
 
  

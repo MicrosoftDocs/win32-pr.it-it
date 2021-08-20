@@ -1,24 +1,24 @@
 ---
-title: Attributo Movie la
-description: Attributo Movie la
+title: Attributo VML Movie
+description: Attributo VML Movie
 ms.assetid: 027ec13a-071f-46f1-892f-294cc7885023
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d82c1f7d6b2cd77b7828ea86f3f1a1e008950652
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 64eaadee7f0fed7876e1c369d7eeac7568be3b81bcca96c822548e7a5fae796e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118124433"
 ---
-# <a name="vml-movie-attribute"></a>Attributo Movie la
+# <a name="vml-movie-attribute"></a>Attributo VML Movie
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce un puntatore a un'immagine di film. Proprietà di lettura/scrittura. **VgNumber**.
 
@@ -26,16 +26,16 @@ Definisce un puntatore a un'immagine di film. Proprietà di lettura/scrittura. *
 
 [ImageData](msdn-online-vml-imagedata-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* o:Movie = " *Expression* " >
+<v: *elemento* o:movie=" *espressione* ">
 
 **Osservazioni:**
 
-Archivia un blocco di dati Macintosh che contiene un puntatore a un puntatore ai dati dei film.
+Archivia un blocco di dati Macintosh contenente un puntatore a un puntatore ai dati dei film.
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
- 
+ 
 
- 
+ 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio PGM_SETCHILD (COMmctrl. h)
+title: PGM_SETCHILD messaggio (Commctrl.h)
 description: Imposta la finestra contenuta per il controllo pager.
 ms.assetid: 717e6720-aa42-4ecd-9520-4618a04dc28d
 keywords:
-- Controlli di Windows Message PGM_SETCHILD
+- PGM_SETCHILD dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c934c3c5688ac79b5c5ce67aef68e28ad3627ce
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: da3424eabfb87d587ac8cd33802dfc03b3c3868d881b131360bfee2e8bc26730
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117830172"
 ---
-# <a name="pgm_setchild-message"></a>\_Messaggio del messaggio PGM
+# <a name="pgm_setchild-message"></a>PGM \_ SETCHILD message
 
-Imposta la finestra contenuta per il controllo pager. Questo messaggio non modificherà l'elemento padre della finestra contenuta; assegna un handle di finestra al controllo pager per lo scorrimento. Nella maggior parte dei casi, la finestra contenuta sarà una finestra figlio. In tal caso, la finestra contenuta deve essere un elemento figlio del controllo pager. È possibile inviare questo messaggio in modo esplicito o utilizzare la macro [**pager \_ figlio**](/windows/desktop/api/Commctrl/nf-commctrl-pager_setchild) .
+Imposta la finestra contenuta per il controllo pager. Questo messaggio non modificherà l'elemento padre della finestra contenuta. assegna solo un handle di finestra al controllo pager per lo scorrimento. Nella maggior parte dei casi, la finestra contenuta sarà una finestra figlio. In questo caso, la finestra contenuta deve essere un elemento figlio del controllo pager. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ Pager SetChild.**](/windows/desktop/api/Commctrl/nf-commctrl-pager_setchild)
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,7 +35,7 @@ Imposta la finestra contenuta per il controllo pager. Questo messaggio non modif
 *lParam* 
 </dt> <dd>
 
-Handle per la finestra da contenere.
+Handle per la finestra da contenuto.
 
 </dd> </dl>
 
@@ -49,9 +49,9 @@ Il valore restituito non viene utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

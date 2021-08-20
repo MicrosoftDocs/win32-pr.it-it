@@ -1,8 +1,8 @@
 ---
-description: Ottiene i diritti di accesso remoto per un elenco di singoli utenti in computer in cui sono in esecuzione versioni obsolete di Windows, in cui il controllo degli accessi tramite descrittori di sicurezza di Windows non è disponibile.
+description: Ottiene i diritti di accesso remoto per un elenco di singoli utenti nei computer che eseguono versioni obsolete di Windows , in cui il controllo di accesso Windows descrittori di sicurezza non è disponibile.
 ms.assetid: 79a596db-5f85-4664-8989-f309286eca0d
 ms.tgt_platform: multiple
-title: 'Metodo __SystemSecurity:: Get9XUserList'
+title: __SystemSecurity::Get9XUserList
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - all
-ms.openlocfilehash: 521f2fe489089d486480c138293ebea39ca6f105
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cfb6f0b9bb503e212e00d5343b55d6a9e20fbc8acfb0a5b534e8848cc6d3d931
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118110104"
 ---
-# <a name="__systemsecurityget9xuserlist-method"></a>\_\_Metodo SystemSecurity:: Get9XUserList
+# <a name="__systemsecurityget9xuserlist-method"></a>\_\_Metodo SystemSecurity::Get9XUserList
 
-Il metodo [**\_ \_ SystemSecurity:: Set9XUserList**](--systemsecurity-set9xuserlist.md) ottiene i diritti di accesso remoto per un elenco di singoli utenti nei computer che eseguono versioni obsolete di Windows, in cui il controllo dell'accesso tramite i descrittori di sicurezza di Windows non è disponibile.
+Il [**\_ \_ metodo SystemSecurity::Set9XUserList**](--systemsecurity-set9xuserlist.md) ottiene i diritti di accesso remoto per un elenco di singoli utenti nei computer che eseguono versioni obsolete di Windows , in cui il controllo di accesso tramite descrittori di sicurezza di Windows non è disponibile.
 
-Questa funzione è simile a quella del descrittore di sicurezza, ma è più limitata. I gruppi non sono supportati e non è possibile controllare l'accesso locale perché l'utente locale ha sempre accesso completo. Sono consentite sia le voci di controllo di accesso sia Deny che Allow (ACE). per questo motivo, l'ordine ACE è importante nell'elenco di controllo di accesso discrezionale (DACL). Per ulteriori informazioni, vedere [Order of ACE in a DACL](/windows/desktop/SecAuthZ/order-of-aces-in-a-dacl).
+Questa funzione è simile al descrittore di sicurezza, ma è più limitata. I gruppi non sono supportati e non è disponibile alcun controllo sull'accesso locale, perché l'utente locale ha sempre l'accesso completo. Sono consentite sia le voci di controllo di accesso negate che consentite e, per questo, l'ordine ACE è importante nell'elenco di controllo di accesso discrezionale (DACL). Per altre informazioni, vedere [Ordine delle ACE in un dacl.](/windows/desktop/SecAuthZ/order-of-aces-in-a-dacl)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ HRESULT Get9XUserList(
 
 <dl> <dt>
 
-*ul* \[ out\]
+*ul* \[ Cambio\]
 </dt> <dd>
 
 Matrice di utenti.
@@ -51,11 +51,11 @@ Matrice di utenti.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un valore **HRESULT** che indica lo stato della chiamata al metodo. Nell'elenco seguente sono elencati i valori restituiti significativi per **Get9XUserList**. Per gli script e le applicazioni Visual Basic, il risultato può essere [OutParameters. returnValue](parsing-outparameters-objects.md). Per altre informazioni, vedere [creazione di oggetti InParameters e analisi di oggetti OutParameters](constructing-inparameters-objects-and-parsing-outparameters-objects.md).
+Questo metodo restituisce un **HRESULT** che indica lo stato della chiamata al metodo. Nell'elenco seguente sono elencati i valori restituiti significativi per **Get9XUserList**. Per script e Visual Basic applicazioni, il risultato può essere [OutParameters.ReturnValue](parsing-outparameters-objects.md). Per altre informazioni, vedere [Costruzione di oggetti InParameters e Analisi di oggetti OutParameters.](constructing-inparameters-objects-and-parsing-outparameters-objects.md)
 
 <dl> <dt>
 
-**WBEM \_ E \_ metodo \_ disabilitato**
+**METODO WBEM \_ E \_ \_ DISABILITATO**
 </dt> <dd>
 
 Questo metodo non è supportato nelle versioni supportate di Windows.
@@ -84,19 +84,19 @@ Questo metodo non è supportato nelle versioni supportate di Windows.
 [**\_\_SystemSecurity**](--systemsecurity.md)
 </dt> <dt>
 
-[**\_\_SystemSecurity:: GetSd**](--systemsecurity-getsd.md)
+[**\_\_SystemSecurity::GetSD**](--systemsecurity-getsd.md)
 </dt> <dt>
 
-[**\_\_SystemSecurity:: SetD**](--systemsecurity-setsd.md)
+[**\_\_SystemSecurity::SetSD**](--systemsecurity-setsd.md)
 </dt> <dt>
 
-[**\_ACE Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-ace)
+[**Win32 \_ ACE**](/previous-versions/windows/desktop/secrcw32prov/win32-ace)
 </dt> <dt>
 
-[**\_SecurityDescriptor Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
+[**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
 </dt> <dt>
 
-[Sicurezza degli spazi dei nomi WMI](securing-wmi-namespaces.md)
+[Protezione degli spazi dei nomi WMI](securing-wmi-namespaces.md)
 </dt> <dt>
 
 [Costanti di sicurezza WMI](wmi-security-constants.md)

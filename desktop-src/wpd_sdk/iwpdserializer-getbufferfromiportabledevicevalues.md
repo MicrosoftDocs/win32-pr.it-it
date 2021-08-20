@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetBufferFromIPortableDeviceValues serializza un'interfaccia IPortableDeviceValues inviata in una matrice di byte allocata. La matrice di byte restituita è allocata per il chiamante e deve essere liberata dal chiamante utilizzando CoTaskMemFree.
+description: Il metodo GetBufferFromIPortableDeviceValues serializza un'interfaccia IPortableDeviceValues inviata in una matrice di byte allocata. La matrice di byte restituita viene allocata per il chiamante e deve essere liberata dal chiamante usando CoTaskMemFree.
 ms.assetid: fd856394-9cb3-41cb-875b-1d490ca859df
-title: 'Metodo IWpdSerializer:: GetBufferFromIPortableDeviceValues (PortableDeviceTypes. h)'
+title: Metodo IWpdSerializer::GetBufferFromIPortableDeviceValues (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 44f4e9e7011e6a4766183307e81ef7e783da899f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 10a483331d15c09de8398d11e940453d8f239e2207fdefb82d86fd4bb1460daf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117843014"
 ---
-# <a name="iwpdserializergetbufferfromiportabledevicevalues-method"></a>Metodo IWpdSerializer:: GetBufferFromIPortableDeviceValues
+# <a name="iwpdserializergetbufferfromiportabledevicevalues-method"></a>Metodo IWpdSerializer::GetBufferFromIPortableDeviceValues
 
-Il metodo **GetBufferFromIPortableDeviceValues** serializza un'interfaccia **IPortableDeviceValues** inviata in una matrice di byte allocata. La matrice di byte restituita è allocata per il chiamante e deve essere liberata dal chiamante utilizzando **CoTaskMemFree**.
+Il **metodo GetBufferFromIPortableDeviceValues** serializza un'interfaccia **IPortableDeviceValues** inviata in una matrice di byte allocata. La matrice di byte restituita viene allocata per il chiamante e deve essere liberata dal chiamante usando **CoTaskMemFree**.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,38 +42,38 @@ HRESULT GetBufferFromIPortableDeviceValues(
 
 <dl> <dt>
 
-*pSource* \[ in\]
+*pSource* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un'interfaccia [**IPortableDeviceValues**](iportabledevicevalues.md) da serializzare.
+Puntatore a [**un'interfaccia IPortableDeviceValues**](iportabledevicevalues.md) da serializzare.
 
 </dd> <dt>
 
-*ppBuffer* \[ out\]
+*ppBuffer* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un **byte \* *_ che contiene i dati serializzati. I dispositivi portatili Windows allocano questa memoria; il chiamante deve liberarlo chiamando _* CoTaskMemFree**.
+Puntatore a **un oggetto BYTE _ che contiene i dati \* *serializzati. Windows I dispositivi portatili allocano questa memoria; Il chiamante deve liberarlo chiamando _* CoTaskMemFree**.
 
 </dd> <dt>
 
-*pdwBufferSize* \[ out\]
+*pdwBufferSize* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un **valore DWORD** che specifica la dimensione del buffer allocato, in byte.
+Puntatore a **un valore DWORD** che specifica le dimensioni del buffer allocato, in byte.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                   | Descrizione                                                            |
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                       |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | Un argomento obbligatorio del puntatore è **null**.<br/>                   |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria disponibile insufficiente per creare il buffer.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                       |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>     | Un argomento del puntatore obbligatorio era **NULL.**<br/>                   |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per creare il buffer.<br/> |
 
 
 
@@ -85,8 +85,8 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
