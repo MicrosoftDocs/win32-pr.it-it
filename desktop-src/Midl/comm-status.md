@@ -1,9 +1,9 @@
 ---
-title: attributo comm_status
-description: L'attributo \ Comm \_ status \ ACF causa la restituzione di un codice di errore quando si verifica un errore di comunicazione durante l'esecuzione di una funzione.
+title: comm_status attributo
+description: L'attributo \ comm status\ ACF fa sì che un codice di errore viene restituito quando si verifica un errore di \_ comunicazione durante l'esecuzione di una funzione.
 ms.assetid: 3ea9ce62-8bd4-40fe-b838-bfebd52b5a15
 keywords:
-- attributo comm_status MIDL
+- comm_status'attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd4952d03a80dbbffb135043d024b0c0eb18966f
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 719f66d6849a21d67d9349a9e9fd728defb4a0663e4436701d06f20209f4d5b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103718778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118384702"
 ---
-# <a name="comm_status-attribute"></a>\_attributo status di comunicazione
+# <a name="comm_status-attribute"></a>Attributo comm \_ status
 
-L'attributo di **\[ \_ stato \]** di comunicazione ACF causa la restituzione di un codice di errore quando si verifica un errore di comunicazione durante l'esecuzione di una funzione.
+L'attributo ACF di stato **\[ comm \_ \]** fa sì che un codice di errore viene restituito quando si verifica un errore di comunicazione durante l'esecuzione di una funzione.
 
 ``` syntax
 [comm_status [ , ACF-function-attributes ] ] 
@@ -38,28 +38,28 @@ L'attributo di **\[ \_ stato \]** di comunicazione ACF causa la restituzione di 
 
 <dl> <dt>
 
-*ACF-Function-Attributes* 
+*ACF-function-attributes* 
 </dt> <dd>
 
-Specifica zero o più attributi della funzione ACF, ad esempio **\[ \_ stato \] di comunicazione** e **\[** [**NoCode**](nocode.md) **\]** . Gli attributi della funzione sono racchiusi tra parentesi quadre. È possibile applicare zero o più attributi a una funzione. Separare più attributi di funzione con virgole. Si noti che se **\[ \_ lo \] stato di comunicazione** viene visualizzato come attributo di funzione, non può essere visualizzato anche come attributo di parametro.
+Specifica zero o più attributi della funzione ACF, ad esempio **\[ comm \_ status \]** e **\[** [**nocode.**](nocode.md) **\]** Gli attributi della funzione sono racchiusi tra parentesi quadre. A una funzione possono essere applicati zero o più attributi. Separare più attributi di funzione con virgole. Si noti che **\[ se lo stato \_ comm \]** viene visualizzato come attributo di funzione, non può essere visualizzato anche come attributo di parametro.
 
 </dd> <dt>
 
-*Nome funzione* 
+*function-name* 
 </dt> <dd>
 
 Specifica il nome della funzione come definito nel file IDL.
 
 </dd> <dt>
 
-*ACF-parametri-attributi* 
+*ACF-parameter-attributes* 
 </dt> <dd>
 
-Specifica gli attributi che si applicano a un parametro. Si noti che è possibile applicare zero, uno o più attributi al parametro. Separare più attributi di parametro con virgole. Gli attributi di parametro sono racchiusi tra parentesi quadre. Gli attributi dei parametri IDL, ad esempio gli attributi direzionali, non sono consentiti in ACF. Si noti che se **\[ \_ lo \] stato di comunicazione** viene visualizzato come attributo di parametro, non può essere visualizzato anche come attributo di funzione.
+Specifica gli attributi che si applicano a un parametro. Si noti che al parametro possono essere applicati zero, uno o più attributi. Separare più attributi di parametro con virgole. Gli attributi dei parametri sono racchiusi tra parentesi quadre. Gli attributi dei parametri IDL, ad esempio gli attributi direzionali, non sono consentiti in ACF. Si noti che se **\[ lo stato \_ comm \]** viene visualizzato come attributo di parametro, non può essere visualizzato anche come attributo di funzione.
 
 </dd> <dt>
 
-*Nome parametro* 
+*parameter-name* 
 </dt> <dd>
 
 Specifica il parametro per la funzione come definito nel file IDL. Ogni parametro per la funzione deve essere specificato nella stessa sequenza, usando lo stesso nome definito nel file IDL.
@@ -68,13 +68,13 @@ Specifica il parametro per la funzione come definito nel file IDL. Ogni parametr
 
 ## <a name="remarks"></a>Commenti
 
-L'attributo **\[ \_ status \] di comunicazione** può essere usato come attributo di funzione o come attributo di parametro, ma può essere visualizzato solo una volta per ogni funzione. Può essere applicato alla funzione o a un parametro in ogni funzione.
+**\[ L'attributo \_ \] comm status** può essere usato come attributo di funzione o come attributo di parametro, ma può essere visualizzato una sola volta per ogni funzione. Può essere applicato alla funzione o a un parametro in ogni funzione.
 
-L'attributo **\[ \_ status \] di comunicazione** può essere applicato solo a funzioni che restituiscono lo stato di errore del tipo [**\_ \_ t**](error-status-t.md). Quando si verifica un errore di comunicazione durante l'esecuzione della funzione, viene restituito un codice di errore.
+**\[ L'attributo \_ \] comm status** può essere applicato solo alle funzioni che restituiscono lo stato [**di errore del tipo \_ \_ t**](error-status-t.md). Quando si verifica un errore di comunicazione durante l'esecuzione della funzione, viene restituito un codice di errore.
 
-Quando **\[ \_ lo stato \] di comunicazione** viene usato come attributo di parametro, il parametro deve essere definito nel file IDL e deve essere un **\[** parametro [**out**](out-idl.md) **\]** di tipo [**Error \_ status \_ t**](error-status-t.md). Quando si verifica un errore di comunicazione durante l'esecuzione della funzione, il parametro viene impostato sul codice di errore. Quando la chiamata remota viene completata correttamente, il valore viene impostato dalla procedura.
+Quando **\[ lo stato comm \_ \]** viene usato come attributo di parametro, il parametro deve essere definito nel file IDL e deve essere un parametro out di **\[** [](out-idl.md) **\]** tipo [**error status \_ \_ t**](error-status-t.md). Quando si verifica un errore di comunicazione durante l'esecuzione della funzione, il parametro viene impostato sul codice di errore. Quando la chiamata remota viene completata correttamente, la procedura imposta il valore .
 
-È possibile che sia lo **\[ \_ \] stato di comunicazione** che **\[** gli attributi di [**\_ stato di errore**](fault-status.md) **\]** vengano visualizzati in una singola funzione, come attributi di funzione o attributi di parametro. Se entrambi gli attributi sono attributi di funzione o se si applicano allo stesso parametro e non si verificano errori, la funzione o il parametro presenta lo stato di errore del valore **\_ \_ OK**. In caso contrario, contiene lo **\[ \_ stato \] di comunicazione** appropriato o il valore **\[ \_ dello stato \] di errore** . Poiché i valori restituiti per **\[ \_ lo \] stato di comunicazione** sono diversi dai valori restituiti per **\[ \_ lo stato \] di errore**, i valori restituiti vengono immediatamente interpretati.
+È possibile che sia lo **\[ stato comm \_ \]** che gli attributi dello stato di errore vengano visualizzati in una singola funzione, come attributi di funzione o attributi **\[** [**\_**](fault-status.md) di **\]** parametro. Se entrambi gli attributi sono attributi di funzione o se si applicano allo stesso parametro e non si verifica alcun errore, la funzione o il parametro ha lo stato **di \_ errore \_ ok**. In caso contrario, contiene il valore **\[ appropriato per lo \_ stato \] comm** o **\[ \_ fault. \]** Poiché i valori restituiti **\[ per lo \_ stato \] comm** sono diversi dai valori restituiti per lo stato **\[ di \_ \]** errore, i valori restituiti vengono interpretati immediatamente.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -83,21 +83,21 @@ Quando **\[ \_ lo stato \] di comunicazione** viene usato come attributo di para
 [File di configurazione dell'applicazione (ACF)](application-configuration-file-acf-.md)
 </dt> <dt>
 
-[**stato di errore \_ \_ t**](error-status-t.md)
+[**error \_ status \_ t**](error-status-t.md)
 </dt> <dt>
 
-[**stato di errore \_**](fault-status.md)
+[**stato di \_ errore**](fault-status.md)
 </dt> <dt>
 
-[**NoCode**](nocode.md)
+[**nocode**](nocode.md)
 </dt> <dt>
 
-[**out**](out-idl.md)
+[**in uscita**](out-idl.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

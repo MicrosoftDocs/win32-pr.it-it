@@ -1,19 +1,19 @@
 ---
-description: Valore che specifica la dimensione, in byte, del tipo di oggetto dei metadati audio spaziali che il decodificatore genererà come output.
+description: Valore che specifica le dimensioni, in byte, del tipo di oggetto dei metadati audio spaziali restituito dal decodificatore.
 ms.assetid: C133693D-A8D5-4520-B561-57BF11074257
-title: Attributo MF_MT_SPATIAL_AUDIO_OBJECT_METADATA_LENGTH (Mfapi. h)
+title: MF_MT_SPATIAL_AUDIO_OBJECT_METADATA_LENGTH attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2cd0b3cab788dbc724ab896d2cbfeb0d42f633f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 784e1b210b616f4c42c2c3d410a207adc9c8c8ccaf751432cb027a7cc30cf951
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117876812"
 ---
-# <a name="mf_mt_spatial_audio_object_metadata_length-attribute"></a>\_Attributo della \_ \_ \_ \_ lunghezza dei metadati dell'oggetto audio \_ spaziale MF mt
+# <a name="mf_mt_spatial_audio_object_metadata_length-attribute"></a>Attributo \_ MF MT \_ SPATIAL AUDIO OBJECT METADATA \_ \_ \_ \_ LENGTH
 
-Valore che specifica la dimensione, in byte, del tipo di oggetto dei metadati audio spaziali che il decodificatore genererà come output.
+Valore che specifica le dimensioni, in byte, del tipo di oggetto dei metadati audio spaziali restituito dal decodificatore.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,7 +21,7 @@ Valore che specifica la dimensione, in byte, del tipo di oggetto dei metadati au
 
 ## <a name="remarks"></a>Commenti
 
-Il BLOB di metadati con il formato specificato viene scritto usando l'interfaccia [**ISpatialAudioMetadataWriter**](/windows/win32/api/spatialaudiometadata/nn-spatialaudiometadata-ispatialaudiometadatawriter) e viene letto usando l'interfaccia [**ISpatialAudioMetadataReader**](/windows/win32/api/spatialaudiometadata/nn-spatialaudiometadata-ispatialaudiometadatareader) . Il BLOB dei metadati è opaco per i componenti e la pipeline Media Foundation. L'attributo viene applicato al tipo di supporti audio spaziali.
+Il BLOB di metadati con il formato specificato viene scritto usando [**l'interfaccia ISpatialAudioMetadataWriter**](/windows/win32/api/spatialaudiometadata/nn-spatialaudiometadata-ispatialaudiometadatawriter) e letto usando l'interfaccia [**ISpatialAudioMetadataReader.**](/windows/win32/api/spatialaudiometadata/nn-spatialaudiometadata-ispatialaudiometadatareader) Il BLOB di metadati è opaco per la pipeline Media Foundation e i componenti. L'attributo viene applicato al tipo di supporto audio spaziale.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -29,9 +29,9 @@ Il BLOB di metadati con il formato specificato viene scritto usando l'interfacci
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 

@@ -18,7 +18,7 @@ Le azioni personalizzate vengono richiamate nello stesso modo delle azioni stand
 -   L'azione specificata viene chiamata direttamente con la [**funzione MsiDoAction.**](/windows/desktop/api/Msiquery/nf-msiquery-msidoactiona)
 -   Un'azione di primo livello chiama la tabella di sequenza contenente l'azione personalizzata. Per altre informazioni sulla pianificazione di un'azione personalizzata in una tabella di sequenza, vedere [Sequenziazione di azioni personalizzate](sequencing-custom-actions.md).
 
-Quando il programma di installazione ottiene un nome di azione dalla [**funzione MsiDoAction**](/windows/desktop/api/Msiquery/nf-msiquery-msidoactiona) o da una tabella di sequenza, cerca innanzitutto un'azione standard con tale nome. Se non riesce a trovare l'azione standard, il programma di installazione esegue una query [sulla tabella CustomAction](customaction-table.md) per verificare se l'azione specificata è un'azione personalizzata. Se l'azione specificata non è un'azione personalizzata, il programma di installazione esegue una query nella [tabella Dialog per](dialog-table.md) trovare una finestra di dialogo.
+Quando il programma di installazione ottiene un nome di azione dalla [**funzione MsiDoAction**](/windows/desktop/api/Msiquery/nf-msiquery-msidoactiona) o da una tabella di sequenza, cerca innanzitutto un'azione standard con tale nome. Se non riesce a trovare l'azione standard, il programma di installazione esegue una query [sulla tabella CustomAction](customaction-table.md) per verificare se l'azione specificata è un'azione personalizzata. Se l'azione specificata non è un'azione personalizzata, il programma di installazione esegue una query nella [tabella Finestra](dialog-table.md) di dialogo per trovare una finestra di dialogo.
 
  
 

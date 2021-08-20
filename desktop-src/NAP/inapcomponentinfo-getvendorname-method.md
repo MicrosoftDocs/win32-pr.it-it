@@ -1,10 +1,10 @@
 ---
 title: Metodo INapComponentInfo GetVendorName (NapCommon.h)
-description: Viene utilizzato dal sistema protezione accesso alla rete per ottenere il nome del fornitore di un client di integrità.
+description: Viene usato dal sistema di Protezione accesso alla rete per ottenere il nome del fornitore di un client di integrità.
 ms.assetid: 7083b0b6-38fc-4c24-a5f7-fe0a1ebd5e88
 keywords:
-- Metodo GetVendorName NAP
-- Metodo GetVendorName NAP, interfaccia INapComponentInfo
+- Metodo GetVendorName nap
+- Metodo GetVendorName NAP , interfaccia INapComponentInfo
 - Interfaccia INapComponentInfo NAP, metodo GetVendorName
 topic_type:
 - apiref
@@ -30,7 +30,7 @@ ms.locfileid: "117799696"
 
  
 
-Il metodo di callback **INapComponentInfo::GetVendorName** viene usato dal sistema nap per ottenere il nome del fornitore di un client di integrità.
+Il metodo di callback **INapComponentInfo::GetVendorName** viene usato dal sistema di Protezione accesso alla rete per ottenere il nome del fornitore di un client di integrità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -63,8 +63,8 @@ Restituisce uno di questi codici di errore in base al risultato di questa operaz
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | L'operazione è riuscita.<br/>                            |
-| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazione, accesso negato.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema: impossibile eseguire l'operazione.<br/> |
 
 
 
@@ -76,8 +76,8 @@ Restituisce uno di questi codici di errore in base al risultato di questa operaz
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                           |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                     |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
 | Intestazione<br/>                   | <dl> <dt>NapCommon.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>NapCommon.idl</dt> </dl> |
 

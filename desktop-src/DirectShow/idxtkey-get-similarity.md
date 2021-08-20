@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Get somiglianza recupera l'intervallo di dati del colore che diventa trasparente. Con valori superiori, una gamma più ampia di colori simili è trasparente. Questa proprietà si applica solo quando il tipo di chiave è DXTKEY \_ RGB o DXTKEY \_ NONRED.
+description: Il metodo get \_ Similarity recupera l'intervallo di dati di colore che diventa trasparente. Con valori più elevati, una gamma più ampia di colori simili è trasparente. Questa proprietà si applica solo quando il tipo di chiave è DXTKEY \_ RGB o DXTKEY \_ NONRED.
 ms.assetid: ddf82759-fe71-4e06-b73c-c450b7cce43d
-title: 'Metodo IDxtKey:: get_Similarity (qedit. h)'
+title: Metodo IDxtKey::get_Similarity (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: e53898a1f9c5175fdf7a42ba6de68e3173f02afe
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dda31145fe28f0b428189eafd3105ae56120fbc19e0c611ad0df8d9f511130a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118399141"
 ---
-# <a name="idxtkeyget_similarity-method"></a>Metodo di somiglianza IDxtKey:: Get \_
+# <a name="idxtkeyget_similarity-method"></a>Metodo IDxtKey::get \_ Similarity
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `get_Similarity` metodo recupera l'intervallo di dati del colore che diventa trasparente. Con valori superiori, una gamma più ampia di colori simili è trasparente. Questa proprietà si applica solo quando il tipo di chiave è DXTKEY \_ RGB o DXTKEY \_ NONRED.
+Il `get_Similarity` metodo recupera l'intervallo di dati di colore che diventa trasparente. Con valori più elevati, una gamma più ampia di colori simili è trasparente. Questa proprietà si applica solo quando il tipo di chiave è DXTKEY \_ RGB o DXTKEY \_ NONRED.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ HRESULT get_Similarity(
 
 <dl> <dt>
 
-*pval* \[ out, retval\]
+*pVal* \[ out, retval\]
 </dt> <dd>
 
 Riceve il valore di somiglianza.
@@ -54,17 +54,17 @@ Riceve il valore di somiglianza.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -86,7 +86,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 [**Interfaccia IDxtKey**](idxtkey.md)
 </dt> <dt>
 
-[**Tipo di IDxtKey:: Get \_**](idxtkey-get-keytype.md)
+[**IDxtKey::get \_ KeyType**](idxtkey-get-keytype.md)
 </dt> </dl>
 
  

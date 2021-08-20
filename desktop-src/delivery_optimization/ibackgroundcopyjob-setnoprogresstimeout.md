@@ -67,7 +67,7 @@ Questo metodo restituisce i valori **HRESULT** seguenti, oltre ad altri.
 
 ## <a name="remarks"></a>Commenti
 
-Se DO non procede durante il periodo di ripetizione dei tentativi, sposta lo stato del processo da BG_JOB_STATE_TRANSIENT_ERROR a BG_JOB_STATE_ERROR. Se si richiede la notifica di errore, DO chiama il callback [**JobError.**](https://www.bing.com/search?q=**JobError**)
+Se DO non procede durante il periodo di ripetizione dei tentativi, lo stato del processo viene spostato da BG_JOB_STATE_TRANSIENT_ERROR a BG_JOB_STATE_ERROR. Se si richiede la notifica di errore, DO chiama il callback [**JobError.**](https://www.bing.com/search?q=**JobError**)
 
 ## <a name="requirements"></a>Requisiti
 

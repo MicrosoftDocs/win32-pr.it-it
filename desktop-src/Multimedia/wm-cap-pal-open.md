@@ -23,7 +23,7 @@ ms.locfileid: "117800580"
 ---
 # <a name="wm_cap_pal_open-message"></a>Messaggio WM \_ CAP \_ PAL \_ OPEN
 
-Il **messaggio WM CAP PAL \_ \_ \_ OPEN** carica una nuova tavolozza da un file della tavolozza e la passa a un driver di acquisizione. I file del riquadro usano in genere l'estensione del nome file . amico. Un driver di acquisizione usa una tavolozza quando richiesto dal formato di immagine digitalizzato specificato. È possibile inviare questo messaggio in modo esplicito o usando la macro [**capPaletteOpen.**](/windows/desktop/api/Vfw/nf-vfw-cappaletteopen)
+Il **messaggio WM CAP PAL \_ \_ \_ OPEN** carica una nuova tavolozza da un file della tavolozza e la passa a un driver di acquisizione. I file di tavolozza usano in genere l'estensione del nome file . amico. Un driver di acquisizione usa una tavolozza quando richiesto dal formato di immagine digitalizzato specificato. È possibile inviare questo messaggio in modo esplicito o usando la macro [**capPaletteOpen.**](/windows/desktop/api/Vfw/nf-vfw-cappaletteopen)
 
 
 ```C++

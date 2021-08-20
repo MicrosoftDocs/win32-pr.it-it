@@ -1,6 +1,6 @@
 ---
-title: Costanti WINBIO_INDICATOR_STATUS (tipi WinBio \_ . h)
-description: Imposta la luce di un indicatore.
+title: WINBIO_INDICATOR_STATUS costanti (Winbio \_ types.h)
+description: Impostare una luce indicatore.
 ms.assetid: 1e00ff9d-6693-4763-8ac3-b42d2a3e987d
 topic_type:
 - apiref
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7693fbd2b9b37067738774d172f4bb482edb06e6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9fd05d279bd11eafda89eed436c94d6141e97ad0eb9d2fc426d5c89000f36414
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910014"
 ---
-# <a name="winbio_indicator_status-constants"></a>Costanti di stato dell' \_ indicatore WINBIO \_
+# <a name="winbio_indicator_status-constants"></a>Costanti DI STATO INDICATORE WINBIO \_ \_
 
-Per impostare la luce di un indicatore, è possibile utilizzare i valori seguenti. Per impostazione predefinita, i sensori non avranno una luce accesa, ma le applicazioni possono usare questi valori per abilitare o disabilitare gli indicatori luminosi. Il valore di **\_ \_ stato del sensore WINBIO** fornisce maggiori dettagli sullo stato di una luce indicatore accesa. Per ulteriori informazioni, vedere le funzioni seguenti:
+I valori seguenti possono essere usati per impostare una luce indicatore. Per impostazione predefinita, i sensori non avranno una luce accese, ma le applicazioni possono usare questi valori per abilitare o disabilitare le luci degli indicatori. Il **valore WINBIO \_ SENSOR STATUS \_ (STATO SENSORE WINBIO)** fornisce informazioni più dettagliate sullo stato di una luce indicatore acceda. Per altre informazioni, vedere le funzioni seguenti:
 
 -   [**SensorAdapterSetIndicatorStatus**](/windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_sensor_set_indicator_status_fn)
 -   [**SensorAdapterGetIndicatorStatus**](/windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_sensor_get_indicator_status_fn)
@@ -32,8 +32,8 @@ Per impostare la luce di un indicatore, è possibile utilizzare i valori seguent
 
 | Costante                                                                                                                                                                            | Descrizione                                   |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------|
-| <span id="WINBIO_INDICATOR_ON"></span><span id="winbio_indicator_on"></span><dl> <dt>**\_indicatore WINBIO \_**</dt> </dl>    | La luce dell'indicatore del sensore è accesa.<br/>  |
-| <span id="WINBIO_INDICATOR_OFF"></span><span id="winbio_indicator_off"></span><dl> <dt>**\_indicatore WINBIO \_ disattivato**</dt> </dl> | La luce dell'indicatore del sensore è disattivata.<br/> |
+| <span id="WINBIO_INDICATOR_ON"></span><span id="winbio_indicator_on"></span><dl> <dt>**INDICATORE WINBIO \_ \_ ON**</dt> </dl>    | La luce dell'indicatore del sensore è accerta.<br/>  |
+| <span id="WINBIO_INDICATOR_OFF"></span><span id="winbio_indicator_off"></span><dl> <dt>**INDICATORE WINBIO \_ \_ DISATTIVATO**</dt> </dl> | La luce dell'indicatore del sensore è spenta.<br/> |
 
 
 
@@ -43,9 +43,9 @@ Per impostare la luce di un indicatore, è possibile utilizzare i valori seguent
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                                    |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>\_Tipi WinBio. h (includere WinBio. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                       |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ types.h (include Winbio.h)</dt> </dl> |
 
 
 

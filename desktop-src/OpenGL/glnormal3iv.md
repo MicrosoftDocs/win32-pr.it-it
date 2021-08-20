@@ -1,9 +1,9 @@
 ---
-title: funzione glNormal3iv (GL. h)
-description: Imposta il vettore normale corrente. | funzione glNormal3iv (GL. h)
+title: Funzione glNormal3iv (Gl.h)
+description: Imposta il vettore normale corrente. | Funzione glNormal3iv (Gl.h)
 ms.assetid: cf50e801-a34c-43bd-b7eb-facb84a6472d
 keywords:
-- funzione glNormal3iv OpenGL
+- Funzione glNormal3iv OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5629a12d6c388da2aa133fbe72177646b4f95d63
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 74db5c09a45fc6b846867b712f15f9b1230e97ee9a4420587e280018b7593b1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103969266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117795281"
 ---
-# <a name="glnormal3iv-function"></a>glNormal3iv (funzione)
+# <a name="glnormal3iv-function"></a>Funzione glNormal3iv
 
 Imposta il vettore normale corrente.
 
@@ -43,7 +43,7 @@ void WINAPI glNormal3iv(
 *v* 
 </dt> <dd>
 
-Puntatore a una matrice di tre elementi, ovvero le coordinate x, y e z della nuova normale corrente.
+Puntatore a una matrice di tre elementi: le coordinate x, y e z della nuova normale corrente.
 
 </dd> </dl>
 
@@ -53,15 +53,15 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Il normale corrente viene impostato sulle coordinate specificate ogni volta che si chiama la funzione **glNormal3iv**.
+La normale corrente viene impostata su coordinate specificate ogni volta che si chiama la **funzione glNormal3iv.**
 
-Gli argomenti byte, short o Integer vengono convertiti in formato a virgola mobile con un mapping lineare che esegue il mapping del valore intero rappresentabile più positivo a 1,0 e il valore intero rappresentabile più negativo a-1,0.
+Gli argomenti byte, short o integer vengono convertiti in formato a virgola mobile con un mapping lineare che esegue il mapping del valore integer rappresentabile più positivo a 1,0 e del valore intero rappresentabile più negativo a -1,0.
 
-I normali specificati tramite **glNormal3iv** non devono avere la lunghezza dell'unità. Se la normalizzazione è abilitata, le normali specificate con **glNormal3iv** vengono normalizzate dopo la trasformazione. È possibile controllare la normalizzazione usando [**glEnable**](glenable.md) e [**glDisable**](gldisable.md) con l'argomento GL \_ Normalize. Per impostazione predefinita, la normalizzazione è disabilitata. È possibile aggiornare la normale corrente in qualsiasi momento. In particolare, è possibile chiamare **glNormal3iv** tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md). Le funzioni seguenti consentono di recuperare informazioni correlate a **glNormal3iv**:
+Le normali specificate tramite **glNormal3iv** non devono avere una lunghezza di unità. Se la normalizzazione è abilitata, le normali specificate con **glNormal3iv** vengono normalizzate dopo la trasformazione. È possibile controllare la normalizzazione usando [**glEnable**](glenable.md) e [**glDisable**](gldisable.md) con l'argomento GL \_ NORMALIZE. Per impostazione predefinita, la normalizzazione è disabilitata. È possibile aggiornare la normale corrente in qualsiasi momento. In particolare, è possibile chiamare **glNormal3iv** tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md). Le funzioni seguenti recuperano informazioni correlate **a glNormal3iv:**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ Current \_ Normal
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ CURRENT \_ NORMAL
 
-[**glIsEnable**](glisenabled.md) con argomento GL \_ Normalize
+[**glIsEnable con**](glisenabled.md) l'argomento GL \_ NORMALIZE
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ I normali specificati tramite **glNormal3iv** non devono avere la lunghezza dell
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -87,7 +87,7 @@ I normali specificati tramite **glNormal3iv** non devono avere la lunghezza dell
 [**glColor**](glcolor-functions.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glIndex**](glindex-functions.md)

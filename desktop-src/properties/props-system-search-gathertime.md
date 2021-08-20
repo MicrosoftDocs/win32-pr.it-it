@@ -1,19 +1,19 @@
 ---
-description: Valore DateTime che rappresenta l'ora in cui il processo del servizio Gatherer di Windows ricerca ha eseguito l'ultimo push delle proprietà di questo documento ai plug-in del servizio di raccolta Windows Search.
+description: Valore Datetime che rappresenta l'ora dell'ultimo push delle proprietà di questo documento da parte Windows processo Gatherer di ricerca nei plug-in Windows gatherer di ricerca.
 ms.assetid: 95474132-6d07-4575-961e-249ffafd65e4
-title: System. search. GatherTime
+title: System.Search.GatherTime
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7699b4e2853fd79ab5a4f37ab370d31d6def732
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a37329255a2cf9882f4275831d804f9b41a00bf8eaaace22aae9c22943dd84a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117865037"
 ---
-# <a name="systemsearchgathertime"></a>System. search. GatherTime
+# <a name="systemsearchgathertime"></a>System.Search.GatherTime
 
-Valore DateTime che rappresenta l'ora in cui il processo del servizio Gatherer di Windows ricerca ha eseguito l'ultimo push delle proprietà di questo documento ai plug-in del servizio di raccolta Windows Search.
+Valore Datetime che rappresenta l'ora dell'ultimo push delle proprietà di questo documento da parte Windows processo Gatherer di ricerca nei plug-in Windows gatherer di ricerca.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -48,13 +48,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -78,13 +78,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

@@ -23,7 +23,7 @@ ms.locfileid: "118541242"
 ---
 # <a name="d3dxmatrixorthooffcenterrh-function-d3dx10mathh"></a>Funzione D3DXMatrixOrthoOffCenterRH (D3DX10Math.h)
 
-Compila una matrice di proiezione ortografica personalizzata con la mano destra.
+Compila una matrice di proiezione ortogonale personalizzata con la mano destra.
 
 ## <a name="syntax"></a>Sintassi
 

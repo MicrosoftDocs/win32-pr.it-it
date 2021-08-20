@@ -1,25 +1,25 @@
 ---
 description: 'Altre informazioni su: operatori JET_LGPOS'
-title: Operatori di JET_LGPOS
+title: JET_LGPOS seguenti
 TOCTitle: JET_LGPOS operators
 ms:assetid: 78bf06f8-31d9-ea15-d979-02535d91ebda
 ms:mtpsurl: https://msdn.microsoft.com/library/Hh579075(v=EXCHG.10)
 ms:contentKeyID: 39513092
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: f7464ed8334bbf8b60500809e26462307daa3ea8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 267421efde5987233865ff700e1d64f70080f8cc11314ce2fda0fec7fb6abc47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117894516"
 ---
-# <a name="jet_lgpos-operators"></a>Operatori di JET_LGPOS
+# <a name="jet_lgpos-operators"></a>JET_LGPOS seguenti
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
-Il tipo di [JET_LGPOS](./jet-lgpos-structure2.md) espone i membri seguenti.
+Il [JET_LGPOS](./jet-lgpos-structure2.md) tipo espone i membri seguenti.
 
 ## <a name="operators"></a>Operatori
 
@@ -40,12 +40,12 @@ Il tipo di [JET_LGPOS](./jet-lgpos-structure2.md) espone i membri seguenti.
 <tr class="even">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operatore pubblico" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
 <td><a href="hh557121(v=exchg.10).md">GreaterThan</a></td>
-<td>Determinare se una posizione del log si trova dopo un'altra posizione del log.</td>
+<td>Determinare se una posizione del log è dopo un'altra posizione del log.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operatore pubblico" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
 <td><a href="hh557469(v=exchg.10).md">GreaterThanOrEqual</a></td>
-<td>Determinare se una posizione del log è successiva o uguale a un'altra posizione del log.</td>
+<td>Determinare se una posizione del log è dopo o uguale a un'altra posizione del log.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operatore pubblico" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
@@ -55,12 +55,12 @@ Il tipo di [JET_LGPOS](./jet-lgpos-structure2.md) espone i membri seguenti.
 <tr class="odd">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operatore pubblico" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
 <td><a href="hh577466(v=exchg.10).md">LessThan</a></td>
-<td>Determinare se una posizione del registro precede un'altra posizione del log.</td>
+<td>Determinare se una posizione del log si trova prima di un'altra posizione del log.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operatore pubblico" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
 <td><a href="hh557093(v=exchg.10).md">LessThanOrEqual</a></td>
-<td>Determinare se una posizione del log è precedente o uguale a un'altra posizione del log.</td>
+<td>Determinare se una posizione del log è precedente o uguale a un'altra.</td>
 </tr>
 </tbody>
 </table>
@@ -72,6 +72,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_LGPOS](./jet-lgpos-structure2.md)
+[JET_LGPOS struttura](./jet-lgpos-structure2.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,21 +1,21 @@
 ---
-description: Introduce lo schema di descrizione del connettore di ricerca utilizzato dalle librerie di Esplora risorse e dai provider di ricerca federati.
+description: Introduce lo schema di descrizione del connettore di ricerca usato dalle librerie Windows Explorer e dai provider di ricerca federati.
 ms.assetid: b85a04c6-9398-4cc7-a894-881216600203
-title: Cerca nello schema di descrizione del connettore
+title: Schema di descrizione del connettore di ricerca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22f502f67cdc933bf4d27a3475cd6adef70c00fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e8d8ab60ba472cca961a4208b1c551679ef93eacd46e07cf5e080a3e73f3d14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118226382"
 ---
-# <a name="search-connector-description-schema"></a>Cerca nello schema di descrizione del connettore
+# <a name="search-connector-description-schema"></a>Schema di descrizione del connettore di ricerca
 
-Introduce lo schema di descrizione del connettore di ricerca utilizzato dalle librerie di Esplora risorse e dai provider di ricerca federati. Lo schema specifica la struttura e i requisiti per i file di descrizione del connettore di ricerca (con \* estensione searchConnector-MS) e per gli elementi **searchConnectorDescriptionType** dei file di descrizione della libreria della shell ( \* libreria-MS).
+Introduce lo schema di descrizione del connettore di ricerca usato dalle librerie Windows Explorer e dai provider di ricerca federati. Lo schema specifica la struttura e i requisiti per i file di descrizione del connettore di ricerca (.searchConnector-ms) e per gli elementi searchConnectorDescriptionType dei file di descrizione della libreria shell \*  \* (.library-ms).
 
-In questo argomento viene descritto lo schema correlato ai connettori di ricerca federati. Per ulteriori informazioni sulle librerie e sullo schema di descrizione della libreria, vedere [Library Description schema](../shell/library-schema-entry.md).
+Questo argomento descrive lo schema correlato ai connettori di ricerca federati. Per altre informazioni sulle librerie e sullo schema di descrizione della libreria, vedere [Schema di descrizione della libreria.](../shell/library-schema-entry.md)
 
 Questo argomento include le sezioni seguenti:
 
@@ -29,27 +29,27 @@ Questo argomento include le sezioni seguenti:
 
 ## <a name="what-are-search-connectors"></a>Che cosa sono i connettori di ricerca?
 
-I connettori di ricerca connettono gli utenti con i dati archiviati in servizi Web o posizioni di archiviazione remota. Con Windows 7, gli utenti possono installare i connettori di ricerca per le posizioni, ad esempio i servizi Web, in modo da cercare tali percorsi direttamente da Esplora risorse. I connettori di ricerca sono file di descrizione del connettore di ricerca (con \* estensione searchConnector-MS) che specificano come connettersi, inviare query a e ricevere i risultati dal percorso.
+I connettori di ricerca connettono gli utenti ai dati archiviati in servizi Web o posizioni di archiviazione remota. Con Windows 7, gli utenti possono installare i connettori di ricerca per le posizioni, ad esempio i servizi Web, in modo da eseguire ricerche in tali percorsi direttamente da Windows Explorer. I connettori di ricerca sono file di descrizione del connettore di ricerca (.searchConnector-ms) che specificano come connettersi, inviare query a e ricevere \* risultati dalla posizione.
 
-Oltre ai servizi Web, è possibile usare i connettori di ricerca per eseguire ricerche negli ambiti degli indici locali creati dai gestori del protocollo. Ad esempio, gli utenti possono eseguire ricerche nella posta elettronica indicizzata localmente con il gestore del protocollo MAPI usando un connettore di ricerca per l'archivio di posta elettronica.
+Oltre ai servizi Web, i connettori di ricerca possono essere usati per cercare gli ambiti dell'indice locale creati dai gestori di protocollo. Ad esempio, gli utenti possono cercare la posta elettronica indicizzata in locale con il gestore del protocollo MAPI usando un connettore di ricerca per tale archivio di posta elettronica.
 
 ## <a name="how-do-search-connector-description-files-work"></a>Come funzionano i file di descrizione del connettore di ricerca?
 
-Quando i file di descrizione del connettore di ricerca sono installati nei sistemi degli utenti, gli utenti possono aprire Esplora risorse, fare clic sul connettore Cerca nel riquadro di spostamento e immettere una query di ricerca. Esplora risorse Invia la query usando le informazioni del file di descrizione del connettore di ricerca, ad esempio il provider da usare e l'ambito della ricerca. I risultati vengono restituiti come elementi feed RSS o Atom e visualizzati agli utenti come se fossero elementi normali della shell.
+Quando i file di descrizione del connettore di ricerca sono installati nei sistemi degli utenti, gli utenti possono aprire Windows Explorer, fare clic sul connettore di ricerca nel riquadro di spostamento e immettere una query di ricerca. Windows Explorer invia la query usando le informazioni del file di descrizione del connettore di ricerca, ad esempio il provider da usare e l'ambito della ricerca. I risultati vengono restituiti come elementi feed RSS o Atom e visualizzati agli utenti come se fossero normali elementi della shell.
 
-La modalità di distribuzione del file di descrizione del connettore di ricerca dipende dal tipo di posizione supportata dal connettore di ricerca:
+La modalità di distribuzione del file di descrizione del connettore di ricerca dipende dal tipo di posizione supportato dal connettore di ricerca:
 
--   In un file di configurazione di OpenSearch (con \* estensione osdx) per il servizio Web
+-   In un OpenSearch file di configurazione (con estensione \* osdx) per il servizio Web
 -   Come parte dell'installazione del gestore di protocollo
 
-È necessario assicurarsi che si verifichi quanto segue quando un utente apre il file con estensione osdx o installa il gestore di protocollo:
+Quando un utente apre il file con estensione osdx o installa il gestore del protocollo, è necessario assicurarsi che si verifica quanto segue:
 
--   Il file con estensione searchconnector-ms viene creato nella cartella **ricerche di Windows** degli utenti (% USERPROFILE%/Searches).
--   Viene creato un collegamento al file. searchconnector-ms nella cartella **collegamenti** degli utenti (% USERPROFILE%/Links).
+-   Il file con estensione searchconnector-ms viene creato nella cartella ricerche Windows **utenti** (%userprofile%/Searches).
+-   Viene creato un collegamento al file .searchconnector-ms nella cartella **Collegamenti** degli utenti (%userprofile%/Links).
 
 ## <a name="what-is-the-search-connector-description-schema"></a>Che cos'è lo schema di descrizione del connettore di ricerca?
 
-Lo schema di descrizione del connettore di ricerca è un XML Schema che definisce la struttura dei file di descrizione del connettore di ricerca (con \* estensione searchConnector-MS). Ogni connettore di ricerca deve avere un file di descrizione del connettore di ricerca che specifichi come connettersi, inviare query a e ricevere i risultati dal percorso.
+Lo schema di descrizione del connettore di ricerca è uno schema XML che definisce la struttura dei file di descrizione del connettore di ricerca \* (.searchConnector-ms). Ogni connettore di ricerca deve avere un file di descrizione del connettore di ricerca che specifica come connettersi, inviare query a e ricevere risultati dalla posizione.
 
 ## <a name="what-are-the-major-parts-of-the-schema"></a>Quali sono le parti principali dello schema?
 
@@ -59,21 +59,21 @@ Nella tabella seguente sono elencate le parti principali dello schema.
 
 | Elementi figlio                                                                         | Descrizione                                                                                                                                                                             |
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [isSearchOnlyItem](search-schema-sconn-issearchonlyitem.md)                           | Indica se i percorsi supportati dal connettore di ricerca sono di sola ricerca o di ricerca ed esplorazione.                                                                                |
-| [isDefaultSaveLocation](search-schema-sconn-isdefaultsavelocation.md)                 | Solo per l'uso della libreria.                                                                                                                                                                   |
-| [isDefaultNonOwnerSaveLocation](search-schema-sconn-isdefaultnonownersavelocation.md) | Solo per l'uso della libreria.                                                                                                                                                                   |
+| [isSearchOnlyItem](search-schema-sconn-issearchonlyitem.md)                           | Identifica se i percorsi supportati dal connettore di ricerca sono di sola ricerca o ricerca ed esplorazione.                                                                                |
+| [isDefaultSaveLocation](search-schema-sconn-isdefaultsavelocation.md)                 | Solo per uso di librerie.                                                                                                                                                                   |
+| [isDefaultNonOwnerSaveLocation](search-schema-sconn-isdefaultnonownersavelocation.md) | Solo per uso di librerie.                                                                                                                                                                   |
 | [description](search-schema-sconn-description.md)                                     | Descrive il connettore di ricerca.                                                                                                                                                         |
 | [iconReference](search-schema-sconn-iconreference.md)                                 | Identifica la posizione di un'icona personalizzata per il connettore di ricerca.                                                                                                                      |
-| [Collegamentoimmagine](search-schema-sconn-imagelink.md)                                         | Identifica la posizione di un'anteprima personalizzata per il connettore di ricerca.                                                                                                                 |
-| [autore](search-schema-sconn-author.md)                                               | Identifica l'autore del connettore di ricerca.                                                                                                                                          |
+| [imageLink](search-schema-sconn-imagelink.md)                                         | Identifica la posizione di un'anteprima personalizzata per il connettore di ricerca.                                                                                                                 |
+| [Autore](search-schema-sconn-author.md)                                               | Identifica l'autore del connettore di ricerca.                                                                                                                                          |
 | [dateCreated](search-schema-sconn-datecreated.md)                                     | Identifica la data di creazione del connettore di ricerca.                                                                                                                              |
 | [templateInfo](search-schema-sconn-templateinfo.md)                                   | Specifica un tipo di cartella per il connettore di ricerca.                                                                                                                                       |
 | [locationProvider](search-schema-sconn-locationprovider.md)                           | Specifica il provider di ricerca che deve essere usato da questo connettore di ricerca.                                                                                                                      |
 | [ambito](search-schema-sconn-scope.md)                                                 | Specifica i percorsi da includere ed escludere dall'ambito di ricerca.                                                                                                                |
-| [propertyStore](search-schema-sconn-propertystore.md)                                 | Specifica il percorso di un [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) basato su XML per questo connettore di ricerca. Il **IPropertyStore** supporta i metadati aperti del connettore di ricerca. |
-| [includeInStartMenuScope](search-schema-sconn-includeinstartmenuscope.md)             | Specifica se la posizione rappresentata dal connettore di ricerca deve essere inclusa nell'ambito di ricerca del menu Start.                                                                 |
-| [dominio](search-schema-sconn-domain.md)                                               | Identifica il dominio di primo livello del connettore di ricerca.                                                                                                                                     |
-| [supportsAdvancedQuerySyntax](search-schema-sconn-supportsadvancedquerysyntax.md)     | Specifica se il connettore di ricerca supporta la sintassi di query avanzata (AQS).                                                                                                            |
+| [propertyStore](search-schema-sconn-propertystore.md)                                 | Specifica il percorso di un [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) basato su XML per questo connettore di ricerca. **IPropertyStore supporta** i metadati aperti del connettore di ricerca. |
+| [includeInStartMenuScope](search-schema-sconn-includeinstartmenuscope.md)             | Specifica se la posizione rappresentata dal connettore di ricerca deve essere inclusa nell'menu Start di ricerca dell'applicazione.                                                                 |
+| [Dominio](search-schema-sconn-domain.md)                                               | Identifica il dominio di primo livello del connettore di ricerca.                                                                                                                                     |
+| [supportsAdvancedQuerySyntax](search-schema-sconn-supportsadvancedquerysyntax.md)     | Specifica se il connettore di ricerca supporta la sintassi AQS (Advanced Query Syntax).                                                                                                            |
 | [isIndexed](search-schema-sconn-isindexed.md)                                         | Specifica se la posizione rappresentata dal connettore di ricerca è indicizzata.                                                                                                          |
 
 
@@ -132,8 +132,8 @@ Di seguito è riportato un esempio di un file di descrizione del connettore di r
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
--   Per ulteriori informazioni sullo schema di descrizione della libreria, vedere [Library Description schema](../shell/library-schema-entry.md).
--   Per altre informazioni sull'installazione di un connettore di ricerca, vedere [ricerca federata in Windows](-search-federated-search-overview.md).
+-   Per altre informazioni sullo schema di descrizione della libreria, vedere [Schema di descrizione della libreria.](../shell/library-schema-entry.md)
+-   Per altre informazioni sull'installazione di un connettore di ricerca, vedere [Ricerca federata in Windows](-search-federated-search-overview.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

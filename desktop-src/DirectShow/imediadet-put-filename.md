@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Put filename specifica il nome del file di origine per il rilevatore multimediale da usare.
+description: Il metodo put Filename specifica il nome del file di origine da usare per \_ il rilevamento multimediale.
 ms.assetid: 37bcc7ed-d2c1-4182-b85a-03bad92c5ba7
-title: 'IMediaDet: metodo:p ut_Filename (qedit. h)'
+title: Metodo IMediaDet::p ut_Filename (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 542b84d3a1eec79b8408c7642bc08680fdc036ab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9a64c0232c77d732bd172bbd46e1a29eef57ae10a96cbaf2a581aeeec5100a20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118398267"
 ---
-# <a name="imediadetput_filename-method"></a>IMediaDet: metodo:p UT \_ filename
+# <a name="imediadetput_filename-method"></a>Metodo IMediaDet::p ut \_ Filename
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `put_Filename` metodo specifica il nome del file di origine per il rilevatore multimediale da usare.
+Il metodo specifica il nome del file di origine da usare per `put_Filename` il rilevamento multimediale.
 
 Non chiamare questo metodo due volte sullo stesso oggetto MediaDet. Per usare questa interfaccia con più di un file di origine, creare istanze separate dell'oggetto MediaDet.
 
@@ -47,26 +47,26 @@ HRESULT put_Filename(
 
 <dl> <dt>
 
-*newVal* \[ in\]
+*newVal* \[ Pollici\]
 </dt> <dd>
 
-Nome del file di origine.
+Nome file dell'origine.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

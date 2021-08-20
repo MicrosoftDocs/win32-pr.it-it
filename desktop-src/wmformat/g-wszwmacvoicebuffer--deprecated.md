@@ -1,9 +1,9 @@
 ---
 title: g_wszWMACVoiceBuffer (Wmcodecdsp.h)
-description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec video e audio multimediale e API DSP). | g_wszWMACVoiceBuffer (Wmcodecdsp.h)
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api Codec audio e video e DSP. | g_wszWMACVoiceBuffer (Wmcodecdsp.h)
 ms.assetid: 0e31688f-cb7e-4b78-9780-aa14c2ffd874
 keywords:
-- g_wszWMACVoiceBuffer Windows Media Format
+- g_wszWMACVoiceBuffer windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "117848059"
 ---
 # <a name="g_wszwmacvoicebuffer"></a>g \_ wszWMACVoiceBuffer
 
-Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e [DSP.](/previous-versions//dd464626(v=vs.85))
 
 ## <a name="requirements"></a>Requisiti
 

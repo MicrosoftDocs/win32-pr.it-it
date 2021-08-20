@@ -19,7 +19,7 @@ ms.locfileid: "118553135"
 Windows Strumentazione gestione (WMI) è l'infrastruttura per i dati di gestione e le operazioni Windows sistemi operativi basati su Windows. È possibile scrivere script o applicazioni WMI per automatizzare le attività amministrative nei computer remoti, ma WMI fornisce anche dati di gestione ad altre parti del sistema operativo e dei prodotti, ad esempio System Center Operations Manager, in precedenza Microsoft Operations Manager (MOM) o gestione remota Windows[(WinRM).](/windows/desktop/WinRM/portal)
 
 > [!Note]  
-> La documentazione seguente è destinata agli sviluppatori e agli amministratori IT. Gli utenti finali che hanno riscontrato un messaggio di errore relativo a WMI devono passare a [Supporto tecnico Microsoft](https://support.microsoft.com/) e cercare il codice di errore visualizzato nel messaggio di errore. Per altre informazioni sulla risoluzione dei problemi relativi agli script WMI e al servizio WMI, vedere [WMI Isn't Working!](/previous-versions/tn-archive/ff406382(v=msdn.10))
+> La documentazione seguente è destinata agli sviluppatori e agli amministratori IT. Gli utenti finali che hanno riscontrato un messaggio di errore relativo a WMI devono passare [a Supporto tecnico Microsoft](https://support.microsoft.com/) e cercare il codice di errore visualizzato nel messaggio di errore. Per altre informazioni sulla risoluzione dei problemi relativi agli script WMI e al servizio WMI, vedere [WMI Isn't Working!](/previous-versions/tn-archive/ff406382(v=msdn.10))
 
  
 
@@ -40,7 +40,7 @@ WMI è progettato per i programmatori che usano C/C++, l'applicazione Microsoft 
 
 Per sviluppare applicazioni o provider di codice gestito in C# o Visual Basic .NET usando .NET Framework, vedere [WMI in .NET Framework](/previous-versions/dotnet/netframework-1.1/aa720264(v=vs.71)).
 
-Molti amministratori e professionisti IT accedono a WMI tramite PowerShell. Il cmdlet Get-WMI per PowerShell consente di recuperare informazioni per un repository WMI locale o remoto. Di conseguenza, alcuni argomenti e classi, in particolare nella sezione Creazione di client [WMI,](creating-wmi-clients.md) contengono esempi di PowerShell. Per altre informazioni sull'uso di PowerShell, vedere [Windows PowerShell](https://msdn.microsoft.com/library/dd835506.aspx) [e Scripting con Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx).
+Molti amministratori e professionisti IT accedono a WMI tramite PowerShell. Il cmdlet Get-WMI per PowerShell consente di recuperare informazioni per un repository WMI locale o remoto. Di conseguenza, alcuni argomenti e classi, in particolare nella sezione Creazione di client [WMI,](creating-wmi-clients.md) contengono esempi di PowerShell. Per altre informazioni sull'uso di PowerShell, vedere [Windows PowerShell](https://msdn.microsoft.com/library/dd835506.aspx) e [Scripting con Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx).
 
 ## <a name="run-time-requirements"></a>Requisiti di runtime
 

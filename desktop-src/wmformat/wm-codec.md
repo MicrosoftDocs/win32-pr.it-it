@@ -3,7 +3,7 @@ title: WM/Codec
 description: L'attributo WM/Codec contiene il nome del codec usato per codificare il contenuto.
 ms.assetid: 07e7828c-5a8d-4f68-84c0-acf37916a32c
 keywords:
-- WM/Codec windows Media Format
+- Formato wm/codec windows media
 topic_type:
 - apiref
 api_name:
@@ -29,7 +29,7 @@ g \_ wszWMCodec
 
 ## <a name="data-type"></a>Tipo di dati
 
-**STRINGA DI \_ TIPO \_ WMT**
+**STRINGA DI TIPO WMT \_ \_**
 
 ## <a name="see-also"></a>Vedi anche
 

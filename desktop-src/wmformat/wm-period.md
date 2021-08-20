@@ -29,7 +29,7 @@ g \_ wszWMPeriod
 
 ## <a name="data-type"></a>Tipo di dati
 
-**STRINGA DI \_ TIPO \_ WMT**
+**STRINGA DI TIPO WMT \_ \_**
 
 ## <a name="example"></a>Esempio
 
@@ -37,7 +37,7 @@ g \_ wszWMPeriod
 
 | Tipo file | Valore di esempio |
 |-----------|---------------|
-| Audio     | "Baroque"     |
+| Audio     | "Barocco"     |
 
 
 

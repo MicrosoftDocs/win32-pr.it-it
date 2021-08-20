@@ -1,9 +1,9 @@
 ---
-title: 'Texture1DArray:: MIPS. Funzione operator'
-description: 'Restituisce una variabile di risorsa di sola lettura. | Texture1DArray:: MIPS. Funzione operator'
+title: Texture1DArray::mips. Funzione operatore
+description: Restituisce una variabile di risorsa di sola lettura. | Texture1DArray::mips. Funzione operatore
 ms.assetid: b8f2ef78-4b50-4051-a00f-5b81cd77d1e0
 keywords:
-- MIPS. Funzione operator HLSL
+- Mips. Funzione operatore HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cbe2d1116839cede8dda69f1b0b8cf9a049595e9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: f1c4397f60c03968d7c8dba034865aa283a50e8d70b9836aaee86cb910d612ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104058538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117905322"
 ---
-# <a name="texture1darraymipsoperator----function"></a>Texture1DArray:: MIPS. Funzione operator
+# <a name="texture1darraymipsoperator----function"></a>Texture1DArray::mips. Funzione operatore
 
 Restituisce una variabile di risorsa di sola lettura.
 
@@ -37,21 +37,21 @@ R mips.Operator[][](
 
 <dl> <dt>
 
-*mipSlice* \[ in\]
+*mipSlice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Indice della sezione MIP.
+Indice della sezione mip.
 
 </dd> <dt>
 
-*pos* \[ in\]
+*pos* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint2**
 
-Posizione dell'indice. Il primo componente contiene la coordinata x. Il secondo componente indica la sezione della matrice desiderata.
+Posizione dell'indice. Il primo componente contiene la coordinata x. Il secondo componente indica la sezione di matrice desiderata.
 
 </dd> </dl>
 
@@ -59,7 +59,7 @@ Posizione dell'indice. Il primo componente contiene la coordinata x. Il secondo 
 
 Tipo: **R**
 
-Variabile di sola lettura di una risorsa.
+Variabile di risorsa di sola lettura.
 
 ## <a name="remarks"></a>Commenti
 
@@ -80,7 +80,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -95,7 +95,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Texture1DArray](sm5-object-texture1darray.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

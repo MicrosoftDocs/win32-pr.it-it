@@ -1,19 +1,19 @@
 ---
-description: Descrive le proporzioni previste per un tipo di supporto video.
+description: Descrive le proporzioni per un tipo di file multimediale video.
 ms.assetid: 6b32e257-c523-4859-8c8f-661c33810624
-title: Attributo MF_MT_SOURCE_CONTENT_HINT (Mfapi. h)
+title: MF_MT_SOURCE_CONTENT_HINT attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18180dcb562c7c3306c514a48f2b8948b2c329e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 01b6ebfd27e31d80425e9c852ca1eb5559bc499282fed76a64a62a12e26a1fee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117692148"
 ---
-# <a name="mf_mt_source_content_hint-attribute"></a>\_Attributo dell' \_ hint di contenuto di origine MF mt \_ \_
+# <a name="mf_mt_source_content_hint-attribute"></a>Attributo MF \_ MT \_ SOURCE CONTENT \_ \_ HINT
 
-Descrive le proporzioni previste per un tipo di supporto video.
+Descrive le proporzioni per un tipo di file multimediale video.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,9 +21,9 @@ Descrive le proporzioni previste per un tipo di supporto video.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore di questo attributo è un membro dell'enumerazione [**MFVideoSrcContentHintFlags**](/windows/desktop/api/mfapi/ne-mfapi-mfvideosrccontenthintflags) .
+Il valore di questo attributo è un membro [**dell'enumerazione MFVideoSrcContentHintFlags.**](/windows/desktop/api/mfapi/ne-mfapi-mfvideosrccontenthintflags)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 \[ \| app UWP\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -41,13 +41,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

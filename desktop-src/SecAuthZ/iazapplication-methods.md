@@ -4,16 +4,16 @@ ms.assetid: C969D653-9FEE-45B6-8DB1-4D778C836E9D
 title: Metodi IAzApplication
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fc8ffd17addcd2b8da01b4999a7c88f78dab8b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a18e75e8f95571039fcbfc9c653af29b2e99c4abcb7ee8e364d99193cde430ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232951"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118913497"
 ---
 # <a name="iazapplication-methods"></a>Metodi IAzApplication
 
-L'interfaccia [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) espone i metodi seguenti.
+[**L'interfaccia IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -41,7 +41,7 @@ L'interfaccia [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazap
 -   [**Metodo DeleteRole**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deleterole)
 -   [**Metodo DeleteScope**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletescope)
 -   [**Metodo DeleteTask**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletetask)
--   [**GetProperty (metodo)**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-getproperty)
+-   [**Metodo GetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-getproperty)
 -   [**Metodo InitializeClientContextFromName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-initializeclientcontextfromname)
 -   [**Metodo InitializeClientContextFromStringSid**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-initializeclientcontextfromstringsid)
 -   [**Metodo InitializeClientContextFromToken**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-initializeclientcontextfromtoken)
@@ -51,7 +51,7 @@ L'interfaccia [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazap
 -   [**Metodo OpenScope**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-openscope)
 -   [**Metodo OpenTask**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-opentask)
 -   [**Metodo SetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-setproperty)
--   [**Submit (metodo)**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-submit)
+-   [**Metodo Submit**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-submit)
 
  
 

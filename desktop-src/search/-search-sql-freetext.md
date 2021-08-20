@@ -27,7 +27,7 @@ FREETEXT
 
 Il riferimento alla colonna full-text è facoltativo. È possibile specificare una singola colonna o un alias di [raggruppamento](-search-sql-with-as.md) di colonne in base al quale viene testato il predicato FREETEXT. Quando la colonna full-text viene specificata come "ALL" o "", viene cercata tutte le proprietà del testo \* indicizzato. Anche se la colonna non deve essere una proprietà di testo, i risultati potrebbero non avere significato se la colonna è un altro tipo di dati. Il nome della colonna può essere [](-search-sql-identifiers.md)un identificatore normale o delimitato ed è necessario separarlo dalla condizione con una virgola. Se non viene specificata alcuna condizione full-text, viene usata la colonna Contents, ovvero il corpo del documento.
 
-È possibile specificare le impostazioni locali di ricerca per identificare il word breaker e i moduli gonfiali appropriati per la query di ricerca. I valori delle impostazioni locali validi sono Windows LCID (Standard Language Code Identifier). Ad esempio, 1033 è l'LCID Stati Uniti-inglese. Inserire l'LCID come ultimo elemento all'interno delle parentesi della clausola FREETEXT. Per informazioni importanti sulla ricerca e sulle lingue, vedere [Uso delle ricerche localizzate.](-search-sql-usinglocsearches.md)
+È possibile specificare le impostazioni locali di ricerca per identificare il word breaker e i moduli gonfiali appropriati per la query di ricerca. I valori delle impostazioni locali validi sono Windows LCID (Standard Language Code Identifier). Ad esempio, 1033 è l'LCID per Stati Uniti-inglese. Inserire l'LCID come ultimo elemento all'interno delle parentesi della clausola FREETEXT. Per informazioni importanti sulla ricerca e sulle lingue, vedere [Uso delle ricerche localizzate.](-search-sql-usinglocsearches.md)
 
 > [!Note]  
 > Le impostazioni locali di ricerca predefinite sono le impostazioni locali predefinite del sistema.
@@ -36,7 +36,7 @@ Il riferimento alla colonna full-text è facoltativo. È possibile specificare u
 
 È necessario racchiudere la parte relativa alla condizione freetext tra virgolette singole e deve essere costituita da uno o più termini di ricerca. Il predicato FREETEXT non supporta operazioni logiche. Per cercare una frase come se fosse una singola parola, racchiuderla tra virgolette doppie.
 
-Quando si usa il predicato FREETEXT, i risultati della query di ricerca restituiscono documenti contenenti tutti i termini di ricerca. Non è necessario che i termini vengano visualizzati in un ordine specifico. I documenti che contengono più termini di ricerca hanno valori di colonna di rango superiore.
+Quando si usa il predicato FREETEXT, i risultati della query di ricerca restituiscono documenti contenenti tutti i termini di ricerca. Non è necessario che i termini vengano visualizzati in un ordine specifico. I documenti che contengono più termini di ricerca hanno valori di colonna di rango più elevati.
 
 ## <a name="examples"></a>Esempio
 

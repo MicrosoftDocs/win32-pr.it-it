@@ -1,7 +1,7 @@
 ---
 description: Rilascia un oggetto di output protetto.
 ms.assetid: e9b09fd7-9db2-4189-b347-55f5fede2f80
-title: DestroyOPMProtectedOutput (funzione)
+title: Funzione DestroyOPMProtectedOutput
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,17 +13,17 @@ api_type:
 - DllExport
 api_location:
 - gdi32.dll
-ms.openlocfilehash: 0a7ce8551cc5e01e7a2801dd129d5dc6903af697
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a30f4f4666b2da2e9b1fc38c90f51da9264f4656f82ac11f7abd55b498419e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118742370"
 ---
-# <a name="destroyopmprotectedoutput-function"></a>DestroyOPMProtectedOutput (funzione)
+# <a name="destroyopmprotectedoutput-function"></a>Funzione DestroyOPMProtectedOutput
 
 > [!IMPORTANT]
-> Questa funzione viene utilizzata da [Output Protection Manager](output-protection-manager.md) (OPM) per accedere alla funzionalità nel driver di visualizzazione. Le applicazioni non devono chiamare questa funzione.
+> Questa funzione viene usata da [Output Protection Manager](output-protection-manager.md) (OPM) per accedere alle funzionalità nel driver video. Le applicazioni non devono chiamare questa funzione.
 
  
 
@@ -44,7 +44,7 @@ NTSTATUS WINAPI DestroyOPMProtectedOutput(
 
 <dl> <dt>
 
-*opoOPMProtectedOutput* \[ in\]
+*opoOPMProtectedOutput* \[ Pollici\]
 </dt> <dd>
 
 Handle per l'oggetto di output protetto. Questo handle viene ottenuto chiamando [**CreateOPMProtectedOutputs**](createopmprotectedoutputs.md).
@@ -53,11 +53,11 @@ Handle per l'oggetto di output protetto. Questo handle viene ottenuto chiamando 
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, viene restituito **lo stato \_ Success**. In caso contrario, restituisce un codice di errore **NTSTATUS** .
+Se il metodo ha esito positivo, restituisce **STATUS \_ SUCCESS**. In caso contrario, restituisce un **codice di errore NTSTATUS.**
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per eseguire il collegamento dinamico a Gdi32.dll.
+A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per il collegamento dinamico Gdi32.dll.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ A questa funzione non è associata alcuna libreria di importazione. Per chiamare
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Gdi32.dll</dt> </dl> |
 
 
@@ -75,10 +75,10 @@ A questa funzione non è associata alcuna libreria di importazione. Per chiamare
 
 <dl> <dt>
 
-[Funzioni di OPM](opm-functions.md)
+[Funzioni OPM](opm-functions.md)
 </dt> <dt>
 
-[Gestione protezione output](output-protection-manager.md)
+[Output Protection Manager](output-protection-manager.md)
 </dt> </dl>
 
  

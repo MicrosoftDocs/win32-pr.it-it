@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà SystemParameters. ColumnsKeyMost'
-title: Proprietà SystemParameters. ColumnsKeyMost
+description: Altre informazioni sulla proprietà SystemParameters.ColumnsKeyMost
+title: SystemParameters.ColumnsKeyMost - proprietà
 TOCTitle: 'ColumnsKeyMost property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.SystemParameters.ColumnsKeyMost
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.columnskeymost(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3ca856e8f5a01f265a234f07b8868440594fc678
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 034aede7e21a51c1c8e9743afa425f540e4d61df737894aeb83053d6ceb8e5dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118485310"
 ---
-# <a name="systemparameterscolumnskeymost-property"></a>Proprietà SystemParameters. ColumnsKeyMost
+# <a name="systemparameterscolumnskeymost-property"></a>SystemParameters.ColumnsKeyMost - proprietà
 
 Ottiene il numero massimo di componenti in una chiave di ordinamento o di indice.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,7 +57,7 @@ public static int ColumnsKeyMost { get; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -65,6 +65,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [SystemParameters (classe)](./systemparameters-class.md)
 
-[Membri SystemParameters](./systemparameters-members.md)
+[Membri di SystemParameters](./systemparameters-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

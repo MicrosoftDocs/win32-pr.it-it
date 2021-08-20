@@ -3,7 +3,7 @@ title: Metodo GetNext IWMDRMLicense (Wmdrmsdk.h)
 description: Il metodo GetNext carica le informazioni sull'elemento successivo nell'elenco.
 ms.assetid: 5ef91751-2883-4a8e-9908-7a6dfe6d2af3
 keywords:
-- Metodo GetNext windows Media Format
+- Metodo GetNext per Windows Media Format
 - Metodo GetNext windows Media Format , interfaccia IWMDRMLicense
 - Interfaccia IWMDRMLicense windows Media Format , metodo GetNext
 topic_type:
@@ -43,13 +43,13 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                | Descrizione                                              |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>**NS \_ E \_ DRM RIV TROPPO \_ \_ \_ PICCOLO**</dt> </dl> | È necessario un elenco di revoche di contenuto aggiornato.<br/> |
+| <dl> <dt>**NS \_ E \_ DRM \_ RIV \_ TOO \_ SMALL**</dt> </dl> | È necessario un elenco di revoche di contenuto aggiornato.<br/> |
 | <dl> <dt>**ERRORE \_ NESSUN \_ ALTRO \_ ELEMENTO**</dt> </dl>      | Non sono presenti altri elementi nell'elenco.<br/>          |
 | <dl> <dt>**S \_ OK**</dt> </dl>                       | Il metodo è riuscito.<br/>                         |
 

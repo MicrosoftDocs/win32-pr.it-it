@@ -3,7 +3,7 @@ title: TB_GETBUTTONTEXT messaggio (Commctrl.h)
 description: Recupera il testo visualizzato di un pulsante su una barra degli strumenti.
 ms.assetid: 16dd7181-a404-4056-b084-05f49f5a4b14
 keywords:
-- TB_GETBUTTONTEXT dei messaggi Windows controllo
+- TB_GETBUTTONTEXT dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -51,7 +51,7 @@ Restituisce la lunghezza, in caratteri, della stringa a cui punta *lParam*. La l
 
 ## <a name="remarks"></a>Commenti
 
-**Avviso di sicurezza:** L'uso non corretto di questo messaggio potrebbe compromettere la sicurezza del programma. Questo messaggio non consente di conoscere le dimensioni del buffer. Se si usa questo messaggio, chiamare prima il messaggio passando **NULL** in *lParam*, verrà restituito il numero di caratteri, esclusi **i VALORI NULL** necessari. Chiamare quindi il messaggio una seconda volta per recuperare la stringa. Prima di continuare, vedere Considerazioni sulla [sicurezza: Microsoft Windows Controlli.](sec-comctls.md)
+**Avviso di sicurezza:** L'uso non corretto di questo messaggio potrebbe compromettere la sicurezza del programma. Questo messaggio non consente di conoscere le dimensioni del buffer. Se si usa questo messaggio, chiamare prima il messaggio passando **NULL** in *lParam*, in questo modo viene restituito il numero di caratteri, esclusi **i valori NULL** necessari. Chiamare quindi il messaggio una seconda volta per recuperare la stringa. Prima di continuare, vedere Considerazioni sulla [sicurezza: Microsoft Windows Controlli.](sec-comctls.md)
 
 La stringa restituita corrisponde al testo attualmente visualizzato dal pulsante.
 

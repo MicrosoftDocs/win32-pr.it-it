@@ -1,6 +1,6 @@
 ---
 title: Come creare un controllo di modifica su più righe
-description: In questo argomento viene illustrato come implementare un elaboratore di testo semplice aggiungendo un controllo di modifica su più righe all'area client di una finestra.
+description: Questo argomento illustra come implementare un semplice elaboratore di testi aggiungendo un controllo di modifica su più righe all'area client di una finestra.
 ms.assetid: B955CC42-F89F-48EB-A19A-ADA6E5273EF6
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "117829072"
 ---
 # <a name="how-to-create-a-multiline-edit-control"></a>Come creare un controllo di modifica su più righe
 
-In questo argomento viene illustrato come implementare un elaboratore di testo semplice aggiungendo un controllo di modifica su più righe all'area client di una finestra. Usando il controllo di modifica su più righe, l'utente può selezionare i comandi di modifica da un menu. Questi comandi consentono all'utente di eseguire semplici operazioni di modifica, ad esempio annullare un'azione precedente, tagliare o copiare le selezioni negli Appunti, incollare il testo dagli Appunti ed eliminare la selezione corrente.
+Questo argomento illustra come implementare un semplice elaboratore di testi aggiungendo un controllo di modifica su più righe all'area client di una finestra. Usando il controllo di modifica su più righe, l'utente può selezionare i comandi di modifica da un menu. Questi comandi consentono all'utente di eseguire semplici operazioni di modifica, ad esempio annullare un'azione precedente, tagliare o copiare le selezioni negli Appunti, incollare testo dagli Appunti ed eliminare la selezione corrente.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
@@ -31,12 +31,12 @@ In questo argomento viene illustrato come implementare un elaboratore di testo s
 
 L'applicazione deve includere il codice per creare un'istanza di e inizializzare un controllo di modifica su più righe e quindi elaborare i comandi di modifica dell'utente.
 
-L'esempio di codice C++ seguente implementa gran parte delle funzionalità di un elaboratore di testo semplice aggiungendo un controllo di modifica su più righe all'area client di una finestra. Il sistema esegue automaticamente operazioni di ritorno a capo automatico per il controllo di modifica e gestisce anche l'elaborazione per la barra di scorrimento verticale (creata specificando [**ES \_ AUTOVSCROLL**](edit-control-styles.md) nella chiamata alla [**funzione CreateWindow).**](/windows/desktop/api/winuser/nf-winuser-createwindowa)
+L'esempio di codice C++ seguente implementa gran parte delle funzionalità di un semplice elaboratore di testi aggiungendo un controllo di modifica su più righe all'area client di una finestra. Il sistema esegue automaticamente operazioni di ritorno a capo automatico per il controllo di modifica e gestisce anche l'elaborazione per la barra di scorrimento verticale (creata specificando [**ES \_ AUTOVSCROLL**](edit-control-styles.md) nella chiamata alla [**funzione CreateWindow).**](/windows/desktop/api/winuser/nf-winuser-createwindowa)
 
-I comandi di modifica dell'utente vengono inviati al processo della finestra tramite [**messaggi di notifica WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
+I comandi di modifica utente vengono inviati al processo della finestra tramite [**messaggi di notifica WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 > [!Note]  
-> Se la finestra include la Windows barra multifunzione, le dimensioni del controllo di modifica devono essere regolate in base all'altezza della barra multifunzione. Per altre informazioni, vedere Windows [Ribbon Framework.](/windows/desktop/windowsribbon/-uiplat-windowsribbon-entry)
+> Se la finestra include la barra Windows, le dimensioni del controllo di modifica devono essere regolate in base all'altezza della barra multifunzione. Per altre informazioni, vedere Windows [Ribbon Framework](/windows/desktop/windowsribbon/-uiplat-windowsribbon-entry).
 
  
 
@@ -169,7 +169,7 @@ LRESULT CALLBACK MainWndProc(HWND hwnd,      // window handle
 [Uso dei controlli di modifica](/windows/desktop/Controls/using-edit-controls)
 </dt> <dt>
 
-[Controllo Edit](edit-controls.md)
+[Controllo Di modifica](edit-controls.md)
 </dt> </dl>
 
  

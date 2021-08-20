@@ -1,7 +1,7 @@
 ---
-description: Flag che indica se il filtro ha inviato l' \_ evento di completamento EC.
+description: Flag che indica se il filtro ha pubblicato l'evento EC \_ COMPLETE.
 ms.assetid: db739f08-cd12-4b9d-91f2-970db3d823c4
-title: 'Membro CBaseRenderer:: m_bEOSDelivered (Renbase. h)'
+title: Membro CBaseRenderer::m_bEOSDelivered (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: eff219f560c6570845002f2a7e27bf47da93e1e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5df1599c4a81a27094ed251e81538e11de852dd13b15a9d3e27385e0d274919e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403190"
 ---
-# <a name="cbaserendererm_beosdelivered-member"></a>Membro bEOSDelivered di CBaseRenderer:: m \_
+# <a name="cbaserendererm_beosdelivered-member"></a>Membro BEOSDelivered CBaseRenderer::m \_
 
-Flag che indica se il filtro ha inviato l' \_ evento di completamento EC.
+Flag che indica se il filtro ha pubblicato l'evento EC \_ COMPLETE.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ BOOL m_bEOSDelivered;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

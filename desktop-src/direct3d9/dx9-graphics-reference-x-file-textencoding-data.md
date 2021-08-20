@@ -1,21 +1,21 @@
 ---
-description: Gli oggetti dati contengono i dati effettivi o un riferimento a tali dati. Ogni oggetto dati dispone di un modello corrispondente che specifica il tipo di dati. Nelle sezioni seguenti vengono illustrati il form e le parti degli oggetti dati.
+description: Gli oggetti dati contengono i dati effettivi o un riferimento a questi dati. Ogni oggetto dati ha un modello corrispondente che specifica il tipo di dati. Le sezioni seguenti illustrano il modulo e le parti degli oggetti dati.
 ms.assetid: 61dbe241-2658-4dd0-af89-3db204b56fad
-title: Data (formato file X, codifica testo)
+title: Dati (formato di file X, codifica del testo)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae1af117a0207ce804ccacd397bb990fe5f43c94
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0acd4222e2878b882b8777e3ba22e28f2d213fb5f3550686baf29b4ed6719e5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730202"
 ---
-# <a name="data-x-file-format-text-encoding"></a>Data (formato file X, codifica testo)
+# <a name="data-x-file-format-text-encoding"></a>Dati (formato di file X, codifica del testo)
 
-Gli oggetti dati contengono i dati effettivi o un riferimento a tali dati. Ogni oggetto dati dispone di un modello corrispondente che specifica il tipo di dati. Nelle sezioni seguenti vengono illustrati il form e le parti degli oggetti dati.
+Gli oggetti dati contengono i dati effettivi o un riferimento a questi dati. Ogni oggetto dati ha un modello corrispondente che specifica il tipo di dati. Le sezioni seguenti illustrano il modulo e le parti degli oggetti dati.
 
-## <a name="form-identifier-and-name"></a>Form, identificatore e nome
+## <a name="form-identifier-and-name"></a>Modulo, identificatore e nome
 
 Gli oggetti dati hanno il formato seguente.
 
@@ -30,15 +30,15 @@ Gli oggetti dati hanno il formato seguente.
 
 
 
-L'identificatore è obbligatorio e deve corrispondere a una primitiva o a un tipo di dati definito in precedenza. Il nome è tuttavia facoltativo.
+L'identificatore è obbligatorio e deve corrispondere a un tipo di dati definito in precedenza o a una primitiva. Tuttavia, il nome è facoltativo.
 
 ## <a name="data-members"></a>Membri dei dati
 
-I membri dati possono essere uno dei seguenti: oggetto dati, riferimento ai dati, elenco di numeri interi, elenco float o elenco stringhe.
+I membri dati possono essere uno dei seguenti: oggetto dati, riferimento ai dati, elenco di numeri interi, elenco float o elenco di stringhe.
 
 Un oggetto dati è un oggetto dati annidato. Ciò consente di esprimere la natura gerarchica del formato di file. I tipi di oggetti dati annidati consentiti nella gerarchia possono essere limitati.
 
-Un riferimento ai dati è un riferimento a un oggetto dati precedentemente rilevato, come illustrato nell'esempio seguente.
+Un riferimento ai dati è un riferimento a un oggetto dati rilevato in precedenza, come illustrato nell'esempio seguente.
 
 
 ```
@@ -51,7 +51,7 @@ Un riferimento ai dati è un riferimento a un oggetto dati precedentemente rilev
 
 
 
-Un elenco di numeri interi è un elenco di numeri interi separato da punti e virgola, come illustrato nell'esempio seguente.
+Un elenco di numeri interi è un elenco di numeri interi separati da punto e virgola, come illustrato nell'esempio seguente.
 
 
 ```
@@ -60,7 +60,7 @@ Un elenco di numeri interi è un elenco di numeri interi separato da punti e vir
 
 
 
-Un elenco float è un elenco delimitato da punti e virgola di float, come illustrato nell'esempio seguente.
+Un elenco float è un elenco di valori float separati da punto e virgola, come illustrato nell'esempio seguente.
 
 
 ```
@@ -69,7 +69,7 @@ Un elenco float è un elenco delimitato da punti e virgola di float, come illust
 
 
 
-Un elenco di stringhe è un elenco di stringhe delimitato da punto e virgola, come illustrato nell'esempio seguente.
+Un elenco di stringhe è un elenco di stringhe separate da punto e virgola, come illustrato nell'esempio seguente.
 
 
 ```

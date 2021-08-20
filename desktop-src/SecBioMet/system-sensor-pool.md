@@ -1,32 +1,32 @@
 ---
 title: Pool di sensori di sistema
-description: Raccolta di unità biometriche condivisibili che consentono di accedere ai servizi di autenticazione di Windows. Questo pool viene usato da Winlogon, UAC e da qualsiasi altro client che associa un SID a un modello biometrico specifico.
+description: Raccolta di unità biometriche condivisibili che forniscono l'accesso ai Windows di autenticazione. Questo pool viene usato da Winlogon, controllo dell'account utente e da qualsiasi altro client che associa un SID a un modello biometrico specifico.
 ms.assetid: 308306a9-e12c-4ff6-92c3-a36667a5e548
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 729ae9487b91b57b2e9568817c92e44b4b7197f7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3c73a187c81812355d574b6c4fb867aad8f832c504f7ec79289879565cf73bcf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118911614"
 ---
 # <a name="system-sensor-pool"></a>Pool di sensori di sistema
 
-Il pool di sensori di sistema è una raccolta di unità biometriche condivisibili che consentono di accedere ai servizi di autenticazione di Windows. Questo pool viene usato da Winlogon, UAC e da qualsiasi altro client che associa un SID a un modello biometrico specifico. Unità biometriche nel pool di sistema:
+Il pool di sensori di sistema è una raccolta di unità biometriche condivisibili che forniscono l'accesso ai Windows di autenticazione. Questo pool viene usato da Winlogon, controllo dell'account utente e da qualsiasi altro client che associa un SID a un modello biometrico specifico. Unità biometriche nel pool di sistema:
 
 -   Può essere condiviso da più applicazioni client.
--   Inviare notifiche di eventi generate dal completamento delle operazioni biometriche solo all'applicazione con lo stato attivo della finestra corrente.
--   Usare i SID dell'account per rappresentare le identità del modello. Tutti i modelli associati a un singolo account utente sono contrassegnati con il SID assegnato a tale account.
--   Dipende dallo spazio di archiviazione dei modelli attendibile fornito dal servizio biometrico di Windows.
+-   Inviare le notifiche degli eventi generate dal completamento delle operazioni biometriche solo all'applicazione con lo stato attivo della finestra corrente.
+-   Usare i SID dell'account per rappresentare le identità del modello. Tutti i modelli associati a un singolo account utente vengono contrassegnati con il SID assegnato a tale account.
+-   Dipendere dall'archiviazione dei modelli attendibile fornita dal Windows biometrico.
 
 Un'unità biometrica può essere inclusa nel pool di sistema se può essere:
 
--   Configurato per operare in modalità di base e agire solo come dispositivo di acquisizione biometrico.
--   Configurata per il funzionamento in modalità avanzata ma senza archiviazione del modello di onboarding. Ovvero, deve utilizzare l'adattatore di archiviazione e l'archivio modelli forniti da Microsoft.
--   Configurato per operare in modalità avanzata, contiene l'archiviazione del modello di onboarding e può generare gli hash necessari.
+-   Configurato per operare in modalità di base e fungere solo da dispositivo di acquisizione biometrica.
+-   Configurato per operare in modalità avanzata, ma senza archiviazione modello di onboard. Ciò significa che deve usare l'adapter di archiviazione e l'archivio modelli forniti da Microsoft.
+-   Configurato per operare in modalità avanzata, contiene l'archiviazione dei modelli di onboarding e può generare gli hash necessari.
 
-Quando un nuovo dispositivo sensore viene collegato, il servizio biometrico di Windows crea un'unità biometrica e tenta di configurare tale unità per l'uso da parte del pool di sensori di sistema. Se la configurazione ha esito negativo, l'unità biometrica viene posizionata nel pool di sensori non assegnati.
+Quando un nuovo dispositivo sensore è collegato, il servizio biometrico Windows crea un'unità biometrica per esso e tenta di configurare tale unità per l'uso da parte del pool di sensori di sistema. Se la configurazione non riesce, l'unità biometrica viene inserita nel pool di sensori non assegnati.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -41,9 +41,9 @@ Quando un nuovo dispositivo sensore viene collegato, il servizio biometrico di W
 [Comportamento del pool di sistema](system-pool-behavior.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,38 +1,38 @@
 ---
 title: Abilitazione delle modifiche dello schema nel master schema
-description: Per impostazione predefinita, la modifica dello schema è disabilitata in tutti i controller di dominio Windows 2000.
+description: Per impostazione predefinita, la modifica dello schema è disabilitata in Windows di dominio 2000.
 ms.assetid: 08806a9e-283c-48d9-9557-bcb9719fc13c
 ms.tgt_platform: multiple
 keywords:
-- Abilitazione delle modifiche dello schema nell'annuncio master dello schema
+- Abilitazione delle modifiche dello schema in AD master schema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4840c9928011179ce303c83f4d00ef598f38eb64
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 251716adaae4dab153b749b4db361bf7adca9b6aca2a800cec1b9d73943c595b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118191387"
 ---
 # <a name="enabling-schema-changes-at-the-schema-master"></a>Abilitazione delle modifiche dello schema nel master schema
 
-Per impostazione predefinita, la modifica dello schema è disabilitata in tutti i controller di dominio Windows 2000. La possibilità di aggiornare lo schema è controllata dal valore del registro di sistema seguente nel controller di dominio master dello schema:
+Per impostazione predefinita, la modifica dello schema è disabilitata in Windows di dominio 2000. La possibilità di aggiornare lo schema è controllata dal seguente valore del Registro di sistema nel controller di dominio master dello schema:
 
 ```
 HKEY_LOCAL_MACHINE
-   System
-      CurrentControlSet
-         Services
-            NTDS
-               Parameters
-                  Schema Update Allowed
+   System
+      CurrentControlSet
+         Services
+            NTDS
+               Parameters
+                  Schema Update Allowed
 ```
 
-Questo valore del registro di sistema è un valore **reg \_ DWORD** . Se questo valore non è presente o contiene zero (0), la modifica dello schema è disabilitata. Se questo valore è presente e contiene un valore diverso da zero, la modifica dello schema è abilitata.
+Questo valore del Registro di sistema è **un \_ valore DWORD REG.** Se questo valore non è presente o contiene zero (0), la modifica dello schema è disabilitata. Se questo valore è presente e contiene un valore diverso da zero, la modifica dello schema è abilitata.
 
-Lo snap-in MMC di gestione dello schema consente all'utente di abilitare o disabilitare manualmente la modifica dello schema. La modifica dello schema può essere abilitata o disabilitata a livello di codice modificando questo valore del registro di sistema nel controller di dominio master dello schema.
+Lo snap-in MMC Gestione schemi offre all'utente la possibilità di abilitare o disabilitare manualmente la modifica dello schema. La modifica dello schema può essere abilitata o disabilitata a livello di codice modificando questo valore del Registro di sistema nel controller di dominio master dello schema.
 
-Nella funzione C++ seguente viene illustrato come determinare se lo schema può essere modificato in un master schema specificato.
+La funzione C++ seguente illustra come determinare se lo schema può essere modificato in un master schema specificato.
 
 
 ```C++
@@ -109,7 +109,7 @@ HRESULT IsSchemaUpdateEnabled(
 
 
 
-La seguente funzione C++ illustra come abilitare o disabilitare la modifica dello schema in un master schema specificato.
+La funzione C++ seguente illustra come abilitare o disabilitare la modifica dello schema in un master schema specificato.
 
 
 ```C++
@@ -191,9 +191,9 @@ HRESULT EnableSchemaUpdate(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

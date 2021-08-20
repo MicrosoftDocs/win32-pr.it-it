@@ -17,17 +17,17 @@ Notifica a una trasformazione Media Foundation (MFT) che un flusso di input è t
 
 ## <a name="message-parameter"></a>Parametro del messaggio
 
-Il *parametro ulParam* contiene l'identificatore del flusso di input, specificato come **valore DWORD.** Nelle applicazioni a 64 bit, inserire questo valore nei 32 bit inferiori di **ULONG \_ PTR.**
+Il *parametro ulParam* contiene l'identificatore del flusso di input, specificato come **valore DWORD.** Nelle applicazioni a 64 bit inserire questo valore nei 32 bit inferiori del **\_ PTR ULONG.**
 
 ## <a name="remarks"></a>Commenti
 
 Per inviare questo messaggio, chiamare [**IMFTransform::P rocessMessage**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage).
 
-Il client non deve inviare questo messaggio.
+Il client non è necessario per inviare questo messaggio.
 
-Al termine di un flusso, il client può chiamare [**di nuovo ProcessInput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processinput) per inviare nuovi dati per tale flusso. In tal caso, il client deve impostare l'attributo discontinuity (attributo [**MFSampleExtension \_ Discontinuity)**](mfsampleextension-discontinuity-attribute.md) nel primo esempio di input dopo la fine del flusso. Il client deve sempre impostare questo attributo nel primo nuovo esempio dopo la fine di un flusso, indipendentemente dal fatto che il client ha inviato il messaggio **MFT \_ MESSAGE NOTIFY END OF \_ \_ \_ \_ STREAM.** Per altre informazioni sulla gestione delle discontinuità, vedere [Modello di elaborazione MFT di base.](basic-mft-processing-model.md)
+Al termine di un flusso, il client può chiamare [**di nuovo ProcessInput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processinput) per inviare nuovi dati per tale flusso. In tal caso, il client deve impostare l'attributo discontinuità [**(attributo MFSampleExtension \_ Discontinuity)**](mfsampleextension-discontinuity-attribute.md) nel primo esempio di input al termine del flusso. Il client deve sempre impostare questo attributo nel primo nuovo esempio al termine di un flusso, indipendentemente dal fatto che il client ha inviato il messaggio **MFT \_ MESSAGE NOTIFY END OF \_ \_ \_ \_ STREAM.** Per altre informazioni sulla gestione delle discontinuità, vedere [Modello di elaborazione MFT di base.](basic-mft-processing-model.md)
 
-Dopo aver inviato questo messaggio per ogni flusso di input, il client in genere invia un comando **MFT \_ MESSAGE COMMAND \_ \_ DRAIN** e quindi raccoglie l'output rimanente. Tuttavia, il client non è necessario per svuotare il MFT. Se il client non svuota l'MFT, il MFT in genere rimuoverà tutti i dati non elaborato alla successiva chiamata a [**ProcessInput,**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processinput)quando rileva la discontinuità del flusso. In alternativa, il client potrebbe scaricare MFT prima di chiamare **ProcessInput**.
+Dopo aver inviato questo messaggio per ogni flusso di input, il client in genere invia un comando **MFT \_ MESSAGE COMMAND \_ \_ DRAIN** e quindi raccoglie l'output rimanente. Tuttavia, il client non è necessario per svuotare il MFT. Se il client non svuota la MFT, MFT in genere scarterà tutti i dati non elaborati alla successiva chiamata a [**ProcessInput,**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processinput)quando rileva la discontinuità del flusso. In alternativa, il client potrebbe scaricare MFT prima di chiamare **ProcessInput**.
 
 Questo messaggio non rimuove il flusso di input né reimposta il tipo di supporto.
 
@@ -41,8 +41,8 @@ Non è necessario un MFT per rispondere a questo messaggio.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                           |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                     |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
 | Intestazione<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 

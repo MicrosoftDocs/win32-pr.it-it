@@ -1,5 +1,5 @@
 ---
-description: Microsoft Windows le query di ricerca non supportano la distinzione tra maiuscole e minuscole.
+description: Microsoft Windows query di ricerca non fa distinzione tra maiuscole e minuscole.
 ms.assetid: 45a3305c-1cfe-4e11-a476-1a2a64f31de6
 title: Distinzione tra maiuscole e minuscole nelle ricerche
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117863694"
 ---
 # <a name="case-sensitivity-in-searches"></a>Distinzione tra maiuscole e minuscole nelle ricerche
 
-Microsoft Windows le query di ricerca non supportano la distinzione tra maiuscole e minuscole. Sono incluse le parole chiave di query (SELECT è identico a Select, select e sELect) e i termini di ricerca. Se un identificatore o un valore letterale usa caratteri Unicode con semantica di mapping tra maiuscole e minuscole, il motore di ricerca considera equivalenti tutti i casi.
+Microsoft Windows query di ricerca non fa distinzione tra maiuscole e minuscole. Sono incluse le parole chiave di query (SELECT è identica a Select, select e sELect) e i termini di ricerca. Se un identificatore o un valore letterale usa caratteri Unicode con semantica di mapping tra maiuscole e minuscole, il motore di ricerca considera tutti i case equivalenti.
 
  
 

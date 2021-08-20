@@ -1,5 +1,5 @@
 ---
-description: È possibile usare il programma di installazione per aggiungere le informazioni in un database in un altro database eseguendo un'operazione di merge.
+description: È possibile usare il programma di installazione per aggiungere le informazioni in un database in un altro database eseguendo un'unione.
 ms.assetid: c53ef3d2-b3dc-4cd1-bd98-a856a223917f
 title: Unione di database
 ms.topic: article
@@ -13,9 +13,9 @@ ms.locfileid: "118628707"
 ---
 # <a name="merging-databases"></a>Unione di database
 
-È possibile usare il programma di installazione per aggiungere le informazioni in un database in un altro database eseguendo un'operazione di merge. [Le unioni e le trasformazioni](merges-and-transforms.md) operano su un intero database e un'unione combina due database in un unico database. Le unioni sono utili per i team di sviluppo perché consentono di dividere il database di installazione di un'applicazione di grandi dimensioni in parti più piccole e quindi di ricombinarlo nel database di installazione completo in un secondo momento.
+È possibile usare il programma di installazione per aggiungere le informazioni in un database in un altro database eseguendo un'unione. [Le unioni e le trasformazioni](merges-and-transforms.md) operano su un intero database e un'unione combina due database in uno. Le unioni sono utili per i team di sviluppo perché consentono al database di installazione di applicazioni di grandi dimensioni di essere suddivise in parti più piccole e quindi ricombinate nel database di installazione completo in un secondo momento.
 
-**Per unire più database componenti in un singolo database completo**
+**Per unire più database dei componenti in un singolo database completo**
 
 1.  Sviluppare separatamente i database dei componenti parziali.
 2.  Unire ogni database dei componenti nel database principale del prodotto chiamando la [**funzione MsiDatabaseMerge.**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasemergea)

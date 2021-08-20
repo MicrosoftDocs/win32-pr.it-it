@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione OpenDatabaseGrbit'
+description: Altre informazioni sull'enumerazione OpenDatabaseGrbit
 title: Enumerazione OpenDatabaseGrbit
 TOCTitle: OpenDatabaseGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.OpenDatabaseGrbit
@@ -30,21 +30,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d14fb779ec02137f6a4fce1cfdd92f46dedcb832
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2bfd131d448157b44e861de4d8c167a074a3c1cefb361c3dffe085793f40c224
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117890753"
 ---
 # <a name="opendatabasegrbit-enumeration"></a>Enumerazione OpenDatabaseGrbit
 
-Opzioni per [JetOpenDatabase (JET_SESID, String, String, JET_DBID, OpenDatabaseGrbit)](./api.jetopendatabase-method.md).
+Opzioni per [JetOpenDatabase(JET_SESID, String, String, JET_DBID, OpenDatabaseGrbit)](./api.jetopendatabase-method.md).
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -80,12 +80,12 @@ public enum OpenDatabaseGrbit
 <tr class="even">
 <td></td>
 <td>ReadOnly</td>
-<td>Impedisce le modifiche al database.</td>
+<td>Impedisce modifiche al database.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>Esclusivo</td>
-<td>Consente la connessione di un database a una singola sessione. In genere, diverse sessioni possono aprire un database.</td>
+<td>Consente a una sola sessione di collegare un database. In genere, più sessioni possono aprire un database.</td>
 </tr>
 </tbody>
 </table>
@@ -95,4 +95,4 @@ public enum OpenDatabaseGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

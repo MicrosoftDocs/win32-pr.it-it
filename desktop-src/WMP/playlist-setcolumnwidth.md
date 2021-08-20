@@ -1,6 +1,6 @@
 ---
 title: PLAYLIST.setColumnWidth
-description: Il metodo setColumnWidth specifica la larghezza della colonna e modifica la modalità di ridimensionamento della colonna in \ 0034; Corretto \ 0034;.
+description: Il metodo setColumnWidth specifica la larghezza della colonna e imposta la modalità di ridimensionamento della colonna su \ 0034; Corretto \ 0034;.
 ms.assetid: 6eebea0a-48f2-4300-b535-78744db6fea4
 keywords:
 - PLAYLIST.setColumnWidth Windows Media Player

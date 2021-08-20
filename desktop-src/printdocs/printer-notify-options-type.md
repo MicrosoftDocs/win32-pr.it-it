@@ -1,7 +1,7 @@
 ---
-description: La \_ struttura del \_ tipo di opzioni di notifica stampanti consente di \_ specificare il set di campi delle informazioni sulla stampante o sul processo da monitorare tramite un oggetto notifica di modifica della stampante. Una chiamata alla funzione FindFirstPrinterChangeNotification specifica una \_ \_ struttura di opzioni di notifica della stampante, che contiene una matrice di \_ strutture di tipi di opzioni di notifica stampanti \_ \_ .
+description: La struttura PRINTER NOTIFY OPTIONS TYPE specifica il set di campi relativi alle informazioni sulla stampante o sul processo che devono essere monitorati da \_ un oggetto notifica di modifica della \_ \_ stampante. Una chiamata alla funzione FindFirstPrinterChangeNotification specifica una struttura PRINTER NOTIFY OPTIONS che contiene una matrice di strutture \_ \_ PRINTER NOTIFY OPTIONS \_ \_ \_ TYPE.
 ms.assetid: 1009f892-d3a8-4887-99b4-a35d1268eeb4
-title: Struttura PRINTER_NOTIFY_OPTIONS_TYPE (winspool. h)
+title: PRINTER_NOTIFY_OPTIONS_TYPE (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 4a82d0bc0481533a65fc90d32a992c51116b4595
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b593a502a668345cdd0206b4f1363cf160074b6c9aa26696427b5b42a0fbdc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118056278"
 ---
-# <a name="printer_notify_options_type-structure"></a>\_Struttura del \_ tipo di opzioni di notifica stampanti \_
+# <a name="printer_notify_options_type-structure"></a>Struttura PRINTER \_ NOTIFY \_ OPTIONS \_ TYPE
 
-La struttura del **\_ tipo di \_ Opzioni \_ di notifica stampanti** consente di specificare il set di campi delle informazioni sulla stampante o sul processo da monitorare tramite un oggetto notifica di modifica della stampante.
+La **struttura PRINTER NOTIFY OPTIONS \_ \_ \_ TYPE** specifica il set di campi relativi alle informazioni sulla stampante o sul processo che devono essere monitorati da un oggetto notifica di modifica della stampante.
 
-Una chiamata alla funzione [**FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md) specifica una struttura [**di \_ \_ Opzioni di notifica della stampante**](printer-notify-options.md) , che contiene una matrice di strutture di **\_ \_ \_ tipi di opzioni di notifica stampanti** .
+Una chiamata alla funzione [**FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md) specifica una struttura [**PRINTER NOTIFY \_ \_ OPTIONS**](printer-notify-options.md) che contiene una matrice di strutture **PRINTER NOTIFY OPTIONS \_ \_ \_ TYPE.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,14 +49,14 @@ typedef struct _PRINTER_NOTIFY_OPTIONS_TYPE {
 **Tipo**
 </dt> <dd>
 
-Tipo da guardare. Il membro può essere uno dei valori seguenti.
+Tipo da controllare. Questo membro può essere uno dei valori seguenti.
 
 
 
 | Valore                                                                                                                                                                                                                                      | Significato                                                                                                           |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| <span id="JOB_NOTIFY_TYPE"></span><span id="job_notify_type"></span><dl> <dt>**Processo \_ di Invia notifica al \_ tipo**</dt> <dt>0x01</dt> </dl>             | Indica che i campi specificati nella matrice **pFields** sono costanti di \_ campo Notify di processo \_ \_ \* .<br/>     |
-| <span id="PRINTER_NOTIFY_TYPE"></span><span id="printer_notify_type"></span><dl> <dt>**Stampante \_ NOTIFICA \_ tipo**</dt> <dt>0x00</dt> </dl> | Indica che i campi specificati nella matrice **pFields** sono costanti di \_ campo notifica stampanti \_ \_ \* .<br/> |
+| <span id="JOB_NOTIFY_TYPE"></span><span id="job_notify_type"></span><dl> <dt>**PROCESSO \_ TIPO \_ DI NOTIFICA**</dt> <dt>0x01</dt> </dl>             | Indica che i campi specificati nella matrice **pFields** sono costanti JOB \_ NOTIFY \_ \_ \* FIELD.<br/>     |
+| <span id="PRINTER_NOTIFY_TYPE"></span><span id="printer_notify_type"></span><dl> <dt>**PRINTER \_ TIPO \_ DI NOTIFICA**</dt> <dt>0x00</dt> </dl> | Indica che i campi specificati nella matrice **pFields** sono costanti PRINTER \_ NOTIFY \_ \_ \* FIELD.<br/> |
 
 
 
@@ -64,7 +64,7 @@ Tipo da guardare. Il membro può essere uno dei valori seguenti.
 
 </dd> <dt>
 
-**Reserved0**
+**Riservato0**
 </dt> <dd>
 
 Riservato.
@@ -78,7 +78,7 @@ Riservato.
 
 </dd> <dt>
 
-**Reserved2**
+**Riservato2**
 </dt> <dd>
 
 Riservato.
@@ -88,14 +88,14 @@ Riservato.
 **Count**
 </dt> <dd>
 
-Numero di elementi nella matrice **pFields** .
+Numero di elementi nella **matrice pFields.**
 
 </dd> <dt>
 
 **pFields**
 </dt> <dd>
 
-Puntatore a una matrice di valori. Ogni elemento della matrice specifica un campo di informazioni su processo o stampante di interesse. Per un elenco dei campi di informazioni sulle stampanti e sui processi supportati, vedere la pagina relativa alla struttura dei [**\_ \_ \_ dati di notifica della stampante**](printer-notify-info-data.md) .
+Puntatore a una matrice di valori. Ogni elemento della matrice specifica un campo di informazioni sul processo o sulla stampante di interesse. Per un elenco dei campi di informazioni sulle stampanti e sui processi supportati, vedere la [**struttura PRINTER \_ NOTIFY \_ INFO \_**](printer-notify-info-data.md) DATA.
 
 </dd> </dl>
 
@@ -107,7 +107,7 @@ Puntatore a una matrice di valori. Ogni elemento della matrice specifica un camp
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -118,16 +118,16 @@ Puntatore a una matrice di valori. Ogni elemento della matrice specifica un camp
 [Stampa](printdocs-printing.md)
 </dt> <dt>
 
-[Strutture dell'API spooler di stampa](printing-and-print-spooler-structures.md)
+[Strutture dell'API Spooler di stampa](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md)
 </dt> <dt>
 
-[**\_dati delle \_ informazioni di notifica della stampante \_**](printer-notify-info-data.md)
+[**DATI \_ INFORMARE \_ LA \_ STAMPANTE**](printer-notify-info-data.md)
 </dt> <dt>
 
-[**\_Opzioni di notifica stampanti \_**](printer-notify-options.md)
+[**OPZIONI DI \_ NOTIFICA \_ DELLA STAMPANTE**](printer-notify-options.md)
 </dt> </dl>
 
  

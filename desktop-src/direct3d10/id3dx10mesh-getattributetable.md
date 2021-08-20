@@ -44,9 +44,9 @@ HRESULT GetAttributeTable(
 *pAttribTable* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **D3DX10 \_ ATTRIBUTE \_ RANGE**](d3dx10-attribute-range.md)\***
+Tipo: **[ **INTERVALLO ATTRIBUTI D3DX10 \_ \_**](d3dx10-attribute-range.md)\***
 
-Puntatore a una matrice di strutture ATTRIBUTE RANGE D3DX10, che rappresenta le voci \_ nella tabella degli attributi della \_ mesh. Specificare **NULL** per recuperare il valore per pAttribTableSize.
+Puntatore a una matrice di strutture ATTRIBUTE RANGE D3DX10, che rappresenta le voci nella tabella \_ \_ degli attributi della mesh. Specificare **NULL** per recuperare il valore per pAttribTableSize.
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Puntatore al numero di voci archiviate in pAttribTable o a un valore da riempire
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
+Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 

@@ -1,7 +1,7 @@
 ---
-description: Timer-identificatore evento, per la pianificazione delle \_ notifiche complete EC.
+description: Identificatore dell'evento timer, per la pianificazione delle notifiche EC \_ COMPLETE.
 ms.assetid: 79bb0ca9-e58f-450d-9288-57535fd06413
-title: 'Membro CBaseRenderer:: m_EndOfStreamTimer (Renbase. h)'
+title: Membro CBaseRenderer::m_EndOfStreamTimer (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3b9c8e62469e2529902feacf45d79e1bff282922
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e6d330c6f051f6434770e00d4f9871abd43371b9c96682ed46131b1ad4c8c1c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403053"
 ---
-# <a name="cbaserendererm_endofstreamtimer-member"></a>Membro EndOfStreamTimer di CBaseRenderer:: m \_
+# <a name="cbaserendererm_endofstreamtimer-member"></a>Membro CBaseRenderer::m \_ EndOfStreamTimer
 
-Timer-identificatore evento, per la pianificazione delle \_ notifiche complete EC.
+Identificatore dell'evento timer, per la pianificazione delle notifiche EC \_ COMPLETE.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ UINT m_EndOfStreamTimer;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

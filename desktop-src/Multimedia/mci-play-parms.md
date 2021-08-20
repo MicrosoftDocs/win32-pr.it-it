@@ -1,9 +1,9 @@
 ---
-title: Struttura MCI_PLAY_PARMS (Mciapi. h)
-description: La \_ \_ struttura parametri di MCI Play contiene informazioni sul posizionamento del \_ comando MCI Play.
+title: MCI_PLAY_PARMS struttura (Mciapi.h)
+description: La struttura MCI \_ PLAY \_ PARMS contiene informazioni sul posizionamento per il comando MCI \_ PLAY.
 ms.assetid: f1bacf61-ec14-4391-b227-20b35c0bbbc3
 keywords:
-- Struttura MCI_PLAY_PARMS di Windows Multimedia
+- MCI_PLAY_PARMS struttura Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f207737d4eb93e280355d0e5041b6e7bfc1b3048
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7bd45269cd74d15d2326bf4c6528d5778ef7a5a35e40dfd2a74134afafdbcb8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117803472"
 ---
-# <a name="mci_play_parms-structure"></a>\_Struttura parametri della riproduzione MCI \_
+# <a name="mci_play_parms-structure"></a>Struttura PARMS MCI \_ PLAY \_
 
-La **struttura \_ \_ parametri di MCI Play** contiene informazioni sul posizionamento del comando [**MCI \_ Play**](mci-play.md) .
+La **struttura MCI \_ PLAY \_ PARMS** contiene informazioni sul posizionamento per [**il comando MCI \_ PLAY.**](mci-play.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,14 +45,14 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La parola di ordine inferiore specifica un handle di finestra utilizzato per il \_ flag di notifica MCI.
+La parola di ordine basso specifica un handle di finestra usato per il flag MCI \_ NOTIFY.
 
 </dd> <dt>
 
 **dwFrom**
 </dt> <dd>
 
-Posizione da cui riprodurre.
+Posizione da cui eseguire la riproduzione.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Posizione in cui eseguire la riproduzione.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
+Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel *parametro fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,7 +75,7 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -83,13 +83,13 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Strutture MCI**](mci-structures.md)
 </dt> <dt>
 
-[**\_riproduzione MCI**](mci-play.md)
+[**MCI \_ PLAY**](mci-play.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

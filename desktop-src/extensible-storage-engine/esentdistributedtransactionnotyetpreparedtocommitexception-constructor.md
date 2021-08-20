@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1e1a2a3c983c49f47ecb8115a6934f3e9716cefd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: afd446f4f7288c6f31e438d0370e25aedcd7d03a8935cdc572d77fb37a9cc2e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118497031"
 ---
 # <a name="esentdistributedtransactionnotyetpreparedtocommitexception-constructor"></a>Costruttore EsentDistributedTransactionNotYetPreparedToCommitException
 
 Inizializza una nuova istanza della classe EsentDistributedTransactionNotYetPreparedToCommitException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentDistributedTransactionNotYetPreparedToCommitException()
 
 [Membri di EsentDistributedTransactionNotYetPreparedToCommitException](./esentdistributedtransactionnotyetpreparedtocommitexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

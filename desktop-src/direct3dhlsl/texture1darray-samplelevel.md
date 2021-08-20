@@ -1,6 +1,6 @@
 ---
-title: 'Metodi di Texture1DArray:: Texture1DArray SampleLevel'
-description: 'Esegue il campionamento di una trama sul livello mipmap specificato. | Metodi di Texture1DArray:: Texture1DArray SampleLevel'
+title: Metodi Texture1DArray::Texture1DArray SampleLevel
+description: Campita una trama a livello di mipmap specificato. | Metodi Texture1DArray::Texture1DArray SampleLevel
 ms.assetid: 68C86C79-37DC-49D0-9635-EA548A3DA83B
 keywords:
 - Metodi SampleLevel HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 0f5a1b3070c27c2954f1636b1985d2ea00c99a67
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0f9159e3dfb86e61b717b53a763da613848f092c926ffd9e4c3c99b4964b587f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117722958"
 ---
-# <a name="texture1darraysamplelevel-methods"></a>Metodi Texture1DArray:: SampleLevel
+# <a name="texture1darraysamplelevel-methods"></a>Metodi Texture1DArray::SampleLevel
 
-Esegue il campionamento di una trama sul livello mipmap specificato.
+Campita una trama a livello di mipmap specificato.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Esegue il campionamento di una trama sul livello mipmap specificato.
 
 | Metodo                                                                                      | Descrizione                                                                                        |
 |:--------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
-| [**SampleLevel (S, float, float, int)**](dx-graphics-hlsl-to-samplelevel.md)                   | Esegue il campionamento di una trama sul livello mipmap specificato.<br/>                                        |
-| [**SampleLevel (S, float, float, int, uint)**](t1darray-samplelevel-s-float-float-int-uint-.md) | Esegue il campionamento di una trama sul livello mipmap specificato e restituisce lo stato dell'operazione.<br/> |
+| [**SampleLevel(S,float,float,int)**](dx-graphics-hlsl-to-samplelevel.md)                   | Campita una trama a livello di mipmap specificato.<br/>                                        |
+| [**SampleLevel(S,float,float,int,uint)**](t1darray-samplelevel-s-float-float-int-uint-.md) | Campita una trama a livello di mipmap specificato e restituisce lo stato dell'operazione.<br/> |
 
 
 
@@ -41,7 +41,7 @@ Esegue il campionamento di una trama sul livello mipmap specificato.
 [**Texture1DArray**](sm5-object-texture1darray.md)
 </dt> <dt>
 
-[Texture-oggetto](dx-graphics-hlsl-to-type.md)
+[Oggetto Texture](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

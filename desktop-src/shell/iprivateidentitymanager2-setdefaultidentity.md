@@ -9,12 +9,12 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.assetid: df111901-22ef-4f1a-a5e0-8a1d836c3e46
-ms.openlocfilehash: 2dd65c8646efe27cf7e653032b70961afe1415e8
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: e7db35142d484ceb9218bb0fd9fdcf3e056f2b3ff16b9c909cedc0f07942b166
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118458191"
 ---
 # <a name="iprivateidentitymanager2setdefaultidentity-method"></a>Metodo IPrivateIdentityManager2::SetDefaultIdentity
 

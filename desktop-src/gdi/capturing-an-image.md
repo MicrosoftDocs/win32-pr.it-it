@@ -5,30 +5,30 @@ title: Acquisizione di un'immagine
 ms.topic: article
 ms.date: 12/03/2020
 ms.custom: contperf-fy21q2
-ms.openlocfilehash: b6029ec18a39ea034ca22e4c3d6c2d1e659635cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: 7516c125bd2f6953dcd91bbefee19d9ebe68c3fbbaf6ad2c029abb41d7b01542
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117888114"
 ---
 # <a name="capturing-an-image"></a>Acquisizione di un'immagine
 
 È possibile usare una bitmap per acquisire un'immagine ed è possibile archiviare l'immagine acquisita in memoria, visualizzarla in una posizione diversa nella finestra dell'applicazione o visualizzarla in un'altra finestra.
 
-In alcuni casi, è possibile che l'applicazione acquisisca immagini e le archivi solo temporaneamente. Ad esempio, quando si ridimensiona o si zoom un'immagine creata in un'applicazione di disegno, l'applicazione deve salvare temporaneamente la visualizzazione normale dell'immagine e visualizzare la vista zoomata. In seguito, quando l'utente seleziona la visualizzazione normale, l'applicazione deve sostituire l'immagine con zoom con una copia della visualizzazione normale che è stata salvata temporaneamente.
+In alcuni casi, è possibile che l'applicazione acquisisca le immagini e le archivi solo temporaneamente. Ad esempio, quando si ridimensiona o si zooma un'immagine creata in un'applicazione di disegno, l'applicazione deve salvare temporaneamente la visualizzazione normale dell'immagine e visualizzare la visualizzazione ingrandita. In seguito, quando l'utente seleziona la visualizzazione normale, l'applicazione deve sostituire l'immagine ingrandita con una copia della visualizzazione normale salvata temporaneamente.
 
-Per archiviare temporaneamente un'immagine, l'applicazione deve chiamare [**CreateCompatibleDC**](/windows/desktop/api/Wingdi/nf-wingdi-createcompatibledc) per creare un controller di dominio compatibile con il controller di dominio della finestra corrente. Dopo aver creato un controller di dominio compatibile, creare una bitmap con le dimensioni appropriate chiamando la funzione [**CreateCompatibleBitmap**](/windows/desktop/api/Wingdi/nf-wingdi-createcompatiblebitmap) e quindi selezionarla in questo contesto di dispositivo chiamando la funzione [**SelezionaOggetto**](/windows/desktop/api/Wingdi/nf-wingdi-selectobject) .
+Per archiviare temporaneamente un'immagine, l'applicazione deve chiamare [**CreateCompatibleDC**](/windows/desktop/api/Wingdi/nf-wingdi-createcompatibledc) per creare un controller di dominio compatibile con il controller di dominio della finestra corrente. Dopo aver creato un controller di dominio compatibile, creare una bitmap con le dimensioni appropriate chiamando la [**funzione CreateCompatibleBitmap**](/windows/desktop/api/Wingdi/nf-wingdi-createcompatiblebitmap) e quindi selezionarla in questo contesto di dispositivo chiamando la [**funzione SelectObject.**](/windows/desktop/api/Wingdi/nf-wingdi-selectobject)
 
-Dopo aver creato il contesto di dispositivo compatibile e aver selezionato la bitmap appropriata, è possibile acquisire l'immagine. La funzione [**BitBlt**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt) acquisisce immagini. Questa funzione esegue un trasferimento a blocchi di bit, copia i dati da una bitmap di origine in una bitmap di destinazione. Tuttavia, i due argomenti di questa funzione non sono handle bitmap. Al contrario, **BitBlt** riceve gli handle che identificano due contesti di dispositivo e copia i dati bitmap da una bitmap selezionata nel controller di dominio di origine in una bitmap selezionata nel controller di dominio di destinazione. In questo caso, il controller di dominio di destinazione è il controller di dominio compatibile, quindi quando **BitBlt** completa il trasferimento, l'immagine è stata archiviata in memoria. Per visualizzare nuovamente l'immagine, chiamare **BitBlt** una seconda volta, specificando il controller di dominio compatibile come controller di dominio di origine e un controller di dominio (o stampante) della finestra come controller di dominio di destinazione.
+Dopo aver creato il contesto di dispositivo compatibile e aver selezionato la bitmap appropriata al suo interno, è possibile acquisire l'immagine. La [**funzione BitBlt**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt) acquisisce le immagini. Questa funzione esegue un trasferimento a blocchi di bit, ad esempio copia i dati da una bitmap di origine in una bitmap di destinazione. Tuttavia, i due argomenti per questa funzione non sono handle bitmap. **BitBlt** riceve invece handle che identificano due contesti di dispositivo e copia i dati bitmap da una bitmap selezionata nel controller di dominio di origine in una bitmap selezionata nel controller di dominio di destinazione. In questo caso, il controller di dominio di destinazione è il controller di dominio compatibile, quindi quando **BitBlt** completa il trasferimento, l'immagine è stata archiviata in memoria. Per visualizzare nuovamente l'immagine, chiamare **BitBlt** una seconda volta, specificando il controller di dominio compatibile come controller di dominio di origine e un controller di dominio finestra (o stampante) come controller di dominio di destinazione.
 
 ## <a name="code-example"></a>Esempio di codice
 
-Questa sezione contiene un esempio di codice che acquisisce un'immagine dell'intero desktop, ne esegue il ridimensionamento fino alla dimensione corrente della finestra e quindi la Salva in un file, nonché visualizzandola nell'area client.
+Questa sezione contiene un esempio di codice che acquisisce un'immagine dell'intero desktop, la ridimensiona in base alle dimensioni correnti della finestra e quindi la salva in un file ,oltre a visualizzarla nell'area client.
 
-Per provare l'esempio di codice, iniziare creando un nuovo progetto in Visual Studio in base al modello di progetto **applicazione desktop di Windows** . È importante denominare il nuovo progetto in `GDI_CapturingAnImage` modo che il listato di codice seguente venga compilato, ad esempio include `GDI_CapturingAnImage.h` , che sarà presente nel nuovo progetto se lo si assegna come suggerito.
+Per provare l'esempio di codice, iniziare creando un nuovo progetto in Visual Studio in base al modello di progetto Windows **applicazione desktop.** È importante assegnare un nome al nuovo progetto in modo che il listato di codice seguente venga compilato (ad esempio, include , che esisterà nel nuovo progetto se si denota come `GDI_CapturingAnImage` `GDI_CapturingAnImage.h` suggerito).
 
-Aprire il `GDI_CapturingAnImage.cpp` file del codice sorgente nel nuovo progetto e sostituirne il contenuto con l'elenco riportato di seguito. Quindi compilare ed eseguire. Ogni volta che si ridimensiona la finestra, si vedrà la schermata acquisita visualizzata nell'area client.
+Aprire il `GDI_CapturingAnImage.cpp` file di codice sorgente nel nuovo progetto e sostituirlo con l'elenco seguente. Quindi compilare ed eseguire. Ogni volta che si ridimensiona la finestra, viene visualizzato lo screenshot acquisito nell'area client.
 
 ```cpp
 // GDI_CapturingAnImage.cpp : Defines the entry point for the application.

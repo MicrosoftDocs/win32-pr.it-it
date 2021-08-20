@@ -11,7 +11,7 @@ keywords:
 - negozi online, creazione dinamica di un documento ServiceInfo
 - tipo 1 negozi online, creazione dinamica di documento ServiceInfo
 - store online di tipo 2, creazione dinamica di un documento ServiceInfo
-- Windows Media Player online, documento ServiceInfo
+- Windows Media Player store online, documento ServiceInfo
 - negozi online, documento ServiceInfo
 - tipo 1 negozi online, documento ServiceInfo
 - store online di tipo 2, documento ServiceInfo

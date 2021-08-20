@@ -1,6 +1,6 @@
 ---
 title: Attributo Query-Policy-Object
-description: Riferimento al valore predefinito Query-Policy per questo server.
+description: Riferimento al valore predefinito Query-Policy in vigore per questo server.
 ms.assetid: 5a492305-ac57-4331-b96b-bdd8107d4a4d
 ms.tgt_platform: multiple
 keywords:
@@ -23,16 +23,16 @@ ms.locfileid: "117836781"
 ---
 # <a name="query-policy-object-attribute"></a>Attributo Query-Policy-Object
 
-Riferimento al valore predefinito Query-Policy per questo server.
+Riferimento al valore predefinito Query-Policy in vigore per questo server.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | Query-Policy-Object                     |
+| CN                | Oggetto Query-Policy                     |
 | Ldap-Display-Name | queryPolicyObject                       |
 | Dimensione              | \-                                      |
-| Privilegio di aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.607                  |
 | System-Id-Guid    | e1aea403-cd5b-11d0-afff-0000f80367c1    |
@@ -59,7 +59,7 @@ Riferimento al valore predefinito Query-Policy per questo server.
 | ID collegamento                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| Is-Single-Valued       | Vero                                                                                                 |
+| A valore singolo       | Vero                                                                                                 |
 | Indicizzato             | Falso                                                                                                |
 | Nel catalogo globale      | Falso                                                                                                |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
@@ -80,7 +80,7 @@ Riferimento al valore predefinito Query-Policy per questo server.
 | ID collegamento                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| Is-Single-Valued       | Vero                                                                                                 |
+| A valore singolo       | Vero                                                                                                 |
 | Indicizzato             | Falso                                                                                                |
 | Nel catalogo globale      | Falso                                                                                                |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
@@ -101,7 +101,7 @@ Riferimento al valore predefinito Query-Policy per questo server.
 | ID collegamento                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| Is-Single-Valued       | Vero                                                                                                 |
+| A valore singolo       | Vero                                                                                                 |
 | Indicizzato             | Falso                                                                                                |
 | Nel catalogo globale      | Falso                                                                                                |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
@@ -122,7 +122,7 @@ Riferimento al valore predefinito Query-Policy per questo server.
 | ID collegamento                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| A valore singolo       | Vero                                                                                                 |
+| Is-Single-Valued       | Vero                                                                                                 |
 | Indicizzato             | Falso                                                                                                |
 | Nel catalogo globale      | Falso                                                                                                |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
@@ -143,7 +143,7 @@ Riferimento al valore predefinito Query-Policy per questo server.
 | ID collegamento                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| A valore singolo       | Vero                                                                                                 |
+| Is-Single-Valued       | Vero                                                                                                 |
 | Indicizzato             | Falso                                                                                                |
 | Nel catalogo globale      | Falso                                                                                                |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
@@ -164,7 +164,7 @@ Riferimento al valore predefinito Query-Policy per questo server.
 | ID collegamento                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| A valore singolo       | Vero                                                                                                 |
+| Is-Single-Valued       | Vero                                                                                                 |
 | Indicizzato             | Falso                                                                                                |
 | Nel catalogo globale      | Falso                                                                                                |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |
@@ -185,7 +185,7 @@ Riferimento al valore predefinito Query-Policy per questo server.
 | ID collegamento                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| A valore singolo       | Vero                                                                                                 |
+| Is-Single-Valued       | Vero                                                                                                 |
 | Indicizzato             | Falso                                                                                                |
 | Nel catalogo globale      | Falso                                                                                                |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                         |

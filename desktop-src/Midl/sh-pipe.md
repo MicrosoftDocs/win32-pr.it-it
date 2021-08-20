@@ -1,6 +1,6 @@
 ---
-title: parola chiave sh_pipe
-description: La \_ parola chiave \ SH pipe \ specifica che l'oggetto di sistema è un handle per una pipe.
+title: sh_pipe parola chiave
+description: La parola chiave \ sh \_ pipe\ specifica che l'oggetto di sistema è un handle per una pipe.
 keywords:
 - sh_pipe parola chiave MIDL
 topic_type:
@@ -11,16 +11,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 02/05/2021
-ms.openlocfilehash: 9f9deab2bf5a751d3b2d5956d4d33a1d5b347e18
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: 15bee0e34525d83af10e5c42199116dc6080a6a7b7f4e2af3de565f62a9c6a5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "106320234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118383346"
 ---
-# <a name="sh_pipe-keyword"></a>\_parola chiave pipe SH
+# <a name="sh_pipe-keyword"></a>Parola \_ chiave sh pipe
 
-La parola chiave della **\_ pipe SH** specifica che un oggetto `system_handle` include un handle per una pipe.
+La **parola chiave sh \_ pipe** specifica che un `system_handle` oggetto contiene un handle per una pipe.
 
 ``` syntax
 [system_handle(sh_pipe)]
@@ -32,11 +32,11 @@ La parola chiave della **\_ pipe SH** specifica che un oggetto `system_handle` i
 
 Questa parola chiave è un parametro per [**system_handle**](system-handle.md).
 
-La documentazione di [**system_handle**](system-handle.md) contiene inoltre informazioni dettagliate sull'utilizzo facoltativo del parametro *Access-Rights* . Il comportamento predefinito è `DUPLICATE_SAME_ACCESS` per le specifiche della [funzione **DuplicateHandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle) .
+La [**system_handle**](system-handle.md) contiene anche informazioni dettagliate sull'uso facoltativo del *parametro access-rights.* Il comportamento predefinito è `DUPLICATE_SAME_ACCESS` in base alle specifiche della funzione [ **DuplicateHandle.**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
 
 ## <a name="remarks"></a>Commenti
 
-Per usare questa parola chiave con l' `system_handle` attributo, il `-target` flag deve essere impostato su `NT100` (o versione successiva) quando si esegue midl.exe.
+Per usare questa parola chiave con l'attributo , il flag deve essere impostato `system_handle` `-target` su `NT100` (o superiore) durante l'esecuzione midl.exe.
 
 ## <a name="examples"></a>Esempio
 
@@ -53,8 +53,8 @@ interface MyInterface : IUnknown
 
 | &nbsp; | &nbsp; |
 |-|-|
-| Client minimo supportato | Aggiornamento dell'anniversario di Windows 10 (versione 1607, Build 14393) |
-| Server minimo supportato | Windows Server 2016 (Build 14393) |
+| Client minimo supportato | Windows 10 Aggiornamento dell'anniversario (versione 1607, build 14393) |
+| Server minimo supportato | Windows Server 2016 (build 14393) |
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -66,11 +66,11 @@ interface MyInterface : IUnknown
 [Informazioni sulle pipe](../ipc/about-pipes.md)
 </dt> <dt>
 
-[Sicurezza file e diritti di accesso](../fileio/file-security-and-access-rights.md)
+[Sicurezza dei file e diritti di accesso](../fileio/file-security-and-access-rights.md)
 </dt> <dt>
 
-[**Non** (funzione)](/windows/win32/api/namedpipeapi/nf-namedpipeapi-createpipe)
+[**Funzione CreatePipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-createpipe)
 </dt> <dt>
 
-[**CreateNamedPipe** (funzione)](/windows/win32/api/winbase/nf-winbase-createnamedpipea)
+[**Funzione CreateNamedPipe**](/windows/win32/api/winbase/nf-winbase-createnamedpipea)
 </dt> </dl>

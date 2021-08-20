@@ -1,19 +1,19 @@
 ---
-description: Registra un nuovo AppBar e specifica l'identificatore del messaggio che il sistema deve utilizzare per inviare i messaggi di notifica. Un AppBar deve inviare questo messaggio prima di inviare altri messaggi di AppBar.
+description: Registra una nuova barra delle app e specifica l'identificatore del messaggio che il sistema deve usare per inviare messaggi di notifica. Un'appbar deve inviare questo messaggio prima di inviare qualsiasi altro messaggio della barra delle app.
 ms.assetid: 1da9db13-6fdc-44b3-9985-de32d572675a
-title: Messaggio ABM_NEW (Shellapi. h)
+title: ABM_NEW messaggio (Shellapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fad11e6712d0afd0c1a5e9de07fd3d690800db13
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 400439e6808d40eb74c18fa4219109a0abca1973cdac4dcb9de5154384fd0071
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103750311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118460968"
 ---
-# <a name="abm_new-message"></a>\_Nuovo messaggio di ABM
+# <a name="abm_new-message"></a>Nuovo messaggio ABM \_
 
-Registra un nuovo AppBar e specifica l'identificatore del messaggio che il sistema deve utilizzare per inviare i messaggi di notifica. Un AppBar deve inviare questo messaggio prima di inviare altri messaggi di AppBar.
+Registra una nuova barra delle app e specifica l'identificatore del messaggio che il sistema deve usare per inviare messaggi di notifica. Un'appbar deve inviare questo messaggio prima di inviare qualsiasi altro messaggio della barra delle app.
 
 
 ```C++
@@ -29,13 +29,13 @@ fRegistered = (BOOL) SHAppBarMessage(ABM_NEW, pabd);
 *pabd* 
 </dt> <dd>
 
-Puntatore a una struttura [**APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) che contiene il nuovo handle della finestra di AppBar e l'identificatore del messaggio. Quando si invia questo messaggio, è necessario specificare i membri **cbSize**, **HWND** e **uCallbackMessage** . tutti gli altri membri vengono ignorati.
+Puntatore a una [**struttura APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) che contiene l'handle di finestra e l'identificatore del messaggio della nuova barra dell'app. È necessario specificare i **membri cbSize**, **hWnd** e **uCallbackMessage** quando si invia questo messaggio; tutti gli altri membri vengono ignorati.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se ha esito positivo o **false** se si verifica un errore o se il AppBar è già registrato.
+Restituisce **TRUE** in caso di esito positivo oppure **FALSE** se si verifica un errore o se la barra dell'app è già registrata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,9 +43,9 @@ Restituisce **true** se ha esito positivo o **false** se si verifica un errore o
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                           |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Shellapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shellapi.h</dt> </dl> |
 
 
 

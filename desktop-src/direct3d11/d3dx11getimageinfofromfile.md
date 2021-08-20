@@ -1,6 +1,6 @@
 ---
 title: Funzione D3DX11GetImageInfoFromFile (D3DX11tex.h)
-description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app Windows Store. Nota Invece di usare questa funzione, è consigliabile usare la libreria DirectXTex, GetMetadataFromXXXFile (dove XXX è WIC, DDS o TGA; WIC non supporta DDS e TGA; D3DX 9 supporta TGA come formato di origine grafica comune per i giochi. Recupera informazioni su un determinato file di immagine.
+description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Nota Invece di usare questa funzione, è consigliabile usare la libreria DirectXTex, GetMetadataFromXXXFile (dove XXX è WIC, DDS o TGA; WIC non supporta DDS e TGA; D3DX 9 supporta TGA come formato di origine grafica comune per i giochi. Recupera informazioni su un determinato file di immagine.
 ms.assetid: 57768604-3672-49a0-8120-f09240b8fc98
 keywords:
 - Funzione D3DX11GetImageInfoFromFile Direct3D 11

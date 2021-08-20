@@ -49,7 +49,7 @@ struct CD3DX12_DEPTH_STENCIL_DESC  : public D3D12_DEPTH_STENCIL_DESC{
 **CD3DX12 \_ DEPTH \_ STENCIL \_ DESC()**
 </dt> <dd>
 
-Crea una nuova istanza non inizializzata di un file D3DX12 \_ DEPTH \_ STENCIL \_ DESC.
+Crea una nuova istanza non inizializzata di uno STENCIL D3DX12 \_ \_ DEPTH \_ DESC.
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Crea una nuova istanza di D3DX12 \_ DEPTH \_ STENCIL \_ DESC, inizializzata con 
 
 </dd> <dt>
 
-**EXPLICIT CD3DX12 \_ DEPTH \_ STENCIL \_ DESC(BOOL depthEnable, D3D12 \_ DEPTH WRITE MASK \_ \_ depthWriteMask, \_ D3D12 COMPARISON \_ FUNC depthFunc, BOOL stencilEnable, UINT8 stencilReadMask, UINT8 stencilWriteMask, D3D12 \_ STENCIL OP \_ frontStencilFailOp, D3D12 \_ STENCIL OP \_ frontStencilDepthFailOp, D3D12 STENCIL OP frontStencilDepthFailOp, D3D12 STENCIL OP frontStencilDepthFailOp, \_ \_ D3D12 STENCIL OP frontStencilPassOp, D3D12 \_ COMPARISON \_ FUNC frontStencilFunc, D3D12 \_ STENCIL OP \_ backStencilFailOp, D3D12 \_ STENCIL OP \_ backStencilDepthFailOp, D3D12 \_ STENCIL OP \_ backStencilPassOp, D3D12 \_ COMPARISON \_ FUNC backStencilFunc)**
+**EXPLICIT CD3DX12 \_ DEPTH \_ STENCIL \_ DESC(BOOL depthEnable, D3D12 \_ DEPTH WRITE MASK \_ \_ depthWriteMask, \_ D3D12 COMPARISON \_ FUNC depthFunc, BOOL stencilEnable, UINT8 stencilReadMask, UINT8 stencilWriteMask, D3D12 \_ STENCIL OP \_ frontStencilFailOp, D3D12 \_ STENCIL OP \_ frontStencilDepthFailOp, D3D12 STENCIL OP frontStencilDepthFailOp, \_ \_ D3D12 STENCIL OP frontStencilPassOp, D3D12 \_ COMPARISON \_ FUNC frontStencilFunc, D3D12 \_ STENCIL OP \_ backStencilFailOp, D3D12 \_ STENCIL OP \_ backStencilDepthFailOp, D3D12 \_ STENCIL OP \_ backStencilPassOp, D3D12 \_ COMPARISON \_ FUNC backStencilFunc)**
 </dt> <dd>
 
 Crea una nuova istanza di D3DX12 \_ DEPTH \_ STENCIL \_ DESC, inizializzando i parametri seguenti:
@@ -93,7 +93,7 @@ Profondità BOOLEnable
 
 Stencil BOOLEnable
 
-Stencil UINT8ReadMask
+UiNT8 stencilReadMask
 
 Stencil UINT8WriteMask
 

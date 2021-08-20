@@ -1,7 +1,7 @@
 ---
 description: Tipo di dati del registro.
 ms.assetid: b54530d3-4267-4b41-9a16-59d400ef3e18
-title: Enumerazione D3DXREGISTER_SET (D3dx9shader. h)
+title: D3DXREGISTER_SET enumerazione (D3dx9shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9shader.h
-ms.openlocfilehash: 683b13d0b386fcdbc162293455e2beb11bc1ee85
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5721009cac2632d1bac487615e765e9e3f9ad3ccdf50369ae3cc11630a915454
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118524576"
 ---
-# <a name="d3dxregister_set-enumeration"></a>\_Enumerazione set D3DXREGISTER
+# <a name="d3dxregister_set-enumeration"></a>Enumerazione D3DXREGISTER \_ SET
 
 Tipo di dati del registro.
 
@@ -43,38 +43,38 @@ typedef enum _D3DXREGISTER_SET {
 
 <dl> <dt>
 
-<span id="D3DXRS_BOOL"></span><span id="d3dxrs_bool"></span>**\_Bool D3DXRS**
+<span id="D3DXRS_BOOL"></span><span id="d3dxrs_bool"></span>**D3DXRS \_ BOOL**
 </dt> <dd>
 
 .
 
 </dd> <dt>
 
-<span id="D3DXRS_INT4"></span><span id="d3dxrs_int4"></span>**\_INT4 D3DXRS**
+<span id="D3DXRS_INT4"></span><span id="d3dxrs_int4"></span>**D3DXRS \_ INT4**
 </dt> <dd>
 
-numero intero 4D.
+Numero intero 4D.
 
 </dd> <dt>
 
-<span id="D3DXRS_FLOAT4"></span><span id="d3dxrs_float4"></span>**\_Float4 D3DXRS**
+<span id="D3DXRS_FLOAT4"></span><span id="d3dxrs_float4"></span>**D3DXRS \_ FLOAT4**
 </dt> <dd>
 
-numero a virgola mobile 4D.
+Numero a virgola mobile 4D.
 
 </dd> <dt>
 
-<span id="D3DXRS_SAMPLER"></span><span id="d3dxrs_sampler"></span>**\_Campionatore D3DXRS**
+<span id="D3DXRS_SAMPLER"></span><span id="d3dxrs_sampler"></span>**D3DXRS \_ SAMPLER**
 </dt> <dd>
 
 Il registro contiene i dati del campionatore 4D.
 
 </dd> <dt>
 
-<span id="D3DXRS_FORCE_DWORD"></span><span id="d3dxrs_force_dword"></span>**D3DXRS \_ Force \_ DWORD**
+<span id="D3DXRS_FORCE_DWORD"></span><span id="d3dxrs_force_dword"></span>**D3DXRS \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori permetterebbero che questa enumerazione venga compilata in una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbe a questa enumerazione di compilare a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 
@@ -84,7 +84,7 @@ Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alc
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9shader. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9shader.h</dt> </dl> |
 
 
 
@@ -95,7 +95,7 @@ Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alc
 [Enumerazioni D3DX](dx9-graphics-reference-d3dx-enums.md)
 </dt> <dt>
 
-[**\_CONSTANTINFO D3DXSHADER**](d3dxshader-constantinfo.md)
+[**D3DXSHADER \_ CONSTANTINFO**](d3dxshader-constantinfo.md)
 </dt> <dt>
 
 [**D3DXCONSTANT \_ DESC**](d3dxconstant-desc.md)

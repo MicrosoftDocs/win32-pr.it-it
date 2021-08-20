@@ -1,6 +1,6 @@
 ---
 title: Memoria. CPP
-description: Nel componente provider di esempio, un esempio di codice che mostra l'allocazione e la rimozione di memoria è in memory.cpp. Le routine supportate sono elencate nella tabella seguente.
+description: Nel componente provider di esempio un esempio di codice che mostra l'allocazione e la liberatura della memoria è in memory.cpp. Le routine supportate sono elencate nella tabella seguente.
 ms.assetid: dc5b3559-02fc-45e8-bbd0-482e4e3a7f8a
 ms.tgt_platform: multiple
 ms.topic: article
@@ -14,18 +14,18 @@ ms.locfileid: "117839491"
 ---
 # <a name="memorycpp"></a>Memoria. CPP
 
-Nel componente provider di esempio, un esempio di codice che mostra l'allocazione e la rimozione di memoria è in memory.cpp. Le routine supportate sono elencate nella tabella seguente.
+Nel componente provider di esempio un esempio di codice che mostra l'allocazione e la liberatura della memoria è in memory.cpp. Le routine supportate sono elencate nella tabella seguente.
 
 
 
 | Elemento                | Descrizione                                                           |
 |---------------------|-----------------------------------------------------------------------|
 | **AllocProvMem**    | Allocare la memoria specificata.                                            |
-| **FreeProvMem**     | Memoria libera indicata.                                                |
-| **ReallocProvMem**  | Allocare memoria contigua.                                           |
+| **FreeProvMem**     | Memoria disponibile indicata.                                                |
+| **RiallocareProvMem**  | Allocare memoria contigua.                                           |
 | **AllocProvStr**    | Allocare una stringa LPWSTR.                                            |
 | **FreeProvStr**     | Stringa libera se non è già stata liberata.                                     |
-| **ReallocProvStr**  | Allocare memoria contigua.                                           |
+| **RiallocareProvStr**  | Allocare memoria contigua.                                           |
 | **ProvAllocString** | Verifica la stringa e il primo parametro. Se OK, esegue l'allocazione. |
 
 

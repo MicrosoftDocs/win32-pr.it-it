@@ -4,12 +4,12 @@ ms.assetid: 09fb62e1-da4f-4b81-92f7-0379d2b2827e
 title: System.Contact.BusinessAddress3Region
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f816d2cd87a8217bf1b854b051e5549d632c50f0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9ea20a106bdc1caaf6a18679997be4cefad3670f7d6c2d069b9a4a0223dba826
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117685379"
 ---
 # <a name="systemcontactbusinessaddress3region"></a>System.Contact.BusinessAddress3Region
 

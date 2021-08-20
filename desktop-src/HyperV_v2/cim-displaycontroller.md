@@ -1,7 +1,7 @@
 ---
 description: Rappresenta un controller di visualizzazione.
 ms.assetid: 14598ae6-58e2-46ca-8653-b57e5833a224
-title: Classe CIM_DisplayController
+title: CIM_DisplayController classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,14 +23,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 59db37a89ce1f57e01a6a9a27fb9c24177221b00
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bbfd67f59ba46cb17f6022296c62de05d7c0f9e6bc334cb01e2e28a059e4b384
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812639"
 ---
-# <a name="cim_displaycontroller-class"></a>CIM \_ DisplayController (classe)
+# <a name="cim_displaycontroller-class"></a>Classe CIM \_ DisplayController
 
 Rappresenta un controller di visualizzazione.
 
@@ -55,29 +55,29 @@ class CIM_DisplayController : CIM_Controller
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ DisplayController** presenta questi tipi di membri:
+La **classe CIM \_ DisplayController** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ DisplayController** dispone di queste proprietà.
+La **classe CIM \_ DisplayController** ha queste proprietà.
 
 <dl> <dt>
 
 **AcceleratorCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ DisplayController**.**CapabilityDescriptions**")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ DisplayController**.**CapabilityDescriptions**")
 </dt> </dl>
 
-Funzionalità grafiche e 3D del controller di visualizzazione.
+Grafica e funzionalità 3D del controller di visualizzazione.
 
 <dt>
 
@@ -97,14 +97,14 @@ Funzionalità grafiche e 3D del controller di visualizzazione.
 
 <span id="Graphics_Accelerator"></span><span id="graphics_accelerator"></span><span id="GRAPHICS_ACCELERATOR"></span>
 
-**Acceleratore grafico** (2)
+**Acceleratore di grafica** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="3D_Accelerator"></span><span id="3d_accelerator"></span><span id="3D_ACCELERATOR"></span>
 
-**acceleratore 3D** (3)
+**Acceleratore 3D** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -118,28 +118,28 @@ Funzionalità grafiche e 3D del controller di visualizzazione.
 
 <span id="MultiMonitor_Support"></span><span id="multimonitor_support"></span><span id="MULTIMONITOR_SUPPORT"></span>
 
-**Supporto di multimonitor** (5)
+**Supporto multimonitor** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="PCI_Mastering"></span><span id="pci_mastering"></span><span id="PCI_MASTERING"></span>
 
-**Master PCI** (6)
+**Mastering PCI** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Second_Monochrome_Adapter_Support"></span><span id="second_monochrome_adapter_support"></span><span id="SECOND_MONOCHROME_ADAPTER_SUPPORT"></span>
 
-**Supporto per la seconda scheda monocromatica** (7)
+**Supporto della seconda scheda monocromatica** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Large_Memory_Address_Support"></span><span id="large_memory_address_support"></span><span id="LARGE_MEMORY_ADDRESS_SUPPORT"></span>
 
-**Supporto per indirizzi di memoria di grandi dimensioni** (8)
+**Supporto di indirizzi di memoria di grandi** dimensioni (8)
 
 
 </dt> <dd></dd> </dl>
@@ -149,29 +149,29 @@ Funzionalità grafiche e 3D del controller di visualizzazione.
 **CapabilityDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ DisplayController**.**AcceleratorCapabilities**")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ DisplayController**.**AcceleratorCapabilities**")
 </dt> </dl>
 
-Spiegazione dettagliata delle funzionalità dell'acceleratore video della matrice **AcceleratorCapabilities** . Gli elementi in questa matrice corrispondono agli elementi della matrice in **AcceleratorCapabilities**.
+Spiegazioni dettagliate per le funzionalità dell'acceleratore video della **matrice AcceleratorCapabilities.** Gli elementi di questa matrice corrispondono agli elementi della matrice in **AcceleratorCapabilities**.
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Description"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Video di DMTF \| \| 004,18 ")
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Description"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Video \| 004.18")
 </dt> </dl>
 
 Descrizione testuale dell'oggetto.
@@ -181,36 +181,36 @@ Descrizione testuale dell'oggetto.
 **MaxMemorySupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("byte"), **punito** ("byte")
+Qualificatori: [**Unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("Byte"), **PUnit** ("byte")
 </dt> </dl>
 
-Quantità massima di memoria, in byte, supportata.
+Quantità massima di memoria supportata, in byte.
 
 </dd> <dt>
 
 **NumberOfVideoPages**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Il numero di pagine video supportate in base alle risoluzioni correnti e alla memoria disponibile.
+Numero di pagine video supportate in base alle risoluzioni correnti e alla memoria disponibile.
 
 </dd> <dt>
 
 **OtherVideoArchitecture**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -219,14 +219,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ DisplayController**.**VideoArchitecture**")
 </dt> </dl>
 
-Descrizione del tipo di architettura video quando la proprietà **VideoArchitecture** contiene "1" (other).
+Descrizione del tipo di architettura video quando la **proprietà VideoArchitecture** contiene "1" (Altro).
 
 </dd> <dt>
 
 **OtherVideoMemoryType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -235,20 +235,20 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ DisplayController**.**VideoMemoryType**")
 </dt> </dl>
 
-Tipo di memoria video quando la proprietà **VideoMemoryType** è "1" (other).
+Tipo di memoria video quando la **proprietà VideoMemoryType** è "1" (Altro).
 
 </dd> <dt>
 
-**VideoArchitecture**
+**VideoArchitettura**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-L'architettura video dei controller di visualizzazione usata per generare il segnale video. In genere, un processore video dedicato genera il segnale video in conformità con l'architettura specificata. L'architettura indica la capacità massima di risoluzione del controller di visualizzazione.
+Architettura video dei controller di visualizzazione usata per generare il segnale video. In genere, un processore video dedicato genera il segnale video in base all'architettura specificata. L'architettura indica la capacità di risoluzione massima del controller di visualizzazione.
 
 <dt>
 
@@ -296,7 +296,7 @@ L'architettura video dei controller di visualizzazione usata per generare il seg
 
 <span id="MDA"></span><span id="mda"></span>
 
-**MDA** (6)
+**Assistente al debug** gestito (6)
 
 
 </dt> <dd></dd> <dt>
@@ -317,7 +317,7 @@ L'architettura video dei controller di visualizzazione usata per generare il seg
 
 <span id="8514A"></span><span id="8514a"></span>
 
-**8514a** (9)
+**8514A** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -362,13 +362,13 @@ L'architettura video dei controller di visualizzazione usata per generare il seg
 **VideoMemoryType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Video \| 004,6 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ DisplayController**.**OtherVideoMemoryType**")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Video \| 004.6"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ DisplayController**.**OtherVideoMemoryType**")
 </dt> </dl>
 
 Tipo di memoria video.
@@ -426,14 +426,14 @@ Tipo di memoria video.
 
 <span id="Burst_Synchronous_DRAM"></span><span id="burst_synchronous_dram"></span><span id="BURST_SYNCHRONOUS_DRAM"></span>
 
-**DRAM sincrona a impulsi** (7)
+**DRAM sincrona burst** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pipelined_Burst_SRAM"></span><span id="pipelined_burst_sram"></span><span id="PIPELINED_BURST_SRAM"></span>
 
-**SRAM** (8)
+**Pipelined Burst SRAM** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -471,7 +471,7 @@ Tipo di memoria video.
 **VideoProcessor**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -489,8 +489,8 @@ Descrizione testuale del processore/controller video.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -499,7 +499,7 @@ Descrizione testuale del processore/controller video.
 
 <dl> <dt>
 
-[**\_Controller CIM**](cim-controller.md)
+[**CIM \_ Controller**](cim-controller.md)
 </dt> </dl>
 
  

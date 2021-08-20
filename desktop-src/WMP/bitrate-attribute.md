@@ -1,9 +1,9 @@
 ---
-title: Bitrate (attributo)
-description: L'attributo bitrate è la velocità in bit dell'elemento, in bit al secondo.
+title: Attributo velocità in bit
+description: L'attributo Bitrate è la velocità in bit dell'elemento, in bit al secondo.
 ms.assetid: 19117ca7-fad3-469e-8208-c0b899e13919
 keywords:
-- Media Player di Windows attributo bitrate
+- Attributo velocità in bit Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,21 +12,21 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9869ffdf9df85fdfb019d6a088fabfb0cb05c2b3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 12b767dc6b67d7b27e87f3321f2c923c8edb8a0f13a75b345c81d1380b4ef9a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120109"
 ---
-# <a name="bitrate-attribute"></a>Bitrate (attributo)
+# <a name="bitrate-attribute"></a>Attributo velocità in bit
 
-L'attributo **bitrate** è la velocità in bit dell'elemento, in bit al secondo.
+**L'attributo Bitrate** è la velocità in bit dell'elemento, in bit al secondo.
 
 ## <a name="applies-to"></a>Si applica a
 
 -   [Elementi audio](audio-item-attributes.md)
--   [File di Windows Media usati di frequente](commonly-used-windows-media-file-attributes.md)
+-   [File multimediali Windows comunemente usati](commonly-used-windows-media-file-attributes.md)
 -   [Altri elementi](other-item-attributes.md)
 -   [Elementi radio](radio-item-attributes.md)
 -   [Elementi video](video-item-attributes.md)
@@ -35,9 +35,9 @@ L'attributo **bitrate** è la velocità in bit dell'elemento, in bit al secondo.
 
 Questo attributo viene archiviato sia nella libreria che nel file multimediale digitale.
 
-La costante Windows Media Format SDK per questo attributo è g \_ wszWMBitrate.
+La Windows media format SDK costante per questo attributo è \_ g wszWMBitrate.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,7 +45,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -53,7 +53,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

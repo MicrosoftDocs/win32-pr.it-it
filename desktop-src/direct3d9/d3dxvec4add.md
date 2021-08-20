@@ -1,7 +1,7 @@
 ---
 description: Aggiunge due vettori 4D.
 ms.assetid: da807dc0-6a31-4315-a32d-a42062c22199
-title: Funzione D3DXVec4Add (D3dx9math. h)
+title: Funzione D3DXVec4Add (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 62747cec15c4a9916dfb42572006cbb9fc908b3e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 75b25101044f3934006739f2454dd792eb5bc29d6ae6df5b9fd6b10e54c427a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118095281"
 ---
-# <a name="d3dxvec4add-function"></a>D3DXVec4Add (funzione)
+# <a name="d3dxvec4add-function"></a>Funzione D3DXVec4Add
 
 Aggiunge due vettori 4D.
 
@@ -42,30 +42,30 @@ D3DXVECTOR4* D3DXVec4Add(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Puntatore alla struttura [**D3DXVECTOR4**](d3dxvector4.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXVECTOR4**](d3dxvector4.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*pV1* \[ in\]
+*pV1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine.
+Puntatore a una [**struttura D3DXVECTOR4 di**](d3dxvector4.md) origine.
 
 </dd> <dt>
 
-*pV2* \[ in\]
+*pV2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine.
+Puntatore a una [**struttura D3DXVECTOR4 di**](d3dxvector4.md) origine.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) di origine.
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Puntatore a una struttura [**D3DXVECTOR4**](d3dxvector4.md) che rappresenta la somma dei due vettori.
+Puntatore a [**una struttura D3DXVECTOR4**](d3dxvector4.md) che rappresenta la somma dei due vettori.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXVec4Add** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXVec4Add** può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,8 +85,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

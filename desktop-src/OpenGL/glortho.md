@@ -1,9 +1,9 @@
 ---
-title: funzione glOrtho (GL. h)
-description: La funzione glOrtho moltiplica la matrice corrente in base a una matrice ortogonale.
+title: Funzione glOrtho (Gl.h)
+description: La funzione glOrtho moltiplica la matrice corrente per una matrice ortografica.
 ms.assetid: 5c70819f-e9b6-49e2-add5-9f6e6aba26ee
 keywords:
-- funzione glOrtho OpenGL
+- Funzione glOrtho OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46abbb0edd2dfc7fc51aaf7fa6519dc5367b109c
-ms.sourcegitcommit: 7ef31bf778e76ce4196205d4c4c632fbdc649805
+ms.openlocfilehash: b1e06c1740e908c34652a6d39bc7a2334763199d222ff9d1dc00ae733803ada0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "104550712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117795226"
 ---
-# <a name="glortho-function"></a>glOrtho (funzione)
+# <a name="glortho-function"></a>Funzione glOrtho
 
-La funzione **glOrtho** moltiplica la matrice corrente in base a una matrice ortogonale.
+La **funzione glOrtho** moltiplica la matrice corrente per una matrice ortografica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,21 +45,21 @@ void WINAPI glOrtho(
 
 <dl> <dt>
 
-*sinistra* 
+*Sinistra* 
 </dt> <dd>
 
 Coordinate per il piano di ritaglio verticale sinistro.
 
 </dd> <dt>
 
-*Ok* 
+*va bene* 
 </dt> <dd>
 
-Coordinate per il piano di ritaglio verticale giustaper.
+Coordinate per il piano di ritaglio verticale verticale.
 
 </dd> <dt>
 
-*parte inferiore* 
+*Fondoschiena* 
 </dt> <dd>
 
 Coordinate per il piano di ritaglio orizzontale inferiore.
@@ -69,21 +69,21 @@ Coordinate per il piano di ritaglio orizzontale inferiore.
 *top* 
 </dt> <dd>
 
-Coordinate per i primi piani di ritaglio orizzontali.
+Coordinate per i piani di ritaglio orizzontali in alto.
 
 </dd> <dt>
 
 *zNear* 
 </dt> <dd>
 
-Distanze rispetto al piano di ritaglio di profondità più vicino. Questa distanza è negativa se il piano deve trovarsi dietro il visualizzatore.
+Distanza dal piano di ritaglio di profondità più vicino. Questa distanza è negativa se il piano deve essere dietro il visualizzatore.
 
 </dd> <dt>
 
 *zFar* 
 </dt> <dd>
 
-Distanze rispetto al piano di ritaglio più profondo. Questa distanza è negativa se il piano deve trovarsi dietro il visualizzatore.
+Distanza dal piano di ritaglio di profondità più lontano. Questa distanza è negativa se il piano deve essere dietro il visualizzatore.
 
 </dd> </dl>
 
@@ -93,39 +93,39 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Il codice di errore seguente può essere recuperato dalla funzione [**glGetError**](glgeterror.md) .
+Il codice di errore seguente può essere recuperato dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **glOrtho** descrive una matrice di prospettive che produce una proiezione parallela. I parametri (*Left*, *Bottom*, *near*) e (*right*, *Top*, *near*) specificano i punti sul piano di ritaglio vicino di cui è stato eseguito il mapping rispettivamente agli angoli inferiore sinistro e superiore destro della finestra, supponendo che l'occhio si trovi in (0, 0, 0). Il parametro *lontano* specifica il percorso del piano di ritaglio estremo. Sia *zNear* che *zFar* possono essere positivi o negativi. La matrice corrispondente è illustrata nell'immagine seguente.
+La **funzione glOrtho** descrive una matrice prospettica che produce una proiezione parallela. I parametri (*left*, *bottom*, *near*) e (*right*, *top*, *near*) specificano i punti sul piano di ritaglio vicino mappati rispettivamente agli angoli inferiore sinistro e superiore destro della finestra, presupponendo che l'occhio si trovi in corrispondenza di (0, 0, 0). Il *parametro far* specifica la posizione del piano di ritaglio lontano. Sia *zNear che* *zFar* possono essere positivi o negativi. La matrice corrispondente è illustrata nell'immagine seguente.
 
-![Diagramma che mostra la matrice della prospettiva descritta dalla funzione glOrtho.](images/ortho1.png)
+![Diagramma che mostra la matrice prospettica descritta dalla funzione glOrtho.](images/ortho1.png)
 
 dove
 
-![Equazioni che descrivono la matrice della prospettiva.](images/ortho2.png)
+![Equazioni che descrivono la matrice prospettica.](images/ortho2.png)
 
-La matrice corrente viene moltiplicata per questa matrice con il risultato che sostituisce la matrice corrente. Ovvero, se M è la matrice corrente e O è la matrice Ortho, M viene sostituito con M O.
+La matrice corrente viene moltiplicata per questa matrice con il risultato che sostituisce la matrice corrente. Ciò significa che se M è la matrice corrente e O è la matrice dell'orto, M viene sostituito con M O.
 
-Usare [**glPushMatrix**](glpushmatrix.md) e **glPopMatrix** per salvare e ripristinare lo stack della matrice corrente. Usare [**glMatrixMode**](glmatrixmode.md) per impostare la matrice corrente.
+Usare [**glPushMatrix**](glpushmatrix.md) e **glPopMatrix** per salvare e ripristinare lo stack di matrici corrente. Usare [**glMatrixMode**](glmatrixmode.md) per impostare la matrice corrente.
 
-Le funzioni seguenti consentono di recuperare informazioni correlate a **glOrtho**:
+Le funzioni seguenti recuperano informazioni correlate **a glOrtho**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento della \_ modalità matrice GL \_
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ MATRIX \_ MODE
 
-**glGet** con argomento GL \_ MODELVIEW \_ Matrix
+**glGet** con argomento GL \_ MODELVIEW \_ MATRIX
 
-**glGet** con matrice di \_ proiezione GL argomento \_
+**glGet con** argomento GL \_ PROJECTION \_ MATRIX
 
-**glGet** con argomento della \_ matrice di trama GL \_
+**glGet** con argomento GL \_ TEXTURE \_ MATRIX
 
 ## <a name="requirements"></a>Requisiti
 
@@ -135,8 +135,8 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glOrtho
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -148,7 +148,7 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glOrtho
 [**glBegin**](glbegin.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glFrustum**](glfrustum.md)

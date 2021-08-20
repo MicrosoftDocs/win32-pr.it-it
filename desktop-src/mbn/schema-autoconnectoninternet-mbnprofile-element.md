@@ -24,7 +24,7 @@ ms.locfileid: "117881476"
 
 Se impostato su **FALSE,** la logica di connessione automatica del servizio Mobile Broadband non verrà usata se è disponibile un'altra connettività di rete per il sistema. Se impostato su **TRUE,** il servizio Mobile Broadband tenterà di connettere automaticamente il dispositivo alla rete in base all'impostazione di connessione automatica definita [**nell'elemento ConnectionMode.**](schema-connectionmode-mbnprofile-element.md)
 
-**Windows 8 e versioni successive:** Questo elemento è deprecato. Usare invece [**il metodo WcmSetProperty con**](/windows/desktop/api/wcmapi/nf-wcmapi-wcmsetproperty) il parametro *Property* impostato su **wcm global property \_ minimize \_ \_ \_ policy.**
+**Windows 8 e versioni successive:** Questo elemento è deprecato. Usare invece [**il metodo WcmSetProperty**](/windows/desktop/api/wcmapi/nf-wcmapi-wcmsetproperty) con il *parametro Property* impostato su **wcm global property minimize \_ \_ \_ \_ policy.**
 
 ``` syntax
 <xs:element name="AutoConnectOnInternet"
@@ -55,7 +55,7 @@ Se impostato su **FALSE,** la logica di connessione automatica del servizio Mobi
 [**MBNProfile**](schema-mbnprofile-element.md)
 </dt> <dt>
 
-**Possibile elemento padre diretto nell'istanza dello schema**
+**Possibile elemento padre immediato nell'istanza dello schema**
 </dt> <dt>
 
 [**MBNProfile**](schema-mbnprofile-element.md)

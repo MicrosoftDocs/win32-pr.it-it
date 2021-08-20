@@ -1,9 +1,9 @@
 ---
-title: Struttura WINBIO_BIR ( \_ tipi WINBIO. h)
+title: WINBIO_BIR struttura (Winbio \_ types.h)
 description: Rappresenta un record di informazioni biometriche (BIR).
 ms.assetid: 39cfab34-0416-4897-bf95-a1b3c3a6a7a1
 keywords:
-- Struttura di WINBIO_BIR Windows Biometric Framework API
+- WINBIO_BIR struttura Windows'API Biometric Framework
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e422bbe59414d75541127b41e5e2cc1829adaaa7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: beb9e82a27717b33bcd0e06f5cd5bc23a3c43bc3a67cf70068f1a9eeb31b08bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118911094"
 ---
-# <a name="winbio_bir-structure"></a>\_Struttura WINBIO Bir
+# <a name="winbio_bir-structure"></a>Struttura BIR WINBIO \_
 
-La struttura **WINBIO \_ Bir** rappresenta un record di informazioni biometriche (Bir). Il record di informazioni contiene i blocchi di intestazione, dati e firma.
+La **struttura \_ BIR WINBIO** rappresenta un record di informazioni biometriche (BIR). Il record di informazioni contiene blocchi di intestazione, dati e firma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,38 +46,38 @@ typedef struct _WINBIO_BIR {
 **HeaderBlock**
 </dt> <dd>
 
-Struttura [**di \_ \_ dati WINBIO bir**](winbio-bir-data.md) che contiene le dimensioni, in byte, e l'offset dell'intestazione Bir. L'intestazione contiene informazioni che descrivono il contenuto del record di informazioni.
+Struttura [**WINBIO \_ BIR \_ DATA**](winbio-bir-data.md) che contiene le dimensioni, in byte e l'offset dell'intestazione BIR. L'intestazione contiene informazioni che descrivono il contenuto del record di informazioni.
 
 </dd> <dt>
 
 **StandardDataBlock**
 </dt> <dd>
 
-Struttura [**di \_ \_ dati WINBIO bir**](winbio-bir-data.md) che contiene le dimensioni, in byte, e l'offset delle informazioni biometriche elaborate o non elaborate create dal Windows Biometric Framework (WBF).
+Struttura [**WINBIO \_ BIR \_ DATA**](winbio-bir-data.md) che contiene le dimensioni, in byte e l'offset delle informazioni biometriche elaborate o non elaborate create da Windows Biometric Framework (WBF).
 
 </dd> <dt>
 
 **VendorDataBlock**
 </dt> <dd>
 
-Una struttura di [**\_ \_ dati WINBIO bir**](winbio-bir-data.md) che contiene le dimensioni, in byte e l'offset delle informazioni biometriche elaborate o non elaborate fornite dai sensori e dal software del fornitore.
+Struttura [**WINBIO \_ BIR \_ DATA**](winbio-bir-data.md) che contiene le dimensioni, in byte e l'offset delle informazioni biometriche elaborate o non elaborate fornite dai sensori e dal software del fornitore.
 
 </dd> <dt>
 
 **SignatureBlock**
 </dt> <dd>
 
-Struttura di [**\_ \_ dati WINBIO bir**](winbio-bir-data.md) facoltativa che contiene la dimensione, in byte, e l'offset del codice Mac (Digital Signature Message Authentication Code) che può essere usato per verificare l'integrità di Bir. Se presente, la firma o il MAC deve coprire l'intestazione e i blocchi di dati.
+Struttura [**WINBIO \_ BIR \_ DATA**](winbio-bir-data.md) facoltativa che contiene le dimensioni, in byte e l'offset del codice MAC (Digital Signature Message Authentication Code) che può essere usato per verificare l'integrità del BIR. Se presente, la firma o mac deve coprire l'intestazione e i blocchi di dati.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'uso degli offset anziché dei puntatori consente una semplice serializzazione di BIR e per una conversione meno complessa tra gli ambienti 32 e 64 bit o tra l'utente e la modalità kernel.
+L'uso di offset anziché di puntatori consente una serializzazione semplice del BIR e una traduzione meno complessa tra ambienti a 32 e 64 bit o tra modalità utente e kernel.
 
-BIR è compatibile con il comune CBEFF (Biometric Exchange Format Framework) definito da NIST 6529-A.
+BiR è compatibile con Common Biometric Exchange Format Framework (CBEFF) definito da NIST 6529-A.
 
-Se questa struttura contiene un valore *StandardDataBlock* , il parametro di *tipo* dell'intestazione specificata dal parametro *HeaderBlock* deve essere impostato sul **\_ \_ \_ \_ tipo di formato WINBIO ANSI 381**. Questo è l'unico formato dati standard supportato dalla versione corrente del Windows Biometric Framework.
+Se questa struttura contiene un *valore StandardDataBlock,* il parametro *Type* dell'intestazione specificata dal parametro *HeaderBlock* deve essere impostato su **WINBIO \_ ANSI \_ 381 \_ FORMAT \_ TYPE.** Questo è l'unico formato dati standard supportato dalla versione corrente del framework biometrico Windows Biometric Framework.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,9 +85,9 @@ Se questa struttura contiene un valore *StandardDataBlock* , il parametro di *ti
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                                    |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>\_Tipi WinBio. h (includere WinBio. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                       |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ types.h (include Winbio.h)</dt> </dl> |
 
 
 
@@ -98,10 +98,10 @@ Se questa struttura contiene un valore *StandardDataBlock* , il parametro di *ti
 [Strutture delle applicazioni client](client-application-structures.md)
 </dt> <dt>
 
-[**\_dati WINBIO bir \_**](winbio-bir-data.md)
+[**DATI DI WINBIO \_ BIR \_**](winbio-bir-data.md)
 </dt> <dt>
 
-[**\_intestazione WINBIO bir \_**](winbio-bir-header.md)
+[**INTESTAZIONE DI WINBIO \_ \_ BIR**](winbio-bir-header.md)
 </dt> </dl>
 
  

@@ -1,21 +1,21 @@
 ---
-description: La tabella media descrive il set di dischi che costituiscono il supporto di origine per l'installazione.
+description: La tabella Supporti descrive il set di dischi che costituiscono il supporto di origine per l'installazione.
 ms.assetid: f9789f1d-35bf-40d6-9724-d5a160a0d06d
 title: Tabella supporti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a59cd8bf864aa890891873ed92a39225c6eebdf
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 29939553e64fb6558aa6480fb69b7beab208a4ccb3e2c9ce55c4d8fcbfc18cc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104351256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117805096"
 ---
 # <a name="media-table"></a>Tabella supporti
 
-La tabella media descrive il set di dischi che costituiscono il supporto di origine per l'installazione.
+La tabella Supporti descrive il set di dischi che costituiscono il supporto di origine per l'installazione.
 
-La tabella media contiene le colonne mostrate nella tabella seguente.
+La tabella Media contiene le colonne mostrate nella tabella seguente.
 
 
 
@@ -24,7 +24,7 @@ La tabella media contiene le colonne mostrate nella tabella seguente.
 | DiskId       | [Integer](integer.md)   | S   | N        |
 | LastSequence | [Integer](integer.md)   | N   | N        |
 | DiskPrompt   | [Text](text.md)         | N   | S        |
-| CAB      | [CAB](cabinet.md)   | N   | S        |
+| armadietto      | [armadietto](cabinet.md)   | N   | S        |
 | VolumeLabel  | [Text](text.md)         | N   | S        |
 | Source (Sorgente)       | [Proprietà](property.md) | N   | S        |
 
@@ -39,58 +39,58 @@ La tabella media contiene le colonne mostrate nella tabella seguente.
 <span id="DiskId"></span><span id="diskid"></span><span id="DISKID"></span>DiskId
 </dt> <dd>
 
-Determina il tipo di ordinamento per la tabella. Questo numero deve essere maggiore o uguale a 1.
+Determina l'ordinamento per la tabella. Questo numero deve essere uguale o maggiore di 1.
 
 </dd> <dt>
 
 <span id="LastSequence"></span><span id="lastsequence"></span><span id="LASTSEQUENCE"></span>LastSequence
 </dt> <dd>
 
-Numero di sequenza del file per l'ultimo file per questo supporto. I numeri nella colonna LastSequence specificano quali file della tabella [file](file-table.md) si trovano in un determinato disco di origine. Ogni disco di origine contiene tutti i file con numeri di sequenza (come illustrato nella colonna sequenza della tabella file) minore o uguale al valore nella colonna LastSequence e maggiore del valore LastSequence del disco precedente (o maggiore di 0, per la prima voce nella tabella Media). Questo numero deve essere non negativo. il limite massimo è 32767 file. Per ulteriori informazioni sulla creazione di un pacchetto di Windows Installer con più file, vedere Creazione di [un pacchetto di grandi dimensioni](authoring-a-large-package.md).
+Numero di sequenza del file per l'ultimo file per questo supporto. I numeri nella colonna LastSequence specificano quali file della tabella [File](file-table.md) si trovano in un disco di origine specifico. Ogni disco di origine contiene tutti i file con numeri di sequenza (come illustrato nella colonna Sequenza della tabella File) minore o uguale al valore nella colonna LastSequence e maggiore del valore LastSequence del disco precedente (o maggiore di 0, per la prima voce della tabella Media). Questo numero deve essere non negativo. il limite massimo è 32767 file. Per altre informazioni sulla creazione di un pacchetto Windows Installer con più file, vedere [Creazione di un pacchetto di grandi dimensioni.](authoring-a-large-package.md)
 
 </dd> <dt>
 
 <span id="DiskPrompt"></span><span id="diskprompt"></span><span id="DISKPROMPT"></span>DiskPrompt
 </dt> <dd>
 
-Nome del disco, che in genere è il testo visibile stampato sul disco. Questo testo localizzabile viene usato per richiedere all'utente quando è necessario inserire il disco.
+Nome del disco, che in genere è il testo visibile stampato sul disco. Questo testo localizzabile viene usato per richiedere all'utente quando è necessario inserire questo disco.
 
 </dd> <dt>
 
-<span id="Cabinet"></span><span id="cabinet"></span><span id="CABINET"></span>CAB
+<span id="Cabinet"></span><span id="cabinet"></span><span id="CABINET"></span>armadietto
 </dt> <dd>
 
-Nome del file CAB se alcuni o tutti i file archiviati nel supporto vengono compressi in un file CAB. Se non viene utilizzato alcun cabinet, questa colonna deve essere vuota. Il nome del file CAB deve usare la sintassi del tipo di dati [CAB](cabinet.md) . Windows Installer richiede sempre un'origine valida per ripristinare i file inclusi nei file CAB incorporati. Quando Windows Installer installa un pacchetto contenente un file CAB incorporato, una copia del file CAB può essere salvata dal sistema. Non è possibile utilizzare questa copia per ripristinare il file CAB. Per conservare spazio su disco, utilizzare file CAB esterni anziché file CAB incorporati.
+Nome del file CAB se alcuni o tutti i file archiviati nel supporto vengono compressi in un file CAB. Se non viene usato alcun cabinet, questa colonna deve essere vuota. Il nome dell'cabinet deve usare la sintassi del [tipo di dati Cabinet.](cabinet.md) Windows Il programma di installazione richiede sempre un'origine valida per ripristinare i file inclusi nei file CAB incorporati. Quando Windows programma di installazione installa un pacchetto contenente un file CAB incorporato, una copia del file CAB può essere salvata dal sistema. Questa copia non può essere usata per ripristinare il file CAB. Per risparmiare spazio su disco, usare file CAB esterni anziché file CAB incorporati.
 
 </dd> <dt>
 
 <span id="VolumeLabel"></span><span id="volumelabel"></span><span id="VOLUMELABEL"></span>VolumeLabel
 </dt> <dd>
 
-Etichetta attribuita al volume. Si tratta dell'etichetta del volume restituita dalla funzione [**GetVolumeInformation**](/windows/win32/api/fileapi/nf-fileapi-getvolumeinformationa) . Se la proprietà [**SourceDir**](sourcedir.md) fa riferimento a un volume rimovibile (floppy o CD-ROM), questa etichetta del volume viene utilizzata per verificare che il disco appropriato si trovi nell'unità prima di tentare di installare i file. La voce in questa colonna deve corrispondere all'etichetta del volume del supporto fisico.
+Etichetta attribuita al volume. Si tratta dell'etichetta di volume restituita [**dalla funzione GetVolumeInformation.**](/windows/win32/api/fileapi/nf-fileapi-getvolumeinformationa) Se la proprietà [**SourceDir**](sourcedir.md) fa riferimento a un volume rimovibile (floppy o CD-ROM), questa etichetta di volume viene usata per verificare che il disco appropriato si trova nell'unità prima di provare a installare i file. La voce in questa colonna deve corrispondere all'etichetta di volume del supporto fisico.
 
 </dd> <dt>
 
-<span id="Source"></span><span id="source"></span><span id="SOURCE"></span>Origine
+<span id="Source"></span><span id="source"></span><span id="SOURCE"></span>fonte
 </dt> <dd>
 
-Questo campo viene usato solo con l'applicazione di patch e in caso contrario viene lasciato vuoto. Una trasformazione patch può immettere una proprietà che rappresenta il percorso del file CAB contenente i file della patch o i nuovi file aggiunti dalla patch. Per questi file è necessario specificare un'origine diversa, perché l'origine del pacchetto di patch può essere archiviata separatamente dall'origine del prodotto. Se il campo cabinet è vuoto, il programma di installazione ignorerà il valore in questa colonna. Se questo campo è vuoto, il programma di installazione usa il valore della proprietà [**SourceDir**](sourcedir.md) come origine del file CAB.
+Questo campo viene usato solo dall'applicazione di patch e in caso contrario viene lasciato vuoto. Una trasformazione patch può immettere qui una proprietà che rappresenta il percorso del file CAB contenente i file di patch o i nuovi file aggiunti dalla patch. È necessario specificare un'origine diversa per questi file perché l'origine del pacchetto di patch può essere archiviata separatamente dall'origine del prodotto. Se il campo Cabinet è vuoto, il programma di installazione ignora il valore in questa colonna. Se questo campo è vuoto, il programma di installazione usa il valore della [**proprietà SourceDir**](sourcedir.md) come origine del file CAB.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Se il nome del cabinet è preceduto da un simbolo di cancelletto ( \# ), i file che fanno riferimento a questo record della tabella multimediale vengono compressi in un file CAB archiviato nel database come flusso separato.
+Se il nome dell'archivio è preceduto da un simbolo di numero ( ), i file che fanno riferimento a questo record della tabella Media vengono archiviati in un file CAB archiviato all'interno del database come \# flusso separato.
 
-Per ulteriori informazioni su come aggiungere i file CAB alle tabelle di file e alle tabelle multimediali, vedere [utilizzo di archivi e origini compresse](using-cabinets-and-compressed-sources.md).
+Per altre informazioni su come aggiungere file CAB alle tabelle File e Media, vedere [Using Cabinets and Compressed Sources](using-cabinets-and-compressed-sources.md).
 
-Windows Installer richiede che il file con estensione msi si trovi nel primo disco del supporto rimovibile (CD, DVD o floppy) usato per l'installazione del prodotto.
+Windows Il programma di installazione richiede .msi file di installazione sul primo disco dei supporti rimovibili (CD, DVD o floppy) usati per l'installazione del prodotto.
 
-**Determinazione del SourceMode**
+**Determinazione di SourceMode**
 
-La proprietà [**riepilogo Conteggio parole**](word-count-summary.md) determina la modalità di origine per l'installazione corrente. Se questa proprietà è impostata su 2 o 3, viene utilizzata un'installazione del cabinet. In questa modalità, si presuppone che i file CAB esistano nella directory indicata dalla proprietà [**SourceDir**](sourcedir.md) . Se il valore del tipo di origine è 0 o 1, si presuppone che tutti i file di origine esistano nell'albero la cui radice è indicata dalla proprietà **SourceDir** .
+La [**proprietà Riepilogo conteggio**](word-count-summary.md) parole determina la modalità di origine per l'installazione corrente. Se questa proprietà è impostata su 2 o 3, viene utilizzata un'installazione cab. In questa modalità si presuppone che i file CAB esistano nella directory indicata dalla [**proprietà SourceDir.**](sourcedir.md) Se il valore di Tipo di origine è 0 o 1, si presuppone che tutti i file di origine esistano nell'albero la cui radice è indicata dalla **proprietà SourceDir.**
 
-Si noti che questo si applica solo ai file della tabella file che non dispongono del set di bit compresso o non compresso nella colonna attributi. Questi bit eseguono l'override del valore della proprietà [**riepilogo Conteggio parole**](word-count-summary.md) per determinare se un determinato file viene compresso o decompresso.
+Si noti che questo si applica solo ai file nella tabella File per i cui bit compressi o non compressi non sono impostati nella colonna attributes. Questi bit eseguono l'override del valore [**della proprietà Riepilogo**](word-count-summary.md) conteggio parole quando determinano se un determinato file è compresso o non compresso.
 
 ## <a name="validation"></a>Convalida
 

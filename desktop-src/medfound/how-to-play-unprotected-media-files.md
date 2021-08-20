@@ -17,7 +17,7 @@ Questa esercitazione illustra come riprodurre file multimediali usando [l'oggett
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Prima di leggere questo argomento, è necessario avere familiarità con i concetti Media Foundation seguenti:
+Prima di leggere questo argomento, è necessario avere familiarità con i Media Foundation seguenti:
 
 -   [Sessione multimediale](media-session.md)
 -   [Resolver di origine](source-resolver.md)
@@ -57,7 +57,7 @@ Di seguito è riportata una descrizione generale dei passaggi necessari per ripr
     1.  Chiamare [**IMFMediaSession::Close**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-close) per chiudere la sessione multimediale. Questo metodo è asincrono. Al termine, la sessione multimediale invia un [evento MESessionClosed.](mesessionclosed.md) È quindi possibile eseguire i passaggi rimanenti.
     2.  Chiamare [**IMFMediaSource::Shutdown**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-shutdown) per arrestare l'origine multimediale.
     3.  Chiamare [**IMFMediaSession::Shutdown**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-shutdown) per arrestare la sessione multimediale.
-    4.  Chiamare [**MFShutdown**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown) per arrestare la Media Foundation piattaforma.
+    4.  Chiamare [**MFShutdown**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown) per arrestare la Media Foundation.
 
 Le sezioni seguenti illustrano un esempio di codice completo:
 

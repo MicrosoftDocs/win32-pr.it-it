@@ -1,19 +1,19 @@
 ---
-description: Viene descritto come Chroma è stato campionato per un tipo di supporto video YCbCr.
+description: Descrive come è stata campionata la croma per un tipo di supporto video YCbCr.
 ms.assetid: 0c930348-8669-42cc-9d74-df9ef475bdc8
-title: Attributo MF_MT_VIDEO_CHROMA_SITING (Mfapi. h)
+title: MF_MT_VIDEO_CHROMA_SITING attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa634cf9a9ca7f5c292eb0cf06c6a1a14c788d43
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5954f6d1649c366056bf9362a4226314d79ad78708fd4140f355506f7ee637d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118741527"
 ---
-# <a name="mf_mt_video_chroma_siting-attribute"></a>\_Attributo di \_ localizzazione del video MF mt \_ \_
+# <a name="mf_mt_video_chroma_siting-attribute"></a>Attributo MF \_ MT \_ VIDEO \_ CHROMA \_ SITING
 
-Descrive il modo in cui Chroma è stato campionato per un tipo di supporto video Cb'Cr.
+Descrive come è stata campionata la croma per un tipo di supporto video Y'Cb'Cr'.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,9 +21,9 @@ Descrive il modo in cui Chroma è stato campionato per un tipo di supporto video
 
 ## <a name="remarks"></a>Commenti
 
-Il valore di questo attributo è **un operatore OR** bit per bit di flag dell'enumerazione [**MFVideoChromaSubsampling**](/windows/desktop/api/mfobjects/ne-mfobjects-mfvideochromasubsampling) .
+Il valore di questo attributo è un **OR** bit per bit di flag dell'enumerazione [**MFVideoChromaSubsampling.**](/windows/desktop/api/mfobjects/ne-mfobjects-mfvideochromasubsampling)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop Di Vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 \[ \|\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -41,13 +41,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli attributi Media Foundation alfabetici](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
@@ -56,7 +56,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 [Attributi del tipo di supporto](media-type-attributes.md)
 </dt> <dt>
 
-[Informazioni sui colori estesi](extended-color-information.md)
+[Informazioni estese sui colori](extended-color-information.md)
 </dt> </dl>
 
  
