@@ -1,30 +1,30 @@
 ---
-title: Proprietà DesktopWidth di IMsTscAx
+title: Proprietà IMsTscAx DesktopWidth
 description: Specifica la larghezza del controllo corrente, in pixel, sul desktop remoto iniziale.
 ms.assetid: 3b349f6c-d068-4047-b8b5-29d022894729
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà DesktopWidth
-- Servizi Desktop remoto proprietà DesktopWidth, interfaccia IMsTscAx
-- Interfaccia IMsTscAx Servizi Desktop remoto, proprietà DesktopWidth
-- Servizi Desktop remoto proprietà DesktopWidth, interfaccia IMsRdpClient
-- Interfaccia IMsRdpClient Servizi Desktop remoto, proprietà DesktopWidth
-- Servizi Desktop remoto proprietà DesktopWidth, interfaccia IMsRdpClient2
-- Interfaccia IMsRdpClient2 Servizi Desktop remoto, proprietà DesktopWidth
-- Servizi Desktop remoto proprietà DesktopWidth, interfaccia IMsRdpClient3
-- Interfaccia IMsRdpClient3 Servizi Desktop remoto, proprietà DesktopWidth
-- Servizi Desktop remoto proprietà DesktopWidth, interfaccia IMsRdpClient4
-- Interfaccia IMsRdpClient4 Servizi Desktop remoto, proprietà DesktopWidth
-- Servizi Desktop remoto proprietà DesktopWidth, interfaccia IMsRdpClient5
-- Interfaccia IMsRdpClient5 Servizi Desktop remoto, proprietà DesktopWidth
-- Servizi Desktop remoto proprietà DesktopWidth, interfaccia IMsRdpClient6
-- Interfaccia IMsRdpClient6 Servizi Desktop remoto, proprietà DesktopWidth
-- Servizi Desktop remoto proprietà DesktopWidth, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, proprietà DesktopWidth
-- Servizi Desktop remoto proprietà DesktopWidth, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, proprietà DesktopWidth
-- Servizi Desktop remoto proprietà DesktopWidth, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, proprietà DesktopWidth
+- Proprietà DesktopWidth Servizi Desktop remoto
+- Proprietà DesktopWidth Servizi Desktop remoto, interfaccia IMsTscAx
+- Interfaccia IMsTscAx Servizi Desktop remoto proprietà DesktopWidth
+- Proprietà DesktopWidth Servizi Desktop remoto, interfaccia IMsRdpClient
+- Interfaccia IMsRdpClient Servizi Desktop remoto proprietà DesktopWidth
+- Proprietà DesktopWidth Servizi Desktop remoto, interfaccia IMsRdpClient2
+- Interfaccia IMsRdpClient2 Servizi Desktop remoto proprietà DesktopWidth
+- Proprietà DesktopWidth Servizi Desktop remoto, interfaccia IMsRdpClient3
+- Interfaccia IMsRdpClient3 Servizi Desktop remoto proprietà DesktopWidth
+- Proprietà DesktopWidth Servizi Desktop remoto, interfaccia IMsRdpClient4
+- Interfaccia IMsRdpClient4 Servizi Desktop remoto proprietà DesktopWidth
+- Proprietà DesktopWidth Servizi Desktop remoto, interfaccia IMsRdpClient5
+- Interfaccia IMsRdpClient5 Servizi Desktop remoto proprietà DesktopWidth
+- Proprietà DesktopWidth Servizi Desktop remoto, interfaccia IMsRdpClient6
+- Interfaccia IMsRdpClient6 Servizi Desktop remoto proprietà DesktopWidth
+- Proprietà DesktopWidth Servizi Desktop remoto, interfaccia IMsRdpClient7
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto proprietà DesktopWidth
+- Proprietà DesktopWidth Servizi Desktop remoto, interfaccia IMsRdpClient8
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto proprietà DesktopWidth
+- Proprietà DesktopWidth Servizi Desktop remoto, interfaccia IMsRdpClient9
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto proprietà DesktopWidth
 topic_type:
 - apiref
 api_name:
@@ -64,14 +64,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 16cd1391c6aeb27d9ec0f87317b06e9084337fbb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ca982303208bb2badecf210c9590f627a7b3b57c5acd9ecd7f8fee0bbb70ec93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058845"
 ---
-# <a name="imstscaxdesktopwidth-property"></a>IMsTscAx::D Proprietà esktopWidth
+# <a name="imstscaxdesktopwidth-property"></a>Proprietà IMsTscAx::D esktopWidth
 
 Specifica la larghezza del controllo corrente, in pixel, sul desktop remoto iniziale.
 
@@ -98,11 +98,11 @@ Nuova larghezza, in pixel.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Se l'operazione ha esito positivo, restituire **S \_ OK** .
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-L'impostazione della proprietà **DesktopWidth** è facoltativa, ma deve essere impostata prima di chiamare il metodo [**Connect**](imstscax-connect.md) . Se non viene specificata una larghezza del desktop o è impostata su zero, la larghezza del desktop viene impostata sulla larghezza del controllo. I valori minimo e massimo dipendono dalla versione del sistema operativo del client Desktop remoto.
+L'impostazione **della proprietà DesktopWidth** è facoltativa, ma deve essere impostata prima di chiamare il [**Connessione**](imstscax-connect.md) metodo . Se la larghezza del desktop non è specificata o è impostata su zero, la larghezza del desktop viene impostata sulla larghezza del controllo . I valori minimo e massimo dipendono dalla versione del sistema operativo del client Desktop remoto client.
 
 <dl> <dt>
 
@@ -127,9 +127,9 @@ Windows Vista
 
 </dd> </dl>
 
-Una volta stabilita una connessione, qualsiasi modifica apportata alla larghezza del controllo non modifica la larghezza del desktop remoto. Al contrario, il controllo Visualizza le barre di scorrimento o Centra il desktop remoto, in base alle esigenze. Per modificare le dimensioni del desktop di una connessione attiva, usare il metodo [**IMsRdpClient8:: Reconnect**](imsrdpclient8-reconnect.md) .
+Dopo aver stabilito una connessione, qualsiasi modifica alla larghezza del controllo non modifica la larghezza del desktop remoto. Al contrario, il controllo apre le barre di scorrimento o centra il desktop remoto, in base alle esigenze. Per modificare le dimensioni del desktop di una connessione attiva, usare il [**metodo IMsRdpClient8::Reconnect.**](imsrdpclient8-reconnect.md)
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -141,7 +141,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscAx è definito come 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
+| IID<br/>                      | IMsTscAx IID è definito come \_ 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
 
 
 

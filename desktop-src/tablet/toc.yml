@@ -15,11 +15,11 @@
           items:
             - name: Versione della libreria a cui fare riferimento
               href: which-library-version-to-reference.md
-            - name: Libreria gestita e controlli (Tablet PC)
+            - name: Libreria e controlli gestiti (Tablet PC)
               href: managed-library-and-controls--tablet-pc.md
             - name: Windows Presentation Foundation (Tablet PC)
               href: windows-presentation-foundation--tablet-pc.md
-            - name: Libreria COM e controlli ActiveX (Tablet PC)
+            - name: Libreria COM e ActiveX (Tablet PC)
               href: com-library-and-activex-controls--tablet-pc.md
         - name: Domande frequenti
           href: frequently-asked-questions.yml
@@ -51,7 +51,7 @@
                       href: dictionaries-and-phrase-lists.md
                 - name: Impostazione del contesto con le API SetInputScope
                   href: setting-context-with-the-setinputscope-apis.md
-                - name: Impostazione del contesto per Ink-Enabled di controllo
+                - name: Impostazione del contesto per Ink-Enabled controllo
                   href: setting-context-for-ink-enabled-controls.md
                 - name: Impostazione del contesto per i controlli senza finestra
                   href: setting-context-for-windowless-controls.md
@@ -190,7 +190,7 @@
               href: basic-recognition-and-ink-analysis.md
             - name: Proxy dati con analisi input penna
               href: data-proxy-with-ink-analysis.md
-            - name: Flusso di eventi del proxy dati
+            - name: Eventi proxy dati Flow
               href: data-proxy-event-flow.md
             - name: Oggetto divisore
               href: the-divider-object.md
@@ -214,14 +214,14 @@
         - name: Controlli input penna
           href: ink-controls.md
           items:
-            - name: Aggiunta di controlli input penna a un progetto
+            - name: Aggiunta di controlli input penna a un Project
               href: adding-ink-controls-to-a-project.md
             - name: Controllo InkEdit
               href: inkedit-control.md
               items:
-                - name: Creazione di istanze di InkEdit
+                - name: Creazione di un'istanza di InkEdit
                   href: instantiating-inkedit.md
-                - name: Riconoscimento di parole e caratteri
+                - name: Confronto tra riconoscimento di parole e caratteri
                   href: word-vs--character-recognition.md
                 - name: Visualizzazione dell'input penna come input penna
                   href: displaying-ink-as-ink.md
@@ -236,10 +236,10 @@
                   href: working-with-pictures.md
                 - name: Uso di InkPicture nelle versioni precedenti di Windows
                   href: using-inkpicture-on-earlier-versions-of-windows.md
-        - name: Interoperabilità con l'input penna
+        - name: Interoperabilità dell'input penna
           href: ink-interoperability.md
           items:
-            - name: Formati dati input penna
+            - name: Formati di dati input penna
               href: ink-data-formats.md
             - name: Scenari di interoperabilità importanti
               href: important-interoperability-scenarios.md
@@ -257,7 +257,7 @@
         - name: Input penna sul Web
           href: ink-on-the-web.md
           items:
-            - name: Nessuna distribuzione touch
+            - name: Distribuzione senza tocco
               href: no-touch-deployment.md
             - name: Controlli Web
               href: web-controls.md
@@ -287,7 +287,7 @@
               href: customizing-the-math-input-control.md
             - name: Ricezione dell'input dal Controllo input penna espressioni matematiche
               href: receiving-input-from-the-math-input-control.md
-        - name: Programmazione del pannello di input di testo
+        - name: Programmazione del pannello input di testo
           href: programming-the-text-input-panel.md
           items:
             - name: TextInputPanel per gli utenti di PenInputPanel
@@ -296,10 +296,10 @@
               href: using-input-panel-autocomplete.md
             - name: Abilitazione della correzione del testo per gli agenti di raccolta input penna personalizzati
               href: enabling-text-correction-for-custom-ink-collectors.md
-            - name: Programmazione del pannello di input tramite la classe PenInputPanel
+            - name: Programmazione del pannello di input con la classe PenInputPanel
               href: programming-the-input-panel-using-the-peninputpanel-class.md
               items:
-                - name: Informazioni sul Pannello input penna
+                - name: Informazioni sul pannello di input
                   href: about-the-input-panel.md
                 - name: Creazione di un'istanza della classe PenInputPanel
                   href: instantiating-the-peninputpanel-class.md
@@ -308,7 +308,7 @@
                       href: creating-a-peninputpanel-object.md
                     - name: Uso di PenInputPanel con caselle combinate
                       href: using-the-peninputpanel-with-combo-boxes.md
-                    - name: Visualizzazione del Pannello input penna
+                    - name: Visualizzazione del pannello di input
                       href: displaying-the-input-panel.md
                 - name: Supporto factoid
                   href: factoid-support.md
@@ -323,12 +323,12 @@
               href: general-threading-considerations.md
             - name: Considerazioni sul threading della libreria gestita
               href: managed-library-threading-considerations.md
-            - name: Considerazioni sul threading di COM e automazione
+            - name: Considerazioni sul threading com e automazione
               href: com-and-automation-threading-considerations.md
-            - name: Thread in cui un evento può essere generato
+            - name: Thread in cui può essere generato un evento
               href: threads-on-which-an-event-can-fire.md
               items:
-                - name: Eventi dell'oggetto input penna
+                - name: Eventi dell'oggetto Ink
                   href: ink-object-events.md
                 - name: Eventi dell'oggetto InkCollector
                   href: inkcollector-object-events.md
@@ -344,7 +344,7 @@
                   href: recognizercontext-object-events.md
                 - name: Eventi della raccolta Strokes
                   href: strokes-collection-events.md
-        - name: Strumento di cattura supporto in Windows Vista
+        - name: Strumento di cattura in Windows Vista
           href: snipping-tool-support-in-windows-vista.md
         - name: Riconoscimento vocale e accessibilità
           href: speech-and-accessibility.md
@@ -360,19 +360,19 @@
                   href: using-custom-controls.md
                 - name: Uso Active Accessibility per esporre controlli personalizzati
                   href: using-active-accessibility-to-expose-custom-controls.md
-                - name: Tecniche non standard per l'esposizione di controlli personalizzati
+                - name: Tecniche standard per l'esposizione di controlli personalizzati
                   href: substandard-techniques-for-exposing-custom-controls.md
                 - name: Uso Owner-Drawn menu
                   href: using-owner-drawn-menus.md
                 - name: Denominazione dei controlli nelle finestre di dialogo
                   href: naming-controls-in-dialog-boxes.md
                   items:
-                    - name: Controlli senza proprietà didascalia
+                    - name: Controlli senza proprietà caption
                       href: controls-without-caption-properties.md
             - name: Esposizione di una finestra
               href: exposing-a-window.md
               items:
-                - name: Assegnazione di un nome appropriato a una finestra
+                - name: Denominazione appropriata di una finestra
                   href: naming-a-window-appropriately.md
                 - name: Identificazione di una finestra in base alla relativa funzione
                   href: identifying-a-window-by-its-function.md
@@ -381,7 +381,7 @@
             - name: Esposizione di testo a livello di codice
               href: exposing-text-programmatically.md
               items:
-                - name: Uso Active Accessibility per esporre testo
+                - name: Uso Active Accessibility esporre testo
                   href: using-active-accessibility-to-expose-text.md
             - name: Riferimenti
               href: references.md
@@ -390,9 +390,9 @@
           items:
             - name: Esempio di riconoscimento avanzato
               href: advanced-recognition-sample.md
-            - name: Esempio di modulo attestazioni automatico
+            - name: Esempio di modulo di attestazioni auto
               href: auto-claims-form-sample.md
-            - name: Esempio di analisi dell'input penna di base
+            - name: Esempio di analisi input penna di base
               href: basic-ink-analysis-sample.md
             - name: Esempio di riconoscimento di base
               href: basic-recognition-sample.md
@@ -400,39 +400,39 @@
               href: c---event-sinks-sample.md
             - name: Esempio di completamento automatico dei caratteri
               href: character-autocomplete-sample.md
-            - name: Modulo di carta digitalizzata per analisi dell'input penna
+            - name: Modulo della carta digitalizzata di Analisi input penna
               href: ink-analysis-scanned-paper-form.md
-            - name: Esempio Web del blog di Input penna
+            - name: Esempio Web di blog ink
               href: ink-blog-web-sample.md
             - name: Esempio di Appunti input penna
               href: ink-clipboard-sample.md
-            - name: Esempio di raccolta input penna
+            - name: Esempio di raccolta ink
               href: ink-collection-sample.md
-            - name: Esempio di divisore di input penna
+            - name: Esempio di divisore input penna
               href: ink-divider-sample.md
-            - name: Esempio di cancellazione dell'input penna
+            - name: Esempio di cancellazione input penna
               href: ink-erasing-sample.md
-            - name: Esempio di hit test dell'input penna
+            - name: Esempio di hit test input penna
               href: ink-hit-test-sample.md
             - name: Esempio di riconoscimento input penna
               href: ink-recognition-sample.md
-            - name: Esempio di serializzazione dell'input penna
+            - name: Esempio di serializzazione input penna
               href: ink-serialization-sample.md
             - name: Esempio di controllo Web Ink
               href: ink-web-control-sample.md
             - name: Esempio di zoom input penna
               href: ink-zoom-sample.md
-            - name: Esempio di riconoscimento multipli
+            - name: Esempio di più riconoscitori
               href: multiple-recognizers-sample.md
-            - name: No-Touch Web di distribuzione
+            - name: No-Touch Web di distribuzione di applicazioni
               href: no-touch-deployment-web-sample.md
             - name: Esempio di PenInputPanel
               href: peninputpanel-sample.md
             - name: Esempio di plug-in RealTimeStylus
               href: realtimestylus-plug-in-sample.md
-            - name: Esempio di raccolta di input penna RealTimeStylus
+            - name: Esempio di raccolta input penna RealTimeStylus
               href: realtimestylus-ink-collection-sample.md
-            - name: Esempio di modulo di carta digitalizzato
+            - name: Esempio di modulo cartaceo digitalizzato
               href: scanned-paper-form-sample.md
             - name: Esempio di informazioni sulla piattaforma Tablet PC
               href: tablet-pc-platform-info-sample.md
@@ -450,7 +450,7 @@
                   href: listening-to-system-events.md
                 - name: Sequenza temporale dei messaggi del mouse e degli eventi di sistema
                   href: timeline-of-mouse-messages-and-system-events.md
-                - name: Funzionalità multiple con una sola penna
+                - name: Più funzionalità con una sola penna
                   href: multiple-functionality-with-one-pen.md
             - name: Movimenti dell'applicazione
               href: application-gestures.md
@@ -477,7 +477,7 @@
                   href: documenting-the-gestures-used-by-your-applications.md
                 - name: Glifi non implementati
                   href: unimplemented-glyphs.md
-            - name: Movimenti di scorrimento rapido
+            - name: Movimenti di Scorrimento rapido
               href: flicks-gestures.md
         - name: Uso della libreria COM
           href: using-the-com-library.md
@@ -752,13 +752,13 @@
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognitionalternate-alternateswithconstantpropertyvalues
                     - name: Proprietà Ascender
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognitionalternate-get_ascender
-                    - name: Proprietà Baseline
+                    - name: Proprietà baseline
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognitionalternate-get_baseline
                     - name: Proprietà Confidence
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognitionalternate-get_confidence
                     - name: Proprietà ConfidenceAlternates
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognitionalternate-get_confidencealternates
-                    - name: Proprietà Descender
+                    - name: Proprietà Discendente
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognitionalternate-get_descender
                     - name: Metodo GetStrokesFromStrokeRanges
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognitionalternate-getstrokesfromstrokeranges
@@ -828,9 +828,9 @@
                 - name: Interfaccia IInkRecognizer2
                   href: /windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognizer2
                   items:
-                    - name: metodo get_Id
+                    - name: get_Id metodo
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizer2-get_id
-                    - name: metodo get_UnicodeRanges
+                    - name: get_UnicodeRanges metodo
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizer2-get_unicoderanges
                 - name: Interfaccia IInkRecognizerContext2
                   href: /windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognizercontext2
@@ -967,7 +967,7 @@
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_dynamicrendering
                     - name: Proprietà Enabled
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_enabled
-                    - name: Evento movimento
+                    - name: Evento di movimento
                       href: inkcollector-gesture.md
                     - name: Metodo GetEventInterest
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-geteventinterest
@@ -1015,7 +1015,7 @@
                       href: inkcollector-stroke.md
                     - name: Proprietà SupportHighContrastInk
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_supporthighcontrastink
-                    - name: Evento SystemGesture
+                    - name: SystemGesture Event
                       href: inkcollector-systemgesture.md
                     - name: Proprietà Tablet
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_tablet
@@ -1155,7 +1155,7 @@
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_erasermode
                     - name: Proprietà EraserWidth
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_eraserwidth
-                    - name: Evento di movimento
+                    - name: Evento movimento
                       href: inkoverlay-gesture.md
                     - name: Metodo GetEventInterest
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-geteventinterest
@@ -1229,7 +1229,7 @@
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_supporthighcontrastink
                     - name: Proprietà SupportHighContrastSelectionUI
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_supporthighcontrastselectionui
-                    - name: SystemGesture Event
+                    - name: Evento SystemGesture
                       href: inkoverlay-systemgesture.md
                     - name: Proprietà Tablet
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_tablet
@@ -1937,7 +1937,7 @@
                       href: iinkanalyzer-saveresultsfornodes.md
                     - name: Metodo SaveResultsForStrokes
                       href: iinkanalyzer-saveresultsforstrokes.md
-                    - name: Metodo Search
+                    - name: Metodo search
                       href: iinkanalyzer-search.md
                     - name: Metodo SearchWithLanguageId
                       href: iinkanalyzer-searchwithlanguageid.md
@@ -1962,14 +1962,14 @@
                   items:
                     - name: Metodo EvaluateContextNode
                       href: imatchescriteriacallback-evaluatecontextnode.md
-            - name: Costanti di analisi input penna
+            - name: Costanti di analisi dell'input penna
               href: ink-analysis-constants.md
               items:
                 - name: Proprietà hint di analisi
                   href: analysis-hint-properties.md
                 - name: Proprietà del nodo di contesto
                   href: context-node-properties.md
-                - name: Tipi di nodi di contesto
+                - name: Tipi di nodo di contesto
                   href: context-node-types.md
             - name: Enumerazioni di analisi input penna
               href: ink-analysis-enumerations.md
@@ -1986,15 +1986,15 @@
                   href: recognitionconfidence.md
                 - name: Enumerazione RecognizerCapabilities
                   href: recognizercapabilities.md
-                - name: Tipo di tratto
+                - name: StrokeType
                   href: stroketype.md
-            - name: Eventi di analisi input penna
+            - name: Eventi di analisi dell'input penna
               href: ink-analysis-events.md
               items:
                 - name: _IAnalysisEvents
                   href: '-ianalysisevents.md'
                   items:
-                    - name: Evento attività
+                    - name: Evento di attività
                       href: '-ianalysisevents-activity.md'
                     - name: Evento IntermediateResults
                       href: '-ianalysisevents-intermediateresults.md'
@@ -2027,7 +2027,7 @@
                       href: '-ianalysisproxyevents-populatecontextnode.md'
                     - name: Evento StrokeReparented
                       href: '-ianalysisproxyevents-strokereparented.md'
-            - name: Strutture di analisi input penna
+            - name: Strutture di analisi dell'input penna
               href: ink-analysis-structures.md
               items:
                 - name: Struttura InkAnalysisRecognizerGuide
@@ -2044,7 +2044,7 @@
                   href: inkedit-click.md
                 - name: Evento DblClick
                   href: inkedit-dblclick.md
-                - name: 'Evento Gesture [Controllo InkEdit'
+                - name: 'Evento Gesture [controllo InkEdit'
                   href: inkedit-gesture.md
                 - name: 'Evento KeyDown [controllo InkEdit'
                   href: inkedit-keydown.md
@@ -2167,7 +2167,7 @@
                   href: /windows/desktop/api/inked/ne-inked-scrollbarsconstants
                 - name: Enumerazione SelAlignmentConstants
                   href: /windows/desktop/api/inked/ne-inked-selalignmentconstants
-            - name: Messaggi InkEdit
+            - name: Input pennaModifica messaggi
               href: inkedit-messages.md
               items:
                 - name: Messaggi InkEdit (solo Win32)
@@ -2210,7 +2210,7 @@
                   href: inkpicture-cursoroutofrange.md
                 - name: Evento DblClick
                   href: inkpicture-dblclick.md
-                - name: Evento di movimento
+                - name: Evento movimento
                   href: inkpicture-gesture.md
                 - name: Evento KeyDown
                   href: inkpicture-keydown.md
@@ -2240,7 +2240,7 @@
                   href: inkpicture-painted.md
                 - name: Evento Painting
                   href: inkpicture-painting.md
-                - name: Evento di ridimensionamento
+                - name: Evento Resize
                   href: inkpicture-resize.md
                 - name: Evento SelectionChanged
                   href: inkpicture-selectionchanged.md
@@ -2268,13 +2268,13 @@
                   href: inkpicture-strokesdeleting.md
                 - name: Evento SystemColorsChanged
                   href: inkpicture-systemcolorschanged.md
-                - name: SystemGesture Event
+                - name: Evento SystemGesture
                   href: inkpicture-systemgesture.md
                 - name: Evento TabletAdded
                   href: inkpicture-tabletadded.md
                 - name: Evento TabletRemoved
                   href: inkpicture-tabletremoved.md
-            - name: Metodi inkPicture
+            - name: Metodi di InkPicture
               href: inkpicture-methods.md
               items:
                 - name: Metodo GetEventInterest
@@ -2383,7 +2383,7 @@
                       href: /previous-versions/windows/desktop/legacy/dd317351(v=vs.85)
                     - name: Metodo Insert
                       href: /previous-versions/windows/desktop/legacy/dd317352(v=vs.85)
-                    - name: Metodo Paint
+                    - name: Paint Metodo
                       href: /previous-versions/windows/desktop/legacy/dd317353(v=vs.85)
                 - name: IMathInputControl
                   href: /windows/desktop/api/micaut/nn-micaut-imathinputcontrol
@@ -2531,7 +2531,7 @@
                 - name: Interfaccia IRealTimeStylus2
                   href: /windows/desktop/api/RTSCom/nn-rtscom-irealtimestylus2
                   items:
-                    - name: Metodo get_FlicksEnabled
+                    - name: metodo get_FlicksEnabled
                       href: /windows/desktop/api/RTSCom/nf-rtscom-irealtimestylus2-get_flicksenabled
                     - name: metodo put_FlicksEnabled
                       href: /windows/desktop/api/RTSCom/nf-rtscom-irealtimestylus2-put_flicksenabled
@@ -2733,13 +2733,13 @@
             - name: Enumerazioni di riconoscimento
               href: recognizer-api-enumerations.md
               items:
-                - name: ALT_BREAKS enumerazione
+                - name: enumerazione ALT_BREAKS
                   href: /windows/win32/api/rectypes/ne-rectypes-alt_breaks
-                - name: enumerazione CONFIDENCE_LEVEL
+                - name: CONFIDENCE_LEVEL enumerazione
                   href: /windows/win32/api/rectypes/ne-rectypes-confidence_level
-                - name: enumerazione LINE_METRICS
+                - name: LINE_METRICS enumerazione
                   href: /windows/win32/api/rectypes/ne-rectypes-line_metrics
-                - name: enumerazione PROPERTY_UNITS
+                - name: PROPERTY_UNITS enumerazione
                   href: /windows/win32/api/tpcshrd/ne-tpcshrd-property_units
             - name: Strutture di riconoscimento
               href: recognizer-api-structures.md

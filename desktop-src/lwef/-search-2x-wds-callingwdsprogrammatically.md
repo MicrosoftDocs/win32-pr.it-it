@@ -1,26 +1,26 @@
 ---
 title: Chiamata di WDS a livello di codice
-description: È possibile eseguire query a livello di programmazione in Microsoft Windows Desktop Search (WDS) 2. x usando i metodi ExecuteQuery e ExecuteSQLQuery nell'interfaccia ISearchDesktop.
+description: È possibile eseguire query su Microsoft Windows Desktop Search (WDS) 2.x a livello di codice usando i metodi ExecuteQuery ed ExecuteSQLQuery nell'interfaccia ISearchDesktop.
 ms.assetid: 38426f63-2039-410e-8c70-ebd9fc269d74
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0dc76264b7939311273fbda334292dfb255cde8f
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: b8879001bcf284affd03ff472ac9327445b799acd44465b5bae9a8cb2d819b7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103727050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976901"
 ---
 # <a name="calling-wds-programmatically"></a>Chiamata di WDS a livello di codice
 
 > [!NOTE]
-> Windows Desktop Search 2. x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [Windows Search](../search/-search-3x-wds-overview.md) .
+> Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive, usare [Windows ricerca.](../search/-search-3x-wds-overview.md)
 
-È possibile eseguire query a livello di programmazione in Microsoft Windows Desktop Search (WDS) 2. x usando i metodi **ExecuteQuery** e **ExecuteSQLQuery** nell'interfaccia [**ISearchDesktop**](/previous-versions//aa965729(v=vs.85)) . Il metodo **ExecuteQuery** restituisce un set di record dall'indice basato sul testo della query, sulle colonne e sulle restrizioni passate come parametri. Il metodo **ExecuteSQLQuery** restituisce anche un set di record di risultati, ma richiede il passaggio esatto del Structured Query Language (SQL). **ExecuteQuery** deve essere usato nella maggior parte degli scenari.
+È possibile eseguire query su Microsoft Windows Desktop Search (WDS) 2.x a livello di codice usando i metodi **ExecuteQuery** ed **ExecuteSQLQuery** nell'interfaccia [**ISearchDesktop.**](/previous-versions//aa965729(v=vs.85)) Il **metodo ExecuteQuery** restituisce un set di record dall'indice in base al testo della query, alle colonne e alle restrizioni passate come parametri. Il **metodo ExecuteSQLQuery** restituisce anche un set di record di risultati, ma richiede il Structured Query Language (SQL) esatto. **ExecuteQuery** deve essere usato nella maggior parte degli scenari.
 
-## <a name="regular-queries"></a>Query normali
+## <a name="regular-queries"></a>Query regolari
 
-Le query regolari sono quelle digitate nella casella di input WDS dall'utente, inclusa la [sintassi di query avanzata](-search-2x-wds-aqsreference.md). La query viene passata a **ExecuteQuery** insieme alle colonne [dello schema](-search-2x-wds-schematable.md) WDS 2. x da restituire, alla colonna e all'ordine di ordinamento dei risultati e a qualsiasi clausola per limitare i risultati in base a.
+Le query regolari sono quelle digitate nella casella di input WDS dall'utente, inclusa la [sintassi di query avanzata](-search-2x-wds-aqsreference.md). La query viene passata a **ExecuteQuery** insieme alle colonne dello [schema](-search-2x-wds-schematable.md) WDS 2.x da restituire, alla colonna e all'ordinamento dei risultati e alle clausole in base alle quali limitare i risultati.
 
 Il metodo ha il formato seguente:
 
@@ -30,10 +30,10 @@ Il metodo ha il formato seguente:
 
 | Direzione | Variabile           | Descrizione                                                                                                                                                                                   |
 |-----------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| In        | lpcwstrQuery       | Testo della query. Questa query è identica a quella di una query digitata nella casella di testo Cerca nell'interfaccia utente di ricerca desktop di Windows. <br/> ad esempio `"from:Zara dinner plans"`<br/> |
+| In        | lpcwstrQuery       | Testo della query. Questa query è la stessa di una query digitata nella casella di testo di ricerca nell'Windows utente di Desktop Search. <br/> ad esempio `"from:Zara dinner plans"`<br/> |
 | In        | lpcwstrColumn      | Colonne da includere, separate da virgole. <br/> ad esempio `"DocTitle, Url"`<br/>                                                                                            |
-| In        | lpcwstrSort        | Colonna di sostituzione in base alla quale eseguire l'ordinamento seguito da ASC per Ascending o DESC per la decrescente. <br/> ad esempio `"LastAuthor DESC"`<br/>                                                  |
-| In        | lpcwstrRestriction | Restrizioni per accodare le clausole WHERE nella ricerca desktop di Windows Select. <br/> ad esempio `"Contains(LastAuthor, 'Bill')"`<br/>                                       |
+| In        | lpcwstrSort        | Colonna di override per l'ordinamento seguito da ASC per crescente o DESC per decrescente. <br/> ad esempio `"LastAuthor DESC"`<br/>                                                  |
+| In        | lpcwstrRestriction | Restrizioni da aggiungere tramite clausole WHERE nella Windows Desktop Search. <br/> ad esempio `"Contains(LastAuthor, 'Bill')"`<br/>                                       |
 | In uscita       | ppiRs              | Set di record risultante<br/>                                                                                                                                                           |
 
 
@@ -42,7 +42,7 @@ Il metodo ha il formato seguente:
 
 ## <a name="sql-queries"></a>Query SQL
 
-Il **ISearchDesktop.Exemetodo cuteSQLQuery** viene usato per inviare query di database WDS dirette. La sintassi per le query è simile a quella usata per SharePoint Server, insieme alla possibilità di usare clausole GROUP BY di tipo Monarch. La query viene eseguita sull'indice esattamente come viene passata senza alcuna elaborazione aggiuntiva della sintassi avanzata delle query come l'API ExecuteQuery.
+Il **ISearchDesktop.Exemetodo cuteSQLQuery** viene usato per inviare query di database WDS dirette. La sintassi per le query è simile a quella usata per SharePoint Server, oltre alla possibilità di usare clausole GROUP BY SQL stile Monarca. La query viene eseguita sull'indice esattamente come viene passata senza alcuna ulteriore elaborazione della sintassi di query avanzata, come fa l'API ExecuteQuery.
 
 https://msdn.microsoft.com/library/default.asp?url=/library/spssdk/html/\_tahoe\_search\_sql\_syntax.asp
 
@@ -64,13 +64,13 @@ Il metodo ha il formato seguente:
 Risorse:
 
 -   File di supporto per l'interfaccia ISearchDesktop: https://addins.msn.com/support/WDSSDK.zip
--   Esempio di ISearchDesktop C#: https://addins.msn.com/support/WDSSample.zip
+-   Esempio di C# ISearchDesktop: https://addins.msn.com/support/WDSSample.zip
 
 ## <a name="sample-c-code"></a>Codice C++ di esempio
 
 > [!Note]
 >
-> QUESTO CODICE E LE INFORMAZIONI VENGONO FORNITE "COSÌ COME SONO" SENZA GARANZIA DI ALCUN TIPO, ESPRESSA O IMPLICITA, INCLUSE, A TITOLO ESEMPLIFICATIVO, LE GARANZIE IMPLICITE DI COMMERCIABILITÀ E/O IDONEITÀ PER UNO SCOPO SPECIFICO.
+> IL CODICE E LE INFORMAZIONI VENGONO FORNITI "COSÌ COME SONO" SENZA GARANZIA DI ALCUN TIPO, ESPRESSA O IMPLICITA, INCLUSE MA NON LIMITATE ALLE GARANZIE IMPLICITE DI ESERCENTITÀ E/O IDONEITÀ PER UNO SCOPO SPECIFICO.
 >
 > Copyright (C) Microsoft. Tutti i diritti sono riservati.
 
@@ -145,7 +145,7 @@ extern "C" int __cdecl wmain( int argc, WCHAR * argv[] )
 [Tipi percepiti](-search-2x-wds-perceivedtype.md)
 </dt> <dt>
 
-[Chiamata di WDS da pagine Web](-search-2x-wds-browserhelpobject.md)
+[Chiamata di WdS da pagine Web](-search-2x-wds-browserhelpobject.md)
 </dt> </dl>
 
  

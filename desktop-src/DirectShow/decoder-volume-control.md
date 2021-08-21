@@ -1,21 +1,21 @@
 ---
-description: Controllo del volume del decodificatore
+description: Controllo volume decodificatore
 ms.assetid: 94d68722-a0c2-47a7-a0a0-ae315f8f31ed
-title: Controllo del volume del decodificatore
+title: Controllo volume decodificatore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4ce525f8b39e873d2c0002ac283014a9bcbe87c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 93e96ed9efb17a4fb32c41d8b10313edbe015c202b7f7d1f4287e1af20cca559
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953150"
 ---
-# <a name="decoder-volume-control"></a>Controllo del volume del decodificatore
+# <a name="decoder-volume-control"></a>Controllo volume decodificatore
 
-Le applicazioni controllano il volume audio tramite l'interfaccia [**IBasicAudio**](/windows/desktop/api/Control/nn-control-ibasicaudio) . Per KSProxy è disponibile un gestore di interfaccia **IBasicAudio** . Per poter gestire i comandi del volume da KSProxy, un decodificatore deve aggiungere diverse chiavi del registro di sistema nello script di installazione e supportare il set di proprietà **KSPROPSETID \_ Wave** .
+Le applicazioni controllano il volume audio tramite [**l'interfaccia IBasicAudio.**](/windows/desktop/api/Control/nn-control-ibasicaudio) Per KSProxy viene fornito un gestore di interfaccia **IBasicAudio.** Per gestire i comandi del volume da KSProxy, un decodificatore deve aggiungere diverse chiavi del Registro di sistema nello script di installazione e supportare il set di proprietà **Wave KSPROPSETID. \_**
 
-Creare alcune nuove chiavi del registro di sistema per il driver:
+Creare alcune nuove chiavi del Registro di sistema per il driver:
 
 
 ```C++
@@ -39,13 +39,13 @@ HKLM\SYSTEM\
 
 
 
-Per implementare il controllo del volume, il driver deve anche supportare **KSPROPSETID \_ Wave**, insieme al volume KsProperty.ID = KsProperty \_ Wave \_ . Questa proprietà viene passata al driver tramite i metodi [**IKsPropertySet:: Get**](ikspropertyset-get.md) e [**IKsPropertySet:: set**](ikspropertyset-set.md) . I campi LeftAttenuation e RightAttentuation specificano i volumi dell'altoparlante sinistro/destro come valori lineari da 0x0000 a 0xFFFF.
+Per implementare il controllo del volume, il driver deve anche supportare **KSPROPSETID \_ Wave**, insieme KsProperty.Id = KSPROPERTY \_ WAVE \_ VOLUME. Questa proprietà viene passata al driver tramite i [**metodi IKsPropertySet::Get**](ikspropertyset-get.md) [**e IKsPropertySet::Set.**](ikspropertyset-set.md) I campi LeftAttenuation e RightAttentuation specificano i volumi della voce sinistra/destra come valori lineari da 0x0000 a 0xffff.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Specifiche e interfacce del decodificatore](decoder-interfaces-and-specifications.md)
+[Interfacce e specifiche del decodificatore](decoder-interfaces-and-specifications.md)
 </dt> </dl>
 
  

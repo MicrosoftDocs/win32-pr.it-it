@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 8b0334f207dcf70e790afddc8a8ec68648a24a93
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 16ca6851c2789a9cd59dfcf69b6ef80a2c65e70a23698e5efe26a4cf061a1eba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952790"
 ---
 # <a name="iamtimelinetrackmoveeverythingby2-method"></a>Metodo IAMTimelineTrack::MoveEverythingBy2
 
@@ -67,7 +67,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare Microsoft Windows SDK [Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

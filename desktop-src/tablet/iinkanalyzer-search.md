@@ -1,5 +1,5 @@
 ---
-description: 'Metodo IInkAnalyzer::Search: fornisce una ricerca fuzzy basata su frasi senza distinzione tra maiuscole e minuscole per i tratti di scrittura analizzati e i tratti di disegno analizzati con tipi riconosciuti.'
+description: 'Metodo IInkAnalyzer::Search: fornisce una ricerca fuzzy e senza distinzione tra maiuscole e minuscole per i tratti di scrittura analizzati e i tratti di disegno analizzati con tipi riconosciuti.'
 ms.assetid: 5b5ce4b5-45ef-42ef-866b-2f38c32d8c86
 title: Metodo IInkAnalyzer::Search (IACom.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 94ccdebf8c8a134a845ff3df3017d710d1da93f1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a5ebbec010d84f510d9bd2786b20fee1deaa34039720d842df77cbe0f1ca9825
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119091501"
 ---
 # <a name="iinkanalyzersearch-method"></a>Metodo IInkAnalyzer::Search
 
-Fornisce una ricerca fuzzy basata su frasi senza distinzione tra maiuscole e minuscole per tratti di scrittura analizzati e tratti di disegno analizzati con tipi riconosciuti.
+Fornisce una ricerca fuzzy basata su frasi senza distinzione tra maiuscole e minuscole per i tratti di scrittura analizzati e i tratti di disegno analizzati con tipi riconosciuti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -102,7 +102,7 @@ La ricerca non genera eventi PopulateContextNode. Verranno cercati solo i tratti
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC \[ Edition\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
 | Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |

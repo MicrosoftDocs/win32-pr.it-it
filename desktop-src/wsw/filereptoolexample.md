@@ -3,17 +3,17 @@ title: FileRepToolExample
 description: Si tratta dello strumento da riga di comando che guida il servizio FileRep.
 ms.assetid: e6273036-2e31-4cbb-b72b-8f4d3ade6336
 keywords:
-- FileRepToolExample native-servizi Web
+- FileRepToolExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c31128f66304fc9a369b3c445fe5e81617287f8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 45f420f9b941858af3409b4d3b50664ed970695ef0541f5b03e7a1617a4a4686
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026549"
 ---
 # <a name="filereptoolexample"></a>FileRepToolExample
 
@@ -21,25 +21,25 @@ Si tratta dello strumento da riga di comando che guida il [servizio FileRep](fil
 
 I parametri della riga di comando sono i seguenti:
 
-WsFileRep.exe <Client Service Url> <Server Service Url> <Source File> <Destination File> \[ /Encoding: <Binary/text/MTOM>\] \[ /Sync\]
+WsFileRep.exe <Client Service Url> <Server Service Url> <Source File> <Destination File> \[ /encoding:<binary/text/MTOM>\] \[ /sync\]
 
 URL servizio client: obbligatorio. URL del servizio client.
 
-URL servizio Server: obbligatorio. URL del servizio Server.
+URL del servizio server: obbligatorio. URL del servizio server.
 
-File di origine: obbligatorio. Nome locale completo del file di origine. Il file si trova nel computer in cui viene eseguito il servizio Server.
+File di origine: obbligatorio. Nome locale completo del file di origine. Il file si trova nel computer in cui viene eseguito il servizio server.
 
-File di destinazione: obbligatorio. Nome locale completo del file di destinazione. Il file verrà memorizzato nel computer in cui viene eseguito il servizio client.
+File di destinazione: obbligatorio. Nome locale completo del file di destinazione. Il file si trova nel computer in cui viene eseguito il servizio client.
 
-Encoding: facoltativo. Specifica la codifica dei messaggi inviati tra i servizi client e server. La codifica utilizzata per la comunicazione tra lo strumento da riga di comando e il servizio client non può essere modificata per motivi di semplicità. I parametri validi sono binary, text e MTOM. Se il parametro non viene specificato, viene utilizzata la codifica predefinita per il trasporto.
+Codifica: facoltativo. Specifica la codifica dei messaggi inviati tra i servizi client e server. La codifica usata per la comunicazione tra lo strumento da riga di comando e il servizio client non può essere modificata per motivi di semplicità. I parametri validi sono binary, text e MTOM. Se il parametro non è specificato, viene utilizzata la codifica predefinita per il trasporto.
 
-Sync: facoltativo. Se impostata, la richiesta viene completata in modo sincrono. In caso contrario, la richiesta viene completata in modo asincrono.
+Sincronizzazione: facoltativo. Se impostata, la richiesta viene completata in modo sincrono. In caso contrario, la richiesta verrà completata in modo asincrono.
 
--   [Strumento. cpp](#toolcpp)
--   [Common. h](#commonh)
+-   [Tool.cpp](#toolcpp)
+-   [common.h](#commonh)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="toolcpp"></a>Strumento. cpp
+## <a name="toolcpp"></a>Tool.cpp
 
 
 ```C++
@@ -1048,9 +1048,9 @@ static WS_XML_STRING faultAction = WS_XML_STRING_VALUE("https://tempuri.org/File
 [FileRepServiceExample](filerepserviceexample.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

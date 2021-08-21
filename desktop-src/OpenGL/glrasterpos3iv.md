@@ -1,9 +1,9 @@
 ---
-title: funzione glRasterPos3iv (GL. h)
-description: Specifica la posizione raster per le operazioni sui pixel. | funzione glRasterPos3iv (GL. h)
+title: Funzione glRasterPos3iv (Gl.h)
+description: Specifica la posizione raster per le operazioni in pixel. | Funzione glRasterPos3iv (Gl.h)
 ms.assetid: 29db6118-6aa3-461c-aa6c-3f53ec85ebcd
 keywords:
-- funzione glRasterPos3iv OpenGL
+- Funzione glRasterPos3iv OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a88f36643586b5039cec3289898ff06974f4e055
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 53dffbdba51d9e155ac26f9e09d7a0609ba9ba4b7af43059a400371304b6e08c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118938022"
 ---
-# <a name="glrasterpos3iv-function"></a>glRasterPos3iv (funzione)
+# <a name="glrasterpos3iv-function"></a>Funzione glRasterPos3iv
 
-Specifica la posizione raster per le operazioni sui pixel.
+Specifica la posizione raster per le operazioni in pixel.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,36 +55,36 @@ Questa funzione non restituisce un valore.
 
 OpenGL mantiene una posizione 3D nelle coordinate della finestra. Questa posizione, denominata posizione raster, viene mantenuta con l'accuratezza dei subpixel. Viene usato per posizionare le operazioni di scrittura di pixel e bitmap. Vedere [**glBitmap**](glbitmap.md), [**glDrawPixels**](gldrawpixels.md)e [**glCopyPixels**](glcopypixels.md).
 
-La posizione raster corrente è costituita da tre coordinate della finestra (*x, y, z*), un valore di coordinata di ritaglio *w* , una distanza delle coordinate oculari, un bit valido e coordinate di trama e dati di colore associati. La coordinata *w* è una coordinata di ritaglio, perché *w* non è proiettata sulle coordinate della finestra. La funzione [glRasterPos4](glrasterpos-functions.md) specifica in modo esplicito le coordinate dell'oggetto *x, y, z* e *w* . La funzione glRasterPos3 specifica in modo esplicito le coordinate dell'oggetto *x, y* e *z* , mentre *w* viene impostato in modo implicito su uno. La funzione glRasterPos2 usa i valori degli argomenti per *x* e *y* , impostando in modo implicito *z* e *w* su zero e uno.
+La posizione raster corrente è costituita da tre coordinate della finestra *(x, y, z*), una coordinata di ritaglio con valore *w,* una distanza delle coordinate oculare, un bit valido e le coordinate di trama e i dati colore associati. La *coordinata w* è una coordinata di ritaglio, perché *w* non viene proiettata nelle coordinate della finestra. La [funzione glRasterPos4](glrasterpos-functions.md) specifica in modo esplicito le coordinate degli oggetti *x, y, z* e *w.* La funzione glRasterPos3 specifica le coordinate degli oggetti *x, y* e *z* in modo esplicito, mentre *w* è impostato in modo implicito su uno. La funzione glRasterPos2 usa i valori degli argomenti per *x* e *y* mentre imposta in modo implicito *z* e *w* su zero e uno.
 
-Le coordinate degli oggetti presentate da [glRasterPos](glrasterpos-functions.md) vengono gestite esattamente come quelle di un comando [glVertex](glvertex-functions.md) . Vengono trasformati dalle matrici Modelview e Projection correnti e passate alla fase di ritaglio. Se il vertice non viene raccolto, viene proiettato e ridimensionato in base alle coordinate della finestra, che diventano la nuova posizione raster corrente e \_ \_ \_ viene impostato il flag valido della posizione raster corrente \_ . Se il vertice viene eliminato, viene cancellato il bit valido e la posizione raster corrente e le coordinate del colore e della trama associate non sono definite.
+Le coordinate dell'oggetto [presentate da glRasterPos](glrasterpos-functions.md) vengono considerate esattamente come quelle di un [comando glVertex.](glvertex-functions.md) Vengono trasformate dalle matrici correnti di visualizzazione del modello e proiezione e passate alla fase di ritaglio. Se il vertice non viene culled, viene proiettato e ridimensionato in base alle coordinate della finestra, che diventano la nuova posizione raster corrente, e viene impostato il flag GL \_ CURRENT \_ RASTER \_ POSITION \_ VALID. Se il vertice viene eliminato, il bit valido viene cancellato e la posizione raster corrente e le coordinate di colore e trama associate non sono definite.
 
-La posizione raster corrente include anche alcuni dati di colore e coordinate di trama associati. Se l'illuminazione è abilitata, il \_ colore raster corrente di GL, \_ \_ in modalità RGBA o \_ l' \_ Indice raster corrente GL \_ , in modalità di indice dei colori, viene impostato sul colore prodotto dal calcolo dell'illuminazione (vedere [glLight](gllight-functions.md), [glLightModel](gllightmodel-functions.md)e [**glShadeModel**](glshademodel.md)). Se l'illuminazione è disabilitata, per aggiornare il colore raster corrente viene usato il colore corrente (in modalità RGBA, la variabile di stato GL \_ Current \_ Color) o l'indice dei colori (in modalità di indice colore, variabile di stato GL \_ Current \_ index).
+La posizione raster corrente include anche alcuni dati di colore associati e le coordinate della trama. Se l'illuminazione è abilitata, GL CURRENT RASTER COLOR, in modalità RGBA, o GL CURRENT RASTER INDEX, in modalità color-index, viene impostato sul colore prodotto dal calcolo dell'illuminazione \_ \_ \_ \_ \_ \_ (vedere [glLight](gllight-functions.md), [glLightModel](gllightmodel-functions.md)e [**glShadeModel).**](glshademodel.md) Se l'illuminazione è disabilitata, per aggiornare il colore raster corrente viene usato il colore corrente (in modalità RGBA, la variabile di stato GL CURRENT COLOR) o l'indice colori (in modalità \_ color-index, variabile di stato \_ GL \_ CURRENT \_ INDEX).
 
-Analogamente, \_ le \_ \_ coordinate di trama raster correnti GL \_ vengono aggiornate come funzione di \_ coordinate di trama correnti GL \_ \_ , in base alla matrice di trama e alle funzioni di generazione della trama (vedere [glTexGen](gltexgen-functions.md)). Infine, la distanza dall'origine del sistema di coordinate oculari al vertice, come trasformato solo dalla matrice Modelview, sostituisce la \_ distanza raster corrente di GL \_ \_ .
+Analogamente, GL CURRENT RASTER TEXTURE COORDS viene aggiornato come funzione di GL CURRENT TEXTURE COORDS, in base alla matrice di trama e alle funzioni di generazione \_ \_ della trama \_ \_ \_ \_ \_ (vedere [glTexGen).](gltexgen-functions.md) Infine, la distanza dall'origine del sistema di coordinate oculare al vertice, trasformata solo dalla matrice della visualizzazione modello, sostituisce GL \_ CURRENT \_ RASTER \_ DISTANCE.
 
-Inizialmente, la posizione raster corrente è (0, 0, 0, 1), la distanza raster corrente è 0, è impostato il bit valido, il colore RGBA associato è (1, 1, 1, 1), l'indice colori associato è 1 e le coordinate di trama associate sono (0, 0, 0, 1). In modalità RGBA, GL \_ Current \_ raster \_ index è sempre 1; in modalità di indice dei colori, il colore RGBA raster corrente mantiene sempre il proprio valore iniziale.
+Inizialmente, la posizione raster corrente è (0,0,0,1), la distanza raster corrente è 0, il bit valido è impostato, il colore RGBA associato è (1,1,1,1), l'indice dei colori associato è 1 e le coordinate della trama associate sono (0, 0, 0, 1). In modalità RGBA, GL CURRENT RASTER INDEX è sempre 1. In modalità di indice colori, il colore \_ \_ RGBA raster corrente mantiene sempre \_ il valore iniziale.
 
 > [!Note]  
-> La posizione raster viene modificata da [glRasterPos](glrasterpos-functions.md) e da [**glBitmap**](glbitmap.md).
+> La posizione raster viene modificata sia da [glRasterPos](glrasterpos-functions.md) che da [**glBitmap.**](glbitmap.md)
 
  
 
 > [!Note]  
-> Quando le coordinate della posizione raster non sono valide, i comandi di disegno basati sulla posizione raster vengono ignorati, ovvero non comportano modifiche allo stato di OpenGL.
+> Quando le coordinate di posizione raster non sono valide, i comandi di disegno basati sulla posizione raster vengono ignorati, ovvero non comportano modifiche allo stato OpenGL.
 
  
 
-Le funzioni seguenti consentono di recuperare informazioni correlate a [glRasterPos](glrasterpos-functions.md):
+Le funzioni seguenti recuperano informazioni correlate [a glRasterPos:](glrasterpos-functions.md)
 
 <dl>
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ Current \_ raster \_ position  
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ Current \_ raster \_ position \_ valido  
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ Current \_ raster \_ distance  
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ Current \_ \_ color raster  
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ Current \_ \_ index raster  
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento con \_ \_ coordinate di \_ trama \_ raster correnti  
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ CURRENT \_ RASTER \_ POSITION  
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ CURRENT \_ RASTER \_ POSITION \_ VALID  
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ CURRENT \_ RASTER \_ DISTANCE  
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ CURRENT \_ RASTER \_ COLOR  
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ CURRENT \_ RASTER \_ INDEX  
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ CURRENT \_ RASTER \_ TEXTURE \_ COORDS  
 </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -95,8 +95,8 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a [glRaster
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -117,7 +117,7 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a [glRaster
 [**glDrawPixels**](gldrawpixels.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [glLight](gllight-functions.md)

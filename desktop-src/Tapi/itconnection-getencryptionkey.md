@@ -1,21 +1,21 @@
 ---
 description: Il metodo GetEncryptionKey ottiene la chiave di crittografia.
 ms.assetid: a80d8660-d13e-483f-b1d7-ee2043ef5cab
-title: 'Metodo ITConnection:: GetEncryptionKey (sdpblb. h)'
+title: Metodo ITConnection::GetEncryptionKey (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a826dc8424222587f2838804ec035fb23c2e41d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2a237073d4842cd26797b046a4d973390ff5ef254b574bcafbc6f10abca932aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060979"
 ---
-# <a name="itconnectiongetencryptionkey-method"></a>Metodo ITConnection:: GetEncryptionKey
+# <a name="itconnectiongetencryptionkey-method"></a>Metodo ITConnection::GetEncryptionKey
 
-\[ I controlli e le interfacce per la comunicazione di telefonia IP Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[Le interfacce e i controlli di conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
 
-Il metodo **GetEncryptionKey** ottiene la chiave di crittografia.
+Il **metodo GetEncryptionKey** ottiene la chiave di crittografia.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,24 +34,24 @@ HRESULT GetEncryptionKey(
 
 <dl> <dt>
 
-*ppKeyType* \[ out\]
+*ppKeyType* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un **BSTR** che contiene il tipo di chiave di crittografia.
+Puntatore a un **BSTR** contenente il tipo di chiave di crittografia.
 
 </dd> <dt>
 
-*pfValidKeyData* \[ out\]
+*pfValidKeyData* \[ Cambio\]
 </dt> <dd>
 
 Indica la validità dei dati della chiave di crittografia.
 
 </dd> <dt>
 
-*ppKeyData* \[ out\]
+*ppKeyData* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un **BSTR** che contiene i dati della chiave di crittografia.
+Puntatore a un **BSTR contenente** i dati della chiave di crittografia.
 
 </dd> </dl>
 
@@ -63,10 +63,10 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                                   | Descrizione                                                                                  |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                                                 |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | Il parametro *ppKeyType, pfValidKeyData* o *ppKeyData* non è un puntatore valido.<br/> |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | La memoria disponibile non è sufficiente per eseguire l'operazione.<br/>                              |
-| <dl> <dt>**E \_ non riescono**</dt> </dl>        | Errore non specificato.<br/>                                                                |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                                                 |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>     | Il *parametro ppKeyType, pfValidKeyData* o *ppKeyData* non è un puntatore valido.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per eseguire l'operazione.<br/>                              |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>        | Errore non specificato.<br/>                                                                |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Questo metodo non è ancora implementato.<br/>                                               |
 
 
@@ -75,7 +75,7 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-L'applicazione deve usare [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) per liberare la memoria allocata per i parametri *ppKeyType* e *ppKeyData* .
+L'applicazione deve [**usare SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) per liberare la memoria allocata per i parametri *ppKeyType* *e ppKeyData.*
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,9 +83,9 @@ L'applicazione deve usare [**SysFreeString**](/windows/win32/api/oleauto/nf-olea
 
 | Requisito | Valore |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,0 o versione successiva<br/>                                                 |
-| Intestazione<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versione TAPI<br/> | Richiede TAPI 3.0 o versione successiva<br/>                                                 |
+| Intestazione<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
@@ -94,7 +94,7 @@ L'applicazione deve usare [**SysFreeString**](/windows/win32/api/oleauto/nf-olea
 
 <dl> <dt>
 
-[**ITConnection**](itconnection.md)
+[**Connessione IT**](itconnection.md)
 </dt> </dl>
 
  

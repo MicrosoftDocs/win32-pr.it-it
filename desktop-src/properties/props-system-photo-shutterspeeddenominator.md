@@ -1,19 +1,19 @@
 ---
-description: Il denominatore della \_ foto pkey \_ ShutterSpeed.
+description: Denominatore di PKEY \_ Photo \_ Dispeed.
 ms.assetid: 43a71003-4b83-4d0c-b4b3-a75bb15f9d65
-title: System. Photo. ShutterSpeedDenominator
+title: System.Photo.PersianiSpeedDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30f394b7dc075629e1cff0124cc3598020d62148
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29a850fae55669bcc77429c805faebb9c82c4f671614c4d563e4267b3399eb8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033289"
 ---
-# <a name="systemphotoshutterspeeddenominator"></a>System. Photo. ShutterSpeedDenominator
+# <a name="systemphotoshutterspeeddenominator"></a>System.Photo.PersianiSpeedDenominator
 
-Il denominatore della \_ foto pkey \_ ShutterSpeed.
+Denominatore di PKEY \_ Photo \_ Dispeed.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

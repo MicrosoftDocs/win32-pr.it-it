@@ -1,9 +1,9 @@
 ---
-title: Metodi di IDCompositionVisual (Dcomp. h)
-description: Imposta la proprietà di ritaglio di questo oggetto visivo sull'area rettangolare o sull'oggetto clip specificato.
+title: Metodi IDCompositionVisual SetClip (Dcomp.h)
+description: Imposta la proprietà Clip di questo oggetto visivo sull'area rettangolare o sull'oggetto clip specificato.
 ms.assetid: ACEBA4F9-E1B0-459B-8DC2-272A822AB214
 keywords:
-- Metodi di seclip DirectComposition
+- Metodi SetClip DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: e421c916d305b95029bb6ffd8328346b4ea36918
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1cc1d0f24c30e6ec11ecaa40b0317109eddaf432ee311a5b9545f34f7afa8582
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043059"
 ---
-# <a name="idcompositionvisualsetclip-methods"></a>Metodi IDCompositionVisual:: seclip
+# <a name="idcompositionvisualsetclip-methods"></a>Metodi IDCompositionVisual::SetClip
 
-Imposta la proprietà di ritaglio di questo oggetto visivo sull'area rettangolare o sull'oggetto clip specificato. La proprietà clip limita il rendering della sottostruttura ad albero visuale che è radicata in questo oggetto visivo in un'area rettangolare.
+Imposta la proprietà Clip di questo oggetto visivo sull'area rettangolare o sull'oggetto clip specificato. La proprietà Clip limita il rendering del sottoalbero visivo che ha come radice questo oggetto visivo a un'area rettangolare.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Imposta la proprietà di ritaglio di questo oggetto visivo sull'area rettangolar
 
 | Metodo                                                                                | Descrizione                                                            |
 |:--------------------------------------------------------------------------------------|:-----------------------------------------------------------------------|
-| [**Seclip (const D2D \_ Rect \_ F&)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setclip(constd2d_rect_f_)) | Imposta la proprietà clip sull'area rettangolare specificata.<br/> |
-| [**Seclip (IDCompositionClip \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setclip(idcompositionclip)) | Imposta la proprietà di ritaglio sull'oggetto clip specificato.<br/>        |
+| [**SetClip(const D2D \_ RECT \_ F&)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setclip(constd2d_rect_f_)) | Imposta la proprietà Clip sull'area rettangolare specificata.<br/> |
+| [**SetClip(IDCompositionClip \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setclip(idcompositionclip)) | Imposta la proprietà Clip sull'oggetto clip specificato.<br/>        |
 
 
 
@@ -40,10 +40,10 @@ Imposta la proprietà di ritaglio di questo oggetto visivo sull'area rettangolar
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Dcomp. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>Dcomp. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows 8 \[ app desktop\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2012 \[\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 

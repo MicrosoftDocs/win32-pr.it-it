@@ -1,5 +1,5 @@
 ---
-description: 'Metodo ControlMetrics della classe CIM_MetricService: abilita e disabilita la raccolta di metriche.'
+description: 'Metodo ControlMetrics della CIM_MetricService: abilita e disabilita la raccolta di metriche.'
 ms.assetid: afb90863-e70a-46e5-b1b7-d959dcacc306
 title: Metodo ControlMetrics della CIM_MetricService classe
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 19e732e50f8c367463e7f528a520a736117999b6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c78f575bb68673c364fe627766b3709944c2a062e0407f927262ff019764b7d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068651"
 ---
 # <a name="controlmetrics-method-of-the-cim_metricservice-class"></a>Metodo ControlMetrics della classe \_ CIM MetricService
 
@@ -125,7 +125,7 @@ Restituisce un valore 0 se l'operazione ha esito positivo. In caso contrario, re
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

@@ -1,7 +1,7 @@
 ---
-description: Il metodo attivo viene chiamato quando lo stato viene impostato su in pausa o in esecuzione.
+description: Il metodo Active viene chiamato quando lo stato passa alla sospensione o all'esecuzione.
 ms.assetid: 2913bc81-572d-4ee1-a1b6-9e1638e04c9d
-title: Metodo CBaseRenderer. Active (Renbase. h)
+title: Metodo CBaseRenderer.Active (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 11593ffb25a953f4269d84ee2b9c9d884a23e5fe
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: df5ec659b5e76940ebf279e3feb8995d34380db0543d9eebcf42c1f3bff8c0e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954970"
 ---
-# <a name="cbaserendereractive-method"></a>Metodo CBaseRenderer. Active
+# <a name="cbaserendereractive-method"></a>Metodo CBaseRenderer.Active
 
-Il `Active` metodo viene chiamato quando lo stato viene impostato su in pausa o in esecuzione.
+Il `Active` metodo viene chiamato quando lo stato passa alla sospensione o all'esecuzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Il pin di input chiama questo metodo dal proprio metodo [**CRendererInputPin:: Active**](crendererinputpin-active.md) . Questo metodo non esegue alcuna operazione nella classe di base.
+Il pin di input chiama questo metodo dal proprio [**metodo CRendererInputPin::Active.**](crendererinputpin-active.md) Questo metodo non esegue alcuna operazione nella classe di base.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Il pin di input chiama questo metodo dal proprio metodo [**CRendererInputPin:: A
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

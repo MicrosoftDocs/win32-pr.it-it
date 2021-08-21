@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f08dc8d80a9d62a0cb837e4d4d1fd5e60e025c5f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 57be54abcf6d58da331334dc5af8c7ea8902da35c33b8d4897990b733a8067a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038979"
 ---
 # <a name="jet_indexidinequality-operator"></a>JET_INDEXID. Operatore di disuguaglianza
 
 Determina se due istanze specificate di JET_INDEXID non sono uguali.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,29 +64,29 @@ public static bool operator !=(
 
 #### <a name="parameters"></a>Parametri
 
-  - LHS  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INDEXID](./jet-indexid-structure2.md)  
+  - Lhs  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INDEXID](./jet-indexid-structure2.md)  
     
     Prima istanza da confrontare.
 
 <!-- end list -->
 
   - rhs  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INDEXID](./jet-indexid-structure2.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INDEXID](./jet-indexid-structure2.md)  
     
     Seconda istanza da confrontare.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True se le due istanze non sono uguali.  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_INDEXID](./jet-indexid-structure2.md)
+[JET_INDEXID struttura](./jet-indexid-structure2.md)
 
-[Membri JET_INDEXID](./jet-indexid-members.md)
+[JET_INDEXID membri](./jet-indexid-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

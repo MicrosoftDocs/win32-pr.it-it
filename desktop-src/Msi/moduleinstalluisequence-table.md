@@ -4,12 +4,12 @@ ms.assetid: a125aecc-57d9-4c8e-873e-d5315eaafa56
 title: Tabella ModuleInstallUISequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ca6771daa0b95acbc23e2d60eddda5420e417db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8bb8f2868fbad03439758cd45a79a71febb5e2a9b0b863c2ee9ea0597f5b112f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118945366"
 ---
 # <a name="moduleinstalluisequence-table"></a>Tabella ModuleInstallUISequence
 
@@ -25,7 +25,7 @@ La tabella ModuleInstallUISequence include le colonne seguenti.
 | Sequenza   | [Integer](integer.md)       |     | S        |
 | BaseAction | [Identificatore](identifier.md) |     | S        |
 | After      | [Integer](integer.md)       |     | S        |
-| Condizione  | [Condition](condition.md)   |     | S        |
+| Condition  | [Condition](condition.md)   |     | S        |
 
 
 
@@ -38,38 +38,38 @@ La tabella ModuleInstallUISequence include le colonne seguenti.
 <span id="Action"></span><span id="action"></span><span id="ACTION"></span>Azione
 </dt> <dd>
 
-Azione da inserire in sequenza. Fa riferimento a una delle [azioni standard](standard-actions.md)del programma di installazione o a una voce nella tabella [CustomAction](customaction-table.md) o nella tabella di [dialogo](dialog-table.md)del modulo merge.
+Azione da inserire in sequenza. Fa riferimento a una delle azioni [standard del programma](standard-actions.md)di installazione o a una voce nella tabella [CustomAction](customaction-table.md) o nella tabella Dialog del [modulo unione.](dialog-table.md)
 
-Se nella colonna Action di una tabella di sequenza di un modulo merge viene utilizzata un' [azione standard](standard-actions.md) , le colonne BaseAction e After del record devono essere null.
+Se viene [usata un'azione standard](standard-actions.md) nella colonna Azione di una tabella della sequenza del modulo unione, le colonne BaseAction e After del record devono essere Null.
 
 </dd> <dt>
 
 <span id="Sequence"></span><span id="sequence"></span><span id="SEQUENCE"></span>Sequenza
 </dt> <dd>
 
-Numero di sequenza di un'azione standard. Se una finestra di dialogo o un'azione personalizzata viene immessa nella colonna azione di questa riga, questo campo deve essere impostato su null.
+Numero di sequenza di un'azione standard. Se nella colonna Azione di questa riga viene immessa un'azione o una finestra di dialogo personalizzata, questo campo deve essere impostato su Null.
 
-Quando si utilizzano [azioni standard](standard-actions.md) nelle tabelle di sequenza dei moduli di merge, il valore nella colonna sequenza deve essere il numero di sequenza dell'azione consigliata. Se il numero di sequenza nel modulo merge è diverso da quello per la stessa azione nella tabella di sequenza dei file con estensione msi, lo strumento di merge utilizza il numero di sequenza del file con estensione msi. Vedere le sequenze suggerite nell' [uso di una tabella di sequenza](using-a-sequence-table.md) per i numeri di sequenza consigliati per le azioni standard.
+Quando si [usano azioni standard](standard-actions.md) nelle tabelle di sequenza del modulo unione, il valore nella colonna Sequenza deve essere il numero di sequenza di azione consigliato. Se il numero di sequenza nel modulo unione è diverso da quello per la stessa azione nella tabella della sequenza di file .msi, lo strumento di unione usa il numero di sequenza del file .msi. Per i numeri di sequenza consigliati delle azioni standard, vedere le sequenze suggerite in [Uso](using-a-sequence-table.md) di una tabella di sequenza.
 
 </dd> <dt>
 
 <span id="BaseAction"></span><span id="baseaction"></span><span id="BASEACTION"></span>BaseAction
 </dt> <dd>
 
-La colonna BaseAction può contenere un'azione standard, un'azione personalizzata specificata nella tabella delle azioni personalizzata del modulo merge o una finestra di dialogo specificata nella tabella delle finestre di dialogo del modulo. La colonna BaseAction è una chiave nella colonna Action della tabella. Non può essere una chiave esterna in un'altra tabella o tabella di merge nel file con estensione msi. Ciò significa che ogni azione standard, azione personalizzata o finestra di dialogo elencata nella colonna BaseAction deve essere elencata anche nella colonna azione di un altro record in questa tabella.
+La colonna BaseAction può contenere un'azione standard, un'azione personalizzata specificata nella tabella delle azioni personalizzate del modulo unione o una finestra di dialogo specificata nella tabella della finestra di dialogo del modulo. La colonna BaseAction è una chiave nella colonna Azione di questa tabella. Non può essere una chiave esterna in un'altra tabella o tabella di tipo merge nel file .msi. Ciò significa che ogni azione standard, azione personalizzata o finestra di dialogo elencata nella colonna BaseAction deve essere elencata anche nella colonna Azione di un altro record in questa tabella.
 
 </dd> <dt>
 
 <span id="After"></span><span id="after"></span><span id="AFTER"></span>Dopo
 </dt> <dd>
 
-Valore booleano che indica se l'azione precede o dopo BaseAction.
+Valore booleano per indicare se Action viene prima o dopo BaseAction.
 
 
 
 | Valore | Significato                          |
 |-------|----------------------------------|
-| 0     | Azione da passare prima di BaseAction |
+| 0     | Azione da eseguire prima di BaseAction |
 | 1     | Azione da eseguire dopo BaseAction  |
 
 
@@ -87,7 +87,7 @@ Istruzione condizionale che indica se l'azione viene eseguita. Null restituisce 
 
 ## <a name="remarks"></a>Commenti
 
-Se questa tabella è presente, è necessario che la [tabella InstallUISequence](installuisequence-table.md) sia presente anche nel modulo merge.
+Se questa tabella è presente, nel modulo unione deve essere presente anche la tabella [InstallUISequence.](installuisequence-table.md)
 
  
 

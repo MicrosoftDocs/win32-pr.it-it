@@ -1,12 +1,12 @@
 ---
 title: Metodo IsDbReachable della classe Win32_SessionBrokerServiceProperties
-description: Controlla se il database è raggiungibile.
+description: Verifica se il database è raggiungibile.
 ms.assetid: c9774d6d-1b78-4ec1-bae2-80d41d4c9b06
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo IsDbReachable
-- Metodo IsDbReachable Servizi Desktop remoto, classe Win32_SessionBrokerServiceProperties
-- Classe Win32_SessionBrokerServiceProperties Servizi Desktop remoto, metodo IsDbReachable
+- Metodo IsDbReachable Servizi Desktop remoto
+- Metodo IsDbReachable Servizi Desktop remoto , Win32_SessionBrokerServiceProperties classe
+- Win32_SessionBrokerServiceProperties classe Servizi Desktop remoto metodo , IsDbReachable
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d3a59b8b0eba80dd832b3967b5e626642684f0c1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c1cd7aaf2035251c503d85683f9aa9e9fe7b7f6285084a97133f0573ba41d79c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118848418"
 ---
-# <a name="isdbreachable-method-of-the-win32_sessionbrokerserviceproperties-class"></a>Metodo IsDbReachable della \_ classe SessionBrokerServiceProperties Win32
+# <a name="isdbreachable-method-of-the-win32_sessionbrokerserviceproperties-class"></a>Metodo IsDbReachable della classe \_ SessionBrokerServiceProperties Win32
 
-Controlla se il database è raggiungibile.
+Verifica se il database è raggiungibile.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,28 +45,28 @@ uint32 IsDbReachable(
 
 <dl> <dt>
 
-*connStringToDb* \[ in\]
+*connStringToDb* \[ Pollici\]
 </dt> <dd>
 
 Stringa di connessione al database.
 
 </dd> <dt>
 
-*connSecondaryStringToDb* \[ in\]
+*connSecondaryStringToDb* \[ Pollici\]
 </dt> <dd>
 
 Stringa di connessione secondaria al database centrale.
 
-**Windows server 2012 R2 e Windows server 2012:** Questo parametro non è disponibile prima di Windows Server 2016.
+**Windows Server 2012 R2 e Windows Server 2012:** Questo parametro non è disponibile prima di Windows Server 2016.
 
 </dd> <dt>
 
-*activeBrokerName* \[ in\]
+*activeBrokerName* \[ Pollici\]
 </dt> <dd>
 
 Nome del broker attivo.
 
-**Windows server 2012 R2 e Windows server 2012:** Questo parametro non è disponibile prima di Windows Server 2016.
+**Windows Server 2012 R2 e Windows Server 2012:** Questo parametro non è disponibile prima di Windows Server 2016.
 
 </dd> </dl>
 
@@ -78,8 +78,8 @@ Nome del broker attivo.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                         |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 
@@ -88,7 +88,7 @@ Nome del broker attivo.
 
 <dl> <dt>
 
-[**\_SessionBrokerServiceProperties Win32**](win32-sessionbrokerserviceproperties.md)
+[**Win32 \_ SessionBrokerServiceProperties**](win32-sessionbrokerserviceproperties.md)
 </dt> </dl>
 
  

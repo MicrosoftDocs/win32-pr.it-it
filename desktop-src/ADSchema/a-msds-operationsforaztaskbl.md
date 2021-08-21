@@ -32,7 +32,7 @@ Collegamento all'indietro Az-Operation a Az-Task oggetti che si collegano a esso
 | CN                | ms-DS-Operations-For-Az-Task-BL         |
 | Ldap-Display-Name | msDS-OperationsForAzTaskBL              |
 | Dimensione              | \-                                      |
-| Aggiorna privilegio  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | Questo valore viene impostato dal sistema.        |
 | Attribute-Id      | 1.2.840.113556.1.4.1809                 |
 | System-Id-Guid    | a637d211-5739-4ed1-89b2-88974548bc59    |
@@ -57,7 +57,7 @@ Collegamento all'indietro Az-Operation a Az-Task oggetti che si collegano a esso
 | ID collegamento                | 2019                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -78,7 +78,7 @@ Collegamento all'indietro Az-Operation a Az-Task oggetti che si collegano a esso
 | ID collegamento                | 2019                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -99,7 +99,7 @@ Collegamento all'indietro Az-Operation a Az-Task oggetti che si collegano a esso
 | ID collegamento                | 2019                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| A valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -120,7 +120,7 @@ Collegamento all'indietro Az-Operation a Az-Task oggetti che si collegano a esso
 | ID collegamento                | 2019                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| Is-Single-Valued       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -141,7 +141,7 @@ Collegamento all'indietro Az-Operation a Az-Task oggetti che si collegano a esso
 | ID collegamento                | 2019                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| Is-Single-Valued       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |

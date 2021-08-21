@@ -1,7 +1,7 @@
 ---
-description: Definisce le modalità di eliminazione supportate.
+description: Definisce le modalità di culling supportate.
 ms.assetid: b669307c-0d40-4ecb-8a2e-8bd1d9c65647
-title: Enumerazione D3DCULL (D3D9Types. h)
+title: Enumerazione D3DCULL (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: e88aa1baf86b2b03177cc686bf83299311065283
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 062135f1eff43bd568f1b08674985b4744e0835ebf3fa9e78c2756a798f85ccb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989061"
 ---
 # <a name="d3dcull-enumeration"></a>Enumerazione D3DCULL
 
-Definisce le modalità di eliminazione supportate.
+Definisce le modalità di culling supportate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,37 +42,37 @@ typedef enum D3DCULL {
 
 <dl> <dt>
 
-<span id="D3DCULL_NONE"></span><span id="d3dcull_none"></span>**D3DCULL \_ None**
+<span id="D3DCULL_NONE"></span><span id="d3dcull_none"></span>**D3DCULL \_ NONE**
 </dt> <dd>
 
-Non eliminare i visi indietro.
+Non cullare i visi indietro.
 
 </dd> <dt>
 
 <span id="D3DCULL_CW"></span><span id="d3dcull_cw"></span>**D3DCULL \_ CW**
 </dt> <dd>
 
-Riattivazione dei visi con vertici in senso orario.
+Cullare i visi con vertici in senso orario.
 
 </dd> <dt>
 
 <span id="D3DCULL_CCW"></span><span id="d3dcull_ccw"></span>**D3DCULL \_ CCW**
 </dt> <dd>
 
-Eliminare i volti indietro con vertici in senso antiorario.
+Cullare i visi con vertici in senso antiorario.
 
 </dd> <dt>
 
-<span id="D3DCULL_FORCE_DWORD"></span><span id="d3dcull_force_dword"></span>**D3DCULL \_ Force \_ DWORD**
+<span id="D3DCULL_FORCE_DWORD"></span><span id="d3dcull_force_dword"></span>**D3DCULL \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori permetterebbero che questa enumerazione venga compilata in una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbe a questa enumerazione di compilare a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I valori in questo tipo enumerato vengono usati dallo stato di \_ rendering CULLMODE di D3DRS. Le modalità di eliminazione definiscono la modalità di eliminazione delle facce posteriori durante il rendering di una geometria.
+I valori in questo tipo enumerato vengono usati dallo stato di rendering D3DRS \_ CULLMODE. Le modalità di culling definiscono il modo in cui vengono espulsi i visi quando si esegue il rendering di una geometria.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,7 +80,7 @@ I valori in questo tipo enumerato vengono usati dallo stato di \_ rendering CULL
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

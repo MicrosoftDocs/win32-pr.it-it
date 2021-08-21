@@ -1,19 +1,19 @@
 ---
 description: Nome descrittivo del tipo dell'elemento.
 ms.assetid: 5d4c86da-6317-4a34-88d6-caf794aaa165
-title: System. ItemTypeText
+title: System.ItemTypeText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 699a953392054cb2344c5f3b3d652e64a9a2c1f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f145aa2491f3352c4691be95c0e8ae16a75e8e0880732904e983fbf02c167dbd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553751"
 ---
-# <a name="systemitemtypetext"></a>System. ItemTypeText
+# <a name="systemitemtypetext"></a>System.ItemTypeText
 
-Nome descrittivo del tipo dell'elemento. Questo valore non può essere analizzato a livello di codice.
+Nome descrittivo del tipo dell'elemento. Questo valore non deve essere analizzato a livello di codice.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,19 +33,19 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
-Se [System. ItemType](./props-system-itemtype.md) è VT \_ vuoto, anche il valore di questa proprietà è VT \_ Empty. Se l'elemento è un file, il valore di questa proprietà è uguale a quello di se il valore System. ItemType del file è stato passato a [**PSFormatForDisplay**](/windows/win32/api/propsys/nf-propsys-psformatfordisplay).
+Se [System.ItemType](./props-system-itemtype.md) è VT EMPTY, anche il \_ valore di questa proprietà è VT \_ EMPTY. Se l'elemento è un file, il valore di questa proprietà è lo stesso di quello passato dal valore System.ItemType del file a [**PSFormatForDisplay.**](/windows/win32/api/propsys/nf-propsys-psformatfordisplay)
 
-Questa proprietà non deve essere confusa con [System. Kind](./props-system-kind.md), che è un nome di tipo di alto livello descrittivo. Per un file di documento con estensione doc, ad esempio, le varie proprietà sono illustrate di seguito:
+Questa proprietà non deve essere confusa [con System.Kind,](./props-system-kind.md)che è un nome di tipo di alto livello e descrittivo. Ad esempio, per un .doc file di documento, le varie proprietà sono come illustrato di seguito:
 
 
 
 | Proprietà                                               | Valore                   |
 |--------------------------------------------------------|-------------------------|
-| [System. Kind](./props-system-kind.md)                 | Documento                |
-| [System. ItemType](./props-system-itemtype.md)         | doc                    |
-| [System. ItemTypeText]() | Documento di Microsoft Word |
+| [System.Kind](./props-system-kind.md)                 | Documento                |
+| [System.ItemType](./props-system-itemtype.md)         | doc                    |
+| [System.ItemTypeText]() | Microsoft Word Documento |
 
 
 
@@ -57,11 +57,11 @@ Valori di esempio
 
 | Percorso                                   | ItemTypeText            |
 |----------------------------------------|-------------------------|
-| c: \\ \\hello.txt della barra mydir \\              | File di testo               |
-| \\\\\\condivisione server \\ mydir \\goodnews.doc | Documento di Microsoft Word |
-| \\\\\\cartella condivisione \\ Server              | Cartella di file             |
-| c: \\ mydir \\ cartella                    | Cartella di file             |
-| /Mailbox account/Inbox/' re: Hello!'    | Messaggio di posta elettronica di Outlook  |
+| c: \\ barra mydir \\ \\hello.txt              | File di testo               |
+| \\\\condivisione \\ server \\ mydir \\goodnews.doc | Microsoft Word Documento |
+| \\\\cartella \\ di condivisione \\ server              | Cartella file             |
+| c: \\ MyDir \\ MyFolder                    | Cartella file             |
+| /Mailbox Account/Inbox/'Re: Hello!'    | Outlook Messaggio di posta elettronica  |
 
 
 
@@ -71,7 +71,7 @@ Valori di esempio
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -80,13 +80,13 @@ Valori di esempio
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -95,13 +95,13 @@ Valori di esempio
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

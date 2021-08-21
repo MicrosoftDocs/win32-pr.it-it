@@ -1,9 +1,9 @@
 ---
-title: VOLUMESLIDER
-description: Si tratta di un dispositivo di scorrimento predefinito con i seguenti valori predefiniti. | VOLUMESLIDER
+title: VOLUMILIDER
+description: Si tratta di un dispositivo di scorrimento predefinito con i valori predefiniti seguenti. | VOLUMILIDER
 ms.assetid: 7533863b-49de-4c1b-8750-fd333c573a17
 keywords:
-- Media Player Windows VOLUMESLIDER
+- VOLUMILIDER Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ea872b55f6657d9cf1c9f67230cb3debd955fb4e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ebc2e6ec82327be9cb423d05661a5a38bbcc445450fc6d4f56ceaf7caa8b270d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054009"
 ---
-# <a name="volumeslider"></a>VOLUMESLIDER
+# <a name="volumeslider"></a>VOLUMILIDER
 
-Si tratta di un dispositivo di scorrimento predefinito con i seguenti valori predefiniti.
+Si tratta di un dispositivo di scorrimento predefinito con i valori predefiniti seguenti.
 
 ``` syntax
 toolTip="Volume"
@@ -35,7 +35,7 @@ player.settings.mute=false;"
 
 ## <a name="remarks"></a>Commenti
 
-Viene creato un controllo dispositivo di scorrimento che imposta il volume audio. Le descrizioni comandi sono localizzate. Per eseguire l'override di tutte le proprietà di questo dispositivo di scorrimento, è possibile specificarle in modo esplicito.
+Verrà creato un controllo SLIDER che imposta il volume audio. Le descrizioni comandi sono localizzate. È possibile eseguire l'override di tutte le proprietà di questo slider specificandole in modo esplicito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,7 +43,7 @@ Viene creato un controllo dispositivo di scorrimento che imposta il volume audio
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------|
-| Versione<br/> | Windows Media Player 7,0 o versione successiva<br/> |
+| Versione<br/> | Windows Media Player 7.0 o versione successiva<br/> |
 
 
 

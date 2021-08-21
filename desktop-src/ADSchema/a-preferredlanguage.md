@@ -1,6 +1,6 @@
 ---
-title: attributo preferredLanguage
-description: Lingua preferita scritta o vocale per una persona.
+title: Attributo preferredLanguage
+description: Lingua scritta o parlata preferita per una persona.
 ms.assetid: 425f87cf-6281-4841-84eb-dbe5e8dca680
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea38cd17aabbfd8660ae27506110eea6cf9e9784
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 48ca95eb1f3370305d9544830001d6ead5d41316959bbb81ad7d1780fa667236
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104520046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022414"
 ---
-# <a name="preferredlanguage-attribute"></a>attributo preferredLanguage
+# <a name="preferredlanguage-attribute"></a>Attributo preferredLanguage
 
-Lingua preferita scritta o vocale per una persona.
+Lingua scritta o parlata preferita per una persona.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | preferredLanguage                           |
-| LDAP-Display-Name | preferredLanguage                           |
+| Ldap-Display-Name | preferredLanguage                           |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 2.16.840.1.113730.3.1.39                    |
-| System-ID-GUID    | 856be0d0-18e7-46e1-8f5f-7ee4d9020e0d        |
+| System-Id-Guid    | 856be0d0-18e7-46e1-8f5f-7ee4d9020e0d        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -56,15 +56,15 @@ Lingua preferita scritta o vocale per una persona.
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Vero                                                                                  |
+| A valore singolo       | Vero                                                                                  |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Lingua preferita scritta o vocale per una persona.
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Vero                                                                                  |
+| A valore singolo       | Vero                                                                                  |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Lingua preferita scritta o vocale per una persona.
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Vero                                                                                  |
+| A valore singolo       | Vero                                                                                  |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -119,15 +119,15 @@ Lingua preferita scritta o vocale per una persona.
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Vero                                                                                  |
+| A valore singolo       | Vero                                                                                  |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -140,15 +140,15 @@ Lingua preferita scritta o vocale per una persona.
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Vero                                                                                  |
+| A valore singolo       | Vero                                                                                  |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 

@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: 31fc35b1d680d900af929ea8a828bcb23d222f66
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cef9878ea8e9dd6c11c6b18a62d332e17f24810548360e0edb9c117e02a710c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051189"
 ---
 # <a name="msmcainfo-class"></a>Classe MSMCAInfo
 
-La classe **MSMCAInfo** è una classe di base astratta da cui derivano tutte le classi di dati del provider MCA (Machine Check Architecture), ad esempio [**MSMCAInfo \_ RawMCAData**](msmcainfo-rawmcadata.md). Il provider MCA dispone anche di classi di evento, derivate da [**WmiEvent**](wmievent.md). Questa classe è disponibile solo nei sistemi Windows a 64 bit.
+La **classe MSMCAInfo** è una classe di base astratta da cui derivano tutte le classi di dati del provider MCA (Machine Check Architecture), ad esempio [**MSMCAInfo \_ RawMCAData.**](msmcainfo-rawmcadata.md) Il provider MCA include anche classi di evento, derivate da [**WMIEvent**](wmievent.md). Questa classe è disponibile solo nei sistemi Windows a 64 bit.
 
-La sintassi seguente è semplificata dal codice Managed Object Format (MOF) e include tutte le relative proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,7 +36,7 @@ class MSMCAInfo
 
 ## <a name="members"></a>Members
 
-La classe **MSMCAInfo** non definisce membri.
+La **classe MSMCAInfo** non definisce membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ La classe **MSMCAInfo** non definisce membri.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows XP<br/>                                                                  |
 | Server minimo supportato<br/> | Windows Server 2003<br/>                                                         |
-| Spazio dei nomi<br/>                | \\WMI radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>Wmicore. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Wmi \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>Wmicore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wmiprov.dll</dt> </dl> |
 
 
@@ -59,7 +59,7 @@ La classe **MSMCAInfo** non definisce membri.
 [Classi MSMCA](msmca-classes.md)
 </dt> <dt>
 
-[**\_Intestazione MSMCAEvent**](msmcaevent-header.md)
+[**Intestazione \_ MSMCAEvent**](msmcaevent-header.md)
 </dt> <dt>
 
 [**WMIEvent**](wmievent.md)

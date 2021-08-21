@@ -1,7 +1,7 @@
 ---
-description: La struttura della porta \_ info \_ 3 specifica il valore di stato di una porta stampante.
+description: La struttura PORT \_ INFO \_ 3 specifica il valore di stato di una porta della stampante.
 ms.assetid: 0939353f-284b-4dbb-89a2-04918c934430
-title: Struttura PORT_INFO_3 (winspool. h)
+title: PORT_INFO_3 (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 49888ee6410f39745b848bbbf7fd95fa329c6f48
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cdd7f2fd931c7f503d566cdfc4ab38c5f595b51cea23d0cdf2fb326811cf7748
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033969"
 ---
-# <a name="port_info_3-structure"></a>Struttura delle informazioni sulla porta \_ \_ 3
+# <a name="port_info_3-structure"></a>Struttura PORT \_ INFO \_ 3
 
-La struttura della **porta \_ info \_ 3** specifica il valore di stato di una porta stampante.
+La **struttura PORT INFO \_ \_ 3** specifica il valore di stato di una porta della stampante.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,27 +46,27 @@ typedef struct _PORT_INFO_3 {
 **dwStatus**
 </dt> <dd>
 
-Nuovo valore dello stato della porta. Questo valore viene utilizzato solo se il membro **pszStatus** è **null**.
+Nuovo valore di stato della porta. Questo valore viene usato solo se il **membro pszStatus** è **NULL.**
 
-Il membro può essere uno dei valori seguenti.
+Questo membro può essere uno dei valori seguenti.
 
 
 
 | Valore                            | Significato                                             |
 |----------------------------------|-----------------------------------------------------|
-| 0                                | Cancella lo stato della porta stampante.                     |
-| \_stato porta \_ offline            | La stampante della porta è offline.                      |
-| \_ \_ inceppamento carta stato porta \_         | Alla stampante della porta è associato un inceppamento della carta.                 |
-| carta di stato porta in \_ \_ \_ uscita         | La stampante della porta è fuori carta.                 |
-| \_ \_ bin output stato \_ porta \_ completo  | Il contenitore di output printer's della porta è pieno.            |
-| problema relativo alla carta di stato della porta \_ \_ \_     | La stampante della porta presenta un problema relativo alla carta.             |
-| \_stato porta \_ senza \_ toner          | La stampante della porta non è presente nel toner.                 |
-| \_sportello stato \_ porta \_ aperto         | La porta della stampante della porta è aperta.             |
-| \_ \_ intervento dell'utente stato porta \_ | La stampante della porta richiede l'intervento dell'utente.      |
-| \_ \_ \_ memoria insufficiente per lo stato della porta \_    | La stampante della porta ha esaurito la memoria.                |
-| \_ \_ toner stato porta \_ basso         | Il toner della porta è insufficiente.                 |
-| \_stato di \_ riscaldamento della porta \_        | La stampante della porta si sta scaldando.                   |
-| \_ \_ risparmio energia stato \_ porta        | La stampante della porta è in modalità di risparmio energia. |
+| 0                                | Cancella lo stato della porta della stampante.                     |
+| STATO \_ PORTA \_ OFFLINE            | La stampante della porta è offline.                      |
+| CARTA DI \_ STATO DELLA PORTA IN \_ \_ JAM         | La stampante della porta ha un inceppamento della carta.                 |
+| PORT \_ STATUS \_ PAPER \_ OUT         | La stampante della porta è senza carta.                 |
+| PORT \_ STATUS \_ OUTPUT \_ BIN \_ FULL  | Il bin di output della stampante della porta è pieno.            |
+| PROBLEMA RELATIVO \_ AL DOCUMENTO SULLO STATO DELLA \_ \_ PORTA     | La stampante della porta presenta un problema di carta.             |
+| STATO \_ PORTA \_ NO \_ TONER          | La stampante della porta è fuori toner.                 |
+| PORTA \_ DI STATO PORTA \_ \_ APERTA         | La porta della stampante della porta è aperta.             |
+| INTERVENTO \_ \_ DELL'UTENTE SULLO STATO DELLA \_ PORTA | La stampante della porta richiede l'intervento dell'utente.      |
+| MEMORIA \_ INSUFFICIENTE PER LO STATO DELLA \_ \_ \_ PORTA    | Memoria insufficiente per la stampante della porta.                |
+| PORT \_ STATUS \_ TONER \_ LOW         | Il toner della stampante della porta è basso.                 |
+| RISCALDAMENTO \_ DELLO STATO DELLA \_ \_ PORTA        | La stampante della porta si sta riscaldamento.                   |
+| STATO \_ PORTA \_ RISPARMIO ENERGIA \_        | La stampante della porta è in modalità di risparmio energia. |
 
 
 
@@ -77,7 +77,7 @@ Il membro può essere uno dei valori seguenti.
 **pszStatus**
 </dt> <dd>
 
-Puntatore a una nuova stringa del valore dello stato della porta stampante da impostare. Utilizzare questo membro se non esiste alcun valore di stato appropriato tra quelli elencati per **dwStatus**.
+Puntatore a una nuova stringa del valore di stato della porta della stampante da impostare. Usare questo membro se non esiste alcun valore di stato appropriato tra quelli elencati per **dwStatus**.
 
 </dd> <dt>
 
@@ -86,15 +86,15 @@ Puntatore a una nuova stringa del valore dello stato della porta stampante da im
 
 Gravità del valore dello stato della porta.
 
-Il membro può essere uno dei valori seguenti.
+Questo membro può essere uno dei valori seguenti.
 
 
 
 | Valore                       | Significato                                   |
 |-----------------------------|-------------------------------------------|
-| \_ \_ errore tipo di stato porta \_   | Il valore dello stato della porta indica un errore. |
-| \_ \_ avviso tipo di stato porta \_ | Il valore dello stato della porta è un avviso.       |
-| \_informazioni sul \_ tipo di stato della porta \_    | Il valore dello stato della porta è informativo.   |
+| ERRORE DEL \_ TIPO DI STATO DELLA \_ \_ PORTA   | Il valore di stato della porta indica un errore. |
+| AVVISO \_ RELATIVO AL TIPO DI STATO DELLA \_ \_ PORTA | Il valore di stato della porta è un avviso.       |
+| INFORMAZIONI SUL \_ TIPO DI STATO DELLA \_ \_ PORTA    | Il valore dello stato della porta è informativo.   |
 
 
 
@@ -104,7 +104,7 @@ Il membro può essere uno dei valori seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si imposta un valore di stato porta stampante con l' \_ errore tipo di stato porta valore gravità \_ \_ , lo spooler di stampa interrompe l'invio di processi alla porta. Lo spooler di stampa non riprende l'invio di processi alla porta fino a quando non viene eseguita un'altra chiamata di [**porta**](setport.md) per cancellare lo stato.
+Quando si imposta un valore di stato della porta della stampante con il valore di gravità PORT STATUS TYPE ERROR, lo \_ spooler di stampa interrompe l'invio \_ \_ dei processi alla porta. Lo spooler di stampa non riprende l'invio dei processi alla porta fino a quando non viene effettuata un'altra [**chiamata SetPort**](setport.md) per cancellare lo stato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -114,8 +114,8 @@ Quando si imposta un valore di stato porta stampante con l' \_ errore tipo di st
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Nomi Unicode e ANSI<br/>   | **\_ Informazioni sulla porta \_ \_ 3W** (Unicode) e **\_ informazioni sulla porta \_ \_ 3A** (ANSI)<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (includere Windows.h)</dt> </dl> |
+| Nomi Unicode e ANSI<br/>   | **\_ PORT \_ INFO \_ 3W** (Unicode) e **\_ PORT INFO \_ \_ 3A** (ANSI)<br/>                                 |
 
 
 
@@ -126,10 +126,10 @@ Quando si imposta un valore di stato porta stampante con l' \_ errore tipo di st
 [Stampa](printdocs-printing.md)
 </dt> <dt>
 
-[Strutture dell'API spooler di stampa](printing-and-print-spooler-structures.md)
+[Strutture dell'API Spooler di stampa](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
-[**Porta**](setport.md)
+[**SetPort**](setport.md)
 </dt> </dl>
 
  

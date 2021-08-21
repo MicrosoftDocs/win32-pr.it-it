@@ -1,7 +1,7 @@
 ---
 description: Questa classe è la classe del tipo di evento per gli eventi TCP/IP IPv6. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: d24e667e-ec7f-492a-989e-a02ff4c8ac10
-title: Classe TcpIp_TypeGroup3
+title: TcpIp_TypeGroup3 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,14 +20,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 82aa119c0d770a26060b1e8d6ab74433146bb3c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1c817b45f896a25199b9eb38c3776181634104174e695ed399577b3052b687fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069611"
 ---
-# <a name="tcpip_typegroup3-class"></a>\_Classe TypeGroup3 Tcpip
+# <a name="tcpip_typegroup3-class"></a>Classe \_ TypeGroup3 TcpIp
 
 Questa classe è la classe del tipo di evento per gli eventi TCP/IP IPv6.
 
@@ -52,42 +52,42 @@ class TcpIp_TypeGroup3 : TcpIp
 
 ## <a name="members"></a>Members
 
-La classe **TCPIP \_ TypeGroup3** presenta questi tipi di membri:
+La **classe \_ TypeGroup3 TcpIp** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **TCPIP \_ TypeGroup3** ha queste proprietà.
+La **classe \_ TypeGroup3 TcpIp** ha queste proprietà.
 
 <dl> <dt>
 
-ConnID
+connid
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (6), puntatore
+Qualificatori: WmiDataId(6), Pointer
 </dt> </dl>
 
-Identificatore di connessione univoco per correlare gli eventi che appartengono alla stessa connessione.
+Identificatore di connessione univoco per correlare gli eventi appartenenti alla stessa connessione.
 
 </dd> <dt>
 
-daddr
+tasdr
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3), Extension ("IPAddrV6")
+Qualificatori: WmiDataId(3), Extension("IPAddrV6")
 </dt> </dl>
 
 Indirizzo IP di destinazione.
@@ -97,13 +97,13 @@ Indirizzo IP di destinazione.
 dport
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (5), Extension ("Port")
+Qualificatori: WmiDataId(5), Extension("Port")
 </dt> </dl>
 
 Numero di porta di destinazione.
@@ -113,13 +113,13 @@ Numero di porta di destinazione.
 PID
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1)
+Qualificatori: WmiDataId(1)
 </dt> </dl>
 
 Identificatore del processo associato alla richiesta.
@@ -129,29 +129,29 @@ Identificatore del processo associato alla richiesta.
 saddr
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (4), Extension ("IPAddrV6")
+Qualificatori: WmiDataId(4), Extension("IPAddrV6")
 </dt> </dl>
 
 Indirizzo IP di origine.
 
 </dd> <dt>
 
-SeqNum
+seqnum
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (7)
+Qualificatori: WmiDataId(7)
 </dt> </dl>
 
 Numero di sequenza.
@@ -161,29 +161,29 @@ Numero di sequenza.
 size
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2)
+Qualificatori: WmiDataId(2)
 </dt> </dl>
 
 Dimensioni del pacchetto.
 
 </dd> <dt>
 
-Sport
+sport
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (6), Extension ("Port")
+Qualificatori: WmiDataId(6), Extension("Port")
 </dt> </dl>
 
 Numero di porta di origine.
@@ -196,8 +196,8 @@ Numero di porta di origine.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -205,7 +205,7 @@ Numero di porta di origine.
 
 <dl> <dt>
 
-[**TcpIp**](tcpip.md)
+[**Tcpip**](tcpip.md)
 </dt> </dl>
 
  

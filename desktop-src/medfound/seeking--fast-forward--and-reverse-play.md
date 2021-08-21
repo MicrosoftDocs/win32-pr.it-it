@@ -1,34 +1,34 @@
 ---
-description: Questo argomento illustra il codice di esempio per gestire la ricerca e la frequenza delle modifiche, quando si usa la sessione multimediale per la riproduzione.
+description: Questo argomento illustra il codice di esempio per gestire la ricerca e la frequenza delle modifiche quando si usa la sessione multimediale per la riproduzione.
 ms.assetid: 50bf4c05-99c0-4cf0-aaca-8ee717cafd12
 title: Ricerca, avanzamento rapido e riproduzione inversa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68c42e4ab2bbf5bd3ac1057ce4bb0e09fceddc44
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e49fb8731b005da12adf51880f4375c6610348ac73bd0bdc592e8478383df676
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034779"
 ---
 # <a name="seeking-fast-forward-and-reverse-play"></a>Ricerca, avanzamento rapido e riproduzione inversa
 
-Questo argomento illustra il codice di esempio per gestire la ricerca e la frequenza delle modifiche, quando si usa la [sessione multimediale](media-session.md) per la riproduzione.
+Questo argomento illustra il codice di esempio per gestire la ricerca e la frequenza delle modifiche quando si usa [la sessione multimediale per](media-session.md) la riproduzione.
 
-Quando si usa la sessione multimediale per la riproduzione, un'applicazione può cercare e modificare la velocità di riproduzione come indicato di seguito:
+Quando si usa la sessione multimediale per la riproduzione, un'applicazione può cercare e modificare la velocità di riproduzione come segue:
 
--   Per eseguire la ricerca, chiamare [**IMFMediaSession:: Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start) e specificare la posizione di ricerca.
--   Per modificare la velocità di riproduzione, usare l'interfaccia [**IMFRateControl**](/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol) , come descritto in [controllo della frequenza](rate-control.md).
--   Per ottenere i frame video aggiornati durante la ricerca, impostare la velocità di riproduzione su zero prima di chiamare [**IMFMediaSession:: Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start). Questa operazione è denominata *pulitura*. (Vedere [come eseguire lo scrubbing](how-to-perform-scrubbing.md)).
+-   Per eseguire la ricerca, [**chiamare IMFMediaSession::Start e**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start) specificare la posizione di ricerca.
+-   Per modificare la velocità di riproduzione, usare [**l'interfaccia IMFRateControl**](/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol) come descritto in [Controllo della frequenza.](rate-control.md)
+-   Per ottenere fotogrammi video aggiornati durante la ricerca, impostare la velocità di riproduzione su zero prima di chiamare [**IMFMediaSession::Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start). Questa operazione è detta *scrubbing.* Vedere [How to Perform Scrubbing (Come eseguire lo scrubbing).](how-to-perform-scrubbing.md)
 
-Per creare la migliore esperienza utente, tuttavia, è necessario tenere conto dei comportamenti seguenti:
+Per creare la migliore esperienza utente, tuttavia, è necessario prendere in considerazione i comportamenti seguenti:
 
--   La ricerca è asincrona e la sessione multimediale Accoda tutte le richieste di ricerca su una coda FIFO. Se si inviano più richieste di ricerca, è possibile che l'interfaccia utente venga eseguita in anticipo rispetto allo stato di riproduzione effettivo. Si supponga, ad esempio, che l'applicazione implementi una barra di ricerca. Se l'utente trascina la barra di ricerca in avanti e indietro, potrebbe essersi verificato un ritardo durante l'esecuzione delle ricerche in avanti. Mentre è in corso una ricerca, è necessario memorizzare nella cache le richieste di ricerca dell'utente. Al termine dell'operazione di ricerca corrente, inviare la richiesta di ricerca più recente dell'utente e rimuovere gli altri.
--   Alcune transizioni di frequenza non sono consentite in alcuni Stati di trasporto. Ad esempio, il cambio dalla riproduzione in diretta alla riproduzione inversa non è consentito durante la riproduzione. Le transizioni supportate sono descritte in [**IMFRateControl:: serate**](/windows/desktop/api/mfidl/nf-mfidl-imfratecontrol-setrate). Anche le modifiche di frequenza sono asincrone.
+-   La ricerca è asincrona e la sessione multimediale accoda tutte le richieste di ricerca in una coda FIFO. Se si inviano più richieste di ricerca, l'interfaccia utente potrebbe essere eseguita prima dello stato di riproduzione effettivo. Si supponga, ad esempio, che l'applicazione implementi una barra di ricerca. Se l'utente trascina la barra di ricerca avanti e indietro, potrebbe verificarsi un ritardo durante l'esecuzione delle operazioni di ricerca in avanti. Mentre è in corso una ricerca, è consigliabile memorizzare nella cache le richieste di ricerca dell'utente. Al termine dell'operazione di ricerca corrente, inviare la richiesta di ricerca più recente dell'utente ed eliminare le altre.
+-   Alcune transizioni di velocità non sono consentite in alcuni stati di trasporto. Ad esempio, il passaggio dalla riproduzione in avanti alla riproduzione inversa non è consentito durante la riproduzione. Le transizioni supportate sono descritte in [**IMFRateControl::SetRate**](/windows/desktop/api/mfidl/nf-mfidl-imfratecontrol-setrate). Anche le modifiche della frequenza sono asincrone.
 
-La classe helper seguente può essere utilizzata per gestire le richieste di ricerca e la frequenza delle modifiche. Mentre un'operazione asincrona è in sospeso, la classe memorizza nella cache qualsiasi richiesta di ricerca o di modifica della frequenza. Al termine dell'operazione corrente, la classe Invia la richiesta più recente, se disponibile. La classe gestisce anche lo stato del trasporto per evitare modifiche di frequenza non valide.
+La classe helper seguente può essere usata per gestire le richieste di ricerca e la frequenza delle modifiche. Mentre un'operazione asincrona è in sospeso, la classe memorizza nella cache tutte le richieste di ricerca o di modifica della frequenza. Al termine dell'operazione corrente, la classe invia la richiesta più recente, se presente. La classe gestisce anche lo stato del trasporto per evitare modifiche di velocità non valide.
 
-Di seguito è illustrata la dichiarazione della classe PlayerSeeking.
+Ecco la dichiarazione della classe PlayerSeeking.
 
 
 ```C++
@@ -169,7 +169,7 @@ private:
 
 
 
-Di seguito è illustrata l'implementazione della classe PlayerSeeking.
+Ecco l'implementazione della classe PlayerSeeking.
 
 
 ```C++

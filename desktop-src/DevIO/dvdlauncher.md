@@ -1,7 +1,7 @@
 ---
-description: Verifica che l'area multimediale nell'unità DVD corrisponda all'area dell'unità DVD.
+description: Verifica che l'area del supporto nell'unità DVD corrisponda all'area dell'unità DVD.
 ms.assetid: 864de493-94c2-4f32-96a8-14cfea13dbef
-title: DvdLauncher (funzione)
+title: Funzione DvdLauncher
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - StorProp.dll
-ms.openlocfilehash: ef49be579052e5a9fd493f5bf246a2efbd217c34
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a52ac620e5ec9aa3d9060d35921fcfd9c5bcc6e73cebf71ef336ceb54fc0806e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956910"
 ---
-# <a name="dvdlauncher-function"></a>DvdLauncher (funzione)
+# <a name="dvdlauncher-function"></a>Funzione DvdLauncher
 
-Verifica che l'area multimediale nell'unità DVD corrisponda all'area dell'unità DVD.
+Verifica che l'area del supporto nell'unità DVD corrisponda all'area dell'unità DVD.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,14 +40,14 @@ BOOL WINAPI DvdLauncher(
 
 <dl> <dt>
 
-*HWND* \[ in\]
+*HWnd* \[ Pollici\]
 </dt> <dd>
 
 Handle per la finestra di primo livello da utilizzare per qualsiasi interfaccia utente richiesta.
 
 </dd> <dt>
 
-*LetteraUnità* \[ in\]
+*DriveLetter* \[ Pollici\]
 </dt> <dd>
 
 Lettera di unità.
@@ -60,7 +60,7 @@ Se la funzione ha esito positivo e le aree corrispondono, il valore restituito �
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associata alcuna libreria di importazione. È necessario utilizzare le funzioni [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegare dinamicamente a StorProp.dll.
+A questa funzione non è associata alcuna libreria di importazione. È necessario usare le [**funzioni LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi in modo dinamico StorProp.dll.
 
 ## <a name="requirements"></a>Requisiti
 

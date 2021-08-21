@@ -5,59 +5,59 @@ ms.assetid: daa383ba-994e-4986-9979-119576cecd1c
 title: W (Servizio Copia Shadow del volume)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9295be608f81d82104c1d55f3656d1a24243a87
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb67a0f4ae622e0fead791d1876236794806c9b9e725d1c60f7712fd44cbe573
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118842563"
 ---
 # <a name="w-volume-shadow-copy-service"></a>W (Servizio Copia Shadow del volume)
 
-[A](vssgloss-a.md) [B](vssgloss-b.md) [C](vssgloss-c.md) [d](vssgloss-d.md) [E](vssgloss-e.md) [F](vssgloss-f.md) [G](vssgloss-g.md) [H](vssgloss-h.md) [i](vssgloss-i.md) J K [L](vssgloss-l.md) M [N](vssgloss-n.md) [O](vssgloss-o.md) [P](vssgloss-p.md) Q [R](vssgloss-r.md) [S](vssgloss-s.md) [T](vssgloss-t.md) U [V](vssgloss-v.md) W X Y Z
+[A](vssgloss-a.md) [B](vssgloss-b.md) [C](vssgloss-c.md) [D](vssgloss-d.md) [E](vssgloss-e.md) [F](vssgloss-f.md) [G](vssgloss-g.md) [H](vssgloss-h.md) [I](vssgloss-i.md) J K [L](vssgloss-l.md) M [N](vssgloss-n.md) [O](vssgloss-o.md) [P](vssgloss-p.md) Q [R](vssgloss-r.md) [S](vssgloss-s.md) [T U](vssgloss-t.md) [V](vssgloss-v.md) W X Y Z
 
 <dl> <dt>
 
-<span id="base.vssgloss_windows_file_protection"></span><span id="BASE.VSSGLOSS_WINDOWS_FILE_PROTECTION"></span>**Protezione file di Windows**
+<span id="base.vssgloss_windows_file_protection"></span><span id="BASE.VSSGLOSS_WINDOWS_FILE_PROTECTION"></span>**Windows Protezione file**
 </dt> <dd>
 
-Servizio di sistema che protegge i file speciali del sistema operativo. Se uno di questi file viene eliminato o sovrascritto, la protezione dei file di Windows sostituisce il file con quello originale dalla relativa cache.
+Servizio di sistema che protegge file speciali del sistema operativo. Se uno di questi file viene eliminato o sovrascritto, Windows File Protection sostituisce il file con l'originale dalla cache.
 
 </dd> <dt>
 
-<span id="base.vssgloss_writer"></span><span id="BASE.VSSGLOSS_WRITER"></span>**Writer**
+<span id="base.vssgloss_writer"></span><span id="BASE.VSSGLOSS_WRITER"></span>**Scrittore**
 </dt> <dd>
 
-Applicazione che coordina le operazioni di I/O con la copia shadow VSS e le operazioni correlate alla copia shadow, ad esempio backup e ripristini, in modo che i dati contenuti nel volume copiato Shadow siano in uno stato coerente.
+Un'applicazione che coordina le operazioni di I/O con le operazioni correlate alla copia shadow di Vss e alla copia shadow (ad esempio backup e ripristini) in modo che i dati contenuti nel volume shadow copiato siano in uno stato coerente.
 
-Per supportare questo coordinamento, un writer deve implementare un'istanza di una classe derivata dalla classe di base astratta **CVssWriter** per comunicare con l'infrastruttura VSS. Vedere anche [*Copia Shadow*](vssgloss-s.md).
+Per supportare questo coordinamento, un writer deve implementare un'istanza di una classe derivata dalla classe di base astratta **CVssWriter** per comunicare con l'infrastruttura vss. Vedere anche [*copia shadow.*](vssgloss-s.md)
 
 </dd> <dt>
 
-<span id="base.vssgloss_writer_class"></span><span id="BASE.VSSGLOSS_WRITER_CLASS"></span>**classe Writer**
+<span id="base.vssgloss_writer_class"></span><span id="BASE.VSSGLOSS_WRITER_CLASS"></span>**Classe writer**
 </dt> <dd>
 
-Identificatore univoco globale (GUID) fornito da un writer durante l'inizializzazione per indicare che appartiene a un tipo specificato di writer. Ad esempio, più implementazioni di un writer possono condividere lo stesso ID di classe Writer.
+Identificatore univoco globale (GUID) fornito da un writer durante l'inizializzazione per indicare che appartiene a un determinato tipo di writer. Ad esempio, più implementazioni di un writer possono condividere lo stesso ID di classe writer.
 
-I writer della stessa classe possono essere distinti dalle istanze del writer. È spetta a uno sviluppatore di applicazioni specificare le classi writer. Vedere anche *istanza del writer*.
+I writer della stessa classe possono essere distinti dalle relative istanze del writer. Lo sviluppatore di applicazioni deve specificare le classi writer. Vedere anche istanza *del writer*.
 
 </dd> <dt>
 
-<span id="base.vssgloss_writer_instance"></span><span id="BASE.VSSGLOSS_WRITER_INSTANCE"></span>**istanza writer**
+<span id="base.vssgloss_writer_instance"></span><span id="BASE.VSSGLOSS_WRITER_INSTANCE"></span>**Istanza del writer**
 </dt> <dd>
 
-Identificatore univoco globale (GUID) fornito da VSS per ogni processo del writer eseguito in un sistema. Ogni volta che viene avviato il writer, viene generato un valore univoco per l'istanza del writer.
+Identificatore univoco globale (GUID) fornito da VSS per ogni processo di scrittura in esecuzione in un sistema. Un valore univoco per l'istanza del writer viene generato ogni volta che viene avviato il writer.
 
 </dd> <dt>
 
 <span id="base.vssgloss_writer_metadata_document"></span><span id="BASE.VSSGLOSS_WRITER_METADATA_DOCUMENT"></span>**Documento di metadati del writer**
 </dt> <dd>
 
-Documento XML creato da un writer (usando l'interfaccia **IVssCreateWriterMetadata** ) che contiene informazioni sullo stato e sui componenti del writer. Un richiedente può eseguire query sui documenti di metadati del writer (usando l'interfaccia **IVssExamineWriterMetadata** ) quando si esegue un'operazione di ripristino o di backup.
+Documento XML creato da un writer (usando **l'interfaccia IVssCreateWriterMetadata)** contenente informazioni sullo stato e sui componenti del writer. Un richiedente può eseguire query sui documenti dei metadati del writer **(usando l'interfaccia IVssExamineWriterMetadata)** quando esegue un'operazione di ripristino o backup.
 
-Un documento di metadati del writer contiene l'elenco di tutti i componenti di un writer, ciascuno dei quali può partecipare a un backup. Questo comportamento è diverso dal documento relativo ai componenti di backup del richiedente, che contiene solo i componenti inclusi in modo esplicito per un'operazione di backup o ripristino.
+Un documento di metadati del writer contiene l'elenco di tutti i componenti di un writer, uno dei quali potrebbe partecipare a un backup. Ciò differisce dal documento Componenti di backup del richiedente, che contiene solo i componenti inclusi in modo esplicito per un'operazione di backup o ripristino.
 
-Una volta creato, il documento di metadati del writer deve essere visualizzato come oggetto di sola lettura. Può essere salvato su disco. Vedere anche [*documento sui componenti di backup*](vssgloss-b.md), [*inclusione di componenti espliciti*](vssgloss-e.md), [*inclusione di componenti impliciti*](vssgloss-i.md).
+Dopo la costruzione, il documento di metadati del writer deve essere visualizzato come oggetto di sola lettura. Può essere salvato su disco. Vedere anche [*Documento dei componenti di backup*](vssgloss-b.md), inclusione esplicita dei [*componenti,*](vssgloss-e.md) [*inclusione implicita dei componenti*](vssgloss-i.md).
 
 </dd> </dl>
 

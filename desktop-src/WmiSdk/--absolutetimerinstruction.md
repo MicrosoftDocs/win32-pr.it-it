@@ -1,8 +1,8 @@
 ---
-description: Causa la generazione di un evento in una data specifica in un momento specifico.
+description: Determina la generazione di un evento in una data specifica a un'ora specifica.
 ms.assetid: bcb64c81-3b40-4665-a880-a100629656e0
 ms.tgt_platform: multiple
-title: Classe __AbsoluteTimerInstruction
+title: __AbsoluteTimerInstruction classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 5f4f55e635e42ec34e9b3558a0784d319e4d91ac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0797366a95931bec67805c9acd94e52fcab72669fe021efe6907e771a373db46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118821166"
 ---
 # <a name="__absolutetimerinstruction-class"></a>\_\_Classe AbsoluteTimerInstruction
 
-La classe di sistema **\_ \_ AbsoluteTimerInstruction** causa la generazione di un evento in una data specifica in un momento specifico. Un consumer di eventi registra per ricevere un evento timer assoluto creando un'istanza di questa classe. L'evento viene generato una sola volta.
+La **\_ \_ classe di sistema AbsoluteTimerInstruction** determina la generazione di un evento in una data specifica a un'ora specifica. Un consumer di eventi si registra per ricevere un evento timer assoluto creando un'istanza di questa classe. L'evento viene generato una volta.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,53 +43,53 @@ class __AbsoluteTimerInstruction : __TimerInstruction
 
 ## <a name="members"></a>Members
 
-La classe **\_ \_ AbsoluteTimerInstruction** dispone di questi tipi di membri:
+La **\_ \_ classe AbsoluteTimerInstruction** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **\_ \_ AbsoluteTimerInstruction** dispone di queste proprietà.
+La **\_ \_ classe AbsoluteTimerInstruction** ha queste proprietà.
 
 <dl> <dt>
 
 **EventDateTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Stringa a lunghezza fissa nel [formato DMTF](date-and-time-format.md) che specifica quando il timer viene attivato.
+Stringa a lunghezza fissa in [formato DMTF che](date-and-time-format.md) specifica quando viene generato il timer.
 
 </dd> <dt>
 
 **SkipIfPassed**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **true**, l'evento timer si verifica se WMI non è in grado di generarlo all'intervallo di tempo corretto oppure se il consumer che richiede la ricezione dell'evento non è disponibile. Se **true**, l'evento non si verificherà. Il valore predefinito è **false**. Quando WMI o il consumer diventano disponibili, viene generato e ricevuto un evento di notifica. Questa proprietà viene ereditata da [**\_ \_ TimerInstruction**](--timerinstruction.md).
+Se **TRUE,** l'evento timer si verifica se WMI non è in grado di generarlo all'intervallo di tempo corretto o se il consumer che richiede di ricevere l'evento non è disponibile. Se **TRUE,** l'evento non si verificherà. Il valore predefinito è **FALSE.** Quando WMI o il consumer diventa disponibile, viene generato e ricevuto un evento di notifica. Questa proprietà viene ereditata da [**\_ \_ TimerInstruction**](--timerinstruction.md).
 
 <dt>
 
 FALSE
 </dt> <dd>
 
-Quando WMI o il consumer diventano nuovamente disponibili, viene generato e ricevuto un evento di notifica.
+Quando WMI o il consumer diventa nuovamente disponibile, verrà generato e ricevuto un evento di notifica.
 
 </dd> <dt>
 
 true
 </dt> <dd>
 
-L'evento timer non si verifica se WMI non è disponibile per generarlo all'intervallo di tempo appropriato oppure se il consumer che richiede la ricezione dell'evento non è disponibile.
+L'evento timer non si verifica se WMI non è disponibile per generarlo all'intervallo di tempo appropriato o se il consumer che richiede di ricevere l'evento non è disponibile.
 
 </dd> </dl>
 
@@ -98,7 +98,7 @@ L'evento timer non si verifica se WMI non è disponibile per generarlo all'inter
 **TimerId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -107,15 +107,15 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](standard-qualifiers.md)
 </dt> </dl>
 
-Stringa univoca assegnata dall'utente che identifica un evento timer specifico. Per evitare conflitti di denominazione con altri identificatori del timer, è possibile utilizzare il formato stringa di un GUID di stile dell'ambiente del computer distribuito. Questa proprietà viene ereditata da [**\_ \_ TimerInstruction**](--timerinstruction.md).
+Stringa univoca assegnata dall'utente che identifica un evento timer specifico. Per evitare conflitti di denominazione con altri identificatori timer, è possibile usare la forma stringa di un GUID di tipo ambiente computer distribuito. Questa proprietà viene ereditata da [**\_ \_ TimerInstruction**](--timerinstruction.md).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **\_ \_ AbsoluteTimerInstruction** deriva da [**\_ \_ TimerInstruction**](--timerinstruction.md).
+La **\_ \_ classe AbsoluteTimerInstruction** è derivata da [**\_ \_ TimerInstruction**](--timerinstruction.md).
 
-WMI genera l'evento del timer assoluto creando un'istanza della classe [**\_ \_ TimerEvent**](--timerevent.md) .
+WMI genera l'evento timer assoluto creando un'istanza della [**\_ \_ classe TimerEvent.**](--timerevent.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -139,7 +139,7 @@ WMI genera l'evento del timer assoluto creando un'istanza della classe [**\_ \_ 
 [Classi di sistema WMI](wmi-system-classes.md)
 </dt> <dt>
 
-[Ricezione di eventi temporizzati o ripetuti](receiving-a-timed-or-repeating-event.md)
+[Ricezione di eventi temporati o ripetuti](receiving-a-timed-or-repeating-event.md)
 </dt> <dt>
 
 [Ricezione di eventi in qualsiasi momento](receiving-events-at-all-times.md)

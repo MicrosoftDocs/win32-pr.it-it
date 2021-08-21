@@ -1,7 +1,7 @@
 ---
-description: Il metodo init Inizializza l'oggetto.
+description: Il metodo Init inizializza l'oggetto .
 ms.assetid: a919adfa-0ffb-4241-b709-ad0e8d55476a
-title: Metodo CSeekingPassThru.Init (Seekpt. h)
+title: CSeekingPassThru.Init (Seekpt.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 78176a6966f379240b5b7edd1ef5b73d7fa75b3f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 91d20477f83ec79c6ae6095e81810c98454f9c26521eda995c919867b3e3ac12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953816"
 ---
-# <a name="cseekingpassthruinit-method"></a>Metodo CSeekingPassThru.Init
+# <a name="cseekingpassthruinit-method"></a>CSeekingPassThru.Init
 
-Il `Init` metodo inizializza l'oggetto.
+Il `Init` metodo inizializza l'oggetto .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,31 +43,31 @@ HRESULT Init(
 
 <dl> <dt>
 
-*bSupportRendering* \[ in\]
+*bSupportRendering* \[ Pollici\]
 </dt> <dd>
 
-Valore booleano che specifica se il filtro è un renderer. Usare il valore **true** se il filtro è un renderer oppure **false** in caso contrario.
+Valore booleano che specifica se il filtro è un renderer. Usare il valore **TRUE se** il filtro è un renderer oppure FALSE **in caso** contrario.
 
 </dd> <dt>
 
 *pPin* 
 </dt> <dd>
 
-Puntatore all'interfaccia [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin) sul pin di input del filtro.
+Puntatore [**all'interfaccia IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) sul pin di input del filtro.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                   | Descrizione                                        |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Esito positivo.<br/>                                |
-| <dl> <dt>**E \_ non riescono**</dt> </dl>        | Oggetto già inizializzato.<br/>         |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria insufficiente per creare l'oggetto.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata.<br/>                                |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>        | L'oggetto è già stato inizializzato.<br/>         |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per creare l'oggetto.<br/> |
 
 
 
@@ -75,7 +75,7 @@ Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-Se il valore di *bSupportRendering* è **true**, questo metodo crea un'istanza della classe [**CRendererPosPassThru**](crendererpospassthru.md) . In caso contrario, viene creata un'istanza della classe [**CPosPassThru**](cpospassthru.md) .
+Se il valore di *bSupportRendering* è **TRUE,** questo metodo crea un'istanza della [**classe CRendererPosPassThru.**](crendererpospassthru.md) In caso contrario, viene creata un'istanza [**della classe CPosPassThru.**](cpospassthru.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,8 +83,8 @@ Se il valore di *bSupportRendering* è **true**, questo metodo crea un'istanza d
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Seekpt. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Seekpt.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
