@@ -1,39 +1,39 @@
 ---
-title: Porting di sfere
-description: Quando si trasferiscono le sfere a OpenGL, tenere presenti i punti seguenti
+title: Portabilità di sphere
+description: Quando si esegue il porting di sphere in OpenGL, tenere presente quanto segue
 ms.assetid: ca6bb515-076d-45fc-bcdd-3d71877560fb
 keywords:
-- Porting di IRIS GL, sfere
-- porting da IRIS GL, sfere
-- porting in OpenGL da IRIS GL, sfere
-- Porting OpenGL da IRIS GL, sfere
-- funzioni di disegno, sfere
-- sfere
+- Portabilità IRIS GL, spheres
+- porting from IRIS GL,spheres
+- porting to OpenGL from IRIS GL,spheres
+- Portabilità OpenGL da IRIS GL, spheres
+- funzioni di disegno, sphere
+- Sfere
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f48ac31c0204111173d9eb2d31a3119873ef45b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: af1e0666393e923767d342d215622e0ed58bfa7b1b620e045a0054b31918a7a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118358310"
 ---
-# <a name="porting-spheres"></a>Porting di sfere
+# <a name="porting-spheres"></a>Portabilità di sphere
 
-Quando si trasferiscono le sfere a OpenGL, tenere presente quanto segue:
+Quando si esegue il porting di sphere in OpenGL, tenere presente quanto segue:
 
--   Non è possibile controllare il tipo di primitive usato per creare la sfera. È possibile controllare la precisione del disegno in un altro modo: usare i parametri slices e stacks. Le sezioni sono longitudinali; gli stack sono latitudinali.
--   Le sfere vengono disegnate al centro dell'origine. Anziché specificare il percorso, come avviene con la funzione **sphdraw** di Iris GL, prima di una chiamata alla funzione Glu [**gluSphere**](glusphere.md) con una traduzione.
--   La libreria Sphere non è ancora disponibile per OpenGL.
+-   Non è possibile controllare il tipo di primitive usate per disegnare la sfera. È possibile controllare la precisione del disegno in un altro modo: usare i parametri slices e stacks. Le sezioni sono longitudinali; Gli stack sono di tipo latitudiale.
+-   Le sphere vengono disegnate al centro dell'origine. Invece di specificare la posizione, come si fa con la funzione **Sphdraw** IRIS GL, precedere una chiamata alla funzione GLU [**gluSphere**](glusphere.md) con una traslazione.
+-   La libreria sphere non è ancora disponibile per OpenGL.
 
-La tabella seguente elenca le funzioni di IRIS GL per la creazione di sfere e le relative funzioni GLU equivalenti, ove disponibili.
+La tabella seguente elenca le funzioni IRIS GL per disegnare le sphere e le funzioni GLU equivalenti, se disponibili.
 
 
 
-| Funzione IRIS GL | GLU (funzione)                                 | Significato                                       |
+| Funzione GL IRIS | Funzione GLU                                 | Significato                                       |
 |------------------|----------------------------------------------|-----------------------------------------------|
-| **sphobj**       | [**gluNewQuadric**](glunewquadric.md)       | Crea un nuovo oggetto Sphere.                  |
-| **sphfree**      | [**gluDeleteQuadric**](gludeletequadric.md) | Elimina l'oggetto Sphere e la memoria libera utilizzata.   |
+| **sphobj**       | [**gluNewQuadric**](glunewquadric.md)       | Crea un nuovo oggetto sphere.                  |
+| **sphfree**      | [**gluDeleteQuadric**](gludeletequadric.md) | Elimina l'oggetto sphere e la memoria libera usata.   |
 | **sphdraw**      | [**gluSphere**](glusphere.md)               | Disegna una sfera.                               |
 | **sphmode**      |                                              | Imposta gli attributi della sfera.                       |
 | **sphrotmatrix** |                                              | Controlla l'orientamento della sfera.                  |
@@ -41,13 +41,13 @@ La tabella seguente elenca le funzioni di IRIS GL per la creazione di sfere e le
 
 
 
- 
+ 
 
 ??
 
- 
+ 
 
- 
+ 
 
 
 

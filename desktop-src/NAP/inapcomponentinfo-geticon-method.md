@@ -1,11 +1,11 @@
 ---
-title: Metodo GetIcon INapComponentInfo (NapCommon. h)
-description: Viene utilizzato dal sistema NAP per ottenere l'icona di un client di integrità.
+title: Metodo INapComponentInfo GetIcon (NapCommon.h)
+description: Viene utilizzato dal sistema di Protezione accesso alla rete per ottenere l'icona di un client di integrità.
 ms.assetid: 6501fe12-1ec0-43a1-b672-b6cfd9a08d85
 keywords:
-- Metodo GetIcon (NAP)
-- Metodo GetIcon, NAP, interfaccia INapComponentInfo
-- Interfaccia INapComponentInfo NAP, Metodo GetIcon
+- Metodo GetIcon NAP
+- Metodo GetIcon NAP, interfaccia INapComponentInfo
+- Interfaccia INapComponentInfo NAP, metodo GetIcon
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 795ad85f8497262f88fa55d8efb2da7466b8c3a9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1711c186d107418d95ccaf19e2a1440b0cecfc0e32fc8c425754d2d9fc19a9d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964835"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134435"
 ---
-# <a name="inapcomponentinfogeticon-method"></a>Metodo INapComponentInfo:: GetIcon
+# <a name="inapcomponentinfogeticon-method"></a>Metodo INapComponentInfo::GetIcon
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo di callback **INapComponentInfo:: GetIcon** viene utilizzato dal sistema NAP per ottenere l'icona di un client di integrità.
+Il metodo di callback **INapComponentInfo::GetIcon** viene usato dal sistema nap per ottenere l'icona di un client di integrità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,14 +48,14 @@ HRESULT GetIcon(
 
 <dl> <dt>
 
-*dllFilePath* \[ out\]
+*dllFilePath* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un puntatore a un [**CountedString**](/windows/win32/api/naptypes/ns-naptypes-countedstring) utilizzato per restituire il percorso del file dll che contiene l'icona.
+Puntatore a un puntatore a [**un oggetto CountedString utilizzato**](/windows/win32/api/naptypes/ns-naptypes-countedstring) per restituire il percorso del file della DLL che contiene l'icona.
 
 </dd> <dt>
 
-*iconResourceId* \[ out\]
+*iconResourceId* \[ Cambio\]
 </dt> <dd>
 
 Puntatore al valore usato per restituire l'ID risorsa dell'icona da usare.
@@ -71,7 +71,7 @@ Restituisce uno di questi codici di errore in base al risultato di questa operaz
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | L'operazione è riuscita.<br/>                            |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Errore delle autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazione, accesso negato.<br/>                       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
 
 
@@ -88,10 +88,10 @@ Le icone devono essere localizzate in base all'ID lingua del thread chiamante.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>NapCommon.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapCommon.idl</dt> </dl> |
 
 
 

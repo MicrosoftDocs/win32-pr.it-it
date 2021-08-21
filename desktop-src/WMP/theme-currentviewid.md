@@ -1,9 +1,9 @@
 ---
-title: THEME. currentViewID
-description: L'attributo currentViewID specifica o recupera la visualizzazione attualmente visualizzata.
+title: THEME.currentViewID
+description: L'attributo currentViewID specifica o recupera l'elemento VIEW attualmente visualizzato.
 ms.assetid: 94f23da9-cfda-4dc4-9804-b7daff5ebb8f
 keywords:
-- THEME. currentViewID Windows Media Player
+- THEME.currentViewID Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c0c1b52ffdc35abf846987ed459565904938d4e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 21bf3027b0249286689862e53fc2d616d1d33b19eca562c886e981bffb7f0267
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118117812"
 ---
-# <a name="themecurrentviewid"></a>THEME. currentViewID
+# <a name="themecurrentviewid"></a>THEME.currentViewID
 
-L'attributo **currentViewID** specifica o recupera la **visualizzazione** attualmente visualizzata.
+**L'attributo currentViewID** specifica o recupera l'oggetto **VIEW attualmente visualizzato.**
 
 ``` syntax
 theme.currentViewID
@@ -29,11 +29,11 @@ theme.currentViewID
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura che specifica l' **ID** della **visualizzazione** corrente. e non prevede alcun valore predefinito.
+Questo attributo è una stringa di **lettura/scrittura** che specifica **l'ID** dell'oggetto **VIEW corrente.** e non prevede alcun valore predefinito.
 
 ## <a name="remarks"></a>Commenti
 
-Se si specifica **currentViewID** , il **currentView** esistente (a cui fa riferimento l'attributo **View** Global) viene chiuso automaticamente e viene aperta la **visualizzazione** specificata.
+Se si specifica **currentViewID,** l'oggetto **currentView esistente** (a cui punta l'attributo **globale della** visualizzazione) viene chiuso automaticamente e viene aperto l'oggetto **VIEW specificato.**
 
 ## <a name="examples"></a>Esempio
 
@@ -62,7 +62,7 @@ Se si specifica **currentViewID** , il **currentView** esistente (a cui fa rifer
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

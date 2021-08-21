@@ -1,7 +1,7 @@
 ---
 description: Rappresenta i dati dell'impostazione della funzionalità di offload delle porte.
 ms.assetid: 7b8d8bee-86f3-4c55-bb32-987bf840d995
-title: Classe Msvm_EthernetSwitchPortOffloadSettingData
+title: Msvm_EthernetSwitchPortOffloadSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -33,18 +33,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 150a7b5e54e371c11741dd7c763b0ae145354b09
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ddf58a10e85003a00e0d757f29db55a49f98f0ba22e8c3124b83a593f2a3908f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106320021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118148300"
 ---
-# <a name="msvm_ethernetswitchportoffloadsettingdata-class"></a>\_Classe MSVM EthernetSwitchPortOffloadSettingData
+# <a name="msvm_ethernetswitchportoffloadsettingdata-class"></a>Classe Msvm \_ EthernetSwitchPortOffloadSettingData
 
 Rappresenta i dati dell'impostazione della funzionalità di offload delle porte.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -77,90 +77,90 @@ class Msvm_EthernetSwitchPortOffloadSettingData : Msvm_EthernetSwitchPortFeature
 
 ## <a name="members"></a>Members
 
-La **classe \_ EthernetSwitchPortOffloadSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ EthernetSwitchPortOffloadSettingData** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ EthernetSwitchPortOffloadSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ EthernetSwitchPortOffloadSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ Managed**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Ethernet Switch Port offload Settings".
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Ethernet Switch Port Offload Impostazioni".
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ Managed**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "rappresenta i dati dell'impostazione della funzionalità di offload della porta".
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Rappresenta i dati delle impostazioni della funzionalità di offload delle porte".
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ Managed**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Ethernet Switch Port offload Settings".
+Nome visualizzato per l'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Ethernet Switch Port Offload Impostazioni".
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **IOVInterruptModeration**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Valore di moderazione interrupt per l'offload di I/O Virtualization (IOV). Il valore predefinito è 0.
+Valore di moderazione interrupt per l'offload I/O Virtualization (IOV). Il valore predefinito è 0.
 
 <dt>
 
 <span id="Default"></span><span id="default"></span><span id="DEFAULT"></span>
 
-**Valore predefinito** (0)
+**Impostazione** predefinita (0)
 
 
 </dt> <dd></dd> <dt>
@@ -195,7 +195,7 @@ Valore di moderazione interrupt per l'offload di I/O Virtualization (IOV). Il va
 
 <span id="High"></span><span id="high"></span><span id="HIGH"></span>
 
-**Alto** (300)
+**Alta** (300)
 
 
 </dt> <dd></dd> </dl>
@@ -205,42 +205,42 @@ Valore di moderazione interrupt per l'offload di I/O Virtualization (IOV). Il va
 **IOVOffloadWeight**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Peso assegnato a questa porta per l'offload di I/O Virtualization (IOV). Il peso è l'importanza relativa durante l'assegnazione delle risorse IOV. L'impostazione della proprietà **IOVOffloadWeight** su 0 Disabilita l'offload IOV sulla porta. Il valore predefinito è 0.
+Peso assegnato a questa porta per l'offload I/O Virtualization (IOV). Il peso è l'importanza relativa durante l'assegnazione delle risorse IOV. **L'impostazione della proprietà IOVOffloadWeight** su 0 disabilita l'offload IOV sulla porta. Il valore predefinito è 0.
 
 </dd> <dt>
 
 **IOVQueuePairsRequested**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Numero di coppie di code richieste per questa porta per l'offload di I/O Virtualization (IOV). Il valore predefinito è 1.
+Numero di coppie di code richieste per questa porta per l'offload I/O Virtualization (IOV). Il valore predefinito è 1.
 
 </dd> <dt>
 
 **IPSecOffloadLimit**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -253,16 +253,16 @@ Numero massimo di slot di offload dell'associazione di sicurezza consentiti dall
 **PacketDirectModerationCount**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (7), **InterfaceVersion** (2), **InterfaceRevision** (0)
 </dt> </dl>
 
-Valore del conteggio di moderazione interrupt per Packet Direct (PD). Il valore predefinito è 0.
+Valore del conteggio della moderazione di interrupt per Packet Direct (PD). Il valore predefinito è 0.
 
 > [!Note]  
 > Proprietà aggiunta in Windows 10.
@@ -274,16 +274,16 @@ Valore del conteggio di moderazione interrupt per Packet Direct (PD). Il valore 
 **PacketDirectModerationInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (8), **InterfaceVersion** (2), **InterfaceRevision** (0)
 </dt> </dl>
 
-Valore dell'intervallo di moderazione dell'interrupt per il pacchetto diretto (PD). Il valore predefinito è 0.
+Valore dell'intervallo di moderazione di interrupt per Packet Direct (PD). Il valore predefinito è 0.
 
 > [!Note]  
 > Proprietà aggiunta in Windows 10.
@@ -295,16 +295,16 @@ Valore dell'intervallo di moderazione dell'interrupt per il pacchetto diretto (P
 **PacketDirectNumProcs**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (6), **InterfaceVersion** (2), **InterfaceRevision** (0)
 </dt> </dl>
 
-Il numero di processori utilizzati dall'host per l'elaborazione dei pacchetti inviati da questa porta in modalità pacchetto diretto. Il valore predefinito è 1.
+Numero di processori utilizzati dall'host per l'elaborazione dei pacchetti inviati da questa porta in modalità diretta pacchetti. Il valore predefinito è 1.
 
 > [!Note]  
 > Proprietà aggiunta in Windows 10.
@@ -316,16 +316,16 @@ Il numero di processori utilizzati dall'host per l'elaborazione dei pacchetti in
 **VmmqEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (10), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-Abilitare l'offload VMMQ se supportato dall'hardware. Il valore predefinito è false.
+Abilitare l'offload VMMQ se supportato dall'hardware. Il valore predefinito è False.
 
 > [!Note]  
 > Questa proprietà è stata aggiunta in Windows 10, versione 1703 e Windows Server 2016.
@@ -337,10 +337,10 @@ Abilitare l'offload VMMQ se supportato dall'hardware. Il valore predefinito è f
 **VmmqQueuePairs**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (11), **InterfaceVersion** (3), **InterfaceRevision** (0)
@@ -358,26 +358,26 @@ Numero di code da allocare quando VRSS è abilitato. Il valore predefinito è 16
 **VMQOffloadWeight**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Il peso assegnato a questa porta per l'offload della coda della macchina virtuale (VMQ). Il peso è l'importanza relativa durante l'assegnazione delle risorse VMQ. L'impostazione della proprietà **VMQOffloadWeight** su 0 Disabilita VMQ sulla porta. Il valore predefinito è 100.
+Peso assegnato a questa porta per l'offload della coda di macchine virtuali. Il peso è l'importanza relativa durante l'assegnazione delle risorse vmq. **L'impostazione della proprietà VMQOffloadWeight** su 0 disabilita VMQ sulla porta. Il valore predefinito è 100.
 
 </dd> <dt>
 
 **VrssEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (9), **InterfaceVersion** (3), **InterfaceRevision** (0)
@@ -395,16 +395,16 @@ Abilitare VRSS. Il valore predefinito è true.
 **VrssExcludePrimaryProcessor**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (14), **InterfaceVersion** (4), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica se escludere il processore VMQ primario dalla tabella di riferimento indiretto VRSS quando è abilitato VRSS. Il valore predefinito è false.
+Se escludere il processore VMQ primario dalla tabella di riferimento indiretto VRSS quando VRSS è abilitato. Il valore predefinito è false.
 
 > [!Note]  
 > Aggiunta in Windows 10, versione 1709.
@@ -416,16 +416,16 @@ Indica se escludere il processore VMQ primario dalla tabella di riferimento indi
 **VrssIndependentHostSpreading**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (15), **InterfaceVersion** (4), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica se eseguire sempre VRSS sul lato host quando VRSS è abilitato, indipendentemente dall'impostazione RSS della scheda di interfaccia di rete virtuale. Il valore predefinito è false.
+Indica se eseguire sempre vrSS sul lato host quando è abilitato VRSS, indipendentemente dall'impostazione RSS della scheda di interfaccia di rete virtuale. Il valore predefinito è false.
 
 > [!Note]  
 > Aggiunta in Windows 10, versione 1709.
@@ -437,10 +437,10 @@ Indica se eseguire sempre VRSS sul lato host quando VRSS è abilitato, indipende
 **VrssMinQueuePairs**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (12), **InterfaceVersion** (4), **InterfaceRevision** (0)
@@ -458,16 +458,16 @@ Numero minimo di code da allocare quando VRSS è abilitato. Il valore predefinit
 **VrssQueueSchedulingMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (13), **InterfaceVersion** (4), **InterfaceRevision** (0)
 </dt> </dl>
 
-Modalità di pianificazione della coda da usare quando VRSS è abilitato. Il valore predefinito è la pianificazione statica.
+Modalità di pianificazione delle code da usare quando vrSS è abilitato. Il valore predefinito è la pianificazione statica.
 
 > [!Note]  
 > Aggiunta in Windows 10, versione 1709.
@@ -479,16 +479,16 @@ Modalità di pianificazione della coda da usare quando VRSS è abilitato. Il val
 **VrssVmbusChannelAffinityPolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (16), **InterfaceVersion** (4), **InterfaceRevision** (0)
 </dt> </dl>
 
-Criteri di affinità del canale VMBus da usare quando VRSS è abilitato. Il valore predefinito è Strong.
+Criteri di affinità del canale vmbus da usare quando VRSS è abilitato. Il valore predefinito è strong.
 
 > [!Note]  
 > Aggiunta in Windows 10, versione 1709.
@@ -503,10 +503,10 @@ Criteri di affinità del canale VMBus da usare quando VRSS è abilitato. Il valo
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

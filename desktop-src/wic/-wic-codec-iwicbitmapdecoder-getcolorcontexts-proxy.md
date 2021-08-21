@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: e550ca4ebd863e58a4bd285c48a2a01aad059b03
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9ffa6aa19cc16e67f19a764034376939c401d4d6cce32e7dafd02afe5c33aed2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118034140"
 ---
 # <a name="iwicbitmapdecoder_getcolorcontexts_proxy-function"></a>Funzione proxy IWICBitmapDecoder \_ GetColorContexts \_
 
@@ -59,7 +59,7 @@ Tipo: **UINT**
 
 Numero di contesti di colore da recuperare.
 
-Questo valore deve essere la dimensione di , o minore di, la dimensione disponibile per *ppIColorContexts*.
+Questo valore deve essere delle dimensioni di o inferiori alle dimensioni disponibili per *ppIColorContexts*.
 
 </dd> <dt>
 
@@ -95,8 +95,8 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, solo app desktop di Windows Vista \[\]<br/>                                                                                              |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                                                                                             |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop di Vista\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                                                                             |
 | DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 

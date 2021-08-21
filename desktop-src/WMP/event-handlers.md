@@ -4,9 +4,9 @@ description: Gestori di eventi
 ms.assetid: abb5f123-b838-46fb-ab11-cee70cc76a38
 keywords:
 - Windows Media Player, gestori eventi in JScript
-- skins,event handlers in JScript
+- skins,gestori eventi in JScript
 - eventi, JScript
-- JScript file per le interfaccia, i gestori eventi
+- JScript file per le skin, i gestori eventi
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 94c936e36cd9b7404260473068ccc3d6c3f5d0ab75553ba878dff88587e535ad
@@ -18,9 +18,9 @@ ms.locfileid: "118339272"
 ---
 # <a name="event-handlers"></a>Gestori di eventi
 
-Microsoft JScript viene usato per elaborare gli eventi nel file di definizione dell'interfaccia. Per [altre informazioni sui gestori eventi,](handling-events.md) vedere Gestione degli eventi.
+Microsoft JScript viene usato per elaborare gli eventi nel file di definizione dell'interfaccia. Per [altre informazioni sui gestori eventi,](handling-events.md) vedere Gestione di eventi.
 
-È possibile avere più di una riga di codice in un gestore eventi, ma è necessario fare attenzione a non superare la lunghezza di riga consentita JScript riga. Separare le righe con punti e virgola.
+È possibile avere più righe di codice in un gestore eventi, ma è necessario fare attenzione a non superare la lunghezza della riga consentita JScript consentita. Separare le righe con punto e virgola.
 
 
 ```C++

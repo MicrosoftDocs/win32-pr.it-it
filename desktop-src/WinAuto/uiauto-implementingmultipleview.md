@@ -38,7 +38,7 @@ In questo argomento sono contenute le sezioni seguenti.
 
 Quando si implementa il pattern **di controllo MultipleView,** tenere presenti le linee guida e le convenzioni seguenti:
 
--   [**IMultipleViewProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-imultipleviewprovider) deve essere implementato anche in un contenitore che gestisce la visualizzazione corrente se è diversa da un controllo che fornisce la visualizzazione corrente. Ad esempio, Windows Explorer contiene un controllo elenco per il contenuto della cartella corrente mentre la visualizzazione per il controllo viene gestita dall'applicazione Windows Explorer.
+-   [**IMultipleViewProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-imultipleviewprovider) deve essere implementato anche in un contenitore che gestisce la visualizzazione corrente se è diversa da un controllo che fornisce la visualizzazione corrente. Ad esempio, Windows Explorer contiene un controllo elenco per il contenuto della cartella corrente, mentre la visualizzazione per il controllo viene gestita dall'applicazione Windows Explorer.
 -   Un controllo in grado di ordinare il relativo contenuto non supporta più visualizzazioni.
 -   La raccolta di visualizzazioni deve essere identica tra istanze.
 -   I nomi delle view devono essere adatti per l'uso in sintesi vocale, Braille e altre applicazioni leggibili dall'utente.

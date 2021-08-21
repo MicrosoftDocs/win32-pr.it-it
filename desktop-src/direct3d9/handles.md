@@ -1,39 +1,39 @@
 ---
-description: Gli handle forniscono un mezzo efficace per fare riferimento a tecniche, passaggi, annotazioni e parametri con ID3DXEffectCompiler o ID3DXEffect.
+description: Gli handle forniscono un mezzo efficiente per fare riferimento a tecniche, passaggi, annotazioni e parametri con ID3DXEffectCompiler o ID3DXEffect.
 ms.assetid: 2494ecf9-88a7-43dc-a75b-ed743b11993a
 title: Handle (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d9e0dbbcbbc38685cae7c89b334bfb5458bc8386
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c3601696dc0849903d98fb3f2308b6229c6307a03665605741fc630c4e1256e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104521426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118094708"
 ---
 # <a name="handles-direct3d-9"></a>Handle (Direct3D 9)
 
-Gli handle forniscono un mezzo efficace per fare riferimento a tecniche, passaggi, annotazioni e parametri con [**ID3DXEffectCompiler**](id3dxeffectcompiler.md) o [**ID3DXEffect**](id3dxeffect.md). Vengono generate in modo dinamico quando si chiamano funzioni del form Get \[ Parameter \| annotation \| Function \| Technique \| pass \] \[ ByName \| BySemantic \| elemento \] .
+Gli handle forniscono un mezzo efficiente per fare riferimento a tecniche, passaggi, annotazioni e parametri [**con ID3DXEffectCompiler**](id3dxeffectcompiler.md) [**o ID3DXEffect**](id3dxeffect.md). Vengono generati dinamicamente quando si chiamano funzioni nel formato Get \[ Parameter Annotation Function Technique Pass \| \| \| \| \] \[ ByName \| BySemantic \| Element \] .
 
-Durante l'esecuzione di un programma, la generazione di un handle per lo stesso oggetto più volte restituirà lo stesso handle ogni volta. Tuttavia, non fare affidamento sull'handle che rimane costante quando si esegue più volte il programma. Tenere inoltre presente che gli handle generati da diverse istanze di [**ID3DXEffect**](id3dxeffect.md) e [**ID3DXEffectCompiler**](id3dxeffectcompiler.md) saranno diversi.
+Durante l'esecuzione di un programma, la generazione di un handle per lo stesso oggetto più volte restituirà lo stesso handle ogni volta. Tuttavia, non affidarsi all'handle rimanendo costante quando si esegue il programma più volte. Tenere inoltre presente che gli handle generati da istanze diverse di [**ID3DXEffect**](id3dxeffect.md) e [**ID3DXEffectCompiler**](id3dxeffectcompiler.md) saranno diversi.
 
 Se si visualizzano i file di intestazione, si noterà che gli handle (D3DXHANDLEs) sono tecnicamente puntatori di stringa.
 
-Gli handle passati in funzioni come l'elemento GetParameter \[ ByName \| \| BySemantic \] o GetAnnotation \[ ByName \] possono essere in tre forme, come indicato di seguito:
+Gli handle passati in funzioni come GetParameter \[ ByName \| Element \| BySemantic o \] GetAnnotation \[ ByName possono essere in tre \] formati:
 
-1.  Handle restituiti da funzioni come l'elemento GetParameter \[ ByName \| \| BySemantic \] .
-2.  Stringhe quali, ad esempio, datavariablename, datatechniquename o ArrayList \[ 0 \] .
-3.  Handle = **null**. Sono disponibili quattro casi.
+1.  Handle restituiti da funzioni come GetParameter \[ ByName \| Element \| BySemantic. \]
+2.  Stringhe come MyVariableName, MyTechniqueName o MyArray \[ \] 0.
+3.  Handle = **NULL.** Esistono quattro casi.
     -   Se si tratta di un valore restituito dal metodo, il metodo non è riuscito a trovare l'handle.
-    -   Se un handle **null** viene passato come primo parametro dell'elemento GetParameter \[ ByName \| \| BySemantic \] , la funzione restituisce un parametro di primo livello. Viceversa, se l'handle è diverso da **null**, la funzione restituisce un membro della struttura o un elemento identificato dall'handle.
-    -   Se un handle **null** viene passato come primo argomento di ValidateTechnique o il secondo argomento di IsParameterUsed, viene convalidata la tecnica corrente.
-    -   Se un handle **null** viene passato come primo argomento di FindNextValidTechnique, la ricerca di una tecnica valida inizia in corrispondenza della prima tecnica nell'effetto.
+    -   Se un handle **NULL** viene passato come primo parametro dell'elemento \[ GetParameter ByName \| \| BySemantic, la funzione \] restituisce un parametro di primo livello. Al contrario, se l'handle non è **NULL,** la funzione restituisce un membro della struttura o un elemento identificato dall'handle.
+    -   Se un handle **NULL** viene passato come primo argomento di ValidateTechnique o nel secondo argomento di IsParameterUsed, viene convalidata la tecnica corrente.
+    -   Se viene passato un handle **NULL** come primo argomento di FindNextValidTechnique, la ricerca di una tecnica valida inizia dalla prima tecnica dell'effetto.
 
-Suggerimento per le prestazioni all'avvio dell'applicazione, eseguire un passaggio di inizializzazione per generare handle dalle stringhe. Da questo punto in poi, usare solo gli handle. Il passaggio delle stringhe anziché degli handle generati è più lento.
+Suggerimento sulle prestazioni All'avvio dell'applicazione, eseguire un passaggio di inizializzazione per generare handle dalle stringhe. Da quel momento in avanti, usare solo handle. Il passaggio di stringhe anziché di handle generati è più lento.
 
 ## <a name="examples"></a>Esempio
 
-Di seguito sono riportati alcuni esempi che usano le \[ funzioni dell'elemento Get Parameter \| annotation \| \| Technique \| pass \] \[ ByName \| BySemantic \| \] per generare handle.
+Ecco alcuni esempi che usano le funzioni Pass \[ \| \| \| \| \] \[ ByName \| BySemantic \| Element \] della funzione Get Parameter Annotation per generare handle.
 
 
 ```

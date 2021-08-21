@@ -1,5 +1,5 @@
 ---
-title: Costanti (Manipulation. h)
+title: Costanti (Manipulations.h)
 description: Descrive le costanti correlate all'interfaccia IManipulationProcessor.
 ms.assetid: 3b039727-0870-4918-9e97-d10b2ff55045
 topic_type:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a686ae35f5b57a977ec77196dd3cf77bed48ef1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2070615cbd40708c6cf818bf8f7b5324d55454491cd4afd469780de7976f1713
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118199479"
 ---
-# <a name="constants-manipulationsh"></a>Costanti (Manipulation. h)
+# <a name="constants-manipulationsh"></a>Costanti (Manipulations.h)
 
-Descrive le costanti correlate all'interfaccia [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) .
+Descrive le costanti correlate [**all'interfaccia IManipulationProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor)
 
 <dl> <dt>
 
-<span id="POSITIVE_INFINITY"></span><span id="positive_infinity"></span>**\_infinito positivo**
+<span id="POSITIVE_INFINITY"></span><span id="positive_infinity"></span>**INFINITO \_ POSITIVO**
 </dt> <dd> <dl> <dt>
 
 
@@ -35,12 +35,12 @@ Descrive le costanti correlate all'interfaccia [**IManipulationProcessor**](/win
 
 
 
-Indica il valore massimo positivo per le modifiche.
+Indica il valore positivo massimo per le modifiche.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NEGATIVE_INFINITY"></span><span id="negative_infinity"></span>**\_infinito negativo**
+<span id="NEGATIVE_INFINITY"></span><span id="negative_infinity"></span>**INFINITO \_ NEGATIVO**
 </dt> <dd> <dl> <dt>
 
 
@@ -53,7 +53,7 @@ Indica il valore negativo massimo per le modifiche.
 
 </dt> </dl> </dd> <dt>
 
-<span id="NaN"></span><span id="nan"></span><span id="NAN"></span>**NaN**
+<span id="NaN"></span><span id="nan"></span><span id="NAN"></span>**Nan**
 </dt> <dd> <dl> <dt>
 
 
@@ -72,10 +72,10 @@ Indica il valore per le modifiche in cui il valore restituito non è un numero.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                   |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                      |
-| Intestazione<br/>                   | <dl> <dt>Manipulation. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Manipulation. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                   |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                      |
+| Intestazione<br/>                   | <dl> <dt>Manipulations.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Manipulations.idl</dt> </dl> |
 
 
 

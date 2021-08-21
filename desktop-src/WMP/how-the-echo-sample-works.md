@@ -27,7 +27,7 @@ Il tempo di ritardo è espresso in millisecondi. La frequenza di campionamento e
 
 Oltre alla variabile puntatore che punta all'inizio del buffer di ritardo, il codice crea un puntatore mobile che scorre i dati nel buffer in sincronizzazione con il ciclo di elaborazione nella funzione **DoProcessOutput.** Quando il puntatore mobile raggiunge la fine del buffer di ritardo, torna alla parte superiore del buffer. Un buffer usato in questo modo è detto buffer circolare.
 
-Una volta che il buffer di ritardo esiste e Windows Media Player ha allocato un buffer di input per fornire dati audio e un buffer di output per ricevere i dati audio elaborati, l'elaborazione echo procede nel modo seguente:
+Una volta che il buffer di ritardo esiste e Windows Media Player ha allocato un buffer di input per fornire dati audio e un buffer di output per ricevere i dati audio elaborati, l'elaborazione echo procede come questa:
 
 1.  Immettere un ciclo che consenta l'elaborazione di ogni campione audio nel buffer di input.
 2.  Recuperare un esempio dal buffer di input. Spostare quindi il puntatore del buffer di input in avanti all'esempio successivo per preparare l'iterazione del ciclo successiva.

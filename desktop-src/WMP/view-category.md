@@ -1,9 +1,9 @@
 ---
-title: Visualizza. Category
-description: L'attributo Category specifica o recupera la categoria per la quale è prevista la visualizzazione.
+title: VIEW.category
+description: L'attributo category specifica o recupera la categoria a cui è destinato l'elemento VIEW.
 ms.assetid: ab724647-8898-4bbf-82a3-b5852faed858
 keywords:
-- Visualizza. Category Media Player Windows
+- View.category Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7623c321cbf2ff37724bbd99d24a4d94c1856dc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a483bf8e7ded89e10b46926fee82442becdb73f0a43e879310f55c915ce18b10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327045"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116776"
 ---
-# <a name="viewcategory"></a>Visualizza. Category
+# <a name="viewcategory"></a>VIEW.category
 
-L'attributo **Category** specifica o recupera la categoria per la quale è prevista la **visualizzazione** .
+**L'attributo** category specifica o recupera la categoria a cui è **destinato l'elemento VIEW.**
 
 ``` syntax
         elementID.category
@@ -29,18 +29,18 @@ L'attributo **Category** specifica o recupera la categoria per la quale è previ
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura contenente uno dei valori seguenti.
+Questo attributo è una stringa di **lettura/scrittura** contenente uno dei valori seguenti.
 
 
 
 | Valore | Descrizione                           |
 |-------|---------------------------------------|
-| Tutti   | Valore predefinito. Tema per tutti i tipi di supporto |
+| Tutti   | Valore predefinito. Tema per tutti i tipi di file multimediali |
 | Pulsante di opzione | Interfaccia utente per la riproduzione radio             |
 | CD    | Interfaccia utente per la riproduzione di CD                |
-| DVD   | Interfaccia utente per la riproduzione DVD               |
+| DVD   | Interfaccia utente per la riproduzione di DVD               |
 | Musica | Interfaccia utente per MP3, WAV, MIDI, WMA        |
-| Video | Interfaccia utente per la riproduzione video             |
+| Video | Interfaccia utente per la riproduzione di video             |
 
 
 
@@ -52,7 +52,7 @@ Questo attributo è una **stringa** di lettura/scrittura contenente uno dei valo
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

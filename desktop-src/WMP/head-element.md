@@ -1,6 +1,6 @@
 ---
 title: Elemento head
-description: L'elemento head contiene i metadati che si applicano all'intera playlist.
+description: L'elemento head contiene metadati che si applicano all'intera playlist.
 ms.assetid: 9554c84a-34af-4492-964a-4b262cd7c4a4
 keywords:
 - Elemento head Windows Media Player
@@ -22,7 +22,7 @@ ms.locfileid: "118339171"
 ---
 # <a name="head-element"></a>Elemento head
 
-**L'elemento** head contiene i metadati che si applicano all'intera playlist.
+**L'elemento head** contiene metadati che si applicano all'intera playlist.
 
 ``` syntax
 <head>
@@ -48,7 +48,7 @@ Questo elemento non ha attributi.
 
 ## <a name="remarks"></a>Commenti
 
-In genere **l'elemento** head contiene **un elemento titolo** e uno o più **meta** elementi che definiscono le caratteristiche globali della playlist.
+In genere **l'elemento head** contiene un **elemento title** e uno o più **meta** elementi che definiscono le caratteristiche globali della playlist.
 
 ## <a name="examples"></a>Esempio
 
@@ -72,7 +72,7 @@ In genere **l'elemento** head contiene **un elemento titolo** e uno o più **met
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------|
-| Versione<br/> | Windows Media Player serie 9 o successiva.<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive.<br/> |
 
 
 

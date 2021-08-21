@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2efffdbcc34577f675556874c4153eea2670768c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b67b749e1ffa24c26a088b0819f1af11763e671625d3668dd20197122edba32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118149666"
 ---
-# <a name="modifypoolresources-method-of-the-msvm_resourcepoolconfigurationservice-class"></a>Metodo ModifyPoolResources della classe MSVM \_ ResourcePoolConfigurationService
+# <a name="modifypoolresources-method-of-the-msvm_resourcepoolconfigurationservice-class"></a>Metodo ModifyPoolResources della classe \_ Msvm ResourcePoolConfigurationService
 
 Modifica le impostazioni delle risorse del pool padre per le risorse assegnate a un pool figlio.
 
@@ -42,28 +42,28 @@ uint32 ModifyPoolResources(
 
 <dl> <dt>
 
-*ChildPool* \[ in\]
+*ChildPool* \[ Pollici\]
 </dt> <dd>
 
-Riferimento a un'istanza della classe [**CIM \_ ResourcePool**](cim-resourcepool.md) che rappresenta il pool figlio da modificare.
+Riferimento a un'istanza della [**classe \_ CiM ResourcePool**](cim-resourcepool.md) che rappresenta il pool figlio da modificare.
 
 </dd> <dt>
 
-*ParentPools* \[ in\]
+*Pool padre* \[ Pollici\]
 </dt> <dd>
 
 Matrice di riferimenti [**CIM \_ ResourcePool**](cim-resourcepool.md) che rappresentano i nuovi pool padre da assegnare al pool figlio.
 
 </dd> <dt>
 
-*AllocationSettings* \[ in\]
+*AllocationSettings* \[ Pollici\]
 </dt> <dd>
 
-Matrice facoltativa di una o più istanze incorporate della classe [**MSVM \_ ResourceAllocationSettingData**](msvm-resourceallocationsettingdata.md) utilizzate per specificare le impostazioni relative all'allocazione del pool.
+Matrice facoltativa di una o più istanze incorporate della [**classe Msvm \_ ResourceAllocationSettingData**](msvm-resourceallocationsettingdata.md) usate per specificare le impostazioni correlate all'allocazione del pool.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -82,13 +82,13 @@ Questo metodo restituisce uno dei valori seguenti.
 **DMTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -103,7 +103,7 @@ Questo metodo restituisce uno dei valori seguenti.
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
 **In uso** (32774)
@@ -115,7 +115,7 @@ Questo metodo restituisce uno dei valori seguenti.
 **Tipo di risorsa non corretto per il pool** (32776)
 </dt> <dt>
 
-Non **disponibile** (32777)
+**Non disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -127,13 +127,13 @@ Non **disponibile** (32777)
 **Risorse insufficienti** (32780)
 </dt> <dt>
 
-**Oggetto non trovato** (32781.. 32787)
+**Oggetto non trovato** (32781..32787)
 </dt> <dt>
 
-**Oggetto esistente** (32788)
+**Object Exists** (32788)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -142,10 +142,10 @@ Non **disponibile** (32777)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -154,7 +154,7 @@ Non **disponibile** (32777)
 
 <dl> <dt>
 
-[**\_ResourcePoolConfigurationService MSVM**](msvm-resourcepoolconfigurationservice.md)
+[**Msvm \_ ResourcePoolConfigurationService**](msvm-resourcepoolconfigurationservice.md)
 </dt> </dl>
 
  

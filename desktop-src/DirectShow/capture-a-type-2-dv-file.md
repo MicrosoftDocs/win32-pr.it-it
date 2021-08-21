@@ -4,22 +4,22 @@ ms.assetid: c7d49c86-1b5d-43bf-98a5-78b297682375
 title: Acquisire un file DV di tipo 2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b919928a4c02ce9e3f3f3e6fcf3d2cd376f880a8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9c944c84ed6cf04ec46de99a209a7b3d2942ae5157bc3ff9d14104da6615d03d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118158743"
 ---
 # <a name="capture-a-type-2-dv-file"></a>Acquisire un file DV di tipo 2
 
-Un file AVI DV di tipo 2 ha due flussi, uno contenente video DV e un altro che contiene audio. Per acquisire un file di tipo 2 durante l'anteprima, utilizzare il grafico filtro illustrato nel diagramma seguente.
+Un file AVI DV di tipo 2 ha due flussi, uno che contiene video DV e un altro che contiene audio. Per acquisire un file di tipo 2 durante l'anteprima, usare il grafico dei filtri illustrato nel diagramma seguente.
 
-![acquisizione di tipo 2 con anteprima](images/dv2-cap.png)
+![Acquisizione di tipo 2 con anteprima](images/dv2-cap.png)
 
-Questo grafico è quasi uguale al grafico per l'acquisizione di tipo 1 (vedere [acquisire un file DV di tipo 1](capture-a-type-1-dv-file.md)). Tuttavia, il flusso di acquisizione passa attraverso il filtro della [barra di divisione DV](dv-splitter-filter.md) prima di raggiungere il filtro [Mux AVI](avi-mux-filter.md) . Il mux di AVI riceve quindi due flussi, un flusso audio e un flusso video codificato in formato DV.
+Questo grafico è quasi uguale al grafico per l'acquisizione di tipo 1 (vedere Acquisire un file DV di [tipo 1).](capture-a-type-1-dv-file.md) Tuttavia, il flusso di acquisizione passa attraverso [il filtro DV Splitter](dv-splitter-filter.md) prima di raggiungere il [filtro Mux AVI.](avi-mux-filter.md) Il mux AVI riceve quindi due flussi, un flusso audio e un flusso video con codifica DV.
 
-Compilare questo grafico come segue:
+Compilare questo grafo come segue:
 
 
 ```C++
@@ -57,11 +57,11 @@ hr = pBuilder->RenderStream(&PIN_CATEGORY_PREVIEW, &MEDIATYPE_Interleaved,
 
 
 
-1.  Creare il separatore DV e aggiungerlo al grafico del filtro.
-2.  Chiamare [**ICaptureGraphBuilder2:: SetOutputFileName**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-setoutputfilename) per connettere il filtro Mux AVI al filtro del writer di file.
-3.  Chiamare [**ICaptureGraphBuilder2:: RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) per connettere il filtro di acquisizione Msdv alla barra di divisione DV. Questa chiamata connette anche uno dei pin di output della barra di divisione DV al Mux AVI.
-4.  Chiamare nuovamente RenderStream per connettere l'altro pin della barra di divisione DV al Mux AVI.
-5.  Chiamare RenderStream una terza volta per eseguire il rendering del flusso di anteprima. Ignorare questo passaggio se non si desidera visualizzare in anteprima il video.
+1.  Creare la barra di divisione DV e aggiungerla al grafico dei filtri.
+2.  Chiamare [**ICaptureGraphBuilder2::SetOutputFileName**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-setoutputfilename) per connettere il filtro Mux AVI al filtro Writer file.
+3.  Chiamare [**ICaptureGraphBuilder2::RenderStream per**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) connettere il filtro di acquisizione MSDV alla barra di divisione DV. Questa chiamata connette anche uno dei pin di output dello splitter DV al mux AVI.
+4.  Chiamare di nuovo RenderStream per connettere l'altro pin della barra di divisione DV al mux AVI.
+5.  Chiamare RenderStream una terza volta per eseguire il rendering del flusso di anteprima. Ignorare questo passaggio se non si vuole visualizzare in anteprima il video.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -1,9 +1,9 @@
 ---
 title: Attributo WM/ContentGroupDescription
-description: L'attributo WM/ContentGroupDescription è la descrizione del gruppo di contenuto, ovvero una raccolta di elementi multimediali, ad esempio un set di CD boxed.
+description: L'attributo WM/ContentGroupDescription è la descrizione del gruppo di contenuto, ovvero una raccolta di elementi multimediali, ad esempio un set boxed CD.
 ms.assetid: b2615f78-2d45-45f0-89f7-f1e8e083be9b
 keywords:
-- Media Player Windows per gli attributi WM/ContentGroupDescription
+- Attributi WM/ContentGroupDescription Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,21 +12,21 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4690e52f2745fa2761252fdba4ad4df31b18619
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 49af85d5064da7950c3208e0307f027accb5e31b4e474eb743e629ecdf05aa0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118332450"
 ---
 # <a name="wmcontentgroupdescription-attribute"></a>Attributo WM/ContentGroupDescription
 
-L'attributo **WM/ContentGroupDescription** è la descrizione del gruppo di contenuto, ovvero una raccolta di elementi multimediali, ad esempio un set di CD boxed.
+**L'attributo WM/ContentGroupDescription** è la descrizione del gruppo di contenuto, ovvero una raccolta di elementi multimediali, ad esempio un set boxed CD.
 
 ## <a name="applies-to"></a>Si applica a
 
 -   [Elementi audio](audio-item-attributes.md)
--   [Attributi di file di Windows Media usati di frequente](commonly-used-windows-media-file-attributes.md)
+-   [Attributi dei Windows file multimediali comunemente usati](commonly-used-windows-media-file-attributes.md)
 
 ## <a name="remarks"></a>Commenti
 
@@ -34,9 +34,9 @@ Questo attributo viene archiviato sia nella libreria che nel file multimediale d
 
 **ContentGroupDescription** è un alias per questo attributo.
 
-La costante Windows Media Format SDK per questo attributo è g \_ wszWMContentGroupDistribution.
+La Windows Media Format SDK per questo attributo è g \_ wszWMContentGroupDistribution.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -44,7 +44,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -52,7 +52,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

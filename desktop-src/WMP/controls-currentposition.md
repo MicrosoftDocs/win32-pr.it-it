@@ -1,9 +1,9 @@
 ---
-title: Controls. currentPosition
+title: Controls.currentPosition
 description: La proprietà currentPosition specifica o recupera la posizione corrente nell'elemento multimediale in secondi dall'inizio.
 ms.assetid: 374ad144-3f74-4d1b-bec5-1cd0f03777b7
 keywords:
-- Media Player di Windows Controls. currentPosition
+- Controls.currentPosition Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12c690c102bb95c1a58785f18d727ffdae2a82c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: be64d23b65a396cfb15e9f7b19b4571bdb26cbb7f308241e9a381375b9d26a40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118341878"
 ---
-# <a name="controlscurrentposition"></a>Controls. currentPosition
+# <a name="controlscurrentposition"></a>Controls.currentPosition
 
-La proprietà **currentPosition** specifica o recupera la posizione corrente nell'elemento multimediale in secondi dall'inizio.
+La **proprietà currentPosition** specifica o recupera la posizione corrente nell'elemento multimediale in secondi dall'inizio.
 
 ``` syntax
 player.controls.currentPosition
@@ -32,11 +32,11 @@ player.controls.currentPosition
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un **numero** di lettura/scrittura (**Double**).
+Questa proprietà è un numero di **lettura/scrittura** (**double**).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **currentPosition** per cercare una posizione fornita dall'utente. Viene creato un elemento BUTTON HTML per eseguire il codice JScript. È stato creato un elemento input di testo HTML, denominato seposition, per accettare un valore, in secondi, dall'utente. L'oggetto **Player** è stato creato con ID = "Player".
+L'esempio seguente usa **currentPosition** per cercare una posizione fornita dall'utente. Viene creato un elemento BUTTON HTML per eseguire il JScript codice. È stato creato un elemento di input HTML TEXT denominato setPosition per accettare un valore, espresso in secondi, dall'utente. **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -58,7 +58,7 @@ Nell'esempio seguente viene usato **currentPosition** per cercare una posizione 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

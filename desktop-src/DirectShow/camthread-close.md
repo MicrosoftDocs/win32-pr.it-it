@@ -1,7 +1,7 @@
 ---
-description: Il metodo Close attende la chiusura del thread, quindi rilascia le relative risorse.
+description: Il metodo Close attende l'uscita del thread e quindi rilascia le relative risorse.
 ms.assetid: 57e27ff7-3665-416e-8a6e-660483c5aed2
-title: Metodo CAMThread. Close (Wxutil. h)
+title: Metodo CAMThread.Close (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9cac5ee4a1e1a9cc3fecc8d09096d031e9fc9a63
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bf12a80cd967832755f476db0e8810867326e84598ddce835e1da10dc6943419
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118158932"
 ---
-# <a name="camthreadclose-method"></a>Metodo CAMThread. Close
+# <a name="camthreadclose-method"></a>Metodo CAMThread.Close
 
-Il `Close` metodo attende la chiusura del thread, quindi rilascia le relative risorse.
+Il `Close` metodo attende l'uscita del thread e quindi rilascia le relative risorse.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Prima di chiamare questo metodo, è necessario fornire un modo per uscire dal thread. Nel metodo [**CAMThread:: ThreadProc**](camthread-threadproc.md) , ad esempio, definire una richiesta che segnali la chiusura del thread. Chiamare quindi il metodo [**CAMThread:: CallWorker**](camthread-callworker.md) con tale valore.
+Prima di chiamare questo metodo, è necessario fornire un modo per la chiusura del thread. Ad esempio, nel metodo [**CAMThread::ThreadProc**](camthread-threadproc.md) definire una richiesta che segnali l'uscita del thread. Chiamare quindi il [**metodo CAMThread::CallWorker**](camthread-callworker.md) con tale valore.
 
 Il metodo del distruttore [**~ CAMThread**](camthread--camthread.md) chiama questo metodo.
 
@@ -56,8 +56,8 @@ Il metodo del distruttore [**~ CAMThread**](camthread--camthread.md) chiama ques
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

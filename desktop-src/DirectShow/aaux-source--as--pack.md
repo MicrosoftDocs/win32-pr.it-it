@@ -1,25 +1,25 @@
 ---
-description: Pacchetto di origine (AS) AAUX
+description: Pacchetto AAUX Source (AS)
 ms.assetid: 0e173fe5-0b9d-48e8-bcbd-403614d51558
-title: Pacchetto di origine (AS) AAUX
+title: Pacchetto AAUX Source (AS)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe479a0740da08f42ca5d80e1f0b6f5174f6917b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 89a2d8aa11c9560b2aa59165afd9bdaae775be7755a7a7d2a5e87a80df412d1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104225477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118160262"
 ---
-# <a name="aaux-source-as-pack"></a>Pacchetto di origine (AS) AAUX
+# <a name="aaux-source-as-pack"></a>Pacchetto AAUX Source (AS)
 
-Nelle tabelle seguenti sono elencati i valori usati dal driver MSDV per compilare i membri **dwDVAAuxSrc** e **DwDVAAuxSrc1** della struttura [**DVinfo**](/windows/desktop/api/strmif/ns-strmif-dvinfo) . Per ulteriori informazioni, vedere [DVinfo Field Settings nel driver Msdv](dvinfo-field-settings-in-the-msdv-driver.md).
+Le tabelle seguenti elencano i valori usati dal driver MSDV per compilare i membri **dwDVAAuxSrc** e **dwDVAAuxSrc1** della struttura [**DVINFO.**](/windows/desktop/api/strmif/ns-strmif-dvinfo) Per altre informazioni, vedere [DVINFO Field Impostazioni nel driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md).
 
-Impostazioni DVCR
+DVCR Impostazioni
 
 
 
-Standard DV
+DV Standard
 
 DVCR (IEC 61834)
 
@@ -27,7 +27,7 @@ FOURCC
 
 dvsl
 
-DVSD
+dvsd
 
 Sistema
 
@@ -151,7 +151,7 @@ ML (1)
 
 1
 
-SPREVISTA (5)
+STYPE (5)
 
 0:0001
 
@@ -201,7 +201,7 @@ QU (3)
 
 001
 
-COME Pack
+PACCHETTO AS
 
     Audio Block 1\*
 
@@ -227,19 +227,19 @@ COME Pack
 
  
 
-Impostazioni DVCR 25 e DVCPRO 50 (pianificato)
+DVCR 25 e DVCPRO 50 Impostazioni (pianificato)
 
 
 
-Standard DV
+DV Standard
 
-DVCPRO (SMPTE 314M)-pianificato
+DVCPRO (SMPTE 314M) - Pianificato
 
 FOURCC
 
-DV25
+dv25
 
-DV50
+dv50
 
 Sistema
 
@@ -271,7 +271,7 @@ Riservato (1)
 
 1
 
-DIMENSIONI AF (6)
+AF SIZE (6)
 
 01:0110
 
@@ -353,7 +353,7 @@ Riservato (2)
 
 1
 
-SPREVISTA (5)
+STYPE (5)
 
 0:0000
 
@@ -393,7 +393,7 @@ QU (3)
 
 7000
 
-COME Pack
+AS Pack
 
     Audio Block 1\*
 
@@ -420,17 +420,17 @@ COME Pack
  
 
 > [!Note]  
-> \* La struttura [**DVinfo**](/windows/desktop/api/strmif/ns-strmif-dvinfo) contiene due AAUX come Pack per i blocchi audio 1 e 2. DV50 ha quattro blocchi audio; i blocchi 3 e 4 non sono rappresentati nella struttura **DVinfo** .
+> \* La [**struttura DVINFO**](/windows/desktop/api/strmif/ns-strmif-dvinfo) contiene due pacchetti AAUX AS, per i blocchi audio 1 e 2. DV50 ha quattro blocchi audio. I blocchi 3 e 4 non sono rappresentati nella **struttura DVINFO.**
 
  
 
-Impostazioni DVCR 100 (pianificato)
+DVCR 100 Impostazioni (pianificato)
 
 
 
-Standard DV
+DV Standard
 
-DVCPRO 100-pianificato
+DVCPRO 100 - Pianificato
 
 FOURCC
 
@@ -460,7 +460,7 @@ Riservato (1)
 
 1
 
-DIMENSIONI AF (6)
+AF SIZE (6)
 
 01:0110
 
@@ -526,7 +526,7 @@ Riservato (2)
 
 1
 
-SPREVISTA (5)
+STYPE (5)
 
 0:0011
 
@@ -558,7 +558,7 @@ QU (3)
 
 7000
 
-COME Pack
+AS Pack
 
     Audio Block 1\*
 
@@ -581,72 +581,72 @@ COME Pack
  
 
 > [!Note]  
-> \* DVCPRO 100 include 8 blocchi audio; i blocchi da 3 a 8 non sono rappresentati nella struttura [DVinfo](dvinfo-field-settings-in-the-msdv-driver.md) .
+> \*DVCPRO 100 ha 8 blocchi audio; I blocchi da 3 a 8 non sono rappresentati nella [struttura DVINFO.](dvinfo-field-settings-in-the-msdv-driver.md)
 
  
 
 ## <a name="remarks"></a>Commenti
 
-I codici di campo seguenti sono di particolare interesse:
+I codici di campo seguenti sono di interesse:
 
 -   LF: flag della modalità bloccata. Indica se l'audio è bloccato.
-    -   0 = bloccato
-    -   1 = sbloccato
--   DIMENSIONI AF: dimensioni del frame audio. Specifica il numero di campioni audio per fotogramma.
+    -   0 = Bloccato
+    -   1 = Sbloccato
+-   DIMENSIONI AF: dimensioni del fotogramma audio. Specifica il numero di campioni audio per fotogramma.
 
     Definizione IEC 61834:
 
-    -   00:1111 = 1068 campioni per frame
-    -   01:0000 = 1280 campioni per frame
+    -   00:1111 = 1068 campioni per fotogramma
+    -   01:0000 = 1280 campioni per fotogramma
 
-    Definizione 314M SMPTE:
+    Definizione SMPTE 314M:
 
-    -   01:0110 = 1602 campioni per frame
-    -   01:1000 = 1920 campioni per frame
+    -   01:0110 = 1602 campioni per fotogramma
+    -   01:1000 = 1920 campioni per fotogramma
 
-    A seconda della frequenza dei fotogrammi, il numero esatto di campioni in un frame potrebbe variare. Ad esempio, NTSC è 30000/1001 frame al secondo (29,97 fps). Con audio 32-kHz sono disponibili circa 1067,73 esempi audio per frame. Quindi, la velocità nominale è 1068, ma il numero effettivo varia in base al frame. Inoltre, con l'audio sbloccato, il numero di campioni audio per frame può variare entro un determinato intervallo nel tempo.
+    A seconda della frequenza dei fotogrammi, il numero esatto di campioni in un frame può variare. Ad esempio, NTSC è 30000/1001 fotogrammi al secondo (29,97 fps). Con audio a 32 kHz, sono disponibili circa 1067,73 campioni audio per fotogramma. Il tasso nominale è quindi 1068, ma il numero effettivo varia per fotogramma. Inoltre, con l'audio sbloccato, il numero di campioni audio per fotogramma può variare all'interno di un determinato intervallo nel tempo.
 
 <!-- -->
 
 -   SM: modalità stereo.
-    -   0 = stereo
-    -   1 = mono
+    -   0 = Stereo
+    -   1 = Mono
 -   CHN: numero di canali audio per blocco audio.
-    -   0 = un canale per ogni blocco audio
-    -   1 = due canali per blocco audio
--   MODALITÀ AUDIO: indica il contenuto del segnale audio su ogni canale. L'interpretazione di questo campo dipende dai valori inseriti nei campi SM e CHN. Le definizioni indicate di seguito sono relative ai valori utilizzati da MSDV; Per ulteriori informazioni, vedere le specifiche.
+    -   0 = Un canale per blocco audio
+    -   1 = Due canali per blocco audio
+-   MODALITÀ AUDIO: indica il contenuto del segnale audio in ogni canale. L'interpretazione di questo campo dipende dai valori inseriti nei campi SM e CHN. Le definizioni riportate di seguito sono relative ai valori usati da MSDV. Per altre informazioni, vedere le specifiche.
 
     Definizione IEC 61834:
 
-    -   0000 = ch a/c/e/g è il canale sinistro, ch b/d/f/h è il canale corretto
+    -   0000 = Ch a/c/e/g è il canale sinistro, Ch b/d/f/h è il canale destro
     -   1111 = nessun dato audio
 
-    Definizione 314M SMPTE:
+    Definizione SMPTE 314M:
 
     -   0000 = CH1 (CH3)
     -   0001 = CH2 (CH4)
 
 -   50/60: numero di campi.
-    -   0 = campi di 60
+    -   0 = 60 campi
     -   1 = 50 campi
--   SPREVISTA: tipo di sistema.
+-   STYPE: tipo di sistema.
 
     Definizione IEC 61834:
 
-    -   00000 = 525-60 o 625-50, DVSD
+    -   00000 = 525-60 o 625-50, dvsd
     -   00001 = 525-60 o 625-50, dvsl (vedere IEC 61883-5)
 
-    Definizione di SMPTE 314M/SPMTE 370:
+    Definizione SMPTE 314M/SPMTE 370:
 
-    -   00000 = 2 blocchi audio per ogni fotogramma video
-    -   00010 = 4 blocchi audio per ogni fotogramma video
-    -   00011 = 8 blocchi audio per ogni fotogramma video
+    -   00000 = 2 blocchi audio per fotogramma video
+    -   00010 = 4 blocchi audio per fotogramma video
+    -   00011 = 8 blocchi audio per fotogramma video
 
 -   SMP: frequenza di campionamento.
     -   000 = 48 kHz
     -   010 = 32 kHz
 -   QU: quantizzazione.
-    -   0 = 16 bit lineari
+    -   0 = lineare a 16 bit
     -   1 = 12 bit non lineari
 
 ## <a name="related-topics"></a>Argomenti correlati
@@ -656,7 +656,7 @@ I codici di campo seguenti sono di particolare interesse:
 [Video digitale in DirectShow](digital-video-in-directshow.md)
 </dt> <dt>
 
-[Impostazioni dei campi DVINFO nel driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
+[Campi DVINFO Impostazioni nel driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
 </dt> </dl>
 
  

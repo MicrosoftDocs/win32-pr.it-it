@@ -1,5 +1,5 @@
 ---
-description: Mostra le metriche per classe.
+description: Mostra le metriche in base alla classe.
 ms.assetid: a08c0749-b60b-4b8a-996f-b3bbaf1fb2d3
 title: Metodo ShowMetricsByClass della classe Msvm_MetricService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 93f132b24c6c20826b1551e979c128b1aa38c8d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 40865847b1deef877c70c1c99349c12915a464b394a38b5b804ea9139d5d0cf1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118147510"
 ---
-# <a name="showmetricsbyclass-method-of-the-msvm_metricservice-class"></a>Metodo ShowMetricsByClass della classe MSVM \_ MetricService
+# <a name="showmetricsbyclass-method-of-the-msvm_metricservice-class"></a>Metodo ShowMetricsByClass della classe Msvm \_ MetricService
 
-Mostra le metriche per classe.
+Mostra le metriche in base alla classe.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,35 +43,35 @@ uint32 ShowMetricsByClass(
 
 <dl> <dt>
 
-*Oggetto* \[ in\]
+*Oggetto* \[ Pollici\]
 </dt> <dd>
 
-Identifica una classe CIM per la quale il metodo restituisce riferimenti a istanze [**di \_ BaseMetricDefinition CIM**](cim-basemetricdefinition.md) che definiscono le metriche che sono disponibili per l'acquisizione per tutte le istanze della classe.
+Identifica una classe CIM per cui il metodo restituisce riferimenti a istanze di [**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) che definiscono le metriche disponibili per l'acquisizione per tutte le istanze della classe.
 
 </dd> <dt>
 
-*Definizione* \[ di in\]
+*Definizione* \[ Pollici\]
 </dt> <dd>
 
-Identifica un'istanza di [**\_ BaseMetricDefinition CIM**](cim-basemetricdefinition.md). Il metodo restituisce riferimenti a istanze di [**CIM \_ Managed**](cim-managedelement.md) per le quali è possibile raccogliere le metriche definite dall'istanza di **CIM \_ BaseMetricDefinition** .
+Identifica un'istanza di [**CIM \_ BaseMetricDefinition.**](cim-basemetricdefinition.md) Il metodo restituisce riferimenti a istanze [**di CIM \_ ManagedElement**](cim-managedelement.md) per le quali le metriche definite dall'istanza di **CIM \_ BaseMetricDefinition** sono disponibili per la raccolta.
 
 </dd> <dt>
 
-*Definizione* \[ out\]
+*DefinitionList* \[ Cambio\]
 </dt> <dd>
 
-Al completamento del metodo, può contenere riferimenti a istanze di [**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) che definiscono le metriche disponibili per la raccolta per l'oggetto [**\_ gestito CIM**](cim-managedelement.md) identificato dal parametro *Subject* .
+Al termine del metodo, può contenere riferimenti a istanze di [**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) che definiscono le metriche disponibili per la raccolta per [**CIM \_ ManagedElement**](cim-managedelement.md) identificate dal *parametro Subject.*
 
 </dd> <dt>
 
-*MetricNames* \[ out\]
+*MetricNames* \[ Cambio\]
 </dt> <dd>
 
-Al completamento del metodo, ogni indice di matrice contiene il valore della proprietà **Name** per l'istanza di [**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) a cui fa riferimento l'indice della matrice corrispondente del parametro *Definition* .
+Al termine del metodo, ogni indice di matrice contiene il valore della proprietà **Name** per l'istanza di [**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) a cui fa riferimento l'indice di matrice corrispondente del *parametro DefinitionList.*
 
 </dd> <dt>
 
-*MetricCollectionEnabled* \[ out\]
+*MetricCollectionEnabled* \[ Cambio\]
 </dt> <dd>
 
 Indica se viene raccolta una metrica per tutte le istanze di una classe di elementi gestiti.
@@ -108,7 +108,7 @@ Indica se viene raccolta una metrica per tutte le istanze di una classe di eleme
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32768.. 65535)
+**Fornitore riservato** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> </dl>
@@ -125,7 +125,7 @@ Questo metodo restituisce uno dei valori seguenti:
 **Non supportato** ()
 </dt> <dt>
 
-**Non riuscito** ()
+**Operazione non** riuscita ()
 </dt> <dt>
 
 **Metodo riservato** ()
@@ -141,9 +141,9 @@ Questo metodo restituisce uno dei valori seguenti:
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -152,7 +152,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**\_MetricService MSVM**](msvm-metricservice.md)
+[**Msvm \_ MetricService**](msvm-metricservice.md)
 </dt> </dl>
 
  

@@ -6,13 +6,13 @@ ms.tgt_platform: multiple
 keywords:
 - Proprietà AudioRedirectionMode Servizi Desktop remoto
 - Proprietà AudioRedirectionMode Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà AudioRedirectionMode
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto proprietà , AudioRedirectionMode
 - Proprietà AudioRedirectionMode Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
 - Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto proprietà , AudioRedirectionMode
 - Proprietà AudioRedirectionMode Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto proprietà , AudioRedirectionMode
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà AudioRedirectionMode
 - Proprietà AudioRedirectionMode Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà AudioRedirectionMode
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto proprietà , AudioRedirectionMode
 topic_type:
 - apiref
 api_name:

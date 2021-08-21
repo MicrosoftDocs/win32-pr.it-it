@@ -1,7 +1,7 @@
 ---
 description: Chiude il database shim specificato.
 ms.assetid: e4480860-8055-4134-b6ed-926c010d462f
-title: SdbCloseDatabase (funzione)
+title: Funzione SdbCloseDatabase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 376d97b8386f127a945cb118639be1e38ae68737
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 06e7b493d6114b4085dcabcfd5f241413b431daa081c53fd467b100e225f486c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118161592"
 ---
-# <a name="sdbclosedatabase-function"></a>SdbCloseDatabase (funzione)
+# <a name="sdbclosedatabase-function"></a>Funzione SdbCloseDatabase
 
 Chiude il database shim specificato.
 
@@ -39,10 +39,10 @@ void WINAPI SdbCloseDatabase(
 
 <dl> <dt>
 
-*PDB* \[ in uscita\]
+*pdb* \[ in, out\]
 </dt> <dd>
 
-Handle per il database shim. Questo parametro non può essere **null**.
+Handle per il database shim. Questo parametro non può essere **NULL.**
 
 </dd> </dl>
 
@@ -56,8 +56,8 @@ Questa funzione non restituisce un valore.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

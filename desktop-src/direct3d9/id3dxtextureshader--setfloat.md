@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6230b0736cb3bc623b0413f7b5a1cb9635f00e07
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cc6461fa72607579a0dceca324172cefa8174ef3613b31bd2379dbdab9f518f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118093675"
 ---
 # <a name="id3dxtextureshadersetfloat-method"></a>Metodo ID3DXTextureShader::SetFloat
 

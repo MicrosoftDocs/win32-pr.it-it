@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetDetachDatabase'
-title: API. JetDetachDatabase, metodo
+description: 'Altre informazioni su: Metodo Api.JetDetachDatabase'
+title: Metodo Api.JetDetachDatabase
 TOCTitle: 'JetDetachDatabase method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetDetachDatabase(Microsoft.Isam.Esent.Interop.JET_SESID,System.String)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetdetachdatabase(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8881021d619bac1dae83a4a001e6b88e94e57256
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 533c99c385f2e41825c312cf69e4205b7ab843c08b71b0618b21361b7b31ef50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118085500"
 ---
-# <a name="apijetdetachdatabase-method"></a>API. JetDetachDatabase, metodo
+# <a name="apijetdetachdatabase-method"></a>Metodo Api.JetDetachDatabase
 
 Rilascia un file di database precedentemente collegato a una sessione di database.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,14 +61,14 @@ public static void JetDetachDatabase(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     Sessione di database da utilizzare.
 
 <!-- end list -->
 
   - database  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Database da scollegare.
 
@@ -78,6 +78,6 @@ public static void JetDetachDatabase(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

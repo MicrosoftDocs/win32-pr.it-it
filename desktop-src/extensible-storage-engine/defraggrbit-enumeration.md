@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione DefragGrbit'
+description: Altre informazioni sull'enumerazione DefragGrbit
 title: Enumerazione DefragGrbit
 TOCTitle: DefragGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.DefragGrbit
@@ -30,21 +30,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e5da047fbdad20ac40d780dc5b0bba9e986e7672
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: faf2187a47f7a3cd519d69c8cf45f377a4e0f0941d4e9a83bd50653cc4236504
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118083438"
 ---
 # <a name="defraggrbit-enumeration"></a>Enumerazione DefragGrbit
 
-Opzioni per [JetDefragment (JET_SESID, JET_DBID, String, Int32, Int32, DefragGrbit)](./api.jetdefragment-method.md).
+Opzioni per [JetDefragment(JET_SESID, JET_DBID, String, Int32, Int32, DefragGrbit)](./api.jetdefragment-method.md).
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -75,11 +75,11 @@ public enum DefragGrbit
 <tr class="odd">
 <td></td>
 <td>AvailSpaceTreesOnly</td>
-<td>Deframmenta la porzione di spazio disponibile nell'allocazione dello spazio del database ESE. Lo spazio del database è suddiviso in due tipi, spazio di proprietà e spazio disponibile. Lo spazio di proprietà viene allocato a una tabella o a un indice, mentre lo spazio disponibile è pronto per l'utilizzo rispettivamente nella tabella o nell'indice. Lo spazio disponibile è molto più dinamico nel comportamento e richiede la deframmentazione in linea più che lo spazio di proprietà o i dati di tabella o di indice.</td>
+<td>Deframmenta la parte di spazio disponibile dell'allocazione dello spazio del database ESE. Lo spazio del database è suddiviso in due tipi: spazio di proprietà e spazio disponibile. Lo spazio di proprietà viene allocato a una tabella o a un indice mentre lo spazio disponibile è pronto per l'uso rispettivamente all'interno della tabella o dell'indice. Lo spazio disponibile è molto più dinamico nel comportamento e richiede la deframmentazione in linea più dello spazio di proprietà o dei dati della tabella o dell'indice.</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>BatchStart</td>
+<td>Avvio di Batch</td>
 <td>Avvia una nuova attività di deframmentazione.</td>
 </tr>
 <tr class="odd">
@@ -95,4 +95,4 @@ public enum DefragGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

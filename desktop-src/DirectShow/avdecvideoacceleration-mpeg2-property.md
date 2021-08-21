@@ -1,33 +1,33 @@
 ---
-description: Abilita o Disabilita l'accelerazione hardware per la decodifica video MPEG-2.
+description: Abilita o disabilita l'accelerazione hardware per la decodifica video MPEG-2.
 ms.assetid: 2e05f9e5-28a6-48f3-956d-a14eaf3bf4ba
-title: Proprietà AVDecVideoAcceleration_MPEG2 (codecapit. h)
+title: AVDecVideoAcceleration_MPEG2 proprietà (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d943459ae3810e1a0dc668c1f11c4c5d2354afaf
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: cc2aa5db2d738afc0097ee4e09e7562dd7a3ae30b6138b2a003d85c6058fb22b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103747250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118159954"
 ---
-# <a name="avdecvideoacceleration_mpeg2-property"></a>\_Proprietà MPEG2 AVDecVideoAcceleration
+# <a name="avdecvideoacceleration_mpeg2-property"></a>AVDecVideoAcceleration \_ - proprietà MPEG2
 
-Abilita o Disabilita l'accelerazione hardware per la decodifica video MPEG-2.
+Abilita o disabilita l'accelerazione hardware per la decodifica video MPEG-2.
 
 Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt32** (**VT \_ UI4**)
+**UINT32** (**VT \_ UI4**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVDecVideoAcceleration \_ MPEG2**
+**CODECAPI \_ AVDecVideoAcceleration \_ MPEG2**
 
 ## <a name="remarks"></a>Commenti
 
-Se il valore è zero, il decodificatore non usa l'accelerazione video DirectX (DXVA) per la decodifica video MPEG-2. Per i filtri DirectShow, impostare questa proprietà prima della connessione del PIN di output del decodificatore.
+Se il valore è zero, il decodificatore non usa l'accelerazione video DirectX (DXVA) per la decodifica video MPEG-2. Per DirectShow, impostare questa proprietà prima che il pin di output del decodificatore sia connesso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ Se il valore è zero, il decodificatore non usa l'accelerazione video DirectX (D
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 Server desktop apps UWP apps (App desktop UWP di Windows 2000 \[ \| Server)\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Se il valore è zero, il decodificatore non usa l'accelerazione video DirectX (D
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà dell'API Codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

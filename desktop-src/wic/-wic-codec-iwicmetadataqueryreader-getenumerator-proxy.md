@@ -1,7 +1,7 @@
 ---
 description: Funzione proxy per il metodo GetEnumerator.
 ms.assetid: b45b240d-7540-4115-ac8b-401aaf400a9d
-title: Funzione IWICMetadataQueryReader_GetEnumerator_Proxy
+title: IWICMetadataQueryReader_GetEnumerator_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: a549cfb31691a32d1a7be76e1b051740ecf64e57
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f93f064705306ba32dccf1263e80d44b7adfb3ed59e00e5b22b9cf0148e4d6d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118033597"
 ---
-# <a name="iwicmetadataqueryreader_getenumerator_proxy-function"></a>\_ \_ Funzione proxy IWICMetadataQueryReader GetEnumerator
+# <a name="iwicmetadataqueryreader_getenumerator_proxy-function"></a>Funzione proxy GetEnumerator IWICMetadataQueryReader \_ \_
 
-Funzione proxy per il metodo [**GetEnumerator**](/windows/desktop/api/Wincodec/nf-wincodec-iwicmetadataqueryreader-getenumerator) .
+Funzione proxy per il [**metodo GetEnumerator.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicmetadataqueryreader-getenumerator)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,16 +41,16 @@ HRESULT IWICMetadataQueryReader_GetEnumerator_Proxy(
 
 <dl> <dt>
 
-*Questa \_ PTR* \[ in\]
+*QUESTO \_ PTR* \[ in\]
 </dt> <dd>
 
-Tipo: **[**IWICMetadataQueryReader**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader) \** _
+Tipo: **[ **IWICMetadataQueryReader**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader)\***
 
-Puntatore a questo oggetto [_ *IWICMetadataQueryReader* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader) .
+Puntatore a [**questo oggetto IWICMetadataQueryReader.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader)
 
 </dd> <dt>
 
-*ppIEnumString* \[ out\]
+*ppIEnumString* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **IEnumString \* \***
@@ -63,7 +63,7 @@ Puntatore che riceve un puntatore a un enumeratore di metadati.
 
 Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -73,9 +73,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop vista\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

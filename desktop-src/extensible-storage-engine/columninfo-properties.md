@@ -1,25 +1,25 @@
 ---
-description: 'Altre informazioni su: ColumnInfo Properties'
-title: Proprietà di ColumnInfo
+description: Altre informazioni sulle proprietà ColumnInfo
+title: Proprietà columnInfo
 TOCTitle: ColumnInfo properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.ColumnInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columninfo_properties(v=EXCHG.10)
 ms:contentKeyID: 55100928
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: c868aed7b5ad5dfe23fd6d67437f7b088c4cf99d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2598cc4e316a1b8a6e64d66c79b09722a914dc92f642dd6bb60d842ec7fc5ef4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118084059"
 ---
-# <a name="columninfo-properties"></a>Proprietà di ColumnInfo
+# <a name="columninfo-properties"></a>Proprietà columnInfo
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
-Il tipo [ColumnInfo](./columninfo-class.md) espone i membri seguenti.
+Il [tipo ColumnInfo](./columninfo-class.md) espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 
@@ -39,12 +39,12 @@ Il tipo [ColumnInfo](./columninfo-class.md) espone i membri seguenti.
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
-<td><a href="dn334134(v=exchg.10).md">ColumnID</a></td>
+<td><a href="dn334134(v=exchg.10).md">Columnid</a></td>
 <td>Ottiene l'ID della colonna.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
-<td><a href="dn334185(v=exchg.10).md">CP</a></td>
+<td><a href="dn334185(v=exchg.10).md">Cp</a></td>
 <td>Ottiene la tabella codici della colonna.</td>
 </tr>
 <tr class="even">
@@ -55,7 +55,7 @@ Il tipo [ColumnInfo](./columninfo-class.md) espone i membri seguenti.
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn334189(v=exchg.10).md">Grbit</a></td>
-<td>Ottiene le opzioni della colonna.</td>
+<td>Ottiene le opzioni di colonna.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -79,4 +79,4 @@ Inizio
 
 [Classe ColumnInfo](./columninfo-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,6 +1,6 @@
 ---
 title: Elemento UseWinLogonCredentials (EapType)
-description: Informazioni sull'elemento UseWinLogonCredentials (EapType). Questo elemento controlla l'uso di credenziali WinLogin.
+description: Informazioni sull'elemento UseWinLogonCredentials (EapType). Questo elemento controlla l'uso delle credenziali winlogin.
 ms.assetid: 8ebd87ce-7d2b-4305-b50c-239bb9c7af75
 keywords:
 - Elemento UseWinLogonCredentials EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f17520d4eaee64d3dd9809ecb465ca8e39690fc4
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 2a407c505139562a155e5aa9d7ed57fed5d15077cf5d035ea8bb7bbe0e177363
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103730370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086192"
 ---
 # <a name="usewinlogoncredentials-eaptype-element"></a>Elemento UseWinLogonCredentials (EapType)
 
-L'elemento **UseWinLogonCredentials (EapType)** controlla l'uso delle credenziali WinLogin.
+**L'elemento UseWinLogonCredentials (EapType)** controlla l'uso delle credenziali winlogin.
 
 ``` syntax
 <xs:element name="UseWinLogonCredentials"
@@ -31,20 +31,20 @@ L'elemento **UseWinLogonCredentials (EapType)** controlla l'uso delle credenzial
  />
 ```
 
-L'elemento **UseWinLogonCredentials** è definito dall'elemento [**EapType**](mschapv2connectionpropertiesv1schema-eaptype-element.md) .
+**L'elemento UseWinLogonCredentials** è definito dall'elemento [**EapType.**](mschapv2connectionpropertiesv1schema-eaptype-element.md)
 
 ## <a name="remarks"></a>Commenti
 
-Se TRUE, EAP MS-CHAPv2 ottiene le credenziali da Winlogon. Se FALSE, EAP MS-CHAPv2 ottiene le credenziali dall'utente. L'elemento **UseWinLogonCredentials (EapType)** è facoltativo.
+Se TRUE, il MS-CHAPv2 EAP ottiene le credenziali da winlogon. Se FALSE, il MS-CHAPv2 EAP ottiene le credenziali dall'utente. **L'elemento UseWinLogonCredentials (EapType)** è facoltativo.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Ruolo | Versioni minime del sistema operativo supportate |
+| Ruolo | Versioni minime supportate del sistema operativo |
 |------|-------------------------------|
-| Client<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

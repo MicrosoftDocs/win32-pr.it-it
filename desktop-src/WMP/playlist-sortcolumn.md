@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. sortColumn
-description: Il metodo sortColumn Ordina i dati nella colonna specificata.
+title: PLAYLIST.sortColumn
+description: Il metodo sortColumn ordina i dati nella colonna specificata.
 ms.assetid: 1563fee8-044a-4cb4-a9c2-11d4533536da
 keywords:
-- PLAYLIST. sortColumn Windows Media Player
+- PLAYLIST.sortColumn Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f21f0032ee4db4c7af46b5dda814bb11db551330
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 34dfce7306ceb39d64665538a21dbaef965ea799141a2756c2fea5bbe23ea9cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333835"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118335659"
 ---
-# <a name="playlistsortcolumn"></a>PLAYLIST. sortColumn
+# <a name="playlistsortcolumn"></a>PLAYLIST.sortColumn
 
-Il metodo **SortColumn** Ordina i dati nella colonna specificata.
+Il **metodo sortColumn** ordina i dati nella colonna specificata.
 
 ``` syntax
         elementID.sortColumn(column)
@@ -32,10 +32,10 @@ Il metodo **SortColumn** Ordina i dati nella colonna specificata.
 
 <dl> <dt>
 
-<span id="column"></span><span id="COLUMN"></span>*colonna*
+<span id="column"></span><span id="COLUMN"></span>*Colonna*
 </dt> <dd>
 
-**Numero** (**Long**) che indica l'indice della colonna da ordinare.
+**Numero** (**long**) che indica l'indice della colonna da ordinare.
 
 </dd> </dl>
 
@@ -45,9 +45,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo ordina la colonna specificata nello stesso modo dei pulsanti di intestazione di colonna nell'elemento **playlist** . Se la colonna non è ancora stata ordinata, viene ordinata in ordine alfanumerico. Se è stato ordinato, l'ordine viene invertito.
+Questo metodo ordina la colonna specificata nello stesso modo dei pulsanti dell'intestazione di colonna **nell'elemento PLAYLIST.** Se la colonna non è ancora stata ordinata, viene ordinata in ordine alfanumerico. Se è stato ordinato, l'ordine viene invertito.
 
-Per il corretto funzionamento di questo metodo, l'attributo **allowColumnSorting** deve essere impostato su true.
+Per il funzionamento di questo metodo, **l'attributo allowColumnSorting** deve essere impostato su true.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,7 +55,7 @@ Per il corretto funzionamento di questo metodo, l'attributo **allowColumnSorting
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -63,10 +63,10 @@ Per il corretto funzionamento di questo metodo, l'attributo **allowColumnSorting
 
 <dl> <dt>
 
-[**PLAYLIST (elemento)**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**PLAYLIST. allowColumnSorting**](playlist-allowcolumnsorting.md)
+[**PLAYLIST.allowColumnSorting**](playlist-allowcolumnsorting.md)
 </dt> </dl>
 
  

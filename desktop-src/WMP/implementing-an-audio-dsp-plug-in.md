@@ -11,7 +11,7 @@ keywords:
 - plug-in DSP, modifica del codice di esempio
 - plug-in di elaborazione del segnale digitale, implementazione audio
 - Plug-in DSP, implementazione audio
-- plug-in DSP audio,implementazione di codice
+- plug-in DSP audio, implementazione di codice
 - plug-in DSP audio, modifica del codice di esempio
 ms.topic: article
 ms.date: 05/31/2018
@@ -24,7 +24,7 @@ ms.locfileid: "118338642"
 ---
 # <a name="implementing-an-audio-dsp-plug-in"></a>Implementazione di un plug-in DSP audio
 
-Per creare Windows Media Player plug-in DSP che elabora l'audio, è necessario modificare il codice di esempio nella funzione denominata **DoProcessOutput**. **DoProcessOutput** viene chiamato ogni volta Windows Media Player chiama **correttamente IMediaObject::P rocessOutput**. È la funzione che esegue le attività di elaborazione del segnale digitale che producono il risultato udibile che il plug-in DSP è destinato a produrre.
+Per creare Windows Media Player plug-in DSP che elabora l'audio, è necessario modificare il codice di esempio nella funzione **denominata DoProcessOutput**. **DoProcessOutput** viene chiamato ogni volta Windows Media Player chiama **correttamente IMediaObject::P rocessOutput**. È la funzione che esegue le attività di elaborazione del segnale digitale che producono il risultato udibile che il plug-in DSP è destinato a produrre.
 
 L'elaborazione di un flusso audio è simile alla gestione di un evento a tempo. **DoProcessOutput** verrà chiamato ripetutamente e a intervalli specifici. Ogni volta che il codice viene eseguito, sarà necessario elaborare un numero specifico di byte di dati. **DoProcessOutput** contiene i parametri seguenti:
 

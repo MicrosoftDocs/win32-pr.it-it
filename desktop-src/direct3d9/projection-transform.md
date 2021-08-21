@@ -13,7 +13,7 @@ ms.locfileid: "118092689"
 ---
 # <a name="projection-transform-direct3d-9"></a>Trasformazione proiezione (Direct3D 9)
 
-È possibile pensare alla trasformazione della proiezione come al controllo degli elementi interni della fotocamera. è analogo alla scelta di una lente per la fotocamera. Si tratta del tipo di trasformazione più complesso tra i tre. Questa discussione sulla trasformazione della proiezione è organizzata negli argomenti seguenti.
+È possibile pensare alla trasformazione della proiezione come al controllo degli elementi interni della fotocamera. è analogo alla scelta di una lente per la fotocamera. Si tratta del più complesso dei tre tipi di trasformazione. Questa discussione sulla trasformazione della proiezione è organizzata negli argomenti seguenti.
 
 La matrice di proiezione è in genere una proiezione di scala e prospettiva. La trasformazione di proiezione converte il frustum di visualizzazione in una forma cuboide. Poiché l'estremità più vicina del frustum di visualizzazione è più piccola dell'estremità più distante, ciò ha l'effetto di espandere gli oggetti che si avvicinano alla fotocamera; questa è la modalità di applicazione della prospettiva alla scena.
 
@@ -47,7 +47,7 @@ Per l'applicazione, l'uso degli angoli del campo di visualizzazione per definire
 
 ![equazioni dei significati delle variabili w e h](images/prjmatx3.png)
 
-In queste formule Zn rappresenta la posizione del piano di ritaglio vicino e le variabili V<sub>w</sub> e Vh rappresentano la larghezza e l'altezza del viewport, nello spazio della fotocamera.
+In queste formule, Zn rappresenta la posizione del piano di ritaglio vicino e le variabili V<sub>w</sub> e Vh rappresentano la larghezza e l'altezza del viewport, nello spazio della fotocamera.
 
 Per un'applicazione C++, queste due dimensioni corrispondono direttamente ai membri Width e Height della [**struttura D3DVIEWPORT9.**](d3dviewport9.md)
 
@@ -104,7 +104,7 @@ La libreria di utilità D3DX fornisce le funzioni seguenti che consentono di con
 
 ## <a name="a-w-friendly-projection-matrix"></a>Matrice di proiezione di tipo W
 
-Direct3D può usare il componente w di un vertice che è stato trasformato dalle matrici di mondo, visualizzazione e proiezione per eseguire calcoli basati sulla profondità in effetti di buffer di profondità o di effetto effetto di effetto effetto di effetto di profondità buffer o di proiezione. Calcoli come questi richiedono che la matrice di proiezione normalizzi w in modo che sia equivalente allo spazio globale z. In breve, se la matrice di proiezione include un coefficiente (3,4) che non è 1, è necessario ridimensionare tutti i coefficienti in base all'inverso del coefficiente (3,4) per creare una matrice appropriata. Se non si specifica una matrice conforme, gli effetti e il buffering della profondità non vengono applicati correttamente.
+Direct3D può usare il componente w di un vertice che è stato trasformato dalle matrici di mondo, visualizzazione e proiezione per eseguire calcoli basati sulla profondità in effetti di buffer di profondità o di effetto effetto di effetto di profondità buffer o di proiezione. Calcoli come questi richiedono che la matrice di proiezione normalizzi w in modo che sia equivalente allo spazio globale z. In breve, se la matrice di proiezione include un coefficiente (3,4) che non è 1, è necessario ridimensionare tutti i coefficienti in base all'inverso del coefficiente (3,4) per creare una matrice appropriata. Se non si specifica una matrice conforme, gli effetti e il buffering della profondità non vengono applicati correttamente.
 
 Nella figura seguente viene illustrata una matrice di proiezione non conforme e la stessa matrice ridimensionata in modo che sia abilitata l'icona relativa agli occhi.
 

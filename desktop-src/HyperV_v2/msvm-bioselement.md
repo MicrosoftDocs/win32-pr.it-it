@@ -1,7 +1,7 @@
 ---
-description: Rappresenta il software di basso livello caricato in RAM per configurare e avviare il sistema.
+description: Rappresenta il software di basso livello caricato nella RAM per configurare e avviare il sistema.
 ms.assetid: D123601A-DEE6-43EA-BD95-1F7F0F2C2B43
-title: Classe Msvm_BIOSElement
+title: Msvm_BIOSElement classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -53,18 +53,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d8d36ea50791bf6f1413815583fe1168f564d50d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8433c8fda6d438e4f77fb763be42467aab05ab976927f018e895a30d5f9c6226
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118149301"
 ---
-# <a name="msvm_bioselement-class"></a>\_Classe MSVM bioselement
+# <a name="msvm_bioselement-class"></a>Classe \_ MSvm BIOSElement
 
-Rappresenta il software di basso livello caricato in RAM per configurare e avviare il sistema. Il BIOS non è un dispositivo logico, quindi il BIOS virtuale non deve essere considerato come un dispositivo della macchina virtuale. Poiché non si tratta di un dispositivo, non dispone di un pool di risorse corrispondente. L'oggetto BIOS è associato alla macchina virtuale tramite l'associazione [**\_ SystemBIOS di MSVM**](msvm-systembios.md) .
+Rappresenta il software di basso livello caricato nella RAM per configurare e avviare il sistema. Il BIOS non è un dispositivo logico, quindi il BIOS virtuale non deve essere pensato come un dispositivo macchina virtuale. Poiché non è un dispositivo, non dispone di un pool di risorse corrispondente. L'oggetto BIOS è associato alla macchina virtuale tramite [**l'associazione \_ SystemBIOS msvm.**](msvm-systembios.md)
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -117,33 +117,33 @@ class Msvm_BIOSElement : CIM_BIOSElement
 
 ## <a name="members"></a>Members
 
-La classe **MSVM \_ bioselement** presenta questi tipi di membri:
+La **classe \_ MSvm BIOSElement** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **MSVM \_ bioselement** dispone di queste proprietà.
+La **classe MSvm \_ BIOSElement** ha queste proprietà.
 
 <dl> <dt>
 
 **BaseBoardSerialNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Il numero di serie della lavagna di base nella macchina virtuale.
+Numero di serie per la scheda di base nella macchina virtuale.
 
 </dd> <dt>
 
 **BIOSGUID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -156,7 +156,7 @@ Identificatore univoco per il BIOS.
 **BIOSNumLock**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -169,68 +169,68 @@ Stato abilitato del blocco num nel BIOS.
 **BIOSSerialNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Il numero di serie per il BIOS.
+Numero di serie per il BIOS.
 
 </dd> <dt>
 
 **BootOrder**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato"), [**massimo**](/windows/desktop/WmiSdk/standard-qualifiers) (4)
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato"), [**MAX**](/windows/desktop/WmiSdk/standard-qualifiers) (4)
 </dt> </dl>
 
-Ordine in cui verrà eseguita la ricerca dei dispositivi per un settore di avvio all'avvio.
+Ordine in cui i dispositivi verranno cercati per un settore di avvio all'avvio.
 
 </dd> <dt>
 
 **BuildNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **maxlen** (64)
+Qualificatori: **MaxLen** (64)
 </dt> </dl>
 
-Identificatore interno per questa compilazione dell'elemento software. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)ed è sempre impostata su 14.
+Identificatore interno per questa compilazione dell'elemento software. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)e viene sempre impostata su 14.
 
 </dd> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **maxlen** (64)
+Qualificatori: **MaxLen** (64)
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **ChassisAssetTag**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -243,7 +243,7 @@ Popolato automaticamente dal BIOS quando viene creata la macchina virtuale.
 **ChassisSerialNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -256,106 +256,106 @@ Popolato automaticamente dal BIOS quando viene creata la macchina virtuale.
 **CodeSet**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **maxlen** (64)
+Qualificatori: **MaxLen** (64)
 </dt> </dl>
 
-Set di codici utilizzato dall'elemento software. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)ed è sempre impostata su **null**.
+Set di codice utilizzato dall'elemento software. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)ed è sempre impostata su **Null.**
 
 </dd> <dt>
 
 **CommunicationStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica la capacità della strumentazione di comunicare con l'elemento gestito sottostante. Un valore **null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Indica la possibilità della strumentazione di comunicare con l'elemento gestito sottostante. Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **CurrentLanguage**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Lingua attualmente selezionata per il BIOS. Questa proprietà viene ereditata da [**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement)ed è sempre impostata su "en \| US \| ISO8859-1".
+Lingua attualmente selezionata per il BIOS. Questa proprietà viene ereditata da [**CIM \_ BIOSElement**](/windows/desktop/CIMWin32Prov/cim-bioselement)ed è sempre impostata su "en \| US \| iso8859-1".
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **DetailedStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Integra la proprietà **PrimaryStatus** con ulteriori dettagli sullo stato. Un valore **null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Integra la **proprietà PrimaryStatus** con dettagli aggiuntivi sullo stato. Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'elemento. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Nome visualizzato per l'elemento. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **HealthState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica lo stato corrente dell'elemento. Questo attributo esprime lo stato di integrità di questo elemento ma non necessariamente dei relativi sottocomponenti.
+Specifica l'integrità corrente dell'elemento. Questo attributo esprime l'integrità di questo elemento, ma non necessariamente quella dei relativi sottocomponenti.
 
-Quando si verifica un errore critico, controllare il registro eventi per informazioni dettagliate. La proprietà **EnabledState** può inoltre contenere ulteriori informazioni. Ad esempio, quando lo spazio su disco è insufficiente, **HealthState** è impostato su 25, la macchina virtuale viene sospesa e **EnabledState** è impostato su 32768 (in pausa).
+Quando si verifica un errore critico, controllare il registro eventi per informazioni dettagliate. Anche **la proprietà EnabledState** può contenere altre informazioni. Ad esempio, quando lo spazio su disco è criticamente basso, **HealthState** è impostato su 25, la macchina virtuale viene sospesa e **EnabledState** è impostato su 32768 (In pausa).
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 
 
 | Valore                                                                                                                                                                                                                                                            | Significato                                                                                                                                                                                                                                                                                                        |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="OK"></span><span id="ok"></span><dl> <dt>**OK**</dt> <dt>5</dt> </dl>                                                                               | La macchina virtuale è completamente funzionante e funziona entro i normali parametri operativi e senza errori.<br/>                                                                                                                                                                                    |
-| <span id="Major_Failure"></span><span id="major_failure"></span><span id="MAJOR_FAILURE"></span><dl> <dt>**Errore principale**</dt> <dt>20</dt> </dl>             | Si è verificato un errore grave della macchina virtuale. Questo valore viene usato quando lo spazio su disco di uno o più dischi che contengono i VHD della macchina virtuale è insufficiente e la macchina virtuale è stata sospesa.<br/>                                                                                                   |
-| <span id="Critical_failure"></span><span id="critical_failure"></span><span id="CRITICAL_FAILURE"></span><dl> <dt>**Errore critico**</dt> <dt>25</dt> </dl> | L'elemento è non funzionale e il ripristino potrebbe non essere possibile. Questo può indicare che il processo di lavoro della macchina virtuale (Vmwp.exe) non risponde alle richieste di controllo o informazioni oppure che uno o più dischi che contengono i dischi rigidi virtuali per la macchina virtuale hanno spazio su disco insufficiente.<br/> |
+| <span id="Major_Failure"></span><span id="major_failure"></span><span id="MAJOR_FAILURE"></span><dl> <dt>**Errore principale**</dt> <dt>20</dt> </dl>             | La macchina virtuale ha subito un errore grave. Questo valore viene usato quando uno o più dischi contenenti i dischi rigidi virtuali della macchina virtuale hanno spazio su disco insufficiente e la macchina virtuale è stata sospesa.<br/>                                                                                                   |
+| <span id="Critical_failure"></span><span id="critical_failure"></span><span id="CRITICAL_FAILURE"></span><dl> <dt>**Errore critico**</dt> <dt>25</dt> </dl> | L'elemento non è funzionante e il ripristino potrebbe non essere possibile. Ciò può indicare che il processo di lavoro per la macchina virtuale (Vmwp.exe) non risponde alle richieste di controllo o informazioni o che uno o più dischi che contengono i dischi rigidi virtuali per la macchina virtuale hanno spazio su disco insufficiente.<br/> |
 
 
 
@@ -363,77 +363,77 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/
 
 </dd> <dt>
 
-**IdentificationCode**
+**Codice di identificazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **maxlen** (64)
+Qualificatori: **MaxLen** (64)
 </dt> </dl>
 
-Identificatore del produttore di questo elemento software. Spesso si tratta di una SKU (Stock Keeping Unit) o di un numero di parte. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)ed è sempre impostata su **null**.
+Identificatore del produttore per questo elemento software. Spesso si tratta di un'unità di mantenimento delle scorte (SKU) o di un numero di parte. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)ed è sempre impostata su **Null.**
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Popolato automaticamente dal BIOS quando viene creata la macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Popolato automaticamente dal BIOS quando viene creata la macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **LanguageEdition**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **maxlen** (32)
+Qualificatori: **MaxLen** (32)
 </dt> </dl>
 
-Edizione del linguaggio di questo elemento software. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)ed è sempre impostata su **null**.
+Edizione del linguaggio di questo elemento software. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)ed è sempre impostata su **Null.**
 
 </dd> <dt>
 
 **ListOfLanguages**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Elenco di lingue installabili per il BIOS. Questa proprietà viene ereditata da [**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement)ed è sempre impostata su "en \| US \| ISO8859-1".
+Elenco di lingue installabili per il BIOS. Questa proprietà viene ereditata da [**CIM \_ BIOSElement**](/windows/desktop/CIMWin32Prov/cim-bioselement)ed è sempre impostata su "en \| US \| iso8859-1".
 
 </dd> <dt>
 
@@ -446,7 +446,7 @@ Tipo di dati: **unit64**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indirizzo finale della memoria occupata da questo BIOS. Questa proprietà viene ereditata da [**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement)ed è sempre impostata su 0xfffff.
+Indirizzo finale della memoria occupata da questo BIOS. Questa proprietà viene ereditata da [**CIM \_ BIOSElement**](/windows/desktop/CIMWin32Prov/cim-bioselement)ed è sempre impostata su 0xFFFFF.
 
 </dd> <dt>
 
@@ -459,109 +459,109 @@ Tipo di dati: **unit64**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indirizzo iniziale della memoria occupata da questo BIOS. Questa proprietà viene ereditata da [**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement)ed è sempre impostata su 0xE0000.
+Indirizzo iniziale della memoria occupata da questo BIOS. Questa proprietà viene ereditata da [**CIM \_ BIOSElement**](/windows/desktop/CIMWin32Prov/cim-bioselement)ed è sempre impostata su 0xE0000.
 
 </dd> <dt>
 
 **LoadUtilityInformation**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa che descrive l'utilità Flash/Load BIOS necessaria per aggiornare l'elemento BIOS. La versione e altre informazioni possono essere indicate in questa proprietà. Questa proprietà viene ereditata da [**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement)ed è sempre impostata su **null**.
+Stringa che descrive l'utilità flash/caricamento BIOS necessaria per aggiornare l'elemento BIOS. La versione e altre informazioni possono essere indicate in questa proprietà. Questa proprietà viene ereditata da [**CIM \_ BIOSElement**](/windows/desktop/CIMWin32Prov/cim-bioselement)ed è sempre impostata su **Null.**
 
 </dd> <dt>
 
 **Produttore**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **maxlen** (256)
+Qualificatori: **MaxLen** (256)
 </dt> </dl>
 
-Produttore del BIOS. Questa proprietà viene ereditata da [**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement)ed è sempre impostata su "Microsoft Corporation".
+Produttore del BIOS. Questa proprietà viene ereditata da [**CIM \_ BIOSElement**](/windows/desktop/CIMWin32Prov/cim-bioselement)ed è sempre impostata su "Microsoft Corporation".
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **maxlen** (1024)
+Qualificatori: **MaxLen** (1024)
 </dt> </dl>
 
-Nome utilizzato per identificare questo elemento software. Quando è sottoclassata, è possibile eseguire l'override di questa proprietà in modo che sia una proprietà chiave. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)ed è sempre impostata su "BIOS".
+Nome utilizzato per identificare questo elemento software. Quando è sottoclassata, questa proprietà può essere sottoposta a override come proprietà chiave. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)ed è sempre impostata su "BIOS".
 
 </dd> <dt>
 
 **OperatingStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Fornisce informazioni sullo stato corrente per la condizione operativa dell'elemento e può essere utilizzato per fornire maggiori dettagli rispetto al valore della proprietà **EnabledState** . Un valore **null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornisce informazioni sullo stato corrente per la condizione operativa dell'elemento e può essere usato per fornire maggiori dettagli rispetto al valore della **proprietà EnabledState.** Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice che contiene gli stati correnti dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement). Il valore in corrispondenza dell'indice zero (0) corrisponde a uno dei valori seguenti.
+Matrice che contiene gli stati correnti dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement) Il valore in corrispondenza dell'indice zero (0) è uno dei valori seguenti.
 
 
 
 | Valore                                                                                                                                                                                                                                                                   | Significato                                                                                                                                                                                                                                                           |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="OK"></span><span id="ok"></span><dl> <dt>**OK**</dt> <dt>2</dt> </dl>                                                                                      | La macchina virtuale è funzionante e funziona normalmente.<br/>                                                                                                                                                                                              |
-| <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span><dl> <dt></dt> Ridotto <dt>3</dt> </dl>                                         | La macchina virtuale è solo parzialmente funzionante. Ciò indica che non è possibile accedere alla risorsa di archiviazione che contiene la configurazione. Una macchina virtuale in questo stato può essere disattivata o eliminata. <br/>                                               |
-| <span id="Predictive_Failure"></span><span id="predictive_failure"></span><span id="PREDICTIVE_FAILURE"></span><dl> <dt>**Errore predittivo**</dt> <dt>5</dt> </dl> | La macchina virtuale è funzionante, ma potrebbe non riuscire in futuro. Ciò indica che lo spazio disponibile nello spazio di archiviazione che contiene il disco rigido virtuale della macchina virtuale è insufficiente. La macchina virtuale verrà sospesa se non viene reso disponibile più spazio su disco.<br/> |
-| <span id="Stopped"></span><span id="stopped"></span><span id="STOPPED"></span><dl> <dt>**Arrestato**</dt> <dt>10</dt> </dl>                                            | Questo valore non è supportato. Se la macchina virtuale viene arrestata, il valore della proprietà **EnabledState** sarà 3 (disabilitato).<br/>                                                                                                                       |
+| <span id="OK"></span><span id="ok"></span><dl> <dt>**OK**</dt> <dt>2</dt> </dl>                                                                                      | La macchina virtuale funziona e funziona normalmente.<br/>                                                                                                                                                                                              |
+| <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span><dl> <dt>**Danneggiato**</dt> <dt>3</dt> </dl>                                         | La macchina virtuale è solo parzialmente funzionale. Ciò indica che l'archiviazione che contiene la configurazione non è accessibile. Una macchina virtuale in questo stato può essere solo spenta o eliminata. <br/>                                               |
+| <span id="Predictive_Failure"></span><span id="predictive_failure"></span><span id="PREDICTIVE_FAILURE"></span><dl> <dt>**Errore predittivo**</dt> <dt>5</dt> </dl> | La macchina virtuale è funzionante ma potrebbe avere esito negativo in futuro. Ciò indica che lo spazio di archiviazione che contiene il disco rigido virtuale della macchina virtuale è insufficiente. La macchina virtuale verrà sospesa se non è disponibile più spazio su disco.<br/> |
+| <span id="Stopped"></span><span id="stopped"></span><span id="STOPPED"></span><dl> <dt>**Arrestato**</dt> <dt>10</dt> </dl>                                            | Questo valore non è supportato. Se la macchina virtuale viene arrestata, il valore della proprietà **EnabledState** sarà 3 (Disabled).<br/>                                                                                                                       |
 | <span id="In_Service"></span><span id="in_service"></span><span id="IN_SERVICE"></span><dl> <dt>**Nel servizio**</dt> <dt>11</dt> </dl>                                | La macchina virtuale sta elaborando una richiesta.<br/>                                                                                                                                                                                                           |
-| <span id="Dormant"></span><span id="dormant"></span><span id="DORMANT"></span><dl> <dt>15</dt> <dt>**inattivo**</dt> </dl>                                            | Questo valore non è supportato. Se la macchina virtuale viene sospesa o sospesa, la proprietà **EnabledState** avrà il valore 32769 (Suspended) o 32768 (Paused).<br/>                                                                                    |
+| <span id="Dormant"></span><span id="dormant"></span><span id="DORMANT"></span><dl> <dt>**Inattivo**</dt> <dt>15</dt> </dl>                                            | Questo valore non è supportato. Se la macchina virtuale viene sospesa o sospesa, il valore della proprietà **EnabledState** sarà 32769 (Sospeso) o 32768 (Sospeso).<br/>                                                                                    |
 
 
 
  
 
-Il valore in corrispondenza dell'indice uno (1) è facoltativo e contiene informazioni sullo stato secondario. Un client deve usare lo stato primario da index zero (0) per determinare se una nuova richiesta può essere rilasciata alla macchina virtuale. Se **OperationalStatus** \[ 0 \] è 2 (OK), l'operazione indicata da **OperationalStatus** \[ 1 \] può essere interrotta.
+Il valore in corrispondenza dell'indice 1 (1) è facoltativo e contiene informazioni sullo stato secondario. Un client deve usare lo stato primario dall'indice zero (0) per determinare se è possibile determinare se è possibile emissione di una nuova richiesta alla macchina virtuale. Se **OperationalStatus** \[ 0 è \] 2 (OK), l'operazione indicata da **OperationalStatus** \[ 1 può essere \] interrotta.
 
-Il valore in **OperationalStatus** \[ 1 \] è uno dei valori seguenti.
+Il valore **in OperationalStatus** \[ 1 è uno dei valori \] seguenti.
 
 
 
 | Valore                                                                                                                                                                                                                                                                                                   | Significato                                                                                       |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| <span id="Creating_Snapshot"></span><span id="creating_snapshot"></span><span id="CREATING_SNAPSHOT"></span><dl> <dt>**Creazione dello Snapshot**</dt> <dt>32768</dt> </dl>                                 | È in corso la creazione di uno snapshot per la macchina virtuale.<br/>             |
-| <span id="Applying_Snapshot"></span><span id="applying_snapshot"></span><span id="APPLYING_SNAPSHOT"></span><dl> <dt>**Applicazione dello Snapshot**</dt> <dt>32769</dt> </dl>                                 | È in corso l'applicazione di uno snapshot alla macchina virtuale.<br/>              |
-| <span id="Deleting_Snapshot"></span><span id="deleting_snapshot"></span><span id="DELETING_SNAPSHOT"></span><dl> <dt>**Eliminazione dello Snapshot**</dt> <dt>32770</dt> </dl>                                 | È in corso l'eliminazione di uno snapshot dalla macchina virtuale.<br/>            |
+| <span id="Creating_Snapshot"></span><span id="creating_snapshot"></span><span id="CREATING_SNAPSHOT"></span><dl> <dt>**Creazione dello snapshot**</dt> <dt>32768</dt> </dl>                                 | È in corso la creazione di uno snapshot per la macchina virtuale.<br/>             |
+| <span id="Applying_Snapshot"></span><span id="applying_snapshot"></span><span id="APPLYING_SNAPSHOT"></span><dl> <dt>**Applicazione dello snapshot**</dt> <dt>32769</dt> </dl>                                 | È in corso l'applicazione di uno snapshot alla macchina virtuale.<br/>              |
+| <span id="Deleting_Snapshot"></span><span id="deleting_snapshot"></span><span id="DELETING_SNAPSHOT"></span><dl> <dt>**Eliminazione dello snapshot**</dt> <dt>32770</dt> </dl>                                 | È in corso l'eliminazione di uno snapshot dalla macchina virtuale.<br/>            |
 | <span id="Waiting_to_Start"></span><span id="waiting_to_start"></span><span id="WAITING_TO_START"></span><dl> <dt>**In attesa dell'avvio**</dt> <dt>32771</dt> </dl>                                     | La macchina virtuale verrà avviata dopo che è trascorso il ritardo di avvio automatico.<br/> |
-| <span id="Merging_Disks"></span><span id="merging_disks"></span><span id="MERGING_DISKS"></span><dl> <dt>**Unione di dischi**</dt> <dt>32772</dt> </dl>                                                 | I dischi rigidi virtuali degli snapshot eliminati in precedenza vengono uniti.<br/>             |
+| <span id="Merging_Disks"></span><span id="merging_disks"></span><span id="MERGING_DISKS"></span><dl> <dt>**Unione di dischi**</dt> <dt>32772</dt> </dl>                                                 | È in corso il merge dei dischi rigidi virtuali degli snapshot eliminati in precedenza.<br/>             |
 | <span id="Exporting_Virtual_Machine"></span><span id="exporting_virtual_machine"></span><span id="EXPORTING_VIRTUAL_MACHINE"></span><dl> <dt>**Esportazione della macchina virtuale**</dt> <dt>32773</dt> </dl> | È in corso l'esportazione della macchina virtuale.<br/>                                             |
-| <span id="Migrating_Virtual_Machine"></span><span id="migrating_virtual_machine"></span><span id="MIGRATING_VIRTUAL_MACHINE"></span><dl> <dt>**Migrazione della macchina virtuale**</dt> <dt>32774</dt> </dl> | È in corso la migrazione della macchina virtuale da un computer fisico a un altro.<br/>  |
+| <span id="Migrating_Virtual_Machine"></span><span id="migrating_virtual_machine"></span><span id="MIGRATING_VIRTUAL_MACHINE"></span><dl> <dt>**Migrazione della macchina virtuale**</dt> <dt>32774</dt> </dl> | La macchina virtuale viene migrata in tempo reale da un computer fisico a un altro.<br/>  |
 
 
 
@@ -572,177 +572,177 @@ Il valore in **OperationalStatus** \[ 1 \] è uno dei valori seguenti.
 **OtherTargetOS**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **maxlen** (64)
+Qualificatori: **MaxLen** (64)
 </dt> </dl>
 
-Il produttore e il sistema operativo per un elemento software quando la proprietà **TargetOperatingSystem** ha un valore 1 (other), che richiede che la proprietà **OtherTargetOS** disponga di un valore non **null** . Per tutti gli altri valori di **TargetOperatingSystem**, la proprietà **OtherTargetOS** deve essere **null**. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)ed è sempre impostata su **null**.
+Produttore e sistema operativo per un elemento software quando la proprietà **TargetOperatingSystem** ha valore 1 (Other), che richiede che la proprietà **OtherTargetOS** abbia un valore diverso da **Null.** Per tutti gli altri valori **di TargetOperatingSystem,** la **proprietà OtherTargetOS** deve essere **Null.** Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)ed è sempre impostata su **Null.**
 
 </dd> <dt>
 
 **PrimaryBIOS**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se true, si tratta del BIOS principale del computer. Questa proprietà viene ereditata da [**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement)ed è sempre impostata su **true**.
+Se True, si tratta del BIOS primario del sistema informatico. Questa proprietà viene ereditata da [**CIM \_ BIOSElement**](/windows/desktop/CIMWin32Prov/cim-bioselement)ed è sempre impostata su **True.**
 
 </dd> <dt>
 
 **PrimaryStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Fornisce informazioni sullo stato di alto livello. Questa proprietà deve essere utilizzata insieme alla proprietà **DetailedStatus** per fornire informazioni dettagliate sullo stato di integrità per l'elemento e i relativi sottocomponenti. Un valore **null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornisce informazioni di alto livello sullo stato. Questa proprietà deve essere usata insieme alla proprietà **DetailedStatus** per fornire informazioni dettagliate sullo stato di integrità per l'elemento e i relativi sottocomponenti. Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **RegistryURIs**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di stringhe che rappresenta il percorso di pubblicazione del registro attributi BIOS o dei registri a cui è conforme l'implementazione. Questa proprietà viene ereditata da [**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement).
+Matrice di stringhe che rappresenta il percorso di pubblicazione del registro attributi BIOS o dei registri a cui è conforme l'implementazione. Questa proprietà viene ereditata da [**CIM \_ BIOSElement**](/windows/desktop/CIMWin32Prov/cim-bioselement).
 
 </dd> <dt>
 
 **ReleaseDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Data di rilascio del BIOS. Questa proprietà viene ereditata da [**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement).
+Data di rilascio del BIOS. Questa proprietà viene ereditata da [**CIM \_ BIOSElement**](/windows/desktop/CIMWin32Prov/cim-bioselement).
 
 </dd> <dt>
 
-**SerialNumber**
+**Serialnumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **maxlen** (64)
+Qualificatori: **MaxLen** (64)
 </dt> </dl>
 
-Il numero di serie assegnato del BIOS. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement).
+Numero di serie assegnato del BIOS. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement.**](/windows/desktop/CIMWin32Prov/cim-softwareelement)
 
 </dd> <dt>
 
 **SoftwareElementID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **maxlen** (256)
+Qualificatori: **MaxLen** (256)
 </dt> </dl>
 
-Identificatore per l'elemento software. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)ed è sempre impostata su "Microsoft:*GUID* \\ *dati specifici del dispositivo*".
+Identificatore per l'elemento software. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)ed è sempre impostata su "Microsoft:*GUID* \\ *device-specific data".*
 
 </dd> <dt>
 
 **SoftwareElementState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stato del ciclo di vita di un elemento software. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)ed è sempre impostata su 2 (eseguibile).
+Stato del ciclo di vita di un elemento software. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)e viene sempre impostata su 2 (eseguibile).
 
 </dd> <dt>
 
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement), ma non viene utilizzata.
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)ma non viene usata.
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **arrayType** ("indicizzato")
+Qualificatori: **ArrayType** ("Indicizzato")
 </dt> </dl>
 
-Matrice contenente stringhe che descrivono i valori corrispondenti della matrice **OperationalStatus** . Se ad esempio 11 (in servizio) è il valore assegnato a **OperationalStatus** \[ 0 \] , **StatusDescriptions** \[ 0 \] può contenere una spiegazione del motivo per cui la macchina virtuale sta elaborando una richiesta. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Matrice contenente stringhe che descrivono i valori della matrice **OperationalStatus** corrispondenti. Ad esempio, se 11 (In Service) è il valore assegnato a **OperationalStatus** \[ \] 0, **StatusDescriptions** 0 può contenere una spiegazione del motivo per cui la macchina virtuale sta elaborando \[ una \] richiesta. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **TargetOperatingSystem**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ambiente del sistema operativo dell'elemento. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)ed è sempre impostata su 0 (Unknown).
+Ambiente del sistema operativo dell'elemento. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)ed è sempre impostata su 0 (Sconosciuto).
 
 </dd> <dt>
 
-**Versione**
+**Version**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **maxlen** (64)
+Qualificatori: **MaxLen** (64)
 </dt> </dl>
 
-Versione del BIOS. Questa proprietà viene ereditata da [**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement)ed è sempre impostata su "8.02.00".
+Versione del BIOS. Questa proprietà viene ereditata da [**CIM \_ BIOSElement**](/windows/desktop/CIMWin32Prov/cim-bioselement)ed è sempre impostata su "8.02.00".
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla classe **MSVM \_ bioselement** potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla **classe MSvm \_ BIOSElement** potrebbe essere limitato dal filtro del controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -750,10 +750,10 @@ L'accesso alla classe **MSVM \_ bioselement** potrebbe essere limitato dal filtr
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -762,13 +762,13 @@ L'accesso alla classe **MSVM \_ bioselement** potrebbe essere limitato dal filtr
 
 <dl> <dt>
 
-[**CIM \_ bioselement**](cim-bioselement.md)
+[**CIM \_ BIOSElement**](cim-bioselement.md)
 </dt> <dt>
 
 [Classi BIOS](bios-classes.md)
 </dt> <dt>
 
-[**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement)
+[**CIM \_ BIOSElement**](/windows/desktop/CIMWin32Prov/cim-bioselement)
 </dt> </dl>
 
  

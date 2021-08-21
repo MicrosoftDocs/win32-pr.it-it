@@ -1,61 +1,61 @@
 ---
 title: Porting di superfici NURBS
-description: La tabella seguente elenca le funzioni di IRIS GL per il disegno di superfici NURBS e le relative funzioni OpenGL equivalenti.
+description: Nella tabella seguente sono elencate le funzioni IRIS GL per il disegno di superfici NURBS e le funzioni OpenGL equivalenti.
 ms.assetid: d34ac6af-55d7-4128-bcd9-3c910607895f
 keywords:
-- Porting di IRIS GL, superfici NURBS
-- porting da IRIS GL, superfici NURBS
-- porting in OpenGL da IRIS GL, superfici NURBS
-- Porting OpenGL da IRIS GL, superfici NURBS
+- Porting IRIS GL, superfici NURBS
+- porting da superfici IRIS GL,NURBS
+- porting a OpenGL da IRIS GL, superfici NURBS
+- Porting OpenGL da superfici IRIS GL,NURBS
 - Superfici NURBS
-- NURBS (B-spline razionale non uniforme)
-- B-spline razionale non uniforme (NURBS)
+- NURBS (B-Spline razionale non uniforme)
+- B-Spline razionale non uniforme (NURBS)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f7260750db4d221743d3e764d6dd30e2de499383
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0a57de3a3b413d909ed034e9d355f4099c196a89b1e7ed93a69fe99ea72fca54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103712514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118132350"
 ---
 # <a name="porting-nurbs-surfaces"></a>Porting di superfici NURBS
 
-La tabella seguente elenca le funzioni di IRIS GL per il disegno di superfici NURBS e le relative funzioni OpenGL equivalenti.
+Nella tabella seguente sono elencate le funzioni IRIS GL per il disegno di superfici NURBS e le funzioni OpenGL equivalenti.
 
 
 
-| Funzione IRIS GL | OpenGL (funzione)                            | Significato                       |
+| Funzione GL IRIS | Funzione OpenGL                            | Significato                       |
 |------------------|--------------------------------------------|-------------------------------|
-| **bgnsurface**   | [**gluBeginSurface**](glubeginsurface.md) | Inizia una definizione di superficie.  |
-| **NurbsSurface** | [**gluNurbsSurface**](glunurbssurface.md) | Specifica gli attributi di superficie. |
+| **bgnsurface**   | [**gluBeginSurface**](glubeginsurface.md) | Avvia una definizione di superficie.  |
+| **nurbssurface** | [**gluNurbsSurface**](glunurbssurface.md) | Specifica gli attributi della superficie. |
 | **endsurface**   | [**gluEndSurface**](gluendsurface.md)     | Termina una definizione di superficie.    |
 
 
 
- 
+ 
 
-La tabella seguente elenca i parametri di IRIS GL per i tipi di superficie e i parametri OpenGL equivalenti.
+La tabella seguente elenca i parametri IRIS GL per i tipi di superficie e i relativi parametri OpenGL equivalenti.
 
 
 
 | Tipo GL IRIS | Tipo OpenGL                 | Significato                                                |
 |--------------|-----------------------------|--------------------------------------------------------|
-| N \_ V3D       | \_Vertice GL \_ map2 \_ 3         | Curva polinomiale.                                      |
-| N \_ V3DR      | \_Map2 \_ Vertex \_ 4         | Curva razionale.                                        |
-| N \_ C4D       | \_Map2 \_ colore \_ 4 GL          | I punti di controllo definiscono la superficie del colore nel form (R, G, B, A). |
+| N \_ V3D       | VERTICE \_ GL MAP2 \_ \_ 3         | Curva polinomiale.                                      |
+| N \_ V3DR      | VERTICE \_ GL MAP2 \_ \_ 4         | Curva razionale.                                        |
+| N \_ C4D       | GL \_ MAP2 \_ COLOR \_ 4          | I punti di controllo definiscono la superficie di colore nel modulo (R,G,B,A). |
 | N \_ C4DR      |                             |                                                        |
-| N \_ T2D       | \_ \_ Coord trama GL \_ map2 \_ 2 | I punti di controllo sono coordinate di trama.                |
-| N \_ T2DR      | \_Trama GL \_ map2 \_ Coord \_ 3 | I punti di controllo sono coordinate di trama.                |
-|              | \_Normale map2 \_ GL            | I punti di controllo sono normali.                            |
+| N \_ T2D       | GL \_ MAP2 \_ TEXTURE \_ COORD \_ 2 | I punti di controllo sono coordinate di trama.                |
+| N \_ T2DR      | GL \_ MAP2 \_ TEXTURE \_ COORD \_ 3 | I punti di controllo sono coordinate di trama.                |
+|              | GL \_ MAP2 \_ NORMAL            | I punti di controllo sono normali.                            |
 
 
 
- 
+ 
 
-Per ulteriori informazioni sui tipi di analizzatore disponibili, vedere [**glMap2**](glmap2.md).
+Per altre informazioni sui tipi di analizzatore disponibili, vedere [**glMap2**](glmap2.md).
 
-Nell'esempio di codice seguente viene disegnata una superficie NURBS tagliata:
+L'esempio di codice seguente disegna una superficie NURBS tagliata:
 
 
 ```C++
@@ -191,9 +191,9 @@ int main(int argc, char** argv)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Flag di condizione di filtro (Fwptypes. h)
-description: I flag della condizione di filtro della piattaforma filtro Windows (WFP) sono rappresentati da un bit.
+title: Flag di condizione di filtro (Fwptypes.h)
+description: I flag Windows della condizione di filtro della piattaforma filtro windows (WFP, Windows Filtering Platform) sono rappresentati da un campo di bit.
 ms.assetid: fe879479-331d-42ef-ac2f-634f0c13c21d
 topic_type:
 - apiref
@@ -51,60 +51,60 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c88fa56f37332d52ed31f5ef042c5064a82ac4d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5a43ae080a9ef1c17baa262cc1154f9ae89a837f0ec6f6919d80c22376f3b995
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118150894"
 ---
 # <a name="filtering-condition-flags"></a>Flag di condizione di filtro
 
-I flag della condizione di filtro della piattaforma filtro Windows (WFP) sono rappresentati da un bit.
+I flag Windows della condizione di filtro della piattaforma filtro windows (WFP, Windows Filtering Platform) sono rappresentati da un campo di bit.
 
-Questi flag e i livelli di filtro in cui possono essere usati sono definiti nel modo seguente.
+Questi flag e i livelli di filtro in cui possono essere usati sono definiti come segue.
 
 <dl> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_LOOPBACK"></span><span id="fwp_condition_flag_is_loopback"></span>**il \_ flag di condizione FWP \_ \_ è \_ loopback**
+<span id="FWP_CONDITION_FLAG_IS_LOOPBACK"></span><span id="fwp_condition_flag_is_loopback"></span>**IL \_ FLAG DELLA CONDIZIONE \_ FWP \_ È \_ LOOPBACK**
 </dt> <dd> <dl> <dt>
 
 
 
-Verifica se il traffico di rete è il traffico di loopback.
+Verifica se il traffico di rete è di loopback.
 
-Filtraggio di livelli:
+Livelli di filtro:
 
--   FWPM \_ Layer in \_ ingresso \_ IPPACKET \_ V {4 \| 6}
--   FWPM \_ Layer in \_ uscita \_ IPPACKET \_ V {4 \| 6}
--   FWPM \_ Layer \_ trasporto in \_ ingresso \_ V {4 \| 6}
--   FWPM \_ livello di \_ trasporto in uscita \_ \_ V {4 \| 6}
--   \_Flusso di livello FWPM \_ \_ {V4 \| 6}
+-   FWPM \_ LAYER \_ INBOUND \_ IPPACKET \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ OUTBOUND \_ IPPACKET \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ INBOUND TRANSPORT \_ \_ V{4 \| 6}
+-   FWPM \_ LAYER OUTBOUND TRANSPORT \_ \_ \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ STREAM \_ {V4 \| 6}
     > [!Note]  
     > Disponibile solo in Windows Server 2008, Windows Vista con SP1 e versioni successive.
 
      
 
--   \_ \_ Errore ICMP in ingresso FWPM layer \_ \_ \_ V {4 \| 6}
+-   ERRORE ICMP IN INGRESSO DEL LIVELLO FWPM \_ \_ \_ \_ \_ V{4 \| 6}
     > [!Note]  
     > Disponibile solo in Windows Server 2008, Windows Vista con SP1 e versioni successive.
 
      
 
--   \_ \_ Errore ICMP in uscita livello FWPM \_ \_ \_ V {4 \| 6}
+-   ERRORE ICMP IN USCITA DEL LIVELLO FWPM \_ \_ \_ \_ \_ V{4 \| 6}
     > [!Note]  
     > Disponibile solo in Windows Server 2008, Windows Vista con SP1 e versioni successive.
 
      
 
--   FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ accetta \_ V {4 \| 6}
--   FWPM \_ Layer \_ ale \_ auth \_ Connect \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV \_ ACCEPT \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH CONNECT \_ \_ V{4 \| 6}
     > [!Note]  
     > Disponibile solo in Windows Server 2008, Windows Vista con SP1 e versioni successive.
 
      
 
--   Flusso di FWPM \_ Layer \_ ale \_ \_ stabilito \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE FLOW ESTABLISHED \_ \_ \_ V{4 \| 6}
     > [!Note]  
     > Disponibile solo in Windows Server 2008, Windows Vista con SP1 e versioni successive.
 
@@ -113,148 +113,148 @@ Filtraggio di livelli:
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_IPSEC_SECURED"></span><span id="fwp_condition_flag_is_ipsec_secured"></span>**il \_ flag di condizione FWP \_ \_ è \_ protetto da IPSec \_**
+<span id="FWP_CONDITION_FLAG_IS_IPSEC_SECURED"></span><span id="fwp_condition_flag_is_ipsec_secured"></span>**IL \_ FLAG DELLA CONDIZIONE \_ FWP \_ È PROTETTO DA \_ \_ IPSEC**
 </dt> <dd> <dl> <dt>
 
 
 
 Verifica se il traffico di rete è protetto da IPsec.
 
-Filtraggio di livelli:
+Livelli di filtro:
 
--   FWPM \_ Layer in \_ ingresso \_ IPPACKET \_ V {4 \| 6}
--   FWPM \_ Layer \_ trasporto in \_ ingresso \_ V {4 \| 6}
--   FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ accetta \_ V {4 \| 6}
--   FWPM \_ Layer \_ ale \_ auth \_ Connect \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ INBOUND \_ IPPACKET \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ INBOUND TRANSPORT \_ \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV \_ ACCEPT \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH CONNECT \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_REAUTHORIZE"></span><span id="fwp_condition_flag_is_reauthorize"></span>**il \_ flag di condizione FWP \_ \_ è stato \_ riautorizzato**
+<span id="FWP_CONDITION_FLAG_IS_REAUTHORIZE"></span><span id="fwp_condition_flag_is_reauthorize"></span>**IL \_ FLAG DI CONDIZIONE \_ FWP \_ È \_ REAUTHORIZE**
 </dt> <dd> <dl> <dt>
 
 
 
 Verifica la modifica di un criterio anziché una nuova connessione.
 
-Filtraggio di livelli:
+Livelli di filtro:
 
--   FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ accetta \_ V {4 \| 6}
--   FWPM \_ Layer \_ ale \_ auth \_ Connect \_ V {4 \| 6}
-
-
-</dt> </dl> </dd> <dt>
-
-<span id="FWP_CONDITION_FLAG_IS_WILDCARD_BIND"></span><span id="fwp_condition_flag_is_wildcard_bind"></span>**il \_ flag di condizione FWP \_ \_ è \_ associato a caratteri jolly \_**
-</dt> <dd> <dl> <dt>
-
-
-
-Verifica se l'applicazione ha specificato un indirizzo jolly durante l'associazione a un indirizzo di rete locale.
-
-Livello filtro:
-
--   \_ \_ \_ Assegnazione delle risorse FWPM layer ale \_ \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV \_ ACCEPT \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH CONNECT \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_RAW_ENDPOINT"></span><span id="fwp_condition_flag_is_raw_endpoint"></span>**il \_ flag di condizione FWP \_ è un \_ \_ endpoint non elaborato \_**
+<span id="FWP_CONDITION_FLAG_IS_WILDCARD_BIND"></span><span id="fwp_condition_flag_is_wildcard_bind"></span>**IL \_ FLAG DI CONDIZIONE FWP \_ È \_ \_ L'ASSOCIAZIONE CON \_ CARATTERI JOLLY**
 </dt> <dd> <dl> <dt>
 
 
 
-Verifica se l'endpoint locale che invia e riceve il traffico è un endpoint non elaborato.
+Verifica se l'applicazione ha specificato un indirizzo con caratteri jolly durante l'associazione a un indirizzo di rete locale.
 
-Filtraggio di livelli:
+Livello di filtro:
 
--   FWPM \_ Layer \_ trasporto in \_ ingresso \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE RESOURCE ASSIGNMENT \_ \_ \_ V{4 \| 6}
+
+
+</dt> </dl> </dd> <dt>
+
+<span id="FWP_CONDITION_FLAG_IS_RAW_ENDPOINT"></span><span id="fwp_condition_flag_is_raw_endpoint"></span>**IL \_ FLAG DELLA CONDIZIONE \_ FWP \_ È UN ENDPOINT \_ NON \_ ELABORATO**
+</dt> <dd> <dl> <dt>
+
+
+
+Verifica se l'endpoint locale che invia e riceve traffico è un endpoint non elaborato.
+
+Livelli di filtro:
+
+-   FWPM \_ LAYER \_ INBOUND TRANSPORT \_ \_ V{4 \| 6}
     > [!Note]  
     > Disponibile solo in Windows Server 2008, Windows Vista con SP1 e versioni successive.
 
      
 
--   FWPM \_ livello di \_ trasporto in uscita \_ \_ V {4 \| 6}
+-   FWPM \_ LAYER OUTBOUND TRANSPORT \_ \_ \_ V{4 \| 6}
     > [!Note]  
     > Disponibile solo in Windows Server 2008, Windows Vista con SP1 e versioni successive.
 
      
 
--   \_ \_ Dati datagramma FWPM layer \_ \_ {V4 \| 6}
+-   DATI DEL DATAGRAMMA DEL LIVELLO FWPM \_ \_ \_ \_ {V4 \| 6}
     > [!Note]  
     > Disponibile solo in Windows Server 2008, Windows Vista con SP1 e versioni successive.
 
      
 
--   \_ \_ \_ Assegnazione delle risorse FWPM layer ale \_ \_ V {4 \| 6}
--   FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ accetta \_ V {4 \| 6}
--   FWPM \_ Layer \_ ale \_ auth \_ Connect \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE RESOURCE ASSIGNMENT \_ \_ \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV \_ ACCEPT \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH CONNECT \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_FRAGMENT"></span><span id="fwp_condition_flag_is_fragment"></span>**il \_ flag di condizione FWP \_ è un \_ \_ frammento**
+<span id="FWP_CONDITION_FLAG_IS_FRAGMENT"></span><span id="fwp_condition_flag_is_fragment"></span>**IL \_ FLAG DELLA CONDIZIONE \_ FWP \_ È \_ FRAGMENT**
 </dt> <dd> <dl> <dt>
 
 
 
-Verifica se la \_ struttura dell' \_ elenco di buffer NET passata a un driver di callout è un frammento di pacchetto IP.
+Verifica se la struttura NET \_ BUFFER \_ LIST passata a un driver callout è un frammento di pacchetto IP.
 
-Filtraggio di livelli:
+Livelli di filtro:
 
--   FWPM \_ Layer in \_ ingresso \_ IPPACKET \_ V {4 \| 6}
--   FWPM \_ Layer in \_ ingresso \_ IPPACKET \_ V {4 \| 6} \_ Elimina
+-   FWPM \_ LAYER \_ INBOUND \_ IPPACKET \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ INBOUND \_ IPPACKET \_ V{4 \| 6} \_ DISCARD
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_FRAGMENT_GROUP"></span><span id="fwp_condition_flag_is_fragment_group"></span>**il \_ flag di condizione FWP \_ è un \_ \_ gruppo di frammenti \_**
+<span id="FWP_CONDITION_FLAG_IS_FRAGMENT_GROUP"></span><span id="fwp_condition_flag_is_fragment_group"></span>**IL \_ FLAG DELLA CONDIZIONE FWP \_ È UN GRUPPO DI \_ \_ \_ FRAMMENTI**
 </dt> <dd> <dl> <dt>
 
 
 
-Verifica se la \_ struttura dell' \_ elenco di buffer NET passata a un driver di callout descrive un elenco collegato di frammenti di pacchetti.
+Verifica se la struttura NET \_ BUFFER \_ LIST passata a un driver callout descrive un elenco collegato di frammenti di pacchetti.
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ livello \_ IPFORWARD \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ IPFORWARD \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_IPSEC_NATT_RECLASSIFY"></span><span id="fwp_condition_flag_is_ipsec_natt_reclassify"></span>**il \_ flag di condizione FWP \_ \_ è la \_ \_ \_ riclassificazione Natt IPSec**
+<span id="FWP_CONDITION_FLAG_IS_IPSEC_NATT_RECLASSIFY"></span><span id="fwp_condition_flag_is_ipsec_natt_reclassify"></span>**IL \_ FLAG DELLA CONDIZIONE \_ FWP \_ È \_ IPSEC \_ NATT \_ RECLASSIFY**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica che lo stesso pacchetto viene nuovamente classificato a livello di trasporto, quando lo shim NAT IPsec converte il valore della porta remota.
+Indica che lo stesso pacchetto viene ri-classificato a livello di trasporto, quando lo shim NAT IPsec converte il valore della porta remota.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_REQUIRES_ALE_CLASSIFY"></span><span id="fwp_condition_flag_requires_ale_classify"></span>**il \_ flag di condizione FWP \_ richiede la \_ \_ \_ classificazione ale**
+<span id="FWP_CONDITION_FLAG_REQUIRES_ALE_CLASSIFY"></span><span id="fwp_condition_flag_requires_ale_classify"></span>**IL FLAG DI CONDIZIONE FWP \_ \_ RICHIEDE \_ \_ ALE \_ CLASSIFY**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica che il pacchetto verrà riclassificato al livello di ricezione/accettazione ALE.
+Indica che il pacchetto verrà riclassificato a livello di ricezione/accettazione ALE.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_IMPLICIT_BIND"></span><span id="fwp_condition_flag_is_implicit_bind"></span>**il \_ flag di condizione FWP \_ è un' \_ \_ associazione implicita \_**
+<span id="FWP_CONDITION_FLAG_IS_IMPLICIT_BIND"></span><span id="fwp_condition_flag_is_implicit_bind"></span>**IL \_ FLAG DELLA CONDIZIONE FWP \_ È \_ \_ UN'ASSOCIAZIONE \_ IMPLICITA**
 </dt> <dd> <dl> <dt>
 
 
 
-Verifica se i socket di Windows eseguono un'associazione implicita.
+Verifica se Windows socket esegue un'associazione implicita.
 
 Disponibile solo in Windows Vista e Windows Server 2008.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_REASSEMBLED"></span><span id="fwp_condition_flag_is_reassembled"></span>**il \_ flag di condizione FWP \_ \_ è stato \_ riassemblato**
+<span id="FWP_CONDITION_FLAG_IS_REASSEMBLED"></span><span id="fwp_condition_flag_is_reassembled"></span>**IL \_ FLAG DELLA \_ CONDIZIONE FWP \_ VIENE \_ RIASSEMBLATO**
 </dt> <dd> <dl> <dt>
 
 
@@ -266,33 +266,33 @@ Verifica se il pacchetto è stato riassemblato.
 
  
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer in \_ ingresso \_ IPPACKET \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ INBOUND \_ IPPACKET \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_NAME_APP_SPECIFIED"></span><span id="fwp_condition_flag_is_name_app_specified"></span>**il \_ flag di condizione FWP \_ è l' \_ \_ \_ app nome \_ specificata**
+<span id="FWP_CONDITION_FLAG_IS_NAME_APP_SPECIFIED"></span><span id="fwp_condition_flag_is_name_app_specified"></span>**IL \_ FLAG DELLA CONDIZIONE FWP \_ È IL NOME SPECIFICATO \_ \_ \_ \_ DALL'APP**
 </dt> <dd> <dl> <dt>
 
 
 
-Verifica se il nome del computer peer a cui è prevista l'applicazione si connette è stato ricevuto tramite un'API, ad esempio [**WSASetSocketPeerTargetName**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-wsasetsocketpeertargetname) , e non è stato ottenuto tramite l'euristica di Caching.
+Verifica se il nome del computer peer a cui l'applicazione prevede di connettersi è stato ricevuto tramite un'API come [**WSASetSocketPeerTargetName**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-wsasetsocketpeertargetname) e non ottenuto tramite l'euristica di memorizzazione nella cache.
 
 > [!Note]  
 > Disponibile solo in Windows Server 2008 R2, Windows 7 e versioni successive.
 
  
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer \_ ale \_ auth \_ Connect \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH CONNECT \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_PROMISCUOUS"></span><span id="fwp_condition_flag_is_promiscuous"></span>**il \_ flag di condizione FWP \_ \_ è \_ promiscuo**
+<span id="FWP_CONDITION_FLAG_IS_PROMISCUOUS"></span><span id="fwp_condition_flag_is_promiscuous"></span>**IL \_ FLAG DI \_ CONDIZIONE FWP \_ È \_ PROMISCUO**
 </dt> <dd> <dl> <dt>
 
 
@@ -302,7 +302,7 @@ Riservato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_AUTH_FW"></span><span id="fwp_condition_flag_is_auth_fw"></span>**il \_ flag di condizione FWP \_ \_ è \_ auth \_ FW**
+<span id="FWP_CONDITION_FLAG_IS_AUTH_FW"></span><span id="fwp_condition_flag_is_auth_fw"></span>**IL \_ FLAG DI CONDIZIONE \_ FWP \_ È \_ AUTH \_ FW**
 </dt> <dd> <dl> <dt>
 
 
@@ -314,40 +314,40 @@ Verifica se la connessione è autenticata end-to-end, anche se i singoli pacchet
 
  
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer \_ ale \_ auth \_ Connect \_ V {4 \| 6}
--   FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ accetta \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH CONNECT \_ \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV \_ ACCEPT \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_RECLASSIFY"></span><span id="fwp_condition_flag_is_reclassify"></span>**il \_ flag di condizione FWP \_ \_ viene \_ riclassificato**
+<span id="FWP_CONDITION_FLAG_IS_RECLASSIFY"></span><span id="fwp_condition_flag_is_reclassify"></span>**IL \_ FLAG DELLA CONDIZIONE \_ FWP \_ VIENE \_ RICLASSIFICATO**
 </dt> <dd> <dl> <dt>
 
 
 
-Verifica se il motore di filtro sta riclassificando una richiesta di binding o ascolto precedente.
+Verifica se il motore di filtro sta riclassificando una precedente richiesta di associazione o ascolto.
 
 > [!Note]  
 > Disponibile solo in Windows Server 2008 R2, Windows 7 e versioni successive.
 
  
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer \_ ale \_ auth \_ ascolto \_ V {4 \| 6}
--   \_ \_ \_ Assegnazione delle risorse FWPM layer ale \_ \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH LISTEN \_ \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE RESOURCE ASSIGNMENT \_ \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_PROXY_CONNECTION"></span><span id="fwp_condition_flag_is_proxy_connection"></span>**il \_ flag di condizione FWP \_ è una \_ \_ \_ connessione proxy**
+<span id="FWP_CONDITION_FLAG_IS_PROXY_CONNECTION"></span><span id="fwp_condition_flag_is_proxy_connection"></span>**IL \_ FLAG DI CONDIZIONE \_ FWP \_ È UNA CONNESSIONE \_ \_ PROXY**
 </dt> <dd> <dl> <dt>
 
 
 
-Verifica se la connessione utilizza un proxy.
+Verifica se la connessione usa un proxy.
 
 > [!Note]  
 > Disponibile solo in Windows 8 e Windows Server 2012.
@@ -357,12 +357,12 @@ Verifica se la connessione utilizza un proxy.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_APPCONTAINER_LOOPBACK"></span><span id="fwp_condition_flag_is_appcontainer_loopback"></span>**il \_ flag di condizione FWP \_ è un \_ \_ \_ loopback appcontainer**
+<span id="FWP_CONDITION_FLAG_IS_APPCONTAINER_LOOPBACK"></span><span id="fwp_condition_flag_is_appcontainer_loopback"></span>**IL \_ FLAG DELLA CONDIZIONE FWP \_ È \_ \_ LOOPBACK DI APPCONTAINER \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Verifica se il traffico di rete è il traffico di loopback del contenitore di app.
+Verifica se il traffico di rete è traffico di loopback dei contenitori di app.
 
 > [!Note]  
 > Disponibile solo in Windows 8 e Windows Server 2012.
@@ -372,12 +372,12 @@ Verifica se il traffico di rete è il traffico di loopback del contenitore di ap
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_NON_APPCONTAINER_LOOPBACK"></span><span id="fwp_condition_flag_is_non_appcontainer_loopback"></span>**il \_ flag di condizione FWP \_ è un \_ \_ \_ loopback non appcontainer \_**
+<span id="FWP_CONDITION_FLAG_IS_NON_APPCONTAINER_LOOPBACK"></span><span id="fwp_condition_flag_is_non_appcontainer_loopback"></span>**IL \_ FLAG DI CONDIZIONE \_ FWP \_ NON È \_ UN \_ LOOPBACK DI \_ APPCONTAINER**
 </dt> <dd> <dl> <dt>
 
 
 
-Verifica se il traffico di rete è il traffico di loopback del contenitore non app.
+Verifica se il traffico di rete è un traffico di loopback non di contenitori di app.
 
 > [!Note]  
 > Disponibile solo in Windows 8 e Windows Server 2012.
@@ -387,7 +387,7 @@ Verifica se il traffico di rete è il traffico di loopback del contenitore non a
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_RESERVED"></span><span id="fwp_condition_flag_is_reserved"></span>**il \_ flag di condizione FWP \_ \_ è \_ riservato**
+<span id="FWP_CONDITION_FLAG_IS_RESERVED"></span><span id="fwp_condition_flag_is_reserved"></span>**IL \_ FLAG DI CONDIZIONE \_ FWP \_ È \_ RISERVATO**
 </dt> <dd> <dl> <dt>
 
 
@@ -397,26 +397,26 @@ Riservato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_HONORING_POLICY_AUTHORIZE"></span><span id="fwp_condition_flag_is_honoring_policy_authorize"></span>**il \_ flag di condizione FWP \_ \_ sta \_ rispettando l' \_ \_ autorizzazione per i criteri**
+<span id="FWP_CONDITION_FLAG_IS_HONORING_POLICY_AUTHORIZE"></span><span id="fwp_condition_flag_is_honoring_policy_authorize"></span>**IL \_ FLAG DI CONDIZIONE FWP \_ RISPETTA \_ \_ \_ L'AUTORIZZAZIONE DEI \_ CRITERI**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica che è in corso l'esecuzione della classificazione corrente per rispettare l'intenzione di un'app di Windows Store reindirizzata di connettersi a un host specificato. Tale classificazione conterrà gli stessi valori di campo classificabili come se l'app non venisse mai reindirizzata. Il flag indica inoltre che verrà richiamata una futura classificazione in modo che corrisponda alla destinazione reindirizzata effettiva. Se l'app viene reindirizzata a un servizio proxy per l'ispezione, significa anche che verrà richiamata una futura classificazione sulla connessione proxy. In genere, i driver di callout devono consentire questa classificazione.
+Indica che viene eseguita la classificazione corrente per rispettare l'intenzione di un'app Windows Store reindirizzata di connettersi a un host specificato. Tale classificazione conterrà gli stessi valori di campo classificabili come se l'app non fosse mai stata reindirizzata. Il flag indica anche che verrà richiamata una classificazione futura in modo che corrisponda alla destinazione reindirizzata effettiva. Se l'app viene reindirizzata a un servizio proxy per l'ispezione, significa anche che verrà richiamata una classificazione futura nella connessione proxy. I driver di callout devono in genere consentire questa classificazione.
 
 > [!Note]  
 > Disponibile solo in Windows 8 e Windows Server 2012.
 
  
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer \_ ale \_ auth \_ Connect \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH CONNECT \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> </dl>
 
-I flag seguenti specificano il motivo per la riautorizzazione di una connessione precedentemente autorizzata. Questi flag e i livelli di filtro in cui possono essere usati sono definiti nel modo seguente.
+I flag seguenti specificano il motivo della riautorizzazione di una connessione autorizzata in precedenza. Questi flag e i livelli di filtro in cui possono essere usati sono definiti come segue.
 
 > [!Note]  
 > Queste condizioni di filtro sono disponibili solo in Windows Server 2008 R2, Windows 7 e versioni successive.
@@ -425,141 +425,141 @@ I flag seguenti specificano il motivo per la riautorizzazione di una connessione
 
 <dl> <dt>
 
-<span id="FWP_CONDITION_REAUTHORIZE_REASON_POLICY_CHANGE"></span><span id="fwp_condition_reauthorize_reason_policy_change"></span>**\_modifica dei \_ \_ criteri per il motivo della Riautorizzazione della \_ condizione \_ FWP**
+<span id="FWP_CONDITION_REAUTHORIZE_REASON_POLICY_CHANGE"></span><span id="fwp_condition_reauthorize_reason_policy_change"></span>**MODIFICA DEI \_ CRITERI MOTIVO PER LA RICHIESTA DI AUTORIZZAZIONE DELLA \_ \_ \_ CONDIZIONE \_ FWP**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica che la connessione è stata riautorizzata a causa dell'aggiunta o della rimozione dei filtri.
+Indica che la connessione è stata riautorizzata a causa dell'aggiunta o della rimozione di filtri.
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer \_ ale \_ auth \_ Connect \_ V {4 \| 6}
--   FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ accetta \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH CONNECT \_ \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV \_ ACCEPT \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_REAUTHORIZE_REASON_NEW_ARRIVAL_INTERFACE"></span><span id="fwp_condition_reauthorize_reason_new_arrival_interface"></span>**\_condizione FWP \_ nuova autorizzazione \_ motivo \_ nuova \_ interfaccia di arrivo \_**
+<span id="FWP_CONDITION_REAUTHORIZE_REASON_NEW_ARRIVAL_INTERFACE"></span><span id="fwp_condition_reauthorize_reason_new_arrival_interface"></span>**NUOVA AUTORIZZAZIONE DELLA CONDIZIONE FWP \_ PER LA NUOVA INTERFACCIA DI \_ \_ \_ \_ \_ ARRIVO**
 </dt> <dd> <dl> <dt>
 
 
 
 Indica che il pacchetto è arrivato da un'interfaccia sconosciuta.
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer \_ ale \_ auth \_ Connect \_ V {4 \| 6}
--   FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ accetta \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH CONNECT \_ \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV \_ ACCEPT \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_REAUTHORIZE_REASON_NEW_NEXTHOP_INTERFACE"></span><span id="fwp_condition_reauthorize_reason_new_nexthop_interface"></span>**condizione di FWP \_ \_ \_ nuova autorizzazione \_ motivo \_ nuova \_ interfaccia NEXTHOP**
+<span id="FWP_CONDITION_REAUTHORIZE_REASON_NEW_NEXTHOP_INTERFACE"></span><span id="fwp_condition_reauthorize_reason_new_nexthop_interface"></span>**NUOVA AUTORIZZAZIONE DELLA CONDIZIONE FWP \_ PER LA NUOVA INTERFACCIA \_ \_ \_ \_ NEXTHOP \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica che il pacchetto verrà ripartito da un'interfaccia sconosciuta.
+Indica che il pacchetto verrà rimosso da un'interfaccia sconosciuta.
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer \_ ale \_ auth \_ Connect \_ V {4 \| 6}
--   FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ accetta \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH CONNECT \_ \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV \_ ACCEPT \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_REAUTHORIZE_REASON_PROFILE_CROSSING"></span><span id="fwp_condition_reauthorize_reason_profile_crossing"></span>**FWP \_ condizione di \_ riautorizzazione del \_ profilo motivo- \_ \_ incrocio**
+<span id="FWP_CONDITION_REAUTHORIZE_REASON_PROFILE_CROSSING"></span><span id="fwp_condition_reauthorize_reason_profile_crossing"></span>**MODIFICA \_ DELL'AUTORIZZAZIONE DEL PROFILO MOTIVO \_ DELLA \_ CONDIZIONE \_ \_ FWP**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica che il pacchetto ha attraversato interfacce di più di una categoria di rete.
+Indica che il pacchetto è passato attraverso interfacce di più di una categoria di rete.
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer \_ ale \_ auth \_ Connect \_ V {4 \| 6}
--   FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ accetta \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH CONNECT \_ \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV \_ ACCEPT \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_REAUTHORIZE_REASON_CLASSIFY_COMPLETION"></span><span id="fwp_condition_reauthorize_reason_classify_completion"></span>**FWP \_ condizione di \_ Riautorizzazione \_ per la classificazione del \_ \_ completamento**
+<span id="FWP_CONDITION_REAUTHORIZE_REASON_CLASSIFY_COMPLETION"></span><span id="fwp_condition_reauthorize_reason_classify_completion"></span>**RICHIESTA DI AUTORIZZAZIONE DEL MOTIVO PER LA \_ \_ RIAUTENZIONE DELLA CONDIZIONE FWP \_ \_ CLASSIFICA \_ COMPLETAMENTO**
 </dt> <dd> <dl> <dt>
 
 
 
 Indica che è ora possibile completare una connessione precedentemente mantenuta.
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer \_ ale \_ auth \_ Connect \_ V {4 \| 6}
--   FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ accetta \_ V {4 \| 6}
-
-
-</dt> </dl> </dd> <dt>
-
-<span id="FWP_CONDITION_REAUTHORIZE_REASON_IPSEC_PROPERTIES_CHANGED"></span><span id="fwp_condition_reauthorize_reason_ipsec_properties_changed"></span>**FWP \_ condizione di \_ riautorizzazione del \_ motivo \_ \_ Proprietà IPSec \_ modificate**
-</dt> <dd> <dl> <dt>
-
-
-
-Indica che le proprietà IPsec sono state modificate o che la connessione è cambiata da testo non crittografato a una connessione protetta.
-
-Livello filtro:
-
--   FWPM \_ Layer \_ ale \_ auth \_ Connect \_ V {4 \| 6}
--   FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ accetta \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH CONNECT \_ \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV \_ ACCEPT \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_REAUTHORIZE_REASON_MID_STREAM_INSPECTION"></span><span id="fwp_condition_reauthorize_reason_mid_stream_inspection"></span>**FWP \_ condizione di \_ riautorizzazione del \_ motivo \_ Mid- \_ ispezione del flusso \_**
+<span id="FWP_CONDITION_REAUTHORIZE_REASON_IPSEC_PROPERTIES_CHANGED"></span><span id="fwp_condition_reauthorize_reason_ipsec_properties_changed"></span>**MODIFICA DELLE \_ PROPRIETÀ \_ IPSEC DELLA CONDIZIONE \_ \_ FWP \_ \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica che è in corso l'ispezione di una connessione TCP stabilita in precedenza.
+Indica che le proprietà IPsec sono state modificate o che la connessione è stata modificata da testo non crittografato a connessione protetta.
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer \_ ale \_ auth \_ Connect \_ V {4 \| 6}
--   FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ accetta \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH CONNECT \_ \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV \_ ACCEPT \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_REAUTHORIZE_REASON_SOCKET_PROPERTY_CHANGED"></span><span id="fwp_condition_reauthorize_reason_socket_property_changed"></span>**\_proprietà del \_ socket del motivo di Riautorizzazione della condizione FWP \_ \_ \_ \_ modificata**
+<span id="FWP_CONDITION_REAUTHORIZE_REASON_MID_STREAM_INSPECTION"></span><span id="fwp_condition_reauthorize_reason_mid_stream_inspection"></span>**MOTIVO DELLA \_ \_ RIAUTORIZZAZIONE DELLA CONDIZIONE FWP DURANTE \_ \_ \_ L'ISPEZIONE DEL FLUSSO \_ INTERMEDIO**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica che le proprietà del socket sono state impostate dopo che è stata autorizzata e stabilita una connessione.
+Indica che è in corso il controllo di una connessione TCP stabilita in precedenza.
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer \_ ale \_ auth \_ Connect \_ V {4 \| 6}
--   FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ accetta \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH CONNECT \_ \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV \_ ACCEPT \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_REAUTHORIZE_REASON_NEW_INBOUND_MCAST_BCAST_PACKET"></span><span id="fwp_condition_reauthorize_reason_new_inbound_mcast_bcast_packet"></span>**\_condizione FWP \_ riautorizzare il \_ \_ nuovo \_ \_ pacchetto mcast in ingresso \_ gettati \_**
+<span id="FWP_CONDITION_REAUTHORIZE_REASON_SOCKET_PROPERTY_CHANGED"></span><span id="fwp_condition_reauthorize_reason_socket_property_changed"></span>**MODIFICA DELLA \_ PROPRIETÀ \_ DEL \_ \_ SOCKET \_ \_ MOTIVO MODIFICA DELLA CONDIZIONE FWP**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica che i nuovi pacchetti broadcast o multicast in ingresso vengono riautorizzati in ALE \_ ricezione \_ accettano i callout.
+Indica che le proprietà del socket sono state impostate dopo che una connessione è stata autorizzata e stabilita.
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ accetta \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH CONNECT \_ \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV \_ ACCEPT \_ V{4 \| 6}
+
+
+</dt> </dl> </dd> <dt>
+
+<span id="FWP_CONDITION_REAUTHORIZE_REASON_NEW_INBOUND_MCAST_BCAST_PACKET"></span><span id="fwp_condition_reauthorize_reason_new_inbound_mcast_bcast_packet"></span>**NUOVA AUTORIZZAZIONE DELLA CONDIZIONE FWP \_ PER IL NUOVO PACCHETTO \_ \_ \_ \_ \_ BCAST MCAST IN \_ \_ INGRESSO**
+</dt> <dd> <dl> <dt>
+
+
+
+Indica che i nuovi pacchetti multicast o broadcast in ingresso vengono nuovamente autorizzati nei callout ALE \_ RECV \_ ACCEPT.
+
+Livello di filtro:
+
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV \_ ACCEPT \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> </dl>
 
-I flag seguenti specificano le proprietà del socket correlate a se un'applicazione vuole ricevere traffico di attraversamento perimetrale. Questi flag e i livelli di filtro in cui possono essere usati sono definiti nel modo seguente.
+I flag seguenti specificano le proprietà del socket correlate al fatto che un'applicazione voglia ricevere il traffico di attraversamento perimetrale. Questi flag e i livelli di filtro in cui possono essere usati sono definiti come segue.
 
 > [!Note]  
 > Queste condizioni di filtro sono disponibili solo in Windows Server 2008 R2, Windows 7 e versioni successive.
@@ -568,52 +568,52 @@ I flag seguenti specificano le proprietà del socket correlate a se un'applicazi
 
 <dl> <dt>
 
-<span id="FWP_CONDITION_SOCKET_PROPERTY_FLAG_IS_SYSTEM_PORT_RPC"></span><span id="fwp_condition_socket_property_flag_is_system_port_rpc"></span>**il \_ flag della proprietà Socket della condizione FWP \_ \_ \_ \_ è RPC per la \_ porta di sistema \_ \_**
+<span id="FWP_CONDITION_SOCKET_PROPERTY_FLAG_IS_SYSTEM_PORT_RPC"></span><span id="fwp_condition_socket_property_flag_is_system_port_rpc"></span>**IL FLAG DELLA PROPRIETÀ SOCKET DELLA CONDIZIONE FWP \_ È RPC DELLA PORTA DI \_ \_ \_ \_ \_ \_ \_ SISTEMA**
 </dt> <dd> <dl> <dt>
 
 
 
 Indica che l'applicazione sta comunicando con una porta RPC dinamica.
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer \_ ale \_ auth \_ ascolto \_ V {4 \| 6}
--   \_ \_ \_ Assegnazione delle risorse FWPM layer ale \_ \_ V {4 \| 6}
-
-
-</dt> </dl> </dd> <dt>
-
-<span id="FWP_CONDITION_SOCKET_PROPERTY_FLAG_ALLOW_EDGE_TRAFFIC"></span><span id="fwp_condition_socket_property_flag_allow_edge_traffic"></span>**\_flag della proprietà Socket della condizione FWP che consente il \_ \_ \_ \_ \_ traffico perimetrale \_**
-</dt> <dd> <dl> <dt>
-
-
-
-Indica che l'applicazione vuole ricevere traffico specifico di attraversamento del perimetro.
-
-Livello filtro:
-
--   FWPM \_ Layer \_ ale \_ auth \_ ascolto \_ V {4 \| 6}
--   \_ \_ \_ Assegnazione delle risorse FWPM layer ale \_ \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH LISTEN \_ \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE RESOURCE ASSIGNMENT \_ \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_SOCKET_PROPERTY_FLAG_DENY_EDGE_TRAFFIC"></span><span id="fwp_condition_socket_property_flag_deny_edge_traffic"></span>**\_flag della proprietà Socket della condizione FWP che nega il \_ \_ \_ \_ \_ traffico perimetrale \_**
+<span id="FWP_CONDITION_SOCKET_PROPERTY_FLAG_ALLOW_EDGE_TRAFFIC"></span><span id="fwp_condition_socket_property_flag_allow_edge_traffic"></span>**FLAG DI PROPRIETÀ DEL SOCKET DELLA CONDIZIONE FWP \_ CHE CONSENTE IL TRAFFICO \_ \_ \_ \_ \_ \_ PERIMETRALE**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica che l'applicazione non vuole ricevere o elaborare traffico specifico di attraversamento del perimetro.
+Indica che l'applicazione vuole ricevere traffico specifico dell'attraversamento perimetrale.
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer \_ ale \_ auth \_ ascolto \_ V {4 \| 6}
--   \_ \_ \_ Assegnazione delle risorse FWPM layer ale \_ \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH LISTEN \_ \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE RESOURCE ASSIGNMENT \_ \_ \_ V{4 \| 6}
+
+
+</dt> </dl> </dd> <dt>
+
+<span id="FWP_CONDITION_SOCKET_PROPERTY_FLAG_DENY_EDGE_TRAFFIC"></span><span id="fwp_condition_socket_property_flag_deny_edge_traffic"></span>**FLAG DI PROPRIETÀ DEL SOCKET DELLA CONDIZIONE FWP \_ \_ DENY EDGE TRAFFIC \_ \_ \_ \_ (NEGA TRAFFICO \_ PERIMETRALE)**
+</dt> <dd> <dl> <dt>
+
+
+
+Indica che l'applicazione non vuole ricevere o elaborare il traffico specifico dell'attraversamento perimetrale.
+
+Livello di filtro:
+
+-   FWPM \_ LAYER \_ ALE \_ AUTH LISTEN \_ \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE RESOURCE ASSIGNMENT \_ \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> </dl>
 
-I flag seguenti specificano i dettagli della connessione correlati al filtro L2.
+I flag seguenti specificano i dettagli di connessione correlati al filtro L2.
 
 > [!Note]  
 > Queste condizioni di filtro sono disponibili solo in Windows 8 e Windows Server 2012.
@@ -622,138 +622,138 @@ I flag seguenti specificano i dettagli della connessione correlati al filtro L2.
 
 <dl> <dt>
 
-<span id="FWP_CONDITION_L2_IS_NATIVE_ETHERNET"></span><span id="fwp_condition_l2_is_native_ethernet"></span>**\_La condizione \_ FWP \_ L2 \_ è \_ Ethernet nativa**
+<span id="FWP_CONDITION_L2_IS_NATIVE_ETHERNET"></span><span id="fwp_condition_l2_is_native_ethernet"></span>**LA CONDIZIONE \_ \_ FWP L2 \_ È \_ \_ ETHERNET NATIVA**
 </dt> <dd> <dl> <dt>
 
 
 
 Indica che la connessione è Ethernet nativa.
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer in \_ ingresso \_ Mac \_ frame \_ Ethernet
--   \_ \_ \_ \_ frame Mac \_ nativo in ingresso livello FWPM
--   FWPM \_ Layer in \_ uscita \_ Mac \_ frame \_ Ethernet
--   \_ \_ frame Mac in uscita livello FWPM \_ \_ \_ nativo
+-   FWPM \_ LAYER \_ INBOUND \_ MAC \_ FRAME \_ ETHERNET
+-   FRAME MAC IN INGRESSO DEL LIVELLO FWPM \_ \_ \_ \_ \_ NATIVO
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ ETHERNET
+-   FRAME MAC IN USCITA DEL LIVELLO FWPM \_ \_ \_ \_ \_ NATIVO
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_L2_IS_WIFI"></span><span id="fwp_condition_l2_is_wifi"></span>**\_La condizione FWP \_ L2 \_ è \_ Wi-Fi**
+<span id="FWP_CONDITION_L2_IS_WIFI"></span><span id="fwp_condition_l2_is_wifi"></span>**FWP CONDITION L2 IS WIFI (LA CONDIZIONE \_ \_ FWP L2 \_ \_ È WIFI)**
 </dt> <dd> <dl> <dt>
 
 
 
 Indica che la connessione è Wi-Fi.
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer in \_ ingresso \_ Mac \_ frame \_ Ethernet
--   \_ \_ \_ \_ frame Mac \_ nativo in ingresso livello FWPM
--   FWPM \_ Layer in \_ uscita \_ Mac \_ frame \_ Ethernet
--   \_ \_ frame Mac in uscita livello FWPM \_ \_ \_ nativo
+-   FWPM \_ LAYER \_ INBOUND \_ MAC \_ FRAME \_ ETHERNET
+-   FRAME MAC IN INGRESSO DEL LIVELLO FWPM \_ \_ \_ \_ \_ NATIVO
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ ETHERNET
+-   FRAME MAC IN USCITA DEL LIVELLO FWPM \_ \_ \_ \_ \_ NATIVO
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_L2_IS_MOBILE_BROADBAND"></span><span id="fwp_condition_l2_is_mobile_broadband"></span>**\_La condizione FWP \_ L2 \_ è \_ mobile \_ Broadband**
+<span id="FWP_CONDITION_L2_IS_MOBILE_BROADBAND"></span><span id="fwp_condition_l2_is_mobile_broadband"></span>**FWP \_ CONDITION \_ L2 \_ IS \_ MOBILE \_ BROADBAND**
 </dt> <dd> <dl> <dt>
 
 
 
 Indica che la connessione è Mobile Broadband.
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer in \_ ingresso \_ Mac \_ frame \_ Ethernet
--   \_ \_ \_ \_ frame Mac \_ nativo in ingresso livello FWPM
--   FWPM \_ Layer in \_ uscita \_ Mac \_ frame \_ Ethernet
--   \_ \_ frame Mac in uscita livello FWPM \_ \_ \_ nativo
+-   FWPM \_ LAYER \_ INBOUND \_ MAC \_ FRAME \_ ETHERNET
+-   FRAME MAC IN INGRESSO DEL LIVELLO FWPM \_ \_ \_ \_ \_ NATIVO
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ ETHERNET
+-   FRAME MAC IN USCITA DEL LIVELLO FWPM \_ \_ \_ \_ \_ NATIVO
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_L2_IS_WIFI_DIRECT_DATA"></span><span id="fwp_condition_l2_is_wifi_direct_data"></span>**\_La condizione \_ FWP \_ L2 \_ è \_ dati diretti Wi-Fi \_**
+<span id="FWP_CONDITION_L2_IS_WIFI_DIRECT_DATA"></span><span id="fwp_condition_l2_is_wifi_direct_data"></span>**FWP \_ CONDITION \_ L2 IS WIFI DIRECT DATA (LA CONDIZIONE FWP L2 \_ È DATI DIRETTI \_ \_ \_ WIFI)**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica che la connessione è Wi-Fi diretta.
+Indica che la connessione è Wi-Fi Direct.
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer in \_ ingresso \_ Mac \_ frame \_ Ethernet
--   \_ \_ \_ \_ frame Mac \_ nativo in ingresso livello FWPM
--   FWPM \_ Layer in \_ uscita \_ Mac \_ frame \_ Ethernet
--   \_ \_ frame Mac in uscita livello FWPM \_ \_ \_ nativo
+-   FWPM \_ LAYER \_ INBOUND \_ MAC \_ FRAME \_ ETHERNET
+-   FRAME MAC IN INGRESSO DEL LIVELLO FWPM \_ \_ \_ \_ \_ NATIVO
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ ETHERNET
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ NATIVE
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_L2_IS_VM2VM"></span><span id="fwp_condition_l2_is_vm2vm"></span>**\_La condizione FWP \_ L2 \_ è \_ VM2VM**
+<span id="FWP_CONDITION_L2_IS_VM2VM"></span><span id="fwp_condition_l2_is_vm2vm"></span>**LA CONDIZIONE \_ \_ FWP L2 \_ È \_ VM2VM**
 </dt> <dd> <dl> <dt>
 
 
 
 Indica che la connessione è tra macchine virtuali.
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer in \_ ingresso \_ Mac \_ frame \_ Ethernet
--   \_ \_ \_ \_ frame Mac \_ nativo in ingresso livello FWPM
--   FWPM \_ Layer in \_ uscita \_ Mac \_ frame \_ Ethernet
--   \_ \_ frame Mac in uscita livello FWPM \_ \_ \_ nativo
+-   FWPM \_ LAYER \_ INBOUND \_ MAC \_ FRAME \_ ETHERNET
+-   FRAME MAC IN INGRESSO DEL LIVELLO FWPM \_ \_ \_ \_ \_ NATIVO
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ ETHERNET
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ NATIVE
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_L2_IS_MALFORMED_PACKET"></span><span id="fwp_condition_l2_is_malformed_packet"></span>**\_La condizione FWP \_ L2 è un \_ \_ pacchetto in formato non valido \_**
+<span id="FWP_CONDITION_L2_IS_MALFORMED_PACKET"></span><span id="fwp_condition_l2_is_malformed_packet"></span>**LA CONDIZIONE \_ \_ FWP L2 \_ È UN PACCHETTO IN FORMATO NON \_ \_ VALIDO**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica che un pacchetto sembra non essere corretto.
+Indica che il formato di un pacchetto non è corretto.
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer in \_ ingresso \_ Mac \_ frame \_ Ethernet
--   \_ \_ \_ \_ frame Mac \_ nativo in ingresso livello FWPM
--   FWPM \_ Layer in \_ uscita \_ Mac \_ frame \_ Ethernet
--   \_ \_ frame Mac in uscita livello FWPM \_ \_ \_ nativo
+-   FWPM \_ LAYER \_ INBOUND \_ MAC \_ FRAME \_ ETHERNET
+-   FRAME MAC IN INGRESSO DEL LIVELLO FWPM \_ \_ \_ \_ \_ NATIVO
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ ETHERNET
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ NATIVE
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_L2_IS_IP_FRAGMENT_GROUP"></span><span id="fwp_condition_l2_is_ip_fragment_group"></span>**\_La condizione FWP \_ L2 è un gruppo di \_ \_ \_ frammenti IP \_**
+<span id="FWP_CONDITION_L2_IS_IP_FRAGMENT_GROUP"></span><span id="fwp_condition_l2_is_ip_fragment_group"></span>**LA CONDIZIONE FWP \_ \_ L2 \_ È UN GRUPPO \_ DI \_ FRAMMENTI \_ IP**
 </dt> <dd> <dl> <dt>
 
 
 
 Indica un gruppo di frammenti di pacchetti IP.
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer in \_ ingresso \_ Mac \_ frame \_ Ethernet
--   \_ \_ \_ \_ frame Mac \_ nativo in ingresso livello FWPM
--   FWPM \_ Layer in \_ uscita \_ Mac \_ frame \_ Ethernet
--   \_ \_ frame Mac in uscita livello FWPM \_ \_ \_ nativo
+-   FWPM \_ LAYER \_ INBOUND \_ MAC \_ FRAME \_ ETHERNET
+-   FRAME MAC IN INGRESSO DEL LIVELLO FWPM \_ \_ \_ \_ \_ NATIVO
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ ETHERNET
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ NATIVE
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_L2_IF_CONNECTOR_PRESENT"></span><span id="fwp_condition_l2_if_connector_present"></span>**\_Condizione FWP \_ L2 \_ se \_ connettore \_ presente**
+<span id="FWP_CONDITION_L2_IF_CONNECTOR_PRESENT"></span><span id="fwp_condition_l2_if_connector_present"></span>**CONDIZIONE FWP \_ \_ L2 \_ SE IL \_ CONNETTORE È \_ PRESENTE**
 </dt> <dd> <dl> <dt>
 
 
 
 Indica che è presente un connettore.
 
-Livello filtro:
+Livello di filtro:
 
--   FWPM \_ Layer in \_ ingresso \_ Mac \_ frame \_ Ethernet
--   \_ \_ \_ \_ frame Mac \_ nativo in ingresso livello FWPM
--   FWPM \_ Layer in \_ uscita \_ Mac \_ frame \_ Ethernet
--   \_ \_ frame Mac in uscita livello FWPM \_ \_ \_ nativo
+-   FWPM \_ LAYER \_ INBOUND \_ MAC \_ FRAME \_ ETHERNET
+-   FRAME MAC IN INGRESSO DEL LIVELLO FWPM \_ \_ \_ \_ \_ NATIVO
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ ETHERNET
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ NATIVE
 
 
 </dt> </dl> </dd> </dl>
@@ -764,9 +764,9 @@ Livello filtro:
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Fwptypes. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Fwptypes.h</dt> </dl> |
 
 
 
@@ -774,7 +774,7 @@ Livello filtro:
 
 <dl> <dt>
 
-[**Filtraggio degli identificatori del livello**](management-filtering-layer-identifiers-.md)
+[**Filtro degli identificatori di livello**](management-filtering-layer-identifiers-.md)
 </dt> </dl>
 
  

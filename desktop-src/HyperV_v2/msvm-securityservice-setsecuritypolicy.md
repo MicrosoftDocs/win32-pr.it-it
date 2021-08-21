@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 31b03ee8a941b0715b85f6a749c4ba59ade032f7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c3ce4e95fe99eca0616d886ca16fefcb771be50f1a8cc0a46e6780e0411a6ad1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118147095"
 ---
 # <a name="setsecuritypolicy-method-of-the-msvm_securityservice-class"></a>Metodo SetSecurityPolicy della classe Msvm \_ SecurityService
 
@@ -92,7 +92,7 @@ On, success, restituisce un valore 0. In caso contrario, restituisce un errore.
 **Parametro non** valido (32773)
 </dt> <dt>
 
-**Il sistema è in uso** (32774)
+**Sistema in uso** (32774)
 </dt> <dt>
 
 **Stato non valido per questa operazione** (32775)

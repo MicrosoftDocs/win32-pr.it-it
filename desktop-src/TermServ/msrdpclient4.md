@@ -136,7 +136,7 @@ La **classe MsRdpClient4** dispone di queste proprietà.
 | [**SecuredSettingsEnabled**](imstscax-securedsettingsenabled.md)<br/>               | Sola lettura<br/>  | Indica se [**l'interfaccia IMsTscSecuredSettings**](imstscsecuredsettings-interface.md) è disponibile.<br/>                                                                                    |
 | [**Server**](imstscax-server.md)<br/>                                               | Lettura/Scrittura<br/> | Nome del server a cui è connesso il controllo corrente.<br/>                                                                                                                                 |
 | [**StartConnected**](imstscax-startconnected.md)<br/>                               | Lettura/Scrittura<br/> | Indica se il controllo stabilirà la connessione al server Host sessione Desktop remoto immediatamente all'avvio.<br/>                                                                                      |
-| [**UIParentWindowHandle**](imsrdpclientnonscriptable2-uiparentwindowhandle.md)<br/> | Lettura/Scrittura<br/> | Handle di finestra che deve essere la finestra padre per il controllo . In questo modo tutte le finestre visualizzate dal controllo possono essere correttamente modali rispetto alle finestre visualizzate dall'applicazione padre.<br/> |
+| [**UIParentWindowHandle**](imsrdpclientnonscriptable2-uiparentwindowhandle.md)<br/> | Lettura/Scrittura<br/> | Handle di finestra che deve essere la finestra padre per il controllo . In questo modo tutte le finestre visualizzate dal controllo saranno correttamente modali rispetto alle finestre visualizzate dall'applicazione padre.<br/> |
 | [**Nome utente**](imstscax-username.md)<br/>                                           | Lettura/Scrittura<br/> | Credenziali di accesso del nome utente.<br/>                                                                                                                                                                   |
 | [**Versione**](imstscax-version.md)<br/>                                             | Sola lettura<br/>  | Numero di versione del controllo corrente.<br/>                                                                                                                                                        |
 | [**VerticalScrollBarVisible**](imstscax-verticalscrollbarvisible.md)<br/>           | Sola lettura<br/>  | Indica se il controllo visualizza una barra di scorrimento verticale.<br/>                                                                                                                                     |
@@ -155,7 +155,7 @@ La **classe MsRdpClient4** dispone di queste proprietà.
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| CLSID<br/>                    | CLSID MsRdpClient4 è definito come \_ 4EDCB26C-D24C-4E72-AF07-B576699AC0DE<br/>      |
+| CLSID<br/>                    | CLSID \_ MsRdpClient4 è definito come 4EDCB26C-D24C-4E72-AF07-B576699AC0DE<br/>      |
 
 
 

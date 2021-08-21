@@ -1,9 +1,9 @@
 ---
-title: BUTTONelement. Sticky
-description: L'attributo Sticky specifica o recupera un valore che indica se BUTTONelement è un interruttore, ovvero se si tratta di un pulsante a due Stati o di uno stato singolo.
+title: BUTTONELEMENT.sticky
+description: L'attributo sticky specifica o recupera un valore che indica se BUTTONELEMENT è un interruttore, ad esempio se si tratta di un pulsante a due stati o a stato singolo.
 ms.assetid: a7e74f70-9fa6-45a1-ab65-2db107e13551
 keywords:
-- BUTTONelement. Sticky Windows Media Player
+- BUTTONELEMENT.sticky Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 713b26fdee3062fbe803d05e034bc9896cdd5563
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cc8a709fc28f0d1529c58725db5856931195a66cc370559dd9d14af61e869db6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120038"
 ---
-# <a name="buttonelementsticky"></a>BUTTONelement. Sticky
+# <a name="buttonelementsticky"></a>BUTTONELEMENT.sticky
 
-L'attributo **Sticky** specifica o recupera un valore che indica se **ButtonElement** è un interruttore, ovvero se si tratta di un pulsante a due Stati o di uno stato singolo.
+**L'attributo sticky** specifica o recupera un valore che indica se **BUTTONELEMENT** è un interruttore, ad esempio se si tratta di un pulsante a due stati o a stato singolo.
 
 ``` syntax
         elementID.sticky
@@ -29,14 +29,14 @@ L'attributo **Sticky** specifica o recupera un valore che indica se **ButtonElem
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **valore booleano** di lettura/scrittura.
+Questo attributo è un valore booleano di **lettura/scrittura.**
 
 
 
 | Valore | Descrizione                               |
 |-------|-------------------------------------------|
-| true  | **ButtonElement** è appiccicoso.              |
-| false | Valore predefinito. **ButtonElement** non è appiccicoso. |
+| true  | **BUTTONELEMENT** è di tipo sticky.              |
+| false | Valore predefinito. **BUTTONELEMENT** non è di tipo sticky. |
 
 
 
@@ -44,7 +44,7 @@ Questo attributo è un **valore booleano** di lettura/scrittura.
 
 ## <a name="remarks"></a>Commenti
 
-Se l'attributo **Sticky** è impostato su true, l'elemento Button passerà allo stato inattivo quando si fa clic su di esso e rimarrà in tale stato fino a quando non si fa clic di nuovo su. Quando l'elemento Button si trova nello stato inattivo, l'attributo **Down** sarà true e verrà visualizzata la parte appropriata del gruppo di pulsanti **downImage** .
+Se **l'attributo sticky** è impostato su true, l'elemento pulsante verrà impostato sullo stato down quando viene selezionato e rimarrà in tale stato fino a quando non viene nuovamente selezionato. Quando l'elemento pulsante è in stato down, l'attributo **down** sarà true e verrà visualizzata la parte appropriata del gruppo di pulsanti **downImage.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,7 +52,7 @@ Se l'attributo **Sticky** è impostato su true, l'elemento Button passerà allo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -60,13 +60,13 @@ Se l'attributo **Sticky** è impostato su true, l'elemento Button passerà allo 
 
 <dl> <dt>
 
-[**BUTTONelement (elemento)**](buttonelement-element.md)
+[**Elemento BUTTONELEMENT**](buttonelement-element.md)
 </dt> <dt>
 
-[**BUTTONelement. Down**](buttonelement-down.md)
+[**BUTTONELEMENT.down**](buttonelement-down.md)
 </dt> <dt>
 
-[**BUTTONGROUP. downImage**](buttongroup-downimage.md)
+[**BUTTONGROUP.downImage**](buttongroup-downimage.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSLicenseReportEntry
-description: Fornisce i dettagli della licenza di accesso client per utente Servizi Desktop remoto pubblicata (RDS \ 160; CAL per utente).
+title: Win32_TSLicenseReportEntry classe
+description: Fornisce i dettagli delle licenze Servizi Desktop remoto licenza di accesso client per utente (Servizi Desktop remoto \ 160; Licenza CAL per utente).
 ms.assetid: 75fa7f39-af5b-45a0-ba2b-5c667edfec16
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_TSLicenseReportEntry Servizi Desktop remoto
-- Classe Win32_TSLicenseReportEntry Servizi Desktop remoto, descritta
+- Win32_TSLicenseReportEntry classe Servizi Desktop remoto
+- Win32_TSLicenseReportEntry classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -21,16 +21,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44fa97a91561a9d4cf3fd571c773288796754858
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e08041ac0878f3466712001a0a5e2cc90eb74ea1e360da9785b5d84805574389
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118126521"
 ---
-# <a name="win32_tslicensereportentry-class"></a>Win32 \_ TSLicenseReportEntry (classe)
+# <a name="win32_tslicensereportentry-class"></a>Classe \_ Win32 TSLicenseReportEntry
 
-Fornisce i dettagli della licenza di accesso client per utente (CAL per utente) del Servizi Desktop remoto emesso.
+Fornisce informazioni dettagliate sulle licenze cal per Servizi Desktop remoto client per utente rilasciate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,20 +48,20 @@ class Win32_TSLicenseReportEntry
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ TSLicenseReportEntry** presenta questi tipi di membri:
+La **classe \_ Win32 TSLicenseReportEntry** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ TSLicenseReportEntry** dispone di queste proprietà.
+La **classe Win32 \_ TSLicenseReportEntry** ha queste proprietà.
 
 <dl> <dt>
 
 **CALType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -69,34 +69,34 @@ Tipo di accesso: sola lettura
 
 Specifica il tipo di licenza CAL rilasciata. Si tratta di uno dei valori seguenti.
 
-**Windows server 2008 R2 e Windows server 2008:** Questa proprietà non è supportata.
+**Windows Server 2008 R2 e Windows Server 2008:** Questa proprietà non è supportata.
 
-"Licenze CAL per dispositivo predefinite"
+"Licenza CAL TS per dispositivo incorporata"
 
-"Licenze CAL per dispositivo"
+"TS Per Device CAL"
 
-"CAL Internet Connector CAL"
+"TS Internet Connector CAL"
 
-"Licenza CAL per utente di servizi Terminal"
+"TS Per User CAL"
 
-Licenza CAL per dispositivo di Servizi terminal o RDS
+"TS o Servizi Desktop remoto per licenza CAL per dispositivo"
 
-Licenza CAL per utente di Servizi terminal o RDS
+"Licenza CAL Per Utente di Servizi Desktop remoto o Servizi Desktop remoto"
 
-"Licenza abbonamento VDI Standard Suite per dispositivo"
+"Licenza di sottoscrizione di VDI Standard Suite per dispositivo"
 
-"Licenza di sottoscrizione di VDI Premium Suite per dispositivo"
+"Licenza di sottoscrizione Premium Suite per dispositivo VDI"
 
-"RDS per dispositivo CAL"
+"Licenza CAL Servizi Desktop remoto per dispositivo"
 
-"CAL per utente per utente"
+"Licenza CAL Servizi Desktop remoto per utente"
 
 </dd> <dt>
 
 **ExpirationDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **DATETIME**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -109,20 +109,20 @@ Data di scadenza della licenza rilasciata all'utente.
 **ProductVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Versione di Servizi Desktop remoto per cui è stata rilasciata la licenza CAL per utente.
+Versione di Servizi Desktop remoto per cui è stata rilasciata la licenza CAL Per Utente di Servizi Desktop remoto.
 
 <dt>
 
 "Windows Server 2012"
 </dt> <dd>
 
-Con questa licenza sono supportati solo i server che eseguono Windows Server 2012, Windows Server 2008 R2 o Windows Server 2008.
+Solo i server che Windows Server 2012, Windows Server 2008 R2 o Windows Server 2008 sono supportati con questa licenza.
 
 </dd> <dt>
 
@@ -136,7 +136,7 @@ Con questa licenza sono supportati solo i server che eseguono Windows Server 200
 "Windows Server 2008"
 </dt> <dd>
 
-Con questa licenza sono supportati solo i server che eseguono Windows Server 2008.
+Solo i server che Windows Server 2008 sono supportati con questa licenza.
 
 </dd> </dl>
 
@@ -145,13 +145,13 @@ Con questa licenza sono supportati solo i server che eseguono Windows Server 200
 **ProductVersionID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identificatore della versione del prodotto per il Key Pack di Servizi Desktop remoto License.
+Identificatore della versione del prodotto per il key pack Servizi Desktop remoto licenza.
 
 <dt>
 
@@ -195,24 +195,24 @@ Non supportata.
 **Utente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nome dell'utente a cui è stata emessa la licenza.
+Nome dell'utente a cui è stata rilasciata la licenza.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Per utilizzare questa classe, è necessario essere membri del gruppo Administrators.
+Per utilizzare questa classe, è necessario essere un membro del gruppo Administrators.
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -223,7 +223,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                            |
 | Spazio dei nomi<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
@@ -235,16 +235,16 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 [**FetchReportEntries**](fetchreportentries-win32-tslicensereport.md)
 </dt> <dt>
 
-[**\_TSIssuedLicense Win32**](win32-tsissuedlicense.md)
+[**Win32 \_ TSIssuedLicense**](win32-tsissuedlicense.md)
 </dt> <dt>
 
-[**\_TSLicenseKeyPack Win32**](win32-tslicensekeypack.md)
+[**Win32 \_ TSLicenseKeyPack**](win32-tslicensekeypack.md)
 </dt> <dt>
 
-[**\_TSLicenseReport Win32**](win32-tslicensereport.md)
+[**Win32 \_ TSLicenseReport**](win32-tslicensereport.md)
 </dt> <dt>
 
-[**\_TSLicenseServer Win32**](win32-tslicenseserver.md)
+[**Win32 \_ TSLicenseServer**](win32-tslicenseserver.md)
 </dt> </dl>
 
  

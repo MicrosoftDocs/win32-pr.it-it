@@ -114,7 +114,7 @@ Nella configurazione più semplice, un'applicazione ridisegnerà tutto ogni volt
 
 Invece di aggiornare direttamente il gestore dell'animazione, le applicazioni possono consentire al timer di animazione di indicare al gestore dell'animazione quando aggiornarne lo stato e ricevere semplicemente una notifica quando è stato effettuato ogni aggiornamento. Questo approccio è consigliato per le API grafiche meno recenti. In generale, se è possibile eseguire la sincronizzazione con la frequenza di aggiornamento del monitoraggio, è meglio farlo e usare l'animazione basata sulle applicazioni.
 
-Il diagramma seguente illustra le interazioni tra un'applicazione e i componenti Windows di animazione quando il timer di animazione è alla base degli aggiornamenti dell'animazione.
+Il diagramma seguente illustra le interazioni tra un'applicazione e i componenti Windows di animazione quando il timer di animazione guida gli aggiornamenti dell'animazione.
 
 ![Diagramma che mostra le interazioni tra un'applicazione e i componenti dell'animazione di Windows quando il timer di animazione sta aggiornando l'animazione.](images/animationtimerupdates.png)
 
@@ -158,7 +158,7 @@ Gli sviluppatori possono *implementare un* callback di confronto delle priorità
 
 Se nessuna delle azioni precedenti è consentita dagli oggetti di confronto di priorità registrati, il tentativo di pianificare il nuovo storyboard ha esito negativo. Per impostazione predefinita, tutti gli storyboard possono essere tagliati, concludeti o compressi per evitare errori, ma nessuno può essere annullato.
 
-Il diagramma seguente illustra il ciclo di vita di uno storyboard, usando gli stati definiti dall'enumerazione [**UI \_ ANIMATION STORYBOARD \_ \_ STATUS.**](/windows/win32/api/uianimation/ne-uianimation-ui_animation_storyboard_status) Le applicazioni usano l Windows API Animation per compilare uno storyboard e inviarlo per la pianificazione. Il gestore dell'animazione pianifica lo storyboard e gestisce l'animazione.
+Il diagramma seguente illustra il ciclo di vita di uno storyboard, usando gli stati definiti dall'enumerazione [**UI \_ ANIMATION STORYBOARD \_ \_ STATUS.**](/windows/win32/api/uianimation/ne-uianimation-ui_animation_storyboard_status) Le applicazioni usano l Windows API animation per compilare uno storyboard e inviarlo per la pianificazione. Il gestore dell'animazione pianifica lo storyboard e gestisce l'animazione.
 
 ![Diagramma che illustra come il gestore dell'animazione pianifica lo storyboard e gestisce l'animazione.](images/statediagram.png)
 

@@ -1,7 +1,7 @@
 ---
 description: Rappresenta i parametri per la copia di un file dall'host nel guest.
 ms.assetid: 255F4132-C212-4A3B-A9B8-3F531E7D1CF9
-title: Classe Msvm_CopyFileToGuestSettingData
+title: Msvm_CopyFileToGuestSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,16 +21,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 05e27340acc9dd341bec7857c164f50344abc36f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6eb011ec8d03153bd5f1b7d956775327d2582410e9ca12591e19a39ddb4af5fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118148840"
 ---
-# <a name="msvm_copyfiletoguestsettingdata-class"></a>\_Classe MSVM CopyFileToGuestSettingData
+# <a name="msvm_copyfiletoguestsettingdata-class"></a>Classe \_ Msvm CopyFileToGuestSettingData
 
-Rappresenta i parametri per la copia di un file dall'host nel guest. Questa classe deriva da [**\_ SettingData CIM**](/previous-versions//cc136911(v=vs.85)).
+Rappresenta i parametri per la copia di un file dall'host nel guest. Questa classe deriva da [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)).
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -53,36 +53,36 @@ class Msvm_CopyFileToGuestSettingData : CIM_SettingData
 
 ## <a name="members"></a>Members
 
-La **classe \_ CopyFileToGuestSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ CopyFileToGuestSettingData** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ CopyFileToGuestSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ CopyFileToGuestSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **maxlen** (64)
+Qualificatori: **MaxLen** ( 64 )
 </dt> </dl>
 
-Breve descrizione testuale dell'oggetto.
+Breve descrizione testuale dell'oggetto .
 
 </dd> <dt>
 
 **CreateFullPath**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -95,46 +95,46 @@ Indica se è necessario creare directory mancanti nel percorso del file di desti
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione testuale dell'oggetto.
+Descrizione testuale dell'oggetto .
 
 </dd> <dt>
 
 **DestinationPath**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Percorso completo del file di destinazione da copiare. Il file di destinazione deve essere accessibile al Guest e può contenere variabili di ambiente, che vengono espanse dal Guest. Se il percorso specificato è una directory esistente nel guest, il file di destinazione viene creato in questa directory. In questo caso, il nome del file da **SourcePath** viene usato come nome del file di destinazione.
+Percorso completo del file di destinazione da copiare. Questo file di destinazione deve essere accessibile al guest e può contenere variabili di ambiente espanse dal guest. Se il percorso specificato è una directory esistente nel guest, il file di destinazione viene creato in questa directory. In questo caso, il nome file da **SourcePath** viene usato come nome del file di destinazione.
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per questa istanza di SettingData. Inoltre, il nome visualizzato può essere utilizzato come proprietà di indice per una ricerca o una query. Nota: non è necessario che il nome sia univoco all'interno di uno spazio dei nomi.
+Nome visualizzato per questa istanza di SettingData. Inoltre, il nome visualizzato può essere usato come proprietà di indice per una ricerca o una query. Nota: il nome non deve essere univoco all'interno di uno spazio dei nomi.
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -143,33 +143,33 @@ Tipo di accesso: sola lettura
 Qualificatori: **chiave**
 </dt> </dl>
 
-All'interno dell'ambito dello spazio dei nomi di creazione di istanze, InstanceID indica in modo opaco e univoco un'istanza di questa classe. Per garantire l'univocità all'interno dello spazio dei nomi, il valore di InstanceID deve essere costruito usando l'algoritmo "preferito" seguente: *OrgID*:*localizzato* in cui *OrgID* e *LocalId* sono separati da due punti (:) e dove *OrgID* deve includere un nome con copyright, un marchio o in altro modo univoco di proprietà dell'entità di business che crea o definisce InstanceID o che è un ID registrato assegnato all'entità di business da un'autorità globale riconosciuta. (Questo requisito è simile a *SchemaName* \_ Struttura *ClassName* dei nomi delle classi dello schema. Inoltre, per garantire l'univocità, *OrgID* non deve contenere i due punti (:). Quando si utilizza questo algoritmo, i primi due punti da visualizzare in InstanceID devono comparire tra *OrgID* e *localizzato*. *Localizzato* viene scelto dall'entità business e non deve essere riutilizzato per identificare elementi diversi (reali) sottostanti. Se non viene utilizzato l'algoritmo preferenziale precedente, l'entità di definizione deve garantire che il InstanceID risultante non venga riutilizzato in alcun InstanceID prodotto da questo o da altri provider per lo spazio dei nomi di questa istanza. Per le istanze definite da DMTF, è necessario usare l'algoritmo "preferenziale" con *OrgID* impostato su CIM.
+Nell'ambito dello spazio dei nomi che crea un'istanza, InstanceID identifica in modo opaco e univoco un'istanza di questa classe. Per garantire l'univocità all'interno di NameSpace, il valore di InstanceID deve essere costruito usando l'algoritmo "preferito" seguente: *OrgID:**LocalID* Dove *OrgID* e *LocalID* sono separati da due punti (:) e dove *OrgID* deve includere un nome protetto da copyright, con marchio o altrimenti univoco di proprietà dell'entità aziendale che crea o definisce InstanceID o che è un ID registrato assegnato all'entità aziendale da un'autorità globale riconosciuta. Questo requisito è simile a *SchemaName* \_ *Struttura ClassName* dei nomi delle classi schema. Inoltre, per garantire l'univocità, *OrgID* non deve contenere i due punti (:). Quando si usa questo algoritmo, i primi due punti da visualizzare in InstanceID devono essere compresi tra *OrgID* e *LocalID*. *LocalID* viene scelto dall'entità business e non deve essere riutilizzato per identificare diversi elementi sottostanti (reali). Se l'algoritmo preferito precedente non viene usato, l'entità di definizione deve garantire che l'InstanceID risultante non viene riutilizzato in alcun InstanceID prodotto da questo o da altri provider per NameSpace di questa istanza. Per le istanze definite da DMTF, l'algoritmo "preferito" deve essere usato con *OrgID* impostato su CIM.
 
 </dd> <dt>
 
 **OverwriteExisting**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se è necessario sovrascrivere un file di destinazione esistente.
+Indica se un file di destinazione esistente deve essere sovrascritto.
 
 </dd> <dt>
 
 **SourcePath**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Percorso completo del file di origine da copiare. Questo file di origine deve essere accessibile all'host Hyper-V e può contenere variabili di ambiente, che vengono espanse dall'host Hyper-V.
+Percorso completo del file di origine da copiare. Questo file di origine deve essere accessibile all'host Hyper-V e può contenere variabili di ambiente espanse dall'host Hyper-V.
 
 </dd> </dl>
 
@@ -179,10 +179,10 @@ Percorso completo del file di origine da copiare. Questo file di origine deve es
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                                 |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -191,10 +191,10 @@ Percorso completo del file di origine da copiare. Questo file di origine deve es
 
 <dl> <dt>
 
-[**\_SETTINGDATA CIM**](cim-settingdata.md)
+[**CIM \_ SettingData**](cim-settingdata.md)
 </dt> <dt>
 
-[**\_SETTINGDATA CIM**](/previous-versions//cc136911(v=vs.85))
+[**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85))
 </dt> </dl>
 
  

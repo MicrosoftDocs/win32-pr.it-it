@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. secolumn (JET_SESID, JET_TABLEID, JET_COLUMNID, String, Encoding)'
-title: Metodo API. secolumn (JET_SESID, JET_TABLEID, JET_COLUMNID, String, Encoding)
+description: 'Altre informazioni su: Metodo Api.SetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, String, Encoding)'
+title: Metodo Api.SetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, String, Encoding)
 TOCTitle: SetColumn method (JET_SESID, JET_TABLEID, JET_COLUMNID, String, Encoding)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.SetColumn(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_COLUMNID,System.String,System.Text.Encoding)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.setcolumn(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d7237bd6ba02e15ade70ee03330332242977822d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dfa67d3aba1ee79226bad4a52a688e60e0532f720d338c6efc20e3c95b05e6ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118084410"
 ---
-# <a name="apisetcolumn-method-jet_sesid-jet_tableid-jet_columnid-string-encoding"></a>Metodo API. secolumn (JET_SESID, JET_TABLEID, JET_COLUMNID, String, Encoding)
+# <a name="apisetcolumn-method-jet_sesid-jet_tableid-jet_columnid-string-encoding"></a>Metodo Api.SetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, String, Encoding)
 
-Modifica il valore di una singola colonna in un record modificato da inserire o per aggiornare il record corrente.
+Modifica un singolo valore di colonna in un record modificato da inserire o aggiornare il record corrente.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -67,35 +67,35 @@ public static void SetColumn(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione da utilizzare.
+    Sessione da usare.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Cursore da aggiornare. È necessario preparare un aggiornamento.
 
 <!-- end list -->
 
   - columnid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
     
-    ColumnID da impostare.
+    Columnid da impostare.
 
 <!-- end list -->
 
   - data  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Dati da impostare.
 
 <!-- end list -->
 
   - codifica  
-    Tipo: [System. Text. Encoding](/dotnet/api/system.text.encoding)  
+    Tipo: [System.Text.Encoding](/dotnet/api/system.text.encoding)  
     
     Codifica utilizzata per convertire la stringa.
 
@@ -105,8 +105,8 @@ public static void SetColumn(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Overload di secolumn](./api.setcolumn-method.md)
+[Overload di SetColumn](./api.setcolumn-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

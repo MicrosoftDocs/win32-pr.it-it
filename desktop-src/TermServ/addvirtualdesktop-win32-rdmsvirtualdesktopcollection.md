@@ -1,12 +1,12 @@
 ---
 title: Metodo AddVirtualDesktop della classe Win32_RDMSVirtualDesktopCollection
-description: Aggiunge un desktop virtuale all'insieme di desktop virtuali.
+description: Aggiunge un desktop virtuale alla raccolta di desktop virtuali.
 ms.assetid: 31a3aa28-6e5d-4f8a-81ff-ab011f568b6a
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo AddVirtualDesktop
-- Metodo AddVirtualDesktop Servizi Desktop remoto, classe Win32_RDMSVirtualDesktopCollection
-- Classe Win32_RDMSVirtualDesktopCollection Servizi Desktop remoto, metodo AddVirtualDesktop
+- Metodo AddVirtualDesktop Servizi Desktop remoto
+- Metodo AddVirtualDesktop Servizi Desktop remoto , Win32_RDMSVirtualDesktopCollection classe
+- Win32_RDMSVirtualDesktopCollection classe Servizi Desktop remoto , metodo AddVirtualDesktop
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4858f99f2ea4793fe0d83d06a0aaa429b7aa8f71
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6fd677c475fd64e8b847540a312568e551b3c7c3f1ad1887082637b29c025abe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118131310"
 ---
-# <a name="addvirtualdesktop-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Metodo AddVirtualDesktop della \_ classe RDMSVirtualDesktopCollection Win32
+# <a name="addvirtualdesktop-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Metodo AddVirtualDesktop della classe \_ RDMSVirtualDesktopCollection Win32
 
-Aggiunge un desktop virtuale all'insieme di desktop virtuali.
+Aggiunge un desktop virtuale alla raccolta di desktop virtuali.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ uint32 AddVirtualDesktop(
 
 <dl> <dt>
 
-*VMName* \[ in\]
+*VMName* \[ Pollici\]
 </dt> <dd>
 
 Nome della macchina virtuale che ospita il desktop virtuale.
@@ -62,8 +62,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -72,7 +72,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RDMSVirtualDesktopCollection Win32**](win32-rdmsvirtualdesktopcollection.md)
+[**Win32 \_ RDMSVirtualDesktopCollection**](win32-rdmsvirtualdesktopcollection.md)
 </dt> </dl>
 
  

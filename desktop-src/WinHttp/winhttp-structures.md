@@ -4,12 +4,12 @@ ms.assetid: e1567393-162e-48d4-8e6b-7620e351136c
 title: Strutture WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f7ecf91702a2f49e2c0a754fcc69d9d34febf229
-ms.sourcegitcommit: 8e3d8594fa073a9c43eb5dcc7babea03ea30f10f
+ms.openlocfilehash: d873be1e8cde929419d65b5b931178f7189426335767977a58fbb7763594be87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113174981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118114066"
 ---
 # <a name="winhttp-structures"></a>Strutture WinHTTP
 
@@ -27,21 +27,21 @@ Contiene la versione HTTP globale.
 [**URL_COMPONENTS**](/windows/win32/api/winhttp/ns-winhttp-url_components)
 </dt> <dd>
 
-Contiene le parti costituenti di un URL. Questa struttura viene usata con le [**funzioni WinHttpUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcrackurl) e [**WinHttpCreateUrl.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcreateurl)
+Contiene le parti costituenti di un URL. Questa struttura viene usata con le [**funzioni WinHttpCrackUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcrackurl) [**e WinHttpCreateUrl.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcreateurl)
 
 </dd> <dt>
 
 [**WINHTTP_ASYNC_RESULT**](/windows/win32/api/winhttp/ns-winhttp-winhttp_async_result)
 </dt> <dd>
 
-Contiene il risultato di una chiamata a una funzione asincrona. Questa struttura viene usata con il [**WINHTTP_STATUS_CALLBACK**](/windows/win32/api/winhttp/nc-winhttp-winhttp_status_callback) prototipo.
+Contiene il risultato di una chiamata a una funzione asincrona. Questa struttura viene usata con [**il**](/windows/win32/api/winhttp/nc-winhttp-winhttp_status_callback) WINHTTP_STATUS_CALLBACK prototipo.
 
 </dd> <dt>
 
 [**WINHTTP_AUTOPROXY_OPTIONS**](/windows/win32/api/winhttp/ns-winhttp-winhttp_autoproxy_options)
 </dt> <dd>
 
-Usato per indicare alla funzione [**WinHttpGetProxyForURL**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) se specificare l'URL del file di configurazione automatica del proxy o individuare automaticamente l'URL con query DHCP o DNS per la rete.
+Usato per indicare alla funzione [**WinHttpGetProxyForURL**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) se specificare l'URL del file pac (Proxy Auto-Configuration) o individuare automaticamente l'URL con query DHCP o DNS alla rete.
 
 </dd> <dt>
 
@@ -69,38 +69,38 @@ Contiene l'indirizzo IP di origine e di destinazione della richiesta che ha gene
 [**WINHTTP_CREDS**](/windows/win32/api/winhttp/ns-winhttp-winhttp_creds)
 </dt> <dd>
 
-Contiene le informazioni sulle credenziali utente utilizzate per l'autenticazione del server e del proxy.
+Contiene le informazioni sulle credenziali utente usate per l'autenticazione del server e del proxy.
 
 > [!Note]
-> Questa struttura è stata deprecata. È invece consigliabile usare [**la WINHTTP_CREDS_EX**](/windows/win32/api/winhttp/ns-winhttp-winhttp_creds_ex) struttura .
+> Questa struttura è stata deprecata. È invece consigliabile usare la [**WINHTTP_CREDS_EX**](/windows/win32/api/winhttp/ns-winhttp-winhttp_creds_ex) struttura .
 
 </dd> <dt>
 
 [**WINHTTP_CREDS_EX**](/windows/win32/api/winhttp/ns-winhttp-winhttp_creds_ex)
 </dt> <dd>
 
-Contiene le informazioni sulle credenziali utente utilizzate per l'autenticazione del server e del proxy.
+Contiene le informazioni sulle credenziali utente usate per l'autenticazione del server e del proxy.
 
 </dd> <dt>
 
 [**WINHTTP_CURRENT_USER_IE_PROXY_CONFIG**](/windows/win32/api/winhttp/ns-winhttp-winhttp_current_user_ie_proxy_config)
 </dt> <dd>
 
-Contiene le informazioni Internet Explorer configurazione del proxy.
+Contiene le Internet Explorer di configurazione del proxy.
 
 </dd> <dt>
 
 [**WINHTTP_EXTENDED_HEADER**](/windows/win32/api/winhttp/ns-winhttp-winhttp_extended_header)
 </dt> <dd>
 
-Rappresenta un'intestazione di richiesta HTTP come coppia nome/valore di stringa.
+Rappresenta un'intestazione di richiesta HTTP come coppia nome/valore stringa.
 
 </dd> <dt>
 
 [**WINHTTP_HEADER_NAME**](/windows/win32/api/winhttp/ns-winhttp-winhttp_header_name)
 </dt> <dd>
 
-Rappresenta il nome di un'intestazione di richiesta HTTP.
+Rappresenta un nome di intestazione di richiesta HTTP.
 
 </dd> <dt>
 
@@ -156,14 +156,14 @@ Contiene statistiche per una richiesta.
 [**WINHTTP_REQUEST_TIMES**](/windows/desktop/api/winhttp/ns-winhttp-winhttp_request_times)
 </dt> <dd>
 
-Contiene informazioni sull'intervallo per una richiesta.
+Contiene informazioni di intervallo per una richiesta.
 
 </dd> <dt>
 
 [**WINHTTP_SECURITY_INFO**](/windows/desktop/api/winhttp/ns-winhttp-winhttp_security_info)
 </dt> <dd>
 
-Contiene informazioni di connessione e crittografia SChannel per una richiesta.
+Contiene le informazioni di connessione e crittografia SChannel per una richiesta.
 
 </dd> <dt>
 
