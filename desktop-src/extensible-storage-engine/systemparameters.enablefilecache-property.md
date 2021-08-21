@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà SystemParameters. EnableFileCache'
-title: Proprietà SystemParameters. EnableFileCache
+description: Altre informazioni sulla proprietà SystemParameters.EnableFileCache
+title: SystemParameters.EnableFileCache - proprietà
 TOCTitle: 'EnableFileCache property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.SystemParameters.EnableFileCache
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.enablefilecache(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3a0714931860cf8dcce767995f9766bb5440743e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7c6635f4c7c4e6f82aa9c001fd60c7a4bbdc30b0b9b5878d320c77a1f2f1531
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118484987"
 ---
-# <a name="systemparametersenablefilecache-property"></a>Proprietà SystemParameters. EnableFileCache
+# <a name="systemparametersenablefilecache-property"></a>SystemParameters.EnableFileCache - proprietà
 
 Ottiene o imposta un valore che indica se il motore di database deve utilizzare la cache dei file del sistema operativo per tutti i file gestiti.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,7 +61,7 @@ public static bool EnableFileCache { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -69,6 +69,6 @@ Tipo: [System. Boolean](/dotnet/api/system.boolean)
 
 [SystemParameters (classe)](./systemparameters-class.md)
 
-[Membri SystemParameters](./systemparameters-members.md)
+[Membri di SystemParameters](./systemparameters-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

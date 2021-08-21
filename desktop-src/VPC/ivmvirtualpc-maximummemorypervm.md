@@ -3,7 +3,7 @@ title: Proprietà IVMVirtualPC MaximumMemoryPerVM (VPCCOMInterfaces.h)
 description: Recupera la quantità massima consentita di memoria fisica per ogni macchina virtuale, in megabyte.
 ms.assetid: eb30dd6c-8f37-4cf9-9ed7-47925b5b1112
 keywords:
-- Proprietà MaximumMemoryPerVM Virtual PC
+- MaximumMemoryPerVM - proprietà Virtual PC
 - Proprietà MaximumMemoryPerVM Virtual PC, interfaccia IVMVirtualPC
 - Interfaccia IVMVirtualPC Virtual PC, proprietà MaximumMemoryPerVM
 topic_type:
@@ -45,7 +45,7 @@ HRESULT get_MaximumMemoryPerVM(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Quantità massima consentita, in megabyte, di memoria fisica per ogni macchina virtuale.
+Quantità massima consentita, in megabyte, di memoria fisica per macchina virtuale.
 
 ## <a name="error-codes"></a>Codici di errore
 
@@ -55,8 +55,8 @@ Quantità massima consentita, in megabyte, di memoria fisica per ogni macchina v
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                                              | L'operazione è stata completata.<br/>                                                        |
 | <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl>                                | Il parametro è **NULL.**<br/>                                                           |
-| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>                        | Si è verificato un errore imprevisto.<br/>                                                    |
-| <dl> <dt>Macchina virtuale \_ E \_ \_ VIRTUALIZZAZIONE HARDWARE \_ DISABILITATA</dt> <dt>0XA0040951</dt> </dl> | Il processore non supporta le estensioni haV (Hardware Accelerated Virtualization).<br/> |
+| <dl> <dt>DISP \_ E \_ ECCEZIONE</dt> <dt>0x80020009</dt> </dl>                        | Si è verificato un errore imprevisto.<br/>                                                    |
+| <dl> <dt>Macchina virtuale \_ E \_ \_ VIRTUALIZZAZIONE HARDWARE \_ DISABILITATA</dt> <dt>0xA0040951</dt> </dl> | Il processore non supporta le estensioni haV (Hardware Accelerated Virtualization).<br/> |
 
 
 
@@ -71,7 +71,7 @@ Quantità massima consentita, in megabyte, di memoria fisica per ogni macchina v
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
 | Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
-| IID<br/>                      | IID IVMVirtualPC è definito come \_ 236ba0d9-a24a-4292-a132-27c1421dfd01<br/>               |
+| IID<br/>                      | IID \_ IVMVirtualPC è definito come 236ba0d9-a24a-4292-a132-27c1421dfd01<br/>               |
 
 
 

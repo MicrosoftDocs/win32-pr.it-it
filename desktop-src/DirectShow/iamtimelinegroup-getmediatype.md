@@ -24,7 +24,7 @@ ms.locfileid: "118400806"
 # <a name="iamtimelinegroupgetmediatype-method"></a>Metodo IAMTimelineGroup::GetMediaType
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
@@ -58,7 +58,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 ## <a name="remarks"></a>Commenti
 
-Il chiamante deve liberare il blocco di formato del tipo di supporto restituito, specificato nel membro **pbFormat** della struttura AM \_ MEDIA TYPE \_ restituita. È possibile usare la funzione helper [**FreeMediaType**](freemediatype.md) dalla libreria di classi di base.
+Il chiamante deve liberare il blocco di formato del tipo di supporto restituito, specificato nel **membro pbFormat** della struttura AM \_ MEDIA TYPE \_ restituita. È possibile usare la funzione helper [**FreeMediaType**](freemediatype.md) dalla libreria di classi di base.
 
 > [!Note]  
 > Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
@@ -66,7 +66,7 @@ Il chiamante deve liberare il blocco di formato del tipo di supporto restituito,
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

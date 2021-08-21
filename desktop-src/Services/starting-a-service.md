@@ -1,21 +1,21 @@
 ---
-description: Per avviare un servizio, un programma di controllo del servizio apre un handle per un database installato e quindi specifica l'handle in una chiamata alla funzione StartService.
+description: Per avviare un servizio, un programma di controllo del servizio apre un handle a un database installato e quindi specifica l'handle in una chiamata alla funzione StartService.
 ms.assetid: 7ee5254d-b035-4888-88e9-93e3e55d737e
 title: Avvio di un servizio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c8f30bb7f6ce9695a050033314a62ae870250c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef4725b49f1bfe08ce31c57bd7f500b1fe5f04d2b632d1815e2a359974f32f8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117967061"
 ---
 # <a name="starting-a-service"></a>Avvio di un servizio
 
-Per avviare un servizio, un [programma di controllo del servizio](service-control-programs.md) apre un handle per un database installato e quindi specifica l'handle in una chiamata alla funzione [**StartService**](/windows/desktop/api/Winsvc/nf-winsvc-startservicea) . Dopo l'avvio del servizio, il programma utilizza i membri della struttura del [**\_ \_ processo di stato del servizio**](/windows/desktop/api/Winsvc/ns-winsvc-service_status_process) restituiti dalla funzione [**QueryServiceStatusEx**](/windows/desktop/api/Winsvc/nf-winsvc-queryservicestatusex) per tenere traccia dello stato di avanzamento del servizio.
+Per avviare un [](service-control-programs.md) servizio, un programma di controllo del servizio apre un handle a un database installato e quindi specifica l'handle in una chiamata alla [**funzione StartService.**](/windows/desktop/api/Winsvc/nf-winsvc-startservicea) Dopo l'avvio del servizio, il programma usa i membri della struttura [**SERVICE \_ STATUS \_ PROCESS**](/windows/desktop/api/Winsvc/ns-winsvc-service_status_process) restituiti dalla [**funzione QueryServiceStatusEx**](/windows/desktop/api/Winsvc/nf-winsvc-queryservicestatusex) per tenere traccia dello stato del servizio.
 
-La funzione DoStartSvc nell'esempio seguente illustra come avviare un servizio. La variabile szSvcName è una variabile globale che contiene il nome del servizio da avviare. Per l'esempio completo che imposta questa variabile, vedere [SvcControl. cpp](svccontrol-cpp.md).
+La funzione DoStartSvc nell'esempio seguente illustra come avviare un servizio. La variabile szSvcName è una variabile globale che contiene il nome del servizio da iniziare. Per l'esempio completo che imposta questa variabile, vedere [SvcControl.cpp.](svccontrol-cpp.md)
 
 
 ```C++

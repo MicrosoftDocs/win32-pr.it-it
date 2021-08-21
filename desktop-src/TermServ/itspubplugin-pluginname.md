@@ -1,12 +1,12 @@
 ---
-title: Proprietà ItsPubPlugin pluginName
+title: Proprietà pluginName di ItsPubPlugin
 description: Recupera il nome del plug-in.
 ms.assetid: c1ea46b6-fac6-4140-a278-cb04ee9af739
 ms.tgt_platform: multiple
 keywords:
 - Proprietà pluginName Servizi Desktop remoto
-- Servizi Desktop remoto proprietà pluginName, interfaccia ItsPubPlugin
-- Interfaccia ItsPubPlugin Servizi Desktop remoto, proprietà pluginName
+- proprietà pluginName Servizi Desktop remoto, interfaccia ItsPubPlugin
+- ItsPubPlugin interface Servizi Desktop remoto proprietà pluginName
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97f5aa6ff6659047e9be48fd7b7a41f652c5cfd9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5aa1cd3103e901255a6226db3e128e81bb17c02e6b586a48ca434ed44932861c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118128640"
 ---
-# <a name="itspubpluginpluginname-property"></a>ItsPubPlugin::p proprietà luginName
+# <a name="itspubpluginpluginname-property"></a>Proprietà ItsPubPlugin::p luginName
 
 Recupera il nome del plug-in.
 
@@ -44,7 +44,7 @@ HRESULT get_pluginName(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Puntatore a una variabile **BSTR** per ricevere il nome del plug-in.
+Puntatore a una **variabile BSTR** per ricevere il nome del plug-in.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ Puntatore a una variabile **BSTR** per ricevere il nome del plug-in.
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                         |
-| IDL<br/>                      | <dl> <dt>Cpubplugin. idl</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Cpubplugin.idl</dt> </dl> |
 
 
 

@@ -24,7 +24,7 @@ ms.locfileid: "118400759"
 # <a name="iamtimelineobjgetsubobjectguid-method"></a>Metodo IAMTimelineObj::GetSubObjectGUID
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 

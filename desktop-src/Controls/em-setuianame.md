@@ -3,7 +3,7 @@ title: EM_SETUIANAME messaggio (Richedit.h)
 description: Imposta il nome di un controllo Rich Edit per Automazione interfaccia utente (UIA).
 ms.assetid: 60506FEE-9708-4668-8846-42B0B696DD9A
 keywords:
-- EM_SETUIANAME controlli Windows messaggio
+- EM_SETUIANAME controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:

@@ -1,31 +1,31 @@
 ---
-title: Esempi di provider WMI DNS-gestione di Zone DNS
-description: Esempi di provider WMI DNS-gestione di Zone DNS
+title: Esempi di provider WMI DNS- Gestione delle zone DNS
+description: Esempi di provider WMI DNS- Gestione delle zone DNS
 ms.assetid: 12958b71-b47d-4dd7-bd08-409ecd369e4f
 keywords:
-- Esempi del provider WMI DNS 8212; Gestione di Zone DNS
+- Esempi di provider WMI DNS 8212; Gestione delle zone DNS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb7f0468cd4550dc3c7c3ed0b2a7a585a3b17488
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 452c6ef3e9e072ffba6b1bf9ab58e9e15e15405b7bca418dc7619441ae43e125
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104395834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118163850"
 ---
-# <a name="dns-wmi-provider-samplesmanaging-dns-zones"></a>Esempi di provider WMI DNS-gestione di Zone DNS
+# <a name="dns-wmi-provider-samplesmanaging-dns-zones"></a>Esempi di provider WMI DNS- Gestione delle zone DNS
 
-In questa sezione vengono illustrate le attività di scripting associate alla gestione delle zone DNS. I collegamenti seguenti sono collegati a subroutine nel file di script.
+Questa sezione illustra le attività di scripting associate alla gestione delle zone DNS. I collegamenti seguenti collegano alle subroutine nel file di script.
 
 -   [Creare una zona DNS](#create-a-dns-zone)
 -   [Modificare una zona DNS](#modify-a-dns-zone)
 -   [Eliminare una zona DNS](#delete-a-dns-zone)
--   [Aggiungere un indirizzo IP di zona](#add-a-zone-ip-address)
--   [Eliminare un indirizzo IP di zona](#delete-a-zone-ip-address)
+-   [Aggiungere un indirizzo IP della zona](#add-a-zone-ip-address)
+-   [Eliminare un indirizzo IP della zona](#delete-a-zone-ip-address)
 -   [Sospendere una zona](#pause-a-zone)
 -   [Riprendere una zona](#resume-a-zone)
 -   [Aggiornare una zona](#update-a-zone)
--   [Ricarica una zona](#reload-a-zone)
+-   [Ricaricare una zona](#reload-a-zone)
 -   [Aggiornare una zona](#refresh-a-zone)
 
 
@@ -839,7 +839,7 @@ End Sub
 
 
 
-## <a name="add-a-zone-ip-address"></a>Aggiungere un indirizzo IP di zona
+## <a name="add-a-zone-ip-address"></a>Aggiungere un indirizzo IP della zona
 
 
 ```VB
@@ -1043,7 +1043,7 @@ End Sub
 
 
 
-## <a name="delete-a-zone-ip-address"></a>Eliminare un indirizzo IP di zona
+## <a name="delete-a-zone-ip-address"></a>Eliminare un indirizzo IP della zona
 
 
 ```VB
@@ -2907,9 +2907,9 @@ End Function
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: iid_is (attributo)
-description: L'attributo \ IID \_ is \ Pointer indica l'IID dell'interfaccia com a cui punta un puntatore a interfaccia.
+description: L'attributo del puntatore \ iid \_ is\ specifica l'IID dell'interfaccia COM a cui punta un puntatore di interfaccia.
 ms.assetid: 7fb5eb87-15d8-4717-b79a-e8a81f2f7293
 keywords:
-- attributo iid_is MIDL
+- iid_is attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e94c6f46a6828e81817e45ff6eb6eb8245b00a61
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 74553fdb1e3020d49eca7dfdd219354a4690056c45126b3af208395117ade991
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118383868"
 ---
-# <a name="iid_is-attribute"></a>IID \_ è un attributo
+# <a name="iid_is-attribute"></a>iid \_ is attribute
 
-L' **\[ IID \_ è \]** un attributo puntatore che specifica l'IID dell'interfaccia com a cui punta un puntatore di interfaccia.
+**\[ L'attributo \_ \] iid is** pointer specifica l'IID dell'interfaccia COM a cui punta un puntatore di interfaccia.
 
 ``` syntax
 [ iid_is(limited-expression) ]
@@ -31,18 +31,18 @@ L' **\[ IID \_ è \]** un attributo puntatore che specifica l'IID dell'interfacc
 
 <dl> <dt>
 
-*espressione limitata* 
+*limited-expression* 
 </dt> <dd>
 
-Specifica un'espressione del linguaggio C. Il compilatore MIDL supporta le espressioni condizionali, le espressioni logiche, le espressioni relazionali e le espressioni aritmetiche. MIDL non consente chiamate di funzione nelle espressioni e non consente operatori di incremento e decremento.
+Specifica un'espressione in linguaggio C. Il compilatore MIDL supporta espressioni condizionali, logiche, relazionali ed aritmetiche. MIDL non consente chiamate di funzione nelle espressioni e non consente operatori di incremento e decremento.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-È possibile utilizzare **\[ IID \_ \]** negli elenchi di attributi per i parametri di funzione e per i membri della struttura o dell'Unione. Gli stub usano l'IID per determinare come eseguire il marshalling del puntatore a interfaccia. Questa operazione è utile per un puntatore a interfaccia tipizzato come parametro della classe di base.
+È possibile usare **\[ iid negli elenchi \_ di \]** attributi per i parametri di funzione e per i membri di struttura o unione. Gli stub usano l'IID per determinare come effettuare il marshalling del puntatore a interfaccia. Ciò è utile per un puntatore a interfaccia tipivato come parametro della classe base.
 
-I file che usano l' **\[ IID \_ sono \]** attributi devono essere compilati con il compilatore MIDL in modalità predefinita, che non usa l'opzione [**/OSF**](-osf.md) .
+I file che usano **\[ l'attributo iid \_ is \]** devono essere compilati con il compilatore MIDL in modalità predefinita, che non usa l'opzione [**/osf.**](-osf.md)
 
 ## <a name="examples"></a>Esempi
 
@@ -56,15 +56,15 @@ HRESULT    CreateInstance(
 
 <dl> <dt>
 
-[**oggetto**](object.md)
+[**Oggetto**](object.md)
 </dt> <dt>
 
-[**uuid**](uuid.md)
+[**Uuid**](uuid.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

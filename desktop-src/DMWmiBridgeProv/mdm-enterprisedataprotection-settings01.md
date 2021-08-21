@@ -28,7 +28,7 @@ ms.locfileid: "118165834"
 
 \[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La **classe MDM \_ EnterpriseDataProtection \_ Settings01** viene usata per configurare impostazioni specifiche di Windows Information Protection (WIP) (in precedenza Enterprise Data Protection). Per altre informazioni su WIP, vedere Proteggere i dati aziendali usando la protezione dei dati [aziendali (EDP).](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
+La **classe MDM \_ EnterpriseDataProtection \_ Settings01** viene usata per configurare le impostazioni specifiche di Windows Information Protection (WIP) (in precedenza Enterprise Data Protection). Per altre informazioni su WIP, vedere Proteggere i dati aziendali usando la protezione dei dati [aziendali (EDP).](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 

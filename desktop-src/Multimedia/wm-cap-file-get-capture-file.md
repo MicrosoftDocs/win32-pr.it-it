@@ -1,9 +1,9 @@
 ---
-title: Messaggio di WM_CAP_FILE_GET_CAPTURE_FILE (VFW. h)
-description: Il \_ messaggio WM Cap \_ file \_ get \_ Capture \_ file restituisce il nome del file di acquisizione corrente. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro capFileGetCaptureFile.
+title: WM_CAP_FILE_GET_CAPTURE_FILE messaggio (Vfw.h)
+description: Il messaggio WM \_ CAP FILE GET CAPTURE FILE restituisce il nome del file di acquisizione \_ \_ \_ \_ corrente. È possibile inviare questo messaggio in modo esplicito o usando la macro capFileGetCaptureFile.
 ms.assetid: 86ce2904-834d-449f-9ef8-5a158c55bbaa
 keywords:
-- WM_CAP_FILE_GET_CAPTURE_FILE messaggi multimediali di Windows
+- WM_CAP_FILE_GET_CAPTURE_FILE messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7008e0b217f29ad9602afbdc41cc97f9cb7ecaa3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 462f919458078129f6756782c2fde5322b3cd814c3108cb0ba8ee24e2f54c022
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118135319"
 ---
-# <a name="wm_cap_file_get_capture_file-message"></a>\_ \_ \_ \_ Messaggio file di acquisizione acquisizione file con estensione WM \_
+# <a name="wm_cap_file_get_capture_file-message"></a>MESSAGGIO \_ WM CAP FILE GET CAPTURE \_ \_ \_ \_ FILE
 
-Il messaggio **WM \_ Cap \_ file \_ get \_ Capture \_ file** restituisce il nome del file di acquisizione corrente. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**capFileGetCaptureFile**](/windows/desktop/api/Vfw/nf-vfw-capfilegetcapturefile) .
+Il **messaggio WM CAP FILE GET CAPTURE \_ \_ \_ \_ \_ FILE** restituisce il nome del file di acquisizione corrente. È possibile inviare questo messaggio in modo esplicito o usando la macro [**capFileGetCaptureFile.**](/windows/desktop/api/Vfw/nf-vfw-capfilegetcapturefile)
 
 
 ```C++
@@ -45,16 +45,16 @@ Dimensione, in byte, del buffer definito dall'applicazione a cui fa riferimento 
 
 </dd> <dt>
 
-<span id="szName"></span><span id="szname"></span><span id="SZNAME"></span>*szName*
+<span id="szName"></span><span id="szname"></span><span id="SZNAME"></span>*Szname*
 </dt> <dd>
 
-Puntatore a un buffer definito dall'applicazione utilizzato per restituire il nome del file di acquisizione come stringa con terminazione null.
+Puntatore a un buffer definito dall'applicazione utilizzato per restituire il nome del file di acquisizione come stringa con terminazione Null.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione è riuscita o **false** in caso contrario.
+Restituisce **TRUE se** l'operazione ha esito positivo o FALSE **in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
@@ -68,7 +68,7 @@ Il nome file di acquisizione predefinito è C: \\CAPTURE.AVI.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

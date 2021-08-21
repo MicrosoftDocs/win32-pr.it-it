@@ -1,7 +1,7 @@
 ---
-description: Ottiene le dimensioni della patch del triangolo.
+description: Ottiene le dimensioni della patch triangolare.
 ms.assetid: 3bfbed4c-59af-43eb-a462-478e89cfe9ae
-title: Funzione D3DXTriPatchSize (D3DX9Mesh. h)
+title: Funzione D3DXTriPatchSize (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5ee254b12485153f4d5c5ba0843189399d1aed0f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 54eba8131d59b9d1e68526cd26bb74b497bcec21fcbffdb4229678f166646806
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118298243"
 ---
-# <a name="d3dxtripatchsize-function"></a>D3DXTriPatchSize (funzione)
+# <a name="d3dxtripatchsize-function"></a>Funzione D3DXTriPatchSize
 
-Ottiene le dimensioni della patch del triangolo.
+Ottiene le dimensioni della patch triangolare.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ HRESULT D3DXTriPatchSize(
 
 <dl> <dt>
 
-*pfNumSegs* \[ in\]
+*pfNumSegs* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Numero di segmenti per perimetro a conteggiarla suddividerla.
+Numero di segmenti per bordo da s tessellare.
 
 </dd> <dt>
 
-*pdwTriangles* \[ out\]
+*pdwTriangles* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
@@ -60,7 +60,7 @@ Puntatore a un valore DWORD che contiene il numero di triangoli nella patch.
 
 </dd> <dt>
 
-*pdwVertices* \[ out\]
+*pdwVertices* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
@@ -73,7 +73,7 @@ Puntatore a un valore DWORD che contiene il numero di vertici nella patch del tr
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,8 +81,8 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

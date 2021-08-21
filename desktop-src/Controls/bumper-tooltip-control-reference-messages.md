@@ -1,54 +1,54 @@
 ---
-title: Messaggi di controllo ToolTip
-description: Messaggi di controllo ToolTip
+title: Messaggi di controllo descrizione comando
+description: Messaggi di controllo descrizione comando
 ms.assetid: 0ca52be0-ccce-4814-8aab-14a602304d73
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f182a47c8ea3eb840fbb954b91974ba832e5f72
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0d4eabfab075a2ba474dd91eb25c398169e2a39b1130a239d8b291011e036b46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118415311"
 ---
-# <a name="tooltip-control-messages"></a>Messaggi di controllo ToolTip
+# <a name="tooltip-control-messages"></a>Messaggi di controllo descrizione comando
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**attivazione di TTM \_**](ttm-activate.md)
--   [**\_ADDTOOL TTM**](ttm-addtool.md)
--   [**\_ADJUSTRECT TTM**](ttm-adjustrect.md)
--   [**\_DELTOOL TTM**](ttm-deltool.md)
--   [**\_ENUMTOOLS TTM**](ttm-enumtools.md)
--   [**\_GETBUBBLESIZE TTM**](ttm-getbubblesize.md)
--   [**\_GETCURRENTTOOL TTM**](ttm-getcurrenttool.md)
--   [**\_GETDELAYTIME TTM**](ttm-getdelaytime.md)
--   [**GetMargin TTM \_**](ttm-getmargin.md)
--   [**\_GETMAXTIPWIDTH TTM**](ttm-getmaxtipwidth.md)
--   [**GetText TTM \_**](ttm-gettext.md)
--   [**\_GETTIPBKCOLOR TTM**](ttm-gettipbkcolor.md)
--   [**\_GETTIPTEXTCOLOR TTM**](ttm-gettiptextcolor.md)
--   [**getTitle TTM \_**](ttm-gettitle.md)
--   [**\_GETTOOLCOUNT TTM**](ttm-gettoolcount.md)
--   [**\_GETTOOLINFO TTM**](ttm-gettoolinfo.md)
--   [**TTM ( \_ HITTEST)**](ttm-hittest.md)
--   [**\_NEWTOOLRECT TTM**](ttm-newtoolrect.md)
--   [**\_pop TTM**](ttm-pop.md)
--   [**\_popup TTM**](ttm-popup.md)
--   [**\_RELAYEVENT TTM**](ttm-relayevent.md)
--   [**\_SETDELAYTIME TTM**](ttm-setdelaytime.md)
--   [**TTM \_**](ttm-setmargin.md)
--   [**\_SETMAXTIPWIDTH TTM**](ttm-setmaxtipwidth.md)
--   [**\_SETTIPBKCOLOR TTM**](ttm-settipbkcolor.md)
--   [**\_SETTIPTEXTCOLOR TTM**](ttm-settiptextcolor.md)
--   [**TTM \_**](ttm-settitle.md)
--   [**\_SETTOOLINFO TTM**](ttm-settoolinfo.md)
--   [**\_SETWINDOWTHEME TTM**](ttm-setwindowtheme.md)
--   [**\_TRACKACTIVATE TTM**](ttm-trackactivate.md)
--   [**\_TRACKPOSITION TTM**](ttm-trackposition.md)
--   [**aggiornamento di TTM \_**](ttm-update.md)
--   [**\_UPDATETIPTEXT TTM**](ttm-updatetiptext.md)
--   [**\_WINDOWFROMPOINT TTM**](ttm-windowfrompoint.md)
+-   [**TTM \_ ACTIVATE**](ttm-activate.md)
+-   [**TTM \_ ADDTOOL**](ttm-addtool.md)
+-   [**TTM \_ ADJUSTRECT**](ttm-adjustrect.md)
+-   [**TTM \_ DELTOOL**](ttm-deltool.md)
+-   [**TTM \_ ENUMTOOLS**](ttm-enumtools.md)
+-   [**TTM \_ GETBUBBLESIZE**](ttm-getbubblesize.md)
+-   [**TTM \_ GETCURRENTTOOL**](ttm-getcurrenttool.md)
+-   [**TTM \_ GETDELAYTIME**](ttm-getdelaytime.md)
+-   [**TTM \_ GETMARGIN**](ttm-getmargin.md)
+-   [**TTM \_ GETMAXTIPWIDTH**](ttm-getmaxtipwidth.md)
+-   [**TTM \_ GETTEXT**](ttm-gettext.md)
+-   [**TTM \_ GETTIPBKCOLOR**](ttm-gettipbkcolor.md)
+-   [**TTM \_ GETTIPTEXTCOLOR**](ttm-gettiptextcolor.md)
+-   [**TTM \_ GETTITLE**](ttm-gettitle.md)
+-   [**TTM \_ GETTOOLCOUNT**](ttm-gettoolcount.md)
+-   [**TTM \_ GETTOOLINFO**](ttm-gettoolinfo.md)
+-   [**TTM \_ HITTEST**](ttm-hittest.md)
+-   [**TTM \_ NEWTOOLRECT**](ttm-newtoolrect.md)
+-   [**TTM \_ POP**](ttm-pop.md)
+-   [**TTM \_ POPUP**](ttm-popup.md)
+-   [**TTM \_ RELAYEVENT**](ttm-relayevent.md)
+-   [**TTM \_ SETDELAYTIME**](ttm-setdelaytime.md)
+-   [**TTM \_ SETMARGIN**](ttm-setmargin.md)
+-   [**TTM \_ SETMAXTIPWIDTH**](ttm-setmaxtipwidth.md)
+-   [**TTM \_ SETTIPBKCOLOR**](ttm-settipbkcolor.md)
+-   [**TTM \_ SETTIPTEXTCOLOR**](ttm-settiptextcolor.md)
+-   [**TTM \_ SETTITLE**](ttm-settitle.md)
+-   [**TTM \_ SETTOOLINFO**](ttm-settoolinfo.md)
+-   [**TTM \_ SETWINDOWTHEME**](ttm-setwindowtheme.md)
+-   [**TTM \_ TRACKACTIVATE**](ttm-trackactivate.md)
+-   [**TTM \_ TRACKPOSITION**](ttm-trackposition.md)
+-   [**TTM \_ UPDATE**](ttm-update.md)
+-   [**TTM \_ UPDATETIPTEXT**](ttm-updatetiptext.md)
+-   [**TTM \_ WINDOWFROMPOINT**](ttm-windowfrompoint.md)
 
  
 

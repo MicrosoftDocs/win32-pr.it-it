@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectShaderVariable GetVertexShader (D3dx11effect. h)
+title: Metodo ID3DX11EffectShaderVariable GetVertexShader (D3dx11effect.h)
 description: Ottenere un vertex shader.
 ms.assetid: 31a250ae-154b-43ce-97e3-6480f23dc4e2
 keywords:
 - Metodo GetVertexShader Direct3D 11
 - Metodo GetVertexShader Direct3D 11, interfaccia ID3DX11EffectShaderVariable
-- Interfaccia ID3DX11EffectShaderVariable Direct3D 11, metodo GetVertexShader
+- ID3DX11EffectShaderVariable interface Direct3D 11 , Metodo GetVertexShader
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7977da5fc36a0c339069526db723e2c479b49d55
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c0f6fa74c19c764e70239623ea0bb239ebf822439be5fb2e640eb7e4085c6ce2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104531021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118533009"
 ---
-# <a name="id3dx11effectshadervariablegetvertexshader-method"></a>Metodo ID3DX11EffectShaderVariable:: GetVertexShader
+# <a name="id3dx11effectshadervariablegetvertexshader-method"></a>Metodo ID3DX11EffectShaderVariable::GetVertexShader
 
 Ottenere un vertex shader.
 
@@ -47,7 +47,7 @@ HRESULT GetVertexShader(
 *ShaderIndex* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Indice a base zero.
 
@@ -58,7 +58,7 @@ Indice a base zero.
 
 Tipo: **[ **ID3D11VertexShader**](/windows/win32/api/d3d11/nn-d3d11-id3d11vertexshader)\*\***
 
-Puntatore a un puntatore [**ID3D11VertexShader**](/windows/win32/api/d3d11/nn-d3d11-id3d11vertexshader) che verrà impostato sul vertex shader al ritorno.
+Puntatore a un [**puntatore ID3D11VertexShader**](/windows/win32/api/d3d11/nn-d3d11-id3d11vertexshader) che verrà impostato sul vertex shader al ritorno.
 
 </dd> </dl>
 
@@ -66,12 +66,12 @@ Puntatore a un puntatore [**ID3D11VertexShader**](/windows/win32/api/d3d11/nn-d3
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei codici [restituiti Direct3D 11 seguenti.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra gli effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -81,8 +81,8 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-refe
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

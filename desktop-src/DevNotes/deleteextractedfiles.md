@@ -1,7 +1,7 @@
 ---
-description: La funzione DeleteExtractedFiles Elimina i file estratti dalla funzione Extract.
+description: La funzione DeleteExtractedFiles elimina i file estratti dalla funzione Extract.
 ms.assetid: 253e6267-d4be-46d6-bad2-2eb20bbc7e33
-title: DeleteExtractedFiles (funzione)
+title: Funzione DeleteExtractedFiles
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Cabinet.dll
-ms.openlocfilehash: 4ab032864e59d8e7379fe347d241874d9336e431
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 500de4df41c82f1956f50abcc25dc84f11484b693dc8d1a5f8bc53ab556ade0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162092"
 ---
-# <a name="deleteextractedfiles-function"></a>DeleteExtractedFiles (funzione)
+# <a name="deleteextractedfiles-function"></a>Funzione DeleteExtractedFiles
 
-\[Questa funzione non è più supportata, pertanto non è possibile garantirne il comportamento.\]
+\[Questa funzione non è più supportata, quindi non è possibile garantirne il comportamento.\]
 
-La funzione **DeleteExtractedFiles** Elimina i file estratti dalla funzione [**Extract**](extract.md) .
+La **funzione DeleteExtractedFiles** elimina i file estratti dalla [**funzione Extract.**](extract.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,12 +41,12 @@ VOID WINAPI DeleteExtractedFiles(
 
 <dl> <dt>
 
-*ps* 
+*Ps* 
 </dt> <dd>
 
-Puntatore a una struttura di [**sessione**](session.md) che contiene informazioni sulla sessione corrente.
+Puntatore a una [**struttura SESSION**](session.md) che contiene informazioni sulla sessione corrente.
 
-Questa funzione libera la memoria nel membro **pFileList** della struttura e imposta **pFileList** su **null**.
+Questa funzione libera la memoria nel **membro pFileList** di questa struttura e imposta **pFileList** su **NULL.**
 
 </dd> </dl>
 
@@ -56,7 +56,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,10 +72,10 @@ A questa funzione non è associato alcun file di intestazione o libreria di impo
 
 <dl> <dt>
 
-[**Estrarre**](extract.md)
+[**Estrazione**](extract.md)
 </dt> <dt>
 
-[**SESSIONE**](session.md)
+[**Sessione**](session.md)
 </dt> </dl>
 
  

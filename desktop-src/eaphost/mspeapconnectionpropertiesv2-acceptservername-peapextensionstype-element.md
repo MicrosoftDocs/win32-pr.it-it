@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 64e82defae9c5ae9f7cf60056cfdac8b58373602
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: b608629c9eb9d3e3fb592ead73ddc0ba9545e6b92a642adf4ce76bb0524b57ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086040"
 ---
 # <a name="acceptservername-peapextensionstype-element"></a>Elemento AcceptServerName (PeapExtensionsType)
 
@@ -43,8 +43,8 @@ ms.locfileid: "111989476"
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows 7 \[\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -58,7 +58,7 @@ ms.locfileid: "111989476"
 [**PeapExtensionsType**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md)
 </dt> <dt>
 
-**Possibile elemento padre diretto nell'istanza dello schema**
+**Possibile elemento padre immediato nell'istanza dello schema**
 </dt> <dt>
 
 [**PeapExtensions**](mspeapconnectionpropertiesv1schema-peapextensions-eaptype-element.md)
@@ -67,7 +67,7 @@ ms.locfileid: "111989476"
 
 </dt> <dt>
 
-[Schema EAPHost e legacy](eaphost-schemas.md)
+[EAPHost e schema legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema mspeapconnectionpropertiesv2](mspeapconnectionpropertiesv2schema-schema.md)

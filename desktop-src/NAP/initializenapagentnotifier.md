@@ -1,9 +1,9 @@
 ---
-title: Funzione InitializeNapAgentNotifier (NapUtil. h)
-description: Sottoscrive il processo chiamante per NapAgent le notifiche di modifica dello stato e la quarantena delle notifiche di modifica dello stato.
+title: Funzione InitializeNapAgentNotifier (NapUtil.h)
+description: Sottoscrive il processo chiamante per le notifiche di modifica dello stato napAgent e le notifiche di modifica dello stato di quarantena.
 ms.assetid: 24180194-50d7-4f54-845d-25402af9cf9a
 keywords:
-- NAP funzione InitializeNapAgentNotifier
+- Funzione InitializeNapAgentNotifier NAP
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f59c4c342f693038040f374bbdbcdb8ab226f74d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1ac2d874f6138bcc1fbc97952d4464e56e05b0a497c7b0ff98e9c05e8c8434e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118133456"
 ---
-# <a name="initializenapagentnotifier-function"></a>InitializeNapAgentNotifier (funzione)
+# <a name="initializenapagentnotifier-function"></a>Funzione InitializeNapAgentNotifier
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-La funzione **InitializeNapAgentNotifier** sottoscrive il processo chiamante per napagent le notifiche di modifica dello stato e la quarantena delle notifiche di modifica dello stato. Queste notifiche vengono fornite dal servizio NapAgent.
+La **funzione InitializeNapAgentNotifier** sottoscrive il processo chiamante per le notifiche di modifica dello stato di NapAgent e le notifiche di modifica dello stato di quarantena. Queste notifiche vengono fornite dal servizio NapAgent.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,17 +46,17 @@ NAPAPI HRESULT WINAPI InitializeNapAgentNotifier(
 
 <dl> <dt>
 
-*tipo* \[ di in\]
+*type* \[ Pollici\]
 </dt> <dd>
 
 Valore [**NapNotifyType**](/windows/win32/api/naptypes/ne-naptypes-napnotifytype) che specifica il tipo di notifiche del servizio da ricevere.
 
 </dd> <dt>
 
-*hNotifyEvent* \[ in\]
+*hNotifyEvent* \[ Pollici\]
 </dt> <dd>
 
-Handle di evento utilizzato per la notifica. Il chiamante deve passare un handle aperto al parametro *hNotifyEvent* . Il chiamante deve anche chiudere l'handle di evento quando non è più necessario.
+Handle di evento utilizzato per la notifica. Il chiamante deve passare un handle aperto al *parametro hNotifyEvent.* Il chiamante deve anche chiudere l'handle dell'evento quando non è più necessario.
 
 </dd> </dl>
 
@@ -66,9 +66,9 @@ Handle di evento utilizzato per la notifica. Il chiamante deve passare un handle
 
 | Codice restituito                                                                                                | Descrizione                                                                                               |
 |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                       | Inizializzazione completata.<br/>                                                         |
-| <dl> <dt>**E \_ non riescono**</dt> </dl>                     | Inizializzazione non riuscita.<br/>                                                                         |
-| <dl> <dt>**ERRORE \_ già \_ inizializzato**</dt> </dl> | Il processo ha già sottoscritto le notifiche del servizio NapAgent del *tipo* specificato. <br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                       | Inizializzazione completata.<br/>                                                         |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>                     | Inizializzazione non riuscita.<br/>                                                                         |
+| <dl> <dt>**ERRORE \_ GIÀ \_ INIZIALIZZATO**</dt> </dl> | Il processo ha già sottoscritto le notifiche del servizio NapAgent del *tipo* specificato. <br/> |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>               | È stato passato un argomento non valido. <br/>                                                               |
 
 
@@ -79,9 +79,9 @@ Handle di evento utilizzato per la notifica. Il chiamante deve passare un handle
 
 Questa funzione non è thread-safe.
 
-Ogni processo che richiede una sottoscrizione per le notifiche del servizio NapAgent del *tipo* specificato deve chiamare **InitializeNapAgentNotifier** per sottoscrivere le notifiche. Se un processo deve sottoscrivere più di un tipo di notifica, deve chiamare **InitializeNapAgentNotifier** una volta per ogni tipo di notifica.
+Ogni processo che richiede una sottoscrizione alle  notifiche del servizio NapAgent del tipo specificato deve chiamare **InitializeNapAgentNotifier** per sottoscrivere le notifiche. Se un processo deve sottoscrivere più di un tipo di notifica, deve chiamare **InitializeNapAgentNotifier** una volta per ogni tipo di notifica.
 
-Quando un processo non richiede ulteriori notifiche, il processo deve chiamare [**UninitializeNapAgentNotifier**](uninitializenapagentnotifier.md) per il *tipo* specificato.
+Quando un processo non richiede altre notifiche, deve chiamare [**UninitializeNapAgentNotifier**](uninitializenapagentnotifier.md) per il tipo *specificato.*
 
 ## <a name="requirements"></a>Requisiti
 
@@ -89,9 +89,9 @@ Quando un processo non richiede ulteriori notifiche, il processo deve chiamare [
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>NapUtil. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>NapUtil.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl> |
 
 

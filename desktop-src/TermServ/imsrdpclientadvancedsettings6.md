@@ -1,6 +1,6 @@
 ---
 title: Interfaccia IMsRdpClientAdvancedSettings6
-description: Espone le proprietà che gestiscono le impostazioni di ActiveX avanzate.
+description: Espone le proprietà che gestiscono le impostazioni ActiveX controllo avanzate.
 ms.assetid: 45b48cdf-3860-4359-99b2-8d2598146d1d
 ms.tgt_platform: multiple
 keywords:
@@ -25,32 +25,32 @@ ms.locfileid: "118352128"
 ---
 # <a name="imsrdpclientadvancedsettings6-interface"></a>Interfaccia IMsRdpClientAdvancedSettings6
 
-Espone le proprietà che gestiscono le impostazioni di ActiveX avanzate. **L'interfaccia IMsRdpClientAdvancedSettings6** deriva dall'interfaccia [**IMsRdpClientAdvancedSettings5.**](imsrdpclientadvancedsettings5.md)
+Espone le proprietà che gestiscono le impostazioni ActiveX controllo avanzate. **L'interfaccia IMsRdpClientAdvancedSettings6** deriva dall'interfaccia [**IMsRdpClientAdvancedSettings5.**](imsrdpclientadvancedsettings5.md)
 
-Per ottenere un'istanza di questa interfaccia, usare la [**proprietà IMsTscAx::AdvancedSettings**](imstscax-advancedsettings.md) per ottenere un puntatore a interfaccia [**IMsTscAdvancedSettings.**](imstscadvancedsettings-interface.md) Chiamare quindi [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) sul **puntatore IMsTscAdvancedSettings** e passare **\_ IMsRdpClientAdvancedSettings6** a **QueryInterface**.
+Per ottenere un'istanza di questa interfaccia, usare la proprietà [**IMsTscAx::AdvancedSettings**](imstscax-advancedsettings.md) per ottenere un puntatore a interfaccia [**IMsTscAdvancedSettings.**](imstscadvancedsettings-interface.md) Chiamare quindi [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) sul puntatore **IMsTscAdvancedSettings** e passare **\_ IID IMsRdpClientAdvancedSettings6** a **QueryInterface**.
 
 ## <a name="members"></a>Membri
 
-**L'interfaccia IMsRdpClientAdvancedSettings6** eredita da [**IMsRdpClientAdvancedSettings5**](imsrdpclientadvancedsettings5.md). **IMsRdpClientAdvancedSettings6** include anche questi tipi di membri:
+**L'interfaccia IMsRdpClientAdvancedSettings6** eredita da [**IMsRdpClientAdvancedSettings5.**](imsrdpclientadvancedsettings5.md) **IMsRdpClientAdvancedSettings6** include anche questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-Queste proprietà sono disponibili nell'interfaccia **IMsRdpClientAdvancedSettings6.**
+**L'interfaccia IMsRdpClientAdvancedSettings6** ha queste proprietà.
 
 
 
 | Proprietà                                                                                                  | Tipo di accesso           | Descrizione                                                                                                                        |
 |:----------------------------------------------------------------------------------------------------------|:----------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
 | [**AuthenticationServiceClass**](imsrdpclientadvancedsettings6-authenticationserviceclass.md)<br/> | Lettura/Scrittura<br/> | Specifica il nome dell'entità servizio (SPN) da utilizzare per l'autenticazione al server.<br/>                                     |
-| [**Authenticationtype**](imsrdpclientadvancedsettings6-authenticationtype.md)<br/>                 | Sola lettura<br/>  | Specifica il tipo di autenticazione utilizzato per questa connessione.<br/>                                                          |
+| [**Authenticationtype**](imsrdpclientadvancedsettings6-authenticationtype.md)<br/>                 | Sola lettura<br/>  | Specifica il tipo di autenticazione utilizzato per la connessione.<br/>                                                          |
 | [**ConnectToAdministerServer**](imsrdpclientadvancedsettings6-connecttoadministerserver.md)<br/>   | Lettura/Scrittura<br/> | Recupera o specifica se il controllo ActiveX deve tentare di connettersi al server per scopi amministrativi.<br/> |
 | [**EnableCredSspSupport**](imsrdpclientadvancedsettings6-enablecredsspsupport.md)<br/>             | Lettura/Scrittura<br/> | Specifica se il provider del servizio di sicurezza delle credenziali (CredSSP) è abilitato per questa connessione.<br/>                    |
 | [**HotKeyFocusReleaseLeft**](imsrdpclientadvancedsettings6-hotkeyfocusreleaseleft.md)<br/>         | Lettura/Scrittura<br/> | Specifica il codice del tasto virtuale da aggiungere a CTRL+ALT per determinare la sostituzione del tasto di scelta rapida per CTRL+ALT+FRECCIA SINISTRA.<br/>          |
 | [**HotKeyFocusReleaseRight**](imsrdpclientadvancedsettings6-hotkeyfocusreleaseright.md)<br/>       | Lettura/Scrittura<br/> | Specifica il codice del tasto virtuale da aggiungere a CTRL+ALT per determinare la sostituzione del tasto di scelta rapida per CTRL+ALT+FRECCIA DESTRA.<br/>         |
 | [**Pcb**](imsrdpclientadvancedsettings6-pcb.md)<br/>                                               | Lettura/Scrittura<br/> | Specifica l'impostazione DEL BLOB di preconnessione (PCB) da usare prima della connessione per la trasmissione al server.<br/>               |
-| [**RelativeMouseMode**](imsrdpclientadvancedsettings6-relativemousemode.md)<br/>                   | Lettura/Scrittura<br/> | Specifica se il mouse deve usare la modalità relativa.<br/>                                                                   |
+| [**RelativeMouseMode**](imsrdpclientadvancedsettings6-relativemousemode.md)<br/>                   | Lettura/Scrittura<br/> | Specifica se il mouse deve utilizzare la modalità relativa.<br/>                                                                   |
 
 
 

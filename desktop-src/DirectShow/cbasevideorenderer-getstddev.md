@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetStdDev stima la deviazione standard in millisecondi tra il momento in cui ogni frame è dovuto e quando viene effettivamente eseguito il rendering, per le statistiche per fotogramma.
+description: Il metodo GetStdDev stima la deviazione standard in millisecondi tra la scadenza di ogni frame e il momento in cui viene effettivamente eseguito il rendering, per le statistiche per frame.
 ms.assetid: 1a4d5c8d-38de-434f-b218-412d45976b8c
-title: Metodo CBaseVideoRenderer. GetStdDev (Renbase. h)
+title: Metodo CBaseVideoRenderer.GetStdDev (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 85b40bda4715a8201cd05109b59746630c54654c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5f7b6ab85000f537179fcc9ae6b979194ae4e975ea2b394d0c58afb8515158aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118157083"
 ---
-# <a name="cbasevideorenderergetstddev-method"></a>CBaseVideoRenderer. GetStdDev, metodo
+# <a name="cbasevideorenderergetstddev-method"></a>Metodo CBaseVideoRenderer.GetStdDev
 
-Il `GetStdDev` Metodo stima la deviazione standard in millisecondi tra il momento in cui ogni frame è dovuto e quando viene effettivamente eseguito il rendering, per le statistiche per fotogramma.
+Il `GetStdDev` metodo stima la deviazione standard in millisecondi tra la scadenza di ogni frame e il momento in cui viene effettivamente eseguito il rendering, per le statistiche per frame.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,21 +55,21 @@ Valore intero che contiene il numero di campioni video ricevuti dal renderer vid
 *piResult* 
 </dt> <dd>
 
-Puntatore a un valore integer che conterrà la deviazione standard.
+Puntatore a un valore intero che conterrà la deviazione standard.
 
 </dd> <dt>
 
 *llSumSq* 
 </dt> <dd>
 
-Valore che rappresenta la deviazione standard, in millisecondi, di tutti gli esempi video sottoposti a rendering. Più basso è il valore, più è coerente il rendering.
+Valore che rappresenta la deviazione standard, in millisecondi, di tutti gli esempi video sottoposti a rendering. Più basso è il valore, maggiore è la coerenza del rendering.
 
 </dd> <dt>
 
 *iTot* 
 </dt> <dd>
 
-Valore che rappresenta il valore medio, in millisecondi, tra l'ora timbrata e il tempo di rendering per tutti gli esempi video sottoposti a rendering.
+Valore che rappresenta il valore medio, in millisecondi, tra l'ora stampata e l'ora di rendering per tutti gli esempi di video sottoposti a rendering.
 
 </dd> </dl>
 
@@ -83,8 +83,8 @@ Restituisce NOERROR.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

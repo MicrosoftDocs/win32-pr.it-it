@@ -1,7 +1,7 @@
 ---
-description: Tipo di supporto per la connessione al pin corrente.
+description: Tipo di supporto per la connessione pin corrente.
 ms.assetid: ab5d9d3a-a9f6-4c14-b872-7e1d03c86fb0
-title: 'Membro CBasePin:: m_mt (Amfilter. h)'
+title: Membro CBasePin::m_mt (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5ff990c9473a5ff65a2a4e0818d1f77c7fb414b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f48fb7a80bad7d868281b0797ef3f18c7f31644b7479caa4565c1fe45fc353e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118158190"
 ---
-# <a name="cbasepinm_mt-member"></a>Membro CBasePin:: m \_ mt
+# <a name="cbasepinm_mt-member"></a>Membro CBasePin::m \_ mt
 
-Tipo di supporto per la connessione al pin corrente.
+Tipo di supporto per la connessione pin corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ CMediaType m_mt;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

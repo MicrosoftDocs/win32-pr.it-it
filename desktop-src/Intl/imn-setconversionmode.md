@@ -1,19 +1,19 @@
 ---
-description: Notifica a un'applicazione quando viene aggiornata la modalità di conversione del contesto di input. L'applicazione riceve questo comando tramite il \_ \_ messaggio di notifica dell'IME WM con le impostazioni dei parametri, come illustrato di seguito.
+description: Notifica a un'applicazione quando viene aggiornata la modalità di conversione del contesto di input. L'applicazione riceve questo comando tramite il messaggio WM \_ IME \_ NOTIFY con le impostazioni dei parametri, come illustrato di seguito.
 ms.assetid: 62bb9717-cc41-4e34-af1a-ff41324bd3a9
-title: Codice di notifica IMN_SETCONVERSIONMODE (IMM. h)
+title: IMN_SETCONVERSIONMODE di notifica (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52c0ba945b9988ddb32d86c2005ec240c16f82ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ff970f5800dee660948bce84a8862f8da93b7390b3742c0de9c9cbdb21d9d7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118146103"
 ---
-# <a name="imn_setconversionmode-notification-code"></a>\_Codice di notifica SETCONVERSIONMODE di IMN
+# <a name="imn_setconversionmode-notification-code"></a>Codice di notifica \_ IMN SETCONVERSIONMODE
 
-Notifica a un'applicazione quando viene aggiornata la modalità di conversione del contesto di input. L'applicazione riceve questo comando tramite il messaggio di [**\_ \_ notifica dell'IME WM**](wm-ime-notify.md) con le impostazioni dei parametri, come illustrato di seguito.
+Notifica a un'applicazione quando viene aggiornata la modalità di conversione del contesto di input. L'applicazione riceve questo comando tramite il messaggio [**WM \_ IME \_ NOTIFY**](wm-ime-notify.md) con le impostazioni dei parametri, come illustrato di seguito.
 
 
 ```C++
@@ -26,14 +26,14 @@ IMN_SETCONVERSIONMODE
 
 <dl> <dt>
 
-<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*wParam*
+<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*Wparam*
 </dt> <dd>
 
 Impostare su IMN \_ SETCONVERSIONMODE.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
 Non usato.
@@ -42,11 +42,11 @@ Non usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo comando non restituisce alcun valore.
+Questo comando non ha alcun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-L'applicazione può ottenere informazioni sulla modalità di conversione tramite la funzione [**ImmGetConversionStatus**](/windows/desktop/api/Imm/nf-imm-immgetconversionstatus) .
+L'applicazione può ottenere informazioni sulla modalità di conversione usando la [**funzione ImmGetConversionStatus.**](/windows/desktop/api/Imm/nf-imm-immgetconversionstatus)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,7 +56,7 @@ L'applicazione può ottenere informazioni sulla modalità di conversione tramite
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>Imm. h (Includi Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Imm.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -64,16 +64,16 @@ L'applicazione può ottenere informazioni sulla modalità di conversione tramite
 
 <dl> <dt>
 
-[Gestione metodo di input](input-method-manager.md)
+[Gestione metodi di input](input-method-manager.md)
 </dt> <dt>
 
-[Comandi di input Method Manager](input-method-manager-commands.md)
+[Comandi di Gestione metodi di input](input-method-manager-commands.md)
 </dt> <dt>
 
 [**ImmGetConversionStatus**](/windows/desktop/api/Imm/nf-imm-immgetconversionstatus)
 </dt> <dt>
 
-[**\_notifica IME \_ WM**](wm-ime-notify.md)
+[**WM \_ IME \_ NOTIFY**](wm-ime-notify.md)
 </dt> </dl>
 
  

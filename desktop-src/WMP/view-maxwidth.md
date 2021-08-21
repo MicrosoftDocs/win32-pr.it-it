@@ -1,9 +1,9 @@
 ---
-title: Visualizza maxWidth
-description: L'attributo maxWidth specifica o recupera la larghezza massima in pixel della visualizzazione durante il ridimensionamento.
+title: VIEW.maxWidth
+description: L'attributo maxWidth specifica o recupera la larghezza massima in pixel dell'oggetto VIEW durante il ridimensionamento.
 ms.assetid: 41912c42-a43f-428c-9f52-6918561674db
 keywords:
-- Visualizza Media Player Windows maxWidth
+- View.maxWidth Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4969a4cba3c874a2c5ec857b8a3e737c74bff420
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4fb566bf8925c8d6a79b107ce440504318d188c9b7ab551dd7dc405fa80dcd48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116786"
 ---
-# <a name="viewmaxwidth"></a>Visualizza maxWidth
+# <a name="viewmaxwidth"></a>VIEW.maxWidth
 
-L'attributo **MaxWidth** specifica o recupera la larghezza massima in pixel della **visualizzazione** durante il ridimensionamento.
+**L'attributo maxWidth** specifica o recupera la larghezza massima in pixel dell'oggetto **VIEW** durante il ridimensionamento.
 
 ``` syntax
         elementID.maxWidth
@@ -29,7 +29,7 @@ L'attributo **MaxWidth** specifica o recupera la larghezza massima in pixel dell
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di lettura/scrittura (**Long**) con un valore pari a zero o superiore. Il valore predefinito è zero, che indica che non esiste alcuna restrizione sulla larghezza massima della **visualizzazione**.
+Questo attributo è un numero **di** lettura/scrittura (**long**) con un valore pari a zero o superiore. Ha un valore predefinito pari a zero, il che significa che non esiste alcuna restrizione sulla larghezza massima dell'oggetto **VIEW.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,7 +37,7 @@ Questo attributo è un **numero** di lettura/scrittura (**Long**) con un valore 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -48,7 +48,7 @@ Questo attributo è un **numero** di lettura/scrittura (**Long**) con un valore 
 [**Elemento VIEW**](view-element.md)
 </dt> <dt>
 
-[**Visualizza minWidth**](view-minwidth.md)
+[**VIEW.minWidth**](view-minwidth.md)
 </dt> </dl>
 
  

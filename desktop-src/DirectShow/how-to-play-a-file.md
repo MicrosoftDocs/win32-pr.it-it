@@ -15,10 +15,10 @@ ms.locfileid: "118401149"
 
 Questo articolo ha lo scopo di offrire la versione di DirectShow programmazione. Presenta una semplice applicazione console che riproduce un file audio o video. Il programma è lungo solo poche righe, ma dimostra alcune delle funzionalità della DirectShow programmazione.
 
-Come descritto [nell'articolo](introduction-to-directshow-application-programming.md) Introduzione DirectShow programmazione di applicazioni, un'applicazione DirectShow esegue sempre gli stessi passaggi di base:
+Come descritto [nell'articolo](introduction-to-directshow-application-programming.md) Introduzione DirectShow programmazione delle applicazioni, un'applicazione DirectShow esegue sempre gli stessi passaggi di base:
 
 1.  Creare un'istanza di [Filter Graph Manager](filter-graph-manager.md).
-2.  Usare Filter Graph Manager per creare un grafico di filtro.
+2.  Usare Gestione filtri Graph per creare un grafico di filtro.
 3.  Eseguire il grafico, causando lo spostamento dei dati tra i filtri.
 
 Per compilare e collegare il codice in questo argomento, includere il file di intestazione Dshow.h e il collegamento al file di libreria statica strmiids.lib. Per altre informazioni, vedere [Building DirectShow Applications](setting-up-the-build-environment.md).
@@ -49,7 +49,7 @@ HRESULT hr = CoCreateInstance(CLSID_FilterGraph, NULL,
 
 
 
-Come illustrato, l'identificatore di classe (CLSID) è CLSID \_ FilterGraph. La gestione Graph filtro viene fornita da una DLL in-process, quindi il contesto di esecuzione è **CLSCTX \_ INPROC \_ SERVER.** DirectShow supporta il modello di threading free, quindi è anche possibile chiamare [**CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) con il flag **COINIT \_ MULTITHREADED.**
+Come illustrato, l'identificatore di classe (CLSID) è CLSID \_ FilterGraph. La gestione Graph filtri viene fornita da una DLL in-process, quindi il contesto di esecuzione è **CLSCTX \_ INPROC \_ SERVER.** DirectShow supporta il modello di threading free, quindi è anche possibile chiamare [**CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) con il flag **COINIT \_ MULTITHREADED.**
 
 La chiamata a [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) restituisce [**l'interfaccia IGraphBuilder,**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) che contiene principalmente metodi per la compilazione del grafico dei filtri. Per questo esempio sono necessarie altre due interfacce:
 

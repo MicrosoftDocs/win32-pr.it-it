@@ -14,19 +14,19 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef441754fd5de09e3792d9269f05d96ecc08aa23
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 76965f63afb751e810daa6feffe76774f03daaaf7278996b4c6800f0efa42dfa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118113685"
 ---
 # <a name="internetgetproxyinfo-function"></a>Funzione InternetGetProxyInfo
 
 > [!NOTE]
-> Questa funzione è deprecata. Per il supporto del proxy AutoProxy, usare invece la versione 5,1 di servizi HTTP (WinHTTP). Per ulteriori informazioni, vedere [supporto del proxy AutoProxy WinHTTP](../winhttp/winhttp-autoproxy-support.md).
+> Questa funzione è deprecata. Per il supporto del proxy automatico, usare invece i servizi HTTP (WinHTTP) versione 5.1. Per altre informazioni, vedere [Supporto del proxy automatico WinHTTP](../winhttp/winhttp-autoproxy-support.md).
 
-Recupera i dati proxy per l'accesso alle risorse specificate. Questa funzione può essere chiamata solo dal collegamento dinamico a "JSProxy.dll".
+Recupera i dati proxy per l'accesso alle risorse specificate. Questa funzione può essere chiamata solo collegando in modo dinamico a "JSProxy.dll".
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,55 +45,55 @@ BOOL InternetGetProxyInfo(
 
 <dl> <dt>
 
-*lpszURL* \[ in\]
+*lpszUrl* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica l'URL della risorsa HTTP di destinazione.
+Puntatore a una stringa con terminazione Null che specifica l'URL della risorsa HTTP di destinazione.
 
 </dd> <dt>
 
-*dwUrlLength* \[ in\]
+*dwUrlLength* \[ Pollici\]
 </dt> <dd>
 
-Dimensione, in byte, dell'URL a cui punta *lpszURL*.
+Dimensione, in byte, dell'URL a cui punta *lpszUrl*.
 
 </dd> <dt>
 
-*lpszUrlHostName* \[ in\]
+*lpszUrlHostName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il nome host dell'URL di destinazione.
+Puntatore a una stringa con terminazione Null che specifica il nome host dell'URL di destinazione.
 
 </dd> <dt>
 
-*dwUrlHostNameLength* \[ in\]
+*dwUrlHostNameLength* \[ Pollici\]
 </dt> <dd>
 
 Dimensione, in byte, del nome host a cui punta *lpszUrlHostName*.
 
 </dd> <dt>
 
-*lplpszProxyHostName* \[ out\]
+*lplpszProxyHostName* \[ Cambio\]
 </dt> <dd>
 
-Puntatore all'indirizzo di un buffer che riceve l'URL del proxy da utilizzare in una richiesta HTTP per la risorsa specificata. L'applicazione è responsabile della liberazione di questa stringa.
+Puntatore all'indirizzo di un buffer che riceve l'URL del proxy da utilizzare in una richiesta HTTP per la risorsa specificata. L'applicazione è responsabile della liberatura di questa stringa.
 
 </dd> <dt>
 
-*lpdwProxyHostNameLength* \[ out\]
+*lpdwProxyHostNameLength* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile che riceve le dimensioni, in byte, della stringa restituita nel buffer di *lplpszProxyHostName* .
+Puntatore a una variabile che riceve le dimensioni, in byte, della stringa restituita nel buffer *lplpszProxyHostName.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario. Per ottenere i dati degli errori estesi, chiamare [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario. Per ottenere i dati degli errori estesi, [**chiamare GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ## <a name="remarks"></a>Commenti
 
-Per chiamare **InternetGetProxyInfo**, è necessario collegarsi in modo dinamico usando il tipo di puntatore a funzione definito **pfnInternetGetProxyInfo**. Il frammento di codice seguente illustra come dichiarare un'istanza di questo tipo di puntatore a funzione e quindi inizializzarlo e chiamarlo.
+Per chiamare **InternetGetProxyInfo**, è necessario collegarsi dinamicamente a esso usando il tipo di puntatore a funzione **definito pfnInternetGetProxyInfo**. Il frammento di codice seguente illustra come dichiarare un'istanza di questo tipo di puntatore a funzione e quindi inizializzarla e chiamarla.
 
 ```cpp
   HMODULE hModJS;                               // Handle for loading the DLL
@@ -119,10 +119,10 @@ Per chiamare **InternetGetProxyInfo**, è necessario collegarsi in modo dinamico
   // The pIGPI function pointer can now be used to call InternetGetProxyInfo.
 ```
 
-Come tutti gli altri aspetti dell'API WinINet, questa funzione non può essere chiamata in modo sicuro da DllMain o dai costruttori e dai distruttori di oggetti globali.
+Come tutti gli altri aspetti dell'API WinINet, questa funzione non può essere chiamata in modo sicuro dall'interno di DllMain o dai costruttori e distruttori di oggetti globali.
 
 > [!Note]  
-> WinINet non supporta le implementazioni del server. Inoltre, non deve essere utilizzato da un servizio. Per le implementazioni o i servizi del server, usare i [Servizi http di Microsoft Windows (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet non supporta le implementazioni del server. Inoltre, non deve essere usato da un servizio. Per le implementazioni o i servizi del server [usare Microsoft Windows servizi HTTP (WinHTTP).](/windows/desktop/WinHttp/winhttp-start-page)
 
 ## <a name="requirements"></a>Requisiti
 

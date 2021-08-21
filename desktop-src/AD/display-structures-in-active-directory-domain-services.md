@@ -1,24 +1,24 @@
 ---
 title: Visualizzare le strutture in Active Directory Domain Services
-description: Le funzioni e le interfacce visualizzate in Active Directory Domain Services utilizzano le strutture seguenti per contenere i dati visualizzati sugli elementi dell'interfaccia utente della directory.
+description: Le funzioni e le interfacce di visualizzazione Active Directory Domain Services usare le strutture seguenti per contenere i dati di visualizzazione sugli elementi dell'interfaccia utente della directory.
 ms.assetid: bf6aa066-ee7e-4b13-9a4b-1e097632ec5a
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f91b5b5dc91097a1d300e7f76970dc24211771d2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b701ebb64134288778db6e6d10c82976e18bf2ccf237af656cbbef97588a2363
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118018718"
 ---
 # <a name="display-structures-in-active-directory-domain-services"></a>Visualizzare le strutture in Active Directory Domain Services
 
-Le funzioni e le interfacce visualizzate in Active Directory Domain Services utilizzano le strutture seguenti per contenere i dati visualizzati sugli elementi dell'interfaccia utente della directory:
+Le funzioni e le interfacce di visualizzazione Active Directory Domain Services le strutture seguenti per contenere i dati di visualizzazione sugli elementi dell'interfaccia utente della directory:
 
 -   [**CQFORM**](/windows/desktop/api/Cmnquery/ns-cmnquery-cqform)
 -   [**CQPAGE**](/windows/desktop/api/Cmnquery/ns-cmnquery-cqpage)
--   [**\_ \_ informazioni pagina di DSA sec \_**](dsa-sec-page-info.md)
+-   [**INFORMAZIONI SULLA PAGINA DSA \_ \_ \_ SEC**](dsa-sec-page-info.md)
 -   [**DOMAINDESC**](/windows/desktop/api/Dsclient/ns-dsclient-domaindesc)
 -   [**DOMAINTREE**](/windows/desktop/api/Dsclient/ns-dsclient-domain_tree)
 -   [**DSBITEM**](/windows/desktop/api/Dsclient/ns-dsclient-dsbitema)
@@ -35,9 +35,9 @@ Le funzioni e le interfacce visualizzate in Active Directory Domain Services uti
 -   [**OPENQUERYWINDOW**](/windows/desktop/api/Cmnquery/ns-cmnquery-openquerywindow)
 -   [**PROPSHEETCFG**](propsheetcfg.md)
 
- 
+ 
 
- 
+ 
 
 
 

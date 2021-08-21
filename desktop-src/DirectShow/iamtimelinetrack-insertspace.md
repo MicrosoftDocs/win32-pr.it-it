@@ -1,7 +1,7 @@
 ---
-description: Il metodo InsertSpace suddivide tutti gli oggetti esistenti al momento specificato e inserisce uno spazio tra di essi.
+description: Il metodo InsertSpace suddivide tutti gli oggetti esistenti all'ora specificata e inserisce spazio tra di essi.
 ms.assetid: f9e48f58-1867-405c-b208-1ab781912aa1
-title: 'Metodo IAMTimelineTrack:: InsertSpace (qedit. h)'
+title: Metodo IAMTimelineTrack::InsertSpace (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 84d8076f6f89ee5e890db0047d47ade283b1e333
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a51e89a72d813e1f5a9c1c05b1a46b6674906284b61b4036c164af87af9a4559
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118399178"
 ---
-# <a name="iamtimelinetrackinsertspace-method"></a>Metodo IAMTimelineTrack:: InsertSpace
+# <a name="iamtimelinetrackinsertspace-method"></a>Metodo IAMTimelineTrack::InsertSpace
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il `InsertSpace` metodo suddivide tutti gli oggetti esistenti al momento specificato e inserisce uno spazio tra di essi.
+Il `InsertSpace` metodo suddivide tutti gli oggetti esistenti all'ora specificata e inserisce uno spazio tra di essi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,16 +62,16 @@ Punto finale dello spazio inserito, in unità di 100 nanosecondi.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . Tra i possibili valori restituiti sono inclusi i seguenti:
+Restituisce un **valore HRESULT.** I valori restituiti possibili sono i seguenti:
 
 
 
 | Codice restituito                                                                                   | Descrizione                                            |
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl>       | Nessun oggetto all'ora specificata.<br/> |
-| <dl> <dt>**\_OK**</dt> </dl>          | Esito positivo.<br/>                                    |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>       | Non sono presenti oggetti all'ora specificata.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata.<br/>                                    |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Argomento non valido.<br/>                           |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria insufficiente.<br/>                        |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente.<br/>                        |
 
 
 
@@ -80,12 +80,12 @@ Restituisce un valore **HRESULT** . Tra i possibili valori restituiti sono inclu
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -95,8 +95,8 @@ Restituisce un valore **HRESULT** . Tra i possibili valori restituiti sono inclu
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

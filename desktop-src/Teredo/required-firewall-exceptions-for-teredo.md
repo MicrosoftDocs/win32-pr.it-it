@@ -1,32 +1,32 @@
 ---
-title: Eccezioni del firewall richieste per Teredo
-description: Per consentire a un'applicazione di ricevere il traffico Teredo, è necessario che l'applicazione riceva traffico IPv6 nel firewall host e che l'applicazione sia in grado di impostare il livello di protezione IPV6 dell'opzione socket \_ \_ su "livello di protezione \_ \_ senza restrizioni".
+title: Eccezioni del firewall necessarie per Teredo
+description: Per consentire a un'applicazione di ricevere traffico Teredo, l'applicazione deve essere autorizzata a ricevere traffico IPv6 nel firewall host e l'applicazione deve impostare l'opzione del socket IPV6 PROTECTION LEVEL su \_ \_ 'PROTECTION \_ LEVEL \_ UNRESTRICTED'.
 ms.assetid: 2fc74d86-9696-4ba9-adbe-e5558ae7d7c2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bbc2fcf0f7c8b1f5fe51afc056dc8c8ff7c7916a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a67d7de38ed91de7d8d8afeada6fe9705ff55f2af1b726ed5c5d49b271464dc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118354444"
 ---
-# <a name="required-firewall-exceptions-for-teredo"></a>Eccezioni del firewall richieste per Teredo
+# <a name="required-firewall-exceptions-for-teredo"></a>Eccezioni del firewall necessarie per Teredo
 
-Per consentire a un'applicazione di ricevere il traffico Teredo, è necessario che l'applicazione riceva traffico IPv6 nel firewall host e che l'applicazione sia in grado di impostare il [ \_ \_ livello di protezione IPv6](/windows/desktop/WinSock/ipv6-protection-level) dell'opzione socket su "livello di protezione \_ \_ senza restrizioni". Per abilitare questo tipo di scenario, è necessario implementare le eccezioni del firewall descritte in dettaglio in questo documento.
+Per consentire a un'applicazione di ricevere traffico Teredo, l'applicazione deve essere autorizzata a ricevere traffico IPv6 nel firewall host e l'applicazione deve impostare l'opzione socket [IPV6 \_ PROTECTION \_ LEVEL](/windows/desktop/WinSock/ipv6-protection-level) su 'PROTECTION \_ LEVEL \_ UNRESTRICTED'. Per abilitare questo tipo di scenario, è necessario che siano implementate le eccezioni del firewall dettagliate in questo documento.
 
-Le configurazioni del firewall seguenti sono necessarie per garantire l'interoperatività uniforme tra un firewall e Teredo:
+Le configurazioni del firewall seguenti sono necessarie per garantire un'interoperabilità uniforme tra un firewall e Teredo:
 
--   Il firewall client deve consentire la risoluzione dei teredo.ipv6.microsoft.com.
--   Per assicurarsi che i client Teredo possano comunicare correttamente con il server Teredo, è necessario aprire la porta UDP 3544.
--   Il firewall deve recuperare le porte UDP dinamiche usate dal servizio Teredo nel computer locale chiamando la funzione [**FwpmSystemPortsGet0**](/windows/desktop/api/fwpmu/nf-fwpmu-fwpmsystemportsget0) . le porte pertinenti sono di tipo FWPM \_ System \_ Port \_ TEREDO. La funzione **FwpmSystemPortsGet0** deve essere implementata al posto delle funzioni [**GetTeredoPort**](/windows/desktop/api/netioapi/nf-netioapi-getteredoport) o [**NotifyTeredoPortChange**](/windows/desktop/api/netioapi/nf-netioapi-notifyteredoportchange) ora deprecate.
--   Il firewall consente al sistema di inviare e ricevere pacchetti UDP/IPv4 alla porta UDP 1900 nella subnet locale, in modo da consentire il flusso del traffico di individuazione UPnP e può migliorare la velocità di connettività.
+-   Il firewall client deve consentire la risoluzione teredo.ipv6.microsoft.com.
+-   La porta UDP 3544 deve essere aperta per garantire che Teredo client possano comunicare correttamente con il server Teredo.
+-   Il firewall deve recuperare le porte UDP dinamiche usate Teredo servizio nel computer locale chiamando la [**funzione FwpmSystemPortsGet0.**](/windows/desktop/api/fwpmu/nf-fwpmu-fwpmsystemportsget0) Le porte pertinenti sono di tipo FWPM \_ SYSTEM \_ PORT \_ TEREDO. La **funzione FwpmSystemPortsGet0** deve essere implementata al posto delle funzioni [**GetTeredoPort**](/windows/desktop/api/netioapi/nf-netioapi-getteredoport) o [**NotifyTeredoPortChange**](/windows/desktop/api/netioapi/nf-netioapi-notifyteredoportchange) deprecate.
+-   Il firewall consente al sistema di inviare e ricevere pacchetti UDP/IPv4 alla porta UDP 1900 sulla subnet locale, in quanto ciò consente il flusso del traffico di individuazione UPnP e può migliorare le velocità di connettività.
     > [!Note]  
-    > Se questa condizione non viene soddisfatta, è possibile che si verifichino problemi di compatibilità che coinvolgono la comunicazione tra determinati tipi NAT. in particolare tra NAT simmetrico e NAT con restrizioni. Sebbene i NAT simmetrici siano diffusi negli hotspot e i NAT limitati siano diffusi nelle sedi, le comunicazioni tra i due possono causare errori sul lato del NAT con restrizioni.
+    > Se questa condizione non viene soddisfatta, gli scenari potrebbero riscontrare problemi di compatibilità che comportano la comunicazione tra determinati tipi NAT. in particolare tra NAT simmetrici e NAT con restrizioni. Anche se i NAT simmetrici sono molto diffusi negli hotspot e i NAT con restrizioni sono molto diffusi nelle case, la comunicazione tra i due tipi di nat può avere un potenziale errore sul lato del NAT con restrizioni.
 
-     
+     
 
--   È necessario abilitare le eccezioni ICMPv6 in ingresso e in uscita "richiesta echo" e "risposta echo". Queste eccezioni sono necessarie per garantire che un client Teredo possa fungere da inoltro specifico dell'host Teredo. Un inoltro specifico dell'host Teredo può essere identificato dall'indirizzo IPv6 nativo aggiuntivo o da un indirizzo 6to4 fornito con l'indirizzo Teredo.
+-   Le eccezioni "Echo Request" e "Echo Reply" ICMPv6 in ingresso e in uscita devono essere abilitate. Queste eccezioni sono necessarie per garantire che un client Teredo possa fungere da Teredo inoltro specifico dell'host. Un Teredo specifico dell'host può essere identificato dall'indirizzo IPv6 nativo aggiuntivo o da un indirizzo 6to4 fornito con l'Teredo specificato.
 
 I firewall client devono supportare i messaggi di errore ICMPv6 seguenti e le funzioni di individuazione per RFC 4443:
 
@@ -34,8 +34,8 @@ I firewall client devono supportare i messaggi di errore ICMPv6 seguenti e le fu
 
 | Codice    | Descrizione                                    |
 |---------|------------------------------------------------|
-| 135/136 | Richiesta e annuncio router adiacenti ICMPV6 |
-| 133/134 | Richiesta e annuncio router          |
+| 135/136 | ICMPV6 Neighbor Solicitation and Advertisement |
+| 133/134 | Router Solicitation and Advertisement          |
 | 128/129 | Richiesta echo ICMPV6 e risposta                  |
 | 1       | Destinazione non raggiungibile                        |
 | 2       | Pacchetto troppo grande                               |
@@ -44,13 +44,13 @@ I firewall client devono supportare i messaggi di errore ICMPv6 seguenti e le fu
 
 
 
- 
+ 
 
-Se questi messaggi non possono essere consentiti in modo specifico, l'esenzione di tutti i messaggi ICMPv6 dovrebbe essere abilitata sul firewall. Inoltre, il firewall host può notare che i pacchetti classificati con i codici 135/136 o 133/134 provengono da o sono assegnati a, il servizio in modalità utente **iphlpsvc** e non dallo stack. Questi pacchetti non devono essere eliminati dal firewall host. Il servizio Teredo viene implementato principalmente all'interno del servizio helper IP "modalità utente".
+Se questi messaggi non possono essere consentiti in modo specifico, l'esenzione di tutti i messaggi ICMPv6 deve essere abilitata nel firewall. Inoltre, il firewall host può notare che i pacchetti classificati in base ai codici 135/136 o 133/134 provengono o sono destinati al servizio in modalità utente **iphlpsvc** e non dallo stack. Questi pacchetti non devono essere eliminati dal firewall host. Il Teredo viene implementato principalmente all'interno del servizio helper IP "modalità utente".
 
-Utilizzando l'API Windows Firewall [**INetFwPolicy2**](/previous-versions/windows/desktop/api/netfw/nn-netfw-inetfwpolicy2) per enumerare tutte le regole con il flag di attraversamento perimetrale impostato, tutte le applicazioni che desiderano ascoltare il traffico non richiesto vengono enumerate per l'eccezione del firewall. Informazioni specifiche sull'uso dell'opzione attraversamento confini sono descritte in dettaglio in [ricezione di traffico non richiesto su Teredo](receiving-unsolicited-traffic-over-teredo.md).
+Usando l'API firewall Windows [**INetFwPolicy2**](/previous-versions/windows/desktop/api/netfw/nn-netfw-inetfwpolicy2) per enumerare tutte le regole con il flag attraversamento perimetrale impostato, tutte le applicazioni che vogliono restare in ascolto del traffico non richiesto vengono enumerate per l'eccezione del firewall. Informazioni specifiche sull'uso dell'opzione Edge Traversal (Attraversamento perimetrale) sono disponibili in Receiving [Unsolicited Traffic Over Teredo](receiving-unsolicited-traffic-over-teredo.md).
 
-I callback non sono associati al codice di enumerazione di esempio seguente. si consiglia vivamente ai firewall di terze parti di eseguire periodicamente l'enumerazione o ogni volta che il firewall rileva una nuova applicazione che tenta di passare attraverso il firewall.
+I callback non sono associati al codice di enumerazione di esempio seguente. È consigliabile che i firewall di terze parti eseere l'enumerazione periodicamente o ogni volta che il firewall rileva una nuova applicazione che tenta di passare attraverso il firewall.
 
 
 ```C++
@@ -250,6 +250,6 @@ int __cdecl main()
 
 
 
- 
+ 
 
- 
+ 

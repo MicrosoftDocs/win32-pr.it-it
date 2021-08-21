@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 573730053a93a110381637ef8e62dc08a4aa1535
-ms.sourcegitcommit: 1897c2a39b4ac4ca4b1e4aec394cef2ce2619c03
+ms.openlocfilehash: 08fa669f8c4284c26052dd68bdbe9ab4f5b99b80b8bdf9445aa3375f0a87a9c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "113316483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118504621"
 ---
 # <a name="wavereadlaneat-function"></a>Funzione WaveReadLaneAt
 

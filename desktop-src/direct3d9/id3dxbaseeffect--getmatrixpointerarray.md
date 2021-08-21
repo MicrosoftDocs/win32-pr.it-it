@@ -1,7 +1,7 @@
 ---
-description: Ottiene una matrice di puntatori alle matrici nontransposed.
+description: Ottiene una matrice di puntatori a matrici non trasposte.
 ms.assetid: ee9f752d-a06a-43a3-b4ce-d1d585ba8c08
-title: 'Metodo ID3DXBaseEffect:: GetMatrixPointerArray (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::GetMatrixPointerArray (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: a841c321e641b74841a76432eab8b016f396f61a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c3abae67374f425540565cb959575a59f1839e55da53daa4b34ef732b15d649c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118296777"
 ---
-# <a name="id3dxbaseeffectgetmatrixpointerarray-method"></a>Metodo ID3DXBaseEffect:: GetMatrixPointerArray
+# <a name="id3dxbaseeffectgetmatrixpointerarray-method"></a>Metodo ID3DXBaseEffect::GetMatrixPointerArray
 
-Ottiene una matrice di puntatori alle matrici nontransposed.
+Ottiene una matrice di puntatori a matrici non trasposte.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,28 +42,28 @@ HRESULT GetMatrixPointerArray(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9)](handles.md).
 
 </dd> <dt>
 
-*ppMatrix* \[ out\]
+*ppMatrix* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\*\***
 
-Matrice di puntatori alle matrici nontransposed. Vedere [**D3DXMATRIX**](d3dxmatrix.md).
+Matrice di puntatori a matrici non trasposte. Vedere [**D3DXMATRIX**](d3dxmatrix.md).
 
 </dd> <dt>
 
-*Numero* \[ di in\]
+*Conteggio* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di matrici nella matrice.
 
@@ -77,9 +77,9 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Una matrice nontransposed contiene dati principali della riga; ovvero ogni vettore è contenuto in una riga.
+Una matrice non trasposta contiene dati principali di riga. in altri, ogni vettore è contenuto in una riga.
 
-Se le matrici di destinazione sono più grandi delle matrici di origine, verranno riempiti solo i componenti in alto a sinistra di ogni matrice di destinazione e i componenti della matrice di destinazione rimanenti verranno impostati su zero.
+Se le matrici di destinazione sono maggiori delle matrici di origine, verranno riempiti solo i componenti in alto a sinistra di ogni matrice di destinazione e i componenti rimanenti della matrice di destinazione verranno impostati su zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -87,8 +87,8 @@ Se le matrici di destinazione sono più grandi delle matrici di origine, verrann
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

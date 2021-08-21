@@ -1,6 +1,6 @@
 ---
-title: 'Funzione Texture2DArray:: GatherCmpAlpha (S, float, float, int2, int2, int2, int2)'
-description: "Per quattro valori Texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce un confronto tra il relativo componente alfa e un valore di confronto. | Funzione Texture2DArray:: GatherCmpAlpha (S, float, float, int2, int2, int2, int2)"
+title: Funzione Texture2DArray::GatherCmpAlpha(S,float,float,int2,int2,int2,int2,int2)
+description: Per quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce un confronto tra il componente alfa e un valore di confronto. | Funzione Texture2DArray::GatherCmpAlpha(S,float,float,int2,int2,int2,int2,int2)
 ms.assetid: 0D6EC888-AB90-47C8-87D1-7B25E3EEB436
 keywords:
 - Funzione GatherCmpAlpha HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e4fd93ed3925d9eaa27b369ffa44b2cc2ffde0f2
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 55ebf6ef972f7fcaecb989873f27cb06e4eacb0cce68cbd8172f6b3d4bf9fe5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118284864"
 ---
-# <a name="texture2darraygathercmpalphasfloatfloatint2int2int2int2-function"></a>Funzione Texture2DArray:: GatherCmpAlpha (S, float, float, int2, int2, int2, int2)
+# <a name="texture2darraygathercmpalphasfloatfloatint2int2int2int2-function"></a>Funzione Texture2DArray::GatherCmpAlpha(S,float,float,int2,int2,int2,int2,int2)
 
-Per quattro valori Texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce un confronto tra il relativo componente alfa e un valore di confronto.
+Per quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce un confronto tra il componente alfa e un valore di confronto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,16 +54,16 @@ Indice del campionatore in base zero.
 
 </dd> <dt>
 
-*Posizione* \[ in\]
+*Località* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-Coordinate di esempio (u, v).
+Coordinate di esempio (u,v).
 
 </dd> <dt>
 
-*CompareValue* \[ in\]
+*CompareValue* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
@@ -72,39 +72,39 @@ Valore da confrontare con ogni valore campionato.
 
 </dd> <dt>
 
-*Offset1* \[ in\]
+*Offset1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int2**
 
-Primo componente di offset applicato alle coordinate di trama prima del campionamento.
+Primo componente di offset applicato alle coordinate della trama prima del campionamento.
 
 </dd> <dt>
 
-*Offset2* \[ in\]
+*Offset2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int2**
 
-Secondo componente di offset applicato alle coordinate di trama prima del campionamento.
+Secondo componente di offset applicato alle coordinate della trama prima del campionamento.
 
 </dd> <dt>
 
-*Offset3* \[ in\]
+*Offset3* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int2**
 
-Terzo componente di offset applicato alle coordinate di trama prima del campionamento.
+Terzo componente di offset applicato alle coordinate della trama prima del campionamento.
 
 </dd> <dt>
 
-*Offset4* \[ in\]
+*Offset4* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int2**
 
-Quarto componente di offset applicato alle coordinate di trama prima del campionamento.
+Quarto componente di offset applicato alle coordinate della trama prima del campionamento.
 
 </dd> </dl>
 
@@ -112,7 +112,7 @@ Quarto componente di offset applicato alle coordinate di trama prima del campion
 
 Tipo: **TemplateType**
 
-Valore a quattro componenti il cui tipo corrisponde al tipo di modello.
+Valore a quattro componenti il cui tipo è uguale al tipo di modello.
 
 ## <a name="remarks"></a>Commenti
 
@@ -122,7 +122,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

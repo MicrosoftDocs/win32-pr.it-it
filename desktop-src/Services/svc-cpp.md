@@ -1,21 +1,21 @@
 ---
-description: Di seguito è riportato un esempio di servizio completo. Quando si usa questo codice come modello, è sufficiente aggiungere codice alle sezioni precedute da TO \_ DO.
+description: Di seguito è riportato un esempio di servizio completo. Quando si usa questo codice come modello, è sufficiente aggiungere il codice alle sezioni precedute da TO \_ DO.
 ms.assetid: dc968bd2-0397-4cec-a825-f807037b4c14
 title: Svc.cpp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6388a51335883aa48d15a52667d89d2188ac4ea3
-ms.sourcegitcommit: 967ba3a2a618e6088cb607164a2a924530278645
+ms.openlocfilehash: 908e659bbc2dd257ea15e015dea5dadbd92db801c0b221e66de69fbaa6dd4082
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113102120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117966882"
 ---
 # <a name="svccpp"></a>Svc.cpp
 
-Di seguito è riportato un esempio di servizio completo. Quando si usa questo codice come modello, è sufficiente aggiungere codice alle sezioni precedute da `TO_DO` .
+Di seguito è riportato un esempio di servizio completo. Quando si usa questo codice come modello, è sufficiente aggiungere il codice alle sezioni precedute da `TO_DO` .
 
-Quando si compila l'esempio, assicurarsi di collegarsi a Kernel32.lib e Advapi32.lib. Il file Sample.h viene generato durante la compilazione della DLL di sola risorsa, Sample.dll. Per altre informazioni, vedere [Sample.mc](sample-mc.md).
+Quando si compila l'esempio, assicurarsi di collegarsi a Kernel32.lib e Advapi32.lib. Il file Sample.h viene generato durante la compilazione della DLL di sola risorsa, Sample.dll. Per altre informazioni, [vedere](sample-mc.md)Sample.mc .
 
 
 ```C++

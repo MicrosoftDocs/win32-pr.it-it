@@ -1,7 +1,7 @@
 ---
 UID: ''
 title: Funzione di callback JournalRecordProc
-description: La funzione registra i messaggi rimossi dal sistema dalla coda dei messaggi di sistema.
+description: La funzione registra i messaggi rimossi dal sistema dalla coda di messaggi di sistema.
 old-location: ''
 ms.assetid: na
 ms.date: 04/05/2019
@@ -32,23 +32,23 @@ api_name: ''
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: bc255441ca82c86542dd8dd4729564122df6c719
-ms.sourcegitcommit: 61bde60d4c3bc09defc3dcdb64c0ddadf52b214e
+ms.openlocfilehash: cc5e1bdbd99b234b347d0b9c10caa7125aead9b68138472e125c8e2a11180609
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "103956291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118437118"
 ---
-# <a name="journalrecordproc-function"></a>JournalRecordProc (funzione)
+# <a name="journalrecordproc-function"></a>Funzione JournalRecordProc
 
 ## <a name="description"></a>Descrizione
 
-Funzione di callback definita dall'applicazione o definita dalla libreria utilizzata con la funzione [SetWindowsHookEx](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw) .
-La funzione registra i messaggi rimossi dal sistema dalla coda dei messaggi di sistema.
-Successivamente, un'applicazione può usare una procedura di hook [JournalPlaybackProc](journalplaybackproc.md) per riprodurre i messaggi.
+Funzione di callback definita dall'applicazione o definita dalla libreria usata con la [funzione SetWindowsHookEx.](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw)
+La funzione registra i messaggi rimossi dal sistema dalla coda di messaggi di sistema.
+In un secondo momento, un'applicazione può usare una procedura hook [JournalPlaybackProc](journalplaybackproc.md) per riprodurre i messaggi.
 
-Il tipo **HookProc** definisce un puntatore a questa funzione di callback.
-**JournalRecordProc** è un segnaposto per il nome di funzione definito dall'applicazione o dalla libreria.
+Il **tipo HOOKPROC** definisce un puntatore a questa funzione di callback.
+**JournalRecordProc** è un segnaposto per il nome di funzione definito dall'applicazione o definito dalla libreria.
 
 ```cpp
 LRESULT CALLBACK JournalRecordProc(
@@ -60,31 +60,31 @@ LRESULT CALLBACK JournalRecordProc(
 
 ## <a name="parameters"></a>Parametri
 
-### <a name="code-in"></a>Codice [in]
+### <a name="code-in"></a>codice [in]
 
 Tipo: **int**
 
-Specifica la modalità di elaborazione del messaggio.
-Se il *codice* è minore di zero, la routine hook deve passare il messaggio alla funzione [CallNextHookEx](/windows/desktop/api/winuser/nf-winuser-callnexthookex) senza ulteriore elaborazione e deve restituire il valore restituito da **CallNextHookEx**.
+Specifica come elaborare il messaggio.
+Se *il* codice è minore di zero, la routine hook deve passare il messaggio alla [funzione CallNextHookEx](/windows/desktop/api/winuser/nf-winuser-callnexthookex) senza ulteriore elaborazione e deve restituire il valore restituito **da CallNextHookEx**.
 Questo parametro può avere uno dei valori seguenti.
 
 | Valore | Significato |
 |-------|---------|
-| **HC_ACTION** 0 | Il parametro *lParam* è un puntatore a una struttura [EVENTMSG](/windows/desktop/api/winuser/ns-winuser-eventmsg) contenente informazioni su un messaggio rimosso dalla coda di sistema. La procedura di hook deve registrare il contenuto della struttura copiando gli elementi in un buffer o in un file. |
-| **HC_SYSMODALOFF** 5 | Una finestra di dialogo modale del sistema è stata eliminata. La procedura di hook deve riprendere la registrazione. |
-| **HC_SYSMODALON** 4 | Viene visualizzata una finestra di dialogo modale del sistema. Finché la finestra di dialogo non viene distrutta, la procedura di hook deve arrestare la registrazione. |
+| **HC_ACTION** 0 | Il *parametro lParam* è un puntatore a [una struttura EVENTMSG](/windows/desktop/api/winuser/ns-winuser-eventmsg) contenente informazioni su un messaggio rimosso dalla coda di sistema. La routine hook deve registrare il contenuto della struttura copiandoli in un buffer o in un file. |
+| **HC_SYSMODALOFF** 5 | Una finestra di dialogo modale di sistema è stata distrutta. La procedura hook deve riprendere la registrazione. |
+| **HC_SYSMODALON** 4 | Viene visualizzata una finestra di dialogo modale di sistema. Finché la finestra di dialogo non viene distrutta, la procedura hook deve arrestare la registrazione. |
 
 ### <a name="wparam"></a>wParam
 
-Tipo: **wParam**
+Tipo: **WPARAM**
 
 Questo parametro non viene usato.
 
 ### <a name="lparam-in"></a>lParam [in]
 
-Tipo: **lParam**
+Tipo: **LPARAM**
 
-Puntatore a una struttura **EVENTMSG** contenente il messaggio da registrare.
+Puntatore a una **struttura EVENTMSG** che contiene il messaggio da registrare.
 
 ## <a name="returns"></a>Restituisce
 
@@ -94,26 +94,26 @@ Il valore restituito viene ignorato.
 
 ## <a name="remarks"></a>Commenti
 
-Una procedura di hook **JournalRecordProc** deve copiare ma non modificare i messaggi.
-Quando la routine hook restituisce il controllo al sistema, il messaggio continua a essere elaborato.
+Una **routine hook JournalRecordProc** deve copiare ma non modificare i messaggi.
+Dopo che la routine hook ha restituito il controllo al sistema, il messaggio continua a essere elaborato.
 
-Installare la routine hook **JournalRecordProc** specificando il tipo di [WH_JOURNALRECORD](about-hooks.md) e un puntatore alla routine hook in una chiamata alla funzione **SetWindowsHookEx** .
+Installare la routine hook **JournalRecordProc** specificando il tipo WH_JOURNALRECORD e un puntatore alla routine hook in una chiamata alla **funzione SetWindowsHookEx.** [](about-hooks.md)
 
-Non è necessario che una routine hook **JournalRecordProc** risieda in una libreria a collegamento dinamico.
-Una procedura di hook **JournalRecordProc** può risiedere nell'applicazione stessa.
+Una routine hook **JournalRecordProc** non deve essere presente in una libreria a collegamento dinamico.
+Una routine hook **JournalRecordProc** può essere eseguita nell'applicazione stessa.
 
 A differenza della maggior parte delle altre routine hook globali, le routine hook **JournalRecordProc** e [JournalPlaybackProc](journalplaybackproc.md) vengono sempre chiamate nel contesto del thread che imposta l'hook.
 
-Un'applicazione che ha installato una procedura **JournalRecordProc** hook deve controllare il codice di chiave virtuale [VK_CANCEL](/windows/desktop/inputdev/virtual-key-codes) (implementato come combinazione di tasti Ctrl + Break sulla maggior parte delle tastiere).
-Questo codice di chiave virtuale deve essere interpretato dall'applicazione come un segnale che l'utente desidera arrestare la registrazione del journal.
-L'applicazione deve rispondere terminando la sequenza di registrazione e rimuovendo la procedura di hook **JournalRecordProc** .
+Un'applicazione che ha installato una procedura hook **JournalRecordProc** deve controllare il codice del tasto virtuale [VK_CANCEL](/windows/desktop/inputdev/virtual-key-codes) (implementato come combinazione di tasti CTRL+BREAK nella maggior parte delle tastiere).
+Questo codice della chiave virtuale deve essere interpretato dall'applicazione come un segnale che l'utente vuole arrestare la registrazione nel journal.
+L'applicazione deve rispondere terminando la sequenza di registrazione e rimuovendo la procedura hook **JournalRecordProc.**
 La rimozione è importante.
-Impedisce a un'applicazione di inserimento nel journal di bloccare il sistema con una procedura di hook.
+Impedisce a un'applicazione di inserimento nel journal di bloccare il sistema bloccando all'interno di una procedura hook.
 
-Questo ruolo come segnale per arrestare la registrazione di Journl significa che non è possibile registrare una combinazione di tasti CTRL + BREAK.
-Poiché la combinazione di tasti CTRL + C non ha alcun ruolo come un segnale di inserimento nel journal, può essere registrata.
-Sono disponibili altre due combinazioni di tasti che non possono essere registrate: CTRL + ESC e CTRL + ALT + CANC.
-Queste due combinazioni di tasti comportano l'arresto di tutte le attività di inserimento nel Journal (record o riproduzione), la rimozione di tutti gli hook di inserimento nel journal e la pubblicazione di un messaggio di [WM_CANCELJOURNAL](wm-canceljournal.md) nell'applicazione di inserimento nel journal.
+Questo ruolo come segnale per arrestare la registrazione journl significa che non è possibile registrare una combinazione di tasti CTRL+INTERR.
+Poiché la combinazione di tasti CTRL+C non ha tale ruolo come segnale di inserimento nel journal, può essere registrata.
+Non è possibile registrare altre due combinazioni di tasti: CTRL+ESC e CTRL+ALT+CANC.
+Queste due combinazioni di tasti causano l'arresto del sistema di tutte le attività [](wm-canceljournal.md) di inserimento nel journal (registrazione o riproduzione), la rimozione di tutti gli hook di inserimento nel journal e la registrazione di un messaggio WM_CANCELJOURNAL nell'applicazione di inserimento nel journal.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -123,7 +123,7 @@ Queste due combinazioni di tasti comportano l'arresto di tutte le attività di i
 
 [JournalPlaybackProc](journalplaybackproc.md)
 
-[SetWindowsHookEx](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw)
+[Setwindowshookex](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw)
 
 [WM_CANCELJOURNAL](wm-canceljournal.md)
 

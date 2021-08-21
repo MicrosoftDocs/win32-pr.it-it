@@ -1,7 +1,7 @@
 ---
-description: La funzione EnumJobs recupera le informazioni su un set specificato di processi di stampa per una stampante specificata.
+description: La funzione EnumJobs recupera informazioni su un set specificato di processi di stampa per una stampante specificata.
 ms.assetid: 1cf429ea-b40e-4063-b6de-c43b7b87f3d3
-title: Funzione EnumJobs (winspool. h)
+title: Funzione EnumJobs (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 174f58ba3fb1012e6ff46612fe312579969e6945
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 57c8416b1c1f5820f632271b0ef0973c76a14be9ef08f24b217ebee441fb29d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118056511"
 ---
-# <a name="enumjobs-function"></a>EnumJobs (funzione)
+# <a name="enumjobs-function"></a>Funzione EnumJobs
 
-La funzione **EnumJobs** recupera le informazioni su un set specificato di processi di stampa per una stampante specificata.
+La **funzione EnumJobs** recupera informazioni su un set specificato di processi di stampa per una stampante specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,39 +48,39 @@ BOOL EnumJobs(
 
 <dl> <dt>
 
-*hPrinter* \[ in\]
+*hPrinter* \[ Pollici\]
 </dt> <dd>
 
-Handle per l'oggetto stampante i cui processi di stampa vengono enumerati dalla funzione. Utilizzare la funzione [**OpenPrinter**](openprinter.md) o [**AddPrinter**](addprinter.md) per recuperare un handle di stampante.
+Handle per l'oggetto stampante i cui processi di stampa vengono enumerati dalla funzione. Usare la [**funzione OpenPrinter**](openprinter.md) o [**AddPrinter**](addprinter.md) per recuperare un handle della stampante.
 
 </dd> <dt>
 
-*FirstJob* \[ in\]
+*FirstJob* \[ Pollici\]
 </dt> <dd>
 
-Posizione in base zero all'interno della coda di stampa del primo processo di stampa da enumerare. Ad esempio, un valore pari a 0 indica che l'enumerazione deve iniziare dal primo processo di stampa nella coda di stampa. il valore 9 indica che l'enumerazione deve iniziare al decimo processo di stampa nella coda di stampa.
+Posizione in base zero all'interno della coda di stampa del primo processo di stampa da enumerare. Ad esempio, il valore 0 specifica che l'enumerazione deve iniziare in corrispondenza del primo processo di stampa nella coda di stampa. Il valore 9 specifica che l'enumerazione deve iniziare in corrispondenza del decimo processo di stampa nella coda di stampa.
 
 </dd> <dt>
 
-*Nojobs* \[ in\]
+*NoJobs* \[ Pollici\]
 </dt> <dd>
 
 Numero totale di processi di stampa da enumerare.
 
 </dd> <dt>
 
-*Livello* \[ di in\]
+*Livello* \[ Pollici\]
 </dt> <dd>
 
-Tipo di informazioni restituite nel buffer di *pJob* .
+Tipo di informazioni restituite nel buffer *pJob.*
 
 
 
 | Valore                                                                                                | Significato                                                                              |
 |------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| <span id="1"></span><dl> <dt>**1**</dt> </dl> | *pJob* riceve una matrice di strutture di [**informazioni sul processo \_ \_ 1**](job-info-1.md)<br/> |
-| <span id="2"></span><dl> <dt>**2**</dt> </dl> | *pJob* riceve una matrice di strutture di [**informazioni sul processo \_ \_ 2**](job-info-2.md)<br/> |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl> | *pJob* riceve una matrice di strutture di [**informazioni sul processo \_ \_ 3**](job-info-3.md)<br/> |
+| <span id="1"></span><dl> <dt>**1**</dt> </dl> | *pJob* riceve una matrice di [**strutture JOB INFO \_ \_ 1**](job-info-1.md)<br/> |
+| <span id="2"></span><dl> <dt>**2**</dt> </dl> | *pJob* riceve una matrice di [**strutture JOB INFO \_ \_ 2**](job-info-2.md)<br/> |
+| <span id="3"></span><dl> <dt>**3**</dt> </dl> | *pJob* riceve una matrice di [**strutture JOB INFO \_ \_ 3**](job-info-3.md)<br/> |
 
 
 
@@ -88,33 +88,33 @@ Tipo di informazioni restituite nel buffer di *pJob* .
 
 </dd> <dt>
 
-*pJob* \[ out\]
+*pJob* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un buffer che riceve una matrice di strutture di informazioni sul processo [**\_ \_ 1**](job-info-1.md), [**informazioni sul processo \_ \_ 2**](job-info-2.md)o [**informazioni sul processo \_ \_ 3**](job-info-3.md) . Il buffer deve essere sufficientemente grande da ricevere la matrice di strutture e qualsiasi stringa o altri dati a cui fanno riferimento i membri della struttura.
+Puntatore a un buffer che riceve una matrice di strutture [**JOB \_ INFO \_ 1,**](job-info-1.md) [**JOB INFO \_ \_ 2**](job-info-2.md)o [**JOB INFO \_ \_ 3.**](job-info-3.md) Il buffer deve essere sufficientemente grande da ricevere la matrice di strutture e qualsiasi stringa o altri dati a cui puntano i membri della struttura.
 
-Per determinare le dimensioni del buffer richieste, chiamare **EnumJobs** con *cbBuf* impostato su zero. **EnumJobs** ha esito negativo, [**GETLASTERROR**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce l'errore \_ buffer insufficiente \_ e il parametro *pcbNeeded* restituisce la dimensione, in byte, del buffer necessario per memorizzare la matrice di strutture e i relativi dati.
+Per determinare le dimensioni del buffer necessarie, chiamare **EnumJobs** con *cbBuf* impostato su zero. **EnumJobs** ha esito negativo, [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce ERROR INSUFFICIENT BUFFER e il parametro \_ \_ *pcbNeeded* restituisce le dimensioni, in byte, del buffer necessario per contenere la matrice di strutture e i relativi dati.
 
 </dd> <dt>
 
-*cbBuf* \[ in\]
+*cbBuf* \[ Pollici\]
 </dt> <dd>
 
-Dimensione, in byte, del buffer *pJob* .
+Dimensione, in byte, del buffer *pJob.*
 
 </dd> <dt>
 
-*pcbNeeded* \[ out\]
+*pcbNeeded* \[ Cambio\]
 </dt> <dd>
 
 Puntatore a una variabile che riceve il numero di byte copiati se la funzione ha esito positivo. Se la funzione ha esito negativo, la variabile riceve il numero di byte necessari.
 
 </dd> <dt>
 
-*pcReturned* \[ out\]
+*pcReturned* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile che riceve il numero di strutture di informazioni di processo [**\_ \_ 1**](job-info-1.md), [**informazioni sul processo \_ \_ 2**](job-info-2.md)o [**informazioni sul processo \_ \_ 3**](job-info-3.md) restituite nel buffer *pJob* .
+Puntatore a una variabile che riceve il numero di strutture [**JOB \_ INFO \_ 1,**](job-info-1.md) [**JOB INFO \_ \_ 2**](job-info-2.md)o [**JOB INFO \_ \_ 3**](job-info-3.md) restituite nel buffer *pJob.*
 
 </dd> </dl>
 
@@ -127,13 +127,13 @@ Se la funzione ha esito negativo, il valore restituito è zero.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Si tratta di una funzione di blocco o sincrona e potrebbe non essere restituita immediatamente. La velocità di restituzione di questa funzione dipende da fattori di runtime quali lo stato della rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non risponda.
+> Si tratta di una funzione di blocco o sincrona che potrebbe non essere restituita immediatamente. La velocità di ritorno di questa funzione dipende da fattori di run-time, ad esempio lo stato della rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante, difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non rispetti.
 
  
 
-La [**struttura \_ info processo \_ 1**](job-info-1.md) contiene informazioni generali sul processo di stampa. la struttura di informazioni sul [**processo \_ \_ 2**](job-info-2.md) contiene informazioni molto più dettagliate. La [**struttura \_ informazioni \_ sul processo 3**](job-info-3.md) contiene informazioni sulla modalità di collegamento dei processi.
+La [**struttura JOB INFO \_ \_ 1**](job-info-1.md) contiene informazioni generali sul processo di stampa. La [**struttura JOB INFO \_ \_ 2**](job-info-2.md) contiene informazioni molto più dettagliate. La [**struttura JOB INFO \_ \_ 3**](job-info-3.md) contiene informazioni sulla modalità di collegamento dei processi.
 
-Per determinare il numero di processi di stampa nella coda della stampante, chiamare la funzione [**GetPrinter**](getprinter.md) con il parametro *Level* impostato su 2.
+Per determinare il numero di processi di stampa nella coda della stampante, chiamare la [**funzione GetPrinter**](getprinter.md) con il *parametro Level* impostato su 2.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -143,10 +143,10 @@ Per determinare il numero di processi di stampa nella coda della stampante, chia
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
-| Nomi Unicode e ANSI<br/>   | **EnumJobsW** (Unicode) e **EnumJobsA** (ANSI)<br/>                                               |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (includere Windows.h)</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
+| Nomi Unicode e ANSI<br/>   | **EnumJobsW** (Unicode) ed **EnumJobsA** (ANSI)<br/>                                               |
 
 
 
@@ -166,13 +166,13 @@ Per determinare il numero di processi di stampa nella coda della stampante, chia
 [**GetPrinter**](getprinter.md)
 </dt> <dt>
 
-[**\_Informazioni processo \_ 1**](job-info-1.md)
+[**INFORMAZIONI \_ SUL PROCESSO \_ 1**](job-info-1.md)
 </dt> <dt>
 
-[**Informazioni sul processo \_ \_ 2**](job-info-2.md)
+[**JOB \_ INFO \_ 2**](job-info-2.md)
 </dt> <dt>
 
-[**Informazioni sul processo \_ \_ 3**](job-info-3.md)
+[**INFORMAZIONI \_ SUL PROCESSO \_ 3**](job-info-3.md)
 </dt> <dt>
 
 [**OpenPrinter**](openprinter.md)

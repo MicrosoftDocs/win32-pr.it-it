@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 920ad763f478a2e6bcb9fbe98cc7e2a677ebe783
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b561189c0aaafa42cc877246bb5a666ac26853133c227aa6c7a4f8beb1f23a28
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118299365"
 ---
 # <a name="d3dxcomputenormalmap-function"></a>Funzione D3DXComputeNormalMap
 
@@ -95,7 +95,7 @@ Un flag [CHANNEL \_ D3DX](d3dx-channel.md) che specifica l'origine delle informa
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Moltiplicatore di valori costante che aumenta (o diminuisce) i valori nella mappa normale. I valori più elevati in genere rendono le dossi più visibili, i valori più bassi in genere rendono le dossi meno visibili.
+Moltiplicatore di valori costanti che aumenta o diminuisce i valori nella mappa normale. I valori più alti in genere rendono più visibili i rilievi, i valori più bassi in genere rendono i rilievi meno visibili.
 
 </dd> </dl>
 
@@ -107,7 +107,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo calcola la normale usando la differenza centrale con una dimensione del kernel di 3x3. Il denominatore differenze centrale usato è 2.0. I canali RGB nella destinazione contengono componenti parziali (x,y,z) della normale.
+Questo metodo calcola la normale usando la differenza centrale con una dimensione del kernel di 3x3. Il denominatore differenze centrale usato è 2.0. I canali RGB nella destinazione contengono componenti distorti (x,y,z) della normale.
 
 ## <a name="requirements"></a>Requisiti
 

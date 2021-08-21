@@ -1,12 +1,12 @@
 ---
-title: Metodo IRemoteDesktopClientEvents OnStatusChanged (Locationapi.h)
-description: Chiamato quando il controllo client ha aggiornato il proprio stato.
+title: Metodo OnStatusChanged IRemoteDesktopClientEvents (Locationapi.h)
+description: Chiamato quando il controllo client ha aggiornato lo stato.
 ms.assetid: AAFBDC9E-C8B5-4924-AA69-82EF09996AF7
 ms.tgt_platform: multiple
 keywords:
 - Metodo OnStatusChanged Servizi Desktop remoto
 - Metodo OnStatusChanged Servizi Desktop remoto, interfaccia IRemoteDesktopClientEvents
-- Interfaccia IRemoteDesktopClientEvents Servizi Desktop remoto, metodo OnStatusChanged
+- Interfaccia IRemoteDesktopClientEvents Servizi Desktop remoto , metodo OnStatusChanged
 topic_type:
 - apiref
 api_name:
@@ -26,7 +26,7 @@ ms.locfileid: "118351623"
 ---
 # <a name="iremotedesktopclienteventsonstatuschanged-method"></a>Metodo IRemoteDesktopClientEvents::OnStatusChanged
 
-Chiamato quando il controllo client ha aggiornato il proprio stato.
+Chiamato quando il controllo client ha aggiornato lo stato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ Nuovo codice di stato.
 
 </dd> <dt>
 
-*messaggio di stato* 
+*statusMessage* 
 </dt> <dd>
 
 Testo del messaggio di stato.

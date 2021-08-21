@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetGetTableColumnInfo (JET_SESID, JET_TABLEID, String, JET_COLUMNDEF)'
-title: Metodo API. JetGetTableColumnInfo (JET_SESID, JET_TABLEID, String, JET_COLUMNDEF)
+description: 'Altre informazioni su: Metodo Api.JetGetTableColumnInfo (JET_SESID, JET_TABLEID, String, JET_COLUMNDEF)'
+title: Metodo Api.JetGetTableColumnInfo (JET_SESID, JET_TABLEID, String, JET_COLUMNDEF)
 TOCTitle: JetGetTableColumnInfo method (JET_SESID, JET_TABLEID, String, JET_COLUMNDEF)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetTableColumnInfo(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.String,Microsoft.Isam.Esent.Interop.JET_COLUMNDEF@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgettablecolumninfo(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 60e984fdb1577dc69a352c327c1af605e0d441d6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66448d2c537a9ff22aff2d8ac402302a113f07067da7b7c5575bef730ed0dd6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118085213"
 ---
-# <a name="apijetgettablecolumninfo-method-jet_sesid-jet_tableid-string-jet_columndef"></a>Metodo API. JetGetTableColumnInfo (JET_SESID, JET_TABLEID, String, JET_COLUMNDEF)
+# <a name="apijetgettablecolumninfo-method-jet_sesid-jet_tableid-string-jet_columndef"></a>Metodo Api.JetGetTableColumnInfo (JET_SESID, JET_TABLEID, String, JET_COLUMNDEF)
 
-Recupera le informazioni su una colonna della tabella.
+Recupera informazioni su una colonna della tabella.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,30 +64,30 @@ public static void JetGetTableColumnInfo(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     Sessione da utilizzare.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Tabella contenente la colonna.
 
 <!-- end list -->
 
   - columnName  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Nome della colonna.
 
 <!-- end list -->
 
   - columndef  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNDEF](./jet-columndef-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNDEF](./jet-columndef-class.md)  
     
-    Compilato con le informazioni sulla colonna.
+    Compilato con informazioni sulla colonna.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -95,8 +95,8 @@ public static void JetGetTableColumnInfo(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Overload JetGetTableColumnInfo](./api.jetgettablecolumninfo-method.md)
+[Overload di JetGetTableColumnInfo](./api.jetgettablecolumninfo-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

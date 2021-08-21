@@ -79,7 +79,7 @@ Di seguito sono riportate le descrizioni delle fasi illustrate nella figura prec
 
     Se un volume di visualizzazione è definito come:
 
-    -   Larghezza della finestra sw-screen nello spazio della fotocamera in prossimità del piano di ritaglio
+    -   Larghezza della finestra dello schermo sw nello spazio della fotocamera vicino al piano di ritaglio
     -   Altezza della finestra sh-screen nello spazio della fotocamera in prossimità del piano di ritaglio
     -   Distanza Zn dal piano di ritaglio vicino lungo gli assi Z nello spazio della fotocamera
     -   Distanza Zf dal piano di ritaglio lontano lungo gli assi Z nello spazio della fotocamera

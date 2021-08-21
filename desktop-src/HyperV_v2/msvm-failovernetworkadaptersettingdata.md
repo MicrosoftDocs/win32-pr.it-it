@@ -1,7 +1,7 @@
 ---
-description: Rappresenta le impostazioni per una scheda di rete all'interno del sistema operativo guest, che verrà applicato al momento di un failover.
+description: Rappresenta le impostazioni per una scheda di rete all'interno del sistema operativo guest, che verranno applicate al momento di un failover.
 ms.assetid: d7f2d471-7328-4181-b94e-b9127814706e
-title: Classe Msvm_FailoverNetworkAdapterSettingData
+title: Msvm_FailoverNetworkAdapterSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,18 +23,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d4989c43dda823be13d604e3ac9b575b62f2f9da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 432a72384d7187499ba0e1b33a24a02dead8b1d6ebd8cde09a1bf1cfc8abdc1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118148087"
 ---
-# <a name="msvm_failovernetworkadaptersettingdata-class"></a>\_Classe MSVM FailoverNetworkAdapterSettingData
+# <a name="msvm_failovernetworkadaptersettingdata-class"></a>Classe Msvm \_ FailoverNetworkAdapterSettingData
 
-Rappresenta le impostazioni per una scheda di rete all'interno del sistema operativo guest, che verrà applicato al momento di un failover.
+Rappresenta le impostazioni per una scheda di rete all'interno del sistema operativo guest, che verranno applicate al momento di un failover.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,39 +57,39 @@ class Msvm_FailoverNetworkAdapterSettingData : CIM_SettingData
 
 ## <a name="members"></a>Members
 
-La **classe \_ FailoverNetworkAdapterSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ FailoverNetworkAdapterSettingData** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ FailoverNetworkAdapterSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ FailoverNetworkAdapterSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su **null**.
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su **Null.**
 
 </dd> <dt>
 
-**DefaultGateways**
+**Gateway predefiniti**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
 Matrice di stringhe che specificano i gateway IP predefiniti configurati nella scheda di rete all'interno del sistema operativo guest. Il numero massimo di gateway IP predefiniti che possono essere configurati in una singola scheda di rete è cinque.
@@ -99,39 +99,39 @@ Matrice di stringhe che specificano i gateway IP predefiniti configurati nella s
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su **null**.
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su **Null.**
 
 </dd> <dt>
 
 **DHCPEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica se DHCP è abilitato sull'interfaccia IPv4 della scheda di rete all'interno del sistema operativo guest.
+Specifica se DHCP è abilitato nell'interfaccia IPv4 della scheda di rete all'interno del sistema operativo guest.
 
 </dd> <dt>
 
 **DNSServers**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
 Matrice di stringhe che specificano i server DNS configurati nella scheda di rete all'interno del sistema operativo guest.
@@ -141,42 +141,42 @@ Matrice di stringhe che specificano i server DNS configurati nella scheda di ret
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su **null**.
+Nome visualizzato per l'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su **Null.**
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85))ed è sempre impostata su **null**.
+Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85))ed è sempre impostata su **Null.**
 
 </dd> <dt>
 
 **IPAddresses**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
 Matrice di stringhe che specificano gli indirizzi IP configurati nella scheda di rete all'interno del sistema operativo guest.
@@ -186,7 +186,7 @@ Matrice di stringhe che specificano gli indirizzi IP configurati nella scheda di
 **ProtocolIFType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -240,16 +240,16 @@ IPv4/IPv6
 **Subnet**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
-Matrice di stringhe che specificano le subnet configurate nella scheda di rete all'interno del sistema operativo guest. Ogni elemento in questa matrice viene applicato all'elemento corrispondente nella matrice **IPAddresses** .
+Matrice di stringhe che specificano le subnet configurate nella scheda di rete all'interno del sistema operativo guest. Ogni elemento di questa matrice si applica all'elemento corrispondente nella **matrice IPAddresses.**
 
 </dd> </dl>
 
@@ -259,10 +259,10 @@ Matrice di stringhe che specificano le subnet configurate nella scheda di rete a
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

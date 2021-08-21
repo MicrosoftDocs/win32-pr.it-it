@@ -1,19 +1,19 @@
 ---
 title: Interfacce obbligatorie (COM)
-description: Informazioni sulle interfacce del contenitore di controlli ActiveX che possono o devono essere implementate dai contenitori di controlli.
+description: Informazioni sulle interfacce ActiveX contenitori di controllo che possono o devono essere implementate dai contenitori di controlli.
 ms.assetid: ae238882-d0c9-4120-b8a8-001bf9559cfa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55015ee5837754c073d2590144687131c285bb80
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: cf19cb8d0c72b365f6a8faa263fc76ddede1e5231fc34a9090c064f54d75b7f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118309663"
 ---
 # <a name="required-interfaces-com"></a>Interfacce obbligatorie (COM)
 
-La tabella seguente elenca le interfacce del contenitore di controlli ActiveX e indica quali interfacce sono facoltative e quali sono obbligatorie e devono essere implementate dai contenitori di controlli.
+La tabella seguente elenca le interfacce ActiveX Contenitore di controllo e indica quali interfacce sono facoltative e quali sono obbligatorie e devono essere implementate dai contenitori di controllo.
 
 
 
@@ -37,9 +37,9 @@ La tabella seguente elenca le interfacce del contenitore di controlli ActiveX e 
  
 
 1.  [**IOleContainer viene**](/windows/desktop/api/OleIdl/nn-oleidl-iolecontainer) implementato nell'oggetto documento o modulo (o analogo appropriato) che contiene i siti contenitore. I controlli **usano IOleContainer** per passare ad altri controlli nello stesso documento o modulo.
-2.  Il supporto per le interfacce duali non è obbligatorio, ma è fortemente consigliato. La scrittura di contenitori di controlli ActiveX per sfruttare i vantaggi delle interfacce duali offrirà prestazioni migliori con i controlli che offrono supporto per la doppia interfaccia.
+2.  Il supporto per le interfacce duali non è obbligatorio, ma è fortemente consigliato. La ActiveX contenitori di controlli per sfruttare i vantaggi delle interfacce duali offrirà prestazioni migliori con i controlli che offrono supporto per la doppia interfaccia.
 
-I contenitori di controlli ActiveX devono supportare le eccezioni di automazione OLE. Se un contenitore di controlli supporta interfacce duali, deve acquisire le eccezioni di automazione tramite [IErrorInfo.](/windows/win32/api/oaidl/nn-oaidl-ierrorinfo)
+ActiveX contenitori di controlli devono supportare le eccezioni di automazione OLE. Se un contenitore di controlli supporta interfacce duali, deve acquisire le eccezioni di automazione tramite [IErrorInfo.](/windows/win32/api/oaidl/nn-oaidl-ierrorinfo)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

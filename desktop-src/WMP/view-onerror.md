@@ -1,9 +1,9 @@
 ---
-title: Visualizza. OnError
-description: L'evento OnError gestisce un evento di errore se Settings. enableErrorDialogs è impostato su false.
+title: VIEW.onerror
+description: L'evento onerror gestisce un evento di errore se Impostazioni.enableErrorDialogs è impostato su false.
 ms.assetid: cd3ef682-edf2-47e2-a496-07e38dda824d
 keywords:
-- VISUALIZZAZIONE. OnError Windows Media Player
+- View.onerror Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 92f4ee44df7d40e5ce225c14419628c8299029a8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ff624a9357f1362eef4d2a8c9526c64fc28354bb67bb4d44da30771abb26718f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116584"
 ---
-# <a name="viewonerror"></a>Visualizza. OnError
+# <a name="viewonerror"></a>VIEW.onerror
 
-L'evento **OnError** gestisce un evento di errore se **Settings. enableErrorDialogs** è impostato su false.
+**L'evento onerror** gestisce un evento di errore **se Impostazioni.enableErrorDialogs** è impostato su false.
 
 ``` syntax
 onerror
@@ -34,7 +34,7 @@ onerror
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

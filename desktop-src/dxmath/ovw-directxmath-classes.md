@@ -4,12 +4,12 @@ ms.assetid: e50e24ab-24f2-d59e-22a4-aaf7015d0255
 title: Classi della libreria DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1154b95b60ce5e5f368ce6c6549419b3d764c266
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7351ad70f07bb8fb37d4b581a546a8e774114d800a0f789eca61b73d69f76b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118501684"
 ---
 # <a name="directxmath-library-classes"></a>Classi della libreria DirectXMath
 
@@ -21,10 +21,10 @@ Questa sezione contiene informazioni sulle classi fornite da DirectXMath.
 
 | Argomento                                                         | Descrizione                                 |
 |---------------------------------------------------------------|---------------------------------------------|
-| [**BoundingBox**](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox)<br/>                 | Oggetto allineato all'asse delimitatore.<br/>  |
-| [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)<br/>         | Oggetto tronco di delimitazione.<br/>       |
-| [**BoundingOrientedBox**](/windows/win32/api/directxcollision/ns-directxcollision-boundingorientedbox)<br/> | Oggetto riquadro delimitatore orientato.<br/> |
-| [**BoundingSphere**](/windows/win32/api/directxcollision/ns-directxcollision-boundingsphere)<br/>           | Oggetto Sphere di delimitazione.<br/>        |
+| [**Boundingbox**](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox)<br/>                 | Oggetto allineato all'asse di delimitazione.<br/>  |
+| [**Boundingfrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)<br/>         | Oggetto frustum di delimitazione.<br/>       |
+| [**BoundingOrientedBox**](/windows/win32/api/directxcollision/ns-directxcollision-boundingorientedbox)<br/> | Oggetto rettangolo di selezione orientato.<br/> |
+| [**Boundingsphere**](/windows/win32/api/directxcollision/ns-directxcollision-boundingsphere)<br/>           | Oggetto sphere di delimitazione.<br/>        |
 
 
 
@@ -34,7 +34,7 @@ Questa sezione contiene informazioni sulle classi fornite da DirectXMath.
 
 <dl> <dt>
 
-[Guida di riferimento alla programmazione DirectXMath](ovw-xnamath-reference.md)
+[Informazioni di riferimento sulla programmazione DirectXMath](ovw-xnamath-reference.md)
 </dt> </dl>
 
  

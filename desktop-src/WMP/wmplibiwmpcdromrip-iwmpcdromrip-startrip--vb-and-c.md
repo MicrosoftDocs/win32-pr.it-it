@@ -1,6 +1,6 @@
 ---
 title: Metodo IWMPCdromRip startRip
-description: Il metodo startRip strappa il CD.
+description: Il metodo startRip riprese il CD.
 ms.assetid: 3569e29c-e593-4bdd-8afb-74e39721cf80
 keywords:
 - Metodo startRip Windows Media Player
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 327ac9009cf1b8fb9ccfbcc460cde78ef40b3802
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a6686d3911123eee91dabec1f8750be7f80a6d8dc9c434d893560278ad291ded
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116209"
 ---
-# <a name="iwmpcdromripstartrip-method"></a>Metodo IWMPCdromRip:: startRip
+# <a name="iwmpcdromripstartrip-method"></a>Metodo IWMPCdromRip::startRip
 
-Il metodo **startRip** strappa il CD.
+Il **metodo startRip** riprese il CD.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,7 +55,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-La copia di un CD usando l'interfaccia **IWMPCdromRip** ha lo stesso effetto del ritaglio di musica usando l'interfaccia utente di Windows Media Player. Il contenuto Ripped viene aggiunto automaticamente alla libreria in base alle preferenze dell'utente. Per ulteriori informazioni sulle preferenze utente per il ritaglio di CD, vedere la sezione relativa alla copia di musica da CDs nella Guida di Windows Media Player.
+Il ripping di un CD tramite **l'interfaccia IWMPCdromRip** ha lo stesso effetto di quello di ripping della musica usando l Windows Media Player'interfaccia utente. Il contenuto decompresso viene aggiunto automaticamente alla raccolta in base alle preferenze dell'utente. Per altre informazioni sulle preferenze dell'utente per lo ripping di CD, vedere "Ripping music from CDs" (Ripping di musica da CD) Windows Media Player Guida.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,7 +79,7 @@ La copia di un CD usando l'interfaccia **IWMPCdromRip** ha lo stesso effetto del
 [**IWMPCdromRip.stopRip**](wmplibiwmpcdromrip-iwmpcdromrip-stoprip--vb-and-c.md)
 </dt> <dt>
 
-[**Copia di un CD**](ripping-a-cd.md)
+[**Ripping di un CD**](ripping-a-cd.md)
 </dt> </dl>
 
  

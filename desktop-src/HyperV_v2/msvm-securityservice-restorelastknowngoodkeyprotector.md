@@ -1,7 +1,7 @@
 ---
-description: Ripristina l'ultima protezione con chiave corretta nota.
+description: Ripristina l'ultima protezione con chiave buona nota.
 ms.assetid: 0d1ea5d8-d25e-400c-be65-afe1bd65b1f0
-title: Metodo RestoreLastKnownGoodKeyProtector della classe Msvm_SecurityService
+title: Metodo RestoreLastKnownGoodKeyProtector della Msvm_SecurityService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2e82fb3b40f4b85e74f92ed2690a411932af2eb3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ae16b3a6b3107ed4064c1036ec934f7f5e1c279e016c00967925fbe053cb2e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106320007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118147220"
 ---
-# <a name="restorelastknowngoodkeyprotector-method-of-the-msvm_securityservice-class"></a>Metodo RestoreLastKnownGoodKeyProtector della classe MSVM \_ SecurityService
+# <a name="restorelastknowngoodkeyprotector-method-of-the-msvm_securityservice-class"></a>Metodo RestoreLastKnownGoodKeyProtector della classe Msvm \_ SecurityService
 
-Ripristina l'ultima protezione con chiave corretta nota.
+Ripristina l'ultima protezione con chiave buona nota.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,30 +40,30 @@ uint32 RestoreLastKnownGoodKeyProtector(
 
 <dl> <dt>
 
-*SecuritySettingData* \[ in\]
+*SecuritySettingData* \[ Pollici\]
 </dt> <dd>
 
-La stringa contiene un'istanza incorporata della classe [**\_ SecuritySettingData MSVM**](msvm-securitysettingdata.md) che rappresenta le impostazioni di sicurezza di un sistema virtuale.
+La stringa contiene un'istanza incorporata [**della classe \_ Msvm SecuritySettingData**](msvm-securitysettingdata.md) che rappresenta le impostazioni di sicurezza di un sistema virtuale.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Parametro facoltativo per il monitoraggio dello stato di avanzamento dell'operazione, che viene utilizzato se non è stato possibile eseguire in modo sincrono il metodo. Se l'operazione viene eseguita in modo asincrono, il valore restituito è 4096.
+Parametro facoltativo per il monitoraggio dello stato dell'operazione, che viene usato se non è stato possibile eseguire il metodo in modo sincrono. Se l'operazione viene eseguita in modo asincrono, il valore restituito è 4096.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, restituisce 0 o 4096; in caso contrario, restituisce un errore.
+In caso di esito positivo, restituisce un valore 0 o 4096. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
 **Non riuscito** (32768)
@@ -75,25 +75,25 @@ In caso di esito positivo, restituisce 0 o 4096; in caso contrario, restituisce 
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
-Il **sistema è in uso** (32774)
+**Il sistema è in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -105,10 +105,10 @@ Il **sistema è in uso** (32774)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                                               |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                                               |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -117,7 +117,7 @@ Il **sistema è in uso** (32774)
 
 <dl> <dt>
 
-[**\_SecurityService MSVM**](msvm-securityservice.md)
+[**Msvm \_ SecurityService**](msvm-securityservice.md)
 </dt> </dl>
 
  

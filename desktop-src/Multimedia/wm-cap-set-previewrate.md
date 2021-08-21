@@ -1,9 +1,9 @@
 ---
-title: Messaggio di WM_CAP_SET_PREVIEWRATE (VFW. h)
-description: Il \_ messaggio WM Cap \_ set \_ PREVIEWRATE imposta la frequenza di visualizzazione dei frame in modalità anteprima. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro capPreviewRate.
+title: WM_CAP_SET_PREVIEWRATE messaggio (Vfw.h)
+description: Il messaggio WM \_ CAP \_ SET \_ PREVIEWRATE imposta la frequenza di visualizzazione dei fotogrammi in modalità di anteprima. È possibile inviare questo messaggio in modo esplicito o usando la macro capPreviewRate.
 ms.assetid: 1189ad4a-1f32-4684-920b-ee3c26ef97f8
 keywords:
-- WM_CAP_SET_PREVIEWRATE messaggi multimediali di Windows
+- WM_CAP_SET_PREVIEWRATE messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1134255b73e579841800af6cd5f6900965217106
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fa9b9a24614a40c5efb545b91a80069bf915c77c4b7d8fb289ed581f750ac0cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118135083"
 ---
-# <a name="wm_cap_set_previewrate-message"></a>\_ \_ Messaggio PREVIEWRATE set di estremità WM \_
+# <a name="wm_cap_set_previewrate-message"></a>MESSAGGIO \_ WM CAP SET \_ \_ PREVIEWRATE
 
-Il messaggio **WM \_ Cap \_ set \_ PREVIEWRATE** imposta la frequenza di visualizzazione dei frame in modalità anteprima. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**capPreviewRate**](/windows/desktop/api/Vfw/nf-vfw-cappreviewrate) .
+Il **messaggio WM CAP SET \_ \_ \_ PREVIEWRATE** imposta la frequenza di visualizzazione dei fotogrammi in modalità di anteprima. È possibile inviare questo messaggio in modo esplicito o usando la macro [**capPreviewRate.**](/windows/desktop/api/Vfw/nf-vfw-cappreviewrate)
 
 
 ```C++
@@ -38,20 +38,20 @@ lParam = 0L;
 
 <dl> <dt>
 
-<span id="wMS"></span><span id="wms"></span><span id="WMS"></span>*wMS*
+<span id="wMS"></span><span id="wms"></span><span id="WMS"></span>*Wms*
 </dt> <dd>
 
-Frequenza, in millisecondi, in base alla quale vengono acquisiti e visualizzati nuovi frame.
+Frequenza, in millisecondi, con cui vengono acquisiti e visualizzati nuovi fotogrammi.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** se la finestra di acquisizione non è connessa a un driver di acquisizione.
+Restituisce **TRUE** se ha esito positivo **o FALSE** se la finestra di acquisizione non è connessa a un driver di acquisizione.
 
 ## <a name="remarks"></a>Commenti
 
-La modalità di anteprima usa risorse di CPU sostanziali. Le applicazioni possono disabilitare l'anteprima o abbassare la frequenza di anteprima quando un'altra applicazione ha lo stato attivo. Durante lo streaming di acquisizione video, l'attività di anteprima è più bassa rispetto alla scrittura di frame su disco e i frame di anteprima vengono visualizzati solo se non sono disponibili altri buffer per la scrittura.
+La modalità di anteprima usa notevoli risorse della CPU. Le applicazioni possono disabilitare l'anteprima o ridurre la frequenza di anteprima quando un'altra applicazione ha lo stato attivo. Durante l'acquisizione di video in streaming, l'attività di anteprima ha una priorità inferiore rispetto alla scrittura di fotogrammi su disco e i fotogrammi di anteprima vengono visualizzati solo se non sono disponibili altri buffer per la scrittura.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,7 +61,7 @@ La modalità di anteprima usa risorse di CPU sostanziali. Le applicazioni posson
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

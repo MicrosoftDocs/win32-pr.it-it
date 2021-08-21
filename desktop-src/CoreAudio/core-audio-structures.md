@@ -13,16 +13,16 @@ ms.locfileid: "118407215"
 ---
 # <a name="core-audio-structures"></a>Strutture audio di base
 
-Questa sezione descrive le strutture usate dalle API Core Audio in Windows Vista e versioni successive.
+Questa sezione descrive le strutture usate dalle API audio di base in Windows Vista e versioni successive.
 
 
 
 | Struttura                                                                     | Descrizione                                                                                                                                                         |
 |-------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**DATI \_ DI NOTIFICA VOLUME \_ \_ AUDIO**](/windows/desktop/api/Endpointvolume/ns-endpointvolume-audio_volume_notification_data)   | Descrive una modifica del livello del volume o dello stato di disattivazione di un dispositivo endpoint audio.                                                                                 |
+| [**DATI DI \_ NOTIFICA VOLUME \_ \_ AUDIO**](/windows/desktop/api/Endpointvolume/ns-endpointvolume-audio_volume_notification_data)   | Descrive una modifica del livello del volume o dello stato di muto di un dispositivo endpoint audio.                                                                                 |
 | [**PARAMETRI DI \_ ATTIVAZIONE AUDIO \_ \_ DIRECTX**](/windows/win32/api/mmdeviceapi/ns-mmdeviceapi-directx_audio_activation_params) | Specifica i parametri di inizializzazione per un flusso DirectSound.                                                                                                   |
-| [**DESCRIZIONE DI \_ KSJACK**](/windows/win32/api/devicetopology/ns-devicetopology-ksjack_description)                             | Recuperato tramite [**IKsJackDescription::GetJackDescription**](/windows/desktop/api/Devicetopology/nf-devicetopology-iksjackdescription-getjackdescription); descrive un jack audio.                                 |
-| [**KSJACK \_ DESCRIPTION2**](/windows/desktop/api/Devicetopology/ns-devicetopology-ksjack_description2)<br/>                | Recuperato tramite [**IKsJackDescription2::GetJackDescription2**](/windows/desktop/api/Devicetopology/nf-devicetopology-iksjackdescription2-getjackdescription2); descrive un jack audio. <br/>                 |
+| [**DESCRIZIONE DI \_ KSJACK**](/windows/win32/api/devicetopology/ns-devicetopology-ksjack_description)                             | Recuperato tramite [**IKsDescription::GetDescriptionDescription**](/windows/desktop/api/Devicetopology/nf-devicetopology-iksjackdescription-getjackdescription); descrive un jack audio.                                 |
+| [**KSJACK \_ DESCRIPTION2**](/windows/desktop/api/Devicetopology/ns-devicetopology-ksjack_description2)<br/>                | Recuperato tramite [**IKsDescription2::GetDescriptionDescription2**](/windows/desktop/api/Devicetopology/nf-devicetopology-iksjackdescription2-getjackdescription2); descrive un jack audio. <br/>                 |
 | [**INFORMAZIONI SUL SINK KSJACK \_ \_**](/windows/desktop/api/Devicetopology/ns-devicetopology-ksjack_sink_information)<br/>       | Recuperato tramite [**IKsJackSinkInformation::GetJackSinkInformation**](/windows/desktop/api/Devicetopology/nf-devicetopology-iksjacksinkinformation-getjacksinkinformation); descrive un sink jack audio.<br/> |
 | [**Luid**](/windows/desktop/api/Devicetopology/ns-devicetopology-luid)<br/>                                               | Archivia l'identificatore di porta video.<br/>                                                                                                                        |
 

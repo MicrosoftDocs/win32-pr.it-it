@@ -1,7 +1,7 @@
 ---
-description: "Il metodo SetSyncPoint specifica se l'inizio di questo esempio è un punto di sincronizzazione. Questo metodo implementa il metodo IMediaSample:: SetSyncPoint."
+description: Il metodo SetSyncPoint specifica se l'inizio di questo esempio è un punto di sincronizzazione. Questo metodo implementa il metodo IMediaSample::SetSyncPoint.
 ms.assetid: 48fc5145-7cce-4e76-860d-45a0d5b43b67
-title: Metodo CMediaSample. SetSyncPoint (Amfilter. h)
+title: Metodo CMediaSample.SetSyncPoint (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 679be6a313329a15c83bee4473e5a944aa3532b9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0be51ed18e25bcbd12e33f9167493d73f0c140480f4ec0042fb0c43928720d3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156523"
 ---
-# <a name="cmediasamplesetsyncpoint-method"></a>CMediaSample. SetSyncPoint, metodo
+# <a name="cmediasamplesetsyncpoint-method"></a>Metodo CMediaSample.SetSyncPoint
 
-Il `SetSyncPoint` metodo specifica se l'inizio di questo esempio è un punto di sincronizzazione. Questo metodo implementa il metodo [**IMediaSample:: SetSyncPoint**](/windows/desktop/api/Strmif/nf-strmif-imediasample-setsyncpoint) .
+Il `SetSyncPoint` metodo specifica se l'inizio di questo esempio è un punto di sincronizzazione. Questo metodo implementa il [**metodo IMediaSample::SetSyncPoint.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-setsyncpoint)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,17 +45,17 @@ HRESULT SetSyncPoint(
 *bIsSyncPoint* 
 </dt> <dd>
 
-Valore booleano che specifica se si tratta di un punto di sincronizzazione. Se **true**, si tratta di un punto di sincronizzazione.
+Valore booleano che specifica se si tratta di un punto di sincronizzazione. Se **TRUE,** si tratta di un punto di sincronizzazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo aggiorna la variabile membro [**\_ dwFlags CMediaSample:: m**](cmediasample-m-dwflags.md) , che specifica la proprietà del punto di sincronizzazione.
+Questo metodo aggiorna la [**variabile membro \_ dwFlags CMediaSample::m,**](cmediasample-m-dwflags.md) che specifica la proprietà del punto di sincronizzazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Questo metodo aggiorna la variabile membro [**\_ dwFlags CMediaSample:: m**](cme
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

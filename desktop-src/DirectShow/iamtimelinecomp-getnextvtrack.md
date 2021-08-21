@@ -24,7 +24,7 @@ ms.locfileid: "118401052"
 # <a name="iamtimelinecompgetnextvtrack-method"></a>Metodo IAMTimelineComp::GetNextVTrack
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
@@ -49,7 +49,7 @@ HRESULT GetNextVTrack(
 *pVirtualTrack* 
 </dt> <dd>
 
-Puntatore alla traccia virtuale precedente oppure **NULL per** recuperare la prima traccia virtuale nella composizione.
+Puntatore alla traccia virtuale precedente oppure **NULL** per recuperare la prima traccia virtuale nella composizione.
 
 </dd> <dt>
 
@@ -74,7 +74,7 @@ Se il metodo ha esito positivo, **l'interfaccia IAMTimelineObj** restituita ha u
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
