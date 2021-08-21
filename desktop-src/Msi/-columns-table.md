@@ -1,28 +1,28 @@
 ---
-description: La \_ tabella Columns è una tabella di sistema di sola lettura che contiene il catalogo delle colonne. Vengono elencate le colonne per tutte le tabelle. È possibile eseguire una query su questa tabella per determinare se esiste una determinata colonna.
+description: La tabella Columns è una tabella di sistema di sola \_ lettura che contiene il catalogo di colonne. Elenca le colonne per tutte le tabelle. È possibile eseguire una query su questa tabella per determinare se esiste una determinata colonna.
 ms.assetid: 1ddde4e2-90a9-4dd8-a4f9-b6802d0b11cf
-title: Tabella _Columns
+title: _Columns tabella
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d896f330e5fc2e13b5f172581341eb11a09617d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7cbb603c077d7873cdfbea88070e555902883ba579b422627b2581aca04745b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118640476"
 ---
-# <a name="_columns-table"></a>\_Tabella colonne
+# <a name="_columns-table"></a>\_Tabella Columns
 
-La \_ tabella Columns è una tabella di sistema di sola lettura che contiene il catalogo delle colonne. Vengono elencate le colonne per tutte le tabelle. È possibile eseguire una query su questa tabella per determinare se esiste una determinata colonna.
+La tabella Columns è una tabella di sistema di sola \_ lettura che contiene il catalogo di colonne. Elenca le colonne per tutte le tabelle. È possibile eseguire una query su questa tabella per determinare se esiste una determinata colonna.
 
-La \_ tabella Columns contiene le colonne seguenti.
+La \_ tabella Columns include le colonne seguenti.
 
 
 
 | Colonna | Tipo                   | Chiave | Nullable |
 |--------|------------------------|-----|----------|
 | Tabella  | [Text](text.md)       | S   | N        |
-| Number | [Integer](integer.md) | S   | N        |
+| Numero | [Integer](integer.md) | S   | N        |
 | Nome   | [Text](text.md)       | N   | N        |
 
 
@@ -56,9 +56,9 @@ Nome della colonna.
 
 ## <a name="remarks"></a>Commenti
 
-Poiché la \_ tabella Columns è una tabella di sistema che non può essere modificata tramite query SQL, non è possibile ottenere le chiavi primarie con la funzione [**MsiDatabaseGetPrimaryKeys**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegetprimarykeysa) o la [**Proprietà PrimaryKeys**](database-primarykeys.md).
+Poiché la tabella Columns è una tabella di sistema che non può essere modificata tramite query SQL, non è possibile ottenere le chiavi primarie con la funzione \_ [**MsiDatabaseGetPrimaryKeys**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegetprimarykeysa) o la [**proprietà PrimaryKeys**](database-primarykeys.md).
 
-Nella tabella Columns sono archiviate solo le colonne permanenti \_ . Per determinare se esiste una colonna temporanea, è necessario creare una vista usando un'istruzione SELECT sulla \* tabella, quindi eseguire il ciclo di tutti i campi di un record restituito dalla funzione [**MsiViewGetColumnInfo**](/windows/desktop/api/Msiquery/nf-msiquery-msiviewgetcolumninfo) con l' \_ opzione MSICOLINFO names.
+Nella tabella Columns vengono archiviate solo \_ le colonne permanenti. Per determinare se esiste una colonna temporanea, è necessario creare una vista usando un'istruzione SELECT sulla tabella, quindi eseguire un ciclo in tutti i campi di un record restituito dalla funzione \* [**MsiViewGetColumnInfo**](/windows/desktop/api/Msiquery/nf-msiquery-msiviewgetcolumninfo) con l'opzione MSICOLINFO \_ NAMES.
 
  
 

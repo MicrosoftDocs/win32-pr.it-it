@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore Int64ColumnValue'
+description: Altre informazioni sul costruttore Int64ColumnValue
 title: Costruttore Int64ColumnValue
 TOCTitle: 'Int64ColumnValue constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Int64ColumnValue.#ctor
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6ff8c8f3ff1a766aae8b267c3e5c040ae9b89528
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44587d84e8cf3eab2038db990951e89b3bbc32aea81a3de50aafbce52681cd80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118767476"
 ---
 # <a name="int64columnvalue-constructor"></a>Costruttore Int64ColumnValue
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,6 +56,6 @@ public Int64ColumnValue()
 
 [Classe Int64ColumnValue](./int64columnvalue-class.md)
 
-[Membri di Int64ColumnValue](./int64columnvalue-members.md)
+[Membri Int64ColumnValue](./int64columnvalue-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

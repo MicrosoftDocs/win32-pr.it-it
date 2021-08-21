@@ -3,8 +3,8 @@ title: Interfaccia IWMDRMEventGenerator
 description: L'interfaccia IWMDRMEventGenerator è un'estensione dell'interfaccia IMFMediaEventGenerator che fornisce un metodo per annullare le operazioni asincrone.
 ms.assetid: 38d8db83-b8f0-4cc2-b426-cb0e46bde51d
 keywords:
-- Formato windows Media dell'interfaccia IWMDRMEventGenerator
-- Interfaccia IWMDRMEventGenerator windows Media Format , descritta
+- Formato multimediale windows dell'interfaccia IWMDRMEventGenerator
+- Interfaccia IWMDRMEventGenerator formato multimediale windows, descritto
 topic_type:
 - apiref
 api_name:
@@ -33,7 +33,7 @@ ms.locfileid: "118433680"
 
 ### <a name="methods"></a>Metodi
 
-Questi metodi sono disponibili nell'interfaccia **IWMDRMEventGenerator.**
+**L'interfaccia IWMDRMEventGenerator** dispone di questi metodi.
 
 
 

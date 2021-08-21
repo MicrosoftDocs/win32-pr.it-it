@@ -26,7 +26,7 @@ La [**struttura XMUSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-direct
 
 | Metodi                                                 | Descrizione                                                                                                             |
 |---------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [**operatore =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmushortn2-operator-assign)<br/> | Assegna i dati del componente vettoriale da un'istanza `XMUSHORTN2` di all'istanza corrente di `XMUSHORTN2` .<br/> |
+| [**operator =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmushortn2-operator-assign)<br/> | Assegna i dati del componente vettore da un'istanza `XMUSHORTN2` di all'istanza corrente di `XMUSHORTN2` .<br/> |
 
 
 

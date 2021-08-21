@@ -1,6 +1,6 @@
 ---
 title: Oggetto Cdrom
-description: L'oggetto Cdrom consente di accedere a un CD o DVD nell'unità.
+description: L'oggetto Cdrom consente di accedere a un CD o DVD nella relativa unità.
 ms.assetid: 9045b130-3e08-4880-a4e7-79b704c4c1f9
 keywords:
 - Oggetto Cdrom Windows Media Player
@@ -22,7 +22,7 @@ ms.locfileid: "118342644"
 ---
 # <a name="cdrom-object"></a>Oggetto Cdrom
 
-**L'oggetto Cdrom** consente di accedere a un CD o DVD nell'unità.
+**L'oggetto Cdrom** consente di accedere a un CD o DVD nella relativa unità.
 
 **L'oggetto Cdrom** supporta le proprietà seguenti.
 
@@ -31,7 +31,7 @@ ms.locfileid: "118342644"
 | Proprietà                                   | Descrizione                                                                                                                                             |
 |--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [driveSpecifier](cdrom-drivespecifier.md) | Recupera la lettera di unità CD o DVD.                                                                                                                   |
-| [Playlist](cdrom-playlist.md)             | Recupera un oggetto [Playlist](playlist-object.md) che rappresenta le tracce sul CD attualmente nell'unità CD o le voci del titolo di livello radice per il DVD. |
+| [Playlist](cdrom-playlist.md)             | Recupera un oggetto [Playlist](playlist-object.md) che rappresenta le tracce sul CD attualmente nell'unità CD o le voci del titolo a livello radice per DVD. |
 
 
 
@@ -43,19 +43,19 @@ ms.locfileid: "118342644"
 
 | Metodo                   | Descrizione                          |
 |--------------------------|--------------------------------------|
-| [Espellere](cdrom-eject.md) | Espulse il CD o DVD dall'unità. |
+| [Espellere](cdrom-eject.md) | Espulse il CD o il DVD dall'unità. |
 
 
 
  
 
-È possibile accedere all'oggetto **Cdrom** tramite il metodo seguente.
+L'accesso all'oggetto **Cdrom** avviene tramite il metodo seguente.
 
 
 
 | Oggetto                                        | Metodo                           |
 |-----------------------------------------------|----------------------------------|
-| [Raccolta CdromCollection](cdromcollection-object.md) | [item](cdromcollection-item.md) |
+| [CdromCollection](cdromcollection-object.md) | [item](cdromcollection-item.md) |
 
 
 

@@ -4,11 +4,11 @@ description: Creazione del controllo Windows Media Player a livello di codice
 ms.assetid: 9a4856ce-6a44-47fb-b863-59ce4deb0597
 keywords:
 - Windows Media Player,creazione di un ActiveX a livello di codice
-- Windows Media Player a oggetti, creazione di ActiveX controllo a livello di codice
+- Windows Media Player a oggetti, creazione di un ActiveX a livello di codice
 - modello a oggetti, creazione di ActiveX a livello di codice
-- Windows Media Player Mobile, creazione di ActiveX a livello di codice
+- Windows Media Player Dispositivi mobili, creazione di ActiveX a livello di codice
 - Windows Media Player ActiveX, creazione a livello di codice
-- Windows Media Player Controllo ActiveX mobile, creazione a livello di codice
+- Windows Media Player controllo ActiveX mobile, creazione a livello di codice
 - ActiveX, creazione a livello di codice
 - creazione di ActiveX a livello di codice
 ms.topic: article
@@ -22,18 +22,18 @@ ms.locfileid: "118340964"
 ---
 # <a name="creating-the-windows-media-player-control-programmatically"></a>Creazione del controllo Windows Media Player a livello di codice
 
-Quando si aggiunge Windows Media Player controllo a un form dalla casella degli strumenti, viene creato un oggetto della classe **AxWMPLib.AxWindowsMediaPlayer.** Questa classe wrapper offre al lettore tutte le funzionalità di un controllo ActiveX, incluso l'accesso alle proprietà dell'interfaccia utente, ad esempio **Location** e **Size.**
+Quando si aggiunge il Windows Media Player a un form dalla casella degli strumenti, viene creato un oggetto della classe **AxWMPLib.AxWindowsMediaPlayer.** Questa classe wrapper fornisce al lettore tutte le funzionalità di un controllo ActiveX, incluso l'accesso alle proprietà dell'interfaccia utente, ad esempio **Location** e **Size.**
 
-Se non sono necessarie le proprietà esposte da **AxWindowsMediaPlayer** o se l'applicazione non dispone di un'interfaccia utente grafica, è possibile creare un controllo Player a livello di codice. In questo caso, si crea un oggetto della **classe WMPLib.WindowsMediaPlayer.**
+Se non sono necessarie le proprietà esposte da **AxWindowsMediaPlayer** o se l'applicazione non ha un'interfaccia utente grafica, è possibile creare un controllo Player a livello di codice. In questo caso, si crea un oggetto della **classe WMPLib.WindowsMediaPlayer.**
 
 > [!Note]  
-> Poiché non viene eseguito il wrapping dell'oggetto **WindowsMediaPlayer** come controllo ActiveX, non ha proprietà ereditate da **System.Windows. Forms.Control**. Di conseguenza, la **proprietà Controls** non viene rinominata **in CtlControls**, come in **AxWindowsMediaPlayer**.
+> Poiché non viene eseguito il wrapping dell'oggetto **WindowsMediaPlayer** come controllo ActiveX, non ha proprietà ereditate da **System.Windows. Forms.Control**. Di conseguenza, la **proprietà Controls** non viene rinominata **in CtlControls,** come in **AxWindowsMediaPlayer.**
 
  
 
-Per creare il controllo Windows Media Player a livello di codice, è necessario innanzitutto aggiungere un riferimento a wmp.dll, disponibile nella cartella Windows \\ \\ system32. L'aggiunta di questo riferimento WMPLib.dll nella cartella del progetto e un riferimento a WMPLib viene visualizzato in Esplora soluzioni.
+Per creare il controllo Windows Media Player a livello di codice, è necessario innanzitutto aggiungere un riferimento a wmp.dll, disponibile nella \\ cartella Windows \\ system32. L'aggiunta di questo riferimento WMPLib.dll nella cartella del progetto e un riferimento a WMPLib viene visualizzato in Esplora soluzioni.
 
-Il codice di esempio seguente, parte di una classe Form1, illustra come creare un oggetto **Player** e riprodurre un file. Al termine della riproduzione o se il file non può essere riprodotto, il modulo viene chiuso.
+Il codice di esempio seguente, parte di una classe Form1, illustra come creare un oggetto **Player** e riprodurre un file. Al termine della riproduzione o se non è possibile riprodurre il file, il modulo viene chiuso.
 
 
 ```VB

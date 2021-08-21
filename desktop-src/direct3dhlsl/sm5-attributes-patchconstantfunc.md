@@ -1,6 +1,6 @@
 ---
 title: patchconstantfunc
-description: Definisce la funzione per il calcolo dei dati costanti della patch.
+description: Definisce la funzione per il calcolo dei dati costanti delle patch.
 ms.assetid: aee99055-7258-458f-8677-bb79e305dd79
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 455a10e8af567cf7c1adbf569700b00f769ef512
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 3d7c6b0e7820742356c00a47d928f5fe69a4b968b075f0f92c688216455532f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104046066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118790662"
 ---
 # <a name="patchconstantfunc"></a>patchconstantfunc
 
-Definisce la funzione per il calcolo dei dati costanti della patch.
+Definisce la funzione per il calcolo dei dati costanti delle patch.
 
 
 ```
@@ -29,33 +29,33 @@ patchconstantfunc("function_name")
 
 ## <a name="remarks"></a>Commenti
 
-*\_ nome funzione* è il nome di una funzione separata che restituisce i dati della costante di patch.
+*function \_ name* è il nome di una funzione separata che restituisce i dati della costante patch.
 
 Questo attributo è supportato nei tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        | x    |        |          |       |         |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Attributi del modello di shader 5](d3d11-graphics-reference-sm5-attributes.md)
+[Attributi del modello shader 5](d3d11-graphics-reference-sm5-attributes.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

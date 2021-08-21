@@ -4,12 +4,12 @@ ms.assetid: 209b3024-60cf-47e0-8738-cd7795e38c2a
 title: PageMediaSizeMediaSizeHeight
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 547077e7a63d91d6db43e8ebf6225a771bf237d8
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 60cd6b0630da5a05f29fbeeaefd6aa0f43d35622130201fbca6ba0602703da91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118732654"
 ---
 # <a name="pagemediasizemediasizeheight"></a>PageMediaSizeMediaSizeHeight
 

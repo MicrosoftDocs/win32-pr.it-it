@@ -1,5 +1,5 @@
 ---
-description: La classe SnmpExtendedNotification è la classe di base per qualsiasi classe mappata dalla macro del tipo di notifica a una classe CIM dal provider SNMP.
+description: La classe SnmpExtendedNotification è la classe di base per qualsiasi classe mappata dalla macro NOTIFICATION-TYPE a una classe CIM dal provider SNMP.
 ms.assetid: 207966c1-14cf-4a47-8176-0f58838cfa1e
 ms.tgt_platform: multiple
 title: Classe SnmpExtendedNotification
@@ -23,23 +23,23 @@ api_type:
 - Schema
 api_location:
 - Root\snmp\SMIR
-ms.openlocfilehash: e21fcc32976c42f41cd33a519e5fa6c684acdfc9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d8da8533e9ac5c86dfa3291092fb5165b94e2e393e507c55f15b64c1e30cd6a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118816541"
 ---
 # <a name="snmpextendednotification-class"></a>Classe SnmpExtendedNotification
 
-La classe **SnmpExtendedNotification** è la classe di base per qualsiasi classe mappata dalla macro del [tipo di notifica](notification-type-macro.md) a una classe CIM dal [provider SNMP](snmp-provider.md).
+La **classe SnmpExtendedNotification** è la classe di base per qualsiasi classe mappata dalla macro [NOTIFICATION-TYPE](notification-type-macro.md) a una classe CIM dal [provider SNMP.](snmp-provider.md)
 
 > [!Note]  
-> Per ulteriori informazioni sull'installazione del provider, vedere [configurazione dell'ambiente WMI SNMP](setting-up-the-wmi-snmp-environment.md).
+> Per altre informazioni sull'installazione del provider, vedere [Setting up the WMI SNMP Environment](setting-up-the-wmi-snmp-environment.md).
 
  
 
-La sintassi seguente è semplificata dal codice Managed Object Format (MOF) e include tutte le relative proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,33 +60,33 @@ class SnmpExtendedNotification : __ExtrinsicEvent
 
 ## <a name="members"></a>Members
 
-La classe **SnmpExtendedNotification** dispone di questi tipi di membri:
+La **classe SnmpExtendedNotification** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **SnmpExtendedNotification** dispone di queste proprietà.
+La **classe SnmpExtendedNotification** ha queste proprietà.
 
 <dl> <dt>
 
 **AgentAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indirizzo di rete dell'entità che ha creato la notifica. Si tratta dell'indirizzo effettivo del dispositivo. Quando l'entità di gestione USA SNMP su UDP, l'indirizzo di trasporto fa riferimento a un indirizzo IP. Quando l'entità di gestione utilizza SNMP su IPX, l'indirizzo di trasporto viene impostato su **null**. Questa proprietà è valida solo per SNMPv1.
+Indirizzo di rete dell'entità che ha creato la notifica. Questo è l'indirizzo effettivo del dispositivo. Quando l'entità di gestione usa SNMP su UDP, l'indirizzo di trasporto fa riferimento a un indirizzo IP. Quando l'entità di gestione usa SNMP su IPX, l'indirizzo di trasporto è impostato su **NULL.** Questa proprietà è valida solo per SNMPv1.
 
 </dd> <dt>
 
 **AgentTransport**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -99,20 +99,20 @@ Protocollo di trasporto utilizzato dall'entità mittente. Questa proprietà è v
 **AgentTransportAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indirizzo di rete dell'entità che ha inviato la notifica. Si tratta dell'indirizzo dell'ultima entità che ha inviato la notifica. Quando l'entità di gestione USA SNMP su UDP, l'indirizzo di trasporto fa riferimento a un indirizzo IP. Quando l'entità di gestione utilizza SNMP su IPX, l'indirizzo di trasporto fa riferimento a un indirizzo IPX. Questa proprietà è valida per SNMPv1 e SNMPv2C.
+Indirizzo di rete dell'entità che ha inviato la notifica. Si tratta dell'indirizzo dell'ultima entità che ha inoltrato la notifica. Quando l'entità di gestione usa SNMP su UDP, l'indirizzo di trasporto fa riferimento a un indirizzo IP. Quando l'entità di gestione usa SNMP su IPX, l'indirizzo di trasporto fa riferimento a un indirizzo IPX. Questa proprietà è valida per SNMPv1 e SNMPv2C.
 
 </dd> <dt>
 
 **AgentTransportProtocol**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -125,81 +125,81 @@ Protocollo di trasporto utilizzato dall'entità mittente.
 **Community**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome della community associato a un'istanza della PDU. Il nome della community autentica il creatore della PDU. Questa proprietà è valida sia per SNMPv1 che per SNMPv2C.
+Community nome associato a un'istanza della PDU. Il nome della community autentica l'origine della PDU. Questa proprietà è valida sia per SNMPv1 che per SNMPv2C.
 
 </dd> <dt>
 
 **Identificazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **\_ convenzione testuale** ("OBJECTIDENTIFIER"), **codifica** ("OBJECTIDENTIFIER"), **\_ sintassi degli oggetti** ("OBJECTIDENTIFIER"), **\_ identificatore di oggetto** ("1.3.6.1.6.3.1.1.4.1")
+Qualificatori: convenzione **testuale \_** ("OBJECTIDENTIFIER"), codifica ("OBJECTIDENTIFIER"), sintassi dell'oggetto ("OBJECTIDENTIFIER"), identificatore di oggetto ("1.3.6.1.6.3.1.1.4.1")  **\_** **\_**
 </dt> </dl>
 
-Identificazione autorevole della notifica. Esegue il mapping direttamente alla voce MIB SnmpTrapOID binding della variabile. Questa proprietà è valida solo per SNMPv2C.
+Identificazione autorevole della notifica. Mappe direttamente all'associazione di variabili SnmpTrapOID della voce MIB. Questa proprietà è valida solo per SNMPv2C.
 
 </dd> <dt>
 
-**descrittore di sicurezza \_**
+**DESCRITTORE \_ DI SICUREZZA**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrittore utilizzato dal provider di eventi per determinare gli utenti che possono ricevere l'evento. Questa proprietà viene ereditata dall' [**\_ \_ evento**](--event.md). Per ulteriori informazioni sulle costanti utilizzate per impostare questo descrittore di sicurezza, vedere la pagina relativa alle [costanti di sicurezza WMI](wmi-security-constants.md).
+Descrittore utilizzato dal provider di eventi per determinare quali utenti possono ricevere l'evento. Questa proprietà viene ereditata [**\_ \_ dall'evento**](--event.md). Per altre informazioni sulle costanti utilizzate per impostare questo descrittore di sicurezza, vedere [Costanti di sicurezza WMI.](wmi-security-constants.md)
 
 </dd> <dt>
 
-**ORA di \_ creazione**
+**ORA \_ DI CREAZIONE**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore univoco che indica l'ora in cui è stato generato l'evento. Si tratta di un valore a 64 bit che rappresenta il numero di intervalli di 100-nanosecondi dopo il 1 ° gennaio 1601. Le informazioni sono nel formato UTC (Coordinated Universal Time). Questa proprietà viene ereditata dall' [**\_ \_ evento**](--event.md).
+Valore univoco che indica l'ora in cui è stato generato l'evento. Si tratta di un valore a 64 bit che rappresenta il numero di intervalli di 100 nanosecondi dopo il 1° gennaio 1601. Le informazioni sono nel formato UTC (Coordinated Universal Times). Questa proprietà viene ereditata [**\_ \_ dall'evento**](--event.md).
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
-**TimeStamp**
+**Timestamp**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **\_ convenzione testuale** ("TimeTicks"), **codifica** ("TimeTicks"), **\_ sintassi degli oggetti** ("TimeTicks"), **\_ identificatore di oggetto** ("1.3.6.1.2.1.1.3")
+Qualificatori: **convenzione testuale \_** ("TimeTicks"),  codifica ("TimeTicks"), sintassi dell'oggetto ("TimeTicks"), identificatore di oggetto ("1.3.6.1.2.1.1.3") **\_** **\_**
 </dt> </dl>
 
-Tempo in centesimi di secondo dall'ultima reinizializzazione della parte relativa alla gestione della rete dell'agente. Viene eseguito il mapping alla variabile MIB sysUptime. 0, che è di tipo **INTEGER32**. Questa proprietà esegue il mapping al **timestamp** della proprietà della classe CIM, che è di tipo **UInt32**. Questa proprietà è valida solo per SNMPv2C.
+Tempo in centesimi di secondo dall'ultima inizializzazione della parte di gestione di rete dell'agente. Viene mappato alla variabile MIB sysUptime.0, che è di tipo **INTEGER32.** Questa proprietà esegue il mapping alla proprietà della classe CIM **TimeStamp**, che è di **tipo uint32**. Questa proprietà è valida solo per SNMPv2C.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Una macro del [tipo di notifica](notification-type-macro.md) che contiene riferimenti a una macro di [tipo oggetto](object-type-macro.md) denominata **timestamp** o **Identificazione** causa un conflitto di mapping. Se si verifica questo conflitto, le proprietà obbligatorie hanno la precedenza e i riferimenti in conflitto devono essere rinominati.
+Una macro [NOTIFICATION-TYPE](notification-type-macro.md) che contiene riferimenti a una macro [OBJECT-TYPE](object-type-macro.md) denominata **TimeStamp** o **Identification** causa un conflitto di mapping. Se si verifica questo conflitto, le proprietà obbligatorie hanno la precedenza e i riferimenti in conflitto devono essere rinominati.
 
-Una macro del [tipo di notifica](notification-type-macro.md) che contiene riferimenti a una macro di [tipo oggetto](object-type-macro.md) denominata **community** causa un conflitto di mapping. Se si verifica questo conflitto, le proprietà obbligatorie hanno la precedenza e i riferimenti in conflitto devono essere rinominati.
+Una macro [NOTIFICATION-TYPE](notification-type-macro.md) che contiene riferimenti a una macro [OBJECT-TYPE](object-type-macro.md) denominata **Community** causa un conflitto di mapping. Se si verifica questo conflitto, le proprietà obbligatorie hanno la precedenza e i riferimenti in conflitto devono essere rinominati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -209,8 +209,8 @@ Una macro del [tipo di notifica](notification-type-macro.md) che contiene riferi
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Spazio dei nomi<br/>                | \\Archivio SMIR SNMP \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>SnmpSmiR. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Root \\ snmp \\ SMIR<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>SnmpSmiR.mof</dt> </dl> |
 
 
 
@@ -221,7 +221,7 @@ Una macro del [tipo di notifica](notification-type-macro.md) che contiene riferi
 [**\_\_ExtrinsicEvent**](--extrinsicevent.md)
 </dt> <dt>
 
-[Macro del tipo di notifica](notification-type-macro.md)
+[NOTIFICATION-TYPE Macro](notification-type-macro.md)
 </dt> </dl>
 
  

@@ -33,7 +33,7 @@ g \_ wszWMEncodingTime
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo usa un valore FILETIME, ovvero un valore a 64 bit che rappresenta il numero di unità di tempo di 100 nanosecondi trascorse dal 1° gennaio 1601. Per altre informazioni su FILETIME, vedere la sezione Windows System Information di Platform SDK.
+Questo attributo usa un valore FILETIME, ovvero un valore a 64 bit che rappresenta il numero di unità di tempo di 100 nanosecondi trascorse dal 1° gennaio 1601. Per altre informazioni su FILETIME, vedere la Windows System Information di Platform SDK.
 
 Non si tratta di un attributo codificato. È necessario impostarlo manualmente se si vuole includerlo nei file.
 

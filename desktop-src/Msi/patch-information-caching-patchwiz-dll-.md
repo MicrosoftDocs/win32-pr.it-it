@@ -1,23 +1,23 @@
 ---
-description: La generazione di una nuova patch potrebbe richiedere un tempo significativo.
+description: La generazione di una nuova patch può richiedere tempo significativo.
 ms.assetid: 8be9a83a-8c36-43f5-8dda-05fc2f3ce0d2
-title: Caching delle informazioni sulla patch (Patchwiz.dll)
+title: Patch Information Caching (Patchwiz.dll)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7000efceea62e9eef122a34f7700622e1e6e2e60
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 71513ea1a9418506bbf9025f66a1689c12e9a53f8e6f2e713ddeb3b3d55de580
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118942622"
 ---
-# <a name="patch-information-caching-patchwizdll"></a>Caching delle informazioni sulla patch (Patchwiz.dll)
+# <a name="patch-information-caching-patchwizdll"></a>Patch Information Caching (Patchwiz.dll)
 
-La generazione di una nuova patch potrebbe richiedere un tempo significativo. Dopo aver generato una patch usando [Patchwiz.dll](patchwiz-dll.md), potrebbe essere necessario modificare nuovamente l'immagine di aggiornamento e generare un'altra patch. La memorizzazione nella cache delle informazioni sulla patch può ridurre il tempo necessario per generare patch successive riutilizzando le patch esistenti. Ad esempio, è possibile ridurre il tempo necessario per creare Service Pack usando le patch binarie generate dalle patch precedenti. Patchwiz.dll possibile utilizzare \_ \_ la directory della cache delle patch per trovare una patch binaria esistente e aggiungerla al cabinet del Service Pack senza dover ricreare la patch binaria.
+La generazione di una nuova patch può richiedere tempo significativo. Dopo aver generato una patch usando [Patchwiz.dll](patchwiz-dll.md), potrebbe essere necessario modificare nuovamente l'immagine di aggiornamento e generare un'altra patch. La memorizzazione nella cache delle informazioni sulle patch può ridurre il tempo necessario per generare patch successive riutilizzando le patch esistenti. Ad esempio, il tempo necessario per creare i Service Pack può essere ridotto usando le patch binarie generate dalle patch precedenti. Patchwiz.dll possibile usare PATCH CACHE DIR per trovare una patch binaria esistente e aggiungerla all'archivio del Service Pack senza dover creare \_ \_ nuovamente la patch binaria.
 
-La memorizzazione nella cache delle informazioni sulla patch richiede l'uso di [Patchwiz.dll](patchwiz-dll.md). Per attivare la memorizzazione nella cache delle patch, impostare le \_ Proprietà patch cache \_ Enabled e patch \_ cache \_ dir nella [tabella Properties (Patchwiz.dll)](properties-table-patchwiz-dll-.md) del file delle proprietà della patch Creation (file con estensione PCP). Patchwiz archivia tutte le informazioni sulla creazione della patch nella cartella identificata \_ dalla \_ Proprietà dir della patch cache e crea questa cartella, se necessario. Al successivo tentativo di creazione di una patch, Patchwiz controlla questa cartella per verificare se i file da confrontare corrispondono ai file nella cache. Se i file corrispondono, Patchwiz usa le informazioni memorizzate nella cache anziché rigenerare la patch binaria per il file. Se i file non corrispondono o se le informazioni non sono presenti nella cache, Patchwiz genera la patch per il file.
+La memorizzazione nella cache delle informazioni sulle patch richiede [ l'Patchwiz.dll](patchwiz-dll.md). Per attivare la memorizzazione nella cache delle patch, impostare le proprietà PATCH CACHE ENABLED e PATCH CACHE DIR nella tabella delle proprietà (Patchwiz.dll) del file delle proprietà di creazione della \_ \_ patch \_ \_ (file con estensione pcp). [](properties-table-patchwiz-dll-.md) Patchwiz archivia tutte le informazioni di creazione della patch nella cartella identificata dalla proprietà PATCH CACHE DIR e \_ crea questa \_ cartella, se necessario. Al successivo tentativo di creare una patch, Patchwiz controlla questa cartella per verificare se i file da confrontare corrispondono ai file nella cache. Se i file corrispondono, Patchwiz usa le informazioni memorizzate nella cache anziché rigenerare la patch binaria per il file. Se i file non corrispondono o se le informazioni non sono presenti nella cache, Patchwiz genera la patch per il file.
 
-Per utilizzare la memorizzazione nella cache delle informazioni sulla patch, è necessario conservare la cartella specificata da PATCH \_ cache \_ dir dopo la creazione di un file con estensione msp. Se la cartella viene eliminata, PatchWiz deve rigenerare le patch binarie per i successivi file con estensione msp. Per ulteriori informazioni sulla conservazione delle informazioni nelle aree selezionate di un file di destinazione, vedere applicazione [di patch alle aree selezionate di un file](patching-selected-regions-of-a-file.md).
+Per usare la memorizzazione nella cache delle informazioni sulle patch, la cartella specificata da PATCH CACHE DIR deve essere mantenuta \_ dopo la creazione di un file con estensione \_ msp. Se la cartella viene eliminata, PatchWiz deve generare nuovamente patch binarie per i file msp successivi. Per altre informazioni sul mantenimento delle informazioni nelle aree selezionate di un file di destinazione, vedere Applicazione di patch alle [aree selezionate di un file](patching-selected-regions-of-a-file.md).
 
  
 

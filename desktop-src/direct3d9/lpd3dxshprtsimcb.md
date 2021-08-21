@@ -4,12 +4,12 @@ ms.assetid: 1d7e2149-d2ca-47da-be1f-8273fd9bd30a
 title: LPD3DXSHPRTSIMCB
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5a7c4911bf2a7b7fa2aa83422a206644f6eb747
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: c81e510808dd2e14af1de0d9618591d8ea3b8587bb4015e72a3e01fa33157b5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110342806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118799334"
 ---
 # <a name="lpd3dxshprtsimcb"></a>LPD3DXSHPRTSIMCB
 
@@ -29,17 +29,17 @@ typedef HRESULT (WINAPI *LPD3DXSHPRTSIMCB)(
 
 ## <a name="parameters"></a>Parametri
 
-fPercentDone : numero a virgola mobile compreso tra 0 e 1,0 che rappresenta la percentuale di calcoli completati (tra 0 e 100%).
+fPercentDone: numero a virgola mobile compreso tra 0 e 1,0 che rappresenta la percentuale di calcoli completati (tra 0 e 100%).
 
-lpUserContext: puntatore a un valore definito dall'utente passato alla funzione di callback. in genere usato da un'applicazione per passare un puntatore a una struttura di dati che fornisce informazioni sul contesto per la funzione di callback.
+lpUserContext: puntatore a un valore definito dall'utente passato alla funzione di callback; utilizzato in genere da un'applicazione per passare un puntatore a una struttura di dati che fornisce informazioni di contesto per la funzione di callback.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questa funzione deve essere implementata per restituire S \_ OK per continuare a eseguire il simulatore. Qualsiasi altro valore arresterà il simulatore.
+Questa funzione deve essere implementata per restituire S \_ OK per continuare a eseguire il simulatore. Qualsiasi altro valore interromperà il simulatore.
 
 ## <a name="remarks"></a>Commenti
 
-Assicurarsi di specificare la convenzione [**di chiamata dei tipi di dati Windows**](../winprog/windows-data-types.md) quando si dichiara la funzione di callback. In caso contrario, possono verificarsi overflow dello stack.
+Assicurarsi di specificare la convenzione [**di chiamata Windows tipi di**](../winprog/windows-data-types.md) dati quando si dichiara la funzione di callback. In caso contrario, possono verificarsi overflow dello stack.
 
 
 

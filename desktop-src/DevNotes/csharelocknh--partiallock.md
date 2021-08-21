@@ -1,7 +1,7 @@
 ---
-description: Impedisce a più di un thread di completare l'acquisizione di un blocco.
+description: Impedisce a più thread di completare l'acquisizione di un blocco.
 ms.assetid: 9cdcc6d5-b2f1-4c88-b859-1c15a80e70a9
-title: CShareLockNH::P metodo artialLock
+title: Metodo CShareLockNH::P artialLock
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Rwnh.dll
-ms.openlocfilehash: 0b7b7d55c9fd8d979aa14f12939df922e7a89099
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7eae3f0eb57d534ea352b7d1c1e0834ef54dfb42460dfe7b2edc4f6fc07fa013
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162345"
 ---
-# <a name="csharelocknhpartiallock-method"></a>CShareLockNH::P metodo artialLock
+# <a name="csharelocknhpartiallock-method"></a>Metodo CShareLockNH::P artialLock
 
-Impedisce a più di un thread di completare l'acquisizione di un blocco.
+Impedisce a più thread di completare l'acquisizione di un blocco.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,9 +43,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Mentre **PartialLock** è attivo, gli altri thread che chiamano [**ShareLock**](csharelocknh--sharelock.md) possono immettere il blocco.
+Mentre **PartialLock** è attivo, altri thread che chiamano [**ShareLock**](csharelocknh--sharelock.md) possono accedere al blocco.
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

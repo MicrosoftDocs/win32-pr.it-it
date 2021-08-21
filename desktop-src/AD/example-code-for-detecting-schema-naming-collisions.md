@@ -4,23 +4,23 @@ description: Questo argomento include un esempio di codice che rileva i conflitt
 ms.assetid: e56cefcf-ea34-4217-9aa7-2f0d4a4d06a4
 ms.tgt_platform: multiple
 keywords:
-- Codice di esempio per il rilevamento di conflitti di denominazione dello schema AD
+- Codice di esempio per il rilevamento di conflitti di denominazione dello schema ad Active Directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 861b7a93a53c47a234b63b5f52887a22557a2d1b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7203cb9c1d03b02c77a57dde6ebfdda004f21792b7fab94bc37ccfe07e6b0eae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103707654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118694007"
 ---
 # <a name="example-code-for-detecting-schema-naming-collisions"></a>Codice di esempio per il rilevamento di conflitti di denominazione dello schema
 
 Questo argomento include un esempio di codice che rileva i conflitti di denominazione dello schema.
 
-Nell'esempio di codice C/C++ riportato di seguito viene eseguita una query sullo schema per gli attributi di denominazione delle chiavi su un oggetto **classSchema** o **attributeSchema** .
+L'esempio di codice C/C++ seguente esegue una query sullo schema per gli attributi di denominazione delle chiavi in un **oggetto classSchema** **o attributeSchema.**
 
-Restituisce **true** se vengono trovati attributi o classi in conflitto. Restituisce **false** se l'attributo o la classe con il valore **CN**, **ldapDisplayName**, **OID**, **schemaIDGUID** o **LinkId** specificato non è in conflitto con lo schema e pertanto è sicuro da aggiungere allo schema.
+Restituisce **TRUE se** vengono trovati attributi o classi in conflitto. Restituisce **FALSE** se l'attributo o la classe con il cn **,** **lDAPDisplayName**, **OID,** **schemaIDGUID** o **linkID** specificati non è in conflitto con lo schema e, pertanto, è sicuro da aggiungere allo schema.
 
 
 ```C++
@@ -177,9 +177,9 @@ HRESULT FindCollidingAttributesOrClasses(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Playlist. IsValid (metodo)
-description: Il metodo IsValid recupera un valore che indica se l'oggetto playlist fornito è identico a quello corrente.
+title: Metodo Playlist.isIdentical
+description: Il metodo isIdentical recupera un valore che indica se l'oggetto Playlist fornito è identico a quello corrente.
 ms.assetid: 8b18a44a-a394-46bf-91d0-d6ffd503881b
 keywords:
-- Metodo di Media Player di Windows identico
-- Metodo identico Media Player Windows, classe playlist
-- Classe playlist Windows Media Player, metodo identico
+- Metodo isIdentical Windows Media Player
+- Metodo isIdentical Windows Media Player , classe Playlist
+- Classe playlist Windows Media Player metodo isIdentical
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f800beb49da8ce6456d25c4ff1db6bd4bf536ed0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 76ad745b54c3361cebcb54be384b83afed7d229d023e29b85856e4aef3a26474
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118834546"
 ---
-# <a name="playlistisidentical-method"></a>Playlist. IsValid (metodo)
+# <a name="playlistisidentical-method"></a>Metodo Playlist.isIdentical
 
-Il **Metodo IsValid** recupera un valore che indica se l'oggetto **playlist** fornito è identico a quello corrente.
+Il **metodo isIdentical** recupera un valore che indica se l'oggetto **Playlist** fornito è identico a quello corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ bRetVal = Playlist.isIdentical(
 
 <dl> <dt>
 
-*playlist* \[ in\]
+*playlist* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **playlist** da confrontare con quello corrente.
+**Oggetto playlist** da confrontare con quello corrente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un **valore booleano**.
+Questo metodo restituisce un valore **booleano**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,7 +59,7 @@ Questo metodo restituisce un **valore booleano**.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -68,7 +68,7 @@ Questo metodo restituisce un **valore booleano**.
 
 <dl> <dt>
 
-[**Oggetto playlist**](playlist-object.md)
+[**Oggetto Playlist**](playlist-object.md)
 </dt> </dl>
 
  

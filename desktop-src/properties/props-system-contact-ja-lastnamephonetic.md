@@ -1,17 +1,17 @@
 ---
 description: Pronuncia del cognome.
 ms.assetid: 4aed9a52-164a-4c4b-aa52-b55d0eb1d92e
-title: System. Contact. JA. LastNamePhonetic
+title: System.Contact.JA.LastNamePhonetic
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc465ed32d5900f9d1dfb76555ca9d0323bcf048
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a2d6732627d3554f488b286f26f701472089bc34d7166acefd80b2a14fb4a7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118729431"
 ---
-# <a name="systemcontactjalastnamephonetic"></a>System. Contact. JA. LastNamePhonetic
+# <a name="systemcontactjalastnamephonetic"></a>System.Contact.JA.LastNamePhonetic
 
 Pronuncia del cognome.
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

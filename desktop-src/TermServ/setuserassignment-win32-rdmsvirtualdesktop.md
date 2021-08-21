@@ -1,12 +1,12 @@
 ---
-title: Metodo SetUserAssignment della classe Win32_RDMSVirtualDesktop
+title: Metodo SetUserAssignment della Win32_RDMSVirtualDesktop classe
 description: Assegna un desktop virtuale a un utente.
 ms.assetid: 6a96ccb7-5d3d-4164-a0a3-286a700b414c
 ms.tgt_platform: multiple
 keywords:
 - Metodo SetUserAssignment Servizi Desktop remoto
 - Metodo SetUserAssignment Servizi Desktop remoto , Win32_RDMSVirtualDesktop classe
-- Win32_RDMSVirtualDesktop classe Servizi Desktop remoto metodo SetUserAssignment
+- Win32_RDMSVirtualDesktop classe Servizi Desktop remoto, metodo SetUserAssignment
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118349412"
 ---
-# <a name="setuserassignment-method-of-the-win32_rdmsvirtualdesktop-class"></a>Metodo SetUserAssignment della classe \_ RDMSVirtualDesktop Win32
+# <a name="setuserassignment-method-of-the-win32_rdmsvirtualdesktop-class"></a>Metodo SetUserAssignment della classe \_ WIN32 RDMSVirtualDesktop
 
 Assegna un desktop virtuale a un utente.
 
@@ -60,7 +60,7 @@ Nome di dominio dell'utente.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI.
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,7 +70,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                |
+| Spazio dei nomi<br/>                | Root \\ CIMv2 \\ rdms<br/>                                                                |
 | MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 

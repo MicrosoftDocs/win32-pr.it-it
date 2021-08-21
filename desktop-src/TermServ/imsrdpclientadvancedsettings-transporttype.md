@@ -28,7 +28,7 @@ ms.locfileid: "118352976"
 ---
 # <a name="imsrdpclientadvancedsettingstransporttype-property"></a>Proprietà IMsRdpClientAdvancedSettings::TransportType
 
-Specifica il tipo di trasporto utilizzato dal client. Questa proprietà non viene usata dal controllo Desktop remoto ActiveX.
+Specifica il tipo di trasporto utilizzato dal client. Questa proprietà non viene usata dal controllo Desktop remoto ActiveX controllo .
 
 Si tratta di una proprietà di lettura/scrittura.
 

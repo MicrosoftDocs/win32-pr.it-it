@@ -1,7 +1,7 @@
 ---
 description: Apre il database shim specificato.
 ms.assetid: 148181d7-a20a-467c-984b-e32013960783
-title: SdbOpenDatabase (funzione)
+title: Funzione SdbOpenDatabase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: ae0bca035f203593c43bb36e70119fbaf3024059
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: df0081d7373bf67d3df1723be7d5beb272ef7ee4c77c54da8a6985dfe250d7c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103747855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118161194"
 ---
-# <a name="sdbopendatabase-function"></a>SdbOpenDatabase (funzione)
+# <a name="sdbopendatabase-function"></a>Funzione SdbOpenDatabase
 
 Apre il database shim specificato.
 
@@ -40,23 +40,23 @@ PDB WINAPI SdbOpenDatabase(
 
 <dl> <dt>
 
-*pwszPath* \[ in\]
+*pwszPath* \[ Pollici\]
 </dt> <dd>
 
-Percorso del database. Questo parametro non può essere **null**.
+Percorso del database. Questo parametro non può essere **NULL.**
 
 </dd> <dt>
 
-*etype* \[ in\]
+*eType* \[ Pollici\]
 </dt> <dd>
 
-Tipo di percorso. Per un elenco di valori, vedere [**\_ tipo di percorso**](path-type.md) .
+Tipo di percorso. Per un elenco di valori, vedere PATH [**\_ TYPE.**](path-type.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce un handle per il database shim.
+La funzione restituisce un handle al database shim.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,8 +64,8 @@ La funzione restituisce un handle per il database shim.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

@@ -4,17 +4,17 @@ ms.assetid: 6e180c12-8cbe-4013-8bb4-3ac5bb9c65f1
 title: Funzioni matematiche (grafica Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85b47aec382f8b21d8769722afab51cb69a7452e
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: cd29c5ef304b1824bd2583f4058c7b5a6428fba4054305e2adc4a413429d2553
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118809749"
 ---
 # <a name="math-functions-direct3d-10-graphics"></a>Funzioni matematiche (grafica Direct3D 10)
 
 > [!Note]  
-> Le funzioni matematiche della libreria di utilità D3DX sono deprecate per Windows 8. In alternativa, è [consigliabile usare DirectXMath.](../dxmath/directxmath-portal.md)
+> Le funzioni matematiche della libreria di utilità D3DX sono deprecate per Windows 8. È consigliabile usare [DirectXMath.](../dxmath/directxmath-portal.md)
 
  
 
@@ -116,11 +116,11 @@ La libreria matematica fornita dalla libreria di utilità D3DX fornisce funzioni
 -   [**D3DXVec4Transform**](d3d10-d3dxvec4transform.md)
 -   [**D3DXVec4TransformArray**](d3d10-d3dxvec4transformarray.md)
 
-## <a name="resolving-link-errors-with-d3dx-math-functions"></a>Risoluzione degli errori di collegamento con le funzioni matematiche D3DX
+## <a name="resolving-link-errors-with-d3dx-math-functions"></a>Risoluzione degli errori di collegamento con funzioni matematiche D3DX
 
-Le funzioni matematiche D3DX vengono implementate in modo identico in D3DX10 (D3DX10math.h) e D3DX9 (D3DX9math.h). Ciò può causare errori di collegamento se un progetto implementa sia codice DirectX 9 che DirectX 10 e tenta di collegare una funzione da un'intestazione alla libreria opposta.
+Le funzioni matematiche D3DX vengono implementate in modo identico in D3DX10 (D3DX10math.h) e D3DX9 (D3DX9math.h). Ciò può causare errori di collegamento se un progetto implementa sia il codice DirectX 9 che DirectX 10 e tenta di collegare una funzione da un'intestazione alla libreria opposta.
 
-Per eliminare il problema dell'inclusione di entrambe le intestazioni, D3DX10math.h include la definizione \# seguente:
+Per eliminare il problema di inclusione di entrambe le intestazioni, D3DX10math.h include la definizione \# seguente:
 
 
 ```
@@ -130,7 +130,7 @@ Per eliminare il problema dell'inclusione di entrambe le intestazioni, D3DX10mat
 
 
 
-Per eliminare possibili errori di collegamento, gli esempi di DX SDK si collegano prima alle librerie D3DX9 (D3DX9d.lib e D3DX9.lib) e quindi alle librerie D3DX10 (D3DX10d.lib e D3DX10.lib). Queste impostazioni sono disponibili in Progetto/Proprietà se si usa Visual Studio.
+Per eliminare possibili errori di collegamento, gli esempi di DX SDK collegano prima alle librerie D3DX9 (D3DX9d.lib e D3DX9.lib) e quindi alle librerie D3DX10 (D3DX10d.lib e D3DX10.lib). Queste impostazioni sono in Project/Proprietà se si usa Visual Studio.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

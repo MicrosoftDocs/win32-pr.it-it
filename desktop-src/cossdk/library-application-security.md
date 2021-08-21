@@ -1,34 +1,34 @@
 ---
-description: Poiché un'applicazione libreria COM+ è ospitata da un altro processo, che può avere le proprie impostazioni di sicurezza, la sicurezza per le applicazioni di libreria richiede una particolare attenzione.
+description: Poiché un'applicazione di libreria COM+ è ospitata da un altro processo, che può avere impostazioni di sicurezza specifiche, la sicurezza per le applicazioni di libreria richiede particolare attenzione.
 ms.assetid: a966020c-a0bd-467c-b6d3-e09267cf5574
-title: Sicurezza delle applicazioni di libreria
+title: Sicurezza delle applicazioni della libreria
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d2885173f3798d33ed26a5b447fde4429b9bf96
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4f9fa2d03f21707af42fa108cb9c4ecbce6d2a352ea03714961a0eef4f028119
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104523418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118813520"
 ---
-# <a name="library-application-security"></a>Sicurezza delle applicazioni di libreria
+# <a name="library-application-security"></a>Sicurezza delle applicazioni della libreria
 
-Poiché un'applicazione libreria COM+ è ospitata da un altro processo, che può avere le proprie impostazioni di sicurezza, la sicurezza per le applicazioni di libreria richiede una particolare attenzione.
+Poiché un'applicazione di libreria COM+ è ospitata da un altro processo, che può avere impostazioni di sicurezza specifiche, la sicurezza per le applicazioni di libreria richiede particolare attenzione.
 
-I vincoli seguenti si applicano alla sicurezza dell'applicazione della libreria:
+Alla sicurezza delle applicazioni della libreria si applicano i vincoli seguenti:
 
--   Le applicazioni di libreria vengono eseguite con il token di sicurezza del processo client anziché con la propria identità utente. Hanno solo il privilegio del client.
--   Le applicazioni di libreria non controllano la sicurezza a livello di processo. Nessun utente nei ruoli verrà aggiunto al descrittore di sicurezza per il processo. L'unico modo per eseguire controlli di accesso a un'applicazione libreria consiste nell'usare la sicurezza a livello di componente. Vedere i [limiti di sicurezza](security-boundaries.md).
--   Le applicazioni di libreria possono essere configurate per partecipare o non partecipare all'autenticazione del processo host, abilitando o disabilitando l'autenticazione. Vedere [Abilitazione dell'autenticazione per un'applicazione di libreria](enabling-authentication-for-a-library-application.md).
+-   Le applicazioni di libreria vengono eseguite con il token di sicurezza del processo client anziché con la propria identità utente. Hanno solo la quantità di privilegi del client.
+-   Le applicazioni di libreria non controllano la sicurezza a livello di processo. Nessun utente nei ruoli verrà aggiunto al descrittore di sicurezza per il processo. L'unico modo per un'applicazione di libreria di eseguire i propri controlli di accesso è usare la sicurezza a livello di componente. Vedere [Limiti di sicurezza.](security-boundaries.md)
+-   Le applicazioni di libreria possono essere configurate per partecipare o meno all'autenticazione del processo host abilitando o disabilitando l'autenticazione. Vedere [Abilitazione dell'autenticazione per un'applicazione di libreria.](enabling-authentication-for-a-library-application.md)
 -   Le applicazioni di libreria non possono impostare un livello di rappresentazione. usano quello del processo host.
 
-## <a name="using-library-applications-to-limit-application-privilege"></a>Uso delle applicazioni di libreria per limitare i privilegi dell'applicazione
+## <a name="using-library-applications-to-limit-application-privilege"></a>Uso di applicazioni di libreria per limitare i privilegi dell'applicazione
 
-In alcuni casi, può essere necessario configurare un'applicazione in modo specifico come applicazione di libreria in modo che venga eseguita con l'identità del processo di hosting. Questa operazione limita fondamentalmente l'applicazione in modo che possa accedere solo alle risorse accessibili dal client, ovvero dal processo host. I thread sui quali vengono eseguiti i componenti dell'applicazione della libreria utilizzeranno il token di processo per impostazione predefinita e, pertanto, quando effettuano chiamate all'esterno dell'applicazione o accedono alle risorse, ad esempio i file sorvegliati con un descrittore di sicurezza, verranno visualizzati come client. Per le applicazioni che eseguono operazioni riservate, questo può essere un modo semplice per controllare l'ambito delle proprie azioni.
+In alcuni casi, è possibile configurare un'applicazione in modo specifico come applicazione di libreria in modo che venga eseguita con l'identità del processo di hosting. Questa operazione limita fondamentalmente l'applicazione in modo che possa accedere solo alle risorse a cui il client, il processo host, può accedere. I thread in cui vengono eseguiti i componenti dell'applicazione della libreria useranno il token di processo per impostazione predefinita e pertanto, quando effettuano chiamate all'esterno dell'applicazione o accedono a risorse quali file sorvegliati con un descrittore di sicurezza, verranno visualizzati come client. Per le applicazioni che eseguono operazioni sensibili, questo può essere un modo semplice per controllare l'ambito delle azioni.
 
 ## <a name="effectively-securing-library-applications"></a>Protezione efficace delle applicazioni di libreria
 
-Per la configurazione della sicurezza basata sui ruoli e dell'autenticazione per le applicazioni di libreria è necessario tenere presenti alcune considerazioni speciali, in modo che vengano eseguite come previsto. Per informazioni dettagliate, vedere [configurazione della protezione per le applicazioni di libreria](configuring-security-for-library-applications.md).
+La configurazione della sicurezza basata sui ruoli e dell'autenticazione per le applicazioni di libreria in modo che funzionino come previsto, è necessario tenere presenti alcune considerazioni speciali. Per informazioni dettagliate, vedere [Configuring Security for Library Applications.](configuring-security-for-library-applications.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -37,13 +37,13 @@ Per la configurazione della sicurezza basata sui ruoli e dell'autenticazione per
 [Autenticazione client](client-authentication.md)
 </dt> <dt>
 
-[Rappresentazione e delega client](client-impersonation-and-delegation.md)
+[Rappresentazione e delega del client](client-impersonation-and-delegation.md)
 </dt> <dt>
 
-[Sicurezza delle applicazioni a più livelli](multi-tier-application-security.md)
+[Sicurezza delle applicazioni multilivello](multi-tier-application-security.md)
 </dt> <dt>
 
-[Sicurezza del componente a livello di codice](programmatic-component-security.md)
+[Sicurezza dei componenti a livello di codice](programmatic-component-security.md)
 </dt> <dt>
 
 [Amministrazione della sicurezza basata sui ruoli](role-based-security-administration.md)

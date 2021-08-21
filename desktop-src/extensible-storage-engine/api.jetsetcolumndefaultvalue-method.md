@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetSetColumnDefaultValue'
-title: API. JetSetColumnDefaultValue, metodo
+description: Altre informazioni sul metodo Api.JetSetColumnDefaultValue
+title: Metodo Api.JetSetColumnDefaultValue
 TOCTitle: 'JetSetColumnDefaultValue method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetSetColumnDefaultValue(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_DBID,System.String,System.String,System.Byte[],System.Int32,Microsoft.Isam.Esent.Interop.SetColumnDefaultValueGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetsetcolumndefaultvalue(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 24fdb3a885e7aa558e1b3db3c4014fc65a28fcde
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 643e056acc99aba255b1c94b2d72337ccaf9f7668caf9c937f08dce7f9214ead
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118084950"
 ---
-# <a name="apijetsetcolumndefaultvalue-method"></a>API. JetSetColumnDefaultValue, metodo
+# <a name="apijetsetcolumndefaultvalue-method"></a>Metodo Api.JetSetColumnDefaultValue
 
 Modifica il valore predefinito di una colonna esistente.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -78,49 +78,49 @@ public static void JetSetColumnDefaultValue(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione da utilizzare.
+    Sessione da usare.
 
 <!-- end list -->
 
   - dbid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_DBID](./jet-dbid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_DBID](./jet-dbid-structure.md)  
     
     Database contenente la colonna.
 
 <!-- end list -->
 
   - tableName  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Nome della tabella contenente la colonna.
 
 <!-- end list -->
 
   - columnName  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Nome della colonna.
 
 <!-- end list -->
 
   - data  
-    Tipo \[\]  
+    digitare: \[\]  
     
     Nuovo valore predefinito.
 
 <!-- end list -->
 
   - dataSize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Dimensioni del nuovo valore predefinito.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. SetColumnDefaultValueGrbit](./setcolumndefaultvaluegrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.SetColumnDefaultValueGrbit](./setcolumndefaultvaluegrbit-enumeration.md)  
     
     Opzioni del valore predefinito della colonna.
 
@@ -130,6 +130,6 @@ public static void JetSetColumnDefaultValue(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

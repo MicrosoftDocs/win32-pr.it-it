@@ -1,10 +1,10 @@
 ---
-title: Enumerazione BG_JOB_PRIORITY (Deliveryoptimization. h)
-description: L'enumerazione BG_JOB_PRIORITY definisce i valori costanti che specificano il livello di priorità di un processo.
+title: BG_JOB_PRIORITY enumerazione (Deliveryoptimization.h)
+description: L BG_JOB_PRIORITY enumere dei criteri definisce i valori costanti che specificano il livello di priorità di un processo.
 ms.assetid: AF1F1F6D-473A-49E5-B24D-644A70DF304C
 keywords:
-- Enumerazione BG_JOB_PRIORITY
-- Enumerazione BG_JOB_PRIORITY
+- BG_JOB_PRIORITY enumerazione
+- BG_JOB_PRIORITY enumerazione
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 45b1f0f3029cc6157f2f100b3324165cfac1b03b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ddeb3ea128f173d53c71467d4098c1b777beea48f7b1304922f7468d55fc3b89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118810951"
 ---
-# <a name="bg_job_priority-enumeration"></a>Enumerazione BG_JOB_PRIORITY
+# <a name="bg_job_priority-enumeration"></a>BG_JOB_PRIORITY enumerazione
 
-L'enumerazione **BG_JOB_PRIORITY** definisce i valori costanti che specificano il livello di priorità di un processo.
+L BG_JOB_PRIORITY enumere dei criteri definisce i valori costanti che specificano il livello di priorità di un processo. 
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,28 +48,28 @@ typedef enum  {
 <span id="BG_JOB_PRIORITY_FOREGROUND"></span><span id="bg_job_priority_foreground"></span>**BG_JOB_PRIORITY_FOREGROUND**
 </dt> <dd>
 
-Trasferisce il processo in primo piano. I trasferimenti in primo piano competono per la larghezza di banda di rete con altre applicazioni, che possono ostacolare l'esperienza di rete dell'utente. Questo è il livello di priorità più alto.
+Trasferisce il processo in primo piano. I trasferimenti in primo piano si concorreranno per la larghezza di banda di rete con altre applicazioni, che possono compromettere l'esperienza di rete dell'utente. Si tratta del livello di priorità più alto.
 
 </dd> <dt>
 
 <span id="BG_JOB_PRIORITY_HIGH"></span><span id="bg_job_priority_high"></span>**BG_JOB_PRIORITY_HIGH**
 </dt> <dd>
 
-Trasferisce il processo in background. I trasferimenti in background utilizzano una piccola percentuale di larghezza di banda di rete.
+Trasferisce il processo in background. I trasferimenti in background usano una piccola percentuale di larghezza di banda di rete.
 
 </dd> <dt>
 
 <span id="BG_JOB_PRIORITY_NORMAL"></span><span id="bg_job_priority_normal"></span>**BG_JOB_PRIORITY_NORMAL**
 </dt> <dd>
 
-Il comportamento è lo stesso per tutti i processi non in primo piano. Per informazioni dettagliate, vedere i commenti in BG_JOB_PRIORITY_HIGH.
+Il comportamento di DO è lo stesso per tutti i processi non in primo piano. Per informazioni dettagliate, BG_JOB_PRIORITY_HIGH commenti in .
 
 </dd> <dt>
 
 <span id="BG_JOB_PRIORITY_LOW"></span><span id="bg_job_priority_low"></span>**BG_JOB_PRIORITY_LOW**
 </dt> <dd>
 
-Il comportamento è lo stesso per tutti i processi non in primo piano. Per informazioni dettagliate, vedere i commenti in BG_JOB_PRIORITY_HIGH.
+Il comportamento di DO è lo stesso per tutti i processi non in primo piano. Per informazioni dettagliate, BG_JOB_PRIORITY_HIGH commenti in .
 
 </dd> </dl>
 
@@ -83,9 +83,9 @@ Il comportamento è lo stesso per tutti i processi non in primo piano. Per infor
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                                         |
-| Server minimo supportato<br/> | Windows Server, versione 1709 \[ solo per le app desktop\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Server, solo app desktop versione 1709 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
 
 
 
@@ -93,10 +93,10 @@ Il comportamento è lo stesso per tutti i processi non in primo piano. Per infor
 
 <dl> <dt>
 
-[**Metodo ibackgroundcopyjob:: GetPriority**](ibackgroundcopyjob-getpriority.md)
+[**IBackgroundCopyJob::GetPriority**](ibackgroundcopyjob-getpriority.md)
 </dt> <dt>
 
-[**Metodo ibackgroundcopyjob:: sepriority**](ibackgroundcopyjob-setpriority.md)
+[**IBackgroundCopyJob::SetPriority**](ibackgroundcopyjob-setpriority.md)
 </dt> </dl>
 
  

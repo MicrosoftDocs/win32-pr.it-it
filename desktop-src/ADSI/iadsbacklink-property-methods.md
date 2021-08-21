@@ -1,10 +1,10 @@
 ---
-title: Metodi di proprietà IADsBackLink (IADs. h)
-description: Il metodo Property dell'interfaccia IADsBackLink imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere Metodi della proprietà di interfaccia.
+title: Metodi della proprietà IADsBackLink (Iads.h)
+description: Il metodo di proprietà dell'interfaccia IADsBackLink imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere Metodi delle proprietà dell'interfaccia.
 ms.assetid: 0a66fa6d-1bf5-4ff0-8bbd-625a69cf9594
 ms.tgt_platform: multiple
 keywords:
-- Metodi di proprietà IADsBackLink ADSI
+- Metodi della proprietà IADsBackLink ADSI
 topic_type:
 - apiref
 api_name:
@@ -21,16 +21,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c2220fff3a18b0822c0167b387ec10c324d95aa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8d2834ac74faa78418abfe1d960e4355aa6fa0c14999783ad9dfa47389f38eb8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118691598"
 ---
-# <a name="iadsbacklink-property-methods"></a>Metodi di proprietà IADsBackLink
+# <a name="iadsbacklink-property-methods"></a>Metodi della proprietà IADsBackLink
 
-Il metodo Property dell'interfaccia [**IADsBackLink**](/windows/desktop/api/Iads/nn-iads-iadsbacklink) imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere [metodi della proprietà di interfaccia](interface-property-methods.md).
+Il metodo di proprietà [**dell'interfaccia IADsBackLink**](/windows/desktop/api/Iads/nn-iads-iadsbacklink) imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere [Metodi delle proprietà dell'interfaccia](interface-property-methods.md).
 
 ## <a name="properties"></a>Proprietà
 
@@ -39,14 +39,14 @@ Il metodo Property dell'interfaccia [**IADsBackLink**](/windows/desktop/api/Iads
 **ObjectName**
 </dt> <dd> <dl>
 
-Nome di un oggetto a cui è associato l'attributo **back link** .
+Nome di un oggetto a cui è collegato l'attributo Back **Link.**
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -67,14 +67,14 @@ HRESULT put_ObjectName(
 **RemoteID**
 </dt> <dd> <dl>
 
-Identificatore del server remoto che richiede un riferimento esterno all'oggetto specificato da **ObjectName**.
+Identificatore del server remoto che richiede un riferimento esterno dell'oggetto specificato da **ObjectName.**
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati scripting: **LONG**
 </dt> <dt>
 
 
@@ -102,9 +102,9 @@ HRESULT put_RemoteID(
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsBackLink è definito come FD1302BD-4080-11D1-A3AC-00C04FB950DC<br/>         |
+| IID<br/>                      | IADsBackLink IID è definito \_ come FD1302BD-4080-11D1-A3AC-00C04FB950DC<br/>         |
 
 
 
@@ -115,7 +115,7 @@ HRESULT put_RemoteID(
 [**IADsBackLink**](/windows/desktop/api/Iads/nn-iads-iadsbacklink)
 </dt> <dt>
 
-[**\_BACKLINK annunci**](/windows/win32/api/iads/ns-iads-ads_backlink)
+[**BACKLINK DI ADS \_**](/windows/win32/api/iads/ns-iads-ads_backlink)
 </dt> </dl>
 
  

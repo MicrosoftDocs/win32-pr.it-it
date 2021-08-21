@@ -1,11 +1,11 @@
 ---
-title: Metodo getdistinguishname della classe MicrosoftDNS_Server
-description: Il metodo getdistinguishname Recupera il nome distinto DS per la zona. | Metodo getdistinguishname della classe MicrosoftDNS_Server
+title: Metodo GetDistinguishedName della classe MicrosoftDNS_Server
+description: Il metodo GetDistinguishedName recupera il nome distinto DS per la zona. | Metodo GetDistinguishedName della classe MicrosoftDNS_Server
 ms.assetid: b8c7fc18-87d6-4653-b837-760d6584d9e7
 keywords:
-- Metodo getdistinguishname (DNS)
-- Metodo getdistinguishname, DNS, classe MicrosoftDNS_Server
-- Classe MicrosoftDNS_Server DNS, metodo getdistinguishname
+- Metodo GetDistinguishedName DNS
+- Metodo GetDistinguishedName DNS, MicrosoftDNS_Server classe
+- MicrosoftDNS_Server classe DNS, metodo GetDistinguishedName
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8caf66c318b0a00973f287513ae495cdf3479edc
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 00a03ed20284839b36e520f28e0e079dc8b00bf3b93b50996353be51bfe8e395
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104352201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118163192"
 ---
-# <a name="getdistinguishedname-method-of-the-microsoftdns_server-class"></a>Metodo getdistinguishname della \_ classe server MicrosoftDNS
+# <a name="getdistinguishedname-method-of-the-microsoftdns_server-class"></a>Metodo GetDistinguishedName della classe Server \_ MicrosoftDNS
 
-Il metodo **Getdistinguishname** Recupera il nome distinto DS per la zona.
+Il **metodo GetDistinguishedName** recupera il nome distinto DS per la zona.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,7 +53,7 @@ Restituisce il nome distinto DS per la zona.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -61,13 +61,13 @@ Restituisce il nome distinto DS per la zona.
 
 <dl> <dt>
 
-[**\_Server MicrosoftDNS**](microsoftdns-server.md)
+[**MicrosoftDNS \_ Server**](microsoftdns-server.md)
 </dt> <dt>
 
-[**Metodo StartService della \_ classe server MicrosoftDNS**](microsoftdns-server-startservice.md)
+[**Metodo StartService della classe server \_ MicrosoftDNS**](microsoftdns-server-startservice.md)
 </dt> <dt>
 
-[**Metodo StartScavenging della \_ classe server MicrosoftDNS**](microsoftdns-server-startscavenging.md)
+[**Metodo StartScavenging della classe server \_ MicrosoftDNS**](microsoftdns-server-startscavenging.md)
 </dt> </dl>
 
  

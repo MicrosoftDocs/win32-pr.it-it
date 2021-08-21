@@ -1,25 +1,25 @@
 ---
 description: Specifica se i metadati vengono scritti nel file transcodificato.
 ms.assetid: 0fbfc035-c9d1-4014-a28a-93d7e6adc718
-title: Attributo MF_TRANSCODE_SKIP_METADATA_TRANSFER (Mfidl. h)
+title: MF_TRANSCODE_SKIP_METADATA_TRANSFER attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54978d76ec1392c3be731e1452a653d1423976a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7874d7d8cc20bbf5222cd8fd2fa0ca938c0b597dbc42914ab809dad926968306
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118739423"
 ---
-# <a name="mf_transcode_skip_metadata_transfer-attribute"></a>\_Attributo per il \_ \_ trasferimento dei metadati con MF transcode Skip \_
+# <a name="mf_transcode_skip_metadata_transfer-attribute"></a>Attributo MF \_ TRANSCODE \_ SKIP METADATA \_ \_ TRANSFER
 
-Specifica se i metadati vengono scritti nel file transcodificato. Questo attributo del contenitore viene archiviato nel profilo transcodifica.
+Specifica se i metadati vengono scritti nel file transcodificato. Questo attributo del contenitore viene archiviato nel profilo di transcodifica.
 
 ## <a name="data-type"></a>Tipo di dati
 
 **UINT32**
 
-\_ \_ \_ Nella tabella seguente sono descritti i valori possibili per l'attributo MF transcode Skip Metadata \_ transfer.
+I valori possibili per l'attributo MF \_ TRANSCODE \_ SKIP METADATA TRANSFER sono descritti nella tabella \_ \_ seguente.
 
 
 
@@ -34,13 +34,13 @@ Specifica se i metadati vengono scritti nel file transcodificato. Questo attribu
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="remarks"></a>Commenti
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,9 +48,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                         |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                            |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                            |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -58,7 +58,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [**IMFTranscodeProfile::GetContainerAttributes**](/windows/desktop/api/mfidl/nf-mfidl-imftranscodeprofile-getcontainerattributes)

@@ -1,11 +1,11 @@
 ---
-title: Proprietà HeaderStyle IResultsViewer (WdsView. h)
+title: Proprietà IResultsViewer HeaderStyle (WdsView.h)
 description: Stile dell'intestazione visualizzata nella visualizzazione.
 ms.assetid: 092a2ff2-eb88-4347-a81c-6a8005971ca9
 keywords:
-- Funzionalità dell'ambiente Windows legacy della proprietà Header
-- Proprietà Header, funzionalità dell'ambiente Windows legacy, interfaccia IResultsViewer
-- Funzionalità dell'ambiente Windows legacy dell'interfaccia IResultsViewer, proprietà Header
+- Proprietà HeaderStyle Funzionalità dell'Windows legacy
+- Proprietà HeaderStyle Legacy Windows Environment Features , interfaccia IResultsViewer
+- Interfaccia IResultsViewer Legacy Windows Environment Features , proprietà HeaderStyle
 topic_type:
 - apiref
 api_name:
@@ -18,17 +18,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ddc4d0ad56e1303914af712e2a9b6fa0fd416785
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6c7c60687c3d306c3f9c3fcbb551f2d746723c7223b1964d42386464729b4069
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118753892"
 ---
-# <a name="iresultsviewerheaderstyle-property"></a>Proprietà IResultsViewer:: header
+# <a name="iresultsviewerheaderstyle-property"></a>Proprietà IResultsViewer::HeaderStyle
 
 > [!NOTE]
-> Windows Desktop Search 2. x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece l' [API di ricerca di Windows](../search/-search-reference-entry-page.md) . 
+> Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [l'API Windows ricerca.](../search/-search-reference-entry-page.md) 
 
 Stile dell'intestazione visualizzata nella visualizzazione.
 
@@ -59,10 +59,10 @@ Imposta lo stile dell'intestazione visualizzata.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP con SP2 \[\]<br/>                                 |
-| Server minimo supportato<br/> | Windows Server 2003 con \[ solo app desktop SP1\]<br/>                        |
+| Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/>                                 |
+| Server minimo supportato<br/> | Windows Solo Server 2003 con app desktop SP1 \[\]<br/>                        |
 | Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>WdsView. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>WdsView.h</dt> </dl> |
 
 
 

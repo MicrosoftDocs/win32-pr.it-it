@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_SETFOCUS (winuser. h)
-description: Inviato a una finestra dopo che ha ottenuto lo stato attivo della tastiera.
+title: WM_SETFOCUS messaggio (Winuser.h)
+description: Inviato a una finestra dopo aver ottenuto lo stato attivo della tastiera.
 ms.assetid: 77180e4c-95a6-41a4-93d9-033381ae7543
 keywords:
-- Input della tastiera e del mouse WM_SETFOCUS messaggio
+- WM_SETFOCUS messaggio Input da tastiera e mouse
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b304d7f7739ce551c1efc6a1d33a934c48dc8b4d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e7ba202a4f0205a28d294d2d4f54372921205ebb72516f6f26c4042e08d9cfe2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118757374"
 ---
-# <a name="wm_setfocus-message"></a>Messaggio di SetFocus di WM \_
+# <a name="wm_setfocus-message"></a>Messaggio \_ WM SETFOCUS
 
-Inviato a una finestra dopo che ha ottenuto lo stato attivo della tastiera.
+Inviato a una finestra dopo aver ottenuto lo stato attivo della tastiera.
 
 
 ```C++
@@ -56,7 +56,7 @@ Un'applicazione deve restituire zero se elabora questo messaggio.
 
 ## <a name="remarks"></a>Commenti
 
-Per visualizzare un accento circonflesso, un'applicazione deve chiamare le funzioni del cursore appropriate quando riceve il messaggio **di \_ SetFocus di WM** .
+Per visualizzare un punto di accesso, un'applicazione deve chiamare le funzioni del punto di controllo appropriate quando riceve il **messaggio WM \_ SETFOCUS.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,7 +66,7 @@ Per visualizzare un accento circonflesso, un'applicazione deve chiamare le funzi
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -77,10 +77,10 @@ Per visualizzare un accento circonflesso, un'applicazione deve chiamare le funzi
 **Riferimento**
 </dt> <dt>
 
-[**SetFocus**](/windows/win32/api/winuser/nf-winuser-setfocus)
+[**Setfocus**](/windows/win32/api/winuser/nf-winuser-setfocus)
 </dt> <dt>
 
-[**\_KILLFOCUS WM**](wm-killfocus.md)
+[**WM \_ KILLFOCUS**](wm-killfocus.md)
 </dt> <dt>
 
 **Informazioni concettuali**

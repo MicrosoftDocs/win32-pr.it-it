@@ -4,12 +4,12 @@ ms.assetid: 6158551c-d073-416b-adc3-adc6e335f2d5
 title: System.Contact.DisplayMobilePhoneNumbers
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 141d692439e565e19bd74e80936671eea2e4a78c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fa21f68ce6d45255fd3ffb733b7e961a59e149c047378f9690f434ee078e9c56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118730109"
 ---
 # <a name="systemcontactdisplaymobilephonenumbers"></a>System.Contact.DisplayMobilePhoneNumbers
 
@@ -36,7 +36,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -66,7 +66,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

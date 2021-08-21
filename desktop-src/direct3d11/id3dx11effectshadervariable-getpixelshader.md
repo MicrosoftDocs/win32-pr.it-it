@@ -58,7 +58,7 @@ Indice a base zero.
 
 Tipo: **[ **ID3D11PixelShader**](/windows/win32/api/d3d11/nn-d3d11-id3d11pixelshader)\*\***
 
-Puntatore a un [**puntatore ID3D11PixelShader**](/windows/win32/api/d3d11/nn-d3d11-id3d11pixelshader) che verrà impostato sul pixel shader al ritorno.
+Puntatore a un [**puntatore ID3D11PixelShader**](/windows/win32/api/d3d11/nn-d3d11-id3d11pixelshader) che verrà impostato sul pixel shader restituito.
 
 </dd> </dl>
 
@@ -66,12 +66,12 @@ Puntatore a un [**puntatore ID3D11PixelShader**](/windows/win32/api/d3d11/nn-d3d
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
+Restituisce uno dei codici [restituiti Direct3D 11 seguenti.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra effetti 10 ed effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -82,7 +82,7 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 11.](d3d11-graphics-ref
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

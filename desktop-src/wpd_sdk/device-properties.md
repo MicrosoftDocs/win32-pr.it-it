@@ -38,7 +38,7 @@ Windows Dispositivi portatili supporta le proprietà del dispositivo seguenti.
 <tr class="odd">
 <td><span id="wpd_device_datetime"></span><span id="WPD_DEVICE_DATETIME"></span><strong>WPD_DEVICE_DATETIME</strong></td>
 <td><strong>VT_DATE</strong></td>
-<td>Data e ora correnti del dispositivo.</td>
+<td>Data e ora correnti nel dispositivo.</td>
 </tr>
 <tr class="even">
 <td><span id="wpd_device_firmware_version"></span><span id="WPD_DEVICE_FIRMWARE_VERSION"></span><strong>WPD_DEVICE_FIRMWARE_VERSION</strong></td>
@@ -53,7 +53,7 @@ Windows Dispositivi portatili supporta le proprietà del dispositivo seguenti.
 <tr class="even">
 <td><span id="wpd_device_manufacturer"></span><span id="WPD_DEVICE_MANUFACTURER"></span><strong>WPD_DEVICE_MANUFACTURER</strong></td>
 <td><strong>VT_LPWSTR</strong></td>
-<td>Nome del produttore del dispositivo leggibile.</td>
+<td>Nome del produttore del dispositivo leggibile dall'utente.</td>
 </tr>
 <tr class="odd">
 <td><span id="wpd_device_model"></span><span id="WPD_DEVICE_MODEL"></span><strong>WPD_DEVICE_MODEL</strong></td>
@@ -68,12 +68,12 @@ Windows Dispositivi portatili supporta le proprietà del dispositivo seguenti.
 <tr class="odd">
 <td><strong>WPD_DEVICE_NETWORK_IDENTIFIER</strong></td>
 <td><strong>VT_UI8</strong></td>
-<td>Valore che specifica l'identificatore di rete EUI-64 del dispositivo. Questa proprietà viene utilizzata per le operazioni di rete fuori banda. Se il dispositivo ha indirizzi di rete fisici MAC-48 (tipici delle reti IPv4), l'indirizzo MAC-48 viene codificato nell'indirizzo EUI-64 come le due metà dell'indirizzo MAC-48 separate da FF-FF. Il valore EUI-64 viene archiviato in rete o in ordine big-endian, dove un indirizzo &quot; &quot; &quot; &quot; EUI-64 di 01-02-03-FF-FF-04-05-06 viene inserito nel VT_UI8 in modo che il valore decimale sia 72624942021346566. Questa proprietà è obbligatoria in qualsiasi dispositivo che supporta l'autenticazione nominale o sicura. Questa proprietà è consigliata nei dispositivi che supportano solo l'autenticazione zero. Il valore può essere usato dall'host per stabilire automaticamente l'accesso al dispositivo senza l'intervento dell'utente.<br/></td>
+<td>Valore che specifica l'identificatore di rete EUI-64 del dispositivo. Questa proprietà viene usata per le operazioni di rete fuori banda. Se il dispositivo ha indirizzi di rete fisici MAC-48 (tipici delle reti IPv4), l'indirizzo MAC-48 viene codificato nell'indirizzo EUI-64 come le due metà dell'indirizzo MAC-48 separato da FF-FF. Il valore EUI-64 viene archiviato in ordine di rete o big endian, in cui un indirizzo &quot; &quot; &quot; &quot; EUI-64 di 01-02-03-FF-FF-04-05-06 viene inserito nel VT_UI8 in modo che il valore decimale sia 72624942021346566. Questa proprietà è obbligatoria in qualsiasi dispositivo che supporta l'autenticazione nominale o sicura. Questa proprietà è consigliata nei dispositivi che supportano solo l'autenticazione zero. Il valore può essere usato dall'host per stabilire automaticamente l'accesso al dispositivo senza l'intervento dell'utente.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="wpd_device_power_level"></span><span id="WPD_DEVICE_POWER_LEVEL"></span><strong>WPD_DEVICE_POWER_LEVEL</strong></td>
 <td><strong>VT_UI4</strong></td>
-<td>Valore compreso tra 0 e 100 che specifica il livello di alimentazione della batteria del dispositivo, con 0 che non è nessuno e 100 completamente caricato.</td>
+<td>Valore compreso tra 0 e 100 che specifica il livello di alimentazione della batteria del dispositivo, con 0 none e 100 completamente addebitato.</td>
 </tr>
 <tr class="odd">
 <td><span id="wpd_device_power_source"></span><span id="WPD_DEVICE_POWER_SOURCE"></span><strong>WPD_DEVICE_POWER_SOURCE</strong></td>
@@ -98,17 +98,17 @@ Windows Dispositivi portatili supporta le proprietà del dispositivo seguenti.
 <tr class="odd">
 <td><span id="wpd_device_supported_formats_are_ordered"></span><span id="WPD_DEVICE_SUPPORTED_FORMATS_ARE_ORDERED"></span><strong>WPD_DEVICE_SUPPORTED_FORMATS_ARE_ORDERED</strong></td>
 <td><strong>VT_BOOL</strong></td>
-<td>Valore booleano che specifica se i formati supportati restituiti dal dispositivo sono nell'ordine preferito. ciò significa che il primo formato restituito è preferibile, mentre l'ultimo formato restituito è quello meno preferito.</td>
+<td>Valore booleano che specifica se i formati supportati restituiti dal dispositivo sono nell'ordine preferito. in altre informazioni, il primo formato restituito è preferibile, mentre l'ultimo formato restituito è quello meno preferito.</td>
 </tr>
 <tr class="even">
 <td><span id="wpd_device_supports_non_consumable"></span><span id="WPD_DEVICE_SUPPORTS_NON_CONSUMABLE"></span><strong>WPD_DEVICE_SUPPORTS_NON_CONSUMABLE</strong></td>
 <td><strong>VT_BOOL</strong></td>
-<td>Valore booleano che specifica se il dispositivo supporta oggetti non utilizzabili. Si tratta di oggetti che il dispositivo deve archiviare, non riprodurre o usare in alcun modo.</td>
+<td>Valore booleano che specifica se il dispositivo supporta oggetti non consumabili. Si tratta di oggetti che il dispositivo deve solo archiviare, non riprodurre o usare in alcun modo.</td>
 </tr>
 <tr class="odd">
 <td><span id="wpd_device_sync_partner"></span><span id="WPD_DEVICE_SYNC_PARTNER"></span><strong>WPD_DEVICE_SYNC_PARTNER</strong></td>
 <td><strong>VT_LPWSTR</strong></td>
-<td>Descrizione leggibile del partner di sincronizzazione di <em>un dispositivo.</em> Si tratta di un dispositivo, un'applicazione o un server con cui comunica il dispositivo per mantenere uno stato comune o un gruppo di file tra entrambi i partner. Ad esempio, programmi di posta elettronica e librerie di musica.</td>
+<td>Descrizione leggibile dall'utente del partner di sincronizzazione <em>di un dispositivo.</em> Si tratta di un dispositivo, un'applicazione o un server con cui il dispositivo comunica per mantenere uno stato comune o un gruppo di file tra entrambi i partner. Ad esempio, programmi di posta elettronica e librerie di musica.</td>
 </tr>
 <tr class="even">
 <td><span id="wpd_device_friendly_name"></span><span id="WPD_DEVICE_FRIENDLY_NAME"></span><strong>WPD_DEVICE_FRIENDLY_NAME</strong></td>
@@ -118,12 +118,12 @@ Windows Dispositivi portatili supporta le proprietà del dispositivo seguenti.
 <tr class="odd">
 <td><span id="wpd_device_transport"></span><span id="WPD_DEVICE_TRANSPORT"></span><strong>WPD_DEVICE_TRANSPORT</strong></td>
 <td><strong>VT_UI4</strong></td>
-<td>il trasporto supportato dal dispositivo, ad esempio USB, IP o Bluetooth. I valori validi sono del <a href="wpd-device-transports.md"><strong>tipo WPD_DEVICE_TRANSPORTS</strong></a> di enumerazione.</td>
+<td>il trasporto supportato dal dispositivo, ad esempio USB, IP o Bluetooth. I valori validi sono del tipo <a href="wpd-device-transports.md"><strong>WPD_DEVICE_TRANSPORTS</strong></a> di enumerazione.</td>
 </tr>
 <tr class="even">
 <td><span id="wpd_device_type"></span><span id="WPD_DEVICE_TYPE"></span><strong>WPD_DEVICE_TYPE</strong></td>
 <td><strong>VT_UI4</strong></td>
-<td>Valore che specifica il tipo di dispositivo. Le applicazioni utilizzano questa proprietà solo a scopo di rappresentazione. Le caratteristiche funzionali del dispositivo vengono decidete tramite oggetti funzionali. I dispositivi che non forniscono un'icona del dispositivo, ad esempio un <strong>WPD_RESOURCE_ICON</strong> per l'oggetto dispositivo, verranno rappresentati nello spazio dei nomi WPD con un'icona generica. Questa icona dipende dal tipo di dispositivo specificato, ad esempio se il tipo di dispositivo è un telefono cellulare, viene usata l'icona del telefono generico. Alla prima installazione del dispositivo, il programma di installazione della classe WPD esegue una query su questo valore di proprietà e lo archivia nel registro dei dispositivi sotto il valore PORTABLE_DEVICE_TYPE come REG_DWORD.<br/> I valori possibili di questo parametro derivano <a href="object-properties.md"><strong>dall'WPD_DEVICE_TYPES</strong></a> definita in PortableDevice.h. I valori possibili sono:<br/> <dl> <strong>WPD_DEVICE_TYPE_GENERIC</strong><br />
+<td>Valore che specifica il tipo di dispositivo. Le applicazioni usano questa proprietà solo a scopo di rappresentazione. Le caratteristiche funzionali del dispositivo vengono decidete tramite oggetti funzionali. I dispositivi che non forniscono un'icona del dispositivo, ad esempio un <strong>WPD_RESOURCE_ICON</strong> per l'oggetto dispositivo, verranno rappresentati nello spazio dei nomi WPD con un'icona generica. Questa icona dipende dal tipo di dispositivo specificato, ad esempio se il tipo di dispositivo è un telefono cellulare, viene usata l'icona del telefono generico. Alla prima installazione del dispositivo, il programma di installazione della classe WPD esegue una query su questo valore della proprietà e lo archivia nel registro dispositivi sotto il valore PORTABLE_DEVICE_TYPE come REG_DWORD.<br/> I valori possibili di questo parametro derivano <a href="object-properties.md"><strong>dall'WPD_DEVICE_TYPES</strong></a> definita in PortableDevice.h. I valori possibili sono:<br/> <dl> <strong>WPD_DEVICE_TYPE_GENERIC</strong><br />
 <strong>WPD_DEVICE_TYPE_CAMERA</strong><br />
 <strong>WPD_DEVICE_TYPE_MEDIA_PLAYER</strong><br />
 <strong>WPD_DEVICE_TYPE_PHONE</strong><br />
@@ -135,7 +135,7 @@ Windows Dispositivi portatili supporta le proprietà del dispositivo seguenti.
 <tr class="odd">
 <td><span id="wpd_device_use_device_stage"></span><span id="WPD_DEVICE_USE_DEVICE_STAGE"></span><strong>WPD_DEVICE_USE_DEVICE_STAGE</strong></td>
 <td><strong>VT_BOOL</strong></td>
-<td>Se questa proprietà esiste ed è impostata su <strong>TRUE,</strong>il dispositivo può essere usato con Device Stage . Ciò è destinato ai dispositivi che non possono archiviare metadati tramite <strong>il servizio metadati del</strong>dispositivo, ma forniscono metadati nei server Microsoft.</td>
+<td>Se questa proprietà esiste ed è impostata su <strong>TRUE,</strong>il dispositivo può essere usato con Device Stage . Questo è destinato ai dispositivi che non possono archiviare metadati usando <strong>il servizio</strong>metadati del dispositivo, ma forniranno metadati nei server Microsoft.</td>
 </tr>
 </tbody>
 </table>

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_DBINFOMISC. lgposAttach'
-title: Proprietà JET_DBINFOMISC. lgposAttach
+description: 'Altre informazioni su: JET_DBINFOMISC.lgposAttach'
+title: JET_DBINFOMISC.lgposAttach
 TOCTitle: 'lgposAttach property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC.lgposAttach
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbinfomisc.lgposattach(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bff266e056b620a45adcf58f092277399c979c88
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50a4f507c9ed826b1c21888d9c837cf1518f80effff0a2d24dc4746505b18c3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118766251"
 ---
-# <a name="jet_dbinfomisclgposattach-property"></a>Proprietà JET_DBINFOMISC. lgposAttach
+# <a name="jet_dbinfomisclgposattach-property"></a>JET_DBINFOMISC.lgposAttach
 
-Ottiene il LGPO dell'ultima connessione.
+Ottiene i lgpos dell'ultimo collegamento.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ public JET_LGPOS lgposAttach { get; internal set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_DBINFOMISC](./jet-dbinfomisc-class.md)
+[JET_DBINFOMISC classe](./jet-dbinfomisc-class.md)
 
-[Membri JET_DBINFOMISC](./jet-dbinfomisc-members.md)
+[JET_DBINFOMISC membri](./jet-dbinfomisc-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

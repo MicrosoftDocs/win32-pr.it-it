@@ -40,11 +40,11 @@ L Windows SDK contiene l'intestazione e la libreria di importazione per il colle
 XInput 9.1.0 presenta questi svantaggi rispetto ad altre versioni di XInput:
 
 -   Per motivi di compatibilità con le versioni precedenti, [**XInputGetCapabilities**](/windows/desktop/api/XInput/nf-xinput-xinputgetcapabilities) in questa versione di XInput restituisce informazioni sulle funzionalità fisse. Indipendentemente dal dispositivo controller comune Xbox collegato, **XInputGetCapabilities** in XInput 9.1.0 segnala sempre un sottotipo di dispositivo GAMEPAD. Non restituirà il bit di funzionalità XINPUT \_ CAPS \_ WIRELESS anche se un dispositivo wireless è connesso.
--   Non è possibile determinare il visore VR per un DETERMINATO ID utente. La [**funzione XInputGetAudioDeviceIds**](/windows/desktop/api/XInput/nf-xinput-xinputgetaudiodeviceids) non è disponibile e la funzione [**XInputGetDSoundAudioDeviceGuids**](/windows/desktop/api/XInput/nf-xinput-xinputgetdsoundaudiodeviceguids) non restituirà alcun risultato in Windows 8.x o Windows 10.
+-   Non è possibile determinare il visore VR per un DETERMINATO ID utente. La [**funzione XInputGetAudioDeviceIds**](/windows/desktop/api/XInput/nf-xinput-xinputgetaudiodeviceids) non è disponibile e la funzione [**XInputGetDSoundAudioDeviceGuids**](/windows/desktop/api/XInput/nf-xinput-xinputgetdsoundaudiodeviceguids) non restituirà risultati in Windows 8.x o Windows 10.
 -   Le [**funzioni XInputEnable,**](/windows/desktop/api/XInput/nf-xinput-xinputenable) [**XInputGetBatteryInformation**](/windows/desktop/api/XInput/nf-xinput-xinputgetbatteryinformation)e [**XInputGetKeystroke**](/windows/desktop/api/XInput/nf-xinput-xinputgetkeystroke) non sono disponibili.
 
 ### <a name="xinput-13"></a>XInput 1.3
 
 Alcune versioni precedenti di XInput sono state fornite come DLL ridistribuibili in DirectX SDK. La prima versione ridistribuibile di XInput, XInput 1.1, disponibile nella versione di aprile 2006 di DirectX SDK. L'ultima versione disponibile in DirectX SDK è XInput 1.3, disponibile nella versione di giugno 2010 di DirectX SDK legacy. *DirectX SDK non è più disponibile in Download Microsoft.*
 
-È possibile usare XInput 1.3 per le applicazioni che supportano versioni di livello inferiore di Windows e richiedono funzionalità non fornite da XInput 9.1.0 ,ovvero report di sottotipi corretti, supporto audio, supporto esplicito per la segnalazione della batteria e così via.
+È possibile usare XInput 1.3 per le applicazioni che supportano versioni di livello inferiore di Windows e richiedono funzionalità non fornite da XInput 9.1.0(ovvero, segnalazione sottotipo corretta, supporto audio, supporto esplicito per la segnalazione della batteria e così via).

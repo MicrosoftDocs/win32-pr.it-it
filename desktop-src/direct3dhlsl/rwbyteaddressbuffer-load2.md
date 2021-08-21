@@ -1,9 +1,9 @@
 ---
-title: 'Metodi di RWByteAddressBuffer:: RWByteAddressBuffer load2'
-description: Ottiene due valori da un RWByteAddressBuffer.
+title: Metodi di RWByteAddressBuffer::RWByteAddressBuffer Load2
+description: Ottiene due valori da RWByteAddressBuffer.
 ms.assetid: 0D397B74-282E-4492-9E07-31D3A44DF83A
 keywords:
-- Metodi load2 HLSL
+- Metodi Load2 HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 76084d818a68bcd80fe8c283f36f8ac2c338e523
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: 2b2c159478422303cc0117eb08bf3eebc263b79294975d4e63b4ddbe35ede8b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104045981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118791278"
 ---
-# <a name="rwbyteaddressbufferload2-methods"></a>Metodi RWByteAddressBuffer:: load2
+# <a name="rwbyteaddressbufferload2-methods"></a>Metodi di RWByteAddressBuffer::Load2
 
-Ottiene due valori da un [**RWByteAddressBuffer**](sm5-object-rwbyteaddressbuffer.md).
+Ottiene due valori da [**RWByteAddressBuffer.**](sm5-object-rwbyteaddressbuffer.md)
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Ottiene due valori da un [**RWByteAddressBuffer**](sm5-object-rwbyteaddressbuffe
 
 | Metodo                                                            | Descrizione                                                     |
 |:------------------------------------------------------------------|:----------------------------------------------------------------|
-| [**Load2 (uint)**](sm5-object-rwbyteaddressbuffer-load2.md)       | Ottiene due valori.<br/>                                     |
-| [**Load2 (uint, uint)**](rwbyteaddressbuffer-load2-float-uint-.md) | Ottiene due valori e restituisce lo stato dell'operazione.<br/> |
+| [**Load2(uint)**](sm5-object-rwbyteaddressbuffer-load2.md)       | Ottiene due valori.<br/>                                     |
+| [**Load2(uint,uint)**](rwbyteaddressbuffer-load2-float-uint-.md) | Ottiene due valori e restituisce lo stato dell'operazione.<br/> |
 
 
 

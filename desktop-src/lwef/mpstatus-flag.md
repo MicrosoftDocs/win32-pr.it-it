@@ -1,10 +1,10 @@
 ---
-title: Enumerazione MPSTATUS_FLAG (MpClient. h)
-description: Possibili flag di bit di stato generale del prodotto.
+title: MPSTATUS_FLAG enumerazione (MpClient.h)
+description: Possibili flag di bit dello stato complessivo del prodotto.
 ms.assetid: BF2E6506-E76A-4785-8E91-99937B413548
 keywords:
-- Funzionalità dell'ambiente Windows legacy dell'enumerazione MPSTATUS_FLAG
-- Caratteristiche dell'ambiente Windows legacy del puntatore di enumerazione PMPSTATUS_FLAG
+- MPSTATUS_FLAG di enumerazione Legacy Windows Environment Features
+- PMPSTATUS_FLAG puntatore di enumerazione Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c7175980c09c63938be04626091c31b53335756
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4d850f0e8de9a3b0ed18a1a1353dfdef40d41bcb1ce4d17265ec245e82ba73f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747035"
 ---
-# <a name="mpstatus_flag-enumeration"></a>\_Enumerazione flag MPSTATUS
+# <a name="mpstatus_flag-enumeration"></a>Enumerazione MPSTATUS \_ FLAG
 
-Possibili flag di bit di stato generale del prodotto.
+Possibili flag di bit dello stato complessivo del prodotto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -67,189 +67,189 @@ typedef enum tagMPSTATUS_FLAG {
 
 <dl> <dt>
 
-<span id="MP_STATUS_FLAG_NONE"></span><span id="mp_status_flag_none"></span>**\_flag di stato MP \_ \_ None**
+<span id="MP_STATUS_FLAG_NONE"></span><span id="mp_status_flag_none"></span>**FLAG \_ DI STATO MP \_ \_ NONE**
 </dt> <dd>
 
 Nessun flag di stato impostato (stato non inizializzato).
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_SERVICE_UNAVAILABLE"></span><span id="mp_status_flag_service_unavailable"></span>**\_servizio flag di stato MP non \_ \_ \_ disponibile**
+<span id="MP_STATUS_FLAG_SERVICE_UNAVAILABLE"></span><span id="mp_status_flag_service_unavailable"></span>**SERVIZIO FLAG \_ DI STATO MP NON \_ \_ \_ DISPONIBILE**
 </dt> <dd>
 
-Il servizio non è in esecuzione.
+Servizio non in esecuzione.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_MPENGINE_UNAVAILABLE"></span><span id="mp_status_flag_mpengine_unavailable"></span>**\_flag di stato MP MPENGINE non \_ \_ \_ disponibile**
+<span id="MP_STATUS_FLAG_MPENGINE_UNAVAILABLE"></span><span id="mp_status_flag_mpengine_unavailable"></span>**MP \_ STATUS \_ FLAG \_ MPENGINE NON \_ DISPONIBILE**
 </dt> <dd>
 
 Il servizio è stato avviato senza alcun motore di protezione da malware.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_THREAT_FULLSCAN_REQUIRED"></span><span id="mp_status_flag_threat_fullscan_required"></span>**il \_ flag di stato MP \_ \_ Threat \_ FullScan è \_ obbligatorio**
+<span id="MP_STATUS_FLAG_THREAT_FULLSCAN_REQUIRED"></span><span id="mp_status_flag_threat_fullscan_required"></span>**MP \_ STATUS \_ FLAG \_ THREAT \_ FULLSCAN \_ REQUIRED**
 </dt> <dd>
 
 Analisi completa in sospeso a causa di un'azione di minaccia.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_THREAT_REBOOT_REQUIRED"></span><span id="mp_status_flag_threat_reboot_required"></span>**è \_ \_ \_ \_ necessario riavviare il flag di stato MP \_**
+<span id="MP_STATUS_FLAG_THREAT_REBOOT_REQUIRED"></span><span id="mp_status_flag_threat_reboot_required"></span>**RICHIESTO \_ RIAVVIO \_ DELLA MINACCIA DEL FLAG DI \_ \_ STATO \_ MP**
 </dt> <dd>
 
 Riavvio in sospeso a causa di un'azione di minaccia.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_THREAT_MANUAL_STEPS_REQUIRED"></span><span id="mp_status_flag_threat_manual_steps_required"></span>**sono \_ \_ \_ \_ \_ necessari passaggi manuali \_ per la minaccia del flag di stato MP**
+<span id="MP_STATUS_FLAG_THREAT_MANUAL_STEPS_REQUIRED"></span><span id="mp_status_flag_threat_manual_steps_required"></span>**PASSAGGI MANUALI DI MINACCIA DEL FLAG DI STATO MP \_ \_ \_ \_ \_ \_ NECESSARI**
 </dt> <dd>
 
 Passaggi manuali in sospeso a causa di un'azione di minaccia.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_DUE_AV_SIGNATURE"></span><span id="mp_status_flag_due_av_signature"></span>**\_flag di stato MP \_ \_ a causa della \_ \_ firma AV**
+<span id="MP_STATUS_FLAG_DUE_AV_SIGNATURE"></span><span id="mp_status_flag_due_av_signature"></span>**MP \_ STATUS \_ FLAG \_ DUE \_ AV \_ SIGNATURE**
 </dt> <dd>
 
-Le firme antivirus non sono aggiornate.
+Firme antivirus non aggiornate.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_DUE_AS_SIGNATURE"></span><span id="mp_status_flag_due_as_signature"></span>**\_ \_ flag di stato MP \_ a causa della \_ \_ firma**
+<span id="MP_STATUS_FLAG_DUE_AS_SIGNATURE"></span><span id="mp_status_flag_due_as_signature"></span>**FLAG \_ DI STATO MP DOVUTO COME \_ \_ \_ \_ FIRMA**
 </dt> <dd>
 
-Firme antispyware obsolete.
+Firme antispyware non aggiornate.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_DUE_QUICK_SCAN"></span><span id="mp_status_flag_due_quick_scan"></span>**\_flag di stato MP \_ \_ scadenza \_ \_ analisi veloce**
+<span id="MP_STATUS_FLAG_DUE_QUICK_SCAN"></span><span id="mp_status_flag_due_quick_scan"></span>**MP \_ STATUS \_ FLAG \_ DUE \_ QUICK \_ SCAN**
 </dt> <dd>
 
-Non è stata eseguita alcuna analisi veloce per un periodo specificato.
+Non è stata eseguita alcuna analisi rapida per un periodo specificato.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_DUE_FULL_SCAN"></span><span id="mp_status_flag_due_full_scan"></span>**\_flag di stato MP \_ \_ a causa dell' \_ \_ analisi completa**
+<span id="MP_STATUS_FLAG_DUE_FULL_SCAN"></span><span id="mp_status_flag_due_full_scan"></span>**FLAG \_ DI STATO MP DOVUTO \_ \_ \_ \_ ALL'ANALISI COMPLETA**
 </dt> <dd>
 
-non è stata eseguita un'analisi completa per un periodo specificato
+Non è stata eseguita alcuna analisi completa per un periodo specificato
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_INPROGRESS_SYSTEM_SCAN"></span><span id="mp_status_flag_inprogress_system_scan"></span>**analisi di sistema del flag di stato MP in \_ \_ \_ corso \_ \_**
+<span id="MP_STATUS_FLAG_INPROGRESS_SYSTEM_SCAN"></span><span id="mp_status_flag_inprogress_system_scan"></span>**MP \_ STATUS \_ FLAG \_ INPROGRESS \_ SYSTEM \_ SCAN**
 </dt> <dd>
 
 Analisi avviata dal sistema in corso.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_INPROGRESS_ROUTINE_CLEANING"></span><span id="mp_status_flag_inprogress_routine_cleaning"></span>**\_ \_ \_ pulizia routine in corso del flag di \_ stato MP \_**
+<span id="MP_STATUS_FLAG_INPROGRESS_ROUTINE_CLEANING"></span><span id="mp_status_flag_inprogress_routine_cleaning"></span>**PULIZIA \_ DI ROUTINE DI ROUTINE IN INGRESSO DEL FLAG DI \_ \_ \_ STATO \_ MP**
 </dt> <dd>
 
 Pulizia avviata dal sistema in corso.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_DUE_SAMPLES"></span><span id="mp_status_flag_due_samples"></span>**\_esempi di flag di stato MP \_ \_ dovuti \_**
+<span id="MP_STATUS_FLAG_DUE_SAMPLES"></span><span id="mp_status_flag_due_samples"></span>**ESEMPI \_ RELATIVI AL FLAG DI STATO \_ MP \_ \_**
 </dt> <dd>
 
-Sono presenti campioni in attesa di invio.
+Sono presenti esempi in attesa di invio.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_EVALUATION_MODE"></span><span id="mp_status_flag_evaluation_mode"></span>**\_modalità di \_ valutazione del flag di stato MP \_ \_**
+<span id="MP_STATUS_FLAG_EVALUATION_MODE"></span><span id="mp_status_flag_evaluation_mode"></span>**MODALITÀ \_ DI VALUTAZIONE DEL FLAG DI STATO \_ \_ MP \_**
 </dt> <dd>
 
 Il prodotto è in esecuzione in modalità di valutazione.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_NONGENUINE"></span><span id="mp_status_flag_nongenuine"></span>**FLAG di stato MP non \_ \_ \_ autentico**
+<span id="MP_STATUS_FLAG_NONGENUINE"></span><span id="mp_status_flag_nongenuine"></span>**FLAG \_ DI STATO MP \_ \_ NONGENUINE**
 </dt> <dd>
 
-Il prodotto è in esecuzione in modalità Windows non originale.
+Il prodotto è in esecuzione in modalità Windows originale.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_PRODUCT_EXPIRED"></span><span id="mp_status_flag_product_expired"></span>**il \_ prodotto del flag di stato MP è \_ \_ \_ scaduto**
+<span id="MP_STATUS_FLAG_PRODUCT_EXPIRED"></span><span id="mp_status_flag_product_expired"></span>**IL PRODOTTO \_ CON FLAG DI STATO MP È \_ \_ \_ SCADUTO**
 </dt> <dd>
 
-Prodotto scaduto.
+Il prodotto è scaduto.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_THREAT_CALLISTO_REQUIRED"></span><span id="mp_status_flag_threat_callisto_required"></span>**il \_ flag di stato del MP \_ \_ minaccia \_ Callisto \_**
+<span id="MP_STATUS_FLAG_THREAT_CALLISTO_REQUIRED"></span><span id="mp_status_flag_threat_callisto_required"></span>**MP \_ STATUS \_ FLAG \_ THREAT \_ CALLISTO \_ REQUIRED**
 </dt> <dd>
 
-È richiesta l'analisi non in linea di Callisto.
+È necessaria l'analisi off-line callisto.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_SERVICE_ON_SYSTEM_SHUTDOWN"></span><span id="mp_status_flag_service_on_system_shutdown"></span>**\_ \_ servizio flag di stato MP \_ \_ all' \_ arresto del sistema \_**
+<span id="MP_STATUS_FLAG_SERVICE_ON_SYSTEM_SHUTDOWN"></span><span id="mp_status_flag_service_on_system_shutdown"></span>**SERVIZIO MP \_ STATUS \_ FLAG \_ \_ \_ ALL'ARRESTO DEL \_ SISTEMA**
 </dt> <dd>
 
-Il servizio verrà arrestato nell'ambito dell'arresto del sistema.
+Il servizio viene arrestato durante l'arresto del sistema.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_SERVICE_CRITICAL_FAILURE"></span><span id="mp_status_flag_service_critical_failure"></span>**\_ \_ \_ \_ errore critico servizio flag di stato MP \_**
+<span id="MP_STATUS_FLAG_SERVICE_CRITICAL_FAILURE"></span><span id="mp_status_flag_service_critical_failure"></span>**ERRORE \_ CRITICO DEL SERVIZIO DEL FLAG DI \_ \_ \_ STATO \_ MP**
 </dt> <dd>
 
-La correzione delle minacce non è riuscita.
+La correzione delle minacce non è riuscita in modo critico.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_SERVICE_NON_CRITICAL_FAILURE"></span><span id="mp_status_flag_service_non_critical_failure"></span>**\_ \_ \_ \_ \_ errore non critico del servizio flag di stato \_ MP**
+<span id="MP_STATUS_FLAG_SERVICE_NON_CRITICAL_FAILURE"></span><span id="mp_status_flag_service_non_critical_failure"></span>**ERRORE NON CRITICO DEL SERVIZIO DEL FLAG DI STATO \_ \_ \_ \_ \_ \_ MP**
 </dt> <dd>
 
 La correzione delle minacce non è riuscita in modo non critico.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_HEALTH_INITIALIZED"></span><span id="mp_status_flag_health_initialized"></span>**\_stato del flag di stato MP \_ \_ \_ inizializzato**
+<span id="MP_STATUS_FLAG_HEALTH_INITIALIZED"></span><span id="mp_status_flag_health_initialized"></span>**INTEGRITÀ \_ DEL FLAG DI STATO MP \_ \_ \_ INIZIALIZZATA**
 </dt> <dd>
 
 Nessun flag di stato impostato (stato ben inizializzato).
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_DUE_PLATFORM_UPDATE"></span><span id="mp_status_flag_due_platform_update"></span>**\_flag di stato MP \_ \_ a causa dell' \_ aggiornamento della piattaforma \_**
+<span id="MP_STATUS_FLAG_DUE_PLATFORM_UPDATE"></span><span id="mp_status_flag_due_platform_update"></span>**AGGIORNAMENTO \_ DELLA PIATTAFORMA DOVUTO AL FLAG DI \_ \_ \_ STATO \_ MP**
 </dt> <dd>
 
 La piattaforma non è aggiornata.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_INPROGRESS_PLATFORM_UPDATE"></span><span id="mp_status_flag_inprogress_platform_update"></span>**\_aggiornamento della \_ \_ piattaforma di inesecuzione del flag di \_ stato MP \_**
+<span id="MP_STATUS_FLAG_INPROGRESS_PLATFORM_UPDATE"></span><span id="mp_status_flag_inprogress_platform_update"></span>**MP \_ STATUS \_ FLAG \_ INPROGRESS \_ PLATFORM \_ UPDATE**
 </dt> <dd>
 
 Aggiornamento della piattaforma in corso.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_PLATFORM_ABOUT_TO_BE_OUTDATED"></span><span id="mp_status_flag_platform_about_to_be_outdated"></span>**\_ \_ \_ piattaforma del flag di stato MP \_ \_ che sta per \_ essere \_ obsoleta**
+<span id="MP_STATUS_FLAG_PLATFORM_ABOUT_TO_BE_OUTDATED"></span><span id="mp_status_flag_platform_about_to_be_outdated"></span>**LA PIATTAFORMA DEL FLAG DI STATO MP \_ \_ STA PER ESSERE \_ \_ \_ \_ \_ OBSOLETA**
 </dt> <dd>
 
 La piattaforma sta per essere obsoleta
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_END_OF_LIFE"></span><span id="mp_status_flag_end_of_life"></span>**\_ \_ \_ fine \_ della durata del flag di stato MP \_**
+<span id="MP_STATUS_FLAG_END_OF_LIFE"></span><span id="mp_status_flag_end_of_life"></span>**FINE \_ DEL CICLO DI VITA DEL FLAG DI STATO \_ \_ \_ \_ MP**
 </dt> <dd>
 
-La fine del ciclo di vita della firma o della piattaforma è passata o è in sospeso.
+La firma o la fine del ciclo di vita della piattaforma è passata o è in sospeso.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_MAX"></span><span id="mp_status_flag_max"></span>**\_flag di \_ stato \_ massimo MP**
+<span id="MP_STATUS_FLAG_MAX"></span><span id="mp_status_flag_max"></span>**MP \_ STATUS \_ FLAG \_ MAX**
 </dt> <dd>
 
 Flag massimo valido.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_ALL"></span><span id="mp_status_flag_all"></span>**\_flag di stato MP \_ \_ All**
+<span id="MP_STATUS_FLAG_ALL"></span><span id="mp_status_flag_all"></span>**FLAG \_ DI STATO MP \_ \_ ALL**
 </dt> <dd>
 
 Valore massimo possibile.
@@ -262,9 +262,9 @@ Valore massimo possibile.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

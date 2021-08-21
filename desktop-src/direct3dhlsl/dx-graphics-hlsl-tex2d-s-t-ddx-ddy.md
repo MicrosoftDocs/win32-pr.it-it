@@ -1,6 +1,6 @@
 ---
-title: 'tex2D (riferimento HLSL): selezionare il livello mip'
-description: Campiota una trama 2D usando una sfumatura per selezionare il livello mip. | tex2D (informazioni di riferimento su HLSL)
+title: 'tex2D (informazioni di riferimento su HLSL): selezionare il livello mip'
+description: Campio una trama 2D usando una sfumatura per selezionare il livello mip. | tex2D (informazioni di riferimento su HLSL)
 ms.assetid: 0e8c32ed-d174-4045-9cbf-6c04586ea5bb
 keywords:
 - tex2D HLSL
@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118513154"
 ---
-# <a name="tex2d-hlsl-reference---select-the-mip-level"></a>tex2D (riferimento HLSL): selezionare il livello mip
+# <a name="tex2d-hlsl-reference---select-the-mip-level"></a>tex2D (informazioni di riferimento su HLSL): selezionare il livello mip
 
-Campiota una trama 2D usando una sfumatura per selezionare il livello mip.
+Campio una trama 2D usando una sfumatura per selezionare il livello mip.
 
 
 
@@ -50,7 +50,7 @@ Campiota una trama 2D usando una sfumatura per selezionare il livello mip.
 
 ## <a name="return-value"></a>Valore restituito
 
-Valore dei dati di trama.
+Valore dei dati della trama.
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -70,27 +70,27 @@ Valore dei dati di trama.
 
 ## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                              | Supportato                |
 |-----------------------------------------------------------|--------------------------|
 | [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì (solo pixel shader)  |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | sì (solo pixel shader) |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | sì (solo pixel shader) |
 | [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | sì (solo pixel shader) |
-| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no                       |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no                       |
 
 
 
  
 
-1.  Il riordinamento significativo del codice viene eseguito per spostare i calcoli delle sfumature al di fuori del controllo di flusso.
+1.  Il riordinamento significativo del codice viene eseguito per spostare i calcoli delle sfumature all'esterno del controllo di flusso.
 2.  Se il limite D3DPSHADERCAPS2 0 è impostato con \_ D3DD3DPSHADERCAPS2 0 GRADIENTINSTRUCTIONS, il compilatore esegue il mapping di questa funzione a \_ \_ texldd.
 
 ## <a name="remarks"></a>Commenti
 
-Quando il controllo di flusso è presente in uno shader, il risultato di un calcolo della sfumatura richiesto all'interno di un determinato percorso di ramo è ambiguo quando i pixel adiacenti possono scendere in percorsi di controllo di flusso separati. Pertanto, è considerato non valido usare qualsiasi operazione di pixel shader che richiede un calcolo della sfumatura in una posizione all'interno di un costrutto di controllo di flusso che può variare in pixel per una determinata primitiva in fase di rasterizzato. Se su entrambi i lati di **un'istruzione if** con l'attributo branch viene utilizzata una funzione sfumatura, potrebbe essere generato un errore del compilatore. Vedere [l'istruzione if (DirectX HLSL)](dx-graphics-hlsl-if.md).
+Quando il controllo di flusso è presente in uno shader, il risultato di un calcolo della sfumatura richiesto all'interno di un percorso di ramo specificato è ambiguo quando i pixel adiacenti possono scendere in percorsi di controllo di flusso separati. Pertanto, viene considerato non valido usare qualsiasi operazione di pixel shader che richiede l'esecuzione di un calcolo della sfumatura in una posizione all'interno di un costrutto di controllo di flusso che può variare in pixel per una determinata primitiva da rasterizzarsi. Se uno dei lati di **un'istruzione if** con l'attributo branch usa una funzione gradiente, potrebbe essere generato un errore del compilatore. Vedere [Istruzione if (DirectX HLSL).](dx-graphics-hlsl-if.md)
 
 ## <a name="see-also"></a>Vedi anche
 

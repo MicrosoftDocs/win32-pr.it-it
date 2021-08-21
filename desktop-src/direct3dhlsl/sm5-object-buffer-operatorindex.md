@@ -1,9 +1,9 @@
 ---
-title: 'Funzione buffer:: operator'
-description: 'Restituisce una variabile di risorsa di sola lettura. | Funzione buffer:: operator'
+title: Funzione Buffer::Operator
+description: Restituisce una variabile di risorsa di sola lettura. | Funzione Buffer::Operator
 ms.assetid: 6a9e1176-439b-4565-9c7e-957d7c4045f0
 keywords:
-- Scrittura diretta funzione operatore
+- Funzione operatore Direct Write
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0b811dd2409a00bb07f0b2441f6d57d4bd122f50
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
-ms.translationtype: HT
+ms.openlocfilehash: 6c2b89ec69fd81e4852be41521add3103b0b2e5472856cd6668f421ede46225a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104401852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118790433"
 ---
-# <a name="bufferoperator--function"></a>Funzione buffer:: operator
+# <a name="bufferoperator--function"></a>Funzione Buffer::Operator
 
 Restituisce una variabile di risorsa di sola lettura.
 
@@ -36,7 +36,7 @@ R Operator[](
 
 <dl> <dt>
 
-*pos* \[ in\]
+*pos* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -49,7 +49,7 @@ Posizione dell'indice.
 
 Tipo: **R**
 
-Variabile di sola lettura di una risorsa.
+Variabile di risorsa di sola lettura.
 
 ## <a name="remarks"></a>Commenti
 
@@ -57,7 +57,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -72,7 +72,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Buffer](sm5-object-buffer.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

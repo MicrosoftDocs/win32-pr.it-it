@@ -1,7 +1,7 @@
 ---
-description: Definisce il tipo di token che è possibile utilizzare per l'autenticazione con un endpoint.
+description: Definisce il tipo di token che possono essere usati per l'autenticazione con un endpoint.
 ms.assetid: 2048BD09-056F-47C1-AD2F-998DE6C52EA6
-title: Enumerazione UpdateEndpointAuthTokenType (UpdateEndpointAuth. h)
+title: Enumerazione UpdateEndpointAuthTokenType (UpdateEndpointAuth.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - UpdateEndpointAuth.h
-ms.openlocfilehash: c978841511b7cfff895a15936a41d169a8500927
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b9e3efbff48097dcede12d5c8d3117171ef622f20a3bf017b12c6d3ce13a1c00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118814713"
 ---
 # <a name="updateendpointauthtokentype-enumeration"></a>Enumerazione UpdateEndpointAuthTokenType
 
-Definisce il tipo di token che è possibile utilizzare per l'autenticazione con un endpoint.
+Definisce il tipo di token che possono essere usati per l'autenticazione con un endpoint.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,7 +50,7 @@ Non è necessario alcun token di autenticazione.
 <span id="ueattSAML11Token"></span><span id="ueattsaml11token"></span><span id="UEATTSAML11TOKEN"></span>**ueattSAML11Token**
 </dt> <dd>
 
-Il token di autenticazione per l'endpoint è un token WS-Security SAML (Security Assertion Markup Language) 1,1.
+Il token di autenticazione per l'endpoint è WS-Security token SAML (Security Assertion Markup Language) 1.1.
 
 </dd> </dl>
 
@@ -60,10 +60,10 @@ Il token di autenticazione per l'endpoint è un token WS-Security SAML (Security
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                              |
-| Intestazione<br/>                   | <dl> <dt>UpdateEndpointAuth. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>UpdateEndpointAuth. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                        |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                              |
+| Intestazione<br/>                   | <dl> <dt>UpdateEndpointAuth.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>UpdateEndpointAuth.idl</dt> </dl> |
 
 
 

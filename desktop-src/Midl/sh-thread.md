@@ -1,6 +1,6 @@
 ---
-title: parola chiave sh_thread
-description: La \_ parola chiave \ SH thread \ specifica che l'oggetto di sistema è un handle per un thread.
+title: sh_thread parola chiave
+description: La parola chiave \sh \_ thread\ specifica che l'oggetto di sistema è un handle per un thread.
 keywords:
 - sh_thread parola chiave MIDL
 topic_type:
@@ -11,16 +11,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 02/05/2021
-ms.openlocfilehash: 2c82dc41d2b1c7cba740c897ef6cea9094979cc3
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: 5cd3f5458e54ccd266f5ef0920b1cc79e1c0b42e35fac51f7ac353d22409aaa2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "104234427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118641333"
 ---
-# <a name="sh_thread-keyword"></a>\_parola chiave del thread SH
+# <a name="sh_thread-keyword"></a>Parola \_ chiave sh thread
 
-La parola chiave del **\_ thread SH** specifica che un oggetto `system_handle` include un handle per un thread.
+La **parola chiave sh \_ thread** specifica che un `system_handle` oggetto contiene un handle per un thread.
 
 ``` syntax
 [system_handle(sh_thread)]
@@ -32,11 +32,11 @@ La parola chiave del **\_ thread SH** specifica che un oggetto `system_handle` i
 
 Questa parola chiave è un parametro per [**system_handle**](system-handle.md).
 
-La documentazione di [**system_handle**](system-handle.md) contiene inoltre informazioni dettagliate sull'utilizzo facoltativo del parametro *Access-Rights* . Il comportamento predefinito è `DUPLICATE_SAME_ACCESS` per le specifiche della [funzione **DuplicateHandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle) .
+La [**system_handle**](system-handle.md) contiene anche informazioni dettagliate sull'uso facoltativo del *parametro access-rights.* Il comportamento predefinito è `DUPLICATE_SAME_ACCESS` in base alle specifiche della funzione [ **DuplicateHandle.**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
 
 ## <a name="remarks"></a>Commenti
 
-Per usare questa parola chiave con l' `system_handle` attributo, il `-target` flag deve essere impostato su `NT100` (o versione successiva) quando si esegue midl.exe.
+Per usare questa parola chiave con l'attributo , il flag deve essere impostato su `system_handle` `-target` `NT100` (o superiore) durante l'esecuzione midl.exe.
 
 ## <a name="examples"></a>Esempio
 
@@ -51,8 +51,8 @@ interface MyInterface : IUnknown
 
 | &nbsp; | &nbsp; |
 |-|-|
-| Client minimo supportato | Aggiornamento dell'anniversario di Windows 10 (versione 1607, Build 14393) |
-| Server minimo supportato | Windows Server 2016 (Build 14393) |
+| Client minimo supportato | Windows 10 Aggiornamento dell'anniversario (versione 1607, build 14393) |
+| Server minimo supportato | Windows Server 2016 (build 14393) |
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -67,8 +67,8 @@ interface MyInterface : IUnknown
 [Sicurezza dei thread e diritti di accesso](../procthread/thread-security-and-access-rights.md)
 </dt> <dt>
 
-[**CreateThread** (funzione)](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread)
+[**Funzione CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread)
 </dt> <dt>
 
-[**OpenThread** (funzione)](/windows/win32/api/processthreadsapi/nf-processthreadsapi-openthread)
+[**Funzione OpenThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-openthread)
 </dt> </dl>

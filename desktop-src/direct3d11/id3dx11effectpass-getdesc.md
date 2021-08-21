@@ -1,11 +1,11 @@
 ---
-title: Metodo getdesc ID3DX11EffectPass (D3dx11effect. h)
-description: Ottenere una descrizione del passaggio.
+title: Metodo ID3DX11EffectPass GetDesc (D3dx11effect.h)
+description: Ottenere una descrizione del pass.
 ms.assetid: 423766be-96b2-4038-834e-34125789e8b1
 keywords:
-- Metodo getdesc Direct3D 11
-- Metodo getdesc Direct3D 11, interfaccia ID3DX11EffectPass
-- Interfaccia ID3DX11EffectPass Direct3D 11, metodo getdesc
+- Metodo GetDesc Direct3D 11
+- Metodo GetDesc Direct3D 11, interfaccia ID3DX11EffectPass
+- ID3DX11EffectPass interface Direct3D 11 , GetDesc method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a85a8c08faa100ecb3987a1a1421613d9c448b8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cfd75b5b23e253715af33c712fe957ae057b681f715a60fa37d4451c3fc76232
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118535067"
 ---
-# <a name="id3dx11effectpassgetdesc-method"></a>Metodo ID3DX11EffectPass:: getdesc
+# <a name="id3dx11effectpassgetdesc-method"></a>Metodo ID3DX11EffectPass::GetDesc
 
-Ottenere una descrizione del passaggio.
+Ottenere una descrizione del pass.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,9 +46,9 @@ HRESULT GetDesc(
 *pDesc* 
 </dt> <dd>
 
-Tipo: **[ **D3DX11 \_ pass \_ desc**](d3dx11-pass-desc.md)\***
+Tipo: **[ **D3DX11 \_ PASS \_ DESC**](d3dx11-pass-desc.md)\***
 
-Un puntatore a una descrizione Pass (vedere [**D3DX11 \_ pass \_ desc**](d3dx11-pass-desc.md)).
+Puntatore a una descrizione del passaggio (vedere [**D3DX11 \_ PASS \_ DESC).**](d3dx11-pass-desc.md)
 
 </dd> </dl>
 
@@ -56,14 +56,14 @@ Un puntatore a una descrizione Pass (vedere [**D3DX11 \_ pass \_ desc**](d3dx11-
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei seguenti [codici restituiti Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
-Un passaggio è un blocco di codice che imposta lo stato di rendering e gli shader, che a sua volta imposta buffer costanti, sampler e trame. Una tecnica degli effetti contiene uno o più passaggi.
+Un passaggio è un blocco di codice che imposta lo stato di rendering e gli shader (che a loro volta imposta buffer costanti, campionatori e trame). Una tecnica di effetto contiene uno o più passaggi.
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -73,8 +73,8 @@ Un passaggio è un blocco di codice che imposta lo stato di rendering e gli shad
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

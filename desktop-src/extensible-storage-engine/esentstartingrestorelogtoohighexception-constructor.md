@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentStartingRestoreLogTooHighException'
+description: Altre informazioni sul costruttore EsentStartingRestoreLogTooHighException
 title: Costruttore EsentStartingRestoreLogTooHighException
 TOCTitle: 'EsentStartingRestoreLogTooHighException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentStartingRestoreLogTooHighException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 29e49aa99d30d2bb1812fab244e25d78c1305441
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3cf57514a3f2bd9722cbf4bc7f594bb0ca1c5a4e33dc01446a30d9ad3ee7618d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118769817"
 ---
 # <a name="esentstartingrestorelogtoohighexception-constructor"></a>Costruttore EsentStartingRestoreLogTooHighException
 
 Inizializza una nuova istanza della classe EsentStartingRestoreLogTooHighException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentStartingRestoreLogTooHighException()
 
 [Membri di EsentStartingRestoreLogTooHighException](./esentstartingrestorelogtoohighexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

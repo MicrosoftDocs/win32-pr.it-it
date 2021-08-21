@@ -3,8 +3,8 @@ title: Interfaccia IResultProperty (WdsSharedIDL.h)
 description: Espone le proprietà dei risultati.
 ms.assetid: 58d8c516-47c6-4cae-b46c-5127baf3054d
 keywords:
-- Interfaccia IResultProperty Funzionalità dell'Windows legacy
-- Interfaccia IResultProperty Legacy Windows Environment Features , descritta
+- Interfaccia IResultProperty Legacy Windows'ambiente
+- Interfaccia IResultProperty Legacy Windows dell'ambiente , descritta
 topic_type:
 - apiref
 api_name:
@@ -31,7 +31,7 @@ Espone le proprietà dei risultati.
 
 ## <a name="members"></a>Membri
 
-**L'interfaccia IResultProperty** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IResultProperty** ha anche questi tipi di membri:
+**L'interfaccia IResultProperty** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IResultProperty** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
@@ -61,10 +61,10 @@ Espone le proprietà dei risultati.
 |:---------------------------------------------------------------------------|:---------------------|:------------------------------------------------------|
 | [**Datatype**](-search-2x-iresultproperty-datatype.md)<br/>         | Sola lettura<br/> | Tipo di dati properties. <br/>                   |
 | [**Displayname**](-search-2x-iresultproperty-displayname.md)<br/>   | Sola lettura<br/> | Nome visualizzato localizzato della proprietà. <br/>   |
-| [**DisplayState**](-search-2x-iresultproperty-displaystate.md)<br/> | Sola lettura<br/> | Vitalità della proprietà. <br/>               |
+| [**DisplayState**](-search-2x-iresultproperty-displaystate.md)<br/> | Sola lettura<br/> | Fattibilità della proprietà. <br/>               |
 | [**Suggerimento**](-search-2x-iresultproperty-hint.md)<br/>                 | Sola lettura<br/> | Valore speciale utilizzato per facilitare il recupero dei dati. <br/> |
 | [**IndexColumn**](-search-2x-iresultproperty-indexcolumn.md)<br/>   | Sola lettura<br/> | Nome della colonna Properties nell'indice. <br/>      |
-| [**UID**](-search-2x-iresultproperty-uid.md)<br/>                   | Sola lettura<br/> | Identificatore univoco per la proprietà. <br/>       |
+| [**UID**](-search-2x-iresultproperty-uid.md)<br/>                   | Sola lettura<br/> | Identificatore univoco della proprietà. <br/>       |
 
 
 
@@ -81,7 +81,7 @@ Questi sono gli elementi che restituiscono proprietà.
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/>                                      |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 con SP1 \[\]<br/>                             |
+| Server minimo supportato<br/> | Windows Solo Server 2003 con app desktop SP1 \[\]<br/>                             |
 | Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 3.0<br/>                                               |
 | Intestazione<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 

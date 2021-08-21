@@ -3,7 +3,7 @@ title: Metodo GoBack IResultProperty
 description: Riservato. | Metodo GoBack IResultProperty
 ms.assetid: e6f3106e-fe66-4341-ab0f-1683984f2cb3
 keywords:
-- Metodo GoBack Funzionalità dell'ambiente Windows legacy
+- Metodo GoBack Funzionalità dell'Windows legacy
 - Metodo GoBack Legacy Windows Environment Features , interfaccia IResultProperty
 - Interfaccia IResultProperty Legacy Windows Environment Features , metodo GoBack
 ms.topic: reference

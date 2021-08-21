@@ -1,33 +1,33 @@
 ---
-description: Notifica di CBasePin delle modifiche allo stato del filtro
+description: Notifica a CBasePin delle modifiche dello stato del filtro
 ms.assetid: 521ba95b-1f2d-4ad0-ab9b-4f1e3343a2d3
-title: Notifica di CBasePin delle modifiche allo stato del filtro
+title: Notifica a CBasePin delle modifiche dello stato del filtro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49dad6fabc162eb2384283ce2fc8914f76707036
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7193402331f150f88217e2d200279e93314c40a9056f52bc31d8100106d4f960
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104341751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118152995"
 ---
-# <a name="notifying-cbasepin-of-filter-state-changes"></a>Notifica di CBasePin delle modifiche allo stato del filtro
+# <a name="notifying-cbasepin-of-filter-state-changes"></a>Notifica a CBasePin delle modifiche dello stato del filtro
 
-La classe **CBasePin** riceve una notifica ogni volta che lo stato del filtro proprietario viene modificato. Per ogni transizione di stato, il filtro chiama un metodo corrispondente sul pin, come illustrato nella tabella seguente.
+La **classe CBasePin** viene notificata ogni volta che cambia lo stato del filtro proprietario. Per ogni transizione di stato, il filtro chiama un metodo corrispondente sul segnaposto, come illustrato nella tabella seguente.
 
 
 
 | Nuovo stato filtro | Metodo CBasePin                                 |
 |------------------|-------------------------------------------------|
-| Arrestato          | [**CBasePin:: inactive**](cbasepin-inactive.md) |
-| Paused           | [**CBasePin:: Active**](cbasepin-active.md)     |
-| In esecuzione          | [**CBasePin:: Run**](cbasepin-run.md)           |
+| Arrestato          | [**CBasePin::Inactive**](cbasepin-inactive.md) |
+| Paused           | [**CBasePin::Active**](cbasepin-active.md)     |
+| In esecuzione          | [**CBasePin::Run**](cbasepin-run.md)           |
 
 
 
  
 
-La classe derivata deve eseguire l'override di questi metodi per rispondere alla modifica dello stato. A seconda del filtro, il PIN potrebbe avviare un thread di lavoro che fornisce esempi, eseguire il commit o il decommit dell'allocatore di memoria e così via.
+La classe derivata deve eseguire l'override di questi metodi per rispondere alla modifica dello stato. A seconda del filtro, il pin potrebbe avviare un thread di lavoro che fornisce campioni, esegue il commit o il decommit dell'allocatore di memoria e così via.
 
  
 

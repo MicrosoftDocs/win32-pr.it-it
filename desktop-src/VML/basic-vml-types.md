@@ -117,7 +117,7 @@ Un valore booleano è rappresentato come parola chiave che indica lo stato del f
 
 
 
-| Valore per true | Valore per false |
+| Valore true | Valore per false |
 |----------------|-----------------|
 | true           | false           |
 | sì            | no              |
@@ -208,11 +208,11 @@ Tutti i qualificatori [di unità CSS1](https://www.w3.org/pub/WWW/TR/REC-CSS1) s
 
  
 
-I numeri frazionari di EMUL non sono consentiti. Qualsiasi misura deve essere rappresentabile come numero integrale con segno a 32 bit di EMUL, limitando la grandezza di una misura a 2348 pollici, circa 59 metri o 65 metri. Poiché le misurazioni fanno sempre riferimento alle dimensioni di un rendering in un dispositivo di output nominalmente a schermo o a pagina, saranno sempre all'interno di questo intervallo.
+I numeri frazionari di EMUL non sono consentiti. Qualsiasi misura deve essere rappresentabile come numero integrale integrale con segno a 32 bit, limitando la grandezza di una misura a 2348 pollici, circa 59 metri o 65 metri. Poiché le misurazioni fanno sempre riferimento alle dimensioni di un rendering in un dispositivo di output nominalmente a schermo o a pagina, saranno sempre all'interno di questo intervallo.
 
 Si noti, tuttavia, che la rappresentazione non è appropriata per le misurazioni reali e che in cui vengono registrate (ad esempio, per registrare le dimensioni reali di un percorso) è necessario usare un'altra rappresentazione.
 
-Un'implementazione conforme è necessaria per mantenere valori che sono numeri esatti di EMUL. I valori rappresentati in qualsiasi altro modo possono essere convertiti in un valore EMU e archiviati in questo modo. Un'applicazione è autorizzata a registrare i valori generati internamente in qualsiasi unità appropriata. Tuttavia, un valore letto da un documento esistente deve essere mantenuto con la precisione originale completa o deve essere convertito in un valore EMU.
+Un'implementazione conforme è necessaria per mantenere valori che sono numeri esatti di EMUL. I valori rappresentati in qualsiasi altro modo possono essere convertiti in un valore EMU e archiviati in questo modo. Un'applicazione è autorizzata a registrare i valori generati internamente in qualsiasi unità appropriata. tuttavia, un valore letto da un documento esistente deve essere mantenuto con la precisione originale completa o deve essere convertito in un valore EMU.
 
 Se l'implementazione non è in grado di eseguire questa operazione, deve avvisare l'utente che i dati potrebbero andare persi. È accettabile generare un avviso di questo tipo una volta quando vengono rilevati dati generati esternamente per la prima volta.
 
@@ -240,7 +240,7 @@ measure
 
 Una misura è una quantità che può essere una [lunghezza](#length) o una [frazione.](#fraction) Ciò è molto simile alle misurazioni della lunghezza HTML e CSS, che in molti casi possono essere misurazioni fisiche o percentuali di un'altra quantità. Se non viene specificato alcun identificatore di unità, è necessario presumere che il valore sia una frazione decimale, pertanto questo comportamento viene ereditato dalla frazione e non dalla lunghezza.
 
-A differenza della lunghezza, un valore in pixel ha un significato definito dal contesto, quindi la conversione in emu è in genere inappropriata. Esistono tre possibili rappresentazioni fondamentali che l'implementazione deve mantenere( ad esempio, una rappresentazione non può essere convertita in un'altra senza perdita di informazioni).
+A differenza della lunghezza, un valore in pixel ha un significato definito dal contesto, pertanto la conversione in emu è in genere inappropriata. Esistono tre possibili rappresentazioni fondamentali che l'implementazione deve mantenere( ad esempio, una rappresentazione non può essere convertita in un'altra senza perdita di informazioni).
 
 1.  Un valore frazionario deve essere mantenuto nel formato [frazionario](#fraction) (un valore " f ").
 2.  Una lunghezza fisica deve essere mantenuta in EMU.
@@ -266,9 +266,9 @@ angle
 
 La rappresentazione fondamentale di un angolo è un numero di gradi multiplo di 2 6 (65536) e archiviato come numero intero. Poiché lo spazio delle coordinate è invertito (l'asse y positivo è in basso), un angolo in senso orario è positivo. Un'implementazione conforme è necessaria per mantenere la precisione completa di tale valore.
 
-Un'implementazione può usare qualsiasi intervallo per gli angoli e può normalizzare un angolo (ad esempio da -180 a +180 o da 0 a 360). Le implementazioni non devono essere coerenti. Tuttavia, la rappresentazione integrale di un angolo non deve superare l'intervallo di un intero con segno a 32 bit.
+Un'implementazione può usare qualsiasi intervallo per gli angoli e può normalizzare un angolo (ad esempio da -180 a +180 o da 0 a 360). Non è necessario che le implementazioni siano coerenti. Tuttavia, la rappresentazione integrale di un angolo non deve superare l'intervallo di un intero con segno a 32 bit.
 
-Il suffisso fd viene usato per identificare questa rappresentazione di un angolo (grado frazionario). Si noti che si distingue dal suffisso f per una frazione senza dimensione, anche se è possibile usare un'aritmetica identica per supportarla. Il valore predefinito per un valore angolare è gradi semplici, ad esempio un valore non scalato. Questo può anche essere segnalato con il suffisso " " (simbolo di grado); Tuttavia, l'uso di questo dipende dalla presenza di una codifica del documento appropriata. Di conseguenza, anche il suffisso deg viene definito in gradi medio. Di seguito è riportato il set completo di possibili funzionalità.
+Il suffisso fd viene usato per identificare questa rappresentazione di un angolo (grado frazionario). Si noti che si distingue dal suffisso f per una frazione senza dimensione, anche se è possibile usare un'aritmetica identica per supportarla. Il valore predefinito per un valore angolare è i gradi semplici, ad esempio un valore non ridimensionato. Può anche essere segnalato con il suffisso " " (simbolo di grado); Tuttavia, l'uso di questo valore dipende dalla presenza di una codifica del documento appropriata. Di conseguenza, anche il suffisso deg viene definito per indicare i gradi. Di seguito è riportato il set completo di possibili funzionalità.
 
 
 
@@ -284,16 +284,16 @@ Il suffisso fd viene usato per identificare questa rappresentazione di un angolo
 
 ### <a name="alternative-representations"></a>Rappresentazioni alternative
 
-La trasformazione di ridimensionamento presenta discontinuità in multipli dispari di 45 . È quindi estremamente importante che la conversione di qualsiasi quantità inesatta sia ben definita. Per questo motivo, l'aritmetica della conversione viene definita per arrotondare verso meno infinito.
+La trasformazione del ridimensionamento presenta discontinuità in multipli dispari di 45 . È quindi estremamente importante che la conversione di qualsiasi quantità inesatta sia ben definita. Per questo motivo, l'aritmetica della conversione viene definita per arrotondare verso meno infinito.
 
-Poiché questa operazione può essere difficile o impossibile da garantire in alcune implementazioni, l'uso di quanto segue è definito come funzionalità di livello 3:
+Poiché ciò può essere difficile o impossibile da garantire in alcune implementazioni, l'uso di quanto segue è definito come una funzionalità di livello 3:
 
 1.  Qualsiasi valore di grado frazionario.
-2.  Qualsiasi valore radiante
+2.  Qualsiasi valore in radianti
 
-Pertanto, i valori completi fd e valori integrali non qualificati o valori integrali qualificati deg o devono essere gestiti esattamente da un'implementazione di livello 0 conforme; non è necessario che altri valori. È consigliabile che qualsiasi implementazione gestirà esattamente la conversione da un valore di grado frazionario a un valore di grado scalato (fd). Questa operazione può essere eseguita senza supporto a virgola mobile.
+Pertanto, i valori completi fd e valori integrali non qualificati o i valori integrali qualificati deg o devono essere gestiti esattamente da un'implementazione di livello 0 conforme; gli altri valori non devono essere necessari. È consigliabile che qualsiasi implementazione gestirà esattamente la conversione da un valore di grado frazionario a un valore di grado ridimensionato (fd). Questa operazione può essere eseguita senza supporto a virgola mobile.
 
-I requisiti più esatti per la conversione distinguono fd da f.
+I requisiti più precisi per la conversione distinguono fd da f.
 
 [![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
@@ -307,12 +307,12 @@ c
 
 
 
-I colori sono una parte essenziale della grafica computer moderna. La proposta usa i metodi stabiliti per specificare i colori fissi. Tuttavia, i colori nei diagrammi sono raramente semplici colori statici; sono spesso derivati da altri elementi nel diagramma. Gran parte di queste informazioni è molto specifica dell'applicazione, quindi questa proposta offre due meccanismi molto semplici per specificare tale comportamento:
+I colori sono una parte essenziale della grafica moderna. La proposta usa i metodi stabiliti per specificare i colori fissi. Tuttavia, i colori nei diagrammi sono raramente semplici colori statici. spesso derivano da altri elementi del diagramma. Gran parte di queste informazioni è molto specifica dell'applicazione, quindi questa proposta fornisce due meccanismi molto semplici per specificare tale comportamento:
 
 1.  Un colore può essere derivato da un altro colore nella stessa forma.
 2.  Un numero ridotto di operazioni aritmetiche viene definito per la derivazione o la modifica di un colore.
 
-Il meccanismo di forma del prototipo integra questa impostazione, in modo da consentire la definizione dei prototipi da cui è possibile ereditare i colori.
+Il meccanismo di forma del prototipo integra questo meccanismo, in modo da consentire la definizione dei prototipi da cui è possibile ereditare i colori.
 
 
 ```HTML
@@ -322,31 +322,31 @@ color
 
 
 
-Un valore di colore è un superset della [definizione del colore CSS1.](https://www.w3.org/pub/WWW/TR/REC-CSS1#color-units) Le estensioni consentono di determinare il valore del colore RGB da altri colori all'interno della forma o da una combinazione di colori complessiva definita tramite CSS1.
+Un valore di colore è un superset della [definizione di colore CSS1.](https://www.w3.org/pub/WWW/TR/REC-CSS1#color-units) Le estensioni consentono di determinare il valore del colore RGB da altri colori all'interno della forma o da una combinazione colori complessiva definita tramite CSS1.
 
-Se il valore di un elemento è definito  come colore, il contenuto di un elemento definisce il valore del colore tramite un singolo token di colore modificato facoltativamente da un'operazione aritmetica sul colore RGB corrispondente.
+Se il valore di un elemento è definito  come colore, il contenuto di un elemento definisce il valore del colore tramite un token di colore singolo modificato facoltativamente da un'operazione aritmetica sul colore RGB corrispondente.
 
 [![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
-### <a name="color-units"></a>Unità di colore
+### <a name="color-units"></a>Unità colore
 
-Il set completo di token di colore provengono da diverse origini: HTML, CSS1 e questa proposta. Vengono definiti come segue usando la notazione [di CSS1](https://www.w3.org/pub/WWW/TR/REC-CSS1) o la notazione XPointer definita per il collegamento XML.
+Il set completo di token di colore deriva da diverse origini: HTML, CSS1 e questa proposta. Vengono definiti come segue usando la notazione [css1](https://www.w3.org/pub/WWW/TR/REC-CSS1) o la notazione XPointer definita per il collegamento XML.
 
-Nelle definizioni di XPointer l'origine della posizione è l'elemento che contiene il valore del colore e l'espressione fa riferimento all'intero set di elementi della forma come se tutti gli elementi del prototipo di base fossero stati uniti alla forma. Se l'elemento corrispondente non esiste, al suo posto viene usato il valore predefinito per tale elemento.
+Nelle definizioni XPointer l'origine della posizione è l'elemento contenente il valore del colore e l'espressione fa riferimento all'intero set di elementi della forma come se tutti gli elementi del prototipo di base fossero stati uniti alla forma. Quando l'elemento corrispondente non esiste, al suo posto viene usato il valore predefinito per tale elemento.
 
 
 
 | Color            | Definizione                                                                                                  | Level | Descrizione                                                                                                                                                               |
 |------------------|-------------------------------------------------------------------------------------------------------------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | name             | Vedere di seguito                                                                                                   | 0     | Nome del colore HTML, come elencato nella tabella seguente.                                                                                                                            |
-| \#rr'gg'bb'      | \#rr'gg'bb'                                                                                                 | 0     | Rappresentazione del colore CSS1/sRGB standard usando valori nell'intervallo 0,255 rappresentato usando 2 cifre esadecimali ognuna.                                                     |
+| \#rr'gg'bb'      | \#rr'gg'bb'                                                                                                 | 0     | Rappresentazione dei colori CSS1/sRGB standard usando valori nell'intervallo 0..255 rappresentati usando 2 cifre esadecimali ciascuna.                                                     |
 | \#Rgb            | \#rrggbb                                                                                                    | 1     | Formato CSS1 abbreviato con solo tre cifre esadecimali.                                                                                                                   |
-| rgb(r,g,b)       | \#(r) (g) (b)                                                                                                 | 1     | Modulo rgb CSS1; Gli elementi del valore rgb vengono convertiti come definito in [CSS1.](https://www.w3.org/pub/WWW/TR/REC-CSS1#color-units)                                      |
-| fill             | predecessore(1,forma)<br/> child(1, fill)<br/> child(1, color)<br/>                           | 1     | Colore di riempimento in primo piano della forma.                                                                                                                                   |
-| fillBack         | predecessore(1,forma)<br/> child(1, fill)<br/> child(1, indietro)<br/> child(1, color)<br/> | 1     | Colore di sfondo del riempimento della forma.                                                                                                                                   |
-| line             | predecessore(1,forma)<br/> child(1, line)<br/> child(1, color)<br/>                           | 1     | Colore della linea in primo piano della forma.                                                                                                                                   |
-| lineBack         | predecessore(1,forma)<br/> child(1, line)<br/> child(1,back) <br/> child(1, color)<br/> | 1     | Colore della linea di sfondo della forma.                                                                                                                                   |
-| lineOrFill       | line, fill                                                                                                  | 1     | Valore della riga se non è predefinito, in caso contrario il valore di riempimento. In questo modo viene restituito in modo efficace il colore che si trova sul bordo della forma.                                           |
+| rgb(r,g,b)       | \#(r) (g) (b)                                                                                                 | 1     | Formato rgb CSS1; Gli elementi del valore rgb vengono convertiti come definito in [CSS1.](https://www.w3.org/pub/WWW/TR/REC-CSS1#color-units)                                      |
+| fill             | ancestor(1,shape)<br/> child(1, fill)<br/> child(1, color)<br/>                           | 1     | Colore di riempimento in primo piano della forma.                                                                                                                                   |
+| fillBack         | ancestor(1,shape)<br/> child(1, fill)<br/> child(1, back)<br/> child(1, color)<br/> | 1     | Colore di sfondo del riempimento della forma.                                                                                                                                   |
+| line             | ancestor(1,shape)<br/> child(1, line)<br/> child(1, color)<br/>                           | 1     | Colore della linea di primo piano della forma.                                                                                                                                   |
+| lineBack         | ancestor(1,shape)<br/> child(1, line)<br/> child(1,back) <br/> child(1, color)<br/> | 1     | Colore della linea di sfondo della forma.                                                                                                                                   |
+| lineOrFill       | line, fill                                                                                                  | 1     | Valore della riga se non è impostato sul valore predefinito; in caso contrario, il valore di riempimento. In questo modo viene restituito in modo efficace il colore che si trova sul bordo della forma.                                           |
 | fillThenLine     | riempimento, riga                                                                                                  | 1     | Valore di riempimento se non è predefinito, in caso contrario il valore della riga. In questo modo viene restituito il colore principale della forma (se la forma non è riempita, il risultato sarà il colore della linea).   |
 | shadow           | predecessore(1,forma)<br/> child(1, shadow)<br/> child(1, color)<br/>                         | 2     | Colore dell'ombreggiatura (si tratta di una funzionalità di livello 2).                                                                                                                      |
 | scheme           | Vedere di seguito                                                                                                   | 1     | Colore della combinazione dello schema definito per il documento. vedere di seguito.                                                                                                       |
@@ -464,28 +464,28 @@ Questo tag consente di definire fino a otto colori dello schema. I colori non de
 |-------|-------------------|-------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | 0     | scheme.background | Sfondo                    | Colore usato per lo sfondo di un elemento grafico (e, spesso, per l'intera pagina).                                    |
 | 1     | scheme.text       | Testo e righe                | Colore del testo associato a una forma e del colore della linea standard.                                                      |
-| 2     | scheme.shadow     | Ombreggiature                       | Colore ombreggiatura standard: il colore usato in genere per le ombreggiature della forma.                                                     |
-| 3     | scheme.title      | Testo titolo                    | Colore da usare per il testo dell'intestazione o del titolo.                                                                              |
+| 2     | scheme.shadow     | Ombreggiature                       | Colore ombreggiatura standard: il colore usato in genere per le ombreggiature delle forme.                                                     |
+| 3     | scheme.title      | Testo titolo                    | Colore da utilizzare per il testo dell'intestazione o del titolo.                                                                              |
 | 4     | scheme.fill       | Riempie                         | Colore di riempimento standard: il colore usato in genere per riempire le forme.                                                          |
 | 5     | scheme.accent     | Accento                        | Colore "evidenziazione" normale usato per evidenziare un elemento importante di un elemento grafico.                                             |
-| 6     | scheme.hyperlink  | Accento e collegamento ipertestuale          | Colore di evidenziazione usato per i collegamenti ipertestuali. Può essere usato per altri scopi in cui il colore indica un collegamento ad altre informazioni. |
-| 7     | scheme.followed   | Collegamento ipertestuale con accenti e seguiti | Colore di evidenziazione per i collegamenti ipertestuali seguiti; appropriato anche per i collegamenti "all'indietro".                                         |
+| 6     | scheme.hyperlink  | Carattere principale e collegamento ipertestuale          | Colore di evidenziazione usato per i collegamenti ipertestuali. Può essere usato per altri scopi in cui il colore indica un collegamento ad altre informazioni. |
+| 7     | scheme.followed   | Collegamento ipertestuale con caratteri accentati e seguiti | Colore di evidenziazione per i collegamenti ipertestuali seguiti; appropriato anche per i collegamenti "indietro".                                         |
 
 
 
  
 
-È possibile fare riferimento a un colore dello schema in base al nome o all'indice, quindi scheme.fill e scheme(4) sono dello stesso colore.
+È possibile fare riferimento a un colore dello schema in base al nome o all'indice, pertanto scheme.fill e scheme(4) sono dello stesso colore.
 
-I colori dello schema non partecipano alla combinazione predefinita se non viene specificato un colore. Un colore di riempimento non specificato deve sempre essere interpretato come bianco, indipendentemente dal colore della combinazione 4. I colori "accentati" devono essere in contrasto con i colori di sfondo (0) e di riempimento (4) e i colori del testo e del titolo devono avere la stessa proprietà. Una tecnica standard consiste nel colorare gli accenti e il testo standard senza colore (in genere nero o bianco).
+I colori dello schema non partecipano alla combinazione predefinita se non viene specificato un colore. Un colore di riempimento non specificato deve sempre essere interpretato come bianco, indipendentemente dal colore dello schema 4. I colori "accentati" devono essere in contrasto con i colori di sfondo (0) e di riempimento (4) e i colori del testo e del testo del titolo devono avere la stessa proprietà. Una tecnica standard consiste nel colorare gli accenti e il testo standard senza colori (in genere nero o bianco).
 
 [![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
 ### <a name="system-colors"></a>Colori di sistema
 
-Le applicazioni talvolta registrano i colori in base alle impostazioni del sistema operativo all'interno della grafica. In genere sono temporanei e non devono essere scritti; le definizioni di systemcolor esistono esclusivamente per supportare questa operazione. Un colore di sistema viene introdotto definendo un tag appropriato in un nuovo spazio dei nomi e inserendo le informazioni appropriate nel contenuto dell'elemento.
+Le applicazioni talvolta registrano i colori in base alle impostazioni del sistema operativo all'interno della grafica. In genere sono temporanei e non devono essere scritti; Le definizioni systemcolor esistono esclusivamente per supportare questa operazione. Un colore di sistema viene introdotto definendo un tag appropriato in un nuovo spazio dei nomi e inserendo le informazioni appropriate nel contenuto dell'elemento.
 
-Questa proposta definisce un tag di questo tipo per codificare Windows colori dell'interfaccia utente definiti nel file di intestazione winuser.h.
+Questa proposta definisce un tag di questo tipo per codificare i Windows dell'interfaccia utente definiti nel file di intestazione winuser.h.
 
 
 ```HTML
@@ -495,7 +495,7 @@ win.color
 
 
 
-Il contenuto dell'elemento è un singolo numero intero che contiene il valore della definizione COLOR \_ pertinente di winuser.h. Una tecnica simile può essere adottata per qualsiasi specifica di colore specifica del sistema o dell'applicazione. È consigliabile usare questa funzionalità solo per la compatibilità con le versioni precedenti.
+Il contenuto dell'elemento è un singolo numero intero che contiene il valore della definizione COLOR \_ pertinente da winuser.h. Una tecnica simile può essere adottata per qualsiasi specifica di colore specifica del sistema o dell'applicazione. È consigliabile usare questa funzionalità solo per la compatibilità con le versioni precedenti.
 
 [![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
@@ -509,13 +509,13 @@ pure
 
 
 
-Se l'elemento viene visualizzato in un valore di colore, è un suggerimento che il colore non deve essere approssimato <pure/> da un motivo dithering. Si tratta di una funzionalità di livello 1 e un'implementazione conforme non deve rispettarla. La designazione è importante per la grafica visualizzata nei dispositivi a risoluzione media, ad esempio i display video, in cui piccole funzionalità (ad esempio le linee) possono causare un aliasing non valido con colori dithering. Nei dispositivi come le stampanti, che normalmente dithering di tutti i colori tranne i pochi colori completamente saturi, il dithering è in genere sufficientemente fine per evitare questo problema.
+Se l'elemento viene visualizzato in un valore di colore, è un suggerimento che il colore non deve essere approssimato <pure/> da un motivo dithering. Si tratta di una funzionalità di livello 1 e un'implementazione conforme non deve rispettarla. La designazione è importante per la grafica visualizzata su dispositivi a media risoluzione, ad esempio schermi video, in cui piccole funzionalità (ad esempio linee) possono causare aliasing non valido con colori con dithering. Nei dispositivi come le stampanti, che in genere dithering di tutti i colori tranne i pochi colori completamente saturati, il dithering è in genere sufficientemente fine per evitare questo problema.
 
 [![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
 ### <a name="color-adjustments"></a>Regolazioni del colore
 
-Il colore di base può essere regolato dalle operazioni aritmetiche sul valore RGB. Queste operazioni vengono definite usando elementi aggiuntivi all'interno del valore del colore. Tali modifiche sono utili solo quando vengono applicate ai colori derivati da altri elementi. È valido specificare tale regolazione su un valore di colore fisso. Tuttavia, un'implementazione può ridurre questo valore al valore RGB corrispondente e archiviare tale valore anziché l'originale.
+Il colore di base può essere regolato da operazioni aritmetiche sul valore RGB. Queste operazioni vengono definite usando elementi aggiuntivi all'interno del valore del colore. Tali regolazioni sono utili solo se applicate ai colori derivati da altri elementi. È possibile specificare tale regolazione su un valore di colore fisso. Tuttavia, un'implementazione può ridurre questo valore al valore RGB corrispondente e archiviare tale valore anziché l'originale.
 
 Tutte le funzionalità di regolazione del colore descritte in questa sezione sono funzionalità di livello 1.
 
@@ -552,16 +552,16 @@ color.adj
 
 
 
-Il parametro delle prime sei operazioni è un singolo valore numerico integrale compreso tra 0 e 255. La regolazione viene eseguita sul valore RGB a 3x8bit come indicato di seguito:
+Il parametro delle prime sei operazioni è un singolo valore numerico integrale compreso nell'intervallo da 0 a 255. La regolazione viene eseguita sul valore RGB a 3 x 8 bit come segue:
 
-1.  Se viene specificato, il valore RGB viene sostituito da yyy, dove y è il valore di luminance (y') calcolato dal valore sRGB in seguito a <gray/> ITU-r BT.709. Questo calcolo è:
+1.  Se viene specificato , il valore RGB viene sostituito da yyy, dove y è il valore <gray/> di luminance (y') calcolato dal valore sRGB in dopo ITU-r BT.709. Il calcolo è il seguente:
     ```HTML
     y = 0 2125xr + 0 7154xg + 0 0721xb
     ```
 
     
 
-2.  Se viene specificata una modifica color.op, ogni componente viene regolato separatamente in base alla tabella seguente. c è il valore del componente e p è il valore color.parameter.
+2.  Se viene apportata una modifica a color.op, ogni componente viene regolato separatamente in base alla tabella seguente. c è il valore del componente e p è il valore color.parameter.
 
     | Operazione       | Formula                            |
     |-----------------|------------------------------------|
@@ -576,9 +576,9 @@ Il parametro delle prime sei operazioni è un singolo valore numerico integrale 
 
      
 
-    In ogni caso, se il valore del componente calcolato, c, supera 255, viene usato 255 e se è minore di 0, viene usato 0.
+    In ogni caso, se il valore del componente calcolato, c, supera 255, viene usato 255 e, se è minore di 0, viene usato 0.
 
-3.  Se viene specificato, il valore 128 viene sottratto o aggiunto a ogni componente a seconda che il componente sia minore o meno <INVERT128/> di 128.
+3.  Se viene specificato , il valore 128 viene sottratto o aggiunto a ogni componente a seconda che il componente sia minore o meno <INVERT128/> di 128.
     ```HTML
     if c < 128
         then
@@ -589,7 +589,7 @@ Il parametro delle prime sei operazioni è un singolo valore numerico integrale 
 
     
 
-4.  Se <invert/> specificato, ogni componente viene sostituito da 255 meno il valore del componente.
+4.  Se <invert/> viene specificato , ogni componente viene sostituito da 255 meno il valore del componente.
     ```HTML
     c := 255-c
     ```
@@ -610,9 +610,9 @@ font
 
 
 
-Un tipo di carattere viene identificato usando un attributo di stile come definito nella sezione [CSS1 5.2 (proprietà del tipo di carattere).](https://www.w3.org/pub/WWW/TR/REC-CSS1#font-properties) Il corpo dell'elemento del tipo di carattere non è attualmente definito, ma può essere usato in futuro per codificare le informazioni sul tipo di carattere standard. Le implementazioni iniziali di questa proposta devono mantenere ma non interpretare le informazioni.
+Un tipo di carattere viene identificato usando un attributo di stile come definito nella sezione [CSS1 5.2 (proprietà del tipo di carattere).](https://www.w3.org/pub/WWW/TR/REC-CSS1#font-properties) Il corpo dell'elemento del tipo di carattere non è attualmente definito, ma può essere usato in futuro per codificare le informazioni standard sul tipo di carattere. Le implementazioni iniziali di questa proposta devono mantenere ma non interpretare le informazioni.
 
-È possibile che in futuro verrà aggiunto il supporto per informazioni sul tipo di carattere out-of-line (tipi di carattere scaricabili o risorse del tipo di carattere condivise). Questa operazione verrà eseguita da un elemento di collegamento XML all'interno del contenuto dell'elemento del tipo di carattere, garantendo la compatibilità con le versioni precedenti con le implementazioni iniziali.
+È possibile che in futuro verrà aggiunto il supporto per le informazioni sui tipi di carattere out-of-line (tipi di carattere scaricabili o risorse dei tipi di carattere condivise). Questa operazione verrà eseguita da un elemento di collegamento XML all'interno del contenuto dell'elemento del tipo di carattere, garantendo la compatibilità con le versioni precedenti con le implementazioni iniziali.
 
 [![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
@@ -645,16 +645,16 @@ L'attributo di comportamento può essere usato per indicare come la bitmap deve 
 
 | token    | Descrizione                                                                                                                                                                                                                                                                             |
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Separato | Contrassegna la bitmap come entità separata, che non deve essere considerata parte integrante del documento. La bitmap non deve essere mantenuta con il documento. Se il documento viene copiato, la bitmap non deve essere copiata. se il documento viene spostato, la bitmap non deve essere spostata con esso. |
-| originale | L'attributo title identifica la posizione originale della bitmap come URL. In caso contrario, il significato del titolo non viene specificato.                                                                                                                                                          |
+| Separato | Contrassegna la bitmap come entità separata, che non deve essere considerata parte integrante del documento. La bitmap non deve essere mantenuta con il documento. Se il documento viene copiato, la bitmap non deve essere copiata; Se il documento viene spostato, la bitmap non deve essere spostata con esso. |
+| originale | L'attributo title identifica la posizione originale della bitmap come URL. In caso contrario, il significato del titolo non è specificato.                                                                                                                                                          |
 
 
 
  
 
-Questi valori sono entrambi hint per il comportamento previsto. L'opzione separata fa riferimento al comportamento dei dati a cui fa riferimento href. Se vengono specificati sia separati che originali, l'applicazione deve ignorare l'URI href e rigenerare la bitmap dai dati originali. Se viene specificato solo originale, è previsto che l'applicazione usi l'URI href per trovare la bitmap, ma può offrire all'utente la possibilità di rigenerarla.
+Questi valori sono entrambi hint per il comportamento previsto. L'opzione separata fa riferimento al comportamento dei dati a cui fa riferimento href. Se vengono specificati sia l'uri separato che quello originale, l'applicazione deve ignorare l'URI href e rigenerare la bitmap dai dati originali. Se viene specificato solo originale, è previsto che l'applicazione usi l'URI href per trovare la bitmap, ma può offrire all'utente la possibilità di rigenerarla.
 
-È valido impostare l'URI href e l'attributo title sullo stesso valore (lessicale). Questa operazione è appropriata se la bitmap a cui si fa riferimento non è "archiviata con" il documento. È previsto (anche se non obbligatorio) che href venga usato per la copia della bitmap del documento, che può essere eliminata se le forme di riferimento vengono eliminate, e tale titolo può essere usato per indicare una copia condivisa. Pertanto, se entrambi contengono lo stesso valore, non esiste alcuna copia specifica del documento.
+È possibile impostare l'URI href e l'attributo title sullo stesso valore (lessicale). Questa operazione è appropriata se la bitmap a cui si fa riferimento non viene "archiviata con" il documento. È previsto (anche se non obbligatorio) che href venga usato per la copia del documento della bitmap , che può essere eliminata se le forme di riferimento vengono eliminate, e tale titolo viene usato per indicare una copia condivisa. Pertanto, se entrambi contengono lo stesso valore, non esiste alcuna copia specifica del documento.
 
 Le applicazioni possono ignorare l'hint se non rientra nel modello di archiviazione effettivo dei dati XML.
 
@@ -662,21 +662,21 @@ Le applicazioni possono ignorare l'hint se non rientra nel modello di archiviazi
 
 ### <a name="picture-file-formats"></a>Formati di file di immagine
 
-Nel contesto di questa proposta, i dati esterni sono invariabilmente una bitmap o un file usato per produrre una bitmap. Al livello di rendering 0 non è necessario il formato bitmap esterno. I percorsi possono essere riempiti solo con colori a tinta unita. Per eseguire il rendering dell'intero set di riempimenti del livello di rendering 1, è necessario che siano supportate le bitmap. Il livello di rendering 1 include (solo) i formati seguenti:
+Nel contesto di questa proposta, i dati esterni sono invariabilmente una bitmap o un file usato per produrre una bitmap. Al livello di rendering 0 non è necessario il formato bitmap esterno. I percorsi possono essere riempiti solo con colori a tinta unita. Per eseguire il rendering del set completo di riempimenti del livello di rendering 1, è necessario che le bitmap siano supportate. Il livello di rendering 1 include (solo) i formati seguenti:
 
-1.  JFIF, ad esempio i dati in formato ISO/IEC 10918 incorporati in un file con l'intestazione JFIF (che può essere considerato come un marcatore APP0 specifico dopo soi maker) e includendo (solo) l'intervallo di formati JPEG supportati dal codice IJG v6.
+1.  JFIF, ovvero i dati in formato ISO/IEC 10918 incorporati all'interno di un file con l'intestazione JFIF (che può essere considerata come un marcatore APP0 specifico dopo SOI Maker) e includendo (solo) l'intervallo di formati JPEG supportati dal codice IJG v6.
 2.  PNG, come definito dalla specifica PNG versione 1.0.
 
 Il livello di rendering 2 include anche il supporto per gli elementi seguenti:
 
--   GIF, come definito dalla specifica GIF pubblicata da CompuServ nel 1987 (in genere denominata "GIF87a"). Anche GIF89a deve essere supportato a questo livello, a condizione che i dati non contengano blocchi di estensione che necessitano di un'interpretazione per visualizzare la bitmap diversa da estensioni di controllo grafico, senza alcun requisito per l'input dell'utente o un tempo di ritardo. In questo modo è possibile includere commenti, ma non l'estensione di testo normale. Un'applicazione può inserire estensioni dell'applicazione (0x21, 0xFF), ma, usando la terminologia di questa proposta, devono contenere solo dati di modifica, non di rendering.
+-   GIF, come definito dalla specifica GIF pubblicata da CompuServ nel 1987 (in genere denominata "GIF87a"). Anche GIF89a deve essere supportato a questo livello, soggetto alla restrizione che i dati non devono contenere blocchi di estensione che necessitano di interpretazione per visualizzare la bitmap diversa da estensioni di controllo graficocon il requisito di input dell'utente o un ritardo. In questo modo è possibile includere i commenti, ma non l'estensione di testo normale. Un'applicazione può inserire estensioni dell'applicazione (0x21, 0xFF), ma, usando la terminologia di questa proposta, queste devono contenere solo dati di modifica, non di rendering.
 
-Qualsiasi altro formato di dati usato nell'elemento grafico impone che l'elemento grafico sia almeno il livello di modifica 3 ed eventualmente il livello di rendering 3 (se i dati sono necessari per eseguire il rendering dell'immagine). Un'applicazione è invitata a pubblicare i formati supportati. Ad esempio, Microsoft Office i formati aggiuntivi seguenti in modo nativo e possono quindi scrivere dati di modifica in questo formato:
+Qualsiasi altro formato di dati usato nell'elemento grafico impone almeno il livello di modifica 3 ed eventualmente il livello di rendering 3 (se i dati sono necessari per il rendering dell'elemento grafico). Un'applicazione è invitata a pubblicare i formati supportati. Ad esempio, Microsoft Office supporta i formati aggiuntivi seguenti in modo nativo e pertanto può scrivere dati di modifica in questo formato:
 
-1.  WMF -- Windows metafile (formato Win 3.1)
+1.  WMF : Windows metafile (formato Win 3.1)
 2.  EMF : Windows metafile "avanzato" (formato Win32)
-3.  PICT: Mac OS file QUICKDraw PICT (tutte le versioni ma senza record QuickTime o altre estensioni)
-4.  BMP: Windows di file bitmap, "os/2" (BITMAPCORE), BITMAPINFO, BITMAPV4 e BITMAPV5
+3.  PICT : Mac OS file PICT QuickDraw (tutte le versioni ma senza record QuickTime o altre estensioni)
+4.  BMP: Windows formato di file bitmap, "os/2" (BITMAPCORE), BITMAPINFO, BITMAPV4 e BITMAPV5
 
 [![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
@@ -690,7 +690,7 @@ v
 
 
 
-Un percorso grafico vettoriale viene codificato come pcdata. Il contenuto dell'elemento v è misto, contenente una descrizione del percorso vettoriale facoltativamente parametrizzata con elementi p.
+Un percorso grafico vettoriale viene codificato come pcdata. Il contenuto dell'elemento v è misto e contiene una descrizione del percorso vettore facoltativamente parametrizzata con elementi p.
 
 [Tornare alla panoramica di VML](web-workshop---specs---standards----how-to-use-vml-on-web-pages.md)
 

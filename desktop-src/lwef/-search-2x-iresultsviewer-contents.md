@@ -3,9 +3,9 @@ title: Proprietà Contents di IResultsViewer (WdsView.h)
 description: Questa proprietà tiene traccia del tipo di contenuto visualizzato nella visualizzazione risultati.
 ms.assetid: fad3c9c9-9bf4-4725-962a-ae285bcd23d4
 keywords:
-- Proprietà Contents Funzionalità legacy Windows'ambiente
+- Proprietà Contents Legacy Windows Environment Features
 - Proprietà Contents Legacy Windows Environment Features , interfaccia IResultsViewer
-- Interfaccia IResultsViewer legacy Windows funzionalità dell'ambiente, proprietà Contents
+- Interfaccia IResultsViewer Legacy Windows Environment Features , proprietà Contents
 topic_type:
 - apiref
 api_name:
@@ -43,7 +43,7 @@ Restituisce un puntatore al tipo di contenuto visualizzato nella visualizzazione
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/>                                 |
-| Server minimo supportato<br/> | Windows Solo Server 2003 con app desktop SP1 \[\]<br/>                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 con SP1 \[\]<br/>                        |
 | Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                        |
 | Intestazione<br/>                   | <dl> <dt>WdsView.h</dt> </dl> |
 
