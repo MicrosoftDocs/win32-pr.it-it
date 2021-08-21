@@ -1,42 +1,42 @@
 ---
-title: Ottenere un identificatore di oggetto da Microsoft
-description: Per estendere correttamente lo schema di Active Directory è possibile ottenere un OID radice da uno script.
+title: Recupero di un identificatore di oggetto da Microsoft
+description: Per estendere correttamente lo schema di Active Directory, è possibile ottenere un OID radice da uno script.
 ms.assetid: 9ed2dd0a-620d-4856-a8a1-2d2a4468fd4c
 ms.tgt_platform: multiple
 keywords:
-- Ottenere un identificatore di oggetto da Microsoft
+- Recupero di un identificatore di oggetto da Microsoft
 ms.topic: article
 ms.date: 02/19/2021
-ms.openlocfilehash: 3daa03798afe8e887e8a33a2fde6bd04ddb5b7cb
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 6eceb154d6f8a11b2322e4ad573b5db7d390db8d9d22cdcdedbe1b3423bb3cda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104530450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025549"
 ---
-# <a name="obtaining-an-object-identifier-from-microsoft"></a>Ottenere un identificatore di oggetto da Microsoft
+# <a name="obtaining-an-object-identifier-from-microsoft"></a>Recupero di un identificatore di oggetto da Microsoft
 
-Per estendere correttamente lo schema di Active Directory è possibile ottenere un OID radice da uno script illustrato di seguito. I OID generati dallo script sono univoci. ne viene eseguito il mapping da un GUID univoco. Leggere attentamente le procedure consigliate perché la OID gestita in modo non corretto può causare la perdita di dati.
+Per estendere correttamente lo schema di Active Directory, è possibile ottenere un OID radice da uno script illustrato di seguito. Gli OID generati dallo script sono univoci. vengono mappati da un GUID univoco. Leggere attentamente le procedure consigliate poiché gli OID gestiti in modo non ottimale possono causare la perdita di dati.
 
 > [!Note]  
-> Per istruzioni su come ottenere un ID collegamento da Microsoft, vedere l'argomento [attributi collegati](linked-attributes.md) .
+> Per istruzioni su come ottenere un id collegamento da Microsoft, visitare [l'argomento Attributi](linked-attributes.md) collegati.
 
  
 
 ## <a name="after-you-have-obtained-a-base-oid"></a>Dopo aver ottenuto un OID di base
 
-Quando si dispone di un OID di base, prestare attenzione quando si decide come suddividere OID in categorie, perché questi OID sono contenuti nella tabella dei prefissi e fanno parte dei dati di replica del controller di dominio. È consigliabile creare non più di due categorie OID.
+Dopo aver creato un OID di base, prestare attenzione quando si decide come suddividere gli OID in categorie, perché questi OID sono contenuti nella tabella dei prefissi e fanno parte dei dati di replica del controller di dominio. È consigliabile creare non più di due categorie OID.
 
-È possibile creare OID successivi per nuove classi e attributi dello schema accodando le cifre all'OID nel formato OID. X, dove X può essere qualsiasi numero selezionato. Un'estensione dello schema comune utilizza generalmente la struttura seguente:
+È possibile creare OID successivi per nuove classi e attributi dello schema aggiungendo cifre all'OID sotto forma di OID. X, dove X può essere qualsiasi numero scelto. Un'estensione dello schema comune usa in genere la struttura seguente:
 
-Se l'OID di base assegnato è 1.2.840.113556.1.8000.999999, è possibile creare le categorie come indicato di seguito.
+Se l'OID di base assegnato è 1.2.840.113556.1.8000.999999, è possibile creare categorie come indicato di seguito.
 
 
 
 | Valore di base OID                            | Descrizione                                                                                                                                                                                        |
 |-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.2.840.113556.1.8000.999999.1<br/> | Classi di applicazioni<br/> La prima classe avrebbe l'OID 1.2.840.113556.1.8000.999999.1.1, la seconda classe avrebbe il 1.2.840.113556.1.8000.999999.1.2 OID e così via.<br/>    |
-| 1.2.840.113556.1.8000.999999.2<br/> | Attributi dell'applicazione<br/> L'OID del primo attributo è 1.2.840.113556.1.8000.999999.2.1, l'OID del secondo attributo è 1.2.840.113556.1.8000.999999.2.2 e così via.<br/> |
+| 1.2.840.113556.1.8000.999999.1<br/> | Classi di applicazioni<br/> La prima classe avrebbe l'OID 1.2.840.113556.1.8000.999999.1.1, la seconda avrebbe OID 1.2.840.113556.1.8000.999999.1.2 e così via.<br/>    |
+| 1.2.840.113556.1.8000.999999.2<br/> | Attributi dell'applicazione<br/> L'OID del primo attributo sarà 1.2.840.113556.1.8000.999999.2.1, l'OID del secondo attributo sarà 1.2.840.113556.1.8000.999999.2.2 e così via.<br/> |
 
 ## <a name="script"></a>Script
 

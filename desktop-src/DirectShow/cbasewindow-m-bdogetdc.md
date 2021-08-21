@@ -1,7 +1,7 @@
 ---
-description: Flag che specifica se recuperare il contesto di dispositivo (DC). Se TRUE, l'oggetto recupera un handle per il controller di dominio della finestra e crea un controller di dominio di memoria compatibile.
+description: Flag che specifica se recuperare il contesto di dispositivo. Se TRUE, l'oggetto recupera un handle per il controller di dominio della finestra e crea un controller di dominio di memoria compatibile.
 ms.assetid: e8b8dcc9-0046-40f8-9009-e23d839ef1db
-title: 'Membro CBaseWindow:: m_bDoGetDC (Winutil. h)'
+title: Membro CBaseWindow::m_bDoGetDC (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0d0b08951944c93b8873eddae26a825aacadf4be
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8efb4deef07cd6109fa6f4c9d4513d664cfde9370ff7d19a81208a81adef77b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016579"
 ---
-# <a name="cbasewindowm_bdogetdc-member"></a>Membro bDoGetDC di CBaseWindow:: m \_
+# <a name="cbasewindowm_bdogetdc-member"></a>Membro CBaseWindow::m \_ bDoGetDC
 
-Flag che specifica se recuperare il contesto di dispositivo (DC). Se **true**, l'oggetto recupera un handle per il controller di dominio della finestra e crea un controller di dominio di memoria compatibile.
+Flag che specifica se recuperare il contesto di dispositivo. Se **TRUE,** l'oggetto recupera un handle per il controller di dominio della finestra e crea un controller di dominio di memoria compatibile.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ BOOL m_bDoGetDC;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

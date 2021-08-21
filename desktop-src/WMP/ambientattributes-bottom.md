@@ -1,9 +1,9 @@
 ---
-title: AmbientAttributes. Bottom
-description: L'attributo Bottom specifica o recupera la coordinata inferiore del controllo.
+title: AmbientAttributes.bottom
+description: L'attributo bottom specifica o recupera la coordinata inferiore del controllo.
 ms.assetid: a07af5b0-154d-4c3f-be8b-39aeb52a6f1e
 keywords:
-- AmbientAttributes. Bottom Media Player Windows
+- AmbientAttributes.bottom Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ed707dbd821119963a46c5ac9a8301c20f4d39e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 244688d8263d08573fdfcdf322e09008ae5cd79eb5815511c5cd913d9179b8d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055199"
 ---
-# <a name="ambientattributesbottom"></a>AmbientAttributes. Bottom
+# <a name="ambientattributesbottom"></a>AmbientAttributes.bottom
 
-L'attributo **Bottom** specifica o recupera la coordinata inferiore del controllo.
+**L'attributo** bottom specifica o recupera la coordinata inferiore del controllo.
 
 ``` syntax
         elementID.bottom
@@ -29,7 +29,7 @@ L'attributo **Bottom** specifica o recupera la coordinata inferiore del controll
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di lettura/scrittura (**Long**) che rappresenta la distanza, in pixel, tra il controllo e il bordo inferiore della **visualizzazione** padre o della **Sottovisualizzazione**. Il valore predefinito è zero. Il comportamento per i valori negativi o quando [AmbientAttributes. Height](ambientattributes-height.md) non è specificato, non è definito.
+Questo attributo è un numero di lettura/scrittura **(** **long**) che rappresenta la distanza in pixel dal controllo al bordo inferiore del controllo **VIEW** o **SUBVIEW padre.** Ha un valore predefinito pari a zero. Il comportamento per i valori negativi o quando [AmbientAttributes.height](ambientattributes-height.md) non è specificato, non è definito.
 
 ## <a name="requirements"></a>Requisiti
 

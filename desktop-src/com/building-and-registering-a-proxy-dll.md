@@ -29,7 +29,7 @@ EXPORTS        DllGetClassObject      @1 PRIVATE
 
 In alternativa, è possibile specificare queste funzioni esportate nella riga di comando LINK del makefile.
 
-Le funzioni esportate vengono dichiarate in Rpcproxy.h, incluso in Dlldata.c, e le implementazioni predefinite fanno parte della libreria di runtime RPC. COM usa queste funzioni per creare un class factory, scaricare le DLL (dopo aver verificato che non esistano oggetti o blocchi), recuperare informazioni sulla DLL proxy e per autoregistrare e annullare la registrazione della DLL proxy. Per sfruttare queste funzioni predefinite, è necessario richiamare l'opzione Cpreprocessor /D (o -D) quando si compilano i file Dlldata.c e Example p.c, come illustrato nel \_ makefile seguente:
+Le funzioni esportate vengono dichiarate in Rpcproxy.h, incluso in Dlldata.c, e le implementazioni predefinite fanno parte della libreria di runtime RPC. COM usa queste funzioni per creare un class factory, scaricare LE DLL (dopo aver verificato che non esistano oggetti o blocchi), recuperare informazioni sulla DLL proxy e per eseguire la registrazione automatica e annullare la registrazione della DLL proxy. Per sfruttare i vantaggi di queste funzioni predefinite, è necessario richiamare l'opzione Cpreprocessor /D (o -D) quando si compilano i file Dlldata.c e p.c di esempio, come illustrato nel \_ makefile seguente:
 
 ``` syntax
 example.h example.tlb example_p.c example_i.c dlldata.c : example.idl
@@ -48,13 +48,13 @@ proxy.dll : $(PROXYSTUBOBJS) example.def
  
 ```
 
-Se non si specificano queste definizioni del preprocessore in fase di compilazione, queste funzioni non vengono definite automaticamente. Ovvero, le macro in Rpcproxy.c non si espandono fino a nulla. È necessario averli definiti in modo esplicito in un altro file di origine, il cui modulo verrebbe incluso anche nel collegamento e nella compilazione finali nella riga di comando del compilatore C.
+Se non si specificano queste definizioni del preprocessore in fase di compilazione, queste funzioni non vengono definite automaticamente. Ovvero, le macro in Rpcproxy.c non si espandono in alcun modo. È necessario che siano stati definiti in modo esplicito in un altro file di origine, il cui modulo verrebbe incluso anche nel collegamento e nella compilazione finali nella riga di comando del compilatore C.
 
-Quando viene definita la DLL REGISTER PROXY, Rpcproxy.h fornisce un controllo di compilazione condizionale aggiuntivo con \_ \_ \_ CLSID PROXY=*guid,* \_ CLSID PROXY IS= \_ valore \_ esplicito di guid e ENTRY PREFIX= stringa di prefisso . Queste definizioni di macro sono descritte in modo più dettagliato in Definizioni del compilatore [C per proxy/stub](/windows/desktop/Midl/c-compiler-definitions-for-proxy-stubs) nella Guida per programmatori MIDL.
+Quando è definito REGISTER PROXY DLL, Rpcproxy.h fornisce un controllo di compilazione condizionale aggiuntivo con \_ \_ PROXY \_ CLSID=*guid*, PROXY \_ CLSID \_ IS=*valore* \_ esplicito di guid e ENTRY PREFIX= stringa di prefisso . Queste definizioni di macro sono descritte in modo più dettagliato in Definizioni del compilatore [C per proxy/stub](/windows/desktop/Midl/c-compiler-definitions-for-proxy-stubs) nella Midl Programmer's Guide (Guida per programmatori MIDL).
 
-## <a name="manually-registering-the-proxy-dll"></a>Registrazione manuale della DLL del proxy
+## <a name="manually-registering-the-proxy-dll"></a>Registrazione manuale della DLL proxy
 
-Se per qualche motivo non è possibile usare le routine di registrazione stub proxy predefinite, è possibile registrare manualmente la DLL aggiungendo le voci seguenti al Registro di sistema, usando Regedt32.exe.
+Se per qualche motivo non è possibile usare le routine di registrazione predefinite dello stub proxy, è possibile registrare manualmente la DLL aggiungendo le voci seguenti al Registro di sistema, usando Regedt32.exe.
 
 ```
 HKEY_CLASSES_ROOT

@@ -1,61 +1,61 @@
 ---
-title: Raggruppamenti
-description: Raggruppamenti
+title: Scomparti
+description: Scomparti
 ms.assetid: 7bffab6f-be40-4d3a-9342-6f81557a9656
 keywords:
 - Framework servizi di testo (TSF), raggruppamenti
-- TSF (Text Services Framework), raggruppamenti
-- Servizi di testo, raggruppamenti
+- TSF (Framework servizi di testo), raggruppamenti
+- servizi di testo, raggruppamenti
 - Applicazioni abilitate per TSF, raggruppamenti
-- raggruppamenti
+- Scomparti
 - Framework servizi di testo (TSF), tipi di raggruppamento
-- TSF (Framework dei servizi di testo), tipi di raggruppamento
-- Servizi di testo, tipi di raggruppamento
+- TSF (Framework servizi di testo), tipi di raggruppamento
+- servizi di testo, tipi di raggruppamento
 - Applicazioni abilitate per TSF, tipi di raggruppamento
 - tipi di raggruppamento
 - Framework servizi di testo (TSF), notifiche di modifica raggruppamento
-- TSF (Text Services Framework), notifiche di modifica di raggruppamento
-- Servizi di testo, notifiche di modifica raggruppamento
-- Applicazioni abilitate per TSF, notifiche di modifica del raggruppamento
+- TSF (Framework servizi di testo), notifiche di modifica raggruppamento
+- servizi di testo, notifiche di modifica raggruppamento
+- Applicazioni abilitate per TSF, notifiche di modifica raggruppamento
 - notifiche di modifica raggruppamento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76636c684ee74f7e452b5602ebfd59d6d1947b0f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 92ff74cf3c98f99aa2462da8c0bfe1505b555b879f4d4e38f51e57ccc239a78f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118879838"
 ---
-# <a name="compartments"></a>Raggruppamenti
+# <a name="compartments"></a>Scomparti
 
 ## <a name="compartment-types"></a>Tipi di raggruppamento
 
-Sono disponibili diversi tipi di raggruppamenti. È presente un raggruppamento globale e ogni gestore di thread, gestione documenti e contesto può contenere un raggruppamento.
+Esistono diversi tipi di raggruppamenti. Esiste un raggruppamento globale e ogni gestore di thread, gestore di documenti e contesto può contenere un raggruppamento.
 
-Il raggruppamento globale consente ai client di condividere i dati tra i processi. Per ottenere il gestore di raggruppamento globale, chiamare [**ITfThreadMgr:: GetGlobalCompartment**](/windows/desktop/api/Msctf/nf-msctf-itfthreadmgr-getglobalcompartment).
+Il raggruppamento globale consente ai client di condividere i dati tra processi. Per ottenere il gestore raggruppamento globale, chiamare [**ITfThreadMgr::GetGlobalCompartment**](/windows/desktop/api/Msctf/nf-msctf-itfthreadmgr-getglobalcompartment).
 
-Gestione thread contiene un gestore di raggruppamento che contiene i raggruppamenti in base ai singoli thread. In questo modo è possibile condividere i dati all'interno di un thread. Per ottenere un gestore di raggruppamento di gestione thread, chiamare **ITfThreadMgr:: QueryInterface** con IID \_ ITfCompartmentMgr.
+Il gestore di thread contiene un gestore raggruppamenti che contiene raggruppamenti per ogni thread. In questo modo i dati possono essere condivisi all'interno di un thread. Per ottenere un gestore raggruppamenti di thread manager, chiamare **ITfThreadMgr::QueryInterface** con IID \_ ITfCompartmentMgr.
 
-Ogni gestore di documenti creato contiene anche un gestore di raggruppamento. In questo modo è possibile condividere i dati all'interno di un gestore di documenti specifico. Per ottenere il gestore di raggruppamento di gestione documenti, chiamare **ITfDocumentMgr:: QueryInterface** con IID \_ ITfCompartmentMgr.
+Ogni gestore di documenti creato contiene anche un gestore raggruppamenti. In questo modo i dati possono essere condivisi all'interno di un gestore di documenti specifico. Per ottenere il gestore raggruppamenti di gestione documenti, chiamare **ITfDocumentMgr::QueryInterface** con IID \_ ITfCompartmentMgr.
 
-Ogni contesto creato contiene anche un gestore di raggruppamento. In questo modo è possibile condividere i dati in un contesto specifico. Per ottenere un gestore di raggruppamento del contesto, chiamare **ITfContext:: QueryInterface** con IID \_ ITfCompartmentMgr.
+Ogni contesto creato contiene anche un gestore raggruppamenti. In questo modo i dati possono essere condivisi all'interno di un contesto specifico. Per ottenere un gestore raggruppamento di contesto, chiamare **ITfContext::QueryInterface** con IID \_ ITfCompartmentMgr.
 
 ## <a name="creating-and-deleting-a-compartment"></a>Creazione ed eliminazione di un raggruppamento
 
-Viene creato un raggruppamento la prima volta che [**ITfCompartmentMgr:: Compartment**](/windows/desktop/api/Msctf/nf-msctf-itfcompartmentmgr-getcompartment) viene chiamato con il GUID di raggruppamento. Il client di installazione deve impostare il valore iniziale del raggruppamento usando [**ITfCompartment:: SetValue**](/windows/desktop/api/Msctf/nf-msctf-itfcompartment-setvalue). Fino a quando non viene impostato un valore, il valore del raggruppamento è vuoto. Per questo motivo, non esiste alcun modo per verificare che il raggruppamento esista prima della chiamata a **Compartment** . Per evitare questa situazione, il client di installazione deve impostare il valore su un valore iniziale, in modo che gli altri client possano determinare se il raggruppamento esiste già.
+Viene creato un raggruppamento la prima volta che viene chiamato [**ITfCompartmentMgr::GetCompartment**](/windows/desktop/api/Msctf/nf-msctf-itfcompartmentmgr-getcompartment) con il GUID del raggruppamento. Il client di installazione deve impostare il valore iniziale del raggruppamento [**usando ITfCompartment::SetValue**](/windows/desktop/api/Msctf/nf-msctf-itfcompartment-setvalue). Finché non viene impostato un valore, il valore del raggruppamento è vuoto. Per questo scopo, non è possibile verificare che il raggruppamento esistesse prima della **chiamata a GetCompartment.** Per evitare questa situazione, il client di installazione deve impostare il valore su un valore iniziale in modo che altri client possano determinare se il raggruppamento esiste già.
 
-Il metodo [**ITfCompartmentMgr:: ClearCompartment**](/windows/desktop/api/Msctf/nf-msctf-itfcompartmentmgr-clearcompartment) viene usato per rimuovere un raggruppamento. Eventuali riferimenti esistenti al raggruppamento sono contrassegnati come non validi.
+Il [**metodo ITfCompartmentMgr::ClearCompartment**](/windows/desktop/api/Msctf/nf-msctf-itfcompartmentmgr-clearcompartment) viene usato per rimuovere un raggruppamento. Tutti i riferimenti esistenti al raggruppamento sono contrassegnati come non validi.
 
 ## <a name="obtaining-compartments"></a>Recupero di raggruppamenti
 
-Usando l'interfaccia [**ITfCompartmentMgr**](/windows/desktop/api/Msctf/nn-msctf-itfcompartmentmgr) , un client può enumerare i raggruppamenti chiamando [**ITfCompartmentMgr:: EnumCompartments**](/windows/desktop/api/Msctf/nf-msctf-itfcompartmentmgr-enumcompartments). Questo metodo fornisce un oggetto **IEnumGUID** che contiene i GUID di tutti i raggruppamenti installati.
+Usando [**l'interfaccia ITfCompartmentMgr,**](/windows/desktop/api/Msctf/nn-msctf-itfcompartmentmgr) un client può enumerare i raggruppamenti chiamando [**ITfCompartmentMgr::EnumCompartments**](/windows/desktop/api/Msctf/nf-msctf-itfcompartmentmgr-enumcompartments). Questo metodo fornisce un **oggetto IEnumGUID** che contiene i GUID di tutti i raggruppamenti installati.
 
-Usando il GUID di raggruppamento, **ITfCompartmentMgr:: Compartment** viene usato per ottenere un raggruppamento specifico. Questo metodo fornisce al chiamante un oggetto [**ITfCompartment**](/windows/desktop/api/Msctf/nn-msctf-itfcompartment) che può ottenere e impostare i dati del raggruppamento.
+Usando il GUID del raggruppamento, **ITfCompartmentMgr::GetCompartment** viene usato per ottenere un raggruppamento specifico. Questo metodo fornisce al chiamante un [**oggetto ITfCompartment**](/windows/desktop/api/Msctf/nn-msctf-itfcompartment) che può ottenere e impostare i dati del raggruppamento.
 
-## <a name="receiving-compartment-change-notifications"></a>Ricezione delle notifiche di modifica del raggruppamento
+## <a name="receiving-compartment-change-notifications"></a>Ricezione di notifiche di modifica raggruppamento
 
-Quando viene modificato il valore di un raggruppamento, il gestore di TSF invia una notifica ai sink di avviso installati che il raggruppamento è stato modificato. Per installare un sink di notifica della modifica del raggruppamento, creare un oggetto che implementi [**ITfCompartmentEventSink**](/windows/desktop/api/Msctf/nn-msctf-itfcompartmenteventsink). Quindi, chiamare **ITfCompartment:: QueryInterface** con IID \_ ITfSource sull'oggetto Compartment da monitorare per ottenere un'interfaccia [**ITfSource**](/windows/desktop/api/Msctf/nn-msctf-itfsource) . A questo punto, chiamare [**ITfSource:: adviseSink**](/windows/desktop/api/Msctf/nf-msctf-itfsource-advisesink) con IID \_ ITfCompartmentEventSink e il puntatore all'oggetto **ITfCompartmentEventSink** . Quando viene modificato il valore del raggruppamento, il sink di notifica [**ITfCompartmentEventSink:: OnChange**](/windows/desktop/api/Msctf/nf-msctf-itfcompartmenteventsink-onchange) viene chiamato con il GUID del raggruppamento. Il sink di notifica può chiamare [**ITfCompartment:: GetValue**](/windows/desktop/api/Msctf/nf-msctf-itfcompartment-getvalue) per ottenere il nuovo valore.
+Quando il valore di un raggruppamento cambia, il gestore TSF notifica ai sink di notifica installati che il raggruppamento è stato modificato. Per installare un sink di notifica delle modifiche di raggruppamento, creare un oggetto che implementa [**ITfCompartmentEventSink.**](/windows/desktop/api/Msctf/nn-msctf-itfcompartmenteventsink) Chiamare quindi **ITfCompartment::QueryInterface** con IID ITfSource sull'oggetto raggruppamento da monitorare per \_ ottenere [**un'interfaccia ITfSource.**](/windows/desktop/api/Msctf/nn-msctf-itfsource) Chiamare ora [**ITfSource::AdviseSink**](/windows/desktop/api/Msctf/nf-msctf-itfsource-advisesink) con IID \_ ITfCompartmentEventSink e il puntatore **all'oggetto ITfCompartmentEventSink.** Quando il valore del raggruppamento cambia, il metodo [**ITfCompartmentEventSink::OnChange**](/windows/desktop/api/Msctf/nf-msctf-itfcompartmenteventsink-onchange) del sink di consulenza viene chiamato con il GUID del raggruppamento. Il sink di consulenza può chiamare [**ITfCompartment::GetValue**](/windows/desktop/api/Msctf/nf-msctf-itfcompartment-getvalue) per ottenere il nuovo valore.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -73,13 +73,13 @@ Quando viene modificato il valore di un raggruppamento, il gestore di TSF invia 
 [**TfClientId**](tfclientid.md)
 </dt> <dt>
 
-[**ITfThreadMgr:: GetGlobalCompartment**](/windows/desktop/api/Msctf/nf-msctf-itfthreadmgr-getglobalcompartment)
+[**ITfThreadMgr::GetGlobalCompartment**](/windows/desktop/api/Msctf/nf-msctf-itfthreadmgr-getglobalcompartment)
 </dt> <dt>
 
-[**ITfCompartmentMgr:: Compartment**](/windows/desktop/api/Msctf/nf-msctf-itfcompartmentmgr-getcompartment)
+[**ITfCompartmentMgr::GetCompartment**](/windows/desktop/api/Msctf/nf-msctf-itfcompartmentmgr-getcompartment)
 </dt> <dt>
 
-[**ITfCompartment:: SetValue**](/windows/desktop/api/Msctf/nf-msctf-itfcompartment-setvalue)
+[**ITfCompartment::SetValue**](/windows/desktop/api/Msctf/nf-msctf-itfcompartment-setvalue)
 </dt> <dt>
 
 [**ITfCompartmentMgr::ClearCompartment**](/windows/desktop/api/Msctf/nf-msctf-itfcompartmentmgr-clearcompartment)
@@ -91,15 +91,15 @@ Quando viene modificato il valore di un raggruppamento, il gestore di TSF invia 
 [**ITfSource**](/windows/desktop/api/Msctf/nn-msctf-itfsource)
 </dt> <dt>
 
-[**ITfSource:: AdviseSink**](/windows/desktop/api/Msctf/nf-msctf-itfsource-advisesink)
+[**ITfSource::AdviseSink**](/windows/desktop/api/Msctf/nf-msctf-itfsource-advisesink)
 </dt> <dt>
 
-[**ITfCompartmentEventSink:: OnChange**](/windows/desktop/api/Msctf/nf-msctf-itfcompartmenteventsink-onchange)
+[**ITfCompartmentEventSink::OnChange**](/windows/desktop/api/Msctf/nf-msctf-itfcompartmenteventsink-onchange)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

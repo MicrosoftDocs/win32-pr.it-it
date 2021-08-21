@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Classe ColumnInfo'
+description: Altre informazioni sulla classe ColumnInfo
 title: Classe ColumnInfo
 TOCTitle: ColumnInfo class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.ColumnInfo
@@ -24,24 +24,24 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 19e04584584bf3f6c0f19254df83025a47fc8eb9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6dcea5c501628d355067f124c4919118f5b7841a8f63b5af1c7d715a85405f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042419"
 ---
 # <a name="columninfo-class"></a>Classe ColumnInfo
 
-Informazioni su una colonna esent. Non si tratta di una classe di interoperabilità, ma viene usata dai metodi helper dei metadati.
+Informazioni su una colonna Esent. Non si tratta di una classe di interoperabilità, ma viene usata dai metodi helper dei metadati.
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. ColumnInfo  
+  Microsoft.Isam.Esent.Interop.ColumnInfo  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,6 +64,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri di ColumnInfo](./columninfo-members.md)
+[Membri ColumnInfo](./columninfo-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

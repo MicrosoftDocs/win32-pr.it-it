@@ -1,9 +1,9 @@
 ---
-title: Messaggio MCM_SETCALID (COMmctrl. h)
-description: Imposta l'ID calendario per il controllo calendario specificato. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro MonthCal.
+title: MCM_SETCALID messaggio (Commctrl.h)
+description: Imposta l'ID calendario per il controllo calendario specificato. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro MonthCal SetCALID.
 ms.assetid: 4b9d06f5-0784-4a17-b401-982206d4be67
 keywords:
-- Controlli di Windows Message MCM_SETCALID
+- MCM_SETCALID controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a661a685062fe737a1927c3a6ab455e8499c6ca9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b40e7f4577382aa0e003165e38e4557b8dc234592f747a579e5a071ce2440a37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119575581"
 ---
-# <a name="mcm_setcalid-message"></a>Messaggio in MCM \_
+# <a name="mcm_setcalid-message"></a>Messaggio \_ MCM SETCALID
 
-Imposta l'ID calendario per il controllo calendario specificato. È possibile inviare questo messaggio in modo esplicito o usando [**la \_ macro MonthCal**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setcalid) .
+Imposta l'ID calendario per il controllo calendario specificato. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ MonthCal SetCALID.**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setcalid)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Imposta l'ID calendario per il controllo calendario specificato. È possibile in
 *wParam* 
 </dt> <dd>
 
-ID del calendario. Una delle costanti degli [identificatori del calendario](/windows/desktop/Intl/calendar-identifiers) .
+ID del calendario. Una delle [costanti Calendar Identifiers.](/windows/desktop/Intl/calendar-identifiers)
 
 </dd> <dt>
 
@@ -53,9 +53,9 @@ Non utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

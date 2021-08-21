@@ -1,5 +1,5 @@
 ---
-description: Elimina un oggetto superficie di Microsoft DirectDraw in modalità kernel allocato in precedenza creato con il membro dwCaps della struttura DDSCAPS impostato su DDSCAPS \_ EXECUTEBUFFER.
+description: Elimina un oggetto surface Microsoft DirectDraw in modalità kernel allocato in precedenza creato con il membro dwCaps della struttura DDSCAPS impostato su DDSCAPS \_ EXECUTEBUFFER.
 ms.assetid: c737b706-25be-49b8-8d8c-35f48aea2889
 title: Funzione NtGdiDdDestroyD3DBuffer (Ntgdi.h)
 ms.topic: reference
@@ -25,9 +25,9 @@ ms.locfileid: "118956520"
 ---
 # <a name="ntgdidddestroyd3dbuffer-function"></a>Funzione NtGdiDdDestroyD3DBuffer
 
-\[Questa funzione è soggetta a modifiche con ogni revisione del sistema operativo. Usare invece DirectDraw e Microsoft Direct3DAPIs. queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà nell'interazione diretta con i driver di visualizzazione.\]
+\[Questa funzione è soggetta a modifiche con ogni revisione del sistema operativo. Usare invece DirectDraw e Microsoft Direct3DAPIs. Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà nell'interazione diretta con i driver di visualizzazione.\]
 
-Elimina un oggetto superficie di Microsoft DirectDraw in modalità kernel allocato in precedenza creato con il membro **dwCaps** della struttura [**DDSCAPS**](/previous-versions/windows/hardware/drivers/ff550286(v=vs.85)) impostato su DDSCAPS \_ EXECUTEBUFFER.
+Elimina un oggetto surface Microsoft DirectDraw in modalità kernel allocato in precedenza creato con il membro **dwCaps** della struttura [**DDSCAPS**](/previous-versions/windows/hardware/drivers/ff550286(v=vs.85)) impostato su DDSCAPS \_ EXECUTEBUFFER.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,7 +60,7 @@ Handle a una [**struttura DD \_ DESTROYSURFACEDATA**](/windows/win32/api/ddrawin
 | Codice restituito                                                                                              | Descrizione                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**DRIVER DDHAL \_ \_ GESTITO**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per tale operazione. Se questo codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione . In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
-| <dl> <dt>**DRIVER DDHAL \_ \_ NON GESTITO**</dt> </dl> | Il driver non ha alcun commento sull'operazione richiesta. Se è necessario che il driver abbia implementato un callback specifico, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione DirectDraw o Direct3D indipendente dal dispositivo.<br/> |
+| <dl> <dt>**DRIVER DDHAL \_ \_ NON GESTITO**</dt> </dl> | Il driver non ha commenti sull'operazione richiesta. Se è necessario che il driver abbia implementato un callback specifico, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione indipendente dal dispositivo DirectDraw o Direct3D.<br/> |
 
 
 

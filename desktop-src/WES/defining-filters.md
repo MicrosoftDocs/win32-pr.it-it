@@ -1,23 +1,23 @@
 ---
 title: Definizione di filtri
-description: Un provider può definire i filtri utilizzati da una sessione per filtrare gli eventi in base ai dati dell'evento.
+description: Un provider può definire filtri utilizzati da una sessione per filtrare gli eventi in base ai dati degli eventi.
 ms.assetid: b43912af-0e9c-414b-b3fa-03e7e35e493c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61dd2a21b9c4e01ebc4a32a160b24022c79197b0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 37d9d065fe3a46fc22114cfb4aed5b5b51d9a89eafa3280e2e258199e06aad3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104118318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056019"
 ---
 # <a name="defining-filters"></a>Definizione di filtri
 
-Un provider può definire i filtri utilizzati da una sessione per filtrare gli eventi in base ai dati dell'evento. Con Level e keywords, ETW determina se l'evento viene scritto nel log. Tuttavia, con i filtri, il provider usa i criteri dei dati del filtro che la sessione di controllo vi passa (vedere la funzione [*EnableCallback*](/windows/desktop/api/evntprov/nc-evntprov-penablecallback) ) per determinare se scrive l'evento nella sessione. I filtri sono applicabili solo quando una sessione di traccia ETW Abilita il provider.
+Un provider può definire filtri utilizzati da una sessione per filtrare gli eventi in base ai dati degli eventi. Con level e keywords, ETW determina se l'evento viene scritto nel log. Tuttavia, con i filtri, il provider usa i criteri dei dati di filtro passati dalla sessione di controllo (vedere la [*funzione EnableCallback)*](/windows/desktop/api/evntprov/nc-evntprov-penablecallback) per determinare se scrive l'evento in tale sessione. I filtri sono applicabili solo quando una sessione di traccia ETW abilita il provider.
 
-In genere, i provider scrivono solo gli eventi e la sessione identifica i tipi di eventi che vogliono usare il livello e le parole chiave. Se il provider ha definito un filtro di dati per un tipo di evento, la sessione potrebbe utilizzarlo per filtrare gli eventi per quel tipo di evento in base ai dati dell'evento (la semantica del filtro è definita dal provider). Se, ad esempio, il provider genera eventi di processo, è possibile definire un filtro dei dati per filtrare gli eventi di elaborazione in base a un identificatore di processo. La sessione può quindi passare un identificatore del processo come filtro dei dati al provider e ricevere solo eventi di elaborazione per tale identificatore di processo.
+In genere, i provider scrivono solo eventi e la sessione identifica i tipi di eventi che desiderano usando parole chiave e livello. Se il provider ha definito un filtro dati per un tipo di evento, la sessione potrebbe usarlo per filtrare gli eventi per tale tipo di evento in base ai dati dell'evento (la semantica del filtro è definita dal provider). Ad esempio, se il provider genera eventi di elaborazione, è possibile definire un filtro dati che filtra gli eventi del processo in base a un identificatore di processo. La sessione può quindi passare un identificatore di processo come dati di filtro al provider e ricevere solo eventi di elaborazione per tale identificatore di processo.
 
-Nell'esempio seguente viene illustrato come utilizzare l'elemento **Filter** per definire un filtro. È necessario specificare gli attributi **Name** e **value** del filtro; gli altri attributi sono facoltativi. L'attributo **TID** è obbligatorio se il filtro richiede che la sessione passi i dati del filtro.
+Nell'esempio seguente viene illustrato come usare **l'elemento filter** per definire un filtro. È necessario specificare gli attributi nome **e** **valore del** filtro. gli altri attributi sono facoltativi. **L'attributo tid** è obbligatorio se il filtro richiede che la sessione passi i dati del filtro.
 
 
 ```XML

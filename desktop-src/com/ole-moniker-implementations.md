@@ -15,16 +15,16 @@ ms.locfileid: "119047909"
 
 OLE fornisce implementazioni di diversi moniker per situazioni diverse, come descritto negli argomenti seguenti:
 
--   [Moniker di file](file-monikers.md)
+-   [Moniker file](file-monikers.md)
 -   [Moniker compositi](composite-monikers.md)
--   [Moniker di elementi](item-monikers.md)
+-   [Moniker degli elementi](item-monikers.md)
 -   [Anti-moniker](anti-monikers.md)
 -   [Moniker puntatore](pointer-monikers.md)
 -   [Moniker di classe](class-monikers.md)
 -   [Moniker asincroni](asynchronous-monikers.md)
 -   [Moniker URL](url-monikers.md)
 
-I moniker di file, compositi ed elementi sono i moniker usati più di frequente, perché possono essere usati per creare quasi qualsiasi oggetto in qualsiasi posizione. I moniker anti-moniker e i moniker dei puntatori vengono usati principalmente all'interno di OLE, ma hanno alcune applicazioni per l'implementazione di moniker personalizzati.
+I moniker file, composite e item sono i moniker usati più di frequente, perché possono essere usati per creare quasi tutti gli oggetti in qualsiasi posizione. I moniker anti-moniker e i moniker puntatore vengono usati principalmente all'interno di OLE, ma hanno alcune applicazioni per l'implementazione di moniker personalizzati.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -1,7 +1,7 @@
 ---
-description: TapI (Microsoft Telephony Application Programming Interface) versione 2.2 (TAPI/C) consente l'implementazione di applicazioni di comunicazione che vanno dal controllo modem di base ai call center con più agenti e commutatori.
+description: Microsoft Telephony Application Programming Interface (TAPI) versione 2.2 (TAPI/C) consente l'implementazione di applicazioni di comunicazione che vanno dal controllo modem di base ai call center con più agenti e commutatori.
 ms.assetid: 02bfe923-9915-439e-ac7c-a570416d054a
-title: Telefonia Application Programming Interface versione 2.2
+title: Interfaccia di programmazione delle applicazioni di telefonia versione 2.2
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 5ea4317fbf603c4b0185440d71db5861db59af9dd7c5ae1e8fe49664100bb329
@@ -11,11 +11,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119060269"
 ---
-# <a name="telephony-application-programming-interface-version-22"></a>Telefonia Application Programming Interface versione 2.2
+# <a name="telephony-application-programming-interface-version-22"></a>Interfaccia di programmazione delle applicazioni di telefonia versione 2.2
 
 ## <a name="purpose"></a>Scopo
 
-TapI (Microsoft Telephony Application Programming Interface) versione 2.2 (TAPI/C) consente l'implementazione di applicazioni di comunicazione che vanno dal controllo modem di base ai call center con più agenti e commutatori.
+Microsoft Telephony Application Programming Interface (TAPI) versione 2.2 (TAPI/C) consente l'implementazione di applicazioni di comunicazione che vanno dal controllo modem di base ai call center con più agenti e commutatori.
 
 ## <a name="where-applicable"></a>Se applicabile
 
@@ -24,10 +24,10 @@ Le possibili applicazioni TAPI 2.2 includono:
 -   Chiamate vocali di base sulla rete PSTN (Public Switched Telephone Network)
 -   Applicazioni call center per il rilevamento di più agenti
 -   Controllo modem
--   Controllo LEGACY
+-   Controllo CENTRALINO
 -   Sistemi IVR (Interactive Voice Response)
 -   Messaggi vocali
--   Controllo dettagliato del dispositivo telefonico
+-   Controllo dettagliato del dispositivo telefono
 
 ## <a name="developer-audience"></a>Sviluppatori
 

@@ -36,7 +36,7 @@ Il dispositivo Direct3D non è stato creato con D3D10 CREATE DEVICE BGRA SUPPORT
 
 ## <a name="possible-causes"></a>Possibili cause
 
-Il dispositivo Direct3D non è stato creato con il supporto D3D10 \_ CREATE \_ DEVICE \_ \_ BGRA.
+Il dispositivo Direct3D non è stato creato con D3D10 \_ CREATE \_ DEVICE \_ BGRA \_ SUPPORT.
 
  
 

@@ -1,9 +1,9 @@
 ---
-title: Struttura CD3DX12_DEFAULT (D3dx12. h)
-description: Passa \_ il valore predefinito di D3D12 in un costruttore per ogni struttura helper. Questa struttura viene semplicemente utilizzata come meccanismo per impostare i parametri predefiniti sulle altre strutture di supporto.
+title: CD3DX12_DEFAULT struttura (D3dx12.h)
+description: Passa D3D12 \_ DEFAULT in un costruttore per ogni struttura helper. Questa struttura viene semplicemente usata come meccanismo per impostare i parametri predefiniti nelle altre strutture helper.
 ms.assetid: AD41FD7B-9172-400E-9292-374FFAEDE145
 keywords:
-- Struttura CD3DX12_DEFAULT
+- CD3DX12_DEFAULT struttura
 topic_type:
 - apiref
 api_name:
@@ -15,29 +15,29 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b010e8f0fdce67f16750d0f66d1cf272c8ddb849
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 876fbb5e666680e85854196fb9136bfd4d765d6eecf8f16bf6101bb321a7039a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118531288"
 ---
-# <a name="cd3dx12_default-structure"></a>\_Struttura predefinita CD3DX12
+# <a name="cd3dx12_default-structure"></a>Struttura CD3DX12 \_ DEFAULT
 
-Passa \_ il valore predefinito di D3D12 in un costruttore per ogni struttura helper. Questa struttura viene semplicemente utilizzata come meccanismo per impostare i parametri predefiniti sulle altre strutture di supporto.
+Passa D3D12 \_ DEFAULT in un costruttore per ogni struttura helper. Questa struttura viene semplicemente usata come meccanismo per impostare i parametri predefiniti nelle altre strutture helper.
 
 ## <a name="remarks"></a>Commenti
 
-Questa struct viene dichiarata come segue:
+Questo struct viene dichiarato come segue:
 
 ``` syntax
 struct CD3DX12_DEFAULT {};
 extern const DECLSPEC_SELECTANY CD3DX12_DEFAULT D3D12_DEFAULT;
 ```
 
-Passa \_ il valore predefinito di D3D12 in un costruttore per ogni struct helper. Ad esempio, il costruttore seguente viene dichiarato in d3dx12. h:
+Passa D3D12 \_ DEFAULT in un costruttore per ogni struct helper. Ad esempio, il costruttore seguente viene dichiarato in d3dx12.h:
 
-\_ \_ Handle descrittore CPU CD3DX12 \_ ( \_ valore predefinito CD3DX12) {ptr = 0;}
+HANDLE DESCRITTORE \_ CPU CD3DX12(CD3DX12 \_ \_ \_ DEFAULT) { ptr = 0; }
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,7 +45,7 @@ Passa \_ il valore predefinito di D3D12 in un costruttore per ogni struct helper
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 

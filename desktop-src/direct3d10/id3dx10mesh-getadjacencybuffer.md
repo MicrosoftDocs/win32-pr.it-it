@@ -1,5 +1,5 @@
 ---
-description: Accedere al buffer di adienza della mesh.
+description: Accedere al buffer di adienze della mesh.
 ms.assetid: 42b13f14-4edf-4b56-9198-60a548855542
 title: Metodo ID3DX10Mesh::GetAdjacencyBuffer (D3DX10.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "119046939"
 ---
 # <a name="id3dx10meshgetadjacencybuffer-method"></a>Metodo ID3DX10Mesh::GetAdjacencyBuffer
 
-Accedere al buffer di adienza della mesh.
+Accedere al buffer di adienze della mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,7 +53,7 @@ Buffer di adienza. Vedere [**ID3DX10MeshBuffer**](id3dx10meshbuffer.md).
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
+Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 

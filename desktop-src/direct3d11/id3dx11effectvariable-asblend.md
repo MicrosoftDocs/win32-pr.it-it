@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectVariable AsBlend (D3dx11effect. h)
-description: Ottenere una variabile Effect-Blend.
+title: Metodo ID3DX11EffectVariable AsBlend (D3dx11effect.h)
+description: Ottiene una variabile effect-blend.
 ms.assetid: e9670d13-e006-408b-9cdf-352bcfa66a52
 keywords:
 - Metodo AsBlend Direct3D 11
 - Metodo AsBlend Direct3D 11, interfaccia ID3DX11EffectVariable
-- Interfaccia ID3DX11EffectVariable Direct3D 11, metodo AsBlend
+- ID3DX11EffectVariable interface Direct3D 11 , AsBlend method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87f7e3d09a1299d00482e9a5cfbb75f563d4bba5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3fd9f6f76c0e3aa46e176b2f35960196fcc73eb021d4e5a250be4a5b245a5ca4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104995921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118531603"
 ---
-# <a name="id3dx11effectvariableasblend-method"></a>Metodo ID3DX11EffectVariable:: AsBlend
+# <a name="id3dx11effectvariableasblend-method"></a>Metodo ID3DX11EffectVariable::AsBlend
 
-Ottenere una variabile Effect-Blend.
+Ottiene una variabile effect-blend.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,16 +45,16 @@ Questo metodo non presenta parametri.
 
 Tipo: **[ **ID3DX11EffectBlendVariable**](id3dx11effectblendvariable.md)\***
 
-Puntatore a una variabile di Blend di effetto. Vedere [**ID3DX11EffectBlendVariable**](id3dx11effectblendvariable.md).
+Puntatore a una variabile di fusione degli effetti. Vedere [**ID3DX11EffectBlendVariable.**](id3dx11effectblendvariable.md)
 
 ## <a name="remarks"></a>Commenti
 
-AsBlend restituisce una versione della variabile Effect specializzata in una variabile Effect-Blend. Analogamente a un cast, questa specializzazione restituirà un oggetto non valido se la variabile Effect non contiene dati di Blend di effetto.
+AsBlend restituisce una versione della variabile dell'effetto specializzata in una variabile effect-blend. Analogamente a un cast, questa specializzazione restituirà un oggetto non valido se la variabile dell'effetto non contiene dati di fusione degli effetti.
 
-Per verificare la validità dell'oggetto restituito, le applicazioni possono chiamare [**IsValid**](id3dx11effectvariable-isvalid.md).
+Le applicazioni possono testare la validità dell'oggetto restituito chiamando [**IsValid.**](id3dx11effectvariable-isvalid.md)
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -64,8 +64,8 @@ Per verificare la validità dell'oggetto restituito, le applicazioni possono chi
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

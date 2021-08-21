@@ -1,7 +1,7 @@
 ---
-description: Invia il messaggio specificato a una finestra o a finestre.
+description: Invia il messaggio specificato a una o più finestre.
 ms.assetid: aed898b3-bb48-4da2-aee7-834ae65a2d51
-title: Funzione _SendMessage
+title: _SendMessage funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Sqlunirl.dll
-ms.openlocfilehash: 2b96544ee1c850886e5fa953eb902dc4a38f283d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bdd8a072970d8e6fb5e9af082f6f220531539a1c0061a7688d48be30dd659a7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119572571"
 ---
-# <a name="_sendmessage-function"></a>\_SendMessage (funzione)
+# <a name="_sendmessage-function"></a>\_Funzione SendMessage
 
-\[Questa funzione è un wrapper della funzione **SendMessage** . Questa funzione può essere modificata o non disponibile in futuro. Le applicazioni devono chiamare direttamente **SendMessage** .\]
+\[Questa funzione è un wrapper sulla **funzione SendMessage.** Questa funzione potrebbe essere modificata o non disponibile in futuro. Le applicazioni devono **chiamare direttamente SendMessage.**\]
 
-Invia il messaggio specificato a una finestra o a finestre. Vedere [**SendMessage**](/windows/win32/api/winuser/nf-winuser-sendmessage).
+Invia il messaggio specificato a una o più finestre. Vedere [**SendMessage.**](/windows/win32/api/winuser/nf-winuser-sendmessage)
 
 ## <a name="syntax"></a>Sintassi
 

@@ -1,17 +1,17 @@
 ---
 description: Si verifica quando viene riconosciuto un movimento dell'applicazione.
 ms.assetid: 736715f4-c610-42cc-9fbb-c2b579da69e5
-title: Evento InkEdit. Gesture (inchiostrata. h)
+title: Evento InkEdit.Gesture (Inked.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a61f4fce033672fde8cc4d74dced727fe60b7f97
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a718106f4485682a1b6267f942ec3ef0f5a9fb670449e1f6023d86a5b03af56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032079"
 ---
-# <a name="inkeditgesture-event"></a>Evento InkEdit. Gesture
+# <a name="inkeditgesture-event"></a>Evento InkEdit.Gesture
 
 Si verifica quando viene riconosciuto un movimento dell'applicazione.
 
@@ -33,64 +33,64 @@ HRESULT Gesture(
 
 <dl> <dt>
 
-*Cursore* \[ in\]
+*Cursore* \[ Pollici\]
 </dt> <dd>
 
-Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) utilizzato per creare questo movimento.
+Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) usato per creare questo movimento.
 
 </dd> <dt>
 
-*Tratti* \[ in\]
+*Tratti* \[ Pollici\]
 </dt> <dd>
 
-Raccolta [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) che contiene gli oggetti [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) che compongono questo movimento.
+Raccolta [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) che contiene gli [**oggetti IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) che costituiscono questo movimento.
 
 </dd> <dt>
 
-*Movimenti* \[ in\]
+*Movimenti* \[ Pollici\]
 </dt> <dd>
 
-Matrice di oggetti [**IInkGesture**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkgesture) , in ordine di confidenza.
+Matrice di [**oggetti IInkGesture,**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkgesture) in ordine di attendibilità.
 
-Per ulteriori informazioni sulla struttura VARIANT, vedere [utilizzo della libreria com](using-the-com-library.md).
+Per altre informazioni sulla struttura VARIANT, vedere [Uso della libreria COM](using-the-com-library.md).
 
 </dd> <dt>
 
-*Annulla* \[ in uscita\]
+*Annulla* \[ in, out\]
 </dt> <dd>
 
-Indica se la raccolta [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) che costituisce questo movimento deve essere annullata, in modo da non cancellare l'input penna e generare l'evento [**Stroke**](inkedit-stroke.md) .
+Indica se [la raccolta InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) che costituisce questo movimento deve essere annullata, in modo da non cancellare l'input penna e per creare l'evento [**Stroke.**](inkedit-stroke.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se l'evento ha esito positivo, viene restituito **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo evento ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento è definito nell'interfaccia **\_ IInkEditEvents** . L'interfaccia **\_ IInkEditEvents** implementa l'interfaccia IDispatch con un identificatore di DISPID \_ IeeGesture.
+Questo metodo di evento è definito **\_ nell'interfaccia IInkEditEvents.** **\_ L'interfaccia IInkEditEvents** implementa l'interfaccia IDispatch con un identificatore di DISPID \_ IeeGesture.
 
-Un evento di **movimento** viene generato solo se [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) per l'oggetto [**IInkGesture**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkgesture) è il primo oggetto **IInkStrokeDisp** dopo l'ultima chiamata al metodo [**Recognize**](/windows/desktop/api/inked/nf-inked-iinkedit-recognize) o l'ultima generazione del timeout di riconoscimento.
+Un evento **Gesture** viene generato solo se [**L'oggetto IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) per [**l'oggetto IInkGesture**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkgesture) è il primo **oggetto IInkStrokeDisp** dopo l'ultima chiamata al metodo [**Recognize**](/windows/desktop/api/inked/nf-inked-iinkedit-recognize) o l'ultima attivazione del timeout di riconoscimento.
 
-Se l'evento di **movimento** viene annullato, viene generato l'evento [**Stroke**](inkedit-stroke.md) per la raccolta [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) che ha generato l'evento di **movimento** .
+Se **l'evento Gesture** viene annullato, viene generato [**l'evento Stroke**](inkedit-stroke.md) per la [raccolta InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) che ha generato **l'evento Gesture.**
 
-Affinché questo evento si verifichi, il controllo [InkEdit](inkedit-control-reference.md) deve sottoscrivere un set di movimenti dell'applicazione. Per impostare l'interesse del controllo InkEdit in un set di movimenti, chiamare il metodo [**SetGestureStatus**](/windows/desktop/api/inked/nf-inked-iinkedit-setgesturestatus) .
+Per il verificarsi di questo evento, il [controllo InkEdit](inkedit-control-reference.md) deve sottoscrivere un set di movimenti dell'applicazione. Per impostare l'interesse del controllo InkEdit in un set di movimenti, chiamare il [**metodo SetGestureStatus.**](/windows/desktop/api/inked/nf-inked-iinkedit-setgesturestatus)
 
-Per un elenco dei movimenti dell'applicazione, vedere il tipo di enumerazione [**InkApplicationGesture**](/windows/desktop/api/msinkaut/ne-msinkaut-inkapplicationgesture) .
+Per un elenco dei movimenti dell'applicazione, vedere il tipo di enumerazione [**InkApplicationGesture.**](/windows/desktop/api/msinkaut/ne-msinkaut-inkapplicationgesture)
 
-Il controllo [InkEdit](inkedit-control-reference.md) non riconosce più movimenti del tratto.
+Il [controllo InkEdit](inkedit-control-reference.md) non riconosce più movimenti del tratto.
 
-Il controllo [InkEdit](inkedit-control-reference.md) sottoscrive i movimenti seguenti.
+Il [controllo InkEdit](inkedit-control-reference.md) sottoscrive i movimenti seguenti.
 
 
 
 | Movimento                              | Azione               |
 |--------------------------------------|----------------------|
-| In basso a sinistra, in basso a sinistra-lungo<br/> | Immettere<br/>     |
+| In basso a sinistra, lungo verso il basso a sinistra<br/> | Immettere<br/>     |
 | Destra<br/>                     | Space<br/>     |
 | Sinistra<br/>                      | Backspace<br/> |
-| Up-right, up-right-Long<br/>   | Scheda<br/>       |
+| Up-right, Up-right-long<br/>   | Scheda<br/>       |
 
 
 
@@ -98,9 +98,9 @@ Il controllo [InkEdit](inkedit-control-reference.md) sottoscrive i movimenti seg
 
 Per modificare l'azione predefinita per un movimento:
 
-1.  Aggiungere gestori eventi per gli eventi **movimento** e [**tratto**](inkedit-stroke.md) .
-2.  Nel gestore eventi **movimento** annullare l'evento di **movimento** per il movimento ed eseguire l'azione alternativa per il movimento.
-3.  Nel gestore dell'evento [**Stroke**](inkedit-stroke.md) annullare l'evento **Stroke** per l'oggetto [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) che ha generato l'evento di **movimento** annullato.
+1.  Aggiungere gestori eventi per gli **eventi Gesture** [**e Stroke.**](inkedit-stroke.md)
+2.  Nel gestore **dell'evento Gesture** annullare l'evento **Gesture** per il movimento ed eseguire l'azione alternativa per il movimento.
+3.  Nel gestore [**dell'evento Stroke**](inkedit-stroke.md) annullare l'evento **Stroke** per [**l'oggetto IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) che ha generato l'evento **Gesture** annullato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -108,9 +108,9 @@ Per modificare l'azione predefinita per un movimento:
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>Inchiostrato. h (richiede anche il \_ . c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Inked.h (richiede anche \_ l'input penna i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkEd.dll</dt> </dl>                          |
 
 
@@ -119,22 +119,22 @@ Per modificare l'azione predefinita per un movimento:
 
 <dl> <dt>
 
-[InkEdit](inkedit-control-reference.md)
+[Inkedit](inkedit-control-reference.md)
 </dt> <dt>
 
 [**Enumerazione InkApplicationGesture**](/windows/desktop/api/msinkaut/ne-msinkaut-inkapplicationgesture)
 </dt> <dt>
 
-[**Metodo SetGestureStatus ( \[ controllo InkEdit)\]**](/windows/desktop/api/inked/nf-inked-iinkedit-setgesturestatus)
+[**Controllo InkEdit del metodo SetGestureStatus \[\]**](/windows/desktop/api/inked/nf-inked-iinkedit-setgesturestatus)
 </dt> <dt>
 
 [**Proprietà RecoTimeout**](/windows/desktop/api/inked/nf-inked-iinkedit-get_recognitiontimeout)
 </dt> <dt>
 
-[**\[Controllo InkEdit evento Stroke\]**](inkedit-stroke.md)
+[**Controllo \[ InkEdit dell'evento Stroke\]**](inkedit-stroke.md)
 </dt> <dt>
 
-[Uso di movimenti](using-gestures.md)
+[Uso dei movimenti](using-gestures.md)
 </dt> </dl>
 
  

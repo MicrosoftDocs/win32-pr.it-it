@@ -23,9 +23,9 @@ ms.locfileid: "118956290"
 ---
 # <a name="_getversionex-function"></a>\_Funzione GetVersionEx
 
-\[Questa funzione è un wrapper sulla **funzione GetVersionEx.** Questa funzione potrebbe essere modificata o non disponibile in futuro. Le applicazioni devono chiamare **direttamente GetVersionEx.**\]
+\[Questa funzione è un wrapper sulla **funzione GetVersionEx.** Questa funzione potrebbe essere modificata o non disponibile in futuro. Le applicazioni devono **chiamare direttamente GetVersionEx.**\]
 
-Ottiene informazioni sulla versione del sistema operativo. Vedere [**GetVersionEx**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa).
+Ottiene informazioni sulla versione del sistema operativo. Vedere [**GetVersionEx.**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa)
 
 ## <a name="syntax"></a>Sintassi
 

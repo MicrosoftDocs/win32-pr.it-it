@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione tra un servizio e il sistema che ospita il servizio. Un sistema può ospitare molti servizi, ma questa classe non rappresenta i servizi ospitati in più sistemi.
+description: Rappresenta un'associazione tra un servizio e il sistema che ospita il servizio. Un sistema può ospitare molti servizi, tuttavia questa classe non rappresenta i servizi ospitati in più sistemi.
 ms.assetid: ede67a81-cf1b-41aa-b907-5b635cf80423
-title: CIM_HostedService classe (gestione Hyper-V)
+title: CIM_HostedService classe (gestione di Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,9 +22,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118648556"
 ---
-# <a name="cim_hostedservice-class-hyper-v-management"></a>CIM_HostedService classe (gestione Hyper-V)
+# <a name="cim_hostedservice-class-hyper-v-management"></a>CIM_HostedService classe (gestione di Hyper-V)
 
-Rappresenta un'associazione tra un servizio e il sistema che ospita il servizio. Un sistema può ospitare molti servizi, ma questa classe non rappresenta i servizi ospitati in più sistemi.
+Rappresenta un'associazione tra un servizio e il sistema che ospita il servizio. Un sistema può ospitare molti servizi, tuttavia questa classe non rappresenta i servizi ospitati in più sistemi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,7 +52,7 @@ La **classe CIM \_ HostedService** ha queste proprietà.
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **SISTEMA CIM \_**
+Tipo di dati: **sistema \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura

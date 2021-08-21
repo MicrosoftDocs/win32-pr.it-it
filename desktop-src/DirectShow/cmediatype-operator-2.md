@@ -1,7 +1,7 @@
 ---
-description: Questo operatore consente di eseguire l'overload dell'operatore di assegnazione per copiare un tipo di supporto.
+description: Questo operatore esegue l'overload dell'operatore di assegnazione per copiare un tipo di supporto.
 ms.assetid: 5b94191d-b5e4-42b2-b0c5-8c2da2483c54
-title: 'CMediaType. CMediaType:: operator = Method (mtype. h)-parametro mtype'
+title: Metodo CMediaType.CMediaType::operator= (Mtype.h) - parametro mtype
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dfa577c8c8cfcdbcb0b62287a80cd998ab8775c6
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: b5960ac5f9dc3e685aa0b8b281989185580fd5b683392aaf93a0891d0ebaa35d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389037"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016264"
 ---
-# <a name="cmediatypecmediatypeoperator-method-mtypeh"></a>Metodo CMediaType. CMediaType:: operator = (mtype. h)
+# <a name="cmediatypecmediatypeoperator-method-mtypeh"></a>Metodo CMediaType.CMediaType::operator= (Mtype.h)
 
-Questo operatore consente di eseguire l'overload dell'operatore di assegnazione per copiare un tipo di supporto.
+Questo operatore esegue l'overload dell'operatore di assegnazione per copiare un tipo di supporto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,13 +45,13 @@ CMediaType& CMediaType::operator=(
 *mtype* \[ Ref\]
 </dt> <dd>
 
-Riferimento a una struttura del [**\_ \_ tipo di supporto am**](/windows/win32/api/strmif/ns-strmif-am_media_type) .
+Riferimento a una [**struttura AM \_ MEDIA \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un riferimento all'oggetto.
+Restituisce un riferimento all'oggetto .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce un riferimento all'oggetto.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Mtype. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Mtype.h (includere Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
