@@ -1,5 +1,5 @@
 ---
-description: Elenca le modalità di origine supportate per un monitor video nel relativo descrittore di monitoraggio, se presente.
+description: Elenca le modalità di origine supportate per un monitor video nel relativo descrittore di monitoraggio, se presenti.
 ms.assetid: cca59d28-bd93-4df2-989e-0516dd8eae83
 title: Classe WmiMonitorListedSupportedSourceModes
 ms.topic: reference
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 35cb4b3548654c72686a8843cc697f109f661d87
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca942fce42388eaeb2eb90b7b7ecd992dd6df39bca554bb63bbc55fb6bbb867a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118821466"
 ---
 # <a name="wmimonitorlistedsupportedsourcemodes-class"></a>Classe WmiMonitorListedSupportedSourceModes
 
-Il **WmiMonitorListedSupportedSourceModes** elenca le modalità di origine supportate per un monitor video nel relativo descrittore di monitoraggio, se presente. Per i monitoraggi senza descrizione, questo elenco di modalità viene generato in base al tipo di monitoraggio, come specificato dal driver del bus di monitoraggio.
+**WmiMonitorListedSupportedSourceModes** elenca le modalità di origine supportate per un monitor video nel relativo descrittore di monitoraggio, se presenti. Per i monitoraggi senza descrizione, questo elenco di modalità viene generato in base al tipo di monitoraggio, come specificato dal driver del bus di monitoraggio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,20 +44,20 @@ class WmiMonitorListedSupportedSourceModes : MSMonitorClass
 
 ## <a name="members"></a>Members
 
-La classe **WmiMonitorListedSupportedSourceModes** dispone di questi tipi di membri:
+La **classe WmiMonitorListedSupportedSourceModes** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **WmiMonitorListedSupportedSourceModes** dispone di queste proprietà.
+La **classe WmiMonitorListedSupportedSourceModes** ha queste proprietà.
 
 <dl> <dt>
 
 **Attivo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -70,13 +70,13 @@ Indica il monitoraggio attivo.
 **InstanceName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
 Nome dell'istanza di monitoraggio specifica.
@@ -86,39 +86,39 @@ Nome dell'istanza di monitoraggio specifica.
 **MonitorSourceModes**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **VideoModeDescriptor**
+Tipo di dati: **matrice VideoModeDescriptor**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Elenca le modalità di origine del monitoraggio rappresentate da istanze della classe [**VideoModeDescriptor**](videomodedescriptor.md) .
+Elenca le modalità di origine del monitoraggio rappresentate da istanze [**della classe VideoModeDescriptor.**](videomodedescriptor.md)
 
 </dd> <dt>
 
 **NumOfMonitorSourceModes**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero di modalità di origine del monitoraggio supportato elencate.
+Numero di modalità di origine del monitoraggio supportate elencate.
 
 </dd> <dt>
 
 **PreferredMonitorSourceModeIndex**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indice della modalità origine del monitoraggio preferito.
+Indice preferito della modalità di origine del monitoraggio.
 
 </dd> </dl>
 
@@ -130,8 +130,8 @@ Indice della modalità origine del monitoraggio preferito.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
-| Spazio dei nomi<br/>                | \\WMI radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Wmi \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

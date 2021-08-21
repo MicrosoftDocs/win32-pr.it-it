@@ -1,7 +1,7 @@
 ---
 description: Il metodo LoadXML carica i dati delle proprietà espressi in Extensible Markup Language (XML).
 ms.assetid: cc67e7e0-a6e0-43d1-b35d-5d64caf24e6e
-title: 'Metodo IPropertySetter:: LoadXML (qedit. h)'
+title: Metodo IPropertySetter::LoadXML (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 65127d313309ca7d670a99c912531db0657a9b51
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1779c6bcd37baad4bd423d0a46abd3741dd3a7939c1615a5871e6746729558c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952570"
 ---
-# <a name="ipropertysetterloadxml-method"></a>Metodo IPropertySetter:: LoadXML
+# <a name="ipropertysetterloadxml-method"></a>Metodo IPropertySetter::LoadXML
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
@@ -45,25 +45,25 @@ HRESULT LoadXML(
 
 <dl> <dt>
 
-*pXML* \[ in\]
+*pxml* \[ Pollici\]
 </dt> <dd>
 
-Puntatore all'interfaccia **IUnknown** di un elemento XML creato da Microsoft XML parser.
+Puntatore **all'interfaccia IUnknown** di un elemento XML creato dal parser XML Microsoft.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possibili.
+Restituisce un **valore HRESULT.** Di seguito sono indicati alcuni valori possibili.
 
 
 
 | Codice restituito                                                                                                  | Descrizione                     |
 |--------------------------------------------------------------------------------------------------------------|---------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl>                      | Nessun dato della proprietà.<br/>    |
-| <dl> <dt>**\_OK**</dt> </dl>                         | Esito positivo.<br/>             |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl>                | Memoria insufficiente.<br/> |
-| <dl> <dt>**\_formato file VFW E \_ non valido \_ \_**</dt> </dl> | Formato non valido.<br/>      |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>                      | Nessun dato di proprietà.<br/>    |
+| <dl> <dt>**S \_ OK**</dt> </dl>                         | Operazione completata.<br/>             |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>                | Memoria insufficiente.<br/> |
+| <dl> <dt>**FORMATO DI FILE VFW \_ E \_ NON \_ \_ VALIDO**</dt> </dl> | Formato non valido.<br/>      |
 
 
 
@@ -71,22 +71,22 @@ Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possi
 
 ## <a name="remarks"></a>Commenti
 
-In genere, le applicazioni non dovranno utilizzare questo metodo. DES lo usa internamente per caricare le proprietà dai file XTL.
+In genere, le applicazioni non dovranno usare questo metodo. DES lo usa internamente per caricare le proprietà dai file XTL.
 
-Per usare questo metodo, creare un oggetto **IXMLDocument** e usarlo per analizzare un file XML. Usare quindi l'oggetto **IXMLDocument** per recuperare gli oggetti **IXMLElement** . Se l'oggetto dispone di proprietà, è possibile passare il puntatore **IXMLElement** al metodo **LoadXml** . Il metodo carica le proprietà nel setter della proprietà.
+Per usare questo metodo, creare un **oggetto IXMLDocument** e usarlo per analizzare un file XML. Usare quindi **l'oggetto IXMLDocument** per recuperare **oggetti IXMLElement.** Se l'oggetto dispone di proprietà, è possibile passare il **puntatore IXMLElement** al **metodo LoadXML.** Il metodo carica le proprietà nel setter di proprietà.
 
 > [!Note]  
-> Le interfacce **IXMLDocument** e **IXMLElement** sono implementate in Microsoft XML Core Services (MSXML) versione 1,0, ma non sono implementate nelle versioni più recenti di MSXML.
+> Le **interfacce IXMLDocument** e **IXMLElement** vengono implementate in Microsoft XML Core Services (MSXML) versione 1.0, ma non nelle versioni più recenti di MSXML.
 
  
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -96,8 +96,8 @@ Per usare questo metodo, creare un oggetto **IXMLDocument** e usarlo per analizz
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

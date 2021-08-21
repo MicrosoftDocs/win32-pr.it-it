@@ -1,36 +1,36 @@
 ---
 title: Stringhe di ricerca iniziali, mediali e finali
-description: Sono disponibili tre tipi di ricerche con caratteri jolly a cui viene fatto riferimento in tutta la documentazione relativa alle query sulle stringhe di ricerca per la costruzione. Queste ricerche con caratteri jolly sono stringhe iniziali, mediali e di ricerca finale. In questo argomento vengono descritte queste ricerche.
+description: Esistono tre tipi di ricerche con caratteri jolly a cui viene fatto riferimento nella documentazione relativa alla costruzione di query di stringa di ricerca. Queste ricerche con caratteri jolly sono stringhe iniziali, mediali e finali. In questo argomento vengono descritte queste ricerche.
 ms.assetid: 23cc4771-2dd6-478c-9c7a-43052594cb71
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76f502753a87afc81856524c7ae5565db3af678d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 39547116846cad4d75a1fd9ae1998e602a8084912965a3dd269803c86845cefc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024969"
 ---
 # <a name="initial-medial-and-final-search-strings"></a>Stringhe di ricerca iniziali, mediali e finali
 
-Sono disponibili tre tipi di ricerche con caratteri jolly a cui viene fatto riferimento in tutta la documentazione relativa alle query sulle stringhe di ricerca per la costruzione. Queste ricerche con caratteri jolly sono: stringhe iniziali, mediali e di ricerca finale. In questo argomento vengono descritte queste ricerche.
+Esistono tre tipi di ricerche con caratteri jolly a cui viene fatto riferimento nella documentazione relativa alla costruzione di query di stringa di ricerca. Queste ricerche con caratteri jolly sono: stringhe iniziali, mediali e finali. In questo argomento vengono descritte queste ricerche.
 
 ## <a name="initial-search-strings"></a>Stringhe di ricerca iniziali
 
-Le stringhe di ricerca iniziali corrispondono a un set di caratteri specificato all'inizio di una stringa, seguito da un carattere jolly. Ad esempio, la stringa di ricerca iniziale `Act*` corrisponderà a "Active Directory".
+Le stringhe di ricerca iniziale corrispondono a un determinato set di caratteri all'inizio di una stringa, seguita da un carattere jolly. Ad esempio, la stringa di ricerca iniziale `Act*` corrisponderebbe a "Active Directory".
 
-## <a name="medial-search-strings"></a>Stringhe di Medial-Search
+## <a name="medial-search-strings"></a>Medial-Search stringhe
 
-Le stringhe di ricerca mediale corrispondono a un determinato set di caratteri all'interno di una stringa, preceduto da e/o seguito da un carattere jolly. Le stringhe di ricerca mediale `*Dir*` , `*ive*Dir*` e `*ve*Dir*tor*` corrisponderanno a "Active Directory".
+Le stringhe di ricerca mediale corrispondono a un determinato set di caratteri al centro di una stringa, preceduti da e/o seguiti da un carattere jolly. Le stringhe mediali di ricerca `*Dir*` `*ive*Dir*` , e `*ve*Dir*tor*` corrisponderebbero tutte a "Active Directory".
 
-## <a name="final-search-strings"></a>Ultime-stringhe di ricerca
+## <a name="final-search-strings"></a>Stringhe di ricerca finale
 
-Le stringhe di ricerca finale corrispondono a un set di caratteri specificato alla fine di una stringa, preceduta da un carattere jolly. Ad esempio, la stringa di ricerca finale `*ory` corrisponderà a "Active Directory".
+Le stringhe di ricerca finale corrispondono a un determinato set di caratteri alla fine di una stringa, precedute da un carattere jolly. Ad esempio, la stringa di ricerca finale `*ory` corrisponderebbe a "Active Directory".
 
- 
+ 
 
- 
+ 
 
 
 

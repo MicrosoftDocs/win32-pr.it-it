@@ -1,19 +1,19 @@
 ---
-description: Utilizzato per assegnare il testo enumerato a valori discreti.
+description: Usato per assegnare testo enumerato a valori discreti.
 ms.assetid: c8cc040e-fcce-43a0-98c1-db2b2c616ac3
 title: enum
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b615697e669f8d02e0530a1763309cfe74113467
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1336a690fe7ac1e19a8606912a4f7d538d3842ab6a490d17b89f90f64bbfbc13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970980"
 ---
 # <a name="enum"></a>enum
 
-Utilizzato per assegnare il testo enumerato a valori discreti. In [enumeratedList](./propdesc-schema-enumeratedlist.md)è possibile che esista un numero qualsiasi di questi elementi. A livello di codice, questi sono rappresentati come oggetti IPropertyEnumType, il cui metodo [**IPropertyEnumType:: GetEnumType**](/windows/win32/api/propsys/nf-propsys-ipropertyenumtype-getenumtype) restituisce PET \_ DISCRETEVALUE.
+Usato per assegnare testo enumerato a valori discreti. Un numero qualsiasi di questi elementi può esistere in [un oggetto enumeratedList](./propdesc-schema-enumeratedlist.md). A livello di codice, sono rappresentati come oggetti IPropertyEnumType, il cui metodo [**IPropertyEnumType::GetEnumType**](/windows/win32/api/propsys/nf-propsys-ipropertyenumtype-getenumtype) restituisce PET \_ DISCRETEVALUE.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,8 +53,8 @@ Utilizzato per assegnare il testo enumerato a valori discreti. In [enumeratedLis
 | Attributo | Descrizione                                                                                                                                                                                                          |
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Valore     | Pubblica. Obbligatorio. Valore discreto (stringa o numero) a cui assegnare il testo enumerato.                                                                                                                           |
-| text      | Pubblica. Obbligatorio. Testo utilizzato per visualizzare il valore enumerato. La sintassi consente una stringa di visualizzazione diretta o un riferimento indiretto a una stringa di visualizzazione. utilizzare la stringa di visualizzazione indiretta in modo che possa essere localizzata. |
-| tasti di scelta | **Windows 7 e versioni successive.** Pubblica. facoltativo. Elenco di valori mnemonico che possono essere usati per fare riferimento alla proprietà nelle query di ricerca. L'elenco è delimitato dal carattere " \| ".                                     |
+| text      | Pubblica. Obbligatorio. Testo utilizzato per visualizzare il valore enumerato. La sintassi consente una stringa di visualizzazione diretta o un riferimento indiretto alla stringa di visualizzazione. usare la stringa di visualizzazione indiretta in modo che possa essere localizzata. |
+| tasti di scelta | **Windows 7 e versioni successive.** Pubblica. facoltativo. Elenco di valori mnemoici che possono essere usati per fare riferimento alla proprietà nelle query di ricerca. L'elenco è delimitato dal carattere ' \| '.                                     |
 
 
 

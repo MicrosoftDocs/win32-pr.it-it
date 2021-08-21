@@ -1,7 +1,7 @@
 ---
-description: La \_ variabile membro pPageSite m specifica un identificatore di risorsa per una stringa che contiene il titolo della finestra di dialogo. Questa variabile viene inizializzata nel metodo del costruttore.
+description: La variabile \_ membro m pPageSite specifica un identificatore di risorsa per una stringa che contiene il titolo della finestra di dialogo. Questa variabile viene inizializzata nel metodo del costruttore.
 ms.assetid: 34eb04ac-cde6-45bb-a339-e4d38e3d5940
-title: 'Membro CBasePropertyPage:: m_TitleId (Cprop. h)'
+title: Membro CBasePropertyPage::m_TitleId (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e31ba10d04b7a3929ad77449a5e704da13d05bfd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e4a4e301b120d431066ad0d0b2ad3dd0fe806d86453c67424e91cee6da5b26e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955000"
 ---
-# <a name="cbasepropertypagem_titleid-member"></a>Membro IDQualifica di CBasePropertyPage:: m \_
+# <a name="cbasepropertypagem_titleid-member"></a>Membro CBasePropertyPage::m \_ TitleId
 
-La variabile membro **\_ pPageSite m** specifica un identificatore di risorsa per una stringa che contiene il titolo della finestra di dialogo. Questa variabile viene inizializzata nel metodo del costruttore.
+La **variabile membro m \_ pPageSite** specifica un identificatore di risorsa per una stringa che contiene il titolo della finestra di dialogo. Questa variabile viene inizializzata nel metodo del costruttore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ int m_TitleId;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Cprop. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Cprop.h (include Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

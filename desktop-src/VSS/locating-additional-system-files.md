@@ -1,120 +1,120 @@
 ---
-description: Quando si esegue un backup o un ripristino VSS, lo stato del sistema Windows viene definito come una raccolta di diversi elementi chiave del sistema operativo e dei relativi file. Questi elementi devono essere sempre considerati come un'unità dalle operazioni di backup e ripristino.
+description: Quando si esegue un backup o un ripristino vss, lo stato Windows sistema viene definito come una raccolta di diversi elementi chiave del sistema operativo e dei relativi file. Questi elementi devono essere sempre considerati come un'unità dalle operazioni di backup e ripristino.
 ms.assetid: 48721358-8450-462f-8f99-23e207311041
 title: Backup e ripristino dello stato del sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed61c3ccad51ebd8cd632fab292160c795741c9b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3b027fa0d1a01f3d4f735494d34d4f2da2d07a0e0d82ecfd189f7a9c7c8537c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103755543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056399"
 ---
 # <a name="backing-up-and-restoring-system-state"></a>Backup e ripristino dello stato del sistema
 
 > [!Note]  
-> Questo argomento si applica a Windows Vista, Windows Server 2008 e versioni successive. Per informazioni su Windows Server 2003, vedere [backup e ripristino dello stato del sistema in Windows server 2003 R2 e Windows server 2003 SP1](backing-up-and-restoring-system-state-under-vss.md)
+> Questo argomento si applica Windows Vista, Windows Server 2008 e versioni successive. Per informazioni su Windows Server 2003, vedere Backup e ripristino dello stato del sistema [in Windows Server 2003 R2 e Windows Server 2003 SP1](backing-up-and-restoring-system-state-under-vss.md)
 
  
 
-Quando si esegue un backup o un ripristino VSS, lo stato del sistema Windows viene definito come una raccolta di diversi elementi chiave del sistema operativo e dei relativi file. Questi elementi devono essere sempre considerati come un'unità dalle operazioni di backup e ripristino.
+Quando si esegue un backup o un ripristino vss, lo stato Windows sistema viene definito come una raccolta di diversi elementi chiave del sistema operativo e dei relativi file. Questi elementi devono essere sempre considerati come un'unità dalle operazioni di backup e ripristino.
 
 > [!Note]  
-> Microsoft non fornisce supporto tecnico per sviluppatori o professionisti IT per l'implementazione di ripristini dello stato del sistema online in Windows (tutte le versioni).
+> Microsoft non offre supporto tecnico per sviluppatori o professionisti IT per l'implementazione di ripristini dello stato del sistema online Windows (tutte le versioni).
 
  
 
-Quando si esegue il backup e il ripristino dello stato del sistema, la strategia consigliata consiste nel eseguire il backup e il ripristino dei volumi di sistema e di avvio oltre ai file enumerati dai writer dello stato del sistema. I writer dello stato del sistema sono writer per i quali l'attributo del [**\_ \_ tipo di utilizzo VSS**](/windows/desktop/api/VsWriter/ne-vswriter-vss_usage_type) è impostato su VSS \_ ut \_ BOOTABLESYSTEMSTATE o VSS \_ ut \_ SYSTEMSERVICE.
+Quando si esegue il backup e il ripristino dello stato del sistema, la strategia consigliata consiste nel eseguire il backup e il ripristino dei volumi di sistema e di avvio oltre ai file enumerati dai writer dello stato del sistema. I writer dello stato del sistema sono writer con l'attributo [**VSS \_ USAGE \_ TYPE**](/windows/desktop/api/VsWriter/ne-vswriter-vss_usage_type) impostato su VSS \_ UT \_ BOOTABLESYSTEMSTATE o VSS \_ UT \_ SYSTEMSERVICE.
 
 > [!IMPORTANT]
-> Se un writer VSS è identificato dal relativo [**\_ \_ tipo di utilizzo VSS**](/windows/desktop/api/VsWriter/ne-vswriter-vss_usage_type) come writer dello stato del sistema, deve essere incluso in un backup dello stato del sistema anche se è selezionabile.
+> Se un VSS Writer viene identificato dal relativo TIPO DI UTILIZZO [**VSS \_ \_**](/windows/desktop/api/VsWriter/ne-vswriter-vss_usage_type) come writer dello stato del sistema, deve essere incluso in un backup dello stato del sistema anche se è selezionabile.
 
  
 
-Oltre al sistema operativo enumerato e ai file binari del driver enumerati dai writer dello stato del sistema, è necessario eseguire il backup di alcuni file come parte dello stato del sistema.
+Oltre ai file binari enumerati del sistema operativo e del driver enumerati dai writer dello stato del sistema, è necessario eseguire il backup di alcuni altri file come parte dello stato del sistema.
 
-Tutti i componenti restituiti da un writer dello stato del sistema VSS fanno parte dello stato del sistema, ad eccezione di quelli per cui \_ \_ è impostato il flag VSS CF Not \_ System \_ state.
+Tutti i componenti segnalati da un writer di stato del sistema VSS fanno parte dello stato del sistema, ad eccezione di quelli per cui è impostato il flag VSS \_ CF \_ NOT SYSTEM \_ \_ STATE.
 
-Anche i programmi di backup devono impostare la chiave del registro di sistema **LastRestoreId** . Per ulteriori informazioni, vedere [chiavi e valori del registro di sistema per il backup e il ripristino](../backup/registry-keys-for-backup-and-restore.md).
+I programmi di backup devono anche impostare la chiave del Registro di sistema **LastRestoreId.** Per altre informazioni, vedere Chiavi e [valori del Registro di sistema per il backup e il ripristino.](../backup/registry-keys-for-backup-and-restore.md)
 
 > [!Note]  
-> In Windows Vista, Windows Server 2008 e versioni successive, i nomi e le posizioni di alcuni file di sistema sono stati modificati come indicato di seguito.
+> In Windows Vista, Windows Server 2008 e versioni successive, i nomi e i percorsi di alcuni file di sistema sono stati modificati come indicato di seguito.
 
  
 
 ## <a name="system-state"></a>Stato del sistema
 
-Per Windows Server 2012 e versioni successive, oltre ai file segnalati dai vari writer di stato del sistema VSS, è necessario includere in modo esplicito solo i file di licenza seguenti e i file DRM seguenti devono essere esclusi in modo esplicito.
+Per Windows Server 2012 e versioni successive, oltre ai file segnalati dai vari writer dello stato del sistema vss, è necessario includere in modo esplicito solo i file di licenza seguenti e i file DRM seguenti devono essere esclusi in modo esplicito.
 
-## <a name="windows-media-digital-rights-management-files"></a>File di Rights Management digitali di Windows Media
+## <a name="windows-media-digital-rights-management-files"></a>Windows File di Rights Management multimediali
 
-In Windows Server 2008 e versioni successive, i file seguenti, incluse tutte le sottodirectory nel percorso seguente, sono esclusi dallo stato del sistema e non devono essere sottoposti a backup:
+In Windows Server 2008 e versioni successive, i file seguenti, incluse tutte le sottodirectory nel percorso seguente, vengono esclusi dallo stato del sistema e non devono essere sottoposti a backup:
 
--   % ProgramData% \\ Microsoft \\ Windows \\ DRM\\
+-   %ProgramData% \\ Microsoft \\ Windows \\ DRM\\
 
-Questa operazione sostituisce le informazioni contenute nella sezione Windows Media Digital Rights Management di [utilizzo delle funzionalità di sicurezza e del file System](working-with-file-system-and-security-features.md).
+In questo modo vengono sostituite le informazioni nella sezione Windows Media Digital Rights Management di Working with File System and Security Features ( Uso del file system e [delle funzionalità di sicurezza).](working-with-file-system-and-security-features.md)
 
 ## <a name="performance-counter-configuration-files"></a>File di configurazione dei contatori delle prestazioni
 
-I file di configurazione del contatore delle prestazioni si trovano nella directory% SystemRoot% \\ system32 \\ e hanno i nomi seguenti:
+I file di configurazione dei contatori delle prestazioni si trovano nella directory %SystemRoot% \\ System32 \\ e hanno i nomi seguenti:
 
-<dl> Prestazioni? 00?. dat  
-??. Perfc0 dat  
-??. Perfd0 dat  
-??. Perfh0 dat  
-??. Perfi0 dat  
-???. Prfc0 dat  
-???. Prfd0 dat  
-???. Prfh0 dat  
-???. Prfi0 dat  
+<dl> Perf?00?. Dat  
+Perfc0??. Dat  
+Perfd0??. Dat  
+Perfh0??. Dat  
+Perfi0??. Dat  
+Prfc0???. Dat  
+Prfd0???. Dat  
+Prfh0???. Dat  
+Prfi0???. Dat  
 </dl>
 
-Questi file vengono modificati solo durante l'installazione dell'applicazione ed è necessario eseguirne il backup e il ripristino durante i backup e i ripristini dello stato del sistema.
+Questi file vengono modificati solo durante l'installazione dell'applicazione e devono essere sottoposti a backup e ripristino durante i backup e i ripristini dello stato del sistema.
 
-## <a name="iis-configuration-files"></a>File di configurazione di IIS
+## <a name="iis-configuration-files"></a>File di configurazione iis
 
 > [!Note]  
-> In Windows Vista con Service Pack 1 (SP1) e versioni successive, non è consigliabile eseguire il backup di questi file. Usare invece il writer di configurazione di IIS in-box. Per ulteriori informazioni su questo writer, vedere la pagina relativa ai [writer VSS](in-box-vss-writers.md).
+> In Windows Vista con Service Pack 1 (SP1) e versioni successive, non è consigliabile eseguire il backup di questi file. Usare invece il writer di configurazione IIS in uso. Per altre informazioni su questo writer, vedere [VsS Writer in-box.](in-box-vss-writers.md)
 
  
 
-Di seguito sono elencati i file di configurazione IIS pertinenti e i relativi percorsi:
+I file di configurazione IIS pertinenti e i relativi percorsi sono elencati di seguito:
 
--   Il file di machine.config .NET FX si trova nella directory della versione del Framework.
--   Il file di web.config radice ASP.NET si trova nella directory della versione del Framework.
+-   Il file di machine.config FX .NET si trova nella directory della versione del framework.
+-   Il ASP.NET radice web.config si trova nella directory della versione del framework.
     > [!Note]  
-    > I file di configurazione per .NET FX e ASP.NET si trovano nella directory della versione del Framework. Se nel computer sono installate più versioni del Framework, questa directory conterrà un file di configurazione per ogni versione installata.
+    > I file di configurazione per .NET FX e ASP.NET nella directory della versione del framework. Se nel computer sono installate più versioni del framework, questa directory conterrà un file di configurazione per ogni versione installata.
 
      
 
--   Il file di configurazione centrale di IIS applicationHost.config si trova nella directory% windir% \\ system32 \\ inetsrv \\ config. Poiché il server è in grado di comprendere questo file di configurazione, sono presenti file di schema che ne determinano la grammatica e la struttura. Questi file si trovano nella directory% windir% \\ system32 \\ inetsrv \\ config \\ schema.
+-   Il file applicationHost.config configurazione centrale di IIS si trova nella directory %windir% \\ system32 \\ inetsrv \\ config. Perché il server comprendi questo file di configurazione, sono disponibili file di schema che ne determinano la grammatica e la struttura. Questi file si trovano nella directory %windir% \\ system32 \\ inetsrv \\ config \\ schema.
 
-Il percorso della directory della versione del Framework è archiviato nella chiave del registro di sistema seguente:
+Il percorso della directory della versione del framework è archiviato nella chiave del Registro di sistema seguente:
 
-**HKEY \_ \_ computer locale \\ software \\ Microsoft \\ . \\InstallRoot NETFramework**
+**HKEY \_ LOCAL MACHINE SOFTWARE Microsoft \_ \\ \\ \\ . NETFramework \\ InstallRoot**
 
-Inoltre, è necessario eseguire il backup delle chiavi di crittografia seguenti:<dl> % ProgramData% \\ Microsoft \\ Crypto \\ RSA \\ MachineKeys\\\*  
-% SystemRoot% \\ system32 \\ Microsoft \\ Protect\\\*  
+È inoltre necessario eseguire il backup delle chiavi di crittografia seguenti:<dl> %ProgramData% \\ Microsoft Crypto RSA \\ \\ \\ MachineKeys\\\*  
+%SystemRoot% \\ System32 \\ Microsoft \\ Protect\\\*  
 </dl>
 
-## <a name="framework-files"></a>File di Framework
+## <a name="framework-files"></a>File di framework
 
-È necessario eseguire il backup di tutte le versioni di .NET Framework. I file si trovano in una o in entrambe le directory seguenti:
+È necessario eseguire il backup di tutte le versioni di .NET Framework. I file si trovano in una o entrambe le directory seguenti:
 
-<dl> % WINDIR% \\ Microsoft.NET \\ Framework  
-% WINDIR% \\ Microsoft.NET \\ Framework64  
+<dl> %windir% \\ Microsoft.Net \\ Framework  
+%windir% \\ Microsoft.Net \\ Framework64  
 </dl>
 
-Inoltre, è necessario eseguire il backup dei file di assembly. Questi file sono disponibili nella directory seguente:<dl> assembly% windir% \\  
+Inoltre, è necessario eseguire il backup dei file di assembly. Questi file sono disponibili nella directory seguente:<dl> Assembly %windir% \\  
 </dl>
 
-## <a name="task-scheduler-task-files"></a>File Utilità di pianificazione attività
+## <a name="task-scheduler-task-files"></a>Utilità di pianificazione file dell'attività
 
-È necessario eseguire il backup dei file delle attività dell'utilità di pianificazione. I file si trovano in una o in entrambe le posizioni seguenti:
+È necessario eseguire il backup dei file delle attività dell'utilità di pianificazione. I file si trovano in uno o entrambi i percorsi seguenti:
 
-<dl> % WINDIR% \\ system32 \\ attività e qualsiasi sottodirectory (in modo ricorsivo)  
-% WINDIR% \\ attività (nessuna sottodirectory)  
+<dl> %windir% \\ system32 \\ tasks and any subdirectories (recursively) (%windir% system32 tasks and any subdirectories (recursively) (%windir% system32 tasks and any subdirectories (recursively)  
+%windir% \\ tasks (nessuna sottodirectory)  
 </dl>
 
  

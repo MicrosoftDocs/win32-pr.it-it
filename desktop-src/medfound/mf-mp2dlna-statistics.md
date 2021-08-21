@@ -1,31 +1,31 @@
 ---
-description: Ottiene le statistiche dal sink di supporti Digital Living Network Alliance (DLNA).
+description: Ottiene le statistiche dal sink multimediale DLNA (Digital Living Network Alliance).
 ms.assetid: 1fa6ea9f-fd30-4fa2-a0e6-1647273bcc35
-title: Attributo MF_MP2DLNA_STATISTICS (Mfmp2dlna. h)
+title: MF_MP2DLNA_STATISTICS attributo (Mfmp2dlna.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a51620c1ca093a422a5e4657edcfbfaa66ae6cd3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47a80bf0682cf6e46845a968122bf512a6e9cff15df8fb8e0312e1c63c8dab0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973620"
 ---
-# <a name="mf_mp2dlna_statistics-attribute"></a>\_ \_ Attributo Statistics MF MP2DLNA
+# <a name="mf_mp2dlna_statistics-attribute"></a>Attributo MF \_ MP2DLNA \_ STATISTICS
 
-Ottiene le statistiche dal sink di supporti Digital Living Network Alliance (DLNA).
+Ottiene le statistiche dal sink multimediale DLNA (Digital Living Network Alliance).
 
 ## <a name="data-type"></a>Tipo di dati
 
-**[**MFMPEG2DLNASINKSTATS**](/windows/desktop/api/mfmp2dlna/ns-mfmp2dlna-mfmpeg2dlnasinkstats)** archiviato come **byte \[ \]**
+**[**MFMPEG2DLNASINKSTATS**](/windows/desktop/api/mfmp2dlna/ns-mfmp2dlna-mfmpeg2dlnasinkstats)** archiviato come **BYTE \[ \]**
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob).
 
 ## <a name="remarks"></a>Commenti
 
-Durante lo streaming, il sink multimediale DLNA aggiorna questo attributo con le statistiche relative alla codifica e al multiplexing dei flussi MPEG-2. L'applicazione può eseguire una query su questo attributo in qualsiasi momento per ottenere i valori più recenti.
+Durante il flusso, il sink multimediale DLNA aggiorna questo attributo con le statistiche sulla codifica e il multiplexing dei flussi MPEG-2. L'applicazione può eseguire query su questo attributo in qualsiasi momento per ottenere i valori più recenti.
 
 L'impostazione di questo attributo sul sink multimediale DLNA non ha alcun effetto.
 
@@ -35,9 +35,9 @@ L'impostazione di questo attributo sul sink multimediale DLNA non ha alcun effet
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                             |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mfmp2dlna. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>Mfmp2dlna.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ L'impostazione di questo attributo sul sink multimediale DLNA non ha alcun effet
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

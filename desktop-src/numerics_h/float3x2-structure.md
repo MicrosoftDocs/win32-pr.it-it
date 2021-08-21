@@ -25,9 +25,9 @@ ms.locfileid: "118971760"
 
 Matrice 3x2, usata per le trasformazioni 2D.
 
-Questo tipo di matrice usa un layout di vettore di riga. Le x e y del vettore di traslazione di questa matrice corrispondono ai campi m31, m32.
+Questo tipo di matrice usa un layout di vettore di riga. I valori x e y del vettore di traslazione di questa matrice corrispondono ai campi m31, m32.
 
-Questo tipo è disponibile solo in C++. L'equivalente .NET è [System.Numerics.Matrix3x2](/dotnet/api/system.numerics.matrix3x2?view=netframework-4.8).
+Questo tipo è disponibile solo in C++. L'equivalente .NET è [System.Numerics.Matrix3x2.](/dotnet/api/system.numerics.matrix3x2?view=netframework-4.8)
 
 ## <a name="constructors"></a>Costruttori
 
@@ -43,20 +43,20 @@ Questo tipo è disponibile solo in C++. L'equivalente .NET è [System.Numerics.M
 |-|-|
 | `float3x2 make_float3x2_translation(float2 const& position)` | Crea una matrice di traslazione. |
 | `float3x2 make_float3x2_translation(float xPosition, float yPosition)` | Crea una matrice di traslazione. |
-| `float3x2 make_float3x2_scale(float xScale, float yScale)` | Crea una matrice di scala, centrata sull'origine. |
+| `float3x2 make_float3x2_scale(float xScale, float yScale)` | Crea una matrice di ridimensionamento, centrata sull'origine. |
 | `float3x2 make_float3x2_scale(float xScale, float yScale, float2 const& centerPoint)` | Crea una matrice di scala, centrata sul punto specificato. |
-| `float3x2 make_float3x2_scale(float2 const& scales)` | Crea una matrice di scala, centrata sull'origine. |
+| `float3x2 make_float3x2_scale(float2 const& scales)` | Crea una matrice di ridimensionamento, centrata sull'origine. |
 | `float3x2 make_float3x2_scale(float2 const& scales, float2 const& centerPoint)` | Crea una matrice di scala, centrata sul punto specificato. |
-| `float3x2 make_float3x2_scale(float scale)` | Crea una matrice di scala, centrata sull'origine. |
+| `float3x2 make_float3x2_scale(float scale)` | Crea una matrice di ridimensionamento, centrata sull'origine. |
 | `float3x2 make_float3x2_scale(float scale, float2 const& centerPoint)` | Crea una matrice di scala, centrata sul punto specificato. |
 | `float3x2 make_float3x2_skew(float radiansX, float radiansY)` | Crea una matrice di a inclinazione, centrata sull'origine. |
-| `float3x2 make_float3x2_skew(float radiansX, float radiansY, float2 const& centerPoint)` | Crea una matrice di ancoraggio, centrata sul punto specificato. |
+| `float3x2 make_float3x2_skew(float radiansX, float radiansY, float2 const& centerPoint)` | Crea una matrice di inclinazione, centrata sul punto specificato. |
 | `float3x2 make_float3x2_rotation(float radians)` | Crea una matrice di rotazione, centrata sull'origine. |
 | `float3x2 make_float3x2_rotation(float radians, float2 const& centerPoint)` | Crea una matrice di rotazione, centrata sul punto specificato. |
-| `bool is_identity(float3x2 const& value)` | Verifica se si tratta di una matrice di identità. |
+| `bool is_identity(float3x2 const& value)` | Controlla se si tratta di una matrice di identità. |
 | `float determinant(float3x2 const& value)` | Calcola il determinante della matrice. |
 | `float2 translation(float3x2 const& value)` | Ottiene il vettore di traslazione della matrice. |
-| `bool invert(float3x2 const& matrix, _Out_ float3x2* result)` | Calcola l'inverso di una matrice. Restituisce true se la matrice può essere invertita; false in caso contrario. |
+| `bool invert(float3x2 const& matrix, _Out_ float3x2* result)` | Calcola l'inverso di una matrice. Restituisce true se la matrice può essere invertita. in caso contrario, false. |
 | `float3x2 lerp(float3x2 const& matrix1, float3x2 const& matrix2, float amount)` | Interpolazione lineare tra i valori corrispondenti di due matrici. |
 
 ## <a name="methods"></a>Metodi
@@ -71,27 +71,27 @@ Questo tipo è disponibile solo in C++. L'equivalente .NET è [System.Numerics.M
 |-|-|
 | `float3x2 operator+ (float3x2 const& value1, float3x2 const& value2)` | Aggiunge ogni componente di una matrice a un'altra matrice. |
 | `float3x2 operator- (float3x2 const& value1, float3x2 const& value2)` | Sottrae ogni componente di una matrice da un'altra matrice. |
-| `float3x2 operator* (float3x2 const& value1, float3x2 const& value2)` | Moltiplica una matrice per un'altra matrice. Ciò ha l'effetto di concatenare due trasformazioni. |
+| `float3x2 operator* (float3x2 const& value1, float3x2 const& value2)` | Moltiplica una matrice per un'altra matrice. Ciò ha l'effetto della concatenazione di due trasformazioni. |
 | `float3x2 operator* (float3x2 const& value1, float value2)` | Moltiplica ogni componente di una matrice per un valore scalare. |
 | `float3x2 operator- (float3x2 const& value)` | Nega ogni componente di una matrice. |
 | `float3x2& operator+= (float3x2& value1, float3x2 const& value2)` | Sul posto aggiunge ogni componente di una matrice a un'altra matrice. |
 | `float3x2& operator-= (float3x2& value1, float3x2 const& value2)` | Sul posto sottrae ogni componente di una matrice da un'altra matrice. |
-| `float3x2& operator*= (float3x2& value1, float3x2 const& value2)` | Sul posto moltiplica una matrice per un'altra matrice. Ciò ha l'effetto di concatenare due trasformazioni. |
+| `float3x2& operator*= (float3x2& value1, float3x2 const& value2)` | Sul posto moltiplica una matrice per un'altra matrice. Ciò ha l'effetto della concatenazione di due trasformazioni. |
 | `float3x2& operator*= (float3x2& value1, float value2)` | Sul posto moltiplica ogni componente di una matrice per un valore scalare. |
 | `bool operator== (float3x2 const& value1, float3x2 const& value2)` | Determina se due istanze di float3x2 sono uguali. |
 | `bool operator!= (float3x2 const& value1, float3x2 const& value2)` | Determina se due istanze di float3x2 non sono uguali. |
-| `operator Microsoft::?Graphics::?Canvas::?Numerics::?Matrix3x2() const` | Converte un oggetto float3x2 in **un oggetto Microsoft.Graphics.Canvas.Numerics.Matrix3x2**. |
+| `operator Microsoft::?Graphics::?Canvas::?Numerics::?Matrix3x2() const` | Converte un oggetto float3x2 in **un oggetto Microsoft.Graphics.Canvas.Numerics.Matrix3x2.** |
 
 ## <a name="fields"></a>Campi
 
 | Nome | Descrizione |
 |-|-|
-| `float m11` | Valore alla riga 1 colonna 1 della matrice. |
-| `float m12` | Valore alla riga 1 colonna 2 della matrice. |
-| `float m21` | Valore alla riga 2 colonna 1 della matrice. |
-| `float m22` | Valore alla riga 2 colonna 2 della matrice. |
-| `float m31` | Valore alla riga 3 colonna 1 della matrice. |
-| `float m32` | Valore alla riga 3 colonna 2 della matrice. |
+| `float m11` | Valore nella riga 1 colonna 1 della matrice. |
+| `float m12` | Valore nella riga 1 colonna 2 della matrice. |
+| `float m21` | Valore nella riga 2 colonna 1 della matrice. |
+| `float m22` | Valore nella riga 2 colonna 2 della matrice. |
+| `float m31` | Valore nella riga 3 della colonna 1 della matrice. |
+| `float m32` | Valore nella riga 3 della colonna 2 della matrice. |
 
 ## <a name="requirements"></a>Requisiti
 

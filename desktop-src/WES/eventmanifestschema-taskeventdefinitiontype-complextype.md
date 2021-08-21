@@ -1,9 +1,9 @@
 ---
 title: Tipo complesso TaskEventDefinitionType
-description: Definisce un evento specifico dell'attività che il provider è in grado di registrare. | Tipo complesso TaskEventDefinitionType
+description: Definisce un evento specifico dell'attività che il provider può registrare. | Tipo complesso TaskEventDefinitionType
 ms.assetid: f0329728-e7b5-4161-a30f-78b81a7b6812
 keywords:
-- Log eventi di tipo complesso TaskEventDefinitionType
+- EventLog di tipo complesso TaskEventDefinitionType
 topic_type:
 - apiref
 api_name:
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2ebf752dbaf97ceced84b6bd9698faf7b191c07e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 44a4fc7ca8784b3472fea3b0d4f4e657ce615fae05a8cc7372aa3cca0fedb431
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055839"
 ---
 # <a name="taskeventdefinitiontype-complex-type"></a>Tipo complesso TaskEventDefinitionType
 
-\[A partire dal compilatore di messaggi fornito con la versione di Windows 7 del Windows SDK, il tipo complesso TaskEventDefinitionType non è più disponibile. Usare invece i codici operativi specifici delle attività per fornire la stessa funzionalità.\]
+\[A partire dal compilatore di messaggi fornito con la versione Windows 7 di Windows SDK, il tipo complesso TaskEventDefinitionType non è più disponibile. Usare invece opcode specifici dell'attività per fornire la stessa funzionalità.\]
 
-Definisce un evento specifico dell'attività che il provider è in grado di registrare.
+Definisce un evento specifico dell'attività che il provider può registrare.
 
 ``` syntax
 <xs:complexType name="TaskEventDefinitionType">
@@ -64,7 +64,7 @@ Definisce un evento specifico dell'attività che il provider è in grado di regi
 | Elemento                                                                      | Tipo                                                                               | Descrizione                                             |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------------|---------------------------------------------------------|
 | **event**                                                                    | [**EventDefinitionType**](eventmanifestschema-eventdefinitiontype-complextype.md) | Evento specifico dell'attività pubblicato con un'attività.<br/> |
-| [**codice operativo**](eventmanifestschema-opcode-taskeventdefinitiontype-element.md) |                                                                                    | Codice operativo specifico dell'attività per un evento. <br/>   |
+| [**Opcode**](eventmanifestschema-opcode-taskeventdefinitiontype-element.md) |                                                                                    | Codice operativo specifico dell'attività per un evento. <br/>   |
 
 
 
@@ -85,8 +85,8 @@ Definisce un evento specifico dell'attività che il provider è in grado di regi
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

@@ -119,11 +119,11 @@ Stringa descrittiva del componente visualizzata nella finestra di dialogo Protez
 
 ## <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce un **valore HRESULT** (S \_ OK o un codice di errore). Un codice di errore può essere verificato rispetto a un valore 0x20000100 per determinare se l'errore è dovuto a un riavvio necessario.
+Questa funzione restituisce un **valore HRESULT** (S \_ OK o un codice di errore). Un codice di errore può essere verificato rispetto al valore 0x20000100 per determinare se l'errore è dovuto a un riavvio necessario.
 
 ## <a name="remarks"></a>Commenti
 
-I pacchetti di eccezioni Windows file di sistema rilasciati al di fuori di un pacchetto completo Windows versione e che aggiornano i file del sistema operativo. I pacchetti di eccezioni vengono creati solo dai team del sistema operativo a cui è stata concessa l'autorizzazione per Windows file di sistema.
+I pacchetti di Windows sono file di sistema che vengono rilasciati al di fuori di un pacchetto completo Windows versione e che aggiornano i file del sistema operativo. I pacchetti di eccezioni vengono creati solo dai team del sistema operativo a cui è stata concessa l'autorizzazione per aggiornare Windows di sistema.
 
 Per installare e disinstallare i file che non sono protetti Windows Protezione file, usare le funzioni documentate in [Funzioni di installazione generali](https://msdn.microsoft.com/library/ms794585.aspx). Per installare i driver di dispositivo, i venditori devono usare le funzioni documentate in [Device Installation Functions](https://msdn.microsoft.com/library/ms792954.aspx) e [PnP Gestione configurazione Functions](https://msdn.microsoft.com/library/ms790838.aspx).
 

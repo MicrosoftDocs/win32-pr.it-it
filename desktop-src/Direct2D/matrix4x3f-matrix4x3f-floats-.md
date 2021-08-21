@@ -1,11 +1,11 @@
 ---
-title: Matrix4x3F Matrix4x3F (FLOAT, FLOAT, float, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, float, FLOAT) Costruttore (D2d1 \_ Helper. h)
-description: Crea un'istanza di una nuova istanza di una classe Matrix4x3F inizializzata con tutti i valori della matrice a virgola mobile.
+title: Costruttore Matrix4x3F Matrix4x3F(FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, \_ FLOAT) (helper D2d1.h)
+description: Crea una nuova istanza di una classe Matrix4x3F inizializzata con tutti i valori della matrice a virgola mobile.
 ms.assetid: 1B4359BD-9B92-4C9F-9FED-49246D45F0E3
 keywords:
 - Costruttore Matrix4x3F Direct2D
 - Costruttore Matrix4x3F Direct2D, interfaccia Matrix4x3F
-- Interfaccia Direct2D di Matrix4x3F, Costruttore Matrix4x3F
+- Interfaccia Matrix4x3F Direct2D, costruttore Matrix4x3F
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7858a0d5a6204e3f966205c7cf6dab6e68180524
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a75cd618595ec6d993daaa0dd25bf50469c1a4c237f54016aa0157b0f5b47df5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874645"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955576"
 ---
-# <a name="matrix4x3fmatrix4x3ffloat-float-float-float-float-float-float-float-float-float-float-float-constructor"></a>Costruttore Matrix4x3F:: Matrix4x3F (FLOAT, float, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, float)
+# <a name="matrix4x3fmatrix4x3ffloat-float-float-float-float-float-float-float-float-float-float-float-constructor"></a>Costruttore Matrix4x3F::Matrix4x3F(FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT)
 
-Crea un'istanza di una nuova istanza di una classe [**Matrix4x3F**](matrix4x3f.md) inizializzata con tutti i valori della matrice a virgola mobile.
+Crea una nuova istanza di una [**classe Matrix4x3F**](matrix4x3f.md) inizializzata con tutti i valori della matrice a virgola mobile.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,111 +53,111 @@ inline Matrix4x3F(
 
 <dl> <dt>
 
-*M11* 
+*m11* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella prima riga e nella prima colonna della matrice.
 
 </dd> <dt>
 
-*M12* 
+*m12* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella prima riga e nella seconda colonna della matrice.
 
 </dd> <dt>
 
-*M13* 
+*m13* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Valore della prima riga e della terza colonna della matrice.
+Valore nella prima riga e nella terza colonna della matrice.
 
 </dd> <dt>
 
-*M21* 
+*m21* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella seconda riga e nella prima colonna della matrice.
 
 </dd> <dt>
 
-*M22* 
+*m22* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella seconda riga e nella seconda colonna della matrice.
 
 </dd> <dt>
 
-*M23* 
+*m23* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella seconda riga e nella terza colonna della matrice.
 
 </dd> <dt>
 
-*M31* 
+*m31* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella terza riga e nella prima colonna della matrice.
 
 </dd> <dt>
 
-*M32* 
+*m32* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella terza riga e nella seconda colonna della matrice.
 
 </dd> <dt>
 
-*M33* 
+*m33* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Valore della terza riga e della terza colonna della matrice.
+Valore nella terza riga e nella terza colonna della matrice.
 
 </dd> <dt>
 
-*M41* 
+*m41* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella quarta riga e nella prima colonna della matrice.
 
 </dd> <dt>
 
-*M42* 
+*m42* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valore nella quarta riga e nella seconda colonna della matrice.
 
 </dd> <dt>
 
-*M43* 
+*m43* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Valore della quarta riga e della terza colonna della matrice.
+Valore nella quarta riga e nella terza colonna della matrice.
 
 </dd> </dl>
 
@@ -167,12 +167,12 @@ Valore della quarta riga e della terza colonna della matrice.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 7, Windows Vista con SP2 e aggiornamento della piattaforma solo per le applicazioni desktop di Windows Vista \[\]<br/>                          |
-| Server minimo supportato<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 e aggiornamento della piattaforma solo per le \[ app desktop Windows server 2008\]<br/> |
-| Telefono minimo supportato<br/>  | Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e app per Windows Runtime\]<br/>                                           |
+| Client minimo supportato<br/> | Windows 7, Windows Vista con SP2 e l'aggiornamento della piattaforma solo per Windows app desktop di Vista \[\]<br/>                          |
+| Server minimo supportato<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 e aggiornamento della piattaforma solo per le app desktop Windows Server 2008 \[\]<br/> |
+| Telefono minimo supportato<br/>  | Windows Phone 8.1 \[ Windows Phone silverlight 8.1 e Windows Runtime\]<br/>                                           |
 | Spazio dei nomi<br/>                | D2D1<br/>                                                                                                                   |
-| Intestazione<br/>                   | <dl> <dt>\_Helper D2d1. h</dt> </dl>                                         |
-| Libreria<br/>                  | <dl> <dt>D2d1. lib</dt> </dl>                                               |
+| Intestazione<br/>                   | <dl> <dt>Helper.h D2d1 \_</dt> </dl>                                         |
+| Libreria<br/>                  | <dl> <dt>D2d1.lib</dt> </dl>                                               |
 | DLL<br/>                      | <dl> <dt>D2d1.dll</dt> </dl>                                               |
 
 

@@ -1,19 +1,19 @@
 ---
-description: Specifica il livello di volume massimo desiderato per il contenuto audio di output.
+description: Specifica il livello di volume massimo desiderato del contenuto audio di output.
 ms.assetid: 231b7296-ca80-4918-bae6-674b976db24c
-title: Proprietà MFPKEY_WMADRC_PEAKTARGET (Wmcodecdsp. h)
+title: MFPKEY_WMADRC_PEAKTARGET proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c40fa68e2b580c5d3e8550d6e46c9f6b9fe4bfc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 79f54d15978bb3f6a34c015886d2aeb2a8ec48a0069669e81ea40bbd79353902
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973230"
 ---
-# <a name="mfpkey_wmadrc_peaktarget-property"></a>MFPKEY \_ WMADRC- \_ Proprietà PEAKTARGET
+# <a name="mfpkey_wmadrc_peaktarget-property"></a>Proprietà MFPKEY \_ WMADRC \_ PEAKTARGET
 
-Specifica il livello di volume massimo desiderato per il contenuto audio di output.
+Specifica il livello di volume massimo desiderato del contenuto audio di output.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
@@ -29,13 +29,13 @@ Vedere la sezione Osservazioni.
 
 ## <a name="remarks"></a>Commenti
 
-È possibile impostare questo valore nel decodificatore allo scopo di un controllo intervallo dinamico, ma avrà effetto solo se viene impostata la proprietà [MFPKEY \_ WMADEC \_ DRCMODE](mfpkey-wmadec-drcmodeproperty.md) .
+È possibile impostare questo valore nel decodificatore ai fini del controllo a intervalli dinamici, ma avrà effetto solo se è impostata la proprietà [MFPKEY \_ WMADEC \_ DRCMODE.](mfpkey-wmadec-drcmodeproperty.md)
 
-Se si richiede il controllo dinamico degli intervalli dal decodificatore quando questa proprietà non è impostata, il codec calcolerà un valore predefinito.
+Se si richiede il controllo dell'intervallo dinamico dal decodificatore quando questa proprietà non è impostata, il codec calcola un valore predefinito.
 
-Usare le proprietà [MFPKEY \_ WMADRC \_ AVGREF](mfpkey-wmadrc-avgrefproperty.md) e [MFPKEY \_ WMADRC \_ PEAKREF](mfpkey-wmadrc-peakrefproperty.md) per calcolare i valori appropriati per questa proprietà.
+Usare le [proprietà MFPKEY \_ WMADRC \_ AVGREF](mfpkey-wmadrc-avgrefproperty.md) e [MFPKEY \_ WMADRC \_ PEAKREF](mfpkey-wmadrc-peakrefproperty.md) per calcolare i valori appropriati per questa proprietà.
 
-Per ulteriori informazioni sul controllo dinamico degli intervalli, vedere l'articolo Web [Windows Media audio funzionalità dei codec professionali](/previous-versions/ms867218(v=msdn.10)).
+Per altre informazioni sul controllo dinamico degli intervalli, vedere l'articolo Web [Windows Media Audio Professional Codec Features](/previous-versions/ms867218(v=msdn.10)).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,9 +43,9 @@ Per ulteriori informazioni sul controllo dinamico degli intervalli, vedere l'art
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -53,7 +53,7 @@ Per ulteriori informazioni sul controllo dinamico degli intervalli, vedere l'art
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

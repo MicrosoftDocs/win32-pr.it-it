@@ -1,7 +1,7 @@
 ---
 description: Funzione di callback che deve essere implementata da un utente per impostare il numero di segmenti di suddivisione per N-patch.
 ms.assetid: f94910ee-3385-44d3-b4f1-a0e88c7afa39
-title: 'Metodo ID3DXEffectStateManager:: SetNPatchMode (D3DX9Effect. h)'
+title: Metodo ID3DXEffectStateManager::SetNPatchMode (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 9b8725a0482b6945b04013df43d34a502f25b7b9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 220d0541e6779ab1a3d4f3e189175abd7da82b1c8b7f378522d0c9df11896e88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044429"
 ---
-# <a name="id3dxeffectstatemanagersetnpatchmode-method"></a>Metodo ID3DXEffectStateManager:: SetNPatchMode
+# <a name="id3dxeffectstatemanagersetnpatchmode-method"></a>Metodo ID3DXEffectStateManager::SetNPatchMode
 
 Funzione di callback che deve essere implementata da un utente per impostare il numero di segmenti di suddivisione per N-patch.
 
@@ -40,12 +40,12 @@ HRESULT SetNPatchMode(
 
 <dl> <dt>
 
-*nSegments* \[ in\]
+*nSegments* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Suddividere la superficie in questo numero di suddivisioni. Corrisponde al numero usato da [**IDirect3DDevice9:: SetNPatchMode**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setnpatchmode).
+Suddividere la superficie in questo numero di suddivisioni. Corrisponde al numero usato da [**IDirect3DDevice9::SetNPatchMode**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setnpatchmode).
 
 </dd> </dl>
 
@@ -53,10 +53,10 @@ Suddividere la superficie in questo numero di suddivisioni. Corrisponde al numer
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback ha esito negativo quando si imposta lo stato del dispositivo, si verificherà una delle condizioni seguenti:
+Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback ha esito negativo durante l'impostazione dello stato del dispositivo, si verificherà una delle condizioni seguenti:
 
--   L'effetto avrà esito negativo durante [**ID3DXEffect:: BeginPass**](id3dxeffect--beginpass.md).
--   La chiamata allo stato dell'effetto dinamico, ad esempio [**IDirect3DDevice9:: SetNPatchMode**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setnpatchmode), avrà esito negativo.
+-   L'effetto avrà esito negativo durante [**ID3DXEffect::BeginPass**](id3dxeffect--beginpass.md).
+-   La chiamata allo stato dell'effetto dinamico , ad esempio [**IDirect3DDevice9::SetNPatchMode**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setnpatchmode), avrà esito negativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,8 +64,8 @@ Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback ha es
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

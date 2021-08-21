@@ -2,23 +2,23 @@
 description: L'oggetto SWbemMethodSet espone i metodi seguenti.
 ms.assetid: EE61CF71-44CF-4938-8750-6B0FA3002043
 ms.tgt_platform: multiple
-title: Metodi SWbemMethodSet
+title: Metodi di SWbemMethodSet
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46a66e6413318710394ee6a8e1059c5746608132
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 78d5a61fea0f9e17e6edaadfc967b0af9388f63822db169ceea8a56edafa9480
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992111"
 ---
-# <a name="swbemmethodset-methods"></a>Metodi SWbemMethodSet
+# <a name="swbemmethodset-methods"></a>Metodi di SWbemMethodSet
 
-L'oggetto [**SWbemMethodSet**](swbemmethodset.md) espone i metodi seguenti.
+[**L'oggetto SWbemMethodSet**](swbemmethodset.md) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**Item (metodo)**](swbemmethodset-item.md)
+-   [**Metodo Item**](swbemmethodset-item.md)
 
  
 

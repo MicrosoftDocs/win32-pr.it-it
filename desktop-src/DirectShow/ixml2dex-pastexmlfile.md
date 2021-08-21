@@ -1,5 +1,5 @@
 ---
-description: Metodo IXml2Dex::P asteXMLFile - Non implementato.
+description: 'Metodo IXml2Dex::P asteXMLFile : non implementato.'
 ms.assetid: 25300ba5-3578-4eb3-99e2-d547dbb2b9ee
 title: Metodo IXml2Dex::P asteXMLFile
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 415e71d87d8e8d9c7834df0a16fce754651d6a03
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cac5829797de78d669273551e096b2fc07b3ae7de20d7d9725cbde6d1025eb85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952400"
 ---
 # <a name="ixml2dexpastexmlfile-method"></a>Metodo IXml2Dex::P asteXMLFile
 
@@ -78,7 +78,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare Microsoft Windows SDK [Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

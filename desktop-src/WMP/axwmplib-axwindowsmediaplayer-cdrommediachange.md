@@ -1,9 +1,9 @@
 ---
 title: Evento CdromMediaChange dell'oggetto AxWindowsMediaPlayer
-description: L'evento CdromMediaChange si verifica quando si inserisce o si espelle un CD o un DVD da un'unità CD o DVD. | Evento CdromMediaChange dell'oggetto AxWindowsMediaPlayer
+description: L'evento CdromMediaChange si verifica quando un CD o DVD viene inserito o espulso da un'unità CD o DVD. | Evento CdromMediaChange dell'oggetto AxWindowsMediaPlayer
 ms.assetid: 0a6378c1-59e4-4be3-8764-d5c4ab478b6c
 keywords:
-- Evento CdromMediaChange dell'oggetto AxWindowsMediaPlayer Media Player Windows
+- Evento CdromMediaChange dell'oggetto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35385541f6bc91b6935f148fd8ae28df6a415f3d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 55dac05b3ca8a8675bfae431d3f2e8ffbb38db8701a2501fa80d282cd3c976ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106323924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055006"
 ---
 # <a name="cdrommediachange-event-of-the-axwindowsmediaplayer-object"></a>Evento CdromMediaChange dell'oggetto AxWindowsMediaPlayer
 
-L'evento **CdromMediaChange** si verifica quando si inserisce o si espelle un CD o un DVD da un'unità CD o DVD.
+**L'evento CdromMediaChange** si verifica quando un CD o DVD viene inserito o espulso da un'unità CD o DVD.
 
 ``` syntax
 [C#]
@@ -41,13 +41,13 @@ Private Sub player_CdromMediaChange(
 
 ## <a name="event-data"></a>Dati eventi
 
-Il gestore associato a questo evento è di tipo **AxWMPLib. \_ \_CdromMediaChangeEventHandler WMPOCXEvents**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromMediaChangeEvent**, che contiene la proprietà seguente correlata a questo evento.
+Il gestore associato a questo evento è di tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromMediaChangeEventHandler**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromMediaChangeEvent**, che contiene la proprietà seguente correlata a questo evento.
 
 
 
 | Proprietà | Descrizione                                                        |
 |----------|--------------------------------------------------------------------|
-| CdromNum | System. Int32Specifies l'indice dell'unità CD o DVD.<br/> |
+| CdromNum | System.Int32Specifica l'indice dell'unità CD o DVD.<br/> |
 
 
 
@@ -63,7 +63,7 @@ L'indice dell'unità CD corrisponde all'indice di un'interfaccia IWMPCdrom acces
 
 | Requisito | Valore |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                          |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                          |
 | Spazio dei nomi<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

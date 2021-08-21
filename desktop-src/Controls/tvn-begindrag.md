@@ -1,9 +1,9 @@
 ---
-title: TVN_BEGINDRAG di notifica (Commctrl.h)
-description: Notifica alla finestra padre di un controllo visualizzazione albero che è in corso un'operazione di trascinamento della selezione che interessa il pulsante sinistro del mouse. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
+title: TVN_BEGINDRAG codice di notifica (Commctrl.h)
+description: Notifica alla finestra padre di un controllo visualizzazione albero che è in corso un'operazione di trascinamento della selezione che coinvolge il pulsante sinistro del mouse. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: e118354a-329e-424c-b137-78342cc00957
 keywords:
-- TVN_BEGINDRAG del codice di notifica Windows controlli
+- TVN_BEGINDRAG codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -25,7 +25,7 @@ ms.locfileid: "118957920"
 ---
 # <a name="tvn_begindrag-notification-code"></a>Codice di notifica \_ TVN BEGINDRAG
 
-Notifica alla finestra padre di un controllo visualizzazione albero che è in corso un'operazione di trascinamento della selezione che interessa il pulsante sinistro del mouse. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
+Notifica alla finestra padre di un controllo visualizzazione albero che è in corso un'operazione di trascinamento della selezione che coinvolge il pulsante sinistro del mouse. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -53,7 +53,7 @@ Il valore restituito viene ignorato.
 
 ## <a name="remarks"></a>Commenti
 
-Questo codice di notifica non viene inviato da un controllo di visualizzazione albero con lo stile [**\_ TVS DISABLEDRAGDROP.**](tree-view-control-window-styles.md)
+Un controllo di visualizzazione albero con lo stile [**\_ TVS DISABLEDRAGDROP**](tree-view-control-window-styles.md) non invia questo codice di notifica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Questo codice di notifica non viene inviato da un controllo di visualizzazione a
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **TVN \_ BEGINDRAGW** (Unicode) e **TVN \_ BEGINDRAGA** (ANSI)<br/>               |
 

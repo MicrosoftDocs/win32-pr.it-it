@@ -1,12 +1,12 @@
 ---
 title: Metodo InstallOpenLicenseKeyPack della classe Win32_TSLicenseKeyPack
-description: Installa un Key Pack per licenze Open License Servizi Desktop remoto.
+description: Installa un Key Pack Servizi Desktop remoto licenza Open License.
 ms.assetid: be50e25c-cda3-408b-934b-51ce343f3271
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo InstallOpenLicenseKeyPack
-- Metodo InstallOpenLicenseKeyPack Servizi Desktop remoto, classe Win32_TSLicenseKeyPack
-- Classe Win32_TSLicenseKeyPack Servizi Desktop remoto, metodo InstallOpenLicenseKeyPack
+- Metodo InstallOpenLicenseKeyPack Servizi Desktop remoto
+- Metodo InstallOpenLicenseKeyPack Servizi Desktop remoto , Win32_TSLicenseKeyPack classe
+- Win32_TSLicenseKeyPack classe Servizi Desktop remoto , metodo InstallOpenLicenseKeyPack
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7335f25d3118c14f8cd0d27f72fd6a8d4cf1e0ad
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0137966047d9d04b5a2c4e78e099875ca3db7dff378ef638002114bff594cafa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118852711"
 ---
-# <a name="installopenlicensekeypack-method-of-the-win32_tslicensekeypack-class"></a>Metodo InstallOpenLicenseKeyPack della \_ classe TSLicenseKeyPack Win32
+# <a name="installopenlicensekeypack-method-of-the-win32_tslicensekeypack-class"></a>Metodo InstallOpenLicenseKeyPack della classe \_ Win32 TSLicenseKeyPack
 
-Installa un Key Pack per licenze Open License Servizi Desktop remoto.
+Installa un Key Pack Servizi Desktop remoto licenza Open License.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,15 +44,15 @@ uint32 InstallOpenLicenseKeyPack(
 
 ## <a name="parameters"></a>Parametri
 
-*sLicenseNumber* \[ in\]
+*sLicenseNumber* \[ Pollici\]
 
-stringa numerica a 8 caratteri fornita con il Key Pack per le licenze. Il parametro *sLicenseNumber* non può contenere trattini.
+Stringa numerica di 8 caratteri fornita con il key pack di licenza. Il *parametro sLicenseNumber* non può contenere trattini.
 
-*sAuthorizationNumber* \[ in\]
+*sAuthorizationNumber* \[ Pollici\]
 
-stringa alfanumerica a 15 caratteri fornita con il codice di licenza. Il parametro *sAuthorizationNumber* non può contenere trattini.
+Stringa alfanumerica di 15 caratteri fornita con il codice di licenza. Il *parametro sAuthorizationNumber* non può contenere trattini.
 
-*ProductVersion* \[ in\]
+*ProductVersion* \[ Pollici\]
 
 Versione del prodotto.
 
@@ -65,34 +65,34 @@ Versione del prodotto.
 | 5 | Windows Server 2016 |
 | 6 | Windows Server 2019 |
 
-*ProductType* \[ in\]
+*ProductType* \[ Pollici\]
 </dt> <dd>
 
 Tipo di prodotto.
 
 | Valore | Descrizione |
 |-------|-------------|
-| 0 | Il tipo di prodotto Servizi Desktop remoto License Key Pack è per dispositivo. Pertanto, ogni dispositivo che si connette al server Host sessione Desktop remoto deve disporre di una licenza. |
-| 1 | Il tipo di prodotto Servizi Desktop remoto License Key Pack è per utente. Pertanto, ogni utente che si connette al server Host sessione Desktop remoto deve disporre di una licenza. |
+| 0 | Il Servizi Desktop remoto prodotto key pack di licenza è per dispositivo. Pertanto, ogni dispositivo che si connette al server Host sessione Desktop remoto deve avere una licenza. |
+| 1 | Il Servizi Desktop remoto prodotto key pack di licenza è per utente. Pertanto, ogni utente che si connette al server Host sessione Desktop remoto deve avere una licenza. |
 | 2 | Questo tipo di prodotto non è valido. |
 
-*LicenseCount* \[ in\]
+*LicenseCount* \[ Pollici\]
 
 Numero di licenze da installare.
 
-*KeyPackId* \[ out\]
+*KeyPackId* \[ Cambio\]
 
-Riceve l'identificatore del Key Pack.
+Riceve l'identificatore del key pack.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
+Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="remarks"></a>Commenti
 
 Per chiamare questo metodo, è necessario essere membri del gruppo Administrators.
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -103,7 +103,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                            |
 | Spazio dei nomi<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
@@ -112,7 +112,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TSLicenseKeyPack Win32**](win32-tslicensekeypack.md)
+[**Win32 \_ TSLicenseKeyPack**](win32-tslicensekeypack.md)
 </dt> </dl>
 
  

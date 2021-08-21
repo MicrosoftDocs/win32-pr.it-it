@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetTemporalCompression specifica se gli esempi vengono compressi con la compressione temporale (interframe).
+description: Il metodo SetTemporalCompression specifica se i campioni vengono compressi usando la compressione temporale (interframe).
 ms.assetid: cdd181ee-d1e9-48b0-96f6-e76db9f3f933
-title: Metodo CMediaType. SetTemporalCompression (mtype. h)
+title: Metodo CMediaType.SetTemporalCompression (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a0aba07375c5b5c760c432de704562efb2bea148
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d29efb0ec16f99c7354621bc49bd36c4e367375d5eb68a2d94a69c27bfdce2f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954400"
 ---
-# <a name="cmediatypesettemporalcompression-method"></a>CMediaType. SetTemporalCompression, metodo
+# <a name="cmediatypesettemporalcompression-method"></a>Metodo CMediaType.SetTemporalCompression
 
-Il `SetTemporalCompression` metodo specifica se gli esempi vengono compressi con la compressione temporale (interframe).
+Il `SetTemporalCompression` metodo specifica se i campioni vengono compressi usando la compressione temporale (interframe).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ void SetTemporalCompression(
 
 <dl> <dt>
 
-*bCompressed* 
+*b Compresso* 
 </dt> <dd>
 
-Valore booleano che specifica se il flusso usa la compressione temporale. Se il flusso usa la compressione temporale, impostare il valore su **true**.
+Valore booleano che specifica se il flusso usa la compressione temporale. Se il flusso usa la compressione temporale, impostare il valore su **TRUE.**
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo imposta il membro **bTemporalCompression** .
+Questo metodo imposta il **membro bTemporalCompression.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Questo metodo imposta il membro **bTemporalCompression** .
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Mtype. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Mtype.h (includere Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

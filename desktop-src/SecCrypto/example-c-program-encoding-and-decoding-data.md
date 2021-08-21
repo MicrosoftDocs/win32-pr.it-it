@@ -1,29 +1,29 @@
 ---
-description: Codifica e decodifica dati semplici e generali e illustra le seguenti attività e funzioni CryptoAPI.
+description: Codifica e decodifica dati semplici e generali e illustra le attività e le funzioni CryptoAPI seguenti.
 ms.assetid: 7634bd05-fca0-4538-94da-7af6e3d8e6b8
-title: 'Esempio di programma C: codifica e decodifica dei dati'
+title: 'Programma C di esempio: codifica e decodifica dei dati'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b694bcb9836dfa750940ef75d41ba703251ee190
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 45c5840711fbbf71badd6bc50dec7cc154a7c8bf9bf7caaacc4fa9b5d9b00f7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007699"
 ---
-# <a name="example-c-program-encoding-and-decoding-data"></a>Esempio di programma C: codifica e decodifica dei dati
+# <a name="example-c-program-encoding-and-decoding-data"></a>Programma C di esempio: codifica e decodifica dei dati
 
-Nell'esempio seguente vengono codificati e decodificati dati semplici e generali e vengono illustrate le attività e le funzioni CryptoAPI seguenti.
+L'esempio seguente codifica e decodifica dati semplici e generali e illustra le attività e le funzioni CryptoAPI seguenti.
 
--   Determinazione della lunghezza necessaria per il buffer per memorizzare i dati codificati tramite [**CryptMsgCalculateEncodedLength**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcalculateencodedlength).
--   Apertura di un messaggio per la codifica con [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode).
--   Aggiunta di contenuto al messaggio codificato tramite [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate).
--   Copia del messaggio codificato in un buffer utilizzando [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
--   Chiusura del messaggio codificato tramite [**CryptMsgClose**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgclose).
--   Apertura di un messaggio da decodificare con [**CryptMsgOpenToDecode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentodecode).
--   Utilizzo di [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate) e [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam) per ottenere i dati decodificati.
+-   Determinazione della lunghezza necessaria per il buffer per contenere i dati codificati [**tramite CryptMsgCalculateEncodedLength**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcalculateencodedlength).
+-   Apertura di un messaggio per la codifica [**tramite CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode).
+-   Aggiunta di contenuto al messaggio codificato [**tramite CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate).
+-   Copia del messaggio codificato in un buffer [**tramite CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
+-   Chiusura del messaggio codificato [**tramite CryptMsgClose**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgclose).
+-   Apertura di un messaggio da decodificare [**tramite CryptMsgOpenToDecode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentodecode).
+-   Uso [**di CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate) e [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam) per ottenere i dati decodificati.
 
-In questo esempio viene usata la funzione [**MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [funzioni per utilizzo generico](general-purpose-functions.md).
+In questo esempio viene utilizzata la [**funzione MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [per utilizzo generico funzioni](general-purpose-functions.md).
 
 
 ```C++

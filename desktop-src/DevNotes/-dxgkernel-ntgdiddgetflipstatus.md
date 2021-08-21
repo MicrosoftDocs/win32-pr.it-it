@@ -25,7 +25,7 @@ ms.locfileid: "118956340"
 ---
 # <a name="ntgdiddgetflipstatus-function"></a>Funzione NtGdiDdGetFlipStatus
 
-\[Questa funzione è soggetta a modifiche con ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs. Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà nell'interazione diretta con i driver di visualizzazione.\]
+\[Questa funzione è soggetta a modifiche con ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs. queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà nell'interazione diretta con i driver di visualizzazione.\]
 
 Determina se si è verificato l'ultimo capovolgimento richiesto su una superficie.
 
@@ -55,7 +55,7 @@ Handle a una [struttura DD \_ SURFACE \_ LOCAL](https://msdn.microsoft.com/libra
 *puGetFlipStatusData* \[ in, out\]
 </dt> <dd>
 
-Puntatore a [una struttura \_ DD GETFLIPSTATUSDATA](https://msdn.microsoft.com/library/ms793859.aspx) che contiene le informazioni necessarie per eseguire la query dello stato di capovolgimento.
+Puntatore a [una struttura \_ GETFLIPSTATUSDATA DD](https://msdn.microsoft.com/library/ms793859.aspx) che contiene le informazioni necessarie per eseguire la query di stato di capovolgimento.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Puntatore a [una struttura \_ DD GETFLIPSTATUSDATA](https://msdn.microsoft.com/l
 | Codice restituito                                                                                              | Descrizione                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**DRIVER DDHAL \_ \_ GESTITO**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per tale operazione. Se questo codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione . In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
-| <dl> <dt>**DRIVER DDHAL \_ \_ NON GESTITO**</dt> </dl> | Il driver non ha commenti sull'operazione richiesta. Se è necessario che il driver abbia implementato un callback specifico, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione indipendente dal dispositivo DirectDraw o Direct3D.<br/> |
+| <dl> <dt>**DRIVER DDHAL \_ \_ NON GESTITO**</dt> </dl> | Il driver non ha alcun commento sull'operazione richiesta. Se è necessario che il driver abbia implementato un callback specifico, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione DirectDraw o Direct3D indipendente dal dispositivo.<br/> |
 
 
 

@@ -1,42 +1,42 @@
 ---
-title: Aggiunta della funzionalità di automazione interfaccia utente ai server Active Accessibility
-description: I controlli che non dispongono di un provider di automazione interfaccia utente Microsoft ma che implementano IAccessible possono essere facilmente aggiornati per fornire alcune funzionalità di automazione interfaccia utente, implementando l'interfaccia IAccessibleEx.
+title: Aggiunta Automazione interfaccia utente funzionalità ai Active Accessibility server
+description: I controlli che non dispongono di un provider microsoft Automazione interfaccia utente ma che implementano IAccessible possono essere facilmente aggiornati per fornire alcune funzionalità Automazione interfaccia utente, implementando l'interfaccia IAccessibleEx.
 ms.assetid: 7ceab704-3e02-4550-b236-748e4f0a092a
 keywords:
-- Automazione interfaccia utente, server Active Accessibility
-- Automazione interfaccia utente, server Microsoft Active Accessibility
-- Automazione interfaccia utente, IAccessible
-- Automazione interfaccia utente, IAccessibleEx
-- Automazione interfaccia utente, esposizione di IAccessibleEx
-- Automazione interfaccia utente, implementazione di IAccessibleEx
-- IAccessible
+- Automazione interfaccia utente,Active Accessibility server
+- Automazione interfaccia utente,Microsoft Active Accessibility server
+- Automazione interfaccia utente,IAccessible
+- Automazione interfaccia utente,IAccessibleEx
+- Automazione interfaccia utente,esposizione di IAccessibleEx
+- Automazione interfaccia utente,implementazione di IAccessibleEx
+- Iaccessible
 - IAccessibleEx
 - Microsoft Active Accessibility
 - Active Accessibility
 - esposizione di IAccessibleEx
-- implementazione di IAccessibleEx
+- Implementazione di IAccessibleEx
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f45311deb8d3ec20fb8102285cddea1339373f0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9bb313205a69f6b69d07a377b006365837ee2a1410c51962000ea4ccff8b9037
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103963139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118823891"
 ---
-# <a name="adding-ui-automation-functionality-to-active-accessibility-servers"></a>Aggiunta della funzionalità di automazione interfaccia utente ai server Active Accessibility
+# <a name="adding-ui-automation-functionality-to-active-accessibility-servers"></a>Aggiunta Automazione interfaccia utente funzionalità ai Active Accessibility server
 
-I controlli che non dispongono di un provider di automazione interfaccia utente Microsoft ma che implementano [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) possono essere facilmente aggiornati per fornire alcune funzionalità di automazione interfaccia utente, implementando l'interfaccia [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) . Questa interfaccia consente al controllo di esporre le proprietà e i pattern di controllo di automazione interfaccia utente senza la necessità di un'implementazione completa delle interfacce del provider di automazione interfaccia utente, ad esempio [**IRawElementProviderFragment**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragment). Per implementare **IAccessibleEx**, la gerarchia di oggetti Microsoft Active Accessibility di base non deve contenere errori o incoerenze (ad esempio un oggetto figlio il cui oggetto padre non lo elenca come figlio) e non deve essere in conflitto con le specifiche di automazione interfaccia utente. Se la gerarchia di oggetti di Microsoft Active Accessibility soddisfa questi requisiti, è un buon candidato per l'aggiunta di funzionalità tramite **IAccessibleEx**; in caso contrario, è necessario implementare l'automazione dell'interfaccia utente autonomamente o insieme all'implementazione di Microsoft Active Accessibility.
+I controlli che non dispongono di un provider microsoft Automazione interfaccia utente ma che implementano [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) possono essere facilmente aggiornati per fornire alcune funzionalità Automazione interfaccia utente, implementando [**l'interfaccia IAccessibleEx.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) Questa interfaccia consente al controllo di esporre Automazione interfaccia utente proprietà e pattern di controllo, senza la necessità di un'implementazione completa delle interfacce Automazione interfaccia utente provider, ad esempio [**IRawElementProviderFragment**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragment). Per implementare **IAccessibleEx,** la gerarchia di oggetti Microsoft Active Accessibility di base non deve contenere errori o incoerenze (ad esempio un oggetto figlio il cui oggetto padre non lo elenca come figlio) e non deve essere in conflitto con le specifiche Automazione interfaccia utente. Se la Microsoft Active Accessibility gerarchia di oggetti soddisfa questi requisiti, è un buon candidato per l'aggiunta di funzionalità tramite **IAccessibleEx**. In caso contrario, è necessario implementare Automazione interfaccia utente da solo o insieme all'Microsoft Active Accessibility di installazione.
 
-Prendere il caso di un controllo personalizzato con un valore di intervallo. Il server Microsoft Active Accessibility per il controllo definisce il proprio ruolo ed è in grado di restituire il valore corrente, ma non ha i mezzi per restituire i valori minimo e massimo del controllo, perché queste proprietà non sono definite in Microsoft Active Accessibility. Un client di automazione interfaccia utente è in grado di recuperare il ruolo del controllo, il valore corrente e altre proprietà di Active Accessibility Microsoft, perché il nucleo di automazione interfaccia utente può ottenere tali proprietà tramite [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible). Tuttavia, senza l'accesso a un'interfaccia [**IRangeValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irangevalueprovider) sull'oggetto, l'automazione dell'interfaccia utente non è in grado di recuperare i valori massimi e minimi.
+Si prenda il caso di un controllo personalizzato con un valore di intervallo. Il server Microsoft Active Accessibility per il controllo ne definisce il ruolo ed è in grado di restituire il valore corrente, ma non ha i mezzi per restituire i valori minimo e massimo del controllo, perché queste proprietà non sono definite in Microsoft Active Accessibility. Un Automazione interfaccia utente client è in grado di recuperare il ruolo del controllo, il valore corrente e altre proprietà Microsoft Active Accessibility, perché il core Automazione interfaccia utente può ottenerlo tramite [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible). Tuttavia, senza l'accesso a [**un'interfaccia IRangeValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irangevalueprovider) sull'oggetto, Automazione interfaccia utente non è in grado di recuperare i valori massimo e minimo.
 
-Lo sviluppatore del controllo può fornire un provider di automazione interfaccia utente completo per il controllo, ma ciò comporta la duplicazione di gran parte delle funzionalità esistenti dell'implementazione di [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) , ad esempio la navigazione e le proprietà comuni. Lo sviluppatore può invece continuare a basarsi su **IAccessible** per fornire questa funzionalità, aggiungendo il supporto per le proprietà specifiche del controllo tramite [**IRangeValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irangevalueprovider).
+Lo sviluppatore del controllo può fornire un provider Automazione interfaccia utente completo per il controllo, ma ciò significa duplicare gran parte delle funzionalità esistenti dell'implementazione [**IAccessible,**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) ad esempio la navigazione e le proprietà comuni. Lo sviluppatore può invece continuare a fare affidamento su **IAccessible** per fornire questa funzionalità, aggiungendo al tempo stesso il supporto per le proprietà specifiche del controllo tramite [**IRangeValueProvider.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irangevalueprovider)
 
-Per aggiornare il controllo personalizzato sono necessari i passaggi principali seguenti:
+L'aggiornamento del controllo personalizzato richiede i passaggi principali seguenti:
 
--   Implementare [IServiceProvider](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/cc678965(v=vs.85)) sull'oggetto accessibile in modo che l'interfaccia [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) possa trovarsi in questo oggetto o in un oggetto separato.
+-   Implementare [IServiceProvider](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/cc678965(v=vs.85)) nell'oggetto accessibile in modo che l'interfaccia [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) sia disponibile in questo oggetto o in un oggetto separato.
 -   Implementare [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) sull'oggetto accessibile.
--   Creare oggetti distinti accessibili per tutti gli elementi figlio di Microsoft Active Accessibility, che in Microsoft Active Accessibility potrebbero essere stati rappresentati dall'interfaccia [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) nell'oggetto padre (ad esempio, gli elementi dell'elenco). Implementare [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) su questi oggetti.
+-   Creare oggetti accessibili distinti per Microsoft Active Accessibility elementi figlio, che in Microsoft Active Accessibility potrebbero essere stati rappresentati dall'interfaccia [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) nell'oggetto padre (ad esempio, elementi elenco). Implementare [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) su questi oggetti.
 -   Implementare [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) in tutti gli oggetti accessibili.
 -   Implementare le interfacce del pattern di controllo appropriate sugli oggetti accessibili.
 
@@ -48,7 +48,7 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="exposing-iaccessibleex"></a>Esposizione di IAccessibleEx
 
-Poiché l'implementazione di [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) per un controllo può trovarsi in un oggetto separato, le applicazioni client non possono basarsi su [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) per ottenere questa interfaccia. Al contrario, si prevede che i client chiamino [**IServiceProvider:: QueryService**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/cc678966(v=vs.85)). Nell'implementazione di questo metodo dell'esempio seguente si presuppone che **IAccessibleEx** non sia implementato su un oggetto separato. il metodo chiama quindi semplicemente per **QueryInterface**.
+Poiché l'implementazione [**di IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) per un controllo può risiedere in un oggetto separato, le applicazioni client non possono basarsi [**su QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) per ottenere questa interfaccia. È invece previsto che i client [**chiamino IServiceProvider::QueryService**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/cc678966(v=vs.85)). Nell'implementazione di esempio seguente di questo metodo si presuppone che **IAccessibleEx** non sia implementato in un oggetto separato. pertanto il metodo chiama semplicemente tramite a **QueryInterface**.
 
 
 ```C++
@@ -74,9 +74,9 @@ HRESULT CListboxAccessibleObject::QueryService(REFGUID guidService, REFIID riid,
 
 ## <a name="implementing-iaccessibleex"></a>Implementazione di IAccessibleEx
 
-Il metodo di [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) di maggiore interesse è [**GetObjectForChild**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iaccessibleex-getobjectforchild). Questo metodo fornisce al server Microsoft Active Accessibility la possibilità di creare un oggetto accessibile (uno che espone, come minimo, **IAccessibleEx**) per un elemento figlio. In Microsoft Active Accessibility gli elementi figlio non sono in genere rappresentati come oggetti accessibili, ma come elementi figlio di un oggetto accessibile. Tuttavia, poiché l'automazione dell'interfaccia utente richiede che ogni elemento sia rappresentato da un oggetto accessibile separato, **GetObjectForChild** deve creare un oggetto separato per ogni elemento figlio su richiesta.
+Il metodo [**di IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) di maggior interesse è [**GetObjectForChild**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iaccessibleex-getobjectforchild). Questo metodo offre al server Microsoft Active Accessibility la possibilità di creare un oggetto accessibile (che espone almeno **IAccessibleEx)** per un elemento figlio. In Microsoft Active Accessibility, gli elementi figlio in genere non sono rappresentati come oggetti accessibili, ma come elementi figlio di un oggetto accessibile. Tuttavia, poiché Automazione interfaccia utente ogni elemento deve essere rappresentato da un oggetto accessibile separato, **GetObjectForChild** deve creare un oggetto separato per ogni elemento figlio su richiesta.
 
-Nell'implementazione di esempio seguente viene restituito un oggetto accessibile per un elemento in una visualizzazione elenco personalizzata.
+L'implementazione di esempio seguente restituisce un oggetto accessibile per un elemento in una visualizzazione elenco personalizzata.
 
 
 ```C++
@@ -117,15 +117,15 @@ HRESULT CListboxAccessibleObject::GetObjectForChild(long idChild, IAccessibleEx 
 
 
 
-Per un'implementazione di esempio completa, vedere [rendere accessibili i controlli personalizzati, parte 5: uso di IAccessibleEx per aggiungere il supporto di automazione interfaccia utente a un controllo personalizzato](/previous-versions/msdn10/cc307850(v=msdn.10)) in MSDN.
+Per un'implementazione di esempio completa, vedere Rendere accessibili i controlli [personalizzati, Parte 5: Uso di IAccessibleEx](/previous-versions/msdn10/cc307850(v=msdn.10)) per aggiungere il supporto Automazione interfaccia utente a un controllo personalizzato in MSDN.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Guida per programmatori del provider di automazione interfaccia utente](uiauto-providerportal.md)
+[Automazione interfaccia utente guida per programmatori del provider](uiauto-providerportal.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

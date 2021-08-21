@@ -1,7 +1,7 @@
 ---
 description: Caricare una trama da una trama.
 ms.assetid: 126e71e1-a3b2-418b-be35-434a2e9472ca
-title: Funzione D3DX10LoadTextureFromTexture (D3DX10Tex. h)
+title: Funzione D3DX10LoadTextureFromTexture (D3DX10Tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Tex.h
-ms.openlocfilehash: e8dc65c9bff78484f09c355f8eb3d9626372b9b4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bfc36423154bfd56f0695a3a8178b89aefce6e4dfc5a67f3866fa13a99c5e6d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990501"
 ---
-# <a name="d3dx10loadtexturefromtexture-function"></a>D3DX10LoadTextureFromTexture (funzione)
+# <a name="d3dx10loadtexturefromtexture-function"></a>Funzione D3DX10LoadTextureFromTexture
 
 Caricare una trama da una trama.
 
@@ -46,16 +46,16 @@ HRESULT D3DX10LoadTextureFromTexture(
 
 Tipo: **[ **ID3D10Resource**](/windows/desktop/api/D3D10/nn-d3d10-id3d10resource)\***
 
-Puntatore alla trama di origine. Vedere [**ID3D10Resource**](/windows/desktop/api/D3D10/nn-d3d10-id3d10resource).
+Puntatore alla trama di origine. Vedere [**ID3D10Resource.**](/windows/desktop/api/D3D10/nn-d3d10-id3d10resource)
 
 </dd> <dt>
 
 *pLoadInfo* 
 </dt> <dd>
 
-Tipo: **[ **d3dx10 \_ texture \_ Load \_ info**](d3dx10-texture-load-info.md)\***
+Tipo: **[ **D3DX10 \_ TEXTURE \_ LOAD \_ INFO**](d3dx10-texture-load-info.md)\***
 
-Puntatore ai parametri di caricamento della trama. Vedere [**d3dx10 \_ texture \_ Load \_ info**](d3dx10-texture-load-info.md).
+Puntatore ai parametri di caricamento della trama. Vedere [**D3DX10 \_ TEXTURE LOAD \_ \_ INFO (INFORMAZIONI SUL CARICAMENTO TRAMA D3DX10).**](d3dx10-texture-load-info.md)
 
 </dd> <dt>
 
@@ -64,7 +64,7 @@ Puntatore ai parametri di caricamento della trama. Vedere [**d3dx10 \_ texture \
 
 Tipo: **[ **ID3D10Resource**](/windows/desktop/api/D3D10/nn-d3d10-id3d10resource)\***
 
-Puntatore alla trama di destinazione. Vedere [**interfaccia ID3D10Resource**](/windows/desktop/api/D3D10/nn-d3d10-id3d10resource).
+Puntatore alla trama di destinazione. Vedere [**INTERFACCIA ID3D10Resource.**](/windows/desktop/api/D3D10/nn-d3d10-id3d10resource)
 
 </dd> </dl>
 
@@ -72,7 +72,7 @@ Puntatore alla trama di destinazione. Vedere [**interfaccia ID3D10Resource**](/w
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,7 +80,7 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10Tex. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10Tex.h</dt> </dl> |
 
 
 

@@ -1,59 +1,59 @@
 ---
-title: Eventi di segnalibro
-description: Un segnalibro identifica un evento in un canale o un file di log.
+title: Aggiunta di segnalibri agli eventi
+description: Un segnalibro identifica un evento in un canale o in un file di log.
 ms.assetid: e7eeafc3-deb9-4cdc-9763-f784db7333be
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64d7fb4aef883a51084420c5a2d78e4f0ff25dac
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d4ebc6c8f48bff25989fedf056e87a7eabe4d420b2e923d056ef24116b24a33f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106299941"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056139"
 ---
-# <a name="bookmarking-events"></a>Eventi di segnalibro
+# <a name="bookmarking-events"></a>Aggiunta di segnalibri agli eventi
 
-Un segnalibro identifica un evento in un canale o un file di log. È possibile utilizzare un segnalibro quando si esegue una query per o si sottoscrive eventi per iniziare a leggere gli eventi da tale evento con segnalibro. In genere si crea un segnalibro dell'ultimo evento nel set di risultati (presupponendo che siano stati enumerati tutti gli eventi nel set di risultati).
+Un segnalibro identifica un evento in un canale o in un file di log. È possibile usare un segnalibro quando si esegue una query o si sottoscrive eventi per iniziare a leggere gli eventi da tale evento con segnalibro. In genere si crea un segnalibro dell'ultimo evento nel set di risultati, presupponendo che siano stati enumerati tutti gli eventi nel set di risultati.
 
-Nella procedura riportata di seguito viene descritto come creare un segnalibro da un evento.
+La procedura seguente descrive come creare un segnalibro da un evento .
 
 **Per creare un segnalibro da un evento**
 
-1.  Chiamare la funzione [**EvtCreateBookmark**](/windows/desktop/api/WinEvt/nf-winevt-evtcreatebookmark) per creare un segnalibro. Passare **null** per l'argomento.
-2.  Chiamare la funzione [**EvtUpdateBookmark**](/windows/desktop/api/WinEvt/nf-winevt-evtupdatebookmark) per aggiornare il segnalibro con l'evento. Passare l'handle all'evento come argomento.
-3.  Chiamare la funzione [**EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) per creare una stringa XML che rappresenta il segnalibro. Passare EvtRenderBookmark come flag di rendering.
-4.  Rende permanente la stringa XML da utilizzare in un secondo momento (ad esempio, è possibile salvare in maniera permanente la stringa XML in un file o nel registro di sistema).
+1.  Chiamare la [**funzione EvtCreateBookmark**](/windows/desktop/api/WinEvt/nf-winevt-evtcreatebookmark) per creare un segnalibro. Passare **NULL per** l'argomento.
+2.  Chiamare la [**funzione EvtUpdateBookmark**](/windows/desktop/api/WinEvt/nf-winevt-evtupdatebookmark) per aggiornare il segnalibro con l'evento . Passare l'handle all'evento come argomento.
+3.  Chiamare la [**funzione EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) per creare una stringa XML che rappresenta il segnalibro. Passare EvtRenderBookmark come flag di rendering.
+4.  Rendere persistente la stringa XML per usarla in un secondo momento( ad esempio, è possibile rendere persistente la stringa XML in un file o nel Registro di sistema).
 
-Nella procedura riportata di seguito viene descritto come creare un segnalibro utilizzando una stringa di segnalibro XML che è stata salvata in modo permanente nella procedura precedente.
+La procedura seguente descrive come creare un segnalibro usando una stringa di segnalibro XML persistente nella procedura precedente.
 
 **Per creare un segnalibro usando una stringa di segnalibro XML**
 
-1.  Ottenere la stringa XML che rappresenta il segnalibro salvato in precedenza.
-2.  Chiamare la funzione [**EvtCreateBookmark**](/windows/desktop/api/WinEvt/nf-winevt-evtcreatebookmark) per creare un segnalibro. Passare la stringa XML per l'argomento.
+1.  Ottiene la stringa XML che rappresenta il segnalibro salvato in precedenza in modo permanente.
+2.  Chiamare la [**funzione EvtCreateBookmark**](/windows/desktop/api/WinEvt/nf-winevt-evtcreatebookmark) per creare un segnalibro. Passare la stringa XML per l'argomento .
 
-Nella procedura riportata di seguito viene descritto come utilizzare un segnalibro in una query.
+La procedura seguente descrive come usare un segnalibro in una query.
 
-**Per utilizzare un segnalibro in una query**
+**Per usare un segnalibro in una query**
 
-1.  Chiamare la funzione [**EvtQuery**](/windows/desktop/api/WinEvt/nf-winevt-evtquery) per ottenere gli eventi che corrispondono alla query.
-2.  Chiamare la funzione [**EvtSeek**](/windows/desktop/api/WinEvt/nf-winevt-evtseek) per cercare l'evento con segnalibro. Passare l'handle al segnalibro e al flag EvtSeekRelativeToBookmark.
-3.  Chiamare la funzione [**EvtNext**](/windows/desktop/api/WinEvt/nf-winevt-evtnext) in un ciclo per enumerare gli eventi che iniziano dopo l'evento con segnalibro, a seconda dell'offset specificato in [**EvtSeek**](/windows/desktop/api/WinEvt/nf-winevt-evtseek).
+1.  Chiamare la [**funzione EvtQuery**](/windows/desktop/api/WinEvt/nf-winevt-evtquery) per ottenere gli eventi che corrispondono alla query.
+2.  Chiamare la [**funzione EvtSeek**](/windows/desktop/api/WinEvt/nf-winevt-evtseek) per cercare l'evento con segnalibro. Passare l'handle al segnalibro e il flag EvtSeekRelativeToBookmark.
+3.  Chiamare la [**funzione EvtNext**](/windows/desktop/api/WinEvt/nf-winevt-evtnext) in un ciclo per enumerare gli eventi che iniziano dopo l'evento con segnalibro (a seconda dell'offset specificato in [**EvtSeek**](/windows/desktop/api/WinEvt/nf-winevt-evtseek)).
 
-Per un esempio, vedere [uso di un segnalibro in una query](#using-a-bookmark-in-a-query).
+Per un esempio, vedere [Uso di un segnalibro in una query](#using-a-bookmark-in-a-query).
 
-Nella procedura riportata di seguito viene descritto come utilizzare un segnalibro in una sottoscrizione.
+La procedura seguente descrive come usare un segnalibro in una sottoscrizione.
 
 **Per usare un segnalibro in una sottoscrizione**
 
-1.  Chiamare la funzione [**EvtSubscribe**](/windows/desktop/api/WinEvt/nf-winevt-evtsubscribe) per sottoscrivere gli eventi che corrispondono alla query. Passare l'handle al segnalibro e al flag EvtSubscribeStartAfterBookmark.
-2.  Se è stata implementata la funzione di [**\_ \_ callback sottoscrizioni evt**](/windows/win32/api/winevt/nc-winevt-evt_subscribe_callback) , il callback riceverà gli eventi che iniziano dopo l'evento con segnalibro.
-3.  Se non è stato implementato il callback, chiamare la funzione [**EvtNext**](/windows/desktop/api/WinEvt/nf-winevt-evtnext) in un ciclo per enumerare gli eventi che iniziano dopo l'evento con segnalibro.
+1.  Chiamare la [**funzione EvtSubscribe**](/windows/desktop/api/WinEvt/nf-winevt-evtsubscribe) per sottoscrivere gli eventi che corrispondono alla query. Passare l'handle al segnalibro e il flag EvtSubscribeStartAfterBookmark.
+2.  Se è stata implementata [**la funzione EVT \_ SUBSCRIBE \_ CALLBACK,**](/windows/win32/api/winevt/nc-winevt-evt_subscribe_callback) il callback riceverà gli eventi che iniziano dopo l'evento con segnalibro.
+3.  Se non è stato implementato il callback, chiamare la [**funzione EvtNext**](/windows/desktop/api/WinEvt/nf-winevt-evtnext) in un ciclo per enumerare gli eventi che iniziano dopo l'evento con segnalibro.
 
-Per un esempio, vedere [uso di un segnalibro in una sottoscrizione](#using-a-bookmark-in-a-subscription).
+Per un esempio, vedere [Uso di un segnalibro in una sottoscrizione](#using-a-bookmark-in-a-subscription).
 
 ## <a name="using-a-bookmark-in-a-query"></a>Uso di un segnalibro in una query
 
-Nell'esempio seguente viene illustrato come utilizzare un segnalibro in una query. Nell'esempio viene espansa l'esempio nell' [esecuzione di query per gli eventi](querying-for-events.md).
+Nell'esempio seguente viene illustrato come usare un segnalibro in una query. L'esempio si espande nell'esempio in [Esecuzione di query per gli eventi](querying-for-events.md).
 
 
 ```C++
@@ -236,7 +236,7 @@ cleanup:
 
 ## <a name="using-a-bookmark-in-a-subscription"></a>Uso di un segnalibro in una sottoscrizione
 
-Nell'esempio seguente viene illustrato come utilizzare un segnalibro in una sottoscrizione push.
+Nell'esempio seguente viene illustrato come usare un segnalibro in una sottoscrizione push.
 
 
 ```C++
@@ -461,6 +461,6 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 

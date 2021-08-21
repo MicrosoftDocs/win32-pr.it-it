@@ -1,11 +1,11 @@
 ---
-title: Metodo ISoftKbd GetSoftKeyboardTextFont (Softkbdc. h)
-description: Il metodo ISoftKbd GetSoftKeyboardTextFont Recupera il tipo di carattere del testo utilizzato da una tastiera soft.
+title: Metodo ISoftKbd GetSoftKeyboardTextFont (Softkbdc.h)
+description: Il metodo ISoftKbd GetSoftKeyboardTextFont recupera il tipo di carattere del testo usato da una tastiera soft.
 ms.assetid: 73239359-70b4-47d6-abc5-9fee279ed3a6
 keywords:
-- Framework servizi di testo Metodo GetSoftKeyboardTextFont
-- Framework dei servizi di testo del metodo GetSoftKeyboardTextFont, interfaccia ISoftKbd
-- ISoftKbd Interface Text Services Framework, metodo GetSoftKeyboardTextFont
+- Metodo GetSoftKeyboardTextFont Framework servizi di testo
+- Metodo GetSoftKeyboardTextFont Framework servizi di testo interfaccia , ISoftKbd
+- Interfaccia ISoftKbd Framework servizi di testo, metodo GetSoftKeyboardTextFont
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce939347042415a9060459102cd8a56665ac2de0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 55d1dcd1d069339c9bfb703bc37cda7e5972fceb707924cdabb868081ea308c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118877755"
 ---
-# <a name="isoftkbdgetsoftkeyboardtextfont-method"></a>Metodo ISoftKbd:: GetSoftKeyboardTextFont
+# <a name="isoftkbdgetsoftkeyboardtextfont-method"></a>Metodo ISoftKbd::GetSoftKeyboardTextFont
 
-Il metodo **ISoftKbd:: GetSoftKeyboardTextFont** Recupera il tipo di carattere del testo utilizzato da una tastiera soft.
+Il **metodo ISoftKbd::GetSoftKeyboardTextFont** recupera il tipo di carattere del testo usato da una tastiera soft.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ HRESULT GetSoftKeyboardTextFont(
 
 <dl> <dt>
 
-*pLogFont* \[ out\]
+*pLogFont* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un buffer in cui questo metodo recupera una struttura [**Campo LOGFONTW**](/windows/win32/api/wingdi/ns-wingdi-logfonta) che definisce il tipo di carattere del testo per la tastiera soft.
+Puntatore a un buffer in cui questo metodo recupera una [**struttura LOGFONTW**](/windows/win32/api/wingdi/ns-wingdi-logfonta) che definisce il tipo di carattere del testo per la tastiera soft.
 
 </dd> </dl>
 
@@ -57,8 +57,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Valore                                                                                        | Descrizione                                     |
 |----------------------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Il metodo è stato eseguito correttamente.<br/>           |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il parametro *pLogFont* non è valido.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Il metodo è stato eseguito correttamente.<br/>           |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il *parametro pLogFont* non è valido.<br/> |
 
 
 
@@ -72,9 +72,9 @@ Questo metodo può restituire uno di questi valori.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                             |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
-| Componente ridistribuibile<br/>          | TSF 1,0 su Windows 2000 Professional<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
-| IDL<br/>                      | <dl> <dt>Softkbd. idl</dt> </dl> |
+| Componente ridistribuibile<br/>          | TSF 1.0 in Windows 2000 Professional<br/>                                        |
+| Intestazione<br/>                   | <dl> <dt>Softkbdc.h</dt> </dl>  |
+| Idl<br/>                      | <dl> <dt>Softkbd.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Softkbd.dll</dt> </dl> |
 
 

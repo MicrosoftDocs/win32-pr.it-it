@@ -1,17 +1,17 @@
 ---
-title: Informazioni di riferimento sulla libreria di gestione Dynamic Data Exchange
-description: . | Informazioni di riferimento sulla libreria di gestione Dynamic Data Exchange
+title: informazioni di riferimento sulla libreria di gestione di Dynamic Data Exchange
+description: . | informazioni di riferimento sulla libreria di gestione di Dynamic Data Exchange
 ms.assetid: bc9fc6ba-cf10-435b-ac0c-6253342f99fe
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5ed1febf9d85f902247375e412d30952ad419d8
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c0ced4a9354875d3cf33eeecc04c2c65cc6a7a301bd384d60664248a9f6c16fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991311"
 ---
-# <a name="dynamic-data-exchange-management-library-reference"></a>Informazioni di riferimento sulla libreria di gestione Dynamic Data Exchange
+# <a name="dynamic-data-exchange-management-library-reference"></a>informazioni di riferimento sulla libreria di gestione di Dynamic Data Exchange
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

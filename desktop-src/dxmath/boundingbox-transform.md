@@ -1,7 +1,7 @@
 ---
 description: Trasforma l'oggetto BoundingBox.
 ms.assetid: a4a66746-64b0-490c-bfc0-31593ca7dc76
-title: Metodi BoundingBox. Transform
+title: Metodi di BoundingBox.Transform
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,14 +11,14 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: aaa91f3725d05dc5dd3419feca907d3f0b2ed7f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16d7b820602f65d7cc2443de9c2c2137daf3a0c6f91e60ebe20cab410b0cd1cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042889"
 ---
-# <a name="boundingboxtransform-methods"></a>Metodi BoundingBox. Transform
+# <a name="boundingboxtransform-methods"></a>Metodi di BoundingBox.Transform
 
 Trasforma l'oggetto BoundingBox.
 
@@ -28,8 +28,8 @@ Trasforma l'oggetto BoundingBox.
 
 | Metodo                                                                                           | Descrizione                            |
 |:-------------------------------------------------------------------------------------------------|:---------------------------------------|
-| [**BoundingBox:: Transform (BoundingBox&, XMMATRIX)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-transform(boundingbox__float_fxmvector_fxmvector))                | Trasforma l'oggetto BoundingBox.<br/> |
-| [**BoundingBox:: Transform (BoundingBox&, float, XMVECTOR, XMVECTOR)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-transform(boundingbox__float_fxmvector_fxmvector)) | Trasforma l'oggetto BoundingBox.<br/> |
+| [**BoundingBox::Transform (BoundingBox&,XMMATRIX)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-transform(boundingbox__float_fxmvector_fxmvector))                | Trasforma l'oggetto BoundingBox.<br/> |
+| [**BoundingBox::Transform (BoundingBox&,float,XMVECTOR,XMVECTOR)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-transform(boundingbox__float_fxmvector_fxmvector)) | Trasforma l'oggetto BoundingBox.<br/> |
 
 
 
@@ -43,7 +43,7 @@ Trasforma l'oggetto BoundingBox.
 **Riferimento**
 </dt> <dt>
 
-[**BoundingBox**](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox)
+[**Boundingbox**](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox)
 </dt> </dl>
 
  
