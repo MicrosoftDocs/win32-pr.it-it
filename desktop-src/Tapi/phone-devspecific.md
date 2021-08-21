@@ -1,19 +1,19 @@
 ---
-description: TAPI invia il \_ messaggio DEVSPECIFIC del telefono a un'applicazione per notificare all'applicazione gli eventi specifici del dispositivo che si verificano sul telefono. Il significato del messaggio e l'interpretazione dei parametri sono definiti dall'implementazione.
+description: TAPI invia il messaggio PHONE DEVSPECIFIC a un'applicazione per notificare all'applicazione gli eventi specifici del dispositivo che si \_ verificano al telefono. Il significato del messaggio e l'interpretazione dei parametri sono definiti dall'implementazione.
 ms.assetid: e3e803dd-b041-48b7-9acf-a89989370204
-title: Messaggio di PHONE_DEVSPECIFIC (TAPI. h)
+title: PHONE_DEVSPECIFIC messaggio (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c817f273a49fdcda36995cec335811fb06c8a917
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 578ba0960963f85ff597d9a6bc87ff3369a6c837ed58367bd82d62a13341e988
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072901"
 ---
-# <a name="phone_devspecific-message"></a>\_Messaggio DEVSPECIFIC telefono
+# <a name="phone_devspecific-message"></a>PHONE \_ DEVSPECIFIC message
 
-TAPI invia il **messaggio \_ DEVSPECIFIC del telefono** a un'applicazione per notificare all'applicazione gli eventi specifici del dispositivo che si verificano sul telefono. Il significato del messaggio e l'interpretazione dei parametri sono definiti dall'implementazione.
+TAPI invia il **messaggio \_ PHONE DEVSPECIFIC** a un'applicazione per notificare all'applicazione gli eventi specifici del dispositivo che si verificano al telefono. Il significato del messaggio e l'interpretazione dei parametri sono definiti dall'implementazione.
 
 
 ```C++
@@ -71,8 +71,8 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

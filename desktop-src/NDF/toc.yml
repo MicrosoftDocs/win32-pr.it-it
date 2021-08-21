@@ -8,22 +8,22 @@
       items:
         - name: Uso della funzionalità NDF
           href: using-ndf-functionality.md
-        - name: Progettazione di estensioni di classe helper NDF
+        - name: Progettazione di estensioni di classi helper NDF
           href: designing-ndf-helper-class-extensions.md
         - name: Linee guida dell'interfaccia utente per le estensioni della classe helper NDF
           href: user-interface-guidelines-for-ndf-helper-class-extensions.md
-        - name: Registrazione delle estensioni di classe helper NDF
+        - name: Registrazione delle estensioni della classe helper NDF
           href: registering-ndf-helper-class-extensions.md
         - name: Esempio di diagnostica NDF
           href: ndf-diagnostics-example.md
-        - name: Esempi di classi helper NDF
+        - name: Esempi di classe helper NDF
           href: ndf-helper-class-examples.md
           items:
             - name: Estensione della classe helper NDF
               href: ndf-helper-class-example.md
-            - name: Estensione della classe helper NDF con la consegna
+            - name: Estensione della classe helper NDF con Handoff
               href: ndf-helper-class-example-with-handoff.md
-    - name: Riferimento a NDF
+    - name: Informazioni di riferimento su NDF
       href: ndf-reference.md
       items:
         - name: Tipi enumerati NDF
@@ -120,11 +120,11 @@
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getdiagnosticsinfo
                 - name: Metodo GetDownStreamHypotheses
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getdownstreamhypotheses
-                - name: Metodo GetHigherHypotheses
+                - name: Metodo GetHigheHypotheses
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-gethigherhypotheses
                 - name: Metodo GetKeyAttributes
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getkeyattributes
-                - name: Metodo getlifetime
+                - name: Metodo GetLifeTime
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getlifetime
                 - name: Metodo GetLowerHypotheses
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getlowerhypotheses
@@ -132,15 +132,15 @@
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getrepairinfo
                 - name: Metodo GetUpStreamHypotheses
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getupstreamhypotheses
-                - name: Metodo utilizzo del
+                - name: Metodo HighUtilization
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-highutilization
                 - name: Metodo Initialize
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-initialize
                 - name: Metodo LowHealth
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-lowhealth
-                - name: Metodo Repair
+                - name: Metodo di ripristino
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-repair
-                - name: Metodo di durata
+                - name: Metodo SetLifeTime
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-setlifetime
                 - name: Metodo Validate
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-validate
@@ -151,7 +151,7 @@
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelperex-reconfirmlowhealth
                 - name: Metodo ReproduceFailure
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelperex-reproducefailure
-                - name: Metodo seutilities
+                - name: Metodo SetUtilities
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelperex-setutilities
             - name: INetDiagHelperInfo
               href: /windows/desktop/api/ndhelper/nn-ndhelper-inetdiaghelperinfo
@@ -174,7 +174,7 @@
               href: /windows/win32/api/ndattrib/ns-ndattrib-helper_attribute
             - name: HelperAttributeInfo
               href: /windows/win32/api/ndhelper/ns-ndhelper-helperattributeinfo
-            - name: IPOTESI
+            - name: Ipotesi
               href: /windows/win32/api/ndhelper/ns-ndhelper-hypothesis
             - name: HypothesisResult
               href: /windows/win32/api/ndhelper/ns-ndhelper-hypothesisresult
@@ -192,26 +192,26 @@
               href: /windows/win32/api/ndattrib/ns-ndattrib-shellcommandinfo
             - name: UiInfo
               href: /windows/win32/api/ndattrib/ns-ndattrib-uiinfo
-        - name: Classi helper estendibili
+        - name: Classi helper estendibile
           href: extensible-helper-classes.md
           items:
-            - name: Classe helper Windows Filtering Platform estendibile
+            - name: Windows Classe helper estendibile della piattaforma di filtro
               href: windows-filtering-platform-extensible-helper-class.md
-            - name: 'Classi helper estendibili di diagnostica wireless 802,11'
+            - name: 802.11 Wireless Diagnostics Extensible Helper Classes
               href: 802-11-wireless-diagnostics-extensible-helper-classes.md
     - name: Traccia di rete in Windows 7
       href: network-tracing-in-windows-7.md
       items:
-        - name: 'Traccia di rete in Windows 7: architettura'
+        - name: 'Traccia di rete in Windows 7: Architettura'
           href: network-tracing-in-windows-7-architecture.md
-        - name: Strumenti per la risoluzione dei problemi tramite la traccia di rete in Windows 7
+        - name: Strumenti per la risoluzione dei problemi tramite traccia di rete in Windows 7
           href: tools-for-troubleshooting-network-tracing-in-windows-7.md
           items:
             - name: Uso di Netsh per gestire le tracce
               href: using-netsh-to-manage-traces.md
-            - name: Utilizzo di Network Monitor per visualizzare i file ETL
+            - name: Uso Network Monitor per visualizzare i file ETL
               href: using-network-monitor-to-view-etl-files.md
-        - name: 'Traccia di rete in Windows 7: scenari'
+        - name: 'Traccia di rete in Windows 7: Scenari'
           href: network-tracing-in-windows-7-scenarios.md
           items:
             - name: Risoluzione dei problemi relativi alle connessioni Internet

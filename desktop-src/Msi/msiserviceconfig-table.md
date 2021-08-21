@@ -4,18 +4,18 @@ ms.assetid: 0d9fd005-9326-4a18-8496-35b5d1927f47
 title: Tabella MsiServiceConfig
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 357b6787e56d52a893dd1a118a3e2fcbc13379e2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3b72e21fdfecd59780b862d3bfe7d68ef829b59b847dbceb0e9c13befae9d4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828591"
 ---
 # <a name="msiserviceconfig-table"></a>Tabella MsiServiceConfig
 
 La tabella MsiServiceConfig configura un servizio installato o installato dal pacchetto corrente.
 
-**[Windows Installer 4,5 o versioni precedenti](not-supported-in-windows-installer-4-5.md):** Non supportato. Questa tabella è disponibile a partire da Windows Installer 5,0.
+**[Windows Installer 4.5 o versioni precedenti:](not-supported-in-windows-installer-4-5.md)** Non supportato. Questa tabella è disponibile a partire da Windows Installer 5.0.
 
 La tabella MsiServiceConfig include le colonne seguenti.
 
@@ -41,7 +41,7 @@ La tabella MsiServiceConfig include le colonne seguenti.
 <span id="MsiServiceConfig"></span><span id="msiserviceconfig"></span><span id="MSISERVICECONFIG"></span>MsiServiceConfig
 </dt> <dd>
 
-Si tratta della chiave primaria della tabella.
+Si tratta della chiave primaria di questa tabella.
 
 </dd> <dt>
 
@@ -55,14 +55,14 @@ Questa colonna contiene il nome di un servizio che fa parte di questo pacchetto 
 <span id="Event"></span><span id="event"></span><span id="EVENT"></span>Evento
 </dt> <dd>
 
-In questa colonna viene specificato quando modificare la configurazione del servizio. È possibile combinare i valori seguenti per rappresentare più operazioni. Tutti i valori inclusi non vengono ignorati.
+Questa colonna specifica quando modificare la configurazione del servizio. I valori seguenti possono essere combinati per rappresentare più operazioni. Tutti i valori inclusi diversi da questi vengono ignorati.
 
 
 
 | Costante                                         | Descrizione                                              |
 |--------------------------------------------------|----------------------------------------------------------|
-| **msidbServiceConfigEventInstall** 1<br/>   | Esegue l'azione durante l'installazione del componente.   |
-| **msidbServiceConfigEventUninstall** 2<br/> | Esegue l'azione durante la disinstallazione del componente. |
+| **msidbServiceConfigEventInstall** 1<br/>   | Consente di eseguire l'azione durante l'installazione del componente.   |
+| **msidbServiceConfigEventUninstall** 2<br/> | Consente di eseguire l'azione durante la disinstallazione del componente. |
 | **msidbServiceConfigEventReinstall** 4<br/> | Esegue l'azione durante la reinstallazione del componente. |
 
 
@@ -74,17 +74,17 @@ In questa colonna viene specificato quando modificare la configurazione del serv
 <span id="ConfigType"></span><span id="configtype"></span><span id="CONFIGTYPE"></span>ConfigType
 </dt> <dd>
 
-Il valore in questo campo, combinato con il valore nel campo arguments, specifica la modifica da apportare alla configurazione del servizio. La modifica specificata viene applicata alla successiva avvio del sistema.
+Il valore in questo campo, combinato con il valore nel campo Argomenti, specifica la modifica da apportare alla configurazione del servizio. La modifica specificata viene apportata al successivo avvio del sistema.
 
 
 
 | File di configurazione                                                      | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |-------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Servizio \_ di CONFIGURAZIONE \_ \_ \_ avvio automatico ritardato** 3<br/>       | Configurare il tempo di attesa di un [servizio di avvio automatico](../services/automatically-starting-services.md). <br/> Immettere 1 nel campo argument per avviare il servizio dopo altri servizi di avvio automatico, oltre a un ritardo di tempo. <br/> Immettere 0 nel campo argument per disattivare il ritardo del servizio di avvio automatico.<br/> Si applica solo ai servizi o ai servizi di avvio automatico installati da questo pacchetto **con \_ \_ avvio automatico del servizio** nel campo StartType della [tabella ServiceInstall](serviceinstall-table.md).<br/>                                                                         |
-| **Servizio \_ di CONFIGURARE \_ i \_ privilegi richiesti \_ informazioni** 6<br/> | Modificare l'elenco dei privilegi richiesti dal servizio.<br/> Immettere un elenco di privilegi richiesti nel campo argomento. Il valore stringa [formattato](formatted.md) nel campo argument elenca le [**costanti Privilege**](../secauthz/privilege-constants.md) per i privilegi richiesti. È possibile utilizzare la \[ ~ \] sintassi della stringa [formattata](formatted.md) per inserire un carattere null. Separare le costanti Privilege nell'elenco in base a \[ ~ \] .<br/>                                                                                                                              |
-| **Servizio \_ di \_ \_ \_ Informazioni SID servizio di configurazione** 5<br/>         | Aggiungere un tipo di SID del servizio al token di processo che contiene il servizio.<br/> Immettere nel campo argomento un tipo di SID del servizio valido per la struttura delle [**\_ \_ informazioni del SID**](/windows/win32/api/winsvc/ns-winsvc-service_sid_info) del servizio: tipo di SID del servizio **\_ \_ \_ None** (0x00), **tipo di SID del servizio con \_ \_ \_ restrizioni** (0x03) o **tipo di SID del servizio senza \_ \_ \_ restrizioni** (0x01). <br/>                                                                                                                                                                                                                                              |
-| **Servizio \_ di \_ \_ Informazioni di prespegnimento configurazione** 7<br/>          | Configurare la durata di attesa di [Gestione controllo servizi](../services/service-control-manager.md) prima di procedere con altre operazioni di arresto. Il servizio SCM attende questo periodo di tempo dopo l'invio della notifica di **\_ \_ prechiusura del controllo del servizio** al servizio. <br/> Immettere la lunghezza del ritardo di tempo, in millisecondi, nel campo argomento. Lasciare vuoto il campo argomento per reimpostare il ritardo di tempo sul valore predefinito di 3 minuti. <br/>                                                                                                                               |
-| **Servizio \_ di \_ \_ \_ Flag azioni errore configurazione** 4<br/>     | Configurare quando eseguire le azioni di errore per il servizio. Questa impostazione viene ignorata se il servizio non dispone di azioni di errore configurate.<br/> Immettere 0 per eseguire le azioni solo se il servizio termina senza Reporting **Service \_ interrotto**.<br/> Immettere 1 per eseguire le azioni se il servizio termina il servizio di Reporting **\_ interrotto** e il membro **dwWin32ExitCode** della struttura [**\_ dello stato del servizio**](/windows/win32/api/winsvc/ns-winsvc-service_status) non ha **\_ esito positivo**. Le azioni di errore configurate vengono inoltre eseguite se il servizio termina senza Reporting **Service \_ interrotto**.<br/> |
+| **SERVIZIO \_ CONFIG \_ DELAYED \_ AUTO \_ START** 3<br/>       | Configurare il ritardo di un servizio [di avvio automatico.](../services/automatically-starting-services.md) <br/> Immettere 1 nel campo Argomento per avviare il servizio dopo altri servizi di avvio automatico più un ritardo di tempo. <br/> Immettere 0 nel campo Argomento per disattivare il ritardo dell'avvio automatico del servizio.<br/> Si applica solo ai servizi o ai servizi di avvio automatico installati da questo pacchetto con **SERVICE \_ AUTO \_ START** nel campo StartType della [tabella ServiceInstall](serviceinstall-table.md).<br/>                                                                         |
+| **SERVIZIO \_ INFORMAZIONI \_ SUI PRIVILEGI NECESSARI DI \_ \_ CONFIGURAZIONE** 6<br/> | Modificare l'elenco dei privilegi richiesti dal servizio.<br/> Immettere un elenco di privilegi richiesti nel campo Argomento. Il [valore stringa](formatted.md) formattata nel campo Argomento elenca le costanti dei [**privilegi**](../secauthz/privilege-constants.md) per i privilegi richiesti. È possibile usare la \[ ~ \] sintassi della [stringa formattata](formatted.md) per inserire un carattere Null. Separare le costanti dei privilegi nell'elenco con \[ ~ \] .<br/>                                                                                                                              |
+| **SERVIZIO \_ INFORMAZIONI \_ SUL \_ SID DEL SERVIZIO DI \_ CONFIGURAZIONE** 5<br/>         | Aggiungere un tipo di SID del servizio al token di processo contenente questo servizio.<br/> Immettere nel campo Argomento un tipo DI SID del servizio valido per la struttura [**SERVICE \_ SID \_ INFO:**](/windows/win32/api/winsvc/ns-winsvc-service_sid_info) **SERVICE \_ SID TYPE \_ \_ NONE** (0x00), **SERVICE \_ SID TYPE \_ \_ RESTRICTED** (0x03) o **SERVICE \_ SID TYPE \_ \_ UNRESTRICTED** (0x01). <br/>                                                                                                                                                                                                                                              |
+| **SERVIZIO \_ CONFIG \_ PRESHUTDOWN \_ INFO** 7<br/>          | Configurare la durata dell'attesa di Gestione controllo [servizi](../services/service-control-manager.md) prima di procedere con altre operazioni di arresto. Gestione controllo servizi attende questo periodo di tempo dopo l'invio della notifica **\_ SERVICE CONTROL \_ PRESHUTDOWN** al servizio. <br/> Immettere la lunghezza del ritardo temporale, in millisecondi, nel campo Argomento. Lasciare vuoto il campo Argomento per reimpostare il ritardo temporale sul valore predefinito di 3 minuti. <br/>                                                                                                                               |
+| **SERVIZIO \_ FLAG \_ DI AZIONI DI ERRORE DI \_ \_ CONFIGURAZIONE** 4<br/>     | Configurare quando eseguire le azioni di errore per questo servizio. Questa impostazione viene ignorata se il servizio non ha azioni di errore configurate.<br/> Immettere 0 per eseguire le azioni solo se il servizio termina senza segnalare **SERVICE \_ STOPPED**.<br/> Immettere 1 per eseguire le azioni se il servizio termina la segnalazione **SERVICE \_ STOPPED** e il membro **dwWin32ExitCode** della struttura [**SERVICE \_ STATUS**](/windows/win32/api/winsvc/ns-winsvc-service_status) non è **ERROR \_ SUCCESS**. Le azioni di errore configurate vengono eseguite anche se il servizio termina senza segnalare **SERVICE \_ STOPPED.**<br/> |
 
 
 
@@ -92,17 +92,17 @@ Il valore in questo campo, combinato con il valore nel campo arguments, specific
 
 </dd> <dt>
 
-<span id="Argument"></span><span id="argument"></span><span id="ARGUMENT"></span>Argomento
+<span id="Argument"></span><span id="argument"></span><span id="ARGUMENT"></span>discussione
 </dt> <dd>
 
-Il valore in questo campo, combinato con il valore nel campo ConfigType, specifica la modifica da apportare alla configurazione del servizio. La modifica specificata viene applicata alla successiva avvio del sistema.
+Il valore in questo campo, combinato con il valore nel campo ConfigType, specifica la modifica da apportare alla configurazione del servizio. La modifica specificata viene apportata al successivo avvio del sistema.
 
 </dd> <dt>
 
 <span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Componente\_
 </dt> <dd>
 
-Chiave esterna per la colonna componente della [tabella dei componenti](component-table.md).
+Chiave esterna alla colonna Componente della [tabella dei componenti](component-table.md).
 
 </dd> </dl>
 

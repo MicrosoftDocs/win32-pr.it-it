@@ -1,67 +1,67 @@
 ---
-description: Le \_ costanti del flag di bit LINEDEVSTATUSFLAGS descrivono una raccolta di elementi di stato dei dispositivi lineari booleani.
+description: Le costanti del flag di bit LINEDEVSTATUSFLAGS descrivono \_ una raccolta di elementi booleani di stato del dispositivo a linee.
 ms.assetid: 5fa754d3-07b2-4b75-91ef-1bf961d9fef4
-title: Costanti LINEDEVSTATUSFLAGS_ (TAPI. h)
+title: LINEDEVSTATUSFLAGS_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 70745b1a84119af2305cadabd0a39ab5954e5b7c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6649dc39c787be7c0b7f027637f12ff7f5d028add09b9f7d568149c6e9f76c97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682010"
 ---
-# <a name="linedevstatusflags_-constants"></a>\_Costanti LINEDEVSTATUSFLAGS
+# <a name="linedevstatusflags_-constants"></a>Costanti LINEDEVSTATUSFLAGS \_
 
-Le costanti del flag di bit **LINEDEVSTATUSFLAGS \_** descrivono una raccolta di elementi di stato dei dispositivi lineari booleani.
+Le costanti del flag di bit **LINEDEVSTATUSFLAGS \_** descrivono una raccolta di elementi booleani di stato del dispositivo a linee.
 
 <dl> <dt>
 
-<span id="LINEDEVSTATUSFLAGS_CONNECTED"></span><span id="linedevstatusflags_connected"></span>**LINEDEVSTATUSFLAGS \_ connesso**
+<span id="LINEDEVSTATUSFLAGS_CONNECTED"></span><span id="linedevstatusflags_connected"></span>**LINEDEVSTATUSFLAGS \_ CONNESSO**
 </dt> <dd> <dl> <dt>
 
 
 
-Specifica se la linea è connessa a TAPI. Se **true**, la linea è connessa e TAPI è in grado di operare sul dispositivo a linee. Se **false**, la riga è disconnessa e l'applicazione non è in grado di controllare il dispositivo della linea tramite TAPI.
+Specifica se la linea è connessa a TAPI. Se **TRUE,** la linea è connessa e TAPI è in grado di operare sul dispositivo di linea. Se **FALSE,** la linea viene disconnessa e l'applicazione non è in grado di controllare il dispositivo di linea tramite TAPI.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDEVSTATUSFLAGS_INSERVICE"></span><span id="linedevstatusflags_inservice"></span>**LINEDEVSTATUSFLAGS \_ INservice**
+<span id="LINEDEVSTATUSFLAGS_INSERVICE"></span><span id="linedevstatusflags_inservice"></span>**LINEDEVSTATUSFLAGS \_ INSERVICE**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica se la riga è nel servizio. Se **true**, la riga è in servizio; Se **false**, la riga è fuori servizio.
+Indica se la riga è in servizio. Se **TRUE,** la riga è in servizio. se **FALSE,** la riga non è in servizio.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDEVSTATUSFLAGS_LOCKED"></span><span id="linedevstatusflags_locked"></span>**LINEDEVSTATUSFLAGS \_ bloccato**
+<span id="LINEDEVSTATUSFLAGS_LOCKED"></span><span id="linedevstatusflags_locked"></span>**LINEDEVSTATUSFLAGS \_ BLOCCATO**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica se la riga è bloccata o sbloccata. Questo bit viene spesso usato con i dispositivi lineari associati ai telefoni cellulari. Molti telefoni cellulari hanno un meccanismo di sicurezza che richiede l'immissione di una password per consentire al telefono di inserire le chiamate. Questo bit può essere utilizzato per indicare alle applicazioni che il telefono è bloccato e non è in grado di effettuare chiamate finché la password non viene immessa nell'interfaccia utente del telefono, in modo che l'applicazione possa presentare un avviso appropriato all'utente.
+Indica se la riga è bloccata o sbloccata. Questo bit viene usato più spesso con i dispositivi line associati ai telefoni cellulari. Molti telefoni cellulari hanno un meccanismo di sicurezza che richiede l'immissione di una password per consentire al telefono di effettuare chiamate. Questo bit può essere usato per indicare alle applicazioni che il telefono è bloccato e non può effettuare chiamate finché la password non viene immessa nell'interfaccia utente del telefono in modo che l'applicazione possa presentare un avviso appropriato all'utente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEDEVSTATUSFLAGS_MSGWAIT"></span><span id="linedevstatusflags_msgwait"></span>**\_MSGWAIT LINEDEVSTATUSFLAGS**
+<span id="LINEDEVSTATUSFLAGS_MSGWAIT"></span><span id="linedevstatusflags_msgwait"></span>**LINEDEVSTATUSFLAGS \_ MSGWAIT**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica se la riga presenta un messaggio in attesa. Se **true**, un messaggio è in attesa; Se **false**, nessun messaggio è in attesa.
+Indica se la riga contiene un messaggio in attesa. Se **TRUE,** un messaggio è in attesa. se **FALSE**, nessun messaggio è in attesa.
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna estensibilità. Tutti i 32 bit sono riservati.
+Nessuna estendibilità. Tutti i 32 bit sono riservati.
 
-Le \_ costanti LINEDEVSTATUSFLAGS vengono utilizzate all'interno del membro **dwDevStatusFlags** della struttura di dati [**LINEDEVSTATUS**](/windows/desktop/api/Tapi/ns-tapi-linedevstatus) .
+Le costanti LINEDEVSTATUSFLAGS vengono usate all'interno del membro \_ **dwDevStatusFlags** della struttura di dati [**LINEDEVSTATUS.**](/windows/desktop/api/Tapi/ns-tapi-linedevstatus)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,8 +69,8 @@ Le \_ costanti LINEDEVSTATUSFLAGS vengono utilizzate all'interno del membro **dw
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

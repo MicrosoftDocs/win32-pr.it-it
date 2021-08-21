@@ -1,9 +1,9 @@
 ---
-title: /sal_local opzione
-description: Il \_ commutire locale/Sal indica a MIDL di generare anche le annotazioni SAL per i parametri dei metodi di interfaccia contrassegnati come \ Local \. È necessario che sia presente anche l'opzione/Sal.
+title: Opzione /sal_local
+description: L'opzione locale /sal indica a MIDL di generare anche annotazioni SAL per i parametri \_ dei metodi di interfaccia contrassegnati come \ local\ . Deve essere presente anche l'opzione /sal.
 ms.assetid: 49AFC3F6-EAD5-45F6-8862-EFB3D9C479D1
 keywords:
-- /sal_local switch MIDL
+- Opzione /sal_local MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 03263b94b809407d1c3e55c2f3dacc5e10684bc1
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 666401cca482846fc2e6a9d5851a4da9d2d362279c9bc1496ab672a94ac9b9bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "106299092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014089"
 ---
-# <a name="sal_local-switch"></a>\_switch locale/SAL
+# <a name="sal_local-switch"></a>Opzione \_ locale /sal
 
-Il commutire **\_ locale/Sal** indica a MIDL di generare anche le annotazioni SAL per i parametri dei metodi di interfaccia contrassegnati come [**\[ \] local**](local.md). È necessario che sia presente anche l'opzione [**/Sal**](-sal.md) .
+**L'opzione \_ locale /sal** indica a MIDL di generare anche annotazioni SAL per i parametri dei metodi di interfaccia contrassegnati come [**\[ local. \]**](local.md) Deve essere presente anche l'opzione [**/sal.**](-sal.md)
 
 ``` syntax
 midl /sal /sal_local
@@ -33,13 +33,13 @@ Questa opzione non ha parametri.
 
 ## <a name="remarks"></a>Commenti
 
-Modifica il comportamento dell'opzione [**/Sal**](-sal.md) in modo da fornire anche le annotazioni sui parametri dei metodi di interfaccia contrassegnati con l'attributo [**\[ Local \]**](local.md) . Usare l'attributo [**\[ annota \]**](annotate.md)per eseguire l'override dell'annotazione generata da MIDL con una stringa di annotazione diversa.
+Modifica il comportamento dell'opzione [**/sal**](-sal.md) per fornire anche annotazioni sui parametri dei metodi di interfaccia contrassegnati con [**\[ l'attributo \]**](local.md) locale. Usare [**\[ l'attributo annotate \]**](annotate.md)per eseguire l'override dell'annotazione generata da MIDL con una stringa di annotazione diversa.
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Sintassi della riga di comando MIDL generale](general-midl-command-line-syntax.md)
+[Sintassi generale della riga di comando MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
 [**/sal**](-sal.md)
@@ -48,9 +48,9 @@ Modifica il comportamento dell'opzione [**/Sal**](-sal.md) in modo da fornire an
 [**\[Annotare\]**](annotate.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

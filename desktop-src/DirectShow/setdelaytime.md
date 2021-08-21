@@ -4,12 +4,12 @@ ms.assetid: bb1086e1-57e2-495a-9b7b-2d349a516e72
 title: SetDelayTime
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c7653777be7e6603494d9ba04a671ed46d3d949
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 26ebd119f20977c98aa2664518dc2125b7b5c157b44ff53c3a37740bf40a1677
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104480588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119683741"
 ---
 # <a name="setdelaytime"></a>SetDelayTime
 
@@ -18,7 +18,7 @@ ms.locfileid: "104480588"
 
  
 
-Il `SetDelayTime` metodo imposta il tempo di ritardo per la descrizione comando associata all'oggetto **mswebdvd** .
+Il `SetDelayTime` metodo imposta il tempo di ritardo per la descrizione comando associata all'oggetto **MSWebDVD.**
 
 ``` syntax
 MSWebDVD.SetDelayTime(iDelayType, iNewVal)
@@ -31,17 +31,17 @@ MSWebDVD.SetDelayTime(iDelayType, iNewVal)
 <span id="iDelayType"></span><span id="idelaytype"></span><span id="IDELAYTYPE"></span>*iDelayType*
 </dt> <dd>
 
-Specifica il tipo di ritardo come intero.
+Specifica il tipo di ritardo come integer.
 
 
 
 | Valore | Descrizione                                                                                                                                                                                                                                      |
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| -1    | Per reimpostare il valore predefinito di autopop delay, impostare *iNewVal* su-1.                                                                                                                                                                       |
-| 0     | Imposta il periodo di tempo in cui una finestra della descrizione comando rimane visibile se il puntatore è fermo all'interno del rettangolo di delimitazione di uno strumento.                                                                                                                         |
-| 1     | Imposta il periodo di tempo in cui un puntatore deve rimanere fermo nel rettangolo di delimitazione di uno strumento prima che venga visualizzata la finestra della descrizione comando.                                                                                                                    |
-| 2     | Consente di impostare la quantità di tempo necessaria per la visualizzazione delle finestre di descrizione comando successive quando il puntatore viene spostato da uno strumento all'altro.                                                                                                                          |
-| 3     | Imposta tutti i tempi di ritardo sulle proporzioni predefinite. Il tempo di autopop è dieci volte l'ora iniziale e il tempo di ripresentazione è pari a un quinto del tempo iniziale. Se questo flag è impostato, utilizzare un valore positivo di iNewVal per specificare il tempo iniziale, in millisecondi. |
+| -1    | Per reimpostare il tempo di ritardo del popolamento automatico sul valore predefinito, impostare *iNewVal* su -1.                                                                                                                                                                       |
+| 0     | Impostare il periodo di tempo per cui una finestra della descrizione comando rimane visibile se il puntatore è posizionato all'interno del rettangolo di delimitazione di uno strumento.                                                                                                                         |
+| 1     | Impostare il periodo di tempo per cui un puntatore deve rimanere stazionare all'interno del rettangolo di delimitazione di uno strumento prima che venga visualizzata la finestra della descrizione comando.                                                                                                                    |
+| 2     | Impostare il tempo necessario per visualizzare le finestre della descrizione comando successive quando il puntatore si sposta da uno strumento a un altro.                                                                                                                          |
+| 3     | Impostare tutti i tempi di ritardo su proporzioni predefinite. Il tempo di ripopolamento automatico è dieci volte l'ora iniziale e il tempo di sincronizzazione è un quinto l'ora iniziale. Se questo flag è impostato, usare un valore positivo di iNewVal per specificare l'ora iniziale, in millisecondi. |
 
 
 
@@ -52,13 +52,13 @@ Specifica il tipo di ritardo come intero.
 <span id="iNewVal"></span><span id="inewval"></span><span id="INEWVAL"></span>*iNewVal*
 </dt> <dd>
 
-Specifica il ritardo, in millisecondi, come intero.
+Specifica il ritardo, in millisecondi, come integer.
 
 
 
 | Valore                    | Descrizione                                                   |
 |--------------------------|---------------------------------------------------------------|
-| -1                       | Imposta il valore predefinito del ritardo specificato in *iDelayType* |
+| -1                       | Imposta il ritardo specificato in *iDelayType* sul valore predefinito |
 | qualsiasi altro valore negativo | Imposta tutti i tipi di ritardo sul valore predefinito.                  |
 
 

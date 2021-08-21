@@ -1,338 +1,338 @@
 ---
-description: In questa sezione vengono definite le costanti utilizzate da NLS per specificare particolari parti delle informazioni sulle impostazioni locali.
+description: Questa sezione definisce le costanti utilizzate da NLS per specificare informazioni specifiche sulle impostazioni locali.
 ms.assetid: 45798dd1-34bb-4e99-8f84-94f28e76711f
 title: Costanti di informazioni sulle impostazioni locali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7802002ff572ec148351a0abea02922205409b08
-ms.sourcegitcommit: 4af3e9ec3142ba499d20ed8b174c2b219c5eacd2
+ms.openlocfilehash: 0cfd5f3436eed055af6956e538276402f617eb0d6a0e8c3f6d914c82e1457aaf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "106334297"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120106591"
 ---
 # <a name="locale-information-constants"></a>Costanti di informazioni sulle impostazioni locali
 
-In questa sezione vengono definite le costanti utilizzate da NLS per specificare particolari parti delle informazioni sulle impostazioni locali. Tutti i nomi iniziano con "impostazioni locali \_ ". I nomi delle costanti che rappresentano valori integer iniziano con "impostazioni locali \_ i". Tutti i valori per queste costanti sono stringhe Unicode con terminazione null. La lunghezza massima delle stringhe include il carattere null di terminazione. Se per una costante non è indicata una lunghezza massima, i relativi valori possono variare di lunghezza.
+Questa sezione definisce le costanti utilizzate da NLS per specificare informazioni specifiche sulle impostazioni locali. Tutti i nomi iniziano con \_ "LOCALE". I nomi delle costanti che rappresentano valori integer iniziano con "LOCALE \_ I". Tutti i valori per queste costanti sono stringhe Unicode con terminazione Null. Le lunghezze massime delle stringhe includono il carattere Null di terminazione. Se non viene indicata alcuna lunghezza massima per una costante, i relativi valori possono variare in lunghezza.
 
-Le seguenti costanti di informazioni sulle impostazioni locali sono definite da NLS:
+Le costanti di informazioni sulle impostazioni locali seguenti sono definite da NLS:
 
 <dl>
 
-[\_tutte le impostazioni locali](locale-all.md)  
-[impostazioni locali \_ Consenti \_ neutre](locale-allow-neutral.md)  
-[impostazioni locali \_ Consenti \_ nomi neutri \_](locale-allow-neutral-names.md)  
-[\_ordinamenti alternativi delle impostazioni locali \_](locale-alternate-sorts.md)  
-[Costanti personalizzate delle impostazioni locali \_ \*](locale-custom-constants.md)  
-[impostazioni locali \_ FONTSIGNATURE](locale-fontsignature.md)  
-[impostazioni locali \_ ICALENDARTYPE](locale-icalendartype.md)  
-[impostazioni locali \_ ICENTURY](locale-icentury.md)  
-[impostazioni locali \_ ICONSTRUCTEDLOCALE](locale-iconstructedlocale.md)  
-[impostazioni locali \_ ICOUNTRY](locale-icountry.md)  
-[impostazioni locali \_ ICURRDIGITS](locale-icurrdigits.md)  
-[impostazioni locali \_ ICURRENCY](locale-icurrency.md)  
-[impostazioni locali \_ iDate](locale-idate.md)  
-[impostazioni locali \_ IDAYLZERO](locale-idaylzero.md)  
-[Costanti IDEFAULT delle impostazioni locali \_ \*](locale-idefault-constants.md)  
-[impostazioni locali \_ IDIALINGCODE](locale-icountry.md)  
-[impostazioni locali \_ IDIGITS](locale-idigits.md)  
-[impostazioni locali \_ IDIGITSUBSTITUTION](locale-idigitsubstitution.md)  
-[impostazioni locali \_ IFIRSTDAYOFWEEK](locale-ifirstdayofweek.md)  
-[impostazioni locali \_ IFIRSTWEEKOFYEAR](locale-ifirstweekofyear.md)  
-[impostazioni locali \_ IGEOID](locale-igeoid.md)  
-[impostazioni locali \_ IINTLCURRDIGITS](locale-iintlcurrdigits.md)  
-[impostazioni locali \_ ILANGUAGE](locale-ilanguage.md)  
-[impostazioni locali \_ ILDATE](locale-ildate.md)  
-[impostazioni locali \_ ILZERO](locale-ilzero.md)  
-[impostazioni locali \_ IMEASURE](locale-imeasure.md)  
-[impostazioni locali \_ IMONLZERO](locale-imonlzero.md)  
-[Costanti INEG delle impostazioni locali \_ \*](locale-ineg-constants.md)  
-[impostazioni locali \_ INEGATIVEPERCENT](locale-inegativepercent.md)  
-[impostazioni locali \_ INEUTRAL](locale-ineutral.md)  
-[impostazioni locali \_ INvariabili](locale-invariant.md)  
-[impostazioni locali \_ IOPTIONALCALENDAR](locale-ioptionalcalendar.md)  
-[impostazioni locali \_ IPAPERSIZE](locale-ipapersize.md)  
-[impostazioni locali \_ IPOSITIVEPERCENT](locale-ipositivepercent.md)  
-[Costanti delle IPO delle impostazioni locali \_ \*](locale-ipos-constants.md)  
-[impostazioni locali \_ IREADINGLAYOUT](locale-ireadinglayout.md)  
-[impostazioni locali \_ ITIME](locale-itime.md)  
-[impostazioni locali \_ ITIMEMARKPOSN](locale-itimemarkposn.md)  
-[impostazioni locali \_ ITLZERO](locale-itlzero.md)  
-[Impostazioni locali \_ IUSEUTF8LEGACYACP](locale_iuseutf8legacyacp.md)  
-[Impostazioni locali \_ IUSEUTF8LEGACYOEMCP](locale_iuseutf8legacyoemcp.md)  
-[Costanti nome delle impostazioni locali \_ \*](locale-name-constants.md)  
-[indipendente dalle impostazioni locali \_](locale-neutral.md)  
-[impostazioni locali \_ NEUTRALDATA](locale-neutraldata.md)  
-[impostazioni locali \_ NOUSEROVERRIDE](locale-nouseroverride.md)  
-[sostituzione delle impostazioni locali \_](locale-replacement.md)  
-[Costanti di \_ restituzione delle impostazioni locali \*](locale-return-constants.md)  
-[Impostazioni locali \_ S1159](locale-s1159.md)  
-[Impostazioni locali \_ S2359](locale-s2359.md)  
-[Costanti SABBREV delle impostazioni locali \_ \*](locale-sabbrev-constants.md)  
-[Sam impostazioni locali \_](locale-s1159.md)  
-[impostazioni locali \_ SCONSOLEFALLBACKNAME](locale-sconsolefallbackname.md)  
-[impostazioni locali \_ SCOUNTRY](locale-scountry.md)  
-[impostazioni locali \_ SCURRENCY](locale-scurrency.md)  
-[impostazioni locali \_ sdate](locale-sdate.md)  
-[Costanti SDAYNAME delle impostazioni locali \_ \*](locale-sdayname-constants.md)  
-[impostazioni locali \_ SDECIMAL](locale-sdecimal.md)  
-[impostazioni locali \_ SDURATION](locale-sduration.md)  
-[Costanti Seng delle impostazioni locali \_ \*](locale-seng-constants.md)  
-[Costanti SENGLISH delle impostazioni locali \_ \*](locale-senglish-constants.md)  
-[impostazioni locali \_ SGROUPING](locale-sgrouping.md)  
-[impostazioni locali \_ SIETFLANGUAGE](locale-sietflanguage.md)  
-[impostazioni locali \_ SINTLSYMBOL](locale-sintlsymbol.md)  
-[Costanti SIOS delle impostazioni locali \_ \*](locale-siso-constants.md)  
-[impostazioni locali \_ SKEYBOARDSTOINSTALL](locale-skeyboardstoinstall.md)  
-[impostazioni locali \_ SLANGDISPLAYNAME](locale-slangdisplayname.md)  
-[impostazioni locali \_ SLANGUAGE](locale-slanguage.md)  
-[impostazioni locali \_ slist](locale-slist.md)  
-[Costanti SLOCALIZED delle impostazioni locali \_ \*](locale-slocalized-constants.md)  
-[impostazioni locali \_ SLONGDATE](locale-slongdate.md)  
-[Costanti smon delle impostazioni locali \_ \*](locale-smon-constants.md)  
-[impostazioni locali \_ SMONTHDAY](locale-smonthday.md)  
-[Costanti SMONTHNAME delle impostazioni locali \_ \*](locale-smonthname-constants.md)  
-[impostazioni locali \_ sname](locale-sname.md)  
-[impostazioni locali \_ Snan](locale-snan.md)  
-[Costanti SNATIVE delle impostazioni locali \_ \*](locale-snative-constants.md)  
-[impostazioni locali \_ SNEGATIVESIGN](locale-snegativesign.md)  
-[impostazioni locali \_ SNEGINFINITY](locale-sneginfinity.md)  
-[impostazioni locali \_ SOPENTYPELANGUAGETAG](locale-sopentypelanguagetag.md)  
-[ordinamento delle impostazioni locali \_](locale-sortname.md)  
-[impostazioni locali \_ SPARENT](locale-sparent.md)  
-[impostazioni locali \_ SPECIFICDATA](locale-specificdata.md)  
-[impostazioni locali \_ SPERCENT](locale-spercent.md)  
-[impostazioni locali \_ SPERMILLE](locale-spermille.md)  
-[SPM locale \_](locale-s2359.md)  
-[impostazioni locali \_ SPOSINFINITY](locale-sposinfinity.md)  
-[impostazioni locali \_ SPOSITIVESIGN](locale-spositivesign.md)  
-[impostazioni locali \_ SSCRIPTS](locale-sscripts.md)  
-[impostazioni locali \_ SSHORTDATE](locale-sshortdate.md)  
-[impostazioni locali \_ SSHORTESTAM](locale-sshortestam.md)  
-[Costanti SSHORTESTDAYNAME delle impostazioni locali \_ \*](locale-sshortestdayname-constants.md)  
-[impostazioni locali \_ SSHORTESTPM](locale-sshortestpm.md)  
-[impostazioni locali \_ SSHORTTIME](locale-sshorttime.md)  
-[Costanti SSORT delle impostazioni locali \_ \*](locale-ssort-constants.md)  
-[impostazioni locali \_ STHOUSAND](locale-sthousand.md)  
-[Costanti stime delle impostazioni locali \_ \*](locale-stime-constants.md)  
-[impostazioni locali \_ aggiuntive](locale-supplemental.md)  
-[impostazioni locali \_ SYEARMONTH](locale-syearmonth.md)  
-[impostazioni locali del \_ sistema \_](locale-system-default.md)  
-[impostazioni locali \_ usare \_ CP \_ ACP](locale-use-cp-acp.md)  
-[\_impostazione predefinita utente impostazioni locali \_](locale-user-default.md)  
-[finestre delle impostazioni locali \_](locale-windows.md)  
+[TUTTE LE \_ IMPOSTAZIONI LOCALI](locale-all.md)  
+[IMPOSTAZIONI LOCALI \_ CONSENTI \_ NEUTRO](locale-allow-neutral.md)  
+[IMPOSTAZIONI LOCALI \_ CONSENTI \_ NOMI \_ NEUTRI](locale-allow-neutral-names.md)  
+[ORDINAMENTO \_ \_ ALTERNATIVO DELLE IMPOSTAZIONI LOCALI](locale-alternate-sorts.md)  
+[Costanti \_ LOCALE CUSTOM \*](locale-custom-constants.md)  
+[\_FONTSIGNATURE DELLE IMPOSTAZIONI LOCALI](locale-fontsignature.md)  
+[IMPOSTAZIONI \_ LOCALI ICALENDARTYPE](locale-icalendartype.md)  
+[IMPOSTAZIONI \_ LOCALI ICENTURY](locale-icentury.md)  
+[ICONA \_ DELLE IMPOSTAZIONI LOCALISTRUCTEDLOCALE](locale-iconstructedlocale.md)  
+[IMPOSTAZIONI \_ LOCALI ICOUNTRY](locale-icountry.md)  
+[\_IMPOSTAZIONI LOCALI ICURRDIGITS](locale-icurrdigits.md)  
+[RICORRENZA \_ DELLE IMPOSTAZIONI LOCALI](locale-icurrency.md)  
+[IMPOSTAZIONI \_ LOCALI IDATE](locale-idate.md)  
+[IMPOSTAZIONI \_ LOCALI IDAYLZERO](locale-idaylzero.md)  
+[Costanti IDEFAULT delle impostazioni \_ \* locali](locale-idefault-constants.md)  
+[CODICE \_ IDIALING DELLE IMPOSTAZIONI LOCALI](locale-icountry.md)  
+[\_IDIGITS DELLE IMPOSTAZIONI LOCALI](locale-idigits.md)  
+[\_IDIGITSUBSTITUTION DELLE IMPOSTAZIONI LOCALI](locale-idigitsubstitution.md)  
+[IMPOSTAZIONI \_ LOCALI IFIRSTDAYOFWEEK](locale-ifirstdayofweek.md)  
+[IMPOSTAZIONI \_ LOCALI IFIRSTWEEKOFYEAR](locale-ifirstweekofyear.md)  
+[\_IGEOID DELLE IMPOSTAZIONI LOCALI](locale-igeoid.md)  
+[IMPOSTAZIONI \_ LOCALI IINTLCURRDIGITS](locale-iintlcurrdigits.md)  
+[LINGUA \_ DELLE IMPOSTAZIONI LOCALI](locale-ilanguage.md)  
+[LOCALE \_ ILDATE](locale-ildate.md)  
+[IMPOSTAZIONI \_ LOCALI ILZERO](locale-ilzero.md)  
+[\_IMEASURE DELLE IMPOSTAZIONI LOCALI](locale-imeasure.md)  
+[\_IMPOSTAZIONI LOCALI IMONLZERO](locale-imonlzero.md)  
+[Costanti \_ INEG delle impostazioni \* locali](locale-ineg-constants.md)  
+[\_INEGATIVEPERCENT DELLE IMPOSTAZIONI LOCALI](locale-inegativepercent.md)  
+[IMPOSTAZIONI \_ LOCALI INEUTRAL](locale-ineutral.md)  
+[\_INVARIANTE DELLE IMPOSTAZIONI LOCALI](locale-invariant.md)  
+[IMPOSTAZIONI \_ LOCALI IOPTIONALCALENDAR](locale-ioptionalcalendar.md)  
+[IMPOSTAZIONI \_ LOCALI IPAPERSIZE](locale-ipapersize.md)  
+[\_IMPOSTAZIONI LOCALI IPOSITIVEPERCENT](locale-ipositivepercent.md)  
+[Costanti \_ IPOS delle impostazioni \* locali](locale-ipos-constants.md)  
+[\_IMPOSTAZIONI LOCALI IREADINGLAYOUT](locale-ireadinglayout.md)  
+[IMPOSTAZIONI \_ LOCALI ITIME](locale-itime.md)  
+[IMPOSTAZIONI \_ LOCALI ITIMEMARKPOSN](locale-itimemarkposn.md)  
+[IMPOSTAZIONI \_ LOCALI ITLZERO](locale-itlzero.md)  
+[IMPOSTAZIONI \_ LOCALI IUSEUTF8LEGACYACP](locale_iuseutf8legacyacp.md)  
+[IMPOSTAZIONI \_ LOCALI IUSEUTF8LEGACYOEMCP](locale_iuseutf8legacyoemcp.md)  
+[Costanti \_ LOCALE NAME \*](locale-name-constants.md)  
+[IMPOSTAZIONI \_ LOCALI NEUTRE](locale-neutral.md)  
+[LOCAL \_ NEUTRALDATA](locale-neutraldata.md)  
+[IMPOSTAZIONI \_ LOCALI NOUSEROVERRIDE](locale-nouseroverride.md)  
+[SOSTITUZIONE DELLE \_ IMPOSTAZIONI LOCALI](locale-replacement.md)  
+[Costanti \_ LOCALE RETURN \*](locale-return-constants.md)  
+[IMPOSTAZIONI \_ LOCALI S1159](locale-s1159.md)  
+[IMPOSTAZIONI \_ LOCALI S2359](locale-s2359.md)  
+[Costanti \_ LOCALE \* SABBREV](locale-sabbrev-constants.md)  
+[IMPOSTAZIONI \_ LOCALI SAM](locale-s1159.md)  
+[IMPOSTAZIONI \_ LOCALI SCONSOLEFALLBACKNAME](locale-sconsolefallbackname.md)  
+[\_SCOUNTRY DELLE IMPOSTAZIONI LOCALI](locale-scountry.md)  
+[\_SCURRENCY DELLE IMPOSTAZIONI LOCALI](locale-scurrency.md)  
+[IMPOSTAZIONI \_ LOCALI SDATE](locale-sdate.md)  
+[Costanti \_ LOCALE SDAYNAME \*](locale-sdayname-constants.md)  
+[IMPOSTAZIONI \_ LOCALI SDECIMAL](locale-sdecimal.md)  
+[\_SDURATION DELLE IMPOSTAZIONI LOCALI](locale-sduration.md)  
+[Costanti \_ LOCALE SENG \*](locale-seng-constants.md)  
+[Costanti \_ LOCALE SENGLISH \*](locale-senglish-constants.md)  
+[\_SGROUPING DELLE IMPOSTAZIONI LOCALI](locale-sgrouping.md)  
+[\_SIETFLANGUAGE DELLE IMPOSTAZIONI LOCALI](locale-sietflanguage.md)  
+[LOCALE \_ SINTLSYMBOL](locale-sintlsymbol.md)  
+[Costanti \_ SISO \* locale](locale-siso-constants.md)  
+[IMPOSTAZIONI \_ LOCALI SKEYBOARDSTOINSTALL](locale-skeyboardstoinstall.md)  
+[IMPOSTAZIONI \_ LOCALI SLANGDISPLAYNAME](locale-slangdisplayname.md)  
+[SLANGUAGE \_ DELLE IMPOSTAZIONI LOCALI](locale-slanguage.md)  
+[SLIST \_ DELLE IMPOSTAZIONI LOCALI](locale-slist.md)  
+[Costanti \_ LOCALE SLOCALIZED \*](locale-slocalized-constants.md)  
+[IMPOSTAZIONI \_ LOCALI SLONGDATE](locale-slongdate.md)  
+[Costanti \_ SMON locale \*](locale-smon-constants.md)  
+[\_SMONTHDAY DELLE IMPOSTAZIONI LOCALI](locale-smonthday.md)  
+[Costanti \_ LOCALE SMONTHNAME \*](locale-smonthname-constants.md)  
+[SNAME \_ DELLE IMPOSTAZIONI LOCALI](locale-sname.md)  
+[IMPOSTAZIONI \_ LOCALI SNAN](locale-snan.md)  
+[Costanti \_ LOCALI SNATIVE \*](locale-snative-constants.md)  
+[IMPOSTAZIONI \_ LOCALI SNEGATIVESIGN](locale-snegativesign.md)  
+[\_SNEGINFINITY DELLE IMPOSTAZIONI LOCALI](locale-sneginfinity.md)  
+[\_SOPENTYPELANGUAGETAG DELLE IMPOSTAZIONI LOCALI](locale-sopentypelanguagetag.md)  
+[NOME \_ ORDINAMENTO IMPOSTAZIONI LOCALI](locale-sortname.md)  
+[SPARENT \_ DELLE IMPOSTAZIONI LOCALI](locale-sparent.md)  
+[SPECIFICDATA \_ DELLE IMPOSTAZIONI LOCALI](locale-specificdata.md)  
+[IMPOSTAZIONI \_ LOCALI SPERCENT](locale-spercent.md)  
+[IMPOSTAZIONI \_ LOCALI PER LA LINGUA](locale-spermille.md)  
+[IMPOSTAZIONI \_ LOCALI SPM](locale-s2359.md)  
+[IMPOSTAZIONI \_ LOCALI, PROPRIETÀ E PROPRIETÀ](locale-sposinfinity.md)  
+[LOCALE \_ EVARIATIVASIGN](locale-spositivesign.md)  
+[\_SSCRIPT DELLE IMPOSTAZIONI LOCALI](locale-sscripts.md)  
+[IMPOSTAZIONI \_ LOCALI SSHORTDATE](locale-sshortdate.md)  
+[\_SSHORTESTAM DELLE IMPOSTAZIONI LOCALI](locale-sshortestam.md)  
+[Costanti \_ LOCALE SSHORTESTDAYNAME \*](locale-sshortestdayname-constants.md)  
+[IMPOSTAZIONI \_ LOCALI SSHORTESTPM](locale-sshortestpm.md)  
+[IMPOSTAZIONI \_ LOCALI SSHORTTIME](locale-sshorttime.md)  
+[Costanti \_ LOCALE SSORT \*](locale-ssort-constants.md)  
+[LOCALE \_ STHOUSAND](locale-sthousand.md)  
+[Costanti \_ LOCALE STIME \*](locale-stime-constants.md)  
+[IMPOSTAZIONI \_ LOCALI SUPPLEMENTARI](locale-supplemental.md)  
+[LOCALE \_ SYEARMONTH](locale-syearmonth.md)  
+[IMPOSTAZIONI LOCALI \_ PREDEFINITE DEL \_ SISTEMA](locale-system-default.md)  
+[IMPOSTAZIONI \_ LOCALI - USARE CP \_ \_ ACP](locale-use-cp-acp.md)  
+[IMPOSTAZIONI LOCALI \_ PREDEFINITE \_ DELL'UTENTE](locale-user-default.md)  
+[IMPOSTAZIONI \_ LOCALI DI WINDOWS](locale-windows.md)  
 </dl>
 
 ## <a name="combining-constants"></a>Combinazione di costanti
 
-Le costanti seguenti possono essere combinate con altre costanti usando l'operatore binario o. Il resto delle costanti si escludono a vicenda e pertanto non è possibile combinarle tra loro.
+Le costanti seguenti possono essere combinate con altre costanti usando l'operatore OR binario. Il resto delle costanti si escludono a vicenda e pertanto non può essere combinato tra loro.
 
--   impostazioni locali \_ NOUSEROVERRIDE
--   numero restituito delle impostazioni locali \_ \_
--   impostazioni locali \_ usare \_ CP \_ ACP
+-   IMPOSTAZIONI \_ LOCALI NOUSEROVERRIDE
+-   NUMERO \_ RESTITUITO DELLE \_ IMPOSTAZIONI LOCALI
+-   IMPOSTAZIONI \_ LOCALI - USARE CP \_ \_ ACP
 
-## <a name="default-and-neutral-locale-identifier-constants"></a>Costanti di identificatore delle impostazioni locali predefinite e non associate ad alcun paese
+## <a name="default-and-neutral-locale-identifier-constants"></a>Costanti degli identificatori delle impostazioni locali predefinite e neutre
 
-Le costanti seguenti rappresentano gli identificatori delle impostazioni locali predefiniti e neutri.
+Le costanti seguenti rappresentano gli identificatori delle impostazioni locali predefinite e non indipendenti.
 
--   impostazioni locali \_ personalizzate \_ predefinite
--   \_ \_ impostazione predefinita interfaccia utente personalizzata impostazioni locali \_
--   impostazioni locali \_ personalizzate non \_ specificate
--   impostazioni locali \_ INvariabili
--   indipendente dalle impostazioni locali \_
--   impostazioni locali del \_ sistema \_
--   \_impostazione predefinita utente impostazioni locali \_
+-   IMPOSTAZIONI LOCALI \_ PERSONALIZZATE \_ PREDEFINITE
+-   IMPOSTAZIONI LOCALI \_ PERSONALIZZATE \_ DELL'INTERFACCIA \_ UTENTE PREDEFINITE
+-   IMPOSTAZIONI \_ LOCALI PERSONALIZZATE NON \_ SPECIFICATE
+-   \_INVARIANTE DELLE IMPOSTAZIONI LOCALI
+-   IMPOSTAZIONI \_ LOCALI NEUTRE
+-   IMPOSTAZIONI LOCALI \_ PREDEFINITE DEL \_ SISTEMA
+-   IMPOSTAZIONI LOCALI \_ PREDEFINITE \_ DELL'UTENTE
 
-## <a name="locale-name-constants"></a>Costanti nome delle impostazioni locali
+## <a name="locale-name-constants"></a>Costanti dei nomi delle impostazioni locali
 
-Le costanti seguenti vengono usate per specificare un [nome delle impostazioni locali](locale-names.md). Vengono usati da funzioni come [**GetLocaleInfoEx**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex).
+Le costanti seguenti vengono usate per specificare un nome [di impostazioni locali](locale-names.md). Vengono usati da funzioni come [**GetLocaleInfoEx.**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex)
 
--   nome delle impostazioni locali \_ \_ invariante
--   impostazioni locali \_ nome \_ sistema \_ predefinito
--   \_ \_ impostazione predefinita utente nome impostazioni locali \_
+-   \_INVARIANTE NOME \_ IMPOSTAZIONI LOCALI
+-   IMPOSTAZIONI LOCALI \_ NAME \_ SYSTEM \_ DEFAULT
+-   NOME IMPOSTAZIONI \_ LOCALI \_ PREDEFINITO \_ DELL'UTENTE
 
 ## <a name="locale-definition-constants"></a>Costanti di definizione delle impostazioni locali
 
-Le seguenti costanti definiscono le impostazioni locali per le funzioni NLS, ad esempio [**EnumSystemLocalesEx**](/windows/desktop/api/Winnls/nf-winnls-enumsystemlocalesex) e [**EnumLocalesProcEx**](/windows/win32/api/winnls/nc-winnls-locale_enumprocex).
+Le costanti seguenti definiscono le impostazioni locali per le funzioni NLS, ad esempio [**EnumSystemLocalesEx**](/windows/desktop/api/Winnls/nf-winnls-enumsystemlocalesex) [**ed EnumLocalesProcEx.**](/windows/win32/api/winnls/nc-winnls-locale_enumprocex)
 
--   \_tutte le impostazioni locali
--   \_ordinamenti alternativi delle impostazioni locali \_
--   sostituzione delle impostazioni locali \_
--   impostazioni locali \_ aggiuntive
--   finestre delle impostazioni locali \_
+-   LOCALE \_ ALL
+-   ORDINAMENTI \_ \_ ALTERNATIVI DELLE IMPOSTAZIONI LOCALI
+-   SOSTITUZIONE DELLE \_ IMPOSTAZIONI LOCALI
+-   IMPOSTAZIONI \_ LOCALI SUPPLEMENTARI
+-   IMPOSTAZIONI \_ LOCALI DI WINDOWS
 
-## <a name="constants-used-in-the-lctype-parameter-of-getlocaleinfo-getlocaleinfoex-and-setlocaleinfo"></a>Costanti utilizzate nel parametro LCType di GetLocaleInfo, GetLocaleInfoEx e SetLocaleInfo
+## <a name="constants-used-in-the-lctype-parameter-of-getlocaleinfo-getlocaleinfoex-and-setlocaleinfo"></a>Costanti usate nel parametro LCType di GetLocaleInfo, GetLocaleInfoEx e SetLocaleInfo
 
-In questa sezione sono elencate le costanti di informazioni sulle impostazioni locali che possono essere utilizzate dall'applicazione per il parametro *LCType* di [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) (Windows Me/98, Windows NT 4,0), [**GetLocaleInfoEx**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex) (Windows Vista) e [**SetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-setlocaleinfoa). Le informazioni sulle impostazioni locali vengono passate come stringhe (impostazione predefinita) o come numeri interi. Un valore integer viene specificato usando l'operatore binario o per combinare una costante specifica con una costante di combinazione. Vedere [combinazione di costanti](#combining-constants).
-
- 
-
-**Costanti utilizzate solo da GetLocaleInfo e GetLocaleInfoEx**
-
-[**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) e [**GetLocaleInfoEx**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex) usano le costanti seguenti per recuperare determinate parti delle informazioni sulle impostazioni locali che non possono essere impostate da [**SetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-setlocaleinfoa) . Queste costanti si escludono reciprocamente tra loro e le costanti usate da [**SetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-setlocaleinfoa) e [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) / [**GetLocaleInfoEx**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex). Tuttavia, possono essere combinate con le costanti combinate usando l'operatore binario o. Vedere [combinazione di costanti](#combining-constants).
-
--   impostazioni locali \_ FONTSIGNATURE
--   impostazioni locali \_ ICENTURY
--   impostazioni locali \_ ICOUNTRY
--   impostazioni locali \_ ICONSTRUCTEDLOCALE
--   impostazioni locali \_ iDate
--   impostazioni locali \_ IDAYLZERO
--   impostazioni locali \_ IDEFAULTANSICODEPAGE
--   impostazioni locali \_ IDEFAULTCODEPAGE
--   impostazioni locali \_ IDEFAULTCOUNTRY
--   impostazioni locali \_ IDEFAULTEBCDICCODEPAGE
--   impostazioni locali \_ IDEFAULTLANGUAGE
--   impostazioni locali \_ IDEFAULTMACCODEPAGE
--   impostazioni locali \_ IDIALINGCODE
--   impostazioni locali \_ IGEOID
--   impostazioni locali \_ IINTLCURRDIGITS
--   impostazioni locali \_ ILANGUAGE
--   impostazioni locali \_ ILDATE
--   impostazioni locali \_ IMONLZERO
--   impostazioni locali \_ INEGATIVEPERCENT
--   impostazioni locali \_ INEGSEPBYSPACE
--   impostazioni locali \_ INEGSIGNPOSN
--   impostazioni locali \_ INEGSYMPRECEDES
--   impostazioni locali \_ IOPTIONALCALENDAR
--   impostazioni locali \_ IPOSITIVEPERCENT
--   impostazioni locali \_ IPOSSEPBYSPACE
--   impostazioni locali \_ IPOSSIGNPOSN
--   impostazioni locali \_ IPOSSYMPRECEDES
--   impostazioni locali \_ ITIMEMARKPOSN
--   impostazioni locali \_ ITLZERO
--   impostazioni locali \_ SABBREVCTRYNAME
--   Impostazioni locali \_ SABBREVDAYNAME1
--   Impostazioni locali \_ SABBREVDAYNAME2
--   Impostazioni locali \_ SABBREVDAYNAME3
--   Impostazioni locali \_ SABBREVDAYNAME4
--   Impostazioni locali \_ SABBREVDAYNAME5
--   Impostazioni locali \_ SABBREVDAYNAME6
--   Impostazioni locali \_ SABBREVDAYNAME7
--   impostazioni locali \_ SABBREVLANGNAME
--   Impostazioni locali \_ SABBREVMONTHNAME1
--   Impostazioni locali \_ SABBREVMONTHNAME2
--   Impostazioni locali \_ SABBREVMONTHNAME3
--   Impostazioni locali \_ SABBREVMONTHNAME4
--   Impostazioni locali \_ SABBREVMONTHNAME5
--   Impostazioni locali \_ SABBREVMONTHNAME6
--   Impostazioni locali \_ SABBREVMONTHNAME7
--   Impostazioni locali \_ SABBREVMONTHNAME8
--   Impostazioni locali \_ SABBREVMONTHNAME9
--   Impostazioni locali \_ SABBREVMONTHNAME10
--   Impostazioni locali \_ SABBREVMONTHNAME11
--   Impostazioni locali \_ SABBREVMONTHNAME12
--   Impostazioni locali \_ SABBREVMONTHNAME13
--   impostazioni locali \_ SCONSOLEFALLBACKNAME
--   Impostazioni locali \_ SDAYNAME1
--   Impostazioni locali \_ SDAYNAME2
--   Impostazioni locali \_ SDAYNAME3
--   Impostazioni locali \_ SDAYNAME4
--   Impostazioni locali \_ SDAYNAME5
--   Impostazioni locali \_ SDAYNAME6
--   Impostazioni locali \_ SDAYNAME7
--   impostazioni locali \_ SDURATION
--   impostazioni locali \_ SENGCURRNAME
--   impostazioni locali \_ SENGLISHCOUNTRYNAME
--   impostazioni locali \_ SENGLISHDISPLAYNAME
--   impostazioni locali \_ SENGLISHLANGUAGENAME
--   impostazioni locali \_ SINTLSYMBOL
--   impostazioni locali \_ SIETFLANGUAGE
--   Impostazioni locali \_ SISO3166CTRYNAME
--   Impostazioni locali \_ SISO3166CTRYNAME2
--   Impostazioni locali \_ SISO639LANGNAME
--   Impostazioni locali \_ SISO639LANGNAME2
--   impostazioni locali \_ SKEYBOARDSTOINSTALL
--   Impostazioni locali \_ SMONTHNAME1
--   Impostazioni locali \_ SMONTHNAME2
--   Impostazioni locali \_ SMONTHNAME3
--   Impostazioni locali \_ SMONTHNAME4
--   Impostazioni locali \_ SMONTHNAME5
--   Impostazioni locali \_ SMONTHNAME6
--   Impostazioni locali \_ SMONTHNAME7
--   Impostazioni locali \_ SMONTHNAME8
--   Impostazioni locali \_ SMONTHNAME9
--   Impostazioni locali \_ SMONTHNAME10
--   Impostazioni locali \_ SMONTHNAME11
--   Impostazioni locali \_ SMONTHNAME12
--   Impostazioni locali \_ SMONTHNAME13
--   impostazioni locali \_ sname
--   impostazioni locali \_ Snan
--   impostazioni locali \_ SNATIVECOUNTRYNAME
--   impostazioni locali \_ SNATIVECURRNAME
--   impostazioni locali \_ SNATIVEDISPLAYNAME
--   impostazioni locali \_ SNATIVELANGUAGENAME
--   impostazioni locali \_ SNEGINFINITY
--   impostazioni locali \_ SPARENT
--   impostazioni locali \_ SPERCENT
--   impostazioni locali \_ SPOSINFINITY
--   impostazioni locali \_ SSCRIPTS
--   impostazioni locali \_ SSHORTESTAM
--   Impostazioni locali \_ SSHORTESTDAYNAME1
--   Impostazioni locali \_ SSHORTESTDAYNAME2
--   Impostazioni locali \_ SSHORTESTDAYNAME3
--   Impostazioni locali \_ SSHORTESTDAYNAME4
--   Impostazioni locali \_ SSHORTESTDAYNAME5
--   Impostazioni locali \_ SSHORTESTDAYNAME6
--   Impostazioni locali \_ SSHORTESTDAYNAME7
--   impostazioni locali \_ SSHORTESTPM
--   impostazioni locali \_ SSORTNAME
+Questa sezione elenca le costanti relative alle informazioni sulle impostazioni locali che l'applicazione può usare per il parametro *LCType* di [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) (Windows Me/98, Windows NT 4.0), [**GetLocaleInfoEx**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex) (Windows Vista) e [**SetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-setlocaleinfoa). Le informazioni sulle impostazioni locali vengono passate come stringhe (impostazione predefinita) o come numeri interi. Un valore intero viene specificato usando l'operatore OR binario per combinare una determinata costante con una costante di combinazione. Vedere [Combinazione di costanti](#combining-constants).
 
  
 
-**Costanti utilizzate da SetLocaleInfo e GetLocaleInfo/GetLocaleInfoEx**
+**Costanti usate solo da GetLocaleInfo e GetLocaleInfoEx**
 
-[**SetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-setlocaleinfoa) usa le costanti seguenti per impostare particolari parti delle informazioni sulle impostazioni locali dell'utente e [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) o [**GetLocaleInfoEx**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex) usano queste stesse costanti per recuperare tali informazioni. Queste costanti si escludono reciprocamente tra loro e le costanti utilizzate solo da [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) o [**GetLocaleInfoEx**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex) . Tuttavia, possono essere combinate con le costanti combinate usando l'operatore binario o. Vedere [combinazione di costanti](#combining-constants).
+[**GetLocaleInfo e**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) [**GetLocaleInfoEx**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex) usano le costanti seguenti per recuperare determinate informazioni sulle impostazioni locali che [**SetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-setlocaleinfoa) non può impostare. Queste costanti si escludono a vicenda l'una dall'altra e dalle costanti usate da [**SetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-setlocaleinfoa) e [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) / [**GetLocaleInfoEx.**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex) Tuttavia, possono essere combinate con le costanti combinate usando l'operatore OR binario. Vedere [Combinazione di costanti](#combining-constants).
 
--   impostazioni locali \_ ICALENDARTYPE
--   impostazioni locali \_ ICURRDIGITS
--   impostazioni locali \_ ICURRENCY
--   impostazioni locali \_ IDIGITS
--   impostazioni locali \_ IDIGITSUBSTITUTION
--   impostazioni locali \_ IFIRSTDAYOFWEEK
--   impostazioni locali \_ IFIRSTWEEKOFYEAR
--   impostazioni locali \_ ILZERO
--   impostazioni locali \_ IMEASURE
--   impostazioni locali \_ INEGCURR
--   impostazioni locali \_ INEGNUMBER
--   impostazioni locali \_ IPAPERSIZE
--   impostazioni locali \_ IREADINGLAYOUT
--   impostazioni locali \_ ITIME
--   Impostazioni locali \_ S1159
--   Impostazioni locali \_ S2359
--   Sam impostazioni locali \_
--   impostazioni locali \_ SCURRENCY
--   impostazioni locali \_ sdate
--   impostazioni locali \_ SDECIMAL
--   impostazioni locali \_ SGROUPING
--   impostazioni locali \_ slist
--   impostazioni locali \_ SLONGDATE
--   impostazioni locali \_ SMONDECIMALSEP
--   impostazioni locali \_ SMONGROUPING
--   impostazioni locali \_ SMONTHOUSANDSEP
--   impostazioni locali \_ SNATIVEDIGITS
--   impostazioni locali \_ SNEGATIVESIGN
--   SPM locale \_
--   impostazioni locali \_ SPOSITIVESIGN
--   impostazioni locali \_ SSHORTDATE
--   impostazioni locali \_ SSHORTTIME
--   impostazioni locali \_ STHOUSAND
--   impostazioni locali \_ stime
--   impostazioni locali \_ STIMEFORMAT
--   impostazioni locali \_ SYEARMONTH
+-   IMPOSTAZIONI \_ LOCALI FONTSIGNATURE
+-   IMPOSTAZIONI \_ LOCALI ICENTURY
+-   IMPOSTAZIONI \_ LOCALI ICOUNTRY
+-   ICONA \_ DELLE IMPOSTAZIONI LOCALISTRUCTEDLOCALE
+-   LOCALE \_ IDATE
+-   IMPOSTAZIONI \_ LOCALI IDAYLZERO
+-   IMPOSTAZIONI \_ LOCALI IDEFAULTANSICODEPAGE
+-   IMPOSTAZIONI \_ LOCALI IDEFAULTCODEPAGE
+-   IMPOSTAZIONI \_ LOCALI IDEFAULTCOUNTRY
+-   IMPOSTAZIONI \_ LOCALI IDEFAULTEBCDICCODEPAGE
+-   IMPOSTAZIONI \_ LOCALI IDEFAULTLANGUAGE
+-   IMPOSTAZIONI \_ LOCALI IDEFAULTMACCODEPAGE
+-   LOCALE \_ IDIALINGCODE
+-   \_IGEOID IMPOSTAZIONI LOCALI
+-   IMPOSTAZIONI \_ LOCALI IINTLCURRDIGITS
+-   LINGUA \_ DELLE IMPOSTAZIONI LOCALI
+-   LOCALE \_ ILDATE
+-   IMPOSTAZIONI \_ LOCALI IMONLZERO
+-   IMPOSTAZIONI \_ LOCALI INEGATIVEPERCENT
+-   IMPOSTAZIONI \_ LOCALI INEGSEPBYSPACE
+-   \_IMPOSTAZIONI LOCALI INEGSIGNPOSN
+-   \_INEGSYMPRECEDES DELLE IMPOSTAZIONI LOCALI
+-   IMPOSTAZIONI \_ LOCALI IOPTIONALCALENDAR
+-   IMPOSTAZIONI \_ LOCALI IPOSITIVEPERCENT
+-   IMPOSTAZIONI \_ LOCALI IPOSSEPBYSPACE
+-   \_IMPOSTAZIONI LOCALI IPOSSIGNPOSN
+-   \_IMPOSTAZIONI LOCALI IPOSSYMPRECEDES
+-   IMPOSTAZIONI \_ LOCALI ITIMEMARKPOSN
+-   IMPOSTAZIONI \_ LOCALI ITLZERO
+-   IMPOSTAZIONI \_ LOCALI SABBREVCTRYNAME
+-   IMPOSTAZIONI \_ LOCALI SABBREVDAYNAME1
+-   IMPOSTAZIONI \_ LOCALI SABBREVDAYNAME2
+-   IMPOSTAZIONI \_ LOCALI SABBREVDAYNAME3
+-   IMPOSTAZIONI \_ LOCALI SABBREVDAYNAME4
+-   IMPOSTAZIONI \_ LOCALI SABBREVDAYNAME5
+-   IMPOSTAZIONI \_ LOCALI SABBREVDAYNAME6
+-   IMPOSTAZIONI \_ LOCALI SABBREVDAYNAME7
+-   IMPOSTAZIONI \_ LOCALI SABBREVLANGNAME
+-   IMPOSTAZIONI \_ LOCALI SABBREVMONTHNAME1
+-   IMPOSTAZIONI \_ LOCALI SABBREVMONTHNAME2
+-   IMPOSTAZIONI \_ LOCALI SABBREVMONTHNAME3
+-   IMPOSTAZIONI \_ LOCALI SABBREVMONTHNAME4
+-   IMPOSTAZIONI \_ LOCALI SABBREVMONTHNAME5
+-   IMPOSTAZIONI \_ LOCALI SABBREVMONTHNAME6
+-   IMPOSTAZIONI \_ LOCALI SABBREVMONTHNAME7
+-   IMPOSTAZIONI \_ LOCALI SABBREVMONTHNAME8
+-   IMPOSTAZIONI \_ LOCALI SABBREVMONTHNAME9
+-   IMPOSTAZIONI \_ LOCALI SABBREVMONTHNAME10
+-   IMPOSTAZIONI \_ LOCALI SABBREVMONTHNAME11
+-   IMPOSTAZIONI \_ LOCALI SABBREVMONTHNAME12
+-   IMPOSTAZIONI \_ LOCALI SABBREVMONTHNAME13
+-   IMPOSTAZIONI \_ LOCALI SCONSOLEFALLBACKNAME
+-   IMPOSTAZIONI \_ LOCALI SDAYNAME1
+-   IMPOSTAZIONI \_ LOCALI SDAYNAME2
+-   IMPOSTAZIONI \_ LOCALI SDAYNAME3
+-   IMPOSTAZIONI \_ LOCALI SDAYNAME4
+-   IMPOSTAZIONI \_ LOCALI SDAYNAME5
+-   IMPOSTAZIONI \_ LOCALI SDAYNAME6
+-   IMPOSTAZIONI \_ LOCALI SDAYNAME7
+-   \_SDURATION DELLE IMPOSTAZIONI LOCALI
+-   LOCALE \_ SENGCURRNAME
+-   IMPOSTAZIONI \_ LOCALI SENGLISHCOUNTRYNAME
+-   IMPOSTAZIONI \_ LOCALI SENGLISHDISPLAYNAME
+-   IMPOSTAZIONI \_ LOCALI SENGLISHLANGUAGENAME
+-   LOCALE \_ SINTLSYMBOL
+-   \_SIETFLANGUAGE DELLE IMPOSTAZIONI LOCALI
+-   IMPOSTAZIONI \_ LOCALI SISO3166CTRYNAME
+-   IMPOSTAZIONI \_ LOCALI SISO3166CTRYNAME2
+-   IMPOSTAZIONI \_ LOCALI SISO639LANGNAME
+-   IMPOSTAZIONI \_ LOCALI SISO639LANGNAME2
+-   IMPOSTAZIONI \_ LOCALI SKEYBOARDSTOINSTALL
+-   IMPOSTAZIONI \_ LOCALI SMONTHNAME1
+-   IMPOSTAZIONI \_ LOCALI SMONTHNAME2
+-   IMPOSTAZIONI \_ LOCALI SMONTHNAME3
+-   IMPOSTAZIONI \_ LOCALI SMONTHNAME4
+-   IMPOSTAZIONI \_ LOCALI SMONTHNAME5
+-   IMPOSTAZIONI \_ LOCALI SMONTHNAME6
+-   IMPOSTAZIONI \_ LOCALI SMONTHNAME7
+-   IMPOSTAZIONI \_ LOCALI SMONTHNAME8
+-   IMPOSTAZIONI \_ LOCALI SMONTHNAME9
+-   IMPOSTAZIONI \_ LOCALI SMONTHNAME10
+-   IMPOSTAZIONI \_ LOCALI SMONTHNAME11
+-   IMPOSTAZIONI \_ LOCALI SMONTHNAME12
+-   IMPOSTAZIONI \_ LOCALI SMONTHNAME13
+-   SNAME \_ DELLE IMPOSTAZIONI LOCALI
+-   IMPOSTAZIONI \_ LOCALI SNAN
+-   LOCALE \_ SNATIVECOUNTRYNAME
+-   LOCALE \_ SNATIVECURRNAME
+-   IMPOSTAZIONI \_ LOCALI SNATIVEDISPLAYNAME
+-   \_SNATIVELANGUAGENAME DELLE IMPOSTAZIONI LOCALI
+-   \_SNEGINFINITY DELLE IMPOSTAZIONI LOCALI
+-   SPARENT \_ DELLE IMPOSTAZIONI LOCALI
+-   IMPOSTAZIONI \_ LOCALI SPERCENT
+-   IMPOSTAZIONI \_ LOCALI, PROPRIETÀ E PROPRIETÀ
+-   \_SSCRIPT DELLE IMPOSTAZIONI LOCALI
+-   \_SSHORTESTAM DELLE IMPOSTAZIONI LOCALI
+-   IMPOSTAZIONI \_ LOCALI SSHORTESTDAYNAME1
+-   IMPOSTAZIONI \_ LOCALI SSHORTESTDAYNAME2
+-   IMPOSTAZIONI \_ LOCALI SSHORTESTDAYNAME3
+-   IMPOSTAZIONI \_ LOCALI SSHORTESTDAYNAME4
+-   IMPOSTAZIONI \_ LOCALI SSHORTESTDAYNAME5
+-   IMPOSTAZIONI \_ LOCALI SSHORTESTDAYNAME6
+-   IMPOSTAZIONI \_ LOCALI SSHORTESTDAYNAME7
+-   IMPOSTAZIONI \_ LOCALI SSHORTESTPM
+-   LOCALE \_ SSORTNAME
+
+ 
+
+**Costanti usate da SetLocaleInfo e GetLocaleInfo/GetLocaleInfoEx**
+
+[**SetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-setlocaleinfoa) usa le costanti seguenti per impostare informazioni specifiche sulle impostazioni locali dell'utente e [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) o [**GetLocaleInfoEx**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex) usa queste stesse costanti per recuperare tali informazioni. Queste costanti si escludono a vicenda tra loro e delle costanti usate solo da [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) o [**GetLocaleInfoEx.**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex) Tuttavia, possono essere combinate con le costanti combinate usando l'operatore OR binario. Vedere [Combinazione di costanti](#combining-constants).
+
+-   IMPOSTAZIONI \_ LOCALI ICALENDARTYPE
+-   \_IMPOSTAZIONI LOCALI ICURRDIGITS
+-   RICORRENZA \_ DELLE IMPOSTAZIONI LOCALI
+-   \_IDIGITS DELLE IMPOSTAZIONI LOCALI
+-   \_IDIGITSUBSTITUTION DELLE IMPOSTAZIONI LOCALI
+-   IMPOSTAZIONI \_ LOCALI IFIRSTDAYOFWEEK
+-   IMPOSTAZIONI \_ LOCALI IFIRSTWEEKOFYEAR
+-   IMPOSTAZIONI \_ LOCALI ILZERO
+-   \_IMEASURE DELLE IMPOSTAZIONI LOCALI
+-   \_INEGCURR DELLE IMPOSTAZIONI LOCALI
+-   \_INEGNUMBER DELLE IMPOSTAZIONI LOCALI
+-   IMPOSTAZIONI \_ LOCALI IPAPERSIZE
+-   \_IMPOSTAZIONI LOCALI IREADINGLAYOUT
+-   IMPOSTAZIONI \_ LOCALI ITIME
+-   IMPOSTAZIONI \_ LOCALI S1159
+-   IMPOSTAZIONI \_ LOCALI S2359
+-   IMPOSTAZIONI \_ LOCALI SAM
+-   \_SCURRENCY DELLE IMPOSTAZIONI LOCALI
+-   IMPOSTAZIONI \_ LOCALI SDATE
+-   IMPOSTAZIONI \_ LOCALI SDECIMAL
+-   \_SGROUPING DELLE IMPOSTAZIONI LOCALI
+-   SLIST \_ DELLE IMPOSTAZIONI LOCALI
+-   IMPOSTAZIONI \_ LOCALI SLONGDATE
+-   IMPOSTAZIONI \_ LOCALI SMONDECIMALSEP
+-   \_SMONGROUPING DELLE IMPOSTAZIONI LOCALI
+-   IMPOSTAZIONI \_ LOCALI SMONTHOUSANDSEP
+-   \_IMPOSTAZIONI LOCALI SNATIVEDIGITS
+-   IMPOSTAZIONI \_ LOCALI SNEGATIVESIGN
+-   IMPOSTAZIONI \_ LOCALI SPM
+-   LOCALE \_ EVARIATIVASIGN
+-   IMPOSTAZIONI \_ LOCALI SSHORTDATE
+-   IMPOSTAZIONI \_ LOCALI SSHORTTIME
+-   IMPOSTAZIONI \_ LOCALI STHOUSAND
+-   STIME \_ DELLE IMPOSTAZIONI LOCALI
+-   IMPOSTAZIONI \_ LOCALI STIMEFORMAT
+-   \_SYEARMONTH DELLE IMPOSTAZIONI LOCALI
 
 ## <a name="closely-related-locale-information-constants"></a>Costanti di informazioni sulle impostazioni locali strettamente correlate
 
-Molte delle costanti di informazioni sulle impostazioni locali elencate in precedenza sono strettamente correlate, in modo che la modifica di uno influisca sul valore degli altri. Nella tabella seguente vengono illustrate le relazioni tra queste costanti.
+Molte delle costanti di informazioni sulle impostazioni locali elencate in precedenza sono strettamente correlate, in modo che la modifica di una influisca sul valore delle altre. La tabella seguente illustra le relazioni tra queste costanti.
 
 
 
 | Valore               | Costanti interessate                                                                                                 |
 |---------------------|--------------------------------------------------------------------------------------------------------------------|
-| impostazioni locali \_ ICURRENCY   | impostazioni locali \_ IPOSSEPBYSPACE, impostazioni locali \_ IPOSSYMPRECEDES                                                                    |
-| impostazioni locali \_ INEGCURR    | IMPOSTAZIONI locali \_ SPOSITIVESIGN, impostazioni locali \_ INEGSEPBYSPACE, impostazioni locali \_ INEGSYMPRECEDES, impostazioni locali \_ INEGSIGNPOSN, impostazioni locali \_ IPOSSIGNPOSN |
-| impostazioni locali \_ SSHORTDATE  | IMPOSTAZIONI locali \_ SDATE, impostazioni locali \_ iDate, impostazioni locali \_ ICENTURY, impostazioni locali \_ IDAYLZERO, impostazioni locali \_ IMONLZERO                               |
-| impostazioni locali \_ SLONGDATE   | impostazioni locali \_ ILDATE                                                                                                     |
-| impostazioni locali \_ STIMEFORMAT | IMPOSTAZIONI locali \_ stime, impostazioni locali \_ ITIME, impostazioni locali \_ ITLZERO, impostazioni locali \_ ITIMEMARKPOSN                                               |
+| RICORRENZA \_ DELLE IMPOSTAZIONI LOCALI   | \_IPOSSEPBYSPACE, \_ IPOSSYMPRECEDES DELLE IMPOSTAZIONI LOCALI                                                                    |
+| \_INEGCURR DELLE IMPOSTAZIONI LOCALI    | \_ \_ LOCALE,INEGSEPBYSPACE, \_ INEGSYMPRECEDES, \_ INEGSIGNPOSN DELLE IMPOSTAZIONI LOCALI, \_ IPOSSIGNPOSN DELLE IMPOSTAZIONI LOCALI |
+| IMPOSTAZIONI \_ LOCALI SSHORTDATE  | LOCALE \_ SDATE, \_ LOCALE IDATE, IMPOSTAZIONI LOCALI \_ ICENTURY, \_ IMPOSTAZIONI LOCALI IDAYLZERO, IMPOSTAZIONI LOCALI \_ IMONLZERO                               |
+| IMPOSTAZIONI \_ LOCALI SLONGDATE   | LOCALE \_ ILDATE                                                                                                     |
+| IMPOSTAZIONI \_ LOCALI STIMEFORMAT | STIME \_ DELLE IMPOSTAZIONI LOCALI, \_ ITIME DELLE IMPOSTAZIONI LOCALI, \_ ITLZERO, \_ IMPOSTAZIONI LOCALI ITIMEMARKPOSN                                               |
 
 
 

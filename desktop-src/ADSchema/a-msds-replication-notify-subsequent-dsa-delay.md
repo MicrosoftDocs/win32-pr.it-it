@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-Replication-Notify-successive-DSA-Delay
-description: Questo attributo controlla il ritardo nel tempo tra le notifiche di ogni partner di replica successivo per un NC.
+title: Attributo ms-DS-Replication-Notify-Subsequent-DSA-Delay
+description: Questo attributo controlla il ritardo nel tempo tra la notifica di ogni partner di replica successivo per un NC.
 ms.assetid: 6bd9fed7-2003-4156-b1a0-da8622dc2ca8
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-Replication-Notify-successiva-DSA-schema AD attributo Delay
-- msDS-Replication-Notify-successiva-DSA-schema AD attributo Delay
+- Schema AD dell'attributo ms-DS-Replication-Notify-Subsequent-DSA-Delay
+- Schema AD dell'attributo msDS-Replication-Notify-Subsequent-DSA-Delay
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8cd8b267309fa8d017ace926f7497ca210fb2b00
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 97ce9502c77b6ba3b4188dc34e11c805032da40508232127cc96bf6b536d5bf9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104520142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803451"
 ---
-# <a name="ms-ds-replication-notify-subsequent-dsa-delay-attribute"></a>attributo ms-DS-Replication-Notify-successive-DSA-Delay
+# <a name="ms-ds-replication-notify-subsequent-dsa-delay-attribute"></a>Attributo ms-DS-Replication-Notify-Subsequent-DSA-Delay
 
-Questo attributo controlla il ritardo nel tempo tra le notifiche di ogni partner di replica successivo per un NC.
+Questo attributo controlla il ritardo nel tempo tra la notifica di ogni partner di replica successivo per un NC.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------------|
-| CN                | ms-DS-Replication-Notify-successiva-DSA-Delay |
-| LDAP-Display-Name | msDS-Replication-Notify-successivo-DSA-Delay  |
+| CN                | ms-DS-Replication-Notify-Subsequent-DSA-Delay |
+| Ldap-Display-Name | msDS-Replication-Notify-Subsequent-DSA-Delay  |
 | Dimensione              | \-                                            |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.              |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.              |
 | Frequenza di aggiornamento  | \-                                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1664                       |
-| System-ID-GUID    | d63db385-dd92-4b52-b1d8-0d3ecc0e86b6          |
+| System-Id-Guid    | d63db385-dd92-4b52-b1d8-0d3ecc0e86b6          |
 | Sintassi            | [**Enumerazione**](s-enumeration.md)          |
 
 
@@ -43,7 +43,7 @@ Questo attributo controlla il ritardo nel tempo tra le notifiche di ogni partner
 ## <a name="implementations"></a>Implementazioni
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,19 +58,19 @@ Questo attributo controlla il ritardo nel tempo tra le notifiche di ogni partner
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Vero                                       |
+| Is-Single-Valued       | Vero                                       |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -79,15 +79,15 @@ Questo attributo controlla il ritardo nel tempo tra le notifiche di ogni partner
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Vero                                       |
+| Is-Single-Valued       | Vero                                       |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo controlla il ritardo nel tempo tra le notifiche di ogni partner
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Vero                                       |
+| Is-Single-Valued       | Vero                                       |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo controlla il ritardo nel tempo tra le notifiche di ogni partner
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Vero                                       |
+| A valore singolo       | Vero                                       |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo controlla il ritardo nel tempo tra le notifiche di ogni partner
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Vero                                       |
+| A valore singolo       | Vero                                       |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo controlla il ritardo nel tempo tra le notifiche di ogni partner
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Vero                                       |
+| A valore singolo       | Vero                                       |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: Attributo WM/ProtectionType
-description: L'attributo WM/ProtectionType è il tipo di protezione utilizzato per il contenuto.
+description: L'attributo WM/ProtectionType è il tipo di protezione usato nel contenuto.
 ms.assetid: aab36b57-5b4e-4a3f-80cf-872ec8369c49
 keywords:
-- Media Player Windows per gli attributi WM/ProtectionType
+- Attributo WM/ProtectionType Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,21 +12,21 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bf2b9c4700cb45ca5daf2c7d9290456beefbf1b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7888273aaca38a4fb87c5a19fc7c7bc8d47b13a8b6a03a578354b1a8bcd2b3dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900351"
 ---
 # <a name="wmprotectiontype-attribute"></a>Attributo WM/ProtectionType
 
-L'attributo **WM/ProtectionType** è il tipo di protezione utilizzato per il contenuto.
+**L'attributo WM/ProtectionType** è il tipo di protezione usato nel contenuto.
 
 ## <a name="applies-to"></a>Si applica a
 
 -   [Elementi audio](audio-item-attributes.md)
--   [Attributi di file di Windows Media usati di frequente](commonly-used-windows-media-file-attributes.md)
+-   [Attributi dei file multimediali Windows comunemente usati](commonly-used-windows-media-file-attributes.md)
 -   [Elementi video](video-item-attributes.md)
 
 ## <a name="remarks"></a>Commenti
@@ -35,9 +35,9 @@ Questo attributo viene archiviato sia nella libreria che nel file multimediale d
 
 **ProtectionType** è un alias per questo attributo.
 
-La costante Windows Media Format SDK per questo attributo è g \_ wszWMProtectionType.
+La Windows Media Format SDK per questo attributo è g \_ wszWMProtectionType.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,7 +45,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -53,7 +53,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

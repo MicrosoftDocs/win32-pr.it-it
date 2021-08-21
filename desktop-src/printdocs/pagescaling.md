@@ -4,26 +4,26 @@ ms.assetid: cf35bb37-bf67-4e86-bfef-9838606982a5
 title: Scalabilità di pagine
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 795332f38da331a9f16b614154bf0a9270e613de
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: c4cf1a122f71148570cf69fc17455c8ca5c917ee4f441d1bc16be1922705eb81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948131"
 ---
 # <a name="pagescaling"></a>Scalabilità di pagine
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive le caratteristiche di ridimensionamento dell'output. Alcune opzioni di questa funzionalità richiedono che il consumer sia in grado di determinare le caratteristiche delle "dimensioni del contenuto dell'applicazione". In assenza della possibilità di determinare queste caratteristiche, il consumer deve impostare come predefinita l'opzione identity. Queste caratteristiche sono:
+Descrive le caratteristiche di ridimensionamento dell'output. Alcune opzioni di questa funzionalità richiedono che il consumer sia in grado di determinare le caratteristiche delle "dimensioni del contenuto dell'applicazione". In assenza della possibilità di determinare queste caratteristiche, il consumer deve impostare per impostazione predefinita l'opzione identity. Queste caratteristiche sono:
 
 
 
 | Caratteristica di ridimensionamento                         | Descrizione                                                                                                                                                                                                                                                      |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Dimensioni del supporto dell'applicazione   | Dimensioni dei supporti definiti dal layout dell'applicazione. Le dimensioni del supporto dell'applicazione possono corrispondere o meno a un oggetto PageMediaSize supportato dal consumer.<br/>                                                                          |
+| Dimensioni dei supporti dell'applicazione   | Dimensioni dei supporti definiti dal layout dell'applicazione. Le dimensioni del supporto dell'applicazione possono corrispondere o meno a un oggetto PageMediaSize supportato dal consumer.<br/>                                                                          |
 | Dimensioni del contenuto dell'applicazione | Dimensioni dei supporti definiti dal layout dell'applicazione. Le dimensioni del supporto dell'applicazione possono corrispondere o meno a un oggetto PageMediaSize supportato dal consumer.<br/>                                                                          |
-| Application Bleed Size   | Offset ed estensione dell'area di smarginamento dell'applicazione, una casella di overflow utilizzata dall'applicazione per la registrazione e il layout, in relazione alle dimensioni del supporto dell'applicazione. L'area smarsata sarà maggiore o uguale alle dimensioni del supporto dell'applicazione.<br/> |
+| Dimensioni pagina al disagio dell'applicazione   | Offset e estensione dell'area di smarginamento dell'applicazione, una casella di overflow usata dall'applicazione per la registrazione e il layout, in relazione alle dimensioni dei supporti dell'applicazione. L'area di smarsata sarà grande o uguale alle dimensioni del supporto dell'applicazione.<br/> |
 
 
 
@@ -115,7 +115,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                               | Tipo di dati         | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                      |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                           |
+| \_OptionName\_<br/>          | string<br/> | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                           |
 | \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/> |
 
 
@@ -124,7 +124,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
+Le parole chiave pubbliche dello schema di stampa sono definite nello spazio https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords dei nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:PageScaling">

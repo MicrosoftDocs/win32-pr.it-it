@@ -1,33 +1,33 @@
 ---
-title: Movimenti tocco di Windows (Guida per programmatori)
-description: Questa sezione contiene argomenti sui movimenti tocco di Windows.
+title: Windows Movimenti tocco (Guida per programmatori)
+description: Questa sezione contiene argomenti sui movimenti Windows tocco.
 ms.assetid: afd61b18-4e54-44c5-9b71-74908c76c7ac
 keywords:
-- Windows Touch, movimenti
+- Windows Tocco, movimenti
 - movimenti, informazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bd24373c55242a248e2ccb7b66b23d2f55c68ad
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 1d18f3a3f515659122f86a0c47b90c9bea8ed10ed5368757d6b3cc3999ab47db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104118738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118030311"
 ---
-# <a name="windows-touch-gestures-programming-guide"></a>Movimenti tocco di Windows (Guida per programmatori)
+# <a name="windows-touch-gestures-programming-guide"></a>Windows Movimenti tocco (Guida per programmatori)
 
-Questa sezione contiene argomenti sui movimenti tocco di Windows.
+Questa sezione contiene argomenti sui movimenti Windows tocco.
 
-Questa sezione è costituita dagli argomenti seguenti.
+Questa sezione è costituita dai seguenti argomenti.
 
 
 
 | Argomento                                                                                                | Descrizione                                                                             |
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [Cenni preliminari sui movimenti tocco di Windows](windows-touch-gestures-overview.md)                               | Vengono descritti i vari movimenti supportati da Windows Touch.                              |
-| [Introduzione con i movimenti tocco di Windows](getting-started-with-multi-touch-gestures.md)         | Vengono descritti i passaggi di base per l'utilizzo dei movimenti tocco di Windows.                             |
-| [Supporto legacy per la panoramica con le barre di scorrimento](legacy-support-for-panning-with-scrollbars.md)         | Viene illustrato come verificare che l'applicazione interpreti correttamente i movimenti di panoramica. |
-| [Miglioramento dell'esperienza di panning a singolo dito](improving-the-single-finger-panning-experience.md) | Viene illustrato come personalizzare l'esperienza di panoramica.                                  |
+| [Windows Panoramica dei movimenti tocco](windows-touch-gestures-overview.md)                               | Descrive i vari movimenti supportati da Windows Touch.                              |
+| [Attività iniziali con Windows movimenti tocco](getting-started-with-multi-touch-gestures.md)         | Descrive i passaggi di base per l'uso Windows movimenti tocco.                             |
+| [Supporto legacy per la panoramica con le barre di scorrimento](legacy-support-for-panning-with-scrollbars.md)         | Viene illustrato come assicurarsi che l'applicazione interpreti correttamente i movimenti di panoramica. |
+| [Miglioramento dell'esperienza di panoramica con un singolo dito](improving-the-single-finger-panning-experience.md) | Viene illustrato come personalizzare l'esperienza di panoramica.                                  |
 
 
 

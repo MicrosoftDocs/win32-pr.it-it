@@ -1,9 +1,9 @@
 ---
-title: Funzione FreeHelperAttributes (Ndattributils. h)
-description: Consente di deallocare la memoria allocata internamente a una matrice di \_ strutture di attributi helper.
+title: Funzione FreeHelperAttributes (Ndattributils.h)
+description: Dealloca la memoria allocata internamente a una matrice di strutture ATTRIBUTE \_ HELPER.
 ms.assetid: d973bdb9-c1d1-4cea-bcc6-98671349413f
 keywords:
-- FreeHelperAttributes funzione NDF
+- Funzione FreeHelperAttributes NDF
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 400addd7d32914cb4e849e4e0bfae76ccc3ddf22
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cb16ad2d7f505a90d806e3f6a155f2c20affce2c71267316c2278e2320c371b7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802431"
 ---
-# <a name="freehelperattributes-function"></a>FreeHelperAttributes (funzione)
+# <a name="freehelperattributes-function"></a>Funzione FreeHelperAttributes
 
-La funzione **FreeHelperAttributes** consente di deallocare la memoria allocata internamente a una matrice di strutture di [**\_ attributi Helper**](/windows/win32/api/ndattrib/ns-ndattrib-helper_attribute) . Questa funzione chiama [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) per deallocare la memoria.
+La **funzione FreeHelperAttributes** dealloca la memoria allocata internamente a una matrice di [**strutture HELPER \_ ATTRIBUTE.**](/windows/win32/api/ndattrib/ns-ndattrib-helper_attribute) Questa funzione chiama [**CoTaskMemFree per**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) deallocare la memoria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ VOID FreeHelperAttributes(
 
 <dl> <dt>
 
-*pInfo* \[ in\]
+*pInfo* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **\* [**\_ attributo Helper**](/windows/win32/api/ndattrib/ns-ndattrib-helper_attribute)* _
+Tipo: **[ **ATTRIBUTO \_ HELPER**](/windows/win32/api/ndattrib/ns-ndattrib-helper_attribute)\***
 
-Matrice di strutture. La memoria allocata a cui fanno riferimento queste strutture verrà liberata.
+Matrice di strutture . Verrà liberata la memoria allocata a cui puntano queste strutture.
 
 </dd> <dt>
 
-_HelperAttributeCount * 
+*HelperAttributeCount* 
 </dt> <dd>
 
 Tipo: **ULONG**
@@ -63,7 +63,7 @@ Numero di strutture nella matrice a cui punta *pInfo*.
 *bFreePointer* 
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
 True se è necessario eliminare anche la matrice di strutture. in caso contrario, false.
 
@@ -79,9 +79,9 @@ Questa funzione non restituisce un valore.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                 |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>Ndattributils. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
 
 
 
@@ -89,7 +89,7 @@ Questa funzione non restituisce un valore.
 
 <dl> <dt>
 
-[**Helper ( \_ attributo)**](/windows/win32/api/ndattrib/ns-ndattrib-helper_attribute)
+[**ATTRIBUTO \_ HELPER**](/windows/win32/api/ndattrib/ns-ndattrib-helper_attribute)
 </dt> <dt>
 
 [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)

@@ -1,11 +1,11 @@
 ---
-title: Proprietà SqlLogSetName di SystemMonitor
+title: Proprietà SystemMonitor SqlLogSetName
 description: Recupera o imposta il nome descrittivo del set di log.
 ms.assetid: a4593743-6b70-4f70-8e91-3324a808d97b
 keywords:
 - Proprietà SqlLogSetName SysMon
-- Proprietà SqlLogSetName SysMon, interfaccia SystemMonitor
-- Interfaccia SystemMonitor SysMon, proprietà SqlLogSetName
+- Proprietà SqlLogSetName SysMon , interfaccia SystemMonitor
+- Interfaccia SystemMonitor SysMon , proprietà SqlLogSetName
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be20ccc561eb3e9292b4a95dcc654ed7bac00ba7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ce06e396b6a90a46de88d915a0191258da723bef31dfe82f67a20c9507b2939d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118881308"
 ---
-# <a name="systemmonitorsqllogsetname-property"></a>Proprietà SystemMonitor:: SqlLogSetName
+# <a name="systemmonitorsqllogsetname-property"></a>Proprietà SystemMonitor::SqlLogSetName
 
 Recupera o imposta il nome descrittivo del set di log.
 
@@ -38,11 +38,11 @@ Property SqlLogSetName As String
 
 ## <a name="property-value"></a>Valore proprietà
 
-Nome descrittivo del set di log, che corrisponde a un singolo file di log contenente dati binari o di testo nel database SQL.
+Nome descrittivo del set di log, che corrisponde a un singolo file di log contenente dati binari o di testo nel database SQL dati.
 
 ## <a name="remarks"></a>Commenti
 
-**Prima di Windows Vista:** Non è possibile modificare questa proprietà se il valore di [**SystemMonitor. DataSourceType**](systemmonitor-datasourcetype.md) è impostato su sysmonSqlLog.
+**Prima di Windows Vista:** Non è possibile modificare questa proprietà se il valore di [**SystemMonitor.DataSourceType**](systemmonitor-datasourcetype.md) è impostato su sysmonSqlLog.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,7 +52,7 @@ Nome descrittivo del set di log, che corrisponde a un singolo file di log conten
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                            |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                  |
-| DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Nome descrittivo del set di log, che corrisponde a un singolo file di log conten
 [**SystemMonitor**](systemmonitor.md)
 </dt> <dt>
 
-[**SystemMonitor. SqlDsnName**](systemmonitor-sqllogsetname.md)
+[**SystemMonitor.SqlDsnName**](systemmonitor-sqllogsetname.md)
 </dt> </dl>
 
  

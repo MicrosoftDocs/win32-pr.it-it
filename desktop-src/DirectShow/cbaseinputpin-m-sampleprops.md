@@ -1,7 +1,7 @@
 ---
 description: Proprietà dell'esempio più recente.
 ms.assetid: bd83790c-72b2-4ed3-9f83-ce4f08d40833
-title: 'Membro CBaseInputPin:: m_SampleProps (Amfilter. h)'
+title: Membro CBaseInputPin::m_SampleProps (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 871f2d159c9b0e284de5d716206fc5d79bb3e15a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 099a7c40dcdf96b938c99724c7fab28c80768fd24224c65db04074f60b210899
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076611"
 ---
-# <a name="cbaseinputpinm_sampleprops-member"></a>Membro SampleProps di CBaseInputPin:: m \_
+# <a name="cbaseinputpinm_sampleprops-member"></a>Membro CBaseInputPin::m \_ SampleProps
 
 Proprietà dell'esempio più recente.
 
@@ -42,8 +42,8 @@ AM_SAMPLE2_PROPERTIES m_SampleProps;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

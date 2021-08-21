@@ -1,6 +1,6 @@
 ---
 title: Group-Priority attributo
-description: LGroup-Priority attribuito non è attualmente utilizzato.
+description: LGroup-Priority attributo non è attualmente usato.
 ms.assetid: b16f644b-b9ef-4382-930b-344cf3de0190
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "118961320"
 ---
 # <a name="group-priority-attribute"></a>Group-Priority attributo
 
-**L'attributo Group-Priority** non è attualmente in uso.
+**L'attributo Group-Priority** non è attualmente usato.
 
 
 
@@ -32,7 +32,7 @@ ms.locfileid: "118961320"
 | CN                | Group-Priority                              |
 | Ldap-Display-Name | groupPriority                               |
 | Dimensione              | \-                                          |
-| Aggiorna privilegio  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.345                      |
 | System-Id-Guid    | eea65905-8ac6-11d0-afda-00c04fd930c9        |
@@ -58,7 +58,7 @@ ms.locfileid: "118961320"
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| A valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
@@ -79,7 +79,7 @@ ms.locfileid: "118961320"
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| A valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
@@ -100,7 +100,7 @@ ms.locfileid: "118961320"
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| A valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
@@ -121,7 +121,7 @@ ms.locfileid: "118961320"
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| A valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
@@ -142,7 +142,7 @@ ms.locfileid: "118961320"
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| A valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
@@ -163,7 +163,7 @@ ms.locfileid: "118961320"
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| A valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |

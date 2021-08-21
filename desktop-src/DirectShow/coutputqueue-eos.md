@@ -1,7 +1,7 @@
 ---
 description: Il metodo EOS recapita una chiamata di fine flusso al pin di input.
 ms.assetid: 65e8db14-6ca8-4c4f-8bd8-2442f743499e
-title: Metodo COutputQueue. EOS (Outputq. h)
+title: Metodo COutputQueue.EOS (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ab05d4ab3f2620c11bd62d566be851e16b28cecd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3effb06498ae65cad8eefd9a3144cab140926006cd38acee45c553c4295b0a58
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119537141"
 ---
-# <a name="coutputqueueeos-method"></a>Metodo COutputQueue. EOS
+# <a name="coutputqueueeos-method"></a>Metodo COutputQueue.EOS
 
-Il `EOS` Metodo recapita una chiamata di fine flusso al pin di input.
+Il `EOS` metodo recapita una chiamata di fine flusso al pin di input.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,9 +46,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Se l'oggetto usa un thread, Accoda un \_ messaggio di controllo pacchetti EOS. Il thread recapita tutti gli esempi in sospeso e chiama il metodo [**Ipin:: EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream) sul pin di input.
+Se l'oggetto usa un thread, accoda un messaggio di controllo \_ PACKET EOS. Il thread recapita eventuali esempi in sospeso e chiama il [**metodo IPin::EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream) sul pin di input.
 
-Se l'oggetto non utilizza un thread, viene chiamato il metodo [**COutputQueue:: SendAnyway**](coutputqueue-sendanyway.md) per recapitare eventuali esempi in sospeso. Chiama quindi **Ipin:: EndOfStream** sul pin di input.
+Se l'oggetto non usa un thread, chiama il metodo [**COutputQueue::SendAnyway**](coutputqueue-sendanyway.md) per recapitare eventuali esempi in sospeso. Chiama quindi **IPin::EndOfStream** sul pin di input.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,8 +56,8 @@ Se l'oggetto non utilizza un thread, viene chiamato il metodo [**COutputQueue:: 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Outputq. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Outputq.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

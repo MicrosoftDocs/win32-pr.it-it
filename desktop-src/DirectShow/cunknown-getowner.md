@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetOwner recupera un puntatore all'interfaccia IUnknown del componente proprietario. Per un componente aggregato, il proprietario è il componente esterno. In caso contrario, il componente è proprietario.
+description: Il metodo GetOwner recupera un puntatore all'interfaccia IUnknown del componente proprietario. Per un componente aggregato, il proprietario è il componente esterno. In caso contrario, il componente è proprietario di se stesso.
 ms.assetid: 7d8af9d1-52c0-4f2b-9d05-6ddff85ab508
-title: Metodo CUnknown. GetOwner (ComBase. h)
+title: Metodo CUnknown.GetOwner (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e3cb1cd1d5b183857b6d75db79ee0fcdc6cb2d30
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c741a6820d414d7a00ad0a9fef768d982f2335c9cb9d8417e42376ea243cc58b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076041"
 ---
-# <a name="cunknowngetowner-method"></a>Metodo CUnknown. GetOwner
+# <a name="cunknowngetowner-method"></a>Metodo CUnknown.GetOwner
 
-Il `GetOwner` metodo recupera un puntatore all'interfaccia **IUnknown** del componente proprietario. Per un componente aggregato, il proprietario è il componente esterno. In caso contrario, il componente è proprietario.
+Il `GetOwner` metodo recupera un puntatore **all'interfaccia IUnknown** del componente proprietario. Per un componente aggregato, il proprietario è il componente esterno. In caso contrario, il componente è proprietario di se stesso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un puntatore all'interfaccia **IUnknown** di controllo.
+Restituisce un puntatore **all'interfaccia IUnknown di** controllo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce un puntatore all'interfaccia **IUnknown** di controllo.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>ComBase. h (Includi Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Combase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

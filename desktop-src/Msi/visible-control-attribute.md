@@ -1,5 +1,5 @@
 ---
-description: Se il bit Visible Control è impostato, il controllo è visibile nella finestra di dialogo. Se questo bit non è impostato, il controllo viene nascosto nella finestra di dialogo. Lo stato visibile o nascosto dell'attributo del controllo Visible può essere modificato in un secondo momento da un evento di controllo.
+description: Se il bit Visible Control è impostato, il controllo è visibile nella finestra di dialogo. Se questo bit non è impostato, il controllo viene nascosto nella finestra di dialogo. Lo stato visibile o nascosto dell'attributo visible del controllo può essere modificato in un secondo momento da un evento di controllo.
 ms.assetid: 77d3164c-ea8a-4dcf-afd5-02bb2c2568c6
 title: Attributo visible control
 ms.topic: article

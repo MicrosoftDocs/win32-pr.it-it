@@ -1,5 +1,5 @@
 ---
-description: Diagnostica la connettività di rete di una macchina virtuale in un ambiente di virtualizzazione rete Windows.
+description: Diagnostica la connettività di rete di una macchina virtuale in un Windows di virtualizzazione di rete.
 ms.assetid: c18f48bf-1f57-4a23-a495-462afad42750
 title: Metodo DiagnoseNetworkConnection della classe Msvm_VirtualSystemManagementService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 70760f771e3908265a4ac70ebc1cbdf957d652c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c82f72a9c2a2b16ad991940fcb378c41e75fdf31e9e6f8b74f23f9d115cab93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681130"
 ---
-# <a name="diagnosenetworkconnection-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo DiagnoseNetworkConnection della classe MSVM \_ VirtualSystemManagementService
+# <a name="diagnosenetworkconnection-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo DiagnoseNetworkConnection della classe Msvm \_ VirtualSystemManagementService
 
-Diagnostica la connettività di rete di una macchina virtuale in un ambiente di virtualizzazione rete Windows.
+Diagnostica la connettività di rete di una macchina virtuale in un Windows di virtualizzazione di rete.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,28 +42,28 @@ uint32 DiagnoseNetworkConnection(
 
 <dl> <dt>
 
-*TargetNetworkAdapter* \[ in\]
+*TargetNetworkAdapter* \[ Pollici\]
 </dt> <dd>
 
-Riferimento a un [**\_ EthernetPortAllocationSettingData MSVM**](msvm-ethernetportallocationsettingdata.md) che descrive la scheda di rete di destinazione.
+Riferimento a [**un oggetto Msvm \_ EthernetPortAllocationSettingData**](msvm-ethernetportallocationsettingdata.md) che descrive la scheda di rete di destinazione.
 
 </dd> <dt>
 
-*DiagnosticSettings* \[ in\]
+*DiagnosticSettings* \[ Pollici\]
 </dt> <dd>
 
-Impostazioni di diagnostica da utilizzare.
+Impostazioni di diagnostica da usare.
 
 </dd> <dt>
 
-*DiagnosticInformation* \[ out\]
+*DiagnosticInformation* \[ Cambio\]
 </dt> <dd>
 
-Se l'operazione riesce, restituisce le informazioni di diagnostica.
+In caso di esito positivo, restituisce le informazioni di diagnostica.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -72,7 +72,7 @@ Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 o 4096 in caso di esito positivo. in caso contrario, restituisce un errore.
+Restituisce un valore 0 o 4096 in esito positivo. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -82,25 +82,25 @@ Restituisce 0 o 4096 in caso di esito positivo. in caso contrario, restituisce u
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non valido** (4)
+**Parametro non** valido (4)
 </dt> <dt>
 
-**DMTF riservato** (..)
+**DmTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -109,10 +109,10 @@ Restituisce 0 o 4096 in caso di esito positivo. in caso contrario, restituisce u
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                                               |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                                               |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -121,7 +121,7 @@ Restituisce 0 o 4096 in caso di esito positivo. in caso contrario, restituisce u
 
 <dl> <dt>
 
-[**\_VirtualSystemManagementService MSVM**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

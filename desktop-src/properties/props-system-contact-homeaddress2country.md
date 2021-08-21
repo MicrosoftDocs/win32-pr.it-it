@@ -4,12 +4,12 @@ ms.assetid: bc37f754-053e-4d98-991e-d8caf1bb9ad6
 title: System.Contact.HomeAddress2Country
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35f9a2809649225c50e6d91accdd73eb7432d093
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f77045c85c56674e4357ff72d64a8226398bc121cdf436a07d584b1c389ab428
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970580"
 ---
 # <a name="systemcontacthomeaddress2country"></a>System.Contact.HomeAddress2Country
 

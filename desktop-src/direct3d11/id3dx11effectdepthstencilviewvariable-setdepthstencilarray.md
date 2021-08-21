@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectDepthStencilViewVariable SetDepthStencilArray (D3dx11effect. h)
-description: Impostare una matrice di risorse di visualizzazione degli stencil di profondità.
+title: Metodo ID3DX11EffectDepthStencilViewVariable SetDepthStencilArray (D3dx11effect.h)
+description: Impostare una matrice di risorse depth-stencil-view.
 ms.assetid: 7a00ca3e-fb07-4185-a361-36228f72dcea
 keywords:
 - Metodo SetDepthStencilArray Direct3D 11
-- Metodo SetDepthStencilArray Direct3D 11, interfaccia ID3DX11EffectDepthStencilViewVariable
-- Interfaccia ID3DX11EffectDepthStencilViewVariable Direct3D 11, metodo SetDepthStencilArray
+- Metodo SetDepthStencilArray Direct3D 11, ID3DX11EffectDepthStencilViewVariable
+- ID3DX11EffectDepthStencilViewVariable interface Direct3D 11, SetDepthStencilArray method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 329f91fff70d78c51475b799a08dec1c6d34a157
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 97e6588a039d77730c42e68a977fe16e8126cf54ab502a6806a45a5190e57b26
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104982301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119858131"
 ---
-# <a name="id3dx11effectdepthstencilviewvariablesetdepthstencilarray-method"></a>Metodo ID3DX11EffectDepthStencilViewVariable:: SetDepthStencilArray
+# <a name="id3dx11effectdepthstencilviewvariablesetdepthstencilarray-method"></a>Metodo ID3DX11EffectDepthStencilViewVariable::SetDepthStencilArray
 
-Impostare una matrice di risorse di visualizzazione degli stencil di profondità.
+Impostare una matrice di risorse depth-stencil-view.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,23 +50,23 @@ HRESULT SetDepthStencilArray(
 
 Tipo: **[ **ID3D11DepthStencilView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11depthstencilview)\*\***
 
-Puntatore a una matrice di interfacce di visualizzazione stencil profondità. Vedere [**ID3D11DepthStencilView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11depthstencilview).
+Puntatore a una matrice di interfacce depth-stencil-view. Vedere [**ID3D11DepthStencilView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11depthstencilview).
 
 </dd> <dt>
 
 *Offset* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Indice della matrice in base zero per impostare la prima interfaccia.
+Indice di matrice in base zero per impostare la prima interfaccia.
 
 </dd> <dt>
 
 *Count* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Numero di elementi nella matrice.
 
@@ -76,12 +76,12 @@ Numero di elementi nella matrice.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei codici [restituiti Direct3D 11 seguenti.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra effetti 10 ed effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -91,8 +91,8 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-refe
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

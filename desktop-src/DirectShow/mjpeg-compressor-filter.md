@@ -1,31 +1,31 @@
 ---
-description: Filtro MJPEG Filter
+description: Filtro del compressione MJPEG
 ms.assetid: de30a2c4-3e51-4f2b-b3f9-ed78e2d6512d
-title: Filtro MJPEG Filter
+title: Filtro del compressione MJPEG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02928df4d09b50c0ac152aed99ed87dc6362fb70
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: d7891a85aa32b0ec7572a8c3be08f216c75f8655a7782261a675521aa952bf40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107910009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791391"
 ---
-# <a name="mjpeg-compressor-filter"></a>Filtro MJPEG Filter
+# <a name="mjpeg-compressor-filter"></a>Filtro del compressione MJPEG
 
-Questo filtro comprime un flusso video non compresso, usando la compressione JPEG del movimento.
+Questo filtro comprime un flusso video non compresso usando la compressione JPEG del movimento.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Interfacce di filtro                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), **IPersistStream**                                                                                                                                                                                             |
 | Tipi di supporti pin di input                    | VIDEO \_ MEDIATYPE, MEDIASUBTYPE \_ NULL                                                                                                                                                                                                               |
-| Interfacce pin di input                     | [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)                                                                                                                                             |
-| Tipi di supporti pin di output                   | MEDIATYPE \_ Video, MEDIASUBTYPE \_ MJPG                                                                                                                                                                                                               |
-| Interfacce pin di output                    | [**IAMStreamConfig**](/windows/desktop/api/Strmif/nn-strmif-iamstreamconfig), [**IAMVideoCompression**](/windows/desktop/api/Strmif/nn-strmif-iamvideocompression), [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition), [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol) |
-| CLSID del filtro                             | CLSID \_ MJPGEnc                                                                                                                                                                                                                                     |
-| CLSID pagina delle proprietà                      | Nessuna pagina delle proprietà                                                                                                                                                                                                                                   |
+| Interfacce pin di input                     | [**IMemInputPin,**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) [**IPin,**](/windows/desktop/api/Strmif/nn-strmif-ipin) [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)                                                                                                                                             |
+| Tipi di supporti pin di output                   | VIDEO \_ MEDIATYPE, MEDIASUBTYPE \_ MJPG                                                                                                                                                                                                               |
+| Interfacce pin di output                    | [**IAMStreamConfig,**](/windows/desktop/api/Strmif/nn-strmif-iamstreamconfig) [**IAMVideoCompression,**](/windows/desktop/api/Strmif/nn-strmif-iamvideocompression) [**IMediaPosition,**](/windows/desktop/api/Control/nn-control-imediaposition) [**IMediaSeeking,**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) [**IPin,**](/windows/desktop/api/Strmif/nn-strmif-ipin) [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol) |
+| Filtro CLSID                             | CLSID \_ MJPGEnc                                                                                                                                                                                                                                     |
+| CLSID della pagina delle proprietà                      | Nessuna pagina delle proprietà                                                                                                                                                                                                                                   |
 | File eseguibile                               | quartz.dll                                                                                                                                                                                                                                         |
 | [Merito](merit.md)                       | MERITO \_ NON \_ \_ USARE                                                                                                                                                                                                                                |
 | [Categoria filtro](filter-categories.md) | CLSID \_ VideoCompressorCategory                                                                                                                                                                                                                     |
@@ -42,7 +42,7 @@ Questo filtro codifica usando il sottotipo multimediale MEDIASUBTYPE MJPG, che c
 
 <dl> <dt>
 
-[Filtri DirectShow](directshow-filters.md)
+[DirectShow Filtri](directshow-filters.md)
 </dt> </dl>
 
  

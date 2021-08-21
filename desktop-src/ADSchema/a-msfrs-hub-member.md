@@ -1,11 +1,11 @@
 ---
-title: attributo ms-FRS-Hub-member
-description: L'attributo ms-FRS-Hub-Member viene usato per registrare le impostazioni di topologia NTFRS preferite.
+title: Attributo ms-FRS-Hub-Member
+description: L'attributo ms-FRS-Hub-Member viene usato per registrare le impostazioni della topologia NTFRS preferite.
 ms.assetid: df8623e0-745a-46f8-a696-8f6e7014fd2b
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-FRS-Hub-member
-- msFRS-Hub-schema AD attributo membro
+- Schema AD dell'attributo ms-FRS-Hub-Member
+- Schema AD dell'attributo msFRS-Hub-Member
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56a211c5951ac589d00c4b8c92c031c80b2d1415
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2fa08d1eb3cbb8086149192e6ecd5fa3880f01e6cfa1800468d2825c243b211e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803310"
 ---
-# <a name="ms-frs-hub-member-attribute"></a>attributo ms-FRS-Hub-member
+# <a name="ms-frs-hub-member-attribute"></a>Attributo ms-FRS-Hub-Member
 
-L'attributo **MS-FRS-Hub-member** viene usato per registrare le impostazioni di topologia NTFRS preferite. Quando un membro FRS viene aggiunto o eliminato a un set di repliche, viene fatto riferimento a questi attributi e vengono apportate modifiche appropriate alle connessioni tra il resto dei membri FRS nel set di repliche.
+**L'attributo ms-FRS-Hub-Member** viene usato per registrare le impostazioni della topologia NTFRS preferite. Quando un membro frs viene aggiunto o eliminato a un set di repliche, viene fatto riferimento a questi attributi e vengono apportate le modifiche appropriate alle connessioni tra gli altri membri del servizio Replica file nel set di repliche.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------------------------------------|
-| CN                | MS-FRS-Hub-membro                                                  |
-| LDAP-Display-Name | msFRS-Hub-membro                                                   |
+| CN                | ms-FRS-Hub-Member                                                  |
+| Ldap-Display-Name | msFRS-Hub-Member                                                   |
 | Dimensione              | \-                                                                 |
-| Privilegio aggiornamento  | Amministratore di dominio                                               |
-| Frequenza di aggiornamento  | Quando viene creato il set di repliche o la topologia preferita viene modificata. |
+| Aggiorna privilegio  | Amministratore di dominio                                               |
+| Frequenza di aggiornamento  | Quando viene creato il set di repliche o viene modificata la topologia preferita. |
 | Attribute-Id      | 1.2.840.113556.1.4.1693                                            |
-| System-ID-GUID    | 5643ff81-35b6-4ca9-9512-baf0bd0a2772                               |
+| System-Id-Guid    | 5643ff81-35b6-4ca9-9512-baf0bd0a2772                               |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md)                            |
 
 
@@ -57,15 +57,15 @@ L'attributo **MS-FRS-Hub-member** viene usato per registrare le impostazioni di 
 | ID collegamento                | 1046                                                      |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000000                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ L'attributo **MS-FRS-Hub-member** viene usato per registrare le impostazioni di 
 | ID collegamento                | 1046                                                      |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000000                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ L'attributo **MS-FRS-Hub-member** viene usato per registrare le impostazioni di 
 | ID collegamento                | 1046                                                      |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000000                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ L'attributo **MS-FRS-Hub-member** viene usato per registrare le impostazioni di 
 | ID collegamento                | 1046                                                      |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000000                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -141,21 +141,21 @@ L'attributo **MS-FRS-Hub-member** viene usato per registrare le impostazioni di 
 | ID collegamento                | 1046                                                      |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000000                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta del nome distinto completo di un oggetto [**membro di NTFRS**](c-ntfrsmember.md) . Il nome distinto è nel formato "CN = *<computerGuid>* , CN = *<Dfs Link Name>* , CN = *<Dfs Root name>* , CN = DFS Volumes, CN = File Replication Service, CN = System, DC =..."
+Si tratta del nome distinto completo di un [**oggetto NTFRS-Member.**](c-ntfrsmember.md) Il nome distinto è nel formato "CN= *<computerGuid>* , CN= *<Dfs Link Name>* , CN= , *<Dfs Root name>* CN=DFS Volumes, CN=File Replication Service,CN=System, DC=..."
 
  
 

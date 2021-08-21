@@ -1,10 +1,10 @@
 ---
-title: Classe MicrosoftDNS_RTType
-description: Sottoclasse di MicrosoftDNS \_ ResourceRecord che rappresenta un record route through (RT).
+title: MicrosoftDNS_RTType classe
+description: Sottoclasse di MicrosoftDNS \_ ResourceRecord che rappresenta un record Route Through (RT).
 ms.assetid: 986e2bbf-4f45-4611-906e-66079fda7f4c
 keywords:
-- DNS della classe MicrosoftDNS_RTType
-- MicrosoftDNS_RTType della classe DNS, descritta
+- MicrosoftDNS_RTType DNS della classe
+- MicrosoftDNS_RTType classe DNS , descritto
 topic_type:
 - apiref
 api_name:
@@ -19,16 +19,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d867185d8ce07a54a47eb5ea7591ec8d68a11059
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 287dc3d80370f812b6ee721b9556f906df289c67a17048aa326efc3b80de5954
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077061"
 ---
-# <a name="microsoftdns_rttype-class"></a>\_Classe MicrosoftDNS RTType
+# <a name="microsoftdns_rttype-class"></a>Classe MicrosoftDNS \_ RTType
 
-Sottoclasse di [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md) che rappresenta un record route through (RT).
+Sottoclasse di [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md) che rappresenta un record Route Through (RT).
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -44,21 +44,21 @@ class MicrosoftDNS_RTType : MicrosoftDNS_ResourceRecord
 
 ## <a name="members"></a>Members
 
-La **classe \_ RTType di MicrosoftDNS** dispone di questi tipi di membri:
+La **classe MicrosoftDNS \_ RTType** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La **classe \_ RTType di MicrosoftDNS** dispone di questi metodi.
+La **classe MicrosoftDNS \_ RTType** include questi metodi.
 
 
 
 | Metodo                             | Descrizione                                                                                                                                                                                                                                                                                                                                                      |
 |:-----------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CreateInstanceFromPropertyData** | Crea un'istanza di un tipo RT di RR in base ai dati nei parametri di input del metodo, ovvero il nome del server DNS del record, il nome del contenitore, il nome del proprietario o dell'host, la classe (impostazione predefinita = IN), il valore time-to-Live, la preferenza di record e il nome host intermedio. Restituisce un riferimento al nuovo oggetto come parametro di output. <br/> Qualificatori: implementata, statica<br/> |
-| **Modifica**                         | Aggiorna la durata (TTL), la preferenza e l'host intermedio ai valori specificati come parametri di input di questo metodo. Se non viene specificato un nuovo valore per un parametro, il valore corrente per il parametro non viene modificato. Il metodo restituisce un riferimento all'oggetto modificato come parametro di output. <br/> Qualificatori: implementato<br/>        |
+| **CreateInstanceFromPropertyData** | Crea un'istanza di un tipo RT di RR in base ai dati nei parametri di input del metodo: nome del server DNS del record, nome del contenitore, nome proprietario/host, classe (impostazione predefinita = IN), valore di time-to-live, preferenza del record e nome host intermedio. Restituisce un riferimento al nuovo oggetto come parametro di output. <br/> Qualificatori: implementati, statici<br/> |
+| **Modifica**                         | Aggiorna la durata (TTL), la preferenza e l'host intermedio ai valori specificati come parametri di input di questo metodo. Se non viene specificato un nuovo valore per un parametro, il valore corrente per il parametro non viene modificato. Il metodo restituisce un riferimento all'oggetto modificato come parametro di output. <br/> Qualificatori: implementati<br/>        |
 
 
 
@@ -66,33 +66,33 @@ La **classe \_ RTType di MicrosoftDNS** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ RTType di MicrosoftDNS** dispone di queste proprietà.
+La **classe MicrosoftDNS \_ RTType** dispone di queste proprietà.
 
 <dl> <dt>
 
 **IntermediateHost**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-FQDN che specifica un host che funge da intermediario per raggiungere l'host specificato dal proprietario.
+FQDN che specifica un host da utilizzare come intermedio per raggiungere l'host specificato dal proprietario.
 
 </dd> <dt>
 
 **Preferenza**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Preferenza assegnata a questo RR tra gli altri nello stesso proprietario. Sono preferibili valori inferiori.
+Preferenza data a questo RR tra le altre presso lo stesso proprietario. Sono preferibili valori inferiori.
 
 </dd> </dl>
 
@@ -105,7 +105,7 @@ Preferenza assegnata a questo RR tra gli altri nello stesso proprietario. Sono p
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -116,10 +116,10 @@ Preferenza assegnata a questo RR tra gli altri nello stesso proprietario. Sono p
 [**Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS \_ RTType**](microsoftdns-rttype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**Metodo Modify della \_ classe RTType di MicrosoftDNS**](microsoftdns-rttype-modify.md)
+[**Metodo Modify della classe MicrosoftDNS \_ RTType**](microsoftdns-rttype-modify.md)
 </dt> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

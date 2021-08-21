@@ -1,6 +1,6 @@
 ---
-title: endloop-vs
-description: Fine di un ciclo... blocco ENDLOOP.
+title: endloop - vs
+description: Fine di un ciclo... blocco endloop.
 ms.assetid: fd7df120-a927-4a66-b152-6ce5247446e4
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8a9aec4d1b2c5237a87fae2c0beab4e8d995db97
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: cdd9158d12ecc29073526833a7a4ca5eec03100558a9ebdc711822c7ca74c9bc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104398190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119949891"
 ---
-# <a name="endloop---vs"></a>endloop-vs
+# <a name="endloop---vs"></a>endloop - vs
 
-Fine di un [ciclo](loop---vs.md)... blocco ENDLOOP.
+Fine di un [ciclo](loop---vs.md)... blocco endloop.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,19 +29,19 @@ Fine di un [ciclo](loop---vs.md)... blocco ENDLOOP.
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | endloop                |      | x    | x    | x     | x    | x     |
 
 
 
- 
+ 
 
 Questa istruzione funziona come illustrato di seguito.
 
@@ -55,7 +55,7 @@ if (LoopIterationCount > 0)
 
 
 
-endloop deve seguire l'ultima istruzione di un blocco [loop-vs](loop---vs.md) .
+endloop deve seguire l'ultima istruzione di [un ciclo , rispetto al](loop---vs.md) blocco .
 
 ## <a name="example"></a>Esempio
 
@@ -72,12 +72,12 @@ endloop
 
 <dl> <dt>
 
-[Istruzioni vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
+[Istruzioni per vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

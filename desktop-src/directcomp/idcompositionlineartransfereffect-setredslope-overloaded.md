@@ -1,9 +1,9 @@
 ---
-title: Metodi setredslope di idcompositionlineartransfereffect (Dcomp. h)
-description: Imposta la pendenza della funzione lineare per il canale rosso.
+title: Metodi setredslope idcompositionlineartransfereffect (Dcomp.h)
+description: Imposta l'inclinazione della funzione lineare per il canale rosso.
 ms.assetid: 486dad35-e9f2-cc7e-1c20-0e69ce1d22bb
 keywords:
-- Metodi setredslope DirectComposition
+- metodi setredslope DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 44e54d2c71b8d51bc4164c0fa00c303696bb5735
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1d508b1ab59c833b230201a1764d1a7bd90f4cf9c68cf44cd7c753d8d39be683
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787741"
 ---
-# <a name="idcompositionlineartransfereffectsetredslope-methods"></a>Metodi idcompositionlineartransfereffect:: setredslope
+# <a name="idcompositionlineartransfereffectsetredslope-methods"></a>Metodi idcompositionlineartransfereffect::setredslope
 
-Imposta la pendenza della funzione lineare per il canale rosso.
+Imposta l'inclinazione della funzione lineare per il canale rosso.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Imposta la pendenza della funzione lineare per il canale rosso.
 
 | Metodo                                                                                             | Descrizione                                                           |
 |:---------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------|
-| [**SetRedSlope**](/windows/win32/api/dcomp/nf-dcomp-idcompositionlineartransfereffect-setredslope(float))                               | Imposta la pendenza della funzione lineare per il canale rosso.<br/> |
-| [**SetRedSlope (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionlineartransfereffect-setredslope(idcompositionanimation)) | Imposta la pendenza della funzione lineare per il canale rosso.<br/> |
+| [**SetRedSlope**](/windows/win32/api/dcomp/nf-dcomp-idcompositionlineartransfereffect-setredslope(float))                               | Imposta l'inclinazione della funzione lineare per il canale rosso.<br/> |
+| [**SetRedSlope (IDCompositionAnimation) \***](/windows/win32/api/dcomp/nf-dcomp-idcompositionlineartransfereffect-setredslope(idcompositionanimation)) | Imposta l'inclinazione della funzione lineare per il canale rosso.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Imposta la pendenza della funzione lineare per il canale rosso.
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

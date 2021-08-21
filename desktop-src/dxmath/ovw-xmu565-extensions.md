@@ -1,19 +1,19 @@
 ---
-description: XMU565 descrive un vettore 4D con componenti x e z senza segno a 5 bit e un componente y senza segno a 6 bit.
+description: XMU565 descrive un vettore 4D con componenti x- e z- senza segno a 5 bit e un componente y senza segno a 6 bit.
 ms.assetid: c661e018-f8c7-40bf-ab5a-211a3b9300a3
 title: Estensioni XMU565
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6125ef46af422e0331929126866cd5473cb88afe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f767af5c023d773cddb2858943cff7f8d5902a7751f5975d234a7c52fd12082
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948801"
 ---
 # <a name="xmu565-extensions"></a>Estensioni XMU565
 
-[**XMU565**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmu565) descrive un vettore 4D con componenti x e z senza segno a 5 bit e un componente y senza segno a 6 bit.
+[**XMU565**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmu565) descrive un vettore 4D con componenti x- e z- senza segno a 5 bit e un componente y senza segno a 6 bit.
 
 > [!Note]  
 > Le funzionalità elencate di seguito sono disponibili solo quando si sviluppa con C++.

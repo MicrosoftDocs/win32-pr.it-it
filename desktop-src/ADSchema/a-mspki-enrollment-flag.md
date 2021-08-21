@@ -1,11 +1,11 @@
 ---
-title: attributo ms-PKI-iscrizione-flag
-description: Contiene i flag relativi alla registrazione.
+title: Attributo ms-PKI-Enrollment-Flag
+description: Contiene i flag correlati alla registrazione.
 ms.assetid: e854acb1-75f4-4379-b404-8fa096419ee6
 ms.tgt_platform: multiple
 keywords:
-- ms-PKI-iscrizione-attributo flag AD schema
-- msPKI-iscrizione-attributo flag AD schema
+- Schema AD dell'attributo ms-PKI-Enrollment-Flag
+- Schema AD dell'attributo msPKI-Enrollment-Flag
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2df092e28633bd5825c422e306bf7a65982b32a8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f13f25d3c9e2d34979715f0b225ca399b1cf11193a2dc9107b9370b2ea44b5d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803121"
 ---
-# <a name="ms-pki-enrollment-flag-attribute"></a>attributo ms-PKI-iscrizione-flag
+# <a name="ms-pki-enrollment-flag-attribute"></a>Attributo ms-PKI-Enrollment-Flag
 
-Contiene i flag relativi alla registrazione.
+Contiene i flag correlati alla registrazione.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------------------------------------------------------------|
-| CN                | ms-PKI-registrazione-flag                                                                            |
-| LDAP-Display-Name | msPKI-flag di registrazione                                                                             |
+| CN                | ms-PKI-Enrollment-Flag                                                                            |
+| Ldap-Display-Name | msPKI-Enrollment-Flag                                                                             |
 | Dimensione              | 4 byte                                                                                           |
-| Privilegio aggiornamento  | Amministratore di dominio                                                                              |
-| Frequenza di aggiornamento  | Quando l'oggetto modello di certificato (ms-PKI-certificate-template) viene modificato, creato o clonato. |
+| Aggiorna privilegio  | Amministratore di dominio                                                                              |
+| Frequenza di aggiornamento  | Quando l'oggetto modello di certificato (ms-PKI-Certificate-Template) viene modificato, creato o clonato. |
 | Attribute-Id      | 1.2.840.113556.1.4.1430                                                                           |
-| System-ID-GUID    | d15ef7d8-f226-46db-ae79-b34e560bd12c                                                              |
+| System-Id-Guid    | d15ef7d8-f226-46db-ae79-b34e560bd12c                                                              |
 | Sintassi            | [**Enumerazione**](s-enumeration.md)                                                              |
 
 
@@ -57,15 +57,15 @@ Contiene i flag relativi alla registrazione.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Contiene i flag relativi alla registrazione.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Contiene i flag relativi alla registrazione.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Contiene i flag relativi alla registrazione.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| A valore singolo       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Contiene i flag relativi alla registrazione.
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| A valore singolo       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 

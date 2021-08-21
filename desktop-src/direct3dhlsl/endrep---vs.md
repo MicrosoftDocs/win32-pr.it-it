@@ -1,6 +1,6 @@
 ---
-title: endrep-vs
-description: Termina una rep-vs... blocco endrep.
+title: endrep - vs
+description: Terminare un rappresentante - rispetto a... blocco endrep.
 ms.assetid: 660c901a-b490-45f3-abc5-ec1a36525317
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8912edd9d520bb658e99047138df7df008f9e6f7
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
-ms.translationtype: HT
+ms.openlocfilehash: 9ffaea3a572c363f34a19c06156b95f029d7c6d13beda0c335c169c3a6a43c45
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104398187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119949801"
 ---
-# <a name="endrep---vs"></a>endrep-vs
+# <a name="endrep---vs"></a>endrep - vs
 
-Termina una [Rep-vs](rep---vs.md)... blocco endrep.
+Terminare un [rappresentante - vs](rep---vs.md)... blocco endrep.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,19 +29,19 @@ Termina una [Rep-vs](rep---vs.md)... blocco endrep.
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | endrep                 |      | x    | x    | x     | x    | x     |
 
 
 
- 
+ 
 
 ### <a name="example"></a>Esempio
 
@@ -58,12 +58,12 @@ endrep
 
 <dl> <dt>
 
-[Istruzioni vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
+[Istruzioni per vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

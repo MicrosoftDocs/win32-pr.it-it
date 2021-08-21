@@ -1,23 +1,23 @@
 ---
-title: dcl_input vJoinInstanceID (SM5-ASM)
-description: Dichiarare l'ID istanza in una fase di join Hull shader.
+title: dcl_input vJoinInstanceID (sm5 - asm)
+description: Dichiarare l'ID istanza in una fase di join dello hull shader.
 ms.assetid: 2EABB24A-7ED7-460D-A2AD-D2C40DCCB2DC
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bae9351fc7183aa37cd660c265aab803f4661e9
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 499da42f6f0b63c6a5315a16cf0d4f1615fdbd9dc99f224c374189c6f73d185e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103956086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789871"
 ---
-# <a name="dcl_input-vjoininstanceid-sm5---asm"></a>\_vJoinInstanceID di input DCL (SM5-ASM)
+# <a name="dcl_input-vjoininstanceid-sm5---asm"></a>dcl \_ input vJoinInstanceID (sm5 - asm)
 
-Dichiarare l'ID istanza in una fase di join Hull shader.
+Dichiarare l'ID istanza in una fase di join dello hull shader.
 
 
 
-| \_vJoinInstanceID di input DCL |
+| dcl \_ input vJoinInstanceID |
 |----------------------------|
 
 
@@ -28,7 +28,7 @@ Dichiarare l'ID istanza in una fase di join Hull shader.
 
 | Elemento                                                                                                                               | Descrizione                        |
 |------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
-| <span id="vJoinInstanceID"></span><span id="vjoininstanceid"></span><span id="VJOININSTANCEID"></span>*vJoinInstanceID*<br/> | \[nell' \] ID istanza.<br/> |
+| <span id="vJoinInstanceID"></span><span id="vjoininstanceid"></span><span id="VJOININSTANCEID"></span>*vJoinInstanceID*<br/> | \[in \] ID istanza.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        | X    |        |          |       |         |
 
@@ -48,7 +48,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questa istruzione è supportata nei modelli shader seguenti:
 
@@ -56,12 +56,12 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -71,7 +71,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

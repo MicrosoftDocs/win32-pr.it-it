@@ -30,7 +30,7 @@ ms.locfileid: "118994826"
 
 **Blocchi - Prospettiva dell'utente**
 
-Agli utenti piacciono le applicazioni reattive. Quando fanno clic su un menu, vogliono che l'applicazione reagisca immediatamente, anche se sta stampando il proprio lavoro. Quando salvano un documento lungo nel word processor preferito, vogliono continuare a digitare mentre il disco è ancora in rotazione. Gli utenti si insoddisfacenti piuttosto rapidamente quando l'applicazione non reagisce in modo rapido all'input.
+Agli utenti piacciono le applicazioni reattive. Quando fanno clic su un menu, vogliono che l'applicazione reagisca immediatamente, anche se sta stampando il proprio lavoro. Quando salvano un documento lungo nel word processor preferito, vogliono continuare a digitare mentre il disco è ancora in rotazione. Gli utenti si insoddisfaceno piuttosto rapidamente quando l'applicazione non reagisce in modo rapido all'input.
 
 Un programmatore potrebbe riconoscere molti motivi legittimi per cui un'applicazione non risponde immediatamente all'input dell'utente. L'applicazione potrebbe essere occupata a ricalcolare alcuni dati o semplicemente in attesa del completamento dell'I/O su disco. Tuttavia, dalla ricerca degli utenti, si sa che gli utenti sono infastiditi e frustrati dopo solo un paio di secondi di insensibilità. Dopo 5 secondi, tenteranno di terminare un'applicazione bloccata. Accanto agli arresti anomali, i blocchi dell'applicazione sono l'origine più comune di interruzioni dell'utente quando si lavora con le applicazioni Win32.
 
@@ -40,7 +40,7 @@ Esistono molte cause radice diverse per il blocco dell'applicazione e non tutte 
 
 Quando un'applicazione (o più precisamente un thread) crea una finestra sul desktop, immette un contratto implicito con il Gestione finestre desktop (DWM) per elaborare i messaggi della finestra in modo temporale. DWM invia messaggi (input da tastiera/mouse e messaggi da altre finestre, nonché da se stesso) nella coda di messaggi specifica del thread. Il thread recupera e invia tali messaggi tramite la relativa coda di messaggi. Se il thread non esegue il servizio della coda chiamando GetMessage(), i messaggi non vengono elaborati e la finestra si blocca: non può né ridisegnare né accettare l'input dell'utente. Il sistema operativo rileva questo stato allegando un timer ai messaggi in sospeso nella coda di messaggi. Se un messaggio non è stato recuperato entro 5 secondi, DWM dichiara che la finestra deve essere bloccata. È possibile eseguire query su questo particolare stato della finestra tramite l'API IsHungAppWindow().
 
-Il rilevamento è solo il primo passaggio. A questo punto, l'utente non è ancora in grado di terminare l'applicazione. Se si fa clic sul pulsante X (Chiudi), viene visualizzato un messaggio WM CLOSE, che rimane bloccato nella coda dei messaggi come qualsiasi \_ altro messaggio. Il Gestione finestre desktop assiste nascondendo e quindi sostituendo la finestra bloccata con una copia "fantasma" che visualizza una bitmap dell'area client precedente della finestra originale (e aggiungendo "Non risponde" alla barra del titolo). Purché il thread della finestra originale non recuperi i messaggi, DWM gestisce entrambe le finestre contemporaneamente, ma consente all'utente di interagire solo con la copia fantasma. Usando questa finestra fantasma, l'utente può solo spostare, ridurre a icona e, soprattutto, chiudere l'applicazione che non risponde, ma non modificarne lo stato interno.
+Il rilevamento è solo il primo passaggio. A questo punto, l'utente non può ancora terminare l'applicazione. Facendo clic sul pulsante X (Chiudi) viene visualizzato un messaggio WM CLOSE, che rimane bloccato nella coda di messaggi come qualsiasi \_ altro messaggio. Il Gestione finestre desktop assiste nascondendo e quindi sostituendo la finestra bloccata con una copia "fantasma" che visualizza una bitmap dell'area client precedente della finestra originale (e aggiungendo "Non risponde" alla barra del titolo). Purché il thread della finestra originale non recuperi i messaggi, DWM gestisce entrambe le finestre contemporaneamente, ma consente all'utente di interagire solo con la copia fantasma. Usando questa finestra fantasma, l'utente può solo spostare, ridurre a icona e, soprattutto, chiudere l'applicazione che non risponde, ma non modificarne lo stato interno.
 
 L'intera esperienza fantasma è simile alla seguente:
 
@@ -73,7 +73,7 @@ Tuttavia, l'utente lo considera un bug. La progettazione deve corrispondere alle
 
 ![Screenshot che mostra la pagina "Generale" Windows proprietà con il testo "Size", "Size on disk" e "Contains" cerchiato.](images/preventinghangs-updatingdialog.gif)
 
-Sfortunatamente, non esiste un modo semplice per progettare e scrivere un'applicazione reattiva. Windows non fornisce un framework asincrono semplice che consenta una pianificazione semplice delle operazioni di blocco o a esecuzione lunga. Le sezioni seguenti illustrano alcune delle procedure consigliate per la prevenzione dei blocchi ed evidenziano alcune delle insidie comuni.
+Sfortunatamente, non esiste un modo semplice per progettare e scrivere un'applicazione reattiva. Windows non fornisce un framework asincrono semplice che consenta una pianificazione semplice delle operazioni di blocco o a esecuzione lunga. Le sezioni seguenti illustrano alcune delle procedure consigliate per evitare blocchi ed evidenziano alcune delle insidie comuni.
 
 ## <a name="best-practices"></a>Procedure consigliate
 
@@ -86,15 +86,15 @@ La responsabilità principale del thread dell'interfaccia utente è recuperare e
 -   Spostare algoritmi a elevato utilizzo di risorse o non associati che comportano operazioni a esecuzione lunga nei thread di lavoro
 -   Identificare il maggior numero possibile di chiamate di funzione di blocco e provare a spostarle nei thread di lavoro. qualsiasi funzione che chiama in un'altra DLL deve essere sospetta
 -   È possibile rimuovere tutte le chiamate api di rete e I/O di file dal thread di lavoro. Queste funzioni possono bloccarsi per molti secondi, se non minuti. Se è necessario eseguire qualsiasi tipo di I/O nel thread dell'interfaccia utente, è consigliabile usare l'I/O asincrono
--   Tenere presente che il thread dell'interfaccia utente esegue anche la manutenzione di tutti i server COM apartment a thread singolo (STA) ospitati dal processo; se si effettua una chiamata di blocco, questi server COM non rispondono fino a quando non si rispetti la coda di messaggi
+-   Tenere presente che il thread dell'interfaccia utente esegue anche la manutenzione di tutti i server COM apartment a thread singolo ospitati dal processo. se si effettua una chiamata di blocco, questi server COM non rispondono fino a quando non si rispetti la coda di messaggi
 
 **Non:**
 
 -   Attendere un oggetto kernel (ad esempio Event o Mutex) per più di un periodo di tempo molto breve; se è necessario attendere, provare a usare MsgWaitForMultipleObjects(), che si sbloccherà all'arrivo di un nuovo messaggio
--   Condividere la coda di messaggi della finestra di un thread con un altro thread usando la funzione AttachThreadInput(). Non solo è estremamente difficile sincronizzare correttamente l'accesso alla coda, ma può anche impedire al Windows operativo di rilevare correttamente una finestra bloccata
+-   Condividere la coda di messaggi della finestra di un thread con un altro thread usando la funzione AttachThreadInput(). Non solo è estremamente difficile sincronizzare correttamente l'accesso alla coda, ma può anche impedire al sistema operativo Windows di rilevare correttamente una finestra bloccata
 -   Usare TerminateThread() in uno dei thread di lavoro. La terminazione di un thread in questo modo non consente di rilasciare blocchi o segnali eventi e può causare facilmente oggetti di sincronizzazione orfani
 -   Chiamare qualsiasi codice "sconosciuto" dal thread dell'interfaccia utente. Ciò vale soprattutto se l'applicazione ha un modello di estendibilità. non è garantito che il codice di terze parti segua le linee guida sulla velocità di risposta
--   Effettuare qualsiasi tipo di chiamata di trasmissione di blocco; SendMessage(HWND BROADCAST) si trova alla mercé di \_ ogni applicazione non scritta attualmente in esecuzione
+-   Effettuare qualsiasi tipo di chiamata broadcast di blocco; SendMessage(HWND BROADCAST) si trova alla mercé di \_ ogni applicazione non scritta attualmente in esecuzione
 
 **Implementare modelli asincroni**
 
@@ -111,7 +111,7 @@ La rimozione di operazioni a esecuzione lunga o di blocco dal thread dell'interf
 
 L'applicazione o la DLL richiede blocchi per sincronizzare l'accesso alle strutture di dati interne. L'uso di più blocchi aumenta il parallelismo e rende l'applicazione più reattiva. Tuttavia, l'uso di più blocchi aumenta anche la probabilità di acquisire tali blocchi in ordini diversi e causando il deadlock dei thread. Se due thread contengono un blocco e quindi tentano di acquisire il blocco dell'altro thread, le operazioni formeranno un'attesa circolare che blocca lo stato di avanzamento per questi thread. È possibile evitare questo deadlock solo assicurando che tutti i thread nell'applicazione acquisiscono sempre tutti i blocchi nello stesso ordine. Tuttavia, non è sempre facile acquisire blocchi nell'ordine "corretto". I componenti software possono essere composti, ma non le acquisizioni di blocchi. Se il codice chiama un altro componente, i blocchi del componente diventano ora parte dell'ordine di blocco implicito, anche se non si ha visibilità su tali blocchi.
 
-Le cose si complicano ancora perché le operazioni di blocco includono molto più delle normali funzioni per sezioni critiche, mutex e altri blocchi tradizionali. Qualsiasi chiamata di blocco che attraversa i limiti dei thread ha proprietà di sincronizzazione che possono causare un deadlock. Il thread chiamante esegue un'operazione con semantica 'acquire' e non può sbloccarsi fino a quando il thread di destinazione non rilascia la chiamata. In questa categoria rientrano alcune funzioni User32 (ad esempio SendMessage) e molte chiamate COM di blocco.
+Le cose si complicano ancora perché le operazioni di blocco includono molto più delle normali funzioni per sezioni critiche, mutex e altri blocchi tradizionali. Qualsiasi chiamata di blocco che attraversa i limiti dei thread ha proprietà di sincronizzazione che possono causare un deadlock. Il thread chiamante esegue un'operazione con semantica 'acquire' e non può sbloccarsi fino a quando il thread di destinazione non rilascia la chiamata. In questa categoria rientrano alcune funzioni User32 ,ad esempio SendMessage, e molte chiamate COM bloccate.
 
 Ancora peggiore, il sistema operativo ha un proprio blocco interno specifico del processo che talvolta viene mantenuto durante l'esecuzione del codice. Questo blocco viene acquisito quando le DLL vengono caricate nel processo e viene quindi chiamato "blocco del caricatore". La funzione DllMain viene sempre eseguita sotto il blocco del caricatore. se si acquisiscono blocchi in DllMain (e non è consigliabile), è necessario rendere il blocco del caricatore parte dell'ordine di blocco. La chiamata di determinate API Win32 potrebbe anche acquisire il blocco del caricatore per conto dell'utente, ad esempio funzioni come LoadLibraryEx, GetModuleHandle e in particolare CoCreateInstance.
 
@@ -136,10 +136,10 @@ Esaminando questo codice sembra chiaro che g cs sia stato implicitamente il bloc
 
 -   Progettare una gerarchia di blocchi e rispettarla. Aggiungere tutti i blocchi necessari. Sono disponibili molte più primitive di sincronizzazione rispetto solo a Mutex e CriticalSections. devono essere tutti inclusi. Includere il blocco del caricatore nella gerarchia se si accettano blocchi in DllMain()
 -   Accettare il protocollo di blocco con le dipendenze. Qualsiasi codice chiamato dall'applicazione o che potrebbe chiamare l'applicazione deve condividere la stessa gerarchia di blocchi
--   Blocca le strutture dei dati non funziona. Spostare le acquisizioni di blocchi dai punti di ingresso delle funzioni e proteggere solo l'accesso ai dati con blocchi. Se meno codice opera sotto un blocco, è meno probabile che si verificano deadlock
+-   Blocca le strutture dei dati non funziona. Spostare le acquisizioni di blocchi dai punti di ingresso della funzione e proteggere solo l'accesso ai dati con blocchi. Se meno codice opera sotto un blocco, è meno probabile che si siano verificati deadlock
 -   Analizzare le acquisizioni e le versioni dei blocchi nel codice di gestione degli errori. Spesso la gerarchia di blocco viene dimenticata quando si tenta di eseguire il ripristino da una condizione di errore
 -   Sostituire i blocchi annidati con i contatori di riferimento, che non possono essere deadlock. Gli elementi bloccati singolarmente in elenchi e tabelle sono buoni candidati
--   Prestare attenzione durante l'attesa di un handle di thread da una DLL. Si supponga sempre che il codice possa essere chiamato sotto il blocco del caricatore. È meglio fare riferimento al conteggio delle risorse e consentire al thread di lavoro di eseguire la pulizia (e quindi usare FreeLibraryAndExitThread per terminare in modo pulito)
+-   Prestare attenzione quando si attende un handle di thread da una DLL. Si supponga sempre che il codice possa essere chiamato sotto il blocco del caricatore. È meglio fare riferimento al conteggio delle risorse e consentire al thread di lavoro di eseguire la pulizia (e quindi usare FreeLibraryAndExitThread per terminare in modo pulito)
 -   Usare l'API Wait Chain Traversal per diagnosticare i deadlock
 
 **Non:**
@@ -175,7 +175,7 @@ Il codice di esempio seguente illustra questo problema. L'accesso non associato 
 
 -   Rimuovere \_ \_ try/ \_ \_ tranne quando possibile; non usare SetUnhandledExceptionFilter
 -   Eseguire il wrapping dei blocchi in modelli personalizzati simili \_ a ptr se si usano eccezioni C++. Il blocco deve essere rilasciato nel distruttore. Per le eccezioni native rilasciare i blocchi \_ \_ nell'istruzione finally
--   Prestare attenzione al codice in esecuzione in un gestore eccezioni nativo. l'eccezione potrebbe avere avuto molti blocchi, quindi il gestore non deve acquisire alcun blocco
+-   Prestare attenzione con il codice in esecuzione in un gestore eccezioni nativo. l'eccezione potrebbe avere avuto molti blocchi, quindi il gestore non deve acquisire alcun
 
 **Non:**
 

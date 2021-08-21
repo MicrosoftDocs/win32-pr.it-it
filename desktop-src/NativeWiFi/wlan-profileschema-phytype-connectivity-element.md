@@ -1,7 +1,7 @@
 ---
-description: Specifica lo standard LAN wireless 802,11 usato in una LAN wireless.
+description: Specifica lo standard LAN wireless 802.11 utilizzato su una LAN wireless.
 ms.assetid: 19582ff0-59bd-4c93-8c92-0135e6e025d2
-title: Elemento phyType (Connectivity)
+title: Elemento phyType (connectivity)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 71a58e464528136244cec745aed2e59c6fea737d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7f9af94923f9160d18a9787b61036d5cf4104aede6488e2219b18a84325da46
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684021"
 ---
-# <a name="phytype-connectivity-element"></a>Elemento phyType (Connectivity)
+# <a name="phytype-connectivity-element"></a>Elemento phyType (connectivity)
 
-L'elemento phyType (Connectivity) specifica lo standard della LAN wireless 802,11 usato in una LAN wireless.
+L'elemento phyType (connettività) specifica lo standard LAN wireless 802.11 utilizzato su una LAN wireless.
 
-È possibile specificare più **phyType** s. Se non viene specificato alcun **phyType** , il profilo può essere usato per connettersi a qualsiasi **phyType**. Il valore "n" è supportato solo in Windows Vista con Service Pack 1 (SP1) e versioni successive del sistema operativo.
+È possibile specificare **più phyType.** Se non **viene specificato alcun phyType,** il profilo può essere usato per connettersi a qualsiasi **phyType**. Il valore "n" è supportato solo in Windows Vista con Service Pack 1 (SP1) e versioni successive del sistema operativo.
 
 **Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** Questo elemento non è supportato.
 
@@ -53,7 +53,7 @@ L'elemento phyType (Connectivity) specifica lo standard della LAN wireless 802,1
 </xs:element>
 ```
 
-L'elemento è definito dall'elemento [**Connectivity**](wlan-profileschema-connectivity-msm-element.md) .
+L'elemento è definito [**dall'elemento connectivity.**](wlan-profileschema-connectivity-msm-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ L'elemento è definito dall'elemento [**Connectivity**](wlan-profileschema-conne
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -73,10 +73,10 @@ L'elemento è definito dall'elemento [**Connectivity**](wlan-profileschema-conne
 **Contesto di definizione dell'elemento nello schema**
 </dt> <dt>
 
-[**connettività**](wlan-profileschema-connectivity-msm-element.md)
+[**Connettività**](wlan-profileschema-connectivity-msm-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**connettività (MSM)**](wlan-profileschema-connectivity-msm-element.md)

@@ -1,19 +1,19 @@
 ---
-description: Il messaggio del pulsante del telefono TAPI \_ viene inviato per notificare all'applicazione che il pulsante di monitoraggio è abilitato se è stato rilevato un pulsante premuto sul telefono locale.
+description: Il messaggio TAPI PHONE BUTTON viene inviato per notificare all'applicazione che il monitoraggio della pressione del pulsante è abilitato se è stato rilevato un pulsante \_ premuto sul telefono locale.
 ms.assetid: fe47eed7-89d1-488b-b945-9e1aedc1f63c
-title: Messaggio di PHONE_BUTTON (TAPI. h)
+title: PHONE_BUTTON messaggio (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2da810630a937f8415e070373f359dca06a694e6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aec64f754725e5926a8cab1d98b25e4cb379a444bf4208d6e8f3e976dafee82f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073001"
 ---
-# <a name="phone_button-message"></a>\_Messaggio del pulsante telefonico
+# <a name="phone_button-message"></a>MESSAGGIO \_ DEL PULSANTE DI TELEFONO
 
-Il messaggio **del \_ pulsante del telefono** TAPI viene inviato per notificare all'applicazione che il pulsante di monitoraggio è abilitato se è stato rilevato un pulsante premuto sul telefono locale.
+Il messaggio TAPI **PHONE \_ BUTTON viene** inviato per notificare all'applicazione che il monitoraggio della pressione del pulsante è abilitato se è stato rilevato un pulsante premuto sul telefono locale.
 
 
 ```C++
@@ -43,21 +43,21 @@ Istanza di callback dell'applicazione fornita all'apertura del dispositivo telef
 *dwParam1* 
 </dt> <dd>
 
-Identificatore pulsante/Lamp del pulsante premuto. Si noti che gli identificatori di pulsante da zero a 11 sono sempre i pulsanti del TASTIERino, con ' 0' come identificatore del pulsante zero,' 1' è l'identificatore del pulsante 1 (e così via tramite l'identificatore del pulsante 9) e con '' è l'identificatore del \* pulsante 10 è \# ' è l'identificatore del pulsante 11. Altre informazioni su un identificatore di pulsante sono disponibili con [**phoneGetDevCaps**](/windows/desktop/api/Tapi/nf-tapi-phonegetdevcaps) e [**phoneGetButtonInfo**](/windows/desktop/api/Tapi/nf-tapi-phonegetbuttoninfo).
+Identificatore del pulsante o della lampadina del pulsante premuto. Si noti che gli identificatori di pulsante da zero a 11 sono sempre i pulsanti KEYPAD, con '0' come identificatore di pulsante zero, '1' come identificatore di pulsante 1 (e così via tramite l'identificatore del pulsante 9) e con ' come identificatore di pulsante 10 e ' come identificatore \* \# di pulsante 11. Altre informazioni sull'identificatore di un pulsante sono disponibili [**con phoneGetDevCaps**](/windows/desktop/api/Tapi/nf-tapi-phonegetdevcaps) [**e phoneGetButtonInfo.**](/windows/desktop/api/Tapi/nf-tapi-phonegetbuttoninfo)
 
 </dd> <dt>
 
 *dwParam2* 
 </dt> <dd>
 
-Modalità del pulsante. Questo parametro usa una delle [**\_ costanti PHONEBUTTONMODE**](phonebuttonmode--constants.md).
+Modalità del pulsante. Questo parametro usa una delle [**costanti PHONEBUTTONMODE \_**](phonebuttonmode--constants.md).
 
 </dd> <dt>
 
 *dwParam3* 
 </dt> <dd>
 
-Specifica se si tratta di un evento di un pulsante o di un pulsante. Questo parametro usa una delle [**\_ costanti PHONEBUTTONSTATE**](phonebuttonstate--constants.md).
+Specifica se si tratta di un evento button-down o di un evento button-up. Questo parametro usa una delle [**costanti PHONEBUTTONSTATE \_**](phonebuttonstate--constants.md).
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Un messaggio di un **\_ pulsante telefonico** viene inviato ogni volta che viene modificato lo stato di un pulsante. A un'applicazione viene garantito che per ogni evento button down viene inviato un evento Button up corrispondente. Un provider di servizi che non è in grado di rilevare il pulsante effettivo attivo è necessario per generare il messaggio di riattivazione del pulsante subito dopo il messaggio premuto per ogni pressione del pulsante.
+Un **messaggio PHONE \_ BUTTON** viene inviato ogni volta che lo stato di un pulsante cambia. Un'applicazione garantisce che, per ogni evento button down, alla fine viene inviato un evento button up corrispondente. Un provider di servizi che non è in grado di rilevare l'effettivo pulsante in alto è necessario per generare il messaggio del pulsante in alto subito dopo il messaggio di pressione del pulsante per ogni pressione del pulsante.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Un messaggio di un **\_ pulsante telefonico** viene inviato ogni volta che viene
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Crea un oggetto mesh usando un codice FVF (Flexible Vertex Format).
 ms.assetid: 4681f181-8a16-42d4-bbfa-bdee5ed69fd3
-title: Funzione D3DXCreateMeshFVF (D3DX9Mesh. h)
+title: Funzione D3DXCreateMeshFVF (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e9d5589b0f02bfcb85f9c0f0dc4dc5de69e2fb23
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: db168b710d0454c30ccd3dc19252b455ae22178cb70bba84972b8f904a411109
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857111"
 ---
-# <a name="d3dxcreatemeshfvf-function"></a>D3DXCreateMeshFVF (funzione)
+# <a name="d3dxcreatemeshfvf-function"></a>Funzione D3DXCreateMeshFVF
 
 Crea un oggetto mesh usando un codice FVF (Flexible Vertex Format).
 
@@ -45,16 +45,16 @@ HRESULT D3DXCreateMeshFVF(
 
 <dl> <dt>
 
-*NumFaces* \[ in\]
+*NumFaces* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Numero di visi per la mesh. L'intervallo valido per questo numero è maggiore di 0 e uno minore del valore DWORD massimo, in genere 2 ³ ²-1, perché l'ultimo indice è riservato.
+Numero di visi per la mesh. L'intervallo valido per questo numero è maggiore di 0 e uno minore del valore DWORD massimo, in genere 2 °-1, perché l'ultimo indice è riservato.
 
 </dd> <dt>
 
-*NumVertices* \[ in\]
+*NumVertices* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -63,39 +63,39 @@ Numero di vertici per la mesh. Questo parametro deve essere maggiore di 0.
 
 </dd> <dt>
 
-*Opzioni* \[ di in\]
+*Opzioni* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinazione di uno o più flag dell'enumerazione [**D3DXMESH**](./d3dxmesh.md) , che specifica le opzioni di creazione per la mesh.
+Combinazione di uno o più flag [**dell'enumerazione D3DXMESH,**](./d3dxmesh.md) specificando le opzioni di creazione per la mesh.
 
 </dd> <dt>
 
-*FVF* \[ in\]
+*FVF* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinazione di [D3DFVF](d3dfvf.md) che descrive il formato del vertice per la mesh restituita. Questa funzione non supporta D3DFVF \_ XYZRHW.
+Combinazione [di D3DFVF](d3dfvf.md) che descrive il formato dei vertici per la mesh restituita. Questa funzione non supporta D3DFVF \_ XYZRHW.
 
 </dd> <dt>
 
-*pD3DDevice* \[ in\]
+*pD3DDevice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore a un'interfaccia [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , l'oggetto dispositivo da associare alla mesh.
+Puntatore a [**un'interfaccia IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) l'oggetto dispositivo da associare alla mesh.
 
 </dd> <dt>
 
-*ppMesh* \[ out\]
+*ppMesh* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)\***
 
-Indirizzo di un puntatore a un'interfaccia [**ID3DXMesh**](id3dxmesh.md) , che rappresenta l'oggetto mesh creato.
+Indirizzo di un puntatore a [**un'interfaccia ID3DXMesh,**](id3dxmesh.md) che rappresenta l'oggetto mesh creato.
 
 </dd> </dl>
 
@@ -103,7 +103,7 @@ Indirizzo di un puntatore a un'interfaccia [**ID3DXMesh**](id3dxmesh.md) , che r
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -111,8 +111,8 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

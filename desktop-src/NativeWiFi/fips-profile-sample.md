@@ -1,5 +1,5 @@
 ---
-description: Utilizzato per connettersi a una rete che richiede impostazioni di sicurezza conformi allo standard FIPS (Federal Information Processing Standards) 140-2.
+description: Usato per connettersi a una rete che richiede impostazioni di sicurezza conformi agli standard FIPS (Federal Information Processing Standards) 140-2.
 ms.assetid: 169df4a3-e8b9-4f05-874f-a7eef6658d01
 title: Esempio di profilo FIPS
 ms.topic: article
@@ -9,20 +9,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f6d24f82a815c752a662af5f093dd9a7c34de33d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 688a5811407d8a0d48963a54db9fc0d717b75a719ba8879ba20f1e83cbf7012e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104131835"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801291"
 ---
 # <a name="fips-profile-sample"></a>Esempio di profilo FIPS
 
-L'esempio di profilo FIPS può essere usato per connettersi a una rete che richiede impostazioni di sicurezza conformi allo standard FIPS (Federal Information Processing Standards) 140-2. Per ulteriori informazioni su FIPS, vedere [**FIPSMode**](wlan-profileschema-fipsmode-authencryption-element.md).
+L'esempio di profilo FIPS può essere usato per connettersi a una rete che richiede impostazioni di sicurezza conformi agli standard FIPS (Federal Information Processing Standards) 140-2. Per altre informazioni su FIPS, vedere [**FIPSMode**](wlan-profileschema-fipsmode-authencryption-element.md).
 
-**Windows 7 e Windows Server 2008 R2 con il servizio LAN wireless installato:** Le modifiche sono implementate in Windows 7 e Windows Server 2008 R2 con il servizio LAN wireless installato per ottimizzare le prestazioni di rete wireless. L'impostazione predefinita per il [**commutatore autoswitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) quando questo elemento non è impostato in un profilo LAN wireless è cambiata. L'impostazione predefinita viene modificata in "false" in Windows 7 e Windows Server 2008 R2 con il servizio LAN wireless installato. L'impostazione predefinita è "true" in Windows Server 2008 e Windows Vista. Per ulteriori informazioni, fare riferimento alla descrizione dell'elemento dello schema [**autoswitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) .
+**Windows 7 e Windows Server 2008 R2 con il servizio LAN wireless installato:** Le modifiche vengono implementate in Windows 7 e Windows Server 2008 R2 con il servizio LAN wireless installato per ottimizzare le prestazioni di rete wireless. L'impostazione predefinita per [**autoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) quando questo elemento non è impostato in un profilo LAN wireless è stato modificato. L'impostazione predefinita viene modificata in "false" Windows 7 e Windows Server 2008 R2 con il servizio LAN wireless installato. L'impostazione predefinita era "true" Windows Server 2008 e Windows Vista. Per altre informazioni, vedere la descrizione dell'elemento dello schema [**autoSwitch.**](wlan-profileschema-autoswitch-wlanprofile-element.md)
 
-**Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** Il [**nome**](wlan-profileschema-name-wlanprofile-element.md) figlio dell'elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) viene ignorato. Il nome del profilo, come archiviato nell'archivio profili, deriva dal [**nome**](wlan-profileschema-name-ssid-element.md) figlio dell'elemento [**SSID**](wlan-profileschema-ssid-ssidconfig-element.md) . L'elemento [**FIPSMode**](wlan-profileschema-fipsmode-authencryption-element.md) non è supportato.
+**Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** Il [**nome**](wlan-profileschema-name-wlanprofile-element.md) figlio dell'elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) viene ignorato. Il nome del profilo, archiviato nell'archivio profili, deriva dal nome [**figlio**](wlan-profileschema-name-ssid-element.md) [**dell'elemento SSID.**](wlan-profileschema-ssid-ssidconfig-element.md) [**L'elemento FIPSMode**](wlan-profileschema-fipsmode-authencryption-element.md) non è supportato.
 
 ``` syntax
 <?xml version="1.0" encoding="US-ASCII"?>

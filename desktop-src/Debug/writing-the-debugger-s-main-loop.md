@@ -1,27 +1,27 @@
 ---
 description: Il debugger usa la funzione WaitForDebugEvent all'inizio del ciclo principale.
 ms.assetid: 5a45854e-2711-49d5-982b-6b85248ec632
-title: Scrittura del ciclo principale del debugger
+title: Scrittura del ciclo main del debugger
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f21c56364c314c676c5fd5dbb1cd6e9d1acd63e6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6695488e6391fa83a7d8aea999487beaae30360786872e3c345d52c201494cc9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103891"
 ---
-# <a name="writing-the-debuggers-main-loop"></a>Scrittura del ciclo principale del debugger
+# <a name="writing-the-debuggers-main-loop"></a>Scrittura del ciclo main del debugger
 
-Il debugger usa la funzione [**WaitForDebugEvent**](/windows/win32/api/debugapi/nf-debugapi-waitfordebugevent) all'inizio del ciclo principale. Questa funzione blocca il debugger fino a quando non si verifica un evento di debug. Quando si verifica l'evento di debug, il sistema sospende tutti i thread nel processo di cui è in corso il debug e invia una notifica al debugger dell'evento.
+Il debugger usa la [**funzione WaitForDebugEvent**](/windows/win32/api/debugapi/nf-debugapi-waitfordebugevent) all'inizio del ciclo principale. Questa funzione blocca il debugger fino a quando non si verifica un evento di debug. Quando si verifica l'evento di debug, il sistema sospende tutti i thread del processo di cui è in corso il debug e invia una notifica al debugger dell'evento.
 
-Il debugger può interagire con l'utente o modificare lo stato del processo di cui è in corso il debug usando le funzioni [**GetThreadContext**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getthreadcontext), [**GetThreadSelectorEntry**](/windows/desktop/api/WinBase/nf-winbase-getthreadselectorentry), [**ReadProcessMemory**](/windows/win32/api/memoryapi/nf-memoryapi-readprocessmemory), [**SetThreadContext**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadcontext)e [**WriteProcessMemory**](/windows/win32/api/memoryapi/nf-memoryapi-writeprocessmemory) . **GetThreadSelectorEntry** restituisce la voce della tabella descrittore per un selettore e un thread specificati. I debugger utilizzano la voce della tabella descrittore per convertire un indirizzo relativo a un segmento in un indirizzo virtuale lineare. Le funzioni **ReadProcessMemory** e **WriteProcessMemory** richiedono indirizzi virtuali lineari.
+Il debugger può interagire con l'utente o modificare lo stato del processo in fase di debug usando le funzioni [**GetThreadContext**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getthreadcontext), [**GetThreadSelectorEntry**](/windows/desktop/api/WinBase/nf-winbase-getthreadselectorentry), [**ReadProcessMemory**](/windows/win32/api/memoryapi/nf-memoryapi-readprocessmemory), [**SetThreadContext**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadcontext)e [**WriteProcessMemory**](/windows/win32/api/memoryapi/nf-memoryapi-writeprocessmemory) . **GetThreadSelectorEntry restituisce** la voce della tabella dei descrittori per un selettore e un thread specificati. I debugger usano la voce della tabella dei descrittori per convertire un indirizzo relativo al segmento in un indirizzo virtuale lineare. Le **funzioni ReadProcessMemory** **e WriteProcessMemory** richiedono indirizzi virtuali lineari.
 
-I debugger leggono spesso la memoria del processo di cui è in corso il debug e scrivono la memoria che contiene le istruzioni per la cache delle istruzioni. Una volta scritte le istruzioni, il debugger chiama la funzione [**FlushInstructionCache**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-flushinstructioncache) per eseguire le istruzioni memorizzate nella cache.
+I debugger leggono spesso la memoria del processo in fase di debug e scrivono la memoria che contiene istruzioni nella cache delle istruzioni. Dopo aver scritto le istruzioni, il debugger chiama la [**funzione FlushInstructionCache**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-flushinstructioncache) per eseguire le istruzioni memorizzate nella cache.
 
-Il debugger usa la funzione [**ContinueDebugEvent**](/windows/win32/api/debugapi/nf-debugapi-continuedebugevent) alla fine del relativo ciclo principale. Questa funzione consente il processo di cui è in corso il debug per continuare l'esecuzione.
+Il debugger usa [**la funzione ContinueDebugEvent**](/windows/win32/api/debugapi/nf-debugapi-continuedebugevent) alla fine del ciclo principale. Questa funzione consente al processo di cui è in corso il debug di continuare l'esecuzione.
 
-Nell'esempio seguente vengono utilizzate le funzioni [**WaitForDebugEvent**](/windows/win32/api/debugapi/nf-debugapi-waitfordebugevent) e [**ContinueDebugEvent**](/windows/win32/api/debugapi/nf-debugapi-continuedebugevent) per illustrare il modo in cui un debugger semplice può essere organizzato.
+L'esempio seguente usa [**le funzioni WaitForDebugEvent**](/windows/win32/api/debugapi/nf-debugapi-waitfordebugevent) e [**ContinueDebugEvent**](/windows/win32/api/debugapi/nf-debugapi-continuedebugevent) per illustrare l'organizzazione di un debugger semplice.
 
 
 ```C++

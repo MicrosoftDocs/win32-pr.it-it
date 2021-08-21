@@ -1,7 +1,7 @@
 ---
-description: Ottiene il nome di un'animazione, dato il relativo indice.
+description: Ottiene il nome di un'animazione, in base al relativo indice.
 ms.assetid: vs|directx_sdk|~\id3dxanimationset__getanimationnamebyindex.htm
-title: 'Metodo ID3DXAnimationSet:: GetAnimationNameByIndex (D3dx9anim. h)'
+title: Metodo ID3DXAnimationSet::GetAnimationNameByIndex (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 820b21fa69fd7007bdd1971e83ea44368dce5cc2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: dfcc939cb498906ad57798bdb1fd2891f060b067cff76255123e48b24bce955f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987801"
 ---
-# <a name="id3dxanimationsetgetanimationnamebyindex-method"></a>Metodo ID3DXAnimationSet:: GetAnimationNameByIndex
+# <a name="id3dxanimationsetgetanimationnamebyindex-method"></a>Metodo ID3DXAnimationSet::GetAnimationNameByIndex
 
-Ottiene il nome di un'animazione, dato il relativo indice.
+Ottiene il nome di un'animazione, in base al relativo indice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,16 +41,16 @@ HRESULT GetAnimationNameByIndex(
 
 <dl> <dt>
 
-*Indice* \[ di in\]
+*Indice* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Indice dell'animazione.
 
 </dd> <dt>
 
-*ppName* \[ out\]
+*ppName* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)\***
@@ -63,7 +63,7 @@ Indirizzo di un puntatore a una stringa che riceve il nome dell'animazione.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-I valori restituiti da questo metodo sono implementati da un programmatore di applicazioni. In generale, se non si verificano errori, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo per restituire un messaggio di errore appropriato da [D3DERR](d3derr.md) o [**D3DXERR**](./d3dxerr.md).
+I valori restituiti di questo metodo vengono implementati da un programmatore di applicazioni. In generale, se non si verifica alcun errore, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo per restituire un messaggio di errore appropriato [da D3DERR](d3derr.md) o [**D3DXERR**](./d3dxerr.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ I valori restituiti da questo metodo sono implementati da un programmatore di ap
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
