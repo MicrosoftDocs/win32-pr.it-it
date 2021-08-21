@@ -4,9 +4,9 @@ description: Chiamato quando il controllo client rileva un errore irreversibile.
 ms.assetid: 13a5eb2e-d847-4561-b30b-3f23a0579b4d
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnFatalError
-- Metodo OnFatalError Servizi Desktop remoto, interfaccia IMsTscAxEvents
-- Interfaccia IMsTscAxEvents Servizi Desktop remoto, metodo OnFatalError
+- Metodo OnFatalError Servizi Desktop remoto
+- Metodo OnFatalError Servizi Desktop remoto , interfaccia IMsTscAxEvents
+- Interfaccia IMsTscAxEvents Servizi Desktop remoto , metodo OnFatalError
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73402ac178bcb2ac3dc03c0adda092d3b49f6ba3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 47a10315eca4fcbf96edf123699614d29a2c0b8974f563c52148b5de75310fc6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000681"
 ---
-# <a name="imstscaxeventsonfatalerror-method"></a>Metodo IMsTscAxEvents:: OnFatalError
+# <a name="imstscaxeventsonfatalerror-method"></a>Metodo IMsTscAxEvents::OnFatalError
 
 Chiamato quando il controllo client rileva un errore irreversibile.
 
@@ -43,7 +43,7 @@ void OnFatalError(
 
 <dl> <dt>
 
-Codice errore  \[ in\]
+*errorCode* \[ Pollici\]
 </dt> <dd>
 
 Indica il codice di errore.
@@ -112,7 +112,7 @@ Codice di errore interno 2.
 
 </dt> <dd>
 
-Codice di errore interno 3. Lo stato non è valido.
+Codice di errore interno 3. Non si tratta di uno stato valido.
 
 </dd> <dt>
 
@@ -145,7 +145,7 @@ Si è verificato un errore irreversibile durante la connessione client.
 
 </dt> <dd>
 
-Errore di inizializzazione Winsock.
+Errore di inizializzazione winsock.
 
 </dd> </dl> </dd> </dl>
 
@@ -155,9 +155,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-In risposta a questo evento, il contenitore Visualizza un messaggio di errore e si arresta.
+In risposta a questo evento, il contenitore visualizza un messaggio di errore e si arresta.
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 

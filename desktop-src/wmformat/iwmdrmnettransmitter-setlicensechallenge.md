@@ -1,11 +1,11 @@
 ---
-title: Metodo IWMDRMNetTransmitter SetLicenseChallenge (wmdrmsdk. h)
-description: Il metodo SetLicenseChallenge elabora una richiesta di licenza inviata da un DRM di Windows Media per i dispositivi di rete Receiver.
+title: Metodo IWMDRMNetTransmitter SetLicenseChallenge (Wmdrmsdk.h)
+description: Il metodo SetLicenseChallenge elabora una richiesta di licenza inviata da un ricevitore Windows Media DRM per dispositivi di rete.
 ms.assetid: 3d4cd029-a8f5-49fc-ba8c-d8615ff94366
 keywords:
-- Metodo SetLicenseChallenge Windows Media Format
-- Metodo SetLicenseChallenge Windows Media Format, interfaccia IWMDRMNetTransmitter
-- Interfaccia IWMDRMNetTransmitter-formato Windows Media, metodo SetLicenseChallenge
+- Metodo SetLicenseChallenge windows Media Format
+- Metodo SetLicenseChallenge windows Media Format , interfaccia IWMDRMNetTransmitter
+- Metodo SetLicenseChallenge dell'interfaccia IWMDRMNetTransmitter windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94b83ca615896039a592d147fe8c14d15493cec0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 211f8de60cddb153e157af64ee300a4bbaf327d70a1564fbd9e622008c055cb9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027569"
 ---
-# <a name="iwmdrmnettransmittersetlicensechallenge-method"></a>Metodo IWMDRMNetTransmitter:: SetLicenseChallenge
+# <a name="iwmdrmnettransmittersetlicensechallenge-method"></a>Metodo IWMDRMNetTransmitter::SetLicenseChallenge
 
-Il metodo **SetLicenseChallenge** elabora una richiesta di licenza inviata da un DRM di Windows Media per i dispositivi di rete Receiver.
+Il **metodo SetLicenseChallenge** elabora una richiesta di licenza inviata da un ricevitore Windows Media DRM per dispositivi di rete.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,29 +43,29 @@ HRESULT SetLicenseChallenge(
 
 <dl> <dt>
 
-*pbLicenseChallenge* \[ in\]
+*pbLicenseChallenge* \[ Pollici\]
 </dt> <dd>
 
-Puntatore ai dati di richiesta della licenza inviati da un ricevitore.
+Puntatore ai dati di richiesta di licenza inviati da un ricevitore.
 
 </dd> <dt>
 
-*cbLicenseChallenge* \[ in\]
+*cbLicenseChallenge* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni in byte della richiesta di verifica delle licenze.
+Dimensioni della richiesta di licenza in byte.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -73,7 +73,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Se questo metodo ha esito positivo, le chiamate successive agli altri metodi di **IWMDRMNetTransmitter** utilizzeranno le informazioni nella richiesta elaborata.
+Se questo metodo ha esito positivo, le chiamate successive agli altri metodi **di IWMDRMNetTransmitter** useranno le informazioni nella richiesta elaborata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,7 +81,7 @@ Se questo metodo ha esito positivo, le chiamate successive agli altri metodi di 
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

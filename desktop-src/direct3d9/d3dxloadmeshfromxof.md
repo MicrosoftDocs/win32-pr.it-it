@@ -52,7 +52,7 @@ HRESULT D3DXLoadMeshFromXof(
 
 Tipo: **[ **LPD3DXFILEDATA**](id3dxfiledata.md)**
 
-Puntatore a [**un'interfaccia ID3DXFileData**](id3dxfiledata.md) che rappresenta l'oggetto dati del file da caricare.
+Puntatore a [**un'interfaccia ID3DXFileData,**](id3dxfiledata.md) che rappresenta l'oggetto dati del file da caricare.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Puntatore a [**un'interfaccia IDirect3DDevice9,**](/windows/win32/api/d3d9helper
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Puntatore a un buffer che contiene dati di adizia. I dati di adizia contengono una matrice di tre DWORD per viso che specificano i tre vicini per ogni viso nella mesh. Per altre informazioni sull'accesso al buffer, vedere [**ID3DXBuffer.**](id3dxbuffer.md)
+Puntatore a un buffer che contiene dati di adienza. I dati di adipenza contengono una matrice di tre DWORD per viso che specificano i tre elementi adiacenti per ogni viso nella mesh. Per altre informazioni sull'accesso al buffer, vedere [**ID3DXBuffer**](id3dxbuffer.md).
 
 </dd> <dt>
 
@@ -97,7 +97,7 @@ Indirizzo di un puntatore a [**un'interfaccia ID3DXBuffer.**](id3dxbuffer.md) Qu
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Puntatore a un buffer contenente una matrice di istanze dell'effetto, una per gruppo di attributi nella mesh restituita. Un'istanza dell'effetto è una particolare istanza di informazioni sullo stato utilizzata per inizializzare un effetto. Vedere [**D3DXEFFECTINSTANCE**](d3dxeffectinstance.md). Per altre informazioni sull'accesso al buffer, vedere [**ID3DXBuffer.**](id3dxbuffer.md)
+Puntatore a un buffer contenente una matrice di istanze dell'effetto, una per ogni gruppo di attributi nella mesh restituita. Un'istanza dell'effetto è una particolare istanza di informazioni sullo stato usate per inizializzare un effetto. Vedere [**D3DXEFFECTINSTANCE**](d3dxeffectinstance.md). Per altre informazioni sull'accesso al buffer, vedere [**ID3DXBuffer**](id3dxbuffer.md).
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Puntatore a un buffer contenente una matrice di istanze dell'effetto, una per gr
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntatore al numero [**di strutture D3DXMATERIAL**](d3dxmaterial.md) nella matrice *ppMaterials,* quando il metodo restituisce un risultato.
+Puntatore al numero [**di strutture D3DXMATERIAL**](d3dxmaterial.md) nella matrice *ppMaterials,* quando il metodo restituisce .
 
 </dd> <dt>
 
@@ -127,9 +127,9 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-Per i file mesh che non contengono informazioni sull'istanza dell'effetto, le istanze dell'effetto predefinito verranno generate dalle informazioni sui materiali nel file con estensione x. Un'istanza dell'effetto predefinito avrà valori predefiniti che corrispondono ai membri della [**struttura D3DMATERIAL9.**](d3dmaterial9.md)
+Per i file mesh che non contengono informazioni sull'istanza dell'effetto, le istanze predefinite dell'effetto verranno generate dalle informazioni sui materiali nel file con estensione x. Un'istanza di effetto predefinita avrà valori predefiniti che corrispondono ai membri della [**struttura D3DMATERIAL9.**](d3dmaterial9.md)
 
-Viene compilato anche il nome predefinito della trama, ma viene gestito in modo diverso. Il nome sarà , che corrisponde a una variabile dell'effetto in base al nome Texture0@Name "Texture0" con un'annotazione denominata "Name". Conterrà il nome del file di stringa per la trama.
+Anche il nome predefinito della trama viene compilato, ma viene gestito in modo diverso. Il nome sarà , che corrisponde a una variabile di effetto con il nome Texture0@Name "Texture0" con un'annotazione denominata "Name". Conterrà il nome del file di stringa per la trama.
 
 ## <a name="requirements"></a>Requisiti
 

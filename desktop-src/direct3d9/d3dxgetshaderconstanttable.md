@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXGetShaderConstantTable: ottiene la tabella delle costanti shader incorporata in uno shader.'
+description: 'Funzione D3DXGetShaderConstantTable: ottiene la tabella costante shader incorporata in uno shader.'
 ms.assetid: eb965074-819f-44d2-889b-6c6eada4f062
 title: Funzione D3DXGetShaderConstantTable (D3DX9Shader.h)
 ms.topic: reference
@@ -55,7 +55,7 @@ Puntatore al flusso DWORD della funzione.
 
 Tipo: **[ **LPD3DXCONSTANTTABLE**](id3dxconstanttable.md)\***
 
-Restituisce l'interfaccia della tabella costante (vedere [**ID3DXConstantTable**](id3dxconstanttable.md)) che gestisce la tabella costante.
+Restituisce l'interfaccia di tabella costante (vedere [**ID3DXConstantTable)**](id3dxconstanttable.md)che gestisce la tabella costante.
 
 </dd> </dl>
 

@@ -73,8 +73,8 @@ ms.locfileid: "118984061"
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -82,7 +82,7 @@ ms.locfileid: "118984061"
 
 <dl> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema mschapv2connectionpropertiesv1](mschapv2connectionpropertiesv1schema-schema.md)

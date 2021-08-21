@@ -1,12 +1,12 @@
 ---
-title: Proprietà GatewayUsageMethod di IMsRdpClientTransportSettings
-description: Specifica quando utilizzare un server Gateway Desktop remoto di Desktop remoto.
+title: Proprietà IMsRdpClientTransportSettings GatewayUsageMethod
+description: Specifica quando usare un server Desktop remoto Gateway Desktop remoto.
 ms.assetid: 0644c413-9ff7-42c1-a38e-e1ce546972ff
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà GatewayUsageMethod
-- Servizi Desktop remoto proprietà GatewayUsageMethod, interfaccia IMsRdpClientTransportSettings
-- Interfaccia IMsRdpClientTransportSettings Servizi Desktop remoto, proprietà GatewayUsageMethod
+- Proprietà GatewayUsageMethod Servizi Desktop remoto
+- Proprietà GatewayUsageMethod Servizi Desktop remoto , interfaccia IMsRdpClientTransportSettings
+- Interfaccia IMsRdpClientTransportSettings Servizi Desktop remoto , proprietà GatewayUsageMethod
 topic_type:
 - apiref
 api_name:
@@ -19,16 +19,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f07bc10c67d01f957e588d1b50085e57b0fa10b1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 14a177d191d3303cf44778713ebdef88db955d28ede58691bda1e9ad05aa51a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001041"
 ---
-# <a name="imsrdpclienttransportsettingsgatewayusagemethod-property"></a>Proprietà IMsRdpClientTransportSettings:: GatewayUsageMethod
+# <a name="imsrdpclienttransportsettingsgatewayusagemethod-property"></a>Proprietà IMsRdpClientTransportSettings::GatewayUsageMethod
 
-Specifica quando utilizzare un server Gateway Desktop remoto di Desktop remoto.
+Specifica quando usare un server Desktop remoto Gateway Desktop remoto.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -55,62 +55,62 @@ Variabile **ULONG** che specifica il metodo di utilizzo del server Gateway Deskt
 
 <span id="TSC_PROXY_MODE_NONE_DIRECT"></span><span id="tsc_proxy_mode_none_direct"></span>
 
-<span id="TSC_PROXY_MODE_NONE_DIRECT"></span><span id="tsc_proxy_mode_none_direct"></span>**TSC \_ \_Modalità proxy \_ Nessuna \_ diretta** (0 (0x0))
+<span id="TSC_PROXY_MODE_NONE_DIRECT"></span><span id="tsc_proxy_mode_none_direct"></span>**TSC \_ MODALITÀ \_ PROXY \_ NONE \_ DIRECT** (0 (0x0))
 
 
 </dt> <dd>
 
-Non usare un server Gateway Desktop remoto. Nell'interfaccia utente del client Connessione Desktop remoto (RDC), la casella **di controllo Ignora server Gateway Desktop remoto per indirizzi locali** è deselezionata.
+Non usare un server Gateway Desktop remoto. Nell'interfaccia utente del client Connessione Desktop remoto (RDC) la casella di controllo **Ignora il server Gateway Desktop** remoto per gli indirizzi locali è deselezionata.
 
 </dd> <dt>
 
 <span id="TSC_PROXY_MODE_DIRECT"></span><span id="tsc_proxy_mode_direct"></span>
 
-<span id="TSC_PROXY_MODE_DIRECT"></span><span id="tsc_proxy_mode_direct"></span>**TSC \_ \_Modalità proxy \_ diretta** (1 (0x1))
+<span id="TSC_PROXY_MODE_DIRECT"></span><span id="tsc_proxy_mode_direct"></span>**TSC \_ MODALITÀ \_ PROXY \_ DIRETTA** (1 (0x1))
 
 
 </dt> <dd>
 
-Usare sempre un server Gateway Desktop remoto. Nell'interfaccia utente del client RDC, la casella **di controllo Ignora server Gateway Desktop remoto per indirizzi locali** è deselezionata.
+Usare sempre un server Gateway Desktop remoto. Nell'interfaccia utente del client RdC la casella di controllo **Ignora il server Gateway Desktop** remoto per gli indirizzi locali è deselezionata.
 
 </dd> <dt>
 
 <span id="TSC_PROXY_MODE_DETECT"></span><span id="tsc_proxy_mode_detect"></span>
 
-<span id="TSC_PROXY_MODE_DETECT"></span><span id="tsc_proxy_mode_detect"></span>**TSC \_ \_ \_ Rilevamento modalità proxy** (2 (0x2))
+<span id="TSC_PROXY_MODE_DETECT"></span><span id="tsc_proxy_mode_detect"></span>**TSC \_ RILEVAMENTO \_ \_ MODALITÀ PROXY** (2 (0x2))
 
 
 </dt> <dd>
 
-Utilizzare un server Gateway Desktop remoto se non è possibile effettuare una connessione diretta al server Host sessione Desktop remoto. Nell'interfaccia utente del client RDC è selezionata la casella **di controllo Ignora server Gateway Desktop remoto per indirizzi locali** .
+Usare un server Gateway Desktop remoto se non è possibile stabilire una connessione diretta al server Host sessione Desktop remoto. Nell'interfaccia utente del client RdC la casella di controllo **Ignora il server Gateway Desktop** remoto per gli indirizzi locali è selezionata.
 
 </dd> <dt>
 
 <span id="TSC_PROXY_MODE_DEFAULT"></span><span id="tsc_proxy_mode_default"></span>
 
-<span id="TSC_PROXY_MODE_DEFAULT"></span><span id="tsc_proxy_mode_default"></span>**TSC \_ \_ \_ Impostazione predefinita modalità proxy** (3 (0x3))
+<span id="TSC_PROXY_MODE_DEFAULT"></span><span id="tsc_proxy_mode_default"></span>**TSC \_ MODALITÀ \_ \_ PROXY PREDEFINITA** (3 (0x3))
 
 
 </dt> <dd>
 
-Utilizzare le impostazioni predefinite del server Gateway Desktop remoto.
+Usare le impostazioni predefinite del server Gateway Desktop remoto.
 
 </dd> <dt>
 
 <span id="TSC_PROXY_MODE_NONE_DETECT"></span><span id="tsc_proxy_mode_none_detect"></span>
 
-<span id="TSC_PROXY_MODE_NONE_DETECT"></span><span id="tsc_proxy_mode_none_detect"></span>**TSC \_ \_ \_ \_ Rilevamento nessuna modalità proxy** (4 (0x4))
+<span id="TSC_PROXY_MODE_NONE_DETECT"></span><span id="tsc_proxy_mode_none_detect"></span>**TSC \_ MODALITÀ \_ PROXY \_ NONE \_ DETECT** (4 (0x4))
 
 
 </dt> <dd>
 
-Non usare un server Gateway Desktop remoto. Nell'interfaccia utente del client RDC è selezionata la casella **di controllo Ignora server Gateway Desktop remoto per indirizzi locali** .
+Non usare un server Gateway Desktop remoto. Nell'interfaccia utente del client RdC la casella di controllo **Ignora il server Gateway Desktop** remoto per gli indirizzi locali è selezionata.
 
 </dd> </dl>
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -122,7 +122,7 @@ Restituisce **\_ OK** se ha esito positivo.
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                   |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>           |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>           |
-| IID<br/>                      | IID \_ IMsRdpClientTransportSettings è definito come 720298C0-A099-46f5-9F82-96921BAE4701<br/> |
+| IID<br/>                      | IMSRdpClientTransportSettings IID è definito come \_ 720298C0-A099-46f5-9F82-96921BAE4701<br/> |
 
 
 

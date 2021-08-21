@@ -1,6 +1,6 @@
 ---
-title: Metodo IBackgroundCopyFile2 GetFileRanges (Deliveryoptimization. h)
-description: Recupera gli intervalli che si desidera scaricare dal file remoto.
+title: Metodo IBackgroundCopyFile2 GetFileRanges (Deliveryoptimization.h)
+description: Recupera gli intervalli da scaricare dal file remoto.
 ms.assetid: 19B7B4FC-371F-482B-B997-C240B5483F4D
 keywords:
 - Metodo GetFileRanges
@@ -17,16 +17,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 37352176ca460587343bed0a154ee992c12c2fff
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 156bb2eb1e136593bfec4310599200f2d2800e271defa0e4a3259a4a67acb648
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047079"
 ---
-# <a name="ibackgroundcopyfile2getfileranges-method"></a>Metodo IBackgroundCopyFile2:: GetFileRanges
+# <a name="ibackgroundcopyfile2getfileranges-method"></a>Metodo IBackgroundCopyFile2::GetFileRanges
 
-Recupera gli intervalli che si desidera scaricare dal file remoto.
+Recupera gli intervalli da scaricare dal file remoto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,30 +44,30 @@ HRESULT GetFileRanges(
 
 <dl> <dt>
 
-*RangeCount* \[ in uscita\]
+*RangeCount* \[ in, out\]
 </dt> <dd>
 
-Numero di elementi negli *intervalli*.
+Numero di elementi in *Ranges*.
 
 </dd> <dt>
 
-*Intervalli* \[ out\]
+*Intervalli* \[ Cambio\]
 </dt> <dd>
 
-Matrice di strutture di [**BG_FILE_RANGE**](bg-file-range.md) che specificano gli intervalli da scaricare. Al termine, chiamare la funzione [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) per liberare gli *intervalli*.
+Matrice di [**BG_FILE_RANGE**](bg-file-range.md) che specificano gli intervalli da scaricare. Al termine, chiamare la [**funzione CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) per liberare *Ranges*.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce i valori restituiti seguenti e altri.
+Questo metodo restituisce i valori restituiti seguenti, nonché altri.
 
 
 
 | Codice restituito                                                                              | Descrizione                                                                                                                                   |
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>S_OK * * * *</dt> </dl> | Operazione riuscita<br/>                                                                                                                            |
-| <dl> <dt>**S_FALSE**</dt> </dl>  | Non è stato specificato alcun intervallo oppure il processo è un processo di caricamento o di caricamento-risposta. *RangeCount* è impostato su zero e l' *intervallo* è impostato su **null**.<br/> |
+| <dl> <dt>S_OK****</dt> </dl> | Operazione riuscita<br/>                                                                                                                            |
+| <dl> <dt>**S_FALSE**</dt> </dl>  | Non è stato specificato alcun intervallo oppure il processo è un processo di caricamento o caricamento-risposta. *RangeCount* è impostato su zero e *Ranges* è impostato su **NULL.**<br/> |
 
 
 
@@ -79,13 +79,13 @@ Questo metodo restituisce i valori restituiti seguenti e altri.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                                           |
-| Server minimo supportato<br/> | Windows Server, versione 1709 \[ solo per le app desktop\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Server, solo app desktop versione 1709 \[\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
-| IID<br/>                      | IID_IBackgroundCopyFile2 viene definito come 83e81b93-0873-474d-8A8C-f2018b1a939c<br/>             |
+| IID<br/>                      | IID_IBackgroundCopyFile2 definito come 83e81b93-0873-474d-8a8c-f2018b1a939c<br/>             |
 
 
 

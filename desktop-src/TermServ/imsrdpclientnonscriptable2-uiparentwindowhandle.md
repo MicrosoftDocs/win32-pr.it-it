@@ -1,18 +1,18 @@
 ---
 title: Proprietà UIParentWindowHandle di IMsRdpClientNonScriptable2
-description: Imposta o recupera l'handle della finestra che deve essere la finestra padre di tutte le finestre di dialogo visualizzate dal controllo. Ciò consente a qualsiasi finestra visualizzata dal controllo di essere modale correttamente rispetto a qualsiasi finestra visualizzata dall'applicazione padre.
+description: Imposta o recupera l'handle di finestra come finestra padre per tutte le finestre di dialogo visualizzate dal controllo . In questo modo tutte le finestre visualizzate dal controllo possono essere correttamente modali rispetto alle finestre visualizzate dall'applicazione padre.
 ms.assetid: 5ecf1fc3-492e-4faf-89c5-7f7abb3778a0
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà UIParentWindowHandle
-- Servizi Desktop remoto proprietà UIParentWindowHandle, interfaccia IMsRdpClientNonScriptable2
-- Interfaccia IMsRdpClientNonScriptable2 Servizi Desktop remoto, proprietà UIParentWindowHandle
-- Servizi Desktop remoto proprietà UIParentWindowHandle, interfaccia IMsRdpClientNonScriptable3
-- Interfaccia IMsRdpClientNonScriptable3 Servizi Desktop remoto, proprietà UIParentWindowHandle
-- Servizi Desktop remoto proprietà UIParentWindowHandle, interfaccia IMsRdpClientNonScriptable4
-- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto, proprietà UIParentWindowHandle
-- Servizi Desktop remoto proprietà UIParentWindowHandle, interfaccia IMsRdpClientNonScriptable5
-- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto, proprietà UIParentWindowHandle
+- Proprietà UIParentWindowHandle Servizi Desktop remoto
+- Proprietà UIParentWindowHandle Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable2
+- Interfaccia IMsRdpClientNonScriptable2 Servizi Desktop remoto , proprietà UIParentWindowHandle
+- Proprietà UIParentWindowHandle Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable3
+- Interfaccia IMsRdpClientNonScriptable3 Servizi Desktop remoto , proprietà UIParentWindowHandle
+- Proprietà UIParentWindowHandle Servizi Desktop remoto , interfaccia IMsRdpClientNonScriptable4
+- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto , proprietà UIParentWindowHandle
+- Proprietà UIParentWindowHandle Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable5
+- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto , proprietà UIParentWindowHandle
 topic_type:
 - apiref
 api_name:
@@ -34,16 +34,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5526fd1a699c87e32c6acadd238c2144d00a10be
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0a2fb93fb7e68f7fe3755e3595d43129c5bf7ca4fa2a767a2b6a1786a803209f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001107"
 ---
-# <a name="imsrdpclientnonscriptable2uiparentwindowhandle-property"></a>Proprietà IMsRdpClientNonScriptable2:: UIParentWindowHandle
+# <a name="imsrdpclientnonscriptable2uiparentwindowhandle-property"></a>Proprietà IMsRdpClientNonScriptable2::UIParentWindowHandle
 
-Imposta o recupera l'handle della finestra che deve essere la finestra padre di tutte le finestre di dialogo visualizzate dal controllo. Ciò consente a qualsiasi finestra visualizzata dal controllo di essere modale correttamente rispetto a qualsiasi finestra visualizzata dall'applicazione padre.
+Imposta o recupera l'handle di finestra come finestra padre per tutte le finestre di dialogo visualizzate dal controllo . In questo modo tutte le finestre visualizzate dal controllo possono essere correttamente modali rispetto alle finestre visualizzate dall'applicazione padre.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -64,15 +64,15 @@ HRESULT get_UIParentWindowHandle(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Nuovo handle della finestra.
+Nuovo handle di finestra.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,7 +84,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008, Windows Server 2008 con SP1<br/>                                  |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>        |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>        |
-| IID<br/>                      | IID \_ IMsRdpClientNonScriptable2 è definito come 17a5e535-4072-4fa4-AF32-c8d0d47345e9<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientNonScriptable2 è definito come 17a5e535-4072-4fa4-af32-c8d0d47345e9<br/> |
 
 
 

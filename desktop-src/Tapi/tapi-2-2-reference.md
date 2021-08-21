@@ -1,22 +1,22 @@
 ---
-description: In questa sezione vengono descritti gli elementi TAPI necessari per la scrittura di un'applicazione di telefonia.
+description: Questa sezione descrive gli elementi TAPI necessari per la scrittura di un'applicazione di telefonia.
 ms.assetid: d703b414-1389-416c-8e94-c1931979f0c9
-title: Guida di riferimento a TAPI 2,2
+title: Informazioni di riferimento su TAPI 2.2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a379aacc191dde8ab542633b33a056c41fe4643e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8997822193eb73a66c5e04aeac16edd1b85ee1772663442f108271d15f6dc322
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060349"
 ---
-# <a name="tapi-22-reference"></a>Guida di riferimento a TAPI 2,2
+# <a name="tapi-22-reference"></a>Informazioni di riferimento su TAPI 2.2
 
-In questa sezione vengono descritti gli elementi TAPI necessari per la scrittura di un'applicazione di telefonia, ovvero:
+In questa sezione vengono descritti gli elementi TAPI necessari per la scrittura di un'applicazione di telefonia, ad esempio:
 
--   [Riferimento rapido alle funzioni TAPI](tapi-quick-function-reference.md)
--   [Supporto Unicode per TAPI](tapi-unicode-support.md)
+-   [Informazioni di riferimento sulla funzione rapida TAPI](tapi-quick-function-reference.md)
+-   [Supporto Unicode TAPI](tapi-unicode-support.md)
 -   [Funzioni TAPI](tapi-functions.md)
 -   [Strutture TAPI](tapi-structures.md)
 -   [Messaggi TAPI](tapi-messages.md)

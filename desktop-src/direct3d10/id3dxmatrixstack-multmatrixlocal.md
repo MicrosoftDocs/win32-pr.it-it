@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 4b777bd729810b6fd63bd71def9858203b2ac559
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 52ca669b6b0136c0c1ae094958f3ffe4d27d5d86f291f3f203d8088a662cfd61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046859"
 ---
 # <a name="id3dxmatrixstackmultmatrixlocal-method-d3dx10h"></a>Metodo ID3DXMATRIXStack::MultMatrixLocal (D3DX10.h)
 
@@ -57,7 +57,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo moltiplica a sinistra la matrice specificata nella matrice corrente (la trasformazione riguarda l'origine locale dell'oggetto).
+Questo metodo moltiplica a sinistra la matrice specificata per la matrice corrente (la trasformazione riguarda l'origine locale dell'oggetto).
 
 
 ```

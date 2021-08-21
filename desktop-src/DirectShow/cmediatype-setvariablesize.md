@@ -1,7 +1,7 @@
 ---
 description: Il metodo SetVariableSize specifica che gli esempi non hanno dimensioni fisse.
 ms.assetid: 2a207cdb-f8e6-44aa-8bf6-868267aeb42d
-title: Metodo CMediaType. SetVariableSize (mtype. h)
+title: Metodo CMediaType.SetVariableSize (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4621a639b3bc18382bc41ae9425c4de50db920ff
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 118167d0068c058c925e5b63e2e951ff860917c40a5c3533daf9f02e6927649a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073965"
 ---
-# <a name="cmediatypesetvariablesize-method"></a>CMediaType. SetVariableSize, metodo
+# <a name="cmediatypesetvariablesize-method"></a>Metodo CMediaType.SetVariableSize
 
 Il `SetVariableSize` metodo specifica che gli esempi non hanno dimensioni fisse.
 
@@ -46,7 +46,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo imposta il membro **bFixedSizeSamples** su **false**. Le chiamate successive al metodo [**CMediaType:: GetSampleSize**](cmediatype-getsamplesize.md) restituiscono zero.
+Questo metodo imposta il **membro bFixedSizeSamples** su **FALSE.** Le chiamate successive al [**metodo CMediaType::GetSampleSize**](cmediatype-getsamplesize.md) restituiscono zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Questo metodo imposta il membro **bFixedSizeSamples** su **false**. Le chiamate 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Mtype. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Mtype.h (includere Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

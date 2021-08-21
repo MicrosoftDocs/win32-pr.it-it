@@ -1,7 +1,7 @@
 ---
-description: Il metodo arrestato determina se il filtro è attualmente arrestato.
+description: Il metodo IsStopped determina se il filtro è attualmente arrestato.
 ms.assetid: 89358523-d8e2-4c79-9ab8-6cc2f77a277f
-title: Metodo CBaseFilter. Stopped (Amfilter. h)
+title: Metodo CBaseFilter.IsStopped (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 681ceb0a8dcc6b82a2bd6845119e2ca7fe0128eb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8e7b2e5e74eafe118c6e1297320d33b222083c0b132311a8c99ec6a40d6d4531
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017179"
 ---
-# <a name="cbasefilterisstopped-method"></a>Metodo CBaseFilter. Stopped
+# <a name="cbasefilterisstopped-method"></a>Metodo CBaseFilter.IsStopped
 
 Il `IsStopped` metodo determina se il filtro è attualmente arrestato.
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se il filtro è arrestato o **false** in caso contrario.
+Restituisce **TRUE se** il filtro viene arrestato oppure FALSE in **caso** contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce **true** se il filtro è arrestato o **false** in caso contrario.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: f99a572e-110d-4971-a660-e861dbe32cfe
 title: Notifiche della finestra
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: faede9cee74618aa29a65da601c00296fed06425
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2070211ce03418670baeb9a293354f0440b22c9e977c096e3fdf6ae83c6cb88e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028199"
 ---
 # <a name="window-notifications"></a>Notifiche della finestra
 
@@ -19,11 +19,11 @@ ms.locfileid: "108083359"
 -   [**WM \_ CANCELMODE**](wm-cancelmode.md)
 -   [**WM \_ CHILDACTIVATE**](wm-childactivate.md)
 -   [**WM \_ CLOSE**](wm-close.md)
--   [**COMPATTAZIONE DI WM \_**](wm-compacting.md)
--   [**CREAZIONE DI WM \_**](wm-create.md)
+-   [**COMPATTAZIONE \_ WM**](wm-compacting.md)
+-   [**WM \_ CREATE**](wm-create.md)
 -   [**WM \_ DESTROY**](wm-destroy.md)
 -   [**WM \_ DPICHANGED**](../hidpi/wm-dpichanged.md)
--   [**ABILITAZIONE DI \_ WM**](wm-enable.md)
+-   [**WM \_ ENABLE**](wm-enable.md)
 -   [**WM \_ ENTERSIZEMOVE**](wm-entersizemove.md)
 -   [**WM \_ EXITSIZEMOVE**](wm-exitsizemove.md)
 -   [**WM \_ GETICON**](wm-geticon.md)
@@ -31,7 +31,7 @@ ms.locfileid: "108083359"
 -   [**WM \_ INPUTLANGCHANGE**](wm-inputlangchange.md)
 -   [**WM \_ INPUTLANGCHANGEREQUEST**](wm-inputlangchangerequest.md)
 -   [**WM \_ MOVE**](wm-move.md)
--   [**SPOSTAMENTO DI WM \_**](wm-moving.md)
+-   [**WM \_ MOVING**](wm-moving.md)
 -   [**WM \_ NCACTIVATE**](wm-ncactivate.md)
 -   [**WM \_ NCCALCSIZE**](wm-nccalcsize.md)
 -   [**WM \_ NCCREATE**](wm-nccreate.md)

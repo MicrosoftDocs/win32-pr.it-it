@@ -1,5 +1,5 @@
 ---
-description: Specifica il protocollo di autenticazione da utilizzare per l'attivazione di un contesto del protocollo PDP (Packet Data Protocol).
+description: Specifica il protocollo di autenticazione da usare per attivare un contesto PDP (Packet Data Protocol).
 ms.assetid: cd3c28d9-8663-4672-94ba-0a53861086cb
 title: Elemento AuthProtocol (contextType)
 ms.topic: reference
@@ -11,31 +11,31 @@ api_name:
 - AuthProtocol
 api_type:
 - Schema
-ms.openlocfilehash: 8626d17a234784491c5f186f800943a6ab208bf0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 65b944b2966c9b5cac307f6f8efe6af2f42a1ffa5b4f2f400074caa0efe9f84e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975260"
 ---
 # <a name="authprotocol-contexttype-element"></a>Elemento AuthProtocol (contextType)
 
-L'elemento **AuthProtocol (ContextType)** specifica il protocollo di autenticazione da utilizzare per l'attivazione di un contesto del protocollo PDP (Packet Data Protocol).
+**L'elemento AuthProtocol (contextType)** specifica il protocollo di autenticazione da usare per attivare un contesto PDP (Packet Data Protocol).
 
 L'elemento può avere uno dei valori seguenti.
 
 | Valore      | Significato                                                                 |
 |------------|-------------------------------------------------------------------------|
-| NESSUNO     | Nessun protocollo di autenticazione.                                             |
-| PAP      | Autenticazione della password non crittografata.                                    |
-| CHAP     | Challenge Handshake Authentication Protocol (CHAP).                      |
-|  MsCHAPV2 | Usare Microsoft Challenge Handshake Authentication Protocol (CHAP) v 2.0. |
+| "NONE"     | Nessun protocollo di autenticazione.                                             |
+| "PAP"      | Autenticazione con password non crittografata.                                    |
+| "CHAP"     | Challenge Handshake Authentication Protocol (CHAP).                      |
+|  MsCHAPV2" | Usare Microsoft Challenge Handshake Authentication Protocol (CHAP) v2.0. |
 
 
 
  
 
-Questo elemento è facoltativo e viene usato solo per i profili GSM. Se l'elemento non è specificato e il profilo è per un dispositivo GSM, il servizio Mobile Broadband userà **"None"**.
+Questo elemento è facoltativo e viene usato solo per i profili GSM. Se l'elemento non è specificato e il profilo è per un dispositivo GSM, il servizio Mobile Broadband userà **"NONE".**
 
 ``` syntax
 <xs:element name="AuthProtocol">
@@ -60,7 +60,7 @@ Questo elemento è facoltativo e viene usato solo per i profili GSM. Se l'elemen
 </xs:element>
 ```
 
-L'elemento **AuthProtocol** è definito dal tipo complesso [**contextType**](schema-contexttype-complextype.md) .
+**L'elemento AuthProtocol** è definito dal [**tipo complesso contextType.**](schema-contexttype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,7 +68,7 @@ L'elemento **AuthProtocol** è definito dal tipo complesso [**contextType**](sch
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                         |
 
 
@@ -80,10 +80,10 @@ L'elemento **AuthProtocol** è definito dal tipo complesso [**contextType**](sch
 **Contesto di definizione dell'elemento nello schema**
 </dt> <dt>
 
-[**contextType**](schema-contexttype-complextype.md)
+[**Contexttype**](schema-contexttype-complextype.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**Contesto (MBNProfile)**](schema-context-mbnprofile-element.md)

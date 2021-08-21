@@ -1,18 +1,18 @@
 ---
-title: Esempio di codice C/C++ durante il recupero dello stato dell'attività
+title: Esempio di codice C/C++ recupero dello stato dell'attività
 description: Questo esempio recupera lo stato corrente dell'attività e lo visualizza sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 ms.assetid: 7ad40ac7-2363-481a-87fa-18dcf2d749b3
 keywords:
 - recupero dello stato dell'attività Utilità di pianificazione
-- recupero delle proprietà degli elementi di lavoro Utilità di pianificazione, stato dell'attività
+- recupero delle proprietà dell'elemento di lavoro Utilità di pianificazione , stato dell'attività
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 068e2be84750ac8fead97eac146400139dee85fe
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 626b3e169e51deca34b8a8e4795671998e482a2640d2f222e2b734f69c5d2eb7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060249"
 ---
 # <a name="cc-code-example-retrieving-task-status"></a>Esempio di codice C/C++: recupero dello stato dell'attività
 
@@ -140,12 +140,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Esempi di Utilità di pianificazione 1,0](task-scheduler-1-0-examples.md)
+[Utilità di pianificazione 1.0 Esempi](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Proprietà WeeklyTrigger. DaysOfWeek
-description: Per gli script, ottiene o imposta i giorni della settimana in cui viene eseguita l'attività.
+title: WeeklyTrigger.DaysOfWeek - proprietà
+description: Per lo scripting, ottiene o imposta i giorni della settimana in cui viene eseguita l'attività.
 ms.assetid: 79f279d4-d6d2-428b-bbed-226e4eaaefb6
 keywords:
-- Utilità di pianificazione proprietà DaysOfWeek
-- Utilità di pianificazione proprietà DaysOfWeek, oggetto WeeklyTrigger
-- Oggetto WeeklyTrigger Utilità di pianificazione, proprietà DaysOfWeek
+- Proprietà DaysOfWeek Utilità di pianificazione
+- Proprietà DaysOfWeek Utilità di pianificazione, oggetto WeeklyTrigger
+- Proprietà WeeklyTrigger Utilità di pianificazione , DaysOfWeek
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7f0a27ef031e7baf46d2d3c0e33c23fb505c7ee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7298982dcd10078d9e8460459d38cfa77140d15607341460f0e0edec998306f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104519254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001794"
 ---
-# <a name="weeklytriggerdaysofweek-property"></a>Proprietà WeeklyTrigger. DaysOfWeek
+# <a name="weeklytriggerdaysofweek-property"></a>WeeklyTrigger.DaysOfWeek - proprietà
 
-Per gli script, ottiene o imposta i giorni della settimana in cui viene eseguita l'attività.
+Per lo scripting, ottiene o imposta i giorni della settimana in cui viene eseguita l'attività.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Maschera bit per bit che indica i giorni della settimana in cui viene eseguita l
 
 ## <a name="remarks"></a>Commenti
 
-Nella tabella seguente viene illustrato il mapping della maschera bit per bit utilizzata da questa proprietà.
+Nella tabella seguente viene illustrato il mapping della maschera bit per bit usata da questa proprietà.
 
 
 
@@ -60,7 +60,7 @@ Nella tabella seguente viene illustrato il mapping della maschera bit per bit ut
 
  
 
-Durante la lettura o la scrittura di un codice XML personalizzato per un'attività, i giorni della settimana vengono specificati utilizzando l'elemento [**DaysOfWeek**](taskschedulerschema-daysofweek-weeklyscheduletype-element.md) dello schema utilità di pianificazione.
+Quando si legge o si scrive codice XML personalizzato per un'attività, i giorni della settimana vengono specificati usando l'elemento [**DaysOfWeek**](taskschedulerschema-daysofweek-weeklyscheduletype-element.md) dello schema Utilità di pianificazione dati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,9 +68,9 @@ Durante la lettura o la scrittura di un codice XML personalizzato per un'attivit
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

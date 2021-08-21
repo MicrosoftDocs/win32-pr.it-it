@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_User_Result01_Experience02
-description: La \_ \_ classe Result01 Experience02 utente dei criteri MDM \_ \_ rappresenta i criteri di esperienza disponibili.
+title: MDM_Policy_User_Result01_Experience02 classe
+description: La classe Mdm \_ Policy \_ User \_ Result01 \_ Experience02 rappresenta i criteri di esperienza disponibili.
 ms.assetid: 729dfc75-7458-426f-8173-9ba75b4ee306
 keywords:
-- Classe MDM_Policy_User_Result01_Experience02
-- Classe MDM_Policy_User_Result01_Experience02, descritta
+- MDM_Policy_User_Result01_Experience02 classe
+- MDM_Policy_User_Result01_Experience02 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 320941108309264a2cce3be6e63edca305c1cd40
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1bf9525c484227cac0c20908470afc97b5a485ad1f699793c3517cdb73b0ae93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077045"
 ---
-# <a name="mdm_policy_user_result01_experience02-class"></a>\_Utente criteri \_ MDM \_ Result01 \_ classe Experience02
+# <a name="mdm_policy_user_result01_experience02-class"></a>Classe \_ Mdm Policy User \_ \_ Result01 \_ Experience02
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La **classe \_ \_ \_ Result01 \_ Experience02 utente dei criteri MDM** rappresenta i criteri di esperienza disponibili.
+La **classe Mdm Policy User \_ \_ \_ Result01 \_ Experience02** rappresenta i criteri di esperienza disponibili.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -52,13 +52,13 @@ class MDM_Policy_User_Result01_Experience02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ \_ Result01 \_ Experience02 dell'utente dei criteri MDM** ha questi tipi di membri:
+La **classe Mdm Policy User \_ \_ \_ Result01 \_ Experience02** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ Result01 \_ Experience02 dell'utente dei criteri MDM** ha queste proprietà.
+La **classe Mdm Policy User \_ \_ \_ Result01 \_ Experience02** ha queste proprietà.
 
 <dl> <dt>
 
@@ -68,7 +68,7 @@ La **classe \_ \_ \_ Result01 \_ Experience02 dell'utente dei criteri MDM** ha q
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -79,7 +79,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -90,7 +90,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -101,7 +101,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -112,7 +112,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -123,18 +123,18 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[ConfigureWindowsSpotlightOnLockScreen](/windows/client-management/mdm/policy-csp-experience#experience-configurewindowsspotlightonlockscreen)
+[ConfigurareWindowsSpotlightOnLockScreen](/windows/client-management/mdm/policy-csp-experience#experience-configurewindowsspotlightonlockscreen)
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -142,7 +142,7 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -151,14 +151,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica il nome del nodo padre. Per questa classe la stringa è "Experience".
+Identifica il nome del nodo padre. Per questa classe, la stringa è "Experience".
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -167,7 +167,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./User/Vendor/MSFT/Policy/Result"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./User/Vendor/MSFT/Policy/Result"
 
 </dd> </dl>
 
@@ -177,11 +177,11 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                          |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                            |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl>       |
-| DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllfile MOF</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl>       |
+| DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

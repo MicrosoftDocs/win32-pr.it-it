@@ -1,20 +1,20 @@
 ---
-title: Metodi di Win32_TSLicenseKeyPack
-description: La \_ classe Win32 TSLicenseKeyPack espone i metodi seguenti.
+title: Win32_TSLicenseKeyPack metodi
+description: La classe Win32 \_ TSLicenseKeyPack espone i metodi seguenti.
 ms.assetid: 0E0D4B49-F90C-411B-86D5-8C92EF9C7CF0
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1655afd2fae64aefcfde1fe1e5285feede183c1a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b434fdc0b3c6720066d5e2d5ce0ec7155beb27145390a74914fcd03233c1adbf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058349"
 ---
-# <a name="win32_tslicensekeypack-methods"></a>\_Metodi Win32 TSLicenseKeyPack
+# <a name="win32_tslicensekeypack-methods"></a>Metodi di \_ Win32 TSLicenseKeyPack
 
-La classe [**Win32 \_ TSLicenseKeyPack**](win32-tslicensekeypack.md) espone i metodi seguenti.
+La [**classe Win32 \_ TSLicenseKeyPack**](win32-tslicensekeypack.md) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -35,9 +35,9 @@ La classe [**Win32 \_ TSLicenseKeyPack**](win32-tslicensekeypack.md) espone i me
 -   [**Metodo UninstallLicenseKeyPack**](win32-tslicensekeypack-uninstalllicensekeypack.md)
 -   [**Metodo UninstallLicenseKeyPackWithId**](win32-tslicensekeypack-uninstalllicensekeypackwithid.md)
 
- 
+ 
 
- 
+ 
 
 
 

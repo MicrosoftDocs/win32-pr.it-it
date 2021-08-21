@@ -1,46 +1,46 @@
 ---
-title: Utilizzo dell'elemento Handles
-description: Utilizzo dell'elemento Handles
+title: Uso dell'elemento Handles
+description: Uso dell'elemento Handles
 ms.assetid: d748f74c-40e5-499a-bb61-94862eb3811c
 keywords:
-- Web Workshop, Handles-elemento
-- progettazione di pagine Web, Handles-elemento
-- Vector Markup Language (la), Handles-elemento
-- LA (Vector Markup Language), Handles-elemento
-- Vector graphics, Handles-elemento
-- Handles-elemento
-- Elementi la, handle
-- Forme la, Handles-elemento
-- Vector Markup Language (la), associazione di testo a forme
-- LA (Vector Markup Language), associazione di testo a forme
-- grafica vettoriale, associazione di testo a forme
-- LA forme, associazione di testo
-- associazione di testo a forme
+- Web workshop, elemento handles
+- progettazione di pagine Web,gestisce l'elemento
+- Vector Markup Language (VML), gestisce l'elemento
+- VML (Vector Markup Language),gestisce l'elemento
+- grafica vettoriale,gestisce l'elemento
+- Elemento handles
+- elementi VML,handle
+- Forme VML,gestisce l'elemento
+- Vector Markup Language (VML), collegamento di testo alle forme
+- VML (Vector Markup Language), collegamento di testo alle forme
+- grafica vettoriale, collegamento di testo alle forme
+- forme VML, collegamento di testo
+- collegamento di testo alle forme
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d54c721d50f51c46cd4bf08393e85ad83307fc1d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 94d504024a3d5c42caf8af116a08e5bd8787905991f14c4181fe3a75b10f4814
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104046802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057210"
 ---
-# <a name="using-the-handles-element"></a>Utilizzo dell'elemento Handles
+# <a name="using-the-handles-element"></a>Uso dell'elemento Handles
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-In questo argomento verrà illustrato come utilizzare l' `<handles>` elemento per aggiungere testo a una forma.
+In questo argomento verrà illustrato come usare `<handles>` l'elemento per associare testo a una forma.
 
-È possibile inserire il `<handles>` sottoelemento all'interno `<shape>` o `<shapetype>` per definire gli elementi dell'interfaccia utente che possono variare i valori di **ADJ** sulla forma.
+È possibile inserire il sotto-elemento all'interno o per definire elementi dell'interfaccia utente che possono variare i `<handles>` `<shape>` valori `<shapetype>` **adj** sulla forma.
 
-Ad esempio, come illustrato nella seguente rappresentazione la, è possibile specificare un handle di regolazione (casella gialla) che gli utenti possono semplicemente trascinare per regolare la forma.
+Ad esempio, come illustrato nella rappresentazione VML seguente, è possibile fornire un quadratino di regolazione (casella gialla) che gli utenti possono semplicemente trascinare per regolare la forma.
 
-Nota: gli handle sono disponibili quando questa forma la viene visualizzata nelle applicazioni Microsoft Office, in cui la forma è progettata per essere manipolabile.
+Nota: i punti di manipolazione sono disponibili quando questa forma VML viene visualizzata Microsoft Office applicazioni, in cui la forma deve essere manipulable.
 
 ![shape1.gif (564 byte)](images/shape1h.gif)
 
@@ -68,7 +68,7 @@ path="m@0,0l@0@1,0@1,0@2@0@2@0,21600,21600,10800xe">
 
 
 
-Si noti che l'unica differenza tra la rappresentazione la precedente e quella seguente è il valore **ADJ** .
+Si noti che l'unica differenza tra la rappresentazione VML precedente e quella seguente è il **valore adj.**
 
 ![shape2.gif (1361 byte)](images/shape2h.gif)
 
@@ -96,8 +96,8 @@ path="m@0,0l@0@1,0@1,0@2@0@2@0,21600,21600,10800xe">
 
 
 
-Per ulteriori informazioni su questo elemento, vedere la [specifica la](https://www.w3.org/TR/NOTE-VML#-toc416858393) .
+Per altre informazioni su questo elemento, vedere la specifica [VML](https://www.w3.org/TR/NOTE-VML#-toc416858393) .
 
- 
+ 
 
- 
+ 

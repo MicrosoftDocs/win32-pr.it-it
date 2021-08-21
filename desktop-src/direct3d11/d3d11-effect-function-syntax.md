@@ -1,6 +1,6 @@
 ---
 title: Sintassi della funzione Effect (Direct3D 11)
-description: Una funzione di effetto è scritta in HLSL ed è dichiarata con la sintassi descritta in questa sezione.
+description: Una funzione di effetto è scritta in HLSL e viene dichiarata con la sintassi descritta in questa sezione.
 ms.assetid: 5e12ba65-98bf-4f21-be75-602687157eb1
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "119046619"
 ---
 # <a name="effect-function-syntax-direct3d-11"></a>Sintassi della funzione Effect (Direct3D 11)
 
-Una funzione di effetto è scritta in HLSL ed è dichiarata con la sintassi descritta in questa sezione.
+Una funzione di effetto è scritta in HLSL e viene dichiarata con la sintassi descritta in questa sezione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,18 +32,18 @@ Una funzione di effetto è scritta in HLSL ed è dichiarata con la sintassi desc
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ReturnType   | Qualsiasi [tipo HLSL](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax)                                                                                                                                                                                                       |
 | FunctionName | Stringa ASCII che identifica in modo univoco il nome della funzione shader.                                                                                                                                                                                            |
-| ArgumentList | Uno o più argomenti, separati da virgole (vedere [Argomenti di funzione (DirectX HLSL).](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-function-parameters)                                                                                                                             |
-| Istruzioni   | Una o più istruzioni (vedere [Istruzioni (DirectX HLSL)](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-statements)) che costituiscono il corpo della funzione. Se una funzione viene definita senza un corpo, viene considerata un prototipo. e devono essere ridefiniti con un corpo prima dell'uso. |
+| ArgumentList | Uno o più argomenti, separati da virgole (vedere [Argomenti di funzione (DirectX HLSL)](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-function-parameters)).                                                                                                                             |
+| Istruzioni   | Una o più istruzioni (vedere [Istruzioni (DirectX HLSL)](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-statements)che costituiscono il corpo della funzione. Se una funzione viene definita senza un corpo, viene considerata un prototipo. e devono essere ridefiniti con un corpo prima dell'uso. |
 
 
 
  
 
-Una funzione di effetto può essere uno shader o semplicemente una funzione chiamata da uno shader. Una funzione viene identificata in modo univoco in base al nome, ai tipi dei relativi parametri e alla piattaforma di destinazione. Pertanto, le funzioni possono essere sovraccaricate. Qualsiasi funzione HLSL valida deve essere in questo formato. Per un elenco più dettagliato della sintassi per le funzioni HLSL, vedere [Funzioni (DirectX HLSL).](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-functions)
+Una funzione di effetto può essere uno shader o semplicemente una funzione chiamata da uno shader. Una funzione viene identificata in modo univoco in base al nome, ai tipi dei relativi parametri e alla piattaforma di destinazione. Pertanto, è possibile eseguire l'overload delle funzioni. Qualsiasi funzione HLSL valida deve essere adatta a questo formato. Per un elenco più dettagliato della sintassi per le funzioni HLSL, vedere [Funzioni (DirectX HLSL).](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-functions)
 
 ## <a name="example"></a>Esempio
 
-Di seguito è riportato un esempio di una pixel shader funzione .
+Di seguito è riportato un esempio di pixel shader funzione.
 
 
 ```

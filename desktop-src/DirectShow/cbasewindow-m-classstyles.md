@@ -1,7 +1,7 @@
 ---
-description: Stili della classe per la finestra.
+description: Stili di classe per la finestra.
 ms.assetid: 2bf70b7e-c585-4511-aed5-e6d1b087dd74
-title: 'Membro CBaseWindow:: m_ClassStyles (Winutil. h)'
+title: Membro CBaseWindow::m_ClassStyles (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 10afaf647862010fc8317c70fd5322b2b616e95d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5cbe78847c99c82f72777731c5f2d5b673ba339e5c883bfafe623a0699a8bce2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016559"
 ---
-# <a name="cbasewindowm_classstyles-member"></a>Membro ClassStyles di CBaseWindow:: m \_
+# <a name="cbasewindowm_classstyles-member"></a>Membro CBaseWindow::m \_ ClassStyles
 
-Stili della classe per la finestra.
+Stili di classe per la finestra.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ DWORD m_ClassStyles;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

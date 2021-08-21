@@ -1,23 +1,23 @@
 ---
-title: Errore TabIndex del ruolo contenitore ARIA (senza discendente attivo)
-description: Errore TabIndex del ruolo contenitore ARIA (senza discendente attivo)
+title: Errore tabindex del ruolo del contenitore ARIA (senza discendente attivo)
+description: Errore tabindex del ruolo del contenitore ARIA (senza discendente attivo)
 ms.assetid: E3CCA500-7104-4163-927C-94EA8F1E89D8
 keywords:
 - AriaContainerWithoutActiveDescendantTabIndexErrorId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a01d3391d93b7e7f146f379bcfecd629e14bce7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b6eb2198b5ad28cf8a2dd1c625342fef399eefbe3f93ed5e09f4796e06d16338
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118994341"
 ---
-# <a name="aria-container-role-without-active-descendant-tabindex-error"></a>Errore TabIndex del ruolo contenitore ARIA (senza discendente attivo)
+# <a name="aria-container-role-without-active-descendant-tabindex-error"></a>Errore tabindex del ruolo del contenitore ARIA (senza discendente attivo)
 
 ## <a name="text"></a>Testo
 
-L'elemento è un contenitore attivabile senza un discendente attivo definito, ma nessun elemento figlio ha un **TabIndex** maggiore o uguale a 0.
+L'elemento è un contenitore attivabile senza un discendente attivo definito, ma nessun elemento figlio ha **tabindex** maggiore o uguale a 0.
 
 ## <a name="type"></a>Tipo
 
@@ -25,9 +25,9 @@ Errore
 
 ## <a name="description"></a>Descrizione
 
-Questo errore si verifica per gli elementi che hanno un ruolo contenitore, non hanno un attributo **aria-activedescendant** e non sono disabilitati. Questi elementi implementano la navigazione da tastiera tra gli elementi figlio utilizzando il concetto noto come *Indice itinerante*. In questo concetto, gli attributi **TabIndex** degli elementi figlio vengono mantenuti in modo dinamico, assicurando che in ogni momento un solo elemento figlio sia in ordine di tabulazione.
+Questo errore si applica agli elementi con un ruolo contenitore, non hanno un attributo **aria-activedescendant** e non sono disabilitati. Questi elementi implementano la navigazione tramite tastiera tra gli elementi figlio usando il concetto noto come *roving index*. In questo concetto, gli **attributi tabindex** degli elementi figlio vengono mantenuti dinamicamente, assicurando che un solo elemento figlio sia sempre in ordine di tabulazione.
 
-Per correggere l'errore, impostare l'attributo **TabIndex** di uno degli elementi figlio su un valore maggiore o uguale a 0.
+Per correggere l'errore, impostare **l'attributo tabindex** di uno degli elementi figlio su un valore uguale o maggiore di 0.
 
 ## <a name="example"></a>Esempio
 
@@ -72,12 +72,12 @@ Per correggere l'errore, impostare l'attributo **TabIndex** di uno degli element
 
 <dl> <dt>
 
-[Errore TabIndex del contenitore ARIA](aria-container-tabindex.md)
+[Errore tabindex del contenitore ARIA](aria-container-tabindex.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

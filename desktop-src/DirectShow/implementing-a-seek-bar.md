@@ -4,18 +4,18 @@ ms.assetid: 384f0732-e0c5-4b1f-b590-195e0acf90e1
 title: Implementazione di una barra di ricerca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: acd3f2440c011267c792c79c8bc3550926c5767f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 15e86dc52f92a4800639a5dbb1659f70fbe1cfaca7cbc2f0d022df889f970ea5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104522210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015549"
 ---
 # <a name="implementing-a-seek-bar"></a>Implementazione di una barra di ricerca
 
-In questa sezione viene descritto come implementare una barra di ricerca per un'applicazione Media Player. La barra di ricerca viene implementata come controllo TrackBar. Per una panoramica della ricerca in DirectShow, vedere [seeking the Filter Graph](seeking-the-filter-graph.md).
+Questa sezione descrive come implementare una barra di ricerca per un'applicazione lettore multimediale. La barra di ricerca viene implementata come controllo trackbar. Per una panoramica della ricerca in DirectShow, vedere Ricerca del [filtro Graph](seeking-the-filter-graph.md).
 
-All'avvio dell'applicazione, inizializzare il TrackBar:
+All'avvio dell'applicazione, inizializzare il trackbar:
 
 
 ```C++
@@ -31,9 +31,9 @@ void InitSlider(HWND hwnd)
 
 
 
-Il TrackBar viene disabilitato fino a quando l'utente non apre un file multimediale. L'intervallo TrackBar è impostato da 0 a 100. Durante la riproduzione del file, l'applicazione calcolerà la posizione di riproduzione come percentuale della durata del file e aggiornerà il TrackBar di conseguenza. Ad esempio, la posizione di TrackBar "50" corrisponde sempre al centro del file.
+Il trackbar è disabilitato finché l'utente non apre un file multimediale. L'intervallo del trackbar è impostato da 0 a 100. Durante la riproduzione dei file, l'applicazione calcolerà la posizione di riproduzione come percentuale della durata del file e aggiornerà di conseguenza il trackbar. Ad esempio, la posizione del trackbar "50" corrisponde sempre alla parte centrale del file.
 
-Quando l'utente apre un file, compila un grafico di riproduzione file usando **RenderFile**. Il codice per questa operazione viene illustrato in [come riprodurre un file](how-to-play-a-file.md). Eseguire quindi una query su Filter Graph Manager per l'interfaccia **IMediaSeeking** e archiviare il puntatore di interfaccia:
+Quando l'utente apre un file, compilare un grafico di riproduzione file usando **RenderFile.** Il codice per questa operazione è illustrato in [How To Play a File](how-to-play-a-file.md). Eseguire quindi una query su Filter Graph Manager per **l'interfaccia IMediaSeeking** e archiviare il puntatore di interfaccia:
 
 
 ```C++
@@ -43,7 +43,7 @@ hr = pGraph->QueryInterface(IID_IMediaSeeking, (void**)&g_pSeek);
 
 
 
-Per determinare se il file è ricercabile, chiamare il metodo [**IMediaSeeking:: CheckCapabilities**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-checkcapabilities) o [**IMediaSeeking:: GetCapabilities**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getcapabilities) . Questi metodi eseguono quasi la stessa operazione, ma la loro semantica è leggermente diversa. L'esempio seguente usa **CheckCapabilites**:
+Per determinare se il file è ricercabile, chiamare il metodo [**IMediaSeeking::CheckCapabilities**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-checkcapabilities) o [**il metodo IMediaSeeking::GetCapabilities.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getcapabilities) Questi metodi e fanno quasi la stessa cosa, ma la semantica è leggermente diversa. L'esempio seguente **usa CheckCapabilites:**
 
 
 ```C++
@@ -63,9 +63,9 @@ if (bCanSeek)
 
 
 
-Il \_ \_ flag CanSeekAbsolute seeking controlla se il file di origine è ricercabile e il \_ flag CanGetDuration seeking \_ Controlla se è possibile determinare in anticipo la durata del file. Se entrambe le funzionalità sono supportate, l'applicazione Abilita il TrackBar e recupera la durata del file.
+Il \_ flag AM SEEKING CanSeekAbsolute controlla se il file di origine è ricercabile e il \_ flag AM \_ SEEKING CanGetDuration controlla se la durata del file può essere determinata \_ in anticipo. Se sono supportate entrambe le funzionalità, l'applicazione abilita il trackbar e recupera la durata del file.
 
-Se il grafico è ricercabile, l'applicazione userà un timer per aggiornare la posizione di TrackBar durante la riproduzione. Quando si esegue il grafico del filtro per riprodurre il file, avviare l'evento del timer chiamando una delle funzioni timer di Windows, ad esempio **setimer**. Per ulteriori informazioni sui timer, vedere l'argomento "timer" in Platform SDK.
+Se il grafico è ricercabile, l'applicazione userà un timer per aggiornare la posizione del trackbar durante la riproduzione. Quando si esegue il grafico dei filtri per riprodurre il file, avviare l'evento timer chiamando una delle funzioni del timer Windows, ad esempio **SetTimer**. Per altre informazioni sui timer, vedere l'argomento "Timer" in Platform SDK.
 
 
 ```C++
@@ -95,7 +95,7 @@ void StopTimer()
 
 
 
-Utilizzare l'evento timer per aggiornare la posizione del TrackBar. Chiamare [**IMediaSeeking:: getCurrentPosition**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getcurrentposition) per recuperare la posizione di riproduzione ribes, quindi calcolare la posizione come percentuale della durata del file:
+Usare l'evento timer per aggiornare la posizione del trackbar. Chiamare [**IMediaSeeking::GetCurrentPosition**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getcurrentposition) per recuperare la posizione di riproduzione corrente e quindi calcolare la posizione come percentuale della durata del file:
 
 
 ```C++
@@ -117,7 +117,7 @@ case WM_TIMER:
 
 
 
-L'utente può anche spostare il TrackBar per cercare il file. Quando l'utente trascina o fa clic sul controllo TrackBar, l'applicazione riceve un \_ evento HSCROLL di WM. La parola bassa del parametro *wParam* è il messaggio di notifica TrackBar. Ad esempio, TB \_ ENDTRACK viene inviato alla fine dell'azione TrackBar e TB \_ THUMBTRACK viene inviato continuamente mentre l'utente trascina il TrackBar. Il codice seguente illustra un modo per gestire il \_ messaggio HSCROLL di WM:
+L'utente può anche spostare il trackbar per cercare il file. Quando l'utente trascina o fa clic sul controllo trackbar, l'applicazione riceve un evento \_ WM HSCROLL. La parola più bassa del *parametro wParam* è il messaggio di notifica del trackbar. Ad esempio, TB ENDTRACK viene inviato alla fine dell'azione del trackbar e TB THUMBTRACK viene inviato in modo continuo mentre l'utente \_ \_ trascina il trackbar. Il codice seguente illustra un modo per gestire il messaggio \_ HSCROLL WM:
 
 
 ```C++
@@ -156,7 +156,7 @@ case WM_HSCROLL:
 
 
 
-Se l'utente trascina il TrackBar, l'applicazione emette una serie di comandi Seek, uno per ogni \_ messaggio THUMBTRACK TB che riceve. Per fare in modo che le operazioni di ricerca siano più agevoli possibile, l'applicazione sospende il grafo. La sospensione del grafico interrompe la riproduzione ma garantisce che la finestra video venga aggiornata. Quando l'applicazione riceve il \_ messaggio TB ENDTRACK, ripristina lo stato originale del grafico.
+Se l'utente trascina il trackbar, l'applicazione invia una serie di comandi di ricerca, uno per ogni messaggio THUMBTRACK da TB \_ ricevuto. Per rendere le operazioni di ricerca il più uniformi possibile, l'applicazione sospende il grafo. La sospensione del grafo interrompe la riproduzione, ma garantisce che la finestra video sia aggiornata. Quando l'applicazione riceve il messaggio \_ TB ENDTRACK, ripristina lo stato originale del grafo.
 
  
 

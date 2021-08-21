@@ -1,11 +1,11 @@
 ---
-title: Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS_MDType
-description: Il metodo CreateInstanceFromPropertyData crea un'istanza di un agente di posta elettronica per il record di risorse di dominio (MD).
+title: Metodo CreateInstanceFromPropertyData della MicrosoftDNS_MDType classe
+description: Il metodo CreateInstanceFromPropertyData crea un'istanza di un agente di posta per il record di risorse di dominio (MD).
 ms.assetid: 23155a49-e2b3-4a69-8572-5dee61019d8f
 keywords:
 - DNS del metodo CreateInstanceFromPropertyData
-- DNS del metodo CreateInstanceFromPropertyData, classe MicrosoftDNS_MDType
-- Classe MicrosoftDNS_MDType DNS, metodo CreateInstanceFromPropertyData
+- Metodo CreateInstanceFromPropertyData DNS, MicrosoftDNS_MDType classe
+- MicrosoftDNS_MDType classe DNS, metodo CreateInstanceFromPropertyData
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b2e2cfdf3d2bb4b853a8e32716e51ca8e4c5b8e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5bdbe84b4c5edb3d413191425a7be8dd177454edc394cb5533947cef2420c968
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076805"
 ---
-# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_mdtype-class"></a>Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS \_ MDType
+# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_mdtype-class"></a>Metodo CreateInstanceFromPropertyData della classe MDType MicrosoftDNS \_
 
-Il metodo **CreateInstanceFromPropertyData** crea un'istanza di un agente di posta elettronica per il record di risorse di dominio (MD).
+Il **metodo CreateInstanceFromPropertyData crea** un'istanza di un agente di posta per il record di risorse di dominio (MD).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,31 +48,31 @@ void CreateInstanceFromPropertyData(
 
 <dl> <dt>
 
-*DnsServerName* \[ in\]
+*DnsServerName* \[ Pollici\]
 </dt> <dd>
 
 FQDN o indirizzo IP del server DNS che contiene questo RR.
 
 </dd> <dt>
 
-*ContainerName* \[ in\]
+*ContainerName* \[ Pollici\]
 </dt> <dd>
 
-Nome del contenitore per la zona, la cache o l'istanza di RootHints che contiene questo RR.
+Nome del contenitore per l'istanza di Zone, Cache o RootHints che contiene questo RR.
 
 </dd> <dt>
 
-*Proprietarioname* \[ in\]
+*OwnerName* \[ Pollici\]
 </dt> <dd>
 
-Nome del proprietario per l'RR.
+Nome del proprietario per RR.
 
 </dd> <dt>
 
 *RecordClass* \[ in, facoltativo\]
 </dt> <dd>
 
-Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
+Classe di RR. Il valore predefinito è 1. I valori seguenti sono validi.
 
 
 
@@ -81,7 +81,7 @@ Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | IN (Internet)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | CS (CSNET)<br/>    |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CHAOS)<br/>    |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Esiodo)<br/>   |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Hesiod)<br/>   |
 
 
 
@@ -89,24 +89,24 @@ Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
 
 </dd> <dt>
 
-Valore *TTL* \[ in, facoltativo\]
+*TTL* \[ in, facoltativo\]
 </dt> <dd>
 
-Tempo, in secondi, che l'RR può memorizzare nella cache da un resolver DNS.
+Tempo, in secondi, in cui RR può essere memorizzato nella cache da un resolver DNS.
 
 </dd> <dt>
 
-*MDHost* \[ in\]
+*MDHost* \[ Pollici\]
 </dt> <dd>
 
-Nome host per il recapito della posta.
+Nome host di recapito della posta.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
-Riferimento al nuovo oggetto.
+Riferimento al nuovo oggetto .
 
 </dd> </dl>
 
@@ -123,7 +123,7 @@ Questo metodo non restituisce valori.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -131,13 +131,13 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**\_MDType MicrosoftDNS**](microsoftdns-mdtype.md)
+[**MicrosoftDNS \_ MDType**](microsoftdns-mdtype.md)
 </dt> <dt>
 
-[**Metodo Modify della \_ classe MDType di MicrosoftDNS**](microsoftdns-mdtype-modify.md)
+[**Metodo Modify della classe MDType MicrosoftDNS \_**](microsoftdns-mdtype-modify.md)
 </dt> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

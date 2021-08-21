@@ -1,42 +1,42 @@
 ---
-title: Informazioni di riferimento sull'API personal desktop Task Agent
-description: L'API personal desktop Task Agent viene utilizzata per gestire gli aggiornamenti pianificati a un desktop virtuale personale.
+title: Informazioni di riferimento sulle API dell'agente attività desktop personale
+description: L'API dell'agente attività desktop personale viene usata per gestire gli aggiornamenti pianificati per un desktop virtuale personale.
 ms.assetid: 44EACE66-3BBD-4E32-B7BD-B13C390262C5
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c7c901f45a5be8b8f3dc82a1d075069f35b3444
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 88c19b4ad203636e3ca845a697974d8bcb4bcbd2d654140432e549790ff2f211
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "106299243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000301"
 ---
-# <a name="personal-desktop-task-agent-api-reference"></a>Informazioni di riferimento sull'API personal desktop Task Agent
+# <a name="personal-desktop-task-agent-api-reference"></a>Informazioni di riferimento sulle API dell'agente attività desktop personale
 
-L'API personal desktop Task Agent viene utilizzata per gestire gli aggiornamenti pianificati a un desktop virtuale personale.
+L'API dell'agente attività desktop personale viene usata per gestire gli aggiornamenti pianificati per un desktop virtuale personale.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 <dl> <dt>
 
-[Interfacce API personal desktop Task Agent](task-agent-api-interfaces.md)
+[Interfacce API dell'agente attività desktop personale](task-agent-api-interfaces.md)
 </dt> <dd>
 
-L'API personal desktop Task Agent supporta le interfacce seguenti.
+L'API dell'agente attività desktop personale supporta le interfacce seguenti.
 
 </dd> <dt>
 
-[Enumerazioni API di personal desktop Task Agent](task-agent-api-enumerations.md)
+[Enumerazioni dell'API dell'agente attività desktop personale](task-agent-api-enumerations.md)
 </dt> <dd>
 
-L'API personal desktop Task Agent supporta le enumerazioni seguenti.
+L'API dell'agente attività desktop personale supporta le enumerazioni seguenti.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

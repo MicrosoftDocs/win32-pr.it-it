@@ -1,19 +1,19 @@
 ---
-description: In questa sezione viene descritta la progettazione generale di Microsoft Media Foundation. Per informazioni sull'utilizzo di Media Foundation per attività di programmazione specifiche, vedere Guida alla programmazione di Media Foundation.
+description: Questa sezione descrive la progettazione generale di Microsoft Media Foundation. Per informazioni sull'uso Media Foundation per attività di programmazione specifiche, vedere guida Media Foundation programmazione.
 ms.assetid: 33820c6a-859d-4df6-a605-4e0f64f45c5b
 title: Architettura di Media Foundation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c0914b0f4c43966edcdc6d30efa7c9dbdbbd4e8
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: abcc95b1fdb39ad7d0e90e44b66df0dd7eb3c06418c16b4efc452abba4a9738d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974216"
 ---
 # <a name="media-foundation-architecture"></a>Architettura di Media Foundation
 
-In questa sezione viene descritta la progettazione generale di Microsoft Media Foundation. Per informazioni sull'utilizzo di Media Foundation per attività di programmazione specifiche, vedere [Guida alla programmazione di Media Foundation](media-foundation-programming-guide.md).
+Questa sezione descrive la progettazione generale di Microsoft Media Foundation. Per informazioni sull'uso Media Foundation per attività di programmazione specifiche, vedere Media Foundation [Programming Guide](media-foundation-programming-guide.md).
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,13 +21,13 @@ In questa sezione viene descritta la progettazione generale di Microsoft Media F
 
 | Argomento                                                                                                         | Descrizione                                                                                                                                                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Panoramica dell'architettura Media Foundation](overview-of-the-media-foundation-architecture.md)<br/> | Fornisce una panoramica di alto livello dell'architettura Media Foundation.<br/>                                                                                                                                                                                                               |
-| [Primitive Media Foundation](media-foundation-primitives.md)<br/>                                     | Vengono descritte alcune interfacce di base utilizzate in Media Foundation.<br/> Quasi tutte le applicazioni Media Foundation utilizzeranno tali interfacce.<br/>                                                                                                                       |
-| [API della piattaforma Media Foundation](media-foundation-platform-apis.md)<br/>                               | Descrive le funzioni di base Media Foundation, ad esempio callback asincroni e code di lavoro.<br/> Alcune applicazioni possono utilizzare interfacce a livello di piattaforma. Inoltre, i plug-in personalizzati, ad esempio le origini supporti e MFTs, usano queste interfacce.<br/>                                       |
-| [Pipeline Media Foundation](media-foundation-pipeline.md)<br/>                                         | Il Media Foundation livello della pipeline è costituito da origini supporti, MFTs e sink multimediali. La maggior parte delle applicazioni non chiama i metodi direttamente sul livello della pipeline. Al contrario, le applicazioni utilizzano uno dei livelli più elevati, ad esempio la sessione multimediale o l'Reader di origine e il writer del sink.<br/> |
-| [Sessione multimediale](media-session.md)<br/>                                                                 | La sessione multimediale gestisce il flusso di dati nella pipeline Media Foundation.<br/>                                                                                                                                                                                                           |
-| [Lettore di origine](source-reader.md)<br/>                                                                 | Il lettore di origine consente a un'applicazione di recuperare i dati da un'origine multimediale, senza che il applicating debba chiamare direttamente le API di origine multimediale. Il lettore di origine può inoltre eseguire la decodifica dei flussi compressi.<br/>                                                            |
-| [Percorso supporto protetto](protected-media-path.md)<br/>                                                   | Il percorso multimediale protetto (PMP) fornisce un ambiente protetto per la riproduzione di contenuti video Premium. Non è necessario usare PMP quando si scrive un'applicazione Media Foundation. <br/>                                                                                             |
+| [Panoramica dell'architettura Media Foundation distribuzione](overview-of-the-media-foundation-architecture.md)<br/> | Offre una panoramica generale dell'architettura Media Foundation generale.<br/>                                                                                                                                                                                                               |
+| [Media Foundation primitive](media-foundation-primitives.md)<br/>                                     | Vengono descritte alcune interfacce di base usate in Media Foundation.<br/> Quasi tutte Media Foundation applicazioni useranno queste interfacce.<br/>                                                                                                                       |
+| [API Media Foundation platform](media-foundation-platform-apis.md)<br/>                               | Vengono descritte le Media Foundation di base, ad esempio callback asincroni e code di lavoro.<br/> Alcune applicazioni potrebbero usare interfacce a livello di piattaforma. Inoltre, i plug-in personalizzati, ad esempio origini multimediali e MFT, usano queste interfacce.<br/>                                       |
+| [Media Foundation Pipeline](media-foundation-pipeline.md)<br/>                                         | Il Media Foundation pipeline è costituito da origini multimediali, MFT e sink multimediali. La maggior parte delle applicazioni non chiama i metodi direttamente sul livello della pipeline. Al contrario, le applicazioni usano uno dei livelli superiori, ad esempio la sessione multimediale o il lettore di origine e sink writer.<br/> |
+| [Sessione multimediale](media-session.md)<br/>                                                                 | La sessione multimediale gestisce il flusso di dati nella pipeline Media Foundation dati.<br/>                                                                                                                                                                                                           |
+| [Lettore di origine](source-reader.md)<br/>                                                                 | Il lettore di origine consente a un'applicazione di ottenere dati da un'origine multimediale, senza che sia necessario chiamare direttamente le API dell'origine multimediale. Il lettore di origine può anche eseguire la decodifica dei flussi compressi.<br/>                                                            |
+| [Percorso del supporto protetto](protected-media-path.md)<br/>                                                   | Il percorso multimediale protetto (PMP) fornisce un ambiente protetto per la riproduzione di contenuto video Premium. Non è necessario usare il PMP durante la scrittura di un'Media Foundation applicazione. <br/>                                                                                             |
 
 
 
@@ -46,7 +46,7 @@ In questa sezione viene descritta la progettazione generale di Microsoft Media F
 [Media Foundation e COM](media-foundation-and-com.md)
 </dt> <dt>
 
-[Guida alla programmazione di Media Foundation](media-foundation-programming-guide.md)
+[Media Foundation di programmazione](media-foundation-programming-guide.md)
 </dt> </dl>
 
  

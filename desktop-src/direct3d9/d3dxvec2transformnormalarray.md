@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXVec2TransformNormalArray (D3dx9math.h): trasforma una matrice (x, y, 0, 0) da una determinata matrice.'
+description: 'Funzione D3DXVec2TransformNormalArray (D3dx9math.h): trasforma una matrice (x, y, 0, 0) in base a una determinata matrice.'
 ms.assetid: 9f5d8fdc-f3e1-41dc-be4e-9ffc6be1947f
 title: Funzione D3DXVec2TransformNormalArray (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 71706551e73ed9bd52b41aae127625cd09b6d7f8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f6f64b705ac76c1b4922938d4d08a8bb8f2dd4f75d2433d2bbd8317db67e798c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044615"
 ---
 # <a name="d3dxvec2transformnormalarray-function-d3dx9mathh"></a>Funzione D3DXVec2TransformNormalArray (D3dx9math.h)
 
-Trasforma una matrice (x, y, 0, 0) in base a una matrice specificata.
+Trasforma una matrice (x, y, 0, 0) in base a una determinata matrice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -77,7 +77,7 @@ Puntatore alla matrice [**D3DXVECTOR2 di**](d3dxvector2.md) origine.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Stride tra vettori nel flusso di dati di input.
+Stride tra i vettori nel flusso di dati di input.
 
 </dd> <dt>
 

@@ -1,9 +1,9 @@
-- name: Strumento valutazione sistema Windows
+- name: Windows Strumento di valutazione del sistema
   href: windows-system-assessment-tool-portal.md
   items:
     - name: Uso di WinSAT
       href: using-winsat.md
-    - name: Riferimento a WinSAT
+    - name: Informazioni di riferimento su WinSAT
       href: winsat-reference.md
       items:
         - name: Enumerazioni WinSAT
@@ -34,7 +34,7 @@
                   href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iprovidewinsatassessmentinfo-get_description
                 - name: Proprietà Score
                   href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iprovidewinsatassessmentinfo-get_score
-                - name: Proprietà title
+                - name: Proprietà Title
                   href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iprovidewinsatassessmentinfo-get_title
             - name: IProvideWinSATResultsInfo
               href: /windows/desktop/api/Winsatcominterfacei/nn-winsatcominterfacei-iprovidewinsatresultsinfo
@@ -52,7 +52,7 @@
             - name: IProvideWinSATVisuals
               href: /windows/desktop/api/Winsatcominterfacei/nn-winsatcominterfacei-iprovidewinsatvisuals
               items:
-                - name: Metodo get_Bitmap
+                - name: metodo get_Bitmap
                   href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iprovidewinsatvisuals-get_bitmap
             - name: IQueryAllWinSATAssessments
               href: /windows/desktop/api/Winsatcominterfacei/nn-winsatcominterfacei-iqueryallwinsatassessments
@@ -62,7 +62,7 @@
             - name: IQueryRecentWinSATAssessment
               href: /windows/desktop/api/Winsatcominterfacei/nn-winsatcominterfacei-iqueryrecentwinsatassessment
               items:
-                - name: Proprietà info
+                - name: Proprietà Info
                   href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryrecentwinsatassessment-get_info
                 - name: Proprietà XML
                   href: /windows/desktop/api/Winsatcominterfacei/nf-winsatcominterfacei-iqueryrecentwinsatassessment-get_xml
@@ -80,5 +80,5 @@
               href: win32-winsat.md
         - name: Esempi di WinSAT
           href: winsat-samples.md
-        - name: Schema WinSAT
+        - name: WinSAT Schema
           href: winsat-schema.md

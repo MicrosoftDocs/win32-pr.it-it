@@ -1,50 +1,50 @@
 ---
-title: Attributo la V-text-spaziatura
-description: Attributo la V-text-spaziatura
+title: Attributo VML V-Text-Spacing
+description: Attributo VML V-Text-Spacing
 ms.assetid: c0d83854-4009-4d1d-aa8a-37f660dd0ef7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab31d1f0b0b1d41b7e99451c422028fe54498483
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bc0b699e70cd235bf7d0f7530f75a8fc5eaef52974180cc8d36a10a69c9197f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057679"
 ---
-# <a name="vml-v-text-spacing-attribute"></a>Attributo la V-text-spaziatura
+# <a name="vml-v-text-spacing-attribute"></a>Attributo VML V-Text-Spacing
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce la quantità di spaziatura per il testo. Proprietà di lettura/scrittura. **VgNumber**.
 
 **Si applica a**
 
-[TextPath](msdn-online-vml-textpath-element.md)
+[Percorso di testo](msdn-online-vml-textpath-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* Style = "v-text-spaziation: *Expression* " >
+<v: *element* style="v-text-spacing: *expression* ">
 
 **Sintassi dello script**
 
-*element* . Style. v-text-spaziation = "*Expression*"
+*element* .style.v-text-spacing="*expression*"
 
-*espressione* = *elemento*. Style. v-spaziatura testo
+*expression* = *elemento*.style.v-text-spacing
 
 **Osservazioni:**
 
-Il valore predefinito è 100. Per ulteriori informazioni sulla spaziatura del testo, vedere l'attributo [V-text-spaziation-Mode](msdn-online-vml-v-text-spacing-mode-attribute.md) .
+Il valore predefinito è 100. Per altre informazioni sulla spaziatura del testo, vedere l'attributo [V-Text-Spacing-Mode.](msdn-online-vml-v-text-spacing-mode-attribute.md)
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
-Il letterSpacing tra ogni lettera viene ristretto di 200 unità.
+La combinazione di lettere tra ogni lettera viene restringeta di 200 unità.
 
 
 ```HTML
@@ -58,6 +58,6 @@ Il letterSpacing tra ogni lettera viene ristretto di 200 unità.
 
 
 
- 
+ 
 
- 
+ 

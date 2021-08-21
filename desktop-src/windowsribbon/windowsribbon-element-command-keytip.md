@@ -1,9 +1,9 @@
 ---
-title: Proprietà Command. suggerimento
-description: Rappresenta il suggerimento tasto di ricerca per un controllo.
+title: Command.Keytip - proprietà
+description: Rappresenta la descrizione comando per un controllo .
 ms.assetid: 214f69ae-dd35-4abf-b294-d898d7802aa6
 keywords:
-- Barra multifunzione di Windows della proprietà Command. suggerimento
+- Proprietà Command.Keytip Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ab16b9b8e52094d6cdc85890dfc1cf8af63942c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d70edeae49a2acbd561bd4d56e32028852993cc524a0df3882e7e0b8a8da18b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964245"
 ---
-# <a name="commandkeytip-property"></a>Proprietà Command. suggerimento
+# <a name="commandkeytip-property"></a>Command.Keytip - proprietà
 
-Rappresenta il suggerimento tasto di ricerca per un controllo.
+Rappresenta la descrizione comando per un controllo .
 
 ## <a name="usage"></a>Utilizzo
 
@@ -59,52 +59,52 @@ Non ci sono attributi.
 
 facoltativo.
 
-Può verificarsi al massimo una volta per ogni elemento [**Command**](windowsribbon-element-command.md) .
+Può verificarsi al massimo una volta per ogni [**elemento**](windowsribbon-element-command.md) Command.
 
-**Command. suggerimento. suggerimento** può contenere un valore di tipo *xs: String* vincolato a qualsiasi sequenza di caratteri Unicode, incluso lo spazio vuoto.
+**Command.Keytip** può contenere un valore di tipo *xs:string* vincolato a qualsiasi sequenza di caratteri Unicode, inclusi gli spazi vuoti.
 
-Un **comando. suggerimento suggerimento** può iniziare con un numero solo se associato a un controllo all'interno di una [scheda](windowsribbon-controls-tab.md) o della [barra di accesso rapido](windowsribbon-controls-quickaccesstoolbar.md).
+Un **oggetto Command.Keytip può** iniziare con un numero solo se associato a un controllo all'interno di una scheda o della barra di accesso [rapido.](windowsribbon-controls-quickaccesstoolbar.md) [](windowsribbon-controls-tab.md)
 
-Per visualizzare i suggerimenti tasti validi per lo stato corrente della barra multifunzione, tenere premuto ALT. Lo screenshot seguente mostra i suggerimenti di tasti iniziali, o di primo livello, visualizzati in Microsoft Paint per Windows 7. Dopo aver selezionato un suggerimento tasto di scelta di primo livello, vengono visualizzati solo i suggerimenti tasti di secondo livello.
+Per visualizzare i suggerimenti tasto di scelta validi per lo stato corrente della barra multifunzione, premere e tenere premuto ALT. La schermata seguente mostra i suggerimenti tasto di scelta iniziali o di primo livello visualizzati in Microsoft Paint per Windows 7. Dopo aver selezionato un suggerimento tasto di scelta di primo livello, vengono visualizzati solo i suggerimenti tasto di scelta di secondo livello.
 
-![suggerimenti dei tasti di primo livello in Microsoft Paint per Windows 7](images/properties/ui-pkey-label-keytips.png)
+![descrizioni comandi di primo livello in Microsoft Paint per Windows 7](images/properties/ui-pkey-label-keytips.png)
 
-**Command.** hotkey funge da tasto di scelta rapida per un comando, a meno che il comando non venga esposto tramite una voce di menu. In questo caso, il Framework ignora il valore **Command. suggerimento** e usa invece un carattere preceduto da una e commerciale come specificato da [**Command. LabelTitle**](windowsribbon-element-command-labeltitle.md) o [dall' \_ \_ etichetta pkey dell'interfaccia utente](windowsribbon-reference-properties-uipkey-label.md). Se nessuna e commerciale è specificata da **Command. LabelTitle** o dall'etichetta pkey dell'interfaccia utente \_ \_ , non viene esposto alcun tasto di scelta rapida o tasto di scelta rapida.
+**Command.Keytip funge** da tasto di scelta rapida per un comando, a meno che tale comando non venga esposto tramite una voce di menu. In questo caso, il framework ignora il valore **Command.Keytip** e usa invece un carattere preceduto da una e commerciale come specificato da [**Command.LabelTitle**](windowsribbon-element-command-labeltitle.md) o [UI \_ PKEY \_ Label](windowsribbon-reference-properties-uipkey-label.md). Se non viene specificata alcuna e commerciale da **Command.LabelTitle** o ui PKEY Label, non viene esposta alcuna descrizione comando o \_ tasto di scelta \_ rapida.
 
-Se non viene specificato alcun valore per **Command. suggerimento**, l'elemento figlio [**stringa**](windowsribbon-element-string.md) è obbligatorio.
+Se non viene fornito alcun valore per **Command.Keytip,** [**l'elemento**](windowsribbon-element-string.md) figlio String è obbligatorio.
 
 > [!Note]  
-> Se **Command. textsuggerimento** contiene sia un elemento Value che un elemento figlio [**String**](windowsribbon-element-string.md) , la **stringa** avrà la precedenza.
+> Se **Command.Keytip** contiene sia un valore che un elemento figlio [**String,**](windowsribbon-element-string.md) **String** ha la precedenza.
 
  
 
-Per impostazione predefinita, le lettere seguenti vengono usate dal Framework per generare automaticamente i suggerimenti dei tasti:
+Per impostazione predefinita, il framework usa le lettere seguenti per generare automaticamente i suggerimenti tasto di scelta:
 
 -   **F** viene assegnato al [menu dell'applicazione](windowsribbon-controls-applicationmenu.md).
--   **Y** viene assegnato a qualsiasi comando che non dispone di un tasto di suggerimento specificato dall'applicazione.
--   La **Z** viene assegnata a ogni controllo del [gruppo](windowsribbon-controls-group.md) e non può essere personalizzata. Un suggerimento tasto di gruppo viene visualizzato solo quando [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) per il controllo specifica un'opzione di dimensioni **popup** . Per ulteriori informazioni, vedere [personalizzazione di una barra multifunzione tramite le definizioni delle dimensioni e i criteri di scalabilità](windowsribbon-templates.md).
+-   **Y** viene assegnato a qualsiasi comando che non dispone di un suggerimento tasto di scelta specificato dall'applicazione.
+-   **Z** viene assegnato a ogni [controllo Gruppo](windowsribbon-controls-group.md) e non può essere personalizzato. Un suggerimento tasto di scelta gruppo viene visualizzato solo quando [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) per il controllo specifica **un'opzione Di** dimensioni popup. Per altre informazioni, vedere [Personalizzazione di una barra multifunzione tramite definizioni di dimensioni e criteri di ridimensionamento](windowsribbon-templates.md).
 
 > [!Note]  
-> Nessuna di queste lettere è riservata dal Framework. Ogni può essere assegnato a uno o più comandi in modo obbligatorio.
+> Nessuna di queste lettere è riservata dal framework. Ognuno può essere assegnato a uno o più comandi in base alle esigenze.
 
  
 
-Il Framework risolve i conflitti del tasto di suggerimento nei modi seguenti:
+Il framework risolve i conflitti di suggerimento tasto di scelta nei modi seguenti:
 
--   Se uno o più controlli struttura a schede sono associati allo stesso suggerimento tasto di aggiunta, viene aggiunto un numero a ogni suggerimento [tasto](windowsribbon-controls-tab.md) di ricerca, a partire da 1 e aumentando in sequenza (2, 3,...) per ogni controllo nell'ordine di dichiarazione. Se ai controlli a schede viene assegnata la lettera F come suggerimento tasto di scelta, al [menu dell'applicazione](windowsribbon-controls-applicationmenu.md) viene assegnato F1 con i suggerimenti di tasti rimanenti, come descritto.
--   Quando è associato a un singolo controllo all'interno di una [scheda](windowsribbon-controls-tab.md), il suggerimento tasto F è valido sia per il controllo che per il [menu applicazione](windowsribbon-controls-applicationmenu.md). Il tasto di scelta rapida del menu applicazione predefinito non viene modificato, ma la precedenza viene assegnata al controllo nella scheda attiva.
--   Se uno o più controlli all'interno di una scheda sono associati allo stesso [tasto](windowsribbon-controls-tab.md) di suggerimento, il Framework esegue automaticamente il refactoring dei suggerimenti di questi controlli, come descritto in precedenza.
+-   Se uno [](windowsribbon-controls-tab.md) o più controlli Tab sono associati allo stesso suggerimento tasto di scelta, viene aggiunto un numero a ogni suggerimento tasto di scelta, a partire da 1 e aumentando in sequenza (2, 3,...) per ogni controllo nell'ordine di dichiarazione. Se ai controlli Tab viene assegnata la lettera F come suggerimento tasto di scelta, al [menu](windowsribbon-controls-applicationmenu.md) dell'applicazione viene assegnato F1 con i suggerimenti tasto di scelta rimanenti regolati come descritto.
+-   Quando è associato a un singolo controllo all'interno [di](windowsribbon-controls-tab.md)una scheda , la descrizione comando F è valida sia per il controllo che per il [menu dell'applicazione](windowsribbon-controls-applicationmenu.md). La descrizione comando predefinita del menu dell'applicazione non viene modificata, ma viene data la precedenza al controllo nella scheda attiva.
+-   Se uno o più controlli all'interno di [una](windowsribbon-controls-tab.md) scheda sono associati allo stesso suggerimento tasto di scelta, il framework crea automaticamente il refactoring dei suggerimenti tasto di scelta di tali controlli, come descritto in precedenza.
 
 > [!Note]  
-> Una lieve variazione del colore del testo viene usata per evidenziare i suggerimenti per i tasti di refactoring in un'implementazione standard della barra multifunzione. Per un'implementazione della barra multifunzione non standard in cui il colore della barra multifunzione è stato personalizzato, viene eseguito l'override di questo comportamento del Framework e vengono visualizzati tutti i suggerimenti dei tasti con lo stesso colore del testo. Per ulteriori informazioni, vedere [personalizzazione dei colori della barra multifunzione](ribbon-color.md).
+> Una leggera variazione del colore del testo viene usata per evidenziare i suggerimenti tasto di scelta con refactoring in un'implementazione standard della barra multifunzione. Per un'implementazione della barra multifunzione non standard in cui il colore della barra multifunzione è stato personalizzato, questo comportamento del framework viene sostituito e tutte le descrizioni comandi vengono visualizzate con lo stesso colore del testo. Per altre informazioni, vedere [Personalizzazione dei colori della barra multifunzione.](ribbon-color.md)
 
  
 
-La lunghezza massima è unbounded.
+La lunghezza massima è illimitata.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup per un elemento [**Command**](windowsribbon-element-command.md) con una Dichiarazione **Command. suggerimento** .
+L'esempio seguente illustra il markup per un [**elemento Command**](windowsribbon-element-command.md) con una **dichiarazione Command.Keytip.**
 
 
 ```XML
@@ -134,8 +134,8 @@ Nell'esempio seguente viene illustrato il markup per un elemento [**Command**](w
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -143,7 +143,7 @@ Nell'esempio seguente viene illustrato il markup per un elemento [**Command**](w
 
 <dl> <dt>
 
-[Suggerimento tasto di interfaccia utente \_ pkey \_](windowsribbon-reference-properties-uipkey-keytip.md)
+[Suggerimento \_ per la chiave PKEY \_ dell'interfaccia utente](windowsribbon-reference-properties-uipkey-keytip.md)
 </dt> </dl>
 
  

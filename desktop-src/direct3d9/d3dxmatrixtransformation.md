@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXMatrixTransformation (D3dx9math.h): compila una matrice di trasformazione. Gli argomenti NULL vengono trattati come trasformazioni di identità.'
+description: 'Funzione D3DXMatrixTransformation (D3dx9math.h): compila una matrice di trasformazione. Gli argomenti NULL vengono considerati trasformazioni di identità.'
 ms.assetid: 39042fc6-f489-4e44-ad3f-858ca395575d
 title: Funzione D3DXMatrixTransformation (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: dc3b6502a8015564207f208166cec15227d3b18a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 59656e1716dcf3fbc7844c8369de032f5e6e69776e5b89452a35d71512aea87c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044809"
 ---
 # <a name="d3dxmatrixtransformation-function-d3dx9mathh"></a>Funzione D3DXMatrixTransformation (D3dx9math.h)
 
-Compila una matrice di trasformazione. **Gli** argomenti NULL vengono trattati come trasformazioni di identità.
+Compila una matrice di trasformazione. **Gli** argomenti NULL vengono considerati trasformazioni di identità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ D3DXMATRIX* D3DXMatrixTransformation(
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che è il risultato dell'operazione.
 
 </dd> <dt>
 
@@ -60,7 +60,7 @@ Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risu
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una [**struttura D3DXVECTOR3,**](d3dxvector3.md) che identifica il punto centrale di ridimensionamento. Se questo argomento è **NULL,** viene applicata alla formula un'identità M <sub>sc</sub> matrix nelle osservazioni.
+Puntatore a una [**struttura D3DXVECTOR3,**](d3dxvector3.md) che identifica il punto centrale di ridimensionamento. Se questo argomento è **NULL,** alla formula in Osservazioni viene applicata una matrice identity M <sub>sc.</sub>
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Puntatore a una [**struttura D3DXVECTOR3,**](d3dxvector3.md) che identifica il p
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
 
-Puntatore a una [**struttura D3DXQUATERNION**](d3dxquaternion.md) che specifica la rotazione di ridimensionamento. Se questo argomento è **NULL,** una matrice identity M <sub>sr</sub> viene applicata alla formula nelle osservazioni.
+Puntatore a una [**struttura D3DXQUATERNION**](d3dxquaternion.md) che specifica la rotazione di ridimensionamento. Se questo argomento è **NULL,** alla formula in Osservazioni viene applicata una matrice identity M <sub>sr.</sub>
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Puntatore a una [**struttura D3DXQUATERNION**](d3dxquaternion.md) che specifica 
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una [**struttura D3DXVECTOR3,**](d3dxvector3.md) il vettore di ridimensionamento. Se questo argomento è **NULL,** alla formula in Osservazioni viene applicata una matrice Identity Ms.
+Puntatore a [**una struttura D3DXVECTOR3,**](d3dxvector3.md) il vettore di ridimensionamento. Se questo argomento è **NULL,** alla formula in Osservazioni viene applicata una matrice Identity Ms.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Puntatore a [**una struttura D3DXQUATERNION**](d3dxquaternion.md) che specifica 
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a [**una struttura D3DXVECTOR3,**](d3dxvector3.md) che rappresenta la traslazione. Se questo argomento è **NULL,** alla formula in Osservazioni viene applicata una matrice Identity Mt.
+Puntatore a [**una struttura D3DXVECTOR3,**](d3dxvector3.md) che rappresenta la conversione. Se questo argomento è **NULL,** alla formula in Osservazioni viene applicata una matrice Identity Mt.
 
 </dd> </dl>
 
@@ -119,7 +119,7 @@ Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta la mat
 
 Questa funzione calcola la matrice di trasformazione con la formula seguente, con la concatenazione di matrici valutata in ordine da sinistra a destra:
 
-M<sub>out</sub> = (M<sub>sc</sub>)⁻¹ \* (M<sub>sr</sub>)⁻¹ \* Ms \* M<sub>sr</sub> \* M<sub>sc</sub> \* (M<sub>rc</sub>)⁻¹ \* M<sub>r</sub> \* M<sub>rc</sub> \* Mt
+M<sub>out</sub> = (M<sub>sc</sub>)⁻¹ \* (M<sub>sr</sub>)⁻¹ \* Mₛ \* M<sub>sr</sub> \* M<sub>sc</sub> \* (M<sub>rc</sub>)⁻¹ \* M<sub>r</sub> \* M<sub>rc</sub> \* Mt
 
 dove:
 
@@ -135,7 +135,7 @@ M <sub>rc</sub> = centro della matrice di rotazione (*pRotationCenter*)
 
 M <sub>r</sub> = matrice di rotazione (*pRotation*)
 
-Mt = matrice di traslazione (*pTranslation*)
+Mt = matrice di conversione (*pTranslation*)
 
 Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXMatrixTransformation** può essere usata come parametro per un'altra funzione.
 

@@ -1,15 +1,15 @@
 ---
-description: La proprietà DVDAdm. DefaultSubpictureLCID imposta o recupera l'impostazione del registro di sistema per l'LCID predefinito specificato dall'utente per il flusso di immagine.
+description: La proprietà DVDAdm.DefaultSubpictureLCID imposta o recupera l'impostazione del Registro di sistema per l'LCID predefinito specificato dall'utente per il flusso di immagini secondarie.
 ms.assetid: 12dd308e-483b-489d-8d81-8da399bfac4d
 title: Proprietà DefaultSubpictureLCID
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8353f52227dc220bef474e872cbd695c78dc65f9
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ebc67be112349a050df45f625fda6488c91b22dee357c820724de5842c156894
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104522785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952990"
 ---
 # <a name="defaultsubpicturelcid-property"></a>Proprietà DefaultSubpictureLCID
 
@@ -18,7 +18,7 @@ ms.locfileid: "104522785"
 
  
 
-La `DVDAdm.DefaultSubpictureLCID` proprietà imposta o recupera l'impostazione del registro di sistema per l'LCID predefinito specificato dall'utente per il flusso dell'immagine.
+La `DVDAdm.DefaultSubpictureLCID` proprietà imposta o recupera l'impostazione del Registro di sistema per l'LCID predefinito specificato dall'utente per il flusso di immagini secondarie.
 
 ``` syntax
 [ iSubpictureLCID = ] DVD.DVDAdm.DefaultSubpictureLCID
@@ -26,11 +26,11 @@ La `DVDAdm.DefaultSubpictureLCID` proprietà imposta o recupera l'impostazione d
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore intero che rappresenta l'LCID della sottoimmagine predefinita specificato dall'utente come archiviato nelle impostazioni del registro di sistema per l'applicazione DVD. Questo valore non è necessariamente lo stesso del flusso di immagine predefinita come creato nel DVD. Per l'intervallo degli LCID validi, vedere la documentazione di Win32 in Platform SDK.
+Restituisce un valore Integer che rappresenta l'LCID dell'immagine secondaria predefinita specificata dall'utente come archiviato nelle impostazioni del Registro di sistema per l'applicazione DVD. Questo valore non corrisponde necessariamente al flusso di immagini secondarie predefinito creato nel DVD. Per l'intervallo di PID validi, vedere la documentazione di Win32 in Platform SDK.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è di lettura/scrittura e non prevede alcun valore predefinito. Se non viene specificato alcun LCID della sottoimmagine predefinita, l'oggetto MSDVDAdm riprodurrà il flusso dell'immagine subpicture contrassegnato come flusso predefinito sul disco.
+Questa proprietà è di lettura/scrittura senza alcun valore predefinito. Se non viene specificato alcun LCID dell'immagine secondaria predefinita, l'oggetto MSDVDAdm riprodurrà il flusso di immagini secondarie contrassegnato come flusso predefinito sul disco.
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo UnsetPalette Elimina la tavolozza corrente della finestra e ripristina la tavolozza di sistema predefinita.
+description: Il metodo UnsetPalette elimina la tavolozza corrente della finestra e ripristina la tavolozza di sistema predefinita.
 ms.assetid: 9518aaa5-3c1b-409b-bb27-a698c47c4a24
-title: Metodo CBaseWindow. UnsetPalette (Winutil. h)
+title: Metodo CBaseWindow.UnsetPalette (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c0ff691d8c8f9f95f88f319bf966e6f33c8985d1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ca03eb679eb4a7a849977b6cff0a6ca15e7ed0bcfad23345a7a7a2c56263be9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074495"
 ---
-# <a name="cbasewindowunsetpalette-method"></a>CBaseWindow. UnsetPalette, metodo
+# <a name="cbasewindowunsetpalette-method"></a>Metodo CBaseWindow.UnsetPalette
 
 Il `UnsetPalette` metodo elimina la tavolozza corrente della finestra e ripristina la tavolozza di sistema predefinita.
 
@@ -50,8 +50,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
