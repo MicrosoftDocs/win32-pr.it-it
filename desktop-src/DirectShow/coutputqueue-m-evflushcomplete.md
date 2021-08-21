@@ -1,7 +1,7 @@
 ---
-description: Evento che segnala al termine di un'operazione di svuotamento.
+description: Evento che segnala il termine di un'operazione di scaricamento.
 ms.assetid: e2640fa1-03d1-4323-a9cb-698d130929f7
-title: 'Membro COutputQueue:: m_evFlushComplete (Outputq. h)'
+title: Membro COutputQueue::m_evFlushComplete (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 588572d1ddc39f17e48453acbdf021237d4439c2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 35e6afca05732dc604ff66bbabeef94443af2dbfe947fb674f1361d04fc699e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073775"
 ---
-# <a name="coutputqueuem_evflushcomplete-member"></a>Membro evFlushComplete di COutputQueue:: m \_
+# <a name="coutputqueuem_evflushcomplete-member"></a>Membro COutputQueue::m \_ evFlushComplete
 
-Evento che segnala al termine di un'operazione di svuotamento.
+Evento che segnala il termine di un'operazione di scaricamento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ CAMEvent m_evFlushComplete;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Outputq. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Outputq.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

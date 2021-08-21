@@ -1,19 +1,19 @@
 ---
-description: Si verifica quando viene premuto un tasto mentre il controllo InkPicture dispone dello stato attivo.
+description: Si verifica quando viene premuto un tasto mentre il controllo InkPicture ha lo stato attivo.
 ms.assetid: adb61eff-a92c-40b0-940c-02e14cd34e5f
-title: Evento InkPicture. KeyPress (Msinkaut. h)
+title: Evento InkPicture.KeyPress (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35f9ef48a0e117d6a3d4c29a9ca69aba3bf6e054
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7545b0de722ec9b48c66aa5d2236bf81eb576d87916c15e618508e537981a2cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939011"
 ---
-# <a name="inkpicturekeypress-event"></a>Evento InkPicture. KeyPress
+# <a name="inkpicturekeypress-event"></a>Evento InkPicture.KeyPress
 
-Si verifica quando viene premuto un tasto mentre il controllo [InkPicture](inkpicture-control-reference.md) dispone dello stato attivo.
+Si verifica quando viene premuto un tasto mentre il [controllo InkPicture](inkpicture-control-reference.md) ha lo stato attivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,10 +30,10 @@ void KeyPress(
 
 <dl> <dt>
 
-*ASCII* \[ in uscita\]
+*KeyAscii* \[ in, out\]
 </dt> <dd>
 
-Valore ASCII della chiave da premere.
+Valore ASCII del tasto premuto.
 
 </dd> </dl>
 
@@ -43,7 +43,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento è definito nell'interfaccia **\_ IInkPictureEvents** . L'interfaccia **\_ IInkPictureEvents** implementa l'interfaccia [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificatore di DISPID \_ IPEKeyPress.
+Questo metodo di evento è definito **\_ nell'interfaccia IInkPictureEvents.** **\_ L'interfaccia IInkPictureEvents** implementa l'interfaccia [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificatore \_ DISPID IPEKeyPress.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,9 +51,9 @@ Questo metodo di evento è definito nell'interfaccia **\_ IInkPictureEvents** . 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -62,7 +62,7 @@ Questo metodo di evento è definito nell'interfaccia **\_ IInkPictureEvents** . 
 
 <dl> <dt>
 
-[InkPicture](inkpicture-control-reference.md)
+[Inkpicture](inkpicture-control-reference.md)
 </dt> </dl>
 
  

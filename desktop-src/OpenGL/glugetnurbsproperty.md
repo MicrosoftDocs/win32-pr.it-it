@@ -1,9 +1,9 @@
 ---
-title: funzione gluGetNurbsProperty (Glu. h)
-description: La funzione gluGetNurbsProperty ottiene una proprietà di logica B-spline (NURBS) non uniforme.
+title: Funzione gluGetNurbsProperty (Glu.h)
+description: La funzione gluGetNurbsProperty ottiene una proprietà B-Spline razionale non uniforme (NURBS).
 ms.assetid: 7dbc75a0-d04e-4794-b3dd-a602addf9dfa
 keywords:
-- funzione gluGetNurbsProperty OpenGL
+- Funzione gluGetNurbsProperty OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 583da688e3495ebc2eb9d6f71972658c6426469c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a68e91fbdaafc2a1857a95e059125bf62347777edfbcc764868ceea0a8fce578
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119519591"
 ---
-# <a name="glugetnurbsproperty-function"></a>gluGetNurbsProperty (funzione)
+# <a name="glugetnurbsproperty-function"></a>Funzione gluGetNurbsProperty
 
-La funzione **gluGetNurbsProperty** ottiene una proprietà di logica B-spline ([NURBS](using-nurbs-curves-and-surfaces.md)) non uniforme.
+La **funzione gluGetNurbsProperty** ottiene una proprietà B-Spline razionale non uniforme ([NURBS).](using-nurbs-curves-and-surfaces.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ void WINAPI gluGetNurbsProperty(
 
 <dl> <dt>
 
-*juje* 
+*nobj* 
 </dt> <dd>
 
 Oggetto NURBS (creato con [**gluNewNurbsRenderer**](glunewnurbsrenderer.md)).
@@ -52,7 +52,7 @@ Oggetto NURBS (creato con [**gluNewNurbsRenderer**](glunewnurbsrenderer.md)).
 *property* 
 </dt> <dd>
 
-Proprietà di cui è necessario recuperare il valore. Sono validi i valori seguenti: \_ tolleranza di campionamento Glu \_ , modalità di \_ visualizzazione Glu \_ , \_ abbattimento Glu, GLU \_ auto \_ Load \_ Matrix, Glu \_ parametrica \_ tolerance, Glu \_ Sampling \_ Method, Glu \_ U \_ Step e Glu \_ V \_ Step.
+Proprietà il cui valore deve essere recuperato. I valori seguenti sono validi: GLU \_ SAMPLING \_ TOLERANCE, GLU \_ DISPLAY \_ MODE, GLU \_ CULLING, GLU \_ AUTO LOAD \_ \_ MATRIX, GLU \_ PARAMETRIC \_ TOLERANCE, GLU SAMPLING \_ \_ METHOD, GLU U STEP e \_ GLU V \_ \_ \_ STEP.
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Utilizzare **gluGetNurbsProperty** per recuperare le proprietà archiviate in un oggetto NURBS. Queste proprietà influiscono sulla modalità di rendering delle curve e delle superfici NURBS. Per informazioni sulle proprietà NURBS, vedere [**gluNurbsProperty**](glunurbsproperty.md).
+Usare **gluGetNurbsProperty** per recuperare le proprietà archiviate in un oggetto NURBS. Queste proprietà influiscono sul modo in cui viene eseguito il rendering di curve e superfici NURBS. Per informazioni sulle proprietà NURBS, vedere [**gluNurbsProperty**](glunurbsproperty.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,8 +79,8 @@ Utilizzare **gluGetNurbsProperty** per recuperare le proprietà archiviate in un
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 
@@ -92,7 +92,7 @@ Utilizzare **gluGetNurbsProperty** per recuperare le proprietà archiviate in un
 [**gluNewNurbsRenderer**](glunewnurbsrenderer.md)
 </dt> <dt>
 
-[**gluNurbsProperty**](glunurbsproperty.md)
+[**GluNurbsProperty**](glunurbsproperty.md)
 </dt> </dl>
 
  

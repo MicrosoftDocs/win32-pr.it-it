@@ -1,7 +1,7 @@
 ---
-description: Sposta un disco rigido virtuale dal percorso di origine a quello di destinazione.
+description: Sposta un disco rigido virtuale dall'origine al percorso di destinazione.
 ms.assetid: f51f7bf3-585a-442d-b84d-51d633c38dea
-title: Classe Msvm_MoveUnmanagedVhd
+title: Msvm_MoveUnmanagedVhd classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: e98139b747f4b32265e27bc84ca240f496dea715
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e631b95c9961262df288b76cf83f953589780c2feb294e940314d08975bcfd57
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521121"
 ---
-# <a name="msvm_moveunmanagedvhd-class"></a>\_Classe MSVM MoveUnmanagedVhd
+# <a name="msvm_moveunmanagedvhd-class"></a>Classe Msvm \_ MoveUnmanagedVhd
 
-Sposta un disco rigido virtuale dal percorso di origine a quello di destinazione.
+Sposta un disco rigido virtuale dall'origine al percorso di destinazione.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -41,20 +41,20 @@ class Msvm_MoveUnmanagedVhd : CIM_ManagedElement
 
 ## <a name="members"></a>Members
 
-La **classe \_ MoveUnmanagedVhd di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ MoveUnmanagedVhd** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ MoveUnmanagedVhd di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ MoveUnmanagedVhd** ha queste proprietà.
 
 <dl> <dt>
 
 **VhdDestinationPath**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -67,13 +67,13 @@ Percorso di destinazione.
 **VhdSourcePath**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Percorso di origine dell'unità disco rigido virtuale da spostare.
+Percorso di origine del disco rigido virtuale da spostare.
 
 </dd> </dl>
 
@@ -83,10 +83,10 @@ Percorso di origine dell'unità disco rigido virtuale da spostare.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -95,7 +95,7 @@ Percorso di origine dell'unità disco rigido virtuale da spostare.
 
 <dl> <dt>
 
-[**\_ManagementName CIM**](cim-managedelement.md)
+[**CIM \_ ManagedElement**](cim-managedelement.md)
 </dt> </dl>
 
  

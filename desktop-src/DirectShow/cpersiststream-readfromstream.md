@@ -1,7 +1,7 @@
 ---
 description: Legge i dati del filtro dal flusso specificato.
 ms.assetid: 009f4812-8cc6-436a-9553-3a3161d5e992
-title: Metodo CPersistStream. ReadFromStream (pStream. h)
+title: Metodo CPersistStream.ReadFromStream (Pstream.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ce6c037fbce9fbaeabf7491b1b840000f67e25d2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 39f40871e12a069045197d0cc61970c7d7f88c784f6b0873c294727b75121ae6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073645"
 ---
-# <a name="cpersiststreamreadfromstream-method"></a>CPersistStream. ReadFromStream, metodo
+# <a name="cpersiststreamreadfromstream-method"></a>Metodo CPersistStream.ReadFromStream
 
 Legge i dati del filtro dal flusso specificato.
 
@@ -45,17 +45,17 @@ virtual HRESULT ReadFromStream(
 *pStream* 
 </dt> <dd>
 
-Puntatore a un'interfaccia **IStream** da cui leggere i dati.
+Puntatore a **un'interfaccia IStream** da cui devono essere letti i dati.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK. La classe derivata deve restituire un valore **HRESULT** valido.
+Restituisce S \_ OK. La classe derivata deve restituire un valore **HRESULT** valido.
 
 ## <a name="remarks"></a>Commenti
 
-La versione predefinita non legge nulla; è possibile eseguirne l'override per leggere i dati specifici della classe.
+La versione predefinita non legge nulla. può essere sottoposto a override per leggere i dati specifici della classe.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ La versione predefinita non legge nulla; è possibile eseguirne l'override per l
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PStream. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Pstream.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

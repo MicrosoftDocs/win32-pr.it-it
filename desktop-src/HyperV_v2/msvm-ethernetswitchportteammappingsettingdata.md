@@ -1,7 +1,7 @@
 ---
-description: Rappresenta i dati dell'impostazione della funzionalità di mapping del team di porta.
+description: Rappresenta i dati dell'impostazione della funzionalità di mapping del team di porte.
 ms.assetid: 7c9a392d-c95e-4b0d-8201-e50adabd21b2
-title: Classe Msvm_EthernetSwitchPortTeamMappingSettingData
+title: Msvm_EthernetSwitchPortTeamMappingSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3f0d7385499dcdf6e84c361de03950a4e78be0a9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c65926c01c2ec4d2b333ba4800a355eeb42cf63d905c6c339a81b9b9ed97a891
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106320015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531341"
 ---
-# <a name="msvm_ethernetswitchportteammappingsettingdata-class"></a>\_Classe MSVM EthernetSwitchPortTeamMappingSettingData
+# <a name="msvm_ethernetswitchportteammappingsettingdata-class"></a>Classe Msvm \_ EthernetSwitchPortTeamMappingSettingData
 
-Rappresenta i dati dell'impostazione della funzionalità di mapping del team di porta.
+Rappresenta i dati dell'impostazione della funzionalità di mapping del team di porte.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -41,26 +41,26 @@ class Msvm_EthernetSwitchPortTeamMappingSettingData : Msvm_EthernetSwitchPortFea
 
 ## <a name="members"></a>Members
 
-La **classe \_ EthernetSwitchPortTeamMappingSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ EthernetSwitchPortTeamMappingSettingData** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ EthernetSwitchPortTeamMappingSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ EthernetSwitchPortTeamMappingSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **NetAdapterDeviceId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (127), **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (127), **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
 ID dispositivo della scheda fisica mappata preferita.
@@ -70,13 +70,13 @@ ID dispositivo della scheda fisica mappata preferita.
 **NetAdapterName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (127), **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (127), **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
 Nome della scheda fisica mappata preferita.
@@ -89,10 +89,10 @@ Nome della scheda fisica mappata preferita.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                                               |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                                               |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -101,7 +101,7 @@ Nome della scheda fisica mappata preferita.
 
 <dl> <dt>
 
-[**\_EthernetSwitchPortFeatureSettingData MSVM**](msvm-ethernetswitchportfeaturesettingdata.md)
+[**Msvm \_ EthernetSwitchPortFeatureSettingData**](msvm-ethernetswitchportfeaturesettingdata.md)
 </dt> </dl>
 
  

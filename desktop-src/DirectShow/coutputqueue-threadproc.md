@@ -1,7 +1,7 @@
 ---
-description: Il metodo ThreadProc recupera campioni dalla coda e li recapita al pin di input.
+description: Il metodo ThreadProc recupera gli esempi dalla coda e li recapita al pin di input.
 ms.assetid: e5da0a12-c722-4d08-bf84-5e3aa60b64a9
-title: Metodo COutputQueue. ThreadProc (Outputq. h)
+title: Metodo COutputQueue.ThreadProc (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 75e2e6bd7fa05480603f30e68eeaf0487918ae7f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d37158d71a74726e9bf27e76ffedb076f99b7380ffcca4edfa95928767eedbf4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073635"
 ---
-# <a name="coutputqueuethreadproc-method"></a>COutputQueue. ThreadProc, metodo
+# <a name="coutputqueuethreadproc-method"></a>Metodo COutputQueue.ThreadProc
 
-Il `ThreadProc` metodo recupera campioni dalla coda e li recapita al pin di input.
+Il `ThreadProc` metodo recupera gli esempi dalla coda e li recapita al pin di input.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,14 +46,14 @@ Restituisce zero.
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo [**COutputQueue:: InitialThreadProc**](coutputqueue-initialthreadproc.md) chiama questo metodo, che implementa il ciclo del thread principale. All'interno del ciclo, il metodo esegue i passaggi seguenti:
+Il [**metodo COutputQueue::InitialThreadProc**](coutputqueue-initialthreadproc.md) chiama questo metodo, che implementa il ciclo del thread principale. All'interno del ciclo, il metodo esegue i passaggi seguenti:
 
 1.  Recupera un esempio per la coda.
-2.  Se l'esempio è un messaggio di controllo, il thread esegue l'azione di controllo. In caso contrario, inserisce l'esempio nella matrice [**COutputQueue:: m \_ ppSamples**](coutputqueue-m-ppsamples.md) .
-3.  Quando la matrice è completa (o se [**COutputQueue:: m \_ BBatchExact**](coutputqueue-m-bbatchexact.md) è **false**), il thread chiama il metodo [**IMemInputPin:: ReceiveMultiple**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receivemultiple) per recapitare gli esempi.
-4.  Se nessun campione viene accodato, il thread resta in attesa sul semaforo [**COutputQueue:: m \_ hSem**](coutputqueue-m-hsem.md) .
+2.  Se l'esempio è un messaggio di controllo, il thread esegue l'azione di controllo. In caso contrario, inserisce l'esempio [**nella matrice COutputQueue::m \_ ppSamples.**](coutputqueue-m-ppsamples.md)
+3.  Quando la matrice è piena (o se [**COutputQueue::m \_ bBatchExact**](coutputqueue-m-bbatchexact.md) è **FALSE),** il thread chiama il metodo [**IMemInputPin::ReceiveMultiple**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receivemultiple) per distribuire gli esempi.
+4.  Se non vengono accodati campioni, il thread attende il semaforo [**\_ HSem COutputQueue::m.**](coutputqueue-m-hsem.md)
 
-Il thread termina quando la variabile membro [**COutputQueue:: m \_ BTerminate**](coutputqueue-m-bterminate.md) diventa **true**.
+Il thread termina quando la variabile membro [**COutputQueue::m \_ bTerminate**](coutputqueue-m-bterminate.md) diventa **TRUE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Il thread termina quando la variabile membro [**COutputQueue:: m \_ BTerminate**
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Outputq. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Outputq.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

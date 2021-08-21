@@ -1,10 +1,10 @@
 ---
-title: DS-Replication-Get-Changes-tutti i diritti estesi
-description: Controllare l'accesso a destra che consente la replica dei dati del dominio Secret.
+title: Diritto esteso DS-Replication-Get-Changes-All
+description: Controllare il diritto di accesso che consente la replica dei dati del dominio segreto.
 ms.assetid: fadc9fbd-ac8e-4fc6-832d-7041ea520e18
 ms.tgt_platform: multiple
 keywords:
-- DS-Replication-Get-Changes-tutto lo schema AD esteso a destra
+- Schema active directory esteso DS-Replication-Get-Changes-All
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e0c80a82fdc28cc5675da9591c8039503e8b332
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 552fc61e40e39e6696d2acfd8d6ecc9d44c44aa345ffd888d1e30193a40e05cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532091"
 ---
-# <a name="ds-replication-get-changes-all-extended-right"></a>DS-Replication-Get-Changes-tutti i diritti estesi
+# <a name="ds-replication-get-changes-all-extended-right"></a>Diritto esteso DS-Replication-Get-Changes-All
 
-Controllare l'accesso a destra che consente la replica dei dati del dominio Secret.
+Controllare il diritto di accesso che consente la replica dei dati del dominio segreto.
 
 
 
@@ -37,7 +37,7 @@ Controllare l'accesso a destra che consente la replica dei dati del dominio Secr
 ## <a name="implementations"></a>Implementazioni
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -49,19 +49,19 @@ Controllare l'accesso a destra che consente la replica dei dati del dominio Secr
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localization-display-ID | 62                                                                                                                               |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 62                                                                                                                               |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localization-display-ID | 62                                                                                                                               |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 62                                                                                                                               |
 
 
 
@@ -71,8 +71,8 @@ Controllare l'accesso a destra che consente la replica dei dati del dominio Secr
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localization-display-ID | 62                                                                                                                               |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 62                                                                                                                               |
 
 
 
@@ -82,8 +82,8 @@ Controllare l'accesso a destra che consente la replica dei dati del dominio Secr
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localization-display-ID | 62                                                                                                                               |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 62                                                                                                                               |
 
 
 
@@ -93,8 +93,8 @@ Controllare l'accesso a destra che consente la replica dei dati del dominio Secr
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localization-display-ID | 62                                                                                                                               |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 62                                                                                                                               |
 
 
 
@@ -104,8 +104,8 @@ Controllare l'accesso a destra che consente la replica dei dati del dominio Secr
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localization-display-ID | 62                                                                                                                               |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> [**Configurazione**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 62                                                                                                                               |
 
 
 

@@ -10,33 +10,33 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 49c6d6b0bf42951766cfd813ccb4b5eed041600a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b97ee9d0f2f407c0cae2c9c1466a1904cf79eaecb353b94ac11bb3373367ed2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050249"
 ---
 # <a name="setting-up-a-fixed-port-for-wmi"></a>Configurazione di una porta fissa per WMI
 
 WMI viene eseguito come parte di un host del servizio condiviso con porte assegnate tramite DCOM per impostazione predefinita. Tuttavia, è possibile configurare il servizio WMI per l'esecuzione come unico processo in un host separato e specificare una porta fissa.
 
-La procedura seguente è un'installazione automatica per consentire a WMI di avere una porta fissa. Nella procedura viene utilizzato lo strumento da riga di comando [**WinMgmt**](winmgmt.md) .
+La procedura seguente è un'installazione automatica per consentire a WMI di avere una porta fissa. La procedura usa lo strumento da riga di comando [**winmgmt.**](winmgmt.md)
 
 **Per configurare una porta fissa per WMI**
 
-1.  Al prompt dei comandi digitare **winmgmt-standalonehost**
-2.  Arrestare il servizio WMI digitando il comando **net stop "Strumentazione gestione Windows"** oppure utilizzare il nome breve di **net stop winmgmt**
-3.  Riavviare nuovamente il servizio WMI in un nuovo host del servizio digitando **net start "Strumentazione gestione Windows"** o **net start WinMgmt**
-4.  Stabilire un nuovo numero di porta per il servizio WMI digitando **netsh firewall add apertura TCP 24158 WMIFixedPort**
+1.  Al prompt dei comandi digitare **winmgmt -standalonehost**
+2.  Arrestare il servizio WMI digitando il comando **net stop "Windows Management Instrumentation"** o usare il nome breve **di net stop winmgmt**
+3.  Riavviare di nuovo il servizio WMI in un nuovo host del servizio digitando **net start "Windows Management Instrumentation"** o **net start winmgmt**
+4.  Stabilire un nuovo numero di porta per il servizio WMI digitando **netsh firewall add portapening TCP 24158 WMIFixedPort**
 
-Per annullare le modifiche apportate a WMI, digitare **WinMgmt/sharedhost**, quindi arrestare e avviare di nuovo il servizio Winmgmt.
+Per annullare le modifiche apportate a WMI, digitare **winmgmt /sharedhost**, quindi arrestare e riavviare il servizio winmgmt.
 
 ## <a name="examples"></a>Esempio
 
-Per uno script che configura una porta fissa per WMI, vedere il seguente [esempio di codice](https://Gallery.TechNet.Microsoft.Com/Set-WmiSinglePortps1-20fa8389 )della raccolta di script.
+Per uno script che configura una porta fissa per WMI, vedere l'esempio di codice di Scripting Gallery [seguente.](https://Gallery.TechNet.Microsoft.Com/Set-WmiSinglePortps1-20fa8389 )
 
-in alternativa, un esempio di codice PowerShell che Abilita o Disabilita le impostazioni della porta WMI, vedere l'esempio [set-WmiSinglePort](https://Gallery.TechNet.Microsoft.Com/Set-WmiSinglePortps1-20fa8389) nella raccolta TechNet.
+o un esempio di codice di PowerShell che abilita o disabilita le impostazioni della porta WMI, vedere l'esempio [Set-WmiSinglePort](https://Gallery.TechNet.Microsoft.Com/Set-WmiSinglePortps1-20fa8389) in TechNet Gallery.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,7 +48,7 @@ in alternativa, un esempio di codice PowerShell che Abilita o Disabilita le impo
 [Risoluzione dei problemi relativi a connessioni WMI remote](connecting-to-wmi-remotely-starting-with-vista.md)
 </dt> <dt>
 
-[Hosting e sicurezza del provider](provider-hosting-and-security.md)
+[Hosting e sicurezza dei provider](provider-hosting-and-security.md)
 </dt> </dl>
 
  

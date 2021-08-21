@@ -1,9 +1,9 @@
 ---
-title: funzione glGetPointerv (GL. h)
-description: La funzione glGetPointerv restituisce l'indirizzo di una matrice di dati vertex.
+title: Funzione glGetPointerv (Gl.h)
+description: La funzione glGetPointerv restituisce l'indirizzo di una matrice di dati dei vertici.
 ms.assetid: 6f85c508-9335-4474-8cc5-e67c7421a8e4
 keywords:
-- funzione glGetPointerv OpenGL
+- Funzione glGetPointerv OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 569861922514af88835fbb4e313dab3286b7c47d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fdbef5cc17a547e82dfa55876d927ef9fed87f106d9e5fa0d5d1c36a5ce269b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493921"
 ---
-# <a name="glgetpointerv-function"></a>glGetPointerv (funzione)
+# <a name="glgetpointerv-function"></a>Funzione glGetPointerv
 
-La funzione **glGetPointerv** restituisce l'indirizzo di una matrice di dati vertex.
+La **funzione glGetPointerv** restituisce l'indirizzo di una matrice di dati dei vertici.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,10 +41,10 @@ void WINAPI glGetPointerv(
 
 <dl> <dt>
 
-*pname* 
+*Pname* 
 </dt> <dd>
 
-Il tipo di puntatore di matrice da restituire dalle costanti simboliche seguenti: puntatore alla matrice di colori GL, puntatore alla matrice del flag Edge GL, puntatore del buffer del feedback GL, puntatore della matrice di \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ indici GL, puntatore di matrice GL Normal, puntatore della matrice Coord della trama GL, \_ \_ \_ puntatore al \_ \_ \_ \_ \_ \_ \_ \_ \_ buffer di selezione GL \_ e puntatore alla matrice del \_ vertice GL \_ \_ .
+Tipo di puntatore a matrice da restituire dalle costanti simboliche seguenti: GL \_ COLOR \_ ARRAY \_ \_ POINTER, GL EDGE FLAG ARRAY \_ \_ \_ POINTER, GL FEEDBACK BUFFER \_ \_ \_ POINTER, GL INDEX ARRAY \_ \_ \_ POINTER, GL NORMAL ARRAY \_ \_ \_ POINTER, GL TEXTURE \_ \_ COORD \_ ARRAY \_ POINTER, GL SELECTION BUFFER POINTER \_ e GL \_ \_ \_ VERTEX ARRAY \_ \_ POINTER.
 
 </dd> <dt>
 
@@ -61,19 +61,19 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Il codice di errore seguente può essere recuperato dalla funzione [**glGetError**](glgeterror.md) .
+Il codice di errore seguente può essere recuperato dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                             | Significato                                       |
 |--------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| <dl> <dt>**\_enumerazione GL non valida \_**</dt> </dl> | *pname* non è un valore accettato.<br/> |
+| <dl> <dt>**ENUMERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | *pname* non è un valore accettato.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **glGetPointerv** restituisce informazioni sul puntatore alla matrice. Il parametro *pname* è una costante simbolica che specifica il tipo di puntatore alla matrice da restituire e *params* è un puntatore a una posizione in cui inserire i dati restituiti.
+La **funzione glGetPointerv** restituisce informazioni sul puntatore di matrice. Il *parametro pname* è una costante simbolica che specifica il tipo di puntatore di matrice da restituire e *params* è un puntatore a una posizione in cui inserire i dati restituiti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,8 +83,8 @@ La funzione **glGetPointerv** restituisce informazioni sul puntatore alla matric
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

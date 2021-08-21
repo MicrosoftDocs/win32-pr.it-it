@@ -1,19 +1,19 @@
 ---
-description: TAPI supporta le funzioni del dispositivo linea per configurare i dispositivi linea ed eseguire funzioni di telefonia, ad esempio in attesa e in futuro.
+description: TAPI supporta le funzioni dei dispositivi line per configurare i dispositivi line ed eseguire funzioni di telefonia come hold and forward.
 ms.assetid: 74e6300f-0d72-4b0f-8b95-fc1c8d0d0293
-title: Funzioni del dispositivo linea
+title: Funzioni del dispositivo Line
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fcaa65f996d31514b6fdd7ecfd8e50115fc43a5f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09d7b45a6cc25ede14da6b105cd0ce3da00adbade49e19f8ed2e44fb1d1baac9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119405261"
 ---
-# <a name="line-device-functions"></a>Funzioni del dispositivo linea
+# <a name="line-device-functions"></a>Funzioni del dispositivo Line
 
-TAPI supporta le seguenti funzioni del dispositivo line:
+TAPI supporta le funzioni del dispositivo line seguenti:
 
 -   [**lineAccept**](/windows/desktop/api/Tapi/nf-tapi-lineaccept)
 -   [**lineAddProvider**](/windows/desktop/api/Tapi/nf-tapi-lineaddprovider)
@@ -24,7 +24,7 @@ TAPI supporta le seguenti funzioni del dispositivo line:
 -   [**lineClose**](/windows/desktop/api/Tapi/nf-tapi-lineclose)
 -   [**lineCompleteCall**](/windows/desktop/api/Tapi/nf-tapi-linecompletecall)
 -   [**lineCompleteTransfer**](/windows/desktop/api/Tapi/nf-tapi-linecompletetransfer)
--   [**lineConfigDialog**](/windows/desktop/api/Tapi/nf-tapi-lineconfigdialog)
+-   [**Finestra di dialogo lineConfigDialog**](/windows/desktop/api/Tapi/nf-tapi-lineconfigdialog)
 -   [**lineConfigDialogEdit**](/windows/desktop/api/Tapi/nf-tapi-lineconfigdialogedit)
 -   [**lineConfigProvider**](/windows/desktop/api/Tapi/nf-tapi-lineconfigprovider)
 -   [**lineDeallocateCall**](/windows/desktop/api/Tapi/nf-tapi-linedeallocatecall)
@@ -98,12 +98,12 @@ TAPI supporta le seguenti funzioni del dispositivo line:
 -   [**lineShutdown**](/windows/desktop/api/Tapi/nf-tapi-lineshutdown)
 -   [**lineSwapHold**](/windows/desktop/api/Tapi/nf-tapi-lineswaphold)
 -   [**lineTranslateAddress**](/windows/desktop/api/Tapi/nf-tapi-linetranslateaddress)
--   [**lineTranslateDialog**](/windows/desktop/api/Tapi/nf-tapi-linetranslatedialog)
+-   [**Finestra di dialogo lineTranslateDialog**](/windows/desktop/api/Tapi/nf-tapi-linetranslatedialog)
 -   [**lineUncompleteCall**](/windows/desktop/api/Tapi/nf-tapi-lineuncompletecall)
 -   [**lineUnhold**](/windows/desktop/api/Tapi/nf-tapi-lineunhold)
 -   [**lineUnpark**](/windows/desktop/api/Tapi/nf-tapi-lineunpark)
 
-Per una categorizzazione delle funzioni TAPI per livello di servizio e attività, vedere Guida di riferimento alle funzioni [rapide TAPI](tapi-quick-function-reference.md).
+Per una categorizzazione delle funzioni TAPI in base al livello di servizio e all'attività, vedere Riferimento [rapido alle funzioni TAPI.](tapi-quick-function-reference.md)
 
  
 

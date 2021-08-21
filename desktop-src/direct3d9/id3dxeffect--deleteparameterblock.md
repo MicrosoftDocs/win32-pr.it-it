@@ -1,7 +1,7 @@
 ---
-description: Elimina un blocco di parametri.
+description: Eliminare un blocco di parametri.
 ms.assetid: 5502dabc-1703-481b-a69d-f6bd8fd01d20
-title: Metodo ID3DXEffect::D eleteParameterBlock (D3DX9Effect. h)
+title: Metodo ID3DXEffect::D eleteParameterBlock (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 483b09ebf308b8cdfa14d714bc74786e5fcb1f83
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a53d97bc077f830bdf73f5a184e253a8537626cbba575b2a5b9e74247ea48702
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119494241"
 ---
-# <a name="id3dxeffectdeleteparameterblock-method"></a>ID3DXEffect::D Metodo eleteParameterBlock
+# <a name="id3dxeffectdeleteparameterblock-method"></a>Metodo ID3DXEffect::D eleteParameterBlock
 
-Elimina un blocco di parametri.
+Eliminare un blocco di parametri.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT DeleteParameterBlock(
 
 <dl> <dt>
 
- *hParameterBlock* \[ in\]
+ *hParameterBlock* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Handle per il blocco di parametri. Si tratta dell'handle restituito da [**ID3DXEffect:: EndParameterBlock**](id3dxeffect--endparameterblock.md).
+Handle per il blocco di parametri. Si tratta dell'handle restituito [**da ID3DXEffect::EndParameterBlock.**](id3dxeffect--endparameterblock.md)
 
 </dd> </dl>
 
@@ -57,7 +57,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-I blocchi di parametri sono blocchi di Stati effettivi. Usare un blocco di parametri per registrare le modifiche di stato in modo che possano essere applicate in un secondo momento con una singola chiamata API. Quando non è più necessario, eliminare il blocco di parametri per ridurre l'utilizzo della memoria.
+I blocchi di parametri sono blocchi di stati di effetto. Usare un blocco di parametri per registrare le modifiche di stato in modo che possano essere applicate in un secondo momento con una singola chiamata API. Quando non sono più necessari, eliminare il blocco di parametri per ridurre l'utilizzo della memoria.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ I blocchi di parametri sono blocchi di Stati effettivi. Usare un blocco di param
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

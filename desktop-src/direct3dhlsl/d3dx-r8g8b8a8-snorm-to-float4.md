@@ -1,9 +1,9 @@
 ---
-title: Funzione D3DX_R8G8B8A8_SNORM_to_FLOAT4
-description: Decomprime \_ \_ \_ i dati di DXGI Format R8G8B8A8 russar shader in un XMFLOAT4.
+title: D3DX_R8G8B8A8_SNORM_to_FLOAT4 funzione
+description: Decomprime i dati dello shader DXGI \_ FORMAT \_ R8G8B8A8 \_ SNORM in XMFLOAT4.
 ms.assetid: 2f2b9d5e-f4d0-470a-a4bb-b333d57f03e7
 keywords:
-- Funzione D3DX_R8G8B8A8_SNORM_to_FLOAT4 HLSL
+- D3DX_R8G8B8A8_SNORM_to_FLOAT4 funzione HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b1a4153fa30f2792008ccc45bc3e16f5d404f33a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 49c7da0ff2b6cb1bc725ed880cbb75d9ea7313df12a2e170c94dfde1e4efb4d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104982217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119490981"
 ---
-# <a name="d3dx_r8g8b8a8_snorm_to_float4-function"></a>D3DX \_ R8G8B8A8 \_ russa \_ to \_ float4 Function
+# <a name="d3dx_r8g8b8a8_snorm_to_float4-function"></a>Da D3DX \_ R8G8B8A8 \_ SNORM \_ alla funzione \_ FLOAT4
 
-Decomprime \_ \_ \_ i dati di DXGI Format R8G8B8A8 russar shader in un XMFLOAT4.
+Decomprime i dati dello shader DXGI \_ FORMAT \_ R8G8B8A8 \_ SNORM in XMFLOAT4.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ XMFLOAT4 D3DX_R8G8B8A8_SNORM_to_FLOAT4(
 *packedInput* 
 </dt> <dd>
 
-Dati dello shader compressi.
+Dati dello shader di cui è stato effettuato il pacchetto.
 
 </dd> </dl>
 
@@ -54,7 +54,7 @@ Dati dello shader decompressi.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. inl</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Dati dello shader decompressi.
 [Funzioni](format-conversion-functions.md)
 </dt> <dt>
 
-[Decompressione e compressione \_ del formato DXGI per la modifica dell'immagine In-Place](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Decompressione e creazione di un pacchetto DXGI \_ FORMAT per la In-Place di immagini](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

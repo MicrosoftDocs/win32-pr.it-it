@@ -7,23 +7,23 @@ keywords:
 - Panoramica del provider ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33d865bc138a676975781f72da1afa5391e87f26
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: f2a2fae2017f56e0d2577185b08079121f3c2c8c9d61c0216947698d179d2ec2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106334342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082335"
 ---
-# <a name="provider-overview-for-adsi"></a>Panoramica dei provider per ADSI
+# <a name="provider-overview-for-adsi"></a>Panoramica del provider per ADSI
 
-Oltre ai [requisiti minimi del provider](provider-minimum-requirements.md), altre informazioni sull'utilizzo includono:
+Oltre ai requisiti [minimi del provider,](provider-minimum-requirements.md)altre informazioni sull'utilizzo includono:
 
--   [Interazione componente ADSI](adsi-component-interaction.md) descrive il contesto in cui viene eseguito il componente del provider.
--   Le [interfacce dello schema](schema-interfaces.md) discutono le interfacce di gestione dello schema dal punto di vista del provider.
--   L' [enumerazione degli oggetti contenitore](enumerating-container-objects.md) descrive i requisiti per supportare le enumerazioni.
--   [Informazioni registro di sistema](provider-registry-information.md) elenca le voci del registro di sistema utilizzate da un provider ADSI.
--   Il [supporto per le query](support-for-queries.md) descrive i requisiti per supportare la ricerca della directory.
--   [I problemi di implementazione per i provider ADSI](implementation-issues-for-adsi-providers.md) includono note per i provider relativi a diversi problemi software.
+-   [Interazione tra componenti ADSI](adsi-component-interaction.md) descrive il contesto in cui viene eseguito il componente provider.
+-   [Le interfacce dello](schema-interfaces.md) schema illustrano le interfacce di gestione dello schema dal punto di vista del provider.
+-   [L'enumerazione degli oggetti](enumerating-container-objects.md) contenitore descrive i requisiti per supportare le enumerazioni.
+-   [Informazioni del Registro di sistema del](provider-registry-information.md) provider elenca le voci del Registro di sistema utilizzate da un provider ADSI.
+-   [Il supporto per le](support-for-queries.md) query descrive i requisiti per supportare la ricerca della directory.
+-   [Problemi di implementazione per i provider ADSI](implementation-issues-for-adsi-providers.md) include note ai provider su vari problemi software.
 
  
 

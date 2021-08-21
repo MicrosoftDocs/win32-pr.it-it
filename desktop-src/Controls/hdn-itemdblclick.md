@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica HDN_ITEMDBLCLICK (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo di intestazione che l'utente ha fatto doppio clic sul controllo. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM. Solo i controlli header impostati sullo \_ stile dei pulsanti HDS inviano il codice di notifica.
+title: HDN_ITEMDBLCLICK codice di notifica (Commctrl.h)
+description: Notifica alla finestra padre di un controllo intestazione che l'utente ha fatto doppio clic sul controllo. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY. Solo i controlli intestazione impostati sullo stile HDS \_ BUTTONS inviano questo codice di notifica.
 ms.assetid: 72bb00b9-226f-4409-b788-b623868f78b6
 keywords:
-- Controlli di Windows per il codice di notifica HDN_ITEMDBLCLICK
+- HDN_ITEMDBLCLICK codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e61117303ecc478a998da8799867988dbc1ca08
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7117ceb8d17447eed8003f7da3dab70a17252c750bfb3885cd3f235a70b7bb53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104225235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544613"
 ---
-# <a name="hdn_itemdblclick-notification-code"></a>\_Codice di notifica ITEMDBLCLICK di HDN
+# <a name="hdn_itemdblclick-notification-code"></a>Codice di \_ notifica HDN ITEMDBLCLICK
 
-Notifica alla finestra padre di un controllo di intestazione che l'utente ha fatto doppio clic sul controllo. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) . Solo i controlli header impostati sullo stile dei [**\_ pulsanti HDS**](header-control-styles.md) inviano il codice di notifica.
+Notifica alla finestra padre di un controllo intestazione che l'utente ha fatto doppio clic sul controllo. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md) Solo i controlli intestazione impostati sullo stile [**HDS \_ BUTTONS**](header-control-styles.md) inviano questo codice di notifica.
 
 
 ```C++
@@ -43,7 +43,7 @@ HDN_ITEMDBLCLICK
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-nmheadera) che contiene informazioni su questo codice di notifica.
+Puntatore a una [**struttura NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-nmheadera) che contiene informazioni su questo codice di notifica.
 
 </dd> </dl>
 
@@ -57,9 +57,9 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **HDN \_ ITEMDBLCLICKW** (Unicode) e **HDN \_ ITEMDBLCLICKA** (ANSI)<br/>         |
 
 

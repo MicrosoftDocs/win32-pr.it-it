@@ -1,6 +1,6 @@
 ---
-title: 'Metodi di TextureCubeArray:: TextureCubeArray SampleLevel'
-description: 'Esegue il campionamento di una trama sul livello mipmap specificato. | Metodi di TextureCubeArray:: TextureCubeArray SampleLevel'
+title: Metodi di TextureCubeArray::TextureCubeArray SampleLevel
+description: Campionamento di una trama al livello mipmap specificato. | Metodi di TextureCubeArray::TextureCubeArray SampleLevel
 ms.assetid: FEE18D08-B05C-4F38-AFB1-CA8341759D01
 keywords:
 - Metodi SampleLevel HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 3ff09dd2333d78b5258b56e43e6c279e44a23ec5
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 80a482592b254105eaf91b0c6acb07f6b724bded36803deb20ee5156875a077f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104995677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119484581"
 ---
-# <a name="texturecubearraysamplelevel-methods"></a>Metodi TextureCubeArray:: SampleLevel
+# <a name="texturecubearraysamplelevel-methods"></a>Metodi di TextureCubeArray::SampleLevel
 
-Esegue il campionamento di una trama sul livello mipmap specificato.
+Campionamento di una trama al livello mipmap specificato.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Esegue il campionamento di una trama sul livello mipmap specificato.
 
 | Metodo                                                                                | Descrizione                                                                                        |
 |:--------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
-| [**SampleLevel (S, float, float)**](dx-graphics-hlsl-to-samplelevel.md)                 | Esegue il campionamento di una trama sul livello mipmap specificato.<br/>                                        |
-| [**SampleLevel (S, float, float, uint)**](tcubearray-samplelevel-s-float-float-uint-.md) | Esegue il campionamento di una trama sul livello mipmap specificato e restituisce lo stato dell'operazione.<br/> |
+| [**SampleLevel(S,float,float)**](dx-graphics-hlsl-to-samplelevel.md)                 | Campionamento di una trama al livello mipmap specificato.<br/>                                        |
+| [**SampleLevel(S,float,float,uint)**](tcubearray-samplelevel-s-float-float-uint-.md) | Consente di eseguire il campionamento di una trama al livello mipmap specificato e restituisce lo stato dell'operazione.<br/> |
 
 
 
@@ -41,7 +41,7 @@ Esegue il campionamento di una trama sul livello mipmap specificato.
 [**TextureCubeArray**](texturecubearray.md)
 </dt> <dt>
 
-[Texture-oggetto](dx-graphics-hlsl-to-type.md)
+[Oggetto texture](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

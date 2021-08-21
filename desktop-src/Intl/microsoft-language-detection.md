@@ -1,35 +1,35 @@
 ---
-description: Il servizio di rilevamento del linguaggio ELS è denominato Microsoft Rilevamento lingua. Questo servizio usa la tecnologia Microsoft brevettata per consentire alle applicazioni di rilevare la lingua in cui viene scritto un testo specifico.
+description: Il servizio di rilevamento della lingua ELS è denominato Microsoft Rilevamento lingua. Questo servizio usa la tecnologia microsoft-patentata per consentire alle applicazioni di rilevare la lingua in cui viene scritto testo specifico.
 ms.assetid: 11438e0b-d841-44d0-b68f-77868be4c92f
-title: Rilevamento lingua Microsoft
+title: Microsoft Rilevamento lingua
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0b395f6a1a320b66f00d996510b7cafc28b8e64
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 472c4c4df0484287ef8bebcfdb2f395212b1985b282b7391d6c047dfb98d2ed8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119788381"
 ---
-# <a name="microsoft-language-detection"></a>Rilevamento lingua Microsoft
+# <a name="microsoft-language-detection"></a>Microsoft Rilevamento lingua
 
-Il servizio di rilevamento del linguaggio ELS è denominato Microsoft Rilevamento lingua. Questo servizio usa la tecnologia Microsoft brevettata per consentire alle applicazioni di rilevare la lingua in cui viene scritto un testo specifico.
+Il servizio di rilevamento della lingua ELS è denominato Microsoft Rilevamento lingua. Questo servizio usa la tecnologia microsoft-patentata per consentire alle applicazioni di rilevare la lingua in cui viene scritto testo specifico.
 
 ## <a name="input-to-microsoft-language-detection"></a>Input per Microsoft Rilevamento lingua
 
-L'input per il servizio Microsoft Rilevamento lingua è un testo UTF-16 (formato normalizzato C). Il servizio deve determinare la lingua del testo.
+L'input per il servizio Rilevamento lingua Microsoft è testo UTF-16 (formato normalizzato C). Il servizio deve determinare la lingua per questo testo.
 
 ## <a name="output-of-microsoft-language-detection"></a>Output di Microsoft Rilevamento lingua
 
-Il servizio Microsoft Rilevamento lingua recupera un elenco di stringhe UTF-16 con terminazione del registro di sistema e con terminazione null, rappresentate dai rispettivi nomi, separate da delimitatori di carattere null. L'elenco è ordinato in base alla pertinenza. Per la maggior parte delle lingue vengono usati nomi neutri. Tuttavia, per alcuni, ad esempio Sr-Cyrl, Sr-Latn, zh-Hant e zh-Hans, vengono usati nomi completi.
+Il servizio Microsoft Rilevamento lingua recupera una stringa UTF-16 con terminazione Null doppia in formato Registro di sistema che elenca le lingue, rappresentate dai relativi nomi, separate da delimitatori di caratteri Null. L'elenco è ordinato in base alla pertinenza. Per la maggior parte delle lingue, vengono usati nomi neutri. Tuttavia, per alcuni, ad esempio, sr-Cyrl, sr-Latn, zh-Hant e zh-Hans, vengono usati i nomi completi.
 
-## <a name="microsoft-language-detection-operation"></a>Operazione di Microsoft Rilevamento lingua
+## <a name="microsoft-language-detection-operation"></a>Operazione Rilevamento lingua Microsoft
 
-Il servizio Microsoft Rilevamento lingua controlla lo script Unicode del testo fornito dall'applicazione. Suddivide il testo in base agli script che rileva e quindi determina la lingua in cui viene scritto ogni segmento. Se uno script indica una sola lingua, è garantita la presenza della lingua nell'elenco di lingue di output. Il servizio usa un algoritmo brevettato per determinare la pertinenza di ogni lingua supportata.
+Il servizio Rilevamento lingua Microsoft controlla lo script Unicode del testo fornito dall'applicazione. Segmenta il testo in base agli script rilevati e quindi determina la lingua in cui viene scritto ogni segmento. Se uno script indica una sola lingua, la lingua sarà sempre presente nell'elenco di output delle lingue. Il servizio usa un algoritmo patentato per determinare la pertinenza di ogni linguaggio supportato.
 
-## <a name="microsoft-language-detection-guid"></a>GUID di Microsoft Rilevamento lingua
+## <a name="microsoft-language-detection-guid"></a>GUID Rilevamento lingua Microsoft
 
-Il GUID per il servizio Microsoft Rilevamento lingua viene dichiarato in Elssrvc. h, come illustrato nel codice seguente.
+Il GUID per il servizio Rilevamento lingua Microsoft viene dichiarato in Elssrvc.h, come illustrato nel codice seguente.
 
 
 ```C++
@@ -44,7 +44,7 @@ static const GUID ELS_GUID_LANGUAGE_DETECTION =
 
 <dl> <dt>
 
-[Informazioni sui servizi linguistici estesi](about-extended-linguistic-services.md)
+[Informazioni su Servizi linguistici estesi](about-extended-linguistic-services.md)
 </dt> </dl>
 
  

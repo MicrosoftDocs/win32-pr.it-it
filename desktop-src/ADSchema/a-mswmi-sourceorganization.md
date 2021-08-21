@@ -1,11 +1,11 @@
 ---
-title: attributo ms-WMI-SourceOrganization
-description: Organizzazione aziendale che ha inizialmente creato un oggetto criteri.
+title: Attributo ms-WMI-SourceOrganization
+description: Organizzazione aziendale che ha creato inizialmente un oggetto criteri.
 ms.assetid: 11ac94d7-4f72-4627-81db-ae1bb23177d3
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-WMI-SourceOrganization
-- msWMI-schema AD attributo SourceOrganization
+- Schema AD dell'attributo msWMI-SourceOrganization
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a0606c0cff92a60bf0be165c7517590b295e8f8f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 29cf9324c7b8dc8c7189dd90ce47aa50d08e4904f014254100ac356869486c00
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119326401"
 ---
-# <a name="ms-wmi-sourceorganization-attribute"></a>attributo ms-WMI-SourceOrganization
+# <a name="ms-wmi-sourceorganization-attribute"></a>Attributo ms-WMI-SourceOrganization
 
-Organizzazione aziendale che ha inizialmente creato un oggetto criteri.
+Organizzazione aziendale che ha creato inizialmente un oggetto criteri.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-SourceOrganization                   |
-| LDAP-Display-Name | msWMI-SourceOrganization                    |
+| CN                | ms-WMI-SourceOrganization                   |
+| Ldap-Display-Name | msWMI-SourceOrganization                    |
 | Dimensione              | Meno di 50 caratteri.                 |
-| Privilegio aggiornamento  | Amministratore Criteri di gruppo                  |
+| Privilegio di aggiornamento  | Criteri di gruppo amministratore                  |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1644                     |
-| System-ID-GUID    | 34f7ed6c-615d-418d-aa00-549a7d7be03e        |
+| System-Id-Guid    | 34f7ed6c-615d-418d-aa00-549a7d7be03e        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -57,15 +57,15 @@ Organizzazione aziendale che ha inizialmente creato un oggetto criteri.
 | ID collegamento                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Organizzazione aziendale che ha inizialmente creato un oggetto criteri.
 | ID collegamento                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Organizzazione aziendale che ha inizialmente creato un oggetto criteri.
 | ID collegamento                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Organizzazione aziendale che ha inizialmente creato un oggetto criteri.
 | ID collegamento                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Organizzazione aziendale che ha inizialmente creato un oggetto criteri.
 | ID collegamento                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| È a valore singolo       | Vero                                                                                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                                                                                       |
 | Indicizzato             | Falso                                                                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 

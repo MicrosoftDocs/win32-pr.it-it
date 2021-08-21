@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2a6a3c5dd4c9f11d45e1b719498d515a536e5ef8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 51ae6614544cd7045689f674ce90e672e3bce4ea8ee36486775892f95a5385fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119538547"
 ---
 # <a name="ctransforminputpinreceive-method"></a>Metodo CTransformInputPin.Receive
 
@@ -57,7 +57,7 @@ Restituisce un **valore HRESULT.** I valori possibili includono quelli illustrat
 
 | Codice restituito                                                                             | Descrizione                                                |
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------|
-| <dl> <dt>**S \_ FALSE**</dt> </dl> | Il pin è attualmente in fase di scaricamento; L'esempio è stato rifiutato.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | Lo scaricamento del pin è in corso. l'esempio è stato rifiutato.<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>    | Operazione completata.<br/>                                        |
 
 
@@ -66,9 +66,9 @@ Restituisce un **valore HRESULT.** I valori possibili includono quelli illustrat
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo chiama il metodo [**CBaseInputPin::Receive**](cbaseinputpin-receive.md) del pin, che controlla lo stato di streaming del pin e verifica le modifiche al formato nel tipo di supporto. Chiama quindi il metodo [**CTransformFilter::Receive**](ctransformfilter-receive.md) del filtro, che elabora l'esempio e lo recapita a valle.
+Questo metodo chiama il metodo [**CBaseInputPin::Receive**](cbaseinputpin-receive.md) del pin, che controlla lo stato di streaming del pin e verifica le modifiche di formato nel tipo di supporto. Chiama quindi il metodo [**CTransformFilter::Receive**](ctransformfilter-receive.md) del filtro, che elabora l'esempio e lo recapita a valle.
 
-Se il filtro deve accedere all'esempio dopo la fine del metodo, deve contenere un conteggio dei riferimenti chiamando il metodo **IUnknown::AddRef** sull'esempio. Ad esempio, alcuni filtri del decodificatore necessitano del campione corrente per decodificare il campione successivo.
+Se il filtro deve accedere all'esempio dopo la fine di questo metodo, deve contenere un conteggio dei riferimenti chiamando il metodo **IUnknown::AddRef** nell'esempio. Ad esempio, alcuni filtri del decodificatore necessitano dell'esempio corrente per decodificare l'esempio successivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,7 +76,7 @@ Se il filtro deve accedere all'esempio dopo la fine del metodo, deve contenere u
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

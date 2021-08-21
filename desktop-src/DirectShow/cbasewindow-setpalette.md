@@ -1,7 +1,7 @@
 ---
-description: Il metodo setavolozza installa una tavolozza per la finestra.
+description: Il metodo SetPalette installa una tavolozza per la finestra.
 ms.assetid: 64fa0d3a-c2eb-4e58-8b8d-c8e5ec3bb479
-title: Metodo CBaseWindow. setavolozze (Winutil. h)
+title: Metodo CBaseWindow.SetPalette (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f246fe8401e1f671f5935ff7d7454093ea1d3179
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0c04d4e24c621dd704b8aeba91646016e334a6f6bface4769578a710322a7cff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074555"
 ---
-# <a name="cbasewindowsetpalette-method-winutilh"></a>Metodo CBaseWindow. setavolozze (Winutil. h)
+# <a name="cbasewindowsetpalette-method-winutilh"></a>Metodo CBaseWindow.SetPalette (Winutil.h)
 
 Il `SetPalette` metodo installa una tavolozza per la finestra.
 
@@ -45,20 +45,20 @@ virtual HRESULT SetPalette(
 *hPalette* 
 </dt> <dd>
 
-Handle per la nuova tavolozza. Non può essere **null**.
+Handle per la nuova tavolozza. Non può essere **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                             | Descrizione                                                    |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl> | Una chiamata interna a **GDIFlush** ha restituito un errore.<br/> |
-| <dl> <dt>**\_OK**</dt> </dl>    | Esito positivo.<br/>                                            |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | Una chiamata interna a **GdiFlush ha** restituito un errore.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Operazione completata.<br/>                                            |
 
 
 
@@ -66,9 +66,9 @@ Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-Se il valore della variabile membro [**\_ BNoRealize di CBaseWindow:: m**](cbasewindow-m-bnorealize.md) è **false** (impostazione predefinita), questo metodo seleziona la tavolozza e la realizza. In caso contrario, seleziona la tavolozza, ma non la realizza. L'oggetto non elimina le tavolozze precedenti utilizzate. Il chiamante è responsabile dell'eliminazione delle tavolozze.
+Se il valore della variabile membro [**CBaseWindow::m \_ bNoRealize**](cbasewindow-m-bnorealize.md) è **FALSE** (impostazione predefinita), questo metodo seleziona la tavolozza e la rende disponibile. In caso contrario, seleziona la tavolozza, ma non se ne rende conto. L'oggetto non elimina la tavolozza precedente in uso. Il chiamante è responsabile dell'eliminazione delle tavolozze.
 
-Qualsiasi thread può chiamare in modo sicuro questo metodo, non solo il thread proprietario della finestra. La finestra Invia un messaggio privato a se stesso, che attiva una chiamata al metodo [**CBaseWindow:: OnPaletteChange**](cbasewindow-onpalettechange.md) .
+Qualsiasi thread può chiamare in modo sicuro questo metodo, non solo il thread proprietario della finestra. La finestra invia un messaggio privato a se stessa, che attiva una chiamata al [**metodo CBaseWindow::OnPaletteChange.**](cbasewindow-onpalettechange.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,8 +76,8 @@ Qualsiasi thread può chiamare in modo sicuro questo metodo, non solo il thread 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: setp_comp-PS
-description: Impostare il registro del predicato. | setp_comp-PS
+title: setp_comp - ps
+description: Impostare il registro predicati. | setp_comp - ps
 ms.assetid: a9acb685-f9aa-41f1-8ef1-6d104cb76a09
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a68da290ecb04e9cb7ae49c5525997fbf4c112a3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d278a6104a6c47d84623b185f78b921d61899f296eeaa557a6c6c6d5344097b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119487081"
 ---
-# <a name="setp_comp---ps"></a>setp \_ comp-PS
+# <a name="setp_comp---ps"></a>setp \_ comp - ps
 
-Impostare il registro del predicato.
+Impostare il registro predicati.
 
 ## <a name="syntax"></a>Sintassi
 
 
 
-| setp \_ comp DST, src0, src1 |
+| setp \_ comp dst, src0, src1 |
 |----------------------------|
 
 
@@ -37,18 +37,18 @@ Dove:
 
     | Sintassi | Confronto            |
     |--------|-----------------------|
-    | \_gt   | Maggiore di          |
-    | \_lt   | Minore di             |
-    | \_GE   | Maggiore o uguale a |
+    | \_Gt   | Maggiore di          |
+    | \_Tenente   | Minore di             |
+    | \_Ge   | Maggiore o uguale a |
     | \_le   | Minore o uguale a    |
-    | \_EQ   | Uguale a              |
+    | \_Eq   | Uguale a              |
     | \_ne   | Diverso da          |
 
     
 
      
 
--   DST è il registro [Register del predicato](dx9-graphics-reference-asm-ps-registers-predicate.md) , P0.
+-   dst è il [registro del registro predicati,](dx9-graphics-reference-asm-ps-registers-predicate.md) p0.
 -   src0 è un registro di origine.
 -   src1 è un registro di origine.
 
@@ -56,7 +56,7 @@ Dove:
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni dei pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | setp \_ comp            |      |      |      |      |      | x    | x     | x    | x     |
 
@@ -64,7 +64,7 @@ Dove:
 
  
 
-Questa istruzione funziona come segue:
+Questa istruzione funziona come:
 
 
 ```
@@ -76,17 +76,17 @@ per channel in destination write mask
 
 
 
-Per ogni canale che può essere scritto in base alla maschera di scrittura di destinazione, salvare il risultato booleano dell'operazione di confronto tra i canali corrispondenti di src0 e src1 (dopo la risoluzione del modificatore di origine swizzles).
+Per ogni canale che può essere scritto in base alla maschera di scrittura di destinazione, salvare il risultato booleano dell'operazione di confronto tra i canali corrispondenti di src0 e src1 (dopo la risoluzione degli swizzle del modificatore di origine).
 
-I registri di origine consentono di specificare un componente arbitrario swizzles.
+I registri di origine consentono l'irruzione arbitraria dei componenti.
 
-Il registro di destinazione consente le maschere di scrittura arbitrarie.
+Il registro di destinazione consente maschere di scrittura arbitrarie.
 
-Il registro DST deve essere il registro predicato.
+Il registro dst deve essere il registro predicato.
 
-## <a name="applying-the-predicate-register"></a>Applicazione del registro predicato
+## <a name="applying-the-predicate-register"></a>Applicazione del registro predicati
 
-Quando il registro predicato è stato inizializzato con setp \_ comp, può essere usato per controllare un'istruzione per ogni componente. Ecco la sintassi:
+Dopo che il registro predicato è stato inizializzato con setp comp, può essere usato per controllare \_ un'istruzione per componente. Di seguito è illustrata la sintassi:
 
 
 ```
@@ -98,12 +98,12 @@ Quando il registro predicato è stato inizializzato con setp \_ comp, può esser
 Dove:
 
 -   \[!\] è un valore booleano facoltativo NOT
--   P0 è il registro predicato
--   \[. Swizzle \] è un swizzle facoltativo da applicare al contenuto del registro predicato prima di utilizzarlo per mascherare l'istruzione. I swizzles disponibili sono:. xyzw (impostazione predefinita quando non è specificato alcun parametro) o qualsiasi replica swizzle:. x/. r,. y/. g,. z/. b o. a/. w.
--   l'istruzione è qualsiasi aritmetic o istruzione di trama. Non può essere un'istruzione di controllo di flusso statica o dinamica.
--   dest, src0,... sono i registri richiesti dall'istruzione
+-   p0 è il registro predicato
+-   \[.swizzle è uno swizzle facoltativo da applicare al contenuto del registro predicato prima di usarlo \] per mascherare l'istruzione. Gli swizzle disponibili sono: .xyzw (impostazione predefinita se non specificata) o qualsiasi swizzle di replica: .x/.r, .y/.g, .z/.b o .a/.w.
+-   l'istruzione è qualsiasi istruzione aritmetica o trama. Non può trattarsi di un'istruzione statica o dinamica di controllo del flusso.
+-   dest, src0, ... sono i registri richiesti dall'istruzione
 
-Supponendo che il registro dei predicati sia stato configurato con i valori dei componenti (true, true, false, false), è possibile applicare questa istruzione:
+Supponendo che il registro predicato sia stato configurato con i valori del componente (true, true, false, false), può essere applicato a questa istruzione:
 
 
 ```
@@ -112,7 +112,7 @@ Supponendo che il registro dei predicati sia stato configurato con i valori dei 
 
 
 
-per eseguire un'aggiunta a 2 componenti.
+per eseguire un'aggiunta di 2 componenti.
 
 
 ```
@@ -122,17 +122,17 @@ r1.y = r2.y + r3.y
 
 
 
-I componenti z e w di R1 non verranno scritti poiché il registro predicato contiene false nei componenti z e w.
+I componenti z e w di r1 non verranno scritti perché il registro predicato conteneva false nei componenti z e w.
 
-Se si applica il registro predicato a un'istruzione aritmetica o di trama, il numero di slot di istruzioni aumenta di 1.
+L'applicazione del registro predicato a un'istruzione aritmetica o di trama aumenta il conteggio degli slot di istruzioni di 1.
 
-Il registro predicato può essere applicato anche a se le istruzioni [prede-PS](if-pred---ps.md), [callnz prede-PS](callnz-pred---ps.md) e [Breakp-PS](break-p---ps.md) . Queste istruzioni di controllo di flusso non hanno alcun aumento nel numero di slot di istruzioni quando si usa il registro predicato.
+Il registro predicato può essere applicato anche alle istruzioni [pred - ps](if-pred---ps.md), [callnz pred - ps](callnz-pred---ps.md) e [breakp - ps.](break-p---ps.md) Queste istruzioni di controllo del flusso non hanno alcun aumento del numero di slot di istruzioni quando si usa il registro predicati.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
+[Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
  

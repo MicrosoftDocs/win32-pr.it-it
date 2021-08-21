@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe GuidColumnValue'
+description: Altre informazioni sulla classe GuidColumnValue
 title: Classe GuidColumnValue
 TOCTitle: GuidColumnValue class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.GuidColumnValue
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 29601951d70424642db6771e21cfad581242d11c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cb7dbc37d37bb135dbf196fb61841ab24175c79005a507e3685a200a09583ce2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118980741"
 ---
 # <a name="guidcolumnvalue-class"></a>Classe GuidColumnValue
 
-Valore della colonna [GUID](/dotnet/api/system.guid) .
+Valore [della colonna Guid.](/dotnet/api/system.guid)
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  [Microsoft. ISAM. esent. Interop. ColumnValue](./columnvalue-class.md)  
-    [Microsoft. ISAM. esent. Interop. ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Guid](/dotnet/api/system.guid)\>  
-      Microsoft. ISAM. esent. Interop. GuidColumnValue  
+  [Microsoft.Isam.Esent.Interop.ColumnValue](./columnvalue-class.md)  
+    [Microsoft.Isam.Esent.Interop.ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Guid](/dotnet/api/system.guid)\>  
+      Microsoft.Isam.Esent.Interop.GuidColumnValue  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -69,4 +69,4 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 [Membri di GuidColumnValue](./guidcolumnvalue-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

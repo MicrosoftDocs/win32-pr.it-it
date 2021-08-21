@@ -1,19 +1,19 @@
 ---
-title: Reflection del messaggio
-description: Reflection del messaggio
+title: Reflection dei messaggi
+description: Reflection dei messaggi
 ms.assetid: 26a124d7-6499-4e8f-9001-d2782c1cc290
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96cb563597e5aa92440e1b1434420e983268d9b3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9191e0e189f8653518aaabb3c31785cde960538b0828d56669096ebf1d63f1e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048049"
 ---
-# <a name="message-reflection"></a>Reflection del messaggio
+# <a name="message-reflection"></a>Reflection dei messaggi
 
-Si consiglia vivamente che un contenitore di controlli ActiveX supporti la reflection del messaggio. Questo comporterà un'operazione più efficiente per i controlli sottoclassati. Se è supportata la reflection del messaggio, la proprietà di ambiente MessageReflect deve essere supportata e avere un valore **true**. Se un contenitore non implementa la reflection del messaggio, il CDK OLE crea due finestre per ogni controllo sottoclassato, per fornire la reflection del messaggio per conto del contenitore di controlli.
+È consigliabile che un contenitore ActiveX di controllo supporti la reflection dei messaggi. Ciò comporta un'operazione più efficiente per i controlli sottoclassati. Se la reflection del messaggio è supportata, la proprietà di ambiente MessageReflect deve essere supportata e il valore **è TRUE.** Se un contenitore non implementa la reflection dei messaggi, la chiave CDK OLE crea due finestre per ogni controllo sottoclassato, per fornire la reflection del messaggio per conto del contenitore del controllo.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -22,9 +22,9 @@ Si consiglia vivamente che un contenitore di controlli ActiveX supporti la refle
 [Contenitori](containers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

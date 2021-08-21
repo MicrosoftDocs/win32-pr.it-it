@@ -1,11 +1,11 @@
 ---
-title: Metodo getdistinguishname della classe MicrosoftDNS_RootHints
-description: Il metodo getdistinguishname Recupera il nome distinto per la zona. | Metodo getdistinguishname della classe MicrosoftDNS_RootHints
+title: Metodo GetDistinguishedName della MicrosoftDNS_RootHints classe
+description: Il metodo GetDistinguishedName recupera il nome distinto per la zona. | Metodo GetDistinguishedName della MicrosoftDNS_RootHints classe
 ms.assetid: 788e1646-54b5-4fb8-af6f-e31c4f3d8231
 keywords:
-- Metodo getdistinguishname (DNS)
-- Metodo getdistinguishname, DNS, classe MicrosoftDNS_RootHints
-- Classe MicrosoftDNS_RootHints DNS, metodo getdistinguishname
+- Metodo GetDistinguishedName DNS
+- Metodo GetDistinguishedName DNS, MicrosoftDNS_RootHints classe
+- MicrosoftDNS_RootHints classe DNS, metodo GetDistinguishedName
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a0543bba7ac49201ca72c27da94971ff7a38d5db
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 635afd622e6266abb5cf37bca1f78adc2d11d3a04fd08939bf2fc8d4f8de62a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119587581"
 ---
-# <a name="getdistinguishedname-method-of-the-microsoftdns_roothints-class"></a>Metodo getdistinguishname della \_ classe RootHints di MicrosoftDNS
+# <a name="getdistinguishedname-method-of-the-microsoftdns_roothints-class"></a>Metodo GetDistinguishedName della classe MicrosoftDNS \_ RootHints
 
-Il metodo **Getdistinguishname** Recupera il nome distinto per la zona.
+Il **metodo GetDistinguishedName** recupera il nome distinto per la zona.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,7 +53,7 @@ Restituisce il nome della zona.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -61,10 +61,10 @@ Restituisce il nome della zona.
 
 <dl> <dt>
 
-[**\_RootHints MicrosoftDNS**](microsoftdns-roothints.md)
+[**MicrosoftDNS \_ RootHints**](microsoftdns-roothints.md)
 </dt> <dt>
 
-[**Metodo WriteBackRootHintDatafile della classe MicrosoftDNS \_ RootHints**](microsoftdns-roothints-writebackroothintdatafile.md)
+[**Metodo WriteBackRootHintDatafile della classe \_ MicrosoftDNS RootHints**](microsoftdns-roothints-writebackroothintdatafile.md)
 </dt> </dl>
 
  

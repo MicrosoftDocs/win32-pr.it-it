@@ -1,7 +1,7 @@
 ---
 description: Il metodo TimerCallback è un metodo di callback per l'evento timer di fine flusso.
 ms.assetid: ed43d07a-1ece-43ab-8753-ab14fa388946
-title: Metodo CBaseRenderer. TimerCallback (Renbase. h)
+title: Metodo CBaseRenderer.TimerCallback (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cfa59ca6bed0539caa7eb650458c168999b0de5a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d3164959ecaa701397b5550c43449884208df1110300b6a042879ac4f146584
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119537431"
 ---
-# <a name="cbaserenderertimercallback-method"></a>CBaseRenderer. TimerCallback, metodo
+# <a name="cbaserenderertimercallback-method"></a>Metodo CBaseRenderer.TimerCallback
 
 Il `TimerCallback` metodo è un metodo di callback per l'evento timer di fine flusso.
 
@@ -46,9 +46,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo [**CBaseRenderer:: SendEndOfStream**](cbaserenderer-sendendofstream.md) usa un evento timer per pianificare le \_ notifiche complete di EC. Il metodo **CBaseRenderer:: TimerCallback** è la funzione di callback per l'evento del timer. Il `TimerCallback` metodo chiama di nuovo **SendEndOfStream** e **SendEndOfStream** determina se inviare la notifica di \_ completamento EC o impostare un altro timer.
+Il [**metodo CBaseRenderer::SendEndOfStream**](cbaserenderer-sendendofstream.md) usa un evento timer per pianificare le notifiche EC \_ COMPLETE. Il **metodo CBaseRenderer::TimerCallback** è la funzione di callback per l'evento timer. Il `TimerCallback` metodo chiama nuovamente **SendEndOfStream** e **SendEndOfStream** determina se inviare la notifica EC COMPLETE o \_ impostare un altro timer.
 
-Il metodo [**CBaseRenderer:: ResetEndOfStreamTimer**](cbaserenderer-resetendofstreamtimer.md) Annulla l'evento del timer.
+Il [**metodo CBaseRenderer::ResetEndOfStreamTimer**](cbaserenderer-resetendofstreamtimer.md) annulla l'evento timer.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,8 +56,8 @@ Il metodo [**CBaseRenderer:: ResetEndOfStreamTimer**](cbaserenderer-resetendofst
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

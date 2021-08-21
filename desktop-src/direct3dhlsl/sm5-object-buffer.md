@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ce1754272fd90cedc5a806543dd83a99cdcd9455
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: a65e4e662800e877d55838056ee5b3c086d2b881095cbab40ff57c2a45a0cce8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104397863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119486751"
 ---
 # <a name="buffer"></a>Buffer
 
-Il tipo di buffer esiste nel modello Shader 4 più le variabili di risorsa e le informazioni sul buffer.
+Tipo di buffer così come esiste in Shader Model 4, oltre alle variabili di risorsa e alle informazioni sul buffer.
 
 
 
@@ -34,9 +34,9 @@ Il tipo di buffer esiste nel modello Shader 4 più le variabili di risorsa e le 
 
 
 
- 
+ 
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questo oggetto è supportato nei modelli shader seguenti.
 
@@ -44,34 +44,34 @@ Questo oggetto è supportato nei modelli shader seguenti.
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì       |
+| [Modelli shader modello 5](d3d11-graphics-reference-sm5.md) e versioni successive | sì       |
 
 
 
- 
+ 
 
 Questo oggetto è supportato per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Oggetti Shader Model 5](d3d11-graphics-reference-sm5-objects.md)
+[Oggetti modello shader 5](d3d11-graphics-reference-sm5-objects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

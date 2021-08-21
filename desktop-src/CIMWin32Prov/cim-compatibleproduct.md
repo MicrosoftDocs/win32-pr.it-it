@@ -1,8 +1,8 @@
 ---
-description: La \_ classe CIM CompatibleProduct rappresenta un'associazione tra i prodotti che indica se due prodotti a cui viene fatto riferimento sono interoperativi, ad esempio se possono essere installati insieme o se uno può essere il contenitore fisico per l'altro e così via.
+description: La classe CIM CompatibleProduct rappresenta un'associazione tra prodotti che indica se due prodotti a cui si fa riferimento sono interoperativi, ad esempio se possono essere installati insieme o se uno può essere il contenitore fisico per l'altro e \_ così via.
 ms.assetid: d822b052-981a-4a66-8404-b4f5f4681502
 ms.tgt_platform: multiple
-title: Classe CIM_CompatibleProduct
+title: CIM_CompatibleProduct classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,23 +17,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 94969b1f2e45a27e402e132a0b9593de413a653b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5d0d4721d8554723bb9ab808ff55884bb896f59e6050103cf127cc4df77109f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080875"
 ---
-# <a name="cim_compatibleproduct-class"></a>CIM \_ CompatibleProduct (classe)
+# <a name="cim_compatibleproduct-class"></a>Classe CIM \_ CompatibleProduct
 
-La classe **CIM \_ CompatibleProduct** rappresenta un'associazione tra i prodotti che indica se due prodotti a cui viene fatto riferimento sono interoperativi, ad esempio se possono essere installati insieme o se uno può essere il contenitore fisico per l'altro e così via.
+La classe **CIM \_ CompatibleProduct** rappresenta un'associazione tra prodotti che indica se due prodotti a cui si fa riferimento sono interoperativi, ad esempio se possono essere installati insieme o se uno può essere il contenitore fisico per l'altro e così via.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,33 +49,33 @@ class CIM_CompatibleProduct
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ CompatibleProduct** presenta questi tipi di membri:
+La **classe CIM \_ CompatibleProduct** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ CompatibleProduct** dispone di queste proprietà.
+La **classe CIM \_ CompatibleProduct** ha queste proprietà.
 
 <dl> <dt>
 
 **CompatibilityDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa in formato libero che definisce la modalità di interoperabilità e compatibilità dei due prodotti a cui viene fatto riferimento e se sono presenti limitazioni di compatibilità.
+Stringa in formato libero che definisce il modo in cui i due prodotti a cui si fa riferimento sono interoperativi, compatibili e se sono presenti limitazioni di compatibilità.
 
 </dd> <dt>
 
 **CompatibleProduct**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ prodotto CIM**
+Tipo di dati: **PRODOTTO \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -88,7 +88,7 @@ Riferimento al prodotto compatibile.
 **Prodotto**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ prodotto CIM**
+Tipo di dati: **PRODOTTO \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -102,7 +102,7 @@ Riferimento al prodotto per il quale sono definite offerte compatibili.
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -113,7 +113,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

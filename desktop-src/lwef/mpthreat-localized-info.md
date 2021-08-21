@@ -1,10 +1,10 @@
 ---
-title: Struttura MPTHREAT_LOCALIZED_INFO (MpClient. h)
+title: MPTHREAT_LOCALIZED_INFO struttura (MpClient.h)
 description: Informazioni localizzate per una minaccia.
 ms.assetid: 99DC9737-9A61-4407-B544-A7A979C5B556
 keywords:
-- Struttura MPTHREAT_LOCALIZED_INFO le funzionalità legacy dell'ambiente Windows
-- Funzionalità dell'ambiente Windows legacy del puntatore della struttura di PMPTHREAT_LOCALIZED_INFO
+- MPTHREAT_LOCALIZED_INFO struttura Legacy Windows Environment Features
+- PMPTHREAT_LOCALIZED_INFO puntatore alla struttura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87ea0bee7c8cae15389b40b64038aad92a56dd5f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4ff28c77c60421fcaabe31580400ad87823ad3edf3536d96ba3ba5eec177ad94
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119555951"
 ---
-# <a name="mpthreat_localized_info-structure"></a>\_Struttura delle informazioni localizzate MPTHREAT \_
+# <a name="mpthreat_localized_info-structure"></a>Struttura MPTHREAT \_ LOCALIZED \_ INFO
 
 Informazioni localizzate per una minaccia.
 
@@ -56,25 +56,25 @@ Tipo: **MPTHREAT \_ ID**
 
 </dd> <dd>
 
-Identificatore della minaccia. Il bit superiore è impostato in modo da identificare le minacce correlate all'antivirus.
+Identificatore di minaccia. Il bit superiore è impostato per identificare le minacce correlate all'antivirus.
 
 </dd> <dt>
 
 **CategoryName**
 </dt> <dd>
 
-Tipo: **\_ \_ LPWSTR stringa MIDL MP**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
-Classificazione delle minacce, ad esempio un Trojan o un keylogger.
+Classificazione delle minacce, ad esempio un trojan o un keylogger.
 
 </dd> <dt>
 
 **CategoryDescription**
 </dt> <dd>
 
-Tipo: **\_ \_ LPWSTR stringa MIDL MP**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -82,10 +82,10 @@ Descrizione della categoria di minacce.
 
 </dd> <dt>
 
-**Gravitàname**
+**SeverityName**
 </dt> <dd>
 
-Tipo: **\_ \_ LPWSTR stringa MIDL MP**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -96,7 +96,7 @@ Livello di gravità della minaccia, ad esempio grave o moderato.
 **SeverityDescription**
 </dt> <dd>
 
-Tipo: **\_ \_ LPWSTR stringa MIDL MP**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -107,7 +107,7 @@ Descrizione del livello di gravità della minaccia.
 **ShortDescription**
 </dt> <dd>
 
-Tipo: **\_ \_ LPWSTR stringa MIDL MP**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -118,29 +118,29 @@ Breve descrizione della minaccia.
 **DefaultActionName;**
 </dt> <dd>
 
-Tipo: **\_ \_ LPWSTR stringa MIDL MP**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
-Nome dell'azione predefinita, ad esempio Remove o Quarantine, suggerito dal motore.
+Nome dell'azione predefinita, ad esempio rimozione o quarantena, suggerita dal motore.
 
 </dd> <dt>
 
 **Advice**
 </dt> <dd>
 
-Tipo: **\_ \_ LPWSTR stringa MIDL MP**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
-Suggerimenti per la minaccia particolare.
+Consigli per la minaccia specifica.
 
 </dd> <dt>
 
 **ThreatUrl**
 </dt> <dd>
 
-Tipo: **\_ \_ LPWSTR stringa MIDL MP**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -154,9 +154,9 @@ URL di una pagina Web contenente informazioni sulla minaccia.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

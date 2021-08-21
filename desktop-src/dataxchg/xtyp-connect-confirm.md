@@ -1,9 +1,9 @@
 ---
-title: Transazione XTYP_CONNECT_CONFIRM (DDEML. h)
-description: Una funzione di callback del server Dynamic Data Exchange (DDE), DdeCallback, riceve la \_ conferma della transazione XTYP Connect \_ per confermare che è stata stabilita una conversazione con un client e per fornire al server l'handle di conversazione.
+title: XTYP_CONNECT_CONFIRM transazione (Ddeml.h)
+description: Una funzione di callback del server Dynamic Data Exchange (DDE), DdeCallback, riceve la transazione XTYP CONNECT CONFIRM per confermare che è stata stabilita una conversazione con un client e per fornire al server l'handle di \_ \_ conversazione.
 ms.assetid: 4db67539-9322-44d7-bf2b-749bd6cfcbb4
 keywords:
-- Scambio di dati delle transazioni XTYP_CONNECT_CONFIRM
+- XTYP_CONNECT_CONFIRM dati transazione Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e880dfffc7f7825c99ab9e4e3bf980baa978b786
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8a0259540801a49bc631dc60e33979a8730b46bdfc06ac81142098e851b8a51a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119499083"
 ---
-# <a name="xtyp_connect_confirm-transaction"></a>\_ \_ Conferma transazione connessione XTYP
+# <a name="xtyp_connect_confirm-transaction"></a>Transazione XTYP \_ CONNECT \_ CONFIRM
 
-Una funzione di callback del server Dynamic Data Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), riceve la conferma della transazione **XTYP \_ Connect \_** per confermare che è stata stabilita una conversazione con un client e per fornire al server l'handle di conversazione. Questa transazione viene inviata dal sistema come risultato di una transazione [**XTYP \_ Connect**](xtyp-connect.md) o [**XTYP \_ WILDCONNECT**](xtyp-wildconnect.md) precedente.
+Una funzione di callback del server Dynamic Data Exchange [*(DDE), DdeCallback,*](/windows/win32/api/ddeml/nc-ddeml-pfncallback)riceve la transazione **XTYP \_ CONNECT \_ CONFIRM** per confermare che è stata stabilita una conversazione con un client e per fornire al server l'handle di conversazione. Il sistema invia questa transazione come risultato di una transazione [**XTYP \_ CONNECT**](xtyp-connect.md) o [**XTYP \_ WILDCONNECT**](xtyp-wildconnect.md) precedente.
 
 
 ```C++
@@ -96,9 +96,9 @@ Specifica se il client è la stessa istanza dell'applicazione del server. Se il 
 
 ## <a name="remarks"></a>Commenti
 
-Questa transazione viene filtrata se l'applicazione server specificata **CBF \_ Skip \_ Connect \_ conferma** flag nella funzione [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) .
+Questa transazione viene filtrata se l'applicazione server ha specificato il flag **CBF \_ SKIP \_ CONNECT \_ CONFIRMS** nella [**funzione DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 
-Un server non è in grado di bloccare questo tipo di transazione. il codice restituito del **\_ blocco CBR** viene ignorato.
+Un server non può bloccare questo tipo di transazione. Il **codice restituito CBR \_ BLOCK** viene ignorato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -108,7 +108,7 @@ Un server non è in grado di bloccare questo tipo di transazione. il codice rest
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                             |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                   |
-| Intestazione<br/>                   | <dl> <dt>DDEML. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ddeml.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -131,7 +131,7 @@ Un server non è in grado di bloccare questo tipo di transazione. il codice rest
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria di gestione Dynamic Data Exchange](dynamic-data-exchange-management-library.md)
+[Dynamic Data Exchange Management Library](dynamic-data-exchange-management-library.md)
 </dt> </dl>
 
  

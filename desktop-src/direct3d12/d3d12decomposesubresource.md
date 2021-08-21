@@ -1,9 +1,9 @@
 ---
-title: Funzione D3D12DecomposeSubresource (D3dx12. h)
-description: Restituisce la sezione MIP, la sezione della matrice e la sezione del piano che corrispondono all'indice della sottorisorsa specificata.
+title: Funzione D3D12DecomposeSubresource (D3dx12.h)
+description: Restituisce la sezione mip, la sezione di matrice e la sezione del piano che corrispondono all'indice di sottorisorsa specificato.
 ms.assetid: 89FAD7C5-E732-4E74-AC2F-DEECD6ADDA7D
 keywords:
-- D3D12DecomposeSubresource (funzione)
+- Funzione D3D12DecomposeSubresource
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec147833ee94969880865f679d40a198e0b22852
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1c27089fb09c2408917be06b2f74e6d32f3e2f5aa9b96924de1ab92de190efb8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045639"
 ---
-# <a name="d3d12decomposesubresource-function"></a>D3D12DecomposeSubresource (funzione)
+# <a name="d3d12decomposesubresource-function"></a>Funzione D3D12DecomposeSubresource
 
-Restituisce la sezione MIP, la sezione della matrice e la sezione del piano che corrispondono all'indice della sottorisorsa specificata.
+Restituisce la sezione mip, la sezione di matrice e la sezione del piano che corrispondono all'indice di sottorisorsa specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ void inline D3D12DecomposeSubresource(
 *Sottorisorsa* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Indice della sottorisorsa.
 
@@ -58,45 +58,45 @@ Indice della sottorisorsa.
 *MipLevels* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Numero massimo di livelli di mipmap nella sottorisorsa.
+Numero massimo di livelli mipmap nella sottorisorsa.
 
 </dd> <dt>
 
 *ArraySize* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Numero di elementi nella matrice.
 
 </dd> <dt>
 
-*MipSlice* \[ out, Ref\]
+*MipSlice* \[ out, ref\]
 </dt> <dd>
 
 Tipo: **T**
 
-Restituisce la sezione MIP che corrisponde all'indice della sottorisorsa specificata.
+Restituisce la sezione mip corrispondente all'indice di sottorisorsa specificato.
 
 </dd> <dt>
 
-*ArraySlice* \[ out, Ref\]
+*ArraySlice* \[ out, ref\]
 </dt> <dd>
 
 Tipo: **U**
 
-Restituisce la sezione della matrice che corrisponde all'indice della sottorisorsa specificato.
+Restituisce la sezione di matrice corrispondente all'indice di sottorisorsa specificato.
 
 </dd> <dt>
 
-*PlaneSlice* \[ out, Ref\]
+*PlaneSlice* \[ out, ref\]
 </dt> <dd>
 
 Tipo: **V**
 
-Restituisce la sezione del piano che corrisponde all'indice della sottorisorsa specificata.
+Restituisce la sezione del piano che corrisponde all'indice di sottorisorsa specificato.
 
 </dd> </dl>
 
@@ -106,9 +106,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione determina quali sezioni MIP, sezione della matrice e sezione del piano corrispondono a un indice di sottorisorsa specificato. Si tratta di un'utilità utile, sebbene sia specifica di C++.
+Questa funzione determina quale sezione mip, sezione di matrice e sezione del piano corrispondono a un indice di sottorisorsa specificato. Si tratta di un'utilità utile, anche se è specifica di C++.
 
-Questa funzione viene dichiarata come segue, con i parametri C++ creato un modello per i tipi **T**, **U** e **V**:
+Questa funzione viene dichiarata come segue, con parametri templatizzati C++ per i tipi **T**, **U** e **V**:
 
 
 ```c++
@@ -129,8 +129,8 @@ inline void D3D12DecomposeSubresource( UINT Subresource, UINT MipLevels, UINT Ar
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx12. h</dt> </dl>  |
-| Libreria<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx12.h</dt> </dl>  |
+| Libreria<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 

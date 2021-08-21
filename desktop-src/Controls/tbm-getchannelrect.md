@@ -1,9 +1,9 @@
 ---
-title: Messaggio TBM_GETCHANNELRECT (COMmctrl. h)
-description: Recupera le dimensioni e la posizione del rettangolo di delimitazione per il canale di un TrackBar.
+title: TBM_GETCHANNELRECT messaggio (Commctrl.h)
+description: Recupera le dimensioni e la posizione del rettangolo di delimitazione per il canale di un trackbar.
 ms.assetid: 353edae3-1a26-4e85-8a32-ba8b5a976d24
 keywords:
-- Controlli di Windows Message TBM_GETCHANNELRECT
+- TBM_GETCHANNELRECT di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 02982e9ce417b9fcf3e16d0e14d061e3ffd97a8a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: af2c9932782a150635365c1cdcb74b624f6863b27180136bc9483e8d0de3ba1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078105"
 ---
-# <a name="tbm_getchannelrect-message"></a>\_Messaggio GETCHANNELRECT TBM
+# <a name="tbm_getchannelrect-message"></a>Messaggio \_ TBM GETCHANNELRECT
 
-Recupera le dimensioni e la posizione del rettangolo di delimitazione per il canale di un TrackBar. (Il canale è l'area in cui viene spostato il dispositivo di scorrimento. Contiene l'evidenziazione quando viene selezionato un intervallo.
+Recupera le dimensioni e la posizione del rettangolo di delimitazione per il canale di un trackbar. Il canale è l'area su cui si sposta il dispositivo di scorrimento. Contiene l'evidenziazione quando viene selezionato un intervallo.
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,7 +35,7 @@ Recupera le dimensioni e la posizione del rettangolo di delimitazione per il can
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) . Il messaggio compila questa struttura con il rettangolo di delimitazione del canale, in coordinate client della finestra del TrackBar.
+Puntatore a una [**struttura RECT.**](/previous-versions//dd162897(v=vs.85)) Il messaggio riempie questa struttura con il rettangolo di delimitazione del canale, nelle coordinate client della finestra del trackbar.
 
 </dd> </dl>
 
@@ -49,9 +49,9 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

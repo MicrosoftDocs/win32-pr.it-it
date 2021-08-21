@@ -1,19 +1,19 @@
 ---
-description: Questo esempio usa le API audio principali per implementare una visualizzazione sullo schermo che mostra le modifiche del volume al flusso di output che riproduce il dispositivo dell'endpoint di rendering audio predefinito.
+description: Questo esempio usa le API Core Audio per implementare uno schermo su schermo che mostra le modifiche del volume al flusso di output riprodotto tramite il dispositivo endpoint di rendering audio predefinito.
 ms.assetid: 33a1e843-f7c7-4da9-a51e-83a3f0a6ac70
-title: OSD
+title: Osd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 89c4c04daf5d2dd333a25150821a831695e06a06
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 17bc0b93214cc547f0491d568abb88d696f76b494f2c562f4805f425acdcfd89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049216"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077515"
 ---
-# <a name="osd"></a>OSD
+# <a name="osd"></a>Osd
 
-Questo esempio usa le API audio principali per implementare una visualizzazione sullo schermo che mostra le modifiche del volume al flusso di output che riproduce il dispositivo dell'endpoint di rendering audio predefinito. La visualizzazione sullo schermo viene visualizzata quando l'utente regola il livello del volume nel programma di controllo del volume di Windows, Sndvol.exe e scompare dopo che il livello del volume rimane invariato per un breve periodo di tempo.
+Questo esempio usa le API Core Audio per implementare uno schermo su schermo che mostra le modifiche del volume al flusso di output riprodotto tramite il dispositivo endpoint di rendering audio predefinito. La visualizzazione su schermo viene visualizzata quando l'utente regola il livello del volume nel programma di controllo del volume Windows, Sndvol.exe, e scompare dopo che il livello del volume rimane invariato per un breve periodo.
 
 Questo argomento contiene le sezioni seguenti.
 
@@ -26,10 +26,10 @@ Questo argomento contiene le sezioni seguenti.
 
 ## <a name="description"></a>Descrizione
 
-In questo esempio vengono illustrate le funzionalità seguenti.
+Questo esempio illustra le funzionalità seguenti.
 
--   [API MMDevice](mmdevice-api.md) per la selezione e l'enumerazione dei dispositivi multimediali.
--   [API EndpointVolume](endpointvolume-api.md) audio
+-   [API MMDevice per](mmdevice-api.md) l'enumerazione e la selezione di dispositivi multimediali.
+-   API [Audio EndpointVolume](endpointvolume-api.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,9 +50,9 @@ Questo esempio è disponibile nelle posizioni seguenti.
 
 
 
-| Location    | Percorso/URL                                                                             |
+| Località    | Percorso/URL                                                                             |
 |-------------|--------------------------------------------------------------------------------------|
-| Windows SDK | \\Programmi \\ Microsoft SDK \\ Windows \\ v 7.0 esempi di \\ \\ audio multimediale \\ \\ OSD \\ ... |
+| Windows SDK | \\Programmi \\ Microsoft SDK \\ Windows \\ v7.0 \\ \\ Samples Multimedia Audio \\ \\ OSD \\ ... |
 
 
 
@@ -60,21 +60,21 @@ Questo esempio è disponibile nelle posizioni seguenti.
 
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 
-1.  Aprire la shell CMD per la Windows SDK e passare alla directory di esempio OSD.
-2.  Eseguire il comando "Start OSD. sln" nella directory OSD per aprire il progetto OSD nella finestra di Visual Studio.
-3.  Nella finestra di selezionare la configurazione di **debug** o di **rilascio** della soluzione, selezionare il menu **Compila** dalla barra dei menu e selezionare l'opzione **Compila** . Se non si apre Visual Studio dalla shell CMD per l'SDK, Visual Studio non avrà accesso all'ambiente di compilazione dell'SDK. In tal caso, l'esempio non verrà compilato a meno che non si imposti in modo esplicito la variabile di ambiente MSSdk, che viene usata nel file di progetto OSD. vcproj.
+1.  Aprire la shell CMD per Windows SDK e passare alla directory di esempio OSD.
+2.  Eseguire il comando "start OSD.sln" nella directory OSD per aprire il progetto OSD nella Visual Studio finestra.
+3.  Nella finestra selezionare la configurazione  della soluzione **Debug** o Versione, scegliere il **menu** Compila dalla barra dei menu e selezionare l'opzione **Compila.** Se non si apre Visual Studio shell CMD per l'SDK, Visual Studio non avrà accesso all'ambiente di compilazione SDK. In tal caso, l'esempio non verrà compilato a meno che non si imposta in modo esplicito la variabile di ambiente MSSdk, usata nel file di progetto OSD.vcproj.
 
 ## <a name="running-the-sample"></a>Esecuzione dell'esempio
 
-1.  Eseguire il file eseguibile OSD, OSD.exe, in Windows Vista o versioni successive. Si noti che non viene visualizzata un'icona della barra delle applicazioni o una finestra per l'applicazione, ma è possibile vedere il processo in esecuzione utilizzando TaskMgr.exe.
-2.  Eseguire sndvol.exe per modificare il volume o il mute oppure modificare il volume utilizzando i controlli della tastiera o un controllo nascosto. Verrà visualizzata l'interfaccia utente OSD.
-3.  Per uscire dall'applicazione, eseguire TaskMgr.exe, evidenziare il processo di OSD.exe e fare clic su **Termina processo**.
+1.  Eseguire il file eseguibile OSD, OSD.exe, in Windows Vista o versione successiva. Si noti che non verrà visualizzata un'icona della barra delle applicazioni o una finestra per l'applicazione, ma è possibile visualizzare il processo in esecuzione usando TaskMgr.exe.
+2.  Eseguire sndvol.exe per modificare il volume o disattivare l'audio o modificare il volume usando i controlli della tastiera o un controllo HID. Viene visualizzata l'interfaccia utente OSD.
+3.  Per uscire dall'applicazione, eseguire TaskMgr.exe, evidenziare OSD.exe processo e fare clic **su Termina processo**.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Esempi di SDK che usano le API audio principali](sdk-samples-that-use-the-core-audio-apis.md)
+[Esempi di SDK che usano le API audio di base](sdk-samples-that-use-the-core-audio-apis.md)
 </dt> </dl>
 
  

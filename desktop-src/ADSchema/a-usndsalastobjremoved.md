@@ -1,10 +1,10 @@
 ---
-title: USN-DSA-ultimo-obj-attributo rimosso
-description: Contiene il numero di sequenza di aggiornamento (USN) dell'ultimo oggetto di sistema che è stato rimosso da un server.
+title: Attributo USN-DSA-Last-Obj-Removed
+description: Contiene il numero di sequenza di aggiornamento (USN) per l'ultimo oggetto di sistema rimosso da un server.
 ms.assetid: af0afd80-fe4a-4bc6-84e3-14c2900bec93
 ms.tgt_platform: multiple
 keywords:
-- USN-DSA-Last-obj-schema AD dell'attributo rimosso
+- Schema AD dell'attributo USN-DSA-Last-Obj-Removed
 - Schema AD dell'attributo uSNDSALastObjRemoved
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bcbc246aa1a0f7c794b9dc0a9d2a725273a918e3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b864b34d89455610700aff685bb879c499da7c4320bbcd4efb3b83725e34ad7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081305"
 ---
-# <a name="usn-dsa-last-obj-removed-attribute"></a>USN-DSA-ultimo-obj-attributo rimosso
+# <a name="usn-dsa-last-obj-removed-attribute"></a>Attributo USN-DSA-Last-Obj-Removed
 
-Contiene il numero di sequenza di aggiornamento (USN) dell'ultimo oggetto di sistema che è stato rimosso da un server.
+Contiene il numero di sequenza di aggiornamento (USN) per l'ultimo oggetto di sistema rimosso da un server.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | USN-DSA-Last-obj-rimosso             |
-| LDAP-Display-Name | uSNDSALastObjRemoved                 |
+| CN                | USN-DSA-Last-Obj-Removed             |
+| Ldap-Display-Name | uSNDSALastObjRemoved                 |
 | Dimensione              | 8 byte                              |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.     |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.     |
 | Frequenza di aggiornamento  | Ogni volta che un oggetto directory viene modificato. |
 | Attribute-Id      | 1.2.840.113556.1.2.267               |
-| System-ID-GUID    | bf967a71-0de6-11d0-a285-00aa003049e2 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf967a71-0de6-11d0-a285-00aa003049e2 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -44,7 +44,7 @@ Contiene il numero di sequenza di aggiornamento (USN) dell'ultimo oggetto di sis
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Contiene il numero di sequenza di aggiornamento (USN) dell'ultimo oggetto di sis
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8155                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Contiene il numero di sequenza di aggiornamento (USN) dell'ultimo oggetto di sis
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8155                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Contiene il numero di sequenza di aggiornamento (USN) dell'ultimo oggetto di sis
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8155                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Contiene il numero di sequenza di aggiornamento (USN) dell'ultimo oggetto di sis
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8155                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Contiene il numero di sequenza di aggiornamento (USN) dell'ultimo oggetto di sis
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8155                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Contiene il numero di sequenza di aggiornamento (USN) dell'ultimo oggetto di sis
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8155                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Contiene il numero di sequenza di aggiornamento (USN) dell'ultimo oggetto di sis
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8155                          |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -201,7 +201,7 @@ Contiene il numero di sequenza di aggiornamento (USN) dell'ultimo oggetto di sis
 
 <dl> <dt>
 
-[**USN-ultimo-obj-REM**](a-usnlastobjrem.md)
+[**USN-Last-Obj-Rem**](a-usnlastobjrem.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Contiene l'indice di una voce e le relative informazioni sui TAG in un database di shim.
+description: Contiene l'indice di una voce e le relative informazioni TAG in un database shim.
 ms.assetid: 2ff58e01-cc47-4612-a3bc-a87ccb343bd2
 title: TAGID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e7d8b8a25633d3505936d105b0eef7ed38746ce
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cd4c65183170c7304bf05a670b1eadb3a5953d6f33b1f6415210f12db8898760
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075784"
 ---
 # <a name="tagid"></a>TAGID
 
-Contiene l'indice di una voce e le relative informazioni sui TAG in un database di shim.
+Contiene l'indice di una voce e le relative informazioni TAG in un database shim.
 
 
 ```C++
@@ -24,21 +24,21 @@ typedef DWORD TAGID;
 
 ## <a name="remarks"></a>Commenti
 
-Un **TagId** è specifico di un database. Può essere un valore intero che rappresenta l'indice o uno dei valori seguenti:
+Un **TAGID** è specifico di un database. Può essere un valore intero che rappresenta l'indice o uno dei valori seguenti:
 
 <dl> <dt>
 
-<span id="TAGID_NULL__0_"></span><span id="tagid_null__0_"></span>TAGID \_ null (0)
+<span id="TAGID_NULL__0_"></span><span id="tagid_null__0_"></span>TAGID \_ NULL (0)
 </dt> <dd>
 
-Il **TagId** non esiste. Questo valore viene restituito da una funzione quando non può restituire un **TagId** valido.
+**TAGID** inesistente. Questo valore viene restituito da una funzione quando non può restituire un **TAGID valido.**
 
 </dd> <dt>
 
-<span id="TAGID_ROOT__0_"></span><span id="tagid_root__0_"></span>\_Radice TagId (0)
+<span id="TAGID_ROOT__0_"></span><span id="tagid_root__0_"></span>TAGID \_ ROOT (0)
 </dt> <dd>
 
-Indica un TAG dell'elenco radice che può essere utilizzato come elemento padre per ottenere un **TagId** figlio.
+Indica un TAG dell'elenco radice che può essere utilizzato come elemento padre per ottenere un **TAGID figlio.**
 
 </dd> </dl>
 
@@ -48,8 +48,8 @@ Indica un TAG dell'elenco radice che può essere utilizzato come elemento padre 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -60,7 +60,7 @@ Indica un TAG dell'elenco radice che può essere utilizzato come elemento padre 
 [**TAG**](tag.md)
 </dt> <dt>
 
-[Tipi di TAG](tag-types.md)
+[Tipi DI TAG](tag-types.md)
 </dt> <dt>
 
 [**TAGREF**](tagref.md)

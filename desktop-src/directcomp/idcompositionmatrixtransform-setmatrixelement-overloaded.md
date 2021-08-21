@@ -1,9 +1,9 @@
 ---
-title: Metodi sematrixelement IDCompositionMatrixTransform (Dcomp. h)
+title: Metodi IDCompositionMatrixTransform SetMatrixElement (Dcomp.h)
 description: Modifica o aggiunge un'animazione al valore di un elemento della matrice di questa trasformazione 2D.
 ms.assetid: ADF3D443-6764-40A5-AD5C-7C3053E247CB
 keywords:
-- Metodi sematrixelement DirectComposition
+- Metodi SetMatrixElement DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: d5707ad441e9a3205ed52808b6203a3172d1ab48
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dc35caa8e19e7a3e0f9e5867d169c3380459be82419f17785902089a89e031d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103739703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119484481"
 ---
-# <a name="idcompositionmatrixtransformsetmatrixelement-methods"></a>Metodi IDCompositionMatrixTransform:: sematrixelement
+# <a name="idcompositionmatrixtransformsetmatrixelement-methods"></a>Metodi di IDCompositionMatrixTransform::SetMatrixElement
 
 Modifica o aggiunge un'animazione al valore di un elemento della matrice di questa trasformazione 2D.
 
@@ -29,8 +29,8 @@ Modifica o aggiunge un'animazione al valore di un elemento della matrice di ques
 
 | Metodo                                                                                                                               | Descrizione                                                                      |
 |:-------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------|
-| [**Sematrixelement (int, int, float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionmatrixtransform-setmatrixelement(int_int_float))                                           | Modifica il valore di un elemento della matrice di questa trasformazione 2D.<br/>  |
-| [**Sematrixelement (int, int, IDCompositionAnimation \* )**](idcompositionmatrixtransform-setmatrixelement-idcompositionanimation.md) | Aggiunge un'animazione al valore di un elemento della matrice di questa trasformazione 2D.<br/> |
+| [**SetMatrixElement(int, int, float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionmatrixtransform-setmatrixelement(int_int_float))                                           | Modifica il valore di un elemento della matrice di questa trasformazione 2D.<br/>  |
+| [**SetMatrixElement(int, int, IDCompositionAnimation \* )**](idcompositionmatrixtransform-setmatrixelement-idcompositionanimation.md) | Aggiunge un'animazione al valore di un elemento della matrice di questa trasformazione 2D.<br/> |
 
 
 
@@ -40,10 +40,10 @@ Modifica o aggiunge un'animazione al valore di un elemento della matrice di ques
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Dcomp. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>Dcomp. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows 8 \[ app desktop\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2012 \[\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 

@@ -1,23 +1,23 @@
 ---
-title: dcl_input_control_point_count (SM5-ASM)
-description: Dichiarare il numero di punti di controllo di input di Hull shader nella sezione relativa alla dichiarazione di Hull shader.
+title: dcl_input_control_point_count (sm5 - asm)
+description: Dichiarare il conteggio dei punti di controllo di input di hull shader nella sezione della dichiarazione dello shader di tipo hull.
 ms.assetid: 2E524BF0-3DD0-446A-8437-0CF17B348D83
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f0a674a05bfd66b4c1d94da73958dc68f00fe21
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 68c5414d5c660cf0bbce2b6219769cd36d4da9bbf3e59d9d130bfce0e0dceea3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104398306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789881"
 ---
-# <a name="dcl_input_control_point_count-sm5---asm"></a>\_ \_ \_ conteggio punti di controllo input DCL \_ (SM5-ASM)
+# <a name="dcl_input_control_point_count-sm5---asm"></a>dcl \_ input control point count \_ \_ \_ (sm5 - asm)
 
-Dichiarare il numero di punti di controllo di input di Hull shader nella sezione relativa alla dichiarazione di Hull shader.
+Dichiarare il conteggio dei punti di controllo di input di hull shader nella sezione della dichiarazione dello shader di tipo hull.
 
 
 
-| \_ \_ conteggio punti di controllo input DCL \_ \_ {1.32} |
+| dcl \_ input control point count \_ \_ \_ {1..32} |
 |-------------------------------------------|
 
 
@@ -28,7 +28,7 @@ Dichiarare il numero di punti di controllo di input di Hull shader nella sezione
 
 | Elemento                                                   | Descrizione                                      |
 |--------------------------------------------------------|--------------------------------------------------|
-| <span id="N"></span><span id="n"></span>*N*<br/> | \[nel \] conteggio dei punti di controllo di input.<br/> |
+| <span id="N"></span><span id="n"></span>*N*<br/> | \[in \] Conteggio dei punti di controllo di input.<br/> |
 
 
 
@@ -36,13 +36,13 @@ Dichiarare il numero di punti di controllo di input di Hull shader nella sezione
 
 ## <a name="remarks"></a>Commenti
 
-È necessario almeno un punto di controllo di input. Se non è necessario, può essere vuoto.
+È necessario almeno un punto di controllo di input. Può essere vuoto se non è necessario.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        | X    |        |          |       |         |
 
@@ -50,20 +50,20 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa istruzione è supportata nei modelli shader seguenti:
+Questa istruzione è supportata nei modelli di shader seguenti:
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -73,7 +73,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (HLSL DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

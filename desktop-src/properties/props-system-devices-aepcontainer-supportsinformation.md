@@ -1,17 +1,17 @@
 ---
 description: Indica se il contenitore dell'endpoint di associazione del dispositivo supporta le informazioni.
 ms.assetid: dd9edddb-d4d8-40de-85f5-34b2584ea853
-title: System. Devices. AepContainer. SupportsInformation
+title: System.Devices.AepContainer.SupportsInformation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3794fe070d67f84b9e05f6b26921de7892a095a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f29633b7efa7fb8edf7fe1ff1fc6f9d3c1440f5a2f53bd9bca17753ae807008
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938341"
 ---
-# <a name="systemdevicesaepcontainersupportsinformation"></a>System. Devices. AepContainer. SupportsInformation
+# <a name="systemdevicesaepcontainersupportsinformation"></a>System.Devices.AepContainer.SupportsInformation
 
 Indica se il contenitore dell'endpoint di associazione del dispositivo supporta le informazioni
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

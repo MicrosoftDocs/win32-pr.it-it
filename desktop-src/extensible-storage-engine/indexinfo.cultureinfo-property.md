@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà IndexInfo. CultureInfo'
-title: Proprietà IndexInfo. CultureInfo
+description: Altre informazioni sulla proprietà IndexInfo.CultureInfo
+title: IndexInfo.CultureInfo - proprietà
 TOCTitle: 'CultureInfo property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.IndexInfo.CultureInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.indexinfo.cultureinfo(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: dd95af972765ebf5d3a05e7f3cb87e547baeb8cd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 366ec8654e0e99ad497b516b82be524b9ed45f04cbc0bd20eb375af4f58f2880
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118980691"
 ---
-# <a name="indexinfocultureinfo-property"></a>Proprietà IndexInfo. CultureInfo
+# <a name="indexinfocultureinfo-property"></a>IndexInfo.CultureInfo - proprietà
 
-Ottiene l'oggetto CultureInfo in base al quale l'indice viene ordinato.
+Ottiene l'oggetto CultureInfo in base al quale è ordinato l'indice.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,7 +58,7 @@ public CultureInfo CultureInfo { get; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Globalization. CultureInfo](/dotnet/api/system.globalization.cultureinfo)  
+Tipo: [System.Globalization.CultureInfo](/dotnet/api/system.globalization.cultureinfo)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -66,6 +66,6 @@ Tipo: [System. Globalization. CultureInfo](/dotnet/api/system.globalization.cult
 
 [Classe IndexInfo](./indexinfo-class.md)
 
-[Membri di IndexInfo](./indexinfo-members.md)
+[Membri indexInfo](./indexinfo-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

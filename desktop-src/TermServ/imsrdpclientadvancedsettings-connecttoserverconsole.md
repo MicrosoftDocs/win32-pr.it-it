@@ -1,26 +1,26 @@
 ---
 title: Proprietà ConnectToServerConsole di IMsRdpClientAdvancedSettings
-description: Questa proprietà non è supportata. Le chiamate a ConnectToServerConsole restituiscono sempre S \_ false.
+description: Questa proprietà non è supportata. Le chiamate a ConnectToServerConsole restituiscono sempre S \_ FALSE.
 ms.assetid: 58f79085-4364-408f-8bf1-97a82ad68f4b
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà ConnectToServerConsole
-- Servizi Desktop remoto proprietà ConnectToServerConsole, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà ConnectToServerConsole
-- Servizi Desktop remoto proprietà ConnectToServerConsole, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà ConnectToServerConsole
-- Servizi Desktop remoto proprietà ConnectToServerConsole, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà ConnectToServerConsole
-- Servizi Desktop remoto proprietà ConnectToServerConsole, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà ConnectToServerConsole
-- Servizi Desktop remoto proprietà ConnectToServerConsole, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà ConnectToServerConsole
-- Servizi Desktop remoto proprietà ConnectToServerConsole, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà ConnectToServerConsole
-- Servizi Desktop remoto proprietà ConnectToServerConsole, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà ConnectToServerConsole
-- Servizi Desktop remoto proprietà ConnectToServerConsole, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà ConnectToServerConsole
+- Proprietà ConnectToServerConsole Servizi Desktop remoto
+- Proprietà ConnectToServerConsole Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà ConnectToServerConsole
+- Proprietà ConnectToServerConsole Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà ConnectToServerConsole
+- Proprietà ConnectToServerConsole Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà ConnectToServerConsole
+- Proprietà ConnectToServerConsole Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà ConnectToServerConsole
+- Proprietà ConnectToServerConsole Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà ConnectToServerConsole
+- Proprietà ConnectToServerConsole Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà ConnectToServerConsole
+- Proprietà ConnectToServerConsole Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà ConnectToServerConsole
+- Proprietà ConnectToServerConsole Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà ConnectToServerConsole
 topic_type:
 - apiref
 api_name:
@@ -54,18 +54,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18e3385b25a9dbe3e77085ae011b85e9be21b224
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 83c6b935c34dda3f8a676d025bc1995a30e1bbb3f11dd4db3c055f6e28437ba3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119515281"
 ---
-# <a name="imsrdpclientadvancedsettingsconnecttoserverconsole-property"></a>Proprietà IMsRdpClientAdvancedSettings:: ConnectToServerConsole
+# <a name="imsrdpclientadvancedsettingsconnecttoserverconsole-property"></a>Proprietà IMsRdpClientAdvancedSettings::ConnectToServerConsole
 
-Questa proprietà non è supportata. Le chiamate a **ConnectToServerConsole** restituiscono sempre **S \_ false**.
+Questa proprietà non è supportata. Le chiamate **a ConnectToServerConsole** restituiscono sempre **S \_ FALSE.**
 
-Utilizzare la proprietà [**ConnectToAdministerServer**](imsrdpclientadvancedsettings6-connecttoadministerserver.md) per connettersi alla sessione utilizzata a scopo amministrativo.
+Usare la [**proprietà ConnectToAdministerServer**](imsrdpclientadvancedsettings6-connecttoadministerserver.md) per connettersi alla sessione usata per scopi amministrativi.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -86,15 +86,15 @@ HRESULT get_ConnectToServerConsole(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Impostare questo parametro su **Variant \_ false**. **Variante \_ TRUE** non è supportato.
+Impostare questo parametro su **VARIANT \_ FALSE.** **VARIANT \_ TRUE** non è supportato.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,7 +106,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                       |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

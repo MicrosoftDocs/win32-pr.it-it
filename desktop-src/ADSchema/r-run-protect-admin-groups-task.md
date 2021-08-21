@@ -1,10 +1,10 @@
 ---
-title: Esegui-Protect-admin-groups-attività estesa a destra
-description: Controllo dei diritti di accesso che autorizzano le operazioni di modifica rootDSE su un FSMO PDC per l'attivazione dell'operazione di protezione AdminSDHolder.
+title: Diritto esteso Run-Protect-Admin-Groups-Task
+description: Controllare i diritti di accesso che autorizzano le operazioni di modifica rootDSE in un FSMO PDC per attivare l'operazione di protezione AdminSDHolder.
 ms.assetid: d6395d65-881b-4c60-9622-90f23b3cd09f
 ms.tgt_platform: multiple
 keywords:
-- Eseguire-Protect-admin-groups-Task Extended right AD schema
+- Run-Protect-Admin-Groups-Task extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9835c0cf82699e5959a48199cf063bb73c6da537
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3a71970ea5ad88998f2243f06743e6fce50fdd35f3a678ab61c6f7fad0dce86a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531391"
 ---
-# <a name="run-protect-admin-groups-task-extended-right"></a>Esegui-Protect-admin-groups-attività estesa a destra
+# <a name="run-protect-admin-groups-task-extended-right"></a>Diritto esteso Run-Protect-Admin-Groups-Task
 
-Controllo dei diritti di accesso che autorizzano le operazioni di modifica rootDSE su un FSMO PDC per l'attivazione dell'operazione di protezione AdminSDHolder.
+Controllare i diritti di accesso che autorizzano le operazioni di modifica rootDSE in un FSMO PDC per attivare l'operazione di protezione AdminSDHolder.
 
 
 
 | Voce | Valore |
 |--------------|--------------------------------------|
-| CN           | Eseguire-Protect-admin-groups-Task        |
-| Display-Name | Attività Esegui Proteggi gruppi di amministrazione        |
+| CN           | Attività Run-Protect-Admin-Groups-Task        |
+| Display-Name | Eseguire l'attività Proteggi gruppi di amministratori        |
 | Rights-GUID  | 7726b9d5-a4b4-4288-a6b2-dce952e80a7f |
 
 
@@ -45,8 +45,8 @@ Controllo dei diritti di accesso che autorizzano le operazioni di modifica rootD
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 78                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 78                                           |
 
 
 
@@ -56,8 +56,8 @@ Controllo dei diritti di accesso che autorizzano le operazioni di modifica rootD
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 78                                           |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 78                                           |
 
 
 

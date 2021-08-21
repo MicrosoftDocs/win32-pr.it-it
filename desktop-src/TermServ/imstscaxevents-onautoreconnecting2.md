@@ -1,12 +1,12 @@
 ---
 title: Metodo IMsTscAxEvents OnAutoReconnecting2
-description: Chiamato quando un client è in fase di riconnessione automatica di una sessione con un server di host sessione Desktop remoto (host sessione Desktop remoto). | Metodo IMsTscAxEvents OnAutoReconnecting2
+description: Chiamato quando un client è in corso la riconnessione automatica di una sessione con un server host sessione Desktop remoto (Host sessione Desktop remoto). | Metodo IMsTscAxEvents OnAutoReconnecting2
 ms.assetid: 20F69798-5397-440C-9D0D-45AE417623A7
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnAutoReconnecting2
-- Metodo OnAutoReconnecting2 Servizi Desktop remoto, interfaccia IMsTscAxEvents
-- Interfaccia IMsTscAxEvents Servizi Desktop remoto, metodo OnAutoReconnecting2
+- Metodo OnAutoReconnecting2 Servizi Desktop remoto
+- Metodo OnAutoReconnecting2 Servizi Desktop remoto , interfaccia IMsTscAxEvents
+- Interfaccia IMsTscAxEvents Servizi Desktop remoto , metodo OnAutoReconnecting2
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 901bb196922d1772782ab7f1c911c96573c88b36
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 194c21fc8ddc6f93ac4816752956f8de5a1d5df71b3af98ddadf8aba48e421a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512491"
 ---
-# <a name="imstscaxeventsonautoreconnecting2-method"></a>Metodo IMsTscAxEvents:: OnAutoReconnecting2
+# <a name="imstscaxeventsonautoreconnecting2-method"></a>Metodo IMsTscAxEvents::OnAutoReconnecting2
 
-Chiamato quando un client è in fase di riconnessione automatica di una sessione con un server di host sessione Desktop remoto (host sessione Desktop remoto). Si tratta di una versione migliorata del metodo [**OnAutoReconnecting**](-imstscaxevents--onautoreconnecting.md) .
+Chiamato quando un client è in corso la riconnessione automatica di una sessione con un server host sessione Desktop remoto (Host sessione Desktop remoto). Si tratta di una versione avanzata del [**metodo OnAutoReconnecting.**](-imstscaxevents--onautoreconnecting.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,31 +46,31 @@ void OnAutoReconnecting2(
 
 <dl> <dt>
 
-*disconnectReason* \[ in\]
+*disconnectReason* \[ Pollici\]
 </dt> <dd>
 
 Codice che descrive il motivo dell'ultima disconnessione della sessione.
 
 </dd> <dt>
 
-*NetworkAvailable* \[ in\]
+*networkAvailable* \[ Pollici\]
 </dt> <dd>
 
 Specifica se la rete è disponibile.
 
 </dd> <dt>
 
-*attemptCount* \[ in\]
+*attemptCount* \[ Pollici\]
 </dt> <dd>
 
-Numero di tentativi effettuati nel processo di riconnessione automatica corrente. Questo conteggio viene incrementato di uno per ogni tentativo eseguito.
+Numero di tentativi evasi nel processo di riconnessione automatica corrente. Questo conteggio aumenta di uno per ogni tentativo effettuato.
 
 </dd> <dt>
 
-*maxAttemptCount* \[ in\]
+*maxAttemptCount* \[ Pollici\]
 </dt> <dd>
 
-Numero massimo di tentativi che verranno eseguiti nel processo di riconnessione automatica corrente.
+Numero massimo di tentativi che verranno evasi nel processo di riconnessione automatica corrente.
 
 </dd> </dl>
 

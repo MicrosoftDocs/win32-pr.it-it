@@ -4,7 +4,7 @@ description: Gli sviluppatori possono creare servizi Web personalizzati che gest
 ms.assetid: ae2dad51-be37-4311-a7c3-e99b2f41bed1
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto Servizi Desktop remoto, interfaccia WSDL per l'infrastruttura VDI personalizzata
+- Servizi Desktop remoto Servizi Desktop remoto , interfaccia WSDL per VDI personalizzata
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 52c51c3348f41f4cd3fad990a2cc7ef94a865173
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bc90f574edcf306b2141a54ccc3b34c79814e1dd5c705690af1b16103b1b8c05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513861"
 ---
 # <a name="wsdl-interface-for-custom-vdi-solutions"></a>Interfaccia WSDL per soluzioni VDI personalizzate
 
 Gli sviluppatori possono creare servizi Web personalizzati che gestiscono soluzioni VDI (Virtual Desktop Infrastructure).
 
-A partire da Windows Server 2008 R2, i computer client possono comunicare con i servizi Web che eseguono la gestione delle macchine virtuali usando il plug-in filtro VMMWebServerClient.dll. È possibile implementare un servizio Web personalizzato che funziona con questo plug-in di filtro. Per comunicare con il plug-in del filtro, il servizio Web deve implementare i metodi definiti nel seguente file WSDL (Web Services Definition Language).
+A partire da Windows Server 2008 R2, i computer client possono comunicare con i servizi Web che eseguono la gestione delle macchine virtuali usando il plug-in VMMWebServerClient.dll filtro. È possibile implementare un servizio Web personalizzato che funziona con questo plug-in di filtro. Per comunicare con il plug-in di filtro, il servizio Web deve implementare i metodi definiti nel file WSDL (Web Services Definition Language) seguente.
 
 
 ```XML
@@ -300,9 +300,9 @@ Questo file WSDL definisce i metodi seguenti:
 
 ## <a name="getvm"></a>GetVM
 
-Il plug-in filtro chiama questo metodo per ottenere informazioni su una macchina virtuale specificata. Deve restituire lo stato della macchina virtuale, il nome host, il tipo di host e il GUID.
+Il plug-in di filtro chiama questo metodo per ottenere informazioni su una macchina virtuale specificata. Deve restituire lo stato, il nome host, il tipo di host e il GUID della macchina virtuale.
 
-Il plug-in del filtro passa il seguente elemento al metodo.
+Il plug-in di filtro passa l'elemento seguente al metodo .
 
 
 ```XML
@@ -318,7 +318,7 @@ Il plug-in del filtro passa il seguente elemento al metodo.
 
 
 
-Il servizio Web deve restituire l'elemento seguente al plug-in del filtro.
+Il servizio Web deve restituire l'elemento seguente al plug-in di filtro.
 
 
 ```XML
@@ -335,9 +335,9 @@ Il servizio Web deve restituire l'elemento seguente al plug-in del filtro.
 
 ## <a name="jobupdated"></a>JobUpdated
 
-Il servizio Web chiama questo metodo per notificare al plug-in del filtro che sono state apportate modifiche a un processo esistente. Quando si implementa questo metodo, restituire **S \_ OK** se la funzione ha esito positivo. Se ha esito negativo, restituire un valore **HRESULT** che indica l'errore. Per un elenco di codici di errore comuni, vedere [valori HRESULT comuni](/windows/desktop/SecCrypto/common-hresult-values)
+Il servizio Web chiama questo metodo per notificare al plug-in del filtro che sono state apportate modifiche a un processo esistente. Quando si implementa questo metodo, restituire **S \_ OK** se la funzione ha esito positivo. Se non riesce, restituire un **valore HRESULT** che indica l'errore. Per un elenco dei codici di errore comuni, vedere [Valori HRESULT comuni](/windows/desktop/SecCrypto/common-hresult-values)
 
-Il servizio Web passa l'elemento seguente al plug-in del filtro.
+Il servizio Web passa l'elemento seguente al plug-in di filtro.
 
 
 ```XML
@@ -354,9 +354,9 @@ Il servizio Web passa l'elemento seguente al plug-in del filtro.
 
 ## <a name="placevm"></a>PlaceVM
 
-Il plug-in filtro chiama questo metodo per eseguire la migrazione di una macchina virtuale da una libreria a un computer host. Il metodo deve generare un processo e restituire un identificatore univoco del processo al plug-in del filtro a scopo di verifica. Al termine dell'elaborazione, il servizio Web deve chiamare JobUpdated.
+Il plug-in di filtro chiama questo metodo per eseguire la migrazione di una macchina virtuale da una libreria a un computer host. Il metodo deve generare un processo e restituire un identificatore univoco del processo al plug-in di filtro a scopo di rilevamento. Al termine dell'elaborazione, il servizio Web deve chiamare JobUpdated.
 
-Il plug-in del filtro passa il seguente elemento al metodo.
+Il plug-in di filtro passa l'elemento seguente al metodo .
 
 
 ```XML
@@ -372,7 +372,7 @@ Il plug-in del filtro passa il seguente elemento al metodo.
 
 
 
-Il servizio Web deve restituire l'elemento seguente al plug-in del filtro.
+Il servizio Web deve restituire l'elemento seguente al plug-in di filtro.
 
 
 ```XML
@@ -389,9 +389,9 @@ Il servizio Web deve restituire l'elemento seguente al plug-in del filtro.
 
 ## <a name="setlocale"></a>SetLocale
 
-Il plug-in filtro chiama questo metodo per specificare le impostazioni locali da utilizzare per le stringhe di errore.
+Il plug-in di filtro chiama questo metodo per specificare le impostazioni locali da usare per le stringhe di errore.
 
-Il plug-in del filtro passa il seguente elemento al metodo.
+Il plug-in di filtro passa l'elemento seguente al metodo .
 
 
 ```XML
@@ -406,7 +406,7 @@ Il plug-in del filtro passa il seguente elemento al metodo.
 
 
 
-Il servizio Web deve restituire l'elemento seguente al plug-in del filtro.
+Il servizio Web deve restituire l'elemento seguente al plug-in di filtro.
 
 
 ```XML
@@ -423,9 +423,9 @@ Il servizio Web deve restituire l'elemento seguente al plug-in del filtro.
 
 ## <a name="startvm"></a>StartVM
 
-Il plug-in filtro chiama questo metodo per avviare la macchina virtuale nel computer host corrente. Se la macchina virtuale non può essere avviata nel computer host corrente, questo metodo deve eseguire la migrazione della macchina virtuale al migliore host possibile e quindi avviarla. Il metodo deve generare un processo e restituire un identificatore univoco del processo al plug-in del filtro a scopo di verifica. Al termine dell'elaborazione, il servizio Web deve chiamare JobUpdated.
+Il plug-in di filtro chiama questo metodo per avviare la macchina virtuale nel computer host corrente. Se non è possibile avviare la macchina virtuale nel computer host corrente, questo metodo deve eseguire la migrazione della macchina virtuale all'host migliore possibile e quindi avviarla. Il metodo deve generare un processo e restituire un identificatore univoco del processo al plug-in di filtro a scopo di rilevamento. Al termine dell'elaborazione, il servizio Web deve chiamare JobUpdated.
 
-Il plug-in del filtro passa il seguente elemento al metodo.
+Il plug-in di filtro passa l'elemento seguente al metodo .
 
 
 ```XML
@@ -441,7 +441,7 @@ Il plug-in del filtro passa il seguente elemento al metodo.
 
 
 
-Il servizio Web deve restituire l'elemento seguente al plug-in del filtro.
+Il servizio Web deve restituire l'elemento seguente al plug-in di filtro.
 
 
 ```XML
@@ -456,6 +456,6 @@ Il servizio Web deve restituire l'elemento seguente al plug-in del filtro.
 
 
 
- 
+ 
 
- 
+ 

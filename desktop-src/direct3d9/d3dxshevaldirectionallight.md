@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXSHEvalDirectionalLight (D3dx9math.h): valuta una luce direzionale e restituisce dati sferici (SH).'
+description: 'Funzione D3DXSHEvalDirectionalLight (D3dx9math.h): valuta una luce direzionale e restituisce dati sferici sferici armonici (SH).'
 ms.assetid: 6e2e9b02-13bb-4cef-ae9d-343fbf64e5d7
 title: Funzione D3DXSHEvalDirectionalLight (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 488682eca230c8da6cc5048aded4a7a1e7f71bfd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4a726348c8c6049f0d3867af06aadfecbaaadc8fbf87e5bb30ae2abb8e996acf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119495101"
 ---
 # <a name="d3dxshevaldirectionallight-function-d3dx9mathh"></a>Funzione D3DXSHEvalDirectionalLight (D3dx9math.h)
 
-Valuta una [luce direzionale e](light-types.md) restituisce dati sferici sferici aricali (SH).
+Valuta una luce [direzionale e](light-types.md) restituisce dati sferici sferici armonici (SH).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,7 +52,7 @@ HRESULT D3DXSHEvalDirectionalLight(
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Ordine della valutazione SH. Deve essere compreso nell'intervallo [da D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, inclusi. La valutazione genera coefficienti Di ordine. Il grado di valutazione è Order - 1.
+Ordine della valutazione SH. Deve essere compreso nell'intervallo [tra D3DXSH \_ MINORDER](other-d3dx-constants.md) e D3DXSH \_ MAXORDER, inclusi. La valutazione genera coefficienti Order². Il grado di valutazione è Order - 1.
 
 </dd> <dt>
 
@@ -61,7 +61,7 @@ Ordine della valutazione SH. Deve essere compreso nell'intervallo [da D3DXSH \_ 
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore al vettore di direzione dell'asse dell'asse dell'emisfero (x, y, z) in cui valutare le funzioni di base sh. Vedere la sezione Osservazioni.
+Puntatore al vettore di direzione dell'asse dell'emisfero (x, y, z) in cui valutare le funzioni di base SH. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
@@ -123,7 +123,7 @@ Puntatore facoltativo al vettore SH di output per il componente blu.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere: D3DERR \_ INVALIDCALL.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Commenti
 
@@ -131,7 +131,7 @@ Il vettore di output viene calcolato in modo che se il rapporto di intensità R/
 
 Sulla sfera con raggio unità, come illustrato nella figura seguente, la direzione può essere specificata semplicemente [](coordinate-systems.md)con theta, l'angolo sull'asse z nella direzione destra e phi, l'angolo da z.
 
-![Illustrazione di una sfera con raggio unità](images/spherical-coordinates.png)
+![illustrazione di una sfera con raggio unità](images/spherical-coordinates.png)
 
 Le equazioni seguenti mostrano la relazione tra coordinate cartesiane (x, y, z) e sferiche (theta, phi) sulla sfera unità. L'angolo theta varia nell'intervallo da 0 a 2 pi greco, mentre phi varia da 0 a pi greco.
 

@@ -1,5 +1,5 @@
 ---
-description: Il&Delete \# 8194; Il metodo della classe WMI Elimina un processo pianificato.
+description: Eliminazione&\# 8194; Il metodo della classe WMI elimina un processo pianificato.
 ms.assetid: 064ff3f8-6d41-4f8d-a511-6c051bb48a5b
 ms.tgt_platform: multiple
 title: Metodo Delete della classe Win32_ScheduledJob
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: dd375c3da85bd72bddfc97ed3f57e52103578441
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3f0269929cf7a854044e65c56080594dce7f44620099c68bb9399bd56c9b20f0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119504691"
 ---
-# <a name="delete-method-of-the-win32_scheduledjob-class"></a>Metodo Delete della classe Win32 \_ ScheduledJob
+# <a name="delete-method-of-the-win32_scheduledjob-class"></a>Metodo Delete della classe ScheduledJob Win32 \_
 
-Il metodo **Delete** [WMI class](/windows/desktop/WmiSdk/retrieving-a-class) Elimina un processo pianificato.
+Il **metodo Delete** [WMI class](/windows/desktop/WmiSdk/retrieving-a-class) elimina un processo pianificato.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) in caso di esito positivo e qualsiasi altro numero per indicare un errore. Per ulteriori codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce il valore 0 (zero) in caso di esito positivo e qualsiasi altro numero per indicare un errore. Per altri codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -87,7 +87,7 @@ Processo interattivo.
 
 9
 
-Impossibile trovare il percorso di directory del file eseguibile del servizio.
+Impossibile trovare il percorso della directory del file eseguibile del servizio.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Impossibile trovare il percorso di directory del file eseguibile del servizio.
 
 21
 
-Sono stati passati parametri non validi al servizio.
+Al servizio sono stati passati parametri non validi.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Sono stati passati parametri non validi al servizio.
 
 22
 
-L'account con cui viene eseguito il servizio non è valido o non dispone delle autorizzazioni necessarie per eseguire il servizio.
+L'account con cui eseguire il servizio non è valido o non dispone delle autorizzazioni per eseguire il servizio.
 
 </dd> <dt>
 
@@ -125,7 +125,7 @@ L'account con cui viene eseguito il servizio non è valido o non dispone delle a
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -137,7 +137,7 @@ L'account con cui viene eseguito il servizio non è valido o non dispone delle a
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_ScheduledJob Win32**](win32-scheduledjob.md)
+[**Processo pianificato \_ Win32**](win32-scheduledjob.md)
 </dt> </dl>
 
  
