@@ -1,39 +1,39 @@
 ---
-title: Come elaborare la notifica di DTN_FORMATQUERY
-description: In questo argomento viene illustrato come elaborare una notifica di query di formato inviata dal controllo di selezione data e ora (DTP).
+title: Come elaborare la DTN_FORMATQUERY notifica
+description: Questo argomento illustra come elaborare una notifica di query di formato inviata dal controllo selezione data e ora (DTP).
 ms.assetid: 74E29438-2F50-4ADD-B0C4-DB3450BF08D7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e8de1e1a80d04f9a7f9e9d0cfcda198118e67c2
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 941c148332c36711e68b7c3b773fdb47acef202c5fd2a67f5620319f06c7fbc3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103963594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119696941"
 ---
 # <a name="how-to-process-the-dtn_formatquery-notification"></a>Come elaborare la notifica DTN \_ FORMATQUERY
 
-In questo argomento viene illustrato come elaborare una notifica di query di formato inviata dal controllo di selezione data e ora (DTP).
+Questo argomento illustra come elaborare una notifica di query di formato inviata dal controllo selezione data e ora (DTP).
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 
-Un controllo DTP Invia un codice di notifica [ \_ FORMATQUERY DTN](dtn-formatquery.md) per richiedere informazioni sulle dimensioni massime possibili di un campo di callback all'interno del controllo. L'applicazione deve gestire questo messaggio per assicurarsi che tutti i campi siano visualizzati correttamente.
+Un controllo DTP invia un [codice di notifica DTN \_ FORMATQUERY](dtn-formatquery.md) per richiedere informazioni sulle dimensioni massime possibili di un campo di callback all'interno del controllo. L'applicazione deve gestire questo messaggio per assicurarsi che tutti i campi siano visualizzati correttamente.
 
-Il seguente esempio di codice C++ è una funzione definita dall'applicazione che elabora il codice di notifica [ \_ FORMATQUERY DTN](dtn-formatquery.md) calcolando la larghezza della stringa più ampia possibile per un campo di callback specificato.
+L'esempio di codice C++ seguente è una funzione definita dall'applicazione che elabora il codice di notifica [DTN \_ FORMATQUERY](dtn-formatquery.md) calcolando la larghezza della stringa più ampia possibile per un determinato campo di callback.
 
-**Avviso di sicurezza:** L'uso errato di **lstrcmp** può compromettere la sicurezza dell'applicazione. Prima di chiamare **lstrcmp** nell'esempio di codice seguente, ad esempio, è necessario assicurarsi che le due stringhe abbiano terminazione null. Prima di continuare, è necessario esaminare le [considerazioni sulla sicurezza: controlli di Microsoft Windows](sec-comctls.md) .
+**Avviso di sicurezza:** **L'uso non corretto di lstrcmp** può compromettere la sicurezza dell'applicazione. Ad esempio, prima di chiamare **lstrcmp** nell'esempio di codice seguente è necessario assicurarsi che le due stringhe siano con terminazione Null. Prima di continuare, vedere Considerazioni sulla [sicurezza: Microsoft Windows Controls.](sec-comctls.md)
 
 
 
@@ -81,10 +81,10 @@ void WINAPI DoFormatQuery(
 
 <dl> <dt>
 
-[Uso di controlli selezione data e ora](using-date-and-time-picker.md)
+[Uso dei controlli selezione data e ora](using-date-and-time-picker.md)
 </dt> <dt>
 
-[Riferimento al controllo selezione data e ora](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
+[Informazioni di riferimento sul controllo Selezione data e ora](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
 </dt> <dt>
 
 [Selezione data e ora](date-and-time-picker-control-reference.md)

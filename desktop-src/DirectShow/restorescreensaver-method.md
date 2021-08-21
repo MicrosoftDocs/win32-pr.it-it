@@ -1,15 +1,15 @@
 ---
-description: Il metodo DVDAdm. RestoreScreenSaver Ripristina le impostazioni di screen saver di sistema.
+description: Il metodo DVDAdm.RestoreScreenSaver ripristina le impostazioni screen saver sistema.
 ms.assetid: 606ab850-95bf-4c60-b7cf-e3a94ceee7a7
 title: Metodo RestoreScreenSaver
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85b747aa21815bb37cc7db2296347c9890a06914
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 684250b237105e391472237a5e7093855dd82ef5b59ffbbaa20ebecf386da302
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119696971"
 ---
 # <a name="restorescreensaver-method"></a>Metodo RestoreScreenSaver
 
@@ -18,7 +18,7 @@ ms.locfileid: "106303911"
 
  
 
-Il `DVDAdm.RestoreScreenSaver` metodo ripristina le impostazioni del screen saver di sistema.
+Il `DVDAdm.RestoreScreenSaver` metodo ripristina le impostazioni screen saver sistema.
 
 ``` syntax
 DVD.DVDAdm.RestoreScreenSaver()
@@ -30,7 +30,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-In genere, un'applicazione DVD Disabilita la screen saver di sistema all'avvio impostando la proprietà [**DisableScreenSaver**](disablescreensaver-property.md) su true e riabilitando nuovamente l'screen saver quando l'applicazione DVD viene chiusa chiamando `RestoreScreenSaver` . Se un'applicazione non utilizza le impostazioni screen saver del sistema, non è necessario chiamare questo metodo o impostare la proprietà **DisableScreenSaver** .
+In genere, un'applicazione DVD disabilita il screen saver del sistema all'avvio impostando la proprietà [**DisableScreenSaver**](disablescreensaver-property.md) su true e quindi riattiva il screen saver quando l'applicazione DVD viene chiusa chiamando `RestoreScreenSaver` . Se un'applicazione non usa le impostazioni screen saver sistema, non deve chiamare questo metodo o impostare la **proprietà DisableScreenSaver.**
 
 ## <a name="see-also"></a>Vedi anche
 

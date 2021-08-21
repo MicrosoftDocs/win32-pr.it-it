@@ -1,10 +1,10 @@
 ---
-title: Utente-Shared-Folder-attributo
-description: Specifica un percorso UNC della cartella documenti condivisi dell'utente. Il percorso deve essere un percorso UNC di rete della directory di condivisione del server di form \\ \\ \\ \\ . Questo valore può essere una stringa null.
+title: Attributo User-Shared-Folder
+description: Specifica un percorso UNC per la cartella dei documenti condivisi dell'utente. Il percorso deve essere un percorso UNC di rete nel formato \\ \\ Directory condivisione \\ \\ server. Questo valore può essere una stringa Null.
 ms.assetid: 23b4177a-0a05-4111-affe-d81bc115580d
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD dell'attributo della cartella condivisa utente
+- Schema AD dell'attributo User-Shared-Folder
 - Schema AD dell'attributo userSharedFolder
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a20e9772302e79837fccd301943554191cf3b862
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4b3bcb2732fbaec9ac06db1bae3f07b03cac2018a4f88209b5391bd4a84b7836
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021989"
 ---
-# <a name="user-shared-folder-attribute"></a>Utente-Shared-Folder-attributo
+# <a name="user-shared-folder-attribute"></a>Attributo User-Shared-Folder
 
-Specifica un percorso UNC della cartella documenti condivisi dell'utente. Il percorso deve essere un percorso UNC di rete della **\\\\** directory di condivisione del _Server_ di form *_\\_*  *_\\_* . Questo valore può essere una stringa null.
+Specifica un percorso UNC per la cartella dei documenti condivisi dell'utente. Il percorso deve essere un percorso UNC di rete nel formato **\\\\** _Server_ *_\\_* _Share_ *_\\_* _Directory_. Questo valore può essere una stringa Null.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------------------------------------------------|
-| CN                | Utente-cartella condivisa                                                                |
-| LDAP-Display-Name | userSharedFolder                                                                  |
+| CN                | Cartella condivisa dall'utente                                                                |
+| Ldap-Display-Name | userSharedFolder                                                                  |
 | Dimensione              | \-                                                                                |
-| Privilegio aggiornamento  | Amministratore di dominio o proprietario dell'account.                                            |
-| Frequenza di aggiornamento  | Quando il record dell'utente viene creato e ogni volta che è necessario modificare la cartella condivisa. |
+| Privilegio di aggiornamento  | Amministratore di dominio o proprietario dell'account.                                            |
+| Frequenza di aggiornamento  | Quando viene creato il record dell'utente e ogni volta che la cartella condivisa deve cambiare. |
 | Attribute-Id      | 1.2.840.113556.1.4.751                                                            |
-| System-ID-GUID    | 9a9a021f-4a5b-11d1-a9c3-0000f80367c1                                              |
+| System-Id-Guid    | 9a9a021f-4a5b-11d1-a9c3-0000f80367c1                                              |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                       |
 
 
@@ -58,15 +58,15 @@ Specifica un percorso UNC della cartella documenti condivisi dell'utente. Il per
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Specifica un percorso UNC della cartella documenti condivisi dell'utente. Il per
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Specifica un percorso UNC della cartella documenti condivisi dell'utente. Il per
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Specifica un percorso UNC della cartella documenti condivisi dell'utente. Il per
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| A valore singolo       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Specifica un percorso UNC della cartella documenti condivisi dell'utente. Il per
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| A valore singolo       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Specifica un percorso UNC della cartella documenti condivisi dell'utente. Il per
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| A valore singolo       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: LibraryName (attributo)
+title: Attributo LibraryName
 description: L'attributo LibraryName è il nome della libreria a cui appartiene l'elemento.
 ms.assetid: 70ce2de1-6c7b-427a-ba48-a9f69bacd015
 keywords:
-- Librerianame (attributo) Windows Media Player
+- Attributo LibraryName Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 263023c9881e109efe77ec30c1e37091200c051b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 57d2b86a1b551fab103db732dd5405187c06395f37b1ae59c030c3a75a05f275
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054789"
 ---
-# <a name="libraryname-attribute"></a>LibraryName (attributo)
+# <a name="libraryname-attribute"></a>Attributo LibraryName
 
 L'attributo LibraryName è il nome della libreria a cui appartiene l'elemento.
 
@@ -27,14 +27,14 @@ L'attributo LibraryName è il nome della libreria a cui appartiene l'elemento.
 
 -   [**Elementi audio**](audio-item-attributes.md)
 -   [**Elementi foto**](photo-item-attributes.md)
--   [**Elementi della playlist**](playlist-attributes-ref.md)
+-   [**Elementi playlist**](playlist-attributes-ref.md)
 -   [**Elementi video**](video-item-attributes.md)
 
 ## <a name="remarks"></a>Commenti
 
-Un elemento multimediale può appartenere alla libreria locale dell'utente corrente oppure può appartenere a una libreria che è stata resa disponibile da un altro utente in una rete domestica.
+Un elemento multimediale potrebbe appartenere alla libreria locale dell'utente corrente o a una libreria resa disponibile da un altro utente in una rete domestica.
 
-Il valore di questo attributo corrisponde al valore restituito dal metodo [**IWMPLibrary:: Get \_ Name**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmplibrary-get_name) .
+Il valore di questo attributo è uguale al valore restituito dal [**metodo IWMPLibrary::get \_ name.**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmplibrary-get_name)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,7 +50,7 @@ Il valore di questo attributo corrisponde al valore restituito dal metodo [**IWM
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

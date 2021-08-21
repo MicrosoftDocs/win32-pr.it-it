@@ -1,21 +1,21 @@
 ---
-title: Esempio di codice C/C++ impostazione della priorità delle attività
-description: In questo esempio viene impostata la priorità di un'attività di test e quindi viene salvata l'attività. In questo esempio si presuppone che l'attività di test esista già nel computer locale.
+title: Esempio di codice C/C++ che imposta la priorità dell'attività
+description: Questo esempio imposta la priorità di un'attività di test e quindi salva l'attività. In questo esempio si presuppone che l'attività di test esista già nel computer locale.
 ms.assetid: 498dc438-3703-4d5c-a8b1-609d5776942d
 keywords:
-- impostazione delle proprietà dell'attività Utilità di pianificazione, priorità
+- impostazione delle proprietà delle attività Utilità di pianificazione , priorità
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 540405ebe3544d6fad9418533957ddcda8a567c0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 574d88a10bda5d9de93dde3607618aa3827ee89aa02588e0c1253f7fccdeca12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011641"
 ---
-# <a name="cc-code-example-setting-task-priority"></a>Esempio di codice C/C++: impostazione della priorità delle attività
+# <a name="cc-code-example-setting-task-priority"></a>Esempio di codice C/C++: Impostazione della priorità delle attività
 
-In questo esempio viene impostata la priorità di un'attività di test e quindi viene salvata l'attività. In questo esempio si presuppone che l'attività di test esista già nel computer locale.
+Questo esempio imposta la priorità di un'attività di test e quindi salva l'attività. In questo esempio si presuppone che l'attività di test esista già nel computer locale.
 
 
 ```C++
@@ -136,12 +136,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Esempi di Utilità di pianificazione 1,0](task-scheduler-1-0-examples.md)
+[Utilità di pianificazione 1.0 Esempi](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

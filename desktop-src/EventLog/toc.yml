@@ -11,18 +11,18 @@
         - name: Elementi di registrazione eventi
           href: event-logging-elements.md
           items:
-            - name: Chiave EventLog
+            - name: Chiave del registro eventi
               href: eventlog-key.md
             - name: Origini eventi
               href: event-sources.md
             - name: Categorie di eventi
               href: event-categories.md
-            - name: Identificatori evento
+            - name: Identificatori di evento
               href: event-identifiers.md
             - name: File di messaggio
               href: message-files.md
               items:
-                - name: File di testo del messaggio
+                - name: File di testo dei messaggi
                   href: message-text-files.md
                 - name: File di testo del messaggio di esempio
                   href: sample-message-text-file.md
@@ -35,24 +35,24 @@
         - name: Modello di registrazione eventi
           href: event-logging-model.md
           items:
-            - name: Formato file registro eventi
+            - name: Formato del file di log eventi
               href: event-log-file-format.md
             - name: Lettura dal registro eventi
               href: reading-from-the-event-log.md
             - name: Visualizzazione del registro eventi
               href: viewing-the-event-log.md
-        - name: Sicurezza registrazione eventi
+        - name: Sicurezza della registrazione eventi
           href: event-logging-security.md
     - name: Uso della registrazione eventi
       href: using-event-logging.md
       items:
-        - name: Esecuzione di query per le informazioni sugli eventi
+        - name: Esecuzione di query per informazioni sugli eventi
           href: querying-for-event-source-messages.md
         - name: Segnalazione di eventi
           href: reporting-an-event.md
         - name: Ricezione della notifica degli eventi
           href: receiving-event-notification.md
-    - name: Riferimento per la registrazione eventi
+    - name: Informazioni di riferimento sulla registrazione eventi
       href: event-logging-reference.md
       items:
         - name: Funzioni di registrazione eventi
@@ -82,7 +82,7 @@
               href: /windows/desktop/api/Winbase/nf-winbase-readeventloga
             - name: RegisterEventSource
               href: /windows/desktop/api/Winbase/nf-winbase-registereventsourcea
-            - name: ReportEvent
+            - name: Reportevent
               href: /windows/desktop/api/Winbase/nf-winbase-reporteventa
         - name: Strutture di registrazione eventi
           href: event-logging-structures.md

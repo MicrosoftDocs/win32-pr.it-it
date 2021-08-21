@@ -1,19 +1,19 @@
 ---
-description: Se questo bit di stile è impostato, il testo nel controllo è allineato a destra.
+description: Se questo bit di stile è impostato, il testo nel controllo viene allineato a destra.
 ms.assetid: 444fb9ac-8626-4079-80be-6c210a69d984
-title: Attributo di controllo RightAligned
+title: Attributo del controllo RightAligned
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea94807801845ee18458f6c3105c6e1e5fc3834c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc8a2df776adb167dd82575a8a926e814ecede47e1e7cc07e49c759ea3b046ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868891"
 ---
-# <a name="rightaligned-control-attribute"></a>Attributo di controllo RightAligned
+# <a name="rightaligned-control-attribute"></a>Attributo del controllo RightAligned
 
-Se questo bit di stile è impostato, il testo nel controllo è allineato a destra.
+Se questo bit di stile è impostato, il testo nel controllo viene allineato a destra.
 
 ## <a name="valid-controls"></a>Controlli validi
 
@@ -41,7 +41,7 @@ Se questo bit di stile è impostato, il testo nel controllo è allineato a destr
 
  
 
-[Elenco di directory](directorylist-control.md)
+[Elenco directory](directorylist-control.md)
 
  
 
@@ -87,9 +87,9 @@ Se questo bit di stile è impostato, il testo nel controllo è allineato a destr
 
 ## <a name="remarks"></a>Commenti
 
-Per impostare questo attributo su un controllo, includere il bit RightAligned nella colonna Attributes del record del controllo nella tabella del [controllo](control-table.md).
+Per impostare questo attributo su un controllo, includere il bit RightAligned nella colonna Attributi del record del controllo nella [tabella Control](control-table.md).
 
-Vedere [attributi](control-attributes.md) e [controlli](controls.md)del controllo.
+Vedere [Attributi e controlli](control-attributes.md) del [controllo](controls.md).
 
  
 

@@ -201,7 +201,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("minuti")
 </dt> </dl>
 
-Numero di minuti di offset del sistema operativo rispetto all'ora media di Greenwich (GMT). Il numero è positivo, negativo o zero.
+Numero di minuti in cui il sistema operativo viene compensato dall'ora media di Greenwich (GMT). Il numero è positivo, negativo o zero.
 
 </dd> <dt>
 
@@ -232,7 +232,7 @@ Tipo di dati: **booleano**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **TRUE,** il sistema operativo viene distribuito tra più nodi del sistema computer, che devono essere raggruppati come cluster.
+Se **TRUE,** il sistema operativo viene distribuito tra più nodi del sistema informatico, che devono essere raggruppati come cluster.
 
 </dd> <dt>
 
@@ -365,25 +365,25 @@ Tipo di accesso: sola lettura
 Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobyte")
 </dt> </dl>
 
-Numero massimo di kilobyte di memoria che è possibile allocare a un processo. Per i sistemi operativi senza memoria virtuale, questo valore è in genere uguale alla quantità totale di memoria fisica, meno la memoria utilizzata dal BIOS e dal sistema operativo. Per alcuni sistemi operativi, questo valore può essere infinito, nel qual caso è necessario immettere 0. In altri casi, questo valore può essere una costante, ad esempio 2 GB o 4 GB.
+Numero massimo di kilobyte di memoria che è possibile allocare a un processo. Per i sistemi operativi senza memoria virtuale, questo valore è in genere uguale alla quantità totale di memoria fisica, meno la memoria usata dal BIOS e dal sistema operativo. Per alcuni sistemi operativi, questo valore può essere infinito, nel qual caso è necessario immettere 0. In altri casi, questo valore può essere una costante, ad esempio 2 GB o 4 GB.
 
-Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
-Chiave di un'istanza del sistema operativo all'interno di un computer.
+Chiave di un'istanza del sistema operativo all'interno di un sistema computer.
 
 Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -430,7 +430,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrSystemNumUsers")
 </dt> </dl>
 
-Numero di sessioni utente per cui il sistema operativo archivia attualmente le informazioni sullo stato.
+Numero di sessioni utente per le quali il sistema operativo archivia attualmente le informazioni sullo stato.
 
 </dd> <dt>
 
@@ -564,7 +564,7 @@ HP-UX
 
 </dt> <dd>
 
-Microsoft Virtual Machine (VM) per Java
+Macchina virtuale Microsoft (VM) per Java
 
 </dd> <dt>
 
@@ -804,7 +804,7 @@ BS2000/OSD
 
 </dt> <dd>
 
-UNIX BSD
+BSD UNIX
 
 </dd> <dt>
 
@@ -1168,7 +1168,7 @@ Tipo di dati: **stringa**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DmTF \| Operating System \| 001.3")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operating System \| 001.3")
 </dt> </dl>
 
 Versione dell'operazione.

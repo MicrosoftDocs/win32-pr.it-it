@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_INDEXCREATE. pidxUnicode'
-title: Proprietà JET_INDEXCREATE. pidxUnicode
+description: 'Altre informazioni su: JET_INDEXCREATE.pidxUnicode'
+title: JET_INDEXCREATE.pidxUnicode
 TOCTitle: 'pidxUnicode property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INDEXCREATE.pidxUnicode
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexcreate.pidxunicode(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 394ae0a8ef77bd591e76a0e1c886a7abc56b754c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f00dd405cae5ca03933c3b3d6932ce7cf8c81098d80b41446e585eb8d4474362
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039019"
 ---
-# <a name="jet_indexcreatepidxunicode-property"></a>Proprietà JET_INDEXCREATE. pidxUnicode
+# <a name="jet_indexcreatepidxunicode-property"></a>JET_INDEXCREATE.pidxUnicode
 
 Ottiene o imposta le opzioni di confronto Unicode facoltative.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,14 +62,14 @@ public JET_UNICODEINDEX pidxUnicode { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_UNICODEINDEX](./jet-unicodeindex-class.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_UNICODEINDEX](./jet-unicodeindex-class.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_INDEXCREATE](./jet-indexcreate-class.md)
+[JET_INDEXCREATE classe](./jet-indexcreate-class.md)
 
-[Membri JET_INDEXCREATE](./jet-indexcreate-members.md)
+[JET_INDEXCREATE membri](./jet-indexcreate-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

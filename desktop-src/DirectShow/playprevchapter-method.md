@@ -4,12 +4,12 @@ ms.assetid: 2f27831e-92d3-4ae5-ba29-0b06cdedaa79
 title: Metodo PlayPrevChapter
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11522eec80e781faf286f69d1bf7673544188340
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b5018644702aaadc302cc0a0ef43844cc4706d2c05cafdf7ed3a2666447604bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103746266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119501751"
 ---
 # <a name="playprevchapter-method"></a>Metodo PlayPrevChapter
 

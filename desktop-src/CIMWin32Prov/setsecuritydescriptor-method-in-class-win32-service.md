@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 20619a459171841d0a3bd5b7acabe984dc835dac
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c79de15c251cc38e35b218aaba7ad0efec725d6baaf074df87a69453d81bf359
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108100008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119700101"
 ---
 # <a name="setsecuritydescriptor-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Metodo SetSecurityDescriptor della classe Win32_Service (provider WMI CIMWin32)
 
@@ -49,7 +49,7 @@ Descrittore di sicurezza associato al servizio.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o un valore diverso per indicare un errore. Per altri codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce uno dei valori elencati nell'elenco seguente o un valore diverso per indicare un errore. Per altri codici di errore, [**vedere Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum.**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum) Per i valori **HRESULT** generali, vedere [Codici di errore di sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -74,7 +74,7 @@ La richiesta non è supportata.
 
 2
 
-L'utente non dispone dell'accesso necessario.
+L'utente non aveva l'accesso necessario.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Il codice di controllo richiesto non è valido o non è accettabile per il servi
 **5**
 </dt> <dd>
 
-Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](win32-baseservice.md).**State** ) è uguale a 0, 1 o 2.
+Il codice di controllo richiesto non può essere inviato al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](win32-baseservice.md).**State)** è uguale a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -249,21 +249,21 @@ Il servizio è attualmente sospeso nel sistema.
 
 [**L'istanza \_ di Win32 SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) rappresenta un tipo di dati [**SECURITY \_ DESCRIPTOR \_ CONTROL**](/windows/desktop/SecAuthZ/security-descriptor-control) e contiene un elenco di controllo di accesso discrezionale (DACL) e un elenco di controllo di accesso [*di*](/windows/desktop/SecGloss/s-gly) sistema (SACL). [](/windows/desktop/SecGloss/d-gly) Per altre informazioni, vedere Elenchi [di controllo di accesso.](/windows/desktop/SecAuthZ/access-control-lists)
 
-Se **SeSecurityPrivilege** non viene concesso o abilitato quando si recupera un descrittore di sicurezza, nel descrittore di sicurezza restituito viene restituito solo l'elenco DACL. Per altre informazioni, vedere [**Costanti di privilegi**](/windows/desktop/WmiSdk/privilege-constants) ed Esecuzione di operazioni con [privilegi.](/windows/desktop/WmiSdk/executing-privileged-operations)
+Se **SeSecurityPrivilege** non viene concesso o abilitato quando si recupera un descrittore di sicurezza, nel descrittore di sicurezza restituito viene restituito solo l'elenco DACL. Per altre informazioni, vedere [**Costanti di privilegi ed**](/windows/desktop/WmiSdk/privilege-constants) Esecuzione di operazioni con [privilegi.](/windows/desktop/WmiSdk/executing-privileged-operations)
 
 È possibile aggiornare sia l'elenco DACL che l'elenco SACL nell'istanza [**\_ SecurityDescriptor win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) quando si chiama questo metodo, ma è anche possibile aggiornare solo l'elenco DACL o solo l'elenco SACL.
 
 I valori seguenti in [**SECURITY \_ DESCRIPTOR \_ CONTROL**](/windows/desktop/SecAuthZ/security-descriptor-control) determinano se l'elenco DACL, l'elenco SACL o entrambi sono aggiornati.
 
--   **SE \_ DACL \_ PRESENT**
+-   **\_edizione Standard DACL \_ PRESENT**
 
     Indica che l'elenco DACL deve essere aggiornato. Se non è impostata, WMI mantiene il valore originale dell'elenco DACL.
 
--   **SE \_ SACL \_ PRESENT**
+-   **\_edizione Standard SACL \_ PRESENT**
 
-    Indica che l'elenco SACL deve essere aggiornato. Se non è impostata, WMI mantiene il valore originale dell'elenco SACL. Per aggiornare l'elenco SACL, l'account deve avere il **privilegio SeSecurityPrivilege** abilitato. Per gli script, il nome del privilegio è **SeSecurityPrivilege**. Per altre informazioni, vedere [**Costanti dei privilegi**](/windows/desktop/WmiSdk/privilege-constants).
+    Indica che l'elenco SACL deve essere aggiornato. Se non è impostata, WMI mantiene il valore originale dell'elenco SACL. Per aggiornare l'elenco SACL, l'account deve avere il **privilegio SeSecurityPrivilege** abilitato. Per lo scripting, il nome del privilegio **è SeSecurityPrivilege.** Per altre informazioni, vedere [**Costanti di privilegio.**](/windows/desktop/WmiSdk/privilege-constants)
 
-Se le proprietà Trustee e Owner trustee del gruppo non sono **NULL,** vengono aggiornate. In caso contrario, WMI mantiene i valori originali. Per altre informazioni, vedere [Oggetti descrittori di sicurezza WMI](/windows/desktop/WmiSdk/wmi-security-descriptor-objects).
+Se le proprietà Trustee group e Owner trustee non sono **NULL,** vengono aggiornate. In caso contrario, WMI mantiene i valori originali. Per altre informazioni, vedere [Oggetti descrittore di sicurezza WMI.](/windows/desktop/WmiSdk/wmi-security-descriptor-objects)
 
 Quando un nuovo SACL è **NULL** in una chiamata a questo metodo, il SACL del descrittore di sicurezza nell'oggetto a protezione diretta di destinazione rimane invariato.
 

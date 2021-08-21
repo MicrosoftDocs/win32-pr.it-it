@@ -1,25 +1,25 @@
 ---
-description: I log WSDAPI contengono informazioni di debug che possono essere usate per individuare la causa radice degli errori dell'applicazione WSDAPI.
+description: I log WSDAPI contengono informazioni di debug che possono essere usate per trovare la causa radice degli errori dell'applicazione WSDAPI.
 ms.assetid: 28b4c032-1c9a-4b3a-9a6a-2948456572b2
 title: Abilitazione della traccia WSDAPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 951f8ddfee6043cc662a456c70960e78ed1a3625
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd8f765249f4888a1dcfd2c6a44a81d3e2652a75bb983e85a881093d3c266b5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049699"
 ---
 # <a name="enabling-wsdapi-tracing"></a>Abilitazione della traccia WSDAPI
 
-I log WSDAPI contengono informazioni di debug che possono essere usate per individuare la causa radice degli errori dell'applicazione WSDAPI. Quando la traccia è abilitata, le informazioni di registrazione vengono archiviate in un file con estensione ETL in un percorso specificato dall'utente. Questo file con estensione ETL può essere inviato al supporto tecnico Microsoft per l'analisi delle cause principali. Per informazioni sul contatto del supporto, vedere [https://support.microsoft.com](https://support.microsoft.com) .
+I log WSDAPI contengono informazioni di debug che possono essere usate per trovare la causa radice degli errori dell'applicazione WSDAPI. Quando la traccia è abilitata, le informazioni di registrazione vengono archiviate in un file con estensione etl in un percorso specificato dall'utente. Questo file con estensione etl può essere inviato al supporto per sviluppatori Microsoft per l'analisi della causa radice. Per informazioni su come contattare il supporto, vedere [https://support.microsoft.com](https://support.microsoft.com) .
 
-Questa procedura deve essere eseguita due volte: una volta nel client e una volta nell'host.
+Questa procedura deve essere eseguita due volte: una sul client e una volta nell'host.
 
 **Per abilitare la traccia WSDAPI**
 
-1.  Utilizzando blocco note o un altro editor di testo, creare un file di testo con il testo seguente:
+1.  Usando Blocco note o un altro editor di testo, creare un file di testo con il testo seguente:
 
     ``` syntax
     "{480217a9-f824-4bd4-bbe8-f371caaf9a0d}" 0xFF 0xFF
@@ -35,19 +35,19 @@ Questa procedura deve essere eseguita due volte: una volta nel client e una volt
     "{836767a6-af31-4938-b4c0-ef86749a9aef}" 0xFF 0xFF
     ```
 
-2.  Salvare il file di testo come `C:\temp\traceguids.txt` , quindi chiudere il file.
+2.  Salvare il file di testo `C:\temp\traceguids.txt` con nome e quindi chiudere il file.
 3.  Aprire una finestra del prompt dei comandi con privilegi elevati.
-4.  Eseguire il comando seguente: **logman.exe create trace wsdlog-o c: \\ temp \\ WSD**
-5.  Eseguire il comando seguente: **logman.exe Update wsdlog-PF c: \\ temp \\traceguids.txt**
+4.  Eseguire il comando seguente: **logman.exe trace wsdlog -o c: \\ temp \\ wsd**
+5.  Eseguire il comando seguente: **logman.exe aggiornare wsdlog -pf c: \\ temp \\traceguids.txt**
 6.  Eseguire il comando seguente: **logman.exe avviare wsdlog**
-7.  Riprodurre l'errore avviando l'host e il client o premendo F5 in Network Explorer.
+7.  Riprodurre l'errore avviando l'host e il client o premendo F5 nel Esplora rete.
 
 **Per disabilitare la traccia WSDAPI**
 
 1.  Aprire una finestra del prompt dei comandi con privilegi elevati.
 2.  Eseguire il comando seguente: **logman.exe arrestare wsdlog**
 
-Una volta acquisito l'errore dell'applicazione, i \* file con estensione ETL possono essere inviati al supporto tecnico Microsoft. Questi file si trovano in `C:\temp\wsd_*.etl` .
+Dopo aver acquisito l'errore dell'applicazione, i file con estensione \* etl possono essere inviati al supporto tecnico Microsoft. Questi file si trovano in `C:\temp\wsd_*.etl` .
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -56,7 +56,7 @@ Una volta acquisito l'errore dell'applicazione, i \* file con estensione ETL pos
 [Procedure di diagnostica WSDAPI](wsdapi-diagnostic-procedures.md)
 </dt> <dt>
 
-[Introduzione con la risoluzione dei problemi di WSDAPI](getting-started-with-wsdapi-troubleshooting.md)
+[Attività iniziali con la risoluzione dei problemi di WSDAPI](getting-started-with-wsdapi-troubleshooting.md)
 </dt> <dt>
 
 [https://support.microsoft.com](https://support.microsoft.com)

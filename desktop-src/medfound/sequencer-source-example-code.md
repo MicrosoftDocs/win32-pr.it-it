@@ -1,19 +1,19 @@
 ---
-description: In questo argomento viene illustrato il codice di esempio per l'utilizzo dell'origine di Sequencer in Microsoft Media Foundation.
+description: Questo argomento illustra il codice di esempio per l'uso dell'origine sequencer in Microsoft Media Foundation.
 ms.assetid: 6f39a297-33a9-414a-9d41-47aec54eaa6b
-title: Codice di esempio dell'origine sequencer
+title: Codice di esempio del sequencer source
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a587a9b77413ad22ac49111489cf3e1b89cadf8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3098faa0b979d6ad3baa96256c0ffac1eb14f482df5caff966ebc1cda3957f50
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120012358"
 ---
-# <a name="sequencer-source-example-code"></a>Codice di esempio dell'origine sequencer
+# <a name="sequencer-source-example-code"></a>Codice di esempio del sequencer source
 
-In questo argomento viene illustrato il codice di esempio per l'utilizzo dell' [origine di Sequencer](sequencer-source.md) in Microsoft Media Foundation. Include le sezioni seguenti:
+Questo argomento illustra il codice di esempio per l'uso [dell'origine sequencer](sequencer-source.md) in Microsoft Media Foundation. Include le sezioni seguenti:
 
 -   [Classe CPlaylist](#cplaylist-class)
 -   [Creazione di un'istanza di CPlaylist](#creating-an-instance-of-cplaylist)
@@ -23,7 +23,7 @@ In questo argomento viene illustrato il codice di esempio per l'utilizzo dell' [
 
 ## <a name="cplaylist-class"></a>Classe CPlaylist
 
-La `CPlaylist` classe deriva dalla `CPlayer` classe mostrata nell'esercitazione [come riprodurre file multimediali con Media Foundation](how-to-play-unprotected-media-files.md).
+La `CPlaylist` classe deriva dalla classe `CPlayer` illustrata nell'esercitazione How to Play Media [Files with Media Foundation](how-to-play-unprotected-media-files.md).
 
 
 ```C++
@@ -91,7 +91,7 @@ public:
 
 ## <a name="creating-an-instance-of-cplaylist"></a>Creazione di un'istanza di CPlaylist
 
-Il `CPlaylist::CreateInstance` metodo crea un nuovo `CPlaylist` oggetto. Internamente, questo metodo chiama `CPlaylist::Initialize` per inizializzare l'oggetto. Il `Initialize` metodo chiama [**MFCreateSequencerSource**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatesequencersource) per creare l'origine della sequenza. Chiama anche [**IMFMediaSession:: getclock**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-getclock) per ottenere un puntatore al clock di presentazione.
+Il `CPlaylist::CreateInstance` metodo crea un nuovo oggetto `CPlaylist` . Internamente, questo metodo chiama `CPlaylist::Initialize` per inizializzare l'oggetto . Il `Initialize` metodo chiama [**MFCreateSequencerSource**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatesequencersource) per creare l'origine della sequenza. Chiama anche [**IMFMediaSession::GetClock**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-getclock) per ottenere un puntatore all'orologio della presentazione.
 
 
 ```C++
@@ -182,14 +182,14 @@ CPlaylist::~CPlaylist()
 
 ## <a name="adding-and-removing-playlist-segments"></a>Aggiunta e rimozione di segmenti di playlist
 
-Il `AddSegment` metodo aggiunge un nuovo segmento della playlist.
+Il `AddSegment` metodo aggiunge un nuovo segmento di playlist.
 
 Questo metodo esegue i passaggi seguenti:
 
-1.  Crea una topologia di riproduzione. Il codice per questo passaggio è illustrato nell'argomento [creazione di topologie di riproduzione](creating-playback-topologies.md).
-2.  Chiama [**IMFSequencerSource:: AppendTopology**](/windows/desktop/api/mfidl/nf-mfidl-imfsequencersource-appendtopology) per aggiungere la topologia alla playlist.
-3.  Nel primo segmento, ottiene il valore dell'attributo [**MF \_ PD \_ Duration**](mf-pd-duration-attribute.md) , che contiene la durata della riproduzione.
-4.  Archivia l'ID del segmento e l'ID topologia in una tabella di ricerca.
+1.  Crea una topologia di riproduzione. Il codice per questo passaggio è illustrato nell'argomento [Creazione di topologie di riproduzione](creating-playback-topologies.md).
+2.  Chiama [**IMFSequencerSource::AppendTopology**](/windows/desktop/api/mfidl/nf-mfidl-imfsequencersource-appendtopology) per aggiungere la topologia alla playlist.
+3.  Nel primo segmento ottiene il valore dell'attributo [**MF \_ PD \_ DURATION,**](mf-pd-duration-attribute.md) che contiene la durata della riproduzione.
+4.  Archivia l'ID segmento e l'ID topologia in una tabella di ricerca.
 
 
 ```C++
@@ -261,7 +261,7 @@ done:
 
 
 
-Il `AddSegment` metodo è privato per `CPlaylist` e viene chiamato dal metodo pubblico seguente:
+Il `AddSegment` metodo è privato di e viene chiamato dal metodo pubblico `CPlaylist` seguente:
 
 
 ```C++
@@ -326,13 +326,13 @@ done:
 
 
 
-Quando si crea il primo segmento della playlist, è necessario accodare la topologia del segmento nella sessione multimediale, come indicato di seguito:
+Quando si crea il primo segmento di playlist, è necessario accodare la topologia del segmento nella sessione multimediale, come indicato di seguito:
 
-1.  Eseguire una query sull'origine del sequencer per l'interfaccia [**IMFMediaSourceTopologyProvider**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasourcetopologyprovider) .
-2.  Passare il descrittore della presentazione al metodo [**IMFMediaSourceTopologyProvider:: GetMediaSourceTopology**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasourcetopologyprovider-getmediasourcetopology) . Questo metodo ottiene un puntatore alla topologia del segmento. Si noti che questa topologia non è esattamente identica alla topologia di riproduzione creata in precedenza. Si tratta invece di una versione modificata di tale topologia. Per ulteriori informazioni, vedere [informazioni sull'origine di Sequencer](about-the-sequencer-source.md).
-3.  Accodare la topologia nella sessione multimediale chiamando [**IMFMediaSession:: Setopologia**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-settopology).
+1.  Eseguire una query sull'origine sequencer per [**l'interfaccia IMFMediaSourceTopologyProvider.**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasourcetopologyprovider)
+2.  Passare il descrittore di presentazione al [**metodo IMFMediaSourceTopologyProvider::GetMediaSourceTopology.**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasourcetopologyprovider-getmediasourcetopology) Questo metodo ottiene un puntatore alla topologia del segmento. Si noti che questa topologia non è esattamente la stessa della topologia di riproduzione creata in precedenza. Si tratta invece di una versione modificata di tale topologia. Per altre informazioni, vedere [Informazioni sull'origine sequencer.](about-the-sequencer-source.md)
+3.  Accodare la topologia nella sessione multimediale chiamando [**IMFMediaSession::SetTopology**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-settopology).
 
-Nel codice seguente vengono illustrati questi passaggi. Questo stesso codice viene usato anche quando la playlist esegue il rollforward del segmento successivo.
+Il codice seguente illustra questi passaggi. Questo stesso codice viene usato anche quando la playlist esegue la pre-registrazione del segmento successivo.
 
 
 ```C++
@@ -368,7 +368,7 @@ done:
 
 
 
-Per eliminare un segmento di playlist, chiamare [**IMFSequencerSource::D eletetopology**](/windows/desktop/api/mfidl/nf-mfidl-imfsequencersource-deletetopology). Il segmento viene specificato in base all'ID del segmento. Questo è il motivo per cui l'applicazione deve memorizzare nella cache l'elenco degli ID di segmento.
+Per eliminare un segmento di playlist, chiamare [**IMFSequencerSource::D eleteTopology**](/windows/desktop/api/mfidl/nf-mfidl-imfsequencersource-deletetopology). Il segmento viene specificato dall'ID segmento. Questo è il motivo per cui l'applicazione deve memorizzare nella cache l'elenco di ID segmento.
 
 
 ```C++

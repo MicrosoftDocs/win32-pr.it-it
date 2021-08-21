@@ -1,5 +1,5 @@
 ---
-description: Converte un input di passphrase fornito dall'utente in un'autorizzazione proprietaria di 20 byte che può essere utilizzata per interagire con il TPM. Per i metodi come TakeOwnership e ResetAuthLockOut è necessario il valore di autorizzazione del proprietario risultante.
+description: Converte un input di passphrase fornito dall'utente in un'autorizzazione del proprietario a 20 byte che può essere usata per interagire con il TPM. Metodi come TakeOwnership e ResetAuthLockOut richiedono il valore di autorizzazione del proprietario risultante.
 ms.assetid: 69eed934-1668-495a-b5b7-cd4a87df1ab3
 title: Metodo ConvertToOwnerAuth della classe Win32_Tpm
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Win32_tpm.dll
-ms.openlocfilehash: f3de5803d10458156fb453e964d782f7c9760333
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88d1b0f2056d6a10ac623421a7fe261acb832657d08c030ab3247f0acf1a0629
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004649"
 ---
-# <a name="converttoownerauth-method-of-the-win32_tpm-class"></a>Metodo ConvertToOwnerAuth della \_ classe TPM Win32
+# <a name="converttoownerauth-method-of-the-win32_tpm-class"></a>Metodo ConvertToOwnerAuth della classe Tpm Win32 \_
 
-Il metodo **ConvertToOwnerAuth** della classe [**\_ TPM Win32**](win32-tpm.md) converte un input di passphrase fornito dall'utente in un'autorizzazione proprietaria di 20 byte che può essere utilizzata per interagire con il TPM. Per i metodi come [**TakeOwnership**](takeownership-win32-tpm.md) e [**ResetAuthLockOut**](resetauthlockout-win32-tpm.md) è necessario il valore di autorizzazione del proprietario risultante.
+Il **metodo ConvertToOwnerAuth** della classe [**\_ Win32 Tpm**](win32-tpm.md) converte un input di passphrase fornito dall'utente in un'autorizzazione del proprietario di 20 byte che può essere usata per interagire con il TPM. Metodi come [**TakeOwnership**](takeownership-win32-tpm.md) e [**ResetAuthLockOut**](resetauthlockout-win32-tpm.md) richiedono il valore di autorizzazione del proprietario risultante.
 
 Il processo di conversione segue le specifiche del [Trusted Computing Group](https://www.trustedcomputinggroup.org/).
 
@@ -42,31 +42,31 @@ uint32 ConvertToOwnerAuth(
 
 <dl> <dt>
 
-*OwnerPassPhrase* \[ in\]
+*OwnerPassPhrase* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **stringa**
 
-Stringa da convertire in un valore di autorizzazione del proprietario. La stringa può contenere un numero qualsiasi di caratteri alfanumerici.
+Stringa da convertire in un valore di autorizzazione proprietario. La stringa può contenere un numero qualsiasi di caratteri alfanumerici.
 
 </dd> <dt>
 
-*OwnerAuth* \[ out\]
+*OwnerAuth* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **stringa**
 
-Stringa derivata dal parametro *OwnerPassPhrase* . Questo valore è un valore binario a 20 byte codificato in una stringa Base64 con terminazione **null** a 28 byte.
+Stringa derivata dal *parametro OwnerPassPhrase.* Questo valore è un valore binario a 20 byte codificato in una stringa con terminazione **Null** base64 a 28 byte.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-È possibile restituire tutti gli errori del TPM, nonché gli errori specifici dei servizi di base TPM.
+È possibile restituire tutti gli errori TPM e gli errori specifici dei servizi di base TPM.
 
-Nelle tabelle seguenti sono elencati alcuni dei codici restituiti comuni.
+Le tabelle seguenti elencano alcuni dei codici restituiti comuni.
 
 
 
@@ -80,15 +80,15 @@ Nelle tabelle seguenti sono elencati alcuni dei codici restituiti comuni.
 
 ## <a name="remarks"></a>Commenti
 
-Una stringa codificata UTF-16LE Unicode viene convertita nel valore di autorizzazione del proprietario del TPM a 20 byte prendendo l'hash SHA-1 della rappresentazione binaria della stringa. La terminazione **null** della stringa Unicode non è inclusa nell'hash. Nessun salt viene utilizzato nell'hash SHA-1.
+Una stringa con codifica Unicode UTF-16LE viene convertita nel valore di autorizzazione del proprietario TPM a 20 byte prendendo l'hash SHA-1 della rappresentazione binaria della stringa. La **terminazione Null** della stringa Unicode non è inclusa nell'hash. Nell'hash SHA-1 non viene usato alcun valore salt.
 
-Ad esempio, per convertire la passphrase del proprietario del TPM "1Sample" in un valore di autorizzazione del proprietario del TPM, l'hash SHA-1 viene ricavato dal flusso di byte seguente:
+Ad esempio, per convertire la passphrase proprietaria TPM "1Sample" in un valore di autorizzazione del proprietario TPM, l'hash SHA-1 viene tratto dal flusso di byte seguente:
 
 `0x31 0x00 0x53 0x00 0x61 0x00 0x6D 0x00 0x70 0x00 0x6C 0x00 0x65 0x00`
 
-Per convertire una passphrase di lunghezza zero in un valore di autorizzazione del proprietario, l'hash SHA-1 viene accettato dal flusso di byte **null** .
+Per convertire una passphrase di lunghezza zero in un valore di autorizzazione proprietario, l'hash SHA-1 viene preso dal flusso di byte **NULL.**
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non sono installati come parte del Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,11 +96,11 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                      |
-| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ sicurezza \\ MicrosoftTpm<br/>                                            |
-| MOF<br/>                      | <dl> <dt>\_TPM Win32. mof</dt> </dl> |
-| DLL<br/>                      | <dl> <dt>\_tpm.dllWin32</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                      |
+| Spazio dei nomi<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftTpm<br/>                                            |
+| MOF<br/>                      | <dl> <dt>Win32 \_ tpm.mof</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Win32 \_tpm.dll</dt> </dl> |
 
 
 
@@ -108,7 +108,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TPM Win32**](win32-tpm.md)
+[**Win32 \_ Tpm**](win32-tpm.md)
 </dt> <dt>
 
 [**TakeOwnership**](takeownership-win32-tpm.md)

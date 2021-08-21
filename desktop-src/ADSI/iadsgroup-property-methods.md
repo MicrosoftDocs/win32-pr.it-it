@@ -27,7 +27,7 @@ ms.locfileid: "119082405"
 ---
 # <a name="iadsgroup-property-methods"></a>Metodi della proprietà IADsGroup
 
-I metodi delle proprietà [**dell'interfaccia IADsGroup**](/windows/desktop/api/Iads/nn-iads-iadsgroup) leggono e scrivono le proprietà seguenti. Per altre informazioni, vedere [Metodi delle proprietà dell'interfaccia](interface-property-methods.md).
+I metodi di proprietà [**dell'interfaccia IADsGroup**](/windows/desktop/api/Iads/nn-iads-iadsgroup) leggono e scrivono le proprietà seguenti. Per altre informazioni, vedere [Metodi delle proprietà di interfaccia.](interface-property-methods.md)
 
 ## <a name="properties"></a>Proprietà
 
@@ -40,10 +40,10 @@ Indica la descrizione testuale dell'appartenenza al gruppo.
 
 <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati scripting: **BSTR**
+Tipo di dati di scripting: **BSTR**
 </dt> <dt>
 
 
@@ -67,11 +67,11 @@ HRESULT put_Description(
 
 ### <a name="using-iadsgroup-to-retrieve-descriptions-of-built-in-groups"></a>Uso di IADsGroup per recuperare le descrizioni dei gruppi predefiniti
 
-Gli esempi seguenti illustrano come recuperare le informazioni sugli oggetti Windows per nome. In un ambiente multilingue, i gruppi predefiniti sono talvolta noti con nomi localizzati diversi, il che significa che non possono essere recuperati direttamente usando identificatori di stringa, ad esempio "WinNT://Microsoft/Administrators". In tal caso, l'utente può eseguire l'associazione all'oggetto SID noto per il gruppo, recuperare il nome del gruppo localizzato e fornire tale nome al metodo GetObject. Per altre informazioni, vedere [SID noti.](/windows/desktop/SecAuthZ/well-known-sids)
+Negli esempi seguenti viene illustrato come recuperare informazioni sui gruppi Windows oggetti in base al nome. In un ambiente multilingue, i gruppi predefiniti sono talvolta noti con nomi localizzati diversi, il che significa che non possono essere recuperati direttamente usando identificatori di stringa, ad esempio "WinNT://Microsoft/Administrators". In tal caso, l'utente può eseguire l'associazione all'oggetto SID noto per il gruppo, recuperare il nome del gruppo localizzato e fornire tale nome al metodo GetObject. Per altre informazioni, vedere [SID noti.](/windows/desktop/SecAuthZ/well-known-sids)
 
 ## <a name="examples"></a>Esempio
 
-Nell'Visual Basic seguente viene illustrato come eseguire l'associazione a un oggetto gruppo e visualizzare la descrizione del gruppo.
+Nell'esempio Visual Basic seguente viene illustrato come eseguire l'associazione a un oggetto gruppo e visualizzare la descrizione del gruppo.
 
 
 ```VB
@@ -128,7 +128,7 @@ Cleanup:
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IADsGroup IID è definito come \_ 27636B00-410F-11CF-B1FF-02608C9E7553<br/>            |
+| IID<br/>                      | IID \_ IADsGroup è definito come 27636B00-410F-11CF-B1FF-02608C9E7553<br/>            |
 
 
 

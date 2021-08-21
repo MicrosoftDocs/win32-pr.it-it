@@ -1,7 +1,7 @@
 ---
-description: La \_ variabile membro pAlloc m è un puntatore all'interfaccia IMemAllocator dell'allocatore di memoria.
+description: La variabile \_ membro m pAlloc è un puntatore all'interfaccia IMemAllocator dell'allocatore di memoria.
 ms.assetid: a3be5982-83f0-4552-9bcd-85da4a4918ff
-title: 'Membro CPullPin:: m_pAlloc (Pullpin. h)'
+title: Membro CPullPin::m_pAlloc (Pullpin.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e9945bd7b5f3c5b54f0ef578c2b012d0e56935d2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 76abcdadf24006d545a8e8cf51205a99656a634094487104b9bad5d9b553c33c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073455"
 ---
-# <a name="cpullpinm_palloc-member"></a>Membro pAlloc di CPullPin:: m \_
+# <a name="cpullpinm_palloc-member"></a>Membro CPullPin::m \_ pAlloc
 
 La `m_pAlloc` variabile membro è un puntatore all'interfaccia [**IMemAllocator**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) dell'allocatore di memoria.
 
@@ -38,7 +38,7 @@ IMemAllocator *m_pAlloc;
 
 ## <a name="remarks"></a>Osservazioni
 
-Il metodo [**CPullPin::D ecideallocator**](cpullpin-decideallocator.md) imposta questa variabile membro.
+Il [**metodo CPullPin::D ecideAllocator**](cpullpin-decideallocator.md) imposta questa variabile membro.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Il metodo [**CPullPin::D ecideallocator**](cpullpin-decideallocator.md) imposta 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Pullpin. h</dt> </dl>                                                                                                       |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Pullpin.h</dt> </dl>                                                                                                       |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

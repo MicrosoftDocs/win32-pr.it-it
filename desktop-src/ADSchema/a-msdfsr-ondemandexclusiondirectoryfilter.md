@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DFSR-OnDemandExclusionDirectoryFilter
+title: Attributo ms-DFSR-OnDemandExclusionDirectoryFilter
 description: Stringa di filtro applicata alle directory di replica su richiesta.
 ms.assetid: 87875533-8335-42fb-85d7-4e7efa6fb759
 ms.tgt_platform: multiple
 keywords:
-- attributo ms-DFSR-OnDemandExclusionDirectoryFilter-schema AD
-- msDFSR-schema AD attributo OnDemandExclusionDirectoryFilter
+- Schema AD dell'attributo ms-DFSR-OnDemandExclusionDirectoryFilter
+- Schema AD dell'attributo msDFSR-OnDemandExclusionDirectoryFilter
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac6da8cff9dedf0baaa9557cb261e00714f71e1b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8b3910d3ec53f4780fb8c49fc2a73b9fce6c66995448a59f6cb632384f028180
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104520222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119298741"
 ---
-# <a name="ms-dfsr-ondemandexclusiondirectoryfilter-attribute"></a>attributo ms-DFSR-OnDemandExclusionDirectoryFilter
+# <a name="ms-dfsr-ondemandexclusiondirectoryfilter-attribute"></a>Attributo ms-DFSR-OnDemandExclusionDirectoryFilter
 
 Stringa di filtro applicata alle directory di replica su richiesta.
 
@@ -29,13 +29,13 @@ Stringa di filtro applicata alle directory di replica su richiesta.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-DFSR-OnDemandExclusionDirectoryFilter    |
-| LDAP-Display-Name | msDFSR-OnDemandExclusionDirectoryFilter     |
+| CN                | ms-DFSR-OnDemandExclusionDirectoryFilter    |
+| Ldap-Display-Name | msDFSR-OnDemandExclusionDirectoryFilter     |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.36                  |
-| System-ID-GUID    | 7d523aff-9012-49b2-9925-f922a0018656        |
+| System-Id-Guid    | 7d523aff-9012-49b2-9925-f922a0018656        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,15 +55,15 @@ Stringa di filtro applicata alle directory di replica su richiesta.
 | ID collegamento                | \-                                                                                                                                                                                                     |
 | MAPI-Id                | \-                                                                                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                                                                                  |
-| È a valore singolo       | Vero                                                                                                                                                                                                   |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                                                                                                  |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                           |
 | Range-Lower            | 0                                                                                                                                                                                                      |
 | Range-Upper            | 32767                                                                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                                                                             |
 | System-Flags           | 0x00000000                                                                                                                                                                                             |
-| Classi utilizzate in        | [**MS-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> [**MS-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> [**MS-DFSR-Contentt**](c-msdfsr-contentset.md)<br/> |
+| Classi usate in        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> [**ms-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Stringa di filtro applicata alle directory di replica su richiesta.
 | ID collegamento                | \-                                                                                                                                                                                                     |
 | MAPI-Id                | \-                                                                                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                                                                                  |
-| È a valore singolo       | Vero                                                                                                                                                                                                   |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                                                                                                  |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                           |
 | Range-Lower            | 0                                                                                                                                                                                                      |
 | Range-Upper            | 32767                                                                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                                                                             |
 | System-Flags           | 0x00000000                                                                                                                                                                                             |
-| Classi utilizzate in        | [**MS-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> [**MS-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> [**MS-DFSR-Contentt**](c-msdfsr-contentset.md)<br/> |
+| Classi usate in        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> [**ms-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Stringa di filtro applicata alle directory di replica su richiesta.
 | ID collegamento                | \-                                                                                                                                                                                                     |
 | MAPI-Id                | \-                                                                                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                                                                                  |
-| È a valore singolo       | Vero                                                                                                                                                                                                   |
+| Is-Single-Valued       | Vero                                                                                                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                                                                                                  |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                           |
 | Range-Lower            | 0                                                                                                                                                                                                      |
 | Range-Upper            | 32767                                                                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                                                                             |
 | System-Flags           | 0x00000000                                                                                                                                                                                             |
-| Classi utilizzate in        | [**MS-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> [**MS-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> [**MS-DFSR-Contentt**](c-msdfsr-contentset.md)<br/> |
+| Classi usate in        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> [**ms-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 

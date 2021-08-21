@@ -1,7 +1,7 @@
 ---
-description: Recupera un valore che indica se IInkAnalyzer esegue l'analisi dell'input penna.
+description: Recupera un valore che indica se IInkAnalyzer sta eseguendo l'analisi dell'input penna.
 ms.assetid: 3f3f6f29-0c90-47e1-938c-f1ce6ed8df47
-title: 'Metodo IInkAnalyzer:: overanalyzing (IACom. h)'
+title: Metodo IInkAnalyzer::IsAnalyzing (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 94275d157b2936b7ad0ae16d4d70b62475f19af9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1dc0a10bfcafb5972413eb1d1d0880a63db69498c38481cc0cbf6bb58e5f69f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119092051"
 ---
-# <a name="iinkanalyzerisanalyzing-method"></a>Metodo IInkAnalyzer:: overanalyzing
+# <a name="iinkanalyzerisanalyzing-method"></a>Metodo IInkAnalyzer::IsAnalyzing
 
-Recupera un valore che indica se [**IInkAnalyzer**](iinkanalyzer.md) esegue l'analisi dell'input penna.
+Recupera un valore che indica se [**IInkAnalyzer**](iinkanalyzer.md) sta eseguendo l'analisi dell'input penna.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,27 +39,27 @@ HRESULT IsAnalyzing(
 
 <dl> <dt>
 
-*pbAnalyzing* \[ out\]
+*pbAnalyzing* \[ Cambio\]
 </dt> <dd>
 
-**Variante \_ TRUE** se [**IInkAnalyzer**](iinkanalyzer.md) esegue l'analisi dell'input penna; in caso contrario, **Variant \_ false**.
+**VARIANT \_ TRUE** se [**IInkAnalyzer esegue**](iinkanalyzer.md) l'analisi input penna. in caso contrario, **VARIANT \_ FALSE.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è una **variante \_ true** se [**IInkAnalyzer**](iinkanalyzer.md) esegue l'analisi sincrona o asincrona.
+Questa proprietà è **VARIANT \_ TRUE** se [**IInkAnalyzer**](iinkanalyzer.md) esegue un'analisi sincrona o asincrona.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato un metodo che esamina l'albero dei risultati [**IContextNode**](icontextnode.md) dell'analizzatore di input penna. Se l'analizzatore di input penna non sta attualmente eseguendo l'analisi dell'input penna, il metodo esegue le operazioni seguenti.
+L'esempio seguente illustra un metodo che illustra l'albero dei risultati [**IContextNode**](icontextnode.md) dell'analizzatore input penna. Se l'analizzatore input penna non sta attualmente eseguendo l'analisi dell'input penna, il metodo esegue le operazioni seguenti.
 
 -   Ottiene la stringa di riconoscimento superiore.
--   Ottiene il nodo radice dell'analizzatore di input penna.
+-   Ottiene il nodo radice dell'analizzatore input penna.
 -   Chiama un metodo helper, `ExploreContextNode` , per esaminare il nodo radice e i relativi nodi figlio.
 
 
@@ -122,9 +122,9 @@ HRESULT CMyClass::ExploreAnalysisResults(
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -136,13 +136,13 @@ HRESULT CMyClass::ExploreAnalysisResults(
 [**IInkAnalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: Analyze**](iinkanalyzer-analyze.md)
+[**Metodo IInkAnalyzer::Analyze**](iinkanalyzer-analyze.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md)
+[**Metodo IInkAnalyzer::BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

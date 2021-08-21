@@ -1,19 +1,19 @@
 ---
-description: Questo valore stringa facoltativo consente di eseguire l'override dell'ordinamento standard di System. Music. Artist. questo è molto importante per l'ordinamento corretto dei file musicali in giapponese, che non è in grado di ordinare in modo errato foneticamente (l'ordine previsto dall'utente) senza questo campo. Può inoltre essere utilizzato per personalizzare l'ordinamento in scenari asiatici non orientali, ad esempio per consentire all'utente di rimuovere articoli a scopo di ordinamento.
+description: Questo valore stringa facoltativo consente di eseguire l'override dell'ordinamento standard di System. Musica. Artista. Questo è molto importante per l'ordinamento corretto dei file musicali in giapponese che non possono essere ordinati in modo fonetico in modo corretto (l'ordinamento previsto dall'utente) senza questo campo. Può essere usato anche per personalizzare l'ordinamento in scenari non dell'Asia orientale, ad esempio per consentire all'utente di rimuovere articoli a scopo di ordinamento.
 ms.assetid: acdeff02-6e0d-4308-a81e-de45487d6517
-title: System. Music. ArtistSortOverride
+title: Sistema. Musica. ArtistSortOverride
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72e719cdc12073474779f984cce8d50c84bd4b9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd5d0ee3d9e02746105bb7a733f2532a03d6173c26f88fa4223c7b6509627377
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010311"
 ---
-# <a name="systemmusicartistsortoverride"></a>System. Music. ArtistSortOverride
+# <a name="systemmusicartistsortoverride"></a>Sistema. Musica. ArtistSortOverride
 
-Questo valore stringa facoltativo consente di eseguire l'override dell'ordinamento standard di System. Music. Artist. questo è molto importante per l'ordinamento corretto dei file musicali in giapponese, che non è in grado di ordinare in modo errato foneticamente (l'ordine previsto dall'utente) senza questo campo. Può inoltre essere utilizzato per personalizzare l'ordinamento in scenari asiatici non orientali, ad esempio per consentire all'utente di rimuovere articoli a scopo di ordinamento.
+Questo valore stringa facoltativo consente di eseguire l'override dell'ordinamento standard di System. Musica. Artista. Questo è molto importante per l'ordinamento corretto dei file musicali in giapponese che non possono essere ordinati in modo fonetico in modo corretto (l'ordinamento previsto dall'utente) senza questo campo. Può essere usato anche per personalizzare l'ordinamento in scenari non dell'Asia orientale, ad esempio per consentire all'utente di rimuovere articoli a scopo di ordinamento.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8
 
@@ -32,13 +32,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,13 +62,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

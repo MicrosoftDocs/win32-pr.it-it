@@ -1,7 +1,7 @@
 ---
-description: Descrive le funzionalità del VirtualEthernetSwitchManagementService MSVM associato \_ .
+description: Descrive le funzionalità dell'oggetto Msvm \_ VirtualEthernetSwitchManagementService associato.
 ms.assetid: daed7a02-bae8-4bda-abc6-0657df7dc4f8
-title: Classe Msvm_VirtualEthernetSwitchManagementCapabilities
+title: Msvm_VirtualEthernetSwitchManagementCapabilities classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -27,18 +27,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d66d73773b956ecbbbf4ca102b18bb6f8ece4190
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec672403171407d0e6d8d29ff8a5605c2d460ea855aef2230d0f9ed0285cecc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148104"
 ---
-# <a name="msvm_virtualethernetswitchmanagementcapabilities-class"></a>\_Classe MSVM VirtualEthernetSwitchManagementCapabilities
+# <a name="msvm_virtualethernetswitchmanagementcapabilities-class"></a>Classe Msvm \_ VirtualEthernetSwitchManagementCapabilities
 
-Descrive le funzionalità del [**\_ VirtualEthernetSwitchManagementService MSVM**](msvm-virtualethernetswitchmanagementservice.md)associato.
+Descrive le funzionalità dell'oggetto [**Msvm \_ VirtualEthernetSwitchManagementService associato.**](msvm-virtualethernetswitchmanagementservice.md)
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -65,29 +65,29 @@ class Msvm_VirtualEthernetSwitchManagementCapabilities : CIM_VirtualSystemManage
 
 ## <a name="members"></a>Members
 
-La **classe \_ VirtualEthernetSwitchManagementCapabilities di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ VirtualEthernetSwitchManagementCapabilities** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ VirtualEthernetSwitchManagementCapabilities di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ VirtualEthernetSwitchManagementCapabilities** ha queste proprietà.
 
 <dl> <dt>
 
 **AsynchronousMethodsSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ VirtualSystemManagementCapabilities. AsynchronousMethodsSupported")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ VirtualSystemManagementCapabilities.AsynchronousMethodsSupported")
 </dt> </dl>
 
-Matrice di identificatori di metodi, ognuno dei quali identifica un metodo della classe [**\_ VirtualEthernetSwitchManagementService MSVM**](msvm-virtualethernetswitchmanagementservice.md) supportata in modo asincrono dall'implementazione. Questa proprietà viene ereditata da **CIM \_ VirtualSystemManagementCapabilities**.
+Matrice di identificatori di metodo, ognuno dei quali identifica un metodo della classe [**Msvm \_ VirtualEthernetSwitchManagementService**](msvm-virtualethernetswitchmanagementservice.md) supportato in modo asincrono dall'implementazione. Questa proprietà viene ereditata da **CIM \_ VirtualSystemManagementCapabilities.**
 
 <dt>
 
@@ -201,88 +201,88 @@ Matrice di identificatori di metodi, ognuno dei quali identifica un metodo della
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ Managed**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Hyper-V Virtual Ethernet Switch Management Service Capabilities".
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Hyper-V Virtual Ethernet Switch Management Service Capabilities".
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ Managed**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "definisce le funzionalità del servizio di gestione del comcambio Ethernet virtuale".
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Defines Virtual Ethernet Switch Management Service Capabilities".
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ Managed**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Hyper-V Virtual Ethernet Switch Management Service Capabilities".
+Nome visualizzato per l'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Hyper-V Virtual Ethernet Switch Management Service Capabilities".
 
 </dd> <dt>
 
 **ElementNameEditSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la proprietà **ElementName** può essere modificata. Questa proprietà viene ereditata da **CIM \_ EnabledLogicalElementCapabilities**.
+Indica se la **proprietà ElementName** può essere modificata. Questa proprietà viene ereditata da **CIM \_ EnabledLogicalElementCapabilities.**
 
 </dd> <dt>
 
 **ElementNameMask**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica le restrizioni per **ElementName**, espresse come espressione regolare. Questa proprietà viene ereditata da **CIM \_ EnabledLogicalElementCapabilities**.
+Specifica le restrizioni per **ElementName,** espresse come espressione regolare. Questa proprietà viene ereditata da **CIM \_ EnabledLogicalElementCapabilities.**
 
 </dd> <dt>
 
 **IndicationsSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di identificatori di indicazione, ciascuno dei quali identifica un'indicazione supportata dall'implementazione. Questa proprietà viene ereditata da **CIM \_ VirtualSystemManagementCapabilities**.
+Matrice di identificatori di indicazione, ognuno dei quali identifica un'indicazione supportata dall'implementazione di . Questa proprietà viene ereditata da **CIM \_ VirtualSystemManagementCapabilities.**
 
 
 
 | Valore                                                                                                                                                                                                                                                                                                                                                                                   | Significato                                                                                                                                                                                               |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="VirtualResourceStateChangeIndicationsSupported"></span><span id="virtualresourcestatechangeindicationssupported"></span><span id="VIRTUALRESOURCESTATECHANGEINDICATIONSSUPPORTED"></span><dl> <dt>**VirtualResourceStateChangeIndicationsSupported**</dt> <dt>2</dt> </dl> | Indica se l'implementazione supporta la notifica sulle modifiche di stato delle istanze [**\_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) che rappresentano le risorse dei sistemi virtuali.<br/> |
-| <span id="ConcreteJobStateChangeIndicationsSupported"></span><span id="concretejobstatechangeindicationssupported"></span><span id="CONCRETEJOBSTATECHANGEINDICATIONSSUPPORTED"></span><dl> <dt>**ConcreteJobStateChangeIndicationsSupported**</dt> <dt>3</dt> </dl>                 | Indica se l'implementazione supporta la notifica sulle modifiche dello stato delle istanze di [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)) .<br/>                                                      |
-| <span id="VirtualSystemStateChangeIndicationsSupported"></span><span id="virtualsystemstatechangeindicationssupported"></span><span id="VIRTUALSYSTEMSTATECHANGEINDICATIONSSUPPORTED"></span><dl> <dt>**VirtualSystemStateChangeIndicationsSupported**</dt> <dt>4</dt> </dl>         | Indica se l'implementazione supporta la notifica sulle modifiche di stato delle istanze [**\_ ComputerSystem CIM**](/windows/desktop/CIMWin32Prov/cim-computersystem) che rappresentano i sistemi virtuali.<br/>            |
-| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF riservato**</dt> <dt>..</dt> </dl>                                                                                                                                    |                                                                                                                                                                                                       |
-| <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span><dl> 32767 <dt> **riservato al fornitore**</dt> <dt>.. 65535</dt> </dl>                                                                                                             |                                                                                                                                                                                                       |
+| <span id="VirtualResourceStateChangeIndicationsSupported"></span><span id="virtualresourcestatechangeindicationssupported"></span><span id="VIRTUALRESOURCESTATECHANGEINDICATIONSSUPPORTED"></span><dl> <dt>**VirtualResourceStateChangeIndicationsSupported**</dt> <dt>2</dt> </dl> | Indica se l'implementazione supporta la notifica delle modifiche di stato delle [**istanze \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) che rappresentano le risorse dei sistemi virtuali.<br/> |
+| <span id="ConcreteJobStateChangeIndicationsSupported"></span><span id="concretejobstatechangeindicationssupported"></span><span id="CONCRETEJOBSTATECHANGEINDICATIONSSUPPORTED"></span><dl> <dt>**ConcreteJobStateChangeIndicationsSupported**</dt> <dt>3</dt> </dl>                 | Indica se l'implementazione supporta la notifica delle modifiche di stato delle [**istanze \_ CiM ConcreteJob.**](/previous-versions//cc136808(v=vs.85))<br/>                                                      |
+| <span id="VirtualSystemStateChangeIndicationsSupported"></span><span id="virtualsystemstatechangeindicationssupported"></span><span id="VIRTUALSYSTEMSTATECHANGEINDICATIONSSUPPORTED"></span><dl> <dt>**VirtualSystemStateChangeIndicationsSupported**</dt> <dt>4</dt> </dl>         | Indica se l'implementazione supporta la notifica delle modifiche di stato delle [**istanze \_ ComputerSystem CIM**](/windows/desktop/CIMWin32Prov/cim-computersystem) che rappresentano sistemi virtuali.<br/>            |
+| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DmTF Reserved**</dt> <dt>.</dt> </dl>                                                                                                                                    |                                                                                                                                                                                                       |
+| <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span><dl> <dt> **Vendor Reserved**</dt> <dt>32767..65535</dt> </dl>                                                                                                             |                                                                                                                                                                                                       |
 
 
 
@@ -293,42 +293,42 @@ Matrice di identificatori di indicazione, ciascuno dei quali identifica un'indic
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **IOVSupport**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore booleano che indica se la virtualizzazione di I/O (IOV) è supportata dalla piattaforma. Se il valore è **true**, IOV è supportato dalla piattaforma e **IOVSupportReasons** sarà vuoto. In caso contrario, la proprietà **IOVSupportReasons** avrà i motivi per cui non è possibile supportare IOV.
+Valore booleano che indica se I/O Virtualization (IOV) è supportato dalla piattaforma. Se il valore è **True,** IOV è supportato dalla piattaforma e **IOVSupportReasons** sarà vuoto. In caso **contrario, la proprietà IOVSupportReasons** avrà i motivi per cui IOV non può essere supportato.
 
 </dd> <dt>
 
 **IOVSupportReasons**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di stringhe che indica i possibili motivi per cui IOV non è supportato. Se il valore di **IOVSupport** è **true**, questa matrice sarà vuota.
+Matrice di stringhe che indica i possibili motivi per cui IOV non è supportato. Se il valore di **IOVSupport** **è True,** questa matrice sarà vuota.
 
 </dd> <dt>
 
@@ -344,33 +344,33 @@ Tipo di accesso: sola lettura
 Qualificatori: **MaxValue** (256)
 </dt> </dl>
 
-Specifica la lunghezza massima supportata della proprietà **ElementName** . Questa proprietà viene ereditata da **CIM \_ EnabledLogicalElementCapabilities**.
+Specifica la lunghezza massima supportata della **proprietà ElementName.** Questa proprietà viene ereditata da **CIM \_ EnabledLogicalElementCapabilities.**
 
 </dd> <dt>
 
 **RequestedStatesSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **unit16**
+Tipo di dati: **matrice unit16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica gli stati possibili che è possibile richiedere quando si utilizza il metodo **RequestStateChange** sull'elemento logico Enabled. Questa proprietà viene ereditata da **CIM \_ EnabledLogicalElementCapabilities** ed è sempre **null**.
+Indica i possibili stati che possono essere richiesti quando si usa il **metodo RequestStateChange** sull'elemento logico abilitato. Questa proprietà viene ereditata da **CIM \_ EnabledLogicalElementCapabilities** ed è sempre **Null.**
 
 </dd> <dt>
 
 **SynchronousMethodsSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di identificatori di metodi, ognuno dei quali identifica un metodo della classe [**\_ VirtualEthernetSwitchManagementService MSVM**](msvm-virtualethernetswitchmanagementservice.md) supportata in modo sincrono dall'implementazione di. Questa proprietà viene ereditata da **CIM \_ VirtualSystemManagementCapabilities**.
+Matrice di identificatori di metodo, ognuno dei quali identifica un metodo della classe [**Msvm \_ VirtualEthernetSwitchManagementService**](msvm-virtualethernetswitchmanagementservice.md) supportato in modo sincrono dall'implementazione. Questa proprietà viene ereditata da **CIM \_ VirtualSystemManagementCapabilities.**
 
 <dl> <dt>
 
@@ -415,13 +415,13 @@ Matrice di identificatori di metodi, ognuno dei quali identifica un metodo della
 **VirtualSystemTypesSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di stringhe, ognuna delle quali designa un tipo di sistema virtuale supportato dall'implementazione di. Il valore di ogni elemento di matrice non **null** deve essere conforme al formato definito per la proprietà **VirtualSystemType** della [**classe \_ VirtualSystemSettingData di MSVM**](msvm-virtualsystemsettingdata.md) . Questa proprietà viene ereditata da **CIM \_ VirtualSystemManagementCapabilities**.
+Matrice di stringhe, ognuna delle quali designa un tipo di sistema virtuale supportato dall'implementazione. Il valore di ogni elemento della matrice non **Null** deve essere conforme al formato definito per la proprietà **VirtualSystemType** della [**classe Msvm \_ VirtualSystemSettingData.**](msvm-virtualsystemsettingdata.md) Questa proprietà viene ereditata da **CIM \_ VirtualSystemManagementCapabilities.**
 
 </dd> </dl>
 
@@ -431,10 +431,10 @@ Matrice di stringhe, ognuna delle quali designa un tipo di sistema virtuale supp
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

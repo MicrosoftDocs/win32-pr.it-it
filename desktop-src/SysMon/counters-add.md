@@ -1,10 +1,10 @@
 ---
 title: Metodo Counters.Add
-description: Aggiunge un'istanza CounterItem all'insieme.
+description: Aggiunge un'istanza CounterItem alla raccolta.
 ms.assetid: 9daecfe6-c2a9-48af-8b59-4f81f0325535
 keywords:
-- Aggiungere il metodo SysMon
-- Aggiungere il metodo SysMon , classe Counters
+- Metodo Add SysMon
+- Metodo Add SysMon , classe Counters
 - Classe Counters SysMon , metodo Add
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a36d2b9bdc2edc9565b1eac5ebae335e5fbad80752f572c48c0f1b05c9668de1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a8d8169980de00338c7fdd0b804013f986a5a7ca
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118883399"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466008"
 ---
 # <a name="countersadd-method"></a>Metodo Counters.Add
 
-Aggiunge [**un'istanza CounterItem**](counteritem.md) all'insieme.
+Aggiunge [**un'istanza CounterItem**](counteritem.md) alla raccolta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,9 +45,9 @@ Counters.Add( _
 *pathname* \[ Pollici\]
 </dt> <dd>
 
-Percorso del contatore. Il percorso può includere un nome di computer e deve includere un nome di oggetto prestazioni, un nome di istanza dell'oggetto se l'oggetto prestazioni specificato supporta più istanze e un nome di contatore. Questa specifica di percorso non fa distinzione tra maiuscole e minuscole.
+Percorso del contatore. Il percorso può includere un nome di computer e deve includere un nome di oggetto prestazioni, un nome di istanza dell'oggetto se l'oggetto prestazioni specificato supporta più istanze e un nome di contatore. Questa specifica del percorso non fa distinzione tra maiuscole e minuscole.
 
-Per informazioni dettagliate sulla specifica di un percorso del contatore, vedere [Specifica di un percorso del contatore.](/windows/desktop/PerfCtrs/specifying-a-counter-path)
+Per informazioni dettagliate sulla specifica di un percorso del contatore, vedere [Specifica di un percorso contatore](/windows/desktop/PerfCtrs/specifying-a-counter-path).
 
 </dd> </dl>
 
@@ -55,28 +55,11 @@ Per informazioni dettagliate sulla specifica di un percorso del contatore, veder
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Tipo di eccezione</th>
-<th>Condizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>System.Runtime.InteropServices.COMException</strong></td>
-<td>È possibile ricevere questa eccezione per uno dei motivi seguenti:
-<ul>
-<li>L'oggetto prestazioni specificato non è stato trovato nel computer. Il valore Err.Number è 0xC0000BB8.</li>
-<li>Impossibile trovare il contatore specificato. Il valore Err.Number è 0xC0000BB9.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Tipo di eccezione | Condizione | 
+|----------------|-----------|
+| <strong>System.Runtime.InteropServices.COMException</strong> | È possibile ricevere questa eccezione per uno dei motivi seguenti:<ul><li>L'oggetto prestazioni specificato non è stato trovato nel computer. Il valore Err.Number è 0xC0000BB8.</li><li>Impossibile trovare il contatore specificato. Il valore Err.Number è 0xC0000BB9.</li></ul> | 
+
 
 
 
@@ -84,7 +67,7 @@ Per informazioni dettagliate sulla specifica di un percorso del contatore, veder
 
 ## <a name="remarks"></a>Commenti
 
-Se si specifica un contatore con caratteri jolly nel *parametro pathname,* il **metodo Add** crea un oggetto [**CounterItem**](counteritem.md) per ogni percorso espanso. Il **metodo Add** restituisce quindi un puntatore al primo oggetto **CounterItem aggiunto.**
+Se si specifica un contatore con caratteri jolly nel *parametro pathname,* il **metodo Add** crea un [**oggetto CounterItem**](counteritem.md) per ogni percorso espanso. Il **metodo Add** restituisce quindi un puntatore al primo oggetto **CounterItem aggiunto.**
 
 Se il carattere jolly comporta un contatore duplicato, l'errore non viene segnalato e non viene creato alcun duplicato. Se si verifica una condizione di errore prima della creazione di tutti i contatori, l'errore viene segnalato e i contatori rimanenti non vengono creati.
 
@@ -96,7 +79,7 @@ Per ricevere una notifica quando viene aggiunto un contatore, implementare [l'ev
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                            |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                  |

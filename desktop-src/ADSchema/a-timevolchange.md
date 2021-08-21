@@ -32,7 +32,7 @@ Questo attributo indica l'ultima modifica di un file nel volume di archiviazione
 | CN                | Modifica del tempo                      |
 | Ldap-Display-Name | timeVolChange                        |
 | Dimensione              | \-                                   |
-| Aggiorna privilegio  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.502               |
 | System-Id-Guid    | ddac0cf0-af8f-11d0-afeb-00c04fd930c9 |
@@ -58,7 +58,7 @@ Questo attributo indica l'ultima modifica di un file nel volume di archiviazione
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| A valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
@@ -79,7 +79,7 @@ Questo attributo indica l'ultima modifica di un file nel volume di archiviazione
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| A valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
@@ -100,7 +100,7 @@ Questo attributo indica l'ultima modifica di un file nel volume di archiviazione
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| A valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |

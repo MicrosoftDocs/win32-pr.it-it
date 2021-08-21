@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 6e02d655-f7d8-460a-97d2-5b369493e941
-ms.openlocfilehash: 5e7b1f0142ea77967af15087131d3036aaec505e
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 7cd13fe534f3bb121a4056f67ceff47ddfa71fa5506c2020a243ab340768ce35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032659"
 ---
 # <a name="fmextensionproc-callback-function"></a>Funzione di callback FMExtensionProc
 
@@ -106,12 +106,12 @@ L'utente ha selezionato il menu dell'estensione. L'estensione deve inizializzare
 
 <span id="FMEVENT_LOAD"></span><span id="fmevent_load"></span>
 
-<span id="FMEVENT_LOAD"></span><span id="fmevent_load"></span>**FMEVENT \_ LOAD**
+<span id="FMEVENT_LOAD"></span><span id="fmevent_load"></span>**CARICAMENTO \_ FMEVENT**
 
 
 </dt> <dd>
 
-Gestione file carica la DLL di estensione e richiede informazioni sul menu fornito dalla DLL.
+File Manager sta caricando la DLL di estensione e richiede informazioni sul menu fornito dalla DLL.
 
 </dd> <dt>
 
@@ -128,12 +128,12 @@ La selezione nella **finestra directory di File Manager** o nella finestra **Ris
 
 <span id="FMEVENT_TOOLBARLOAD"></span><span id="fmevent_toolbarload"></span>
 
-<span id="FMEVENT_TOOLBARLOAD"></span><span id="fmevent_toolbarload"></span>**FMEVENT \_ TOOLBARLOAD**
+<span id="FMEVENT_TOOLBARLOAD"></span><span id="fmevent_toolbarload"></span>**BARRA DEGLI STRUMENTI \_ FMEVENTLOAD**
 
 
 </dt> <dd>
 
-Gestione file crea la barra degli strumenti e richiede alla DLL di estensione informazioni su eventuali pulsanti aggiunti dalla DLL alla barra degli strumenti.
+Gestione file sta creando la barra degli strumenti e richiede alla DLL di estensione informazioni sui pulsanti aggiunti dalla DLL alla barra degli strumenti.
 
 </dd> <dt>
 
@@ -144,18 +144,18 @@ Gestione file crea la barra degli strumenti e richiede alla DLL di estensione in
 
 </dt> <dd>
 
-Gestione file sta scaricando la DLL dell'estensione.
+Gestione file sta scaricando la DLL di estensione.
 
 </dd> <dt>
 
 <span id="FMEVENT_USER_REFRESH"></span><span id="fmevent_user_refresh"></span>
 
-<span id="FMEVENT_USER_REFRESH"></span><span id="fmevent_user_refresh"></span>**FMEVENT \_ USER \_ REFRESH**
+<span id="FMEVENT_USER_REFRESH"></span><span id="fmevent_user_refresh"></span>**AGGIORNAMENTO \_ UTENTE FMEVENT \_**
 
 
 </dt> <dd>
 
-L'utente **ha selezionato** il comando Aggiorna dal menu Finestra.  Se necessario, l'estensione deve aggiornare le voci del menu.
+L'utente **ha selezionato il** comando Aggiorna dal menu Finestra.  Se necessario, l'estensione deve aggiornare le voci del menu.
 
 </dd> </dl> </dd> <dt>
 

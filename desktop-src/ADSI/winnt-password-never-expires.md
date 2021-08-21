@@ -1,33 +1,33 @@
 ---
-title: Nessuna scadenza password (provider WinNT)
-description: Per abilitare questa opzione tramite il provider ADSI di WinNT, impostare il \_ flag ADS UF \_ dont \_ expire \_ (0X10000) nell'attributo UserFlags. Nota per Windows 2000 e versioni successive, usare il provider ADSI LDAP per le operazioni di gestione degli utenti, come illustrato.
+title: La password non scade mai (provider WinNT)
+description: Per abilitare questa opzione usando il provider ADSI WinNT, impostare il flag ADS \_ UF \_ DONT \_ EXPIRE \_ PASSWD (0x10000) sull'attributo UserFlags. Nota Per Windows 2000 e versioni successive, usare il provider ADSI LDAP per le operazioni di gestione degli utenti, come illustrato.
 ms.assetid: 9e38b31c-399b-447f-bceb-36c599b2714e
 ms.tgt_platform: multiple
 keywords:
-- Nessuna scadenza password (provider WinNT)
-- La password non scade mai con ADSI, provider WinNT
-- ADSI provider ADSI, esempi di gestione utenti, nessuna scadenza password
+- La password non scade mai (provider WinNT)
+- La password non scade mai ad ADSI, provider WinNT
+- Provider WinNT ADSI, esempi di gestione utenti, Password mai scaduta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 343871e7ba8748b3e406f7c84a5a34c01a2793a7
-ms.sourcegitcommit: 6515eef99ca0d1bbe3e27d4575e9986f5255f277
+ms.openlocfilehash: b47cdd7dc181c2875e8de06b66233d727c5b132963921b163b02fc09cbdc051d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "106322017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082165"
 ---
-# <a name="password-never-expires-winnt-provider"></a>Nessuna scadenza password (provider WinNT)
+# <a name="password-never-expires-winnt-provider"></a>La password non scade mai (provider WinNT)
 
-Per abilitare questa opzione tramite il provider ADSI di WinNT, impostare il flag **Ads \_ UF \_ dont \_ expire \_** (0x10000) nell'attributo **UserFlags** .
+Per abilitare questa opzione usando il provider ADSI WinNT, impostare il flag **ADS \_ UF \_ DONT \_ EXPIRE \_ PASSWD** (0x10000) sull'attributo **UserFlags.**
 
 > [!Note]  
-> Per Windows 2000 e versioni successive, usare il provider ADSI LDAP per le operazioni di gestione degli utenti, come illustrato. Per ulteriori informazioni, vedere [Nessuna scadenza password (provider LDAP)](password-never-expires.md).
+> Per Windows 2000 e versioni successive, usare il provider ADSI LDAP per le operazioni di gestione degli utenti, come illustrato. Per altre informazioni, vedere [Password Never Expires (LDAP Provider)](password-never-expires.md).
 
  
 
 ## <a name="example-1"></a>Esempio 1
 
-Nell'esempio di codice seguente viene illustrato come impostare l'opzione Nessuna scadenza password utilizzando Visual Basic con ADSI.
+Nell'esempio di codice seguente viene illustrato come impostare l'opzione password never expires usando Visual Basic con ADSI.
 
 
 ```VB
@@ -45,7 +45,7 @@ usr.SetInfo
 
 ## <a name="example-2"></a>Esempio 2
 
-Nell'esempio di codice seguente viene illustrato come impostare l'opzione Nessuna scadenza password utilizzando C++ con ADSI.
+L'esempio di codice seguente illustra come impostare l'opzione password never expires usando C++ con ADSI.
 
 
 ```C++

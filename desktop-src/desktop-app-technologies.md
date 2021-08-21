@@ -1,37 +1,38 @@
 ---
-description: Questo articolo fornisce un indice della documentazione sulle API Win32 disponibili per le funzionalità e le tecnologie di Windows.
+description: Questo articolo fornisce un indice della documentazione sulle API Win32 disponibili per Windows e tecnologie.
 ms.assetid: FF115416-220F-4FCD-8690-F9C0890CD6CC
-title: Tecnologie per app desktop
+title: Tecnologie delle app desktop
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b5b6e077c5f8fde2e723fbf9a971cbe09b8d008
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: fd764c23b38e7239cea1d4d26d018ecbf9711b22
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "106323819"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812212"
 ---
-# <a name="desktop-app-technologies"></a>Tecnologie per app desktop
+# <a name="desktop-app-technologies"></a>Tecnologie delle app desktop
 
-Questa sezione fornisce indicazioni dettagliate ed esempi di codice sulle funzionalità di Windows disponibili per le applicazioni desktop tramite l'API Win32.
+Questa sezione fornisce indicazioni dettagliate ed esempi di codice Windows funzionalità disponibili per le applicazioni desktop tramite l'API Win32.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 | Argomento | Descrizione  |  
 |----------------------------------|---|
-| [Accessibilità](accessibility/accessibility.md) | Fornisce indicazioni per gli sviluppatori Windows che progettano applicazioni accessibili, sviluppatori di tecnologie per l'accesso facilitato che compilano strumenti quali utilità per la lettura dello schermo e lente di ingrandimento e ingegneri di test software creazione di script automatizzati |
-| [Interfaccia utente desktop](windows-application-ui-development.md) | Fornisce informazioni che consentono di sviluppare interfacce utente grafiche per le app, incluse funzionalità quali Windows e messaggi, risorse e controlli. |
-| [Ambiente desktop](user-interface.md) | Vengono fornite informazioni aggiuntive per l'integrazione e l'estensione delle funzionalità per utenti desktop di Windows, tra cui la barra delle applicazioni, il desktop e Esplora file. |
-| [Installazione e manutenzione di applicazioni](application-installing-and-servicing.md) | Vengono fornite informazioni sull'utilizzo di API e servizi forniti da Windows per installare, gestire e gestire le applicazioni desktop. |
-| [Audio e video](audio-and-video.md) | Vengono fornite informazioni aggiuntive sull'utilizzo delle funzionalità audio e video fornite da Windows. |
-| [Accesso ai dati e archiviazione](data-access-and-storage.md) | Vengono fornite informazioni sull'accesso ai dati e sulle funzionalità di archiviazione che è possibile utilizzare nelle applicazioni desktop, inclusi file system motori di gestione e di sincronizzazione cloud.  |
-| [Dispositivi](devices.md) | Descrive le API per l'interazione con i dispositivi e i sensori. |
-| [Diagnostica](diagnostics.md) | Vengono fornite informazioni aggiuntive su debug e gestione degli errori, profilatura delle prestazioni, monitoraggio della rete e altre funzionalità di diagnostica. |
-| [Documenti e stampa](printdocs/documents-and-printing.md) | Vengono descritti i documenti e le funzionalità di stampa di Windows che consentono alle applicazioni di salvare, visualizzare e stampare.  |
-| [Grafica e giochi](graphics-and-multimedia.md) | Vengono fornite informazioni sulle funzionalità di grafica e giochi di Windows, tra cui DirectX e Digital Imaging.  |
-| [Rete e Internet](networking.md) | Vengono fornite informazioni aggiuntive sulle funzionalità di rete e relative a Internet di Windows, tra cui la gestione della rete, le API HTTP e RPC (Remote Procedure Call). |
-| [Sicurezza e identità](security.md) | Vengono fornite informazioni su autenticazione, autorizzazione, crittografia e altre funzionalità di sicurezza di Windows. |
-| [Servizi di sistema](system-services.md) | Vengono fornite informazioni aggiuntive sulle principali funzionalità del sistema operativo, ad esempio processi e thread, servizi, librerie a collegamento dinamico, COM, registro di sistema e altro ancora. |
+| [Accessibilità](accessibility/accessibility.md) | Fornisce indicazioni per Windows sviluppatori che progettano applicazioni accessibili, sviluppatori di assistive technology che creano strumenti come utilità per la lettura dello schermo e lente di ingrandimento e tecnici di test software che creano script automatizzati per testare Windows applicazioni. |
+| [Interfaccia utente desktop](windows-application-ui-development.md) | Fornisce informazioni che consentono di sviluppare interfacce utente grafiche per le app, incluse funzionalità quali finestre e messaggi, risorse e controlli. |
+| [Ambiente desktop](user-interface.md) | Fornisce indicazioni per l'integrazione e l'estensione delle funzionalità per l'utente desktop di Windows, tra cui la barra delle applicazioni, il desktop e Esplora file. |
+| [Installazione e manutenzione di applicazioni](application-installing-and-servicing.md) | Fornisce informazioni sull'uso delle API e dei servizi forniti da Windows per installare, gestire e gestire le app desktop. |
+| [Audio e video](audio-and-video.md) | Fornisce indicazioni sull'uso delle funzionalità audio e video fornite da Windows. |
+| [Accesso ai dati e archiviazione](data-access-and-storage.md) | Fornisce informazioni sull'accesso ai dati e sulle funzionalità di archiviazione che è possibile usare nelle applicazioni desktop, tra cui la gestione file system e i motori di sincronizzazione cloud.  |
+| [Dispositivi](devices.md) | Descrive le API per l'interazione con dispositivi e sensori. |
+| [Diagnostica](diagnostics.md) | Vengono fornite indicazioni sul debug e sulla gestione degli errori, sulla profilatura delle prestazioni, sul monitoraggio della rete e su altre funzionalità di diagnostica. |
+| [Documenti e stampa](printdocs/documents-and-printing.md) | Vengono descritti i documenti e le funzionalità di stampa Windows che consentono alle applicazioni di salvare, visualizzare e stampare.  |
+| [Grafica e giochi](graphics-and-multimedia.md) | Fornisce informazioni sulle funzionalità grafiche e di gioco Windows, tra cui DirectX e digital imaging.  |
+| [Rete e Internet](networking.md) | Fornisce indicazioni sulle funzionalità relative alla rete e a Internet di Windows, tra cui la gestione della rete, le API HTTP e RPC (Remote Procedure Call). |
+| [Sicurezza e identità](security.md) | Fornisce informazioni su autenticazione, autorizzazione, crittografia e altre funzionalità di sicurezza Windows. |
+| [Servizi di sistema](system-services.md) | Fornisce indicazioni sulle funzionalità fondamentali del sistema operativo, ad esempio processo e thread, servizi, librerie a collegamento dinamico, COM, registro e altro ancora. |
+| [Intelligenza artificiale e Machine Learning](/windows/ai/) | Trasforma la tua applicazione Windows con la potenza dell'intelligenza artificiale. L'intelligenza artificiale Windows permette a te e al tuo business di ottenere maggiori risultati grazie a soluzioni intelligenti a problemi complessi. |
 
 <!--
 <br/>

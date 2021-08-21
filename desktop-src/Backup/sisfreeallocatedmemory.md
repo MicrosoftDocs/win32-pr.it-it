@@ -1,5 +1,5 @@
 ---
-title: Funzione SisFreeAllocatedMemory (sisbkup. h)
+title: Funzione SisFreeAllocatedMemory (Sisbkup.h)
 description: Libera la memoria allocata dalle funzioni API SIS.
 ms.assetid: 8fab79c8-593c-46df-a885-09a59620a977
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 724970817b89f6a9f2490b0776775f6a3a4e69ca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a4510e464c2201952823d144721614caa7b5f1397c68f4f129dac73a4015b86a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702181"
 ---
-# <a name="sisfreeallocatedmemory-function"></a>SisFreeAllocatedMemory (funzione)
+# <a name="sisfreeallocatedmemory-function"></a>Funzione SisFreeAllocatedMemory
 
-La funzione **SisFreeAllocatedMemory** libera la memoria allocata dalle funzioni API SIS.
+La **funzione SisFreeAllocatedMemory** libera la memoria allocata dalle funzioni API SIS.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ void SisFreeAllocatedMemory(
 
 <dl> <dt>
 
-*allocatedSpace* \[ in\]
+*allocatedSpace* \[ Pollici\]
 </dt> <dd>
 
 Puntatore alla memoria allocata dall'API SIS.
@@ -55,7 +55,7 @@ Questa funzione non restituisce un valore.
 
 Al termine della chiamata a questa funzione, il chiamante potrebbe non accedere più alla memoria liberata.
 
-Questa chiamata deve essere utilizzata per deallocare la memoria allocata per le stringhe di parametri *commonStoreRootPathname* restituite da [**SisCreateBackupStructure**](siscreatebackupstructure.md) e [**SisCreateRestoreStructure**](siscreaterestorestructure.md)e la matrice di stringhe contenente i nomi di file di archivio comuni restituiti da **SisCreateBackupStructure**, [**SisCSFilesToBackupForLink**](siscsfilestobackupforlink.md), **SisCreateRestoreStructure** e [**SisRestoredLink**](sisrestoredlink.md). Nel secondo caso, la matrice deve anche essere liberata chiamando **SisFreeAllocatedMemory**.
+Questa chiamata deve essere usata per deallocare la memoria allocata per le stringhe di parametro *commonStoreRootPathname* restituite da [**SisCreateBackupStructure**](siscreatebackupstructure.md) e [**SisCreateRestoreStructure**](siscreaterestorestructure.md)e la matrice di stringhe contenenti nomi di file dell'archivio comune restituiti da **SisCreateBackupStructure**, [**SisCSFilesToBackupForLink**](siscsfilestobackupforlink.md), **SisCreateRestoreStructure** e [**SisRestoredLink**](sisrestoredlink.md). Nel secondo caso, anche la matrice stessa deve essere liberata chiamando **SisFreeAllocatedMemory**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,10 +63,10 @@ Questa chiamata deve essere utilizzata per deallocare la memoria allocata per le
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>Sisbkup. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>Sisbkup. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                   |
+| Intestazione<br/>                   | <dl> <dt>Sisbkup.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Sisbkup.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Sisbkup.dll</dt> </dl> |
 
 

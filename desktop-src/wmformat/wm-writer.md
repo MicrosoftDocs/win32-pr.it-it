@@ -1,6 +1,6 @@
 ---
 title: WM/Writer
-description: L'attributo WM/Writer contiene il nome dello scrittore che ha scritto le parole del contenuto.
+description: L'attributo WM/Writer contiene il nome del writer che ha scritto le parole del contenuto.
 ms.assetid: 3450c584-3bd4-4df3-a401-f260f543fb98
 keywords:
 - WM/Writer windows Media Format

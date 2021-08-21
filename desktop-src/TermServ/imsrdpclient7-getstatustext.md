@@ -6,13 +6,13 @@ ms.tgt_platform: multiple
 keywords:
 - Metodo GetStatusText Servizi Desktop remoto
 - Metodo GetStatusText Servizi Desktop remoto, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, metodo GetStatusText
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto metodo , GetStatusText
 - Metodo GetStatusText Servizi Desktop remoto, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, metodo GetStatusText
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto metodo , GetStatusText
 - Metodo GetStatusText Servizi Desktop remoto, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, metodo GetStatusText
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto metodo , GetStatusText
 - Metodo GetStatusText Servizi Desktop remoto, interfaccia IMsRdpClient10
-- Interfaccia IMsRdpClient10 Servizi Desktop remoto, metodo GetStatusText
+- Interfaccia IMsRdpClient10 Servizi Desktop remoto metodo , GetStatusText
 topic_type:
 - apiref
 api_name:
@@ -53,17 +53,17 @@ HRESULT GetStatusText(
 
 <dl> <dt>
 
-*codice di stato* \[ Pollici\]
+*statusCode* \[ Pollici\]
 </dt> <dd>
 
-UINT **che** specifica il codice di stato per il quale recuperare il testo.
+UINT **che** specifica il codice di stato per cui recuperare il testo.
 
 </dd> <dt>
 
 *pBstrStatusText* \[ out, retval\]
 </dt> <dd>
 
-Indirizzo di un **BSTR** che riceve il testo dello stato.
+Indirizzo di un **BSTR che** riceve il testo di stato.
 
 </dd> </dl>
 
@@ -82,7 +82,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 | Intestazione<br/>                   | <dl> <dt>Openservice.h</dt> </dl> |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>   |
-| IID<br/>                      | IID \_ IMsRdpClient7 è definito come b2a5b5ce-3461-444a-91d4-add26d070638<br/>         |
+| IID<br/>                      | IMsRdpClient7 IID è definito come \_ b2a5b5ce-3461-444a-91d4-add26d070638<br/>         |
 
 
 

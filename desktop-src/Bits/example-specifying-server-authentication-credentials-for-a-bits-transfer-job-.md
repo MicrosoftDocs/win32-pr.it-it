@@ -1,27 +1,27 @@
 ---
 title: Specificare le credenziali di autenticazione server per un processo di trasferimento BITS
-description: È possibile specificare schemi di autenticazione diversi per un processo di trasferimento Servizio trasferimento intelligente in background (BITS).
+description: È possibile specificare schemi di autenticazione diversi per un processo di Servizio trasferimento intelligente in background (BITS).
 ms.assetid: 31db38f6-3639-4042-97f2-4f9d78942e15
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c4373cdf0c8b4c8afe7dff367fda9387eec0b54
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 844be330a34eaa5cfbe154fb3e22ec4a62aa807a355f54318fec207959baf5bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119701821"
 ---
 # <a name="specify-server-authentication-credentials-for-a-bits-transfer-job"></a>Specificare le credenziali di autenticazione server per un processo di trasferimento BITS
 
-È possibile specificare schemi di autenticazione diversi per un processo di trasferimento Servizio trasferimento intelligente in background (BITS).
+È possibile specificare schemi di autenticazione diversi per un processo di Servizio trasferimento intelligente in background (BITS).
 
-La procedura seguente consente di ottenere uno schema di autenticazione e di creare una struttura di identità di autenticazione. Quindi, l'applicazione crea un processo di download BITS e imposta le credenziali per il processo. Dopo la creazione del processo, l'applicazione ottiene un puntatore a un'interfaccia di callback e esegue il polling dello stato del processo di trasferimento BITS. Una volta completato il processo, questo viene rimosso dalla coda.
+La procedura seguente ottiene uno schema di autenticazione e crea una struttura di identità di autenticazione. L'applicazione crea quindi un processo di download BITS e imposta le credenziali per il processo. Dopo la creazione del processo, l'applicazione ottiene un puntatore a un'interfaccia di callback ed esegue il polling dello stato del processo di trasferimento BITS. Al termine, il processo viene rimosso dalla coda.
 
-Questo esempio usa l'intestazione e l'implementazione definite in [esempio: classi comuni](common-classes.md).
+Questo esempio usa l'intestazione e l'implementazione definite in [Esempio: classi comuni](common-classes.md).
 
 **Per specificare le credenziali di autenticazione server per un processo di trasferimento BITS**
 
-1.  Creare una struttura di contenitori che esegue il mapping dei valori dello [**\_ \_ schema di autenticazione BG**](/windows/desktop/api/Bits1_5/ne-bits1_5-bg_auth_scheme) ai nomi degli schemi.
+1.  Creare una struttura di contenitori che esegue il mapping [**dei \_ valori AUTH \_ SCHEME BG**](/windows/desktop/api/Bits1_5/ne-bits1_5-bg_auth_scheme) ai nomi di schema.
 
     ```C++
     struct
@@ -43,9 +43,9 @@ Questo esempio usa l'intestazione e l'implementazione definite in [esempio: clas
 
     
 
-2.  Inizializzare i parametri COM chiamando la funzione CCoInitializer. Per ulteriori informazioni sulla funzione CCoInitializer, vedere [example: Common Classes](common-classes.md).
-3.  Preparare una struttura di [**\_ \_ credenziali di autenticazione BG**](/windows/desktop/api/Bits1_5/ns-bits1_5-bg_auth_credentials) . Nell'esempio viene utilizzata la funzione [SecureZeroMemory]( /previous-versions/windows/desktop/legacy/aa366877(v=vs.85)) per cancellare le posizioni di memoria associate alle informazioni riservate. La funzione [SecureZeroMemory]( /previous-versions/windows/desktop/legacy/aa366877(v=vs.85)) è definita in winbase. h.
-4.  Utilizzare la funzione getScheme per ottenere lo schema di autenticazione da utilizzare per la connessione al server.
+2.  Inizializzare i parametri COM chiamando la funzione CCoInitializer. Per altre informazioni sulla funzione CCoInitializer, vedere [Esempio: classi comuni.](common-classes.md)
+3.  Preparare una [**struttura BG \_ AUTH \_ CREDENTIALS.**](/windows/desktop/api/Bits1_5/ns-bits1_5-bg_auth_credentials) Nell'esempio viene [utilizzata la funzione SecureZeroMemory]( /previous-versions/windows/desktop/legacy/aa366877(v=vs.85)) per cancellare le posizioni di memoria associate alle informazioni riservate. La [funzione SecureZeroMemory]( /previous-versions/windows/desktop/legacy/aa366877(v=vs.85)) è definita in WinBase.h.
+4.  Usare la funzione GetScheme per ottenere lo schema di autenticazione da usare per connettersi al server.
 
     ```C++
     bool GetScheme( LPCWSTR s, BG_AUTH_SCHEME *scheme )
@@ -71,22 +71,22 @@ Questo esempio usa l'intestazione e l'implementazione definite in [esempio: clas
 
     
 
-5.  Popolare la struttura delle [**\_ \_ credenziali**](/windows/desktop/api/Bits1_5/ns-bits1_5-bg_auth_credentials) di autenticazione di BG con lo schema di autenticazione restituito dalla funzione getScheme e il nome utente e la password passati nella funzione ServerAuthentication.
-6.  Ottenere un puntatore all'interfaccia [**Metodo ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) (pJob).
-7.  Inizializzare la sicurezza del processo COM chiamando [CoInitializeSecurity](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity). BITS richiede almeno il livello di rappresentazione della rappresentazione. BITS ha esito negativo con E \_ AccessDenied se il livello di rappresentazione corretto non è impostato.
-8.  Ottenere un puntatore all'interfaccia [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) e ottenere il localizzatore iniziale sui bit chiamando la funzione [CoCreateInstance]( /windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) .
-9.  Creare un processo di trasferimento BITS chiamando il metodo [**IBackgroundCopyManager:: CreateJob**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-createjob) .
-10. Ottenere un puntatore all'interfaccia di callback CNotifyInterface e chiamare il metodo [**Metodo ibackgroundcopyjob:: SetNotifyInterface**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyinterface) per ricevere la notifica di eventi correlati al processo. Per ulteriori informazioni su CNotifyInterface, vedere [esempio: classi comuni](common-classes.md).
-11. Chiamare il metodo [**Metodo ibackgroundcopyjob:: SetNotifyFlags**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyflags) per impostare i tipi di notifiche da ricevere. In questo esempio vengono impostati i flag di errore **BG \_ Notify \_ Job \_ trasferiti** e **BG \_ Notify \_ Job \_** .
-12. Ottenere un puntatore all'interfaccia [**IBackgroundCopyJob2**](/windows/desktop/api/Bits1_5/nn-bits1_5-ibackgroundcopyjob2) . Usare il puntatore **IBackgroundCopyJob2** per impostare proprietà aggiuntive nel processo. Questo programma usa il metodo [**IBackgroundCopyJob2:: Secredentials**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-setcredentials) per impostare le credenziali per il processo di trasferimento BITS.
-13. Aggiungere i file al processo di trasferimento BITS chiamando [**Metodo ibackgroundcopyjob:: AddFile**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-addfile). In questo esempio, il metodo **Metodo ibackgroundcopyjob:: AddFile** usa le variabili fileremoto e LocalFile passate nella funzione ServerAuthentication.
-14. Una volta aggiunto il file, chiamare [**Metodo ibackgroundcopyjob:: Resume**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-resume) per riprendere il processo.
-15. Configurare un ciclo while per attendere il messaggio QUIT dall'interfaccia di callback mentre è in corso il trasferimento del processo.
+5.  Popolare la struttura [**BG \_ AUTH \_ CREDENTIALS**](/windows/desktop/api/Bits1_5/ns-bits1_5-bg_auth_credentials) con lo schema di autenticazione restituito dalla funzione GetScheme e il nome utente e la password passati alla funzione ServerAuthentication.
+6.  Ottenere un puntatore [**all'interfaccia IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) (pJob).
+7.  Inizializzare la sicurezza dei processi COM chiamando [CoInitializeSecurity.](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity) BITS richiede almeno il livello IMPERSONATE di rappresentazione. BITS ha esito negativo con E \_ ACCESSDENIED se non è impostato il livello di rappresentazione corretto.
+8.  Ottenere un puntatore [**all'interfaccia IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) e ottenere il localizzatore iniziale per BITS chiamando la [funzione CoCreateInstance.]( /windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)
+9.  Creare un processo di trasferimento BITS chiamando il [**metodo IBackgroundCopyManager::CreateJob.**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-createjob)
+10. Ottenere un puntatore all'interfaccia di callback CNotifyInterface e chiamare il metodo [**IBackgroundCopyJob::SetNotifyInterface**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyinterface) per ricevere la notifica degli eventi correlati al processo. Per altre informazioni su CNotifyInterface, vedere [Esempio: classi comuni.](common-classes.md)
+11. Chiamare il [**metodo IBackgroundCopyJob::SetNotifyFlags**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyflags) per impostare i tipi di notifiche da ricevere. In questo esempio vengono impostati **i flag BG \_ NOTIFY JOB \_ \_ TRANSFERRED** e **BG NOTIFY JOB \_ \_ \_ ERROR.**
+12. Ottenere un puntatore [**all'interfaccia IBackgroundCopyJob2.**](/windows/desktop/api/Bits1_5/nn-bits1_5-ibackgroundcopyjob2) Usare il **puntatore IBackgroundCopyJob2** per impostare proprietà aggiuntive nel processo. Questo programma usa il [**metodo IBackgroundCopyJob2::SetCredentials**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-setcredentials) per impostare le credenziali per il processo di trasferimento BITS.
+13. Aggiungere file al processo di trasferimento BITS chiamando [**IBackgroundCopyJob::AddFile**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-addfile). In questo esempio il **metodo IBackgroundCopyJob::AddFile** usa le variabili remoteFile e localFile passate nella funzione ServerAuthentication.
+14. Dopo aver aggiunto il file, chiamare [**IBackgroundCopyJob::Resume**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-resume) per riprendere il processo.
+15. Configurare un ciclo while per attendere l'uscita del messaggio dall'interfaccia di callback durante il trasferimento del processo.
 
     > [!Note]  
-    > Questo passaggio è necessario solo se l'Apartment COM è un Apartment a thread singolo. Per altre informazioni, vedere [Apartment a thread singolo](../com/single-threaded-apartments.md).
+    > Questo passaggio è necessario solo se l'apartment COM è un apartment a thread singolo. Per altre informazioni, vedere [Apartment a thread singolo.](../com/single-threaded-apartments.md)
 
-     
+     
 
     ```C++
     // Wait for QuitMessage from CallBack
@@ -111,9 +111,9 @@ Questo esempio usa l'intestazione e l'implementazione definite in [esempio: clas
 
     
 
-    Il ciclo precedente usa la funzione [GetTickCount](/windows/win32/api/sysinfoapi/nf-sysinfoapi-gettickcount) per recuperare il numero di millisecondi trascorsi dall'avvio del processo di trasferimento.
+    Il ciclo precedente usa la [funzione GetTickCount](/windows/win32/api/sysinfoapi/nf-sysinfoapi-gettickcount) per recuperare il numero di millisecondi trascorsi dall'avvio del trasferimento del processo.
 
-16. Al termine del processo di trasferimento BITS, rimuovere il processo dalla coda chiamando [**Metodo ibackgroundcopyjob:: complete**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-complete).
+16. Al termine del processo di trasferimento BITS, rimuovere il processo dalla coda chiamando [**IBackgroundCopyJob::Complete**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-complete).
 
 Nell'esempio di codice seguente vengono specificate le credenziali di autenticazione server per un processo di trasferimento BITS.
 
@@ -368,7 +368,7 @@ void _cdecl _tmain(int argc, LPWSTR* argv)
 [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager)
 </dt> <dt>
 
-[**Metodo ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob)
+[**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob)
 </dt> <dt>
 
 [**IBackgroundCopyJob2**](/windows/desktop/api/Bits1_5/nn-bits1_5-ibackgroundcopyjob2)
@@ -377,6 +377,6 @@ void _cdecl _tmain(int argc, LPWSTR* argv)
 [Esempio: classi comuni](common-classes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

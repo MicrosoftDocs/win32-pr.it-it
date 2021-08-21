@@ -1,9 +1,9 @@
 ---
-title: Visualizza. OnClose
-description: Il gestore eventi OnClose gestisce un evento che si verifica quando la visualizzazione sta per essere chiusa.
+title: VIEW.onclose
+description: Il gestore eventi onclose gestisce un evento che si verifica quando l'oggetto VIEW sta per essere chiuso.
 ms.assetid: 25760c01-9e43-4744-8f20-336d8c198eab
 keywords:
-- Visualizza. OnClose Media Player Windows
+- View.onclose Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b3d7cdfd838d1683ba64d89b20da1256062878da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3b801bbddd2c8d3d0fe3e1906ee17c0c5388631c81eb67c94243fe5dc2b60636
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054059"
 ---
-# <a name="viewonclose"></a>Visualizza. OnClose
+# <a name="viewonclose"></a>VIEW.onclose
 
-Il gestore eventi **OnClose** gestisce un evento che si verifica quando la **visualizzazione** sta per essere chiusa.
+Il **gestore eventi onclose** gestisce un evento che si verifica quando **l'oggetto VIEW** sta per essere chiuso.
 
 ``` syntax
 onclose
@@ -34,7 +34,7 @@ onclose
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

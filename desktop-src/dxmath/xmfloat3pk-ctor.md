@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: a4d192a3da7bbcd262eef95bc5ebbd9394ac32eed206636e219b91382ccce305
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9c03d58459f171979d12b0a06e4fd10bb8950a5
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119979031"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465458"
 ---
 # <a name="xmfloat3pk-constructors"></a>Costruttori XMFLOAT3PK
 
@@ -25,7 +25,7 @@ Costruttori esposti da `XMFLOAT3PK` .
 Costruisce istanze della [**struttura XMFLOAT3PK.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk)
 
 > [!Note]  
-> I costruttori elencati qui sono disponibili solo in C++.
+> I costruttori elencati di seguito sono disponibili solo in C++.
 
  
 
@@ -33,56 +33,14 @@ Costruisce istanze della [**struttura XMFLOAT3PK.**](/windows/win32/api/directxp
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Costruttore</th>
-<th style="text-align: left;">Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-xmfloat3pk(constfloat)"><strong>XMFLOAT3PK ()</strong></a></td>
-<td style="text-align: left;">Costruttore predefinito per <code>XMFLOAT3PK</code> .<br/> Costruttore predefinito per <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK.</strong></a><br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-xmfloat3pk(uint32_t)"><strong>XMFLOAT3PK (uint32_t)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMFLOAT3PK</code> da una variabile contenente i dati del componente in formato <code>uint32_t</code> pack.<br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK</strong></a> da una variabile contenente i dati <code>uint32_t</code> del componente in formato packed.<br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-xmfloat3pk(constfloat)"><strong>XMFLOAT3PK (const float*)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMFLOAT3PK</code> un argomento della matrice di tre <code>float</code> elementi.<br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK</strong></a> da un argomento di <code>float</code> matrice a tre elementi.<br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-xmfloat3pk(float_float_float)"><strong>XMFLOAT3PK (float, float, float)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMFLOAT3PK</code> da tre <code>float</code> argomenti.<br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK</strong></a> da tre <code>float</code> argomenti.<br/>
-<blockquote>
-[!Note]<br />
-Questo costruttore è disponibile solo in C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Costruttore | Descrizione | 
+|-------------|-------------|
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-xmfloat3pk(constfloat)"><strong>XMFLOAT3PK ()</strong></a> | Costruttore predefinito per <code>XMFLOAT3PK</code> .<br /> Costruttore predefinito per <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK.</strong></a><br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-xmfloat3pk(uint32_t)"><strong>XMFLOAT3PK (uint32_t)</strong></a> | Inizializza una nuova istanza di da <code>XMFLOAT3PK</code> una variabile contenente i dati del componente in un formato di tipo <code>uint32_t</code> packed.<br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK</strong></a> da una variabile contenente i dati <code>uint32_t</code> dei componenti in un formato di tipo packed.<br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-xmfloat3pk(constfloat)"><strong>XMFLOAT3PK (const float*)</strong></a> | Inizializza una nuova istanza di da <code>XMFLOAT3PK</code> un argomento di matrice di tre <code>float</code> elementi.<br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK</strong></a> da un argomento di matrice di <code>float</code> tre elementi.<br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-xmfloat3pk(float_float_float)"><strong>XMFLOAT3PK (float,float,float)</strong></a> | Inizializza una nuova istanza di <code>XMFLOAT3PK</code> da tre <code>float</code> argomenti.<br /> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK</strong></a> da tre <code>float</code> argomenti.<br /><blockquote>[!Note]<br />Questo costruttore è disponibile solo in C++.</blockquote><br /> | 
+
 
 
 

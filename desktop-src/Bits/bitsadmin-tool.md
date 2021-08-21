@@ -4,22 +4,22 @@ description: BITSAdmin è uno strumento da riga di comando che è possibile util
 ms.assetid: 686d2201-c142-4e1c-a2b1-347d9334caa8
 ms.topic: article
 ms.date: 03/05/2019
-ms.openlocfilehash: 6d2bf864c0efcbaed5409ed0aaeeaf5786d85e36
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 644e11bedfd66ef765fe1c453eaad77956dfc779b8873a4b5268a46270224c3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104551341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119701906"
 ---
 # <a name="bitsadmin-tool"></a>Strumento BITSAdmin
 
-BITSAdmin è uno strumento da riga di comando che è possibile utilizzare per creare scaricare o caricare i processi e monitorare lo stato di avanzamento. Per la documentazione completa e completa dello strumento e di tutti i relativi comandi, vedere gli [esempi](/windows-server/administration/windows-commands/bitsadmin-examples) di [BITSAdmin](/windows-server/administration/windows-commands/bitsadmin) e Bitsadmin nel centro per professionisti IT di Windows.
+BITSAdmin è uno strumento da riga di comando che è possibile utilizzare per creare scaricare o caricare i processi e monitorare lo stato di avanzamento. Per la documentazione completa e completa dello strumento e di tutti i relativi comandi, vedere gli esempi [bitsadmin](/windows-server/administration/windows-commands/bitsadmin) e [bitsadmin](/windows-server/administration/windows-commands/bitsadmin-examples) nel centro Windows IT Pro Center.
 
-Per elencare tutti i processi BITS, ad esempio, è possibile eseguire il comando `bitsadmin /list /verbose` . Di seguito è riportata una schermata dell'output di esempio per il comando.
+Ad esempio, per elencare tutti i processi BITS, è possibile eseguire il comando `bitsadmin /list /verbose` . Ecco uno screenshot dell'output di esempio per il comando.
 
-![Output di esempio per il comando Bitsadmin/list/verbose](images/bitsadmin.png)
+![Output di esempio per il comando bitsadmin /list /verbose](images/bitsadmin.png)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-* [BITSAdmin](/windows-server/administration/windows-commands/bitsadmin)  nel centro per professionisti IT di Windows
-* [esempi di Bitsadmin](/windows-server/administration/windows-commands/bitsadmin-examples) nel centro per professionisti IT di Windows
+* [bitsadmin](/windows-server/administration/windows-commands/bitsadmin) nel centro Windows IT Pro
+* [Esempi di bitsadmin](/windows-server/administration/windows-commands/bitsadmin-examples) nel centro Windows IT Pro

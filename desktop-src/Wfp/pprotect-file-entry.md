@@ -1,7 +1,7 @@
 ---
 description: Struttura utilizzata dalla funzione SfcGetFiles.
 ms.assetid: 958167e3-3eb3-406a-85bf-ffe2851a95a1
-title: Struttura PPROTECT_FILE_ENTRY (sfcfiles. h)
+title: PPROTECT_FILE_ENTRY struttura (Sfcfiles.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Sfcfiles.h
-ms.openlocfilehash: 98cda570a3677560d51800d58822d93a942847c2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c9070290170febf08e532b071812600fb0ef8755302a4bd1603858659196d0c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053199"
 ---
-# <a name="pprotect_file_entry-structure"></a>\_Struttura di \_ immissione file PPROTECT
+# <a name="pprotect_file_entry-structure"></a>Struttura PPROTECT \_ FILE \_ ENTRY
 
-\[Questa struttura è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Il supporto per questa struttura è stato rimosso in Windows Vista e Windows Server 2008. Usare invece le funzioni supportate elencate in [WRP Functions](wfp-functions.md) .\]
+\[Questa struttura è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Il supporto per questa struttura è stato rimosso in Windows Vista e Windows Server 2008. Usare invece le funzioni supportate elencate in [Funzioni WRP.](wfp-functions.md)\]
 
-Struttura utilizzata dalla funzione [**SfcGetFiles**](sfcgetfiles.md) .
+Struttura utilizzata dalla [**funzione SfcGetFiles.**](sfcgetfiles.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,24 +43,24 @@ typedef struct _PPROTECT_FILE_ENTRY {
 
 <dl> <dt>
 
-**SourceFileName**
+**Sourcefilename**
 </dt> <dd>
 
-Puntatore a un valore stringa contenente il nome del file di origine. Questo valore sarà **null** se il file non viene rinominato durante l'installazione.
+Puntatore a un valore stringa contenente il nome file del file di origine. Sarà NULL **se** il file non viene rinominato durante l'installazione.
 
 </dd> <dt>
 
 **FileName**
 </dt> <dd>
 
-Puntatore a un valore stringa contenente il nome file di destinazione più il percorso completo del file.
+Puntatore al valore stringa contenente il nome file di destinazione e il percorso completo del file.
 
 </dd> <dt>
 
 **InfName**
 </dt> <dd>
 
-Puntatore a un valore stringa contenente il nome del file INF che fornisce informazioni sul layout. Questo parametro può essere **null** quando si usa il layout predefinito.
+Puntatore al valore stringa contenente il nome file del file INF che fornisce informazioni sul layout. Questo parametro può essere **NULL quando** si usa il layout predefinito.
 
 </dd> </dl>
 
@@ -70,11 +70,11 @@ Puntatore a un valore stringa contenente il nome del file INF che fornisce infor
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                 |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                        |
-| Intestazione<br/>                   | <dl> <dt>Sfcfiles. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Sfcfiles.h</dt> </dl> |
 
 
 

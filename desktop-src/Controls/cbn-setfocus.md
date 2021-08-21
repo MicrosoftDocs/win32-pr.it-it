@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica CBN_SETFOCUS (winuser. h)
-description: Inviato quando una casella combinata riceve lo stato attivo della tastiera. La finestra padre della casella combinata riceve questo codice di notifica tramite il \_ messaggio di comando WM.
+title: CBN_SETFOCUS di notifica (Winuser.h)
+description: Inviato quando una casella combinata riceve lo stato attivo della tastiera. La finestra padre della casella combinata riceve questo codice di notifica tramite il messaggio WM \_ COMMAND.
 ms.assetid: 8072edc6-aedc-4daf-80df-d3acd82fcffa
 keywords:
-- Controlli di Windows per il codice di notifica CBN_SETFOCUS
+- CBN_SETFOCUS codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 885bbaebac0a79fc600cbcc2b7864cbdfd19ea93
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0c70edb99a18cc7f1e2f1051670bbc9d9596c3630f2dfc01e14aa8b68fd61ca3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104341382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119699051"
 ---
-# <a name="cbn_setfocus-notification-code"></a>Codice di notifica per la \_ messa a fuoco CBN
+# <a name="cbn_setfocus-notification-code"></a>Codice di notifica \_ CBN SETFOCUS
 
-Inviato quando una casella combinata riceve lo stato attivo della tastiera. La finestra padre della casella combinata riceve questo codice di notifica tramite il messaggio di [**\_ comando WM**](/windows/desktop/menurc/wm-command) .
+Inviato quando una casella combinata riceve lo stato attivo della tastiera. La finestra padre della casella combinata riceve questo codice di notifica tramite il [**messaggio WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ CBN_SETFOCUS
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore di controllo della casella combinata. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica il codice di notifica.
+La [**parola chiave LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore di controllo della casella combinata. HIWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) il codice di notifica.
 
 </dd> <dt>
 
@@ -59,9 +59,9 @@ Handle per la casella combinata.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Handle per la casella combinata.
 **Riferimento**
 </dt> <dt>
 
-[\_KILLFOCUS CBN](cbn-killfocus.md)
+[CBN \_ KILLFOCUS](cbn-killfocus.md)
 </dt> <dt>
 
 **Altre risorse**
@@ -84,7 +84,7 @@ Handle per la casella combinata.
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**\_comando WM**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  
