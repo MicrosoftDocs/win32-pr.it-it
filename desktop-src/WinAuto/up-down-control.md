@@ -1,30 +1,30 @@
 ---
-title: Controllo Up-Down (riferimento all'elemento MSAA UI)
-description: Un controllo di scorrimento, noto anche come controllo di selezione, combina una coppia di pulsanti visualizzati come frecce con un controllo di modifica dell'amico. Facendo clic sulle frecce si incrementa o decrementa il valore nel controllo di modifica.
+title: Up-Down (riferimento all'elemento DELL'interfaccia utente MSAA)
+description: Un controllo di scorrimento, noto anche come controllo di selezione, combina una coppia di pulsanti visualizzati come frecce con un controllo di modifica. Facendo clic sulle frecce viene incrementato o decrementato il valore nel controllo di modifica.
 ms.assetid: 45e56c0f-4ac6-4731-b9a6-be4613bf40ae
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fd2d28acc4c14a89ec73f5994ed0af47202145a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 52b9475d8bbca24d2bf536a4eb9a9decf078297e788a37aa4d8560029a67e50e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118114626"
 ---
-# <a name="up-down-control-msaa-ui-element-reference"></a>Controllo Up-Down (riferimento all'elemento MSAA UI)
+# <a name="up-down-control-msaa-ui-element-reference"></a>Up-Down (riferimento all'elemento DELL'interfaccia utente MSAA)
 
 > [!Note]  
-> Questo argomento descrive gli oggetti **controllo di scorrimento** a scopo di riferimento all'elemento dell'interfaccia utente MSAA. La creazione di oggetti **controllo di scorrimento** in diversi framework dell'interfaccia utente non è descritta qui. Vedere la documentazione di riferimento sulle API per il Framework dell'interfaccia utente in uso.
+> In questo argomento vengono descritti **gli oggetti controllo up-down** ai fini delle informazioni di riferimento sugli elementi dell'interfaccia utente MSAA. La procedura per la **creazione di oggetti controllo up-down** in diversi framework dell'interfaccia utente non è descritta qui. Vedere la documentazione di riferimento dell'API per il framework dell'interfaccia utente in uso.
 
  
 
-Un controllo di scorrimento, noto anche come controllo di selezione, combina una coppia di pulsanti visualizzati come frecce con un controllo di modifica dell'amico. Facendo clic sulle frecce si incrementa o decrementa il valore nel controllo di modifica.
+Un controllo di scorrimento, noto anche come controllo di selezione, combina una coppia di pulsanti visualizzati come frecce con un controllo di modifica. Facendo clic sulle frecce viene incrementato o decrementato il valore nel controllo di modifica.
 
-Il nome della classe della finestra per un controllo di scorrimento è UpDown \_ Class, definito come "msctls \_ updown32" in commctrl. h.
+Il nome della classe della finestra per un controllo di tipo up-down è UPDOWN CLASS, definito \_ come "msctls \_ updown32" in Commctrl.h.
 
 ## <a name="iaccessible-methods"></a>Metodi IAccessible
 
-Un controllo di scorrimento supporta i seguenti metodi [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) :
+Un controllo di tipo up-down supporta i metodi [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) seguenti:
 
 -   [**accHitTest**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acchittest)
 -   [**accLocation**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acclocation)
@@ -33,22 +33,22 @@ Un controllo di scorrimento supporta i seguenti metodi [**IAccessible**](/window
 
 ## <a name="iaccessible-properties"></a>Proprietà IAccessible
 
-Un controllo di scorrimento supporta le proprietà [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) seguenti:
+Un controllo di tipo up-down supporta le proprietà [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) seguenti:
 
 
 
 | Proprietà                                                                 | Commenti                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |--------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ottenere \_ accChild**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchild)           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| [**ottenere \_ accChildCount**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchildcount) | La proprietà **childCount** è "2", ovvero i pulsanti freccia su e freccia giù.                                                                                                                                                                                                                                                                                                                                                                                                           |
-| [**ottenere \_ accFocus**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accfocus)           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| [**ottenere \_ accHelp**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_acchelp)             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| [**ottenere \_ accHelpTopic**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_acchelptopic)   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| [**ottenere \_ accName**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname)             | La proprietà **Name** per l'oggetto controllo di scorrimento è ottenuta dal testo della finestra del controllo (o didascalia). Questo testo non viene visualizzato con il controllo di scorrimento, quindi gli sviluppatori del server devono fornire testo significativo nell'istruzione di definizione della risorsa del controllo per consentire agli utenti delle utilità client di identificare il controllo. La proprietà **Name** del pulsante freccia in alto nel controllo di scorrimento è "more" e la proprietà **Name** per il pulsante freccia in basso è "less". |
-| [**ottenere \_ accParent**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent)         | La proprietà **Parent** del controllo di scorrimento è una finestra (finestra del [**\_ sistema di \_ ruoli**](object-roles.md) ) che racchiude il controllo e ha la stessa proprietà **Name** e il nome della classe della finestra del controllo. La proprietà **Parent** dei pulsanti freccia su e freccia giù è l'oggetto controllo di scorrimento.                                                                                                                                                    |
-| [**ottenere \_ accRole**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accrole)             | La proprietà **Role** per l'oggetto controllo di scorrimento è [**\_ \_ SPINBUTTON del sistema Role**](object-roles.md). La proprietà **Role** per i pulsanti freccia è [**il \_ \_ pulsante sistema ruolo**](object-roles.md).                                                                                                                                                                                                                          |
-| [**ottenere \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate)           | La proprietà state per l'oggetto controllo di scorrimento è uno dei [valori](object-state-constants.md)[**seguenti: stato attivo \_ del \_ sistema di stato stato**](object-state-constants.md) \| [**\_ \_ attivo**](object-state-constants.md)<br/>                                                                                                                                                                                      |
-| [**ottenere \_ accValue**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accvalue)           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| [**get \_ accChild**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchild)           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| [**get \_ accChildCount**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchildcount) | La **proprietà ChildCount** è "2" (i pulsanti freccia su e giù).                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [**get \_ accFocus**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accfocus)           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| [**get \_ accHelp**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_acchelp)             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| [**get \_ accHelpTopic**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_acchelptopic)   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| [**get \_ accName**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname)             | La **proprietà Name** per l'oggetto controllo verso l'alto viene ottenuta dal testo della finestra (o didascalia) del controllo. Questo testo non viene visualizzato con il controllo di riepilogo, quindi gli sviluppatori del server devono fornire testo significativo nell'istruzione di definizione delle risorse del controllo per consentire agli utenti delle utilità client di identificare il controllo. La **proprietà Name** per il pulsante freccia superiore nel controllo verso l'alto è "More" e la proprietà **Name** per il pulsante freccia inferiore è "Less". |
+| [**get \_ accParent**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent)         | La **proprietà Parent** del controllo verso l'alto è una finestra ( ROLE SYSTEM [**\_ \_ WINDOW**](object-roles.md) ) che racchiude il controllo e ha la stessa proprietà **Name** e lo stesso nome della classe della finestra del controllo. La **proprietà Parent** dei pulsanti freccia SU e FRECCIA GIÙ è l'oggetto controllo verso il basso.                                                                                                                                                    |
+| [**get \_ accRole**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accrole)             | La **proprietà Role** per l'oggetto controllo verso l'alto è ROLE SYSTEM [**\_ \_ SPINBUTTON.**](object-roles.md) La **proprietà Role** per i pulsanti freccia è ROLE SYSTEM [**\_ \_ PUSHBUTTON**](object-roles.md).                                                                                                                                                                                                                          |
+| [**get \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate)           | La proprietà State per l'oggetto controllo di livello superiore è uno dei valori [seguenti:](object-state-constants.md)[**STATE SYSTEM \_ \_ FOCUSED**](object-state-constants.md) \| [**STATE SYSTEM \_ \_ FOCUSABLE**](object-state-constants.md)<br/>                                                                                                                                                                                      |
+| [**get \_ accValue**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accvalue)           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
 
 
@@ -56,13 +56,13 @@ Un controllo di scorrimento supporta le proprietà [**IAccessible**](/windows/de
 
 ## <a name="notes"></a>Note
 
-Microsoft Active Accessibility espone il controllo di modifica di Buddy come oggetto separato.
+Microsoft Active Accessibility espone il controllo di modifica del controllo come oggetto separato.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[IAccessible (interfaccia)](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
+[Interfaccia IAccessible](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 </dt> </dl>
 
  

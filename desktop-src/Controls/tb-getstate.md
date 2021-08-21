@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_GETSTATE (COMmctrl. h)
-description: Recupera le informazioni sullo stato del pulsante specificato in una barra degli strumenti, ad esempio se è abilitato, premuto o selezionato.
+title: TB_GETSTATE messaggio (Commctrl.h)
+description: Recupera informazioni sullo stato del pulsante specificato in una barra degli strumenti, ad esempio se è abilitato, premuto o selezionato.
 ms.assetid: e8a9e1ff-506f-413b-8f8c-986c25bce736
 keywords:
-- Controlli di Windows Message TB_GETSTATE
+- TB_GETSTATE dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3b5c50978da78218be7f3d47208c0ea430ff36c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: de1757cfd71427904dc7060cc0084c64b82f143e1a8db666e40fe9e08c64c7ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118168237"
 ---
-# <a name="tb_getstate-message"></a>TB- \_ messaggio di stato
+# <a name="tb_getstate-message"></a>MESSAGGIO \_ GETSTATE TB
 
-Recupera le informazioni sullo stato del pulsante specificato in una barra degli strumenti, ad esempio se è abilitato, premuto o selezionato.
+Recupera informazioni sullo stato del pulsante specificato in una barra degli strumenti, ad esempio se è abilitato, premuto o selezionato.
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,7 +41,7 @@ Identificatore di comando del pulsante per il quale recuperare le informazioni.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce le informazioni sullo stato del pulsante in caso di esito positivo o-1 in caso contrario. Le informazioni sullo stato del pulsante possono essere una combinazione dei valori elencati negli [**stati dei pulsanti della barra degli strumenti**](toolbar-button-states.md).
+Restituisce le informazioni sullo stato del pulsante in caso di esito positivo oppure -1 in caso contrario. Le informazioni sullo stato del pulsante possono essere una combinazione dei valori elencati in [**Stati dei pulsanti della**](toolbar-button-states.md)barra degli strumenti .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce le informazioni sullo stato del pulsante in caso di esito positivo o
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

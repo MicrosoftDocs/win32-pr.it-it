@@ -3,7 +3,7 @@ title: TB_SETSTATE messaggio (Commctrl.h)
 description: Imposta lo stato per il pulsante specificato in una barra degli strumenti.
 ms.assetid: 68633b58-8d21-4931-b01f-32a66bda37b1
 keywords:
-- TB_SETSTATE controlli di Windows messaggio
+- TB_SETSTATE di Windows messaggi
 topic_type:
 - apiref
 api_name:
@@ -39,7 +39,7 @@ Identificatore del comando del pulsante.
 *lParam* 
 </dt> <dd>
 
-LoWORD [**è una combinazione**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) di valori elencati in Toolbar [Button States](toolbar-button-states.md). HiWORD [**deve**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) essere zero.
+LoWORD [**è una combinazione**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) di valori elencati in Toolbar [Button States](toolbar-button-states.md). HIWORD [**deve**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) essere zero.
 
 </dd> </dl>
 

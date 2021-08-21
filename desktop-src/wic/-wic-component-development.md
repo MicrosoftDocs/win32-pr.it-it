@@ -1,19 +1,19 @@
 ---
-description: Windows Imaging Component (WIC) è una piattaforma estendibile che fornisce un'API di basso livello per le immagini digitali.
+description: Il Windows Imaging Component (WIC) è una piattaforma estendibile che fornisce API di basso livello per le immagini digitali.
 ms.assetid: c1405bfc-47f8-4aaf-a055-28557935141b
 title: Sviluppo di componenti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 164183bd7d1f36b8d9f81ad4924f8775ce938bca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 07482e36cf518caf0a19dad5f0d62d8d282e634f2c85b895b56621df6e4dad83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104348606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118033199"
 ---
 # <a name="component-development"></a>Sviluppo di componenti
 
-Windows Imaging Component (WIC) è una piattaforma estendibile che fornisce un'API di basso livello per le immagini digitali.
+Il Windows Imaging Component (WIC) è una piattaforma estendibile che fornisce API di basso livello per le immagini digitali.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,8 +21,8 @@ Windows Imaging Component (WIC) è una piattaforma estendibile che fornisce un'A
 
 | Argomento                                                                            | Descrizione                                                                                                                                                                              |
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Come scrivere un codec WIC-Enabled](-wic-howtowriteacodec.md)<br/>         | Questa sezione degli argomenti fornisce agli sviluppatori informazioni aggiuntive su come implementare i codec del formato di file di immagine che funzioneranno all'interno del Framework di Windows Imaging Component (WIC).<br/> |
-| [Linee guida per WIC per i formati di immagine RAW della fotocamera](-wic-rawguidelines.md)<br/> | Il set di argomenti seguente fornisce indicazioni su come implementare i formati di immagine RAW della fotocamera che funzioneranno all'interno del Framework di Windows Imaging Component (WIC).<br/>            |
+| [Come scrivere un codec WIC-Enabled](-wic-howtowriteacodec.md)<br/>         | Questa sezione di argomenti fornisce agli sviluppatori indicazioni su come implementare codec di formato di file di immagine che funzioneranno all'interno del framework wic (Windows Imaging Component).<br/> |
+| [Linee guida WIC per i formati di immagine RAW della fotocamera](-wic-rawguidelines.md)<br/> | Il set di argomenti seguente fornisce indicazioni su come implementare formati di immagine RAW della fotocamera che funzioneranno all'interno del framework Windows Imaging Component (WIC).<br/>            |
 
 
 
@@ -30,7 +30,7 @@ Windows Imaging Component (WIC) è una piattaforma estendibile che fornisce un'A
 
 ## <a name="see-also"></a>Vedere anche
 
-[Panoramica del componente imaging Windows](-wic-about-windows-imaging-codec.md)
+[Windows Panoramica del componente di creazione dell'immagine](-wic-about-windows-imaging-codec.md)
 
 
 [Guida per programmatori](-wic-programming-guide.md)

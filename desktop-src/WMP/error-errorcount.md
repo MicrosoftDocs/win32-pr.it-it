@@ -36,11 +36,11 @@ Questa proprietà è un numero di sola **lettura** (**long**).
 
 ## <a name="remarks"></a>Commenti
 
-È necessario impostare *Impostazioni*. **enableErrorDialogs** su false se si sceglie di visualizzare messaggi di errore personalizzati.
+È necessario *impostare* Impostazioni . **enableErrorDialogs** su false se si sceglie di visualizzare messaggi di errore personalizzati.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene utilizzato *Error*. **errorCount** in un gestore eventi per avvisare l'utente dell'errore più recente nella coda degli errori. **L'oggetto Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzato *Error*. **errorCount** in un gestore eventi per avvisare l'utente dell'errore più recente nella coda degli errori. **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript

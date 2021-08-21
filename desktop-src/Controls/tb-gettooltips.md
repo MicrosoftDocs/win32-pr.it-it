@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_GETTOOLTIPS (COMmctrl. h)
-description: Recupera l'handle per il controllo ToolTip, se presente, associato alla barra degli strumenti.
+title: TB_GETTOOLTIPS messaggio (Commctrl.h)
+description: Recupera l'handle per il controllo descrizione comando, se presente, associato alla barra degli strumenti.
 ms.assetid: 1e0edfdc-d0cb-41f3-9178-1239d81d3034
 keywords:
-- Controlli di Windows Message TB_GETTOOLTIPS
+- TB_GETTOOLTIPS di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 488212b34f9f1816797f097a5a1f42d2ea4f68c0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 41f326ffcc12e9fcf115b6f010e9fc8f7e327ce6381ce9a2fb3d397d8e322f92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118168227"
 ---
-# <a name="tb_gettooltips-message"></a>\_Messaggio GETtooltips TB
+# <a name="tb_gettooltips-message"></a>TB \_ GETTOOLTIPS message
 
-Recupera l'handle per il controllo ToolTip, se presente, associato alla barra degli strumenti.
+Recupera l'handle per il controllo descrizione comando, se presente, associato alla barra degli strumenti.
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,7 +37,7 @@ Recupera l'handle per il controllo ToolTip, se presente, associato alla barra de
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'handle per il controllo ToolTip oppure **null** se alla barra degli strumenti non è associata alcuna descrizione comando.
+Restituisce l'handle per il controllo descrizione comando oppure **NULL se** alla barra degli strumenti non è associata alcuna descrizione comando.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Restituisce l'handle per il controllo ToolTip oppure **null** se alla barra degl
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

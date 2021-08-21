@@ -4,29 +4,29 @@ ms.assetid: 6b75fdb2-3d4c-4419-96e8-8677439e366b
 title: Caricamento di VDS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01c66685668641f3036739c57bd7353f72052c6f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ec6a757b57c8e06e53862b3d36b9d54f291e4b07693dff008ecc2bbbb961c84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118125941"
 ---
 # <a name="loading-vds"></a>Caricamento di VDS
 
-\[A partire da Windows 8 e Windows Server 2012, l'interfaccia com del [servizio dischi virtuali](virtual-disk-service-portal.md) viene sostituita dall' [API di gestione archiviazione di Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[A partire Windows 8 e Windows Server 2012, l'interfaccia [COM](virtual-disk-service-portal.md) del servizio disco virtuale viene sostituita dal Windows Archiviazione API Gestione [.](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal)\]
 
 **Per caricare e inizializzare VDS**
 
-1.  Rilascia interfacce non null.
-2.  Chiamare la funzione [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance), [**CoCreateInstanceEx**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstanceex)o [**CoGetClassObject**](/windows/win32/api/combaseapi/nf-combaseapi-cogetclassobject) per ottenere un puntatore all'oggetto del caricatore del servizio.
+1.  Rilasciare interfacce non Null.
+2.  Chiamare la [**funzione CoCreateInstance,**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) [**CoCreateInstanceEx**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstanceex)o [**CoGetClassObject**](/windows/win32/api/combaseapi/nf-combaseapi-cogetclassobject) per ottenere un puntatore all'oggetto caricatore del servizio.
 
-    **CLSCTX \_ Non \_** è possibile specificare disable AAA in questa chiamata. Se viene chiamato [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity) , non è possibile specificare **EOAC \_ disabilitare \_ AAA** nel parametro *dwCapabilities* .
+    **CLSCTX \_ Disable \_ AAA** non può essere specificato in questa chiamata. Se [**viene chiamato CoInitializeSecurity,**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity) non è possibile specificare **DISABLE \_ \_ AAA EOAC** nel *parametro dwCapabilities.*
 
-3.  Chiamare il metodo [**IVdsServiceLoader:: LoadService**](/windows/desktop/api/Vds/nf-vds-ivdsserviceloader-loadservice) per caricare VDS.
+3.  Chiamare il [**metodo IVdsServiceLoader::LoadService**](/windows/desktop/api/Vds/nf-vds-ivdsserviceloader-loadservice) per caricare VDS.
 
-    Il passaggio di **null** come primo parametro consente di caricare e inizializzare VDS nell'host locale.
+    Il **passaggio di NULL** come primo parametro carica e inizializza VDS nell'host locale.
 
-4.  Chiamare il metodo [**IVdsService:: WaitForServiceReady**](/windows/desktop/api/Vds/nf-vds-ivdsservice-waitforserviceready) per attendere il completamento dell'inizializzazione VDS.
+4.  Chiamare il [**metodo IVdsService::WaitForServiceReady**](/windows/desktop/api/Vds/nf-vds-ivdsservice-waitforserviceready) per attendere il completamento dell'inizializzazione di VDS.
 
 Nell'esempio di codice seguente viene inizializzato il servizio che restituisce un puntatore all'oggetto servizio.
 
@@ -115,7 +115,7 @@ void __cdecl main(void)
 [**IVdsServiceLoader::LoadService**](/windows/desktop/api/Vds/nf-vds-ivdsserviceloader-loadservice)
 </dt> <dt>
 
-[Oggetti installazione e servizio](startup-and-service-objects.md)
+[Oggetti di installazione e di servizio](startup-and-service-objects.md)
 </dt> </dl>
 
  

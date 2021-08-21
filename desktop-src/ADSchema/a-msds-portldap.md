@@ -1,6 +1,6 @@
 ---
 title: Attributo ms-DS-Port-LDAP
-description: Specifica la porta usata dal servizio directory per restare in ascolto delle richieste LDAP.
+description: Specifica la porta usata dal servizio directory per l'ascolto delle richieste LDAP.
 ms.assetid: bed80aeb-3fc2-4065-92df-1f387982848e
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "118425817"
 ---
 # <a name="ms-ds-port-ldap-attribute"></a>Attributo ms-DS-Port-LDAP
 
-Specifica la porta usata dal servizio directory per restare in ascolto delle richieste LDAP.
+Specifica la porta usata dal servizio directory per l'ascolto delle richieste LDAP.
 
 
 
@@ -32,7 +32,7 @@ Specifica la porta usata dal servizio directory per restare in ascolto delle ric
 | CN                | ms-DS-Port-LDAP                      |
 | Ldap-Display-Name | msDS-PortLDAP                        |
 | Dimensione              | \-                                   |
-| Privilegio di aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1859              |
 | System-Id-Guid    | 977225c1-5bdf-42b7-b6db-c3af077f558f |

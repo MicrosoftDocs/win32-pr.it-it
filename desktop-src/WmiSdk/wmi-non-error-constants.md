@@ -2,32 +2,32 @@
 description: Codici restituiti WMI che indicano lo stato e non indicano un errore.
 ms.assetid: 36faa3fb-9496-47ca-bdba-f8eb52a06ff7
 ms.tgt_platform: multiple
-title: Costanti non di errore WMI (WbemCli. h)
+title: Costanti wmi non di errore (WbemCli.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0880c9fda00f03c1fa8b174242bfc84ed9d75ad8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 651013d89577e1f8c336dd1b070cdb0c8476fe73206c681371c0ad84bfa99fa2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118107022"
 ---
-# <a name="wmi-non-error-constants"></a>Costanti non di errore WMI
+# <a name="wmi-non-error-constants"></a>Costanti wmi non di errore
 
 Codici restituiti WMI che indicano lo stato e non indicano un errore.
 
-Se un'operazione non genera un errore, WMI restituisce uno dei seguenti codici come **HRESULT** che indica lo stato dell'operazione.
+Se un'operazione non restituisce un errore, WMI restituisce uno dei codici seguenti come **HRESULT** che indica lo stato dell'operazione.
 
 > [!Note]  
-> Alcuni metodi delle classi WMI possono restituire codici di errore di sistema e di rete (ad esempio, 64). È possibile controllare la definizione di questi tipi di codici di errore usando il comando **net helpmsg** nella finestra del prompt dei comandi. Ad esempio, il comando **net helpmsg 64** restituisce il messaggio: il nome di rete specificato non è più disponibile.
+> Alcuni metodi nelle classi WMI possono restituire codici di errore di sistema e di rete (ad esempio 64). È possibile controllare la definizione di questi tipi di codici di errore usando il **comando net helpmsg** nella finestra del prompt dei comandi. Ad esempio, il comando **net helpmsg 64** restituisce il messaggio: Il nome di rete specificato non è più disponibile.
 
  
 
-In C++ è possibile chiamare [**FormatMessage**](/windows/desktop/api/winbase/nf-winbase-formatmessage) e specificare **C: \\ Windows \\ system32 \\ WBEM \\wmiutils.dll** come modulo Message.
+In C++ è possibile chiamare [**FormatMessage**](/windows/desktop/api/winbase/nf-winbase-formatmessage) e specificare **C: \\ Windows \\ System32 \\ wbem \\wmiutils.dll** come modulo del messaggio.
 
 <dl> <dt>
 
-<span id="WBEM_S_NO_ERROR"></span><span id="wbem_s_no_error"></span>**\_non è \_ disponibile alcun \_ errore in WBEM**
+<span id="WBEM_S_NO_ERROR"></span><span id="wbem_s_no_error"></span>**WBEM \_ S \_ NO \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 0 (0x0)
@@ -40,7 +40,7 @@ L'operazione è stata completata.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_S_FALSE"></span><span id="wbem_s_false"></span>**WBEM \_ S \_ false**
+<span id="WBEM_S_FALSE"></span><span id="wbem_s_false"></span>**WBEM \_ S \_ FALSE**
 </dt> <dd> <dl> <dt>
 
 1 (0x1)
@@ -48,12 +48,12 @@ L'operazione è stata completata.
 
 
 
-Non sono disponibili altri oggetti, il numero di oggetti restituiti è inferiore al numero richiesto oppure è la fine di un'enumerazione. Questo valore viene restituito anche quando questo metodo viene chiamato con un valore pari a 0 per il parametro *uCount* .
+Non sono disponibili altri oggetti, il numero di oggetti restituiti è minore del numero richiesto o si tratta della fine di un'enumerazione. Questo valore viene restituito anche quando questo metodo viene chiamato con valore 0 per il *parametro uCount.*
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_S_ALREADY_EXISTS"></span><span id="wbem_s_already_exists"></span>**WBEM \_ S \_ \_ esiste già**
+<span id="WBEM_S_ALREADY_EXISTS"></span><span id="wbem_s_already_exists"></span>**WBEM \_ S \_ ESISTE \_ GIÀ**
 </dt> <dd> <dl> <dt>
 
 262145 (0x40001)
@@ -66,7 +66,7 @@ Non sono disponibili altri oggetti, il numero di oggetti restituiti è inferiore
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_S_RESET_TO_DEFAULT"></span><span id="wbem_s_reset_to_default"></span>**il \_ ripristino di WBEM S è \_ \_ \_ predefinito**
+<span id="WBEM_S_RESET_TO_DEFAULT"></span><span id="wbem_s_reset_to_default"></span>**WBEM \_ S \_ \_ REIMPOSTATO SUL VALORE \_ PREDEFINITO**
 </dt> <dd> <dl> <dt>
 
 262146 (0x40002)
@@ -79,7 +79,7 @@ Una proprietà sottoposta a override è stata eliminata. Questo valore viene res
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_S_DIFFERENT"></span><span id="wbem_s_different"></span>**WBEM \_ S \_ diverso**
+<span id="WBEM_S_DIFFERENT"></span><span id="wbem_s_different"></span>**WBEM \_ S \_ DIVERSO**
 </dt> <dd> <dl> <dt>
 
 262147 (0x40003)
@@ -92,7 +92,7 @@ Gli elementi (oggetti, classi e così via) che vengono confrontati non sono iden
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_S_TIMEDOUT"></span><span id="wbem_s_timedout"></span>**timeout di WBEM \_ S \_**
+<span id="WBEM_S_TIMEDOUT"></span><span id="wbem_s_timedout"></span>**TIMEDOUT DI WBEM \_ S \_**
 </dt> <dd> <dl> <dt>
 
 262148 (0x40004)
@@ -100,12 +100,12 @@ Gli elementi (oggetti, classi e così via) che vengono confrontati non sono iden
 
 
 
-Si è verificato il timeout di una chiamata. Non si tratta di una condizione di errore. È pertanto possibile che vengano restituiti anche alcuni risultati.
+Timeout di una chiamata. Non si tratta di una condizione di errore. Pertanto, è possibile che siano stati restituiti anche alcuni risultati.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_S_NO_MORE_DATA"></span><span id="wbem_s_no_more_data"></span>**\_ \_ non sono disponibili \_ altri \_ dati per WBEM**
+<span id="WBEM_S_NO_MORE_DATA"></span><span id="wbem_s_no_more_data"></span>**WBEM \_ S NON PIÙ \_ \_ \_ DATI**
 </dt> <dd> <dl> <dt>
 
 262149 (0x40005)
@@ -118,7 +118,7 @@ Non sono disponibili altri dati dall'enumerazione e l'utente deve terminare l'en
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_S_OPERATION_CANCELLED"></span><span id="wbem_s_operation_cancelled"></span>**\_operazione WBEM \_ \_ annullata**
+<span id="WBEM_S_OPERATION_CANCELLED"></span><span id="wbem_s_operation_cancelled"></span>**OPERAZIONE \_ WBEM S \_ \_ ANNULLATA**
 </dt> <dd> <dl> <dt>
 
 262150 (0x40006)
@@ -126,12 +126,12 @@ Non sono disponibili altri dati dall'enumerazione e l'utente deve terminare l'en
 
 
 
-L'operazione è stata annullata intenzionalmente o involontariamente.
+L'operazione è stata annullata intenzionalmente o inavvicinatamente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_S_PENDING"></span><span id="wbem_s_pending"></span>**WBEM \_ S \_ in sospeso**
+<span id="WBEM_S_PENDING"></span><span id="wbem_s_pending"></span>**WBEM \_ S \_ IN SOSPESO**
 </dt> <dd> <dl> <dt>
 
 262151 (0x40007)
@@ -144,7 +144,7 @@ Una richiesta è ancora in corso e i risultati non sono ancora disponibili.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_S_DUPLICATE_OBJECTS"></span><span id="wbem_s_duplicate_objects"></span>**\_ \_ oggetti duplicati WBEM S \_**
+<span id="WBEM_S_DUPLICATE_OBJECTS"></span><span id="wbem_s_duplicate_objects"></span>**OGGETTI DUPLICATI \_ WBEM S \_ \_**
 </dt> <dd> <dl> <dt>
 
 262152 (0x40008)
@@ -157,7 +157,7 @@ Sono state individuate più copie dello stesso oggetto nel gruppo di risultati d
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_S_ACCESS_DENIED"></span><span id="wbem_s_access_denied"></span>**accesso a WBEM \_ S \_ \_ negato**
+<span id="WBEM_S_ACCESS_DENIED"></span><span id="wbem_s_access_denied"></span>**ACCESSO WBEM \_ S \_ \_ NEGATO**
 </dt> <dd> <dl> <dt>
 
 262153 (0x40009)
@@ -170,7 +170,7 @@ All'utente è stato negato l'accesso ad alcune risorse, ma non a tutte.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_S_PARTIAL_RESULTS"></span><span id="wbem_s_partial_results"></span>**\_ \_ risultati parziali di WBEM \_**
+<span id="WBEM_S_PARTIAL_RESULTS"></span><span id="wbem_s_partial_results"></span>**RISULTATI PARZIALI DI WBEM \_ S \_ \_**
 </dt> <dd> <dl> <dt>
 
 262160 (0x40010)
@@ -178,12 +178,12 @@ All'utente è stato negato l'accesso ad alcune risorse, ma non a tutte.
 
 
 
-L'utente non ha ricevuto tutti gli oggetti richiesti a causa di risorse inaccessibili (ad eccezione delle violazioni della sicurezza).
+L'utente non ha ricevuto tutti gli oggetti richiesti a causa di risorse inaccessibili (diverse da violazioni della sicurezza).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_S_LIMITED_SERVICE"></span><span id="wbem_s_limited_service"></span>**servizio con limitazioni per WBEM \_ S \_ \_**
+<span id="WBEM_S_LIMITED_SERVICE"></span><span id="wbem_s_limited_service"></span>**SERVIZIO LIMITATO \_ WBEM S \_ \_**
 </dt> <dd> <dl> <dt>
 
 274433 (0x43001)
@@ -191,12 +191,12 @@ L'utente non ha ricevuto tutti gli oggetti richiesti a causa di risorse inaccess
 
 
 
-Il provider è in grado di limitare il servizio.
+Il provider è in grado di eseguire un servizio limitato.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_S_INDIRECTLY_UPDATED"></span><span id="wbem_s_indirectly_updated"></span>**WBEM \_ è \_ stato \_ aggiornato indirettamente**
+<span id="WBEM_S_INDIRECTLY_UPDATED"></span><span id="wbem_s_indirectly_updated"></span>**WBEM \_ S \_ AGGIORNATO INDIRETTAMENTE \_**
 </dt> <dd> <dl> <dt>
 
 274434 (0x43002)
@@ -217,8 +217,8 @@ Riservato per utilizzi futuri.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
-| Intestazione<br/>                   | <dl> <dt>WbemCli. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WbemCli. idl</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>WbemCli.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WbemCli.idl</dt> </dl> |
 
 
 

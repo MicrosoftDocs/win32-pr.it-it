@@ -1,9 +1,9 @@
 ---
-title: Messaggio TTM_SETTITLE (COMmctrl. h)
+title: TTM_SETTITLE messaggio (Commctrl.h)
 description: Aggiunge un'icona standard e una stringa del titolo a una descrizione comando.
 ms.assetid: e745a592-eef7-4e0d-8939-a48b52c4ab9f
 keywords:
-- Controlli di Windows Message TTM_SETTITLE
+- TTM_SETTITLE controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7972a9d40347995e9d641e7fc8706f9ad4c58bd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e0e159ce522ea27361f93beaa96da06959fba6f92fedf5981dfd049ddc7f36cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118166354"
 ---
-# <a name="ttm_settitle-message"></a>\_Messaggio TTM
+# <a name="ttm_settitle-message"></a>TTM \_ SETTITLE message
 
 Aggiunge un'icona standard e una stringa del titolo a una descrizione comando.
 
@@ -34,19 +34,19 @@ Aggiunge un'icona standard e una stringa del titolo a una descrizione comando.
 *wParam* 
 </dt> <dd>
 
-Impostare *wParam* su uno dei valori seguenti per specificare l'icona da visualizzare. A partire da Windows XP SP2 e versioni successive, questo parametro può contenere anche un valore **HICON** . Si presuppone che un valore maggiore di TTI sia \_ un errore di **HICON**.
+Impostare *wParam* su uno dei valori seguenti per specificare l'icona da visualizzare. A Windows XP SP2 e versioni successive, questo parametro può contenere anche un **valore HICON.** Si presuppone che qualsiasi valore maggiore di \_ TTI ERROR sia **hiCON.**
 
 
 
 | Valore                                                                                                                                                                      | Significato                     |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| <span id="TTI_NONE"></span><span id="tti_none"></span><dl> <dt>**TTI \_ None**</dt> </dl>                             | Nessuna icona.<br/>         |
-| <span id="TTI_INFO"></span><span id="tti_info"></span><dl> <dt>**\_informazioni tti**</dt> </dl>                             | Icona info.<br/>       |
-| <span id="TTI_WARNING"></span><span id="tti_warning"></span><dl> <dt>**avviso di TTI \_**</dt> </dl>                    | Icona avviso<br/>     |
-| <span id="TTI_ERROR"></span><span id="tti_error"></span><dl> <dt>**\_errore tti**</dt> </dl>                          | Icona di errore<br/>       |
-| <span id="TTI_INFO_LARGE"></span><span id="tti_info_large"></span><dl> <dt>**\_informazioni tti \_ large**</dt> </dl>          | Icona di errore grande<br/> |
-| <span id="TTI_WARNING_LARGE"></span><span id="tti_warning_large"></span><dl> <dt>**\_avviso tti \_ grande**</dt> </dl> | Icona di errore grande<br/> |
-| <span id="TTI_ERROR_LARGE"></span><span id="tti_error_large"></span><dl> <dt>**\_errore tti \_ grande**</dt> </dl>       | Icona di errore grande<br/> |
+| <span id="TTI_NONE"></span><span id="tti_none"></span><dl> <dt>**TTI \_ NONE**</dt> </dl>                             | Nessuna icona.<br/>         |
+| <span id="TTI_INFO"></span><span id="tti_info"></span><dl> <dt>**TTI \_ INFO**</dt> </dl>                             | Icona Informazioni.<br/>       |
+| <span id="TTI_WARNING"></span><span id="tti_warning"></span><dl> <dt>**AVVISO \_ TTI**</dt> </dl>                    | Icona avviso<br/>     |
+| <span id="TTI_ERROR"></span><span id="tti_error"></span><dl> <dt>**ERRORE \_ TTI**</dt> </dl>                          | Icona di errore<br/>       |
+| <span id="TTI_INFO_LARGE"></span><span id="tti_info_large"></span><dl> <dt>**TTI \_ INFO \_ LARGE**</dt> </dl>          | Icona di errore di grandi dimensioni<br/> |
+| <span id="TTI_WARNING_LARGE"></span><span id="tti_warning_large"></span><dl> <dt>**AVVISO TTI \_ \_ DI GRANDI DIMENSIONI**</dt> </dl> | Icona di errore di grandi dimensioni<br/> |
+| <span id="TTI_ERROR_LARGE"></span><span id="tti_error_large"></span><dl> <dt>**ERRORE TTI \_ \_ DI GRANDI DIMENSIONI**</dt> </dl>       | Icona di errore di grandi dimensioni<br/> |
 
 
 
@@ -63,19 +63,19 @@ Puntatore alla stringa del titolo. È necessario assegnare un valore a *lParam*.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo, **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo, **FALSE** in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Il titolo di una descrizione comando viene visualizzato sopra il testo, in un tipo di carattere diverso. Non è sufficiente avere un titolo; la descrizione comando deve avere anche testo o non è visualizzata.
+Il titolo di una descrizione comando viene visualizzato sopra il testo, con un tipo di carattere diverso. Non è sufficiente avere un titolo. La descrizione comando deve contenere anche testo oppure non viene visualizzata.
 
-Quando *wParam* contiene un **HICON**, viene creata una copia dell'icona dalla finestra della descrizione comando.
+Quando *wParam contiene* un **hiCON,** una copia dell'icona viene creata dalla finestra di descrizione comando.
 
-Quando si **chiama \_ TTM setitle**, la stringa a cui fa riferimento *lParam* non deve superare 100 **TCHARs** di lunghezza, incluso il **null** di terminazione.
+Quando si **chiama TTM \_ SETTITLE,** la stringa a cui punta *lParam* non deve superare i 100 **TCHAR,** incluso il valore NULL di **terminazione.**
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come aggiungere un titolo e un'icona di sistema a una descrizione comando.
+L'esempio seguente illustra come aggiungere un titolo e un'icona di sistema a una descrizione comando.
 
 
 ```C++
@@ -93,10 +93,10 @@ DestroyIcon(hIcon);
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
-| Nomi Unicode e ANSI<br/>   | **TTM \_ SETTITLEW** (Unicode) e **TTM \_ setitlea** (ANSI)<br/>                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Nomi Unicode e ANSI<br/>   | **TTM \_ SETTITLEW** (Unicode) e **TTM \_ SETTITLEA** (ANSI)<br/>                 |
 
 
 
@@ -104,7 +104,7 @@ DestroyIcon(hIcon);
 
 <dl> <dt>
 
-[Informazioni sui controlli ToolTip](tooltip-controls.md)
+[Informazioni sui controlli descrizione comando](tooltip-controls.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Enumerazione CrashDumpGrbit'
-title: Enumerazione CrashDumpGrbit (Microsoft. ISAM. esent. Interop. Windows7)
+description: Altre informazioni sull'enumerazione CrashDumpGrbit
+title: Enumerazione CrashDumpGrbit (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: CrashDumpGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows7.CrashDumpGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.crashdumpgrbit(v=EXCHG.10)
@@ -40,12 +40,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3108190143115b1e6be5b7e0981d49c4bd9d4afa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6cad58cac50d42b7abaadb179b4068bda2534383113b48430c79d874357c030c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118083485"
 ---
 # <a name="crashdumpgrbit-enumeration"></a>Enumerazione CrashDumpGrbit
 
@@ -53,8 +53,8 @@ Opzioni per JetConfigureProcessForCrashDump.
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -89,13 +89,13 @@ public enum CrashDumpGrbit
 </tr>
 <tr class="even">
 <td></td>
-<td>Minima</td>
+<td>Minimo</td>
 <td>Il dump minimo include CacheMinimum.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>Massimo</td>
-<td>Il dump massimo include CacheMaximum.</td>
+<td>Il valore massimo di dump include CacheMaximum.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -105,7 +105,7 @@ public enum CrashDumpGrbit
 <tr class="odd">
 <td></td>
 <td>CacheMaximum</td>
-<td>Il valore massimo della cache include la cache minima. Il valore massimo della cache include l'intera immagine della cache.</td>
+<td>Il valore massimo della cache include il valore minimo della cache. Il valore massimo della cache include l'intera immagine della cache.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -115,12 +115,12 @@ public enum CrashDumpGrbit
 <tr class="odd">
 <td></td>
 <td>CacheIncludeCachedPages</td>
-<td>Dump include pagine che contengono dati validi.</td>
+<td>Il dump include pagine che contengono dati validi.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>CacheIncludeCorruptedPages</td>
-<td>Il dump include pagine danneggiate (costose da calcolare).</td>
+<td>Il dump include pagine danneggiate (costo di calcolo elevato).</td>
 </tr>
 </tbody>
 </table>
@@ -130,4 +130,4 @@ public enum CrashDumpGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)

@@ -4,16 +4,16 @@ ms.assetid: 63a96314-50e0-48f7-a522-157073429d99
 title: Estensioni XMSHORT4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49cd297b1bfb7f80c3f9f12d86745b937ad27902
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: abee77067b0f96e52e7bb245477399b544fb4021d3d95cfecc588207f555da1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118088113"
 ---
 # <a name="xmshort4-extensions"></a>Estensioni XMSHORT4
 
-[**XMSHORT4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4) descrive un vettore 4D costituito da componenti interi con segno a 16 bit.
+[**XMSHORT4 descrive**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4) un vettore 4D costituito da componenti interi con segno a 16 bit.
 
 > [!Note]  
 > Le funzionalità elencate di seguito sono disponibili solo quando si sviluppa con C++.

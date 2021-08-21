@@ -1,5 +1,5 @@
 ---
-description: 'Metodo IAMTimelineObj::GetGroupIBelongTo : non supportato.'
+description: 'Metodo IAMTimelineObj::GetGroupIBelongTo: non supportato.'
 ms.assetid: a6242c1d-cf9a-4c96-9cfd-d32199ae74b8
 title: Metodo IAMTimelineObj::GetGroupIBelongTo (Qedit.h)
 ms.topic: reference
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 7aac3e043d068588e6a9330c193c1b5fb7828688
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9f2a368fde88e72b4bbeb9c423a58dacab0b8e2ba9d7031e5c8342dcad278634
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118155443"
 ---
 # <a name="iamtimelineobjgetgroupibelongto-method"></a>Metodo IAMTimelineObj::GetGroupIBelongTo
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
@@ -64,7 +64,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare Microsoft Windows SDK [Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

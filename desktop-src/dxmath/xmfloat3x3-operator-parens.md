@@ -1,7 +1,7 @@
 ---
-description: Accede a elementi matrice specifici a cui fa riferimento una riga e una colonna dall'istanza corrente di XMFLOAT3X3.
+description: Accede a elementi della matrice specifici a cui fanno riferimento righe e colonne dall'istanza corrente di XMFLOAT3X3.
 ms.assetid: 19daf862-df81-40d7-b0c7-809015d7f7c8
-title: Operatori XMFLOAT3X3 operator ()
+title: Operatori dell'operatore XMFLOAT3X3 ()
 ms.topic: reference
 ms.date: 12/06/2018
 topic_type:
@@ -11,18 +11,18 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: e46ffcd2b434b4b7864f14615615c306ffaa5976
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 172b47eb74556f2ecbe3c68643f8c22a89f97449670a50e5455feec81a5afbc6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118087407"
 ---
-# <a name="xmfloat3x3-operator--operators"></a>Operatori XMFLOAT3X3 operator ()
+# <a name="xmfloat3x3-operator--operators"></a>Operatori dell'operatore XMFLOAT3X3 ()
 
-Accede a elementi matrice specifici a cui fa riferimento una riga e una colonna dall'istanza corrente di `XMFLOAT3X3` .
+Accede a elementi della matrice specifici a cui fanno riferimento righe e colonne dall'istanza corrente di `XMFLOAT3X3` .
 
-Accede a elementi matrice specifici a cui fa riferimento una riga e una colonna dall'istanza corrente di [ **XMFLOAT3X3**](/windows/win32/api/directxmath/ns-directxmath-xmfloat3x3)
+Accede a elementi della matrice specifici a cui fanno riferimento righe e colonne dall'istanza corrente di [ **XMFLOAT3X3**](/windows/win32/api/directxmath/ns-directxmath-xmfloat3x3)
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -41,8 +41,8 @@ Accede a elementi matrice specifici a cui fa riferimento una riga e una colonna 
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat3x3-operator-function-call(size_t_size_t)"><strong>XMFLOAT3X3:: operator () (size_t, size_t)</strong></a></td>
-<td style="text-align: left;">Restituisce un oggetto <code>reference</code> a un elemento Matrix di un'istanza <code>XMFLOAT3X3</code> come specificato dagli argomenti di riga e colonna. <br/> Questo operatore restituisce un oggetto <code>reference</code> a un elemento Matrix di un'istanza <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat3x3"><strong>XMFLOAT3X3</strong></a> come specificato dagli argomenti di riga e colonna. <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat3x3-operator-function-call(size_t_size_t)"><strong>XMFLOAT3X3::operator () (size_t,size_t)</strong></a></td>
+<td style="text-align: left;">Restituisce un <code>reference</code> oggetto a un elemento della matrice di un'istanza di come specificato dagli argomenti di riga e <code>XMFLOAT3X3</code> colonna. <br/> Questo operatore restituisce un oggetto <code>reference</code> a un elemento matrice di un'istanza <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat3x3"><strong>XMFLOAT3X3</strong></a> come specificato dagli argomenti di riga e colonna. <br/>
 <blockquote>
 [!Note]<br />
 Questo operatore è disponibile solo in C++.
@@ -50,8 +50,8 @@ Questo operatore è disponibile solo in C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat3x3-operator-function-call(size_t_size_t)"><strong>XMFLOAT3X3:: operator () (size_t, size_t)</strong></a></td>
-<td style="text-align: left;">Restituisce il valore di un elemento matrice in un'istanza <code>XMFLOAT3X3</code> come specificato dagli argomenti di riga e colonna. <br/> Questo operatore restituisce il valore di un elemento Matrix di un'istanza <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat3x3"><strong>XMFLOAT3X3</strong></a> come specificato dagli argomenti di riga e colonna. <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat3x3-operator-function-call(size_t_size_t)"><strong>XMFLOAT3X3::operator () (size_t,size_t)</strong></a></td>
+<td style="text-align: left;">Restituisce il valore di un elemento della matrice in un'istanza <code>XMFLOAT3X3</code> come specificato dagli argomenti di riga e colonna. <br/> Questo operatore restituisce il valore di un elemento matrice di un'istanza <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat3x3"><strong>XMFLOAT3X3</strong></a> come specificato dagli argomenti di riga e colonna. <br/>
 <blockquote>
 [!Note]<br />
 Questo operatore è disponibile solo quando si sviluppa con C++.

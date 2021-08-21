@@ -21,7 +21,7 @@ La figura seguente illustra la configurazione di due nodi in subnet separate che
 
 Il requisito principale per l'uso di 6to4 è un indirizzo IPv4 instradabile a livello globale per il sito. Si supponga che il sito sia costituito da una raccolta di computer IPv6 gestiti (alcuni che eseguono il protocollo IPv6 Microsoft e altri che eseguono altre implementazioni IPv6). Si supponga anche che tutti i computer IPv6 siano connessi direttamente tramite Ethernet o 6 su 4. L'indirizzo IPv4 instradabile a livello globale deve essere assegnato a uno dei computer che eseguono il protocollo IPv6 Microsoft. Questo computer sarà il gateway 6to4.
 
-Se si dispone di un indirizzo IPv4 che fa parte dello spazio indirizzi privato (10.0.0.0/8, 172.16.0.0/12 o 192.168.0.0/16) o lo spazio di indirizzi APIPA (Automatic Private IP Addressing) di 169.254.0.0/16 usato da Windows 2000, non è instradabile a livello globale. In caso contrario, è probabilmente un indirizzo IP pubblico ed è instradabile a livello globale. Per altre informazioni su come determinare se la connessione ISP supporta [6to4,](#debugging-6to4-configuration) vedere l'argomento Debug della configurazione 6to4 in questo documento.
+Se si dispone di un indirizzo IPv4 che fa parte dello spazio indirizzi privato (10.0.0.0/8, 172.16.0.0/12 o 192.168.0.0/16) o lo spazio degli indirizzi APIPA (Automatic Private IP Addressing) di 169.254.0.0/16 usato da Windows 2000, non è instradabile a livello globale. In caso contrario, è probabilmente un indirizzo IP pubblico ed è instradabile a livello globale. Per altre informazioni su come determinare se la connessione ISP supporta [6to4,](#debugging-6to4-configuration) vedere l'argomento Debug della configurazione 6to4 in questo documento.
 
 ## <a name="the-6to4cfgexe-tool"></a>Strumento 6to4cfg.exe
 
@@ -42,7 +42,7 @@ Scrive lo script di configurazione in un file, se si specifica un nome file. Lo 
 
 È possibile specificare con per il nome file per scrivere lo script di configurazione nell'output della console, utile per visualizzare le 6to4cfg.exe in uno scenario di test.
 
-Se non si specifica un nome file, 6to4cfg.exe direttamente la configurazione IPv6 nel computer.
+Se non si specifica un nome file, 6to4cfg.exe aggiornare direttamente la configurazione IPv6 nel computer.
 
 </dd> <dt>
 
@@ -145,7 +145,7 @@ Il passaggio finale consiste nell'abilitare il routing nel gateway 6to4. Questo 
 
 **ipv6 rtu 2002:ac1f:2aef:2::/64 4 pub life 1800**
 
-Il **comando ipv6 rtu** specifica che il prefisso 2002:ac1f:2aef:1::/64 è on-link all'interfaccia \# 3. Sta configurando il primo prefisso di subnet nell'interfaccia Ethernet. La route viene pubblicata con una durata di 30 minuti.
+Il **comando ipv6 rtu** specifica che il prefisso 2002:ac1f:2aef:1::/64 è in collegamento all'interfaccia \# 3. Sta configurando il primo prefisso di subnet nell'interfaccia Ethernet. La route viene pubblicata con una durata di 30 minuti.
 
 Analogamente, il prefisso 2002:ac1f:2aef:2::/64 viene configurato nell'interfaccia 6-over-4.
 
@@ -157,15 +157,15 @@ I tre comandi successivi consentono al computer gateway 6to4 di funzionare come 
 
 **ipv6 ifc 4 forw adv**
 
-Il **comando ifc ipv6** controlla gli attributi di un'interfaccia. Un router inoltra i pacchetti e invia annunci router. Nell'implementazione di Microsoft IPv6 questi attributi per interfaccia vengono controllati separatamente.
+Il **comando ifc ipv6** controlla gli attributi di un'interfaccia. Un router inoltra i pacchetti e invia annunci router. Nell'implementazione microsoft IPv6 questi attributi per interfaccia vengono controllati separatamente.
 
 \#L'interfaccia 2 non è necessaria per la pubblicità perché è una pseudo-interfaccia.
 
 Se il computer dispone di interfacce aggiuntive, devono essere configurate anche per l'inoltro e la pubblicità.
 
-Dopo aver eseguito questi comandi, il protocollo Microsoft IPv6 configurerà automaticamente gli indirizzi nelle interfacce 3 e 4 usando i rispettivi prefissi di subnet e le due interfacce inizieranno a inviare annunci router a intervalli di circa \# \# 3-10 minuti.
+Dopo aver eseguito questi comandi, il protocollo Microsoft IPv6 configurerà automaticamente gli indirizzi nelle interfacce 3 e 4 usando i rispettivi prefissi di subnet e le due interfacce inizieranno a inviare annunci router a intervalli da 3 a \# \# 10 minuti circa.
 
-Gli host che ricevono questi annunci router si configureranno automaticamente con una route predefinita e un indirizzo 6to4 derivato dal prefisso della subnet del collegamento. Avranno la comunicazione con altri siti 6to4 e il 6bone attraverso il computer gateway.
+Gli host che ricevono questi annunci router si configureranno automaticamente con una route predefinita e un indirizzo 6to4 derivato dal prefisso della subnet del collegamento. Avranno la comunicazione con altri siti 6to4 e il 6bone tramite il computer gateway.
 
 ## <a name="debugging-6to4-configuration"></a>Debug della configurazione 6to4
 
@@ -173,15 +173,15 @@ Gli host che ricevono questi annunci router si configureranno automaticamente co
 
 1.  Controllare la connettività IPv4 al router di inoltro 6to4:
 
-    **Ping 6to4.ipv6.microsoft.com**
+    **ping 6to4.ipv6.microsoft.com**
 
     Se l'operazione non riesce, la connettività Internet globale non è disponibile.
 
-2.  Controllare l'incapsulamento IPv6 usando il tunneling automatico:
+2.  Controllare l'incapsulamento IPv6 tramite tunneling automatico:
 
     **ping6 ::131.107.152.32**
 
-    In caso di errore, potrebbe essere presente un firewall o nat (Network Address Translator) tra il computer e Internet. Se l'operazione riesce, la connessione Internet può supportare 6to4.
+    In caso di errore, potrebbe essere presente un firewall o nat (Network Address Translator) tra il computer e Internet. Se l'operazione ha esito positivo, la connessione Internet può supportare 6to4.
 
 3.  Controllare la visualizzazione del comando ipv6 rt. Verrà visualizzata una route 2002::/16 -> 2. Controllare la visualizzazione del comando ipv6 se 2. Verrà visualizzato un indirizzo preferito con un prefisso 2002::/16.
 

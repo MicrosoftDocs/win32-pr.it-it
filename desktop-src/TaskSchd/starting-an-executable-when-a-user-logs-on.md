@@ -19,7 +19,7 @@ La scrittura di un'attività che avvia un eseguibile quando un utente accede vie
 
 ## <a name="logon-trigger"></a>Trigger di accesso
 
-I trigger di accesso vengono attivati dal limite di avvio, ma non avviano l'eseguibile finché un utente specificato non esegue l'accesso. È possibile specificare il trigger di accesso da avviare quando un determinato utente accede specificando l'utente nella [**proprietà UserId**](/windows/desktop/api/taskschd/nf-taskschd-ilogontrigger-get_userid) dell'interfaccia [**ILogonTrigger**](/windows/desktop/api/taskschd/nn-taskschd-ilogontrigger) ([**LogonTrigger**](logontrigger.md) per lo scripting).
+I trigger di accesso vengono attivati dal limite iniziale, ma non avviano l'eseguibile fino a quando un utente specificato non esegue l'accesso. È possibile specificare il trigger di accesso da avviare quando un determinato utente accede specificando l'utente nella [**proprietà UserId**](/windows/desktop/api/taskschd/nf-taskschd-ilogontrigger-get_userid) dell'interfaccia [**ILogonTrigger**](/windows/desktop/api/taskschd/nn-taskschd-ilogontrigger) ([**LogonTrigger**](logontrigger.md) per lo scripting).
 
 ## <a name="logontrigger-examples"></a>Esempi di LogonTrigger
 

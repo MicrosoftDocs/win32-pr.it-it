@@ -1,19 +1,19 @@
 ---
-description: Questa sezione contiene informazioni sulle enumerazioni di DirectXMath.
+description: Questa sezione contiene informazioni sulle enumerazioni DirectXMath.
 ms.assetid: 6e05b011-8bf6-3f91-aa4c-6655906b6b8a
 title: Enumerazioni DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e0d15e04cfa017a859b784867f2ed7b1d34530d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ea471702c4abeda3f5a8310ee13e30a68110583ad3d65756ee3b52b12b8f29b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118087856"
 ---
 # <a name="directxmath-enumerations"></a>Enumerazioni DirectXMath
 
-Questa sezione contiene informazioni sulle enumerazioni di DirectXMath.
+Questa sezione contiene informazioni sulle enumerazioni DirectXMath.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -32,7 +32,7 @@ Questa sezione contiene informazioni sulle enumerazioni di DirectXMath.
 
 <dl> <dt>
 
-[Guida di riferimento alla programmazione DirectXMath](ovw-xnamath-reference.md)
+[Informazioni di riferimento sulla programmazione DirectXMath](ovw-xnamath-reference.md)
 </dt> </dl>
 
  

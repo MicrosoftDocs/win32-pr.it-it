@@ -1,14 +1,14 @@
 ---
-title: Proprietà RedirectDirectX di IMsRdpClientAdvancedSettings7
-description: Questa proprietà non viene utilizzata. | Proprietà RedirectDirectX di IMsRdpClientAdvancedSettings7
+title: Proprietà RedirectDirectX IMsRdpClientAdvancedSettings7
+description: Questa proprietà non viene utilizzata. | Proprietà RedirectDirectX IMsRdpClientAdvancedSettings7
 ms.assetid: a027d8d7-994f-4b24-8c46-18651c8e200b
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà RedirectDirectX
-- Servizi Desktop remoto proprietà RedirectDirectX, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà RedirectDirectX
-- Servizi Desktop remoto proprietà RedirectDirectX, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà RedirectDirectX
+- Proprietà RedirectDirectX Servizi Desktop remoto
+- Proprietà RedirectDirectX Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà RedirectDirectX
+- Proprietà RedirectDirectX Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà RedirectDirectX
 topic_type:
 - apiref
 api_name:
@@ -24,14 +24,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 68f7da3ecea0c5a5a77a45b48ff24038a5517dc1
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4fb3b9db5badb8fb313d95cf04dc65681ff3f380dc1381e8b052ed7f2dee5c02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103886153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118130176"
 ---
-# <a name="imsrdpclientadvancedsettings7redirectdirectx-property"></a>Proprietà IMsRdpClientAdvancedSettings7:: RedirectDirectX
+# <a name="imsrdpclientadvancedsettings7redirectdirectx-property"></a>Proprietà IMsRdpClientAdvancedSettings7::RedirectDirectX
 
 Questa proprietà non viene utilizzata.
 
@@ -58,7 +58,7 @@ Questa proprietà non viene utilizzata.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Questa proprietà non viene utilizzata. Il metodo Setter restituisce sempre **S \_ false** e il metodo Getter restituisce sempre **e \_ NOTIMPL**.
+Questa proprietà non viene utilizzata. Il metodo setter restituisce sempre **S \_ FALSE** e il metodo getter restituisce sempre **E \_ NOTIMPL**.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,5 +1,5 @@
 ---
-description: 'Metodo Reset della classe Msvm_ExternalFcPort : richiede una reimpostazione.'
+description: 'Metodo Reset della classe Msvm_ExternalFcPort: richiede una reimpostazione.'
 ms.assetid: 5bd615c6-a87c-404d-a482-277fa02a8510
 title: Metodo Reset della classe Msvm_ExternalFcPort
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 91674f0dd12e8e84337b2c5557b9ff1ffa83a991
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e94154698b59572addc3ee44d7df417cec87db849f52eefab78b42eb13d8e0c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118148158"
 ---
 # <a name="reset-method-of-the-msvm_externalfcport-class"></a>Metodo Reset della classe Msvm \_ ExternalFcPort
 
@@ -43,7 +43,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completata senza errori** (0)
+**Completato senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -56,7 +56,7 @@ Questo metodo restituisce uno dei valori seguenti:
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

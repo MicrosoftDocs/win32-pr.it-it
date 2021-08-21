@@ -1,7 +1,7 @@
 ---
-description: "Il metodo GetStartStop2 recupera le ore di inizio e di fine dell'oggetto, relative all'elemento padre dell'oggetto. Questo metodo è equivalente a IAMTimelineObj:: GetStartStop, ma accetta valori REFTIME."
+description: Il metodo GetStartStop2 recupera gli orari di inizio e arresto dell'oggetto, rispetto all'elemento padre dell'oggetto. Questo metodo equivale a IAMTimelineObj::GetStartStop, ma accetta valori REFTIME.
 ms.assetid: 140842f5-3a24-4947-a360-ef97cba414ee
-title: 'Metodo IAMTimelineObj:: GetStartStop2 (qedit. h)'
+title: Metodo IAMTimelineObj::GetStartStop2 (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 211bd54ee755a08d3e592a856c792eba6e3d4e6e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1ff1644c2ba83848d0c9efa1b850a65aa8cfd1de1607a9fa0cabbab39579e0db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118155452"
 ---
-# <a name="iamtimelineobjgetstartstop2-method"></a>Metodo IAMTimelineObj:: GetStartStop2
+# <a name="iamtimelineobjgetstartstop2-method"></a>Metodo IAMTimelineObj::GetStartStop2
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `GetStartStop2` metodo recupera le ore di inizio e di fine dell'oggetto, relative all'elemento padre dell'oggetto. Questo metodo è equivalente a [**IAMTimelineObj:: GetStartStop**](iamtimelineobj-getstartstop.md), ma accetta valori [**REFTIME**](reftime.md) .
+Il metodo recupera le ore di inizio e arresto `GetStartStop2` dell'oggetto, rispetto all'elemento padre dell'oggetto. Questo metodo equivale a [**IAMTimelineObj::GetStartStop,**](iamtimelineobj-getstartstop.md)ma accetta [**valori REFTIME.**](reftime.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ HRESULT GetStartStop2(
 
 <dl> <dt>
 
-*pStart* 
+*Pstart* 
 </dt> <dd>
 
 Riceve l'ora di inizio, in secondi.
@@ -62,17 +62,17 @@ Riceve l'ora di arresto, in secondi.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -82,8 +82,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

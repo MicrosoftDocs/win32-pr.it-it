@@ -13,7 +13,7 @@ ms.locfileid: "118308786"
 ---
 # <a name="benefits-of-queued-processing"></a>Vantaggi dell'elaborazione in coda
 
-Quando si progettano nuove applicazioni, gli sviluppatori devono considerare le implicazioni dei componenti di codifica per l'elaborazione in tempo reale (sincrona) e l'elaborazione in coda (asincrona). La scelta dipende dai requisiti dell'applicazione specifica, come determinato dalla logica di business sottostante. Come linea guida, l'elaborazione in coda offre i vantaggi seguenti rispetto all'elaborazione in tempo reale:
+Quando progettano nuove applicazioni, gli sviluppatori devono considerare le implicazioni della codifica dei componenti per l'elaborazione in tempo reale (sincrona) e l'elaborazione in coda (asincrona). La scelta dipende dai requisiti dell'applicazione specifica, come determinato dalla logica di business sottostante. Come linea guida, l'elaborazione in coda offre i vantaggi seguenti rispetto all'elaborazione in tempo reale:
 
 -   Riduzione della dipendenza dalla disponibilità dei componenti
 -   Durate dei componenti più brevi

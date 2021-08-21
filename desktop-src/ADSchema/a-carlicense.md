@@ -1,6 +1,6 @@
 ---
 title: Attributo carLicense
-description: Licenza del veicolo o la targhetta di registrazione.
+description: Licenza del veicolo o targhe di registrazione.
 ms.assetid: 09505889-3dcc-46a3-851d-d9594c3a2ccb
 ms.tgt_platform: multiple
 keywords:
@@ -22,7 +22,7 @@ ms.locfileid: "118427596"
 ---
 # <a name="carlicense-attribute"></a>Attributo carLicense
 
-Licenza del veicolo o la targhetta di registrazione.
+Licenza del veicolo o targhe di registrazione.
 
 
 
@@ -31,7 +31,7 @@ Licenza del veicolo o la targhetta di registrazione.
 | CN                | carLicense                                  |
 | Ldap-Display-Name | carLicense                                  |
 | Dimensione              | \-                                          |
-| Privilegio di aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 2.16.840.1.113730.3.1.1                     |
 | System-Id-Guid    | d4159c92-957d-4a87-8a67-8d2934e01649        |
@@ -119,7 +119,7 @@ Licenza del veicolo o la targhetta di registrazione.
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| A valore singolo       | Falso                                                                                 |
+| Is-Single-Valued       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
@@ -140,7 +140,7 @@ Licenza del veicolo o la targhetta di registrazione.
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| A valore singolo       | Falso                                                                                 |
+| Is-Single-Valued       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |

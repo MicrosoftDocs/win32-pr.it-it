@@ -1,7 +1,7 @@
 ---
-description: "Il metodo SetMediaTimes2 imposta l'ora di inizio e di fine del supporto. Questo metodo è equivalente a IAMTimelineSrc:: SetMediaTimes, ma accetta valori REFTIME."
+description: Il metodo SetMediaTimes2 imposta l'ora di inizio e di arresto dei supporti. Questo metodo è equivalente a IAMTimelineSrc::SetMediaTimes, ma accetta valori REFTIME.
 ms.assetid: 9eea7965-46c5-416c-97df-134d29130c8a
-title: 'Metodo IAMTimelineSrc:: SetMediaTimes2 (qedit. h)'
+title: Metodo IAMTimelineSrc::SetMediaTimes2 (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 4aa4f68a6fb93c329507edceea4e9665bfecd5f7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5d94515f2e810f74e788f5d8909ddee377bebee29525cc3d0c12b0463635043e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118154903"
 ---
-# <a name="iamtimelinesrcsetmediatimes2-method"></a>Metodo IAMTimelineSrc:: SetMediaTimes2
+# <a name="iamtimelinesrcsetmediatimes2-method"></a>Metodo IAMTimelineSrc::SetMediaTimes2
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il `SetMediaTimes2` metodo imposta l'ora di inizio e di fine del supporto. Questo metodo è equivalente a [**IAMTimelineSrc:: SetMediaTimes**](iamtimelinesrc-setmediatimes.md), ma accetta valori [**REFTIME**](reftime.md) .
+Il `SetMediaTimes2` metodo imposta l'ora di inizio e di arresto del supporto. Questo metodo è equivalente a [**IAMTimelineSrc::SetMediaTimes**](iamtimelinesrc-setmediatimes.md), ma accetta valori [**REFTIME.**](reftime.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,17 +62,17 @@ Tempo di arresto del supporto, in secondi.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -82,8 +82,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

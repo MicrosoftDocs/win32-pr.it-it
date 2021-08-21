@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe BoolColumnValue'
+description: Altre informazioni sulla classe BoolColumnValue
 title: Classe BoolColumnValue
 TOCTitle: BoolColumnValue class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.BoolColumnValue
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 628ace76e9558774130cc14e4e1a7d380be66fc8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 28f360745c09adb913ae7c62babbc417ac0ec5297441a1d3368e101bfd90d9a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118084227"
 ---
 # <a name="boolcolumnvalue-class"></a>Classe BoolColumnValue
 
-Valore della colonna [booleana](/dotnet/api/system.boolean) .
+Valore [di colonna](/dotnet/api/system.boolean) booleano.
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  [Microsoft. ISAM. esent. Interop. ColumnValue](./columnvalue-class.md)  
-    [Microsoft. ISAM. esent. Interop. ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Boolean](/dotnet/api/system.boolean)\>  
-      Microsoft. ISAM. esent. Interop. BoolColumnValue  
+  [Microsoft.Isam.Esent.Interop.ColumnValue](./columnvalue-class.md)  
+    [Microsoft.Isam.Esent.Interop.ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Boolean](/dotnet/api/system.boolean)\>  
+      Microsoft.Isam.Esent.Interop.BoolColumnValue  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -69,4 +69,4 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 [Membri di BoolColumnValue](./boolcolumnvalue-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

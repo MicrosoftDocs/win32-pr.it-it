@@ -1,6 +1,6 @@
 ---
 title: Metodi della proprietà IADsSecurityDescriptor (Iads.h)
-description: I metodi di proprietà dell'interfaccia IADsSecurityDescriptor ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere Metodi delle proprietà di interfaccia.
+description: I metodi di proprietà dell'interfaccia IADsSecurityDescriptor ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere Metodi delle proprietà dell'interfaccia.
 ms.assetid: e0c50740-de98-4913-b3df-6fd53263bcc8
 ms.tgt_platform: multiple
 keywords:
@@ -54,7 +54,7 @@ ms.locfileid: "118427627"
 ---
 # <a name="iadssecuritydescriptor-property-methods"></a>Metodi della proprietà IADsSecurityDescriptor
 
-I metodi di proprietà [**dell'interfaccia IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere [Metodi delle proprietà di interfaccia.](interface-property-methods.md)
+I metodi di proprietà [**dell'interfaccia IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere [Metodi delle proprietà dell'interfaccia](interface-property-methods.md).
 
 ## <a name="properties"></a>Proprietà
 
@@ -63,14 +63,14 @@ I metodi di proprietà [**dell'interfaccia IADsSecurityDescriptor**](/windows/de
 **Controllo**
 </dt> <dd> <dl>
 
-Flag che qualificano il significato del descrittore di sicurezza. I valori derivano dalla struttura [**SECURITY \_ DESCRIPTOR \_ CONTROL**](/windows/desktop/SecAuthZ/security-descriptor-control) di Win32.
+Flag che qualificano il significato del descrittore di sicurezza. I valori vengono presi dalla struttura WIN32 [**SECURITY \_ DESCRIPTOR \_ CONTROL.**](/windows/desktop/SecAuthZ/security-descriptor-control)
 
 <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **LONG**
+Tipo di dati scripting: **LONG**
 </dt> <dt>
 
 
@@ -91,14 +91,14 @@ HRESULT put_Control(
 **DaclDefaulted**
 </dt> <dd> <dl>
 
-Flag del tipo BOOL che indica se l'elenco DACL è derivato da un meccanismo predefinito, anziché essere fornito in modo esplicito dal provider originale del descrittore di sicurezza. Ad esempio, se l'autore di un oggetto non specifica un DACL, l'oggetto riceve l'elenco DACL predefinito dal token di accesso dell'autore. Questo flag può influire sul modo in cui il sistema considera l'elenco DACL, in relazione all'ereditarietà ACE. Il sistema ignora questo flag se edizione Standard \_ flag DACL \_ PRESENT non è impostato.
+Flag di tipo BOOL che indica se l'elenco DACL è derivato da un meccanismo predefinito, anziché essere fornito in modo esplicito dal provider originale del descrittore di sicurezza. Ad esempio, se l'autore di un oggetto non specifica un elenco DACL, l'oggetto riceve l'elenco DACL predefinito dal token di accesso dell'autore. Questo flag può influire sul modo in cui il sistema tratta l'elenco DACL, rispetto all'ereditarietà ACE. Il sistema ignora questo flag se il flag \_ EDIZIONE STANDARD DACL \_ PRESENT non è impostato.
 
 <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **VARIANT \_ BOOL**
+Tipo di dati scripting: **VARIANT \_ BOOL**
 </dt> <dt>
 
 
@@ -119,11 +119,11 @@ HRESULT put_DaclDefaulted(
 **Discretionaryacl**
 </dt> <dd> <dl>
 
-Elenco di controllo di accesso discrezionale (DACL) che specifica i tipi di accesso concessi all'oggetto per utenti e gruppi specificati. Per altre informazioni sui daCL, vedere [DaCL Null e DACL vuoti.](/windows/desktop/AD/null-dacls-and-empty-dacls)
+Elenco di controllo di accesso discrezionale (DACL) che specifica i tipi di accesso concessi all'oggetto per utenti e gruppi specificati. Per altre informazioni sui DACL, vedere [DACL Null e DACL vuoti.](/windows/desktop/AD/null-dacls-and-empty-dacls)
 
 <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Tipo di dati scripting: **IDispatch**
@@ -151,10 +151,10 @@ Gruppo a cui appartiene l'ID di sicurezza del proprietario.
 
 <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -175,14 +175,14 @@ HRESULT put_Group(
 **GroupDefaulted**
 </dt> <dd> <dl>
 
-Flag del tipo BOOL che indica se i dati del gruppo sono derivati da un meccanismo predefinito, anziché essere forniti in modo esplicito dal provider originale del descrittore di sicurezza.
+Flag di tipo BOOL che indica se i dati del gruppo sono derivati da un meccanismo predefinito, anziché essere forniti in modo esplicito dal provider originale del descrittore di sicurezza.
 
 <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **VARIANT \_ BOOL**
+Tipo di dati scripting: **VARIANT \_ BOOL**
 </dt> <dt>
 
 
@@ -207,10 +207,10 @@ Proprietario dell'oggetto.
 
 <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -231,14 +231,14 @@ HRESULT put_Owner(
 **OwnerDefaulted**
 </dt> <dd> <dl>
 
-Flag del tipo BOOL che indica che i dati del proprietario sono derivati da un meccanismo predefinito, anziché essere forniti in modo esplicito dal provider originale del descrittore di sicurezza.
+Flag di tipo BOOL che indica che i dati del proprietario sono derivati da un meccanismo predefinito, anziché essere forniti in modo esplicito dal provider originale del descrittore di sicurezza.
 
 <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **VARIANT \_ BOOL**
+Tipo di dati scripting: **VARIANT \_ BOOL**
 </dt> <dt>
 
 
@@ -263,10 +263,10 @@ Livello di revisione del descrittore di sicurezza. Questo valore deriva dalla st
 
 <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **LONG**
+Tipo di dati scripting: **LONG**
 </dt> <dt>
 
 
@@ -287,14 +287,14 @@ HRESULT put_Revision(
 **SaclDefaulted**
 </dt> <dd> <dl>
 
-Flag del tipo BOOL che indica che l'elenco SACL è derivato da un meccanismo predefinito, anziché essere fornito in modo esplicito dal provider originale del descrittore di sicurezza. Questo flag può influire sul modo in cui il sistema gestisce l'elenco SACL, in relazione all'ereditarietà ACE. Il sistema ignora questo flag se edizione Standard \_ flag SACL \_ PRESENT non è impostato.
+Flag di tipo BOOL che indica che l'elenco sacl è derivato da un meccanismo predefinito, anziché essere fornito in modo esplicito dal provider originale del descrittore di sicurezza. Questo flag può influire sul modo in cui il sistema gestisce l'elenco sacl, in relazione all'ereditarietà ACE. Il sistema ignora questo flag se il flag \_ EDIZIONE STANDARD SACL \_ PRESENT non è impostato.
 
 <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **VARIANT \_ BOOL**
+Tipo di dati scripting: **VARIANT \_ BOOL**
 </dt> <dt>
 
 
@@ -315,11 +315,11 @@ HRESULT put_SaclDefaulted(
 **Systemacl**
 </dt> <dd> <dl>
 
-Elenco di controllo di accesso di sistema utilizzato per generare record di controllo per l'oggetto.
+Elenco di controllo di accesso di sistema utilizzato per generare record di controllo per l'oggetto .
 
 <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Tipo di dati scripting: **IDispatch**
@@ -387,7 +387,7 @@ Cleanup:
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                            |
 | Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>         |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl>   |
-| IID<br/>                      | IID \_ IADsSecurityDescriptor è definito come B8C787CA-9BDD-11D0-852C-00C04FD8D503<br/> |
+| IID<br/>                      | IADsSecurityDescriptor IID è definito \_ come B8C787CA-9BDD-11D0-852C-00C04FD8D503<br/> |
 
 
 

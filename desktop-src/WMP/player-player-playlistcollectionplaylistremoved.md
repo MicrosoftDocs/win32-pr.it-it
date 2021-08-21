@@ -3,9 +3,9 @@ title: Evento Player.PlaylistCollectionPlaylistRemoved
 description: L'evento PlaylistCollectionPlaylistRemoved si verifica quando una playlist viene rimossa dalla raccolta di playlist. | Evento Player.PlaylistCollectionPlaylistRemoved
 ms.assetid: 2405be98-b4c2-4b4e-bea6-0c48a3e26f18
 keywords:
-- PlaylistCollectionPlaylistRemoved event Windows Media Player
-- PlaylistCollectionPlaylistRemoved event Windows Media Player , Player class
-- Classe Player Windows Media Player, playlistCollectionPlaylistRemoved
+- Gestore eventi PlaylistCollectionPlaylistRemoved Windows Media Player
+- Classe di evento PlaylistCollectionPlaylistRemoved Windows Media Player , Player
+- Classe Player Windows Media Player, PlaylistCollectionPlaylistRemoved
 topic_type:
 - apiref
 api_name:
@@ -55,7 +55,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore dei parametri dell'evento viene specificato da Windows Media Player ed è accessibile o passato a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, inclusa l'maiuscola.
+Il valore dei parametri dell'evento viene specificato da Windows Media Player e può essere accessibile o passato a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, inclusa l'maiuscola.
 
 **Windows Media Player 10 Mobile:** Questo evento non è supportato.
 

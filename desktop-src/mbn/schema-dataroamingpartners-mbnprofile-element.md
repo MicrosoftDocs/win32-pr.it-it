@@ -11,18 +11,18 @@ api_name:
 - DataRoamingPartners
 api_type:
 - Schema
-ms.openlocfilehash: 7f721abd608dd241c399f16eee90369ebcf19594
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 21b3b218a55fa3f56c5069b53ca45769a726b4a9aabab2d080f547d479c0be26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118066155"
 ---
 # <a name="dataroamingpartners-mbnprofile-element"></a>Elemento DataRoamingPartners (MBNProfile)
 
-L'elemento **DataRoamingPartners (MBNProfile)** specifica l'elenco dei provider di rete preferiti al momento del roaming.
+**L'elemento DataRoamingPartners (MBNProfile)** specifica l'elenco dei provider di rete preferiti al momento del roaming.
 
-Il servizio Mobile Broadband usa questo elemento per selezionare la rete preferita da fornire durante il roaming.
+Il servizio Mobile Broadband usa questo elemento per selezionare la rete preferita durante il roaming.
 
 L'elemento ha l'elemento figlio seguente che deve essere definito almeno una volta, ma può essere definito più volte.
 
@@ -45,7 +45,7 @@ Questo elemento è facoltativo.
 </xs:element>
 ```
 
-L'elemento **DataRoamingPartners** è definito dall'elemento [**MBNProfile**](schema-mbnprofile-element.md) .
+**L'elemento DataRoamingPartners** è definito dall'elemento [**MBNProfile.**](schema-mbnprofile-element.md)
 
 ## <a name="child-elements"></a>Elementi figlio
 
@@ -53,7 +53,7 @@ L'elemento **DataRoamingPartners** è definito dall'elemento [**MBNProfile**](sc
 
 | Elemento                                                         | Tipo                                                    | Descrizione                                            |
 |-----------------------------------------------------------------|---------------------------------------------------------|--------------------------------------------------------|
-| [**Provider**](schema-provider-dataroamingpartners-element.md) | [**providerType**](schema-providertype-complextype.md) | Nome e ID del provider di una rete cellulare.<br/> |
+| [**Provider**](schema-provider-dataroamingpartners-element.md) | [**Providertype**](schema-providertype-complextype.md) | Nome e ID provider di una rete cellulare.<br/> |
 
 
 
@@ -63,7 +63,7 @@ L'elemento **DataRoamingPartners** è definito dall'elemento [**MBNProfile**](sc
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                         |
 
 
@@ -78,7 +78,7 @@ L'elemento **DataRoamingPartners** è definito dall'elemento [**MBNProfile**](sc
 [**MBNProfile**](schema-mbnprofile-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**MBNProfile**](schema-mbnprofile-element.md)

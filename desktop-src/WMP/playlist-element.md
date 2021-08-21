@@ -3,11 +3,11 @@ title: Elemento PLAYLIST
 description: Elemento PLAYLIST
 ms.assetid: de568529-81f2-476b-ad1b-bb53f7e97b13
 keywords:
-- Windows Media Player, elemento PLAYLIST
-- skins,PLAYLIST - elemento
+- Windows Media Player skin, elemento PLAYLIST
+- skins,elemento PLAYLIST
 - Elemento PLAYLIST
-- riferimento per le interfaccia, elemento PLAYLIST
-- elementi, PLAYLIST
+- informazioni di riferimento per le skin, elemento PLAYLIST
+- elementi,PLAYLIST
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: fed45a2b8d7a0c0c5a2e19a783fbecf1041ecf2550c9f9a3a31e4b7c1aab894d
@@ -19,7 +19,7 @@ ms.locfileid: "118336747"
 ---
 # <a name="playlist-element"></a>Elemento PLAYLIST
 
-**L'elemento PLAYLIST** consente di organizzare gli elementi multimediali in un elenco per facilita la manipolazione usando gli attributi e i metodi seguenti. Anche gli **elementi PLAYLIST** predefiniti vengono forniti per praticità. È possibile specificare colonne personalizzate per una playlist includendo **gli elementi COLUMN** come elementi figlio dell'elemento **PLAYLIST.**
+**L'elemento PLAYLIST** consente di organizzare gli elementi multimediali in un elenco per una facile manipolazione usando gli attributi e i metodi seguenti. Gli elementi **PLAYLIST predefiniti** vengono forniti anche per praticità. È possibile specificare colonne personalizzate per una playlist includendo **gli elementi COLUMN** come elementi figlio dell'elemento **PLAYLIST.**
 
 **L'elemento PLAYLIST** supporta gli attributi seguenti.
 
@@ -28,16 +28,16 @@ ms.locfileid: "118336747"
 | Attributo                                                                                 | Descrizione                                                                                                                                |
 |-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | [allowColumnSorting](playlist-allowcolumnsorting.md)                                     | Specifica o recupera un valore che indica se è consentito l'ordinamento in base alle intestazioni di colonna.                                                    |
-| [allowItemEditing](playlist-allowitemediting.md)                                         | Specifica o recupera un valore che indica se gli elementi in una playlist supportano la modifica sul posto.                                            |
+| [allowItemEditing](playlist-allowitemediting.md)                                         | Specifica o recupera un valore che indica se gli elementi di una playlist supportano la modifica sul posto.                                            |
 | [Backgroundcolor](playlist-backgroundcolor.md)                                           | Specifica o recupera il colore di sfondo.                                                                                               |
 | [backgroundImage](playlist-backgroundimage.md)                                           | Specifica o recupera l'immagine di sfondo.                                                                                               |
 | [checkboxesVisible](playlist-checkboxesvisible.md)                                       | Specifica o recupera un valore che indica se le caselle di controllo sono visibili.                                                                  |
 | [Columncount](playlist-columncount.md)                                                   | Recupera il numero di colonne visualizzate.                                                                                                     |
 | [columnOrder](playlist-columnorder.md)                                                   | Specifica o recupera l'ordine delle colonne della playlist.                                                                                  |
 | [Colonne](playlist-columns.md)                                                           | Definisce le colonne visualizzate **nell'elemento PLAYLIST.**                                                                               |
-| [columnsVisible](playlist-columnsvisible.md)                                             | Specifica o recupera un valore che indica se le colonne vengono visualizzate.                                                                       |
-| [Copia](playlist-copying.md)                                                           | Recupera un valore che indica se **l'elemento PLAYLIST** sta per essere copiato.                                                    |
-| [disabledItemColor](playlist-disableditemcolor.md)                                       | Specifica o recupera il colore di una traccia CD disabilitata o del contenuto online quando è offline.                                                 |
+| [columnsVisible](playlist-columnsvisible.md)                                             | Specifica o recupera un valore che indica se vengono visualizzate colonne.                                                                       |
+| [Copia](playlist-copying.md)                                                           | Recupera un valore che indica se l'elemento **PLAYLIST** è in corso di copia.                                                    |
+| [disabledItemColor](playlist-disableditemcolor.md)                                       | Specifica o recupera il colore di una traccia CD disabilitata o del contenuto online in modalità offline.                                                 |
 | [dropDownBackgroundImage](playlist-dropdownbackgroundimage.md)                           | Specifica o recupera il nome dell'immagine visualizzata sullo sfondo dell'elenco a discesa.                                        |
 | [dropDownImage](playlist-dropdownimage.md)                                               | Specifica o recupera il nome dell'immagine utilizzata per il pulsante dell'elenco a discesa visualizzato sul bordo destro dell'elenco a discesa. |
 | [Dropdownlist](playlist-dropdownlist.md)                                                 | Specifica o recupera un valore che indica quali elementi vengono visualizzati nell'elenco a discesa per una determinata istanza **dell'elemento PLAYLIST.**   |
@@ -56,8 +56,8 @@ ms.locfileid: "118336747"
 | [itemSelectedBackgroundFocusLostColor](playlist-itemselectedbackgroundfocuslostcolor.md) | Specifica o recupera un valore che indica il colore del testo di un elemento selezionato nella playlist.                                               |
 | [itemSelectedColor](playlist-itemselectedcolor.md)                                       | Specifica o recupera un valore che indica il colore del testo di un elemento selezionato nella playlist.                                               |
 | [itemSelectedFocusLostColor](playlist-itemselectedfocuslostcolor.md)                     | Specifica o recupera un valore che indica il colore del testo di un elemento selezionato nella playlist quando la playlist perde lo stato attivo.                 |
-| [leftStatus](playlist-leftstatus.md)                                                     | Specifica o recupera il testo di stato visualizzato sul lato sinistro e inferiore **dell'elemento PLAYLIST.**                          |
-| [Playlist](playlist-playlist.md)                                                         | Specifica o recupera l'oggetto **Playlist a** cui l'elemento **PLAYLIST** fornisce un'interfaccia.                                    |
+| [leftStatus](playlist-leftstatus.md)                                                     | Specifica o recupera il testo di stato visualizzato sul lato sinistro e inferiore dell'elemento **PLAYLIST.**                          |
+| [Playlist](playlist-playlist.md)                                                         | Specifica o recupera l'oggetto **Playlist** a cui l'elemento **PLAYLIST** fornisce un'interfaccia.                                    |
 | [playlistItemsVisible](playlist-playlistitemsvisible.md)                                 | Specifica o recupera un valore che indica se gli elementi nella playlist sono visibili.                                                       |
 | [rightStatus](playlist-rightstatus.md)                                                   | Specifica o recupera il testo di stato visualizzato sul lato destro e nella parte inferiore **dell'elemento PLAYLIST.**                         |
 | [Saturazione](playlist-saturation.md)                                                     | Specifica o recupera il valore di saturazione delle immagini a discesa.                                                                       |
@@ -80,11 +80,11 @@ ms.locfileid: "118336747"
 | [copy](playlist-copy.md)                                           | Avvia un'operazione di copia dal CD.                                                                                      |
 | [deleteSelected](playlist-deleteselected.md)                       | Elimina l'elemento selezionato dalla playlist.                                                                              |
 | [deleteSelectedFromLibrary](playlist-deleteselectedfromlibrary.md) | Elimina l'elemento selezionato dalla playlist e dalla libreria.                                                         |
-| [getNextCheckedItem](playlist-getnextcheckeditem.md)               | Recupera l'indice dell'elemento selezionato successivo nella playlist che segue l'indice specificato.                               |
-| [getNextCheckedItem2](playlist-getnextcheckeditem2.md)             | Recupera l'indice dell'elemento selezionato successivo nella playlist che segue l'indice specificato. Funziona con playlist annidate.  |
-| [getNextSelectedItem](playlist-getnextselecteditem.md)             | Recupera l'indice dell'elemento selezionato successivo nella playlist dopo l'indice specificato.                              |
-| [getNextSelectedItem2](playlist-getnextselecteditem2.md)           | Recupera l'indice dell'elemento selezionato successivo nella playlist dopo l'indice specificato. Funziona con playlist annidate. |
-| [moveSelectedDown](playlist-moveselecteddown.md)                   | Sposta l'elemento selezionato verso il basso di una posizione nell'elenco.                                                                    |
+| [getNextCheckedItem](playlist-getnextcheckeditem.md)               | Recupera l'indice del successivo elemento selezionato nella playlist che segue l'indice specificato.                               |
+| [getNextCheckedItem2](playlist-getnextcheckeditem2.md)             | Recupera l'indice del successivo elemento selezionato nella playlist che segue l'indice specificato. Funziona con playlist annidate.  |
+| [getNextSelectedItem](playlist-getnextselecteditem.md)             | Recupera l'indice del successivo elemento selezionato nella playlist che segue l'indice specificato.                              |
+| [getNextSelectedItem2](playlist-getnextselecteditem2.md)           | Recupera l'indice del successivo elemento selezionato nella playlist che segue l'indice specificato. Funziona con playlist annidate. |
+| [moveSelectedDown](playlist-moveselecteddown.md)                   | Sposta l'elemento selezionato di una posizione verso il basso nell'elenco.                                                                    |
 | [moveSelectedUp](playlist-moveselectedup.md)                       | Sposta l'elemento selezionato verso l'alto di una posizione nell'elenco.                                                                      |
 | [setCheckedState](playlist-setcheckedstate.md)                     | Specifica che l'elemento indicizzato nella playlist è selezionato.                                                               |
 | [setCheckedState2](playlist-setcheckedstate2.md)                   | Imposta lo stato selezionato dell'elemento con l'indice specificato **nell'elemento PLAYLIST.** Funziona con playlist annidate.     |
@@ -98,16 +98,16 @@ ms.locfileid: "118336747"
 
  
 
-**L'elemento PLAYLIST** supporta gli attributi di ambiente e può implementare i gestori eventi di ambiente, tranne dove specificato. Per altre informazioni, vedere [Attributi di ambiente e](ambient-attributes.md) Gestori eventi di [ambiente](ambient-event-handlers.md).
+**L'elemento PLAYLIST** supporta gli attributi di ambiente e può implementare i gestori eventi di ambiente, tranne quando specificato. Per altre informazioni, vedere [Attributi di ambiente e](ambient-attributes.md) Gestori eventi di [ambiente.](ambient-event-handlers.md)
 
-Le playlist predefinite sono normali elementi **PLAYLIST** con diverse impostazioni di attributi comuni specificate per impostazione predefinita. Sono disponibili le playlist predefinite seguenti.
+Le playlist predefinite sono elementi **PLAYLIST** normali con diverse impostazioni di attributi comuni specificate per impostazione predefinita. Sono disponibili le playlist predefinite seguenti.
 
 
 
 | PLAYLIST predefinita                      | Descrizione                                                       |
 |------------------------------------------|-------------------------------------------------------------------|
-| [ELENCO A DISCESAPLAYLIST](dropdownplaylist.md) | Playlist a **discesa** senza elementi visibili.                   |
-| [ITEMSPLAYLIST](itemsplaylist.md)       | Elenco a discesa **PLAYLIST** senza intestazioni di colonna o elementi visibili. |
+| [DROPDOWNPLAYLIST](dropdownplaylist.md) | PLAYLIST a **discesa** senza elementi visibili.                   |
+| [ITEMSPLAYLIST](itemsplaylist.md)       | Playlist a **discesa** senza elementi o intestazioni di colonna visibili. |
 
 
 

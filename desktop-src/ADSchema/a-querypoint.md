@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bbd3e1cb56bd07c97ecbaff9a1802f5af68d5ef
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d072d9d4ad93d90450cab97557534df4417fbf757a0a3815e07df685b5e0e512
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118423832"
 ---
 # <a name="querypoint-attribute"></a>Attributo QueryPoint
 
@@ -30,12 +30,12 @@ URL o UNC di una pagina di query o di un altro front-end per l'accesso a un cata
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | QueryPoint                                  |
-| LDAP-Display-Name | queryPoint                                  |
+| Ldap-Display-Name | queryPoint                                  |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.680                      |
-| System-ID-GUID    | 7bfdcb86-4807-11d1-a9c3-0000f80367c1        |
+| System-Id-Guid    | 7bfdcb86-4807-11d1-a9c3-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ URL o UNC di una pagina di query o di un altro front-end per l'accesso a un cata
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
+| Classi usate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ URL o UNC di una pagina di query o di un altro front-end per l'accesso a un cata
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
+| Classi usate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ URL o UNC di una pagina di query o di un altro front-end per l'accesso a un cata
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
+| Classi usate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ URL o UNC di una pagina di query o di un altro front-end per l'accesso a un cata
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
+| Classi usate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ URL o UNC di una pagina di query o di un altro front-end per l'accesso a un cata
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
+| Classi usate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ URL o UNC di una pagina di query o di un altro front-end per l'accesso a un cata
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
+| Classi usate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
 
 
 

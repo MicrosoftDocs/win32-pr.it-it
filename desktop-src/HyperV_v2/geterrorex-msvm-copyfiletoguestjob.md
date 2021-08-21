@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 81a570c42457257212e83f9c0c034c4a390e4c04
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 69dd440df079379d8e4bd9cee6e1cad23e684cb80a11e7e48d39752ccea82426
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118149814"
 ---
-# <a name="msvm_copyfiletoguestjobgeterrorex-method"></a>Metodo Msvm \_ CopyFileToGuestJob::GetErrorEx
+# <a name="msvm_copyfiletoguestjobgeterrorex-method"></a>Metodo \_ Msvm CopyFileToGuestJob::GetErrorEx
 
-Recupera gli oggetti errore per il processo, se presenti. Quando il processo è in esecuzione o è terminato senza errori, questo metodo non restituisce alcuna [**istanza di Msvm \_ Error.**](msvm-error.md) Tuttavia, se il processo ha avuto esito negativo a causa di un problema interno o perché il processo è stato terminato da un client, vengono restituite una o più **istanze di Msvm \_ Error.**
+Recupera gli oggetti errore per il processo, se presenti. Quando il processo è in esecuzione o è terminato senza errori, questo metodo non restituisce alcuna [**istanza msvm \_ Error.**](msvm-error.md) Tuttavia, se il processo non è riuscito a causa di un problema interno o perché il processo è stato terminato da un client, vengono restituite una o più istanze **di Errore \_ Msvm.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,10 +52,10 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
-**Operazione non** riuscita (32768)
+**Non riuscito** (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -94,8 +94,8 @@ Questo metodo restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 solo \[ app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 R2 \[\]<br/>                                                 |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                                 |
 | Spazio dei nomi<br/>                | \\\\Root \\ Virtualization \\ V2<br/>                                                                 |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

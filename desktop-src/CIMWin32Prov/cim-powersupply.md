@@ -432,7 +432,7 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevi
 
 <span id="This_device_is_working_properly."></span><span id="this_device_is_working_properly."></span><span id="THIS_DEVICE_IS_WORKING_PROPERLY."></span>
 
-<span id="this_device_is_working_properly."></span><span id="THIS_DEVICE_IS_WORKING_PROPERLY."></span>**Questo dispositivo funziona correttamente.**  (0)
+<span id="this_device_is_working_properly."></span><span id="THIS_DEVICE_IS_WORKING_PROPERLY."></span>**Il dispositivo funziona correttamente.**  (0)
 
 
 </dt> <dd>
@@ -466,7 +466,7 @@ Il dispositivo non è configurato correttamente.
 
 </dt> <dd>
 
-Il driver per questo dispositivo potrebbe essere danneggiato o la memoria del sistema potrebbe essere insufficiente o altre risorse.
+Il driver per questo dispositivo potrebbe essere danneggiato o il sistema potrebbe avere memoria insufficiente o altre risorse.
 
 </dd> <dt>
 
@@ -950,7 +950,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Win32 Plug and Play identificatore di dispositivo del dispositivo logico. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Win32 Plug and Play identificatore del dispositivo logico. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 Esempio: \* "PNP030b"
 
@@ -1140,7 +1140,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Power Supply \| 002.20"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("hertz")
 </dt> </dl>
 
-Frequenza (in hertz) all'estremità superiore dell'intervallo di frequenza di input dell'alimentatore 2. Il valore 0 implica dc.
+Frequenza (in hertz) all'estremità alta dell'intervallo di frequenza di input dell'alimentatore 2. Il valore 0 implica DC.
 
 </dd> <dt>
 
@@ -1156,7 +1156,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Power Supply \| 002.19"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("hertz")
 </dt> </dl>
 
-Frequenza (in hertz) all'estremità bassa dell'intervallo di frequenza di input dell'alimentatore 2. Il valore 0 implica dc.
+Frequenza (in hertz) all'estremità bassa dell'intervallo di frequenza di input dell'alimentatore 2. Il valore 0 implica DC.
 
 </dd> <dt>
 
@@ -1172,7 +1172,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Power Supply \| 002.12"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("millivolts")
 </dt> </dl>
 
-Alta tensione dell'intervallo di tensione di input 2 per l'alimentatore, in millivolt. Il valore 0 indica "Sconosciuto".
+Alta tensione dell'intervallo di tensione di input 2 per l'alimentatore, in millivolts. Il valore 0 indica "Sconosciuto".
 
 </dd> <dt>
 
@@ -1195,7 +1195,7 @@ Bassa tensione dell'intervallo di tensione di input 2 per questo alimentatore, i
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1221,14 +1221,14 @@ Sono inclusi i valori seguenti:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Errore** ("Error")
+**Errore** ("Errore")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degraded** ("Degraded")
+**Degradato** ("Degraded")
 
 
 </dt> <dd></dd> <dt>
@@ -1249,7 +1249,7 @@ Sono inclusi i valori seguenti:
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Starting** ("Starting")
+**Avvio** ("Avvio")
 
 
 </dt> <dd></dd> <dt>
@@ -1310,7 +1310,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.3")
 </dt> </dl>
 
-Stato del dispositivo logico. Se questa proprietà non si applica al dispositivo logico, è necessario usare il valore 5 (Non applicabile).
+Stato del dispositivo logico. Se questa proprietà non si applica al dispositivo logico, deve essere usato il valore 5 (Non applicabile).
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
@@ -1356,16 +1356,16 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevi
 **SystemCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**CHIAVE \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**SISTEMA CIM \_**](cim-system.md).**CreationClassName**"), [**chiave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nome della classe di creazione del sistema di definizione dell'ambito.
+Nome della classe di creazione del sistema di ambito.
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
@@ -1374,16 +1374,16 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevi
 **Systemname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Name**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**SISTEMA CIM \_**](cim-system.md).**Name**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nome del sistema di definizione dell'ambito.
+Nome del sistema di ambito.
 
 Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
@@ -1401,7 +1401,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Power Supply \| 002.21"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("milliwatts")
 </dt> </dl>
 
-Potenza di output totale dell'alimentatore, in milliwatts. Il valore 0 indica "Sconosciuto".
+Potenza di output totale dell'alimentatore, in milliwatt. Il valore 0 indica "Sconosciuto".
 
 </dd> <dt>
 
@@ -1467,11 +1467,11 @@ Tipo di commutazione dell'intervallo di tensione di input implementato nell'alim
 
 ## <a name="remarks"></a>Commenti
 
-La **classe \_ CiM PowerSupply** è derivata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+La **classe CIM \_ PowerSupply** è derivata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
-WMI non implementa questa classe. Per WMI derivato da **CIM \_ PowerSupply,** vedere [Classi Win32.](win32-provider.md)
+WMI non implementa questa classe. Per wmi classed derived from **CIM \_ PowerSupply**, vedere [Classi Win32](win32-provider.md).
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica LVN_BEGINDRAG (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo di visualizzazione elenco che viene avviata un'operazione di trascinamento della selezione che interessa il pulsante sinistro del mouse. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: LVN_BEGINDRAG di notifica (Commctrl.h)
+description: Notifica alla finestra padre di un controllo visualizzazione elenco che è in corso un'operazione di trascinamento della selezione che coinvolge il pulsante sinistro del mouse. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 2b9bbff8-f5f7-47ac-b662-a327ff49caf7
 keywords:
-- Controlli di Windows per il codice di notifica LVN_BEGINDRAG
+- LVN_BEGINDRAG codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 69166cd38242db915f70772b5dfbd3bab6ba56df
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 33c86730f624e74420ccf8e9c3b47035ce075ac20448d9bedb99784ec1ca1c5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118170357"
 ---
-# <a name="lvn_begindrag-notification-code"></a>\_Codice di notifica BEGINDRAG di LVN
+# <a name="lvn_begindrag-notification-code"></a>Codice di notifica \_ LVN BEGINDRAG
 
-Notifica alla finestra padre di un controllo di visualizzazione elenco che viene avviata un'operazione di trascinamento della selezione che interessa il pulsante sinistro del mouse. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo visualizzazione elenco che è in corso un'operazione di trascinamento della selezione che coinvolge il pulsante sinistro del mouse. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ LVN_BEGINDRAG
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMLISTVIEW**](/windows/win32/api/commctrl/ns-commctrl-nmlistview) . Il membro **iItem** identifica l'elemento trascinato e gli altri membri sono pari a zero.
+Puntatore a [**una struttura NMLISTVIEW.**](/windows/win32/api/commctrl/ns-commctrl-nmlistview) Il **membro iItem** identifica l'elemento trascinato e gli altri membri sono pari a zero.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

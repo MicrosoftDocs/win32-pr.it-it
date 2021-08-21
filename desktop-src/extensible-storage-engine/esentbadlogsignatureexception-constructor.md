@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentBadLogSignatureException'
+description: Altre informazioni sul costruttore EsentBadLogSignatureException
 title: Costruttore EsentBadLogSignatureException
 TOCTitle: 'EsentBadLogSignatureException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentBadLogSignatureException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b3f5d04ae63626787bc71d54b702f9d90afd5c48
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8889df585544b7d3cf5f9f38ee64581e9edd6d36f32a6f56a2448acf2789d496
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118082773"
 ---
 # <a name="esentbadlogsignatureexception-constructor"></a>Costruttore EsentBadLogSignatureException
 
 Inizializza una nuova istanza della classe EsentBadLogSignatureException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentBadLogSignatureException()
 
 [Membri di EsentBadLogSignatureException](./esentbadlogsignatureexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

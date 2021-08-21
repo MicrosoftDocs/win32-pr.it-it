@@ -1,9 +1,9 @@
 ---
-title: Component (DebugDataType)-elemento
+title: Elemento Component (DebugDataType)
 description: Nome del componente che ha registrato il messaggio di traccia.
 ms.assetid: fa837d46-086b-4be1-b5a3-f68aebc9fe1c
 keywords:
-- EventLog elemento componente
+- EventLog dell'elemento Component
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: dce9919a07715aeb7058f811e60faf763459e27b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b31e3ae5bded11736a3af6efc4b237f999afa4e4348ec84ddafa0b314ee69d1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120369"
 ---
-# <a name="component-debugdatatype-element"></a>Component (DebugDataType)-elemento
+# <a name="component-debugdatatype-element"></a>Elemento Component (DebugDataType)
 
 Nome del componente che ha registrato il messaggio di traccia.
 
@@ -30,7 +30,7 @@ Nome del componente che ha registrato il messaggio di traccia.
  />
 ```
 
-L'elemento **Component** è definito dal tipo complesso [**DebugDataType**](eventschema-debugdatatype-complextype.md) .
+**L'elemento Component** è definito dal [**tipo complesso DebugDataType.**](eventschema-debugdatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **Component** è definito dal tipo complesso [**DebugDataType**](even
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

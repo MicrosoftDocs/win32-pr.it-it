@@ -1,21 +1,21 @@
 ---
-description: Se il bit del controllo ComboBox è impostato su una casella combinata, il campo Edit viene sostituito da un campo di testo statico. In questo modo si impedisce a un utente di immettere un nuovo valore e l'utente deve scegliere solo uno dei valori predefiniti.
+description: Se il bit del controllo ComboList è impostato in una casella combinata, il campo di modifica viene sostituito da un campo di testo statico. Ciò impedisce a un utente di immettere un nuovo valore e richiede all'utente di scegliere solo uno dei valori predefiniti.
 ms.assetid: 79af4bb0-1e0f-4df3-ae25-d2798842adb6
-title: Attributo del controllo combogroup
+title: Attributo del controllo ComboList
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2dcb1c51e8eccaba03c3b4d905b0501e8a3f97a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 71e0a53357d91c5c5a016f65e8e1e0fb341b15cae1ea2c6cf480e536fa109067
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118145380"
 ---
-# <a name="combolist-control-attribute"></a>Attributo del controllo combogroup
+# <a name="combolist-control-attribute"></a>Attributo del controllo ComboList
 
-Se il bit del controllo ComboBox è impostato su una casella combinata, il campo Edit viene sostituito da un campo di testo statico. In questo modo si impedisce a un utente di immettere un nuovo valore e l'utente deve scegliere solo uno dei valori predefiniti.
+Se il bit del controllo ComboList è impostato in una casella combinata, il campo di modifica viene sostituito da un campo di testo statico. Ciò impedisce a un utente di immettere un nuovo valore e richiede all'utente di scegliere solo uno dei valori predefiniti.
 
-Se questo bit non è impostato, la casella combinata dispone di un campo di modifica.
+Se questo bit non è impostato, la casella combinata include un campo di modifica.
 
 ## <a name="valid-controls"></a>Controlli validi
 
@@ -35,9 +35,9 @@ Se questo bit non è impostato, la casella combinata dispone di un campo di modi
 
 ## <a name="remarks"></a>Commenti
 
-Per impostare questo attributo su un controllo, includere il bit dell'oggetto ComboBox nella colonna attributi del record del controllo nella tabella dei [controlli](control-table.md).
+Per impostare questo attributo in un controllo, includere il bit ComboList nella colonna Attributes del record del controllo nella [tabella Control](control-table.md).
 
-Vedere [gli attributi del controllo](control-attributes.md) e il controllo che è necessario creare sotto i [controlli](controls.md).
+Vedere [Attributi di](control-attributes.md) controllo e il controllo che è necessario creare in [Controlli](controls.md).
 
  
 

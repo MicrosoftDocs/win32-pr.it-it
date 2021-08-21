@@ -1,43 +1,43 @@
 ---
-title: Porting di defs, binding e set
-description: Porting di defs, binding e set
+title: Porting di def, associazioni e set
+description: Porting di def, associazioni e set
 ms.assetid: 971feb14-ed39-4492-a62b-9930bdc506e9
 keywords:
-- Porting di IRIS GL, definizioni
-- porting da IRIS GL, definizioni
-- porting in OpenGL da IRIS GL, definizioni
-- Porting OpenGL da IRIS GL, definizioni
-- Porting, binding di IRIS GL
-- porting da IRIS GL, binding
-- porting in OpenGL da IRIS GL, binding
-- Porting OpenGL da IRIS GL, binding
-- Porting di IRIS GL, set
-- porting da IRIS GL, set
-- porting in OpenGL da IRIS GL, set
-- Porting OpenGL da IRIS GL, set
+- portabilità IRIS GL, definizioni
+- porting from IRIS GL,definitions
+- porting to OpenGL from IRIS GL,definitions
+- Portabilità OpenGL da IRIS GL, definizioni
+- portabilità IRIS GL, binding
+- porting from IRIS GL,binds
+- porting to OpenGL from IRIS GL,binds
+- Portabilità OpenGL da IRIS GL, binding
+- portabilità IRIS GL, set
+- porting from IRIS GL,sets
+- porting to OpenGL from IRIS GL,sets
+- Portabilità OpenGL da IRIS GL,set
 - definitions
-- associa
+- Lega
 - Imposta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0f9a88253390ee99f5b5870fd7a09e272f1c549
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 56a4c3776d3e5eb8000a4e81578bb5df95658a37e0793944a9cda6923fc7a2e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118132663"
 ---
-# <a name="porting-defs-binds-and-sets"></a>Porting di defs, binding e set
+# <a name="porting-defs-binds-and-sets"></a>Porting di def, associazioni e set
 
-OpenGL non contiene tabelle di definizioni archiviate; non è possibile definire i modelli di illuminazione, il materiale, le trame, gli stili di linea o i modelli come oggetti separati come in IRIS GL. Quindi OpenGL non ha equivalenti diretti alle seguenti funzioni di IRIS GL:
+OpenGL non dispone di tabelle di definizioni archiviate. Non è possibile definire modelli di illuminazione, materiali, trame, stili di linea o modelli come oggetti separati come in IRIS GL. OpenGL non ha quindi equivalenti diretti alle funzioni IRIS GL seguenti:
 
--   **Imdef** e **imbind**
+-   **Imdef** e **Imbind**
 -   **tevdef** e **tevbind**
 -   **textdef** e **textbind**
--   **definestyle** e **Sestyle**
--   **defpattern** e **sepattern**
+-   **definestyle** e **setstyle**
+-   **defpattern** e **setpattern**
 
-È possibile usare gli elenchi di visualizzazione OpenGL per simulare il meccanismo di definizione/binding IRIS GL. Ad esempio, di seguito viene illustrata una definizione di materiale in IRIS GL:
+È possibile usare gli elenchi di visualizzazione OpenGL per simulare il meccanismo di def/binding IRIS GL. Ecco, ad esempio, una definizione materiale in IRIS GL:
 
 
 ```C++
@@ -54,7 +54,7 @@ lmbind(MATERIAL, 1);
 
 
 
-Nell'esempio di codice OpenGL seguente viene definito lo stesso materiale in un elenco di visualizzazione a cui viene fatto riferimento dal numero di elenco definito da **materiali**.
+L'esempio di codice OpenGL seguente definisce lo stesso materiale in un elenco di visualizzazione a cui fa riferimento il numero di elenco definito da **MYMATERIAL.**
 
 
 ```C++
@@ -75,9 +75,9 @@ glCallList( MYMATERIAL );
 
 
 
- 
+ 
 
- 
+ 
 
 
 

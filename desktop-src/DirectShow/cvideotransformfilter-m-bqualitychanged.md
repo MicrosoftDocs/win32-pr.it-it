@@ -1,7 +1,7 @@
 ---
-description: Valore booleano che indica se il filtro ha eliminato i frame. Questa variabile membro controlla quando il filtro Invia \_ eventi di modifica della qualità EC \_ .
+description: Valore booleano che indica se il filtro ha eliminato frame. Questa variabile membro controlla quando il filtro invia eventi EC \_ QUALITY \_ CHANGE.
 ms.assetid: fc85c6a8-b849-4acd-bcd7-49274c8ceb58
-title: 'Membro CVideoTransformFilter:: m_bQualityChanged (Vtrans. h)'
+title: Membro CVideoTransformFilter::m_bQualityChanged (Vtrans.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6a40906a04a385d58e06a505195e9d61f07b349b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 60cf48188a4de7fe244bff2d008b3a27bd5824870aff52ee0647fbe2ad55c2d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118155865"
 ---
-# <a name="cvideotransformfilterm_bqualitychanged-member"></a>Membro bQualityChanged di CVideoTransformFilter:: m \_
+# <a name="cvideotransformfilterm_bqualitychanged-member"></a>Membro CVideoTransformFilter::m \_ bQualityChanged
 
-Valore booleano che indica se il filtro ha eliminato i frame. Questa variabile membro controlla quando il filtro Invia eventi di [**\_ \_ modifica della qualità EC**](ec-quality-change.md) .
+Valore booleano che indica se il filtro ha eliminato frame. Questa variabile membro controlla quando il filtro invia [**eventi EC \_ QUALITY \_ CHANGE.**](ec-quality-change.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ BOOL m_bQualityChanged;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Vtrans. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Vtrans.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

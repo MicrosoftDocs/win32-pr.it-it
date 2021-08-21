@@ -1,6 +1,6 @@
 ---
-title: Attributo Partial-Attribute-Deletion-List
-description: Tiene traccia dello stato della replica interna delle repliche parziali, ovvero nei gruppi di disponibilità. Attributo dell'oggetto NC di replica parziale. Usato quando gc sta rimuovendo gli attributi dagli oggetti nei relativi controller di rete di replica parziali.
+title: Attributo partial-attribute-deletion-list
+description: Tiene traccia dello stato di replica interna delle repliche parziali, ovvero nei controller di dominio. Attributo dell'oggetto NC di replica parziale. Usato quando gc sta rimuovendo gli attributi dagli oggetti nei relativi NC di replica parziale.
 ms.assetid: 0084774b-7231-4cfc-8f60-c014006da2b9
 ms.tgt_platform: multiple
 keywords:
@@ -21,9 +21,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118423944"
 ---
-# <a name="partial-attribute-deletion-list-attribute"></a>Attributo Partial-Attribute-Deletion-List
+# <a name="partial-attribute-deletion-list-attribute"></a>Attributo partial-attribute-deletion-list
 
-Tiene traccia dello stato della replica interna delle repliche parziali, ovvero nei gruppi di disponibilità. Attributo dell'oggetto NC di replica parziale. Usato quando gc sta rimuovendo gli attributi dagli oggetti nei relativi controller di rete di replica parziali.
+Tiene traccia dello stato di replica interna delle repliche parziali, ovvero nei controller di dominio. Attributo dell'oggetto NC di replica parziale. Usato quando gc sta rimuovendo gli attributi dagli oggetti nei relativi NC di replica parziale.
 
 
 
@@ -32,7 +32,7 @@ Tiene traccia dello stato della replica interna delle repliche parziali, ovvero 
 | CN                | Partial-Attribute-Deletion-List                       |
 | Ldap-Display-Name | partialAttributeDeletionList                          |
 | Dimensione              | \-                                                    |
-| Aggiorna privilegio  | Questo valore viene impostato dal sistema.                      |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.                      |
 | Frequenza di aggiornamento  | Durante la replica                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.663                                |
 | System-Id-Guid    | 28630ec0-41d5-11d1-a9c1-0000f80367c1                  |
@@ -59,7 +59,7 @@ Tiene traccia dello stato della replica interna delle repliche parziali, ovvero 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -80,7 +80,7 @@ Tiene traccia dello stato della replica interna delle repliche parziali, ovvero 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -101,7 +101,7 @@ Tiene traccia dello stato della replica interna delle repliche parziali, ovvero 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -122,7 +122,7 @@ Tiene traccia dello stato della replica interna delle repliche parziali, ovvero 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| Is-Single-Valued       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -143,7 +143,7 @@ Tiene traccia dello stato della replica interna delle repliche parziali, ovvero 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| Is-Single-Valued       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -164,7 +164,7 @@ Tiene traccia dello stato della replica interna delle repliche parziali, ovvero 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| Is-Single-Valued       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -185,7 +185,7 @@ Tiene traccia dello stato della replica interna delle repliche parziali, ovvero 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| Is-Single-Valued       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
