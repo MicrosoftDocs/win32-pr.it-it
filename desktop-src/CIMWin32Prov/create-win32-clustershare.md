@@ -1,5 +1,5 @@
 ---
-description: Crea una nuova \_ istanza di ClusterShare Win32.
+description: Crea una nuova istanza di \_ ClusterShare Win32.
 ms.assetid: a6fde28d-f19e-4a31-8f0d-35927c75a030
 ms.tgt_platform: multiple
 title: Metodo Create della classe Win32_ClusterShare
@@ -10,16 +10,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7cbf7c42b8523bcd12b19e9b474ecc50bd031939
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: edaafa00f792cf01b4166d525171cf15b7f781c8c0c943c17377b3bd9b3401dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020589"
 ---
-# <a name="create-method-of-the-win32_clustershare-class"></a>Metodo Create della classe Win32 \_ ClusterShare
+# <a name="create-method-of-the-win32_clustershare-class"></a>Metodo Create della classe ClusterShare Win32 \_
 
-Crea una nuova istanza di [**\_ ClusterShare Win32**](win32-clustershare.md) .
+Crea una nuova [**istanza di \_ ClusterShare Win32.**](win32-clustershare.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,28 +42,28 @@ static uint32 Create(
 
 <dl> <dt>
 
-*Percorso* \[ in\]
+*Percorso* \[ Pollici\]
 </dt> <dd>
 
-Percorso locale della condivisione di Windows.
+Percorso locale della condivisione Windows locale.
 
-Esempio, "C: \\ Program Files".
+Ad esempio, "C: \\ Programmi".
 
 </dd> <dt>
 
-*Nome* \[ in\]
+*Nome* \[ Pollici\]
 </dt> <dd>
 
-Alias di un percorso configurato come una condivisione in un computer in cui è in esecuzione Windows.
+Alias di un percorso configurato come condivisione in un computer che esegue Windows.
 
-Esempio "public".
+Ad esempio, "public".
 
 </dd> <dt>
 
-*Tipo* \[ di in\]
+*Tipo* \[ Pollici\]
 </dt> <dd>
 
-Tipo di risorsa condivisa. I tipi includono le unità disco, le code di stampa, le comunicazioni interprocesso (IPC) e i dispositivi generali.
+Tipo di risorsa condivisa. I tipi includono: unità disco, code di stampa, comunicazioni interprocesso (IPC) e dispositivi generali.
 
 <dt>
 
@@ -98,14 +98,14 @@ IPC
 2147483648 (0x80000000)
 </dt> <dd>
 
-Amministrazione unità disco
+Amministratore unità disco
 
 </dd> <dt>
 
 2147483649 (0x80000001)
 </dt> <dd>
 
-Amministrazione coda di stampa
+Amministratore coda di stampa
 
 </dd> <dt>
 
@@ -126,28 +126,28 @@ Amministratore IPC
 *MaximumAllowed* \[ in, facoltativo\]
 </dt> <dd>
 
-Limite per il numero massimo di utenti che possono usare questa risorsa contemporaneamente.
+Limite al numero massimo di utenti autorizzati a usare questa risorsa contemporaneamente.
 
 </dd> <dt>
 
-*Descrizione* \[ di in, facoltativo\]
+*Descrizione* \[ in, facoltativo\]
 </dt> <dd>
 
 Descrizione dell'oggetto.
 
 </dd> <dt>
 
-*Password* \[ di in, facoltativo\]
+*Password* \[ in, facoltativo\]
 </dt> <dd>
 
-TBD
+DA DEFINIRE
 
 </dd> <dt>
 
-*Accesso* \[ a in, facoltativo\]
+*Accesso* \[ in, facoltativo\]
 </dt> <dd>
 
-Istanza incorporata facoltativa di una classe [**\_ securityDescriptor Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) che contiene il descrittore di sicurezza per la nuova condivisione.
+Istanza incorporata facoltativa di [**una classe \_ SecurityDescriptor Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) che contiene il descrittore di sicurezza per la nuova condivisione.
 
 </dd> </dl>
 
@@ -160,7 +160,7 @@ Istanza incorporata facoltativa di una classe [**\_ securityDescriptor Win32**](
 | Client minimo supportato<br/> | Windows 7<br/>                                                                    |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                       |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>Cimwin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Cimwin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -169,7 +169,7 @@ Istanza incorporata facoltativa di una classe [**\_ securityDescriptor Win32**](
 
 <dl> <dt>
 
-[**\_ClusterShare Win32**](win32-clustershare.md)
+[**Condivisione cluster \_ Win32**](win32-clustershare.md)
 </dt> </dl>
 
  

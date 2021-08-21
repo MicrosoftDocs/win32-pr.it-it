@@ -1,6 +1,6 @@
 ---
-title: ProcessIsolineTessFactors (funzione)
-description: Genera i fattori a mosaico arrotondati per un oggetto oline.
+title: Funzione ProcessIsolineTessFactors
+description: Genera i fattori a trama arrotondata per un'isolinea.
 ms.assetid: 0816b3e0-cb03-4a7a-9732-e84c637b3d48
 keywords:
 - Funzione ProcessIsolineTessFactors HLSL
@@ -13,25 +13,25 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 10da0e5bf0f2138c57da3fcfe962bc6a88800068
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 34c6f4d579ee7fbaee9416d7a607e3856a7793021cca7149723d3d6e5a2b4a49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103718820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986291"
 ---
-# <a name="processisolinetessfactors-function"></a>ProcessIsolineTessFactors (funzione)
+# <a name="processisolinetessfactors-function"></a>Funzione ProcessIsolineTessFactors
 
-Genera i fattori a mosaico arrotondati per un oggetto oline.
+Genera i fattori a trama arrotondata per un'isolinea.
 
 ## <a name="syntax"></a>Sintassi
 
 ``` syntax
 void ProcessIsolineTessFactors(
-  in  float RawDetailFactor,
-  in  float RawDensityFactor,
-  out float RoundedDetailFactor,
-  out float RoundedDensityFactor
+  in  float RawDetailFactor,
+  in  float RawDensityFactor,
+  out float RoundedDetailFactor,
+  out float RoundedDensityFactor
 );
 ```
 
@@ -39,7 +39,7 @@ void ProcessIsolineTessFactors(
 
 <dl> <dt>
 
-*RawDetailFactor* \[ in\]
+*RawDetailFactor* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
@@ -48,7 +48,7 @@ Fattore di dettaglio desiderato.
 
 </dd> <dt>
 
-*RawDensityFactor* \[ in\]
+*RawDensityFactor* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
@@ -57,21 +57,21 @@ Fattore di densità desiderato.
 
 </dd> <dt>
 
-*RoundedDetailFactor* \[ out\]
+*RoundedDetailFactor* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **float**
 
-Il fattore di dettaglio arrotondato è stato fissato a un intervallo che può essere utilizzato da mosaico.
+Fattore di dettaglio arrotondato a un intervallo che può essere usato dal tessellatore.
 
 </dd> <dt>
 
-*RoundedDensityFactor* \[ out\]
+*RoundedDensityFactor* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **float**
 
-Il fattore di densità arrotondato fissato a un rangethat può essere utilizzato da mosaico.
+Fattore di densità arrotondato a un intervallo che può essere usato dal tessellatore.
 
 </dd> </dl>
 
@@ -81,7 +81,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-### <a name="minimum-shader-model"></a>Modello Shader minimo
+### <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -89,23 +89,23 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì       |
+| [Modelli shader modello 5](d3d11-graphics-reference-sm5.md) e versioni successive | sì       |
 
 
 
- 
+ 
 
 Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        | x    |        |          |       |         |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -114,12 +114,12 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [Funzioni intrinseche](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

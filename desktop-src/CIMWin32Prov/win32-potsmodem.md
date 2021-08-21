@@ -1,5 +1,5 @@
 ---
-description: La \_ classe WMI POTSModem Win32 rappresenta i servizi e le caratteristiche di un modem del servizio telefonico (POTS) Plain Old in un computer che esegue Windows.
+description: La classe WMI WIN32 POTSModem rappresenta i servizi e le caratteristiche di un \_ modem PLAIN OLD Telephone Service (POTS) in un computer che esegue Windows.
 ms.assetid: 24589942-e2c3-477e-8179-59ae4a4aa85a
 ms.tgt_platform: multiple
 title: Classe Win32_POTSModem
@@ -96,18 +96,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6ec9634c5ee86d6819bf8f7a45dd521276565903
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e79cb842acd2063522f901d050c3fab6db3251a39a212a234f062935cc30b87c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020109"
 ---
-# <a name="win32_potsmodem-class"></a>Win32 \_ POTSModem (classe)
+# <a name="win32_potsmodem-class"></a>Classe \_ POTSModem Win32
 
-La [classe WMI](../wmisdk/retrieving-a-class.md) **\_ POTSModem Win32** rappresenta i servizi e le caratteristiche di un modem del servizio telefonico (POTS) Plain Old in un computer che esegue Windows.
+La classe [WMI](../wmisdk/retrieving-a-class.md) **WIN32 \_ POTSModem** rappresenta i servizi e le caratteristiche di un modem POTS (Plain Old Telephone Service) in un computer che esegue Windows.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -200,21 +200,21 @@ class Win32_POTSModem : CIM_PotsModem
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ POTSModem** presenta questi tipi di membri:
+La **classe \_ POTSModem Win32** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **Win32 \_ POTSModem** presenta questi metodi.
+La **classe WIN32 \_ POTSModem** include questi metodi.
 
 
 
 | Metodo            | Descrizione                                                                                                                                                                            |
 |:------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Reimpostazione**         | Non implementato. Per implementare questo metodo, vedere il metodo [**Reset**](reset-method-in-class-cim-controller.md) in [**CIM \_ PotsModem**](cim-potsmodem.md).<br/>                 |
-| **SetPowerState** | Non implementato. Per implementare questo metodo, vedere il metodo [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) in [**CIM \_ PotsModem**](cim-potsmodem.md).<br/> |
+| **Reimpostazione**         | Non implementato. Per implementare questo metodo, vedere il [**metodo Reset**](reset-method-in-class-cim-controller.md) in [**CIM \_ PotsModem.**](cim-potsmodem.md)<br/>                 |
+| **SetPowerState** | Non implementato. Per implementare questo metodo, vedere il [**metodo SetPowerState**](setpowerstate-method-in-class-cim-controller.md) in [**CIM \_ PotsModem.**](cim-potsmodem.md)<br/> |
 
 
 
@@ -222,22 +222,22 @@ La classe **Win32 \_ POTSModem** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ POTSModem** dispone di queste proprietà.
+La **classe WIN32 \_ POTSModem** ha queste proprietà.
 
 <dl> <dt>
 
 **AnswerMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Impostazione della risposta automatica o di callback corrente per il modem.
+Impostazione corrente di risposta automatica o callback per il modem.
 
-Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
+Questa proprietà viene ereditata da [**CIM \_ PotsModem.**](cim-potsmodem.md)
 
 <dt>
 
@@ -278,7 +278,7 @@ Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
 
 <span id="Auto_Answer_with_Call-Back"></span><span id="auto_answer_with_call-back"></span><span id="AUTO_ANSWER_WITH_CALL-BACK"></span>
 
-**Risposta automatica con Call-back** (5)
+**Risposta automatica con call-back** (5)
 
 
 </dt> <dd></dd> </dl>
@@ -288,16 +288,16 @@ Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
 **AttachedTo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| legatiai")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| AttachedTo")
 </dt> </dl>
 
-Porta a cui è collegato il modem pot.
+Porta a cui è collegato il modem POTS.
 
 Esempio: "COM1"
 
@@ -306,18 +306,18 @@ Esempio: "COM1"
 **Disponibilità**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Stato operativo DMTF \| 003,5 "," MIB. \|Host IETF-risorse-MIB. hrDeviceStatus ")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| Operational State \| 003.5", "MIB. IETF \| HOST-RESOURCES-MIB.hrDeviceStatus")
 </dt> </dl>
 
 Disponibilità e stato del dispositivo.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
@@ -337,7 +337,7 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevic
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Esecuzione/potenza completa** (3)
+<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Running/Full Power** (3)
 
 
 </dt> <dd>
@@ -369,21 +369,21 @@ Esecuzione o alimentazione completa
 
 <span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>
 
-<span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>**Spegnimento (7** )
+<span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>**Power Off** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>
 
-<span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>**Offline (8** )
+<span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>**Off Line** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>
 
-<span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>**Off Duty** (9)
+<span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>**Fuori servizio** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -411,34 +411,34 @@ Esecuzione o alimentazione completa
 
 <span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>
 
-<span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>**Risparmio energia-sconosciuto** (13)
+<span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>**Risparmio energia - Sconosciuto** (13)
 
 
 </dt> <dd>
 
-Il dispositivo è noto come modalità di risparmio energia, ma lo stato esatto è sconosciuto.
+È noto che il dispositivo è in modalità di risparmio energia, ma lo stato esatto è sconosciuto.
 
 </dd> <dt>
 
 <span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>
 
-<span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>**Risparmio energia-modalità a basso consumo** (14)
+<span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>**Risparmio energia - Modalità a basso consumo** (14)
 
 
 </dt> <dd>
 
-Il dispositivo è in uno stato di risparmio energia ma funziona ancora e può presentare prestazioni ridotte.
+Il dispositivo è in stato di risparmio energia, ma continua a funzionare e può presentare prestazioni ridotte.
 
 </dd> <dt>
 
 <span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>
 
-<span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>**Risparmio energia-standby** (15)
+<span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>**Risparmio energia - Standby** (15)
 
 
 </dt> <dd>
 
-Il dispositivo non funziona, ma potrebbe essere portato a una potenza completa rapidamente.
+Il dispositivo non funziona, ma può essere alimentato rapidamente.
 
 </dd> <dt>
 
@@ -451,23 +451,23 @@ Il dispositivo non funziona, ma potrebbe essere portato a una potenza completa r
 
 <span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>
 
-<span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>**Risparmio energia-avviso** (17)
+<span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>**Risparmio energia - Avviso** (17)
 
 
 </dt> <dd>
 
-Il dispositivo è in uno stato di avviso, anche in modalità di risparmio energia.
+Il dispositivo è in uno stato di avviso, anche se in modalità di risparmio energia.
 
 </dd> <dt>
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-<span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>In **pausa** (18)
+<span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>**In pausa** (18)
 
 
 </dt> <dd>
 
-Il dispositivo è sospeso.
+Il dispositivo è in pausa.
 
 </dd> <dt>
 
@@ -484,7 +484,7 @@ Il dispositivo non è pronto.
 
 <span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>
 
-<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**Non configurata** (20)
+<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**Non configurato** (20)
 
 
 </dt> <dd>
@@ -495,7 +495,7 @@ Il dispositivo non è configurato.
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Inattivo** (21)
+<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Inattiva** (21)
 
 
 </dt> <dd>
@@ -509,34 +509,34 @@ Il dispositivo è silenzioso.
 **BlindOff**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| BlindOff")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| BlindOff")
 </dt> </dl>
 
-Stringa di comando utilizzata per rilevare un tono di connessione prima della connessione.
+Stringa di comando usata per rilevare un segnale di composizione prima della composizione.
 
-Esempio: "x4"
+Esempio: "X4"
 
 </dd> <dt>
 
 **BlindOn**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| Blindon")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| BlindOn")
 </dt> </dl>
 
-Stringa di comando usata per comporre se è presente un tono di composizione.
+Stringa di comando usata per stabilire se è presente o meno un tono di composizione.
 
 Esempio: "X3"
 
@@ -545,41 +545,41 @@ Esempio: "X3"
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
 Breve descrizione dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **CompatibilityFlags**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| CompatibilityFlags")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| CompatibilityFlags")
 </dt> </dl>
 
-Tutti i protocolli di connessione modem con cui questo dispositivo modem è compatibile.
+Tutti i protocolli di connessione modem con cui il dispositivo modem è compatibile.
 
 </dd> <dt>
 
 **CompressionInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -587,7 +587,7 @@ Tipo di accesso: sola lettura
 
 Caratteristiche di compressione dei dati del modem.
 
-Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
+Questa proprietà viene ereditata da [**CIM \_ PotsModem.**](cim-potsmodem.md)
 
 <dt>
 
@@ -633,7 +633,7 @@ Nessuna compressione
 
 <span id="V.42bis"></span><span id="v.42bis"></span><span id="V.42BIS"></span>
 
-<span id="v.42bis"></span><span id="V.42BIS"></span>**V. 42bis** (4)
+<span id="v.42bis"></span><span id="V.42BIS"></span>**V.42bis** (4)
 
 
 </dt> <dd>
@@ -649,7 +649,7 @@ MNP 5
 
 </dt> <dd>
 
-V. 42bis
+V.42bis
 
 </dd> </dl>
 
@@ -658,60 +658,60 @@ V. 42bis
 **CompressionOff**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| Compression \_ off")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| Compression \_ Off")
 </dt> </dl>
 
-Stringa di comando utilizzata per disabilitare la compressione dei dati hardware.
+Stringa di comando usata per disabilitare la compressione dei dati hardware.
 
-Esempio: "S46 = 136"
+Esempio: "S46=136"
 
 </dd> <dt>
 
 **CompressionOn**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| Compression \_ on")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| Compression \_ On")
 </dt> </dl>
 
-Stringa di comando utilizzata per abilitare la compressione dei dati hardware.
+Stringa di comando usata per abilitare la compressione dei dati hardware.
 
-Esempio: "S46 = 138"
+Esempio: "S46=138"
 
 </dd> <dt>
 
 **ConfigManagerErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**schema**](../wmisdk/standard-qualifiers.md) ("Win32")
+Qualificatori: [**Schema**](../wmisdk/standard-qualifiers.md) ("Win32")
 </dt> </dl>
 
-Codice di errore Win32 Configuration Manager.
+Codice di errore Gestione configurazione Win32.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
 <span id="This_device_is_working_properly."></span><span id="this_device_is_working_properly."></span><span id="THIS_DEVICE_IS_WORKING_PROPERLY."></span>
 
-<span id="this_device_is_working_properly."></span><span id="THIS_DEVICE_IS_WORKING_PROPERLY."></span>**Il dispositivo funziona correttamente.**  (0)
+<span id="this_device_is_working_properly."></span><span id="THIS_DEVICE_IS_WORKING_PROPERLY."></span>**Questo dispositivo funziona correttamente.**  (0)
 
 
 </dt> <dd>
@@ -733,41 +733,41 @@ Il dispositivo non è configurato correttamente.
 
 <span id="Windows_cannot_load_the_driver_for_this_device."></span><span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>
 
-<span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>**Windows non è in grado di caricare il driver per questo dispositivo.** (2)
+<span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>**Windows possibile caricare il driver per questo dispositivo.** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="The_driver_for_this_device_might_be_corrupted__or_your_system_may_be_running_low_on_memory_or_other_resources."></span><span id="the_driver_for_this_device_might_be_corrupted__or_your_system_may_be_running_low_on_memory_or_other_resources."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_MIGHT_BE_CORRUPTED__OR_YOUR_SYSTEM_MAY_BE_RUNNING_LOW_ON_MEMORY_OR_OTHER_RESOURCES."></span>
 
-<span id="the_driver_for_this_device_might_be_corrupted__or_your_system_may_be_running_low_on_memory_or_other_resources."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_MIGHT_BE_CORRUPTED__OR_YOUR_SYSTEM_MAY_BE_RUNNING_LOW_ON_MEMORY_OR_OTHER_RESOURCES."></span>**Il driver per questo dispositivo potrebbe essere danneggiato oppure è possibile che la memoria del sistema sia insufficiente o che altre risorse.** (3)
+<span id="the_driver_for_this_device_might_be_corrupted__or_your_system_may_be_running_low_on_memory_or_other_resources."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_MIGHT_BE_CORRUPTED__OR_YOUR_SYSTEM_MAY_BE_RUNNING_LOW_ON_MEMORY_OR_OTHER_RESOURCES."></span>**Il driver per questo dispositivo potrebbe essere danneggiato o il sistema potrebbe avere memoria insufficiente o altre risorse.** (3)
 
 
 </dt> <dd>
 
-Il driver per questo dispositivo potrebbe essere danneggiato oppure la memoria o altre risorse del sistema potrebbero essere insufficienti.
+Il driver per questo dispositivo potrebbe essere danneggiato o il sistema potrebbe avere memoria insufficiente o altre risorse.
 
 </dd> <dt>
 
 <span id="This_device_is_not_working_properly._One_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="this_device_is_not_working_properly._one_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY._ONE_OF_ITS_DRIVERS_OR_YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>
 
-<span id="This_device_is_not_working_properly._One_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="this_device_is_not_working_properly._one_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY._ONE_OF_ITS_DRIVERS_OR_YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>**Il dispositivo non funziona correttamente. Uno dei driver o del registro di sistema potrebbe essere danneggiato.** (4)
+<span id="This_device_is_not_working_properly._One_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="this_device_is_not_working_properly._one_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY._ONE_OF_ITS_DRIVERS_OR_YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>**Questo dispositivo non funziona correttamente. Uno dei relativi driver o il registro potrebbe essere danneggiato.** (4)
 
 
 </dt> <dd>
 
-Il dispositivo non funziona correttamente. Uno dei suoi driver o il registro di sistema potrebbe essere danneggiato.
+Il dispositivo non funziona correttamente. Uno dei relativi driver o il Registro di sistema potrebbe essere danneggiato.
 
 </dd> <dt>
 
 <span id="The_driver_for_this_device_needs_a_resource_that_Windows_cannot_manage."></span><span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>
 
-<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**Il driver per questo dispositivo richiede una risorsa che Windows non è in grado di gestire.** (5)
+<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**Il driver per questo dispositivo richiede una risorsa che non Windows gestire.** (5)
 
 
 </dt> <dd>
 
-Il driver per il dispositivo richiede una risorsa che Windows non è in grado di gestire.
+Il driver per il dispositivo richiede una risorsa che Windows non può gestire.
 
 </dd> <dt>
 
@@ -791,12 +791,12 @@ La configurazione di avvio per il dispositivo è in conflitto con altri disposit
 
 <span id="The_driver_loader_for_the_device_is_missing."></span><span id="the_driver_loader_for_the_device_is_missing."></span><span id="THE_DRIVER_LOADER_FOR_THE_DEVICE_IS_MISSING."></span>
 
-<span id="the_driver_loader_for_the_device_is_missing."></span><span id="THE_DRIVER_LOADER_FOR_THE_DEVICE_IS_MISSING."></span>**Il caricatore driver del dispositivo è mancante.** (8)
+<span id="the_driver_loader_for_the_device_is_missing."></span><span id="THE_DRIVER_LOADER_FOR_THE_DEVICE_IS_MISSING."></span>**Il caricatore del driver per il dispositivo è mancante.** (8)
 
 
 </dt> <dd>
 
-Il caricatore driver del dispositivo è mancante.
+Il caricatore del driver per il dispositivo è mancante.
 
 </dd> <dt>
 
@@ -813,84 +813,84 @@ Il dispositivo non funziona correttamente. Il firmware di controllo segnala erro
 
 <span id="This_device_cannot_start."></span><span id="this_device_cannot_start."></span><span id="THIS_DEVICE_CANNOT_START."></span>
 
-<span id="this_device_cannot_start."></span><span id="THIS_DEVICE_CANNOT_START."></span>**Impossibile avviare il dispositivo.** (10)
+<span id="this_device_cannot_start."></span><span id="THIS_DEVICE_CANNOT_START."></span>**Questo dispositivo non può essere avviato.** (10)
 
 
 </dt> <dd>
 
-Non è possibile avviare il dispositivo.
+Impossibile avviare il dispositivo.
 
 </dd> <dt>
 
 <span id="This_device_failed."></span><span id="this_device_failed."></span><span id="THIS_DEVICE_FAILED."></span>
 
-<span id="this_device_failed."></span><span id="THIS_DEVICE_FAILED."></span>**Errore del dispositivo.** (11)
+<span id="this_device_failed."></span><span id="THIS_DEVICE_FAILED."></span>**Questo dispositivo non è riuscito.** (11)
 
 
 </dt> <dd>
 
-Errore del dispositivo.
+Dispositivo non riuscito.
 
 </dd> <dt>
 
 <span id="This_device_cannot_find_enough_free_resources_that_it_can_use."></span><span id="this_device_cannot_find_enough_free_resources_that_it_can_use."></span><span id="THIS_DEVICE_CANNOT_FIND_ENOUGH_FREE_RESOURCES_THAT_IT_CAN_USE."></span>
 
-<span id="this_device_cannot_find_enough_free_resources_that_it_can_use."></span><span id="THIS_DEVICE_CANNOT_FIND_ENOUGH_FREE_RESOURCES_THAT_IT_CAN_USE."></span>**Questo dispositivo non è in grado di trovare sufficienti risorse gratuite da usare.** 12
+<span id="this_device_cannot_find_enough_free_resources_that_it_can_use."></span><span id="THIS_DEVICE_CANNOT_FIND_ENOUGH_FREE_RESOURCES_THAT_IT_CAN_USE."></span>**Questo dispositivo non riesce a trovare risorse gratuite sufficienti da usare.** (12)
 
 
 </dt> <dd>
 
-Il dispositivo non riesce a trovare risorse disponibili sufficienti da usare.
+Il dispositivo non riesce a trovare risorse gratuite sufficienti da usare.
 
 </dd> <dt>
 
 <span id="Windows_cannot_verify_this_device_s_resources."></span><span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>
 
-<span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>**Windows non è in grado di verificare le risorse del dispositivo.** (13)
+<span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>**Windows verificare le risorse del dispositivo.** (13)
 
 
 </dt> <dd>
 
-Windows non è in grado di verificare le risorse del dispositivo.
+Windows possibile verificare le risorse del dispositivo.
 
 </dd> <dt>
 
 <span id="This_device_cannot_work_properly_until_you_restart_your_computer."></span><span id="this_device_cannot_work_properly_until_you_restart_your_computer."></span><span id="THIS_DEVICE_CANNOT_WORK_PROPERLY_UNTIL_YOU_RESTART_YOUR_COMPUTER."></span>
 
-<span id="this_device_cannot_work_properly_until_you_restart_your_computer."></span><span id="THIS_DEVICE_CANNOT_WORK_PROPERLY_UNTIL_YOU_RESTART_YOUR_COMPUTER."></span>**Questo dispositivo non funziona correttamente finché non si riavvia il computer.** (14)
+<span id="this_device_cannot_work_properly_until_you_restart_your_computer."></span><span id="THIS_DEVICE_CANNOT_WORK_PROPERLY_UNTIL_YOU_RESTART_YOUR_COMPUTER."></span>**Questo dispositivo non può funzionare correttamente fino a quando non si riavvia il computer.** (14)
 
 
 </dt> <dd>
 
-Il dispositivo non funziona correttamente finché il computer non viene riavviato.
+Il dispositivo non può funzionare correttamente fino al riavvio del computer.
 
 </dd> <dt>
 
 <span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>
 
-<span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>**Il dispositivo non funziona correttamente perché è probabile che si verifichi un problema di rienumerazione.** (15)
+<span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>**Questo dispositivo non funziona correttamente perché è probabile che si sia verificato un problema di rienumere.** (15)
 
 
 </dt> <dd>
 
-Il dispositivo non funziona correttamente a causa di un possibile problema di rienumerazione.
+Il dispositivo non funziona correttamente a causa di un possibile problema di enumerazione.
 
 </dd> <dt>
 
 <span id="Windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>
 
-<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows non è in grado di identificare tutte le risorse utilizzate dal dispositivo.** (16)
+<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows identificare tutte le risorse utilizzate dal dispositivo.** (16)
 
 
 </dt> <dd>
 
-Windows non è in grado di identificare tutte le risorse utilizzate dal dispositivo.
+Windows identificare tutte le risorse utilizzate dal dispositivo.
 
 </dd> <dt>
 
 <span id="This_device_is_asking_for_an_unknown_resource_type."></span><span id="this_device_is_asking_for_an_unknown_resource_type."></span><span id="THIS_DEVICE_IS_ASKING_FOR_AN_UNKNOWN_RESOURCE_TYPE."></span>
 
-<span id="this_device_is_asking_for_an_unknown_resource_type."></span><span id="THIS_DEVICE_IS_ASKING_FOR_AN_UNKNOWN_RESOURCE_TYPE."></span>**Il dispositivo richiede un tipo di risorsa sconosciuto.** (17)
+<span id="this_device_is_asking_for_an_unknown_resource_type."></span><span id="THIS_DEVICE_IS_ASKING_FOR_AN_UNKNOWN_RESOURCE_TYPE."></span>**Questo dispositivo richiede un tipo di risorsa sconosciuto.** (17)
 
 
 </dt> <dd>
@@ -906,25 +906,25 @@ Il dispositivo richiede un tipo di risorsa sconosciuto.
 
 </dt> <dd>
 
-È necessario reinstallare i driver di dispositivo.
+I driver di dispositivo devono essere reinstallati.
 
 </dd> <dt>
 
 <span id="Failure_using_the_VxD_loader."></span><span id="failure_using_the_vxd_loader."></span><span id="FAILURE_USING_THE_VXD_LOADER."></span>
 
-<span id="failure_using_the_vxd_loader."></span><span id="FAILURE_USING_THE_VXD_LOADER."></span>**Errore durante l'utilizzo del caricatore VxD.** (19)
+<span id="failure_using_the_vxd_loader."></span><span id="FAILURE_USING_THE_VXD_LOADER."></span>**Errore durante l'uso del caricatore VxD.** (19)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Your_registry_might_be_corrupted."></span><span id="your_registry_might_be_corrupted."></span><span id="YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>
 
-<span id="your_registry_might_be_corrupted."></span><span id="YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>**Il registro di sistema potrebbe essere danneggiato.** (20)
+<span id="your_registry_might_be_corrupted."></span><span id="YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>**Il Registro di sistema potrebbe essere danneggiato.** (20)
 
 
 </dt> <dd>
 
-Il registro di sistema potrebbe essere danneggiato.
+Il Registro di sistema potrebbe essere danneggiato.
 
 </dd> <dt>
 
@@ -941,7 +941,7 @@ Errore di sistema. Se la modifica del driver di dispositivo non è efficace, ved
 
 <span id="This_device_is_disabled."></span><span id="this_device_is_disabled."></span><span id="THIS_DEVICE_IS_DISABLED."></span>
 
-<span id="this_device_is_disabled."></span><span id="THIS_DEVICE_IS_DISABLED."></span>**Il dispositivo è disabilitato.** (22)
+<span id="this_device_is_disabled."></span><span id="THIS_DEVICE_IS_DISABLED."></span>**Questo dispositivo è disabilitato.** (22)
 
 
 </dt> <dd>
@@ -952,7 +952,7 @@ Il dispositivo è disabilitato.
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_doesn_t_work__see_your_hardware_documentation."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_doesn_t_work__see_your_hardware_documentation."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOESN_T_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_doesn_t_work__see_your_hardware_documentation."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_doesn_t_work__see_your_hardware_documentation."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOESN_T_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION."></span>**Errore di sistema: provare a modificare il driver per questo dispositivo. Se questa operazione non funziona, vedere la documentazione dell'hardware.** (23)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_doesn_t_work__see_your_hardware_documentation."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_doesn_t_work__see_your_hardware_documentation."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOESN_T_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION."></span>**Errore di sistema: provare a modificare il driver per questo dispositivo. Se non funziona, vedere la documentazione dell'hardware.** (23)
 
 
 </dt> <dd>
@@ -963,34 +963,34 @@ Errore di sistema. Se la modifica del driver di dispositivo non è efficace, ved
 
 <span id="This_device_is_not_present__is_not_working_properly__or_does_not_have_all_its_drivers_installed."></span><span id="this_device_is_not_present__is_not_working_properly__or_does_not_have_all_its_drivers_installed."></span><span id="THIS_DEVICE_IS_NOT_PRESENT__IS_NOT_WORKING_PROPERLY__OR_DOES_NOT_HAVE_ALL_ITS_DRIVERS_INSTALLED."></span>
 
-<span id="this_device_is_not_present__is_not_working_properly__or_does_not_have_all_its_drivers_installed."></span><span id="THIS_DEVICE_IS_NOT_PRESENT__IS_NOT_WORKING_PROPERLY__OR_DOES_NOT_HAVE_ALL_ITS_DRIVERS_INSTALLED."></span>**Questo dispositivo non è presente, non funziona correttamente o non sono installati tutti i driver.** (24)
+<span id="this_device_is_not_present__is_not_working_properly__or_does_not_have_all_its_drivers_installed."></span><span id="THIS_DEVICE_IS_NOT_PRESENT__IS_NOT_WORKING_PROPERLY__OR_DOES_NOT_HAVE_ALL_ITS_DRIVERS_INSTALLED."></span>**Questo dispositivo non è presente, non funziona correttamente o non dispone di tutti i relativi driver installati.** (24)
 
 
 </dt> <dd>
 
-Il dispositivo non è presente, non funziona correttamente o non sono installati tutti i driver.
+Il dispositivo non è presente, non funziona correttamente o non dispone di tutti i relativi driver installati.
 
 </dd> <dt>
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows sta ancora impostando questo dispositivo.** (25)
+<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows sta ancora configurando questo dispositivo.** (25)
 
 
 </dt> <dd>
 
-Windows sta ancora impostando il dispositivo.
+Windows sta ancora configurando il dispositivo.
 
 </dd> <dt>
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows sta ancora impostando questo dispositivo.** (26)
+<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows sta ancora configurando questo dispositivo.** (26)
 
 
 </dt> <dd>
 
-Windows sta ancora impostando il dispositivo.
+Windows sta ancora configurando il dispositivo.
 
 </dd> <dt>
 
@@ -1001,7 +1001,7 @@ Windows sta ancora impostando il dispositivo.
 
 </dt> <dd>
 
-La configurazione del log del dispositivo non è valida.
+Il dispositivo non ha una configurazione di log valida.
 
 </dd> <dt>
 
@@ -1018,7 +1018,7 @@ I driver di dispositivo non sono installati.
 
 <span id="This_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="this_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="THIS_DEVICE_IS_DISABLED_BECAUSE_THE_FIRMWARE_OF_THE_DEVICE_DID_NOT_GIVE_IT_THE_REQUIRED_RESOURCES."></span>
 
-<span id="this_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="THIS_DEVICE_IS_DISABLED_BECAUSE_THE_FIRMWARE_OF_THE_DEVICE_DID_NOT_GIVE_IT_THE_REQUIRED_RESOURCES."></span>**Questo dispositivo è disabilitato perché il firmware del dispositivo non ha fornito le risorse necessarie.** (29)
+<span id="this_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="THIS_DEVICE_IS_DISABLED_BECAUSE_THE_FIRMWARE_OF_THE_DEVICE_DID_NOT_GIVE_IT_THE_REQUIRED_RESOURCES."></span>**Questo dispositivo è disabilitato perché il firmware del dispositivo non ha dato le risorse necessarie.** (29)
 
 
 </dt> <dd>
@@ -1029,23 +1029,23 @@ Il dispositivo è disabilitato. Il firmware del dispositivo non ha fornito le ri
 
 <span id="This_device_is_using_an_Interrupt_Request__IRQ__resource_that_another_device_is_using."></span><span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>
 
-<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Questo dispositivo usa una risorsa di richiesta di interrupt (IRQ) usata da un altro dispositivo.** (30)
+<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Questo dispositivo usa una risorsa richiesta di interrupt (IRQ) in uso da un altro dispositivo.** (30)
 
 
 </dt> <dd>
 
-Il dispositivo usa una risorsa IRQ usata da un altro dispositivo.
+Il dispositivo usa una risorsa IRQ in uso da un altro dispositivo.
 
 </dd> <dt>
 
 <span id="This_device_is_not_working_properly_because_Windows_cannot_load_the_drivers_required_for_this_device."></span><span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>
 
-<span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>**Questo dispositivo non funziona correttamente perché Windows non è in grado di caricare i driver necessari per questo dispositivo.** 31
+<span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>**Questo dispositivo non funziona correttamente perché non Windows caricare i driver necessari per questo dispositivo.** (31)
 
 
 </dt> <dd>
 
-Il dispositivo non funziona correttamente. Windows non è in grado di caricare i driver di dispositivo necessari.
+Il dispositivo non funziona correttamente. Windows non è possibile caricare i driver di dispositivo necessari.
 
 </dd> </dl>
 
@@ -1054,89 +1054,89 @@ Il dispositivo non funziona correttamente. Windows non è in grado di caricare i
 **ConfigManagerUserConfig**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**schema**](../wmisdk/standard-qualifiers.md) ("Win32")
+Qualificatori: [**Schema**](../wmisdk/standard-qualifiers.md) ("Win32")
 </dt> </dl>
 
-Se **true**, il dispositivo usa una configurazione definita dall'utente.
+Se **TRUE,** il dispositivo usa una configurazione definita dall'utente.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
-**ConfigurationDialog**
+**Finestra di dialogo Configurazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| ConfigDialog")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| ConfigDialog")
 </dt> </dl>
 
-Stringa di inizializzazione del modem. Questa proprietà è costituita da stringhe di comando di altre proprietà di questa classe.
+Stringa di inizializzazione del modem. Questa proprietà è costituito da stringhe di comando di altre proprietà di questa classe.
 
 </dd> <dt>
 
-**CountriesSupported**
+**Paesi Supportati**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di paesi/aree geografiche in cui il modem può funzionare.
+Matrice di paesi/aree geografiche in cui il modem può operare.
 
-Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
+Questa proprietà viene ereditata da [**CIM \_ PotsModem.**](cim-potsmodem.md)
 
 </dd> <dt>
 
 **CountrySelected**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Paese/area geografica per cui il modem è attualmente programmato. Quando sono supportati più paesi o aree geografiche, questa proprietà definisce quello attualmente selezionato per l'utilizzo.
+Paese per cui è attualmente programmato il modem. Quando sono supportati più paesi/aree geografiche, questa proprietà definisce quale paese è attualmente selezionato per l'uso.
 
-Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
+Questa proprietà viene ereditata da [**CIM \_ PotsModem.**](cim-potsmodem.md)
 
 </dd> <dt>
 
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **\_ chiave CIM**](../wmisdk/standard-wmi-qualifiers.md)
+Qualificatori: [ **chiave \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
-Nome della prima classe concreta da visualizzare nella catena di ereditarietà utilizzata per la creazione di un'istanza. Se utilizzata con le altre proprietà chiave della classe, la proprietà consente di identificare in modo univoco tutte le istanze di questa classe e le relative sottoclassi.
+Nome della prima classe concreta da visualizzare nella catena di ereditarietà utilizzata nella creazione di un'istanza. Se usata con le altre proprietà chiave della classe , la proprietà consente l'identificazione univoca di tutte le istanze di questa classe e delle relative sottoclassi.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicalfile.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicalfile.md)
 
 </dd> <dt>
 
 **CurrentPasswords**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1144,46 +1144,46 @@ Tipo di accesso: sola lettura
 
 Elenco delle password attualmente definite per il modem. Questa matrice può essere lasciata vuota per motivi di sicurezza.
 
-Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
+Questa proprietà viene ereditata da [**CIM \_ PotsModem.**](cim-potsmodem.md)
 
 </dd> <dt>
 
 **DCB**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Communication Structures \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb)")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Strutture di comunicazione Win32API \| \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb)")
 </dt> </dl>
 
-Impostazioni di controllo per un dispositivo di comunicazione seriale, in questo caso il dispositivo modem.
+Controllare le impostazioni per un dispositivo di comunicazione seriale, in questo caso il dispositivo modem.
 
 </dd> <dt>
 
 **Default**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| default")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| Default")
 </dt> </dl>
 
-Se **true**, questo modem di POT è il modem predefinito nel computer che esegue Windows.
+Se **TRUE,** questo modem POTS è il modem predefinito nel computer che esegue Windows.
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1194,67 +1194,67 @@ Qualificatori: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Description
 
 Descrizione dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**DeviceID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](../wmisdk/key-qualifier.md), [**override**](../wmisdk/standard-qualifiers.md) ("DeviceID"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
+Qualificatori: [**Key,**](../wmisdk/key-qualifier.md) [**Override**](../wmisdk/standard-qualifiers.md) ("DeviceId"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Identificatore univoco di questo modem POT da altri dispositivi nel sistema.
+Identificatore univoco di questo modem POTS da altri dispositivi nel sistema.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **DeviceLoader**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| DevLoader")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| DevLoader")
 </dt> </dl>
 
-Nome del caricatore del dispositivo per il modem. Un caricatore del dispositivo carica e gestisce i driver e gli enumeratori di dispositivo per un determinato dispositivo.
+Nome del caricatore del dispositivo per il modem. Un caricatore di dispositivi carica e gestisce i driver di dispositivo e gli enumeratori per un determinato dispositivo.
 
 </dd> <dt>
 
 **DeviceType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| DeviceType")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| DeviceType")
 </dt> </dl>
 
 Tipo fisico del modem.
 
 I valori possibili sono:
 
-<dl> <dd>"Modem null"</dd> <dd>"Modem interno"</dd> <dd>"Modem esterno"</dd> <dd>"Modem PCMCIA"</dd> <dd>Sconosciuto</dd> </dl>
+<dl> <dd>"Modem Null"</dd> <dd>"Modem interno"</dd> <dd>"Modem esterno"</dd> <dd>"PCMCIA Modem"</dd> <dd>"Sconosciuto"</dd> </dl>
 
 <dt>
 
 <span id="Null_Modem"></span><span id="null_modem"></span><span id="NULL_MODEM"></span>
 
-**Modem null** ("modem null")
+**Modem Null** ("Modem Null")
 
 
 </dt> <dd></dd> <dt>
@@ -1275,24 +1275,24 @@ I valori possibili sono:
 
 <span id="PCMCIA_Modem"></span><span id="pcmcia_modem"></span><span id="PCMCIA_MODEM"></span>
 
-**Modem PCMCIA** ("modem PCMCIA")
+**PcMCIA Modem** ("PCMCIA Modem")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Sconosciuto** ("sconosciuto")
+**Sconosciuto** ("Sconosciuto")
 
 
 </dt> <dd></dd> </dl>
 
 </dd> <dt>
 
-**DialType**
+**Tipo di connessione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1300,7 +1300,7 @@ Tipo di accesso: sola lettura
 
 Tipo di metodo di composizione utilizzato.
 
-Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
+Questa proprietà viene ereditata da [**CIM \_ PotsModem.**](cim-potsmodem.md)
 
 <dt>
 
@@ -1320,23 +1320,23 @@ Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
 
 <span id="Pulse"></span><span id="pulse"></span><span id="PULSE"></span>
 
-**Impulsi** (2)
+**Pulse** (2)
 
 
 </dt> <dd></dd> </dl>
 
 </dd> <dt>
 
-**DriverDate**
+**Data driver**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| DriverDate")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| DriverDate")
 </dt> </dl>
 
 Data del driver del modem.
@@ -1346,40 +1346,40 @@ Data del driver del modem.
 **ErrorCleared**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **true**, l'errore segnalato in **LastErrorCode** è ora cancellato.
+Se **TRUE,** l'errore segnalato in **LastErrorCode** viene ora cancellato.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **ErrorControlForced**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| ErrorControl \_ forced")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| ErrorControl \_ Forced")
 </dt> </dl>
 
-Stringa di comando utilizzata per abilitare il controllo della correzione degli errori quando si stabilisce una connessione. Ciò aumenta l'affidabilità della connessione.
+Stringa di comando usata per abilitare il controllo della correzione degli errori quando si stabilisce una connessione. In questo modo si aumenta l'affidabilità della connessione.
 
-Esempio: "+ Q5S36 = 4S48 = 7"
+Esempio: "+Q5S36=4S48=7"
 
 </dd> <dt>
 
 **ErrorControlInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1387,7 +1387,7 @@ Tipo di accesso: sola lettura
 
 Caratteristiche di correzione degli errori del modem.
 
-Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
+Questa proprietà viene ereditata da [**CIM \_ PotsModem.**](cim-potsmodem.md)
 
 <dt>
 
@@ -1407,7 +1407,7 @@ Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
 
 <span id="No_Error_Correction"></span><span id="no_error_correction"></span><span id="NO_ERROR_CORRECTION"></span>
 
-**Nessuna correzione errori** (2)
+**Nessuna correzione di errore** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -1431,67 +1431,67 @@ Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
 **ErrorControlOff**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| ErrorControl \_ off")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| ErrorControl \_ Off")
 </dt> </dl>
 
 Stringa di comando utilizzata per disabilitare il controllo degli errori.
 
-Esempio: "+ Q6S36 = 3S48 = 128"
+Esempio: "+Q6S36=3S48=128"
 
 </dd> <dt>
 
 **ErrorControlOn**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| ErrorControl \_ on")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| ErrorControl \_ On")
 </dt> </dl>
 
 Stringa di comando utilizzata per abilitare il controllo degli errori.
 
-Esempio: "+ Q5S36 = 7S48 = 7"
+Esempio: "+Q5S36=7S48=7"
 
 </dd> <dt>
 
 **ErrorDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Altre informazioni sull'errore registrato in **LastErrorCode** e informazioni sulle azioni correttive che possono essere eseguite.
+Altre informazioni sull'errore registrato in **LastErrorCode** e informazioni su eventuali azioni correttive che possono essere eseguite.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **FlowControlHard**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| FlowControl \_ hard")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| FlowControl \_ Hard")
 </dt> </dl>
 
-Stringa di comando usata per abilitare il controllo del flusso hardware. Il controllo di flusso è costituito da segnali inviati tra computer che verificano che entrambi i computer siano pronti per la trasmissione o la ricezione di dati.
+Stringa di comando usata per abilitare il controllo di flusso hardware. Flow controllo è costituito da segnali inviati tra computer che verificano che entrambi i computer siano pronti per trasmettere o ricevere dati.
 
 Esempio: "&K1"
 
@@ -1500,16 +1500,16 @@ Esempio: "&K1"
 **FlowControlOff**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| FlowControl \_ off")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| FlowControl \_ Off")
 </dt> </dl>
 
-Stringa di comando usata per disabilitare il controllo di flusso. Il controllo di flusso è costituito da segnali inviati tra computer che verificano che entrambi i computer siano pronti per la trasmissione o la ricezione di dati.
+Stringa di comando usata per disabilitare il controllo di flusso. Flow controllo è costituito da segnali inviati tra computer che verificano che entrambi i computer siano pronti per trasmettere o ricevere dati.
 
 Esempio: "&K0"
 
@@ -1518,16 +1518,16 @@ Esempio: "&K0"
 **FlowControlSoft**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| FlowControl \_ soft")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| FlowControl \_ Soft")
 </dt> </dl>
 
-Stringa di comando usata per abilitare il controllo del flusso software. Il controllo di flusso è costituito da segnali inviati tra computer che verificano che entrambi i computer siano pronti per la trasmissione o la ricezione di dati.
+Stringa di comando usata per abilitare il controllo di flusso software. Flow controllo è costituito da segnali inviati tra computer che verificano che entrambi i computer siano pronti per trasmettere o ricevere dati.
 
 Esempio: "&K2"
 
@@ -1536,23 +1536,23 @@ Esempio: "&K2"
 **InactivityScale**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| InactivityScale")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| InactivityScale")
 </dt> </dl>
 
-Moltiplicatore utilizzato con la proprietà **InactivityTimeout** per calcolare il periodo di timeout di una connessione.
+Moltiplicatore usato con la **proprietà InactivityTimeout** per calcolare il periodo di timeout di una connessione.
 
 </dd> <dt>
 
 **InactivityTimeout**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1561,16 +1561,16 @@ Tipo di accesso: sola lettura
 Qualificatori: [**unità**](../wmisdk/standard-qualifiers.md) ("secondi")
 </dt> </dl>
 
-Limite di tempo (in secondi) per la disconnessione automatica della linea telefonica, se non vengono scambiati dati. Il valore 0 (zero) indica che questa funzionalità è presente ma non abilitata.
+Limite di tempo (in secondi) per la disconnessione automatica della linea telefonica, se non viene scambiato alcun dato. Il valore 0 (zero) indica che questa funzionalità è presente ma non abilitata.
 
-Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
+Questa proprietà viene ereditata da [**CIM \_ PotsModem.**](cim-potsmodem.md)
 
 </dd> <dt>
 
 **Index**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1585,42 +1585,42 @@ Esempio: 0
 **IndexEx**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-ID dell'istanza del dispositivo per questo modem di pot.
+ID dell'istanza del dispositivo per questo modem POTS.
 
 Esempio: "1&08"
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** Questa proprietà è disponibile a partire da Windows Server 2016 e Windows 10.
+**Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista:** Questa proprietà è disponibile a partire da Windows Server 2016 e Windows 10.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001,5 "), [**DisplayName**](../wmisdk/standard-qualifiers.md) (" data di installazione ")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Install Date")
 </dt> </dl>
 
 Data e ora di installazione dell'oggetto. Questa proprietà non richiede un valore per indicare che l'oggetto è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **LastErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1628,14 +1628,14 @@ Tipo di accesso: sola lettura
 
 Ultimo codice di errore segnalato dal dispositivo logico.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **MaxBaudRateToPhone**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1644,16 +1644,16 @@ Tipo di accesso: sola lettura
 Qualificatori: [**unità**](../wmisdk/standard-qualifiers.md) ("bit al secondo")
 </dt> </dl>
 
-Velocità di comunicazione massima impostabile per l'accesso al sistema telefonico.
+Velocità massima di comunicazione impostabile per l'accesso al sistema telefonico.
 
-Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
+Questa proprietà viene ereditata da [**CIM \_ PotsModem.**](cim-potsmodem.md)
 
 </dd> <dt>
 
 **MaxBaudRateToSerialPort**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1662,40 +1662,40 @@ Tipo di accesso: sola lettura
 Qualificatori: [**unità**](../wmisdk/standard-qualifiers.md) ("bit al secondo")
 </dt> </dl>
 
-Velocità di comunicazione massima impostabile per la porta COM per un modem esterno. Immettere 0 (zero) se non è applicabile.
+Velocità massima di comunicazione impostabile sulla porta COM per un modem esterno. Immettere 0 (zero) se non applicabile.
 
-Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
+Questa proprietà viene ereditata da [**CIM \_ PotsModem.**](cim-potsmodem.md)
 
 </dd> <dt>
 
 **MaxNumberOfPasswords**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero di password definibili nel modem. Se questa funzionalità non è supportata, immettere 0 (zero).
+Numero di password definibili nel modem stesso. Se questa funzionalità non è supportata, immettere 0 (zero).
 
-Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
+Questa proprietà viene ereditata da [**CIM \_ PotsModem.**](cim-potsmodem.md)
 
 </dd> <dt>
 
 **Modello**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| Model")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| Model")
 </dt> </dl>
 
-Modello di questo modem di pot.
+Modello di questo modem POTS.
 
 Esempio: "Sportster 56K External"
 
@@ -1704,31 +1704,31 @@ Esempio: "Sportster 56K External"
 **ModemInfPath**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| InfPath")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| InfPath")
 </dt> </dl>
 
-Percorso del file con estensione inf del modem. Questo file contiene le informazioni di inizializzazione per il modem e il relativo driver.
+Percorso del file inf del modem. Questo file contiene informazioni di inizializzazione per il modem e il relativo driver.
 
-Esempio: "C: \\ Windows \\ inf"
+Esempio: "C: \\ Windows \\ INF"
 
 </dd> <dt>
 
 **ModemInfSection**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| InfSection")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| InfSection")
 </dt> </dl>
 
 Nome della sezione nel file inf del modem che contiene informazioni sul modem.
@@ -1738,16 +1738,16 @@ Nome della sezione nel file inf del modem che contiene informazioni sul modem.
 **ModulationBell**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| Modulation \_ Bell")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| Modulation \_ Bell")
 </dt> </dl>
 
-Stringa di comando usata per indicare al modem di usare le modulazioni a campana per 300 e 1200 bps.
+Stringa di comando usata per indicare al modem di usare le modulazioni Bell per 300 e 1200 bps.
 
 Esempio: "B1"
 
@@ -1756,13 +1756,13 @@ Esempio: "B1"
 **ModulationCCITT**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| Modulation \_ CCITT")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| Modulation \_ CCITT")
 </dt> </dl>
 
 Stringa di comando usata per indicare al modem di usare le modulazioni CCITT per 300 e 1200 bps.
@@ -1774,7 +1774,7 @@ Esempio: "B0"
 **ModulationScheme**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1782,7 +1782,7 @@ Tipo di accesso: sola lettura
 
 Schema di modulazione del modem.
 
-Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
+Questa proprietà viene ereditata da [**CIM \_ PotsModem.**](cim-potsmodem.md)
 
 <dt>
 
@@ -1809,7 +1809,7 @@ Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
 
 <span id="Bell_103"></span><span id="bell_103"></span><span id="BELL_103"></span>
 
-**Campana 103** (3)
+**Bell 103** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -1823,49 +1823,49 @@ Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
 
 <span id="V.22bis"></span><span id="v.22bis"></span><span id="V.22BIS"></span>
 
-**V. 22bis** (5)
+**V.22bis** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="V.32"></span><span id="v.32"></span>
 
-**V. 32** (6)
+**V.32** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="V.32bis"></span><span id="v.32bis"></span><span id="V.32BIS"></span>
 
-**V. 32bis** (7)
+**V.32bis** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="V.turbo"></span><span id="v.turbo"></span><span id="V.TURBO"></span>
 
-**V. Turbo** (8)
+**V.turbo** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="V.FC"></span><span id="v.fc"></span>
 
-**V. FC** (9)
+**V.FC** (9)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="V.34"></span><span id="v.34"></span>
 
-**V. 34** (10)
+**V.34** (10)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="V.34bis"></span><span id="v.34bis"></span><span id="V.34BIS"></span>
 
-**V. 34bis** (11)
+**V.34bis** (11)
 
 
 </dt> <dd></dd> </dl>
@@ -1875,7 +1875,7 @@ Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1884,42 +1884,42 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Name")
 </dt> </dl>
 
-Etichetta con cui l'oggetto è noto. Quando è sottoclassata, è possibile eseguire l'override della proprietà in modo che sia una proprietà chiave.
+Etichetta con cui l'oggetto è noto. In caso di sottoclasse, la proprietà può essere sottoposta a override per essere una proprietà chiave.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **PNPDeviceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**schema**](../wmisdk/standard-qualifiers.md) ("Win32")
+Qualificatori: [**Schema**](../wmisdk/standard-qualifiers.md) ("Win32")
 </dt> </dl>
 
-Identificatore del dispositivo Windows Plug and Play del dispositivo logico.
+Windows Plug and Play identificatore di dispositivo del dispositivo logico.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
-Esempio: " \* PNP030b"
+Esempio: \* "PNP030b"
 
 </dd> <dt>
 
 **PortSubClass**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| PortSubClass"), **valore** ("porta parallela", "porta seriale", "modem")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| PortSubClass"), **Value** ("Parallel Port", "Serial Port", "Modem")
 </dt> </dl>
 
 Definizione della porta utilizzata per questo modem.
@@ -1964,15 +1964,15 @@ Modem
 **PowerManagementCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice delle funzionalità specifiche relative al risparmio di energia di un dispositivo logico.
+Matrice delle funzionalità specifiche correlate all'alimentazione di un dispositivo logico.
 
-Questa proprietà viene ereditata da **CIM \_ LogicalDevice**.
+Questa proprietà viene ereditata da **CIM \_ LogicalDevice.**
 
 <dt>
 
@@ -2004,13 +2004,13 @@ Questa proprietà viene ereditata da **CIM \_ LogicalDevice**.
 
 </dt> <dd>
 
-Le funzionalità di risparmio energia sono attualmente abilitate, ma il set di funzionalità esatto è sconosciuto oppure le informazioni non sono disponibili.
+Le funzionalità di risparmio energia sono attualmente abilitate, ma il set di funzionalità esatto è sconosciuto o le informazioni non sono disponibili.
 
 </dd> <dt>
 
 <span id="Power_Saving_Modes_Entered_Automatically"></span><span id="power_saving_modes_entered_automatically"></span><span id="POWER_SAVING_MODES_ENTERED_AUTOMATICALLY"></span>
 
-<span id="Power_Saving_Modes_Entered_Automatically"></span><span id="power_saving_modes_entered_automatically"></span><span id="POWER_SAVING_MODES_ENTERED_AUTOMATICALLY"></span>**Modalità di risparmio energia immesse automaticamente** (4)
+<span id="Power_Saving_Modes_Entered_Automatically"></span><span id="power_saving_modes_entered_automatically"></span><span id="POWER_SAVING_MODES_ENTERED_AUTOMATICALLY"></span>**Modalità risparmio energia immesse automaticamente** (4)
 
 
 </dt> <dd>
@@ -2021,36 +2021,36 @@ Il dispositivo può modificare lo stato di alimentazione in base all'utilizzo o 
 
 <span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>
 
-<span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>**Stato di alimentazione impostabile** (5)
+<span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>**Power State Settable** (5)
 
 
 </dt> <dd>
 
-Il metodo [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) è supportato. Questo metodo è disponibile nella classe **\_ LogicalDevice CIM** padre e può essere implementato. Per ulteriori informazioni, vedere [progettazione di classi Managed Object Format (MOF)](../wmisdk/designing-managed-object-format--mof--classes.md).
+Il [**metodo SetPowerState**](setpowerstate-method-in-class-cim-controller.md) è supportato. Questo metodo si trova nella classe **CIM \_ LogicalDevice** padre e può essere implementato. Per altre informazioni, vedere [Progettazione di Managed Object Format (MOF).](../wmisdk/designing-managed-object-format--mof--classes.md)
 
 </dd> <dt>
 
 <span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>
 
-<span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>**Power Cycling supportato** (6)
+<span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>**Alimentazione supportata** (6)
 
 
 </dt> <dd>
 
-Il metodo [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) può essere richiamato con il parametro *PowerState* impostato su 5 (ciclo di alimentazione).
+Il [**metodo SetPowerState**](setpowerstate-method-in-class-cim-controller.md) può essere richiamato con il *parametro PowerState* impostato su 5 (Ciclo di alimentazione).
 
 </dd> <dt>
 
 <span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>
 
-<span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>**Alimentazione temporizzata supportata** (7)
+<span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>**Accensione a tempo supportata** (7)
 
 
 </dt> <dd>
 
-Tempo Power-On supportato
+Tempor Power-On supportato
 
-Il metodo [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) può essere richiamato con il parametro *PowerState* impostato su 5 (ciclo di alimentazione) e *ora* impostato su una data e un'ora specifiche, o su un intervallo, per l'accensione.
+Il [**metodo SetPowerState**](setpowerstate-method-in-class-cim-controller.md) può essere richiamato con il parametro *PowerState* impostato su 5 (Power Cycle) e *Time* impostato su una data e un'ora o un intervallo specifici per l'accensione.
 
 </dd> </dl>
 
@@ -2059,28 +2059,28 @@ Il metodo [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) p
 **PowerManagementSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **true**, il dispositivo può essere gestito dal risparmio di energia (può essere impostato in modalità di sospensione e così via). La proprietà non indica che le funzionalità di risparmio energia sono attualmente abilitate, solo che il dispositivo logico è in grado di gestire il risparmio di energia.
+Se **TRUE,** il dispositivo può essere gestito dall'alimentazione (può essere messo in modalità di sospensione e così via). La proprietà non indica che le funzionalità di risparmio energia sono attualmente abilitate, ma solo che il dispositivo logico è in grado di eseguire il risparmio energia.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **Prefix**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| prefisso della classe di controllo CurrentControlSet di sistema Win32Registry \\ \\ \\ \\ \\ \\ \| ")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| Prefix")
 </dt> </dl>
 
 Prefisso di composizione usato per accedere a una linea esterna.
@@ -2090,29 +2090,29 @@ Prefisso di composizione usato per accedere a una linea esterna.
 **Proprietà**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| proprietà della classe del controllo Win32Registry System \\ \\ CurrentControlSet \\ \\ \\ \\ \| ")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| Properties")
 </dt> </dl>
 
-Elenco di tutte le proprietà (e i relativi valori) per questo modem.
+Elenco di tutte le proprietà (e dei relativi valori) per il modem.
 
 </dd> <dt>
 
 **ProviderName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| providerName")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| ProviderName")
 </dt> </dl>
 
 Percorso di rete del computer che fornisce i servizi modem.
@@ -2122,16 +2122,16 @@ Percorso di rete del computer che fornisce i servizi modem.
 **Impulso**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| Pulse")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| Pulse")
 </dt> </dl>
 
-Stringa di comando utilizzata per indicare al modem di utilizzare la modalità a impulsi per la composizione. La composizione a impulsi è necessaria per le linee telefoniche che non sono in grado di gestire la composizione dei toni.
+Stringa di comando utilizzata per indicare al modem di usare la modalità pulse per la composizione. La composizione a pulsazione è necessaria per le linee telefoniche che non sono in grado di gestire la composizione a tono.
 
 Esempio: "P"
 
@@ -2140,16 +2140,16 @@ Esempio: "P"
 **Reimpostazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](../wmisdk/standard-qualifiers.md) (reset), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| Reset")
+Qualificatori: [**Override**](../wmisdk/standard-qualifiers.md) (reset), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet Control Class \\ \\ \\ \\ \| Reset")
 </dt> </dl>
 
-Stringa di comando utilizzata per reimpostare il modem per la chiamata successiva.
+Stringa di comando usata per reimpostare il modem per la chiamata successiva.
 
 Esempio: "AT&F"
 
@@ -2158,47 +2158,47 @@ Esempio: "AT&F"
 **ResponsesKeyName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| ResponsesKeyName")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| ResponsesKeyName")
 </dt> </dl>
 
-Risposta che questo modem potrebbe segnalare al sistema operativo durante il processo di connessione. I primi due caratteri specificano il tipo di risposta. I secondi due caratteri specificano le informazioni sulla connessione in corso. I due caratteri vengono usati solo per lo stato della negoziazione o per i codici di risposta di connessione. Gli otto caratteri successivi specificano la velocità della linea da modem a modem negoziata in bit al secondo (BPS). I caratteri rappresentano un formato Long integer senza segno a 32 bit (byte e parola invertita). Gli ultimi otto caratteri indicano che il modem sta passando a una porta diversa o a una velocità del Data Terminal Equipment (DTE). Questo campo non viene in genere usato perché i modem rendono le connessioni a una velocità di porta bloccata indipendentemente dalla velocità da modem a modem o DCE (Data Communications Equipment).
+Risposta che il modem potrebbe segnalare al sistema operativo durante il processo di connessione. I primi due caratteri specificano il tipo di risposta. I secondi due caratteri specificano informazioni sulla connessione effettuata. I secondi due caratteri vengono usati solo per lo stato di avanzamento della negoziazione o Connessione di risposta. Gli otto caratteri successivi specificano la velocità della linea da modem a modem negoziata in bit al secondo (bps). I caratteri rappresentano un formato long integer senza segno a 32 bit (byte e parola invertito). Gli ultimi otto caratteri indicano che il modem sta cambiando a una porta diversa o a una velocità DTE (Data Terminal Equipment). In genere questo campo non viene utilizzato perché i modem esecutori effettuano connessioni a una velocità della porta bloccata indipendentemente dalla velocità da modem a modem o DCE (Data Communications Equipment).
 
 </dd> <dt>
 
 **RingsBeforeAnswer**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero di anelli prima che il modem risponda a una chiamata in ingresso.
+Numero di anelli prima che il modem rileva una chiamata in ingresso.
 
-Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
+Questa proprietà viene ereditata da [**CIM \_ PotsModem.**](cim-potsmodem.md)
 
 </dd> <dt>
 
 **SpeakerModeDial**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| SpeakerModeDial")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| SpeakerModeDial")
 </dt> </dl>
 
-Stringa di comando utilizzata per attivare l'altoparlante del modem dopo aver composto un numero e disattivarlo quando è stata stabilita una connessione.
+Stringa di comando usata per attivare l'altoparlante del modem dopo la composizione di un numero e la disattivazione della voce quando è stata stabilita una connessione.
 
 Esempio: "M1"
 
@@ -2207,13 +2207,13 @@ Esempio: "M1"
 **SpeakerModeOff**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| SpeakerModeOff")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| SpeakerModeOff")
 </dt> </dl>
 
 Stringa di comando utilizzata per disattivare l'altoparlante del modem.
@@ -2225,34 +2225,34 @@ Esempio: "M0"
 **SpeakerModeOn**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| SpeakerModeOn")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| SpeakerModeOn")
 </dt> </dl>
 
 Stringa di comando utilizzata per attivare l'altoparlante del modem.
 
-Esempio: "m2"
+Esempio: "M2"
 
 </dd> <dt>
 
 **SpeakerModeSetup**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| SpeakerModeSetup")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| SpeakerModeSetup")
 </dt> </dl>
 
-Stringa di comando utilizzata per indicare al modem di accendere l'altoparlante (fino a quando non viene stabilita una connessione).
+Stringa di comando usata per indicare al modem di accendere l'altoparlante (fino a quando non viene stabilita una connessione).
 
 Esempio: "M3"
 
@@ -2261,16 +2261,16 @@ Esempio: "M3"
 **SpeakerVolumeHigh**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| SpeakerVolume \_ High")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| SpeakerVolume \_ High")
 </dt> </dl>
 
-Stringa di comando utilizzata per impostare l'altoparlante del modem sul volume più alto.
+Stringa di comando utilizzata per impostare l'altoparlante del modem sul volume più elevato.
 
 Esempio: "L3"
 
@@ -2279,15 +2279,15 @@ Esempio: "L3"
 **SpeakerVolumeInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrive il livello di volume dei toni acustici dal modem.
+Descrive il livello di volume dei toni udibili del modem.
 
-Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
+Questa proprietà viene ereditata da [**CIM \_ PotsModem.**](cim-potsmodem.md)
 
 <dt>
 
@@ -2314,7 +2314,7 @@ Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
 
 <span id="High"></span><span id="high"></span><span id="HIGH"></span>
 
-**Alta** (3)
+**Alto** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -2328,7 +2328,7 @@ Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
 
 <span id="Low"></span><span id="low"></span><span id="LOW"></span>
 
-**Bassa** (5)
+**Basso** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -2342,7 +2342,7 @@ Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
 
 <span id="Auto"></span><span id="auto"></span><span id="AUTO"></span>
 
-**Automatico** (7)
+**Auto** (7)
 
 
 </dt> <dd></dd> </dl>
@@ -2352,13 +2352,13 @@ Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
 **SpeakerVolumeLow**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| SpeakerVolume \_ low")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| SpeakerVolume \_ Low")
 </dt> </dl>
 
 Stringa di comando utilizzata per impostare l'altoparlante del modem sul volume più basso.
@@ -2370,13 +2370,13 @@ Esempio: "L1"
 **SpeakerVolumeMed**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| SpeakerVolume \_ Med")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| SpeakerVolume \_ Med")
 </dt> </dl>
 
 Stringa di comando utilizzata per impostare l'altoparlante del modem su un volume medio.
@@ -2388,18 +2388,18 @@ Esempio: "L2"
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("status")
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Stato corrente dell'oggetto. È possibile definire diversi stati operativi e non operativi. Gli stati operativi includono: "OK", "degradato" e "errore Predator" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente, ma prevedere un errore nel prossimo futuro). Gli Stati non operativi includono: "Error", "starting", "stoping" e "Service". Il secondo "servizio" può essere applicato durante il mirroring di un disco, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati nonoperational includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono online, ma l'elemento gestito non è "OK" né in uno degli altri stati.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Sono inclusi i valori seguenti:
 
@@ -2414,77 +2414,77 @@ Sono inclusi i valori seguenti:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Errore** ("errore")
+**Errore** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-Ridotto **("danneggiato"** )
+**Degraded** ("Degraded")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Sconosciuto** ("sconosciuto")
+**Sconosciuto** ("Sconosciuto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Errore di predazione** ("Predator fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Avvio** di ("avvio")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Arresto** in corso ("arresto")
+**Arresto** ("Arresto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servizio** ("servizio")
+**Servizio** ("Servizio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sottolineato** (sottolineato)
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Noncover** ("noncover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Nessun contatto** ("nessun contatto")
+**Nessun contatto** ("Nessun contatto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicazione persa** ("comunicazione persa")
+**Lost Comm** ("Lost Comm")
 
 
 </dt> <dd></dd> </dl>
@@ -2494,18 +2494,18 @@ Ridotto **("danneggiato"** )
 **StatusInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Stato operativo DMTF \| 003,3 ")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| Operational State \| 003.3")
 </dt> </dl>
 
-Stato del dispositivo logico. Se questa proprietà non si applica al dispositivo logico, è necessario utilizzare il valore 5 (non applicabile).
+Stato del dispositivo logico. Se questa proprietà non si applica al dispositivo logico, è necessario usare il valore 5 (Non applicabile).
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
@@ -2546,16 +2546,16 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevic
 
 </dd> <dt>
 
-**StringFormat**
+**Stringformat**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32 \_ API \| line Device Structures \| LINEDEVCAPS \| dwStringFormat")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32 \_ API Line Device \| Structures \| LINEDEVCAPS \| dwStringFormat")
 </dt> </dl>
 
 Tipo di caratteri utilizzati per il testo passato attraverso il modem.
@@ -2582,7 +2582,7 @@ I valori possibili sono:
 
 <span id="UNICODE_string_format"></span><span id="unicode_string_format"></span><span id="UNICODE_STRING_FORMAT"></span>
 
-**Formato stringa Unicode** ("formato stringa Unicode")
+**Formato stringa UNICODE** ("formato stringa UNICODE")
 
 
 </dt> <dd></dd> </dl>
@@ -2592,91 +2592,91 @@ I valori possibili sono:
 **SupportsCallback**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **true**, il modem supporta il callback.
+Se **TRUE,** il modem supporta il callback.
 
-Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
+Questa proprietà viene ereditata da [**CIM \_ PotsModem.**](cim-potsmodem.md)
 
 </dd> <dt>
 
 **SupportsSynchronousConnect**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **true**, sincrona e asincrona, la comunicazione è supportata.
+Se **TRUE,** la comunicazione sincrona e asincrona è supportata.
 
-Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
+Questa proprietà viene ereditata da [**CIM \_ PotsModem.**](cim-potsmodem.md)
 
 </dd> <dt>
 
 **SystemCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagato**](../wmisdk/standard-qualifiers.md) ("[**\_ sistema CIM**](cim-system.md).**CreationClassName**"), [**\_ chiave CIM**](../wmisdk/standard-wmi-qualifiers.md)
+Qualificatori: [**propagati**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**CHIAVE \_ CIM**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
 Valore della proprietà **CreationClassName** del computer di ambito.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagato**](../wmisdk/standard-qualifiers.md) ("[**\_ sistema CIM**](cim-system.md).**Nome**"), [**\_ chiave CIM**](../wmisdk/standard-wmi-qualifiers.md)
+Qualificatori: [**propagati**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**Name**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
 Nome del sistema di ambito.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **Carattere di terminazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| Terminator")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| Terminator")
 </dt> </dl>
 
 Stringa che contrassegna la fine di una stringa di comando.
 
-Esempio: "<CR"
+Esempio: "<cr"
 
 </dd> <dt>
 
 **TimeOfLastReset**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -2684,49 +2684,49 @@ Tipo di accesso: sola lettura
 
 Data e ora dell'ultima reimpostazione del modem.
 
-Questa proprietà viene ereditata da [**CIM \_ PotsModem**](cim-potsmodem.md).
+Questa proprietà viene ereditata da [**CIM \_ PotsModem.**](cim-potsmodem.md)
 
 </dd> <dt>
 
 **Tono**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| Tone")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| Tone")
 </dt> </dl>
 
-Stringa di comando che indica al modem di utilizzare la modalità Tone per la composizione. La linea telefonica deve supportare la composizione dei toni.
+Stringa di comando che indica al modem di utilizzare la modalità tono per la composizione. La linea telefonica deve supportare la composizione a tono.
 
 Esempio: "T"
 
 </dd> <dt>
 
-**VoiceSwitchFeature**
+**Funzionalità voiceSwitchFeature**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control \\ \\ Class \| VoiceSwitchFeature")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SYSTEM \\ \\ CurrentControlSet \\ \\ Control Class \\ \\ \| VoiceSwitchFeature")
 </dt> </dl>
 
-Stringhe di comando utilizzate per attivare le funzionalità vocali di un modem vocale.
+Stringhe di comando usate per attivare le funzionalità vocali di un voice modem.
 
-Esempio: "AT + V"
+Esempio: "AT+V"
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ POTSModem** è derivata da [**CIM \_ POTSModem**](cim-potsmodem.md).
+La **classe WIN32 \_ POTSModem** è derivata da [**CIM \_ PotsModem.**](cim-potsmodem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -2737,7 +2737,7 @@ La classe **Win32 \_ POTSModem** è derivata da [**CIM \_ POTSModem**](cim-potsm
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -2746,10 +2746,10 @@ La classe **Win32 \_ POTSModem** è derivata da [**CIM \_ POTSModem**](cim-potsm
 
 <dl> <dt>
 
-[**\_POTSMODEM CIM**](cim-potsmodem.md)
+[**CIM \_ PotsModem**](cim-potsmodem.md)
 </dt> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema computer](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

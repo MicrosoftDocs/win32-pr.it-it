@@ -1,31 +1,31 @@
 ---
-description: Metodi BoundingBox
+description: Metodi di BoundingBox
 ms.assetid: 68db5936-f0f8-4dbd-a183-b6c3089af0f0
-title: Metodi BoundingBox
+title: Metodi di BoundingBox
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b58c79f202304a289bf1e30447b76ba9ad6dc83
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d6e9cd729195d98b55fe519c4c12e81e82cdda673de45696deac27e5a273177d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985101"
 ---
-# <a name="boundingbox-methods"></a>Metodi BoundingBox
+# <a name="boundingbox-methods"></a>Metodi di BoundingBox
 
 
 
 | Metodo                                                              | Descrizione                                                                                            |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| [**Contiene**](boundingbox-contains.md)<br/>                 | Verifica se il BoundingBox contiene un oggetto specificato.<br/>                                  |
-| [**CreateFromPoints**](boundingbox-createfrompoints.md)<br/> | Crea un BoundingBox da punti.<br/>                                                          |
-| [**Interseca**](boundingbox-intersects.md)<br/>             | Verifica il BoundingBox per l'intersezione con un altro oggetto.<br/>                                 |
+| [**Contiene**](boundingbox-contains.md)<br/>                 | Verifica se BoundingBox contiene un oggetto specificato.<br/>                                  |
+| [**CreateFromPoints**](boundingbox-createfrompoints.md)<br/> | Crea un oggetto BoundingBox dai punti.<br/>                                                          |
+| [**Interseca**](boundingbox-intersects.md)<br/>             | Verifica l'intersezione di BoundingBox con un altro oggetto.<br/>                                 |
 | [**Transform**](boundingbox-transform.md)<br/>               | Trasforma l'oggetto BoundingBox.<br/>                                                                 |
-| [**ContainedBy**](/windows/desktop/api/DirectXCollision/nf-directxcollision-boundingbox-containedby)<br/>           | Verifica se il [**BoundingBox**](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox) è contenuto nel tronco specificato.<br/> |
-| [**CreateFromSphere**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-createfromsphere)<br/> | Crea un oggetto BoundingBox sufficientemente grande da contenere la BoundingSphere specificata.<br/>               |
-| [**CreateMerged**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-createmerged)<br/>         | Crea un oggetto BoundingBox sufficientemente grande da contenere due istanze BoundBox specificati.<br/>             |
-| [**Getangoli**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-getcorners)<br/>             | Recupera gli angoli dell'oggetto BoundingBox.<br/>                                                   |
-| [**\_assegnazione op**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-operator-assign)<br/>      | Copia i valori da un altro BoundingBox.<br/>                                                     |
+| [**ContainedBy**](/windows/desktop/api/DirectXCollision/nf-directxcollision-boundingbox-containedby)<br/>           | Verifica se [**BoundingBox**](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox) è contenuto nel frustum specificato.<br/> |
+| [**CreateFromSphere**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-createfromsphere)<br/> | Crea un oggetto BoundingBox sufficientemente grande da contenere l'oggetto BoundingSphere specificato.<br/>               |
+| [**CreateMerged**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-createmerged)<br/>         | Crea un oggetto BoundingBox sufficientemente grande da contiene due intance BoundBox specificate.<br/>             |
+| [**GetCorners**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-getcorners)<br/>             | Recupera gli angoli di BoundingBox.<br/>                                                   |
+| [**Assegnazione \_ op**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-operator-assign)<br/>      | Copia i valori da un altro oggetto BoundingBox.<br/>                                                     |
 
 
 
@@ -35,7 +35,7 @@ ms.locfileid: "106309427"
 
 <dl> <dt>
 
-[BoundingBox](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox)
+[Boundingbox](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox)
 </dt> </dl>
 
  

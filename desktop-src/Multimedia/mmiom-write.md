@@ -1,9 +1,9 @@
 ---
-title: Messaggio MMIOM_WRITE (mmsystem. h)
-description: Il \_ messaggio di scrittura MMIOM viene inviato a una routine di i/O dalla funzione mmioWrite per richiedere che i dati vengano scritti in un file aperto.
+title: MMIOM_WRITE messaggio (Mmsystem.h)
+description: Il messaggio MMIOM WRITE viene inviato a una procedura di I/O dalla funzione mmioWrite per richiedere che i dati \_ siano scritti in un file aperto.
 ms.assetid: 46e2dd9a-c4a7-4c99-86e4-a67b424411d1
 keywords:
-- MMIOM_WRITE messaggi multimediali di Windows
+- MMIOM_WRITE messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c27cf96827f803608c369cc9022faa6235add9ec
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 755b89d7e268e266b4761142dc3820bdd4d33d4bd4d86522ce5363b95e5be282
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065271"
 ---
-# <a name="mmiom_write-message"></a>MMIOM \_ Scrivi messaggio
+# <a name="mmiom_write-message"></a>Messaggio MMIOM \_ WRITE
 
-Il messaggio di **\_ scrittura MMIOM** viene inviato a una routine di i/O dalla funzione [**mmioWrite**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmiowrite) per richiedere che i dati vengano scritti in un file aperto.
+Il **messaggio MMIOM \_ WRITE** viene inviato a una procedura di I/O dalla funzione [**mmioWrite**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmiowrite) per richiedere che i dati siano scritti in un file aperto.
 
 
 ```C++
@@ -68,7 +68,7 @@ La procedura di I/O è responsabile dell'aggiornamento del membro **lDiskOffset*
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: WM_CTLCOLORLISTBOX messaggio (Winuser.h)
-description: Inviato alla finestra padre di una casella di riepilogo prima che il sistema estraa la casella di riepilogo. Rispondendo a questo messaggio, la finestra padre può impostare i colori del testo e dello sfondo della casella di riepilogo usando l'handle di contesto del dispositivo di visualizzazione specificato.
+description: Inviato alla finestra padre di una casella di riepilogo prima che il sistema disegni la casella di riepilogo. Rispondendo a questo messaggio, la finestra padre può impostare i colori del testo e dello sfondo della casella di riepilogo usando l'handle del contesto di dispositivo di visualizzazione specificato.
 ms.assetid: e128e77f-e966-44c4-9f0e-efcf421b6c82
 keywords:
-- WM_CTLCOLORLISTBOX dei controlli Windows messaggio
+- WM_CTLCOLORLISTBOX di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "119077665"
 ---
 # <a name="wm_ctlcolorlistbox-message"></a>Messaggio \_ WM CTLCOLORLISTBOX
 
-Inviato alla finestra padre di una casella di riepilogo prima che il sistema estraa la casella di riepilogo. Rispondendo a questo messaggio, la finestra padre può impostare i colori del testo e dello sfondo della casella di riepilogo usando l'handle di contesto del dispositivo di visualizzazione specificato.
+Inviato alla finestra padre di una casella di riepilogo prima che il sistema disegni la casella di riepilogo. Rispondendo a questo messaggio, la finestra padre può impostare i colori del testo e dello sfondo della casella di riepilogo usando l'handle del contesto di dispositivo di visualizzazione specificato.
 
 
 ```C++
@@ -42,7 +42,7 @@ WM_CTLCOLORLISTBOX
 *wParam* 
 </dt> <dd>
 
-Handle per il contesto di dispositivo per la casella di riepilogo.
+Handle al contesto di dispositivo per la casella di riepilogo.
 
 </dd> <dt>
 
@@ -59,11 +59,11 @@ Se un'applicazione elabora questo messaggio, deve restituire un handle a un penn
 
 ## <a name="remarks"></a>Commenti
 
-Per impostazione predefinita, [**la funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) seleziona i colori di sistema predefiniti per la casella di riepilogo.
+Per impostazione predefinita, la [**funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) seleziona i colori di sistema predefiniti per la casella di riepilogo.
 
-Il **messaggio WM \_ CTLCOLORLISTBOX** non viene mai inviato tra thread. Viene inviato solo all'interno di un thread.
+Il **messaggio WM \_ CTLCOLORLISTBOX** non viene mai inviato tra i thread. Viene inviato solo all'interno di un thread.
 
-Se una routine della finestra di dialogo gestisce questo messaggio, deve eseguire il cast del valore restituito desiderato a **un \_ int PTR** e restituire direttamente il valore. Se la routine della finestra di dialogo **restituisce FALSE,** viene eseguita la gestione dei messaggi predefinita. Il **valore \_ MSGRESULT DWL** impostato dalla funzione [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) viene ignorato.
+Se una routine della finestra di dialogo gestisce questo messaggio, deve eseguire il cast del valore restituito desiderato a **un \_ INT PTR** e restituire direttamente il valore. Se la routine della finestra di dialogo restituisce **FALSE,** viene eseguita la gestione dei messaggi predefinita. Il **valore \_ MSGRESULT DWL** impostato dalla funzione [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) viene ignorato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Se una routine della finestra di dialogo gestisce questo messaggio, deve eseguir
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
 | Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 

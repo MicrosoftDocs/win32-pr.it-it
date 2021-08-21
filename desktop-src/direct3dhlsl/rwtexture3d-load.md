@@ -1,5 +1,5 @@
 ---
-title: Metodi load RWTexture3D::RWTexture3D
+title: Metodi di caricamento RWTexture3D::RWTexture3D
 description: Legge i dati di trama da un RWTexture3D.
 ms.assetid: 850A2F93-96C1-4B6F-AFEF-D245791611B4
 keywords:
@@ -30,7 +30,7 @@ Legge i dati di trama da [**un RWTexture3D.**](sm5-object-rwtexture3d.md)
 | Metodo                                                 | Descrizione                                                           |
 |:-------------------------------------------------------|:----------------------------------------------------------------------|
 | [**Load(int,uint)**](rwtexture3d-load-float-uint-.md) | Legge i dati della trama e restituisce lo stato dell'operazione.<br/> |
-| [**Load(int)**](rwtexture3d-load-float-.md)           | Legge i dati della trama.<br/>                                        |
+| [**Load(int)**](rwtexture3d-load-float-.md)           | Legge i dati delle trame.<br/>                                        |
 
 
 

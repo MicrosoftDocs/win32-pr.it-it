@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4e37db51238137d67ba6e060ecfafb7d1361727e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 814f14645e5e7f0aa883f04e689f0774441482b86223bf485fa1fc8a395618c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987621"
 ---
 # <a name="id3dxbasemeshgetfvf-method"></a>Metodo ID3DXBaseMesh::GetFVF
 

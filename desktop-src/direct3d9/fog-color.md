@@ -1,21 +1,21 @@
 ---
-description: Il colore di nebbia per la nebbia dei pixel e dei vertici viene impostato tramite lo \_ stato di rendering FogColor di D3DRS. I valori dello stato di rendering possono essere qualsiasi colore RGB, specificato come colore RGBA. Il componente alfa viene ignorato.
+description: Il colore della nebbia per pixel e vertex viene impostato tramite lo stato di rendering D3DRS \_ FOGCOLOR. I valori dello stato di rendering possono essere qualsiasi colore RGB, specificato come colore RGBA. Il componente alfa viene ignorato.
 ms.assetid: 76366496-553d-4dbf-868d-d58b5377d36a
-title: Colore nebbia (Direct3D 9)
+title: Colore osanna (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85c9ae217a26ab38be5e3f232fb9dfcd4c2977f7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 395bb17c9d6495ade54bc7c761b8c8024c53fbd9a51f620a45ee3a807dc6e20d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104048869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988001"
 ---
-# <a name="fog-color-direct3d-9"></a>Colore nebbia (Direct3D 9)
+# <a name="fog-color-direct3d-9"></a>Colore osanna (Direct3D 9)
 
-Il colore di nebbia per la nebbia dei pixel e dei vertici viene impostato tramite lo \_ stato di rendering FogColor di D3DRS. I valori dello stato di rendering possono essere qualsiasi colore RGB, specificato come colore RGBA. Il componente alfa viene ignorato.
+Il colore della nebbia per pixel e vertex viene impostato tramite lo stato di rendering D3DRS \_ FOGCOLOR. I valori dello stato di rendering possono essere qualsiasi colore RGB, specificato come colore RGBA. Il componente alfa viene ignorato.
 
-Nell'esempio C++ riportato di seguito il colore della nebbia viene impostato su bianco.
+Nell'esempio C++ seguente il colore della nebbia viene impostato sul bianco.
 
 
 ```
@@ -32,17 +32,17 @@ if(FAILED(hr))
 
 
 
-La nebbia viene applicata in modo diverso dalla pipeline della funzione fissa e dalla pipeline programmabile.
+La nebbia viene applicata in modo diverso dalla pipeline di funzioni fisse e dalla pipeline programmabile.
 
 1.  Se il driver supporta D3DPMISCCAPS \_ FOGANDSPECULARALPHA:
-    -   Se viene usata la pipeline della funzione fissa e D3DRS \_ FogColor è impostato, V1. w (nella pixel shader) è uguale al valore impostato in fog RenderState.
-    -   Se viene usata la pipeline programmabile, V1. w (nella pixel shader) è uguale a 0, anche se oD1. w è scritto in modo esplicito in un vertex shader.
-2.  Se il driver non supporta il \_ FOGANDSPECULARALPHA D3DPMISCCAPS:
-    -   Se viene usata la pipeline della funzione fissa e \_ viene impostato D3DRS FogColor, V1. w (nel pixel shader) è uguale al valore impostato in fog RenderState.
-    -   Se oFog viene scritto in modo esplicito in un vertex shader, V1. w (nella pixel shader) è uguale a oFog, con un valore compreso tra 0 e 1.
-    -   Se nessuno dei due casi precedenti si applica, V1. w (nella pixel shader) è uguale a 0, anche se oD1. w è scritto in modo esplicito in un vertex shader.
+    -   Se viene usata la pipeline di funzioni fisse ed è impostato D3DRS \_ FOGCOLOR, la versione 1.w (nel pixel shader) è uguale al valore impostato in osasto renderstate.
+    -   Se viene usata la pipeline programmabile, la versione 1.w (nel pixel shader) è uguale a 0, anche se oD1.w viene scritto in modo esplicito in un vertex shader.
+2.  Se il driver NON supporta D3DPMISCCAPS \_ FOGANDSPECULARALPHA:
+    -   Se viene usata la pipeline di funzioni fisse ed è impostato D3DRS \_ FOGCOLOR, v1.w (nel pixel shader) è uguale al valore impostato in stato di rendering osa.
+    -   Se oFog viene scritto in modo esplicito in un vertex shader, v1.w (nel pixel shader) è uguale a oFog, con un intervallo compreso tra 0 e 1.
+    -   Se nessuno dei due casi precedenti si applica, v1.w (nel pixel shader) è uguale a 0, anche se oD1.w viene scritto in modo esplicito in un vertex shader.
 
-Per ulteriori informazioni, vedere [D3DPMISCCAPS](d3dpmisccaps.md).
+Per altre informazioni, vedere [D3DPMISCCAPS](d3dpmisccaps.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

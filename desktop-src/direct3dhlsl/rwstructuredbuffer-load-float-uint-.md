@@ -1,9 +1,9 @@
 ---
-title: 'Funzione RWStructuredBuffer:: Load (int, uint)'
-description: "Legge i dati del buffer e restituisce lo stato dell'operazione. | Funzione RWStructuredBuffer:: Load (int, uint)"
+title: Funzione RWStructuredBuffer::Load(int,uint)
+description: Legge i dati del buffer e restituisce lo stato dell'operazione. | Funzione RWStructuredBuffer::Load(int,uint)
 ms.assetid: 19FAA031-F31E-4B73-BC69-489CDF0CF184
 keywords:
-- Funzione Load HLSL
+- Caricare la funzione HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 74a153d4b56ec16b80dec180287005666747d259
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 24aee1d7abfcec66fe9e005fdc65010be52b89fdb820374276f12091ddfe2903
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986251"
 ---
-# <a name="rwstructuredbufferloadintuint-function"></a>Funzione RWStructuredBuffer:: Load (int, uint)
+# <a name="rwstructuredbufferloadintuint-function"></a>Funzione RWStructuredBuffer::Load(int,uint)
 
 Legge i dati del buffer e restituisce lo stato dell'operazione.
 
@@ -40,7 +40,7 @@ Legge i dati del buffer e restituisce lo stato dell'operazione.
 
 <dl> <dt>
 
-*Posizione* \[ in\]
+*Posizione* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int**
@@ -49,12 +49,12 @@ Posizione del buffer.
 
 </dd> <dt>
 
-*Stato* \[ di out\]
+*Stato* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Stato dell'operazione. Non è possibile accedere direttamente allo stato; passare invece lo stato alla funzione intrinseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** restituisce **true** se tutti i valori dell'operazione di **campionamento**, **raccolta** o **caricamento** corrispondente hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata](/windows/desktop/direct3d11/direct3d-11-2-features). Se sono stati ricavati valori da un riquadro non mappato, **CheckAccessFullyMapped** restituisce **false**.
+Stato dell'operazione. Non è possibile accedere direttamente allo stato. passare invece lo stato alla [**funzione intrinseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** restituisce **TRUE se** tutti i valori dell'operazione **Sample**, **Gather** o **Load** corrispondenti hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata.](/windows/desktop/direct3d11/direct3d-11-2-features) Se sono stati presi valori da un riquadro non mappato, **CheckAccessFullyMapped restituisce** **FALSE.**
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ Stato dell'operazione. Non è possibile accedere direttamente allo stato; passar
 
 Digitare:
 
-Il tipo restituito corrisponde al tipo nella dichiarazione per l'oggetto [**RWStructuredBuffer**](sm5-object-rwstructuredbuffer.md) .
+Il tipo restituito corrisponde al tipo nella dichiarazione per [**l'oggetto RWStructuredBuffer.**](sm5-object-rwstructuredbuffer.md)
 
 ## <a name="remarks"></a>Commenti
 
@@ -70,7 +70,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -82,7 +82,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 <dl> <dt>
 
-[Metodi Load](rwstructuredbuffer-load.md)
+[Metodi di caricamento](rwstructuredbuffer-load.md)
 </dt> </dl>
 
  

@@ -1,21 +1,21 @@
 ---
-description: La struttura di caps di configurazione del \_ flusso TAPI \_ \_ contiene informazioni sulla configurazione di flussi video o audio.
+description: La struttura TAPI STREAM CONFIG CAPS contiene informazioni di configurazione del flusso \_ video o \_ \_ audio.
 ms.assetid: 83b39751-b00f-4762-830b-13cafbcb1cfd
-title: Struttura TAPI_STREAM_CONFIG_CAPS (Ipmsp. h)
+title: TAPI_STREAM_CONFIG_CAPS struttura (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 379ca481d3bebaf8ceb11bfc2dbdab6642ca20b6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6cbbb3b3ec72cc99810311cc510e36c2adc8242e2b3d98b321fd8bc8c6a9ab4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002649"
 ---
-# <a name="tapi_stream_config_caps-structure"></a>\_Struttura di \_ Caps di configurazione del flusso TAPI \_
+# <a name="tapi_stream_config_caps-structure"></a>Struttura TAPI \_ STREAM \_ CONFIG \_ CAPS
 
-\[ Questa struttura non è disponibile per l'utilizzo in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[Questa struttura non è disponibile per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client RTC offre funzionalità simili.\]
 
-La struttura di **\_ \_ \_ Caps** di configurazione del flusso TAPI contiene informazioni sulla configurazione di flussi video o audio.
+La **struttura TAPI \_ STREAM CONFIG \_ \_ CAPS** contiene informazioni di configurazione del flusso video o audio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,21 +33,21 @@ La struttura di **\_ \_ \_ Caps** di configurazione del flusso TAPI contiene inf
 **CapsType**
 </dt> <dd>
 
-Definisce se il membro di Unione contiene informazioni video o audio.
+Definisce se il membro dell'unione contiene informazioni video o audio.
 
 </dd> <dt>
 
 **VideoCap**
 </dt> <dd>
 
-Struttura [**di \_ \_ Caps di \_ configurazione \_ del flusso video TAPI**](tapi-video-stream-config-caps.md) che contiene le funzionalità del flusso video.
+Struttura [**TAPI \_ VIDEO STREAM \_ CONFIG \_ \_ CAPS**](tapi-video-stream-config-caps.md) contenente le funzionalità del flusso video.
 
 </dd> <dt>
 
 **AudioCap**
 </dt> <dd>
 
-Struttura [**di \_ \_ Caps di \_ configurazione \_ del flusso audio TAPI**](tapi-audio-stream-config-caps.md) che contiene le funzionalità del flusso audio.
+Struttura [**TAPI \_ AUDIO STREAM \_ CONFIG \_ \_ CAPS**](tapi-audio-stream-config-caps.md) contenente le funzionalità del flusso audio.
 
 </dd> </dl>
 
@@ -57,8 +57,8 @@ Struttura [**di \_ \_ Caps di \_ configurazione \_ del flusso audio TAPI**](tapi
 
 | Requisito | Valore |
 |-------------------------|------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,1<br/>                                                       |
-| Intestazione<br/>       | <dl> <dt>Ipmsp. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 3.1<br/>                                                       |
+| Intestazione<br/>       | <dl> <dt>Ipmsp.h</dt> </dl> |
 
 
 
@@ -72,10 +72,10 @@ Struttura [**di \_ \_ Caps di \_ configurazione \_ del flusso audio TAPI**](tapi
 [**StreamConfigCapsType**](streamconfigcapstype.md)
 </dt> <dt>
 
-[**\_ \_ \_ tappi di configurazione \_ flusso video TAPI**](tapi-video-stream-config-caps.md)
+[**TAPI \_ VIDEO \_ STREAM \_ CONFIG \_ CAPS**](tapi-video-stream-config-caps.md)
 </dt> <dt>
 
-[**\_ \_ \_ tappi di configurazione del flusso audio TAPI \_**](tapi-audio-stream-config-caps.md)
+[**TAPI \_ AUDIO \_ STREAM \_ CONFIG \_ CAPS**](tapi-audio-stream-config-caps.md)
 </dt> </dl>
 
  

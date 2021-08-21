@@ -4,12 +4,12 @@ ms.assetid: 30a95ca3-84ab-475d-9654-a3853263056b
 title: FVFData
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d52af6096357c4855d2dc34442c6cd4814b6713b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2ec21cf354ed10e7229f1392dd31bf32bc416c27dff90d5d70858aeefc1b5c68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104123855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987991"
 ---
 # <a name="fvfdata"></a>FVFData
 
@@ -28,8 +28,8 @@ template FVFData
 Dove:
 
 -   dwFVF: codice FVF.
--   nDWords-dati binari. Numero di DWORD.
--   Data \[ nDWords \] : matrice di DWORD che contiene i dati in ogni elemento vertice.
+-   nDWords : dati binari. Numero di DWORDS.
+-   data \[ nDWords: \] matrice di DWORDS che contengono i dati in ogni elemento vertice.
 
 ## <a name="see-also"></a>Vedi anche
 

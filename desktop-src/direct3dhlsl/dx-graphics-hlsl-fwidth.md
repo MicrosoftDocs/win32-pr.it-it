@@ -1,9 +1,9 @@
 ---
-title: fwidth
+title: larghezza di banda
 description: Restituisce il valore assoluto dei derivati parziali del valore specificato.
 ms.assetid: 7184c3b4-1720-4176-a494-7f73322a918e
 keywords:
-- HLSL fWidth
+- fwidth HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cf2d5a34e1f387aadb3b044ddd1264616a61109b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: feee9a017664e71c9c96f19fda5106870c04b947dc2b668e67f376626f7ea38a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104118155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120175"
 ---
-# <a name="fwidth"></a>fwidth
+# <a name="fwidth"></a>larghezza di banda
 
 Restituisce il valore assoluto dei derivati parziali del valore specificato.
 
 
 
-| fWidth *ret* (*x*) |
+| *ret* fwidth(*x*) |
 |-------------------|
 
 
 
  
 
-Questa funzione calcola quanto segue: [**ABS**](dx-graphics-hlsl-abs.md)([**DDX**](dx-graphics-hlsl-ddx.md)(*x*)) + [**ABS**](dx-graphics-hlsl-abs.md)([**ddy**](dx-graphics-hlsl-ddy.md)(*x*)).
+Questa funzione calcola quanto segue: [**abs**](dx-graphics-hlsl-abs.md)([**ddx**](dx-graphics-hlsl-ddx.md)(*x*)) + [**abs**](dx-graphics-hlsl-abs.md)([**ddy**](dx-graphics-hlsl-ddy.md)(*x*)).
 
-Questa funzione è supportata solo in pixel shader.
+Questa funzione è supportata solo nei pixel shader.
 
 ## <a name="parameters"></a>Parametri
 
@@ -43,7 +43,7 @@ Questa funzione è supportata solo in pixel shader.
 
 | Elemento                                                   | Descrizione                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*x*<br/> | \[nel \] valore specificato.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[in \] Valore specificato.<br/> |
 
 
 
@@ -51,7 +51,7 @@ Questa funzione è supportata solo in pixel shader.
 
 ## <a name="return-value"></a>Valore restituito
 
-Valore assoluto dei derivati parziali del parametro *x* .
+Valore assoluto dei derivati parziali del *parametro x.*
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -59,24 +59,24 @@ Valore assoluto dei derivati parziali del parametro *x* .
 
 | Nome  | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md) | Dimensione                           |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**scalare**](dx-graphics-hlsl-intrinsic-functions.md), **vettore** o **matrice** | [**float**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
-| *RET* | uguale all'input *x*                                                                                              | [**float**](/windows/desktop/WinProg/windows-data-types)                        | le stesse dimensioni di input *x* |
+| *x*   | [**scalare,**](dx-graphics-hlsl-intrinsic-functions.md) **vettore** o **matrice** | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
+| *Ret* | uguale all'input *x*                                                                                              | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | stesse dimensioni dell'input *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                                                       | Supportato           |
 |------------------------------------------------------------------------------------|---------------------|
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) e modelli shader più elevati | sì                 |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)                          | Sì ( \_ solo PS 2 \_ x) |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | no                  |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) e modelli shader superiori | sì                 |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)                          | yes (solo ps \_ 2 \_ x) |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md)                          | no                  |
 
 
 

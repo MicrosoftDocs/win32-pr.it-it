@@ -1,9 +1,9 @@
 ---
-title: Messaggio MM_MOM_OPEN (mmsystem. h)
-description: Il \_ \_ messaggio di apertura MOM di MOM viene inviato a una finestra quando viene aperto un dispositivo di output MIDI.
+title: MM_MOM_OPEN messaggio (Mmsystem.h)
+description: Il messaggio \_ MM MOM OPEN viene inviato a una finestra quando viene aperto un dispositivo di output \_ MIDI.
 ms.assetid: 1374a07c-02fa-4b43-82df-cbd96302aec5
 keywords:
-- MM_MOM_OPEN messaggi multimediali di Windows
+- MM_MOM_OPEN messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2f676dccf532290ab2153b888c20fad7b19d98d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 842eaeeb6e18e6623f8c88d8f5c65527db36ee8370c48a4cb26edca55f6d5f5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065491"
 ---
-# <a name="mm_mom_open-message"></a>MM \_ \_ messaggio di apertura MOM
+# <a name="mm_mom_open-message"></a>Messaggio \_ MM MOM \_ OPEN
 
-Il messaggio di **\_ \_ apertura MOM di MOM** viene inviato a una finestra quando viene aperto un dispositivo di output MIDI.
+Il **messaggio MM MOM \_ \_ OPEN** viene inviato a una finestra quando viene aperto un dispositivo di output MIDI.
 
 
 ```C++
@@ -45,16 +45,16 @@ Handle per il dispositivo di output MIDI.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Riservati Non usare.
+Riservato; non utilizzare .
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non restituisce un valore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,7 +64,7 @@ Questo messaggio non restituisce alcun valore.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Flag che indica se un'operazione di decommit è in corso.
+description: Flag che indica se è in corso un'operazione di decommit.
 ms.assetid: aa008be1-8faa-4dc1-9641-37dcc59ce6c7
-title: 'Membro CBaseAllocator:: m_bDecommitInProgress (Amfilter. h)'
+title: Membro CBaseAllocator::m_bDecommitInProgress (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 27aaf2766f67ebb77250522346cfe5c76acdf6d1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d6d73514ffbe2b6e2430230e64ccfa9006809523a95cd3220ca078d4c4e40f41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017539"
 ---
-# <a name="cbaseallocatorm_bdecommitinprogress-member"></a>Membro bDecommitInProgress di CBaseAllocator:: m \_
+# <a name="cbaseallocatorm_bdecommitinprogress-member"></a>Membro CBaseAllocator::m \_ bDecommitInProgress
 
-Flag che indica se un'operazione di decommit è in corso. Il valore è **true** dopo la chiamata del metodo [**CBaseAllocator::D ecommit**](cbaseallocator-decommit.md) , ma prima del rilascio di tutti i buffer. Se il valore è **true**, il metodo [**CBaseAllocator:: GetBuffer**](cbaseallocator-getbuffer.md) ha esito negativo. Inoltre, l'allocatore non deve eliminare se stesso mentre il valore è **true**.
+Flag che indica se è in corso un'operazione di decommit. Il valore **è TRUE** dopo la chiamata del metodo [**CBaseAllocator::D ecommit,**](cbaseallocator-decommit.md) ma prima del rilascio di tutti i buffer. Se il valore è **TRUE,** il [**metodo CBaseAllocator::GetBuffer ha**](cbaseallocator-getbuffer.md) esito negativo. Inoltre, l'allocatore non deve eliminare se stesso mentre il valore è **TRUE.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ BOOL m_bDecommitInProgress;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

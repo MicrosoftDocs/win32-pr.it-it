@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: d61a0bd0d31c14f13edd9ef610e8f6d3ed20f037
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e96667af5e9c16097e951f3162082a6fb06b13d0504da3e8582b9f1b7ebfd4cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004459"
 ---
 # <a name="protectkeywithcertificatefile-method-of-the-win32_encryptablevolume-class"></a>Metodo ProtectKeyWithCertificateFile della classe \_ EncryptableVolume Win32
 
@@ -55,7 +55,7 @@ Stringa che specifica un identificatore di stringa assegnato dall'utente per que
 
 Tipo: **stringa**
 
-Stringa che specifica il percorso e il nome del file cer usato per abilitare BitLocker. Un certificato di crittografia deve essere esportato in formato con estensione [*cer (Distinguished Encoding Rules*](../secgloss/d-gly.md) (DER) binario con codifica [*X.509*](../secgloss/x-gly.md) o Con codifica Base 64 X.509. Il certificato di crittografia può essere generato da Microsoft PKI, PKI di terze parti o autofirmato.
+Stringa che specifica il percorso e il nome del file cer usato per abilitare BitLocker. Un certificato di crittografia deve essere esportato in formato con estensione cer ([*Distinguished Encoding Rules*](../secgloss/d-gly.md) (DER) binario con codifica [*X.509*](../secgloss/x-gly.md) o Con codifica Base 64 X.509. Il certificato di crittografia può essere generato da Microsoft PKI, PKI di terze parti o autofirmato.
 
 </dd> <dt>
 
@@ -64,7 +64,7 @@ Stringa che specifica il percorso e il nome del file cer usato per abilitare Bit
 
 Tipo: **stringa**
 
-Stringa che identifica in modo univoco la protezione della chiave creata che può essere usata per gestire la protezione delle chiavi.
+Stringa che identifica in modo univoco la protezione delle chiavi creata che può essere usata per gestire la protezione delle chiavi.
 
 Se l'unità supporta la crittografia hardware e BitLocker non ha assunto la proprietà della banda, la stringa ID viene impostata su "BitLocker" e la protezione della chiave viene scritta in per ogni metadati della banda.
 
@@ -82,10 +82,10 @@ Questo metodo restituisce uno dei codici seguenti o un altro codice di errore se
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0 (0x0)</dt> </dl>                                                           | Il metodo è stato eseguito correttamente.<br/>                                                                                                                                                                                                                                                          |
 | <dl> <dt>**FVE \_ E \_ NON \_ BITLOCKER \_ OID**</dt> <dt>2150695022 (0x8031006E)</dt> </dl>                     | L'attributo EKU del certificato specificato non ne consente l'uso per Crittografia unità BitLocker. BitLocker non richiede che un certificato abbia un attributo EKU, ma se ne è configurato uno, deve essere impostato su un OID corrispondente all'OID configurato per BitLocker.<br/> |
-| <dl> <dt>**FVE \_ E \_ CERTIFICATO UTENTE CRITERI NON \_ \_ \_ \_ CONSENTITO**</dt> <dt>2150695026 (0x80310072)</dt> </dl> | Criteri di gruppo non consente l'uso di certificati utente, ad esempio smart card, con BitLocker.<br/>                                                                                                                                                                                     |
-| <dl> <dt>**FVE \_ E \_ POLICY \_ USER \_ CERT MUST BE \_ \_ \_ HW**</dt> <dt>2150695028 (0x80310074)</dt> </dl>        | Criteri di gruppo necessario specificare un nome smart card utilizzare BitLocker.<br/>                                                                                                                                                                                                                |
+| <dl> <dt>**FVE \_ E \_ CERTIFICATO UTENTE CRITERI \_ \_ \_ NON \_**</dt> CONSENTITO 2150695026 <dt>(0x80310072)</dt> </dl> | Criteri di gruppo non consente l'uso di certificati utente, ad esempio smart card, con BitLocker.<br/>                                                                                                                                                                                     |
+| <dl> <dt>**FVE \_ E \_ POLICY \_ USER \_ CERT MUST BE \_ \_ \_ HW**</dt> <dt>2150695028 (0x80310074)</dt> </dl>        | Criteri di gruppo è necessario specificare un smart card usare BitLocker.<br/>                                                                                                                                                                                                                |
 | <dl> <dt>**FVE \_ E \_ POLICY \_ PROHIBITS \_ SELFSIGNED**</dt> <dt>2150695046 (0x80310086)</dt> </dl>           | Criteri di gruppo non consente l'uso di certificati autofirmati.<br/>                                                                                                                                                                                                                   |
-| <dl> <dt>**ERRORE \_ FILE \_ NON \_ TROVATO**</dt> <dt>0000000002 (0x2)</dt> </dl>                                | Impossibile trovare il file specificato.<br/>                                                                                                                                                                                                                                          |
+| <dl> <dt>**ERRORE \_ FILE \_ NON \_ TROVATO 0000000002**</dt> <dt>(0x2)</dt> </dl>                                | Impossibile trovare il file specificato.<br/>                                                                                                                                                                                                                                          |
 
 
 
@@ -93,7 +93,7 @@ Questo metodo restituisce uno dei codici seguenti o un altro codice di errore se
 
 ## <a name="remarks"></a>Commenti
 
-Se l'OID non corrisponde a quello associato al controller del servizio nel Registro di sistema, questo metodo ha esito negativo. In questo modo si impedisce all'utente di impostare manualmente le protezione dell'agente di recupero dati (DRA) nel volume. I dra devono essere impostati solo dal servizio.
+Se l'OID non corrisponde a quello associato al controller del servizio nel Registro di sistema, questo metodo ha esito negativo. Ciò impedisce all'utente di impostare manualmente le protezione dell'agente di recupero dati (DRA) nel volume. I contratti di ripristino di emergenza devono essere impostati solo dal servizio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -101,9 +101,9 @@ Se l'OID non corrisponde a quello associato al controller del servizio nel Regis
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 7 Enterprise, Windows 7 Ultimate \[\]<br/>                               |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
+| Client minimo supportato<br/> | Windows 7 Enterprise, Windows 7 app desktop Ultimate \[\]<br/>                               |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                 |
+| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
 | MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 
 

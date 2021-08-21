@@ -1,5 +1,5 @@
 ---
-description: Definisce un tipo stringa per gli identificatori dei set di servizi (SSID).
+description: Definisce un tipo di stringa per gli identificatori di set di servizi (SSID).
 ms.assetid: c9e79a3d-7d5c-4320-ade2-40124de00920
 title: Tipo semplice networkNameType
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 6b6463644e1bd174be256d51b34ae2ae4ad9ce07
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8f653c84f36730ed9f6f078b3713dde414fbf63469bd4ea43f632842d33d7e14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119064751"
 ---
 # <a name="networknametype-simple-type"></a>Tipo semplice networkNameType
 
-Il tipo semplice networkNameType definisce un tipo stringa per gli identificatori dei set di servizi (SSID). Un SSID è una stringa con una lunghezza di almeno un carattere e una lunghezza massima di 32 caratteri.
+Il tipo semplice networkNameType definisce un tipo stringa per gli identificatori di set di servizi (SSID). Un SSID è una stringa lunga almeno un carattere e lunga al massimo 32 caratteri.
 
 ``` syntax
 <xs:simpleType name="networkNameType">
@@ -44,8 +44,8 @@ Il tipo semplice networkNameType definisce un tipo stringa per gli identificator
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

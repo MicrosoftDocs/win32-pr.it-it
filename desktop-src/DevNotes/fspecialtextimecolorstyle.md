@@ -1,7 +1,7 @@
 ---
-description: Specifica se il colore specificato è un colore del testo speciale.
+description: Specifica se il colore specificato è un colore di testo speciale.
 ms.assetid: 527806f5-5046-48b0-a8db-86a5b8c0db08
-title: FSpecialTextIMEColorStyle (funzione)
+title: Funzione FSpecialTextIMEColorStyle
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Imeshare.dll
-ms.openlocfilehash: cfaf83aeb2fcb03ab61c1280ec821174117026fe
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6fa964ba5d1020a5d9ba35b7359d81d965778b8a1e1f546a0a6cac19d2611ebd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017729"
 ---
-# <a name="fspecialtextimecolorstyle-function"></a>FSpecialTextIMEColorStyle (funzione)
+# <a name="fspecialtextimecolorstyle-function"></a>Funzione FSpecialTextIMEColorStyle
 
-Specifica se il colore specificato è un colore del testo speciale.
+Specifica se il colore specificato è un colore di testo speciale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,20 +39,20 @@ BOOL __cdecl FSpecialTextIMEColorStyle(
 
 <dl> <dt>
 
-*pcolorstyle* \[ in\]
+*pcolorstyle* \[ Pollici\]
 </dt> <dd>
 
-Struttura **IMECOLORSTY** restituita da una funzione [**PColorStyleBackFromIMEStyle**](pcolorstylebackfromimestyle.md) o [**PColorStyleTextFromIMEStyle**](pcolorstyletextfromimestyle.md) .
+Struttura **IMECOLORSTY** restituita da una [**funzione PColorStyleBackFromIMEStyle**](pcolorstylebackfromimestyle.md) [**o PColorStyleTextFromIMEStyle.**](pcolorstyletextfromimestyle.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** quando il colore è un colore del testo speciale.
+Restituisce **TRUE** quando il colore è un colore di testo speciale.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

@@ -6,12 +6,12 @@ keywords:
 - CLSID - Chiave del Registro di sistema (ProgID) COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d2a1f491370f497d0fdd3014996c189ed04c8ba
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: 4c1b6f74ca41237f9dcd7821df3aa3abbd53a6c778455e1e8b05d8f8ce832489
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048695"
 ---
 # <a name="clsid"></a>CLSID
 

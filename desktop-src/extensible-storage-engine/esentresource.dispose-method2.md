@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: EsentResource. Dispose (metodo)'
-title: Metodo EsentResource. Dispose
+description: 'Altre informazioni su: Metodo EsentResource.Dispose'
+title: Metodo EsentResource.Dispose
 TOCTitle: 'Dispose method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentResource.Dispose
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentresource.dispose(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d301b3b1f43d57631091003bf77d06d749bd98ae
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 454e1de49c74e33da796fc6c1dec9559223834eb3e92437a0b671814847e5190
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119115191"
 ---
-# <a name="esentresourcedispose-method"></a>Metodo EsentResource. Dispose
+# <a name="esentresourcedispose-method"></a>Metodo EsentResource.Dispose
 
-Eliminare questo oggetto, rilasciando la risorsa ESENT sottostante.
+Eliminare questo oggetto, rilasciando la risorsa Esent sottostante.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ public void Dispose()
 
 #### <a name="implements"></a>Implementazioni
 
-[IDisposable. Dispose ()](/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose)  
+[IDisposable.Dispose()](/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -61,6 +61,6 @@ public void Dispose()
 
 [Membri di EsentResource](./esentresource-members.md)
 
-[Overload Dispose](./esentresource.dispose-method.md)
+[Overload dispose](./esentresource.dispose-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

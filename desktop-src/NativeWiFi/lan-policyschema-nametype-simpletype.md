@@ -1,7 +1,7 @@
 ---
 description: Definisce un tipo di stringa per il nome o la descrizione di un profilo criteri LAN cablato.
 ms.assetid: 89de1e7a-618d-4501-a134-c7a37f9c552d
-title: Tipo semplice nameType (LAN_policy)
+title: tipo semplice nameType (LAN_policy)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,7 +19,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119065111"
 ---
-# <a name="nametype-simple-type-lan_policy"></a>Tipo semplice nameType (LAN_policy)
+# <a name="nametype-simple-type-lan_policy"></a>tipo semplice nameType (LAN_policy)
 
 Il tipo semplice nameType definisce un tipo stringa per il nome o la descrizione di un profilo criteri LAN cablato. I nomi e le descrizioni sono stringhe lunghe almeno un carattere e al massimo 255 caratteri.
 

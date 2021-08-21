@@ -3,7 +3,7 @@ title: TBM_GETTOOLTIPS messaggio (Commctrl.h)
 description: Recupera l'handle per il controllo della descrizione comando assegnato al trackbar, se presente.
 ms.assetid: 30efef12-1aec-4635-94a7-1843db404c4f
 keywords:
-- TBM_GETTOOLTIPS di controllo Windows messaggio
+- TBM_GETTOOLTIPS dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119078065"
 ---
-# <a name="tbm_gettooltips-message"></a>Messaggio \_ TBM GETTOOLTIPS
+# <a name="tbm_gettooltips-message"></a>Messaggio TBM \_ GETTOOLTIPS
 
 Recupera l'handle per il controllo della descrizione comando assegnato al trackbar, se presente.
 

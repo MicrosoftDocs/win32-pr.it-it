@@ -1,21 +1,21 @@
 ---
-description: Il \_ metodo Put StartTime imposta il valore dell'ora di avvio NTP (Network Time Protocol) a 32 bit. La sessione è considerata attiva da questo momento.
+description: Il metodo put StartTime imposta il valore dell'ora di inizio \_ NTP (Network Time Protocol) a 32 bit. La sessione viene considerata attiva a partire da questo momento.
 ms.assetid: c7c96265-4588-4f05-83b6-6ef54f02650b
-title: 'ITTime: metodo:p ut_StartTime (sdpblb. h)'
+title: Metodo ITTime::p ut_StartTime (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a5b574f7c90d7cc2f92204e3a045b33e6fb8480
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6b0e1fe25f2518396ec507f88d0a89c5928f676b64d626c32307336b95ef21e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003229"
 ---
-# <a name="ittimeput_starttime-method"></a>ITTime::p UT \_ Metodo StartTime
+# <a name="ittimeput_starttime-method"></a>Metodo ITTime::p ut \_ StartTime
 
-\[ I controlli e le interfacce per la comunicazione di telefonia IP Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[I controlli e le interfacce di conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client RTC offre funzionalità simili.\]
 
-Il metodo **put \_ StartTime** imposta il valore dell'ora di avvio NTP (Network Time Protocol) a 32 bit. La sessione è considerata attiva da questo momento.
+Il **metodo put \_ StartTime** imposta il valore dell'ora di inizio NTP (Network Time Protocol) a 32 bit. La sessione viene considerata attiva a partire da questo momento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,7 +32,7 @@ HRESULT put_StartTime(
 
 <dl> <dt>
 
-*Ora* \[ di in\]
+*Ora* \[ Pollici\]
 </dt> <dd>
 
 Ora di inizio della sessione.
@@ -47,10 +47,10 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                                   | Descrizione                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Il parametro *Tim* e non è valido.<br/>                   |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | La memoria disponibile non è sufficiente per eseguire l'operazione.<br/> |
-| <dl> <dt>**E \_ non riescono**</dt> </dl>        | Errore non specificato.<br/>                                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Il *parametro Tim* e non è valido.<br/>                   |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per eseguire l'operazione.<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>        | Errore non specificato.<br/>                                   |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Questo metodo non è ancora implementato.<br/>                  |
 
 
@@ -59,7 +59,7 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione può inviare dati in rete in forma non crittografata; Pertanto, un utente che intercetta la rete potrebbe essere in grado di leggere i dati. Il rischio di sicurezza di inviare i dati in testo non crittografato deve essere considerato prima di utilizzare questo metodo.
+Questa funzione può inviare dati in modalità non crittografata. Pertanto, un utente che intercetta la rete potrebbe essere in grado di leggere i dati. Prima di usare questo metodo, è consigliabile considerare il rischio di sicurezza di inviare i dati in testo non crittografato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,9 +67,9 @@ Questa funzione può inviare dati in rete in forma non crittografata; Pertanto, 
 
 | Requisito | Valore |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,0 o versione successiva<br/>                                                 |
-| Intestazione<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versione TAPI<br/> | Richiede TAPI 3.0 o versione successiva<br/>                                                 |
+| Intestazione<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
@@ -81,7 +81,7 @@ Questa funzione può inviare dati in rete in forma non crittografata; Pertanto, 
 [**ITTime**](ittime.md)
 </dt> <dt>
 
-[**ITTime:: Get \_ StartTime**](ittime-get-starttime.md)
+[**ITTime::get \_ StartTime**](ittime-get-starttime.md)
 </dt> </dl>
 
  

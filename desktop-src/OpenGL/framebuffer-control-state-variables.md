@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 998414271956de44710e9ef456722d7499adb862
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 276019f790e5f4750e446cf4ae2d035e0178d0e79130100a5a5e1954cbdcb73a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107910079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061913"
 ---
 # <a name="framebuffer-control-state-variables"></a>Variabili di stato del controllo Framebuffer
 
@@ -26,7 +26,7 @@ ms.locfileid: "107910079"
 | Proprietà | Valore |
 |------------------|----------------------------------------|
 | Descrizione:     | Buffer selezionati per il disegno           |
-| Gruppo di attributi: | buffer dei colori                           |
+| Gruppo di attributi: | color-buffer                           |
 | Valore iniziale:   |                                        |
 | Comando Get:     | [**glGetIntegerv**](glgetintegerv.md) |
 
@@ -39,7 +39,7 @@ ms.locfileid: "107910079"
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
 | Descrizione:     | Maschera di scrittura dell'indice dei colori                                                            |
-| Gruppo di attributi: | buffer dei colori                                                                     |
+| Gruppo di attributi: | color-buffer                                                                     |
 | Valore iniziale:   | 1 di                                                                              |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
@@ -60,7 +60,7 @@ ms.locfileid: "107910079"
 
  
 
-</dd> <dt><span id="GL_DEPTH_WRITEMASK"></span><span id="gl_depth_writemask"></span>GL \_ DEPTH \_ WRITEMASK</dt> <dd> 
+</dd> <dt><span id="GL_DEPTH_WRITEMASK"></span><span id="gl_depth_writemask"></span>\_ \_ WRITEMASK DI PROFONDITÀ GL</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
@@ -73,7 +73,7 @@ ms.locfileid: "107910079"
 
  
 
-</dd> <dt><span id="GL_STENCIL_WRITEMASK"></span><span id="gl_stencil_writemask"></span>GL \_ STENCIL \_ WRITEMASK</dt> <dd> 
+</dd> <dt><span id="GL_STENCIL_WRITEMASK"></span><span id="gl_stencil_writemask"></span>\_ \_ WRITEMASK DI STENCIL GL</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
@@ -91,7 +91,7 @@ ms.locfileid: "107910079"
 | Proprietà | Valore |
 |------------------|--------------------------------------------------------------------------------|
 | Descrizione:     | Valore non crittografato del buffer di colore (modalità RGBA)                                           |
-| Gruppo di attributi: | buffer dei colori                                                                   |
+| Gruppo di attributi: | color-buffer                                                                   |
 | Valore iniziale:   | 0, 0, 0, 0                                                                     |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
@@ -103,8 +103,8 @@ ms.locfileid: "107910079"
 
 | Proprietà | Valore |
 |------------------|--------------------------------------------------------------------------------|
-| Descrizione:     | Valore di cancellazione del buffer dei colori (modalità color-index)                                    |
-| Gruppo di attributi: | buffer dei colori                                                                   |
+| Descrizione:     | Valore non crittografato del buffer di colore (modalità indice colori)                                    |
+| Gruppo di attributi: | color-buffer                                                                   |
 | Valore iniziale:   | 0                                                                              |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
@@ -125,11 +125,11 @@ ms.locfileid: "107910079"
 
  
 
-</dd> <dt><span id="GL_STENCIL_CLEAR_VALUE"></span><span id="gl_stencil_clear_value"></span>VALORE DI \_ CANCELLAZIONE STENCIL GL \_ \_</dt> <dd> 
+</dd> <dt><span id="GL_STENCIL_CLEAR_VALUE"></span><span id="gl_stencil_clear_value"></span>VALORE DI \_ CANCELLAZIONE DELLO STENCIL \_ \_ GL</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
-| Descrizione:     | Valore di cancellazione stencil-buffer                                                       |
+| Descrizione:     | Valore di cancellazione del buffer di stencil                                                       |
 | Gruppo di attributi: | stencil-buffer                                                                   |
 | Valore iniziale:   | 0                                                                                |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |

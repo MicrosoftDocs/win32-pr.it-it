@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_GETTOOLTIPS (COMmctrl. h)
-description: Recupera il controllo ToolTip utilizzato dal controllo visualizzazione elenco per visualizzare le descrizioni comandi. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro ListView GetToolTips.
+title: LVM_GETTOOLTIPS messaggio (Commctrl.h)
+description: Recupera il controllo descrizione comando utilizzato dal controllo visualizzazione elenco per visualizzare le descrizioni comando. Puoi inviare questo messaggio in modo esplicito o usare la \_ macro ListView GetToolTips.
 ms.assetid: a3522c64-9498-40b8-9062-c112b7c8cacc
 keywords:
-- Controlli di Windows Message LVM_GETTOOLTIPS
+- LVM_GETTOOLTIPS di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f409c85ed6157e8cfc837e5efa3a68488aec504
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a6ca4340a8c57c6551d3c46f9324e4b66250f383c9412a3772df3114f105c5f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019289"
 ---
-# <a name="lvm_gettooltips-message"></a>Messaggio di LVM \_ GETtooltips
+# <a name="lvm_gettooltips-message"></a>Messaggio \_ LVM GETTOOLTIPS
 
-Recupera il controllo ToolTip utilizzato dal controllo visualizzazione elenco per visualizzare le descrizioni comandi. È possibile inviare questo messaggio in modo esplicito o usare la macro [**ListView \_ GetToolTips**](/windows/desktop/api/Commctrl/nf-commctrl-listview_gettooltips) .
+Recupera il controllo descrizione comando utilizzato dal controllo visualizzazione elenco per visualizzare le descrizioni comando. Puoi inviare questo messaggio in modo esplicito o usare la macro [**\_ ListView GetToolTips.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_gettooltips)
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,7 +37,7 @@ Recupera il controllo ToolTip utilizzato dal controllo visualizzazione elenco pe
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'handle del controllo ToolTip.
+Restituisce l'handle del controllo descrizione comando.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Restituisce l'handle del controllo ToolTip.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Restituisce l'handle del controllo ToolTip.
 
 <dl> <dt>
 
-[**\_descrizioni comando LVM**](lvm-settooltips.md)
+[**LVM \_ SETTOOLTIPS**](lvm-settooltips.md)
 </dt> </dl>
 
  

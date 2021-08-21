@@ -1,7 +1,7 @@
 ---
-description: Consente di impostare l'intervallo di una matrice da passare al dispositivo.
+description: Impostare l'intervallo di una matrice da passare al dispositivo.
 ms.assetid: 43f1c258-770c-4756-9033-e5667b379fe6
-title: 'Metodo ID3DXBaseEffect:: SetArrayRange (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::SetArrayRange (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 59b981c1f2aff18d4bdb57f5726136945203f5fe
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1cf4f51bfca29f1aa46238197818bb10bc4d0fe811218e5cedc59c24deb2446f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104132286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987631"
 ---
-# <a name="id3dxbaseeffectsetarrayrange-method"></a>Metodo ID3DXBaseEffect:: SetArrayRange
+# <a name="id3dxbaseeffectsetarrayrange-method"></a>Metodo ID3DXBaseEffect::SetArrayRange
 
-Consente di impostare l'intervallo di una matrice da passare al dispositivo.
+Impostare l'intervallo di una matrice da passare al dispositivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ HRESULT SetArrayRange(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9)](handles.md).
 
 </dd> <dt>
 
-*Inizio* \[ in\]
+*Avvio* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Indice iniziale.
 
 </dd> <dt>
 
-*Arresta* \[ in\]
+*Arresta* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Arresta indice.
+Arrestare l'indice.
 
 </dd> </dl>
 
@@ -81,8 +81,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

@@ -13,19 +13,19 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 9A9B6B3F-FBBC-4e76-8018-8858B6392276
-ms.openlocfilehash: 1a1c024b316472be00f119485326b704a4fe8dd0
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 89ea8431df7e8cac09a041bd9a16c805633cd3ec82a2cc506cb30fcf0f0cd39b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032259"
 ---
 # <a name="ishelldispatchcontrolpanelitem-method"></a>Metodo IShellDispatch.ControlPanelItem
 
 Esegue l'applicazione Pannello di controllo specificata. Se l'applicazione è già aperta, attiverà l'istanza in esecuzione.
 
 > [!Note]  
-> A data di Windows Vista, la maggior Pannello di controllo applicazioni sono elementi della shell e non possono essere aperte con questa funzione. Per aprire tali Pannello di controllo applicazioni, passare il nome canonico a control.exe. Ad esempio:
+> A Windows Vista, la maggior parte Pannello di controllo applicazioni sono elementi della shell e non possono essere aperti con questa funzione. Per aprire tali Pannello di controllo applicazioni, passare il nome canonico a control.exe. Ad esempio:
 >
 > ``` syntax
 > control.exe /name Microsoft.Personalization
@@ -83,9 +83,9 @@ Questo metodo viene implementato e accessibile tramite il [**metodo Shell.Contro
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti usano [**ControlPanelItem**](shell-controlpanelitem.md) per eseguire l'Pannello di controllo **dell'Proprietà dello schermo** elemento. L'utilizzo viene visualizzato per JScript, VBScript e Visual Basic.
+Gli esempi seguenti usano [**ControlPanelItem**](shell-controlpanelitem.md) per eseguire l'Pannello di controllo **dell'Proprietà dello schermo** elemento. L'utilizzo viene visualizzato JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -141,7 +141,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

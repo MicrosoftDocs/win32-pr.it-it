@@ -1,19 +1,19 @@
 ---
-description: Un intervallo di valori è riservato per supportare le estensioni future per il set di funzioni TAPI di base e supplementare.
+description: Un intervallo di valori è riservato per supportare le estensioni future del set di funzioni TAPI basic e supplementari.
 ms.assetid: fef4620d-fc97-4567-97b0-142e144bc180
 title: Estensione di strutture e tipi di dati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 21388cf852872676972b8132ac4981319bb69c97
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e365d5eead22cdaf7431fe23b276f705d2d0aef8309a541a2480568c01260186
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003649"
 ---
 # <a name="extending-data-structures-and-types"></a>Estensione di strutture e tipi di dati
 
-Un intervallo di valori è riservato per supportare le estensioni future per il set di funzioni TAPI di base e supplementare. Per informazioni sul valore in base al quale è possibile estendere una struttura dei dati, vedere [estensibilità](extensibility.md). Per un elenco delle funzioni usate per estendere la telefonia, vedere informazioni di riferimento sulle funzioni [TAPI Quick](./tapi-quick-function-reference.md).
+Un intervallo di valori è riservato per supportare le estensioni future del set di funzioni TAPI basic e supplementari. Per informazioni sulla quantità di estensione di una struttura di dati, vedere [estendibilità](extensibility.md). Per un elenco delle funzioni usate per l'estensione della telefonia, vedere Riferimento [alle funzioni rapide TAPI.](./tapi-quick-function-reference.md)
 
  
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_GETIMECOMPMODE (RichEdit. h)
+title: EM_GETIMECOMPMODE messaggio (Richedit.h)
 description: Recupera la modalità IME (Input Method Editor) corrente per un controllo Rich Edit.
 ms.assetid: dac96833-4c3d-4da7-9ea4-52204434ec10
 keywords:
-- Controlli di Windows Message EM_GETIMECOMPMODE
+- EM_GETIMECOMPMODE di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1feb2f5f31831e0e292bf002f24ca4978f25753a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 53b9c0242872446c22034502d92af00ead7289fc68b4d5a66d79c3ef68be5eaa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019549"
 ---
-# <a name="em_getimecompmode-message"></a>\_Messaggio GETIMECOMPMODE em
+# <a name="em_getimecompmode-message"></a>Messaggio \_ EM GETIMECOMPMODE
 
 Recupera la modalità IME (Input Method Editor) corrente per un controllo Rich Edit.
 
@@ -32,14 +32,14 @@ Recupera la modalità IME (Input Method Editor) corrente per un controllo Rich E
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
@@ -51,11 +51,11 @@ Il valore restituito è uno dei valori seguenti.
 
 | Codice restituito                                                                                     | Descrizione                  |
 |-------------------------------------------------------------------------------------------------|------------------------------|
-| <dl> <dt>**\_NOTOPEN ICM**</dt> </dl>     | IME non è aperto.<br/>  |
-| <dl> <dt>**\_Level3 ICM**</dt> </dl>      | Modalità in linea true.<br/> |
-| <dl> <dt>**\_Level2 ICM**</dt> </dl>      | Livello 2.<br/>          |
-| <dl> <dt>**ICM \_ Level2 \_ 5**</dt> </dl>   | Livello 2,5<br/>         |
-| <dl> <dt>**ICM \_ Level2 \_ sui**</dt> </dl> | Interfaccia utente speciale.<br/>       |
+| <dl> <dt>**\_ICM NOTOPEN**</dt> </dl>     | L'IME non è aperto.<br/>  |
+| <dl> <dt>**\_ICM LEVEL3**</dt> </dl>      | True in modalità inline.<br/> |
+| <dl> <dt>**\_ICM LEVEL2**</dt> </dl>      | Livello 2.<br/>          |
+| <dl> <dt>**\_ICM LIVELLO \_ 2 5**</dt> </dl>   | Livello 2.5<br/>         |
+| <dl> <dt>**\_ICM LEVEL2 \_ SUI**</dt> </dl> | Interfaccia utente speciale.<br/>       |
 
 
 
@@ -67,9 +67,9 @@ Il valore restituito è uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio RB_GETROWCOUNT (COMmctrl. h)
-description: Recupera il numero di righe di bande in un controllo Rebar.
+title: RB_GETROWCOUNT messaggio (Commctrl.h)
+description: Recupera il numero di righe di bande in un controllo rebar.
 ms.assetid: 80f9614e-672d-4c2a-bb2a-382597193796
 keywords:
-- Controlli di Windows Message RB_GETROWCOUNT
+- RB_GETROWCOUNT di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33fca81552a41e2cc99c4c2c214b7f8743335619
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d78c90ab6228e55116e2b56fbea479b449fb3de311d68d37b2221c53e9109c18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078685"
 ---
-# <a name="rb_getrowcount-message"></a>Messaggio di RB \_ GETrowcount
+# <a name="rb_getrowcount-message"></a>Messaggio RB \_ GETROWCOUNT
 
-Recupera il numero di righe di bande in un controllo Rebar.
+Recupera il numero di righe di bande in un controllo rebar.
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,7 +37,7 @@ Recupera il numero di righe di bande in un controllo Rebar.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **uint** che rappresenta il numero di righe della banda nel controllo.
+Restituisce un **valore UINT** che rappresenta il numero di righe di banda nel controllo .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Restituisce un valore **uint** che rappresenta il numero di righe della banda ne
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
