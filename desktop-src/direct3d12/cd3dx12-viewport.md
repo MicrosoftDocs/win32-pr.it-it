@@ -1,9 +1,9 @@
 ---
-title: Struttura CD3DX12_VIEWPORT (D3dx12. h)
-description: Struttura di supporto per consentire l'inizializzazione semplificata di una \_ struttura del viewport D3D12.
+title: CD3DX12_VIEWPORT struttura (D3dx12.h)
+description: Struttura helper per consentire una facile inizializzazione di una struttura VIEWPORT D3D12. \_
 ms.assetid: 1A824F54-596B-450E-A191-B60FBBBB60ED
 keywords:
-- Struttura CD3DX12_VIEWPORT
+- CD3DX12_VIEWPORT struttura
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da29adc50b62bd645070d9667bec1e5c7ce7ab15
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5dce5a009dba6b047b599772586db60a022f4c62126a6d58575166b5ca2bec5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118808273"
 ---
-# <a name="cd3dx12_viewport-structure"></a>\_Struttura del viewport CD3DX12
+# <a name="cd3dx12_viewport-structure"></a>Struttura VIEWPORT CD3DX12 \_
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Struttura di supporto per consentire l'inizializzazione semplificata di una struttura del [**\_ viewport D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_viewport) .
+Struttura helper per consentire una facile inizializzazione di [**una struttura \_ VIEWPORT D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_viewport)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,71 +48,71 @@ struct CD3DX12_VIEWPORT  : public D3D12_VIEWPORT{
 
 <dl> <dt>
 
-**\_Viewport CD3DX12 ()**
+**CD3DX12 \_ VIEWPORT()**
 </dt> <dd>
 
-Crea una nuova istanza non inizializzata di un \_ viewport CD3DX12.
+Crea una nuova istanza non inizializzata di un VIEWPORT CD3DX12. \_
 
 </dd> <dt>
 
-**Viewport CD3DX12 esplicito \_ (const D3D12 \_ viewport& o)**
+**VIEWPORT CD3DX12 \_ esplicito(const D3D12 \_ VIEWPORT& o)**
 </dt> <dd>
 
-Crea una nuova istanza di un \_ viewport CD3DX12, inizializzando i parametri seguenti:
+Crea una nuova istanza di un VIEWPORT CD3DX12, \_ inizializzando i parametri seguenti:
 
-& o del viewport const D3D12 \_
+const D3D12 \_ VIEWPORT& o
 
 </dd> <dt>
 
-**Viewport CD3DX12 esplicito \_ (float topLeftX, float a sinistra, float width, float height, float minDepth = D3D12 \_ Min \_ Depth, float MaxDepth = D3D12 \_ Max \_ Depth)**
+**VIEWPORT ESPLICITO CD3DX12(FLOAT \_ topLeftX, FLOAT topLeftY, FLOAT width, FLOAT height, FLOAT minDepth = D3D12 \_ MIN \_ DEPTH, FLOAT maxDepth = D3D12 \_ MAX \_ DEPTH)**
 </dt> <dd>
 
-Crea una nuova istanza di un \_ viewport CD3DX12, inizializzando i parametri seguenti:
+Crea una nuova istanza di un VIEWPORT CD3DX12, \_ inizializzando i parametri seguenti:
 
 FLOAT topLeftX
 
-FLOAT a sinistra
+FLOAT topLeftY
 
 Larghezza FLOAT
 
 Altezza FLOAT
 
-FLOAT minDepth = D3D12 \_ Min \_ Depth
+FLOAT minDepth = D3D12 \_ MIN \_ DEPTH
 
-FLOAT maxDepth = \_ profondità massima \_ D3D12
+FLOAT maxDepth = D3D12 \_ MAX \_ DEPTH
 
 </dd> <dt>
 
-**Viewport CD3DX12 esplicito \_ (ID3D12Resource \* PreSource, uint mipSlice = 0, float topLeftX = 0,0 f, float-Lefty = 0,0 f, float MINDEPTH = D3D12 \_ Min \_ Depth, float MaxDepth = D3D12 \_ Max \_ Depth)**
+**VIEWPORT ESPLICITO \_ CD3DX12(ID3D12Resource \* pResource, UINT mipSlice = 0, FLOAT topLeftX = 0,0f, FLOAT topLeftY = 0,0f, FLOAT minDepth = D3D12 \_ MIN \_ DEPTH, FLOAT maxDepth = D3D12 \_ MAX \_ DEPTH)**
 </dt> <dd>
 
-Crea una nuova istanza di un \_ viewport CD3DX12, inizializzando i parametri seguenti:
+Crea una nuova istanza di un VIEWPORT CD3DX12, \_ inizializzando i parametri seguenti:
 
-Preorigine ID3D12Resource \*
+ID3D12Resource \* pResource
 
 UINT mipSlice = 0
 
-FLOAT topLeftX = 0,0 f
+FLOAT topLeftX = 0,0f
 
-FLOAT in uscita = 0,0 f
+FLOAT topLeftY = 0,0f
 
-FLOAT minDepth = D3D12 \_ Min \_ Depth
+FLOAT minDepth = D3D12 \_ MIN \_ DEPTH
 
-FLOAT maxDepth = \_ profondità massima \_ D3D12
-
-</dd> <dt>
-
-**Viewport ~ CD3DX12 \_ ()**
-</dt> <dd>
-
-Elimina un'istanza di un viewport D3DX12 \_ .
+FLOAT maxDepth = D3D12 \_ MAX \_ DEPTH
 
 </dd> <dt>
 
-**operatore const D3D12 \_ VIEWPORT& () const**
+**~CD3DX12 \_ VIEWPORT()**
 </dt> <dd>
 
-Definisce il & operatore pass-by-reference per il tipo di struttura padre.
+Elimina un'istanza di un VIEWPORT D3DX12. \_
+
+</dd> <dt>
+
+**operator const D3D12 \_ VIEWPORT&() const**
+</dt> <dd>
+
+Definisce l'& operatore pass-by-reference per il tipo di struttura padre.
 
 </dd> </dl>
 
@@ -122,7 +122,7 @@ Definisce il & operatore pass-by-reference per il tipo di struttura padre.
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -130,7 +130,7 @@ Definisce il & operatore pass-by-reference per il tipo di struttura padre.
 
 <dl> <dt>
 
-[**\_Viewport D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_viewport)
+[**D3D12 \_ VIEWPORT**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_viewport)
 </dt> <dt>
 
 [Strutture helper per D3D12](helper-structures-for-d3d12.md)

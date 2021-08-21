@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetOpenFileInstance'
-title: API. JetOpenFileInstance, metodo
+description: Altre informazioni sul metodo Api.JetOpenFileInstance
+title: Metodo Api.JetOpenFileInstance
 TOCTitle: 'JetOpenFileInstance method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetOpenFileInstance(Microsoft.Isam.Esent.Interop.JET_INSTANCE,System.String,Microsoft.Isam.Esent.Interop.JET_HANDLE@,System.Int64@,System.Int64@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetopenfileinstance(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3b58b3a426fd2eb7e33cce1f5f539418bcc993ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1dc526cb9d70b86faa54c476cb1d2fa85a93ec032b2fcc5a3d1755779108a8cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118084960"
 ---
-# <a name="apijetopenfileinstance-method"></a>API. JetOpenFileInstance, metodo
+# <a name="apijetopenfileinstance-method"></a>Metodo Api.JetOpenFileInstance
 
-Apre un database collegato, un file di patch del database o un file di log delle transazioni di un'istanza attiva allo scopo di eseguire un backup fuzzy di streaming. I dati di questi file possono essere successivamente letti tramite l'handle restituito mediante JetReadFileInstance. L'handle restituito deve essere chiuso utilizzando JetCloseFileInstance. È necessario che un backup esterno dell'istanza sia stato avviato in precedenza utilizzando JetBeginExternalBackupInstance.
+Apre un database collegato, un file di patch del database o un file di log delle transazioni di un'istanza attiva allo scopo di eseguire un backup fuzzy di flusso. I dati di questi file possono essere successivamente letti tramite l'handle restituito usando JetReadFileInstance. L'handle restituito deve essere chiuso tramite JetCloseFileInstance. Un backup esterno dell'istanza deve essere stato avviato in precedenza usando JetBeginExternalBackupInstance.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -71,37 +71,37 @@ public static void JetOpenFileInstance(
 #### <a name="parameters"></a>Parametri
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
     Istanza di da utilizzare.
 
 <!-- end list -->
 
   - file  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     File da aprire.
 
 <!-- end list -->
 
-  - gestire  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_HANDLE](./jet-handle-structure.md)  
+  - Gestire  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_HANDLE](./jet-handle-structure.md)  
     
-    Restituisce un handle per il file.
+    Restituisce un handle al file.
 
 <!-- end list -->
 
   - fileSizeLow  
-    Tipo: [System. Int64](/dotnet/api/system.int64)  
+    Tipo: [System.Int64](/dotnet/api/system.int64)  
     
-    Restituisce i 32 bit meno significativi della dimensione del file.
+    Restituisce i 32 bit meno significativi delle dimensioni del file.
 
 <!-- end list -->
 
   - fileSizeHigh  
-    Tipo: [System. Int64](/dotnet/api/system.int64)  
+    Tipo: [System.Int64](/dotnet/api/system.int64)  
     
-    Restituisce i 32 bit più significativi della dimensione del file.
+    Restituisce i 32 bit più significativi delle dimensioni del file.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -109,6 +109,6 @@ public static void JetOpenFileInstance(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

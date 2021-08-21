@@ -1,7 +1,7 @@
 ---
-description: Flag che indica se il pin tenta i propri tipi di supporti preferiti prima di quelli del PIN di ricezione.
+description: Flag che indica se il pin tenta i propri tipi di supporti preferiti prima di quelli del pin ricevente.
 ms.assetid: 50462ee4-4a61-472f-9a7e-9cdb39be4dea
-title: 'Membro CBasePin:: m_bTryMyTypesFirst (Amfilter. h)'
+title: Membro CBasePin::m_bTryMyTypesFirst (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 72f98021b6ba97d32974f26ac4e76ca31fa54e5c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: df94a95783d15c09fd53bd8659db71f2ce0b1aefe5d855fef5f5a03e71445493
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118158372"
 ---
-# <a name="cbasepinm_btrymytypesfirst-member"></a>Membro bTryMyTypesFirst di CBasePin:: m \_
+# <a name="cbasepinm_btrymytypesfirst-member"></a>Membro CBasePin::m \_ bTryMyTypesFirst
 
-Flag che indica se il pin tenta i propri tipi di supporti preferiti prima di quelli del PIN di ricezione.
+Flag che indica se il pin tenta i propri tipi di supporti preferiti prima di quelli del pin ricevente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ bool m_bTryMyTypesFirst;
 
 ## <a name="remarks"></a>Osservazioni
 
-Il valore predefinito di questo flag è **false**. Se il flag è **true**, il metodo [**CBasePin:: AgreeMediaType**](cbasepin-agreemediatype.md) inverte l'ordine in cui tenta i tipi di supporto.
+Il valore predefinito di questo flag **è FALSE.** Se il flag è **TRUE,** il [**metodo CBasePin::AgreeMediaType**](cbasepin-agreemediatype.md) inverte l'ordine in cui tenta i tipi di supporti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Il valore predefinito di questo flag è **false**. Se il flag è **true**, il me
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

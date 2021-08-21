@@ -42,7 +42,7 @@ Restituisce 1 in caso di esito positivo oppure 0 in caso contrario.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Per usare questo messaggio, è necessario fornire un manifesto che specifica Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione.](cookbook-overview.md)
+> Per usare questo messaggio, è necessario specificare un manifesto che Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione.](cookbook-overview.md)
 
  
 

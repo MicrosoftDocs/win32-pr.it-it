@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectVariable AsConstantBuffer (D3dx11effect. h)
-description: Ottenere un buffer costante. | Metodo ID3DX11EffectVariable AsConstantBuffer (D3dx11effect. h)
+title: Metodo ID3DX11EffectVariable AsConstantBuffer (D3dx11effect.h)
+description: Ottiene un buffer costante. | Metodo ID3DX11EffectVariable AsConstantBuffer (D3dx11effect.h)
 ms.assetid: b8d8b43c-4626-43b6-8a49-8ffa7cb48427
 keywords:
 - Metodo AsConstantBuffer Direct3D 11
 - Metodo AsConstantBuffer Direct3D 11, interfaccia ID3DX11EffectVariable
-- Interfaccia ID3DX11EffectVariable Direct3D 11, metodo AsConstantBuffer
+- ID3DX11EffectVariable interface Direct3D 11 , AsConstantBuffer method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee4caca60216df0c04a773da22150dbc6f7be717
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b232a9eb98b4cb5bdd4137661198abb9b853faa126579bd86c69e8dce375a6f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104995918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118531575"
 ---
-# <a name="id3dx11effectvariableasconstantbuffer-method"></a>Metodo ID3DX11EffectVariable:: AsConstantBuffer
+# <a name="id3dx11effectvariableasconstantbuffer-method"></a>Metodo ID3DX11EffectVariable::AsConstantBuffer
 
-Ottenere un buffer costante.
+Ottiene un buffer costante.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,12 +49,12 @@ Puntatore a un buffer costante. Vedere [**ID3DX11EffectConstantBuffer**](id3dx11
 
 ## <a name="remarks"></a>Commenti
 
-AsConstantBuffer restituisce una versione della variabile Effect specializzata in un buffer costante. Analogamente a un cast, questa specializzazione restituirà un oggetto non valido se la variabile Effect non contiene dati del buffer costanti.
+AsConstantBuffer restituisce una versione della variabile dell'effetto specializzata in un buffer costante. Analogamente a un cast, questa specializzazione restituirà un oggetto non valido se la variabile dell'effetto non contiene dati costanti del buffer.
 
-Per verificare la validità dell'oggetto restituito, le applicazioni possono chiamare [**IsValid**](id3dx11effectvariable-isvalid.md).
+Le applicazioni possono testare la validità dell'oggetto restituito chiamando [**IsValid.**](id3dx11effectvariable-isvalid.md)
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -64,8 +64,8 @@ Per verificare la validità dell'oggetto restituito, le applicazioni possono chi
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

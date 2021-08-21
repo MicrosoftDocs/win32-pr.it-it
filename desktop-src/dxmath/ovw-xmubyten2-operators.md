@@ -4,16 +4,16 @@ ms.assetid: 287521e0-ade4-4abd-aec6-dde9a734cdf2
 title: Operatori XMUBYTEN2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5be8322288017e8839a856e7e8224821e32507ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f6fdfcb0d6fbfb87400644dda49e0d7e22590ad8f005644ac8700cb02417e55f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118500925"
 ---
 # <a name="xmubyten2-operators"></a>Operatori XMUBYTEN2
 
-La struttura [**XMUBYTEN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmubyten2) espone gli operatori seguenti.
+La [**struttura XMUBYTEN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmubyten2) espone gli operatori seguenti.
 
 > [!Note]  
 > Gli operatori elencati di seguito sono disponibili solo con C++.
@@ -26,7 +26,7 @@ La struttura [**XMUBYTEN2**](/windows/desktop/api/DirectXPackedVector/ns-directx
 
 | Metodi                                                | Descrizione                                                                                                           |
 |--------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [**operatore =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmubyten2-operator-assign)<br/> | Assegna i dati del componente vettore da un'istanza di `XMUBYTEN2` all'istanza corrente di `XMUBYTEN2` .<br/> |
+| [**operatore =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmubyten2-operator-assign)<br/> | Assegna i dati del componente vettoriale da un'istanza `XMUBYTEN2` di all'istanza corrente di `XMUBYTEN2` .<br/> |
 
 
 

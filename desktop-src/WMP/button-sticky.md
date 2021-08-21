@@ -1,6 +1,6 @@
 ---
 title: BUTTON.sticky
-description: L'attributo sticky specifica o recupera un valore che indica se BUTTON è un interruttore, ad esempio se si tratta di un PULSANTE a due stati o a stato singolo.
+description: L'attributo sticky specifica o recupera un valore che indica se BUTTON è un interruttore, ad esempio se si tratta di un pulsante a due stati o a stato singolo.
 ms.assetid: aa0b48b4-29ce-440c-aeb9-dce31ab3cb63
 keywords:
 - BUTTON.sticky Windows Media Player
@@ -35,8 +35,8 @@ Questo attributo è un valore booleano di **lettura/scrittura.**
 
 | Valore | Descrizione                        |
 |-------|------------------------------------|
-| true  | **BUTTON** è appiccicoso.              |
-| false | Valore predefinito. **BUTTON** non è appiccicoso. |
+| true  | **BUTTON** è di tipo sticky.              |
+| false | Valore predefinito. **BUTTON** non è sticky. |
 
 
 
@@ -44,7 +44,7 @@ Questo attributo è un valore booleano di **lettura/scrittura.**
 
 ## <a name="remarks"></a>Commenti
 
-Se **sticky** è impostato  su true, button cambierà nello stato down quando si fa clic e rimarrà in tale stato fino a quando non viene fatto di nuovo clic. Quando button **è** in stato down, l'attributo **down** sarà true e verrà visualizzato **downImage.**
+Se **sticky è** impostato su true, il **PULSANTE** verrà impostato sullo stato down quando si fa clic su e rimarrà in tale stato fino a quando non si fa di nuovo clic. Quando button **è** in stato down, l'attributo **down** sarà true e verrà visualizzato **downImage.**
 
 ## <a name="requirements"></a>Requisiti
 

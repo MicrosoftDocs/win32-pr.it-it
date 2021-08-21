@@ -22,7 +22,7 @@ ms.locfileid: "118343725"
 ---
 # <a name="uint16type-simple-type"></a>Tipo semplice UInt16Type
 
-Definisce un tipo short senza segno. Il valore può essere specificato come intero a 2 byte o valore esadecimale compreso nell'intervallo compreso tra 0 e 65.535.
+Definisce un tipo short senza segno. Il valore può essere specificato come intero a 2 byte o come valore esadecimale compreso nell'intervallo compreso tra 0 e 65.535.
 
 ``` syntax
 <xs:simpleType name="UInt16Type">
@@ -38,8 +38,8 @@ Definisce un tipo short senza segno. Il valore può essere specificato come inte
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

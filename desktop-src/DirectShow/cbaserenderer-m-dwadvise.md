@@ -1,7 +1,7 @@
 ---
 description: Identificatore dell'evento timer che pianifica il rendering.
 ms.assetid: 7b9e5ac8-417d-4d9c-a3ce-80d8286a50d4
-title: 'Membro CBaseRenderer:: m_dwAdvise (Renbase. h)'
+title: Membro CBaseRenderer::m_dwAdvise (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0cc8195d0c67307fdcea5f0e591831f387d8332e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fe728b8e88dabada460907c58a6e31501633378745f71212c6b08e421ca1e487
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118157815"
 ---
-# <a name="cbaserendererm_dwadvise-member"></a>Membro dwAdvise di CBaseRenderer:: m \_
+# <a name="cbaserendererm_dwadvise-member"></a>Membro dwAdvise CBaseRenderer::m \_
 
 Identificatore dell'evento timer che pianifica il rendering.
 
@@ -42,8 +42,8 @@ DWORD_PTR m_dwAdvise;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

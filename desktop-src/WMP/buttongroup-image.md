@@ -1,9 +1,9 @@
 ---
 title: BUTTONGROUP.image
-description: L'attributo image specifica o recupera il nome dell'immagine che rappresenta i pulsanti di buttonGROUP.
+description: L'attributo image specifica o recupera il nome dell'immagine che rappresenta i pulsanti di UN BUTTONGROUP.
 ms.assetid: dad50a1e-d147-4e0f-b5d6-8cbfeef32438
 keywords:
-- Proprietà BUTTONGROUP.image Windows Media Player
+- BUTTONGROUP.image Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118342634"
 ---
 # <a name="buttongroupimage"></a>BUTTONGROUP.image
 
-**L'attributo** image specifica o recupera il nome dell'immagine che rappresenta i pulsanti di **buttonGROUP.**
+**L'attributo** image specifica o recupera il nome dell'immagine che rappresenta i pulsanti di **UN BUTTONGROUP.**
 
 ``` syntax
         elementID.image
@@ -33,7 +33,7 @@ Questo attributo è una stringa di **lettura/scrittura.**
 
 ## <a name="remarks"></a>Commenti
 
-I formati di immagine supportati sono BMP, JPG, PNG e GIF. Se l'immagine è un file BMP a 8 bit, i relativi valori di tonalità e saturazione possono essere modificati dinamicamente usando gli attributi **hueShift** e **saturazione.**
+I formati di immagine supportati sono BMP, JPG, PNG e GIF. Se l'immagine è un file BMP a 8 bit, i relativi valori di tonalità e saturazione possono essere modificati dinamicamente usando gli attributi **hueShift** e **saturation.**
 
 Se l'immagine del controllo è più grande dell'area definita, l'immagine verrà ritagliata.
 

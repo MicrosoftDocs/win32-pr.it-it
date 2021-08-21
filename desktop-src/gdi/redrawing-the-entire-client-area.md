@@ -1,21 +1,21 @@
 ---
-description: L'applicazione può ridisegnare l'intero contenuto dell'area client ogni volta che le dimensioni della finestra cambiano impostando gli \_ stili CS HREDRAW e cs \_ VREDRAW per la classe Window.
+description: È possibile fare in modo che l'applicazione ridisegni l'intero contenuto dell'area client ogni volta che le dimensioni della finestra cambiano impostando gli stili CS \_ HREDRAW e CS \_ VREDRAW per la classe della finestra.
 ms.assetid: ed68b85e-8382-4450-b07d-0422b44dc2e3
 title: Ridisegno dell'intera area client
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d67640d1b464173755029bef1d0feb91f215cda6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e3c438fe36160f27b1015daf7874e237035f927825199b93b3a508668f40bd5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104993877"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118759147"
 ---
 # <a name="redrawing-the-entire-client-area"></a>Ridisegno dell'intera area client
 
-L'applicazione può ridisegnare l'intero contenuto dell'area client ogni volta che le dimensioni della finestra cambiano impostando gli \_ stili CS HREDRAW e cs \_ VREDRAW per la classe Window. Le applicazioni che modificano le dimensioni del disegno in base alle dimensioni della finestra utilizzano questi stili per assicurarsi che inizino con un'area client completamente vuota durante il disegno.
+È possibile fare in modo che l'applicazione ridisegni l'intero contenuto dell'area client ogni volta che le dimensioni della finestra cambiano impostando gli stili CS \_ HREDRAW e CS \_ VREDRAW per la classe della finestra. Le applicazioni che regolano le dimensioni del disegno in base alle dimensioni della finestra usano questi stili per assicurarsi che inizino con un'area client completamente vuota durante il disegno.
 
-Nell'esempio seguente, la routine della finestra Disegna una stella a cinque punte che si integra perfettamente nell'area client. Usa un contesto di dispositivo comune e deve impostare la modalità di mapping, nonché gli extent di finestra e Viewport ogni volta che viene elaborato il messaggio di [**\_ disegno WM**](wm-paint.md) .
+Nell'esempio seguente la routine della finestra disegna una stella a cinque punte che si adatta perfettamente all'area client. Usa un contesto di dispositivo comune e deve impostare la modalità di mapping, nonché gli extent della finestra e del viewport ogni volta che viene elaborato il messaggio [**WM \_ PAINT.**](wm-paint.md)
 
 
 ```C++

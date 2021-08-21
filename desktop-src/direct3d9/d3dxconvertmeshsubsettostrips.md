@@ -1,7 +1,7 @@
 ---
 description: Converte il subset di mesh specificato in una serie di strisce.
 ms.assetid: 4f005383-6a5a-4393-ac88-202e45946d3d
-title: Funzione D3DXConvertMeshSubsetToStrips (D3DX9Mesh. h)
+title: Funzione D3DXConvertMeshSubsetToStrips (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d62461c13f76eb0efce809fa1114771a5ea2fe6d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 345c80305f42df410f42cf255f1b9e0d8f353b448134779b416d686db4b40c05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118526789"
 ---
-# <a name="d3dxconvertmeshsubsettostrips-function"></a>D3DXConvertMeshSubsetToStrips (funzione)
+# <a name="d3dxconvertmeshsubsettostrips-function"></a>Funzione D3DXConvertMeshSubsetToStrips
 
 Converte il subset di mesh specificato in una serie di strisce.
 
@@ -46,66 +46,66 @@ HRESULT D3DXConvertMeshSubsetToStrips(
 
 <dl> <dt>
 
-*Meshin* \[ in\]
+*MeshIn* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBASEMESH**](id3dxbasemesh.md)**
 
-Puntatore a un'interfaccia [**ID3DXBaseMesh**](id3dxbasemesh.md) , che rappresenta la mesh da convertire in una striscia.
+Puntatore a [**un'interfaccia ID3DXBaseMesh,**](id3dxbasemesh.md) che rappresenta la mesh da convertire in una striscia.
 
 </dd> <dt>
 
-*AttribId* \[ in\]
+*AttribId* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-ID dell'attributo del sottoinsieme mesh da convertire in strip.
+ID attributo del subset di mesh da convertire in strisce.
 
 </dd> <dt>
 
-*IBOptions* \[ in\]
+*Opzioni IB* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinazione di uno o più flag dell'enumerazione [**D3DXMESH**](./d3dxmesh.md) , che specificano le opzioni per la creazione del buffer dell'indice. Non può essere D3DXMESH a \_ 32 bit. Il buffer dell'indice verrà creato con indici a 32 bit o a 16 bit a seconda del formato del buffer dell'indice della mesh specificata dal parametro *meshin* .
+Combinazione di uno o più flag [**dell'enumerazione D3DXMESH,**](./d3dxmesh.md) specificando le opzioni per la creazione del index buffer. Non può essere D3DXMESH \_ a 32 BIT. Il index buffer verrà creato con indici a 32 o 16 bit a seconda del formato del index buffer della mesh specificato dal *parametro MeshIn.*
 
 </dd> <dt>
 
-*ppIndexBuffer* \[ out\]
+*ppIndexBuffer* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DINDEXBUFFER9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dindexbuffer9)\***
 
-Puntatore a un'interfaccia [**IDirect3DIndexBuffer9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dindexbuffer9) , che rappresenta il buffer di indice contenente la striscia.
+Puntatore a [**un'interfaccia IDirect3DIndexBuffer9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dindexbuffer9) che rappresenta index buffer contenente la striscia.
 
 </dd> <dt>
 
-*pNumIndices* \[ out\]
+*pNumIndices* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Numero di indici nel buffer restituito nel parametro *ppIndexBuffer* .
+Numero di indici nel buffer restituiti nel *parametro ppIndexBuffer.*
 
 </dd> <dt>
 
-*ppStripLengths* \[ out\]
+*ppStripLengths* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Buffer contenente una matrice di un DWORD per striscia, che specifica il numero di triangoli nell'oggetto Strip.
+Buffer contenente una matrice di un valore DWORD per ogni striscia, che specifica il numero di triangoli nell'elenco.
 
 </dd> <dt>
 
-*pNumStrips* \[ out\]
+*pNumStrips* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Numero di singole strisce nel buffer di indice e nella matrice di lunghezza della striscia corrispondente.
+Numero di singole strisce nella matrice index buffer e la matrice di lunghezza della striscia corrispondente.
 
 </dd> </dl>
 
@@ -113,11 +113,11 @@ Numero di singole strisce nel buffer di indice e nella matrice di lunghezza dell
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei valori seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei valori seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Prima di eseguire questa funzione, chiamare [**optimize**](id3dxmesh--optimize.md) o [**D3DXOptimizeFaces**](d3dxoptimizefaces.md)con il \_ flag D3DXMESHOPT ATTRSORT impostato.
+Prima di eseguire questa funzione, chiamare [**Optimize**](id3dxmesh--optimize.md) o [**D3DXOptimizeFaces**](d3dxoptimizefaces.md)con il flag ATTRSORT D3DXMESHOPT \_ impostato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -125,8 +125,8 @@ Prima di eseguire questa funzione, chiamare [**optimize**](id3dxmesh--optimize.m
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 051BA448-237F-4E11-B2B1-A8FA7190DEEB
 title: Libreria di runtime
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fa00f85a48c58ebb8c981a242ebeb3e849cd9a4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fa740687c6d6203083bade4ebadaec9050635d493163736f2cbf8043364b0215
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104523346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118161636"
 ---
 # <a name="run-time-library"></a>Libreria di runtime
 

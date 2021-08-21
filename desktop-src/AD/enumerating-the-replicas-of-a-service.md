@@ -5,20 +5,20 @@ ms.assetid: 9dc3f932-c3e1-4ce1-a945-12d68838304e
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 995cd665476a55b6bf717f356fafa54b0d2e10e6
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 8cce0b1a9da8eac974682514cd283f8e530388727a2b674765a39056e94a0c95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104516708"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118429254"
 ---
 # <a name="enumerating-the-replicas-of-a-service"></a>Enumerazione delle repliche di un servizio
 
-Questo argomento include un esempio di codice che enumera le istanze installate di un servizio replicato in computer host diversi in un'organizzazione. Per modificare la password dell'account del servizio per ogni istanza di un servizio replicato, usare questo esempio di codice insieme all'esempio di codice nell'argomento [modifica della password per l'account utente di un servizio](changing-the-password-on-a-serviceampaposs-user-account.md) .
+Questo argomento include un esempio di codice che enumera le istanze installate di un servizio replicato in computer host diversi in un'organizzazione. Per modificare la password dell'account del servizio per ogni istanza di un servizio replicato, usare questo esempio di codice insieme all'esempio di codice [nell'argomento Changing the Password on a Service's User Account](changing-the-password-on-a-serviceampaposs-user-account.md) .
 
-Nell'esempio di codice si presuppone che ogni istanza del servizio disponga di un proprio oggetto SCP (Service Connection Point) nella directory. Un SCP è un oggetto della classe [**serviceConnectionPoint**](/windows/desktop/ADSchema/c-serviceconnectionpoint) . Questa classe dispone di un attributo **Keywords** , ovvero un attributo multivalore replicato in ogni catalogo globale (GC) nell'insieme di strutture. L'attributo **Keywords** dell'SCP di ogni istanza contiene il GUID del prodotto del servizio. Ciò consente di trovare tutti i convergenza per le varie istanze del servizio eseguendo una ricerca in un GC per gli oggetti con un attributo **Keywords** che equivale al GUID del prodotto.
+Nell'esempio di codice si presuppone che ogni istanza del servizio abbia un proprio oggetto punto di connessione del servizio nella directory . Un punto di connessione del servizio è un oggetto della [**classe serviceConnectionPoint.**](/windows/desktop/ADSchema/c-serviceconnectionpoint) Questa classe ha un **attributo keywords,** ovvero un attributo multivalore replicato in ogni catalogo globale (GC) nella foresta. **L'attributo keywords** del provider di servizi di archiviazione di ogni istanza contiene il GUID del prodotto del servizio. In questo modo è possibile trovare tutti i criteri di sicurezza per le varie istanze del servizio cercando in gc gli oggetti con un attributo **keywords** uguale al GUID del prodotto.
 
-Nell'esempio di codice viene ottenuto un puntatore [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) a un GC e viene utilizzato il metodo [**IDirectorySearch:: ExecuteSearch**](/windows/desktop/api/iads/nf-iads-idirectorysearch-executesearch) per cercare convergenza. Tenere presente che il GC contiene una replica parziale per ogni SCP. Ovvero, contiene alcuni degli attributi SCP, ma non tutti. In questo esempio di codice, concentrarsi sull'attributo **serviceDNSName** , che contiene il nome DNS del server host per l'istanza del servizio. Poiché **serviceDNSName** non è uno degli attributi replicati in un catalogo globale, nell'esempio di codice viene usato un processo in due passaggi per recuperarlo. In primo luogo, usa la ricerca GC per ottenere il nome distinto (DN) del SCP, quindi usa tale DN per eseguire il binding direttamente al SCP per recuperare la proprietà **serviceDNSName** .
+L'esempio di codice ottiene un puntatore [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) a un garbage collector e usa il metodo [**IDirectorySearch::ExecuteSearch**](/windows/desktop/api/iads/nf-iads-idirectorysearch-executesearch) per cercare i criteri di sicurezza. Tenere presente che il Garbage Collector contiene una replica parziale per ogni punto di connessione del servizio. Questo significa che contiene alcuni degli attributi SCP, ma non tutti. In questo esempio di codice concentrarsi **sull'attributo serviceDNSName,** che contiene il nome DNS del server host per l'istanza del servizio. Poiché **serviceDNSName** non è uno degli attributi replicati in un'operazione GC, l'esempio di codice usa un processo in due passaggi per recuperarlo. In primo luogo, usa la ricerca GC per ottenere il nome distinto (DN) del punto di connessione del servizio, quindi usa tale DN per eseguire l'associazione direttamente al punto di connessione del servizio per recuperare la proprietà **serviceDNSName.**
 
 
 ```C++
@@ -181,6 +181,6 @@ return hr;
 
 
 
- 
+ 
 
- 
+ 

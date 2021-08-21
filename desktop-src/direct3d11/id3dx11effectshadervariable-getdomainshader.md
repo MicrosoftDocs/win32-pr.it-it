@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectShaderVariable GetDomainShader (D3dx11effect. h)
-description: Ottenere un Domain shader.
+title: Metodo GetDomainShader ID3DX11EffectShaderVariable (D3dx11effect.h)
+description: Ottenere uno shader di dominio.
 ms.assetid: fd95a4f0-7df3-4098-843f-0a1e22209603
 keywords:
 - Metodo GetDomainShader Direct3D 11
 - Metodo GetDomainShader Direct3D 11, interfaccia ID3DX11EffectShaderVariable
-- Interfaccia ID3DX11EffectShaderVariable Direct3D 11, metodo GetDomainShader
+- ID3DX11EffectShaderVariable interface Direct3D 11 , Metodo GetDomainShader
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b7f097fb950b60aaa9c7fa2d5b763b393d5e275
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0e66bb99f170e6b638587d7da5a8d3cc57a34d3cab6bb04968b049d39dcb09c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118533297"
 ---
-# <a name="id3dx11effectshadervariablegetdomainshader-method"></a>Metodo ID3DX11EffectShaderVariable:: GetDomainShader
+# <a name="id3dx11effectshadervariablegetdomainshader-method"></a>Metodo ID3DX11EffectShaderVariable::GetDomainShader
 
-Ottenere un Domain shader.
+Ottenere uno shader di dominio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,18 +47,18 @@ HRESULT GetDomainShader(
 *ShaderIndex* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Indice dello shader del dominio.
+Indice dello shader di dominio.
 
 </dd> <dt>
 
-*PPP* 
+*Ppp* 
 </dt> <dd>
 
 Tipo: **[ **ID3D11DomainShader**](/windows/win32/api/d3d11/nn-d3d11-id3d11domainshader)\*\***
 
-Puntatore a un puntatore [**ID3D11DomainShader**](/windows/win32/api/d3d11/nn-d3d11-id3d11domainshader) che verrà impostato sullo shader del dominio al ritorno.
+Puntatore a [**un puntatore ID3D11DomainShader**](/windows/win32/api/d3d11/nn-d3d11-id3d11domainshader) che verrà impostato sullo shader di dominio al ritorno.
 
 </dd> </dl>
 
@@ -66,12 +66,12 @@ Puntatore a un puntatore [**ID3D11DomainShader**](/windows/win32/api/d3d11/nn-d3
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei codici [restituiti Direct3D 11 seguenti.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra effetti 10 ed effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -81,8 +81,8 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-refe
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

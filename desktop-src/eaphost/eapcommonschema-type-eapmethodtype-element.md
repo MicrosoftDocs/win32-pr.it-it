@@ -1,6 +1,6 @@
 ---
 title: Elemento Type (EapMethodType)
-description: Informazioni sull'elemento Type (EapMethodType), che fa riferimento al tipo di metodo EAP. Vedere requisiti e visualizzare altre risorse disponibili.
+description: Informazioni sull'elemento Type (EapMethodType), che fa riferimento al tipo di metodo EAP. Vedere i requisiti e visualizzare le risorse disponibili aggiuntive.
 ms.assetid: 7911e97c-9436-4d60-8497-bee45cdb8db4
 keywords:
 - Elemento Type EAPHost
@@ -14,18 +14,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6d45defd098f560d4deb8698e0fd569492668e0b
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 471cb15afc00593d90bec2c0525d8e7aeddc79db13779b7b93ce99d23ccab020
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104399725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118498415"
 ---
 # <a name="type-eapmethodtype-element"></a>Elemento Type (EapMethodType)
 
-L'elemento **Type (EapMethodType)** si riferisce al tipo di metodo EAP.
+**L'elemento Type (EapMethodType)** fa riferimento al tipo di metodo EAP.
 
-Il tipo è un numero univoco emesso da IANA (Internet Assigned Numbers Authority).
+Il tipo è un numero univoco emesso dall'autorità IANA (Internet Assigned Numbers Authority).
 
 ``` syntax
 <xs:element name="Type"
@@ -33,16 +33,16 @@ Il tipo è un numero univoco emesso da IANA (Internet Assigned Numbers Authority
  />
 ```
 
-L'elemento **Type** è definito dal tipo complesso [**EapMethodType**](eapcommonschema-eapmethodtype-complextype.md) .
+**L'elemento** Type è definito dal tipo complesso [**EapMethodType.**](eapcommonschema-eapmethodtype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

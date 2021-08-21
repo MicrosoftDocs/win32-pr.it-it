@@ -1,10 +1,10 @@
 ---
 title: Interfaccia IWMDRMEncrypt
-description: L'interfaccia IWMDRMEncrypt fornisce un metodo per la crittografia dei dati sul posto.
+description: L'interfaccia IWMDRMEncrypt fornisce un metodo per crittografare i dati sul posto.
 ms.assetid: da57d72e-da6b-4e27-9bcb-72f87b3e5c90
 keywords:
-- Formato Windows Media Interface IWMDRMEncrypt
-- Interfaccia IWMDRMEncrypt-formato Windows Media, descritto
+- Interfaccia IWMDRMEncrypt in formato Windows Media
+- Interfaccia IWMDRMEncrypt windows Media Format , descritta
 topic_type:
 - apiref
 api_name:
@@ -14,26 +14,26 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6f9fdd0c7123b8abb1fc180f1a43947cc179f1ce
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 424b3be1394d2989ac9328ce088d05fbfd0a9192360ef56acbfd70d58be7864f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104118175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118433590"
 ---
 # <a name="iwmdrmencrypt-interface"></a>Interfaccia IWMDRMEncrypt
 
-L'interfaccia **IWMDRMEncrypt** fornisce un metodo per la crittografia dei dati sul posto.
+**L'interfaccia IWMDRMEncrypt** fornisce un metodo per crittografare i dati sul posto.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IWMDRMEncrypt** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IWMDRMEncrypt** dispone anche di questi tipi di membri:
+**L'interfaccia IWMDRMEncrypt** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IWMDRMEncrypt** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IWMDRMEncrypt** dispone di questi metodi.
+Questi metodi sono disponibili nell'interfaccia **IWMDRMEncrypt.**
 
 
 

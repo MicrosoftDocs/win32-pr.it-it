@@ -1,11 +1,11 @@
 ---
-title: Proprietà IResultsViewer PropertyFilters (WdsView. h)
-description: Quando si chiama la raccolta di filtri di proprietà, restituirà quanto segue
+title: Proprietà PropertyFilters IResultsViewer (WdsView.h)
+description: Quando si chiama la raccolta di filtri di proprietà, verrà restituito quanto segue
 ms.assetid: 8673f2de-f156-4910-8f2f-e8bfe3369f71
 keywords:
-- Funzionalità dell'ambiente Windows legacy della proprietà PropertyFilters
-- Proprietà PropertyFilters caratteristiche dell'ambiente Windows legacy, interfaccia IResultsViewer
-- Funzionalità dell'ambiente Windows legacy dell'interfaccia IResultsViewer, proprietà PropertyFilters
+- Proprietà PropertyFilters Funzionalità dell'Windows legacy
+- Proprietà PropertyFilters Legacy Windows Environment Features , interfaccia IResultsViewer
+- Interfaccia IResultsViewer Legacy Windows Environment Features , proprietà PropertyFilters
 topic_type:
 - apiref
 api_name:
@@ -16,25 +16,25 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bda2dfef16f370cdf77dc4ea62857f7f9db28162
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 335c27f03da29b7bf48380ae84fadb601c8dc4df0473749bdf60615bb595590b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118753745"
 ---
-# <a name="iresultsviewerpropertyfilters-property"></a>IResultsViewer::P proprietà ropertyFilters
+# <a name="iresultsviewerpropertyfilters-property"></a>Proprietà IResultsViewer::P ropertyFilters
 
 > [!NOTE]
-> Windows Desktop Search 2. x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece l' [API di ricerca di Windows](../search/-search-reference-entry-page.md) . 
+> Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [l'API Windows ricerca.](../search/-search-reference-entry-page.md) 
 
-Quando si chiama la raccolta di filtri di proprietà, restituirà quanto segue:
+Quando si chiama la raccolta di filtri di proprietà, verrà restituito quanto segue:
 
 ## <a name="syntax"></a>Sintassi
 
 ## <a name="property-value"></a>Valore proprietà
 
-Quando viene chiamato, restituirà un puntatore all'indirizzo della raccolta di filtri di proprietà.
+Quando viene chiamato questo metodo restituirà un puntatore all'indirizzo della raccolta di filtri di proprietà.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -42,10 +42,10 @@ Quando viene chiamato, restituirà un puntatore all'indirizzo della raccolta di 
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP con SP2 \[\]<br/>                                 |
-| Server minimo supportato<br/> | Windows Server 2003 con \[ solo app desktop SP1\]<br/>                        |
+| Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/>                                 |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 con SP1 \[\]<br/>                        |
 | Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>WdsView. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>WdsView.h</dt> </dl> |
 
 
 

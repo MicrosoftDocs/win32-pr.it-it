@@ -1,41 +1,41 @@
 ---
-title: Uso del controllo Media Player di Windows in un programma C++
-description: Uso del controllo Media Player di Windows in un programma C++
+title: Uso del Windows Media Player controllo in un programma C++
+description: Uso del Windows Media Player controllo in un programma C++
 ms.assetid: 2531ac25-5e9d-462e-a06a-6f81bf4ca33d
 keywords:
-- Windows Media Player, incorporamento del controllo ActiveX
-- Modello a oggetti di Windows Media Player, incorporamento del controllo ActiveX
-- modello a oggetti, incorporamento del controllo ActiveX
-- Windows Media Player Mobile, incorporamento del controllo ActiveX
-- Controllo ActiveX di Windows Media Player, incorporamento
-- Controllo ActiveX Windows Media Player Mobile, incorporamento
-- Controllo ActiveX, incorporamento
-- Windows Media Player, C++
-- Modello a oggetti di Windows Media Player, C++
-- modello a oggetti, C++
-- Windows Media Player Mobile, C++
-- Controllo ActiveX di Windows Media Player, C++
-- Controllo ActiveX Windows Media Player Mobile, C++
-- Controllo ActiveX, C++
-- Incorporamento del programma C++
+- Windows Media Player,incorporamento ActiveX controllo
+- Windows Media Player a oggetti, incorporamento ActiveX controllo
+- modello a oggetti, incorporamento ActiveX controllo
+- Windows Media Player Mobile, incorporamento ActiveX controllo
+- Windows Media Player ActiveX, incorporamento
+- Windows Media Player Controllo ActiveX per dispositivi mobili, incorporamento
+- ActiveX, incorporamento
+- Windows Media Player,C++
+- Windows Media Player a oggetti, C++
+- modello a oggetti,C++
+- Windows Media Player Mobile,C++
+- Windows Media Player ActiveX, C++
+- Windows Media Player Controllo ActiveX per dispositivi mobili,C++
+- ActiveX, C++
+- Incorporamento di programmi C++
 - incorporamento, programmi C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02430dbdaba3bb2e8ea3ca6e46b202a289a096f5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ad860219e07a8834a47dc07e4bf8f851866db325c6795151b5076189d546020d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118830460"
 ---
-# <a name="using-the-windows-media-player-control-in-a-c-program"></a>Uso del controllo Media Player di Windows in un programma C++
+# <a name="using-the-windows-media-player-control-in-a-c-program"></a>Uso del Windows Media Player controllo in un programma C++
 
 > [!Note]  
-> L'uso di C++ per incorporare il controllo Media Player Windows è supportato per la serie Windows Media Player 9 o versioni successive.
+> L'uso di C++ per incorporare Windows Media Player controllo è supportato per Windows Media Player serie 9 o successive.
 
- 
+ 
 
-Esistono diversi modi per usare il controllo Windows Media Player in un programma C++. È possibile creare un'istanza del controllo in un'applicazione console oppure incorporare il controllo in un'applicazione Windows. Inoltre, è possibile implementare interfacce che consentono di eseguire un controllo Player incorporato in modalità remota. È possibile personalizzare l'interfaccia utente di un controllo incorporato applicando un file di definizione dell'interfaccia personalizzata.
+Esistono diversi modi per usare il controllo Windows Media Player in un programma C++. È possibile creare un'istanza del controllo in un'applicazione console oppure incorporare il controllo in un Windows app. È anche possibile implementare interfacce che consentono di eseguire un controllo Player incorporato in modalità remota. È possibile personalizzare l'interfaccia utente di un controllo incorporato applicando un file di definizione dell'interfaccia.
 
 Queste informazioni sono descritte negli argomenti seguenti.
 
@@ -43,34 +43,34 @@ Queste informazioni sono descritte negli argomenti seguenti.
 
 | Argomento                                                                                                                                      | Descrizione                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Uso del controllo Media Player Windows in un'applicazione console](using-the-windows-media-player-control-in-a-console-application.md)     | Descrive una semplice applicazione console C++ che crea un'istanza del controllo Media Player Windows per visualizzare la versione.                                                       |
-| [Hosting del controllo Media Player Windows in un'applicazione Windows](hosting-the-windows-media-player-control-in-a-windows-application.md) | Viene descritto come utilizzare la finestra host ActiveX ATL per incorporare il controllo Media Player di Windows in un programma Windows.                                                            |
-| [Gestione remota del controllo di Windows Media Player](remoting-the-windows-media-player-control.md)                                                 | Viene descritto come incorporare il controllo Windows Media Player in un programma C++ in modalità remota, che consente agli utenti di disancorare il controllo per passare alla modalità completa del lettore. |
-| [Gestione degli eventi in C++](handling-events-in-c.md)                                                                                         | Viene descritto come ricevere notifiche di eventi da Windows Media Player.                                                                                                     |
-| [Uso di interfacce con il controllo Media Player di Windows](using-skins-with-the-windows-media-player-control.md)                                 | Viene descritto come applicare un file di interfaccia a un controllo di Windows Media Player incorporato in un programma C++.                                                                             |
+| [Uso del controllo Windows Media Player in un'applicazione console](using-the-windows-media-player-control-in-a-console-application.md)     | Descrive una semplice applicazione console C++ che crea un'istanza del controllo Windows Media Player per visualizzare la versione.                                                       |
+| [Hosting del controllo Windows Media Player in un'Windows applicazione](hosting-the-windows-media-player-control-in-a-windows-application.md) | Viene descritto come usare la finestra host ActiveX ATL per incorporare il controllo Windows Media Player in un Windows programma.                                                            |
+| [Gestione remota del controllo di Windows Media Player](remoting-the-windows-media-player-control.md)                                                 | Descrive come incorporare il controllo Windows Media Player in un programma C++ in modalità remota, che consente agli utenti di disinserire il controllo per passare alla modalità completa di Player. |
+| [Gestione di eventi in C++](handling-events-in-c.md)                                                                                         | Viene descritto come ricevere notifiche di eventi da Windows Media Player.                                                                                                     |
+| [Uso di skin con il controllo Windows Media Player](using-skins-with-the-windows-media-player-control.md)                                 | Viene descritto come applicare un file di interfaccia a un controllo Windows Media Player incorporato in un programma C++.                                                                             |
 
 
 
- 
+ 
 
 > [!Note]  
-> È possibile incorporare il controllo Windows Media Player 10 mobile in un'applicazione Windows CE. Le tecniche usate per eseguire questa operazione sono simili a quelle usate con il controllo desktop di Windows Media Player. Esistono tuttavia differenze tra ATL per Windows e ATL per Windows CE. Questa documentazione descrive le differenze tra queste implementazioni, laddove appropriato.
+> È possibile incorporare il controllo Windows Media Player 10 Mobile in un'Windows CE applicazione. Le tecniche usate per eseguire questa operazione sono simili a quelle usate con il controllo Windows Media Player desktop. Tuttavia, esistono differenze tra ATL per Windows e ATL per Windows CE. In questa documentazione vengono descritte le differenze tra queste implementazioni, se appropriato.
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Riferimento del modello a oggetti per C++**](object-model-reference-for-c.md)
+[**Informazioni di riferimento sul modello a oggetti per C++**](object-model-reference-for-c.md)
 </dt> <dt>
 
-[**Guida al controllo del lettore**](player-control-guide.md)
+[**Guida al controllo del giocatore**](player-control-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'SystemConfig_CPU: questa classe è la classe del tipo di evento per gli eventi di configurazione della CPU.'
+description: 'SystemConfig_CPU classe: questa classe è la classe del tipo di evento per gli eventi di configurazione della CPU.'
 ms.assetid: 5a24be04-9e5e-4ba9-baaf-b58b79ad947b
 title: SystemConfig_CPU classe
 ms.topic: reference
@@ -20,12 +20,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 07efa01bf58aeadfdfe12cd5db4d010a7f6dbca0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 88503ee53714ea68bb95aca5077aefebd178aa58a7c10167e92358656f5051fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151417"
 ---
 # <a name="systemconfig_cpu-class"></a>Classe CPU SystemConfig \_
 
@@ -106,7 +106,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (7), **Max** (132), **Format("s")**
 </dt> </dl>
 
-Nome del dominio di cui il computer è membro.
+Nome del dominio in cui il computer è membro.
 
 </dd> <dt>
 
@@ -186,7 +186,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (4)
 </dt> </dl>
 
-Dimensioni di una pagina di scambio, in byte.
+Dimensioni in byte di una pagina di scambio.
 
 </dd> </dl>
 
@@ -196,8 +196,8 @@ Dimensioni di una pagina di scambio, in byte.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>       |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

@@ -1,11 +1,11 @@
 ---
 title: Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS_WINSRType
-description: Il metodo CreateInstanceFromPropertyData crea un'istanza di un record di risorse di ricerca inversa WINS (WINSr).
+description: Il metodo CreateInstanceFromPropertyData crea un'istanza di un record di risorse WINS Reverse Lookup (WINSR).
 ms.assetid: e14e81be-fc5c-4a6f-b6d1-cb3ce5005e00
 keywords:
 - DNS del metodo CreateInstanceFromPropertyData
-- DNS del metodo CreateInstanceFromPropertyData, classe MicrosoftDNS_WINSRType
-- Classe MicrosoftDNS_WINSRType DNS, metodo CreateInstanceFromPropertyData
+- Metodo CreateInstanceFromPropertyData DNS, MicrosoftDNS_WINSRType classe
+- MicrosoftDNS_WINSRType classe DNS, metodo CreateInstanceFromPropertyData
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c35863e00ace6c0772383604d0fbdfd7915cd02c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9d8bc5103c9a7034b79500496cc7a066c1fbc65aa32d20dd29ea3160dfbaf0ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162942"
 ---
-# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_winsrtype-class"></a>Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS \_ WINSRType
+# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_winsrtype-class"></a>Metodo CreateInstanceFromPropertyData della classe \_ MICROSOFTDNS WINSRType
 
-Il metodo **CreateInstanceFromPropertyData** crea un'istanza di un record di risorse di ricerca inversa WINS (WINSR).
+Il **metodo CreateInstanceFromPropertyData** crea un'istanza di un record di risorse WINS Reverse Lookup (WINSR).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,31 +51,31 @@ void CreateInstanceFromPropertyData(
 
 <dl> <dt>
 
-*DnsServerName* \[ in\]
+*DnsServerName* \[ Pollici\]
 </dt> <dd>
 
 FQDN o indirizzo IP del server DNS che contiene questo RR.
 
 </dd> <dt>
 
-*ContainerName* \[ in\]
+*ContainerName* \[ Pollici\]
 </dt> <dd>
 
-Nome del contenitore per la zona, la cache o l'istanza di RootHints che contiene questo RR.
+Nome del contenitore per l'istanza di Zona, Cache o RootHints che contiene questo RR.
 
 </dd> <dt>
 
-*Proprietarioname* \[ in\]
+*OwnerName* \[ Pollici\]
 </dt> <dd>
 
-Nome del proprietario per l'RR.
+Nome del proprietario per il RR.
 
 </dd> <dt>
 
 *RecordClass* \[ in, facoltativo\]
 </dt> <dd>
 
-Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
+Classe dell'oggetto RR. Il valore predefinito è 1. I valori seguenti sono validi.
 
 
 
@@ -84,7 +84,7 @@ Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | IN (Internet)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | CS (CSNET)<br/>    |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CHAOS)<br/>    |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Esiodo)<br/>   |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Hesiod)<br/>   |
 
 
 
@@ -92,42 +92,42 @@ Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
 
 </dd> <dt>
 
-Valore *TTL* \[ in, facoltativo\]
+*TTL* \[ in, facoltativo\]
 </dt> <dd>
 
-Tempo, in secondi, che l'RR può memorizzare nella cache da un resolver DNS.
+Tempo, in secondi, in cui il RR può essere memorizzato nella cache da un resolver DNS.
 
 </dd> <dt>
 
-*MappingFlag* \[ in\]
+*MappingFlag* \[ Pollici\]
 </dt> <dd>
 
-Flag di mapping WINSr che specifica se il record deve essere incluso nella replica della zona. Potrebbero essere presenti solo due valori: 0x80000000 e 0x00010000 corrispondenti rispettivamente ai flag di replica e senza replica (record locale).
+Flag di mapping WINSR che specifica se il record deve essere incluso nella replica di zona. Può avere solo due valori: 0x80000000 e 0x00010000 corrispondenti rispettivamente ai flag di replica e senza replica (record locale).
 
 </dd> <dt>
 
-*LookupTimeout* \[ in\]
+*LookupTimeout* \[ Pollici\]
 </dt> <dd>
 
-Timeout, in secondi, per un server DNS che utilizza la ricerca inversa WINS.
+Timeout, in secondi, per un server DNS che usa la ricerca inversa WINS.
 
 </dd> <dt>
 
-*CacheTimeout* \[ in\]
+*CacheTimeout* \[ Pollici\]
 </dt> <dd>
 
-Tempo, in secondi, in cui un server DNS che usa la ricerca WINS può memorizzare nella cache la risposta del server WINS.
+Tempo, in secondi, un server DNS che usa WINS Look up può memorizzare nella cache la risposta del server WINS.
 
 </dd> <dt>
 
-*ResultDomain* \[ in\]
+*ResultDomain* \[ Pollici\]
 </dt> <dd>
 
 Nome di dominio da aggiungere ai nomi NetBIOS restituiti.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
 Riferimento al nuovo oggetto.
@@ -147,7 +147,7 @@ Questo metodo non restituisce valori.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -155,13 +155,13 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**\_WINSRType MicrosoftDNS**](microsoftdns-winsrtype.md)
+[**MicrosoftDNS \_ WINSRType**](microsoftdns-winsrtype.md)
 </dt> <dt>
 
-[**Metodo Modify della \_ classe WINSRType di MicrosoftDNS**](microsoftdns-winsrtype-modify.md)
+[**Metodo Modify della classe MICROSOFTDNS \_ WINSRType**](microsoftdns-winsrtype-modify.md)
 </dt> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

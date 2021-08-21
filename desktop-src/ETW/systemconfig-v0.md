@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 24f0c579f4fb9c947ea02ff677cd433da3103cfc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6986e5ac907784a19c14fb8dc6b9c086031863f322c3c35a58edcf3fd4089ea8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151221"
 ---
 # <a name="systemconfig_v0-class"></a>Classe SystemConfig \_ V0
 
@@ -40,7 +40,7 @@ La **classe SystemConfig \_ V0** non definisce membri.
 
 ## <a name="remarks"></a>Commenti
 
-Per gli eventi di configurazione hardware in Windows XP, vedere la [**classe HWConfig.**](hwconfig.md)
+Per gli eventi di configurazione hardware Windows XP, vedere la [**classe HWConfig.**](hwconfig.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Per gli eventi di configurazione hardware in Windows XP, vedere la [**classe HWC
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                            |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
 
 
 

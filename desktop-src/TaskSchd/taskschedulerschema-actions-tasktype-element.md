@@ -1,11 +1,11 @@
 ---
-title: Actions (taskType)-elemento
+title: Elemento Actions (taskType)
 description: Contiene le azioni eseguite dall'attività.
 ms.assetid: 0a48fbd6-8a6f-4bad-9b28-0631dce15748
 keywords:
-- Actions (taskType)-elemento Utilità di pianificazione
-- Utilità di pianificazione azioni, XML
-- Elemento Actions Utilità di pianificazione
+- Elemento Actions (taskType) Utilità di pianificazione
+- azioni Utilità di pianificazione , XML
+- Elementi Actions Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 21af0f8a06faa9cdc61917dcb3b3b0672c47e0e7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 79fb5fe36b6fcff3622e0d12f0571e7f06c5f00d1ae930abc2bca805315f7dd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118357099"
 ---
-# <a name="actions-tasktype-element"></a>Actions (taskType)-elemento
+# <a name="actions-tasktype-element"></a>Elemento Actions (taskType)
 
 Contiene le azioni eseguite dall'attività.
 
@@ -32,7 +32,7 @@ Contiene le azioni eseguite dall'attività.
  />
 ```
 
-L'elemento **Actions** viene definito dal tipo complesso [**TaskType**](taskschedulerschema-tasktype-complextype.md) .
+**L'elemento** Actions è definito dal [**tipo complesso taskType.**](taskschedulerschema-tasktype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -50,10 +50,10 @@ L'elemento **Actions** viene definito dal tipo complesso [**TaskType**](tasksche
 
 | Elemento                                                                    | Tipo                                                                       | Descrizione                                                            |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [**Comgestore**](taskschedulerschema-comhandler-actiongroup-element.md)   | [**comHandlerType**](taskschedulerschema-comhandlertype-complextype.md)   | Specifica un'azione che attiva un gestore.<br/>                   |
+| [**ComHandler**](taskschedulerschema-comhandler-actiongroup-element.md)   | [**comHandlerType**](taskschedulerschema-comhandlertype-complextype.md)   | Specifica un'azione che genera un gestore.<br/>                   |
 | [**Exec**](taskschedulerschema-exec-actiongroup-element.md)               | [**execType**](taskschedulerschema-exectype-complextype.md)               | Specifica un'azione che esegue un'operazione della riga di comando.<br/> |
 | [**SendEmail**](taskschedulerschema-sendemail-actiongroup-element.md)     | [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md)     | Specifica un'azione che invia un messaggio di posta elettronica.<br/>            |
-| [**ShowMessage**](taskschedulerschema-showmessage-actiongroup-element.md) | [**showMessageType**](taskschedulerschema-showmessagetype-complextype.md) | Specifica un'azione che visualizza una finestra di messaggio.<br/>               |
+| [**ShowMessage**](taskschedulerschema-showmessage-actiongroup-element.md) | [**showMessageType**](taskschedulerschema-showmessagetype-complextype.md) | Specifica un'azione che mostra una finestra di messaggio.<br/>               |
 
 
 
@@ -63,21 +63,21 @@ L'elemento **Actions** viene definito dal tipo complesso [**TaskType**](tasksche
 
 | Nome    | Tipo | Descrizione                                                                                          |
 |---------|------|------------------------------------------------------------------------------------------------------|
-| Context |      | Identificatore principale dell'utente che rappresenta il contesto di sicurezza per le azioni dell'attività.<br/> |
+| Context |      | Identificatore dell'entità dell'utente che rappresenta il contesto di sicurezza per le azioni dell'attività.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Gli elementi figlio elencati in precedenza (massimo 32) sono definiti dal gruppo [**actionGroup**](taskschedulerschema-actiongroup-group.md) . Questi elementi possono essere aggiunti in qualsiasi ordine.
+Gli elementi figlio elencati in precedenza (massimo 32) sono definiti dal [**gruppo actionGroup.**](taskschedulerschema-actiongroup-group.md) Questi elementi possono essere aggiunti in qualsiasi ordine.
 
-Per lo sviluppo in C++, le azioni di un'attività sono definite nell'interfaccia [**IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) .
+Per lo sviluppo C++, le azioni di un'attività sono definite [**nell'interfaccia IActionCollection.**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection)
 
-Per lo sviluppo di script, le azioni di un'attività sono definite nell'oggetto [**ActionCollection**](actioncollection.md) .
+Per lo sviluppo di script, le azioni di un'attività vengono definite [**nell'oggetto ActionCollection.**](actioncollection.md)
 
 ## <a name="examples"></a>Esempio
 
-Per ulteriori informazioni e un esempio completo del codice XML per un'attività che contiene una singola azione di esecuzione, vedere l'esempio relativo al [trigger temporale (XML)](time-trigger-example--xml-.md).
+Per altre informazioni e un esempio completo del codice XML per un'attività che contiene una singola azione di esecuzione, vedere [Time Trigger Example (XML) .](time-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,8 +85,8 @@ Per ulteriori informazioni e un esempio completo del codice XML per un'attività
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -97,10 +97,10 @@ Per ulteriori informazioni e un esempio completo del codice XML per un'attività
 [**taskType**](taskschedulerschema-tasktype-complextype.md)
 </dt> <dt>
 
-[**actionGroup**](taskschedulerschema-actiongroup-group.md)
+[**Actiongroup**](taskschedulerschema-actiongroup-group.md)
 </dt> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

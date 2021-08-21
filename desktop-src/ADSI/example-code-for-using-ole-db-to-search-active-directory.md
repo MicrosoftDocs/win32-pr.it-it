@@ -1,35 +1,35 @@
 ---
-title: Codice di esempio per l'uso di OLE DB per la ricerca Active Directory
-description: Nell'esempio di codice seguente viene illustrato come eseguire la ricerca Active Directory utilizzando C++, COM e OLE DB.
+title: Codice di esempio per l'OLE DB per la ricerca in Active Directory
+description: L'esempio di codice seguente illustra come eseguire ricerche in Active Directory usando C++, COM e OLE DB.
 ms.assetid: 71812a4b-5e27-4389-b949-3d96c87b222d
 ms.tgt_platform: multiple
 keywords:
-- Codice di esempio per l'utilizzo di OLE DB per la ricerca Active Directory ADSI
-- ADSI ADSI, codice di esempio C/C++, utilizzo di OLE DB per accedere Active Directory
-- esegue una query su ADSI, eseguendo una ricerca con OLE DB codice di esempio per l'uso di OLE DB per accedere Active Directory
+- Codice di esempio per l'OLE DB per la ricerca in Active Directory ADSI
+- ADSI ADSI , codice di esempio C/C++, usando OLE DB per accedere ad Active Directory
+- esegue query su ADSI, cercando OLE DB codice di esempio per l'uso OLE DB per accedere ad Active Directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb98e84035cdfef3c95d47919354622df3808b86
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 5d55e115978025a95cc4c48f99f9ab05061c3cf384860eeb25b96f793d664605
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "106300684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118428444"
 ---
-# <a name="example-code-for-using-ole-db-to-search-active-directory"></a>Codice di esempio per l'uso di OLE DB per la ricerca Active Directory
+# <a name="example-code-for-using-ole-db-to-search-active-directory"></a>Codice di esempio per l'OLE DB per la ricerca in Active Directory
 
-Nell'esempio di codice seguente viene illustrato come eseguire la ricerca Active Directory utilizzando C++, COM e OLE DB. Questo è un esempio di funzione che accetta il nome distinto del contenitore in cui eseguire la ricerca e le credenziali da usare per la ricerca. Nell'esempio viene eseguita una ricerca di sottoalbero nel contenitore specificato per tutti gli oggetti che hanno un **objectClass** "User". Nell'esempio vengono stampati gli attributi **Name** e **ADsPath** di ogni utente nella finestra della console.
+L'esempio di codice seguente illustra come eseguire ricerche in Active Directory usando C++, COM e OLE DB. Questo è un esempio di funzione che accetta il nome distinto del contenitore in cui eseguire la ricerca e le credenziali da usare per la ricerca. Nell'esempio verrà eseguita una ricerca nel sottoalbero nel contenitore specificato per tutti gli oggetti con **objectClass** di "user". Nell'esempio il nome **e gli** **attributi ADsPath** di ogni utente verranno stampati nella finestra della console.
 
-Sono disponibili due sottolinguaggi di query che possono essere utilizzati con il provider ADSI OLE DB, LDAP e SQL. Il dialetto viene specificato nel metodo [ICommandText::](/previous-versions/windows/desktop/ms709757(v=vs.85)) SetValue con uno dei GUID seguenti:
+Sono disponibili due dialetti di query che possono essere usati con il provider OLE DB ADSI, LDAP e SQL. Il dialetto viene specificato nel [metodo ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757(v=vs.85)) con uno dei GUID seguenti:
 
--   **DBGUID \_ SQL** per il sottolinguaggio SQL.
+-   **DBGUID \_ SQL** per il SQL dialetto.
 -   **DBGUID \_ LDAPDialect** per il dialetto LDAP.
 
-Questo esempio usa il dialetto LDAP.
+In questo esempio viene utilizzato il dialetto LDAP.
 
-Il metodo [ICommandText::](/previous-versions/windows/desktop/ms709757(v=vs.85)) SetValue può anche accettare il GUID **\_ predefinito DBGUID** per il dialetto. In questo caso, ADSI tenterà innanzitutto di utilizzare il sottolinguaggio SQL; Se l'operazione ha esito negativo, ADSI tenterà di usare il dialetto LDAP. Per ulteriori informazioni, vedere [dialetto LDAP](ldap-dialect.md) e [sottolinguaggio SQL](sql-dialect.md).
+Il [metodo ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757(v=vs.85)) può anche accettare il GUID **\_ DBGUID DEFAULT** per il dialetto. In questo caso, ADSI tenterà di usare prima il SQL dialetto. In caso contrario, ADSI tenterà di usare il dialetto LDAP. Per altre informazioni, vedere [Dialetto LDAP](ldap-dialect.md) [e SQL dialetto](sql-dialect.md).
 
-Per ulteriori informazioni su OLE DB, vedere la guida per programmatori OLE DB.
+Per altre informazioni sui OLE DB, vedere la guida OLE DB per programmatori.
 
 
 
