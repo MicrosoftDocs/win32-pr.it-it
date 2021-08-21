@@ -1,10 +1,10 @@
 ---
 title: MDM_Policy_Config01_BitLocker02 classe
-description: La classe MDM \_ Policy \_ Config01 \_ Bitlocker02 rappresenta i criteri di BitLocker disponibili.
+description: La classe Mdm \_ Policy \_ Config01 \_ Bitlocker02 rappresenta i criteri di BitLocker disponibili.
 ms.assetid: 885df93f-41f5-4cf7-8bce-9b253b190e17
 keywords:
 - MDM_Policy_Config01_BitLocker02 classe
-- MDM_Policy_Config01_BitLocker02 classe , descritta
+- MDM_Policy_Config01_BitLocker02 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -24,11 +24,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118165402"
 ---
-# <a name="mdm_policy_config01_bitlocker02-class"></a>Classe \_ \_ BitLocker02 mdm Policy \_ Config01
+# <a name="mdm_policy_config01_bitlocker02-class"></a>Classe \_ \_ \_ BitLocker02 di Configurazione criteri MDM01
 
-\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La **classe MDM Policy \_ \_ Config01 \_ Bitlocker02** rappresenta i criteri di BitLocker disponibili.
+La **classe Mdm Policy \_ \_ Config01 \_ Bitlocker02** rappresenta i criteri di BitLocker disponibili.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -46,7 +46,7 @@ class MDM_Policy_Config01_BitLocker02
 
 ## <a name="members"></a>Members
 
-La **classe Mdm Policy \_ \_ Config01 \_ BitLocker02** include questi tipi di membri:
+La **classe Mdm Policy \_ \_ Config01 \_ BitLocker02** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
@@ -62,7 +62,7 @@ La **classe Mdm Policy \_ \_ Config01 \_ BitLocker02** ha queste proprietà.
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -70,13 +70,13 @@ Tipo di accesso: Lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identifica il nome del nodo padre. Per questa classe, la stringa è "BitLocker"
@@ -86,13 +86,13 @@ Identifica il nome del nodo padre. Per questa classe, la stringa è "BitLocker"
 **Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/Policy/Config"
@@ -107,7 +107,7 @@ Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "
 |-------------------------------------|------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                             |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
@@ -117,7 +117,7 @@ Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "
 
 <dl> <dt>
 
-[Uso di script di PowerShell con il provider Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

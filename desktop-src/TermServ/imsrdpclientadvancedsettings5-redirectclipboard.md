@@ -5,13 +5,13 @@ ms.assetid: c653f593-9912-4ade-a0a3-70d9afac2ab1
 ms.tgt_platform: multiple
 keywords:
 - Proprietà RedirectClipboard Servizi Desktop remoto
-- Proprietà RedirectClipboard Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Proprietà RedirectClipboard Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings5
 - Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà RedirectClipboard
-- Proprietà RedirectClipboard Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Proprietà RedirectClipboard Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings6
 - Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà RedirectClipboard
-- Proprietà RedirectClipboard Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Proprietà RedirectClipboard Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings7
 - Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà RedirectClipboard
-- Proprietà RedirectClipboard Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Proprietà RedirectClipboard Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings8
 - Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà RedirectClipboard
 topic_type:
 - apiref

@@ -1,7 +1,7 @@
 ---
-description: 'Metodo SetKeyProtector della classe Msvm_SecurityService: imposta la protezione della chiave per un sistema virtuale.'
+description: 'Metodo SetKeyProtector della Msvm_SecurityService: imposta la protezione con chiave per un sistema virtuale.'
 ms.assetid: 84c114cb-a3a0-44f2-b862-38b05b96bd46
-title: Metodo SetKeyProtector della classe Msvm_SecurityService
+title: Metodo SetKeyProtector della Msvm_SecurityService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3b5eca7ddcc506d158175782e3e13796e56de267
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6f489f2c9dbc5685561b3105001de5ae5dca5fef4d68f80b5d2b0d41d479cd8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118147166"
 ---
 # <a name="setkeyprotector-method-of-the-msvm_securityservice-class"></a>Metodo SetKeyProtector della classe Msvm \_ SecurityService
 
-Imposta la protezione della chiave per un sistema virtuale.
+Imposta la protezione con chiave per un sistema virtuale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,21 +44,21 @@ uint32 SetKeyProtector(
 *SecuritySettingData* \[ Pollici\]
 </dt> <dd>
 
-La stringa contiene un'istanza incorporata [**della classe Msvm \_ SecuritySettingData**](msvm-securitysettingdata.md) che rappresenta le impostazioni di sicurezza di un sistema virtuale.
+La stringa contiene un'istanza incorporata [**della classe \_ Msvm SecuritySettingData**](msvm-securitysettingdata.md) che rappresenta le impostazioni di sicurezza di un sistema virtuale.
 
 </dd> <dt>
 
 *KeyProtector* \[ Pollici\]
 </dt> <dd>
 
-Matrice di byte non elaborata che contiene la protezione della chiave da impostare.
+Matrice di byte non elaborata che contiene la protezione con chiave da impostare.
 
 </dd> <dt>
 
 *Processo* \[ Cambio\]
 </dt> <dd>
 
-Parametro facoltativo per il monitoraggio dello stato dell'operazione, che viene utilizzato se non è stato possibile eseguire il metodo in modo sincrono. Se l'operazione viene eseguita in modo asincrono, il valore restituito è 4096.
+Parametro facoltativo per il monitoraggio dello stato dell'operazione, che viene usato se non è stato possibile eseguire il metodo in modo sincrono. Se l'operazione viene eseguita in modo asincrono, il valore restituito è 4096.
 
 </dd> </dl>
 
@@ -68,13 +68,13 @@ In caso di esito positivo, restituisce un valore 0 o 4096. In caso contrario, re
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati - Processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
-**Operazione non** riuscita (32768)
+**Non riuscito** (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -92,7 +92,7 @@ In caso di esito positivo, restituisce un valore 0 o 4096. In caso contrario, re
 **Parametro non** valido (32773)
 </dt> <dt>
 
-**Sistema in uso** (32774)
+**Il sistema è in uso** (32774)
 </dt> <dt>
 
 **Stato non valido per questa operazione** (32775)

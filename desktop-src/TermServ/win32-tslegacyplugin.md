@@ -1,11 +1,11 @@
 ---
 title: Win32_TSLegacyPlugin classe
-description: Rappresenta un Desktop remoto server su cui i plug-in Servizio di gestione Connessione RemoteApp e desktop service predefiniti esereranno una query per i programmi RemoteApp.
+description: Rappresenta un server Desktop remoto su cui i plug-in Servizio di gestione Connessione RemoteApp e desktop Service eseeranno query per i programmi RemoteApp.
 ms.assetid: 99bec477-ae9d-4bc9-bf9d-11a4e439306b
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSLegacyPlugin classe Servizi Desktop remoto
-- Win32_TSLegacyPlugin classe Servizi Desktop remoto , descritto
+- Win32_TSLegacyPlugin classe Servizi Desktop remoto , descritta
 topic_type:
 - apiref
 api_name:
@@ -29,9 +29,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118348853"
 ---
-# <a name="win32_tslegacyplugin-class"></a>Classe \_ TSLegacyPlugin Win32
+# <a name="win32_tslegacyplugin-class"></a>Classe \_ Win32 TSLegacyPlugin
 
-Rappresenta un Desktop remoto server su cui i plug-in Servizio di gestione Connessione RemoteApp e desktop service predefiniti esereranno una query per i programmi RemoteApp.
+Rappresenta un server Desktop remoto su cui i plug-in Servizio di gestione Connessione RemoteApp e desktop Service eseeranno query per i programmi RemoteApp.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -54,20 +54,20 @@ class Win32_TSLegacyPlugin : CIM_LogicalElement
 
 ## <a name="members"></a>Members
 
-La **classe \_ Win32 TSLegacyPlugin** ha questi tipi di membri:
+La **classe \_ Win32 TSLegacyPlugin** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe Win32 \_ TSLegacyPlugin** ha queste proprietà.
+La **classe \_ Win32 TSLegacyPlugin** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -76,7 +76,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrizione (stringa di una riga) dell'oggetto .
+Breve descrizione (stringa di una riga) dell'oggetto.
 
 Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -85,7 +85,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -106,7 +106,7 @@ Tipo di dati: **datetime**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
+Qualificatori: [**mappingstring**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Data di installazione dell'oggetto. La mancanza di un valore non indica che l'oggetto non è installato.
@@ -118,7 +118,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -133,7 +133,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -142,7 +142,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un disco rigido abilitato per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati non di operazione includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono in linea, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
+Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati nonoperational includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono in linea, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
 
 Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -164,7 +164,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 
 
 
- ("Degraded")
+ ("Danneggiato")
 
 
 </dt> <dd></dd> <dt>
@@ -185,7 +185,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 
 
 
- ("Avvio")
+ ("Starting")
 
 
 </dt> <dd></dd> <dt>
@@ -212,10 +212,10 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Tipo di Servizi Desktop remoto server.
+Tipo del server Servizi Desktop remoto.
 
 <dt>
 
@@ -232,7 +232,7 @@ Desktop remoto server.
 
 <span id="Dummy_Terminal_Server_for_VM_Farm_1_"></span><span id="dummy_terminal_server_for_vm_farm_1_"></span><span id="DUMMY_TERMINAL_SERVER_FOR_VM_FARM_1_"></span>
 
-<span id="Dummy_Terminal_Server_for_VM_Farm_1_"></span><span id="dummy_terminal_server_for_vm_farm_1_"></span><span id="DUMMY_TERMINAL_SERVER_FOR_VM_FARM_1_"></span>**Server terminal fittizio per farm di macchine virtuali(1)** (1)
+<span id="Dummy_Terminal_Server_for_VM_Farm_1_"></span><span id="dummy_terminal_server_for_vm_farm_1_"></span><span id="DUMMY_TERMINAL_SERVER_FOR_VM_FARM_1_"></span>**Server terminal fittizio per vm farm(1)** (1)
 
 
 </dt> <dd>
@@ -251,7 +251,7 @@ Server Desktop remoto per una farm di macchine virtuali.
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                        |
-| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                 |
+| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                 |
 | MOF<br/>                      | <dl> <dt>TscPub.mof</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>TscPubWmi.dll</dt> </dl> |
 

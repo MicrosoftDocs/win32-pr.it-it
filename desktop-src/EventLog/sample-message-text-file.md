@@ -1,23 +1,23 @@
 ---
-description: Nel file di messaggio di esempio seguente viene illustrato come creare e utilizzare un file di testo del messaggio che definisce i messaggi in più lingue.
+description: Il file di messaggio di esempio seguente illustra come creare e usare un file di testo del messaggio che definisce i messaggi in più lingue.
 ms.assetid: 403eaccc-07a3-4368-a39a-18c706c65537
 title: File di testo del messaggio di esempio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2e4247b1e39ef94c006262f282d8d830af11851
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e60f59e6d20f53560da6f1230886fe6c8cbb54b9052b97c2293d0f49720743ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151487"
 ---
 # <a name="sample-message-text-file"></a>File di testo del messaggio di esempio
 
-Nel file di messaggio di esempio seguente viene illustrato come creare e utilizzare un file di testo del messaggio che definisce i messaggi in più lingue.
+Il file di messaggio di esempio seguente illustra come creare e usare un file di testo del messaggio che definisce i messaggi in più lingue.
 
 ## <a name="sample-message-file"></a>File di messaggio di esempio
 
-Questo file di messaggio di esempio, Sample.mc, contiene un blocco di commento, seguito da una sezione di intestazione, seguito da messaggi in due lingue. È necessario utilizzare un editor compatibile con Unicode per supportare contemporaneamente i caratteri utilizzati in linguaggi scritti differenti. Per ulteriori informazioni e una descrizione dettagliata della sintassi dei file con estensione MC, vedere [file di testo del messaggio](message-text-files.md).
+Questo file di messaggio di esempio, Sample.mc, contiene un blocco di commenti, seguito da una sezione di intestazione, seguita dai messaggi in due lingue. È necessario usare un editor compatibile con Unicode per supportare contemporaneamente i caratteri usati in linguaggi scritti diversi. Per altre informazioni e una descrizione dettagliata della sintassi dei file con estensione mc, vedere [File di testo dei messaggi](message-text-files.md).
 
 ``` syntax
 ; // ***** Sample.mc *****

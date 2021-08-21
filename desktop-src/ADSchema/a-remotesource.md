@@ -1,6 +1,6 @@
 ---
 title: Remote-Source attributo
-description: Puntatore all'indietro a oggetti estranei.
+description: Puntatore all'indietro di oggetti di tipo foreign.
 ms.assetid: 99d6d80f-b11a-48f2-93c9-866a99105488
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "118423822"
 ---
 # <a name="remote-source-attribute"></a>Remote-Source attributo
 
-Puntatore all'indietro a oggetti estranei.
+Puntatore all'indietro di oggetti di tipo foreign.
 
 
 
@@ -32,7 +32,7 @@ Puntatore all'indietro a oggetti estranei.
 | CN                | Remote-Source                               |
 | Ldap-Display-Name | remoteSource                                |
 | Dimensione              | \-                                          |
-| Privilegio di aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.107                      |
 | System-Id-Guid    | bf967a14-0de6-11d0-a285-00aa003049e2        |
@@ -66,7 +66,7 @@ Puntatore all'indietro a oggetti estranei.
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi usate in        | [**Destinatario della posta remota**](c-remotemailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta remota**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -87,7 +87,7 @@ Puntatore all'indietro a oggetti estranei.
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi usate in        | [**Destinatario della posta remota**](c-remotemailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta remota**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -108,7 +108,7 @@ Puntatore all'indietro a oggetti estranei.
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi usate in        | [**Destinatario della posta remota**](c-remotemailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta remota**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -129,7 +129,7 @@ Puntatore all'indietro a oggetti estranei.
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi usate in        | [**Destinatario della posta remota**](c-remotemailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta remota**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -150,7 +150,7 @@ Puntatore all'indietro a oggetti estranei.
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi usate in        | [**Destinatario della posta remota**](c-remotemailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta remota**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -171,7 +171,7 @@ Puntatore all'indietro a oggetti estranei.
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi usate in        | [**Destinatario della posta remota**](c-remotemailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta remota**](c-remotemailrecipient.md)<br/> |
 
 
 

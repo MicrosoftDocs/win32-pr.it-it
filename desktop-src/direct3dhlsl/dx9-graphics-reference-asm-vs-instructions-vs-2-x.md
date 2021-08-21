@@ -25,7 +25,7 @@ Esistono diversi tipi di istruzioni per vertex shader, come illustrato nella tab
 -   Slot di istruzioni: numero di slot di istruzioni usati da ogni istruzione.
 -   Configurazione: istruzioni non aritmetiche. Ogni shader deve avere un'istruzione di versione e deve essere la prima istruzione.
 -   Aritmetica: queste istruzioni forniscono le operazioni matematiche in uno shader.
--   Flow controllo: queste istruzioni aggiungono funzionalità di controllo del flusso, ad esempio [ciclo e ...](loop---vs.md) [endloop - vs](endloop---vs.md), [if bool - vs](if-bool---vs.md)... [else](else---vs.md)... [endif](endif---vs.md), e chiamate subroutine.
+-   Flow controllo: queste istruzioni aggiungono funzionalità di controllo di flusso, ad esempio [ciclo e ...](loop---vs.md) [endloop - vs](endloop---vs.md), [if bool - vs](if-bool---vs.md)... [else](else---vs.md)... [endif](endif---vs.md), e chiamate subroutine.
 -   Nuovo: queste istruzioni sono nuove per questa versione.
 
 ## <a name="instruction-set"></a>Set di istruzioni

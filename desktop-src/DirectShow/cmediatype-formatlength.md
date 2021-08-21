@@ -1,7 +1,7 @@
 ---
 description: Il metodo FormatLength recupera la lunghezza del blocco di formato.
 ms.assetid: f990bba9-2227-4746-a9e4-598aeba8b0b7
-title: Metodo CMediaType. FormatLength (mtype. h)
+title: Metodo CMediaType.FormatLength (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d9da7e84e695952b4c936c9f97270decfd4d9f94
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 39593b1dbbabf0a21e764a94e9d6862192273b8813f816651c338e3cbff9c5ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156415"
 ---
-# <a name="cmediatypeformatlength-method"></a>CMediaType. FormatLength, metodo
+# <a name="cmediatypeformatlength-method"></a>Metodo CMediaType.FormatLength
 
 Il `FormatLength` metodo recupera la lunghezza del blocco di formato.
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il membro **cbFormat** .
+Restituisce il **membro cbFormat.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce il membro **cbFormat** .
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Mtype. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Mtype.h (includere Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

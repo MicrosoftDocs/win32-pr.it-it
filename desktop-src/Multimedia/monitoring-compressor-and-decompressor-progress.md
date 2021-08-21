@@ -1,23 +1,23 @@
 ---
-title: Monitoraggio dello stato di compressione e decompressione
-description: Monitoraggio dello stato di compressione e decompressione
+title: Monitoraggio dello stato di avanzamento di Un'area di lavoro e decompressore
+description: Monitoraggio dello stato di avanzamento di Un'area di lavoro e decompressore
 ms.assetid: 7c87c688-75b6-4d3e-9dd5-5f509ff2e473
 keywords:
-- Gestione compressione video (VCM), monitoraggio
-- VCM (Video Compression Manager), monitoraggio
-- ICSetStatusProc (funzione)
+- gestione compressione video(VCM), monitoraggio
+- VCM (Gestione compressione video),monitoraggio
+- Funzione ICSetStatusProc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: beb86a40bb653380dc93e758ada1b2eef6ec9ca7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 724d3e6a8bee645717ef624eddd1276d3e55e856f1aab3c6edc5f9585b3f5feb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137182"
 ---
-# <a name="monitoring-compressor-and-decompressor-progress"></a>Monitoraggio dello stato di compressione e decompressione
+# <a name="monitoring-compressor-and-decompressor-progress"></a>Monitoraggio dello stato di avanzamento di Un'area di lavoro e decompressore
 
-Nell'esempio seguente viene illustrato come viene utilizzata la funzione [**ICSetStatusProc**](/windows/desktop/api/Vfw/nf-vfw-icsetstatusproc) per informare il compressore o il decompressore dell'indirizzo della funzione di callback:
+L'esempio seguente illustra come viene usata la funzione [**ICSetStatusProc**](/windows/desktop/api/Vfw/nf-vfw-icsetstatusproc) per informare l'utente o il decompressore dell'indirizzo della funzione di callback:
 
 
 ```C++
@@ -28,7 +28,7 @@ ICSetStatusProc(compvars.hic, 0, (LPARAM) (UINT) hwndApp,
 
 
 
-Nell'esempio seguente viene illustrata la funzione di callback installata dal frammento precedente:
+L'esempio seguente illustra la funzione di callback installata dal frammento precedente:
 
 
 ```C++
@@ -78,9 +78,9 @@ LONG CALLBACK export PreviewStatusProc(LPARAM lParam,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

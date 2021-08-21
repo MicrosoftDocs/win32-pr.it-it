@@ -4,12 +4,12 @@ ms.assetid: 0502d59a-0a9e-4192-af9f-1553cd13a69c
 title: KSPROPERTY_EXTXPORT_TIMECODE_SEARCH
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6852dc44e6ef10eebb59721f16a276ac5d4306a3
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: b5f49b8e71d664cf266428d33c99b87859765623ca8205843bbfee108da5f7d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118153189"
 ---
 # <a name="ksproperty_extxport_timecode_search"></a>KSPROPERTY \_ EXTXPORT \_ TIMECODE \_ SEARCH
 
@@ -17,7 +17,7 @@ Questa proprietà invia un comando al dispositivo per cercare un time code. Il d
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------|----------------------------------------|
 | GUID set di proprietà | PROPSETID \_ EXT \_ TRANSPORT              |
 | ID proprietà       | KSPROPERTY \_ EXTXPORT \_ TIMECODE \_ SEARCH |
@@ -29,7 +29,7 @@ Questa proprietà invia un comando al dispositivo per cercare un time code. Il d
 
 ## <a name="remarks"></a>Commenti
 
-Compilare il **membro Timecode** della struttura **KSPROPERTY \_ EXTXPORT \_ S** con il frame, il secondo, il minuto e l'ora desiderati. La **struttura KSPROPERTY \_ EXTXPORT \_ S** è descritta in Windows DDK.
+Compilare il **membro Timecode** della struttura **KSPROPERTY \_ EXTXPORT \_ S** con il frame, il secondo, il minuto e l'ora desiderati. La **struttura KSPROPERTY \_ EXTXPORT \_ S** è descritta nella Windows DDK.
 
 ## <a name="see-also"></a>Vedi anche
 

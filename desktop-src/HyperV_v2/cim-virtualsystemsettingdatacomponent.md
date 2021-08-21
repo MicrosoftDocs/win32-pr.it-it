@@ -1,7 +1,7 @@
 ---
-description: Rappresenta una parte di una relazione tra un' \_ istanza CIM VirtualSystemSettingData e un set di \_ istanze ResourceAllocationSettingData CIM.
+description: Rappresenta una parte di una relazione tra un'istanza CIM VirtualSystemSettingData e un set di \_ istanze di CIM \_ ResourceAllocationSettingData.
 ms.assetid: 4f167517-079e-4b5f-885a-741ac1d1dc71
-title: Classe CIM_VirtualSystemSettingDataComponent
+title: CIM_VirtualSystemSettingDataComponent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: afbd7ab192c65e99f4479e5380e57dc78c8a0a9c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54ceb24806b21a06a9a0e8e82cf5fbb6ca96776d645b45679edb3adfcbd46c3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104131999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118150287"
 ---
-# <a name="cim_virtualsystemsettingdatacomponent-class"></a>CIM \_ VirtualSystemSettingDataComponent (classe)
+# <a name="cim_virtualsystemsettingdatacomponent-class"></a>Classe CIM \_ VirtualSystemSettingDataComponent
 
-Rappresenta una parte di una relazione tra un'istanza [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) e un set di [**istanze \_ ResourceAllocationSettingData CIM**](cim-resourceallocationsettingdata.md) .
+Rappresenta una parte di una relazione tra [**un'istanza CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) e un set di [**istanze di CIM \_ ResourceAllocationSettingData.**](cim-resourceallocationsettingdata.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,13 +39,13 @@ class CIM_VirtualSystemSettingDataComponent : CIM_Component
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ VirtualSystemSettingDataComponent** presenta questi tipi di membri:
+La **classe CIM \_ VirtualSystemSettingDataComponent** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ VirtualSystemSettingDataComponent** dispone di queste proprietà.
+La **classe CIM \_ VirtualSystemSettingDataComponent** ha queste proprietà.
 
 <dl> <dt>
 
@@ -58,10 +58,10 @@ Tipo di dati: **CIM \_ VirtualSystemSettingData**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
+Qualificatori: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
-Riferimento all'oggetto [**\_ VirtualSystemSettingData CIM**](cim-virtualsystemsettingdata.md) di primo livello della configurazione del sistema virtuale.
+Riferimento all'oggetto [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) di primo livello della configurazione del sistema virtuale.
 
 </dd> <dt>
 
@@ -74,10 +74,10 @@ Tipo di dati: **CIM \_ ResourceAllocationSettingData**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-Un riferimento all' [**oggetto \_ ResourceAllocationSettingData CIM**](cim-resourceallocationsettingdata.md) che rappresenta una parte della configurazione del sistema virtuale.
+Riferimento [**all'oggetto CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) che rappresenta una parte della configurazione del sistema virtuale.
 
 </dd> </dl>
 
@@ -89,8 +89,8 @@ Un riferimento all' [**oggetto \_ ResourceAllocationSettingData CIM**](cim-resou
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Un riferimento all' [**oggetto \_ ResourceAllocationSettingData CIM**](cim-resou
 
 <dl> <dt>
 
-[**\_Componente CIM**](cim-component.md)
+[**Componente \_ CIM**](cim-component.md)
 </dt> </dl>
 
  

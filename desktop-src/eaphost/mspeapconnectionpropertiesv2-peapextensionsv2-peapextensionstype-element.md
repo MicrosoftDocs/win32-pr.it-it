@@ -1,6 +1,6 @@
 ---
 title: Elemento PeapExtensionsV2 (PeapExtensionsType) (V1)
-description: Informazioni sull'elemento PeapExtensionsV2 (PeapExtensionsType). Questo elemento consente miglioramenti futuri allo schema. | Elemento PeapExtensionsV2 (PeapExtensionsType) (V1)
+description: Informazioni sull'elemento PeapExtensionsV2 (PeapExtensionsType). Questo elemento consente miglioramenti futuri dello schema. | Elemento PeapExtensionsV2 (PeapExtensionsType) (V1)
 ms.assetid: afac3a39-9cdc-42de-8f9e-c37405ec662a
 keywords:
 - Elemento PeapExtensionsV2 EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a3cc78337fe3feb899dee47abe45904d26f863ae
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 094778bde778bf6d8252473b75583760507ff448c945939152e3e1501228ae72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103761795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086017"
 ---
-# <a name="peapextensionsv2-peapextensionstype-element-connection-properties-v1"></a>Elemento PeapExtensionsV2 (PeapExtensionsType) (proprietà della connessione v1)
+# <a name="peapextensionsv2-peapextensionstype-element-connection-properties-v1"></a>Elemento PeapExtensionsV2 (PeapExtensionsType) (proprietà di connessione v1)
 
-L'elemento **PeapExtensionsV2 (PeapExtensionsType)** consente miglioramenti futuri allo schema.
+**L'elemento PeapExtensionsV2 (PeapExtensionsType)** consente miglioramenti futuri dello schema.
 
 ``` syntax
 <xs:element name="PeapExtensionsV2"
@@ -31,20 +31,20 @@ L'elemento **PeapExtensionsV2 (PeapExtensionsType)** consente miglioramenti futu
  />
 ```
 
-L'elemento **PeapExtensionsV2** è definito dall'elemento [**PeapExtensionsType**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md) .
+**L'elemento PeapExtensionsV2** è definito dall'elemento [**PeapExtensionsType.**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md)
 
 ## <a name="remarks"></a>Commenti
 
-L'elemento **PeapExtensionsV2** è facoltativo.
+**L'elemento PeapExtensionsV2** è facoltativo.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 

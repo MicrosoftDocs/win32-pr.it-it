@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo GetSize recupera le dimensioni del buffer. Questo metodo implementa il metodo IMediaSample:: GetSize.'
+description: Il metodo GetSize recupera le dimensioni del buffer. Questo metodo implementa il metodo IMediaSample::GetSize.
 ms.assetid: 14562ef4-f554-4d5a-83d3-1a29abae08a4
-title: Metodo CMediaSample. GetSize (Amfilter. h)
+title: Metodo CMediaSample.GetSize (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ff4146b66ca62905fe54eeb88d1e38ccf56ceea9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f3559f972f35a01738c60f32414ab0b42a079032ac5bc6b3ab0e5b7212900d61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156752"
 ---
-# <a name="cmediasamplegetsize-method"></a>Metodo CMediaSample. GetSize
+# <a name="cmediasamplegetsize-method"></a>Metodo CMediaSample.GetSize
 
-Il `GetSize` metodo recupera le dimensioni del buffer. Questo metodo implementa il metodo [**IMediaSample:: GetSize**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getsize) .
+Il `GetSize` metodo recupera le dimensioni del buffer. Questo metodo implementa il [**metodo IMediaSample::GetSize.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getsize)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce la dimensione, in byte, del buffer.
+Restituisce le dimensioni del buffer, in byte.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce la dimensione, in byte, del buffer.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

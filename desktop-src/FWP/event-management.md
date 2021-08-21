@@ -1,23 +1,23 @@
 ---
-title: Gestione degli eventi
-description: Gestione degli eventi
+title: Gestione eventi
+description: Gestione eventi
 ms.assetid: DA6B76B8-E436-44D0-890D-12EE17960EBB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8469be4ad7914517b132fbdbafd91ea97f3be482
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: e56674e2490148743155e4c44951e97922e07f336d0a1f4b4a91048646373cd6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104336919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151174"
 ---
-# <a name="event-management"></a>Gestione degli eventi
+# <a name="event-management"></a>Gestione eventi
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**\_Evento FWPM \_ net \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_net_event_callback0)
--   [*\_Evento FWPM \_ net \_ CALLBACK1*](/windows/desktop/api/fwpmu/nc-fwpmu-fwpm_net_event_callback1)
--   [*\_Evento FWPM \_ net \_ CALLBACK2*](/windows/desktop/api/fwpmu/nc-fwpmu-fwpm_net_event_callback2)
+-   [**CALLBACK DI EVENTI \_ NET \_ \_ FWPM0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_net_event_callback0)
+-   [*FWPM \_ NET \_ EVENT \_ CALLBACK1*](/windows/desktop/api/fwpmu/nc-fwpmu-fwpm_net_event_callback1)
+-   [*FWPM \_ NET \_ EVENT \_ CALLBACK2*](/windows/desktop/api/fwpmu/nc-fwpmu-fwpm_net_event_callback2)
 -   [**FwpmNetEventCreateEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmneteventcreateenumhandle0)
 -   [**FwpmNetEventDestroyEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmneteventdestroyenumhandle0)
 -   [**FwpmNetEventEnum0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmneteventenum0)
@@ -32,6 +32,6 @@ ms.locfileid: "104336919"
 -   [**FwpmNetEventSubscriptionsGet0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmneteventsubscriptionsget0)
 -   [**FwpmNetEventUnsubscribe0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmneteventunsubscribe0)
 
- 
+ 
 
- 
+ 

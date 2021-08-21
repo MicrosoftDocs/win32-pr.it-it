@@ -1,6 +1,6 @@
 ---
 title: drcp (sm5 - asm)
-description: Calcola un reciproco a precisione doppia per componente.
+description: Calcola un reciproco a precisione doppia a livello di componente.
 ms.assetid: 499A14D6-36DB-4860-94D1-887D931E60D4
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118515343"
 ---
 # <a name="drcp-sm5---asm"></a>drcp (sm5 - asm)
 
-Calcola un reciproco a precisione doppia per componente.
+Calcola un reciproco a precisione doppia a livello di componente.
 
 
 
@@ -28,7 +28,7 @@ Calcola un reciproco a precisione doppia per componente.
 
 | Elemento                                                            | Descrizione                                                                                                                     |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] L'indirizzo dei risultati<br/> *dest*  =  **1.0**  /  *src0*. Il valore del risultato deve essere accurato a 1,0 ULP<br/> |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Indirizzo dei risultati<br/> *dest*  =  **1.0**  /  *src0*. Il valore del risultato deve essere accurato a 1,0 ULP<br/> |
 | <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] Numero di cui prendere il reciproco.<br/>                                                                         |
 
 
@@ -39,15 +39,15 @@ Calcola un reciproco a precisione doppia per componente.
 
 L'istruzione DRCP viene generata dal compilatore HLSL solo quando viene chiamata in modo esplicito tramite la funzione intrinseca rcp(), quando come argomento viene usato un valore double. L'accuratezza di questa istruzione deve essere 1,0 ULP.
 
-Gli shader che usano questa istruzione verranno contrassegnati con un flag shader che ne causerà l'associazione a meno che non vengano soddisfatte tutte le condizioni seguenti.
+Gli shader che usano questa istruzione verranno contrassegnati con un flag di shader che ne causerà l'associazione a meno che non vengano soddisfatte tutte le condizioni seguenti.
 
 -   Il sistema supporta DirectX 11.1.
 -   Il sistema include un driver WDDM 1.2.
 -   Il driver segnala il supporto per questa istruzione **tramite D3D11 \_ FEATURE DATA \_ \_ D3D11 \_ OPTIONS. ExtendedDoublesShaderInstructions** impostato su **TRUE.**
 
-Nella tabella seguente vengono illustrati i risultati ottenuti durante l'esecuzione dell'istruzione con diverse classi di numeri, presupponendo che non si verifichi alcun overflow o underflow.
+La tabella seguente mostra i risultati ottenuti durante l'esecuzione dell'istruzione con diverse classi di numeri, presupponendo che non si verifichino overflow o underflow.
 
-In questa tabella F indica un numero finito-reale.
+In questa tabella F significa numero finito-reale.
 
 
 
@@ -59,7 +59,7 @@ In questa tabella F indica un numero finito-reale.
 
  
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -73,7 +73,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
 ## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa istruzione è supportata nei modelli shader seguenti:
+Questa istruzione è supportata nei modelli di shader seguenti:
 
 
 
@@ -82,9 +82,9 @@ Questa istruzione è supportata nei modelli shader seguenti:
 | [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
 | [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
 | [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
 | [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -94,7 +94,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly del modello shader 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (HLSL DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

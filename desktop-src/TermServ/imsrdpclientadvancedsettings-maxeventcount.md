@@ -1,26 +1,26 @@
 ---
-title: Proprietà maxEventCount IMsRdpClientAdvancedSettings
-description: Questa proprietà non è supportata. | Proprietà maxEventCount IMsRdpClientAdvancedSettings
+title: Proprietà maxEventCount di IMsRdpClientAdvancedSettings
+description: Questa proprietà non è supportata. | Proprietà IMsRdpClientAdvancedSettings maxEventCount
 ms.assetid: d7b5951d-8cc3-48b4-af1b-1f547afbc6ae
 ms.tgt_platform: multiple
 keywords:
 - Proprietà maxEventCount Servizi Desktop remoto
-- Proprietà maxEventCount Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto proprietà , maxEventCount
-- Proprietà maxEventCount Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto proprietà , maxEventCount
-- Proprietà maxEventCount Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto proprietà , maxEventCount
-- Proprietà maxEventCount Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto proprietà , maxEventCount
-- Proprietà maxEventCount Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto proprietà , maxEventCount
-- Proprietà maxEventCount Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto proprietà , maxEventCount
-- Proprietà maxEventCount Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto proprietà , maxEventCount
-- Proprietà maxEventCount Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto proprietà , maxEventCount
+- proprietà maxEventCount Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà maxEventCount
+- proprietà maxEventCount Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà maxEventCount
+- proprietà maxEventCount Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà maxEventCount
+- proprietà maxEventCount Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà maxEventCount
+- proprietà maxEventCount Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà maxEventCount
+- proprietà maxEventCount Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà maxEventCount
+- proprietà maxEventCount Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà maxEventCount
+- Proprietà maxEventCount Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà maxEventCount
 topic_type:
 - apiref
 api_name:

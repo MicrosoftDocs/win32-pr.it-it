@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentFilteredMoveNotSupportedException'
+description: Altre informazioni sul costruttore EsentFilteredMoveNotSupportedException
 title: Costruttore EsentFilteredMoveNotSupportedException
 TOCTitle: 'EsentFilteredMoveNotSupportedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentFilteredMoveNotSupportedException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7067d2a7bc331f58eeba599fc536b62178e1ec53
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd271a5bb9e4ceba01f2a0d60f5cf4f17f1c78f69a4c2fdfc98be097e776f913
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118496063"
 ---
 # <a name="esentfilteredmovenotsupportedexception-constructor"></a>Costruttore EsentFilteredMoveNotSupportedException
 
 Inizializza una nuova istanza della classe EsentFilteredMoveNotSupportedException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentFilteredMoveNotSupportedException()
 
 [Membri di EsentFilteredMoveNotSupportedException](./esentfilteredmovenotsupportedexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

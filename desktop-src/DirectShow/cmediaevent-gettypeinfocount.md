@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c9402ad973a08afed4d338cfdc7b5df7fb14b9f0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6476e7949c9cad8e9ba13a562bf93fe7e3ffff39fe34cbe1101193bf9bc18289
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156999"
 ---
 # <a name="cmediaeventgettypeinfocount-method"></a>Metodo CMediaEvent.GetTypeInfoCount
 
@@ -45,13 +45,13 @@ HRESULT GetTypeInfoCount(
 *pctinfo* 
 </dt> <dd>
 
-Puntatore al numero di interfacce di informazioni sul tipo fornite dall'oggetto. Se l'oggetto fornisce informazioni sul tipo, questo numero è 1. In caso contrario, il numero è 0.
+Puntatore al numero di interfacce di informazioni sul tipo fornite dall'oggetto . Se l'oggetto fornisce informazioni sul tipo, questo numero è 1; in caso contrario, il numero è 0.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce E \_ POINTER se *pctinfo non è* valido; in caso contrario, restituisce S \_ OK.
+Restituisce E \_ POINTER se *pctinfo non* è valido. In caso contrario, restituisce S \_ OK.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,7 +59,7 @@ Restituisce E \_ POINTER se *pctinfo non è* valido; in caso contrario, restitui
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

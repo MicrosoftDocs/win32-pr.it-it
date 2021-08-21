@@ -1,11 +1,11 @@
 ---
 title: Metodo DownloadItem.resume
-description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato. Il metodo resume riprende il download.
+description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato. Il metodo resume riprende il download.
 ms.assetid: f58e4838-7b00-4485-90c6-ba5960a17699
 keywords:
 - Metodo resume Windows Media Player
 - Metodo resume Windows Media Player , classe DownloadItem
-- Classe DownloadItem Windows Media Player , metodo resume
+- Classe DownloadItem Windows Media Player metodo , resume
 topic_type:
 - apiref
 api_name:
@@ -26,7 +26,7 @@ ms.locfileid: "118340686"
 # <a name="downloaditemresume-method"></a>Metodo DownloadItem.resume
 
 > [!Note]  
-> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato.
 
  
 
@@ -51,7 +51,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Il **metodo resume** non ha effetto sui download in tempo reale.
+Il **metodo resume** non ha alcun effetto sui download in tempo reale.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,7 +59,7 @@ Il **metodo resume** non ha effetto sui download in tempo reale.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player serie 9 o successiva.<br/>                                 |
+| Versione<br/> | Windows Media Player serie 9 o successive.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

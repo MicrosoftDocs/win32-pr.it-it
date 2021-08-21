@@ -1,7 +1,7 @@
 ---
 description: Rappresenta le impostazioni ACL della porta estesa.
 ms.assetid: 357dd891-6692-4ffc-b8a8-4ece40d4af28
-title: Classe Msvm_EthernetSwitchPortExtendedAclSettingData
+title: Msvm_EthernetSwitchPortExtendedAclSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -25,14 +25,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 25ae81e4f00e87e41170ac5713ced0d9b523c844
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 27f94de089df73c246de887268d34c187bef2507391ceeb33dd7c8cc8068bc43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118148320"
 ---
-# <a name="msvm_ethernetswitchportextendedaclsettingdata-class"></a>\_Classe MSVM EthernetSwitchPortExtendedAclSettingData
+# <a name="msvm_ethernetswitchportextendedaclsettingdata-class"></a>Classe Msvm \_ EthernetSwitchPortExtendedAclSettingData
 
 Rappresenta le impostazioni ACL della porta estesa.
 
@@ -61,29 +61,29 @@ class Msvm_EthernetSwitchPortExtendedAclSettingData : Msvm_EthernetSwitchPortFea
 
 ## <a name="members"></a>Members
 
-La **classe \_ EthernetSwitchPortExtendedAclSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ EthernetSwitchPortExtendedAclSettingData** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ EthernetSwitchPortExtendedAclSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ EthernetSwitchPortExtendedAclSettingData** dispone di queste proprietà.
 
 <dl> <dt>
 
 **Azione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Azione dell'ACL esteso.
+Azione dell'elenco di controllo di accesso esteso.
 
 <dt>
 
@@ -103,7 +103,7 @@ Azione dell'ACL esteso.
 
 <span id="Deny"></span><span id="deny"></span><span id="DENY"></span>
 
-**Nega** (2)
+**Deny** (2)
 
 
 </dt> <dd></dd> </dl>
@@ -113,16 +113,16 @@ Azione dell'ACL esteso.
 **Direzione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica se l'ACL esteso si applica alla direzione in ingresso o in uscita.
+Indica se l'elenco di controllo di accesso esteso si applica alla direzione in ingresso o in uscita.
 
 <dt>
 
@@ -135,7 +135,7 @@ Indica se l'ACL esteso si applica alla direzione in ingresso o in uscita.
 
 <span id="Incoming"></span><span id="incoming"></span><span id="INCOMING"></span>
 
-**In ingresso** (1)
+**In** ingresso (1)
 
 
 </dt> <dd></dd> <dt>
@@ -152,10 +152,10 @@ Indica se l'ACL esteso si applica alla direzione in ingresso o in uscita.
 **IdleSessionTimeout**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **Uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (11), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -168,77 +168,77 @@ Valore di timeout della sessione inattiva (in secondi) per l'ACL con stato.
 **IsolationID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **Uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **InterfaceVersion** (1), **InterfaceRevision** (0), **WmiDataId** (12)
 </dt> </dl>
 
-ID di isolamento per cui deve essere applicato l'ACL esteso.
+ID di isolamento per il quale deve essere applicato l'elenco di controllo di accesso esteso.
 
 </dd> <dt>
 
 **LocalIPAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
 Indirizzo IP locale.
 
 </dd> <dt>
 
-**LocalPort**
+**Localport**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (21), **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (21), **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Intervallo di porte locali.
+Intervallo di porte locale.
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Nome descrittivo dell'ACL esteso.
+Nome descrittivo dell'elenco di controllo di accesso esteso.
 
 </dd> <dt>
 
 **Protocollo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (15), **WmiDataId** (8), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (15), **WmiDataId** (8), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
 Stringa del protocollo.
@@ -248,64 +248,64 @@ Stringa del protocollo.
 **RemoteIPAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
 Indirizzo IP remoto.
 
 </dd> <dt>
 
-**RemotePort**
+**Remoteport**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (21), **WmiDataId** (7), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (21), **WmiDataId** (7), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
 Intervallo di porte remote.
 
 </dd> <dt>
 
-**Con stato**
+**Stateful**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **Boolean**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (10), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica se l'ACL esteso è con stato o senza stato.
+Indica se l'elenco di controllo di accesso esteso è con stato o senza stato.
 
 </dd> <dt>
 
 **Weight**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **Uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (9), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Spessore applicato all'ACL esteso.
+Peso applicato all'elenco di controllo di accesso esteso.
 
 </dd> </dl>
 
@@ -316,9 +316,9 @@ Spessore applicato all'ACL esteso.
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -327,7 +327,7 @@ Spessore applicato all'ACL esteso.
 
 <dl> <dt>
 
-[**\_EthernetSwitchPortFeatureSettingData MSVM**](msvm-ethernetswitchportfeaturesettingdata.md)
+[**Msvm \_ EthernetSwitchPortFeatureSettingData**](msvm-ethernetswitchportfeaturesettingdata.md)
 </dt> </dl>
 
  

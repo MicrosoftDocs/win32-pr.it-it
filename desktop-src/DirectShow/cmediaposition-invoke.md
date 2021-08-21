@@ -1,7 +1,7 @@
 ---
-description: Il metodo Invoke fornisce l'accesso alle proprietà e ai metodi esposti dall'oggetto.
+description: Il metodo Invoke fornisce l'accesso alle proprietà e ai metodi esposti dall'oggetto .
 ms.assetid: 3c03751d-239b-4cc5-bfab-8d1aed1074b8
-title: Metodo CMediaPosition. Invoke (Ctlutil. h)
+title: Metodo CMediaPosition.Invoke (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3955848bf2a87e0983ddd7dc3bef48f157ae6648
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6dac439b94a62e9dbd11ca9e12ab80023071fc00cf22abcf6b9b4b93b07c356c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156857"
 ---
-# <a name="cmediapositioninvoke-method"></a>Metodo CMediaPosition. Invoke
+# <a name="cmediapositioninvoke-method"></a>Metodo CMediaPosition.Invoke
 
-Il `Invoke` metodo fornisce l'accesso alle proprietà e ai metodi esposti dall'oggetto.
+Il `Invoke` metodo fornisce l'accesso alle proprietà e ai metodi esposti dall'oggetto .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,14 +52,14 @@ HRESULT Invoke(
 *dispidMember* 
 </dt> <dd>
 
-Identificatore del membro. Usare [**CMediaPosition:: GetIDsOfNames**](cmediaposition-getidsofnames.md) per ottenere l'identificatore dispatch.
+Identificatore del membro. Usare [**CMediaPosition::GetIDsOfNames per**](cmediaposition-getidsofnames.md) ottenere l'identificatore dispatch.
 
 </dd> <dt>
 
-*riid* 
+*Riid* 
 </dt> <dd>
 
-Riservato per utilizzi futuri. Deve essere un IID \_ null.
+Riservato per utilizzi futuri. Deve essere IID \_ NULL.
 
 </dd> <dt>
 
@@ -70,24 +70,24 @@ Contesto delle impostazioni locali in cui interpretare gli argomenti.
 
 </dd> <dt>
 
-*wFlags* 
+*Wflags* 
 </dt> <dd>
 
 Flag che descrivono il contesto della chiamata.
 
 </dd> <dt>
 
-*pDispParams* 
+*pdispparams* 
 </dt> <dd>
 
-Puntatore a una struttura **DIPPARAMS** contenente gli argomenti.
+Puntatore a **una struttura DIPPARAMS** che contiene gli argomenti.
 
 </dd> <dt>
 
 *pvarResult* 
 </dt> <dd>
 
-Puntatore a un **Variant** che riceve il risultato oppure **null** se il chiamante non prevede alcun risultato.
+Puntatore a **un tipo VARIANT** che riceve il risultato oppure **NULL** se il chiamante non prevede alcun risultato.
 
 </dd> <dt>
 
@@ -107,14 +107,14 @@ Puntatore a una variabile che riceve l'indice del primo argomento che causa un e
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possibili.
+Restituisce un **valore HRESULT.** Di seguito sono indicati alcuni valori possibili.
 
 
 
 | Codice restituito                                                                                              | Descrizione                                      |
 |----------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                     | Esito positivo.<br/>                              |
-| <dl> <dt>**DISP \_ E \_ UNKNOWNINTERFACE**</dt> </dl> | Il parametro *riid* non è IID \_ null<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                     | Operazione completata.<br/>                              |
+| <dl> <dt>**DISP \_ E \_ UNKNOWNINTERFACE**</dt> </dl> | Il *parametro riid* non è IID \_ NULL<br/> |
 
 
 
@@ -126,8 +126,8 @@ Restituisce un valore **HRESULT** . Di seguito sono indicati alcuni valori possi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,25 +1,25 @@
 ---
-title: Proprietà IMsRdpClientAdvancedSettings minInputSendInterval
+title: Proprietà minInputSendInterval di IMsRdpClientAdvancedSettings
 description: Specifica l'intervallo minimo, in millisecondi, tra l'invio di eventi del mouse.
 ms.assetid: d186c05f-0b45-47bd-8a8e-e1f9baf2bd75
 ms.tgt_platform: multiple
 keywords:
 - Proprietà minInputSendInterval Servizi Desktop remoto
-- Proprietà minInputSendInterval Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà minInputSendInterval
-- proprietà minInputSendInterval Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings2
+- Proprietà minInputSendInterval Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto proprietà , minInputSendInterval
+- Proprietà minInputSendInterval Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
 - Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà minInputSendInterval
-- proprietà minInputSendInterval Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings3
+- Proprietà minInputSendInterval Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
 - Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà minInputSendInterval
-- Proprietà minInputSendInterval Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings4
+- Proprietà minInputSendInterval Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
 - Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà minInputSendInterval
-- proprietà minInputSendInterval Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings5
+- Proprietà minInputSendInterval Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
 - Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà minInputSendInterval
-- proprietà minInputSendInterval Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings6
+- Proprietà minInputSendInterval Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
 - Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà minInputSendInterval
-- proprietà minInputSendInterval Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings7
+- Proprietà minInputSendInterval Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
 - Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà minInputSendInterval
-- proprietà minInputSendInterval Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings8
+- Proprietà minInputSendInterval Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
 - Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà minInputSendInterval
 topic_type:
 - apiref
@@ -84,7 +84,7 @@ HRESULT get_minInputSendInterval(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Nuovo intervallo, espresso in millisecondi. Il valore predefinito è 100.
+Nuovo intervallo, in millisecondi. Il valore predefinito è 100.
 
 ## <a name="error-codes"></a>Codici di errore
 

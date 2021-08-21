@@ -32,7 +32,7 @@ Quota assegnata in termini di numero di oggetti di proprietà del database.
 | CN                | ms-DS-Quota-Amount                   |
 | Ldap-Display-Name | msDS-QuotaAmount                     |
 | Dimensione              | \-                                   |
-| Aggiorna privilegio  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1845              |
 | System-Id-Guid    | fbb9a00d-3a8c-4233-9cf9-7189264903a1 |
@@ -121,7 +121,7 @@ Quota assegnata in termini di numero di oggetti di proprietà del database.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| A valore singolo       | Vero                                                          |
+| Is-Single-Valued       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
@@ -142,7 +142,7 @@ Quota assegnata in termini di numero di oggetti di proprietà del database.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| A valore singolo       | Vero                                                          |
+| Is-Single-Valued       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
@@ -163,7 +163,7 @@ Quota assegnata in termini di numero di oggetti di proprietà del database.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| A valore singolo       | Vero                                                          |
+| Is-Single-Valued       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                  |

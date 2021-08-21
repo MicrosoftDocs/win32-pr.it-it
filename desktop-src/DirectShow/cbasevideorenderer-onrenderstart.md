@@ -1,7 +1,7 @@
 ---
 description: Il metodo OnRenderStart imposta le informazioni per il rendering.
 ms.assetid: 698fe778-e2cb-4b87-a668-084b6c12c71f
-title: Metodo CBaseVideoRenderer. OnRenderStart (Renbase. h)
+title: Metodo CBaseVideoRenderer.OnRenderStart (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7327d25aafa6f6673b7ed70b658f675a9dab8f4d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 78c82b00b8b719b03d096ac0f83e43c8471ea98d56eab7bf67d28b0adae852f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118157036"
 ---
-# <a name="cbasevideorendereronrenderstart-method"></a>CBaseVideoRenderer. OnRenderStart, metodo
+# <a name="cbasevideorendereronrenderstart-method"></a>Metodo CBaseVideoRenderer.OnRenderStart
 
 Il `OnRenderStart` metodo imposta le informazioni per il rendering.
 
@@ -45,7 +45,7 @@ void OnRenderStart(
 *pMediaSample* 
 </dt> <dd>
 
-Puntatore all'esempio di supporto.
+Puntatore all'esempio multimediale.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro recupera l'ora dell'orologio corrente dal sistema e la archivia in una variabile membro da utilizzare al termine del disegno. La funzione esegue anche la registrazione delle prestazioni. Questa funzione membro deve essere chiamata immediatamente prima dell'inizio del disegno.
+Questa funzione membro recupera l'ora corrente del clock dal sistema e la archivia in una variabile membro da usare al termine del disegno. La funzione esegue anche la registrazione delle prestazioni. Questa funzione membro deve essere chiamata subito prima dell'avvio del disegno.
 
-Questa funzione membro esegue l'override di [**CBaseRenderer:: OnRenderStart**](cbaserenderer-onrenderstart.md).
+Questa funzione membro esegue l'override di [**CBaseRenderer::OnRenderStart**](cbaserenderer-onrenderstart.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Questa funzione membro esegue l'override di [**CBaseRenderer:: OnRenderStart**](
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

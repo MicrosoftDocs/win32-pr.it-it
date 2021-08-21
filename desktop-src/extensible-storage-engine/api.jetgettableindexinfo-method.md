@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetGetTableIndexInfo'
-title: API. JetGetTableIndexInfo, metodo
+description: 'Altre informazioni su: Metodo Api.JetGetTableIndexInfo'
+title: Metodo Api.JetGetTableIndexInfo
 TOCTitle: 'JetGetTableIndexInfo method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.Api.JetGetTableIndexInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgettableindexinfo(v=EXCHG.10)
@@ -14,16 +14,16 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 3d4e477e15bf8c49b5923d98930345cfe57ebfef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5bcf674d8cfdea491f4435e14640b974a6cb92c2f3fc6fe156da2de7e8a7fa7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130215"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118085146"
 ---
-# <a name="apijetgettableindexinfo-method"></a>API. JetGetTableIndexInfo, metodo
+# <a name="apijetgettableindexinfo-method"></a>Metodo Api.JetGetTableIndexInfo
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
 ## <a name="overload-list"></a>Elenco di overload
@@ -39,32 +39,32 @@ Includi membri ereditati
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
-<td><a href="dn292191(v=exchg.10).md">JetGetTableIndexInfo (JET_SESID, JET_TABLEID, String, JET_INDEXLIST)</a></td>
+<td><a href="dn292191(v=exchg.10).md">JetGetTableIndexInfo(JET_SESID, JET_TABLEID, String, JET_INDEXLIST)</a></td>
 <td><strong>Obsoleto.</strong> Recupera informazioni sugli indici in una tabella.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
-<td><a href="dn292190(v=exchg.10).md">JetGetTableIndexInfo (JET_SESID, JET_TABLEID, String, JET_INDEXID, JET_IdxInfo)</a></td>
+<td><a href="dn292190(v=exchg.10).md">JetGetTableIndexInfo(JET_SESID, JET_TABLEID, String, JET_INDEXID, JET_IdxInfo)</a></td>
 <td>Recupera informazioni sugli indici in una tabella.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
-<td><a href="dn292196(v=exchg.10).md">JetGetTableIndexInfo (JET_SESID, JET_TABLEID, String, JET_INDEXLIST, JET_IdxInfo)</a></td>
+<td><a href="dn292196(v=exchg.10).md">JetGetTableIndexInfo(JET_SESID, JET_TABLEID, String, JET_INDEXLIST, JET_IdxInfo)</a></td>
 <td>Recupera informazioni sugli indici in una tabella.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
-<td><a href="dn292193(v=exchg.10).md">JetGetTableIndexInfo (JET_SESID, JET_TABLEID, String, Int32, JET_IdxInfo)</a></td>
+<td><a href="dn292193(v=exchg.10).md">JetGetTableIndexInfo(JET_SESID, JET_TABLEID, String, Int32, JET_IdxInfo)</a></td>
 <td>Recupera informazioni sugli indici in una tabella.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
-<td><a href="dn292192(v=exchg.10).md">JetGetTableIndexInfo (JET_SESID, JET_TABLEID, String, String, JET_IdxInfo)</a></td>
+<td><a href="dn292192(v=exchg.10).md">JetGetTableIndexInfo(JET_SESID, JET_TABLEID, String, String, JET_IdxInfo)</a></td>
 <td>Recupera informazioni sugli indici in una tabella.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
-<td><a href="dn292195(v=exchg.10).md">JetGetTableIndexInfo (JET_SESID, JET_TABLEID, String, UInt16, JET_IdxInfo)</a></td>
+<td><a href="dn292195(v=exchg.10).md">JetGetTableIndexInfo(JET_SESID, JET_TABLEID, String, UInt16, JET_IdxInfo)</a></td>
 <td>Recupera informazioni sugli indici in una tabella.</td>
 </tr>
 </tbody>
@@ -79,6 +79,6 @@ Inizio
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

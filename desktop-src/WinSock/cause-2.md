@@ -1,19 +1,19 @@
 ---
-description: Oltre a tutti gli elementi informativi descritti in precedenza, che possono essere specificati nella struttura QoS specifica di ATM durante la chiamata di WSAConnect, esiste una ragione che può essere utilizzata solo durante la versione della chiamata.
+description: Oltre a tutti gli elementi di informazioni descritti in precedenza, che possono essere specificati nella struttura QoS specifica del bancomat durante la chiamata a WSAConnect, è presente un'istanza di IE causa che può essere usata solo durante il rilascio della chiamata.
 ms.assetid: 258b22d7-b58a-499a-be00-de548578db83
 title: Causa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f93d2a2864db347183ca42f5458681e4de3ecc6d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d0539918e745c9b158a5a56923c45f37f87d5069ce63ef74083d7270204c5a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118322382"
 ---
 # <a name="cause"></a>Causa
 
-Oltre a tutti gli elementi informativi descritti in precedenza, che possono essere specificati nella struttura [**QoS**](/windows/win32/api/winsock2/ns-winsock2-qos) specifica di ATM durante la chiamata di [**WSAConnect**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnect), esiste una ragione che può essere utilizzata solo durante la versione della chiamata. Al momento della disconnessione, le applicazioni Windows Sockets 2 possono facoltativamente specificare questo Internet Explorer come dati di disconnessione in [**WSASendDisconnect**](/windows/desktop/api/Winsock2/nf-winsock2-wsasenddisconnect). La parte remota può recuperare questo Internet Explorer tramite [**WSARecvDisconnect**](/windows/desktop/api/Winsock2/nf-winsock2-wsarecvdisconnect) dopo aver ricevuto la \_ notifica di chiusura FD.
+Oltre a tutti gli elementi di informazioni descritti in precedenza, che possono essere specificati nella struttura [**QoS**](/windows/win32/api/winsock2/ns-winsock2-qos) specifica del bancomat durante la chiamata a [**WSAConnect,**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnect)esiste una causa di IE che può essere usata solo durante il rilascio della chiamata. Al momento della disconnessione, Windows socket 2 possono facoltativamente specificare questo IE come dati di disconnessione in [**WSASendDisconnect.**](/windows/desktop/api/Winsock2/nf-winsock2-wsasenddisconnect) L'entità remota può recuperare questo IE [**tramite WSARecvDisconnect dopo**](/windows/desktop/api/Winsock2/nf-winsock2-wsarecvdisconnect) aver ricevuto la notifica FD \_ CLOSE.
 
 ``` syntax
 #include <windows.h>

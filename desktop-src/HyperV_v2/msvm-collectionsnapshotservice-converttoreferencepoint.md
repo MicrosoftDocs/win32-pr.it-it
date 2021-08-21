@@ -1,7 +1,7 @@
 ---
-description: Converte uno snapshot di raccolta esistente in una raccolta di punti di riferimento. La raccolta snapshot viene eliminata come effetto collaterale. Solo gli snapshot di ripristino possono essere convertiti in punti di riferimento.
+description: Convertire uno snapshot di raccolta esistente in una raccolta di punti di riferimento. La raccolta di snapshot viene eliminata come effetto collaterale. Solo gli snapshot di ripristino possono essere convertiti in punti di riferimento.
 ms.assetid: 6b304782-9e5e-43b1-af7d-08617d65850c
-title: Metodo ConvertToReferencePoint della classe Msvm_CollectionSnapshotService
+title: Metodo ConvertToReferencePoint della Msvm_CollectionSnapshotService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 810761b67303ad33ced6fdaef857c96f65365091
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 97faedea1cdb852e26f6b94211586e5539075c0a225bf98f1a10cf45305d7296
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118148867"
 ---
-# <a name="converttoreferencepoint-method-of-the-msvm_collectionsnapshotservice-class"></a>Metodo ConvertToReferencePoint della classe MSVM \_ CollectionSnapshotService
+# <a name="converttoreferencepoint-method-of-the-msvm_collectionsnapshotservice-class"></a>Metodo ConvertToReferencePoint della classe Msvm \_ CollectionSnapshotService
 
-Converte uno snapshot di raccolta esistente in una raccolta di punti di riferimento. La raccolta snapshot viene eliminata come effetto collaterale. Solo gli snapshot di ripristino possono essere convertiti in punti di riferimento.
+Convertire uno snapshot di raccolta esistente in una raccolta di punti di riferimento. La raccolta di snapshot viene eliminata come effetto collaterale. Solo gli snapshot di ripristino possono essere convertiti in punti di riferimento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,40 +41,40 @@ uint32 ConvertToReferencePoint(
 
 <dl> <dt>
 
-*AffectedSnapshotCollection* \[ in\]
+*AffectedSnapshotCollection* \[ Pollici\]
 </dt> <dd>
 
-Riferimento a un [**MSVM \_ snapshotcollection**](msvm-snapshotcollection.md) che contiene la raccolta di snapshot del sistema virtuale interessata.
+Riferimento a un [**oggetto Msvm \_ SnapshotCollection contenente**](msvm-snapshotcollection.md) la raccolta di snapshot del sistema virtuale interessata.
 
 </dd> <dt>
 
-*ResultingReferencePointCollection* \[ in uscita\]
+*ResultingReferencePointCollection* \[ in, out\]
 </dt> <dd>
 
-Riferimento a un [**\_ ReferencePointCollection MSVM**](msvm-referencepointcollection.md) che contiene la raccolta di punti di riferimento del sistema virtuale risultante
+Riferimento a un [**oggetto \_ ReferencePointCollection msvm contenente**](msvm-referencepointcollection.md) la raccolta di punti di riferimento del sistema virtuale risultante
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Se l'operazione è a esecuzione prolungata, è possibile che venga restituito un processo.
+Se l'operazione è a esecuzione lunga, facoltativamente può essere restituito un processo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, restituisce 0 (completa) o 4096 (processo avviato); in caso contrario, restituisce un errore.
+In caso di esito positivo, restituisce 0 (Completato) o 4096 (Processo avviato); In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
@@ -89,16 +89,16 @@ In caso di esito positivo, restituisce 0 (completa) o 4096 (processo avviato); i
 **Tipo non valido** (6)
 </dt> <dt>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -107,10 +107,10 @@ In caso di esito positivo, restituisce 0 (completa) o 4096 (processo avviato); i
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -119,7 +119,7 @@ In caso di esito positivo, restituisce 0 (completa) o 4096 (processo avviato); i
 
 <dl> <dt>
 
-[**\_CollectionSnapshotService MSVM**](msvm-collectionsnapshotservice.md)
+[**Msvm \_ CollectionSnapshotService**](msvm-collectionsnapshotservice.md)
 </dt> </dl>
 
  

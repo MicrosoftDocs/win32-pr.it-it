@@ -1,12 +1,12 @@
 ---
-title: ITsSbSession Username - proprietà
+title: Proprietà ITsSbSession Username
 description: Recupera il nome utente per questa sessione.
 ms.assetid: 0034e8cc-b67b-4e30-a059-47a269bab0fd
 ms.tgt_platform: multiple
 keywords:
-- Nome utente - proprietà Servizi Desktop remoto
-- Proprietà Username Servizi Desktop remoto, interfaccia ITsSbSession
-- Interfaccia ITsSbSession Servizi Desktop remoto proprietà , Username
+- Proprietà username Servizi Desktop remoto
+- Proprietà Username Servizi Desktop remoto , interfaccia ITsSbSession
+- Interfaccia ITsSbSession Servizi Desktop remoto , proprietà Username
 topic_type:
 - apiref
 api_name:

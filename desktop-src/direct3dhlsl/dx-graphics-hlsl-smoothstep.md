@@ -70,7 +70,7 @@ Usare la **funzione intrinseca smoothstep** HLSL per creare una transizione unif
 
  
 
-## <a name="minimum-shader-model"></a>Modello di shader minimo
+## <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -78,7 +78,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                       | Supportato           |
 |------------------------------------------------------------------------------------|---------------------|
-| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader superiori | sì                 |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader superiori | sì                 |
 | [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sì (solo vs \_ \_ 1 1) |
 
 
