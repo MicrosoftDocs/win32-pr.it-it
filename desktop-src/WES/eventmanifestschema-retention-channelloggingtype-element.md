@@ -3,7 +3,7 @@ title: Elemento retention (ChannelLoggingType)
 description: Determina se il file di log è un file di log sequenziale o circolare.
 ms.assetid: a67425a1-275f-4a04-b327-91707f9382c6
 keywords:
-- Elemento di conservazione EventLog
+- Elemento retention EventLog
 topic_type:
 - apiref
 api_name:
@@ -30,7 +30,7 @@ Determina se il file di log è un file di log sequenziale o circolare.
  />
 ```
 
-**L'elemento** di conservazione è definito dal [**tipo complesso ChannelLoggingType.**](eventmanifestschema-channelloggingtype-complextype.md)
+**L'elemento** retention è definito dal [**tipo complesso ChannelLoggingType.**](eventmanifestschema-channelloggingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ Determina se il file di log è un file di log sequenziale o circolare.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ Determina se il file di log è un file di log sequenziale o circolare.
 **Elemento padre**
 </dt> <dt>
 
-[**registrazione (ChannelType)**](eventmanifestschema-logging-channeltype-element.md)
+[**logging (ChannelType)**](eventmanifestschema-logging-channeltype-element.md)
 </dt> </dl>
 
  

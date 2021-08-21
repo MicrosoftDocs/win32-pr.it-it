@@ -1,7 +1,7 @@
 ---
 description: Il metodo AddHead aggiunge un elenco all'inizio dell'elenco.
 ms.assetid: 9a344bed-d871-4082-9bbb-330f2ff42cca
-title: Metodo CGenericList. AddHead (Wxlist. h)-parametro pList
+title: Metodo CGenericList.AddHead (Wxlist.h) - parametro pList
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0039566f111033062bca080cb24924c7ea4324ac
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: c26667ce12af902f3d5cf355a6556dc95e5dd1f5e0cad77f944e663eeef8ce67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "106323803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118656147"
 ---
-# <a name="cgenericlistaddhead-method-wxlisth---plist-parameter"></a>Metodo CGenericList. AddHead (Wxlist. h)-parametro pList
+# <a name="cgenericlistaddhead-method-wxlisth---plist-parameter"></a>Metodo CGenericList.AddHead (Wxlist.h) - parametro pList
 
 Il `AddHead` metodo aggiunge un elenco all'inizio dell'elenco.
 
@@ -42,7 +42,7 @@ BOOL AddHead(
 
 <dl> <dt>
 
-*pList* 
+*Plist* 
 </dt> <dd>
 
 Puntatore all'elenco di elementi da aggiungere.
@@ -51,14 +51,14 @@ Puntatore all'elenco di elementi da aggiungere.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
 | Requisito | Valore |
 |-|-|
-| Intestazione | Wxlist. h (include Streams. h) |
-| Libreria| Strmbase. lib (compilazioni finali); Strmbasd. lib (build di debug) |
+| Intestazione | Wxlist.h (includere Flussi.h) |
+| Libreria| Strmbase.lib (build di vendita al dettaglio); Strmbasd.lib (build di debug) |
 
 ## <a name="see-also"></a>Vedi anche
 

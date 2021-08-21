@@ -1,9 +1,9 @@
 ---
-title: PLAYERAPPLICATION. playerDocked (attributo)
-description: L'attributo playerDocked recupera un valore che indica se Windows Media Player si trova in uno stato ancorato.
+title: Attributo PLAYERAPPLICATION.playerDocked
+description: L'attributo playerDocked recupera un valore che indica se Windows Media Player è in uno stato ancorato.
 ms.assetid: 8b95da72-037b-4179-a564-fc9bc63368ac
 keywords:
-- Media Player Windows PLAYERAPPLICATION. playerDocked
+- PLAYERAPPLICATION.playerDocked Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21abe3dd5cb14906db39e8eb50a1d18302a92ff6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a8e05d186ab8123dcd4a03eff6c282cec4f7884225d8271540eebb8dc2e73eba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118571788"
 ---
 # <a name="playerapplicationplayerdocked"></a>PLAYERAPPLICATION.playerDocked
 
-L'attributo **playerDocked** recupera un valore che indica se Windows Media Player si trova in uno stato ancorato.
+**L'attributo playerDocked** recupera un valore che indica se Windows Media Player è in uno stato ancorato.
 
 ``` syntax
         elementID.playerDocked
@@ -29,14 +29,14 @@ L'attributo **playerDocked** recupera un valore che indica se Windows Media Play
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **valore booleano** di sola lettura.
+Questo attributo è un valore booleano di **sola lettura.**
 
 
 
 | Valore | Descrizione                       |
 |-------|-----------------------------------|
 | True  | Windows Media Player è ancorato.   |
-| Falso | Windows Media Player non è ancorato. |
+| Falso | Windows Media Player disinserito. |
 
 
 
@@ -44,7 +44,7 @@ Questo attributo è un **valore booleano** di sola lettura.
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene utilizzato solo quando la comunicazione remota del controllo Media Player di Windows.
+Questo attributo viene usato solo quando si esegue la comunicazione remota del Windows Media Player remoto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,7 +52,7 @@ Questo attributo viene utilizzato solo quando la comunicazione remota del contro
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 

@@ -3,29 +3,29 @@ title: Esempio di file SAMI
 description: Esempio di file SAMI
 ms.assetid: 52b566f1-0d87-4bf2-87b3-3821e69a5699
 keywords:
-- Windows Media Player, Media Interchange accessibile sincronizzato (SAMI)
-- Modello a oggetti di Windows Media Player, Media Interchange accessibile sincronizzato (SAMI)
-- modello a oggetti, interscambio multimediale accessibile sincronizzato (SAMI)
-- Windows Media Player Mobile, Media Interchange accessibile sincronizzato (SAMI)
-- Controllo ActiveX Windows Media Player, Media Interchange accessibile sincronizzato (SAMI)
-- Windows Media Player Mobile ActiveX Control, Synchronized Accessible Media Interchange (SAMI)
-- Controllo ActiveX, interscambio multimediale accessibile sincronizzato (SAMI)
-- SAMI (Synchronized Accessible Media Interchange), file
-- SAMI (interscambio multimediale accessibile sincronizzato), file
+- Windows Media Player,Synchronized Accessible Media Interchange (SAMI)
+- Windows Media Player a oggetti, Synchronized Accessible Media Interchange (SAMI)
+- modello a oggetti,Interscambio multimediale accessibile sincronizzato (SAMI)
+- Windows Media Player Mobile,Synchronized Accessible Media Interchange (SAMI)
+- Windows Media Player ActiveX,Synchronized Accessible Media Interchange (SAMI)
+- Windows Media Player Controllo ActiveX mobile,Interscambio multimediale accessibile sincronizzato (SAMI)
+- ActiveX,Synchronized Accessible Media Interchange (SAMI)
+- Synchronized Accessible Media Interchange (SAMI), files
+- SAMI (Synchronized Accessible Media Interchange),files
+- Synchronized Accessible Media Interchange (SAMI), codice di esempio
 - SAMI (Synchronized Accessible Media Interchange), codice di esempio
-- SAMI (interscambio multimediale accessibile sincronizzato), codice di esempio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9634de52f71b4ca1db151bdf9104c3891c8ce5d
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 4d4e2ab5189f99118afae3fb2dae7374323cc8c16605bb458a04bd31810ed91a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "103885921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118569807"
 ---
 # <a name="sami-file-example"></a>Esempio di file SAMI
 
-Il codice di esempio seguente è un file SAMI completo con un set di testo della didascalia chiuso e diverse dichiarazioni di classe per lo stile del testo e la lingua della didascalia.
+Il codice di esempio seguente è un file SAMI completo con un set di testo di sottotitoli codificati e diverse dichiarazioni di classe per lo stile del testo e la lingua dei sottotitoli.
 
 
 ```C++
@@ -61,17 +61,17 @@ Il codice di esempio seguente è un file SAMI completo con un set di testo della
 
 
 
-Gli stili definiti in un file SAMI sono conformi alla sintassi standard del selettore CSS per gli elementi, le classi e gli ID. Nell'elemento BODY tutti gli elementi P hanno lo stile definito per il selettore di elementi P nell'elemento STYLE. L'attributo Class di un elemento specifica la lingua dell'elemento in base a quanto definito dai selettori di classe nell'elemento STYLE (i selettori che iniziano con i punti). I nomi di linguaggio specificati dai selettori di classe possono essere qualsiasi stringa. Gli elementi con l'attributo ID specificati hanno uno stile aggiuntivo applicato come indicato dai selettori di ID nell'elemento STYLE, ovvero i selettori con prefisso \# Characters.
+Gli stili definiti all'interno di un file SAMI sono conformi alla sintassi del selettore CSS standard per elementi, classi e ID. Nell'elemento BODY tutti gli elementi P hanno lo stile definito per il selettore di elementi P nell'elemento STYLE. L'attributo class di un elemento specifica il linguaggio di tale elemento come definito dai selettori di classe nell'elemento STYLE (i selettori che iniziano con punti). I nomi delle lingue specificati dai selettori di classe possono essere qualsiasi stringa. Agli elementi con l'attributo ID specificato viene applicato uno stile aggiuntivo, come indicato dai selettori ID nell'elemento STYLE (i selettori preceduti da \# caratteri).
 
-Se utilizzati insieme al modello a oggetti di Windows Media Player, i selettori di classe corrispondono a *ClosedCaption*. Proprietà **SAMILang** , che può essere usata per specificare la lingua delle didascalie. I selettori ID corrispondono a *ClosedCaption*. Proprietà **SAMIStyle** , che può essere usata per specificare lo stile in cui verranno visualizzate le didascalie.
+Se usati in combinazione con il Windows Media Player a oggetti, i selettori di classe corrispondono a *ClosedCaption*. **Proprietà SAMILang,** che può essere usata per specificare la lingua dei sottotitoli. I selettori ID corrispondono a *ClosedCaption.* **Proprietà SAMIStyle,** che può essere usata per specificare lo stile in cui verranno visualizzati i sottotitoli.
 
-Per ulteriori informazioni sulla creazione di file SAMI, vedere informazioni su SAMI 1,0 sul [sito Web Microsoft](/documentation/).
+Per altre informazioni sulla creazione di file SAMI, vedere Informazioni su SAMI 1.0 nel sito [Web Microsoft.](/documentation/)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Aggiunta di didascalie chiuse a file multimediali digitali**](adding-closed-captions-to-digital-media.md)
+[**Aggiunta di sottotitoli codificati ai supporti digitali**](adding-closed-captions-to-digital-media.md)
 </dt> </dl>
 
  

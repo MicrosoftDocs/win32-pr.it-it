@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 146afd709d0805043603cfb3b14b1c1fc1838075
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 9e39e82b117bcf4425ac09d7d18357fbfe5bfb73ed5c2848087f1cc7cab95fde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110424301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118575407"
 ---
 # <a name="iwmpmetadatatext-vb-and-c-interface"></a>Interfaccia IWMPMetadataText (VB e C#)
 

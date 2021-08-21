@@ -1,11 +1,11 @@
 ---
-title: Attributo Account-Expires
+title: Account-Expires attributo
 description: Data di scadenza dell'account.
 ms.assetid: 8c3c565e-77fe-4e8b-970a-8396fc6b45aa
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Account-Expires attribute
-- Schema AD dell'attributo accountExpires
+- Account-Expires schema AD dell'attributo
+- Attributo accountExpires Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: afb5041c544f96f79ad4c3172d776ebe909b1983
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 08f32383aa86977732917cd0c76aa4cb4450af7c8b1df6f6dcfd3f5c3342b260
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118689790"
 ---
-# <a name="account-expires-attribute"></a>Attributo Account-Expires
+# <a name="account-expires-attribute"></a>Account-Expires attributo
 
-Data di scadenza dell'account. Questo valore rappresenta il numero di intervalli di 100-nanosecondi a partire dal 1 ° gennaio 1601 (UTC). Il valore 0 o 0x7FFFFFFFFFFFFFFF (9223372036854775807) indica che l'account non scade mai.
+Data di scadenza dell'account. Questo valore rappresenta il numero di intervalli di 100 nanosecondi dal 1° gennaio 1601 (UTC). Il valore 0 o 0x7FFFFFFFFFFFFFFF (9223372036854775807) indica che l'account non scade mai.
 
 
 
 | Voce | Valore |
 |-------------------|------------------------------------------------------------------------|
 | CN                | Account-Expires                                                        |
-| LDAP-Display-Name | accountExpires                                                         |
+| Ldap-Display-Name | accountExpires                                                         |
 | Dimensione              | 8 byte                                                                |
-| Privilegio aggiornamento  | Questo attributo viene impostato dall'amministratore di dominio.                          |
+| Aggiorna privilegio  | L'amministratore di dominio imposta questo attributo.                          |
 | Frequenza di aggiornamento  | Ogni volta che la data di scadenza precedente scade e deve essere aggiornata. |
 | Attribute-Id      | 1.2.840.113556.1.4.159                                                 |
-| System-ID-GUID    | bf967915-0de6-11d0-a285-00aa003049e2                                   |
-| Sintassi            | [**Interval**](s-interval.md)                                         |
+| System-Id-Guid    | bf967915-0de6-11d0-a285-00aa003049e2                                   |
+| Sintassi            | [**Intervallo**](s-interval.md)                                         |
 
 
 
@@ -44,7 +44,7 @@ Data di scadenza dell'account. Questo valore rappresenta il numero di intervalli
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Data di scadenza dell'account. Questo valore rappresenta il numero di intervalli
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Data di scadenza dell'account. Questo valore rappresenta il numero di intervalli
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Data di scadenza dell'account. Questo valore rappresenta il numero di intervalli
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000010                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**ms-DS-associabile-oggetto**](c-msds-bindableobject.md)<br/> |
+| Classi usate in        | [**Ms-DS-Bindable-Object**](c-msds-bindableobject.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Data di scadenza dell'account. Questo valore rappresenta il numero di intervalli
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Data di scadenza dell'account. Questo valore rappresenta il numero di intervalli
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Data di scadenza dell'account. Questo valore rappresenta il numero di intervalli
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -185,21 +185,21 @@ Data di scadenza dell'account. Questo valore rappresenta il numero di intervalli
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La parte alta di questo Integer di grandi dimensioni corrisponde al membro **dwHighDateTime** della struttura [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) e la parte bassa corrisponde al membro **dwLowDateTime** della struttura **FILETIME** .
+La parte alta di questo intero di grandi dimensioni corrisponde al membro **dwHighDateTime** della struttura [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) e la parte inferiore corrisponde al membro **dwLowDateTime** della struttura **FILETIME.**
 
  
 

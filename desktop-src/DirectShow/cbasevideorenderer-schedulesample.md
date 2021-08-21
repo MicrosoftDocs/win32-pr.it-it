@@ -1,7 +1,7 @@
 ---
-description: Il metodo ScheduleSample esegue l'override della classe di base che esegue il lavoro principale per gestire un conteggio degli esempi disegnati e rimossi (che vengono usati dall'implementazione di IQualProp).
+description: Il metodo ScheduleSample esegue l'override della classe di base che esegue il lavoro principale per mantenere un conteggio dei campioni estratti ed eliminati (usati dall'implementazione di IQualProp).
 ms.assetid: 66e4e318-a7ff-4ba0-9ac5-24ba39ac86f1
-title: Metodo CBaseVideoRenderer. ScheduleSample (Renbase. h)
+title: Metodo CBaseVideoRenderer.ScheduleSample (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 62827f1cda9423f9a5128c35289803027bfa78a6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f68701fd4c4d682d6bcd89c3b82d6bf054188a9bbdcb47c9019b563fad4a877f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658235"
 ---
-# <a name="cbasevideorendererschedulesample-method"></a>CBaseVideoRenderer. ScheduleSample, metodo
+# <a name="cbasevideorendererschedulesample-method"></a>Metodo CBaseVideoRenderer.ScheduleSample
 
-Il `ScheduleSample` metodo esegue l'override della classe di base che esegue il lavoro principale per gestire un conteggio degli esempi disegnati e rimossi (che vengono usati dall'implementazione di [**IQualProp**](/previous-versions/windows/desktop/api/Amvideo/nn-amvideo-iqualprop) ).
+Il metodo esegue l'override della classe di base che esegue il lavoro principale per mantenere un conteggio dei campioni estratti ed eliminati `ScheduleSample` (usati [**dall'implementazione di IQualProp).**](/previous-versions/windows/desktop/api/Amvideo/nn-amvideo-iqualprop)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,13 +45,13 @@ BOOL ScheduleSample(
 *pMediaSample* 
 </dt> <dd>
 
-Puntatore all'esempio di supporto.
+Puntatore all'esempio multimediale.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'esempio è pianificato; in caso contrario, restituisce **false**.
+Restituisce **TRUE se** l'esempio è pianificato. In caso contrario, restituisce **FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce **true** se l'esempio è pianificato; in caso contrario, restituisce
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: funzione glDrawElements (GL. h)
-description: La funzione glDrawElements esegue il rendering di primitive da dati di matrice.
+title: Funzione glDrawElements (Gl.h)
+description: La funzione glDrawElements esegue il rendering delle primitive dai dati della matrice.
 ms.assetid: fb433294-106e-48d5-ad49-4434934fe072
 keywords:
-- funzione glDrawElements OpenGL
+- Funzione glDrawElements OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 976e779235dc330467d610406156534b5e72841d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b260c1112f7ec588b4d83655e5d0aa465b63682164f2ca745b63d3f421e5794c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118616573"
 ---
-# <a name="gldrawelements-function"></a>glDrawElements (funzione)
+# <a name="gldrawelements-function"></a>Funzione glDrawElements
 
-La funzione **glDrawElements** esegue il rendering di primitive da dati di matrice.
+La **funzione glDrawElements** esegue il rendering delle primitive dai dati della matrice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ void WINAPI glDrawElements(
 *mode* 
 </dt> <dd>
 
-Tipo di primitive di cui eseguire il rendering. Può assumere uno dei valori simbolici seguenti: GL \_ Points, GL \_ line \_ Strip, GL \_ line \_ loop, GL \_ Lines, GL \_ triangolo \_ Strip, GL \_ Triangle \_ fan, GL \_ triangoli, GL \_ Quad \_ Strip, GL \_ Quads e GL \_ Polygon.
+Tipo di primitive di cui eseguire il rendering. Può presupporre uno dei valori simbolici seguenti: GL \_ POINTS, GL \_ LINE \_ STRIP, GL \_ LINE \_ LOOP, GL LINE \_ LINES, GL TRIANGLE \_ \_ STRIP, GL TRIANGLE \_ \_ FAN, GL \_ TRIANGLES, GL \_ QUAD \_ STRIP, GL \_ QUADS e GL \_ POLYGON.
 
 </dd> <dt>
 
@@ -60,14 +60,14 @@ Numero di elementi di cui eseguire il rendering.
 *type* 
 </dt> <dd>
 
-Tipo dei valori negli indici. Deve essere uno dei byte senza segno GL, GL unsigned \_ \_ \_ \_ short o GL \_ unsigned \_ int.
+Tipo dei valori negli indici. Deve essere di TIPO GL \_ UNSIGNED \_ BYTE, GL \_ UNSIGNED \_ SHORT o GL \_ UNSIGNED \_ INT.
 
 </dd> <dt>
 
-*indici* 
+*Indici* 
 </dt> <dd>
 
-Puntatore alla posizione in cui vengono archiviati gli indici.
+Puntatore alla posizione in cui sono archiviati gli indici.
 
 </dd> </dl>
 
@@ -77,30 +77,30 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-I codici di errore seguenti possono essere recuperati dalla funzione [**glGetError**](glgeterror.md) .
+I codici di errore seguenti possono essere recuperati dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumerazione GL non valida \_**</dt> </dl>      | la *modalità* non è un valore accettato.<br/>                                                                                          |
-| <dl> <dt>**\_valore GL non valido \_**</dt> </dl>     | *count* è un valore negativo.<br/>                                                                                              |
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**ENUMERAZIONE GL \_ NON \_ VALIDA**</dt> </dl>      | *mode* non è un valore accettato.<br/>                                                                                          |
+| <dl> <dt>**VALORE GL \_ NON \_ VALIDO**</dt> </dl>     | *count* è un valore negativo.<br/>                                                                                              |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **glDrawElements** consente di specificare più primitive geometriche con pochissime chiamate di funzione. Anziché chiamare una funzione OpenGL per passare ogni singolo vertice, normale o colore, è possibile specificare in anticipo matrici separate di vertici, normali e colori e usarle per definire una sequenza di primitive (tutti dello stesso tipo) con una singola chiamata a **glDrawElements**.
+La **funzione glDrawElements** consente di specificare più primitive geometriche con pochissime chiamate di funzione. Anziché chiamare una funzione OpenGL per passare in anticipo ogni singolo vertice, normale o colore, è possibile specificare matrici separate di vertici, normali e colori e usarle per definire una sequenza di primitive (tutte dello stesso tipo) con una singola chiamata a **glDrawElements**.
 
-Quando si chiama la funzione **glDrawElements** , viene usato il *conteggio* degli elementi sequenziali degli *indici* per costruire una sequenza di primitive geometriche. Il parametro *mode* specifica il tipo di primitive da costruire e la modalità di utilizzo degli elementi di matrice per costruire tali primitive. Se \_ \_ la matrice di vertici GL non è abilitata, non viene generata alcuna primitiva geometrica.
+Quando si chiama la **funzione glDrawElements,** usa gli elementi sequenziali count dagli *indici* per costruire una sequenza di primitive geometriche.  Il *parametro mode* specifica il tipo di primitive costruite e il modo in cui gli elementi della matrice vengono usati per costruire queste primitive. Se GL \_ VERTEX \_ ARRAY non è abilitato, non vengono generate primitive geometriche.
 
-Gli attributi Vertex modificati da **glDrawElements** hanno un valore non specificato dopo la restituzione di **glDrawElements** . Se, ad esempio, \_ \_ la matrice di colori GL è abilitata, il valore del colore corrente non è definito dopo l'esecuzione di **glDrawElements** . Gli attributi che non vengono modificati rimangono invariati.
+Gli attributi dei vertici modificati da **glDrawElements** hanno un valore non specificato dopo il ritorno **di glDrawElements.** Ad esempio, se GL COLOR ARRAY è abilitato, il valore del colore corrente non è definito dopo l'esecuzione di \_ \_ **glDrawElements.** Gli attributi che non vengono modificati rimangono invariati.
 
-È possibile includere la funzione **glDrawElements** negli elenchi di visualizzazione. Quando **glDrawElements** è incluso in un elenco di visualizzazione, vengono immessi anche i dati di matrice necessari, determinati dai puntatori alla matrice e abilitati, nell'elenco di visualizzazione. Poiché i puntatori di matrice e le abilitazioni sono variabili di stato sul lato client, i relativi valori influiscono sugli elenchi di visualizzazione quando vengono creati gli elenchi, non quando vengono eseguiti gli elenchi.
+È possibile includere la **funzione glDrawElements** negli elenchi di visualizzazione. Quando **glDrawElements** è incluso in un elenco di visualizzazione, nell'elenco di visualizzazione vengono immessi anche i dati di matrice necessari (determinati dai puntatori di matrice e abilitati). Poiché i puntatori di matrice e abilita sono variabili di stato sul lato client, i relativi valori influiscono sugli elenchi di visualizzazione quando vengono creati gli elenchi, non quando gli elenchi vengono eseguiti.
 
 > [!Note]  
-> La funzione **glDrawElements** è disponibile solo in OpenGL versione 1,1 o successiva.
+> La **funzione glDrawElements** è disponibile solo in OpenGL versione 1.1 o successiva.
 
  
 
@@ -112,8 +112,8 @@ Gli attributi Vertex modificati da **glDrawElements** hanno un valore non specif
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -137,7 +137,7 @@ Gli attributi Vertex modificati da **glDrawElements** hanno un valore non specif
 [**glEdgeFlagPointer**](gledgeflagpointer.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glGetPointerv**](glgetpointerv.md)

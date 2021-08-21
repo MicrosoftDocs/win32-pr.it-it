@@ -1,7 +1,7 @@
 ---
-description: Il metodo PreparePerformanceData imposta i \_ valori m trLate e m \_ trFrame del frame corrente.
+description: Il metodo PreparePerformanceData imposta i valori m \_ trLate e m \_ trFrame del frame corrente.
 ms.assetid: c4c5701b-eccd-4259-a1d1-7c5000f6b2df
-title: Metodo CBaseVideoRenderer. PreparePerformanceData (Renbase. h)
+title: Metodo CBaseVideoRenderer.PreparePerformanceData (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 12dd61dee7416ce8ca7ac07cba62cbc769df5973
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e8cb276b37e64b6bb34751ed2d034666f7ceeddd90d8e52e47b2a1fca499ff9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658335"
 ---
-# <a name="cbasevideorendererprepareperformancedata-method"></a>CBaseVideoRenderer. PreparePerformanceData, metodo
+# <a name="cbasevideorendererprepareperformancedata-method"></a>Metodo CBaseVideoRenderer.PreparePerformanceData
 
-Il `PreparePerformanceData` metodo imposta i valori **m \_ trLate** e **m \_ trFrame** del frame corrente.
+Il `PreparePerformanceData` metodo imposta i valori m **\_ trLate** e **m \_ trFrame** del frame corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,14 +46,14 @@ void PreparePerformanceData(
 *trLate* 
 </dt> <dd>
 
-Valore che indica la latenza dell'esempio oltre il tempo di scadenza, in unità di tempo di riferimento.
+Valore che indica la ritardo dell'esempio oltre il tempo di scadenza, in unità di tempo di riferimento.
 
 </dd> <dt>
 
 *trFrame* 
 </dt> <dd>
 
-Tempo di interframe, in unità di tempo di riferimento.
+Tempo interframe, in unità di tempo di riferimento.
 
 </dd> </dl>
 
@@ -63,9 +63,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro imposta **m \_ trLate** sul valore di *trLate* e **m \_ trFrame** sul valore di *trFrame*.
+Questa funzione membro imposta **m \_ trLate** sul valore di *trLate* e **m \_ trFrame** sul valore *di trFrame*.
 
-Quando la funzione membro [**CBaseVideoRenderer:: RecordFrameLateness**](cbasevideorenderer-recordframelateness.md) viene chiamata da [**CBaseVideoRenderer:: OnRenderStart**](cbasevideorenderer-onrenderstart.md) o [**CBaseVideoRenderer:: OnDirectRender**](cbasevideorenderer-ondirectrender.md), passa i valori di **m \_ trLate** e **m \_ trFrame** per l'aggiornamento delle statistiche. `PreparePerformanceData` viene chiamato da [**CBaseVideoRenderer:: OnWaitEnd**](cbasevideorenderer-onwaitend.md) per impostare questi valori del membro dati.
+Quando la funzione membro [**CBaseVideoRenderer::RecordFrameLateness**](cbasevideorenderer-recordframelateness.md) viene chiamata da [**CBaseVideoRenderer::OnRenderStart**](cbasevideorenderer-onrenderstart.md) o [**CBaseVideoRenderer::OnDirectRender,**](cbasevideorenderer-ondirectrender.md)passa i valori di **m \_ trLate** e **m \_ trFrame** per aggiornare le statistiche. `PreparePerformanceData` viene chiamato da [**CBaseVideoRenderer::OnWaitEnd**](cbasevideorenderer-onwaitend.md) per impostare questi valori dei membri dati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,8 +73,8 @@ Quando la funzione membro [**CBaseVideoRenderer:: RecordFrameLateness**](cbasevi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

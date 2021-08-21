@@ -3,7 +3,7 @@ title: Tipo complesso triggerBaseType
 description: Definisce l'attributo, gli elementi figlio di base e le informazioni di sequenziazione per tutti i tipi complessi di trigger.
 ms.assetid: 1a2d004a-6f52-42b7-b0d0-ace8d27e9166
 keywords:
-- Utilità di pianificazione di tipo complesso triggerBaseType
+- Tipo complesso triggerBaseType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 56602e4a7e6599b7b756ff6bc109376dddc63ac0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 21eed68ff260d199a46adabc0e560533658c6cc1398d00f9507b80b40fb69955
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104341293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118611012"
 ---
 # <a name="triggerbasetype-complex-type"></a>Tipo complesso triggerBaseType
 
@@ -64,10 +64,10 @@ Definisce l'attributo, gli elementi figlio di base e le informazioni di sequenzi
 
 | Elemento                                                                                      | Tipo                                                                     | Descrizione                                                                                                            |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| [**Abilitato**](taskschedulerschema-enabled-triggerbasetype-element.md)                       | boolean                                                                  | Specifica che il trigger è abilitato.<br/>                                                                      |
-| [**EndBoundary**](taskschedulerschema-endboundary-triggerbasetype-element.md)               | dateTime                                                                 | Data e ora in cui il trigger viene disattivato.<br/>                                                          |
-| [**ExecutionTimeLimit**](taskschedulerschema-executiontimelimit-triggerbasetype-element.md) | duration                                                                 | Consente di specificare l'intervallo di avvio dell'attività da parte del trigger.<br/>                                                 |
-| [**Ripetizione**](taskschedulerschema-repetition-triggerbasetype-element.md)                 | [**repetitionType**](taskschedulerschema-repetitiontype-complextype.md) | Specifica la frequenza con cui viene eseguita l'attività e il tempo durante il quale il modello di ripetizione viene ripetuto una volta attivato il trigger.<br/> |
+| [**Attivato**](taskschedulerschema-enabled-triggerbasetype-element.md)                       | boolean                                                                  | Specifica che il trigger è abilitato.<br/>                                                                      |
+| [**EndBoundary**](taskschedulerschema-endboundary-triggerbasetype-element.md)               | dateTime                                                                 | Data e ora di disattivazione del trigger.<br/>                                                          |
+| [**ExecutionTimeLimit**](taskschedulerschema-executiontimelimit-triggerbasetype-element.md) | duration                                                                 | Specifica l'intervallo in cui il trigger può avviare l'attività.<br/>                                                 |
+| [**Ripetizione**](taskschedulerschema-repetition-triggerbasetype-element.md)                 | [**repetitionType**](taskschedulerschema-repetitiontype-complextype.md) | Specifica la frequenza di esecuzione dell'attività e la durata della ripetizione del criterio di ripetizione dopo l'attivazione del trigger.<br/> |
 | [**StartBoundary**](taskschedulerschema-startboundary-triggerbasetype-element.md)           | dateTime                                                                 | Data e ora di attivazione del trigger.<br/>                                                            |
 
 
@@ -84,7 +84,7 @@ Definisce l'attributo, gli elementi figlio di base e le informazioni di sequenzi
 
 ## <a name="remarks"></a>Commenti
 
-I tipi complessi di trigger includono quanto segue.
+I tipi complessi trigger includono i seguenti.
 
 -   [**bootTriggerType**](taskschedulerschema-boottriggertype-complextype.md)
 -   [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md)
@@ -100,8 +100,8 @@ I tipi complessi di trigger includono quanto segue.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -109,7 +109,7 @@ I tipi complessi di trigger includono quanto segue.
 
 <dl> <dt>
 
-[Tipi complessi dello schema Utilità di pianificazione](task-scheduler-schema-complex-types.md)
+[Utilità di pianificazione complessi dello schema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

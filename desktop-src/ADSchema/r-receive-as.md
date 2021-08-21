@@ -1,10 +1,10 @@
 ---
-title: Receive-As esteso a destra
-description: Exchange right consente la ricezione di messaggi di posta elettronica come una determinata cassetta postale.
+title: Receive-As esteso
+description: Exchange diritto consente di ricevere messaggi di posta elettronica come una cassetta postale specificata.
 ms.assetid: 3fa0cab3-5de4-4bd9-9e6c-95b0b6a4c0f8
 ms.tgt_platform: multiple
 keywords:
-- Receive-As schema AD esteso a destra
+- Receive-As schema ad active directory esteso
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca5a79de774579ac7c259d5a1c8ca9c590ac5cb2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1a1e2d8650e2db18b5b76447446aa1e7d510f869e15d6ee0a1eccf4aa1d8d569
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118680224"
 ---
-# <a name="receive-as-extended-right"></a>Receive-As esteso a destra
+# <a name="receive-as-extended-right"></a>Receive-As esteso
 
-Exchange right: consente la ricezione di messaggi di posta elettronica come una determinata cassetta postale.
+Exchange destro: consente di ricevere messaggi di posta elettronica come una cassetta postale specificata.
 
 
 
 | Voce | Valore |
 |--------------|--------------------------------------|
 | CN           | Receive-As                           |
-| Display-Name | Ricevi come                           |
+| Display-Name | Receive As                           |
 | Rights-GUID  | ab721a56-1e2f-11d0-9819-00aa0040529b |
 
 
@@ -50,7 +50,7 @@ Exchange right: consente la ricezione di messaggi di posta elettronica come una 
 | Voce | Valore |
 |-------------------------|-----------------------------------------------------------------------------|
 | Applies-To              | [**Utente**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> |
-| Localization-display-ID | 5                                                                           |
+| Localization-Display-ID | 5                                                                           |
 
 
 
@@ -61,7 +61,7 @@ Exchange right: consente la ricezione di messaggi di posta elettronica come una 
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Utente**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localization-display-ID | 5                                                                                                                               |
+| Localization-Display-ID | 5                                                                                                                               |
 
 
 
@@ -72,7 +72,7 @@ Exchange right: consente la ricezione di messaggi di posta elettronica come una 
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Utente**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localization-display-ID | 5                                                                                                                               |
+| Localization-Display-ID | 5                                                                                                                               |
 
 
 
@@ -83,7 +83,7 @@ Exchange right: consente la ricezione di messaggi di posta elettronica come una 
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Utente**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localization-display-ID | 5                                                                                                                               |
+| Localization-Display-ID | 5                                                                                                                               |
 
 
 
@@ -93,8 +93,8 @@ Exchange right: consente la ricezione di messaggi di posta elettronica come una 
 
 | Voce | Valore |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Utente**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-account**](c-msds-managedserviceaccount.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localization-display-ID | 5                                                                                                                                                                                                                |
+| Applies-To              | [**Utente**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 5                                                                                                                                                                                                                |
 
 
 
@@ -104,8 +104,8 @@ Exchange right: consente la ricezione di messaggi di posta elettronica come una 
 
 | Voce | Valore |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Utente**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-account**](c-msds-managedserviceaccount.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localization-display-ID | 5                                                                                                                                                                                                                |
+| Applies-To              | [**Utente**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 5                                                                                                                                                                                                                |
 
 
 

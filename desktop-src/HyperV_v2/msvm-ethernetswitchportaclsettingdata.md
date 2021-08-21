@@ -1,7 +1,7 @@
 ---
-description: Rappresenta l'elenco di controllo di accesso (ACL) per le impostazioni della porta di commutazione.
+description: Rappresenta l'elenco di controllo di accesso (ACL) per le impostazioni della porta del commutatore.
 ms.assetid: c0d6dfa1-017c-4e66-9ee3-425182d84231
-title: Classe Msvm_EthernetSwitchPortAclSettingData
+title: Msvm_EthernetSwitchPortAclSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -26,18 +26,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 92735718e339a0caf33910dec703276aea946a67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9cecb30265de4a86c3b6bd6b07d7047607349a74cef9da379fb384ca5a5dc9d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106320022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119524191"
 ---
-# <a name="msvm_ethernetswitchportaclsettingdata-class"></a>\_Classe MSVM EthernetSwitchPortAclSettingData
+# <a name="msvm_ethernetswitchportaclsettingdata-class"></a>Classe Msvm \_ EthernetSwitchPortAclSettingData
 
-Rappresenta l'elenco di controllo di accesso (ACL) per le impostazioni della porta di commutazione.
+Rappresenta l'elenco di controllo di accesso (ACL) per le impostazioni della porta del commutatore.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF (Simplified Managed Object Format) e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -63,23 +63,23 @@ class Msvm_EthernetSwitchPortAclSettingData : Msvm_EthernetSwitchPortFeatureSett
 
 ## <a name="members"></a>Members
 
-La **classe \_ EthernetSwitchPortAclSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ EthernetSwitchPortAclSettingData** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ EthernetSwitchPortAclSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ EthernetSwitchPortAclSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **AclType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -98,21 +98,21 @@ Indica il tipo di endpoint ACL.
 
 <span id="MAC_Acl"></span><span id="mac_acl"></span><span id="MAC_ACL"></span>
 
-**ACL Mac** (1)
+**MAC Acl** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IPv4_Acl"></span><span id="ipv4_acl"></span><span id="IPV4_ACL"></span>
 
-**ACL IPv4** (2)
+**Acl IPv4** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IPv6_Acl"></span><span id="ipv6_acl"></span><span id="IPV6_ACL"></span>
 
-**ACL IPv6** (3)
+**Acl IPv6** (3)
 
 
 </dt> <dd></dd> </dl>
@@ -122,16 +122,16 @@ Indica il tipo di endpoint ACL.
 **Azione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica l'azione dell'ACL.
+Indica l'azione dell'elenco di controllo di accesso.
 
 <dt>
 
@@ -151,7 +151,7 @@ Indica l'azione dell'ACL.
 
 <span id="Deny"></span><span id="deny"></span><span id="DENY"></span>
 
-**Nega** (2)
+**Deny** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -168,16 +168,16 @@ Indica l'azione dell'ACL.
 **Applicabilità**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica se l'ACL viene applicato all'endpoint locale o remoto.
+Indica se l'elenco di controllo di accesso si applica all'endpoint locale o remoto.
 
 <dt>
 
@@ -207,42 +207,42 @@ Indica se l'ACL viene applicato all'endpoint locale o remoto.
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Ethernet Switch Port ACL Settings".
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Ethernet Switch Port ACL Impostazioni".
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ Managed**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "rappresenta la classe di base per le impostazioni della porta di commutazione".
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Rappresenta la classe di base per le impostazioni della porta del commutatore".
 
 </dd> <dt>
 
 **Direzione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica se l'ACL si applica alla direzione in ingresso o in uscita.
+Indica se l'elenco di controllo di accesso si applica alla direzione in ingresso o in uscita.
 
 <dt>
 
@@ -255,7 +255,7 @@ Indica se l'ACL si applica alla direzione in ingresso o in uscita.
 
 <span id="Incoming"></span><span id="incoming"></span><span id="INCOMING"></span>
 
-**In ingresso** (1)
+**In** ingresso (1)
 
 
 </dt> <dd></dd> <dt>
@@ -272,20 +272,20 @@ Indica se l'ACL si applica alla direzione in ingresso o in uscita.
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Ethernet Switch Port ACL Settings".
+Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Ethernet Switch Port ACL Impostazioni".
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -294,20 +294,20 @@ Tipo di accesso: sola lettura
 Qualificatori: **chiave**
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **LocalAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
 Indirizzo locale della macchina virtuale. Può trattarsi di un indirizzo IPv4, IPv6 o MAC.
@@ -317,10 +317,10 @@ Indirizzo locale della macchina virtuale. Può trattarsi di un indirizzo IPv4, I
 **LocalAddressPrefixLength**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (7), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -333,29 +333,29 @@ Lunghezza del prefisso dell'indirizzo locale.
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Nome visualizzato dell'ACL.
+Nome visualizzato dell'elenco di controllo di accesso.
 
 </dd> <dt>
 
 **RemoteAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (8), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (8), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
 Indirizzo remoto della macchina virtuale. Può essere IPv4, IPv6 o un indirizzo MAC.
@@ -365,10 +365,10 @@ Indirizzo remoto della macchina virtuale. Può essere IPv4, IPv6 o un indirizzo 
 **RemoteAddressPrefixLength**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (9), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -384,10 +384,10 @@ Lunghezza del prefisso dell'indirizzo remoto.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

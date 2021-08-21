@@ -1,10 +1,10 @@
 ---
-title: Attributo Rights-Guid
+title: Rights-Guid attributo
 description: GUID utilizzato per rappresentare un diritto esteso all'interno di una voce di controllo di accesso.
 ms.assetid: 6f3a654e-fead-41e7-8383-6dade1a2747e
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Rights-Guid attribute
+- Rights-Guid schema AD dell'attributo
 - Schema AD dell'attributo rightsGuid
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4da47ec8e4736dd13b6ba39da0208aed505aa8a9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 057ede64b269e607e9f8e7f914756dd541b7d1d473bc0628c490d5b7fccb618d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118681722"
 ---
-# <a name="rights-guid-attribute"></a>Attributo Rights-Guid
+# <a name="rights-guid-attribute"></a>Rights-Guid attributo
 
 GUID utilizzato per rappresentare un diritto esteso all'interno di una voce di controllo di accesso.
 
@@ -30,12 +30,12 @@ GUID utilizzato per rappresentare un diritto esteso all'interno di una voce di c
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Rights-Guid                                 |
-| LDAP-Display-Name | rightsGuid                                  |
+| Ldap-Display-Name | rightsGuid                                  |
 | Dimensione              | 16 byte                                    |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.            |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.            |
 | Frequenza di aggiornamento  | Quando viene creato un nuovo diritto esteso.       |
 | Attribute-Id      | 1.2.840.113556.1.4.340                      |
-| System-ID-GUID    | 8297931c-86d3-11d0-afda-00c04fd930c9        |
+| System-Id-Guid    | 8297931c-86d3-11d0-afda-00c04fd930c9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -44,7 +44,7 @@ GUID utilizzato per rappresentare un diritto esteso all'interno di una voce di c
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ GUID utilizzato per rappresentare un diritto esteso all'interno di una voce di c
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ GUID utilizzato per rappresentare un diritto esteso all'interno di una voce di c
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ GUID utilizzato per rappresentare un diritto esteso all'interno di una voce di c
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ GUID utilizzato per rappresentare un diritto esteso all'interno di una voce di c
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ GUID utilizzato per rappresentare un diritto esteso all'interno di una voce di c
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ GUID utilizzato per rappresentare un diritto esteso all'interno di una voce di c
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ GUID utilizzato per rappresentare un diritto esteso all'interno di una voce di c
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 36                                                              |
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Controllo-accesso-a destra**](c-controlaccessright.md)<br/> |
+| Classi usate in        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 

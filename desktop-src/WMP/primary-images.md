@@ -3,36 +3,36 @@ title: Immagini primarie
 description: Immagini primarie
 ms.assetid: 6f8e4b33-c84f-4404-82a5-2f1eabe323d4
 keywords:
-- Interfacce di Media Player di Windows, file di immagine
-- interfacce, file di immagine
-- file per Skins, Art
-- file di grafica per interfacce, immagini primarie
-- Windows Media Player Skin, immagini primarie
-- interfacce, immagini primarie
-- immagini primarie nelle interfacce
+- Windows Media Player, file art
+- skins, file art
+- file per le interfaccia, grafica
+- file di grafica per le interfaccia, immagini primarie
+- Windows Media Player, immagini primarie
+- interfaccia, immagini primarie
+- immagini primarie nelle interfaccia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed3759dbfe22eb1a9bf0e3ac8812b797b5eb89f2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1cc3877ff59536318df27d726acd2766870ebbca8d24f9e48d0ab9058608feab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118571112"
 ---
 # <a name="primary-images"></a>Immagini primarie
 
-È possibile creare immagini primarie per l'interfaccia personalizzata. L'immagine principale è costituita da un'immagine di sfondo definita dall'elemento di **visualizzazione** e da tutte le altre immagini che vengono inserite con elementi specifici. Se, ad esempio, si crea un elemento **Button** , è necessario includere l'elemento artistico per quel pulsante e assicurarsi che disponga di un ordine z superiore rispetto all'immagine di sfondo.
+È possibile creare immagini primarie per l'interfaccia. L'immagine primaria è costituita da un'immagine di sfondo definita dall'elemento **VIEW** e da qualsiasi altra immagine con elementi specifici. Ad esempio, se si crea un elemento **BUTTON,** è necessario includere la grafica per tale pulsante e assicurarsi che abbia un ordine z superiore rispetto all'immagine di sfondo.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**File di immagine**](art-files.md)
+[**File di grafica**](art-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Get BackgroundPalette recupera la tavolozza realizzata nel flag di sfondo.
+description: Il metodo get \_ BackgroundPalette recupera il riquadro realizzato nel flag di sfondo.
 ms.assetid: cc649dbd-d049-4993-b187-4e297bef5152
-title: Metodo CBaseControlWindow.get_BackgroundPalette (Ctlutil. h)
+title: CBaseControlWindow.get_BackgroundPalette metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dd06bcec9b3c435370ec3f12340c1c3aede3904c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 63ea3fa8ecbc6e644ccc5f4b1fac7a2fcd9c18270474f45dc08faa164f76cbec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118660776"
 ---
-# <a name="cbasecontrolwindowget_backgroundpalette-method"></a>Metodo CBaseControlWindow. Get \_ BackgroundPalette
+# <a name="cbasecontrolwindowget_backgroundpalette-method"></a>Metodo CBaseControlWindow.get \_ BackgroundPalette
 
-Il `get_BackgroundPalette` metodo recupera la tavolozza realizzata nel flag di sfondo.
+Il `get_BackgroundPalette` metodo recupera il riquadro realizzato nel flag di sfondo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,11 +51,11 @@ Puntatore a un flag booleano di automazione (0 è disattivato, 1 è on).
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro implementa il metodo [**IVideoWindow:: Get \_ BackgroundPalette**](/windows/desktop/api/Control/nf-control-ivideowindow-get_backgroundpalette) . Se un video viene riprodotto all'interno di un'altra applicazione o documento, l'applicazione potrebbe voler usare la propria tavolozza. È possibile che il video usi la tavolozza di primo piano corrente anziché la propria impostando questo flag su 1. Se questa proprietà è impostata su 0, la finestra verrà installata e si renderà conto della tavolozza preferita. Si noti che la richiesta della finestra di utilizzare una tavolozza diversa provocherà gravi sanzioni in termini di prestazioni.
+Questa funzione membro implementa il [**metodo IVideoWindow::get \_ BackgroundPalette.**](/windows/desktop/api/Control/nf-control-ivideowindow-get_backgroundpalette) Se un video verrà riprodotto all'interno di un'altra applicazione o documento, l'applicazione potrebbe voler usare la propria tavolozza. Può chiedere al video di usare la tavolozza in primo piano corrente anziché la propria impostando questo flag su 1. Se questa proprietà è impostata su 0, la finestra installa e realizza il proprio riquadro preferito. Si noti che chiedere alla finestra di usare un riquadro diverso causerà gravi penalità per le prestazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Questa funzione membro implementa il metodo [**IVideoWindow:: Get \_ BackgroundP
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

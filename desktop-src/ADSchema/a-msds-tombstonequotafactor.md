@@ -1,11 +1,11 @@
 ---
-title: ms-DS-Tombstone-quota-Factor-attributo
-description: Fattore percentuale in base al quale il conteggio degli oggetti contrassegnato per la rimozione definitiva deve essere ridotto a scopo di contabilità delle quote.
+title: Attributo ms-DS-Tombstone-Quota-Factor
+description: Fattore percentuale in base al quale il conteggio degli oggetti contrassegnati per la rimozione definitiva deve essere ridotto ai fini della contabilità delle quote.
 ms.assetid: 602c2fe0-d3b7-45e8-8ce8-35a7163f7b25
 ms.tgt_platform: multiple
 keywords:
-- Schema AD degli attributi ms-DS-Tombstone-quote-Factor
-- attributo msDS-TombstoneQuotaFactor-schema AD
+- Ms-DS-Tombstone-Quota-Factor attribute AD Schema
+- Schema AD dell'attributo msDS-TombstoneQuotaFactor
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a44dd7f648754c2ded7334c9b221022d936ebfb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b19473a851a683a14c26df5d71165f326dbfc45ed04eed50db0e5cde6195a2d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118683339"
 ---
-# <a name="ms-ds-tombstone-quota-factor-attribute"></a>ms-DS-Tombstone-quota-Factor-attributo
+# <a name="ms-ds-tombstone-quota-factor-attribute"></a>Attributo ms-DS-Tombstone-Quota-Factor
 
-Fattore percentuale in base al quale il conteggio degli oggetti contrassegnato per la rimozione definitiva deve essere ridotto a scopo di contabilità delle quote.
+Fattore percentuale in base al quale il conteggio degli oggetti contrassegnati per la rimozione definitiva deve essere ridotto ai fini della contabilità delle quote.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-Tombstone-quota-fattore         |
-| LDAP-Display-Name | msDS-TombstoneQuotaFactor            |
+| CN                | ms-DS-Tombstone-Quota-Factor         |
+| Ldap-Display-Name | msDS-TombstoneQuotaFactor            |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1847              |
-| System-ID-GUID    | 461744d7-f3b6-45ba-8753-fb9552a5df32 |
+| System-Id-Guid    | 461744d7-f3b6-45ba-8753-fb9552a5df32 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -43,7 +43,7 @@ Fattore percentuale in base al quale il conteggio degli oggetti contrassegnato p
 ## <a name="implementations"></a>Implementazioni
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,19 +58,19 @@ Fattore percentuale in base al quale il conteggio degli oggetti contrassegnato p
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | 0                                                                 |
 | Range-Upper            | 100                                                               |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -79,15 +79,15 @@ Fattore percentuale in base al quale il conteggio degli oggetti contrassegnato p
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | 0                                                                 |
 | Range-Upper            | 100                                                               |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Fattore percentuale in base al quale il conteggio degli oggetti contrassegnato p
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | 0                                                                 |
 | Range-Upper            | 100                                                               |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Fattore percentuale in base al quale il conteggio degli oggetti contrassegnato p
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | 0                                                                 |
 | Range-Upper            | 100                                                               |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Fattore percentuale in base al quale il conteggio degli oggetti contrassegnato p
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | 0                                                                 |
 | Range-Upper            | 100                                                               |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Fattore percentuale in base al quale il conteggio degli oggetti contrassegnato p
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | 0                                                                 |
 | Range-Upper            | 100                                                               |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**ms-DS-quota-contenitore**](c-msds-quotacontainer.md)<br/> |
+| Classi usate in        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 

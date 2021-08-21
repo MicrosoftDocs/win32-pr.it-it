@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. itemSelectedBackgroundColor
+title: PLAYLIST.itemSelectedBackgroundColor
 description: L'attributo itemSelectedBackgroundColor specifica o recupera un valore che indica il colore di sfondo di un elemento selezionato nella playlist.
 ms.assetid: d4668cd6-1e2c-4ecb-8040-25dc474b27f5
 keywords:
-- PLAYLIST. itemSelectedBackgroundColor Windows Media Player
+- PLAYLIST.itemSelectedBackgroundColor Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f7801f5711147508c833433b2b501b4df1f23eb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5bf0f446c1c80f824751098aac372ff09bc024c9190460111c1ed2eea0e5d7d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118834518"
 ---
-# <a name="playlistitemselectedbackgroundcolor"></a>PLAYLIST. itemSelectedBackgroundColor
+# <a name="playlistitemselectedbackgroundcolor"></a>PLAYLIST.itemSelectedBackgroundColor
 
-L'attributo **itemSelectedBackgroundColor** specifica o recupera un valore che indica il colore di sfondo di un elemento selezionato nella playlist.
+**L'attributo itemSelectedBackgroundColor** specifica o recupera un valore che indica il colore di sfondo di un elemento selezionato nella playlist.
 
 ``` syntax
         elementID.itemSelectedBackgroundColor
@@ -30,7 +30,7 @@ L'attributo **itemSelectedBackgroundColor** specifica o recupera un valore che i
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura che rappresenta un colore. Il valore predefinito è il colore di evidenziazione di Windows.
+Questo attributo è una stringa di **lettura/scrittura** che rappresenta un colore. Il valore predefinito è il colore Windows evidenziazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,10 +46,10 @@ Questo attributo è una **stringa** di lettura/scrittura che rappresenta un colo
 
 <dl> <dt>
 
-[**Riferimento ai colori**](color-reference.md)
+[**Informazioni di riferimento sul colore**](color-reference.md)
 </dt> <dt>
 
-[**PLAYLIST (elemento)**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

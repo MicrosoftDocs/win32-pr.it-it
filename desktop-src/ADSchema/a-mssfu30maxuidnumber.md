@@ -1,10 +1,10 @@
 ---
-title: Attributo msSFU-30-max-UID-Number (attributo)
+title: Attributo msSFU-30-Max-Uid-Number
 description: Contiene il numero massimo di utenti di cui è possibile eseguire la migrazione a un dominio NIS.
 ms.assetid: 76dca1aa-2c1c-4ba0-a76b-12c678278f56
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo attributo msSFU-30-max-UID-Number
+- Schema AD dell'attributo msSFU-30-Max-Uid-Number
 - Schema AD dell'attributo msSFU30MaxUidNumber
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38ba4e4d3a4b85d6faf83386078aae413447bfc4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8f55ee108bb58ef3c4121ee06631f39f9430feeeda9795c062cec5fd0b089c91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682497"
 ---
-# <a name="mssfu-30-max-uid-number-attribute"></a>Attributo msSFU-30-max-UID-Number (attributo)
+# <a name="mssfu-30-max-uid-number-attribute"></a>Attributo msSFU-30-Max-Uid-Number
 
 Contiene il numero massimo di utenti di cui è possibile eseguire la migrazione a un dominio NIS.
 
@@ -29,13 +29,13 @@ Contiene il numero massimo di utenti di cui è possibile eseguire la migrazione 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Attributo msSFU-30-max-UID-Number              |
-| LDAP-Display-Name | msSFU30MaxUidNumber                  |
+| CN                | msSFU-30-Max-Uid-Number              |
+| Ldap-Display-Name | msSFU30MaxUidNumber                  |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.343          |
-| System-ID-GUID    | ec998437-d944-4a28-8500-217588adfc75 |
+| System-Id-Guid    | ec998437-d944-4a28-8500-217588adfc75 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -56,15 +56,15 @@ Contiene il numero massimo di utenti di cui è possibile eseguire la migrazione 
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classi utilizzate in        | [**Attributo msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
+| Classi usate in        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Contiene il numero massimo di utenti di cui è possibile eseguire la migrazione 
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classi utilizzate in        | [**Attributo msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
+| Classi usate in        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Contiene il numero massimo di utenti di cui è possibile eseguire la migrazione 
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classi utilizzate in        | [**Attributo msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
+| Classi usate in        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -119,15 +119,15 @@ Contiene il numero massimo di utenti di cui è possibile eseguire la migrazione 
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classi utilizzate in        | [**Attributo msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
+| Classi usate in        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 

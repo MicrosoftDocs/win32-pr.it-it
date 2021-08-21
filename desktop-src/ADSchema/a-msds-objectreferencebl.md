@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-Object-Reference-BL
-description: Collegamento a ritroso per MS-DS-Object-Reference.
+title: Attributo ms-DS-Object-Reference-BL
+description: Collegamento all'indietro per ms-DS-Object-Reference.
 ms.assetid: 8bf3346e-2bdf-4d2f-8fff-991b0ccfa43e
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-DS-Object-Reference-BL
-- attributo msDS-ObjectReferenceBL-schema AD
+- Schema AD dell'attributo msDS-ObjectReferenceBL
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed859c98be32c5257591c827fd19912df66af8e8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 023cae700f58bce94c8b92fee43a25151edab9ba81b09b50a9367a2ba366c32d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118683625"
 ---
-# <a name="ms-ds-object-reference-bl-attribute"></a>attributo ms-DS-Object-Reference-BL
+# <a name="ms-ds-object-reference-bl-attribute"></a>Attributo ms-DS-Object-Reference-BL
 
-Collegamento a ritroso per [**ms-DS-Object-Reference**](a-msds-objectreference.md).
+Collegamento all'indietro [**per ms-DS-Object-Reference**](a-msds-objectreference.md).
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
 | CN                | ms-DS-Object-Reference-BL               |
-| LDAP-Display-Name | msDS-ObjectReferenceBL                  |
+| Ldap-Display-Name | msDS-ObjectReferenceBL                  |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1841                 |
-| System-ID-GUID    | 2b702515-c1f7-4b3b-b148-c0e4c6ceecb4    |
+| System-Id-Guid    | 2b702515-c1f7-4b3b-b148-c0e4c6ceecb4    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -57,15 +57,15 @@ Collegamento a ritroso per [**ms-DS-Object-Reference**](a-msds-objectreference.m
 | ID collegamento                | 2039                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000000                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Collegamento a ritroso per [**ms-DS-Object-Reference**](a-msds-objectreference.m
 | ID collegamento                | 2039                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000000                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Collegamento a ritroso per [**ms-DS-Object-Reference**](a-msds-objectreference.m
 | ID collegamento                | 2039                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000000                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Collegamento a ritroso per [**ms-DS-Object-Reference**](a-msds-objectreference.m
 | ID collegamento                | 2039                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000000                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Collegamento a ritroso per [**ms-DS-Object-Reference**](a-msds-objectreference.m
 | ID collegamento                | 2039                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000000                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

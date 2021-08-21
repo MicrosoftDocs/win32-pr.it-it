@@ -1,9 +1,9 @@
 ---
-title: MenuGroup - elemento
+title: Elemento MenuGroup
 description: Rappresenta un contenitore di controlli da visualizzare in una raccolta, in un menu o in una barra degli strumenti.
 ms.assetid: 75da63fe-dd9e-46af-8f13-a8d8e7575641
 keywords:
-- Elemento MenuGroup Nella barra multifunzione di Windows
+- Elemento MenuGroup Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 95cbda43fe2f652888a7b84539752b5d671868c3
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 854b33d1e11df15b5b383bf004986edc18418f6204ae1298c3171a6653cf5301
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111442852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118707095"
 ---
-# <a name="menugroup-element"></a>MenuGroup - elemento
+# <a name="menugroup-element"></a>Elemento MenuGroup
 
 Rappresenta un contenitore di controlli da visualizzare in una raccolta, in un menu o in una barra degli strumenti.
 
@@ -85,7 +85,7 @@ Se <strong>MenuGroup</strong> è un elemento figlio di <a href="windowsribbon-el
 | Elemento                                                                             | Descrizione                                        |
 |-------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**Button**](windowsribbon-element-button.md)<br/>                           | Può verificarsi una o più volte<br/> <br/> |
-| [**Casella**](windowsribbon-element-checkbox.md)<br/>                       | Può verificarsi una o più volte<br/> <br/> |
+| [**CheckBox**](windowsribbon-element-checkbox.md)<br/>                       | Può verificarsi una o più volte<br/> <br/> |
 | [**ComboBox**](windowsribbon-element-combobox.md)<br/>                       | Può verificarsi una o più volte<br/> <br/> |
 | [**DropDownButton**](windowsribbon-element-dropdownbutton.md)<br/>           | Può verificarsi una o più volte<br/> <br/> |
 | [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md)<br/> | Può verificarsi una o più volte<br/> <br/> |
@@ -118,7 +118,7 @@ Se <strong>MenuGroup</strong> è un elemento figlio di <a href="windowsribbon-el
 
 Obbligatorio.
 
-Deve essere presente almeno una volta per ogni elemento [**ApplicationMenu**](windowsribbon-element-applicationmenu.md), [**ContextMenu**](windowsribbon-element-contextmenu.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery.MenuGroups**](windowsribbon-element-dropdowngallery-menugroups.md), [**InRibbonGallery.MenuGroups**](windowsribbon-element-inribbongallery-menugroups.md), [**SplitButton.MenuGroups**](windowsribbon-element-splitbutton-menugroups.md), [**MiniToolbar**](windowsribbon-element-minitoolbar.md)o [**SplitButtonGallery.MenuGroups.**](windowsribbon-element-splitbuttongallery-menugroups.md)
+Deve verificarsi almeno una volta per ogni elemento [**ApplicationMenu**](windowsribbon-element-applicationmenu.md), [**ContextMenu**](windowsribbon-element-contextmenu.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery.MenuGroups**](windowsribbon-element-dropdowngallery-menugroups.md), [**InRibbonGallery.MenuGroups**](windowsribbon-element-inribbongallery-menugroups.md), [**SplitButton.MenuGroups**](windowsribbon-element-splitbutton-menugroups.md), [**MiniToolbar**](windowsribbon-element-minitoolbar.md)o [**SplitButtonGallery.MenuGroups.**](windowsribbon-element-splitbuttongallery-menugroups.md)
 
 Se [**ApplicationMenu è**](windowsribbon-element-applicationmenu.md) l'elemento padre, **MenuGroup** è vincolato agli elementi figlio [**seguenti: Button**](windowsribbon-element-button.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**SplitButton**](windowsribbon-element-splitbutton.md)o [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md).
 
@@ -126,7 +126,7 @@ Se [**ContextMenu**](windowsribbon-element-contextmenu.md), [**DropDownButton**]
 
 Se [**MiniToolbar è**](windowsribbon-element-minitoolbar.md) l'elemento padre, **MenuGroup** è vincolato agli elementi figlio [**seguenti: Button**](windowsribbon-element-button.md), [**CheckBox**](windowsribbon-element-checkbox.md), [**ComboBox**](windowsribbon-element-combobox.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**FontControl**](windowsribbon-element-fontcontrol.md), [**Spinner**](windowsribbon-element-spinner.md), [**SplitButton**](windowsribbon-element-splitbutton.md), [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)o [**ToggleButton**](windowsribbon-element-togglebutton.md).
 
-L'attributo Class non è obbligatorio [**quando ApplicationMenu**](windowsribbon-element-applicationmenu.md) è l'elemento padre. Il framework applica il valore MajorItems per l'attributo Class.
+L'attributo Class non è obbligatorio quando [**ApplicationMenu**](windowsribbon-element-applicationmenu.md) è l'elemento padre. Il framework applica il valore MajorItems per l'attributo Class.
 
 Quando [**ApplicationMenu è**](windowsribbon-element-applicationmenu.md) l'elemento padre, l'attributo Class non è obbligatorio.
 

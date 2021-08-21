@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 665c4644-7749-446e-8212-3ecc9901a035
-ms.openlocfilehash: 6eadb580c73e5e56592c94e997bdc22c2cf894b4
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 8142867d8d0423729794460a077a0f7f12d97f5d9744a119571d3ddd2b90a592
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118720713"
 ---
 # <a name="ishelldispatch4windowssecurity-method"></a>Metodo IShellDispatch4.WindowsSecurity
 
@@ -57,18 +57,18 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo visualizza la finestra di dialogo visualizzata dopo la pressione di CTRL+ALT+CANC o l'uso dell'opzione di sicurezza nel menu **Start.**
+Questo metodo visualizza la finestra di dialogo visualizzata dopo aver premuto CTRL+ALT+CANC o usando l'opzione di sicurezza nel menu **Start.**
 
 > [!Note]  
-> Questo metodo può essere usato solo quando si è connessi da una sessione terminal a Microsoft Terminal Server.
+> Questo metodo può essere usato solo quando è connesso da una sessione terminal a Microsoft Terminal Server.
 
  
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti illustrano l'uso **di WindowsSecurity** per JScript, VBScript e Visual Basic.
+Gli esempi seguenti illustrano l'uso di **WindowsSecurity** JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -122,8 +122,8 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                                                   |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                                                   |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 6.0 o successiva)</dt> </dl> |

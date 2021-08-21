@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e21fb57558d7704bf98740de8634bc91289e0038
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0f9d7c54c08e6709d06a46b519dd1b9c8d51daf2b6862c5f59a93c9a0a97d2ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118676587"
 ---
 # <a name="deleteex-method-of-the-cim_devicefile-class"></a>Metodo DeleteEx della classe CIM \_ DeviceFile
 
@@ -136,7 +136,7 @@ Piattaforma non Windows.
 
 13
 
-Unità non uguale.
+L'unità non è la stessa.
 
 </dd> <dt>
 
@@ -189,7 +189,7 @@ Parametro non valido.
 
 Questo metodo non è attualmente implementato da WMI. Per usare questo metodo, è necessario implementarlo nel proprio provider.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 

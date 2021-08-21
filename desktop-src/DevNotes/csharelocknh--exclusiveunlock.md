@@ -1,7 +1,7 @@
 ---
 description: Rilascia un blocco acquisito utilizzando ExclusiveLock in modalità condivisa.
 ms.assetid: d38354f0-2eb3-4924-99b5-1331e587ce32
-title: 'Metodo CShareLockNH:: ExclusiveUnlock'
+title: Metodo CShareLockNH::ExclusiveUnlock
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Rwnh.dll
-ms.openlocfilehash: f5fae5d6131bfcb386d52880b530f3def9464442
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 20d614f733b1668e3dea7619629cf2833f1d6af40384e679aea79a7a48279724
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118667837"
 ---
-# <a name="csharelocknhexclusiveunlock-method"></a>Metodo CShareLockNH:: ExclusiveUnlock
+# <a name="csharelocknhexclusiveunlock-method"></a>Metodo CShareLockNH::ExclusiveUnlock
 
 Rilascia un blocco acquisito utilizzando [**ExclusiveLock**](csharelocknh--exclusivelock.md) in modalità condivisa.
 
@@ -43,9 +43,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Ogni chiamata a [**ExclusiveLock**](csharelocknh--exclusivelock.md) deve essere abbinata esattamente a una chiamata a **ExclusiveUnlock** per evitare il rischio di un deadlock.
+Ogni chiamata [**a ExclusiveLock**](csharelocknh--exclusivelock.md) deve essere abbinata esattamente a una chiamata a **ExclusiveUnlock** per evitare il rischio di deadlock.
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

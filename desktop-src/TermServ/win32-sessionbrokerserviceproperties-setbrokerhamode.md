@@ -1,12 +1,12 @@
 ---
-title: Metodo SetBrokerHAMode della classe Win32_SessionBrokerServiceProperties
-description: Esegue la migrazione dei dati da un database WID locale al nuovo database basato su SQL Server. Configura inoltre il server Broker per l'utilizzo del server SQL centrale.
+title: Metodo SetBrokerHAMode della Win32_SessionBrokerServiceProperties classe
+description: Esegue la migrazione dei dati da un database WID locale al nuovo database SQL database basato su server. Configura inoltre il server broker per l'uso del server SQL centrale.
 ms.assetid: 8f14590d-3042-403c-a1cb-a3b257866284
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SetBrokerHAMode
-- Metodo SetBrokerHAMode Servizi Desktop remoto, classe Win32_SessionBrokerServiceProperties
-- Classe Win32_SessionBrokerServiceProperties Servizi Desktop remoto, metodo SetBrokerHAMode
+- Metodo SetBrokerHAMode Servizi Desktop remoto
+- Metodo SetBrokerHAMode Servizi Desktop remoto , Win32_SessionBrokerServiceProperties classe
+- Win32_SessionBrokerServiceProperties classe Servizi Desktop remoto, metodo SetBrokerHAMode
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4526f8ded96086ccf223b3c8e5aad72d9e0262cc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 17b72233b51686911e4b1d0a661f4e46fa9bcaa813bb6ccc973b2f8a5b12da24
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118604550"
 ---
-# <a name="setbrokerhamode-method-of-the-win32_sessionbrokerserviceproperties-class"></a>Metodo SetBrokerHAMode della \_ classe SessionBrokerServiceProperties Win32
+# <a name="setbrokerhamode-method-of-the-win32_sessionbrokerserviceproperties-class"></a>Metodo SetBrokerHAMode della classe \_ SessionBrokerServiceProperties Win32
 
-Esegue la migrazione dei dati da un database WID locale al nuovo database basato su SQL Server. Configura inoltre il server Broker per l'utilizzo del server SQL centrale.
+Esegue la migrazione dei dati da un database WID locale al nuovo database SQL database basato su server. Configura inoltre il server broker per l'uso del server SQL centrale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,35 +46,35 @@ uint32 SetBrokerHAMode(
 
 <dl> <dt>
 
-*connStringToCentralDBRdcms* \[ in\]
+*connStringToCentralDBRdcms* \[ Pollici\]
 </dt> <dd>
 
 Stringa di connessione al database centrale.
 
 </dd> <dt>
 
-*secondaryConnStringToCentralDBRdcms* \[ in\]
+*secondaryConnStringToCentralDBRdcms* \[ Pollici\]
 </dt> <dd>
 
 Stringa di connessione secondaria al database centrale.
 
-**Windows server 2012 R2 e Windows server 2012:** Questo parametro non è disponibile prima di Windows Server 2016.
+**Windows Server 2012 R2 e Windows Server 2012:** Questo parametro non è disponibile prima Windows Server 2016.
 
 </dd> <dt>
 
-*brokerDnsRRName* \[ in\]
+*brokerDnsRRName* \[ Pollici\]
 </dt> <dd>
 
-Nome DNS del broker.
+Nome DNS broker.
 
 </dd> <dt>
 
-*activeBrokerName* \[ in\]
+*activeBrokerName* \[ Pollici\]
 </dt> <dd>
 
-Nome del broker attivo.
+Nome broker attivo.
 
-**Windows server 2012 R2 e Windows server 2012:** Questo parametro non è disponibile prima di Windows Server 2016.
+**Windows Server 2012 R2 e Windows Server 2012:** Questo parametro non è disponibile prima Windows Server 2016.
 
 </dd> </dl>
 
@@ -87,7 +87,7 @@ Nome del broker attivo.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                         |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 
@@ -96,7 +96,7 @@ Nome del broker attivo.
 
 <dl> <dt>
 
-[**\_SessionBrokerServiceProperties Win32**](win32-sessionbrokerserviceproperties.md)
+[**Proprietà \_ sessionBrokerServiceProperties win32**](win32-sessionbrokerserviceproperties.md)
 </dt> </dl>
 
  

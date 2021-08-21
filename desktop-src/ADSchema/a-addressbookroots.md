@@ -1,11 +1,11 @@
 ---
-title: Attributo address-book-Roots
-description: Utilizzato da Exchange. Exchange configura gli alberi dei contenitori di Rubrica da visualizzare nella rubrica MAPI. Questo attributo nell'oggetto di configurazione di Exchange elenca le radici degli alberi del contenitore Rubrica. | Attributo address-book-Roots
+title: Attributo Address-Book-Roots
+description: Usato da Exchange. Exchange configura alberi di contenitori di rubrica da visualizzare nella rubrica MAPI. Questo attributo nell'oggetto Exchange config elenca le radici degli alberi dei contenitori della rubrica. | Attributo Address-Book-Roots
 ms.assetid: 7e6d2677-9818-4870-8429-50f73f9c8c1f
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo address-book-Roots
-- Schema AD dell'attributo addressBookRoots
+- Schema AD dell'attributo Address-Book-Roots
+- Attributo addressBookRoots Schema di ACTIVE Directory
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab195744bb7fb5029a9a48aeca55d703e6e05b62
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d2a1d6edd1ba18da126be413224bd32c71c707e8cb905dca9445513467b9af22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118689008"
 ---
-# <a name="address-book-roots-attribute"></a>Attributo address-book-Roots
+# <a name="address-book-roots-attribute"></a>Attributo Address-Book-Roots
 
-Utilizzato da Exchange. Exchange configura gli alberi dei contenitori di Rubrica da visualizzare nella rubrica MAPI. Questo attributo nell'oggetto di configurazione di Exchange elenca le radici degli alberi del contenitore Rubrica.
+Usato da Exchange. Exchange configura alberi di contenitori di rubrica da visualizzare nella rubrica MAPI. Questo attributo nell'oggetto Exchange config elenca le radici degli alberi dei contenitori della rubrica.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | Address-Book-Roots                      |
-| LDAP-Display-Name | addressBookRoots                        |
+| CN                | Radici dei libri di indirizzi                      |
+| Ldap-Display-Name | addressBookRoots                        |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1244                 |
-| System-ID-GUID    | f70b6e48-06f4-11d2-aa53-00c04fd7d83a    |
+| System-Id-Guid    | f70b6e48-06f4-11d2-aa53-00c04fd7d83a    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ Utilizzato da Exchange. Exchange configura gli alberi dei contenitori di Rubrica
 | ID collegamento                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| È a valore singolo       | Falso                                                                                |
+| Is-Single-Valued       | Falso                                                                                |
 | Indicizzato             | Falso                                                                                |
 | Nel catalogo globale      | Falso                                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classi utilizzate in        | [**ms-Exch-Configuration-container**](c-msexchconfigurationcontainer.md)<br/> |
+| Classi usate in        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Utilizzato da Exchange. Exchange configura gli alberi dei contenitori di Rubrica
 | ID collegamento                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| È a valore singolo       | Falso                                                                                |
+| Is-Single-Valued       | Falso                                                                                |
 | Indicizzato             | Falso                                                                                |
 | Nel catalogo globale      | Falso                                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classi utilizzate in        | [**ms-Exch-Configuration-container**](c-msexchconfigurationcontainer.md)<br/> |
+| Classi usate in        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Utilizzato da Exchange. Exchange configura gli alberi dei contenitori di Rubrica
 | ID collegamento                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| È a valore singolo       | Falso                                                                                |
+| Is-Single-Valued       | Falso                                                                                |
 | Indicizzato             | Falso                                                                                |
 | Nel catalogo globale      | Falso                                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classi utilizzate in        | [**ms-Exch-Configuration-container**](c-msexchconfigurationcontainer.md)<br/> |
+| Classi usate in        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Utilizzato da Exchange. Exchange configura gli alberi dei contenitori di Rubrica
 | ID collegamento                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| È a valore singolo       | Falso                                                                                |
+| A valore singolo       | Falso                                                                                |
 | Indicizzato             | Falso                                                                                |
 | Nel catalogo globale      | Falso                                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classi utilizzate in        | [**ms-Exch-Configuration-container**](c-msexchconfigurationcontainer.md)<br/> |
+| Classi usate in        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Utilizzato da Exchange. Exchange configura gli alberi dei contenitori di Rubrica
 | ID collegamento                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| È a valore singolo       | Falso                                                                                |
+| A valore singolo       | Falso                                                                                |
 | Indicizzato             | Falso                                                                                |
 | Nel catalogo globale      | Falso                                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classi utilizzate in        | [**ms-Exch-Configuration-container**](c-msexchconfigurationcontainer.md)<br/> |
+| Classi usate in        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Utilizzato da Exchange. Exchange configura gli alberi dei contenitori di Rubrica
 | ID collegamento                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| È a valore singolo       | Falso                                                                                |
+| A valore singolo       | Falso                                                                                |
 | Indicizzato             | Falso                                                                                |
 | Nel catalogo globale      | Falso                                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classi utilizzate in        | [**ms-Exch-Configuration-container**](c-msexchconfigurationcontainer.md)<br/> |
+| Classi usate in        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 

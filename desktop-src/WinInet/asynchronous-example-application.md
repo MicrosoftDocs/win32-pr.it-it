@@ -1,19 +1,19 @@
 ---
 title: Applicazione di esempio asincrona
-description: Nell'esempio seguente viene illustrato come inviare una richiesta in modo asincrono.
+description: Nell'esempio seguente è stato illustrato l'invio di una richiesta in modo asincrono.
 ms.assetid: 1dd32e17-88bb-4729-80f6-f4f1184788d5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 591ea3ab0cba39cacacd7657aa12f205e5198966
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: db3bf42c9ccd9378c748171b39523e816444ea89d73cdd7226fa95105d6ef3b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118562324"
 ---
 # <a name="asynchronous-example-application"></a>Applicazione di esempio asincrona
 
-Nell'esempio seguente viene illustrato come inviare una richiesta in modo asincrono.
+Nell'esempio seguente è stato illustrato l'invio di una richiesta in modo asincrono.
 
 
 ```C++
@@ -1829,9 +1829,9 @@ Return Value:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

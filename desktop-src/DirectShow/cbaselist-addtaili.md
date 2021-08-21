@@ -1,7 +1,7 @@
 ---
 description: Il metodo AddTailI aggiunge un elemento alla fine dell'elenco.
 ms.assetid: 699408d1-fee2-43d7-b2c3-51637d063b2c
-title: Metodo CBaseList. AddTailI (Wxlist. h)
+title: Metodo CBaseList.AddTailI (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8c702256d75a2de6f914838f5c3412a4308a7241
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d3317877bfa67d2d39d469882e0b12b9fd79a923873022a51ee48712fc772743
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118659127"
 ---
-# <a name="cbaselistaddtaili-method"></a>CBaseList. AddTailI, metodo
+# <a name="cbaselistaddtaili-method"></a>Metodo CBaseList.AddTailI
 
 Il `AddTailI` metodo aggiunge un elemento alla fine dell'elenco.
 
@@ -51,11 +51,11 @@ Puntatore all'elemento.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore di posizione per la nuova posizione della coda.
+Restituisce un valore POSITION per la nuova posizione della coda.
 
 ## <a name="remarks"></a>Commenti
 
-Se il metodo ha esito negativo, restituisce **null**.
+Se il metodo ha esito negativo, restituisce **NULL.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Se il metodo ha esito negativo, restituisce **null**.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxlist. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxlist.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

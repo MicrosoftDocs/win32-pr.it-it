@@ -1,36 +1,36 @@
 ---
-description: L'API shell fornisce funzioni che è possibile usare per gestire le stampanti di rete. Se a un file è associato il verbo di stampa, è possibile usare il comando ShellExecuteEx per stamparlo.
+description: L'API Shell fornisce funzioni che è possibile usare per gestire le stampanti in rete. Se a un file è associato il verbo di stampa, è possibile usare il comando ShellExecuteEx per stamparlo.
 ms.assetid: b94fca60-237a-43b1-a75a-faccf9dc63fb
 title: Gestione delle stampanti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73e9625fbe17c0dd350a10c0c71dcd5332fb9154
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7086b360355d0ad85be440bc8bc9e330bfa6dd25793cc943d3aacdbaa0d4a8f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104979954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118719599"
 ---
 # <a name="managing-printers"></a>Gestione delle stampanti
 
-L'API shell fornisce funzioni che è possibile usare per gestire le stampanti di rete. Se a un file è associato il verbo di **stampa** , è possibile usare il comando [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) per stamparlo.
+L'API Shell fornisce funzioni che è possibile usare per gestire le stampanti in rete. Se a un file è associato **il** verbo di stampa, è possibile usare il [**comando ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) per stamparlo.
 
--   [Gestione stampanti](#printer-management)
+-   [Gestione delle stampanti](#printer-management)
 -   [Stampa di file con ShellExecuteEx](#printing-files-with-shellexecuteex)
 
-## <a name="printer-management"></a>Gestione stampanti
+## <a name="printer-management"></a>Gestione delle stampanti
 
-È possibile gestire le stampanti in un sistema con la funzione [**SHInvokePrinterCommand**](/windows/desktop/api/Shellapi/nf-shellapi-shinvokeprintercommanda) . Questa funzione consente di:
+È possibile gestire le stampanti in un sistema con [**la funzione SHInvokePrinterCommand.**](/windows/desktop/api/Shellapi/nf-shellapi-shinvokeprintercommanda) Questa funzione consente di:
 
 -   Installare le stampanti.
--   Aprire stampanti.
+-   Aprire le stampanti.
 -   Ottenere le proprietà della stampante.
 -   Creare collegamenti alla stampante.
 -   Stampare una pagina di prova.
 
 ## <a name="printing-files-with-shellexecuteex"></a>Stampa di file con ShellExecuteEx
 
-Se a un tipo di file è associato un comando stampa, è possibile stampare il file chiamando [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) con **Print** come verbo. Questo comando è spesso identico a quello usato per il verbo **aperto** , con l'aggiunta di un flag per indicare all'applicazione di stampare il file. Ad esempio, i file con estensione txt possono essere stampati da Microsoft WordPad. Il verbo **Open** per un file con estensione txt corrisponderebbe quindi a un comando simile al seguente:
+Se a un tipo di file è associato un comando print, è possibile stampare il file chiamando [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) **con print** come verbo. Questo comando è spesso uguale a quello usato per il verbo **open,** con l'aggiunta di un flag per indicare all'applicazione di stampare il file. Ad esempio, .txt file possono essere stampati da Microsoft WordPad. Il **verbo** open per un .txt file corrisponderebbe quindi a qualcosa di simile al comando seguente:
 
 
 ```C++
@@ -39,7 +39,7 @@ Se a un tipo di file è associato un comando stampa, è possibile stampare il fi
 
 
 
-Quando si usa [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) per stampare un file con estensione txt, WordPad apre il file, lo stampa e quindi lo chiude, restituendo il controllo all'applicazione. La funzione di esempio seguente accetta un percorso completo e USA **ShellExecuteEx** per stamparlo, usando il comando Print associato all'estensione del nome file.
+Quando si usa [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) per stampare un file .txt, WordPad apre il file, lo stampa e quindi lo chiude, restituisce il controllo all'applicazione. La funzione di esempio seguente accetta un percorso completo e usa **ShellExecuteEx** per stamparlo, usando il comando print associato alla relativa estensione di file.
 
 
 ```C++

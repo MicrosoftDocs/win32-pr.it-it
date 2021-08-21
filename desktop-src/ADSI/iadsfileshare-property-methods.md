@@ -1,10 +1,10 @@
 ---
-title: Metodi di proprietà IADsFileShare (IADs. h)
-description: I metodi di proprietà dell'interfaccia IADsFileshare ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere Metodi della proprietà di interfaccia.
+title: Metodi della proprietà IADsFileShare (Iads.h)
+description: I metodi di proprietà dell'interfaccia IADsFileshare ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere Metodi delle proprietà di interfaccia.
 ms.assetid: c5a81c42-507f-4a68-b6f4-83097bd0fa01
 ms.tgt_platform: multiple
 keywords:
-- Metodi di proprietà IADsFileShare ADSI
+- Metodi della proprietà IADsFileShare ADSI
 topic_type:
 - apiref
 api_name:
@@ -28,16 +28,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f38369a4054f1848d5e35ff8bdb2dda9e9423a87
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6daec9905990d0f5cc5826b82b5361e0fc0653fafb0c617633a34b87c7a0e995
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118691419"
 ---
-# <a name="iadsfileshare-property-methods"></a>Metodi di proprietà IADsFileShare
+# <a name="iadsfileshare-property-methods"></a>Metodi della proprietà IADsFileShare
 
-I metodi di proprietà dell'interfaccia [**IADsFileshare**](/windows/desktop/api/Iads/nn-iads-iadsfileshare) ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere [metodi della proprietà di interfaccia](interface-property-methods.md).
+I metodi di proprietà [**dell'interfaccia IADsFileshare**](/windows/desktop/api/Iads/nn-iads-iadsfileshare) ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere [Metodi delle proprietà di interfaccia.](interface-property-methods.md)
 
 ## <a name="properties"></a>Proprietà
 
@@ -46,14 +46,14 @@ I metodi di proprietà dell'interfaccia [**IADsFileshare**](/windows/desktop/api
 **CurrentUserCount**
 </dt> <dd> <dl>
 
-Il numero di utenti connessi alla condivisione.
+Numero di utenti connessi alla condivisione.
 
 <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati di scripting: **LONG**
 </dt> <dt>
 
 
@@ -75,7 +75,7 @@ Descrizione della condivisione file.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -96,14 +96,14 @@ HRESULT put_Description(
 
 </dt> </dl> </dd> <dt>
 
-**HostComputer**
+**Computer host**
 </dt> <dd> <dl>
 
 Riferimento ADsPath al computer host.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -127,14 +127,14 @@ HRESULT put_HostComputer(
 **MaxUserCount**
 </dt> <dd> <dl>
 
-Il numero massimo di utenti autorizzati ad accedere alla condivisione in una sola volta.
+Numero massimo di utenti autorizzati ad accedere alla condivisione contemporaneamente.
 
 <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati di scripting: **LONG**
 </dt> <dt>
 
 
@@ -152,11 +152,11 @@ HRESULT get_MaxUserCount(
 **Percorso**
 </dt> <dd> <dl>
 
-Percorso file system della directory condivisa.
+Percorso file system percorso della directory condivisa.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -181,7 +181,7 @@ HRESULT put_Path(
 
 ## <a name="examples"></a>Esempio
 
-Per accedere alle proprietà delle condivisioni file in un computer, è innanzitutto necessario eseguire l'associazione a "LanmanServer" nel computer. Nell'esempio di codice seguente viene illustrato come impostare la descrizione e il numero massimo di utenti consentiti per tutte le condivisioni file pubbliche nel computer, denominato "computer", nel dominio predefinito.
+Per accedere alle proprietà delle condivisioni file in un computer, è prima necessario eseguire il binding a "LanmanServer" nel computer. Nell'esempio di codice seguente viene illustrato come configurare la descrizione e il numero massimo di utenti consentiti per tutte le condivisioni file pubbliche nel computer, denominato "myMachine", nel dominio predefinito.
 
 
 ```VB
@@ -208,7 +208,7 @@ Cleanup:
 
 
 
-Nell'esempio di codice seguente viene illustrato come rendere la directory C: \\ cartella esistente una condivisione file pubblica.
+Nell'esempio di codice seguente viene illustrato come impostare la directory C: \\ MyFolder esistente come condivisione file pubblica.
 
 
 ```VB
@@ -233,7 +233,7 @@ Cleanup:
 
 
 
-L'esempio di codice seguente rende la directory C: \\ cartella esistente una condivisione file pubblica.
+L'esempio di codice seguente rende la directory C: \\ MyFolder esistente una condivisione file pubblica.
 
 
 ```C++
@@ -270,9 +270,9 @@ Cleanup:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsFileShare è definito come EB6DCAF0-4b83-11CF-A995-00AA006BC149<br/>        |
+| IID<br/>                      | IID \_ IADsFileShare è definito come EB6DCAF0-4B83-11CF-A995-00AA006BC149<br/>        |
 
 
 
@@ -286,7 +286,7 @@ Cleanup:
 [**IADsFileShare**](/windows/desktop/api/Iads/nn-iads-iadsfileshare)
 </dt> <dt>
 
-[Metodi di proprietà dell'interfaccia](interface-property-methods.md)
+[Metodi delle proprietà dell'interfaccia](interface-property-methods.md)
 </dt> </dl>
 
  

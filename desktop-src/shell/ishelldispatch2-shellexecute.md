@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 5c058275948d5d96805ae24a76389321d7c69b8e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8e524ea4a4422e92068d432a91165dfeb97155cfba1d5e6bd9a06ed75b7550cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118721036"
 ---
 # <a name="ishelldispatch2shellexecute-method"></a>Metodo IShellDispatch2.ShellExecute
 
@@ -62,7 +62,7 @@ IShellDispatch2.ShellExecute( _
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Valore **String** contenente il nome del file in cui **ShellExecute** eseguirà l'azione specificata da *vOperation.*
+Valore **String** contenente il nome del file in cui **ShellExecute** eseguirà l'azione specificata da *vOperation*.
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ Valore **String** contenente il nome del file in cui **ShellExecute** eseguirà 
 
 Tipo: **Variante**
 
-Stringa che contiene i valori dei parametri per l'operazione.
+Stringa contenente i valori dei parametri per l'operazione.
 
 </dd> <dt>
 
@@ -87,9 +87,9 @@ Percorso completo della directory che contiene il file specificato da *sFile*. S
 *vOperation* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
-L'operazione da eseguire. Questo valore è impostato su una delle stringhe verbo supportate dal file. Per una descrizione dei verbi, vedere la sezione Osservazioni. Se questo parametro non viene specificato, viene eseguita l'operazione predefinita.
+L'operazione da eseguire. Questo valore è impostato su una delle stringhe di verbi supportate dal file. Per una descrizione dei verbi, vedere la sezione Osservazioni. Se questo parametro non viene specificato, viene eseguita l'operazione predefinita.
 
 </dd> <dt>
 
@@ -104,13 +104,13 @@ Raccomandazione su come visualizzare inizialmente la finestra dell'applicazione.
 
 | Valore                                                                                                                               | Significato                                                                                                                                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt></dt><dt>0</dt> </dl>  | Aprire l'applicazione con una finestra nascosta.<br/>                                                                                                    |
+| <dl> <dt></dt> <dt>0</dt> </dl>  | Aprire l'applicazione con una finestra nascosta.<br/>                                                                                                    |
 | <dl> <dt></dt> <dt>1</dt> </dl>  | Aprire l'applicazione con una finestra normale. Se la finestra è ridotta a icona o ingrandita, il sistema la ripristina alle dimensioni e alla posizione originali.<br/> |
 | <dl> <dt></dt> <dt>2</dt> </dl>  | Aprire l'applicazione con una finestra ridotta a icona.<br/>                                                                                                 |
 | <dl> <dt></dt> <dt>3</dt> </dl>  | Aprire l'applicazione con una finestra ingrandita.<br/>                                                                                                 |
 | <dl> <dt></dt><dt>4</dt> </dl>  | Aprire l'applicazione con la relativa finestra con le dimensioni e la posizione più recenti. La finestra attiva rimane attiva.<br/>                                  |
 | <dl> <dt></dt><dt>5</dt> </dl>  | Aprire l'applicazione con la relativa finestra con le dimensioni e la posizione correnti.<br/>                                                                        |
-| <dl> <dt></dt><dt>7</dt> </dl>  | Aprire l'applicazione con una finestra ridotta a icona. La finestra attiva rimane attiva.<br/>                                                               |
+| <dl> <dt></dt> <dt>7</dt> </dl>  | Aprire l'applicazione con una finestra ridotta a icona. La finestra attiva rimane attiva.<br/>                                                               |
 | <dl> <dt></dt><dt>10</dt> </dl> | Aprire l'applicazione con la relativa finestra nello stato predefinito specificato dall'applicazione.<br/>                                                       |
 
 
@@ -123,15 +123,15 @@ Raccomandazione su come visualizzare inizialmente la finestra dell'applicazione.
 
 Questo metodo viene implementato e accessibile tramite il [**metodo Shell.ShellExecute.**](./shell-shellexecute.md)
 
-Questo metodo equivale all'avvio di uno dei comandi associati al menu di scelta rapida di un file. Ogni comando è rappresentato da una stringa verbo. Il set di verbi supportati varia da file a file. Il verbo più comunemente supportato è "open", che in genere è anche il verbo predefinito. Altri verbi potrebbero essere supportati solo da determinati tipi di file. Per altre informazioni sui verbi della shell, vedere [Avvio di applicazioni o](launch.md) Estensione dei menu di scelta [rapida.](context.md)
+Questo metodo equivale all'avvio di uno dei comandi associati al menu di scelta rapida di un file. Ogni comando è rappresentato da una stringa verbo. Il set di verbi supportati varia da file a file. Il verbo più comunemente supportato è "open", che in genere è anche il verbo predefinito. Altri verbi potrebbero essere supportati solo da determinati tipi di file. Per altre informazioni sui verbi shell, vedere [Avvio di applicazioni](launch.md) o Estensione di menu di scelta [rapida.](context.md)
 
 Questo metodo non è attualmente disponibile in Microsoft Visual Basic.
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti illustrano l'uso di **ShellExecute per** aprire il Blocco note. L'utilizzo viene visualizzato per JScript e VBScript.
+Gli esempi seguenti illustrano l'uso **di ShellExecute per** aprire Blocco note. L'utilizzo viene visualizzato per JScript e VBScript.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -172,8 +172,8 @@ Vbscript:
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                        |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
