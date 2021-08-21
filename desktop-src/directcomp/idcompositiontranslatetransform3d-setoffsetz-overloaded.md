@@ -1,6 +1,6 @@
 ---
-title: Metodi SetOffsetZ di IDCompositionTranslateTransform3D (Dcomp. h)
-description: Modifica o aggiunge un'animazione al valore della proprietà OffsetZ di un effetto di trasformazione della traduzione 3D.
+title: Metodi IDCompositionTranslateTransform3D SetOffsetZ (Dcomp.h)
+description: Modifica o aggiunge un'animazione al valore della proprietà OffsetZ di un effetto di trasformazione della traslazione 3D.
 ms.assetid: 1467F8A8-15CF-4B3E-8816-76F2F5BFB68B
 keywords:
 - Metodi SetOffsetZ DirectComposition
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: fe138bf331eb2eb3b974e4172d0afb502ee2acee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 449081aaba0caa6ccc649768df3c99726e48fc29681100d8872a4733c7012607
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043069"
 ---
-# <a name="idcompositiontranslatetransform3dsetoffsetz-methods"></a>Metodi IDCompositionTranslateTransform3D:: SetOffsetZ
+# <a name="idcompositiontranslatetransform3dsetoffsetz-methods"></a>Metodi IDCompositionTranslateTransform3D::SetOffsetZ
 
-Modifica o aggiunge un'animazione al valore della proprietà OffsetZ di un effetto di trasformazione della traduzione 3D. La proprietà OffsetZ specifica la traslazione lungo l'asse z.
+Modifica o aggiunge un'animazione al valore della proprietà OffsetZ di un effetto di trasformazione della traslazione 3D. La proprietà OffsetZ specifica la traslazione lungo l'asse z.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Modifica o aggiunge un'animazione al valore della proprietà OffsetZ di un effet
 
 | Metodo                                                                                                              | Descrizione                                            |
 |:--------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------|
-| [**SetOffsetZ (float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontranslatetransform3d-setoffsetz(float))                                     | Modifica il valore della proprietà OffsetZ.<br/>  |
-| [**SetOffsetZ (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontranslatetransform3d-setoffsetz(idcompositionanimation)) | Aggiunge un'animazione al valore della proprietà OffsetZ.<br/> |
+| [**SetOffsetZ(float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontranslatetransform3d-setoffsetz(float))                                     | Modifica il valore della proprietà OffsetZ.<br/>  |
+| [**SetOffsetZ(IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontranslatetransform3d-setoffsetz(idcompositionanimation)) | Aggiunge un'animazione al valore della proprietà OffsetZ.<br/> |
 
 
 
@@ -40,10 +40,10 @@ Modifica o aggiunge un'animazione al valore della proprietà OffsetZ di un effet
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Dcomp. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>Dcomp. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows 8 \[ app desktop\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2012 \[\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 

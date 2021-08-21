@@ -3,7 +3,7 @@ title: Elemento events (ProviderType)
 description: Contiene un elenco degli eventi definiti dal provider.
 ms.assetid: e6d0b70d-cd44-41f6-820b-b2f39577b282
 keywords:
-- EventLog - elemento events
+- Elemento events EventLog
 topic_type:
 - apiref
 api_name:
@@ -38,8 +38,8 @@ Contiene un elenco degli eventi definiti dal provider.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

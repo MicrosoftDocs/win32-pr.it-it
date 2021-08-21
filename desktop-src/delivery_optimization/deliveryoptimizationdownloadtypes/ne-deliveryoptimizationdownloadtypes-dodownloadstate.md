@@ -1,6 +1,6 @@
 ---
 title: Enumerazione DODownloadState
-description: Specifica l'ID dello stato di download corrente, che fa parte DO_DOWNLOAD_STATUS **struttura** .
+description: Specifica l'ID dello stato di download corrente, che fa parte della **struttura DO_DOWNLOAD_STATUS** corrente.
 keywords:
 - Enumerazione DODownloadState, DODownloadState
 topic_type:
@@ -23,7 +23,7 @@ ms.locfileid: "119047139"
 ---
 # <a name="dodownloadstate-enumeration"></a>Enumerazione DODownloadState
 
-**L'enumerazione DODownloadState** specifica l'ID dello stato di download corrente, che fa parte DO_DOWNLOAD_STATUS **struttura.**
+**L'enumerazione DODownloadState** specifica l'ID dello stato di download corrente, che fa parte della **DO_DOWNLOAD_STATUS** corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,10 +44,10 @@ typedef enum _DODownloadState
 | Requisito | Valore |
 |-|-|
 | DODownloadState_Created | L'oggetto di download viene creato ma non è ancora stato avviato. |
-| DODownloadState_Transferring | Download in corso. |
+| DODownloadState_Transferring | Il download è in corso. |
 | DODownloadState_Transferred | Il download viene trasferito e può essere avviato di nuovo scaricando un'altra parte del file. |
 | DODownloadState_Finalized | Il download è finalizzato e non può essere avviato di nuovo. |
-| DODownloadState_Aborted | Il download è stato interrotto. |
+| DODownloadState_Aborted | Download interrotto. |
 | DODownloadState_Paused | Il download è stato sospeso su richiesta o a causa di un errore temporaneo. |
 
 ## <a name="requirements"></a>Requisiti
@@ -55,5 +55,5 @@ typedef enum _DODownloadState
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Client minimo supportato** | \[Windows 10, versione 1809 Solo applicazioni Win32\] |
-| **Server minimo supportato** | Windows Server, solo applicazioni Win32 versione 1809 \[\] |
+| **Server minimo supportato** | Windows Server, versione 1809 \[ Solo applicazioni Win32\] |
 | **Intestazione** | DeliveryOptimizationDownloadTypes.h |

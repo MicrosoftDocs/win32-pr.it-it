@@ -69,7 +69,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
+Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:JobAccountingSheet">

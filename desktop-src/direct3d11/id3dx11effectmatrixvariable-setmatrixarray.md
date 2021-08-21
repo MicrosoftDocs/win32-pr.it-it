@@ -5,7 +5,7 @@ ms.assetid: c90d621c-7500-49c3-ab40-2d0630fc4bec
 keywords:
 - Metodo SetMatrixArray Direct3D 11
 - Metodo SetMatrixArray Direct3D 11, interfaccia ID3DX11EffectMatrixVariable
-- Interfaccia ID3DX11EffectMatrixVariable Direct3D 11, metodo SetMatrixArray
+- Id3DX11EffectMatrixVariable interface Direct3D 11 , Metodo SetMatrixArray
 topic_type:
 - apiref
 api_name:

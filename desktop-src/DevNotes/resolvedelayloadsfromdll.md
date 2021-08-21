@@ -1,7 +1,7 @@
 ---
-description: Invia il lavoro di risoluzione delle importazioni a caricamento ritardato dal file binario padre a un file binario di destinazione.
+description: Inoltra il lavoro per la risoluzione delle importazioni con caricamento ritardato dal file binario padre a un file binario di destinazione.
 ms.assetid: 65629d7b-36b0-426b-a20d-ec736b8461dc
-title: ResolveDelayLoadsFromDll (funzione)
+title: Funzione ResolveDelayLoadsFromDll
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_location:
 - kernelbase.dll
 - mincoredload.dll
 - minkernelbase.dll
-ms.openlocfilehash: a0fb517de7384a964c21c9e1a0a3e695a0d6e6cc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 894360a20456b73d0cfad19cd125405caf0c3624821aca21e3e107699d1cc372
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571541"
 ---
-# <a name="resolvedelayloadsfromdll-function"></a>ResolveDelayLoadsFromDll (funzione)
+# <a name="resolvedelayloadsfromdll-function"></a>Funzione ResolveDelayLoadsFromDll
 
-Invia il lavoro di risoluzione delle importazioni a caricamento ritardato dal file binario padre a un file binario di destinazione.
+Inoltra il lavoro per la risoluzione delle importazioni con caricamento ritardato dal file binario padre a un file binario di destinazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,14 +45,14 @@ NTSTATUS WINAPI ResolveDelayLoadsFromDll(
 
 <dl> <dt>
 
-*ParentBase* \[ in\]
+*ParentBase* \[ Pollici\]
 </dt> <dd>
 
 Indirizzo di base del modulo che ritarda il caricamento di un altro file binario.
 
 </dd> <dt>
 
-*TargetDllName* \[ in\]
+*TargetDllName* \[ Pollici\]
 </dt> <dd>
 
 Nome della DLL di destinazione.
@@ -62,13 +62,13 @@ Nome della DLL di destinazione.
 *Flag* 
 </dt> <dd>
 
-Riservati deve essere 0.
+Riservato; deve essere 0.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Indirizzo del descrittore di caricamento ritardato, se trovato. in caso contrario, **null**.
+Indirizzo del descrittore delay-load, se viene trovato; in caso contrario, **NULL.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,7 +85,7 @@ Indirizzo del descrittore di caricamento ritardato, se trovato. in caso contrari
 
 <dl> <dt>
 
-[Supporto del linker per le DLL di Delay-Loaded](https://msdn.microsoft.com/library/151kt790(v=VS.71).aspx)
+[Supporto del linker per Delay-Loaded DLL](https://msdn.microsoft.com/library/151kt790(v=VS.71).aspx)
 </dt> </dl>
 
  

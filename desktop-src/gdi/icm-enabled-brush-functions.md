@@ -1,5 +1,5 @@
 ---
-description: Gestione colori immagine Microsoft (ICM) garantisce che il rendering di un'immagine a colori, un elemento grafico o un oggetto di testo sia il più vicino possibile alla finalità originale in qualsiasi dispositivo, nonostante le differenze nelle tecnologie di creazione dell'immagine e nelle funzionalità di colore tra i dispositivi.
+description: Gestione colori immagini Microsoft (ICM) garantisce che il rendering di un'immagine a colori, un elemento grafico o un oggetto di testo sia il più vicino possibile alla finalità originale in qualsiasi dispositivo, nonostante le differenze nelle tecnologie di creazione di immagini e nelle funzionalità di colore tra i dispositivi.
 ms.assetid: ad80e6ad-00e7-4e93-8527-39b3204ef445
 title: ICM-Enabled brush
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "119037899"
 ---
 # <a name="icm-enabled-brush-functions"></a>ICM-Enabled brush
 
-Gestione colori immagine Microsoft (ICM) garantisce che il rendering di un'immagine a colori, un elemento grafico o un oggetto di testo sia il più vicino possibile alla finalità originale in qualsiasi dispositivo, nonostante le differenze nelle tecnologie di creazione dell'immagine e nelle funzionalità di colore tra i dispositivi. Se si esegue la scansione di un'immagine o di un altro elemento grafico in uno scanner di colori, scaricarla tramite Internet, visualizzarla o modificarla sullo schermo o generarla su carta, film o altri supporti, ICM 2.0 consente di mantenere i colori coerenti e accurati. Per altre informazioni sui ICM, vedere [Windows Color System.](/previous-versions//dd372446(v=vs.85))
+Gestione colori immagini Microsoft (ICM) garantisce che il rendering di un'immagine a colori, un elemento grafico o un oggetto di testo sia il più vicino possibile alla finalità originale in qualsiasi dispositivo, nonostante le differenze nelle tecnologie di creazione di immagini e nelle funzionalità di colore tra i dispositivi. Se si esegue la scansione di un'immagine o di un altro elemento grafico in uno scanner a colori, scaricarla su Internet, visualizzarla o modificarla sullo schermo o generarla su carta, film o altri supporti, ICM 2.0 consente di mantenere i colori coerenti e accurati. Per altre informazioni sui ICM, vedere Windows [Color System](/previous-versions//dd372446(v=vs.85)).
 
 Le funzioni pennello seguenti sono abilitate per l'uso con ICM:
 

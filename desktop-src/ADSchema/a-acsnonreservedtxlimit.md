@@ -1,10 +1,10 @@
 ---
-title: Attributo ACS-non riservato-TX-Limit
-description: Larghezza di banda massima che un'applicazione utente può trasmettere prima che sia attiva una prenotazione.
+title: Attributo ACS-Non-Reserved-Tx-Limit
+description: Larghezza di banda massima che un'applicazione utente può trasmettere prima che venga effettuata una prenotazione.
 ms.assetid: 5ead8e5b-31e8-438e-8d1b-9aae8601dfc9
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ACS-non riservato-TX-Limit
+- Schema AD dell'attributo ACS-Non-Reserved-Tx-Limit
 - Schema AD dell'attributo aCSNonReservedTxLimit
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 999b1775640624b7825b38ae1632d70773bc75b3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 59c5cd3b46ca4f52bebe377132671ff71dc55e8cf2c3e43384debbcf6a518025
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082045"
 ---
-# <a name="acs-non-reserved-tx-limit-attribute"></a>Attributo ACS-non riservato-TX-Limit
+# <a name="acs-non-reserved-tx-limit-attribute"></a>Attributo ACS-Non-Reserved-Tx-Limit
 
-Larghezza di banda massima che un'applicazione utente può trasmettere prima che sia attiva una prenotazione.
+Larghezza di banda massima che un'applicazione utente può trasmettere prima che venga effettuata una prenotazione.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ACS-non riservato-TX-Limit            |
-| LDAP-Display-Name | aCSNonReservedTxLimit                |
+| CN                | ACS-Non-Reserved-Tx-Limit            |
+| Ldap-Display-Name | aCSNonReservedTxLimit                |
 | Dimensione              | 8 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.780               |
-| System-ID-GUID    | 1cb355a2-56d0-11d1-a9c6-0000f80367c1 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | 1cb355a2-56d0-11d1-a9c6-0000f80367c1 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ Larghezza di banda massima che un'applicazione utente può trasmettere prima che
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Larghezza di banda massima che un'applicazione utente può trasmettere prima che
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Larghezza di banda massima che un'applicazione utente può trasmettere prima che
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Larghezza di banda massima che un'applicazione utente può trasmettere prima che
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Larghezza di banda massima che un'applicazione utente può trasmettere prima che
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Larghezza di banda massima che un'applicazione utente può trasmettere prima che
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 

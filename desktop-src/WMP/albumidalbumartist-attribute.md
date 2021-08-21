@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1925f40a50b15efcd339ad949d5d54ddb915cbe9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4905f0448c7e08abe308a57b1ad08020d47563847db1aa32744c0de3279cdcdb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055389"
 ---
 # <a name="albumidalbumartist-attribute"></a>Attributo AlbumIDAlbumArtist
 
-L'attributo **AlbumIDAlbumArtist** è un identificatore univoco per l'album.
+**L'attributo AlbumIDAlbumArtist** è un identificatore univoco per l'album.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -29,11 +29,11 @@ L'attributo **AlbumIDAlbumArtist** è un identificatore univoco per l'album.
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene archiviato solo nella libreria.
+Questo attributo viene archiviato solo nella libreria .
 
-L'identificatore univoco è una combinazione del titolo dell'album e del nome dell'artista dell'album. In questo attributo, il nome dell'artista dell'album viene visualizzato per primo. Quando si usa il metodo [mediacollection. getAttributeStringCollection](mediacollection-getattributestringcollection.md) per ottenere un oggetto **StringCollection** usando questo attributo, i valori vengono ordinati in base al nome dell'artista dell'album.
+L'identificatore univoco è una combinazione del titolo dell'album e del nome dell'artista dell'album. In questo attributo il nome dell'artista dell'album viene fornito per primo. Quando si usa il [metodo MediaCollection.getAttributeStringCollection](mediacollection-getattributestringcollection.md) per ottenere un oggetto **StringCollection** usando questo attributo, i valori vengono ordinati in base al nome dell'artista dell'album.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,7 +41,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -52,7 +52,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 [**Attributo AlbumID**](albumid-attribute.md)
 </dt> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

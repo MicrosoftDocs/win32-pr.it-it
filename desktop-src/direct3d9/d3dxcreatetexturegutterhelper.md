@@ -76,7 +76,7 @@ Puntatore a un oggetto mesh [**ID3DXMesh**](id3dxmesh.md) di input.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Numero di texel in base ai quali eseguire l'over-sample della trama e creare l'area di grondaia. Deve essere almeno 1.
+Numero di texel in base ai quali eseguire l'over-sample della trama e creare l'area di margine. Deve essere almeno 1.
 
 </dd> <dt>
 
@@ -97,7 +97,7 @@ Se la funzione ha esito positivo, il valore restituito è S \_ OK. Se la funzion
 
 ## <a name="remarks"></a>Commenti
 
-Usare [**D3DXConcatenateMeshes per**](d3dxconcatenatemeshes.md) trasformare una scena in nuove coordinate.
+Usa [**D3DXConcatenateMeshes**](d3dxconcatenatemeshes.md) per trasformare una scena in nuove coordinate.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -114,7 +114,7 @@ Usare [**D3DXConcatenateMeshes per**](d3dxconcatenatemeshes.md) trasformare una 
 
 <dl> <dt>
 
-[Funzioni di trasferimento della radiance pre-ricalcolate](dx9-graphics-reference-d3dx-functions-prt.md)
+[Funzioni di trasferimento di radiance pre-ricalcolate](dx9-graphics-reference-d3dx-functions-prt.md)
 </dt> </dl>
 
  

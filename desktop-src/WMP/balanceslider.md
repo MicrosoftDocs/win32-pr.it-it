@@ -1,9 +1,9 @@
 ---
 title: BALANCESLIDER
-description: Si tratta di un dispositivo di scorrimento predefinito con i seguenti valori predefiniti. | BALANCESLIDER
+description: Si tratta di un dispositivo di scorrimento predefinito con i valori predefiniti seguenti. | BALANCESLIDER
 ms.assetid: 89f027bf-1c31-4bd5-bb87-ebfd62b02def
 keywords:
-- Media Player Windows BALANCESLIDER
+- BalanceSLIDER Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0de083f0b34b32f9f837791719a6fedec3e4b2ec
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5294a1139ffe3884c38b741faf84aae652e72146c4fb81ca79079494bfc4af71
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119573471"
 ---
 # <a name="balanceslider"></a>BALANCESLIDER
 
-Si tratta di un **dispositivo di scorrimento** predefinito con i seguenti valori predefiniti.
+Si tratta di un dispositivo **di scorrimento predefinito** con i valori predefiniti seguenti.
 
 ``` syntax
 toolTip="Balance"
@@ -34,7 +34,7 @@ value_onchange="jscript:player.settings.balance=value;"
 
 ## <a name="remarks"></a>Commenti
 
-Viene creato un controllo **dispositivo di scorrimento** che imposta il bilanciamento audio. Le descrizioni comandi sono localizzate. Per eseguire l'override di tutte le proprietà di questo **dispositivo di scorrimento** , è possibile specificarle in modo esplicito.
+Verrà creato un controllo **SLIDER** che imposta il bilanciamento dell'audio. Le descrizioni comandi sono localizzate. È possibile eseguire l'override **di tutte** le proprietà di questo dispositivo di scorrimento specificandole in modo esplicito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -42,7 +42,7 @@ Viene creato un controllo **dispositivo di scorrimento** che imposta il bilancia
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------|
-| Versione<br/> | Windows Media Player 7,0 o versione successiva<br/> |
+| Versione<br/> | Windows Media Player 7.0 o versione successiva<br/> |
 
 
 

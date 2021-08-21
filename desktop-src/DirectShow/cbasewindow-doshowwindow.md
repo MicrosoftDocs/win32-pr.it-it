@@ -45,7 +45,7 @@ HRESULT DoShowWindow(
 *ShowCmd* 
 </dt> <dd>
 
-Flag che specifica la modalità di visualizzazione della finestra. Il valore può essere qualsiasi costante definita per il *parametro nCmdShow* della [**funzione ShowWindow.**](/windows/desktop/api/winuser/nf-winuser-showwindow)
+Flag che specifica come deve essere visualizzata la finestra. Il valore può essere qualsiasi costante definita per il *parametro nCmdShow* della [**funzione ShowWindow.**](/windows/desktop/api/winuser/nf-winuser-showwindow)
 
 </dd> </dl>
 
@@ -59,7 +59,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Winutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

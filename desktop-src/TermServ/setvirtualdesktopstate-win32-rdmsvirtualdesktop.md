@@ -1,5 +1,5 @@
 ---
-title: Metodo SetVirtualDesktopState della Win32_RDMSVirtualDesktop classe
+title: Metodo SetVirtualDesktopState della classe Win32_RDMSVirtualDesktop
 description: Aggiorna lo stato del desktop virtuale.
 ms.assetid: 8f4f3d31-0434-4018-a33a-2ffd62c09669
 ms.tgt_platform: multiple

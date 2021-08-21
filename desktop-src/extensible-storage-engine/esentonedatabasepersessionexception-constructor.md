@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sul costruttore EsentOneDatabasePerSessionException
+description: 'Altre informazioni su: Costruttore EsentOneDatabasePerSessionException'
 title: Costruttore EsentOneDatabasePerSessionException
 TOCTitle: 'EsentOneDatabasePerSessionException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentOneDatabasePerSessionException.#ctor
@@ -35,7 +35,7 @@ ms.locfileid: "119040119"
 
 Inizializza una nuova istanza della classe EsentOneDatabasePerSessionException.
 
-**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

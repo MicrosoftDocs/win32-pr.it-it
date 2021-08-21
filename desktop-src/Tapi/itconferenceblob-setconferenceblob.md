@@ -1,21 +1,21 @@
 ---
-description: Il metodo SetConferenceBlob consente di eseguire il commit delle modifiche apportate al BLOB della conferenza. Per inizializzare il BLOB della conferenza per la prima volta, usare invece il metodo init.
+description: Il metodo SetConferenceBlob esegue il commit delle modifiche nel BLOB della conferenza. Per inizializzare il BLOB della conferenza per la prima volta, usare invece il metodo Init.
 ms.assetid: 4a65edb9-77de-42d9-85a1-1e3c41706417
-title: 'Metodo ITConferenceBlob:: SetConferenceBlob (sdpblb. h)'
+title: Metodo ITConferenceBlob::SetConferenceBlob (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47779807e5bde6a070b4600aec903309c7679dc8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 391a20ade99d3e35da9d4f76eaab13b6ba65b07b5693321c6c3b2bb63f53c2d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118865425"
 ---
-# <a name="itconferenceblobsetconferenceblob-method"></a>Metodo ITConferenceBlob:: SetConferenceBlob
+# <a name="itconferenceblobsetconferenceblob-method"></a>Metodo ITConferenceBlob::SetConferenceBlob
 
-\[ I controlli e le interfacce per la comunicazione di telefonia IP Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[I controlli e le interfacce di conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client RTC offre funzionalità simili.\]
 
-Il metodo **SetConferenceBlob** consente di eseguire il commit delle modifiche apportate al BLOB della conferenza. Per inizializzare il BLOB della conferenza per la prima volta, usare invece il metodo [**init**](itconferenceblob-init.md) .
+Il **metodo SetConferenceBlob** esegue il commit delle modifiche nel BLOB della conferenza. Per inizializzare il BLOB della conferenza per la prima volta, usare invece il [**metodo Init.**](itconferenceblob-init.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,17 +33,17 @@ HRESULT SetConferenceBlob(
 
 <dl> <dt>
 
-*Carattere* \[ in\]
+*Set di caratteri* \[ Pollici\]
 </dt> <dd>
 
-[**BLOB \_ \_**](blob-character-set.md) Descrittore del set di caratteri del set di caratteri del BLOB della conferenza.
+[**BLOB \_ Descrittore \_ CHARACTER SET**](blob-character-set.md) del set di caratteri del BLOB della conferenza.
 
 </dd> <dt>
 
-*pBlob* \[ in\]
+*pBlob* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un **BSTR** che contiene il BLOB della conferenza.
+Puntatore a un **oggetto BSTR contenente** il BLOB della conferenza.
 
 </dd> </dl>
 
@@ -55,10 +55,10 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                                   | Descrizione                                                      |
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                     |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Il parametro *charactert* o *pBlob* non è valido.<br/> |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | La memoria disponibile non è sufficiente per eseguire l'operazione.<br/>  |
-| <dl> <dt>**E \_ non riescono**</dt> </dl>        | Errore non specificato.<br/>                                    |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                     |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Il *parametro CharacterSet* *o pBlob* non è valido.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per eseguire l'operazione.<br/>  |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>        | Errore non specificato.<br/>                                    |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Questo metodo non è ancora implementato.<br/>                   |
 
 
@@ -67,7 +67,7 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-L'applicazione deve usare [**SysAllocString**](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) per allocare memoria per il parametro *PBlob* e usare [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) per liberare la memoria quando la variabile non è più necessaria.
+L'applicazione deve usare [**SysAllocString**](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) per allocare memoria per il *parametro pBlob* e [**usare SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) per liberare la memoria quando la variabile non è più necessaria.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,9 +75,9 @@ L'applicazione deve usare [**SysAllocString**](/windows/win32/api/oleauto/nf-ole
 
 | Requisito | Valore |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,0 o versione successiva<br/>                                                 |
-| Intestazione<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versione TAPI<br/> | Richiede TAPI 3.0 o versione successiva<br/>                                                 |
+| Intestazione<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
@@ -89,7 +89,7 @@ L'applicazione deve usare [**SysAllocString**](/windows/win32/api/oleauto/nf-ole
 [**ITConferenceBlob**](itconferenceblob.md)
 </dt> <dt>
 
-[**\_set di caratteri BLOB \_**](blob-character-set.md)
+[**SET \_ DI CARATTERI \_ BLOB**](blob-character-set.md)
 </dt> </dl>
 
  

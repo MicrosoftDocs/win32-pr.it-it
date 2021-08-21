@@ -13,7 +13,7 @@ ms.locfileid: "119083405"
 ---
 # <a name="support-in-windows-xp"></a>Supporto in Windows XP
 
-Per l'esecuzione dell'applicazione in Windows XP, l'utente avrà bisogno di una copia del runtime di Windows Media Format nel computer. È possibile ridistribuire questo runtime con l'applicazione WPD. Il runtime si trova in una cartella di elementi ridistribuibili in Windows Media Format SDK.
+Per l'esecuzione dell'applicazione in Windows XP, l'utente dovrà avere una copia del runtime di Windows Media Format nel computer. È possibile ridistribuire questo runtime con l'applicazione WPD. Il runtime si trova in una cartella di ridistribuibili in Windows Media Format SDK.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

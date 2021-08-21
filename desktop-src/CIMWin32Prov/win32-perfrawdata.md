@@ -224,7 +224,7 @@ Tipo di dati: **uint64**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore del timestamp in unità da 100 nanosecondi.
+Valore del timestamp in 100 unità nanosecondi.
 
 Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
@@ -234,7 +234,7 @@ Questa proprietà viene ereditata da [**Win32 \_ Perf**](win32-perf.md).
 
 ## <a name="remarks"></a>Commenti
 
-La **classe Win32 \_ PerfRawData** deriva da [**Win32 \_ Perf**](win32-perf.md), derivata da [**CIM \_ StatisticalInformation**](cim-statisticalinformation.md).
+La **classe \_ Win32 PerfRawData** deriva da [**Win32 \_ Perf**](win32-perf.md), derivata da [**CIM \_ StatisticalInformation.**](cim-statisticalinformation.md)
 
 Tutte le classi derivate [**da Win32 \_ Perf**](win32-perf.md) sono progettate per essere usate con un [*oggetto di aggiornamento.*](../wmisdk/gloss-r.md) Per altre informazioni su come creare e usare un oggetto di aggiornamento nel linguaggio di programmazione C++, vedere Accesso ai dati sulle [prestazioni in C++.](../wmisdk/accessing-performance-data-in-c--.md) Per altre informazioni su come creare e usare un oggetto di aggiornamento in un linguaggio di programmazione script, vedere [Aggiornamento di dati WMI negli script](../wmisdk/refreshing-wmi-data-in-scripts.md).
 

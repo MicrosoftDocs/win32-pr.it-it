@@ -36,12 +36,12 @@ L'API DRT (Distributed Routing Table) usa le funzioni seguenti.
 
 | Funzione                                                                           | Descrizione                                                                                                                           |
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| [**DrtCreatePnrpBootstrapResolver**](/windows/desktop/api/drt/nf-drt-drtcreatepnrpbootstrapresolver)           | Crea un sistema di risoluzione bootstrap basato sul protocollo PNRP.                                                                              |
-| [**DrtDeletePnrpBootstrapResolver**](/windows/desktop/api/drt/nf-drt-drtdeletepnrpbootstrapresolver)           | Elimina un sistema di risoluzione bootstrap basato sul protocollo PNRP.                                                                              |
+| [**DrtCreatePnrpBootstrapResolver**](/windows/desktop/api/drt/nf-drt-drtcreatepnrpbootstrapresolver)           | Crea un resolver bootstrap basato sul protocollo PNRP.                                                                              |
+| [**DrtDeletePnrpBootstrapResolver**](/windows/desktop/api/drt/nf-drt-drtdeletepnrpbootstrapresolver)           | Elimina un resolver bootstrap basato sul protocollo PNRP.                                                                              |
 | [**DrtCreateDnsBootstrapResolver**](/windows/desktop/api/drt/nf-drt-drtcreatednsbootstrapresolver)             | Crea un provider bootstrap che contatta un host noto in base al nome.                                                             |
 | [**DrtDeleteDnsBootstrapResolver**](/windows/desktop/api/drt/nf-drt-drtdeletednsbootstrapresolver)             | Elimina un provider bootstrap che contatta un host noto in base al nome.                                                             |
 | [**DrtCreateIpv6UdpTransport**](/windows/desktop/api/drt/nf-drt-drtcreateipv6udptransport)                     | Crea un trasporto basato sul protocollo UDP IPv6.                                                                                   |
-| [**DrtDeleteIpv6UdpTransport**](/windows/desktop/api/drt/nf-drt-drtdeleteipv6udptransport)                     | Elimina un trasporto in base al protocollo UDP IPv6.                                                                                   |
+| [**DrtDeleteIpv6UdpTransport**](/windows/desktop/api/drt/nf-drt-drtdeleteipv6udptransport)                     | Elimina un trasporto basato sul protocollo UDP IPv6.                                                                                   |
 | [**DrtCreateDerivedKeySecurityProvider**](/windows/desktop/api/drt/nf-drt-drtcreatederivedkeysecurityprovider) | Crea un provider di sicurezza delle chiavi derivato per DRT.                                                                                  |
 | [**DrtCreateDerivedKey**](/windows/desktop/api/drt/nf-drt-drtcreatederivedkey)                                 | Crea una chiave che può essere utilizzata da [**DrtRegisterKey**](/windows/desktop/api/drt/nf-drt-drtregisterkey) quando DRT usa un provider di sicurezza delle chiavi derivato. |
 | [**DrtDeleteDerivedKeySecurityProvider**](/windows/desktop/api/drt/nf-drt-drtdeletederivedkeysecurityprovider) | Elimina un provider di sicurezza delle chiavi derivato per DRT.                                                                                  |
@@ -72,19 +72,19 @@ L'API DRT (Distributed Routing Table) usa le funzioni seguenti.
 
 | Funzione                                                 | Descrizione                                                                                                                                                                                                             |
 |----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**DrtStartSearch**](/windows/desktop/api/drt/nf-drt-drtstartsearch)                 | Cerca una chiave in DRT usando i criteri specificati nella struttura [**DRT \_ SEARCH \_ INFO.**](/windows/desktop/api/drt/ns-drt-drt_search_info)                                                                                                      |
-| [**DrtContinueSearch**](/windows/desktop/api/drt/nf-drt-drtcontinuesearch)           | Continua una ricerca DRT \_ SEARCH RETURN PATH per una chiave in \_ \_ DRT. Questa funzione viene usata solo quando il flag **fIterative** è impostato su **TRUE** nella struttura [**DRT \_ SEARCH \_ INFO**](/windows/desktop/api/drt/ns-drt-drt_search_info) associata. |
+| [**DrtStartSearch**](/windows/desktop/api/drt/nf-drt-drtstartsearch)                 | Cerca una chiave in DRT usando i criteri specificati nella [**struttura DRT \_ SEARCH \_ INFO.**](/windows/desktop/api/drt/ns-drt-drt_search_info)                                                                                                      |
+| [**DrtContinueSearch**](/windows/desktop/api/drt/nf-drt-drtcontinuesearch)           | Continua la ricerca di una chiave in \_ DRT SEARCH \_ RETURN \_ PATH. Questa funzione viene usata solo quando il flag **fIterative** è **impostato** su TRUE nella struttura [**DRT SEARCH \_ \_ INFO**](/windows/desktop/api/drt/ns-drt-drt_search_info) associata. |
 | [**DrtGetSearchResult**](/windows/desktop/api/drt/nf-drt-drtgetsearchresult)         | Recupera i risultati della ricerca.                                                                                                                                                                                         |
 | [**DrtGetSearchResultSize**](/windows/desktop/api/drt/nf-drt-drtgetsearchresultsize) | Restituisce le dimensioni del successivo risultato della ricerca disponibile.                                                                                                                                                                   |
 | [**DrtGetSearchPath**](/windows/desktop/api/drt/nf-drt-drtgetsearchpath)             | Restituisce un elenco di nodi contattati durante l'operazione di ricerca.                                                                                                                                                          |
 | [**DrtGetSearchPathSize**](/windows/desktop/api/drt/nf-drt-drtgetsearchpathsize)     | Restituisce le dimensioni del percorso di ricerca, che rappresenta il numero di nodi utilizzati nell'operazione di ricerca.                                                                                                             |
-| [**DrtEndSearch**](/windows/desktop/api/drt/nf-drt-drtendsearch)                     | Annulla una ricerca di una chiave in una DRT e, di conseguenza, la restituzione dei risultati tramite [**DRT \_ SEARCH \_ RESULT**](/windows/desktop/api/drt/ns-drt-drt_search_result) viene arrestata. Questa API può essere chiamata in qualsiasi momento dopo l'emissione di una ricerca.              |
+| [**DrtEndSearch**](/windows/desktop/api/drt/nf-drt-drtendsearch)                     | Annulla una ricerca di una chiave in una libreria DRT e, di conseguenza, la restituzione dei risultati tramite [**DRT \_ SEARCH \_ RESULT**](/windows/desktop/api/drt/ns-drt-drt_search_result) viene arrestata. Questa API può essere chiamata in qualsiasi momento dopo l'emissione di una ricerca.              |
 
 
 
  
 
-## <a name="instance-name-functions"></a>Funzioni del nome dell'istanza
+## <a name="instance-name-functions"></a>Funzioni nome istanza
 
 
 
@@ -104,7 +104,7 @@ L'API DRT (Distributed Routing Table) usa le funzioni seguenti.
 [Enumerazioni di tabelle di routing distribuito](distributed-routing-table-enumerations.md)
 </dt> <dt>
 
-[Strutture di tabelle di routing distribuito](distributed-routing-table-structures.md)
+[Strutture delle tabelle di routing distribuito](distributed-routing-table-structures.md)
 </dt> <dt>
 
 [Informazioni di riferimento API Tabella routing distribuito](distributed-routing-table-api-reference.md)

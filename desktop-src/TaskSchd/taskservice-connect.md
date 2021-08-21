@@ -4,8 +4,8 @@ description: Per lo scripting, si connette a un computer remoto e associa tutte 
 ms.assetid: 206087df-307c-4ba9-9e83-915f5287f281
 keywords:
 - Connessione metodo Utilità di pianificazione
-- Connessione metodo Utilità di pianificazione, oggetto TaskService
-- Oggetto TaskService Utilità di pianificazione , Connessione metodo
+- Connessione metodo Utilità di pianificazione , oggetto TaskService
+- Metodo taskService Utilità di pianificazione , Connessione taskservice
 topic_type:
 - apiref
 api_name:
@@ -48,7 +48,7 @@ TaskService.Connect( _
 *serverName* \[ in, facoltativo\]
 </dt> <dd>
 
-Nome del computer a cui ci si vuole connettere. Se il parametro serverName è vuoto, questo metodo verrà eseguito nel computer locale.
+Nome del computer a cui si vuole connettersi. Se il parametro serverName è vuoto, questo metodo verrà eseguito nel computer locale.
 
 </dd> <dt>
 
@@ -79,9 +79,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Il **metodo TaskService.Connessione** deve essere chiamato prima di chiamare uno degli altri [**metodi TaskService.**](taskservice.md)
+Il **metodo TaskService.Connessione** deve essere chiamato prima di chiamare qualsiasi altro [**metodo TaskService.**](taskservice.md)
 
-Se il Connessione ha esito negativo, è possibile raccogliere l'identificatore dell'errore per trovare il significato dell'errore. Nella tabella seguente sono elencati gli identificatori di errore e le relative descrizioni.
+Se il Connessione non riesce, è possibile raccogliere l'identificatore di errore per trovare il significato dell'errore. Nella tabella seguente sono elencati gli identificatori di errore e le relative descrizioni.
 
 
 
@@ -92,14 +92,14 @@ Se il Connessione ha esito negativo, è possibile raccogliere l'identificatore d
 </colgroup>
 <thead>
 <tr class="header">
-<th>Identificatore errore</th>
+<th>Identificatore dell'errore</th>
 <th>Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>0x80070005</td>
-<td>Accesso negato per la connessione al Utilità di pianificazione servizio.</td>
+<td>L'accesso viene negato per connettersi al Utilità di pianificazione servizio.</td>
 </tr>
 <tr class="even">
 <td>0x80041315</td>
@@ -107,7 +107,7 @@ Se il Connessione ha esito negativo, è possibile raccogliere l'identificatore d
 </tr>
 <tr class="odd">
 <td>0x8007000e</td>
-<td>L'applicazione non dispone di memoria sufficiente per completare <em></em> l'operazione oppure l'utente <em>,</em> <em>la password</em>o il dominio ha almeno un valore Null e un valore non Null.</td>
+<td>L'applicazione non dispone di memoria sufficiente per completare <em></em> l'operazione oppure l'utente, <em></em>la <em>password</em>o il dominio ha almeno un valore Null e un valore non Null.</td>
 </tr>
 <tr class="even">
 <td>53</td>
@@ -115,12 +115,12 @@ Se il Connessione ha esito negativo, è possibile raccogliere l'identificatore d
 <ul>
 <li>Il nome computer specificato nel <em>parametro serverName</em> non esiste.</li>
 <li>Quando si tenta di connettersi a un computer Windows Server 2003 o Windows XP e nel computer remoto non è abilitata l'eccezione firewall Condivisione file e stampanti o il servizio Registro di sistema remoto non è in esecuzione.</li>
-<li>Quando si tenta di connettersi a un computer Windows Vista e nel computer remoto non è abilitata l'eccezione del firewall Gestione attività pianificate remote e l'eccezione del firewall Condivisione file e stampanti è abilitata oppure il servizio Registro di sistema remoto non è in esecuzione.</li>
+<li>Quando si tenta di connettersi a un computer Windows Vista e nel computer remoto non è abilitata l'eccezione firewall Gestione attività pianificate remote e l'eccezione firewall Condivisione file e stampanti è abilitata oppure il servizio Registro di sistema remoto non è in esecuzione.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>50</td>
-<td>Non <em>è</em>possibile <em></em> <em>specificare i</em>parametri utente, password o dominio quando ci si connette a un computer remoto Windows XP o Windows Server 2003 da un computer Windows Vista.</td>
+<td>I <em>parametri utente,</em> <em>password</em>o dominio non possono essere specificati durante la connessione a un computer Windows XP o Windows Server 2003 remoto da un computer Windows Vista. <em></em></td>
 </tr>
 </tbody>
 </table>
@@ -129,9 +129,9 @@ Se il Connessione ha esito negativo, è possibile raccogliere l'identificatore d
 
  
 
-Se si desidera connettersi a un computer Windows Vista remoto da un Windows Vista, è necessario consentire l'eccezione del firewall Gestione attività pianificate remote nel computer remoto. Per consentire questa eccezione, fare clic su Avvia, Pannello di controllo, Sicurezza, Consenti un programma tramite Windows Firewalle quindi selezionare la casella di controllo Gestione attività pianificate remote . Fare quindi clic sul pulsante OK nella Windows firewall Impostazioni finestra di dialogo.
+Per connettersi a un computer Windows Vista remoto da un Windows Vista, è necessario consentire l'eccezione del firewall gestione attività pianificate remote nel computer remoto. Per consentire questa eccezione, fare clic su Avvia, Pannello di controllo, Sicurezza, Consenti un programma tramite firewall Windows e quindi selezionare la casella di controllo Gestione attività pianificate remote . Fare quindi clic sul pulsante OK nella finestra Windows firewall Impostazioni finestra di dialogo.
 
-Se ci si connette a un computer remoto Windows XP o Windows Server 2003 da un computer Windows Vista, è necessario consentire l'eccezione firewall Condivisione file e stampanti nel computer remoto. Per consentire questa eccezione, fare clic su Start, Pannello di controllo, fare doppio clic su Windows Firewall, selezionare la scheda Eccezioni e quindi selezionare l'eccezione firewall Condivisione file e stampanti . Fare quindi clic sul pulsante OK nella Windows di dialogo Firewall. Il servizio Registro di sistema remoto deve essere in esecuzione anche nel computer remoto.
+Se ci si connette a un computer Windows XP o Windows Server 2003 remoto da un computer Windows Vista, è necessario consentire l'eccezione del firewall condivisione file e stampanti nel computer remoto. Per consentire questa eccezione, fare clic su Start, Pannello di controllo, fare doppio clic su firewall Windows, selezionare la scheda Eccezioni e quindi selezionare l'eccezione firewall Condivisione file e stampanti. Fare quindi clic sul pulsante OK nella finestra Windows firewall. Anche il servizio Registro di sistema remoto deve essere in esecuzione nel computer remoto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -139,8 +139,8 @@ Se ci si connette a un computer remoto Windows XP o Windows Server 2003 da un co
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
 | Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 

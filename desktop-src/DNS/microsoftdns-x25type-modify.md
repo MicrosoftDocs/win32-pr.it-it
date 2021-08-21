@@ -1,11 +1,11 @@
 ---
 title: Metodo Modify della classe MicrosoftDNS_X25Type
-description: Il metodo modify aggiorna un record di risorse X. 25 (x25).
+description: Il metodo Modify aggiorna un record di risorse X.25 (X25).
 ms.assetid: 2d82d67e-ae29-4ded-86fe-7db0ef5ed74f
 keywords:
-- Modificare il metodo DNS
-- Modificare il metodo DNS, MicrosoftDNS_X25Type classe
-- Classe MicrosoftDNS_X25Type DNS, metodo modify
+- Modificare il DNS del metodo
+- Modificare il metodo DNS , MicrosoftDNS_X25Type classe
+- MicrosoftDNS_X25Type classe DNS , metodo Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10db2fa770d3da8487a712e631c41fdd4256bf7f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 94120c5ccf0f86cf2687941f3442b3e7f16db3c140af5c6234fe475445a3dd06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119573611"
 ---
-# <a name="modify-method-of-the-microsoftdns_x25type-class"></a>Metodo Modify della \_ classe X25Type di MicrosoftDNS
+# <a name="modify-method-of-the-microsoftdns_x25type-class"></a>Metodo Modify della classe MicrosoftDNS \_ X25Type
 
-Il metodo **Modify** aggiorna un record di risorse X. 25 (x25).
+Il **metodo Modify** aggiorna un record di risorse X.25 (X25).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,21 +44,21 @@ void Modify(
 
 <dl> <dt>
 
-Valore *TTL* \[ in, facoltativo\]
+*TTL* \[ in, facoltativo\]
 </dt> <dd>
 
-Tempo, in secondi, che l'RR può memorizzare nella cache da un resolver DNS.
+Tempo, in secondi, in cui il RR può essere memorizzato nella cache da un resolver DNS.
 
 </dd> <dt>
 
 *PSDNAddress* \[ in, facoltativo\]
 </dt> <dd>
 
-Indirizzo PSDN del proprietario dell'RR.
+Indirizzo PSDN del proprietario del RR.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
 Riferimento al nuovo oggetto.
@@ -71,7 +71,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i parametri non specificati rimangono invariati nel record modificato.
+Qualsiasi parametro non specificato viene lasciato invariato nel record modificato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,7 +82,7 @@ Tutti i parametri non specificati rimangono invariati nel record modificato.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -90,13 +90,13 @@ Tutti i parametri non specificati rimangono invariati nel record modificato.
 
 <dl> <dt>
 
-[**\_X25Type MicrosoftDNS**](microsoftdns-x25type.md)
+[**MicrosoftDNS \_ X25Type**](microsoftdns-x25type.md)
 </dt> <dt>
 
 [**Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS \_ X25Type**](microsoftdns-x25type-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

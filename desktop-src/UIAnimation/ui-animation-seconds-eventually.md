@@ -19,7 +19,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119058159"
 ---
-# <a name="ui_animation_seconds_eventually"></a>SECONDI DI \_ \_ ANIMAZIONE INTERFACCIA \_ UTENTE
+# <a name="ui_animation_seconds_eventually"></a>SECONDI DI \_ ANIMAZIONE \_ DELL'INTERFACCIA \_ UTENTE ALLA FINE
 
 Indica che Windows'animazione può ritardare l'avvio pianificato di uno storyboard per il tempo necessario per evitare conflitti di pianificazione.
 
@@ -27,7 +27,7 @@ Indica che Windows'animazione può ritardare l'avvio pianificato di uno storyboa
 
 | Costante/valore                                                                                                                                                                                                                                                                  | Descrizione                       |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------|
-| <span id="UI_ANIMATION_SECONDS_EVENTUALLY"></span><span id="ui_animation_seconds_eventually"></span><dl> <dt>**Interfaccia utente \_ SECONDI \_ DI \_ ANIMAZIONE ALLA**</dt> FINE <dt>-1.0</dt> </dl> | SECONDI DI \_ ANIMAZIONE \_ INTERFACCIA UTENTE<br/> |
+| <span id="UI_ANIMATION_SECONDS_EVENTUALLY"></span><span id="ui_animation_seconds_eventually"></span><dl> <dt>**Interfaccia utente \_ SECONDI \_ DI \_ ANIMAZIONE ALLA**</dt> FINE <dt>-1.0</dt> </dl> | SECONDI DI \_ ANIMAZIONE \_ DELL'INTERFACCIA UTENTE<br/> |
 
 
 
@@ -37,7 +37,7 @@ Indica che Windows'animazione può ritardare l'avvio pianificato di uno storyboa
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8, Windows 7 e l'aggiornamento della piattaforma solo per Windows 7 \[ app desktop\]<br/>    |
+| Client minimo supportato<br/> | Windows 8, Windows 7 e Aggiornamento piattaforma solo per Windows 7 \[ app desktop\]<br/>    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                  |
 | Intestazione<br/>                   | <dl> <dt>UIAnimation.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>UIAnimation.idl</dt> </dl> |

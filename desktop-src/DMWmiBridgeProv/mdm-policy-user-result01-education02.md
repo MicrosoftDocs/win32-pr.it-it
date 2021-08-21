@@ -1,10 +1,10 @@
 ---
 title: MDM_Policy_User_Result01_Education02 classe
-description: La classe Mdm \_ Policy \_ User \_ Result01 \_ Education02 rappresenta i criteri di formazione.
+description: La classe MDM \_ Policy \_ User \_ Result01 \_ Education02 rappresenta i criteri di formazione.
 ms.assetid: 34dcc478-5f39-4e1a-908b-46cbbf2ff4fd
 keywords:
 - MDM_Policy_User_Result01_Education02 classe
-- MDM_Policy_User_Result01_Education02 classe, descritta
+- MDM_Policy_User_Result01_Education02 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -24,11 +24,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119077055"
 ---
-# <a name="mdm_policy_user_result01_education02-class"></a>Classe \_ Mdm Policy User \_ \_ Result01 \_ Education02
+# <a name="mdm_policy_user_result01_education02-class"></a>Classe \_ MDM Policy User \_ \_ Result01 \_ Education02
 
-\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La classe Mdm \_ Policy \_ User \_ Result01 \_ Education02 rappresenta i criteri di formazione.
+La classe MDM \_ Policy \_ User \_ Result01 \_ Education02 rappresenta i criteri di formazione.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -48,23 +48,23 @@ class MDM_Policy_User_Result01_Education02
 
 ## <a name="members"></a>Members
 
-La **classe MDM Policy User \_ \_ \_ Result01 \_ Education02** ha questi tipi di membri:
+La **classe MDM Policy User \_ \_ \_ Result01 \_ Education02** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe Mdm Policy User \_ \_ \_ Result01 \_ Education02** ha queste proprietà.
+La **classe MDM Policy User \_ \_ \_ Result01 \_ Education02** ha queste proprietà.
 
 <dl> <dt>
 
 [DefaultPrinterName](/windows/client-management/mdm/policy-csp-education#education-defaultprintername)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -72,13 +72,13 @@ Tipo di accesso: Lettura/Scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -86,13 +86,13 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 **Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -103,7 +103,7 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -111,10 +111,10 @@ Tipo di accesso: Lettura/Scrittura
 [PrinterNames](/windows/client-management/mdm/policy-csp-education#education-printernames)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> </dl>

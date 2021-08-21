@@ -50,7 +50,7 @@ Restituisce il **valore DWORD FOURCC.**  Si noti che se si costruisce **un GUID*
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Fourcc.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Intestazione<br/>  | <dl> <dt>Fourcc.h (include Flussi.h)</dt> </dl>                                                                                    |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

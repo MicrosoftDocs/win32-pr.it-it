@@ -3,7 +3,7 @@ title: TBM_SETPOS messaggio (Commctrl.h)
 description: 'TBM_SETPOS messaggio: imposta la posizione logica corrente del dispositivo di scorrimento in un trackbar.'
 ms.assetid: df6c4e5d-2847-419d-82b5-334d53bb6ba1
 keywords:
-- TBM_SETPOS di controllo Windows messaggio
+- TBM_SETPOS dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:

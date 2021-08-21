@@ -1,6 +1,6 @@
 ---
-title: Texturing State Variables
-description: Texturing State Variables
+title: Texturing delle variabili di stato
+description: Texturing delle variabili di stato
 ms.assetid: 2d9d3d8b-ecaa-412c-8105-ae2ca801784e
 keywords:
 - Texturing State Variables OpenGL
@@ -19,7 +19,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119776581"
 ---
-# <a name="texturing-state-variables"></a>Texturing State Variables
+# <a name="texturing-state-variables"></a>Texturing delle variabili di stato
 
 <dl> <dt><span id="GL_TEXTURE_x"></span><span id="gl_texture_x"></span><span id="GL_TEXTURE_X"></span>GL \_ TEXTURE \_ *x*</dt> <dd> 
 
@@ -38,7 +38,7 @@ ms.locfileid: "119776581"
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------|
-| Descrizione:     | *x* - Immagine trama D a livello di dettaglio *i* |
+| Descrizione:     | *x* - Immagine trama D al livello di dettaglio *i* |
 | Gruppo di attributi: |                                              |
 | Valore iniziale:   |                                              |
 | Comando Get:     | [**glGetTexImage**](glgetteximage.md)       |
@@ -51,7 +51,7 @@ ms.locfileid: "119776581"
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------|
-| Descrizione:     | *x* - Larghezza dell'immagine della trama *D i*                       |
+| Descrizione:     | *x* - Larghezza dell'immagine della trama D *i*                       |
 | Gruppo di attributi: |                                                          |
 | Valore iniziale:   | 0                                                        |
 | Comando Get:     | [**glGetTexLevelParameter**](glgettexlevelparameter.md) |
@@ -60,11 +60,11 @@ ms.locfileid: "119776581"
 
  
 
-</dd> <dt><span id="GL_TEXTURE_HEIGHT"></span><span id="gl_texture_height"></span>ALTEZZA \_ TRAMA \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_HEIGHT"></span><span id="gl_texture_height"></span>ALTEZZA TRAMA GL \_ \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------|
-| Descrizione:     | *x* - Altezza dell'immagine della trama *D i*                      |
+| Descrizione:     | *x* - Altezza dell'immagine della trama D *i*                      |
 | Gruppo di attributi: |                                                          |
 | Valore iniziale:   | 0                                                        |
 | Comando Get:     | [**glGetTexLevelParameter**](glgettexlevelparameter.md) |
@@ -73,11 +73,11 @@ ms.locfileid: "119776581"
 
  
 
-</dd> <dt><span id="GL_TEXTURE_BORDER"></span><span id="gl_texture_border"></span>BORDO TRAMA GL \_ \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_BORDER"></span><span id="gl_texture_border"></span>BORDO DELLA TRAMA GL \_ \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------|
-| Descrizione:     | *x* - D texture image *i* 's border                      |
+| Descrizione:     | *x* - Bordo dell'immagine della trama D *i*                      |
 | Gruppo di attributi: |                                                          |
 | Valore iniziale:   | 0                                                        |
 | Comando Get:     | [**glGetTexLevelParameter**](glgettexlevelparameter.md) |
@@ -99,7 +99,7 @@ ms.locfileid: "119776581"
 
  
 
-</dd> <dt><span id="GL_TEXTURE_BORDER_COLOR"></span><span id="gl_texture_border_color"></span>COLORE \_ BORDO \_ TRAMA \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_BORDER_COLOR"></span><span id="gl_texture_border_color"></span>COLORE BORDO TRAMA GL \_ \_ \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|------------------------------------------------|
@@ -112,20 +112,20 @@ ms.locfileid: "119776581"
 
  
 
-</dd> <dt><span id="GL_TEXTURE_MIN_FILTER"></span><span id="gl_texture_min_filter"></span>FILTRO MIN \_ \_ TRAME GL \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_MIN_FILTER"></span><span id="gl_texture_min_filter"></span>FILTRO MIN TRAMA GL \_ \_ \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|------------------------------------------------|
-| Descrizione:     | Funzione di minificazione delle trame                  |
+| Descrizione:     | Funzione di minificazione della trama                  |
 | Gruppo di attributi: | trama                                        |
-| Valore iniziale:   | LINEARE \_ \_ MIPMAP PIÙ \_ VICINA GL                    |
+| Valore iniziale:   | GL \_ NEAREST \_ MIPMAP \_ LINEAR                    |
 | Comando Get:     | [**glGetTexParameter**](glgettexparameter.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_TEXTURE_MAG_FILTER"></span><span id="gl_texture_mag_filter"></span>FILTRO MAG \_ \_ TRAMA \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_MAG_FILTER"></span><span id="gl_texture_mag_filter"></span>FILTRO \_ MAG \_ TRAMA GL \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|------------------------------------------------|
@@ -142,29 +142,29 @@ ms.locfileid: "119776581"
 
 | Proprietà | Valore |
 |------------------|------------------------------------------------|
-| Descrizione:     | Modalità a capo automatico della trama (*x* è S o T)              |
+| Descrizione:     | Modalità di ritorno a capo trame (*x* è S o T)              |
 | Gruppo di attributi: | trama                                        |
-| Valore iniziale:   | GL \_ REPEAT                                     |
+| Valore iniziale:   | RIPETIZIONE \_ DELLA CONTABILITÀ GENERALE                                     |
 | Comando Get:     | [**glGetTexParameter**](glgettexparameter.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_TEXTURE_ENV_MODE"></span><span id="gl_texture_env_mode"></span>MODALITÀ DI AMBIENTE TRAMA GL \_ \_ \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_ENV_MODE"></span><span id="gl_texture_env_mode"></span>MODALITÀ DI \_ ENV \_ TRAME GL \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|--------------------------------------|
 | Descrizione:     | Funzione dell'applicazione Texture         |
 | Gruppo di attributi: | trama                              |
-| Valore iniziale:   | GL \_ MODULATE                         |
+| Valore iniziale:   | \_MODULAZIONE DELLA CONTABILITÀ GENERALE                         |
 | Comando Get:     | [**glGetTexEnviv**](glgettexenv.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_TEXTURE_ENV_COLOR"></span><span id="gl_texture_env_color"></span>COLORE \_ DELL'AMBIENTE \_ TRAMA GL \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_ENV_COLOR"></span><span id="gl_texture_env_color"></span>COLORE \_ \_ DELL'AMBIENTE DI TRAMA GL \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|--------------------------------------|
@@ -194,7 +194,7 @@ ms.locfileid: "119776581"
 
 | Proprietà | Valore |
 |------------------|--------------------------------------|
-| Descrizione:     | Coefficienti delle equazioni del piano Texgen   |
+| Descrizione:     | Coefficienti delle equazioni del piano texgen   |
 | Gruppo di attributi: | trama                              |
 | Valore iniziale:   |                                      |
 | Comando Get:     | [**glGetTexGenfv**](glgettexgen.md) |
@@ -216,7 +216,7 @@ ms.locfileid: "119776581"
 
  
 
-</dd> <dt><span id="GL_TEXTURE_GEN_MODE"></span><span id="gl_texture_gen_mode"></span>MODALITÀ \_ GEN \_ TRAMA GL \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_GEN_MODE"></span><span id="gl_texture_gen_mode"></span>MODALITÀ GEN TRAMA GL \_ \_ \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|--------------------------------------|

@@ -48,7 +48,7 @@ I GUID seguenti definiscono i tipi per l'oggetto di esclusione reciproca per i f
 [**IMFASFMutualExclusion::SetType**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmutualexclusion-settype)
 </dt> <dt>
 
-[costanti Media Foundation](media-foundation-constants.md)
+[Media Foundation costanti](media-foundation-constants.md)
 </dt> </dl>
 
  

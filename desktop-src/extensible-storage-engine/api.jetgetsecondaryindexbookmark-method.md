@@ -35,7 +35,7 @@ ms.locfileid: "119042529"
 
 Recupera un segnalibro speciale per la voce di indice secondaria nella posizione corrente di un cursore. Questo segnalibro può quindi essere usato per riposizionare in modo efficiente il cursore sulla stessa voce di indice usando JetGotoSecondaryIndexBookmark. Ciò è particolarmente utile quando si riposiziona in un indice secondario che contiene chiavi duplicate o che contiene più voci di indice per lo stesso record.
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
@@ -88,7 +88,7 @@ public static void JetGetSecondaryIndexBookmark(
   - sesid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione da utilizzare.
+    Sessione da usare.
 
 <!-- end list -->
 

@@ -13,7 +13,7 @@ ms.locfileid: "119058219"
 ---
 # <a name="tool-help-functions"></a>Funzioni della Guida degli strumenti
 
-Le funzioni seguenti fanno parte della libreria della Guida dello strumento.
+Le funzioni seguenti fanno parte della libreria della Guida degli strumenti.
 
 
 
@@ -23,11 +23,11 @@ Le funzioni seguenti fanno parte della libreria della Guida dello strumento.
 | [**Heap32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32first)                                 | Recupera informazioni sul primo blocco di un heap allocato da un processo.                      |
 | [**Heap32ListFirst**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32listfirst)                         | Recupera informazioni sul primo heap allocato da un processo specificato.                       |
 | [**Heap32ListNext**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32listnext)                           | Recupera informazioni sull'heap successivo allocato da un processo.                                  |
-| [**Heap32Avanti**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next)                                   | Recupera informazioni sul blocco successivo di un heap allocato da un processo.                       |
-| [**Module32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-module32first)                             | Recupera informazioni sul primo modulo associato a un processo.                                          |
+| [**Heap32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next)                                   | Recupera informazioni sul blocco successivo di un heap allocato da un processo.                       |
+| [**Modulo32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-module32first)                             | Recupera informazioni sul primo modulo associato a un processo.                                          |
 | [**Module32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-module32next)                               | Recupera informazioni sul modulo successivo associato a un processo o a un thread.                                 |
 | [**Process32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-process32first)                           | Recupera informazioni sul primo processo rilevato in uno snapshot di sistema.                                  |
-| [**Processo32Avanti**](/windows/desktop/api/TlHelp32/nf-tlhelp32-process32next)                             | Recupera informazioni sul processo successivo registrato in uno snapshot di sistema.                                      |
+| [**Process32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-process32next)                             | Recupera informazioni sul processo successivo registrato in uno snapshot di sistema.                                      |
 | [**Thread32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32first)                             | Recupera informazioni sul primo thread di qualsiasi processo rilevato in uno snapshot di sistema.                    |
 | [**Thread32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32next)                               | Recupera informazioni sul thread successivo di qualsiasi processo rilevato nello snapshot della memoria di sistema.            |
 | [**Toolhelp32ReadProcessMemory**](/windows/desktop/api/TlHelp32/nf-tlhelp32-toolhelp32readprocessmemory) | Copia la memoria allocata a un altro processo in un buffer fornito dall'applicazione.                                  |

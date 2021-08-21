@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Reboot_Schedule01
-description: Il \_ Schedule01class di riavvio MDM \_ viene usato per configurare un momento specifico per il riavvio di un dispositivo.
+title: MDM_Reboot_Schedule01 classe
+description: La classe \_ Mdm Reboot \_ Schedule01class viene usata per configurare un'ora specifica per il riavvio di un dispositivo.
 ms.assetid: d865609a-9f17-4256-9c69-4fea75011c1f
 keywords:
-- Classe MDM_Reboot_Schedule01
-- Classe MDM_Reboot_Schedule01, descritta
+- MDM_Reboot_Schedule01 classe
+- MDM_Reboot_Schedule01 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7229aca469ee83d9ac2e4b29f6d6b7c54875120
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7ebb5e3e0513aa5ca2232bc8352a3ba23653c63ff17f9290557d3b7b4db97cb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119574321"
 ---
-# <a name="mdm_reboot_schedule01-class"></a>\_Classe Schedule01 di riavvio MDM \_
+# <a name="mdm_reboot_schedule01-class"></a>Classe Mdm \_ Reboot \_ Schedule01
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La **classe \_ \_ Schedule01 di riavvio MDM** viene usata per configurare un momento specifico per il riavvio di un dispositivo.
+La **classe Mdm Reboot \_ \_ Schedule01** viene usata per configurare un'ora specifica per il riavvio di un dispositivo.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -47,23 +47,23 @@ class MDM_Reboot_Schedule01
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ Schedule01 di riavvio MDM** include questi tipi di membri:
+La **classe MDM Reboot \_ \_ Schedule01** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ Schedule01 per il riavvio MDM** ha queste proprietà.
+La **classe Mdm Reboot \_ \_ Schedule01** ha queste proprietà.
 
 <dl> <dt>
 
 [DailyRecurrent](/windows/client-management/mdm/reboot-csp#schedule-dailyrecurrent)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -71,7 +71,7 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -80,14 +80,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica il nome del nodo padre. Per questa classe la stringa è "Schedule".
+Identifica il nome del nodo padre. Per questa classe, la stringa è "Schedule".
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -96,17 +96,17 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/Reboot"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/Reboot"
 
 </dd> <dt>
 
 [Singolo](/windows/client-management/mdm/reboot-csp#schedule-single)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -117,11 +117,11 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                          |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                            |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |
-| DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllfile MOF</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl>      |
+| DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

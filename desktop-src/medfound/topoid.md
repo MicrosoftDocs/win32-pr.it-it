@@ -1,5 +1,5 @@
 ---
-description: Definisce gli identificatori per topologie e nodi di topologia.
+description: Definisce gli identificatori per le topologie e i nodi della topologia.
 ms.assetid: a6d9246a-0cc6-4dbd-affa-e7d0bbddb008
 title: TOPOID (Mfidl.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "119034679"
 ---
 # <a name="topoid"></a>TOPOID
 
-Definisce gli identificatori per topologie e nodi di topologia.
+Definisce gli identificatori per le topologie e i nodi della topologia.
 
 
 ```C++
@@ -36,7 +36,7 @@ typedef unsigned __int64 TOPOID;
 
 <dl> <dt>
 
-[Media Foundation di dati](media-foundation-datatypes.md)
+[Media Foundation tipi di dati](media-foundation-datatypes.md)
 </dt> <dt>
 
 [Topologie](topologies.md)

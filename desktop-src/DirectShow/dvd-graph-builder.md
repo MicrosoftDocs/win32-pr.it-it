@@ -13,7 +13,7 @@ ms.locfileid: "119016059"
 ---
 # <a name="dvd-graph-builder"></a>Generatore Graph DVD
 
-DVD Graph Builder è un oggetto helper per la creazione di grafici di riproduzione DVD. Le applicazioni possono usare questo componente per creare grafici di filtro per la riproduzione e la navigazione dei DVD. Creare questo oggetto chiamando **CoCreateInstance**.
+Dvd Graph Builder è un oggetto helper per la creazione di grafici di riproduzione DVD. Le applicazioni possono usare questo componente per creare grafici di filtro per la riproduzione e la navigazione dei DVD. Creare questo oggetto chiamando **CoCreateInstance**.
 
 
 

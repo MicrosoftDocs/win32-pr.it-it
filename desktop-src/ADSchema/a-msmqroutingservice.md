@@ -1,10 +1,10 @@
 ---
-title: MSMQ-Routing-attributo servizio
-description: Indica se il server fornisce servizi di routing.
+title: Attributo MSMQ-Routing-Service
+description: Indica se questo server fornisce servizi di routing.
 ms.assetid: 9adf0f97-5719-4366-8be2-3d0c48b0aa24
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-Routing-schema di AD attributo servizio
+- Schema AD dell'attributo MSMQ-Routing-Service
 - Schema AD dell'attributo mSMQRoutingService
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da8ae965e19e119788c07bdb2ffe452d29ad7d99
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b1be635e17254acd6d5e5510fa7c5c4c527f93f0356fac1f045085c677855b63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081785"
 ---
-# <a name="msmq-routing-service-attribute"></a>MSMQ-Routing-attributo servizio
+# <a name="msmq-routing-service-attribute"></a>Attributo MSMQ-Routing-Service
 
-Indica se il server fornisce servizi di routing.
+Indica se questo server fornisce servizi di routing.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MSMQ-Routing-servizio                 |
-| LDAP-Display-Name | mSMQRoutingService                   |
+| CN                | MSMQ-Routing-Service                 |
+| Ldap-Display-Name | mSMQRoutingService                   |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1237              |
-| System-ID-GUID    | 2df90d81-009f-11d2-aa4c-00c04fd7d83a |
+| System-Id-Guid    | 2df90d81-009f-11d2-aa4c-00c04fd7d83a |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ Indica se il server fornisce servizi di routing.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**MSMQ-impostazioni**](c-msmqsettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Impostazioni**](c-msmqsettings.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Indica se il server fornisce servizi di routing.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**MSMQ-impostazioni**](c-msmqsettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Impostazioni**](c-msmqsettings.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Indica se il server fornisce servizi di routing.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**MSMQ-impostazioni**](c-msmqsettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Impostazioni**](c-msmqsettings.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Indica se il server fornisce servizi di routing.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**MSMQ-impostazioni**](c-msmqsettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Impostazioni**](c-msmqsettings.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Indica se il server fornisce servizi di routing.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**MSMQ-impostazioni**](c-msmqsettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Impostazioni**](c-msmqsettings.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Indica se il server fornisce servizi di routing.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**MSMQ-impostazioni**](c-msmqsettings.md)<br/> |
+| Classi usate in        | [**MSMQ-Impostazioni**](c-msmqsettings.md)<br/> |
 
 
 

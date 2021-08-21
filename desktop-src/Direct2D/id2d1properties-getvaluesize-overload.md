@@ -1,6 +1,6 @@
 ---
-title: Metodi ID2D1Properties GetValueSize
-description: Ottiene le dimensioni del valore della proprietà in byte, utilizzando l'indice della proprietà.
+title: Metodi GetValueSize id2D1Properties
+description: Ottiene le dimensioni in byte del valore della proprietà utilizzando l'indice della proprietà.
 ms.assetid: 62D47611-1AF7-45F3-BB7B-20BF478811BE
 keywords:
 - Metodi di overload GetValueSize Direct2D
@@ -21,7 +21,7 @@ ms.locfileid: "119075265"
 ---
 # <a name="id2d1propertiesgetvaluesize-methods"></a>Metodi ID2D1Properties::GetValueSize
 
-Ottiene le dimensioni del valore della proprietà in byte, utilizzando l'indice della proprietà.
+Ottiene le dimensioni in byte del valore della proprietà utilizzando l'indice della proprietà.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Ottiene le dimensioni del valore della proprietà in byte, utilizzando l'indice 
 
 | Metodo                                                       | Descrizione                                                                                                     |
 |:-------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|
-| [**GetValueSize(U)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluesize(u))     | Ottiene le dimensioni del valore della proprietà in byte, utilizzando l'indice della proprietà. Si tratta di un overload del modello.<br/> |
-| [**GetValueSize(UINT32)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluesize(uint32)) | Ottiene le dimensioni del valore della proprietà in byte, utilizzando l'indice della proprietà.<br/>                              |
+| [**GetValueSize(U)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluesize(u))     | Ottiene le dimensioni in byte del valore della proprietà utilizzando l'indice della proprietà. Si tratta di un overload del modello.<br/> |
+| [**GetValueSize(UINT32)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluesize(uint32)) | Ottiene le dimensioni in byte del valore della proprietà utilizzando l'indice della proprietà.<br/>                              |
 
 
 

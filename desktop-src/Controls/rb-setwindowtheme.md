@@ -1,9 +1,9 @@
 ---
 title: RB_SETWINDOWTHEME messaggio (Commctrl.h)
-description: Imposta lo stile di visualizzazione di un controllo Rebar.
+description: Imposta lo stile di visualizzazione di un controllo rebar.
 ms.assetid: 5b32b354-3e25-4d02-9334-cc57acf41a73
 keywords:
-- RB_SETWINDOWTHEME del messaggio Windows controlli
+- RB_SETWINDOWTHEME dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "119078550"
 ---
 # <a name="rb_setwindowtheme-message"></a>Messaggio RB \_ SETWINDOWTHEME
 
-Imposta lo stile di visualizzazione di un controllo Rebar.
+Imposta lo stile di visualizzazione di un controllo rebar.
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,12 +41,12 @@ Puntatore a una stringa Unicode che contiene lo stile di visualizzazione rebar d
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito non viene utilizzato.
+Il valore restituito non viene usato.
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Per usare questo messaggio, è necessario specificare un manifesto Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione.](cookbook-overview.md)
+> Per usare questo messaggio, è necessario fornire un manifesto che specifica Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
 
  
 
@@ -56,8 +56,8 @@ Il valore restituito non viene utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

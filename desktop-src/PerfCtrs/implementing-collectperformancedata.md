@@ -1,21 +1,21 @@
 ---
-description: Dopo che il sistema ha correttamente chiamato la funzione OpenPerformanceData, chiama la funzione CollectPerformanceData per raccogliere i dati del contatore.
+description: Dopo che il sistema ha chiamato correttamente la funzione OpenPerformanceData, chiama la funzione CollectPerformanceData per raccogliere i dati del contatore.
 ms.assetid: 73b022df-0148-4afc-8536-8b1c766b1ee6
 title: Implementazione di CollectPerformanceData
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5d0d01dd11a13308bceecbc7f511355c3b3899a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: efc77c071a0a3394012c29e76a6de3ecce8e4f028906d35f8a6b37b69819a7eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775621"
 ---
 # <a name="implementing-collectperformancedata"></a>Implementazione di CollectPerformanceData
 
-Dopo che il sistema ha correttamente chiamato la funzione [**OpenPerformanceData**](/previous-versions/windows/desktop/legacy/aa372200(v=vs.85)) , chiama la funzione [**CollectPerformanceData**](/windows/win32/api/winperf/nc-winperf-pm_collect_proc) per raccogliere i dati del contatore. Se il provider supporta gli oggetti sottoposti a query, contatta il servizio, il driver o l'applicazione a cui è associato e li richiede per i dati del contatore.
+Dopo che il sistema ha chiamato correttamente la funzione [**OpenPerformanceData,**](/previous-versions/windows/desktop/legacy/aa372200(v=vs.85)) chiama la [**funzione CollectPerformanceData**](/windows/win32/api/winperf/nc-winperf-pm_collect_proc) per raccogliere i dati del contatore. Se il provider supporta gli oggetti sottoposti a query, contatta il servizio, il driver o l'applicazione a cui è associato e richiede i dati del contatore.
 
-Nell'esempio seguente viene illustrata un'implementazione della funzione [*CollectPerformanceData*](/windows/win32/api/winperf/nc-winperf-pm_collect_proc) . Il file di intestazione che contiene la definizione dei contatori utilizzati in questa funzione viene illustrato nell' [implementazione di OpenPerformanceData](implementing-openperformancedata.md). Se si usa C++ per implementare questa funzione, assicurarsi di usare extern "C" quando si dichiara la funzione.
+Nell'esempio seguente viene illustrata un'implementazione [*della funzione CollectPerformanceData.*](/windows/win32/api/winperf/nc-winperf-pm_collect_proc) Il file di intestazione che contiene la definizione dei contatori usati in questa funzione è illustrato in [Implementazione di OpenPerformanceData](implementing-openperformancedata.md). Se si usa C++ per implementare questa funzione, assicurarsi di usare extern "C" quando si dichiara la funzione.
 
 
 ```C++

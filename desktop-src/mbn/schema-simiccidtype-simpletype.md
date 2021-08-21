@@ -20,7 +20,7 @@ ms.locfileid: "119035759"
 ---
 # <a name="simiccidtype-simple-type"></a>Tipo semplice simIccIDType
 
-Il **tipo semplice simIccIDType** definisce un tipo per l'elemento [**SimIccID**](schema-simiccid-mbnprofile-element.md) del profilo Mobile Broadband. Questo tipo è una raccolta di cifre e/o lettere maiuscole e minuscole, lunghe almeno un carattere e al massimo 20 caratteri.
+Il **tipo semplice simIccIDType** definisce un tipo per [**l'elemento SimIccID**](schema-simiccid-mbnprofile-element.md) del profilo Mobile Broadband. Questo tipo è una raccolta di cifre e/o lettere maiuscole e minuscole, con una lunghezza di almeno un carattere e al massimo 20 caratteri.
 
 ``` syntax
 <xs:simpleType name="simIccIDType">

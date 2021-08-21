@@ -1,5 +1,5 @@
 ---
-description: Il formato di file DirectX .x non è specifico di alcuna applicazione. Usa modelli che non dipendono dal modo in cui viene usato il file. In questo modo il formato di file con estensione x può essere usato da qualsiasi applicazione client.
+description: Il formato di file DirectX .x non è specifico di alcuna applicazione. Usa modelli che non dipendono da come viene usato il file. In questo modo il formato di file X può essere usato da qualsiasi applicazione client.
 ms.assetid: fe74f65a-ed9f-4669-82fd-ccd9181df517
 title: Codifica testo
 ms.topic: article
@@ -13,9 +13,9 @@ ms.locfileid: "119044199"
 ---
 # <a name="text-encoding"></a>Codifica testo
 
-Il formato di file DirectX .x non è specifico di alcuna applicazione. Usa modelli che non dipendono dal modo in cui viene usato il file. In questo modo il formato di file con estensione x può essere usato da qualsiasi applicazione client.
+Il formato di file DirectX .x non è specifico di alcuna applicazione. Usa modelli che non dipendono da come viene usato il file. In questo modo il formato di file X può essere usato da qualsiasi applicazione client.
 
-Le sezioni seguenti trattano il contenuto e la sintassi del formato di file, che usa l'estensione x in DirectX SDK.
+Le sezioni seguenti illustrano il contenuto e la sintassi del formato di file, che usa l'estensione x in DirectX SDK.
 
 -   [Dati](dx9-graphics-reference-x-file-textencoding-data.md)
 -   [Parole riservate, intestazione e commenti](reserved-words--header--and-comments.md)

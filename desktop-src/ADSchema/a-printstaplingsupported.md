@@ -1,10 +1,10 @@
 ---
-title: Stampa-graffatura-attributo supportato
-description: TRUE se la stampante supporta la graffettatura. Fornito dal driver.
+title: Attributo print-stapling-supported
+description: TRUE se la stampante supporta la graffatura. Fornito dal driver.
 ms.assetid: c0d1cbc5-7657-45a8-b154-a67f57386f52
 ms.tgt_platform: multiple
 keywords:
-- Stampa-graffatura-schema AD dell'attributo supportato
+- Schema AD dell'attributo print-stapling-supported
 - Schema AD dell'attributo printStaplingSupported
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12303d9a18f267ec4eaef3a33dc8ec7350967aa6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2216bc028bd87c6760d9336fe29150c331560906023d0f97faec96c77239d72b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081405"
 ---
-# <a name="print-stapling-supported-attribute"></a>Stampa-graffatura-attributo supportato
+# <a name="print-stapling-supported-attribute"></a>Attributo print-stapling-supported
 
-**True** se la stampante supporta la graffettatura. Fornito dal driver.
+**TRUE** se la stampante supporta la graffatura. Fornito dal driver.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Stampa-graffatura-supportata             |
-| LDAP-Display-Name | printStaplingSupported               |
+| CN                | Supporto della graffatura di stampa             |
+| Ldap-Display-Name | printStaplingSupported               |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.281               |
-| System-ID-GUID    | ba305f73-47e3-11d0-a1a6-00c04fd930c9 |
+| System-Id-Guid    | ba305f73-47e3-11d0-a1a6-00c04fd930c9 |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ ms.locfileid: "106302863"
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| A valore singolo       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ ms.locfileid: "106302863"
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| A valore singolo       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ ms.locfileid: "106302863"
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| A valore singolo       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ ms.locfileid: "106302863"
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| A valore singolo       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ ms.locfileid: "106302863"
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| A valore singolo       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ ms.locfileid: "106302863"
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| A valore singolo       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Vero                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 

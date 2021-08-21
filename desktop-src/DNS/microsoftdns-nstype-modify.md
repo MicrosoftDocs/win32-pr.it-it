@@ -1,11 +1,11 @@
 ---
 title: Metodo Modify della classe MicrosoftDNS_NSType
-description: Il metodo modify aggiorna un record di risorse del server dei nomi (NS).
+description: Il metodo Modify aggiorna un record di risorse del server dei nomi(NS).
 ms.assetid: da625231-cf4e-4526-b713-737e6b9f5831
 keywords:
-- Modificare il metodo DNS
-- Modificare il metodo DNS, MicrosoftDNS_NSType classe
-- Classe MicrosoftDNS_NSType DNS, metodo modify
+- Modificare il DNS del metodo
+- Modificare il DNS del metodo , MicrosoftDNS_NSType classe
+- MicrosoftDNS_NSType classe DNS , metodo Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3dd26b7c0f1c31ef3ea742f20f70df8646a087b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a8adcebb06aa7d796b9d4c79282fe04ec9047d54a0be1c69a302fdcddf78ca34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119573781"
 ---
-# <a name="modify-method-of-the-microsoftdns_nstype-class"></a>Metodo Modify della \_ classe NSType di MicrosoftDNS
+# <a name="modify-method-of-the-microsoftdns_nstype-class"></a>Metodo Modify della classe NSType MicrosoftDNS \_
 
-Il metodo **Modify** aggiorna un record di risorse del server dei nomi (NS).
+Il **metodo Modify** aggiorna un record di risorse del server dei nomi(NS).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,10 +44,10 @@ void Modify(
 
 <dl> <dt>
 
-Valore *TTL* \[ in, facoltativo\]
+*TTL* \[ in, facoltativo\]
 </dt> <dd>
 
-Tempo, in secondi, che l'RR può memorizzare nella cache da un resolver DNS.
+Tempo, in secondi, in cui RR può essere memorizzato nella cache da un resolver DNS.
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ Host autorevole per il dominio.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
 Riferimento all'oggetto modificato.
@@ -71,7 +71,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i parametri non specificati rimangono invariati nel record modificato.
+Qualsiasi parametro non specificato viene lasciato invariato nel record modificato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,7 +82,7 @@ Tutti i parametri non specificati rimangono invariati nel record modificato.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -90,13 +90,13 @@ Tutti i parametri non specificati rimangono invariati nel record modificato.
 
 <dl> <dt>
 
-[**\_PTRType MicrosoftDNS**](microsoftdns-ptrtype.md)
+[**MicrosoftDNS \_ PTRType**](microsoftdns-ptrtype.md)
 </dt> <dt>
 
-[**Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS \_ PTRType**](microsoftdns-ptrtype-createinstancefrompropertydata.md)
+[**Metodo CreateInstanceFromPropertyData della classe PTRType MicrosoftDNS \_**](microsoftdns-ptrtype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

@@ -29,11 +29,11 @@ g \_ wszWMMediaCredits
 
 ## <a name="data-type"></a>Tipo di dati
 
-**STRINGA DI TIPO WMT \_ \_**
+**STRINGA DI \_ TIPO \_ WMT**
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene usato per la trasmissione di programmi televisivi o radio.
+Questo attributo viene usato per la trasmissione tv o radio.
 
 ## <a name="see-also"></a>Vedi anche
 

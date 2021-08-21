@@ -37,7 +37,7 @@ ms.locfileid: "119039379"
 
 Ottiene o imposta il numero massimo di pagine dell'archivio versioni riservate per questa istanza.
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
@@ -70,6 +70,6 @@ Tipo: [System.Int32](/dotnet/api/system.int32)
 
 [Classe InstanceParameters](./instanceparameters-class.md)
 
-[Membri instanceParameters](./instanceparameters-members.md)
+[Membri di InstanceParameters](./instanceparameters-members.md)
 
 [Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

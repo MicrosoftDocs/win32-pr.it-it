@@ -1,5 +1,5 @@
 ---
-title: Glossario WMFormat
+title: Glossario di WMFormat
 description: Per trovare un termine nel glossario, fare clic sulla lettera dell'alfabeto che rappresenta la prima lettera del termine da cercare. È anche possibile leggere i termini di glossario all'interno del testo della Guida facendo clic sui collegamenti ai termini di glossario sottolineati.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 7142163b-ee2c-43e3-9c17-3e039abbeeaf
@@ -12,11 +12,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119083775"
 ---
-# <a name="wmformat-glossary"></a>Glossario WMFormat
+# <a name="wmformat-glossary"></a>Glossario di WMFormat
 
 Per trovare un termine nel glossario, fare clic sulla lettera dell'alfabeto che rappresenta la prima lettera del termine da cercare.
 
-È anche possibile leggere i termini di glossario all'interno del testo della Guida facendo clic sui collegamenti ai termini di glossario sottolineati. Dopo aver fatto clic su un collegamento al glossario, il termine e la definizione del glossario vengono visualizzati in una finestra popup. Per chiudere la finestra, fare clic in un punto qualsiasi dello schermo.
+È anche possibile leggere i termini di glossario all'interno del testo della Guida facendo clic sui collegamenti ai termini di glossario sottolineati. Dopo aver fatto clic su un collegamento al glossario, il termine e la definizione del glossario vengono visualizzati in una finestra popup. Per chiudere la finestra, fare clic in un punto qualsiasi della schermata.
 
 <dl> <dt>
 
@@ -44,7 +44,7 @@ Un supporto di trasmissione progettato per trasferimenti di dati ad alta velocit
 <span id="wmformat.cleanpoint"></span><span id="WMFORMAT.CLEANPOINT"></span>**cleanpoint**
 </dt> <dd>
 
-Esempio compresso che non dipende da altri campioni per la decompressione. È valido solo per cercare un punto pulito.
+Esempio compresso che non dipende da nessun altro campione per la decompressione. È valido solo per cercare un punto di pulizia.
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ Un Windows file multimediale non crittografato.
 <span id="wmformat.codec"></span><span id="WMFORMAT.CODEC"></span>**codec**
 </dt> <dd>
 
-Abbreviazione di compressore/decompressore. Software o hardware usato per comprimere e decomprimere i supporti digitali.
+Abbreviazione per abbreviato/decompressore. Software o hardware usato per comprimere e decomprimere i supporti digitali.
 
 </dd> <dt>
 
@@ -72,28 +72,28 @@ Audio, video, immagini, testo o qualsiasi altra informazione contenuta in un fil
 <span id="wmformat.content_header"></span><span id="WMFORMAT.CONTENT_HEADER"></span>**intestazione del contenuto**
 </dt> <dd>
 
-Parte della struttura di file di un Windows file multimediale che contiene le informazioni necessarie a un computer client per decomprimere ed eseguire il rendering dei dati del contenuto. In un file in pacchetto esiste un'intestazione di contenuto aggiuntiva che contiene l'ID chiave, l'ID contenuto e l'URL di acquisizione della licenza. Questa intestazione del contenuto può includere anche un numero di versione di individualizzazione obbligatorio e attributi definiti dal provider di contenuti.
+Parte della struttura di file di un Windows file multimediale contenente le informazioni necessarie per la decompressione e il rendering dei dati del contenuto da parte di un computer client. In un file in pacchetto esiste un'intestazione di contenuto aggiuntiva che contiene l'ID chiave, l'ID contenuto e l'URL di acquisizione della licenza. Questa intestazione del contenuto può includere anche un numero di versione di individualizzazione obbligatorio e gli attributi definiti dal provider di contenuti.
 
 </dd> <dt>
 
 <span id="wmformat.content_owner"></span><span id="WMFORMAT.CONTENT_OWNER"></span>**proprietario del contenuto**
 </dt> <dd>
 
-La persona o l'organizzazione che crea Windows file multimediali, ad esempio un'etichetta di record, uno studio cinematografico o un artista.
+La persona o l'organizzazione che crea Windows file multimediali, ad esempio un'etichetta di record, uno studio di film o un artista.
 
 </dd> <dt>
 
 <span id="wmformat.cookie"></span><span id="WMFORMAT.COOKIE"></span>**cookie**
 </dt> <dd>
 
-File di dati di piccole dimensioni archiviato nel computer locale di un utente e che contiene informazioni sull'utente pertinenti a un sito Web, ad esempio le preferenze dell'utente.
+File di dati di piccole dimensioni archiviato nel computer locale di un utente che contiene informazioni sull'utente pertinenti a un sito Web, ad esempio le preferenze dell'utente.
 
 </dd> <dt>
 
 <span id="wmformat.custom_profile"></span><span id="WMFORMAT.CUSTOM_PROFILE"></span>**profilo personalizzato**
 </dt> <dd>
 
-Gruppo di impostazioni, definite da un utente finale, per la configurazione dell'output del codificatore.
+Gruppo di impostazioni, definito da un utente finale, per la configurazione dell'output del codificatore.
 
 </dd> <dt>
 
@@ -114,7 +114,7 @@ Per combinare i campi interlacciati in un fotogramma video in modo che, durante 
 <span id="wmformat.delta_frame"></span><span id="WMFORMAT.DELTA_FRAME"></span>**Frame differenziale**
 </dt> <dd>
 
-Fotogramma video che contiene solo le modifiche del fotogramma precedente. Al contrario, un fotogramma chiave contiene tutti i dati necessari per costruire tale fotogramma.
+Fotogramma video che contiene solo le modifiche rispetto al fotogramma precedente. Al contrario, un fotogramma chiave contiene tutti i dati necessari per costruire tale fotogramma.
 
 </dd> <dt>
 
@@ -128,14 +128,14 @@ Qualsiasi tecnologia usata per proteggere gli interessi dei proprietari di conte
 <span id="wmformat.digital_rights_management__drm__component"></span><span id="WMFORMAT.DIGITAL_RIGHTS_MANAGEMENT__DRM__COMPONENT"></span>**Componente DRM (Digital Rights Management)**
 </dt> <dd>
 
-Componente di un lettore che gestisce tutte le funzioni di Digital Rights Management, ad esempio la decrittografia di file in pacchetto o l'avvio dell'acquisizione della licenza.
+Componente di un lettore che gestisce tutte le funzioni di Digital Rights Management, ad esempio la decrittografia dei file in pacchetto o l'avvio dell'acquisizione della licenza.
 
 </dd> <dt>
 
 <span id="wmformat.directx_media_object__dmo_"></span><span id="WMFORMAT.DIRECTX_MEDIA_OBJECT__DMO_"></span>**Oggetto multimediale DirectX (DMO)**
 </dt> <dd>
 
-Oggetto COM che elabora flussi di dati multimediali dai buffer allocati dal client.
+Oggetto COM che elabora i flussi di dati multimediali dai buffer allocati dal client.
 
 </dd> <dt>
 
@@ -163,7 +163,7 @@ Per convertire contenuto audio e video in un formato digitale specificato, in ge
 <span id="wmformat.encrypt"></span><span id="WMFORMAT.ENCRYPT"></span>**crittografare**
 </dt> <dd>
 
-Per nascondere il contenuto a livello di codice per nasconderne la sostanza.
+Per nascondere il contenuto a livello di codice.
 
 </dd> <dt>
 
@@ -177,7 +177,7 @@ Una delle numerose immagini sequenziali che costituiscono il video.
 <span id="wmformat.frame_rate"></span><span id="WMFORMAT.FRAME_RATE"></span>**frequenza dei fotogrammi**
 </dt> <dd>
 
-Numero di fotogrammi video visualizzati al secondo. Le frequenze fotogrammi più elevate producono in genere un movimento più uniforme nell'immagine.
+Numero di fotogrammi video visualizzati al secondo. Frequenze fotogrammi più elevate producono in genere un movimento più uniforme nell'immagine.
 
 </dd> <dt>
 
@@ -205,28 +205,28 @@ Processo di rendere univoco il componente DRM (Digital Rights Management) nel le
 <span id="wmformat.interlace"></span><span id="WMFORMAT.INTERLACE"></span>**interlacciato**
 </dt> <dd>
 
-Per visualizzare un fotogramma video in due campi. Un campo contiene le righe pari del frame, l'altro contiene le righe dispari. Durante la riproduzione, le righe in un campo vengono visualizzate per prime, quindi vengono visualizzate le righe nel secondo campo.
+Per visualizzare un fotogramma video in due campi. Un campo contiene le righe pari del frame, l'altro contiene le righe dispari. Durante la riproduzione, vengono visualizzate prima le righe in un campo, quindi le righe nel secondo campo.
 
 </dd> <dt>
 
-<span id="wmformat.inverse_telecine"></span><span id="WMFORMAT.INVERSE_TELECINE"></span>**telecina inversa**
+<span id="wmformat.inverse_telecine"></span><span id="WMFORMAT.INVERSE_TELECINE"></span>**televida inversa**
 </dt> <dd>
 
-Processo che rimuove i fotogrammi aggiunti quando un film da 24 fps è stato convertito in un video a 30 fps.
+Processo che rimuove i fotogrammi aggiunti quando la filmato a 24 fps è stata convertita in video a 30 fps.
 
 </dd> <dt>
 
 <span id="wmformat.key"></span><span id="WMFORMAT.KEY"></span>**chiave**
 </dt> <dd>
 
-Frammento di dati necessario per sbloccare un file Windows file multimediale. Questa chiave è inclusa in una licenza separata.
+Una porzione di dati necessaria per sbloccare un pacchetto Windows file multimediale. Questa chiave è inclusa in una licenza separata.
 
 </dd> <dt>
 
 <span id="wmformat.key_frame"></span><span id="WMFORMAT.KEY_FRAME"></span>**fotogramma chiave**
 </dt> <dd>
 
-Frame video contenente tutti i dati necessari per costruire un'immagine senza fare riferimento ai fotogrammi precedenti.
+Fotogramma video contenente tutti i dati necessari per costruire un'immagine senza riferimenti ai fotogrammi precedenti.
 
 </dd> <dt>
 
@@ -240,25 +240,25 @@ Valore che identifica la chiave per un file Windows file multimediale.
 <span id="wmformat.license"></span><span id="WMFORMAT.LICENSE"></span>**licenza**
 </dt> <dd>
 
-Dati collegati a contenuto protetto che descrivono come è possibile usare il contenuto.
+Dati associati a contenuto protetto che descrivono come è possibile usare il contenuto.
 
 </dd> <dt>
 
-<span id="wmformat.license_acquisition"></span><span id="WMFORMAT.LICENSE_ACQUISITION"></span>**acquisizione di licenze**
+<span id="wmformat.license_acquisition"></span><span id="WMFORMAT.LICENSE_ACQUISITION"></span>**acquisizione della licenza**
 </dt> <dd>
 
-Processo di ottenimento di una licenza per riprodurre un file Windows file multimediale. Il giocatore tenta di ottenere una licenza da un URL di acquisizione della licenza, specificato nel file Windows Media.
+Processo di acquisizione di una licenza per riprodurre un file Windows file multimediale. Il lettore tenta di ottenere una licenza da un URL di acquisizione della licenza, specificato nel file Windows Media.
 
 </dd> <dt>
 
-<span id="wmformat.license_management_service"></span><span id="WMFORMAT.LICENSE_MANAGEMENT_SERVICE"></span>**Servizio gestione licenze**
+<span id="wmformat.license_management_service"></span><span id="WMFORMAT.LICENSE_MANAGEMENT_SERVICE"></span>**Servizio di gestione delle licenze**
 </dt> <dd>
 
-Servizio Microsoft che esegue il processo di gestione delle licenze in Windows Software Development Kit (SDK) di Media Rights Manager.
+Servizio Microsoft che esegue il processo di gestione delle licenze in Windows Sdk (Software Development Kit) di Media Rights Manager.
 
 </dd> <dt>
 
-<span id="wmformat.license_revocation"></span><span id="WMFORMAT.LICENSE_REVOCATION"></span>**revoca della licenza**
+<span id="wmformat.license_revocation"></span><span id="WMFORMAT.LICENSE_REVOCATION"></span>**revoca di licenza**
 </dt> <dd>
 
 Processo di rimozione delle licenze dal computer di un utente.
@@ -272,24 +272,24 @@ Conferma firmata da un computer client a un server licenze che indica che le lic
 
 </dd> <dt>
 
-<span id="wmformat.license_revocation_challenge"></span><span id="WMFORMAT.LICENSE_REVOCATION_CHALLENGE"></span>**richiesta di revoca della licenza**
+<span id="wmformat.license_revocation_challenge"></span><span id="WMFORMAT.LICENSE_REVOCATION_CHALLENGE"></span>**richiesta di revoca delle licenze**
 </dt> <dd>
 
-Richiesta da un computer client a un server licenze per la revoca della licenza.
+Richiesta da un computer client a un server licenze per la revoca delle licenze.
 
 </dd> <dt>
 
 <span id="wmformat.license_revocation_response"></span><span id="WMFORMAT.LICENSE_REVOCATION_RESPONSE"></span>**risposta di revoca della licenza**
 </dt> <dd>
 
-Risposta a una richiesta di revoca della licenza che indica le licenze da rimuovere dal computer di un utente.
+Risposta a una richiesta di revoca delle licenze che indica le licenze da rimuovere dal computer di un utente.
 
 </dd> <dt>
 
 <span id="wmformat.licensing_server"></span><span id="WMFORMAT.LICENSING_SERVER"></span>**server licenze**
 </dt> <dd>
 
-Un computer che esegue il Windows licenza multimediale ed esezione delle licenze.
+Un computer che esegue il Windows Licenze multimediali e esegherà le licenze.
 
 </dd> <dt>
 
@@ -338,7 +338,7 @@ Impostazione in una licenza che indica le tecnologie che possono essere usate pe
 <span id="wmformat.packaged_windows_media_file"></span><span id="WMFORMAT.PACKAGED_WINDOWS_MEDIA_FILE"></span>**in pacchetto Windows file multimediale**
 </dt> <dd>
 
-Un Windows file multimediale crittografato con una chiave, che gli utenti non possono riprodurre a meno che non abbia una chiave fornita da una licenza. Un file Windows Media in pacchetto viene prodotto e protetto tramite l'implementazione di Digital Rights Management tramite Windows Media Rights Manager Software Development Kit (SDK) o un programma basato su Microsoft Windows Media Format SDK.
+Un Windows file multimediale crittografato con una chiave, che gli utenti non possono riprodurre a meno che non abbia una chiave fornita da una licenza. Un file Windows Media in pacchetto viene prodotto e protetto tramite l'implementazione di Digital Rights Management usando il Software Development Kit (SDK) di Windows Media Rights Manager o un programma basato su Microsoft Windows Media Format SDK.
 
 </dd> <dt>
 

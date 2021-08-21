@@ -3,7 +3,7 @@ title: Elemento publishing (ChannelType)
 description: Definisce le proprietà di registrazione per la sessione utilizzata dal canale. | Elemento publishing (ChannelType)
 ms.assetid: 032b5888-550b-4771-bd30-3195602811a7
 keywords:
-- elemento di pubblicazione EventLog
+- Elemento di pubblicazione EventLog
 topic_type:
 - apiref
 api_name:
@@ -38,8 +38,8 @@ Definisce le proprietà di registrazione per la sessione utilizzata dal canale.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

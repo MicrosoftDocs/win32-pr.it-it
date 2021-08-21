@@ -4,7 +4,7 @@ description: Un'interfaccia ID3DX11EffectPass incapsula le assegnazioni di stato
 ms.assetid: 4d86c362-b0f8-4396-86de-c7c89710f46d
 keywords:
 - INTERFACCIA ID3DX11EffectPass Direct3D 11
-- INTERFACCIA ID3DX11EffectPass Direct3D 11 , descritta
+- ID3DX11EffectPass interface Direct3D 11 , descritto
 topic_type:
 - apiref
 api_name:
@@ -42,13 +42,13 @@ La durata di un **oggetto ID3DX11EffectPass** è uguale alla durata dell'oggetto
 | [**Applica**](id3dx11effectpass-apply.md)                                 | Impostare lo stato contenuto in un passaggio al dispositivo.<br/>       |
 | [**ComputeStateBlockMask**](id3dx11effectpass-computestateblockmask.md) | Generare una maschera per consentire o impedire modifiche dello stato.<br/> |
 | [**GetAnnotationByIndex**](id3dx11effectpass-getannotationbyindex.md)   | Ottiene un'annotazione in base all'indice.<br/>                            |
-| [**GetAnnotationByName**](id3dx11effectpass-getannotationbyname.md)     | Ottenere un'annotazione in base al nome.<br/>                             |
+| [**GetAnnotationByName**](id3dx11effectpass-getannotationbyname.md)     | Ottiene un'annotazione in base al nome.<br/>                             |
 | [**GetComputeShaderDesc**](id3dx11effectpass-getcomputeshaderdesc.md)   | Ottenere una descrizione dello shader di calcolo.<br/>                      |
-| [**GetDesc**](id3dx11effectpass-getdesc.md)                             | Ottenere una descrizione del passaggio.<br/>                                |
+| [**GetDesc**](id3dx11effectpass-getdesc.md)                             | Ottenere una descrizione del pass.<br/>                                |
 | [**GetDomainShaderDesc**](id3dx11effectpass-getdomainshaderdesc.md)     | Ottenere una descrizione dello shader di dominio.<br/>                       |
-| [**GetGeometryShaderDesc**](id3dx11effectpass-getgeometryshaderdesc.md) | Ottenere una descrizione geometry-shader.<br/>                     |
-| [**GetHullShaderDesc**](id3dx11effectpass-gethullshaderdesc.md)         | Ottenere la descrizione dello hull shader.<br/>                           |
-| [**GetPixelShaderDesc**](id3dx11effectpass-getpixelshaderdesc.md)       | Ottenere una descrizione di pixel shader.<br/>                        |
+| [**GetGeometryShaderDesc**](id3dx11effectpass-getgeometryshaderdesc.md) | Ottenere una descrizione di geometry shader.<br/>                     |
+| [**GetHullShaderDesc**](id3dx11effectpass-gethullshaderdesc.md)         | Ottenere la descrizione di hull shader.<br/>                           |
+| [**GetPixelShaderDesc**](id3dx11effectpass-getpixelshaderdesc.md)       | Ottenere una descrizione del pixel shader.<br/>                        |
 | [**GetVertexShaderDesc**](id3dx11effectpass-getvertexshaderdesc.md)     | Ottenere una descrizione di vertex shader.<br/>                       |
 | [**isValid**](id3dx11effectpass-isvalid.md)                             | Testare un passaggio per verificare se contiene una sintassi valida.<br/>        |
 
@@ -58,12 +58,12 @@ La durata di un **oggetto ID3DX11EffectPass** è uguale alla durata dell'oggetto
 
 ## <a name="remarks"></a>Commenti
 
-Un passaggio è un blocco di codice che imposta gli oggetti e gli shader dello stato di rendering. Un passaggio viene dichiarato all'interno di una tecnica.
+Un passaggio è un blocco di codice che imposta oggetti e shader dello stato di rendering. Un passaggio viene dichiarato all'interno di una tecnica.
 
-Per ottenere un'interfaccia effect-pass, chiamare un metodo come [**ID3DX11EffectTechnique::GetPassByName**](id3dx11effecttechnique-getpassbyname.md).
+Per ottenere un'interfaccia di passaggio dell'effetto, chiamare un metodo come [**ID3DX11EffectTechnique::GetPassByName.**](id3dx11effecttechnique-getpassbyname.md)
 
 > [!Note]  
-> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra effetti 10 ed effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -74,7 +74,7 @@ Per ottenere un'interfaccia effect-pass, chiamare un metodo come [**ID3DX11Effec
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 
@@ -82,7 +82,7 @@ Per ottenere un'interfaccia effect-pass, chiamare un metodo come [**ID3DX11Effec
 
 <dl> <dt>
 
-[Interfacce di Effects 11](d3d11-graphics-reference-effects11-interfaces.md)
+[Interfacce effetti 11](d3d11-graphics-reference-effects11-interfaces.md)
 </dt> <dt>
 
 [Interfacce D3DX](d3d11-graphics-reference-d3dx11-interfaces.md)
