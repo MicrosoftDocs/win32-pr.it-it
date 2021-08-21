@@ -1,9 +1,9 @@
 ---
-title: Struttura CD3DX12_ROOT_PARAMETER1 (D3dx12. h)
-description: Struttura helper per consentire l'inizializzazione semplificata di una \_ \_ struttura PARAMETRO1 radice D3D12.
+title: CD3DX12_ROOT_PARAMETER1 struttura (D3dx12.h)
+description: Struttura helper per consentire l'inizializzazione semplice di una struttura D3D12 \_ ROOT \_ PARAMETER1.
 ms.assetid: CDE0C02E-0112-4FD9-A4A2-36E8C326715C
 keywords:
-- Struttura CD3DX12_ROOT_PARAMETER1
+- CD3DX12_ROOT_PARAMETER1 struttura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d582016b26df0d57f7792afd30fc4fcbf3ba97b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8530e913b96255050aa5c8cd15a025d0cf894b38b8c84833bfd3e4e22bc9db50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117912842"
 ---
-# <a name="cd3dx12_root_parameter1-structure"></a>\_ \_ Struttura PARAMETRO1 radice CD3DX12
+# <a name="cd3dx12_root_parameter1-structure"></a>Struttura CD3DX12 \_ ROOT \_ PARAMETER1
 
-Struttura helper per consentire l'inizializzazione semplificata di una struttura [**\_ \_ parametro1 radice D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) .
+Struttura helper per consentire l'inizializzazione semplice di [**una struttura D3D12 \_ ROOT \_ PARAMETER1.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,173 +52,173 @@ struct CD3DX12_ROOT_PARAMETER1  : public D3D12_ROOT_PARAMETER1{
 
 <dl> <dt>
 
-**CD3DX12 \_ radice \_ parametro1 ()**
+**CD3DX12 \_ ROOT \_ PARAMETER1()**
 </dt> <dd>
 
-Crea una nuova istanza non inizializzata di un \_ parametro1 radice CD3DX12 \_ .
+Crea una nuova istanza non inizializzata di un PARAMETRO RADICE1 CD3DX12. \_ \_
 
 </dd> <dt>
 
-**Explicit CD3DX12 \_ root \_ parametro1 (const D3D12 \_ root \_ parametro1 &o)**
+**explicit CD3DX12 \_ ROOT \_ PARAMETER1(const D3D12 \_ ROOT \_ PARAMETER1 &o)**
 </dt> <dd>
 
-Crea una nuova istanza di un \_ parametro1 radice CD3DX12 \_ , inizializzata con il contenuto di un'altra struttura [**\_ \_ parametro1 radice D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) .
+Crea una nuova istanza di un oggetto CD3DX12 ROOT PARAMETER1, inizializzato con il contenuto di \_ \_ un'altra struttura [**D3D12 \_ ROOT \_ PARAMETER1.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1)
 
 </dd> <dt>
 
-**static inline InitAsDescriptorTable (D3D12 \_ root \_ parametro1 &ROOTPARAM, uint numDescriptorRanges, const D3D12 \_ Descriptor \_ nell'intervallo 1 \* pDescriptorRanges, D3D12 \_ shader \_ Visibility Visibility = D3D12 \_ shader \_ visibility \_ All)**
+**static inline InitAsDescriptorTable(D3D12 \_ ROOT \_ PARAMETER1 &rootParam, UINT numDescriptorRanges, const D3D12 \_ DESCRIPTOR \_ RANGE1 \* pDescriptorRanges, D3D12 \_ SHADER VISIBILITY visibility = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
 </dt> <dd>
 
-Specifica una funzione che Inizializza i parametri seguenti:
+Specifica una funzione che inizializza i parametri seguenti:
 
-[**D3D12 \_ RADICE \_ parametro1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) &rootParam
+[**D3D12 \_ ROOT \_ PARAMETER1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) &rootParam
 
-NumDescriptorRanges UINT
+UINT numDescriptorRanges
 
-[**\_ descrittore \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range1) const nell'intervallo 1 \* pDescriptorRanges
+const [**D3D12 \_ DESCRIPTOR \_ RANGE1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range1) \* pDescriptorRanges
 
-[**D3D12 \_ Visibilità della \_ visibilità dello shader**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ shader \_ visibility \_ All
+[**D3D12 \_ VISIBILITÀ \_ SHADER**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ SHADER VISIBILITY \_ \_ ALL
 
 </dd> <dt>
 
-**static inline InitAsConstants (D3D12 \_ root \_ parametro1 &ROOTPARAM, uint NUM32BITVALUES, uint SHADERREGISTER, uint registerSpace = 0, D3D12 \_ shader \_ Visibility Visibility = D3D12 \_ shader \_ visibility \_ All)**
+**static inline InitAsConstants(D3D12 \_ ROOT \_ PARAMETER1 &rootParam, UINT num32BitValues, UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ SHADER VISIBILITY visibility = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
 </dt> <dd>
 
-Specifica una funzione che Inizializza i parametri seguenti:
+Specifica una funzione che inizializza i parametri seguenti:
 
-[**D3D12 \_ RADICE \_ parametro1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) &rootParam
+[**D3D12 \_ ROOT \_ PARAMETER1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) &rootParam
 
-Num32BitValues UINT
+UINT num32BitValues
 
-ShaderRegister UINT
+UINT shaderRegister
 
 UINT registerSpace = 0
 
-[**D3D12 \_ Visibilità della \_ visibilità dello shader**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ shader \_ visibility \_ All
+[**D3D12 \_ VISIBILITÀ \_ SHADER**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ SHADER VISIBILITY \_ \_ ALL
 
 </dd> <dt>
 
-**static inline InitAsConstantBufferView (D3D12 \_ root \_ parametro1 &ROOTPARAM, uint SHADERREGISTER, uint registerSpace = 0, D3D12 \_ root \_ descrittor Flags \_ = D3D12 \_ \_ flag descrittore radice \_ \_ None, D3D12 \_ shader \_ Visibility Visibility = D3D12 \_ shader \_ visibility \_ All)**
+**static inline InitAsConstantBufferView(D3D12 \_ ROOT \_ PARAMETER1 &rootParam, UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ ROOT \_ DESCRIPTOR FLAGS flags = \_ D3D12 \_ ROOT \_ DESCRIPTOR FLAG \_ \_ NONE, D3D12 \_ SHADER VISIBILITY visibility = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
 </dt> <dd>
 
-Specifica una funzione che Inizializza i parametri seguenti:
+Specifica una funzione che inizializza i parametri seguenti:
 
-[**D3D12 \_ RADICE \_ parametro1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) &rootParam
+[**D3D12 \_ ROOT \_ PARAMETER1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) &rootParam
 
-ShaderRegister UINT
+UINT shaderRegister
 
 UINT registerSpace = 0
 
-[**D3D12 \_ Flag \_ descrittore \_ radice**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) Flags = D3D12 \_ radice \_ descrittore flag \_ \_ None
+[**D3D12 \_ FLAG \_ DI DESCRIZIONE \_ RADICE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) = D3D12 \_ ROOT \_ DESCRIPTOR FLAG \_ \_ NONE
 
-[**D3D12 \_ Visibilità della \_ visibilità dello shader**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ shader \_ visibility \_ All
+[**D3D12 \_ VISIBILITÀ \_ SHADER**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ SHADER VISIBILITY \_ \_ ALL
 
 </dd> <dt>
 
-**static inline InitAsShaderResourceView (D3D12 \_ root \_ parametro1 &ROOTPARAM, uint SHADERREGISTER, uint registerSpace = 0, D3D12 \_ root \_ descrittor Flags \_ = D3D12 \_ \_ flag descrittore radice \_ \_ None, D3D12 \_ shader \_ Visibility Visibility = D3D12 \_ shader \_ visibility \_ All)**
+**static inline InitAsShaderResourceView(D3D12 \_ ROOT \_ PARAMETER1 &rootParam, UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ ROOT \_ DESCRIPTOR FLAGS flags = \_ D3D12 \_ ROOT \_ DESCRIPTOR FLAG \_ \_ NONE, D3D12 \_ SHADER VISIBILITY visibility = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
 </dt> <dd>
 
-Specifica una funzione che Inizializza i parametri seguenti:
+Specifica una funzione che inizializza i parametri seguenti:
 
-[**D3D12 \_ RADICE \_ parametro1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) &rootParam
+[**D3D12 \_ ROOT \_ PARAMETER1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) &rootParam
 
-ShaderRegister UINT
+UINT shaderRegister
 
 UINT registerSpace = 0
 
-[**D3D12 \_ Flag \_ descrittore \_ radice**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) Flags = D3D12 \_ radice \_ descrittore flag \_ \_ None
+[**D3D12 \_ FLAG \_ DI DESCRIZIONE \_ RADICE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) = D3D12 \_ ROOT \_ DESCRIPTOR FLAG \_ \_ NONE
 
-[**D3D12 \_ Visibilità della \_ visibilità dello shader**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ shader \_ visibility \_ All
+[**D3D12 \_ VISIBILITÀ \_ SHADER**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ SHADER VISIBILITY \_ \_ ALL
 
 </dd> <dt>
 
-**static inline InitAsUnorderedAccessView (D3D12 \_ root \_ parametro1 &ROOTPARAM, uint SHADERREGISTER, uint registerSpace = 0, D3D12 \_ root \_ descrittor Flags \_ = D3D12 \_ \_ flag descrittore radice \_ \_ None, D3D12 \_ shader \_ Visibility Visibility = D3D12 \_ shader \_ visibility \_ All)**
+**static inline InitAsUnorderedAccessView(D3D12 \_ ROOT \_ PARAMETER1 &rootParam, UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ ROOT \_ DESCRIPTOR FLAGS flags = \_ D3D12 \_ ROOT \_ DESCRIPTOR FLAG \_ \_ NONE, D3D12 \_ SHADER VISIBILITY visibility = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
 </dt> <dd>
 
-Specifica una funzione che Inizializza i parametri seguenti:
+Specifica una funzione che inizializza i parametri seguenti:
 
-[**D3D12 \_ RADICE \_ parametro1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) &rootParam
+[**D3D12 \_ ROOT \_ PARAMETER1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1) &rootParam
 
-ShaderRegister UINT
+UINT shaderRegister
 
 UINT registerSpace = 0
 
-[**D3D12 \_ Flag \_ descrittore \_ radice**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) Flags = D3D12 \_ radice \_ descrittore flag \_ \_ None
+[**D3D12 \_ FLAG \_ DI DESCRIZIONE \_ RADICE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) = D3D12 \_ ROOT \_ DESCRIPTOR FLAG \_ \_ NONE
 
-[**D3D12 \_ Visibilità della \_ visibilità dello shader**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ shader \_ visibility \_ All
-
-</dd> <dt>
-
-**inline InitAsDescriptorTable (UINT numDescriptorRanges, const D3D12 \_ Descriptor \_ nell'intervallo 1 \* pDescriptorRanges, D3D12 \_ shader \_ Visibility Visibility = D3D12 \_ shader \_ visibility \_ All)**
-</dt> <dd>
-
-Specifica una funzione che Inizializza i parametri seguenti:
-
-NumDescriptorRanges UINT
-
-[**\_ descrittore \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range1) const nell'intervallo 1 \* pDescriptorRanges
-
-[**D3D12 \_ Visibilità della \_ visibilità dello shader**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ shader \_ visibility \_ All
+[**D3D12 \_ VISIBILITÀ \_ SHADER**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ SHADER VISIBILITY \_ \_ ALL
 
 </dd> <dt>
 
-**inline InitAsConstants (UINT num32BitValues, UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ shader \_ Visibility Visibility = D3D12 \_ shader \_ visibility \_ All)**
+**inline InitAsDescriptorTable(UINT numDescriptorRanges, const D3D12 \_ DESCRIPTOR \_ RANGE1 \* pDescriptorRanges, D3D12 \_ SHADER VISIBILITY visibility = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
 </dt> <dd>
 
-Specifica una funzione che Inizializza i parametri seguenti:
+Specifica una funzione che inizializza i parametri seguenti:
 
-Num32BitValues UINT
+UINT numDescriptorRanges
 
-ShaderRegister UINT
+const [**D3D12 \_ DESCRIPTOR \_ RANGE1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range1) \* pDescriptorRanges
+
+[**D3D12 \_ VISIBILITÀ \_ SHADER**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ SHADER VISIBILITY \_ \_ ALL
+
+</dd> <dt>
+
+**inline InitAsConstants(UINT num32BitValues, UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ SHADER VISIBILITY visibility = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
+</dt> <dd>
+
+Specifica una funzione che inizializza i parametri seguenti:
+
+UINT num32BitValues
+
+UINT shaderRegister
 
 UINT registerSpace = 0
 
-[**D3D12 \_ Visibilità della \_ visibilità dello shader**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ shader \_ visibility \_ All
+[**D3D12 \_ VISIBILITÀ \_ SHADER**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ SHADER VISIBILITY \_ \_ ALL
 
 </dd> <dt>
 
-**inline InitAsConstantBufferView (UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ radice \_ descrittore flag Flags \_ = D3D12 \_ radice \_ descrittore flag \_ \_ None, D3D12 \_ shader \_ Visibility Visibility = D3D12 \_ shader \_ visibility \_ All)**
+**inline InitAsConstantBufferView(UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ ROOT \_ DESCRIPTOR \_ FLAGS flags = D3D12 \_ ROOT \_ DESCRIPTOR FLAG \_ \_ NONE, D3D12 \_ SHADER VISIBILITY visibility = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
 </dt> <dd>
 
-Specifica una funzione che Inizializza i parametri seguenti:
+Specifica una funzione che inizializza i parametri seguenti:
 
-ShaderRegister UINT
+UINT shaderRegister
 
 UINT registerSpace = 0
 
-[**D3D12 \_ Flag \_ descrittore \_ radice**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) Flags = D3D12 \_ radice \_ descrittore flag \_ \_ None
+[**D3D12 \_ FLAG \_ DI DESCRIZIONE \_ RADICE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) = D3D12 \_ ROOT \_ DESCRIPTOR FLAG \_ \_ NONE
 
-[**D3D12 \_ Visibilità della \_ visibilità dello shader**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ shader \_ visibility \_ All
+[**D3D12 \_ VISIBILITÀ \_ SHADER**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ SHADER VISIBILITY \_ \_ ALL
 
 </dd> <dt>
 
-**inline InitAsShaderResourceView (UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ radice \_ descrittore flag Flags \_ = D3D12 \_ radice \_ descrittore flag \_ \_ None, D3D12 \_ shader \_ Visibility Visibility = D3D12 \_ shader \_ visibility \_ All)**
+**inline InitAsShaderResourceView(UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ ROOT \_ DESCRIPTOR \_ FLAGS flags = D3D12 \_ ROOT \_ DESCRIPTOR FLAG \_ \_ NONE, D3D12 \_ SHADER VISIBILITY visibility = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
 </dt> <dd>
 
-Specifica una funzione che Inizializza i parametri seguenti:
+Specifica una funzione che inizializza i parametri seguenti:
 
-ShaderRegister UINT
+UINT shaderRegister
 
 UINT registerSpace = 0
 
-[**D3D12 \_ Flag \_ descrittore \_ radice**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) Flags = D3D12 \_ radice \_ descrittore flag \_ \_ None
+[**D3D12 \_ FLAG \_ DI DESCRIZIONE \_ RADICE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) = D3D12 \_ ROOT \_ DESCRIPTOR FLAG \_ \_ NONE
 
-[**D3D12 \_ Visibilità della \_ visibilità dello shader**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ shader \_ visibility \_ All
+[**D3D12 \_ VISIBILITÀ \_ SHADER**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ SHADER VISIBILITY \_ \_ ALL
 
 </dd> <dt>
 
-**inline InitAsUnorderedAccessView (UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ radice \_ descrittore flag Flags \_ = D3D12 \_ radice \_ descrittore flag \_ \_ None, D3D12 \_ shader \_ Visibility Visibility = D3D12 \_ shader \_ visibility \_ All)**
+**inline InitAsUnorderedAccessView(UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ ROOT \_ DESCRIPTOR \_ FLAGS flags = D3D12 \_ ROOT \_ DESCRIPTOR FLAG \_ \_ NONE, D3D12 \_ SHADER VISIBILITY = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
 </dt> <dd>
 
-Specifica una funzione che Inizializza i parametri seguenti:
+Specifica una funzione che inizializza i parametri seguenti:
 
-ShaderRegister UINT
+UINT shaderRegister
 
 UINT registerSpace = 0
 
-[**D3D12 \_ Flag \_ descrittore \_ radice**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) Flags = D3D12 \_ radice \_ descrittore flag \_ \_ None
+[**D3D12 \_ FLAG \_ DI DESCRIZIONE \_ RADICE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) = D3D12 \_ ROOT \_ DESCRIPTOR FLAG \_ \_ NONE
 
-[**D3D12 \_ Visibilità della \_ visibilità dello shader**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ shader \_ visibility \_ All
+[**D3D12 \_ VISIBILITÀ \_ SHADER**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) = D3D12 \_ SHADER VISIBILITY \_ \_ ALL
 
 </dd> </dl>
 
@@ -228,7 +228,7 @@ UINT registerSpace = 0
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -236,7 +236,7 @@ UINT registerSpace = 0
 
 <dl> <dt>
 
-[**\_Parametro1 radice \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1)
+[**D3D12 \_ ROOT \_ PARAMETER1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1)
 </dt> <dt>
 
 [Strutture helper per D3D12](helper-structures-for-d3d12.md)

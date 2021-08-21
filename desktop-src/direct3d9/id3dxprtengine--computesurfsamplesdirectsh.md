@@ -1,7 +1,7 @@
 ---
-description: Calcola, in un punto arbitrario non su una mesh, un vettore di trasferimento che esegue il mapping della luminosità del codice sorgente, rappresentata da un'approssimazione ad armonica sferica (SH), per uscire dallo splendore.
+description: Calcola, in un punto arbitrario non su una mesh, un vettore di trasferimento che esegue il mapping della radice di origine (rappresentata da un'approssimazione sferica aricale) per uscire dalla radice.
 ms.assetid: 44790465-440d-4426-b780-ed872fbf8efb
-title: 'Metodo ID3DXPRTEngine:: ComputeSurfSamplesDirectSH (D3DX9Mesh. h)'
+title: Metodo ID3DXPRTEngine::ComputeSurfSamplesDirectSH (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 03adb1729a8a2e771ea681ccbdd180999d3adcbf
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 310914d481aa477c11df0533a7cd448e5b760418aa19d4d0856a349e4a1d822a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104356044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117729642"
 ---
-# <a name="id3dxprtenginecomputesurfsamplesdirectsh-method"></a>Metodo ID3DXPRTEngine:: ComputeSurfSamplesDirectSH
+# <a name="id3dxprtenginecomputesurfsamplesdirectsh-method"></a>Metodo ID3DXPRTEngine::ComputeSurfSamplesDirectSH
 
-Calcola, in un punto arbitrario non su una mesh, un vettore di trasferimento che esegue il mapping della luminosità del codice sorgente, rappresentata da un'approssimazione ad armonica sferica (SH), per uscire dallo splendore.
+Calcola, in un punto arbitrario non su una mesh, un vettore di trasferimento che esegue il mapping della radice di origine (rappresentata da un'approssimazione sferica aricale) per uscire dalla radice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,34 +44,34 @@ HRESULT ComputeSurfSamplesDirectSH(
 
 <dl> <dt>
 
-*SHOrder* \[ in\]
+*SHOrder* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Ordine dell'approssimazione SH da usare.
 
 </dd> <dt>
 
-*NumSamples valore* \[ in\]
+*NumSamples* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di percorsi di esempio.
+Numero di posizioni di esempio.
 
 </dd> <dt>
 
-*pSampleLocs* \[ in\]
+*pSampleLocs* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Posizione per ogni esempio.
+Posizione per ogni campione.
 
 </dd> <dt>
 
-*pSampleNorms* \[ in\]
+*pSampleNorms* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
@@ -80,12 +80,12 @@ Vettore normale per ogni posizione di esempio.
 
 </dd> <dt>
 
-*pDataOut* \[ in uscita\]
+*pDataOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntatore a un oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di output che modella il contributo di illuminazione diretta al punto, usando l'approssimazione sh.
+Puntatore a un [**oggetto ID3DXPRTBuffer**](id3dxprtbuffer.md) di output che modella il contributo di illuminazione diretta al punto, usando l'approssimazione SH.
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ Puntatore a un oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di output che mod
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
@@ -105,8 +105,8 @@ Non usare un buffer di trama quando si chiama questo metodo.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

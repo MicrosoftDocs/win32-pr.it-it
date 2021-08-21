@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: interfaccia INullableJetStruct'
-title: Interfaccia INullableJetStruct
+description: Altre informazioni sull'interfaccia INullableStruct
+title: Interfaccia INullableStruct
 TOCTitle: INullableJetStruct interface
 ms:assetid: T:Microsoft.Isam.Esent.Interop.INullableJetStruct
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.inullablejetstruct(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ece8f653d7d3d296e2f3e264f7c2e97941c0bc21
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 256204d1214b2486831376c7d038fd0c92f0ef519c752878f785518038bb7b09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118076421"
 ---
-# <a name="inullablejetstruct-interface"></a>Interfaccia INullableJetStruct
+# <a name="inullablejetstruct-interface"></a>Interfaccia INullableStruct
 
-Interfaccia per le strutture Jet Nullable (possono avere valori null).
+Interfaccia per le strutture Jet che ammette valori Null (possono avere valori Null).
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,6 +55,6 @@ public interface INullableJetStruct
 
 #### <a name="reference"></a>Riferimento
 
-[Membri di INullableJetStruct](./inullablejetstruct-members.md)
+[Membri INullableStruct](./inullablejetstruct-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

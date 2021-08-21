@@ -13,7 +13,7 @@ ms.locfileid: "117878345"
 ---
 # <a name="remotebeginunregisterplatformworkqueuewithmmcss"></a>RemoteBeginUnregisterPlatformWorkQueueWithMMCSS
 
-Versione remota del [**metodo IMFWorkQueueServices::BeginUnregisterPlatformWorkQueueWithMMCSS.**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-beginunregisterplatformworkqueuewithmmcss)
+Versione remota del metodo [**IMFWorkQueueServices::BeginUnregisterPlatformWorkQueueWithMMCSS.**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-beginunregisterplatformworkqueuewithmmcss)
 
 ``` syntax
 [call_as(BeginUnregisterPlatformWorkQueueWithMMCSS)]
@@ -33,8 +33,8 @@ Le applicazioni non possono chiamare direttamente questo metodo e gli oggetti no
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                     |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                     |
 | Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>Mfuuid.lib</dt> </dl>                    |
 

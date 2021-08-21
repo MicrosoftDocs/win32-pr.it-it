@@ -22,7 +22,7 @@ Un cap ha gli attributi seguenti:
 -   Descrizione
 -   Nome
 
-Un CAP viene valutato durante la valutazione dell'accesso per i file e le cartelle in cui è abilitata da un amministratore. Durante una [**chiamata AccessCheck,**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-accesscheck) il controllo CAP viene combinato logicamente con il controllo ACL discrezionale. Ciò significa che per ottenere l'accesso a un file a cui si applica il cap, un utente deve avere accesso sia in base al CAP (capr associati) che all'ACL discrezionale sul file.
+Un CAP viene valutato durante la valutazione dell'accesso per i file e le cartelle in cui è abilitata da un amministratore. Durante una [**chiamata AccessCheck,**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-accesscheck) il controllo CAP viene combinato logicamente con il controllo ACL discrezionale. Ciò significa che per ottenere l'accesso a un file a cui si applica il CAP, un utente deve avere accesso sia in base al CAP (cap associati) che all'ACL discrezionale sul file.
 
 Cap di esempio:
 

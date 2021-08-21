@@ -1,23 +1,23 @@
 ---
-title: Not (SM4-ASM)
-description: NOT bit per bit.
+title: not (sm4 - asm)
+description: Not bit per bit.
 ms.assetid: AC7EBBC2-4B52-4793-812C-B25897FB8D05
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0bf224e6e5af7f2db6bcbaf7ae287ba2d399727
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: e74018cf7dcffcc557785b5f0cccd06e70f61786e800d6673e339bb12d44851c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104976450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118088977"
 ---
-# <a name="not-sm4---asm"></a>Not (SM4-ASM)
+# <a name="not-sm4---asm"></a>not (sm4 - asm)
 
-NOT bit per bit.
+Not bit per bit.
 
 
 
-| not dest \[ . mask \] , src0 \[ . Swizzle\] |
+| not dest \[ .mask \] , src0 \[ .swizzle\] |
 |-------------------------------------|
 
 
@@ -28,8 +28,8 @@ NOT bit per bit.
 
 | Elemento                                                            | Descrizione                                                   |
 |-----------------------------------------------------------------|---------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[nell' \] indirizzo del risultato dell'operazione.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nei \] componenti originali.<br/>                    |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Indirizzo del risultato dell'operazione.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] Componenti originali.<br/>                    |
 
 
 
@@ -37,9 +37,9 @@ NOT bit per bit.
 
 ## <a name="remarks"></a>Commenti
 
-Questa istruzione esegue un complemento di un componente per ogni valore a 32 bit in *src0*. I risultati a 32 bit vengono archiviati in *dest*.
+Questa istruzione esegue un complemento a livello di componente di ogni valore a 32 bit in *src0.* I risultati a 32 bit vengono archiviati in *dest*.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -51,20 +51,20 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -74,7 +74,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

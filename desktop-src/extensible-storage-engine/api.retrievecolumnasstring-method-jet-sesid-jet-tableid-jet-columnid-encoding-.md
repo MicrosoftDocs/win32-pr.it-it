@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. RetrieveColumnAsString (JET_SESID, JET_TABLEID, JET_COLUMNID, codifica)'
-title: Metodo API. RetrieveColumnAsString (JET_SESID, JET_TABLEID, JET_COLUMNID, codifica)
+description: 'Altre informazioni su: Metodo Api.RetrieveColumnAsString (JET_SESID, JET_TABLEID, JET_COLUMNID, Encoding)'
+title: Metodo Api.RetrieveColumnAsString (JET_SESID, JET_TABLEID, JET_COLUMNID, Encoding)
 TOCTitle: RetrieveColumnAsString method (JET_SESID, JET_TABLEID, JET_COLUMNID, Encoding)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.RetrieveColumnAsString(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_COLUMNID,System.Text.Encoding)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.retrievecolumnasstring(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1d7ec3bac73f5b82f82d2762a34084de25b63f82
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b2635248721168910607558bad0a0c2256046a4c0379eb3d60636293bd0a826
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118084420"
 ---
-# <a name="apiretrievecolumnasstring-method-jet_sesid-jet_tableid-jet_columnid-encoding"></a>Metodo API. RetrieveColumnAsString (JET_SESID, JET_TABLEID, JET_COLUMNID, codifica)
+# <a name="apiretrievecolumnasstring-method-jet_sesid-jet_tableid-jet_columnid-encoding"></a>Metodo Api.RetrieveColumnAsString (JET_SESID, JET_TABLEID, JET_COLUMNID, Encoding)
 
-Recupera un valore di colonna stringa dal record corrente. Il record è il record associato alla voce di indice in corrispondenza della posizione corrente del cursore.
+Recupera un valore di colonna stringa dal record corrente. Il record è il record associato alla voce di indice nella posizione corrente del cursore.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -67,35 +67,35 @@ public static string RetrieveColumnAsString(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     Sessione da utilizzare.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Cursore da cui recuperare la colonna.
 
 <!-- end list -->
 
   - columnid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
     
-    ColumnID da recuperare.
+    Columnid da recuperare.
 
 <!-- end list -->
 
   - codifica  
-    Tipo: [System. Text. Encoding](/dotnet/api/system.text.encoding)  
+    Tipo: [System.Text.Encoding](/dotnet/api/system.text.encoding)  
     
-    Codifica di stringhe da utilizzare per la conversione dei dati.
+    Codifica di stringa da usare durante la conversione dei dati.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. String](/dotnet/api/system.string)  
-Dati recuperati dalla colonna sotto forma di stringa. Null se la colonna è null.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Dati recuperati dalla colonna come stringa. Null se la colonna è Null.  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -103,8 +103,8 @@ Dati recuperati dalla colonna sotto forma di stringa. Null se la colonna è null
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Overload RetrieveColumnAsString](./api.retrievecolumnasstring-method.md)
+[Overload di RetrieveColumnAsString](./api.retrievecolumnasstring-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

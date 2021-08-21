@@ -1,5 +1,5 @@
 ---
-description: Per ogni applicazione che usa un archivio criteri di autorizzazione, è necessario creare un oggetto IAzApplication e salvarlo in un archivio criteri.
+description: Per ogni applicazione che usa un archivio criteri di autorizzazione, è necessario creare un oggetto IAzApplication e quindi salvarlo in un archivio criteri.
 ms.assetid: 5df964de-e5b6-427e-b859-efb5866f1578
 title: Creazione di un oggetto applicazione nello script
 ms.topic: article
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0a4852ef0c06d721f9409c000989895f6767eb9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02a5ada4a8a79244cc454d9efc88e69a5d9a205241119b5dda371699f0c86552
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117782547"
 ---
 # <a name="creating-an-application-object-in-script"></a>Creazione di un oggetto applicazione nello script
 
 Un archivio dei criteri di autorizzazione contiene informazioni sui criteri di autorizzazione per una o più applicazioni. Per ogni applicazione che usa un archivio criteri di autorizzazione, è necessario creare un oggetto [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) e salvarlo in un archivio criteri.
 
-Nell'esempio seguente viene illustrato come creare un oggetto [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) che rappresenta un'applicazione e come aggiungere l'oggetto **IAzApplication** all'archivio dei criteri di autorizzazione utilizzato dall'applicazione. Nell'esempio si presuppone l'esistenza di un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C.
+L'esempio seguente illustra come creare un oggetto [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) che rappresenta un'applicazione e come aggiungere **l'oggetto IAzApplication** all'archivio dei criteri di autorizzazione utilizzato dall'applicazione. Nell'esempio si presuppone che sia presente un archivio criteri XML esistente denominato MyStore.xml nella directory radice dell'unità C.
 
 
 ```VB

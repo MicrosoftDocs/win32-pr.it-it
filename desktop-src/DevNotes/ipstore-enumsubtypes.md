@@ -1,7 +1,7 @@
 ---
 description: Restituisce un'interfaccia per l'enumerazione dei sottotipi dei tipi attualmente registrati nel database protetto.
 ms.assetid: 07cc43ce-2191-4b20-b23d-d96d15aa8dea
-title: 'Metodo IPStore:: EnumSubtypes (PStore. h)'
+title: Metodo IPStore::EnumSubtypes (Pstore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: f0e5aafbfdadebfa96254b3bd5997ec8d07cfb64
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cc124375b6f7282d6ae8f05269b3b3408a81089193da8028c7720c274987e4f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117827134"
 ---
-# <a name="ipstoreenumsubtypes-method"></a>Metodo IPStore:: EnumSubtypes
+# <a name="ipstoreenumsubtypes-method"></a>Metodo IPStore::EnumSubtypes
 
-\[L'archiviazione protetta (PStore) è disponibile per l'uso in Windows Server 2003 e Windows XP. È disponibile solo per le operazioni di sola lettura in Windows Server 2008 e Windows Vista, ma potrebbe non essere disponibile nelle versioni successive. PStore usa un'implementazione precedente della protezione dei dati. Gli sviluppatori sono vivamente invitati a sfruttare i vantaggi della protezione dei dati più avanzata fornita dalle funzioni [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[Protected Archiviazione (Pstore) è disponibile per l'uso in Windows Server 2003 e Windows XP. È disponibile solo per le operazioni di sola lettura in Windows Server 2008 e Windows Vista, ma potrebbe non essere disponibile nelle versioni successive. Pstore usa un'implementazione precedente della protezione dei dati. Gli sviluppatori sono fortemente invitati a sfruttare la protezione dei dati più avanzata fornita dalle funzioni [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
 Restituisce un'interfaccia per l'enumerazione dei sottotipi dei tipi attualmente registrati nel database protetto.
 
@@ -44,17 +44,17 @@ HRESULT EnumSubtypes(
 
 <dl> <dt>
 
-*Chiave* \[ di in\]
+*Chiave* \[ Pollici\]
 </dt> <dd>
 
-Specifica se il tipo è locale o associato solo all'utente che ha creato il computer.
+Specifica se il tipo è locale per il computer o associato solo all'utente che crea.
 
 
 
 | Valore                                                                                                                                                                                                                                                   | Significato                                                                            |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| <span id="PST_KEY_CURRENT_USER"></span><span id="pst_key_current_user"></span><dl> <dt>**Pst \_ CHIAVE \_ \_ utente corrente**</dt> <dt>0x00000000</dt> </dl>    | L'archiviazione viene mantenuta nella sezione utente corrente del registro di sistema.<br/>  |
-| <span id="PST_KEY_LOCAL_MACHINE"></span><span id="pst_key_local_machine"></span><dl> <dt>**Pst \_ CHIAVE \_ del \_ computer locale**</dt> <dt>0x00000001</dt> </dl> | L'archiviazione viene mantenuta nella sezione computer locale del registro di sistema.<br/> |
+| <span id="PST_KEY_CURRENT_USER"></span><span id="pst_key_current_user"></span><dl> <dt>**PST \_ CHIAVE \_ UTENTE \_ CORRENTE**</dt> <dt>0x00000000</dt> </dl>    | L'archiviazione viene mantenuta nella sezione utente corrente del Registro di sistema.<br/>  |
+| <span id="PST_KEY_LOCAL_MACHINE"></span><span id="pst_key_local_machine"></span><dl> <dt>**PST \_ CHIAVE \_ DEL \_ COMPUTER**</dt> LOCALE <dt>0x00000001</dt> </dl> | L'archiviazione viene mantenuta nella sezione del computer locale del Registro di sistema.<br/> |
 
 
 
@@ -62,30 +62,30 @@ Specifica se il tipo è locale o associato solo all'utente che ha creato il comp
 
 </dd> <dt>
 
-*pType* \[ in\]
+*pType* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un GUID che identifica il tipo di dati dell'archiviazione.
+Puntatore a un GUID che identifica il tipo di dati della risorsa di archiviazione.
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Riservato: deve essere impostato su zero.
 
 </dd> <dt>
 
-*ppEnum* \[ in\]
+*ppenum* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un'interfaccia [**IEnumPStoreTypes**](ienumpstoretypes.md) utilizzata per enumerare i sottotipi.
+Puntatore a [**un'interfaccia IEnumPStoreTypes**](ienumpstoretypes.md) usata per enumerare i sottotipi.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è un valore **HRESULT** . Il valore **pst \_ E \_ OK** indica che la funzione ha avuto esito positivo.
+Il valore restituito è un **valore HRESULT.** Il valore **PST \_ E \_ OK** indica che la funzione ha avuto esito positivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -93,7 +93,7 @@ Il valore restituito è un valore **HRESULT** . Il valore **pst \_ E \_ OK** ind
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>PStore. h</dt> </dl>    |
+| Intestazione<br/> | <dl> <dt>Pstore.h</dt> </dl>    |
 | DLL<br/>    | <dl> <dt>Pstorec.dll</dt> </dl> |
 
 

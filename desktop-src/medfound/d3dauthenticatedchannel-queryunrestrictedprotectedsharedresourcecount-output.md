@@ -1,7 +1,7 @@
 ---
-description: Contiene la risposta a una \_ query D3DAUTHENTICATEDQUERY UNRESTRICTEDPROTECTEDSHAREDRESOURCECOUNT.
+description: Contiene la risposta a una query D3DAUTHENTICATEDQUERY \_ UNRESTRICTEDPROTECTEDSHAREDRESOURCECOUNT.
 ms.assetid: c283833d-e98c-4f01-b623-21027a6b90e8
-title: Struttura D3DAUTHENTICATEDCHANNEL_QUERYUNRESTRICTEDPROTECTEDSHAREDRESOURCECOUNT_OUTPUT (D3d9types. h)
+title: D3DAUTHENTICATEDCHANNEL_QUERYUNRESTRICTEDPROTECTEDSHAREDRESOURCECOUNT_OUTPUT struttura (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: b3fd30cff59d35f845903e7f4fdb08cdff61df3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: af3bcdce8573939a9c638a73085cc5ebee82e73bde1a5169daed588cec111078
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117880117"
 ---
-# <a name="d3dauthenticatedchannel_queryunrestrictedprotectedsharedresourcecount_output-structure"></a>\_Struttura di output QUERYUNRESTRICTEDPROTECTEDSHAREDRESOURCECOUNT di D3DAUTHENTICATEDCHANNEL \_
+# <a name="d3dauthenticatedchannel_queryunrestrictedprotectedsharedresourcecount_output-structure"></a>Struttura DI OUTPUT D3DAUTHENTICATEDCHANNEL \_ QUERYUNRESTRICTEDPROTECTEDSHAREDRESOURCECOUNT \_
 
-Contiene la risposta a una query [**D3DAUTHENTICATEDQUERY \_ UNRESTRICTEDPROTECTEDSHAREDRESOURCECOUNT**](d3dauthenticatedquery-unrestrictedprotectedsharedresourcecount.md) .
+Contiene la risposta a una query [**D3DAUTHENTICATEDQUERY \_ UNRESTRICTEDPROTECTEDSHAREDRESOURCECOUNT.**](d3dauthenticatedquery-unrestrictedprotectedsharedresourcecount.md)
 
-Per inviare la query, chiamare [**IDirect3DAuthenticatedChannel9:: query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query).
+Per inviare questa query, chiamare [**IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,14 +45,14 @@ typedef struct _D3DAUTHENTICATEDCHANNEL_QUERYUNRESTRICTEDPROTECTEDSHAREDRESOURCE
 **Output**
 </dt> <dd>
 
-Struttura [**di \_ \_ output della query D3DAUTHENTICATEDCHANNEL**](d3dauthenticatedchannel-query-output.md) che contiene un Message Authentication Code (Mac) e altri dati.
+Struttura [**D3DAUTHENTICATEDCHANNEL \_ QUERY \_ OUTPUT**](d3dauthenticatedchannel-query-output.md) che contiene un Message Authentication Code (MAC) e altri dati.
 
 </dd> <dt>
 
 **NumUnrestrictedProtectedSharedResources**
 </dt> <dd>
 
-Il numero di risorse condivise protette che possono essere aperte da qualsiasi processo senza restrizioni.
+Numero di risorse condivise protette che possono essere aperte da qualsiasi processo senza restrizioni.
 
 </dd> </dl>
 
@@ -62,9 +62,9 @@ Il numero di risorse condivise protette che possono essere aperte da qualsiasi p
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                             |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Il numero di risorse condivise protette che possono essere aperte da qualsiasi p
 [Strutture video Direct3D](direct3d-video-structures.md)
 </dt> <dt>
 
-[**IDirect3DAuthenticatedChannel9:: query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
+[**IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
 </dt> </dl>
 
  

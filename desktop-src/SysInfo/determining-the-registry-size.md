@@ -1,5 +1,5 @@
 ---
-description: In Windows 2000, è comune che un'utilità di installazione controlli le dimensioni correnti e massime del Registro di sistema per determinare se lo spazio disponibile per i nuovi dati verrà aggiunto.
+description: In Windows 2000 è comune che un'utilità di installazione controlli le dimensioni correnti e massime del Registro di sistema per determinare se lo spazio disponibile per i nuovi dati che verrà aggiunto è sufficiente.
 ms.assetid: 87e7b9de-d571-41e4-817e-29023546e9bd
 title: Determinazione delle dimensioni del Registro di sistema
 ms.topic: article
@@ -13,9 +13,9 @@ ms.locfileid: "117764503"
 ---
 # <a name="determining-the-registry-size"></a>Determinazione delle dimensioni del Registro di sistema
 
-In Windows 2000, è comune che un'utilità di installazione controlli le dimensioni correnti e massime del Registro di sistema per determinare se lo spazio disponibile per i nuovi dati verrà aggiunto. Questo esempio illustra come eseguire questa operazione a livello di codice usando il contatore delle prestazioni "% Quota registro in uso" all'interno dell'oggetto System.
+In Windows 2000 è comune che un'utilità di installazione controlli le dimensioni correnti e massime del Registro di sistema per determinare se lo spazio disponibile per i nuovi dati che verrà aggiunto è sufficiente. In questo esempio viene illustrato come eseguire questa operazione a livello di codice usando il contatore delle prestazioni "% Quota del Registro di sistema in uso" all'interno dell'oggetto System.
 
-L'esempio seguente usa l'helper dati delle prestazioni (PDH) per ottenere il valore del contatore. deve essere collegato a Pdh.lib. PDH è un set di API di alto livello usato per ottenere dati sulle prestazioni.
+Nell'esempio seguente viene utilizzato l'helper dati delle prestazioni (PDH) per ottenere il valore del contatore. deve essere collegato a Pdh.lib. PDH è un set di API di alto livello usato per ottenere i dati sulle prestazioni.
 
 > [!Note]  
 > Non è necessario implementare questo controllo delle dimensioni del Registro di sistema in Windows Server 2003 o Windows XP perché non hanno un limite di quota del Registro di sistema.

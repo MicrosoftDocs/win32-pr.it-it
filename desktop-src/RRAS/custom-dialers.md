@@ -59,7 +59,7 @@ Windows sistemi operativi 2000 e versioni successive consentono a un utente di s
 
 Nella maggior parte dei casi, un dialer personalizzato opera con i privilegi di sicurezza dell'utente che lo richiama. Tuttavia, se il dialer personalizzato viene richiamato all'accesso, opera con privilegi di sistema. Progettare quindi il dialer personalizzato in modo che non possa essere usato per violare la sicurezza del sistema. Ad esempio, il dialer non deve presentare un'interfaccia utente che consenta all'utente l'accesso in scrittura al computer file system. Le interfacce utente che forniscono tale accesso includono  la finestra di dialogo Trova **file,** la finestra di dialogo comune Apri file e Windows **Guida.**
 
-## <a name="custom-dialer-user-interface-must-support-idcancel"></a>Il dialer Interfaccia utente deve supportare IDCANCEL
+## <a name="custom-dialer-user-interface-must-support-idcancel"></a>I dialer Interfaccia utente devono supportare IDCANCEL
 
 Se il dialer personalizzato visualizza un'interfaccia utente, l'interfaccia utente deve supportare i messaggi WM COMMAND in cui \_ LOWORD(*wParam*) è uguale a IDCANCEL.
 

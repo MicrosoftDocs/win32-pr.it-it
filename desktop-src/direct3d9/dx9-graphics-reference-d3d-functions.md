@@ -1,19 +1,19 @@
 ---
-description: Questa sezione contiene informazioni di riferimento per le funzioni che è necessario usare quando si lavora con Direct3D.
+description: Questa sezione contiene informazioni di riferimento per le funzioni che è necessario usare quando si usa Direct3D.
 ms.assetid: 258a76f2-2dd6-49cb-bf8c-f437792bba27
 title: Funzioni Direct3D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c1f3165c757641d83cba4bfdfc350eceac81b4a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 177847fc9cc0b330dcc4844763348ef02665ef28e3b55ee91c077b2e8cf3957d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103965719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730624"
 ---
 # <a name="direct3d-functions"></a>Funzioni Direct3D
 
-Questa sezione contiene informazioni di riferimento per le funzioni che è necessario usare quando si lavora con Direct3D. Vengono implementate le funzioni seguenti:
+Questa sezione contiene informazioni di riferimento per le funzioni che è necessario usare quando si usa Direct3D. Vengono implementate le funzioni seguenti:
 
 - [**D3DPERF_BeginEvent**](./d3d9/nf-d3d9-d3dperf_beginevent.md)
 - [**D3DPERF_EndEvent**](./d3d9/nf-d3d9-d3dperf_endevent.md)
@@ -31,7 +31,7 @@ Questa sezione contiene informazioni di riferimento per le funzioni che è neces
     </colgroup>
     <tbody>
     <tr class="odd">
-    <td>Differenze tra Direct3D 9 e Direct3D 9Ex:<br/> Questa funzione è disponibile solo in 9Ex Direct3D.<br/>
+    <td>Differenze tra Direct3D 9 e Direct3D 9Ex:<br/> Questa funzione è disponibile solo in Direct3D 9Ex.<br/>
     <ul>
     <li><a href="/windows/desktop/api/D3D9/nf-d3d9-direct3dcreate9ex"><strong>Direct3DCreate9Ex</strong></a></li>
     </ul></td>
@@ -45,7 +45,7 @@ Questa sezione contiene informazioni di riferimento per le funzioni che è neces
 
 <dl> <dt>
 
-[Riferimento a Direct3D](dx9-graphics-reference-d3d.md)
+[Informazioni di riferimento su Direct3D](dx9-graphics-reference-d3d.md)
 </dt> </dl>
 
  

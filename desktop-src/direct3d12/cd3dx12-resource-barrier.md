@@ -1,9 +1,9 @@
 ---
-title: Struttura CD3DX12_RESOURCE_BARRIER (D3dx12. h)
-description: Struttura di supporto per consentire l'inizializzazione semplificata di una \_ struttura di barriera delle risorse D3D12 \_ .
+title: CD3DX12_RESOURCE_BARRIER struttura (D3dx12.h)
+description: Struttura helper per consentire un'inizializzazione semplice di una struttura RESOURCE BARRIER D3D12. \_ \_
 ms.assetid: 89E0F38C-8802-46E6-9583-95C5D853CD99
 keywords:
-- Struttura CD3DX12_RESOURCE_BARRIER
+- CD3DX12_RESOURCE_BARRIER struttura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8eaa9b19a8bc7dcebba5982313bb362dbcee6157
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bc3490f48e04c97c845264f514e65db390a01e115ebff7c53aca792d29f0c522
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118098455"
 ---
-# <a name="cd3dx12_resource_barrier-structure"></a>\_Struttura della barriera delle risorse CD3DX12 \_
+# <a name="cd3dx12_resource_barrier-structure"></a>Struttura CD3DX12 \_ RESOURCE \_ BARRIER
 
-Struttura di supporto per consentire l'inizializzazione semplificata di una struttura di [**\_ \_ barriera delle risorse D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_barrier) .
+Struttura helper per consentire un'inizializzazione semplice di [**una struttura RESOURCE \_ \_ BARRIER D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_barrier)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,41 +46,41 @@ struct CD3DX12_RESOURCE_BARRIER  : public D3D12_RESOURCE_BARRIER{
 
 <dl> <dt>
 
-**\_Barriera risorse CD3DX12 \_ ()**
+**CD3DX12 \_ RESOURCE \_ BARRIER()**
 </dt> <dd>
 
-Crea una nuova istanza non inizializzata di una \_ barriera della risorsa CD3DX12 \_ .
+Crea una nuova istanza non inizializzata di una barriera di risorse CD3DX12. \_ \_
 
 </dd> <dt>
 
-**barriera della risorsa CD3DX12 esplicita \_ \_ (const D3D12 \_ Resource \_ Barrier &o)**
+**explicit CD3DX12 \_ RESOURCE \_ BARRIER(const D3D12 \_ RESOURCE BARRIER &\_ o)**
 </dt> <dd>
 
-Crea una nuova istanza di una \_ barriera della risorsa CD3DX12 \_ , inizializzata con il contenuto di un'altra [**\_ \_ barriera di risorsa D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_barrier).
+Crea una nuova istanza di una BARRIERA DI RISORSE CD3DX12, inizializzata con il contenuto di un'altra BARRIERA DI \_ \_ [**\_ RISORSE \_ D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_barrier)
 
 </dd> <dt>
 
-**transizione inline statica ( \* preorigine ID3D12Resource, \_ Stati risorsa D3D12 \_ stateBefore, D3D12 \_ \_ stati risorse stateAfter, uint subresource = D3D12 \_ Resource \_ Barrier \_ All \_ Resources, D3D12 Resource Barrier flag Flags \_ \_ \_ = D3D12 \_ Resource \_ Barrier \_ flag \_ None)**
+**static inline Transition(ID3D12Resource \* pResource, D3D12 \_ RESOURCE \_ STATES stateBefore, D3D12 \_ RESOURCE STATES \_ stateAfter, UINT subresource = D3D12 \_ RESOURCE BARRIER ALL \_ \_ \_ SUBRESOURCES, D3D12 \_ RESOURCE BARRIER FLAGS flags = \_ \_ D3D12 \_ RESOURCE BARRIER FLAG \_ \_ \_ NONE)**
 </dt> <dd>
 
-Transizioni tra gli Stati delle risorse, usando i parametri seguenti:
+Transizioni tra stati delle risorse, usando i parametri seguenti:
 
 [**ID3D12Resource**](/windows/desktop/api/d3d12/nn-d3d12-id3d12resource) \* pResource
 
-[**D3D12 \_ \_Stati delle risorse**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_states) stateBefore
+[**D3D12 \_ RESOURCE \_ STATES**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_states) stateBefore
 
-[**D3D12 \_ \_Stati delle risorse**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_states) stateAfter
+[**D3D12 \_ STATO \_ DELLE RISORSEDopo**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_states)
 
-consenso esplicito UINT subresource = [ **D3D12 \_ Resource \_ Barrier \_ tutte le \_ sottorisorse**](constants.md)
+(scelta esplicita) UiNT subresource = [ **D3D12 \_ RESOURCE \_ BARRIER ALL \_ \_ SUBRESOURCES**](constants.md)
 
-consenso esplicito [**D3D12 \_ Flag \_ di \_ barriera delle risorse**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_barrier_flags) flag = D3D12 \_ flag di barriera delle risorse \_ \_ \_ None
+(scelta esplicita) [**D3D12 \_ FLAG \_ DI \_ BARRIERA DELLE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_barrier_flags) RISORSE = D3D12 FLAG DI BARRIERA DELLE RISORSE \_ \_ \_ \_ NESSUNO
 
 </dd> <dt>
 
-**Aliasing inline statico (ID3D12Resource \* pResourceBefore, ID3D12Resource \* pResourceAfter)**
+**aliasing inline statico(ID3D12Resource \* pResourceBefore, ID3D12Resource \* pResourceAfter)**
 </dt> <dd>
 
-Crea gli alias per la risorsa prima e dopo la transizione della barriera. Parametri
+Crea alias per la risorsa prima e dopo la transizione della barriera. Parametri
 
 [**ID3D12Resource**](/windows/desktop/api/d3d12/nn-d3d12-id3d12resource) \* pResourceBefore
 
@@ -88,19 +88,19 @@ Crea gli alias per la risorsa prima e dopo la transizione della barriera. Parame
 
 </dd> <dt>
 
-**inline UAV statico ( \* preorigine ID3D12Resource)**
+**static inline UAV(ID3D12Resource \* pResource)**
 </dt> <dd>
 
-Crea una visualizzazione non ordinata (UAV) per la risorsa. Parametri
+Crea una visualizzazione di accesso non ordinato (UAV) per la risorsa. Parametri
 
 [**ID3D12Resource**](/windows/desktop/api/d3d12/nn-d3d12-id3d12resource) \* pResource
 
 </dd> <dt>
 
-**operatore const D3D12 \_ Resource \_ Barrier& () const**
+**Operatore const D3D12 \_ RESOURCE \_ BARRIER&() const**
 </dt> <dd>
 
-Definisce il & operatore pass-by-reference per il tipo di struttura padre.
+Definisce l& operatore pass-by-reference per il tipo di struttura padre.
 
 </dd> </dl>
 
@@ -110,7 +110,7 @@ Definisce il & operatore pass-by-reference per il tipo di struttura padre.
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -118,7 +118,7 @@ Definisce il & operatore pass-by-reference per il tipo di struttura padre.
 
 <dl> <dt>
 
-[**\_Barriera delle risorse D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_barrier)
+[**BARRIERA DELLE RISORSE D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_barrier)
 </dt> <dt>
 
 [Strutture helper per D3D12](helper-structures-for-d3d12.md)

@@ -3,7 +3,7 @@ title: EM_SETRECTNP messaggio (Winuser.h)
 description: 'EM_SETRECTNP: imposta il rettangolo di formattazione di un controllo di modifica su più righe.'
 ms.assetid: 1ab497ca-023f-4c26-b92d-b441a0d7b90c
 keywords:
-- EM_SETRECTNP di windows del messaggio
+- EM_SETRECTNP di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9a8c85d4f7abd58ed3adb33ede66254c190a7bb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 60341a41706f012064d3b7cbc79aa019f1492c3a8d535866fa51fc7ea8dfd437
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831132"
 ---
-# <a name="em_setrectnp-message"></a>Messaggio \_ EM SETRECTNP
+# <a name="em_setrectnp-message"></a>Messaggio EM \_ SETRECTNP
 
 Imposta il rettangolo [di formattazione](about-edit-controls.md) di un controllo di modifica su più righe. Il **messaggio EM \_ SETRECTNP** è identico al messaggio [**EM \_ SETRECT,**](em-setrect.md)  ad eccezione del fatto che **EM \_ SETRECTNP** non ridisegna la finestra del controllo di modifica.
 
@@ -63,8 +63,8 @@ Questo messaggio non restituisce un valore.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                                           |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                     |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
 | Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 

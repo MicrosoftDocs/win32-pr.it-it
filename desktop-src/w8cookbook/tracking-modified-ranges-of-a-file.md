@@ -20,9 +20,9 @@ ms.locfileid: "117852028"
 
 ## <a name="description"></a>Descrizione
 
-Il team di NT File System (NTFS) ha aggiunto una nuova funzionalità per Windows. Il journal USN restituisce un record del numero di sequenza di aggiornamento (USN) contenente gli intervalli modificati per un file alla chiusura. È stato introdotto un nuovo tipo di record, USN \_ RECORD \_ V4, per registrare questi intervalli modificati di un file.
+Il team nt file system (NTFS) ha aggiunto una nuova funzionalità per Windows. Il journal USN restituisce un record del numero di sequenza di aggiornamento (USN) contenente gli intervalli modificati per un file alla chiusura. È stato introdotto un nuovo tipo di record, USN \_ RECORD \_ V4, per registrare questi intervalli modificati di un file.
 
-La funzionalità non è abilitata per impostazione predefinita. gli utenti devono richiamare un file system di controllo di accesso (FSCTL) per abilitarlo. Tuttavia, poiché altri componenti Windows possono attivare il rilevamento degli intervalli, gli utenti e gli sviluppatori potrebbero aver percepito che la funzionalità è sempre abilitata. Windows consentirà agli sviluppatori di eseguire query sul journal USN per verificare se il rilevamento degli intervalli è abilitato.
+La funzionalità non è abilitata per impostazione predefinita. Gli utenti devono richiamare un file system comando FSCTL (File system Control) per abilitarlo. Tuttavia, poiché altri componenti Windows possono attivare il rilevamento degli intervalli, gli utenti e gli sviluppatori possono percepire che la funzionalità è sempre abilitata. Windows gli sviluppatori potranno eseguire query sul journal USN per determinare se il rilevamento degli intervalli è abilitato.
 
 La documentazione MSDN verrà fornita in un secondo momento per indicare agli sviluppatori come accedere ai record USN \_ RECORD \_ V4.
 

@@ -3,7 +3,7 @@ title: WM_CAP_GET_MCI_DEVICE messaggio (Vfw.h)
 description: Il messaggio WM CAP GET MCI DEVICE recupera il nome di un dispositivo MCI impostato in precedenza con il messaggio \_ \_ WM CAP SET \_ \_ \_ \_ \_ MCI \_ DEVICE. È possibile inviare questo messaggio in modo esplicito o usando la macro capGetMCIDeviceName.
 ms.assetid: c5d7d955-ab6a-4959-b79e-9ff35a282ba2
 keywords:
-- WM_CAP_GET_MCI_DEVICE di Windows multimediali
+- WM_CAP_GET_MCI_DEVICE messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:

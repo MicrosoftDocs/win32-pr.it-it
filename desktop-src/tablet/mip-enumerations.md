@@ -1,5 +1,5 @@
 ---
-description: In questa sezione vengono descritte le enumerazioni utilizzate con il controllo di input matematico.
+description: Questa sezione descrive le enumerazioni usate con il controllo di input matematico.
 ms.assetid: 8f8274e1-49d0-481c-9c7d-a361ac6172d7
 title: Enumerazioni di input matematiche
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117856577"
 ---
 # <a name="math-input-enumerations"></a>Enumerazioni di input matematiche
 
-In questa sezione vengono descritte le enumerazioni utilizzate con il controllo di input matematico.
+Questa sezione descrive le enumerazioni usate con il controllo di input matematico.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,8 +21,8 @@ In questa sezione vengono descritte le enumerazioni utilizzate con il controllo 
 
 | Nome                                           | Descrizione                                                               |
 |------------------------------------------------|---------------------------------------------------------------------------|
-| [**MICUIELEMENT**](/windows/win32/api/micaut/ne-micaut-micuielement)           | Specifica gli elementi dell'interfaccia utente di un controllo MIC (Math Input Control). |
-| [**MICUIELEMENTSTATE**](/windows/win32/api/micaut/ne-micaut-micuielementstate) | Specifica gli stati dei pulsanti di un controllo MIC (Math Input Control).                |
+| [**MICUIELEMENT**](/windows/win32/api/micaut/ne-micaut-micuielement)           | Specifica gli elementi dell'interfaccia utente di un controllo di input matematico (MIC). |
+| [**MICUIELEMENTSTATE**](/windows/win32/api/micaut/ne-micaut-micuielementstate) | Specifica gli stati del pulsante di un controllo di input matematico (MIC).                |
 
 
 

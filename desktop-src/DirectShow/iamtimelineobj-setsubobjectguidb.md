@@ -1,7 +1,7 @@
 ---
-description: "Il metodo SetSubObjectGUIDB specifica il GUID dell'oggetto SubObject associato a questo oggetto. Questo metodo è equivalente a IAMTimelineObj:: SetSubObjectGUID ma accetta un valore BSTR."
+description: Il metodo SetSubObjectGUIDB specifica il GUID del sottooggetto associato a questo oggetto. Questo metodo equivale a IAMTimelineObj::SetSubObjectGUID, ma accetta un valore BSTR.
 ms.assetid: b2523b17-1df3-4be5-8bbb-6b67815f9349
-title: 'Metodo IAMTimelineObj:: SetSubObjectGUIDB (qedit. h)'
+title: Metodo IAMTimelineObj::SetSubObjectGUIDB (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 8df74249f061321ccd710822b8c2e0b76d5c3582
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a9bb2f88e1312a3a8640147d9ced7ebc1c2157a0633aeed969f36c43236b6052
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118154967"
 ---
-# <a name="iamtimelineobjsetsubobjectguidb-method"></a>Metodo IAMTimelineObj:: SetSubObjectGUIDB
+# <a name="iamtimelineobjsetsubobjectguidb-method"></a>Metodo IAMTimelineObj::SetSubObjectGUIDB
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `SetSubObjectGUIDB` metodo specifica il GUID dell'oggetto SubObject associato a questo oggetto. Questo metodo è equivalente a [**IAMTimelineObj:: SetSubObjectGUID**](iamtimelineobj-setsubobjectguid.md) ma accetta un valore **BSTR** .
+Il `SetSubObjectGUIDB` metodo specifica il GUID del sottooggetto associato a questo oggetto. Questo metodo equivale a [**IAMTimelineObj::SetSubObjectGUID,**](iamtimelineobj-setsubobjectguid.md) ma accetta un **valore BSTR.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,23 +48,23 @@ HRESULT SetSubObjectGUIDB(
 *newVal* 
 </dt> <dd>
 
-**BSTR** che rappresenta il GUID dell'oggetto SubObject.
+**BSTR** che rappresenta il GUID del sottooggetto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se ha esito positivo o un valore **HRESULT** che indica la ragione dell'errore.
+Restituisce S OK in caso di esito positivo o un \_ **valore HRESULT** che indica la causa dell'errore.
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Restituisce \_ OK se ha esito positivo o un valore **HRESULT** che indica la rag
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

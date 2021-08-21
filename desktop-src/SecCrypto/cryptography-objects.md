@@ -13,7 +13,7 @@ ms.locfileid: "117768373"
 ---
 # <a name="cryptography-objects"></a>Oggetti di crittografia
 
-Gli oggetti di crittografia vengono categorizzati in base all'utilizzo, come indicato di seguito:
+Gli oggetti di crittografia vengono classificati in base all'utilizzo come segue:
 
 -   [Oggetti archivio certificati](#certificate-store-objects)
 -   [Oggetti firma digitale](#digital-signature-objects)
@@ -24,7 +24,7 @@ Gli oggetti di crittografia vengono categorizzati in base all'utilizzo, come ind
 
 ## <a name="certificate-store-objects"></a>Oggetti archivio certificati
 
-Gli oggetti seguenti funzionano con [*gli archivi certificati*](../secgloss/c-gly.md) e i certificati in tali archivi. CAPICOM supporta l'uso di utenti correnti, computer locale, memoria e archivi certificati Active Directory.
+Gli oggetti seguenti funzionano con [*gli archivi certificati*](../secgloss/c-gly.md) e i certificati in tali archivi. CAPICOM supporta l'uso di utenti correnti, computer locale, memoria e archivi certificati di Active Directory.
 
 
 
@@ -32,16 +32,16 @@ Gli oggetti seguenti funzionano con [*gli archivi certificati*](../secgloss/c-gl
 |----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | [**Certificato**](certificate.md)                 | Un singolo certificato digitale.                                                                                           |
 | [**CertificatePolicies**](certificatepolicies.md) | Raccolta di [**oggetti PolicyInformation.**](policyinformation.md)                                                 |
-| [**Certificati**](certificates.md)               | Raccolta di [**oggetti Certificate.**](certificate.md)                                                               |
+| [**Certificati**](certificates.md)               | Raccolta di [**oggetti**](certificate.md) Certificate.                                                               |
 | [**CertificateStatus**](certificatestatus.md)     | Fornisce informazioni sullo stato di un certificato.                                                                           |
-| [**Catena**](chain.md)                             | Crea e controlla una catena di convalida dei certificati basata su un certificato digitale.                                       |
+| [**Catena**](chain.md)                             | Crea e controlla una catena di convalida del certificato basata su un certificato digitale.                                       |
 | [**ExtendedProperties**](extendedproperties.md)   | Rappresenta una raccolta di [**oggetti ExtendedProperty.**](extendedproperty.md)                                        |
 | [**Extendedproperty**](extendedproperties.md)     | Rappresenta una proprietà estesa da Microsoft.                                                                               |
 | [**Estensione**](extension.md)                     | Rappresenta una singola estensione di certificato.                                                                              |
 | [**Estensioni**](extensions.md)                   | Rappresenta una raccolta di [**oggetti Extension.**](extension.md)                                                      |
 | [**PrivateKey**](privatekey.md)                   | Rappresenta una chiave privata.                                                                                               |
 | [**Publickey**](publickey.md)                     | Rappresenta una chiave pubblica in un [**oggetto**](certificate.md) Certificate.                                                 |
-| [**Archiviazione**](store.md)                             | Fornisce le proprietà e i metodi per scegliere, gestire e usare gli archivi certificati e i certificati in tali archivi. |
+| [**Archiviazione**](store.md)                             | Fornisce le proprietà e i metodi per scegliere, gestire e utilizzare gli archivi certificati e i certificati in tali archivi. |
 | [**Modello**](template.md)                       | Rappresenta il modello di estensione del certificato.                                                       |
 
 
@@ -56,9 +56,9 @@ Gli oggetti seguenti vengono esportati per firmare digitalmente i dati e per ver
 
 | Oggetto                           | Descrizione                                                                                                 |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [**SignedCode**](signedcode.md) | Oggetto utilizzato per firmare il codice con una firma digitale Authenticode e per verificare la firma nel codice firmato. |
+| [**SignedCode**](signedcode.md) | Oggetto usato per firmare il codice con una firma digitale Authenticode e per verificare la firma nel codice firmato. |
 | [**SignedData**](signeddata.md) | Oggetto utilizzato per firmare i dati e per verificare la firma sui dati firmati.                                        |
-| [**Firmatario**](signer.md)         | Informazioni su un singolo firmatario dei dati, incluso il certificato del firmatario.                                    |
+| [**Firmatario**](signer.md)         | Informazioni su un singolo firmatario di dati, incluso il certificato del firmatario.                                    |
 | [**Firmatari**](signers.md)       | Raccolta di [**oggetti Signer.**](signer.md)                                                             |
 
 
@@ -74,7 +74,7 @@ Gli oggetti seguenti vengono esportati per creare messaggi di dati in busta per 
 | Oggetto                                 | Descrizione                                                                                                                                |
 |----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | [**EnvelopedData**](envelopeddata.md) | Oggetti utilizzati per creare, inviare e ricevere dati in busta. I dati in busta vengono crittografati in modo che solo i destinatari previsti possano decrittografarlo. |
-| [**Destinatari**](recipients.md)       | Raccolta degli oggetti [**Certificate**](certificate.md) dei destinatari previsti di un messaggio in busta.                           |
+| [**Destinatari**](recipients.md)       | Raccolta degli oggetti [**Certificato**](certificate.md) dei destinatari previsti di un messaggio in busta.                           |
 
 
 
@@ -103,14 +103,14 @@ Gli oggetti seguenti vengono esportati per modificare i comportamenti predefinit
 | Oggetto                                         | Descrizione                                                                                                                                     |
 |------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Algoritmo**](algorithm.md)                 | Imposta l'algoritmo [*e la lunghezza della*](../secgloss/k-gly.md) chiave da utilizzare nelle operazioni di crittografia. |
-| [**Attributo**](attribute.md)                 | Fornisce un'unica parte di informazioni aggiunte su una firma, ad esempio l'ora della firma.                                                    |
-| [**Attributi**](attributes.md)               | Raccolta di [**oggetti Attribute.**](attribute.md)                                                                                           |
-| [**Informazioni di base**](basicconstraints.md)   | Fornisce l'accesso in sola lettura ai vincoli di base sugli utilizzi di un certificato.                                                                    |
+| [**Attributo**](attribute.md)                 | Fornisce un'unica informazione aggiunta su una firma, ad esempio l'ora della firma.                                                    |
+| [**Attributi**](attributes.md)               | Raccolta di [**oggetti**](attribute.md) Attribute.                                                                                           |
+| [**Proprietà BasicConstraints**](basicconstraints.md)   | Fornisce l'accesso in sola lettura ai vincoli di base sugli utilizzi di un certificato.                                                                    |
 | [**EKU**](eku.md)                             | Fornisce l'accesso alle proprietà EKU dei certificati.                                                                                              |
 | [**EKU**](ekus.md)                           | Raccolta di [**oggetti EKU.**](eku.md)                                                                                                       |
 | [**EncodedData**](encodeddata.md)             | Rappresenta un blocco di dati codificati.                                                                                                             |
 | [**ExtendedKeyUsage**](extendedkeyusage.md)   | Fornisce l'accesso in sola lettura alle proprietà estese di utilizzo delle chiavi dei certificati.                                                                 |
-| [**HashedData**](hasheddata.md)               | Fornisce la funzionalità per l'applicazione di un algoritmo hash a una stringa.                                                                               |
+| [**HashedData**](hasheddata.md)               | Fornisce funzionalità per l'applicazione di un algoritmo hash a una stringa.                                                                               |
 | [**KeyUsage**](keyusage.md)                   | Fornisce l'accesso in sola lettura alle proprietà di utilizzo delle chiavi dei certificati.                                                                              |
 | [**NoticeNumbers**](noticenumbers.md)         | Rappresenta una raccolta di [**oggetti Extension.**](extension.md)                                                                              |
 | [**Oid**](oid.md)                             | Rappresenta un identificatore di oggetto utilizzato da diverse proprietà CAPICOM.                                                                     |

@@ -1,5 +1,5 @@
 ---
-description: L'API di registrazione certificati supporta gli attributi seguenti. È possibile creare un singolo attributo usando l'interfaccia corrispondente identificata in ognuna delle sezioni seguenti.
+description: L'API Di registrazione certificati supporta gli attributi seguenti. È possibile creare un singolo attributo usando l'interfaccia corrispondente identificata in ognuna delle sezioni seguenti.
 ms.assetid: e14fd472-1974-4ad2-b35a-3ab58ba0d707
 title: Attributi supportati
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "117774414"
 ---
 # <a name="supported-attributes"></a>Attributi supportati
 
-L'API di registrazione certificati supporta gli attributi seguenti. È possibile creare un singolo attributo usando l'interfaccia corrispondente identificata in ognuna delle sezioni seguenti.
+L'API Di registrazione certificati supporta gli attributi seguenti. È possibile creare un singolo attributo usando l'interfaccia corrispondente identificata in ognuna delle sezioni seguenti.
 
 ## <a name="clientid"></a>ClientId
 
-[**L'interfaccia IX509AttributeClientId**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeclientid) può essere usata per definire un attributo che contiene informazioni sul computer client che ha inviato la richiesta di certificato. Le informazioni possono essere usate per la diagnostica.
+[**L'interfaccia IX509AttributeClientId**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeclientid) può essere usata per definire un attributo contenente informazioni sul computer client che ha inviato la richiesta di certificato. Le informazioni possono essere usate per la diagnostica.
 
 **Si applica a:** Richiesta PKCS \# 10 o CMC.
 
@@ -31,15 +31,15 @@ L'API di registrazione certificati supporta gli attributi seguenti. È possibile
 
 | Estensione              | Descrizione                                                                                                                                                                                                                      |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AlternativeNames       | Contiene uno o più formati di nome alternativo dell'autorità emittente associata al certificato.                                                                                                                                       |
+| AlternativeNames       | Contiene uno o più formati di nome alternativi dell'autorità di certificazione associata al certificato.                                                                                                                                       |
 | AuthorityKeyIdentifier | Contiene un identificatore di chiave univoco per distinguere tra più chiavi di firma del certificato [*dell'autorità di certificazione*](/windows/desktop/SecGloss/c-gly) (CA). |
-| Proprietà BasicConstraints       | Indica se l'oggetto può fungere da CA.                                                                                                                                                                                   |
-| CertificatePolicies    | Identifica i criteri e le informazioni facoltative sul qualificatore associate al certificato.                                                                                                                                      |
-| MSApplicationPolicies  | Identifica uno o più utilizzi del certificato. Questa estensione è simile all'estensione EnhancedKeyUsage, ma è definita da Microsoft.                                                                                           |
+| Informazioni di base       | Indica se l'oggetto può fungere da CA.                                                                                                                                                                                   |
+| CertificatePolicies    | Identifica i criteri e le informazioni sui qualificatori facoltativi associati al certificato.                                                                                                                                      |
+| MSApplicationPolicies  | Identifica uno o più utilizzi per il certificato. Questa estensione è simile all'estensione EnhancedKeyUsage, ma è definita da Microsoft.                                                                                           |
 | EnhancedKeyUsage       | Identifica uno o più utilizzi della chiave pubblica contenuta nel certificato. L'estensione per l'utilizzo chiavi avanzato può essere usata in aggiunta o al posto dell'estensione per l'utilizzo delle chiavi.                                                  |
-| KeyUsage               | Identifica le restrizioni relative alle operazioni che possono essere eseguite dalla chiave pubblica contenuta nel certificato.                                                                                                                  |
-| SmimeCapabilities      | Segnala le funzionalità di decrittografia di un destinatario di posta elettronica al mittente di posta elettronica per consentire al mittente di scegliere l'algoritmo simmetrico più sicuro supportato da entrambe le parti.                                                      |
-| SubjectKeyIdentifier   | Contiene un identificatore di chiave univoca che può essere utilizzato per distinguere tra più chiavi di firma associate al proprietario del certificato.                                                                                          |
+| KeyUsage               | Identifica le restrizioni sulle operazioni che possono essere eseguite dalla chiave pubblica contenuta nel certificato.                                                                                                                  |
+| SmimeCapabilities      | Segnala le funzionalità di decrittografia di un destinatario di posta elettronica al mittente del messaggio di posta elettronica per consentire al mittente di scegliere l'algoritmo simmetrico più sicuro supportato da entrambe le parti.                                                      |
+| SubjectKeyIdentifier   | Contiene un identificatore di chiave univoco che può essere usato per distinguere tra più chiavi di firma associate al proprietario del certificato.                                                                                          |
 | Modello               | Identifica il modello da utilizzare per il rilascio o il rinnovo di un certificato. L'estensione contiene l'identificatore di oggetto (OID) del modello.                                                                                       |
 | Templatename           | Identifica il modello da utilizzare per il rilascio o il rinnovo di un certificato. L'estensione contiene il nome del modello.                                                                                                          |
 
@@ -51,9 +51,9 @@ L'API di registrazione certificati supporta gli attributi seguenti. È possibile
 
 **OID:** XCN \_ OID \_ RSA \_ certExtensions (1.2.840.113549.1.9.14)
 
-## <a name="archivekey"></a>Chiave di archiviazione
+## <a name="archivekey"></a>ArchiveKey
 
-[**L'interfaccia IX509AttributeArchiveKey**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributearchivekey) può essere usata per definire un attributo che contiene una chiave privata crittografata inviata a un'autorità di certificazione per l'archiviazione.
+[**L'interfaccia IX509AttributeArchiveKey**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributearchivekey) può essere usata per definire un attributo contenente una chiave privata crittografata inviata a una CA per l'archiviazione.
 
 **Si applica a:** Richiesta CMC.
 
@@ -65,19 +65,19 @@ L'API di registrazione certificati supporta gli attributi seguenti. È possibile
 
 **Si applica a:** Richiesta CMC.
 
-**OID:** \_XCN OID \_ ENCRYPTED KEY HASH \_ \_ (1.3.6.1.4.1.311.21.21)
+**OID:** HASH DELLA CHIAVE CRITTOGRAFATA OID XCN \_ \_ \_ \_ (1.3.6.1.4.1.311.21.21)
 
-## <a name="cspprovider"></a>Provider di servizi di configurazione
+## <a name="cspprovider"></a>CspProvider
 
-[**L'interfaccia IX509AttributeCspProvider**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributecspprovider) può essere usata per definire un attributo che contiene informazioni sul [*provider*](/windows/desktop/SecGloss/c-gly) del servizio di crittografia (CSP) usato dal richiedente per le operazioni di crittografia.
+[**L'interfaccia IX509AttributeCspProvider**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributecspprovider) può essere usata per definire un attributo contenente informazioni sul [*provider*](/windows/desktop/SecGloss/c-gly) del servizio di crittografia (CSP) usato dal richiedente per le operazioni di crittografia.
 
 **Si applica a:** Richiesta PKCS \# 10. Questo attributo viene creato automaticamente quando si crea un [**oggetto IX509CertificateRequestPkcs10.**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestpkcs10)
 
-**OID:** PROVIDER CSP DI REGISTRAZIONE OID XCN \_ \_ \_ \_ (1.3.6.1.4.1.311.13.2.2)
+**OID:** PROVIDER CSP di REGISTRAZIONE OID XCN \_ \_ \_ \_ (1.3.6.1.4.1.311.13.2.2)
 
 ## <a name="osversion"></a>OSVersion
 
-[**L'interfaccia IX509AttributeOSVersion**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeosversion) può essere usata per creare un attributo che contiene informazioni sulla versione relative al sistema operativo client. Le informazioni possono essere utilizzate dalla CA per determinare il tipo di elaborazione da applicare durante la creazione del certificato.
+[**L'interfaccia IX509AttributeOSVersion**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeosversion) può essere usata per creare un attributo contenente informazioni sulla versione del sistema operativo client. Le informazioni possono essere usate dalla CA per determinare il tipo di elaborazione da applicare durante la creazione del certificato.
 
 **Si applica a:** Richiesta PKCS \# 10 o CMC.
 
@@ -85,9 +85,9 @@ L'API di registrazione certificati supporta gli attributi seguenti. È possibile
 
 ## <a name="renewalcertificate"></a>RenewalCertificate
 
-[**L'interfaccia IX509AttributeRenewalCertificate**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributerenewalcertificate) può essere usata per creare un attributo che contiene il certificato da rinnovare.
+[**L'interfaccia IX509AttributeRenewalCertificate**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributerenewalcertificate) può essere usata per creare un attributo contenente il certificato da rinnovare.
 
-**Si applica a:** Richiesta PKCS \# 10. Questo attributo viene creato automaticamente se si crea una richiesta PKCS 10 avviando la richiesta con \# il certificato da rinnovare.
+**Si applica a:** Richiesta PKCS \# 10. Questo attributo viene creato automaticamente se si crea una richiesta PKCS 10 avviando il certificato \# con il certificato da rinnovare.
 
 **OID:** CERTIFICATO DI RINNOVO OID XCN \_ \_ \_ (1.3.6.1.4.1.311.13.1)
 

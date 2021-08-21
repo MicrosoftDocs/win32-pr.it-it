@@ -1,11 +1,11 @@
 ---
-title: Proprietà CounterItem. Selected
+title: CounterItem.Selected - proprietà
 description: Recupera o imposta un valore che indica se il contatore è selezionato.
 ms.assetid: 293cc2ea-728c-4364-be2b-080bd188fe1c
 keywords:
 - Proprietà selezionata SysMon
-- Proprietà selezionata SysMon, oggetto CounterItem
-- Oggetto CounterItem SysMon, proprietà selezionata
+- Proprietà selezionata SysMon , oggetto CounterItem
+- Oggetto CounterItem SysMon , proprietà Selected
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac707dfaf2ed379884395a08128ddaeda771fa00
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 41e5cfcc65c54f882f10e87a0f2aaebad0e1a55c94b6581031b034799987bc6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117956960"
 ---
-# <a name="counteritemselected-property"></a>Proprietà CounterItem. Selected
+# <a name="counteritemselected-property"></a>CounterItem.Selected - proprietà
 
 Recupera o imposta un valore che indica se il contatore è selezionato.
 
@@ -44,7 +44,7 @@ True se il contatore è selezionato; in caso contrario, false.
 
 ## <a name="remarks"></a>Commenti
 
-È possibile selezionare uno o più contatori dalla raccolta di contatori. Selezionando un contatore, viene selezionato il contatore nella legenda, il contatore viene reso visibile nella legenda e viene generato un evento [**OnCounterSelected**](-systemmonitor-oncounterselected.md) .
+È possibile selezionare uno o più contatori dalla raccolta di contatori. La selezione di un contatore, la selezione del contatore nella legenda, la visibilità del contatore nella legenda e la generazione di [**un evento OnCounterSelected.**](-systemmonitor-oncounterselected.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,9 +52,9 @@ True se il contatore è selezionato; in caso contrario, false.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 

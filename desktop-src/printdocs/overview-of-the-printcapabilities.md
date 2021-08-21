@@ -4,12 +4,12 @@ ms.assetid: 094472fc-28ca-4d7a-a8be-cc4623d02ff2
 title: Panoramica di PrintCapabilities
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c8f61d1ee4125a9a1ac5f9ddb07cf226cd7094e
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 4c2cf4ffb6dca92693abbfe1fd3c7ac7b906c13abf41c02b71efeb1e6607a21a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117868446"
 ---
 # <a name="overview-of-the-printcapabilities"></a>Panoramica di PrintCapabilities
 

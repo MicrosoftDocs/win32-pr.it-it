@@ -1,44 +1,44 @@
 ---
-title: Mapping dell'interfaccia utente dell'oggetto dominio
-description: In questo argomento vengono illustrate le finestre delle proprietà dell'oggetto dominio nello snap-in utenti e computer di Active Directory.
+title: Mapping degli oggetti Interfaccia utente dominio
+description: In questo argomento vengono illustrate le finestre delle proprietà dell'oggetto Dominio Utenti e computer di Active Directory snap-in.
 ms.assetid: 4ab39977-97fa-4bff-b54d-015d7e365212
 ms.tgt_platform: multiple
 keywords:
-- Mapping dell'interfaccia utente dell'oggetto dominio Active Directory
-- Active Directory mapping interfacce, utente oggetto dominio
+- Mapping degli oggetti Interfaccia utente dominio in Active Directory
+- Mapping dell'interfaccia di Active Directory, utente oggetto dominio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b4bfc2d33dff024fccbc5a118d67274cdfec602
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b6672ced4ee9a5db23fe034b89a7d96cf5e68f1a3ab418cc1eca201f6a655db1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118018261"
 ---
-# <a name="domain-object-user-interface-mapping"></a>Mapping dell'interfaccia utente dell'oggetto dominio
+# <a name="domain-object-user-interface-mapping"></a>Mapping degli oggetti Interfaccia utente dominio
 
-In questo argomento vengono illustrate le finestre delle proprietà dell'oggetto dominio nello snap-in utenti e computer di Active Directory.
+In questo argomento vengono illustrate le finestre delle proprietà dell'oggetto Dominio Utenti e computer di Active Directory snap-in.
 
-## <a name="general-property-sheet"></a>Finestra delle proprietà generale
+## <a name="general-property-sheet"></a>Finestra delle proprietà Generale
 
-Nella tabella seguente vengono illustrate le etichette dell'interfaccia utente nella finestra delle proprietà **generale** .
+La tabella seguente mostra le etichette dell'interfaccia utente nella **finestra delle proprietà** Generale.
 
 
 
-| Etichetta interfaccia utente                       | Attributo Active Directory |
+| Etichetta dell'interfaccia utente                       | Attributo di Active Directory |
 |--------------------------------|----------------------------|
-| Nome di dominio (precedente a Windows 2000) | DC\*                       |
+| Nome di dominio (versione Windows 2000) | Dc\*                       |
 | Descrizione                    | description                |
 
 
 
- 
+ 
 
-\*L'attributo DC fornisce l'accesso al primo dei componenti del dominio, che non è necessariamente lo stesso del DN NetBIOS.
+\*L'attributo DC fornisce l'accesso al primo dei componenti di dominio che non corrisponde necessariamente al DN NetBIOS.
 
- 
+ 
 
- 
+ 
 
 
 

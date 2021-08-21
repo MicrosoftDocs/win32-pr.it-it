@@ -18,7 +18,7 @@ Gli argomenti seguenti contengono una panoramica dei concetti com+ per gli svilu
 -   [Cenni preliminari sulla programmazione COM+](com--programming-overview.md)
 -   [Cenni preliminari sull'applicazione COM+](com--application-overview.md)
 -   [Contesti COM+ e modelli di threading](com--contexts-and-threading-models.md)
--   [COM+ Services Primer](com--services-primer.md)
+-   [Informazioni di base per i servizi COM+](com--services-primer.md)
 
  
 

@@ -1,21 +1,21 @@
 ---
-description: Nel codice seguente viene implementata una coda producer/consumer.
+description: Il codice seguente implementa una coda producer/consumer.
 ms.assetid: 0f79de15-6ce9-4d89-afb5-b4a2f0cf2fe3
-title: Utilizzo di variabili di condizione
+title: Uso delle variabili di condizione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70989ca0f62271aa5afabfd60deddaeca2187866
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c1b1bda85e0e5efecaf1572637601bc0031ac04cb91b6f7de735e1ca8590e31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117765545"
 ---
-# <a name="using-condition-variables"></a>Utilizzo di variabili di condizione
+# <a name="using-condition-variables"></a>Uso delle variabili di condizione
 
-Nel codice seguente viene implementata una coda producer/consumer. La coda è rappresentata come buffer circolare limitato ed è protetta da una sezione critica. Il codice usa due variabili di condizione: una usata dai producer ( `BufferNotFull` ) e una usata dai consumer ( `BufferNotEmpty` ).
+Il codice seguente implementa una coda producer/consumer. La coda è rappresentata come un buffer circolare delimitato ed è protetta da una sezione critica. Il codice usa due variabili di condizione: una usata dai producer ( `BufferNotFull` ) e una usata dai consumer ( `BufferNotEmpty` ).
 
-Il codice chiama la funzione [**InitializeConditionVariable**](/windows/win32/api/synchapi/nf-synchapi-initializeconditionvariable) per creare le variabili di condizione. I thread consumer chiamano la funzione [**SleepConditionVariableCS**](/windows/win32/api/synchapi/nf-synchapi-sleepconditionvariablecs) per attendere che gli elementi vengano aggiunti alla coda e la funzione [**WakeConditionVariable**](/windows/win32/api/synchapi/nf-synchapi-wakeconditionvariable) per segnalare al producer che è pronta per altri elementi. I thread producer chiamano **SleepConditionVariableCS** per attendere che il consumer rimuova gli elementi dalla coda e **WakeConditionVariable** per segnalare al consumer che sono presenti più elementi nella coda.
+Il codice chiama la [**funzione InitializeConditionVariable**](/windows/win32/api/synchapi/nf-synchapi-initializeconditionvariable) per creare le variabili di condizione. I thread consumer chiamano la funzione [**SleepConditionVariableCS**](/windows/win32/api/synchapi/nf-synchapi-sleepconditionvariablecs) per attendere l'aggiunta di elementi alla coda e la [**funzione WakeConditionVariable**](/windows/win32/api/synchapi/nf-synchapi-wakeconditionvariable) per segnalare al producer che è pronta per altri elementi. I thread producer chiamano **SleepConditionVariableCS** per attendere che il consumer rimova gli elementi dalla coda e **WakeConditionVariable** per segnalare al consumer che sono presenti più elementi nella coda.
 
 **Windows Server 2003 e Windows XP:** Le variabili di condizione non sono supportate.
 

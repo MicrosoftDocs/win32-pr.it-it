@@ -1,7 +1,7 @@
 ---
 description: Richiede l'allocazione di un oggetto frame.
 ms.assetid: 977e40d6-bf49-44b6-ac95-88e7f778ea50
-title: 'Metodo ID3DXAllocateHierarchy:: CreateFrame (D3dx9anim. h)'
+title: Metodo ID3DXAllocateHierarchy::CreateFrame (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d6a3a13dd4d3b3dfaffb26632ff6ad5cc8666f86
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: eec258c7f1166532d6ad79671e55ddae76da58ec20a927c87743def8cb78f6b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118094637"
 ---
-# <a name="id3dxallocatehierarchycreateframe-method"></a>Metodo ID3DXAllocateHierarchy:: CreateFrame
+# <a name="id3dxallocatehierarchycreateframe-method"></a>Metodo ID3DXAllocateHierarchy::CreateFrame
 
 Richiede l'allocazione di un oggetto frame.
 
@@ -41,12 +41,12 @@ HRESULT CreateFrame(
 
 <dl> <dt>
 
-*Nome* \[ in\]
+*Nome* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Nome del fotogramma da creare.
+Nome del frame da creare.
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Restituisce l'oggetto frame creato.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-I valori restituiti da questo metodo sono implementati da un programmatore di applicazioni. In generale, se non si verificano errori, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo per restituire un messaggio di errore appropriato da D3DERR o D3DXERR, in quanto questa operazione causerà l'esito negativo anche di [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) e restituirà l'errore.
+I valori restituiti di questo metodo vengono implementati da un programmatore di applicazioni. In generale, se non si verifica alcun errore, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo in modo che restituisca un messaggio di errore appropriato da D3DERR o D3DXERR, perché in questo modo anche [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) avrà esito negativo e restituirà l'errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ I valori restituiti da questo metodo sono implementati da un programmatore di ap
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,27 +1,27 @@
 ---
-description: Il formato di trama DXT1 è per le trame opache o con un solo colore trasparente.
+description: Il formato trama DXT1 è per le trame opache o con un singolo colore trasparente.
 ms.assetid: a890ed0a-1f68-45b8-93cb-b621d1908d9f
 title: Trame alfa opache e a 1 bit (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f629eff594d28d9a807021c0b9df0bd05ea66c3
-ms.sourcegitcommit: 37f276b5d887a3aad04b1ba86e390dea9d87e591
+ms.openlocfilehash: bda620810e48cba519322f3f2426555443fb696f524f4fbe7752a8c7aaedba73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "104567420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117728186"
 ---
 # <a name="opaque-and-1-bit-alpha-textures-direct3d-9"></a>Trame alfa opache e a 1 bit (Direct3D 9)
 
-Il formato di trama DXT1 è per le trame opache o con un solo colore trasparente.
+Il formato trama DXT1 è per le trame opache o con un singolo colore trasparente.
 
-Per ogni blocco alfa opaco o a 1 bit, vengono archiviati i valori a 2 16 bit (formato RGB 5:6:5) e una bitmap 4x4 con 2 bit per pixel. Questo totale 64 bit per 16 Texel o quattro bit per Texel. Nella bitmap a blocchi sono disponibili 2 bit per Texel per la selezione tra i quattro colori, due dei quali sono archiviati nei dati codificati. Gli altri due colori sono derivati da questi colori archiviati dall'interpolazione lineare. Questo layout è illustrato nel diagramma seguente.
+Per ogni blocco alfa opaco o a 1 bit, vengono archiviati due valori a 16 bit (formato RGB 5:6:5) e una bitmap 4x4 con 2 bit per pixel. In questo modo vengono totali 64 bit per 16 texel o quattro bit per texel. Nella bitmap a blocchi sono presenti 2 bit per texel per selezionare tra i quattro colori, due dei quali vengono archiviati nei dati codificati. Gli altri due colori derivano da questi colori archiviati tramite interpolazione lineare. Questo layout è illustrato nel diagramma seguente.
 
-![diagramma del layout bitmap](images/colors1.png)
+![Diagramma del layout bitmap](images/colors1.png)
 
-Il formato Alpha a 1 bit si distingue dal formato opaco confrontando i valori dei colori a 2 16 bit archiviati nel blocco. Vengono considerati come interi senza segno. Se il primo colore è maggiore del secondo, significa che sono definiti solo Texel opachi. Ciò significa che per rappresentare i Texel vengono utilizzati quattro colori. Nella codifica a quattro colori sono presenti due colori derivati e tutti e quattro i colori vengono distribuiti equamente nello spazio colore RGB. Questo formato è analogo al formato RGB 5:6:5. In caso contrario, per la trasparenza alpha a 1 bit vengono utilizzati tre colori e il quarto è riservato per rappresentare i Texel trasparenti.
+Il formato alfa a 1 bit si distingue dal formato opaco confrontando i due valori di colore a 16 bit archiviati nel blocco . Vengono considerati come interi senza segno. Se il primo colore è maggiore del secondo, implica che vengono definiti solo texel opachi. Ciò significa che vengono usati quattro colori per rappresentare i texel. Nella codifica a quattro colori sono presenti due colori derivati e tutti e quattro i colori sono distribuiti equamente nello spazio colore RGB. Questo formato è analogo al formato RGB 5:6:5. In caso contrario, per la trasparenza alfa a 1 bit vengono usati tre colori e il quarto è riservato per rappresentare texel trasparenti.
 
-Nella codifica a tre colori è presente un colore derivato e il quarto codice a 2 bit è riservato per indicare un Texel trasparente (informazioni Alpha). Questo formato è analogo a RGBA 5:5:5:1, in cui viene usato il bit finale per la codifica della maschera alfa.
+Nella codifica a tre colori è presente un colore derivato e il quarto codice a 2 bit è riservato per indicare un texel trasparente (informazioni alfa). Questo formato è analogo a RGBA 5:5:5:1, in cui il bit finale viene usato per codificare la maschera alfa.
 
 Nell'esempio di codice seguente viene illustrato l'algoritmo per decidere se è selezionata la codifica a tre o quattro colori:
 
@@ -51,15 +51,15 @@ else
 
 
 
-Prima di eseguire la fusione è consigliabile impostare su zero i componenti RGBA del pixel di trasparenza.
+È consigliabile impostare i componenti RGBA del pixel di trasparenza su zero prima della fusione.
 
-Nelle tabelle seguenti viene illustrato il layout di memoria per il blocco a 8 byte. Si presuppone che il primo indice corrisponda alla coordinata y e il secondo corrisponda alla coordinata x. Ad esempio, Texel \[ 1 \] \[ 2 \] fa riferimento al pixel della mappa di trama in corrispondenza di (x, y) = (2, 1).
+Le tabelle seguenti illustrano il layout di memoria per il blocco di 8 byte. Si presuppone che il primo indice corrisponda alla coordinata y e il secondo corrisponda alla coordinata x. Ad esempio, Texel 1 2 fa riferimento al pixel della mappa \[ \] \[ di trama in \] (x,y) = (2,1).
 
 Questa tabella contiene il layout di memoria per il blocco a 8 byte (64 bit).
 
 
 
-| Indirizzo di Word | Word a 16 bit    |
+| Indirizzo di Word | Parola a 16 bit    |
 |--------------|----------------|
 | 0            | Colore \_ 0       |
 | 1            | Colore \_ 1       |
@@ -70,11 +70,11 @@ Questa tabella contiene il layout di memoria per il blocco a 8 byte (64 bit).
 
  
 
-\_Il colore 0 e \_ il colore 1, i colori dei due estremi sono disposti come segue:
+Il \_ colore 0 e il \_ colore 1, i colori ai due estremi, sono disposti come segue:
 
 
 
-| BITS        | Colore                 |
+| BITS        | Color                 |
 |-------------|-----------------------|
 | 4:0 (LSB \* ) | Componente colore blu  |
 | 10:5        | Componente colore verde |
@@ -86,7 +86,7 @@ Questa tabella contiene il layout di memoria per il blocco a 8 byte (64 bit).
 
 \*bit meno significativo
 
-La bitmap Word \_ 0 è configurata come segue:
+Bitmap Word \_ 0 è disposto come segue:
 
 
 
@@ -107,7 +107,7 @@ La bitmap Word \_ 0 è configurata come segue:
 
 \*bit più significativo (MSB)
 
-La bitmap Word \_ 1 è configurata come segue:
+Bitmap Word \_ 1 è strutturato come segue:
 
 
 
@@ -126,9 +126,9 @@ La bitmap Word \_ 1 è configurata come segue:
 
  
 
-## <a name="example-of-opaque-color-encoding"></a>Esempio di codifica dei colori opaca
+## <a name="example-of-opaque-color-encoding"></a>Esempio di codifica colori opaca
 
-Come esempio di codifica opaca, si supponga che i colori rosso e nero siano estremi. Il colore rosso è \_ 0 e il nero è il colore \_ 1. Sono disponibili quattro colori interpolati che formano la sfumatura distribuita in modo uniforme tra di essi. Per determinare i valori per la bitmap 4x4, vengono usati i calcoli seguenti:
+Come esempio di codifica opaca, si supponga che i colori rosso e nero siano agli estremi. Il rosso è \_ il colore 0 e il nero il \_ colore 1. Sono disponibili quattro colori interpolati che formano la sfumatura distribuita in modo uniforme tra di essi. Per determinare i valori per la bitmap 4x4, vengono usati i calcoli seguenti:
 
 
 ```
@@ -142,28 +142,28 @@ Come esempio di codifica opaca, si supponga che i colori rosso e nero siano estr
 
 La bitmap sarà quindi simile al diagramma seguente.
 
-![Diagramma che mostra il layout della bitmap espansa.](images/colors2.png)
+![Diagramma che mostra il layout bitmap espanso.](images/colors2.png)
 
-Questo aspetto è simile alla serie di colori illustrata di seguito.
+L'aspetto è simile alla serie di colori illustrata di seguito.
 
 > [!Note]  
-> In un'immagine, pixel (0, 0) viene visualizzato in alto a sinistra.
+> In un'immagine viene visualizzato il pixel (0,0) in alto a sinistra.
 
  
 
-![illustrazione di una sfumatura con codifica opaca](images/redsquares.png)
+![illustrazione di una sfumatura codificata opaca](images/redsquares.png)
 
-## <a name="example-of-1-bit-alpha-encoding"></a>Esempio di codifica Alpha a 1 bit
+## <a name="example-of-1-bit-alpha-encoding"></a>Esempio di codifica alfa a 1 bit
 
-Questo formato è selezionato quando l'intero senza segno a 16 bit, colore \_ 0, è minore dell'intero senza segno a 16 bit, colore \_ 1. Un esempio di in cui è possibile usare questo formato è il lascia su un albero, visualizzato su un cielo blu. Alcuni Texel possono essere contrassegnati come trasparenti mentre tre tonalità di verde sono ancora disponibili per le foglie. Due colori correggono gli estremi e il terzo è un colore interpolato.
+Questo formato viene selezionato quando l'intero senza segno a 16 bit, il colore 0, è minore dell'intero senza segno a \_ 16 bit, colore \_ 1. Un esempio di dove è possibile usare questo formato è la foglia su un albero, mostrata su un cielo blu. Alcuni texel possono essere contrassegnati come trasparenti, mentre tre sfumature di verde sono ancora disponibili per le foglia. Due colori correggino gli estremi e il terzo è un colore interpolato.
 
-Nell'illustrazione seguente viene illustrato un esempio di tale immagine.
+La figura seguente è un esempio di tale immagine.
 
-![illustrazione della codifica Alpha a 1 bit](images/greenthing.png)
+![illustrazione della codifica alfa a 1 bit](images/greenthing.png)
 
-Si noti che, in cui l'immagine viene visualizzata come bianca, il Texel viene codificato come trasparente. Si noti inoltre che i componenti RGBA dei Texel trasparenti devono essere impostati su zero prima della fusione.
+Si noti che se l'immagine viene visualizzata come bianca, il texel viene codificato come trasparente. Si noti anche che i componenti RGBA dei texel trasparenti devono essere impostati su zero prima della fusione.
 
-La codifica bitmap per i colori e la trasparenza viene determinata utilizzando i calcoli seguenti.
+La codifica bitmap per i colori e la trasparenza viene determinata usando i calcoli seguenti.
 
 
 ```
@@ -177,7 +177,7 @@ La codifica bitmap per i colori e la trasparenza viene determinata utilizzando i
 
 La bitmap sarà quindi simile al diagramma seguente.
 
-![diagramma del layout di bitmap espanso](images/colors3.png)
+![diagramma del layout bitmap espanso](images/colors3.png)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

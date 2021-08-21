@@ -1,10 +1,10 @@
 ---
-title: Attributo Serial-Number
-description: Parte della specifica X. 500. Non utilizzato dal Active Directory.
+title: Serial-Number attributo
+description: Parte della specifica X.500. Non usato da Active Directory.
 ms.assetid: e5d68744-226b-42ee-a578-18380ddf4668
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Serial-Number attribute
+- Serial-Number schema AD dell'attributo
 - Schema AD dell'attributo serialNumber
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c1bd8435bbc742d3b2135d9f3b024b3196a7e7e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 49e89bb8424106aa9cdf104ce144d4118d8aae96520ddea106ae0a5efca443ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117836626"
 ---
-# <a name="serial-number-attribute"></a>Attributo Serial-Number
+# <a name="serial-number-attribute"></a>Serial-Number attributo
 
-Parte della specifica X. 500. Non utilizzato dal Active Directory.
+Parte della specifica X.500. Non usato da Active Directory.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Serial-Number                        |
-| LDAP-Display-Name | serialNumber                         |
+| Ldap-Display-Name | serialNumber                         |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 2.5.4.5                              |
-| System-ID-GUID    | bf967a32-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967a32-0de6-11d0-a285-00aa003049e2 |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -58,15 +58,15 @@ Parte della specifica X. 500. Non utilizzato dal Active Directory.
 | ID collegamento                | \-                                                                          |
 | MAPI-Id                | 0x8130                                                                      |
 | System-Only            | Falso                                                                       |
-| È a valore singolo       | Falso                                                                       |
+| Is-Single-Valued       | Falso                                                                       |
 | Indicizzato             | Falso                                                                       |
 | Nel catalogo globale      | Falso                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | 1                                                                           |
 | Range-Upper            | 64                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
 | System-Flags           | 0x00000010                                                                  |
-| Classi utilizzate in        | [**Dispositivo**](c-device.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Dispositivo**](c-device.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Parte della specifica X. 500. Non utilizzato dal Active Directory.
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | 0x8130                                                                                                            |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Falso                                                                                                             |
+| Is-Single-Valued       | Falso                                                                                                             |
 | Indicizzato             | Falso                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | 1                                                                                                                 |
 | Range-Upper            | 64                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**Dispositivo**](c-device.md)<br/> [**Persona**](c-person.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Dispositivo**](c-device.md)<br/> [**Persona**](c-person.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Parte della specifica X. 500. Non utilizzato dal Active Directory.
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | 0x8130                                                                                                            |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Falso                                                                                                             |
+| Is-Single-Valued       | Falso                                                                                                             |
 | Indicizzato             | Falso                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | 1                                                                                                                 |
 | Range-Upper            | 64                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**Dispositivo**](c-device.md)<br/> [**Persona**](c-person.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Dispositivo**](c-device.md)<br/> [**Persona**](c-person.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Parte della specifica X. 500. Non utilizzato dal Active Directory.
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | 0x8130                                                                                                            |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Falso                                                                                                             |
+| Is-Single-Valued       | Falso                                                                                                             |
 | Indicizzato             | Falso                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | 1                                                                                                                 |
 | Range-Upper            | 64                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**Dispositivo**](c-device.md)<br/> [**Persona**](c-person.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Dispositivo**](c-device.md)<br/> [**Persona**](c-person.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Parte della specifica X. 500. Non utilizzato dal Active Directory.
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | 0x8130                                                                                                            |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Falso                                                                                                             |
+| Is-Single-Valued       | Falso                                                                                                             |
 | Indicizzato             | Falso                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | 1                                                                                                                 |
 | Range-Upper            | 64                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**Dispositivo**](c-device.md)<br/> [**Persona**](c-person.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Dispositivo**](c-device.md)<br/> [**Persona**](c-person.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Parte della specifica X. 500. Non utilizzato dal Active Directory.
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | 0x8130                                                                                                            |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Falso                                                                                                             |
+| Is-Single-Valued       | Falso                                                                                                             |
 | Indicizzato             | Falso                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | 1                                                                                                                 |
 | Range-Upper            | 64                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**Dispositivo**](c-device.md)<br/> [**Persona**](c-person.md)<br/> [**Server**](c-server.md)<br/> |
+| Classi usate in        | [**Dispositivo**](c-device.md)<br/> [**Persona**](c-person.md)<br/> [**Server**](c-server.md)<br/> |
 
 
 

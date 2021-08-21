@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni: Implementazione di un WIC-Enabled decodificatore'
+description: 'Altre informazioni: Implementazione di un decodificatore WIC-Enabled'
 ms.assetid: a26a592d-42ef-4690-95b4-48a5324be75a
 title: Implementazione di un WIC-Enabled decodificatore
 ms.topic: article
@@ -14,11 +14,11 @@ ms.locfileid: "118205707"
 # <a name="implementing-a-wic-enabled-decoder"></a>Implementazione di un WIC-Enabled decodificatore
 
 
-L'implementazione Windows decodificatore WIC (Windows Imaging Component) richiede la scrittura di due classi. Le interfacce in queste classi corrispondono direttamente alle responsabilità [](-wic-howwicworks.md) del decodificatore descritte nella sezione Decodifica di [How the Windows Imaging Component Works](-wic-howwicworks.md).
+L'implementazione Windows decodificatore WIC (Windows Imaging Component) richiede la scrittura di due classi. Le interfacce su queste classi corrispondono direttamente alle responsabilità [](-wic-howwicworks.md) del decodificatore descritte nella sezione Decodifica di Funzionamento del [Windows imaging.](-wic-howwicworks.md)
 
 Una delle classi fornisce servizi a livello di contenitore e implementa [l'interfaccia IWICBitmapDecoder.](-wic-imp-iwicbitmapdecoder.md) Se il formato dell'immagine supporta i metadati a livello di contenitore, è necessario implementare anche [l'interfaccia IWICMetadataBlockReader](-wic-imp-iwicmetadatablockreader.md) in questa classe. È consigliabile supportare [l'interfaccia IWICBitmapCodecProgressNotification](-wic-imp-iwicbitmapcodecprogressnotification-decoder.md) sia nel decodificatore che nel codificatore per supportare un'esperienza utente migliore.
 
-L'altra classe che verrà implementata fornisce servizi a livello di frame ed esegue la decodifica effettiva dei bit di immagine per ogni frame nel contenitore. Questa classe implementa [l'interfaccia IWICBitmapFrameDecode](-wic-imp-iwicbitmapframedecode.md) e [l'interfaccia IWICMetadataBlockReader.](-wic-imp-iwicmetadatablockreader.md) Se si scrive un decodificatore per un formato non elaborato, si implementa anche [l'interfaccia IWICDevelopRaw](-wic-imp-iwicdevelopraw.md) in questa classe. Oltre alle interfacce necessarie, è consigliabile implementare [l'interfaccia IWICBitmapSourceTransform](-wic-imp-iwicmetadatablockreader.md) in questa classe per abilitare le migliori prestazioni possibili per il formato di immagine.
+L'altra classe che verrà implementata fornisce servizi a livello di frame ed esegue la decodifica effettiva dei bit dell'immagine per ogni frame nel contenitore. Questa classe implementa [l'interfaccia IWICBitmapFrameDecode](-wic-imp-iwicbitmapframedecode.md) e [l'interfaccia IWICMetadataBlockReader.](-wic-imp-iwicmetadatablockreader.md) Se si scrive un decodificatore per un formato non elaborato, si implementa anche [l'interfaccia IWICDevelopRaw](-wic-imp-iwicdevelopraw.md) in questa classe. Oltre alle interfacce necessarie, è consigliabile implementare l'interfaccia [IWICBitmapSourceTransform](-wic-imp-iwicmetadatablockreader.md) in questa classe per abilitare le migliori prestazioni possibili per il formato immagine.
 
 Uno degli oggetti forniti da WIC è [**ImagingFactory.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) L'interfaccia [**IWICComponentFactory**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwiccomponentfactory) viene spesso utilizzata in questo oggetto per creare vari componenti. Poiché viene usato di frequente, è consigliabile mantenere un riferimento a esso come proprietà membro nelle classi del decodificatore e del codificatore.
 

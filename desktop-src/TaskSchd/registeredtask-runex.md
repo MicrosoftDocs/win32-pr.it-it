@@ -1,11 +1,11 @@
 ---
-title: RegisteredTask. RunEx, metodo
-description: Per gli script, esegue l'attività registrata immediatamente usando i flag specificati e un identificatore di sessione.
+title: Metodo RegisteredTask.RunEx
+description: Per lo scripting, esegue immediatamente l'attività registrata usando i flag specificati e un identificatore di sessione.
 ms.assetid: 427bb51b-ddb1-4e47-9313-297366ba5ab7
 keywords:
-- Utilità di pianificazione del metodo RunEx
-- Metodo RunEx Utilità di pianificazione, oggetto RegisteredTask
-- Oggetto RegisteredTask Utilità di pianificazione, metodo RunEx
+- Metodo RunEx Utilità di pianificazione
+- Il metodo RunEx Utilità di pianificazione, oggetto RegisteredTask
+- Oggetto RegisteredTask Utilità di pianificazione , metodo RunEx
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d88eb8bb651929c905f080f97a9eaefd3b4dace
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ecea66d57bf473b5000e84c707e652f1c49431a840da5cc50e43f9e091c3eefb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117943393"
 ---
-# <a name="registeredtaskrunex-method"></a>RegisteredTask. RunEx, metodo
+# <a name="registeredtaskrunex-method"></a>Metodo RegisteredTask.RunEx
 
-Per gli script, esegue l'attività registrata immediatamente usando i flag specificati e un identificatore di sessione.
+Per lo scripting, esegue immediatamente l'attività registrata usando i flag specificati e un identificatore di sessione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,42 +45,42 @@ RegisteredTask.RunEx( _
 
 <dl> <dt>
 
-*parametri* \[ in\]
+*parametri* \[ Pollici\]
 </dt> <dd>
 
-Parametri utilizzati come valori nelle azioni dell'attività. Per non specificare i valori dei parametri per le azioni dell'attività, impostare questo parametro su **Nothing**. In caso contrario, è possibile specificare un solo valore stringa o una matrice di valori stringa.
+Parametri utilizzati come valori nelle azioni dell'attività. Per non specificare valori di parametro per le azioni dell'attività, impostare questo parametro su **Nothing**. In caso contrario, è possibile specificare un singolo valore stringa o una matrice di valori stringa.
 
-I valori stringa specificati sono associati a nomi e archiviati come coppie nome-valore. Se si specifica un solo valore stringa, Arg0 sarà il nome assegnato al valore. Il valore può essere utilizzato nell'azione dell'attività in cui la variabile $ (Arg0) viene utilizzata nelle proprietà dell'azione.
+I valori stringa specificati vengono associati ai nomi e archiviati come coppie nome-valore. Se si specifica un singolo valore stringa, Arg0 sarà il nome assegnato al valore. Il valore può essere usato nell'azione dell'attività in cui la variabile $(Arg0) viene usata nelle proprietà dell'azione.
 
-Se si passano valori quali "0", "100" e "250" come matrice di valori stringa, "0" sostituirà le variabili $ (Arg0), "100" sostituiranno le variabili $ (arg1) e "250" sostituiranno le variabili $ (arg2) utilizzate nelle proprietà dell'azione.
+Se si passano valori come "0", "100" e "250" come matrice di valori stringa, "0" sostituirà le variabili $(Arg0), "100" sostituirà le variabili $(Arg1) e "250" sostituirà le variabili $(Arg2) usate nelle proprietà dell'azione.
 
-È possibile specificare un massimo di 32 valori di stringa.
+È possibile specificare un massimo di 32 valori stringa.
 
-Per ulteriori informazioni e per un elenco delle proprietà dell'azione che possono usare variabili $ (Arg0), $ (arg1),..., $ (Arg32) nei rispettivi valori, vedere [azioni attività](task-actions.md).
+Per altre informazioni e un elenco delle proprietà dell'azione che possono usare le variabili $(Arg0), $(Arg1), ..., $(Arg32) nei relativi valori, vedere [Azioni attività](task-actions.md).
 
 </dd> <dt>
 
-*flag* \[ in\]
+*flag* \[ Pollici\]
 </dt> <dd>
 
-Costante [dei \_ \_ flag di esecuzione](/windows/desktop/api/taskschd/ne-taskschd-task_run_flags) di un'attività che definisce la modalità di esecuzione dell'attività.
+Costante [TASK \_ RUN \_ FLAGS](/windows/desktop/api/taskschd/ne-taskschd-task_run_flags) che definisce la modalità di esecuzione dell'attività.
 
 </dd> <dt>
 
-*ID sessione* \[ in\]
+*sessionID* \[ Pollici\]
 </dt> <dd>
 
-Sessione di Terminal Server in cui si desidera avviare l'attività.
+Sessione del server terminal in cui si desidera avviare l'attività.
 
-Se l'esecuzione dell'attività \_ \_ Usa la \_ \_ costante ID di sessione (0x4) non viene passata nel parametro *Flags* , il valore specificato in questo parametro viene ignorato. Se l'esecuzione dell'attività \_ \_ Usa la \_ \_ costante ID sessione viene passata nel parametro *Flags* e il valore SessionID è minore o uguale a 0, verrà restituito un errore di argomento non valido.
+Se la costante TASK RUN USE SESSION ID (0x4) non viene passata nel parametro flags, il valore specificato \_ in questo parametro viene \_ \_ \_ ignorato.  Se la costante TASK RUN USE SESSION ID viene passata nel parametro flags e il valore sessionID è minore o uguale a 0, verrà restituito un errore di \_ \_ argomento non \_ \_ valido. 
 
-Se l'esecuzione dell'attività \_ \_ Usa la \_ \_ costante ID sessione viene passata nel parametro *Flags* e il valore SessionID è un ID di sessione valido maggiore di 0 e se non viene specificato alcun valore per il parametro *User* , il servizio Utilità di pianificazione tenterà di avviare l'attività in modo interattivo quando l'utente è connesso alla sessione specificata.
+Se la costante TASK RUN USE SESSION ID viene passata nel parametro flags e il valore sessionID è un ID di sessione valido maggiore di 0 e non viene specificato alcun valore per il parametro user, il servizio Utilità di pianificazione tenterà di avviare l'attività in modo interattivo come utente connesso alla \_ \_ sessione \_ \_ specificata.  
 
-Se l'esecuzione dell'attività \_ \_ Usa la \_ \_ costante ID sessione viene passata nel parametro *Flags* e il valore SessionID è un ID di sessione valido maggiore di 0 e se un utente viene specificato nel parametro *User* , il servizio Utilità di pianificazione tenterà di avviare l'attività in modo interattivo come l'utente specificato nel parametro *User* .
+Se la costante TASK RUN USE SESSION ID viene passata nel parametro flags e il valore sessionID è un ID di sessione valido maggiore di 0 e se nel parametro user è specificato un utente, il servizio Utilità di pianificazione tenterà di avviare l'attività in modo interattivo come utente specificato nel parametro \_ \_ \_ \_ *user.*  
 
 </dd> <dt>
 
-*runningTask* \[ out\]
+*runningTask* \[ Cambio\]
 </dt> <dd>
 
 Oggetto [**RunningTask**](runningtask.md) che definisce la nuova istanza dell'attività.
@@ -93,7 +93,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo restituirà senza errori, ma l'attività non verrà eseguita se la proprietà [**TaskSettings. AllowDemandStart**](tasksettings-allowdemandstart.md) è impostata su false per l'attività registrata.
+Questo metodo restituirà senza errori, ma l'attività non verrà eseguita se la proprietà [**TaskSettings.AllowDemandStart**](tasksettings-allowdemandstart.md) è impostata su false per l'attività registrata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -101,9 +101,9 @@ Questo metodo restituirà senza errori, ma l'attività non verrà eseguita se la
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

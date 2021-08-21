@@ -1,5 +1,5 @@
 ---
-description: Questo argomento illustra codice di esempio che esegue il wrapping Windows codificatore WMA (Media Audio) in una classe C++ denominata CWmaEncoder.
+description: Questo argomento illustra un codice di esempio che esegue il wrapping del Windows media audio (WMA) in una classe C++ denominata CWmaEncoder.
 ms.assetid: 59bd5b6a-86fe-4d39-ab7c-9563ac1a8e94
 title: Codice di esempio del codificatore
 ms.topic: article
@@ -26,11 +26,11 @@ Questo argomento illustra un codice di esempio che esegue il wrapping Windows co
 -   [Drenaggio](#drain)
 -   [Argomenti correlati](#related-topics)
 
-A questo codice fanno riferimento diversi argomenti:
+Questo codice fa riferimento a diversi argomenti:
 
--   [Esercitazione: Scrittura di un file WMA usando la codifica CBR](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)
+-   [Esercitazione: Scrittura di un file WMA tramite la codifica CBR](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)
 
-In Media Foundation, i codificatori vengono implementati [come](media-foundation-transforms.md) trasformazioni Media Foundation (MFT) ed espongono [**l'interfaccia IMFTransform.**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)
+In Media Foundation, i codificatori vengono implementati [come](media-foundation-transforms.md) Media Foundation (MFT) ed espongono [**l'interfaccia IMFTransform.**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)
 
 ## <a name="class-declaration"></a>Dichiarazione di classe
 
@@ -432,7 +432,7 @@ HRESULT CWmaEncoder::Drain()
 
 <dl> <dt>
 
-[Esercitazione: Scrittura di un file WMA usando la codifica CBR](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)
+[Esercitazione: Scrittura di un file WMA tramite la codifica CBR](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)
 </dt> <dt>
 
 [Codec Windows Media](windows-media-codecs.md)

@@ -1,22 +1,22 @@
 ---
-description: Un oggetto SWbemMethod. OutParameters viene creato e fornito con i dati dal metodo del provider in esecuzione.
+description: Un oggetto SWbemMethod.OutParameters viene creato e fornito con dati dal metodo del provider in esecuzione.
 ms.assetid: fc06d6a1-770a-4f34-affd-f5035dad9360
 ms.tgt_platform: multiple
 title: Analisi di oggetti OutParameters
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5458ae3c5d57e9984fceef55de278ed92eba520
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e69c13e7d4d6b74f1c404c77e1ae0cc26d62ad698684ca1c864ebf31871dc62e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104348896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117923249"
 ---
 # <a name="parsing-outparameters-objects"></a>Analisi di oggetti OutParameters
 
-Un oggetto [**SWbemMethod. OutParameters**](swbemmethod-outparameters.md) viene creato e fornito con i dati dal metodo del provider in esecuzione. Le proprietà dell'oggetto **OutParameters** sono specifiche del metodo chiamato. Nello script seguente, ad esempio, *SD* (contenuto in *outParam*) è il parametro di output definito per il metodo **\_ \_ SystemSecurity. getsd** . La proprietà **returnValue** è una proprietà generica disponibile per tutti gli oggetti **OutParameters** che contengono il risultato dell'operazione.
+Un [**oggetto SWbemMethod.OutParameters**](swbemmethod-outparameters.md) viene creato e fornito con dati dal metodo del provider in esecuzione. Le proprietà **dell'oggetto OutParameters** sono specifiche del metodo chiamato. Ad esempio, nello script *seguente, SD* (contenuto in *outParam*) è il parametro di output definito per il **\_ \_ metodo SystemSecurity.GetSD.** La **proprietà ReturnValue** è una proprietà generica disponibile per tutti **gli oggetti OutParameters** che contengono il risultato dell'operazione.
 
-Nell'esempio di codice seguente viene illustrato come ottenere parametri di output dall'esecuzione del metodo [**ottenuto**](--systemsecurity-getsd.md) nella classe [**\_ \_ SystemSecurity**](--systemsecurity.md) per il sistema locale.
+L'esempio di codice seguente illustra come ottenere parametri di output dall'esecuzione del [**metodo GetSD**](--systemsecurity-getsd.md) nella [**\_ \_ classe SystemSecurity**](--systemsecurity.md) per il sistema locale.
 
 
 ```VB
@@ -35,7 +35,7 @@ set outParam = nothing
 
 
 
-Per ulteriori informazioni, vedere [**SWbemMethod. InParameters**](swbemmethod-inparameters.md).
+Per altre informazioni, vedere [**SWbemMethod.InParameters.**](swbemmethod-inparameters.md)
 
  
 

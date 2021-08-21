@@ -1,6 +1,6 @@
 ---
-title: Elemento UserName (CHAP)
-description: Informazioni sull'elemento username, che identifica l'utente che sta eseguendo l'autenticazione. Vedere un esempio di sintassi e visualizzare altre risorse disponibili.
+title: Elemento Username (CHAP)
+description: Informazioni sull'elemento Username, che identifica l'utente che viene autenticato. Vedere un esempio di sintassi e visualizzare altre risorse disponibili.
 ms.assetid: 3dd12864-5e0a-492c-a2c3-28118d21a0f2
 keywords:
 - Elemento Username EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 29065a59e150d2a4295e91b41862250d58e017b5
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: d9ad861388ba8e15bb0df924610e6df1f833968794101cb1b04ccc47fb5ae541
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103963457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086155"
 ---
-# <a name="username-element-chap"></a>Elemento UserName (CHAP)
+# <a name="username-element-chap"></a>Elemento Username (CHAP)
 
-L'elemento **username** identifica l'utente autenticato.
+**L'elemento Username** identifica l'utente da autenticare.
 
 ``` syntax
 <xs:element name="Username"
@@ -33,16 +33,16 @@ L'elemento **username** identifica l'utente autenticato.
 
 ## <a name="remarks"></a>Commenti
 
-Se l'elemento **username** non è presente, il nome utente viene ottenuto da Winlogon. Questo elemento è facoltativo.
+Se **l'elemento Username** non è presente, il nome utente viene ottenuto da winlogon. Questo elemento è facoltativo.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Rappresenta le impostazioni del processore virtuale per una macchina virtuale.
 ms.assetid: 2B299793-E1CD-49D4-898C-AE60B49F44F5
-title: Classe Msvm_ProcessorSettingData
+title: Msvm_ProcessorSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -45,18 +45,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5154105c4deab13f93bb65078a5c9527283620e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c66bd017d09dafe472dc99f78b0180f79c626a575cf9eb039eb73711a5e4500
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117811025"
 ---
-# <a name="msvm_processorsettingdata-class"></a>\_Classe MSVM ProcessorSettingData
+# <a name="msvm_processorsettingdata-class"></a>Classe Msvm \_ ProcessorSettingData
 
 Rappresenta le impostazioni del processore virtuale per una macchina virtuale.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF (Simplified Managed Object Format) e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -101,136 +101,136 @@ class Msvm_ProcessorSettingData : CIM_ResourceAllocationSettingData
 
 ## <a name="members"></a>Members
 
-La **classe \_ ProcessorSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ ProcessorSettingData** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ ProcessorSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ ProcessorSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **Indirizzo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indirizzo della risorsa. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Indirizzo della risorsa. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **AddressOnParent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrive l'indirizzo di questa risorsa nel contesto dell'elemento padre. Le proprietà **Parent** e **AddressOnParent** vengono usate per descrivere la relazione del controller, nonché l'ordine dei dispositivi in un controller. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Descrive l'indirizzo di questa risorsa nel contesto dell'elemento padre. Le **proprietà Parent** **e AddressOnParent** vengono usate per descrivere la relazione del controller e l'ordinamento dei dispositivi in un controller. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **AllocationUnits**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Unità di allocazione utilizzate dalle proprietà di **prenotazione** e **limite** . Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Unità di allocazione utilizzate dalle **proprietà Reservation** **e Limit.** Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **AutomaticAllocation**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la risorsa verrà allocata automaticamente. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Indica se la risorsa verrà allocata automaticamente. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **AutomaticDeallocation**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la risorsa verrà deallocata automaticamente. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Indica se la risorsa verrà automaticamente deallocato. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **maxlen** (64)
+Qualificatori: **MaxLen** (64)
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **Connection**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Dispositivo a cui è connessa la risorsa. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Dispositivo a cui è connessa la risorsa. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **ConsumerVisibility**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrive la visibilità del consumer per la risorsa allocata. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Descrive la visibilità del consumer per la risorsa allocata. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **CpuGroupId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-ID del gruppo di CPU a cui è associata questa macchina virtuale. Quando value è 0, significa che non è associato a un gruppo di CPU specifico.
+ID del gruppo di cpu a cui è associata la macchina virtuale. Quando il valore è 0, significa che non è associato a un gruppo di CPU specifico.
 
 > [!Note]  
-> Questa proprietà è stata aggiunta in Windows 10, versione 1703.
+> Questa proprietà è stata aggiunta in Windows 10 versione 1703.
 
  
 
@@ -239,42 +239,42 @@ ID del gruppo di CPU a cui è associata questa macchina virtuale. Quando value �
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)). Se si modifica questa proprietà, viene modificato l' **elemento ElementName** del derivato del dispositivo logico associato.
+Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ SettingData.**](/previous-versions//cc136911(v=vs.85)) La modifica di questa proprietà modificherà **ElementName della** derivata del dispositivo logico associato.
 
 </dd> <dt>
 
 **EnableHostResourceProtection**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la macchina virtuale deve abilitare le funzionalità che aumentano la protezione delle risorse host dal carico di lavoro in esecuzione nella macchina virtuale.
+Indica se la macchina virtuale deve abilitare funzionalità che aumentano la protezione delle risorse host dal carico di lavoro in esecuzione nella macchina virtuale.
 
 > [!Note]  
-> Aggiunto in Windows 10.
+> Aggiunta in Windows 10.
 
  
 
@@ -283,7 +283,7 @@ Indica se la macchina virtuale deve abilitare le funzionalità che aumentano la 
 **ExposeVirtualizationExtensions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -292,7 +292,7 @@ Tipo di accesso: sola lettura
 Indica se Hyper-V deve esporre le estensioni di virtualizzazione hardware virtualizzate alla macchina virtuale.
 
 > [!Note]  
-> Questa proprietà è stata aggiunta in Windows 10, versione 1703.
+> Questa proprietà è stata aggiunta in Windows 10 versione 1703.
 
  
 
@@ -301,16 +301,16 @@ Indica se Hyper-V deve esporre le estensioni di virtualizzazione hardware virtua
 **HideHypervisorPresent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se Hyper-V deve segnalare che un hypervisor è presente nel Guest annidato.
+Indica se Hyper-V deve segnalare che un hypervisor è presente nel guest annidato.
 
 > [!Note]  
-> Questa proprietà è stata aggiunta in Windows 10, versione 1703.
+> Questa proprietà è stata aggiunta in Windows 10 versione 1703.
 
  
 
@@ -319,29 +319,29 @@ Indica se Hyper-V deve segnalare che un hypervisor è presente nel Guest annidat
 **HostResource**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Espone un'assegnazione specifica a un host o a risorse sottostanti. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata) ed è sempre impostata su **null**.
+Espone un'assegnazione specifica alle risorse host o sottostanti. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata) ed è sempre impostata su **Null.**
 
 </dd> <dt>
 
 **HwThreadsPerCore**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica il numero di thread SMT per core segnalato al Guest. Questa segnalazione è indipendente dal fatto che sia presente l'hardware per SMT.
+Indica il numero di thread SMT per core segnalati al guest. Questa creazione di report è indipendente dal fatto che l'hardware per SMT sia presente.
 
 > [!Note]  
-> Questa proprietà è stata aggiunta in Windows 10, versione 1703.
+> Questa proprietà è stata aggiunta in Windows 10 versione 1703.
 
  
 
@@ -350,7 +350,7 @@ Indica il numero di thread SMT per core segnalato al Guest. Questa segnalazione 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -359,20 +359,20 @@ Tipo di accesso: sola lettura
 Qualificatori: **chiave**
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **Limite**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Quantità massima di risorse della CPU che possono essere utilizzate dalla macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Quantità massima di risorse CPU che possono essere utilizzate dalla macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 100000
 
@@ -383,59 +383,59 @@ Intervallo: 0 100000
 **LimitCPUID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la macchina virtuale deve abbassare l'identificatore della CPU. In alcuni sistemi operativi meno recenti potrebbe essere necessario limitare la funzionalità del processore in questo modo per poter essere eseguita.
+Indica se la macchina virtuale deve ridurre l'identificatore della CPU. Alcuni sistemi operativi precedenti potrebbero richiedere di limitare le funzionalità del processore in questo modo per poter essere eseguiti.
 
 </dd> <dt>
 
 **LimitProcessorFeatures**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la macchina virtuale deve limitare le funzionalità della CPU esposte al sistema operativo. La limitazione delle funzionalità del processore consente la migrazione della macchina virtuale a diversi sistemi di computer host con processori diversi. La migrazione di macchine virtuali tra computer con processori di fornitori diversi non è supportata.
+Indica se la macchina virtuale deve limitare le funzionalità della CPU esposte al sistema operativo. La limitazione delle funzionalità del processore consente di eseguire la migrazione della macchina virtuale a sistemi di computer host diversi con processori diversi. La migrazione di macchine virtuali tra computer con processori di fornitori diversi non è supportata.
 
 </dd> <dt>
 
 **MappingBehavior**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica il modo in cui viene eseguito il mapping della risorsa alle risorse sottostanti. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Specifica il mapping di questa risorsa alle risorse sottostanti. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **MaxNumaNodesPerSocket**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero massimo di nodi NUMA che possono essere osservati all'interno della macchina virtuale come appartenenti a un socket a singolo processore.
+Numero massimo di nodi NUMA che possono essere osservati all'interno della macchina virtuale come appartenenti a un singolo socket del processore.
 
 </dd> <dt>
 
 **MaxProcessorsPerNumaNode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -448,52 +448,52 @@ Numero massimo di processori virtuali che possono essere osservati all'interno d
 **OtherResourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa che descrive il tipo di risorsa quando non è disponibile un valore ben definito e **ResourceType** ha il valore 1 (other). Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Stringa che descrive il tipo di risorsa quando un valore ben definito non è disponibile e **ResourceType** ha il valore 1 (Altro). Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **Parent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Elemento padre della risorsa. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Elemento padre della risorsa. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **PoolID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identificatore del pool di risorse da cui è stata allocata la risorsa. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Identificatore del pool di risorse da cui è stata allocata la risorsa. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **Prenotazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Quantità di risorse della CPU riservate per l'utilizzo da parte della macchina virtuale. Queste risorse sono sicuramente disponibili per l'utilizzo da parte della macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Quantità di risorse CPU riservate per l'uso da parte della macchina virtuale. Queste risorse sono garantite per essere disponibili per l'uso da parte della macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 0
 
@@ -504,65 +504,65 @@ Intervallo: 0 100000
 **ResourceSubType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa che descrive un sottotipo specifico dell'implementazione per questa risorsa. Ad esempio, può essere usato per distinguere modelli diversi dello stesso tipo di risorsa. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Stringa che descrive un sottotipo specifico di implementazione per questa risorsa. Ad esempio, può essere usato per distinguere modelli diversi dello stesso tipo di risorsa. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **ResourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo di risorsa rappresentata da questa impostazione di allocazione. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Tipo di risorsa rappresentato da questa impostazione di allocazione. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **VirtualQuantity**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Il numero totale di core nella macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Numero totale di core nella macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **VirtualQuantityUnits**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica l'unità di misura per l'allocazione delle risorse. Il valore di questa proprietà deve essere un valore valido del qualificatore unità di programmazione, come definito nell'allegato C. 1 di DSP0004 V 2.5 o versione successiva. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Specifica l'unità di misura per questa allocazione di risorse. Il valore di questa proprietà deve essere un valore valido del qualificatore Unità programmatiche come definito nell'allegato C.1 di DSP0004 V2.5 o versione successiva. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **Weight**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Il peso per ogni processore di macchina virtuale. Una volta soddisfatte tutte le riservate, la capacità del processore fisico rimanente della piattaforma di hosting verrà allocata alle macchine virtuali in base ai pesi relativi. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Peso per ogni processore di macchine virtuali. Dopo aver soddisfatto tutte le riserve, la capacità rimanente del processore fisico della piattaforma di hosting verrà allocata alle macchine virtuali in base al peso relativo. Questa proprietà viene ereditata da [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 100
 
@@ -572,7 +572,7 @@ Intervallo: 0 10000
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla **classe \_ ProcessorSettingData di MSVM** potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla **classe Msvm \_ ProcessorSettingData** potrebbe essere limitato dal filtro del controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -580,10 +580,10 @@ L'accesso alla **classe \_ ProcessorSettingData di MSVM** potrebbe essere limita
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -592,13 +592,13 @@ L'accesso alla **classe \_ ProcessorSettingData di MSVM** potrebbe essere limita
 
 <dl> <dt>
 
-[**\_RESOURCEALLOCATIONSETTINGDATA CIM**](cim-resourceallocationsettingdata.md)
+[**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md)
 </dt> <dt>
 
-[**\_RESOURCEALLOCATIONSETTINGDATA CIM**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
+[**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 </dt> <dt>
 
-[Classi del processore](processor-classes.md)
+[Classi processori](processor-classes.md)
 </dt> </dl>
 
  

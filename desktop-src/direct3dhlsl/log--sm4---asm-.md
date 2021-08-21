@@ -4,12 +4,12 @@ description: Log per componente in base 2.
 ms.assetid: 6D28864A-C2BA-44AF-9E78-7C2B34F5E462
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 88e4b89b4dcc085cf4fd4fda762d96fb71271af2
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: abaae8ae4e265d93a1f4bc4ca783574df5714eba932f13ac1091e439812406ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118089314"
 ---
 # <a name="log-sm4---asm"></a>log (sm4 - asm)
 
@@ -17,7 +17,7 @@ Log per componente in base 2.
 
 
 
-| log \[ \_ sat \] dest \[ \] .mask, \[ - \] src0 \[ \_ abs \] \[ .swizzle |
+| log \[ \_ sat \] dest \[ .mask \] , \[ - \] src0 \[ \_ abs \] \[ .swizzle |
 |----------------------------------------------------------|
 
 
@@ -40,9 +40,9 @@ Log per componente in base 2.
 ### <a name="restrictions"></a>Restrizioni
 
 -   Segue la teoria dei limiti.
--   Tolleranza di errore: se *src0* è \[ 0.5..2, l'errore absolue non deve essere \] maggiore di 2-21. Se *src0* è (0..0.5) o (2..+INF), l'errore relativo non deve essere \] maggiore di 2-21.
+-   Tolleranza di errore: se *src0* è \[ 0.5..2, l'errore absolue non deve essere \] maggiore di 2-21. Se *src0* è (0..0.5) o (2..+INF), l'errore relativo non deve essere maggiore di \] 2-21.
 
-Nella tabella seguente vengono illustrati i risultati ottenuti durante l'esecuzione dell'istruzione con diverse classi di numeri, presupponendo che non si verifichi alcun overflow o underflow. F indica un numero finito-reale.
+La tabella seguente mostra i risultati ottenuti durante l'esecuzione dell'istruzione con diverse classi di numeri, presupponendo che non si verifichino overflow o underflow. F indica un numero finito-reale.
 
 
 
