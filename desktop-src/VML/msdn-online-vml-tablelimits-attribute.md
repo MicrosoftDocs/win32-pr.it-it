@@ -1,43 +1,43 @@
 ---
-title: Attributo TableLimits di la
-description: Attributo TableLimits di la
+title: Attributo TableLimits di VML
+description: Attributo TableLimits di VML
 ms.assetid: eef855de-23c5-4894-b7cf-2ea39e372e08
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b35a7449cc2f348e6040161c1fb599c29972803
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: af52ba570b04e56f1dede169045f7ee1addf374fae5ca4f1cd5de4d9390f1235
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103727578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959251"
 ---
-# <a name="vml-tablelimits-attribute"></a>Attributo TableLimits di la
+# <a name="vml-tablelimits-attribute"></a>Attributo TableLimits di VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Elenco di valori di altezza minima per ogni riga di una tabella. Proprietà di lettura/scrittura. **VgLengthArray**.
+Elenco dei valori di altezza minima per ogni riga di una tabella. Proprietà di lettura/scrittura. **VgLengthArray**.
 
 **Si applica a**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* o:tablelimits = " *Expression* " >
+<v: *element* o:tablelimits=" *expression* ">
 
 **Osservazioni:**
 
-Usato da Microsoft PowerPoint per le tabelle native. Il valore predefinito è **null**.
+Usato da Microsoft PowerPoint per le tabelle native. Il valore predefinito è **Null.**
 
-Anche se il valore viene archiviato in una forma, l'attributo è utile solo quando la tabella è costituita da forme raggruppate. Quando si aggiunge un testo alle celle della tabella, è possibile che l'altezza della riga aumenti. L'attributo **TableLimits** archivia l'altezza della riga originale in modo che, se il testo viene eliminato, l'altezza della riga non scenderà al di sotto del valore originale.
+Anche se il valore è archiviato in una forma, l'attributo è utile solo quando la tabella è composta da forme raggruppate. Quando il testo viene aggiunto alle celle della tabella, l'altezza della riga può aumentare. **L'attributo TableLimits** archivia l'altezza della riga originale in modo che, se il testo viene eliminato, l'altezza della riga non cada al di sotto del valore originale.
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
- 
+ 
 
- 
+ 

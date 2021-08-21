@@ -1,7 +1,7 @@
 ---
-description: Prepara un dispositivo per il disegno delle linee.
+description: Prepara un dispositivo per il disegno di linee.
 ms.assetid: c597703d-6466-4b55-b1a6-a4e7c667e50c
-title: 'Metodo ID3DXLine:: begin (D3dx9core. h)'
+title: Metodo ID3DXLine::Begin (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ee241b39f2d0c1939cf2cb0cc09e079abd3430a3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9daa65558c58849d406056ce3358c26fdf2ce1c604342f993babe6af553d130f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119629651"
 ---
-# <a name="id3dxlinebegin-method"></a>Metodo ID3DXLine:: Begin
+# <a name="id3dxlinebegin-method"></a>Metodo ID3DXLine::Begin
 
-Prepara un dispositivo per il disegno delle linee.
+Prepara un dispositivo per il disegno di linee.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,11 +46,11 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-La chiamata a **ID3DXLine:: Begin** è facoltativa. Se viene chiamato al di fuori di una sequenza ID3DXLine:: Begin/ID3DXLine:: end, le funzioni di estrazione chiameranno internamente ID3DXLine:: Begin e ID3DXLine:: end. Per evitare un sovraccarico aggiuntivo, questo metodo deve essere usato se più di una funzione di estrazione verrà chiamata successivamente.
+La **chiamata a ID3DXLine::Begin** è facoltativa. Se viene chiamato all'esterno di una sequenza ID3DXLine::Begin/ID3DXLine::End, le funzioni di disegno chiameranno internamente ID3DXLine::Begin e ID3DXLine::End. Per evitare un sovraccarico aggiuntivo, questo metodo deve essere usato se più di una funzione di disegno verrà chiamata in successione.
 
-Questo metodo deve essere chiamato dall'interno di una sequenza [**IDirect3DDevice9:: BeginScene**](/windows/desktop/api) e [**IDirect3DDevice9:: EndScene**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-endscene) .
+Questo metodo deve essere chiamato dall'interno di una sequenza [**IDirect3DDevice9::BeginScene**](/windows/desktop/api) e [**IDirect3DDevice9::EndScene.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-endscene)
 
-Impossibile utilizzare ID3DXLine:: Begin come sostituto di [**IDirect3DDevice9:: BeginScene**](/windows/desktop/api) o [**ID3DXRenderToSurface:: BeginScene**](id3dxrendertosurface--beginscene.md).
+ID3DXLine::Begin non può essere usato come sostituzione di [**IDirect3DDevice9::BeginScene**](/windows/desktop/api) o [**ID3DXRenderToSurface::BeginScene**](id3dxrendertosurface--beginscene.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,8 +58,8 @@ Impossibile utilizzare ID3DXLine:: Begin come sostituto di [**IDirect3DDevice9::
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

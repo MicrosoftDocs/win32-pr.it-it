@@ -1,9 +1,9 @@
 ---
 title: Elemento struct (TemplateItemType)
-description: Definisce una struttura che include uno o più elementi di dati che si desidera includere nell'evento. | Elemento struct (TemplateItemType)
+description: Definisce una struttura che include uno o più elementi di dati da includere con l'evento . | Elemento struct (TemplateItemType)
 ms.assetid: 3da56e9b-70da-4b58-9261-76f24a6f3377
 keywords:
-- EventLog-elemento struct
+- Elemento struct EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a0cdb4682751ee236a8660a4cbc64e32290997d1
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 343b815657c13b0bdf0fdc01d3a8a9149d84e55daf79f8777db03c2e0524c586
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119958231"
 ---
 # <a name="struct-templateitemtype-element"></a>Elemento struct (TemplateItemType)
 
-Definisce una struttura che include uno o più elementi di dati che si desidera includere nell'evento.
+Definisce una struttura che include uno o più elementi di dati da includere con l'evento .
 
 ``` syntax
 <xs:element name="struct"
@@ -30,7 +30,7 @@ Definisce una struttura che include uno o più elementi di dati che si desidera 
  />
 ```
 
-L'elemento **struct** è definito dal tipo complesso [**TemplateItemType**](eventmanifestschema-templateitemtype-complextype.md) .
+**L'elemento struct** è definito dal [**tipo complesso TemplateItemType.**](eventmanifestschema-templateitemtype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **struct** è definito dal tipo complesso [**TemplateItemType**](even
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ L'elemento **struct** è definito dal tipo complesso [**TemplateItemType**](even
 **Elemento padre**
 </dt> <dt>
 
-[**modello (TemplateListType)**](eventmanifestschema-template-templatelisttype-element.md)
+[**template (TemplateListType)**](eventmanifestschema-template-templatelisttype-element.md)
 </dt> </dl>
 
  

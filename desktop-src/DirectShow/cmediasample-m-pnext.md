@@ -1,7 +1,7 @@
 ---
 description: Puntatore all'esempio successivo nell'elenco di esempi dell'allocatore.
 ms.assetid: a3a6c812-fc9d-4856-b33c-f60453f98909
-title: 'Membro CMediaSample:: m_pNext (Amfilter. h)'
+title: Membro CMediaSample::m_pNext (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 41192cef75beca6fa80619dcafb7e176615500ba
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f1e2282d5c2181a8e3d700d76c00f05376cdce62b953e5973775a9f07230698b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634361"
 ---
-# <a name="cmediasamplem_pnext-member"></a>Membro pNext di CMediaSample:: m \_
+# <a name="cmediasamplem_pnext-member"></a>Membro CMediaSample::m \_ pNext
 
 Puntatore all'esempio successivo nell'elenco di esempi dell'allocatore.
 
@@ -42,8 +42,8 @@ CMediaSample *m_pNext;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

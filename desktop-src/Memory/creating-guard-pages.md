@@ -1,27 +1,27 @@
 ---
-description: Una pagina Guard fornisce un allarme monouso per l'accesso alle pagine di memoria.
+description: Una pagina di protezione fornisce un allarme con un solo colpo per l'accesso alla pagina di memoria.
 ms.assetid: 763bc763-e178-481e-a81a-c15715e56901
-title: Creazione di pagine Guard
+title: Creazione di pagine di protezione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 10768da75090a28ffecd5302d88dbc142ae9c147
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0fee4d4a44a6e64d6af81e4b847347f357c3590edbd7e6b806e8f32653e1f869
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963291"
 ---
-# <a name="creating-guard-pages"></a>Creazione di pagine Guard
+# <a name="creating-guard-pages"></a>Creazione di pagine di protezione
 
-Una pagina Guard fornisce un allarme monouso per l'accesso alle pagine di memoria. Questa operazione può essere utile per un'applicazione che deve monitorare la crescita di strutture di dati dinamiche di grandi dimensioni. Esistono, ad esempio, sistemi operativi che usano le pagine di Guard per implementare il controllo dello stack automatico.
+Una pagina di protezione fornisce un allarme con un solo colpo per l'accesso alla pagina di memoria. Ciò può essere utile per un'applicazione che deve monitorare l'aumento delle strutture di dati dinamici di grandi dimensioni. Ad esempio, esistono sistemi operativi che usano pagine di protezione per implementare il controllo automatico dello stack.
 
-Per creare una pagina di protezione, impostare il modificatore di protezione della pagina **Page \_ Guard** per la pagina. Questo valore può essere specificato, insieme ad altri modificatori di protezione della pagina, nelle funzioni [**VirtualAlloc**](/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc), [**VirtualAllocEx**](/windows/win32/api/memoryapi/nf-memoryapi-virtualallocex), [**VirtualProtect**](/windows/win32/api/memoryapi/nf-memoryapi-virtualprotect)e [**VirtualProtectEx**](/windows/win32/api/memoryapi/nf-memoryapi-virtualprotectex) . Il modificatore di pagina può essere utilizzato con qualsiasi altro modificatore di protezione della pagina, ad eccezione della **pagina \_ NoAccess**. **\_**
+Per creare una pagina di protezione, impostare il modificatore di protezione della pagina **PAGE \_ GUARD** per la pagina. Questo valore può essere specificato, insieme ad altri modificatori di protezione della pagina, nelle funzioni [**VirtualAlloc**](/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc), [**VirtualAllocEx**](/windows/win32/api/memoryapi/nf-memoryapi-virtualallocex), [**VirtualProtect**](/windows/win32/api/memoryapi/nf-memoryapi-virtualprotect)e [**VirtualProtectEx.**](/windows/win32/api/memoryapi/nf-memoryapi-virtualprotectex) Il **\_ modificatore PAGE GUARD può** essere usato con qualsiasi altro modificatore di protezione della pagina, ad eccezione **di PAGE \_ NOACCESS**.
 
-Se un programma tenta di accedere a un indirizzo all'interno di una pagina di protezione, il sistema genera un'eccezione 0x80000001 ( **status \_ Guard \_ Page \_ violazioni** ). Il sistema cancella inoltre il modificatore di **Page \_ Guard** , rimuovendo lo stato della pagina di protezione della pagina di memoria. Il sistema non arresterà il tentativo successivo di accedere alla pagina di memoria con un'eccezione di violazione della pagina relativa alla **protezione dello stato \_ \_ \_** .
+Se un programma tenta di accedere a un indirizzo all'interno di una pagina di protezione, il sistema genera un'eccezione **STATUS \_ GUARD PAGE \_ \_ VIOLATION** (0x80000001). Il sistema cancella anche il modificatore **PAGE \_ GUARD,** rimuovendo lo stato della pagina di protezione della pagina di memoria. Il sistema non arresterà il tentativo successivo di accedere alla pagina di memoria con **un'eccezione DI \_ \_ VIOLAZIONE DI PAGINA DI \_ STATUS GUARD.**
 
-Se si verifica un'eccezione della pagina Guard durante un servizio di sistema, il servizio ha esito negativo e in genere restituisce un indicatore di stato di errore. Poiché il sistema rimuove anche lo stato della pagina di protezione della pagina di memoria pertinente, la chiamata successiva dello stesso servizio di sistema non riuscirà a causa di un'eccezione di **\_ violazione della \_ pagina \_ di protezione dello stato** (a meno che qualcuno ristabilisca la pagina di protezione).
+Se si verifica un'eccezione di guard page durante un servizio di sistema, il servizio ha esito negativo e in genere restituisce un indicatore di stato dell'errore. Poiché il sistema rimuove anche lo stato della pagina di protezione della pagina di memoria pertinente, la chiamata successiva dello stesso servizio di sistema non avrà esito negativo a causa di un'eccezione DI VIOLAZIONE DI PAGINA DI **STATUS \_ GUARD \_ \_** (a meno che, naturalmente, qualcuno non ristabilisca la pagina di protezione).
 
-Il breve programma seguente illustra il comportamento della protezione della pagina Guard.
+Il programma breve seguente illustra il comportamento della protezione delle pagine di protezione.
 
 
 ```C++
@@ -104,7 +104,7 @@ int main()
 
 
 
-Il primo tentativo di blocco del blocco di memoria ha esito negativo, generando un'eccezione di **\_ violazione della \_ pagina \_ status Guard** . Il secondo tentativo ha esito positivo, perché la protezione della pagina Guard del blocco di memoria è stata disattivata dal primo tentativo.
+Il primo tentativo di bloccare il blocco di memoria ha esito negativo, generando **un'eccezione STATUS GUARD PAGE \_ \_ \_ VIOLATION.** Il secondo tentativo ha esito positivo, perché la protezione della pagina di protezione del blocco di memoria è stata disattivata dal primo tentativo.
 
  
 

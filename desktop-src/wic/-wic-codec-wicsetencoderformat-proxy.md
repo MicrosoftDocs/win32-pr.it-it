@@ -1,7 +1,7 @@
 ---
-description: Funzione proxy per la negoziazione del formato pixel e della tavolozza per il codificatore.
+description: Funzione proxy per negoziare il formato pixel e la tavolozza per il codificatore.
 ms.assetid: 01179598-ba40-4aed-a7c4-888cb4e851f4
-title: Funzione WICSetEncoderFormat_Proxy
+title: WICSetEncoderFormat_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 7ea0988d29d1d9ed04668dfbe8ce86b97af6534a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3343e6f80193a4cb37dba98ffa3320bd8d56ee8bb9f14159adbf2474c767ed03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812061"
 ---
-# <a name="wicsetencoderformat_proxy-function"></a>\_Funzione proxy WICSetEncoderFormat
+# <a name="wicsetencoderformat_proxy-function"></a>Funzione proxy WICSetEncoderFormat \_
 
-Funzione proxy per la negoziazione del formato pixel e della tavolozza per il codificatore.
+Funzione proxy per negoziare il formato pixel e la tavolozza per il codificatore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,34 +43,34 @@ HRESULT WICSetEncoderFormat_Proxy(
 
 <dl> <dt>
 
-*pSourceIn* \[ in\]
+*pSourceIn* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) \** _
+Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\***
 
 Puntatore alla bitmap di origine.
 
 </dd> <dt>
 
-_pIPalette * \[ in\]
+*pIPalette* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[**IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) \** _
+Tipo: **[ **IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)\***
 
 Puntatore alla tavolozza da utilizzare per la codifica.
 
 </dd> <dt>
 
-_pIFrameEncode * \[ in\]
+*pIFrameEncode* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) \** _
+Tipo: **[ **IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode)\***
 
 Puntatore all'oggetto di codifica del frame.
 
 </dd> <dt>
 
-_ppSourceOut * \[ out\]
+*ppSourceOut* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\*\***
@@ -83,7 +83,7 @@ Puntatore che riceve un puntatore all'origine di output.
 
 Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -93,9 +93,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop vista\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

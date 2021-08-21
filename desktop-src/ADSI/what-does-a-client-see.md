@@ -1,25 +1,25 @@
 ---
-title: Che cosa Visualizza un client
-description: In questo argomento vengono elencati i modi in cui un client Visualizza i dati ADSI.
+title: Cosa visualizza un client
+description: In questo argomento vengono elencati i modi in cui un client visualizza i dati ADSI.
 ms.assetid: 238eeea9-1303-4d37-bf09-ad03f1790c1b
 ms.tgt_platform: multiple
 keywords:
-- estensioni ADSI, che cosa Visualizza un client
+- estensioni ADSI, cosa visualizza un client
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 398c9fd2d603c1eebb18280c435bec7cb7cd8e14
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 33d38563de47cfc80bdcf265249bf3e4cf10bc46471e18672221fed8c3047efa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104517109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082175"
 ---
-# <a name="what-does-a-client-see"></a>Che cosa Visualizza un client?
+# <a name="what-does-a-client-see"></a>Cosa visualizza un client?
 
--   Un client visualizza ADSI e tutti i relativi oggetti di estensione come un unico oggetto.
--   Un client ADSI rileva un'interfaccia [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) che gestisce tutte le interfacce dual e dispatch nell'oggetto, indipendentemente dal fatto che l'interfaccia duale o dispatch venga implementata da Aggregator nel provider o da un'estensione. Vedere [risoluzione dei conflitti di nomi di funzione/proprietà in automazione nelle estensioni](resolution-of-functionproperty-name-conflicts-in-automation-in-extensions.md).
--   ADSI non espone informazioni sui tipi tramite i metodi [**IDispatch:: GetTypeInfo**](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfo) o [**IDispatch:: GetTypeInfoCount**](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) . ADSI fornisce informazioni sul tipo tramite la libreria dei tipi.
+-   Un client vede ADSI e tutti i relativi oggetti di estensione come un unico oggetto.
+-   Un client ADSI vede [**un'interfaccia IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) che gestisce tutte le interfacce duali e dispatch nell'oggetto, indipendentemente dal fatto che l'interfaccia duale o dispatch sia implementata dall'aggregatore nel provider o da un'estensione. Vedere [Risoluzione dei conflitti dei nomi di funzione/proprietà nell'automazione nelle estensioni.](resolution-of-functionproperty-name-conflicts-in-automation-in-extensions.md)
+-   ADSI non espone informazioni sul tipo tramite i [**metodi IDispatch::GetTypeInfo**](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfo) [**o IDispatch::GetTypeInfoCount.**](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) ADSI fornisce informazioni sui tipi tramite la libreria dei tipi.
 
- 
+ 
 
- 
+ 

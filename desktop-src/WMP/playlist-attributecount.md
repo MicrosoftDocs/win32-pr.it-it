@@ -1,9 +1,9 @@
 ---
-title: Playlist. attributeCount
-description: La proprietà attributeCount Recupera il numero di attributi associati alla playlist.
+title: Playlist.attributeCount
+description: La proprietà attributeCount recupera il numero di attributi associati alla playlist.
 ms.assetid: 92063131-0118-4458-9122-0539628a9821
 keywords:
-- Playlist. attributeCount Windows Media Player
+- Playlist.attributeCount Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,36 +14,36 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e42d72e029f232bb6dabc074b412406a1bb64c7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 63616096dbfc3989a93d3dc8010dd0ed1f256ccd9e9bf2cc7b3c825c88a63d0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054299"
 ---
-# <a name="playlistattributecount"></a>Playlist. attributeCount
+# <a name="playlistattributecount"></a>Playlist.attributeCount
 
-La proprietà **attributeCount** Recupera il numero di attributi associati alla playlist.
+La **proprietà attributeCount** recupera il numero di attributi associati alla playlist.
 
 ## <a name="syntax"></a>Sintassi
 
-*Player*. *currentPlaylist*. **attributeCount**
+*lettore*. *currentPlaylist*. **attributeCount**
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un **numero** di sola lettura (**Long**).
+Questa proprietà è un numero di sola **lettura** (**long**).
 
 ## <a name="remarks"></a>Commenti
 
-Poiché le playlist possono provenire da molte origini diverse, possono avere diversi set di proprietà. Questo metodo recupera il numero totale di proprietà disponibili, in modo che gli altri metodi dell'oggetto **playlist** possano accedervi.
+Poiché le playlist possono provengono da molte origini diverse, possono avere diversi set di proprietà. Questo metodo recupera il numero totale di proprietà disponibili in modo che gli altri metodi dell'oggetto **Playlist** possano accedervi.
 
-Per recuperare il valore di questa proprietà, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per recuperare il valore di questa proprietà, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
-Per informazioni sugli attributi supportati da Windows Media Player, vedere la Guida di [riferimento](attribute-reference.md)agli attributi di Windows Media Player.
+Per informazioni sugli attributi supportati da Windows Media Player, vedere le informazioni di Windows Media Player [sugli attributi](attribute-reference.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript riportato di seguito viene illustrato il modo in cui vengono utilizzate le varie proprietà e i metodi della **playlist** e degli oggetti **multimediali** .
+Nell'JScript seguente viene illustrato l'uso di varie proprietà e metodi degli oggetti **Playlist** **e Media.**
 
 
 ```JScript
@@ -85,7 +85,7 @@ function onLoad() {
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -94,22 +94,22 @@ function onLoad() {
 
 <dl> <dt>
 
-[**Oggetto playlist**](playlist-object.md)
+[**Oggetto Playlist**](playlist-object.md)
 </dt> <dt>
 
-[**Playlist. AttributeName**](playlist-attributename.md)
+[**Playlist.attributeName**](playlist-attributename.md)
 </dt> <dt>
 
-[**Playlist. getItemInfo**](playlist-getiteminfo.md)
+[**Playlist.getItemInfo**](playlist-getiteminfo.md)
 </dt> <dt>
 
-[**Playlist. setItemInfo**](playlist-setiteminfo.md)
+[**Playlist.setItemInfo**](playlist-setiteminfo.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

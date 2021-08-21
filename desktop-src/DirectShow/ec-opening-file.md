@@ -1,19 +1,19 @@
 ---
-description: Il grafico apre un file o ha terminato l'apertura di un file.
+description: Il grafico sta aprendo un file o ha terminato l'apertura di un file.
 ms.assetid: 352867e1-025f-4adb-be32-f7941c0ec8cf
-title: EC_OPENING_FILE (dshow. h)
+title: EC_OPENING_FILE (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf275a2f9b64f9a30c8049b5207622270edc5098
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 436a48a90640577504871dfe835d6c81c398680ae070065189cb4031493e7fc3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079121"
 ---
-# <a name="ec_opening_file"></a>\_file di apertura EC \_
+# <a name="ec_opening_file"></a>EC \_ OPENING \_ FILE
 
-Il grafico apre un file o ha terminato l'apertura di un file.
+Il grafico sta aprendo un file o ha terminato l'apertura di un file.
 
 ## <a name="parameters"></a>Parametri
 
@@ -22,7 +22,7 @@ Il grafico apre un file o ha terminato l'apertura di un file.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-**True** se il grafico sta iniziando ad aprire un file oppure **false** se il grafo non sta più aprendo il file.
+**TRUE** se il grafico sta iniziando ad aprire un file oppure **FALSE** se il grafico non apre più il file.
 
 </dd> <dt>
 
@@ -39,7 +39,7 @@ No.
 
 ## <a name="remarks"></a>Osservazioni
 
-Un filtro può inviare questo evento se trascorre molto tempo per l'apertura di un file. Ad esempio, il file potrebbe trovarsi in una rete. L'applicazione può utilizzare questo evento per modificare l'interfaccia utente.
+Un filtro può inviare questo evento se impiega molto tempo per l'apertura di un file. Ad esempio, il file potrebbe trovarsi in una rete. L'applicazione può usare questo evento per modificare l'interfaccia utente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,7 +47,7 @@ Un filtro può inviare questo evento se trascorre molto tempo per l'apertura di 
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

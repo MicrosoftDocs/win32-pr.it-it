@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6bbed2cad9f9c7816d010a429b1db8eb5306fc1c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 71e5c60b07c7152cf52d1e2ab68925b181d4b356
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317368"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122467238"
 ---
 # <a name="jet_pstr"></a>JET_PSTR
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_pstr"></a>JET_PSTR
 
-Il tipo di dati JET_PSTR contiene una stringa ASCII con terminazione null (char \* ).
+Il JET_PSTR dati contiene una stringa ASCII con terminazione Null (char \* ).
 
 **Windows Vista: JET_PSTR** è stato introdotto in Windows Vista.
 
@@ -41,28 +41,11 @@ Il tipo di dati JET_PSTR contiene una stringa ASCII con terminazione null (char 
 
 JET_PSTR
 
-Stringa ASCII con terminazione null (char \* ).
+Stringa ASCII con terminazione Null (char \* ).
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 

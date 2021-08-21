@@ -1,11 +1,11 @@
 ---
-title: Proprietà markerCount di IWMPMedia
+title: IWMPMedia markerCount - proprietà
 description: La proprietà markerCount ottiene il numero di marcatori nell'elemento multimediale.
 ms.assetid: d1ccaa9b-98fb-4c53-8064-ee4bf718d18a
 keywords:
-- Finestra delle proprietà di markerCount Media Player
-- Proprietà di markerCount Media Player Windows, interfaccia IWMPMedia
-- Interfaccia IWMPMedia Windows Media Player, proprietà markerCount
+- Proprietà markerCount Windows Media Player
+- Proprietà markerCount Windows Media Player, interfaccia IWMPMedia
+- Interfaccia IWMPMedia Windows Media Player proprietà , markerCount
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bdad591d8be66dcd20bc5e59d206a637d9b1181f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8afbc402858452c987bb6f2dcce0e1ad0428b8c67b81d2369de2a8cdbc6a7dd6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053629"
 ---
-# <a name="iwmpmediamarkercount-property"></a>Proprietà IWMPMedia:: markerCount
+# <a name="iwmpmediamarkercount-property"></a>Proprietà IWMPMedia::markerCount
 
-La proprietà **markerCount** ottiene il numero di marcatori nell'elemento multimediale.
+La **proprietà markerCount** ottiene il numero di marcatori nell'elemento multimediale.
 
 Questa proprietà è di sola lettura.
 
@@ -49,19 +49,19 @@ Public ReadOnly Property markerCount As System.Int32
 
 ## <a name="property-value"></a>Valore proprietà
 
-**System. Int32** che rappresenta il numero di marcatori.
+**System.Int32 che rappresenta** il conteggio dei marcatori.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà restituisce zero se un file non ha marcatori o se l'elemento multimediale non è uguale a quello specificato in AxWindowsMediaPlayer. currentMedia.
+Questa proprietà restituisce zero se un file non contiene marcatori o se l'elemento multimediale non corrisponde a quello specificato in AxWindowsMediaPlayer.currentMedia.
 
-I numeri degli indicatori iniziano da 1.
+I numeri dei marcatori iniziano da 1.
 
-Prima di utilizzare questa proprietà, è necessario disporre dell'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di usare questa proprietà, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **markerCount** per recuperare il numero di marcatori nell'elemento multimediale corrente. Tale valore viene quindi utilizzato come limite superiore per una struttura di ciclo, che scorre l'elenco dei marcatori per recuperare ogni nome del marcatore e visualizzarlo in una casella di testo a più righe. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+L'esempio seguente usa **markerCount** per recuperare il numero di marcatori nell'elemento multimediale corrente. Tale valore viene quindi usato come limite superiore per una struttura di ciclo, che scorre l'elenco dei marcatori per recuperare il nome di ogni marcatore e visualizzarlo in una casella di testo a più righe. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -122,7 +122,7 @@ End If
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -132,7 +132,7 @@ End If
 
 <dl> <dt>
 
-[**AxWindowsMediaPlayer. currentMedia (VB e C#)**](axwmplib-axwindowsmediaplayer-currentmedia--vb-and-c.md)
+[**AxWindowsMediaPlayer.currentMedia (VB e C#)**](axwmplib-axwindowsmediaplayer-currentmedia--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaccia IWMPMedia (VB e C#)**](iwmpmedia--vb-and-c.md)

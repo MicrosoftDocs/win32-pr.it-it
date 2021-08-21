@@ -1,22 +1,22 @@
 ---
 title: Codice di esempio per la lettura degli attributi
-description: Nell'esempio di codice seguente vengono enumerate le proprietà dell'utente specificato nel dominio corrente, cercando l'utente e quindi utilizzando IADsPropertyList per enumerarne le proprietà.
+description: L'esempio di codice seguente enumera le proprietà dell'utente specificato nel dominio corrente, cercando l'utente e quindi usando IADsPropertyList per enumerarne le proprietà.
 ms.assetid: f5541e9b-e149-4d22-9ff6-a32bd8239f57
 ms.tgt_platform: multiple
 keywords:
 - Codice di esempio per la lettura di attributi ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2417a30ba4f4b6bf1247ec05bcfb03380f2203f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ae9ef6abf864d77571383b3834a88c6a8936132b9fdcc2e01ea84603f0aab95f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082605"
 ---
 # <a name="example-code-for-reading-attributes"></a>Codice di esempio per la lettura degli attributi
 
-Nell'esempio di codice seguente vengono enumerate le proprietà dell'utente specificato nel dominio corrente, cercando l'utente e quindi utilizzando [**IADsPropertyList**](/windows/desktop/api/Iads/nn-iads-iadspropertylist) per enumerarne le proprietà. Tenere presente che vengono gestiti i valori di data e ora, come numeri interi di grandi dimensioni, e come vengono gestite le stringhe ottetto per **objectSID** e **objectGUID** .
+L'esempio di codice seguente enumera le proprietà dell'utente specificato nel dominio corrente, cercando l'utente e quindi usando [**IADsPropertyList**](/windows/desktop/api/Iads/nn-iads-iadspropertylist) per enumerarne le proprietà. Tenere presente che i valori di data e ora, come interi di grandi dimensioni, vengono gestiti e come vengono gestite le stringhe di ottetti per **objectSID** e **objectGUID.**
 
 
 ```C++
@@ -642,7 +642,7 @@ void wmain(int argc, wchar_t *argv[])
 
 
 
-Nell'esempio di codice Visual Basic riportato di seguito viene illustrato come ottenere le proprietà di un oggetto utente. Per usare questo esempio di codice, creare un riferimento alla libreria dei tipi di servizi di dominio Active Directory e alla libreria di Microsoft ActiveX Data Objects nel progetto Visual Basic.
+Nell'Visual Basic di codice seguente viene illustrato come ottenere le proprietà di un oggetto utente. Per usare questo esempio di codice, creare un riferimento alla libreria dei tipi active ds e alla libreria di oggetti dati di Microsoft ActiveX nel progetto Visual Basic.
 
 
 ```VB
@@ -800,9 +800,9 @@ Set propVal = Nothing
 
 
 
- 
+ 
 
- 
+ 
 
 
 

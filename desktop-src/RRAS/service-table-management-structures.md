@@ -1,26 +1,26 @@
 ---
-title: Strutture di gestione tabella dei servizi
-description: Utilizzare le strutture seguenti per implementare i protocolli di routing registrati per la gestione dei servizi.
+title: Strutture di gestione delle tabelle dei servizi
+description: Utilizzare le strutture seguenti per implementare i protocolli di routing registrati per la gestione del servizio.
 ms.assetid: c965c9d5-30bc-4755-b0bf-f59eddfe300d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 187523ea28d3c3c0f0209fb9f57f93ef569fef4c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b18e522cc3d7ba29714db7b258df95c029ae3165d5ede962081addec12fb0a78
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080991"
 ---
-# <a name="service-table-management-structures"></a>Strutture di gestione tabella dei servizi
+# <a name="service-table-management-structures"></a>Strutture di gestione delle tabelle dei servizi
 
-Utilizzare le strutture seguenti per implementare i protocolli di routing registrati per la gestione dei servizi.
+Utilizzare le strutture seguenti per implementare i protocolli di routing registrati per la gestione del servizio.
 
--   [**\_voce del server IPX \_**](/windows/desktop/api/Stm/ns-stm-ipx_server_entry)
--   [**\_servizio IPX**](/windows/desktop/api/Stm/ns-stm-ipx_service)
+-   [**VOCE IPX \_ \_ SERVER**](/windows/desktop/api/Stm/ns-stm-ipx_server_entry)
+-   [**SERVIZIO \_ IPX**](/windows/desktop/api/Stm/ns-stm-ipx_service)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Attributo ACS-max-token-rate-per-Flow
-description: Frequenza massima dei token per un determinato utente.
+title: Attributo ACS-Max-Token-Rate-Per-Flow
+description: Frequenza massima dei token che un singolo flusso può avere per un determinato utente.
 ms.assetid: 2898b7a6-f2b1-4e08-aba6-9e1ac655a4db
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ACS-max-token-rate-per-Flow
+- Schema AD dell'attributo ACS-Max-Token-Rate-Per-Flow ACS-Max-Token-Rate-Per-Flow
 - Schema AD dell'attributo aCSMaxTokenRatePerFlow
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5165c20a27f7d1a389b9aada118d89786c015d2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 33e3c4319345e47a90b09e5f101fec875fbd97dde7d704618f39fbbb76385e14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104048807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082075"
 ---
-# <a name="acs-max-token-rate-per-flow-attribute"></a>Attributo ACS-max-token-rate-per-Flow
+# <a name="acs-max-token-rate-per-flow-attribute"></a>Attributo ACS-Max-Token-Rate-Per-Flow
 
-Frequenza massima dei token per un determinato utente.
+Frequenza massima dei token che un singolo flusso può avere per un determinato utente.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ACS-max-token-rate-per-Flow          |
-| LDAP-Display-Name | aCSMaxTokenRatePerFlow               |
+| CN                | ACS-Max-Token-Rate-Per-Flow          |
+| Ldap-Display-Name | aCSMaxTokenRatePerFlow               |
 | Dimensione              | 8 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.758               |
-| System-ID-GUID    | 7f56127b-5301-11d1-a9c5-0000f80367c1 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | 7f56127b-5301-11d1-a9c5-0000f80367c1 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ Frequenza massima dei token per un determinato utente.
 | ID collegamento                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> [**Limite di risorse ACS**](c-acsresourcelimits.md)<br/> [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> [**ACS-Resource-Limits**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Frequenza massima dei token per un determinato utente.
 | ID collegamento                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> [**Limite di risorse ACS**](c-acsresourcelimits.md)<br/> [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> [**ACS-Resource-Limits**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Frequenza massima dei token per un determinato utente.
 | ID collegamento                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> [**Limite di risorse ACS**](c-acsresourcelimits.md)<br/> [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> [**ACS-Resource-Limits**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Frequenza massima dei token per un determinato utente.
 | ID collegamento                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> [**Limite di risorse ACS**](c-acsresourcelimits.md)<br/> [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> [**ACS-Resource-Limits**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Frequenza massima dei token per un determinato utente.
 | ID collegamento                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> [**Limite di risorse ACS**](c-acsresourcelimits.md)<br/> [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> [**ACS-Resource-Limits**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Frequenza massima dei token per un determinato utente.
 | ID collegamento                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> [**Limite di risorse ACS**](c-acsresourcelimits.md)<br/> [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> [**ACS-Resource-Limits**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo ViewBillboard dell'oggetto UIPreview Visualizza un cartellone creato con il controllo host nella finestra di dialogo attualmente visualizzata.
+description: Il metodo ViewBillboard dell'oggetto UIPreview visualizza un oggetto creato usando il controllo host nella finestra di dialogo attualmente visualizzata.
 ms.assetid: c51c1a5b-af53-47a8-9281-e790efadcfc4
-title: UIPreview. ViewBillboard, metodo
+title: Metodo UIPreview.ViewBillboard
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 9cf1c6ee2a47fdb246fcc847627bb63432b8a67f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9892dc68ae5edb66759e4c19499af56d06fb6efac56b823821cd74c4a28644b1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810371"
 ---
-# <a name="uipreviewviewbillboard-method"></a>UIPreview. ViewBillboard, metodo
+# <a name="uipreviewviewbillboard-method"></a>Metodo UIPreview.ViewBillboard
 
-Il metodo **ViewBillboard** dell'oggetto [**UIPreview**](uipreview-object.md) Visualizza un cartellone creato con il controllo host nella finestra di dialogo attualmente visualizzata.
+Il **metodo ViewBillboard** dell'oggetto [**UIPreview**](uipreview-object.md) visualizza un oggetto creato usando il controllo host nella finestra di dialogo attualmente visualizzata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,14 +43,14 @@ UIPreview.ViewBillboard(
 *control* 
 </dt> <dd>
 
-Nome obbligatorio del controllo che ospita il tabellone, con distinzione tra maiuscole e minuscole, con la finestra di dialogo e con le chiavi primarie della tabella del database del controllo.
+Nome obbligatorio del controllo che ospita il pannello, con distinzione tra maiuscole e minuscole, insieme alla finestra di dialogo e alle chiavi primarie della tabella di database Control.
 
 </dd> <dt>
 
 *Billboard* 
 </dt> <dd>
 
-Nome obbligatorio del tabellone da visualizzare utilizzando il controllo specificato e la finestra di dialogo corrente e la chiave primaria della tabella del database Billboard.
+Nome obbligatorio del pannello da visualizzare utilizzando il controllo e la finestra di dialogo corrente specificati e la chiave primaria della tabella del database Dei campi.
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
 | IID<br/>     | IID \_ IUIPreview è definito come 000C109A-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 

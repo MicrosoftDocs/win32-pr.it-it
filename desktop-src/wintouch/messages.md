@@ -1,29 +1,29 @@
 ---
-title: Messaggi (input tocco)
-description: Questa sezione contiene i messaggi per l'input multitouch.
+title: Messaggi (Input tocco)
+description: Questa sezione contiene messaggi per l'input multitocco.
 ms.assetid: ba52b5de-3123-4094-9a3c-42765fccb85a
 keywords:
-- Windows Touch, messaggi
+- Windows Tocco, messaggi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a22099bd40ae1dc4f67e50f57c8c4a801233bbd
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 1960c8bb22957a6882ecdcbdf9be49cde09fa6c93bed70cbb79e2b4e4fc3ba0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104047760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810291"
 ---
-# <a name="messages-touch-input"></a>Messaggi (input tocco)
+# <a name="messages-touch-input"></a>Messaggi (Input tocco)
 
-Questa sezione contiene i messaggi per l'input multitouch.
+Questa sezione contiene messaggi per l'input multitocco.
 
-I messaggi seguenti vengono utilizzati per l'input multitouch.
+I messaggi seguenti vengono usati per l'input multitocco.
 
 
 
 | Message                           | Descrizione                                                                                                         |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| [**tocco di WM \_**](wm-touchdown.md) | Indica che uno o più punti di tocco, ad esempio un dito o una penna, hanno toccato una superficie di digitalizzazione sensibile al tocco. |
+| [**WM \_ TOUCH**](wm-touchdown.md) | Indica che uno o più punti di tocco, ad esempio un dito o una penna, hanno toccato una superficie del digitalizzatore sensibile al tocco. |
 
 
 
@@ -33,10 +33,10 @@ I messaggi seguenti vengono utilizzati per l'input multitouch.
 
 <dl> <dt>
 
-[Input Windows Touch](multi-touch-input.md)
+[Windows Input tocco](multi-touch-input.md)
 </dt> <dt>
 
-[Guida alla programmazione di input per Windows Touch](guide-multi-touch-input.md)
+[Windows Guida alla programmazione dell'input tocco](guide-multi-touch-input.md)
 </dt> </dl>
 
  
