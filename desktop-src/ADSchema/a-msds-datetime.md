@@ -57,7 +57,7 @@ Attributo per l'archiviazione di un valore di data e ora.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| A valore singolo       | Falso                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
@@ -78,7 +78,7 @@ Attributo per l'archiviazione di un valore di data e ora.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| A valore singolo       | Falso                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
@@ -99,7 +99,7 @@ Attributo per l'archiviazione di un valore di data e ora.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| A valore singolo       | Falso                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |

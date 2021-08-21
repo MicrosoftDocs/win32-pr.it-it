@@ -1,6 +1,6 @@
 ---
-title: WaveActiveCountBits (funzione)
-description: Conta il numero di variabili booleane che restituiscono true tra tutte le corsie attive nell'onda corrente e replica il risultato in tutte le corsie dell'onda.
+title: Funzione WaveActiveCountBits
+description: Conta il numero di variabili booleane che restituiscono true in tutte le corsie attive nell'ondata corrente e replica il risultato in tutte le corsie dell'onda.
 ms.assetid: 053E100C-7E09-4F9D-9F38-9D5E208A38CE
 keywords:
 - Funzione WaveActiveCountBits HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4c4d2db55e9e3a0ad8f0a66be183d6e39d2a8b9c
-ms.sourcegitcommit: a232805e6c618673f2df904111cc4f5a33e15504
+ms.openlocfilehash: 4e1642cbd5cbdef162511185e9d2c05e849d78486b82e8219623286f33e39223
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "104339779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118504936"
 ---
-# <a name="waveactivecountbits-function"></a>WaveActiveCountBits (funzione)
+# <a name="waveactivecountbits-function"></a>Funzione WaveActiveCountBits
 
-Conta il numero di variabili booleane che restituiscono true tra tutte le corsie attive nell'onda corrente e replica il risultato in tutte le corsie dell'onda.
+Conta il numero di variabili booleane che restituiscono true in tutte le corsie attive nell'ondata corrente e replica il risultato in tutte le corsie dell'onda.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,11 +48,11 @@ Variabili booleane da valutare. Se si specifica un valore booleano true esplicit
 
 ## <a name="return-value"></a>Valore restituito
 
-Il numero di che restituisce true in tutte le corsie attive nell'onda corrente.
+Numero di che restituiscono true in tutte le corsie attive nell'ondata corrente.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello shader. 
+Questa funzione è supportata dal modello shader 6.0 in tutte le fasi dello shader. 
 
 
 
@@ -60,7 +60,7 @@ Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello s
 
 ## <a name="examples"></a>Esempio
 
-Questa operazione può essere implementata in modo più efficiente rispetto a una WaveActiveSum completa, come descritto nell'esempio seguente:
+Questo può essere implementato in modo più efficiente rispetto a un WaveActiveSum completo, come descritto nell'esempio seguente:
 
 ``` syntax
 result = WaveActiveCountBits( WaveActiveBallot( bBit ) );
@@ -70,7 +70,7 @@ result = WaveActiveCountBits( WaveActiveBallot( bBit ) );
 
 <dl> <dt>
 
-[Panoramica del modello di shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Panoramica del modello shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
 [Modello shader 6](shader-model-6-0.md)

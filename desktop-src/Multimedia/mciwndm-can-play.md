@@ -1,9 +1,9 @@
 ---
-title: Messaggio di MCIWNDM_CAN_PLAY (VFW. h)
-description: MCIWNDM è in \_ grado \_ di riprodurre il messaggio determina se un dispositivo MCI può riprodurre un file di dati o un contenuto di un altro tipo. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro MCIWndCanPlay.
+title: MCIWNDM_CAN_PLAY messaggio (Vfw.h)
+description: Il messaggio MCIWNDM CAN PLAY determina se un dispositivo MCI può riprodurre un file di dati o un contenuto \_ \_ di altro tipo. È possibile inviare questo messaggio in modo esplicito o tramite la macro MCIWndCanPlay.
 ms.assetid: dbb742b0-b8ab-4b80-96da-c4823a4747c9
 keywords:
-- MCIWNDM_CAN_PLAY messaggi multimediali di Windows
+- MCIWNDM_CAN_PLAY messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 043a0fc15260f7448df8d009a6b468616244269d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 84d067b01dbce8aaab7c78ab24c3d11fc5d4a3a19b9bfdb663eb653ebc0c553c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118374243"
 ---
-# <a name="mciwndm_can_play-message"></a>MCIWNDM è in \_ grado di \_ riprodurre il messaggio
+# <a name="mciwndm_can_play-message"></a>MESSAGGIO DI MCIWNDM \_ CAN \_ PLAY
 
-MCIWNDM è in **\_ grado di \_ riprodurre** il messaggio determina se un dispositivo MCI può riprodurre un file di dati o un contenuto di un altro tipo. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**MCIWndCanPlay**](/windows/desktop/api/Vfw/nf-vfw-mciwndcanplay) .
+Il **messaggio MCIWNDM \_ CAN \_ PLAY** determina se un dispositivo MCI può riprodurre un file di dati o un contenuto di altro tipo. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**MCIWndCanPlay.**](/windows/desktop/api/Vfw/nf-vfw-mciwndcanplay)
 
 
 ```C++
@@ -36,7 +36,7 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se il dispositivo supporta la riproduzione dei dati o **false** in caso contrario.
+Restituisce **TRUE se** il dispositivo supporta la riproduzione dei dati o FALSE in caso **contrario.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,7 +46,7 @@ Restituisce **true** se il dispositivo supporta la riproduzione dei dati o **fal
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

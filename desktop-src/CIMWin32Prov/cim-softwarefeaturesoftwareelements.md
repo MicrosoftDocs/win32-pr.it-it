@@ -28,7 +28,7 @@ ms.locfileid: "118421113"
 **L'associazione CIM \_ SoftwareFeatureSoftwareElements** identifica gli elementi software che costituiscono una funzionalità software specifica.
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,7 +47,7 @@ class CIM_SoftwareFeatureSoftwareElements : CIM_Component
 
 ## <a name="members"></a>Members
 
-La **classe CIM \_ SoftwareFeatureSoftwareElements** ha questi tipi di membri:
+La **classe CIM \_ SoftwareFeatureSoftwareElements** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
@@ -66,7 +66,7 @@ Tipo di dati: **CIM \_ SoftwareFeature**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **Aggregazione**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificatori: [ **Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
 Componente del gruppo.
@@ -94,9 +94,9 @@ Questa proprietà viene ereditata dal [**componente CIM. \_**](cim-component.md)
 
 **L'associazione CIM \_ SoftwareFeatureSoftwareElements** deriva dal [**componente CIM \_**](cim-component.md).
 
-WMI non implementa questa classe. Per le classi WMI derivate **da CIM \_ SoftwareFeatureSoftwareElements,** vedere [Classi Win32](win32-provider.md).
+WMI non implementa questa classe. Per le classi WMI derivate **da CIM \_ SoftwareFeatureSoftwareElements,** vedere [Classi Win32.](win32-provider.md)
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 

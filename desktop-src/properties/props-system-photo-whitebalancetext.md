@@ -1,19 +1,19 @@
 ---
-description: Forma descrittiva di System. Photo. WhiteBalance. Non concepito per essere analizzato a livello di codice.
+description: Forma descrittiva di System.Photo.WhiteBalance. Non deve essere analizzato a livello di codice.
 ms.assetid: f046912c-04cf-46df-bec5-c0f68fd0b44a
-title: System. Photo. WhiteBalanceText
+title: System.Photo.WhiteBalanceText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c18edbb9861f47e5cc8bde4ae3feae4b45a58d7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0cae21f1a709587ead6a77c5c97df090c88b1163abb8c639244016d25fc8daa3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118465816"
 ---
-# <a name="systemphotowhitebalancetext"></a>System. Photo. WhiteBalanceText
+# <a name="systemphotowhitebalancetext"></a>System.Photo.WhiteBalanceText
 
-Forma descrittiva di [System. Photo. whitebalance](./props-system-photo-whitebalance.md). Non concepito per essere analizzato a livello di codice.
+Forma descrittiva di [System.Photo.WhiteBalance.](./props-system-photo-whitebalance.md) Non deve essere analizzato a livello di codice.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

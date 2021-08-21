@@ -1,105 +1,105 @@
 ---
-description: Le risorse della lingua sono costituite da Word breaker e stemmer che estendono le funzionalità di compilazione e query degli indici a nuove lingue e impostazioni locali.
+description: Le risorse della lingua sono costituite da word breaker e stemmer che estendono le funzionalità di compilazione e query degli indici a nuove lingue e impostazioni locali.
 ms.assetid: 7963805e-e279-42cf-ba95-f81a7de8e68e
-title: Informazioni sui componenti delle risorse della lingua
+title: Informazioni sui componenti delle risorse del linguaggio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e03c9294eaf6e50de024b866372093a0359fc79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8feb10d14edbf4aba59b912ae1945d5e87ec32ef684f0b1f5530f1770ba70053
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118462383"
 ---
-# <a name="understanding-language-resource-components"></a>Informazioni sui componenti delle risorse della lingua
+# <a name="understanding-language-resource-components"></a>Informazioni sui componenti delle risorse del linguaggio
 
-Le risorse della lingua sono costituite da Word breaker e stemmer che estendono le funzionalità di compilazione e query degli indici a nuove lingue e impostazioni locali. I Word breaker vengono utilizzati durante la creazione e l'esecuzione di query degli indici. Gli stemmer vengono utilizzati solo per le query. Windows Search usa le DLL delle risorse di linguaggio per l'associazione alle implementazioni [**IWordBreaker**](/windows/desktop/api/Indexsrv/nn-indexsrv-iwordbreaker) e [**IStemmer**](/windows/desktop/api/Indexsrv/nn-indexsrv-istemmer) per le impostazioni locali di una lingua specifica.
+Le risorse della lingua sono costituite da word breaker e stemmer che estendono le funzionalità di compilazione e query degli indici a nuove lingue e impostazioni locali. I word breaker vengono usati sia durante la creazione dell'indice che durante l'esecuzione di query. Gli stemmer vengono utilizzati solo per l'esecuzione di query. Windows La ricerca usa le DLL delle risorse della lingua per l'associazione alle [**implementazioni IWordBreaker**](/windows/desktop/api/Indexsrv/nn-indexsrv-iwordbreaker) e [**ISte common**](/windows/desktop/api/Indexsrv/nn-indexsrv-istemmer) per impostazioni locali specifiche della lingua.
 
-Questo argomento è organizzato nel modo seguente:
+Questo argomento è organizzato come segue:
 
--   [Informazioni sulle risorse della lingua](#about-language-resources)
--   [Word-interruzioni](#word-breaking)
+-   [Informazioni sulle risorse del linguaggio](#about-language-resources)
+-   [Word Breaking](#word-breaking)
 -   [Derivanti](#stemming)
 -   [Normalization](#normalization)
--   [Parole non significative](#noise-words)
+-   [Parole non pronunciate](#noise-words)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="about-language-resources"></a>Informazioni sulle risorse della lingua
+## <a name="about-language-resources"></a>Informazioni sulle risorse del linguaggio
 
-Windows Search usa un filtro (un'implementazione dell'interfaccia [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) ) e [**ILoadFilter**](/windows/desktop/api/filtereg/nn-filtereg-iloadfilter) per accedere a un documento nel formato nativo. Il componente [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) estrae il contenuto di testo, le proprietà e la formattazione dal documento. [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) identifica le impostazioni locali del documento che sta filtrando. Il componente di indicizzazione richiama il Word breaker appropriato per le impostazioni locali. Se non è disponibile alcun, il componente di indicizzazione richiama il Word breaker neutro. Il Word breaker riceve, da un [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter), un flusso di input di caratteri Unicode che il Word breaker analizza per produrre singole parole e frasi. Il Word breaker normalizza anche i formati di data e ora. L'indicizzatore normalizza le parole prodotte dal Word breaker convertendo le parole in lettere maiuscole. L'indicizzatore Salva le parole maiuscole nell'indice full-text, ad eccezione delle parole non significative identificate per le impostazioni locali.
+Windows La ricerca usa un filtro (un'implementazione [**dell'interfaccia IFilter)**](/windows/win32/api/filter/nn-filter-ifilter) e [**ILoadFilter**](/windows/desktop/api/filtereg/nn-filtereg-iloadfilter) per accedere a un documento nel formato nativo. Il [**componente IFilter**](/windows/win32/api/filter/nn-filter-ifilter) estrae contenuto di testo, proprietà e formattazione dal documento. Il [**filtro IFilter**](/windows/win32/api/filter/nn-filter-ifilter) identifica le impostazioni locali del documento da filtrare. Il componente di indicizzazione richiama il word breaker appropriato per le impostazioni locali. Se non è disponibile, il componente di indicizzazione richiama il word breaker neutro. Il word breaker riceve, da [**un filtro IFilter,**](/windows/win32/api/filter/nn-filter-ifilter)un flusso di input di caratteri Unicode che il word breaker analizza per produrre singole parole e frasi. Il word breaker normalizza anche i formati di data e ora. L'indicizzatore normalizza le parole prodotte dal word breaker convertendo le parole in lettere maiuscole. L'indicizzatore salva le parole maiuscole nell'indice full-text, ad eccezione delle parole non pronunciate identificate per le impostazioni locali.
 
-Nella tabella seguente sono elencate le azioni e i risultati corrispondenti per la frase "nella figura 1 viene illustrato il ruolo delle risorse di lingua per la ricerca di Windows durante il processo di creazione dell'indice".
+La tabella seguente elenca le azioni e i risultati corrispondenti per la frase "Figura 1 illustra il ruolo delle risorse linguistiche per Windows ricerca durante il processo di creazione dell'indice".
 
 
 
 | Azione                  | Testo risultante                                                                                                               |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Testo originale           | Nella figura 1 viene illustrato il ruolo delle risorse di lingua per la ricerca di Windows durante il processo di creazione dell'indice.                    |
-| Filtro               | Nella figura 1 viene illustrato il ruolo delle risorse di lingua per la ricerca di Windows durante il processo di creazione dell'indice.                    |
-| Word-interruzioni           | Figura 1, illustra,,, Role, of, language, Resources, for, Windows, Search, while,, index, Creation, process, EOS |
-| Normalization           | FIGURA 1, ILLUSTRA,,, ROLE, OF, LANGUAGE, RESOURCES, WINDOWS, SEARCH, WHILE,,, INDEX, CREATION, PROCESS           |
-| Rimozione di parole non significative      | FIGURA, ILLUSTRA, ROLE, LANGUAGE, RESOURCES, WINDOWS, SEARCH, WHILE, INDEX, CREATION, PROCESS                            |
-| Salva nell'indice full-text | FIGURA, ILLUSTRA, ROLE, LANGUAGE, RESOURCES, WINDOWS, SEARCH, WHILE, INDEX, CREATION, PROCESS                            |
+| Testo originale           | La figura 1 illustra il ruolo delle risorse del linguaggio per Windows ricerca durante il processo di creazione dell'indice.                    |
+| Filtro               | La figura 1 illustra il ruolo delle risorse del linguaggio per Windows ricerca durante il processo di creazione dell'indice.                    |
+| Word breaking           | Figura 1, illustra, ruolo, di, linguaggio, risorse, per, Windows, ricerca, durante, l'indice, creazione, processo, EOS |
+| Normalization           | FIGURA, 1, ILLUSTRA, THE, ROLE, OF, LANGUAGE, RESOURCES, WINDOWS, SEARCH, DURING, THE, INDEX, CREATION, PROCESS           |
+| Rimozione di parole non rumorose      | FIGURA, ILLUSTRA, RUOLO, LINGUAGGIO, RISORSE, WINDOWS, RICERCA, DURANTE, INDICE, CREAZIONE, PROCESSO                            |
+| Salvare nell'indice full-text | FIGURA, ILLUSTRA, RUOLO, LINGUAGGIO, RISORSE, WINDOWS, RICERCA, DURANTE, INDICE, CREAZIONE, PROCESSO                            |
 
 
 
  
 
-I Word breaker e gli stemmer vengono usati per espandere query [FREETEXT](-search-sql-freetext.md) in fase di query. Le impostazioni locali della query sono le impostazioni locali predefinite, a meno che non venga passato un identificatore di codice della lingua (LCID) come parametro di query. Il componente query richiama il Word breaker appropriato nei termini di query elencati nella clausola [where](-search-sql-where.md) della query. Se, ad esempio, la clausola WHERE della query contiene "FREETEXT (mele, arance e pera)", il Word breaker riceve il testo "mele, arance e pere". Se nella clausola WHERE della query viene utilizzato il predicato full-text [Contains](-search-sql-contains.md) , l'output di testo del Word breaker viene normalizzato. In caso contrario, il componente della query passa ogni parola identificata dal Word breaker allo stemmer appropriato per la lingua e le impostazioni locali. Lo stemmer genera un elenco di forme alternative o flesse per la parola. Il componente query normalizza l'elenco espanso dei termini della query e rimuove le parole non significative.
+Word breaker e stemmer vengono utilizzati per espandere le [query FREETEXT](-search-sql-freetext.md) in fase di query. Le impostazioni locali della query sono le impostazioni locali predefinite, a meno che non venga passato un identificatore del codice lingua (LCID) come parametro di query. Il componente di query richiama il word breaker appropriato sui termini di query elencati nella [clausola WHERE](-search-sql-where.md) della query. Ad esempio, se la clausola WHERE della query contiene "FREETEXT (apples, oranges, and pears)," il word breaker riceve il testo "apples, oranges, and pears". Se la clausola WHERE della query usa il predicato [full-text CONTAINS,](-search-sql-contains.md) l'output di testo del word breaker viene normalizzato. In caso contrario, il componente di query passa ogni parola identificata dal word breaker al stemmer appropriato per la lingua e le impostazioni locali. Lo stemmer genera un elenco di forme alternative, o inflessete, per tale parola. Il componente di query normalizza l'elenco espanso di termini di query e rimuove le parole non erre.
 
-La tabella seguente elenca le azioni e i risultati corrispondenti per la query "mele, arance e pere".
+Nella tabella seguente sono elencate le azioni e i risultati corrispondenti per la query "apples, oranges, and pears".
 
 
 
 | Azione                       | Testo risultante                                            |
 |------------------------------|-----------------------------------------------------------|
-| Testo originale                | mele, arance e pera                                |
-| Word-interruzioni                | mele, arance e, pere, EOS                          |
-| Stemming                     | Apple, mele, arancione, arancione, arancione e, pera, pera |
-| Normalization                | APPLE, MELE, ARANCIONE, ARANCIONE, ARANCIONE E, PERA, PERA |
-| Rimozione di parole non significative           | APPLE, MELE, ARANCIO, ARANCIO, ARANCIA, PERA, PERA      |
-| Elenco espanso dei termini della query | APPLE, MELE, ARANCIO, ARANCIO, ARANCIA, PERA, PERA      |
+| Testo originale                | apples, oranges, and pears                                |
+| Word breaking                | apples, oranges, and, pears, EOS                          |
+| Stemming                     | apple, apples, orange, orangey, oranges, and, pear, pears |
+| Normalization                | APPLE, APPLES, ORANGEY, ORANGEY, ORANGES E, PEAR, PEARS |
+| Rimozione di parole non rumorose           | APPLE, APPLES, ORANGE, ORANGEY, ORANGES, PEAR, PEARS      |
+| Elenco esteso di termini di query | APPLE, APPLES, ORANGE, ORANGEY, ORANGES, PEAR, PEARS      |
 
 
 
  
 
-I termini della query espansa aumentano la probabilità che la query trovi documenti che corrispondono allo scopo della query originale. Il testo generato dal Word breaker o dallo stemmer in fase di query non è archiviato su disco.
+I termini di query espansi aumentano la probabilità che la query trovi documenti che corrispondono alla finalità della query originale. Il testo generato dal word breaker o stemmer in fase di query non viene archiviato su disco.
 
 ## <a name="word-breaking"></a>Word breaking
 
-La parola suddivisione è la separazione del testo in singoli token di testo o parole. Molti linguaggi, soprattutto quelli con alfabeti romani, hanno una matrice di separatori di parola, ad esempio spazi vuoti, e punteggiatura usati per distinguere parole, frasi e frasi. I Word breaker devono basarsi su euristiche accurate del linguaggio per fornire risultati affidabili e accurati. L'elaborazione delle parole è più complessa per i sistemi basati su caratteri di scrittura o alfabeti basati su script, in cui il significato dei singoli caratteri è determinato dal contesto. Per ulteriori informazioni sulle considerazioni linguistiche che possono influire sull'implementazione del Word breaker, vedere [considerazioni linguistiche e Unicode](linguistic-and-unicode-considerations.md).
+Il word breaking è la separazione del testo in singoli token di testo o parole. Molte lingue, in particolare quelle con alfabeti romani, hanno una matrice di separatori di parole (ad esempio spazi vuoti) e punteggiatura usati per distinguere parole, frasi e frasi. I word breaker devono basarsi sull'euristica della lingua accurata per fornire risultati affidabili e accurati. La suddivisione delle parole è più complessa per i sistemi di scrittura di caratteri o di alfabeti basati su script, in cui il significato dei singoli caratteri è determinato dal contesto. Per altre informazioni sulle considerazioni linguistiche che possono influire sull'implementazione del word breaker, vedere [Considerazioni sul formato linguistico e Unicode.](linguistic-and-unicode-considerations.md)
 
 ## <a name="stemming"></a>Stemming
 
-Windows Search applica gli stemmer esclusivamente in fase di query per generare forme di Word aggiuntive per i termini nelle query [FREETEXT](-search-sql-freetext.md) e Property. Gli stemmer eseguono l'analisi morfologica e applicano regole grammaticali per generare un elenco di forme alternative, o flesse, per le parole. I formati alternativi hanno spesso lo stesso stem o form di base. Generando i moduli declinati per una parola, il servizio di indicizzazione restituisce i risultati della query statisticamente più rilevanti per una query. Una query full-text per "swim meet", ad esempio, corrisponde a documenti che contengono "swim, Swim, swims, swims", nuoto, nuotato, nuotato "o" Meet, Meet, Meets, Meets ", meeting, met" e combinazioni di questi termini.
+Windows La ricerca applica gli stemmer esclusivamente in fase di query per generare formati di parola aggiuntivi per i termini in [FREETEXT](-search-sql-freetext.md) e nelle query di proprietà. Gli stemmer eseguono l'analisi morfica e applicano regole grammaticali per generare un elenco di forme alternative o flesse per le parole. Le forme alternative hanno spesso lo stesso gambo o lo stesso formato di base. Generando i formati inflected per una parola, il servizio di indicizzazione restituisce risultati di query statisticamente più rilevanti per una query. Ad esempio, una query full-text per "meet" corrisponde a documenti che contengono "corsi, corsi, corsie, corsie", acquaio, swam, swum" o "meet, meets, meets", meeting, met" e combinazioni di questi termini.
 
-Per alcuni linguaggi è necessario che i termini flesso vengano generati sia in fase di indicizzazione sia in fase di query per le flessioni standard e Variant. In questo caso, lo stemming si verifica nel componente word breaker, con un lavoro con stemming minimo nello stemmer effettivo. Ad esempio, il Word breaker giapponese esegue lo stemming durante la creazione dell'indice e l'esecuzione di query per consentire a una query di trovare forme flesse diverse dei termini di ricerca.
+Alcuni linguaggi richiedono che i termini inflected siano generati sia in fase di indice che in fase di query per flesszioni standard e varianti. In questo caso, lo stemming si verifica nel componente word breaker, con uno stemmer minimo nello stemmer effettivo. Ad esempio, il word breaker giapponese esegue lo stemming sia durante la creazione dell'indice che durante l'esecuzione di query per consentire a una query di trovare forme gonfiate diverse dei termini di ricerca.
 
 ## <a name="normalization"></a>Normalization
 
-I documenti di tutte le lingue vengono archiviati in un unico indice. Sebbene le parole e le regole linguistiche differiscano notevolmente, esistono alcune considerazioni, ad esempio numeri, date e ore, che vengono gestite in modo coerente in tutti i Word breaker. Per ulteriori informazioni sulle considerazioni di normalizzazione che possono influire sull'implementazione del Word breaker, vedere [normalizzazione dei form di Surface](surface-form-normalization.md).
+I documenti di tutte le lingue vengono archiviati in un singolo indice. Anche se le parole e le regole linguistiche differiscono notevolmente, esistono alcune considerazioni, ad esempio numeri, date e ore, che vengono gestite in modo coerente in tutti i word breaker. Per altre informazioni sulle considerazioni sulla normalizzazione che possono influire sull'implementazione del word breaker, vedere [Normalizzazione dei moduli di surface.](surface-form-normalization.md)
 
-## <a name="noise-words"></a>Parole non significative
+## <a name="noise-words"></a>Parole non pronunciate
 
-Parole non significative, note anche come parole non significative, sono parole che non sono indicatori significativi per il contenuto. Il servizio di indicizzazione rimuove le parole non significative dai termini di query e dal contenuto incluso nell'indice full-text. Un *offset* è l'occorrenza di una parola in un documento o in un elenco di termini di query. L'offset delle parole non significative in un documento o in una query viene registrato come vuoto. La rimozione di parole non significative consente di migliorare le prestazioni delle query, evitando una crescita Migliora inoltre la pertinenza dei risultati della query. È possibile configurare la ricerca di Windows in modo da usare elenchi di parole non significative per lingue specifiche. Questi elenchi vengono utilizzati quando viene richiamato un Word breaker per tale lingua. Ad esempio, "The" nella lingua inglese si verifica spesso con un valore minimo come chiave univoca. "L'oggetto" è nell'elenco di parole non significative, non viene scritto nell'indice di contenuto e, se sottoposto a query, non restituisce alcun risultato.
+Le parole non significative, note anche come parole non significative, sono parole che non sono indicatori significativi per il contenuto. Il servizio di indicizzazione rimuove le parole non erre dai termini di query e dal contenuto incluso nell'indice full-text. Un *offset è* l'occorrenza di una parola in un documento o in un elenco di termini di query. L'offset delle parole non pronunciate in un documento o in una query viene registrato come vuoto. La rimozione di parole non necessarie migliora le prestazioni delle query evitando l'aumento non necessario dell'indice. Migliora anche la pertinenza dei risultati delle query. È possibile configurare la Windows per l'uso di elenchi di parole non erre per lingue specifiche. Questi elenchi vengono usati quando viene richiamato un word breaker per tale lingua. Ad esempio, "il" nella lingua inglese si verifica così spesso che ha poco valore come chiave univoca. "The" è presente nell'elenco di parole non erre, non viene scritto nell'indice di contenuto e, se viene eseguita una query, non restituisce alcun risultato.
 
-Le parole non significative fungono da segnaposto nelle query di frasi. Un documento che contiene il testo "Wag the Dog" viene archiviato nell'indice con "Wag" nell'occorrenza 1 e "Dog" nell'occorrenza 3. La query di frase "Wag Dog" non corrisponde, ma la frase "WAG a Dog", perché le informazioni sull'occorrenza corrispondono. La frase "Wag Purple Dog" non corrisponde perché "Purple" non è stato trovato nell'indice nell'occorrenza 2. Tuttavia, una query per "Wag the Dog" restituisce documenti che contengono "Wag Purple Dog" perché non esiste alcun modo per determinare in modo efficiente se il documento ha una parola non significativa tra "Wag" e "Dog".
+Le parole non complesse fungono da segnaposto nelle query di frase. Un documento che contiene il testo "wag the dog" viene archiviato nell'indice con "wag" in corrispondenza dell'occorrenza 1 e "dog" all'occorrenza 3. La query di frase "wag dog" non corrisponde, ma la query di frase "wag a dog" lo fa, perché le informazioni sull'occorrenza corrispondono. La frase "wag purple dog" non corrisponde perché "viola" non è presente nell'indice in corrispondenza dell'occorrenza 2. Tuttavia, una query per "wag the dog" restituisce documenti che contengono "wag purple dog" perché non è possibile determinare in modo efficiente se il documento contiene una parola non non rumore tra "wag" e "dog".
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Estensione delle risorse della lingua](extending-language-resources-in-windows-search.md)
+[Estensione delle risorse del linguaggio](extending-language-resources-in-windows-search.md)
 </dt> <dt>
 
-[Implementazione di un Word breaker e uno stemmer](implementing-a-word-breaker-and-stemmer.md)
+[Implementazione di word breaker e stemmer](implementing-a-word-breaker-and-stemmer.md)
 </dt> <dt>
 
 [Considerazioni linguistiche e Unicode](linguistic-and-unicode-considerations.md)
 </dt> <dt>
 
-[Risoluzione dei problemi relativi a risorse di linguaggio e procedure consigliate](troubleshooting-language-resources.md)
+[Risoluzione dei problemi relativi alle risorse del linguaggio e alle procedure consigliate](troubleshooting-language-resources.md)
 </dt> </dl>
 
  

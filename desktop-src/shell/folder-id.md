@@ -46,7 +46,7 @@ Anche se le cartelle sono un componente standard di tutti i sistemi, i relativi 
 
 I CRL offrono un modo uniforme per identificare e individuare cartelle speciali, indipendentemente dal nome o dalla posizione in un particolare sistema. A differenza delle variabili di ambiente, i CSID possono essere usati con cartelle virtuali e file system cartelle. A ogni cartella speciale è assegnato un CSIDL univoco. Ad esempio, la cartella programmi file system ha un CSIDL di **CSIDL \_ PROGRAM \_ FILES** e la cartella virtuale Network Neighborhood ha un CSIDL di **CSIDL \_ NETWORK**.
 
-Un CSIDL viene usato in combinazione con una delle diverse funzioni shell per recuperare il PIDL di una cartella speciale o un percorso file system della cartella. Se la cartella non esiste in un sistema, l'applicazione può forzarne la creazione combinando il relativo CSIDL con **CSIDL \_ FLAG \_ CREATE**. Il linguaggio CSIDL può essere passato alle funzioni seguenti:
+Un CSIDL viene usato in combinazione con una delle diverse funzioni shell per recuperare il PIDL di una cartella speciale o un percorso file system cartella. Se la cartella non esiste in un sistema, l'applicazione può forzarne la creazione combinando il relativo CSIDL con **CSIDL \_ FLAG \_ CREATE**. Il linguaggio CSIDL può essere passato alle funzioni seguenti:
 
 -   [**SHGetFolderLocation,**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderlocation)che recupera il file PIDL di una cartella speciale.
 -   [**SHGetFolderPath,**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderpatha)che recupera il percorso di una file system cartella speciale.

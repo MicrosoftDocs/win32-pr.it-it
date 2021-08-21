@@ -64,7 +64,7 @@ Di seguito sono riportati i valori possibili.
 
 <span id="ADS_SERVICE_RUNNING"></span><span id="ads_service_running"></span>
 
-**Servizi di dominio Active Directory \_ SERVIZIO \_ IN** ESECUZIONE (0x00000004)
+**Servizi di dominio Active Directory \_ SERVIZIO \_ IN ESECUZIONE** (0x00000004)
 
 
 </dt> <dd></dd> <dt>
@@ -78,7 +78,7 @@ Di seguito sono riportati i valori possibili.
 
 <span id="ADS_SERVICE_PAUSE_PENDING"></span><span id="ads_service_pause_pending"></span>
 
-**Servizi di dominio Active Directory \_ SERVICE \_ PAUSE \_ PENDING** (0x00000006)
+**Servizi di dominio Active Directory \_ SOSPENSIONE \_ DEL \_ SERVIZIO IN** SOSPESO (0x00000006)
 
 
 </dt> <dd></dd> <dt>
@@ -99,7 +99,7 @@ Di seguito sono riportati i valori possibili.
 
 <span id="ADS_SERVICE_OWN_PROCESS"></span><span id="ads_service_own_process"></span>
 
-**Servizi di dominio Active Directory \_ PROCESSO \_ \_ PERSONALIZZATO DEL** SERVIZIO (0x00000010)
+**Servizi di dominio Active Directory \_ SERVICE \_ OWN \_ PROCESS** (0x00000010)
 
 
 </dt> <dd></dd> <dt>
@@ -113,7 +113,7 @@ Di seguito sono riportati i valori possibili.
 
 <span id="ADS_SERVICE_KERNEL_DRIVER"></span><span id="ads_service_kernel_driver"></span>
 
-**Servizi di dominio Active Directory \_ DRIVER \_ DEL \_ KERNEL DEL** SERVIZIO (0x00000001)
+**Servizi di dominio Active Directory \_ \_DRIVER DEL KERNEL \_ DEL** SERVIZIO (0x00000001)
 
 
 </dt> <dd></dd> <dt>

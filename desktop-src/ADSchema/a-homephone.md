@@ -1,10 +1,10 @@
 ---
-title: Phone-Home-attributo primario
-description: Il numero di telefono dell'abitazione principale dell'utente.
+title: Telefono-Home-Primary
+description: Numero di telefono principale dell'utente.
 ms.assetid: 624d89fd-942c-448d-bd51-7d93954370b1
 ms.tgt_platform: multiple
 keywords:
-- Phone-Home-schema AD dell'attributo primario
+- Telefono-Home-Primary attributo AD Schema
 - Schema AD dell'attributo homePhone
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c2d2e68116a15dcbf4431d33bb56b4ffed8ee2e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 321ba35912db00e8b33f840d73cd68010166c7e38a19e6b6a43e64bc886a8496
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118176710"
 ---
-# <a name="phone-home-primary-attribute"></a>Phone-Home-attributo primario
+# <a name="phone-home-primary-attribute"></a>Telefono-Home-Primary
 
-Il numero di telefono dell'abitazione principale dell'utente.
+Numero di telefono principale dell'utente.
 
 
 
 | Voce | Valore |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | Telefono-Home-primario                                                               |
-| LDAP-Display-Name | homePhone                                                                        |
+| CN                | Telefono-Home-Primary                                                               |
+| Ldap-Display-Name | homePhone                                                                        |
 | Dimensione              | \-                                                                               |
-| Privilegio aggiornamento  | Amministratore di dominio o proprietario dell'account.                                           |
-| Frequenza di aggiornamento  | Quando viene creato il record dell'utente e ogni volta che il numero di telefono deve essere modificato. |
+| Privilegio di aggiornamento  | Amministratore di dominio o proprietario dell'account.                                           |
+| Frequenza di aggiornamento  | Quando viene creato il record dell'utente e ogni volta che il numero di telefono deve cambiare. |
 | Attribute-Id      | 0.9.2342.19200300.100.1.20                                                       |
-| System-ID-GUID    | f0f8ffa1-1191-11d0-a060-00aa006c33ed                                             |
+| System-Id-Guid    | f0f8ffa1-1191-11d0-a060-00aa006c33ed                                             |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
@@ -58,15 +58,15 @@ Il numero di telefono dell'abitazione principale dell'utente.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x3A09                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Vero                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Il numero di telefono dell'abitazione principale dell'utente.
 | ID collegamento                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A09                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| È a valore singolo       | Vero                                                                                                                                                     |
+| Is-Single-Valued       | Vero                                                                                                                                                     |
 | Indicizzato             | Falso                                                                                                                                                    |
 | Nel catalogo globale      | Vero                                                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                               |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Il numero di telefono dell'abitazione principale dell'utente.
 | ID collegamento                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A09                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| È a valore singolo       | Vero                                                                                                                                                     |
+| Is-Single-Valued       | Vero                                                                                                                                                     |
 | Indicizzato             | Falso                                                                                                                                                    |
 | Nel catalogo globale      | Vero                                                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                               |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Il numero di telefono dell'abitazione principale dell'utente.
 | ID collegamento                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A09                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| È a valore singolo       | Vero                                                                                                                                                     |
+| Is-Single-Valued       | Vero                                                                                                                                                     |
 | Indicizzato             | Falso                                                                                                                                                    |
 | Nel catalogo globale      | Vero                                                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                               |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Il numero di telefono dell'abitazione principale dell'utente.
 | ID collegamento                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A09                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| È a valore singolo       | Vero                                                                                                                                                     |
+| Is-Single-Valued       | Vero                                                                                                                                                     |
 | Indicizzato             | Falso                                                                                                                                                    |
 | Nel catalogo globale      | Vero                                                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                               |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Il numero di telefono dell'abitazione principale dell'utente.
 | ID collegamento                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A09                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| È a valore singolo       | Vero                                                                                                                                                     |
+| Is-Single-Valued       | Vero                                                                                                                                                     |
 | Indicizzato             | Falso                                                                                                                                                    |
 | Nel catalogo globale      | Vero                                                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                               |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 

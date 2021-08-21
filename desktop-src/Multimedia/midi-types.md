@@ -5,25 +5,25 @@ ms.assetid: 2453ce4b-c4c9-47e1-a5f5-f0aaf28dbb39
 keywords:
 - audio multimediale, tipi MIDI
 - audio, tipi MIDI
-- MIDI (Musical Instrument Digital Interface), tipi
-- MIDI (Musical Instrument Digital Interface), tipi
-- informazioni di riferimento per i tipi MIDI
-- Riferimento MIDI, tipi
+- MidI (Musical Instrument Digital Interface), types
+- MIDI (Musical Instrument Digital Interface),types
+- riferimento per MIDI, tipi
+- riferimento MIDI,tipi
 - Tipi MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 723804b2673e489cd49788fba21434989acaea5a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5a06f035af217e04f89ac69be95e4665904fdce729dd8d412f59f6c633102bee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137300"
 ---
 # <a name="midi-types"></a>Tipi MIDI
 
-Con MIDI vengono usati i tipi seguenti.
+I tipi seguenti vengono usati con MIDI.
 
--   [Matrice di matrici](keyarray.md)
+-   [KEYARRAY](keyarray.md)
 -   [PATCHARRAY](patcharray.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
@@ -33,9 +33,9 @@ Con MIDI vengono usati i tipi seguenti.
 [Riferimento MIDI](midi-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

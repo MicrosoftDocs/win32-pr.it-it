@@ -33,7 +33,7 @@ Definisce il tipo che contiene una riga di paragrafo.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/> |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                     |
 
 

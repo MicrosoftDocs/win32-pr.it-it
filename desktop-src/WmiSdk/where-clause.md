@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Clausola WHERE (WMI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0587bffb1a10c4611773de8a61fdb7ac1576952
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 6a6a51657dac26a002890bde8346cd7570f6057f2ace5cdfb5350d6c90d0fee8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111386721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118312182"
 ---
 # <a name="where-clause-wmi"></a>Clausola WHERE (WMI)
 
-Usare la clausola WHERE per restringere l'ambito di una query di dati, eventi o schema. Per altre informazioni, vedere [Esecuzione di query con WQL.](querying-with-wql.md) La clausola WHERE è costituito da una proprietà o una parola chiave, un operatore e una costante. Tutte le clausole WHERE devono specificare uno degli operatori predefiniti inclusi in Strumentazione gestione Windows (WMI) Query Language (WQL). È possibile aggiungere la clausola WHERE all'istruzione SELECT usando uno dei formati seguenti:
+Usare la clausola WHERE per restringere l'ambito di una query di dati, eventi o schema. Per altre informazioni, vedere [Esecuzione di query con WQL.](querying-with-wql.md) La clausola WHERE è costituito da una proprietà o una parola chiave, un operatore e una costante. Tutte le clausole WHERE devono specificare uno degli operatori predefiniti inclusi in Windows Management Instrumentation (WMI) Query Language (WQL). È possibile aggiungere la clausola WHERE all'istruzione SELECT usando uno dei formati seguenti:
 
 
 ```sql
@@ -24,7 +24,7 @@ SELECT * FROM class WHERE constant operator property
 
 
 
-dove è l'elemento su cui viene eseguita la query, class è la classe in cui eseguire una query e constant, operator e property sono la costante, l'operatore e la proprietà o la parola chiave \* da usare. Per altre informazioni sull'istruzione SELECT, vedere Istruzione SELECT per query [di dati,](select-statement-for-data-queries.md) [Istruzione SELECT](select-statement-for-event-queries.md)per query di eventi o Istruzione SELECT per query [di schema.](select-statement-for-schema-queries.md)
+dove è l'elemento su cui viene eseguita la query, class è la classe in cui eseguire una query e constant, operator e property sono la costante, l'operatore e la proprietà o la parola chiave \* da usare. Per altre informazioni sull'istruzione SELECT, vedere Istruzione SELECT per query [di dati,](select-statement-for-data-queries.md) [istruzione SELECT](select-statement-for-event-queries.md)per query di eventi o istruzione SELECT per query [di schema.](select-statement-for-schema-queries.md)
 
 Il valore della costante deve essere del tipo corretto per la proprietà . Inoltre, l'operatore deve essere in elenco di operatori [WQL validi.](wql-operators.md) Il nome di una proprietà o una costante deve essere presente su entrambi i lati dell'operatore nella clausola WHERE.
 
@@ -70,7 +70,7 @@ SELECT * FROM MyClass WHERE Prop1 = "cAt"
 
 
 
-È possibile costruire una query che include tipi di dati booleani, ma gli unici tipi di operandi booleani validi sono i tipi =, != e <> booleani. Il valore **TRUE** equivale al numero 1 e il valore **FALSE** equivale al numero 0. Gli esempi seguenti sono query che confrontano un valore booleano con i valori **TRUE** o **FALSE.**
+È possibile costruire una query che include tipi di dati booleani, ma gli unici tipi di operandi booleani validi sono i tipi =, != e <> booleani. Il valore **TRUE** equivale al numero 1 e il valore **FALSE** è equivalente al numero 0. Gli esempi seguenti sono query che confrontano un valore booleano con i valori **TRUE** o **FALSE.**
 
 
 ```sql

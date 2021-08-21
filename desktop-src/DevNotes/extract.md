@@ -1,5 +1,5 @@
 ---
-description: La funzione extract estrae i file da un file CAB.
+description: La funzione Extract estrae i file da un file CAB.
 ms.assetid: c6a79d81-7adf-4b8e-a1ef-fec868f7fdbf
 title: Estrarre la funzione
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Cabinet.dll
-ms.openlocfilehash: 2e1096cdb7909f49fbcac7c32891210b25637c90
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cbcb53aae008423ac56bb489d43f6fd78016a9b1f716be21390a6dfc1de00404
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162065"
 ---
 # <a name="extract-function"></a>Estrarre la funzione
 
-\[Questa funzione non è più supportata, pertanto non è possibile garantirne il comportamento.\]
+\[Questa funzione non è più supportata, pertanto il relativo comportamento non può essere garantito.\]
 
-La funzione **Extract** estrae i file da un file CAB.
+La **funzione Extract** estrae i file da un file CAB.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ HRESULT Extract(
 
 <dl> <dt>
 
-*ps* 
+*Ps* 
 </dt> <dd>
 
-Puntatore a una struttura di [**sessione**](session.md) che contiene informazioni sulla sessione corrente.
+Puntatore a una struttura [**SESSION**](session.md) che contiene informazioni sulla sessione corrente.
 
 </dd> <dt>
 
@@ -58,11 +58,11 @@ Puntatore al nome del file CAB da cui estrarre i file.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, restituisce **S \_ OK**. in caso contrario, restituisce un codice di errore.
+Se la funzione ha esito positivo, restituisce **S \_ OK;** in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,10 +81,10 @@ A questa funzione non è associato alcun file di intestazione o libreria di impo
 [**DeleteExtractedFiles**](deleteextractedfiles.md)
 </dt> <dt>
 
-[**ERF**](/windows/win32/api/fdi_fci_types/ns-fdi_fci_types-erf)
+[**Erf**](/windows/win32/api/fdi_fci_types/ns-fdi_fci_types-erf)
 </dt> <dt>
 
-[**SESSIONE**](session.md)
+[**Sessione**](session.md)
 </dt> </dl>
 
  

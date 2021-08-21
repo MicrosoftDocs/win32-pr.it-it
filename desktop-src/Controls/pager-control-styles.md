@@ -1,6 +1,6 @@
 ---
 title: Stili del controllo Pager (CommCtrl.h)
-description: Questa sezione elenca gli stili della finestra usati durante la creazione di controlli pager.
+description: In questa sezione vengono elencati gli stili della finestra usati durante la creazione di controlli pager.
 ms.assetid: 619fd8cc-e231-41af-8744-a29d14f2c6f8
 topic_type:
 - apiref
@@ -24,7 +24,7 @@ ms.locfileid: "118170218"
 ---
 # <a name="pager-control-styles"></a>Stili del controllo Pager
 
-Questa sezione elenca gli stili della finestra usati durante la creazione di controlli pager.
+In questa sezione vengono elencati gli stili della finestra usati durante la creazione di controlli pager.
 
 
 

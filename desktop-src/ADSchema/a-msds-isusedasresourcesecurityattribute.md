@@ -53,7 +53,7 @@ Per una proprietà della risorsa, questo attributo indica se viene usato come at
 | ID collegamento                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| A valore singolo       | Vero                                                                  |
+| Is-Single-Valued       | Vero                                                                  |
 | Indicizzato             | Falso                                                                 |
 | Nel catalogo globale      | Falso                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                          |

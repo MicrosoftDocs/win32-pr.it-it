@@ -5,68 +5,68 @@ ms.tgt_platform: multiple
 title: Ricezione di eventi in modo sicuro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f27d156213553ee17a346d780cbea0ff82beca83
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d64db5b0289abd9a43caee6ddb3b68da94a9560b0ea8f591d95ee472cf900b4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118316528"
 ---
 # <a name="receiving-events-securely"></a>Ricezione di eventi in modo sicuro
 
 I consumer temporanei e permanenti hanno metodi diversi per proteggere il recapito degli eventi.
 
-Le sezioni seguenti sono illustrate in questo argomento:
+In questo argomento vengono illustrate le sezioni seguenti:
 
--   [Protezione di consumer temporanei](#securing-temporary-consumers)
--   [Protezione di consumer permanenti](#securing-permanent-consumers)
+-   [Protezione dei consumer temporanei](#securing-temporary-consumers)
+-   [Protezione dei consumer permanenti](#securing-permanent-consumers)
 -   [Protezione della sottoscrizione permanente](#securing-the-permanent-subscription)
--   [Impostazione di un Administrator-Only SD](#setting-an-administrator-only-sd)
+-   [Impostazione di una Administrator-Only SD](#setting-an-administrator-only-sd)
 -   [Rappresentazione dell'identità del provider di eventi](#impersonating-the-event-provider-identity)
 -   [SID e sottoscrizioni permanenti](#sids-and-permanent-subscriptions)
 -   [Creazione di sottoscrizioni permanenti tramite account di dominio](#creating-permanent-subscriptions-using-domain-accounts)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="securing-temporary-consumers"></a>Protezione di consumer temporanei
+## <a name="securing-temporary-consumers"></a>Protezione dei consumer temporanei
 
-Un [*consumer temporaneo*](gloss-t.md) viene eseguito fino al riavvio del sistema o all'arresto di WMI, ma non può essere avviato se viene generato un evento specifico. Ad esempio, una chiamata a [**SWbemServices.ExecNotificationQueryAsync**](swbemservices-execnotificationqueryasync.md) crea un consumer temporaneo.
+Un [*consumer temporaneo*](gloss-t.md) viene eseguito fino al riavvio del sistema o all'arresto di WMI, ma non può essere avviato se viene generato un evento specifico. Ad esempio, una chiamata a [**SWbemServices.ExecNotificationQueryAsync crea**](swbemservices-execnotificationqueryasync.md) un consumer temporaneo.
 
-Chiama [**SWbemServices.ExecNotificationQuery**](swbemservices-execnotificationquery.md) o [**IWbemServices:: ExecNotificationQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execnotificationquery) crea consumer di eventi temporanei. I consumer temporanei non possono controllare chi fornisce eventi al [*sink*](gloss-s.md) di evento che crea.
+Le chiamate [**SWbemServices.ExecNotificationQuery**](swbemservices-execnotificationquery.md) o [**IWbemServices::ExecNotificationQuery creano**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execnotificationquery) consumer di eventi temporanei. I consumer temporanei non possono controllare chi fornisce eventi al [*sink di evento*](gloss-s.md) creato.
 
-Le chiamate ai metodi [**ExecNotificationQuery**](swbemservices-execnotificationquery.md) possono essere eseguite in modo sincrono, [*semisincrona*](gloss-s.md)o in modo asincrono. Ad esempio, [**SWbemServices.ExecNotificationQuery**](swbemservices-execnotificationquery.md) è un metodo sincrono che può essere chiamato semisincrona, a seconda della modalità con cui viene impostato il parametro *iFlags* . [**SWbemServices.ExecNotificationQueryAsync**](swbemservices-execnotificationqueryasync.md) è una chiamata asincrona.
+Le chiamate [**ai metodi ExecNotificationQuery**](swbemservices-execnotificationquery.md) possono essere effettuate in modo sincrono, [*semisincronousamente*](gloss-s.md)o in modo asincrono. Ad esempio, [**SWbemServices.ExecNotificationQuery**](swbemservices-execnotificationquery.md) è un metodo sincrono che può essere chiamato in modo semisincronous, a seconda della modalità di impostazione del parametro *iflags.* [**SWbemServices.ExecNotificationQueryAsync è**](swbemservices-execnotificationqueryasync.md) una chiamata asincrona.
 
-Tenere presente che il callback al sink per le versioni asincrone di queste chiamate potrebbe non essere restituito allo stesso livello di autenticazione della chiamata eseguita dallo script. È pertanto consigliabile utilizzare semisincrono anziché le chiamate asincrone. Se è necessaria la comunicazione asincrona, vedere [chiamata di un metodo](calling-a-method.md) e [impostazione della sicurezza in una chiamata asincrona](setting-security-on-an-asynchronous-call.md).
+Tenere presente che il callback al sink per le versioni asincrone di queste chiamate potrebbe non essere restituito allo stesso livello di autenticazione della chiamata effettuata dallo script. È pertanto consigliabile usare chiamate semisincrono anziché asincrone. Se è necessaria la comunicazione asincrona, vedere [Chiamata di un metodo e](calling-a-method.md) Impostazione della sicurezza in una chiamata [asincrona.](setting-security-on-an-asynchronous-call.md)
 
-I sottoscrittori di scripting non possono verificare i diritti di accesso di un provider di eventi per fornire eventi al sink creato dallo script. È quindi consigliabile che le chiamate a [**SWbemServices.ExecNotificationQuery**](swbemservices-execnotificationquery.md) usino il form semisincrono della chiamata e usino impostazioni di sicurezza specifiche. Per ulteriori informazioni, vedere [creazione di una chiamata semisincrono con VBScript](making-a-semisynchronous-call-with-vbscript.md).
+I sottoscrittori di script non possono controllare i diritti di accesso di un provider di eventi per fornire eventi al sink creato dallo script. Pertanto, è consigliabile che le [**chiamateSWbemServices.ExecNotificationQuery usino**](swbemservices-execnotificationquery.md) la forma semisincrono della chiamata e usino impostazioni di sicurezza specifiche. Per altre informazioni, vedere [Esecuzione di una chiamata semisincrono con VBScript.](making-a-semisynchronous-call-with-vbscript.md)
 
-## <a name="securing-permanent-consumers"></a>Protezione di consumer permanenti
+## <a name="securing-permanent-consumers"></a>Protezione dei consumer permanenti
 
-Un [*consumer permanente*](gloss-p.md) ha una sottoscrizione permanente agli eventi di un provider di eventi che verrà mantenuto dopo il riavvio del sistema operativo. Un provider di eventi che supporta gli utenti permanenti è un [*provider di consumer di eventi*](gloss-e.md). Se il provider di eventi non è in esecuzione quando si verifica un evento, WMI avvia il provider quando è necessario recapitare gli eventi. WMI identifica il provider di consumer a cui devono essere recapitati gli eventi, in base all'istanza di [**\_ \_ EventConsumerProviderRegistration**](--eventconsumerproviderregistration.md) , che associa l'istanza [**\_ \_ Win32Provider**](--win32provider.md) del provider consumer a una [*classe consumer logica*](gloss-l.md) definita dal provider consumer. Per ulteriori informazioni sul ruolo dei provider di consumer, vedere [scrittura di un provider di consumer di eventi](writing-an-event-consumer-provider.md).
+Un [*consumer permanente*](gloss-p.md) ha una sottoscrizione permanente agli eventi di un provider di eventi che verranno mantenuti dopo il riavvio del sistema operativo. Un provider di eventi che supporta consumer permanenti è un [*provider di consumer di eventi*](gloss-e.md). Se il provider di eventi non è in esecuzione quando si verifica un evento, WMI avvia il provider quando deve recapitare gli eventi. WMI identifica il provider di consumer a cui devono essere recapitati gli eventi, in base all'istanza [**\_ \_ EventConsumerProviderRegistration,**](--eventconsumerproviderregistration.md) che associa l'istanza [**\_ \_ Win32Provider**](--win32provider.md) del provider di consumer a una classe [*consumer*](gloss-l.md) logica definita dal provider di consumer. Per altre informazioni sul ruolo dei provider di consumer, vedere [Scrittura di un provider di consumer di eventi.](writing-an-event-consumer-provider.md)
 
-I consumer permanenti possono controllare chi li invia e i provider di eventi possono controllare chi accede agli eventi.
+I consumer permanenti possono controllare chi invia gli eventi e i provider di eventi possono controllare chi accede ai propri eventi.
 
-Gli script client e le applicazioni creano istanze della classe consumer logica come parte di una sottoscrizione. La classe consumer logica definisce le informazioni contenute nell'evento, le operazioni che il client può eseguire con l'evento e il modo in cui viene recapitato l'evento.
+Le applicazioni e gli script client creano istanze della classe consumer logica come parte di una sottoscrizione. La classe consumer logica definisce le informazioni contenute nell'evento, le operazioni che il client può eseguire con l'evento e la modalità di recapito dell'evento.
 
-Le [classi consumer standard](standard-consumer-classes.md) WMI forniscono esempi del ruolo delle classi consumer logiche. Per altre informazioni, vedere [monitoraggio e risposta agli eventi con consumer standard](monitoring-and-responding-to-events-with-standard-consumers.md).
+Le classi [consumer standard](standard-consumer-classes.md) WMI forniscono esempi del ruolo delle classi consumer logiche. Per altre informazioni, vedere [Monitoraggio e risposta agli eventi con consumer standard.](monitoring-and-responding-to-events-with-standard-consumers.md)
 
 ## <a name="securing-the-permanent-subscription"></a>Protezione della sottoscrizione permanente
 
-Le sottoscrizioni permanenti hanno maggiori possibilità di causare problemi di sicurezza in WMI e pertanto presentano i requisiti di sicurezza seguenti:
+Le sottoscrizioni permanenti hanno maggiori potenzialità di causare problemi di sicurezza in WMI e pertanto hanno i requisiti di sicurezza seguenti:
 
--   L'istanza del consumer logico, le istanze [**\_ \_ EventFilter**](--eventfilter.md)e [**\_ \_ FilterToConsumerBinding**](--filtertoconsumerbinding.md) devono avere lo stesso ID di sicurezza (SID) singolo nella proprietà **CreatorSID** . Per altre informazioni, vedere [mantenere lo stesso SID in tutte le istanze di una sottoscrizione permanente](#sids-and-permanent-subscriptions).
--   L'account che crea la sottoscrizione deve essere un account di dominio con privilegi di amministratore locale o l'account del gruppo Administrators locale. L'utilizzo del SID del gruppo Administrators consente alla sottoscrizione di continuare a lavorare nel computer locale, anche se è disconnesso dalla rete. L'utilizzo di un account di dominio consente l'identificazione esatta dell'utente.
+-   Le istanze del consumer logico, [**\_ \_ EventFilter**](--eventfilter.md)e [**\_ \_ FilterToConsumerBinding**](--filtertoconsumerbinding.md) devono avere lo stesso ID di sicurezza (SID) nella **proprietà CreatorSID.** Per altre informazioni, vedere [Mantenimento dello stesso SID in tutte le istanze di una sottoscrizione permanente.](#sids-and-permanent-subscriptions)
+-   L'account che crea la sottoscrizione deve essere un account di dominio con privilegi di amministratore locale o l'account del gruppo Administrators locale. L'uso del SID del gruppo Administrators consente alla sottoscrizione di continuare a funzionare nel computer locale, anche se è disconnessa dalla rete. L'uso di un account di dominio consente l'identificazione esatta dell'utente.
 
-    Tuttavia, se il computer non è connesso e l'account di creazione è un account di dominio, il consumer non riesce perché WMI non è in grado di verificare l'identità dell'account. Per evitare errori di sottoscrizione se il computer è disconnesso dalla rete, utilizzare il SID del gruppo Administrators per una sottoscrizione. In tal caso, è necessario assicurarsi che l'account LocalSystem possa accedere ai dati di appartenenza a gruppi nel dominio. Alcuni provider di consumer di eventi hanno requisiti di sicurezza particolarmente elevati, perché una sottoscrizione non autorizzata può causare gravi danni. Gli esempi sono gli utenti standard, [**ActiveScriptEventConsumer**](activescripteventconsumer.md) e [**CommandLineEventConsumer**](commandlineeventconsumer.md).
+    Tuttavia, se il computer non è connesso e l'account di creazione è un account di dominio, il consumer ha esito negativo perché WMI non è in grado di verificare l'identità dell'account. Per evitare errori di sottoscrizione se il computer è disconnesso dalla rete, usare il SID del gruppo Administrators per una sottoscrizione. In questo caso, è necessario assicurarsi che l'account LocalSystem possa accedere ai dati di appartenenza ai gruppi nel dominio. Alcuni provider di consumer di eventi hanno requisiti di sicurezza particolarmente elevati, poiché una sottoscrizione non autorizzata può causare gravi danni. Ad esempio, i consumer standard [**ActiveScriptEventConsumer**](activescripteventconsumer.md) [**e CommandLineEventConsumer.**](commandlineeventconsumer.md)
 
--   È possibile configurare la sottoscrizione permanente in modo da accettare solo gli eventi da identità specifiche del provider di eventi. Impostare il descrittore di sicurezza nella proprietà **EventAccess** dell'istanza [**\_ \_ EventFilter**](--eventfilter.md) sulle identità del provider di eventi. Tramite WMI viene confrontata l'identità del provider di eventi con il descrittore di sicurezza per determinare se il provider ha l'accesso a destra per la **\_ \_ pubblicazione** . Per ulteriori informazioni, vedere la pagina relativa alle [costanti di sicurezza WMI](wmi-security-constants.md).
+-   È possibile configurare la sottoscrizione permanente in modo che accetti solo eventi da identità specifiche del provider di eventi. Impostare il descrittore di sicurezza nella **proprietà EventAccess** dell'istanza [**\_ \_ di EventFilter**](--eventfilter.md) sull'identità del provider di eventi. WMI confronta l'identità del provider di eventi con il descrittore di sicurezza per determinare se il provider dispone **dell'accesso WBEM \_ RIGHT \_ PUBLISH.** Per altre informazioni, vedere [Costanti di sicurezza WMI.](wmi-security-constants.md)
 
-    Se il filtro consente l'accesso all'identità del provider di eventi, viene considerato attendibile anche l'evento. Ciò consente al consumer che ha ricevuto l'evento di generare un evento delegato.
+    Se il filtro consente l'accesso all'identità del provider di eventi, considera attendibile anche l'evento. In questo modo il consumer che ha ricevuto l'evento può generare un evento delegato.
 
-    **Nota**  Il valore predefinito per il descrittore di sicurezza in **EventAccess** è **null**, che consente l'accesso a tutti gli utenti. La limitazione dell'accesso nell'istanza di sottoscrizione di [**\_ \_ EventFilter**](--eventfilter.md) è consigliata per una migliore sicurezza degli eventi.
+    **Nota**  Il valore predefinito per il descrittore di sicurezza in **EventAccess** è **NULL,** che consente l'accesso a tutti gli utenti. È consigliabile limitare l'accesso nell'istanza della sottoscrizione di [**\_ \_ EventFilter**](--eventfilter.md) per una migliore sicurezza degli eventi.
 
-## <a name="setting-an-administrator-only-sd"></a>Impostazione di un Administrator-Only SD
+## <a name="setting-an-administrator-only-sd"></a>Impostazione di una Administrator-Only SD
 
-Nell'esempio di codice C++ riportato di seguito viene creato un descrittore di sicurezza solo amministratore nell'istanza [**\_ \_ EventFilter**](--eventfilter.md) . In questo esempio viene creato il descrittore di sicurezza utilizzando il linguaggio SDDL ( [Security Descriptor Definition Language](/windows/desktop/SecAuthZ/security-descriptor-definition-language) ). Per ulteriori informazioni sulla **\_ \_ sottoscrizione a destra di WBEM**, vedere la pagina relativa alle costanti di [sicurezza WMI](wmi-security-constants.md).
+L'esempio di codice C++ seguente crea un descrittore di sicurezza solo amministratore [**\_ \_ nell'istanza eventFilter.**](--eventfilter.md) Questo esempio crea il descrittore di sicurezza usando [SDDL (Security Descriptor Definition Language).](/windows/desktop/SecAuthZ/security-descriptor-definition-language) Per altre informazioni su **WBEM \_ RIGHT \_ SUBSCRIBE,** vedere [Costanti di sicurezza WMI.](wmi-security-constants.md)
 
 
 ```C++
@@ -85,7 +85,7 @@ HRESULT hRes = pEventFilterInstance->Put( L"EventAccess", 0,
 
 
 
-Nell'esempio di codice precedente sono richieste le seguenti \# istruzioni Reference e include.
+L'esempio di codice precedente richiede il riferimento seguente e \# le istruzioni include.
 
 
 ```C++
@@ -100,25 +100,25 @@ Nell'esempio di codice precedente sono richieste le seguenti \# istruzioni Refer
 
 ## <a name="impersonating-the-event-provider-identity"></a>Rappresentazione dell'identità del provider di eventi
 
-Un consumer permanente potrebbe dover rappresentare il provider di eventi per elaborare l'evento. I consumer permanenti possono rappresentare il provider di eventi solo quando sussistono le condizioni seguenti:
+Un consumer permanente potrebbe dover rappresentare il provider di eventi per elaborare l'evento. I consumer permanenti possono rappresentare il provider di eventi solo quando si verificano le condizioni seguenti:
 
--   L'istanza di [**\_ \_ FilterToConsumerBinding**](--filtertoconsumerbinding.md) ha la proprietà **MaintainSecurityContext** impostata su **true**.
--   Un evento viene recapitato nello stesso contesto di sicurezza in cui si trovava il provider durante la generazione dell'evento. Solo un consumer implementato come DLL, un consumer in-process, può ricevere eventi nel contesto di sicurezza del provider. Per ulteriori informazioni sulla sicurezza dei provider e dei consumer in-process, vedere [hosting e sicurezza del provider](provider-hosting-and-security.md).
--   Il provider di eventi viene eseguito in un processo che consente la rappresentazione.
+-   L'istanza [**\_ \_ di FilterToConsumerBinding**](--filtertoconsumerbinding.md) ha la **proprietà MaintainSecurityContext** impostata su **True.**
+-   Un evento viene recapitato nello stesso contesto di sicurezza in cui si trova il provider quando ha generato l'evento. Solo un consumer implementato come DLL, un consumer in-process, può ricevere eventi nel contesto di sicurezza del provider. Per altre informazioni sulla sicurezza di provider e consumer in-process, vedere [Hosting e sicurezza dei provider.](provider-hosting-and-security.md)
+-   Il provider di eventi è in esecuzione in un processo che consente la rappresentazione.
 
-L'account che esegue il processo consumer deve avere accesso in **\_ scrittura completo** al repository WMI (noto anche come repository CIM). Nella sottoscrizione, le istanze [**\_ \_ FilterToConsumerBinding**](--filtertoconsumerbinding.md), [**\_ \_ EventConsumer**](--eventconsumer.md)e [**\_ \_ EventFilter**](--eventfilter.md) devono avere lo stesso valore SID (Single Security Identifier) nella proprietà **CreatorSID** . WMI archivia il SID in **CreatorSID** per ogni istanza.
+L'account che esegue il processo consumer deve avere accesso **\_ FULL WRITE** al repository WMI (noto anche come repository CIM). Nella sottoscrizione, le istanze [**\_ \_ FilterToConsumerBinding**](--filtertoconsumerbinding.md), [**\_ \_ EventConsumer**](--eventconsumer.md)ed [**\_ \_ EventFilter**](--eventfilter.md) devono avere lo stesso valore di ID di sicurezza (SID) singolo nella **proprietà CreatorSID** . WMI archivia il SID in **CreatorSID** per ogni istanza.
 
 ## <a name="sids-and-permanent-subscriptions"></a>SID e sottoscrizioni permanenti
 
-Una sottoscrizione permanente non funziona quando l'associazione, il consumer e il filtro non vengono creati dallo stesso utente, il che significa che [**\_ \_ FilterToConsumerBinding**](--filtertoconsumerbinding.md), [**\_ \_ EventConsumer**](--eventconsumer.md)e [**\_ \_ EventFilter**](--eventfilter.md) devono avere lo stesso valore SID (Single Security Identifier) della proprietà **CreatorSID** . In Strumentazione gestione Windows (WMI) viene archiviato questo valore.
+Una sottoscrizione permanente non funziona quando l'associazione, il consumer e il filtro non vengono creati dallo stesso utente, il che significa che [**\_ \_ FilterToConsumerBinding,**](--filtertoconsumerbinding.md) [**\_ \_ EventConsumer**](--eventconsumer.md)e [**\_ \_ EventFilter**](--eventfilter.md) devono avere lo stesso valore di ID di sicurezza (SID) singolo nella proprietà **CreatorSID.** Windows Strumentazione gestione (WMI) archivia questo valore.
 
 ## <a name="creating-permanent-subscriptions-using-domain-accounts"></a>Creazione di sottoscrizioni permanenti tramite account di dominio
 
-Quando si utilizzano account di dominio per creare sottoscrizioni permanenti, è necessario considerare diversi problemi. Ogni sottoscrizione permanente dovrebbe continuare a funzionare quando nessun utente è connesso, il che significa che funzionano con l'account LocalSystem incorporato.
+Quando si usano account di dominio per creare sottoscrizioni permanenti, è necessario considerare diversi problemi. Ogni sottoscrizione permanente dovrebbe comunque funzionare quando nessun utente è connesso, ovvero funziona con l'account LocalSystem predefinito.
 
-Se un utente di dominio è il creatore di una sottoscrizione permanente per i consumer sensibili alla sicurezza ([**ActiveScriptEventConsumer**](activescripteventconsumer.md), [**CommandLineEventConsumer**](commandlineeventconsumer.md)), WMI verifica se la proprietà **CreatorSID** della classe [**\_ \_ EventFilter**](--eventfilter.md) , la classe [**\_ \_ FilterToConsumerBinding**](--filtertoconsumerbinding.md) e le istanze del consumer appartengono a un utente che è membro del gruppo Administrators locale.
+Se un utente di dominio è l'autore di una sottoscrizione permanente per i consumer sensibili alla sicurezza ([**ActiveScriptEventConsumer**](activescripteventconsumer.md), [**CommandLineEventConsumer**](commandlineeventconsumer.md)), WMI verifica se la proprietà **CreatorSID** della classe [**\_ \_ EventFilter,**](--eventfilter.md) [**\_ \_ della classe FilterToConsumerBinding**](--filtertoconsumerbinding.md) e delle istanze del consumer appartiene a un utente membro del gruppo Administrators locale.
 
-Nell'esempio di codice riportato di seguito viene illustrato come è possibile specificare la proprietà **CreatorSID** .
+L'esempio di codice seguente illustra come specificare la **proprietà CreatorSID.**
 
 ``` syntax
  instance of __EventFilter as $FILTER
@@ -143,7 +143,7 @@ Nell'esempio di codice riportato di seguito viene illustrato come è possibile s
     }
 ```
 
-Per le situazioni tra domini, aggiungere utenti autenticati al gruppo di accesso di autorizzazione Windows.
+Per le situazioni tra domini, aggiungere Authenticated Users al "Windows authorization access group".
 
 ## <a name="related-topics"></a>Argomenti correlati
 

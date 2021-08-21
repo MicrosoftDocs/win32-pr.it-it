@@ -24,7 +24,7 @@ Per recuperare l'equazione matematica riconosciuta dal controllo di input matema
 
 ## <a name="create-a-template-class-that-contains-event-sinks"></a>Creare una classe modello contenente sink di evento
 
-Quando si implementa un sink di evento che usa il controllo di input matematico, è prima necessario specificare un ID sink. È quindi necessario creare una classe modello che eredita dall'evento, dal gestore del controllo eventi e dalle interfacce eventi del controllo di input matematico. Il codice seguente illustra come impostare un ID sink e creare una classe modello di questo tipo, CMathInputControlEventHandler, che eredita dalle interfacce richieste. Questa classe modello è anche impostata in modo da avere un puntatore a interfaccia privata sconosciuta che verrà usato per passare il controllo di input matematico al controllo durante l'inizializzazione e il membro m ulAdviseCount per contare il numero di chiamate da \_ consigliare/non supervisionare.
+Quando si implementa un sink di evento che usa il controllo di input matematico, è prima necessario specificare un ID sink. È quindi necessario creare una classe modello che eredita dall'evento, dal gestore del controllo eventi e dalle interfacce eventi del controllo di input matematico. Il codice seguente illustra come impostare un ID sink e creare una classe modello di questo tipo, CMathInputControlEventHandler, che eredita dalle interfacce richieste. Questa classe modello è anche impostata in modo da avere un puntatore a interfaccia privata sconosciuta che verrà usato per passare il controllo di input matematico all'inizializzazione e il membro m ulAdviseCount per contare il numero di chiamate da \_ consigliare/non supervisionare.
 
 
 ```

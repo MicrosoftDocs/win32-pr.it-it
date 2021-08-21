@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo get Width recupera la larghezza del rettangolo di destinazione.
+description: Il metodo get \_ Width recupera la larghezza del rettangolo di destinazione.
 ms.assetid: 023c976e-279e-489c-ada5-ae33144c6358
-title: 'Metodo IDxtCompositor:: get_Width (qedit. h)'
+title: Metodo IDxtCompositor::get_Width (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: d8f7b18e4cc02b28284f8ce680a7de04eaf8c9b5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b899d7e228770a6031d652ff9d0f2410399cd32c81b4f48ed4004415caf97459
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118154636"
 ---
-# <a name="idxtcompositorget_width-method"></a>Metodo IDxtCompositor:: Get \_ Width
+# <a name="idxtcompositorget_width-method"></a>Metodo IDxtCompositor::get \_ Width
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
@@ -45,26 +45,26 @@ HRESULT get_Width(
 
 <dl> <dt>
 
-*pval* \[ out, retval\]
+*pVal* \[ out, retval\]
 </dt> <dd>
 
-Riceve la larghezza, in pixel, del rettangolo di destinazione.
+Riceve la larghezza del rettangolo di destinazione, in pixel.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

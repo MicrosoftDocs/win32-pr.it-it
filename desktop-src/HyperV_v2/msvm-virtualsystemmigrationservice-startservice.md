@@ -1,5 +1,5 @@
 ---
-description: 'Metodo StartService della classe Msvm_VirtualSystemMigrationService: avvia il servizio.'
+description: 'Metodo StartService della classe Msvm_VirtualSystemMigrationService : avvia il servizio.'
 ms.assetid: 2803cc6f-64ea-4502-ae5a-075bdd3f8c96
 title: Metodo StartService della classe Msvm_VirtualSystemMigrationService
 ms.topic: reference
@@ -43,7 +43,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)

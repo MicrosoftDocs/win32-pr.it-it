@@ -2,7 +2,7 @@
 description: La classe CIM \_ SoftwareElementVersionCheck espone i metodi seguenti.
 ms.assetid: BEAB9093-6188-4BA7-8654-DBEA709E0E5F
 ms.tgt_platform: multiple
-title: CIM_SoftwareElementVersionCheck metodi
+title: metodi CIM_SoftwareElementVersionCheck
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 2680caf60a0312b0caeebfaaf7bb693a365cd256a97b9486641b89e193c9d810

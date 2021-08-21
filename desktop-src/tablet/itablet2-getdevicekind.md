@@ -72,7 +72,7 @@ Questa interfaccia e questo metodo sono stati introdotti in Windows Vista.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
@@ -85,7 +85,7 @@ Questa interfaccia e questo metodo sono stati introdotti in Windows Vista.
 [**Interfaccia ITablet2**](itablet2.md)
 </dt> <dt>
 
-[**Enumerazione TABLET \_ DEVICE \_ KIND**](tablet-device-kind.md)
+[**Enumerazione \_ TABLET DEVICE \_ KIND**](tablet-device-kind.md)
 </dt> <dt>
 
 [**Interfaccia ITablet**](itablet.md)

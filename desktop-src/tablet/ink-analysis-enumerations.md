@@ -1,5 +1,5 @@
 ---
-description: Questa sezione contiene informazioni sulle enumerazioni usate nell'analisi dell'input penna.
+description: Questa sezione contiene informazioni sulle enumerazioni usate nell'analisi input penna.
 ms.assetid: 536f743d-bfff-4607-a92c-f29e49881b76
 title: Enumerazioni di analisi input penna
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118452108"
 ---
 # <a name="ink-analysis-enumerations"></a>Enumerazioni di analisi input penna
 
-Questa sezione contiene informazioni sulle enumerazioni usate nell'analisi dell'input penna.
+Questa sezione contiene informazioni sulle enumerazioni usate nell'analisi input penna.
 
 ## <a name="enumerations"></a>Enumerazioni
 
@@ -23,11 +23,11 @@ Questa sezione contiene informazioni sulle enumerazioni usate nell'analisi dell'
 |----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Analysismodes**](analysismodes.md)                   | Specifica il modo in cui [**IInkAnalyzer esegue**](iinkanalyzer.md) l'analisi dell'input penna.<br/>                                                  |
 | [**AnalysisWarningCode**](analysiswarningcode.md)       | Specifica il set di avvisi disponibili che possono verificarsi durante l'analisi dell'input penna.<br/>                                                    |
-| [**ConfirmationType**](confirmationtype.md)             | Specifica il tipo di conferma che può verificarsi in un [**oggetto IContextNode.**](icontextnode.md)<br/>                           |
+| [**Tipo di conferma**](confirmationtype.md)             | Specifica il tipo di conferma che può verificarsi in un [**oggetto IContextNode.**](icontextnode.md)<br/>                           |
 | [**ContextLinkDirection**](contextlinkdirection.md)     | Specifica i tipi di [**oggetti IContextLink.**](icontextlink.md)<br/>                                                           |
 | [**RecognitionConfidence**](recognitionconfidence.md)   | Specifica il livello di attendibilità di [**IInkAnalyzer**](iinkanalyzer.md) nell'accuratezza del risultato del riconoscimento.<br/> |
-| [**RecognizerCapabilities**](recognizercapabilities.md) | Specifica gli attributi di [**un oggetto IInkAnalysisRecognizer.**](iinkanalysisrecognizer.md)<br/>                                       |
-| [**StrokeType**](stroketype.md)                         | Specifica in che modo [**IInkAnalyzer**](iinkanalyzer.md) deve classificare un tratto durante l'analisi.<br/>                               |
+| [**RecognizerCapabilities**](recognizercapabilities.md) | Specifica gli attributi di un [**oggetto IInkAnalysisRecognizer.**](iinkanalysisrecognizer.md)<br/>                                       |
+| [**Tipo di tratto**](stroketype.md)                         | Specifica il modo in cui [**IInkAnalyzer**](iinkanalyzer.md) deve classificare un tratto durante l'analisi.<br/>                               |
 
 
 
@@ -37,7 +37,7 @@ Questa sezione contiene informazioni sulle enumerazioni usate nell'analisi dell'
 
 <dl> <dt>
 
-[Informazioni di riferimento per l'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

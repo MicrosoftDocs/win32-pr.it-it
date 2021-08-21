@@ -1,6 +1,6 @@
 ---
-description: Pannello di controllo elementi sono DLL o file eseguibili (.exe) che consentono agli utenti di configurare l'ambiente di Windows. È in genere possibile accedervi facendo clic su un'icona nel Pannello di controllo.
-title: Implementazione Pannello di controllo elementi
+description: Pannello di controllo elementi sono DLL o file eseguibili (.exe) che consentono agli utenti di configurare l'ambiente di Windows. È in genere possibile accedervi facendo clic su un'icona nella Pannello di controllo.
+title: Implementazione di Pannello di controllo elementi
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 2e61cbc0-fbb5-4680-8123-f8ffdcf98210
@@ -16,9 +16,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118460620"
 ---
-# <a name="implementing-control-panel-items"></a>Implementazione Pannello di controllo elementi
+# <a name="implementing-control-panel-items"></a>Implementazione di Pannello di controllo elementi
 
-Pannello di controllo elementi sono DLL o file eseguibili (.exe) che consentono agli utenti di configurare l'ambiente di Windows. È in genere possibile accedervi facendo clic su un'icona nel Pannello di controllo.
+Pannello di controllo elementi sono DLL o file eseguibili (.exe) che consentono agli utenti di configurare l'ambiente di Windows. È in genere possibile accedervi facendo clic su un'icona nella Pannello di controllo.
 
 Questa sezione descrive Pannello di controllo elementi e spiega come crearli e registrarli in modo che vengano visualizzati in modo appropriato nel Pannello di controllo. Per Windows Vista, sono incluse informazioni che illustrano come aggiungere collegamenti attività visualizzati sotto l'elemento Pannello di controllo e nei risultati Pannello di controllo ricerca.
 
@@ -31,7 +31,7 @@ Questa sezione descrive Pannello di controllo elementi e spiega come crearli e r
 -   [Esecuzione di Pannello di controllo elementi](executing-control-panel-items.md)
 -   [Estensione degli elementi Pannello di controllo sistema](extending-system-control-panel-items.md)
 -   [Assegnazione di Pannello di controllo categorie](assigning-control-panel-categories.md)
--   [Creazione di collegamenti di attività ricercabili per un Pannello di controllo elemento](creating-searchable-task-links.md)
+-   [Creazione di collegamenti di attività ricercabili per un Pannello di controllo ricerca](creating-searchable-task-links.md)
 -   [Accesso al Pannello di controllo in Cassaforte predefinita](accessing-the-cp-in-safe-mode-under-vista.md)
 -   [Nomi canonici di Pannello di controllo elementi](controlpanel-canonical-names.md)
 

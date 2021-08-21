@@ -5,22 +5,22 @@ ms.tgt_platform: multiple
 title: Proprietà di SWbemPrivilege
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2fe963afbcdbd5f16fba638418c714364c51f1f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1231ceda6aafb42f7388420ee4f647569bcf59b23a6447687f920e603a4f25e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118313496"
 ---
 # <a name="swbemprivilege-properties"></a>Proprietà di SWbemPrivilege
 
-L'oggetto [**SWbemPrivilege**](swbemprivilege.md) espone le proprietà seguenti.
+[**L'oggetto SWbemPrivilege**](swbemprivilege.md) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**DisplayName (proprietà)**](swbemprivilege-displayname.md)
+-   [**Proprietà DisplayName**](swbemprivilege-displayname.md)
 -   [**Proprietà Identificatore**](swbemprivilege-identifier.md)
--   [**IsEnabled (proprietà)**](swbemprivilege-isenabled.md)
+-   [**Proprietà IsEnabled**](swbemprivilege-isenabled.md)
 -   [**Proprietà Name**](swbemprivilege-name.md)
 
  

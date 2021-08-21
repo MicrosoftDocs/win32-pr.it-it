@@ -5,7 +5,7 @@ ms.assetid: 2ad37dd4-7d80-4697-9dbb-abb329a34ff7
 keywords:
 - Disabilitare l'Ripristino configurazione di sistema
 - Disabilitare il Ripristino configurazione di sistema , classe SystemRestore
-- Classe SystemRestore Ripristino configurazione di sistema, metodo Disable
+- Metodo Disable Ripristino configurazione di sistema classe SystemRestore
 topic_type:
 - apiref
 api_name:
@@ -45,7 +45,7 @@ uint32 Disable(
 *Unità* \[ Pollici\]
 </dt> <dd>
 
-Unità da disabilitato. La stringa di unità deve essere nel formato "C: \\ ". Se questo parametro è l'unità di sistema o una stringa vuota (""), non viene monitorata alcuna unità.
+Unità da disabilitato. La stringa di unità deve essere nel formato \\ "C:". Se questo parametro è l'unità di sistema o una stringa vuota (""), non viene monitorata alcuna unità.
 
 </dd> </dl>
 
@@ -85,7 +85,7 @@ End If
 |-------------------------------------|-----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                         |
-| Spazio dei nomi<br/>                | Root \\ Default<br/>                                                          |
+| Spazio dei nomi<br/>                | Impostazione \\ predefinita radice<br/>                                                          |
 | MOF<br/>                      | <dl> <dt>Sr.mof</dt> </dl> |
 
 

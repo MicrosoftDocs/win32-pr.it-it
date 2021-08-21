@@ -1,7 +1,7 @@
 ---
 description: Rilascia un blocco condiviso.
 ms.assetid: c2e9eb68-aacb-4196-b09e-d2748efb7fd6
-title: 'Metodo CShareLockNH:: ShareUnlock'
+title: Metodo CShareLockNH::ShareUnlock
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Rwnh.dll
-ms.openlocfilehash: 80c4311f4bf66000440dac38da6300888a8e5d59
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2bf59b6e1aa0f6718cece105007a8ba502291c23868aca6ec55283dd7292f8b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162186"
 ---
-# <a name="csharelocknhshareunlock-method"></a>Metodo CShareLockNH:: ShareUnlock
+# <a name="csharelocknhshareunlock-method"></a>Metodo CShareLockNH::ShareUnlock
 
 Rilascia un blocco condiviso.
 
@@ -43,9 +43,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Ogni chiamata a [**ShareLock**](csharelocknh--sharelock.md) deve essere abbinata esattamente a una chiamata a **ShareUnlock**. Solo un thread che chiama correttamente **ShareLock** può chiamare **ShareUnlock**; in caso contrario, può verificarsi un deadlock.
+Ogni chiamata [**a ShareLock**](csharelocknh--sharelock.md) deve essere abbinata esattamente a una chiamata a **ShareUnlock.** Solo un thread che chiama **correttamente ShareLock** può chiamare **ShareUnlock**. in caso contrario, può verificarsi un deadlock.
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 
