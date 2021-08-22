@@ -33,7 +33,7 @@ ETW è incluso in Microsoft Windows 2000 e versioni successive. Per informazioni
 
 ## <a name="process-etw-traces-in-net-code"></a>Elaborare tracce ETW nel codice .NET
 
-È possibile usare [l'API TraceProcessing .NET](https://www.nuget.org/packages/Microsoft.Windows.EventTracing.Processing.All) per analizzare le tracce ETW per le applicazioni e altri componenti software. Questa API viene usata internamente in Microsoft per analizzare i dati ETW prodotti dal sistema di progettazione Windows e viene usata anche per alimentare diverse tabelle in [Windows analizzatore prestazioni](/windows-hardware/test/wpt/windows-performance-analyzer). Questa API è disponibile come pacchetto NuGet.
+È possibile usare [l'API TraceProcessing .NET](https://www.nuget.org/packages/Microsoft.Windows.EventTracing.Processing.All) per analizzare le tracce ETW per le applicazioni e altri componenti software. Questa API viene usata internamente in Microsoft per analizzare i dati ETW prodotti dal sistema di progettazione Windows e viene usata anche per alimentare diverse tabelle in [Windows analizzatore prestazioni](/windows-hardware/test/wpt/windows-performance-analyzer). Questa API è disponibile come NuGet pacchetto.
 
 Per altre informazioni, vedi [questo articolo](/windows/apps/trace-processing/overview).
 

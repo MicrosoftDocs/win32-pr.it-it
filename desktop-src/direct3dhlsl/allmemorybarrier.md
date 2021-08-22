@@ -40,17 +40,17 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Una barriera di memoria garantisce il completamento delle operazioni di memoria in sospeso. I thread vengono sincronizzati in corrispondenza delle barriere GroupSync. Ciò può bloccare un thread o thread se sono in corso operazioni di memoria.
+Una barriera di memoria garantisce il completamento delle operazioni di memoria in sospeso. I thread vengono sincronizzati in base alle barriere di GroupSync. Ciò può bloccare uno o più thread se sono in corso operazioni di memoria.
 
 ### <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli di shader seguenti.
+Questa funzione è supportata nei modelli shader seguenti.
 
 
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Modello shader 5 e](d3d11-graphics-reference-sm5.md) modelli di shader superiori | sì       |
+| [Modello shader 5 e](d3d11-graphics-reference-sm5.md) modelli shader superiori | sì       |
 
 
 

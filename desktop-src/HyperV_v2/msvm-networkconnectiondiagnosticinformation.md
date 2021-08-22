@@ -1,7 +1,7 @@
 ---
 description: Fornisce informazioni sulla connettività di rete per una macchina virtuale.
 ms.assetid: 59503c1b-203b-46ec-8a65-f21a746f170f
-title: Classe Msvm_NetworkConnectionDiagnosticInformation
+title: Msvm_NetworkConnectionDiagnosticInformation classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 416392702e5bc06e54fe5a23b6784b87e98b7027
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d12109c562dff014a9864146f8ba27f4863d2249644708d550b308dbd5744a9b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521021"
 ---
-# <a name="msvm_networkconnectiondiagnosticinformation-class"></a>\_Classe MSVM NetworkConnectionDiagnosticInformation
+# <a name="msvm_networkconnectiondiagnosticinformation-class"></a>Classe Msvm \_ NetworkConnectionDiagnosticInformation
 
 Fornisce informazioni sulla connettività di rete per una macchina virtuale.
 
@@ -39,26 +39,26 @@ class Msvm_NetworkConnectionDiagnosticInformation
 
 ## <a name="members"></a>Members
 
-La **classe \_ NetworkConnectionDiagnosticInformation di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ NetworkConnectionDiagnosticInformation** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ NetworkConnectionDiagnosticInformation di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ NetworkConnectionDiagnosticInformation** ha queste proprietà.
 
 <dl> <dt>
 
 **RoundTripTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Round trip tempo per la richiesta di ping.
+Ora round trip per la richiesta ping.
 
 </dd> </dl>
 
@@ -68,10 +68,10 @@ Round trip tempo per la richiesta di ping.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                                               |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                                               |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

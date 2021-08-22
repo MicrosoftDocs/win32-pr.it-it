@@ -1,9 +1,9 @@
 ---
 title: WM_NCRBUTTONDBLCLK messaggio (Winuser.h)
-description: Pubblicato quando l'utente fa doppio clic sul pulsante destro del mouse mentre il cursore si trova all'interno dell'area non client di una finestra. Questo messaggio viene inviato alla finestra che contiene il cursore. Se una finestra ha acquisito il mouse, questo messaggio non viene pubblicato.
+description: Inviato quando l'utente fa doppio clic sul pulsante destro del mouse mentre il cursore si trova all'interno dell'area non client di una finestra. Questo messaggio viene inviato alla finestra che contiene il cursore. Se il mouse è stato acquisito da una finestra, questo messaggio non viene inviato.
 ms.assetid: 20d62b05-07de-49da-b160-29fa1f5067fa
 keywords:
-- WM_NCRBUTTONDBLCLK messaggio Input tastiera e mouse
+- WM_NCRBUTTONDBLCLK messaggio Input da tastiera e mouse
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.locfileid: "119666301"
 ---
 # <a name="wm_ncrbuttondblclk-message"></a>Messaggio \_ WM NCRBUTTONDBLCLK
 
-Pubblicato quando l'utente fa doppio clic sul pulsante destro del mouse mentre il cursore si trova all'interno dell'area non client di una finestra. Questo messaggio viene inviato alla finestra che contiene il cursore. Se una finestra ha acquisito il mouse, questo messaggio non viene pubblicato.
+Inviato quando l'utente fa doppio clic sul pulsante destro del mouse mentre il cursore si trova all'interno dell'area non client di una finestra. Questo messaggio viene inviato alla finestra che contiene il cursore. Se il mouse è stato acquisito da una finestra, questo messaggio non viene inviato.
 
-Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
+Una finestra riceve questo messaggio tramite la [**relativa funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -41,14 +41,14 @@ Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.
 *wParam* 
 </dt> <dd>
 
-Valore dell'hit test restituito dalla [**funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) come risultato dell'elaborazione del [**messaggio WM \_ NCHITTEST.**](wm-nchittest.md) Per un elenco dei valori di hit test, vedere **WM \_ NCHITTEST**.
+Valore dell'hit test restituito [**dalla funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) in seguito all'elaborazione del [**messaggio WM \_ NCHITTEST.**](wm-nchittest.md) Per un elenco di valori di hit test, vedere **WM \_ NCHITTEST.**
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Struttura [**POINTS**](/previous-versions//dd162808(v=vs.85)) che contiene le coordinate x e y del cursore. Le coordinate sono relative all'angolo superiore sinistro dello schermo.
+Struttura [**POINTS**](/previous-versions//dd162808(v=vs.85)) contenente le coordinate x e y del cursore. Le coordinate sono relative all'angolo superiore sinistro dello schermo.
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 Una finestra non deve avere lo stile **\_ CS DBLCLKS** per ricevere **messaggi WM \_ NCRBUTTONDBLCLK.**
 
-Il sistema genera un messaggio **WM \_ NCRBUTTONDBLCLK** quando l'utente preme, rilascia e preme di nuovo il pulsante destro del mouse entro il limite di tempo del doppio clic del sistema. Facendo doppio clic con il pulsante destro del mouse vengono effettivamente generati quattro messaggi: [**WM \_ NCRBUTTONDOWN,**](wm-ncrbuttondown.md) [**WM \_ NCRBUTTONUP,**](wm-ncrbuttonup.md) **WM \_ NCRBUTTONDBLCLK** e **WM \_ NCRBUTTONUP.**
+Il sistema genera un messaggio **WM \_ NCRBUTTONDBLCLK** quando l'utente preme, rilascia e di nuovo preme il pulsante destro del mouse entro il limite di tempo del doppio clic del sistema. Facendo doppio clic con il pulsante destro del mouse vengono effettivamente generati quattro messaggi: [**WM \_ NCRBUTTONDOWN**](wm-ncrbuttondown.md), [**WM \_ NCRBUTTONUP**](wm-ncrbuttonup.md), **WM \_ NCRBUTTONDBLCLK** e **WM \_ NCRBUTTONUP.**
 
 È anche possibile usare le macro [**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) e [**GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) per estrarre i valori delle coordinate x e y da *lParam*.
 
@@ -77,7 +77,7 @@ yPos = GET_Y_LPARAM(lParam);
 
  
 
-Se è appropriato, il sistema invia il [**messaggio \_ SYSCOMMAND WM**](/windows/desktop/menurc/wm-syscommand) alla finestra.
+Se è appropriato, il sistema invia il messaggio [**\_ SYSCOMMAND WM**](/windows/desktop/menurc/wm-syscommand) alla finestra.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -128,7 +128,7 @@ Se è appropriato, il sistema invia il [**messaggio \_ SYSCOMMAND WM**](/windows
 **Altre risorse**
 </dt> <dt>
 
-[**MAKEPOINT**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
+[**PUNTI DI APPLICAZIONE**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
 [**Punti**](/previous-versions//dd162808(v=vs.85))

@@ -1,35 +1,35 @@
 ---
-title: Che cosa esegue una query veloce
+title: Elementi che rendono una query veloce
 description: Questo argomento elenca i metodi di programmazione preferiti da usare durante l'esecuzione di query su una directory.
 ms.assetid: d96f330f-3c57-4edc-9fd2-970f908b54c2
 ms.tgt_platform: multiple
 keywords:
-- Che cosa fa una query ADSI rapida
-- query ADSI, che cosa esegue una query veloce
+- Elementi che rendono ad ADSI una query veloce
+- query ADSI , che cosa rende una query veloce
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 883db1e9de7b7b7a1179c814d6f66f774685083e
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 134d391c728d543c407ee770081e2ced96afbba86d205462e814d89f74e82a57
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103872958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589841"
 ---
-# <a name="what-makes-a-fast-query"></a>Che cosa esegue una query veloce?
+# <a name="what-makes-a-fast-query"></a>Che cosa rende una query veloce?
 
-Quando si esegue una query, tenere presenti i seguenti concetti di miglioramento delle prestazioni:
+Quando si esegue una query, considerare i concetti seguenti relativi al miglioramento delle prestazioni:
 
--   Se possibile, filtrare solo sugli attributi indicizzati. Usare gli attributi di indice che si prevede genereranno il minor numero di riscontri. Per ulteriori informazioni e per un elenco completo degli attributi indicizzati per Windows, vedere [Active Directory schema](/windows/desktop/ADSchema/active-directory-schema).
--   Eseguire la ricerca in **objectCategory** anziché in **objectClass** perché **objectClass** non è una proprietà indicizzata.
--   Tenere presente i riferimenti. Se gli attributi sono elencati come GC replicati, provare a eseguire ricerche nel catalogo globale.
--   Evitare la ricerca di testo al centro e alla fine di una stringa. Ad esempio, "CN = \* Hille \* " o "CN = \* Larouse".
--   Si supponga che una ricerca del sottoalbero restituisca un set di risultati di grandi dimensioni. Usare il paging quando si eseguono ricerche di sottoalbero. Il server sarà quindi in grado di trasmettere un set di risultati di grandi dimensioni in blocchi riducendo le risorse di memoria sul lato server. Questo semplifica l'utilizzo della rete e riduce la necessità di inviare blocchi di dati molto grandi sulla rete.
--   Definire correttamente l'ambito delle ricerche in modo da non recuperare più di quanto necessario.
--   Eseguire una ricerca complessa su più attributi, perché si tratta di una riduzione delle prestazioni più elevata rispetto all'esecuzione di più ricerche. Una ricerca di un oggetto che legge due attributi è più efficiente di due ricerche per lo stesso oggetto, ognuno dei quali restituisce un attributo.
--   Per leggere l'attributo con un numero elevato di valori, usare i limiti di intervallo per ridurre al minimo le dimensioni di ricerca in modo da poter leggere alcune migliaia di membri alla volta. Per ulteriori informazioni su come specificare i limiti dell'intervallo di attributi, vedere [recupero di intervalli di attributi](attribute-range-retrieval.md).
--   Eseguire l'associazione a un oggetto per il resto della sessione. Non associare e annullare il binding per ogni chiamata. Se si utilizza ADO o OLE DB, non creare molti oggetti connessione.
--   Leggere il rootDSE una volta e ricordarne il contenuto per il resto della sessione.
+-   Se possibile, filtrare solo in base agli attributi indicizzati. Usare gli attributi dell'indice previsti genereranno il numero più limitato di riscontri. Per altre informazioni e un elenco completo degli attributi indicizzati per Windows, vedere [Schema di Active Directory](/windows/desktop/ADSchema/active-directory-schema).
+-   Cercare **objectCategory anziché** **objectClass** perché **objectClass** non è una proprietà indicizzata.
+-   Tenere presenti le segnalazioni. Provare a cercare nel catalogo globale se gli attributi sono elencati come replicati gc.
+-   Evitare di cercare testo al centro e alla fine di una stringa. Ad esempio, "cn= \* collere \* " o "cn= \* larouse".
+-   Si supponga che una ricerca nel sottoalbero restituirà un set di risultati di grandi dimensioni. Usare il paging quando si eseguono ricerche nel sottoalbero. Il server sarà quindi in grado di trasmettere un set di risultati di grandi dimensioni in blocchi riducendo le risorse di memoria sul lato server. In questo modo si riduce in modo efficace l'utilizzo della rete e si riduce la necessità di inviare blocchi di dati estremamente grandi in rete.
+-   Impostare correttamente l'ambito delle ricerche in modo da non recuperare più del necessario.
+-   Eseguire una ricerca complessa su più attributi, poiché le prestazioni sono inferiori rispetto all'esecuzione di più ricerche. Una ricerca di un oggetto che legge due attributi è più efficiente di due ricerche dello stesso oggetto, ognuna delle quali restituisce un attributo.
+-   Per la lettura dell'attributo con un numero elevato di valori, usare i limiti di intervallo per ridurre al minimo le dimensioni della ricerca in modo da poter leggere alcune migliaia di membri alla volta. Per altre informazioni sulla specifica dei limiti dell'intervallo di attributi, vedere [Recupero di intervalli di attributi](attribute-range-retrieval.md).
+-   L'associazione a un oggetto contiene l'handle di associazione per il resto della sessione. Non associare e annullare l'associazione per ogni chiamata. Se si usa ADO o OLE DB, non creare molti oggetti connessione.
+-   Leggere una sola volta rootDSE e ricordarne il contenuto per il resto della sessione.
 
- 
+ 
 
- 
+ 

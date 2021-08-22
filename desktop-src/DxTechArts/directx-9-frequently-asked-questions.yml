@@ -23,7 +23,7 @@ sections:
       Assolutamente sì. La tecnologia x64 è ampiamente disponibile sul mercato. La maggior parte delle nuove CPU vendute negli ultimi anni e quasi tutte le linee di processore in fase di sviluppo da AMD e Intel sono compatibili con x64. Windows XP Professional x64 Edition ha introdotto la tecnologia di abilitazione del sistema operativo per x64 rilasciata nell'aprile del 2005. Poiché le edizioni x64 richiedono una nuova generazione di driver nativi a 64 bit, questa prima versione è stata limitata alla distribuzione OEM.
 
 
-      Con Windows Vista, i clienti possono scegliere le edizioni a 32 o 64 bit quando acquistano computer basati su Windows e le licenze per Windows Vista sono valide sia per le edizioni a 32 che a 64 bit del sistema operativo. Inoltre, molti driver a 64 bit sono disponibili nella scatola e i produttori di dispositivi sono necessari per fornire driver nativi a 32 e 64 bit come parte del programma di certificazione Windows.
+      Con Windows Vista, i clienti possono scegliere le edizioni a 32 o 64 bit quando acquistano computer basati su Windows e le licenze per Windows Vista sono valide sia per le edizioni a 32 che a 64 bit del sistema operativo. Inoltre, sono disponibili molti driver a 64 bit e i produttori di dispositivi sono necessari per fornire driver nativi a 32 bit e a 64 bit come parte del programma di certificazione Windows.
 
 
       Tutti questi fattori aumentano notevolmente le distribuzioni delle edizioni a 64 bit di Windows. Quando i nuovi computer iniziano a spedire con più di 2 GB di RAM fisica, l'incentivo a usare un sistema operativo a 32 bit diminuisce notevolmente a favore delle edizioni a 64 bit. La tecnologia a 64 bit supporta completamente il codice nativo a 32 bit, anche se sono necessarie implementazioni native a 64 bit per sfruttare al meglio il nuovo spazio di memoria a 64 bit. Ogni applicazione a 32 bit deve avere compatibilità a 64 bit come requisito di spedizione minimo e soddisfare tale requisito è un requisito di base per la compatibilità Windows Vista. Le incompatibilità in genere derivano dall'uso di codice a 16 bit progettato per il sistema operativo Windows 3.1 o dall'installazione di driver non forniti in entrambi i formati nativi a 32 bit e a 64 bit.
@@ -36,14 +36,14 @@ sections:
       Non più per due motivi: prestazioni e set di funzionalità.
 
 
-      Se la velocità minima della CPU richiesta per il gioco è di 1,2 GHz o superiore (cosa più comune per i titoli con prestazioni elevate), la maggior parte dei computer idonei verrà eseguita Windows XP. Quando i computer con velocità della CPU superiori a 1,2 GHz venivano venduti, Windows XP è stato installato come sistema operativo predefinito da quasi tutti i produttori. Ciò significa che in Windows XP sono presenti molte funzionalità che gli sviluppatori di giochi di oggi dovrebbero sfruttare, tra cui:
+      Se la velocità minima della CPU richiesta per il gioco è di 1,2 GHz o superiore (che è più comune per i titoli ad alte prestazioni), la maggior parte dei computer idonei esegue Windows XP. Quando i computer con velocità della CPU superiori a 1,2 GHz venivano venduti, Windows XP è stato installato come sistema operativo predefinito da quasi tutti i produttori. Ciò significa che in Windows XP sono presenti molte funzionalità che gli sviluppatori di giochi di oggi dovrebbero sfruttare, tra cui:
 
 
-      -   Miglioramento del multitasking, che consente di ottenere un'esperienza migliore e più fluida per video, audio e giochi.
+      -   Miglioramento del multitasking, che consente un'esperienza migliore e più fluida per video, audio e giochi.
 
       -   Modello di driver video più stabile, che consente un debug più semplice, un gioco più fluido e prestazioni migliori.
 
-      -   Configurazione più semplice per la rete, che consente un accesso più semplice ai giochi multi-giocatore.
+      -   Configurazione più semplice per la rete, che consente un accesso più semplice ai giochi per più giocatori.
 
       -   Per impostazione predefinita, il supporto per i trasferimenti DMA dai dischi rigidi consente di ottenere applicazioni di caricamento più fluide e veloci.
 
@@ -57,11 +57,11 @@ sections:
 
       -   Gestione della memoria migliorata, che migliora la stabilità e la sicurezza.
 
-      -   Miglioramento del file system NTFS, che è più resistente agli errori e offre prestazioni migliori con le funzionalità di sicurezza.
+      -   Miglioramento delle file system NTFS, che è più resistente agli errori e offre prestazioni migliori con le funzionalità di sicurezza.
   - question: >
       Gli sviluppatori di giochi devono ancora pubblicare giochi Windows 2000?
     answer: >
-      Non più. Oltre ai motivi elencati in Gli sviluppatori di giochi devono ancora pubblicare giochi per **Windows 95, Windows 98** o Windows ME? , Windows 2000 non dispone di queste funzionalità:
+      Non più. Oltre ai motivi elencati in Gli sviluppatori di giochi devono ancora pubblicare giochi per **Windows 95, Windows 98** o Windows ME? , Windows 2000 non ha queste funzionalità:
 
 
       -   Windows XP supporta funzionalità avanzate del processore, ad esempio Hyper-Threading, Multi-Core e x64.
@@ -95,7 +95,7 @@ sections:
       -   Windows Vista Ultimate
 
 
-      Home Basic e Home Premium sono versioni incentrate sui consumer, con funzionalità come Family Safety (in precedenza noto come Controllo genitori) e Home Premium include Media Center. Business e Enterprise sono edizioni incentrate sull'azienda, con funzionalità come l'aggiunta a un dominio e Desktop remoto/Servizi terminal. L'edizione Ultimate combina tutte le funzionalità delle edizioni consumer e aziendali in un'unica versione. Tutte le edizioni sono disponibili sia nelle edizioni a 32 bit (x86) che a 64 bit (x64) e gli utenti sono liberi di usare lo stesso identificatore di prodotto per entrambe le piattaforme.
+      Home Basic e Home Premium sono versioni incentrate sul consumer, con funzionalità come Family Safety (in precedenza noto come Controllo genitori) e Home Premium include Media Center. Business e Enterprise sono edizioni incentrate sull'azienda, con funzionalità come l'aggiunta a un dominio e Desktop remoto/Servizi terminal. L'edizione Ultimate combina tutte le funzionalità delle edizioni consumer e aziendali in un'unica versione. Tutte le edizioni sono disponibili sia nelle edizioni a 32 bit (x86) che a 64 bit (x64) e gli utenti sono liberi di usare lo stesso identificatore di prodotto per entrambe le piattaforme.
 
 
       La tecnologia alla base delle varie edizioni è identica e hanno tutti la stessa versione del runtime DirectX e di altri componenti. Tuttavia, le edizioni hanno alcune piccole differenze rispetto ai giochi:
@@ -108,13 +108,13 @@ sections:
       -   Family Safety e le classificazioni dei giochi non vengono visualizzate o hanno alcuna influenza sul comportamento di Business o Enterprise e vengono disabilitate in Ultimate quando un dominio viene aggiunto.
 
 
-      Le impostazioni di Controllo account utente hanno le stesse impostazioni predefinite in tutte le edizioni, ma possono essere sostituite da impostazioni Criteri di gruppo per il dominio in Business, Enterprise e Ultimate. Ad esempio, l'impostazione del criterio Controllo account utente: Il comportamento della richiesta di elevazione dei privilegi per gli utenti standard può essere impostato su Nega automaticamente le richieste di elevazione dei privilegi in molte impostazioni aziendali per migliorare la sicurezza e molti utenti in tali ambienti saranno sempre in esecuzione come utenti standard senza la possibilità di scegliere di eseguire come amministratore. Qualsiasi programma (ad esempio un programma di installazione) che richiede diritti amministrativi, a causa del rilevamento dell'installazione legacy o di un manifesto che specifica il livello di esecuzione richiesto come "requireAdministrator", avrà sempre esito negativo in tali situazioni. Altre impostazioni dei criteri, ad esempio Controllo account utente: solo i file eseguibili con privilegi elevati firmati e convalidati possono impedire il funzionamento del programma di installazione se non si firma il file eseguibile usando Authenticode.
+      Le impostazioni di Controllo dell'account utente hanno le stesse impostazioni predefinite in tutte le edizioni, ma possono essere sostituite dalle impostazioni Criteri di gruppo per il dominio in Business, Enterprise e Ultimate. Ad esempio, l'impostazione del criterio Controllo account utente: Il comportamento della richiesta di elevazione dei privilegi per gli utenti standard può essere impostato su Nega automaticamente le richieste di elevazione dei privilegi in molte impostazioni aziendali per migliorare la sicurezza e molti utenti in tali ambienti saranno sempre in esecuzione come utenti standard senza la possibilità di scegliere di eseguire come amministratore. Qualsiasi programma (ad esempio un programma di installazione) che richiede diritti amministrativi, a causa del rilevamento dell'installazione legacy o di un manifesto che specifica il livello di esecuzione richiesto come "requireAdministrator", avrà sempre esito negativo in tali situazioni. Altre impostazioni dei criteri, ad esempio Controllo account utente: solo i file eseguibili con privilegi elevati firmati e convalidati possono impedire il funzionamento del programma di installazione se non si firma il file eseguibile usando Authenticode.
 
 
       Questi tipi di modifiche ai criteri possono essere applicati a qualsiasi edizione di Windows Vista, ma sono più probabili nei computer aggiunti a un dominio.
   - question: "Quali sono le differenze tra le diverse edizioni di Windows 7? In che modo influiscono sull'applicazione DirectX? \n"
     answer: >
-      La maggior parte Windows 7 utenti avrà probabilmente una delle due edizioni seguenti: Windows 7 Home Premium, per gli utenti Windows 7 Professional, per utenti aziendali e sviluppatori. Per le grandi aziende, è disponibile l'edizione Windows 7 Enterprise multilicenza, che include tutte le Windows 7 funzionalità; Windows 7 Ultimate è l'equivalente al dettaglio di tale edizione.
+      La maggior parte Windows 7 utenti avrà probabilmente una delle due edizioni seguenti: Windows 7 Home Premium, per gli utenti Windows 7 Professional, per gli utenti aziendali e gli sviluppatori. Per le grandi aziende, è disponibile l'edizione Windows 7 Enterprise multilicenza, che include tutte le Windows 7 funzionalità; Windows 7 Ultimate è l'equivalente al dettaglio di tale edizione.
 
 
       Windows 7 Starter L'edizione è disponibile a livello mondiale per gli OEM e dovrebbe essere distribuita principalmente con netbook, computer notebook a basso consumo. Windows 7 Home Basic è disponibile solo nei mercati emergenti.
@@ -148,52 +148,52 @@ sections:
       Per gli stessi motivi di cui si è fatto riferimento nella domanda precedente (**DirectX 10** sarà disponibile per Windows XP? ), Direct3D 11 e le API correlate non sono disponibili in Windows XP.
   - question: "Che cosa è successo DirectShow? Non è possibile trovarlo in DirectX SDK. \n"
     answer: >
-      DirectShow è stato rimosso da DirectX SDK a partire da aprile 2005. È possibile ottenere intestazioni, librerie, strumenti ed esempi per DirectShow in Windows Software Development Kit (noto in precedenza come Platform SDK). DirectSetup in DirectX SDK continua a supportare la ridistribuzione dei componenti di sistema di DirectShow e i componenti più recenti sono già installati nei sistemi operativi seguenti: Microsoft Windows XP Service Pack 2, Windows XP Professional x64 Edition, Windows Server 2003 Service Pack 1 e Windows Vista.
+      DirectShow stato rimosso da DirectX SDK a partire da aprile 2005. È possibile ottenere intestazioni, librerie, strumenti ed esempi per DirectShow in Windows Software Development Kit (in precedenza noto come Platform SDK). DirectSetup in DirectX SDK continua a supportare la ridistribuzione dei componenti di sistema di DirectShow e i componenti più recenti sono già installati nei sistemi operativi seguenti: Microsoft Windows XP Service Pack 2, Windows XP Professional x64 Edition, Windows Server 2003 Service Pack 1 e Windows Vista.
   - question: "Quali modifiche sono state apportate al runtime DirectX per Windows Vista? \n"
     answer: >
-      Le modifiche principali sono state apportate per supportare il nuovo WDDM. Per informazioni dettagliate sul nuovo modello di driver, sugli effetti su Direct3D 9 e sulle due nuove interfacce grafiche, Direct3D 9Ex e Direct3D 10, vedere API di grafica [in Windows](/windows/desktop/direct3darticles/graphics-apis-in-windows-vista). Le nuove API grafiche per Windows 7, ovvero Direct3D 11, Direct2D, DirectWrite, DXGI 1.1 e un aggiornamento di Direct3D 10.1, sono disponibili come aggiornamento per Windows Vista (vedere <https://go.microsoft.com/fwlink/p/?linkid=160189> ).
+      Le modifiche principali sono state apportate per supportare il nuovo WDDM. Per informazioni dettagliate sul nuovo modello di driver, sugli effetti su Direct3D 9 e sulle due nuove interfacce grafiche, Direct3D 9Ex e Direct3D 10, vedere Api grafiche [in Windows](/windows/desktop/direct3darticles/graphics-apis-in-windows-vista). Le nuove API grafiche per Windows 7, Direct3D 11, Direct2D, DirectWrite, DXGI 1.1 e direct3D 10.1 aggiornate, sono disponibili come aggiornamento per Windows Vista (vedere <https://go.microsoft.com/fwlink/p/?linkid=160189> ).
 
 
-      Windows Vista Service Pack 1 include una versione aggiornata del runtime DirectX. Questo aggiornamento estende il supporto di Windows Vista per includere Direct3D 10.1, esponendo nuove funzionalità hardware facoltative. Tutto l'hardware in grado di supportare Direct3D 10.1 supporta completamente anche tutte le funzionalità di Direct3D 10.
+      Windows Vista Service Pack 1 include una versione aggiornata del runtime DirectX. Questo aggiornamento estende il supporto di Windows Vista per includere Direct3D 10.1, esponendo nuove funzionalità hardware facoltative. Tutto l'hardware in grado di supportare Direct3D 10.1 supporta anche tutte le funzionalità di Direct3D 10.
 
 
-      DirectSound è stato aggiornato per esporre le funzionalità del nuovo stack di driver audio Windows Vista, che supporta i buffer software multicanale. L'API modalità mantenuta Direct3D è stata completamente rimossa da Windows Vista. È stata rimossa anche la voce DirectPlay, nonché l'helper NAT di DirectPlay e l'interfaccia utente del mapper di azioni di DirectInput. Il supporto per le interfacce DirectX 7 e DirectX 8 per Visual Basic 6.0 non è disponibile in Windows Vista.
+      DirectSound è stato aggiornato per esporre le funzionalità del nuovo stack di driver audio Windows Vista, che supporta i buffer software multicanale. L'API Direct3D Retained Mode è stata completamente rimossa da Windows Vista. Sono stati rimossi anche DirectPlay Voice, nonché l'helper NAT di DirectPlay e l'interfaccia utente del mapper delle azioni di DirectInput. Il supporto per le interfacce DirectX 7 e DirectX 8 per Visual Basic 6.0 non è disponibile in Windows Vista.
   - question: "Quali modifiche sono state apportate al runtime DirectX per Windows 7? \n"
     answer: >
-      Windows 7 include tutti i componenti di runtime DirectX disponibili in Windows Vista e aggiunge i livelli di funzionalità Direct3D 11, DXGI 1.1, 10Level9, il dispositivo software WARP10, Direct2D, DirectWrite e un aggiornamento a Direct3D 10.1 per supportare 10Level9 e WARP10. Per altre informazioni, [vedere API di grafica in Windows](/windows/desktop/direct3darticles/graphics-apis-in-windows-vista).
+      Windows 7 include tutti i componenti di runtime DirectX disponibili in Windows Vista e aggiunge Direct3D 11, DXGI 1.1, 10Level9, il dispositivo software WARP10, Direct2D, DirectWrite e un aggiornamento a Direct3D 10.1 per supportare 10Level9 e WARP10. Per altre informazioni, vedere [API grafiche in Windows](/windows/desktop/direct3darticles/graphics-apis-in-windows-vista).
 
 
-      Tutti gli altri componenti sono identici Windows Vista, con l'aggiunta del supporto nativo a 64 bit (x64) per l'API DirectMusic principale correlata a MIDI con timestamp. Il livello di prestazioni di DirectMusic rimane deprecato ed è disponibile solo per le applicazioni a 32 bit in Windows 7 per la compatibilità delle applicazioni. Si noti che il supporto nativo a 64 bit di DirectMusic non è disponibile in Windows Vista.
-  - question: "Come si fa a trovare un bug del driver? \n"
+      Tutti gli altri componenti sono identici Windows Vista, con l'aggiunta del supporto nativo a 64 bit (x64) per l'API DirectMusic principale correlata a MIDI con timestamp. Il livello di prestazioni di DirectMusic rimane deprecato ed è disponibile solo per le applicazioni a 32 bit in Windows 7 per la compatibilità delle applicazioni. Si noti che il supporto nativo a 64 bit di DirectMusic non è disponibile Windows Vista.
+  - question: "Si è trovato un bug del driver, cosa si fa? \n"
     answer: >
-      Assicurarsi prima di tutto di aver verificato i risultati con l'rasterizzazione dei riferimenti. Controllare quindi i risultati con la versione certificata WHQL più recente del driver IHVs. È possibile controllare lo stato WHQL a livello di codice usando il metodo GetAdapterIdentifier() sull'interfaccia IDirect3D9 passando il flag D3DENUM \_ WHQL \_ LEVEL.
+      Prima di tutto, assicurarsi di aver controllato i risultati con il rasterizzatore di riferimento. Controllare quindi i risultati con la versione certificata WHQL più recente del driver IHV. È possibile controllare lo stato WHQL a livello di codice usando il metodo GetAdapterIdentifier() nell'interfaccia IDirect3D9 passando il flag D3DENUM \_ WHQL \_ LEVEL.
   - question: "Perché vengono visualizzati così tanti messaggi di errore quando si prova a compilare gli esempi? \n"
     answer: >
-      È probabile che il percorso di inclusione non sia impostato correttamente. Molti compilatori, tra cui Microsoft Visual C++, includono una versione precedente dell'SDK, quindi se il percorso di inclusione cerca prima le directory di inclusione del compilatore standard, si otterrà una versione non corretta dei file di intestazione. Per risolvere questo problema, assicurarsi che il percorso di inclusione e i percorsi di libreria siano impostati per cercare prima i percorsi di inclusione e libreria di Microsoft DirectX. Vedere anche il file dxreadme.txt nell'SDK. Se si installa DirectX SDK e si usa Visual C++, il programma di installazione può facoltativamente configurare automaticamente i percorsi di inclusione.
-  - question: "Si verificano errori del linker relativi a più simboli o a simboli mancanti per gli identificatori univoci globali (GUID), cosa si fa? \n"
+      È probabile che il percorso di inclusione non sia impostato correttamente. Molti compilatori, tra cui Microsoft Visual C++, includono una versione precedente dell'SDK, quindi se il percorso di inclusione cerca prima le directory di inclusione del compilatore standard, si otterrà versioni non corrette dei file di intestazione. Per risolvere questo problema, assicurarsi che il percorso di inclusione e i percorsi di libreria siano impostati per cercare prima i percorsi di inclusione e libreria di Microsoft DirectX. Vedere anche il file dxreadme.txt nell'SDK. Se si installa DirectX SDK e si usa Visual C++, il programma di installazione può facoltativamente configurare i percorsi di inclusione.
+  - question: "Si verificano errori del linker relativi a simboli multipli o mancanti per GUID (Globally Unique Identifier), cosa si fa? \n"
     answer: >
-      I vari GUID utilizzati devono essere definiti una sola volta. La definizione per il GUID verrà inserita se si definisce il simbolo \# INITGUID prima di includere i file di intestazione DirectX. Pertanto, è necessario assicurarsi che ciò si verifichi solo per un'unità di compilazione. In alternativa a questo metodo, è possibile collegarsi alla libreria dxguid.lib, che contiene le definizioni per tutti i GUID DirectX. Se si usa questo metodo (scelta consigliata), non è mai necessario \# definire il simbolo INITGUID.
+      I vari GUID utilizzati devono essere definiti una sola volta. La definizione per il GUID verrà inserita se si definisce il simbolo \# INITGUID prima di includere i file di intestazione DirectX. Pertanto, è necessario assicurarsi che ciò si verifichi solo per un'unità di compilazione. Un'alternativa a questo metodo consiste nel collegarsi alla libreria dxguid.lib, che contiene le definizioni per tutti i GUID DirectX. Se si usa questo metodo (scelta consigliata), non è mai necessario \# definire il simbolo INITGUID.
   - question: "È possibile eseguire il cast di un puntatore a un'interfaccia DirectX a un numero di versione inferiore? \n"
     answer: >
-      No. Le interfacce DirectX sono interfacce COM. Ciò significa che non è necessario che le interfacce con numeri più elevati siano derivate da quelle con numerazione inferiore corrispondenti. Pertanto, l'unico modo sicuro per ottenere un'interfaccia diversa da un oggetto DirectX è usare il metodo QueryInterface dell'interfaccia. Questo metodo fa parte dell'interfaccia IUnknown standard, da cui devono derivare tutte le interfacce COM.
-  - question: "È possibile combinare l'uso di componenti DirectX 9 e componenti DirectX 8 o precedenti all'interno della stessa applicazione? \n"
+      No. Le interfacce DirectX sono interfacce COM. Ciò significa che non è necessario che le interfacce con numeri più elevati siano derivate da corrispondenti interfacce con numeri inferiori corrispondenti. Pertanto, l'unico modo sicuro per ottenere un'interfaccia diversa da un oggetto DirectX è usare il metodo QueryInterface dell'interfaccia. Questo metodo fa parte dell'interfaccia IUnknown standard, da cui devono derivare tutte le interfacce COM.
+  - question: "È possibile combinare l'uso di componenti DirectX 9 e DirectX 8 o versioni precedenti all'interno della stessa applicazione? \n"
     answer: >
-      È possibile combinare liberamente componenti diversi di una versione diversa. Ad esempio, è possibile usare DirectInput 8 con Direct3D 9 nella stessa applicazione. Tuttavia, in genere non è possibile combinare versioni diverse dello stesso componente all'interno della stessa applicazione. Ad esempio, non è possibile combinare DirectDraw 7 con Direct3D 9 ( poiché si tratta effettivamente dello stesso componente di DirectDraw è stato sommato in Direct3D a partire da DirectX 8). Esistono tuttavia eccezioni, ad esempio l'uso di Direct3D 9 e Direct3D 10 insieme nella stessa applicazione, che è consentito.
-  - question: "È possibile combinare l'uso di Direct3D 9 e Direct3D 10 all'interno della stessa applicazione? \n"
+      È possibile combinare liberamente diversi componenti di versione diversa. Ad esempio, è possibile usare DirectInput 8 con Direct3D 9 nella stessa applicazione. Tuttavia, in genere non è possibile combinare versioni diverse dello stesso componente all'interno della stessa applicazione. Ad esempio, non è possibile combinare DirectDraw 7 con Direct3D 9( poiché si tratta effettivamente dello stesso componente di DirectDraw che è stato sommato in Direct3D a partire da DirectX 8). Esistono tuttavia eccezioni, ad esempio l'uso di Direct3D 9 e Direct3D 10 insieme nella stessa applicazione, che è consentito.
+  - question: "È possibile combinare l'uso di Direct3D 9 e Direct3D 10 nella stessa applicazione? \n"
     answer: >
       Sì, è possibile usare queste versioni di Direct3D insieme nella stessa applicazione.
   - question: "Cosa significano i valori restituiti dai metodi Release o AddRef? \n"
     answer: >
-      Il valore restituito sarà il conteggio dei riferimenti corrente dell'oggetto . Tuttavia, la specifica COM indica che non è consigliabile fare affidamento su questo e che il valore è in genere disponibile solo a scopo di debug. I valori osservati potrebbero essere imprevisti perché vari altri oggetti di sistema potrebbero contenere riferimenti agli oggetti DirectX creati. Per questo motivo, è consigliabile non scrivere codice che chiama ripetutamente Release fino a quando il conteggio dei riferimenti non è zero, perché l'oggetto può essere liberato anche se un altro componente potrebbe ancora fare riferimento ad esso.
-  - question: "È importante in quale ordine vengono rilasciate le interfacce DirectX? \n"
+      Il valore restituito sarà il conteggio dei riferimenti corrente dell'oggetto . Tuttavia, la specifica COM indica che non è consigliabile basarsi su questo e che il valore è disponibile a livello generale solo a scopo di debug. I valori osservati potrebbero essere imprevisti perché vari altri oggetti di sistema potrebbero contenere riferimenti agli oggetti DirectX creati. Per questo motivo, non è consigliabile scrivere codice che chiama ripetutamente Release finché il conteggio dei riferimenti non è zero, perché l'oggetto può essere liberato anche se un altro componente potrebbe comunque fare riferimento a esso.
+  - question: "È importante in quale ordine rilasciare le interfacce DirectX? \n"
     answer: >
-      Non dovrebbe essere importante perché le interfacce COM vengono conteggiate come riferimenti. Esistono tuttavia alcuni bug noti con l'ordine di rilascio delle interfacce in alcune versioni di DirectX. Per motivi di sicurezza, è consigliabile rilasciare le interfacce in ordine inverso quando possibile.
-  - question: "Che cos'è un puntatore intelligente e è consigliabile usarlo? \n"
+      Non dovrebbe essere importante perché le interfacce COM vengono conteggiate come riferimenti. Esistono tuttavia alcuni bug noti con l'ordine di rilascio delle interfacce in alcune versioni di DirectX. Per motivi di sicurezza, è consigliabile rilasciare le interfacce in ordine di creazione inverso, quando possibile.
+  - question: "Che cos'è un puntatore intelligente e devo usarlo? \n"
     answer: >
-      Un puntatore intelligente è una classe modello C++ progettata per incapsulare la funzionalità del puntatore. In particolare, esistono classi di puntatori intelligenti standard progettate per incapsulare puntatori a interfaccia COM. Questi puntatori eseguono automaticamente QueryInterface anziché un cast e gestiscono AddRef e Release automaticamente. Se è consigliabile usarli è in gran parte una questione di assaggio. Se il codice contiene molte copie di puntatori a interfaccia, con più addref e versioni, i puntatori intelligenti possono probabilmente rendere il codice più pulito e meno ergoto di errori. In caso contrario, è possibile farlo senza di essi. Visual C++ include un puntatore intelligente Microsoft COM standard, definito nel file di intestazione "comdef.h" (cercare com \_ ptr \_ t nella Guida).
+      Un puntatore intelligente è una classe modello C++ progettata per incapsulare la funzionalità del puntatore. In particolare, esistono classi di puntatori intelligenti standard progettate per incapsulare puntatori a interfaccia COM. Questi puntatori eseguono automaticamente QueryInterface anziché un cast e gestiscono automaticamente AddRef e Release. Se è consigliabile usarli è in gran parte una questione di gusto. Se il codice contiene molte copie di puntatori a interfaccia, con più AddRef e versioni, i puntatori intelligenti possono probabilmente rendere il codice più pulito e meno scenoso per gli errori. In caso contrario, è possibile fare a meno di essi. Visual C++ include un puntatore intelligente COM standard, definito nel file di intestazione "comdef.h" (cercare com \_ ptr \_ t nella Guida).
   - question: "Problemi durante il debug dell'applicazione DirectX, suggerimenti? \n"
     answer: >
-      Il problema più comune con il debug di applicazioni DirectX è il tentativo di eseguire il debug mentre una superficie DirectDraw è bloccata. Questa situazione può causare un "blocco Win16" nei sistemi Microsoft Windows 9x, impedendo il disegno della finestra del debugger. La specifica del flag D3DLOCK NOSYSLOCK quando si blocca la superficie può in genere \_ eliminare questo problema. Windows 2000 non subisce questo problema. Quando si sviluppa un'applicazione, è utile eseguire con la versione di debug del runtime DirectX (selezionata quando si installa l'SDK), che esegue la convalida dei parametri e restituisce messaggi utili all'output del debugger.
+      Il problema più comune con il debug di applicazioni DirectX è il tentativo di eseguire il debug mentre una superficie DirectDraw è bloccata. Questa situazione può causare un "blocco Win16" nei sistemi Microsoft Windows 9x, impedendo il disegno della finestra del debugger. La specifica del flag D3DLOCK NOSYSLOCK quando si blocca la superficie può in genere \_ eliminare questo problema. Windows 2000 non si verifica questo problema. Quando si sviluppa un'applicazione, è utile eseguire con la versione di debug del runtime DirectX (selezionata quando si installa l'SDK), che esegue la convalida dei parametri e restituisce messaggi utili all'output del debugger.
   - question: "Qual è il modo corretto per controllare i codici restituiti? \n"
     answer: >
       Usare le macro SUCCEEDED e FAILED. I metodi DirectX possono restituire più codici di esito positivo e negativo, quindi è semplice:
@@ -207,24 +207,24 @@ sections:
 
 
       o un test simile non sarà sempre sufficiente.
-  - question: "Ricerca per categorie disattivare ALT+TAB e altre attività? \n"
+  - question: "Ricerca per categorie disabilitare ALT+TAB e il cambio di altre attività? \n"
     answer: >
-      Non è così. I giochi devono essere in grado di gestire correttamente il cambio di attività, perché molte cose lo causano: ALT+TAB, connessioni Desktop remoto, Cambio rapido utente, limiti di utilizzo dei controlli genitori e molti altri eventi.
+      Non è così. I giochi devono essere in grado di gestire correttamente il passaggio delle attività, in quanto molte cose la causano: ALT+TAB, connessioni desktop remoto, cambio rapido utente, limiti di utilizzo di Controllo genitori e molti altri eventi.
 
 
-      Allo stesso tempo, due origini comuni di cambio di attività accidentale nei giochi con schemi di controllo incentrati sulla tastiera sono la pressione del tasto logo Windows e l'attivazione della funzionalità di accessibilità Tasti permanenti con il tasto MAIUSC. Per risolvere questi casi disabilitando la funzionalità, vedere le tecniche descritte in Disabilitazione dei [tasti di scelta rapida nei giochi.](/windows/desktop/DxTechArts/disabling-shortcut-keys-in-games)
-  - question: "Esiste un libro consigliato che spiega COM? \n"
+      Allo stesso tempo, due origini comuni di attivazione accidentale di attività sui giochi con schemi di controllo incentrati sulla tastiera sono la pressione del tasto logo Windows e l'attivazione della funzionalità di accessibilità Tasti permanenti con il tasto MAIUSC. Per risolvere questi casi disabilitando la funzionalità, vedere le tecniche descritte in [Disabilitazione dei tasti di scelta rapida in Giochi](/windows/desktop/DxTechArts/disabling-shortcut-keys-in-games).
+  - question: "È disponibile un libro consigliato che spiega COM? \n"
     answer: >
-      *Inside COM* di DaleDyson, pubblicato da Microsoft Press, è un'eccellente introduzione a COM. Per un'analisi più dettagliata di COM, è consigliabile anche il libro *Essential COM* di Don Box, pubblicato da Longman.
+      *Inside COM* di Dale Rogerson, pubblicato da Microsoft Press, è un'ottima introduzione a COM. Per un'analisi più dettagliata di COM, è consigliabile anche il libro *Essential COM* di Don Box, pubblicato da Longman.
   - question: "Informazioni sul codice gestito \n"
     answer: >
-      Il codice gestito è un codice con esecuzione gestita dal .NET Framework Common Language Runtime (CLR). Si riferisce a un contratto di cooperazione tra il codice in esecuzione in modo nativo e il runtime. Questo contratto specifica che in qualsiasi punto di esecuzione il runtime può arrestare un'esecuzione della CPU e recuperare informazioni specifiche dell'indirizzo dell'istruzione della CPU corrente. Le informazioni che devono essere in grado di eseguire query riguardano in genere lo stato di runtime, ad esempio il contenuto del registro o della memoria dello stack.
+      Il codice gestito è codice con esecuzione gestita dall'.NET Framework Common Language Runtime (CLR). Si riferisce a un contratto di collaborazione tra l'esecuzione nativa del codice e il runtime. Questo contratto specifica che in qualsiasi punto di esecuzione, il runtime può arrestare una CPU in esecuzione e recuperare informazioni specifiche per l'indirizzo di istruzione della CPU corrente. Le informazioni che devono essere in grado di eseguire query in genere riguardano lo stato di runtime, ad esempio il contenuto della memoria del registro o dello stack.
 
 
-      Prima dell'esecuzione del codice, il codice IL viene compilato in codice eseguibile nativo. Poiché questa compilazione viene eseguita dall'ambiente di esecuzione gestito (o, più correttamente, da un compilatore in grado di riconoscere il runtime che sa come impostare come destinazione l'ambiente di esecuzione gestito), l'ambiente di esecuzione gestito può garantire le attività del codice. Può inserire trap e hook di Garbage Collection appropriati, gestione delle eccezioni, type safety, limiti di matrice e controllo dell'indice e così via. Un compilatore di questo tipo, ad esempio, si assicura di creare il layout degli stack frame e di tutti gli elementi in modo che il Garbage Collector possa essere eseguito in background in un thread separato, continuando a eseguire lo stack di chiamate attivo, trovando tutte le radici e cercando tutti gli oggetti attivi. Inoltre, poiché il linguaggio il linguaggio è una nozione di type safety, il motore di esecuzione manterrà la garanzia che l'sicurezza dei tipi elimina un'intera classe di errori di programmazione che spesso causano problemi di sicurezza.
+      Prima dell'esecuzione del codice, il codice IL viene compilato in codice eseguibile nativo. Poiché questa compilazione viene eseguita dall'ambiente di esecuzione gestito (o, più correttamente, da un compilatore in grado di riconoscere il runtime che sa come impostare come destinazione l'ambiente di esecuzione gestito), l'ambiente di esecuzione gestito può garantire l'esecuzione del codice. Può inserire trap e hook di Garbage Collection appropriati, gestione delle eccezioni, type safety, limiti di matrice e controllo degli indici e così via. Ad esempio, un compilatore di questo tipo si assicura di impostare il layout degli stack frame e di tutto ciò che è giusto in modo che il Garbage Collector possa essere eseguito in background in un thread separato, continuando a percorrere lo stack di chiamate attivo, trovando tutte le radici, cercando tutti gli oggetti attivi. Inoltre, poiché il linguaggio il cui linguaggio è un concetto di type safety, il motore di esecuzione manterrà la garanzia dell'sicurezza dei tipi eliminando un'intera classe di errori di programmazione che spesso causano problemi di sicurezza.
 
 
-      Al contrario del mondo non gestito, i file eseguibili non gestiti sono fondamentalmente un'immagine binaria, codice x86, caricata in memoria. Il contatore del programma viene inserito e questo è l'ultimo che il sistema operativo conosce. Esistono protezioni per la gestione della memoria e l'I/O delle porte e così via, ma il sistema non conosce effettivamente le attività dell'applicazione. Pertanto, non può garantire ciò che accade quando viene eseguita l'applicazione.
+      Al contrario, questo è il mondo non gestito: i file eseguibili non gestiti sono fondamentalmente un'immagine binaria, codice x86, caricato in memoria. Il contatore del programma viene inserito e questo è l'ultimo che il sistema operativo conosce. Esistono protezioni per la gestione della memoria e l'I/O delle porte e così via, ma il sistema non sa effettivamente cosa sta facendo l'applicazione. Pertanto, non può garantire ciò che accade quando l'applicazione viene eseguita.
   - question: "Quali libri sono disponibili sulla programmazione Windows generale? \n"
     answer: >
       Molti. Tuttavia, i due elementi altamente consigliati sono:
@@ -233,7 +233,7 @@ sections:
       -   Programmazione Windows di Charles Petzold (Microsoft Press)
 
       -   Programming Applications for Windows di Jeffrey Richter (Microsoft Press)
-  - question: "Ricerca per categorie eseguire il debug usando i Windows di simboli? \n"
+  - question: "Ricerca per categorie eseguire il debug usando Windows file di simboli? \n"
     answer: >
       Microsoft pubblica simboli striped per tutte le DLL di sistema (più alcune altre). Per accedervi, aggiungere quanto segue al percorso dei simboli nelle impostazioni del progetto all'interno Visual Studio:
 
@@ -341,26 +341,26 @@ sections:
   - question: "Ricerca per categorie enumerare i dispositivi di visualizzazione in un sistema con più monitor? \n"
     answer: >
       L'enumerazione può essere eseguita tramite una semplice iterazione da parte dell'applicazione usando i metodi dell'interfaccia IDirect3D9. Chiamare GetAdapterCount per determinare il numero di schede di visualizzazione nel sistema. Chiamare GetAdapterMonitor per determinare a quale monitor fisico è connessa una scheda (questo metodo restituisce un HMONITOR, che è quindi possibile usare nell'API Win32 GetMonitorInfo per determinare le informazioni sul monitoraggio fisico). Determinare le caratteristiche di una particolare scheda di visualizzazione o creare un dispositivo Direct3D su tale scheda è semplice come passare il numero di scheda appropriato al posto di D3DADAPTER DEFAULT quando si chiama \_ GetDeviceCaps, CreateDevice o altri metodi.
-  - question: "Che cosa è successo al bumpmapping delle funzioni fisse in D3D9? \n"
-    answer: "A causa di Direct3D 9, la convalida è stata più restrittiva sulle schede che potevano supportare solo > 2 trame simultanee. Alcune schede precedenti hanno solo 3 fasi di trama disponibili quando si usa un'operazione di modulazione alfa specifica. L'uso più comune per cui gli utenti usano le 3 fasi è il bumpmapping con rilievo e si può comunque eseguire questa operazione con D3D9.\n\nIl campo altezza deve essere archiviato nel canale alfa e viene usato per modulare il contributo delle luci, ad esempio:\n\n``` syntax\n// Stage 0 is the base texture, with the height map in the alpha channel\nm_pd3dDevice->SetTexture(0, m_pEmbossTexture );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_TEXCOORDINDEX, 0 );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_COLOROP,   D3DTOP_MODULATE );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_COLORARG1, D3DTA_TEXTURE );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_COLORARG2, D3DTA_DIFFUSE );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP,   D3DTOP_SELECTARG1 );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAARG1, D3DTA_TEXTURE );\nif( m_bShowEmbossMethod )\n{\n // Stage 1 passes through the RGB channels (SELECTARG2 = CURRENT), and \n // does a signed add with the inverted alpha channel. \n // The texture coords associated with Stage 1 are the shifted ones, so \n // the result is:\n //    (height - shifted_height) * tex.RGB * diffuse.RGB\n   m_pd3dDevice->SetTexture( 1, m_pEmbossTexture );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_TEXCOORDINDEX, 1 );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_COLOROP, D3DTOP_SELECTARG2 );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_COLORARG1, D3DTA_TEXTURE );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_COLORARG2, D3DTA_CURRENT );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_ALPHAOP, D3DTOP_ADDSIGNED );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_ALPHAARG1, D3DTA_TEXTURE|D3DTA_COMPLEMENT );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_ALPHAARG2, D3DTA_CURRENT );\n\n   // Set up the alpha blender to multiply the alpha channel \n   // (monochrome emboss) with the src color (lighted texture)\n   m_pd3dDevice->SetRenderState( D3DRS_ALPHABLENDENABLE, TRUE );\n   m_pd3dDevice->SetRenderState( D3DRS_SRCBLEND,  D3DBLEND_SRCALPHA );\n   m_pd3dDevice->SetRenderState( D3DRS_DESTBLEND, D3DBLEND_ZERO );\n}\n```\n\nQuesto esempio, insieme ad altri esempi precedenti, non viene più fornito nella versione corrente dell'SDK e non verrà fornito nelle versioni future dell'SDK.\n\n### <a name=\"geometry-vertex-processing\"></a>Elaborazione geometry (vertice)\n"
-  - question: "I flussi di vertici mi confondono come funzionano? \n"
+  - question: "Cosa è successo a Fixed Function Bumpmapping in D3D9? \n"
+    answer: "A oggi Direct3D 9 è stata ottimizzata la convalida sulle schede che potevano supportare solo > 2 trame simultanee. Alcune schede meno recenti hanno solo 3 fasi di trama disponibili quando si usa un'operazione di modulazione alfa specifica. L'uso più comune per cui gli utenti usano le 3 fasi è il bumpmapping con rilievo ed è comunque possibile farlo con D3D9.\n\nIl campo height deve essere archiviato nel canale alfa e viene usato per modificare il contributo delle luci, ad esempio:\n\n``` syntax\n// Stage 0 is the base texture, with the height map in the alpha channel\nm_pd3dDevice->SetTexture(0, m_pEmbossTexture );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_TEXCOORDINDEX, 0 );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_COLOROP,   D3DTOP_MODULATE );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_COLORARG1, D3DTA_TEXTURE );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_COLORARG2, D3DTA_DIFFUSE );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP,   D3DTOP_SELECTARG1 );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAARG1, D3DTA_TEXTURE );\nif( m_bShowEmbossMethod )\n{\n // Stage 1 passes through the RGB channels (SELECTARG2 = CURRENT), and \n // does a signed add with the inverted alpha channel. \n // The texture coords associated with Stage 1 are the shifted ones, so \n // the result is:\n //    (height - shifted_height) * tex.RGB * diffuse.RGB\n   m_pd3dDevice->SetTexture( 1, m_pEmbossTexture );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_TEXCOORDINDEX, 1 );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_COLOROP, D3DTOP_SELECTARG2 );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_COLORARG1, D3DTA_TEXTURE );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_COLORARG2, D3DTA_CURRENT );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_ALPHAOP, D3DTOP_ADDSIGNED );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_ALPHAARG1, D3DTA_TEXTURE|D3DTA_COMPLEMENT );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_ALPHAARG2, D3DTA_CURRENT );\n\n   // Set up the alpha blender to multiply the alpha channel \n   // (monochrome emboss) with the src color (lighted texture)\n   m_pd3dDevice->SetRenderState( D3DRS_ALPHABLENDENABLE, TRUE );\n   m_pd3dDevice->SetRenderState( D3DRS_SRCBLEND,  D3DBLEND_SRCALPHA );\n   m_pd3dDevice->SetRenderState( D3DRS_DESTBLEND, D3DBLEND_ZERO );\n}\n```\n\nQuesto esempio, insieme ad altri esempi precedenti, non è più disponibile nella versione corrente dell'SDK e non verrà fornito nelle versioni future dell'SDK.\n\n### <a name=\"geometry-vertex-processing\"></a>Elaborazione geometria (vertice)\n"
+  - question: "I flussi dei vertici mi confondono come funzionano? \n"
     answer: >
-      Direct3D assembla ogni vertice inserito nella parte di elaborazione della pipeline da uno o più flussi di vertici. La presenza di un solo flusso di vertici corrisponde al modello precedente a DirectX 8, in cui i vertici provengono da una singola origine. Con DirectX 8, i diversi componenti dei vertici possono derivare da origini diverse. Ad esempio, un buffer dei vertici può contenere posizioni e normali, mentre un secondo ha valori di colore e coordinate della trama.
+      Direct3D assembla ogni vertice inserito nella parte di elaborazione della pipeline da uno o più flussi di vertici. Avere un solo flusso dei vertici corrisponde al modello precedente a DirectX 8, in cui i vertici provengono da una singola origine. Con DirectX 8, diversi componenti dei vertici possono derivare da origini diverse. Ad esempio, un buffer dei vertici può contenere posizioni e normali, mentre un secondo ha mantenuto i valori di colore e le coordinate della trama.
   - question: "Che cos'è un vertex shader? \n"
     answer: >
-      Un vertex shader è una procedura per l'elaborazione di un singolo vertice. Viene definito usando un linguaggio semplice simile ad assembly assemblato dalla libreria di utilità D3DX in un flusso di token accettato da Direct3D. Il vertex shader accetta come input un singolo vertice e un set di valori costanti. restituisce una posizione vertice (nello spazio di ritaglio) e facoltativamente un set di colori e coordinate di trama, che vengono usati nella rasterizzazione. Si noti che quando si ha un vertex shader personalizzato, ai componenti dei vertici non viene più applicata alcuna semantica da Direct3D e i vertici sono semplicemente dati arbitrari interpretati dal vertex shader creato.
-  - question: "Un vertex shader esegue una divisione o un ritaglio prospettica? \n"
+      Un vertex shader è una procedura per l'elaborazione di un singolo vertice. Viene definito usando un semplice linguaggio simile ad assembly assemblato dalla libreria di utilità D3DX in un flusso di token accettato da Direct3D. Il vertex shader accetta come input un singolo vertice e un set di valori costanti. restituisce una posizione del vertice (nello spazio di ritaglio) e, facoltativamente, un set di colori e coordinate di trama, usati nella rasterizzazione. Si noti che quando si dispone di un vertex shader personalizzato, ai componenti dei vertici non viene più applicata alcuna semantica da Direct3D e i vertici sono semplicemente dati arbitrari interpretati dal vertex shader creato.
+  - question: "Un vertex shader esegue la divisione o il ritaglio prospettica? \n"
     answer: >
-      No. Il vertex shader restituisce una coordinata omogenea nello spazio di ritaglio per la posizione del vertice trasformato. La divisione e il ritaglio prospettica vengono eseguiti automaticamente dopo lo shader.
-  - question: "È possibile generare una geometria con un vertex shader? \n"
+      No. Il vertex shader restituisce una coordinata omogenea nello spazio di ritaglio per la posizione del vertice trasformato. La divisione e il ritaglio della prospettiva vengono eseguiti automaticamente dopo lo shader.
+  - question: "È possibile generare la geometria con un vertex shader? \n"
     answer: >
-      Un vertex shader non può creare o eliminare vertici; opera su un singolo vertice alla volta, prendendo un vertice non elaborato come input e generando un singolo vertice elaborato. Può quindi essere usato per modificare la geometria esistente (applicando deformazioni o eseguendo operazioni di skinning), ma non può effettivamente generare una nuova geometria di per se stessa.
-  - question: "È possibile applicare un vertex shader personalizzato ai risultati della pipeline geometry a funzione fissa (o viceversa)? \n"
+      Un vertex shader non può creare o eliminare i vertici; opera su un singolo vertice alla volta, prendendo un vertice non elaborato come input e generando un singolo vertice elaborato. Può quindi essere usato per modificare la geometria esistente (applicando le formazioni o eseguendo operazioni di interfaccia), ma non può effettivamente generare una nuova geometria di per se.
+  - question: "È possibile applicare un vertex shader personalizzato ai risultati della pipeline di geometria a funzione fissa (o viceversa)? \n"
     answer: >
-      No. È necessario scegliere uno o l'altro. Se si usa un vertex shader personalizzato, si è responsabili dell'esecuzione dell'intera trasformazione dei vertici.
+      No. È necessario scegliere uno o l'altro. Se si usa un vertex shader personalizzato, si è responsabili dell'esecuzione dell'intera trasformazione del vertice.
   - question: "È possibile usare un vertex shader personalizzato se l'hardware non lo supporta? \n"
     answer: >
-      Sì. Il motore di elaborazione dei vertici software Direct3D supporta completamente i vertex shader personalizzati con un livello di prestazioni sorprendentemente elevato.
+      Sì. Il motore di elaborazione dei vertici software Direct3D supporta completamente vertex shader personalizzati con un livello di prestazioni sorprendentemente elevato.
   - question: "Ricerca per categorie determinare se l'hardware supporta il vertex shader personalizzato? \n"
     answer: >
       I dispositivi in grado di supportare vertex shader nell'hardware devono compilare il campo D3DCAPS9::VertexShaderVersion per indicare il livello di versione del vertex shader supportato. Qualsiasi dispositivo che dichiara di supportare un determinato livello di vertex shader deve supportare tutti i vertex shader legali che soddisfano la specifica per tale livello o inferiore.
@@ -369,45 +369,45 @@ sections:
       I dispositivi che supportano i vertex shader 1.0 sono necessari per supportare almeno 96 registri costanti. I dispositivi possono supportare più di questo numero minimo e possono segnalare questo problema tramite il campo D3DCAPS9::MaxVertexShaderConst.
   - question: "È possibile condividere i dati di posizione tra vertici con coordinate di trama diverse? \n"
     answer: >
-      L'esempio comune di questa situazione è un cubo in cui si vuole usare una trama diversa per ogni viso. Sfortunatamente la risposta è no, non è attualmente possibile indicizzare i componenti dei vertici in modo indipendente. Anche con più flussi di vertici, tutti i flussi vengono indicizzati insieme.
+      Il solito esempio di questa situazione è un cubo in cui si vuole usare una trama diversa per ogni viso. Purtroppo la risposta è no, attualmente non è possibile indicizzare i componenti dei vertici in modo indipendente. Anche con più flussi di vertici, tutti i flussi vengono indicizzati insieme.
   - question: "Quando si invia un elenco indicizzato di primitive, Direct3D elabora tutti i vertici nel buffer o solo quelli indicizzati? \n"
     answer: >
-      Quando si usa la pipeline di geometria software, Direct3D innanzitutto trasforma tutti i vertici nell'intervallo inviato, anziché trasformarli "su richiesta" quando vengono indicizzati. Per i dati densamente imballati, ovvero in cui viene usata la maggior parte dei vertici, questa operazione è più efficiente, in particolare quando sono disponibili istruzioni SIMD. Se i dati sono scarsamente imballati, ovvero molti vertici non vengono usati, è consigliabile riorganizzare i dati per evitare troppe trasformazioni ridondanti. Quando si usa l'accelerazione della geometria hardware, i vertici vengono in genere trasformati su richiesta in base alle esigenze.
+      Quando si usa la pipeline di geometria software, Direct3D prima trasforma tutti i vertici nell'intervallo inviato, invece di trasformarli "su richiesta" quando vengono indicizzati. Per i dati ad alta densità (ovvero, in cui viene usata la maggior parte dei vertici), questo è più efficiente, in particolare quando sono disponibili istruzioni SIMD. Se i dati sono sparse,ovvero non vengono usati molti vertici, è consigliabile riorganizzare i dati per evitare un numero troppo grande di trasformazioni ridondanti. Quando si usa l'accelerazione geometrica hardware, i vertici vengono in genere trasformati su richiesta in base alle esigenze.
   - question: "Che cos'è un index buffer? \n"
     answer: >
       Un index buffer è esattamente analogo a un vertex buffer, ma contiene invece indici da usare nelle chiamate DrawIndexedPrimitive. È consigliabile usare i buffer di indice anziché la memoria allocata dall'applicazione non elaborata quando possibile, per gli stessi motivi dei vertex buffer.
-  - question: "Si noti che gli indici a 32 bit sono un tipo supportato. È possibile usarli in tutti i dispositivi? \n"
+  - question: "Si noti che gli indici a 32 bit sono un tipo supportato. è possibile usarli in tutti i dispositivi? \n"
     answer: >
-      No. È necessario controllare il campo D3DCAPS9::MaxVertexIndex per determinare il valore di indice massimo supportato dal dispositivo. Questo valore deve essere maggiore di 2 alla sedicesima potenza -1 (0xffff) per consentire il supporto dei buffer di indice di tipo D3DFMT \_ INDEX32. Si noti inoltre che alcuni dispositivi possono supportare indici a 32 bit, ma supportano un valore di indice massimo minore di 2 alla 32a potenza -1 (0xffffffff); in questo caso l'applicazione deve rispettare il limite segnalato dal dispositivo.
+      No. È necessario controllare il campo D3DCAPS9::MaxVertexIndex per determinare il valore di indice massimo supportato dal dispositivo. Questo valore deve essere maggiore di 2 alla sedicesima potenza -1 (0xffff) perché i buffer di indice di tipo D3DFMT \_ INDEX32 siano supportati. Si noti anche che alcuni dispositivi possono supportare indici a 32 bit, ma supportano un valore di indice massimo minore di 2 alla 32a potenza -1 (0xffffffff); in questo caso l'applicazione deve rispettare il limite segnalato dal dispositivo.
   - question: "L'elaborazione dei vertici S/W supporta 64 bit? \n"
     answer: >
-      È disponibile una pipeline di vertici s/w ottimizzata per x64, ma non esiste per IA64.
+      Esiste una pipeline dei vertici s/w ottimizzata per x64, ma non esiste per IA64.
 
 
       ### <a name="performance-tuning"></a>Ottimizzazione delle prestazioni
   - question: "Come è possibile migliorare le prestazioni dell'applicazione Direct3D? \n"
     answer: >
-      Di seguito sono riportate le aree chiave da esaminare durante l'ottimizzazione delle prestazioni:
+      Di seguito sono riportate le aree principali da esaminare durante l'ottimizzazione delle prestazioni:
   - question: "Dimensioni dei batch \n"
     answer: >
-      Direct3D è ottimizzato per grandi batch di primitive. Più poligoni possono essere inviati in una singola chiamata, meglio è. Una buona regola generale è mirare alla media di 1000 vertici per ogni chiamata primitiva. Al di sotto di questo livello probabilmente non si hanno prestazioni ottimali, oltre a questo e si stanno riducendo i resi e i potenziali conflitti con considerazioni sulla concorrenza (vedere di seguito).
+      Direct3D è ottimizzato per batch di primitivi di grandi dimensioni. Maggiore è il numero di poligoni che è possibile inviare in una singola chiamata, meglio è. Una buona regola generale è mirare alla media di 1000 vertici per ogni chiamata primitiva. Al di sotto di questo livello probabilmente non si stanno ottenendo prestazioni ottimali, oltre a questo e si stanno riducendo i risultati e i potenziali conflitti con le considerazioni sulla concorrenza (vedere di seguito).
   - question: "Modifiche stato \n"
-    answer: "La modifica dello stato di rendering può essere un'operazione costosa, in particolare quando si modifica la trama. Per questo motivo, è importante ridurre il più possibile il numero di modifiche dello stato apportate per frame. Provare anche a ridurre al minimo le modifiche di vertici o index buffer.\n\n> [!Note]  \n> A causa di DirectX 8, il costo della modifica del vertex buffer non è più così costoso come con le versioni precedenti, ma è comunque consigliabile evitare le modifiche al buffer dei vertici, laddove possibile.\n\n \n"
+    answer: "La modifica dello stato di rendering può essere un'operazione costosa, in particolare quando si modifica la trama. Per questo motivo, è importante ridurre il più possibile il numero di modifiche di stato apportate per fotogramma. Provare anche a ridurre al minimo le modifiche di vertici o index buffer.\n\n> [!Note]  \n> A oggi di DirectX 8, il costo della modifica del buffer dei vertici non è più così costoso come con le versioni precedenti, ma è comunque consigliabile evitare le modifiche al buffer dei vertici laddove possibile.\n\n \n"
   - question: >
       Concorrenza
     answer: >
-      Se è possibile disporre di eseguire il rendering contemporaneamente ad altre elaborazioni, sarà possibile sfruttare appieno le prestazioni del sistema. Questo obiettivo può essere in conflitto con l'obiettivo di ridurre le modifiche dello stato di rendering. È necessario trovare un equilibrio tra l'invio in batch per ridurre le modifiche dello stato e il push anticipato dei dati al driver per ottenere la concorrenza. L'uso di più buffer dei vertici in modalità round robin può essere utile per la concorrenza.
+      Se è possibile disporre per eseguire il rendering contemporaneamente ad altre elaborazioni, si sfruttano appieno le prestazioni del sistema. Questo obiettivo può essere in conflitto con l'obiettivo di ridurre le modifiche dello stato di rendering. È necessario trovare un equilibrio tra l'invio in batch per ridurre le modifiche di stato e il push anticipato dei dati al driver per ottenere la concorrenza. L'uso di più buffer dei vertici in modalità round robin può essere utile per la concorrenza.
   - question: "Caricamenti di trame \n"
     answer: >
-      Il caricamento di trame nel dispositivo usa larghezza di banda e causa una concorrenza della larghezza di banda con i dati dei vertici. È quindi importante non eseguire il commit della memoria delle trame, che forza lo schema di memorizzazione nella cache a caricare quantità eccessive di trame per ogni frame.
+      Il caricamento di trame nel dispositivo consuma larghezza di banda e provoca una concorrenza della larghezza di banda con i dati dei vertici. È quindi importante non eseguire il commit della memoria delle trame, forzando così lo schema di memorizzazione nella cache a caricare quantità eccessive di trame per ogni frame.
   - question: "Vertex buffer e index buffer \n"
     answer: >
-      È consigliabile usare sempre buffer di vertici e indici, anziché blocchi semplici di memoria allocata dall'applicazione. Come minimo, la semantica di blocco per i buffer vertice e indice può evitare un'operazione di copia ridondante. Con alcuni driver, il vertice o index buffer può essere inserito in una memoria più ottimale (ad esempio in memoria video o AGP) per l'accesso da parte dell'hardware.
+      È consigliabile usare sempre buffer di vertici e indici, anziché semplici blocchi di memoria allocata dall'applicazione. Come minimo, la semantica di blocco per i buffer dei vertici e degli indici può evitare un'operazione di copia ridondante. Con alcuni driver, il vertice o index buffer può essere inserito in una memoria più ottimale (ad esempio nella memoria video o AGP) per l'accesso da parte dell'hardware.
   - question: "Blocchi macro di stato \n"
-    answer: "Queste sono state introdotte in DirectX 7.0. Forniscono un meccanismo per registrare una serie di modifiche dello stato (incluse le modifiche di illuminazione, materiale e matrice) in una macro, che può quindi essere riprodotta da una singola chiamata. Ciò comporta due vantaggi:\n\n-   È possibile ridurre il sovraccarico delle chiamate effettuando una chiamata anziché molte.\n-   Un driver compatibile può pre-analizzare e precompilare le modifiche dello stato, rendendo molto più veloce l'invio all'hardware grafico.\n\nLe modifiche di stato possono comunque essere costose, ma l'uso di macro di stato può contribuire a ridurre almeno una parte del costo. Usare un solo dispositivo Direct3D. Se è necessario eseguire il rendering in più destinazioni, usare SetRenderTarget. Se si crea un'applicazione in finestra con più finestre 3D, usare l'API CreateAdditionalSwapChain. Il runtime è ottimizzato per un singolo dispositivo e l'uso di più dispositivi ha una notevole penalità per la velocità.\n\n \n"
+    answer: "Questi sono stati introdotti in DirectX 7.0. Forniscono un meccanismo per registrare una serie di modifiche di stato (incluse le modifiche di illuminazione, materiale e matrice) in una macro, che può quindi essere riprodotta da una singola chiamata. Ciò comporta due vantaggi:\n\n-   È possibile ridurre il sovraccarico delle chiamate effettuando una chiamata anziché molte.\n-   Un driver compatibile può pre-analizzare e precompilare le modifiche di stato, rendendo molto più veloce l'invio all'hardware grafico.\n\nLe modifiche di stato possono comunque essere costose, ma l'uso di macro di stato può contribuire a ridurre almeno una parte del costo. Usare un solo dispositivo Direct3D. Se è necessario eseguire il rendering in più destinazioni, usare SetRenderTarget. Se si sta creando un'applicazione finestra con più finestre 3D, usare l'API CreateAdditionalSwapChain. Il runtime è ottimizzato per un singolo dispositivo e l'uso di più dispositivi richiede una notevole velocità.\n\n \n"
   - question: "Quali tipi primitivi (strisce, ventole, elenchi e così via) è consigliabile usare? \n"
     answer: >
-      Molte mesh incontrate nei vertici delle caratteristiche dei dati reali condivisi da più poligoni. Per ottimizzare le prestazioni, è consigliabile ridurre la duplicazione nei vertici trasformati e inviati attraverso il bus al dispositivo di rendering. È chiaro che l'uso di elenchi triangoli semplici non consente la condivisione dei vertici, rendendolo il metodo meno ottimale. La scelta è quindi tra l'uso di strisce e ventole, che implicano una relazione di connettività specifica tra i poligoni e l'uso di elenchi indicizzati. Dove i dati rientrano naturalmente in strisce e ventole, si tratta della scelta più appropriata, poiché riducono al minimo i dati inviati al driver. Tuttavia, la scomposizione delle mesh in strisce e ventole spesso comporta un numero elevato di parti separate, implicando un numero elevato di chiamate DrawPrimitive. Per questo motivo, il metodo più efficiente è in genere usare una singola chiamata DrawIndexedPrimitive con un elenco di triangoli. Un ulteriore vantaggio dell'uso di un elenco indicizzato è che è possibile ottenere un vantaggio anche quando i triangoli consecutivi condividono un solo vertice. In breve, se i dati rientrano naturalmente in strisce o ventole di grandi dimensioni, usare strisce o ventole; in caso contrario, usare elenchi indicizzati.
+      Molte mesh incontrate in vertici di caratteristiche dei dati reali condivisi da più poligoni. Per ottimizzare le prestazioni, è consigliabile ridurre la duplicazione nei vertici trasformati e inviati attraverso il bus al dispositivo di rendering. È chiaro che l'uso di semplici elenchi di triangoli non consente la condivisione dei vertici, rendendolo il metodo meno ottimale. La scelta è quindi tra l'uso di strisce e ventole, che implicano una relazione di connettività specifica tra i poligoni e l'uso di elenchi indicizzati. Se i dati rientrano naturalmente in strisce e ventole, si tratta della scelta più appropriata, perché riducono al minimo i dati inviati al driver. Tuttavia, la scomposizione delle mesh in strisce e ventole spesso comporta un numero elevato di parti separate, implicando un numero elevato di chiamate DrawPrimitive. Per questo motivo, il metodo più efficiente è in genere usare una singola chiamata DrawIndexedPrimitive con un elenco di triangoli. Un altro vantaggio dell'uso di un elenco indicizzato è che è possibile ottenere un vantaggio anche quando i triangoli consecutivi condividono un solo vertice. In breve, se i dati rientrano naturalmente in strisce o ventole di grandi dimensioni, usare strisce o ventole; in caso contrario, usare elenchi indicizzati.
   - question: "Come si determina la memoria totale della trama di una scheda, esclusa la memoria AGP? \n"
     answer: >
       [**IDirect3DDevice9::GetAvailableTextureMem**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getavailabletexturemem) restituisce la memoria totale disponibile, incluso AGP. L'allocazione di risorse in base al presupposto della quantità di memoria video disponibile non è un'ottima idea. Ad esempio, cosa succede se la scheda è in esecuzione in un'architettura di memoria unificata (UMA) o è in grado di comprimere le trame? Potrebbe essere disponibile più spazio di quanto si pensasse. È consigliabile creare risorse e verificare la presenza di errori di "memoria insufficiente", quindi ridimensionare nuovamente le trame. Ad esempio, è possibile rimuovere i livelli mip principali delle trame.
@@ -454,7 +454,7 @@ sections:
       Le funzioni del caricatore di file di immagine D3DX supportano file BMP, TGA, JPG, DIB, PPM e DDS.
   - question: "Le funzioni di rendering del testo in D3DX non sembrano funzionare, cosa si sta facendo? \n"
     answer: >
-      Un errore comune quando si usano le funzioni ID3DXFont::D rawText è specificare un componente alfa zero per il parametro color. il che ha come risultato un testo completamente trasparente (ovvero invisibile). Per il testo completamente opaco, assicurarsi che il componente alfa del parametro color sia completamente saturato (255).
+      Un errore comune quando si usano le funzioni ID3DXFont::D rawText è specificare un componente alfa zero per il parametro color; il che ha come risultato un testo completamente trasparente (ovvero invisibile). Per il testo completamente opaco, assicurarsi che il componente alfa del parametro color sia completamente saturato (255).
   - question: "Come è possibile salvare il contenuto di una superficie o trama in un file? \n"
     answer: >
       DirectX 8.1 SDK ha aggiunto due funzioni alla libreria D3DX specificamente per questo scopo: D3DXSaveSurfaceToFile() e D3DXSaveTextureToFile(). Queste funzioni supportano il salvataggio di un'immagine in un file in formato BMP o DDS. Nelle versioni precedenti sarà necessario bloccare la superficie e leggere i dati dell'immagine, quindi scriverla in un file bitmap. Per informazioni sulla scrittura di una funzione per archiviare bitmap, vedere [Archiviazione di un'immagine.](/windows/desktop/gdi/storing-an-image)
@@ -482,7 +482,7 @@ sections:
       Usare D3DXCreateEffect per creare un id3DXEffect e quindi usare GetPassDesc per recuperare un D3DXPASS \_ DESC. Questa struttura contiene puntatori a vertex shader e pixel shader.
 
 
-      Non usare ID3DXEffectCompiler::GetPassDesc. Gli handle di vertice e pixel shader restituiti da questo metodo sono NULL.
+      Non usare ID3DXEffectCompiler::GetPassDesc. Gli handle vertice e pixel shader restituiti da questo metodo sono NULL.
   - question: "Per cosa è intrinseco noise() HLSL? \n"
     answer: >
       La funzione intrinseca noise genera disturbo perlin come definito da Ken Perlin. La funzione HLSL può attualmente essere usata solo per riempire le trame negli shader con trama perché l'h/w corrente non supporta il metodo in modo nativo. Gli shader con trama vengono usati in coniugazione con le funzioni D3DXFill Texture(), che sono utili funzioni helper per generare trame definite in modo procedurale durante il tempo \* di caricamento.
@@ -507,10 +507,10 @@ sections:
   questions:
   - question: "Perché si ottiene un burst di dati statici all'avvio dell'applicazione? Si nota questo problema anche con altre applicazioni. \n"
     answer: >
-      Probabilmente è stato installato il runtime DirectX di debug. La versione di debug del runtime riempie i buffer con statici per consentire agli sviluppatori di rilevare bug con buffer non inizializzati. Non è possibile garantire il contenuto di un buffer DirectSound dopo la creazione. in particolare, non è possibile presupporre che un buffer con sia azzerato.
+      Probabilmente è stato installato il runtime DirectX di debug. La versione di debug del runtime riempie i buffer con statici per consentire agli sviluppatori di rilevare bug con buffer non inizializzati. Non è possibile garantire il contenuto di un buffer DirectSound dopo la creazione. in particolare, non è possibile presupporre che un buffer con azzeramento.
   - question: "Perché si verifica un ritardo tra la modifica dei parametri di un effetto e l'ascolto dei risultati? \n"
     answer: >
-      Le modifiche ai parametri di effetto non vengono sempre apportate immediatamente in DirectX 8. Per migliorare l'efficienza, DirectSound elabora 100 millisecondi di dati audio in un buffer, a partire dal cursore di riproduzione, prima che il buffer venga riprodotto. Questa pre-elaborazione avviene dopo tutte le chiamate seguenti:
+      Le modifiche ai parametri di effetto non vengono sempre apportate immediatamente in DirectX 8. Per migliorare l'efficienza, DirectSound elabora 100 millisecondi di dati audio in un buffer, a partire dal cursore di riproduzione, prima che il buffer venga riprodotto. Questa pre-elaborazione viene eseguita dopo tutte le chiamate seguenti:
 
 
       ``` syntax
@@ -527,7 +527,7 @@ sections:
 
 
       A data di DirectX 9, un nuovo algoritmo di elaborazione FX che elabora gli effetti JUST-In-Time risolve questo problema e ha ridotto la latenza. L'algoritmo è stato aggiunto alla chiamata IDirectSoundBuffer8::P lay(), insieme a un thread aggiuntivo che elabora gli effetti appena prima del cursore di scrittura. È quindi possibile impostare i parametri in qualsiasi momento e funzionano come previsto. Si noti tuttavia che in un buffer di riproduzione si verifica un piccolo ritardo (in genere 100 ms) prima di ascoltare la modifica del parametro, perché l'audio tra i cursori di riproduzione e scrittura (e un po' più di riempimento) è già stato elaborato in quel momento.
-  - question: "Ricerca per categorie se DSound è installato? \n"
+  - question: "Ricerca per categorie rilevare se DSound è installato? \n"
     answer: >
       Se non è necessario usare DirectSoundEnumerate() per elencare i dispositivi DSound disponibili, non collegare l'applicazione a dsound.lib e usarla invece tramite COMs CoCreateInstance(CLSID DirectSound...) quindi inizializzare l'oggetto \_ DSound usando Initialize(NULL). Se è necessario usare DirectSoundEnumerate(), è possibile caricare dinamicamente dsound.dll usando LoadLibrary("dsound.dll"); e accedere ai metodi usando GetProcAddress("DirectSoundEnumerateA/W") e GetProcAddress("DirectSoundCreateA/W") e così via.
   - question: "Ricerca per categorie creare audio multicanale con WAVEFORMATEXTENSIBLE? \n"
@@ -549,7 +549,7 @@ sections:
 
       -   Non chiamare GetCurrentPosition troppo spesso. Ogni chiamata GetCurrentPosition() su ogni buffer causa una chiamata di sistema e le chiamate di sistema devono essere ridotte al minimo perché sono un componente di grandi dimensioni del footprint della CPU di DSound. In NT (Win2K e XP) i cursori nei buffer SW (e nei buffer HW in alcuni dispositivi) si spostano in incrementi di 10 ms, quindi è ideale chiamare GetCurrentPosition() ogni 10 ms. La chiamata più spesso di ogni 5 ms causerà una riduzione delle prestazioni.
 
-      -   Usare una frequenza fotogrammi separata e inferiore per l'audio. Attualmente molti Windows giochi possono superare i 100 fotogrammi al secondo e nella maggior parte dei casi non è necessario aggiornare i parametri audio 3D alla stessa frequenza dei fotogrammi. L'elaborazione dell'audio ogni secondo o terzo fotogramma grafico, o ogni 30 ms o così, può ridurre in modo significativo il numero di chiamate audio in tutta l'applicazione senza ridurre la qualità audio.
+      -   Usare una frequenza fotogrammi separata e inferiore per l'audio. Attualmente molti Windows giochi possono superare i 100 fotogrammi al secondo e nella maggior parte dei casi non è necessario aggiornare i parametri audio 3D alla stessa frequenza dei fotogrammi. L'elaborazione dell'audio ogni secondo o terzo fotogramma grafico, o ogni 30 ms, può ridurre in modo significativo il numero di chiamate audio in tutta l'applicazione senza ridurre la qualità dell'audio.
 
       -   Usare DS3D \_ DEFERRED per gli oggetti 3D. La maggior parte delle schede audio risponde immediatamente alle modifiche dei parametri e in un singolo fotogramma può cambiare molto, soprattutto se si modifica la posizione o l'orientamento del listener. In questo modo la scheda audio/CPU esegue molti calcoli non necessari, quindi un'altra ottimizzazione rapida e universale è rinviare alcune modifiche ai parametri ed eseguirne il commit alla fine del frame.
 
@@ -562,12 +562,12 @@ sections:
           È inoltre consigliabile archiviare copie locali dei parametri 3D ed EAX per ogni origine audio. Se viene effettuata una richiesta per impostare un parametro su un valore specifico, è possibile verificare se il valore è effettivamente diverso dall'ultimo set di valori. In caso contrario, non è necessario eseguire la chiamata.
 
           Anche se il driver della scheda audio probabilmente rileverà questo scenario e non eseguirà di nuovo lo stesso calcolo, la chiamata audio dovrà raggiungere il driver audio (tramite una transizione ad anello) e si tratta già di un'operazione lenta.
-  - question: "Quando si esegue il flusso di un buffer, tende a verificarsi problemi e a prestazioni scarse. Qual è il modo migliore per trasmettere un buffer? \n"
+  - question: "Quando si esegue lo streaming di un buffer, tende a verificarsi problemi e a prestazioni scarse. Qual è il modo migliore per trasmettere un buffer? \n"
     answer: >
       Quando si esegue lo streaming dell'audio in un buffer, sono disponibili due algoritmi di base: After-Write-Cursor (AWC) e Before-Play-Cursor (BPC). AWC riduce al minimo la latenza a costo di problemi, mentre BPC è l'opposto. Poiché in genere non sono presenti modifiche interattive al suono trasmesso, questo tipo di latenza è raramente un problema per i giochi e le applicazioni simili, quindi BPC è l'algoritmo più appropriato. In AWC, ogni volta che il thread di streaming viene eseguito, i dati nei buffer di ciclo vengono "sovraccarichi" fino Windows N ms oltre i cursori di scrittura (in genere N=40 o così, per consentire il jitter di pianificazione Windows). In BPC si scrive sempre il maggior numero possibile di dati nei buffer, riempiendoli fino ai cursori di riproduzione (o forse 32 byte prima per consentire ai driver che segnalano erroneamente lo stato del cursore di riproduzione).
 
 
-      Usare BPC per minimizzare gli errori e usare buffer di 100 ms o superiori anche se i giochi non hanno problemi nell'hardware di test, si verificano problemi in alcuni computer.
+      Usare BPC per mimizzare gli errori e usare buffer di 100 ms o superiori anche se i giochi non hanno problemi nell'hardware di test, si verificano problemi in alcuni computer.
   - question: "Sto riproducendo gli stessi suoni molto spesso e molto rapidamente e talvolta non vengono riprodotti correttamente o la chiamata Play() richiede molto tempo. Cosa devo fare? \n"
     answer: >
       La latenza di avvio (diversa dalla latenza di streaming indicata in precedenza) può essere un problema nel caso di hardware (la chiamata Play() richiede molto tempo a volte su determinate schede audio). Se si vuole davvero ridurre questa latenza, per i suoni di contrazione (spari di mitra, orme e così via) un utile trucco è mantenere alcuni buffer sempre in loop e riprodurre il silenzio. Quando è necessario riprodurre un suono di contrazione, selezionare un buffer libero, vedere dove si trova il cursore di scrittura e inserire il suono nel buffer appena oltre il cursore di scrittura. Alcune schede audio non riescono a eseguire QuerySupport per le proprietà posticipate che sono supportate. Esiste una soluzione alternativa? È possibile eseguire querySupport solo per le versioni non posticipate delle proprietà e usare comunque le impostazioni posticipate. Anche i driver della scheda audio più recenti possono risolvere questo problema.
@@ -579,7 +579,7 @@ sections:
       DirectSound non supporta in modo nativo la decodifica MP3. È possibile decodificare i file in anticipo (usando un codec ACM di un filtro DirectShow) oppure usare semplicemente DirectShow se stesso, che può eseguire la decodifica automaticamente. è quindi possibile copiare i dati audio PCM risultanti nei buffer DirectSound.
 - name: Estensioni DirectX per Alias Maya
   questions:
-  - question: "Perché i nurb non vengono visualizzati? \n"
+  - question: "Perché i NURBS non vengono visualizzati? \n"
     answer: >
       NURBS non sono supportati. È possibile convertirli in mesh poligonali.
   - question: >
@@ -588,10 +588,10 @@ sections:
       I SUBD non sono supportati. È possibile convertirli in mesh poligonali.
   - question: "Perché l'animazione nel file X ha un aspetto diverso rispetto all'animazione nella finestra di anteprima? \n"
     answer: >
-      La finestra di anteprima non viene animata nel senso più rigoroso della questione. Non viene riprodotta l'animazione, ma viene eseguita la sincronizzazione con lo stato più attuale della scena di Maya. Quando si esporta l'animazione, le matrici in ogni trasformazione vengono scomposte in componenti di scala, rotazione (quaternione) e traslazione (spesso definiti SRT). Le unità SRT sono più desiderabili delle matrici perché interpolano bene, forniscono una forma più compatta dei dati e possono essere compresse in modo indipendente. Non tutte le matrici possono essere suddivise in SRT. Se non è possibile eseguire la scomposizione, i SET risultanti saranno sconosciuti, quindi potrebbero essere rilevati piccoli errori nell'animazione. Le due funzionalità di Maya che più spesso causano problemi durante la scomposizione sono le rotazioni o le scale fuori centro. Se si verifica questo problema, poiché si usano rotazioni o scale non centrate, è consigliabile aggiungere altre trasformazioni aumentando il livello di gerarchia.
+      La finestra di anteprima non viene animata nel senso più rigoroso della questione. Non viene riprodotta l'animazione, ma viene eseguita la sincronizzazione con lo stato più attuale della scena di Maya. Quando l'animazione viene esportata, le matrici in ogni trasformazione vengono scomposte in componenti di scala, rotazione (quaternione) e traslazione (spesso definiti SRT). Le unità SRT sono più desiderabili delle matrici perché interpolano bene, forniscono una forma più compatta dei dati e possono essere compresse in modo indipendente. Non tutte le matrici possono essere suddivise in SRT. Se non è possibile eseguire la scomposizione, i set di tempo risultante saranno sconosciuti, quindi potrebbero essere rilevati piccoli errori nell'animazione. Le due funzionalità di Maya che più spesso causano problemi durante la scomposizione sono le rotazioni o le scale fuori centro. Se si verifica questo problema, poiché si usano rotazioni o scale non centrate, è consigliabile aggiungere altre trasformazioni aumentando il livello di gerarchia.
 
 
-      Dove l'animazione D3DX supporta gli SRT, ha un aspetto simile al seguente:
+      Dove l'animazione D3DX supporta le SRT, ha un aspetto simile al seguente:
 
 
       ``` syntax
@@ -609,12 +609,12 @@ sections:
       [SpInv]x[S]x[Sh]x[Sp]x[St]x[RpInv]x[Ro]x[R]x[Rp]x[Rt]x[T]
 
       ```
-  - question: "Ho sbiancato la mesh con RigidSkin, ma la mesh (o parte) non si sta spostando. Perché? \n"
+  - question: "Ho skinned my mesh with RigidSkin but the mesh (or portion) isn't moving. Perché? \n"
     answer: >
       L'interfaccia rigida di Maya non è attualmente supportata. Usare Smooth Skin.
-  - question: "Dove è finito tutto il codice IK nel file X? \n"
+  - question: "Dove sono finiti tutti i file IK nel file X? \n"
     answer: >
-      I file X non supportano IK. Le soluzioni IK vengono invece integrate nei frame archiviati nel file X.
+      I file X non supportano IK. Le soluzioni IK vengono invece preparate nei frame archiviati nel file X.
   - question: "Perché nessuno dei colori dei materiali viene visualizzato ad eccezione di DirectXShaders? \n"
     answer: >
       Le estensioni DirectX per Maya attualmente supportano solo materiali DirectXShader per l'anteprima e l'esportazione. In una versione futura potrebbero essere supportati altri materiali.
@@ -625,26 +625,26 @@ sections:
       Sì, ma agiscono come lo stesso asse. Non è quindi possibile leggere i trigger in modo indipendente con DirectInput. Usando XInput, i trigger restituiscono valori separati.
 
 
-      Per altre informazioni sui motivi per cui DirectInput interpreta i trigger come un asse, vedere Uso [dell'controller per Xbox 360 con DirectInput.](/windows/desktop/xinput/xinput-and-directinput)
+      Per altre informazioni sul motivo per cui DirectInput interpreta i trigger come un asse, vedere Uso dell'controller per Xbox 360 [con DirectInput](/windows/desktop/xinput/xinput-and-directinput).
   - question: "Quanti controller supporta XInput? \n"
     answer: >
       XInput supporta 4 controller collegati alla volta.
   - question: "XInput supporta controller non comuni? \n"
     answer: >
-      No, non lo è.
+      No, non è così.
   - question: "I controller comuni sono disponibili tramite DirectInput? \n"
     answer: >
       Sì, è possibile accedere ai controller comuni tramite DirectInput.
-  - question: "Ricerca per categorie feedback forzato sui controller comuni? \n"
+  - question: "Ricerca per categorie feedback sulla forza sui controller comuni? \n"
     answer: >
       Usare la [**funzione XInputSetState.**](/windows/desktop/api/xinput/nf-xinput-xinputsetstate)
   - question: "Perché il dispositivo audio predefinito cambia? \n"
     answer: >
-      Quando si collega il visore VR, il visore VR del controller funge da dispositivo audio USB standard, quindi quando è connesso, Windows cambia automaticamente per usare questo dispositivo audio USB come impostazione predefinita. Poiché l'utente probabilmente non vuole che tutto l'audio passa attraverso il visore VR, dovrà riportarlo manualmente all'impostazione originale.
+      Quando si collega il visore, il visore del controller funge da dispositivo audio USB standard, quindi quando è connesso, Windows cambia automaticamente per usare questo dispositivo audio USB come predefinito. Poiché l'utente probabilmente non vuole che tutto l'audio passa attraverso il visore, dovrà adattarlo manualmente all'impostazione originale.
   - question: "Ricerca per categorie controllare le luci sul controller? \n"
     answer: >
-      Le luci del controller sono predeterminate dal sistema operativo e non possono essere modificate.
-  - question: "Ricerca per categorie accedere al Xbox 360 nelle applicazioni? \n"
+      Le luci sul controller sono predeterminate dal sistema operativo e non possono essere modificate.
+  - question: "Ricerca per categorie accedere al pulsante Xbox 360 nelle applicazioni? \n"
     answer: >
       Questo pulsante è riservato per un uso futuro.
   - question: "Dove si ottengono i driver? \n"
@@ -652,9 +652,9 @@ sections:
       I driver saranno disponibili tramite Windows Update.
   - question: "Come viene determinato l'ID controller? \n"
     answer: >
-      All'avvio di XInput, l'ID viene determinato in modo non deterministico dal motore XInput e dai controller collegati. Se i controller sono collegati durante l'esecuzione di un'applicazione XInput, il sistema assegnerà al nuovo controller il numero più basso disponibile. Se un controller è disconnesso, il numero verrà reso nuovamente disponibile.
+      All'avvio di XInput, l'ID viene determinato in modo non deterministico dal motore XInput e dai controller collegati. Se i controller sono collegati durante l'esecuzione di un'applicazione XInput, il sistema assegnerà al nuovo controller il numero più basso disponibile. Se un controller è disconnesso, il relativo numero verrà reso nuovamente disponibile.
   - question: "Ricerca per categorie ottenere i dispositivi audio per il controller? \n"
     answer: >
       Usare la [**funzione XInputGetDSoundAudioDeviceGuids.**](/windows/desktop/api/xinput/nf-xinput-xinputgetdsoundaudiodeviceguids) Per informazioni dettagliate, vedere l'esempio AudioController.
-  - question: "Cosa è necessario fare quando un controller è scollegato? \n"
-    answer: Se il controller è stato utilizzato da un giocatore, è necessario sospendere il gioco fino a quando il controller non viene riconnesso e il giocatore preme un pulsante per segnalare che è pronto per la sospensione.
+  - question: "Cosa fare quando un controller viene scollegato? \n"
+    answer: Se il controller era in uso da un giocatore, è necessario sospendere il gioco fino a quando il controller non viene riconnesso e il giocatore preme un pulsante per segnalare che è pronto per annullare la sospensione.

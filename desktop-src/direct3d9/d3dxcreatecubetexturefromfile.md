@@ -79,7 +79,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 L'impostazione del compilatore determina anche la versione della funzione. Se unicode è definito, la chiamata di funzione viene risolta in **D3DXCreateCubeTextureFromFileW**. In caso contrario, la chiamata di funzione viene risolta **in D3DXCreateCubeTextureFromFileA** perché vengono usate stringhe ANSI.
 
-La funzione equivale a D3DXCreateCubeTextureFromFileEx(pDevice, pSrcFile, D3DX \_ DEFAULT, D3DX \_ DEFAULT, 0, D3DFMT \_ UNKNOWN, \_ D3DPOOL MANAGED, D3DX \_ DEFAULT, D3DX \_ DEFAULT, 0, **NULL,** **NULL,** ppCubeTexture).
+La funzione equivale a D3DXCreateCubeTextureFromFileEx(pDevice, pSrcFile, D3DX \_ DEFAULT, D3DX \_ DEFAULT, 0, D3DFMT \_ UNKNOWN, D3DPOOL \_ MANAGED, D3DX \_ DEFAULT, D3DX \_ DEFAULT, 0, **NULL,** **NULL,** ppCubeTexture).
 
 Questa funzione supporta i formati di file .bmp, dds, dib, hdr, .jpg, pfm, .png, ppm e tga. Vedere [**D3DXIMAGE \_ FILEFORMAT**](./d3dximage-fileformat.md).
 
@@ -87,7 +87,7 @@ Si noti che una risorsa creata con questa funzione quando viene chiamata da un o
 
 Il filtro viene applicato automaticamente a una trama creata usando questo metodo. Il filtro equivale a D3DX \_ FILTER \_ TRIANGLE \| D3DX \_ FILTER \_ DITHER in [D3DX \_ FILTER](d3dx-filter.md).
 
-**D3DXCreateCubeTextureFromFile** usa il formato di file directdraw surface (DDS). DirectX Texture Editor (Dxtex.exe) consente di generare una mappa cubo da altri formati di file e salvarla nel formato di file DDS. È possibile ottenere Dxtex.exe informazioni da DirectX SDK. Per informazioni su DirectX SDK, vedere [Dove si trova DirectX SDK?](../directx-sdk--august-2009-.md).
+**D3DXCreateCubeTextureFromFile** usa il formato di file directdraw surface (DDS). DirectX Texture Editor (Dxtex.exe) consente di generare una mappa cubo da altri formati di file e salvarla nel formato di file DDS. È possibile ottenere Dxtex.exe e ottenere informazioni da DirectX SDK. Per informazioni su DirectX SDK, vedere [Dove si trova DirectX SDK?](../directx-sdk--august-2009-.md).
 
 ## <a name="requirements"></a>Requisiti
 

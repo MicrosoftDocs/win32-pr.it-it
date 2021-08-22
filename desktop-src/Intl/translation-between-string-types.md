@@ -1,7 +1,7 @@
 ---
-description: Le funzioni elencate nella tabella seguente converte le stringhe di caratteri da un tipo stringa a un altro.
+description: Le funzioni elencate nella tabella seguente traducono le stringhe di caratteri da un tipo stringa a un altro.
 ms.assetid: 26802339-6291-4767-b468-68a9e8e95774
-title: Conversione tra tipi stringa
+title: Conversione tra tipi di stringa
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 1b62ae39307e92c203441ea8ddb9dc61b394a02622e3c86a8949b59539588585
@@ -11,9 +11,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119631921"
 ---
-# <a name="translation-between-string-types"></a>Conversione tra tipi stringa
+# <a name="translation-between-string-types"></a>Conversione tra tipi di stringa
 
-Le funzioni elencate nella tabella seguente converte le stringhe di caratteri da un tipo stringa a un altro.
+Le funzioni elencate nella tabella seguente traducono le stringhe di caratteri da un tipo stringa a un altro.
 
 
 

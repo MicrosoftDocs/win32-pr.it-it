@@ -16,9 +16,9 @@ ms.locfileid: "119628281"
 La condivisione di assembly side-by-side è un'infrastruttura usata per eseguire le operazioni seguenti:
 
 -   Condividere in modo sicuro gli assembly tra più applicazioni
--   Compensare alcuni effetti negativi della condivisione, ad esempio conflitti di DLL.
+-   Offset di alcuni effetti negativi della condivisione, ad esempio conflitti di DLL.
 
-Anziché avere una singola versione di un assembly che presuppone la compatibilità con le versioni precedenti con tutte le applicazioni, la condivisione di assembly side-by-side consente l'esecuzione simultanea di più versioni di un assembly COM o Win32 in un sistema. Per altre informazioni, vedere Applicazioni isolate e assembly [side-by-side](../sbscs/isolated-applications-and-side-by-side-assemblies-portal.md).
+Anziché avere una singola versione di un assembly che presupponga la compatibilità con le versioni precedenti di tutte le applicazioni, la condivisione di assembly side-by-side consente l'esecuzione simultanea di più versioni di un assembly COM o Win32 in un sistema. Per altre informazioni, vedere Applicazioni isolate e [assembly side-by-side.](../sbscs/isolated-applications-and-side-by-side-assemblies-portal.md)
 
 Gli assembly side-by-side possono essere installati come [assembly condivisi](shared-assemblies.md) o come [assembly privati.](private-assemblies.md)
 

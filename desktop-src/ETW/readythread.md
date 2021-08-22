@@ -68,7 +68,7 @@ Tipo di accesso: sola lettura
 Qualificatori: WmiDataId(3)
 </dt> </dl>
 
-Valore in base al quale viene regolata la priorità.
+Valore in base al quale viene modificata la priorità.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Tipo di accesso: sola lettura
 Qualificatori: WmiDataId(2)
 </dt> </dl>
 
-Motivo dell'priority boost.
+Motivo della priority boost.
 
 
 
@@ -92,7 +92,7 @@ Motivo dell'priority boost.
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>0</dt> </dl> | Ignorare l'incremento.<br/>                                                                                        |
 | <dl> <dt>1</dt> </dl> | Applicare l'incremento, che decadrà in modo incrementale alla fine di ogni quantum.<br/>                              |
-| <dl> <dt>2</dt> </dl> | Applicare l'incremento come boost che decadrà per intero nel calcolo quantistico (in genere per la priorità di priorità).<br/> |
+| <dl> <dt>2</dt> </dl> | Applicare l'incremento come boost che decadrà nella sua interezza in modalità quantistica (in genere per la donazione della priorità).<br/> |
 
 
 
@@ -120,13 +120,13 @@ Di seguito sono riportati i possibili flag di stato:
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------|
 | <dl> <dt>0x1</dt> </dl> | Il thread è stato letto da DPC (chiamata di procedura posticipata).<br/> |
 | <dl> <dt>0x2</dt> </dl> | Lo stack del kernel è attualmente scambiato.<br/>                      |
-| <dl> <dt>0x4</dt> </dl> | Lo spazio degli indirizzi del processo viene scambiato.<br/>                       |
+| <dl> <dt>0x4</dt> </dl> | Lo spazio indirizzi del processo viene scambiato.<br/>                       |
 
 
 
  
 
-Si noti che quando lo stack del kernel o lo spazio degli indirizzi del processo viene scambiato, si verifica un evento ReadyThread aggiuntivo dopo che lo stack del kernel o lo spazio degli indirizzi del processo è stato scambiato nuovamente e il thread è pronto per l'invio.
+Si noti che quando lo stack del kernel o lo spazio degli indirizzi del processo viene scambiato, verrà generato un evento ReadyThread aggiuntivo dopo che lo stack del kernel o lo spazio indirizzi del processo è stato scambiato nuovamente in e il thread è pronto per l'invio.
 
 </dd> <dt>
 
@@ -158,7 +158,7 @@ Tipo di accesso: sola lettura
 Qualificatori: WmiDataId(1), Format("x")
 </dt> </dl>
 
-Identificatore del thread da leggere per l'esecuzione.
+Identificatore di thread del thread da leggere per l'esecuzione.
 
 </dd> </dl>
 

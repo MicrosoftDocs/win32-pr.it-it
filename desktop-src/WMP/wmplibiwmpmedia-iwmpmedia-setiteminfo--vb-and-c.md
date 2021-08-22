@@ -5,7 +5,7 @@ ms.assetid: 247bbba5-7d9b-489d-8e41-ae8ec6e266fd
 keywords:
 - Metodo setItemInfo Windows Media Player
 - Metodo setItemInfo Windows Media Player, interfaccia IWMPMedia
-- Interfaccia IWMPMedia Windows Media Player, metodo setItemInfo
+- Interfaccia IWMPMedia Windows Media Player metodo setItemInfo
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6702c80c13090a370e2922ccecade49bc06645de
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 24265e94880899df96aa954f2df30ca6e4f5ae1e5b4fc20c419085e3f9f0ab14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053639"
 ---
-# <a name="iwmpmediasetiteminfo-method"></a>Metodo IWMPMedia:: setItemInfo
+# <a name="iwmpmediasetiteminfo-method"></a>Metodo IWMPMedia::setItemInfo
 
-Il metodo **setItemInfo** imposta il valore dell'attributo specificato per l'elemento multimediale.
+Il **metodo setItemInfo** imposta il valore dell'attributo specificato per l'elemento multimediale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,17 +55,17 @@ Implements IWMPMedia.setItemInfo
 
 <dl> <dt>
 
-*bstrItemName* \[ in\]
+*bstrItemName* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta il nome dell'attributo.
+Oggetto **System.String** che rappresenta il nome dell'attributo.
 
 </dd> <dt>
 
-*bstrVal* \[ in\]
+*bstrVal* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta il nuovo valore.
+Oggetto **System.String** che rappresenta il nuovo valore.
 
 </dd> </dl>
 
@@ -75,19 +75,19 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-La proprietà **attributeCount** ottiene il numero di attributi disponibili per un determinato elemento multimediale. I numeri di indice possono quindi essere usati con il metodo **GetAttribute** per determinare i nomi degli attributi predefiniti che possono essere usati con questo metodo.
+La **proprietà attributeCount** ottiene il numero di attributi disponibili per un determinato elemento multimediale. I numeri di indice possono quindi essere usati con il **metodo getAttributeName** per determinare i nomi degli attributi predefiniti che possono essere usati con questo metodo.
 
-Prima di utilizzare questo metodo, utilizzare il metodo **isReadOnlyItem** per individuare se è possibile impostare un particolare attributo.
+Prima di usare questo metodo, usare il **metodo isReadOnlyItem** per individuare se è possibile impostare un attributo specifico.
 
-Prima di chiamare questo metodo, è necessario disporre dell'accesso completo alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di chiamare questo metodo, è necessario avere accesso completo alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 Nota
 
-Se si incorpora il controllo Windows Media Player nell'applicazione, gli attributi di file modificati non verranno scritti nel file multimediale digitale fino a quando l'utente non esegue Windows Media Player.
+Se si incorpora il controllo Windows Media Player nell'applicazione, gli attributi di file che si modificano non verranno scritti nel file multimediale digitale finché l'utente non esegue Windows Media Player.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **setItemInfo** per modificare il valore dell'attributo genre per l'elemento multimediale corrente. Una casella di testo consente all'utente di immettere una stringa che viene quindi usata per modificare le informazioni sugli attributi in risposta all'evento Click di un pulsante. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+Nell'esempio seguente viene **utilizzato setItemInfo** per modificare il valore dell'attributo Genre per l'elemento multimediale corrente. Una casella di testo consente all'utente di immettere una stringa, che viene quindi usata per modificare le informazioni sull'attributo in risposta all'evento Click di un pulsante. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -140,7 +140,7 @@ End Sub
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -153,13 +153,13 @@ End Sub
 [**Interfaccia IWMPMedia (VB e C#)**](iwmpmedia--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMedia. attributeCount (VB e C#)**](wmplibiwmpmedia-iwmpmedia-attributecount--vb-and-c.md)
+[**IWMPMedia.attributeCount (VB e C#)**](wmplibiwmpmedia-iwmpmedia-attributecount--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMedia. GetAttribute (VB e C#)**](wmplibiwmpmedia-iwmpmedia-getattributename--vb-and-c.md)
+[**IWMPMedia.getAttributeName (VB e C#)**](wmplibiwmpmedia-iwmpmedia-getattributename--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMedia. isReadOnlyItem (VB e C#)**](wmplibiwmpmedia-iwmpmedia-isreadonlyitem--vb-and-c.md)
+[**IWMPMedia.isReadOnlyItem (VB e C#)**](wmplibiwmpmedia-iwmpmedia-isreadonlyitem--vb-and-c.md)
 </dt> </dl>
 
  

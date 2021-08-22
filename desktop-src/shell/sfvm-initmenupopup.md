@@ -1,6 +1,6 @@
 ---
-description: "Consente all'oggetto callback di modificare un menu a comparsa di Esplora risorse prima che venga visualizzato. Usato da IShellFolderViewCB:: MessageSFVCB."
-title: Messaggio SFVM_INITMENUPOPUP (Shlobj. h)
+description: Consente all'oggetto callback di modificare Windows menu a comparsa di Esplora risorse prima che venga visualizzato. Usato da IShellFolderViewCB::MessageSFVCB.
+title: SFVM_INITMENUPOPUP messaggio (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 9d7e96e9-c52e-43bd-945b-05db33c8dfd0
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 1f9a2a169b232fe3ad16eeee8816536ed81c74dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd69d19f753c1c72c1e0c143a0aface2cdb234cb2ace8c87d559834b97bbf0f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119592317"
 ---
-# <a name="sfvm_initmenupopup-message"></a>\_Messaggio SFVM INITMENUPOPUP
+# <a name="sfvm_initmenupopup-message"></a>Messaggio \_ SFVM INITMENUPOPUP
 
-Consente all'oggetto callback di modificare un menu a comparsa di Esplora risorse prima che venga visualizzato. Usato da [**IShellFolderViewCB:: MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
+Consente all'oggetto callback di modificare Windows menu a comparsa di Esplora risorse prima che venga visualizzato. Usato da [**IShellFolderViewCB::MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
 
 
 ```C++
@@ -41,14 +41,14 @@ SFVM_INITMENUPOPUP
 
 <dl> <dt>
 
-*idCmd \_ nIndex* \[\]
+*idCmd \_ nIndex* \[ in\]
 </dt> <dd>
 
-La parola più bassa di questo parametro include il valore del primo ID comando riservato per i comandi client. La parola più ordinata include l'indice del menu.
+La parola di ordine basso di questo parametro contiene il valore del primo ID comando riservato per i comandi client. La parola più alta contiene l'indice del menu.
 
 </dd> <dt>
 
-*HMENU* \[ in uscita\]
+*hmenu* \[ in, out\]
 </dt> <dd>
 
 Handle del menu.
@@ -59,7 +59,7 @@ Handle del menu.
 
 L'oggetto visualizzazione cartella di sistema invia questo messaggio quando viene selezionato un menu, ma prima che venga visualizzato. Elaborare questo messaggio se, ad esempio, è necessario abilitare o disabilitare i comandi di menu. Il menu popup può essere:
 
--   Menu file, modifica o Visualizza.
+-   Menu File, Modifica o Visualizza.
 -   Menu di primo livello definito dal client.
 -   Sottomenu definito dal client.
 
@@ -71,7 +71,7 @@ L'oggetto visualizzazione cartella di sistema invia questo messaggio quando vien
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 
@@ -79,7 +79,7 @@ L'oggetto visualizzazione cartella di sistema invia questo messaggio quando vien
 
 <dl> <dt>
 
-[**\_MERGEMENU SFVM**](sfvm-mergemenu.md)
+[**SFVM \_ MERGEMENU**](sfvm-mergemenu.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-title: API cookie di prova del possesso
-description: Consente di creare cookie di prova del possesso, che supportano Single Sign-On per le applicazioni Web autenticate dal protocollo OAuth Internet Authentication.
+title: API cookie di verifica del possesso
+description: Consente di creare cookie di prova di possesso, che supportano l'accesso Single Sign-On per le applicazioni Web autenticate dal protocollo di autenticazione Internet OAuth.
 ms.assetid: D1279A09-2CCE-4D86-88EF-1ED6B592E44B
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52fe7011f5f5ac410a135946336f602167e9ea73
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 8eb8a0d88828bf6123605671957a77b2f76cc3f2d596ad02ad5381873c22121d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104334079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119614031"
 ---
-# <a name="proof-of-possession-cookie-api"></a>API cookie di prova del possesso
+# <a name="proof-of-possession-cookie-api"></a>API cookie di verifica del possesso
 
-Consente di creare cookie di prova del possesso, che supportano Single Sign-On per le applicazioni Web autenticate dal protocollo OAuth Internet Authentication. È possibile usare le informazioni restituite da questa API per implementare Single Sign-On form degli account Microsoft.
+Consente di creare cookie di prova di possesso, che supportano l'accesso Single Sign-On per le applicazioni Web autenticate dal protocollo di autenticazione Internet OAuth. È possibile usare le informazioni restituite da questa API per implementare gli account Microsoft del modulo Single Sign-On.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,7 +21,7 @@ Consente di creare cookie di prova del possesso, che supportano Single Sign-On p
 
 | Argomento                                                                                         | Descrizione                                                      |
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [**IProofOfPossessionCookieInfoManager**](/windows/desktop/api/ProofOfPossessionCookieInfo/nn-proofofpossessioncookieinfo-iproofofpossessioncookieinfomanager)<br/> | Supporta la creazione di cookie di prova del possesso.<br/> |
+| [**IProofOfPossessionCookieInfoManager**](/windows/desktop/api/ProofOfPossessionCookieInfo/nn-proofofpossessioncookieinfo-iproofofpossessioncookieinfomanager)<br/> | Supporta la creazione di cookie di prova di possesso.<br/> |
 
 
 

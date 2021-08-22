@@ -1,5 +1,5 @@
 ---
-description: Ottiene la proprietà del file di voce della directory logica specificato nel percorso dell'oggetto. Questo metodo è una versione estesa del metodo TakeOwnerShip e viene ereditato da CIM \_ LogicalFile.
+description: Ottiene la proprietà del file di voci di directory logico specificato nel percorso dell'oggetto. Questo metodo è una versione estesa del metodo TakeOwnerShip ed è ereditato da CIM \_ LogicalFile.
 ms.assetid: a13acaa2-2203-470a-b989-15f8276e46c6
 ms.tgt_platform: multiple
 title: Metodo TakeOwnerShipEx della classe CIM_Directory
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b02a6c40e99405c150a372f8eb15fe648f2df60a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5637e45c6dad7eec3f79ffd045a4a8d0dd3f3ba51ed5a60c09916c11802b1130
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119332781"
 ---
-# <a name="takeownershipex-method-of-the-cim_directory-class"></a>Metodo TakeOwnerShipEx della classe di \_ directory CIM
+# <a name="takeownershipex-method-of-the-cim_directory-class"></a>Metodo TakeOwnerShipEx della classe Directory CIM \_
 
-Il metodo **TakeOwnerShipEx** ottiene la proprietà del file di voce della directory logica specificato nel percorso dell'oggetto. Questo metodo è una versione estesa del metodo [**TakeOwnership**](takeownership-method-in-class-cim-directory.md) e viene ereditato da [**CIM \_ LogicalFile**](cim-logicalfile.md). Se il file logico è una directory, questo metodo agisce in modo ricorsivo, assumendo la proprietà di tutti i file e le sottodirectory contenuti nella directory.
+Il **metodo TakeOwnerShipEx** ottiene la proprietà del file di voce di directory logica specificato nel percorso dell'oggetto. Questo metodo è una versione estesa del [**metodo TakeOwnerShip**](takeownership-method-in-class-cim-directory.md) ed è ereditato da [**CIM \_ LogicalFile.**](cim-logicalfile.md) Se il file logico è una directory, questo metodo agisce in modo ricorsivo, assumendo la proprietà di tutti i file e le sottodirectory contenuti nella directory.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,30 +49,30 @@ uint32 TakeOwnerShipEx(
 
 <dl> <dt>
 
-*StopFileName* \[ out\]
+*StopFileName* \[ Cambio\]
 </dt> <dd>
 
-Stringa che rappresenta il nome del file o della directory in cui il metodo ha avuto esito negativo. Questo parametro è null se il metodo ha esito positivo.
+Stringa che rappresenta il nome del file (o directory) in cui il metodo non è riuscito. Questo parametro è Null se il metodo ha esito positivo.
 
 </dd> <dt>
 
-*StartFileName* \[ in\]
+*StartFileName* \[ Pollici\]
 </dt> <dd>
 
-Stringa che rappresenta il file o la directory figlio da utilizzare come punto di partenza per questo metodo. In genere, questo parametro è il parametro *StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è null, l'operazione viene eseguita sul file o sulla directory specificati nella chiamata [**ExecMethod**](/windows/desktop/WmiSdk/swbemservices-execmethod) .
+Stringa che rappresenta il file figlio (o la directory) da usare come punto di partenza per questo metodo. In genere, questo parametro è il *parametro StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è Null, l'operazione viene eseguita sul file (o sulla directory) specificato nella [**chiamata a ExecMethod.**](/windows/desktop/WmiSdk/swbemservices-execmethod)
 
 </dd> <dt>
 
-*Ricorsivo* \[ in\]
+*Ricorsivo* \[ Pollici\]
 </dt> <dd>
 
-Se **true**, il metodo viene applicato in modo ricorsivo a file e directory all'interno della directory specificata dall'istanza di [**\_ directory CIM**](cim-directory.md) . Per le istanze di file, questo parametro viene ignorato.
+Se **True,** il metodo viene applicato in modo ricorsivo ai file e alle directory all'interno della directory specificata [**dall'istanza della \_ directory CIM.**](cim-directory.md) Per le istanze di file, questo parametro viene ignorato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 in caso di esito positivo e qualsiasi altro numero per indicare un errore.
+Restituisce il valore 0 in caso di esito positivo e qualsiasi altro numero per indicare un errore.
 
 <dl> <dt>
 
@@ -126,7 +126,7 @@ Oggetto già esistente.
 
 11
 
-File System non NTFS.
+File system non NTFS.
 
 </dd> <dt>
 
@@ -144,7 +144,7 @@ La piattaforma non è Windows.
 
 13
 
-L'unità non è la stessa.
+Unità non uguale.
 
 </dd> <dt>
 
@@ -197,11 +197,11 @@ Parametro non valido.
 
 Questo metodo non è attualmente implementato da WMI. Per usare questo metodo, è necessario implementarlo nel proprio provider.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="examples"></a>Esempio
 
-Il codice di script seguente Visual Basic chiama il metodo **TakeOwnerShipEx** per assumere la proprietà della cartella C: \\ Temp.
+Il codice Visual Basic script seguente chiama il **metodo TakeOwnerShipEx** per assumere la proprietà della cartella \\ C: temp.
 
 
 ```VB
@@ -237,7 +237,7 @@ wscript.echo objOutParams.ReturnValue
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -246,10 +246,10 @@ wscript.echo objOutParams.ReturnValue
 
 <dl> <dt>
 
-[\_Directory CIM](takeownershipex-method-in-class-cim-directory.md)
+[CIM \_ Directory](takeownershipex-method-in-class-cim-directory.md)
 </dt> <dt>
 
-[**\_Directory CIM**](cim-directory.md)
+[**CIM \_ Directory**](cim-directory.md)
 </dt> </dl>
 
  

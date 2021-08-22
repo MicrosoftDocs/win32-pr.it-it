@@ -4,12 +4,12 @@ ms.assetid: 595adb84-e1a7-4636-b61f-eb0a4b3057b9
 title: elemento relationshipMetadataDeclaration
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d6963cf69ef5d6622d5eacfc98bbb24c734cc39
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 2848935c8f137317ff7f57d5667c14c3f3cff1be87f26759fce2ee8c4fadd816
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119502048"
 ---
 # <a name="relationshipmetadatadeclaration-element"></a>elemento relationshipMetadataDeclaration
 
@@ -35,7 +35,7 @@ Non ci sono elementi figlio.
 
 | Elemento                         | Descrizione                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**ﬁle**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
+| [**File**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
 
 
 
@@ -47,7 +47,7 @@ L'applicazione fa riferimento ai metadati di hosting quando inizializza l'host. 
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

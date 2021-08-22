@@ -4,47 +4,47 @@ ms.assetid: adfe6d05-f30b-40a1-b3b0-58e2593e7b25
 title: Annullamento di operazioni di I/O in sospeso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3d108409eea32cf18a94f83bf7aacd282c60d3e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6ca0f938420888934dccb28c9837bdff5dd8515bbdeeb1b3acf4078ae558ccd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119534121"
 ---
 # <a name="canceling-pending-io-operations"></a>Annullamento di operazioni di I/O in sospeso
 
-Consentire agli utenti di annullare le richieste di I/O lente o bloccate può migliorare l'usabilità e l'affidabilità dell'applicazione. Se, ad esempio, una chiamata alla funzione [**OpenFile**](/windows/desktop/api/WinBase/nf-winbase-openfile) è bloccata perché la chiamata è a un dispositivo molto lento, l'annullamento consente di eseguire di nuovo la chiamata con nuovi parametri senza terminare l'applicazione.
+Consentire agli utenti di annullare le richieste di I/O lente o bloccate può migliorare l'usabilità e l'affidabilità dell'applicazione. Ad esempio, se una chiamata alla funzione [**OpenFile**](/windows/desktop/api/WinBase/nf-winbase-openfile) viene bloccata perché la chiamata è a un dispositivo molto lento, l'annullamento consente di eseguire nuovamente la chiamata, con nuovi parametri, senza terminare l'applicazione.
 
-Windows Vista estende le funzionalità di annullamento e include il supporto per l'annullamento delle operazioni sincrone.
+Windows Vista estende le funzionalità di annullamento e include il supporto per l'annullamento di operazioni sincrone.
 
-**Nota**  La chiamata della funzione [**CancelIoEx**](cancelioex-func.md) non garantisce che un'operazione di I/O venga annullata; il driver che gestisce l'operazione deve supportare l'annullamento e l'operazione deve essere in uno stato che può essere annullato.
+**Nota**  La chiamata [**alla funzione CancelIoEx**](cancelioex-func.md) non garantisce che un'operazione di I/O verrà annullata. Il driver che gestisce l'operazione deve supportare l'annullamento e l'operazione deve essere in uno stato che può essere annullato.
 
 ## <a name="cancellation-considerations"></a>Considerazioni sull'annullamento
 
-Quando si programmano le chiamate di annullamento, tenere presenti le considerazioni seguenti:
+Quando si programmano chiamate di annullamento, tenere presenti le considerazioni seguenti:
 
--   Non vi è alcuna garanzia che i driver sottostanti supportino correttamente l'annullamento.
--   Quando si annulla l'I/O asincrono, quando non viene fornita alcuna struttura sovrapposta alla funzione [**CancelIoEx**](cancelioex-func.md) , la funzione tenta di annullare tutti i/o in attesa sul file in tutti i thread nel processo. Ogni thread viene elaborato singolarmente, quindi, dopo che un thread è stato elaborato, può avviare un'altra operazione di I/O nel file prima che tutti gli altri thread abbiano il relativo I/O per il file annullato, causando problemi di sincronizzazione.
--   Quando si annulla l'I/O asincrono, non riutilizzare le strutture sovrapposte con l'annullamento di destinazione. Dopo che l'operazione di I/O è stata completata correttamente o con uno stato annullato, la struttura sovrapposta non è più utilizzata dal sistema e può essere riutilizzata.
--   Quando si annulla l'I/O sincrono, la chiamata della funzione [**CancelSynchronousIo**](cancelsynchronousio-func.md) tenta di annullare tutte le chiamate sincrone correnti sul thread. È necessario prestare attenzione per assicurarsi che la sincronizzazione delle chiamate sia corretta; la chiamata errata in una serie di chiamate potrebbe essere annullata. Se, ad esempio, la funzione **CancelSynchronousIo** viene chiamata per un'operazione sincrona, x, l'operazione Y viene avviata solo dopo il completamento dell'operazione x, in genere o con un errore. Se il thread che ha chiamato l'operazione X avvia un'altra chiamata sincrona a X, la chiamata Cancel potrebbe interrompere questa nuova richiesta di I/O.
--   Quando si annulla l'I/O sincrono, tenere presente che è possibile che esista un race condition ogni volta che un thread viene condiviso tra parti diverse di un'applicazione, ad esempio con un thread del pool di thread.
+-   Non è garantito che i driver sottostanti supportino correttamente l'annullamento.
+-   Quando si annulla l'I/O asincrono, quando non viene fornita alcuna struttura sovrapposta alla funzione [**CancelIoEx,**](cancelioex-func.md) la funzione tenta di annullare tutte le operazioni di I/O in sospeso nel file in tutti i thread del processo. Ogni thread viene elaborato singolarmente, quindi dopo l'elaborazione di un thread può avviare un altro I/O sul file prima che tutti gli altri thread siano stati annullati, causando problemi di sincronizzazione.
+-   Quando si annulla l'I/O asincrono, non riutilizzare le strutture sovrapposte con annullamento mirato. Una volta completata l'operazione di I/O (con stato completato o annullato), la struttura sovrapposta non è più in uso dal sistema e può essere riutilizzata.
+-   Quando si annulla l'I/O sincrono, la chiamata alla funzione [**CancelSynchronousIo**](cancelsynchronousio-func.md) tenta di annullare qualsiasi chiamata sincrona corrente sul thread. È necessario assicurarsi che la sincronizzazione delle chiamate sia corretta. la chiamata errata in una serie di chiamate potrebbe essere annullata. Ad esempio, se la funzione **CancelSynchronousIo** viene chiamata per un'operazione sincrona, X, l'operazione Y viene avviata solo dopo il completamento dell'operazione X (normalmente o con un errore). Se il thread che ha chiamato l'operazione X avvia un'altra chiamata sincrona a X, la chiamata di annullamento potrebbe interrompere questa nuova richiesta di I/O.
+-   Quando si annulla l'I/O sincrono, tenere presente che può esistere un race condition ogni volta che un thread viene condiviso tra parti diverse di un'applicazione, ad esempio con un thread del pool di thread.
 
 ## <a name="operations-that-cannot-be-canceled"></a>Operazioni che non possono essere annullate
 
-Alcune funzioni non possono essere annullate mediante la funzione [**CancelIo**](cancelio.md), [**CancelIoEx**](cancelioex-func.md)o [**CancelSynchronousIo**](cancelsynchronousio-func.md) . Alcune di queste funzioni sono state estese per consentire l'annullamento (ad esempio, la funzione [**CopyFileEx**](/windows/desktop/api/WinBase/nf-winbase-copyfileexa) ) ed è consigliabile usarle. Oltre a supportare l'annullamento, queste funzioni dispongono anche di callback predefiniti per supportare l'utente durante il rilevamento dello stato di avanzamento dell'operazione. Le funzioni seguenti non supportano l'annullamento:
+Alcune funzioni non possono essere annullate usando la [**funzione CancelIo,**](cancelio.md) [**CancelIoEx**](cancelioex-func.md) [**o CancelSynchronousIo.**](cancelsynchronousio-func.md) Alcune di queste funzioni sono state estese per consentire l'annullamento (ad esempio, la [**funzione CopyFileEx)**](/windows/desktop/api/WinBase/nf-winbase-copyfileexa) ed è consigliabile usarle. Oltre a supportare l'annullamento, queste funzioni dispongono anche di callback predefiniti per supportare l'utente durante il rilevamento dello stato di avanzamento dell'operazione. Le funzioni seguenti non supportano l'annullamento:
 
--   [**CopyFile**](/windows/desktop/api/WinBase/nf-winbase-copyfile)-USA [ **CopyFileEx**](/windows/desktop/api/WinBase/nf-winbase-copyfileexa)
--   [**MoveFile**](/windows/desktop/api/WinBase/nf-winbase-movefile)-USA [ **MoveFileWithProgress**](/windows/desktop/api/WinBase/nf-winbase-movefilewithprogressa)
--   [**MoveFileEx**](/windows/desktop/api/WinBase/nf-winbase-movefileexa)-USA [ **MoveFileWithProgress**](/windows/desktop/api/WinBase/nf-winbase-movefilewithprogressa)
+-   [**CopyFile**](/windows/desktop/api/WinBase/nf-winbase-copyfile): usare [ **CopyFileEx**](/windows/desktop/api/WinBase/nf-winbase-copyfileexa)
+-   [**MoveFile:**](/windows/desktop/api/WinBase/nf-winbase-movefile)usare [ **MoveFileWithProgress**](/windows/desktop/api/WinBase/nf-winbase-movefilewithprogressa)
+-   [**MoveFileEx:**](/windows/desktop/api/WinBase/nf-winbase-movefileexa)usare [ **MoveFileWithProgress**](/windows/desktop/api/WinBase/nf-winbase-movefilewithprogressa)
 -   [**ReplaceFile**](/windows/desktop/api/WinBase/nf-winbase-replacefilea)
 
-Per ulteriori informazioni, vedere [linee guida di completamento/annullamento di I/O](https://www.microsoft.com/whdc/driver/kernel/iocancel.mspx).
+Per altre informazioni, vedere [Linee guida per il completamento/annullamento di I/O.](https://www.microsoft.com/whdc/driver/kernel/iocancel.mspx)
 
-## <a name="canceling-asynchronous-io"></a>Annullamento di I/O asincrono
+## <a name="canceling-asynchronous-io"></a>Annullamento dell'I/O asincrono
 
-È possibile annullare l'I/O asincrono da qualsiasi thread nel processo che ha emesso l'operazione di I/O. È necessario specificare l'handle su cui è stato eseguito l'i/O e, facoltativamente, la struttura sovrapposta usata per eseguire l'i/O. È possibile determinare se l'annullamento si è verificato esaminando lo stato restituito nella struttura sovrapposta o nel callback di completamento. Lo stato dell' **operazione di errore \_ \_ interrotto** indica che l'operazione è stata annullata.
+È possibile annullare l'I/O asincrono da qualsiasi thread del processo che ha emesso l'operazione di I/O. È necessario specificare l'handle su cui è stato eseguito l'I/O e, facoltativamente, la struttura sovrapposta usata per eseguire l'I/O. È possibile determinare se l'annullamento si è verificato esaminando lo stato restituito nella struttura sovrapposta o nel callback di completamento. Lo stato **ERROR \_ OPERATION \_ ABORTED** indica che l'operazione è stata annullata.
 
-Nell'esempio seguente viene illustrata una routine che accetta un timeout e tenta un'operazione di lettura, annullando la funzione [**CancelIoEx**](cancelioex-func.md) se il timeout scade.
+Nell'esempio seguente viene illustrata una routine che accetta un timeout e tenta un'operazione di lettura, annullarla con la [**funzione CancelIoEx**](cancelioex-func.md) se il timeout scade.
 
 
 ```C++
@@ -170,21 +170,21 @@ BOOL DoCancelableRead(HANDLE hFile,
 
 
 
-## <a name="canceling-synchronous-io"></a>Annullamento di I/O sincrono
+## <a name="canceling-synchronous-io"></a>Annullamento dell'I/O sincrono
 
-È possibile annullare l'I/O sincrono da qualsiasi thread nel processo che ha emesso l'operazione di I/O. È necessario specificare l'handle per il thread che sta attualmente eseguendo l'operazione di I/O.
+È possibile annullare l'I/O sincrono da qualsiasi thread del processo che ha emesso l'operazione di I/O. È necessario specificare l'handle per il thread che sta eseguendo l'operazione di I/O.
 
 Nell'esempio seguente vengono illustrate due routine:
 
--   La funzione **SynchronousIoWorker** è un thread di lavoro che implementa alcuni i/O di file sincroni, a partire da una chiamata alla funzione [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) . Se la routine ha esito positivo, la routine può essere seguita da operazioni aggiuntive, che non sono incluse in questa sezione. La variabile globale *gCompletionStatus* può essere usata per determinare se tutte le operazioni sono state completate o se un'operazione non è riuscita o è stata annullata. La variabile globale *dwOperationInProgress* indica se l'I/O del file è ancora in corso.
+-   La **funzione SynchronousIoWorker** è un thread di lavoro che implementa alcune operazioni di I/O sincrono dei file, a partire da una chiamata alla [**funzione CreateFile.**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) Se la routine ha esito positivo, la routine può essere seguita da operazioni aggiuntive, che non sono incluse qui. La variabile globale *gCompletionStatus* può essere usata per determinare se tutte le operazioni hanno avuto esito positivo o se un'operazione non è riuscita o è stata annullata. La variabile globale *dwOperationInProgress* indica se l'I/O del file è ancora in corso.
 
-    **Nota**  In questo esempio, il thread dell'interfaccia utente può verificare anche l'esistenza del thread di lavoro.
+    **Nota**  In questo esempio, il thread dell'interfaccia utente potrebbe anche verificare l'esistenza del thread di lavoro.
 
-    I controlli manuali aggiuntivi, che non sono inclusi in questo argomento, sono necessari nella funzione **SynchronousIoWorker** per assicurarsi che se l'annullamento è stato richiesto durante i brevi periodi tra le chiamate di i/O di file, il resto delle operazioni verrà annullato.
+    Ulteriori controlli manuali, che non sono inclusi qui, sono necessari nella funzione **SynchronousIoWorker** per garantire che, se l'annullamento è stato richiesto durante i brevi periodi tra le chiamate di I/O di file, il resto delle operazioni verrà annullato.
 
--   La funzione **MainUIThreadMessageHandler** simula il gestore di messaggi all'interno di una routine della finestra del thread dell'interfaccia utente. L'utente richiede un set di operazioni sincrone sui file facendo clic su un controllo, che genera un messaggio di finestra definito dall'utente, nella sezione contrassegnata da WM con una **\_ sincope**. Viene creato un nuovo thread utilizzando la funzione **CreateFileThread** , che avvia quindi la funzione **SynchronousIoWorker** è. Il thread dell'interfaccia utente continua a elaborare i messaggi mentre il thread di lavoro esegue l'I/O richiesto. Se l'utente decide di annullare le operazioni non completate, in genere facendo clic su un pulsante Annulla, la routine (nella sezione contrassegnata da **WM \_ Annulla**) chiama la funzione [**CancelSynchronousIo**](cancelsynchronousio-func.md) usando l'handle del thread restituito dalla funzione **CreateFileThread** . La funzione **CancelSynchronousIo** viene restituita immediatamente dopo il tentativo di annullamento. Infine, l'utente o l'applicazione può richiedere successivamente un'altra operazione che dipende dal fatto che le operazioni sui file siano state completate. In questo caso, la routine (nella sezione contrassegnata da **WM \_ PROCESSDATA**) verifica prima di tutto che le operazioni siano state completate e quindi esegue le operazioni di pulizia.
+-   La **funzione MainUIThreadMessageHandler** simula il gestore di messaggi all'interno della routine della finestra di un thread dell'interfaccia utente. L'utente richiede un set di operazioni su file sincrone facendo clic su un controllo , che genera un messaggio di finestra definito dall'utente ( nella sezione contrassegnata da **WM \_ MYSYNCOPS).** Verrà creato un nuovo thread usando la **funzione CreateFileThread,** che avvia quindi la **funzione SynchronousIoWorker.** Il thread dell'interfaccia utente continua a elaborare i messaggi mentre il thread di lavoro esegue l'I/O richiesto. Se l'utente decide di annullare le operazioni non ancora eseguite (in genere facendo clic su un pulsante Annulla), la routine (nella sezione contrassegnata da **WM \_ MYCANCEL)** chiama la funzione [**CancelSynchronousIo**](cancelsynchronousio-func.md) usando l'handle di thread restituito dalla funzione **CreateFileThread.** La **funzione CancelSynchronousIo restituisce** immediatamente dopo il tentativo di annullamento. Infine, l'utente o l'applicazione può richiedere in un secondo momento un'altra operazione che dipende dal completamento o meno delle operazioni sui file. In questo caso, la routine (nella sezione contrassegnata da **WM \_ PROCESSDATA**) verifica innanzitutto che le operazioni sono state completate e quindi esegue le operazioni di pulizia.
 
-    **Nota**  In questo esempio, dal momento che l'annullamento potrebbe essersi verificato in qualsiasi punto della sequenza di operazioni, potrebbe essere necessario che il chiamante assicuri che lo stato sia coerente o almeno compreso prima di procedere.
+    **Nota**  In questo esempio, poiché l'annullamento avrebbe potuto verificarsi in qualsiasi punto della sequenza di operazioni, potrebbe essere necessario che il chiamante assicuri che lo stato sia coerente, o almeno compreso, prima di procedere.
 
 
 ```C++

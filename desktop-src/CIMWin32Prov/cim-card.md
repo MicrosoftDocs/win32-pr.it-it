@@ -1,5 +1,5 @@
 ---
-description: La classe CIM Card rappresenta un tipo di contenitore fisico che può essere collegato a un'altra scheda o scheda di hosting oppure è a sua volta una scheda di \_ hosting/scheda madre in uno chassis.
+description: La classe CIM Card rappresenta un tipo di contenitore fisico che può essere collegato a un'altra scheda o scheda di hosting oppure è a sua volta una scheda di hosting o una scheda madre \_ in uno chassis.
 ms.assetid: edbbfe43-c8e8-4cde-9507-e0a248c15ca7
 ms.tgt_platform: multiple
 title: CIM_Card classe
@@ -50,10 +50,10 @@ ms.locfileid: "119284521"
 ---
 # <a name="cim_card-class"></a>Classe CIM \_ Card
 
-La **classe CIM \_ Card** rappresenta un tipo di contenitore fisico che può essere collegato a un'altra scheda o scheda di hosting oppure è a sua volta una scheda di hosting/scheda madre in uno chassis. Questa classe include qualsiasi pacchetto in grado di trasportare segnali e fornire un punto di montaggio per i componenti fisici, ad esempio chip o altri pacchetti fisici, ad esempio altre schede.
+La **classe CIM \_ Card** rappresenta un tipo di contenitore fisico che può essere collegato a un'altra scheda o scheda di hosting oppure è a sua volta una scheda di hosting o una scheda madre in uno chassis. Questa classe include qualsiasi pacchetto in grado di trasportare segnali e fornire un punto di montaggio per i componenti fisici, ad esempio chip o altri pacchetti fisici, ad esempio altre schede.
 
 > [!IMPORTANT]
-> Le classi CIM DMTF (Distributed Management Task Force) (Common Information Model) sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -104,7 +104,7 @@ La **classe CIM \_ Card** ha questi tipi di membri:
 
 ### <a name="methods"></a>Metodi
 
-La **classe della \_ scheda CIM** dispone di questi metodi.
+La **classe CIM \_ Card** include questi metodi.
 
 
 
@@ -118,14 +118,14 @@ La **classe della \_ scheda CIM** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La **classe della \_ scheda CIM** ha queste proprietà.
+La **classe CIM \_ Card** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -134,7 +134,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
-Breve descrizione testuale dell'oggetto.
+Breve descrizione testuale dell'oggetto .
 
 Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -143,7 +143,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -152,7 +152,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**CIM \_ Key,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome della classe o sottoclasse utilizzata nella creazione di un'istanza di . Se usata con altre proprietà chiave della classe , questa proprietà consente l'identificazione univoca di tutte le istanze della classe e delle relative sottoclassi.
+Nome della classe o della sottoclasse utilizzata nella creazione di un'istanza. Se usata con altre proprietà chiave della classe , questa proprietà consente l'identificazione univoca di tutte le istanze della classe e delle relative sottoclassi.
 
 Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
@@ -179,7 +179,7 @@ Questa proprietà viene ereditata da [**CIM \_ PhysicalPackage.**](cim-physicalp
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -221,7 +221,7 @@ Tipo di dati: **booleano**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **TRUE,** questa scheda è una scheda madre o, più genericamente, una baseboard in uno chassis.
+Se **TRUE,** questa scheda è una scheda madre o, più genericamente, una scheda di base in uno chassis.
 
 </dd> <dt>
 
@@ -234,7 +234,7 @@ Tipo di dati: **booleano**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **TRUE,** il pacchetto può essere scambiato a caldo. Un pacchetto fisico può essere scambiato a caldo se l'elemento può essere sostituito da un pacchetto fisicamente diverso (ma equivalente) mentre il pacchetto contenitore è attivato. Ad esempio, un componente ventola può essere progettato per lo scambio a caldo. Tutti i componenti che possono essere scambiati a caldo sono intrinsecamente rimovibili e sostituibili.
+Se **TRUE,** il pacchetto può essere scambiato a caldo. Un pacchetto fisico può essere scambiato a caldo se l'elemento può essere sostituito da un pacchetto fisicamente diverso (ma equivalente) mentre il pacchetto contenitore è attivato. Ad esempio, un componente della ventola può essere progettato per essere scambiato a caldo. Tutti i componenti che possono essere scambiati a caldo sono intrinsecamente rimovibili e sostituibili.
 
 Questa proprietà viene ereditata da [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
@@ -261,7 +261,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 **Produttore**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -270,7 +270,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome dell'organizzazione responsabile della produzione dell'elemento fisico. Per altre informazioni, vedere la **proprietà Vendor** di [**CIM \_ Product.**](cim-product.md)
+Nome dell'organizzazione responsabile della produzione dell'elemento fisico. Per altre informazioni, vedere la **proprietà Vendor** di [**CIM \_ Product**](cim-product.md).
 
 Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
@@ -279,7 +279,7 @@ Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicale
 **Modello**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -297,7 +297,7 @@ Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicale
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -306,7 +306,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
-Etichetta con cui l'oggetto è noto. Quando è sottoclassata, questa proprietà può essere sottoposta a override come proprietà chiave.
+Etichetta con cui l'oggetto è noto. Quando è sottoclassata, questa proprietà può essere sottoposta a override per essere una proprietà chiave.
 
 Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -315,13 +315,13 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 **OtherIdentifyingInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Dati aggiuntivi, oltre alle informazioni sui tag degli asset, che possono essere usati per identificare un elemento fisico. Un esempio è dato da dati di codice a barre associati a un elemento, che ha anche un tag di asset. Si noti che se sono disponibili solo dati di codice a barre e sono univoci e possono essere usati come chiave dell'elemento, questa proprietà sarà Null e i dati del codice a barre verrebbero usati come chiave di classe nella **proprietà Tag.**
+Dati aggiuntivi, oltre alle informazioni sui tag di asset, che possono essere usati per identificare un elemento fisico. Un esempio è dato dal codice a barre associato a un elemento, che include anche un tag di asset. Si noti che se sono disponibili solo dati di codice a barre e sono univoci e possono essere usati come chiave dell'elemento, questa proprietà sarà Null e i dati del codice a barre verranno usati come chiave di classe nella **proprietà Tag.**
 
 Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
@@ -402,7 +402,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**SCHEDA CIM \_**.**SpecialRequirements**")
 </dt> </dl>
 
-Stringa in formato libero che descrive i modi in cui la scheda è fisicamente univoca da altre schede. Questa proprietà ha significato solo quando la proprietà booleana corrispondente, **SpecialRequirements**, è impostata su **TRUE.**
+Stringa in formato libero che descrive i modi in cui la scheda è fisicamente univoca da altre schede. Questa proprietà ha significato solo quando la proprietà booleana **corrispondente, SpecialRequirements**, è impostata su **TRUE.**
 
 </dd> <dt>
 
@@ -480,7 +480,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**SCHEDA CIM \_**.**RequirementsDescription**")
 </dt> </dl>
 
-Se **TRUE,** la scheda è fisicamente univoca rispetto ad altre schede dello stesso tipo e, pertanto, richiede uno slot speciale. Ad esempio, una scheda a doppia larghezza richiede due slot. Un altro esempio è quello in cui una determinata scheda può essere usata per la stessa funzione generale delle altre schede, ma richiede uno slot speciale (ad esempio, molto lungo). mentre altre schede possono essere inserite in qualsiasi slot disponibile. Se **TRUE,** la proprietà **RequirementsDescription** corrispondente deve specificare la natura dell'univocità o dello scopo della scheda.
+Se **TRUE,** la scheda è fisicamente univoca da altre schede dello stesso tipo e, pertanto, richiede uno slot speciale. Ad esempio, una scheda a larghezza doppia richiede due slot. Un altro esempio è quando una determinata scheda può essere usata per la stessa funzione generale delle altre schede, ma richiede uno slot speciale (ad esempio, molto lungo). mentre altre schede possono essere inserite in qualsiasi slot disponibile. Se **TRUE,** la proprietà **RequirementsDescription** corrispondente deve specificare la natura dell'univocità o dello scopo della scheda.
 
 </dd> <dt>
 
@@ -658,7 +658,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("pollici")
 </dt> </dl>
 
-Larghezza del pacchetto fisico, espressa in pollici.
+Larghezza del pacchetto fisico, in pollici.
 
 Questa proprietà viene ereditata da [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
@@ -666,11 +666,11 @@ Questa proprietà viene ereditata da [**CIM \_ PhysicalPackage.**](cim-physicalp
 
 ## <a name="remarks"></a>Commenti
 
-La **classe CIM \_ Card** è derivata da [**CIM \_ PhysicalPackage**](cim-physicalpackage.md).
+La **classe della \_ scheda CIM** è derivata da [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
-WMI non implementa questa classe. Per altre informazioni sulle classi derivate **dalla scheda \_ CIM,** vedere [Classi Win32](win32-provider.md).
+WMI non implementa questa classe. Per altre informazioni sulle classi derivate **dalla scheda \_ CIM,** vedere [Classi Win32.](win32-provider.md)
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 

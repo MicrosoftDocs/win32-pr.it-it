@@ -1,10 +1,10 @@
 ---
-title: Attributo Current-Location
-description: Percorso del computer per un oggetto che è stato spostato.
+title: Current-Location attributo
+description: Percorso del computer per un oggetto spostato.
 ms.assetid: b8767fcd-48f5-420c-9cbf-095ab1aee729
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Current-Location attribute
+- Current-Location schema AD dell'attributo
 - Schema AD dell'attributo currentLocation
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b37e2acb97806ad6cf72736d39e0c9a0e6c6d217
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ed3f5c805c72f83bfab28a9272448e87a7ec34053979e1066f06196584e18155
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509281"
 ---
-# <a name="current-location-attribute"></a>Attributo Current-Location
+# <a name="current-location-attribute"></a>Current-Location attributo
 
-Percorso del computer per un oggetto che è stato spostato.
+Percorso del computer per un oggetto spostato.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | Current-Location                                      |
-| LDAP-Display-Name | currentLocation                                       |
+| Ldap-Display-Name | currentLocation                                       |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.                      |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.                      |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.335                                |
-| System-ID-GUID    | 1f0075fc-7e40-11d0-afd6-00c04fd930c9                  |
+| System-Id-Guid    | 1f0075fc-7e40-11d0-afd6-00c04fd930c9                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Percorso del computer per un oggetto che è stato spostato.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Percorso del computer per un oggetto che è stato spostato.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Percorso del computer per un oggetto che è stato spostato.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Percorso del computer per un oggetto che è stato spostato.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Percorso del computer per un oggetto che è stato spostato.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Percorso del computer per un oggetto che è stato spostato.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 

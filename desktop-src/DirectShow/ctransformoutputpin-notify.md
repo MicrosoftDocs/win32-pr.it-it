@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9a55e493c737b5a5864ec0a8dd38eee3abbfa586
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 69cff051ecab1a93d9fdceac20143bef7d1959ff523aa5893e5ae9c633aa80f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119538141"
 ---
 # <a name="ctransformoutputpinnotify-method"></a>Metodo CTransformOutputPin.Notify
 
@@ -74,7 +74,7 @@ Restituisce un **valore HRESULT.** I valori possibili includono quelli illustrat
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo chiama il metodo [**CTransformFilter::AlterQuality del**](ctransformfilter-alterquality.md) filtro. Se il filtro non gestisce il messaggio di qualità, questo metodo chiama il metodo [**CBaseInputPin::P assNotify**](cbaseinputpin-passnotify.md) sul pin di input del filtro. Il **metodo PassNotify** passa il messaggio di qualità upstream (o a un gestore qualità personalizzato, se ne è stato installato uno).
+Questo metodo chiama il metodo [**CTransformFilter::AlterQuality del**](ctransformfilter-alterquality.md) filtro. Se il filtro non gestisce il messaggio di qualità, questo metodo chiama il metodo [**CBaseInputPin::P assNotify**](cbaseinputpin-passnotify.md) sul pin di input del filtro. Il **metodo PassNotify** passa il messaggio di qualità a monte (o a un responsabile qualità personalizzato, se ne è stato installato uno).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,7 +82,7 @@ Questo metodo chiama il metodo [**CTransformFilter::AlterQuality del**](ctransfo
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

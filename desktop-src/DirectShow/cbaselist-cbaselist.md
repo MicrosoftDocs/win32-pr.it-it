@@ -50,7 +50,7 @@ Puntatore al nome dell'elenco.
 
 </dd> <dt>
 
-*Elementi iItems* 
+*iItems* 
 </dt> <dd>
 
 Dimensioni della cache del nodo.

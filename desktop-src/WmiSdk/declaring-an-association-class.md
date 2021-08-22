@@ -22,19 +22,19 @@ La procedura seguente descrive come creare una classe di associazione usando il 
 
 1.  Assegnare **il qualificatore** Association alla classe.
 
-    Anche se è possibile creare una classe con riferimenti  a oggetti o classi, l'uso del qualificatore association non solo rende chiaro che la classe è una classe di associazione, ma, come procedura consigliata, garantisce che la classe funzioni completamente come classe di associazione.
+    Sebbene sia possibile creare una classe con riferimenti a  oggetti o classi, l'uso del qualificatore association non solo rende chiaro che la classe è una classe di associazione, ma, come procedura consigliata, garantisce che la classe funzioni completamente come classe di associazione.
 
-2.  Creare due riferimenti all'interno della classe che descrivono le due istanze di oggetto che si desidera associare usando il **tipo ref.**
+2.  Creare due riferimenti all'interno della classe che descrivono le due istanze dell'oggetto da associare usando il **tipo ref.**
 
-    I riferimenti associano i due oggetti nell'associazione con i percorsi agli oggetti. Anche se non è obbligatorio, usare anche le proprietà di riferimento come proprietà chiave.
+    I riferimenti associano i due oggetti nell'associazione mediante l'associazione di percorsi agli oggetti. Sebbene non sia obbligatorio, usare anche le proprietà di riferimento come proprietà chiave.
 
-    Anche se è possibile creare riferimenti completi o relativi allo spazio dei nomi, WMI ha solo un supporto limitato per i riferimenti tra spazi dei nomi. In particolare, solo gli oggetti definiti in modo statico possono fare riferimento tra loro attraverso i limiti dello spazio dei nomi. Gli oggetti supportati dinamicamente non possono fare riferimento tra loro.
+    Sebbene sia possibile creare riferimenti completi o relativi allo spazio dei nomi, WMI ha solo un supporto limitato per i riferimenti tra spazi dei nomi. In particolare, solo gli oggetti definiti in modo statico possono fare riferimento tra loro attraverso i limiti dello spazio dei nomi. Gli oggetti supportati dinamicamente non possono fare riferimento tra loro.
 
     Se necessario, usare i **qualificatori HasClassRef** e **Classref** insieme al tipo **di** riferimento dell'oggetto per fare riferimento a una classe.
 
-    WMI supporta la presenza di un punto **di** riferimento di riferimento a un'istanza e dell'altro  riferimento a un oggetto a una classe. In questo caso, la classe di associazione descrive un'associazione che associa le istanze alle classi.
+    WMI supporta la presenza di un **punto di** riferimento di riferimento a un'istanza e dell'altro punto di riferimento a un oggetto a una classe.  In questo caso, la classe di associazione descrive un'associazione che associa istanze alle classi.
 
-    Nell'esempio di codice seguente viene descritta la sintassi per l'uso **di HasClassRef** e **Classref** con un **tipo di** oggetto.
+    L'esempio di codice seguente descrive la sintassi per l'uso **di HasClassRef** **e Classref** con un **tipo di** oggetto.
 
     ``` syntax
     [HasClassRefs, Association]
@@ -46,11 +46,11 @@ La procedura seguente descrive come creare una classe di associazione usando il 
     }; 
     ```
 
-    Nell'esempio precedente il riferimento **ep1** può puntare alle definizioni di classe per la **classe MyEndpoint** o **OtherContainer.** Si noti che anche se è necessario digitare in modo debole la classe di riferimento, non è possibile digitare in modo debole il qualificatore **Classref** stesso. In questo modo si ridurrebbe notevolmente l'efficienza del motore di query WMI. La tipizzazione debole crea un riferimento che può contenere qualsiasi tipo di dati usando la parola **chiave object** e il tipo di dati **ref.** Per usare correttamente **HasClassRef,** è necessario impostare le varianti del qualificatore pertinenti in modo che vengano propagate a tutte le istanze e sottoclassi.
+    Nell'esempio precedente il riferimento **ep1** può puntare alle definizioni di classe per la **classe MyEndpoint** o **otherContainer.** Si noti che anche se è necessario digitare in modo debole la classe di riferimento, non è possibile digitare in modo debole il **qualificatore Classref** stesso; in modo da ridurre notevolmente l'efficienza del motore di query WMI. La tipizzazione debole crea un riferimento che può contenere qualsiasi tipo di dati usando la parola **chiave object** e il tipo di dati **ref.** Per usare correttamente **HasClassRef,** è necessario impostare i tipi di qualificatori pertinenti per la propagazione a tutte le istanze e sottoclassi.
 
 3.  Creare eventuali altre proprietà in base alle esigenze.
 
-    L'esempio di codice seguente mostra che WMI attualmente non supporta le classi di associazione con meno o più di due proprietà di riferimento.
+    Nell'esempio di codice seguente WMI non supporta attualmente classi di associazione con meno o più di due proprietà di riferimento.
 
     ``` syntax
     [Association : ToInstance] 
@@ -63,9 +63,9 @@ La procedura seguente descrive come creare una classe di associazione usando il 
 
 4.  Al termine, compilare il codice MOF con il compilatore MOF.
 
-    Per altre informazioni, vedere [Compilazione di file MOF](compiling-mof-files.md).
+    Per altre informazioni, vedere [Compilazione di file MOF.](compiling-mof-files.md)
 
-L'esempio di codice nel passaggio 3 definisce la classe di associazione **MyAssocClass.** La **classe MyAssocClass** definisce una relazione tra **ClassX** e **ClassY**. Le **proprietà PathToClassX** e **PathToClassY** contengono percorsi di oggetti per le istanze delle classi da associare. La parola **chiave ToInstance** è uno dei diversi flag flavor definiti da WMI per fornire informazioni sull'uso di un qualificatore. La **parola chiave ToInstance** indica che WMI deve propagare il qualificatore **Association** a tutte le istanze della classe di associazione. Controllando questo qualificatore di istanza, il software client può determinare che un'istanza appartiene a una classe di associazione, senza dover recuperare la definizione della classe per cercare il qualificatore **Association.** Per altre informazioni, vedere [Descrizione di un qualificatore con un qualificatore Flavor](describing-a-qualifier-with-a-qualifier-flavor.md) e [Riferimenti](references.md).
+L'esempio di codice nel passaggio 3 definisce la **classe di associazione MyAssocClass.** La **classe MyAssocClass** definisce una relazione tra **ClassX** e **ClassY.** Le **proprietà PathToClassX** **e PathToClassY** contengono i percorsi degli oggetti alle istanze delle classi da associare. La parola **chiave ToInstance** è uno dei diversi flag flavor definiti da WMI per fornire informazioni sull'uso di un qualificatore. La **parola chiave ToInstance** indica che WMI deve propagare il qualificatore **Association** a tutte le istanze della classe di associazione. Controllando questo qualificatore di istanza, il software client può determinare che un'istanza appartiene a una classe di associazione, senza dover recuperare la definizione della classe per cercare il qualificatore **association.** Per altre informazioni, vedere [Descrizione di un qualificatore con una descrizione qualificatore](describing-a-qualifier-with-a-qualifier-flavor.md) e [riferimenti.](references.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

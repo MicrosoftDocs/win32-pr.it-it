@@ -1,6 +1,6 @@
 ---
 title: Tipi enumerati WFP
-description: I Windows enumerati dell'API WFP (Windows Filtering Platform) sono i seguenti.
+description: I Windows enumerati dell'API WFP (Filtering Platform) sono i seguenti.
 ms.assetid: 39029412-18ce-426a-a79d-cf25ff0dfe0d
 keywords:
 - Windows Applicazione di filtri ai tipi enumerati dell'API della piattaforma
@@ -15,7 +15,7 @@ ms.locfileid: "119069301"
 ---
 # <a name="wfp-enumerated-types"></a>Tipi enumerati WFP
 
-I Windows enumerati dell'API WFP (Windows Filtering Platform) sono i seguenti.
+I Windows enumerati dell'API WFP (Filtering Platform) sono i seguenti.
 
 Tipi di gestione
 

@@ -1,9 +1,9 @@
 ---
-title: funzione glGetTexGeniv (GL. h)
-description: Le funzioni glGetTexGendv, glGetTexGenfv e glGetTexGeniv restituiscono parametri di generazione delle coordinate di trama. | funzione glGetTexGeniv (GL. h)
+title: Funzione glGetTexGeniv (Gl.h)
+description: Le funzioni glGetTexGendv, glGetTexGenfv e glGetTexGeniv restituiscono parametri di generazione delle coordinate di trama. | Funzione glGetTexGeniv (Gl.h)
 ms.assetid: 62c481d1-4862-43bb-9319-5a282c4e47d3
 keywords:
-- funzione glGetTexGeniv OpenGL
+- Funzione glGetTexGeniv OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29569c84d21dbb2cd69579c78747e844cfd23ba4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d6eb9fbca41f8ad9fe9564c45f3ece21af58e5e16b7bb4ac85d0f6b1d2b428bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493771"
 ---
-# <a name="glgettexgeniv-function"></a>glGetTexGeniv (funzione)
+# <a name="glgettexgeniv-function"></a>Funzione glGetTexGeniv
 
-Le funzioni [**glGetTexGendv**](glgettexgendv.md), [**glGetTexGenfv**](glgettexgenfv.md)e **glGetTexGeniv** restituiscono parametri di generazione delle coordinate di trama.
+Le [**funzioni glGetTexGendv**](glgettexgendv.md), [**glGetTexGenfv**](glgettexgenfv.md)e **glGetTexGeniv** restituiscono parametri di generazione delle coordinate di trama.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,22 +45,22 @@ void WINAPI glGetTexGeniv(
 *Coord* 
 </dt> <dd>
 
-Coordinata di trama. Deve essere GL \_ S, GL \_ T, GL \_ R o GL \_ Q.
+Coordinata della trama. Deve essere GL \_ S, GL \_ T, GL \_ R o GL \_ Q.
 
 </dd> <dt>
 
-*pname* 
+*Pname* 
 </dt> <dd>
 
-Nome simbolico del valore o dei valori da restituire. Deve essere \_ \_ \_ la modalità gen della trama GL o il nome di una delle equazioni del piano di generazione della trama, ovvero il \_ piano dell'oggetto GL o il \_ \_ piano GL Eye \_ . Questi valori sono i seguenti.
+Nome simbolico dei valori da restituire. Deve essere GL TEXTURE GEN MODE o il nome di una delle equazioni del piano di generazione della \_ \_ \_ trama: GL \_ OBJECT PLANE o GL EYE \_ \_ \_ PLANE. Questi valori sono i seguenti.
 
 
 
 | Valore                                                                                                                                                                             | Significato                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GL_TEXTURE_GEN_MODE"></span><span id="gl_texture_gen_mode"></span><dl> <dt>**\_modalità di \_ generazione \_ trama GL**</dt> </dl> | Il parametro *params* restituisce la funzione di generazione della trama a valore singolo, una costante simbolica.<br/>                                                                                                                                                                                                                                                                                                                                                            |
-| <span id="GL_OBJECT_PLANE"></span><span id="gl_object_plane"></span><dl> <dt>**\_piano oggetto \_ GL**</dt> </dl>              | Il parametro *params* restituisce i quattro coefficienti di equazione del piano che specificano la generazione della coordinata lineare dell'oggetto. Per i valori integer, quando richiesto, viene eseguito il mapping direttamente dalla rappresentazione a virgola mobile interna.<br/>                                                                                                                                                                                                                                    |
-| <span id="GL_EYE_PLANE"></span><span id="gl_eye_plane"></span><dl> <dt>**\_piano d'occhio GL \_**</dt> </dl>                       | Il parametro *params* restituisce i quattro coefficienti di equazione del piano che specificano la generazione della coordinata lineare degli occhi. Per i valori integer, quando richiesto, viene eseguito il mapping direttamente dalla rappresentazione a virgola mobile interna. I valori restituiti sono quelli mantenuti in coordinate oculari. Non sono uguali ai valori specificati tramite [**glTexGen**](gltexgen-functions.md), a meno che non sia stata identificata la matrice Modelview al momento della chiamata di **glTexGen** .<br/> |
+| <span id="GL_TEXTURE_GEN_MODE"></span><span id="gl_texture_gen_mode"></span><dl> <dt>**MODALITÀ \_ GEN \_ TRAMA GL \_**</dt> </dl> | Il *parametro params* restituisce la funzione di generazione della trama a valore singolo, una costante simbolica.<br/>                                                                                                                                                                                                                                                                                                                                                            |
+| <span id="GL_OBJECT_PLANE"></span><span id="gl_object_plane"></span><dl> <dt>**PIANO OGGETTI GL \_ \_**</dt> </dl>              | Il *parametro params* restituisce i quattro coefficienti dell'equazione del piano che specificano la generazione di coordinate lineari dell'oggetto. I valori interi, se richiesti, vengono mappati direttamente dalla rappresentazione a virgola mobile interna.<br/>                                                                                                                                                                                                                                    |
+| <span id="GL_EYE_PLANE"></span><span id="gl_eye_plane"></span><dl> <dt>**GL \_ EYE \_ PLANE**</dt> </dl>                       | Il *parametro params* restituisce i quattro coefficienti dell'equazione del piano che specificano la generazione delle coordinate lineari oculare. I valori interi, se richiesti, vengono mappati direttamente dalla rappresentazione a virgola mobile interna. I valori restituiti sono quelli mantenuti nelle coordinate oculare. Non sono uguali ai valori specificati usando [**glTexGen**](gltexgen-functions.md), a meno che la matrice modelview non sia stata identificata al momento della chiamata **di glTexGen.**<br/> |
 
 
 
@@ -81,20 +81,20 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-I codici di errore seguenti possono essere recuperati dalla funzione [**glGetError**](glgeterror.md) .
+I codici di errore seguenti possono essere recuperati dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumerazione GL non valida \_**</dt> </dl>      | *Coord* o *pname* non è un valore accettato.<br/>                                                                              |
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**ENUMERAZIONE GL \_ \_ NON VALIDA**</dt> </dl>      | *coord* o *pname* non è un valore accettato.<br/>                                                                              |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **glGetTexGen** restituisce parametri selezionati in *params* di una funzione di generazione della coordinata di trama specificata con **glTexGen**. Il parametro *Coord* denomina una delle coordinate di trama (*s*, *t*, *r*, *q*), usando la costante simbolica GL \_ s, GL \_ t, GL \_ r o GL \_ q.
+La **funzione glGetTexGen** restituisce nei *parametri selezionati* parametri di una funzione di generazione delle coordinate della trama specificata con **glTexGen.** Il *parametro coord* specifica una delle coordinate di trama (*s*, *t*, *r*, *q*) usando la costante simbolica GL \_ S, GL \_ T, GL R o GL \_ \_ Q.
 
 Se viene generato un errore, non viene apportata alcuna modifica al contenuto di *params*.
 
@@ -106,8 +106,8 @@ Se viene generato un errore, non viene apportata alcuna modifica al contenuto di
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -119,7 +119,7 @@ Se viene generato un errore, non viene apportata alcuna modifica al contenuto di
 [**glBegin**](glbegin.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glTexGen**](gltexgen-functions.md)

@@ -1,10 +1,10 @@
 ---
-title: Default-Security-Descriptor-attributo
+title: Attributo Default-Security-Descriptor
 description: Descrittore di sicurezza da assegnare all'oggetto quando viene creato per la prima volta.
 ms.assetid: 22575883-2ef3-492b-9868-1eb350c4f547
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD dell'attributo default-Security-Descriptor
+- Schema AD dell'attributo Default-Security-Descriptor
 - Schema AD dell'attributo defaultSecurityDescriptor
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cd0b4a8dbe0c633a15b6a5167cb1171a14d1769
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b71610e0f970962e8145808d3e4038306dc955ea631f07112b8eb4b57c13e5f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104479736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509071"
 ---
-# <a name="default-security-descriptor-attribute"></a>Default-Security-Descriptor-attributo
+# <a name="default-security-descriptor-attribute"></a>Attributo Default-Security-Descriptor
 
 Descrittore di sicurezza da assegnare all'oggetto quando viene creato per la prima volta.
 
@@ -30,12 +30,12 @@ Descrittore di sicurezza da assegnare all'oggetto quando viene creato per la pri
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Descrittore di sicurezza predefinito                 |
-| LDAP-Display-Name | defaultSecurityDescriptor                   |
+| Ldap-Display-Name | defaultSecurityDescriptor                   |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Amministratore schema                        |
+| Aggiorna privilegio  | Amministratore dello schema                        |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.224                      |
-| System-ID-GUID    | 807a6d30-1669-11d0-a064-00aa006c33ed        |
+| System-Id-Guid    | 807a6d30-1669-11d0-a064-00aa006c33ed        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -44,7 +44,7 @@ Descrittore di sicurezza da assegnare all'oggetto quando viene creato per la pri
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Descrittore di sicurezza da assegnare all'oggetto quando viene creato per la pri
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 32767                                            |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Descrittore di sicurezza da assegnare all'oggetto quando viene creato per la pri
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 32767                                            |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Descrittore di sicurezza da assegnare all'oggetto quando viene creato per la pri
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 32767                                            |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Descrittore di sicurezza da assegnare all'oggetto quando viene creato per la pri
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 32767                                            |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Descrittore di sicurezza da assegnare all'oggetto quando viene creato per la pri
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 32767                                            |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Descrittore di sicurezza da assegnare all'oggetto quando viene creato per la pri
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 32767                                            |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Descrittore di sicurezza da assegnare all'oggetto quando viene creato per la pri
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 32767                                            |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 

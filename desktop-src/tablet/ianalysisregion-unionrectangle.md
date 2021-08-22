@@ -1,7 +1,7 @@
 ---
-description: Espande l'area di questo IAnalysisRegion all'area creata dalla relativa unione con il rettangolo specificato.
+description: Espande l'area di questa area IAnalysisRegion nell'area creata dalla relativa unione con il rettangolo specificato.
 ms.assetid: 9b12f509-4f6a-43b0-9639-bef060fd6d50
-title: 'Metodo IAnalysisRegion:: UnionRectangle (IACom. h)'
+title: Metodo IAnalysisRegion::UnionRectangle (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 3a28a60eae95641225dd9c01791d89a9c38ada82
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da3eefb3a527646ba416d62783421d6dfe9be5706c0527df7eb321d3945b6f92
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119596752"
 ---
-# <a name="ianalysisregionunionrectangle-method"></a>Metodo IAnalysisRegion:: UnionRectangle
+# <a name="ianalysisregionunionrectangle-method"></a>Metodo IAnalysisRegion::UnionRectangle
 
-Espande l'area di questo [**IAnalysisRegion**](ianalysisregion.md) all'area creata dalla relativa unione con il rettangolo specificato.
+Espande l'area di [**questa area IAnalysisRegion**](ianalysisregion.md) nell'area creata dalla relativa unione con il rettangolo specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,20 +39,20 @@ HRESULT UnionRectangle(
 
 <dl> <dt>
 
-*pRectangle* \[ in\]
+*pRectangle* \[ Pollici\]
 </dt> <dd>
 
-Puntatore al rettangolo con il quale combinare le coordinate dello spazio input penna.
+Puntatore al rettangolo con cui combinare, in coordinate dello spazio input penna.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Commenti
 
-Le coordinate del rettangolo sono espresse in unità HIMETRIC.
+Le coordinate del rettangolo sono in unità HIMETRIC.
 
 Se una delle due aree è infinita, anche la nuova area è infinita.
 
@@ -62,9 +62,9 @@ Se una delle due aree è infinita, anche la nuova area è infinita.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -73,25 +73,25 @@ Se una delle due aree è infinita, anche la nuova area è infinita.
 
 <dl> <dt>
 
-[**IAnalysisRegion**](ianalysisregion.md)
+[**Area IAnalysis**](ianalysisregion.md)
 </dt> <dt>
 
 [**IAnalysisRegion::ExcludeRectangle**](ianalysisregion-excluderectangle.md)
 </dt> <dt>
 
-[**Metodo IAnalysisRegion:: ExcludeRegion**](ianalysisregion-excluderegion.md)
+[**Metodo IAnalysisRegion::ExcludeRegion**](ianalysisregion-excluderegion.md)
 </dt> <dt>
 
-[**Metodo IAnalysisRegion:: IntersectRectangle**](ianalysisregion-intersectrectangle.md)
+[**Metodo IAnalysisRegion::IntersectRectangle**](ianalysisregion-intersectrectangle.md)
 </dt> <dt>
 
-[**Metodo IAnalysisRegion:: IntersectRegion**](ianalysisregion-intersectregion.md)
+[**Metodo IAnalysisRegion::IntersectRegion**](ianalysisregion-intersectregion.md)
 </dt> <dt>
 
-[**Metodo IAnalysisRegion:: UnionRegion**](ianalysisregion-unionregion.md)
+[**Metodo IAnalysisRegion::UnionRegion**](ianalysisregion-unionregion.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

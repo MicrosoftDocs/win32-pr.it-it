@@ -4,9 +4,9 @@ description: Chiamato quando viene visualizzata una finestra di RemoteApp.
 ms.assetid: B1E83486-50CB-4CA4-BD01-2C72938335AF
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnRemoteWindowDisplayed
-- Metodo OnRemoteWindowDisplayed Servizi Desktop remoto, interfaccia IMsTscAxEvents
-- Interfaccia IMsTscAxEvents Servizi Desktop remoto, metodo OnRemoteWindowDisplayed
+- Metodo OnRemoteWindowDisplayed Servizi Desktop remoto
+- Metodo OnRemoteWindowDisplayed Servizi Desktop remoto , interfaccia IMsTscAxEvents
+- Metodo OnRemoteWindowDisplayed dell'Servizi Desktop remoto IMsTscAxEvents
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f03029f31e1ce2133c74c92c0d6d57f192e4d85f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6985a71fe6351a81b2daef69401dfd5c65543e9984fd64c28a120704a34d5a8a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512111"
 ---
-# <a name="imstscaxeventsonremotewindowdisplayed-method"></a>Metodo IMsTscAxEvents:: OnRemoteWindowDisplayed
+# <a name="imstscaxeventsonremotewindowdisplayed-method"></a>Metodo IMsTscAxEvents::OnRemoteWindowDisplayed
 
 Chiamato quando viene visualizzata una finestra di RemoteApp.
 
@@ -45,16 +45,16 @@ void OnRemoteWindowDisplayed(
 
 <dl> <dt>
 
-*vbDisplayed* \[ in\]
+*vbDisplayed* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Variant \_ bool**
+Tipo: **VARIANT \_ BOOL**
 
 Indica se la finestra RemoteApp è visualizzata o nascosta.
 
 </dd> <dt>
 
-*HWND* \[ in\]
+*hwnd* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **HWND**
@@ -63,12 +63,12 @@ Handle della finestra visualizzata.
 
 </dd> <dt>
 
-*windowAttribute* \[ in\]
+*windowAttribute* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **RemoteWindowDisplayedAttribute**](remotewindowdisplayedattribute.md)**
 
-Valore dell'enumerazione [**RemoteWindowDisplayedAttribute**](remotewindowdisplayedattribute.md) che specifica ulteriori informazioni sull'evento.
+Valore [**dell'enumerazione RemoteWindowDisplayedAttribute**](remotewindowdisplayedattribute.md) che specifica altre informazioni sull'evento.
 
 </dd> </dl>
 

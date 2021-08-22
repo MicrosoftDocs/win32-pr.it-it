@@ -1,5 +1,5 @@
 ---
-description: Linee guida per sviluppatori Web e provider online per creare pagine Web personalizzate per le API di Windows 8 Web Authentication Broker per le funzionalità Single Sign-On (SSO).
+description: Linee guida per sviluppatori Web e provider online per creare pagine Web personalizzate per le API di Windows 8 Web Authentication Broker per le funzionalità single sign-on (SSO).
 ms.assetid: E2AECE26-9649-41CB-9808-4F8171C707C3
 title: Guida introduttiva per i provider online che si integrano con le API di Web Authentication Broker
 ms.topic: article

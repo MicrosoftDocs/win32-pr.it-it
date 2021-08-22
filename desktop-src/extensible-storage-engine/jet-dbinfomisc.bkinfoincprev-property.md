@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: JET_DBINFOMISC.bkinfoIncPrev'
+description: Altre informazioni sulla proprietà JET_DBINFOMISC.bkinfoIncPrev
 title: JET_DBINFOMISC.bkinfoIncPrev
 TOCTitle: 'bkinfoIncPrev property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC.bkinfoIncPrev
@@ -35,7 +35,7 @@ ms.locfileid: "119617581"
 ---
 # <a name="jet_dbinfomiscbkinfoincprev-property"></a>JET_DBINFOMISC.bkinfoIncPrev
 
-Ottiene informazioni sull'ultimo backup incrementale riuscito. Questo valore viene reimpostato quando [è impostato bkinfoFullPrev.](./jet-dbinfomisc.bkinfofullprev-property.md)
+Ottiene informazioni sull'ultimo backup incrementale riuscito. Questo valore viene reimpostato quando è impostato [bkinfoFullPrev.](./jet-dbinfomisc.bkinfofullprev-property.md)
 
 **Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)

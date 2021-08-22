@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: debec1c0ee54e612ab0de832dbc5c2481dcefad8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e4ea03bcaaab492ec09dd24ec93c6a9c9ca393c1399b05e12096a8ba1f4f9aa3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493101"
 ---
 # <a name="id3dxmeshoptimize-method"></a>Metodo ID3DXMesh::Optimize
 
@@ -68,7 +68,7 @@ Puntatore a una matrice di tre DWORD per ogni viso che specifica i tre elementi 
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntatore a una matrice di tre DWORD per ogni viso che specifica i tre elementi adiacenti per ogni viso nella mesh ottimizzata. Se il bordo non ha visi adiacenti, il valore è 0xffffffff.
+Puntatore a una matrice di tre DWORD per viso che specifica i tre elementi adiacenti per ogni viso nella mesh ottimizzata. Se il bordo non ha visi adiacenti, il valore è 0xffffffff.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Puntatore a una matrice di tre DWORD per ogni viso che specifica i tre elementi 
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Matrice di DWORD, uno per ogni viso, che identifica il viso della mesh originale corrispondente a ogni viso nella mesh ottimizzata. Se il valore fornito per questo argomento è **NULL,** i dati di modifica del mapping dei visi non vengono restituiti.
+Matrice di DWORD, uno per ogni viso, che identifica il viso mesh originale che corrisponde a ogni viso nella mesh ottimizzata. Se il valore fornito per questo argomento è **NULL,** i dati di modifica del mapping dei visi non vengono restituiti.
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Matrice di DWORD, uno per ogni viso, che identifica il viso della mesh originale
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Indirizzo di un puntatore a un'interfaccia [**ID3DXBuffer,**](id3dxbuffer.md) che contiene un valore DWORD per ogni vertice che specifica il mapping dei nuovi vertici ai vertici vecchi. Questo nuovo mapping è utile se è necessario modificare i dati esterni in base al nuovo mapping dei vertici.
+Indirizzo di un puntatore a [**un'interfaccia ID3DXBuffer,**](id3dxbuffer.md) che contiene un valore DWORD per ogni vertice che specifica il mapping dei nuovi vertici ai vertici vecchi. Questo mapping è utile se è necessario modificare i dati esterni in base al nuovo mapping dei vertici.
 
 </dd> <dt>
 
@@ -107,9 +107,9 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo genera una nuova mesh. Prima di eseguire Optimize, un'applicazione deve generare un buffer di adiacenza chiamando [**ID3DXBaseMesh::GenerateAdjacency**](id3dxbasemesh--generateadjacency.md). Il buffer di adienze contiene dati di adizia, ad esempio un elenco di bordi e le facce adiacenti l'una all'altra.
+Questo metodo genera una nuova mesh. Prima di eseguire Optimize, un'applicazione deve generare un buffer di adiacenza chiamando [**ID3DXBaseMesh::GenerateAdjacency**](id3dxbasemesh--generateadjacency.md). Il buffer di adienza contiene dati di adizia, ad esempio un elenco di bordi e visi adiacenti.
 
-Questo metodo è molto simile al metodo [**ID3DXBaseMesh::CloneMesh,**](id3dxbasemesh--clonemesh.md) ad eccezione del fatto che può eseguire l'ottimizzazione durante la generazione del nuovo clone della mesh. La mesh di output eredita tutti i parametri di creazione della mesh di input.
+Questo metodo è molto simile al metodo [**ID3DXBaseMesh::CloneMesh,**](id3dxbasemesh--clonemesh.md) con la differenza che può eseguire l'ottimizzazione durante la generazione del nuovo clone della mesh. La mesh di output eredita tutti i parametri di creazione della mesh di input.
 
 ## <a name="requirements"></a>Requisiti
 

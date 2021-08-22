@@ -1,19 +1,19 @@
 ---
-title: Programma di avvio di rete di servizi di distribuzione Windows
+title: Windows Programma di avvio di rete di Servizi di distribuzione
 ms.assetid: 3d3170f5-3a09-4588-a15d-bca15cc2d026
-description: 'Altre informazioni su: programma di avvio di rete di servizi di distribuzione Windows'
+description: 'Altre informazioni su: Programma Windows di avvio di rete di Servizi di distribuzione'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf52a2182d237f592cf18667acef1e8c5034672a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 37204854a4d9d8787127548db80a6ad0a7db5c5031cb975d371a6e22b6698845
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053249"
 ---
-# <a name="windows-deployment-services-network-boot-program"></a>Programma di avvio di rete di servizi di distribuzione Windows
+# <a name="windows-deployment-services-network-boot-program"></a>Windows Programma di avvio di rete di Servizi di distribuzione
 
-Per costruire pacchetti per il programma di avvio di rete WDS, è possibile utilizzare le funzioni seguenti:
+Le funzioni seguenti possono essere usate per costruire pacchetti per il programma di avvio di rete WDS:
 
 -   [**WdsBpAddOption**](/windows/desktop/api/Wdsbp/nf-wdsbp-wdsbpaddoption)
 -   [**WdsBpCloseHandle**](/windows/desktop/api/Wdsbp/nf-wdsbp-wdsbpclosehandle)
@@ -22,7 +22,7 @@ Per costruire pacchetti per il programma di avvio di rete WDS, è possibile util
 -   [**WdsBpParseInitialize**](/windows/desktop/api/Wdsbp/nf-wdsbp-wdsbpparseinitialize)
 -   [**WdsBpQueryOption**](/windows/desktop/api/Wdsbp/nf-wdsbp-wdsbpqueryoption)
 
-Il codice seguente è disponibile a partire da Windows 8 e Windows Server 2012.
+Gli elementi seguenti sono disponibili a partire da Windows 8 e Windows Server 2012.
 
 -   [**WdsBpParseInitializev6**](/windows/desktop/api/Wdsbp/nf-wdsbp-wdsbpparseinitializev6)
 

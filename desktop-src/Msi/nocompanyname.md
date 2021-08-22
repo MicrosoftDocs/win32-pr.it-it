@@ -1,23 +1,23 @@
 ---
-description: Impostare la proprietà NoCompanyName su 1 per non visualizzare l'impostazione automatica della proprietà COMPANYNAME da parte del programma di installazione. Questa proprietà viene utilizzata dalle applicazioni che devono raccogliere il nome della società alla prima esecuzione.
+description: Impostare la proprietà NOCOMPANYNAME su 1 per eliminare l'impostazione automatica della proprietà COMPANYNAME dal programma di installazione. Questa proprietà viene usata dalle applicazioni che devono raccogliere il nome della società alla prima esecuzione.
 ms.assetid: 257d5082-6a40-4f32-abcb-23269c49091c
-title: NoCompanyName (proprietà)
+title: NoCOMPANYNAME - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e94df001ee63d8dbc22c071b9a200a2811e33600
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7a4aa0f4358bcdd96d1cb2e1b56d6cc01616f2884e390a82ca6b19ee9d25f5d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119558791"
 ---
-# <a name="nocompanyname-property"></a>NoCompanyName (proprietà)
+# <a name="nocompanyname-property"></a>NoCOMPANYNAME - proprietà
 
-Impostare la proprietà **NOcompanyname** su 1 per non visualizzare l'impostazione automatica della proprietà [**CompanyName**](companyname.md) da parte del programma di installazione. Questa proprietà viene utilizzata dalle applicazioni che devono raccogliere il nome della società alla prima esecuzione.
+Impostare la **proprietà NOCOMPANYNAME** su 1 per eliminare l'impostazione automatica della [**proprietà COMPANYNAME**](companyname.md) dal programma di installazione. Questa proprietà viene usata dalle applicazioni che devono raccogliere il nome della società alla prima esecuzione.
 
 ## <a name="default-value"></a>Valore predefinito
 
-Non impostata. Il programma di installazione imposta la proprietà [**CompanyName**](companyname.md) automaticamente usando i valori del registro di sistema.
+Non impostata. Il programma di installazione imposta automaticamente la proprietà [**COMPANYNAME**](companyname.md) usando i valori del Registro di sistema.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -25,7 +25,7 @@ Non impostata. Il programma di installazione imposta la proprietà [**CompanyNam
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Vedere i [Windows di installazione Run-Time](windows-installer-portal.md) per informazioni sul Service Pack Windows minimo richiesto da una versione Windows Installer.<br/> |
 
 
 

@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a9c6b1a506310460d9131709092b739f68986e02
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a6f5b51d21dfea0a3bc29ed1bd47a5026618f3b373bdc70e8a99c3aa16ae7424
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119643076"
 ---
-# <a name="disable-method-of-the-win32_networkadapter-class"></a>Metodo Disable della classe Win32 \_ NetworkAdapter
+# <a name="disable-method-of-the-win32_networkadapter-class"></a>Metodo Disable della classe NetworkAdapter Win32 \_
 
-Il metodo **Disable Disabilita** la scheda di rete.
+Il **metodo Disable** disabilita la scheda di rete.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero (0) per indicare l'esito positivo. Qualsiasi altro numero indica un errore. Per i codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).
+Restituisce zero (0) per indicare l'esito positivo. Qualsiasi altro numero indica un errore. Per i codici di errore, [**vedere Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,7 +51,7 @@ Restituisce zero (0) per indicare l'esito positivo. Qualsiasi altro numero indic
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -60,13 +60,13 @@ Restituisce zero (0) per indicare l'esito positivo. Qualsiasi altro numero indic
 
 <dl> <dt>
 
-[**\_NetworkAdapter Win32**](win32-networkadapter.md)
+[**Win32 \_ NetworkAdapter**](win32-networkadapter.md)
 </dt> <dt>
 
-[Attività WMI: rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Attività WMI: Rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Supporto di IPv6 e IPv4 in WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)
+[Supporto IPv6 e IPv4 in WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)
 </dt> </dl>
 
  

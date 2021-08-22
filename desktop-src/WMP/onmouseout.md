@@ -3,7 +3,7 @@ title: Onmouseout
 description: Il gestore eventi onmouseout gestisce un evento che si verifica quando l'utente sposta il puntatore fuori dall'elemento.
 ms.assetid: 8d4c5aec-0d4e-4912-a5e6-9aa1cf3e0971
 keywords:
-- onmouseout Windows Media Player
+- Onmouseout Windows Media Player
 topic_type:
 - apiref
 api_name:

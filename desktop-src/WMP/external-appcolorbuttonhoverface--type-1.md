@@ -1,6 +1,6 @@
 ---
 title: External.appColorButtonHoverFace (tipo 1)
-description: Nota In questo argomento vengono descritte le funzionalità progettate per l'uso da parte dei negozi online. | External.appColorButtonHoverFace (tipo 1)
+description: Nota Questo argomento descrive le funzionalità progettate per l'uso da parte dei negozi online. | External.appColorButtonHoverFace (tipo 1)
 ms.assetid: b13643ee-cb0f-4de1-9337-c7affa3e93d4
 keywords:
 - External.appColorButtonHoverFace (tipo 1) Windows Media Player
@@ -24,11 +24,11 @@ ms.locfileid: "119649951"
 # <a name="externalappcolorbuttonhoverface-type-1"></a>External.appColorButtonHoverFace (tipo 1)
 
 > [!Note]  
-> Questo argomento descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato.
+> In questo argomento vengono descritte le funzionalità progettate per l'utilizzo da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato.
 
  
 
-La **proprietà appColorButtonHoverFace** recupera il colore corrente del passaggio del mouse del pulsante per l Windows Media Player'interfaccia utente. Questo colore viene visualizzato quando l'utente sposta il puntatore del mouse su un pulsante.
+La **proprietà appColorButtonHoverFace** recupera il colore corrente al passaggio del mouse del pulsante per Windows Media Player'interfaccia utente. Questo colore viene visualizzato quando l'utente sposta il puntatore del mouse su un pulsante.
 
 ``` syntax
 window.external.appColorButtonHoverFace
@@ -41,7 +41,7 @@ Questa proprietà è una stringa di sola **lettura.**
 
 ## <a name="remarks"></a>Commenti
 
-Gli utenti possono modificare il colore dell'Windows Media Player utente. È possibile usare questa proprietà per personalizzare l'aspetto della pagina Web ospitata in modo che corrisponda al lettore.
+Gli utenti possono modificare il colore dell'Windows Media Player utente. Puoi usare questa proprietà per personalizzare l'aspetto della pagina Web ospitata in modo che corrisponda al lettore.
 
 ## <a name="requirements"></a>Requisiti
 

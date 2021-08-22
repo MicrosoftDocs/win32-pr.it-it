@@ -1,11 +1,11 @@
 ---
 title: Metodo Network.getProxySettings
-description: Il metodo getProxySettings recupera l'impostazione proxy per un protocollo specificato.
+description: Il metodo getProxySettings recupera l'impostazione proxy per un determinato protocollo.
 ms.assetid: a7b21eab-93e1-458b-aab0-60fd298cce44
 keywords:
 - Metodo getProxySettings Windows Media Player
 - Metodo getProxySettings Windows Media Player , classe Network
-- Classe di rete Windows Media Player, metodo getProxySettings
+- Classe di rete Windows Media Player metodo , getProxySettings
 topic_type:
 - apiref
 api_name:
@@ -25,7 +25,7 @@ ms.locfileid: "119647441"
 ---
 # <a name="networkgetproxysettings-method"></a>Metodo Network.getProxySettings
 
-Il **metodo getProxySettings** recupera l'impostazione proxy per un protocollo specificato.
+Il **metodo getProxySettings** recupera l'impostazione proxy per un determinato protocollo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ retVal = Network.getProxySettings(
 *protocollo* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** che specifica il nome del protocollo. Per un elenco dei protocolli supportati, vedere [Protocolli e tipi di file supportati.](supported-protocols-and-file-types.md)
+**Stringa** che specifica il nome del protocollo. Per un elenco dei protocolli supportati, vedere [Protocolli e tipi di file supportati](supported-protocols-and-file-types.md).
 
 </dd> </dl>
 
@@ -57,7 +57,7 @@ Questo metodo restituisce un **valore Number** (**long**) contenente uno dei val
 
 | Valore | Descrizione                                                                      |
 |-------|----------------------------------------------------------------------------------|
-| 0     | Non è in uso un server proxy.                                                |
+| 0     | Un server proxy non è in uso.                                                |
 | 1     | Vengono usate le impostazioni proxy per il browser corrente (valide solo per HTTP). |
 | 2     | Vengono usate le impostazioni proxy specificate manualmente.                            |
 | 3     | Le impostazioni proxy vengono rilevate automaticamente.                                      |
@@ -74,7 +74,7 @@ Questo metodo ha esito negativo a meno che l'applicazione chiamante non sia in e
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene utilizzata *la rete*. **getProxySettings** per visualizzare un messaggio, che fornisce informazioni sulle impostazioni proxy correnti del lettore, nella finestra del browser. **L'oggetto Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzata *la rete*. **getProxySettings** per visualizzare un messaggio, che fornisce informazioni sulle impostazioni proxy correnti di Player, nella finestra del browser. **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -123,7 +123,7 @@ case 3:
 
 <dl> <dt>
 
-[**Oggetto Di rete**](network-object.md)
+[**Oggetto di rete**](network-object.md)
 </dt> </dl>
 
  

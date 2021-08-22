@@ -1,19 +1,19 @@
 ---
-description: Inviato a un'applicazione dall'IME per notificare all'applicazione la pressione di un tasto e per mantenere l'ordine dei messaggi. Una finestra riceve questo messaggio tramite la funzione WindowProc.
+description: Inviato a un'applicazione dall'IME per notificare all'applicazione la pressione di un tasto e mantenere l'ordine dei messaggi. Una finestra riceve questo messaggio tramite la relativa funzione WindowProc.
 ms.assetid: db7075fb-b3d4-4d32-a0db-096d17d67c72
-title: Messaggio WM_IME_KEYDOWN (winuser. h)
+title: WM_IME_KEYDOWN messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f3089af3c839f70e7f55895ae13158e7b2240605
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: beed8bb074e1bae300d52c52867cc8d1f26b84bb8abf358ad2858df7356a0a0c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119535311"
 ---
-# <a name="wm_ime_keydown-message"></a>\_ \_ Messaggio KeyDown IME WM
+# <a name="wm_ime_keydown-message"></a>Messaggio WM \_ IME \_ KEYDOWN
 
-Inviato a un'applicazione dall'IME per notificare all'applicazione la pressione di un tasto e per mantenere l'ordine dei messaggi. Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Inviato a un'applicazione dall'IME per notificare all'applicazione la pressione di un tasto e mantenere l'ordine dei messaggi. Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -31,7 +31,7 @@ LRESULT CALLBACK WindowProc(
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
 Handle per la finestra.
@@ -41,14 +41,14 @@ Handle per la finestra.
 *wParam* 
 </dt> <dd>
 
-Codice chiave virtuale della chiave.
+Codice della chiave virtuale della chiave.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Numero di ripetizioni, codice di analisi, flag di chiave estesa, codice del contesto, flag di stato della chiave precedente e flag di stato di transizione, come illustrato nella tabella seguente.
+Numero di ripetizioni, codice di analisi, flag della chiave estesa, codice di contesto, flag di stato della chiave precedente e flag dello stato di transizione, come illustrato nella tabella seguente.
 
 
 
@@ -58,8 +58,8 @@ Numero di ripetizioni, codice di analisi, flag di chiave estesa, codice del cont
 | 16-23 | Analizzare il codice.                                                                  |
 | 24    | Chiave estesa. Questo valore è 1 se è una chiave estesa. Negli altri casi è 0. |
 | 25-28 | Non usato.                                                                   |
-| 29    | Codice del contesto. Il valore è sempre 0 .                                       |
-| 30    | Stato precedente della chiave. Questo valore è 1 se la chiave è inattiva o 0 se è attiva.    |
+| 29    | Codice di contesto. Il valore è sempre 0 .                                       |
+| 30    | Stato precedente della chiave. Questo valore è 1 se la chiave è in giù o 0 se è in alto.    |
 | 31    | Stato di transizione. Il valore è sempre 0 .                                   |
 
 
@@ -74,7 +74,7 @@ Un'applicazione deve restituire 0 se elabora questo messaggio.
 
 ## <a name="remarks"></a>Commenti
 
-Un'applicazione può elaborare questo messaggio o passarlo alla funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)  per generare un messaggio [**WM \_ KeyDown**](../inputdev/wm-keydown.md) corrispondente.
+Un'applicazione può elaborare questo messaggio o passarlo alla funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)  per generare un messaggio [**WM \_ KEYDOWN**](../inputdev/wm-keydown.md) corrispondente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,7 +84,7 @@ Un'applicazione può elaborare questo messaggio o passarlo alla funzione [**DefW
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -92,10 +92,10 @@ Un'applicazione può elaborare questo messaggio o passarlo alla funzione [**DefW
 
 <dl> <dt>
 
-[Gestione metodo di input](input-method-manager.md)
+[Gestione metodi di input](input-method-manager.md)
 </dt> <dt>
 
-[Messaggi di gestione metodo di input](input-method-manager-messages.md)
+[Messaggi di Gestione metodi di input](input-method-manager-messages.md)
 </dt> </dl>
 
  

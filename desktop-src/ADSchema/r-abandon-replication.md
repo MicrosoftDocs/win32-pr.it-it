@@ -1,10 +1,10 @@
 ---
-title: Abandon-Replication esteso
+title: Abandon-Replication destro esteso
 description: Diritto esteso necessario per annullare una sincronizzazione della replica.
 ms.assetid: 74a2d95a-08d9-43f7-9fe2-ce0eb4930344
 ms.tgt_platform: multiple
 keywords:
-- Abandon-Replication schema ad active directory esteso
+- Abandon-Replication di Active Directory con diritto esteso
 topic_type:
 - apiref
 api_name:
@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119021719"
 ---
-# <a name="abandon-replication-extended-right"></a>Abandon-Replication esteso
+# <a name="abandon-replication-extended-right"></a>Abandon-Replication destro esteso
 
 Diritto esteso necessario per annullare una sincronizzazione della replica.
 

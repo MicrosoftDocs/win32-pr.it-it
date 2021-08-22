@@ -1,28 +1,28 @@
 ---
 title: Funzioni glRect
-description: Queste funzioni traggono un rettangolo.
+description: Queste funzioni disegnano un rettangolo.
 ms.assetid: f68ab938-49f8-42ea-afa7-691227b6f877
 keywords:
-- OpenGL, funzioni glRect
-- Riferimento OpenGL, funzioni glRect
-- informazioni di riferimento per le funzioni OpenGL, glRect
-- OpenGL, funzioni Rectangle
-- Guida di riferimento a OpenGL, funzioni Rectangle
-- informazioni di riferimento per OpenGL, funzioni Rectangle
-- funzioni glRect
-- funzioni Rectangle
+- Funzioni OpenGL,glRect
+- Informazioni di riferimento su OpenGL, funzioni glRect
+- informazioni di riferimento per le funzioni OpenGL,glRect
+- OpenGL, funzioni rettangolo
+- Riferimento OpenGL, funzioni rettangolo
+- informazioni di riferimento per OpenGL, funzioni rectangle
+- Funzioni glRect
+- Funzioni rectangle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d3001153c856c616341b60c4ceacf261a757d70
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b0cafbd5e928c2ed1e919a62f5992c5f07ca19c705a9cdfabaa567ec0fbccff6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119492161"
 ---
 # <a name="glrect-functions"></a>Funzioni glRect
 
-Queste funzioni traggono un rettangolo:
+Queste funzioni disegnano un rettangolo:
 
 -   [**glRectd**](glrectd.md)
 -   [**glRectf**](glrectf.md)
@@ -33,9 +33,9 @@ Queste funzioni traggono un rettangolo:
 -   [**glRectiv**](glrectiv.md)
 -   [**glRectsv**](glrectsv.md)
 
- 
+ 
 
- 
+ 
 
 
 

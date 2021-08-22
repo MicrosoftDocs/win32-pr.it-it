@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Enumerazione LegacyFileNames'
-title: Enumerazione LegacyFileNames (Microsoft. ISAM. esent. Interop. vista)
+description: Altre informazioni sull'enumerazione LegacyFileNames
+title: Enumerazione LegacyFileNames (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: LegacyFileNames enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Vista.LegacyFileNames
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.legacyfilenames(v=EXCHG.10)
@@ -28,19 +28,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d7f3cade11450bcfbad13dcdd114dca6701c5369
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8265724c8f69cc9b8e90e6f2d7c777940aa1251ac99f436b9976e2a3c13f03fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119614571"
 ---
 # <a name="legacyfilenames-enumeration"></a>Enumerazione LegacyFileNames
 
 Opzioni per LegacyFileNames
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -69,12 +69,12 @@ public enum LegacyFileNames
 <tr class="odd">
 <td></td>
 <td>ESE98FileNames</td>
-<td>Quando questa opzione è presente, il motore di database utilizzerà le convenzioni di denominazione seguenti per i file: o i file di log delle transazioni utilizzeranno. LOG per l'estensione di file o i file del checkpoint utilizzeranno. CHK per la relativa estensione di file</td>
+<td>Quando questa opzione è presente, il motore di database utilizzerà le convenzioni di denominazione seguenti per i relativi file: o I file di log delle transazioni useranno . LOG per l'estensione di file o I file di checkpoint useranno . CHK per l'estensione di file</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>EightDotThreeSoftCompat</td>
-<td>Mantenere la sintassi di denominazione 8,3 per il periodo di tempo più lungo possibile. Questa operazione non deve essere modificata, con la garanzia che non siano presenti file di log.</td>
+<td>Mantenere la sintassi di denominazione 8.3 il più a lungo possibile. (questa impostazione non deve essere modificata, assicurandosi che non siano presenti file di log)</td>
 </tr>
 </tbody>
 </table>
@@ -84,4 +84,4 @@ public enum LegacyFileNames
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

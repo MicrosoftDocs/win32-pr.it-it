@@ -103,7 +103,7 @@ Il chiamante può propagare questa transazione a un gestore di risorse superiore
 
 
 
-Il chiamante ha i privilegi seguenti: **STANDARD \_ RIGHTS \_ READ,** **TRANSACTION QUERY \_ \_ INFORMATION** e **SYNCHRONIZE**.
+Il chiamante dispone dei privilegi seguenti: **STANDARD \_ RIGHTS \_ READ,** **TRANSACTION QUERY \_ \_ INFORMATION** e **SYNCHRONIZE**.
 
 
 </dt> </dl> </dd> <dt>

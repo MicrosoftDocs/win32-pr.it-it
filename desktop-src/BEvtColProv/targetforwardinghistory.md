@@ -1,5 +1,5 @@
 ---
-description: Cronologia recente delle modifiche apportate ai dati di inoltro per un computer di destinazione.
+description: Cronologia recente delle modifiche ai dati di inoltro per un computer di destinazione.
 ms.assetid: 621e2734-fc75-4e7a-9fae-de3d1b0272ae
 ms.tgt_platform: multiple
 title: Classe TargetForwardingHistory
@@ -35,7 +35,7 @@ ms.locfileid: "119529641"
 ---
 # <a name="targetforwardinghistory-class"></a>Classe TargetForwardingHistory
 
-Cronologia recente delle modifiche apportate ai dati di inoltro per un computer di destinazione.
+Cronologia recente delle modifiche ai dati di inoltro per un computer di destinazione.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -75,7 +75,7 @@ La **classe TargetForwardingHistory** ha queste proprietà.
 **CollectorEndpoint**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -91,7 +91,7 @@ Informazioni sull'endpoint del server dell'agente di raccolta. Questa proprietà
 **Computer**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -100,7 +100,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **fissi**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nome del computer di destinazione.
+Nome computer del computer di destinazione.
 
 </dd> <dt>
 
@@ -123,7 +123,7 @@ Timestamp che indica quando è stata stabilita la connessione per i dati di inol
 **Destinazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -139,7 +139,7 @@ Destinazione dei dati di inoltro, ad esempio un nome file.
 **DestinationPattern**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -171,7 +171,7 @@ Timestamp che indica quando la connessione è stata disconnessa.
 **Error (Errore) (Error (Errore)e)**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -180,14 +180,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **fissi**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Messaggio di errore che descrive un errore rilevato. Questa proprietà è vuota se non è stato rilevato alcun errore.
+Messaggio di errore che descrive un errore rilevato. Questa proprietà è vuota se non si è verificato alcun errore.
 
 </dd> <dt>
 
 **Tipo di server d'inoltro**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -203,7 +203,7 @@ Tipo di file che contiene i dati di inoltro, ad esempio ETL.
 **TargetEndpoint**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -212,14 +212,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**Fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Informazioni sull'endpoint del computer di destinazione, in formato leggibile. Questa proprietà è formattata come *host*:*stringa di* porta. Ad esempio, "127.0.0.1:50000".
+Informazioni sull'endpoint del computer di destinazione, in formato leggibile dall'utente. Questa proprietà è formattata come *host*:*stringa di* porta. Ad esempio, "127.0.0.1:50000".
 
 </dd> <dt>
 
-**Guida di destinazione**
+**TargetGuid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -235,7 +235,7 @@ GUID SMBIOS **del** computer di destinazione.
 **TargetMac**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -260,7 +260,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **fissi**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Timestamp del momento in cui è stata registrata la modifica dello stato.
+Timestamp di quando è stata registrata la modifica dello stato.
 
 </dd> </dl>
 
