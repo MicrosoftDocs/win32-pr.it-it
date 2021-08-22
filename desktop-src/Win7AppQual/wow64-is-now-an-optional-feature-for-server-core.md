@@ -4,12 +4,12 @@ ms.assetid: 9a918cd3-60a0-4231-975a-bee12de5c812
 title: Stato di WoW64 in Server Core
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fad947dac85707d3c9c89a2cffea38c4a4850a6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6f836d361e172527bf23c7e51ea0071790d3857d6611d8a12ff62185226d3f1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118994471"
 ---
 # <a name="wow64-is-now-an-optional-feature-for-server-core"></a>WoW64 è ora una funzionalità facoltativa per Server Core
 
@@ -38,7 +38,7 @@ Inoltre, i ruoli Active Directory e Active Directory Lightweight Directory Servi
 
 Se si disinstalla WoW64, gli amministratori che eseguono codice a 32 bit in Server Core riceveranno un messaggio di errore che indica che l'applicazione non può essere eseguita. Se gli amministratori tentano di eseguire Active Directory Active Directory Lightweight Directory Services, riceveranno un messaggio di errore.
 
-## <a name="mitigation"></a>Mitigazione
+## <a name="mitigation"></a>Strategia di riduzione del rischio
 
 Installare WoW64.
 

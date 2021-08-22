@@ -3,7 +3,7 @@ title: Tipo complesso LocalizationType
 description: Definisce un gruppo di risorse localizzate a cui si fa riferimento nel manifesto. | Tipo complesso LocalizationType
 ms.assetid: fecab4e0-7136-4b13-8c24-bebbad0812e6
 keywords:
-- Log eventi di tipo complesso LocalizationType
+- EventLog di tipo complesso LocalizationType
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cbb6911ea606ea30d8e656f20b4c566d4f6d0e08
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 09a596ff981944943c193fb158f14aa04eafb0b0b3d4df660d2034c5b5d281be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055949"
 ---
 # <a name="localizationtype-complex-type"></a>Tipo complesso LocalizationType
 
@@ -74,8 +74,8 @@ Definisce un gruppo di risorse localizzate a cui si fa riferimento nel manifesto
 
 | Elemento                                                                         | Tipo                                                                       | Descrizione                                                                                                         |
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| [**risorse**](eventmanifestschema-resources-localizationtype-element.md)     |                                                                            | Definisce un gruppo di tabelle di stringhe che contengono le stringhe localizzate a cui si fa riferimento nel manifesto.<br/> |
-| [**Un'STRINGTABLE**](eventmanifestschema-stringtable-localizationtype-element.md) | [**StringTableType**](eventmanifestschema-stringtabletype-complextype.md) | Definisce un elenco di stringhe localizzate a cui è possibile fare riferimento nel manifesto.<br/>                             |
+| [**Risorse**](eventmanifestschema-resources-localizationtype-element.md)     |                                                                            | Definisce un gruppo di tabelle di stringhe che contengono le stringhe localizzate a cui si fa riferimento nel manifesto.<br/> |
+| [**Stringtable**](eventmanifestschema-stringtable-localizationtype-element.md) | [**StringTableType**](eventmanifestschema-stringtabletype-complextype.md) | Definisce un elenco di stringhe localizzate a cui è possibile fare riferimento nel manifesto.<br/>                             |
 
 
 
@@ -85,7 +85,7 @@ Definisce un gruppo di risorse localizzate a cui si fa riferimento nel manifesto
 
 | Nome            | Tipo   | Descrizione                                                                                                                                            |
 |-----------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| culture         | string | Nome di linguaggio che identifica le impostazioni cultura delle stringhe localizzate nella tabella di stringhe. Ad esempio, "en-US" per l'inglese (Stati Uniti).<br/> |
+| culture         | string | Nome della lingua che identifica le impostazioni cultura delle stringhe localizzate nella tabella delle stringhe. Ad esempio, "en-US" per l'inglese (Stati Uniti).<br/> |
 | fallbackCulture | string | Non usato.<br/>                                                                                                                                   |
 
 
@@ -96,8 +96,8 @@ Definisce un gruppo di risorse localizzate a cui si fa riferimento nel manifesto
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

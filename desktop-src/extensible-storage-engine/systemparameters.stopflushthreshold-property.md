@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà SystemParameters. StopFlushThreshold'
-title: Proprietà SystemParameters. StopFlushThreshold
+description: 'Altre informazioni su: Proprietà SystemParameters.StopFlushThreshold'
+title: SystemParameters.StopFlushThreshold - proprietà
 TOCTitle: 'StopFlushThreshold property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.SystemParameters.StopFlushThreshold
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.stopflushthreshold(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0b79a9e5894de6539e8ab7dc0db4218b5f6cb3bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e383123a5886b1cf2e978f8b2faac80feb8e9ceb7daaa051dd6b778a8c189ad3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104347966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978461"
 ---
-# <a name="systemparametersstopflushthreshold-property"></a>Proprietà SystemParameters. StopFlushThreshold
+# <a name="systemparametersstopflushthreshold-property"></a>SystemParameters.StopFlushThreshold - proprietà
 
-Ottiene o imposta la soglia in corrispondenza della quale la cache delle pagine del database smette di rimuovere le pagine dalla cache per creare spazio per le pagine non memorizzate nella cache. Quando il numero di buffer di pagina nella cache supera questa soglia, il processo in background che è stato avviato per ripristinare il pool di buffer disponibili viene arrestato. Questa soglia è sempre relativa alle dimensioni massime della cache impostate dal JET_paramCacheSizeMax. Anche questa soglia deve essere sempre maggiore della soglia iniziale impostata da JET_paramStartFlushThreshold. La distanza tra la soglia iniziale e la soglia di arresto influiscono sull'efficienza con cui le pagine del database vengono scaricate dal processo in background. Un gap maggiore renderà più probabile che le Scritture nelle pagine adiacenti vengano combinate. Tuttavia, una soglia di arresto elevata ridurrà le dimensioni effettive della cache delle pagine del database.
+Ottiene o imposta la soglia in base alla quale la cache delle pagine del database termina la eliminazione delle pagine dalla cache per fare spazio alle pagine non memorizzate nella cache. Quando il numero di buffer di pagina nella cache supera questa soglia, il processo in background che è stato avviato per riempire il pool di buffer disponibili viene arrestato. Questa soglia è sempre relativa alla dimensione massima della cache impostata da JET_paramCacheSizeMax. Questa soglia deve anche essere sempre maggiore della soglia iniziale, come impostato da JET_paramStartFlushThreshold. La distanza tra la soglia di inizio e la soglia di arresto influisce sull'efficienza con cui le pagine del database vengono scaricate dal processo in background. Un gap maggiore rende più probabile che le scritture nelle pagine adiacenti possano essere combinate. Tuttavia, una soglia di arresto elevata ridurrà le dimensioni effettive della cache delle pagine del database.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,7 +61,7 @@ public static int StopFlushThreshold { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -69,6 +69,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [SystemParameters (classe)](./systemparameters-class.md)
 
-[Membri SystemParameters](./systemparameters-members.md)
+[Membri di SystemParameters](./systemparameters-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

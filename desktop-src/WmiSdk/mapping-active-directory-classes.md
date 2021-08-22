@@ -1,63 +1,63 @@
 ---
-description: Fornisce regole per il mapping delle classi WMI al Active Directory.
+description: Fornisce regole per il mapping di classi WMI ad Active Directory.
 ms.assetid: 295d3233-5729-4eb0-9fa3-1cf64fef2909
 ms.tgt_platform: multiple
-title: Mapping di classi Active Directory
+title: Mapping delle classi di Active Directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a606cfacc2e9d56ef07973df182f5ce1a65be35
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc38e91d52b59a206a0b64465d0f9710f6d515c9487853824477b7f4f6a126aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992901"
 ---
-# <a name="mapping-active-directory-classes"></a>Mapping di classi Active Directory
+# <a name="mapping-active-directory-classes"></a>Mapping delle classi di Active Directory
 
-Poiché Active Directory dispone di un'ampia gamma di oggetti possibili, WMI non è in grado di creare un mapping diretto uno a uno. Il provider di servizi directory utilizza invece regole per eseguire il mapping delle classi tra le due tecnologie.
+Poiché Active Directory dispone di un'ampia gamma di oggetti possibili, WMI non può creare un mapping diretto uno-a-uno. Il provider di servizi directory usa invece le regole per eseguire il mapping delle classi tra le due tecnologie.
 
-Le sezioni seguenti sono illustrate in questo argomento:
+In questo argomento vengono illustrate le sezioni seguenti:
 
 -   [Classi di mapping](#mapping-classes)
 -   [Attributi di mapping](#mapping-attributes)
--   [Classi Association](#association-classes)
+-   [Classi di associazione](#association-classes)
 
 > [!Note]  
-> Per ulteriori informazioni sul supporto e l'installazione di questo componente in un sistema operativo specifico, vedere la pagina relativa alla [disponibilità del sistema operativo dei componenti WMI](operating-system-availability-of-wmi-components.md).
+> Per altre informazioni sul supporto e sull'installazione di questo componente in un sistema operativo specifico, vedere Disponibilità del sistema [operativo dei componenti WMI.](operating-system-availability-of-wmi-components.md)
 
  
 
 ## <a name="mapping-classes"></a>Classi di mapping
 
-Nell'elenco seguente vengono descritte le linee guida utilizzate dal provider di servizi directory per eseguire il mapping delle classi Active Directory alle classi WMI:
+Nell'elenco seguente vengono descritte le linee guida utilizzate dal provider di servizi directory per eseguire il mapping delle classi di Active Directory alle classi WMI:
 
--   Ogni classe astratta nello schema Active Directory viene mappata a una classe astratta nello schema WMI.
+-   Ogni classe astratta nello schema di Active Directory esegue il mapping a una classe astratta nello schema WMI.
 
-    Nello schema WMI ogni classe astratta è preceduta da servizi di dominio Active Directory \_ . Ad esempio, la classe **Person** dello schema Active Directory viene mappata alla classe WMI **\_ Person DS** .
+    Nello schema WMI ogni classe astratta è preceduta dal prefisso DS \_ . Ad esempio, la **classe person** dello schema di Active Directory esegue il mapping alla classe WMI **person \_ DS.**
 
--   Ogni classe non astratta dello schema Active Directory viene mappata alle due classi seguenti nello schema WMI:
+-   Ogni classe non astratta dallo schema di Active Directory esegue il mapping alle due classi seguenti nello schema WMI:
 
-    -   La prima classe mappata è preceduta da ADS \_ . Si tratta di classi astratte, mappate in base alle regole indicate di seguito.
-    -   La seconda classe mappata è una classe non astratta con il \_ prefisso del nome DS. Questa classe è derivata dalla \_ classe astratta ADS, con l'aggiunta del qualificatore del [**provider**](/windows/desktop/api/Provider/nl-provider-provider) .
+    -   La prima classe mappata è preceduta dal prefisso ADS \_ . Si tratta di classi astratte, mappate in base alle regole riportate di seguito.
+    -   La seconda classe mappata è una classe non astratta con il prefisso del \_ nome DS. Questa classe è derivata dalla classe astratta \_ ADS, con l'aggiunta del [**qualificatore Provider.**](/windows/desktop/api/Provider/nl-provider-provider)
 
-    Ad esempio, la classe **utente** dello schema Active Directory viene mappata a due classi. La prima classe è la classe astratta **\_ dell'utente ADS** , mappata in base alle regole indicate di seguito. La seconda classe è la classe non astratta dell' **\_ utente DS** . Viene derivato dall' **\_ utente ADS** ed è associato al qualificatore del [**provider**](/windows/desktop/api/Provider/nl-provider-provider) aggiunto.
+    Ad esempio, la **classe utente** dello schema di Active Directory esegue il mapping a due classi. La prima classe è la classe **astratta \_ dell'utente ADS,** mappata in base alle regole riportate di seguito. La seconda classe è la **classe DS \_ user** nonabstract. Deriva dall'utente **ADS \_ e** ha il qualificatore [**provider**](/windows/desktop/api/Provider/nl-provider-provider) aggiunto.
 
--   Se non specificato diversamente, il nome di una classe mappata è il valore modificato della proprietà **LDAP-Display-Name** nella classe Active Directory.
--   Se la proprietà **Sub-Class-of** è presente nella classe Active Directory, la classe mappata a WMI viene derivata dalla classe specificata.
+-   Se non specificato diversamente, il nome di una classe mappata è il valore danneggiato della proprietà **LDAP-Display-Name** nella classe Active Directory.
+-   Se la **proprietà Sub-Class-Of** è presente nella classe Active Directory, la classe mappata a WMI viene derivata dalla classe specificata.
 
-    Se la proprietà **della classe secondaria-of** non è presente, la classe mappata a WMI viene derivata dalla classe della classe **\_ \_ radice \_ LDAP DS** , come specificato nel file MOF.
+    Se la **proprietà Sub-Class-Of** non è presente, la classe mappata a WMI viene derivata dalla classe radice **\_ LDAP \_ \_ DS,** come specificato nel file MOF.
 
     > [!Note]  
-    > Questa classe dispone della proprietà della chiave **ADSIPath** , con un tipo **VT \_ BSTR**. Si tratta del percorso ADSI univoco che identifica questa istanza. Active Directory supporta solo l'ereditarietà singola, quindi funziona.
+    > Questa classe ha la **proprietà chiave ADSIPath,** con un **tipo VT \_ BSTR.** Si tratta del percorso ADSI univoco che identifica questa istanza. Active Directory supporta solo l'ereditarietà singola, quindi funziona.
 
      
 
--   Un qualificatore **dinamico** di tipo **VT \_ bool** e Flavor `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE | WBEM_FLAVOR_FLAG_PROPAGATE_TO_DERIVED_CLASS` impostato su **true** viene creato per ogni classe. Si tratta di un qualificatore WMI standard che indica che le istanze di questa classe vengono fornite dinamicamente.
--   Se la classe non è astratta, il provider crea un qualificatore del [**provider**](/windows/desktop/api/Provider/nl-provider-provider) di tipo **VT \_ BSTR bool** e Qualifier Flavor `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE | WBEM_FLAVOR_FLAG_PROPAGATE_TO_DERIVED_CLASS` impostati su "DS instance provider" per ogni classe. Qualificatore WMI standard che indica il nome del provider che fornisce dinamicamente le istanze di questa classe.
+-   Per **ogni classe** viene creato un qualificatore dinamico di tipo **VT \_ BOOL** e flavor impostato su `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE | WBEM_FLAVOR_FLAG_PROPAGATE_TO_DERIVED_CLASS` **TRUE.** Si tratta di un qualificatore WMI standard che indica che le istanze di questa classe vengono fornite in modo dinamico.
+-   Se la classe non è astratta, il provider crea un qualificatore provider di tipo **VT \_ BSTR BOOL** e il qualificatore flavor impostato su [](/windows/desktop/api/Provider/nl-provider-provider) `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE | WBEM_FLAVOR_FLAG_PROPAGATE_TO_DERIVED_CLASS` "DS Instance Provider" per ogni classe. Si tratta di un qualificatore WMI standard che indica il nome del provider che fornisce dinamicamente istanze di questa classe.
 
-Il resto delle proprietà ADSI viene mappato a qualificatori di classe e proprietà in base alle tabelle seguenti. Tutti i qualificatori vengono mappati con un valore del flag di qualificatore `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE | WBEM_FLAVOR_FLAG_PROPAGATE_TO_DERIVED_CLASS` .
+Il resto delle proprietà ADSI viene mappato ai qualificatori di classe e alle proprietà in base alle tabelle seguenti. Tutti i qualificatori vengono mappati con un valore del flag di qualificatore pari a `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE | WBEM_FLAVOR_FLAG_PROPAGATE_TO_DERIVED_CLASS` .
 
-Di seguito sono elencate le informazioni di mapping per la classe Active Directory, che mostra il qualificatore WMI e il tipo di qualificatore WMI per ogni proprietà Active Directory.
+Di seguito sono elencate le informazioni di mapping per la classe Active Directory, che mostrano il qualificatore WMI e il tipo di qualificatore WMI per ogni proprietà di Active Directory.
 
 <dl> <dt>
 
@@ -88,30 +88,30 @@ Mappato direttamente dal valore stringa.
 
 </dd> <dt>
 
-**Governas-ID**
+**Governs-Id**
 </dt> <dd>
 
 **GovernsId** (**VT \_ BSTR**)
 
-Mappato dalla rappresentazione di stringa dell'OID; ad esempio, "{1 3 3 6}".
+Mappato dalla rappresentazione di stringa dell'OID; ad esempio "{ 1 3 3 6 }".
 
 </dd> <dt>
 
-**Classe Object**
+**Classe object**
 </dt> <dd>
 
-N/D
+N/A
 
 Non mappato.
 
 </dd> <dt>
 
-**Classe Object-Category**
+**Object-Class-Category**
 </dt> <dd>
 
 **ObjectClassCategory** (**VT \_ I4**)
 
-Mappato direttamente dal valore intero. Inoltre, se il valore è abstract (2), viene creato anche il qualificatore standard di **VT \_ bool** CIM, denominato qualificatore **"abstract"** .
+Mappato direttamente dal valore intero. Inoltre, se il valore è Abstract(2), viene creato anche il qualificatore **CIM \_ BOOL standard,** denominato qualificatore **"Abstract".**
 
 </dd> <dt>
 
@@ -120,14 +120,14 @@ Mappato direttamente dal valore intero. Inoltre, se il valore è abstract (2), v
 
 **RDNATTID** (**VT \_ BSTR**)
 
-Mappato dalla rappresentazione di stringa del valore OID; ad esempio, "{1 3 3 6}". Inoltre, la proprietà identificata qui viene annotata con il qualificatore CIM **indicizzato** standard impostato su **true**.
+Mappato dalla rappresentazione di stringa del valore OID. ad esempio "{ 1 3 3 6 }". Inoltre, la proprietà identificata qui viene annotata con il qualificatore **CIM** indicizzato standard impostato su **TRUE.**
 
 </dd> <dt>
 
 **Solo sistema**
 </dt> <dd>
 
-**SystemOnly** (**VT \_ bool**)
+**SystemOnly** (**VT \_ BOOL**)
 
 Mappato direttamente dal valore booleano.
 
@@ -149,67 +149,67 @@ Ogni proprietà in questo elenco è mappata a una proprietà WMI.
 **Deve contenere**
 </dt> <dd>
 
-Ogni proprietà in questo elenco è mappata a una proprietà WMI. Per ognuno di questi, viene creato il qualificatore CIM standard **Not \_ null** .
+Ogni proprietà in questo elenco è mappata a una proprietà WMI. Per ognuno **\_ di questi viene** creato il qualificatore CIM non Null standard.
 
 </dd> <dt>
 
-**Sistema-può contenere**
+**System-May-Contain**
 </dt> <dd>
 
-Ogni proprietà in questo elenco è mappata a una proprietà WMI. Inoltre, ogni proprietà viene annotata con un qualificatore di **sistema** , impostato su **true**.
+Ogni proprietà in questo elenco è mappata a una proprietà WMI. Inoltre, ogni proprietà viene annotata con un **qualificatore di** sistema, impostato su **TRUE.**
 
 </dd> <dt>
 
-**System-must-contain**
+**System-Must-Contain**
 </dt> <dd>
 
-Ogni proprietà in questo elenco è mappata a una proprietà WMI. Per ognuno di questi, viene creato il qualificatore CIM standard **Not \_ null** . Inoltre, ogni proprietà viene annotata con un qualificatore di **sistema** , impostato su **true**.
+Ogni proprietà in questo elenco è mappata a una proprietà WMI. Per ognuno **\_ di questi viene** creato il qualificatore CIM non Null standard. Inoltre, ogni proprietà viene annotata con un **qualificatore di** sistema, impostato su **TRUE.**
 
 </dd> </dl>
 
 ## <a name="mapping-attributes"></a>Attributi di mapping
 
-Il provider di servizi directory esegue il mapping di ogni attributo di una classe Active Directory esattamente a una proprietà della classe WMI corrispondente in base alle regole di questa sezione. In generale, il provider di servizi directory denomina la proprietà WMI come versione alterata del valore **LDAP-Display-Name** dell'attributo Active Directory.
+Il provider di servizi directory esegue il mapping di ogni attributo di una classe Active Directory a una proprietà della classe WMI corrispondente in base alle regole di questa sezione. In generale, il provider di servizi directory denota la proprietà WMI come versione modificata del **valore LDAP-Display-Name** dell'attributo Di Active Directory.
 
-Se la proprietà Active Directory **è a valore singolo** è **false**, questa proprietà WMI viene combinata con l'operatore OR con la **matrice di \_ flag \_ CIM**. Si noti che ogni proprietà è contrassegnata con il qualificatore **\_ BSTR VT** , **ADSyntax**. Rappresenta la sintassi del Active Directory sottostante.
+Se la proprietà di Active Directory **Is-Single-Valued** è **FALSE,** questa proprietà WMI viene combinata con l'operatore OR con **CIM \_ FLAG \_ ARRAY**. Si noti che ogni proprietà è contrassegnata con il qualificatore **\_ BSTR VT,** **ADSyntax.** Rappresenta la sintassi di Active Directory sottostante.
 
-Nella tabella seguente viene elencato il mapping della sintassi Active Directory al tipo di dati della proprietà WMI.
+Nella tabella seguente viene elencato il mapping della sintassi di Active Directory al tipo di dati della proprietà WMI.
 
 
 
 | Elemento Active Directory                                      | Tipo di dati WMI                                                           |
 |---------------------------------------------------------------|-------------------------------------------------------------------------|
-| [**Punto di accesso**](/windows/desktop/ADSchema/s-object-access-point)            | **\_stringa CIM**                                                         |
-| [**Boolean**](/windows/desktop/ADSchema/s-boolean)                             | **\_valore booleano CIM**                                                        |
-| **Stringa senza distinzione tra maiuscole e minuscole**                                   | **\_stringa CIM**                                                         |
-| [**Stringa distinzione tra maiuscole e minuscole**](/windows/desktop/ADSchema/s-string-case-sensitive) | **\_stringa CIM**                                                         |
-| [**Nome distinto**](/windows/desktop/ADSchema/s-object-ds-dn)             | **\_stringa CIM**                                                         |
-| [**DN-binario**](/windows/desktop/ADSchema/s-object-dn-binary)                  | Oggetto incorporato della classe **DN \_ con \_ binario** definito di seguito.<br/> |
+| [**Punto di accesso**](/windows/desktop/ADSchema/s-object-access-point)            | **STRINGA \_ CIM**                                                         |
+| [**Boolean**](/windows/desktop/ADSchema/s-boolean)                             | **CIM \_ BOOLEAN**                                                        |
+| **Stringa senza distinzione tra maiuscole e minuscole**                                   | **STRINGA \_ CIM**                                                         |
+| [**Stringa con distinzione tra maiuscole e minuscole**](/windows/desktop/ADSchema/s-string-case-sensitive) | **STRINGA \_ CIM**                                                         |
+| [**Nome distinto**](/windows/desktop/ADSchema/s-object-ds-dn)             | **STRINGA \_ CIM**                                                         |
+| [**DN-Binary**](/windows/desktop/ADSchema/s-object-dn-binary)                  | Oggetto incorporato della classe **DN \_ con \_ binario** definito di seguito.<br/> |
 | [**Stringa DN**](/windows/desktop/ADSchema/s-object-dn-string)                  | Oggetto incorporato della classe **DN \_ con la \_ stringa** definita di seguito.<br/> |
-| [**Enumerazione**](/windows/desktop/ADSchema/s-enumeration)                     | **\_SINT32 CIM**                                                         |
-| [**Enumerazione**](/windows/desktop/ADSchema/s-enumeration)                     | **\_stringa CIM**                                                         |
-| [**Integer**](/windows/desktop/ADSchema/s-integer)                             | **\_SINT32 CIM**                                                         |
-| [**LargeInteger**](/windows/desktop/ADSchema/s-largeinteger)                   | **\_stringa CIM**                                                         |
-| Descrittore di sicurezza                                           | Oggetto incorporato della classe **Uint8Array** definito di seguito.<br/>       |
-| Stringa numerica                                                | **\_stringa CIM**                                                         |
-| ID dell'oggetto.                                                     | **\_stringa CIM**                                                         |
-| Stringa ottetto                                                  | Oggetto incorporato della classe **Uint8Array** definito di seguito.<br/>       |
-| O nome                                                       | **\_stringa CIM**                                                         |
-| Presentation-Address                                          | Oggetto incorporato della classe **Uint8Array** definito di seguito.<br/>       |
-| Stringa del case di stampa                                             | **\_stringa CIM**                                                         |
-| Collegamento replica                                                  | Oggetto incorporato della classe **Uint8Array** definito di seguito.<br/>       |
-| [**Stringa (SID)**](/windows/desktop/ADSchema/s-string-sid)                      | Oggetto incorporato della classe **Uint8Array** definito di seguito.<br/>       |
-| Tempo                                                          | **\_DateTime CIM**                                                       |
-| Ora codificata UTC                                                | **\_DateTime CIM**                                                       |
-| Stringa Unicode                                                | **\_stringa CIM**                                                         |
+| [**Enumerazione**](/windows/desktop/ADSchema/s-enumeration)                     | **CIM \_ SINT32**                                                         |
+| [**Enumerazione**](/windows/desktop/ADSchema/s-enumeration)                     | **STRINGA \_ CIM**                                                         |
+| [**Intero**](/windows/desktop/ADSchema/s-integer)                             | **CIM \_ SINT32**                                                         |
+| [**LargeInteger**](/windows/desktop/ADSchema/s-largeinteger)                   | **STRINGA \_ CIM**                                                         |
+| Descrittore di sicurezza                                           | Oggetto incorporato della classe **Uint8Array definito** di seguito.<br/>       |
+| Stringa numerica                                                | **STRINGA \_ CIM**                                                         |
+| ID dell'oggetto.                                                     | **STRINGA \_ CIM**                                                         |
+| Octet String                                                  | Oggetto incorporato della classe **Uint8Array definito** di seguito.<br/>       |
+| OR Name                                                       | **STRINGA \_ CIM**                                                         |
+| Presentation-Address                                          | Oggetto incorporato della classe **Uint8Array definito** di seguito.<br/>       |
+| Stampa stringa maiuscole/minuscole                                             | **STRINGA \_ CIM**                                                         |
+| Collegamento di replica                                                  | Oggetto incorporato della classe **Uint8Array definito** di seguito.<br/>       |
+| [**String(Sid)**](/windows/desktop/ADSchema/s-string-sid)                      | Oggetto incorporato della classe **Uint8Array definito** di seguito.<br/>       |
+| Ora                                                          | **CIM \_ DATETIME**                                                       |
+| Ora UTC codificata                                                | **CIM \_ DATETIME**                                                       |
+| Stringa Unicode                                                | **STRINGA \_ CIM**                                                         |
 
 
 
  
 
-La sintassi della stringa di ottetto, che fa riferimento a una matrice di valori **Uint8** , presenta un problema quando viene eseguito il mapping a WMI, perché WMI consente le proprietà dei tipi **Uint8** e le matrici di **Uint8**, mentre Active Directory consente le proprietà di tipo stringa ottetto, nonché matrici di stringa ottetto.
+La sintassi Octet String, che fa riferimento a una matrice di valori **uint8,** presenta un problema quando viene eseguito il mapping a WMI perché WMI consente proprietà di tipo **uint8** e matrici di **uint8,** mentre Active Directory consente proprietà di tipo Octet String e matrici di Octet String.
 
-Nell'esempio seguente viene illustrata la classe del provider di servizi directory utilizzata per eseguire il mapping di una matrice di proprietà di tipo stringa ottetto.
+Nell'esempio seguente viene illustrata la classe Del provider di servizi directory usata per eseguire il mapping di una matrice di proprietà di tipo Octet String.
 
 ``` syntax
 Class Uint8Array 
@@ -219,9 +219,9 @@ Class Uint8Array
 };
 ```
 
-WMI esegue il mapping di tutte le stringhe ottetto Active Directory valori di proprietà a istanze incorporate di **Uint8Array**. Analogamente, WMI esegue il mapping di matrici di stringa ottetto a matrici di oggetti **Uint8Array** incorporati.
+WMI esegue il mapping di tutti i valori delle proprietà di Active Directory Octet String alle istanze incorporate di **Uint8Array.** Analogamente, WMI esegue il mapping delle matrici di Octet String alle matrici di **oggetti Uint8Array** incorporati.
 
-Nell'esempio seguente vengono illustrate le classi di cui è stato eseguito il mapping da WMI per DN-Binary e DN-String i valori delle proprietà DS.
+Nell'esempio seguente vengono illustrate le classi mappate da WMI DN-Binary e DN-String proprietà DS.
 
 ``` syntax
 Class DN_With_String
@@ -237,30 +237,30 @@ Class DN_With_Binary
 };
 ```
 
-Nella tabella seguente viene elencato il mapping tra il resto delle proprietà dell'interfaccia dell'attributo Active Directory e i qualificatori di proprietà WMI.
+La tabella seguente elenca il modo in cui WMI esegue il mapping delle altre proprietà dell'interfaccia dell'attributo di Active Directory ai qualificatori di proprietà WMI.
 
 
 
-| Attributo Active Directory-nome proprietà | Qualificatore WMI       | Tipo di dati    | Informazioni sul mapping                               |
+| Nome proprietà-attributo di Active Directory | Qualificatore WMI       | Tipo di dati    | Informazioni sul mapping                               |
 |------------------------------------------|---------------------|--------------|---------------------------------------------------|
-| **Sintassi degli attributi**                     | **AttributeSyntax** | **\_BSTR VT** | Mappato dalla rappresentazione di stringa dell'OID. |
-| **Nome comune**                          | **CN**              | **\_BSTR VT** | Mappata dal valore stringa.                     |
-| **Solo sistema**                          | **Sistema**          | **\_bool VT** | Mappato da un valore booleano.                    |
+| **Sintassi degli attributi**                     | **AttributeSyntax** | **VT \_ BSTR** | Mappato dalla rappresentazione di stringa dell'OID. |
+| **Nome comune**                          | **Cn**              | **VT \_ BSTR** | Mappato dal valore stringa.                     |
+| **Solo sistema**                          | **Sistema**          | **VT \_ BOOL** | Mappato dal valore booleano.                    |
 
 
 
  
 
 > [!Note]  
-> WMI esegue il mapping di tutti i qualificatori di Active Directory con le `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE | WBEM_FLAVOR_FLAG_PROPAGATE_TO_DERIVED_CLASS` versioni del qualificatore.
+> WMI esegue il mapping di tutti i qualificatori di Active Directory con `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE | WBEM_FLAVOR_FLAG_PROPAGATE_TO_DERIVED_CLASS` i tipi di qualificatori.
 
  
 
-## <a name="association-classes"></a>Classi Association
+## <a name="association-classes"></a>Classi di associazione
 
-Il servizio directory è essenzialmente un archivio gerarchico di oggetti. Gli oggetti che possono essere visualizzati a un livello non foglia nella gerarchia sono detti "contenitori". La struttura di questa gerarchia è ulteriormente controllata dalle proprietà "poss-superiors" e "System-poss-superiors" di una classe nello schema. Insieme, specificano il set di classi le cui istanze possono essere contenute all'interno di un'istanza di una classe contenitore.
+Il servizio directory è essenzialmente un archivio gerarchico di oggetti. Gli oggetti che possono essere visualizzati a un livello non figlio nella gerarchia sono denominati "contenitori". La struttura di questa gerarchia è ulteriormente controllata dalle proprietà "Poss-Superiors" e "System-Poss-Superiors" di una classe nello schema. Queste, insieme, specificano il set di classi le cui istanze possono essere contenute all'interno di un'istanza di una classe contenitore.
 
-Nell'esempio seguente viene modellata un'associazione CIM come istanza della classe di associazione statica di [**dominio DS \_ \_ \_ contenuto della classe LDAP**](/previous-versions/windows/desktop/dsprov/ds-ldap-class-containment).
+Nell'esempio seguente viene modellata un'associazione CIM come istanze della classe di associazione [**statica DS \_ LDAP Class \_ \_ Containment**](/previous-versions/windows/desktop/dsprov/ds-ldap-class-containment).
 
 ``` syntax
 //  DS Class Associations Provider 
@@ -304,7 +304,7 @@ instance of __InstanceProviderRegistration
 };
 ```
 
-Il provider della classe Association supporta i metodi [**GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) e [**CreateClassEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createclassenumasync) .
+Il provider della classe di associazione supporta [**i metodi GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) [**e CreateClassEnumAsync.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createclassenumasync)
 
  
 

@@ -1,16 +1,16 @@
 ---
 title: Raggruppamento di forme
-description: Questo articolo descrive il raggruppamento di forme in VML, una funzionalità deprecata a Internet Explorer Windows 9.
+description: Questo articolo descrive il raggruppamento delle forme in VML, una funzionalità deprecata a Windows Internet Explorer 9.
 ms.assetid: 469c9e4d-d1ae-4285-b2cb-ac833ebe59ff
 keywords:
-- Workshop Web, raggruppamento di forme
+- Web workshop, raggruppamento di forme
 - progettazione di pagine Web, raggruppamento di forme
 - Vector Markup Language (VML), raggruppamento di forme
 - VML (Vector Markup Language),raggruppamento di forme
 - grafica vettoriale, raggruppamento di forme
 - forme VML, raggruppamento
 - raggruppamento di forme
-- Vector Markup Language (VML),elemento group
+- Vector Markup Language (VML), elemento group
 - VML (Vector Markup Language),elemento group
 - grafica vettoriale, elemento group
 - Elemento group
@@ -21,25 +21,25 @@ keywords:
 - spazio delle coordinate locale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61e0c3073f55d23c15734b5d5ddfa886e7291530
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 2bc9ac6da1d38bb6b30f685ebfd0f5a1d9d6026620a0e0c65366ee021668240a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056959"
 ---
 # <a name="grouping-shapes"></a>Raggruppamento di forme
 
-Questo argomento descrive VML, una funzionalità deprecata a Internet Explorer Windows 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
  
 
 Come si è appreso, è possibile disegnare facilmente singole forme usando VML. In questa sezione verranno illustrati i vantaggi del raggruppamento delle forme e verrà illustrato come raggruppare le forme.
 
-Se si hanno molte forme che devono essere ridimensionate, spostate o ruotate insieme, può essere noioso impostare gli attributi singolarmente per ogni forma. Inoltre, è possibile aumentare il margine per gli errori. Sarebbe meglio raggruppare le forme e quindi impostare gli attributi per l'intero gruppo.
+Se si hanno molte forme che devono essere ridimensionate, spostate o ruotate insieme, è noioso impostare gli attributi singolarmente per ogni forma. Inoltre, si aumenta il margine per gli errori. Sarebbe meglio raggruppare le forme e quindi impostare gli attributi per l'intero gruppo.
 
 In VML è possibile usare l'elemento per raggruppare più forme in modo che possano `<group>` essere trasformate come un'unica unità. Ad esempio, come illustrato nella rappresentazione VML seguente, è possibile raggruppare facilmente due forme.
 
@@ -54,7 +54,7 @@ width:150pt;height:100pt; ...>
 
 
 
-Quando le forme vengono raggruppate, usano lo [spazio delle coordinate locale](web-workshop---how-to-use-vml-on-web-pages----local-coordinate-space.md) del gruppo. Di conseguenza, le forme all'interno di un gruppo possono essere ridimensionate e spostate insieme. Verranno visualizzati altri esempi nell'argomento Usare lo spazio delle coordinate locali.
+Quando le forme vengono raggruppate, usano lo [spazio delle coordinate locale](web-workshop---how-to-use-vml-on-web-pages----local-coordinate-space.md) del gruppo. Di conseguenza, le forme all'interno di un gruppo possono essere ridimensionate e spostate insieme. Verranno visualizzati altri esempi nell'argomento Usare lo spazio delle coordinate locale.
 
 All'interno di un gruppo è possibile avere tutte le forme o i gruppi desiderati. Quando un gruppo si trova all'interno di un altro gruppo, viene chiamato "gruppo annidato". Non esiste alcuna limitazione ai livelli di annidamento.
 
@@ -78,13 +78,13 @@ Ad esempio, le righe seguenti illustrano un gruppo annidato a 3 livelli. Shape3 
 
 
 
-Per altre informazioni su questo elemento, vedere la [specifica VML](https://www.w3.org/TR/NOTE-VML#-toc416858388) .
+Per altre informazioni su questo elemento, vedere la specifica [VML](https://www.w3.org/TR/NOTE-VML#-toc416858388) .
 
 [![torna all'inizio ](images/top.gif) Torna all'inizio](#top)
 
 ## <a name="summary"></a>Riepilogo
 
-È possibile usare `<group>` l'elemento per raggruppare più forme in modo che possano essere trasformate come un'unica unità.
+È possibile usare l'elemento per raggruppare più forme in modo che possano `<group>` essere trasformate come un'unica unità.
 
  
 

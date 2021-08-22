@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione in cui un elemento gestito è ospitato da un altro oggetto.
+description: Rappresenta un'associazione in cui un elemento gestito è ospitato da un altro.
 ms.assetid: ae8476f7-38a4-4d08-a7dc-21e120d3cbe1
-title: Classe CIM_HostedDependency
+title: CIM_HostedDependency classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 551931fd88fac88f85bcc8ffd51423538de3bb5c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3f96406b632a784da209495488965fea1694bcd70233fd2c536142a9bafb9c5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014599"
 ---
-# <a name="cim_hosteddependency-class"></a>CIM \_ HostedDependency (classe)
+# <a name="cim_hosteddependency-class"></a>Classe CIM \_ HostedDependency
 
-Rappresenta un'associazione in cui un elemento gestito è ospitato da un altro oggetto.
+Rappresenta un'associazione in cui un elemento gestito è ospitato da un altro.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,26 +39,26 @@ class CIM_HostedDependency : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ HostedDependency** presenta questi tipi di membri:
+La **classe CIM \_ HostedDependency** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ HostedDependency** dispone di queste proprietà.
+La **classe CIM \_ HostedDependency** ha queste proprietà.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ Managed**
+Tipo di dati: **CIM \_ ManagedElement**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 Elemento gestito dall'host.
@@ -68,13 +68,13 @@ Elemento gestito dall'host.
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ Managed**
+Tipo di dati: **CIM \_ ManagedElement**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
 Elemento gestito ospitato.
@@ -89,8 +89,8 @@ Elemento gestito ospitato.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Elemento gestito ospitato.
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

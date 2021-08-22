@@ -4,33 +4,33 @@ ms.assetid: 02365401-8648-4be1-a447-fabd2cb77355
 title: Interfacce del codificatore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5367a25f1a2a4caf486711f7569312a436f8f474
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d6169dcf55ffafe0bf4c006b45c173ecc7486555fb001456112f8f333a8ccf2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965125"
 ---
 # <a name="encoder-interfaces"></a>Interfacce del codificatore
 
 
-Nelle tabelle seguenti sono illustrate le interfacce implementate dai codificatori Windows Imaging Component (WIC) e il diagramma classi Mostra la gerarchia di ereditarietà.
+Le tabelle seguenti illustrano le interfacce implementate dai codificatori WIC (Windows Imaging Component) e il diagramma classi mostra la gerarchia di ereditarietà.
 
-Interfacce del codificatore Container-Level
+Container-Level codificatore
 
 
 
 | Interfaccia                                                                                       | Responsabilità                             | Implementazione                                                             |
 |-------------------------------------------------------------------------------------------------|----------------------------------------------|----------------------------------------------------------------------------|
 | [IWICBitmapEncoder](-wic-imp-iwicbitmapencoder.md)                                             | Servizi a livello di contenitore                     | Necessario                                                                   |
-| [IWICBitmapCodecProgressNotification](-wic-imp-iwicbitmapcodecprogressnotification-encoder.md) | Avviso di stato & supporto per l'annullamento | Consigliato                                                                |
+| [IWICBitmapCodecProgressNotification](-wic-imp-iwicbitmapcodecprogressnotification-encoder.md) | Notifica dello stato di avanzamento & supporto dell'annullamento | Consigliato                                                                |
 | [IWICMetadataBlockWriter](-wic-imp-iwicmetadatablockwriter.md)                                 | Servizi di serializzazione dei metadati              | Facoltativo (obbligatorio solo per i formati che supportano i metadati a livello di contenitore) |
 
 
 
  
 
-Interfacce del codificatore Frame-Level
+Frame-Level codificatore
 
 
 
@@ -43,9 +43,9 @@ Interfacce del codificatore Frame-Level
 
  
 
-![gerarchia di ereditarietà dell'interfaccia del codificatore WIC](graphics/wicencoderinterfaces.png)
+![Gerarchia di ereditarietà dell'interfaccia del codificatore Wic](graphics/wicencoderinterfaces.png)
 
-Si noterà che le interfacce del codificatore sono immagini quasi speculari delle interfacce del decodificatore e che la maggior parte dei metodi su queste interfacce corrispondono ai metodi nelle interfacce del decodificatore correlate. Ora che si ha familiarità con l'implementazione di un decodificatore abilitato per WIC, l'implementazione di un codificatore abilitato per WIC può sembrare familiare.
+Si noterà che le interfacce del codificatore sono quasi immagini speculari delle interfacce del decodificatore e che la maggior parte dei metodi in queste interfacce corrispondono ai metodi sulle interfacce del decodificatore correlate. Ora che si ha familiarità con l'implementazione di un decodificatore abilitato per WIC, anche l'implementazione di un codificatore abilitato per WIC sembra familiare.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -54,16 +54,16 @@ Si noterà che le interfacce del codificatore sono immagini quasi speculari dell
 **Informazioni concettuali**
 </dt> <dt>
 
-[Implementazione di un codificatore di WIC-Enabled](-wic-implementingwicencoder.md)
+[Implementazione di un WIC-Enabled codificatore](-wic-implementingwicencoder.md)
 </dt> <dt>
 
 [Implementazione di IWICBitmapEncoder](-wic-imp-iwicbitmapencoder.md)
 </dt> <dt>
 
-[Come scrivere un CODEC WIC-Enabled](-wic-howtowriteacodec.md)
+[Come scrivere un codec WIC-Enabled](-wic-howtowriteacodec.md)
 </dt> <dt>
 
-[Panoramica del componente imaging Windows](-wic-about-windows-imaging-codec.md)
+[Windows Panoramica del componente di creazione dell'immagine](-wic-about-windows-imaging-codec.md)
 </dt> </dl>
 
  

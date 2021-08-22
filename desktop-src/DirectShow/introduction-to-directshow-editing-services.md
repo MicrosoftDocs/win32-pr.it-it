@@ -1,46 +1,46 @@
 ---
-description: Introduzione ai servizi di modifica DirectShow
+description: Introduzione ai DirectShow di modifica
 ms.assetid: 247c4ba9-53c1-46ed-83ef-a454351920e3
-title: Introduzione ai servizi di modifica DirectShow
+title: Introduzione ai DirectShow di modifica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c75d9cf22eba81ebb9794310f63983b991bcf22
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6d12470b45e0b39c32c983176f07444a5136b9e97b99cc5be142974d05178f58
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104481613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952549"
 ---
-# <a name="introduction-to-directshow-editing-services"></a>Introduzione ai servizi di modifica DirectShow
+# <a name="introduction-to-directshow-editing-services"></a>Introduzione ai DirectShow di modifica
 
-\[Questa API non è supportata e può essere modificata o non disponibile in futuro.\]
+\[Questa API non è supportata e potrebbe essere modificata o non disponibile in futuro.\]
 
-Il nucleo di DirectShow è un'architettura potente per la gestione dei flussi multimediali. Un'applicazione può usarla per riprodurre contenuti multimediali creati in un'ampia gamma di formati, senza che lo sviluppatore debba preoccuparsi della compressione dei file e di altri dettagli noiosi. Prima di [DirectShow editing Services](directshow-editing-services.md) (des), tuttavia, DirectShow non aveva la flessibilità necessaria per la modifica non lineare.
+Il nucleo di DirectShow è un'architettura potente per la gestione dei supporti di streaming. Un'applicazione può usarla per riprodurre contenuto multimediale creato in un'ampia gamma di formati, senza che lo sviluppatore si preoccupa della compressione dei file e di altri dettagli noiosi. Prima di [DirectShow Editing Services](directshow-editing-services.md) (DES), tuttavia, DirectShow la flessibilità necessaria per la modifica non lineare.
 
-Si supponga, ad esempio, di voler creare una sequenza video composta da 4 secondi dall'origine A, seguita da 10 secondi dall'origine B, fino a 5 secondi dall'origine C. È possibile eseguire questa operazione in modo molto semplice usando solo l'API DirectShow di base.
+Si supponga, ad esempio, di voler creare una sequenza video costituita da 4 secondi dall'origine A, seguiti da 10 secondi dall'origine B e che terminano con 5 secondi dall'origine C. È possibile eseguire questa operazione molto facilmente usando solo l'API di DirectShow core.
 
-Tuttavia, se si è deciso che l'origine C deve precedere l'origine B, non dopo; che la sequenza usi 8 secondi dall'origine A, non 4; e che l'intera produzione avesse bisogno di una traccia audio separata in background? Anche le modifiche minime, ad esempio, potrebbero essere difficili da implementare. Tuttavia, lo scenario appena descritto è un semplice progetto di modifica in DES: è possibile eseguire questa operazione con alcune chiamate al metodo.
+Ma cosa succede se si decide che l'origine C deve essere prima dell'origine B, non dopo; che la sequenza deve usare 8 secondi dall'origine A, non 4; e che l'intera produzione ha bisogno di una traccia audio separata riprodotta in background? Anche modifiche minori come queste potrebbero essere difficili da implementare. Ma lo scenario appena descritto è un progetto di modifica semplice in DES, che è possibile eseguire con un numero limitato di chiamate al metodo.
 
-Di seguito sono riportate alcune delle funzionalità che DES apporta a DirectShow:
+Ecco alcune delle funzionalità che DES offre a DirectShow:
 
--   Modello di sequenza temporale che organizza tracce video e audio in livelli annidati, semplificando la manipolazione della produzione finale
--   La possibilità di visualizzare in tempo reale un progetto video
--   Persistenza del progetto tramite un formato basato su XML
--   Supporto per effetti audio e video, nonché transizioni tra tracce video, ad esempio dissolvenze e cancellazioni.
--   Oltre 100 salviettine standard, come definito dalla società di Motion Picture and Television Engineers (SMPTE)
--   Digitazione in base a tonalità, luminanza, valore RGB o valore alfa
--   Conversione automatica delle frequenze dei fotogrammi e del campionamento audio, consentendo a un ambiente di produzione di utilizzare origini eterogenee
--   Ridimensionamento o ritaglio di video
+-   Un modello di sequenza temporale che organizza le tracce audio e video in livelli annidati, semplificando la modifica della produzione finale
+-   Possibilità di visualizzare in anteprima un progetto video in tempo reale
+-   Project persistenza tramite un formato basato su XML
+-   Supporto per gli effetti video e audio, nonché transizioni tra tracce video (ad esempio dissolvenze e cancellazioni)
+-   Oltre 100 cancellazioni standard, come definito da SMPTE (Society of Motion Picture and Engineers)
+-   Keying basato su tonalità, luminance, valore RGB o valore alfa
+-   Conversione automatica delle frequenze dei fotogrammi e delle frequenze di campionamento audio, consentendo a un ambiente di produzione di usare origini eterogenee
+-   Ridimensionamento o ritaglio del video
 
 Limitazioni
 
--   DES non supporta le origini video MPEG-2 o H. 264.
+-   DES non supporta le origini video MPEG-2 o H.264.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Servizi di modifica DirectShow](directshow-editing-services.md)
+[DirectShow Modifica dei servizi](directshow-editing-services.md)
 </dt> </dl>
 
  

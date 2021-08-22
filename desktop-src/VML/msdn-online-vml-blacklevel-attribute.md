@@ -1,24 +1,24 @@
 ---
-title: Attributo BlackLevel di la
-description: Attributo BlackLevel di la
+title: Attributo VML BlackLevel
+description: Attributo VML BlackLevel
 ms.assetid: b30446c2-f4f3-49f5-aa60-4119f211add2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5394f8b218f2eb577aa63ead5ae940fe2a49029f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: dfe31c9507468efd27aac9d9729a4f2ee3ddce449398b4a68bd7d79b2d029b8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104046955"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057909"
 ---
-# <a name="vml-blacklevel-attribute"></a>Attributo BlackLevel di la
+# <a name="vml-blacklevel-attribute"></a>Attributo VML BlackLevel
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce l'intensità del nero in un'immagine. Proprietà di lettura/scrittura. **VgNumber**.
 
@@ -26,21 +26,21 @@ Definisce l'intensità del nero in un'immagine. Proprietà di lettura/scrittura.
 
 [ImageData](msdn-online-vml-imagedata-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* blacklevel = " *Expression* " >
+<v: *elemento* blacklevel=" *espressione* ">
 
 **Sintassi dello script**
 
-*element* . blacklevel = "*Expression*"
+*element* .blacklevel="*expression*"
 
-*espressione* = *elemento*. blacklevel
+*expression* = *elemento*.blacklevel
 
 **Osservazioni:**
 
-Consente di modificare il livello di colore in modo che i neri appaiano come veri neri, mentre tutti gli altri colori sono visibili come ombreggiatura sopra il nero. Il valore predefinito è 0. Mentre è consentito un numero compreso tra infinito positivo e negativo, i valori minori di-0,5 vengono visualizzati come tutti i neri e i valori maggiori di 0,5 vengono visualizzati come tutti i bianchi.
+Consente di modificare il livello del colore in modo che i nere vengano visualizzati come neri veri e tutti gli altri colori siano visibili come sfumature sopra il nero. Il valore predefinito è 0. Sebbene sia consentito qualsiasi numero compreso tra l'infinito positivo e negativo, i valori minori di -0,5 verranno visualizzati come tutti i valori neri e quelli maggiori di 0,5 verranno visualizzati come tutti bianchi.
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
@@ -59,6 +59,6 @@ L'immagine verrà visualizzata con toni molto scuri.
 
 
 
- 
+ 
 
- 
+ 

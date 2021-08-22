@@ -1,12 +1,12 @@
 ---
-title: Metodo SetVirtualizeLoopbackAddressesEnabled della classe Win32_TSVirtualIP
+title: Metodo SetVirtualizeLoopbackAddressesEnabled della Win32_TSVirtualIP classe
 description: Imposta il valore della proprietà VirtualizeLoopbackAddressesEnabled.
 ms.assetid: 84A4FF36-82B3-462A-9D2E-C15DD99524E4
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SetVirtualizeLoopbackAddressesEnabled
-- Metodo SetVirtualizeLoopbackAddressesEnabled Servizi Desktop remoto, classe Win32_TSVirtualIP
-- Classe Win32_TSVirtualIP Servizi Desktop remoto, metodo SetVirtualizeLoopbackAddressesEnabled
+- Metodo SetVirtualizeLoopbackAddressesEnabled Servizi Desktop remoto
+- Metodo SetVirtualizeLoopbackAddressesEnabled Servizi Desktop remoto , Win32_TSVirtualIP classe
+- Win32_TSVirtualIP classe Servizi Desktop remoto, metodo SetVirtualizeLoopbackAddressesEnabled
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed74e74a9f0fcbcd070a50743e6182649c2dca08
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5168ddd271dcf013a7595be1e1bdf32cde91e8f9f3ce8cfebc3b9f39af1fa109
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000490"
 ---
-# <a name="setvirtualizeloopbackaddressesenabled-method-of-the-win32_tsvirtualip-class"></a>Metodo SetVirtualizeLoopbackAddressesEnabled della \_ classe TSVirtualIP Win32
+# <a name="setvirtualizeloopbackaddressesenabled-method-of-the-win32_tsvirtualip-class"></a>Metodo SetVirtualizeLoopbackAddressesEnabled della classe \_ Win32 TSVirtualIP
 
-Imposta il valore della proprietà **VirtualizeLoopbackAddressesEnabled** .
+Imposta il **valore della proprietà VirtualizeLoopbackAddressesEnabled.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,10 +43,10 @@ uint32 SetVirtualizeLoopbackAddressesEnabled(
 
 <dl> <dt>
 
-*VirtualizeLoopbackAddressesEnabled* \[ in\]
+*VirtualizeLoopbackAddressesEnabled* \[ Pollici\]
 </dt> <dd>
 
-Specifica se abilitare la virtualizzazione degli indirizzi di loopback. Può corrispondere a uno dei valori seguenti.
+Specifica se abilitare la virtualizzazione degli indirizzi di loopback. Può essere uno dei valori seguenti.
 
 <dt>
 
@@ -66,7 +66,7 @@ Abilitare la virtualizzazione degli indirizzi di loopback.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Per un elenco di questi valori, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) . Il metodo restituisce un errore se l'impostazione è sotto il controllo criteri di gruppo.
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI. Fare riferimento [Servizi Desktop remoto di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) per un elenco di questi valori. Il metodo restituisce un errore se l'impostazione è sotto il controllo di Criteri di gruppo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,7 +77,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                          |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -86,7 +86,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_TSVirtualIP Win32**](win32-tsvirtualip.md)
+[**Win32 \_ TSVirtualIP**](win32-tsvirtualip.md)
 </dt> </dl>
 
  

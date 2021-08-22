@@ -1,77 +1,77 @@
 ---
-description: Le \_ costanti dei flag di bit di LINESPECIALINFO descrivono i segnali di informazioni speciali che la rete può usare per segnalare varie operazioni di Reporting e di osservazione della rete.
+description: Le costanti del flag di bit LINESPECIALINFO descrivono speciali segnali di informazioni che la rete può usare per segnalare diverse operazioni di creazione di report \_ e di osservazione della rete.
 ms.assetid: b94f8a6f-b84d-4976-b4d4-10dee5a1a4d8
-title: Costanti LINESPECIALINFO_ (TAPI. h)
+title: LINESPECIALINFO_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78154757515ebd5bfa36778795c26ef9fdc96db1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d1585146040db4392a271f5095420eee61f9873906443b58198676de806cb37f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002979"
 ---
-# <a name="linespecialinfo_-constants"></a>\_Costanti LINESPECIALINFO
+# <a name="linespecialinfo_-constants"></a>Costanti LINESPECIALINFO \_
 
-Le costanti dei flag di bit di **LINESPECIALINFO \_** descrivono i segnali di informazioni speciali che la rete può usare per segnalare varie operazioni di Reporting e di osservazione della rete. Si tratta di sequenze di tono codificate speciali trasmesse all'inizio degli annunci registrati di Network Advisor.
+Le costanti del flag di bit **LINESPECIALINFO \_** descrivono speciali segnali di informazioni che la rete può usare per segnalare diverse operazioni di creazione di report e di osservazione della rete. Si tratta di sequenze di tono codificate speciali trasmesse all'inizio degli annunci registrati di consulenza di rete.
 
 <dl> <dt>
 
-<span id="LINESPECIALINFO_CUSTIRREG"></span><span id="linespecialinfo_custirreg"></span>**\_CUSTIRREG LINESPECIALINFO**
+<span id="LINESPECIALINFO_CUSTIRREG"></span><span id="linespecialinfo_custirreg"></span>**LINESPECIALINFO \_ CUSTIRREG**
 </dt> <dd> <dl> <dt>
 
 
 
-Questo tono speciale di informazioni precede un numero vacante, un AIS, una modifica del numero di Centrex e una stazione non lavorativa, codice di accesso non composto o con connessione in errore o messaggio dell'operatore di intercettazione manuale (categoria di irregolarità del cliente). LINESPECIALINFO \_ CUSTIRREG viene segnalato anche quando le informazioni di fatturazione vengono rifiutate e quando l'indirizzo composto viene bloccato al commutino.
+Questo tono di informazioni speciali precede un numero non valido, aiS, cambio di numero Centerx e stazione non operativa, codice di accesso non composto o composto per errore o messaggio dell'operatore di intercettazione manuale (categoria irregolarità del cliente). LINESPECIALINFO CUSTIRREG viene segnalato anche quando le informazioni di fatturazione vengono rifiutate e quando l'indirizzo composto \_ viene bloccato all'interruttore.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINESPECIALINFO_NOCIRCUIT"></span><span id="linespecialinfo_nocircuit"></span>**LINESPECIALINFO \_ NOcircuit**
+<span id="LINESPECIALINFO_NOCIRCUIT"></span><span id="linespecialinfo_nocircuit"></span>**LINESPECIALINFO \_ NOCIRCUIT**
 </dt> <dd> <dl> <dt>
 
 
 
-Questo tono speciale di informazioni precede un circuito no o un annuncio di emergenza (categoria blocco trunk).
+Questo tono informativo speciale precede un circuito senza circuito o un annuncio di emergenza (categoria di blocco del trunk).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINESPECIALINFO_REORDER"></span><span id="linespecialinfo_reorder"></span>**LINESPECIALINFO \_ Riordina**
+<span id="LINESPECIALINFO_REORDER"></span><span id="linespecialinfo_reorder"></span>**RIORDINO LINESPECIALINFO \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Questo tono speciale di informazioni precede un annuncio di riordino (categoria di irregolarità delle apparecchiature). \_Il riordino LINESPECIALINFO viene inoltre segnalato quando il telefono viene mantenuto troppo a lungo.
+Questo tono informativo speciale precede un annuncio di riordino (categoria irregolarità delle apparecchiature). LINESPECIALINFO REORDER viene segnalato anche quando il telefono viene mantenuto \_ offhook troppo lungo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINESPECIALINFO_UNAVAIL"></span><span id="linespecialinfo_unavail"></span>**LINESPECIALINFO non \_ disponibile**
+<span id="LINESPECIALINFO_UNAVAIL"></span><span id="linespecialinfo_unavail"></span>**LINESPECIALINFO \_ UNAVAIL**
 </dt> <dd> <dl> <dt>
 
 
 
-Le specifiche relative al tono speciale per le informazioni non sono disponibili e non diventeranno note.
+Le specifiche relative al tono delle informazioni speciali non sono disponibili e non saranno note.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINESPECIALINFO_UNKNOWN"></span><span id="linespecialinfo_unknown"></span>**LINESPECIALINFO \_ sconosciuto**
+<span id="LINESPECIALINFO_UNKNOWN"></span><span id="linespecialinfo_unknown"></span>**LINESPECIALINFO \_ UNKNOWN**
 </dt> <dd> <dl> <dt>
 
 
 
-Le specifiche relative al tono di informazione speciale sono attualmente sconosciute, ma possono essere note in seguito.
+Le specifiche relative al tono delle informazioni speciali sono attualmente sconosciute, ma potrebbero diventare note in un secondo momento.
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-È possibile assegnare i 16 bit più significativi per le estensioni specifiche del dispositivo. I 16 bit di ordine inferiore sono riservati.
+I 16 bit di ordine elevato possono essere assegnati per le estensioni specifiche del dispositivo. I 16 bit di ordine basso sono riservati.
 
-Per i messaggi consultivi vengono definite note speciali e non vengono in genere utilizzate per scopi di fatturazione o di supervisione.
+I toni delle informazioni speciali sono definiti per i messaggi di consulenza e in genere non vengono usati a scopo di fatturazione o supervisione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,8 +79,8 @@ Per i messaggi consultivi vengono definite note speciali e non vengono in genere
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

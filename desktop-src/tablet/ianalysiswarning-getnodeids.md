@@ -1,7 +1,7 @@
 ---
-description: Restituisce gli identificatori di qualsiasi nodo di contesto pertinente associato a questo avviso.
+description: Restituisce gli identificatori di tutti i nodi di contesto pertinenti associati a questo avviso.
 ms.assetid: 8c418f48-3903-47c1-82e2-085de39574d4
-title: 'Metodo IAnalysisWarning:: GetNodeIds (IACom. h)'
+title: Metodo IAnalysisWarning::GetNodeIds (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: a38abd054e457ef9dbaf5dd93c38954b1ce6dcb3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 97e6f4fde66faef14402c815f6b95517a2bd19adfb90eac4e865383770bc753f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967480"
 ---
-# <a name="ianalysiswarninggetnodeids-method"></a>Metodo IAnalysisWarning:: GetNodeIds
+# <a name="ianalysiswarninggetnodeids-method"></a>Metodo IAnalysisWarning::GetNodeIds
 
-Restituisce gli identificatori di qualsiasi nodo di contesto pertinente associato a questo avviso.
+Restituisce gli identificatori di tutti i nodi di contesto pertinenti associati a questo avviso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,36 +40,36 @@ HRESULT GetNodeIds(
 
 <dl> <dt>
 
-*pulCount* \[ in uscita\]
+*pulCount* \[ in, out\]
 </dt> <dd>
 
-Il numero di identificatori univoci globali (GUID) in *ppNodeIds*.
+Numero di GUID (Globally Unique Identifier) in *ppNodeIds*.
 
 </dd> <dt>
 
-*ppNodeIds* \[ out\]
+*ppNodeIds* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una matrice di GUID che identifica i nodi di contesto associati a questo avviso di analisi oppure **null** se all'avviso non è associato alcun nodo di contesto.
+Puntatore a una matrice di GUID che identifica i nodi di contesto associati all'avviso di analisi oppure **NULL** se nessun nodo di contesto è associato all'avviso.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna](classes-and-interfaces---ink-analysis.md).
 
 ## <a name="remarks"></a>Commenti
 
-Se *ppNodeIds* viene passato come **null**, il metodo **GetNodeIds** restituisce **S \_ OK** e viene restituito il numero di rettangoli in *pulCount*.
+Se *ppNodeIds viene* passato come **NULL,** il **metodo GetNodeIds** restituisce **S \_ OK** e il numero di rettangoli viene restituito in *pulCount*.
 
 > [!Caution]  
-> Per evitare una perdita di memoria, usare [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) per rilasciare la memoria da \* *ppNodeIds* quando le informazioni non sono più necessarie.
+> Per evitare una perdita di memoria, usare [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) per rilasciare la memoria da \* *ppNodeIds* quando non sono più necessarie le informazioni.
 
  
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come ottenere gli oggetti [**IContextNode**](icontextnode.md) presenti in [**IAnalysisWarning**](ianalysiswarning.md), `warning` e come ottenere solo il numero di oggetti **IContextNode**
+L'esempio seguente illustra come ottenere gli oggetti [**IContextNode**](icontextnode.md) presenti in [**IAnalysisWarning**](ianalysiswarning.md), e come ottenere solo il numero di `warning` oggetti **IContextNode**
 
 
 ```C++
@@ -95,9 +95,9 @@ warning->GetNodeIds(&number, NULL);
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -112,10 +112,10 @@ warning->GetNodeIds(&number, NULL);
 [**IContextNode**](icontextnode.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: FindNode**](iinkanalyzer-findnode.md)
+[**Metodo IInkAnalyzer::FindNode**](iinkanalyzer-findnode.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi dell'input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

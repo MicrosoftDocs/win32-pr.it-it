@@ -1,11 +1,11 @@
 ---
-title: Mediacollection. getByAttribute, metodo
+title: Metodo MediaCollection.getByAttribute
 description: Il metodo getByAttribute recupera una playlist di elementi multimediali che contengono un valore specificato per un attributo specificato.
 ms.assetid: a89f9c52-c655-4420-858e-c0eed661856f
 keywords:
 - Metodo getByAttribute Windows Media Player
-- Metodo getByAttribute Windows Media Player, classe Mediacollection
-- Mediacollection (classe) Windows Media Player, metodo getByAttribute
+- Metodo getByAttribute Windows Media Player , classe MediaCollection
+- Classe MediaCollection Windows Media Player metodo , getByAttribute
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 533823127364416f8f4492c82381e682173c5c78
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f942f0718202d6c3e509b177c34c4c4be20c058b1e74991fa0ae89955d7711d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996310"
 ---
-# <a name="mediacollectiongetbyattribute-method"></a>Mediacollection. getByAttribute, metodo
+# <a name="mediacollectiongetbyattribute-method"></a>Metodo MediaCollection.getByAttribute
 
-Il metodo **getByAttribute** recupera una playlist di elementi multimediali che contengono un valore specificato per un attributo specificato.
+Il **metodo getByAttribute** recupera una playlist di elementi multimediali che contengono un valore specificato per un attributo specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,14 +43,14 @@ retVal = MediaCollection.getByAttribute(
 
 <dl> <dt>
 
-*attributo* \[ in\]
+*attributo* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** che indica il nome dell'attributo da cercare. Per informazioni sugli attributi supportati da Windows Media Player, vedere la Guida di [riferimento](attribute-reference.md)agli attributi di Windows Media Player.
+**Stringa** che indica il nome dell'attributo da cercare. Per informazioni sugli attributi supportati da Windows Media Player, vedere le informazioni di Windows Media Player [sugli attributi](attribute-reference.md).
 
 </dd> <dt>
 
-*valore* \[ di in\]
+*value* \[ Pollici\]
 </dt> <dd>
 
 **Stringa** che indica il valore che l'attributo deve avere.
@@ -59,34 +59,34 @@ retVal = MediaCollection.getByAttribute(
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un oggetto **playlist** .
+Questo metodo restituisce un **oggetto Playlist.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo può essere utilizzato per creare una query generica per gli elementi multimediali che corrispondono a un valore per un attributo nel database. Questa operazione è utile nel caso di attributi definiti dall'utente. Se l'attributo non esiste, verrà generato un errore.
+Questo metodo può essere usato per creare una query generica per gli elementi multimediali che corrispondono a un valore per un attributo nel database. Ciò è utile nel caso di attributi definiti dall'utente. Se l'attributo non esiste, verrà restituito un errore.
 
-È possibile utilizzare questo metodo per recuperare tutti gli elementi multimediali di un tipo specifico. Usare il nome di attributo "MediaType" e uno dei valori seguenti:
+È possibile usare questo metodo per recuperare tutti gli elementi multimediali di un tipo specifico. Usare il nome dell'attributo "MediaType" e uno dei valori seguenti:
 
 
 
 | Valore    | Descrizione                                                |
 |----------|------------------------------------------------------------|
 | Audio    | Musica e altri elementi solo audio.                          |
-| playlist | Playlist rappresentate come oggetti **multimediali** .                |
-| radio    | Elementi della stazione di radio. Non usato da Windows Media Player 10.  |
+| Playlist | Playlist rappresentate come **oggetti** multimediali.                |
+| radio    | Elementi della stazione radio. Non usato da Windows Media Player 10.  |
 | Video    | Elementi video.                                               |
 | Foto    | Elementi foto. Richiede Windows Media Player 10.             |
-| altro    | Altri elementi, ad esempio file ASF o URL per flussi multimediali. |
+| altro    | Altri elementi, ad esempio file ASF o URL ai supporti di streaming. |
 
 
 
  
 
-Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene utilizzato *mediacollection*. **getByAttribute** per riprodurre tutto il contenuto dalla libreria dall'artista denominato triodo 48. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene *utilizzato MediaCollection*. **getByAttribute per** riprodurre tutto il contenuto della libreria dell'artista chiamato Triode 48. **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -110,7 +110,7 @@ Player.controls.play();
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -119,16 +119,16 @@ Player.controls.play();
 
 <dl> <dt>
 
-[**Mediacollection (oggetto)**](mediacollection-object.md)
+[**Oggetto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**Oggetto playlist**](playlist-object.md)
+[**Oggetto Playlist**](playlist-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

@@ -1,27 +1,27 @@
 ---
-title: Finestra desktop (riferimento all'elemento dell'interfaccia utente MSAA)
-description: Nella finestra del desktop viene visualizzata la visualizzazione elenco dei desktop (che contiene icone come Computer locale) e la barra delle applicazioni che contiene il pulsante Avvia.
+title: Finestra desktop (riferimenti a elementi dell'interfaccia utente MSAA)
+description: La finestra del desktop visualizza la visualizzazione elenco del desktop (che contiene icone come Computer locale) e la barra delle applicazioni che contiene il pulsante Start.
 ms.assetid: 3668c26e-6462-4219-95d3-507811ed7f3c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d58208b3993964a367d093174d58d705beda23d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c0a1c096ea759f9df2115a35e79e72fe7257e93b9d9a21d9f596b890644a6a67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104395491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118994221"
 ---
-# <a name="desktop-window-msaa-ui-element-reference"></a>Finestra desktop (riferimento all'elemento dell'interfaccia utente MSAA)
+# <a name="desktop-window-msaa-ui-element-reference"></a>Finestra desktop (riferimenti a elementi dell'interfaccia utente MSAA)
 
-Nella finestra del desktop viene visualizzata la visualizzazione elenco dei desktop (che contiene icone come Computer locale) e la barra delle applicazioni che contiene il pulsante **Avvia** .
+La finestra del desktop visualizza la visualizzazione elenco del desktop (che contiene icone come Computer locale) e la barra delle applicazioni che contiene il **pulsante** Start.
 
-Questo oggetto viene raramente sottoposto a query dai client perché la visualizzazione elenco e la barra delle applicazioni coprono l'intero desktop. L'oggetto desktop viene recuperato al momento dell'accesso, prima che la shell del sistema operativo visualizzi la visualizzazione elenco e la barra delle applicazioni. In alcuni casi, il desktop viene ottenuto quando ci si sposta da altri oggetti.
+Questo oggetto viene raramente sottoposto a query dai client perché la visualizzazione elenco e la barra delle applicazioni coprono l'intero desktop. L'oggetto desktop viene recuperato quando si accede, prima che la shell del sistema operativo visualizzi la visualizzazione elenco e la barra delle applicazioni. In alcuni casi, il desktop viene ottenuto quando ci si sposta da altri oggetti.
 
-Il nome della classe di finestra per la finestra del desktop è " \# 32769".
+Il nome della classe della finestra per la finestra desktop è " \# 32769".
 
 ## <a name="iaccessible-methods"></a>Metodi IAccessible
 
-La finestra desktop supporta i seguenti metodi [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) :
+La finestra desktop supporta i metodi [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) seguenti:
 
 -   [**accHitTest**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acchittest)
 -   [**accLocation**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acclocation)
@@ -36,12 +36,12 @@ La finestra desktop supporta le proprietà [**IAccessible**](/windows/desktop/ap
 
 | Proprietà                                                                 | Commenti                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ottenere \_ accChildCount**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchildcount) |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [**ottenere \_ accFocus**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accfocus)           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [**ottenere \_ accName**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname)             | La proprietà Name è "desktop".                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [**ottenere \_ accRole**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accrole)             | La proprietà **Role** è [**un \_ \_ client del sistema Role**](object-roles.md).                                                                                                                                                                                                                                                                                                                                                                                |
-| [**ottenere \_ accSelection**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accselection)   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [**ottenere \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate)           | La proprietà **state** è costituita da una combinazione di uno o più dei [valori](object-state-constants.md)seguenti: stato sistema [**\_ \_ invisibile**](object-state-constants.md) allo stato sistema stato \| [**\_ \_**](object-state-constants.md) \| [**\_ \_**](object-state-constants.md) \| [**\_ \_ inattivo**](object-state-constants.md) sistema stato non disponibile<br/> |
+| [**get \_ accChildCount**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchildcount) |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [**get \_ accFocus**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accfocus)           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [**get \_ accName**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname)             | La proprietà Name è "Desktop".                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [**get \_ accRole**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accrole)             | La **proprietà Role** è ROLE SYSTEM [**\_ \_ CLIENT.**](object-roles.md)                                                                                                                                                                                                                                                                                                                                                                                |
+| [**get \_ accSelection**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accselection)   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [**get \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate)           | La **proprietà State** è una combinazione di uno o più dei valori [seguenti:](object-state-constants.md)[**STATE SYSTEM \_ \_ INVISIBLE**](object-state-constants.md) \| [**STATE SYSTEM \_ \_ UNAVAILABLE**](object-state-constants.md) \| [**STATE SYSTEM \_ \_ FOCUSED**](object-state-constants.md) \| [**STATE SYSTEM \_ \_ FOCUSABLE**](object-state-constants.md)<br/> |
 
 
 
@@ -51,7 +51,7 @@ La finestra desktop supporta le proprietà [**IAccessible**](/windows/desktop/ap
 
 <dl> <dt>
 
-[IAccessible (interfaccia)](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
+[Interfaccia IAccessible](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 </dt> </dl>
 
  

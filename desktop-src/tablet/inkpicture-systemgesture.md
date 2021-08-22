@@ -4,12 +4,12 @@ ms.assetid: 36e2ac5a-dc91-47c2-a8e5-e555437c0a5d
 title: InkPicture.SystemGesture (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cde11b73b6b0d3861a79538a7f9ee19487b6384
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 11567b94360c8fa2bf736d295bf828ebc636bb0bee7a21acb4cc063c22780352
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966950"
 ---
 # <a name="inkpicturesystemgesture-event"></a>InkPicture.SystemGesture
 
@@ -95,7 +95,7 @@ I movimenti di sistema forniscono informazioni [**sull'oggetto IInkCursor**](/wi
 
 Ad esempio, anziché cercare una coppia di eventi [**MouseUp Event \[ InkPicture Control \]**](inkpicture-mouseup.md)MouseDown Event / [**\[ InkPicture Control \]**](inkpicture-mousedown.md) di eventi senza altri eventi del mouse che si verificano tra, è possibile cercare i movimenti di sistema Tap o RightTap.
 
-Come altro esempio, invece di ascoltare gli eventi del controllo MouseDown Event [**\[ InkPicture \] Control**](inkpicture-mousedown.md)MouseMove Event InkPicture Control / [**\[ \]**](inkpicture-mousemove.md) e ricevere numerosi messaggi **mouseMove Event \[ InkPicture Control, \]** è possibile controllare i movimenti di sistema Drag o RightDrag purché non si sia interessati alle coordinate (x, y) di ogni posizione del mouse. In questo modo è possibile ricevere un solo messaggio anziché numerosi messaggi di controllo **\[ InkPicture \]** dell'evento MouseMove.
+Come altro esempio, invece di ascoltare gli eventi di controllo [**\[ InkPicture \]**](inkpicture-mousedown.md)Event MouseMove Event / [**\[ InkPicture Control \]**](inkpicture-mousemove.md) dell'evento MouseDown e ricevere numerosi messaggi di controllo InkPicture **\[ \]** dell'evento MouseMove, è possibile controllare i movimenti di sistema Drag o RightDrag purché non si sia interessati alle coordinate (x, y) di ogni posizione del mouse. In questo modo è possibile ricevere un solo messaggio anziché numerosi messaggi di controllo **\[ InkPicture \]** dell'evento MouseMove.
 
 Per un elenco di movimenti di sistema specifici, vedere il tipo di enumerazione [**InkSystemGesture.**](/windows/desktop/api/msinkaut/ne-msinkaut-inksystemgesture) Per altre informazioni sui movimenti di sistema, vedere [Uso di movimenti e](using-gestures.md) input dei comandi nel Tablet [PC.](/previous-versions//dd314533(v=vs.85))
 
@@ -107,7 +107,7 @@ Questo metodo di evento è definito nelle interfacce **\_ IInkCollectorEvents**,
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

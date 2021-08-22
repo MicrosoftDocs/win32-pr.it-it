@@ -1,9 +1,9 @@
 ---
-title: trasposizione
-description: Traspone la matrice di input specificata.
+title: Recepire
+description: Traspo la matrice di input specificata.
 ms.assetid: 2a2ff2fb-73f0-4bb8-af83-38fe0567d122
 keywords:
-- Trasponi HLSL
+- trasporre HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 44f129a87edaff260de87136954be7598ee3acb6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e6e545e657e6d9eaded92affba5bbb52a22222db2bf87acd5dddb72335a17ab0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119755"
 ---
-# <a name="transpose"></a>trasposizione
+# <a name="transpose"></a>Recepire
 
-Traspone la matrice di input specificata.
+Traspo la matrice di input specificata.
 
 
 
-| RET Transpose (*x*) |
+| ret transpose(*x*) |
 |--------------------|
 
 
@@ -39,7 +39,7 @@ Traspone la matrice di input specificata.
 
 | Elemento                                                   | Descrizione                             |
 |--------------------------------------------------------|-----------------------------------------|
-| <span id="x"></span><span id="X"></span>*x*<br/> | \[nella \] matrice specificata.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[in \] Matrice specificata.<br/> |
 
 
 
@@ -47,11 +47,11 @@ Traspone la matrice di input specificata.
 
 ## <a name="return-value"></a>Valore restituito
 
-Valore trasposto dal parametro *x* .
+Valore trasposto del *parametro x.*
 
 ## <a name="remarks"></a>Commenti
 
-Se le dimensioni della matrice di origine sono  *colonne* di righe, la matrice risultante è costituita da *righe* di *colonne* .
+Se le dimensioni della  matrice di origine sono colonne *rows*, la matrice risultante sarà *columns* *rows*.
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -59,22 +59,22 @@ Se le dimensioni della matrice di origine sono  *colonne* di righe, la matrice r
 
 | Nome | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md)                                                         | Dimensione                                                                                   |
 |------|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| *x*  | [**matrice**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types), [**int**](/windows/desktop/WinProg/windows-data-types), [**bool**](/windows/desktop/WinProg/windows-data-types) | any                                                                                    |
-| RET  | [**matrice**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types), [**int**](/windows/desktop/WinProg/windows-data-types), [**bool**](/windows/desktop/WinProg/windows-data-types) | righe = lo stesso numero di colonne dell'input *x*, colonne = lo stesso numero di righe dell'input *x* |
+| *x*  | [**Matrice**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types), [**int**](/windows/desktop/WinProg/windows-data-types), [**bool**](/windows/desktop/WinProg/windows-data-types) | any                                                                                    |
+| Ret  | [**Matrice**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types), [**int**](/windows/desktop/WinProg/windows-data-types), [**bool**](/windows/desktop/WinProg/windows-data-types) | rows = stesso numero di colonne dell'input *x*, colonne = stesso numero di righe dell'input *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                                                       | Supportato |
 |------------------------------------------------------------------------------------|-----------|
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) e modelli shader più elevati | sì       |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) e modelli shader superiori | sì       |
 
 
 

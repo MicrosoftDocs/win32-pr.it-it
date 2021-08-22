@@ -1,29 +1,29 @@
 ---
-description: Viene illustrato come riprodurre contenuto multimediale protetto in Microsoft Media Foundation.
+description: Illustra come riprodurre contenuto multimediale protetto in Microsoft Media Foundation.
 ms.assetid: e4a47e1c-16aa-45c1-8aa8-8929d6e1e653
-title: Esempio ProtectedPlayback
+title: Esempio di ProtectedPlayback
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee64b2a64ce4d40b6f15c2e5afb3b9a39e84c619
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd4290a92ba18695d1780fc0401334c4bce252754353d8757b3e904a2aa979fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034979"
 ---
-# <a name="protectedplayback-sample"></a>Esempio ProtectedPlayback
+# <a name="protectedplayback-sample"></a>Esempio di ProtectedPlayback
 
-Viene illustrato come riprodurre contenuto multimediale protetto in Microsoft Media Foundation.
+Illustra come riprodurre contenuto multimediale protetto in Microsoft Media Foundation.
 
 ## <a name="usage"></a>Utilizzo
 
-L'esempio ProtectedPlayback compila un'applicazione Windows.
+L'esempio ProtectedPlayback compila un'Windows applicazione.
 
-Per riprodurre un file multimediale locale, scegliere **Apri file** dal menu **file** . Per specificare un file in base all'URL, selezionare **Apri URL** dal menu **file** . Dopo aver selezionato un file, la riproduzione viene avviata automaticamente. Per sospendere la riproduzione, premere la barra SPAZIAtrice. Per riprendere la riproduzione, premere di nuovo la barra SPAZIAtrice.
+Per riprodurre un file multimediale locale, **scegliere Apri file** dal menu **File.** Per specificare un file in base all'URL, **scegliere Apri URL** dal menu **File.** Dopo aver selezionato un file, la riproduzione inizia automaticamente. Per sospendere la riproduzione, premere la BARRA SPAZIATRICE. Per riprendere la riproduzione, premere di nuovo LA BARRA SPAZIATRICE.
 
-## <a name="apis-demonstrated"></a>API illustrate
+## <a name="apis-demonstrated"></a>DIMOSTRAZIONE DELLE API
 
-In questo esempio vengono illustrate le interfacce Media Foundation seguenti:
+In questo esempio vengono illustrate le Media Foundation seguenti:
 
 -   [**IMFContentEnabler**](/windows/desktop/api/mfidl/nn-mfidl-imfcontentenabler)
 -   [**IMFContentProtectionManager**](/windows/desktop/api/mfidl/nn-mfidl-imfcontentprotectionmanager)
@@ -42,7 +42,7 @@ In questo esempio vengono illustrate le interfacce Media Foundation seguenti:
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-Questo esempio è disponibile nel [repository GitHub degli esempi classici di Windows](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/protectedplayback).
+Questo esempio è disponibile nel [repository github Windows esempi classici.](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/protectedplayback)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -54,7 +54,7 @@ Questo esempio è disponibile nel [repository GitHub degli esempi classici di Wi
 [Esempi di Media Foundation SDK](media-foundation-sdk-samples.md)
 </dt> <dt>
 
-[Esempio MFPlayer](/previous-versions//bb970516(v=vs.85))
+[Esempio di MFPlayer](/previous-versions//bb970516(v=vs.85))
 </dt> </dl>
 
  

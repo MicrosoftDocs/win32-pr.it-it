@@ -4,18 +4,18 @@ ms.assetid: 22f43b29-ea7b-4faf-9795-2242bf704ed3
 title: Utilizzo della trasformazione di tipo World
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2138df1bbd2be6d3329695fc6898da49da93b3b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6288b5640e330a827e96b632541dac44e9463b87c566c16a94797810c4c92c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118977241"
 ---
 # <a name="using-the-world-transformation"></a>Utilizzo della trasformazione di tipo World
 
-La trasformazione globale è una proprietà della classe [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) . I numeri che specificano la trasformazione globale vengono archiviati in un oggetto [**matrice**](/windows/desktop/api/gdiplusmatrix/nl-gdiplusmatrix-matrix) , che rappresenta una matrice 3 × 3. Le classi **Matrix** e **Graphics** hanno diversi metodi per impostare i numeri nella matrice di trasformazione mondiale. Gli esempi in questa sezione modificano i rettangoli perché i rettangoli sono facili da creare ed è facile vedere gli effetti delle trasformazioni sui rettangoli.
+La trasformazione globale è una proprietà della [**classe Graphics.**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) I numeri che specificano la trasformazione globale vengono archiviati in un [**oggetto Matrix,**](/windows/desktop/api/gdiplusmatrix/nl-gdiplusmatrix-matrix) che rappresenta una matrice di 3 ×3. Le **classi Matrix** e **Graphics** hanno diversi metodi per impostare i numeri nella matrice di trasformazione globale. Gli esempi in questa sezione modificano i rettangoli perché i rettangoli sono facili da disegnare ed è facile vedere gli effetti delle trasformazioni sui rettangoli.
 
-Per iniziare, si crea un rettangolo 50 per 50 e lo si individua all'origine (0,0). L'origine si trova nell'angolo superiore sinistro dell'area client.
+Si inizia creando un rettangolo 50 per 50 e individuarlo all'origine (0, 0). L'origine si trova nell'angolo superiore sinistro dell'area client.
 
 
 ```
@@ -26,7 +26,7 @@ graphics.DrawRectangle(&pen, rect);
 
 
 
-Il codice seguente applica una trasformazione di ridimensionamento che espande il rettangolo per un fattore di 1,75 nella direzione x e compatta il rettangolo per un fattore di 0,5 nella direzione y:
+Il codice seguente applica una trasformazione di ridimensionamento che espande il rettangolo di un fattore di 1,75 nella direzione x e riduce il rettangolo di un fattore di 0,5 nella direzione y:
 
 
 ```
@@ -52,7 +52,7 @@ graphics.DrawRectangle(&pen, rect);
 
 
 
-Per tradurre il rettangolo, usare il codice seguente:
+Per traslare il rettangolo, usare il codice seguente:
 
 
 ```

@@ -6,28 +6,28 @@
     - name: Guida per programmatori
       href: '-wic-programming-guide.md'
       items:
-        - name: Panoramica del componente imaging Windows
+        - name: Windows Panoramica del componente di creazione dell'immagine
           href: '-wic-about-windows-imaging-codec.md'
         - name: Panoramica dell'API WIC
           href: '-wic-api.md'
         - name: Decodifica di immagini digitali
           href: '-wic-decoder-portal.md'
           items:
-            - name: Panoramica della decodifica
+            - name: Cenni preliminari sulla decodifica
               href: '-wic-creating-decoder.md'
-            - name: Panoramica della decodifica progressiva
+            - name: Cenni preliminari sulla decodifica progressiva
               href: '-wic-progressive-decoding.md'
-            - name: Procedure per i decodificatori
+            - name: Procedure per il decodificatore
               href: '-wic-decoder-howto-portal.md'
               items:
                 - name: Come creare un decodificatore usando un nome file di immagine
                   href: '-wic-decoder-howto-createusingfilename.md'
                 - name: Come creare un decodificatore usando un flusso
                   href: '-wic-decoder-howto-createusingstream.md'
-        - name: Utilizzo di dati immagine
+        - name: Uso dei dati di immagine
           href: '-wic-bitmapsources-portal.md'
           items:
-            - name: Cenni preliminari sulle origini bitmap
+            - name: Panoramica delle origini bitmap
               href: '-wic-bitmapsources.md'
             - name: Procedure per le origini bitmap
               href: '-wic-bitmapsources-howto-portal.md'
@@ -44,9 +44,9 @@
                   href: '-wic-bitmapsources-howto-flipandrotate.md'
                 - name: Come modificare i pixel di un'origine bitmap
                   href: '-wic-bitmapsources-howto-modifypixels.md'
-                - name: Come creare un oggetto BitmapSource tramite Direct2D
+                - name: Come disegnare un oggetto BitmapSource usando Direct2D
                   href: '-wic-bitmapsources-howto-drawusingd2d.md'
-        - name: Codifica dei dati dell'immagine
+        - name: Codifica dei dati di immagine
           href: encoding-bitmaps-to-digital-images.md
           items:
             - name: Panoramica della codifica delle immagini
@@ -56,30 +56,30 @@
           items:
             - name: Panoramica del formato BMP
               href: bmp-format-overview.md
-            - name: Cenni preliminari sul formato DDS
+            - name: Panoramica del formato DDS
               href: dds-format-overview.md
-            - name: Panoramica sul formato DNG
+            - name: Panoramica del formato DNG
               href: dng-format-overview.md
-            - name: Panoramica del formato GIF
+            - name: Cenni preliminari sul formato GIF
               href: gif-format-overview.md
             - name: Panoramica del formato foto HD
               href: hdphoto-format-overview.md
-            - name: Panoramica sul formato ICO
+            - name: Panoramica del formato ICO
               href: ico-format-overview.md
-            - name: Panoramica sul formato JPEG
+            - name: Panoramica del formato JPEG
               href: jpeg-format-overview.md
-            - name: Codec JPEG XR
+            - name: JPEG XR Codec
               href: jpeg-xr-codec.md
             - name: Panoramica del formato PNG
               href: png-format-overview.md
-            - name: Cenni preliminari sul formato TIFF
+            - name: Panoramica del formato TIFF
               href: tiff-format-overview.md
         - name: Elaborazione dei metadati delle immagini
           href: '-wic-metadata-portal.md'
           items:
-            - name: Cenni preliminari sui metadati WIC
+            - name: Panoramica dei metadati WIC
               href: '-wic-about-metadata.md'
-            - name: Cenni preliminari sul linguaggio di query dei metadati
+            - name: Panoramica del linguaggio di query sui metadati
               href: '-wic-codec-metadataquerylanguage.md'
             - name: Query di metadati per formati di immagine nativi
               href: '-wic-native-image-format-metadata-queries.md'
@@ -87,11 +87,11 @@
               href: '-wic-codec-readingwritingmetadata.md'
             - name: Panoramica dell'estendibilità dei metadati
               href: '-wic-codec-metadatahandlers.md'
-            - name: Cenni preliminari sull'assegnazione di tag agli utenti
+            - name: Cenni preliminari sull'assegnazione di tag alle persone
               href: '-wic-people-tagging.md'
-        - name: Supporto di YCbCr JPEG
+        - name: Supporto di JPEG YCbCr
           href: jpeg-ycbcr-support.md
-        - name: Gestione dei colori
+        - name: Gestione colori
           href: '-wic-colormanagement.md'
         - name: Sviluppo di componenti
           href: '-wic-component-development.md'
@@ -101,9 +101,9 @@
               items:
                 - name: Introduzione
                   href: '-wic-howtowriteacodec-intro.md'
-                - name: Funzionamento del componente Windows Imaging
+                - name: Funzionamento del Windows imaging
                   href: '-wic-howwicworks.md'
-                - name: Implementazione di un decodificatore WIC-Enabled
+                - name: Implementazione di un WIC-Enabled decodificatore
                   href: '-wic-implementingwicdecoder.md'
                   items:
                     - name: Interfacce del decodificatore
@@ -123,7 +123,7 @@
                           href: '-wic-imp-iwicbitmapsourcetransform.md'
                         - name: IWICDevelopRaw
                           href: '-wic-imp-iwicdevelopraw.md'
-                - name: Implementazione di un codificatore di WIC-Enabled
+                - name: Implementazione di un WIC-Enabled codificatore
                   href: '-wic-implementingwicencoder.md'
                   items:
                     - name: Interfacce del codificatore
@@ -140,29 +140,29 @@
                 - name: Installazione e registrazione di codec
                   href: '-wic-codecinstallandreg.md'
                   items:
-                    - name: Voci generali del registro di sistema
+                    - name: Voci generali del Registro di sistema
                       href: '-wic-generalregentries.md'
-                    - name: Voci del registro di sistema Encoder-Specific
+                    - name: Encoder-Specific del Registro di sistema
                       href: '-wic-encoderregentries.md'
-                    - name: Voci del registro di sistema Decoder-Specific
+                    - name: Decoder-Specific del Registro di sistema
                       href: '-wic-decoderregentries.md'
-                    - name: Integrazione con raccolta foto di Windows e Esplora risorse
+                    - name: Integrazione con Windows Raccolta foto e Windows Explorer
                       href: '-wic-integrationregentries.md'
                 - name: Conclusione (come scrivere un codec WIC-Enabled)
                   href: '-wic-howtowriteacodec-conclusion.md'
-            - name: Linee guida per WIC per i formati di immagine RAW della fotocamera
+            - name: Linee guida WIC per i formati di immagine RAW della fotocamera
               href: '-wic-rawguidelines.md'
               items:
                 - name: Introduzione
                   href: '-wic-rawguidelines-intro.md'
                   items:
-                    - name: Formati di immagini non ELABORAte in Windows Vista
+                    - name: Formati di immagine RAW in Windows Vista
                       href: '-wic-rawguidelines-intro-vista.md'
-                    - name: Linee guida generali per l'implementazione di codec non ELABORAti
+                    - name: Linee guida generali per l'implementazione di codec RAW
                       href: '-wic-rawguidelines-intro-implement.md'
                 - name: 'Completezza delle funzionalità: interfacce consigliate'
                   href: '-wic-rawguidelines-feature-complete.md'
-                - name: Requisiti del metodo di interfaccia
+                - name: Requisiti dei metodi di interfaccia
                   href: '-wic-rawguidelines-iface-reqs.md'
                 - name: Supporto dei metadati
                   href: '-wic-rawguidelines-metadata.md'
@@ -173,19 +173,19 @@
                       href: '-wic-rawguidelines-metadata-encoding.md'
                 - name: Supporto per IWICDevelopRaw
                   href: '-wic-rawguidelines-iwicdevelopraw.md'
-                - name: Linee guida di implementazione per la serializzazione delle impostazioni di IWICDevelopRaw
+                - name: Linee guida di implementazione per la serializzazione di IWICDevelopRaw Impostazioni
                   href: '-wic-rawguidelines-iwicdevelopraw-serializing.md'
                 - name: Prestazioni
                   href: '-wic-rawguidelines-performance.md'
-                - name: Formati pixel con intervallo dinamico elevato
+                - name: High Dynamic Range Pixel Formats
                   href: '-wic-rawguidelines-hdr-formats.md'
                 - name: Anteprime e anteprime
                   href: '-wic-rawguidelines-thumbnail-previews.md'
                 - name: Affidabilità e sicurezza
                   href: '-wic-rawguidelines-reliability-security.md'
-                - name: Disponibilità di codec e supporto della piattaforma
+                - name: Disponibilità dei codec e supporto della piattaforma
                   href: '-wic-rawguidelines-availability.md'
-                - name: Requisiti dei codec RAW per Windows 7
+                - name: Requisiti del codec RAW per Windows 7
                   href: '-wic-rawguidelines-win7.md'
                 - name: Ulteriori informazioni
                   href: '-wic-rawguidelines-moreinfo.md'
@@ -202,7 +202,7 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmap-lock
                 - name: SetPalette
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmap-setpalette
-                - name: Risoluzione dei problemi
+                - name: SetResolution
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmap-setresolution
             - name: IWICBitmapClipper
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapclipper
@@ -244,7 +244,7 @@
             - name: IWICBitmapDecoder
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder
               items:
-                - name: CopyPalette
+                - name: CopiaPalette
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-copypalette
                 - name: GetColorContexts
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getcolorcontexts
@@ -258,7 +258,7 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getframecount
                 - name: GetMetadataQueryReader
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getmetadataqueryreader
-                - name: Getpreview
+                - name: GetPreview
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getpreview
                 - name: GetThumbnail
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getthumbnail
@@ -294,9 +294,9 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setcolorcontexts
                 - name: SetPalette
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setpalette
-                - name: Anteprima
+                - name: SetPreview
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setpreview
-                - name: Anteprima
+                - name: SetThumbnail
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setthumbnail
             - name: IWICBitmapEncoderInfo
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapencoderinfo
@@ -332,11 +332,11 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setpalette
                 - name: SetPixelFormat
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setpixelformat
-                - name: Risoluzione dei problemi
+                - name: SetResolution
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setresolution
                 - name: SetSize
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setsize
-                - name: Anteprima
+                - name: SetThumbnail
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setthumbnail
                 - name: WritePixels
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-writepixels
@@ -351,7 +351,7 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmaplock-getpixelformat
                 - name: GetSize
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmaplock-getsize
-                - name: Getstride
+                - name: GetStride
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmaplock-getstride
             - name: IWICBitmapScaler
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapscaler
@@ -361,13 +361,13 @@
             - name: IWICBitmapSource
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource
               items:
-                - name: CopyPalette
+                - name: CopiaPalette
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-copypalette
                 - name: CopyPixels
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-copypixels
                 - name: GetPixelFormat
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getpixelformat
-                - name: Getsolution
+                - name: GetResolution
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getresolution
                 - name: GetSize
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getsize
@@ -424,7 +424,7 @@
               items:
                 - name: GetAuthor
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getauthor
-                - name: Getclsid
+                - name: GetCLSID
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getclsid
                 - name: GetComponentType
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getcomponenttype
@@ -448,7 +448,7 @@
             - name: IWICDdsEncoder
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicddsencoder
               items:
-                - name: Metodo separameters
+                - name: Metodo SetParameters
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicddsencoder-setparameters
                 - name: Metodo GetParameters
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicddsencoder-getparameters
@@ -457,13 +457,13 @@
             - name: IWICDevelopRaw
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicdevelopraw
               items:
-                - name: Getcontrast
+                - name: GetContrast
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getcontrast
                 - name: GetCurrentParameterSet
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getcurrentparameterset
                 - name: GetExposureCompensation
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getexposurecompensation
-                - name: Getgamma
+                - name: GetGamma
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getgamma
                 - name: GetKelvinRangeInfo
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getkelvinrangeinfo
@@ -473,13 +473,13 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getnoisereduction
                 - name: GetRenderMode
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getrendermode
-                - name: Getrotation
+                - name: GetRotation
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getrotation
-                - name: Getsaturazione
+                - name: GetSaturation
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getsaturation
-                - name: Getnitidezza
+                - name: GetSharpness
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getsharpness
-                - name: Gettint
+                - name: GetTint
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-gettint
                 - name: GetToneCurve
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-gettonecurve
@@ -491,13 +491,13 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-loadparameterset
                 - name: QueryRawCapabilitiesInfo
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-queryrawcapabilitiesinfo
-                - name: Contrasto
+                - name: SetContrast
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setcontrast
                 - name: SetDestinationColorContext
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setdestinationcolorcontext
                 - name: SetExposureCompensation
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setexposurecompensation
-                - name: SetGamma
+                - name: Setgamma
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setgamma
                 - name: SetNamedWhitePoint
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setnamedwhitepoint
@@ -507,11 +507,11 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setnotificationcallback
                 - name: SetRenderMode
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setrendermode
-                - name: Serotazione
+                - name: SetRotation
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setrotation
-                - name: Saturazione
+                - name: SetSaturation
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setsaturation
-                - name: Senettezza
+                - name: SetSharpness
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setsharpness
                 - name: SetTint
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-settint
@@ -653,7 +653,7 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicjpegframedecode-getquantizationtable
                 - name: Metodo GetScanHeader
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicjpegframedecode-getscanheader
-                - name: Metodo di sedicizzazione
+                - name: Metodo SetIndexing
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicjpegframedecode-setindexing
             - name: IWICJpegFrameEncode
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicjpegframeencode
@@ -772,7 +772,7 @@
               items:
                 - name: GetColorCount
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-getcolorcount
-                - name: Getcolors
+                - name: GetColors
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-getcolors
                 - name: GetType
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-gettype
@@ -788,7 +788,7 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-initializepredefined
                 - name: IsBlackWhite
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-isblackwhite
-                - name: Scala di grigi
+                - name: IsGrayscale
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-isgrayscale
             - name: IWICPersistStream
               href: /windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicpersiststream
@@ -870,7 +870,7 @@
                   href: /windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicstreamprovider-getpersistoptions
                 - name: GetPreferredVendorGUID
                   href: /windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicstreamprovider-getpreferredvendorguid
-                - name: GetStream
+                - name: Getstream
                   href: /windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicstreamprovider-getstream
                 - name: RefreshStream
                   href: /windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicstreamprovider-refreshstream
@@ -879,9 +879,9 @@
           items:
             - name: GUID e CLSID WIC
               href: '-wic-guids-clsids.md'
-            - name: Codici di errore codec
+            - name: Codici di errore del codec
               href: '-wic-codec-error-codes.md'
-            - name: Formati pixel nativi
+            - name: Formati di pixel nativi
               href: '-wic-codec-native-pixel-formats.md'
             - name: Costanti IWICDevelopRawNotificationCallback
               href: '-wic-codec-iwicdeveloprawnotification-constants.md'
@@ -977,7 +977,7 @@
               href: /windows/desktop/api/Wincodec/ne-wincodec-wicpngitxtproperties
             - name: WICPngSrgbProperties
               href: /windows/desktop/api/Wincodec/ne-wincodec-wicpngsrgbproperties
-            - name: WICPngTimeProperties
+            - name: WiCPngTimeProperties
               href: /windows/desktop/api/Wincodec/ne-wincodec-wicpngtimeproperties
             - name: WICProgressNotification
               href: /windows/desktop/api/Wincodec/ne-wincodec-wicprogressnotification
@@ -1024,7 +1024,7 @@
               href: /windows/desktop/api/Wincodec/ns-wincodec-wicrawtonecurve
             - name: WICRawToneCurvePoint
               href: /windows/desktop/api/Wincodec/ns-wincodec-wicrawtonecurvepoint
-            - name: WICRect
+            - name: WiCRect
               href: /windows/desktop/api/Wincodec/ns-wincodec-wicrect
         - name: Funzioni
           href: '-wic-codec-functions.md'
@@ -1272,249 +1272,249 @@
             - name: Sistema
               href: system.md
               items:
-                - name: Criteri dei metadati della foto System. ApplicationName
+                - name: Criteri metadati foto System.ApplicationName
                   href: '-wic-photoprop-system-applicationname.md'
-                - name: Criteri per i metadati delle foto di System. Author
+                - name: Criteri metadati foto System.Author
                   href: '-wic-photoprop-system-author.md'
-                - name: Criteri di metadati della foto di System. Comment
+                - name: Criteri metadati foto System.Comment
                   href: '-wic-photoprop-system-comment.md'
-                - name: Criteri per i metadati della foto System. Copyright
+                - name: Criteri dei metadati delle foto di System.Copyright
                   href: '-wic-photoprop-system-copyright.md'
-                - name: Criteri per i metadati delle foto System. DateAcquired
+                - name: Criteri dei metadati delle foto System.DateAcquired
                   href: '-wic-photoprop-system-dateacquired.md'
-                - name: Criteri per i metadati di Photo System. Keywords
+                - name: Criteri dei metadati delle foto di System.Keywords
                   href: '-wic-photoprop-system-keywords.md'
-                - name: Criteri per i metadati delle foto System. rating
+                - name: Criteri dei metadati delle foto di System.Rating
                   href: '-wic-photoprop-system-rating.md'
-                - name: Criteri per i metadati delle foto System. SimpleRating
+                - name: Criteri dei metadati delle foto di System.SimpleRating
                   href: '-wic-photoprop-system-simplerating.md'
-                - name: Criteri per i metadati della foto System. Subject
+                - name: Criteri dei metadati delle foto system.Subject
                   href: '-wic-photoprop-system-subject.md'
-                - name: Criteri per i metadati delle foto System. title
+                - name: Criteri dei metadati delle foto di System.Title
                   href: '-wic-photoprop-system-title.md'
-            - name: System. GPS
+            - name: System.GPS
               href: system-gps.md
               items:
-                - name: Criteri dei metadati della foto System. GPS. Altitude
+                - name: Criteri dei metadati delle foto di System.GPS.Altitude
                   href: '-wic-photoprop-system-gps-altitude.md'
-                - name: System. GPS. Altitude proxy
+                - name: System.GPS.Altitude Proxy
                   href: '-wic-photoprop-system-gps-altitude-proxy.md'
-                - name: Criteri per i metadati delle foto di System. GPS. AltitudeRef
+                - name: Criteri dei metadati delle foto system.GPS.AltitudeRef
                   href: '-wic-photoprop-system-gps-altituderef.md'
-                - name: Criteri per i metadati delle foto di System. GPS. AreaInformation
+                - name: Criteri dei metadati delle foto di System.GPS.AreaInformation
                   href: '-wic-photoprop-system-gps-areainformation.md'
-                - name: Criteri dei metadati della foto System. GPS. date
+                - name: Criteri dei metadati delle foto di System.GPS.Date
                   href: '-wic-photoprop-system-gps-date.md'
-                - name: Criteri per i metadati delle foto di System. GPS. DestBearing
+                - name: Criteri dei metadati delle foto di System.GPS.DestBearing
                   href: '-wic-photoprop-system-gps-destbearing.md'
-                - name: System. GPS. DestBearing proxy
+                - name: System.GPS.DestBearing Proxy
                   href: '-wic-photoprop-system-gps-destbearing-proxy.md'
-                - name: Criteri per i metadati delle foto di System. GPS. DestBearingRef
+                - name: Criteri dei metadati delle foto system.GPS.DestBearingRef
                   href: '-wic-photoprop-system-gps-destbearingref.md'
-                - name: Criteri per i metadati delle foto di System. GPS. DestDistance
+                - name: Criteri dei metadati delle foto di System.GPS.DestDistance
                   href: '-wic-photoprop-system-gps-destdistance.md'
-                - name: System. GPS. DestDistance proxy
+                - name: System.GPS.DestDistance Proxy
                   href: '-wic-photoprop-system-gps-destdistance-proxy.md'
-                - name: Criteri per i metadati delle foto di System. GPS. DestDistanceRef
+                - name: Criteri dei metadati delle foto system.GPS.DestDistanceRef
                   href: '-wic-photoprop-system-gps-destdistanceref.md'
-                - name: Criteri per i metadati delle foto di System. GPS. DestLatitude
+                - name: Criteri dei metadati delle foto di System.GPS.DestLatitude
                   href: '-wic-photoprop-system-gps-destlatitude.md'
-                - name: System. GPS. DestLatitude proxy
+                - name: System.GPS.DestLatitude Proxy
                   href: '-wic-photoprop-system-gps-destlatitude-proxy.md'
-                - name: Criteri per i metadati delle foto di System. GPS. DestLatitudeRef
+                - name: Criteri dei metadati delle foto system.GPS.DestLatitudeRef
                   href: '-wic-photoprop-system-gps-destlatituderef.md'
-                - name: Criteri per i metadati delle foto di System. GPS. DestLongitude
+                - name: Criteri dei metadati delle foto di System.GPS.DestLongitude
                   href: '-wic-photoprop-system-gps-destlongitude.md'
-                - name: System. GPS. DestLongitude proxy
+                - name: System.GPS.DestLongitude Proxy
                   href: '-wic-photoprop-system-gps-destlongitude-proxy.md'
-                - name: Criteri per i metadati delle foto di System. GPS. DestLongitudeRef
+                - name: Criteri metadati foto System.GPS.DestLongitudeRef
                   href: '-wic-photoprop-system-gps-destlongituderef.md'
-                - name: Criteri di metadati della foto System. GPS. differenziale
+                - name: Criteri dei metadati delle foto di System.GPS.Differential
                   href: '-wic-photoprop-system-gps-differential.md'
-                - name: Criteri dei metadati delle foto di System. GPS. DOP
+                - name: Criteri dei metadati delle foto system.GPS.DOP
                   href: '-wic-photoprop-system-gps-dop.md'
-                - name: Proxy System. GPS. DOP
+                - name: System.GPS.DOP Proxy
                   href: '-wic-photoprop-system-gps-dop-proxy.md'
-                - name: Criteri per i metadati delle foto di System. GPS. ImgDirection
+                - name: Criteri dei metadati delle foto di System.GPS.ImgDirection
                   href: '-wic-photoprop-system-gps-imgdirection.md'
-                - name: System. GPS. ImgDirection proxy
+                - name: System.GPS.ImgDirection Proxy
                   href: '-wic-photoprop-system-gps-imgdirection-proxy.md'
-                - name: Criteri per i metadati delle foto di System. GPS. ImgDirectionRef
+                - name: Criteri dei metadati delle foto system.GPS.ImgDirectionRef
                   href: '-wic-photoprop-system-gps-imgdirectionref.md'
-                - name: Criteri dei metadati delle foto di System. GPS. Latitude
+                - name: Criteri dei metadati delle foto di System.GPS.Latitude
                   href: '-wic-photoprop-system-gps-latitude.md'
-                - name: Proxy System. GPS. Latitude
+                - name: System.GPS.Latitude Proxy
                   href: '-wic-photoprop-system-gps-latitude-proxy.md'
-                - name: Criteri per i metadati delle foto di System. GPS. LatitudeRef
+                - name: Criteri dei metadati delle foto system.GPS.LatitudeRef
                   href: '-wic-photoprop-system-gps-latituderef.md'
-                - name: Criteri dei metadati della foto System. GPS. Longitudine
+                - name: Criteri dei metadati delle foto di System.GPS.Longitude
                   href: '-wic-photoprop-system-gps-longitude.md'
-                - name: Proxy System. GPS. Longitudine
+                - name: System.GPS.Longitude Proxy
                   href: '-wic-photoprop-system-gps-longitude-proxy.md'
-                - name: Criteri per i metadati delle foto di System. GPS. LongitudeRef
+                - name: Criteri metadati foto System.GPS.LongitudeRef
                   href: '-wic-photoprop-system-gps-longituderef.md'
-                - name: Criteri per i metadati delle foto di System. GPS. MapDatum
+                - name: Criteri dei metadati delle foto di System.GPS.MapDatum
                   href: '-wic-photoprop-system-gps-mapdatum.md'
-                - name: Criteri per i metadati delle foto di System. GPS. MeasureMode
+                - name: Criteri dei metadati delle foto system.GPS.MeasureMode
                   href: '-wic-photoprop-system-gps-measuremode.md'
-                - name: Criteri per i metadati delle foto di System. GPS. ProcessingMethod
+                - name: Criteri dei metadati delle foto di System.GPS.ProcessingMethod
                   href: '-wic-photoprop-system-gps-processingmethod.md'
-                - name: Criteri dei metadati delle foto di System. GPS. Satellites
+                - name: Criteri dei metadati delle foto di System.GPS.Satellites
                   href: '-wic-photoprop-system-gps-satellites.md'
-                - name: Criteri per i metadati di Photo System. GPS. Speed
+                - name: Criteri dei metadati delle foto di System.GPS.Speed
                   href: '-wic-photoprop-system-gps-speed.md'
-                - name: System. GPS. Speed proxy
+                - name: System.GPS.Speed Proxy
                   href: '-wic-photoprop-system-gps-speed-proxy.md'
-                - name: Criteri per i metadati delle foto di System. GPS. SpeedRef
+                - name: Criteri dei metadati delle foto system.GPS.SpeedRef
                   href: '-wic-photoprop-system-gps-speedref.md'
-                - name: Criteri dei metadati della foto System. GPS. status
+                - name: Criteri dei metadati delle foto di System.GPS.Status
                   href: '-wic-photoprop-system-gps-status.md'
-                - name: Criteri di metadati di Photo System. GPS. Track
+                - name: Criteri dei metadati delle foto di System.GPS.Track
                   href: '-wic-photoprop-system-gps-track.md'
-                - name: Criteri per i metadati delle foto di System. GPS. TrackRef
+                - name: Criteri dei metadati delle foto system.GPS.TrackRef
                   href: '-wic-photoprop-system-gps-trackref.md'
-                - name: System. GPS. TrackRef proxy
+                - name: System.GPS.TrackRef Proxy
                   href: '-wic-photoprop-system-gps-trackref-proxy.md'
-                - name: Criteri per i metadati delle foto System. GPS. VersionId
+                - name: Criteri dei metadati delle foto system.GPS.VersionID
                   href: '-wic-photoprop-system-gps-versionid.md'
-            - name: System. image
+            - name: System.Image
               href: system-image.md
               items:
-                - name: Criteri per i metadati delle foto System. image. TextSpazio
+                - name: Criteri dei metadati delle foto system.Image.ColorSpace
                   href: '-wic-photoprop-system-image-colorspace.md'
-                - name: Criteri per i metadati delle foto di System. image. CompressedBitsPerPixel
+                - name: Criteri dei metadati delle foto system.Image.CompressedBitsPerPixel
                   href: '-wic-photoprop-system-image-compressedbitsperpixel.md'
-                - name: System. image. CompressedBitsPerPixel proxy
+                - name: System.Image.CompressedBitsPerPixel Proxy
                   href: '-wic-photoprop-system-image-compressedbitsperpixel-proxy.md'
-                - name: Criteri dei metadati della foto di System. image. Compression
+                - name: Criteri dei metadati delle foto system.Image.Compression
                   href: '-wic-photoprop-system-image-compression.md'
-                - name: Criteri per i metadati delle foto di System. image. HorizontalResolution
+                - name: Criteri dei metadati delle foto System.Image.HorizontalResolution
                   href: '-wic-photoprop-system-image-horizontalresolution.md'
-                - name: System. image. HorizontalResolution proxy
+                - name: System.Image.HorizontalResolution Proxy
                   href: '-wic-photoprop-system-image-horizontalresolution-proxy.md'
-                - name: Criteri per i metadati delle foto di System. image. ImageID
+                - name: Criteri dei metadati delle foto System.Image.ImageID
                   href: '-wic-photoprop-system-image-imageid.md'
-                - name: Criteri per i metadati delle foto di System. image. ResolutionUnit
+                - name: Criteri dei metadati delle foto system.Image.ResolutionUnit
                   href: '-wic-photoprop-system-image-resolutionunit.md'
-                - name: System. image. ResolutionUnit proxy
+                - name: System.Image.ResolutionUnit Proxy
                   href: '-wic-photoprop-system-image-resolutionunit-proxy.md'
-                - name: Criteri per i metadati delle foto di System. image. VerticalResolution
+                - name: Criteri dei metadati della foto System.Image.VerticalResolution
                   href: '-wic-photoprop-system-image-verticalresolution.md'
-                - name: System. image. VerticalResolution proxy
+                - name: System.Image.VerticalResolution Proxy
                   href: '-wic-photoprop-system-image-verticalresolution-proxy.md'
-            - name: System. Photo
+            - name: System.Photo
               href: system-photo.md
               items:
-                - name: Criteri per i metadati di Photo System. Photo. aperture
+                - name: Criteri dei metadati delle foto di System.Photo.Aperture
                   href: '-wic-photoprop-system-photo-aperture.md'
-                - name: Proxy System. Photo. aperture
+                - name: System.Photo.Aperture Proxy
                   href: '-wic-photoprop-system-photo-aperture-proxy.md'
-                - name: Criteri per i metadati delle foto System. Photo. Brightness
+                - name: Criteri dei metadati delle foto di System.Photo.Brightness
                   href: '-wic-photoprop-system-photo-brightness.md'
-                - name: Proxy System. Photo. Brightness
+                - name: System.Photo.Brightness Proxy
                   href: '-wic-photoprop-system-photo-brightness-proxy.md'
-                - name: Criteri per i metadati delle foto di System. Photo. CameraManufacturer
+                - name: Criteri dei metadati delle foto di System.Photo.CameraManufacturer
                   href: '-wic-photoprop-system-photo-cameramanufacturer.md'
-                - name: Criteri per i metadati delle foto di System. Photo. CameraModel
+                - name: Criteri dei metadati delle foto system.Photo.CameraModel
                   href: '-wic-photoprop-system-photo-cameramodel.md'
-                - name: Criteri per i metadati delle foto di System. Photo. CameraSerialNumber
+                - name: Criteri dei metadati delle foto System.Photo.CameraSerialNumber
                   href: '-wic-photoprop-system-photo-cameraserialnumber.md'
-                - name: Criteri dei metadati della foto System. Photo. Contrast
+                - name: Criteri dei metadati delle foto di System.Photo.Contrast
                   href: '-wic-photoprop-system-photo-contrast.md'
-                - name: Criteri per i metadati delle foto di System. Photo. DateTaken
+                - name: Criteri dei metadati delle foto system.Photo.DateTaken
                   href: '-wic-photoprop-system-photo-datetaken.md'
-                - name: Criteri per i metadati delle foto di System. Photo. DigitalZoom
+                - name: Criteri dei metadati delle foto di System.Photo.DigitalZoom
                   href: '-wic-photoprop-system-photo-digitalzoom.md'
-                - name: System. Photo. DigitalZoom proxy
+                - name: System.Photo.DigitalZoom Proxy
                   href: '-wic-photoprop-system-photo-digitalzoom-proxy.md'
-                - name: Criteri per i metadati delle foto di System. Photo. EXIFVersion
+                - name: Criteri dei metadati delle foto system.Photo.EXIFVersion
                   href: '-wic-photoprop-system-photo-exifversion.md'
-                - name: Criteri per i metadati delle foto di System. Photo. ExposureBias
+                - name: Criteri dei metadati della foto System.Photo.ExposureBias
                   href: '-wic-photoprop-system-photo-exposurebias.md'
-                - name: System. Photo. ExposureBias proxy
+                - name: System.Photo.ExposureBias Proxy
                   href: '-wic-photoprop-system-photo-exposurebias-proxy.md'
-                - name: Criteri per i metadati delle foto di System. Photo. ExposureTime
+                - name: Criteri dei metadati delle foto System.Photo.ExposureTime
                   href: '-wic-photoprop-system-photo-exposuretime.md'
-                - name: System. Photo. ExposureTime proxy
+                - name: System.Photo.ExposureTime Proxy
                   href: '-wic-photoprop-system-photo-exposuretime-proxy.md'
-                - name: Criteri per i metadati delle foto di System. Photo. Flash
+                - name: Criteri dei metadati della foto System.Photo.Flash
                   href: '-wic-photoprop-system-photo-flash.md'
-                - name: Criteri per i metadati delle foto di System. Photo. FlashEnergy
+                - name: Criteri dei metadati della foto System.Photo.FlashEnergy
                   href: '-wic-photoprop-system-photo-flashenergy.md'
-                - name: System. Photo. FlashEnergy proxy
+                - name: System.Photo.FlashEnergy Proxy
                   href: '-wic-photoprop-system-photo-flashenergy-proxy.md'
-                - name: Criteri per i metadati delle foto di System. Photo. FlashManufacturer
+                - name: Criteri dei metadati delle foto di System.Photo.FlashManufacturer
                   href: '-wic-photoprop-system-photo-flashmanufacturer.md'
-                - name: Criteri per i metadati delle foto di System. Photo. FlashModel
+                - name: Criteri dei metadati delle foto system.Photo.FlashModel
                   href: '-wic-photoprop-system-photo-flashmodel.md'
-                - name: Criteri per i metadati delle foto di System. Photo. FNumber
+                - name: Criteri dei metadati delle foto System.Photo.FNumber
                   href: '-wic-photoprop-system-photo-fnumber.md'
-                - name: System. Photo. FNumber proxy
+                - name: System.Photo.FNumber Proxy
                   href: '-wic-photoprop-system-photo-fnumber-proxy.md'
-                - name: Criteri per i metadati delle foto di System. Photo. FocalLength
+                - name: Criteri dei metadati delle foto System.Photo.FocalLength
                   href: '-wic-photoprop-system-photo-focallength.md'
-                - name: System. Photo. FocalLength proxy
+                - name: System.Photo.FocalLength Proxy
                   href: '-wic-photoprop-system-photo-focallength-proxy.md'
-                - name: Criteri per i metadati delle foto di System. Photo. FocalLengthInFilm
+                - name: Criteri dei metadati della foto System.Photo.FocalLengthInFilm
                   href: '-wic-photoprop-system-photo-focallengthinfilm.md'
-                - name: Criteri per i metadati delle foto di System. Photo. ISOSpeed
+                - name: Criteri dei metadati delle foto System.Photo.ISOSpeed
                   href: '-wic-photoprop-system-photo-isospeed.md'
-                - name: Criteri per i metadati delle foto di System. Photo. LensManufacturer
+                - name: Criteri dei metadati delle foto di System.Photo.LensManufacturer
                   href: '-wic-photoprop-system-photo-lensmanufacturer.md'
-                - name: Criteri per i metadati delle foto di System. Photo. LensModel
+                - name: Criteri dei metadati delle foto di System.Photo.LensModel
                   href: '-wic-photoprop-system-photo-lensmodel.md'
-                - name: Criteri per i metadati delle foto di System. Photo. LightSource
+                - name: Criteri dei metadati delle foto di System.Photo.LightSource
                   href: '-wic-photoprop-system-photo-lightsource.md'
-                - name: Criteri per i metadati delle foto di System. Photo. MakerNote
+                - name: Criteri dei metadati delle foto di System.Photo.MakerNote
                   href: '-wic-photoprop-system-photo-makernote.md'
-                - name: Criteri per i metadati delle foto di System. Photo. MaxAperture
+                - name: Criteri dei metadati delle foto System.Photo.MaxAperture
                   href: '-wic-photoprop-system-photo-maxaperture.md'
-                - name: System. Photo. MaxAperture proxy
+                - name: System.Photo.MaxAperture Proxy
                   href: '-wic-photoprop-system-photo-maxaperture-proxy.md'
-                - name: Criteri per i metadati delle foto di System. Photo. MeteringMode
+                - name: Criteri dei metadati delle foto system.Photo.MeteringMode
                   href: '-wic-photoprop-system-photo-meteringmode.md'
-                - name: Criteri dei metadati delle foto di System. Photo. Orientation
+                - name: Criteri dei metadati delle foto di System.Photo.Orientation
                   href: '-wic-photoprop-system-photo-orientation.md'
-                - name: Criteri per i metadati delle foto di System. Photo. PeopleNames
+                - name: Criteri metadati foto System.Photo.PeopleNames
                   href: '-wic-photoprop-system-photo-peoplenames.md'
-                - name: Criteri per i metadati delle foto di System. Photo. PhotometricInterpretation
+                - name: Criteri metadati foto System.Photo.PhotometricInterpretation
                   href: '-wic-photoprop-system-photo-photometricinterpretation.md'
-                - name: Criteri per i metadati delle foto di System. Photo. ProgramMode
+                - name: Criteri dei metadati delle foto system.Photo.ProgramMode
                   href: '-wic-photoprop-system-photo-programmode.md'
-                - name: Criteri per i metadati delle foto di System. Photo. RelatedSoundFile
+                - name: Criteri dei metadati della foto System.Photo.RelatedSoundFile
                   href: '-wic-photoprop-system-photo-relatedsoundfile.md'
-                - name: Criteri dei metadati Photo System. Photo. Saturation
+                - name: Criteri dei metadati delle foto di System.Photo.Saturation
                   href: '-wic-photoprop-system-photo-saturation.md'
-                - name: Criteri dei metadati della foto System. Photo. nitidezza
+                - name: Criteri dei metadati della foto system.Photo.Sharpness
                   href: '-wic-photoprop-system-photo-sharpness.md'
-                - name: Criteri per i metadati delle foto di System. Photo. ShutterSpeed
+                - name: Criteri dei metadati delle foto System.Photo.Persianspeed
                   href: '-wic-photoprop-system-photo-shutterspeed.md'
-                - name: System. Photo. ShutterSpeed proxy
+                - name: Proxy System.Photo.Dispeed
                   href: '-wic-photoprop-system-photo-shutterspeed-proxy.md'
-                - name: Criteri per i metadati delle foto di System. Photo. SubjectDistance
+                - name: Criteri dei metadati della foto System.Photo.SubjectDistance
                   href: '-wic-photoprop-system-photo-subjectdistance.md'
-                - name: System. Photo. SubjectDistance proxy
+                - name: System.Photo.SubjectDistance Proxy
                   href: '-wic-photoprop-system-photo-subjectdistance-proxy.md'
-                - name: Criteri per i metadati delle foto di System. Photo. TranscodedForSync
+                - name: Criteri dei metadati della foto System.Photo.TranscodedForSync
                   href: '-wic-photoprop-system-photo-transcodedforsync.md'
-                - name: Criteri per i metadati delle foto di System. Photo. WhiteBalance
+                - name: Criteri dei metadati delle foto System.Photo.WhiteBalance
                   href: '-wic-photoprop-system-photo-whitebalance.md'
     - name: Esempi WIC
       href: '-wic-samples.md'
       items:
-        - name: Esempi di decodifica di immagini
+        - name: Esempi di decodifica delle immagini
           href: image-decoding-samples.md
           items:
             - name: Esempio di decodifica progressiva WIC
               href: '-wic-sample-progressive-decoding.md'
-            - name: Visualizzatore immagini WIC con esempio Direct2D
+            - name: Esempio di Visualizzatore di immagini WIC con Direct2D
               href: '-wic-sample-d2d-viewer.md'
-            - name: Esempio GIF animato WIC
+            - name: Esempio di GIF animata WIC
               href: '-wic-sample-animated-gif.md'
         - name: Esempi di codifica delle immagini
           href: image-encoding-samples.md
           items:
-            - name: 'Procedura: ricodificare un''immagine JPEG con i metadati'
+            - name: 'Procedura: Codificare nuovamente un''immagine JPEG con metadati'
               href: '-wic-codec-jpegmetadataencoding.md'
     - name: Glossario
       href: '-wic-glossary.md'

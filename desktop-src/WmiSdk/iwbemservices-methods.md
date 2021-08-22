@@ -2,19 +2,19 @@
 description: L'interfaccia IWbemServices espone i metodi seguenti.
 ms.assetid: B4A2048E-6C2F-43E0-97BD-E6D37D8E4657
 ms.tgt_platform: multiple
-title: Metodi IWbemServices
+title: Metodi di IWbemServices
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a960ec223d16bd9258ba2d9d56518d88beab50c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 86a9f673e9e96e2ea3baa277a9b9ec72dddd4902b7ec54a06a019d630352bd03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050739"
 ---
-# <a name="iwbemservices-methods"></a>Metodi IWbemServices
+# <a name="iwbemservices-methods"></a>Metodi di IWbemServices
 
-L'interfaccia [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) espone i metodi seguenti.
+[**L'interfaccia IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

@@ -1,19 +1,19 @@
 ---
-description: Specifica se il codificatore deve generare parametri congrol dell'intervallo dinamico.
+description: Specifica se il codificatore deve generare parametri congrol a intervalli dinamici.
 ms.assetid: 4ae424f1-10be-466a-8a98-163789fc9553
-title: Proprietà MFPKEY_WMAENC_GENERATE_DRC_PARAMS (Wmcodecdsp. h)
+title: MFPKEY_WMAENC_GENERATE_DRC_PARAMS proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bc29ffe9d68cce13afedf5ad694ef81b29957db
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 982a48f0a42d3fe050c07a349c75fadb0cff72abc39baa1d2058870c47d0fc0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973220"
 ---
-# <a name="mfpkey_wmaenc_generate_drc_params-property"></a>MFPKEY \_ WMAENC \_ genera \_ la \_ Proprietà DRC params
+# <a name="mfpkey_wmaenc_generate_drc_params-property"></a>Proprietà MFPKEY \_ WMAENC \_ GENERATE \_ DRC \_ PARAMS
 
-Specifica se il codificatore deve generare parametri congrol dell'intervallo dinamico.
+Specifica se il codificatore deve generare parametri congrol a intervalli dinamici.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
@@ -21,11 +21,11 @@ Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-prop
 
 ## <a name="data-type"></a>Tipo di dati
 
-**\_bool VT**
+**VT \_ BOOL**
 
 ## <a name="default-value"></a>Valore predefinito
 
-**VARIANT \_ true**
+**VARIANT \_ TRUE**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -34,7 +34,7 @@ Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-prop
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Client<br/> | Windows Vista o Windows 7<br/>                                                   |
-| Intestazione<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -42,7 +42,7 @@ Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-prop
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

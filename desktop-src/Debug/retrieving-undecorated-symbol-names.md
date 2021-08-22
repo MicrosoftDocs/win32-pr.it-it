@@ -1,19 +1,19 @@
 ---
-description: Il codice seguente illustra come recuperare un nome di simbolo non decorato da un nome di simbolo usando UnDecorateSymbolName.
+description: Il codice seguente illustra come recuperare un nome di simbolo non dichiarato da un nome di simbolo usando UnDecorateSymbolName.
 ms.assetid: fcb0591a-dac3-45eb-b4c0-4a35c42450e5
-title: Recupero dei nomi di simboli non decorati
+title: Recupero di nomi di simboli nondecorati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99b0f21c884a0a58f0546ef275f2f3096abe2c50
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f18a1cbdf51c64134489850343b466e49d9867fab483699a719997c3be9b5798
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076345"
 ---
-# <a name="retrieving-undecorated-symbol-names"></a>Recupero dei nomi di simboli non decorati
+# <a name="retrieving-undecorated-symbol-names"></a>Recupero di nomi di simboli nondecorati
 
-Il codice seguente illustra come recuperare un nome di simbolo non decorato da un nome di simbolo usando [**UnDecorateSymbolName**](/windows/desktop/api/Dbghelp/nf-dbghelp-undecoratesymbolname). Il nome decorato viene archiviato in `szName` . Nell'esempio si presuppone che sia stato inizializzato il gestore di simboli utilizzando il codice nell' [inizializzazione del gestore di simboli](initializing-the-symbol-handler.md).
+Il codice seguente illustra come recuperare un nome di simbolo non dichiarato da un nome di simbolo usando [**UnDecorateSymbolName.**](/windows/desktop/api/Dbghelp/nf-dbghelp-undecoratesymbolname) Il nome decorato viene archiviato in `szName` . Nell'esempio si presuppone che sia stato inizializzato il gestore dei simboli usando il codice in [Inizializzazione del gestore dei simboli](initializing-the-symbol-handler.md).
 
 
 ```C++

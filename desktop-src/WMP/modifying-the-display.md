@@ -3,20 +3,20 @@ title: Modifica della visualizzazione
 description: Modifica della visualizzazione
 ms.assetid: 21d68a34-d3d8-4b5b-b8fe-0489dc6247ec
 keywords:
-- Playlist Windows Media Metafile, modifica delle visualizzazioni
-- playlist, modifica di visualizzazioni
-- playlist di metafile, modifica delle visualizzazioni
-- Playlist Windows Media Metafile, visualizzazione modifiche
-- playlist, visualizzazione delle modifiche
-- playlist di metafile, visualizzazione della modifica
-- Media Player di Windows, modifica della visualizzazione
-- Media Player di Windows, modifica delle visualizzazioni
-- Windows Media Player, proprietà testo
-- Windows Media Player, proprietà immagine
-- Windows Media Player, proprietà MOREINFO
-- Media Player di Windows, testo astratto
-- Proprietà di MOREINFO
-- Testo astratto
+- Windows playlist di metafile multimediali, modifica degli schermi
+- playlist, modifica di schermi
+- playlist di metafile, modifica di schermi
+- Windows playlist metafile multimediali,modifica dello schermo
+- playlist, modifica della visualizzazione
+- playlist di metafile, modifica della visualizzazione
+- Windows Media Player,visualizzare la modifica
+- Windows Media Player,modifica di schermi
+- Windows Media Player,proprietà di testo
+- Windows Media Player,proprietà image
+- proprietà Windows Media Player,MOREINFO
+- Windows Media Player,TESTO ABSTRACT
+- Proprietà MOREINFO
+- Testo ABSTRACT
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -24,27 +24,27 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c5c36c55b455b797446cde627449ea705b3bd2ce
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1e18ca15f71d9d25d9c99db36683a61b52057580022805c9d5f0f0d250aa738a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054609"
 ---
 # <a name="modifying-the-display"></a>Modifica della visualizzazione
 
-Le playlist possono modificare l'interfaccia utente di Windows Media Player in quattro modi principali:
+Le playlist possono modificare l'Windows Media Player'interfaccia utente in quattro modi principali:
 
--   Proprietà testo
+-   Proprietà del testo
 -   Proprietà dell'immagine
--   Proprietà di MOREINFO
--   Testo astratto
+-   Proprietà MOREINFO
+-   Testo ABSTRACT
 
-## <a name="text-properties"></a>Proprietà testo
+## <a name="text-properties"></a>Proprietà del testo
 
-Windows Media Player consente la visualizzazione del testo dei metadati title, Author, copyright e Description. I metadati della clip possono provenire dal flusso o dal file multimediale oppure possono provenire da una playlist. Mostra i metadati provengono dalla playlist. In generale, le playlist rappresentano un metodo migliore per passare le proprietà di testo a Windows Media Player, soprattutto se è probabile che gli elementi di testo cambino. È più semplice modificare il testo in una playlist anziché ricreare un file multimediale. Poiché le proprietà lette da una playlist eseguono l'override di quelle contenute nel file multimediale, è possibile aggiornare facilmente il testo visualizzato aggiungendo il nuovo testo alla proprietà corrispondente in una playlist. Nell'esempio seguente, il testo dei metadati title e Author nella playlist sostituisce il titolo e il testo dell'autore contenuti nel file multimediale, Sample. WMA.
+Windows Media Player la visualizzazione del testo dei metadati Titolo, Autore, Copyright e Descrizione. I metadati di clip possono derivare dal flusso o dal file multimediale oppure da una playlist. Mostra metadati proviene dalla playlist. In generale, le playlist sono un metodo migliore per passare le proprietà del testo Windows Media Player, soprattutto se è probabile che gli elementi di testo cambino. È più facile modificare il testo in una playlist piuttosto che ri-creare un file multimediale. Poiché le proprietà lette da una playlist eseguono l'override di quelle contenute nel file multimediale, è possibile aggiornare facilmente il testo visualizzato aggiungendo il nuovo testo alla proprietà corrispondente in una playlist. Nell'esempio seguente il testo dei metadati Title e Author nella playlist esegue l'override del testo Title e Author contenuto nel file multimediale sample.wma.
 
-Il testo della **Descrizione** viene recuperato da un file Windows Media a cui si fa riferimento in un elemento **entry** a meno che non esista un elemento **astratto** in una playlist di metafile. Se è presente un testo **astratto** , verrà visualizzato, sovrascrivendo il testo della **Descrizione** .
+**Il** testo DESCRIPTION viene recuperato da un Windows file multimediale a cui viene fatto riferimento in un **elemento ENTRY,** a meno che non sia presente un elemento **ABSTRACT** in una playlist metafile. Se è presente **testo ABSTRACT,** verrà visualizzato, eseguendo l'override del **testo DESCRIPTION.**
 
 
 ```XML
@@ -64,26 +64,26 @@ Il testo della **Descrizione** viene recuperato da un file Windows Media a cui s
 
 ## <a name="image-properties"></a>Proprietà dell'immagine
 
-Le immagini banner possono essere aggiunte all'interfaccia utente di Windows Media Player. Il grafico può essere usato per la pubblicità, fornire informazioni e fornire l'accesso ai siti Web, per citare alcune possibilità.
+È possibile aggiungere immagini banner all'interfaccia utente di Windows Media Player. L'immagine può essere usata per la pubblicità, la fornitura di informazioni e l'accesso ai siti Web, per assegnare un nome ad alcune possibilità.
 
-Usare l'elemento **banner** per specificare un'immagine grafica (32 pixel di altezza di 194 pixel di larghezza) per la visualizzazione da parte di Windows Media Player. Il grafico viene visualizzato sotto qualsiasi contenuto video. È possibile aggiungere un collegamento ipertestuale al banner usando l'elemento figlio **moreinfo** .
+Usare **l'elemento BANNER** per specificare un'immagine grafica (32 pixel di altezza per 194 pixel di larghezza) da visualizzare Windows Media Player. L'immagine viene visualizzata sotto qualsiasi contenuto video. È possibile aggiungere un collegamento ipertestuale al banner usando **l'elemento figlio MOREINFO.**
 
-Una descrizione comando può essere definita da un elemento **astratto** all'interno dell'ambito dell'elemento **banner** . Qualsiasi testo della descrizione comando definito può essere visualizzato posizionando il puntatore del mouse sull'icona del banner. Se si seleziona l'icona del banner con il puntatore del mouse, viene attivato qualsiasi collegamento ipertestuale definito con l'elemento **moreinfo** .
+Una descrizione comando può essere definita da un **elemento ABSTRACT** all'interno dell'ambito **dell'elemento BANNER.** È possibile visualizzare qualsiasi testo della descrizione comando definito sosonendo il puntatore del mouse sull'immagine del banner. Se si seleziona l'immagine del banner con il puntatore del mouse, verrà attivato qualsiasi collegamento ipertestuale definito con **l'elemento MOREINFO.**
 
-Il formato grafico preferito del **banner** è il formato gif. Il formato JPG può essere usato se il grafico è dimensionato correttamente.
+Il formato **grafico BANNER** preferito è il formato GIF. Il formato JPG può essere usato se il grafico è ridimensionato correttamente.
 
-Nell'esempio precedente viene illustrato l'utilizzo dell'elemento **banner** .
+L'esempio precedente illustra l'uso **dell'elemento BANNER.**
 
 > [!Note]  
-> Le immagini **banner** non sono supportate con i file DRM o quando Windows Media Player è incorporato in una pagina Web.
+> **Le** immagini BANNER non sono supportate con i file DRM o quando Windows Media Player è incorporato in una pagina Web.
 
- 
+ 
 
-Per ulteriori informazioni sui banner, vedere la pagina relativa [alla grafica personalizzata in Windows Media Player](custom-graphics-in-windows-media-player.md).
+Per altre informazioni sui banner, vedere [Grafica personalizzata in Windows Media Player](custom-graphics-in-windows-media-player.md).
 
-## <a name="moreinfo-properties"></a>Proprietà di MOREINFO
+## <a name="moreinfo-properties"></a>Proprietà MOREINFO
 
-Le aree di testo e immagine dell'interfaccia utente possono essere associate agli URL. Durante la riproduzione, gli utenti possono selezionare una di queste sezioni per connettersi all'URL associato nella Web browser. Ad esempio, è possibile associare il sito Web di un inserzionista a un'immagine del banner pubblicitario, come illustrato nel frammento di codice seguente.
+Le aree di testo e immagine dell'interfaccia utente possono essere associate agli URL. Durante la riproduzione, gli utenti possono selezionare una di queste sezioni per connettersi all'URL associato nel Web browser. Ad esempio, è possibile associare il sito Web di un pubblicitario a un'immagine del banner pubblicitario, come illustrato nel frammento di codice seguente.
 
 
 ```XML
@@ -96,29 +96,29 @@ Le aree di testo e immagine dell'interfaccia utente possono essere associate agl
 
 
 
-## <a name="abstract-text"></a>Testo astratto
+## <a name="abstract-text"></a>Testo ABSTRACT
 
-Il testo **astratto** viene usato per visualizzare una breve descrizione popup delle aree di testo o immagine dell'interfaccia utente a cui è associata. Durante la riproduzione, se il puntatore del mouse viene posizionato su una di queste aree, viene visualizzata una descrizione comando accanto al puntatore del mouse che Visualizza il testo **astratto** associato all'area. Il testo **astratto** viene recuperato da un metafile e viene definito con l'elemento **abstract** . L'elemento **astratto** può essere un elemento figlio di una **voce** o di un elemento **banner** .
+**Il** testo ABSTRACT viene usato per visualizzare una breve descrizione popup delle aree di testo o immagine dell'interfaccia utente a cui è associato. Durante la riproduzione, se il puntatore del mouse passa su una di queste aree, accanto al puntatore del mouse viene visualizzata una descrizione comando con il testo **ABSTRACT** associato all'area. **Il** testo ABSTRACT viene recuperato da un metafile ed è definito con **l'elemento ABSTRACT.** **L'elemento ABSTRACT** può essere un elemento figlio di un **elemento ENTRY** o **BANNER.**
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Playlist di metafile**](metafile-playlists.md)
+[**Playlist metafile**](metafile-playlists.md)
 </dt> <dt>
 
-[**Uso delle playlist di metafile**](using-metafile-playlists.md)
+[**Uso di playlist metafile**](using-metafile-playlists.md)
 </dt> <dt>
 
-[**Riferimento agli elementi metafile di Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Informazioni di riferimento su elementi metafile multimediali**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Guida ai metafile di Windows Media**](windows-media-metafile-guide.md)
+[**Windows Guida al metafile multimediale**](windows-media-metafile-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

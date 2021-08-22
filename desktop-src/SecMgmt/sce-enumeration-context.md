@@ -1,19 +1,19 @@
 ---
-description: Il \_ tipo di dati del contesto di enumerazione SCE \_ è un handle opaco fornito dal set di strumenti di configurazione della sicurezza. Viene usato dalla \_ funzione informazioni query PFSCE \_ per spostarsi nel database di sicurezza.
+description: Il tipo di dati SCE \_ ENUMERATION CONTEXT è un handle \_ opaco fornito dal set di strumenti di configurazione della sicurezza. Viene usato dalla funzione PFSCE \_ QUERY INFO per spostarsi nel database di \_ sicurezza.
 ms.assetid: 05629c49-e36b-4045-93d0-d0f4bc09b08a
-title: SCE_ENUMERATION_CONTEXT (Scesvc. h)
+title: SCE_ENUMERATION_CONTEXT (Scesvc.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e380f6f99d68ad63199c3b82f5aa1e5ace8ddf0d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16b102c1eb2998f09dbe95c79c500e0bc66f4a790464071dbf9704a17a1348c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104343116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004999"
 ---
-# <a name="sce_enumeration_context"></a>\_contesto di enumerazione SCE \_
+# <a name="sce_enumeration_context"></a>CONTESTO DI ENUMERAZIONE SCE \_ \_
 
-Il tipo di dati del **\_ \_ contesto di enumerazione SCE** è un handle opaco fornito dal set di strumenti di configurazione della sicurezza. Viene usato dalla funzione [**\_ \_ informazioni query PFSCE**](/windows/win32/api/scesvc/nc-scesvc-pfsce_query_info) per spostarsi nel database di sicurezza.
+Il **tipo di dati SCE ENUMERATION \_ \_ CONTEXT** è un handle opaco fornito dal set di strumenti di configurazione della sicurezza. Viene usato dalla funzione [**PFSCE \_ QUERY \_ INFO**](/windows/win32/api/scesvc/nc-scesvc-pfsce_query_info) per spostarsi nel database di sicurezza.
 
 
 ```C++
@@ -28,9 +28,9 @@ typedef ULONG SCE_ENUMERATION_CONTEXT, *PSCE_ENUMERATION_CONTEXT;
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Scesvc. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>Scesvc.h</dt> </dl> |
 
 
 
@@ -38,7 +38,7 @@ typedef ULONG SCE_ENUMERATION_CONTEXT, *PSCE_ENUMERATION_CONTEXT;
 
 <dl> <dt>
 
-[**\_informazioni query \_ PFSCE**](/windows/win32/api/scesvc/nc-scesvc-pfsce_query_info)
+[**INFORMAZIONI QUERY PFSCE \_ \_**](/windows/win32/api/scesvc/nc-scesvc-pfsce_query_info)
 </dt> </dl>
 
  

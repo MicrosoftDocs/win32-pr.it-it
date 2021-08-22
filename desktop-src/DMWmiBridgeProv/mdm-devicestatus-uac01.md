@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_DeviceStatus_UAC01
-description: La \_ classe MDM DeviceStatus \_ UAC01 viene usata dall'azienda per eseguire query sullo stato UAC dei dispositivi con i criteri aziendali.
+title: MDM_DeviceStatus_UAC01 classe
+description: La classe MDM \_ DeviceStatus UAC01 viene usata dall'azienda per eseguire query sullo stato del controllo dell'account utente dei dispositivi \_ con i criteri aziendali.
 ms.assetid: fb1ca1bb-229e-4eaa-a1e3-e790c1dab760
 keywords:
-- Classe MDM_DeviceStatus_UAC01
-- Classe MDM_DeviceStatus_UAC01, descritta
+- MDM_DeviceStatus_UAC01 classe
+- MDM_DeviceStatus_UAC01 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6eecba42cd97bee660f66570e7f96c1ab2799f85
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: afef2a4e4259c5c3fcaa6d988181d32951e39e527603e416a7961ee8b97e91a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077265"
 ---
-# <a name="mdm_devicestatus_uac01-class"></a>\_Classe MDM DeviceStatus \_ UAC01
+# <a name="mdm_devicestatus_uac01-class"></a>Classe \_ MDM DeviceStatus \_ UAC01
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La classe **MDM \_ DeviceStatus \_ UAC01** viene usata dall'azienda per eseguire query sullo stato UAC dei dispositivi con i criteri aziendali.
+La **classe MDM \_ DeviceStatus \_ UAC01** viene usata dall'azienda per eseguire query sullo stato del controllo dell'account utente dei dispositivi con i criteri aziendali.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -46,45 +46,45 @@ class MDM_DeviceStatus_UAC01
 
 ## <a name="members"></a>Members
 
-La classe **MDM \_ DeviceStatus \_ UAC01** presenta questi tipi di membri:
+La **classe MDM \_ DeviceStatus \_ UAC01** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **MDM \_ DeviceStatus \_ UAC01** dispone di queste proprietà.
+La **classe MDM \_ DeviceStatus \_ UAC01** ha queste proprietà.
 
 <dl> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nodo per la query UAC.
+Nodo per la query di Controllo dell'account utente.
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/DeviceStatus"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/DeviceStatus"
 
 </dd> <dt>
 
@@ -94,7 +94,7 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -105,10 +105,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

@@ -1,5 +1,5 @@
 ---
-description: Archivia e recupera le informazioni sulle sottoscrizioni di eventi. Questa interfaccia estende l'interfaccia IEventSubscription.
+description: Archivia e recupera informazioni sulle sottoscrizioni di eventi. Questa interfaccia estende l'interfaccia IEventSubscription.
 ms.assetid: f153afb7-c897-40f8-81ed-50308844cac5
 title: Interfaccia IEventSubscription2
 ms.topic: reference
@@ -12,41 +12,41 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: bc7e3e41efc4b44c00c23f0910b8b696940fc1df
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 332f123756d1340352524852aa5bcb38fce09612f52554facaf6e5c8c2398e73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047483"
 ---
 # <a name="ieventsubscription2-interface"></a>Interfaccia IEventSubscription2
 
-Archivia e recupera le informazioni sulle sottoscrizioni di eventi. Questa interfaccia estende l'interfaccia [**IEventSubscription**](/windows/desktop/api/EventSys/nn-eventsys-ieventsubscription) .
+Archivia e recupera informazioni sulle sottoscrizioni di eventi. Questa interfaccia estende [**l'interfaccia IEventSubscription.**](/windows/desktop/api/EventSys/nn-eventsys-ieventsubscription)
 
 ## <a name="when-to-implement"></a>Quando implementare
 
-Non è necessario implementare l'interfaccia **IEventSubscription2** . Una classe di oggetti evento fornita dal sistema (CLSID \_ CEventSubscription) implementa **IEventSubscription2**.
+Non è necessario implementare **l'interfaccia IEventSubscription2.** Una classe di oggetto evento fornita dal sistema (CLSID \_ CEventSubscription) implementa **IEventSubscription2.**
 
 ## <a name="when-to-use"></a>Utilizzo
 
-Il sistema [degli eventi com+](com--events.md) utilizza questa interfaccia per ottenere informazioni sulle singole sottoscrizioni.
+Il [sistema com+ Events](com--events.md) usa questa interfaccia per ottenere informazioni sulle singole sottoscrizioni.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IEventSubscription2** eredita da **IEventSubscription**. **IEventSubscription2** dispone anche di questi tipi di membri:
+**L'interfaccia IEventSubscription2** eredita da **IEventSubscription**. **IEventSubscription2** include anche questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-L'interfaccia **IEventSubscription2** ha queste proprietà.
+Queste proprietà sono disponibili nell'interfaccia **IEventSubscription2.**
 
 
 
 | Proprietà                                                                      | Tipo di accesso           | Descrizione                                                |
 |:------------------------------------------------------------------------------|:----------------------|:-----------------------------------------------------------|
-| [**FilterCriteria**](ieventsubscription2-filtercriteria.md)<br/>       | Lettura/Scrittura<br/> | Criteri di filtro che governano la sottoscrizione.<br/> |
-| [**SubscriberMoniker**](ieventsubscription2-subscribermoniker.md)<br/> | Lettura/Scrittura<br/> | Moniker del Sottoscrittore.<br/>                       |
+| [**Filtercriteria**](ieventsubscription2-filtercriteria.md)<br/>       | Lettura/Scrittura<br/> | Criteri di filtro che regolano la sottoscrizione.<br/> |
+| [**SubscriberMoniker**](ieventsubscription2-subscribermoniker.md)<br/> | Lettura/Scrittura<br/> | Moniker del sottoscrittore.<br/>                       |
 
 
 

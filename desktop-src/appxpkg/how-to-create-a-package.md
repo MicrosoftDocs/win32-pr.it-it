@@ -1,29 +1,29 @@
 ---
 title: Come creare un pacchetto di app (C++)
-description: Informazioni su come creare un pacchetto dell'app per un'app di Windows usando l'API per la creazione di pacchetti.
+description: Informazioni su come creare un pacchetto dell'app per un'app Windows usando l'API di creazione pacchetti.
 ms.assetid: FD677D75-50D5-4228-891F-73B5F40679B0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f1808ebf57d4c7125f5509db68e22b78ce949f7
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 9ac2e471443acd22a39128c046590eed29d320b75bafee0a65cb6d37fb4fb8d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "106299589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049059"
 ---
 # <a name="how-to-create-an-app-package-c"></a>Come creare un pacchetto di app (C++)
 
-Informazioni su come creare un pacchetto dell'app per un'app di Windows usando l'API per la creazione di [pacchetti](interfaces.md).
+Informazioni su come creare un pacchetto dell'app per un'app Windows usando [l'API di creazione pacchetti](interfaces.md).
 
-Se si vuole creare un pacchetto dell'app desktop manualmente, è anche possibile usare lo strumento MakeAppx.exe che usa l'API di creazione dei [pacchetti](interfaces.md). Per altre informazioni, vedere [pacchetto di app (MakeAppx.exe)](make-appx-package--makeappx-exe-.md) .
+Se si vuole creare manualmente un pacchetto di app desktop, è anche possibile usare lo strumento MakeAppx.exe che usa l'API di [creazione pacchetti](interfaces.md). Per [altre informazioni, vedere App packager (MakeAppx.exe) (Creazione di](make-appx-package--makeappx-exe-.md) pacchetti di app ).
 
-Se si usa Visual Studio, è consigliabile usare la creazione guidata pacchetto di Visual Studio per creare il pacchetto dell'app. Per altri dettagli, vedere creare [un pacchetto di un'app UWP con Visual Studio](/windows/msix/package/packaging-uwp-apps).
+Se si usa un Visual Studio, è consigliabile usare la creazione guidata pacchetti Visual Studio per creare un pacchetto dell'app. Per altri dettagli, vedi Creare [un pacchetto di un'app UWP Visual Studio](/windows/msix/package/packaging-uwp-apps).
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="step-1-create-a-package-writer"></a>Passaggio 1: creare un writer di pacchetti
+### <a name="step-1-create-a-package-writer"></a>Passaggio 1: Creare un writer di pacchetti
 
-Per creare un writer di pacchetti, chiamare il metodo [**IAppxFactory:: CreatePackageWriter**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfactory-createpackagewriter) . Il primo parametro è un flusso di output in cui verrà scritto il pacchetto. Il secondo parametro è un puntatore a una struttura di [**\_ \_ impostazioni del pacchetto appx**](/windows/desktop/api/AppxPackaging/ns-appxpackaging-appx_package_settings) che specifica le impostazioni del pacchetto. Il terzo parametro è un parametro di output che riceve un puntatore a un puntatore [**IAppxPackageWriter**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagewriter) .
+Per creare un writer di pacchetti, chiamare il [**metodo IAppxFactory::CreatePackageWriter.**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfactory-createpackagewriter) Il primo parametro è un flusso di output in cui verrà scritto il pacchetto. Il secondo parametro è un puntatore a una [**struttura \_ APPX PACKAGE \_ SETTINGS**](/windows/desktop/api/AppxPackaging/ns-appxpackaging-appx_package_settings) che specifica le impostazioni del pacchetto. Il terzo parametro è un parametro di output che riceve un puntatore a [**un puntatore IAppxPackageWriter.**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagewriter)
 
 
 ```C++
@@ -137,9 +137,9 @@ HRESULT GetPackageWriter(
 
 
 
-### <a name="step-2-add-the-payload-files-for-your-app-to-the-package"></a>Passaggio 2: aggiungere i file di payload per l'app al pacchetto
+### <a name="step-2-add-the-payload-files-for-your-app-to-the-package"></a>Passaggio 2: Aggiungere i file di payload per l'app al pacchetto
 
-Chiamare il metodo [**IAppxPackageWriter:: AddPayloadFile**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagewriter-addpayloadfile) per aggiungere file al pacchetto. Il primo parametro è il percorso relativo del file. Il secondo parametro indica il tipo di contenuto del file. Il terzo parametro specifica le opzioni dell'enumerazione dell' [**\_ \_ opzione di compressione appx**](/windows/desktop/api/AppxPackaging/ne-appxpackaging-appx_compression_option) . Il quarto parametro è il flusso di input per il file.
+Chiamare il [**metodo IAppxPackageWriter::AddPayloadFile**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagewriter-addpayloadfile) per aggiungere file al pacchetto. Il primo parametro è il percorso relativo del file. Il secondo parametro indica il tipo di contenuto del file. Il terzo parametro specifica le opzioni [**dell'enumerazione APPX \_ COMPRESSION \_ OPTION.**](/windows/desktop/api/AppxPackaging/ne-appxpackaging-appx_compression_option) Il quarto parametro è il flusso di input per il file.
 
 
 ```C++
@@ -173,7 +173,7 @@ for (int i = 0; SUCCEEDED(hr) && (i < PayloadFilesCount); i++)
 
 
 
-Il codice precedente usa le definizioni delle variabili e la `GetFileStream` funzione di supporto.
+Il codice precedente usa queste definizioni di variabili e `GetFileStream` funzioni helper.
 
 
 ```C++
@@ -248,9 +248,9 @@ HRESULT GetFileStream(
 
 
 
-### <a name="step-3-add-the-package-manifest-to-the-package"></a>Passaggio 3: aggiungere il manifesto del pacchetto al pacchetto
+### <a name="step-3-add-the-package-manifest-to-the-package"></a>Passaggio 3: Aggiungere il manifesto del pacchetto al pacchetto
 
-Ogni pacchetto deve avere un manifesto del pacchetto. Per aggiungere il manifesto del pacchetto al pacchetto, creare un flusso di input per il file, quindi chiamare il metodo [**IAppxPackageWriter:: Close**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagewriter-close) per scrivere il manifesto alla fine del pacchetto e chiudere il flusso di output per il writer del pacchetto.
+Ogni pacchetto deve avere un manifesto del pacchetto. Per aggiungere il manifesto del pacchetto al pacchetto, creare un flusso di input per il file, quindi chiamare il metodo [**IAppxPackageWriter::Close**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagewriter-close) per scrivere il manifesto alla fine del pacchetto e chiudere il flusso di output per il writer del pacchetto.
 
 Questo codice usa la `GetFileStream` funzione helper illustrata nel passaggio precedente per creare il flusso per il manifesto del pacchetto.
 
@@ -277,9 +277,9 @@ if (manifestStream != NULL)
 
 
 
-### <a name="step-4-clean-up-the-package-writer"></a>Passaggio 4: pulire il writer del pacchetto
+### <a name="step-4-clean-up-the-package-writer"></a>Passaggio 4: Pulire il writer del pacchetto
 
-Prima di restituire dalla `wmain` funzione, chiamare il metodo [**Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) per pulire il writer del pacchetto e chiamare la funzione [**CoUninitialize**](/windows/desktop/api/combaseapi/nf-combaseapi-couninitialize) .
+Prima di restituire un valore dalla funzione, chiamare il metodo Release per pulire il writer del pacchetto `wmain` e chiamare la funzione [**CoUninitialize.**](/windows/desktop/api/combaseapi/nf-combaseapi-couninitialize) [](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release)
 
 
 ```C++
@@ -300,7 +300,7 @@ CoUninitialize();
 **Esempi**
 </dt> <dt>
 
-[Esempio di creare un pacchetto dell'app](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/AppxPackingCreateAppx)
+[Esempio di creazione di un pacchetto dell'app](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/AppxPackingCreateAppx)
 </dt> <dt>
 
 **Riferimento**
@@ -309,6 +309,6 @@ CoUninitialize();
 [**IAppxPackageWriter**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagewriter)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

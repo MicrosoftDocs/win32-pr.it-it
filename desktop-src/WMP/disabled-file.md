@@ -3,44 +3,44 @@ title: File disabilitato
 description: File disabilitato
 ms.assetid: 8b3339f6-a5d5-4501-826c-6ce33bfbf0cb
 keywords:
-- Interfacce di Windows Media Player per dispositivi mobili, file di immagine
-- interfacce, file di immagine
-- file per Skins, Art
-- file di immagine per le interfacce, file disabilitati
-- Windows Media Player Mobile Skins, file disabilitati
-- interfacce, file disabilitati
-- File disabilitati nelle interfacce
+- Windows Media Player Skin per dispositivi mobili, file di grafica
+- skins, file di grafica
+- file per skin, art
+- file di grafica per le skin, file disabilitati
+- Windows Media Player Skin per dispositivi mobili,File disabilitati
+- skins,File disabilitati
+- File disabilitati nelle skin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9608c67ded6625d46126955ad42a24548a9d002c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d7b7d7c052ed0de1a3e231bc204b87a84f1e9e10262acfe43df310d76f76577b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997357"
 ---
 # <a name="disabled-file"></a>File disabilitato
 
-Il file disabilitato contiene le immagini che verranno visualizzate quando non è possibile usare una funzione di pulsante particolare o lo stato di un pulsante è disattivato. Se, ad esempio, viene definita una playlist vuota, i pulsanti **Avanti** e **indietro** verranno visualizzati e devono essere visualizzati usando un'immagine disabilitata. Inoltre, per i pulsanti di attivazione, l'immagine disabilitata viene utilizzata per indicare che lo stato è disattivato.
+Il file Disabled contiene le immagini che verranno visualizzate quando non è possibile usare una funzione di pulsante specifica o lo stato di un pulsante è disattivato. Ad esempio, se è definita una  playlist vuota, verranno visualizzati i pulsanti Avanti e **Precedente** e dovranno essere visualizzati usando un'immagine disabilitata. Inoltre, per i pulsanti di attivazione/disattivazione, l'immagine Disabilitato viene usata per indicare che lo stato è disattivato.
 
-L'immagine seguente è un file disabilitato tipico.
+L'immagine seguente è un tipico file disabilitato.
 
 ![file disabilitato](images/cesdkdis.png)
 
-Archivia le immagini per i pulsanti di tipo hit che sono disabilitati. Le immagini sono simili al file in background, ma i colori sono più chiari. Utilizzando l'offset definito nella sezione bitmap del file di definizione della pelle, le immagini dei pulsanti si allineano con l'immagine del file di sfondo.
+In questo modo vengono archiviate le immagini per i pulsanti di tipo hit disabilitati. Le immagini sono simili al file Sfondo, ma i colori sono più chiari. Usando l'offset definito nella sezione Bitmap del file di definizione dell'interfaccia, le immagini dei pulsanti sono allineate con l'immagine del file di sfondo.
 
-Si noti che lo sfondo dell'immagine del pulsante corrisponde esattamente all'area corrispondente nel file in background. Questo è importante, poiché quando un pulsante di tipo hit non è disponibile, l'intero rettangolo definito per l'immagine disabilitata sostituirà l'area corrispondente nel file in background. Mantenere la grafica coerente con l'immagine di sfondo per assicurarsi che solo le parti del pulsante che si desidera visualizzare diverse cambieranno effettivamente.
+Si noti che lo sfondo dell'immagine del pulsante corrisponde esattamente all'area corrispondente nel file di sfondo. Questo è importante, perché quando un pulsante di tipo hit non è disponibile, l'intero rettangolo definito per l'immagine disabilitata sostituirà l'area corrispondente nel file di sfondo. Mantenere l'immagine coerente con l'immagine di sfondo per assicurarsi che cambino effettivamente solo le parti del pulsante che si vuole visualizzare diversamente.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**File di immagine**](art-files-mobile.md)
+[**File di grafica**](art-files-mobile.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

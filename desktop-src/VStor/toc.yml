@@ -1,15 +1,15 @@
-- name: Archiviazione virtuale
+- name: Ambiente Archiviazione
   href: virtual-storage.md
   items:
     - name: Dischi rigidi virtuali
       href: portal.md
       items:
-        - name: Informazioni su VHD
+        - name: Informazioni sul disco rigido virtuale
           href: about-vhd.md
-        - name: Riferimento al disco rigido virtuale
+        - name: Informazioni di riferimento sul disco rigido virtuale
           href: vhd-reference.md
           items:
-            - name: Enumerazioni VHD
+            - name: Enumerazioni di dischi rigidi virtuali
               href: vhd-enumerations.md
               items:
                 - name: APPLY_SNAPSHOT_VHDSET_FLAG
@@ -133,7 +133,7 @@
                   href: /windows/desktop/api/virtdisk/nf-virtdisk-setvirtualdiskmetadata
                 - name: TakeSnapshotVhdSet
                   href: /windows/win32/api/virtdisk/nf-virtdisk-takesnapshotvhdset
-            - name: Strutture VHD
+            - name: Strutture di dischi rigidi virtuali
               href: vhd-structures.md
               items:
                 - name: APPLY_SNAPSHOT_VHDSET_PARAMETERS

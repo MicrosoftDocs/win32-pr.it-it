@@ -1,7 +1,7 @@
 ---
-description: Gestisce il lato dell'applicazione dell'integrazione di completamento automatico del pannello di input di testo.
+description: Gestisce il lato dell'applicazione dell'integrazione del completamento automatico del Pannello input di testo.
 ms.assetid: 02601258-d867-4c01-b094-bf9ff96d2f6e
-title: Interfaccia ITipAutocompleteProvider (TipAutoComplete. h)
+title: Interfaccia ITipAutocompleteProvider (TipAutoComplete.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,33 +13,33 @@ api_type:
 - COM
 api_location:
 - tiptsf.dll
-ms.openlocfilehash: 3c300e2724ccabbc8388ef647f8f0145531cfc8d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66c1e38c419e7eb37745864b447249d55b384b6c832293bd3fab4d0cc171e0fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119031869"
 ---
 # <a name="itipautocompleteprovider-interface"></a>Interfaccia ITipAutocompleteProvider
 
-Gestisce il lato dell'applicazione dell'integrazione di completamento automatico del pannello di input di testo.
+Gestisce il lato dell'applicazione dell'integrazione del completamento automatico del Pannello input di testo.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **ITipAutocompleteProvider** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITipAutocompleteProvider** dispone anche di questi tipi di membri:
+**L'interfaccia ITipAutocompleteProvider** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITipAutocompleteProvider** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **ITipAutocompleteProvider** dispone di questi metodi.
+Questi metodi sono disponibili nell'interfaccia **ITipAutocompleteProvider.**
 
 
 
 | Metodo                                                                  | Descrizione                                                                                                          |
 |:------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------|
-| [**Visualizza**](itipautocompleteprovider-show.md)                           | Consente di visualizzare o nascondere l'elenco di completamento automatico.<br/>                                                                 |
-| [**UpdatePendingText**](itipautocompleteprovider-updatependingtext.md) | Usato dal client di completamento automatico per notificare all'applicazione il testo che un utente ha inchiostrato nel pannello di input.<br/> |
+| [**Visualizza**](itipautocompleteprovider-show.md)                           | Visualizza o nasconde l'elenco di completamento automatico.<br/>                                                                 |
+| [**UpdatePendingText**](itipautocompleteprovider-updatependingtext.md) | Usato dal client di completamento automatico per notificare all'applicazione il testo che un utente ha inserito nel Pannello input penna.<br/> |
 
 
 
@@ -51,9 +51,9 @@ L'interfaccia **ITipAutocompleteProvider** dispone di questi metodi.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                                   |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                                   |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                                       |
-| Intestazione<br/>                   | <dl> <dt>TipAutoComplete. h (richiede anche PenInputPanel \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>TipAutoComplete.h (richiede anche Peninputpanel \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Tiptsf.dll</dt> </dl>                                           |
 
 
@@ -62,7 +62,7 @@ L'interfaccia **ITipAutocompleteProvider** dispone di questi metodi.
 
 <dl> <dt>
 
-[Riferimento al pannello input di testo](text-input-panel-reference.md)
+[Informazioni di riferimento sul pannello di input di testo](text-input-panel-reference.md)
 </dt> <dt>
 
 [**Interfaccia ITipAutocompleteClient**](itipautocompleteclient.md)

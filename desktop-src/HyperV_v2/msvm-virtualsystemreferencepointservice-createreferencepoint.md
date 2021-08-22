@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 08d28970288ba62346894d758ebac5ac156962ff
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: fdcf4680ff10bdc8135fae4ec3bb9f81d53c26092e7196e73965ee4f4d87991f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014479"
 ---
-# <a name="createreferencepoint-method-of-the-msvm_virtualsystemreferencepointservice-class"></a>Metodo CreateReferencePoint della classe MSVM \_ VirtualSystemReferencePointService
+# <a name="createreferencepoint-method-of-the-msvm_virtualsystemreferencepointservice-class"></a>Metodo CreateReferencePoint della classe Msvm \_ VirtualSystemReferencePointService
 
 Crea un punto di riferimento di un sistema virtuale.
 
@@ -43,21 +43,21 @@ uint32 CreateReferencePoint(
 
 <dl> <dt>
 
-*AffectedSystem* \[ in\]
+*AffectedSystem* \[ Pollici\]
 </dt> <dd>
 
-Un [**\_ ComputerSystem MSVM**](msvm-computersystem.md) che fa riferimento al sistema virtuale interessato.
+ComputerSystem [**Msvm \_ che**](msvm-computersystem.md) fa riferimento al sistema virtuale interessato.
 
 </dd> <dt>
 
-*ReferencePointSettings* \[ in\]
+*ReferencePointSettings* \[ Pollici\]
 </dt> <dd>
 
 Contiene le impostazioni dei parametri.
 
 </dd> <dt>
 
-*ReferencePointType* \[ in\]
+*ReferencePointType* \[ Pollici\]
 </dt> <dd>
 
 Tipo di punto di riferimento richiesto:
@@ -66,12 +66,12 @@ Tipo di punto di riferimento richiesto:
 
 <span id="Log_based"></span><span id="log_based"></span><span id="LOG_BASED"></span>
 
-<span id="Log_based"></span><span id="log_based"></span><span id="LOG_BASED"></span>**Basato su log** (0)
+<span id="Log_based"></span><span id="log_based"></span><span id="LOG_BASED"></span>**Basato su** log (0)
 
 
 </dt> <dd>
 
-In base al rilevamento del log della replica Hyper-V.
+In base al rilevamento dei log della replica Hyper-V.
 
 </dd> <dt>
 
@@ -82,37 +82,37 @@ In base al rilevamento del log della replica Hyper-V.
 
 </dt> <dd>
 
-Basato su Rilevamento modifiche resiliente di dischi virtuali.
+In base alla Rilevamento modifiche resiliente dei dischi virtuali.
 
 </dd> </dl> </dd> <dt>
 
-*ResultingReferencePoint* \[ in uscita\]
+*ResultingReferencePoint* \[ in, out\]
 </dt> <dd>
 
 Punto di riferimento del sistema virtuale risultante
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Se l'operazione è a esecuzione prolungata, è possibile che venga restituito un processo. In questo caso, l'istanza della classe [**MSVM \_ VirtualSystemReferencePoint**](msvm-virtualsystemreferencepoint.md) che rappresenta il nuovo punto di riferimento del sistema virtuale viene presentata tramite l'associazione [**CIM \_ AffectedJobElement**](cim-affectedjobelement.md) con il valore della proprietà **affected** che fa riferimento alla nuova istanza della classe **MSVM \_ VirtualSystemReferencePoint** che rappresenta il punto di riferimento del sistema virtuale e il valore di **ElementEffects** impostato su 5 (Create).
+Se l'operazione è a esecuzione lunga, facoltativamente può essere restituito un processo. In questo caso, l'istanza della classe [**Msvm \_ VirtualSystemReferencePoint**](msvm-virtualsystemreferencepoint.md) che rappresenta il nuovo punto di riferimento del sistema virtuale viene presentata tramite l'associazione [**CIM \_ AffectedJobElement**](cim-affectedjobelement.md) al valore della proprietà **AffectedElement** che fa riferimento alla nuova istanza della classe **Msvm \_ VirtualSystemReferencePoint** che rappresenta il punto di riferimento del sistema virtuale e il valore di **ElementEffects** impostato su 5 (Create).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, restituisce 0; in caso contrario, restituisce un errore.
+In caso di esito positivo, restituisce 0; In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
@@ -127,16 +127,16 @@ In caso di esito positivo, restituisce 0; in caso contrario, restituisce un erro
 **Tipo non valido** (6)
 </dt> <dt>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -145,10 +145,10 @@ In caso di esito positivo, restituisce 0; in caso contrario, restituisce un erro
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -157,7 +157,7 @@ In caso di esito positivo, restituisce 0; in caso contrario, restituisce un erro
 
 <dl> <dt>
 
-[**\_VirtualSystemReferencePointService MSVM**](msvm-virtualsystemreferencepointservice.md)
+[**Msvm \_ VirtualSystemReferencePointService**](msvm-virtualsystemreferencepointservice.md)
 </dt> </dl>
 
  

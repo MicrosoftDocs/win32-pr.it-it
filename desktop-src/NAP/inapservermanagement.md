@@ -1,10 +1,10 @@
 ---
-title: Interfaccia INapServerManagement (NapServerManagement. h)
-description: Consentono di gestire il server di protezione accesso alla rete.
+title: Interfaccia INapServerManagement (NapServerManagement.h)
+description: Vengono usati per gestire il server protezione accesso alla rete.
 ms.assetid: 5c4f9bf1-fe82-48f5-8aa4-5c73ab01a78a
 keywords:
-- NAP interfaccia INapServerManagement
-- Interfaccia NAP di INapServerManagement, descrizione
+- Interfaccia INapServerManagement Nap
+- Interfaccia INapServerManagement NAP , descritta
 topic_type:
 - apiref
 api_name:
@@ -15,39 +15,39 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a5eed03f535653a3b9244ff1aa74fe499c1bf2f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6b324f32c542a6a300266d26ceb5981bb6e14d0feff28aa225698d6b32bbe94b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012529"
 ---
 # <a name="inapservermanagement-interface"></a>Interfaccia INapServerManagement
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-**INapServerManagement** fornisce i metodi utilizzati per gestire il server di protezione accesso alla rete.
+**INapServerManagement** fornisce i metodi usati per gestire il server protezione accesso alla rete.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **INapServerManagement** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **INapServerManagement** dispone anche di questi tipi di membri:
+**L'interfaccia INapServerManagement** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **INapServerManagement** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **INapServerManagement** dispone di questi metodi.
+**L'interfaccia INapServerManagement** include questi metodi.
 
 
 
 | Metodo                                                                                                                       | Descrizione                                          |
 |:-----------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------|
-| [**INapServerManagement::RegisterSystemHealthValidator**](inapservermanagement-registersystemhealthvalidator-method.md)     | Registra un servizio di convalida dell'integrità.<br/>                         |
-| [**INapServerManagement::SetFailureCategoryMappings**](inapservermanagement-setfailurecategorymappings-method.md)           | Imposta i mapping delle categorie di errori di convalida.<br/> |
-| [**INapServerManagement::UnregisterSystemHealthValidator**](inapservermanagement-unregistersystemhealthvalidator-method.md) | Annulla la registrazione di un servizio di convalida integrità dal server protezione accesso alla rete.<br/>   |
+| [**INapServerManagement::RegisterSystemHealthValidator**](inapservermanagement-registersystemhealthvalidator-method.md)     | Registra un'istanza shv.<br/>                         |
+| [**INapServerManagement::SetFailureCategoryMappings**](inapservermanagement-setfailurecategorymappings-method.md)           | Imposta i mapping della categoria di errore della shv.<br/> |
+| [**INapServerManagement::UnregisterSystemHealthValidator**](inapservermanagement-unregistersystemhealthvalidator-method.md) | Annulla la registrazione di un'istanza shv dal server di Protezione accesso alla rete.<br/>   |
 
 
 
@@ -60,9 +60,9 @@ L'interfaccia **INapServerManagement** dispone di questi metodi.
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                               |
-| Intestazione<br/>                   | <dl> <dt>NapServerManagement. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapServerManagement. idl</dt> </dl> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                               |
+| Intestazione<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qsvrmgmt.dll</dt> </dl>            |
 
 
@@ -71,10 +71,10 @@ L'interfaccia **INapServerManagement** dispone di questi metodi.
 
 <dl> <dt>
 
-[Interfacce NAP](nap-interfaces.md)
+[Interfacce di Protezione accesso alla rete](nap-interfaces.md)
 </dt> <dt>
 
-[Riferimento NAP](nap-reference.md)
+[Informazioni di riferimento su Protezione accesso alla rete](nap-reference.md)
 </dt> </dl>
 
  

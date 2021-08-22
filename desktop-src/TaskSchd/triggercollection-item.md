@@ -1,11 +1,11 @@
 ---
-title: Proprietà TriggerCollection. Item
-description: Per gli script, ottiene il trigger specificato dalla raccolta.
+title: TriggerCollection.Item - proprietà
+description: Per lo scripting, ottiene il trigger specificato dalla raccolta.
 ms.assetid: 517976df-b3fc-4f2e-8d37-262195c65182
 keywords:
-- Utilità di pianificazione proprietà elemento
-- Utilità di pianificazione proprietà elemento, oggetto TriggerCollection
-- TriggerCollection, oggetto Utilità di pianificazione, proprietà Item
+- Proprietà Item Utilità di pianificazione
+- Proprietà Item Utilità di pianificazione, oggetto TriggerCollection
+- Oggetto TriggerCollection Utilità di pianificazione proprietà , Item
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d600418d43459d6c4cbfcb0746a378633d096c24
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aee0460d79ef239c8dacbf7fbd45573dac8ba03ad9b53e6e9881dded1bf01030
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001959"
 ---
-# <a name="triggercollectionitem-property"></a>Proprietà TriggerCollection. Item
+# <a name="triggercollectionitem-property"></a>TriggerCollection.Item - proprietà
 
-Per gli script, ottiene il trigger specificato dalla raccolta.
+Per lo scripting, ottiene il trigger specificato dalla raccolta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,11 +40,11 @@ TriggerCollection.Item( _
 
 ## <a name="property-value"></a>Valore proprietà
 
-Oggetto [**trigger**](trigger.md) che rappresenta il trigger richiesto.
+Oggetto [**Trigger**](trigger.md) che rappresenta il trigger richiesto.
 
 ## <a name="remarks"></a>Commenti
 
-Le raccolte sono in base 1. In altre parole, l'indice per il primo elemento nella raccolta è 1.
+Le raccolte sono basate su 1. In altre parole, l'indice per il primo elemento della raccolta è 1.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,9 +52,9 @@ Le raccolte sono in base 1. In altre parole, l'indice per il primo elemento nell
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

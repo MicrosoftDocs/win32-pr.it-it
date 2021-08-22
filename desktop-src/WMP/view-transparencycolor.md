@@ -1,9 +1,9 @@
 ---
-title: Visualizza transparencyColor
-description: L'attributo transparencyColor specifica o Recupera il colore di trasparenza dell'immagine di sfondo.
+title: VIEW.transparencyColor
+description: L'attributo transparencyColor specifica o recupera il colore di trasparenza dell'immagine di sfondo.
 ms.assetid: f9351df1-d502-4a96-9250-13b805c115c8
 keywords:
-- Visualizza Media Player Windows transparencyColor
+- View.transparencyColor Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b7758a63292c299ef113474dc9f65bb8a6b3d01
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 00be392baa607433d798ed22438b9b26bb21469f66c4f750ca6852114886d271
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054049"
 ---
-# <a name="viewtransparencycolor"></a>Visualizza transparencyColor
+# <a name="viewtransparencycolor"></a>VIEW.transparencyColor
 
-L'attributo **transparencyColor** specifica o Recupera il colore di trasparenza dell'immagine di sfondo.
+**L'attributo transparencyColor** specifica o recupera il colore di trasparenza dell'immagine di sfondo.
 
 ``` syntax
         elementID.transparencyColor
@@ -29,9 +29,9 @@ L'attributo **transparencyColor** specifica o Recupera il colore di trasparenza 
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura contenente qualsiasi valore di colore di Microsoft Internet Explorer. e non prevede alcun valore predefinito.
+Questo attributo è una stringa di **lettura/scrittura contenente** qualsiasi valore di colore Internet Explorer Microsoft. e non prevede alcun valore predefinito.
 
-Poiché i jpg sono con perdita di tempo e pertanto sono soggetti a variazioni di colore impreviste, non sono consigliate quando si usa **transparencyColor** .
+Poiché i file JPG sono persi e pertanto soggetti a modifiche impreviste del colore, non sono consigliati quando **si usa transparencyColor.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,7 +39,7 @@ Poiché i jpg sono con perdita di tempo e pertanto sono soggetti a variazioni di
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -50,7 +50,7 @@ Poiché i jpg sono con perdita di tempo e pertanto sono soggetti a variazioni di
 [**Elemento VIEW**](view-element.md)
 </dt> <dt>
 
-[**Riferimento ai colori**](color-reference.md)
+[**Informazioni di riferimento sul colore**](color-reference.md)
 </dt> </dl>
 
  

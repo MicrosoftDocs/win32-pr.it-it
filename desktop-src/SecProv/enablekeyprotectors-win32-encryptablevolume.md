@@ -1,5 +1,5 @@
 ---
-description: Abilita o riprende tutte le protezioni con chiave disabilitate o sospese.
+description: Abilita o riprende tutte le protezione con chiave disabilitate o sospese.
 ms.assetid: 6f5a17a3-84f2-43a0-a85f-1037cd52439a
 title: Metodo EnableKeyProtectors della classe Win32_EncryptableVolume
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 78f8502ae141458f1ae46a48d21c110b9434acd7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94fd4243f6af1f743f872b4d7d34588ca2af63667c6738cc9442ae11f31dde50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004519"
 ---
-# <a name="enablekeyprotectors-method-of-the-win32_encryptablevolume-class"></a>Metodo EnableKeyProtectors della \_ classe EncryptableVolume Win32
+# <a name="enablekeyprotectors-method-of-the-win32_encryptablevolume-class"></a>Metodo EnableKeyProtectors della classe \_ EncryptableVolume Win32
 
-Il metodo **EnableKeyProtectors** della classe [**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md) Abilita o riprende tutte le protezioni con chiave disabilitate o sospese. È possibile utilizzare questo metodo per riabilitare o riprendere la protezione BitLocker su un volume crittografato. Questo metodo garantisce che la chiave di crittografia del volume non venga esposta in chiaro sul disco rigido.
+Il **metodo EnableKeyProtectors** della [**classe Win32 \_ EncryptableVolume**](win32-encryptablevolume.md) abilita o riprende tutte le chiavi protette disabilitate o sospese. È possibile usare questo metodo per riabilitare o riprendere la protezione di BitLocker in un volume crittografato. Questo metodo garantisce che la chiave di crittografia del volume non sia esposta in chiaro sul disco rigido.
 
 > [!Note]  
 > Se il disco supporta la crittografia hardware, lo stato della banda passa a "sbloccato" da "sempre sbloccato".
@@ -44,11 +44,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Questo metodo restituisce uno dei codici seguenti o un altro codice di errore se ha esito negativo.
+Questo metodo restituisce uno dei codici seguenti o un altro codice di errore se non riesce.
 
-Se le protezioni con chiave sono già abilitate e non si verificano altri errori, questo metodo restituisce zero.
+Se le chiavi di protezione sono già abilitate e non si verificano altri errori, questo metodo restituisce zero.
 
 
 
@@ -70,7 +70,7 @@ Se le protezioni con chiave sono già abilitate e non si verificano altri errori
 </tr>
 <tr class="even">
 <td><dl> <dt><strong>FVE_E_SECURE_KEY_REQUIRED</strong></dt> <dt>2150694919 (0x80310007)</dt> </dl></td>
-<td>Nel volume non esistono protezioni con chiave. Usare uno dei metodi seguenti per specificare le protezioni con chiave per il volume:<br/>
+<td>Nel volume non sono presenti protezione con chiave. Usare uno dei metodi seguenti per specificare le chiavi di protezione per il volume:<br/>
 <ul>
 <li><a href="protectkeywithcertificatefile-win32-encryptablevolume.md"><strong>ProtectKeyWithCertificateFile</strong></a></li>
 <li><a href="protectkeywithcertificatethumbprint-win32-encryptablevolume.md"><strong>ProtectKeyWithCertificateThumbprint</strong></a></li>
@@ -96,11 +96,11 @@ Se le protezioni con chiave sono già abilitate e non si verificano altri errori
 
 ## <a name="remarks"></a>Commenti
 
-Se il volume è completamente crittografato, l'esecuzione di questo metodo garantisce che il volume sia protetto. Se il volume è parzialmente crittografato, l'esecuzione di questo metodo implica che il volume verrà protetto quando diventerà completamente crittografato. Per ulteriori informazioni, vedere il metodo [**GetProtectionStatus**](getprotectionstatus-win32-encryptablevolume.md) .
+Se il volume è completamente crittografato, l'esecuzione corretta di questo metodo garantisce che il volume sia protetto. Se il volume è parzialmente crittografato, l'esecuzione corretta di questo metodo implica che il volume verrà protetto quando diventa completamente crittografato. Per altre informazioni, vedere il [**metodo GetProtectionStatus.**](getprotectionstatus-win32-encryptablevolume.md)
 
-Se per il volume sono presenti protezioni con chiave basate su TPM, l'esecuzione di questo metodo consente inoltre di aggiornare tali protezioni in modo da convalidare il TPM rispetto ai servizi di avvio correnti della piattaforma. In altre parole, si dichiara che lo stato del computer corrente è lo stato corretto che verrà verificato dal TPM nei successivi riavvii del computer.
+Se esistono protezione con chiave basata su TPM per il volume, l'esecuzione corretta di questo metodo aggiorna anche queste protezione in modo che il TPM si convalidi rispetto ai servizi di avvio correnti nella piattaforma. In altre parole, si asserirà che lo stato corrente del computer è lo stato corretto con cui il TPM esegue il controllo in caso di riavvii futuri del computer.
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non sono installati come parte del Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -108,10 +108,10 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista Enterprise, Windows Vista Ultimate \[ desktop apps\]<br/>                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ sicurezza \\ MicrosoftVolumeEncryption<br/>                                             |
-| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
+| Client minimo supportato<br/> | Windows Vista Enterprise, Windows solo app desktop di Vista Ultimate \[\]<br/>                       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
+| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 
 
 
@@ -119,7 +119,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_EncryptableVolume Win32**](win32-encryptablevolume.md)
+[**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md)
 </dt> <dt>
 
 [**DisableKeyProtectors**](disablekeyprotectors-win32-encryptablevolume.md)

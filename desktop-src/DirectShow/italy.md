@@ -4,30 +4,30 @@ ms.assetid: 955fb828-4290-4e60-a5db-d3f243b86d8d
 title: Italia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1e74092318cfbc889f9173685176d48d6b72fc0
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: 3f10e7b6bad33e092da60877116c9306d6b9c2594f128aff77b0045847689816
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952500"
 ---
 # <a name="italy"></a>Italia
 
-Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni](tables-and-assignments.md).
+Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni.](tables-and-assignments.md)
 
-Gli indici di frequenza nelle tabelle italiane non sono adatti per l'uso come numeri di canale.
+Gli indici di frequenza nelle tabelle Italia non sono adatti per l'uso come numeri di canale.
 
 -   [Windows 7 e versioni successive](#windows-7-and-later)
-    -   [Assegnazioni di trasmissioni per l'Italia](#italy-broadcast-assignments)
-    -   [Assegnazioni di cavi per l'Italia](#italy-cable-assignments)
--   [Assegnazioni di canali precedenti](#earlier-channel-assignments)
-    -   [Assegnazioni di trasmissioni per l'Italia](#italy-broadcast-assignments)
-    -   [Assegnazioni di cavi per l'Italia](#italy-cable-assignments)
+    -   [Italia Broadcast Assignments (Assegnazioni di trasmissione Italia)](#italy-broadcast-assignments)
+    -   [Assegnazioni di cavi Italia](#italy-cable-assignments)
+-   [Assegnazioni di canale precedenti](#earlier-channel-assignments)
+    -   [Italia Broadcast Assignments (Assegnazioni di trasmissione Italia)](#italy-broadcast-assignments)
+    -   [Assegnazioni di cavi Italia](#italy-cable-assignments)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="windows-7-and-later"></a>Windows 7 e versioni successive
 
-### <a name="italy-broadcast-assignments"></a>Assegnazioni di trasmissioni per l'Italia
+### <a name="italy-broadcast-assignments"></a>Italia Broadcast Assignments (Assegnazioni di trasmissione Italia)
 
 ``` syntax
         1L,             // Lowest channel
@@ -104,7 +104,7 @@ Gli indici di frequenza nelle tabelle italiane non sono adatti per l'uso come nu
        855250000L,      // 69 TV69
 ```
 
-### <a name="italy-cable-assignments"></a>Assegnazioni di cavi per l'Italia
+### <a name="italy-cable-assignments"></a>Assegnazioni di cavi Italia
 
 ``` syntax
          1L,            // Lowest channel
@@ -133,9 +133,9 @@ Gli indici di frequenza nelle tabelle italiane non sono adatti per l'uso come nu
        305250000L,      // 20 Not used
 ```
 
-## <a name="earlier-channel-assignments"></a>Assegnazioni di canali precedenti
+## <a name="earlier-channel-assignments"></a>Assegnazioni di canale precedenti
 
-### <a name="italy-broadcast-assignments"></a>Assegnazioni di trasmissioni per l'Italia
+### <a name="italy-broadcast-assignments"></a>Italia Broadcast Assignments (Assegnazioni di trasmissione Italia)
 
 ``` syntax
          1L,             // Lowest channel
@@ -214,7 +214,7 @@ Gli indici di frequenza nelle tabelle italiane non sono adatti per l'uso come nu
        855250000L,      // 69
 ```
 
-### <a name="italy-cable-assignments"></a>Assegnazioni di cavi per l'Italia
+### <a name="italy-cable-assignments"></a>Assegnazioni di cavi Italia
 
 ``` syntax
          1L,            // Lowest channel
@@ -247,7 +247,7 @@ Gli indici di frequenza nelle tabelle italiane non sono adatti per l'uso come nu
 
 <dl> <dt>
 
-[Ottimizzazione tv analogica internazionale](international-analog-tv-tuning.md)
+[International Analog TV Tuning](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

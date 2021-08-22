@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione SetIndexRangeGrbit'
+description: Altre informazioni sull'enumerazione SetIndexRangeGrbit
 title: Enumerazione SetIndexRangeGrbit
 TOCTitle: SetIndexRangeGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.SetIndexRangeGrbit
@@ -34,12 +34,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6cda73597f88d2c8fca911ebb96d7a3c6399ed9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fe0125291952fc8af7e9c2d2b565dcb8ce7d50ca94b1104b430834d30ab2a1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978551"
 ---
 # <a name="setindexrangegrbit-enumeration"></a>Enumerazione SetIndexRangeGrbit
 
@@ -47,8 +47,8 @@ Opzioni per JetSetIndexRange.
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -84,7 +84,7 @@ public enum SetIndexRangeGrbit
 <tr class="even">
 <td></td>
 <td>RangeInclusive</td>
-<td>Questa opzione indica che il limite dell'intervallo di indici è incluso.</td>
+<td>Questa opzione indica che il limite dell'intervallo di indici è inclusivo.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -94,12 +94,12 @@ public enum SetIndexRangeGrbit
 <tr class="even">
 <td></td>
 <td>RangeInstantDuration</td>
-<td>L'intervallo di indici deve essere rimosso non appena è stato stabilito. Questa operazione è utile per verificare l'esistenza di voci di indice che corrispondono ai criteri di ricerca.</td>
+<td>L'intervallo di indici deve essere rimosso non appena è stato stabilito. Ciò è utile per verificare l'esistenza di voci di indice che corrispondono ai criteri di ricerca.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RangeRemove</td>
-<td>Annulla e intervallo di indici esistente.</td>
+<td>Annulla ed intervallo di indici esistente.</td>
 </tr>
 </tbody>
 </table>
@@ -109,4 +109,4 @@ public enum SetIndexRangeGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,23 +1,23 @@
 ---
-description: Il formato SAMI (Synchronized Accessible Media Interchange) è un formato per l'aggiunta di didascalie ai supporti digitali.
+description: Synchronized Accessible Media Interchange (SAMI) è un formato per l'aggiunta di sottotitoli ai supporti digitali.
 ms.assetid: 007c8181-089e-4e56-a31d-9d1942f90b07
-title: Origine supporto SAMI
+title: Origine supporti SAMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9340b51815b130cb41061478358b2ab9dcf68f60
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: c7567f7479b6f8d0d2439f89dbf3e6cf273fc7dcae31590ddf9b51a4d66a6940
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104058450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034819"
 ---
-# <a name="sami-media-source"></a>Origine supporto SAMI
+# <a name="sami-media-source"></a>Origine supporti SAMI
 
-Il formato SAMI (Synchronized Accessible Media Interchange) è un formato per l'aggiunta di didascalie ai supporti digitali. Le didascalie vengono archiviate in un file di testo separato con estensione SMI o Sami.
+Synchronized Accessible Media Interchange (SAMI) è un formato per l'aggiunta di sottotitoli ai supporti digitali. Le didascalie vengono archiviate in un file di testo separato con estensione smi o sami.
 
-In Media Foundation i file di didascalia SAMI sono supportati tramite l'origine dei supporti SAMI. Usare il [resolver di origine](source-resolver.md) per creare un'istanza dell'origine supporto Sami da un URL o un flusso di byte. Media Foundation non fornisce un componente che visualizza le didascalie SAMI. L'applicazione deve interpretare i dati della didascalia ricevuti dall'origine dei supporti SAMI.
+In Media Foundation, i file di sottotitoli SAMI sono supportati tramite l'origine multimediale SAMI. Usare il [sistema di risoluzione dell'origine](source-resolver.md) per creare un'istanza dell'origine multimediale SAMI da un URL o un flusso di byte. Media Foundation non fornisce un componente che visualizza i sottotitoli SAMI. L'applicazione deve interpretare i dati dei sottotitoli ricevuti dall'origine multimediale SAMI.
 
-Di seguito viene illustrato un esempio di file SAMI.
+Di seguito viene illustrato un file SAMI di esempio.
 
 ``` syntax
 <SAMI>
@@ -56,35 +56,35 @@ Di seguito viene illustrato un esempio di file SAMI.
 </SAMI>
 ```
 
-L' `<STYLE>` elemento contiene informazioni sullo stile. Questo esempio contiene uno stile di base per `<P>` gli elementi, insieme a due stili denominati, "standard" e "Hilite". Gli stili denominati vengono utilizzati per modificare lo stile di base. Le didascalie vengono posizionate all'interno di `<SYNC>` elementi. L'attributo Start restituisce il tempo di presentazione in millisecondi per la didascalia. Le didascalie di questo esempio sono fornite in due lingue, specificate dai tag di lingua RFC-1766, "en-US" e "fr-FR". All'interno delle didascalie, le lingue sono identificate dai rispettivi nomi di classe; in questo caso, "ENUSCC" e "FRFRCC".
+`<STYLE>`L'elemento contiene informazioni sullo stile. Questo esempio contiene uno stile di base per `<P>` gli elementi, insieme a due stili denominati, "standard" e "hilite". Gli stili denominati vengono usati per modificare lo stile di base. Le didascalie vengono inserite all'interno `<SYNC>` degli elementi. L'attributo start indica il tempo di presentazione in millisecondi per la didascalia. Le didascalie in questo esempio sono fornite in due lingue, specificate dai tag di lingua RFC-1766, "en-US" e "fr -FR". All'interno delle didascalie, le lingue sono identificate dai relativi nomi di classe. in questo caso, "ENUSCC" e "FRFRCC".
 
-L'origine dei supporti SAMI crea un flusso multimediale per ogni lingua. Per impostazione predefinita, il primo flusso è selezionato e i flussi rimanenti vengono deselezionati. L'applicazione può modificare la selezione del flusso chiamando [**IMFPresentationDescriptor:: SelectStream**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-selectstream) e [**IMFPresentationDescriptor::D eselectstream**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-deselectstream). Ogni descrittore di flusso contiene gli attributi seguenti.
+L'origine multimediale SAMI crea un flusso multimediale per ogni lingua. Per impostazione predefinita, il primo flusso è selezionato e i flussi rimanenti vengono deselezionati. L'applicazione può modificare la selezione del flusso chiamando [**IMFPresentationDescriptor::SelectStream**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-selectstream) e [**IMFPresentationDescriptor::D eselectStream**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-deselectstream). Ogni descrittore di flusso contiene gli attributi seguenti.
 
 
 
 | Attributo                                                       | Descrizione                                      |
 |-----------------------------------------------------------------|--------------------------------------------------|
-| [**\_lingua MF SD \_**](mf-sd-language-attribute.md)            | Tag di lingua, come specificato dall' `lang` attributo.  |
-| [**\_lingua MF SD \_ Sami \_**](mf-sd-sami-language-attribute.md) | Nome del linguaggio, come specificato dall' `Name` attributo. |
+| [**LINGUAGGIO \_ MF SD \_**](mf-sd-language-attribute.md)            | Tag di lingua, come specificato `lang` dall'attributo .  |
+| [**MF \_ SD \_ SAMI \_ LANGUAGE**](mf-sd-sami-language-attribute.md) | Nome della lingua, come specificato `Name` dall'attributo . |
 
 
 
  
 
-Ogni flusso ha il seguente tipo di supporto:
+Ogni flusso ha il tipo di supporto seguente:
 
 
 
 | Attributo                                                                            | Valore                 |
 |--------------------------------------------------------------------------------------|-----------------------|
-| [**\_ \_ tipo principale MF \_ mt**](mf-mt-major-type-attribute.md)                            | **\_Sami MFMediaType** |
-| [**\_ \_ tutti gli esempi MF mt \_ \_ Independent**](mf-mt-all-samples-independent-attribute.md) | **TRUE**              |
+| [**MF \_ MT \_ MAJOR \_ TYPE**](mf-mt-major-type-attribute.md)                            | **MFMediaType \_ SAMI** |
+| [**MF \_ MT \_ ALL \_ SAMPLES \_ INDEPENDENT**](mf-mt-all-samples-independent-attribute.md) | **TRUE**              |
 
 
 
  
 
-L'origine SAMI recapita ogni didascalia in un esempio di supporto separato. Il timestamp e la durata del campione sono derivati dall' `<SYNC>` elemento. Il buffer multimediale contenuto nell'esempio contiene la didascalia come testo ASCII. Lo stile della didascalia viene incorporato nella didascalia come attributo inline `STYLE` . Ad esempio, dato il file SAMI precedente e usando il flusso della lingua inglese con gli stili predefiniti, il primo buffer multimediale conterrebbe i dati seguenti. (Le interruzioni di riga potrebbero essere diverse da quelle illustrate qui).
+L'origine SAMI recapita ogni didascalia in un esempio di supporto separato. Il timestamp e la durata di esempio derivano `<SYNC>` dall'elemento . Il buffer multimediale contenuto nell'esempio contiene la didascalia come testo ASCII. Lo stile della didascalia viene incorporato nella didascalia come attributo `STYLE` inline. Ad esempio, dato il file SAMI precedente e l'uso del flusso in lingua inglese con gli stili predefiniti, il primo buffer multimediale conterrà i dati seguenti. Le interruzioni di riga potrebbero essere diverse da quanto illustrato di seguito.
 
 ``` syntax
 <P STYLE="
@@ -98,7 +98,7 @@ L'origine SAMI recapita ogni didascalia in un esempio di supporto separato. Il t
 
 ## <a name="sami-styles"></a>Stili SAMI
 
-Per modificare lo stile corrente, utilizzare l'interfaccia [**IMFSAMIStyle**](/windows/desktop/api/mfidl/nn-mfidl-imfsamistyle) . Questa interfaccia viene ottenuta chiamando [**IMFGetService:: GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) sull'origine dei supporti Sami. Se si usa l'origine del supporto SAMI con la sessione multimediale, chiamare **GetService** nella sessione multimediale. L'identificatore del servizio è il **\_ \_ servizio MF Sami**.
+Per modificare lo stile corrente, usare [**l'interfaccia IMFSAMIStyle.**](/windows/desktop/api/mfidl/nn-mfidl-imfsamistyle) Questa interfaccia viene ottenuta chiamando [**IMFGetService::GetService sull'origine**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) dei supporti SAMI. Se si usa l'origine multimediale SAMI con la sessione multimediale, chiamare **GetService** nella sessione multimediale. L'identificatore del servizio **è MF \_ SAMI \_ SERVICE.**
 
 Nell'esempio seguente viene impostato lo stile SAMI corrente, specificato da index.
 
@@ -146,19 +146,19 @@ done:
 
 
 
-Questo esempio chiama i metodi seguenti nell'origine supporto SAMI:
+Questo esempio chiama i metodi seguenti sull'origine multimediale SAMI:
 
--   [**IMFSAMIStyle:: GetStyleCount**](/windows/desktop/api/mfidl/nf-mfidl-imfsamistyle-getstylecount) ottiene il numero di stili.
--   [**IMFSAMIStyle:: GetStyles**](/windows/desktop/api/mfidl/nf-mfidl-imfsamistyle-getstyles) ottiene un elenco dei nomi di stile, archiviati in un **PROPVARIANT**.
--   [**IMFSAMIStyle:: SetSelectedStyle**](/windows/desktop/api/mfidl/nf-mfidl-imfsamistyle-setselectedstyle) imposta uno stile in base al nome.
+-   [**IMFSAMIStyle::GetStyleCount**](/windows/desktop/api/mfidl/nf-mfidl-imfsamistyle-getstylecount) ottiene il numero di stili.
+-   [**IMFSAMIStyle::GetStyles**](/windows/desktop/api/mfidl/nf-mfidl-imfsamistyle-getstyles) ottiene un elenco dei nomi di stile, archiviati in **un oggetto PROPVARIANT.**
+-   [**IMFSAMIStyle::SetSelectedStyle**](/windows/desktop/api/mfidl/nf-mfidl-imfsamistyle-setselectedstyle) imposta uno stile in base al nome.
 
-L'elenco dei nomi di stile viene archiviato anche nel descrittore della presentazione, nell'attributo di stile dell'elenco di [**\_ \_ \_ stili MF PD Sami**](mf-pd-sami-stylelist-attribute.md) .
+L'elenco di nomi di stile viene archiviato anche nel descrittore di presentazione, nell'attributo [**\_ \_ SAMI \_ STYLELIST di MF PD.**](mf-pd-sami-stylelist-attribute.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Origini e sink multimediali](media-sources-and-sinks.md)
+[Origini multimediali e sink](media-sources-and-sinks.md)
 </dt> <dt>
 
 [Formati multimediali supportati in Media Foundation](supported-media-formats-in-media-foundation.md)

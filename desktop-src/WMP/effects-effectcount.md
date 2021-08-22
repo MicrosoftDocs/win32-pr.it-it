@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. effectCount
-description: L'attributo effectCount Recupera il numero di visualizzazioni disponibili.
+title: EFFECTS.effectCount
+description: L'attributo effectCount recupera il numero di visualizzazioni disponibili.
 ms.assetid: 819499be-31aa-4f11-a616-95a378f2512d
 keywords:
-- EFFECTs. effectCount Windows Media Player
+- EFFECTS.effectCount Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6abcf7d13efb741e8d927bcc49324c6350efce02
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 730a877efa498beb8fd16fd08c7dfbdf0c337cf1520137d6654adf689e6aedb7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996691"
 ---
-# <a name="effectseffectcount"></a>EFFECTs. effectCount
+# <a name="effectseffectcount"></a>EFFECTS.effectCount
 
-L'attributo **effectCount** Recupera il numero di visualizzazioni disponibili.
+**L'attributo effectCount** recupera il numero di visualizzazioni disponibili.
 
 ``` syntax
         elementID.effectCount
@@ -29,7 +29,7 @@ L'attributo **effectCount** Recupera il numero di visualizzazioni disponibili.
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di sola lettura (**Long**).
+Questo attributo è un numero di sola **lettura** (**long**).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,7 +37,7 @@ Questo attributo è un **numero** di sola lettura (**Long**).
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------|
-| Versione<br/> | Windows Media Player per Windows XP o versione successiva<br/> |
+| Versione<br/> | Windows Media Player per Windows XP o versioni successive<br/> |
 
 
 
@@ -45,7 +45,7 @@ Questo attributo è un **numero** di sola lettura (**Long**).
 
 <dl> <dt>
 
-[**EFFECTs-elemento**](effects-element.md)
+[**Elemento EFFECTS**](effects-element.md)
 </dt> </dl>
 
  

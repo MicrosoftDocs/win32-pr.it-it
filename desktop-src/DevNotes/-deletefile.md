@@ -1,7 +1,7 @@
 ---
 description: Elimina un file. Vedere DeleteFile.
 ms.assetid: 8c1f4368-8b0e-41af-9bf8-f3d9f58c3700
-title: Funzione _DeleteFile
+title: _DeleteFile funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Msmdun80.dll
-ms.openlocfilehash: 8d7bb675d76d5e455ffa6bf5099d8f1fe7f88e61
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9cbf792b3b1aa2f22550a88a0c24920c86b6874cf81a29cec6b36356a189e1fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017789"
 ---
-# <a name="_deletefile-function"></a>\_DeleteFile (funzione)
+# <a name="_deletefile-function"></a>\_Funzione DeleteFile
 
-\[Questa funzione è un wrapper per la funzione **DeleteFile** . Questa funzione può essere modificata o non disponibile in futuro. Le applicazioni devono chiamare direttamente **DeleteFile** .\]
+\[Questa funzione è un wrapper sulla **funzione DeleteFile.** Questa funzione potrebbe essere modificata o non disponibile in futuro. Le applicazioni devono **chiamare direttamente DeleteFile.**\]
 
-Elimina un file. Vedere [**DeleteFile**](/windows/desktop/api/fileapi/nf-fileapi-deletefilea).
+Elimina un file. Vedere [**DeleteFile.**](/windows/desktop/api/fileapi/nf-fileapi-deletefilea)
 
 ## <a name="syntax"></a>Sintassi
 

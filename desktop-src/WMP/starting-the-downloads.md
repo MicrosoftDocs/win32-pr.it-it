@@ -3,30 +3,30 @@ title: Avvio dei download
 description: Avvio dei download
 ms.assetid: 0a830b11-f7e1-41da-a867-86f9ac361c0b
 keywords:
-- Windows Media Player Online Stores, Download Manager
-- archivi online, gestione download
-- digitare 2 archivi online, Download Manager
-- Windows Media Player Online Stores, avvio di download
-- negozi online, avvio di download
-- digitare 2 archivi online, avvio di download
-- Windows Media Player, Download Manager
-- Gestione download di Windows Media Player
-- Gestione download
-- avvio del download
+- Windows Media Player online, Download Manager
+- online store, Download Manager
+- store online di tipo 2, Download Manager
+- Windows Media Player store online, avvio dei download
+- store online, avvio di download
+- store online di tipo 2, avvio dei download
+- Windows Media Player,Download Manager
+- Windows Media Player Download Manager
+- Download Manager
+- avvio di download
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cec723bd504cc511c3ca43db90f3c613a8acefd1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d600bb037204b4dae1c07d8938e92eae2862460b94ef285567a8ca14144e72c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995071"
 ---
 # <a name="starting-the-downloads"></a>Avvio dei download
 
-Il download viene avviato quando l'utente fa clic su **download**. Questo pulsante è denominato btnDownload nel codice e la funzione del gestore eventi per l'evento **OnClick** è denominata "ondownload".
+Il download viene avviato quando l'utente fa clic su **Scarica**. Questo pulsante è denominato btnDownload nel codice e la funzione del gestore eventi per l'evento **onClick** è denominata "OnDownload".
 
-Con "ondownload" viene innanzitutto creato un nuovo oggetto **scaricabile** vuoto che viene assegnato a una variabile locale.
+"OnDownload" crea innanzitutto un nuovo oggetto **DownloadCollection** vuoto e lo assegna a una variabile locale.
 
 
 ```C++
@@ -36,7 +36,7 @@ oDLC = g_oManager.createDownloadCollection();
 
 
 
-Successivamente, la funzione avvia ognuno dei cinque elementi scaricati e archivia l'oggetto **DownloadItem** restituito in una matrice.
+Successivamente, la funzione avvia ognuno dei cinque elementi scaricando e archivia l'oggetto **DownloadItem** restituito in una matrice.
 
 
 ```C++
@@ -50,7 +50,7 @@ g_DLI[4] = oDLC.startDownload(g_sFiles[4], g_sDLType);
 
 
 
-Il codice aggiorna quindi gli elementi dell'interfaccia utente con le informazioni sulla raccolta di download e sui relativi elementi di download.
+Il codice aggiorna quindi gli elementi dell'interfaccia utente con le informazioni sulla raccolta di download e i relativi elementi di download.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -59,9 +59,9 @@ Il codice aggiorna quindi gli elementi dell'interfaccia utente con le informazio
 [**Uso di Download Manager**](using-the-download-manager.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
