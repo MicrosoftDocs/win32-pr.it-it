@@ -1,9 +1,9 @@
 ---
-title: Messaggio CCM_GETUNICODEFORMAT (COMmctrl. h)
-description: Ottiene il flag del formato carattere Unicode per il controllo.
+title: CCM_GETUNICODEFORMAT messaggio (Commctrl.h)
+description: Ottiene il flag di formato carattere Unicode per il controllo .
 ms.assetid: 8a23cd1c-549e-4d48-891a-b37dbf5c524b
 keywords:
-- Controlli di Windows Message CCM_GETUNICODEFORMAT
+- CCM_GETUNICODEFORMAT controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 095d49ccc57faa05e86d12df130b12ce3d542bf6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fa115ba341478990b46600bc76ee02e4ecf750d5a7ccde9f1110aa8856d30fa7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119438281"
 ---
-# <a name="ccm_getunicodeformat-message"></a>\_Messaggio GETUNICODEFORMAT CCM
+# <a name="ccm_getunicodeformat-message"></a>Messaggio \_ CCM GETUNICODEFORMAT
 
-Ottiene il flag del formato carattere Unicode per il controllo.
+Ottiene il flag di formato carattere Unicode per il controllo .
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,9 +45,9 @@ Restituisce il flag di formato Unicode per il controllo. Se questo valore è div
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Restituisce il flag di formato Unicode per il controllo. Se questo valore è div
 
 <dl> <dt>
 
-[**\_SETUNICODEFORMAT CCM**](ccm-setunicodeformat.md)
+[**CCM \_ SETUNICODEFORMAT**](ccm-setunicodeformat.md)
 </dt> </dl>
 
  

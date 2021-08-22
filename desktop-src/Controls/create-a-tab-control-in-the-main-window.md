@@ -1,38 +1,38 @@
 ---
-title: Come creare un controllo struttura a schede nella finestra principale
-description: Nell'esempio riportato in questa sezione viene illustrato come creare un controllo struttura a schede e come visualizzarlo nell'area client della finestra principale dell'applicazione.
+title: Come creare un controllo Struttura a schede nella finestra principale
+description: L'esempio in questa sezione illustra come creare un controllo Struttura a schede e visualizzarlo nell'area client della finestra principale dell'applicazione.
 ms.assetid: 24157B8B-177B-471C-9DA0-548D09EA5F89
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 686a9a4fe4f6be95ccdcf3bbcb597c2c48ff3b2d
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: d8b7d945b01c1e6409cf795d7f42f29999830ed1272bb661a9bb13e52cd1e293
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104474366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119320011"
 ---
-# <a name="how-to-create-a-tab-control-in-the-main-window"></a>Come creare un controllo struttura a schede nella finestra principale
+# <a name="how-to-create-a-tab-control-in-the-main-window"></a>Come creare un controllo Struttura a schede nella finestra principale
 
-Nell'esempio riportato in questa sezione viene illustrato come creare un controllo struttura a schede e come visualizzarlo nell'area client della finestra principale dell'applicazione. Nell'applicazione viene visualizzata una terza finestra (un controllo statico) nell'area di visualizzazione del controllo struttura a schede. La finestra padre posiziona e ridimensiona il controllo struttura a schede e il controllo statico quando elabora il messaggio di [**\_ dimensioni WM**](/windows/desktop/winmsg/wm-size) .
+L'esempio in questa sezione illustra come creare un controllo Struttura a schede e visualizzarlo nell'area client della finestra principale dell'applicazione. L'applicazione visualizza una terza finestra (un controllo statico) nell'area di visualizzazione del controllo Struttura a schede. La finestra padre posiziona e ridimensiona il controllo Struttura a schede e il controllo statico quando elabora il [**messaggio WM \_ SIZE.**](/windows/desktop/winmsg/wm-size)
 
-In questo esempio sono presenti sette schede, una per ogni giorno della settimana. Quando l'utente seleziona una scheda, l'applicazione Visualizza il nome del giorno corrispondente nel controllo statico.
+In questo esempio sono presenti sette schede, una per ogni giorno della settimana. Quando l'utente seleziona una scheda, l'applicazione visualizza il nome del giorno corrispondente nel controllo statico.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="create-a-tab-control-in-the-main-window"></a>Creare un controllo struttura a schede nella finestra principale
+### <a name="create-a-tab-control-in-the-main-window"></a>Creare un controllo Struttura a schede nella finestra principale
 
-La funzione seguente crea il controllo struttura a schede e aggiunge una tabulazione per ogni giorno della settimana. I nomi dei giorni sono definiti come risorse di stringa, numerati consecutivamente a partire dagli ID \_ Sunday (definiti nel file di intestazione della risorsa dell'applicazione). Sia la finestra padre che il controllo struttura a schede devono avere lo stile della finestra [**WS \_ CLIPSIBLINGS**](/windows/desktop/winmsg/window-styles) . La funzione di inizializzazione dell'applicazione chiama questa funzione dopo la creazione della finestra principale.
+La funzione seguente crea il controllo Struttura a schede e aggiunge una scheda per ogni giorno della settimana. I nomi dei giorni sono definiti come risorse stringa, numerate consecutivamente a partire da IDS SUNDAY (definite nel file di intestazione delle \_ risorse dell'applicazione). Sia la finestra padre che il controllo Struttura a schede devono avere lo stile della finestra [**WS \_ CLIPSIBLINGS.**](/windows/desktop/winmsg/window-styles) La funzione di inizializzazione dell'applicazione chiama questa funzione dopo aver creato la finestra principale.
 
 
 ```C++
@@ -93,7 +93,7 @@ HWND DoCreateTabControl(HWND hwndParent)
 
 
 
-La funzione seguente crea il controllo statico che risiede nell'area di visualizzazione del controllo Tab. La funzione di inizializzazione dell'applicazione chiama questa funzione dopo la creazione della finestra principale e del controllo struttura a schede.
+La funzione seguente crea il controllo statico che si trova nell'area di visualizzazione del controllo Struttura a schede. La funzione di inizializzazione dell'applicazione chiama questa funzione dopo aver creato la finestra principale e il controllo Struttura a schede.
 
 
 ```C++
@@ -115,9 +115,9 @@ HWND DoCreateDisplayWindow(HWND hwndTab)
 
 
 
-Le funzioni di esempio seguenti vengono chiamate dalla routine della finestra dell'applicazione. L'applicazione chiama la `OnSize` funzione durante l'elaborazione del messaggio di [**\_ dimensioni WM**](/windows/desktop/winmsg/wm-size) per posizionare e ridimensionare il controllo struttura a schede per adattarlo all'area client della finestra principale.
+Le funzioni di esempio seguenti vengono chiamate dalla routine della finestra dell'applicazione. L'applicazione chiama la funzione durante l'elaborazione del messaggio WM SIZE per posizionare e ridimensionare il controllo Struttura a schede per adattarlo `OnSize` all'area client della [**\_**](/windows/desktop/winmsg/wm-size) finestra principale.
 
-Quando si seleziona una scheda, il controllo tab Invia un messaggio di [**\_ notifica WM**](wm-notify.md) , specificando il codice di notifica [ \_ selChange di TCN](tcn-selchange.md) . La funzione dell'applicazione `OnNotify` elabora questo codice di notifica impostando il testo del controllo statico.
+Quando si seleziona una scheda, il controllo struttura a schede invia un messaggio [**WM \_ NOTIFY,**](wm-notify.md) specificando il codice di notifica [ \_ TCN SELCHANGE.](tcn-selchange.md) La funzione `OnNotify` dell'applicazione elabora questo codice di notifica impostando il testo del controllo statico.
 
 
 ```C++
@@ -183,12 +183,12 @@ BOOL OnNotify(HWND hwndTab, HWND hwndDisplay, LPARAM lParam)
 
 <dl> <dt>
 
-[Uso di controlli struttura a schede](using-tab-controls.md)
+[Uso dei controlli Struttura a schede](using-tab-controls.md)
 </dt> <dt>
 
-[Demo sui controlli comuni di Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demo di controlli comuni (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

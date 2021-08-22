@@ -1,10 +1,10 @@
 ---
-title: Set di proprietà User-Logon
-description: Set di proprietà contenente gli attributi utente che descrivono le informazioni di accesso dell'utente.
+title: User-Logon proprietà
+description: Set di proprietà contenente gli attributi utente che descrivono le informazioni di accesso utente.
 ms.assetid: 93d1af8d-f4d0-4aed-a03d-a2f34dd7ec37
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD User-Logon set di proprietà
+- User-Logon set di proprietà ad Active Directory Schema
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd9ce027ff98b5dd972db1964e0e5948017eb93d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 08b06cb7ccf22f77727a4789a29e2a884a276687a3cc42d348317dcd250e13dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104121966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119580561"
 ---
-# <a name="user-logon-property-set"></a>Set di proprietà User-Logon
+# <a name="user-logon-property-set"></a>User-Logon proprietà
 
-Set di proprietà contenente gli attributi utente che descrivono le informazioni di accesso dell'utente.
+Set di proprietà contenente gli attributi utente che descrivono le informazioni di accesso utente.
 
 
 
@@ -38,7 +38,7 @@ Set di proprietà contenente gli attributi utente che descrivono le informazioni
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -51,8 +51,8 @@ Set di proprietà contenente gli attributi utente che descrivono le informazioni
 | Voce | Valore |
 |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Utente**](c-user.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Localization-display-ID | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Membri del set di proprietà    | [**Numero di PWD non valido**](a-badpwdcount.md)<br/> [**Home-Directory**](a-homedirectory.md)<br/> [**Unità Home**](a-homedrive.md)<br/> [**Ultima disconnessione**](a-lastlogoff.md)<br/> [**Ultimo accesso**](a-lastlogon.md)<br/> [**Conteggio accessi**](a-logoncount.md)<br/> [**Orario di accesso**](a-logonhours.md)<br/> [**Logon-workstation**](a-logonworkstation.md)<br/> [**Percorso profilo**](a-profilepath.md)<br/> |
+| Localization-Display-ID | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Membri del set di proprietà    | [**Bad-Pwd-Count**](a-badpwdcount.md)<br/> [**Home directory**](a-homedirectory.md)<br/> [**Home drive**](a-homedrive.md)<br/> [**Ultima disconnessione**](a-lastlogoff.md)<br/> [**Ultimo accesso**](a-lastlogon.md)<br/> [**Conteggio accessi**](a-logoncount.md)<br/> [**Ore di accesso**](a-logonhours.md)<br/> [**Logon-Workstation**](a-logonworkstation.md)<br/> [**Profile-Path**](a-profilepath.md)<br/> |
 
 
 
@@ -63,20 +63,20 @@ Set di proprietà contenente gli attributi utente che descrivono le informazioni
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Utente**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Localization-display-ID | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Membri del set di proprietà    | [**Numero di PWD non valido**](a-badpwdcount.md)<br/> [**Home-Directory**](a-homedirectory.md)<br/> [**Unità Home**](a-homedrive.md)<br/> [**Ultima disconnessione**](a-lastlogoff.md)<br/> [**Ultimo accesso**](a-lastlogon.md)<br/> [**Ultimo accesso-timestamp**](a-lastlogontimestamp.md)<br/> [**Conteggio accessi**](a-logoncount.md)<br/> [**Orario di accesso**](a-logonhours.md)<br/> [**Logon-workstation**](a-logonworkstation.md)<br/> [**Percorso profilo**](a-profilepath.md)<br/> [**Script-percorso**](a-scriptpath.md)<br/> [**Workstation utente**](a-userworkstations.md)<br/> |
+| Localization-Display-ID | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Membri del set di proprietà    | [**Bad-Pwd-Count**](a-badpwdcount.md)<br/> [**Home directory**](a-homedirectory.md)<br/> [**Home drive**](a-homedrive.md)<br/> [**Ultima disconnessione**](a-lastlogoff.md)<br/> [**Ultimo accesso**](a-lastlogon.md)<br/> [**Last-Logon-Timestamp**](a-lastlogontimestamp.md)<br/> [**Conteggio accessi**](a-logoncount.md)<br/> [**Ore di accesso**](a-logonhours.md)<br/> [**Logon-Workstation**](a-logonworkstation.md)<br/> [**Profile-Path**](a-profilepath.md)<br/> [**Percorso script**](a-scriptpath.md)<br/> [**Workstation utente**](a-userworkstations.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | \-                                                                                                                |
-| Localization-display-ID | 10                                                                                                                |
-| Membri del set di proprietà    | [**Numero di PWD non valido**](a-badpwdcount.md)<br/> [**Ultimo accesso-timestamp**](a-lastlogontimestamp.md)<br/> |
+| Localization-Display-ID | 10                                                                                                                |
+| Membri del set di proprietà    | [**Bad-Pwd-Count**](a-badpwdcount.md)<br/> [**Last-Logon-Timestamp**](a-lastlogontimestamp.md)<br/> |
 
 
 
@@ -87,8 +87,8 @@ Set di proprietà contenente gli attributi utente che descrivono le informazioni
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Utente**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Localization-display-ID | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Membri del set di proprietà    | [**Numero di PWD non valido**](a-badpwdcount.md)<br/> [**Home-Directory**](a-homedirectory.md)<br/> [**Unità Home**](a-homedrive.md)<br/> [**Ultima disconnessione**](a-lastlogoff.md)<br/> [**Ultimo accesso**](a-lastlogon.md)<br/> [**Ultimo accesso-timestamp**](a-lastlogontimestamp.md)<br/> [**Conteggio accessi**](a-logoncount.md)<br/> [**Orario di accesso**](a-logonhours.md)<br/> [**Logon-workstation**](a-logonworkstation.md)<br/> [**Percorso profilo**](a-profilepath.md)<br/> [**Script-percorso**](a-scriptpath.md)<br/> [**Workstation utente**](a-userworkstations.md)<br/> |
+| Localization-Display-ID | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Membri del set di proprietà    | [**Bad-Pwd-Count**](a-badpwdcount.md)<br/> [**Home directory**](a-homedirectory.md)<br/> [**Home drive**](a-homedrive.md)<br/> [**Ultima disconnessione**](a-lastlogoff.md)<br/> [**Ultimo accesso**](a-lastlogon.md)<br/> [**Last-Logon-Timestamp**](a-lastlogontimestamp.md)<br/> [**Conteggio accessi**](a-logoncount.md)<br/> [**Ore di accesso**](a-logonhours.md)<br/> [**Logon-Workstation**](a-logonworkstation.md)<br/> [**Profile-Path**](a-profilepath.md)<br/> [**Percorso script**](a-scriptpath.md)<br/> [**Workstation utente**](a-userworkstations.md)<br/> |
 
 
 
@@ -99,8 +99,8 @@ Set di proprietà contenente gli attributi utente che descrivono le informazioni
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Utente**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Localization-display-ID | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Membri del set di proprietà    | [**Numero di PWD non valido**](a-badpwdcount.md)<br/> [**Home-Directory**](a-homedirectory.md)<br/> [**Unità Home**](a-homedrive.md)<br/> [**Ultima disconnessione**](a-lastlogoff.md)<br/> [**Ultimo accesso**](a-lastlogon.md)<br/> [**Ultimo accesso-timestamp**](a-lastlogontimestamp.md)<br/> [**Conteggio accessi**](a-logoncount.md)<br/> [**Orario di accesso**](a-logonhours.md)<br/> [**Logon-workstation**](a-logonworkstation.md)<br/> [**Percorso profilo**](a-profilepath.md)<br/> [**Script-percorso**](a-scriptpath.md)<br/> [**Workstation utente**](a-userworkstations.md)<br/> |
+| Localization-Display-ID | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Membri del set di proprietà    | [**Bad-Pwd-Count**](a-badpwdcount.md)<br/> [**Home directory**](a-homedirectory.md)<br/> [**Unità home**](a-homedrive.md)<br/> [**Ultima disconnessione**](a-lastlogoff.md)<br/> [**Ultimo accesso**](a-lastlogon.md)<br/> [**Last-Logon-Timestamp**](a-lastlogontimestamp.md)<br/> [**Conteggio accessi**](a-logoncount.md)<br/> [**Ore di accesso**](a-logonhours.md)<br/> [**Logon-Workstation**](a-logonworkstation.md)<br/> [**Percorso profilo**](a-profilepath.md)<br/> [**Percorso script**](a-scriptpath.md)<br/> [**Workstation utente**](a-userworkstations.md)<br/> |
 
 
 
@@ -111,8 +111,8 @@ Set di proprietà contenente gli attributi utente che descrivono le informazioni
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Utente**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Localization-display-ID | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Membri del set di proprietà    | [**Numero di PWD non valido**](a-badpwdcount.md)<br/> [**Home-Directory**](a-homedirectory.md)<br/> [**Unità Home**](a-homedrive.md)<br/> [**Ultima disconnessione**](a-lastlogoff.md)<br/> [**Ultimo accesso**](a-lastlogon.md)<br/> [**Ultimo accesso-timestamp**](a-lastlogontimestamp.md)<br/> [**Conteggio accessi**](a-logoncount.md)<br/> [**Orario di accesso**](a-logonhours.md)<br/> [**Logon-workstation**](a-logonworkstation.md)<br/> [**Percorso profilo**](a-profilepath.md)<br/> [**Script-percorso**](a-scriptpath.md)<br/> [**Workstation utente**](a-userworkstations.md)<br/> |
+| Localization-Display-ID | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Membri del set di proprietà    | [**Bad-Pwd-Count**](a-badpwdcount.md)<br/> [**Home directory**](a-homedirectory.md)<br/> [**Unità home**](a-homedrive.md)<br/> [**Ultima disconnessione**](a-lastlogoff.md)<br/> [**Ultimo accesso**](a-lastlogon.md)<br/> [**Last-Logon-Timestamp**](a-lastlogontimestamp.md)<br/> [**Conteggio accessi**](a-logoncount.md)<br/> [**Ore di accesso**](a-logonhours.md)<br/> [**Logon-Workstation**](a-logonworkstation.md)<br/> [**Percorso profilo**](a-profilepath.md)<br/> [**Percorso script**](a-scriptpath.md)<br/> [**Workstation utente**](a-userworkstations.md)<br/> |
 
 
 
@@ -123,8 +123,8 @@ Set di proprietà contenente gli attributi utente che descrivono le informazioni
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Utente**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Localization-display-ID | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Membri del set di proprietà    | [**Numero di PWD non valido**](a-badpwdcount.md)<br/> [**Home-Directory**](a-homedirectory.md)<br/> [**Unità Home**](a-homedrive.md)<br/> [**Ultima disconnessione**](a-lastlogoff.md)<br/> [**Ultimo accesso**](a-lastlogon.md)<br/> [**Ultimo accesso-timestamp**](a-lastlogontimestamp.md)<br/> [**Conteggio accessi**](a-logoncount.md)<br/> [**Orario di accesso**](a-logonhours.md)<br/> [**Logon-workstation**](a-logonworkstation.md)<br/> [**Percorso profilo**](a-profilepath.md)<br/> [**Script-percorso**](a-scriptpath.md)<br/> [**Workstation utente**](a-userworkstations.md)<br/> |
+| Localization-Display-ID | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Membri del set di proprietà    | [**Bad-Pwd-Count**](a-badpwdcount.md)<br/> [**Home directory**](a-homedirectory.md)<br/> [**Unità home**](a-homedrive.md)<br/> [**Ultima disconnessione**](a-lastlogoff.md)<br/> [**Ultimo accesso**](a-lastlogon.md)<br/> [**Last-Logon-Timestamp**](a-lastlogontimestamp.md)<br/> [**Conteggio accessi**](a-logoncount.md)<br/> [**Ore di accesso**](a-logonhours.md)<br/> [**Logon-Workstation**](a-logonworkstation.md)<br/> [**Percorso profilo**](a-profilepath.md)<br/> [**Percorso script**](a-scriptpath.md)<br/> [**Workstation utente**](a-userworkstations.md)<br/> |
 
 
 

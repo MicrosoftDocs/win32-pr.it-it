@@ -1,6 +1,6 @@
 ---
 title: Attributo PKT
-description: Tabella delle informazioni sulle partizioni DFS. Descrive la struttura di una gerarchia di file system distribuito.
+description: Tabella delle informazioni sulla partizione DFS. Descrive la struttura di una gerarchia file system distribuito gerarchia.
 ms.assetid: a7b2e9ee-04c0-40e8-8670-8261575a45ab
 ms.tgt_platform: multiple
 keywords:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1647e2730b254121763b6598a8ec365b376dd52d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f01f0b1abcf73223848b75867c052b056ab2f0ff6dfdf2e4f9b633af676c57dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104121990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119581851"
 ---
 # <a name="pkt-attribute"></a>Attributo PKT
 
-Tabella delle informazioni sulle partizioni DFS. Descrive la struttura di una gerarchia di file system distribuito.
+Tabella delle informazioni sulla partizione DFS. Descrive la struttura di una gerarchia file system distribuito gerarchia.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | PKT                                                   |
-| LDAP-Display-Name | pKT                                                   |
+| CN                | Pkt                                                   |
+| Ldap-Display-Name | Pkt                                                   |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.206                                |
-| System-ID-GUID    | 8447f9f1-1027-11d0-a05f-00aa006c33ed                  |
+| System-Id-Guid    | 8447f9f1-1027-11d0-a05f-00aa006c33ed                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Tabella delle informazioni sulle partizioni DFS. Descrive la struttura di una ge
 | ID collegamento                | \-                                   |
 | MAPI-Id                | \-                                   |
 | System-Only            | Falso                                |
-| È a valore singolo       | Vero                                 |
+| Is-Single-Valued       | Vero                                 |
 | Indicizzato             | Falso                                |
 | Nel catalogo globale      | Falso                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | \-                                   |
 | Range-Upper            | \-                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Classi utilizzate in        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Classi usate in        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Tabella delle informazioni sulle partizioni DFS. Descrive la struttura di una ge
 | ID collegamento                | \-                                   |
 | MAPI-Id                | \-                                   |
 | System-Only            | Falso                                |
-| È a valore singolo       | Vero                                 |
+| Is-Single-Valued       | Vero                                 |
 | Indicizzato             | Falso                                |
 | Nel catalogo globale      | Falso                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | \-                                   |
 | Range-Upper            | \-                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Classi utilizzate in        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Classi usate in        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Tabella delle informazioni sulle partizioni DFS. Descrive la struttura di una ge
 | ID collegamento                | \-                                   |
 | MAPI-Id                | \-                                   |
 | System-Only            | Falso                                |
-| È a valore singolo       | Vero                                 |
+| Is-Single-Valued       | Vero                                 |
 | Indicizzato             | Falso                                |
 | Nel catalogo globale      | Falso                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | \-                                   |
 | Range-Upper            | \-                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Classi utilizzate in        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Classi usate in        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Tabella delle informazioni sulle partizioni DFS. Descrive la struttura di una ge
 | ID collegamento                | \-                                   |
 | MAPI-Id                | \-                                   |
 | System-Only            | Falso                                |
-| È a valore singolo       | Vero                                 |
+| Is-Single-Valued       | Vero                                 |
 | Indicizzato             | Falso                                |
 | Nel catalogo globale      | Falso                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | \-                                   |
 | Range-Upper            | \-                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Classi utilizzate in        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Classi usate in        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Tabella delle informazioni sulle partizioni DFS. Descrive la struttura di una ge
 | ID collegamento                | \-                                   |
 | MAPI-Id                | \-                                   |
 | System-Only            | Falso                                |
-| È a valore singolo       | Vero                                 |
+| Is-Single-Valued       | Vero                                 |
 | Indicizzato             | Falso                                |
 | Nel catalogo globale      | Falso                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | \-                                   |
 | Range-Upper            | \-                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Classi utilizzate in        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Classi usate in        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Tabella delle informazioni sulle partizioni DFS. Descrive la struttura di una ge
 | ID collegamento                | \-                                   |
 | MAPI-Id                | \-                                   |
 | System-Only            | Falso                                |
-| È a valore singolo       | Vero                                 |
+| Is-Single-Valued       | Vero                                 |
 | Indicizzato             | Falso                                |
 | Nel catalogo globale      | Falso                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | \-                                   |
 | Range-Upper            | \-                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Classi utilizzate in        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Classi usate in        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 

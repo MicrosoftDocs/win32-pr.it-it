@@ -1,7 +1,7 @@
 ---
-description: Il \_ tipo di dati dell'handle KEYSVCC definisce un handle del servizio Key. Un \_ handle di handle KEYSVCC viene usato dalle funzioni RKeyOpenKeyService e RKeyCloseKeyService.
+description: Il tipo di dati KEYSVCC \_ HANDLE definisce un handle del servizio chiavi. Un handle \_ HANDLE KEYSVCC viene usato dalle funzioni RKeyOpenKeyService e RKeyCloseKeyService.
 ms.assetid: d0fd5184-5c8e-4f96-9ff1-8abd6f718d05
-title: KEYSVCC_HANDLE (Rkeysvcc. h)
+title: KEYSVCC_HANDLE (Rkeysvcc.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1427a4ffd4637e073e517e5df54af72191992d11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 32e34285c6291cb7cb87aeb9095e5261b43999b0eefa82e33704719e7673f1b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119515951"
 ---
-# <a name="keysvcc_handle"></a>\_handle KEYSVCC
+# <a name="keysvcc_handle"></a>KEYSVCC \_ HANDLE
 
-Il tipo di dati dell' **\_ handle KEYSVCC** definisce un handle del servizio Key. Un handle di **\_ handle KEYSVCC** viene usato dalle funzioni [**RKeyOpenKeyService**](rkeyopenkeyservice.md) e [**RKeyCloseKeyService**](rkeyclosekeyservice.md) .
+Il **tipo di dati KEYSVCC \_ HANDLE** definisce un handle del servizio chiavi. Un handle **\_ HANDLE KEYSVCC** viene usato dalle [**funzioni RKeyOpenKeyService**](rkeyopenkeyservice.md) [**e RKeyCloseKeyService.**](rkeyclosekeyservice.md)
 
 
 ```C++
@@ -34,8 +34,8 @@ typedef void* KEYSVCC_HANDLE;
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Rkeysvcc. h</dt> </dl> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Rkeysvcc.h</dt> </dl> |
 
 
 

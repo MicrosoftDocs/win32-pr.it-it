@@ -5,33 +5,33 @@ ms.tgt_platform: multiple
 title: Proprietà di SWbemObjectPath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fccec21e1d5ee829b9ae548d1ba8eb8b7947b11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b30a9592f4a8d7392804a832e3bdd873d67a551cd8ae8ef5297f5827c889a3f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119383061"
 ---
 # <a name="swbemobjectpath-properties"></a>Proprietà di SWbemObjectPath
 
-L'oggetto [**SWbemObjectPath**](swbemobjectpath.md) espone le proprietà seguenti.
+[**L'oggetto SWbemObjectPath**](swbemobjectpath.md) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 -   [**Proprietà Authority**](swbemobjectpath-authority.md)
 -   [**Proprietà della classe**](swbemobjectpath-class.md)
--   [**DisplayName (proprietà)**](swbemobjectpath-displayname.md)
--   [**Classe di proprietà**](swbemobjectpath-isclass.md)
--   [**Proprietà Singleton**](swbemobjectpath-issingleton.md)
--   [**Proprietà Keys**](swbemobjectpath-keys.md)
--   [**Proprietà delle impostazioni locali**](swbemobjectpath-locale.md)
+-   [**DisplayName - proprietà**](swbemobjectpath-displayname.md)
+-   [**IsClass - proprietà**](swbemobjectpath-isclass.md)
+-   [**IsSingleton - proprietà**](swbemobjectpath-issingleton.md)
+-   [**Keys - proprietà**](swbemobjectpath-keys.md)
+-   [**Proprietà Delle impostazioni locali**](swbemobjectpath-locale.md)
 -   [**proprietà spazio dei nomi**](swbemobjectpath-namespace.md)
--   [**Proprietà ParentNamespace**](swbemobjectpath-parentnamespace.md)
+-   [**ParentNamespace - proprietà**](swbemobjectpath-parentnamespace.md)
 -   [**Proprietà Path**](swbemobjectpath-path.md)
--   [**Proprietà RelPath**](swbemobjectpath-relpath.md)
--   [**Proprietà di sicurezza \_**](swbemobjectpath-security-.md)
--   [**Proprietà del server**](swbemobjectpath-server.md)
--   [**Proprietà SetAsClass**](swbemobjectpath-setasclass.md)
+-   [**Proprietà Relpath**](swbemobjectpath-relpath.md)
+-   [**Proprietà \_ di sicurezza**](swbemobjectpath-security-.md)
+-   [**Proprietà server**](swbemobjectpath-server.md)
+-   [**SetAsClass - proprietà**](swbemobjectpath-setasclass.md)
 
  
 

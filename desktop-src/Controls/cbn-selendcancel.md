@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica CBN_SELENDCANCEL (winuser. h)
-description: Inviato quando l'utente seleziona un elemento, ma seleziona un altro controllo o chiude la finestra di dialogo. Indica che la selezione iniziale dell'utente deve essere ignorata. La finestra padre della casella combinata riceve questo codice di notifica tramite il \_ messaggio di comando WM.
+title: CBN_SELENDCANCEL di notifica (Winuser.h)
+description: Inviato quando l'utente seleziona un elemento, ma quindi seleziona un altro controllo o chiude la finestra di dialogo. Indica che la selezione iniziale dell'utente deve essere ignorata. La finestra padre della casella combinata riceve questo codice di notifica tramite il messaggio WM \_ COMMAND.
 ms.assetid: ac8d6d9f-4455-42d6-b0f1-5aaa55b8ee42
 keywords:
-- Controlli di Windows per il codice di notifica CBN_SELENDCANCEL
+- CBN_SELENDCANCEL del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da5b588fbd55af9dfa66a03c7912d4918821168b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 869168bfb970df9afc6399e6b1ec40e02b9ccdeaa2f2fef93fcbd86c16e9c6d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119314401"
 ---
-# <a name="cbn_selendcancel-notification-code"></a>\_Codice di notifica SELENDCANCEL CBN
+# <a name="cbn_selendcancel-notification-code"></a>Codice di notifica \_ CBN SELENDCANCEL
 
-Inviato quando l'utente seleziona un elemento, ma seleziona un altro controllo o chiude la finestra di dialogo. Indica che la selezione iniziale dell'utente deve essere ignorata. La finestra padre della casella combinata riceve questo codice di notifica tramite il messaggio di [**\_ comando WM**](/windows/desktop/menurc/wm-command) .
+Inviato quando l'utente seleziona un elemento, ma quindi seleziona un altro controllo o chiude la finestra di dialogo. Indica che la selezione iniziale dell'utente deve essere ignorata. La finestra padre della casella combinata riceve questo codice di notifica tramite il [**messaggio WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ CBN_SELENDCANCEL
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore di controllo della casella combinata. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica il codice di notifica.
+La [**parola chiave LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore di controllo della casella combinata. HiWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) il codice di notifica.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Handle per la casella combinata.
 
 ## <a name="remarks"></a>Commenti
 
-In una casella combinata con lo [**stile \_ semplice CBS**](combo-box-styles.md) , il codice di notifica di CBN \_ SELENDCANCEL non viene inviato. Il codice di notifica di [CBN \_ SELENDOK](cbn-selendok.md) viene inviato immediatamente prima di ogni codice di notifica [ \_ selChange CBN](cbn-selchange.md) .
+In una casella combinata con lo [**stile CBS \_ SIMPLE,**](combo-box-styles.md) il codice di notifica CBN \_ SELENDCANCEL non viene inviato. Il [codice di notifica \_ CBN SELENDOK](cbn-selendok.md) viene inviato immediatamente prima di ogni codice di notifica [ \_ CBN SELCHANGE.](cbn-selchange.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ In una casella combinata con lo [**stile \_ semplice CBS**](combo-box-styles.md)
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -76,10 +76,10 @@ In una casella combinata con lo [**stile \_ semplice CBS**](combo-box-styles.md)
 **Riferimento**
 </dt> <dt>
 
-[\_selChange CBN](cbn-selchange.md)
+[CBN \_ SELCHANGE](cbn-selchange.md)
 </dt> <dt>
 
-[\_SELENDOK CBN](cbn-selendok.md)
+[CBN \_ SELENDOK](cbn-selendok.md)
 </dt> <dt>
 
 **Altre risorse**
@@ -91,7 +91,7 @@ In una casella combinata con lo [**stile \_ semplice CBS**](combo-box-styles.md)
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**\_comando WM**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

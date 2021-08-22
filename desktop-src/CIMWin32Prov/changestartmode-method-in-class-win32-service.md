@@ -1,5 +1,5 @@
 ---
-description: Modifica la modalità di avvio di un \_ servizio Win32.
+description: Modifica la modalità di avvio di un servizio \_ Win32.
 ms.assetid: 4fd6a1eb-d2e0-4172-843d-24ae89c5bfcf
 ms.tgt_platform: multiple
 title: Metodo ChangeStartMode della classe Win32_Service (provider WMI CIMWin32)
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 06a4692996354614a685471f98b0243fc1091433
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9444ed76fac18ce018c0ab286966b9fa071dc8108db0f8456271545e19ab1fc9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322941"
 ---
 # <a name="changestartmode-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Metodo ChangeStartMode della classe Win32_Service (provider WMI CIMWin32)
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **ChangeStartMode** modifica la modalità di avvio di un [**\_ servizio Win32**](win32-service.md).
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **ChangeStartMode** modifica la modalità di avvio di un [**servizio \_ Win32.**](win32-service.md)
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ uint32 ChangeStartMode(
 
 <dl> <dt>
 
-*StartMode* \[ in\]
+*StartMode* \[ Pollici\]
 </dt> <dd>
 
-Modalità di avvio del servizio di base di Windows.
+Modalità di avvio del Windows di base.
 
 <dt>
 
 <span id="Boot_Start"></span><span id="boot_start"></span><span id="BOOT_START"></span>
 
-<span id="Boot_Start"></span><span id="boot_start"></span><span id="BOOT_START"></span>Avvio **avvio** ("avvio")
+<span id="Boot_Start"></span><span id="boot_start"></span><span id="BOOT_START"></span>**Avvio ("Avvio")**
 
 
 </dt> <dd>
@@ -62,7 +62,7 @@ Driver di dispositivo avviato dal caricatore del sistema operativo. Questo valor
 
 <span id="System"></span><span id="system"></span><span id="SYSTEM"></span>
 
-<span id="System"></span><span id="system"></span><span id="SYSTEM"></span>**Sistema** ("sistema")
+<span id="System"></span><span id="system"></span><span id="SYSTEM"></span>**Sistema** ("Sistema")
 
 
 </dt> <dd>
@@ -73,7 +73,7 @@ Driver di dispositivo avviato dal processo di inizializzazione del sistema opera
 
 <span id="Auto_Start"></span><span id="auto_start"></span><span id="AUTO_START"></span>
 
-<span id="Auto_Start"></span><span id="auto_start"></span><span id="AUTO_START"></span>**Avvio automatico** ("automatico")
+<span id="Auto_Start"></span><span id="auto_start"></span><span id="AUTO_START"></span>**Avvio automatico** ("Automatico")
 
 
 </dt> <dd>
@@ -89,13 +89,13 @@ Servizio da avviare automaticamente da Gestione controllo servizi durante l'avvi
 
 </dt> <dd>
 
-Servizio che deve essere avviato da Gestione controllo servizi quando un processo chiama il metodo [**StartService**](startservice-method-in-class-win32-service.md) .
+Servizio che deve essere avviato da Gestione controllo servizi quando un processo chiama il [**metodo StartService.**](startservice-method-in-class-win32-service.md)
 
 </dd> <dt>
 
 <span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>
 
-<span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>**Disabilitato** ("disabilitato")
+<span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>**Disabilitato** ("Disabilitato")
 
 
 </dt> <dd>
@@ -106,7 +106,7 @@ Servizio che non può più essere avviato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per ulteriori codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per altri codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -160,7 +160,7 @@ Il codice di controllo richiesto non è valido o non è accettabile per il servi
 
 5
 
-Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](win32-baseservice.md).**Proprietà state** ) è uguale a 0, 1 o 2.
+Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](win32-baseservice.md).**State** ) è uguale a 0, 1 o 2.
 
 </dd> <dt>
 
@@ -173,7 +173,7 @@ Il servizio non è stato avviato.
 
 </dd> <dt>
 
-**Timeout richiesta servizio**
+**Timeout della richiesta di servizio**
 </dt> <dd>
 
 7
@@ -196,7 +196,7 @@ Errore sconosciuto durante l'avvio del servizio.
 
 9
 
-Impossibile trovare il percorso di directory del file eseguibile del servizio.
+Impossibile trovare il percorso della directory del file eseguibile del servizio.
 
 </dd> <dt>
 
@@ -218,7 +218,7 @@ Il database a cui aggiungere il nuovo servizio è bloccato.
 
 </dd> <dt>
 
-**Dipendenza servizio eliminata**
+**Dipendenza del servizio eliminata**
 </dt> <dd>
 
 12
@@ -259,20 +259,20 @@ Il servizio non dispone delle credenziali di autenticazione corrette per l'esecu
 
 16
 
-Questo servizio verrà rimosso dal sistema.
+Questo servizio viene rimosso dal sistema.
 
 </dd> <dt>
 
-**Servizio senza thread**
+**Nessun thread del servizio**
 </dt> <dd>
 
 17
 
-Il servizio non dispone di un thread di esecuzione.
+Il servizio non ha thread di esecuzione.
 
 </dd> <dt>
 
-**Stato dipendenza circolare**
+**Dipendenza circolare dello stato**
 </dt> <dd>
 
 18
@@ -281,7 +281,7 @@ Il servizio ha dipendenze circolari all'avvio.
 
 </dd> <dt>
 
-**Stato nome duplicato**
+**Nome duplicato dello stato**
 </dt> <dd>
 
 19
@@ -290,7 +290,7 @@ Un servizio è in esecuzione con lo stesso nome.
 
 </dd> <dt>
 
-**Stato nome non valido**
+**Stato Nome non valido**
 </dt> <dd>
 
 20
@@ -299,25 +299,25 @@ Il nome del servizio contiene caratteri non validi.
 
 </dd> <dt>
 
-**Stato parametro non valido**
+**Parametro stato non valido**
 </dt> <dd>
 
 21
 
-Sono stati passati parametri non validi al servizio.
+Al servizio sono stati passati parametri non validi.
 
 </dd> <dt>
 
-**Stato account del servizio non valido**
+**Stato Account del servizio non valido**
 </dt> <dd>
 
 22
 
-L'account con cui viene eseguito il servizio non è valido o non dispone delle autorizzazioni necessarie per eseguire il servizio.
+L'account con cui viene eseguito il servizio non è valido o non dispone delle autorizzazioni per eseguire il servizio.
 
 </dd> <dt>
 
-**Il servizio stato esiste**
+**Il servizio di stato esiste**
 </dt> <dd>
 
 23
@@ -344,7 +344,7 @@ Il servizio è attualmente sospeso nel sistema.
 
 ## <a name="examples"></a>Esempio
 
-La seguente [modifica StartMode di un esempio di servizio](https://Gallery.TechNet.Microsoft.Com/6d0f06ed-f840-4228-ad2d-e16ebe6a3aed) PowerShell, Estratto dalla raccolta TechNet, modifica la modalità di avvio di un servizio.
+[L'esempio change startmode](https://Gallery.TechNet.Microsoft.Com/6d0f06ed-f840-4228-ad2d-e16ebe6a3aed) di un servizio di PowerShell, estratto da TechNet Gallery, modifica la modalità di avvio di un servizio.
 
 
 ```PowerShell
@@ -368,7 +368,7 @@ ELSE
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -380,7 +380,7 @@ ELSE
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Servizio Win32**](win32-service.md)
+[**Servizio \_ Win32**](win32-service.md)
 </dt> <dt>
 
 [Attività WMI: Servizi](/windows/desktop/WmiSdk/wmi-tasks--services)

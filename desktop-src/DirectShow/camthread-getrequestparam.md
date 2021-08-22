@@ -1,7 +1,7 @@
 ---
 description: Il metodo GetRequestParam recupera la richiesta più recente.
 ms.assetid: f5bf4935-29ea-45b9-a57e-9fdcd9cde20a
-title: Metodo CAMThread. GetRequestParam (Wxutil. h)
+title: Metodo CAMThread.GetRequestParam (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2dd6584123663bb36f1db4771fb3f86d7ac4f5cd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 54c511fdb68bb6ee9372530d9e19290342a57fbcc5817148613d20fd8afe029b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119384921"
 ---
-# <a name="camthreadgetrequestparam-method"></a>CAMThread. GetRequestParam, metodo
+# <a name="camthreadgetrequestparam-method"></a>Metodo CAMThread.GetRequestParam
 
 Il `GetRequestParam` metodo recupera la richiesta più recente.
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore del parametro passato più di recente al metodo [**CAMThread:: CallWorker**](camthread-callworker.md) .
+Restituisce il valore del parametro passato più di recente al [**metodo CAMThread::CallWorker.**](camthread-callworker.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce il valore del parametro passato più di recente al metodo [**CAMThre
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

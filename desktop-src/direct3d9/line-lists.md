@@ -1,27 +1,27 @@
 ---
-description: Un elenco di righe è un elenco di segmenti di linea rettilinei isolati.
+description: Un elenco di linee è un elenco di segmenti rette isolate.
 ms.assetid: bb02b3d6-f30f-4f2b-8b40-a7e37faf524a
 title: Elenchi di righe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b27bd58ea2de6b5944b8511e99154c50f671439
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6f06ca68e3fefab1217e77bbf41bc30aa42dac9631b70480fe4bf0a98d38d913
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119606797"
 ---
 # <a name="line-lists"></a>Elenchi di righe
 
-Un elenco di righe è un elenco di segmenti di linea rettilinei isolati. Gli elenchi di linee sono utili per attività quali l'aggiunta di nevischio o una pioggia intensa a una scena 3D. Le applicazioni creano un elenco di righe riempiendo una matrice di vertici. Si noti che il numero di vertici in un elenco di righe deve essere un numero pari maggiore o uguale a due.
+Un elenco di linee è un elenco di segmenti rette isolate. Gli elenchi di righe sono utili per attività come l'aggiunta di neet o di forte pioggia a una scena 3D. Le applicazioni creano un elenco di righe compilando una matrice di vertici. Si noti che il numero di vertici in un elenco di righe deve essere un numero pari maggiore o uguale a due.
 
-La figura seguente mostra un elenco di righe di cui è stato eseguito il rendering.
+La figura seguente mostra un elenco di righe sottoposto a rendering.
 
 ![illustrazione di un elenco di righe](images/linelst.png)
 
-È possibile applicare materiali e trame a un elenco di righe. I colori del materiale o della trama vengono visualizzati solo lungo le linee disegnate, non in qualsiasi punto tra le linee.
+È possibile applicare materiali e trame a un elenco di righe. I colori nel materiale o nella trama vengono visualizzati solo lungo le linee disegnate, non in qualsiasi punto tra le linee.
 
-Nel codice seguente viene illustrato come creare vertici per questo elenco di righe.
+Il codice seguente illustra come creare vertici per questo elenco di righe.
 
 
 ```
@@ -43,7 +43,7 @@ CUSTOMVERTEX Vertices[] =
 
 
 
-L'esempio di codice seguente illustra come eseguire il rendering di un elenco di righe in Direct3D 9 usando [**IDirect3DDevice9::D rawprimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive).
+L'esempio di codice seguente illustra come eseguire il rendering di un elenco di righe in Direct3D 9 usando [**IDirect3DDevice9::D rawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive).
 
 
 ```

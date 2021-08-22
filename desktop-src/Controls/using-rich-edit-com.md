@@ -1,44 +1,44 @@
 ---
-title: Come utilizzare OLE nei controlli Rich Edit
-description: In questa sezione vengono fornite informazioni sull'utilizzo di Object Linking and Embedding (OLE) in controlli Rich Edit.
+title: Come usare OLE nei controlli Rich Edit
+description: Questa sezione contiene informazioni sull'uso del collegamento e dell'incorporamento di oggetti (OLE) nei controlli Rich Edit.
 ms.assetid: bfcecbf5-cc35-47b8-a713-7e5fd03f60cc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7868bd62044c87765a25f6033499460ed044e57
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: 9d825a9876005cadb20e4fc7717f766582ab12224f4f86995319357875d24230
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "104117490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119311681"
 ---
-# <a name="how-to-use-ole-in-rich-edit-controls"></a>Come utilizzare OLE nei controlli Rich Edit
+# <a name="how-to-use-ole-in-rich-edit-controls"></a>Come usare OLE nei controlli Rich Edit
 
-In questa sezione vengono fornite informazioni sull'utilizzo di Object Linking and Embedding (OLE) in controlli Rich Edit.
+Questa sezione contiene informazioni sull'uso del collegamento e dell'incorporamento di oggetti (OLE) nei controlli Rich Edit.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 ### <a name="use-a-rich-edit-interface"></a>Usare un'interfaccia Rich Edit
 
-I controlli Rich Edit espongono alcune funzionalità tramite le interfacce Component Object Model (COM). Ottenendo un'interfaccia da un controllo, si ottiene la possibilità di usare altri oggetti all'interno del controllo. È possibile ottenere questa interfaccia inviando il [**messaggio \_ GETOLEINTERFACE em**](em-getoleinterface.md) . Dall'interfaccia [**IRichEditOle**](/windows/desktop/api/Richole/nn-richole-iricheditole) è quindi possibile ottenere le interfacce utilizzate nel modello a [oggetti di testo](text-object-model.md).
+I controlli Rich Edit espongono alcune funzionalità tramite Component Object Model (COM). Ottenendo un'interfaccia da un controllo, si ottiene la possibilità di usare altri oggetti all'interno del controllo. È possibile ottenere questa interfaccia inviando il [**messaggio EM \_ GETOLEINTERFACE.**](em-getoleinterface.md) [**Dall'interfaccia IRichEditOle**](/windows/desktop/api/Richole/nn-richole-iricheditole) è quindi possibile ottenere le interfacce usate nel modello a [oggetti di testo.](text-object-model.md)
 
-Un'altra interfaccia, [**IRichEditOleCallback**](/windows/desktop/api/Richole/nn-richole-iricheditolecallback), viene implementata dalle applicazioni per definire il comportamento del controllo quando interagisce con gli oggetti.
+Un'altra [**interfaccia, IRichEditOleCallback,**](/windows/desktop/api/Richole/nn-richole-iricheditolecallback)viene implementata dalle applicazioni per definire il comportamento del controllo quando interagisce con gli oggetti.
 
 ### <a name="insert-an-object-into-a-rich-edit-control"></a>Inserire un oggetto in un controllo Rich Edit
 
-Nell'esempio di codice seguente viene inserito un oggetto file in un controllo Rich Edit. Se un programma è associato al tipo di file nel computer dell'utente (ad esempio, Microsoft Excel per un file xls), il contenuto del file viene visualizzato nel controllo; in caso contrario, viene visualizzata un'icona.
+Nell'esempio di codice seguente viene inserito un oggetto file in un controllo Rich Edit. Se un programma è associato al tipo di file nel computer dell'utente (ad esempio, Microsoft Excel per un file .xls), il contenuto del file viene visualizzato nel controllo . In caso contrario, viene visualizzata un'icona.
 
-1.  Ottenere l'interfaccia [**IRichEditOle**](/windows/desktop/api/Richole/nn-richole-iricheditole) .
+1.  Ottenere [**l'interfaccia IRichEditOle.**](/windows/desktop/api/Richole/nn-richole-iricheditole)
 
     ```
     BOOL InsertObject(HWND hRichEdit, LPCTSTR pszFileName)
@@ -53,7 +53,7 @@ Nell'esempio di codice seguente viene inserito un oggetto file in un controllo R
 
     
 
-2.  Creazione di un archivio strutturato.
+2.  Creare un archivio strutturato.
 
     ```
         LPLOCKBYTES pLockBytes = NULL;
@@ -95,7 +95,7 @@ Nell'esempio di codice seguente viene inserito un oggetto file in un controllo R
 
     
 
-5.  Creare l'oggetto e recuperare la relativa interfaccia **IUnknown** .
+5.  Creare l'oggetto e recuperare la **relativa interfaccia IUnknown.**
 
     ```
         LPUNKNOWN pUnk;
@@ -117,7 +117,7 @@ Nell'esempio di codice seguente viene inserito un oggetto file in un controllo R
 
     
 
-6.  Ottenere l'interfaccia IOleObject per l'oggetto.
+6.  Ottenere l'interfaccia IOleObject per l'oggetto .
 
     ```
         LPOLEOBJECT pObject;
@@ -131,7 +131,7 @@ Nell'esempio di codice seguente viene inserito un oggetto file in un controllo R
 
     
 
-7.  Per assicurarsi che i riferimenti vengano conteggiati correttamente, inviare una notifica all'oggetto che contiene.
+7.  Per assicurarsi che i riferimenti vengano conteggiati correttamente, notificare all'oggetto che è contenuto.
 
     ```
         OleSetContainedObject(pObject, TRUE);
@@ -165,7 +165,7 @@ Nell'esempio di codice seguente viene inserito un oggetto file in un controllo R
 
     
 
-9.  Sposta il punto di inserimento alla fine del testo e aggiunge un ritorno a capo.
+9.  Spostare il punto di controllo alla fine del testo e aggiungere un ritorno a capo.
 
     ```
         SendMessage(hRichEdit, EM_SETSEL, 0, -1);
@@ -181,7 +181,7 @@ Nell'esempio di codice seguente viene inserito un oggetto file in un controllo R
 
     
 
-10. Inserire l'oggetto.
+10. Inserire l'oggetto .
 
     ```
         hr = pRichEditOle->InsertObject(&reobject);
@@ -207,13 +207,13 @@ Nell'esempio di codice seguente viene inserito un oggetto file in un controllo R
 
 ### <a name="using-iricheditolecallback"></a>Uso di IRichEditOleCallback
 
-Le applicazioni implementano l'interfaccia [**IRichEditOleCallback**](/windows/desktop/api/Richole/nn-richole-iricheditolecallback) per rispondere alle query o azioni correlate a OLE eseguite da un controllo Rich Edit. Associare l'implementazione dell'interfaccia al controllo inviando un messaggio [**\_ SETOLECALLBACK em**](em-setolecallback.md) . Il controllo chiama quindi i metodi sull'implementazione dell'interfaccia nel modo appropriato.
+Le applicazioni [**implementano l'interfaccia IRichEditOleCallback**](/windows/desktop/api/Richole/nn-richole-iricheditolecallback) per rispondere alle query o alle azioni correlate a OLE eseguite da un controllo Rich Edit. L'implementazione dell'interfaccia viene associata al controllo inviando un [**messaggio EM \_ SETOLECALLBACK.**](em-setolecallback.md) Il controllo chiama quindi i metodi sull'implementazione dell'interfaccia in base alle esigenze.
 
-Ad esempio, [**QueryAcceptData**](/windows/desktop/api/Richole/nf-richole-iricheditolecallback-queryacceptdata) viene chiamato quando l'utente tenta di trascinare o incollare un oggetto nel controllo. Se l'applicazione può accettare i dati, l'implementazione del metodo restituisce S \_ OK. in caso contrario, restituisce un codice di errore. Il metodo può anche eseguire altre azioni, ad esempio l'avviso che indica all'utente che i file di tale tipo non possono essere inseriti nel controllo.
+Ad esempio, [**QueryAcceptData**](/windows/desktop/api/Richole/nf-richole-iricheditolecallback-queryacceptdata) viene chiamato quando l'utente tenta di trascinare o incollare un oggetto nel controllo. Se l'applicazione può accettare i dati, l'implementazione del metodo restituisce S \_ OK; in caso contrario, restituisce un codice di errore. Il metodo potrebbe anche eseguire un'altra azione, ad esempio avvisare l'utente che non è possibile inserire file di quel tipo nel controllo.
 
-## <a name="complete-insertobject-example-function"></a>Funzione di esempio InsertObject completa
+## <a name="complete-insertobject-example-function"></a>Completare la funzione di esempio InsertObject
 
-Nell'esempio di codice riportato di seguito vengono illustrati i frammenti di codice precedenti combinati in un'unica funzione completa che include la gestione degli errori.
+L'esempio di codice seguente illustra i frammenti di codice precedenti combinati in un'unica funzione completa che include la gestione degli errori.
 
 
 ```C++
@@ -330,15 +330,15 @@ BOOL InsertObject(HWND hRichEdit, LPCTSTR pszFileName)
 
 <dl> <dt>
 
-[Uso di controlli Rich Edit](using-rich-edit-controls.md)
+[Uso dei controlli Rich Edit](using-rich-edit-controls.md)
 </dt> <dt>
 
-[Demo sui controlli comuni di Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demo di controlli comuni (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

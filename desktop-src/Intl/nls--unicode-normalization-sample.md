@@ -1,23 +1,23 @@
 ---
-description: Nell'applicazione di esempio descritta in questo argomento viene illustrata la rappresentazione delle stringhe utilizzando la normalizzazione Unicode.
+description: L'applicazione di esempio descritta in questo argomento illustra la rappresentazione delle stringhe usando la normalizzazione Unicode.
 ms.assetid: f1f789f9-f12b-465c-8c84-33a8efa6fbc5
-title: 'NLS: esempio di normalizzazione Unicode'
+title: 'NLS: Esempio di normalizzazione Unicode'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92e825e81b9d42bc3c5066ec5cdfd72e1812cbd6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 895a41129bcdad14a89b34b5adce9cf5337ba4a51e108d0f62ee74b6e88a9003
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147114"
 ---
-# <a name="nls-unicode-normalization-sample"></a>NLS: esempio di normalizzazione Unicode
+# <a name="nls-unicode-normalization-sample"></a>NLS: Esempio di normalizzazione Unicode
 
-Nell'applicazione di esempio descritta in questo argomento viene illustrata la rappresentazione delle stringhe utilizzando la [normalizzazione Unicode](using-unicode-normalization-to-represent-strings.md).
+L'applicazione di esempio descritta in questo argomento illustra la rappresentazione delle stringhe usando [la normalizzazione Unicode.](using-unicode-normalization-to-represent-strings.md)
 
-L'applicazione di esempio chiama tutti e quattro i form di normalizzazione Unicode con la stessa stringa di input. Viene quindi effettuata una chiamata con Unicode non valido per illustrare il funzionamento dell'indice del codice carattere errato. Infine, l'applicazione passa una stringa che si espande in modo anomalo, richiedendo più chiamate di normalizzazione di stringa a per ottenere una dimensione del buffer appropriata.
+L'applicazione di esempio chiama tutti e quattro i formati di normalizzazione Unicode con la stessa stringa di input. Viene quindi effettuata una chiamata con Unicode non valido per illustrare il funzionamento dell'indice del codice di caratteri non validi. Infine, l'applicazione passa una stringa che si espande in modo anomalo, richiedendo più chiamate di normalizzazione delle stringhe a per ottenere una dimensione del buffer appropriata.
 
-In questo esempio vengono illustrate le funzioni di NLS API seguenti:
+Questo esempio illustra le funzioni NLS API seguenti:
 
 -   [**IsNormalizedString**](/windows/desktop/api/Winnls/nf-winnls-isnormalizedstring)
 -   [**NormalizeString**](/windows/desktop/api/Winnls/nf-winnls-normalizestring)

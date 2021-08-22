@@ -1,9 +1,9 @@
 ---
-title: funzione gluBeginCurve (Glu. h)
-description: Le funzioni gluBeginCurve e gluEndCurve delimitano una definizione di curva B-spline (NURBS) razionale non uniforme. | funzione gluBeginCurve (Glu. h)
+title: Funzione gluBeginCurve (Glu.h)
+description: Le funzioni gluBeginCurve e gluEndCurve delimitano una definizione di curva NURBS (Non-Uniform Rational B-Spline). | Funzione gluBeginCurve (Glu.h)
 ms.assetid: f7f2e765-1a07-4faa-940c-9cb957dd54d4
 keywords:
-- funzione gluBeginCurve OpenGL
+- Funzione gluBeginCurve OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4e17bd88cfcb49801450ead865c437843d179b5
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 171c6ce95acf7592fcb2c3badccfeb9f2c5d68413f963f7b5043ec63502ee720
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119489741"
 ---
-# <a name="glubegincurve-function"></a>gluBeginCurve (funzione)
+# <a name="glubegincurve-function"></a>Funzione gluBeginCurve
 
-Le funzioni **gluBeginCurve** e [**gluEndCurve**](gluendcurve.md) delimitano una definizione di curva B-spline ([NURBS](using-nurbs-curves-and-surfaces.md)) razionale non uniforme.
+Le **funzioni gluBeginCurve** e [**gluEndCurve**](gluendcurve.md) delimitano una definizione di curva B-Spline razionale non uniforme [(NURBS).](using-nurbs-curves-and-surfaces.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,10 +40,10 @@ void WINAPI gluBeginCurve(
 
 <dl> <dt>
 
-*juje* 
+*nobj* 
 </dt> <dd>
 
-Oggetto NURBS (creato con [**gluNewNurbsRenderer**](glunewnurbsrenderer.md)).
+Oggetto NURBS (creato con [**gluNewNurbsRenderer).**](glunewnurbsrenderer.md)
 
 </dd> </dl>
 
@@ -53,13 +53,13 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Usare **gluBeginCurve** per contrassegnare l'inizio di una definizione di curva NURBS. Dopo la chiamata a **gluBeginCurve**, effettuare una o più chiamate a [**gluNurbsCurve**](glunurbscurve.md) per definire gli attributi della curva. Esattamente una delle chiamate a **gluNurbsCurve** deve avere un tipo di curva di GL \_ Mappa1 \_ Vertex \_ 3 o GL \_ Mappa1 \_ Vertex \_ 4. Per contrassegnare la fine della definizione della curva NURBS, chiamare [**gluEndCurve**](gluendcurve.md).
+Usare **gluBeginCurve per** contrassegnare l'inizio di una definizione di curva NURBS. Dopo aver **chiamato gluBeginCurve,** effettuare una o più chiamate a [**gluNurbsCurve**](glunurbscurve.md) per definire gli attributi della curva. Esattamente una delle chiamate a **gluNurbsCurve** deve avere un tipo di curva GL \_ MAP1 \_ VERTEX \_ 3 o GL \_ MAP1 \_ VERTEX \_ 4. Per contrassegnare la fine della definizione della curva NURBS, chiamare [**gluEndCurve**](gluendcurve.md).
 
-Gli analizzatori OpenGL vengono usati per eseguire il rendering della curva NURBS come una serie di segmenti di linea. Lo stato dell'analizzatore viene mantenuto durante il rendering con [**glPushAttrib**](glpushattrib.md) (GL \_ eval \_ bit) e [**glPopAttrib**](glpopattrib.md). Per informazioni sullo stato che queste chiamate conservano, vedere **glPushAttrib**.
+Gli analizzatori OpenGL vengono usati per eseguire il rendering della curva NURBS come una serie di segmenti di linea. Lo stato dell'analizzatore viene mantenuto durante il rendering [**con glPushAttrib**](glpushattrib.md) (GL \_ EVAL \_ BIT) e [**glPopAttrib**](glpopattrib.md). Per informazioni esattamente sullo stato che queste chiamate mantengono, vedere **glPushAttrib.**
 
 ## <a name="examples"></a>Esempio
 
-Le funzioni seguenti eseguono il rendering di una curva NURBS con trama con normali; le coordinate di trama e le normali vengono specificate anche come curve NURBS:
+Le funzioni seguenti eseguono il rendering di una curva NURBS con trame con normali. Le coordinate e le normali della trama vengono specificate anche come curve NURBS:
 
 ``` syntax
 gluBeginCurve(nobj); 
@@ -77,8 +77,8 @@ gluEndCurve(nobj);
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

@@ -1,7 +1,7 @@
 ---
-description: Ottiene un puntatore a una matrice di descrizioni di costanti nella tabella delle costanti.
+description: Ottiene un puntatore a una matrice di descrizioni costanti nella tabella delle costanti.
 ms.assetid: bd407fd6-b1cc-4197-ae98-1c2ca74d2ad0
-title: 'Metodo ID3DXConstantTable:: GetConstantDesc (D3DX9Shader. h)'
+title: Metodo ID3DXConstantTable::GetConstantDesc (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e5574c72fabd7561da0c60c903ae815faaebbfd5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8462ccfbbf306da08c67d460584a470d82301a5bda5f95a1ad09b2062702ee62
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607211"
 ---
-# <a name="id3dxconstanttablegetconstantdesc-method"></a>Metodo ID3DXConstantTable:: GetConstantDesc
+# <a name="id3dxconstanttablegetconstantdesc-method"></a>Metodo ID3DXConstantTable::GetConstantDesc
 
-Ottiene un puntatore a una matrice di descrizioni di costanti nella tabella delle costanti.
+Ottiene un puntatore a una matrice di descrizioni costanti nella tabella delle costanti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ HRESULT GetConstantDesc(
 
 <dl> <dt>
 
-*hConstant* \[ in\]
+*hConstant* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
@@ -51,21 +51,21 @@ Identificatore univoco di una costante. Vedere [D3DXHANDLE](dx9-graphics-referen
 
 </dd> <dt>
 
-*pDesc* \[ in uscita\]
+*pDesc* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **D3DXCONSTANT \_ desc**](d3dxconstant-desc.md)\***
+Tipo: **[ **D3DXCONSTANT \_ DESC**](d3dxconstant-desc.md)\***
 
-Restituisce un puntatore a una matrice di descrizioni. Vedere [**D3DXCONSTANT \_ desc**](d3dxconstant-desc.md).
+Restituisce un puntatore a una matrice di descrizioni. Vedere [**D3DXCONSTANT \_ DESC**](d3dxconstant-desc.md).
 
 </dd> <dt>
 
-*pcount* \[ in uscita\]
+*pCount* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-L'input specificato deve corrispondere alla dimensione massima della matrice. L'output è il numero di elementi che vengono compilati nella matrice quando la funzione restituisce.
+L'input fornito deve essere la dimensione massima della matrice. L'output è il numero di elementi che vengono compilati nella matrice quando la funzione restituisce .
 
 </dd> </dl>
 
@@ -77,9 +77,9 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-**ID3DXConstantTable:: GetConstantDesc** a volte restituisce una [**\_ Descrizione D3DXCONSTANT**](d3dxconstant-desc.md) con un \_ conteggio dei registri pari a 0. Questa operazione viene eseguita con una costante presente in più di un \_ set di registri, ma in tale set di registri non è allocato spazio.
+**ID3DXConstantTable::GetConstantDesc** restituisce talvolta un [**D3DXCONSTANT \_ DESC**](d3dxconstant-desc.md) con un numero di registri \_ 0. Questa operazione si verifica quando una costante viene visualizzata in più set di registri, ma non dispone di spazio \_ in tale set di registri allocato.
 
-Poiché un campionatore può apparire più di una volta in una tabella costante, questo metodo può restituire una matrice di descrizioni, ognuna con un indice di registro diverso.
+Poiché un campionatore può essere visualizzato più volte in una tabella costante, questo metodo può restituire una matrice di descrizioni, ognuna con un indice di registro diverso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -87,8 +87,8 @@ Poiché un campionatore può apparire più di una volta in una tabella costante,
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
@@ -99,7 +99,7 @@ Poiché un campionatore può apparire più di una volta in una tabella costante,
 [ID3DXConstantTable](id3dxconstanttable.md)
 </dt> <dt>
 
-[**ID3DXConstantTable:: getdesc**](id3dxconstanttable--getdesc.md)
+[**ID3DXConstantTable::GetDesc**](id3dxconstanttable--getdesc.md)
 </dt> </dl>
 
  

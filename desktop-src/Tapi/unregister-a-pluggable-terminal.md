@@ -1,19 +1,19 @@
 ---
 description: In generale, questo metodo verrà chiamato da DllUnregisterServer. Il codice di esempio seguente può essere inserito nel codice per DllUnregisterServer.
 ms.assetid: a5567c3b-edc0-427a-9751-ba221611e92c
-title: Annulla la registrazione di un terminale collegabile
+title: Annullare la registrazione di un terminale collegabile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb53f27dc7b468fd4288fd407faee00ab1ece8ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3068cd6d749dda2f1b6618672a1aabaace72ba6c3ef137c1c47952209c87f9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119518111"
 ---
-# <a name="unregister-a-pluggable-terminal"></a>Annulla la registrazione di un terminale collegabile
+# <a name="unregister-a-pluggable-terminal"></a>Annullare la registrazione di un terminale collegabile
 
-In generale, questo metodo verrà chiamato da **DllUnregisterServer**. Il codice di esempio seguente può essere inserito nel codice per **DllUnregisterServer**.
+In generale, questo metodo verrà chiamato da **DllUnregisterServer.** Il codice di esempio seguente può essere inserito nel codice per **DllUnregisterServer**.
 
 ``` syntax
 ITPluggableTerminalClassRegistration* pTerminal;

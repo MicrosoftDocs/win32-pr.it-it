@@ -1,9 +1,9 @@
 ---
-title: Visualizza minHeight
-description: L'attributo minHeight specifica o recupera l'altezza minima in pixel della visualizzazione durante il ridimensionamento.
+title: VIEW.minHeight
+description: L'attributo minHeight specifica o recupera l'altezza minima in pixel dell'elemento VIEW durante il ridimensionamento.
 ms.assetid: e9a29642-e09d-40f8-9c2b-86be9f509089
 keywords:
-- Visualizza Media Player Windows minHeight
+- VIEW.minHeight Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 580c263a7def0d98a56190e5e80abc8e6bcb864a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f326ae98cc8bd2970f05096ea167705270e12aabc93b91c7f517adca14ccb14b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119375161"
 ---
-# <a name="viewminheight"></a>Visualizza minHeight
+# <a name="viewminheight"></a>VIEW.minHeight
 
-L'attributo **MinHeight** specifica o recupera l'altezza minima in pixel della **visualizzazione** durante il ridimensionamento.
+**L'attributo minHeight** specifica o recupera l'altezza minima in pixel dell'elemento **VIEW** durante il ridimensionamento.
 
 ``` syntax
         elementID.minHeight
@@ -29,7 +29,7 @@ L'attributo **MinHeight** specifica o recupera l'altezza minima in pixel della *
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di lettura/scrittura (**Long**) con un valore pari a zero o superiore. Il valore predefinito è zero, che indica che non esiste alcuna restrizione sull'altezza minima della **visualizzazione**.
+Questo attributo è un numero **di** lettura/scrittura (**long**) con un valore pari a zero o superiore. Ha un valore predefinito pari a zero, il che significa che non esiste alcuna restrizione sull'altezza minima dell'oggetto **VIEW.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,7 +37,7 @@ Questo attributo è un **numero** di lettura/scrittura (**Long**) con un valore 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -48,7 +48,7 @@ Questo attributo è un **numero** di lettura/scrittura (**Long**) con un valore 
 [**Elemento VIEW**](view-element.md)
 </dt> <dt>
 
-[**Visualizza maxHeight**](view-maxheight.md)
+[**VIEW.maxHeight**](view-maxheight.md)
 </dt> </dl>
 
  

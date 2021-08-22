@@ -1,8 +1,8 @@
 ---
-description: La \_ classe CIM ComputerSystemMappedIO rappresenta un'associazione tra un sistema di computer e le relative porte I/O mappate alla memoria disponibili.
+description: La classe CIM ComputerSystemMappedIO rappresenta un'associazione tra un computer e le relative porte di I/O mappate \_ alla memoria disponibili.
 ms.assetid: 5df9db36-67ad-4a94-a7db-150b58977af1
 ms.tgt_platform: multiple
-title: Classe CIM_ComputerSystemMappedIO
+title: CIM_ComputerSystemMappedIO classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ce7d00950038c7d94f97f9a6938b9190846f6ff0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: bf81632bd380756e49cde1804f7e35d3115b8575460ce04772e8d153255d6777
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322041"
 ---
-# <a name="cim_computersystemmappedio-class"></a>CIM \_ ComputerSystemMappedIO (classe)
+# <a name="cim_computersystemmappedio-class"></a>Classe \_ CIM ComputerSystemMappedIO
 
-La classe **CIM \_ ComputerSystemMappedIO** rappresenta un'associazione tra un sistema di computer e le relative porte I/O mappate alla memoria disponibili.
+La **classe CIM \_ ComputerSystemMappedIO** rappresenta un'associazione tra un computer e le relative porte di I/O mappate alla memoria disponibili.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM DMTF (Distributed Management Task Force) (Common Information Model) sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,13 +47,13 @@ class CIM_ComputerSystemMappedIO : CIM_ComputerSystemResource
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ComputerSystemMappedIO** presenta questi tipi di membri:
+La **classe \_ CIM ComputerSystemMappedIO** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ComputerSystemMappedIO** dispone di queste proprietà.
+La **classe CIM \_ ComputerSystemMappedIO** ha queste proprietà.
 
 <dl> <dt>
 
@@ -69,7 +69,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) (GroupComponent)
 </dt> </dl>
 
-Un [**\_ ComputerSystem CIM**](cim-computersystem.md) che descrive il sistema del computer mappato alla porta di i/O.
+Un [**\_ ComputerSystem CIM**](cim-computersystem.md) che descrive il computer di cui è stato eseguito il mapping alla porta di I/O.
 
 Questa proprietà viene ereditata da [ **CIM \_ ComputerSystemResource**](cim-computersystemresource.md)
 
@@ -84,20 +84,20 @@ Tipo di dati: **CIM \_ MemoryMappedIO**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**debole**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**Weak**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Un [**\_ MemoryMappedIO CIM**](cim-memorymappedio.md) che descrive una porta di i/O con mapping della memoria del sistema del computer.
+Oggetto [**CiM \_ MemoryMappedIO che**](cim-memorymappedio.md) descrive una porta di I/O mappata alla memoria del computer.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **CIM \_ ComputerSystemMappedIO** è derivata da [**CIM \_ ComputerSystemResource**](cim-computersystemresource.md).
+La **classe CIM \_ ComputerSystemMappedIO** è derivata da [**\_ CIM ComputerSystemResource**](cim-computersystemresource.md).
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -108,7 +108,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -117,7 +117,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**\_COMPUTERSYSTEMRESOURCE CIM**](cim-computersystemresource.md)
+[**CIM \_ ComputerSystemResource**](cim-computersystemresource.md)
 </dt> </dl>
 
  

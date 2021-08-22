@@ -1,7 +1,7 @@
 ---
-description: "Il metodo GetClassID recupera l'identificatore di classe (CLSID) dell'oggetto. Questo metodo implementa il metodo IPersist:: GetClassID."
+description: Il metodo GetClassID recupera l'identificatore di classe (CLSID) dell'oggetto. Questo metodo implementa il metodo IPersist::GetClassID.
 ms.assetid: 3d2cc6a3-67d1-4dd9-916b-7c350ce6a542
-title: Metodo CSystemClock. GetClassID (Sysclock. h)
+title: Metodo CSystemClock.GetClassID (Sysclock.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a2f83d3e3c2efcbcb5d4604bc5c50a37dc020f0a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2afb141c3a79255504eb13dadb39cc0fb5094c19e0979db04c251f1e2fe75133
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333711"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119317191"
 ---
-# <a name="csystemclockgetclassid-method"></a>CSystemClock. GetClassID, metodo
+# <a name="csystemclockgetclassid-method"></a>Metodo CSystemClock.GetClassID
 
-Il `GetClassID` metodo recupera l'identificatore di classe (CLSID) dell'oggetto. Questo metodo implementa il metodo **IPersist:: GetClassID** .
+Il `GetClassID` metodo recupera l'identificatore di classe (CLSID) dell'oggetto . Questo metodo implementa il **metodo IPersist::GetClassID.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ Puntatore a una variabile che riceve il valore CLSID \_ SystemClock.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un \_ puntatore S OK o e \_ .
+Restituisce S \_ OK o E \_ POINTER.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,8 +60,8 @@ Restituisce un \_ puntatore S OK o e \_ .
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versione<br/> | Classe CSystemClock<br/>                                                                                                                                                              |
-| Intestazione<br/>  | <dl> <dt>Sysclock. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Sysclock.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

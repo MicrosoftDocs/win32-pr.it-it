@@ -1,5 +1,5 @@
 ---
-description: 'Metodo ID3DXConstantTable::GetDesc: ottiene una descrizione della tabella costante.'
+description: 'Metodo ID3DXConstantTable::GetDesc: ottiene una descrizione della tabella delle costanti.'
 ms.assetid: 3a7396c6-3a3e-44c2-96b7-60339015b376
 title: Metodo ID3DXConstantTable::GetDesc (D3DX9Shader.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 81b64f1a01af8909aa820e772214a1f11c6099b8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9e905eceefec4ea2e057776f1045a8fc7f7f213e38328406935c6095efd9c22c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607131"
 ---
 # <a name="id3dxconstanttablegetdesc-method"></a>Metodo ID3DXConstantTable::GetDesc
 
@@ -45,7 +45,7 @@ HRESULT GetDesc(
 
 Tipo: **[ **D3DXCONSTANTTABLE \_ DESC**](d3dxconstanttable-desc.md)\***
 
-Descrizione della tabella delle costanti. Vedere [**D3DXCONSTANTTABLE \_ DESC**](d3dxconstanttable-desc.md).
+Descrizione della tabella delle costanti. Vedere [**D3DXCONSTANTTABLE \_ DESC.**](d3dxconstanttable-desc.md)
 
 </dd> </dl>
 

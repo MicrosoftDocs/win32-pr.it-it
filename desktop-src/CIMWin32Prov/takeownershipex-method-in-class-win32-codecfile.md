@@ -1,5 +1,5 @@
 ---
-description: Ottiene la proprietà del file di codec logico specificato nel percorso dell'oggetto. Questo metodo è una versione estesa del metodo TakeOwnerShip.
+description: Ottiene la proprietà del file codec logico specificato nel percorso dell'oggetto. Questo metodo è una versione estesa del metodo TakeOwnerShip.
 ms.assetid: 8f3b495a-f654-4818-b0ea-dc88819d72af
 ms.tgt_platform: multiple
 title: Metodo TakeOwnerShipEx della classe Win32_CodecFile
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 36512d48fe724da42c39c0d3d0686a706f54472d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 04af6ed0953f25c5b02e988569eecad806ae62cb4757463831132e3c22dd40b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119546641"
 ---
-# <a name="takeownershipex-method-of-the-win32_codecfile-class"></a>Metodo TakeOwnerShipEx della \_ classe Sqlcfile Win32
+# <a name="takeownershipex-method-of-the-win32_codecfile-class"></a>Metodo TakeOwnerShipEx della classe CodecFile Win32 \_
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnerShipEx** ottiene la proprietà del file di codec logico specificato nel percorso dell'oggetto. Questo metodo è una versione estesa del metodo [**TakeOwnership**](takeownership-method-in-class-win32-directory.md) . Se il file logico è in realtà una directory, questo metodo agisce in modo ricorsivo, assumendo la proprietà di tutti i file e le sottodirectory contenuti nella directory.
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnerShipEx** ottiene la proprietà del file codec logico specificato nel percorso dell'oggetto. Questo metodo è una versione estesa del [**metodo TakeOwnerShip.**](takeownership-method-in-class-win32-directory.md) Se il file logico è effettivamente una directory, questo metodo agisce in modo ricorsivo, assumendo la proprietà di tutti i file e le sottodirectory contenuti nella directory.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,24 +44,24 @@ uint32 TakeOwnerShipEx(
 
 <dl> <dt>
 
-*StopFileName* \[ out\]
+*StopFileName* \[ Cambio\]
 </dt> <dd>
 
-Nome del file o della directory in cui il metodo **TakeOwnerShipEx** non è riuscito. Questo parametro sarà **null** se il metodo ha esito positivo.
+Nome del file o della directory in cui il **metodo TakeOwnerShipEx non** è riuscito. Questo parametro sarà **NULL se** il metodo ha esito positivo.
 
 </dd> <dt>
 
 *StartFileName* \[ in, facoltativo\]
 </dt> <dd>
 
-Denomina il file o la directory figlio da utilizzare come punto di partenza per **TakeOwnerShipEx**. Il parametro *StartFileName* è in genere il parametro *StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è **null**, l'operazione viene eseguita sul file o sulla directory specificata nella chiamata **ExecMethod** .
+Nome del file o della directory figlio da usare come punto di partenza per **TakeOwnerShipEx.** Il *parametro StartFileName* è in genere il *parametro StopFileName* che specifica il file o la directory in cui si è verificato un errore dalla chiamata al metodo precedente. Se questo parametro è **NULL,** l'operazione viene eseguita sul file o sulla directory specificata nella **chiamata a ExecMethod.**
 
 </dd> <dt>
 
 *Ricorsivo* \[ in, facoltativo\]
 </dt> <dd>
 
-Se **true**, la modifica della proprietà verrà applicata in modo ricorsivo a file e directory all'interno della directory specificata dall'istanza [**CIM \_ LogicalFile**](cim-logicalfile.md) . Nota: per le istanze di file, il parametro di input *ricorsivo* viene ignorato.
+Se **true,** la modifica della proprietà verrà applicata in modo ricorsivo ai file e alle directory all'interno della directory specificata [**dall'istanza di \_ CiM LogicalFile.**](cim-logicalfile.md) Nota: per le istanze di file, *il parametro di* input Ricorsivo viene ignorato.
 
 </dd> </dl>
 
@@ -144,7 +144,7 @@ Si è verificata una violazione di condivisione.
 **16**
 </dt> <dd>
 
-Il file di avvio specificato non è valido.
+Il file iniziale specificato non è valido.
 
 </dd> <dt>
 
@@ -171,7 +171,7 @@ Un parametro specificato non è valido.
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -183,7 +183,7 @@ Un parametro specificato non è valido.
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Codecfile Win32 \_**](win32-codecfile.md)
+[**Win32 \_ CodecFile**](win32-codecfile.md)
 </dt> </dl>
 
  

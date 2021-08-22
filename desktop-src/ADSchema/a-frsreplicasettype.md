@@ -1,10 +1,10 @@
 ---
-title: Attributo FRS-replica-set-Type
-description: Si tratta di un codice che indica se si tratta di un set di repliche SYSVOL, di un set di repliche DFS o di un altro set di repliche.
+title: Attributo FRS-Replica-Set-Type
+description: Si tratta di un codice che indica se si tratta di un set di repliche sysvol, un set di repliche DFS o un altro set di repliche.
 ms.assetid: 687a854f-ffa1-41f4-a515-5224759696ab
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo FRS-replica-set-Type
+- Schema AD dell'attributo FRS-Replica-Set-Type
 - Schema AD dell'attributo fRSReplicaSetType
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18046c9b4edb794687d275af52e35416419c7e2d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9ab742f3fc9886c298ce7dfd17343a881f17897943ba46d7fc2e3994cc4d9a27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103874889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323641"
 ---
-# <a name="frs-replica-set-type-attribute"></a>Attributo FRS-replica-set-Type
+# <a name="frs-replica-set-type-attribute"></a>Attributo FRS-Replica-Set-Type
 
-Si tratta di un codice che indica se si tratta di un set di repliche SYSVOL, di un set di repliche DFS o di un altro set di repliche.
+Si tratta di un codice che indica se si tratta di un set di repliche sysvol, un set di repliche DFS o un altro set di repliche.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | FRS-replica-set-Type                 |
-| LDAP-Display-Name | fRSReplicaSetType                    |
+| CN                | FRS-Replica-Set-Type                 |
+| Ldap-Display-Name | fRSReplicaSetType                    |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.     |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.     |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.31                |
-| System-ID-GUID    | 26d9736b-6070-11d1-a9c6-0000f80367c1 |
+| System-Id-Guid    | 26d9736b-6070-11d1-a9c6-0000f80367c1 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Si tratta di un codice che indica se si tratta di un set di repliche SYSVOL, di 
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Si tratta di un codice che indica se si tratta di un set di repliche SYSVOL, di 
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Si tratta di un codice che indica se si tratta di un set di repliche SYSVOL, di 
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Si tratta di un codice che indica se si tratta di un set di repliche SYSVOL, di 
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Si tratta di un codice che indica se si tratta di un set di repliche SYSVOL, di 
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Si tratta di un codice che indica se si tratta di un set di repliche SYSVOL, di 
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 

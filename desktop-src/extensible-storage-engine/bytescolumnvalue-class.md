@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe BytesColumnValue'
+description: Altre informazioni sulla classe BytesColumnValue
 title: Classe BytesColumnValue
 TOCTitle: BytesColumnValue class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.BytesColumnValue
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8b430c4b619eb5c51576064aff20de03839b6cf4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13e6ee735ba22027365681018182f72c94902605635c94230c843f1a9ff89644
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119366531"
 ---
 # <a name="bytescolumnvalue-class"></a>Classe BytesColumnValue
 
@@ -38,11 +38,11 @@ Valore della colonna della matrice di byte.
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  [Microsoft. ISAM. esent. Interop. ColumnValue](./columnvalue-class.md)  
-    Microsoft. ISAM. esent. Interop. BytesColumnValue  
+  [Microsoft.Isam.Esent.Interop.ColumnValue](./columnvalue-class.md)  
+    Microsoft.Isam.Esent.Interop.BytesColumnValue  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -66,6 +66,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri di BytesColumnValue](./bytescolumnvalue-members.md)
+[Membri BytesColumnValue](./bytescolumnvalue-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

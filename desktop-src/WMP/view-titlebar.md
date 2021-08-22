@@ -1,9 +1,9 @@
 ---
-title: Visualizza. barra del titolo
-description: L'attributo barra del titolo recupera un valore che indica se la barra del titolo della finestra è visualizzata.
+title: VIEW.titleBar
+description: L'attributo titleBar recupera un valore che indica se viene visualizzata la barra del titolo della finestra.
 ms.assetid: 996aa2e0-0313-4a48-adcb-b82f76f38b6a
 keywords:
-- VIEW. barra del titolo Windows Media Player
+- View.titleBar Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dea225103913e3906cf6cd3b129943fbf9b9f165
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eb05550c22c342d14690f24f42c62a3af328eae65201b8138e82a7a33bf99fb9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054069"
 ---
-# <a name="viewtitlebar"></a>Visualizza. barra del titolo
+# <a name="viewtitlebar"></a>VIEW.titleBar
 
-L'attributo **barra** del titolo recupera un valore che indica se la barra del titolo della finestra è visualizzata.
+**L'attributo titleBar** recupera un valore che indica se viene visualizzata la barra del titolo della finestra.
 
 ``` syntax
         elementID.titleBar
@@ -29,7 +29,7 @@ L'attributo **barra** del titolo recupera un valore che indica se la barra del t
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **valore booleano** di sola lettura.
+Questo attributo è un valore booleano di **sola lettura.**
 
 
 
@@ -44,9 +44,9 @@ Questo attributo è un **valore booleano** di sola lettura.
 
 ## <a name="remarks"></a>Commenti
 
-Se viene visualizzata la barra del titolo, verranno visualizzati i pulsanti casella di controllo, Riduci a icona e Chiudi. Il titolo della finestra sarà il titolo dell'elemento di **visualizzazione** .
+Se viene visualizzata la barra del titolo, verranno visualizzati i pulsanti Casella di controllo, Riduci a icona e Chiudi. Il titolo della finestra sarà il titolo **dell'elemento VIEW.**
 
-Se la **barra** del titolo è impostata su true e l'utente tenta di modificare il valore di **video. zoom**, la modifica non verrà eseguita a meno che non venga eseguito il monitoraggio dello **Zoom** e si intraprenda un'azione appropriata per il ridimensionamento.
+Se **titleBar** è impostato su true e l'utente tenta di modificare il valore di **Video.zoom,** la modifica non verrà eseguita a meno che l'interfaccia non monitori **lo zoom** e non esempi l'azione appropriata per ridimensionarsi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ Se la **barra** del titolo è impostata su true e l'utente tenta di modificare i
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -65,10 +65,10 @@ Se la **barra** del titolo è impostata su true e l'utente tenta di modificare i
 [**Elemento VIEW**](view-element.md)
 </dt> <dt>
 
-[**Visualizza. titolo**](view-title.md)
+[**VIEW.title**](view-title.md)
 </dt> <dt>
 
-[**VIDEO. zoom**](video-zoom.md)
+[**VIDEO.zoom**](video-zoom.md)
 </dt> </dl>
 
  

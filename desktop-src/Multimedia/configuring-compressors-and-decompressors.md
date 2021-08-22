@@ -1,23 +1,23 @@
 ---
-title: Configurazione di comprimer e decompressori
-description: Configurazione di comprimer e decompressori
+title: Configurazione di distruttori e decompressori
+description: Configurazione di distruttori e decompressori
 ms.assetid: 9cd63470-1591-4de0-b011-d7979539d936
 keywords:
-- Gestione compressione video (VCM), configurazione di compressatori
-- VCM (Gestione compressione video), configurazione dei commediatori
-- ICQueryConfigure (macro)
+- gestione compressione video(VCM), configurazione dei dispositivi
+- VCM (Video Compression Manager), configurazione dei dispositivi
+- Macro ICQueryConfigure
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88d388a52047a1aea7936cc494dafc0d1a2d6dec
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 073a9ac7eb56c0870d7a08d8ed9fd221a2626bb6be83cc4683cd86c4bfa907db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104395830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144924"
 ---
-# <a name="configuring-compressors-and-decompressors"></a>Configurazione di comprimer e decompressori
+# <a name="configuring-compressors-and-decompressors"></a>Configurazione di distruttori e decompressori
 
-Nell'esempio seguente viene utilizzata la macro [**ICQueryConfigure**](/windows/desktop/api/Vfw/nf-vfw-icqueryconfigure) per illustrare come verificare se un compressore supporta la finestra di dialogo di configurazione e per visualizzarlo in caso contrario.
+Nell'esempio seguente viene utilizzata la macro [**ICQueryConfigure**](/windows/desktop/api/Vfw/nf-vfw-icqueryconfigure) per illustrare come verificare se un oggetto supporta la finestra di dialogo di configurazione e come visualizzarla, se disponibile.
 
 
 ```C++
@@ -30,7 +30,7 @@ if (ICQueryConfigure(hIC)) ICConfigure(hIC, hwndApp);
 
 
 
-Nell'esempio seguente viene illustrato come ottenere i dati di stato utilizzando la macro [**ICGetState**](/windows/desktop/api/Vfw/nf-vfw-icgetstate) .
+L'esempio seguente illustra come ottenere i dati sullo stato usando la macro [**ICGetState.**](/windows/desktop/api/Vfw/nf-vfw-icgetstate)
 
 
 ```C++
@@ -44,7 +44,7 @@ ICGetState(hIC, (LPVOID)lpData, dwStateSize);  // gets the state data
 
 
 
-Nell'esempio seguente viene illustrato come ripristinare i dati di stato utilizzando la macro [**ICSetState**](/windows/desktop/api/Vfw/nf-vfw-icsetstate) . I dati di stato ripristinati dalle applicazioni non devono contenere modifiche ai dati dello stato ottenuti da un driver.
+L'esempio seguente illustra come ripristinare i dati sullo stato usando la macro [**ICSetState.**](/windows/desktop/api/Vfw/nf-vfw-icsetstate) I dati sullo stato ripristinati dalle applicazioni non devono contenere modifiche ai dati di stato ottenuti da un driver.
 
 
 ```C++
@@ -54,9 +54,9 @@ ICSetState(hIC, (LPVOID)lpData, dwStateSize); // sets new state data
 
 
 
- 
+ 
 
- 
+ 
 
 
 

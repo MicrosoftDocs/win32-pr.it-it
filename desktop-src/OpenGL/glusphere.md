@@ -1,9 +1,9 @@
 ---
-title: funzione gluSphere (Glu. h)
+title: Funzione gluSphere (Glu.h)
 description: La funzione gluSphere disegna una sfera.
 ms.assetid: 0f1919c6-0551-4d50-b782-767dacc088cb
 keywords:
-- funzione gluSphere OpenGL
+- Funzione gluSphere OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 899ff4833c705aae34fdb7830c264fee91414116
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 590c4b7335fe0596c5b5b0f3dc709998fafc21f7be78f493a05f6520ed9fd368
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119488731"
 ---
-# <a name="glusphere-function"></a>gluSphere (funzione)
+# <a name="glusphere-function"></a>Funzione gluSphere
 
-La funzione **gluSphere** disegna una sfera.
+La **funzione gluSphere** disegna una sfera.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,28 +46,28 @@ void WINAPI gluSphere(
 *qobj* 
 </dt> <dd>
 
-Oggetto quadrica (creato con [**gluNewQuadric**](glunewquadric.md)).
+Oggetto quadric (creato con [**gluNewQuadric).**](glunewquadric.md)
 
 </dd> <dt>
 
-*raggio* 
+*Raggio* 
 </dt> <dd>
 
 Raggio della sfera.
 
 </dd> <dt>
 
-*fette* 
+*Fette* 
 </dt> <dd>
 
 Numero di suddivisioni intorno all'asse z (simili alle linee di longitudine).
 
 </dd> <dt>
 
-*pile* 
+*Pile* 
 </dt> <dd>
 
-Il numero di suddivisioni lungo l'asse z, simile alle linee di latitudine.
+Numero di suddivisioni lungo l'asse z (simili alle linee di latitudine).
 
 </dd> </dl>
 
@@ -77,11 +77,11 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **gluSphere** disegna una sfera del raggio specificato centrata intorno all'origine. La sfera viene suddivisa in sezioni intorno all'asse z e lungo l'asse z negli stack (in modo analogo alle linee di longitudine e latitudine).
+La **funzione gluSphere** disegna una sfera del raggio specificato centrata intorno all'origine. La sfera è suddivisa intorno all'asse z in sezioni e lungo l'asse z in stack (simili a linee di longitudine e latitudine).
 
-Se l'orientamento è impostato su GLU \_ all'esterno (con **gluQuadricOrientation**), eventuali normali generate fanno riferimento al centro della sfera. In caso contrario, puntano verso il centro della sfera.
+Se l'orientamento è impostato su GLU \_ OUTSIDE (con **gluQuadricOrientation),** tutte le normali generate si allontanano dal centro della sfera. In caso contrario, puntano verso il centro della sfera.
 
-Se la texturing è attivata (con **gluQuadricTexture**): le coordinate di trama vengono generate in modo che *t* sia compreso tra 0,0 e *z* =-*RADIUS* e 1,0 al   =  *raggio* z (*t* aumenta in modo lineare lungo le linee longitudinali); e *è* compreso tra 0,0 e l'asse y positivo, fino a 0,25 sull'asse x positivo, a 0,5 sull'asse y negativo, a 0,75 sull'asse x negativo e viceversa a 1,0 sull'asse y positivo.
+Se la texturing è attivata (con **gluQuadricTexture):** le coordinate della trama vengono generate in modo che *t* sia compreso tra 0,0 in *z* =*-* raggio a 1,0 in corrispondenza del raggio *z*(t aumenta linearmente lungo le linee longitudinali); e s è compreso tra 0,0 e l'asse y positivo, a 0,25 in corrispondenza dell'asse x positivo, a 0,5 in corrispondenza dell'asse y negativo, a 0,75 in corrispondenza dell'asse x negativo e di nuovo a  =   1,0 in corrispondenza dell'asse y positivo. 
 
 ## <a name="requirements"></a>Requisiti
 
@@ -91,8 +91,8 @@ Se la texturing è attivata (con **gluQuadricTexture**): le coordinate di trama 
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

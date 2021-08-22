@@ -3,22 +3,22 @@ title: Uso dei moduli di gestione dei colori (CMM)
 description: I moduli di gestione dei colori sono moduli di codice WCS che usano le informazioni nei profili di dispositivo per eseguire la conversione dei colori e il mapping dei colori.
 ms.assetid: df119e1a-b6f5-40a3-8852-8a57b21483d0
 keywords:
-- Windows Color System (WCS),Color Management Module (CMM)
+- Windows Sistema colori (WCS), modulo di gestione dei colori (CMM)
 - WCS (Windows Color System),Color Management Module (CMM)
-- gestione del colore delle immagini, modulo di gestione dei colori (CMM)
-- gestione dei colori, modulo di gestione dei colori (CMM)
+- gestione dei colori delle immagini, modulo di gestione dei colori (CMM)
+- gestione dei colori, modulo di gestione del colore (CMM)
 - colors,Color Management Module (CMM)
 - Modulo di gestione dei colori (CMM)
 - CMM (modulo gestione colori)
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b12a087bfc972ffcbd7f9fb083a9d73d669f134
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 147c13a688942d46e400c2158c340fcea58d86616de042e9a44511861b67b802
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111386900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442351"
 ---
 # <a name="using-color-management-modules-cmm"></a>Uso dei moduli di gestione dei colori (CMM)
 
@@ -29,7 +29,7 @@ I moduli di gestione dei colori sono moduli di codice WCS che usano le informazi
 
  
 
-Quando vengono installate le macchine virtuali di gestione dei dispositivi, il programma di installazione le registra nel Registro di sistema di Windows. Le applicazioni possono enumerare i CMM registrati e selezionarne uno usando la [**funzione SelectCMM.**](/windows/win32/api/icm/nf-icm-selectcmm) L'applicazione di esempio seguente illustra come enumerare tutte le macchine virtuali di gestione delle applicazioni registrate.
+Quando vengono installate le macchine virtuali di gestione dei servizi, il programma di installazione le registra nel registro Windows sistema. Le applicazioni possono enumerare i CMM registrati e selezionarne uno usando la [**funzione SelectCMM.**](/windows/win32/api/icm/nf-icm-selectcmm) L'applicazione di esempio seguente illustra come enumerare tutte le macchine virtuali di gestione delle applicazioni registrate.
 
 
 ```C++
