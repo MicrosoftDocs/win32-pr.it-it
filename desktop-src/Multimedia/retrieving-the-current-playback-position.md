@@ -3,29 +3,29 @@ title: Recupero della posizione di riproduzione corrente
 description: Recupero della posizione di riproduzione corrente
 ms.assetid: a08fe5da-8945-486f-9413-877c7d13d5de
 keywords:
-- audio Waveform, posizione corrente di riproduzione
-- waveform-interfaccia audio, posizione corrente di riproduzione
-- riproduzione di file audio Waveform, posizione corrente di riproduzione
-- waveOutGetPosition (funzione)
+- audio waveform, posizione di riproduzione corrente
+- interfaccia waveform-audio, posizione di riproduzione corrente
+- riproduzione di file waveform-audio, posizione di riproduzione corrente
+- Funzione waveOutGetPosition
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b28737cfc292dc8779b21756f38813642b82e452
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: c85bc46e476786625ccae51802e0b720379a935110eb37d941c4c76d69d94783
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104336862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119689051"
 ---
 # <a name="retrieving-the-current-playback-position"></a>Recupero della posizione di riproduzione corrente
 
-È possibile monitorare la posizione di riproduzione corrente all'interno del file durante la riproduzione dell'audio della forma d'onda usando la funzione [**waveOutGetPosition**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutgetposition) .
+È possibile monitorare la posizione di riproduzione corrente all'interno del file durante la riproduzione dell'audio della forma d'onda usando la [**funzione waveOutGetPosition.**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutgetposition)
 
-Per i dispositivi Waveform-Audio, gli esempi rappresentano il formato ora preferito in cui rappresentare la posizione corrente. In questo modo, la posizione corrente di un dispositivo di forma d'onda-audio viene specificata come numero di campioni per un canale a partire dall'inizio del file audio della forma d'onda. Per eseguire una query sulla posizione corrente di un dispositivo audio Waveform, impostare il membro **wType** della struttura [**MMTIME**](/previous-versions//dd757347(v=vs.85)) su \_ Samples Time e passare la struttura a **waveOutGetPosition**.
+Per i dispositivi waveform-audio, gli esempi sono il formato orario preferito in cui rappresentare la posizione corrente. Di conseguenza, la posizione corrente di un dispositivo waveform-audio viene specificata come numero di campioni per un canale dall'inizio del file waveform-audio. Per eseguire una query sulla posizione corrente di un dispositivo waveform-audio, impostare il membro **wType** della struttura [**MMTIME**](/previous-versions//dd757347(v=vs.85)) su TIME SAMPLES e passare questa struttura a \_ **waveOutGetPosition**.
 
-La struttura **MMTIME** può rappresentare il tempo in uno o più formati diversi, tra cui millisecondi, esempi, SMPTE (società di Motion Picture e ingegneri televisivi) e formati di puntatore del brano MIDI. Il membro **wType** specifica il formato utilizzato per rappresentare l'ora. Prima di chiamare una funzione che usa la struttura **MMTIME** , è necessario impostare **wType** per indicare il formato di ora richiesto. Assicurarsi di controllare **wType** dopo la chiamata per verificare se il formato ora richiesto è supportato. Se il formato tempo richiesto non è supportato, il driver di dispositivo specifica l'ora in un formato di ora alternativo e modifica il membro **wType** nel formato di ora selezionato.
+La **struttura MMTIME** può rappresentare l'ora in uno o più formati diversi, tra cui millisecondi, esempi, SMPTE (Society of Motion Picture and Television Engineers) e formati di puntatore di brano MIDI. Il **membro wType** specifica il formato usato per rappresentare l'ora. Prima di chiamare una funzione che usa la **struttura MMTIME,** è necessario impostare **wType** per indicare il formato dell'ora richiesto. Assicurarsi di controllare **wType dopo** la chiamata per verificare se il formato dell'ora richiesto è supportato. Se il formato ora richiesto non è supportato, il driver di dispositivo specifica l'ora in un formato di ora alternativo e modifica il membro **wType** nel formato di ora selezionato.
 
-Per ulteriori informazioni sulla struttura **MMTIME** , vedere la pagina relativa ai [timer multimediali](multimedia-timers.md).
+Per altre informazioni sulla **struttura MMTIME,** vedere [Timer multimediali](multimedia-timers.md).
 
- 
+ 
 
- 
+ 

@@ -41,7 +41,7 @@ Definisce l'equazione usata da una formula. Proprietà di lettura/scrittura. **S
 Le equazioni sono definite dalla valutazione di un'espressione di testo con la forma generale di un'operazione seguita da un massimo di tre argomenti. Ogni argomento può essere dei tipi seguenti:
 
 -   rettifica (ad esempio, \# 2)
--   un'altra formula (ad esempio, @2 )
+-   un'altra formula (ad @2 esempio, )
 -   numeri fissi (ad esempio, 2)
 -   valori predefiniti
 
@@ -76,11 +76,11 @@ La tabella seguente definisce le formule che possono essere usate con gli argome
 
  
 
-Si noti che l'equazione è costituita solo da operazioni e numeri. I simboli matematici vengono omessi. Ad esempio, l'equazione
+Si noti che l'equazione è costituita solo da operazioni e numeri. i simboli matematici vengono omessi. Ad esempio, l'equazione
 
 eqn="sum 5 9 3"
 
-produrrebbe l'equivalente di
+restituisce l'equivalente di
 
 5 + 9 - 3
 
@@ -88,17 +88,17 @@ per il valore restituito di 11. Se gli operandi non sono presenti, il valore non
 
 eqn="sum 5 9"
 
-produrrebbe l'equivalente di
+restituisce l'equivalente di
 
 5 + 9
 
 e ignorano l'operando mancante.
 
-*Attributo standard VML*
+*Attributo VML Standard*
 
 **Esempio**
 
-La formula seguente restituisce un risultato di 6 (somma di entrambi i numeri divisi per 2), che, se si tratta della prima formula, può essere recuperata dal simbolo " @0 ".
+La formula seguente produrrebbe un risultato di 6 (la somma di entrambi i numeri divisa per 2), che, se questa fosse la prima formula, potrebbe essere recuperata dal simbolo " @0 ".
 
 
 ```HTML

@@ -5,51 +5,51 @@ ms.assetid: 51a0244d-123d-4efe-92e9-972e914cef78
 keywords:
 - audio multimediale, forma d'onda
 - audio, forma d'onda
-- audio Waveform, riproduzione semplice
-- MessageBeep (funzione)
-- sndPlaySound (funzione)
+- audio waveform, riproduzione semplice
+- Funzione MessageBeep
+- Funzione sndPlaySound
 - Funzione PlaySound, riproduzione semplice
 - audio multimediale, funzione PlaySound
 - audio, funzione PlaySound
-- audio Waveform, funzione PlaySound
+- audio waveform, funzione PlaySound
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 256feded06de4ee92ee415f14bb08adc7fb4456e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 6388f9800f93080e995ae537c2458a22da033ab2149b4bfca114c25025d97434
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103956417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119688691"
 ---
 # <a name="simple-audio-playback"></a>Riproduzione audio semplice
 
-È possibile usare le funzioni seguenti per riprodurre l'audio della forma d'onda nell'applicazione in una singola chiamata di funzione.
+È possibile usare le funzioni seguenti per riprodurre audio waveform nell'applicazione in una singola chiamata di funzione.
 
 
 
 | Funzione                                                      | Descrizione                                                                                                         |
 |---------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | [MessageBeep](/windows/win32/api/winuser/nf-winuser-messagebeep) | Riproduce il suono che corrisponde a un livello di avviso di sistema specificato.                                                 |
-| [**sndPlaySound**](/previous-versions//dd798676(v=vs.85))                          | Riproduce il suono che corrisponde al suono di sistema immesso nel registro di sistema o al contenuto del file specificato. |
-| [**PlaySound**](/previous-versions//dd743680(v=vs.85))                                | Fornisce tutte le funzionalità di [**sndPlaySound**](/previous-versions//dd798676(v=vs.85)) e può accedere direttamente alle risorse.           |
+| [**sndPlaySound**](/previous-versions//dd798676(v=vs.85))                          | Riproduce il suono che corrisponde al suono di sistema immesso nel Registro di sistema o al contenuto del file specificato. |
+| [**Playsound**](/previous-versions//dd743680(v=vs.85))                                | Fornisce tutte le funzionalità di [**sndPlaySound e**](/previous-versions//dd798676(v=vs.85)) può accedere direttamente alle risorse.           |
 
 
 
- 
+ 
 
-La funzione **MessageBeep** è una parte standard dell'API Win32. Poiché le sue funzionalità sono molto limitate e sono documentate altrove, non vengono discusse qui.
+La **funzione MessageBeep** è una parte standard dell'API Win32. Poiché le relative funzionalità sono molto limitate e sono documentate altrove, non sono descritte qui.
 
-Le funzioni elencate supportano le seguenti origini dell'audio della forma d'onda:
+Le funzioni elencate supportano le origini seguenti di audio waveform:
 
--   Waveform-file audio associati ai livelli di avviso di sistema
--   Waveform-file audio specificati da voci nel registro di sistema
+-   File audio Waveform associati ai livelli di avviso di sistema
+-   File audio Waveform specificati dalle voci nel Registro di sistema
 -   Risorse WAVE in memoria
--   Waveform-file audio specificati per nome
+-   File audio Waveform specificati in base al nome
 
-Le funzioni [**sndPlaySound**](/previous-versions//dd798676(v=vs.85)) e [**PlaySound**](/previous-versions//dd743680(v=vs.85)) caricano in memoria un intero file audio e di forma d'onda e, in effetti, limitano le dimensioni del file che è possibile riprodurre. Usare **sndPlaySound** e **PlaySound** per riprodurre file audio con forma d'onda di dimensioni ridotte, fino a circa 100.000. Queste due funzioni richiedono anche che i dati audio siano in un formato riproducibile da uno dei driver audio della forma d'onda, incluso il mapper wave.
+Le [**funzioni sndPlaySound**](/previous-versions//dd798676(v=vs.85)) e [**PlaySound**](/previous-versions//dd743680(v=vs.85)) caricano un intero file audio waveform in memoria e, di fatto, limitano le dimensioni del file che possono riprodurre. Usare **sndPlaySound** e **PlaySound** per riprodurre file audio waveform di piccole dimensioni, fino a circa 100.000. Queste due funzioni richiedono anche che i dati audio siano in un formato riproducibile da uno dei driver audio waveform installati, incluso il mapper delle onde.
 
-Per i file audio di dimensioni maggiori, usare i servizi MCI (Media Control Interface). Per ulteriori informazioni, vedere [MCI](mci.md).
+Per file audio di dimensioni maggiori, usare i servizi Media Control Interface (MCI). Per altre informazioni, vedere [MCI.](mci.md)
 
- 
+ 
 
- 
+ 

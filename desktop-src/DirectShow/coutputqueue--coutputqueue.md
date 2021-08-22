@@ -1,5 +1,5 @@
 ---
-description: Distruttore COutputQueue.~COutputQueue - Metodo del distruttore.
+description: 'Distruttore COutputQueue.~COutputQueue : metodo del distruttore.'
 ms.assetid: a49471a3-7497-4f10-b8d1-2ceb407f34ec
 title: Distruttore COutputQueue.~COutputQueue (Outputq.h)
 ms.topic: reference

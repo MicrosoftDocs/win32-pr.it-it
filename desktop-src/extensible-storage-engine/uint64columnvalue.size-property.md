@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sulla proprietà UInt64ColumnValue.Size
+description: 'Altre informazioni su: Proprietà UInt64ColumnValue.Size'
 title: Proprietà UInt64ColumnValue.Size
 TOCTitle: 'Size property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.UInt64ColumnValue.Size
@@ -34,7 +34,7 @@ ms.locfileid: "119603551"
 ---
 # <a name="uint64columnvaluesize-property"></a>Proprietà UInt64ColumnValue.Size
 
-Ottiene le dimensioni del valore nella colonna. Viene restituito 0 per le colonne con dimensioni variabili, ad esempio binarie e stringa.
+Ottiene le dimensioni del valore nella colonna. Viene restituito 0 per le colonne di dimensioni variabili, ad esempio binarie e stringa.
 
 **Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
@@ -65,6 +65,6 @@ Tipo: [System.Int32](/dotnet/api/system.int32)
 
 [Classe UInt64ColumnValue](./uint64columnvalue-class.md)
 
-[Membri UInt64ColumnValue](./uint64columnvalue-members.md)
+[Membri di UInt64ColumnValue](./uint64columnvalue-members.md)
 
 [Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,5 +1,5 @@
 ---
-description: Specifica se i computer utilizzano il servizio di configurazione automatica incorporato per gestire le connessioni a reti cablate che richiedono l'autenticazione di livello 2, ad esempio 802.1 X.
+description: Specifica se i computer usano il servizio di configurazione automatica incorporato per gestire le connessioni alle reti cablate che richiedono l'autenticazione di livello 2, ad esempio 802.1X.
 ms.assetid: c7a0f6bc-4d42-4d95-8483-2c480f4d8db9
 title: Elemento enableAutoConfig (globalFlags) (LAN_policy)
 ms.topic: reference
@@ -12,20 +12,20 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: af1ca32f177140bbfc6563f74df5afc519ee0c75
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2842da69b07136df80d15ea84553aecdf2c62d417c73f7ec85d9c315b819a397
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103757799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119780201"
 ---
 # <a name="enableautoconfig-globalflags-element-lan_policy"></a>Elemento enableAutoConfig (globalFlags) (LAN_policy)
 
-L'elemento **enableAutoConfig** (globalFlags) specifica se i computer utilizzano il servizio di configurazione automatica incorporato per gestire le connessioni a reti cablate che richiedono l'autenticazione di livello 2, ad esempio 802.1 x.
+**L'elemento enableAutoConfig** (globalFlags) specifica se i computer usano il servizio di configurazione automatica incorporato per gestire le connessioni alle reti cablate che richiedono l'autenticazione di livello 2 , ad esempio 802.1X.
 
-Se il valore di **enableAutoConfig** è false, i computer non devono usare il servizio di configurazione automatica incorporato per gestire le connessioni che richiedono l'autenticazione di livello 2. La rete specificata nell'elemento [**Profiler**](lan-policyschema-profilelist-lanpolicy-element.md) è invece l'unica rete disponibile per la connessione. Il servizio di configurazione automatica risponderà solo alle richieste di abilitazione del servizio.
+Quando **enableAutoConfig ha** il valore FALSE, i computer non devono usare il servizio di configurazione automatica predefinito per gestire le connessioni che richiedono l'autenticazione di livello 2. La rete specificata nell'elemento [**profileList**](lan-policyschema-profilelist-lanpolicy-element.md) è invece l'unica rete disponibile per la connessione. Il servizio di configurazione automatica risponderà solo alle richieste di abilitazione del servizio.
 
-Quando **enableAutoConfig** ha il valore true, i computer possono usare il servizio di configurazione automatica incorporato per connettersi alle reti cablate che richiedono l'autenticazione di livello 2.
+Quando **enableAutoConfig ha** il valore TRUE, i computer possono usare il servizio di configurazione automatica predefinito per connettersi alle reti cablate che richiedono l'autenticazione di livello 2.
 
 ``` syntax
 <xs:element name="enableAutoConfig"
@@ -33,7 +33,7 @@ Quando **enableAutoConfig** ha il valore true, i computer possono usare il servi
  />
 ```
 
-L'elemento **enableAutoConfig** è definito dall'elemento [**globalFlags**](lan-policyschema-globalflags-lanpolicy-element.md) .
+**L'elemento enableAutoConfig** è definito dall'elemento [**globalFlags.**](lan-policyschema-globalflags-lanpolicy-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,8 +41,8 @@ L'elemento **enableAutoConfig** è definito dall'elemento [**globalFlags**](lan-
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -56,7 +56,7 @@ L'elemento **enableAutoConfig** è definito dall'elemento [**globalFlags**](lan-
 [**globalFlags**](lan-policyschema-globalflags-lanpolicy-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**globalFlags (LANPolicy)**](lan-policyschema-globalflags-lanpolicy-element.md)

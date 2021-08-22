@@ -58,7 +58,7 @@ Elenchi di revoche dell'infrastruttura a chiave pubblica.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| A valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
@@ -79,7 +79,7 @@ Elenchi di revoche dell'infrastruttura a chiave pubblica.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| A valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
@@ -100,7 +100,7 @@ Elenchi di revoche dell'infrastruttura a chiave pubblica.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| A valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
@@ -129,7 +129,7 @@ Elenchi di revoche dell'infrastruttura a chiave pubblica.
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi usate in        | [**Punto di distribuzione CRL**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -150,7 +150,7 @@ Elenchi di revoche dell'infrastruttura a chiave pubblica.
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi usate in        | [**Punto di distribuzione CRL**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -171,7 +171,7 @@ Elenchi di revoche dell'infrastruttura a chiave pubblica.
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi usate in        | [**Punto di distribuzione CRL**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Costruttore CBaseFilter.CBaseFilter(const \* TCHAR, LPUNKNOWN, CCritSec, \* REFCLSID) - Metodo costruttore.
+description: Costruttore CBaseFilter.CBaseFilter(const TCHAR \* , LPUNKNOWN, CCritSec \* , REFCLSID) - Metodo costruttore.
 ms.assetid: b6433ec9-6710-4c2f-968f-00e0d9f8c7a5
-title: Costruttore CBaseFilter.CBaseFilter(const *TCHAR, LPUNKNOWN, CCritSec,* REFCLSID) (Amfilter.h)
+title: Costruttore CBaseFilter.CBaseFilter(const TCHAR *, LPUNKNOWN, CCritSec*, REFCLSID) (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119640651"
 ---
-# <a name="cbasefiltercbasefilterconst-tchar-lpunknown-ccritsec-refclsid-constructor"></a>Costruttore CBaseFilter.CBaseFilter(const \* TCHAR, LPUNKNOWN, CCritSec, \* REFCLSID)
+# <a name="cbasefiltercbasefilterconst-tchar-lpunknown-ccritsec-refclsid-constructor"></a>Costruttore CBaseFilter.CBaseFilter(const TCHAR \* , LPUNKNOWN, CCritSec \* , REFCLSID)
 
 Metodo del costruttore.
 
@@ -55,14 +55,14 @@ Puntatore a una stringa contenente il nome del filtro, a scopo di debug.
 *Punk* 
 </dt> <dd>
 
-Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown dell'oggetto** di aggregazione. In caso contrario, impostare questo parametro su **NULL.**
+Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown dell'oggetto** aggregatore. In caso contrario, impostare questo parametro su **NULL.**
 
 </dd> <dt>
 
 *Plock* 
 </dt> <dd>
 
-Puntatore a un [**blocco CCritSec,**](ccritsec.md) usato per serializzare le modifiche dello stato.
+Puntatore a un [**blocco CCritSec,**](ccritsec.md) utilizzato per serializzare le modifiche dello stato.
 
 </dd> <dt>
 
@@ -75,10 +75,10 @@ Identificatore di classe (CLSID) del filtro.
 
 ## <a name="remarks"></a>Commenti
 
-Per l'oggetto sezione critica, in genere si dovrebbe eseguire una delle operazioni seguenti:
+Per l'oggetto sezione critica, in genere è necessario eseguire una delle operazioni seguenti:
 
--   Derivare una classe che eredita **sia CBaseFilter** che **CCritSec**. Per *pLock*, passare il `this` puntatore .
--   Derivare una classe che eredita **CBaseFilter** e contiene una variabile membro **CCritSec.** Per *pLock*, passare l'indirizzo di tale variabile.
+-   Derivare una classe che eredita **sia CBaseFilter che** **CCritSec.** Per *pLock*, passare il `this` puntatore .
+-   Derivare una classe che eredita **CBaseFilter** e contiene una **variabile membro CCritSec.** Per *pLock*, passare l'indirizzo di tale variabile.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -86,7 +86,7 @@ Per l'oggetto sezione critica, in genere si dovrebbe eseguire una delle operazio
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

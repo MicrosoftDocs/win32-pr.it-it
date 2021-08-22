@@ -29,10 +29,10 @@ Nome distinto di un oggetto criteri di dominio da cui viene copiato un oggetto c
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | Riferimento a Domain-Policy-Reference                 |
+| CN                | Riferimento ai criteri di dominio                 |
 | Ldap-Display-Name | domainPolicyReference                   |
 | Dimensione              | \-                                      |
-| Privilegio di aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.422                  |
 | System-Id-Guid    | 80a67e2a-9f22-11d0-afdd-00c04fd930c9    |

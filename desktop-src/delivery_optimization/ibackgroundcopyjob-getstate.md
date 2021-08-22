@@ -46,13 +46,13 @@ HRESULT GetState(
 *pJobState* \[ Cambio\]
 </dt> <dd>
 
-Stato del processo. Ad esempio, lo stato indica se il processo è in stato di errore, trasferisce i dati o è sospeso. Per un elenco degli stati dei processi, vedere [**l'enumerazione BG_JOB_STATE**](bg-job-state-.md) processo.
+Stato del processo. Ad esempio, lo stato riflette se il processo è in errore, trasferisce i dati o è sospeso. Per un elenco degli stati del processo, vedere [**l'enumerazione BG_JOB_STATE**](bg-job-state-.md) processo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce i valori **HRESULT** seguenti, oltre ad altri.
+Questo metodo restituisce i **valori HRESULT** seguenti, oltre ad altri.
 
 
 
@@ -66,7 +66,7 @@ Questo metodo restituisce i valori **HRESULT** seguenti, oltre ad altri.
 
 ## <a name="remarks"></a>Commenti
 
-Se si desidera sapere quando un processo è in errore o ha trasferito tutti i file nel processo, è possibile utilizzare questo metodo per eseguire il polling dello stato del processo oppure è possibile registrarsi per ricevere una notifica quando si verificano eventi. Per informazioni dettagliate sulla registrazione per ricevere la notifica degli eventi, vedere [**l'interfaccia IBackgroundCopyCallback.**](ibackgroundcopycallback.md)
+Se si vuole sapere quando un processo è in errore o ha trasferito tutti i file nel processo, è possibile usare questo metodo per eseguire il polling dello stato del processo oppure è possibile registrarsi per ricevere una notifica quando si verificano eventi. Per informazioni dettagliate sulla registrazione per ricevere la notifica degli eventi, vedere [**l'interfaccia IBackgroundCopyCallback.**](ibackgroundcopycallback.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,7 +80,7 @@ Se si desidera sapere quando un processo è in errore o ha trasferito tutti i fi
 | Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
-| IID<br/>                      | IID_IBackgroundCopyJob è definito come 37668D37-507E-4160-9316-26306D150B12<br/>               |
+| IID<br/>                      | IID_IBackgroundCopyJob definito come 37668D37-507E-4160-9316-26306D150B12<br/>               |
 
 
 

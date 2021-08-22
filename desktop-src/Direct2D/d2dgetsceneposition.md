@@ -1,9 +1,9 @@
 ---
-title: Funzione D2DGetScenePosition (D2d1effecthelpers. h)
-description: Restituisce il valore della posizione della scena di input \_ . Disponibile solo quando D2D \_ richiede \_ che \_ la posizione della scena sia dichiarata nel file di origine.
+title: Funzione D2DGetScenePosition (D2d1effecthelpers.h)
+description: Restituisce il valore dell'oggetto SCENE \_ POSITION di input. Disponibile solo quando D2D \_ REQUIRES SCENE POSITION è dichiarato nel file di \_ \_ origine.
 ms.assetid: 451E4C31-D93D-44B6-81D1-AC5FD986ACBD
 keywords:
-- Direct2D funzione D2DGetScenePosition
+- Funzione D2DGetScenePosition Direct2D
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ace0ee4d60f8c140825e41ba47de941bca09e67c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fbcd7a1ee987cf64a92aa76b0f8910bee1c9a15465872bbd3ccfe2502629f700
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119641641"
 ---
-# <a name="d2dgetsceneposition-function"></a>D2DGetScenePosition (funzione)
+# <a name="d2dgetsceneposition-function"></a>Funzione D2DGetScenePosition
 
-Restituisce il valore della posizione della scena di input \_ . Disponibile solo quando D2D \_ richiede \_ che \_ la posizione della scena sia dichiarata nel file di origine.
+Restituisce il valore dell'oggetto SCENE \_ POSITION di input. Disponibile solo quando D2D \_ REQUIRES SCENE POSITION è dichiarato nel file di \_ \_ origine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,11 +37,11 @@ Questa funzione non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce un **float4** nella posizione della scena del formato \_ .
+La funzione restituisce un **valore float4** nel formato SCENE \_ POSITION.
 
 ## <a name="remarks"></a>Commenti
 
-Nell'esempio seguente viene illustrato l'uso della funzione nella generazione di un modello di dissolvenza.
+L'esempio seguente illustra l'uso della funzione nella generazione di un modello di dissolvimento.
 
 ``` syntax
 D2D_PS_ENTRY(BlendDissolve)  
@@ -66,7 +66,7 @@ D2D_PS_ENTRY(BlendDissolve)
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D2d1effecthelpers. hlsli</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D2d1effecthelpers.hlsli</dt> </dl> |
 | DLL<br/>    | <dl> <dt>D2d1.dll</dt> </dl>                |
 
 
@@ -75,7 +75,7 @@ D2D_PS_ENTRY(BlendDissolve)
 
 <dl> <dt>
 
-[Collegamento Effect shader](effect-shader-linking.md)
+[Collegamento degli effetti shader](effect-shader-linking.md)
 </dt> <dt>
 
 [Helper HLSL](hlsl-helpers.md)

@@ -23,7 +23,7 @@ ms.locfileid: "119689191"
 
 Il comando restore copia un'immagine fissa da un file nel buffer dei frame. Questo è il contrario del [comando capture.](capture.md) I dispositivi video digitali riconoscono questo comando.
 
-Per inviare questo comando, chiamare la [**funzione mciSendString**](/previous-versions//dd757161(v=vs.85)) con il parametro *lpszCommand* impostato come indicato di seguito.
+Per inviare questo comando, chiamare la [**funzione mciSendString**](/previous-versions//dd757161(v=vs.85)) con il parametro *lpszCommand* impostato come segue.
 
 ``` syntax
 _stprintf_s(

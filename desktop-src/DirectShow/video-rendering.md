@@ -24,7 +24,7 @@ Questa sezione offre una panoramica del rendering video in DirectShow. Questa le
 
 <dl> <dt>
 
-[Attività DirectShow base](basic-directshow-tasks.md)
+[Attività di DirectShow di base](basic-directshow-tasks.md)
 </dt> <dt>
 
 [Uso del renderer di combinazione di video](using-the-video-mixing-renderer.md)

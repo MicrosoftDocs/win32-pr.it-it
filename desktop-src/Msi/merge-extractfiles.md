@@ -1,7 +1,7 @@
 ---
-description: Il metodo ExtractFiles dell'oggetto merge estrae il file con estensione cab incorporato da un modulo e quindi scrive tali file nella directory di destinazione.
+description: Il metodo ExtractFiles dell'oggetto Merge estrae il file .cab incorporato da un modulo e quindi scrive tali file nella directory di destinazione.
 ms.assetid: 846355d6-32f2-4b04-91dc-acd60445fbd9
-title: Metodo merge. ExtractFiles (Advpub. h)
+title: Metodo Merge.ExtractFiles (Advpub.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 3869dc37b841d386891eb70940054bd78805bf94
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e56d6572526e2aecfc12dc5b2bb9a365be6d3c53b6fb1707fe197c056d05c377
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926561"
 ---
-# <a name="mergeextractfiles-method"></a>Merge. ExtractFiles, metodo
+# <a name="mergeextractfiles-method"></a>Metodo Merge.ExtractFiles
 
-Il metodo **ExtractFiles** dell'oggetto [**merge**](merge-object.md) estrae il file con estensione cab incorporato da un modulo e quindi scrive tali file nella directory di destinazione.
+Il **metodo ExtractFiles** dell'oggetto [**Merge**](merge-object.md) estrae il file .cab incorporato da un modulo e quindi scrive tali file nella directory di destinazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ Merge.ExtractFiles(
 *Percorso* 
 </dt> <dd>
 
-Directory di destinazione completo.
+Directory di destinazione completa.
 
 </dd> </dl>
 
@@ -53,13 +53,13 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i file nella directory di destinazione con lo stesso nome verranno sovrascritti. Il percorso viene creato se non esiste già.
+Tutti i file nella directory di destinazione con lo stesso nome vengono sovrascritti. Il percorso viene creato se non esiste già.
 
-**ExtractFiles** estrae sempre i file usando nomi di file brevi per il percorso. Per usare nomi di file lunghi per il percorso, usare il [**Metodo ExtractFilesEx**](merge-extractfilesex.md).
+**ExtractFiles estrae** sempre i file usando nomi di file brevi per il percorso. Per usare nomi di file lunghi per il percorso, usare il [**metodo ExtractFilesEx**](merge-extractfilesex.md).
 
 ### <a name="c"></a>C++
 
-Vedere funzione [**ExtractFiles**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-extractfiles) .
+Vedere [**Funzione ExtractFiles.**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-extractfiles)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Vedere funzione [**ExtractFiles**](/windows/win32/api/mergemod/nf-mergemod-imsmm
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Mergemod.dll 1,0 o versione successiva<br/>                                                                     |
-| Intestazione<br/>  | <dl> <dt>Advpub. h (include Mergemod. h)</dt> </dl> |
+| Versione<br/> | Mergemod.dll 1.0 o versione successiva<br/>                                                                     |
+| Intestazione<br/>  | <dl> <dt>Advpub.h (includere Mergemod.h)</dt> </dl> |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl>                  |
 
 

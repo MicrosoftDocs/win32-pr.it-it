@@ -4,16 +4,16 @@ description: IAgentUserInput GetItemID
 ms.assetid: 3afd4d9d-51bb-4086-bf7b-7c9a2ddcd807
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 716ae1386d87fa6051111801c5603837519eeb4c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fde65fc10a4cb467bd69f200e3244f1a2a73c0424d64f6a4babbd2cefd18e0be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119609261"
 ---
-# <a name="iagentuserinputgetitemid"></a>IAgentUserInput:: GetItemID
+# <a name="iagentuserinputgetitemid"></a>IAgentUserInput::GetItemID
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT GetItemID(
@@ -22,16 +22,16 @@ HRESULT GetItemID(
 );
 ```
 
-Recupera l'identificatore di un'alternativa del [**comando**](command-event.md) passata a un callback [**IAgentNotifySink:: Command**](iagentnotifysink--command.md) .
+Recupera l'identificatore di [**un'alternativa Command**](command-event.md) passata a un callback [**IAgentNotifySink::Command.**](iagentnotifysink--command.md)
 
--   Restituisce \_ OK per indicare che l'operazione è stata completata.
+-   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 
 <dl> <dt>
 
 <span id="dwItemIndex"></span><span id="dwitemindex"></span><span id="DWITEMINDEX"></span>*dwItemIndex*
 </dt> <dd>
 
-Indice dell'alternativa del [**comando**](command-event.md) passato al callback [**IAgentNotifySink:: Command**](iagentnotifysink--command.md) .
+Indice dell'alternativa [**Command**](command-event.md) passata al callback [**IAgentNotifySink::Command.**](iagentnotifysink--command.md)
 
 </dd> <dt>
 
@@ -42,16 +42,16 @@ Indirizzo di una variabile che riceve l'ID di un [**comando**](command-event.md)
 
 </dd> </dl>
 
-Se l'input vocale attiva il callback [**IAgentNotifySink:: Command**](iagentnotifysink--command.md) , il server restituisce gli ID per tutti i [**comandi**](command-event.md) corrispondenti definiti dall'applicazione.
+Se l'input vocale attiva il callback [**IAgentNotifySink::Command,**](iagentnotifysink--command.md) il [](command-event.md) server restituisce gli ID per tutti i comandi corrispondenti definiti dall'applicazione.
 
 ## <a name="see-also"></a>Vedere anche
 
-[**IAgentUserInput:: GetItemConfidence**](iagentuserinput--getitemconfidence.md), [**IAgentUserInput:: GetItemText**](iagentuserinput--getitemtext.md), [**IAgentUserInput:: GetAllItemData**](iagentuserinput--getallitemdata.md)
+[**IAgentUserInput::GetItemConfidence**](iagentuserinput--getitemconfidence.md), [**IAgentUserInput::GetItemText**](iagentuserinput--getitemtext.md), [**IAgentUserInput::GetAllItemData**](iagentuserinput--getallitemdata.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

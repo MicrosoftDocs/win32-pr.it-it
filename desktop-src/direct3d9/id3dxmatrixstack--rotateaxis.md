@@ -1,5 +1,5 @@
 ---
-description: 'Metodo ID3DXMATRIXStack::RotateAxis (D3dx9math.h): ruota (rispetto allo spazio delle coordinate del mondo) intorno a un asse arbitrario.'
+description: Metodo ID3DXMATRIXStack::RotateAxis (D3dx9math.h) - Ruota (rispetto allo spazio delle coordinate del mondo) intorno a un asse arbitrario.
 ms.assetid: b7ae5195-a2af-429f-9a0d-51cd7e955362
 title: Metodo ID3DXMATRIXStack::RotateAxis (D3dx9math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3ea62b65bca73eb3fe7b2cd962e1afd9b35d53bc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6f0009eb3f6b0a2f05a76cb51261712b8b5744bff9bcc28f55449deb5d854b8e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607001"
 ---
 # <a name="id3dxmatrixstackrotateaxis-method-d3dx9mathh"></a>Metodo ID3DXMATRIXStack::RotateAxis (D3dx9math.h)
 
@@ -46,7 +46,7 @@ HRESULT RotateAxis(
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore all'asse arbitrario di rotazione. Vedere [**D3DXVECTOR3.**](d3dxvector3.md)
+Puntatore all'asse arbitrario di rotazione. Vedere [**D3DXVECTOR3**](d3dxvector3.md).
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Puntatore all'asse arbitrario di rotazione. Vedere [**D3DXVECTOR3.**](d3dxvector
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Angolo di rotazione intorno all'asse arbitrario, espresso in radianti. Gli angoli vengono misurati in senso antiorario quando si guarda lungo l'asse arbitrario verso l'origine.
+Angolo di rotazione intorno all'asse arbitrario, espresso in radianti. Gli angoli vengono misurati in senso antiorario quando si cerca lungo l'asse arbitrario verso l'origine.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo aggiunge la rotazione allo stack della matrice con la matrice di rotazione calcolata simile alla seguente:
+Questo metodo aggiunge la rotazione allo stack di matrici con la matrice di rotazione calcolata simile alla seguente:
 
 
 ```
@@ -78,7 +78,7 @@ m_stack[m_currentPos] = m_stack[m_currentPos] * tmp;
 
 
 
-Poiché la rotazione viene moltiplicata a destra per lo stack della matrice, la rotazione è relativa allo spazio delle coordinate del mondo.
+Poiché la rotazione viene moltiplicata a destra nello stack della matrice, la rotazione è relativa allo spazio delle coordinate del mondo.
 
 ## <a name="requirements"></a>Requisiti
 

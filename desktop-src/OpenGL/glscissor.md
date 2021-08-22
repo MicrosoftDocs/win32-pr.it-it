@@ -1,9 +1,9 @@
 ---
-title: funzione glScissor (GL. h)
-description: La funzione glScissor definisce la casella a forbice.
+title: Funzione glScissor (Gl.h)
+description: La funzione glScissor definisce la casella di forbice.
 ms.assetid: c06a1d20-bf7b-4283-b0fe-8bd80bece4ce
 keywords:
-- funzione glScissor OpenGL
+- Funzione glScissor OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e18559bb30260dcb4285980d8dc75642a7c9ec6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fafefaaaa3315679af2900808f581324040512816dd2211a0250375c36f824dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777821"
 ---
-# <a name="glscissor-function"></a>glScissor (funzione)
+# <a name="glscissor-function"></a>Funzione glScissor
 
-La funzione **glScissor** definisce la casella a forbice.
+La **funzione glScissor** definisce la casella di forbice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,28 +46,28 @@ void WINAPI glScissor(
 *x* 
 </dt> <dd>
 
-Coordinata x (asse verticale) dell'angolo inferiore sinistro della casella a forbice.
+Coordinata x (asse verticale) per l'angolo inferiore sinistro della casella di forbice.
 
 </dd> <dt>
 
 *y* 
 </dt> <dd>
 
-Coordinata y (asse orizzontale) per l'angolo inferiore sinistro della casella a forbice. Insieme, x e y specificano l'angolo inferiore sinistro della casella a forbice. Inizialmente (0,0).
+Coordinata y (asse orizzontale) per l'angolo inferiore sinistro della casella della forbice. Insieme, x e y specificano l'angolo inferiore sinistro della casella della forbice. Inizialmente (0,0).
 
 </dd> <dt>
 
 *width* 
 </dt> <dd>
 
-Larghezza della casella a forbice.
+Larghezza della casella di forbice.
 
 </dd> <dt>
 
 *height* 
 </dt> <dd>
 
-Altezza della casella a forbice. Quando un contesto OpenGL viene collegato per la *prima volta* a una finestra, la *larghezza* e l' *altezza* vengono impostate sulle dimensioni della finestra.
+Altezza della casella di forbice. Quando un contesto OpenGL *viene* collegato per  la prima volta a una *finestra,* la larghezza e l'altezza vengono impostate alle dimensioni di tale finestra.
 
 </dd> </dl>
 
@@ -77,30 +77,30 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Il codice di errore seguente può essere recuperato dalla funzione [**glGetError**](glgeterror.md) .
+Il codice di errore seguente può essere recuperato dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_valore GL non valido \_**</dt> </dl>     | La *larghezza* o l' *altezza* è negativa.<br/>                                                                                   |
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**VALORE GL \_ NON \_ VALIDO**</dt> </dl>     | La *larghezza o* *l'altezza* erano negative.<br/>                                                                                   |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **glScissor** definisce un rettangolo, denominato casella Scissor, nelle coordinate della finestra. I primi due parametri, *x* e *y*, specificano l'angolo inferiore sinistro della casella. I parametri *Width* e *Height* specificano la larghezza e l'altezza della casella.
+La **funzione glScissor** definisce un rettangolo, denominato casella di forbice, nelle coordinate della finestra. I primi due parametri, *x* *e y*, specificano l'angolo inferiore sinistro della casella. I *parametri width* e *height* specificano la larghezza e l'altezza della casella.
 
-Il test a forbice viene abilitato e disabilitato usando [**glEnable**](glenable.md) e **glDisable** con l'argomento \_ test a forbice GL \_ . Mentre il test di scissor è abilitato, è possibile modificare solo i pixel che si trovano all'interno della casella di forbice disegnando comandi. Le coordinate della finestra hanno valori integer negli angoli condivisi dei pixel del framebuffer, quindi **glScissor**(0, 0, 1, 1) consente di modificare solo il pixel inferiore sinistro della finestra e **glScissor**(0, 0, 0, 0) non consente la modifica a tutti i pixel nella finestra.
+Il test della forbice è abilitato e disabilitato usando [**glEnable**](glenable.md) **e glDisable con** l'argomento GL \_ SCISSOR \_ TEST. Mentre il test della forbice è abilitato, solo i pixel che si trovano all'interno della casella di forbice possono essere modificati dai comandi di disegno. Le coordinate della finestra hanno valori interi agli angoli condivisi dei pixel framebuffer, quindi **glScissor**(0,0,1,1) consente la modifica solo del pixel inferiore sinistro nella finestra e **glScissor**(0,0,0,0)non consente la modifica di tutti i pixel nella finestra.
 
-Quando il test di scissor è disabilitato, è come se la casella Scissor includa l'intera finestra.
+Quando il test della forbice è disabilitato, è come se la casella di forbice include l'intera finestra.
 
-Le funzioni seguenti consentono di recuperare informazioni correlate a **glScissor**:
+Le funzioni seguenti recuperano informazioni correlate **a glScissor**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ Scissor \_ Box
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) argomento GL \_ SCISSOR \_ BOX
 
-[**glIsEnabled**](glisenabled.md) con test della \_ forbice GL argomento \_
+[**glIsEnabled con**](glisenabled.md) argomento GL \_ SCISSOR \_ TEST
 
 ## <a name="requirements"></a>Requisiti
 
@@ -110,8 +110,8 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glSciss
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -126,7 +126,7 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glSciss
 [**glEnable**](glenable.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glIsEnabled**](glisenabled.md)

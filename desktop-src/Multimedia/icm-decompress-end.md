@@ -1,9 +1,9 @@
 ---
 title: ICM_DECOMPRESS_END messaggio (Vfw.h)
-description: Il ICM DECOMPRESS END notifica a un driver di decompressione video di terminare la decompressione e le risorse gratuite allocate per \_ \_ la decompressione. È possibile inviare questo messaggio in modo esplicito o tramite la macro ICDecompressEnd.
+description: Il ICM DECOMPRESS END notifica a un driver di decompressione video di terminare la decompressione e liberare le risorse allocate per \_ \_ la decompressione. È possibile inviare questo messaggio in modo esplicito o tramite la macro ICDecompressEnd.
 ms.assetid: 16ce2424-9606-455f-afbd-84326457538e
 keywords:
-- ICM_DECOMPRESS_END messaggio Windows Multimediali
+- ICM_DECOMPRESS_END messaggio Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119691161"
 ---
-# <a name="icm_decompress_end-message"></a>\_ICM MESSAGGIO END \_ DECOMPRESS
+# <a name="icm_decompress_end-message"></a>\_ICM DECOMPRESS \_ END message
 
-Il **ICM \_ DECOMPRESS \_ END** notifica a un driver di decompressione video di terminare la decompressione e le risorse gratuite allocate per la decompressione. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**ICDecompressEnd.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressend)
+Il **ICM \_ DECOMPRESS \_ END** notifica a un driver di decompressione video di terminare la decompressione e liberare le risorse allocate per la decompressione. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**ICDecompressEnd.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressend)
 
 
 ```C++
@@ -42,7 +42,7 @@ Restituisce ICERR \_ OK in caso di esito positivo o un errore in caso contrario.
 
 Il driver deve liberare tutte le risorse allocate per il [**ICM \_ DECOMPRESS \_ BEGIN.**](icm-decompress-begin.md)
 
-[**ICM \_ DECOMPRESS \_ BEGIN**](icm-decompress-begin.md) e **ICM \_ DECOMPRESS \_ END** non vengono annidato. Se il driver riceve ICM **\_ DECOMPRESS \_ BEGIN** prima che la decompressione venga arrestata con ICM **\_ DECOMPRESS \_ END**, deve riavviare la decompressione con nuovi parametri.
+[**ICM \_ DECOMPRESS \_ BEGIN**](icm-decompress-begin.md) e **ICM \_ DECOMPRESS \_ END** non vengono annidato. Se il driver riceve ICM **\_ DECOMPRESS \_ BEGIN** prima che la decompressione venga arrestata con **ICM \_ DECOMPRESS \_ END,** deve riavviare la decompressione con i nuovi parametri.
 
 ## <a name="requirements"></a>Requisiti
 

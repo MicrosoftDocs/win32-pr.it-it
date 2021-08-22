@@ -1,15 +1,15 @@
 ---
 description: Specifica un tipo da includere da un file XSD.
 ms.assetid: dd3894a8-1848-4ae0-ba6c-42ac4fe36ff3
-title: elemento typeUri
+title: Elemento typeUri
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c9ef0a2482354fcfd962a7e41a7c2b94b54f5cb
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 0b746a8e301d6d76e0b6dc977c1595778663c8e20860f321fd0f6c8e61980b2d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119611551"
 ---
 # <a name="typeuri-element"></a>Elemento typeUri
 
@@ -52,7 +52,7 @@ Non ci sono elementi figlio.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

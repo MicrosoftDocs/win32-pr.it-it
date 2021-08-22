@@ -20,29 +20,29 @@ ms.locfileid: "119554701"
 
 
 
-| Maschera bit                  | Gruppo di attributi |
+| Bit di maschera                  | Gruppo di attributi |
 |---------------------------|-----------------|
-| GL \_ ACCUM \_ BUFFER \_ BIT    | accum-buffer    |
+| BIT \_ DEL BUFFER ACCUM \_ GL \_    | accum-buffer    |
 | GL \_ ALL \_ ATTRIB \_ BITS     |                 |
-| BIT BUFFER COLORE GL \_ \_ \_    | color-buffer    |
+| BIT DEL \_ \_ BUFFER DEI COLORI GL \_    | buffer dei colori    |
 | GL \_ CURRENT \_ BIT          | corrente         |
-| BIT \_ BUFFER \_ DI PROFONDITÀ GL \_    | depth-buffer    |
-| GL \_ ENABLE \_ BIT           | abilitare          |
+| BIT \_ DEL BUFFER DI PROFONDITÀ \_ GL \_    | depth-buffer    |
+| BIT \_ DI ABILITAZIONE GL \_           | abilitare          |
 | GL \_ EVAL \_ BIT             | eval            |
-| GL \_ FOG \_ BIT              | Nebbia             |
+| GL \_ BIT DI \_ OSANNA              | Nebbia             |
 | GL \_ HINT \_ BIT             | hint            |
-| BIT DI ILLUMINAZIONE GL \_ \_         | illuminazione        |
+| BIT DI \_ ILLUMINAZIONE GL \_         | illuminazione        |
 | GL \_ LINE \_ BIT             | line            |
-| GL \_ LIST \_ BIT             | list            |
-| BIT MODALITÀ PIXEL GL \_ \_ \_      | pixel           |
-| BIT DEL PUNTO GL \_ \_            | point           |
+| BIT \_ DELL'ELENCO \_ DI CONTABILITÀ GENERALE             | list            |
+| BIT DELLA MODALITÀ PIXEL GL \_ \_ \_      | pixel           |
+| BIT \_ DEL PUNTO GL \_            | point           |
 | BIT \_ POLIGONO GL \_          | polygon         |
-| GL \_ POLYGON \_ STIPPLE \_ BIT | stipple poligono |
+| BIT \_ \_ STIPPLE POLIGONO GL \_ | polygon-stipple |
 | GL \_ SCISSOR \_ BIT          | Forbice         |
-| GL \_ STENCIL \_ BUFFER \_ BIT  | stencil-buffer  |
+| BIT \_ DEL BUFFER DELLO \_ STENCIL \_ GL  | stencil-buffer  |
 | BIT DI TRAMA GL \_ \_          | trama         |
-| BIT DI TRASFORMAZIONE GL \_ \_        | trasformazione       |
-| GL \_ VIEWPORT \_ BIT         | riquadro di visualizzazione        |
+| BIT \_ DI TRASFORMAZIONE GL \_        | trasformazione       |
+| BIT \_ DEL VIEWPORT \_ GL         | riquadro di visualizzazione        |
 
 
 

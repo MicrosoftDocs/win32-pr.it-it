@@ -1,27 +1,27 @@
 ---
-description: Il tipo di file di tipo semantico è uno dei tipi di formato chiave. Questo tipo è costituito da una chiave esterna nella tabella file fornita dall'utente.
+description: Il tipo di file di tipo semantico è uno dei tipi di formato chiave. Questo tipo è costituito da una chiave esterna nella tabella File fornita dall'utente.
 ms.assetid: cbcaa016-879e-48c2-93c6-b0e91e1eb9ed
 title: Tipo di file
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36b47e76f4a910b336c749a4f0d5001c8568cead
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ca7611cce64bfe036575ac611ebbf63406721085f75162b04e9163eb38840cf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119581751"
 ---
 # <a name="file-type"></a>Tipo di file
 
-Il tipo di file di [tipo semantico](semantic-types.md) è uno dei [tipi di formato chiave](key-format-types.md). Questo tipo è costituito da una chiave esterna nella [tabella file](file-table.md) fornita dall'utente.
+Il tipo di [file di tipo semantico](semantic-types.md) è uno dei [tipi di formato chiave](key-format-types.md). Questo tipo è costituito da una chiave esterna nella [tabella File](file-table.md) fornita dall'utente.
 
-Il tipo di file può essere usato con i tipi di ContextData seguenti.
+Il tipo file può essere usato con i tipi di ContextData seguenti.
 
-**ContextData AssemblyContext**
+**AssemblyContext ContextData**
 
-Questo tipo può essere utilizzato per consentire agli utenti di configurare chiavi esterne per gli assembly Win32 o Common Language Runtime. Lo strumento di merge deve sostituire un [identificatore](identifier.md) Windows Installer per gli elementi di questo tipo nel modello nella colonna valore della [tabella ModuleSubstitution](modulesubstitution-table.md). Mergemod.dll non impone questa operazione ed è lo strumento di merge per assicurarsi che l'utente fornisca una chiave valida nella tabella file.
+Questo tipo può essere usato per consentire agli utenti di configurare chiavi esterne in assembly Win32 o Common Language Runtime. Lo strumento di unione deve sostituire Windows [identificatore](identifier.md) del programma di installazione per gli elementi di questo tipo nel modello nella colonna Valore della [tabella ModuleSubstitution](modulesubstitution-table.md). Mergemod.dll questa operazione non viene applicata ed è lo strumento di unione a garantire che l'utente fornisce una chiave valida nella tabella File.
 
-Null è un valore valido per questo tipo, a meno che msmConfigItemNonNullable non sia stato incluso nel campo Attributes della [tabella ModuleConfiguration](moduleconfiguration-table.md).
+Null è un valore valido per questo tipo, a meno che msmConfigItemNonNullable non sia stato incluso nel campo Attributi della [tabella ModuleConfiguration](moduleconfiguration-table.md).
 
  
 

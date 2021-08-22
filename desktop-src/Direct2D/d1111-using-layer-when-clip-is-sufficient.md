@@ -1,5 +1,5 @@
 ---
-title: D1111 uso del livello quando la clip è sufficiente
+title: D1111 Uso del livello quando il clip è sufficiente
 ms.assetid: 07fe3c66-15be-408b-a30b-a7f52919c058
 description: Un livello viene usato con una maschera di opacità NULL, un'opacità 1,0 e una maschera geometrica rettangolare allineata all'asse. L'API Push/Pop Clip dovrebbe ottenere gli stessi risultati con prestazioni più elevate.
 keywords:

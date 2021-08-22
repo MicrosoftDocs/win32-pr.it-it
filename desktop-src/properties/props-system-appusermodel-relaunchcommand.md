@@ -1,5 +1,5 @@
 ---
-description: Specifica un comando che può essere eseguito tramite ShellExecute per avviare un'applicazione quando viene aggiunta alla barra delle applicazioni o quando viene avviata una nuova istanza dell'applicazione tramite il Jump List.
+description: Specifica un comando che può essere eseguito tramite ShellExecute per avviare un'applicazione quando viene aggiunta alla barra delle applicazioni o quando viene avviata una nuova istanza dell'applicazione tramite il Jump List dell'applicazione.
 ms.assetid: 83aab060-0629-48e3-a2db-9ba96a8631e5
 title: System.AppUserModel.RelaunchCommand
 ms.topic: article

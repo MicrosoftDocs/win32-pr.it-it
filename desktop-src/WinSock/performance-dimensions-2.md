@@ -13,9 +13,9 @@ ms.locfileid: "119641741"
 ---
 # <a name="performance-dimensions"></a>Dimensioni delle prestazioni
 
-Le prestazioni dell'applicazione variano in base alla prospettiva. Per un utente, un'applicazione ideale offre prestazioni elevate e velocità di risposta elevate. Per un amministratore, un'applicazione ideale usa la quantità minima di risorse di rete. Le prestazioni variano anche in base al tipo di applicazione. Le prestazioni per un'applicazione di trasferimento di file bulk potrebbero avere implicazioni diverse rispetto alle prestazioni per un'applicazione transazionale.
+Le prestazioni dell'applicazione variano in base alla prospettiva. Per un utente, un'applicazione ideale offre prestazioni e velocità di risposta elevate. Per un amministratore, un'applicazione ideale utilizza la quantità minima di risorse di rete. Le prestazioni variano anche in base al tipo di applicazione. Le prestazioni per un'applicazione di trasferimento di file in blocco potrebbero avere implicazioni diverse rispetto alle prestazioni per un'applicazione transazionale.
 
-Le sezioni seguenti illustrano le diverse dimensioni delle prestazioni e i tipi di applicazione e il modo in cui gli ambienti di rete influiscono sulle prestazioni.
+Le sezioni seguenti illustrano le diverse dimensioni delle prestazioni e i tipi di applicazioni e il modo in cui gli ambienti di rete influiscono sulle prestazioni.
 
 -   [Esigenze di prestazioni: utenti e amministratori](performance-needs-users-and-administrators-2.md)
 -   [Applicazioni transazionali e di streaming](transactional-versus-streaming-applications-2.md)
@@ -25,7 +25,7 @@ Le sezioni seguenti illustrano le diverse dimensioni delle prestazioni e i tipi 
 
 <dl> <dt>
 
-[Applicazioni socket Windows ad alte prestazioni](high-performance-windows-sockets-applications-2.md)
+[Applicazioni socket Windows prestazioni elevate](high-performance-windows-sockets-applications-2.md)
 </dt> </dl>
 
  

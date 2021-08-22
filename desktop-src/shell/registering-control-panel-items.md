@@ -1,5 +1,5 @@
 ---
-description: Pannello di controllo gli elementi devono essere registrati per poter essere visualizzati nella finestra Pannello di controllo.
+description: Pannello di controllo gli elementi devono essere registrati per poter essere visualizzati nella Pannello di controllo finestra.
 title: Registrazione di Pannello di controllo elementi
 ms.topic: article
 ms.date: 05/31/2018
@@ -18,7 +18,7 @@ ms.locfileid: "119661081"
 ---
 # <a name="registering-control-panel-items"></a>Registrazione di Pannello di controllo elementi
 
-Pannello di controllo gli elementi devono essere registrati per poter essere visualizzati nella finestra Pannello di controllo. Se l Pannello di controllo viene implementato come parte di un file .exe, viene registrato come oggetto comando. La registrazione è diversa se l'elemento viene implementato come file .dll che esporta la [**funzione CPlApplet.**](/windows/win32/api/cpl/nc-cpl-applet_proc)
+Pannello di controllo gli elementi devono essere registrati per poter essere visualizzati nella Pannello di controllo finestra. Se l Pannello di controllo elemento viene implementato come parte di un file .exe, viene registrato come oggetto comando. La registrazione è diversa se l'elemento viene implementato come file .dll che esporta la [**funzione CPlApplet.**](/windows/win32/api/cpl/nc-cpl-applet_proc)
 
 I requisiti specifici sono descritti negli argomenti seguenti:
 

@@ -1,9 +1,9 @@
 ---
 title: CURRENTPOSITIONTEXT
-description: Si tratta di un elemento di testo predefinito con i seguenti valori predefiniti. | CURRENTPOSITIONTEXT
+description: Si tratta di un elemento TEXT predefinito con i valori predefiniti seguenti. | CURRENTPOSITIONTEXT
 ms.assetid: 00574ead-85f2-4321-9e4e-2836be058e8c
 keywords:
-- Media Player Windows CURRENTPOSITIONTEXT
+- Oggetto CURRENTPOSITIONTEXT Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4b5b402e7eadce8a0d89856d99e84a53dd57a1a7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f869cb40d8b85ac480ed336b03f2ff94010c0e4a51f35101aa414d1e55e039da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119651611"
 ---
 # <a name="currentpositiontext"></a>CURRENTPOSITIONTEXT
 
-Si tratta di un elemento di **testo** predefinito con i seguenti valori predefiniti.
+Si tratta di un elemento **TEXT** predefinito con i valori predefiniti seguenti.
 
 ``` syntax
 value="wmpprop:player.controls.currentPositionString"
@@ -32,7 +32,7 @@ justification="right"
 
 ## <a name="remarks"></a>Commenti
 
-Verrà creato un elemento di **testo** che visualizzerà l'ora corrente del supporto riprodotto. È possibile eseguire l'override di tutte le proprietà di questo elemento di **testo** specificandone le proprietà in modo esplicito.
+Verrà creato un **elemento TEXT** che visualizza l'ora corrente del contenuto multimediale riprodotto. È possibile eseguire **l'override di tutte** le proprietà di questo elemento TEXT specificandole in modo esplicito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -40,7 +40,7 @@ Verrà creato un elemento di **testo** che visualizzerà l'ora corrente del supp
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------|
-| Versione<br/> | Windows Media Player 7,0 o versione successiva<br/> |
+| Versione<br/> | Windows Media Player 7.0 o versione successiva<br/> |
 
 
 

@@ -5,7 +5,7 @@ ms.assetid: 220db71a-31d7-45a7-a8e7-ddb4955d546e
 keywords:
 - Metodo GetCorrelationId NAP
 - Metodo GetCorrelationId NAP, interfaccia INapSystemHealthAgentRequest
-- Interfaccia INapSystemHealthAgentRequest NAP, metodo GetCorrelationId
+- Metodo GetCorrelationId dell'interfaccia INapSystemHealthAgentRequest NAP
 topic_type:
 - apiref
 api_name:
@@ -63,8 +63,8 @@ Possono essere restituiti anche altri codici di errore specifici di COM.
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | Operazione riuscita.<br/>                                    |
-| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazioni, accesso negato.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema: impossibile eseguire l'operazione.<br/> |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazione, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
 
 
 
@@ -76,8 +76,8 @@ Possono essere restituiti anche altri codici di errore specifici di COM.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                |
 | Intestazione<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagentrt.dll</dt> </dl>             |

@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectUnorderedAccessViewVariable GetUnorderedAccessView (D3dx11effect. h)
-description: Ottenere una visualizzazione di accesso non ordinato.
+title: Metodo ID3DX11EffectUnorderedAccessViewVariable GetUnorderedAccessView (D3dx11effect.h)
+description: Ottenere una visualizzazione di accesso non ordinata.
 ms.assetid: 46f61c4f-b3ee-4058-99b9-a43ca6944fb2
 keywords:
 - Metodo GetUnorderedAccessView Direct3D 11
-- Metodo GetUnorderedAccessView Direct3D 11, interfaccia ID3DX11EffectUnorderedAccessViewVariable
-- Interfaccia ID3DX11EffectUnorderedAccessViewVariable Direct3D 11, metodo GetUnorderedAccessView
+- Metodo GetUnorderedAccessView Direct3D 11, ID3DX11EffectUnorderedAccessViewVariable
+- ID3DX11EffectUnorderedAccessViewVariable interface Direct3D 11, GetUnorderedAccessView method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7743d15c2380ff4e38bdcae1d38bbd8905cbccda
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 02ccb890d7f03a2066cb7e01633f057e821e34c74521e1bba37f9694ba72a194
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104996185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676781"
 ---
-# <a name="id3dx11effectunorderedaccessviewvariablegetunorderedaccessview-method"></a>Metodo ID3DX11EffectUnorderedAccessViewVariable:: GetUnorderedAccessView
+# <a name="id3dx11effectunorderedaccessviewvariablegetunorderedaccessview-method"></a>Metodo ID3DX11EffectUnorderedAccessViewVariable::GetUnorderedAccessView
 
-Ottenere una visualizzazione di accesso non ordinato.
+Ottenere una visualizzazione di accesso non ordinata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ HRESULT GetUnorderedAccessView(
 
 Tipo: **[ **ID3D11UnorderedAccessView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11unorderedaccessview)\*\***
 
-Puntatore a un puntatore [**ID3D11UnorderedAccessView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11unorderedaccessview) che verrà impostato al ritorno.
+Puntatore a [**un puntatore ID3D11UnorderedAccessView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11unorderedaccessview) che verrà impostato in fase di restituzione.
 
 </dd> </dl>
 
@@ -56,12 +56,12 @@ Puntatore a un puntatore [**ID3D11UnorderedAccessView**](/windows/desktop/api/D3
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei codici [restituiti Direct3D 11 seguenti.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra gli effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-refe
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

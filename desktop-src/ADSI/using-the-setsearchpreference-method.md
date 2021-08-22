@@ -5,7 +5,7 @@ ms.assetid: 37583276-8372-4478-82aa-3e456cc0f8f1
 ms.tgt_platform: multiple
 keywords:
 - SetSearchPreference ADSI con il metodo SetSearchPreference
-- ADSI ADSI , codice di esempio C/C++, con il metodo SetSearchPreference
+- ADSI ADSI , codice di esempio C/C++ , con il metodo SetSearchPreference
 - esegue query ad ADSI usando SetSearchPreference
 ms.topic: article
 ms.date: 05/31/2018
@@ -53,7 +53,7 @@ hr = pDSearch->SetSearchPreference(&arSearchPrefs, 2);
 
 
 
-Questo esempio imposta le dimensioni della pagina su 100 righe e l'ambito sul tipo ADS \_ SCOPE \_ SUBTREE. L'impostazione delle dimensioni della pagina determina la restituzione immediata dei dati al client da parte del server, dopo il calcolo di 100 righe. L'impostazione ADS SCOPE SUBTREE fa sì che la ricerca comprersi in tutti i rami dell'albero sotto il punto da cui viene \_ \_ eseguita la ricerca.
+Questo esempio imposta le dimensioni della pagina su 100 righe e l'ambito sul tipo ADS \_ SCOPE \_ SUBTREE. L'impostazione delle dimensioni della pagina fa sì che il server restituirà immediatamente i dati al client, dopo il calcolo di 100 righe. L'impostazione ADS SCOPE SUBTREE fa sì che la ricerca comprersi in tutti i rami dell'albero sotto il punto da cui viene \_ \_ eseguita la ricerca.
 
  
 

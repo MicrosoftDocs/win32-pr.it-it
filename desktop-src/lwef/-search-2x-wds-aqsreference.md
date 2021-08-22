@@ -1,39 +1,39 @@
 ---
 title: Sintassi di ricerca avanzata
-description: La sintassi di query avanzata (AQS) viene utilizzata da Microsoft Windows Desktop Search (WDS) per aiutare gli utenti e i programmatori a definire e restringere meglio le ricerche.
+description: La sintassi di query avanzata (AQS) viene usata da Microsoft Windows Desktop Search (WDS) per consentire a utenti e programmatori di definire e limitare meglio le ricerche.
 ms.assetid: 8e55bd40-c7cf-44a6-bc18-24bc7a267779
 ms.topic: article
 ms.date: 05/19/2020
-ms.openlocfilehash: bd00821e60c8d950a7ec384b62d7ff062066f224
-ms.sourcegitcommit: 8bba855bfee06d018edb16c1af70fa4d4344445b
+ms.openlocfilehash: 2daf552f8f750335abacea4b550f92bd71c91c9b2b688a387b035a8180a8b3dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "106299497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119601821"
 ---
 # <a name="advanced-query-syntax"></a>Sintassi di ricerca avanzata
 
 > [!NOTE]
-> Windows Desktop Search 2. x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [Windows Search](../search/-search-3x-wds-overview.md) .
+> Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [Windows ricerca.](../search/-search-3x-wds-overview.md)
 
-La sintassi di query avanzata (AQS) viene utilizzata da Microsoft Windows Desktop Search (WDS) per aiutare gli utenti e i programmatori a definire e restringere meglio le ricerche. L'uso di AQS è un modo semplice per limitare le ricerche e fornire migliori set di risultati. È possibile limitare le ricerche con i parametri seguenti:
+La sintassi di query avanzata (AQS) viene usata da Microsoft Windows Desktop Search (WDS) per consentire a utenti e programmatori di definire e limitare meglio le ricerche. L'uso di AQS è un modo semplice per restringere le ricerche e offrire set di risultati migliori. Le ricerche possono essere ristrette con i parametri seguenti:
 
 -   Tipi di file: cartelle, documenti, presentazioni, immagini e così via.
--   Archivi di file: database e percorsi specifici.
--   Proprietà file: dimensioni, data, titolo e così via.
--   Contenuto del file: parole chiave come "risultati del progetto", "AQS", "Blue Suede Shoes" e così via.
+-   Archivi file: database e percorsi specifici.
+-   Proprietà del file: dimensioni, data, titolo e così via.
+-   Contenuto del file: parole chiave come "risultati finali del progetto", "AQS", "scarpe blu in suede" e così via.
 
-Inoltre, i parametri di ricerca possono essere combinati usando gli operatori di ricerca. Nella parte restante di questa sezione vengono illustrati la sintassi di query, i parametri e gli operatori e il modo in cui possono essere combinati per offrire risultati di ricerca mirati. Le tabelle descrivono la sintassi da utilizzare con WDS, nonché le proprietà su cui è possibile eseguire query per ogni tipo di file visualizzato nella finestra Risultati **ricerca desktop di Windows** .
+Inoltre, i parametri di ricerca possono essere combinati usando gli operatori di ricerca. Nella parte restante di questa sezione vengono illustrati la sintassi di query, i parametri e gli operatori e il modo in cui possono essere combinati per offrire risultati di ricerca mirati. Le tabelle descrivono la sintassi da usare con Servizi di distribuzione Windows, nonché le proprietà su cui è possibile eseguire query per ogni tipo di file visualizzato nella finestra dei risultati di Windows **Desktop Search.**
 
-## <a name="desktop-search-syntax"></a>Sintassi di ricerca desktop
+## <a name="desktop-search-syntax"></a>Sintassi di Desktop Search
 
-Una query di ricerca può includere una o più parole chiave, con operatori booleani e criteri facoltativi. Questi criteri facoltativi possono restringere una ricerca basata sugli elementi seguenti:
+Una query di ricerca può includere una o più parole chiave, con operatori booleani e criteri facoltativi. Questi criteri facoltativi possono restringere una ricerca in base a quanto segue:
 
--   Ambito o archivio dati in cui risiedono i file
+-   Ambito o archivio dati in cui si trovano i file
 -   Tipi di file
 -   Proprietà gestite dei file
 
-I criteri facoltativi, descritti in modo più dettagliato dopo, usano la sintassi seguente:
+I criteri facoltativi, descritti più dettagliatamente di seguito, usano la sintassi seguente:
 
 `<scope name>:<value>`
 
@@ -41,57 +41,57 @@ I criteri facoltativi, descritti in modo più dettagliato dopo, usano la sintass
 
 `<property name>:<value>`
 
-Si supponga che un utente desideri cercare un documento contenente la frase "ultimo trimestre", creato da John o Joanne, e che l'utente abbia salvato nella cartella documenti. La query potrebbe essere simile alla seguente:
+Si supponga che un utente voglia cercare un documento contenente la frase "last quarter", creata da John o Johnne, e che l'utente abbia salvato nella cartella mydocuments. La query può essere simile alla seguente:
 
 `"last quarter" author:(john OR joanne) foldername:mydocuments`
 
-### <a name="scope-locations-and-data-stores"></a>Ambito: posizioni e archivi dati
+### <a name="scope-locations-and-data-stores"></a>Ambito: percorsi e archivi dati
 
-Gli utenti possono limitare l'ambito delle proprie ricerche a percorsi di cartelle o archivi dati specifici. Se, ad esempio, si utilizzano più account di posta elettronica e si desidera limitare una query a Microsoft Outlook o Microsoft Outlook Express, è possibile `store:outlook` utilizzare `store:oe` rispettivamente o.
+Gli utenti possono limitare l'ambito delle ricerche a percorsi di cartelle o archivi dati specifici. Ad esempio, se si usano più account di posta elettronica e si vuole limitare una query a Microsoft Outlook o Microsoft Outlook Express, è possibile usare rispettivamente o `store:outlook` `store:oe` .
 
 
 
-| Limita la ricerca per archivio dati | Uso              | Esempio                                  |
+| Limitare la ricerca in base all'archivio dati | Uso              | Esempio                                  |
 |-------------------------------|------------------|------------------------------------------|
-| Desktop                       | desktop          | Archivio: desktop                            |
-| File                         | files            | Archivio: file                              |
-| Outlook                       | Outlook          | Archivio: Outlook                            |
-| Outlook Express               | OE               | Archivio: OE                                 |
-| Cartella specifica               | FolderName o in | FolderName: documenti o in: documenti |
+| Desktop                       | desktop          | store:desktop                            |
+| File                         | files            | store:files                              |
+| Outlook                       | Outlook          | store:outlook                            |
+| Outlook Express               | Oe               | store:oe                                 |
+| Cartella specifica               | foldername o in | foldername:MyDocuments o in:MyDocuments |
 
 
 
  
 
-Se si dispone di un gestore di protocollo per eseguire la ricerca per indicizzazione di archivi personalizzati, ad esempio Lotus Notes, è possibile usare il nome dell'archivio o del gestore del protocollo per l'archivio. Se, ad esempio, è stato implementato un gestore di protocollo per includere un archivio dati Lotus Notes come "note", la sintassi della query sarà `store:notes` .
+Se è presente un gestore di protocollo per la ricerca per indicizzazione negli archivi personalizzati, ad esempio Lotus Notes, è possibile usare il nome dell'archivio o del gestore di protocollo per l'archivio. Ad esempio, se è stato implementato un gestore di protocollo per includere un archivio dati Lotus Notes come "notes", la sintassi della query sarà `store:notes` .
 
 ### <a name="common-file-kinds"></a>Tipi di file comuni
 
-Gli utenti possono anche limitare le proprie ricerche a specifici tipi di file, chiamati tipi di file. La tabella seguente elenca i tipi di file e offre esempi della sintassi usata per cercare questi tipi di file.
+Gli utenti possono anche limitare le ricerche a tipi specifici di file, detti tipi di file. La tabella seguente elenca i tipi di file e offre esempi della sintassi usata per cercare questi tipi di file.
 
 
 
-| Per limitare il tipo di file:       | Uso              | Esempio                        |
+| Per limitare in base al tipo di file:       | Uso              | Esempio                        |
 |---------------------------------|------------------|--------------------------------|
-| Tutti i tipi di file                  | tutto       | Tipo: tutto                |
-| Comunicazioni                  | (DIP) interno   | Tipo: comunicazioni            |
-| Contatti                        | contatti         | Kind: contatti                  |
-| Posta elettronica                          | email            | Tipo: posta elettronica                     |
-| Conversazioni di messaggistica immediata | messaggistica immediata               | Tipo: im                        |
-| Riunioni                        | riunioni         | Tipo: riunioni                  |
-| Attività                           | attività            | Tipo: attività                     |
-| Note                           | di HDInsight            | Kind: note                     |
-| Documenti                       | docs             | Tipo: docs                      |
-| Documenti di testo                  | text             | Kind: testo                      |
-| Fogli di calcolo                    | fogli     | Tipo: fogli di calcolo              |
-| Presentazioni                   | presentazioni    | Tipo: presentazioni             |
-| Musica                           | music            | Kind: musica                     |
-| Immagini                        | pics             | Kind: pics                      |
-| Video                          | videos           | Kind: video                    |
-| Cartelle                         | cartelle          | Kind: cartelle                   |
-| Nome cartella                     | FolderName o in | FolderName: docs o in: docs |
-| Preferiti                       | Preferiti        | Kind: Preferiti                 |
-| Programmi                        | programmi         | Kind: programmi                  |
+| Tutti i tipi di file                  | Tutto       | kind:everything                |
+| Comunicazioni                  | (DIP) interno   | kind:communications            |
+| Contatti                        | contatti         | kind:contacts                  |
+| Posta elettronica                          | email            | kind:email                     |
+| Conversazioni di Instant Messenger | Im               | kind:im                        |
+| Riunioni                        | Riunioni         | kind:meetings                  |
+| Attività                           | attività            | kind:tasks                     |
+| Note                           | di HDInsight            | kind:notes                     |
+| Documenti                       | docs             | kind:docs                      |
+| Documenti di testo                  | text             | kind:text                      |
+| Fogli di calcolo                    | Fogli     | kind:spreadsheets              |
+| Presentazioni                   | presentazioni    | kind:presentations             |
+| Musica                           | music            | kind:music                     |
+| Immagini                        | Foto             | kind:pics                      |
+| Video                          | videos           | kind:videos                    |
+| Cartelle                         | cartelle          | kind:folders                   |
+| Nome cartella                     | foldername o in | foldername:mydocs o in:mydocs |
+| Preferiti                       | Preferiti        | kind:favorites                 |
+| Programmi                        | programmi         | kind:programs                  |
 
 
 
@@ -99,20 +99,20 @@ Gli utenti possono anche limitare le proprie ricerche a specifici tipi di file, 
 
 ### <a name="boolean-operators"></a>Operatori booleani
 
-È possibile combinare le parole chiave di ricerca e le proprietà del file per ampliare o restringere una ricerca con gli operatori. Nella tabella seguente vengono illustrati gli operatori comuni utilizzati in una query di ricerca.
+Le parole chiave di ricerca e le proprietà dei file possono essere combinate per ampliare o restringere una ricerca con operatori. Nella tabella seguente vengono illustrati gli operatori comuni usati in una query di ricerca.
 
 
 
 | Parola chiave/simbolo  | Esempio                                              | Funzione                                                                                                       |
 |-----------------|-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| NOT             | sicurezza sociale<br/>                        | Trova elementi che contengono *Social*, ma non di *sicurezza*.<br/>                                              |
-|                 | sicurezza sociale<br/>                           | Trova elementi che contengono *Social Network* e *sicurezza*.<br/>                                              |
-| OR              | social networking o sicurezza<br/>                         | Trova elementi che contengono *Social* networking o *sicurezza*.<br/>                                                    |
-| Virgolette | "Social Security"<br/>                          | Trova gli elementi che contengono la frase esatta *sulla sicurezza sociale*.<br/>                                        |
-| Parentesi     | (Social Security)<br/>                          | Trova gli elementi che contengono *Social* e *Security* in qualsiasi ordine.<br/>                                      |
-| >            | Data: >11/05/04<br/> Dimensioni: >500<br/>  | Trova gli elementi con una data successiva al 11/05/04. <br/> Trova elementi con una dimensione maggiore di 500 byte.<br/> |
-| <            | Data: <11/05/04 <br/> Dimensioni: <500<br/> | Trova gli elementi con una data precedente alla 11/05/04. <br/> Trova elementi con una dimensione inferiore a 500 byte.<br/>   |
-| ..              | Data: 11/05/04.. 11/10/04<br/>                    | Trova gli elementi con una data che inizia il 11/05/04 e termina con 11/10/04.<br/>                               |
+| NOT             | social NOT security<br/>                        | Trova gli elementi che contengono *social*, ma non *la sicurezza*.<br/>                                              |
+|                 | sicurezza sociale<br/>                           | Trova gli elementi che contengono *social* e *sicurezza.*<br/>                                              |
+| OR              | social or security<br/>                         | Trova gli elementi che contengono *social network* o *security.*<br/>                                                    |
+| Virgolette | "sicurezza sociale"<br/>                          | Trova gli elementi che contengono la frase esatta *social security.*<br/>                                        |
+| Parentesi     | (sicurezza sociale)<br/>                          | Trova gli elementi che contengono *social* network *e sicurezza* in qualsiasi ordine.<br/>                                      |
+| >            | date:>05/11/04<br/> size:>500<br/>  | Trova gli elementi con una data successiva al 05/11/04. <br/> Trova gli elementi con dimensioni maggiori di 500 byte.<br/> |
+| <            | date:<05/11/04 <br/> size:<500<br/> | Trova gli elementi con una data precedente al 05/11/04. <br/> Trova gli elementi con dimensioni inferiori a 500 byte.<br/>   |
+| ..              | date:11/05/04..11/10/04<br/>                    | Trova gli elementi con una data che inizia il 05/11/04 e termina il 10/11/04.<br/>                               |
 
 
 
@@ -120,26 +120,26 @@ Gli utenti possono anche limitare le proprie ricerche a specifici tipi di file, 
 
 > [!Note]
 >
-> Gli operatori **not** e **or** devono essere in lettere maiuscole e non possono essere combinati in un'unica query (ad esempio, `social OR security NOT retirement` ).
+> Gli operatori **NOT** **e OR** devono essere in maiuscolo e non possono essere combinati in una query ( ad esempio `social OR security NOT retirement` ).
 
  
 
 ### <a name="boolean-properties"></a>Proprietà booleane
 
-Alcuni tipi di file consentono agli utenti di cercare i file usando le proprietà booleane, come descritto nella tabella seguente.
+Alcuni tipi di file consentono agli utenti di cercare file usando proprietà booleane, come descritto nella tabella seguente.
 
 
 
 | Proprietà       | Esempio                   | Funzione                                                                                                        |
 |----------------|---------------------------|-----------------------------------------------------------------------------------------------------------------|
-| è: allegato  | report: allegato      | Trova gli elementi con allegati che contengono il *report*. Uguale a `isattachment:true`.                           |
-| IsOnline      | report di linea: true      | Trova gli elementi online e che contengono il *report*.                                                         |
-| IsRecurring   | IsRecurring report: true   | Trova gli elementi che sono ricorrenti e che contengono il *report*.                                                       |
-| con flag:     | flag di segnalazione: true     | Trova gli elementi contrassegnati (revisione, completamento, ad esempio) e che contengono il *report*.                       |
-| IsDeleted     | report da eliminare: true     | Trova gli elementi contrassegnati come eliminati (ad esempio, cestino o elementi eliminati) e che contengono *report*. |
-| IsCompleted   | il report è stato completato: false  | Trova gli elementi che non sono contrassegnati come completi e che contengono il *report*.                                        |
-| hasattachment: | HasAttachment report: true | Trova gli elementi contenenti il *report* e con allegati                                                          |
-| HasFlag       | HasFlag report: true       | Trova gli elementi contenenti il *report* e i flag.                                                                |
+| is:attachment  | report is:attachment      | Trova gli elementi con allegati che contengono *report*. Uguale a `isattachment:true`.                           |
+| isonline:      | report isonline:true      | Trova gli elementi online che contengono il *report*.                                                         |
+| è ricorrente:   | report isrecurring:true   | Trova gli elementi ricorrenti che contengono *report*.                                                       |
+| isflagged:     | report isflagged:true     | Trova gli elementi contrassegnati (ad esempio Review, Follow up) e che contengono *report*.                       |
+| Isdeleted:     | report isdeleted:true     | Trova gli elementi contrassegnati come eliminati (Cestino o Elementi eliminati, ad esempio) e che contengono *report*. |
+| Iscompleted:   | report iscompleted:false  | Trova gli elementi che non sono contrassegnati come completi e che contengono *report*.                                        |
+| hasattachment: | report hasattachment:true | Trova gli elementi *contenenti report* e allegati                                                          |
+| hasflag:       | report hasflag:true       | Trova gli elementi *contenenti report* e con flag.                                                                |
 
 
 
@@ -147,14 +147,14 @@ Alcuni tipi di file consentono agli utenti di cercare i file usando le propriet�
 
 ### <a name="dates"></a>Date
 
-Oltre a eseguire ricerche su date e intervalli di date specifici usando gli operatori descritti in precedenza, AQS consente valori relativi alla data, ad esempio `today` , `tomorrow` o, e al `next week` giorno (come `Tuesday` o `Monday..Wednesday` ) e ai valori month ( `February` ).
+Oltre a eseguire ricerche in date e intervalli di date specifici usando gli operatori descritti in precedenza, AQS consente valori di data relativi (ad esempio , o ) e valori di giorno (ad esempio o ) e di `today` `tomorrow` mese ( `next week` `Tuesday` `Monday..Wednesday` `February` ).
 
 
 
 | Relativo a:    | Esempio di sintassi                                                                                                                         | Risultato                                                                                                                                                                                                                                                                                                                                                    |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Giorno             | Data: oggi<br/> Data: domani<br/> Data: ieri<br/>                                                               | Trova gli elementi con la data odierna.<br/> Trova gli elementi con la data di domani.<br/> Trova gli elementi con la data di ieri. <br/>                                                                                                                                                                                                                     |
-| Settimana/mese/anno | Data: settimana corrente<br/> Data: Ultima settimana<br/> Data: mese successivo<br/> Data: ultimo mese<br/> Data: anno prossimo <br/> | Trova gli elementi con una data che rientra nella settimana corrente.<br/> Trova gli elementi con una data che rientra nella settimana precedente.<br/> Trova gli elementi con una data che rientra nella settimana successiva.<br/> Trova gli elementi con una data che rientra nel mese precedente.<br/> Trova gli elementi con una data che rientra nell'anno imminente. <br/> |
+| Giorno             | date:today<br/> date:tomorrow<br/> date:yesterday<br/>                                                               | Trova gli elementi con la data odierna.<br/> Trova gli elementi con la data di domani.<br/> Trova gli elementi con la data di ieri. <br/>                                                                                                                                                                                                                     |
+| Settimana/mese/anno | date:this week<br/> date:last week<br/> date:next month<br/> date:past month<br/> date:coming year <br/> | Trova gli elementi con una data che rientra nella settimana corrente.<br/> Trova gli elementi con una data che rientra nella settimana precedente.<br/> Trova gli elementi con una data che rientra nella settimana successiva.<br/> Trova gli elementi con una data che rientra nel mese precedente.<br/> Trova gli elementi con una data che rientra nell'anno successivo. <br/> |
 
 
 
@@ -162,41 +162,41 @@ Oltre a eseguire ricerche su date e intervalli di date specifici usando gli oper
 
 ## <a name="properties-by-file-kind"></a>Proprietà per tipo di file
 
-Gli utenti possono cercare proprietà specifiche di diversi tipi di file. Alcune proprietà, ad esempio le dimensioni dei file, sono comuni a tutti i file, mentre altre sono limitate a un tipo specifico. Il numero di diapositive, ad esempio, è specifico per le presentazioni. Nelle tabelle seguenti vengono elencate le proprietà in base al tipo di file.
+Gli utenti possono cercare proprietà specifiche di tipi di file diversi. Alcune proprietà, ad esempio le dimensioni del file, sono comuni a tutti i file, mentre altre sono limitate a un tipo specifico. Il numero di diapositive, ad esempio, è specifico per le presentazioni. Le tabelle seguenti elencano queste proprietà in base al tipo di file.
 
-### <a name="file-kind-everything"></a>Tipo di file: tutto
+### <a name="file-kind-everything"></a>Tipo di file: Tutto
 
 Si tratta di proprietà comuni a tutti i tipi di file. Per includere tutti i tipi di file in una query, la sintassi è:
 
 `kind:everything <property>:<value>`
 
-dove `<property>` è una proprietà elencata di seguito ed `<value>` è il termine di ricerca specificato dall'utente.
+dove `<property>` è una proprietà elencata di seguito e è il termine di ricerca specificato `<value>` dall'utente.
 
 
 
 | Proprietà       | Uso                      | Esempio                        |
 |----------------|--------------------------|--------------------------------|
-| Titolo          | titolo, soggetto o informazioni  | title: "trimestrale Financial"    |
-| Stato         | status                   | stato: completato                |
-| Data           | data                     | Data: Ultima settimana                 |
-| Data modifica  | DateModified o modificato | modificato: Ultima settimana             |
-| Importanza     | importanza o priorità   | importanza: elevata                |
-| Dimensione           | size                     | Dimensioni: > 50                   |
-| Eliminata        | eliminata o eliminata     | con eliminazione: true                 |
-| Allegato  | associazione             | alconnessione: true              |
-| A             | a o toName             | a: Bob                         |
-| Cc             | CC o ccname             | CC: John                        |
-| Company        | company                  | società: Microsoft              |
-| Location       | posizione                 | Località: "sala riunioni 102" |
-| Category       | category                 | Categoria: business              |
-| Parole chiave       | keywords                 | Parole chiave: "proiezioni delle vendite"   |
-| Album          | album                    | album: "Fly by Night"           |
-| Nome file      | nome file o file         | nome file: Resume              |
-| Genre          | genre                    | genere: Rock                     |
-| Autore         | autore o             | autore: "Stephen King"          |
-| Persone         | utenti o con           | con: (Sonja o David)          |
-| Cartella         | cartella, in o percorso    | cartella: download               |
-| Estensione file | EXT o fileext           | ext:.txt                       |
+| Titolo          | title, subject o about  | title:"Quarterly Financial"    |
+| Stato         | status                   | status:complete                |
+| Data           | data                     | date:last week                 |
+| Data modifica  | datemodified o modified | modified:last week             |
+| Importanza     | priorità o priorità   | importance:high                |
+| Dimensione           | size                     | size:> 50                   |
+| Eliminata        | eliminato o eliminato     | isdeleted:true                 |
+| Allegato  | isattachment             | isattachment:true              |
+| Per             | to o toname             | to:bob                         |
+| Cc             | cc o ccname             | cc:john                        |
+| Company        | company                  | company:Microsoft              |
+| Località       | posizione                 | location:"Conference Room 102" |
+| Category       | category                 | category:Business              |
+| Parole chiave       | keywords                 | keywords:"proiezioni di vendita"   |
+| Album          | Album                    | album:"Fly by Night"           |
+| Nome file      | nome file o file         | filename:MyResume              |
+| Genre          | genre                    | genre:rock                     |
+| Autore         | author o by             | author:"Stephen King"          |
+| Persone         | persone o con           | with:(sonja o david)          |
+| Cartella         | cartella, in o percorso    | cartella:download               |
+| Estensione file | ext o fileext           | ext:.txt                       |
 
 
 
@@ -208,13 +208,13 @@ Si tratta di proprietà comuni agli allegati. Per limitare la ricerca solo agli 
 
 `kind:attachment <property>:<value>`
 
-dove `<property>` è una proprietà elencata di seguito ed `<value>` è il termine di ricerca specificato dall'utente.
+dove `<property>` è una proprietà elencata di seguito e è il termine di ricerca specificato `<value>` dall'utente.
 
 
 
 | Proprietà | Uso            | Esempio                  |
 |----------|----------------|--------------------------|
-| Persone   | utenti o con | persone: John o con: John |
+| Persone   | persone o con | people:john o with:john |
 
 
 
@@ -226,37 +226,37 @@ Si tratta di proprietà comuni ai contatti. Per limitare la ricerca solo ai cont
 
 `kind:contacts <property>:<value>`
 
-dove `<property>` è una proprietà elencata di seguito ed `<value>` è il termine di ricerca specificato dall'utente.
+dove `<property>` è una proprietà elencata di seguito e è il termine di ricerca specificato `<value>` dall'utente.
 
 
 
 | Proprietà              | Uso                 | Esempio                            |
 |-----------------------|---------------------|------------------------------------|
-| Posizione             | jobtitle            | JobTitle: CFO                       |
-| Indirizzo IM            | imindirizzo           | imindirizzo: Giorgio\_doe@msn.com        |
-| Telefono dell'assistente     | assistantsphone     | assistantsphone: 555-3323           |
-| Nome assistente        | AssistantName consente       | AssistantName: Paul                 |
-| Profession            | professione          | professione: idraulico                 |
-| Nome alternativo              | nickname            | nome alternativo: Tex                       |
-| Coniuge                | coniuge              | sposo: Debbie                      |
-| Città del business         | businesscity        | businesscity: Seattle               |
-| Codice postale aziendale  | businesspostalcode  | businesspostalcode: 98006           |
-| home page aziendali    | businesshomepage    | BusinessHomePage: www. Microsoft. com |
-| Numero di telefono di callback | callbackphonenumber | callbackphonenumber: 555-555-2121   |
-| Telefono auto             | Carphone            | Carphone: 555-555-2121              |
-| Children              | figli            | elementi figlio: Timmy                     |
-| Nome            | firstname           | Nome: John                     |
-| Cognome             | lastname            | Cognome: Doe                       |
-| Fax Home              | homefax             | homefax: 555-555-2121               |
-| Nome del Manager        | ManagerName        | ManagerName: John                  |
-| Cercapersone                 | pager               | cercapersone: 555-555-2121                 |
-| Telefono ufficio        | BusinessPhone       | BusinessPhone: 555-555-2121         |
-| Telefono abitazione            | homePhone           | HomePhone: 555-555-2121             |
-| Cellulare          | mobilephone         | mobilephone: 555-555-2121           |
-| Office                | office              | Office: esempio                      |
-| Dell'anniversario           | dell'anniversario         | anniversario: 1/1/06                 |
-| Data di nascita              | compleanno            | compleanno: 1/1/06                    |
-| Pagina Web              | pagina Web             | pagina Web: www. Microsoft. com          |
+| Posizione             | jobtitle            | jobtitle:CFO                       |
+| Indirizzo di messaggistica immediata            | imaddress           | imaddress:john\_doe@msn.com        |
+| Telefono dell'assistente     | assistantsphone     | assistantsphone:555-3323           |
+| Nome dell'assistente        | assistantname       | assistantname:Paul                 |
+| Profession            | Professione          | plumb:plumber                 |
+| Nome alternativo              | nickname            | nome alternativo:Tex                       |
+| Coniuge                | Coniuge              | taser:Debbie                      |
+| Città aziendale         | businesscity        | businesscity:Seattle               |
+| Codice postale aziendale  | businesspostalcode  | businesspostalcode:98006           |
+| Attività home page    | businesshomepage    | businesshomepage:www.microsoft.com |
+| Numero di telefono di callback | callbackphonenumber | callbackphonenumber:555-555-2121   |
+| Telefono dell'auto             | Carphone            | carphone:555-555-2121              |
+| Children              | figli            | children:Timmy                     |
+| Nome            | firstname           | firstname:John                     |
+| Cognome             | lastname            | lastname:Doe                       |
+| Home fax              | homefax             | homefax:555-555-2121               |
+| Nome del responsabile        | managersname        | managersname:John                  |
+| Cercapersone                 | pager               | pager:555-555-2121                 |
+| Telefono ufficio        | businessphone       | businessphone:555-555-2121         |
+| Telefono abitazione            | homePhone           | homephone:555-555-2121             |
+| Cellulare          | Mobilephone         | mobilephone:555-555-2121           |
+| Office                | office              | office:sample                      |
+| Anniversario           | Anniversario         | anniversary:1/1/06                 |
+| Data di nascita              | Compleanno            | 1/1/06                    |
+| Pagina Web              | Sito web             | webpage:www.microsoft.com          |
 
 
 
@@ -264,7 +264,7 @@ dove `<property>` è una proprietà elencata di seguito ed `<value>` è il termi
 
 > [!Note]
 >
-> I numeri di telefono vengono indicizzati come immessi. Se, ad esempio, un utente non include un paese o un codice di area quando immette il numero di telefono, gli utenti non saranno in grado di individuare un contatto in caso di ricerca con il codice paese o area nel numero di telefono.
+> Telefono i numeri vengono indicizzati come immessi. Ad esempio, se un utente non ha incluso un codice paese o area geografica quando immette il numero di telefono, gli utenti non saranno in grado di individuare un contatto se si esegue una ricerca con il codice paese o area geografica nel numero di telefono.
 
  
 
@@ -274,26 +274,26 @@ Si tratta di proprietà comuni alle comunicazioni. Per limitare la ricerca solo 
 
 `kind:communications <property>:<value>`
 
-dove `<property>` è una proprietà elencata di seguito ed `<value>` è il termine di ricerca specificato dall'utente.
+dove `<property>` è una proprietà elencata di seguito e è il termine di ricerca specificato `<value>` dall'utente.
 
 
 
 | Proprietà       | Uso                           | Esempio                         |
 |----------------|-------------------------------|---------------------------------|
-| Da           | da o dall'organizzatore             | da: Giorgio                       |
-| Ricevuto       | ricevute o inviate              | Inviato: ieri                  |
-| Oggetto        | oggetto o titolo              | oggetto: "trimestrale Financial"   |
-| Con allegato | HasAttachments, HasAttachment | HasAttachment: true              |
+| Da           | da o libreria             | from:john                       |
+| Ricevuto       | ricevuto o inviato              | sent:yesterday                  |
+| Oggetto        | oggetto o titolo              | subject:"Quarterly Financial"   |
+| Ha un allegato | hasattachments, hasattachment | hasattachment:true              |
 | Allegati    | allegati o allegati     | attachment:presentation.ppt     |
-| Bcc            | Ccn, bccname o bccaddress    | Ccn: Dave                        |
-| Indirizzo CC     | ccaddress o CC               | ccaddress: Giorgio\_doe@outlook.com |
-| Flag di completamento | followupflag                  | followupflag: 2                  |
-| Scadenza       | DueDate o scadenza                | scadenza: Ultima settimana                   |
-| Lettura           | lettura o lettura                | is: Read                         |
-| Completato   | IsCompleted                   | è: completato                    |
-| Incompleto     | Incomplete o incomplete    | is: incompleto                   |
-| Con flag       | HasFlag o con contrassegno          | con: Flag                        |
-| Duration       | duration                      | Durata: > 50                |
+| Bcc            | bcc, bccname o bccaddress    | bcc:dave                        |
+| Indirizzo Cc     | ccaddress o cc               | ccaddress:john\_doe@outlook.com |
+| Flag di follow-up | flag di followup                  | followupflag:2                  |
+| Data di scadenza       | duedate o due                | due:last week                   |
+| Read           | read o isread                | is:read                         |
+| Operazione completata   | Iscompleted                   | is:completed                    |
+| Incompleto     | incompleto o isincomplete    | is:incomplete                   |
+| Ha un flag       | hasflag o isflagged          | has:flag                        |
+| Durata       | duration                      | duration:> 50                |
 
 
 
@@ -305,14 +305,14 @@ Si tratta di proprietà comuni ai calendari. Per limitare la ricerca solo ai cal
 
 `kind:calendar <property>:<value>`
 
-dove `<property>` è una proprietà elencata di seguito ed `<value>` è il termine di ricerca specificato dall'utente.
+dove `<property>` è una proprietà elencata di seguito e è il termine di ricerca specificato `<value>` dall'utente.
 
 
 
 | Proprietà  | Uso                      | Esempio          |
 |-----------|--------------------------|------------------|
-| Periodica | ricorrente o IsRecurring | is: ricorrente     |
-| Organizzatore | libreria, da o da    | libreria: Debbie |
+| Periodica | ricorrente o ricorrente | is:recurring     |
+| Organizzatore | organizzatore, da o da    | organizzatore:debbie |
 
 
 
@@ -320,22 +320,22 @@ dove `<property>` è una proprietà elencata di seguito ed `<value>` è il termi
 
 ### <a name="documents"></a>Documenti
 
-Si tratta di proprietà comuni ai documenti. Per limitare la ricerca solo ai documenti, la sintassi è:
+Si tratta di proprietà comuni ai documenti. Per limitare la ricerca solo ai documenti, la sintassi è la seguente:
 
 `kind:documents <property>:<value>`
 
-dove `<property>` è una proprietà elencata di seguito ed `<value>` è il termine di ricerca specificato dall'utente.
+dove `<property>` è una proprietà elencata di seguito e è il termine di ricerca specificato `<value>` dall'utente.
 
 
 
 | Proprietà          | Uso             | Esempio                       |
 |-------------------|-----------------|-------------------------------|
-| Commenti          | comments        | Commenti: "necessità revisione finale" |
-| Ultimo salvataggio     | LastSavedBy     | LastSavedBy: Giorgio              |
-| Gestione documenti  | documentmanager | documentmanager: Giorgio          |
-| Numero revisione   | RevisionNumber  | RevisionNumber: 1.0.3          |
-| Formato documento   | DocumentFormat  | documentformat: MIMETYPE       |
-| Data ultima stampa | datelastprinted | datelastprinted: Ultima settimana     |
+| Commenti          | comments        | comments:"needs final review" |
+| Ultimo salvataggio da     | lastsavedby     | lastsavedby:john              |
+| Gestione documenti  | documentmanager | documentmanager:john          |
+| Numero di revisione   | revisionnumber  | revisionnumber:1.0.3          |
+| Formato del documento   | documentformat  | documentformat:MIMETYPE       |
+| Data ultima stampa | datelastprinted | datelastprinted:last week     |
 
 
 
@@ -347,13 +347,13 @@ Si tratta di proprietà comuni alle presentazioni. Per limitare la ricerca solo 
 
 `kind:presentation <property>:<value>`
 
-dove `<property>` è una proprietà elencata di seguito ed `<value>` è il termine di ricerca specificato dall'utente.
+dove `<property>` è una proprietà elencata di seguito e è il termine di ricerca specificato `<value>` dall'utente.
 
 
 
 | Proprietà    | Uso        | Esempio           |
 |-------------|------------|-------------------|
-| Conteggio diapositive | slidecount | SlideCount: >20 |
+| Conteggio scorrimenti | slidecount | slidecount:>20 |
 
 
 
@@ -365,19 +365,19 @@ Si tratta di proprietà comuni ai file musicali. Per limitare la ricerca solo al
 
 `kind:music <property>:<value>`
 
-dove `<property>` è una proprietà elencata di seguito ed `<value>` è il termine di ricerca specificato dall'utente.
+dove `<property>` è una proprietà elencata di seguito e è il termine di ricerca specificato `<value>` dall'utente.
 
 
 
 | Proprietà | Uso                | Esempio                  |
 |----------|--------------------|--------------------------|
-| Velocità in bit | bitrate, velocità      | velocità in bit: 192              |
-| Artista   | artista, da o da | artista: John Singer       |
-| Duration | duration           | Durata: 3               |
-| Album    | album              | album: "Greatest Hits"    |
-| Genre    | genre              | genere: Rock               |
-| Track    | track              | Track: 12                 |
-| Year     | anno               | anno: > 1980 < 1990 |
+| Velocità in bit | velocità in bit, velocità      | velocità in bit:192              |
+| Artista   | artista, da o da | artista:John Esere       |
+| Durata | duration           | durata:3               |
+| Album    | Album              | album:"greatest hits"    |
+| Genre    | genre              | genre:rock               |
+| Track    | track              | track:12                 |
+| Year     | anno               | year:> 1980 < 1990 |
 
 
 
@@ -389,19 +389,19 @@ Si tratta di proprietà comuni alle immagini. Per limitare la ricerca solo alle 
 
 `kind:picture <property>:<value>`
 
-dove `<property>` è una proprietà elencata di seguito ed `<value>` è il termine di ricerca specificato dall'utente.
+dove `<property>` è una proprietà elencata di seguito e è il termine di ricerca specificato `<value>` dall'utente.
 
 
 
 | Proprietà     | Uso         | Esempio               |
 |--------------|-------------|-----------------------|
-| Marca fotocamera  | cameramake  | cameramake: esempio     |
-| Modello di fotocamera | CameraModel | CameraModel: esempio    |
-| Dimensioni   | dimensions  | Dimensioni: 8X10       |
-| Orientamento  | orientation | orientamento: orizzontale |
-| Data di inizio   | DateTaken   | DateTaken: ieri   |
-| Larghezza        | width       | Larghezza: 1600            |
-| Altezza       | altezza      | Altezza: 1200           |
+| Fotocamera make  | cameramake  | cameramake:sample     |
+| Modello di fotocamera | cameramodel | cameramodel:sample    |
+| Dimensioni   | dimensions  | dimensioni:8X10       |
+| Orientamento  | orientation | orientamento:orizzontale |
+| Data di inizio   | datetaken   | datetaken:yesterday   |
+| Larghezza        | width       | width:1600            |
+| Altezza       | altezza      | height:1200           |
 
 
 
@@ -413,14 +413,14 @@ Si tratta di proprietà comuni ai video. Per limitare la ricerca solo ai video, 
 
 `kind:video <property>:<value>`
 
-dove `<property>` è una proprietà elencata di seguito ed `<value>` è il termine di ricerca specificato dall'utente.
+dove `<property>` è una proprietà elencata di seguito e è il termine di ricerca specificato `<value>` dall'utente.
 
 
 
 | Proprietà | Uso           | Esempio                                |
 |----------|---------------|----------------------------------------|
-| Nome     | nome, oggetto | Nome: "famiglia Vacation to the Beach 05" |
-| Interno      | EXT, fileext  | ext:.avi                               |
+| Nome     | name, subject | name:"Family Vacation to the Beach 05" |
+| Interno      | ext, fileext  | ext:.avi                               |
 
 
 

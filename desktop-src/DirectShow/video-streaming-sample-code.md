@@ -4,21 +4,21 @@ ms.assetid: 735af042-9800-4f75-a5c9-e1cf17b4a472
 title: Codice di esempio per lo streaming video
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90e9a738503174e7bcc6c0d0e7c1250e39348b4c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a325512d18d3e7156de017c969906e02ed8834ba9522c969b5deb2166f741860
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755621"
 ---
 # <a name="video-streaming-sample-code"></a>Codice di esempio per lo streaming video
 
 > [!Note]  
-> Queste API sono deprecate. Le applicazioni devono usare il filtro [**grabber di esempio**](sample-grabber-filter.md) o implementare un filtro personalizzato per ottenere i dati da un grafico filtro DirectShow.
+> Queste API sono deprecate. Le applicazioni devono usare il [**filtro Grabber**](sample-grabber-filter.md) di esempio o implementare un filtro personalizzato per ottenere dati da un DirectShow di filtro.
 
  
 
-Questo codice di esempio legge un file e ne esegue il rendering in una superficie DirectDraw primaria. Per brevità, in questo esempio viene eseguito il controllo minimo degli errori.
+Questo codice di esempio legge un file ed esegue il rendering su una superficie DirectDraw primaria. Per brevità, questo esempio esegue un controllo degli errori minimo.
 
 
 ```C++

@@ -1,11 +1,11 @@
 ---
-title: Metodo metodo ibackgroundcopyjob GetId (Deliveryoptimization. h)
+title: Metodo GetId IBackgroundCopyJob (Deliveryoptimization.h)
 description: Recupera l'identificatore utilizzato per identificare il processo nella coda.
 ms.assetid: 05CE5420-22F8-4CFE-BC40-3A29C775854B
 keywords:
 - GetId (metodo)
-- Metodo GetId, interfaccia metodo ibackgroundcopyjob
-- Interfaccia metodo ibackgroundcopyjob, Metodo GetId
+- Metodo GetId, interfaccia IBackgroundCopyJob
+- Interfaccia IBackgroundCopyJob, metodo GetId
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ade12d72d68b43df7d9ae3d1f33010bb95b7052a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 01c696985b4b632223318675fd63f842b85ed6e27297ff1befebbac1b3fa9bce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755501"
 ---
-# <a name="ibackgroundcopyjobgetid-method"></a>Metodo metodo ibackgroundcopyjob:: GetId
+# <a name="ibackgroundcopyjobgetid-method"></a>Metodo IBackgroundCopyJob::GetId
 
 Recupera l'identificatore utilizzato per identificare il processo nella coda.
 
@@ -43,20 +43,20 @@ HRESULT GetId(
 
 <dl> <dt>
 
-*pJobID* \[ out\]
+*pJobID* \[ Cambio\]
 </dt> <dd>
 
-GUID che identifica il processo all'interno della coda di esecuzione.
+GUID che identifica il processo all'interno della coda DO.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce **S_OK** in esito positivo o uno dei valori **HRESULT** com standard in errore.
+Questo metodo **restituisce** S_OK esito positivo o uno dei valori **HRESULT** COM standard in caso di errore.
 
 ## <a name="remarks"></a>Commenti
 
-Il servizio genera l'identificatore quando si [Crea](ibackgroundcopymanager-createjob.md) il processo. Per usare l'identificatore per recuperare un puntatore di interfaccia [**Metodo ibackgroundcopyjob**](ibackgroundcopyjob-.md) per il processo, chiamare il metodo [**IBackgroundCopyManager:: GetJob**](ibackgroundcopymanager-getjob.md) .
+Il servizio genera l'identificatore quando si [crea](ibackgroundcopymanager-createjob.md) il processo. Per usare l'identificatore per recuperare un puntatore a interfaccia [**IBackgroundCopyJob**](ibackgroundcopyjob-.md) per il processo, chiamare il [**metodo IBackgroundCopyManager::GetJob.**](ibackgroundcopymanager-getjob.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,13 +64,13 @@ Il servizio genera l'identificatore quando si [Crea](ibackgroundcopymanager-crea
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                                           |
-| Server minimo supportato<br/> | Windows Server, versione 1709 \[ solo per le app desktop\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Server, solo app desktop versione 1709 \[\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
-| IID<br/>                      | IID_IBackgroundCopyJob viene definito come 37668D37-507E-4160-9316-26306D150B12<br/>               |
+| IID<br/>                      | IID_IBackgroundCopyJob definito come 37668D37-507E-4160-9316-26306D150B12<br/>               |
 
 
 
@@ -78,13 +78,13 @@ Il servizio genera l'identificatore quando si [Crea](ibackgroundcopymanager-crea
 
 <dl> <dt>
 
-[**Metodo ibackgroundcopyjob**](ibackgroundcopyjob-.md)
+[**IBackgroundCopyJob**](ibackgroundcopyjob-.md)
 </dt> <dt>
 
-[**IBackgroundCopyManager:: CreateJob**](ibackgroundcopymanager-createjob.md)
+[**IBackgroundCopyManager::CreateJob**](ibackgroundcopymanager-createjob.md)
 </dt> <dt>
 
-[**IBackgroundCopyManager:: GetJob**](ibackgroundcopymanager-getjob.md)
+[**IBackgroundCopyManager::GetJob**](ibackgroundcopymanager-getjob.md)
 </dt> </dl>
 
  

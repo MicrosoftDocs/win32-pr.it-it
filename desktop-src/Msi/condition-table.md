@@ -1,21 +1,21 @@
 ---
-description: La tabella Condition può essere utilizzata per modificare lo stato di selezione di qualsiasi voce nella tabella feature basata su un'espressione condizionale.
+description: La tabella Condizione può essere usata per modificare lo stato di selezione di qualsiasi voce nella tabella Funzionalità in base a un'espressione condizionale.
 ms.assetid: 8e2d7c8d-5734-49aa-ad29-16d4d32cccb4
-title: Tabella Condition
+title: Tabella delle condizioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74d9a3c27d43b7d71bc8e5b0593771bc86a3ca4d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09d9ccb265d69f99a58e155657a0e9d058ba61a920088184ec2b67c3e4506a0b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926961"
 ---
-# <a name="condition-table"></a>Tabella Condition
+# <a name="condition-table"></a>Tabella delle condizioni
 
-La tabella Condition può essere utilizzata per modificare lo stato di selezione di qualsiasi voce nella [tabella Feature](feature-table.md) basata su un'espressione condizionale.
+La tabella Condizione può essere usata per modificare lo stato di selezione di qualsiasi voce nella [tabella Funzionalità](feature-table.md) in base a un'espressione condizionale.
 
-La tabella Condition contiene le colonne seguenti.
+La tabella Condizione include le colonne seguenti.
 
 
 
@@ -23,7 +23,7 @@ La tabella Condition contiene le colonne seguenti.
 |-----------|------------------------------|-----|----------|
 | Funzionalità\_ | [Identificatore](identifier.md) | S   | N        |
 | Level     | [Integer](integer.md)       | S   | N        |
-| Condizione | [Condition](condition.md)   | N   | S        |
+| Condition | [Condition](condition.md)   | N   | S        |
 
 
 
@@ -36,48 +36,48 @@ La tabella Condition contiene le colonne seguenti.
 <span id="Feature_"></span><span id="feature_"></span><span id="FEATURE_"></span>Funzionalità\_
 </dt> <dd>
 
-Chiave esterna nella colonna uno della tabella delle funzionalità.
+Chiave esterna nella colonna uno della tabella Funzionalità.
 
 </dd> <dt>
 
 <span id="Level"></span><span id="level"></span><span id="LEVEL"></span>Livello
 </dt> <dd>
 
-Livello di installazione condizionale per la funzionalità nella \_ colonna feature della tabella. Il programma di installazione imposta il livello di installazione della funzionalità sul livello specificato in questa colonna se l'espressione nella colonna condizione restituisce TRUE.
+Livello di installazione condizionale per la funzionalità nella colonna \_ Funzionalità di questa tabella. Il programma di installazione imposta il livello di installazione di questa funzionalità sul livello specificato in questa colonna se l'espressione nella colonna Condizione restituisce TRUE.
 
 </dd> <dt>
 
 <span id="Condition"></span><span id="condition"></span><span id="CONDITION"></span>Condizione
 </dt> <dd>
 
-Se questa espressione condizionale restituisce TRUE, la colonna Level della tabella Feature viene impostata sul livello di installazione condizionale.
+Se questa espressione condizionale restituisce TRUE, la colonna Level nella tabella Feature viene impostata sul livello di installazione condizionale.
 
-L'espressione nella colonna condizione non deve contenere riferimenti allo stato di installazione di una funzionalità o di un componente. Ciò è dovuto al fatto che le espressioni nella colonna condition vengono valutate prima che il programma di installazione valuti gli stati installati delle funzionalità e dei componenti. Qualsiasi espressione nella tabella della condizione che tenta di verificare lo stato installato di una funzionalità o di un componente restituisce sempre false.
+L'espressione nella colonna Condizione non deve contenere riferimenti allo stato installato di alcuna funzionalità o componente. Ciò è dovuto al fatto che le espressioni nella colonna Condizione vengono valutate prima che il programma di installazione valuti gli stati installati di funzionalità e componenti. Qualsiasi espressione nella tabella Condition che tenta di controllare lo stato installato di una funzionalità o di un componente restituisce sempre false.
 
-Per informazioni sulla sintassi delle istruzioni condizionali, vedere [sintassi dell'istruzione condizionale](conditional-statement-syntax.md).
+Per informazioni sulla sintassi delle istruzioni condizionali, vedere [Sintassi delle istruzioni condizionali](conditional-statement-syntax.md).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Una funzionalità può essere disabilitata in modo permanente impostando la colonna livello su 0.
+Una funzionalità può essere disabilitata in modo permanente impostando la colonna Livello su 0.
 
-Il livello può essere impostato in base a qualsiasi istruzione condizionale, ad esempio un test per la piattaforma, il sistema operativo o una particolare impostazione della proprietà.
+Il livello può essere impostato in base a qualsiasi istruzione condizionale, ad esempio un test per la piattaforma, il sistema operativo o un'impostazione di proprietà specifica.
 
-È necessario scegliere attentamente le condizioni in modo che una funzionalità non sia abilitata durante l'installazione e quindi disabilitata durante la disinstallazione. La funzionalità verrà orfana e il prodotto non potrà essere disinstallato.
+È consigliabile scegliere con attenzione le condizioni in modo che una funzionalità non sia abilitata durante l'installazione e quindi disabilitata durante la disinstallazione. In questo modo la funzionalità sarà orfana e il prodotto non potrà essere disinstallato.
 
-Questa tabella viene definita quando viene eseguita l' [azione CostFinalize secondo](costfinalize-action.md) .
+Questa tabella viene indicata quando viene eseguita [l'azione CostFinalize.](costfinalize-action.md)
 
-Se la proprietà [**preselezionata**](preselected.md) è stata impostata su 1, il programma di installazione non valuta la tabella della condizione. La tabella della condizione influiscono solo sull'installazione delle funzionalità quando non è stata impostata nessuna delle proprietà seguenti:
+Se la [**proprietà Preselezionata**](preselected.md) è stata impostata su 1, il programma di installazione non valuta la tabella Condizione. La tabella Condizione influisce solo sull'installazione delle funzionalità quando non è stata impostata nessuna delle proprietà seguenti:
 
 <dl>
 
 [**ADDLOCAL**](addlocal.md)  
-[**RIMUOVERE**](remove.md)  
+[**Rimuovere**](remove.md)  
 [**ADDSOURCE**](addsource.md)  
 [**ADDDEFAULT**](adddefault.md)  
 [**REINSTALL**](reinstall.md)  
-[**PUBBLICIZZARE**](advertise.md)  
+[**Pubblicizzare**](advertise.md)  
 [**COMPADDLOCAL**](compaddlocal.md)  
 [**COMPADDSOURCE**](compaddsource.md)  
 [**COMPADDDEFAULT**](compadddefault.md)  

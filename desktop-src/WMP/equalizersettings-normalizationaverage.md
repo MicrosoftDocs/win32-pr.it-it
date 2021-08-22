@@ -1,9 +1,9 @@
 ---
 title: EQUALIZERSETTINGS.normalizationAverage
-description: L'attributo normalizationAverage Recupera il valore di normalizzazione medio.
+description: L'attributo normalizationAverage recupera il valore medio di normalizzazione.
 ms.assetid: 2bfd0e2e-264b-4488-becb-c2c51f1b10bf
 keywords:
-- Media Player Windows EQUALIZERSETTINGS. normalizationAverage
+- EQUALIZERSETTINGS.normalizationAverage Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a8c174b32e6b5a401a4e33b17c1beddcd5843b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 71443bd29e2c1d14c31ed96f5371ebe62e8259d7987514add63cd625bc8ec277
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650741"
 ---
 # <a name="equalizersettingsnormalizationaverage"></a>EQUALIZERSETTINGS.normalizationAverage
 
-L'attributo **normalizationAverage** Recupera il valore di normalizzazione medio.
+**L'attributo normalizationAverage** recupera il valore medio di normalizzazione.
 
 ``` syntax
         elementID.normalizationAverage
@@ -29,7 +29,7 @@ L'attributo **normalizationAverage** Recupera il valore di normalizzazione medio
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di sola lettura (**float**).
+Questo attributo è un numero di sola **lettura** (**float**).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,7 +37,7 @@ Questo attributo è un **numero** di sola lettura (**float**).
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -48,7 +48,7 @@ Questo attributo è un **numero** di sola lettura (**float**).
 [**Elemento EQUALIZERSETTINGS**](equalizersettings-element.md)
 </dt> <dt>
 
-[**EQUALIZERSETTINGS. normalizzazione**](equalizersettings-normalization.md)
+[**EQUALIZERSETTINGS.normalization**](equalizersettings-normalization.md)
 </dt> <dt>
 
 [**EQUALIZERSETTINGS.normalizationPeak**](equalizersettings-normalizationpeak.md)

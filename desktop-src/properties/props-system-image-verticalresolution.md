@@ -1,17 +1,17 @@
 ---
 description: Indica il numero di pixel per unità di risoluzione nell'altezza dell'immagine.
 ms.assetid: 51d71fa6-8057-46b6-8427-187a5e69f1f4
-title: System. image. VerticalResolution
+title: System.Image.VerticalResolution
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f213928068d9e935cdbf408c9cedd984d692415b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a5fb04ca0cb52f9bf2ada6b1f3e86ca8d5f64975f4f66c6a0eec14006a4c9769
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553841"
 ---
-# <a name="systemimageverticalresolution"></a>System. image. VerticalResolution
+# <a name="systemimageverticalresolution"></a>System.Image.VerticalResolution
 
 Indica il numero di pixel per unità di risoluzione nell'altezza dell'immagine.
 
@@ -48,13 +48,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -78,13 +78,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

@@ -1,11 +1,11 @@
 ---
-title: Metodo IdWriteFontFallbackBuilder AddMapping
+title: Metodo AddMapping di IDWriteFontFallbackBuilder
 description: Aggiunge un singolo mapping all'elenco. Chiamare questa operazione una volta per ogni mapping aggiuntivo.
 ms.assetid: FCA3CD9C-9FB3-49BD-B4D1-53AEAAAAEE8A
 keywords:
 - Metodo AddMapping Direct Write
 - Metodo AddMapping Direct Write, interfaccia IDWriteFontFallbackBuilder
-- Interfaccia IDWriteFontFallbackBuilder Direct Write, metodo AddMapping
+- Interfaccia IDWriteFontFallbackBuilder Direct Write , metodo AddMapping
 topic_type:
 - apiref
 api_name:
@@ -54,7 +54,7 @@ HRESULT AddMapping(
 
 Tipo: **[ **DWRITE \_ UNICODE \_ RANGE**](/windows/win32/api/Dwrite_1/ns-dwrite_1-dwrite_unicode_range)\***
 
-Intervalli Unicode che si applicano a questo mapping.
+Intervalli Unicode applicabili a questo mapping.
 
 </dd> <dt>
 
@@ -81,16 +81,16 @@ Elenco di stringhe del nome della famiglia di destinazione.
 
 Tipo: **UINT32**
 
-Numero di nomi di famiglia di destinazione.
+Numero di nomi di famiglie di destinazione.
 
 </dd> <dt>
 
-*oggetto fontCollection* \[ in, facoltativo\]
+*fontCollection* \[ in, facoltativo\]
 </dt> <dd>
 
 Tipo: **[ **IDWriteFontCollection**](/windows/win32/api/dwrite/nn-dwrite-idwritefontcollection)**
 
-Raccolta esplicita dei tipi di carattere facoltativa per questo mapping.
+Raccolta di caratteri esplicita facoltativa per questo mapping.
 
 </dd> <dt>
 
@@ -134,8 +134,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | \[Windows 8.1 app desktop \| app UWP\]<br/>                                     |
-| Server minimo supportato<br/> | Windows Server 2012 App desktop R2 \[ \| app UWP\]<br/>                          |
-| Telefono minimo supportato<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 e Windows Runtime\]<br/> |
+| Server minimo supportato<br/> | Windows Server 2012 App \[ UWP per app desktop \| R2\]<br/>                          |
+| Telefono minimo supportato<br/>  | Windows Phone 8.1 \[ Windows Phone silverlight 8.1 e Windows Runtime\]<br/> |
 | Libreria<br/>                  | <dl> <dt>Dwrite.lib</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>Dwrite.dll</dt> </dl>   |
 

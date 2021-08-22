@@ -1,21 +1,21 @@
 ---
-title: WS_XML_READER (WebServices. h)
+title: WS_XML_READER (WebServices.h)
 description: Tipo opaco utilizzato per un riferimento a un lettore XML.
 ms.assetid: 7acbe407-e91b-435a-82bc-acbbc13cfcfd
 keywords:
 - WS_XML_READER
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5199399a496d38ff0b2ae4a067d4b75fc2664282
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0a603ab3870abb015b6fdef05da27dbbbe807d9a23f0713f3f672b4823256554
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119707221"
 ---
-# <a name="ws_xml_reader"></a>\_lettore XML \_ WS
+# <a name="ws_xml_reader"></a>LETTORE \_ XML WS \_
 
-Tipo opaco utilizzato per un riferimento a un [lettore XML](xml-reader.md).
+Tipo opaco utilizzato per un riferimento a un [lettore XML.](xml-reader.md)
 
 
 ```C++
@@ -26,7 +26,7 @@ typedef struct _WS_XML_READER WS_XML_READER;
 
 ## <a name="remarks"></a>Commenti
 
-Questo oggetto non è thread-safe. Per ulteriori informazioni, vedere [thread safety](thread-safety.md).
+Questo oggetto non è thread-safe. Per altre informazioni, [vedere](thread-safety.md)thread safety .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -34,9 +34,9 @@ Questo oggetto non è thread-safe. Per ulteriori informazioni, vedere [thread sa
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                        |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>WebServices. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 R2 \[ \|\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>WebServices.h</dt> </dl> |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Attributo drink
-description: Il tipo di attributo drink (Favorite Drink) specifica la bevanda preferita di un oggetto (o di una persona).
+title: Attributo di bevanda
+description: Il tipo di attributo bevanda (Bevanda preferita) specifica la bevanda preferita di un oggetto (o di una persona).
 ms.assetid: 1d3f6301-1bb3-4ff9-8be9-5a5590636d16
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo drink
+- Attributo di bevanda Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119656670"
 ---
-# <a name="drink-attribute"></a>Attributo drink
+# <a name="drink-attribute"></a>Attributo di bevanda
 
-Il tipo di attributo drink (Favorite Drink) specifica la bevanda preferita di un oggetto (o di una persona).
+Il tipo di attributo bevanda (Bevanda preferita) specifica la bevanda preferita di un oggetto (o di una persona).
 
 
 
@@ -31,7 +31,7 @@ Il tipo di attributo drink (Favorite Drink) specifica la bevanda preferita di un
 | CN                | Bere                                       |
 | Ldap-Display-Name | Bere                                       |
 | Dimensione              | \-                                          |
-| Privilegio di aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 0.9.2342.19200300.100.1.5                   |
 | System-Id-Guid    | 1a1aa5b5-262e-4df6-af04-2cf6b0d80048        |

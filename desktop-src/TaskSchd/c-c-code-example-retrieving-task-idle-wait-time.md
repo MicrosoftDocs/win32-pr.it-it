@@ -1,22 +1,22 @@
 ---
-title: Esempio di codice C/C++ recupero del tempo di inattività del tempo di attesa
-description: Questo esempio consente di recuperare il tempo di attesa di inattività dell'attività e di visualizzarlo sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+title: Esempio di codice C/C++ Recupero del tempo di inattività-attesa dell'attività
+description: Questo esempio recupera il tempo di inattività dell'attività e lo visualizza sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 ms.assetid: 2784b925-678c-422c-ae78-84d2982c2b02
 keywords:
-- recupero del tempo di inattività del tempo di attesa Utilità di pianificazione
-- recupero delle proprietà degli elementi di lavoro Utilità di pianificazione, tempo di attesa inattività
+- recupero del tempo di inattività dell'attività Utilità di pianificazione
+- recupero delle proprietà dell'elemento di lavoro Utilità di pianificazione, tempo di inattività-attesa dell'attività
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24c109faf55be8039c2c39652f8c513b6b38bd17
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7946d4a8b80dd49db2b8c5291f8d382a9e3b40b4de8a759f10f4057905593f97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738771"
 ---
-# <a name="cc-code-example-retrieving-task-idle-wait-time"></a>Esempio di codice C/C++: recupero del tempo di inattività del tempo di attesa
+# <a name="cc-code-example-retrieving-task-idle-wait-time"></a>Esempio di codice C/C++: recupero del tempo di inattività-attesa dell'attività
 
-Questo esempio consente di recuperare il tempo di attesa di inattività dell'attività e di visualizzarlo sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+Questo esempio recupera il tempo di inattività dell'attività e lo visualizza sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 
 
 ```C++
@@ -116,12 +116,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Esempi di Utilità di pianificazione 1,0](task-scheduler-1-0-examples.md)
+[Utilità di pianificazione 1.0 Esempi](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -89,7 +89,7 @@ Un alias è incluso nel **membro lpstrAlias** della struttura identificata da *l
 
 </dd> <dt>
 
-<span id="MCI_OPEN_SHAREABLE"></span><span id="mci_open_shareable"></span>MCI \_ OPEN \_ SHAREABLE
+<span id="MCI_OPEN_SHAREABLE"></span><span id="mci_open_shareable"></span>MCI \_ OPEN \_ CONDIVISIBILE
 </dt> <dd>
 
 Il dispositivo o il file deve essere aperto come condivisione.
@@ -99,7 +99,7 @@ Il dispositivo o il file deve essere aperto come condivisione.
 <span id="MCI_OPEN_TYPE"></span><span id="mci_open_type"></span>MCI \_ OPEN \_ TYPE
 </dt> <dd>
 
-Un nome o una costante del tipo di dispositivo è incluso nel membro **lpstrDeviceType** della struttura identificata da *lpOpen*.
+Un nome di tipo di dispositivo o una costante è incluso nel **membro lpstrDeviceType** della struttura identificata da *lpOpen*.
 
 </dd> <dt>
 
@@ -167,7 +167,7 @@ Indica una preferenza per il supporto dei dispositivi MCI a 32 bit.
 
 </dd> </dl>
 
-Per i dispositivi digital-video, il *parametro lpOpen* punta a una [**struttura MCI \_ DGV \_ OPEN \_ PARMS.**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_open_parmsa)
+Per i dispositivi video digitali, il *parametro lpOpen* punta a una [**struttura MCI \_ DGV \_ OPEN \_ PARMS.**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_open_parmsa)
 
 I flag aggiuntivi seguenti vengono usati con il **tipo di dispositivo overlay:**
 
@@ -196,7 +196,7 @@ Il flag aggiuntivo seguente viene usato con il **tipo di dispositivo waveaudio:*
 <span id="MCI_WAVE_OPEN_BUFFER"></span><span id="mci_wave_open_buffer"></span>MCI \_ WAVE \_ OPEN \_ BUFFER
 </dt> <dd>
 
-La lunghezza del buffer è specificata nel **membro dwBufferSeconds** della struttura identificata da *lpOpen*.
+La lunghezza del buffer viene specificata nel **membro dwBufferSeconds** della struttura identificata da *lpOpen*.
 
 </dd> </dl>
 

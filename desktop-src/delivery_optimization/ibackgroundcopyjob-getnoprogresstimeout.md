@@ -52,7 +52,7 @@ Periodo di tempo, in secondi, in cui il servizio tenta di trasferire il file dop
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce i valori **HRESULT** seguenti, oltre ad altri.
+Questo metodo restituisce i **valori HRESULT** seguenti, oltre ad altri.
 
 
 

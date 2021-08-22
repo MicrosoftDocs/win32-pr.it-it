@@ -1,54 +1,54 @@
 ---
-description: Il file VBScript WiMakCab.vbs viene fornito nei componenti Windows SDK per Windows Installer sviluppatori. In questo esempio viene illustrato come utilizzare lo script per generare file CAB da un database Windows Installer.
+description: Il file VBScript WiMakCab.vbs è disponibile in componenti sdk Windows per Windows programma di installazione. Questo esempio illustra come viene usato lo script per generare file CAB da un database Windows Installer.
 ms.assetid: 26671cb9-a200-4520-8b52-4cff3f71a2f2
-title: Genera file CAB
+title: Generare file CAB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3df2355c247ff602d644d2865ec3b9d9a8447ca4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2ca9e30822d0683aa09dc015ec2fd98d1f598c70e0fd63fd00f66a6bcdf3edf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119581491"
 ---
-# <a name="generate-file-cabinet"></a>Genera file CAB
+# <a name="generate-file-cabinet"></a>Generare file CAB
 
-Il file VBScript WiMakCab.vbs viene fornito nei [componenti Windows SDK per Windows Installer sviluppatori](platform-sdk-components-for-windows-installer-developers.md). In questo esempio viene illustrato come utilizzare lo script per generare file CAB da un database Windows Installer.
+Il file VBScript WiMakCab.vbs è disponibile in componenti sdk Windows [per Windows programma di installazione](platform-sdk-components-for-windows-installer-developers.md). Questo esempio illustra come viene usato lo script per generare file CAB da un database Windows Installer.
 
 Questo esempio dimostra:
 
--   [**Metodo OpenDatabase (oggetto Installer)**](installer-opendatabase.md) e [**Metodo LastErrorRecord**](installer-lasterrorrecord.md) dell' [**oggetto Installer**](installer-object.md)
--   [**Metodo commit**](database-commit.md), il [**Metodo OpenView**](database-openview.md) e la [**Proprietà SummaryInformation (oggetto di database)**](database-summaryinformation.md) dell' [**oggetto di database**](database-object.md)
--   [**Metodo fetch**](view-fetch.md), metodo [**Execute**](view-execute.md) e [**metodo modify**](view-modify.md) dell' [**oggetto View**](view-object.md)
--   [**Proprietà StringData**](record-stringdata.md) e [**Proprietà IntegerData**](record-integerdata.md) dell' [**oggetto record**](record-object.md)
--   [**Metodo DoAction**](session-doaction.md), [**Proprietà Property (oggetto Session)**](session-session.md)e [**proprietà Mode**](session-mode.md) dell' [**oggetto Session**](session-object.md)
+-   [**Metodo OpenDatabase (oggetto Installer)**](installer-opendatabase.md) e [**metodo LastErrorRecord**](installer-lasterrorrecord.md) dell'oggetto [**Installer**](installer-object.md)
+-   [**Metodo Commit**](database-commit.md), metodo [**OpenView e**](database-openview.md) [**proprietà SummaryInformation (oggetto database)**](database-summaryinformation.md) dell'oggetto [**database**](database-object.md)
+-   [**Metodo Fetch,**](view-fetch.md) [**metodo Execute**](view-execute.md) [**e metodo Modify**](view-modify.md) dell'oggetto [**View**](view-object.md)
+-   [**Proprietà StringData**](record-stringdata.md) e [**proprietà IntegerData**](record-integerdata.md) dell'oggetto [**Record**](record-object.md)
+-   [**Metodo DoAction**](session-doaction.md), [**proprietà Property (oggetto Sessione)**](session-session.md) [**e proprietà Mode**](session-mode.md) dell'oggetto [**Sessione**](session-object.md)
 
-Per usare questo esempio, è necessaria la versione CScript.exe o WScript.exe di Windows script host. Per utilizzare CScript.exe per eseguire questo esempio, digitare un comando al prompt dei comandi utilizzando la sintassi seguente. La guida viene visualizzata se il primo argomento è/? oppure se vengono specificati troppi argomenti. Per reindirizzare l'output a un file, terminare la riga di comando con VBS > \[ *percorso del file* \] . Nell'esempio viene restituito il valore 0 per l'esito positivo, 1 se la guida viene richiamata e 2 se lo script ha esito negativo.
+Per usare questo esempio è CScript.exe o WScript.exe'host di script Windows. Per usare CScript.exe questo esempio, digitare un comando al prompt dei comandi usando la sintassi seguente. Se il primo argomento è /? viene visualizzata la Guida o se vengono specificati troppi argomenti. Per reindirizzare l'output a un file, terminare la riga di comando con VBS > \[ *percorso del file* \] . L'esempio restituisce il valore 0 per l'esito positivo, 1 se viene richiamata la Guida e 2 se lo script ha esito negativo.
 
-**cscript WiMakCab.vbs \[ percorso del \] \[ nome base del database percorsi di \] \[ origine facoltativi\]**
+**cscript WiMakCab.vbs \[ percorso di origine facoltativo \] \[ del nome di base \] \[ del database\]**
 
-Per generare un file CAB, Makecab.exe deve trovarsi nel percorso. L'utilità Makecab.exe è inclusa nei [componenti Windows SDK per Windows Installer sviluppatori](platform-sdk-components-for-windows-installer-developers.md). Si noti che l'esempio non aggiorna la [tabella dei supporti](media-table.md) per gestire più file CAB. Per sostituire un file CAB incorporato, includere le opzioni:/R/C/U/E.
+Per generare un file cab, Makecab.exe deve essere in PATH. LMakecab.exe utilità è inclusa [nell'Windows SDK per gli](platform-sdk-components-for-windows-installer-developers.md)sviluppatori Windows programma di installazione . Si noti che l'esempio non aggiorna la [tabella Media per](media-table.md) gestire più archivi. Per sostituire un file cab incorporato, includere le opzioni /R /C /U /E.
 
-Specificare il percorso del database del programma di installazione. Deve trovarsi nella radice dell'albero di origine. Specificare il nome di base con distinzione tra maiuscole e minuscole per i file CAB generati. Se il tipo di origine è compresso, tutti i file vengono aperti alla radice. È possibile specificare le opzioni seguenti in qualsiasi punto della riga di comando.
+Specificare il percorso del database del programma di installazione. Deve trovarsi nella radice dell'albero di origine. Specificare il nome di base con distinzione tra maiuscole e minuscole per i file CAB generati. Se il tipo di origine è compresso, tutti i file vengono aperti nella radice. Le opzioni seguenti possono essere specificate in qualsiasi punto della riga di comando.
 
 
 
 | Opzione              | Descrizione                                                                                                                               |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| non è stata specificata alcuna opzione |                                                                                                                                           |
-| /C                  | Eseguire la compressione. Se/C non è specificato, WiMakCab.vbs genera solo il file DDF.                                                        |
+| nessuna opzione specificata |                                                                                                                                           |
+| /C                  | Eseguire la compressione. Se /C non viene specificato, WiMakCab.vbs genera solo il file DDF.                                                        |
 | /L                  | Usare la compressione LZX anziché MSZIP                                                                                                      |
-| /F                  | Limitare le dimensioni del cabinet a dimensioni floppy di 1,44 MB anziché CD-ROM                                                                              |
-| /U                  | Aggiornare il database in modo che faccia riferimento al file CAB generato                                                                                    |
-| /E                  | Incorporare il file CAB nel pacchetto del programma di installazione come flusso                                                                               |
-| /S                  | USA i numeri di sequenza nella tabella file ordinata in base alle directory                                                                             |
-| /R                  | Ripristinare un'installazione non-cabinet, rimuovere il file CAB se è specificato/E (l'opzione/R rimuove la proprietà bit-SummaryInfo compressa 15 & 2) |
+| /F                  | Limitare le dimensioni dell'archivio a 1,44 MB di dimensioni floppy anziché a CD-ROM                                                                              |
+| /U                  | Aggiornare il database per fare riferimento all'archivio generato                                                                                    |
+| /E                  | Incorporare il file cab nel pacchetto del programma di installazione come flusso                                                                               |
+| /S                  | Usare i numeri di sequenza nella tabella File ordinata in base alle directory                                                                             |
+| /R                  | Ripristinare l'installazione non cab, rimuovere cab se è specificato /E (l'opzione /R rimuove il bit compresso - proprietà SummaryInfo 15 & 2) |
 
 
 
  
 
-Per altri esempi di script, vedere [Windows Installer esempi di scripting](windows-installer-scripting-examples.md). Per utilità di esempio che non richiedono Windows script host, vedere [Windows Installer strumenti di sviluppo](windows-installer-development-tools.md).
+Per altri esempi di scripting, vedere Windows [di scripting del programma di installazione](windows-installer-scripting-examples.md). Per utilità di esempio che non richiedono Windows Script Host, vedere Windows [Installer Development Tools](windows-installer-development-tools.md).
 
  
 

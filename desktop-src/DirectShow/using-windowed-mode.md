@@ -75,7 +75,7 @@ pVidWin->SetWindowPosition(0, 0, rc.right, rc.bottom);
 
 
 
-Per ottenere le dimensioni native del video, chiamare il metodo [**IBasicVideo::GetVideoSize**](/windows/desktop/api/Control/nf-control-ibasicvideo-getvideosize) nell'istanza di Filter Graph Manager. È possibile usare queste informazioni per ridimensionare il video e mantenere le proporzioni corrette.
+Per ottenere le dimensioni native del video, chiamare il metodo [**IBasicVideo::GetVideoSize**](/windows/desktop/api/Control/nf-control-ibasicvideo-getvideosize) nell'Graph Filtro. È possibile usare queste informazioni per ridimensionare il video e mantenere le proporzioni corrette.
 
 **Rispondere ai messaggi MOVE WM \_**
 
@@ -107,7 +107,7 @@ pVidWin->put_Owner(NULL);
 
 
 > [!Note]  
-> Se l'elemento padre della finestra video è un elemento figlio della finestra principale dell'applicazione (in altre parole, se la finestra video è figlio di un elemento figlio), è necessario creare la finestra video usando **CoCreateInstance** e aggiungerla al grafo, anziché consentire a Filter Graph Manager di aggiungere il renderer video durante intelligent [Connessione](intelligent-connect.md). Ciò garantisce che la finestra video e la finestra figlio siano ridisegnate contemporaneamente. In caso contrario, la finestra figlio potrebbe essere disegnata sulla finestra video.
+> Se l'elemento padre della finestra video è un elemento figlio della finestra principale dell'applicazione (in altre parole, se la finestra video è figlio di un elemento figlio), è necessario creare la finestra video usando **CoCreateInstance** e aggiungerla al grafo, anziché consentire a Filter Graph Manager di aggiungere il renderer video durante [l'esecuzione di Intelligent Connessione](intelligent-connect.md). Ciò garantisce che la finestra video e la finestra figlio siano ridisegnate contemporaneamente. In caso contrario, la finestra figlio potrebbe essere disegnata sulla finestra video.
 
  
 

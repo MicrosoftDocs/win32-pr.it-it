@@ -30,7 +30,7 @@ I trackbar notificano alla finestra padre le azioni dell'utente inviando all'ele
 
 ### <a name="process-trackbar-notification-messages"></a>Elaborare i messaggi di notifica di Trackbar
 
-L'esempio di codice seguente è una funzione che viene chiamata quando la finestra padre del trackbar riceve un [**messaggio \_ WM HSCROLL.**](wm-hscroll.md) Il trackbar in questo esempio ha lo [**stile \_ TBS ENABLESELRANGE.**](trackbar-control-styles.md) La posizione del dispositivo di scorrimento viene confrontata con l'intervallo di selezione e il dispositivo di scorrimento viene spostato nella posizione iniziale o finale dell'intervallo di selezione quando necessario.
+L'esempio di codice seguente è una funzione che viene chiamata quando la finestra padre del trackbar riceve un [**messaggio WM \_ HSCROLL.**](wm-hscroll.md) Il trackbar in questo esempio ha lo [**stile \_ TBS ENABLESELRANGE.**](trackbar-control-styles.md) La posizione del dispositivo di scorrimento viene confrontata con l'intervallo di selezione e il dispositivo di scorrimento viene spostato nella posizione iniziale o finale dell'intervallo di selezione quando necessario.
 
 
 ```

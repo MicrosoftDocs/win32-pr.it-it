@@ -1,5 +1,5 @@
 ---
-description: Il metodo Exit segnala la chiusura del thread di streaming.
+description: Il metodo Exit segnala l'uscita del thread di streaming.
 ms.assetid: 1bb59848-e405-40f9-87ec-33de8754e2dd
 title: Metodo CSourceStream.Exit (Source.h)
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.locfileid: "119687431"
 ---
 # <a name="csourcestreamexit-method"></a>Metodo CSourceStream.Exit
 
-Il `Exit` metodo segnala la chiusura del thread di streaming.
+Il `Exit` metodo segnala l'uscita del thread di streaming.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,7 +54,7 @@ Il [**metodo CSourceStream::Inactive**](csourcestream-inactive.md) chiama questo
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Source.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Intestazione<br/>  | <dl> <dt>Source.h (include Flussi.h)</dt> </dl>                                                                                    |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

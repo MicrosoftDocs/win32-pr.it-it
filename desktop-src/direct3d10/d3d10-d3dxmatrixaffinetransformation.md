@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 01c6b3c3ffe2de9b7c7003b78f1b07a0f35cc3a1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5c847d537eaa79b266ef785f40806c37e2503b2b9a8a97bf99a678c7dff219de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119609521"
 ---
 # <a name="d3dxmatrixaffinetransformation-function-d3dx10mathh"></a>Funzione D3DXMatrixAffineTransformation (D3DX10Math.h)
 
@@ -85,7 +85,7 @@ Puntatore a [**un oggetto D3DXQUATERNION**](d3d10-d3dxquaternion.md) che specifi
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore a una struttura D3DXVECTOR3 che rappresenta la traslazione. Se questo argomento è **NULL,** viene applicata una matrice Identity Mt alla formula in Osservazioni.
+Puntatore a una struttura D3DXVECTOR3 che rappresenta la traslazione. Se questo argomento è **NULL,** alla formula in Osservazioni viene applicata una matrice Identity Mt.
 
 </dd> </dl>
 
@@ -99,7 +99,7 @@ Puntatore a una struttura D3DXMATRIX che è una matrice di trasformazione affine
 
 Questa funzione calcola la matrice di trasformazione affine con la formula seguente, con la concatenazione di matrici valutata in ordine da sinistra a destra:
 
-M<sub>out</sub> = Ms \* (M<sub>rc</sub>)-1 \* M<sub>r</sub> \* M<sub>rc</sub> \* Mt
+M<sub>out</sub> = Mₛ \* (M<sub>rc</sub>)-1 \* M<sub>r</sub> \* M<sub>rc</sub> \* Mₜ
 
 dove:
 
@@ -111,7 +111,7 @@ M<sub>rc</sub> = centro della matrice di rotazione (pRotationCenter)
 
 M<sub>r</sub> = matrice di rotazione (pRotation)
 
-Mt = matrice di traslazione (pTranslation)
+Mt = matrice di conversione (pTranslation)
 
 Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la funzione D3DXMatrixAffineTransformation può essere usata come parametro per un'altra funzione.
 

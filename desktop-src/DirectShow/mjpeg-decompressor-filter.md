@@ -13,21 +13,21 @@ ms.locfileid: "119684941"
 ---
 # <a name="mjpeg-decompressor-filter"></a>Filtro decompressore MJPEG
 
-Questo filtro decodifica un flusso video dal movimento JPEG al video non compresso. Alcune videocamere digitali producono un flusso video JPEG in movimento.
+Questo filtro decodifica un flusso video da MOTION JPEG a un video non compresso. Alcune videocamere digitali producono un flusso video JPEG in movimento.
 
 
 
 | Etichetta | Valore |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Interfacce di filtro                        | [**Filtro IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)                                                                                                                 |
-| Tipi di supporti pin di input                    | MEDIATYPE \_ Video, MEDIASUBTYPE \_ MJPG                                                                                                               |
-| Interfacce pin di input                     | [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)                                             |
+| Interfacce di filtro                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)                                                                                                                 |
+| Tipi di supporti pin di input                    | VIDEO \_ MEDIATYPE, MEDIASUBTYPE \_ MJPG                                                                                                               |
+| Interfacce pin di input                     | [**IMemInputPin,**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) [**IPin,**](/windows/desktop/api/Strmif/nn-strmif-ipin) [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)                                             |
 | Tipi di supporti pin di output                   | VIDEO \_ MEDIATYPE, MEDIASUBTYPE \_ NULL                                                                                                               |
-| Interfacce pin di output                    | [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition), [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol) |
-| CLSID del filtro                             | CLSID \_ MjpegDec                                                                                                                                    |
-| CLSID pagina delle proprietà                      | Nessuna pagina delle proprietà                                                                                                                                   |
+| Interfacce pin di output                    | [**IMediaPosition,**](/windows/desktop/api/Control/nn-control-imediaposition) [**IMediaSeeking,**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) [**IPin,**](/windows/desktop/api/Strmif/nn-strmif-ipin) [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol) |
+| Filtro CLSID                             | CLSID \_ MjpegDec                                                                                                                                    |
+| CLSID della pagina delle proprietà                      | Nessuna pagina delle proprietà                                                                                                                                   |
 | File eseguibile                               | quartz.dll                                                                                                                                         |
-| [Merito](merit.md)                       | MERIT \_ NORMAL                                                                                                                                      |
+| [Merito](merit.md)                       | MERITO \_ NORMALE                                                                                                                                      |
 | [Categoria filtro](filter-categories.md) | CLSID \_ LegacyAmFilterCategory                                                                                                                      |
 
 
@@ -36,7 +36,7 @@ Questo filtro decodifica un flusso video dal movimento JPEG al video non compres
 
 ## <a name="remarks"></a>Commenti
 
-Questo filtro è compatibile con il video JPEG di movimento che usa il codice FOURCC 'MJPG'. Non può decodificare altri tipi di movimento JPEG. Per queste operazioni, è necessario usare un filtro decodificatore di terze parti.
+Questo filtro è compatibile con il video JPEG in movimento che usa il codice FOURCC 'MJPG'. Non è in grado di decodificare altre varietà di jpeg di movimento. Per queste operazioni, è necessario usare un filtro decodificatore di terze parti.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

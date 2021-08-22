@@ -19,7 +19,7 @@ ms.locfileid: "119755961"
 -   [Gestione degli errori](/windows/desktop/Debug/error-handling)
 -   [Debug di base](/windows/desktop/Debug/basic-debugging)
 -   [Eseguire il debug della libreria della Guida](/windows/desktop/Debug/debug-help-library)
--   [Gestione strutturata delle eccezioni](/windows/desktop/Debug/structured-exception-handling)
+-   [Gestione delle eccezioni strutturata](/windows/desktop/Debug/structured-exception-handling)
 -   [Attraversamento della catena di attesa](/windows/desktop/Debug/wait-chain-traversal)
 -   [Intel AVX](/windows/desktop/Debug/avx-support-portal)
 

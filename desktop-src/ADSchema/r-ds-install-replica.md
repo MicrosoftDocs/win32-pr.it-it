@@ -4,7 +4,7 @@ description: Diritto esteso necessario per eseguire un'installazione della repli
 ms.assetid: a13b990b-ad8b-4683-aea5-e9eb203e6ced
 ms.tgt_platform: multiple
 keywords:
-- Schema ad Active Directory con diritto esteso DS-Install-Replica
+- Schema di Active Directory con diritto esteso DS-Install-Replica
 topic_type:
 - apiref
 api_name:

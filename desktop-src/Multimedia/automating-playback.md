@@ -3,30 +3,30 @@ title: Automazione della riproduzione
 description: Automazione della riproduzione
 ms.assetid: 3aa05a54-58d7-4d14-93ee-459aa860b20e
 keywords:
-- MCIWndCreate (macro)
-- MCIWndPlay (macro)
+- Macro MCIWndCreate
+- Macro MCIWndPlay
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6097d38b3d468b6de68ee7e11f98f530aff00d2b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ad1c05041bade08f47505a2cf1207739777c5af825ea9f5f300b343b87efe3c7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103714074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691971"
 ---
 # <a name="automating-playback"></a>Automazione della riproduzione
 
-È possibile automatizzare la riproduzione nell'applicazione usando [**MCIWndCreate**](/windows/desktop/api/Vfw/nf-vfw-mciwndcreatea) e la macro [**MCIWndPlay**](/windows/desktop/api/Vfw/nf-vfw-mciwndplay) , insieme alla macro [**MCIWndDestroy**](/windows/desktop/api/Vfw/nf-vfw-mciwnddestroy) o [**MCIWndClose**](/windows/desktop/api/Vfw/nf-vfw-mciwndclose) . Per automatizzare la riproduzione, specificare gli \_ stili MCIWNDF NOPLAYBAR e MCIWNDF \_ NOTIFYMODE nel parametro **MCIWndCreate * * * dwStyle* . Specificare lo \_ stile di NOPLAYBAR MCIWNDF per nascondere la barra degli strumenti e lo \_ stile di NOTIFYMODE MCIWNDF per emettere un messaggio di notifica appropriato quando il dispositivo smette di riprodursi.
+È possibile automatizzare la riproduzione nell'applicazione usando [**MCIWndCreate**](/windows/desktop/api/Vfw/nf-vfw-mciwndcreatea) e la macro [**MCIWndPlay,**](/windows/desktop/api/Vfw/nf-vfw-mciwndplay) insieme alla macro [**MCIWndDestroy**](/windows/desktop/api/Vfw/nf-vfw-mciwnddestroy) o [**MCIWndClose.**](/windows/desktop/api/Vfw/nf-vfw-mciwndclose) Per automatizzare la riproduzione, specificare gli stili MCIWNDF \_ NOPLAYBAR e MCIWNDF \_ NOTIFYMODE nel **parametro MCIWndCreate**_dwStyle._ Specificare lo stile MCIWNDF NOPLAYBAR per nascondere la barra degli strumenti e lo stile NOTIFYMODE MCIWNDF per inviare un messaggio di notifica appropriato quando il \_ dispositivo smette di essere \_ riprodotto.
 
-È possibile riprodurre il dispositivo o il file specificato in **MCIWndCreate** usando **MCIWndPlay**. La macro MCIWndPlay inizia a riprodurre il contenuto dalla posizione di riproduzione corrente e continua fino alla fine.
+È possibile riprodurre il dispositivo o il file specificato in **MCIWndCreate** usando **MCIWndPlay.** La macro MCIWndPlay inizia a riprodurre il contenuto dalla posizione di riproduzione corrente e continua fino alla fine.
 
-È possibile eliminare o chiudere una finestra MCIWnd usando la macro [**MCIWndDestroy**](/windows/desktop/api/Vfw/nf-vfw-mciwnddestroy) o [**MCIWndClose**](/windows/desktop/api/Vfw/nf-vfw-mciwndclose) . La macro **MCIWndDestroy** chiude il dispositivo o il file ed elimina la finestra MCIWnd invalidando il relativo handle. Se l'applicazione può riutilizzare la finestra MCIWnd, utilizzare **MCIWndClose** per chiudere il dispositivo senza eliminare definitivamente la finestra.
+È possibile eliminare o chiudere una finestra MCIWnd usando la macro [**MCIWndDestroy**](/windows/desktop/api/Vfw/nf-vfw-mciwnddestroy) o [**MCIWndClose.**](/windows/desktop/api/Vfw/nf-vfw-mciwndclose) La macro **MCIWndDestroy** chiude il dispositivo o il file ed elimina la finestra MCIWnd invalidando l'handle. Se l'applicazione può riutilizzare la finestra **MCIWnd, usare MCIWndClose** per chiudere il dispositivo senza eliminare la finestra.
 
-L'applicazione può rilevare quando il dispositivo smette di essere riprodotto e chiude automaticamente la finestra. A tale scopo, specificare lo \_ stile NOTIFYMODE MCIWNDF per il parametro *DwStyle* di [**MCIWndCreate**](/windows/desktop/api/Vfw/nf-vfw-mciwndcreatea). In questo modo, il dispositivo invia un messaggio [**MCIWNDM \_ NOTIFYMODE**](mciwndm-notifymode.md) ogni volta che modifica le modalità. L'applicazione può intercettare questo messaggio per determinare se la riproduzione del dispositivo è stata interrotta. Quando il dispositivo smette di rigiocare, l'applicazione chiude la finestra.
+L'applicazione può rilevare quando il dispositivo smette di riprodurre e chiudere automaticamente la finestra. A tale scopo, specificare lo stile NOTIFYMODE MCIWNDF per \_ il *parametro dwStyle* di [**MCIWndCreate**](/windows/desktop/api/Vfw/nf-vfw-mciwndcreatea). In questo modo il dispositivo invia un [**messaggio \_ NOTIFYMODE MCIWNDM**](mciwndm-notifymode.md) ogni volta che cambia modalità. L'applicazione può intercettare questo messaggio per determinare se la riproduzione del dispositivo è stata interrotta. Quando il dispositivo smette di essere riprodotto, l'applicazione chiude la finestra.
 
- 
+ 
 
- 
+ 
 
 
 

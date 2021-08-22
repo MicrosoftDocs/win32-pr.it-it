@@ -44,9 +44,9 @@ Contiene gli indirizzi di posta elettronica utilizzati nella riga Ccn di un mess
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere [**Proprietà Bcc di IEmailAction.**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_bcc)
+Per lo sviluppo C++, vedere [**Proprietà Bcc di IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_bcc).
 
-Per lo sviluppo di script, [**vedere EmailAction.Bcc.**](emailaction-bcc.md)
+Per lo sviluppo di script, [**vedere EmailAction.Bcc**](emailaction-bcc.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Per lo sviluppo di script, [**vedere EmailAction.Bcc.**](emailaction-bcc.md)
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

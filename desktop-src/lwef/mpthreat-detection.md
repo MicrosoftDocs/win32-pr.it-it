@@ -1,10 +1,10 @@
 ---
-title: Enumerazione MPTHREAT_DETECTION (MpClient. h)
-description: Possibili tipi noti di rilevamento delle minacce non valide.
+title: MPTHREAT_DETECTION enumerazione (MpClient.h)
+description: Possibili tipi noti di rilevamento delle minacce non validi.
 ms.assetid: 14FCA9BD-A9A1-488B-B8E8-88DE0DF18F27
 keywords:
-- Funzionalità dell'ambiente Windows legacy dell'enumerazione MPTHREAT_DETECTION
-- Caratteristiche dell'ambiente Windows legacy del puntatore di enumerazione PMPTHREAT_DETECTION
+- MPTHREAT_DETECTION funzionalità dell'ambiente Windows legacy
+- PMPTHREAT_DETECTION puntatore di enumerazione Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86edc0e1ca4ee130f2a2a4a678447771f1ae40ae
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6d362edbb7257f8be5577880a4390c5a2f5f5703504a5f7447154bebe5ada500
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119601181"
 ---
-# <a name="mpthreat_detection-enumeration"></a>\_Enumerazione rilevamento MPTHREAT
+# <a name="mpthreat_detection-enumeration"></a>Enumerazione MPTHREAT \_ DETECTION
 
-Possibili tipi noti di rilevamento delle minacce non valide.
+Possibili tipi noti di rilevamento delle minacce non validi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,38 +45,38 @@ typedef enum tagMPTHREAT_DETECTION {
 
 <dl> <dt>
 
-<span id="MP_THREAT_DETECTION_CONCRETE"></span><span id="mp_threat_detection_concrete"></span>**\_concreta \_ rilevamento minacce MP \_**
+<span id="MP_THREAT_DETECTION_CONCRETE"></span><span id="mp_threat_detection_concrete"></span>**MP \_ THREAT \_ DETECTION \_ CONCRETE**
 </dt> <dd>
 
-È stata rilevata una minaccia tramite firme concrete.
+La minaccia è stata rilevata tramite firme concrete.
 
 </dd> <dt>
 
-<span id="MP_THREAT_DETECTION_HEURISTIC"></span><span id="mp_threat_detection_heuristic"></span>**\_ \_ euristica rilevamento minacce MP \_**
+<span id="MP_THREAT_DETECTION_HEURISTIC"></span><span id="mp_threat_detection_heuristic"></span>**\_EURISTICA DI RILEVAMENTO DELLE MINACCE \_ \_ DEL MP**
 </dt> <dd>
 
-Minaccia rilevata tramite euristica.
+La minaccia è stata rilevata tramite euristica.
 
 </dd> <dt>
 
-<span id="MP_THREAT_DETECTION_GENERIC"></span><span id="mp_threat_detection_generic"></span>**\_rilevamento minacce \_ MP \_ generico**
+<span id="MP_THREAT_DETECTION_GENERIC"></span><span id="mp_threat_detection_generic"></span>**MP \_ THREAT \_ DETECTION \_ GENERIC**
 </dt> <dd>
 
-È stata rilevata una minaccia tramite firme generiche.
+La minaccia è stata rilevata tramite firme generiche.
 
 </dd> <dt>
 
-<span id="MP_THREAT_DETECTION_SUSPICIOUS"></span><span id="mp_threat_detection_suspicious"></span>**\_rilevamento minacce \_ MP \_ sospetto**
+<span id="MP_THREAT_DETECTION_SUSPICIOUS"></span><span id="mp_threat_detection_suspicious"></span>**MP \_ THREAT \_ DETECTION \_ SUSPICIOUS**
 </dt> <dd>
 
-Minaccia rilevata tramite il monitoraggio del comportamento.
+È stata rilevata una minaccia tramite il monitoraggio del comportamento.
 
 </dd> <dt>
 
-<span id="MP_THREAT_DETECTION_FASTPATH"></span><span id="mp_threat_detection_fastpath"></span>**\_ \_ FastPath rilevamento minacce \_ MP**
+<span id="MP_THREAT_DETECTION_FASTPATH"></span><span id="mp_threat_detection_fastpath"></span>**MP \_ THREAT \_ DETECTION \_ FASTPATH**
 </dt> <dd>
 
-È stata rilevata una minaccia tramite FastPath.
+La minaccia è stata rilevata tramite fastpath.
 
 </dd> </dl>
 
@@ -86,9 +86,9 @@ Minaccia rilevata tramite il monitoraggio del comportamento.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

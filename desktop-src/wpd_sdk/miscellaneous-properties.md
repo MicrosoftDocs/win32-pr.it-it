@@ -1,7 +1,7 @@
 ---
-description: I dispositivi portatili Windows supportano le proprietà varie seguenti.
+description: Windows Dispositivi portatili supporta le proprietà varie seguenti.
 ms.assetid: 0f2a5684-a94f-4a51-8f72-527204e4ebfa
-title: Proprietà varie (PortableDevice. h)
+title: Proprietà varie (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,27 +13,27 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 6bc5f90bb04c2ee0d018d03ee07b6cd7436e6593
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bdc093d877a180f6c7072ff9365e96edfe7d9e2c006fdcb745c58e92df3b179f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704431"
 ---
 # <a name="miscellaneous-properties"></a>Proprietà varie
 
-I dispositivi portatili Windows supportano le proprietà varie seguenti.
+Windows Dispositivi portatili supporta le proprietà varie seguenti.
 
 
 
 | Proprietà                                       | VarType         | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 |------------------------------------------------|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **\_opzione dell'API WPD usare un \_ \_ \_ \_ flusso di dati chiaro \_** | **\_bool VT**    | Valore booleano che specifica se il flusso di dati creato per il trasferimento dei dati sarà chiaro, ovvero se il DRM non è necessario. I client possono impostare questa opzione aggiungendola alle proprietà dell'oggetto passate a [**IPortableDeviceContent:: CreateObjectWithPropertiesAndData**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-createobjectwithpropertiesanddata).<br/>                                                                                                                                                   |
-| **\_versione del servizio WPD \_**                      | **\_LPWSTR VT**  | Stringa che specifica la versione di implementazione di un determinato servizio del dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| **\_tipi di contenuto della cartella WPD \_ \_ \_ consentiti**       | **VT \_ sconosciuto** | Valore che specifica i tipi di oggetto che possono essere elementi figlio diretti di questa cartella. Le cartelle figlio possono avere diverse funzionalità. Questa proprietà è un [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) che contiene \_ i valori CLSID del VT che specificano i tipi di oggetto consentiti.<br/> Per un elenco di tipi di oggetto definiti da dispositivi portatili Windows, vedere [requisiti per gli oggetti](requirements-for-objects.md).<br/>                                         |
-| **\_ \_ categoria oggetto funzionale \_ WPD**          | **\_CLSID VT**   | Valore che specifica la categoria funzionale dell'oggetto.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| **\_ \_ profili informazioni di rendering WPD \_**      | **VT \_ sconosciuto** | Un [**IPortableDeviceValuesCollection**](iportabledevicevaluescollection.md) che contiene più interfacce [**IPortableDeviceValues**](iportabledevicevalues.md) , ognuna delle quali contiene le impostazioni delle proprietà per un profilo supportato dall'oggetto.                                                                                                                                                                                                                                            |
-| **\_ \_ \_ \_ nome visualizzato posizione hint oggetto \_ WPD** | **\_LPWSTR VT**  | Se un oggetto è un percorso di hint, questa proprietà indica il nome specifico dell'hint da visualizzare all'utente anziché il nome dell'oggetto. I driver possono specificare hint di posizione per diversi tipi di oggetto. Si tratta delle posizioni di archiviazione preferite per le cartelle che contengono un particolare tipo di oggetto. Un equivalente è la cartella immagini personali per i file di immagine in Windows. Se questa proprietà non esiste, viene in genere usato il [ \_ \_ nome dell'oggetto WPD](object-properties.md) .<br/> |
+| **OPZIONE DELL'API WPD \_ USE CLEAR DATA STREAM \_ \_ \_ (USA CLEAR DATA \_ \_ STREAM)** | **VT \_ BOOL**    | Valore booleano che specifica se il flusso di dati creato per il trasferimento dei dati sarà chiaro, ad esempio DRM non è coinvolto. I client possono impostare questa opzione aggiungendola alle proprietà dell'oggetto passate a [**IPortableDeviceContent::CreateObjectWithPropertiesAndData**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-createobjectwithpropertiesanddata).<br/>                                                                                                                                                   |
+| **VERSIONE DEL SERVIZIO WPD \_ \_**                      | **VT \_ LPWSTR**  | Stringa che specifica la versione di implementazione di un determinato servizio dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **TIPI DI CONTENUTO DELLA CARTELLA WPD \_ \_ \_ \_ CONSENTITI**       | **VT \_ UNKNOWN** | Valore che specifica i tipi di oggetto che possono essere figli diretti di questa cartella. Le cartelle figlio possono avere funzionalità diverse. Questa proprietà è un [**oggetto IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) che contiene valori CLSID VT \_ che specificano i tipi di oggetto consentiti.<br/> Per un elenco dei tipi di oggetto definiti da Windows dispositivi portatili, vedere [Requisiti per gli oggetti](requirements-for-objects.md).<br/>                                         |
+| **CATEGORIA DI OGGETTI FUNZIONALI WPD \_ \_ \_**          | **VT \_ CLSID**   | Valore che specifica la categoria funzionale dell'oggetto.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **PROFILI DI INFORMAZIONI SUL RENDERING WPD \_ \_ \_**      | **VT \_ UNKNOWN** | Oggetto [**IPortableDeviceValuesCollection**](iportabledevicevaluescollection.md) che contiene più [**interfacce IPortableDeviceValues,**](iportabledevicevalues.md) ognuna delle quali contiene le impostazioni delle proprietà per un profilo supportate dall'oggetto.                                                                                                                                                                                                                                            |
+| **NOME VISUALIZZATO DEL \_ \_ SUGGERIMENTO \_ PER \_ L'OGGETTO WPD \_** | **VT \_ LPWSTR**  | Se un oggetto è una posizione dei suggerimenti, questa proprietà indica il nome specifico del suggerimento da visualizzare all'utente anziché il nome dell'oggetto. I driver possono specificare suggerimenti sulla posizione per vari tipi di oggetto. Si tratta dei percorsi di archiviazione preferiti per le cartelle che contengono un particolare tipo di oggetto. Un equivalente è la cartella Immagini per i file di immagine in Windows. Se questa proprietà non esiste, in genere viene usato [il nome dell'oggetto WPD. \_ \_ ](object-properties.md)<br/> |
 
 
 
@@ -45,7 +45,7 @@ I dispositivi portatili Windows supportano le proprietà varie seguenti.
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 
@@ -53,7 +53,7 @@ I dispositivi portatili Windows supportano le proprietà varie seguenti.
 
 <dl> <dt>
 
-[**Proprietà e attributi di WPD**](properties-and-attributes.md)
+[**Proprietà e attributi WPD**](properties-and-attributes.md)
 </dt> </dl>
 
  

@@ -1,41 +1,41 @@
 ---
-description: Mappe per l'ambiente cubico, a volte denominate mappe cubo, sono trame che contengono dati di immagine che rappresentano la scena che circonda un oggetto, come se l'oggetto fosse al centro di un cubo.
+description: Le mappe dell'ambiente cubico, a volte definite mappe di cubi, sono trame che contengono dati immagine che rappresentano la scena che circonda un oggetto, come se l'oggetto fosse al centro di un cubo.
 ms.assetid: 4879d59b-e6d3-4811-ab2c-bcce8f214e1c
 title: Mapping dell'ambiente cubico (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cecac83db067224195883485bcbd282aa82ae4b5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6b02f86528c52c2e8e9376eb92e4452735c2613cc9b7dda08a8a07e8473193ea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119565340"
 ---
 # <a name="cubic-environment-mapping-direct3d-9"></a>Mapping dell'ambiente cubico (Direct3D 9)
 
-Mappe per l'ambiente cubico, a volte denominate mappe cubo, sono trame che contengono dati di immagine che rappresentano la scena che circonda un oggetto, come se l'oggetto fosse al centro di un cubo. Ogni faccia della mappa dell'ambiente cubica copre un campo di visualizzazione di 90 gradi in orizzontale e verticale e sono presenti sei visi per ogni mappa del cubo. L'orientamento dei visi è illustrato nella figura seguente.
+Le mappe dell'ambiente cubico, a volte definite mappe di cubi, sono trame che contengono dati immagine che rappresentano la scena che circonda un oggetto, come se l'oggetto fosse al centro di un cubo. Ogni viso della mappa dell'ambiente cubico copre un campo di visualizzazione a 90 gradi in orizzontale e verticale e sono presenti sei visi per ogni mappa cubo. L'orientamento dei visi è illustrato nella figura seguente.
 
-![illustrazione di un cubo con assi di coordinate centrali perpendicolari ai visi dei cubi](images/cubemap-cube.png)
+![Illustrazione di un cubo con assi di coordinate centrali perpendicolari ai visi del cubo](images/cubemap-cube.png)
 
-Ogni faccia del cubo è orientata perpendicolarmente al piano x/y, y/z o x/z, nello spazio globale. Nella figura seguente viene illustrato il modo in cui ogni piano corrisponde a una faccia.
+Ogni faccia del cubo è orientata perpendicolare al piano x/y, y/z o x/z, nello spazio mondiale. La figura seguente mostra come ogni piano corrisponde a un viso.
 
-![illustrazione dei volti dei cubi con proiezioni di coordinate da piani](images/cube-faces.png)
+![Illustrazione di visi del cubo con proiezioni di coordinate dai piani](images/cube-faces.png)
 
-Le mappe dell'ambiente cubico sono implementate come una serie di oggetti texture. Le applicazioni possono usare immagini statiche per il mapping di ambienti cubici o eseguire il rendering nei visi della mappa del cubo per eseguire il mapping dell'ambiente dinamico. Questa tecnica richiede che le superfici della mappa del cubo siano superfici di destinazione di rendering valide, create con il \_ flag D3DUSAGE RENDERTARGET impostato.
+Le mappe dell'ambiente cubico vengono implementate come una serie di oggetti trama. Le applicazioni possono usare immagini statiche per il mapping dell'ambiente cubico oppure possono eseguire il rendering nei visi della mappa del cubo per eseguire il mapping dinamico dell'ambiente. Questa tecnica richiede che le superfici della mappa cubo siano superfici di destinazione di rendering valide, create con il flag D3DUSAGE \_ RENDERTARGET impostato.
 
-I visi di una mappa cubo non devono contenere rendering estremamente dettagliati della scena circostante. Nella maggior parte dei casi, le mappe dell'ambiente vengono applicate alle superfici curve. Dato il livello di curvatura usato dalla maggior parte delle applicazioni, la distorsione riflessiva risultante rende estremamente dettagliati gli sprechi della mappa dell'ambiente in termini di memoria e sovraccarico di rendering.
+I visi di una mappa cubo non devono contenere rendering estremamente dettagliati della scena circostante. Nella maggior parte dei casi, le mappe di ambiente vengono applicate alle superfici curve. Data la quantità di curvatura usata dalla maggior parte delle applicazioni, la distorsione riflettente risultante rende i dettagli estremi della mappa dell'ambiente sprecati in termini di memoria e sovraccarico di rendering.
 
-## <a name="mipmapped-cubic-environment-maps"></a>Mappe dell'ambiente cubico mipmap
+## <a name="mipmapped-cubic-environment-maps"></a>Ambiente cubico mipmapped Mappe
 
-Le mappe del cubo possono essere mipmap. Per creare una mappa del cubo mipmap, impostare il parametro Levels del metodo [**CreateCubeTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createcubetexture) sul numero di livelli desiderato. È possibile prevedere la topografia di queste superfici, come illustrato nella figura seguente.
+Le mappe dei cubi possono essere mipmapped. Per creare una mappa del cubo mipmapped, impostare il parametro Levels del [**metodo CreateCubeTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createcubetexture) sul numero di livelli desiderato. È possibile immaginare la topografia di queste superfici, come illustrato nel diagramma seguente.
 
-![diagramma di una mappa del cubo mipmap con n livelli MIP](images/cubemap-mipped.png)
+![Diagramma di una mappa cubo mipmapped con n livelli mip](images/cubemap-mipped.png)
 
-Le applicazioni che creano mappe dell'ambiente cubico mipmap possono accedere a ogni volto chiamando il metodo [**GetCubeMapSurface**](/windows/desktop/api) . Iniziare impostando il valore appropriato dal tipo enumerato [**D3DCUBEMAP \_ Faces**](./d3dcubemap-faces.md) , come descritto in [creazione di superfici della mappa dell'ambiente cubico (Direct3D 9)](creating-cubic-environment-map-surfaces.md). Selezionare quindi il livello da recuperare impostando il parametro **GetCubeMapSurface** Level sul livello mipmap desiderato. Tenere presente che 0 corrisponde all'immagine di primo livello.
+Le applicazioni che creano mappe dell'ambiente cubico con mipmapped possono accedere a ogni viso chiamando il [**metodo GetCubeMapSurface.**](/windows/desktop/api) Iniziare impostando il valore appropriato dal tipo [**enumerato D3DCUBEMAP \_ FACES,**](./d3dcubemap-faces.md) come descritto in Creazione di superfici mappa dell'ambiente [cubico (Direct3D 9).](creating-cubic-environment-map-surfaces.md) Selezionare quindi il livello da recuperare impostando il parametro del livello **GetCubeMapSurface** sul livello mipmap desiderato. Tenere presente che 0 corrisponde all'immagine di primo livello.
 
-## <a name="texture-coordinates-for-cubic-environment-maps"></a>Coordinate di trama per le mappe dell'ambiente cubico
+## <a name="texture-coordinates-for-cubic-environment-maps"></a>Coordinate di trama per l'ambiente cubico Mappe
 
-Le coordinate di trama che indicizzano una mappa dell'ambiente cubi non sono semplici coordinate di stile u, v, come usate quando si applicano trame standard. Di fatto, le mappe dell'ambiente cubico non usano affatto le coordinate di trama. Al posto di un set di coordinate di trama, le mappe dell'ambiente cubico richiedono un vettore 3D. È necessario prestare attenzione a specificare un formato di vertice appropriato. Oltre a comunicare al sistema il numero di set di coordinate di trama utilizzate dall'applicazione, è necessario fornire informazioni sul numero di elementi in ogni set. Direct3D offre il set di macro [**D3DFVF \_ TEXCOORDSIZEN**](d3dfvf-texcoordsizen.md) per questo scopo. Queste macro accettano un solo parametro, identificando l'indice del set di coordinate di trama per il quale viene descritta la dimensione. Nel caso di un vettore 3D, è necessario includere lo schema di bit creato dalla \_ macro TEXCOORDSIZE3 di D3DFVF. Nell'esempio di codice seguente viene illustrata la modalità di utilizzo di questa macro.
+Le coordinate di trama che indicizzano una mappa dell'ambiente cubico non sono semplici coordinate di stile u, v, come usato quando vengono applicate trame standard. In realtà, le mappe dell'ambiente cubico non usano affatto le coordinate di trama. Al posto di un set di coordinate di trama, le mappe dell'ambiente cubico richiedono un vettore 3D. È necessario specificare un formato di vertice appropriato. Oltre a specificare al sistema il numero di set di coordinate trame utilizzate dall'applicazione, è necessario fornire informazioni sul numero di elementi presenti in ogni set. Direct3D offre il set di macro [**D3DFVF \_ TEXCOORDSIZEN**](d3dfvf-texcoordsizen.md) a questo scopo. Queste macro accettano un singolo parametro, identificando l'indice del set di coordinate di trama per cui vengono descritte le dimensioni. Nel caso di un vettore 3D, includere il modello di bit creato dalla macro D3DFVF \_ TEXCOORDSIZE3. Nell'esempio di codice seguente viene illustrato l'utilizzo di questa macro.
 
 
 ```
@@ -47,11 +47,11 @@ DWORD dwFVF = D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_TEX1 | D3DFVF_TEXCOORDSIZE3(0)
 
 
 
-In alcuni casi, ad esempio il mapping della luce diffusa, si usa la normalità dei vertici dello spazio della fotocamera per il vettore. In altri casi, come il mapping dell'ambiente speculare, si usa un vettore di Reflection. Poiché le normali Vertex trasformate sono ampiamente comprese, le informazioni in questo argomento si concentrano sul calcolo di un vettore di Reflection.
+In alcuni casi, ad esempio il mapping della luce diffusa, si usa la normale del vertice spazio-fotocamera per il vettore. In altri casi, come il mapping dell'ambiente speculare, si usa un vettore di reflection. Poiché le normali dei vertici trasformate sono ampiamente comprese, le informazioni qui si concentrano sul calcolo di un vettore di reflection.
 
-Per il calcolo di un vettore di Reflection è necessario conoscere la posizione di ogni vertice e di un vettore dal punto di vista a tale vertice. Direct3D può calcolare automaticamente i vettori di reflection per la geometria. L'uso di questa funzionalità consente di risparmiare memoria perché non è necessario includere coordinate di trama per la mappa dell'ambiente. Consente inoltre di ridurre la larghezza di banda e, nel caso di un dispositivo HAL T&L, può essere notevolmente più veloce rispetto ai calcoli che l'applicazione può creare autonomamente. Per usare questa funzionalità, nella fase della trama che contiene la mappa dell'ambiente cubica impostare lo \_ stato della fase della trama D3DTSS TEXCOORDINDEX su una combinazione del \_ membro D3DTSS TCI \_ CAMERASPACEREFLECTIONVECTOR di [**D3DTEXTURESTAGESTATETYPE**](./d3dtexturestagestatetype.md) e dell'indice di un set di coordinate di trama. In alcune situazioni, ad esempio il mapping della luce diffusa, è possibile usare \_ il \_ membro D3DTSS TCI CAMERASPACENORMAL di **D3DTEXTURESTAGESTATETYPE**, che fa in modo che il sistema usi il vettore di indirizzamento, ovvero lo spazio della fotocamera, la normalità dei vertici per la trama. L'indice viene usato solo dal sistema per determinare la modalità di wrapping per la trama.
+Il calcolo di un vettore di reflection da solo richiede la comprensione della posizione di ogni vertice e di un vettore dal punto di vista a tale vertice. Direct3D può calcolare automaticamente i vettori di reflection per la geometria. L'uso di questa funzionalità consente di risparmiare memoria perché non è necessario includere le coordinate di trama per la mappa dell'ambiente. Riduce anche la larghezza di banda e, nel caso di un dispositivo HAL T&L, può essere notevolmente più veloce dei calcoli che l'applicazione può eseguire da solo. Per usare questa funzionalità, nella fase della trama che contiene la mappa dell'ambiente cubico impostare lo stato della fase della trama D3DTSS TEXCOORDINDEX su una combinazione del membro \_ D3DTSS \_ TCI \_ CAMERASPACEREFLECTIONVECTOR [**di D3DTEXTURESTAGESTATETYPE**](./d3dtexturestagestatetype.md) e dell'indice di un set di coordinate di trama. In alcune situazioni, ad esempio il mapping della luce diffusa, è possibile usare il membro D3DTSS \_ TCI \_ CAMERASPACENORMAL di **D3DTEXTURESTAGESTATETYPE**, che fa sì che il sistema usi la normale dei vertici trasformata, spazio-fotocamera e vertice come vettore di indirizzamento per la trama. L'indice viene usato solo dal sistema per determinare la modalità di ritorno a capo per la trama.
 
-Nell'esempio di codice riportato di seguito viene illustrato il modo in cui viene utilizzato questo valore.
+Nell'esempio di codice seguente viene illustrato come viene usato questo valore.
 
 
 ```
@@ -68,26 +68,26 @@ m_d3dDevice->SetTextureStageState( 2, D3DTSS_TEXCOORDINDEX,
 
 
 
-Quando si Abilita la generazione automatica delle coordinate di trama, il sistema usa una delle due formule per calcolare il vettore di reflection per ogni vertice. Quando lo \_ stato di rendering LOCALVIEWER di D3DRS è impostato su **true**, viene utilizzata la formula seguente.
+Quando si abilita la generazione automatica delle coordinate di trama, il sistema usa una delle due formule per calcolare il vettore di reflection per ogni vertice. Quando lo stato di rendering D3DRS \_ LOCALVIEWER è impostato su **TRUE,** viene usata la formula seguente.
 
-![formula del vettore di Reflection (r = 2 (exn) n-e)](images/reflection-vector-local.png)
+![formula del vettore di reflection (r = 2(exn)n-e)](images/reflection-vector-local.png)
 
-Nella formula precedente R è il vettore di reflection in fase di calcolo, E è il vettore di posizione normalizzato e N è la normalità del vertice dello spazio della fotocamera.
+Nella formula precedente R è il vettore di reflection calcolato, E è il vettore posizione-occhio normalizzato e N è la normale del vertice dello spazio della fotocamera.
 
-Quando lo \_ stato di rendering LOCALVIEWER di D3DRS è impostato su **false**, il sistema utilizza la formula seguente.
+Quando lo stato di rendering D3DRS \_ LOCALVIEWER è impostato su **FALSE,** il sistema usa la formula seguente.
 
-![formula del vettore di Reflection (r = 2nzn-i)](images/reflection-vector-nonlocal.png)
+![formula del vettore di reflection (r = 2nzn-i)](images/reflection-vector-nonlocal.png)
 
-Gli elementi R e N in questa formula sono identici a quelli della formula precedente. L'elemento N<sub>z</sub> è la Z dello spazio globale del vertice normale ed è il vettore (0, 0, 1) di un punto di vista a distanza infinita. Il sistema utilizza il vettore di reflection di una delle due formule per selezionare e indirizzare il volto appropriato della mappa del cubo.
+Gli elementi R e N in questa formula sono identici alla formula precedente. <sub>L'elemento</sub> N Z è lo spazio mondo z della normale vertice e I è il vettore (0,0,1) di un punto di vista infinitamente distante. Il sistema usa il vettore di reflection di una delle due formule per selezionare e risolvere il viso appropriato della mappa del cubo.
 
 > [!Note]  
-> Nella maggior parte dei casi, le applicazioni devono abilitare la normalizzazione automatica delle normali dei vertici. A tale scopo, impostare D3DRS \_ NORMALIZENORMALS su **true**. Se non si Abilita questo stato di rendering, l'aspetto della mappa dell'ambiente sarà notevolmente diverso da quanto previsto.
+> Nella maggior parte dei casi, le applicazioni devono abilitare la normalizzazione automatica delle normali dei vertici. A tale scopo, impostare D3DRS \_ NORMALIZENORMALS su **TRUE.** Se non si abilita questo stato di rendering, l'aspetto della mappa dell'ambiente sarà drasticamente diverso da quello previsto.
 
  
 
-Informazioni aggiuntive sono contenute nell'argomento seguente.
+Altre informazioni sono contenute nell'argomento seguente.
 
--   [Creazione di superfici della mappa dell'ambiente cubico (Direct3D 9)](creating-cubic-environment-map-surfaces.md)
+-   [Creazione di superfici mappa dell'ambiente cubico (Direct3D 9)](creating-cubic-environment-map-surfaces.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
