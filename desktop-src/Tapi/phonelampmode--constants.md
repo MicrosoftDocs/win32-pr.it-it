@@ -1,19 +1,19 @@
 ---
-description: Le costanti del flag di bit PHONELAMPMODE descrivono i vari modi in cui è possibile accendere una lampada per telefoni.
+description: Le costanti del flag di bit PHONELAMPMODE descrivono diversi modi in cui è possibile accesa una lampadina per telefoni.
 ms.assetid: 4f6ed2fa-32c9-44b4-bfb5-2c1446ea84fe
-title: Costanti PHONELAMPMODE_ (TAPI. h)
+title: PHONELAMPMODE_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d8df5920df79e6fc59eb12bf1f517b4070e617d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c0a39aa3437fa813b37bad74d9c42798d0151ea3ae17adee4dad90e19675e8db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118862247"
 ---
-# <a name="phonelampmode_-constants"></a>Costanti PHONELAMPMODE_
+# <a name="phonelampmode_-constants"></a>PHONELAMPMODE_ costanti
 
-Le costanti dei flag di bit **PHONELAMPMODE_** descrivono i vari modi in cui è possibile illuminare una lampada del telefono.
+Le **PHONELAMPMODE_** flag di bit descrivono diversi modi in cui è possibile accende la lampadina di un telefono.
 
 <dl> <dt>
 
@@ -22,7 +22,7 @@ Le costanti dei flag di bit **PHONELAMPMODE_** descrivono i vari modi in cui è 
 
 
 
-Questo valore viene usato per descrivere una posizione di pulsante/lampada senza lampada corrispondente.
+Questo valore viene usato per descrivere la posizione di un pulsante/lampione senza lampioni corrispondenti.
 
 
 </dt> </dl> </dd> <dt>
@@ -32,7 +32,7 @@ Questo valore viene usato per descrivere una posizione di pulsante/lampada senza
 
 
 
-Flutter rotto è la superposizione di Flash e flutter.
+Il flutter interrotto è la sovrapposizione di flash e flutter.
 
 
 </dt> </dl> </dd> <dt>
@@ -42,7 +42,7 @@ Flutter rotto è la superposizione di Flash e flutter.
 
 
 
-Flash indica una riduzione del rallentamento.
+Flash indica un rallentamento dell'on-and-off.
 
 
 </dt> </dl> </dd> <dt>
@@ -52,7 +52,7 @@ Flash indica una riduzione del rallentamento.
 
 
 
-Flutter significa fast on e off.
+Flutter significa velocizzarsi e disattivare.
 
 
 </dt> </dl> </dd> <dt>
@@ -62,7 +62,7 @@ Flutter significa fast on e off.
 
 
 
-La lampada è disattivata.
+La lampadina è spenta.
 
 
 </dt> </dl> </dd> <dt>
@@ -72,7 +72,7 @@ La lampada è disattivata.
 
 
 
-Stabile indica che la lampada è accesa continuamente.
+Stabile significa che la lampadina è continuamente accesa.
 
 
 </dt> </dl> </dd> <dt>
@@ -82,7 +82,7 @@ Stabile indica che la lampada è accesa continuamente.
 
 
 
-La modalità lampada è attualmente sconosciuta.
+La modalità lamp è attualmente sconosciuta.
 
 
 </dt> </dl> </dd> <dt>
@@ -92,16 +92,16 @@ La modalità lampada è attualmente sconosciuta.
 
 
 
-Wink indica una frequenza normale.
+Wink indica la frequenza normale di attivazione e disattamento.
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-È possibile assegnare i 16 bit più significativi per le estensioni specifiche del dispositivo. I 16 bit di ordine inferiore sono riservati.
+I 16 bit di ordine elevato possono essere assegnati per le estensioni specifiche del dispositivo. I 16 bit meno bassi sono riservati.
 
-Dove le cadenza esatte possono variare in base a set di telefoni di fornitori diversi, il mapping dei modelli di illuminazione Lamp effettivi per la maggior parte dei telefoni sui valori elencati sopra dovrebbe essere semplice.
+Se le cadenze di on e off esatte possono differire tra i set di telefoni di fornitori diversi, il mapping dei modelli di illuminazione lamp effettivi per la maggior parte dei telefoni sui valori elencati sopra dovrebbe essere semplice.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -109,8 +109,8 @@ Dove le cadenza esatte possono variare in base a set di telefoni di fornitori di
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

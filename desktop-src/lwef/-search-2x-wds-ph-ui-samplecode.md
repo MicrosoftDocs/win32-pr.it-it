@@ -1,20 +1,20 @@
 ---
-title: Codice di esempio dell'interfaccia utente del gestore di protocollo personalizzato
+title: Gestore di protocollo personalizzato Interfaccia utente codice di esempio
 description: Nell'esempio di codice seguente viene illustrato come creare estensioni dell'interfaccia utente per un gestore di protocollo personalizzato.
 ms.assetid: b2d5bcdb-ad71-44db-9bea-486ffaad3655
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4da87609de9bb8572e9c4c607a7452abbe4eba10
-ms.sourcegitcommit: b9a94cea8f83153214af4c09509e1cc61a1bb616
+ms.openlocfilehash: eb33a63ff49309805a3dcf54a6ec19ecc42c66d3425d5f4e4921e46e7bc29a1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "104398742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118753227"
 ---
-# <a name="custom-protocol-handler-user-interface-sample-code"></a>Codice di esempio dell'interfaccia utente del gestore di protocollo personalizzato
+# <a name="custom-protocol-handler-user-interface-sample-code"></a>Gestore di protocollo personalizzato Interfaccia utente codice di esempio
 
 > [!NOTE]
-> Windows Desktop Search 2. x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [Windows Search](../search/-search-3x-wds-overview.md) .
+> Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare [invece Windows ricerca.](../search/-search-3x-wds-overview.md)
 
 Nell'esempio di codice seguente viene illustrato come creare estensioni dell'interfaccia utente per un gestore di protocollo personalizzato.
 
@@ -22,11 +22,11 @@ Nell'esempio di codice seguente viene illustrato come creare estensioni dell'int
 
 > [!Note]
 >
-> **QUESTO CODICE E LE INFORMAZIONI VENGONO FORNITE "COSÌ COME SONO" SENZA GARANZIA DI ALCUN TIPO, ESPRESSA O IMPLICITA, INCLUSE, A TITOLO ESEMPLIFICATIVO, LE GARANZIE IMPLICITE DI COMMERCIABILITÀ E/O IDONEITÀ PER UNO SCOPO SPECIFICO.**
+> **IL CODICE E LE INFORMAZIONI VENGONO FORNITI "COSÌ COME SONO" SENZA GARANZIE DI ALCUN TIPO, ESPRESSE O IMPLICITE, INCLUSE, MA NON LIMITATE, ALLE GARANZIE IMPLICITE DI ESERCENTITÀ E/O IDONEITÀ PER UNO SCOPO SPECIFICO.**
 >
 > Copyright (C) Microsoft. Tutti i diritti sono riservati.
 
- 
+ 
 
 
 ```
@@ -500,9 +500,9 @@ STDMETHODIMP CSampleShellFolder::SetNameOf(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

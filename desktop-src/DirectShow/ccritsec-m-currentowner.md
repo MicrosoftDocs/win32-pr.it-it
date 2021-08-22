@@ -1,7 +1,7 @@
 ---
-description: Identificatore del thread proprietario.
+description: Identificatore di thread del thread proprietario.
 ms.assetid: 495598db-a0c9-473b-8184-121a1939b55a
-title: 'Membro CCritSec:: m_currentOwner (Wxutil. h)'
+title: Membro CCritSec::m_currentOwner (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b6dcb8d968f1f437087a94c5b08db12d31952d92
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 71c88055f5068a5486c1eb6e3ac739235a6b7cde2e8d6b767380160ff12503be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332585"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118657214"
 ---
-# <a name="ccritsecm_currentowner-member"></a>Membro currentOwner di CCritSec:: m \_
+# <a name="ccritsecm_currentowner-member"></a>Membro CCritSec::m \_ currentOwner
 
-Identificatore del thread proprietario.
+Identificatore di thread del thread proprietario.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ DWORD m_currentOwner;
 
 ## <a name="remarks"></a>Osservazioni
 
-Questa variabile membro viene definita solo nella versione di debug della classe di base. Il membro viene usato dalle [funzioni di debug della sezione critica](critical-section-debugging-functions.md) .
+Questa variabile membro è definita solo nella versione di debug della classe di base. Le [funzioni di debug della sezione critica](critical-section-debugging-functions.md) usano questo membro.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Questa variabile membro viene definita solo nella versione di debug della classe
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

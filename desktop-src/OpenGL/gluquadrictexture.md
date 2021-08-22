@@ -1,9 +1,9 @@
 ---
-title: funzione gluQuadricTexture (Glu. h)
-description: La funzione gluQuadricTexture specifica se quadriche deve essere tramato.
+title: Funzione gluQuadricTexture (Glu.h)
+description: La funzione gluQuadricTexture specifica se è necessario eseguire la trama dei quadric.
 ms.assetid: 11681497-f099-4856-a0ac-6a44abd3e1a1
 keywords:
-- funzione gluQuadricTexture OpenGL
+- Funzione gluQuadricTexture OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cc395564b6c6f30f38a8c5129c489d0bfca6b80
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bbde88e0a878fd59e01ad0a450cf4cbe9831c4ad867c8029373586a8efe830eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118937482"
 ---
-# <a name="gluquadrictexture-function"></a>gluQuadricTexture (funzione)
+# <a name="gluquadrictexture-function"></a>Funzione gluQuadricTexture
 
-La funzione **gluQuadricTexture** specifica se quadriche deve essere tramato.
+La **funzione gluQuadricTexture** specifica se è necessario eseguire la trama dei quadric.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,21 +44,21 @@ void WINAPI gluQuadricTexture(
 *quadObject* 
 </dt> <dd>
 
-Oggetto quadrica (creato con [**gluNewQuadric**](glunewquadric.md)).
+Oggetto quadric (creato con [**gluNewQuadric).**](glunewquadric.md)
 
 </dd> <dt>
 
-*textureCoords* 
+*TextureCoords* 
 </dt> <dd>
 
-Flag che indica se devono essere generate le coordinate di trama. I valori seguenti sono validi.
+Flag che indica se devono essere generate le coordinate della trama. I valori seguenti sono validi.
 
 
 
 | Valore                                                                                                                                          | Significato                                                                    |
 |------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| <span id="GL_TRUE"></span><span id="gl_true"></span><dl> <dt>**GL \_ true**</dt> </dl>    | Genera coordinate di trama.<br/>                                   |
-| <span id="GL_FALSE"></span><span id="gl_false"></span><dl> <dt>**GL \_ false**</dt> </dl> | Non generare coordinate di trama. Si tratta del valore predefinito.<br/> |
+| <span id="GL_TRUE"></span><span id="gl_true"></span><dl> <dt>**GL \_ TRUE**</dt> </dl>    | Generare le coordinate della trama.<br/>                                   |
+| <span id="GL_FALSE"></span><span id="gl_false"></span><dl> <dt>**GL \_ FALSE**</dt> </dl> | Non generare coordinate di trama. Si tratta del valore predefinito.<br/> |
 
 
 
@@ -72,9 +72,9 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **gluQuadricTexture** specifica se devono essere generate le coordinate di trama per quadriche sottoposte a rendering con **quadObject**.
+La **funzione gluQuadricTexture** specifica se le coordinate della trama devono essere generate per quadrics di cui viene eseguito il rendering con **quadObject**.
 
-Il modo in cui vengono generate le coordinate di trama dipende dal rendering del quadrica specifico.
+Il modo in cui vengono generate le coordinate della trama dipende dal quadric rendering specifico.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,8 +84,8 @@ Il modo in cui vengono generate le coordinate di trama dipende dal rendering del
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

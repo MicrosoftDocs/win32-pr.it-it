@@ -1,8 +1,8 @@
 ---
-description: Controlla quando viene scaricato un provider di classi o istanze.
+description: Controlla quando viene scaricato un provider di classi o di istanze.
 ms.assetid: 4cbeb820-8a65-4fab-97f1-2a973b2a4310
 ms.tgt_platform: multiple
-title: Classe __ObjectProviderCacheControl
+title: __ObjectProviderCacheControl classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - Schema
 api_location:
 - Root
-ms.openlocfilehash: 53cfaa69afead4f436879f128a4d42e50d36fe67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4711f13afde50d512c3a7e210a0853ef9cc7606be096d95f86b144684a5add6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118820691"
 ---
 # <a name="__objectprovidercachecontrol-class"></a>\_\_Classe ObjectProviderCacheControl
 
-La classe di sistema **\_ \_ ObjectProviderCacheControl** controlla quando viene scaricato un provider di classi o istanze. Si trova solo nello \\ spazio dei nomi radice.
+La **\_ \_ classe di sistema ObjectProviderCacheControl** controlla quando viene scaricato un provider di classi o di istanze. Si trova solo nello spazio dei \\ nomi radice.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,32 +40,32 @@ class __ObjectProviderCacheControl : __CacheControl
 
 ## <a name="members"></a>Members
 
-La classe **\_ \_ ObjectProviderCacheControl** dispone di questi tipi di membri:
+La **\_ \_ classe ObjectProviderCacheControl** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **\_ \_ ObjectProviderCacheControl** dispone di queste proprietà.
+La **\_ \_ classe ObjectProviderCacheControl** ha queste proprietà.
 
 <dl> <dt>
 
 **ClearAfter**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Intervallo di tempo dopo il quale WMI rilascia un'istanza, una classe o un provider di metodi. L'ora è in [Formato intervallo](interval-format.md).
+Intervallo di tempo dopo il quale WMI rilascia un'istanza, una classe o un provider di metodi. L'ora è in [formato intervallo](interval-format.md).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **\_ \_ ObjectProviderCacheControl** deriva da [**\_ \_ CacheControl**](--cachecontrol.md). Per ulteriori informazioni sull'utilizzo di questa classe, vedere [scaricamento di un provider](unloading-a-provider.md).
+La **\_ \_ classe ObjectProviderCacheControl** deriva da [**\_ \_ CacheControl**](--cachecontrol.md). Per altre informazioni sull'uso di questa classe, vedere [Scaricamento di un provider](unloading-a-provider.md).
 
 ## <a name="requirements"></a>Requisiti
 

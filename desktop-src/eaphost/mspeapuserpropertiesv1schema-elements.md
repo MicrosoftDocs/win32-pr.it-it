@@ -1,6 +1,6 @@
 ---
 title: Elementi dello schema mspeapuserpropertiesv1
-description: Informazioni sugli elementi dello schema mspeapuserpropertiesv1, inclusi EapType e PeapExtensions.
+description: Informazioni sugli elementi dello schema dello schema mspeapuserpropertiesv1, inclusi EapType e PeapExtensions.
 ms.assetid: 39a16a9c-6c04-4318-b347-3e1008e9a5c4
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7df89f73f18961b38201a4373c2e95028aaecfc5
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 5d4d2605a63d4290cfb8aa2e3000f4f2966a921fcc5b888ae1e4890aac2127c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118784955"
 ---
 # <a name="mspeapuserpropertiesv1-schema-elements"></a>Elementi dello schema mspeapuserpropertiesv1
 
@@ -27,7 +27,7 @@ Lo schema [mspeapuserpropertiesv1](mspeapuserpropertiesv1schema-schema.md) è co
 
 <dl> <dt>
 
-[Schema EAPHost e legacy](eaphost-schemas.md)
+[EAPHost e schema legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema mspeapuserpropertiesv1](mspeapuserpropertiesv1schema-schema.md)

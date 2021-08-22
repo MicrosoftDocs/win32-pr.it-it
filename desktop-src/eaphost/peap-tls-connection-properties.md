@@ -1,19 +1,19 @@
 ---
-title: Proprietà di connessione PEAP-TLS
+title: Proprietà connessione PEAP-TLS
 description: Informazioni sulle proprietà di connessione PEAP-TLS. Vedere un esempio che è un'istanza dello schema legacy eaptlsconnectionpropertiesv1.
 ms.assetid: 1128b3f7-eba7-484e-a3d8-070d37e9c57f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: efa368ca49b93cff8fa3cd60620ec075bfb8d3a5
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: be661834c6a1053d34ba5c6a8cee7f7d491537ce0153011772c1b29cf78ef89f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104517170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118784809"
 ---
-# <a name="peap-tls-connection-properties"></a>Proprietà di connessione PEAP-TLS
+# <a name="peap-tls-connection-properties"></a>Proprietà connessione PEAP-TLS
 
-Questo esempio è un'istanza dello schema legacy [eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-schema.md) .
+Questo esempio è un'istanza dello schema [legacy eaptlsconnectionpropertiesv1.](eaptlsconnectionpropertiesv1schema-schema.md)
 
 ``` syntax
   <?xml version="1.0" ?> 
@@ -63,15 +63,15 @@ Questo esempio è un'istanza dello schema legacy [eaptlsconnectionpropertiesv1](
 
 <dl> <dt>
 
-[Proprietà di connessione](connection-profiles.md)
+[Proprietà connessione](connection-profiles.md)
 </dt> <dt>
 
 [EAPHost e schema legacy](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

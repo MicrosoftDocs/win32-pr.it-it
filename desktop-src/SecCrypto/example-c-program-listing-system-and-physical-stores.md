@@ -1,26 +1,26 @@
 ---
 description: Enumera i percorsi dell'archivio certificati di sistema, gli archivi certificati di sistema e gli archivi fisici associati a ogni archivio di sistema.
 ms.assetid: bc4268ea-f657-4789-9d0a-6e5354508f86
-title: 'Esempio di programma C: elenco di archivi fisici e di sistema'
+title: 'Programma C di esempio: elenco di archivi fisici e di sistema'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a94fb8d4a6b7d20735b6918d78119796379e16d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f98242d6ae5fd1c7af8732646786a8370a45108c446b051d0e7e7513c7faecae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007639"
 ---
-# <a name="example-c-program-listing-system-and-physical-stores"></a>Esempio di programma C: elenco di archivi fisici e di sistema
+# <a name="example-c-program-listing-system-and-physical-stores"></a>Programma C di esempio: elenco di archivi fisici e di sistema
 
-Nell'esempio seguente vengono enumerati i percorsi dell' [*archivio certificati*](../secgloss/c-gly.md) di sistema, gli archivi certificati di sistema e gli archivi fisici associati a ogni archivio di sistema. In questo esempio viene illustrata la creazione di funzioni di callback e funzioni di callback che chiamano altre funzioni di callback.
+Nell'esempio seguente vengono [](../secgloss/c-gly.md) enumerati i percorsi dell'archivio certificati di sistema, gli archivi certificati di sistema e gli archivi fisici associati a ogni archivio di sistema. Questo esempio illustra la creazione di funzioni di callback e funzioni di callback che chiamano altre funzioni di callback.
 
-In questo esempio vengono illustrate le funzioni [*CryptoAPI*](../secgloss/c-gly.md) seguenti:
+Questo esempio illustra le funzioni [*CryptoAPI*](../secgloss/c-gly.md) seguenti:
 
 -   [**CertEnumSystemStoreLocation**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumsystemstorelocation)
 -   [**CertEnumSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumsystemstore)
 
-Questo esempio usa anche la funzione [**MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [funzioni per utilizzo generico](general-purpose-functions.md).
+In questo esempio viene anche utilizzata la [**funzione MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [per utilizzo generico funzioni](general-purpose-functions.md).
 
 
 ```C++

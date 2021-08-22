@@ -1,7 +1,7 @@
 ---
 description: Restituisce la chiave esterna da un file.
 ms.assetid: b61b71fb-af6f-4fe3-859b-a9f2f42ca6d2
-title: Metodo GetExternalKeyFromFile della classe Win32_EncryptableVolume
+title: Metodo GetExternalKeyFromFile della Win32_EncryptableVolume classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: ba0c2cf4744c12143090488d730a1d49bab9b431
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e2046e64340167a98d838fd5a64324a410b0d0418a740550f9336117e2f1d8d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118892429"
 ---
-# <a name="getexternalkeyfromfile-method-of-the-win32_encryptablevolume-class"></a>Metodo GetExternalKeyFromFile della \_ classe EncryptableVolume Win32
+# <a name="getexternalkeyfromfile-method-of-the-win32_encryptablevolume-class"></a>Metodo GetExternalKeyFromFile della classe \_ EncryptableVolume Win32
 
-Il metodo **GetExternalKeyFromFile** della classe [**\_ EncryptableVolume Win32**](win32-encryptablevolume.md) restituisce la chiave esterna da un file creato da [**SaveExternalKeyToFile**](saveexternalkeytofile-win32-encryptablevolume.md), dato il percorso del file.
+Il **metodo GetExternalKeyFromFile** della classe [**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md) restituisce la chiave esterna da un file creato da [**SaveExternalKeyToFile,**](saveexternalkeytofile-win32-encryptablevolume.md)in base al percorso del file.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,27 +40,27 @@ uint32 GetExternalKeyFromFile(
 
 <dl> <dt>
 
-*PathWithFileName* \[ in\]
+*PathWithFileName* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **stringa**
+Tipo: **string**
 
 Stringa che specifica il percorso del file contenente una chiave esterna.
 
 </dd> <dt>
 
-*ExternalKey* \[ out\]
+*Chiave esterna* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **Uint8 \[ \]**
+Tipo: **uint8 \[ \]**
 
-Matrice di byte che rappresenta la chiave esterna a 256 bit contenuta nel file che può essere utilizzata per sbloccare un volume.
+Matrice di byte che rappresenta la chiave esterna a 256 bit contenuta nel file che può essere usata per sbloccare un volume.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Questo metodo restituisce uno dei codici seguenti o un altro codice di errore se ha esito negativo.
 
@@ -70,7 +70,7 @@ Questo metodo restituisce uno dei codici seguenti o un altro codice di errore se
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0 (0x0)</dt> </dl>                                   | Il metodo è stato eseguito correttamente.<br/>                  |
 | <dl> <dt>**E \_ INVALIDARG**</dt> <dt>2147942487 (0x80070057)</dt> </dl>           | Il file non contiene una chiave esterna.<br/>  |
-| <dl> <dt>**Errore \_ FILE \_ non \_ trovato**</dt> <dt>2147942402 (0x80070002)</dt> </dl> | Impossibile trovare il file nel percorso specificato.<br/> |
+| <dl> <dt>**ERRORE \_ FILE \_ NON \_ TROVATO 2147942402**</dt> <dt>(0x80070002)</dt> </dl> | Impossibile trovare il file nel percorso specificato.<br/> |
 
 
 
@@ -78,7 +78,7 @@ Questo metodo restituisce uno dei codici seguenti o un altro codice di errore se
 
 ## <a name="remarks"></a>Commenti
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non sono installati come parte del Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -86,10 +86,10 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista Enterprise, Windows Vista Ultimate \[ desktop apps\]<br/>                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ sicurezza \\ MicrosoftVolumeEncryption<br/>                                             |
-| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
+| Client minimo supportato<br/> | Windows Vista Enterprise, Windows solo app desktop Vista Ultimate \[\]<br/>                       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
+| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 
 
 
@@ -97,7 +97,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_EncryptableVolume Win32**](win32-encryptablevolume.md)
+[**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md)
 </dt> </dl>
 
  

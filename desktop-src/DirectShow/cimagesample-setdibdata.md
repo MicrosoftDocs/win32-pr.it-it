@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetDIBData specifica informazioni sulla bitmap indipendente dal dispositivo (DIB) GDI gestita da questo oggetto. Chiamare questo metodo per inizializzare l'oggetto CImageSample.
+description: Il metodo SetDIBData specifica informazioni sulla bitmap GDI indipendente dal dispositivo (DIB) che questo oggetto gestisce. Chiamare questo metodo per inizializzare l'oggetto CImageSample.
 ms.assetid: 850fa16b-d4b9-4fe6-b202-7b54c49a4589
-title: Metodo CImageSample. SetDIBData (Winutil. h)
+title: Metodo CImageSample.SetDIBData (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 418263da0416b325b1b080713dd6289f3bcc688e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 367fed37545e9498f9f6e753a57a7eeeb2ce8767779241284be9109676fafd38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118655525"
 ---
-# <a name="cimagesamplesetdibdata-method"></a>CImageSample. SetDIBData, metodo
+# <a name="cimagesamplesetdibdata-method"></a>Metodo CImageSample.SetDIBData
 
-Il `SetDIBData` metodo specifica informazioni sulla bitmap indipendente dal dispositivo (DIB) GDI gestita da questo oggetto. Chiamare questo metodo per inizializzare l'oggetto **CImageSample** .
+Il metodo specifica informazioni sulla bitmap GDI indipendente dal dispositivo `SetDIBData` (DIB) che questo oggetto gestisce. Chiamare questo metodo per inizializzare **l'oggetto CImageSample.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ void SetDIBData(
 *pDibData* 
 </dt> <dd>
 
-Puntatore a una struttura [**DIBDATA**](dibdata.md) .
+Puntatore a [**una struttura DIBDATA.**](dibdata.md)
 
 </dd> </dl>
 
@@ -59,8 +59,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

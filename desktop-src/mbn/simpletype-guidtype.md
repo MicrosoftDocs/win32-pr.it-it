@@ -1,22 +1,22 @@
 ---
-description: Rappresentazione di stringa di un GUID, nel formato consueto.
+description: Rappresentazione di stringa di un GUID nel formato consueto.
 MS-HAID: WWAN\_profile\_v4.simpleType\_guidType
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: tipo semplice guidType (Mobile Broadband)
+title: Tipo semplice guidType (Mobile Broadband)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66b7cc19207ab334694e4b42a49f727070cb385d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9469ff58d15ad51ba53a9975655e9d489c2f3a4fdb9784feb3bd41daeb0d0ea5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975070"
 ---
-# <a name="span-idwwan_profile_v4simpletype_guidtypespanguidtype-simple-type-mobile-broadband"></a><span id="WWAN_profile_v4.simpleType_guidType"></span>tipo semplice guidType (Mobile Broadband)
+# <a name="span-idwwan_profile_v4simpletype_guidtypespanguidtype-simple-type-mobile-broadband"></a><span id="WWAN_profile_v4.simpleType_guidType"></span>Tipo semplice guidType (Mobile Broadband)
 
-Rappresentazione di stringa di un GUID, nel formato consueto.
+Rappresentazione di stringa di un GUID nel formato consueto.
 
 ``` syntax
 <xs:simpleType name="guidType">
@@ -32,7 +32,7 @@ Rappresentazione di stringa di un GUID, nel formato consueto.
 
 ## <a name="patterns"></a>Modelli
 
-Il tipo semplice **guidType** è un token che è limitato dal modello seguente:
+Il **tipo semplice guidType** è un token limitato dal modello seguente:
 
 -   `{[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}}`
 

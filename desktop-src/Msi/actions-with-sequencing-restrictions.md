@@ -1,29 +1,29 @@
 ---
-description: La sequenziazione di molte azioni nelle tabelle delle azioni è limitata. Per un elenco completo delle azioni con collegamenti a informazioni di sequenziazione dettagliate, vedere riferimento alle azioni standard.
+description: La sequenziazione di molte azioni nelle tabelle delle azioni è limitata. Per un elenco completo delle azioni con collegamenti a informazioni dettagliate sulla sequenziazione, vedere Informazioni di riferimento sulle azioni standard.
 ms.assetid: 659b1dd2-7510-4962-a991-f5febcfbf26e
 title: Azioni con restrizioni di sequenziazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 13d518bca1f90d256660bdf241dd7199d749cbd3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3886ce503569ae2e32e23e15bb73fa3fce13dbcadec98d1d3922056dc0c3247a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118640099"
 ---
 # <a name="actions-with-sequencing-restrictions"></a>Azioni con restrizioni di sequenziazione
 
-La sequenziazione di molte azioni nelle tabelle delle azioni è limitata. Per un elenco completo delle azioni con collegamenti a informazioni di sequenziazione dettagliate, vedere [riferimento alle azioni standard](standard-actions-reference.md) .
+La sequenziazione di molte azioni nelle tabelle delle azioni è limitata. Per [un elenco completo delle](standard-actions-reference.md) azioni con collegamenti a informazioni dettagliate sulla sequenziazione, vedere Informazioni di riferimento sulle azioni standard.
 
 La sequenziazione delle azioni seguenti è limitata.
 
 [AllocateRegistrySpace](allocateregistryspace-action.md)
 
-[Azione BindImage sul](bindimage-action.md)
+[BindImage](bindimage-action.md)
 
 [CCPSearch](ccpsearch-action.md)
 
-[CostFinalize secondo](costfinalize-action.md)
+[CostFinalize](costfinalize-action.md)
 
 [CostInitialize](costinitialize-action.md)
 
@@ -37,7 +37,7 @@ La sequenziazione delle azioni seguenti è limitata.
 
 [ExecuteAction](executeaction-action.md)
 
-[Filecost](filecost-action.md)
+[FileCost](filecost-action.md)
 
 [ForceReboot](forcereboot-action.md)
 
@@ -109,7 +109,7 @@ La sequenziazione delle azioni seguenti è limitata.
 
 [UnregisterFonts](unregisterfonts-action.md)
 
-[UnregisterMIMEInfo](unregistermimeinfo-action.md)
+[Annullare la registrazione diMIMEInfo](unregistermimeinfo-action.md)
 
 [UnregisterProgIdInfo](unregisterprogidinfo-action.md)
 
@@ -119,11 +119,11 @@ La sequenziazione delle azioni seguenti è limitata.
 
 [WriteIniValues](writeinivalues-action.md)
 
-[WriteRegistryValori consente](writeregistryvalues-action.md)
+[WriteRegistryValues](writeregistryvalues-action.md)
 
 [RegisterComPlus](registercomplus-action.md)
 
-[UnregisterComPlus](unregistercomplus-action.md)
+[Annullare la registrazione diComPlus](unregistercomplus-action.md)
 
  
 

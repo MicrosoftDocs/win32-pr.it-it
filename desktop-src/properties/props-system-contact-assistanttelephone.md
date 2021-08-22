@@ -1,17 +1,17 @@
 ---
 description: Numero di telefono dell'assistente del contatto.
 ms.assetid: 2e3008b6-e427-468a-9381-f1d4866111c7
-title: System. Contact. AssistantTelephone
+title: System.Contact.AssistantTelephone
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f08074906e97819126d4dc449d2f81576c8960c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 22f5569604caced9eb277d642341d8a3819c2a5ebe1d03effd96e9a0fa394ab5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118730313"
 ---
-# <a name="systemcontactassistanttelephone"></a>System. Contact. AssistantTelephone
+# <a name="systemcontactassistanttelephone"></a>System.Contact.AssistantTelephone
 
 Numero di telefono dell'assistente del contatto.
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

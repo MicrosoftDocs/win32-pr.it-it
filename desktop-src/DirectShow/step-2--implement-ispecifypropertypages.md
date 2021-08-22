@@ -1,19 +1,19 @@
 ---
 description: Implementare l'interfaccia ISpecifyPropertyPages nel filtro come parte della creazione di una pagina delle proprietà del filtro per un filtro DirectShow personalizzato.
 ms.assetid: 8be83564-07ad-47cf-9538-73136f42ba79
-title: 'Passaggio 2: Implementare ISpecifyPropertyPages'
+title: Passaggio 2. Implementare ISpecifyPropertyPages
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe37a22c6ba9c14f8656ac41294360569316be1a
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 1c2d1df86ef6e8b3e59f14a3efe1708a286761c9ba6425a7710a692ed6dcd3bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112410054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951850"
 ---
-# <a name="step-2-implement-ispecifypropertypages"></a>Passaggio 2: Implementare ISpecifyPropertyPages
+# <a name="step-2-implement-ispecifypropertypages"></a>Passaggio 2. Implementare ISpecifyPropertyPages
 
-Implementare quindi **l'interfaccia ISpecifyPropertyPages** nel filtro. Questa interfaccia ha un singolo metodo, **GetPages,** che restituisce una matrice di CLSID per le pagine delle proprietà supportate dal filtro. In questo esempio il filtro ha una singola pagina delle proprietà. Per iniziare, generare il CLSID e dichiararlo nel file di intestazione:
+Implementare quindi **l'interfaccia ISpecifyPropertyPages** nel filtro. Questa interfaccia ha un singolo metodo, **GetPages**, che restituisce una matrice di CLSID per le pagine delle proprietà supportate dal filtro. In questo esempio il filtro ha una singola pagina delle proprietà. Per iniziare, generare il CLSID e dichiararlo nel file di intestazione:
 
 
 ```C++
@@ -54,15 +54,15 @@ public:
 
 
 
-Allocare memoria per la matrice usando **CoTaskMemAlloc.** Il chiamante rilascerà la memoria.
+Allocare memoria per la matrice usando **CoTaskMemAlloc**. Il chiamante rilascerà la memoria.
 
-Passaggio [successivo: Passaggio 3. Supporto di QueryInterface.](step-3--support-queryinterface.md)
+Successivo: [Passaggio 3. Supporto di QueryInterface](step-3--support-queryinterface.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Creazione di una pagina delle proprietà del filtro](creating-a-filter-property-page.md)
+[Creazione di una pagina delle proprietà Filtro](creating-a-filter-property-page.md)
 </dt> </dl>
 
  

@@ -4,18 +4,18 @@ ms.assetid: 9eb98b48-4bee-4f6d-b818-2f81b36591da
 title: Timer stato chiamata
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5d273d7f8439ebfee9d6668565745ed2c209f70
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 221b0cd1182e59304b13d6d276bece9f755c5dacc0215218ff5ee23aea09e532
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308088"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118869995"
 ---
 # <a name="call-state-timer"></a>Timer stato chiamata
 
-Attualmente, tutti i tempi delle chiamate vengono lasciati alle applicazioni. Questa operazione può essere gravosa se l'applicazione sta monitorando un numero elevato di chiamate e, se sono presenti più applicazioni, possibilmente su più server, può essere necessario per tutti i timer per mantenere le stesse chiamate. Per questo motivo, è opportuno che la durata dello stato di chiamata venga gestita dal server.
+Attualmente, tutti i tempi delle chiamate vengono lasciati alle applicazioni. Questa situazione può essere gravosa se l'applicazione monitora un numero elevato di chiamate e se sono presenti più applicazioni, possibilmente su più server, può essere necessario che gestisca tutti i timer nelle stesse chiamate. È quindi più opportuno che il tempo di stato delle chiamate sia gestito dal server.
 
-Il membro **tStateEntryTime** in [**LINECALLSTATUS**](/windows/desktop/api/Tapi/ns-tapi-linecallstatus) consente la temporizzazione delle chiamate negli Stati da segnalare. Il membro (di tipo **sysTime**) indica l'ora in cui è stato immesso lo stato corrente.
+Il **membro tStateEntryTime** in [**LINECALLSTATUS**](/windows/desktop/api/Tapi/ns-tapi-linecallstatus) consente di sincronizzazione delle chiamate negli stati da notificare. Il membro (di tipo **SYSTIME**) indica l'ora in cui è stato immesso lo stato corrente.
 
  
 

@@ -1,29 +1,29 @@
 ---
-description: I criteri LSA forniscono diverse funzioni che è possibile utilizzare per creare, enumerare ed eliminare domini trusted e per impostare e recuperare informazioni sul dominio attendibile.
+description: I criteri LSA forniscono diverse funzioni che è possibile usare per creare, enumerare ed eliminare domini trusted e per impostare e recuperare informazioni sui domini trusted.
 ms.assetid: 0c7534d7-3372-49c4-992c-9b519279982d
-title: Gestione delle informazioni di dominio trusted
+title: Gestione delle informazioni sui domini attendibili
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b7df297b8c83ebe9054ca6f04b657905c21fae6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a945705efaedf56920ee2170deeab9da0d01802259a57aca5cda2fac9d531aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118894091"
 ---
-# <a name="managing-trusted-domain-information"></a>Gestione delle informazioni di dominio trusted
+# <a name="managing-trusted-domain-information"></a>Gestione delle informazioni sui domini attendibili
 
-I criteri LSA forniscono diverse funzioni che è possibile utilizzare per creare, enumerare ed eliminare domini trusted e per impostare e recuperare informazioni sul dominio attendibile.
+I criteri LSA forniscono diverse funzioni che è possibile usare per creare, enumerare ed eliminare domini trusted e per impostare e recuperare informazioni sui domini trusted.
 
-Prima di poter gestire le informazioni sul dominio trusted, l'applicazione deve ottenere un handle per un oggetto [**criteri**](policy-object.md) , come illustrato in [apertura di un handle di oggetto Criteri](opening-a-policy-object-handle.md).
+Prima di poter gestire le informazioni sul dominio trusted, l'applicazione deve ottenere un handle per un oggetto [**Criteri,**](policy-object.md) come illustrato in Apertura di un handle [di oggetto criteri](opening-a-policy-object-handle.md).
 
-È possibile enumerare i domini trusted chiamando [**LsaEnumerateTrustedDomainsEx**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaenumeratetrusteddomainsex).
+È possibile enumerare i domini trusted chiamando [**LsaEnumerateTrustedDomainsEx.**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaenumeratetrusteddomainsex)
 
-Per recuperare informazioni su un dominio trusted, chiamare [**LsaQueryTrustedDomainInfo**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaquerytrusteddomaininfo) o [**LsaQueryTrustedDomainInfoByName**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaquerytrusteddomaininfobyname). Entrambe le funzioni restituiscono le stesse informazioni; Tuttavia, **LsaQueryTrustedDomainInfo** identifica il dominio trusted per SID e **LsaQueryTrustedDomainInfoByName** identifica il dominio trusted in base al nome.
+Per recuperare informazioni su un dominio trusted, chiamare [**LsaQueryTrustedDomainInfo**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaquerytrusteddomaininfo) o [**LsaQueryTrustedDomainInfoByName.**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaquerytrusteddomaininfobyname) Entrambe le funzioni restituiscono le stesse informazioni. Tuttavia, **LsaQueryTrustedDomainInfo** identifica il dominio trusted in base al SID e **LsaQueryTrustedDomainInfoByName** identifica il dominio trusted in base al nome.
 
-Per impostare informazioni per un dominio trusted, chiamare [**LsaSetTrustedDomainInformation**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsasettrusteddomaininformation) o [**LsaSetTrustedDomainInfoByName**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsasettrusteddomaininfobyname). Come per le funzioni di query, **LsaSetTrustedDomainInformation** identifica il dominio trusted per SID, mentre **LsaSetTrustedDomainInfoByName** identifica il dominio trusted in base al nome.
+Per impostare le informazioni per un dominio trusted, chiamare [**LsaSetTrustedDomainInformation**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsasettrusteddomaininformation) o [**LsaSetTrustedDomainInfoByName.**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsasettrusteddomaininfobyname) Come per le funzioni di query, **LsaSetTrustedDomainInformation** identifica il dominio trusted in base al SID, mentre **LsaSetTrustedDomainInfoByName** identifica il dominio trusted in base al nome.
 
-L'applicazione può revocare una relazione di trust per un dominio trusted chiamando [**LsaDeleteTrustedDomain**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsadeletetrusteddomain).
+L'applicazione può revocare una relazione di trust per un dominio trusted chiamando [**LsaDeleteTrustedDomain.**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsadeletetrusteddomain)
 
 Nell'esempio seguente vengono enumerati i domini trusted per il sistema locale.
 

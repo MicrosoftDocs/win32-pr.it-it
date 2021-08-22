@@ -1,36 +1,36 @@
 ---
-description: Elenca tutti i certificati in un archivio certificati di sistema e il nome dell'oggetto e tutte le proprietà di contesto del certificato di ciascuno di questi certificati.
+description: Elenca tutti i certificati in un archivio certificati di sistema e il nome dell'oggetto e tutte le proprietà del contesto del certificato di ognuno di questi certificati.
 ms.assetid: 4b5361f5-79b1-4b05-a133-1a394da7d6ee
-title: 'Esempio di programma C: elenco dei certificati in un archivio'
+title: 'Programma C di esempio: elenco dei certificati in un archivio'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e504fe54bea81663957274844c4896b53a25217
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47545d2a4c5b13df57dc4bae5490123c9423a9127f6f5e6dbe0b3a885651d9f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007599"
 ---
-# <a name="example-c-program-listing-the-certificates-in-a-store"></a>Esempio di programma C: elenco dei certificati in un archivio
+# <a name="example-c-program-listing-the-certificates-in-a-store"></a>Programma C di esempio: elenco dei certificati in un archivio
 
-Il codice di esempio seguente elenca tutti i certificati in un [*archivio certificati*](../secgloss/c-gly.md) di sistema e il nome dell'oggetto e tutte le proprietà di [*contesto del certificato*](../secgloss/c-gly.md) di ciascuno di questi certificati. Nell'esempio viene ottenuto il nome dell'archivio certificati dall'utente e pertanto può essere utilizzato per elencare il contenuto di qualsiasi archivio certificati di sistema. Inoltre, in questo esempio viene illustrato l'utilizzo di due nuove funzioni dell'interfaccia utente, una che visualizza un certificato e l'altra interfaccia utente che consente all'utente di selezionare un certificato da un elenco di certificati in un archivio.
+Il codice di esempio seguente elenca [](../secgloss/c-gly.md) tutti i certificati in un archivio [](../secgloss/c-gly.md) certificati di sistema e il nome del soggetto e tutte le proprietà del contesto del certificato di ognuno di questi certificati. L'esempio ottiene il nome dell'archivio certificati dall'utente e quindi può essere usato per elencare il contenuto di qualsiasi archivio certificati di sistema. Questo esempio illustra anche l'uso di due nuove funzioni dell'interfaccia utente, una che visualizza un certificato e l'altra interfaccia utente che consente all'utente di selezionare un certificato da un elenco dei certificati in un archivio.
 
-Questo codice di esempio illustra le attività e le funzioni [*CryptoAPI*](../secgloss/c-gly.md) seguenti:
+Questo codice di esempio illustra le attività e le [*funzioni CryptoAPI*](../secgloss/c-gly.md) seguenti:
 
--   Apertura di un archivio di sistema tramite [**CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea).
--   In un ciclo, enumerazione di tutti i certificati presenti nell'archivio aperto mediante [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore).
--   Visualizzazione di un certificato tramite [**CryptUIDlgViewContext**](/windows/desktop/api/Cryptuiapi/nf-cryptuiapi-cryptuidlgviewcontext).
--   Ottenere il nome del soggetto del certificato usando [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
+-   Apertura di un archivio di sistema [**tramite CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea).
+-   In un ciclo, enumerazione di tutti i certificati nell'archivio aperto tramite [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore).
+-   Visualizzazione di un certificato [**tramite CryptUIDlgViewContext**](/windows/desktop/api/Cryptuiapi/nf-cryptuiapi-cryptuidlgviewcontext).
+-   Recupero del nome del soggetto del certificato tramite [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
 -   In un ciclo, usando [**CertEnumCertificateContextProperties**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatecontextproperties) per ottenere gli identificatori di proprietà di tutte le proprietà associate al certificato.
--   Utilizzo di [**CertGetCertificateContextProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetcertificatecontextproperty) per ottenere tutte le proprietà.
--   Visualizzazione di un elenco di certificati in un archivio e consentire a un utente di selezionare uno di essi con [**CryptUIDlgSelectCertificateFromStore**](/windows/desktop/api/Cryptuiapi/nf-cryptuiapi-cryptuidlgselectcertificatefromstore).
--   Chiusura dell'archivio certificati utilizzando [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore).
+-   Uso [**di CertGetCertificateContextProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetcertificatecontextproperty) per ottenere ognuna delle proprietà.
+-   Visualizzazione di un elenco di certificati in un archivio e consentire a un utente di selezionarne uno [**usando CryptUIDlgSelectCertificateFromStore**](/windows/desktop/api/Cryptuiapi/nf-cryptuiapi-cryptuidlgselectcertificatefromstore).
+-   Chiusura dell'archivio certificati tramite [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore).
 
-In questo esempio viene usata la funzione [**MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio.
+In questo esempio viene utilizzata la [**funzione MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio.
 
-Il codice per questa e altre funzioni ausiliarie è elencato anche in [funzioni per utilizzo generico](general-purpose-functions.md).
+Il codice per questa e altre funzioni ausiliarie è elencato anche in [per utilizzo generico funzioni](general-purpose-functions.md).
 
-Nell'esempio seguente viene illustrata l'enumerazione e la visualizzazione dei certificati in un archivio. Per compilare questo esempio, è necessario configurare il compilatore per l'uso di un set di caratteri a più byte.
+Nell'esempio seguente viene illustrata l'enumerazione e la visualizzazione dei certificati in un archivio. Per compilare questo esempio, è necessario configurare il compilatore per l'uso di un set di caratteri a byte multipli.
 
 
 ```C++

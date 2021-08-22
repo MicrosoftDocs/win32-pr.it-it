@@ -1,22 +1,22 @@
 ---
-description: IMM include il controllo di identificazione dei thread che determina se un thread chiamante è il creatore di un handle del contesto del metodo di input specificato (tipo HIMC) o un handle di finestra (tipo HWND).
+description: IMM include il controllo dell'identificazione del thread che determina se un thread chiamante è l'autore di un handle di contesto del metodo di input specificato (tipo HIMC) o handle di finestra (tipo HWND).
 ms.assetid: da55d6fe-a620-4ea7-9055-91bcd3233267
-title: Sviluppo di applicazioni con più thread IME-Aware
+title: Sviluppo IME-Aware applicazioni a thread multipli
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e5730fc72ef41a84e01655116f94fc274f60548
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: faf495922d347119db3b8b517af13c850f2f19dfc558609f93f24953f0a3386a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118949596"
 ---
-# <a name="developing-ime-aware-multiple-thread-applications"></a>Sviluppo di applicazioni con più thread IME-Aware
+# <a name="developing-ime-aware-multiple-thread-applications"></a>Sviluppo IME-Aware applicazioni a thread multipli
 
-IMM include il controllo di identificazione dei thread che determina se un thread chiamante è il creatore di un handle del contesto del metodo di input specificato (tipo HIMC) o un handle di finestra (tipo HWND). Se il thread non è il creatore dell'handle, la funzione IMM chiamata ha esito negativo e una chiamata successiva a [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce un errore di \_ accesso non valido \_ .
+IMM include il controllo dell'identificazione del thread che determina se un thread chiamante è l'autore di un handle di contesto del metodo di input specificato (tipo HIMC) o handle di finestra (tipo HWND). Se il thread non è l'autore dell'handle, la funzione IMM chiamata ha esito negativo e una chiamata successiva a [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce ERROR \_ INVALID \_ ACCESS.
 
 > [!Note]  
-> L'architettura di IMM corrente non fornisce una funzionalità di sincronizzazione per l'accesso agli handle di IMM.
+> L'architettura IMM corrente non offre una funzionalità di sincronizzazione per l'accesso agli handle IMM.
 
  
 
@@ -29,7 +29,7 @@ Per usare il controllo dell'identificazione dei thread, le applicazioni devono r
 
 <dl> <dt>
 
-[Uso di gestione metodi di input](using-input-method-manager.md)
+[Uso di Gestione metodi di input](using-input-method-manager.md)
 </dt> </dl>
 
  

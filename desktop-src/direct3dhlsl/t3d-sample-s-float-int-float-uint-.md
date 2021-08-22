@@ -1,6 +1,6 @@
 ---
-title: 'Funzione Texture3D:: Sample (S, float, int, float, uint)'
-description: "Esegue il campionamento di una trama con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) di esempio in e restituisce lo stato dell'operazione. | Funzione Texture3D:: Sample (S, float, int, float, uint)"
+title: Funzione Texture3D::Sample(S,float,int,float,uint)
+description: Campionare una trama con un valore facoltativo a cui impostare i valori del livello di dettaglio del campione e restituisce lo stato dell'operazione. | Funzione Texture3D::Sample(S,float,int,float,uint)
 ms.assetid: DB8401A1-1065-4616-BDDE-9ADB59B09C8B
 keywords:
 - Funzione di esempio HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1f1704a30ba689d50bc9c551ac6a43a4a38f90a9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 5ee3df71ebe12be050cf7f9b2c2160c36ed408a4250f17083bf493daa8b35e99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104995341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118788183"
 ---
-# <a name="texture3dsamplesfloatintfloatuint-function"></a>Funzione Texture3D:: Sample (S, float, int, float, uint)
+# <a name="texture3dsamplesfloatintfloatuint-function"></a>Funzione Texture3D::Sample(S,float,int,float,uint)
 
-Esegue il campionamento di una trama con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) di esempio in e restituisce lo stato dell'operazione.
+Campionare una trama con un valore facoltativo a cui impostare i valori del livello di dettaglio del campione e restituisce lo stato dell'operazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,18 +46,18 @@ DXGI_FORMAT Sample(
 *S* \[ in\]
 </dt> <dd>
 
-[Stato del campionatore](dx-graphics-hlsl-sampler.md). Si tratta di un oggetto dichiarato in un file di effetti che contiene le assegnazioni di stato.
+Stato [del campionatore.](dx-graphics-hlsl-sampler.md) Si tratta di un oggetto dichiarato in un file degli effetti che contiene assegnazioni di stato.
 
 </dd> <dt>
 
-*Posizione* \[ in\]
+*Località* \[ Pollici\]
 </dt> <dd>
 
 Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
 
 
 
-| Tipo di Texture-Object                    | Tipo di parametro |
+| tipo Texture-Object                    | Tipo di parametro |
 |----------------------------------------|----------------|
 | Texture1D                              | float          |
 | Texture1DArray, Texture2D              | float2         |
@@ -70,16 +70,16 @@ Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
 
 </dd> <dt>
 
-*Offset* \[ in\]
+*Offset* \[ Pollici\]
 </dt> <dd>
 
-Offset della coordinata di trama facoltativo che può essere usato per qualsiasi tipo di oggetto trama. l'offset viene applicato al percorso prima del campionamento. Usare un offset solo in un miplevel Integer; in caso contrario, è possibile ottenere risultati che non si traducono correttamente nell'hardware. Il tipo di argomento dipende dal tipo di oggetto trama. Per altre informazioni, vedere [Applying Integer offsets](dx-graphics-hlsl-to-sample.md).
+Offset facoltativo delle coordinate della trama, che può essere usato per qualsiasi tipo di oggetto trama. L'offset viene applicato alla posizione prima del campionamento. Usare un offset solo in corrispondenza di un valore integer miplevel; In caso contrario, è possibile che si otterrà un risultato che non si traduce bene in hardware. Il tipo di argomento dipende dal tipo di oggetto trama. Per altre informazioni, vedere [Applicazione di offset di interi.](dx-graphics-hlsl-to-sample.md)
 
 
 
-| Tipo di Texture-Object           | Tipo di parametro |
+| tipo Texture-Object           | Tipo di parametro |
 |-------------------------------|----------------|
-| Texture1D, Texture1DArray     | INT            |
+| Texture1D, Texture1DArray     | int            |
 | Texture2D, Texture2DArray     | int2           |
 | Texture3D                     | int3           |
 | TextureCube, TextureCubeArray | non supportato  |
@@ -90,23 +90,23 @@ Offset della coordinata di trama facoltativo che può essere usato per qualsiasi
 
 </dd> <dt>
 
-*Blocca* \[ in\]
+*Clamp* \[ Pollici\]
 </dt> <dd>
 
-Valore facoltativo a cui bloccare i valori LOD di esempio. Se ad esempio si passa 2.0 f per il valore del morsetto, si garantisce che nessun singolo campione acceda a un livello MIP inferiore a 2.0 f.
+Valore facoltativo a cui stringere i valori LOD di esempio. Ad esempio, se si passa 2.0f per il valore clamp, si garantisce che nessun singolo campione accerta un livello mip inferiore a 2,0f.
 
 </dd> <dt>
 
-*Stato* \[ di out\]
+*Stato* \[ Cambio\]
 </dt> <dd>
 
-Stato dell'operazione. Non è possibile accedere direttamente allo stato; passare invece lo stato alla funzione intrinseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** restituisce **true** se tutti i valori dell'operazione di **campionamento**, **raccolta** o **caricamento** corrispondente hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata](/windows/desktop/direct3d11/direct3d-11-2-features). Se sono stati ricavati valori da un riquadro non mappato, **CheckAccessFullyMapped** restituisce **false**.
+Stato dell'operazione. Non è possibile accedere direttamente allo stato. passare invece lo stato alla [**funzione intrinseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** restituisce **TRUE** se tutti i valori dell'operazione **Sample**, **Gather** o **Load** corrispondenti hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata.](/windows/desktop/direct3d11/direct3d-11-2-features) Se sono stati prelevati valori da un riquadro non mappato, **CheckAccessFullyMapped** restituisce **FALSE.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il formato di trama, che è uno dei valori tipizzati elencati [**nel \_ formato DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+Formato della trama, ovvero uno dei valori tipi di dati elencati in [**FORMATO DXGI. \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
 ## <a name="see-also"></a>Vedi anche
 

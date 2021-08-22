@@ -1,9 +1,9 @@
 ---
-title: Messaggio di WM_CAP_GET_AUDIOFORMAT (VFW. h)
-description: Il \_ messaggio WM Cap \_ get \_ AUDIOFORMAT ottiene il formato audio o le dimensioni del formato audio. È possibile inviare questo messaggio in modo esplicito o usando le macro capGetAudioFormat e capGetAudioFormatSize.
+title: WM_CAP_GET_AUDIOFORMAT messaggio (Vfw.h)
+description: Il messaggio WM \_ CAP \_ GET \_ AUDIOFORMAT ottiene il formato audio o le dimensioni del formato audio. È possibile inviare questo messaggio in modo esplicito o usando le macro capGetAudioFormat e capGetAudioFormatSize.
 ms.assetid: 25e58863-2b1e-4ed8-9f34-c39617a15bc1
 keywords:
-- WM_CAP_GET_AUDIOFORMAT messaggi multimediali di Windows
+- WM_CAP_GET_AUDIOFORMAT di Windows multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9508972c173c9e189bdc092a63d849adf3be739
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d247c035f251b387537f8e6c360adf79e6ed479d8d40e4f8fe8180e059dab3cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118940739"
 ---
-# <a name="wm_cap_get_audioformat-message"></a>\_ \_ \_ Messaggio AUDIOFORMAT di WM Cap
+# <a name="wm_cap_get_audioformat-message"></a>Messaggio WM \_ CAP \_ GET \_ AUDIOFORMAT
 
-Il messaggio **WM \_ Cap \_ get \_ AUDIOFORMAT** ottiene il formato audio o le dimensioni del formato audio. È possibile inviare questo messaggio in modo esplicito o usando le macro [**capGetAudioFormat**](/windows/desktop/api/Vfw/nf-vfw-capgetaudioformat) e [**capGetAudioFormatSize**](/windows/desktop/api/Vfw/nf-vfw-capgetaudioformatsize) .
+Il **messaggio WM CAP GET \_ \_ \_ AUDIOFORMAT** ottiene il formato audio o le dimensioni del formato audio. È possibile inviare questo messaggio in modo esplicito o usando le macro [**capGetAudioFormat**](/windows/desktop/api/Vfw/nf-vfw-capgetaudioformat) e [**capGetAudioFormatSize.**](/windows/desktop/api/Vfw/nf-vfw-capgetaudioformatsize)
 
 
 ```C++
@@ -48,17 +48,17 @@ Dimensione, in byte, della struttura a cui fa riferimento **s**.
 <span id="psAudioFormat"></span><span id="psaudioformat"></span><span id="PSAUDIOFORMAT"></span>*psAudioFormat*
 </dt> <dd>
 
-Puntatore a una struttura [**WAVEFORMATEX**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) o **null**. Se il valore è **null**, viene restituita la dimensione, in byte, necessaria per mantenere la struttura.
+Puntatore a [**una struttura WAVEFORMATEX**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) o **NULL.** Se il valore è **NULL,** vengono restituite le dimensioni, in byte, necessarie per contenere la struttura.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce la dimensione, in byte, del formato audio.
+Restituisce le dimensioni, in byte, del formato audio.
 
 ## <a name="remarks"></a>Commenti
 
-Poiché i formati audio compressi variano in requisiti di dimensioni, le applicazioni devono prima recuperare le dimensioni, quindi allocare memoria e infine richiedere i dati in formato audio.
+Poiché i formati audio compressi variano in base ai requisiti di dimensione, le applicazioni devono prima recuperare le dimensioni, quindi allocare memoria e infine richiedere i dati del formato audio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,7 +68,7 @@ Poiché i formati audio compressi variano in requisiti di dimensioni, le applica
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

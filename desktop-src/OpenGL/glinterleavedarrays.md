@@ -45,7 +45,7 @@ void WINAPI glInterleavedArrays(
 *format* 
 </dt> <dd>
 
-Tipo di matrice da abilitare. Il parametro può presupporre uno dei valori simbolici seguenti: GL \_ V2F, GL \_ V3F, GL \_ C4UB \_ V2F, GL \_ C4UB \_ V3F, GL \_ C3F \_ V3F, \_ GL \_ N3F V3F, GL \_ C4F \_ \_ N3F V3F, GL \_ T2F \_ V3F, GL \_ T4F \_ V4F, GL \_ T2F \_ C4UB \_ V3F, GL \_ T2F \_ \_ C3F V3F, GL \_ T2F \_ N3F \_ V3F, GL \_ T2F \_ C4F \_ \_ N3F V3F o GL \_ T4F \_ \_ C4F N3F \_ V4F.
+Tipo di matrice da abilitare. Il parametro può presupporre uno dei valori simbolici seguenti: GL \_ V2F, GL \_ V3F, GL \_ C4UB \_ V2F, GL \_ C4UB \_ V3F, GL \_ C3F \_ V3F, \_ GL \_ N3F V3F, GL \_ C4F \_ \_ N3F V3F, GL \_ T2F \_ V3F, GL \_ T4F \_ V4F, GL \_ T2F \_ C4UB \_ V3F, GL \_ T2F \_ \_ C3F V3F, GL \_ T2F \_ N3F \_ V3F, GL \_ T2F \_ C4F \_ \_ N3F V3F o GL \_ T4F \_ C4F \_ \_ N3F V4F.
 
 </dd> <dt>
 

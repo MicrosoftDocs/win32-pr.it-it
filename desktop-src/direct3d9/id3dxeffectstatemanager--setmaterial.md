@@ -1,7 +1,7 @@
 ---
-description: Funzione di callback che deve essere implementata da un utente per impostare lo stato del materiale.
+description: Funzione di callback che deve essere implementata da un utente per impostare lo stato materiale.
 ms.assetid: 4c5e903f-551b-4346-a5eb-301a3a5b9b44
-title: 'Metodo ID3DXEffectStateManager:: sematerial (D3DX9Effect. h)'
+title: Metodo ID3DXEffectStateManager::SetMaterial (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: b503bd195468fb323e7e655c0bdd201e25dfdce2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 67e8b1ad498b5aacbae7aaad2d6b63fa406d54d6315a4e75b3028efe3107eaf8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118802875"
 ---
-# <a name="id3dxeffectstatemanagersetmaterial-method"></a>Metodo ID3DXEffectStateManager:: sematerial
+# <a name="id3dxeffectstatemanagersetmaterial-method"></a>Metodo ID3DXEffectStateManager::SetMaterial
 
-Funzione di callback che deve essere implementata da un utente per impostare lo stato del materiale.
+Funzione di callback che deve essere implementata da un utente per impostare lo stato materiale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT SetMaterial(
 
 <dl> <dt>
 
-*pMaterial* \[ in\]
+*pMaterial* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DMATERIAL9**](d3dmaterial9.md) \***
 
-Puntatore allo stato del materiale. Vedere [**D3DMATERIAL9**](d3dmaterial9.md).
+Puntatore allo stato materiale. Vedere [**D3DMATERIAL9.**](d3dmaterial9.md)
 
 </dd> </dl>
 
@@ -53,10 +53,10 @@ Puntatore allo stato del materiale. Vedere [**D3DMATERIAL9**](d3dmaterial9.md).
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback ha esito negativo quando si imposta lo stato del dispositivo, si verificherà una delle condizioni seguenti:
+Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback non riesce quando si imposta lo stato del dispositivo, si verificherà una delle condizioni seguenti:
 
--   L'effetto avrà esito negativo durante [**ID3DXEffect:: BeginPass**](id3dxeffect--beginpass.md).
--   La chiamata allo stato dell'effetto dinamico, ad esempio [**IDirect3DDevice9:: sematerial**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setmaterial), avrà esito negativo.
+-   L'effetto avrà esito negativo [**durante ID3DXEffect::BeginPass**](id3dxeffect--beginpass.md).
+-   La chiamata di stato dell'effetto dinamico ( [**ad esempio IDirect3DDevice9::SetMaterial**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setmaterial)) avrà esito negativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,8 +64,8 @@ Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback ha es
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

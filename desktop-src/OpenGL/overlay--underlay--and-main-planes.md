@@ -1,32 +1,32 @@
 ---
-title: Sovrapposizione, sottoposto e piani principali
-description: Nelle applicazioni è possibile usare i piani a livello di hardware, ovvero i piani sovrapposti e quelli sottoposti.
+title: Piani sovrapposti, sottostanti e principali
+description: È possibile usare piani di livello hardware (piani sovrapposti e sottostanti) nelle applicazioni.
 ms.assetid: fd9401b3-f2a8-4384-92e8-61b346216542
 keywords:
-- OpenGL in Windows, piani livello hardware
-- livelli hardware OpenGL
-- sovrapposizione di piani OpenGL
-- piani di sottofondo OpenGL
+- OpenGL su Windows,piani di livello hardware
+- Piani di livello hardware OpenGL
+- Piani di sovrimpressione OpenGL
+- underlay planes OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6fe68c4bb57d431151c4d879965fcf7496c8615
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7b968a0ab028fd0a699e31ad3a3601d7140435e2b36d0188bef46c5dca7cbad9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118936490"
 ---
-# <a name="overlay-underlay-and-main-planes"></a>Sovrapposizione, sottoposto e piani principali
+# <a name="overlay-underlay-and-main-planes"></a>Piani sovrapposti, sottostanti e principali
 
-Nelle applicazioni è possibile usare i piani a livello di hardware, ovvero i piani sovrapposti e quelli sottoposti. Con Windows, i formati pixel descrivono le configurazioni in pixel di un dispositivo grafico. Ogni formato pixel descrive la profondità e altre caratteristiche dei buffer dei colori principali e descrive i buffer aggiuntivi (ad esempio profondità, accumulo, stencil e ausiliario) usati dal piano principale. I formati pixel sono ora estesi per includere i buffer sovrapposti e di sottofondo.
+È possibile usare piani di livello hardware (piani sovrapposti e sottostanti) nelle applicazioni. Con Windows, i formati pixel descrivono le configurazioni pixel di un dispositivo grafico. Ogni formato pixel descrive la profondità e altre caratteristiche dei buffer di colore principali e descrive buffer aggiuntivi (ad esempio profondità, accumulo, stencil e ausiliario) utilizzati dal piano principale. I formati pixel sono ora estesi per includere buffer sovrapposti e sottostanti.
 
-I piani di livello hanno sempre un buffer di colore in primo piano e possono includere buffer di colore anteriore e posteriore. Ogni piano di livello dispone di un contesto di rendering specifico di cui eseguire il rendering nei buffer del livello. Non è possibile utilizzare le funzioni di disegno GDI nei piani di livello.
+I piani di livello hanno sempre un buffer di colore anteriore sinistro e possono anche includere buffer di colore anteriore destro e posteriore. Ogni piano livello ha un contesto di rendering specifico per il rendering nei buffer del livello. Non è possibile usare le funzioni di disegno GDI nei piani di livello.
 
-Una finestra gestisce i buffer dei colori dei piani di livello in modo analogo al modo in cui gestisce i buffer dei colori del piano principale. È possibile visualizzare più finestre con piani sovrapposti e/o sottoposti allo stesso tempo. Non è possibile avere finestre sovrapposte a virgola mobile gratuite che possono spostarsi in qualsiasi finestra del piano di disegno principale. Inoltre, poiché in ogni momento i piani sottostanti vengono nascosti in una finestra, non è possibile utilizzare i piani popup hardware privi di colore trasparente.
+Una finestra gestisce i buffer di colore dei piani di livello in modo analogo al modo in cui gestisce i buffer di colore del piano principale. È possibile visualizzare contemporaneamente più finestre con piani sovrapposti e/o sottostanti. Non è possibile avere finestre sovrapposte mobili che possono essere spostate su qualsiasi finestra nel piano di disegno principale. Inoltre, poiché nasconde i piani sottostanti in una finestra in qualsiasi momento, non è possibile usare piani popup hardware senza colore trasparente.
 
-A ogni piano di livello in una finestra è associata una tavolozza. È possibile impostare la tavolozza di un piano del livello di indice colore, ma la tavolozza di un piano di colore RGBA è fissa. È necessario realizzare la tavolozza appropriata quando una finestra è in primo piano. I piani di livello hanno un colore o un indice di pixel trasparente che consente la visualizzazione di tutti i piani di livello sottostante.
+A ogni piano di livello in una finestra è associata una tavolozza. È possibile impostare la tavolozza di un piano livello indice colori, ma la tavolozza di un piano colori RGBA è fissa. È necessario realizzare la tavolozza appropriata quando una finestra è in primo piano. I piani livello hanno un colore o un indice in pixel trasparente che consente la visualizzazione di tutti i piani di livello sottostanti.
 
-È possibile copiare lo stato di un contesto di rendering in un altro contesto di rendering in un piano di livello separato. È anche possibile condividere elenchi di visualizzazione tra contesti di rendering in diversi piani di livello.
+È possibile copiare lo stato di un contesto di rendering in un altro contesto di rendering in un piano livello separato. È anche possibile condividere gli elenchi di visualizzazione tra contesti di rendering in piani di livello diversi.
 
 Con i piani di livello vengono usate le funzioni seguenti:
 
@@ -38,9 +38,9 @@ Con i piani di livello vengono usate le funzioni seguenti:
 -   [**wglSetLayerPaletteEntries**](/windows/desktop/api/wingdi/nf-wingdi-wglsetlayerpaletteentries)
 -   [**wglSwapLayerBuffers**](/windows/desktop/api/wingdi/nf-wingdi-wglswaplayerbuffers)
 
- 
+ 
 
- 
+ 
 
 
 

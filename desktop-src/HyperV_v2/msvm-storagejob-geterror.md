@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 00434ef529b7f26755f52833ff6f37310c7dc210
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fcce1fc0f854e0e40d62e6f9335412bb7b7c93fbc3f212cbdae27ddbc2f3e94b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950199"
 ---
 # <a name="geterror-method-of-the-msvm_storagejob-class"></a>Metodo GetError della classe Msvm \_ StorageJob
 

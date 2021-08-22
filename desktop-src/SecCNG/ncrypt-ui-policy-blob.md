@@ -1,7 +1,7 @@
 ---
-description: Utilizzato con la \_ proprietà della proprietà dei criteri dell'interfaccia utente NCRYPT \_ \_ per contenere informazioni sull'interfaccia utente per una chiave.
+description: Usato con la proprietà NCRYPT \_ UI POLICY PROPERTY per \_ \_ contenere le informazioni sull'interfaccia utente per una chiave.
 ms.assetid: c567d8ba-3315-4316-8e09-93b2c10a55ec
-title: Struttura NCRYPT_UI_POLICY_BLOB ( \_ provider NCRYPT. h)
+title: NCRYPT_UI_POLICY_BLOB struttura (provider \_ Ncrypt.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Ncrypt_provider.h
-ms.openlocfilehash: c45b53e051f021ab3dcce6dab4e2317572338624
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 21f9f6c0f6956ffa89da45c9dcd23727c0b3cea2d4f31131713f9ed5a0c3a2fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907601"
 ---
-# <a name="ncrypt_ui_policy_blob-structure"></a>\_ \_ Struttura BLOB dei criteri dell'interfaccia utente di NCRYPT \_
+# <a name="ncrypt_ui_policy_blob-structure"></a>Struttura BLOB dei \_ criteri \_ dell'interfaccia utente NCRYPT \_
 
-La struttura del **\_ \_ \_ BLOB dei criteri** dell'interfaccia utente di NCRYPT viene usata con la proprietà della [**\_ \_ \_ proprietà dei criteri**](key-storage-property-identifiers.md) dell'interfaccia utente NCRYPT per contenere informazioni sull'interfaccia utente per una chiave.
+La **struttura BLOB dei criteri \_ \_ \_ dell'interfaccia** utente NCRYPT viene usata con la proprietà [**NCRYPT UI POLICY \_ \_ \_ PROPERTY**](key-storage-property-identifiers.md) per contenere le informazioni sull'interfaccia utente per una chiave.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,21 +46,21 @@ typedef struct __NCRYPT_UI_POLICY_BLOB {
 **dwVersion**
 </dt> <dd>
 
-Numero di versione della struttura. Questo membro deve contenere 1.
+Numero di versione della struttura . Questo membro deve contenere 1.
 
 </dd> <dt>
 
 **dwFlags**
 </dt> <dd>
 
-Set di flag che forniscono informazioni o requisiti aggiuntivi dell'interfaccia utente.
+Set di flag che forniscono informazioni o requisiti aggiuntivi sull'interfaccia utente.
 
 
 
 | Valore                                                                                                                                                                                                                                                                                                  | Significato                                                     |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| <span id="NCRYPT_UI_PROTECT_KEY_FLAG"></span><span id="ncrypt_ui_protect_key_flag"></span><dl> <dt>**NCRYPT \_ \_ \_ \_ Flag chiave di protezione interfaccia utente**</dt> <dt>0x00000001</dt> </dl>                                | Visualizzare l'interfaccia utente chiave avanzata in base alle esigenze.<br/> |
-| <span id="NCRYPT_UI_FORCE_HIGH_PROTECTION_FLAG"></span><span id="ncrypt_ui_force_high_protection_flag"></span><dl> <dt>**NCRYPT \_ Interfaccia utente-0x00000002 \_ \_ \_ \_ flag di protezione elevata**</dt> <dt></dt> </dl> | Forza la protezione elevata.<br/>                           |
+| <span id="NCRYPT_UI_PROTECT_KEY_FLAG"></span><span id="ncrypt_ui_protect_key_flag"></span><dl> <dt>**NCRYPT \_ FLAG \_ DELLA CHIAVE DI PROTEZIONE \_ \_ DELL'INTERFACCIA**</dt> <dt>0X00000001</dt> </dl>                                | Visualizzare l'interfaccia utente con chiave forte in base alle esigenze.<br/> |
+| <span id="NCRYPT_UI_FORCE_HIGH_PROTECTION_FLAG"></span><span id="ncrypt_ui_force_high_protection_flag"></span><dl> <dt>**NCRYPT \_ FLAG \_ DI PROTEZIONE ELEVATA \_ \_ dell'interfaccia \_**</dt> <dt>utente</dt> 0X00000002 </dl> | Forzare la protezione elevata.<br/>                           |
 
 
 
@@ -71,27 +71,27 @@ Set di flag che forniscono informazioni o requisiti aggiuntivi dell'interfaccia 
 **cbCreationTitle**
 </dt> <dd>
 
-Lunghezza, in byte, del titolo di creazione. Il titolo della creazione è una stringa Unicode con terminazione null che specifica il testo usato come titolo della finestra di dialogo chiave complessa al termine della chiave. Il titolo di creazione deve essere inserito immediatamente dopo la struttura del **\_ \_ \_ BLOB dei criteri dell'interfaccia utente di NCRYPT** . Se il valore del membro **cbCreationTitle** è impostato su 0, per il titolo della finestra di dialogo chiave complessa viene utilizzato un titolo di creazione predefinito. Questo membro viene utilizzato solo alla finalizzazione della chiave.
+Lunghezza, in byte, del titolo di creazione. Il titolo di creazione è una stringa Unicode con terminazione Null che specifica il testo utilizzato come titolo della finestra di dialogo con chiave forte al termine della chiave. Il titolo di creazione deve essere posizionato immediatamente dopo la struttura BLOB **dei criteri \_ dell'interfaccia \_ utente \_ NCRYPT.** Se il valore del membro **cbCreationTitle** è impostato su 0, per il titolo della finestra di dialogo chiave forte viene usato un titolo di creazione predefinito. Questo membro viene usato solo per la finalizzazione della chiave.
 
 </dd> <dt>
 
 **cbFriendlyName**
 </dt> <dd>
 
-Lunghezza, in byte, del nome descrittivo della chiave. Il nome descrittivo è una stringa Unicode con terminazione null che contiene il testo visualizzato nella finestra di dialogo chiave complessa come nome della chiave. Il nome descrittivo deve essere inserito immediatamente dopo il titolo di creazione in questo BLOB. Se il valore del membro **cbFriendlyName** è impostato su 0, nella finestra di dialogo chiave complessa viene utilizzato un nome predefinito. Questo membro viene utilizzato sia quando la chiave viene completata sia quando viene utilizzata la chiave.
+Lunghezza, in byte, del nome descrittivo della chiave. Il nome descrittivo è una stringa Unicode con terminazione Null che contiene il testo visualizzato nella finestra di dialogo chiave sicuro come nome della chiave. Il nome descrittivo deve essere inserito immediatamente dopo il titolo di creazione in questo BLOB. Se il valore del membro **cbFriendlyName** è impostato su 0, viene usato un nome predefinito nella finestra di dialogo chiave sicuro. Questo membro viene usato sia quando la chiave viene completata che quando viene usata la chiave.
 
 </dd> <dt>
 
 **cbDescription**
 </dt> <dd>
 
-Lunghezza, in byte, della descrizione della chiave. La descrizione della chiave è una stringa Unicode con terminazione null che contiene il testo visualizzato nella finestra di dialogo chiave complessa come descrizione della chiave. Il valore della descrizione deve essere inserito immediatamente dopo il nome descrittivo in questo BLOB. Se il valore del membro **cbDescription** è impostato su 0, nella finestra di dialogo chiave complessa viene utilizzata una descrizione predefinita. Questo membro viene utilizzato sia quando la chiave viene completata sia quando viene utilizzata la chiave.
+Lunghezza, in byte, della descrizione della chiave. La descrizione della chiave è una stringa Unicode con terminazione Null che contiene il testo visualizzato nella finestra di dialogo chiave forte come descrizione della chiave. Il valore description deve essere inserito immediatamente dopo il nome descrittivo in questo BLOB. Se il valore del membro **cbDescription** è impostato su 0, nella finestra di dialogo chiave forte viene usata una descrizione predefinita. Questo membro viene usato sia quando la chiave viene completata che quando viene usata la chiave.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura è inclusa nell'intestazione ncrypt \_ provider. h. Per utilizzare la struttura, è necessario scaricare [Cryptographic Provider Development Kit](/collaborate/connect-redirect?InvitationID=CSDK-GYTG-R2PX&ProgramID=7264) da Microsoft Connect.
+Questa struttura è inclusa nell'intestazione \_ Ncrypt provider.h. Per usare la struttura, è necessario scaricare [Cryptographic Provider Development Kit](/collaborate/connect-redirect?InvitationID=CSDK-GYTG-R2PX&ProgramID=7264) da Microsoft Connessione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -99,9 +99,9 @@ Questa struttura è inclusa nell'intestazione ncrypt \_ provider. h. Per utilizz
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                          |
-| Intestazione<br/>                   | <dl> <dt>\_Provider ncrypt. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                          |
+| Intestazione<br/>                   | <dl> <dt>Provider \_ Ncrypt.h</dt> </dl> |
 
 
 

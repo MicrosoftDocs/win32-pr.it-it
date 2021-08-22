@@ -1,29 +1,29 @@
 ---
 title: Provider di interfacce del servizio Active Directory
-description: Un provider ADSI contiene l'implementazione di oggetti ADSI e oggetti dipendenti per un determinato spazio dei nomi.
+description: Un provider ADSI contiene l'implementazione di oggetti ADSI e oggetti dipendenti per uno spazio dei nomi specifico.
 ms.assetid: fb4b9807-7f76-4497-96be-77924bac8f30
 ms.tgt_platform: multiple
 keywords:
-- provider di servizi ADSI, illustrazione di come i provider di servizi accedono a uno spazio dei nomi
-- ADSI dello spazio dei nomi, illustrazione della modalità di accesso dei provider di servizi
+- provider di servizi ADSI, illustrazione del modo in cui i provider di servizi accedono a uno spazio dei nomi
+- spazio dei nomi ADSI , illustrazione del modo in cui i provider di servizi accedono allo spazio dei nomi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d350a9447a79dd2659a0fed79fb781c02d84bc8c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8ae1e9406e08a5ed79ea8e207eb61c5081388adb581d747b383480e59683169e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103707492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024105"
 ---
 # <a name="active-directory-service-interfaces-provider"></a>Provider di interfacce del servizio Active Directory
 
-Un provider ADSI contiene l'implementazione di oggetti ADSI e oggetti dipendenti per un determinato spazio dei nomi. Nella figura seguente viene illustrato come i client si occupino solo di ottenere e usare le interfacce su un oggetto e non con i dettagli relativi a dove e come viene implementato il software di un oggetto.
+Un provider ADSI contiene l'implementazione di oggetti ADSI e oggetti dipendenti per uno spazio dei nomi specifico. La figura seguente mostra che i client si preoccupano solo di ottenere e usare le interfacce su un oggetto e non di sapere dove e come viene implementato il software di un oggetto.
 
-![provider interfacce del servizio Active Directory](images/ds2prov.png)
+![Provider di interfacce del servizio Active Directory](images/ds2prov.png)
 
- 
+ 
 
- 
+ 
 
 
 

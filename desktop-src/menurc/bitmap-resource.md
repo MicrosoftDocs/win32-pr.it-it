@@ -1,6 +1,6 @@
 ---
 title: Risorsa BITMAP
-description: Definisce una bitmap utilizzata da un'applicazione nella visualizzazione dello schermo o come elemento in un menu o un controllo.
+description: Definisce una bitmap utilizzata da un'applicazione nella relativa visualizzazione sullo schermo o come elemento in un menu o in un controllo.
 ms.assetid: 2db2f7f0-735f-4aac-9813-c04a2f7788b2
 keywords:
 - Menu delle risorse BITMAP e altre risorse
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e5bed33fb66d9deb85e1f25165f3f7a0f664961
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: ff75f235e8aa1787e93f9420b4d7ed27f440cdc09510547295ebced4ec494bdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104398919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118734899"
 ---
 # <a name="bitmap-resource"></a>Risorsa BITMAP
 
-Definisce una bitmap utilizzata da un'applicazione nella visualizzazione dello schermo o come elemento in un menu o un controllo.
+Definisce una bitmap utilizzata da un'applicazione nella relativa visualizzazione sullo schermo o come elemento in un menu o in un controllo.
 
 ``` syntax
 nameID BITMAP filename
@@ -31,25 +31,25 @@ nameID BITMAP filename
 
 <dl> <dt>
 
-<span id="nameID"></span><span id="nameid"></span><span id="NAMEID"></span>*nameID*
+<span id="nameID"></span><span id="nameid"></span><span id="NAMEID"></span>*Nameid*
 </dt> <dd>
 
-Nome univoco o valore di Unsigned Integer a 16 bit che identifica la risorsa.
+Nome univoco o valore intero senza segno a 16 bit che identifica la risorsa.
 
 </dd> <dt>
 
-<span id="filename"></span><span id="FILENAME"></span>*filename*
+<span id="filename"></span><span id="FILENAME"></span>*Filename*
 </dt> <dd>
 
-Nome del file che contiene la risorsa. Il nome deve essere un nome di file valido. deve essere un percorso completo se il file non si trova nella directory di lavoro corrente. Il percorso deve essere una stringa racchiusa tra virgolette.
+Nome del file che contiene la risorsa. Il nome deve essere un nome di file valido. deve essere un percorso completo se il file non si trova nella directory di lavoro corrente. Il percorso deve essere una stringa tra virgolette.
 
 </dd> </dl>
 
-Alcuni attributi sono supportati anche per la compatibilità con le versioni precedenti. Per altre informazioni, vedere [attributi di risorse comuni](common-resource-attributes.md).
+Alcuni attributi sono supportati anche per la compatibilità con le versioni precedenti. Per altre informazioni, vedere [Attributi comuni delle risorse](common-resource-attributes.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente vengono definite due risorse bitmap:
+L'esempio seguente definisce due risorse bitmap:
 
 ``` syntax
 disk1   BITMAP "disk.bmp"
@@ -60,15 +60,15 @@ disk1   BITMAP "disk.bmp"
 
 <dl> <dt>
 
-[Uso di bitmap](/windows/desktop/gdi/using-bitmaps)
+[Uso delle bitmap](/windows/desktop/gdi/using-bitmaps)
 </dt> <dt>
 
 [**LoadBitmap**](/windows/desktop/api/winuser/nf-winuser-loadbitmapa)
 </dt> <dt>
 
-[**LoadImage**](/windows/desktop/api/Winuser/nf-winuser-loadimagea)
+[**Loadimage**](/windows/desktop/api/Winuser/nf-winuser-loadimagea)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,21 +1,21 @@
 ---
-description: Per applicare la trasformazione personalizzazione durante un'installazione del prodotto, è necessario aggiungere un flusso di informazioni di riepilogo al file di trasformazione MNPtrans. MST generato durante la generazione di una trasformazione di personalizzazione.
+description: Per applicare la trasformazione di personalizzazione durante un'installazione del prodotto, è necessario aggiungere un flusso di informazioni di riepilogo al file di trasformazione MNPtrans.mst generato in Generazione di una trasformazione di personalizzazione.
 ms.assetid: 586f6c43-7449-4d06-9201-9b4b4919871e
 title: Aggiunta di informazioni di riepilogo alla trasformazione personalizzazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64957fcf8f29ab8793517015c7018292ba9a6e69
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4ea4c9aa505d425bfd06fe5cac1f45666e794624618db14100ee5f517dd3048
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118639471"
 ---
 # <a name="adding-summary-information-to-customization-transform"></a>Aggiunta di informazioni di riepilogo alla trasformazione personalizzazione
 
-Per applicare la trasformazione personalizzazione durante un'installazione del prodotto, è necessario aggiungere un [flusso di informazioni di riepilogo](summary-information-stream.md) al file di trasformazione MNPtrans. MST generato durante la generazione di [una trasformazione di personalizzazione](generating-a-customization-transform.md).
+Per applicare la trasformazione di personalizzazione durante un'installazione del prodotto, è necessario aggiungere un flusso di informazioni di riepilogo al file di trasformazione MNPtrans.mst generato in Generazione di una trasformazione [di personalizzazione](generating-a-customization-transform.md). [](summary-information-stream.md)
 
-È possibile generare informazioni di riepilogo per una trasformazione utilizzando [**MsiCreateTransformSummaryInfo**](/windows/desktop/api/Msiquery/nf-msiquery-msicreatetransformsummaryinfoa) o il [**Metodo CreateTransformSummaryInfo**](database-createtransformsummaryinfo.md). Il frammento di codice seguente, Sum.vbs, illustra il [**Metodo CreateTransformSummaryInfo**](database-createtransformsummaryinfo.md) ed è utilizzabile con Windows script host. Si noti che in questo esempio non viene eseguita alcuna convalida e non vengono evitate condizioni di errore.
+È possibile generare informazioni di riepilogo per una trasformazione [**usando MsiCreateTransformSummaryInfo**](/windows/desktop/api/Msiquery/nf-msiquery-msicreatetransformsummaryinfoa) o [**il metodo CreateTransformSummaryInfo**](database-createtransformsummaryinfo.md). Il frammento Sum.vbs seguente illustra il [**metodo CreateTransformSummaryInfo**](database-createtransformsummaryinfo.md) ed è da usare con Windows Host script. Si noti che questo esempio non esegue alcuna convalida e non elimina alcuna condizione di errore.
 
 
 ```VB
@@ -49,19 +49,19 @@ Dim transinfo : transinfo =
 
 
 
-Per creare e aggiungere informazioni di riepilogo al file di trasformazione MNPtrans. MST creato durante la [generazione di una trasformazione di personalizzazione](generating-a-customization-transform.md), passare alla cartella contenente Gen.vbs, il database originale, il database aggiornato e la trasformazione, quindi immettere la riga di comando seguente.
+Per creare e aggiungere informazioni di riepilogo al file di trasformazione MNPtrans.mst creato [in](generating-a-customization-transform.md)Generazione di una trasformazione di personalizzazione, passare alla cartella contenente Gen.vbs, il database originale, il database aggiornato e la trasformazione e immettere la riga di comando seguente.
 
-**Cscript.exe Sum.vbs MNP2000.msi MNP2000t.msi MNPtrans. MST**
+**Cscript.exe Sum.vbs MNP2000.msi MNP2000t.msi MNPtrans.mst**
 
-Fare clic sull'icona MNP2000.msi per avviare un'installazione o utilizzare la riga di comando seguente.
+Fare clic MNP2000.msi'icona di avvio per avviare un'installazione o usare la riga di comando seguente.
 
-**msiexec/i MNP2000.msi**
+**msiexec /i MNP2000.msi**
 
-Il prodotto verrà installato senza le personalizzazioni. Per eseguire l'installazione con la personalizzazione, immettere la riga di comando seguente. Si noti che il valore della proprietà [**TRANSforms**](transforms.md) si riferisce al file di trasformazione situato nell'origine.
+In questo modo il prodotto viene installato senza le personalizzazioni. Per eseguire l'installazione con la personalizzazione, immettere la riga di comando seguente. Si noti che il valore della [**proprietà TRANSFORMS**](transforms.md) fa riferimento al file di trasformazione che si trova nell'origine.
 
-**msiexec/i MNP2000.msi Transforms = MNPtrans. MST**
+**msiexec /i MNP2000.msi TRANSFORMS=MNPtrans.mst**
 
-La funzionalità di controllo non viene visualizzata nell'albero di selezione delle funzionalità e i componenti della funzionalità di controllo non vengono installati anche se nell'interfaccia utente è selezionato un tipo completo di installazione.
+La funzionalità Gate non viene visualizzata nell'albero di selezione delle funzionalità e i componenti della funzionalità Gate non vengono installati anche se nell'interfaccia utente è selezionato Un tipo completo di installazione.
 
 [Continua](embedding-customization-transforms-as-substorage.md)
 

@@ -1,6 +1,6 @@
 ---
-title: Costanti WINBIO_ANSI_381_FORMAT (tipi WinBio \_ . h)
-description: Specificare il tipo di formato e il proprietario del formato.
+title: WINBIO_ANSI_381_FORMAT costanti (Winbio \_ types.h)
+description: Specificare il proprietario del formato e il tipo di formato.
 ms.assetid: 5EFFF7EB-D998-4EE9-A23F-B17477F00863
 topic_type:
 - apiref
@@ -13,23 +13,23 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c79701560ad6256e91adcf8360e2ce5866df1e9e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 625731bfcf880de8dd78e6f3ca942edb2732612a7e4199cee8caed223043fe65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118911550"
 ---
-# <a name="winbio_ansi_381_format-constants"></a>\_Costanti di \_ formato ANSI 381 di WINBIO \_
+# <a name="winbio_ansi_381_format-constants"></a>Costanti FORMAT \_ WINBIO ANSI \_ 381 \_
 
-Nella struttura del [**\_ \_ formato registrato WINBIO**](winbio-registered-format.md) è possibile utilizzare i valori seguenti.
+I valori seguenti possono essere usati nella [**struttura WINBIO \_ REGISTERED \_ FORMAT.**](winbio-registered-format.md)
 
 
 
 | Costante                                                                                                                                                                                                      | Descrizione                                                                                                           |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------|
-| <span id="WINBIO_ANSI_381_FORMAT_OWNER"></span><span id="winbio_ansi_381_format_owner"></span><dl> <dt>**\_Proprietario del \_ formato ANSI 381 \_ \_ di WINBIO**</dt> </dl> | InterNational Committee for Information Technology Standards (INCIs) Technical Committee M1 (biometria).<br/> |
-| <span id="WINBIO_ANSI_381_FORMAT_TYPE"></span><span id="winbio_ansi_381_format_type"></span><dl> <dt>**\_Tipo di \_ formato ANSI 381 \_ \_ di WINBIO**</dt> </dl>    | ANSI INCIs 381 formato di interscambio dati basato su immagine Finger.<br/>                                                |
+| <span id="WINBIO_ANSI_381_FORMAT_OWNER"></span><span id="winbio_ansi_381_format_owner"></span><dl> <dt>**PROPRIETARIO DEL FORMATO \_ ANSI \_ 381 \_ WINBIO \_**</dt> </dl> | InterNational Committee for Information Technology Standards (INCITS) Technical Committee M1 (biometrics).<br/> |
+| <span id="WINBIO_ANSI_381_FORMAT_TYPE"></span><span id="winbio_ansi_381_format_type"></span><dl> <dt>**TIPO DI FORMATO \_ WINBIO ANSI \_ 381 \_ \_**</dt> </dl>    | Formato di interscambio dati anSI INCITS 381 basato su immagine del dito.<br/>                                                |
 
 
 
@@ -39,9 +39,9 @@ Nella struttura del [**\_ \_ formato registrato WINBIO**](winbio-registered-form
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                                    |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>\_Tipi WinBio. h (includere WinBio. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                       |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ types.h (include Winbio.h)</dt> </dl> |
 
 
 
@@ -52,7 +52,7 @@ Nella struttura del [**\_ \_ formato registrato WINBIO**](winbio-registered-form
 [Costanti dell'applicazione client](client-application-constants.md)
 </dt> <dt>
 
-[**\_formato registrato \_ WINBIO**](winbio-registered-format.md)
+[**FORMATO REGISTRATO \_ WINBIO \_**](winbio-registered-format.md)
 </dt> </dl>
 
  

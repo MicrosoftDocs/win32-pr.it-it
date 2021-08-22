@@ -1,7 +1,7 @@
 ---
-description: Calcola il contributo di illuminazione diretta per gli oggetti 3D in cui la luminosità di origine è rappresentata da un'approssimazione armonica sferica (SH), usando il campionamento adattivo.
+description: Calcola il contributo di illuminazione diretta agli oggetti 3D in cui la radice di origine è rappresentata da un'approssimazione sferica aricale (SH), usando il campionamento adattivo.
 ms.assetid: 792d8460-d608-4384-ac1c-556435074580
-title: 'Metodo ID3DXPRTEngine:: ComputeDirectLightingSHAdaptive (D3DX9Mesh. h)'
+title: Metodo ID3DXPRTEngine::ComputeDirectLightingSHAdaptive (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8abbcfd955fa909166b53f6e050b9aff5837508d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 991337b31b10c39cccb622c2838bd53bcb25ad534ae8f896b6ec8f4842072de3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103762376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118801281"
 ---
-# <a name="id3dxprtenginecomputedirectlightingshadaptive-method"></a>Metodo ID3DXPRTEngine:: ComputeDirectLightingSHAdaptive
+# <a name="id3dxprtenginecomputedirectlightingshadaptive-method"></a>Metodo ID3DXPRTEngine::ComputeDirectLightingSHAdaptive
 
-Calcola il contributo di illuminazione diretta per gli oggetti 3D in cui la luminosità di origine è rappresentata da un'approssimazione armonica sferica (SH), usando il campionamento adattivo. Questo metodo genera nuovi vertici e visi sulla mesh per approssimare in modo più accurato il segnale PRT (pre-Computed Radiance Transfer).
+Calcola il contributo di illuminazione diretta agli oggetti 3D in cui la radice di origine è rappresentata da un'approssimazione sferica aricale (SH), usando il campionamento adattivo. Questo metodo genera nuovi vertici e visi nella mesh per approssimare in modo più accurato il segnale PRT (Precomputed Radiance Transfer).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,48 +44,48 @@ HRESULT ComputeDirectLightingSHAdaptive(
 
 <dl> <dt>
 
-*Ordine* \[ di in\]
+*Ordine* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Ordine della valutazione SH. Deve essere compreso tra [D3DXSH \_ MINORDER](other-d3dx-constants.md) \_ e D3DXSH MAXORDER, inclusi. La valutazione genera coefficienti Order ². Il livello della valutazione è Order-1.
+Ordine della valutazione SH. Deve essere compreso nell'intervallo [da D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, inclusi. La valutazione genera coefficienti Di ordine. Il grado di valutazione è Order - 1.
 
 </dd> <dt>
 
-*AdaptiveThresh* \[ in\]
+*AdaptiveThresh* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Soglia sul vettore PRT da usare per la suddivisione dei vertici e delle facce mesh. Se è minore di 1e-6F, viene specificato un valore predefinito di 1e-6F.
+Soglia sul vettore PRT da usare per la suddivisione di vertici e visi della mesh. Se è minore di 1e-6f, viene specificato il valore predefinito 1e-6f.
 
 </dd> <dt>
 
-*MinEdgeLength* \[ in\]
+*MinEdgeLength* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Lunghezza minima del bordo della superficie che verrà generata nel campionamento adattivo. Se il metodo determina che il valore è troppo piccolo, viene specificato un valore dipendente dal modello. Se è zero, viene specificato un valore predefinito pari a 4.
+Lunghezza minima del bordo del viso che verrà generata nel campionamento adattivo. Se il metodo determina che il valore è troppo piccolo, viene specificato un valore dipendente dal modello. Se zero, viene specificato il valore predefinito 4.
 
 </dd> <dt>
 
-*MaxSubdiv* \[ in\]
+*MaxSubdiv* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Livello massimo di suddivisione di una faccia che verrà utilizzata nel campionamento adattivo.
+Livello massimo di suddivisione di un viso che verrà usato nel campionamento adattivo.
 
 </dd> <dt>
 
-*pDataOut* \[ in uscita\]
+*pDataOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntatore a un oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di output. Questo buffer deve avere il numero appropriato di canali di colore allocati per la simulazione.
+Puntatore a un [**oggetto ID3DXPRTBuffer di**](id3dxprtbuffer.md) output. Questo buffer deve avere il numero corretto di canali di colore allocati per la simulazione.
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ Puntatore a un oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di output. Questo
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -101,8 +101,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

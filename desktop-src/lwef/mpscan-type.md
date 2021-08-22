@@ -1,10 +1,10 @@
 ---
-title: Enumerazione MPSCAN_TYPE (MpClient. h)
+title: MPSCAN_TYPE enumerazione (MpClient.h)
 description: Tipo di analisi eseguita.
 ms.assetid: 980A80FD-FF02-4338-B7FB-DAA141F65E89
 keywords:
-- Funzionalità dell'ambiente Windows legacy dell'enumerazione MPSCAN_TYPE
-- Caratteristiche dell'ambiente Windows legacy del puntatore di enumerazione PMPSCAN_TYPE
+- MPSCAN_TYPE funzionalità dell'ambiente Windows legacy
+- PMPSCAN_TYPE puntatore di enumerazione Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9eb89137dc9cfe5b8a4ff1f44a7a101239aa3a22
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 56906bfc9ad57f93bac4c8b8c27360b5ade9592ac33efe39574fe8890299e13a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747132"
 ---
-# <a name="mpscan_type-enumeration"></a>\_Enumerazione del tipo MPSCAN
+# <a name="mpscan_type-enumeration"></a>Enumerazione MPSCAN \_ TYPE
 
 Tipo di analisi eseguita.
 
@@ -45,35 +45,35 @@ typedef enum tagMPSCAN_TYPE {
 
 <dl> <dt>
 
-<span id="MPSCAN_TYPE_UNKNOWN"></span><span id="mpscan_type_unknown"></span>**\_tipo MPSCAN \_ sconosciuto**
+<span id="MPSCAN_TYPE_UNKNOWN"></span><span id="mpscan_type_unknown"></span>**TIPO MPSCAN \_ \_ SCONOSCIUTO**
 </dt> <dd>
 
 Solo per uso interno.
 
 </dd> <dt>
 
-<span id="MPSCAN_TYPE_QUICK"></span><span id="mpscan_type_quick"></span>**MPSCAN \_ tipo \_ rapido**
+<span id="MPSCAN_TYPE_QUICK"></span><span id="mpscan_type_quick"></span>**MPSCAN \_ TYPE \_ QUICK**
 </dt> <dd>
 
-Esegue l'analisi dei processi in esecuzione e di diversi punti di l'oggetto in cui il malware si nasconde in genere.
+Analizza i processi in esecuzione e vari punti asep nel sistema in cui il malware in genere si nasconde.
 
 </dd> <dt>
 
-<span id="MPSCAN_TYPE_FULL"></span><span id="mpscan_type_full"></span>**tipo di MPSCAN \_ \_ completo**
+<span id="MPSCAN_TYPE_FULL"></span><span id="mpscan_type_full"></span>**TIPO MPSCAN \_ \_ COMPLETO**
 </dt> <dd>
 
 Esegue un'analisi veloce seguita dall'analisi di tutte le unità fisse del sistema.
 
 </dd> <dt>
 
-<span id="MPSCAN_TYPE_RESOURCE"></span><span id="mpscan_type_resource"></span>**\_risorsa di tipo MPSCAN \_**
+<span id="MPSCAN_TYPE_RESOURCE"></span><span id="mpscan_type_resource"></span>**RISORSA DI TIPO MPSCAN \_ \_**
 </dt> <dd>
 
 Analizza risorse specifiche, ad esempio file o cartelle.
 
 </dd> <dt>
 
-<span id="MPSCAN_TYPE_MAXVALUE"></span><span id="mpscan_type_maxvalue"></span>**MPSCAN di \_ tipo \_ MaxValue**
+<span id="MPSCAN_TYPE_MAXVALUE"></span><span id="mpscan_type_maxvalue"></span>**TIPO MPSCAN \_ \_ MAXVALUE**
 </dt> <dd>
 
 Valore massimo possibile.
@@ -86,9 +86,9 @@ Valore massimo possibile.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

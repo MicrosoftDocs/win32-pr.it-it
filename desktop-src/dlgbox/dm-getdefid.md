@@ -1,9 +1,9 @@
 ---
-title: Messaggio DM_GETDEFID (winuser. h)
-description: Recupera l'identificatore del controllo pulsante di comando predefinito per una finestra di dialogo.
+title: DM_GETDEFID messaggio (Winuser.h)
+description: Recupera l'identificatore del controllo pulsante di push predefinito per una finestra di dialogo.
 ms.assetid: 9f00a494-f5a2-4c4e-a9fc-2220d9326eb9
 keywords:
-- Finestre di dialogo DM_GETDEFID messaggio
+- DM_GETDEFID finestre di dialogo del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fdcdfc2cd278ab452d48ecb1c254bdb00ffbb7c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6898ed6484a66e1c0d5fa498b0352498c0a57fbe91a74f738e2c6438511aef21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118785823"
 ---
-# <a name="dm_getdefid-message"></a>\_Messaggio DM GETDEFID
+# <a name="dm_getdefid-message"></a>Messaggio \_ DM GETDEFID
 
-Recupera l'identificatore del controllo pulsante di comando predefinito per una finestra di dialogo.
+Recupera l'identificatore del controllo pulsante di push predefinito per una finestra di dialogo.
 
 
 ```C++
@@ -40,24 +40,24 @@ Recupera l'identificatore del controllo pulsante di comando predefinito per una 
 *wParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato e deve essere zero.
+Questo parametro non viene usato e deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato e deve essere zero.
+Questo parametro non viene usato e deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se esiste un pulsante di push predefinito, la parola più significativa del valore restituito contiene il valore **DC \_ HASDEFID** e la parola di basso livello contiene l'identificatore del controllo. In caso contrario, il valore restituito è zero.
+Se esiste un pulsante di push predefinito, la parola di ordine superiore del valore restituito contiene il valore **DC \_ HASDEFID** e la parola di ordine basso contiene l'identificatore di controllo. In caso contrario, il valore restituito è zero.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione [**DefDlgProc**](/windows/desktop/api/Winuser/nf-winuser-defdlgprocw) elabora questo messaggio.
+La [**funzione DefDlgProc**](/windows/desktop/api/Winuser/nf-winuser-defdlgprocw) elabora questo messaggio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,7 +67,7 @@ La funzione [**DefDlgProc**](/windows/desktop/api/Winuser/nf-winuser-defdlgprocw
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -81,7 +81,7 @@ La funzione [**DefDlgProc**](/windows/desktop/api/Winuser/nf-winuser-defdlgprocw
 [**DefDlgProc**](/windows/desktop/api/Winuser/nf-winuser-defdlgprocw)
 </dt> <dt>
 
-[**\_SETDEFID DM**](dm-setdefid.md)
+[**DM \_ SETDEFID**](dm-setdefid.md)
 </dt> <dt>
 
 **Informazioni concettuali**

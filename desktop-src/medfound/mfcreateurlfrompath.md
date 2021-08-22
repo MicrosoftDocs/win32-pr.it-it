@@ -1,7 +1,7 @@
 ---
-description: Converte un percorso Microsoft MS-DOS in un URL canonico.
+description: Converte un percorso Microsoft MS-DOS in un URL in formato canonico.
 ms.assetid: 1186b970-9ae1-4020-b999-55157cff1741
-title: MFCreateURLFromPath (funzione)
+title: Funzione MFCreateURLFromPath
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - mfplat.dll
-ms.openlocfilehash: e43c2d7df299792d8b5be99226e9cfdbd11976a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f9da3dd84d54bb514b7dda519db3de376b2ebb2bd2088d8fc8e18b4f2b848231
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118739249"
 ---
-# <a name="mfcreateurlfrompath-function"></a>MFCreateURLFromPath (funzione)
+# <a name="mfcreateurlfrompath-function"></a>Funzione MFCreateURLFromPath
 
-\[Questa API non è supportata e può essere modificata o non disponibile in futuro. Al contrario, le applicazioni devono chiamare [UrlCreateFromPath](/windows/desktop/api/shlwapi/nf-shlwapi-urlcreatefrompatha).\]
+\[Questa API non è supportata e potrebbe essere modificata o non disponibile in futuro. Le applicazioni devono invece chiamare [UrlCreateFromPath.](/windows/desktop/api/shlwapi/nf-shlwapi-urlcreatefrompatha)\]
 
-Converte un percorso Microsoft MS-DOS in un URL canonico.
+Converte un percorso Microsoft MS-DOS in un URL in formato canonico.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,27 +45,27 @@ HRESULT MFCreateURLFromPath(
 *pwszFilePath* \[ in, facoltativo\]
 </dt> <dd>
 
-Stringa con terminazione null che contiene il percorso. La lunghezza massima della stringa è la **\_ \_ \_ lunghezza URL Internet Max**.
+Stringa con terminazione Null che contiene il percorso. La lunghezza massima della stringa è **INTERNET \_ MAX URL \_ \_ LENGTH**.
 
 </dd> <dt>
 
-*ppwszFileURL* \[ out\]
+*ppwszFileURL* \[ Cambio\]
 </dt> <dd>
 
-Riceve una stringa con terminazione null che contiene l'URL. Il chiamante deve liberare la stringa chiamando [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree).
+Riceve una stringa con terminazione Null che contiene l'URL. Il chiamante deve liberare la stringa chiamando [**CoTaskMemFree.**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+La funzione restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                             | Descrizione                                                                                                                                                               |
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl> | La stringa specificata nel parametro *pwszFilePath* è già in formato URL. In questo caso, *pszFilePath* viene semplicemente copiato in *ppszFileURL* senza modifiche.<br/> |
-| <dl> <dt>**\_OK**</dt> </dl>    | Funzione completata. <br/>                                                                                                                                       |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | La stringa specificata nel *parametro pwszFilePath* è già in formato URL. In questo caso, *pszFilePath* viene semplicemente copiato in *ppszFileURL* senza modifiche.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Funzione completata. <br/>                                                                                                                                       |
 
 
 
@@ -73,7 +73,7 @@ La funzione restituisce un valore **HRESULT**. I valori possibili includono, ma 
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per eseguire il collegamento dinamico a Mfplat.dll.
+A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per il collegamento dinamico Mfplat.dll.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,8 +81,8 @@ A questa funzione non è associata alcuna libreria di importazione. Per chiamare
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
 | DLL<br/>                      | <dl> <dt>Mfplat.dll</dt> </dl> |
 
 
@@ -91,7 +91,7 @@ A questa funzione non è associata alcuna libreria di importazione. Per chiamare
 
 <dl> <dt>
 
-[Funzioni Media Foundation](media-foundation-functions.md)
+[Media Foundation funzioni](media-foundation-functions.md)
 </dt> </dl>
 
  

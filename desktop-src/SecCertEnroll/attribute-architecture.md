@@ -1,26 +1,26 @@
 ---
-description: Utilizzato per aggiungere attributi a una richiesta di certificato.
+description: Usato per aggiungere attributi a una richiesta di certificato.
 ms.assetid: 7007c751-f1a4-4ddc-a66e-d3edefc6ed97
 title: Architettura degli attributi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64d83171985c062fd2d8d4ae968c2ef4d36a29ce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c3d09a2a351635547c21357477290cb3335cb8c1da042d680762140b48b03f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344951"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118903238"
 ---
 # <a name="attribute-architecture"></a>Architettura degli attributi
 
-Per aggiungere attributi a una richiesta di certificato, vengono utilizzate le interfacce seguenti:
+Le interfacce seguenti vengono usate per aggiungere attributi a una richiesta di certificato:
 
 -   [**ICryptAttribute**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattribute)
 -   [**ICryptAttributes**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattributes)
 -   [**IX509Attribute**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attribute)
 -   [**IX509Attributes**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributes)
 
-L'architettura segue quello definito nel modulo ASN. 1 della \# sintassi della richiesta di certificazione PKCS 10.
+L'architettura segue quella definita nel modulo ASN.1 della sintassi della richiesta di certificazione PKCS \# 10.
 
 ``` syntax
 CertificationRequestInfo ::= SEQUENCE 
@@ -40,11 +40,11 @@ Attribute ::= SEQUENCE
 }
 ```
 
-La raccolta [**ICryptAttributes**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattributes) corrisponde al campo **Attributes** e ogni oggetto [**ICryptAttribute**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattribute) nella raccolta corrisponde a una struttura dell' **attributo** ASN. 1.
+La [**raccolta ICryptAttributes**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattributes) corrisponde al campo **attributes** e ogni [**oggetto ICryptAttribute**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattribute) nella raccolta corrisponde a una struttura **Attribute** ASN.1.
 
-Ogni **attributo** è costituito da un identificatore di oggetto (OID) e da zero o più valori associati all'OID. Una singola coppia OID-valore è rappresentata da un'interfaccia [**IX509Attribute**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attribute) . È possibile usare una raccolta [**IX509Attributes**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributes) per inizializzare un oggetto [**ICryptAttribute**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattribute) , ma ogni attributo della raccolta deve essere associato allo stesso OID. In genere, un attributo ha un solo valore.
+Ogni **attributo** è costituito da un identificatore di oggetto (OID) e da zero o più valori associati all'OID. Una singola coppia OID-valore è rappresentata da [**un'interfaccia IX509Attribute.**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attribute) È possibile usare una raccolta [**IX509Attributes**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributes) per inizializzare un [**oggetto ICryptAttribute,**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattribute) ma ogni attributo nella raccolta deve essere associato allo stesso OID. In genere, un attributo ha un solo valore.
 
-È possibile usare una delle interfacce seguenti, che derivano da [**IX509Attribute**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attribute), per creare una singola coppia di attributi OID/valore:
+È possibile usare una delle interfacce seguenti, che derivano da [**IX509Attribute,**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attribute)per creare una singola coppia di attributi OID/valore:
 
 -   [**IX509AttributeClientId**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeclientid)
 -   [**IX509AttributeExtensions**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeextensions)
@@ -54,17 +54,17 @@ Ogni **attributo** è costituito da un identificatore di oggetto (OID) e da zero
 -   [**IX509AttributeOSVersion**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeosversion)
 -   [**IX509AttributeRenewalCertificate**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributerenewalcertificate)
 
-Ad esempio, la procedura seguente illustra come creare un attributo **ClientID** .
+Ad esempio, la procedura seguente illustra come creare un **attributo ClientId.**
 
-**Per creare un attributo **ClientID****
+**Per creare un **attributo ClientId****
 
-1.  Recuperare un oggetto [**ICryptAttributes**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattributes) da un oggetto [**IX509CertificateRequestPkcs10**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestpkcs10) o [**IX509CertificateRequestCmc**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestcmc) .
-2.  Creare e inizializzare un oggetto [**IX509AttributeClientId**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeclientid) .
-3.  Creare una raccolta [**IX509Attributes**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributes) e aggiungere l'oggetto [**IX509AttributeClientId**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeclientid) .
-4.  Usare la raccolta [**IX509Attributes**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributes) per inizializzare un oggetto [**ICryptAttribute**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattribute) .
-5.  Aggiungere l'oggetto [**ICryptAttribute**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattribute) alla raccolta recuperata nel passaggio 1.
+1.  Recuperare un [**oggetto ICryptAttributes**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattributes) da [**un oggetto IX509CertificateRequestPkcs10**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestpkcs10) o [**IX509CertificateRequestCmc.**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestcmc)
+2.  Creare e inizializzare un [**oggetto IX509AttributeClientId.**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeclientid)
+3.  Creare una [**raccolta IX509Attributes**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributes) e aggiungere [**l'oggetto IX509AttributeClientId.**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeclientid)
+4.  Usare la [**raccolta IX509Attributes**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributes) per inizializzare un [**oggetto ICryptAttribute.**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattribute)
+5.  Aggiungere [**l'oggetto ICryptAttribute**](/windows/desktop/api/CertEnroll/nn-certenroll-icryptattribute) alla raccolta recuperata nel passaggio 1.
 
-Nell'esempio seguente viene illustrato l'output ASN. 1 dell'attributo **ClientID** . L'attributo contiene il nome DNS del computer in cui è stata generata la richiesta (test3d.jdomcsc.nttest.microsoft.com), il nome SAM dell'utente (amministratore JDOMCSC \\ ) e il nome dell'applicazione che ha generato la richiesta (certreq).
+L'esempio seguente illustra l'output ASN.1 **dell'attributo ClientId.** L'attributo contiene il nome DNS del computer in cui è stata generata la richiesta (test3d.jdomcsc.nttest.microsoft.com), il nome SAM dell'utente (amministratore JDOMCSC) e il nome dell'applicazione che ha generato la richiesta \\ (certreq).
 
 ``` syntax
 0136: 30 57; SEQUENCE (57 Bytes)

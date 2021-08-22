@@ -1,79 +1,79 @@
 ---
-description: Un provider dello spazio dei nomi implementa un mapping di interfaccia tra lo spazio dei nomi di Winsock e l'interfaccia a livello di codice nativo di un servizio dei nomi esistente, ad esempio DNS, X. 500 o servizi directory NetWare (NDS).
+description: Un provider dello spazio dei nomi implementa un mapping di interfaccia tra lo spi dello spazio dei nomi Winsock e l'interfaccia programmatica nativa di un servizio nomi esistente, ad esempio DNS, X.500 o NetWare Directory Services (NDS).
 ms.assetid: 9b35aa58-9011-4e0d-8c93-02714952b4a5
 title: Provider di servizi dello spazio dei nomi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e975c7ad0e5df29910624bb8f0b9d94fd24d9b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 35e6ecc9ad0dcb9667bdd3d08049b9d41c3211de422cae0530506f6103494527
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118822639"
 ---
 # <a name="namespace-service-providers"></a>Provider di servizi dello spazio dei nomi
 
-Un provider dello spazio dei nomi implementa un mapping di interfaccia tra lo spazio dei nomi di Winsock e l'interfaccia a livello di codice nativo di un servizio dei nomi esistente, ad esempio DNS, X. 500 o servizi directory NetWare (NDS). Mentre un provider dello spazio dei nomi supporta esattamente uno spazio dei nomi, è possibile che vengano installati più provider per uno spazio dei nomi specifico. È anche possibile che una singola DLL crei un'istanza di più provider dello spazio dei nomi. Quando vengono installati i provider dello spazio dei nomi, viene mantenuto un catalogo di strutture di [**\_ informazioni WSANAMESPACE**](/windows/desktop/api/Winsock2/ns-winsock2-wsanamespace_infow) . Un'applicazione può utilizzare [**WSAEnumNameSpaceProviders**](/windows/desktop/api/Winsock2/nf-winsock2-wsaenumnamespaceprovidersa) per individuare gli spazi dei nomi supportati in un computer.
+Un provider dello spazio dei nomi implementa un mapping di interfaccia tra lo spi dello spazio dei nomi Winsock e l'interfaccia programmatica nativa di un servizio nomi esistente, ad esempio DNS, X.500 o NetWare Directory Services (NDS). Sebbene un provider dello spazio dei nomi supporti esattamente uno spazio dei nomi, è possibile che siano installati più provider per un determinato spazio dei nomi. È anche possibile che una singola DLL crei un'istanza di più provider di spazi dei nomi. Quando vengono installati i provider di spazi dei nomi, viene mantenuto un catalogo [**di strutture WSANAMESPACE \_ INFO.**](/windows/desktop/api/Winsock2/ns-winsock2-wsanamespace_infow) Un'applicazione può [**usare WSAEnumNameSpaceProviders**](/windows/desktop/api/Winsock2/nf-winsock2-wsaenumnamespaceprovidersa) per individuare gli spazi dei nomi supportati in un computer.
 
-In Windows Vista e versioni successive, vengono fornite una struttura [**WSANAMESPACE \_ INFOEX**](/windows/desktop/api/Winsock2/ns-winsock2-wsanamespace_infoexw) avanzata e una funzione [**WSAEnumNameSpaceProvidersEx**](/windows/desktop/api/Winsock2/nf-winsock2-wsaenumnamespaceprovidersexa) .
+In Windows Vista e versioni successive vengono fornite una struttura [**\_ INFOEX WSANAMESPACE**](/windows/desktop/api/Winsock2/ns-winsock2-wsanamespace_infoexw) avanzata e la [**funzione WSAEnumNameSpaceProvidersEx.**](/windows/desktop/api/Winsock2/nf-winsock2-wsaenumnamespaceprovidersexa)
 
-Sulle piattaforme a 64 bit sono disponibili funzioni [**WSCEnumNameSpaceProviders32**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscenumnamespaceproviders32) e [**WSCEnumNameSpaceProvidersEx32**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscenumnamespaceprovidersex32) simili per enumerare il catalogo a 32 bit.
+Nelle piattaforme a 64 bit vengono fornite funzioni [**WSCEnumNameSpaceProviders32**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscenumnamespaceproviders32) e [**WSCEnumNameSpaceProvidersEx32**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscenumnamespaceprovidersex32) simili per enumerare il catalogo a 32 bit.
 
-Per informazioni dettagliate, vedere [requisiti del provider di servizi dello spazio dei nomi Winsock](winsock-namespace-service-provider-requirements.md) .
+Per informazioni dettagliate, vedere Requisiti del provider di servizi dello spazio dei nomi [Winsock.](winsock-namespace-service-provider-requirements.md)
 
 ## <a name="legacy-getxbyy-service-providers"></a>Provider di servizi GetXbyY legacy
 
-Windows Sockets 2 supporta completamente le funzionalità di risoluzione dei nomi specifiche di TCP/IP disponibili in Windows Sockets versione 1,1. Questa operazione viene eseguita includendo il set di funzioni **GetXbyY** in spi. Tuttavia, il trattamento di questo set di funzioni è leggermente diverso dal resto delle funzioni SPI. Le funzioni **GetXbyY** visualizzate in SPI sono precedute da GETXBYYSP \_ e sono riepilogate nella tabella seguente.
+Windows Sockets 2 supporta completamente le funzionalità di risoluzione dei nomi specifiche di TCP/IP disponibili in Windows Sockets versione 1.1. A tale scopo, include il set **di funzioni GetXbyY** nell'spi. Tuttavia, il trattamento di questo set di funzioni è leggermente diverso dalle altre funzioni SPI. Le **funzioni GetXbyY** visualizzate nell'spi sono precedute da GETXBYYSP e sono riepilogate \_ nella tabella seguente.
 
-Funzioni di stile Berkeley
+Funzioni in stile Berkeley
 
 
 
 | Nome della funzione SPI           | Descrizione                                                                              |
 |-----------------------------|------------------------------------------------------------------------------------------|
-| \_GETHOSTBYADDR GETXBYYSP    | Fornisce una struttura [**hostent**](/windows/desktop/api/winsock/ns-winsock-hostent) per l'indirizzo host specificato.        |
-| \_Gethostbyname GETXBYYSP    | Fornisce una struttura [**hostent**](/windows/desktop/api/winsock/ns-winsock-hostent) per il nome host specificato.           |
-| \_GETPROTOBYNAME GETXBYYSP   | Fornisce una struttura [**protoent**](/windows/desktop/api/winsock/ns-winsock-protoent) per il nome di protocollo specificato.     |
-| \_GETPROTOBYNUMBER GETXBYYSP | Fornisce una struttura [**protoent**](/windows/desktop/api/winsock/ns-winsock-protoent) per il numero di protocollo specificato.   |
-| \_GETSERVBYNAME GETXBYYSP    | Fornisce una struttura [**Servent**](/windows/desktop/api/winsock/ns-winsock-servent) per il servizio specificato Nam. e        |
-| \_GETSERVBYPORT GETXBYYSP    | Fornisce una struttura [**Servent**](/windows/desktop/api/winsock/ns-winsock-servent) per il servizio sulla porta specificata. |
-| GETXBYYSP \_ GetHostName      | Restituisce il nome host standard per il computer locale.                                   |
+| GETXBYYSP \_ gethostbyaddr    | Fornisce una struttura [**host per**](/windows/desktop/api/winsock/ns-winsock-hostent) l'indirizzo host specificato.        |
+| GETXBYYSP \_ gethostbyname    | Fornisce una struttura [**hostent**](/windows/desktop/api/winsock/ns-winsock-hostent) per il nome host specificato.           |
+| GETXBYYSP \_ getprotobyname   | Fornisce una [**struttura protoent**](/windows/desktop/api/winsock/ns-winsock-protoent) per il nome del protocollo specificato.     |
+| GETXBYYSP \_ getprotobynumber | Fornisce una [**struttura protoent**](/windows/desktop/api/winsock/ns-winsock-protoent) per il numero di protocollo specificato.   |
+| GETXBYYSP \_ getservbyname    | Fornisce una [**struttura di servizio**](/windows/desktop/api/winsock/ns-winsock-servent) per il servizio nam.e specificato        |
+| GETXBYYSP \_ getservbyport    | Fornisce una [**struttura di servizio**](/windows/desktop/api/winsock/ns-winsock-servent) per il servizio alla porta specificata. |
+| GETXBYYSP \_ gethostname      | Restituisce il nome host standard per il computer locale.                                   |
 
 
 
  
 
-Funzioni di stile asincrono
+Funzioni di stile asincrone
 
 
 
 | Nome della funzione SPI                   | Descrizione                                                                              |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| \_WSAASYNCGETHOSTBYADDR GETXBYYSP    | Fornisce una struttura [**hostent**](/windows/desktop/api/winsock/ns-winsock-hostent) per l'indirizzo host specificato.        |
-| \_WSAASYNCGETHOSTBYNAME GETXBYYSP    | Fornisce una struttura [**hostent**](/windows/desktop/api/winsock/ns-winsock-hostent) per il nome host specificato.           |
-| \_WSAASYNCGETPROTOBYNAME GETXBYYSP   | Fornisce una struttura [**protoent**](/windows/desktop/api/winsock/ns-winsock-protoent) per il nome di protocollo specificato.     |
-| \_WSAASYNCGETPROTOBYNUMBER GETXBYYSP | Fornisce una struttura [**protoent**](/windows/desktop/api/winsock/ns-winsock-protoent) per il numero di protocollo specificato.   |
-| \_WSAASYNCGETSERVBYNAME GETXBYYSP    | Fornisce una struttura [**Servent**](/windows/desktop/api/winsock/ns-winsock-servent) per il nome del servizio specificato.        |
-| \_WSAASYNCGETSERVBYPORT GETXBYYSP    | Fornisce una struttura [**Servent**](/windows/desktop/api/winsock/ns-winsock-servent) per il servizio sulla porta specificata. |
-| \_WSACANCELASYNCREQUEST GETXBYYSP    | Annulla un'operazione **GetXbyY** asincrona.                                           |
+| GETXBYYSP \_ WSAAsyncGetHostByAddr    | Fornisce una struttura [**host per**](/windows/desktop/api/winsock/ns-winsock-hostent) l'indirizzo host specificato.        |
+| GETXBYYSP \_ WSAAsyncGetHostByName    | Fornisce una struttura [**hostent**](/windows/desktop/api/winsock/ns-winsock-hostent) per il nome host specificato.           |
+| GETXBYYSP \_ WSAAsyncGetProtoByName   | Fornisce una [**struttura protoent**](/windows/desktop/api/winsock/ns-winsock-protoent) per il nome del protocollo specificato.     |
+| GETXBYYSP \_ WSAAsyncGetProtoByNumber | Fornisce una [**struttura protoent**](/windows/desktop/api/winsock/ns-winsock-protoent) per il numero di protocollo specificato.   |
+| GETXBYYSP \_ WSAAsyncGetServByName    | Fornisce una struttura [**di servizio**](/windows/desktop/api/winsock/ns-winsock-servent) per il nome del servizio specificato.        |
+| GETXBYYSP \_ WSAAsyncGetServByPort    | Fornisce una [**struttura di servizio**](/windows/desktop/api/winsock/ns-winsock-servent) per il servizio alla porta specificata. |
+| GETXBYYSP \_ WSACancelAsyncRequest    | Annulla **un'operazione GetXbyY** asincrona.                                           |
 
 
 
  
 
-La sintassi e la semantica di queste funzioni **GetXbyY** in SPI sono esattamente le stesse di quelle documentate nella specifica API e, pertanto, non vengono ripetute qui.
+La sintassi e la semantica di queste funzioni **GetXbyY** nello spi sono esattamente uguali a quelle documentate nella specifica API e non vengono quindi ripetute qui.
 
-La DLL di Windows Sockets 2 consente esattamente a un provider di servizi di offrire questi servizi. Non è pertanto necessario includere i puntatori a queste funzioni nella tabella delle procedure ricevuta dai provider di servizi all'avvio. Negli ambienti Windows il percorso della DLL che implementa queste funzioni viene recuperato dal valore trovato nel seguente percorso del registro di sistema. Questa voce del registro di sistema non esiste per impostazione predefinita:
+La DLL Windows Sockets 2 consente esattamente a un provider di servizi di offrire questi servizi. Pertanto, non è necessario includere puntatori a queste funzioni nella tabella della procedura ricevuta dai provider di servizi all'avvio. Negli Windows il percorso della DLL che implementa queste funzioni viene recuperato dal valore presente nel percorso del Registro di sistema seguente. Questa voce del Registro di sistema non esiste per impostazione predefinita:
 
-**HKEY \_ \_Computer locale** \\ **sistema** \\ **CurrentControlSet** \\ **Servizi** \\ **WinSock2** \\ **parametri** \\ **GetXByYLibraryPath**
+**HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Services** \\ **WinSock2** \\ **Parameters** \\ **GetXByYLibraryPath**
 
 ## <a name="built-in-default-getxbyy-service-provider"></a>Built-In provider di servizi GetXbyY predefinito
 
-Un provider di servizi **GetXbyY** predefinito è integrato nei componenti della fase di esecuzione standard di Windows Sockets 2. Questo provider predefinito implementa tutte le funzioni descritte in precedenza, pertanto non è necessario che queste funzioni vengano implementate da alcun provider dello spazio dei nomi. Tuttavia, un provider dello spazio dei nomi è libero di fornire una o tutte le funzioni (e di conseguenza eseguire l'override delle impostazioni predefinite) semplicemente archiviando la stringa che rappresenta il percorso della DLL che implementa queste funzioni nella chiave del registro di sistema indicata. Le funzioni **GetXbyY** non esportate dalla dll del provider denominato verranno fornite tramite le impostazioni predefinite predefinite. Si noti, tuttavia, che se un provider sceglie di fornire una qualsiasi versione asincrona delle funzioni **GetXbyY** , deve fornire tutte le funzioni asincrone in modo che l'operazione di annullamento funzioni correttamente.
+Un provider **di servizi GetXbyY** predefinito è integrato nei componenti di Windows Sockets 2 standard. Questo provider predefinito implementa tutte le funzioni precedenti, pertanto non è necessario che queste funzioni siano implementate da qualsiasi provider dello spazio dei nomi. Tuttavia, un provider dello spazio dei nomi è libero di fornire una o tutte queste funzioni (e quindi eseguire l'override delle impostazioni predefinite) semplicemente archiviando la stringa che rappresenta il percorso della DLL che implementa queste funzioni nella chiave del Registro di sistema indicata. Qualsiasi funzione **GetXbyY** non esportata dalla DLL del provider denominata verrà fornita tramite le impostazioni predefinite predefinite. Si noti, tuttavia, che se un provider sceglie di fornire una delle versioni asincrone delle funzioni **GetXbyY,** deve fornire tutte le funzioni asincrone in modo che l'operazione di annullamento funzioni in modo appropriato.
 
-L'implementazione corrente del provider di servizi **GetXbyY** predefinito risiede all'interno del Wsock32.dll. A seconda del modo in cui sono state stabilite le impostazioni TCP/IP tramite il pannello di controllo, la risoluzione dei nomi viene eseguita utilizzando i file host DNS o locali. Quando si usa DNS, il provider di servizi **GetXbyY** predefinito usa le chiamate API standard di Windows sockets 1,1 per comunicare con il server DNS. Queste transazioni vengono eseguite utilizzando qualsiasi stack TCP/IP configurato come lo stack TCP/IP predefinito. Tuttavia, due casi particolari meritano una menzione speciale.
+L'implementazione corrente del provider di **servizi GetXbyY** predefinito si trova all'interno del Wsock32.dll. A seconda di come sono state stabilite le impostazioni TCP/IP tramite Pannello di controllo, la risoluzione dei nomi verrà eseguita usando i file DNS o host locali. Quando si usa DNS, il provider di servizi **GetXbyY** predefinito usa chiamate API Windows Sockets 1.1 standard per comunicare con il server DNS. Queste transazioni verranno eseguite usando qualsiasi stack TCP/IP configurato come stack TCP/IP predefinito. Due casi speciali, tuttavia, meritano una menzione speciale.
 
-L'implementazione predefinita di GETXBYYSP \_ GetHostName ottiene il nome host locale dal registro di sistema. Corrisponderà al nome assegnato a "Computer locale". L'implementazione predefinita di GETXBYYSP \_ gethostbyname e GETXBYYSP \_ WSAAsyncGetHostByName confronta sempre il nome host specificato con il nome host locale. Se corrispondono, l'implementazione predefinita usa un'interfaccia privata per eseguire il probe dello stack TCP/IP Microsoft per individuare l'indirizzo IP locale. Pertanto, per essere completamente indipendenti dallo stack Microsoft TCP/IP, un provider dello spazio dei nomi deve implementare GETXBYYSP \_ gethostbyname e GETXBYYSP \_ WSAAsyncGetHostByName.
+L'implementazione predefinita di GETXBYYSP \_ gethostname ottiene il nome host locale dal Registro di sistema. Corrisponderà al nome assegnato a "Computer locale". L'implementazione predefinita di GETXBYYSP \_ gethostbyname e GETXBYYSP WSAAsyncGetHostByName confronta sempre il nome host fornito con il nome \_ host locale. Se corrispondono, l'implementazione predefinita usa un'interfaccia privata per eseguire il probe dello stack TCP/IP Microsoft per individuarne l'indirizzo IP locale. Pertanto, per essere completamente indipendente dallo stack TCP/IP Microsoft, un provider dello spazio dei nomi deve implementare sia GETXBYYSP \_ gethostbyname che GETXBYYSP \_ WSAAsyncGetHostByName.
 
  
 

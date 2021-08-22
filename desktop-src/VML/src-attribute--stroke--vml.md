@@ -1,50 +1,50 @@
 ---
-title: Attributo src (Stroke) (la)
-description: Attributo src (Stroke) (la)
+title: Attributo Src (Stroke)(VML)
+description: Attributo Src (Stroke)(VML)
 ms.assetid: dac6b5b7-2038-4534-97e9-a1340102777e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b5833b24abf0f16c6e17fa3319931565ee6c232
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 57bc71d7a36ee944a2352cde6bfa1ef33f0b5c480d78c7aada751ea67db9ca7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103727543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118596627"
 ---
-# <a name="src-attribute-strokevml"></a>Attributo src (Stroke) (la)
+# <a name="src-attribute-strokevml"></a>Attributo Src (Stroke)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce l'immagine di origine da caricare per un riempimento del tratto. Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
-[Stroke](msdn-online-vml-stroke-element.md)
+[infarto](msdn-online-vml-stroke-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* src = " *Expression* " >
+<v: *element* src=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . src = "*Expression*"
+*element* .src="*expression*"
 
-*espressione* = *elemento*. src
+*expression* = *elemento*.src
 
 **Osservazioni:**
 
-URL di un'immagine da caricare per le compilazioni di immagini e modelli. Questo attributo deve essere sempre presente e puntare a dati di immagine validi affinché venga visualizzata un'immagine. Se questo attributo viene visualizzato da solo, ovvero senza **href** o **title**, l'immagine viene collegata.
+URL di un'immagine da caricare per i riempimenti immagine e motivo. Questo attributo deve essere sempre presente e puntare a dati immagine validi per visualizzare un'immagine. Se questo attributo viene visualizzato da solo, ad esempio senza **HRef** o **Title,** l'immagine è collegata.
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
-Il tratto viene creato con l'immagine specificata dal file di cylinder.gif.
+Il tratto viene creato con l'immagine specificata dal file cylinder.gif.
 
 
 ```HTML
@@ -60,6 +60,6 @@ Il tratto viene creato con l'immagine specificata dal file di cylinder.gif.
 
 
 
- 
+ 
 
- 
+ 

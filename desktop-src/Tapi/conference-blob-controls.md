@@ -1,29 +1,29 @@
 ---
-description: Il diagramma seguente illustra gli oggetti principali inclusi nei controlli BLOB della conferenza TAPI 3. Le interfacce visualizzate sono collegate con collegamento ipertestuale nelle pagine di riferimento pertinenti.
+description: Il diagramma seguente illustra gli oggetti principali coinvolti nei controlli BLOB per conferenze TAPI 3. Le interfacce visualizzate sono con collegamenti ipertestuali nelle pagine di riferimento pertinenti.
 ms.assetid: 535bbb33-01cb-4484-b216-4808e47e4db5
-title: Controlli BLOB conferenza
+title: Conference Blob Controls
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bacf13567abd46f56c399cefa732be97b081cfd3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1361951fcb830676e36acb4ec397832629dc5745983c654317a457a0d66ac336
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118867994"
 ---
-# <a name="conference-blob-controls"></a>Controlli BLOB conferenza
+# <a name="conference-blob-controls"></a>Conference Blob Controls
 
-\[ I controlli e le interfacce per la comunicazione di telefonia IP Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[Le interfacce e i controlli di conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
 
-Il diagramma seguente illustra gli oggetti principali inclusi nei controlli BLOB della conferenza TAPI 3. Le interfacce visualizzate sono collegate con collegamento ipertestuale nelle pagine di riferimento pertinenti.
+Il diagramma seguente illustra gli oggetti principali coinvolti nei controlli BLOB per conferenze TAPI 3. Le interfacce visualizzate sono con collegamenti ipertestuali nelle pagine di riferimento pertinenti.
 
-![interfacce e controlli BLOB della conferenza](images/rendblob.png)
+![interfacce e controlli BLOB per conferenze](images/rendblob.png)
 
-Il BLOB della conferenza contiene informazioni specifiche del provider su un oggetto Conference. Un puntatore al BLOB dell'interfaccia [**ITConferenceBlob**](itconferenceblob.md) viene ottenuto eseguendo un QueryInterface in [**ITDirectoryObjectConference**](/windows/desktop/api/Rend/nn-rend-itdirectoryobjectconference). L'interfaccia **ITConferenceBlob** fornisce metodi per la manipolazione di base di un BLOB di conferenze generiche. Un'applicazione che usa BLOB di conferenze non SDP deve implementare i propri metodi per la manipolazione dei dettagli.
+Il BLOB della conferenza contiene informazioni specifiche del provider su un oggetto conferenza. Un puntatore al BLOB [**dell'interfaccia ITConferenceBlob**](itconferenceblob.md) viene ottenuto eseguendo queryInterface su [**ITDirectoryObjectConference.**](/windows/desktop/api/Rend/nn-rend-itdirectoryobjectconference) **L'interfaccia ITConferenceBlob fornisce** metodi per la manipolazione di base di un BLOB di conferenze generico. Un'applicazione che usa BLOB di conferenze non SDP deve implementare i propri metodi per la manipolazione dei dettagli.
 
-Rendezvous fornisce l'interfaccia [**ITSdp**](itsdp.md) per la manipolazione dei BLOB delle conferenze SDP. SDP è un protocollo per la descrizione delle sessioni multimediali e delle relative informazioni di pianificazione. Per ulteriori informazioni sul protocollo SDP, individuare Internet Engineering Task Force (IETF) RFC 2327 denominato "SDP: Session Description Protocol". Se l'interfaccia **ITSDP** esiste per un BLOB di conferenza specifico, è possibile ottenere un puntatore a tale BLOB eseguendo un **QueryInterface** in [**ITConferenceBlob**](itconferenceblob.md).
+Rendezvous fornisce [**l'interfaccia ITSdp**](itsdp.md) per la modifica dei BLOB di conferenze SDP. SDP è un protocollo per la descrizione delle sessioni multimediali e delle relative informazioni di pianificazione. Per altre informazioni sul protocollo SDP, individuare Internet Engineering Task Force (IETF) RFC 2327 intitolato "SDP: Session Description Protocol". Se **l'interfaccia ITSDP** esiste per un blob di conferenze specificato, è possibile ottenere un puntatore eseguendo **queryInterface** su [**ITConferenceBlob.**](itconferenceblob.md)
 
-Per i BLOB di conferenze SDP, le interfacce [**ITTimeCollection**](ittimecollection.md), [**ITTime**](ittime.md), [**ITMediaCollection**](itmediacollection.md)e [**ITmedia**](itmedia.md) consentono un controllo dettagliato delle caratteristiche dei supporti e dei tempi delle conferenze SDP.
+Per i BLOB di conferenze SDP, le interfacce [**ITTimeCollection**](ittimecollection.md), [**ITTime**](ittime.md), [**ITMediaCollection**](itmediacollection.md)e [**ITMedia**](itmedia.md) consentono un controllo dettagliato del tempo di conferenza SDP e delle caratteristiche multimediali.
 
  
 

@@ -1,17 +1,17 @@
 ---
 description: Imposta il numero di livelli temporali video per un codificatore video.
 ms.assetid: 36E1C86B-86D0-40CB-8F96-061FC653E9C3
-title: Proprietà CODECAPI_AVEncVideoTemporalLayerCount (codecapit. h)
+title: CODECAPI_AVEncVideoTemporalLayerCount proprietà (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85402b57c0eaf5c5fe61290eabdfd3e34a64ca4e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a81ceaf82d9d202e97927e0e141aa03a4e8e27c49a28880509aa9bb3c24f9319
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104484116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118743847"
 ---
-# <a name="codecapi_avencvideotemporallayercount-property"></a>Proprietà AVEncVideoTemporalLayerCount di codecapi \_
+# <a name="codecapi_avencvideotemporallayercount-property"></a>PROPRIETÀ CODECAPI \_ AVEncVideoTemporalLayerCount
 
 Imposta il numero di livelli temporali video per un codificatore video.
 
@@ -21,13 +21,13 @@ Imposta il numero di livelli temporali video per un codificatore video.
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncVideoTemporalLayerCount**
+**CODECAPI \_ AVEncVideoTemporalLayerCount**
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà viene usata anche con [codificatori della fotocamera H. 264 UVC 1,5](camera-encoder-h264-uvc-1-5.md).
+Questa proprietà viene usata anche con codificatori [di fotocamera H.264 UVC 1.5.](camera-encoder-h264-uvc-1-5.md)
 
-Codecapis \_ AVEncVideoTemporalLayerCount, [codecapites \_ AVENCVIDEOUSAGE](codecapi-avencvideousage.md)e [codecapi \_ AVEncCommonRateControlMode](/windows/desktop/DirectShow/avenccommonratecontrolmode-property) sono proprietà del codificatore statiche. Una volta impostate, queste diverranno effettive solo dopo la chiamata di un tipo di supporto set sul pin di output della fotocamera.
+CODECAPI \_ AVEncVideoTemporalLayerCount, [CODECAPI \_ AVEncVideoUsage](codecapi-avencvideousage.md)e [CODECAPI \_ AVEncCommonRateControlMode](/windows/desktop/DirectShow/avenccommonratecontrolmode-property) sono proprietà del codificatore statico. Una volta impostati, questi saranno effettive solo dopo che un tipo di supporto impostato viene chiamato sul segnaposto di output della fotocamera.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ Codecapis \_ AVEncVideoTemporalLayerCount, [codecapites \_ AVENCVIDEOUSAGE](code
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                     |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                     |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Codecapis \_ AVEncVideoTemporalLayerCount, [codecapites \_ AVENCVIDEOUSAGE](code
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

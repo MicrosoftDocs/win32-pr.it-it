@@ -1,163 +1,163 @@
 ---
-description: Un blocco di stato può essere usato per acquisire solo lo stato del pixel (vedere lo stato di salvataggio e ripristino di blocchi di stato (Direct3D 9)).
+description: Un blocco di stato può essere usato per acquisire solo lo stato dei pixel (vedere State Blocks Save and Restore State (Direct3D 9)).
 ms.assetid: 30624c0a-e30f-4383-bc0c-b43f42403e72
-title: Salvataggio dello stato dei pixel con un StateBlock (Direct3D 9)
+title: Salvataggio dello stato dei pixel con stateBlock (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80741d9f17939d5795163a3e84c58bcdb9003c70
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: eebc7cc408fe919b1569d51f5cdd4e3e5916968d05b90557a17a22377673fdfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104522386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118797918"
 ---
-# <a name="saving-pixel-state-with-a-stateblock-direct3d-9"></a>Salvataggio dello stato dei pixel con un StateBlock (Direct3D 9)
+# <a name="saving-pixel-state-with-a-stateblock-direct3d-9"></a>Salvataggio dello stato dei pixel con stateBlock (Direct3D 9)
 
-Un blocco di stato può essere usato per acquisire solo lo stato del pixel (vedere lo stato di [salvataggio e ripristino di blocchi di stato (Direct3D 9)](state-blocks-save-and-restore-state.md)). Lo stato seguente è stato pixel:
+Un blocco di stato può essere usato per acquisire solo lo stato dei pixel (vedere [State Blocks Save and Restore State (Direct3D 9)](state-blocks-save-and-restore-state.md)). Lo stato seguente è lo stato pixel:
 
--   Stato di rendering pixel (vedere [pipeline pixel: stato di rendering](#pixel-pipeline-render-state)).
--   Stato trama pixel (vedere [pipeline pixel: stato trama](#pixel-pipeline-texture-state)).
--   Stato campionatore pixel (vedere [pipeline pixel: stato campionatore](#pixel-pipeline-sampler-state)).
--   Pixel shader corrente e ognuna delle costanti pixel shader.
+-   Stato di rendering pixel (vedere [Pipeline pixel: stato di rendering](#pixel-pipeline-render-state)).
+-   Stato trama pixel (vedere [Pipeline pixel: Stato trama](#pixel-pipeline-texture-state)).
+-   Stato del campionatore pixel (vedere [Pixel Pipeline: Sampler State).](#pixel-pipeline-sampler-state)
+-   L'pixel shader corrente e ognuna delle costanti pixel shader.
 
-Per acquisire lo stato dei pixel con un blocco di stato, specificare D3DSBT \_ PIXELSTATE quando si chiama [**IDirect3DDevice9:: CreateStateBlock**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createstateblock).
+Per acquisire lo stato dei pixel con un blocco di stato, specificare D3DSBT PIXELSTATE quando si \_ chiama [**IDirect3DDevice9::CreateStateBlock**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createstateblock).
 
 ## <a name="pixel-pipeline-render-state"></a>Pipeline pixel: stato di rendering
 
-Gli Stati di rendering del dispositivo influiscono sul comportamento di quasi tutte le parti della pipeline. Gli Stati di rendering vengono impostati chiamando [**IDirect3DDevice9:: SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate).
+Gli stati di rendering del dispositivo influiscono sul comportamento di quasi tutte le parti della pipeline. Gli stati di rendering vengono impostati chiamando [**IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate).
 
-Nella tabella seguente sono inclusi tutti gli Stati di rendering che consentono di impostare lo stato dei pixel:
+La tabella seguente include tutti gli stati di rendering che configurano lo stato dei pixel:
 
 
 
 | Stati di rendering                              | Valore predefinito      |
 |--------------------------------------------|--------------------|
-| \_ZENABLE D3DRS                             | D3DZB \_ false       |
-| \_SPECULARENABLE D3DRS                      | **FALSE**          |
-| [**D3DFILLMODE**](./d3dfillmode.md)   | D3DFILL \_ Solid     |
-| [**D3DSHADEMODE**](./d3dshademode.md) | \_Gouraud D3DSHADE  |
-| \_ZWRITEENABLE D3DRS                        | **TRUE**           |
-| \_ALPHATESTENABLE D3DRS                     | **FALSE**          |
-| \_LASTPIXEL D3DRS                           | **TRUE**           |
-| \_SRCBLEND D3DRS                            | D3DBLEND \_ One      |
-| \_DESTBLEND D3DRS                           | D3DBLEND \_ zero     |
-| \_ZFUNC D3DRS                               | \_LESSEQUAL D3DCMP  |
-| \_ALPHAREF D3DRS                            | 0                  |
-| \_ALPHAFUNC D3DRS                           | D3DCMP \_ sempre     |
-| \_DITHERENABLE D3DRS                        | **FALSE**          |
-| \_FOGSTART D3DRS                            | 0                  |
-| \_FOGEND D3DRS                              | 1                  |
-| \_FOGDENSITY D3DRS                          | 1                  |
-| \_ALPHABLENDENABLE D3DRS                    | **FALSE**          |
-| \_DEPTHBIAS D3DRS                           | 0                  |
-| \_STENCILENABLE D3DRS                       | **FALSE**          |
-| \_STENCILFAIL D3DRS                         | D3DSTENCILOP \_ Keep |
-| \_STENCILZFAIL D3DRS                        | D3DSTENCILOP \_ Keep |
-| \_STENCILPASS D3DRS                         | D3DSTENCILOP \_ Keep |
-| \_STENCILFUNC D3DRS                         | D3DCMP \_ sempre     |
-| \_STENCILREF D3DRS                          | 0                  |
-| \_STENCILMASK D3DRS                         | 0xFFFFFFFF         |
-| \_STENCILWRITEMASK D3DRS                    | 0xFFFFFFFF         |
-| \_TEXTUREFACTOR D3DRS                       | 0xFFFFFFFF         |
-| \_WRAP0 D3DRS                               | 0                  |
-| \_WRAP1 D3DRS                               | 0                  |
-| \_WRAP2 D3DRS                               | 0                  |
-| \_WRAP3 D3DRS                               | 0                  |
-| \_WRAP4 D3DRS                               | 0                  |
-| \_WRAP5 D3DRS                               | 0                  |
-| \_WRAP6 D3DRS                               | 0                  |
-| \_WRAP7 D3DRS                               | 0                  |
-| \_WRAP8 D3DRS                               | 0                  |
-| \_WRAP9 D3DRS                               | 0                  |
-| \_WRAP10 D3DRS                              | 0                  |
-| \_WRAP11 D3DRS                              | 0                  |
-| \_WRAP12 D3DRS                              | 0                  |
-| \_WRAP13 D3DRS                              | 0                  |
-| \_WRAP14 D3DRS                              | 0                  |
-| \_WRAP15 D3DRS                              | 0                  |
-| \_LOCALVIEWER D3DRS                         | **TRUE**           |
-| \_EMISSIVEMATERIALSOURCE D3DRS              | \_Materiale D3DMCS   |
-| \_AMBIENTMATERIALSOURCE D3DRS               | \_Materiale D3DMCS   |
-| \_DIFFUSEMATERIALSOURCE D3DRS               | \_COLOR1 D3DMCS     |
-| \_SPECULARMATERIALSOURCE D3DRS              | \_Color2 D3DMCS     |
-| \_COLORWRITEENABLE D3DRS                    | 0x0000000f         |
-| [**D3DBLENDOP**](./d3dblendop.md)     | D3DBLENDOP \_ aggiungere    |
-| \_SCISSORTESTENABLE D3DRS                   | **FALSE**          |
-| \_SLOPESCALEDEPTHBIAS D3DRS                 | 0                  |
-| \_ANTIALIASEDLINEENABLE D3DRS               | **FALSE**          |
-| \_TWOSIDEDSTENCILMODE D3DRS                 | **FALSE**          |
-| D3DRS \_ CCW \_ STENCILFAIL                    | D3DSTENCILOP \_ Keep |
-| D3DRS \_ CCW \_ STENCILZFAIL                   | D3DSTENCILOP \_ Keep |
-| D3DRS \_ CCW \_ STENCILPASS                    | D3DSTENCILOP \_ Keep |
-| D3DRS \_ CCW \_ STENCILFUNC                    | D3DCMP \_ sempre     |
-| \_COLORWRITEENABLE1 D3DRS                   | 0x0000000f         |
-| \_COLORWRITEENABLE2 D3DRS                   | 0x0000000f         |
-| \_COLORWRITEENABLE3 D3DRS                   | 0x0000000f         |
-| \_BLENDFACTOR D3DRS                         | 0xFFFFFFFF         |
-| \_SRGBWRITEENABLE D3DRS                     | 0                  |
-| \_SEPARATEALPHABLENDENABLE D3DRS            | **FALSE**          |
-| \_SRCBLENDALPHA D3DRS                       | D3DBLEND \_ One      |
-| \_DESTBLENDALPHA D3DRS                      | D3DBLEND \_ zero     |
-| \_BLENDOPALPHA D3DRS                        | D3DBLENDOP \_ aggiungere    |
+| D3DRS \_ ZENABLE                             | D3DZB \_ FALSE       |
+| D3DRS \_ SPECULARENABLE                      | **FALSE**          |
+| [**D3DFILLMODE**](./d3dfillmode.md)   | D3DFILL \_ SOLID     |
+| [**D3DSHADEMODE**](./d3dshademode.md) | D3DSHADE \_ GOURAUD  |
+| D3DRS \_ ZWRITEENABLE                        | **TRUE**           |
+| D3DRS \_ ALPHATESTENABLE                     | **FALSE**          |
+| D3DRS \_ LASTPIXEL                           | **TRUE**           |
+| D3DRS \_ SRCBLEND                            | D3DBLEND \_ ONE      |
+| D3DRS \_ DESTBLEND                           | D3DBLEND \_ ZERO     |
+| D3DRS \_ ZFUNC                               | D3DCMP \_ LESSEQUAL  |
+| D3DRS \_ ALPHAREF                            | 0                  |
+| D3DRS \_ ALPHAFUNC                           | D3DCMP \_ ALWAYS     |
+| D3DRS \_ DITHERENABLE                        | **FALSE**          |
+| D3DRS \_ FOGSTART                            | 0                  |
+| D3DRS \_ OSANNA                              | 1                  |
+| D3DRS \_ OSANNA                          | 1                  |
+| D3DRS \_ ALPHABLENDENABLE                    | **FALSE**          |
+| D3DRS \_ DEPTHBIAS                           | 0                  |
+| D3DRS \_ STENCILENABLE                       | **FALSE**          |
+| D3DRS \_ STENCILFAIL                         | D3DSTENCILOP \_ KEEP |
+| D3DRS \_ STENCILZFAIL                        | D3DSTENCILOP \_ KEEP |
+| D3DRS \_ STENCILPASS                         | D3DSTENCILOP \_ KEEP |
+| D3DRS \_ STENCILFUNC                         | D3DCMP \_ ALWAYS     |
+| D3DRS \_ STENCILREF                          | 0                  |
+| MASCHERA DI STENCIL D3DRS \_                         | 0xffffffff         |
+| STENCIL \_ D3DRSWRITEMASK                    | 0xffffffff         |
+| D3DRS \_ TEXTUREFACTOR                       | 0xffffffff         |
+| D3DRS \_ WRAP0                               | 0                  |
+| D3DRS \_ WRAP1                               | 0                  |
+| D3DRS \_ WRAP2                               | 0                  |
+| WRAP D3DRS3 \_                               | 0                  |
+| D3DRS \_ WRAP4                               | 0                  |
+| WRAP D3DRS5 \_                               | 0                  |
+| WRAP D3DRS6 \_                               | 0                  |
+| WRAP D3DRS7 \_                               | 0                  |
+| WRAP D3DRS8 \_                               | 0                  |
+| WRAP D3DRS9 \_                               | 0                  |
+| D3DRS \_ WRAP10                              | 0                  |
+| D3DRS \_ WRAP11                              | 0                  |
+| D3DRS \_ WRAP12                              | 0                  |
+| D3DRS \_ WRAP13                              | 0                  |
+| WRAP \_ D3DRS14                              | 0                  |
+| D3DRS \_ WRAP15                              | 0                  |
+| D3DRS \_ LOCALVIEWER                         | **TRUE**           |
+| D3DRS \_ EMISSIVEMATERIALSOURCE              | MATERIALE D3DMCS \_   |
+| D3DRS \_ AMBIENTMATERIALSOURCE               | MATERIALE D3DMCS \_   |
+| D3DRS \_ DIFFUSEMATERIALSOURCE               | COLORE 1 DI D3DMCS \_     |
+| D3DRS \_ SPECULARMATERIALSOURCE              | D3DMCS \_ COLOR2     |
+| D3DRS \_ COLORWRITEENABLE                    | 0x0000000f         |
+| [**D3DBLENDOP**](./d3dblendop.md)     | D3DBLENDOP \_ ADD    |
+| D3DRS \_ SCISSORTESTENABLE                   | **FALSE**          |
+| D3DRS \_ SLOPESCALEDEPTHBIAS                 | 0                  |
+| D3DRS \_ ANTIALIASEDLINEENABLE               | **FALSE**          |
+| D3DRS \_ TWOSIDEDSTENCILMODE                 | **FALSE**          |
+| STENCIL \_ CCW D3DRSFAIL \_                    | D3DSTENCILOP \_ KEEP |
+| \_STENCIL CCW D3DRSZFAIL \_                   | D3DSTENCILOP \_ KEEP |
+| D3DRS \_ CCW \_ STENCILPASS                    | D3DSTENCILOP \_ KEEP |
+| D3DRS \_ CCW \_ STENCILFUNC                    | D3DCMP \_ ALWAYS     |
+| D3DRS \_ COLORWRITEENABLE1                   | 0x0000000f         |
+| D3DRS \_ COLORWRITEENABLE2                   | 0x0000000f         |
+| D3DRS \_ COLORWRITEENABLE3                   | 0x0000000f         |
+| D3DRS \_ BLENDFACTOR                         | 0xffffffff         |
+| D3DRS \_ SRGBWRITEENABLE                     | 0                  |
+| D3DRS \_ SEPARATEALPHABLENDENABLE            | **FALSE**          |
+| D3DRS \_ SRCBLENDALPHA                       | D3DBLEND \_ ONE      |
+| D3DRS \_ DESTBLENDALPHA                      | D3DBLEND \_ ZERO     |
+| D3DRS \_ BLENDOPALPHA                        | D3DBLENDOP \_ ADD    |
 
 
 
  
 
-## <a name="pixel-pipeline-sampler-state"></a>Pipeline pixel: stato campionatore
+## <a name="pixel-pipeline-sampler-state"></a>Pipeline pixel: stato del campionatore
 
-Gli Stati del campionatore controllano argomenti correlati al campionamento, ad esempio le modalità di filtro, affiancamento e coordinate di trama. Usare [**IDirect3DDevice9:: SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate) per impostare lo stato del campionatore (incluso quello usato nell'unità mosaico per campionare le mappe di spostamento). Gli Stati del campionatore sono stati rinominati con un \_ prefisso "D3DSAMP" per abilitare il rilevamento degli errori in fase di compilazione durante il trasferimento da DirectX 8.
+Gli stati del campionatore controllano gli argomenti correlati al campionamento, ad esempio le modalità di filtro, affiancamento e indirizzo delle coordinate della trama. Usare [**IDirect3DDevice9::SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate) per configurare lo stato del campionatore(incluso quello usato nell'unità a tessellatore per campionare le mappe di spostamento). Gli stati del campionatore sono stati rinominati con un prefisso "D3DSAMP" per abilitare il rilevamento degli errori in fase di compilazione durante la \_ portabilità da DirectX 8.
 
-La tabella seguente include tutti gli Stati del campionatore che configurano lo stato dei pixel:
+La tabella seguente include tutti gli stati del campionatore che configurano lo stato pixel:
 
 
 
-| Stati campionatore         | Valore predefinito     |
+| Stati del campionatore         | Valore predefinito     |
 |------------------------|-------------------|
-| \_Indirizzo D3DSAMP      | D3DTADDRESS a \_ capo |
-| \_ADDRESSV D3DSAMP      | D3DTADDRESS a \_ capo |
-| \_ADDRESSW D3DSAMP      | D3DTADDRESS a \_ capo |
-| \_BorderColor D3DSAMP   | 0x00000000        |
-| \_MAGFILTER D3DSAMP     | Punto di D3DTEXF \_    |
-| \_MINFILTER D3DSAMP     | Punto di D3DTEXF \_    |
-| \_MIPFILTER D3DSAMP     | D3DTEXF \_ None     |
-| \_MIPMAPLODBIAS D3DSAMP | 0                 |
-| \_MAXMIPLEVEL D3DSAMP   | 0                 |
-| \_MAXANISOTROPY D3DSAMP | 1                 |
-| \_SRGBTEXTURE D3DSAMP   | 0                 |
-| \_ELEMENTINDEX D3DSAMP  | 0                 |
+| D3DSAMP \_ ADDRESSU      | D3DTADDRESS \_ WRAP |
+| D3DSAMP \_ ADDRESSV      | D3DTADDRESS \_ WRAP |
+| D3DSAMP \_ ADDRESSW      | D3DTADDRESS \_ WRAP |
+| D3DSAMP \_ BORDERCOLOR   | 0x00000000        |
+| D3DSAMP \_ MAGFILTER     | PUNTO D3DTEXF \_    |
+| D3DSAMP \_ MINFILTER     | PUNTO D3DTEXF \_    |
+| D3DSAMP \_ MIPFILTER     | D3DTEXF \_ NONE     |
+| D3DSAMP \_ MIPMAPLODBIAS | 0                 |
+| D3DSAMP \_ MAXMIPLEVEL   | 0                 |
+| D3DSAMP \_ MAXANISOTROPY | 1                 |
+| D3DSAMP \_ SRGBTEXTURE   | 0                 |
+| ELEMENTO D3DSAMPINDEX \_  | 0                 |
 
 
 
  
 
-## <a name="pixel-pipeline-texture-state"></a>Pipeline pixel: stato trama
+## <a name="pixel-pipeline-texture-state"></a>Pipeline pixel: stato della trama
 
-Gli Stati della trama controllano le operazioni di blending del Blender a più trame. Usare [**IDirect3DDevice9:: SetTextureStageState**](/windows/desktop/api) per impostare gli Stati della fase della trama. Usare [**IDirect3DDevice9:: Setrame**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) per associare una trama a una fase del campionatore.
+Gli stati della trama controllano le operazioni di fusione della trama del blender a più trame. Usare [**IDirect3DDevice9::SetTextureStageState**](/windows/desktop/api) per configurare gli stati della fase della trama. Usare [**IDirect3DDevice9::SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) per associare una trama a una fase del campionatore.
 
-La tabella seguente include tutti gli Stati di trama che configurano lo stato dei pixel:
+La tabella seguente include tutti gli stati di trama che configurano lo stato dei pixel:
 
 
 
-| Stati di trama                | Valore predefinito    |
+| Stati della trama                | Valore predefinito    |
 |-------------------------------|------------------|
-| \_COLOROP D3DTSS               | \_Disabilitazione D3DTOP  |
-| \_COLORARG1 D3DTSS             | \_Trama D3DTA   |
-| \_COLORARG2 D3DTSS             | D3DTA \_ corrente   |
-| \_ALPHAOP D3DTSS               | \_Disabilitazione D3DTOP  |
-| \_ALPHAARG1 D3DTSS             | \_Trama D3DTA   |
-| \_ALPHAARG2 D3DTSS             | D3DTA \_ corrente   |
-| \_BUMPENVMAT00 D3DTSS          | 0                |
-| \_BUMPENVMAT01 D3DTSS          | 0                |
-| \_BUMPENVMAT10 D3DTSS          | 0                |
-| \_BUMPENVMAT11 D3DTSS          | 0                |
-| \_TEXCOORDINDEX D3DTSS         | 0                |
-| \_BUMPENVLSCALE D3DTSS         | 0                |
-| \_BUMPENVLOFFSET D3DTSS        | 0                |
-| \_TEXTURETRANSFORMFLAGS D3DTSS | \_Disabilitazione D3DTTFF |
-| \_COLORARG0 D3DTSS             | D3DTA \_ corrente   |
-| \_ALPHAARG0 D3DTSS             | D3DTA \_ corrente   |
-| \_RESULTARG D3DTSS             | D3DTA \_ corrente   |
+| D3DTSS \_ COLOROP               | D3DTOP \_ DISABLE  |
+| D3DTSS \_ COLORARG1             | TRAMA D3DTA \_   |
+| D3DTSS \_ COLORARG2             | D3DTA \_ CURRENT   |
+| D3DTSS \_ ALPHAOP               | D3DTOP \_ DISABLE  |
+| D3DTSS \_ ALPHAARG1             | TRAMA D3DTA \_   |
+| D3DTSS \_ ALPHAARG2             | D3DTA \_ CURRENT   |
+| D3DTSS \_ BUMPENVMAT00          | 0                |
+| D3DTSS \_ BUMPENVMAT01          | 0                |
+| D3DTSS \_ BUMPENVMAT10          | 0                |
+| D3DTSS \_ BUMPENVMAT11          | 0                |
+| D3DTSS \_ TEXCOORDINDEX         | 0                |
+| D3DTSS \_ BUMPENVLSCALE         | 0                |
+| D3DTSS \_ BUMPENVLOFFSET        | 0                |
+| D3DTSS \_ TEXTURETRANSFORMFLAGS | D3DTTFF \_ DISABLE |
+| D3DTSS \_ COLORARG0             | D3DTA \_ CURRENT   |
+| D3DTSS \_ ALPHAARG0             | D3DTA \_ CURRENT   |
+| D3DTSS \_ RESULTARG             | D3DTA \_ CURRENT   |
 
 
 
@@ -167,7 +167,7 @@ La tabella seguente include tutti gli Stati di trama che configurano lo stato de
 
 <dl> <dt>
 
-[Stato di salvataggio e ripristino del blocco di stato](state-blocks-save-and-restore-state.md)
+[State Blocks Save and Restore State](state-blocks-save-and-restore-state.md)
 </dt> </dl>
 
  

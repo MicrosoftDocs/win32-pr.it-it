@@ -1,23 +1,23 @@
 ---
-description: Un certificato X. 509 versione 1 contiene i campi seguenti. I campi della versione 2 sono illustrati nei campi della versione 2. I campi della versione 3 sono illustrati nelle estensioni della versione 3.
+description: Un certificato X.509 versione 1 contiene i campi seguenti. I campi della versione 2 sono descritti in Campi versione 2. I campi della versione 3 sono descritti nelle estensioni della versione 3.
 ms.assetid: d614130c-cf1b-4580-8903-064982ed738e
 title: Campi di base
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad24afa21787227b3fe47ab187a97c7886c9c9ae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3dae9ceaa3ddd1c4ac8a8ce86425ec32eee45e82ca8b437ed0f0c27f44817ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118905086"
 ---
 # <a name="basic-fields"></a>Campi di base
 
-Un certificato X. 509 versione 1 contiene i campi seguenti. I campi della versione 2 sono illustrati nei [campi della versione 2](about-version-2-fields.md). I campi della versione 3 sono illustrati nelle [estensioni della versione 3](about-version-3-extensions.md).
+Un certificato X.509 versione 1 contiene i campi seguenti. I campi della versione 2 sono descritti in [Campi versione 2.](about-version-2-fields.md) I campi della versione 3 sono descritti in [Estensioni della versione 3.](about-version-3-extensions.md)
 
 ## <a name="version"></a>Versione
 
-Specifica il numero di versione del certificato codificato. Attualmente, i valori possibili di questo campo sono 0, 1 o 2, ma questo può essere espanso in futuro.
+Specifica il numero di versione del certificato codificato. Attualmente, i valori possibili di questo campo sono 0, 1 o 2, ma potrebbero essere espansi in futuro.
 
 ``` syntax
 ---------------------------------------------------------------------
@@ -39,7 +39,7 @@ CertificateSerialNumber ::= INTEGER
 
 ## <a name="signature-algorithm"></a>Algoritmo di firma
 
-Contiene un [*identificatore di oggetto*](/windows/desktop/SecGloss/o-gly) (OID) che specifica l'algoritmo usato dall'autorità di certificazione per firmare il certificato. Ad esempio, 1.2.840.113549.1.1.5 specifica un algoritmo di hash SHA-1 combinato con l'algoritmo di crittografia RSA realizzato da RSA Laboratories.
+Contiene un [*identificatore di oggetto*](/windows/desktop/SecGloss/o-gly) (OID) che specifica l'algoritmo usato dalla CA per firmare il certificato. Ad esempio, 1.2.840.113549.1.1.5 specifica un algoritmo di hash SHA-1 combinato con l'algoritmo di crittografia RSA realizzato da RSA Laboratories.
 
 ``` syntax
 ---------------------------------------------------------------------
@@ -56,7 +56,7 @@ AlgorithmIdentifier ::= SEQUENCE
 
 ## <a name="issuer"></a>Issuer
 
-Contiene il nome distinto [*X. 500*](/windows/desktop/SecGloss/x-gly) (DN) dell'autorità di certificazione che ha creato e firmato il certificato.
+Contiene il [*nome distinto X.500*](/windows/desktop/SecGloss/x-gly) della CA che ha creato e firmato il certificato.
 
 ``` syntax
 ---------------------------------------------------------------------
@@ -75,7 +75,7 @@ AttributeTypeValue ::= SEQUENCE
 
 ## <a name="validity"></a>Validità
 
-Specifica l'intervallo di tempo di validità del certificato. Le date fino alla fine del 2049 usano il formato Coordinated Universal Time (Greenwich Mean Time) (*yymmddhhmmssZ*). Le date che iniziano con il 1 ° gennaio 2050 usano il formato di ora generalizzato (*yyyymmddhhmmssZ*).
+Specifica l'intervallo di tempo di validità del certificato. Le date fino alla fine del 2049 usano il formato Coordinated Universal Time (ora media di Greenwich) (*yymmddhhmmssz*). Le date che iniziano con il 1° gennaio 2050 usano il formato ora generalizzato (*aaaammgghhmmssz*).
 
 ``` syntax
 ---------------------------------------------------------------------
@@ -144,7 +144,7 @@ AlgorithmIdentifier ::= SEQUENCE
 [Estensioni versione 3](about-version-3-extensions.md)
 </dt> <dt>
 
-[Certificati di chiave pubblica X. 509](about-x-509-public-key-certificates.md)
+[Certificati a chiave pubblica X.509](about-x-509-public-key-certificates.md)
 </dt> </dl>
 
  

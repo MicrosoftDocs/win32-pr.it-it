@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 83554b13fe8e20890b1edecd690c540c2e14d4d7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8188094801ed3a9cef4be3c441d6afb5032e86178da50d837017c0836a702c21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118800951"
 ---
 # <a name="id3dxskininfogetdeclaration-method"></a>Metodo ID3DXSkinInfo::GetDeclaration
 

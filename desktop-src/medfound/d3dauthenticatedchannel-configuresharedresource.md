@@ -1,7 +1,7 @@
 ---
-description: Contiene i dati di input per un \_ comando D3DAUTHENTICATEDCONFIGURE SHAREDRESOURCE.
+description: Contiene i dati di input per un comando D3DAUTHENTICATEDCONFIGURE \_ SHAREDRESOURCE.
 ms.assetid: bdeb0cc4-90f0-4174-a859-4b3fecb17bab
-title: Struttura D3DAUTHENTICATEDCHANNEL_CONFIGURESHAREDRESOURCE (D3d9types. h)
+title: D3DAUTHENTICATEDCHANNEL_CONFIGURESHAREDRESOURCE struttura (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 7cbbb1645b232195e1cdb12e859234339ddda287
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0dbff67921f2ec6ad634c20b11b86b0384923db5548bcef113128fe5ede6bdd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118742907"
 ---
-# <a name="d3dauthenticatedchannel_configuresharedresource-structure"></a>\_Struttura D3DAUTHENTICATEDCHANNEL CONFIGURESHAREDRESOURCE
+# <a name="d3dauthenticatedchannel_configuresharedresource-structure"></a>Struttura D3DAUTHENTICATEDCHANNEL \_ CONFIGURESHAREDRESOURCE
 
-Contiene i dati di input per un comando [**D3DAUTHENTICATEDCONFIGURE \_ SHAREDRESOURCE**](d3dauthenticatedconfigure-sharedresource.md) .
+Contiene i dati di input per [**un comando D3DAUTHENTICATEDCONFIGURE \_ SHAREDRESOURCE.**](d3dauthenticatedconfigure-sharedresource.md)
 
-Per inviare questa query, chiamare [**IDirect3DAuthenticatedChannel9:: Configure**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure).
+Per inviare questa query, chiamare [**IDirect3DAuthenticatedChannel9::Configure**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,28 +47,28 @@ typedef struct _D3DAUTHENTICATEDCHANNEL_CONFIGURESHAREDRESOURCE {
 **Parametri**
 </dt> <dd>
 
-D3DAUTHENTICATEDCHANNEL configura la struttura di [**\_ \_ input**](d3dauthenticatedchannel-configure-input.md) che contiene il GUID del comando e altri dati.
+Struttura [**D3DAUTHENTICATEDCHANNEL \_ CONFIGURE \_ INPUT**](d3dauthenticatedchannel-configure-input.md) che contiene il GUID del comando e altri dati.
 
 </dd> <dt>
 
 **ProcessIdentiferType**
 </dt> <dd>
 
-Valore [**D3DAUTHENTICATEDCHANNEL \_ PROCESSIDENTIFIERTYPE**](d3dauthenticatedchannel-processidentifiertype.md) che specifica il tipo di processo. Per specificare il processo di Gestione finestre desktop (DWM), impostare questo membro su **PROCESSIDTYPE \_ DWM**. In caso contrario, impostare questo membro su **PROCESSIDTYPE \_ handle** e impostare il membro **ProcessHandle** su un handle valido.
+Valore [**D3DAUTHENTICATEDCHANNEL \_ PROCESSIDENTIFIERTYPE**](d3dauthenticatedchannel-processidentifiertype.md) che specifica il tipo di processo. Per specificare il processo Gestione finestre desktop (DWM), impostare questo membro su **PROCESSIDTYPE \_ DWM**. In caso contrario, impostare questo membro su **PROCESSIDTYPE \_ HANDLE** e impostare il **membro ProcessHandle** su un handle valido.
 
 </dd> <dt>
 
 **ProcessHandle**
 </dt> <dd>
 
-Handle di processo. Se il membro **ProcessIdentifier** è uguale **all' \_ handle PROCESSTIDTYPE**, il membro **ProcessHandle** specifica un handle per un processo. In caso contrario, il valore viene ignorato.
+Handle di processo. Se il **membro ProcessIdentifier** è uguale a **PROCESSTIDTYPE \_ HANDLE,** il membro **ProcessHandle** specifica un handle per un processo. In caso contrario, il valore viene ignorato.
 
 </dd> <dt>
 
 **AllowAccess**
 </dt> <dd>
 
-Se **true**, il processo specificato ha accesso alle risorse condivise limitate.
+Se **TRUE,** il processo specificato ha accesso alle risorse condivise limitate.
 
 </dd> </dl>
 
@@ -78,9 +78,9 @@ Se **true**, il processo specificato ha accesso alle risorse condivise limitate.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                             |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -91,7 +91,7 @@ Se **true**, il processo specificato ha accesso alle risorse condivise limitate.
 [Strutture video Direct3D](direct3d-video-structures.md)
 </dt> <dt>
 
-[**IDirect3DAuthenticatedChannel9:: Configure**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure)
+[**IDirect3DAuthenticatedChannel9::Configure**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Sospende i processi del pacchetto se sono attualmente in esecuzione.
+description: Sospende i processi del pacchetto se sono in esecuzione.
 ms.assetid: 83f44285-46ed-4968-b0af-7964dfacf602
-title: 'Metodo IPackageDebugSettings:: Suspend'
+title: Metodo IPackageDebugSettings::Suspend
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shobjidl.idl
-ms.openlocfilehash: 385ddc856661090caec4345df6651605b67fe883
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0517ce3cca6a8e74f19b053897511062cefa252297d3a0e6633d4678c0deaa95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103751495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118822814"
 ---
-# <a name="ipackagedebugsettingssuspend-method"></a>Metodo IPackageDebugSettings:: Suspend
+# <a name="ipackagedebugsettingssuspend-method"></a>Metodo IPackageDebugSettings::Suspend
 
-Sospende i processi del pacchetto se sono attualmente in esecuzione.
+Sospende i processi del pacchetto se sono in esecuzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ HRESULT Suspend(
 
 <dl> <dt>
 
-*PackageFullName* \[ in\]
+*packageFullName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
@@ -58,8 +58,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                                            | Descrizione                                      |
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                   | Operazione completata.<br/>              |
-| <dl> <dt>**E \_ STATECHANGE non valido \_**</dt> </dl> | Il processo non è attualmente in esecuzione.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                   | Operazione completata.<br/>              |
+| <dl> <dt>**E \_ ILLEGAL \_ STATECHANGE**</dt> </dl> | Il processo non è attualmente in esecuzione.<br/> |
 
 
 
@@ -67,7 +67,7 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-Ogni processo riceve l'evento di [**sospensione**](/uwp/api/Windows.ApplicationModel.Core.CoreApplication?view=winrt-19041) . Può essere utile per gli sviluppatori esaminare il modo in cui le app rispondono a questo evento.
+Ogni processo riceve [**l'evento Suspending.**](/uwp/api/Windows.ApplicationModel.Core.CoreApplication?view=winrt-19041) Può essere utile per gli sviluppatori illustrare in che modo le app rispondono a questo evento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,7 +77,7 @@ Ogni processo riceve l'evento di [**sospensione**](/uwp/api/Windows.ApplicationM
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                          |
-| IDL<br/>                      | <dl> <dt>ShObjIdl. idl</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

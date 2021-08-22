@@ -1,23 +1,23 @@
 ---
-description: Questa esercitazione usa il writer di sink per codificare un file video.
+description: Questa esercitazione usa Sink Writer per codificare un file video.
 ms.assetid: 3E297366-0863-4E89-A0D5-438CD1FC5AF9
-title: 'Esercitazione: uso del writer di sink per codificare video'
+title: 'Esercitazione: Uso del sink writer per codificare il video'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a3e6095355e18db6c8335cadcbc4afc56b35406
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5347a82fd40355c8006b15492a59543018ae5868cb02fcefeeb1812bd26930c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972780"
 ---
-# <a name="tutorial-using-the-sink-writer-to-encode-video"></a>Esercitazione: uso del writer di sink per codificare video
+# <a name="tutorial-using-the-sink-writer-to-encode-video"></a>Esercitazione: Uso del sink writer per codificare il video
 
-Questa esercitazione usa il [writer di sink](sink-writer.md) per codificare un file video.
+Questa esercitazione usa [Sink Writer per](sink-writer.md) codificare un file video.
 
 ## <a name="define-the-video-format"></a>Definire il formato video
 
-Per semplicità, in questa esercitazione viene usato un formato video fisso, definito dalle costanti seguenti:
+Per semplicità, questa esercitazione usa un formato video fisso, definito dalle costanti seguenti:
 
 
 ```C++
@@ -37,18 +37,18 @@ const UINT32 VIDEO_FRAME_COUNT = 20 * VIDEO_FPS;
 
 Queste costanti specificano i parametri seguenti del formato video:
 
--   Dimensioni fotogramma (larghezza e altezza)
+-   Dimensioni del frame (larghezza e altezza)
 -   Fotogrammi al secondo.
 -   Velocità in bit codificata.
--   Formato di codifica, che è Windows Media Video 9 (**MFVideoFormat \_ WMV3**).
+-   Formato di codifica, che Windows Media Video 9 (**MFVideoFormat \_ WMV3**).
 -   Formato di input, ovvero RGB a 32 bit.
 -   Durata del file di output.
 
-Il programma usa queste costanti per creare i tipi di supporto che descrivono il formato. In un'applicazione reale, in genere è supportato un intervallo di profili di codifica.
+Il programma usa queste costanti per creare i tipi di supporti che descrivono il formato. In un'applicazione reale si supporterebbe in genere una gamma di profili di codifica.
 
-## <a name="create-an-uncompressed-video-frame"></a>Creazione di un frame video non compresso
+## <a name="create-an-uncompressed-video-frame"></a>Creare un fotogramma video non compresso
 
-Inoltre, per semplicità, in questa esercitazione viene usato un frame video statico come input. Il fotogramma video contiene un rettangolo verde a tinta unita e viene generato a livello di codice. Il fotogramma video viene archiviato in una variabile globale come una matrice di **DWORD** s:
+Anche per semplicità, questa esercitazione usa un frame video statico come input. Il fotogramma video contiene un rettangolo verde a tinta unita e viene generato a livello di codice. Il fotogramma video viene archiviato in una variabile globale come matrice **di DWORD:**
 
 
 ```C++
@@ -75,15 +75,15 @@ Il codice seguente imposta ogni pixel del frame su verde:
 
 Per inizializzare il writer di sink, seguire questa procedura.
 
-1.  Chiamare [**MFCreateSinkWriterFromURL**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesinkwriterfromurl) per creare una nuova istanza del writer del sink.
-2.  Creare un tipo di supporto che descriva il video codificato.
-3.  Passare questo tipo di supporto al metodo [**IMFSinkWriter:: AddStream**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-addstream) .
-4.  Creare un secondo tipo di supporto che descriva l'input non compresso.
-5.  Passare il tipo di supporto non compresso al metodo [**IMFSinkWriter:: SetInputMediaType**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-setinputmediatype) .
-6.  Chiamare il metodo [**IMFSinkWriter:: BeginWriting**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-beginwriting) .
-7.  Il writer di sink è ora pronto ad accettare gli esempi di input.
+1.  Chiamare [**MFCreateSinkWriterFromURL**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesinkwriterfromurl) per creare una nuova istanza del writer di sink.
+2.  Creare un tipo di supporto che descrive il video codificato.
+3.  Passare questo tipo di supporto al [**metodo IMFSinkWriter::AddStream.**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-addstream)
+4.  Creare un secondo tipo di supporto che descrive l'input non compresso.
+5.  Passare il tipo di supporto non compresso al [**metodo IMFSinkWriter::SetInputMediaType.**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-setinputmediatype)
+6.  Chiamare il [**metodo IMFSinkWriter::BeginWriting.**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-beginwriting)
+7.  Il writer di sink è ora pronto per accettare esempi di input.
 
-Nel codice seguente vengono illustrati questi passaggi.
+Il codice seguente illustra questi passaggi.
 
 
 ```C++
@@ -194,16 +194,16 @@ HRESULT InitializeSinkWriter(IMFSinkWriter **ppWriter, DWORD *pStreamIndex)
 
 
 
-Nella maggior parte dei passaggi dell'esempio di codice precedente vengono impostate gli attributi del tipo di supporto per i due tipi di supporto. I dettagli dei tipi di supporto dipenderanno dal contenuto di origine e dal profilo di codifica desiderato.
+La maggior parte dei passaggi nell'esempio di codice precedente è l'impostazione degli attributi del tipo di supporto per i due tipi di supporti. I dettagli dei tipi di supporti dipendono dal contenuto di origine e dal profilo di codifica desiderato.
 
-## <a name="send-video-frames-to-the-sink-writer"></a>Inviare fotogrammi video al writer di sink
+## <a name="send-video-frames-to-the-sink-writer"></a>Inviare fotogrammi video al sink writer
 
-Per inviare un frame video al writer di sink, chiamare il metodo [**IMFSinkWriter:: WriteSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-writesample) . Il metodo **WriteSample** accetta un puntatore all'interfaccia [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) , che rappresenta un oggetto di *esempio multimediale* . L'esempio multimediale contiene un oggetto *buffer multimediale* , che a sua volta contiene un puntatore al frame video. Per ulteriori informazioni sugli esempi di supporti e sul buffer, vedere gli argomenti seguenti.
+Per inviare un fotogramma video al writer di sink, chiamare il [**metodo IMFSinkWriter::WriteSample.**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-writesample) Il **metodo WriteSample** accetta un puntatore all'interfaccia [**IMFSample,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) che rappresenta un *oggetto di esempio multimediale.* L'esempio multimediale contiene *un oggetto buffer* multimediale, che a sua volta contiene un puntatore al fotogramma video. Per altre informazioni sugli esempi di supporti e sul buffer, vedere gli argomenti seguenti.
 
 -   [Esempi di supporti](media-samples.md)
 -   [Buffer multimediali](media-buffers.md)
 
-A seconda dell'applicazione, è possibile ottenere gli esempi di supporti dal [lettore di origine](source-reader.md). In alternativa, è possibile creare gli esempi di supporti e modificare direttamente i dati nel buffer. Il codice seguente illustra il secondo approccio. Viene creato un buffer di memoria e viene scritto un singolo frame video nel buffer. Aggiunge quindi il buffer a un esempio di supporto e invia l'esempio multimediale al writer del sink.
+A seconda dell'applicazione, è possibile ottenere gli esempi di supporti da [Source Reader.](source-reader.md) In alternativa, è possibile creare gli esempi di supporti e modificare direttamente i dati nel buffer. Il codice seguente illustra il secondo approccio. Crea un buffer di memoria e scrive un singolo fotogramma video nel buffer. Quindi aggiunge il buffer a un campione di supporti e invia l'esempio multimediale al writer di sink.
 
 
 ```C++
@@ -288,31 +288,31 @@ HRESULT WriteFrame(
 Questo codice esegue i passaggi seguenti.
 
 1.  Chiamare [**MFCreateMemoryBuffer**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatememorybuffer) per creare un oggetto buffer multimediale. Questa funzione alloca la memoria per il buffer.
-2.  Chiamare [**IMFMediaBuffer:: Lock**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-lock) per bloccare il buffer e ottenere un puntatore alla memoria.
-3.  Chiamare [**MFCopyImage**](/windows/desktop/api/mfapi/nf-mfapi-mfcopyimage) per copiare il frame video nel buffer.
+2.  Chiamare [**IMFMediaBuffer::Lock**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-lock) per bloccare il buffer e ottenere un puntatore alla memoria.
+3.  Chiamare [**MFCopyImage**](/windows/desktop/api/mfapi/nf-mfapi-mfcopyimage) per copiare il fotogramma video nel buffer.
     > [!Note]  
-    > In questo particolare esempio l'uso di **memcpy** potrebbe funzionare anche in questo modo. Tuttavia, la funzione [**MFCopyImage**](/windows/desktop/api/mfapi/nf-mfapi-mfcopyimage) gestisce correttamente il caso in cui lo stride dell'immagine di origine non corrisponde al buffer di destinazione. Per ulteriori informazioni, vedere [Image stride](image-stride.md).
+    > In questo esempio specifico, anche **l'uso di memcpy** funziona. Tuttavia, la [**funzione MFCopyImage**](/windows/desktop/api/mfapi/nf-mfapi-mfcopyimage) gestisce correttamente il caso in cui lo stride dell'immagine di origine non corrisponde al buffer di destinazione. Per altre informazioni, vedere [Image Stride](image-stride.md).
 
      
 
-4.  Chiamare [**IMFMediaBuffer:: Unlock**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-unlock) per sbloccare il buffer.
-5.  Chiamare [**IMFMediaBuffer:: SetCurrentLength**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-setcurrentlength) per aggiornare la lunghezza dei dati validi nel buffer. In caso contrario, il valore predefinito è zero.
+4.  Chiamare [**IMFMediaBuffer::Unlock**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-unlock) per sbloccare il buffer.
+5.  Chiamare [**IMFMediaBuffer::SetCurrentLength**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-setcurrentlength) per aggiornare la lunghezza dei dati validi nel buffer. In caso contrario, il valore predefinito è zero.
 6.  Chiamare [**MFCreateSample**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatesample) per creare un oggetto di esempio multimediale.
-7.  Chiamare [**IMFSample:: AddBuffer**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-addbuffer) per aggiungere il buffer multimediale all'esempio multimediale.
-8.  Chiamare [**IMFSample:: SetSampleTime**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-setsampletime) per impostare il timestamp per il frame del video.
-9.  Chiamare [**IMFSample:: SetSampleDuration**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-setsampleduration) per impostare la durata del fotogramma video.
-10. Chiamare [**IMFSinkWriter:: WriteSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-writesample) per inviare l'esempio multimediale al writer del sink.
+7.  Chiamare [**IMFSample::AddBuffer**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-addbuffer) per aggiungere il buffer multimediale all'esempio multimediale.
+8.  Chiamare [**IMFSample::SetSampleTime**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-setsampletime) per impostare il timestamp per il fotogramma video.
+9.  Chiamare [**IMFSample::SetSampleDuration**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-setsampleduration) per impostare la durata del fotogramma video.
+10. Chiamare [**IMFSinkWriter::WriteSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-writesample) per inviare l'esempio multimediale al writer di sink.
 
-## <a name="write-the-main-function"></a>Scrivere la funzione Main
+## <a name="write-the-main-function"></a>Scrivere la funzione main
 
-All'interno della `main` funzione, seguire questa procedura.
+`main`All'interno della funzione seguire questa procedura.
 
-1.  Chiamare [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) per inizializzare la libreria com.
-2.  Chiamare [**MFStartup**](/windows/desktop/api/mfapi/nf-mfapi-mfstartup) per inizializzare Microsoft Media Foundation.
-3.  Creare il writer del sink.
-4.  Inviare fotogrammi video al writer del sink.
-5.  Chiamare [**IMFSinkWriter:: Finalize**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-finalize) per finalizzare il file di output.
-6.  Rilasciare il puntatore al writer del sink.
+1.  Chiamare [**CoInitializeEx per**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) inizializzare la libreria COM.
+2.  Chiamare [**MFStartup per**](/windows/desktop/api/mfapi/nf-mfapi-mfstartup) inizializzare Microsoft Media Foundation.
+3.  Creare il writer di sink.
+4.  Inviare fotogrammi video al writer di sink.
+5.  Chiamare [**IMFSinkWriter::Finalize per**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-finalize) finalizzare il file di output.
+6.  Rilasciare il puntatore al writer di sink.
 7.  Chiamare [**MFShutdown**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown).
 8.  Chiamare [**CoUninitialize**](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize).
 
@@ -636,7 +636,7 @@ void main()
 
 <dl> <dt>
 
-[Writer sink](sink-writer.md)
+[Sink Writer](sink-writer.md)
 </dt> </dl>
 
  

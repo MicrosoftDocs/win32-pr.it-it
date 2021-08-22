@@ -1,5 +1,5 @@
 ---
-description: Il metodo Delete WMI class eliminerà il file o la directory logica specificata nel percorso dell'oggetto.
+description: Il metodo Elimina classe WMI eliminerà il file logico (o la directory) specificato nel percorso dell'oggetto.
 ms.assetid: 5663b8a8-3089-475b-8a36-454a7315bfca
 ms.tgt_platform: multiple
 title: Metodo Delete della classe Win32_Directory
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 843583698c11c1b9ad8f08e83aa6e4b894b55db8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2966751c822213025d7107e4eff055900e6c8102711b66329e6f3c4fcbe1ed02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118676697"
 ---
-# <a name="delete-method-of-the-win32_directory-class"></a>Metodo Delete della classe di \_ directory Win32
+# <a name="delete-method-of-the-win32_directory-class"></a>Metodo Delete della classe Directory Win32 \_
 
-Il metodo **Delete** [WMI class](/windows/desktop/WmiSdk/retrieving-a-class) eliminerà il file o la directory logica specificata nel percorso dell'oggetto.
+Il **metodo Elimina** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) eliminerà il file logico (o la directory) specificato nel percorso dell'oggetto.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa la Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) se il file è stato eliminato correttamente e qualsiasi altro numero per indicare un errore.
+Restituisce il valore 0 (zero) se il file è stato eliminato correttamente e qualsiasi altro numero per indicare un errore.
 
 <dl> <dt>
 
@@ -56,7 +56,7 @@ La richiesta è stata completata.
 **2**
 </dt> <dd>
 
-Accesso negato.
+L'accesso è stato negato.
 
 </dd> <dt>
 
@@ -119,7 +119,7 @@ Si è verificata una violazione di condivisione.
 **16**
 </dt> <dd>
 
-Il file di avvio specificato non è valido.
+Il file iniziale specificato non è valido.
 
 </dd> <dt>
 
@@ -139,11 +139,11 @@ Un parametro specificato non è valido.
 
 ## <a name="remarks"></a>Commenti
 
-Le cartelle non sono necessariamente aggiunte permanenti a una file system. A un certo punto, potrebbe essere necessario eliminare le cartelle, probabilmente perché non sono più necessarie, perché il ruolo del computer è stato modificato o perché le cartelle sono state create per errore.
+Le cartelle non sono necessariamente aggiunte permanenti a un file system. A un certo punto, potrebbe essere necessario eliminare le cartelle, ad esempio perché non sono più necessarie, perché il ruolo del computer è cambiato o perché le cartelle sono state create per errore.
 
-Elimina consente di eliminare le cartelle: è sufficiente associare la cartella in questione e quindi chiamare il metodo Delete. Una volta chiamato il metodo Delete, la cartella viene rimossa definitivamente dalla file system; non viene inviato al Cestino. Inoltre, non viene inviata alcuna notifica di conferma ("eliminare la cartella?"). Al contrario, la cartella viene immediatamente rimossa.
+Elimina consente di eliminare le cartelle: è sufficiente eseguire il binding alla cartella in questione e quindi chiamare il metodo Delete. Dopo la chiamata al metodo Delete, la cartella viene rimossa definitivamente dal file system; non viene inviato al Cestino. Non viene inoltre emesso alcun avviso di conferma ("Si è certi di voler eliminare questa cartella?"). Al contrario, la cartella viene rimossa immediatamente.
 
-Non è possibile eliminare le cartelle di sola lettura usando FileSystemObject; Tuttavia, questa operazione può essere eseguita tramite WMI. Se lo script utilizza WMI e non si desidera rimuovere una cartella di sola lettura, è necessario utilizzare la proprietà leggibile per verificare lo stato della cartella prima di eliminarla.
+Non è possibile eliminare cartelle di sola lettura usando FileSystemObject. Tuttavia, questa operazione può essere eseguita tramite WMI. Se lo script usa WMI e non si vuole rimuovere una cartella di sola lettura, è necessario usare la proprietà Leggibile per controllare lo stato della cartella prima di eliminarla.
 
 ## <a name="examples"></a>Esempio
 
@@ -173,7 +173,7 @@ Next
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -185,7 +185,7 @@ Next
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Directory Win32**](win32-directory.md)
+[**Win32 \_ Directory**](win32-directory.md)
 </dt> </dl>
 
  

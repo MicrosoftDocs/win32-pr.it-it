@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e8f19792ec5c60498a87175ac064a9af04560981
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec918e573e3ca1c98da77e7ef3fd2b6bc760d2c65a382bb087ef38cfa47de1f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118770769"
 ---
 # <a name="esentsoftrecoveryonsnapshotexception-constructor"></a>Costruttore EsentSoftRecoveryOnSnapshotException
 
 Inizializza una nuova istanza della classe EsentSoftRecoveryOnSnapshotException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentSoftRecoveryOnSnapshotException()
 
 [Membri di EsentSoftRecoveryOnSnapshotException](./esentsoftrecoveryonsnapshotexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

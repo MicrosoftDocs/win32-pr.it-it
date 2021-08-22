@@ -1,7 +1,7 @@
 ---
 description: Rappresenta una raccolta di snapshot del sistema virtuale.
 ms.assetid: c9b64421-232c-4f32-a088-6b98602ca3f4
-title: Classe Msvm_SnapshotCollection
+title: Msvm_SnapshotCollection classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1e24566f1f5c5500258f14f88cbe2b7c4fa29e27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc83a12fc67192f686ddd75d6bc9626d9403244b2cbc8490270d236741174cdb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950290"
 ---
-# <a name="msvm_snapshotcollection-class"></a>\_Classe MSVM snapshotcollection
+# <a name="msvm_snapshotcollection-class"></a>Classe Msvm \_ SnapshotCollection
 
 Rappresenta una raccolta di snapshot del sistema virtuale.
 
@@ -41,26 +41,26 @@ class Msvm_SnapshotCollection : CIM_Collection
 
 ## <a name="members"></a>Members
 
-La classe **MSVM \_ snapshotcollection** presenta questi tipi di membri:
+La **classe Msvm \_ SnapshotCollection** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **MSVM \_ snapshotcollection** dispone di queste proprietà.
+La **classe Msvm \_ SnapshotCollection** ha queste proprietà.
 
 <dl> <dt>
 
 **CollectionID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**chiave**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CollectionId"), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CollectionID"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificazione univoca dell'oggetto raccolta.
@@ -70,13 +70,13 @@ Identificazione univoca dell'oggetto raccolta.
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("ElementName")
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("ElementName")
 </dt> </dl>
 
 Nome definito dall'utente per la raccolta. Si noti che non è garantito che sia univoco.
@@ -89,10 +89,10 @@ Nome definito dall'utente per la raccolta. Si noti che non è garantito che sia 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -101,7 +101,7 @@ Nome definito dall'utente per la raccolta. Si noti che non è garantito che sia 
 
 <dl> <dt>
 
-[**\_Raccolta CIM**](cim-collection.md)
+[**Raccolta \_ CIM**](cim-collection.md)
 </dt> </dl>
 
  
