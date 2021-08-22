@@ -79,7 +79,7 @@ Il formato *di vdate* non è valido.
 
 ## <a name="remarks"></a>Commenti
 
-Dopo una chiamata riuscita a **SetVarDate,** il valore DATETIME viene interpretato come valore [**datetime**](datetime.md) assoluto anziché come intervallo e la proprietà [**IsInterval**](swbemdatetime-isinterval.md) è impostata su **FALSE.**
+Dopo una chiamata a **SetVarDate** riuscita, il valore DATETIME viene interpretato come valore [**datetime**](datetime.md) assoluto anziché come intervallo e la proprietà [**IsInterval**](swbemdatetime-isinterval.md) è impostata su **FALSE.**
 
 La funzione Visual Basic o [VBScript CDate](/previous-versions//2dt118h2(v=vs.85)) fornisce un valore [**datetime**](datetime.md) nel formato **VT \_ DATE** per l'input in **SetVarDate.**
 
@@ -87,7 +87,7 @@ La funzione Visual Basic o [VBScript CDate](/previous-versions//2dt118h2(v=vs.85
 
 Per esempi di utilizzo dell'oggetto [**SWbemDateTime**](swbemdatetime.md) per convertire i valori [**CIM DATETIME**](datetime.md) in e dal formato **FILETIME** o **VT \_ DATE,** vedere [Attività WMI:](wmi-tasks--dates-and-times.md)date e ore . Per una descrizione del formato CIM **DATETIME,** vedere [Formato di data e ora](date-and-time-format.md).
 
-L'esempio di codice VBScript Convert [Date to WMI Date-Time Format](https://Gallery.TechNet.Microsoft.Com/33beff76-1b5f-4ba1-a8ea-5e124eb74306) in techNet Gallery usa SetVarDate per convertire un valore di data e ora normale nel formato di data e ora UTC.
+L'esempio di codice VBScript Convert [Date to WMI Date-Time Format](https://Gallery.TechNet.Microsoft.Com/33beff76-1b5f-4ba1-a8ea-5e124eb74306) in TechNet Gallery usa SetVarDate per convertire un valore di data e ora normale nel formato di data e ora UTC.
 
 ## <a name="requirements"></a>Requisiti
 

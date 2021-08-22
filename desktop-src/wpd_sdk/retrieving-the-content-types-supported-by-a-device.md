@@ -13,9 +13,9 @@ ms.locfileid: "119083465"
 ---
 # <a name="retrieving-the-content-types-supported-by-a-device"></a>Recupero dei tipi di contenuto supportati da un dispositivo
 
-Come illustrato nell'argomento [Recupero](retrieving-the-functional-categories-supported-by-a-device.md) delle categorie funzionali supportate da un dispositivo, Windows dispositivi portatili possono supportare una o più categorie funzionali. Qualsiasi categoria funzionale specifica può supportare uno o più tipi di contenuto. Ad esempio, la categoria di archiviazione può supportare tipi di contenuto di cartella, audio e immagine.
+Come illustrato nell'argomento Recupero delle categorie funzionali supportate da un dispositivo, Windows dispositivi portatili possono supportare una o più categorie funzionali. [](retrieving-the-functional-categories-supported-by-a-device.md) Qualsiasi categoria funzionale specificata può supportare uno o più tipi di contenuto. Ad esempio, la categoria di archiviazione può supportare tipi di contenuto di cartella, audio e immagine.
 
-Per una descrizione dei tipi di contenuto supportati da WPD, vedere l'argomento [**WPD \_ CONTENT \_ TYPE \_ ALL.**](wpd-content-type-all.md)
+Per una descrizione dei tipi di contenuto supportati da WPD, vedi l'argomento [**WPD CONTENT TYPE ALL (TIPO DI CONTENUTO WPD \_ \_ \_ ALL).**](wpd-content-type-all.md)
 
 La funzione ListSupportedContentTypes nel modulo DeviceCapabilities.cpp illustra il recupero dei tipi di contenuto per le categorie funzionali supportate da un dispositivo selezionato.
 
@@ -26,13 +26,13 @@ L'applicazione può recuperare le categorie funzionali supportate da un disposit
 | Interfaccia                                                                                      | Descrizione                                                   |
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
 | [**Interfaccia IPortableDeviceCapabilities**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)                   | Fornisce l'accesso ai metodi di recupero della categoria funzionale. |
-| [**Interfaccia IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Usato per enumerare e archiviare i dati della categoria funzionale.         |
+| [**Interfaccia IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Usato per enumerare e archiviare i dati delle categorie funzionali.         |
 
 
 
  
 
-Il codice trovato nella funzione ListSupportedContentTypes è quasi identico al codice trovato nella funzione ListFunctionalCategories. Vedere [l'argomento Recupero di categorie funzionali supportate da un](retrieving-the-functional-categories-supported-by-a-device.md) dispositivo. L'unica differenza è la chiamata al metodo [**IPortableDeviceCapabilities::GetSupportedContentTypes,**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecapabilities-getsupportedcontenttypes) che viene visualizzato all'interno del ciclo che scorre le categorie funzionali.
+Il codice trovato nella funzione ListSupportedContentTypes è quasi identico al codice presente nella funzione ListFunctionalCategories. Vedere [l'argomento Recupero di categorie funzionali supportate da un](retrieving-the-functional-categories-supported-by-a-device.md) dispositivo. L'unica differenza è la chiamata al metodo [**IPortableDeviceCapabilities::GetSupportedContentTypes,**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecapabilities-getsupportedcontenttypes) che viene visualizzata all'interno del ciclo che scorre le categorie funzionali.
 
 
 ```C++

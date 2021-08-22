@@ -1,11 +1,11 @@
 ---
-title: Evento Player. ModeChange
-description: L'evento ModeChange si verifica quando viene modificata una modalità di Windows Media Player. | Evento Player. ModeChange
+title: Evento Player.ModeChange
+description: L'evento ModeChange si verifica quando viene modificata Windows Media Player modalità di modifica. | Evento Player.ModeChange
 ms.assetid: 45b57660-b186-4c0f-8735-61134058b8c9
 keywords:
-- Media Player di Windows Event ModeChange
-- Windows Event ModeChange Media Player, classe Player
-- Classe Player Windows Media Player, evento ModeChange
+- Eventi ModeChange Windows Media Player
+- ModeChange event Windows Media Player , Player class
+- Classe player Windows Media Player, evento ModeChange
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb202672c7fce6705b8e86889c0ca44d7004a19e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e4a1102d49064c602d04915f77eda7ecfa1c748d4aea000cef1271679da1ec62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054359"
 ---
-# <a name="playermodechange-event"></a>Evento Player. ModeChange
+# <a name="playermodechange-event"></a>Evento Player.ModeChange
 
-L'evento **ModeChange** si verifica quando viene modificata una modalità di Windows Media Player.
+**L'evento ModeChange** si verifica quando viene modificata Windows Media Player modalità di modifica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ Player.ModeChange(
 *ModeName* 
 </dt> <dd>
 
-**Stringa** che indica la modalità che è stata modificata. Contiene uno dei valori seguenti.
+**Stringa** che indica la modalità modificata. Contiene uno dei valori seguenti.
 
 
 
@@ -61,10 +61,10 @@ Player.ModeChange(
 
 </dd> <dt>
 
-*NewValue* 
+*Newvalue* 
 </dt> <dd>
 
-**Valore booleano** che indica il nuovo stato della modalità specificata.
+**Valore** booleano che indica il nuovo stato della modalità specificata.
 
 </dd> </dl>
 
@@ -74,7 +74,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore dei parametri evento viene specificato da Windows Media Player ed è possibile accedervi o passarli a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, incluse le maiuscole.
+Il valore dei parametri dell'evento viene specificato da Windows Media Player ed è accessibile o passato a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, inclusa l'maiuscola.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,7 +82,7 @@ Il valore dei parametri evento viene specificato da Windows Media Player ed è p
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -94,10 +94,10 @@ Il valore dei parametri evento viene specificato da Windows Media Player ed è p
 [**Oggetto Player**](player-object.md)
 </dt> <dt>
 
-[**Settings. getMode**](settings-getmode.md)
+[**Impostazioni.getMode**](settings-getmode.md)
 </dt> <dt>
 
-[**Settings. semode**](settings-setmode.md)
+[**Impostazioni.setMode**](settings-setmode.md)
 </dt> </dl>
 
  

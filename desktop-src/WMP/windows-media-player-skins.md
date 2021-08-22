@@ -3,7 +3,7 @@ title: Windows Media Player Pelli
 description: Windows Media Player Pelli
 ms.assetid: 0cd23497-9a47-4391-a2c1-0e3102dcc1d2
 keywords:
-- Windows Media Player, interfaccia
+- Windows Media Player,skins
 - Windows Media Player, informazioni
 - skins,about
 ms.topic: article

@@ -1,6 +1,6 @@
 ---
 title: Attributo MSMQ-Sign-Certificates
-description: Questo attributo contiene una serie di certificati. Un utente può generare un certificato per computer. Per ogni certificato viene anche conservata una digest.
+description: Questo attributo contiene una serie di certificati. Un utente può generare un certificato per ogni computer. Per ogni certificato si mantiene anche un digest.
 ms.assetid: 70e182c7-3544-43d7-b27a-6e8d03bd2d47
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "119081745"
 ---
 # <a name="msmq-sign-certificates-attribute"></a>Attributo MSMQ-Sign-Certificates
 
-Questo attributo contiene una serie di certificati. Un utente può generare un certificato per computer. Per ogni certificato viene anche conservata una digest.
+Questo attributo contiene una serie di certificati. Un utente può generare un certificato per ogni computer. Per ogni certificato si mantiene anche un digest.
 
 
 
@@ -32,10 +32,10 @@ Questo attributo contiene una serie di certificati. Un utente può generare un c
 | CN                | MSMQ-Sign-Certificates                                                                 |
 | Ldap-Display-Name | mSMQSignCertificates                                                                   |
 | Dimensione              | Il tipo di attributo è un BLOB, le dimensioni non sono limitate e i dati vengono mantenuti nel proprio formato. |
-| Aggiorna privilegio  | \-                                                                                     |
+| Privilegio di aggiornamento  | \-                                                                                     |
 | Frequenza di aggiornamento  | \-                                                                                     |
 | Attribute-Id      | 1.2.840.113556.1.4.947                                                                 |
-| System-Id-Guid    | 9a0dc33b-c100-11d1-nette5-0080c76670c0                                                   |
+| System-Id-Guid    | 9a0dc33b-c100-11d1-bbc5-0080c76670c0                                                   |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md)                                  |
 
 

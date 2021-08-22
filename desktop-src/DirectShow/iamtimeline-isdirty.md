@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 9ee51c44ae99a26e54a616da6752511f8a4e5f4a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 57ca69067960233d3ee649ca71958e7583b601515083265ca5e99dd86cd5071c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073145"
 ---
 # <a name="iamtimelineisdirty-method"></a>Metodo IAMTimeline::IsDirty
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
@@ -64,7 +64,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare l'aggiornamento [Microsoft Windows SDK per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

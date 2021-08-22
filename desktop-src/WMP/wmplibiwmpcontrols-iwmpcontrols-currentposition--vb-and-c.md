@@ -1,11 +1,11 @@
 ---
-title: Proprietà currentPosition IWMPControls
+title: Proprietà currentPosition di IWMPControls
 description: La proprietà currentPosition ottiene o imposta la posizione corrente nell'elemento multimediale in secondi dall'inizio.
 ms.assetid: 48f5241e-7528-485e-bf47-d655ba842af2
 keywords:
 - Proprietà currentPosition Windows Media Player
-- Proprietà currentPosition Windows Media Player, interfaccia IWMPControls
-- Interfaccia IWMPControls Windows Media Player proprietà , currentPosition
+- proprietà currentPosition Windows Media Player, interfaccia IWMPControls
+- Interfaccia IWMPControls Windows Media Player proprietà currentPosition
 topic_type:
 - apiref
 api_name:
@@ -46,11 +46,11 @@ Public Property currentPosition As System.Double
 
 ## <a name="property-value"></a>Valore proprietà
 
-**System.Double** che rappresenta la posizione corrente.
+Oggetto **System.Double** che rappresenta la posizione corrente.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente **usa currentPosition** per cercare una posizione fornita dall'utente. In risposta al clic di un pulsante, **currentPosition** viene impostato sul valore immesso in una casella di testo denominata newPosition. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
+L'esempio seguente usa **currentPosition** per cercare una posizione fornita dall'utente. In risposta al clic di un pulsante, **currentPosition** viene impostato sul valore immesso in una casella di testo denominata newPosition. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp

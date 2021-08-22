@@ -41,7 +41,7 @@ Intero senza segno che rappresenta l'indice nella tabella [shader](callable-shad
 
 `Parameter`
 
-Parametri definiti dall'utente da passare allo shader chiamabile.  Questa struttura dei parametri deve corrispondere alla struttura dei parametri usata nello shader chiamabile a cui punta nella tabella shader.
+Parametri definiti dall'utente da passare allo shader chiamabile.  Questa struttura di parametri deve corrispondere alla struttura dei parametri usata nello shader chiamabile a cui punta nella tabella dello shader.
 
 
 ## <a name="return-value"></a>Valore restituito
@@ -53,9 +53,9 @@ Parametri definiti dall'utente da passare allo shader chiamabile.  Questa strutt
 Questa funzione può essere chiamata dai tipi di shader raytracing seguenti:
 
 * [**Shader chiamabile**](callable-shader.md)
-* [**Hit Shader più vicino**](closest-hit-shader.md)
+* [**Hit shader più vicino**](closest-hit-shader.md)
 * [**Miss Shader**](miss-shader.md)
-* [**Shader di generazione di raggi**](ray-generation-shader.md)
+* [**Ray Generation Shader**](ray-generation-shader.md)
 
 
 
@@ -63,7 +63,7 @@ Questa funzione può essere chiamata dai tipi di shader raytracing seguenti:
 
 <dl> <dt>
 
-[Informazioni di riferimento su Direct3D 12 Raytracing HLSL](direct3d-12-raytracing-hlsl-reference.md)
+[Informazioni di riferimento su HLSL per Direct3D 12 Raytracing](direct3d-12-raytracing-hlsl-reference.md)
 </dt> </dl>
 
  

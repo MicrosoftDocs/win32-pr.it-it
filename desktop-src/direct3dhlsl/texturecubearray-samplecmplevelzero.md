@@ -1,9 +1,9 @@
 ---
-title: Metodi textureCubeArray::TextureCubeArray SampleCmpLevelZero
-description: Viene eseguito il campionamento di una trama solo sul livello mipmap 0, usando un valore di confronto per rifiutare i campioni. | Metodi textureCubeArray::TextureCubeArray SampleCmpLevelZero
+title: Metodi TextureCubeArray::TextureCubeArray SampleCmpLevelZero
+description: Campio una trama solo sul livello mipmap 0, usando un valore di confronto per rifiutare i campioni. | Metodi TextureCubeArray::TextureCubeArray SampleCmpLevelZero
 ms.assetid: 85A7DAC6-25E3-4BB5-BE80-F0A32FCBEF80
 keywords:
-- Metodi di SampleCmpLevelZero HLSL
+- Metodi SampleCmpLevelZero HLSL
 topic_type:
 - apiref
 api_type:
@@ -19,9 +19,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119276171"
 ---
-# <a name="texturecubearraysamplecmplevelzero-methods"></a>Metodi di TextureCubeArray::SampleCmpLevelZero
+# <a name="texturecubearraysamplecmplevelzero-methods"></a>Metodi TextureCubeArray::SampleCmpLevelZero
 
-Viene eseguito il campionamento di una trama solo sul livello mipmap 0, usando un valore di confronto per rifiutare i campioni.
+Campio una trama solo sul livello mipmap 0, usando un valore di confronto per rifiutare i campioni.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Viene eseguito il campionamento di una trama solo sul livello mipmap 0, usando u
 
 | Metodo                                                                                              | Descrizione                                                                                                                            |
 |:----------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
-| [**SampleCmpLevelZero(S,float,float)**](dx-graphics-hlsl-to-samplecmplevelzero.md)                 | Viene eseguito il campionamento di una trama solo sul livello mipmap 0 e il risultato viene confrontato con un valore di confronto.<br/>                                     |
-| [**SampleCmpLevelZero(S,float,float,uint)**](tcubearray-samplecmplevelzero-s-float-float-uint-.md) | Viene eseguito il campionamento di una trama solo sul livello mipmap 0 e il risultato viene confrontato con un valore di confronto. Restituisce lo stato dell'operazione.<br/> |
+| [**SampleCmpLevelZero(S,float,float)**](dx-graphics-hlsl-to-samplecmplevelzero.md)                 | Campita una trama solo sul livello mipmap 0 e confronta il risultato con un valore di confronto.<br/>                                     |
+| [**SampleCmpLevelZero(S,float,float,uint)**](tcubearray-samplecmplevelzero-s-float-float-uint-.md) | Campita una trama solo sul livello mipmap 0 e confronta il risultato con un valore di confronto. Restituisce lo stato dell'operazione.<br/> |
 
 
 
@@ -41,7 +41,7 @@ Viene eseguito il campionamento di una trama solo sul livello mipmap 0, usando u
 [**TextureCubeArray**](texturecubearray.md)
 </dt> <dt>
 
-[Oggetto texture](dx-graphics-hlsl-to-type.md)
+[Oggetto Texture](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_DPICHANGED_BEFOREPARENT (winuser. h)
-description: Per le finestre di primo livello di per monitor V2, questo messaggio viene inviato a tutti gli HWND nell'albero HWDN figlio della finestra in cui è in corso una modifica del valore DPI. | Messaggio WM_DPICHANGED_BEFOREPARENT (winuser. h)
+title: WM_DPICHANGED_BEFOREPARENT messaggio (Winuser.h)
+description: Per le finestre di primo livello per Monitor v2, questo messaggio viene inviato a tutti gli HWND nell'albero HWDN figlio della finestra che sta subendo una modifica DPI. | WM_DPICHANGED_BEFOREPARENT messaggio (Winuser.h)
 ms.assetid: EC8CC313-565F-451F-AE18-66F3B63303CE
 keywords:
-- Messaggio WM_DPICHANGED_BEFOREPARENT alto DPI
+- WM_DPICHANGED_BEFOREPARENT messaggio High DPI (DPI elevato)
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 16641916cb16b789f2349a53b09dbd2af5f520f3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 3a1a52216052f597ce26e5be476a970ff78f0297c08124c9b1ca89453b6fca76
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103969256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119557671"
 ---
-# <a name="wm_dpichanged_beforeparent-message"></a>\_ \_ Messaggio BEFOREPARENT di WM DPICHANGED
+# <a name="wm_dpichanged_beforeparent-message"></a>MESSAGGIO WM \_ DPICHANGED \_ BEFOREPARENT
 
-Per le finestre di primo livello di per [Monitor V2](dpi-awareness-context.md) , questo messaggio viene inviato a tutti gli HWND nell'albero HWDN figlio della finestra in cui è in corso una modifica del valore dpi. Questo messaggio si verifica prima che la finestra di primo livello riceva [**WM \_ DPICHANGED**](wm-dpichanged.md)e attraversa l'albero figlio dal basso verso l'alto.
+Per le finestre di primo livello per Monitor [v2,](dpi-awareness-context.md) questo messaggio viene inviato a tutti gli HWND nell'albero HWDN figlio della finestra che sta subendo una modifica DPI. Questo messaggio viene visualizzato prima che la finestra di primo livello riceva [**WM \_ DPICHANGED**](wm-dpichanged.md)e attraversa l'albero figlio dal basso verso l'alto.
 
 
 ```C++
@@ -39,26 +39,26 @@ Per le finestre di primo livello di per [Monitor V2](dpi-awareness-context.md) ,
 *wParam* 
 </dt> <dd>
 
-Questo valore non è utilizzato e sarà zero.
+Questo valore è inutilizzato e sarà zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Questo valore non è utilizzato e sarà zero.
+Questo valore è inutilizzato e sarà zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo valore non è utilizzato e viene ignorato dal sistema.
+Questo valore viene inutilizzato e ignorato dal sistema.
 
 ## <a name="remarks"></a>Commenti
 
-Non esiste alcuna gestione predefinita del messaggio in [DefWindowProc](/windows/win32/api/winuser/nf-winuser-defwindowproca).
+Non esiste alcuna gestione predefinita di questo messaggio in [DefWindowProc.](/windows/win32/api/winuser/nf-winuser-defwindowproca)
 
-Questo messaggio viene inviato solo quando la finestra di primo livello ha un contesto di riconoscimento DPI di PMv2.
+Questo messaggio viene inviato solo quando la finestra di primo livello ha un contesto di riconoscimento DPI PMv2.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,9 +66,9 @@ Questo messaggio viene inviato solo quando la finestra di primo livello ha un co
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                            |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Winuser</dt> </dl> |
 
 
 
@@ -76,10 +76,10 @@ Questo messaggio viene inviato solo quando la finestra di primo livello ha un co
 
 <dl> <dt>
 
-[**\_DPICHANGED WM**](wm-dpichanged.md)
+[**WM \_ DPICHANGED**](wm-dpichanged.md)
 </dt> <dt>
 
-[**\_AFTERPARENT DPICHANGED \_ WM**](wm-dpichanged-afterparent.md)
+[**WM \_ DPICHANGED \_ AFTERPARENT**](wm-dpichanged-afterparent.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_ENUMCOLUMN. rgEnumColumnValue'
-title: Proprietà JET_ENUMCOLUMN. rgEnumColumnValue
+description: 'Altre informazioni su: JET_ENUMCOLUMN.rgEnumColumnValue'
+title: JET_ENUMCOLUMN.rgEnumColumnValue
 TOCTitle: 'rgEnumColumnValue property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMN.rgEnumColumnValue
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_enumcolumn.rgenumcolumnvalue(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e9d0e131723ae9fb8e1f68193c96d5ed2671a74d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 32322cf1952b6ce2ff8a3496cd5058e4915d86739c20e6c4baaab9577ed15488
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119617231"
 ---
-# <a name="jet_enumcolumnrgenumcolumnvalue-property"></a>Proprietà JET_ENUMCOLUMN. rgEnumColumnValue
+# <a name="jet_enumcolumnrgenumcolumnvalue-property"></a>JET_ENUMCOLUMN.rgEnumColumnValue
 
-Ottiene i valori della colonna enumerata per la colonna. Questo membro viene utilizzato solo se [Err](./jet-enumcolumn.err-property.md) non è [ColumnSingleValue](./jet-wrn-enumeration.md).
+Ottiene i valori di colonna enumerati per la colonna. Questo membro viene usato solo se [err](./jet-enumcolumn.err-property.md) non è [ColumnSingleValue](./jet-wrn-enumeration.md).
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ public JET_ENUMCOLUMNVALUE[] rgEnumColumnValue { get; internal set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo \[\]  
+digitare: \[\]  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_ENUMCOLUMN](./jet-enumcolumn-class.md)
+[JET_ENUMCOLUMN classe](./jet-enumcolumn-class.md)
 
-[Membri JET_ENUMCOLUMN](./jet-enumcolumn-members.md)
+[JET_ENUMCOLUMN membri](./jet-enumcolumn-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

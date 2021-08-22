@@ -18,7 +18,7 @@ Il percorso di un oggetto classe descrive la posizione di una classe all'interno
 
 È possibile usare i metodi seguenti per specificare il percorso di un oggetto:
 
--   Un percorso di oggetto completo a una classe aggiunge il nome della classe a un percorso dello spazio dei nomi.
+-   Un percorso completo dell'oggetto a una classe aggiunge il nome della classe a un percorso dello spazio dei nomi.
 
     L'esempio seguente illustra il percorso della [**classe \_ LogicalDisk Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) all'interno dello spazio dei nomi \\ cimv2 radice nel \\ server denominato Admin.
 
@@ -40,7 +40,7 @@ Quando si esegue una query per un nome di classe ma non si specifica alcuna ista
 
 -   È possibile usare la connessione del moniker con una query o [**GetObject**](https://msdn.microsoft.com/library/ebdktb00(v=VS.71).aspx). È anche possibile usare [**SWbemServices.Get**](swbemservices-get.md).
 
-    L'esempio seguente illustra come usare [GetObject](/previous-versions//kdccchxa(v=vs.85)) per ottenere una definizione di classe.
+    Nell'esempio seguente viene illustrato come usare [GetObject](/previous-versions//kdccchxa(v=vs.85)) per ottenere una definizione di classe.
 
     ```VB
     strComputer = "."

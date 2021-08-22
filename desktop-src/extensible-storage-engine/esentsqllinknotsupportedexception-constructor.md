@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentSQLLinkNotSupportedException'
+description: Altre informazioni sul costruttore EsentSQLLinkNotSupportedException
 title: Costruttore EsentSQLLinkNotSupportedException
 TOCTitle: 'EsentSQLLinkNotSupportedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSQLLinkNotSupportedException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a4e66be482931317d3e2759da2b40a4e0685ae56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d8ca38ec0fb99c1616ee99321436761993e7da379c8536dca16467dce952f250
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119619111"
 ---
 # <a name="esentsqllinknotsupportedexception-constructor"></a>Costruttore EsentSQLLinkNotSupportedException
 
 Inizializza una nuova istanza della classe EsentSQLLinkNotSupportedException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentSQLLinkNotSupportedException()
 
 [Membri di EsentSQLLinkNotSupportedException](./esentsqllinknotsupportedexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

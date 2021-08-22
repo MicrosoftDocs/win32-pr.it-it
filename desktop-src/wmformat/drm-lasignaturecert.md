@@ -1,9 +1,9 @@
 ---
 title: DRM_LASignatureCert
-description: L' \_ attributo DRM LASignatureCert contiene il certificato che autentica la firma nell'intestazione DRM.
+description: L'attributo \_ DRM LASignatureCert contiene il certificato che autentica la firma nell'intestazione DRM.
 ms.assetid: f3ca7d52-86e7-4b22-b274-4fbfdc707cbf
 keywords:
-- DRM_LASignatureCert formato Windows Media
+- DRM_LASignatureCert windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33d7c5275d6ec4146be288d287ed94e34c4d179b
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 287acd4365119af0f1e902b20070837c243cc10740bbf6b4e5b76590ea8a7a76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104046339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119586241"
 ---
-# <a name="drm_lasignaturecert"></a>\_LASIGNATURECERT DRM
+# <a name="drm_lasignaturecert"></a>DRM \_ LASignatureCert
 
-L'attributo **DRM \_ LASignatureCert** contiene il certificato che autentica la firma nell'intestazione DRM.
+**L'attributo \_ DRM LASignatureCert** contiene il certificato che autentica la firma nell'intestazione DRM.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,11 +29,11 @@ g \_ wszWMDRM \_ LASignatureCert
 
 ## <a name="data-type"></a>Tipo di dati
 
-**\_stringa di tipo WMT \_**
+**STRINGA DI TIPO WMT \_ \_**
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà può essere impostata con il metodo [**IWMDRMWriter:: SetDRMAttribute**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmwriter-setdrmattribute) . Non è accessibile all'oggetto Reader.
+Questa proprietà può essere impostata con il [**metodo IWMDRMWriter::SetDRMAttribute.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmwriter-setdrmattribute) Non è accessibile all'oggetto lettore.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -42,9 +42,9 @@ Questa proprietà può essere impostata con il metodo [**IWMDRMWriter:: SetDRMAt
 [**Elenco degli attributi**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

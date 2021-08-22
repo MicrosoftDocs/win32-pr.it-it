@@ -1,19 +1,19 @@
 ---
-description: In questo argomento vengono elencati i metodi TransformPoints della classe Matrix. Per un elenco completo dei metodi per la classe Matrix, vedere Metodi Matrix.
+description: Questo argomento elenca i metodi TransformPoints della classe Matrix. Per un elenco completo dei metodi per la classe Matrix, vedere Metodi matrice.
 ms.assetid: a290aa79-64a0-440e-bfec-a8e66057ec14
-title: Metodi Matrix. TransformPoints
+title: Metodi di Matrix.TransformPoints
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 05cab9abb913087f3cfd8ea5b2f69784d6711ce5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1b44f0349da9ec21e4e7c5b6ec3ab69de898d3117dcd6a3c9651c47a32d4b86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104979306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119612951"
 ---
-# <a name="matrixtransformpoints-methods"></a>Metodi Matrix. TransformPoints
+# <a name="matrixtransformpoints-methods"></a>Metodi di Matrix.TransformPoints
 
-In questo argomento vengono elencati i metodi TransformPoints della classe [**Matrix**](/windows/win32/api/gdiplusmatrix/nl-gdiplusmatrix-matrix) . Per un elenco completo dei metodi per la classe **Matrix** , vedere [Metodi Matrix](-gdiplus-class-matrix-methods.md).
+Questo argomento elenca i metodi TransformPoints della [**classe Matrix.**](/windows/win32/api/gdiplusmatrix/nl-gdiplusmatrix-matrix) Per un elenco completo dei metodi per la **classe Matrix,** vedere [Metodi matrice](-gdiplus-class-matrix-methods.md).
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -21,8 +21,8 @@ In questo argomento vengono elencati i metodi TransformPoints della classe [**Ma
 
 | Metodo                                                                                               | Descrizione                                                                                                                                                                                                                                                                                                 |
 |:-----------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**TransformPoints (Point \* , int)**](/windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-transformpoints(inoutpoint_inint))   | Il metodo [**Matrix:: TransformPoints**](/windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-transformpoints(inoutpoint_inint)) moltiplica ogni punto in una matrice da questa matrice. Ogni punto viene considerato come una matrice di righe. La moltiplicazione viene eseguita con la matrice di riga a sinistra e questa matrice a destra.<br/>  |
-| [**TransformPoints (PointF \* , int)**](/previous-versions//ms535321(v=vs.85)) | Il metodo [**Matrix:: TransformPoints**](/previous-versions//ms535321(v=vs.85)) moltiplica ogni punto in una matrice da questa matrice. Ogni punto viene considerato come una matrice di righe. La moltiplicazione viene eseguita con la matrice di riga a sinistra e questa matrice a destra.<br/> |
+| [**TransformPoints(Point \* ,INT)**](/windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-transformpoints(inoutpoint_inint))   | Il [**metodo Matrix::TransformPoints**](/windows/win32/api/gdiplusmatrix/nf-gdiplusmatrix-matrix-transformpoints(inoutpoint_inint)) moltiplica ogni punto di una matrice per questa matrice. Ogni punto viene considerato come matrice di righe. La moltiplicazione viene eseguita con la matrice di righe a sinistra e questa matrice a destra.<br/>  |
+| [**TransformPoints(PointF \* ,INT)**](/previous-versions//ms535321(v=vs.85)) | Il [**metodo Matrix::TransformPoints**](/previous-versions//ms535321(v=vs.85)) moltiplica ogni punto di una matrice per questa matrice. Ogni punto viene considerato come matrice di righe. La moltiplicazione viene eseguita con la matrice di righe a sinistra e questa matrice a destra.<br/> |
 
 
 

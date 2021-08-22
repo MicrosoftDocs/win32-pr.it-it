@@ -1,7 +1,7 @@
 ---
-description: Pulisce una mesh, preparandola per semplificare.
+description: Pulisce una mesh, prepararla per la semplificazione.
 ms.assetid: 2b586ecc-db87-4b20-a4fc-c8b547bebf65
-title: Funzione D3DXCleanMesh (D3DX9Mesh. h)
+title: Funzione D3DXCleanMesh (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5565978dc1ad0e80c33718275ea65080930ce7cf
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: adc5d60b66dc9eaa06314e18ead26412b8572e9dbc649070c37891a62fb9ecbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119495911"
 ---
-# <a name="d3dxcleanmesh-function"></a>D3DXCleanMesh (funzione)
+# <a name="d3dxcleanmesh-function"></a>Funzione D3DXCleanMesh
 
-Pulisce una mesh, preparandola per semplificare.
+Pulisce una mesh, prepararla per la semplificazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,57 +45,57 @@ HRESULT D3DXCleanMesh(
 
 <dl> <dt>
 
-*CleanType* \[ in\]
+*CleanType* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DXCLEANTYPE**](./d3dxcleantype.md)**
 
-Operazioni sui vertici da eseguire per preparare la pulizia della rete. Vedere [**D3DXCLEANTYPE**](./d3dxcleantype.md).
+Operazioni sui vertici da eseguire in preparazione per la pulizia della mesh. Vedere [**D3DXCLEANTYPE.**](./d3dxcleantype.md)
 
 </dd> <dt>
 
-*pMeshIn* \[ in\]
+*pMeshIn* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntatore a un'interfaccia [**ID3DXMesh**](id3dxmesh.md) , che rappresenta la mesh da pulire.
+Puntatore a [**un'interfaccia ID3DXMesh**](id3dxmesh.md) che rappresenta la mesh da pulire.
 
 </dd> <dt>
 
-*pAdjacencyIn* \[ in\]
+*pAdjacencyIn* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Puntatore a una matrice di tre DWORD per ogni volto che specifica i tre elementi adiacenti per ogni viso nella mesh da pulire.
+Puntatore a una matrice di tre DWORD per viso che specificano i tre vicini per ogni viso nella mesh da pulire.
 
 </dd> <dt>
 
-*ppMeshOut* \[ out\]
+*ppMeshOut* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)\***
 
-Indirizzo di un puntatore a un'interfaccia [**ID3DXMesh**](id3dxmesh.md) , che rappresenta la mesh pulita restituita. Viene restituita la stessa mesh che è stata passata se non era necessaria alcuna pulizia.
+Indirizzo di un puntatore a [**un'interfaccia ID3DXMesh,**](id3dxmesh.md) che rappresenta la mesh pulita restituita. Viene restituita la stessa mesh passata se non è necessaria alcuna pulizia.
 
 </dd> <dt>
 
-*pAdjacencyOut* \[ out\]
+*pAdjacencyOut* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntatore a una matrice di tre DWORD per ogni volto che specifica i tre elementi adiacenti per ogni viso nella mesh di output.
+Puntatore a una matrice di tre DWORD per viso che specificano i tre elementi adiacenti per ogni viso nella mesh di output.
 
 </dd> <dt>
 
-*ppErrorsAndWarnings* \[ out\]
+*ppErrorsAndWarnings* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Restituisce un buffer contenente una stringa di errori e avvisi che illustra i problemi rilevati nella mesh.
+Restituisce un buffer contenente una stringa di errori e avvisi che illustrano i problemi rilevati nella rete.
 
 </dd> </dl>
 
@@ -103,7 +103,7 @@ Restituisce un buffer contenente una stringa di errori e avvisi che illustra i p
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
@@ -115,8 +115,8 @@ Questa funzione pulisce una mesh usando il metodo di pulizia e le opzioni specif
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

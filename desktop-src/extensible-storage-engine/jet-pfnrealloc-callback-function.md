@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_PFNREALLOC funzione di callback'
-title: Funzione di callback JET_PFNREALLOC
+description: 'Altre informazioni su: funzione JET_PFNREALLOC callback'
+title: JET_PFNREALLOC di callback
 TOCTitle: JET_PFNREALLOC Callback Function
 ms:assetid: 443d0b7e-1c3b-4584-9bc3-938724527313
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269237(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 032c1edcfd18166b79f4c8b2868d53d0b84434d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24e4bc43928d6b7ea25294a0163b3b35b1fa04391196e86c54554a785ed2429d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119616888"
 ---
-# <a name="jet_pfnrealloc-callback-function"></a>Funzione di callback JET_PFNREALLOC
+# <a name="jet_pfnrealloc-callback-function"></a>JET_PFNREALLOC di callback
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jet_pfnrealloc-callback-function"></a>Funzione di callback JET_PFNREALLOC
+## <a name="jet_pfnrealloc-callback-function"></a>JET_PFNREALLOC di callback
 
-La funzione JET_PFNREALLOC è un callback compatibile con [realloc](/cpp/c-runtime-library/reference/realloc?view=vs-2019) usato da [JetEnumerateColumns](./jetenumeratecolumns-function.md) per allocare memoria per i buffer di output.
+La JET_PFNREALLOC è un callback compatibile di [rialloca](/cpp/c-runtime-library/reference/realloc?view=vs-2019) usato da [JetEnumerateColumns](./jetenumeratecolumns-function.md) per allocare memoria per i buffer di output.
 
 ```cpp
     void * JET_API JET_PFNREALLOC(
@@ -43,19 +43,19 @@ La funzione JET_PFNREALLOC è un callback compatibile con [realloc](/cpp/c-runti
 
 *pvContext*
 
-Puntatore di contesto assegnato a [JetEnumerateColumns](./jetenumeratecolumns-function.md). Questo puntatore di contesto può essere usato per trasferire lo stato dal chiamante di [JetEnumerateColumns](./jetenumeratecolumns-function.md) all'implementazione di questo callback.
+Puntatore di contesto assegnato [a JetEnumerateColumns.](./jetenumeratecolumns-function.md) Questo puntatore di contesto può essere usato per trasmettere lo stato dal [chiamante di JetEnumerateColumns](./jetenumeratecolumns-function.md) all'implementazione di questo callback.
 
-*PV*
+*Pv*
 
-Se diverso da NULL, specifica un puntatore a un blocco di memoria allocato in precedenza da questo callback. Se NULL, verrà allocato un nuovo blocco di memoria della dimensione richiesta.
+Se diverso da NULL, specifica un puntatore a un blocco di memoria allocato in precedenza da questo callback. Se NULL, verrà allocato un nuovo blocco di memoria delle dimensioni richieste.
 
-*CB*
+*Cb*
 
-Nuova dimensione del blocco di memoria in byte. Se questo parametro è 0 (zero) e viene specificato un blocco di memoria, il blocco di memoria verrà liberato.
+Nuova dimensione in byte del blocco di memoria. Se questo parametro è 0 (zero) e viene specificato un blocco di memoria, tale blocco di memoria verrà liberato.
 
 ### <a name="return-value"></a>Valore restituito
 
-Il sistema può generare codici di esito positivo o negativo in seguito a una chiamata a questa funzione. Per informazioni su come restituire questi codici come HRESULT, vedere [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md).
+Il sistema può generare codici di esito positivo o negativo in seguito a una chiamata a questa funzione. Per informazioni su come restituire questi codici come HRESULT, vedere Errori del motore Archiviazione [estendibile](./extensible-storage-engine-errors.md).
 
 <table>
 <colgroup>
@@ -71,11 +71,11 @@ Il sistema può generare codici di esito positivo o negativo in seguito a una ch
 <tbody>
 <tr class="odd">
 <td><p>Operazione completata</p></td>
-<td><p>Se è stato specificato un blocco di memoria allocato in precedenza ed è stata specificata una nuova dimensione pari a zero, il blocco viene liberato e verrà restituito NULL. Se è stato specificato un blocco di memoria allocato in precedenza ed è stata specificata una nuova dimensione diversa da zero, viene restituito il blocco di memoria riallocato. Se non è stato specificato alcun blocco di memoria, viene restituito un blocco di memoria appena allocato con le dimensioni specificate.</p></td>
+<td><p>Se è stato specificato un blocco di memoria allocato in precedenza ed è stata specificata una nuova dimensione pari a zero, tale blocco viene liberato e viene restituito NULL. Se è stato specificato un blocco di memoria allocato in precedenza ed è stata specificata una nuova dimensione diverso da zero, viene restituito il blocco di memoria riallocato. Se non è stato specificato alcun blocco di memoria, viene restituito un blocco di memoria appena allocato delle dimensioni specificate.</p></td>
 </tr>
 <tr class="even">
-<td><p>Errore</p></td>
-<td><p>Viene restituito NULL. Se è stato fornito un blocco di memoria precedentemente allocato, il blocco rimarrà allocato.</p></td>
+<td><p>Operazioni non riuscite</p></td>
+<td><p>Verrà restituito NULL. Se è stato fornito un blocco di memoria allocato in precedenza, tale blocco rimarrà allocato.</p></td>
 </tr>
 </tbody>
 </table>
@@ -99,7 +99,7 @@ Il sistema può generare codici di esito positivo o negativo in seguito a una ch
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

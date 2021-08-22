@@ -1,17 +1,17 @@
 ---
 description: Specifica il numero di fotogrammi video eliminati durante la codifica.
 ms.assetid: e55db53e-ab70-42ce-b5cd-2e59a4e96b7b
-title: Proprietà MFPKEY_DROPPEDFRAMES (Wmcodecdsp. h)
+title: MFPKEY_DROPPEDFRAMES proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b31404218e4e179e19f53e30f5750976c71e0d7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c701399684b15d07ca287813cf6bf9875bab7c17261bb1ae7b9fe2bda2e5254c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103755474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119663550"
 ---
-# <a name="mfpkey_droppedframes-property"></a>\_Proprietà DROPPEDFRAMES di MFPKEY
+# <a name="mfpkey_droppedframes-property"></a>Proprietà MFPKEY \_ DROPPEDFRAMES
 
 Specifica il numero di fotogrammi video eliminati durante la codifica.
 
@@ -33,9 +33,9 @@ I fotogrammi video vengono talvolta ignorati o eliminati durante la codifica a c
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ I fotogrammi video vengono talvolta ignorati o eliminati durante la codifica a c
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Contiene informazioni sul formato per la ricompressione intelligente.
 ms.assetid: 471a7b4a-e639-443b-a30e-870b747e072c
-title: Struttura SCompFmt0 (qedit. h)
+title: Struttura SCompFmt0 (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,17 +13,17 @@ api_type:
 - HeaderDef
 api_location:
 - Qedit.h
-ms.openlocfilehash: ad5a5277718e8d414d64a86b9c31739cf576736a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f02c9cda80acdd42d0687502834a9b2e66f1cf773d02b88eadabdd346850061e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072705"
 ---
 # <a name="scompfmt0-structure"></a>Struttura SCompFmt0
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
@@ -48,14 +48,14 @@ typedef struct _SCompFmt0 {
 **nFormatId**
 </dt> <dd>
 
-Riservati deve essere zero.
+Riservato; deve essere zero.
 
 </dd> <dt>
 
 **MediaType**
 </dt> <dd>
 
-[**Am \_ Struttura del \_ tipo di supporto**](/windows/win32/api/strmif/ns-strmif-am_media_type) che descrive il formato di compressione.
+[**AM \_ Struttura \_ MEDIA TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) che descrive il formato di compressione.
 
 </dd> </dl>
 
@@ -65,7 +65,7 @@ Riservati deve essere zero.
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Qedit. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Qedit.h</dt> </dl> |
 
 
 

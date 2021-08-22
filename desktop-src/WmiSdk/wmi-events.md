@@ -1,23 +1,23 @@
 ---
-description: Gli eventi possono essere segnalati da WMI o dai provider. In WMI viene utilizzata la traccia eventi (ETW).
+description: Gli eventi possono essere segnalati da WMI o dai provider. WMI usa Event Tracing (ETW).
 ms.assetid: e04ca8fb-2bad-4ff3-8597-c7db6a4b1578
 ms.tgt_platform: multiple
 title: Eventi WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 249bbb99650962452a47fb7556ef9654902a1268
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 070331d4c19e7e639626fd188b8c389d79e5a82a4acffba3a905d1d97256b739
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049869"
 ---
 # <a name="wmi-events"></a>Eventi WMI
 
-Gli eventi possono essere segnalati da WMI o dai provider. In WMI viene utilizzata la [traccia eventi](/windows/desktop/ETW/event-tracing-portal) (ETW). Per ulteriori informazioni, vedere [traccia dell'attività WMI](tracing-wmi-activity.md).
+Gli eventi possono essere segnalati da WMI o dai provider. WMI usa [Event Tracing](/windows/desktop/ETW/event-tracing-portal) (ETW). Per altre informazioni, vedere [Traccia dell'attività WMI](tracing-wmi-activity.md).
 
 > [!Note]  
-> La documentazione seguente è progettata per gli sviluppatori e gli amministratori IT. Se si sta tentando di risolvere un messaggio di errore WMI nel sistema principale, fare riferimento al sito Web [supporto tecnico Microsoft](https://support.microsoft.com/) .
+> La documentazione seguente è progettata per sviluppatori e amministratori IT. Se si sta tentando di risolvere un messaggio di errore WMI nel sistema domestico, vedere il Supporto tecnico Microsoft sito [Web.](https://support.microsoft.com/)
 
  
 
@@ -30,7 +30,7 @@ Gli eventi possono essere segnalati da WMI o dai provider. In WMI viene utilizza
 [Informazioni di riferimento su WMI](wmi-reference.md)
 </dt> <dt>
 
-[Risoluzione dei problemi WMI](wmi-troubleshooting.md)
+[Risoluzione dei problemi di WMI](wmi-troubleshooting.md)
 </dt> </dl>
 
  

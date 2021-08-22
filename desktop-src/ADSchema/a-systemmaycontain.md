@@ -32,8 +32,8 @@ Elenco di attributi facoltativi per una classe. L'elenco di attributi può esser
 | CN                | System-May-Contain                                                           |
 | Ldap-Display-Name | systemMayContain                                                             |
 | Dimensione              | \-                                                                           |
-| Privilegio di aggiornamento  | Amministratore dello schema                                                         |
-| Frequenza di aggiornamento  | Quando la classe viene creata o viene aggiunto un nuovo attributo facoltativo alla classe . |
+| Aggiorna privilegio  | Amministratore dello schema                                                         |
+| Frequenza di aggiornamento  | Quando la classe viene creata o viene aggiunto un nuovo attributo facoltativo alla classe. |
 | Attribute-Id      | 1.2.840.113556.1.4.196                                                       |
 | System-Id-Guid    | bf967a44-0de6-11d0-a285-00aa003049e2                                         |
 | Sintassi            | [**String(Object-Identifier)**](s-string-object-identifier.md)              |

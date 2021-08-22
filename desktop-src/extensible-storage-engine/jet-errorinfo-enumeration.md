@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Enumerazione JET_ErrorInfo'
-title: Enumerazione JET_ErrorInfo (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Altre informazioni su: enumerazione JET_ErrorInfo dati'
+title: JET_ErrorInfo enumerazione (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: JET_ErrorInfo enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.JET_ErrorInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_errorinfo(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 62d953bff6847e38269b7361ac705934642f99e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e6ac5967e2326652063893d9a5910382ef02cc3701d01ed55b6f4028cf78a01f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119617181"
 ---
-# <a name="jet_errorinfo-enumeration"></a>Enumerazione JET_ErrorInfo
+# <a name="jet_errorinfo-enumeration"></a>JET_ErrorInfo enumerazione
 
 Valori validi di InfoLevel per JetGetErrorInfo.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -67,7 +67,7 @@ public enum JET_ErrorInfo
 <tr class="odd">
 <td></td>
 <td>SpecificErr</td>
-<td>Recuperare le informazioni sull'errore specifico passato in pvContext.</td>
+<td>Recuperare informazioni sull'errore specifico passato in pvContext.</td>
 </tr>
 </tbody>
 </table>
@@ -77,4 +77,4 @@ public enum JET_ErrorInfo
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

@@ -24,7 +24,7 @@ ms.locfileid: "119052389"
 
 **UiA Verify** viene installato con Windows Software Development Kit (SDK). Si trova nella cartella UIAVerify della piattaforma della versione bin del percorso di installazione \\ \\ <  > \\ <  > \\ dell'SDK (VisualUIAVerifyNative.exe).
 
-**UiA Verify** è costituito da un'API denominata Automazione interfaccia utente Test Library e da un'interfaccia gui denominata Visual **Automazione interfaccia utente Verify**. Queste informazioni sono descritte negli argomenti seguenti.
+**UiA Verify** è costituito da un'API denominata Automazione interfaccia utente Test Library e da un'interfaccia gui denominata Visual **Automazione interfaccia utente Verify**. Questi argomenti sono descritti negli argomenti seguenti.
 
 > [!NOTE]
 > **Automazione interfaccia utente Verify** è uno strumento legacy. In alternativa, è [consigliabile Insights](https://accessibilityinsights.io/) accessibilità.
@@ -35,7 +35,7 @@ Automazione interfaccia utente deve essere presente nel sistema. Per altre infor
 
 **UiA Verify** viene installato come parte del set complessivo di strumenti in Windows SDK, non viene distribuito come download separato. L Windows SDK include tutti gli strumenti correlati all'accessibilità documentati in questa sezione. [Ottenere l Windows SDK.](https://developer.microsoft.com/) È anche disponibile un archivio di download dell'SDK collegato da tale pagina, se è necessaria una versione precedente.
 
-Per eseguire **UIA Verify** come strumento visivo, trovare VisualUIAVerifyNative.exe nella cartella \\ \\ <  > \\ UIAVerify della piattaforma bin ed eseguirlo (in genere non è necessario eseguire come amministratore). Per altre informazioni, vedere [Visual Automazione interfaccia utente Verify](visual-ui-automation-verify.md). Per usare le librerie, vedere Automazione interfaccia utente [Test Library](ui-automation-test-library.md).
+Per eseguire **UIA Verify** come strumento visivo, trovare VisualUIAVerifyNative.exe nella cartella \\ \\ <  > \\ UIAVerify della piattaforma bin ed eseguirla (in genere non è necessario eseguire come amministratore). Per altre informazioni, vedere [Visual Automazione interfaccia utente Verify](visual-ui-automation-verify.md). Per usare le librerie, vedere Automazione interfaccia utente [Test Library](ui-automation-test-library.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

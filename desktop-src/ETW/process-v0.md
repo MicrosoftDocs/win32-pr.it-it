@@ -1,5 +1,5 @@
 ---
-description: 'Process_V0 classe : questa classe è la classe padre per gli eventi del processo. La sintassi seguente è semplificata dal codice MOF.'
+description: 'Process_V0: questa classe è la classe padre per gli eventi del processo. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: 29ecf04c-4be1-451e-b140-4ffed337cfed
 title: Process_V0 classe
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 0e284840a078b2dac782aecaacae5490f4a06b27
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bb6cf5a36bc25763dd2bb05d57b3d6b9186b9dec95c903de40b58700f5859127
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070021"
 ---
 # <a name="process_v0-class"></a>Classe \_ Process V0
 

@@ -1,7 +1,7 @@
 ---
-description: Flag che indica se il filtro esegue il flusso di dati.
+description: Flag che indica se il filtro è un flusso di dati.
 ms.assetid: d94a22bc-ed4b-460b-96e6-1fb006218cf4
-title: 'Membro CBaseRenderer:: m_bStreaming (Renbase. h)'
+title: Membro CBaseRenderer::m_bStreaming (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7f9a83fc053387b45ebc35773aab2d5a600607c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 66d64700df8115acff1629beb52e311c9645cdc4ad134d4731104660298ad68f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119502731"
 ---
-# <a name="cbaserendererm_bstreaming-member"></a>Membro bStreaming di CBaseRenderer:: m \_
+# <a name="cbaserendererm_bstreaming-member"></a>Membro bStreaming CBaseRenderer::m \_
 
-Flag che indica se il filtro esegue il flusso di dati.
+Flag che indica se il filtro è un flusso di dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ BOOL m_bStreaming;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

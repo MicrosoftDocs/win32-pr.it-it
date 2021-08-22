@@ -1,5 +1,5 @@
 ---
-title: msmq-Visualizza diritto esteso
+title: msmq-Peek diritto esteso
 description: Consente la visualizzazione dei messaggi nella coda.
 ms.assetid: bcf23dbe-79bf-441d-a795-f1a57451bba3
 ms.tgt_platform: multiple
@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119081155"
 ---
-# <a name="msmq-peek-extended-right"></a>msmq-Visualizza diritto esteso
+# <a name="msmq-peek-extended-right"></a>msmq-Peek diritto esteso
 
 Consente la visualizzazione dei messaggi nella coda.
 
@@ -49,7 +49,7 @@ Consente la visualizzazione dei messaggi nella coda.
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 | Localization-Display-ID | 43                                           |
 
 
@@ -60,7 +60,7 @@ Consente la visualizzazione dei messaggi nella coda.
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 | Localization-Display-ID | 43                                           |
 
 
@@ -71,7 +71,7 @@ Consente la visualizzazione dei messaggi nella coda.
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 | Localization-Display-ID | 43                                           |
 
 
@@ -82,7 +82,7 @@ Consente la visualizzazione dei messaggi nella coda.
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 | Localization-Display-ID | 43                                           |
 
 
@@ -93,7 +93,7 @@ Consente la visualizzazione dei messaggi nella coda.
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 | Localization-Display-ID | 43                                           |
 
 
@@ -104,7 +104,7 @@ Consente la visualizzazione dei messaggi nella coda.
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Coda MSMQ**](c-msmqqueue.md)<br/> |
+| Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 | Localization-Display-ID | 43                                           |
 
 

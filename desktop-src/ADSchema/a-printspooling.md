@@ -32,7 +32,7 @@ Stringa che rappresenta il tipo di spooling della stampante.
 | CN                | Print-Spooling                                                       |
 | Ldap-Display-Name | printSpooling                                                        |
 | Dimensione              | Valori possibili: PrintDirect, PrintWhileSpooling, PrintAfterSpooled. |
-| Aggiorna privilegio  | \-                                                                   |
+| Privilegio di aggiornamento  | \-                                                                   |
 | Frequenza di aggiornamento  | \-                                                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.274                                               |
 | System-Id-Guid    | ba305f6c-47e3-11d0-a1a6-00c04fd930c9                                 |

@@ -1,9 +1,9 @@
 ---
-title: Messaggio TTM_SETTIPTEXTCOLOR (COMmctrl. h)
+title: TTM_SETTIPTEXTCOLOR messaggio (Commctrl.h)
 description: Imposta il colore del testo in una finestra della descrizione comando.
 ms.assetid: a6c6eb31-e6c4-47e2-b112-48e7cd21b778
 keywords:
-- Controlli di Windows Message TTM_SETTIPTEXTCOLOR
+- TTM_SETTIPTEXTCOLOR di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fb4ead5374015c014a105056b63077779272535
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a593be5bc9bb3ba8d04b1a657785afb86824119fa8bbd5e027003f296230e99e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642511"
 ---
-# <a name="ttm_settiptextcolor-message"></a>\_Messaggio TTM SETTIPTEXTCOLOR
+# <a name="ttm_settiptextcolor-message"></a>TTM \_ SETTIPTEXTCOLOR message
 
 Imposta il colore del testo in una finestra della descrizione comando.
 
@@ -53,9 +53,9 @@ Quando gli stili di visualizzazione sono abilitati, questo messaggio non ha alcu
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Quando gli stili di visualizzazione sono abilitati, questo messaggio non ha alcu
 
 <dl> <dt>
 
-[**\_GETTIPTEXTCOLOR TTM**](ttm-gettiptextcolor.md)
+[**TTM \_ GETTIPTEXTCOLOR**](ttm-gettiptextcolor.md)
 </dt> </dl>
 
  

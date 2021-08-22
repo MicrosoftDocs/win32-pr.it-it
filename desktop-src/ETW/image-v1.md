@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: aafb2b7307e72e97ba1508aa80638af7565f2867
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7e5db8d6245ab332c6238a7053623580c16e93caa49e0ac2623cba61723dc1d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070131"
 ---
-# <a name="image_v1-class"></a>Classe \_ Image V1
+# <a name="image_v1-class"></a>Classe Image \_ V1
 
 Questa classe è la classe padre per gli eventi di caricamento delle immagini.
 
@@ -44,8 +44,8 @@ La **classe Image \_ V1** non definisce membri.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>          |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Di seguito sono illustrate le costanti di sicurezza WMI usate per gli eventi. Vengono usate per impostare le voci di controllo di accesso (ACE) nei descrittori di sicurezza usati per eventi o sink.
+description: Di seguito vengono illustrate le costanti di sicurezza WMI utilizzate per gli eventi. Vengono usati per impostare le voci di controllo di accesso (ACE) nei descrittori di sicurezza usati per eventi o sink.
 ms.assetid: 18318262-d948-4329-8d48-23664798fc58
 ms.tgt_platform: multiple
 title: Costanti di sicurezza degli eventi (Wbemcli.h)
@@ -14,11 +14,11 @@ ms.locfileid: "119244291"
 ---
 # <a name="event-security-constants"></a>Costanti di sicurezza degli eventi
 
-Di seguito sono illustrate le costanti di sicurezza WMI usate per gli eventi. Vengono usate per impostare le voci di controllo di accesso (ACE) nei descrittori di sicurezza usati per eventi o sink.
+Di seguito vengono illustrate le costanti di sicurezza WMI utilizzate per gli eventi. Vengono usati per impostare le voci di controllo di accesso (ACE) nei descrittori di sicurezza usati per eventi o sink.
 
 <dl> <dt>
 
-<span id="WBEM_RIGHT_PUBLISH"></span><span id="wbem_right_publish"></span>**PUBBLICAZIONE CON DIRITTO WBEM \_ \_**
+<span id="WBEM_RIGHT_PUBLISH"></span><span id="wbem_right_publish"></span>**WBEM \_ RIGHT \_ PUBLISH**
 </dt> <dd> <dl> <dt>
 
 128 (0x80)
@@ -31,7 +31,7 @@ Specifica che l'account può pubblicare eventi nell'istanza di [**\_ \_ EventFil
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_RIGHT_SUBSCRIBE"></span><span id="wbem_right_subscribe"></span>**SOTTOSCRIZIONE CON DIRITTO WBEM \_ \_**
+<span id="WBEM_RIGHT_SUBSCRIBE"></span><span id="wbem_right_subscribe"></span>**WBEM \_ RIGHT \_ SUBSCRIBE**
 </dt> <dd> <dl> <dt>
 
 64 (0x40)
