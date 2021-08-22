@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectShaderVariable GetPatchConstantSignatureElementDesc (D3dx11effect. h)
+title: Metodo ID3DX11EffectShaderVariable GetPatchConstantSignatureElementDesc (D3dx11effect.h)
 description: Ottenere una descrizione della firma costante della patch.
 ms.assetid: 72a86cf6-ace2-4306-ac5c-37d888c087f7
 keywords:
 - Metodo GetPatchConstantSignatureElementDesc Direct3D 11
-- Metodo GetPatchConstantSignatureElementDesc Direct3D 11, interfaccia ID3DX11EffectShaderVariable
-- Interfaccia ID3DX11EffectShaderVariable Direct3D 11, metodo GetPatchConstantSignatureElementDesc
+- Metodo GetPatchConstantSignatureElementDesc Direct3D 11, INTERFACCIA ID3DX11EffectShaderVariable
+- ID3DX11EffectShaderVariable interface Direct3D 11 , GetPatchConstantSignatureElementDesc method
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4fcbc8f7c1bc34b0da42dd08c255a04a6d2fc83
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 85adc4a022c0f897a2e228aab670ccae60de0ec256e5f88e033991b137863fe1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104996161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119565871"
 ---
-# <a name="id3dx11effectshadervariablegetpatchconstantsignatureelementdesc-method"></a>Metodo ID3DX11EffectShaderVariable:: GetPatchConstantSignatureElementDesc
+# <a name="id3dx11effectshadervariablegetpatchconstantsignatureelementdesc-method"></a>Metodo ID3DX11EffectShaderVariable::GetPatchConstantSignatureElementDesc
 
 Ottenere una descrizione della firma costante della patch.
 
@@ -48,7 +48,7 @@ HRESULT GetPatchConstantSignatureElementDesc(
 *ShaderIndex* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Indice dello shader in base zero.
 
@@ -57,18 +57,18 @@ Indice dello shader in base zero.
 *elemento* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Indice di elemento in base zero.
+Indice dell'elemento in base zero.
 
 </dd> <dt>
 
 *pDesc* 
 </dt> <dd>
 
-Tipo: **[ **\_ parametro della firma d3d11 \_ \_ desc**](/windows/desktop/api/D3D11Shader/ns-d3d11shader-d3d11_signature_parameter_desc)\***
+Tipo: **[ **D3D11 \_ SIGNATURE \_ PARAMETER \_ DESC**](/windows/desktop/api/D3D11Shader/ns-d3d11shader-d3d11_signature_parameter_desc)\***
 
-Puntatore a una descrizione del parametro (vedere [**il \_ parametro della firma d3d11 \_ \_ desc**](/windows/desktop/api/D3D11Shader/ns-d3d11shader-d3d11_signature_parameter_desc)).
+Puntatore a una descrizione del parametro (vedere [**D3D11 \_ SIGNATURE \_ PARAMETER \_ DESC).**](/windows/desktop/api/D3D11Shader/ns-d3d11shader-d3d11_signature_parameter_desc)
 
 </dd> </dl>
 
@@ -76,12 +76,12 @@ Puntatore a una descrizione del parametro (vedere [**il \_ parametro della firma
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei seguenti [codici restituiti Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -91,8 +91,8 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-refe
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

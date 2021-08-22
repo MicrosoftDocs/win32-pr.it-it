@@ -1,21 +1,21 @@
 ---
-description: La tabella azione BindImage sul contiene informazioni su ogni file eseguibile o DLL che deve essere associato alle DLL importate.
+description: La tabella BindImage contiene informazioni su ogni eseguibile o DLL che deve essere associato alle DLL importate.
 ms.assetid: 68bf064c-dd85-4796-8e08-6af307f94ad8
-title: Tabella azione BindImage sul
+title: Tabella BindImage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f47b97efc8886d7748d0426a49ed76567810939c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 729ae4f36f3b258845bcba13748495dc9dfb53c86268bd61e98475d1c7c0c282
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119500767"
 ---
-# <a name="bindimage-table"></a>Tabella azione BindImage sul
+# <a name="bindimage-table"></a>Tabella BindImage
 
-La tabella azione BindImage sul contiene informazioni su ogni file eseguibile o DLL che deve essere associato alle DLL importate.
+La tabella BindImage contiene informazioni su ogni eseguibile o DLL che deve essere associato alle DLL importate.
 
-La tabella azione BindImage sul include le colonne seguenti.
+La tabella BindImage include le colonne seguenti.
 
 
 
@@ -35,22 +35,22 @@ La tabella azione BindImage sul include le colonne seguenti.
 <span id="File_"></span><span id="file_"></span><span id="FILE_"></span>File\_
 </dt> <dd>
 
-Chiave esterna per la colonna uno della [tabella dei file](file-table.md). Deve trattarsi di un file eseguibile o di un file DLL.
+Una chiave esterna alla colonna uno della [tabella File](file-table.md). Deve trattarsi di un file eseguibile o di un file DLL.
 
 </dd> <dt>
 
 <span id="Path"></span><span id="path"></span><span id="PATH"></span>Percorso
 </dt> <dd>
 
-Elenco di percorsi, separati da punti e virgola, che rappresentano i percorsi in cui eseguire la ricerca per trovare le dll importate. L'elenco è in genere un elenco di proprietà, con ogni proprietà racchiusa tra parentesi quadre ( \[ \] ).
+Elenco di percorsi, separati da punti e virgola, che rappresentano i percorsi in cui eseguire la ricerca per trovare le DLL importate. L'elenco è in genere un elenco di proprietà, con ogni proprietà racchiusa tra parentesi quadre ( \[ \] ) .
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Il programma di installazione calcola l'indirizzo virtuale di ogni funzione importata da tutte le dll e l'indirizzo virtuale calcolato viene quindi salvato nella tabella degli indirizzi di importazione (IAT) dell'immagine di importazione.
+Il programma di installazione calcola l'indirizzo virtuale di ogni funzione importata da tutte le DLL e l'indirizzo virtuale calcolato viene quindi salvato nella tabella di indirizzi di importazione (IAT) dell'immagine di importazione.
 
-Questa tabella viene definita quando viene eseguita l' [azione azione BindImage sul](bindimage-action.md) .
+Questa tabella viene indicata quando viene eseguita [l'azione BindImage.](bindimage-action.md)
 
 ## <a name="validation"></a>Convalida
 

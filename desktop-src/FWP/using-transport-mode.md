@@ -1,19 +1,19 @@
 ---
 title: Uso della modalità di trasporto
-description: Il codice di esempio seguente illustra come configurare la modalità di trasporto IPsec usando AuthIP con l'autenticazione utente e l'individuazione delle negoziazioni.
+description: Il codice di esempio seguente illustra come configurare la modalità di trasporto IPsec usando AuthIP con l'autenticazione utente e l'individuazione della negoziazione.
 ms.assetid: 996d2fc9-ed88-4c96-93f0-a4e5daf7dc45
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0eaac1bea2c92767178ec92215eb5a02e7fb7e1d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4701a10a9e17fb3a47853a49700c38c629feff7286c489910f3f7df7c0e231b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119535361"
 ---
 # <a name="using-transport-mode"></a>Uso della modalità di trasporto
 
-Nell'esempio di codice seguente viene illustrato come configurare la modalità di trasporto IPsec utilizzando AuthIP con l'autenticazione utente e l'individuazione delle negoziazioni.
+Il codice di esempio seguente illustra come configurare la modalità di trasporto IPsec usando AuthIP con l'autenticazione utente e l'individuazione della negoziazione.
 
 
 ```C++
@@ -412,9 +412,9 @@ CLEANUP:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

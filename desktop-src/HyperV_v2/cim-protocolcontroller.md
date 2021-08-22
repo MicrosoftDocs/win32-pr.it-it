@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un gruppo di controller che controllano l'operazione e la funzione dei dispositivi che avviano i protocolli.
+description: Rappresenta un gruppo di controller che controllano il funzionamento e la funzione dei dispositivi che avviano protocolli.
 ms.assetid: fb6b65d4-3a1a-47b1-afc7-9b10e8eeaa32
-title: Classe CIM_ProtocolController
+title: CIM_ProtocolController classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 27372bc57ad36f37689d75b3963ec0c4b1106956
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7dcd0f0ca1891914e2c4fc3fedbc0012d930dbaec99926f9db8e013435367f36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148512"
 ---
-# <a name="cim_protocolcontroller-class"></a>CIM \_ ProtocolController (classe)
+# <a name="cim_protocolcontroller-class"></a>Classe CIM \_ ProtocolController
 
-Rappresenta un gruppo di controller che controllano l'operazione e la funzione dei dispositivi che avviano i protocolli.
+Rappresenta un gruppo di controller che controllano il funzionamento e la funzione dei dispositivi che avviano protocolli.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,26 +37,26 @@ class CIM_ProtocolController : CIM_LogicalDevice
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ProtocolController** presenta questi tipi di membri:
+La **classe CIM \_ ProtocolController** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ProtocolController** dispone di queste proprietà.
+La **classe CIM \_ ProtocolController** ha queste proprietà.
 
 <dl> <dt>
 
 **MaxUnitsControlled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero massimo di unità che possono essere controllate o accessibili tramite il controller di protocollo.
+Numero massimo di unità che possono essere controllate o accessibili tramite il controller del protocollo.
 
 </dd> </dl>
 
@@ -68,8 +68,8 @@ Numero massimo di unità che possono essere controllate o accessibili tramite il
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -78,7 +78,7 @@ Numero massimo di unità che possono essere controllate o accessibili tramite il
 
 <dl> <dt>
 
-[**\_LOGICALDEVICE CIM**](cim-logicaldevice.md)
+[**CIM \_ LogicalDevice**](cim-logicaldevice.md)
 </dt> </dl>
 
  

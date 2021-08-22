@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà BoolColumnValue. size'
-title: Proprietà BoolColumnValue. size
+description: Altre informazioni sulla proprietà BoolColumnValue.Size
+title: Proprietà BoolColumnValue.Size
 TOCTitle: 'Size property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.BoolColumnValue.Size
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.boolcolumnvalue.size(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 95458e02780b1a0a96c46c857dc168be3125a816
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c06c1645ddca2461122477ff07a963bb9e0727967983c5e76ee82ef060a3200c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119275281"
 ---
-# <a name="boolcolumnvaluesize-property"></a>Proprietà BoolColumnValue. size
+# <a name="boolcolumnvaluesize-property"></a>Proprietà BoolColumnValue.Size
 
-Ottiene la dimensione del valore nella colonna. Viene restituito 0 per le colonne di dimensioni variabili, ad esempio binario e stringa.
+Ottiene le dimensioni del valore nella colonna. Viene restituito 0 per le colonne con dimensioni variabili, ad esempio binarie e stringa.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,7 +57,7 @@ protected override int Size { get; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -67,4 +67,4 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Membri di BoolColumnValue](./boolcolumnvalue-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: Il metodo OnWaitStart aggiorna i tempi di attesa e non in attesa.
+description: Il metodo OnWaitStart aggiorna i tempi di attesa e non di attesa.
 ms.assetid: 3f2e2bf2-f205-4b59-b969-cf8c2136437d
-title: Metodo CBaseVideoRenderer. OnWaitStart (Renbase. h)
+title: Metodo CBaseVideoRenderer.OnWaitStart (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d4fab7e1a1f24c3d00f46018db9478990be71666
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f9bc3b895f27490377fd5de188b7cea8ccd429c55d36a5cdd0fea4ce025bac29
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119502601"
 ---
-# <a name="cbasevideorendereronwaitstart-method"></a>CBaseVideoRenderer. OnWaitStart, metodo
+# <a name="cbasevideorendereronwaitstart-method"></a>Metodo CBaseVideoRenderer.OnWaitStart
 
-Il `OnWaitStart` metodo aggiorna i tempi di attesa e non è in attesa.
+Il `OnWaitStart` metodo aggiorna i tempi di attesa e non di attesa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro viene chiamata quando si avvia l'attesa di un evento di rendering. Viene usato solo per le misurazioni delle prestazioni.
+Questa funzione membro viene chiamata quando si inizia ad attendere un evento di rendering. Viene usato solo per le misurazioni delle prestazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Questa funzione membro viene chiamata quando si avvia l'attesa di un evento di r
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

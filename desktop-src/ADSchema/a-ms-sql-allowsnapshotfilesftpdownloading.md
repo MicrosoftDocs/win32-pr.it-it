@@ -5,7 +5,7 @@ ms.assetid: 227e1438-db8d-4e8f-b2dd-ffc6ef50e0d1
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo MS-SQL-AllowSnapshotFilesFTPDownloading
-- Schema AD dell'attributo mS-SQL-AllowSnapshotFilesFTPDownloading
+- mS-SQL-AllowSnapshotFilesFTPDownloading attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed32d824f4832294b3484da4e871303b31820878
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c4c0f78de1eee1b69b838feadcdbdf3e3390870332b0f53ceecfab3d365cb7e9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104123060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300041"
 ---
 # <a name="ms-sql-allowsnapshotfilesftpdownloading-attribute"></a>Attributo MS-SQL-AllowSnapshotFilesFTPDownloading
 
@@ -30,12 +30,12 @@ True se la pubblicazione consente il download dei file di snapshot tramite FTP.
 | Voce | Valore |
 |-------------------|-----------------------------------------|
 | CN                | MS-SQL-AllowSnapshotFilesFTPDownloading |
-| LDAP-Display-Name | mS-SQL-AllowSnapshotFilesFTPDownloading |
+| Ldap-Display-Name | mS-SQL-AllowSnapshotFilesFTPDownloading |
 | Dimensione              | 4 byte                                 |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.        |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.        |
 | Frequenza di aggiornamento  | Quando la replica è impostata.              |
 | Attribute-Id      | 1.2.840.113556.1.4.1406                 |
-| System-ID-GUID    | c49b8be8-d34b-11d2-999a-0000f87a57d4    |
+| System-Id-Guid    | c49b8be8-d34b-11d2-999a-0000f87a57d4    |
 | Sintassi            | [**Boolean**](s-boolean.md)            |
 
 
@@ -58,15 +58,15 @@ True se la pubblicazione consente il download dei file di snapshot tramite FTP.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ True se la pubblicazione consente il download dei file di snapshot tramite FTP.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ True se la pubblicazione consente il download dei file di snapshot tramite FTP.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ True se la pubblicazione consente il download dei file di snapshot tramite FTP.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ True se la pubblicazione consente il download dei file di snapshot tramite FTP.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ True se la pubblicazione consente il download dei file di snapshot tramite FTP.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: DS-check-non aggiornato-fantasma esteso a destra
-description: Diritto esteso necessario per forzare DS a controllare gli oggetti fantasma obsoleti.
+title: DS-Check-Stale-Phantoms extended right
+description: Diritto esteso necessario per forzare DS a controllare gli oggetti fantasma non obsoleti.
 ms.assetid: 5f3e5b05-ebc4-4e79-acc0-0e4f7cf53098
 ms.tgt_platform: multiple
 keywords:
-- DS-check-non aggiornato-schema AD esteso destro fantasma
+- Schema AD esteso DS-Check-Stale-Phantoms
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f280d04a60b539d6559d9e5df830947742663b1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c2dcdec83da65117b0f04b7de08f4cd83abb589cc63fd1b8cfb053d3878e5196
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532361"
 ---
-# <a name="ds-check-stale-phantoms-extended-right"></a>DS-check-non aggiornato-fantasma esteso a destra
+# <a name="ds-check-stale-phantoms-extended-right"></a>DS-Check-Stale-Phantoms extended right
 
-Diritto esteso necessario per forzare DS a controllare gli oggetti fantasma obsoleti.
+Diritto esteso necessario per forzare DS a controllare gli oggetti fantasma non obsoleti.
 
 
 
 | Voce | Valore |
 |--------------|--------------------------------------|
-| CN           | DS-check-non aggiornato-fantasma              |
-| Display-Name | Verifica Phantom obsoleti                 |
+| CN           | DS-Check-Stale-Phantoms              |
+| Display-Name | Controllare i fantasma non obsoleti                 |
 | Rights-GUID  | 69ae6200-7f46-11d2-b9ad-00c04f79f805 |
 
 
@@ -50,7 +50,7 @@ Diritto esteso necessario per forzare DS a controllare gli oggetti fantasma obso
 | Voce | Valore |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localization-display-ID | 53                                       |
+| Localization-Display-ID | 53                                       |
 
 
 
@@ -61,7 +61,7 @@ Diritto esteso necessario per forzare DS a controllare gli oggetti fantasma obso
 | Voce | Valore |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localization-display-ID | 53                                       |
+| Localization-Display-ID | 53                                       |
 
 
 
@@ -72,7 +72,7 @@ Diritto esteso necessario per forzare DS a controllare gli oggetti fantasma obso
 | Voce | Valore |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localization-display-ID | 53                                       |
+| Localization-Display-ID | 53                                       |
 
 
 
@@ -83,7 +83,7 @@ Diritto esteso necessario per forzare DS a controllare gli oggetti fantasma obso
 | Voce | Valore |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localization-display-ID | 53                                       |
+| Localization-Display-ID | 53                                       |
 
 
 
@@ -94,7 +94,7 @@ Diritto esteso necessario per forzare DS a controllare gli oggetti fantasma obso
 | Voce | Valore |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localization-display-ID | 53                                       |
+| Localization-Display-ID | 53                                       |
 
 
 
@@ -105,7 +105,7 @@ Diritto esteso necessario per forzare DS a controllare gli oggetti fantasma obso
 | Voce | Valore |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localization-display-ID | 53                                       |
+| Localization-Display-ID | 53                                       |
 
 
 

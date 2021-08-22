@@ -1,7 +1,7 @@
 ---
-description: Il metodo Initialize prepara l'oggetto IByteBuffer per l'utilizzo. Questo metodo deve essere chiamato prima di chiamare altri metodi nell'interfaccia IByteBuffer.
+description: Il metodo Initialize prepara l'oggetto IByteBuffer per l'uso. Questo metodo deve essere chiamato prima di chiamare qualsiasi altro metodo nell'interfaccia IByteBuffer.
 ms.assetid: 1b22e693-0add-4b80-a2c4-925ebd3ab3a6
-title: 'Metodo IByteBuffer:: Initialize (scardssp. h)'
+title: Metodo IByteBuffer::Initialize (Scardssp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 245f9282174ddeef66b130597f0f20ddf21ededc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 28a525b26d49dd5df8a2be3ba6a5af5a16459c26e191368badae34ca381488e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119417631"
 ---
-# <a name="ibytebufferinitialize-method"></a>Metodo IByteBuffer:: Initialize
+# <a name="ibytebufferinitialize-method"></a>Metodo IByteBuffer::Initialize
 
-\[Il metodo **Initialize** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive. L'interfaccia [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream) fornisce funzionalità simili.\]
+\[Il **metodo Initialize** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive. [**L'interfaccia IStream**](/windows/desktop/api/objidl/nn-objidl-istream) offre funzionalità simili.\]
 
-Il metodo **Initialize** prepara l'oggetto [**IByteBuffer**](ibytebuffer.md) per l'utilizzo. Questo metodo deve essere chiamato prima di chiamare altri metodi nell'interfaccia **IByteBuffer** .
+Il **metodo Initialize** prepara l'oggetto [**IByteBuffer**](ibytebuffer.md) per l'uso. Questo metodo deve essere chiamato prima di chiamare qualsiasi altro metodo **nell'interfaccia IByteBuffer.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,31 +42,31 @@ HRESULT Initialize(
 
 <dl> <dt>
 
-*lSize* \[ in\]
+*lSize* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni iniziali, in byte, dei dati che devono essere contenuti nel flusso.
+Dimensioni iniziali, in byte, dei dati che il flusso deve contenere.
 
 </dd> <dt>
 
-*pData* \[ in\]
+*pData* \[ Pollici\]
 </dt> <dd>
 
-Se non è **null**, i dati iniziali da scrivere nel flusso.
+Se non **è NULL,** i dati iniziali da scrivere nel flusso.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è un valore **HRESULT**. Il valore S \_ OK indica che la chiamata è stata eseguita correttamente.
+Il valore restituito è **HRESULT.** Il valore S \_ OK indica che la chiamata ha avuto esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si usa un nuovo flusso [**IByteBuffer**](ibytebuffer.md) , chiamare questo metodo prima di usare uno degli altri metodi **IByteBuffer** .
+Quando si usa un [**nuovo flusso IByteBuffer,**](ibytebuffer.md) chiamare questo metodo prima di usare uno degli altri **metodi IByteBuffer.**
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come inizializzare l'oggetto [**IByteBuffer**](ibytebuffer.md) .
+Nell'esempio seguente viene illustrata l'inizializzazione [**dell'oggetto IByteBuffer.**](ibytebuffer.md)
 
 
 ```C++
@@ -87,14 +87,14 @@ if (FAILED(hr))
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                   |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Scardssp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Scardssp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Scardssp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IByteBuffer è definito come E126F8FE-A7AF-11D0-B88A-00C04FD424B9<br/>          |
+| IID<br/>                      | IID IByteBuffer è definito \_ come E126F8FE-A7AF-11D0-B88A-00C04FD424B9<br/>          |
 
 
 

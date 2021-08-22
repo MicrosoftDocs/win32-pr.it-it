@@ -1,29 +1,29 @@
 ---
-description: Registrazione delle attività del nodo della topologia
+description: Registrazione delle attività del nodo topologia
 ms.assetid: 853b3900-1214-43b9-bf0e-e45c1159c5f1
-title: Registrazione delle attività del nodo della topologia
+title: Registrazione delle attività del nodo topologia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 327ca83d0513b97d053e27388bd0f2a418dfb253
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 65b2325b7f300ac7ebc9b11e442169ad81f5769a8b54ba0ecf4537d637a9e7cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119465521"
 ---
-# <a name="logging-topology-node-activities"></a>Registrazione delle attività del nodo della topologia
+# <a name="logging-topology-node-activities"></a>Registrazione delle attività del nodo topologia
 
-TopoEdit fornisce l'opzione per la raccolta di informazioni di registrazione per un nodo di trasformazione o un nodo di output di una topologia.
+TopoEdit consente di raccogliere informazioni di registrazione per un nodo di trasformazione o un nodo di output di una topologia.
 
 ## <a name="to-setup-logging"></a>Per configurare la registrazione
 
-1.  Nel **riquadro topologia** selezionare un nodo di trasformazione o un nodo di output facendo clic su di esso.
+1.  Nel riquadro **Topologia selezionare** un nodo di trasformazione o un nodo di output facendo clic su di esso.
 
-2.  Dal menu **strumenti** fare clic su **Spy nodo selezionato**.
+2.  Scegliere **Spy** Selected **Node** dal menu Strumenti .
 
-Durante la compilazione della topologia, tutte le chiamate al metodo sul nodo selezionato vengono registrate in un file di testo. Questa operazione viene salvata nella cartella in cui si trova il file multimediale. Il file di log viene salvato con il nome del nodo e l'identificatore univoco del nodo di topologia. In questo modo si garantisce che nessun altro nodo scriva nel log. Per ottenere l'identificatore a livello di codice, chiamare [**IMFTopologyNode:: GetTopoNodeID**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-gettoponodeid).
+Durante la compilazione della topologia, tutte le chiamate al metodo nel nodo selezionato vengono registrate in un file di testo. Viene salvato nella cartella in cui si trova il file multimediale. Il file di log viene salvato con il nome del nodo e l'identificatore univoco del nodo della topologia. Ciò garantisce che nessun altro nodo scrive nel log. Per ottenere l'identificatore a livello di codice, chiamare [**IMFTopologyNode::GetTopoNodeID**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-gettoponodeid).
 
-Di seguito è riportato un Estratto da un file di log.
+Di seguito è riportato un estratto di un file di log.
 
 `GetStreamCount(02C9F518 02C9F514) returns 0`
 
@@ -63,7 +63,7 @@ Di seguito è riportato un Estratto da un file di log.
 
 <dl> <dt>
 
-[TopoEdit](topoedit.md)
+[TopoModifica](topoedit.md)
 </dt> </dl>
 
  

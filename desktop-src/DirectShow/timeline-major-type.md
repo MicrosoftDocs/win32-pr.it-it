@@ -1,7 +1,7 @@
 ---
-description: L' \_ enumerazione del \_ tipo principale della sequenza temporale specifica il tipo principale di un oggetto.
+description: L'enumerazione TIMELINE \_ MAJOR TYPE specifica il tipo principale di un \_ oggetto.
 ms.assetid: 1a5fde83-2a0a-4bcf-bffe-340a9d914885
-title: Enumerazione TIMELINE_MAJOR_TYPE (qedit. h)
+title: TIMELINE_MAJOR_TYPE enumerazione (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - HeaderDef
 api_location:
 - Qedit.h
-ms.openlocfilehash: 25c3e829aa73d1da78c110ffd148fb0ebaaebdd9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b18088a9d01b263c80a4ff941a6b7720043da708eaeaebf4f79a2084d1ed258f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119501721"
 ---
-# <a name="timeline_major_type-enumeration"></a>\_Enumerazione del tipo principale della sequenza temporale \_
+# <a name="timeline_major_type-enumeration"></a>Enumerazione TIMELINE \_ MAJOR \_ TYPE
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-L' `TIMELINE_MAJOR_TYPE` enumerazione specifica il tipo principale di un oggetto.
+`TIMELINE_MAJOR_TYPE`L'enumerazione specifica il tipo principale di un oggetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,45 +49,45 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="TIMELINE_MAJOR_TYPE_COMPOSITE"></span><span id="timeline_major_type_composite"></span>**\_tipo principale sequenza temporale \_ \_ composita**
+<span id="TIMELINE_MAJOR_TYPE_COMPOSITE"></span><span id="timeline_major_type_composite"></span>**TIPO PRINCIPALE \_ SEQUENZA \_ TEMPORALE \_ COMPOSITO**
 </dt> <dd>
 
-Oggetto composito. Include una o più tracce.
+Oggetto composito. Contiene una o più tracce.
 
 </dd> <dt>
 
-<span id="TIMELINE_MAJOR_TYPE_TRACK"></span><span id="timeline_major_type_track"></span>**\_traccia del \_ tipo \_ principale della sequenza temporale**
+<span id="TIMELINE_MAJOR_TYPE_TRACK"></span><span id="timeline_major_type_track"></span>**TRACCIA \_ DEL TIPO PRINCIPALE DELLA SEQUENZA \_ \_ TEMPORALE**
 </dt> <dd>
 
-Oggetto Track. Include una o più origini.
+Oggetto Track. Contiene una o più origini.
 
 </dd> <dt>
 
-<span id="TIMELINE_MAJOR_TYPE_SOURCE"></span><span id="timeline_major_type_source"></span>**\_ \_ origine tipo principale sequenza temporale \_**
+<span id="TIMELINE_MAJOR_TYPE_SOURCE"></span><span id="timeline_major_type_source"></span>**ORIGINE \_ TIPO PRINCIPALE SEQUENZA \_ \_ TEMPORALE**
 </dt> <dd>
 
 Oggetto di origine. Contiene un riferimento a un'origine multimediale.
 
 </dd> <dt>
 
-<span id="TIMELINE_MAJOR_TYPE_TRANSITION"></span><span id="timeline_major_type_transition"></span>**\_transizione di \_ tipo \_ principale della sequenza temporale**
+<span id="TIMELINE_MAJOR_TYPE_TRANSITION"></span><span id="timeline_major_type_transition"></span>**TRANSIZIONE \_ DEL TIPO PRINCIPALE DELLA SEQUENZA \_ \_ TEMPORALE**
 </dt> <dd>
 
-Oggetto di transizione. Definisce una transizione tra compositi, tracce o origini.
+Oggetto Transition. Definisce una transizione tra compositi, tracce o origini.
 
 </dd> <dt>
 
-<span id="TIMELINE_MAJOR_TYPE_EFFECT"></span><span id="timeline_major_type_effect"></span>**\_effetto del \_ tipo \_ principale della sequenza temporale**
+<span id="TIMELINE_MAJOR_TYPE_EFFECT"></span><span id="timeline_major_type_effect"></span>**EFFETTO TIPO \_ \_ PRINCIPALE SEQUENZA \_ TEMPORALE**
 </dt> <dd>
 
-Oggetto effetto. Definisce un effetto a input singolo da applicare a un oggetto composito, di traccia o di origine.
+Oggetto Effect. Definisce un effetto a input singolo da applicare a un oggetto composito, di traccia o di origine.
 
 </dd> <dt>
 
-<span id="TIMELINE_MAJOR_TYPE_GROUP"></span><span id="timeline_major_type_group"></span>**\_gruppo di \_ tipi \_ principali della sequenza temporale**
+<span id="TIMELINE_MAJOR_TYPE_GROUP"></span><span id="timeline_major_type_group"></span>**GRUPPO \_ TIPO PRINCIPALE SEQUENZA \_ \_ TEMPORALE**
 </dt> <dd>
 
-Oggetto gruppo. Contiene una o più tracce di un determinato tipo.
+Oggetto Group. Contiene una o più tracce di un determinato tipo.
 
 </dd> </dl>
 
@@ -97,7 +97,7 @@ Oggetto gruppo. Contiene una o più tracce di un determinato tipo.
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Qedit. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Qedit.h</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: attributo meetingAdvertiseScope
+title: Attributo meetingAdvertiseScope
 description: Indica se una voce deve essere annunciata all'esterno di un gateway aziendale o di un proxy.
 ms.assetid: 9e53486a-7717-4033-913e-7436a77cba00
 ms.tgt_platform: multiple
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62fa1731b96f34403587c71944e94dd1e7502751
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 14207720379bdd0e441cadff04844bf70bf7e6aae40ceb192de99fca561c0c5f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300971"
 ---
-# <a name="meetingadvertisescope-attribute"></a>attributo meetingAdvertiseScope
+# <a name="meetingadvertisescope-attribute"></a>Attributo meetingAdvertiseScope
 
 Indica se una voce deve essere annunciata all'esterno di un gateway aziendale o di un proxy.
 
@@ -29,12 +29,12 @@ Indica se una voce deve essere annunciata all'esterno di un gateway aziendale o 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | meetingAdvertiseScope                       |
-| LDAP-Display-Name | meetingAdvertiseScope                       |
+| Ldap-Display-Name | meetingAdvertiseScope                       |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.582                      |
-| System-ID-GUID    | 11b6cc8b-48c4-11d1-a9c3-0000f80367c1        |
+| System-Id-Guid    | 11b6cc8b-48c4-11d1-a9c3-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -57,15 +57,15 @@ Indica se una voce deve essere annunciata all'esterno di un gateway aziendale o 
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Indica se una voce deve essere annunciata all'esterno di un gateway aziendale o 
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Indica se una voce deve essere annunciata all'esterno di un gateway aziendale o 
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Indica se una voce deve essere annunciata all'esterno di un gateway aziendale o 
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Indica se una voce deve essere annunciata all'esterno di un gateway aziendale o 
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -162,15 +162,15 @@ Indica se una voce deve essere annunciata all'esterno di un gateway aziendale o 
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 

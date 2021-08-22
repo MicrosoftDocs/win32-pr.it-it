@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: ee96098477501123cffc1fd59a52734bbbea35d5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ee1a2e66745ceac50cc00ba6e625a171f18c7d2b54d4e51af2c86f6711675ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532751"
 ---
 # <a name="createsnapshot-method-of-the-cim_virtualsystemsnapshotservice-class"></a>Metodo CreateSnapshot della classe CIM \_ VirtualSystemSnapshotService
 
@@ -43,21 +43,21 @@ uint32 CreateSnapshot(
 
 <dl> <dt>
 
-*AffectedSystem* \[ in\]
+*AffectedSystem* \[ Pollici\]
 </dt> <dd>
 
 Riferimento [**CIM \_ ComputerSystem**](cim-computersystem.md) al sistema virtuale interessato.
 
 </dd> <dt>
 
-*SnapshotSettings* \[ in\]
+*SnapshotSettings* \[ Pollici\]
 </dt> <dd>
 
-Impostazioni parametri.
+Impostazioni dei parametri.
 
 </dd> <dt>
 
-*SnapshotType* \[ in\]
+*SnapshotType* \[ Pollici\]
 </dt> <dd>
 
 Tipo di snapshot richiesto:
@@ -71,7 +71,7 @@ Tipo di snapshot richiesto:
 
 </dt> <dd>
 
-Completare lo snapshot del sistema virtuale.
+Snapshot completo del sistema virtuale.
 
 </dd> <dt>
 
@@ -95,25 +95,25 @@ Snapshot dei dischi del sistema virtuale.
 
 <span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>
 
-<span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>**Specifico del fornitore** (32768.. 65535)
+<span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>**Specifico del** fornitore (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*ResultingSnapshot* \[ in uscita\]
+*ResultingSnapshot* \[ in, out\]
 </dt> <dd>
 
-Riferimento [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) allo snapshot del sistema virtuale risultante.
+Riferimento [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) per lo snapshot del sistema virtuale risultante.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Se l'operazione è a esecuzione prolungata, è possibile che venga restituito un processo. In questo caso, l'istanza della classe [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) che rappresenta il nuovo snapshot del sistema virtuale viene presentata tramite l'associazione [**CIM \_ AffectedJobElement**](cim-affectedjobelement.md) con il valore della proprietà **affected** che fa riferimento alla nuova istanza della classe **CIM \_ VirtualSystemSettingData** che rappresenta lo snapshot del sistema virtuale e il valore di **ElementEffects** impostato su 5 (Create).
+Se l'operazione è a esecuzione lunga, è possibile che venga restituito un processo. In questo caso, l'istanza della classe [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) che rappresenta il nuovo snapshot del sistema virtuale viene presentata tramite l'associazione [**CIM \_ AffectedJobElement**](cim-affectedjobelement.md) con il valore della **proprietà AffectedElement** che fa riferimento alla nuova istanza della classe **CIM \_ VirtualSystemSettingData** che rappresenta lo snapshot del sistema virtuale e il valore di **ElementEffects** impostato su 5 (Create).
 
 > [!Note]  
-> Questo parametro è di lettura/scrittura in Windows 8.1.
+> Questo parametro era di lettura/scrittura Windows 8.1.
 
  
 
@@ -121,7 +121,7 @@ Se l'operazione è a esecuzione prolungata, è possibile che venga restituito un
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, restituisce 0; in caso contrario, restituisce un errore.
+In caso di esito positivo, restituisce 0. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -131,13 +131,13 @@ In caso di esito positivo, restituisce 0; in caso contrario, restituisce un erro
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non valido** (4)
+**Parametro non** valido (4)
 </dt> <dt>
 
 **Stato non valido** (5)
@@ -146,16 +146,16 @@ In caso di esito positivo, restituisce 0; in caso contrario, restituisce un erro
 **Tipo non valido** (6)
 </dt> <dt>
 
-**DMTF riservato** (..)
+**DmTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -165,9 +165,9 @@ In caso di esito positivo, restituisce 0; in caso contrario, restituisce un erro
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -176,7 +176,7 @@ In caso di esito positivo, restituisce 0; in caso contrario, restituisce un erro
 
 <dl> <dt>
 
-[**\_VIRTUALSYSTEMSNAPSHOTSERVICE CIM**](cim-virtualsystemsnapshotservice.md)
+[**CIM \_ VirtualSystemSnapshotService**](cim-virtualsystemsnapshotservice.md)
 </dt> </dl>
 
  

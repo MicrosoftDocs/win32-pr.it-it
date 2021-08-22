@@ -1,7 +1,7 @@
 ---
 description: Contiene informazioni sull'inattività del sistema.
 ms.assetid: f6349b7c-1835-4492-95e3-9ce142628804
-title: Struttura SYSTEM_POWER_INFORMATION
+title: SYSTEM_POWER_INFORMATION struttura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: c32a8ad86b71ea680bd2961c9196a0896b055e5e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 665c19a99bffae46cf20af8c5c634e2e9594ecd07d02f003f56d42277ce9a46f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143304"
 ---
-# <a name="system_power_information-structure"></a>\_ \_ Struttura delle informazioni sull'alimentazione del sistema
+# <a name="system_power_information-structure"></a>Struttura SYSTEM \_ POWER \_ INFORMATION
 
 Contiene informazioni sull'inattività del sistema.
 
@@ -44,21 +44,21 @@ typedef struct _SYSTEM_POWER_INFORMATION {
 **MaxIdlenessAllowed**
 </dt> <dd>
 
-L'inattività in cui il sistema viene considerato inattivo e il timeout di inattività inizia il conteggio, espresso come percentuale. Se si scende sotto questo numero, il timer verrà annullato.
+Inattività in cui il sistema viene considerato inattivo e inizia il conteggio del timeout di inattività, espresso come percentuale. Se si scende sotto questo numero, il timer viene annullato.
 
 </dd> <dt>
 
 **Inattività**
 </dt> <dd>
 
-Il livello di inattività corrente, espresso come percentuale.
+Livello di inattività corrente, espresso come percentuale.
 
 </dd> <dt>
 
 **TimeRemaining**
 </dt> <dd>
 
-Tempo rimanente del timer di inattività, in secondi.
+Tempo rimanente del timer di inattività, espresso in secondi.
 
 </dd> <dt>
 
@@ -71,9 +71,9 @@ Modalità di raffreddamento del sistema corrente. Questo membro deve avere uno d
 
 | Valore                                                                                                                                                                                                                                 | Significato                                                                                                   |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| <span id="PO_TZ_ACTIVE"></span><span id="po_tz_active"></span><dl> <dt>**Ordine di acquisto \_ TZ \_ attivo**</dt> <dt>0</dt> </dl>                    | Il sistema è attualmente in modalità di raffreddamento attiva.<br/>                                                |
-| <span id="PO_TZ_INVALID_MODE"></span><span id="po_tz_invalid_mode"></span><dl> <dt>**Ordine di acquisto \_ TZ \_ \_ modalità non valida**</dt> <dt>2</dt> </dl> | Il sistema non supporta la limitazione della CPU oppure non è stata definita alcuna zona termica nel sistema.<br/> |
-| <span id="PO_TZ_PASSIVE"></span><span id="po_tz_passive"></span><dl> <dt>**Ordine di acquisto \_ TZ \_ passive**</dt> <dt>1</dt> </dl>                 | Il sistema è attualmente in modalità di raffreddamento passiva.<br/>                                               |
+| <span id="PO_TZ_ACTIVE"></span><span id="po_tz_active"></span><dl> <dt>**Ordine di acquisto \_ TZ \_ ACTIVE**</dt> <dt>0</dt> </dl>                    | Il sistema è attualmente in modalità di raffreddamento attivo.<br/>                                                |
+| <span id="PO_TZ_INVALID_MODE"></span><span id="po_tz_invalid_mode"></span><dl> <dt>**Ordine di acquisto \_ MODALITÀ TZ \_ NON \_ VALIDA**</dt> <dt>2</dt> </dl> | Il sistema non supporta la limitazione della CPU o non esiste alcuna zona termica definita nel sistema.<br/> |
+| <span id="PO_TZ_PASSIVE"></span><span id="po_tz_passive"></span><dl> <dt>**Ordine di acquisto \_ TZ \_ PASSIVE**</dt> <dt>1</dt> </dl>                 | Il sistema è attualmente in modalità di raffreddamento passivo.<br/>                                               |
 
 
 
@@ -83,7 +83,7 @@ Modalità di raffreddamento del sistema corrente. Questo membro deve avere uno d
 
 ## <a name="remarks"></a>Commenti
 
-Si noti che questa definizione di struttura è stata accidentalmente omessa da WinNT. h. Questo errore verrà corretto in futuro. Nel frattempo, per compilare l'applicazione, includere la definizione della struttura contenuta in questo argomento nel codice sorgente.
+Si noti che questa definizione di struttura è stata accidentalmente omessa da WinNT.h. Questo errore verrà corretto in futuro. Nel frattempo, per compilare l'applicazione, includere la definizione della struttura contenuta in questo argomento nel codice sorgente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -91,8 +91,8 @@ Si noti che questa definizione di struttura è stata accidentalmente omessa da W
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
 
 
 

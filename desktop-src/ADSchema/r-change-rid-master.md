@@ -1,10 +1,10 @@
 ---
-title: Change-RID-master esteso a destra
-description: Diritto esteso necessario per modificare il proprietario del ruolo FSMO master RID (identificatore relativo).
+title: Diritto esteso Change-Rid-Master
+description: Diritto esteso necessario per modificare il proprietario del ruolo FSMO master dell'identificatore relativo (RID).
 ms.assetid: 6d726697-1841-4b9b-9d51-1b6c8d5df1b2
 ms.tgt_platform: multiple
 keywords:
-- Change-RID-schema AD esteso destro esteso Master
+- Schema ad Active Directory esteso Change-Rid-Master
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c184630836ea92d5d51ca34e9afd44cd05cfd02
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 12f18dc8a4ffe00cace69647dbb4f06b5e5a7c2b0dd8222c86827f3adb703926
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104225287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532601"
 ---
-# <a name="change-rid-master-extended-right"></a>Change-RID-master esteso a destra
+# <a name="change-rid-master-extended-right"></a>Diritto esteso Change-Rid-Master
 
-Diritto esteso necessario per modificare il proprietario del ruolo FSMO master RID (identificatore relativo).
+Diritto esteso necessario per modificare il proprietario del ruolo FSMO master dell'identificatore relativo (RID).
 
 
 
 | Voce | Valore |
 |--------------|--------------------------------------|
-| CN           | Modifica-RID-master                    |
-| Display-Name | Modifica master RID                    |
+| CN           | Change-Rid-Master                    |
+| Display-Name | Modifica rid master                    |
 | Rights-GUID  | d58d5f36-0a98-11d1-adbb-00c04fd8d5cd |
 
 
@@ -50,7 +50,7 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO master R
 | Voce | Valore |
 |-------------------------|------------------------------------------------|
 | Applies-To              | [**RID-Manager**](c-ridmanager.md)<br/> |
-| Localization-display-ID | 29                                             |
+| Localization-Display-ID | 29                                             |
 
 
 
@@ -61,7 +61,7 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO master R
 | Voce | Valore |
 |-------------------------|------------------------------------------------|
 | Applies-To              | [**RID-Manager**](c-ridmanager.md)<br/> |
-| Localization-display-ID | 29                                             |
+| Localization-Display-ID | 29                                             |
 
 
 
@@ -72,7 +72,7 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO master R
 | Voce | Valore |
 |-------------------------|------------------------------------------------|
 | Applies-To              | [**RID-Manager**](c-ridmanager.md)<br/> |
-| Localization-display-ID | 29                                             |
+| Localization-Display-ID | 29                                             |
 
 
 
@@ -83,7 +83,7 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO master R
 | Voce | Valore |
 |-------------------------|------------------------------------------------|
 | Applies-To              | [**RID-Manager**](c-ridmanager.md)<br/> |
-| Localization-display-ID | 29                                             |
+| Localization-Display-ID | 29                                             |
 
 
 
@@ -94,7 +94,7 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO master R
 | Voce | Valore |
 |-------------------------|------------------------------------------------|
 | Applies-To              | [**RID-Manager**](c-ridmanager.md)<br/> |
-| Localization-display-ID | 29                                             |
+| Localization-Display-ID | 29                                             |
 
 
 
@@ -105,7 +105,7 @@ Diritto esteso necessario per modificare il proprietario del ruolo FSMO master R
 | Voce | Valore |
 |-------------------------|------------------------------------------------|
 | Applies-To              | [**RID-Manager**](c-ridmanager.md)<br/> |
-| Localization-display-ID | 29                                             |
+| Localization-Display-ID | 29                                             |
 
 
 

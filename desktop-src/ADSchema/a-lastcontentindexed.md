@@ -1,10 +1,10 @@
 ---
-title: Attributo Last-content-indexed
-description: Ora dell'ultimo contenuto indicizzato per il volume.
+title: Attributo Last-Content-Indexed
+description: Ora dell'ultimo contenuto indicizzato del volume.
 ms.assetid: b2089fef-6dc1-4ba8-81ea-3ffd50c3326c
 ms.tgt_platform: multiple
 keywords:
-- Ultimo schema AD dell'attributo con indice di contenuto
+- Schema AD dell'attributo Last-Content-Indexed
 - Schema AD dell'attributo lastContentIndexed
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34d2d1c9432a650845229b05e04eb22079e87e10
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7913490178de46843d31f1cefb08e363228a7b7727d28453e975f89de4fa610e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103874962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119302271"
 ---
-# <a name="last-content-indexed-attribute"></a>Attributo Last-content-indexed
+# <a name="last-content-indexed-attribute"></a>Attributo Last-Content-Indexed
 
-Ora dell'ultimo contenuto indicizzato per il volume.
+Ora dell'ultimo contenuto indicizzato del volume.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Ultimo contenuto-indicizzato                 |
-| LDAP-Display-Name | lastContentIndexed                   |
+| CN                | Last-Content-Indexed                 |
+| Ldap-Display-Name | lastContentIndexed                   |
 | Dimensione              | 8 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.50                |
-| System-ID-GUID    | bf967995-0de6-11d0-a285-00aa003049e2 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf967995-0de6-11d0-a285-00aa003049e2 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ Ora dell'ultimo contenuto indicizzato per il volume.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| Is-Single-Valued       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Volume**](c-volume.md)<br/> |
+| Classi usate in        | [**Volume**](c-volume.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Ora dell'ultimo contenuto indicizzato per il volume.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| Is-Single-Valued       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Volume**](c-volume.md)<br/> |
+| Classi usate in        | [**Volume**](c-volume.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Ora dell'ultimo contenuto indicizzato per il volume.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| Is-Single-Valued       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Volume**](c-volume.md)<br/> |
+| Classi usate in        | [**Volume**](c-volume.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Ora dell'ultimo contenuto indicizzato per il volume.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| A valore singolo       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Volume**](c-volume.md)<br/> |
+| Classi usate in        | [**Volume**](c-volume.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Ora dell'ultimo contenuto indicizzato per il volume.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| A valore singolo       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Volume**](c-volume.md)<br/> |
+| Classi usate in        | [**Volume**](c-volume.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Ora dell'ultimo contenuto indicizzato per il volume.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| A valore singolo       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classi utilizzate in        | [**Volume**](c-volume.md)<br/> |
+| Classi usate in        | [**Volume**](c-volume.md)<br/> |
 
 
 

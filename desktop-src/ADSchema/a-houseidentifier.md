@@ -1,6 +1,6 @@
 ---
-title: attributo houseIdentifier
-description: Specifica un costrutto linguistico utilizzato per identificare un edificio particolare, ad esempio un numero di casa o un nome di casa relativo a una strada, un viale, una città, una città e così via.
+title: Attributo houseIdentifier
+description: Specifica un costrutto linguistico usato per identificare un determinato edificio, ad esempio un numero civico o un nome di casa relativo a una strada, un viale, una città, una città e così via.
 ms.assetid: cba39780-e53f-47c7-bb16-217469acb626
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6b186def10d3f592c1624a04ab37ef2b2ccf547
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b2832ed802c734565a37755a3b9121f3a18b41746f210058565290c0fc5d15a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119305051"
 ---
-# <a name="houseidentifier-attribute"></a>attributo houseIdentifier
+# <a name="houseidentifier-attribute"></a>Attributo houseIdentifier
 
-Specifica un costrutto linguistico utilizzato per identificare un edificio particolare, ad esempio un numero di casa o un nome di casa relativo a una strada, un viale, una città, una città e così via.
+Specifica un costrutto linguistico usato per identificare un determinato edificio, ad esempio un numero civico o un nome di casa relativo a una strada, un viale, una città, una città e così via.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | houseIdentifier                             |
-| LDAP-Display-Name | houseIdentifier                             |
+| Ldap-Display-Name | houseIdentifier                             |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 2.5.4.51                                    |
-| System-ID-GUID    | a45398b7-c44a-4eb6-82d3-13c10946dbfe        |
+| System-Id-Guid    | a45398b7-c44a-4eb6-82d3-13c10946dbfe        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -56,15 +56,15 @@ Specifica un costrutto linguistico utilizzato per identificare un edificio parti
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 32768                                                              |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000000                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Specifica un costrutto linguistico utilizzato per identificare un edificio parti
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 32768                                                              |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000000                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Specifica un costrutto linguistico utilizzato per identificare un edificio parti
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 32768                                                              |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000000                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -119,15 +119,15 @@ Specifica un costrutto linguistico utilizzato per identificare un edificio parti
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| A valore singolo       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 32768                                                              |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000000                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -140,15 +140,15 @@ Specifica un costrutto linguistico utilizzato per identificare un edificio parti
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| A valore singolo       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 32768                                                              |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000000                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Inizializza un oggetto servizio di sistema per installare un oggetto ActiveX quando l'utente corrente non dispone dell'autorizzazione per l'installazione dell'oggetto.
+description: Inizializza un oggetto servizio di sistema per installare un ActiveX quando l'utente corrente non dispone dell'autorizzazione per installare l'oggetto.
 ms.assetid: 42f7cf83-789b-42ea-bb1a-4b79137188ea
 title: Interfaccia IeAxiService
 ms.topic: reference
@@ -12,20 +12,20 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 34c4743327b2539616dee6b09c34d9f479aa3303
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f799b0b306d10e8246afbef83e4677729f6a735a52e5e4ed4954b873ec5b6201
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119414721"
 ---
 # <a name="ieaxiservice-interface"></a>Interfaccia IeAxiService
 
-L'interfaccia **IAxiService** Inizializza un oggetto servizio di sistema per installare un oggetto ActiveX quando l'utente corrente non dispone dell'autorizzazione per l'installazione dell'oggetto.
+**L'interfaccia IAxiService** inizializza un oggetto servizio di sistema per installare un oggetto ActiveX quando l'utente corrente non dispone dell'autorizzazione per installare l'oggetto.
 
-La classe [**CIeAxiInstallerService**](cieaxiinstallerservice.md) implementa questa interfaccia.
+La [**classe CIeAxiInstallerService**](cieaxiinstallerservice.md) implementa questa interfaccia.
 
-Questa interfaccia non è dichiarata in un'intestazione pubblica. Le applicazioni devono definirle autonomamente. Il frammento IDL (Interface Definition Language) seguente descrive questa interfaccia, incluso il relativo IID.
+Questa interfaccia non è dichiarata in un'intestazione pubblica. Le applicazioni devono definirlo in modo proprio. Il frammento IDL (Interface Definition Language) seguente descrive questa interfaccia, incluso il relativo IID.
 
 ``` syntax
 [
@@ -53,20 +53,20 @@ interface IeAxiService : IUnknown{
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IeAxiService** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IeAxiService** dispone anche di questi tipi di membri:
+**L'interfaccia IeAxiService** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IeAxiService** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IeAxiService** dispone di questi metodi.
+**L'interfaccia IeAxiService** include questi metodi.
 
 
 
 | Metodo                                        | Descrizione                                                        |
 |:----------------------------------------------|:-------------------------------------------------------------------|
-| [**Pulizia**](ieaxiservice-cleanup.md)       | Libera le risorse usate dall'interfaccia **IeAxiService** .<br/> |
-| [**Inizializzare**](ieaxiservice-initialize.md) | Verifica e Scarica un oggetto ActiveX.<br/>                 |
+| [**Pulitura**](ieaxiservice-cleanup.md)       | Libera le risorse usate **dall'interfaccia IeAxiService.**<br/> |
+| [**Inizializzare**](ieaxiservice-initialize.md) | Controlla e scarica un oggetto ActiveX.<br/>                 |
 
 
 
@@ -78,7 +78,7 @@ L'interfaccia **IeAxiService** dispone di questi metodi.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista Business, Windows Vista Enterprise, Windows Vista Ultimate \[ desktop apps\]<br/> |
+| Client minimo supportato<br/> | Windows Vista Business, Windows Vista Enterprise, Windows solo app desktop Vista Ultimate \[\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                 |
 | IID<br/>                      | IID \_ IeAxiService è definito come E9E92380-9ECD-4982-A0EB-6815A56CCF27<br/>                           |
 

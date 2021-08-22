@@ -4,38 +4,38 @@ description: Pacchetti di richiesta BITS
 ms.assetid: 4d8fd5f3-7621-438f-926f-38ece7a52f52
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6738f77477342f1329818ae7c2ffb5c010b074c3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 60921c9adb8e1312a6b74cd129e591db5a3be7807394807b984eb3fff153b3a5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119588681"
 ---
 # <a name="bits-request-packets"></a>Pacchetti di richiesta BITS
 
-I pacchetti di richiesta descrivono le richieste client. In un determinato momento può essere presente una sola richiesta in attesa; prima di inviare un'altra richiesta, è necessario ricevere un [ACK](bits-response-packets.md) per la richiesta corrente dal server.
+I pacchetti di richiesta descrivono le richieste client. Può essere presente una sola richiesta in sospeso in un determinato momento. è necessario ricevere un [Ack](bits-response-packets.md) per la richiesta corrente dal server prima di inviare un'altra richiesta.
 
-La tabella seguente elenca i pacchetti di richiesta inviati al server BITS per i processi di caricamento e caricamento-risposta. La tabella elenca i pacchetti nella sequenza tipica che vengono inviati al server.
+Nella tabella seguente sono elencati i pacchetti di richiesta inviati al server BITS per i processi di caricamento e caricamento-risposta. La tabella elenca i pacchetti nella sequenza tipica che vengono inviati al server.
 
 
 
-| Richiedi pacchetto                       | Scopo                                                                                                                                                        |
+| Richiedere un pacchetto                       | Scopo                                                                                                                                                        |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Ping](ping.md)                     | Stabilisce una connessione e negozia la sicurezza con il server.                                                                                              |
-| [Creazione sessione](create-session.md) | Richiede una sessione di caricamento con il server BITS.                                                                                                               |
-| [Frammento](fragment.md)             | Invia un frammento del file al server BITS. Il numero di richieste di frammenti inviate dipende dalle dimensioni del frammento scelte e dalle dimensioni del file di caricamento. |
-| [Chiudi sessione](close-session.md)   | Termina la sessione di caricamento dei file con il server BITS.                                                                                                             |
-| [Annulla-sessione](cancel-session.md) | Termina la sessione di caricamento dei file con il server BITS. In genere, si invia il pacchetto di Cancel-Session se l'utente ha annullato il processo.                                 |
+| [Create-Session](create-session.md) | Richiede una sessione di caricamento con il server BITS.                                                                                                               |
+| [Frammento](fragment.md)             | Invia un frammento del file al server BITS. Il numero di richieste di frammento inviate dipende dalla dimensione del frammento scelta e dalle dimensioni del file di caricamento. |
+| [Chiudi sessione](close-session.md)   | Termina la sessione di caricamento file con il server BITS.                                                                                                             |
+| [Annulla sessione](cancel-session.md) | Termina la sessione di caricamento file con il server BITS. In genere, si invia il pacchetto Cancel-Session se l'utente ha annullato il processo.                                 |
 
 
 
- 
+ 
 
-Il pacchetto ping è facoltativo. Anziché inviare un pacchetto ping, è possibile utilizzare il pacchetto Create-Session per stabilire una connessione e negoziare la sicurezza. Tuttavia, è più efficiente usare il pacchetto ping a questo scopo.
+Il pacchetto Ping è facoltativo. Anziché inviare un pacchetto Ping, è possibile usare il pacchetto Create-Session per stabilire una connessione e negoziare la sicurezza. Tuttavia, è più efficiente usare il pacchetto Ping a questo scopo.
 
- 
+ 
 
- 
+ 
 
 
 

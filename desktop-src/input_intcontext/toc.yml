@@ -1,7 +1,7 @@
 - name: Contesto di interazione
   href: interaction-context-portal.md
   items:
-    - name: Riferimento al contesto di interazione
+    - name: Informazioni di riferimento sul contesto di interazione
       href: interaction-context-reference.md
       items:
         - name: HINTERACTIONCONTEXT

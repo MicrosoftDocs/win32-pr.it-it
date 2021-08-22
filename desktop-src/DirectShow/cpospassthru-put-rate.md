@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Put rate imposta la velocità di riproduzione. Questo metodo implementa il metodo IMediaPosition::p UT \_ rate.
+description: Il metodo put \_ Rate imposta la velocità di riproduzione. Questo metodo implementa il metodo IMediaPosition::p ut \_ Rate.
 ms.assetid: c077f344-de34-4f8a-8e08-6d7086a5a4f1
-title: Metodo CPosPassThru.put_Rate (Ctlutil. h)
+title: CPosPassThru.put_Rate metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 21e7e654233f78adcda2addf73b87a178654872e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 90c89c9730ee057bea3bc776f551061c0e828385fe3c6ae054f4161bdb705ab1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119565502"
 ---
-# <a name="cpospassthruput_rate-method"></a>Metodo di frequenza CPosPassThru. put \_
+# <a name="cpospassthruput_rate-method"></a>Metodo CPosPassThru.put \_ Rate
 
-Il `put_Rate` metodo imposta la velocità di riproduzione. Questo metodo implementa il metodo [**IMediaPosition::p UT \_ rate**](/windows/desktop/api/Control/nf-control-imediaposition-put_rate) .
+Il `put_Rate` metodo imposta la velocità di riproduzione. Questo metodo implementa il [**metodo IMediaPosition::p ut \_ Rate.**](/windows/desktop/api/Control/nf-control-imediaposition-put_rate)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,11 +51,11 @@ Velocità di riproduzione. Non deve essere zero.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce E \_ INVALIDARG se *drate* è zero. In caso contrario, restituisce il valore **HRESULT** dal pin connesso.
+Restituisce E \_ INVALIDARG se *dRate* è zero. In caso contrario, restituisce il **valore HRESULT** dal pin connesso.
 
 ## <a name="remarks"></a>Commenti
 
-Le frequenze negative indicano la riproduzione inversa. Non tutti i supporti supporteranno la riproduzione inversa.
+I tassi negativi indicano il gioco inverso. Non tutti i supporti supporteranno la riproduzione inversa.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Le frequenze negative indicano la riproduzione inversa. Non tutti i supporti sup
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

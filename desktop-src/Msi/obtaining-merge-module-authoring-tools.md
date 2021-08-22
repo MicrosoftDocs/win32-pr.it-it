@@ -1,49 +1,49 @@
 ---
-description: Per generare un modulo merge, è necessario ottenere uno strumento software con cui modificare un file con estensione MSM.
+description: Per generare un modulo unione, è necessario ottenere uno strumento software con cui modificare un file con estensione msm.
 ms.assetid: bc14d36a-b299-4c61-ade2-43fad142d21d
-title: Recupero di strumenti di creazione di moduli merge
+title: Recupero degli strumenti di creazione di moduli unione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4dac673c7cfa191cecb1b576e1b17f2f4a7a1f4d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a85fb75c0317a6737393e67f12a7a03cd8b76c68a8261c9d26d10d06cbe484c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119327881"
 ---
-# <a name="obtaining-merge-module-authoring-tools"></a>Recupero di strumenti di creazione di moduli merge
+# <a name="obtaining-merge-module-authoring-tools"></a>Recupero degli strumenti di creazione di moduli unione
 
-Per generare un modulo merge, è necessario ottenere uno strumento software con cui modificare un file con estensione MSM. Poiché un file con estensione MSM è fondamentalmente un file con estensione msi semplificato, potrebbe essere possibile utilizzare gli stessi strumenti utilizzati per creare un database di installazione. Ad esempio, l'applicazione Orca.exe fornita con Windows Installer SDK.
+Per generare un modulo unione, è necessario ottenere uno strumento software con cui modificare un file con estensione msm. Poiché un file con estensione msm è fondamentalmente un file di .msi semplificato, è possibile usare gli stessi strumenti usati per creare un database di installazione. Ad esempio, l'applicazione Orca.exe con l'SDK Windows Installer.
 
-In alternativa, è possibile acquistare uno degli strumenti per la creazione di pacchetti del programma di installazione di da fornitori di software indipendenti. Sono disponibili diversi strumenti di terze parti in fase di sviluppo che possono essere utilizzati per la creazione di moduli unione. Se si sceglie di utilizzare uno strumento di terze parti, è necessario verificare che generi moduli unione coerenti con lo standard descritto in questo documento. In particolare, è necessario determinare che gli strumenti di modifica non hanno eseguito alcuna delle operazioni seguenti nel modulo merge.
+Un'alternativa consiste nell'acquistare uno degli strumenti di creazione pacchetti del programma di installazione per essere disponibili da fornitori di software indipendenti. Esistono diversi strumenti di terze parti in fase di sviluppo che possono essere usati per la produzione di moduli unione. Se si sceglie di usare uno strumento di terze parti, è necessario verificare che generi moduli unione coerenti con lo standard descritto in questo documento. In particolare, è necessario determinare che gli strumenti di modifica non hanno eseguito nessuna delle operazioni seguenti nel modulo unione.
 
--   Aggiunta di tabelle estranee al modulo merge a cui non viene fatto riferimento nella [tabella ModuleIgnoreTable](moduleignoretable-table.md).
+-   Aggiunta di tabelle estranee al modulo unione a cui non viene fatto riferimento nella [tabella ModuleIgnoreTable](moduleignoretable-table.md).
 
     Eliminare queste tabelle o aggiungerle alla tabella ModuleIgnoreTable.
 
--   Aggiunta di una [tabella TextStyle](textstyle-table.md) non necessaria al modulo merge.
+-   Aggiunta di una [tabella TextStyle non necessaria](textstyle-table.md) al modulo unione.
 
-    Se il modulo merge non dispone di un'interfaccia utente (e in genere non lo è), è possibile eliminare la tabella in modo sicuro.
+    Se il modulo unione non ha interfaccia utente (e in genere non dovrebbe) è possibile eliminare in modo sicuro questa tabella.
 
--   Aggiunta di voci non necessarie alla [tabella di directory](directory-table.md).
+-   Sono state aggiunte voci non necessarie alla [tabella Directory](directory-table.md).
 
-    Rimuovere le voci non necessarie dalla tabella directory.
+    Rimuovere le voci non necessarie dalla tabella Directory.
 
--   Informazioni lasciate fuori dalla tabella di convalida del modulo di Unione \_ .
+-   Consente di non visualizzare le informazioni dalla tabella di convalida \_ del modulo unione.
 
-    In questo modo si impedisce la convalida del modulo merge. Aggiungere una \_ tabella di convalida completa.
+    In questo modo viene impedita la convalida del modulo unione. Aggiungere una tabella \_ di convalida completa.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Creazione di interfacce utente nei moduli merge](authoring-user-interfaces-in-merge-modules.md)
+[Creazione di interfacce utente nei moduli unione](authoring-user-interfaces-in-merge-modules.md)
 </dt> <dt>
 
-[Creazione di tabelle di directory del modulo merge](authoring-merge-module-directory-tables.md)
+[Creazione di tabelle di directory del modulo unione](authoring-merge-module-directory-tables.md)
 </dt> <dt>
 
-[Convalida di moduli merge](validating-merge-modules.md)
+[Convalida dei moduli unione](validating-merge-modules.md)
 </dt> </dl>
 
  

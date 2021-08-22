@@ -1,19 +1,19 @@
 ---
-title: Controllo del dispositivo (Windows Multimedia)
+title: Controllo dispositivo (Windows multimediali)
 description: Controllo dei dispositivi
 ms.assetid: b4479803-f1da-4646-909e-c4ef412ebdcd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e0e0b59127d160cc44418fd4bce1f9f670d13de
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 6878e5e759f3eddb5e98d241d9a8d081005e3545dc2f0054b46630619eaa06fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104047741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119497241"
 ---
-# <a name="device-control-windows-multimedia"></a>Controllo del dispositivo (Windows Multimedia)
+# <a name="device-control-windows-multimedia"></a>Controllo dispositivo (Windows multimediali)
 
-Per controllare un dispositivo MCI, aprire il dispositivo, inviare i comandi necessari e quindi chiudere il dispositivo. I comandi possono essere molto simili, anche per i dispositivi MCI completamente diversi. Ad esempio, la serie seguente di comandi MCI riproduce la sesta traccia di un CD audio usando la funzione [**mciSendString**](/previous-versions//dd757161(v=vs.85)) :
+Per controllare un dispositivo MCI, aprire il dispositivo, inviare i comandi necessari e quindi chiudere il dispositivo. I comandi possono essere molto simili, anche per dispositivi MCI completamente diversi. Ad esempio, la serie seguente di comandi MCI riproduce la sesta traccia di un CD audio usando la [**funzione mciSendString:**](/previous-versions//dd757161(v=vs.85))
 
 
 ```C++
@@ -29,7 +29,7 @@ mciSendString("close cdaudio", lpszReturnString,
 
 
 
-Nell'esempio riportato di seguito viene illustrata una serie simile di comandi MCI che riproduce i primi 10.000 esempi di un file Waveform-Audio:
+L'esempio seguente mostra una serie simile di comandi MCI che riproduce i primi 10.000 campioni di un file audio waveform:
 
 
 ```C++
@@ -46,12 +46,12 @@ mciSendString("close finch", lpszReturnString,
 
 
 
-Questi esempi illustrano alcuni aspetti interessanti sui comandi MCI:
+Questi esempi illustrano alcuni fatti interessanti sui comandi MCI:
 
--   Gli stessi comandi di base ([**apertura**](open.md), [**impostazione**](set.md), [**riproduzione**](play.md)e [**chiusura**](close.md)) vengono usati con i dispositivi audio CD e Waveform-Audio. Gli stessi comandi MCI vengono usati con tutti i dispositivi MCI.
--   Il comando Apri per il dispositivo Waveform-Audio include una specifica del nome file. Il dispositivo Waveform-Audio è un *dispositivo composto* (uno associato a un file di dati), mentre il dispositivo audio CD è un *dispositivo semplice* (uno senza un file di dati associato).
--   Il comando set specifica i formati di ora in ogni caso, ma il flag di formato time per il dispositivo audio CD specifica il formato Tracks/minutes/seconds/frames (TMSF), mentre il formato dell'ora usato con il dispositivo Waveform-Audio specifica "Samples".
--   Le variabili utilizzate con i flag "from" e "to" sono appropriate per il rispettivo formato di ora. Per il dispositivo audio CD, ad esempio, le variabili specificano un intervallo di tracce, ma per il dispositivo Waveform-Audio le variabili specificano un intervallo di campioni.
+-   Gli stessi comandi di base ([**open**](open.md), [**set**](set.md), [**play**](play.md)e [**close)**](close.md)vengono usati con i dispositivi audio CD e audio waveform. Gli stessi comandi MCI vengono usati con tutti i dispositivi MCI.
+-   Il comando open per il dispositivo audio waveform include una specifica del nome file. Il dispositivo audio waveform è un dispositivo composto *(associato* a un file di dati), mentre il dispositivo audio CD è un dispositivo semplice *(uno* senza un file di dati associato).
+-   Il set comando specifica i formati di ora in ogni caso, ma il flag di formato ora per il dispositivo audio CD specifica tracce/minuti/secondi/frame (TMSF), mentre il formato dell'ora usato con il dispositivo audio waveform specifica "samples".
+-   Le variabili usate con i flag "from" e "to" sono appropriate per il rispettivo formato di ora. Ad esempio, per il dispositivo audio CD, le variabili specificano un intervallo di tracce, ma per il dispositivo audio waveform, le variabili specificano un intervallo di campioni.
 
  
 

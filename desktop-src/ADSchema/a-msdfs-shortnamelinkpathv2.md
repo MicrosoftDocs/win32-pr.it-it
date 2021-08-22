@@ -1,11 +1,11 @@
 ---
 title: Attributo ms-DFS-Short-Name-Link-Path-v2
-description: Percorso di collegamento DFS nome breve relativo alla condivisione di destinazione radice DFS, ovvero senza i componenti server/dominio e nome spazio dei nomi DFS. Usare barre (/) anziché barre rovesciate ( , in modo che le ricerche LDAP possano essere eseguite senza la necessità di \) usare caratteri di escape.
+description: Percorso di collegamento DFS nome breve relativo alla condivisione di destinazione radice DFS, ovvero senza i componenti server/dominio e nome dello spazio dei nomi DFS. Usare barre (/) anziché barre rovesciate ( , in modo che le ricerche LDAP possano essere eseguite senza dover \) usare caratteri di escape.
 ms.assetid: 0589d3f5-9734-4f95-bba9-22f13bb1c9f1
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DFS-Short-Name-Link-Path-v2
-- Schema AD dell'attributo msDFS-ShortNameLinkPathv2
+- Attributo ms-DFS-Short-Name-Link-Path-v2 - Schema AD
+- Attributo MSDFS-ShortNameLinkPathv2 Schema AD
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 663ee1ff2dac67eff7bd9eca87aa8eacf40436ff
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: fb8021b72831184a388b476024c5fdebde2e29b15ac3429de2efd6dec00455b7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111386850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119299171"
 ---
 # <a name="ms-dfs-short-name-link-path-v2-attribute"></a>Attributo ms-DFS-Short-Name-Link-Path-v2
 
-Percorso di collegamento DFS nome breve relativo alla condivisione di destinazione radice DFS, ovvero senza i componenti server/dominio e nome spazio dei nomi DFS. Usare barre (/) anziché barre rovesciate ( ), in modo che le ricerche LDAP possano essere eseguite senza la necessità di \\ usare caratteri di escape.
+Percorso di collegamento DFS nome breve relativo alla condivisione di destinazione radice DFS, ovvero senza i componenti server/dominio e nome dello spazio dei nomi DFS. Usare le barre (/) anziché le barre rovesciate ( ), in modo che le ricerche LDAP possano essere eseguite senza dover \\ usare caratteri di escape.
 
 
 
@@ -32,7 +32,7 @@ Percorso di collegamento DFS nome breve relativo alla condivisione di destinazio
 | CN                | ms-DFS-Short-Name-Link-Path-v2              |
 | Ldap-Display-Name | msDFS-ShortNameLinkPathv2                   |
 | Dimensione              | \-                                          |
-| Privilegio di aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2042                     |
 | System-Id-Guid    | 2d7826f0-4cf7-42e9-a039-1110e0d9ca99        |
@@ -55,7 +55,7 @@ Percorso di collegamento DFS nome breve relativo alla condivisione di destinazio
 | ID collegamento                | \-                                                                                                                     |
 | MAPI-Id                | \-                                                                                                                     |
 | System-Only            | Falso                                                                                                                  |
-| Is-Single-Valued       | Vero                                                                                                                   |
+| A valore singolo       | Vero                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                  |
 | Nel catalogo globale      | Falso                                                                                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
@@ -76,7 +76,7 @@ Percorso di collegamento DFS nome breve relativo alla condivisione di destinazio
 | ID collegamento                | \-                                                                                                                     |
 | MAPI-Id                | \-                                                                                                                     |
 | System-Only            | Falso                                                                                                                  |
-| Is-Single-Valued       | Vero                                                                                                                   |
+| A valore singolo       | Vero                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                  |
 | Nel catalogo globale      | Falso                                                                                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
@@ -97,7 +97,7 @@ Percorso di collegamento DFS nome breve relativo alla condivisione di destinazio
 | ID collegamento                | \-                                                                                                                     |
 | MAPI-Id                | \-                                                                                                                     |
 | System-Only            | Falso                                                                                                                  |
-| Is-Single-Valued       | Vero                                                                                                                   |
+| A valore singolo       | Vero                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                  |
 | Nel catalogo globale      | Falso                                                                                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |

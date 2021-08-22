@@ -1,7 +1,7 @@
 ---
-description: Rappresenta parametri operativi switch.
+description: Rappresenta i parametri operativi del commutatore.
 ms.assetid: f225d321-8f40-4e6c-b30d-8fab3f84761d
-title: Classe Msvm_EthernetSwitchOperationalData
+title: Msvm_EthernetSwitchOperationalData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,18 +23,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3d9aacd8380650ddaf2790aeacf4a2327b54f973
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50c248d2ffc3832e72d029329c07440e87436d8718643b202304a92f1d8fea6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104350661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531411"
 ---
-# <a name="msvm_ethernetswitchoperationaldata-class"></a>\_Classe MSVM EthernetSwitchOperationalData
+# <a name="msvm_ethernetswitchoperationaldata-class"></a>Classe Msvm \_ EthernetSwitchOperationalData
 
-Rappresenta parametri operativi switch.
+Rappresenta i parametri operativi del commutatore.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,49 +57,49 @@ class Msvm_EthernetSwitchOperationalData : Msvm_EthernetSwitchData
 
 ## <a name="members"></a>Members
 
-La **classe \_ EthernetSwitchOperationalData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ EthernetSwitchOperationalData** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ EthernetSwitchOperationalData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ EthernetSwitchOperationalData** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **Key**, **maxlen** (256)
+Qualificatori: **Key,** **MaxLen** (256)
 </dt> </dl>
 
-Nome della classe o della sottoclasse utilizzata per la creazione di questa istanza. Questa proprietà viene ereditata da [**MSVM \_ EthernetSwitchData**](msvm-ethernetswitchdata.md).
+Nome della classe o della sottoclasse utilizzata nella creazione di questa istanza. Questa proprietà viene ereditata da [**Msvm \_ EthernetSwitchData.**](msvm-ethernetswitchdata.md)
 
 </dd> <dt>
 
 **CurrentSwitchingMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -108,7 +108,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Modalità di commutazione corrente sull'opzione.
+Modalità di commutazione corrente del commutatore.
 
 <dt>
 
@@ -121,21 +121,21 @@ Modalità di commutazione corrente sull'opzione.
 
 <span id="802.1Q"></span><span id="802.1q"></span>
 
-**802.1 q** (1)
+**802.1Q** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="802.1Qbg"></span><span id="802.1qbg"></span><span id="802.1QBG"></span>
 
-**802.1 Qbg** (2)
+**802.1Qbg** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="802.1Qbh"></span><span id="802.1qbh"></span><span id="802.1QBH"></span>
 
-**802.1 QBH** (3)
+**802.1Qbh** (3)
 
 
 </dt> <dd></dd> </dl>
@@ -145,65 +145,65 @@ Modalità di commutazione corrente sull'opzione.
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Nome visualizzato per l'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**, **override**, **maxlen** (256)
+Qualificatori: **Key,** **Override,** **MaxLen** (256)
 </dt> </dl>
 
-Nome univoco della risorsa. Questa proprietà viene ereditata da [**MSVM \_ EthernetSwitchData**](msvm-ethernetswitchdata.md).
+Nome univoco della risorsa. Questa proprietà viene ereditata da [**Msvm \_ EthernetSwitchData.**](msvm-ethernetswitchdata.md)
 
 </dd> <dt>
 
 **SupportedSwitchingModes**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt32**
+Tipo di dati: **matrice uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -212,39 +212,39 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Modalità di commutazione supportate dall'opzione.
+Modalità di commutazione supportate dall'opzione .
 
 </dd> <dt>
 
 **SystemCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **Key**, **maxlen** (256)
+Qualificatori: **Key,** **MaxLen** (256)
 </dt> </dl>
 
-Nome della classe di creazione del sistema di hosting. Questa proprietà viene ereditata da [**MSVM \_ EthernetSwitchData**](msvm-ethernetswitchdata.md).
+Nome della classe di creazione del sistema host. Questa proprietà viene ereditata da [**Msvm \_ EthernetSwitchData.**](msvm-ethernetswitchdata.md)
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **Key**, **maxlen** (256)
+Qualificatori: **Key,** **MaxLen** (256)
 </dt> </dl>
 
-Nome del commutire virtuale a cui è associata l'istanza della risorsa associata. Questa proprietà viene ereditata da [**MSVM \_ EthernetSwitchData**](msvm-ethernetswitchdata.md).
+Nome del commutatore virtuale a cui è associata l'istanza di risorsa associata. Questa proprietà viene ereditata da [**Msvm \_ EthernetSwitchData.**](msvm-ethernetswitchdata.md)
 
 </dd> </dl>
 
@@ -254,10 +254,10 @@ Nome del commutire virtuale a cui è associata l'istanza della risorsa associata
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

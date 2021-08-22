@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f8fea8b3a0ac649d262cd34b4aa16724361ef0f8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 27ce6392e76f3a8435b45a23065c7138e8d0faa264fae4cf0a763242b6bd85b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104345881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112380"
 ---
 # <a name="jet_columnidequals-method-object"></a>JET_COLUMNID. Metodo Equals (Object)
 
-Restituisce un valore che indica se questa istanza è uguale a un'altra istanza.
+Restituisce un valore che indica se questa istanza è uguale a un'altra istanza di .
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,23 +58,23 @@ public override bool Equals(
 #### <a name="parameters"></a>Parametri
 
   - obj  
-    Tipo: [System. Object](/dotnet/api/system.object)  
+    Tipo: [System.Object](/dotnet/api/system.object)  
     
     Oggetto da confrontare con l'istanza.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True se le due istanze sono uguali.  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_COLUMNID](./jet-columnid-structure.md)
+[JET_COLUMNID struttura](./jet-columnid-structure.md)
 
-[Membri JET_COLUMNID](./jet-columnid-members.md)
+[JET_COLUMNID membri](./jet-columnid-members.md)
 
 [Confronta l'overload](./jet-columnid.equals-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

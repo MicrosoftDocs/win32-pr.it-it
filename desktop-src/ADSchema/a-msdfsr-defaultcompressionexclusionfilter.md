@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DFSR-DefaultCompressionExclusionFilter
-description: Stringa di filtro che contiene le estensioni dei tipi di file che non devono essere compressi.
+title: Attributo ms-DFSR-DefaultCompressionExclusionFilter
+description: Stringa di filtro che contiene estensioni di tipi di file da non comprimere.
 ms.assetid: 2695beff-647f-4ac6-b213-f2a589fc10d5
 ms.tgt_platform: multiple
 keywords:
-- attributo ms-DFSR-DefaultCompressionExclusionFilter-schema AD
-- msDFSR-schema AD attributo DefaultCompressionExclusionFilter
+- Schema AD dell'attributo ms-DFSR-DefaultCompressionExclusionFilter
+- Schema AD dell'attributo msDFSR-DefaultCompressionExclusionFilter
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ca54fcb3ae2fd492be7e5eadfde52c3523cd412
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 233255a392731ce333de213ce71dae178a9d6df44a1af29c9fec9ab51a8c6ce2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119298951"
 ---
-# <a name="ms-dfsr-defaultcompressionexclusionfilter-attribute"></a>attributo ms-DFSR-DefaultCompressionExclusionFilter
+# <a name="ms-dfsr-defaultcompressionexclusionfilter-attribute"></a>Attributo ms-DFSR-DefaultCompressionExclusionFilter
 
-Stringa di filtro che contiene le estensioni dei tipi di file che non devono essere compressi.
+Stringa di filtro che contiene estensioni di tipi di file da non comprimere.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-DFSR-DefaultCompressionExclusionFilter   |
-| LDAP-Display-Name | msDFSR-DefaultCompressionExclusionFilter    |
+| CN                | ms-DFSR-DefaultCompressionExclusionFilter   |
+| Ldap-Display-Name | msDFSR-DefaultCompressionExclusionFilter    |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.34                  |
-| System-ID-GUID    | 87811bd5-cd8b-45cb-9f5d-980f3a9e0c97        |
+| System-Id-Guid    | 87811bd5-cd8b-45cb-9f5d-980f3a9e0c97        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,15 +55,15 @@ Stringa di filtro che contiene le estensioni dei tipi di file che non devono ess
 | ID collegamento                | \-                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                     |
 | Range-Upper            | 32767                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                            |
 | System-Flags           | 0x00000000                                                                                                                            |
-| Classi utilizzate in        | [**MS-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> [**MS-DFSR-Contentt**](c-msdfsr-contentset.md)<br/> |
+| Classi usate in        | [**ms-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Stringa di filtro che contiene le estensioni dei tipi di file che non devono ess
 | ID collegamento                | \-                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                     |
 | Range-Upper            | 32767                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                            |
 | System-Flags           | 0x00000000                                                                                                                            |
-| Classi utilizzate in        | [**MS-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> [**MS-DFSR-Contentt**](c-msdfsr-contentset.md)<br/> |
+| Classi usate in        | [**ms-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Stringa di filtro che contiene le estensioni dei tipi di file che non devono ess
 | ID collegamento                | \-                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                     |
 | Range-Upper            | 32767                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                            |
 | System-Flags           | 0x00000000                                                                                                                            |
-| Classi utilizzate in        | [**MS-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> [**MS-DFSR-Contentt**](c-msdfsr-contentset.md)<br/> |
+| Classi usate in        | [**ms-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 

@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 2a4c134ebead08ef576337528a8ef75d8b8be21a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d07c62fc6c6cc871f803b1f752201bd500e2705c3cfca272ff350ffd018f6018
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119499647"
 ---
 # <a name="usersinpartitionrole-collection"></a>Raccolta UsersInPartitionRole
 
@@ -27,7 +27,7 @@ Questa raccolta supporta i [**metodi Add**](/windows/desktop/api/ComAdmin/nf-com
 
 ## <a name="members"></a>Membri
 
-La **raccolta UsersInPartitionRole** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
+La **raccolta UsersInPartitionRole** eredita dall'interfaccia [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
 
 ## <a name="related-collections"></a>Raccolte correlate
 
@@ -47,7 +47,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 
 -   [Utente](#usersinpartitionrole-collection)
 
-### <a name="user"></a>User
+### <a name="user"></a>Utente
 
 
 
@@ -55,7 +55,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrizione    | Nome utente. Questa proprietà viene restituita quando il metodo della proprietà [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
 | Access         | WriteOnce                                                                                                                                                                             |
-| Type           | Stringa                                                                                                                                                                                |
+| Type           | string                                                                                                                                                                                |
 | Predefinito        | "Nuovo utente"                                                                                                                                                                            |
 | Sistema minimo | Windows Server 2003                                                                                                                                                                   |
 

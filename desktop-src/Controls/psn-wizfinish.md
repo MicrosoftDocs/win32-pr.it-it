@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica PSN_WIZFINISH (Prsht. h)
-description: Notifica a una pagina che l'utente ha fatto clic sul pulsante fine in una procedura guidata. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: PSN_WIZFINISH di notifica (Prsht.h)
+description: Notifica a una pagina che l'utente ha fatto clic sul pulsante Fine in una procedura guidata. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 8ef0a8a7-2d25-4969-9b8f-e42dcc1c8fb5
 keywords:
-- Controlli di Windows per il codice di notifica PSN_WIZFINISH
+- PSN_WIZFINISH del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0654384b0944d90731288922c32326e42019cdc8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b9a11b018a57126c0882862271fa209fcd507224a46180ebb5fbaed4355fc040
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119588181"
 ---
-# <a name="psn_wizfinish-notification-code"></a>\_Codice di notifica WIZFINISH PSN
+# <a name="psn_wizfinish-notification-code"></a>Codice di notifica \_ PSN WIZFINISH
 
-Notifica a una pagina che l'utente ha fatto clic sul pulsante **fine** in una procedura guidata. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica a una pagina che l'utente ha fatto clic sul **pulsante** Fine in una procedura guidata. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,21 +41,21 @@ PSN_WIZFINISH
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**PSHNOTIFY**](/windows/desktop/api/Prsht/ns-prsht-pshnotify) contenente informazioni sul codice di notifica. Questa struttura contiene una struttura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) come primo membro, **HDR**. Il membro **hwndFrom** della struttura **NMHDR** contiene l'handle per la finestra delle proprietà. Il membro **lParam** della struttura **PSHNOTIFY** non contiene informazioni.
+Puntatore a [**una struttura PSHNOTIFY**](/windows/desktop/api/Prsht/ns-prsht-pshnotify) che contiene informazioni sul codice di notifica. Questa struttura contiene una [**struttura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) come primo membro, **hdr**. Il **membro hwndFrom** di questa **struttura NMHDR** contiene l'handle per la finestra delle proprietà. Il **membro lParam** della **struttura PSHNOTIFY** non contiene informazioni.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
--   Restituisce **true** per impedire il completamento della procedura guidata.
--   [Versione 5,80.](common-control-versions.md) e versioni successive. Restituisce un handle di finestra per impedire il completamento della procedura guidata. La procedura guidata imposta lo stato attivo su tale finestra. La finestra deve essere di proprietà della pagina della procedura guidata.
--   Restituisce **false** per consentire il completamento della procedura guidata.
+-   Restituisce **TRUE per** impedire il completamento della procedura guidata.
+-   [Versione 5.80.](common-control-versions.md) e versioni successive. Restituisce un handle di finestra per impedire il completamento della procedura guidata. La procedura guidata imposta lo stato attivo su tale finestra. La finestra deve essere di proprietà della pagina della procedura guidata.
+-   Restituisce **FALSE** per consentire il completamento della procedura guidata.
 
 ## <a name="remarks"></a>Commenti
 
-Per impostare il valore restituito, la routine della finestra di dialogo per la pagina deve utilizzare la funzione [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) con il \_ valore MSGRESULT di DWL e la routine della finestra di dialogo deve restituire **true**.
+Per impostare il valore restituito, la procedura della finestra di dialogo per la pagina deve usare la funzione [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) con il valore MSGRESULT DWL e la routine della finestra di dialogo \_ deve restituire **TRUE.**
 
-[Versione 5,80.](common-control-versions.md) Se l'applicazione restituisce **true** per impedire che venga completata una procedura guidata, non ha alcun controllo su quale finestra della pagina riceve lo stato attivo. Le applicazioni che devono arrestare una procedura guidata devono in genere eseguire questa operazione restituendo l'handle della finestra nella pagina della procedura guidata che consente di ricevere lo stato attivo.
+[Versione 5.80.](common-control-versions.md) Se l'applicazione **restituisce TRUE** per impedire il completamento di una procedura guidata, non ha alcun controllo sulla finestra della pagina che riceve lo stato attivo. Le applicazioni che devono interrompere il completamento di una procedura guidata devono normalmente eseguire questa operazione restituisce l'handle della finestra nella pagina della procedura guidata che deve ricevere lo stato attivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ Per impostare il valore restituito, la routine della finestra di dialogo per la 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

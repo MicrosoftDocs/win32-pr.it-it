@@ -1,7 +1,7 @@
 ---
-description: Identifica i dati della risorsa.
+description: Identifica i dati delle risorse.
 ms.assetid: f2ace2ad-228f-4f76-ab31-16e045e09331
-title: Struttura D3DXF_FILELOADRESOURCE (D3dx9xof. h)
+title: D3DXF_FILELOADRESOURCE struttura (D3dx9xof.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9xof.h
-ms.openlocfilehash: ee5dc27b551382a5fa5d1c7f4833c94b205e5521
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ddc105d3df7732e1572e41c3d9cb47a285caf69cba0a24f6ea65090706394592
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564931"
 ---
-# <a name="d3dxf_fileloadresource-structure"></a>\_Struttura D3DXF FILELOADRESOURCE
+# <a name="d3dxf_fileloadresource-structure"></a>Struttura FILELOADRESOURCE D3DXF \_
 
-Identifica i dati della risorsa.
+Identifica i dati delle risorse.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,14 +41,14 @@ typedef struct D3DXF_FILELOADRESOURCE {
 
 <dl> <dt>
 
-**hModule**
+**Hmodule**
 </dt> <dd>
 
-Tipo: **[ **hmodule**](../winprog/windows-data-types.md)**
+Tipo: **[ **HMODULE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Handle del modulo che contiene la risorsa da caricare. Se questo membro è **null**, la risorsa deve essere collegata al file eseguibile che lo utilizzerà.
+Handle del modulo contenente la risorsa da caricare. Se questo membro è **NULL,** la risorsa deve essere collegata al file eseguibile che lo userà.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Puntatore a una stringa che specifica il tipo definito dall'utente che identific
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura identifica una risorsa da caricare quando un'applicazione usa il metodo [**CreateEnumObject**](id3dxfile--createenumobject.md) e specifica il flag [D3DXF \_ fileload \_ FROMRESOURCE](d3dxf.md) .
+Questa struttura identifica una risorsa da caricare quando un'applicazione usa il [**metodo CreateEnumObject**](id3dxfile--createenumobject.md) e specifica il flag [D3DXF \_ FILELOAD \_ FROMRESOURCE.](d3dxf.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,7 +84,7 @@ Questa struttura identifica una risorsa da caricare quando un'applicazione usa i
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9xof. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9xof.h</dt> </dl> |
 
 
 

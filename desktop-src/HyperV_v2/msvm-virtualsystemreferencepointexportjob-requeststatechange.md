@@ -1,5 +1,5 @@
 ---
-description: 'Metodo RequestStateChange della classe Msvm_VirtualSystemReferencePointExportJob : richiede una modifica dello stato.'
+description: 'Metodo RequestStateChange della classe Msvm_VirtualSystemReferencePointExportJob: richiede una modifica dello stato.'
 ms.assetid: 53c24e17-2b59-4439-a6d1-e971c189d223
 title: Metodo RequestStateChange della classe Msvm_VirtualSystemReferencePointExportJob
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: bd12d7cd5b79e38260e671bf1408304390985dac
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 520fb0d50c503da1fcacbd7fef8469e483f030b3567f229a1ca442f62d0d72ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531141"
 ---
 # <a name="requeststatechange-method-of-the-msvm_virtualsystemreferencepointexportjob-class"></a>Metodo RequestStateChange della classe Msvm \_ VirtualSystemReferencePointExportJob
 
@@ -49,7 +49,7 @@ Modifica lo stato di un processo. I valori possibili sono i seguenti:
 
 <span id="Start"></span><span id="start"></span><span id="START"></span>
 
-<span id="Start"></span><span id="start"></span><span id="START"></span>**Start** (2)
+<span id="Start"></span><span id="start"></span><span id="START"></span>**Inizio** (2)
 
 
 </dt> <dd>
@@ -60,18 +60,18 @@ Modifica lo stato in "In esecuzione".
 
 <span id="Suspend"></span><span id="suspend"></span><span id="SUSPEND"></span>
 
-<span id="Suspend"></span><span id="suspend"></span><span id="SUSPEND"></span>**Suspend** (3)
+<span id="Suspend"></span><span id="suspend"></span><span id="SUSPEND"></span>**Sospendi** (3)
 
 
 </dt> <dd>
 
-Arresta temporaneamente il processo. L'intenzione è di riavviare successivamente il processo con 'Start'. Potrebbe essere possibile entrare nello stato "Servizio" durante la sospensione. Si tratta di un processo specifico.
+Arresta temporaneamente il processo. L'intenzione è riavviare successivamente il processo con "Start". Potrebbe essere possibile immettere lo stato "Servizio" durante la sospensione. Si tratta di un processo specifico.
 
 </dd> <dt>
 
 <span id="Terminate"></span><span id="terminate"></span><span id="TERMINATE"></span>
 
-<span id="Terminate"></span><span id="terminate"></span><span id="TERMINATE"></span>**Terminate** (4)
+<span id="Terminate"></span><span id="terminate"></span><span id="TERMINATE"></span>**Termina** (4)
 
 
 </dt> <dd>
@@ -87,7 +87,7 @@ Arresta il processo in modo pulito, salva i dati, mantiene lo stato e arresta tu
 
 </dt> <dd>
 
-Termina immediatamente il processo senza che sia necessario salvare i dati o mantenere lo stato.
+Termina immediatamente il processo senza alcun requisito per salvare i dati o mantenere lo stato.
 
 </dd> <dt>
 

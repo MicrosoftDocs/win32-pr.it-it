@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Get WindowStyleEx recupera gli stili della finestra estesa.
+description: Il metodo get \_ WindowStyleEx recupera gli stili di finestra estesi.
 ms.assetid: 72955958-bbda-4b8f-9c28-6d3f5eb56a82
-title: Metodo CBaseControlWindow.get_WindowStyleEx (Ctlutil. h)
+title: CBaseControlWindow.get_WindowStyleEx metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c59336ab57e92e99366494a272f2b995191b494b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 082b541c9f04122616f4f96548f1b1e58d940a6060fb4af1ac0fe51fa4887bb8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119331211"
 ---
-# <a name="cbasecontrolwindowget_windowstyleex-method"></a>Metodo CBaseControlWindow. Get \_ WindowStyleEx
+# <a name="cbasecontrolwindowget_windowstyleex-method"></a>Metodo CBaseControlWindow.get \_ WindowStyleEx
 
-Il `get_WindowStyleEx` metodo recupera gli stili della finestra estesa.
+Il `get_WindowStyleEx` metodo recupera gli stili di finestra estesi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,17 +45,17 @@ HRESULT get_WindowStyleEx(
 *pWindowStyleEx* 
 </dt> <dd>
 
-Puntatore agli stili della finestra estesa.
+Puntatore agli stili di finestra estesi.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro recupera gli stili della finestra estesa. Chiama la funzione membro [**CBaseControlWindow::D ogetwindowstyle**](cbasecontrolwindow-dogetwindowstyle.md) .
+Questa funzione membro recupera gli stili di finestra estesi. Chiama la [**funzione membro CBaseControlWindow::D oGetWindowStyle.**](cbasecontrolwindow-dogetwindowstyle.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Questa funzione membro recupera gli stili della finestra estesa. Chiama la funzi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

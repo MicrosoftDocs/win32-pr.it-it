@@ -1,6 +1,6 @@
 ---
-title: attributo macAddress
-description: Contiene l'indirizzo MAC nella notazione esadecimale con valori massimi separati da due punti.
+title: Attributo macAddress
+description: Contiene l'indirizzo MAC in notazione esadecimale massima e delimitata da due punti.
 ms.assetid: 332cd4f7-cdad-44ab-90b3-60b7d7b4fecb
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17be059be5aec041436393f9c9f251d8f15556de
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 374eb0078c172fd51507891c7e4fea5cdf8ad1b15529b6a318edf8be38355ddc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104479768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301491"
 ---
-# <a name="macaddress-attribute"></a>attributo macAddress
+# <a name="macaddress-attribute"></a>Attributo macAddress
 
-Contiene l'indirizzo MAC nella notazione esadecimale con valori massimi separati da due punti.
+Contiene l'indirizzo MAC in notazione esadecimale massima e delimitata da due punti.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | macAddress                           |
-| LDAP-Display-Name | macAddress                           |
+| Ldap-Display-Name | macAddress                           |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.22                     |
-| System-ID-GUID    | e6a522dd-9770-43e1-89de-1de5044328f7 |
+| System-Id-Guid    | e6a522dd-9770-43e1-89de-1de5044328f7 |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -55,15 +55,15 @@ Contiene l'indirizzo MAC nella notazione esadecimale con valori massimi separati
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**ieee802Device**](c-ieee802device.md)<br/> |
+| Classi usate in        | [**ieee802Device**](c-ieee802device.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Contiene l'indirizzo MAC nella notazione esadecimale con valori massimi separati
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**ieee802Device**](c-ieee802device.md)<br/> |
+| Classi usate in        | [**ieee802Device**](c-ieee802device.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Contiene l'indirizzo MAC nella notazione esadecimale con valori massimi separati
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**ieee802Device**](c-ieee802device.md)<br/> |
+| Classi usate in        | [**ieee802Device**](c-ieee802device.md)<br/> |
 
 
 
@@ -118,15 +118,15 @@ Contiene l'indirizzo MAC nella notazione esadecimale con valori massimi separati
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**ieee802Device**](c-ieee802device.md)<br/> |
+| Classi usate in        | [**ieee802Device**](c-ieee802device.md)<br/> |
 
 
 

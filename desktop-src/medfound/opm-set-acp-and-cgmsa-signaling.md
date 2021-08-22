@@ -1,26 +1,26 @@
 ---
-description: Specifica le informazioni sul segnale video, oltre al livello di protezione.
+description: Specifica informazioni sul segnale video, diverse dal livello di protezione.
 ms.assetid: ed78b7eb-bf15-4068-ab86-ae42a5e62096
-title: OPM_SET_ACP_AND_CGMSA_SIGNALING (Opmapi. h)
+title: OPM_SET_ACP_AND_CGMSA_SIGNALING (Opmapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 02247c48b89e61d49afe7f8f6f3821da68ff050b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 265d2986c624e30d342a4b3bc5e957e04c56bd01d51e146536de5731db42ace8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119343511"
 ---
-# <a name="opm_set_acp_and_cgmsa_signaling"></a>il \_ set \_ di OPM ACP \_ e la \_ \_ segnalazione CGMSA
+# <a name="opm_set_acp_and_cgmsa_signaling"></a>OPM \_ SET \_ ACP \_ AND \_ CGMSA \_ SIGNALING
 
-Specifica le informazioni sul segnale video, oltre al livello di protezione.
+Specifica informazioni sul segnale video, diverse dal livello di protezione.
 
 
 
 | Requisito | Valore |
 |--------------|---------------------------------------------------------------------------------------------------------------------|
-| GUID comando | il \_ set \_ di OPM ACP \_ e la \_ \_ segnalazione CGMSA                                                                                |
-| Dati di input   | Struttura [**di \_ \_ parametri di \_ \_ \_ segnalazione \_ ACP e CGMSA di un set OPM**](/windows/desktop/api/opmapi/ns-opmapi-opm_set_acp_and_cgmsa_signaling_parameters) |
+| GUID del comando | OPM \_ SET \_ ACP \_ AND \_ CGMSA \_ SIGNALING                                                                                |
+| Dati di input   | Struttura [**OPM \_ SET \_ ACP E \_ \_ CGMSA \_ SIGNALING \_ PARAMETERS**](/windows/desktop/api/opmapi/ns-opmapi-opm_set_acp_and_cgmsa_signaling_parameters) |
 
 
 
@@ -28,9 +28,9 @@ Specifica le informazioni sul segnale video, oltre al livello di protezione.
 
 ## <a name="remarks"></a>Commenti
 
-Questo comando equivale al \_ comando DXVA COPPSetSignaling usato in Certified Output Protocol (Copp).
+Questo comando equivale al comando DXVA \_ COPPSetSignaling usato in Certified Output Protection Protocol (COPP).
 
-Per CGMS-A, determinati standard di protezione richiedono che il segnale televisivo includa informazioni all'interno degli stessi pacchetti di forma d'onda VBI dei bit CGMS-A. Tra le altre cose, queste informazioni includono le proporzioni dell'immagine. I televisori potrebbero non essere visualizzati correttamente se le informazioni sulle proporzioni non sono coerenti con il flusso video. L'applicazione può utilizzare questo comando per specificare le proporzioni in modo che il driver di grafica possa generare i pacchetti VBI corretti.
+Per CGMS-A, alcuni standard di protezione richiedono che il segnale televisivo contenga informazioni all'interno degli stessi pacchetti di forma d'onda VBI dei bit CGMS-A. Tra le altre cose, queste informazioni includono le proporzioni dell'immagine. Se le informazioni sulle proporzioni non sono coerenti con il flusso video, è possibile che i programmi televisivi non siano visualizzati in modo non coerente. L'applicazione può usare questo comando per specificare le proporzioni in modo che il driver di grafica possa generare i pacchetti VBI corretti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,9 +38,9 @@ Per CGMS-A, determinati standard di protezione richiedono che il segnale televis
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Opmapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>Opmapi.h</dt> </dl> |
 
 
 
@@ -48,10 +48,10 @@ Per CGMS-A, determinati standard di protezione richiedono che il segnale televis
 
 <dl> <dt>
 
-[**IOPMVideoOutput:: Configure**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-configure)
+[**IOPMVideoOutput::Configure**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-configure)
 </dt> <dt>
 
-[Comandi di OPM](opm-commands.md)
+[Comandi OPM](opm-commands.md)
 </dt> </dl>
 
  

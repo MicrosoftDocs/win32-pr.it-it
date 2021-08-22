@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbea0cdad10c046d544529ad7b0467c32556c63a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: de0c2eb666cc848f7d64156bec109e8ae17dcd1b7a5a30828c4ea0974688d6df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119299601"
 ---
 # <a name="ms-sql-publicationurl-attribute"></a>Attributo MS-SQL-PublicationURL
 
-L'attributo **MS-SQL-PublicationURL** non è attualmente in uso.
+**L'attributo MS-SQL-PublicationURL** non è attualmente in uso.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | MS-SQL-PublicationURL                       |
-| LDAP-Display-Name | mS-SQL-PublicationURL                       |
+| Ldap-Display-Name | mS-SQL-PublicationURL                       |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1384                     |
-| System-ID-GUID    | ae0c11b8-ccee-11d2-9993-0000f87a57d4        |
+| System-Id-Guid    | ae0c11b8-ccee-11d2-9993-0000f87a57d4        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ L'attributo **MS-SQL-PublicationURL** non è attualmente in uso.
 | ID collegamento                | \-                                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                                                                |
+| A valore singolo       | Vero                                                                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                                          |
-| Classi utilizzate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classi usate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **MS-SQL-PublicationURL** non è attualmente in uso.
 | ID collegamento                | \-                                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                                                                |
+| A valore singolo       | Vero                                                                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                                          |
-| Classi utilizzate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classi usate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **MS-SQL-PublicationURL** non è attualmente in uso.
 | ID collegamento                | \-                                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                                                                |
+| A valore singolo       | Vero                                                                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                                          |
-| Classi utilizzate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classi usate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **MS-SQL-PublicationURL** non è attualmente in uso.
 | ID collegamento                | \-                                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                                          |
-| Classi utilizzate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classi usate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **MS-SQL-PublicationURL** non è attualmente in uso.
 | ID collegamento                | \-                                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                                          |
-| Classi utilizzate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classi usate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **MS-SQL-PublicationURL** non è attualmente in uso.
 | ID collegamento                | \-                                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                                          |
-| Classi utilizzate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classi usate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 

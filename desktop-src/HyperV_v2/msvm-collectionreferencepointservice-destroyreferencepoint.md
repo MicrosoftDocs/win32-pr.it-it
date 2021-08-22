@@ -1,5 +1,5 @@
 ---
-description: Elimina definitivamente una raccolta di punti di riferimento esistente. Questo metodo può essere un effetto collaterale per eliminare altri punti di riferimento che dipendono dalla raccolta di punti di riferimento interessata.
+description: Elimina una raccolta di punti di riferimento esistente. Questo metodo può causare l'eliminazione di altri punti di riferimento dipendenti dalla raccolta di punti di riferimento interessata.
 ms.assetid: 72c116f4-f844-494c-96ea-e97c49a2af7e
 title: Metodo DestroyReferencePoint della classe Msvm_CollectionReferencePointService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: d7fb3fd9168778854518022744f1a0c5ba3c5f79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95745646c410c2752f146fc05042b26215f41ef23d3637701497ad565e06583c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104132015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531991"
 ---
-# <a name="destroyreferencepoint-method-of-the-msvm_collectionreferencepointservice-class"></a>Metodo DestroyReferencePoint della classe MSVM \_ CollectionReferencePointService
+# <a name="destroyreferencepoint-method-of-the-msvm_collectionreferencepointservice-class"></a>Metodo DestroyReferencePoint della classe Msvm \_ CollectionReferencePointService
 
-Elimina definitivamente una raccolta di punti di riferimento esistente. Questo metodo può essere un effetto collaterale per eliminare altri punti di riferimento che dipendono dalla raccolta di punti di riferimento interessata.
+Elimina una raccolta di punti di riferimento esistente. Questo metodo può causare l'eliminazione di altri punti di riferimento dipendenti dalla raccolta di punti di riferimento interessata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,23 +40,23 @@ uint32 DestroyReferencePoint(
 
 <dl> <dt>
 
-*AffectedReferencePointCollection* \[ in\]
+*AffectedReferencePointCollection* \[ Pollici\]
 </dt> <dd>
 
 Riferimento alla raccolta di punti di riferimento del sistema virtuale interessata.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Se l'operazione è a esecuzione prolungata, è possibile che venga restituito un processo.
+Se l'operazione è a esecuzione lunga, facoltativamente può essere restituito un processo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se ha esito positivo, restituisce 0 (nessun errore) o 4096 (processo avviato); in caso contrario, viene restituito un errore.
+In caso di esito positivo, restituisce 0 (nessun errore) o 4096 (processo avviato); In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -66,13 +66,13 @@ Se ha esito positivo, restituisce 0 (nessun errore) o 4096 (processo avviato); i
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non valido** (4)
+**Parametro non** valido (4)
 </dt> <dt>
 
 **Stato non valido** (5)
@@ -84,13 +84,13 @@ Se ha esito positivo, restituisce 0 (nessun errore) o 4096 (processo avviato); i
 **DMTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -99,10 +99,10 @@ Se ha esito positivo, restituisce 0 (nessun errore) o 4096 (processo avviato); i
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -111,7 +111,7 @@ Se ha esito positivo, restituisce 0 (nessun errore) o 4096 (processo avviato); i
 
 <dl> <dt>
 
-[**\_CollectionReferencePointService MSVM**](msvm-collectionreferencepointservice.md)
+[**Msvm \_ CollectionReferencePointService**](msvm-collectionreferencepointservice.md)
 </dt> </dl>
 
  

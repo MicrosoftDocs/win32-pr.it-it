@@ -1,21 +1,21 @@
 ---
-title: Creazione di una funzione di callback dello stato
-description: Creazione di una funzione di callback dello stato
+title: Creazione di una funzione di callback di stato
+description: Creazione di una funzione di callback di stato
 ms.assetid: 9aa98340-a5a0-4084-9670-b3c27a1351ed
 keywords:
-- capSetCallbackOnStatus (macro)
+- Macro capSetCallbackOnStatus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 592a5582bca37f644810f3496a39321d22da43be
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3d7c7d8ed6adc409eef338213c8c4e1febf2ca0825e13d41735710938e733b97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119497921"
 ---
-# <a name="creating-a-status-callback-function"></a>Creazione di una funzione di callback dello stato
+# <a name="creating-a-status-callback-function"></a>Creazione di una funzione di callback di stato
 
-L'esempio seguente è una funzione di callback di stato semplice. Registrare questo callback usando la macro [**capSetCallbackOnStatus**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonstatus) .
+L'esempio seguente è una semplice funzione di callback dello stato. Registrare questo callback usando la macro [**capSetCallbackOnStatus.**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonstatus)
 
 
 ```C++
@@ -53,12 +53,12 @@ LRESULT PASCAL StatusCallbackProc(HWND hWnd, int nID,
 
 <dl> <dt>
 
-[Uso di acquisizione video](using-video-capture.md)
+[Uso dell'acquisizione video](using-video-capture.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

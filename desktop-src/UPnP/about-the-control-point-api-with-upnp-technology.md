@@ -1,34 +1,34 @@
 ---
 title: Informazioni sull'API del punto di controllo
-description: La tecnologia UPnP consente la rete dinamica di Appliance intelligenti, PC e altri punti di controllo.
+description: La tecnologia UPnP consente la rete dinamica di appliance intelligenti, PC e altri punti di controllo.
 ms.assetid: d81a654f-e92b-41dc-a5ff-27923c1313e0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24e43205a503b7347d4047777b5d93ce2eadd8e7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: dd74b1a1c6f630d6d96a5100e4b2ca5e3284caf3a1c251d131070cd7008694f0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104222012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119418251"
 ---
 # <a name="about-the-control-point-api"></a>Informazioni sull'API del punto di controllo
 
-La tecnologia UPnP consente la rete dinamica di Appliance intelligenti, PC e altri punti di controllo. La rete dinamica è disponibile su diversi supporti fisici. L'implementazione Microsoft dell'API del punto di controllo con tecnologia UPnP è costituita da un set di oggetti COM utilizzati per scrivere applicazioni e pagine Web che consentono di trovare e controllare dispositivi basati su UPnP. Ad esempio, un VCR con supporto per UPnP può essere controllato da una pagina Web progettata appositamente per controllarlo. Per estendere questo concetto, gli sviluppatori possono controllare molti dispositivi da una posizione centrale, remota o peer.
+La tecnologia UPnP consente la rete dinamica di appliance intelligenti, PC e altri punti di controllo. La rete dinamica è disponibile su un'ampia gamma di supporti fisici. L'implementazione Microsoft dell'API Punto di controllo con tecnologia UPnP è costituita da un set di oggetti COM usati per scrivere applicazioni e pagine Web che individuano e controllano i dispositivi basati su UPnP. Ad esempio, un videoregistratore con supporto UPnP può essere controllato da una pagina Web progettata in modo specifico per controllarlo. Per estendere questo concetto, gli sviluppatori possono controllare molte appliance da una posizione centrale, remota o peer.
 
-Le applicazioni create con l'API del punto di controllo con tecnologia UPnP variano da script incorporati in pagine HTML a programmi C++ completi. L'API del punto di controllo con tecnologia UPnP supporta Microsoft Visual Basic Development System, Microsoft Visual Basic Scripting Edition (VBScript) e C++.
+Le applicazioni create con l'API Punto di controllo con tecnologia UPnP vanno dagli script incorporati nelle pagine HTML ai programmi C++ completi. L'API Punto di controllo con tecnologia UPnP supporta il sistema di sviluppo Microsoft Visual Basic, Microsoft Visual Basic Scripting Edition (VBScript) e C++.
 
-Le sezioni seguenti illustrano, in generale, il funzionamento dell'API del punto di controllo con la tecnologia UPnP:
+Le sezioni seguenti illustrano, in generale, il funzionamento dell'API punto di controllo con la tecnologia UPnP:
 
--   [Nozioni fondamentali sui punti di controllo](control-point-basics.md)
+-   [Nozioni di base sul punto di controllo](control-point-basics.md)
 -   [Ricerca di dispositivi](finding-devices.md)
 -   [Descrizione dei dispositivi](describing-devices.md)
 -   [Controllo dei dispositivi](controlling-devices.md)
 
-Tutti gli esempi nell'API del punto di controllo con la documentazione relativa alla tecnologia UPnP fanno riferimento a dispositivi fittizi, tipi di dispositivi e stringhe.
+Tutti gli esempi nell'API del punto di controllo con la documentazione della tecnologia UPnP fanno riferimento a dispositivi fittizi, tipi di dispositivi e stringhe.
 
- 
+ 
 
- 
+ 
 
 
 

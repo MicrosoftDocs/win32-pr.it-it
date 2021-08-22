@@ -1,9 +1,9 @@
 ---
-title: TEMA. openView
-description: Il metodo openView apre una visualizzazione in una nuova finestra.
+title: THEME.openView
+description: Il metodo openView apre una vista in una nuova finestra.
 ms.assetid: 2aa63c29-dafe-4942-a010-076f1503862b
 keywords:
-- TEMA. openView Windows Media Player
+- THEME.openView Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d66ff2cf47004c7687a37f1f22a87bdeb534d344
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5e5dd33760cb86ef1f85f7efd8a3ff38cb36f0408076555e2fe8732ffb53779a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119466611"
 ---
-# <a name="themeopenview"></a>TEMA. openView
+# <a name="themeopenview"></a>THEME.openView
 
-Il metodo **openView** apre una **visualizzazione** in una nuova finestra.
+Il **metodo openView** apre una **vista** in una nuova finestra.
 
 ``` syntax
         theme.openView(view)
@@ -32,10 +32,10 @@ Il metodo **openView** apre una **visualizzazione** in una nuova finestra.
 
 <dl> <dt>
 
-<span id="view"></span><span id="VIEW"></span>*visualizzare*
+<span id="view"></span><span id="VIEW"></span>*Mostra*
 </dt> <dd>
 
-**Stringa** che specifica l' **ID** della **visualizzazione** da aprire.
+Valore **String** che specifica **l'ID** **dell'oggetto VIEW** da aprire.
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -77,10 +77,10 @@ Questo metodo non restituisce valori.
 [**Elemento THEME**](theme-element.md)
 </dt> <dt>
 
-[**THEME. closeView**](theme-closeview.md)
+[**THEME.closeView**](theme-closeview.md)
 </dt> <dt>
 
-[**THEME. openViewRelative**](theme-openviewrelative.md)
+[**THEME.openViewRelative**](theme-openviewrelative.md)
 </dt> </dl>
 
  

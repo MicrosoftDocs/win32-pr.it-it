@@ -2,21 +2,21 @@
 description: La classe CWbemProviderGlue espone i metodi seguenti.
 ms.assetid: E09290AF-1C2E-458A-811E-5357D470D3DF
 ms.tgt_platform: multiple
-title: Metodi CWbemProviderGlue
+title: Metodi di CWbemProviderGlue
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dea54ffdeaa6b74cda3b830ea65fdc17f8ffa129
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: db9099528d76efe1aa165881462bc12a0e30493ce5b817da350c6feefc7297e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119244511"
 ---
-# <a name="cwbemproviderglue-methods"></a>Metodi CWbemProviderGlue
+# <a name="cwbemproviderglue-methods"></a>Metodi di CWbemProviderGlue
 
-\[La classe [**CWbemProviderGlue**](/windows/desktop/api/WbemGlue/nl-wbemglue-cwbemproviderglue) fa parte del Framework del provider WMI, che è ora considerato nello stato finale e non sono disponibili ulteriori sviluppi, miglioramenti o aggiornamenti per i problemi non correlati alla sicurezza che interessano queste librerie. Le [API mi](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) devono essere usate per tutte le nuove attività di sviluppo.\]
+\[La [**classe CWbemProviderGlue**](/windows/desktop/api/WbemGlue/nl-wbemglue-cwbemproviderglue) fa parte del framework del provider WMI che è ora considerato in stato finale e non saranno disponibili altri aggiornamenti, miglioramenti o sviluppo per problemi non correlati alla sicurezza che interessano queste librerie. Le [API mi devono essere usate](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) per tutti i nuovi progetti di sviluppo.\]
 
-La classe [**CWbemProviderGlue**](/windows/desktop/api/WbemGlue/nl-wbemglue-cwbemproviderglue) espone i metodi seguenti.
+La [**classe CWbemProviderGlue**](/windows/desktop/api/WbemGlue/nl-wbemglue-cwbemproviderglue) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

@@ -3,7 +3,7 @@ title: Elemento importChannel (ChannelListType)
 description: Identifica un canale definito da un altro provider.
 ms.assetid: 62b1ea5c-0994-4bd1-b73e-6b6e0f2ead7a
 keywords:
-- EventLog elemento importChannel
+- Elemento importChannel EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 442d9c54fb785828efecf3f304fc8b170b1fefa0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7b3ae7d7a825e7322bd039cc4b251bba7eb0e1668abf03a33fbf7bccc4c786fc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119247921"
 ---
 # <a name="importchannel-channellisttype-element"></a>Elemento importChannel (ChannelListType)
 
@@ -30,7 +30,7 @@ Identifica un canale definito da un altro provider.
  />
 ```
 
-L'elemento **importChannel** è definito dal tipo complesso [**ChannelListType**](eventmanifestschema-channellisttype-complextype.md) .
+**L'elemento importChannel** è definito dal tipo complesso [**ChannelListType.**](eventmanifestschema-channellisttype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **importChannel** è definito dal tipo complesso [**ChannelListType**
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

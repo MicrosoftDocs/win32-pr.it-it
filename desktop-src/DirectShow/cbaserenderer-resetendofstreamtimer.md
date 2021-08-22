@@ -1,7 +1,7 @@
 ---
-description: Il metodo ResetEndOfStreamTimer Annulla il timer che pianifica le \_ notifiche complete di EC.
+description: Il metodo ResetEndOfStreamTimer annulla il timer che pianifica le notifiche EC \_ COMPLETE.
 ms.assetid: 9d423241-1401-4181-8fbf-c409a1e8abdd
-title: Metodo CBaseRenderer. ResetEndOfStreamTimer (Renbase. h)
+title: Metodo CBaseRenderer.ResetEndOfStreamTimer (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 734673c4e2bd6719179eca00f03a6c2f41061132
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e589288059eabbbbaaa23904ba021199cb051d9034345cb2c92ac946a6cba9c1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119502681"
 ---
-# <a name="cbaserendererresetendofstreamtimer-method"></a>CBaseRenderer. ResetEndOfStreamTimer, metodo
+# <a name="cbaserendererresetendofstreamtimer-method"></a>Metodo CBaseRenderer.ResetEndOfStreamTimer
 
-Il `ResetEndOfStreamTimer` metodo annulla il timer che pianifica le notifiche [**\_ complete di EC**](ec-complete.md) .
+Il `ResetEndOfStreamTimer` metodo annulla il timer che pianifica le notifiche EC [**\_ COMPLETE.**](ec-complete.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,8 +50,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Questo metodo non restituisce valori.
 [**CBaseRenderer::SendEndOfStream**](cbaserenderer-sendendofstream.md)
 </dt> <dt>
 
-[**CBaseRenderer:: TimerCallback**](cbaserenderer-timercallback.md)
+[**CBaseRenderer::TimerCallback**](cbaserenderer-timercallback.md)
 </dt> </dl>
 
  

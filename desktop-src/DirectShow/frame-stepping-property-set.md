@@ -4,22 +4,22 @@ ms.assetid: 01abe1fe-fc2f-44cb-9546-45a8d682a179
 title: Set di proprietà Frame Stepping
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e0ccd79feda0e5e2e537390fe5598822fb3787f6
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 5ccddab4cd7f302dc850a4581ce8e70dcffc9cb6a4943c8f768a74c890edfb9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119565001"
 ---
 # <a name="frame-stepping-property-set"></a>Set di proprietà Frame Stepping
 
-I decodificatori che implementano la ricerca accurata dei frame in Microsoft DirectShow devono implementare il set di proprietà \_ AM KSPROPSETID FrameStep, che viene usato insieme \_ all'interfaccia [**IVideoFrameStep.**](/windows/desktop/api/Strmif/nn-strmif-ivideoframestep)
+I decodificatori che implementano la ricerca accurata dei frame in Microsoft DirectShow devono implementare il set di proprietà AM \_ KSPROPSETID \_ FrameStep, usato insieme all'interfaccia [**IVideoFrameStep.**](/windows/desktop/api/Strmif/nn-strmif-ivideoframestep)
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------|----------------------------|
-| GUID set di proprietà | AM \_ KSPROPSETID \_ FrameStep |
+| GUID set di proprietà | FrameStep \_ di AM KSPROPSETID \_ |
 
 
 
@@ -29,10 +29,10 @@ I decodificatori che implementano la ricerca accurata dei frame in Microsoft Dir
 
 | ID proprietà                              | Descrizione                                                                                                                                                                     |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AM \_ PROPERTY \_ FRAMESTEP \_ STEP            | Indica al decodificatore di iniziare un'operazione di passaggio e passa una struttura [**\_ AM PROPERTY \_ FRAMESTEP**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-am_framestep_step) che specifica il numero di passaggi.            |
+| PASSAGGIO \_ DEL PASSAGGIO DEL PASSAGGIO DEL FRAME DI PROPRIETÀ \_ \_ AM            | Indica al decodificatore di iniziare un'operazione di passaggio e passa una struttura [**AM \_ PROPERTY \_ FRAMESTEP**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-am_framestep_step) che specifica il numero di passaggi.            |
 | AM \_ PROPERTY \_ FRAMESTEP \_ CANCEL          | Indica al decodificatore di annullare l'operazione del passaggio corrente. Nessun dato dell'istanza è associato a questa proprietà.                                                                  |
-| AM \_ PROPERTY \_ FRAMESTEP \_ CANSTEP         | Il decodificatore restituisce S OK in questa istruzione per indicare che è possibile eseguire l'esecuzione delle istruzioni dei \_ frame, S \_ FALSE in caso contrario. Quando questa proprietà è impostata, non viene passato alcun dato dell'istanza.         |
-| AM \_ PROPERTY \_ FRAMESTEP \_ CANSTEPMULTIPLE | Il decodificatore restituisce S OK in questa istruzione per indicare che può eseguire più fotogrammi \_ alla volta, S \_ FALSE in caso contrario. Quando questa proprietà è impostata, non viene passato alcun dato dell'istanza. |
+| AM \_ PROPERTY \_ FRAMESTEP \_ CANSTEP         | Il decodificatore restituisce S OK su questa istruzione per indicare che può eseguire l'esecuzione di \_ istruzioni dei fotogrammi, S \_ FALSE in caso contrario. Quando questa proprietà è impostata, non viene passato alcun dato di istanza.         |
+| AM \_ PROPERTY \_ FRAMESTEP \_ CANSTEPMULTIPLE | Il decodificatore restituisce S OK in questa istruzione per indicare che può eseguire più \_ fotogrammi contemporaneamente, S \_ FALSE in caso contrario. Quando questa proprietà è impostata, non viene passato alcun dato di istanza. |
 
 
 

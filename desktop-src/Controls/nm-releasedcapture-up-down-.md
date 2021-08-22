@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica NM_RELEASEDCAPTURE (verso il basso) (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo di scorrimento che il controllo sta rilasciando l'acquisizione del mouse. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: NM_RELEASEDCAPTURE codice di notifica (up-down) (Commctrl.h)
+description: Notifica alla finestra padre di un controllo verso l'alto che il controllo sta rilasciando mouse capture. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 88a4a9a2-ba7f-4ccc-b5bf-749f49dc666b
 keywords:
-- NM_RELEASEDCAPTURE (verso il basso) controlli di Windows per il codice di notifica
+- NM_RELEASEDCAPTURE di notifica (up-down) Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b94f2a61727861cbf47720a41c7255763992b54
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 54e0adb7ace7f5a185cf7f0231622d4931c22af6932cf5547a7e9365bbca8669
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119344211"
 ---
-# <a name="nm_releasedcapture-up-down-notification-code"></a>\_Codice di notifica di Nm RELEASEDCAPTURE (Down)
+# <a name="nm_releasedcapture-up-down-notification-code"></a>Codice di notifica NM \_ RELEASEDCAPTURE (up-down)
 
-Notifica alla finestra padre di un controllo di scorrimento che il controllo sta rilasciando l'acquisizione del mouse. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo verso l'alto che il controllo sta rilasciando mouse capture. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_RELEASEDCAPTURE
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive su questa notifica.
+Puntatore a [**una struttura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive su questa notifica.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il controllo Ignora il valore restituito da questo codice di notifica.
+Il controllo ignora il valore restituito da questo codice di notifica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Il controllo Ignora il valore restituito da questo codice di notifica.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Attributo Machine-Role
+title: Machine-Role attributo
 description: Ruolo per un controller di dominio, un server o una workstation del computer.
 ms.assetid: 1aaab4e5-1220-4cb3-8819-dbeec729d26c
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Machine-Role attribute
-- Schema AD dell'attributo ruolo
+- Machine-Role schema AD dell'attributo
+- Attributo machineRole - Schema AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c286c0380ab8dbc0e4947a656dcf5601f1662d09
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 92896d773b488585324f2b98986f61278f9c22db677e93e51cd231438b742a47
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301331"
 ---
-# <a name="machine-role-attribute"></a>Attributo Machine-Role
+# <a name="machine-role-attribute"></a>Machine-Role attributo
 
-Ruolo per un computer: DC, server o workstation.
+Ruolo per un computer: controller di dominio, server o workstation.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Machine-Role                         |
-| LDAP-Display-Name | Ruolo                          |
+| Ldap-Display-Name | Ruolo computer                          |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.71                |
-| System-ID-GUID    | bf9679b2-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf9679b2-0de6-11d0-a285-00aa003049e2 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Ruolo per un computer: DC, server o workstation.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Ruolo per un computer: DC, server o workstation.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Ruolo per un computer: DC, server o workstation.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Ruolo per un computer: DC, server o workstation.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| A valore singolo       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Ruolo per un computer: DC, server o workstation.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| A valore singolo       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Ruolo per un computer: DC, server o workstation.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| A valore singolo       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 

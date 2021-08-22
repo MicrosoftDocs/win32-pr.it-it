@@ -1,19 +1,19 @@
 ---
-title: Uso della modalità tunnel
-description: Il codice di esempio seguente illustra come configurare un tunnel IPsec Point-to-Point usando l'API Windows Filtering Platform (PAM).
+title: Uso della Tunnel predefinita
+description: Il codice di esempio seguente illustra come configurare un tunnel IPsec da punto a punto usando l'API Windows Filtering Platform (WFP).
 ms.assetid: 6bbe7e94-6a5f-4984-ac61-b187dcf25366
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6727203a201c51f88558451fcd620d1a1be0c7f7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9f90a4c2068b32ce265054dc2d75e75c39622cc9745d8e320fc73aefd9c2739a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044215"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119535341"
 ---
-# <a name="using-tunnel-mode"></a>Uso della modalità tunnel
+# <a name="using-tunnel-mode"></a>Uso della Tunnel predefinita
 
-Nell'esempio di codice seguente viene illustrato come configurare un tunnel IPsec Point-to-Point utilizzando l'API Windows Filtering Platform (PAM).
+Il codice di esempio seguente illustra come configurare un tunnel IPsec da punto a punto usando l'API Windows Filtering Platform (WFP).
 
 
 ```C++
@@ -189,9 +189,9 @@ CLEANUP:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

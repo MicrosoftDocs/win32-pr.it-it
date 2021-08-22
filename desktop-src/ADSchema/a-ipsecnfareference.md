@@ -1,10 +1,10 @@
 ---
-title: Attributo IPSec-NFA-Reference
-description: L'attributo IPSec-NFA-Reference è solo per uso interno.
+title: Attributo Ipsec-NFA-Reference
+description: L'attributo Ipsec-NFA-Reference è solo per uso interno.
 ms.assetid: 660bb1a1-c953-4768-afe5-006f436ef0cf
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo IPSec-NFA-Reference
+- Schema AD dell'attributo Ipsec-NFA-Reference
 - Schema AD dell'attributo ipsecNFAReference
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9717364dbd2317da35a6e25e80ebd9d8f37a7c6b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 57ee5131e6bbd2181cf64c4b87627d4903f9fc8301b4bb0d7970f6003125dbb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322521"
 ---
-# <a name="ipsec-nfa-reference-attribute"></a>Attributo IPSec-NFA-Reference
+# <a name="ipsec-nfa-reference-attribute"></a>Attributo Ipsec-NFA-Reference
 
-L'attributo **IPSec-NFA-Reference** è solo per uso interno.
+**L'attributo Ipsec-NFA-Reference** è solo per uso interno.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | IPSec-NFA-riferimento                     |
-| LDAP-Display-Name | ipsecNFAReference                       |
+| CN                | Informazioni di riferimento su Ipsec-NFA                     |
+| Ldap-Display-Name | ipsecNFAReference                       |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.627                  |
-| System-ID-GUID    | b40ff821-427a-11d1-a9c2-0000f80367c1    |
+| System-Id-Guid    | b40ff821-427a-11d1-a9c2-0000f80367c1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ L'attributo **IPSec-NFA-Reference** è solo per uso interno.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
+| Classi usate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **IPSec-NFA-Reference** è solo per uso interno.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
+| Classi usate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **IPSec-NFA-Reference** è solo per uso interno.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
+| Classi usate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **IPSec-NFA-Reference** è solo per uso interno.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| A valore singolo       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
+| Classi usate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **IPSec-NFA-Reference** è solo per uso interno.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| A valore singolo       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
+| Classi usate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **IPSec-NFA-Reference** è solo per uso interno.
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| A valore singolo       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
+| Classi usate in        | [**Ipsec-Policy**](c-ipsecpolicy.md)<br/> |
 
 
 

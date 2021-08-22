@@ -1,11 +1,11 @@
 ---
-title: Attributo IPSec-ID
-description: L'attributo IPSec-ID è solo per uso interno.
+title: Attributo Ipsec-ID
+description: L'attributo Ipsec-ID è solo per uso interno.
 ms.assetid: a9a8e9ca-2ebe-40eb-8dbe-7b164417271b
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo IPSec-ID
-- Schema AD dell'attributo ipsecID
+- Schema AD dell'attributo Ipsec-ID
+- Attributo ipsecID - Schema AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fdd64e831c233092870352b0d3b1834d5108b91
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5ee352cdb9849e5277d8d23f4b0b79bc6588c0fa25f794d9886d8125ab6be477
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322587"
 ---
-# <a name="ipsec-id-attribute"></a>Attributo IPSec-ID
+# <a name="ipsec-id-attribute"></a>Attributo Ipsec-ID
 
-L'attributo **IPSec-ID** è solo per uso interno.
+**L'attributo Ipsec-ID** è solo per uso interno.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | ID IPSec                                    |
-| LDAP-Display-Name | ipsecID                                     |
+| CN                | IPSEC-ID                                    |
+| Ldap-Display-Name | ipsecID                                     |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.621                      |
-| System-ID-GUID    | b40ff81d-427a-11d1-a9c2-0000f80367c1        |
+| System-Id-Guid    | b40ff81d-427a-11d1-a9c2-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ L'attributo **IPSec-ID** è solo per uso interno.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**IPSec-base**](c-ipsecbase.md)<br/> |
+| Classi usate in        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **IPSec-ID** è solo per uso interno.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**IPSec-base**](c-ipsecbase.md)<br/> |
+| Classi usate in        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **IPSec-ID** è solo per uso interno.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**IPSec-base**](c-ipsecbase.md)<br/> |
+| Classi usate in        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **IPSec-ID** è solo per uso interno.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**IPSec-base**](c-ipsecbase.md)<br/> |
+| Classi usate in        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **IPSec-ID** è solo per uso interno.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**IPSec-base**](c-ipsecbase.md)<br/> |
+| Classi usate in        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **IPSec-ID** è solo per uso interno.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**IPSec-base**](c-ipsecbase.md)<br/> |
+| Classi usate in        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
