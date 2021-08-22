@@ -1,12 +1,12 @@
 ---
-title: Proprietà GatewayProfileUsageMethod di IMsRdpClientTransportSettings
-description: Specifica se utilizzare le impostazioni predefinite del Gateway Desktop remoto Gateway.
+title: Proprietà IMsRdpClientTransportSettings GatewayProfileUsageMethod
+description: Specifica se usare le impostazioni predefinite Desktop remoto Gateway Desktop remoto.
 ms.assetid: ce774790-31ad-40ba-ba8f-e81b0dbda175
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà GatewayProfileUsageMethod
-- Servizi Desktop remoto proprietà GatewayProfileUsageMethod, interfaccia IMsRdpClientTransportSettings
-- Interfaccia IMsRdpClientTransportSettings Servizi Desktop remoto, proprietà GatewayProfileUsageMethod
+- Proprietà GatewayProfileUsageMethod Servizi Desktop remoto
+- Proprietà GatewayProfileUsageMethod Servizi Desktop remoto, interfaccia IMsRdpClientTransportSettings
+- Interfaccia IMsRdpClientTransportSettings Servizi Desktop remoto , proprietà GatewayProfileUsageMethod
 topic_type:
 - apiref
 api_name:
@@ -19,16 +19,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05a12a9836e89348d1eb7ccdf680b23e2695c938
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3386e6a38c99539aebb84280dc8250b2d779f5d81229763d2d926ae499e144e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138624"
 ---
-# <a name="imsrdpclienttransportsettingsgatewayprofileusagemethod-property"></a>Proprietà IMsRdpClientTransportSettings:: GatewayProfileUsageMethod
+# <a name="imsrdpclienttransportsettingsgatewayprofileusagemethod-property"></a>Proprietà IMsRdpClientTransportSettings::GatewayProfileUsageMethod
 
-Specifica se utilizzare le impostazioni predefinite del Gateway Desktop remoto Gateway.
+Specifica se usare le impostazioni predefinite Desktop remoto Gateway Desktop remoto.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -49,35 +49,35 @@ HRESULT get_GatewayProfileUsageMethod(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Metodo di utilizzo del profilo Gateway Desktop remoto. Questo parametro può avere uno dei valori seguenti.
+Metodo di utilizzo del profilo di Gateway Desktop remoto. Questo parametro può avere uno dei valori seguenti.
 
 <dt>
 
 <span id="TSC_PROXY_PROFILE_MODE_DEFAULT"></span><span id="tsc_proxy_profile_mode_default"></span>
 
-<span id="TSC_PROXY_PROFILE_MODE_DEFAULT"></span><span id="tsc_proxy_profile_mode_default"></span>**TSC \_ \_ \_ \_ Impostazione predefinita modalità profilo proxy** (0 (0x0))
+<span id="TSC_PROXY_PROFILE_MODE_DEFAULT"></span><span id="tsc_proxy_profile_mode_default"></span>**TSC \_ PROXY \_ PROFILE \_ MODE \_ DEFAULT** (0 (0x0))
 
 
 </dt> <dd>
 
-Utilizzare la modalità predefinita del profilo, come specificato dall'amministratore.
+Usare la modalità profilo predefinita, come specificato dall'amministratore.
 
 </dd> <dt>
 
 <span id="TSC_PROXY_PROFILE_MODE_EXPLICIT"></span><span id="tsc_proxy_profile_mode_explicit"></span>
 
-<span id="TSC_PROXY_PROFILE_MODE_EXPLICIT"></span><span id="tsc_proxy_profile_mode_explicit"></span>**TSC \_ \_Modalità profilo \_ proxy \_ esplicita** (1 (0x1))
+<span id="TSC_PROXY_PROFILE_MODE_EXPLICIT"></span><span id="tsc_proxy_profile_mode_explicit"></span>**TSC \_ PROXY \_ PROFILE \_ MODE \_ EXPLICIT** (1 (0x1))
 
 
 </dt> <dd>
 
-Utilizzare le impostazioni esplicite, come specificato dall'utente.
+Usare impostazioni esplicite, come specificato dall'utente.
 
 </dd> </dl>
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="requirements"></a>Requisiti
 

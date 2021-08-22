@@ -1,7 +1,7 @@
 ---
 description: Ottiene l'handle di una funzione cercandone il nome.
 ms.assetid: 1e2e2dae-5084-47f3-9812-3dbf609bd70b
-title: 'Metodo ID3DXBaseEffect:: GetFunctionByName (D3DX9Effect. h)'
+title: Metodo ID3DXBaseEffect::GetFunctionByName (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: e1cd9ec56ff5df3bff293ade0669b4cd7c8dad5d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bcc16fa8136332e2a5d1a87956e1d4cc6a2a562b7e4e3531efbcc09f1314978b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119121974"
 ---
-# <a name="id3dxbaseeffectgetfunctionbyname-method"></a>Metodo ID3DXBaseEffect:: GetFunctionByName
+# <a name="id3dxbaseeffectgetfunctionbyname-method"></a>Metodo ID3DXBaseEffect::GetFunctionByName
 
 Ottiene l'handle di una funzione cercandone il nome.
 
@@ -40,7 +40,7 @@ D3DXHANDLE GetFunctionByName(
 
 <dl> <dt>
 
-*pname* \[ in\]
+*pName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -53,7 +53,7 @@ Stringa contenente il nome della funzione.
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Restituisce l'handle della funzione specificata o **null** se il nome non è stato trovato. Vedere [handle (Direct3D 9)](handles.md).
+Restituisce l'handle della funzione specificata oppure **NULL se** il nome non è stato trovato. Vedere [Handle (Direct3D 9)](handles.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Restituisce l'handle della funzione specificata o **null** se il nome non è sta
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

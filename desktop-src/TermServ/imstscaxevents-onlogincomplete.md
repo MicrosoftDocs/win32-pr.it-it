@@ -1,12 +1,12 @@
 ---
 title: Metodo IMsTscAxEvents OnLoginComplete
-description: Chiamato quando il controllo client ha effettuato l'accesso a un server di host sessione Desktop remoto (host sessione Desktop remoto), dopo la visualizzazione della finestra di dialogo di accesso di Windows.
+description: Chiamato quando il controllo client ha eseguito correttamente l'accesso a un server host sessione Desktop remoto (Host sessione Desktop remoto), dopo la visualizzazione della finestra di dialogo Windows Accesso remoto.
 ms.assetid: acb345a6-3153-4b8f-ac51-fe0c19fa750a
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnLoginComplete
+- Metodo OnLoginComplete Servizi Desktop remoto
 - Metodo OnLoginComplete Servizi Desktop remoto, interfaccia IMsTscAxEvents
-- Interfaccia IMsTscAxEvents Servizi Desktop remoto, metodo OnLoginComplete
+- Interfaccia IMsTscAxEvents Servizi Desktop remoto , metodo OnLoginComplete
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 74d6b63f74ed99c8af939bafdc8a55a41e33b404
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d6c89b494a250652e054e245eb0de3267a860bec1a193c7dc953f93fd0800c2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138434"
 ---
-# <a name="imstscaxeventsonlogincomplete-method"></a>Metodo IMsTscAxEvents:: OnLoginComplete
+# <a name="imstscaxeventsonlogincomplete-method"></a>Metodo IMsTscAxEvents::OnLoginComplete
 
-Chiamato quando il controllo client ha effettuato l'accesso a un server di host sessione Desktop remoto (host sessione Desktop remoto), dopo la visualizzazione della finestra di dialogo di accesso di Windows.
+Chiamato quando il controllo client ha eseguito correttamente l'accesso a un server host sessione Desktop remoto (Host sessione Desktop remoto), dopo la visualizzazione della finestra di dialogo Windows Accesso remoto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,9 +51,9 @@ Implementare questo metodo nel sink di evento per ricevere la notifica che il co
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come gestire questo evento utilizzando Visual Basic codice di scripting. Il presupposto in questo esempio è che l'oggetto controllo è denominato "MsRdpClient".
+Nell'esempio seguente viene illustrato come gestire questo evento usando Visual Basic di scripting. Il presupposto in questo esempio è che l'oggetto controllo sia denominato "MsRdpClient".
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 
 ```VB

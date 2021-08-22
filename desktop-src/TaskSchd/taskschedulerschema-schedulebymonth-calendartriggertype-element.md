@@ -3,7 +3,7 @@ title: Elemento ScheduleByMonth (calendarTriggerType)
 description: Specifica una pianificazione mensile.
 ms.assetid: 3a23f4d0-bdaf-4f2a-81c6-8652a0849fc8
 keywords:
-- Utilità di pianificazione elemento ScheduleByMonth
+- Elemento ScheduleByMonth Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6fda84a1cd4373f7988fa66a5ad70c97dd371d4d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a03fcc3b30e4fe684926baaba2815132c9f2f06bf4373b4e9fbbc181e187bf6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513811"
 ---
 # <a name="schedulebymonth-calendartriggertype-element"></a>Elemento ScheduleByMonth (calendarTriggerType)
 
-Specifica una pianificazione mensile. Ad esempio, l'attività inizia alle 8:00 in giorni specifici del mese per mesi specifici.
+Specifica una pianificazione mensile. Ad esempio, l'attività inizia alle 8:00 in giorni specifici del mese in mesi specifici.
 
 ``` syntax
 <xs:element name="ScheduleByMonth"
@@ -30,7 +30,7 @@ Specifica una pianificazione mensile. Ad esempio, l'attività inizia alle 8:00 i
  />
 ```
 
-L'elemento **ScheduleByMonth** è definito dal tipo complesso [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) .
+**L'elemento ScheduleByMonth** è definito dal tipo complesso [**calendarTriggerType.**](taskschedulerschema-calendartriggertype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -38,7 +38,7 @@ L'elemento **ScheduleByMonth** è definito dal tipo complesso [**calendarTrigger
 
 | Elemento                                                                             | Derivato da                                                                       | Descrizione                                                                                |
 |-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md) | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) | Specifica un trigger giornaliero, settimanale, mensile o mensile (DOW) per il giorno della settimana.<br/> |
+| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md) | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) | Specifica un trigger giornaliero, settimanale, mensile o mensile.<br/> |
 
 
 
@@ -55,17 +55,17 @@ L'elemento **ScheduleByMonth** è definito dal tipo complesso [**calendarTrigger
 
 ## <a name="remarks"></a>Commenti
 
-L'ora del giorno in cui l'attività viene avviata viene impostata dall'elemento [**StartBoundary**](taskschedulerschema-startboundary-triggerbasetype-element.md) .
+L'ora del giorno in cui l'attività viene avviata viene impostata [**dall'elemento StartBoundary.**](taskschedulerschema-startboundary-triggerbasetype-element.md)
 
-Per lo sviluppo di script, viene specificato un trigger mensile usando l'oggetto [**MonthlyTrigger**](monthlytrigger.md) .
+Per lo sviluppo di script, viene specificato un trigger mensile usando [**l'oggetto MonthlyTrigger.**](monthlytrigger.md)
 
-Per lo sviluppo in C++, viene specificato un trigger mensile usando l'interfaccia [**IMonthlyTrigger**](/windows/desktop/api/taskschd/nn-taskschd-imonthlytrigger) .
+Per lo sviluppo C++, viene specificato un trigger mensile tramite [**l'interfaccia IMonthlyTrigger.**](/windows/desktop/api/taskschd/nn-taskschd-imonthlytrigger)
 
-Gli elementi figlio elencati di seguito sono definiti dai tipi di elemento complessi [**monthlyScheduleType**](taskschedulerschema-monthlyscheduletype-complextype.md) .
+Gli elementi figlio elencati di seguito sono definiti dai tipi di elemento complessi [**monthlyScheduleType.**](taskschedulerschema-monthlyscheduletype-complextype.md)
 
 ## <a name="examples"></a>Esempio
 
-Il codice XML seguente definisce un trigger di calendario mensile che avvia un'attività (alle 8:00 AM) il primo e il quindicesimo giorno di ogni mese dell'anno.
+Il codice XML seguente definisce un trigger di calendario mensile che avvia un'attività ( alle 8:00 AM) il 1° e il 15° giorno di ogni mese dell'anno.
 
 
 ```XML
@@ -103,8 +103,8 @@ Il codice XML seguente definisce un trigger di calendario mensile che avvia un'a
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -112,7 +112,7 @@ Il codice XML seguente definisce un trigger di calendario mensile che avvia un'a
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

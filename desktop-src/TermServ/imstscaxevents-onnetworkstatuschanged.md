@@ -4,9 +4,9 @@ description: Chiamato quando lo stato della rete è stato modificato. | Metodo I
 ms.assetid: 177A410E-2449-4FC7-8DE5-21F83A6DD028
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnNetworkStatusChanged
+- Metodo OnNetworkStatusChanged Servizi Desktop remoto
 - Metodo OnNetworkStatusChanged Servizi Desktop remoto, interfaccia IMsTscAxEvents
-- Interfaccia IMsTscAxEvents Servizi Desktop remoto, metodo OnNetworkStatusChanged
+- Interfaccia IMsTscAxEvents Servizi Desktop remoto , metodo OnNetworkStatusChanged
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2b9bdcd7774493fcc54e1390ad199a6a56a7c51
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8c139dc314453d6ad921471857410285813afc9c9b48691bcc9c82bf33c8b517
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138404"
 ---
-# <a name="imstscaxeventsonnetworkstatuschanged-method"></a>Metodo IMsTscAxEvents:: OnNetworkStatusChanged
+# <a name="imstscaxeventsonnetworkstatuschanged-method"></a>Metodo IMsTscAxEvents::OnNetworkStatusChanged
 
 Chiamato quando lo stato della rete è stato modificato.
 
@@ -45,31 +45,31 @@ void OnNetworkStatusChanged(
 
 <dl> <dt>
 
-*qualityLevel* \[ in\]
+*qualityLevel* \[ Pollici\]
 </dt> <dd>
 
-Specifica la nuova velocità di connessione. Si tratta di uno dei valori seguenti.
+Specifica la nuova velocità di connessione. Questo sarà uno dei valori seguenti.
 
 <dt>
 
 1
 </dt> <dd>
 
-Inferiore a 512 kilobyte al secondo (KBps).
+Meno di 512 kilobyte al secondo (KBps).
 
 </dd> <dt>
 
 2
 </dt> <dd>
 
-da 512 a 1.999 KBps.
+Da 512 a 1.999 KBps.
 
 </dd> <dt>
 
 3
 </dt> <dd>
 
-da 2.000 a 9.999 KBps.
+Da 2.000 a 9.999 KBps.
 
 </dd> <dt>
 
@@ -80,14 +80,14 @@ Maggiore o uguale a 10.000 KBps.
 
 </dd> </dl> </dd> <dt>
 
-*larghezza di banda* \[ in\]
+*larghezza di banda* \[ Pollici\]
 </dt> <dd>
 
 Specifica la larghezza di banda della connessione.
 
 </dd> <dt>
 
-*RTT* \[ in\]
+*rtt* \[ Pollici\]
 </dt> <dd>
 
 Specifica la latenza di connessione.

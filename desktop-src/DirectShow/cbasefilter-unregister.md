@@ -1,7 +1,7 @@
 ---
-description: Il metodo Unregister rimuove il filtro dal registro di sistema.
+description: Il metodo Unregister rimuove il filtro dal Registro di sistema.
 ms.assetid: 2eb70e9f-1acf-433e-972f-24fb32eaeb13
-title: Metodo CBaseFilter. Unregister (Amfilter. h)
+title: Metodo CBaseFilter.Unregister (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8b46e74e4009f6767788fa120984eca0e89fb551
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c57d08c77c9c420cdc45b158a19fa610231f53f6b409d8b650953de0de8381a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119317901"
 ---
-# <a name="cbasefilterunregister-method"></a>Metodo CBaseFilter. Unregister
+# <a name="cbasefilterunregister-method"></a>Metodo CBaseFilter.Unregister
 
-Il `Unregister` metodo rimuove il filtro dal registro di sistema.
+Il `Unregister` metodo rimuove il filtro dal Registro di sistema.
 
 > [!Note]  
-> Questo metodo è obsoleto. È necessario annullare la registrazione dei nuovi filtri tramite la funzione [**AMovieDllRegisterServer2**](amoviedllregisterserver2.md) . Per altre informazioni, vedere [How to register DirectShow Filters](how-to-register-directshow-filters.md).
+> Questo metodo è obsoleto. È necessario annullare la registrazione dei nuovi filtri usando la [**funzione AMovieDllRegisterServer2.**](amoviedllregisterserver2.md) Per altre informazioni, vedere [Come registrare DirectShow filtri](how-to-register-directshow-filters.md).
 
  
 
@@ -47,7 +47,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se ha esito positivo o un valore **HRESULT** che indica la ragione dell'errore.
+Restituisce S OK in caso di esito positivo o un \_ **valore HRESULT** che indica la causa dell'errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,8 +55,8 @@ Restituisce \_ OK se ha esito positivo o un valore **HRESULT** che indica la rag
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

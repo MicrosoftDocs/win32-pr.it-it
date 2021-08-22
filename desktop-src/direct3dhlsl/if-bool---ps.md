@@ -1,6 +1,6 @@
 ---
-title: Se bool-PS
-description: Inizio di un blocco If.
+title: if bool - ps
+description: Inizio di un blocco if.
 ms.assetid: cff53072-1c73-4cf8-9ecd-11032a9c4bbb
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,51 +9,51 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 92c3158a09aeb871ef367133c07278b0f3b87390
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 611ec04a5c3a53bbb8c6c35380bd0d9f824dc697a7d27a3656b262d885fb4eac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103719354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119457511"
 ---
-# <a name="if-bool---ps"></a>Se bool-PS
+# <a name="if-bool---ps"></a>if bool - ps
 
-Inizio di un blocco If.
+Inizio di un blocco if.
 
 ## <a name="syntax"></a>Sintassi
 
 
 
-| Se bool |
+| if bool |
 |---------|
 
 
 
- 
+ 
 
 Dove:
 
--   bool è un numero di registro bool (Boolean). Vedere [Registro booleano costante](dx9-graphics-reference-asm-ps-registers-constant-boolean.md).
+-   bool è un numero di registro bool (booleano). Vedere [Registro booleano costante.](dx9-graphics-reference-asm-ps-registers-constant-boolean.md)
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| Se bool               |      |      |      |      |      | x    | x     | x    | x     |
+| if bool               |      |      |      |      |      | x    | x     | x    | x     |
 
 
 
- 
+ 
 
-Se il registro booleano di origine nell'istruzione If è true, viene eseguito il codice racchiuso dall'istruzione if e il corrispondente [endif-PS](endif---ps.md) o [else-PS](else---ps.md) . In caso contrario, il codice racchiuso da Else-PS... vengono eseguite le istruzioni endif-PS. Questa istruzione usa uno slot di istruzione.
+Se il registro booleano di origine nell'istruzione if è true, viene eseguito il codice racchiuso tra l'istruzione if e [l'endif corrispondente - ps](endif---ps.md) o [else - ps.](else---ps.md) In caso contrario, il codice racchiuso tra else - ps... endif: vengono eseguite le istruzioni ps. Questa istruzione utilizza uno slot di istruzioni.
 
 Un blocco if può essere annidato.
 
-Un blocco If non può risiedere in un blocco di ciclo.
+Un blocco if non può essere in un blocco di ciclo.
 
-Un blocco if può essere seguito da un blocco di istruzioni e/o da un'istruzione [else-PS](else---ps.md) e/o da un'istruzione [endif-PS](endif---ps.md) .
+Un blocco if può essere seguito da un blocco di istruzioni e/o da un'istruzione [else - ps](else---ps.md) e/o [endif - ps.](endif---ps.md)
 
 ## <a name="example"></a>Esempio
 
@@ -76,18 +76,18 @@ endif
 
 <dl> <dt>
 
-[Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
+[Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> <dt>
 
-[else-PS](else---ps.md)
+[else - ps](else---ps.md)
 </dt> <dt>
 
-[endif-PS](endif---ps.md)
+[endif - ps](endif---ps.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

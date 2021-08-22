@@ -1,11 +1,11 @@
 ---
-title: Attributo Package-Type
-description: Questo attributo descrive il tipo di installazione necessaria per un pacchetto dell'applicazione, ad esempio MSI, EXE, CAB.
+title: Package-Type attributo
+description: Questo attributo descrive il tipo di installazione necessario per un pacchetto dell'applicazione, ad esempio MSI, EXE, CAB.
 ms.assetid: 76505575-a2c9-4113-84ac-1d0689d9e0e4
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Package-Type attribute
-- Schema AD dell'attributo packageType
+- Package-Type schema AD dell'attributo
+- Attributo packageType - Schema AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 325bb00484a3ee44cd23b98931c40fb440cdb3b1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: af751efa64072c098fa1bf34174f4cf14a71454d0cfc3a6c716b31d31881a9ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081505"
 ---
-# <a name="package-type-attribute"></a>Attributo Package-Type
+# <a name="package-type-attribute"></a>Package-Type attributo
 
-Questo attributo descrive il tipo di installazione necessaria per un pacchetto dell'applicazione, ad esempio MSI, EXE, CAB.
+Questo attributo descrive il tipo di installazione necessario per un pacchetto dell'applicazione, ad esempio MSI, EXE, CAB.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Package-Type                         |
-| LDAP-Display-Name | packageType                          |
+| Ldap-Display-Name | packageType                          |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.324               |
-| System-ID-GUID    | 7d6c0e96-7e20-11d0-afd6-00c04fd930c9 |
+| System-Id-Guid    | 7d6c0e96-7e20-11d0-afd6-00c04fd930c9 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo descrive il tipo di installazione necessaria per un pacchetto d
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| A valore singolo       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo descrive il tipo di installazione necessaria per un pacchetto d
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| A valore singolo       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo descrive il tipo di installazione necessaria per un pacchetto d
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| A valore singolo       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo descrive il tipo di installazione necessaria per un pacchetto d
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| Is-Single-Valued       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo descrive il tipo di installazione necessaria per un pacchetto d
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| Is-Single-Valued       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo descrive il tipo di installazione necessaria per un pacchetto d
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| Is-Single-Valued       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 

@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 111a1448f62cae3f782917de76d92e88aa5a3356
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0e8d2b476d57306261d9261215a1e5053827a972412fa78b76cf0d136fbf97e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119460301"
 ---
 # <a name="d3dxmatrixshadow-function-d3dx9mathh"></a>Funzione D3DXMatrixShadow (D3dx9math.h)
 
-Compila una matrice che appiattise la geometria in un piano.
+Compila una matrice che appiatti la geometria in un piano.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ D3DXMATRIX* D3DXMatrixShadow(
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3dxmatrix.md) che è il risultato dell'operazione.
 
 </dd> <dt>
 

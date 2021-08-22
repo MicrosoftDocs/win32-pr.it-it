@@ -1,7 +1,7 @@
 ---
-description: Recupera un valore che determina se il codice dinamico del CRL .NET in memoria o su disco è considerato attendibile dai criteri di Device Guard.
+description: Recupera un valore che determina se il codice dinamico CRL .NET in memoria o su disco specificato è considerato attendibile dai criteri di Device Guard.
 ms.assetid: 9C12894D-98AF-4408-A11A-865E4DA1DA68
-title: Funzione WldpQueryDynamicCodeTrust (Wldp. h)
+title: Funzione WldpQueryDynamicCodeTrust (Wldp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - wldp.dll
-ms.openlocfilehash: 1b9b3cc30f5a02ae86fd8a30043a9ab417ec1ac7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 00b26c8d237a8c6d725751be064c7b82fc7a600c452598a590a747ba10ae56d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104523466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075725"
 ---
-# <a name="wldpquerydynamiccodetrust-function"></a>WldpQueryDynamicCodeTrust (funzione)
+# <a name="wldpquerydynamiccodetrust-function"></a>Funzione WldpQueryDynamicCodeTrust
 
-Recupera un valore che determina se il codice dinamico del CRL .NET in memoria o su disco è considerato attendibile dai criteri di Device Guard.
+Recupera un valore che determina se il codice dinamico CRL .NET in memoria o su disco specificato è considerato attendibile dai criteri di Device Guard.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,30 +45,30 @@ HRESULT WINAPI WldpQueryDynamicCodeTrust(
 
 <dl> <dt>
 
-*fileHandle* 
+*Filehandle* 
 </dt> <dd>
 
-Handle per il file di codice dinamico su disco da verificare. Se *filehandle* è diverso da **null**, *baseImage* deve essere **null**.
+Handle al file di codice dinamico su disco da controllare. Se *fileHandle* non è **NULL,** *baseImage* deve essere **NULL.**
 
 </dd> <dt>
 
 *baseImage* 
 </dt> <dd>
 
-Puntatore al file PE in memoria da controllare. Se *baseImage* è diverso da **null**, *filehandle* deve essere **null**.
+Puntatore al file PE in memoria da controllare. Se *baseImage* non è **NULL,** *FileHandle* deve essere **NULL.**
 
 </dd> <dt>
 
-*ImageSize* 
+*Imagesize* 
 </dt> <dd>
 
-Quando *baseImage* è diverso da **null**, indica le dimensioni del buffer a cui punta *baseImage* .
+Quando *baseImage* è diverso da **NULL,** indica le dimensioni del buffer a cui *punta baseImage.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce **\_ OK** se l'esito è positivo o un codice di errore; in caso contrario,.
+Questo metodo restituisce **S \_ OK in caso** di esito positivo o un codice di errore in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,9 +76,9 @@ Questo metodo restituisce **\_ OK** se l'esito è positivo o un codice di errore
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Wldp. h</dt> </dl>   |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>Wldp.h</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>Wldp.dll</dt> </dl> |
 
 

@@ -1,5 +1,5 @@
 ---
-description: "Msvm_ResourcePoolSettingData classe: rappresenta le impostazioni di un'istanza \\_ di Msvm ResourcePool che non sono correlate all'allocazione."
+description: "Msvm_ResourcePoolSettingData classe : rappresenta le impostazioni di un'istanza di \\_ Msvm ResourcePool non correlata all'allocazione."
 ms.assetid: 32e0066c-7e14-454c-8aa9-06e093ef8072
 title: Msvm_ResourcePoolSettingData classe
 ms.topic: reference
@@ -25,16 +25,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4fba27ec5c12e0c3cb18b8a6dfd4a863e59cad62
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 28bb10bc8d450cc1460d8315d056afff72236470ace4c32de28621b5531a3a02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148194"
 ---
-# <a name="msvm_resourcepoolsettingdata-class"></a>Classe \_ Msvm ResourcePoolSettingData
+# <a name="msvm_resourcepoolsettingdata-class"></a>Classe Msvm \_ ResourcePoolSettingData
 
-Rappresenta le impostazioni di [**un'istanza di Msvm \_ ResourcePool**](msvm-resourcepool.md) che non sono correlate all'allocazione.
+Rappresenta le impostazioni di [**un'istanza di \_ Msvm ResourcePool**](msvm-resourcepool.md) che non sono correlate all'allocazione.
 
 La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
@@ -74,7 +74,7 @@ La **classe Msvm \_ ResourcePoolSettingData** ha queste proprietà.
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -87,7 +87,7 @@ Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ M
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -100,26 +100,26 @@ Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ Manage
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
+Nome visualizzato per l'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
 Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ SettingData.**](/previous-versions//cc136911(v=vs.85))
@@ -201,14 +201,14 @@ Tipo di dati: **matrice di** stringhe
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica l'ordine in cui verranno selezionate le risorse host disponibili tramite questo pool quando si tenta di soddisfare una richiesta di allocazione e la risorsa host richiesta non è disponibile o non viene specificata alcuna risorsa host. Questa proprietà viene ereditata da [**Msvm \_ AbstractResourcePoolSettingData.**](msvm-abstractresourcepoolsettingdata.md)
+Specifica l'ordine in cui le risorse host disponibili tramite questo pool verranno selezionate quando si tenta di soddisfare una richiesta di allocazione e la risorsa host richiesta non è disponibile o non è specificata alcuna risorsa host. Questa proprietà viene ereditata da [**Msvm \_ AbstractResourcePoolSettingData.**](msvm-abstractresourcepoolsettingdata.md)
 
 </dd> <dt>
 
 **Note**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -221,7 +221,7 @@ Note fornite dall'utente finale correlate a questo pool di risorse. Questa propr
 **OtherResourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -231,10 +231,10 @@ Stringa che descrive il tipo di risorsa quando non è disponibile un valore ben 
 
 </dd> <dt>
 
-**PoolID**
+**POOLID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -247,7 +247,7 @@ Identificatore per il pool. Questa proprietà viene usata per fornire la correla
 **ResourceSubType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -324,7 +324,7 @@ Tipo di risorsa che il pool di risorse può allocare. Questa proprietà viene er
 <span id="Tape_Drive"></span><span id="tape_drive"></span><span id="TAPE_DRIVE"></span>**Unità nastro** (18)
 </dt> <dt>
 
-<span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>**Extent di** archiviazione (19)
+<span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>**Archiviazione extent** (19)
 </dt> <dt>
 
 <span id="Other_storage_device"></span><span id="other_storage_device"></span><span id="OTHER_STORAGE_DEVICE"></span>**Altro dispositivo di** archiviazione (20)
@@ -363,7 +363,7 @@ Tipo di risorsa che il pool di risorse può allocare. Questa proprietà viene er
 <span id="Logical_Disk"></span><span id="logical_disk"></span><span id="LOGICAL_DISK"></span>**Disco logico** (31)
 </dt> <dt>
 
-<span id="Storage_Volume"></span><span id="storage_volume"></span><span id="STORAGE_VOLUME"></span>**Volume di archiviazione** (32)
+<span id="Storage_Volume"></span><span id="storage_volume"></span><span id="STORAGE_VOLUME"></span>**Archiviazione volume** (32)
 </dt> <dt>
 
 <span id="Ethernet_Connection"></span><span id="ethernet_connection"></span><span id="ETHERNET_CONNECTION"></span>**Connessione Ethernet** (33)
@@ -383,8 +383,8 @@ Tipo di risorsa che il pool di risorse può allocare. Questa proprietà viene er
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8 solo \[ app desktop\]<br/>                                                              |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 \[\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

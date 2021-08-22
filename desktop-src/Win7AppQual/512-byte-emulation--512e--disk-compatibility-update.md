@@ -1,27 +1,27 @@
 ---
-description: In questo argomento viene illustrato l'effetto dei dispositivi di archiviazione in formato avanzato sul software, vengono illustrate le applicazioni che è possibile eseguire per supportare questo tipo di supporto e viene illustrata l'infrastruttura introdotta da Microsoft con Windows 7 SP1 e Windows Server 2008 R2 SP1 per consentire agli sviluppatori di supportare questi tipi di dispositivi.
+description: Questo argomento illustra l'effetto dei dispositivi di archiviazione in formato avanzato sul software, illustra le operazioni che le applicazioni possono eseguire per supportare questo tipo di supporti e illustra l'infrastruttura introdotta da Microsoft con Windows 7 SP1 e Windows Server 2008 R2 SP1 per consentire agli sviluppatori di supportare questi tipi di dispositivi.
 ms.assetid: 1D2847A7-15E9-42E0-90EB-7F43E76D3E44
 title: Aggiornamento della compatibilità dei dischi 512e (512-byte Emulation)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74b654473fa8be5fbea997bd063df2c1f898a7d1
-ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
+ms.openlocfilehash: 5fd26cfe1b5417af75906431291a51650757c08464f0c1dc6966ef7f58223423
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107315004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134179"
 ---
 # <a name="512-byte-emulation-512e-disk-compatibility-update"></a>Aggiornamento della compatibilità dei dischi 512e (512-byte Emulation)
 
 ## <a name="platform"></a>Piattaforma
 
- **Client** -Windows Vista, Windows 7, Windows 7 SP1  
-**Server** : windows Server 2008, windows Server 2008 R2, windows Server 2008 R2 SP1  
+ **Client** - Windows Vista, Windows 7, Windows 7 SP1  
+**Server** - Windows Server 2008, Windows Server 2008 R2, Windows Server 2008 R2 SP1  
 
-## <a name="feature-impact"></a>Effetto sulle funzionalità
+## <a name="feature-impact"></a>Impatto sulle funzionalità
 
-**Gravità** -alta  
-**Frequenza** -alta  
+**Gravità** - Alta  
+**Frequenza** - Alta  
 
 
 
@@ -33,9 +33,9 @@ ms.locfileid: "107315004"
 
 ## <a name="description"></a>Descrizione
 
-Le densità di area geospaziale aumentano annualmente e, con il recente avvento di dischi da 3 TB, i meccanismi di correzione degli errori utilizzati per gestire il rapporto tra segnale e rumore diminuiscono lo spazio in modo inefficiente, ovvero è necessaria una maggiore quantità di overhead per garantire che i supporti siano utilizzabili. Una delle soluzioni del settore di archiviazione per migliorare questo meccanismo di correzione degli errori consiste nell'introdurre un formato multimediale fisico diverso che includa dimensioni del settore fisico più grandi. Questo nuovo formato multimediale fisico è denominato *formato avanzato*. Pertanto, non è più sicuro creare presupposti relativi alle dimensioni del settore dei dispositivi di archiviazione moderni e gli sviluppatori dovranno studiare i presupposti sottostanti il codice per determinare se vi sia un effetto.
+Le densità areali aumentano ogni anno e con l'avvento recente di dischi da 3 TB, i meccanismi di correzione degli errori usati per gestire la riduzione del rapporto segnale-rumore (SNR) stanno diventando inefficienti a livello di spazio, ovvero è necessario un aumento del sovraccarico per garantire che il supporto sia utilizzabile. Una delle soluzioni del settore dell'archiviazione per migliorare questo meccanismo di correzione degli errori è l'introduzione di un formato multimediale fisico diverso che includa dimensioni di settore fisico maggiori. Questo nuovo formato multimediale fisico è denominato *Formato avanzato.* Pertanto, non è più sicuro fare ipotesi relative alle dimensioni del settore dei dispositivi di archiviazione moderni e gli sviluppatori dovranno studiare i presupposti sottostanti al codice per determinare se c'è un impatto.
 
-In questo argomento viene illustrato l'effetto dei dispositivi di archiviazione in formato avanzato sul software, vengono illustrate le applicazioni che è possibile eseguire per supportare questo tipo di supporto e viene illustrata l'infrastruttura per consentire agli sviluppatori di supportare questi tipi di dispositivi. Sebbene il materiale presentato in questo argomento fornisca linee guida per migliorare la compatibilità con i dischi in formato avanzato, le informazioni si applicano in genere a tutti i sistemi con dischi di formato avanzati. Le seguenti versioni di Windows forniscono supporto per l'esecuzione di query sulle dimensioni del settore fisico:
+In questo argomento viene illustrato l'effetto dei dispositivi di archiviazione in formato avanzato sul software, vengono illustrate le operazioni che le applicazioni possono eseguire per supportare questo tipo di supporti e viene illustrata l'infrastruttura per consentire agli sviluppatori di supportare questi tipi di dispositivi. Anche se il materiale presentato in questo argomento fornisce linee guida per migliorare la compatibilità con i dischi in formato avanzato, le informazioni si applicano in genere a tutti i sistemi con dischi in formato avanzato. Le versioni seguenti di Windows il supporto per l'esecuzione di query sulla dimensione del settore fisico:
 
 -   Windows 7 con Microsoft KB 982018
 -   Windows 7 SP1
@@ -44,158 +44,158 @@ In questo argomento viene illustrato l'effetto dei dispositivi di archiviazione 
 -   Windows Vista con Microsoft KB 2553708
 -   Windows Server 2008 con Microsoft KB 2553708
 
-Per ulteriori informazioni, vedere [le informazioni sui criteri di supporto Microsoft per le unità di settore di grandi dimensioni in Windows](https://support.microsoft.com/kb/2510009).
+Per altri dettagli, vedere [Informazioni sui criteri di supporto Microsoft per le unità di settore di grandi dimensioni in Windows](https://support.microsoft.com/kb/2510009).
 
-Per ulteriori informazioni sui dischi con formato avanzato, rivolgersi al fornitore del sistema di archiviazione.
+Per altre informazioni sui dischi in formato avanzato, contattare il fornitore dell'archiviazione.
 
-## <a name="logical-vs-physical-sector-size"></a>Dimensioni logiche e dimensioni del settore fisico
+## <a name="logical-vs-physical-sector-size"></a>Dimensioni del settore logico e fisico
 
-Uno dei problemi relativi all'introduzione di questa modifica nel formato multimediale è la compatibilità con il software e l'hardware attualmente disponibili sul mercato. Come soluzione temporanea, il settore dell'archiviazione introduce inizialmente i dischi che emulano un normale disco del settore a 512 byte, ma che rendono disponibili informazioni sulle reali dimensioni del settore mediante i comandi ATA e SCSI standard. In seguito a questa emulazione, esistono due dimensioni di settore:
+Uno dei problemi dell'introduzione di questa modifica nel formato multimediale è la compatibilità con il software e l'hardware attualmente disponibili sul mercato. Come soluzione temporanea, il settore dell'archiviazione sta introducendo inizialmente dischi che emulano un normale disco di settore da 512 byte, ma rendono disponibili informazioni sulle dimensioni del settore reale tramite i comandi standard ATA e SCSI. In seguito a questa emulazione, esistono due dimensioni di settore:
 
--   **Settore logico**: unità utilizzata per l'indirizzamento dei blocchi logici per il supporto. Possiamo anche considerarlo come la più piccola unità di scrittura che la risorsa di archiviazione può accettare. Si tratta dell'emulazione.
+-   **Logical Sector:** unità usata per l'indirizzamento logico dei blocchi per il supporto. È anche possibile pensare a questo come all'unità di scrittura più piccola che l'archiviazione può accettare. Questa è l'emulazione.
 
--   **Settore fisico**: unità per cui vengono completate le operazioni di lettura e scrittura nel dispositivo in un'unica operazione. Si tratta dell'unità di scrittura atomica.
+-   **Settore fisico:** unità per cui le operazioni di lettura e scrittura nel dispositivo vengono completate in un'unica operazione. Questa è l'unità di scrittura atomica.
 
-La maggior parte delle API Windows correnti, ad esempio la **\_ geometria del disco IOCTL \_ get \_ drive \_** , restituirà le dimensioni del settore logico, ma le dimensioni del settore fisico possono essere recuperate tramite il codice di controllo delle [ \_ \_ \_ proprietà della query di archiviazione IOCTL](/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_query_property) , con le informazioni rilevanti contenute nel campo **BytesPerPhysicalSector** della struttura del [ \_ \_ \_ descrittore di allineamento dell'accesso di archiviazione](/windows/desktop/api/winioctl/ns-winioctl-storage_access_alignment_descriptor) . Questo argomento verrà descritto più dettagliatamente più avanti in questo articolo.
+La maggior parte delle API Windows correnti, ad esempio **IOCTL \_ DISK GET \_ DRIVE \_ \_ GEOMETRY** restituirà le dimensioni del settore logico, ma le dimensioni del settore fisico possono essere recuperate tramite il codice di controllo [IOCTL \_ STORAGE QUERY \_ \_ PROPERTY,](/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_query_property) con le informazioni rilevanti contenute nel campo **BytesPerPhysicalSector** nella struttura [ \_ \_ \_ DESCRIPTOR STORAGE ACCESS ALIGNMENT.](/windows/desktop/api/winioctl/ns-winioctl-storage_access_alignment_descriptor) Questo argomento viene illustrato in modo più dettagliato più avanti nell'articolo.
 
 ## <a name="initial-types-of-large-sector-media"></a>Tipi iniziali di supporti per settori di grandi dimensioni
 
-Il settore dell'archiviazione sta dilagando rapidamente le attività di transizione al nuovo tipo di archiviazione in formato avanzato per i supporti con dimensioni del settore fisico da 4 KB. Due tipi di supporti verranno rilasciati sul mercato:
+Il settore dell'archiviazione sta rapidamente cercando di passare a questo nuovo tipo di formato avanzato di archiviazione per supporti con dimensioni di settore fisico di 4 KB. Due tipi di supporti verranno rilasciati sul mercato:
 
--   **4 KB nativi**: questo supporto non ha un livello di emulazione ed espone direttamente 4 KB come dimensione del settore logico e fisico. Questo supporto non è attualmente supportato da Windows e dalla maggior parte degli altri sistemi operativi. Tuttavia, Microsoft sta effettuando un'indagine sulla fattibilità del supporto di questo tipo di supporto in una versione futura di Windows ed emetterà un articolo della Knowledge base quando appropriato.
--   **emulazione a 512 byte (512e)**: questo supporto ha un livello di emulazione, come illustrato nella sezione precedente, ed espone 512-byte come dimensione del settore logico (simile a un normale disco), ma rende disponibili le informazioni sulle dimensioni del settore fisico (4 KB). Questo è ciò che molti fornitori di archiviazione stanno attualmente introducendo al mercato. Questo problema generale con questo nuovo tipo di supporto è che la maggior parte dei sistemi operativi e delle applicazioni non comprende l'esistenza delle dimensioni del settore fisico, il che può comportare un certo numero di problemi, come verrà illustrato di seguito.
+-   **4 KB nativo:** questo supporto non ha un livello di emulazione ed espone direttamente 4 KB come dimensione di settore logico e fisico. Questo supporto non è attualmente supportato da Windows e dalla maggior parte degli altri sistemi operativi. Tuttavia, Microsoft sta svolgendo un'indagine sulla fattibilità del supporto di questo tipo di supporti in una versione futura di Windows e riemettere un articolo Knowledge Base quando appropriato.
+-   Emulazione a **512 byte (512e):** questo supporto ha un livello di emulazione come illustrato nella sezione precedente ed espone 512 byte come dimensione di settore logica (simile a un disco normale attualmente), ma rende disponibili le informazioni sulle dimensioni del settore fisico (4 KB). Questo è ciò che diversi fornitori di risorse di archiviazione stanno introducendo sul mercato. Questo problema generale con questo nuovo tipo di supporto è che la maggior parte delle applicazioni e dei sistemi operativi non è in grado di comprendere l'esistenza delle dimensioni del settore fisico, il che può causare una serie di problemi, come verrà illustrato di seguito.
 
-## <a name="how-emulation-works-read-modify-write-rmw"></a>Funzionamento dell'emulazione: lettura-modifica-scrittura (RMW)
+## <a name="how-emulation-works-read-modify-write-rmw"></a>Funzionamento dell'emulazione: Lettura-Modifica-Scrittura (RMW)
 
-Un supporto di archiviazione ha una determinata unità all'interno della quale è possibile modificare il supporto fisico. Ovvero, i supporti possono essere scritti o riscritti solo in unità delle dimensioni del settore fisico. Pertanto, le Scritture non eseguite a questo livello di unità richiederebbero passaggi aggiuntivi, che verranno esaminati nell'esempio seguente.
+Un supporto di archiviazione ha una determinata unità all'interno della quale è possibile modificare il supporto fisico. Ciò significa che i supporti possono essere scritti o riscritti solo in unità delle dimensioni del settore fisico. Pertanto, le scritture che non vengono eseguite a questo livello di unità richiedono passaggi aggiuntivi, che verranno descritti nell'esempio seguente.
 
-In questo scenario, un'applicazione deve aggiornare il contenuto di un record Datastor situato all'interno di un settore logico a 512 byte. Il diagramma seguente illustra i passaggi necessari per completare la scrittura del dispositivo di archiviazione:
+In questo scenario, un'applicazione deve aggiornare il contenuto di un record Datastor che si trova all'interno di un settore logico a 512 byte. Il diagramma seguente illustra i passaggi necessari al dispositivo di archiviazione per completare la scrittura:
 
-![passaggi necessari per aggiornare il record datastort in un settore logico a 512 byte](images/512ermwsteps.png)
+![passaggi necessari per aggiornare il record del datastor all'interno di un settore logico a 512 byte](images/512ermwsteps.png)
 
-Come illustrato sopra, questo processo implica alcune operazioni eseguite dal dispositivo di archiviazione che possono causare una perdita di prestazioni. Per evitare questo lavoro aggiuntivo, è necessario aggiornare le applicazioni per eseguire le operazioni seguenti:
+Come illustrato in precedenza, questo processo comporta alcune operazioni da parte del dispositivo di archiviazione che possono comportare una perdita di prestazioni. Per evitare questo lavoro aggiuntivo, è necessario aggiornare le applicazioni per eseguire le operazioni seguenti:
 
 -   Eseguire una query per le dimensioni del settore fisico.
--   Verificare che le Scritture siano allineate alle dimensioni del settore fisico indicate.
+-   Assicurarsi che le scritture siano allineate alle dimensioni del settore fisico segnalate.
 
-## <a name="the-resiliency-impact-of-read-modify-write"></a>Effetto della resilienza di read-modify-write
+## <a name="the-resiliency-impact-of-read-modify-write"></a>Impatto sulla resilienza di lettura-modifica-scrittura
 
-La resilienza esprime la possibilità per un'applicazione di ripristinare lo stato tra le sessioni. Sono stati esaminati gli elementi necessari per un dispositivo di archiviazione 512e per l'esecuzione di una scrittura nel settore a 512 byte, ovvero il ciclo di lettura-modifica-scrittura. Si osservi che cosa accadrebbe se il processo di sovrascrittura del precedente settore fisico sul supporto venisse interrotto. Quali sono le conseguenze?
+La resilienza indica la capacità di un'applicazione di ripristinare lo stato tra le sessioni. È stato visto ciò che è necessario per un dispositivo di archiviazione 512e per eseguire una scrittura di settore a 512 byte, il ciclo lettura-modifica-scrittura. Si esamini ora cosa accadrebbe se il processo di sovrascrittura del settore fisico precedente sui supporti fosse stato interrotto. Quali sono le conseguenze?
 
--   Poiché la maggior parte delle unità disco rigido si aggiorna sul posto, il settore fisico, ovvero la parte del supporto in cui si trovava il settore fisico, potrebbe essere stato danneggiato con informazioni incomplete a causa di una sovrascrittura parziale. In altre parole, è possibile considerarlo come potenzialmente perso per tutti gli 8 settori logici (che il settore fisico contiene logicamente).
+-   Poiché la maggior parte delle unità disco rigido viene aggiornato sul posto, il settore fisico, ci esempio la parte del supporto in cui si trova il settore fisico, potrebbe essere danneggiato con informazioni incomplete a causa di una sovrascrittura parziale. In altre parole, è possibile pensare che potrebbe avere perso tutti gli 8 settori logici (contenuti logicamente dal settore fisico).
 
--   Sebbene la maggior parte delle applicazioni con un archivio dati sia progettata con la possibilità di eseguire il recupero da errori dei supporti, la perdita di otto settori o un altro modo, la perdita di otto record di commit, può potenzialmente rendere impossibile il ripristino normale dell'archivio dati. Un amministratore potrebbe dover ripristinare manualmente il database da un backup o potrebbe anche dover eseguire una ricompilazione lunga.
+-   Anche se la maggior parte delle applicazioni con un archivio dati è progettata con la possibilità di eseguire il ripristino da errori dei supporti, la perdita di otto settori o, in altri modi, la perdita di otto record di commit, può potenzialmente rendere impossibile il ripristino normalmente da parte dell'archivio dati. Un amministratore potrebbe dover ripristinare manualmente il database da un backup o anche eseguire una lunga ricompilazione.
 
--   Un altro aspetto importante è che l'azione di un'altra applicazione che causa un ciclo di lettura/modifica-scrittura può causare la perdita dei dati, anche se l'applicazione non è in esecuzione. Questo è semplicemente dovuto al fatto che i dati e i dati dell'altra applicazione potrebbero trovarsi all'interno dello stesso settore fisico.
+-   Un impatto ancora più importante è che l'azione di un'altra applicazione che causa un ciclo lettura-modifica-scrittura può potenzialmente causare la perdita dei dati, anche se l'applicazione non è in esecuzione. Ciò è dovuto semplicemente al fatto che i dati e i dati dell'altra applicazione potrebbero trovarsi all'interno dello stesso settore fisico.
 
-Tenendo presente questo aspetto, è importante che il software applicativo rivaluti le ipotesi prese nel codice e sia a conoscenza della distinzione delle dimensioni del settore fisico logico, insieme ad alcuni scenari di clienti interessanti illustrati più avanti in questo articolo.
+A questo punto, è importante che il software applicativo rivaluta eventuali presupposti presi nel codice e tenga presente la distinzione logica-fisica delle dimensioni del settore, insieme ad alcuni scenari interessanti per i clienti illustrati più avanti in questo articolo.
 
-Questo problema è più probabile che si verifichi se l'applicazione si basa su un archivio dati della struttura di log.
+Questo problema si verifica più probabilmente se l'applicazione si basa su un archivio dati della struttura di log.
 
-## <a name="avoiding-read-modify-write"></a>Evitare la lettura, la modifica e la scrittura
+## <a name="avoiding-read-modify-write"></a>Evitare operazioni di lettura/modifica/scrittura
 
-Sebbene alcuni fornitori di archiviazione possano introdurre alcuni livelli di mitigazione all'interno di determinati dispositivi di archiviazione 512e per provare a semplificare i problemi di prestazioni e resilienza del ciclo di lettura-modifica-scrittura, è possibile che la mitigazione sia gestita in termini di carico di lavoro. Di conseguenza, le applicazioni non devono basarsi su questa mitigazione come soluzione a lungo termine.
+Anche se alcuni fornitori di risorse di archiviazione potrebbero introdurre alcuni livelli di mitigazione all'interno di determinati dispositivi di archiviazione 512e per tentare di semplificare i problemi di prestazioni e resilienza del ciclo lettura-modifica-scrittura, esiste solo una mitigazione che può essere gestita in termini di carico di lavoro. Di conseguenza, le applicazioni non devono basarsi su questa mitigazione come soluzione a lungo termine.
 
-La soluzione non è mitigazione nell'unità, ma per fare in modo che le applicazioni eseguano il giusto set di elementi per evitare il ciclo di lettura-modifica-scrittura. In questa sezione vengono illustrati gli scenari comuni in cui le applicazioni possono presentare problemi con dischi di settore di grandi dimensioni e viene suggerito un viale di analisi per provare a risolvere ogni problema.
+La soluzione a questo problema non è la mitigazione dell'unità, ma fare in modo che le applicazioni eseeggono il set di operazioni più efficace per evitare il ciclo lettura-modifica-scrittura. Questa sezione illustra gli scenari comuni in cui le applicazioni possono avere problemi con dischi di settore di grandi dimensioni e suggerisce una via di analisi per provare a risolvere ogni problema.
 
-### <a name="issue-1-the-partition-is-not-aligned-to-a-physical-sector-boundary"></a>Problema 1: la partizione non è allineata a un limite di settore fisico
+### <a name="issue-1-the-partition-is-not-aligned-to-a-physical-sector-boundary"></a>Problema 1: La partizione non è allineata a un limite di settore fisico
 
-Quando l'amministratore o l'utente partiziona il disco, è possibile che la prima partizione non sia stata creata in un limite allineato. In questo modo tutte le scritture successive diventeranno non allineate ai limiti del settore fisico. A partire da Windows Vista SP1 e Windows Server 2008, la prima partizione viene posizionata al primo 1024 KB del disco (per i dischi da 4 GB o più grandi, in caso contrario l'allineamento è 64 KB) allineato a un limite di settore fisico da 4 KB. Tuttavia, dato il partizionamento predefinito in Windows XP, un'utilità di partizionamento di terze parti o un utilizzo errato delle API Windows, le partizioni create potrebbero non essere allineate a un limite di settore fisico. Gli sviluppatori dovranno assicurarsi che vengano usate le API corrette per garantire l'allineamento. Le API consigliate per garantire l'allineamento della partizione sono descritte di seguito.
+Quando l'amministratore o l'utente partiziona il disco, è possibile che la prima partizione non sia stata creata su un limite allineato. In questo modo, tutte le scritture successive potrebbero diventare non allineate ai limiti del settore fisico. A Windows Vista SP1 e Windows Server 2008, la prima partizione viene posizionata in corrispondenza dei primi 1024 KB del disco (per i dischi da 4 GB o superiori, in caso contrario l'allineamento è di 64 KB) allineata a un limite di settore fisico di 4 KB. Tuttavia, dato il partizionamento predefinito in Windows XP, un'utilità di partizionamento di terze parti o un utilizzo errato delle API Windows, le partizioni create potrebbero non essere allineate a un limite di settore fisico. Gli sviluppatori dovranno assicurarsi che le API corrette siano usate per garantire l'allineamento. Le API consigliate per garantire l'allineamento delle partizioni sono descritte di seguito.
 
-Le API **IVdsPack:: CreateVolume** e **IVdsPack2:: CreateVolume2** non utilizzano il parametro di allineamento specificato quando viene creato un nuovo volume e utilizzano invece il valore di allineamento predefinito per il sistema operativo (precedente a Windows vista SP1 utilizzerà 63 byte e post Windows Vista SP1 utilizzerà i valori predefiniti indicati in precedenza). Pertanto, è consigliabile che le applicazioni che devono creare partizioni usino invece le API **IVdsCreatePartitionEx:: CreatePartitionEx** o **IVdsAdvancedDisk:: CreatePartition** , che usano il parametro di allineamento specificato.
+Le API **IVdsPack::CreateVolume** e **IVdsPack2::CreateVolume2** non usano il parametro di allineamento specificato quando viene creato un nuovo volume e usano invece il valore di allineamento predefinito per il sistema operativo (Pre-Windows Vista SP1 userà 63 byte e dopo Windows Vista SP1 verranno usate le impostazioni predefinite indicate in precedenza). È quindi consigliabile che le applicazioni che devono creare partizioni usino invece le API **IVdsCreatePartitionEx::CreatePartitionEx** o **IVdsAdvancedDisk::CreatePartition,** che usano il parametro di allineamento specificato.
 
-Il modo migliore per garantire che l'allineamento sia corretto consiste nell'eseguire questa operazione direttamente quando si crea inizialmente la partizione. In caso contrario, l'applicazione deve tenere conto dell'allineamento quando si eseguono Scritture o in fase di inizializzazione, che può essere molto complessa. A partire da Windows Vista SP1, non si tratta in genere di un problema; Tuttavia, le versioni precedenti di Windows possono creare partizioni non allineate che potrebbero causare problemi di prestazioni con alcuni dischi di formato avanzati.
+Il modo migliore per garantire che l'allineamento sia corretto è quello di farlo correttamente durante la creazione iniziale della partizione. In caso contrario, l'applicazione dovrà prendere in considerazione l'allineamento durante l'esecuzione di operazioni di scrittura o in fase di inizializzazione, operazione che può essere molto complessa. A Windows Vista SP1, questo non è in genere un problema. Tuttavia, le versioni precedenti Windows possono creare partizioni non allineate che possono potenzialmente causare problemi di prestazioni con alcuni dischi in formato avanzato.
 
-### <a name="issue-2-unbuffered-writes-not-aligned-to-physical-sector-size"></a>Problema 2: le scritture senza buffer non sono allineate alle dimensioni del settore fisico
+### <a name="issue-2-unbuffered-writes-not-aligned-to-physical-sector-size"></a>Problema 2: Scritture senza buffer non allineate alle dimensioni fisiche del settore
 
-Il problema di base è che le Scritture non memorizzate nel buffer non sono allineate alle dimensioni del settore fisico segnalato del supporto di archiviazione, che attiva un'operazione di lettura-modifica-scrittura nell'unità che può causare problemi di prestazioni. Le scritture memorizzate nel buffer, d'altra parte, sono allineate alla dimensione della pagina, ovvero 4 KB, che è il settore fisico della prima generazione di supporti di settore di grandi dimensioni. Tuttavia, la maggior parte delle applicazioni con un archivio dati esegue scritture senza buffer e pertanto dovrà assicurarsi che tali scritture vengano eseguite in unità della dimensione del settore fisico.
+Il problema di base è che le scritture senza buffer non sono allineate alle dimensioni del settore fisico segnalate del supporto di archiviazione, che attiva una lettura-modifica-scrittura nell'unità che può causare problemi di prestazioni. Le scritture memorizzate nel buffer, d'altra parte, sono allineate alle dimensioni della pagina, ovvero a 4 KB, che corrispondono in modo coincidente alle dimensioni del settore fisico della prima generazione di supporti di settore di grandi dimensioni. Tuttavia, la maggior parte delle applicazioni con un archivio dati esegue operazioni di scrittura senza buffer e pertanto dovrà garantire che queste operazioni di scrittura siano eseguite in unità delle dimensioni del settore fisico.
 
-Per determinare se l'applicazione esegue l'I/O senza buffer, verificare di includere il **flag di file nessun flag \_ di \_ \_ buffer** nel parametro *DwFlagsAndAttributes* quando si chiama la funzione **CreateFile** .
+Per determinare se l'applicazione esegue I/O senza buffer, verificare di includere il flag **FILE \_ FLAG NO \_ \_ BUFFERING** nel *parametro dwFlagsAndAttributes* quando si chiama la funzione **CreateFile.**
 
-Inoltre, se si stanno attualmente allineando le Scritture alle dimensioni del settore, le dimensioni del settore sono molto probabilmente solo le dimensioni del settore *logico* , perché la maggior parte delle API esistenti che eseguono query per le dimensioni del settore del supporto effettivamente eseguono una query solo sull'unità di indirizzamento, ovvero le dimensioni del settore logico. Le dimensioni di settore di interesse sono le dimensioni del settore fisico, ovvero l'unità reale di atomicità. Di seguito sono riportati alcuni esempi di API che recuperano le dimensioni del settore logico:
+Inoltre, se attualmente si allineano le scritture alle dimensioni del settore, è molto probabile che queste dimensioni del settore siano solo le dimensioni del settore logico, perché la maggior parte delle API esistenti che ese esegue query per ottenere le dimensioni del settore dei supporti in realtà si limiterà a eseguire una query sull'unità di indirizzamento, cio' le dimensioni del settore logico.  Le dimensioni del settore di interesse in questo caso sono le dimensioni del settore fisico, ovvero l'unità reale di atomicità. Di seguito sono riportati alcuni esempi di API che recuperano le dimensioni del settore logico:
 
 -   **GetDiskFreeSpace**, **GetDiskFreeSpaceEx**
 -   **FileFsVolumeInformation**
--   **IOCTL \_ \_ \_ \_ geometria unità disco**, disco **IOCTL \_ \_ ottenere \_ unità \_ Geometry \_ es**
--   **IVdsDisk:: GetProperties**, **IVdsDisk3:: GetProperties2**
+-   **IOCTL \_ DISK \_ GET \_ DRIVE \_ GEOMETRY**, **IOCTL \_ DISK GET DRIVE \_ \_ \_ GEOMETRY \_ EX**
+-   **IVdsDisk::GetProperties**, **IVdsDisk3::GetProperties2**
 
 **Come eseguire una query per le dimensioni del settore fisico**
 
-Microsoft ha fornito un esempio di codice su MSDN con informazioni dettagliate su come un'applicazione può eseguire una query per le dimensioni del settore fisico del volume. L'esempio di codice si trova in <https://msdn.microsoft.com/library/ff800831.aspx> .
+Microsoft ha fornito un esempio di codice in MSDN che illustra in dettaglio come un'applicazione può eseguire query sulle dimensioni del settore fisico del volume. L'esempio di codice si trova in <https://msdn.microsoft.com/library/ff800831.aspx> .
 
-Mentre l'esempio di codice precedente consente di ottenere le dimensioni del settore fisico del volume, è necessario eseguire un controllo di integrità di base sulle dimensioni del settore fisico segnalato prima di utilizzarlo, in quanto è stato rilevato che alcuni driver non restituiscono dati formattati correttamente:
+Anche se l'esempio di codice precedente consente di ottenere le dimensioni del settore fisico del volume, è necessario eseguire alcuni controlli di base sulla sanità fisica segnalata prima di usarlo, perché è stato osservato che alcuni driver potrebbero non restituire dati formattati correttamente:
 
--   Verificare che le dimensioni del settore fisico indicate siano >= le dimensioni del settore logico indicate. In caso contrario, l'applicazione deve utilizzare una dimensione di settore fisico uguale alla dimensione del settore logico indicata.
--   Assicurarsi che le dimensioni del settore fisico segnalato siano una potenza di due. In caso contrario, l'applicazione deve utilizzare una dimensione di settore fisico uguale alla dimensione del settore logico indicata.
--   Se le dimensioni del settore fisico sono un valore di potenza di due tra 512 byte e 4 KB, è consigliabile utilizzare una dimensione di settore fisico arrotondata per difetto alle dimensioni del settore logico indicate.
--   Se le dimensioni del settore fisico sono un valore di potenza di due maggiore di 4 KB, è necessario valutare la capacità dell'applicazione di gestire questo scenario prima di usare tale valore. In caso contrario, è consigliabile utilizzare una dimensione di settore fisico arrotondata a 4 KB.
+-   Assicurarsi che le dimensioni del settore fisico segnalate siano >= le dimensioni del settore logico segnalate. In caso contrario, l'applicazione deve usare dimensioni di settore fisiche uguali alle dimensioni del settore logico segnalate.
+-   Assicurarsi che le dimensioni del settore fisico segnalate siano una potenza di due. In caso contrario, l'applicazione deve usare dimensioni di settore fisiche uguali alle dimensioni del settore logico segnalate.
+-   Se le dimensioni del settore fisico sono un valore di potenza di due tra 512 byte e 4 KB, è consigliabile usare una dimensione di settore fisica arrotondata per estinzione alle dimensioni del settore logico segnalate.
+-   Se le dimensioni del settore fisico sono un valore di potenza di due maggiori di 4 KB, è necessario valutare la capacità dell'applicazione di gestire questo scenario prima di usare tale valore. In caso contrario, è consigliabile usare una dimensione di settore fisica arrotondata per esere a 4 KB.
 
 L'uso di questo IOCTL per ottenere le dimensioni del settore fisico presenta diverse limitazioni:
 
--   Richiede privilegi elevati. Se l'applicazione non è in esecuzione con privilegi, potrebbe essere necessario scrivere un'applicazione di servizio Windows come indicato in precedenza.
+-   Richiede privilegi elevati. Se l'applicazione non è in esecuzione con privilegi, potrebbe essere necessario scrivere un'Windows di servizio come indicato in precedenza.
 
--   Non supporta i volumi SMB. Potrebbe anche essere necessario scrivere un'applicazione di servizio Windows per supportare le query sulle dimensioni del settore fisico su questi volumi.
+-   Non supporta i volumi SMB. Potrebbe anche essere necessario scrivere un'applicazione di Windows per supportare l'esecuzione di query sulle dimensioni dei settori fisici su questi volumi.
 
--   Non può essere emesso per alcun handle di file (il IOCTL deve essere emesso a un handle del volume).
+-   Non può essere rilasciato a un handle di file (l'ioCTL deve essere rilasciato a un handle di volume).
 
--   Supportato solo nelle versioni di Windows elencate in prossimità dell'inizio di questo articolo.
+-   Supportato solo nelle Windows elencate all'inizio di questo articolo.
 
 **I record di commit vengono riempiti in settori a 512 byte**
 
-Le applicazioni con un archivio dati in genere hanno una forma di record di commit che mantiene le informazioni sulle modifiche dei metadati o gestisce la struttura dell'archivio dati. Per garantire che la perdita di un settore non influisca su più record, questo record di commit viene in genere rivestito a dimensioni di settore. Con un disco con dimensioni di settore fisico maggiori, l'applicazione dovrà eseguire una query per le dimensioni del settore fisico, come illustrato nella sezione precedente, e assicurarsi che ogni record di commit venga riempito con tale dimensione. Questa operazione non solo consente di evitare il ciclo di lettura-modifica-scrittura, ma garantisce che, in caso di perdita di un settore fisico, venga perso un solo record di commit.
+Le applicazioni con un archivio dati hanno in genere una forma di record di commit che gestisce le informazioni sulle modifiche ai metadati o la struttura dell'archivio dati. Per garantire che la perdita di un settore non influisca su più record, questo record di commit viene in genere riempito fino a una dimensione di settore. Con un disco con un settore fisico di dimensioni maggiori, l'applicazione dovrà eseguire una query per le dimensioni del settore fisico, come illustrato nella sezione precedente, e assicurarsi che ogni record di commit sia riempito fino a tale dimensione. Non solo evita il ciclo lettura-modifica-scrittura, ma garantisce che, in caso di perdita di un settore fisico, andrebbe perso un solo record di commit.
 
 **I file di log vengono scritti in blocchi non allineati**
 
-Le operazioni di I/O senza buffer vengono in genere utilizzate per l'aggiornamento o l'aggiunta a un file di log. Esistono diversi modi per garantire che questi aggiornamenti siano allineati correttamente:
+L'I/O senza buffer viene in genere usato durante l'aggiornamento o l'aggiunta a un file di log. Esistono diversi modi per garantire che questi aggiornamenti siano allineati correttamente:
 
--   Eseguire internamente il buffer degli aggiornamenti dei log alla dimensione del settore fisico segnalata del supporto operativo e inviare le Scritture del log solo quando un'unità di settore fisico è piena
--   USA I/O memorizzato nel buffer
+-   Eseguire internamente il buffer degli aggiornamenti del log per le dimensioni del settore fisico segnalate dei supporti operativi e mettere le scritture del log solo quando un'unità di settore fisica è piena
+-   Usare I/O memorizzato nel buffer
 
-### <a name="issue-3-file-formats-relying-on-512-byte-sectors"></a>Problema 3: formati di file basati su settori a 512 byte
+### <a name="issue-3-file-formats-relying-on-512-byte-sectors"></a>Problema 3: Formati di file basati su settori a 512 byte
 
-Per alcune applicazioni con formati di file standard, ad esempio VHD 1,0, questi file possono essere hardcoded per presupporre una dimensione di settore a 512 byte. Pertanto, gli aggiornamenti e le Scritture in questo file comportano un ciclo di lettura-modifica-scrittura sul dispositivo, che potrebbe causare problemi di prestazioni e resilienza per i clienti. Esistono tuttavia modi per consentire a un'applicazione di fornire supporto per l'utilizzo di questo tipo di supporto, ad esempio:
+In alcune applicazioni con formati di file standard ,ad esempio VHD 1.0, questi file potrebbero essere hard coded per presupporre una dimensione di settore di 512 byte. Di conseguenza, gli aggiornamenti e le scritture in questo file comportano un ciclo di lettura-modifica-scrittura nel dispositivo, che potrebbe causare problemi di prestazioni e resilienza per i clienti. Esistono tuttavia modi per un'applicazione di fornire supporto per il funzionamento su questo tipo di supporti, ad esempio:
 
--   Usare la memorizzazione nel buffer per assicurarsi che le Scritture vengano eseguite in unità della dimensione del settore fisico
--   Implementare una lettura-modifica-scrittura interna che consente di garantire che gli aggiornamenti vengano eseguiti in unità della dimensione del settore fisico indicata.
--   Se possibile, riempie i record in un settore fisico, in modo che la spaziatura interna venga interpretata come spazio vuoto
--   Provare a riprogettare una nuova versione della struttura di dati dell'applicazione con supporto per settori di grandi dimensioni
+-   Usare la memorizzazione nel buffer per assicurarsi che le operazioni di scrittura siano eseguite in unità delle dimensioni del settore fisico
+-   Implementare una lettura/modifica-scrittura interna che consente di garantire che gli aggiornamenti siano eseguiti in unità delle dimensioni del settore fisico segnalate
+-   Se possibile, riempire i record in un settore fisico, in modo che la spaziatura interna venga interpretata come spazio vuoto
+-   Provare a riprogettare una nuova versione della struttura dei dati dell'applicazione con supporto per settori più grandi
 
-### <a name="issue-4-the-reported-physical-sector-size-can-change-between-sessions"></a>Problema 4: le dimensioni del settore fisico indicate possono cambiare tra le sessioni
+### <a name="issue-4-the-reported-physical-sector-size-can-change-between-sessions"></a>Problema 4: le dimensioni del settore fisico segnalate possono cambiare tra le sessioni
 
-Esistono molti scenari in cui le dimensioni del settore fisico segnalato dell'archiviazione sottostante che ospita Datastor possono cambiare. Il più comune di questi si verifica quando si esegue la migrazione di Datastor a un altro volume o anche attraverso la rete. Una modifica nelle dimensioni del settore fisico segnalato può essere un evento imprevisto per molte applicazioni e può comportare la reinizializzazione anche di alcune applicazioni.
+Esistono molti scenari in cui le dimensioni del settore fisico segnalate dell'archiviazione sottostante che ospita il datastor possono cambiare. La più comune è quando si esegue la migrazione del datastor a un altro volume o anche in rete. Una modifica delle dimensioni del settore fisico segnalate può essere un evento imprevisto per molte applicazioni e può causare la mancata inizializzazione di alcune applicazioni.
 
-Questo non è lo scenario più semplice da supportare ed è indicato come consultivo. È necessario considerare i requisiti di mobilità dei clienti e modificare di conseguenza il supporto per garantire che i clienti non vengano compromessi con i supporti 512e.
+Questo non è lo scenario più semplice da supportare ed è indicato qui come avviso. È consigliabile prendere in considerazione i requisiti di mobilità dei clienti e modificare il supporto di conseguenza per assicurarsi che i clienti non siano influenzati negativamente dall'uso di supporti 512e.
 
 ## <a name="4-kb-native-media"></a>Supporti nativi da 4 KB
 
-il supporto per l'emulazione a 512 byte viene considerato un passaggio di transizione tra i supporti nativi a 512 byte e i supporti nativi da 4 KB e si prevede di visualizzare i supporti nativi di 4 KB rilasciati subito dopo che 512e è disponibile. Questo supporto presenta diverse implicazioni importanti, che devono essere indicate:
+I supporti di emulazione a 512 byte sono concepiti come passaggio di transizione tra supporti nativi da 512 byte e nativi a 4 KB e si prevede che i supporti nativi di 4 KB saranno rilasciati subito dopo la disponibilità di 512e. Esistono diverse implicazioni importanti per questi supporti che devono essere notati:
 
--   Le dimensioni del settore logico e fisico sono entrambe 4 KB
--   Poiché non esiste alcun livello di emulazione, le Scritture non allineate non verranno eseguite dall'archiviazione
--   Nessuna resilienza nascosta: le applicazioni funzionano o non funzionano
+-   Le dimensioni del settore logico e fisico sono entrambe di 4 KB
+-   Poiché non esiste alcun livello di emulazione, le scritture non allineate non verranno completate dall'archiviazione
+-   Nessun hit di resilienza nascosto: le applicazioni funzionano o non funzionano
 
-Sebbene Microsoft stia attualmente analizzando il supporto per questi tipi di supporti in una versione futura di Windows e rilascerà un articolo della Knowledge base quando appropriato, gli sviluppatori di applicazioni devono considerare preventivamente la fornitura del supporto per questi tipi di supporti.
+Anche se Microsoft sta attualmente esaminando il supporto per questi tipi di supporti in una versione futura di Windows e rilaserà un articolo della Knowledge Base quando appropriato, gli sviluppatori di applicazioni devono prendere in considerazione la possibilità di fornire supporto preventivamente per questi tipi di supporti.
 
 ## <a name="closing"></a>Chiusura
 
-In questo articolo è stato illustrato il problema che introduce i supporti di grandi settori con molti scenari di distribuzione comuni. Abbiamo visto l'impatto sulle prestazioni e sulla resilienza di lettura-modifica-scrittura, alcuni degli scenari interessanti che questo supporto può presentare e il set di problemi che possono causare potenzialmente con il software, che influiscono infine sull'utente finale. Il settore dell'archiviazione viene rapidamente sottoposto a transizione a supporti con dimensioni di settore maggiori e molto presto i clienti non saranno in grado di acquistare dischi con dimensioni tradizionali di settore a 512 byte.
+In questo articolo sono stati illustrati gli effetti che i supporti di settore di grandi dimensioni introducono con molti scenari di distribuzione comuni. Sono stati osservati l'impatto sulle prestazioni e sulla resilienza di Lettura-Modifica-Scrittura, alcuni degli scenari interessanti che questi supporti possono introdurre e il set di problemi che possono potenzialmente causare con il software, che in definitiva influisce sull'utente finale. Il settore dell'archiviazione è in rapida transizione ai supporti con dimensioni di settore maggiori e molto presto i clienti non saranno in grado di acquistare dischi con dimensioni tradizionali di settore a 512 byte.
 
-Si tratta di un documento vivente ed è concepito come supporto per gli sviluppatori per aiutare a comprendere questa transizione. È necessario iniziare una conversazione con le rispettive organizzazioni, con i clienti, i professionisti IT e i fornitori di hardware per parlare della transizione di settore di grandi dimensioni e del modo in cui influiscono sugli scenari importanti.
+Si tratta di un documento in vita ed è pensato per aiutare gli sviluppatori a comprendere questa transizione. È consigliabile avviare una conversazione con le rispettive organizzazioni, con i clienti, i professionisti IT e i fornitori di hardware per parlare della transizione di settore di grandi dimensioni e del modo in cui influisce sugli scenari che sono importanti per l'utente.
 
 ## <a name="links-to-other-resources"></a>Collegamenti ad altre risorse
 
--   **Dichiarazione del supporto generale di Windows**: <https://support.microsoft.com/kb/2510009>
--   **Hotfix per Windows 7 e Windows Server 2008 R2**: <https://support.microsoft.com/kb/982018>
--   **Hotfix per Windows Vista e Windows Server 2008**: <https://support.microsoft.com/kb/2470478>
--   **Istruzione di supporto HyperV**: <https://support.microsoft.com/kb/2515143>
--   **Informazioni generali sul comando IOCTL \_ \_ \_ Codice controllo proprietà query di archiviazione**: [https://msdn.microsoft.com/library/ff560590.aspx](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_query_property)
--   **IOCTL \_ \_ \_ Codice controllo proprietà query di archiviazione**: [https://msdn.microsoft.com/library/ff800830.aspx](/windows/win32/api/winioctl/ni-winioctl-ioctl_storage_query_property)
--   **Informazioni generali sull'archiviazione \_ \_Struttura del \_ descrittore di allineamento di accesso**: [https://msdn.microsoft.com/library/ff566344.aspx](/windows-hardware/drivers/ddi/ntddstor/ns-ntddstor-_storage_access_alignment_descriptor)
--   **Descrizione della terminologia standard utilizzata per descrivere gli aggiornamenti software Microsoft**: <https://support.microsoft.com/kb/824684/>
--   **Esempio di codice WDK** con informazioni dettagliate su come estrarre le informazioni di allineamento dell'accesso di archiviazione segnalate dalla struttura del **\_ \_ \_ descrittore dell'allineamento di accesso** alla risorsa di archiviazione quando si effettua una chiamata al codice di controllo della **\_ \_ \_ proprietà query di archiviazione IOCTL** : [/Windows/Desktop/API/WinIoCtl/NS-WinIoCtl-STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR](/windows/desktop/api/winioctl/ns-winioctl-storage_access_alignment_descriptor)
--   **Informazioni generali sulle opzioni di Command-Line di ImageX**: <https://technet.microsoft.com/library/dd799302(WS.10).aspx>
--   **Requisiti del driver del chipset Intel per supportare unità di settore da 4 KB**: <https://www.intel.com/support/chipsets/imsm/sb/CS-031502.htm>
--   Per altre informazioni sui dischi con formati avanzati, visitare i siti Web IDEMa seguenti:
+-   **Windows supporto generale:**<https://support.microsoft.com/kb/2510009>
+-   **Hotfix per Windows 7 e Windows Server 2008 R2:**<https://support.microsoft.com/kb/982018>
+-   **Hotfix per Windows Vista e Windows Server 2008:**<https://support.microsoft.com/kb/2470478>
+-   **Dichiarazione di supporto HyperV:**<https://support.microsoft.com/kb/2515143>
+-   **Informazioni generali su IOCTL \_ Codice di \_ controllo DELLA PROPRIETÀ QUERY DI \_ ARCHIVIAZIONE:**[https://msdn.microsoft.com/library/ff560590.aspx](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_query_property)
+-   **IOCTL \_ Codice di \_ controllo DELLA PROPRIETÀ QUERY DI \_ ARCHIVIAZIONE:**[https://msdn.microsoft.com/library/ff800830.aspx](/windows/win32/api/winioctl/ni-winioctl-ioctl_storage_query_property)
+-   **Informazioni generali sull'archiviazione \_ STRUTTURA DEL \_ \_ DESCRITTORE DI ALLINEAMENTO DI ACCESSO**: [https://msdn.microsoft.com/library/ff566344.aspx](/windows-hardware/drivers/ddi/ntddstor/ns-ntddstor-_storage_access_alignment_descriptor)
+-   **Descrizione della terminologia standard usata per descrivere gli aggiornamenti software Microsoft:**<https://support.microsoft.com/kb/824684/>
+-   Codice di esempio **WDK** con informazioni dettagliate su come estrarre le informazioni di allineamento dell'accesso alle risorse di archiviazione segnalate dalla struttura STORAGE **ACCESS ALIGNMENT \_ \_ \_ DESCRIPTOR** quando si effettua una chiamata al codice di controllo **IOCTL \_ STORAGE QUERY \_ \_ PROPERTY:** [/windows/desktop/api/winioctl/ns-winioctl-storage_access_alignment_descriptor](/windows/desktop/api/winioctl/ns-winioctl-storage_access_alignment_descriptor)
+-   **Informazioni generali sulle ImageX Command-Line seguenti:**<https://technet.microsoft.com/library/dd799302(WS.10).aspx>
+-   **Requisiti del driver Intel Chipset per supportare unità di settore da 4 KB:**<https://www.intel.com/support/chipsets/imsm/sb/CS-031502.htm>
+-   Per altre informazioni sui dischi in formato avanzato, visitare i siti Web IDEMA seguenti:
     -   <http://idema.org/?page_id=2172>
     -   <http://idema.org/?download=7926>
 

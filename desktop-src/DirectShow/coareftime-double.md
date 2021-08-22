@@ -1,7 +1,7 @@
 ---
-description: Questo operatore converte l'ora di riferimento in un valore Double.
+description: Questo operatore converte l'ora di riferimento in un valore double.
 ms.assetid: 59de8e7d-4f1e-441a-bbdd-7393417fe74f
-title: Metodo COARefTime. operator double (Ctlutil. h)
+title: Metodo COARefTime.operator double (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 263a5e6584ec0370c6cbf310d9f10511f130be83
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7c5734f6e180289c307837a729ff166ea5702ad305142948fb7cdb7793ac1c34
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119214091"
 ---
-# <a name="coareftimeoperator-double-method"></a>Metodo COARefTime. operator double
+# <a name="coareftimeoperator-double-method"></a>Metodo COARefTime.operator double
 
-Questo operatore converte l'ora di riferimento in un valore **Double** .
+Questo operatore converte l'ora di riferimento in **un valore** double.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,8 +50,8 @@ Restituisce il tempo di riferimento in secondi.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

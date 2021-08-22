@@ -1,5 +1,5 @@
 ---
-description: "Funzione D3DXQuaternionRotationYawPitchRoll (D3dx9math.h): compila un quaternione con l'yaw, il passo e il lancio dati."
+description: "Funzione D3DXQuaternionRotationYawPitchRoll (D3dx9math.h): compila un quaternione con l'yaw, il passo e il rollio specificato."
 ms.assetid: be4a3bd5-114b-4652-8e0a-e51338317c16
 title: Funzione D3DXQuaternionRotationYawPitchRoll (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 541e181425782662c6d40affc22c829b4ba343ab
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 954fee40015b558b10ba83ef12b1555d06896413c6396ca12ed6e4374131caeb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988434"
 ---
 # <a name="d3dxquaternionrotationyawpitchroll-function-d3dx9mathh"></a>Funzione D3DXQuaternionRotationYawPitchRoll (D3dx9math.h)
 
-Compila un quaternione con l'yaw, il passo e il lancio dati.
+Compila un quaternione con l'yaw, il passo e il rollio dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ D3DXQUATERNION* D3DXQuaternionRotationYawPitchRoll(
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntatore alla [**struttura D3DXQUATERNION**](d3dxquaternion.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXQUATERNION**](d3dxquaternion.md) che è il risultato dell'operazione.
 
 </dd> <dt>
 
@@ -61,12 +61,12 @@ Yaw intorno all'asse y, in radianti.
 
 </dd> <dt>
 
-*Tono* \[ Pollici\]
+*Pitch* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Passo intorno all'asse x, espresso in radianti.
+Passo intorno all'asse x, in radianti.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Passo intorno all'asse x, espresso in radianti.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Rullo intorno all'asse z, in radianti.
+Eseguire il roll-around dell'asse z, in radianti.
 
 </dd> </dl>
 
@@ -83,7 +83,7 @@ Rullo intorno all'asse z, in radianti.
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntatore a [**una struttura D3DXQUATERNION**](d3dxquaternion.md) con yaw, pitch e roll specificati.
+Puntatore a [**una struttura D3DXQUATERNION**](d3dxquaternion.md) con lo yaw, il passo e il rollio specificati.
 
 ## <a name="remarks"></a>Commenti
 

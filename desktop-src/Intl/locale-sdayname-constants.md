@@ -1,31 +1,31 @@
 ---
-description: Costanti SDAYNAME delle impostazioni locali \_ \*
+description: Costanti \_ LOCALE SDAYNAME \*
 ms.assetid: a5451df7-d608-4151-92b1-7e25f8f4500d
-title: Costanti LOCALE_SDAYNAME *
+title: LOCALE_SDAYNAME* Costanti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ac32f5553b355b7421cb11d5dee5b11b0041097
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20d8ffd1b383cab1503e2096a2b47de7992c5a6656f4853fc5caceb2e04f4b3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147354"
 ---
-# <a name="locale_sdayname-constants"></a>Costanti SDAYNAME delle impostazioni locali \_ \*
+# <a name="locale_sdayname-constants"></a>Costanti \_ LOCALE SDAYNAME \*
 
-Questo argomento definisce le impostazioni locali \_ SDAYNAME \* costanti usate da NLS.
+Questo argomento definisce le costanti \_ LOCALE SDAYNAME \* usate da NLS.
 
 
 
 | Valore             | Significato                                                                                                                                 |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| Impostazioni locali \_ SDAYNAME1 | Nome lungo nativo per lunedì. Il numero massimo di caratteri consentiti per questa stringa è 80, incluso un carattere di terminazione null.    |
-| Impostazioni locali \_ SDAYNAME2 | Nome lungo nativo per Tuesday. Il numero massimo di caratteri consentiti per questa stringa è 80, incluso un carattere di terminazione null.   |
-| Impostazioni locali \_ SDAYNAME3 | Nome lungo nativo per mercoledì. Il numero massimo di caratteri consentiti per questa stringa è 80, incluso un carattere di terminazione null. |
-| Impostazioni locali \_ SDAYNAME4 | Nome lungo nativo per giovedì. Il numero massimo di caratteri consentiti per questa stringa è 80, incluso un carattere di terminazione null.  |
-| Impostazioni locali \_ SDAYNAME5 | Nome lungo nativo per venerdì. Il numero massimo di caratteri consentiti per questa stringa è 80, incluso un carattere di terminazione null.    |
-| Impostazioni locali \_ SDAYNAME6 | Nome lungo nativo per sabato. Il numero massimo di caratteri consentiti per questa stringa è 80, incluso un carattere di terminazione null.  |
-| Impostazioni locali \_ SDAYNAME7 | Nome lungo nativo per la domenica. Il numero massimo di caratteri consentiti per questa stringa è 80, incluso un carattere di terminazione null.    |
+| IMPOSTAZIONI \_ LOCALI SDAYNAME1 | Nome nativo lungo per lunedì. Il numero massimo di caratteri consentiti per questa stringa è 80, incluso un carattere Null di terminazione.    |
+| IMPOSTAZIONI \_ LOCALI SDAYNAME2 | Nome nativo lungo per martedì. Il numero massimo di caratteri consentiti per questa stringa è 80, incluso un carattere Null di terminazione.   |
+| IMPOSTAZIONI \_ LOCALI SDAYNAME3 | Nome nativo lungo per mercoledì. Il numero massimo di caratteri consentiti per questa stringa è 80, incluso un carattere Null di terminazione. |
+| IMPOSTAZIONI \_ LOCALI SDAYNAME4 | Nome nativo lungo per giovedì. Il numero massimo di caratteri consentiti per questa stringa è 80, incluso un carattere Null di terminazione.  |
+| IMPOSTAZIONI \_ LOCALI SDAYNAME5 | Nome nativo lungo per venerdì. Il numero massimo di caratteri consentiti per questa stringa è 80, incluso un carattere Null di terminazione.    |
+| IMPOSTAZIONI \_ LOCALI SDAYNAME6 | Nome nativo lungo per Saturday. Il numero massimo di caratteri consentiti per questa stringa è 80, incluso un carattere Null di terminazione.  |
+| IMPOSTAZIONI \_ LOCALI SDAYNAME7 | Nome nativo lungo per domenica. Il numero massimo di caratteri consentiti per questa stringa è 80, incluso un carattere Null di terminazione.    |
 
 
 

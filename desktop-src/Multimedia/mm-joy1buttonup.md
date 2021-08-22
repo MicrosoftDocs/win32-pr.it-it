@@ -1,9 +1,9 @@
 ---
-title: Messaggio MM_JOY1BUTTONUP (mmsystem. h)
-description: Il \_ messaggio mm JOY1BUTTONUP notifica alla finestra che ha acquisito il joystick JOYSTICKID1 che un pulsante è stato rilasciato.
+title: MM_JOY1BUTTONUP messaggio (Mmsystem.h)
+description: Il messaggio MMMOUSE1BUTTONUP notifica alla finestra che ha acquisito \_ ilstickSTICKSTICKID1 che è stato rilasciato un pulsante.
 ms.assetid: 37f0f87a-4805-4cec-9c0c-9d6b36a3ff0d
 keywords:
-- MM_JOY1BUTTONUP messaggi multimediali di Windows
+- MM_JOY1BUTTONUP di Windows multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 007a5d954b9b879f87c5e8ffe2d0774d0d1d85a3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c70c7b8dda57d91e595bd65223a2fd33ef904679e35a38aaacbaf263b525258f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065571"
 ---
-# <a name="mm_joy1buttonup-message"></a>\_Messaggio JOY1BUTTONUP mm
+# <a name="mm_joy1buttonup-message"></a>Messaggio \_ MM MMBUTTONUP
 
-Il messaggio **mm \_ JOY1BUTTONUP** notifica alla finestra che ha acquisito il joystick JOYSTICKID1 che un pulsante è stato rilasciato.
+Il **messaggio \_ MMMOUSE1BUTTONUP** notifica alla finestra che ha acquisito ilstickSTICKSTICKID1 che è stato rilasciato un pulsante.
 
 
 ```C++
@@ -48,10 +48,10 @@ Identifica il pulsante che ha modificato lo stato e i pulsanti premuti. I possib
 
 | Requisito | Valore |
 |-----------------|-------------------------------------------|
-| GIOIA \_ BUTTON1CHG | Il primo pulsante del joystick è stato modificato.  |
-| GIOIA \_ BUTTON2CHG | Il secondo pulsante del joystick è stato modificato. |
-| GIOIA \_ BUTTON3CHG | Il terzo pulsante del joystick è stato modificato.  |
-| GIOIA \_ BUTTON4CHG | Il quarto pulsante del joystick è stato modificato. |
+| JOY \_ BUTTON1CHG | Il primo pulsante a levetta è stato modificato.  |
+| BUTTON \_ BUTTON2CHG | Il secondo pulsante a levetta è stato modificato. |
+| BUTTON \_ BUTTON3CHG | Il terzo pulsante a levetta è stato modificato.  |
+| BUTTON \_ BUTTON4CHG | Il quarto pulsante a levetta è stato modificato. |
 
 
 
@@ -63,10 +63,10 @@ e uno o più degli elementi seguenti:
 
 | Requisito | Valore |
 |--------------|------------------------------------|
-| GIOIA \_ Button1 | Viene premuto il primo pulsante del joystick.  |
-| GIOIA \_ Button2 | Viene premuto il secondo pulsante del joystick. |
-| GIOIA \_ Button3 | Viene premuto il terzo pulsante del joystick.  |
-| GIOIA \_ BUTTON4 | Viene premuto il quarto pulsante del joystick. |
+| JOY \_ BUTTON1 | Viene premuto il primo pulsante a levetta.  |
+| JOY \_ BUTTON2 | Viene premuto il secondo pulsante a levetta. |
+| PULSANTE \_ BUTTON3 | Viene premuto il terzo pulsante a levetta.  |
+| BUTTON \_ BUTTON4 | Viene premuto il quarto pulsante a levetta. |
 
 
 
@@ -77,14 +77,14 @@ e uno o più degli elementi seguenti:
 <span id="xPos"></span><span id="xpos"></span><span id="XPOS"></span>*xPos*
 </dt> <dd>
 
-Coordinate x del joystick rispetto all'angolo superiore sinistro dell'area client.
+Coordinate x del levetta rispetto all'angolo superiore sinistro dell'area client.
 
 </dd> <dt>
 
 <span id="yPos"></span><span id="ypos"></span><span id="YPOS"></span>*yPos*
 </dt> <dd>
 
-Coordinata y del joystick rispetto all'angolo superiore sinistro dell'area client.
+Coordinata y del levetta rispetto all'angolo superiore sinistro dell'area client.
 
 </dd> </dl>
 
@@ -96,7 +96,7 @@ Coordinata y del joystick rispetto all'angolo superiore sinistro dell'area clien
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -107,7 +107,7 @@ Coordinata y del joystick rispetto all'angolo superiore sinistro dell'area clien
 [Joystick](joysticks.md)
 </dt> <dt>
 
-[Messaggi di joystick multimediali](multimedia-joystick-messages.md)
+[Messaggi a levetta multimediali](multimedia-joystick-messages.md)
 </dt> </dl>
 
  

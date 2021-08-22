@@ -1,6 +1,6 @@
 ---
 title: Attributo ContentDistributorDuration
-description: L'attributo ContentDistributorDuration è la durata della riproduzione dell'elemento, in secondi.
+description: L'attributo ContentDistributorDuration è la durata di riproduzione dell'elemento, in secondi.
 ms.assetid: c64cb4ca-b0bc-4beb-b2ae-ddd0c5fcd35c
 keywords:
 - Attributo ContentDistributorDuration Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9f17bad8ef5dd1ab4b0a3d1c7b5becec6fd34a0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eefee789358f2d913d976432a485cf7726e3f7d6afa14e845ad9d7699d8ed4a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135754"
 ---
 # <a name="contentdistributorduration-attribute"></a>Attributo ContentDistributorDuration
 
-L'attributo **ContentDistributorDuration** è la durata della riproduzione dell'elemento, in secondi.
+**L'attributo ContentDistributorDuration** è la durata di riproduzione dell'elemento, in secondi.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -30,9 +30,9 @@ L'attributo **ContentDistributorDuration** è la durata della riproduzione dell'
 
 ## <a name="remarks"></a>Commenti
 
-Se l'attributo Regular **Duration** non è impostato (null) o 0, verrà restituito il valore di questo attributo.
+Se **l'attributo Duration** normale non è impostato (Null) o 0, verrà restituito il valore di questo attributo.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,7 +48,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> <dt>
 
 [**Attributo Duration**](duration-attribute.md)

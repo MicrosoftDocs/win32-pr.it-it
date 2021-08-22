@@ -1,11 +1,11 @@
 ---
-title: Sistema operativo-attributo versione
-description: Stringa di versione del sistema operativo, ad esempio 4,0.
+title: Attributo Operating-System-Version
+description: Stringa della versione del sistema operativo, ad esempio 4.0.
 ms.assetid: 54ad009e-4cf9-4aa7-b1a7-3823d96f7b0e
 ms.tgt_platform: multiple
 keywords:
-- Sistema operativo-schema di AD attributo versione
-- Schema AD dell'attributo operatingSystemVersion
+- Schema AD dell'attributo Operating-System-Version
+- Attributo operatingSystemVersion Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a13aa131a482cad2c36345ddb742e82620d24cd8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d8782bb25fe073e6591e7d9edcac44a80c7255a359c5f6a8a16017325a49f11d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442161"
 ---
-# <a name="operating-system-version-attribute"></a>Sistema operativo-attributo versione
+# <a name="operating-system-version-attribute"></a>Attributo Operating-System-Version
 
-Stringa di versione del sistema operativo, ad esempio 4,0.
+Stringa della versione del sistema operativo, ad esempio 4.0.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Sistema operativo-versione                    |
-| LDAP-Display-Name | operatingSystemVersion                      |
+| CN                | Versione del sistema operativo                    |
+| Ldap-Display-Name | operatingSystemVersion                      |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.364                      |
-| System-ID-GUID    | 3e978926-8c01-11d0-afda-00c04fd930c9        |
+| System-Id-Guid    | 3e978926-8c01-11d0-afda-00c04fd930c9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Stringa di versione del sistema operativo, ad esempio 4,0.
 | ID collegamento                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | Falso                                                                                    |
-| È a valore singolo       | Vero                                                                                     |
+| A valore singolo       | Vero                                                                                     |
 | Indicizzato             | Falso                                                                                    |
 | Nel catalogo globale      | Falso                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
 | System-Flags           | 0x00000010                                                                               |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Stringa di versione del sistema operativo, ad esempio 4,0.
 | ID collegamento                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | Falso                                                                                    |
-| È a valore singolo       | Vero                                                                                     |
+| A valore singolo       | Vero                                                                                     |
 | Indicizzato             | Falso                                                                                    |
 | Nel catalogo globale      | Falso                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
 | System-Flags           | 0x00000010                                                                               |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Stringa di versione del sistema operativo, ad esempio 4,0.
 | ID collegamento                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | Falso                                                                                    |
-| È a valore singolo       | Vero                                                                                     |
+| A valore singolo       | Vero                                                                                     |
 | Indicizzato             | Falso                                                                                    |
 | Nel catalogo globale      | Falso                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
 | System-Flags           | 0x00000010                                                                               |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Stringa di versione del sistema operativo, ad esempio 4,0.
 | ID collegamento                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | Falso                                                                                    |
-| È a valore singolo       | Vero                                                                                     |
+| A valore singolo       | Vero                                                                                     |
 | Indicizzato             | Falso                                                                                    |
 | Nel catalogo globale      | Falso                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
 | System-Flags           | 0x00000010                                                                               |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Stringa di versione del sistema operativo, ad esempio 4,0.
 | ID collegamento                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | Falso                                                                                    |
-| È a valore singolo       | Vero                                                                                     |
+| A valore singolo       | Vero                                                                                     |
 | Indicizzato             | Falso                                                                                    |
 | Nel catalogo globale      | Falso                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
 | System-Flags           | 0x00000010                                                                               |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Stringa di versione del sistema operativo, ad esempio 4,0.
 | ID collegamento                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | Falso                                                                                    |
-| È a valore singolo       | Vero                                                                                     |
+| A valore singolo       | Vero                                                                                     |
 | Indicizzato             | Falso                                                                                    |
 | Nel catalogo globale      | Falso                                                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
 | System-Flags           | 0x00000010                                                                               |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Coda di stampa**](c-printqueue.md)<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe EsentMakeBackupDirectoryFailException'
+description: Altre informazioni sulla classe EsentMakeBackupDirectoryFailException
 title: Classe EsentMakeBackupDirectoryFailException
 TOCTitle: EsentMakeBackupDirectoryFailException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentMakeBackupDirectoryFailException
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: aae8fdbf432656d5b75619c00b7aa230d2e22ee9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 218edf2d8af8b2a3d712b4142a6e37604736ed7dd3746c7b0e6947b1e415248b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119479441"
 ---
 # <a name="esentmakebackupdirectoryfailexception-class"></a>Classe EsentMakeBackupDirectoryFailException
 
@@ -38,15 +38,15 @@ Classe di base per JET_err. Eccezioni MakeBackupDirectoryFail.
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentIOException](./esentioexception-class.md)  
-            Microsoft. ISAM. esent. Interop. EsentMakeBackupDirectoryFailException  
+  [Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentIOException](./esentioexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentMakeBackupDirectoryFailException  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -74,4 +74,4 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 [Membri di EsentMakeBackupDirectoryFailException](./esentmakebackupdirectoryfailexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

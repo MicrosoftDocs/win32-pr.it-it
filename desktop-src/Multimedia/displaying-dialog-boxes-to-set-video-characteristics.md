@@ -1,22 +1,22 @@
 ---
-title: Visualizzazione di finestre di dialogo per impostare le caratteristiche dei video
-description: Visualizzazione di finestre di dialogo per impostare le caratteristiche dei video
+title: Visualizzazione di finestre di dialogo per impostare le caratteristiche video
+description: Visualizzazione di finestre di dialogo per impostare le caratteristiche video
 ms.assetid: 8074f7d1-e8ab-46c3-acc2-a18be0eb4cc7
 keywords:
 - Struttura CAPDRIVERCAPS
-- capDriverGetCaps (macro)
+- Macro capDriverGetCaps
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73eea12d69a3d23b0345bee3495d32cbb1ad0ffe
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 73e6ebfa0f75f4bcec63a693636085f16c342e53761b2cb1e67a0e2536fa5cef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144474"
 ---
-# <a name="displaying-dialog-boxes-to-set-video-characteristics"></a>Visualizzazione di finestre di dialogo per impostare le caratteristiche dei video
+# <a name="displaying-dialog-boxes-to-set-video-characteristics"></a>Visualizzazione di finestre di dialogo per impostare le caratteristiche video
 
-Ogni driver di acquisizione può fornire fino a tre diverse finestre di dialogo usate per controllare gli aspetti del processo di acquisizione e digitalizzazione dei video. Nell'esempio seguente viene illustrato come visualizzare queste finestre di dialogo. Prima di visualizzare ogni finestra di dialogo, nell'esempio viene chiamata la macro [**capDriverGetCaps**](/windows/desktop/api/Vfw/nf-vfw-capdrivergetcaps) e viene verificata la struttura [**CAPDRIVERCAPS**](/windows/win32/api/vfw/ns-vfw-capdrivercaps) restituita per verificare se il driver di acquisizione è in grado di visualizzarlo.
+Ogni driver di acquisizione può fornire fino a tre finestre di dialogo diverse usate per controllare gli aspetti del processo di digitalizzazione e acquisizione video. Nell'esempio seguente viene illustrato come visualizzare queste finestre di dialogo. Prima di visualizzare ogni finestra di dialogo, l'esempio chiama la macro [**capDriverGetCaps**](/windows/desktop/api/Vfw/nf-vfw-capdrivergetcaps) e controlla la struttura [**CAPDRIVERCAPS**](/windows/win32/api/vfw/ns-vfw-capdrivercaps) restituita per verificare se il driver di acquisizione può visualizzarla.
 
 
 ```C++
@@ -58,15 +58,15 @@ if (CapDriverCaps.fHasDlgVideoDisplay)
 
 <dl> <dt>
 
-[Uso di acquisizione video](using-video-capture.md)
+[Uso dell'acquisizione video](using-video-capture.md)
 </dt> <dt>
 
 [**capDriverGetCaps**](/windows/desktop/api/Vfw/nf-vfw-capdrivergetcaps)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

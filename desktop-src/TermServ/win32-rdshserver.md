@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_RDSHServer
-description: Gestisce un server host sessione Desktop remoto (RDSH).
+title: Win32_RDSHServer classe
+description: Gestisce un Desktop remoto host sessione Desktop remoto.
 ms.assetid: 2c2840d2-16aa-484a-979b-6dbb1a08bbcf
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_RDSHServer Servizi Desktop remoto
-- Classe Win32_RDSHServer Servizi Desktop remoto, descritta
+- Win32_RDSHServer classe Servizi Desktop remoto
+- Win32_RDSHServer classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -20,16 +20,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6434a4dfe6bc1a79fdaf4576a89ef552cebd5e1c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 066cea4044330ab79122e9346f6f32999202f854245e5508448e40aea3521fe0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104340722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119422601"
 ---
-# <a name="win32_rdshserver-class"></a>Win32 \_ RDSHServer (classe)
+# <a name="win32_rdshserver-class"></a>Classe RDSHServer Win32 \_
 
-Gestisce un server host sessione Desktop remoto (RDSH).
+Gestisce un Desktop remoto host sessione Desktop remoto.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -48,25 +48,25 @@ class Win32_RDSHServer
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ RDSHServer** presenta questi tipi di membri:
+La **classe \_ RDSHServer Win32** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **Win32 \_ RDSHServer** presenta questi metodi.
+La **classe \_ RDSHServer Win32** include questi metodi.
 
 
 
 | Metodo                                                                          | Descrizione                                                                                                                                                                       |
 |:--------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetInt32Property**](getint32property-win32-rdshserver.md)                   | Recupera un valore di proprietà Integer di un oggetto **Win32 \_ RDSHServer** .<br/>                                                                                                 |
+| [**GetInt32Property**](getint32property-win32-rdshserver.md)                   | Recupera un valore della proprietà Integer di un **oggetto \_ RDSHServer Win32.**<br/>                                                                                                 |
 | [**GetPendingStartServerList**](win32-rdshserver-getpendingstartserverlist.md) | Recupera un elenco di server in attesa di avvio.<br/>                                                                                                                           |
-| [**GetStringProperty**](getstringproperty-win32-rdshserver.md)                 | Recupera un valore della proprietà di stringa di un oggetto **Win32 \_ RDSHServer** .<br/>                                                                                                   |
-| [**SetInt32Property**](setint32property-win32-rdshserver.md)                   | Aggiorna un valore della proprietà Integer di un oggetto **Win32 \_ RDSHServer** .<br/>                                                                                                   |
-| [**SetStringProperty**](setstringproperty-win32-rdshserver.md)                 | Aggiorna il valore di una proprietà di stringa di un oggetto **Win32 \_ RDSHServer** .<br/>                                                                                                     |
-| [**TestAndSetState**](win32-rdshserver-testandsetstate.md)                     | Confronta lo stato corrente con il comparand specificato. Se le due corrispondenze, lo stato viene impostato su un nuovo valore. Indipendentemente dalla corrispondenza, viene restituito anche lo stato corrente.<br/> |
+| [**GetStringProperty**](getstringproperty-win32-rdshserver.md)                 | Recupera il valore di una proprietà stringa di un **oggetto \_ RDSHServer Win32.**<br/>                                                                                                   |
+| [**SetInt32Property**](setint32property-win32-rdshserver.md)                   | Aggiorna un valore della proprietà Integer di **un oggetto \_ RDSHServer Win32.**<br/>                                                                                                   |
+| [**SetStringProperty**](setstringproperty-win32-rdshserver.md)                 | Aggiorna il valore di una proprietà stringa di **un oggetto \_ RDSHServer Win32.**<br/>                                                                                                     |
+| [**TestAndSetState**](win32-rdshserver-testandsetstate.md)                     | Confronta lo stato corrente con il confronto specificato. Se i due valori corrispondono, lo stato viene impostato su un nuovo valore. Indipendentemente dalla corrispondenza, viene restituito anche lo stato corrente.<br/> |
 
 
 
@@ -74,59 +74,59 @@ La classe **Win32 \_ RDSHServer** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ RDSHServer** dispone di queste proprietà.
+La **classe \_ RDSHServer Win32** ha queste proprietà.
 
 <dl> <dt>
 
 **CollectionAlias**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: [ **facoltativo**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Ottiene e imposta l'alias della raccolta RDSH a cui è assegnato il server RDSH.
+Ottiene e imposta l'alias per la raccolta di Host sessione Desktop remoto a cui è assegnato il server Host sessione Desktop remoto.
 
 </dd> <dt>
 
 **ConnectionBroker**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Ottiene e imposta il nome del broker di Connessione Desktop remoto (RDCB) che gestisce l'accesso degli utenti al server RDSH.
+Ottiene e imposta il nome del gestore Connessione Desktop remoto (RDCB) che gestisce l'accesso utente al server Host sessione Desktop remoto.
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Ottiene e imposta il nome del server RDSH.
+Ottiene e imposta il nome del server Host sessione Desktop remoto.
 
 </dd> <dt>
 
-**ServerState**
+**Stato server**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -135,48 +135,48 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **facoltativo**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Descrive lo stato del server. Qualsiasi valore diverso da **target \_ Running** (3) è riservato e deve essere considerato uno stato non valido.
+Descrive lo stato del server. Qualsiasi valore diverso da **TARGET \_ RUNNING** (3) è riservato e deve essere in considerazione uno stato non valido.
 
-I valori possibili sono.
+I valori possibili sono .
 
 <dt>
 
 <span id="TARGET_UNKNOWN"></span><span id="target_unknown"></span>
 
-**Destinazione \_ SCONOSCIUTO** (1)
+**DESTINAZIONE \_ UNKNOWN** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="TARGET_RUNNING"></span><span id="target_running"></span>
 
-**Destinazione \_ IN esecuzione** (3)
+**DESTINAZIONE \_ RUNNING** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="TARGET_INVALID"></span><span id="target_invalid"></span>
 
-**Destinazione \_ NON valido** (8)
+**DESTINAZIONE \_ INVALID** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="TARGET_STARTING"></span><span id="target_starting"></span>
 
-**Destinazione \_ INIZIO** (9)
+**DESTINAZIONE \_ STARTING** (9)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="TARGET_STOPPING"></span><span id="target_stopping"></span>
 
-**Destinazione \_ ARRESTO** in corso (10)
+**DESTINAZIONE \_ STOPPING** (10)
 
 
 </dt> <dd></dd> </dl>
 
-**Windows server 2012 R2 e Windows server 2012:** Questa proprietà non è disponibile prima di Windows Server 2016.
+**Windows Server 2012 R2 e Windows Server 2012:** Questa proprietà non è disponibile prima Windows Server 2016.
 
 </dd> </dl>
 
@@ -188,8 +188,8 @@ I valori possibili sono.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Radice \\ cimv2 \\ rdms<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -198,7 +198,7 @@ I valori possibili sono.
 
 <dl> <dt>
 
-[Provider di Desktop remoto Management Services](rdms-api-reference.md)
+[provider Desktop remoto Management Services](rdms-api-reference.md)
 </dt> </dl>
 
  

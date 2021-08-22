@@ -1,7 +1,7 @@
 ---
-description: Recupera l'handle per una smart card connessa. Questo metodo restituisce ( \* pHandle) = = null se non è connesso.
+description: Recupera l'handle per un oggetto smart card. Questo metodo restituisce ( \* pHandle) == NULL se non è connesso.
 ms.assetid: f03f8f25-b2e4-4fae-b7d2-bb0f1a7cd987
-title: 'Metodo IsValid:: get_CardHandle (Scardmgr. h)'
+title: Metodo ISCard::get_CardHandle (Scardmgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: d7e945f0f4a300dfed444c7e8f5921b806d96b1c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a01b7c4531b82c154b6c6e04c1cf0fb5fa2003729e8abf5c0af39470a171bbb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119482231"
 ---
-# <a name="iscardget_cardhandle-method"></a>Metodo IsValid:: Get \_ CardHandle
+# <a name="iscardget_cardhandle-method"></a>Metodo ISCard::get \_ CardHandle
 
-\[Il metodo **get \_ CardHandle** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Non è disponibile per l'utilizzo in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo get \_ CardHandle** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il metodo **get \_ CardHandle** recupera l'handle per una [*Smart Card*](../secgloss/s-gly.md)connessa. Questo metodo restituisce ( \* pHandle) = = **null** se non è connesso.
+Il **metodo get \_ CardHandle** recupera l'handle per un oggetto [*smart card*](../secgloss/s-gly.md). Questo metodo restituisce ( \* pHandle) == **NULL se** non è connesso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ HRESULT get_CardHandle(
 
 <dl> <dt>
 
-*pHandle* \[ out\]
+*pHandle* \[ Cambio\]
 </dt> <dd>
 
 Puntatore all'handle della scheda al ritorno.
@@ -56,9 +56,9 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 | Codice restituito                                                                                  | Descrizione                                       |
 |----------------------------------------------------------------------------------------------|---------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Operazione completata correttamente.<br/>      |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il parametro *pHandle* non è valido.<br/>  |
-| <dl> <dt>**\_puntatore E**</dt> </dl>    | Un puntatore errato è stato passato in *pHandle*.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Operazione completata correttamente.<br/>      |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il *parametro pHandle* non è valido.<br/>  |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>    | È stato passato un puntatore non valido in *pHandle.*<br/> |
 
 
 
@@ -66,11 +66,11 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire un codice di errore della smart card se è stata chiamata una funzione Smart Card per completare la richiesta. Per ulteriori informazioni, vedere [valori restituiti della smart card](authentication-return-values.md).
+Oltre ai codici di errore COM elencati in precedenza, questa interfaccia può restituire un codice di errore smart card se è stata chiamata una funzione smart card per completare la richiesta. Per altre informazioni, vedere [Valori restituiti delle smart card.](authentication-return-values.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come recuperare l'handle della smart card.
+Nell'esempio seguente viene illustrato come recuperare l smart card handle.
 
 
 ```C++
@@ -95,14 +95,14 @@ if (FAILED(hr))
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                   |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Scardmgr. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Scardmgr. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Scardmgr.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
-| IID<br/>                      | La \_ scheda IID è definita come 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
+| IID<br/>                      | IID \_ ISCard è definito come 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
 
 
 
@@ -110,19 +110,19 @@ if (FAILED(hr))
 
 <dl> <dt>
 
-[**Ottieni \_ ATR**](iscard-get-atr.md)
+[**get \_ Atr**](iscard-get-atr.md)
 </dt> <dt>
 
-[**ottenere il \_ contesto**](iscard-get-context.md)
+[**Get \_ Context**](iscard-get-context.md)
 </dt> <dt>
 
-[**ottenere il \_ protocollo**](iscard-get-protocol.md)
+[**Get \_ Protocol**](iscard-get-protocol.md)
 </dt> <dt>
 
-[**ottenere \_ lo stato**](iscard-get-status.md)
+[**get \_ Status**](iscard-get-status.md)
 </dt> <dt>
 
-[**Scheda di**](iscard.md)
+[**ISCard**](iscard.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
 title: Elemento December (monthsType)
-description: Specifica che l'attività viene eseguita nel dicembre.
+description: Specifica che l'attività viene eseguita nel mese di dicembre.
 ms.assetid: 42f3cfb2-8e82-46a0-b3ef-42e83d329124
 keywords:
-- Utilità di pianificazione elemento dicembre
+- Elemento december Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5c907262fe67a0529917d085583465eb97f94c73
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9212641956abc4e52f455a83ac6d5e58a8560fa44cd68068dc809280b30e5faf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119516921"
 ---
 # <a name="december-monthstype-element"></a>Elemento December (monthsType)
 
-Specifica che l'attività viene eseguita nel dicembre.
+Specifica che l'attività viene eseguita nel mese di dicembre.
 
 ``` syntax
 <xs:element name="December">
@@ -30,7 +30,7 @@ Specifica che l'attività viene eseguita nel dicembre.
 </xs:element>
 ```
 
-L'elemento **December** è definito dal tipo complesso [**monthsType**](taskschedulerschema-monthstype-complextype.md) .
+**L'elemento** December è definito dal [**tipo complesso monthsType.**](taskschedulerschema-monthstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -38,14 +38,14 @@ L'elemento **December** è definito dal tipo complesso [**monthsType**](tasksche
 
 | Elemento                                                                                                          | Derivato da                                                     | Descrizione                                                                                                |
 |------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [**Mesi (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Specifica i mesi dell'anno durante i quali l'attività viene eseguita per una pianificazione mensile del giorno della settimana.<br/> |
+| [**Months (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Specifica i mesi dell'anno durante i quali l'attività viene eseguita per una pianificazione mensile del giorno della settimana.<br/> |
 | [**Mesi (monthlyScheduleType)**](taskschedulerschema-months-monthlyscheduletype-element.md)                   | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Specifica i mesi dell'anno durante i quali l'attività viene eseguita per una pianificazione mensile.<br/>             |
 
 
 
 ## <a name="examples"></a>Esempio
 
-Il codice XML seguente definisce un calendario dei mesi che esegue l'attività nel mese di dicembre.
+Il codice XML seguente definisce un calendario di mesi che esegue l'attività nel mese di dicembre.
 
 
 ```XML
@@ -62,8 +62,8 @@ Il codice XML seguente definisce un calendario dei mesi che esegue l'attività n
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -71,7 +71,7 @@ Il codice XML seguente definisce un calendario dei mesi che esegue l'attività n
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione elementi dello schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

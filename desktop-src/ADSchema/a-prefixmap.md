@@ -1,10 +1,10 @@
 ---
-title: Attributo Prefix-Map
-description: L'attributo Prefix-Map è solo per uso interno.
+title: Prefix-Map attributo
+description: LPrefix-Map attributo è solo per uso interno.
 ms.assetid: 814b8d47-ade9-49d9-a755-a47f7a9322c4
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Prefix-Map attribute
+- Prefix-Map schema AD dell'attributo
 - Schema AD dell'attributo prefixMap
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 354776b279551ae116d72a98c87cfeaa779529a3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 109f0edaff3e693cc51cc63890b313e0821893608aa31b35f4d8c50148b5f4ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081485"
 ---
-# <a name="prefix-map-attribute"></a>Attributo Prefix-Map
+# <a name="prefix-map-attribute"></a>Prefix-Map attributo
 
-L'attributo **Prefix-map** è solo per uso interno.
+**L'attributo Prefix-Map** è solo per uso interno.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | Prefix-Map                                            |
-| LDAP-Display-Name | prefixMap                                             |
+| Ldap-Display-Name | prefixMap                                             |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.538                                |
-| System-ID-GUID    | 52458022-ca6a-11D0-AFFF-0000f80367c1                  |
+| System-Id-Guid    | 52458022-ca6a-11d0-afff-0000f80367c1                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -44,7 +44,7 @@ L'attributo **Prefix-map** è solo per uso interno.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ L'attributo **Prefix-map** è solo per uso interno.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ L'attributo **Prefix-map** è solo per uso interno.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ L'attributo **Prefix-map** è solo per uso interno.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ L'attributo **Prefix-map** è solo per uso interno.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ L'attributo **Prefix-map** è solo per uso interno.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ L'attributo **Prefix-map** è solo per uso interno.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ L'attributo **Prefix-map** è solo per uso interno.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**DMD**](c-dmd.md)<br/> |
+| Classi usate in        | [**Dmd**](c-dmd.md)<br/> |
 
 
 

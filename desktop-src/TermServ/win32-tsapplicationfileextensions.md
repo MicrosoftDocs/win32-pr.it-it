@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSApplicationFileExtensions
-description: Estensioni di file gestite da un'applicazione in un server di host sessione Desktop remoto (host sessione Desktop remoto).
+title: Win32_TSApplicationFileExtensions classe
+description: Estensioni di file gestite da un'applicazione in un server host Desktop remoto sessione Desktop remoto.
 ms.assetid: beefc266-5ad6-49ee-b761-98764e2905d6
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_TSApplicationFileExtensions Servizi Desktop remoto
-- Classe Win32_TSApplicationFileExtensions Servizi Desktop remoto, descritta
+- Win32_TSApplicationFileExtensions classe Servizi Desktop remoto
+- Win32_TSApplicationFileExtensions classe Servizi Desktop remoto , descritta
 topic_type:
 - apiref
 api_name:
@@ -21,16 +21,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e28f84ff122b77abf1474b5686edab627177424b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 47538c589143d234ceebec5f907d67aff3f702034cd7f76e0fb95ea3dd4e0cdb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119421691"
 ---
-# <a name="win32_tsapplicationfileextensions-class"></a>Win32 \_ TSApplicationFileExtensions (classe)
+# <a name="win32_tsapplicationfileextensions-class"></a>Classe Win32 \_ TSApplicationFileExtensions
 
-Descrive le estensioni di file gestite da un'applicazione in un server di host sessione Desktop remoto (host sessione Desktop remoto).
+Descrive le estensioni di file gestite da un'applicazione in un Desktop remoto host sessione Desktop remoto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,21 +47,21 @@ class Win32_TSApplicationFileExtensions : CIM_LogicalElement
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ TSApplicationFileExtensions** presenta questi tipi di membri:
+La **classe \_ Win32 TSApplicationFileExtensions** include questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **Win32 \_ TSApplicationFileExtensions** presenta questi metodi.
+La **classe Win32 \_ TSApplicationFileExtensions** include questi metodi.
 
 
 
 | Metodo                                                                         | Descrizione                                                                                |
 |:-------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------|
-| [**FileAssociations**](fileassociations-win32-tsapplicationfileextensions.md) | Analizza il registro di sistema per ottenere le associazioni di file correnti per un'applicazione.<br/>     |
-| [**FileExtension**](fileextensions-win32-tsapplicationfileextensions.md)     | Fornisce un elenco delle estensioni dei nomi di file gestite da un'applicazione.<br/> |
+| [**Associazione di file**](fileassociations-win32-tsapplicationfileextensions.md) | Analizza il Registro di sistema per ottenere le associazioni di file correnti per un'applicazione.<br/>     |
+| [**FileExtensions**](fileextensions-win32-tsapplicationfileextensions.md)     | Fornisce un elenco delle estensioni di file gestite da un'applicazione.<br/> |
 
 
 
@@ -69,32 +69,32 @@ La classe **Win32 \_ TSApplicationFileExtensions** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ TSApplicationFileExtensions** dispone di queste proprietà.
+La **classe Win32 \_ TSApplicationFileExtensions** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrizione (stringa a una riga) dell'oggetto.
+Breve descrizione (stringa di una riga) dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -102,32 +102,32 @@ Tipo di accesso: sola lettura
 
 Descrizione dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Qualificatori: [**mappingstring**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Data di installazione dell'oggetto. La mancanza di un valore non indica che l'oggetto non è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -135,25 +135,25 @@ Tipo di accesso: sola lettura
 
 Nome dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Stato corrente dell'oggetto. È possibile definire diversi stati operativi e non operativi. Gli stati operativi includono: "OK", "degradato" e "errore Predator" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente, ma prevedere un errore nel prossimo futuro). Gli Stati non operativi includono: "Error", "starting", "stoping" e "Service". Il secondo "servizio" può essere applicato durante il mirroring di un disco, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati nonoperational includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono in linea, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
@@ -166,7 +166,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 
 
 
- ("Errore")
+ ("Error")
 
 
 </dt> <dd></dd> <dt>
@@ -187,14 +187,14 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 
 
 
- ("Errore di predazione")
+ ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Avvio")
+ ("Starting")
 
 
 </dt> <dd></dd> <dt>
@@ -217,9 +217,9 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 
 ## <a name="remarks"></a>Commenti
 
-Per connettersi allo \\ \\ \\ spazio dei nomi CIMV2 TerminalServices radice, il livello di autenticazione deve includere la riservatezza dei pacchetti. Per le chiamate C/C++, si tratta di un livello di autenticazione del livello di autenticazione **RPC \_ C \_ \_ \_ PKT \_**, che può essere impostato tramite la funzione com [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) . Per Visual Basic e le chiamate di scripting, si tratta di un livello di autenticazione di **WbemAuthenticationLevelPktPrivacy** o "su PktPrivacy", con un valore pari a 6.
+Per connettersi allo spazio \\ dei \\ nomi CIMV2 \\ TerminalServices radice, il livello di autenticazione deve includere la privacy dei pacchetti. Per le chiamate C/C++, si tratta di un livello di autenticazione di **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY,** che può essere impostato tramite la funzione COM [**CoSetProxyBlanket.**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) Per Visual Basic e le chiamate di scripting, si tratta di un livello di autenticazione **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con valore 6.
 
-Il seguente esempio di Visual Basic Scripting Edition (VBScript) illustra come connettersi a un computer remoto con la privacy dei pacchetti.
+Nell'esempio Visual Basic Scripting Edition (VBScript) seguente viene illustrato come connettersi a un computer remoto con privacy dei pacchetti.
 
 
 ```VB
@@ -230,7 +230,7 @@ Set objServices = GetObject( _
 
 
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -241,7 +241,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>Tsallow. mof</dt> </dl>  |
+| MOF<br/>                      | <dl> <dt>Tsallow.mof</dt> </dl>  |
 | DLL<br/>                      | <dl> <dt>TsPubWmi.dll</dt> </dl> |
 
 

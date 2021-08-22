@@ -1,26 +1,26 @@
 ---
-title: Proprietà HotKeyAltShiftTab di IMsRdpClientAdvancedSettings
-description: Specifica il codice della chiave virtuale da aggiungere a ALT per determinare la sostituzione del tasto di scelta rapida per ALT + MAIUSC + TAB.
+title: Proprietà HotKeyAltShiftTab IMsRdpClientAdvancedSettings
+description: Specifica il codice del tasto virtuale da aggiungere ad ALT per determinare la sostituzione del tasto di scelta rapida per ALT+MAIUSC+TAB.
 ms.assetid: da52f2fb-15cc-4d55-b26e-cf5465290889
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà HotKeyAltShiftTab
-- Servizi Desktop remoto proprietà HotKeyAltShiftTab, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà HotKeyAltShiftTab
-- Servizi Desktop remoto proprietà HotKeyAltShiftTab, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà HotKeyAltShiftTab
-- Servizi Desktop remoto proprietà HotKeyAltShiftTab, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà HotKeyAltShiftTab
-- Servizi Desktop remoto proprietà HotKeyAltShiftTab, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà HotKeyAltShiftTab
-- Servizi Desktop remoto proprietà HotKeyAltShiftTab, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà HotKeyAltShiftTab
-- Servizi Desktop remoto proprietà HotKeyAltShiftTab, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà HotKeyAltShiftTab
-- Servizi Desktop remoto proprietà HotKeyAltShiftTab, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà HotKeyAltShiftTab
-- Servizi Desktop remoto proprietà HotKeyAltShiftTab, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà HotKeyAltShiftTab
+- Proprietà HotKeyAltShiftTab Servizi Desktop remoto
+- Proprietà HotKeyAltShiftTab Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto proprietà , HotKeyAltShiftTab
+- Proprietà HotKeyAltShiftTab Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto proprietà , HotKeyAltShiftTab
+- Proprietà HotKeyAltShiftTab Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto proprietà , HotKeyAltShiftTab
+- Proprietà HotKeyAltShiftTab Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà HotKeyAltShiftTab
+- Proprietà HotKeyAltShiftTab Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà HotKeyAltShiftTab
+- Proprietà HotKeyAltShiftTab Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà HotKeyAltShiftTab
+- Proprietà HotKeyAltShiftTab Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto proprietà , HotKeyAltShiftTab
+- Proprietà HotKeyAltShiftTab Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà HotKeyAltShiftTab
 topic_type:
 - apiref
 api_name:
@@ -54,18 +54,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9819ddcba3f9cb10450525467eb8accce958c2f0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 80f5c7bee8ce7c805fae1ed0de82b191fb04f253718d8287b5cf9864da7e4567
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119515271"
 ---
-# <a name="imsrdpclientadvancedsettingshotkeyaltshifttab-property"></a>Proprietà IMsRdpClientAdvancedSettings:: HotKeyAltShiftTab
+# <a name="imsrdpclientadvancedsettingshotkeyaltshifttab-property"></a>Proprietà IMsRdpClientAdvancedSettings::HotKeyAltShiftTab
 
-Specifica il codice della chiave virtuale da aggiungere a ALT per determinare la sostituzione del tasto di scelta rapida per ALT + MAIUSC + TAB.
+Specifica il codice del tasto virtuale da aggiungere ad ALT per determinare la sostituzione del tasto di scelta rapida per ALT+MAIUSC+TAB.
 
-Questa proprietà è valida solo quando la proprietà [**KeyboardHookMode**](imsrdpclientsecuredsettings-keyboardhookmode.md) non è abilitata.
+Questa proprietà è valida solo quando la [**proprietà KeyboardHookMode**](imsrdpclientsecuredsettings-keyboardhookmode.md) non è abilitata.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -86,15 +86,15 @@ HRESULT get_HotKeyAltShiftTab(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Nuovo codice della chiave virtuale. **VK \_ NEXT** è il valore predefinito, con ALT + PGGIÙ come sequenza risultante.
+Nuovo codice della chiave virtuale. **VK \_ NEXT** è il valore predefinito, con ALT+PGGIUTO come sequenza risultante.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,7 +106,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                  |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

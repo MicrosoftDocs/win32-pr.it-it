@@ -1,19 +1,19 @@
 ---
-description: Il centro del BoundingOrientedBox.
+description: Centro dell'oggetto BoundingOrientedBox.
 ms.assetid: e1e118cd-4549-4609-9c8e-7ce36a0bcc3f
-title: BoundingOrientedBox. Center (DirectXCollision. h)
+title: BoundingOrientedBox.Center (DirectXCollision.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a80cbbf7480c16c6731dfd191c68293577d9a6e7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 580749b8624974f1e06a9e9c2c28528a76792c0653056c675e8878fcd964f88f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118508"
 ---
-# <a name="boundingorientedboxcenter"></a>BoundingOrientedBox. Center
+# <a name="boundingorientedboxcenter"></a>BoundingOrientedBox.Center
 
-Il centro del [**BoundingOrientedBox**](/windows/win32/api/directxcollision/ns-directxcollision-boundingorientedbox).
+Centro di [**BoundingOrientedBox.**](/windows/win32/api/directxcollision/ns-directxcollision-boundingorientedbox)
 
 
 ```C++
@@ -27,7 +27,7 @@ public:
 
 ### <a name="platform-requirements"></a>Requisiti della piattaforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK per Windows 8. Supportato per le app desktop Win32, le app di Windows Store e le app Windows Phone 8.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con Windows SDK per Windows 8. Supportato per app desktop Win32, app Windows Store e Windows Phone 8 app.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,7 +35,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK p
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>DirectXCollision. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>DirectXCollision.h</dt> </dl> |
 
 
 

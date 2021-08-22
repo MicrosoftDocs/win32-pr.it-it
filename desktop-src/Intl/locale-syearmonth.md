@@ -1,19 +1,19 @@
 ---
-description: impostazioni locali \_ SYEARMONTH
+description: LOCALE \_ SYEARMONTH
 ms.assetid: 57eae43a-72e1-410f-b003-c75f720e17fd
 title: LOCALE_SYEARMONTH
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2c3157ebdf9c21c1405ff1e4c15df05265c3b8d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0fc2d0226a6db07cad9a0ac645b9995260b55fcae7c7e6e7b0fd9191997c96f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147295"
 ---
-# <a name="locale_syearmonth"></a>impostazioni locali \_ SYEARMONTH
+# <a name="locale_syearmonth"></a>LOCALE \_ SYEARMONTH
 
-**Windows Me/98, windows 2000:** Stringa di formattazione per l'anno per le impostazioni locali. Il numero massimo di caratteri consentiti per questa stringa è 80, incluso un carattere di terminazione null. Questa stringa Mostra il formato corretto per una stringa di data che contiene solo l'anno e il mese, usando le immagini del formato come definito nelle [Immagini del formato giorno, mese, anno ed era](day--month--year--and-era-format-pictures.md).
+**Windows Me/98, Windows 2000:** Stringa di formattazione anno-mese per le impostazioni locali. Il numero massimo di caratteri consentiti per questa stringa è 80, incluso un carattere Null di terminazione. Questa stringa mostra il formato corretto per una stringa di data che contiene solo l'anno e il mese, usando immagini in formato come definito in [Day, Month, Year](day--month--year--and-era-format-pictures.md)e Era Format Pictures .
 
  
 

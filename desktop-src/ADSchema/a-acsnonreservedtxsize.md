@@ -1,11 +1,11 @@
 ---
-title: Attributo ACS-non riservato-TX-size
-description: Dimensioni del bucket del token che un'applicazione può usare prima che sia attiva una prenotazione.
+title: Attributo ACS-Non-Reserved-Tx-Size
+description: Dimensioni del bucket di token che un'applicazione può usare prima che venga effettuata una prenotazione.
 ms.assetid: 67a0d6fd-b556-49d2-8c5b-6efebf1052c3
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ACS-non riservato-TX-size
-- Schema AD dell'attributo aCSNonReservedTxSize
+- Schema AD dell'attributo ACS-Non-Reserved-Tx-Size
+- Attributo aCSNonReservedTxSize Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66cd19dde97e3a9fc6ef58165c8dbcbfbebba729
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2c0b4f45d558e344103835aee4185d4af6bdff8f394a12c39670625ecd58882d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082025"
 ---
-# <a name="acs-non-reserved-tx-size-attribute"></a>Attributo ACS-non riservato-TX-size
+# <a name="acs-non-reserved-tx-size-attribute"></a>Attributo ACS-Non-Reserved-Tx-Size
 
-Dimensioni del bucket del token che un'applicazione può usare prima che sia attiva una prenotazione.
+Dimensioni del bucket di token che un'applicazione può usare prima che venga effettuata una prenotazione.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ACS-non riservato-TX-size             |
-| LDAP-Display-Name | aCSNonReservedTxSize                 |
+| CN                | ACS-Non-Reserved-Tx-Size             |
+| Ldap-Display-Name | aCSNonReservedTxSize                 |
 | Dimensione              | 8 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.898               |
-| System-ID-GUID    | f072230d-aef5-11d1-bdcf-0000f80367c1 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | f072230d-aef5-11d1-bdcf-0000f80367c1 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ Dimensioni del bucket del token che un'applicazione può usare prima che sia att
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Dimensioni del bucket del token che un'applicazione può usare prima che sia att
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Dimensioni del bucket del token che un'applicazione può usare prima che sia att
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Dimensioni del bucket del token che un'applicazione può usare prima che sia att
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Dimensioni del bucket del token che un'applicazione può usare prima che sia att
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Dimensioni del bucket del token che un'applicazione può usare prima che sia att
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 

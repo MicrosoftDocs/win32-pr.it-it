@@ -1,25 +1,25 @@
 ---
-description: Perché usare persone nelle vicinanze?
+description: Perché usare Persone nelle vicinanze?
 ms.assetid: 94e37cb0-1832-46ae-81ec-b92a5b4dcd51
-title: Perché usare persone nelle vicinanze?
+title: Perché usare Persone nelle vicinanze?
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 218c443e87d39b8d5ece29ca780a25ba7c4e4b5d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fa8dc9de18017fe9b843dcb4a267fc715013ef3173c2956071eea88eaaa10a77
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104050018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119517982"
 ---
-# <a name="why-use-people-near-me"></a>Perché usare persone nelle vicinanze?
+# <a name="why-use-people-near-me"></a>Perché usare Persone nelle vicinanze?
 
-Di seguito sono riportati alcuni esempi di scenari [consentiti dagli utenti nelle vicinanze](about-people-near-me.md) (persone nelle vicinanze):
+Ecco alcuni esempi di [scenari Persone nelle vicinanze](about-people-near-me.md) (PNM):
 
--   Inizia la chat con una persona in una sala riunioni durante una riunione. Usare un'applicazione di chat per individuare in modo dinamico altri utenti nella stanza, selezionare un utente specifico e avviare una sessione di chat per collaborare o scambiare informazioni.
--   L'API persone nelle vicinanze consente la condivisione dei documenti con tutti gli utenti della sala riunioni. Sebbene le unità flash USB (Universal Serial Bus) (UFDs) rendano molto semplice il trasferimento di documenti tra computer in un'impostazione chiusa, ad esempio una riunione, richiede tempo e impegno per collegare l'unità flash USB a ogni computer e copiare il documento in una cartella locale. Con le applicazioni in grado di persone nelle vicinanze, è possibile selezionare gli utenti nella stanza con cui si vuole condividere o inviare un documento.
+-   Avviare una chat con una persona in una sala riunioni durante una riunione. Usare un'applicazione di chat per individuare dinamicamente altri utenti nella stanza, selezionare un utente specifico e avviare una sessione di chat per collaborare o scambiare informazioni.
+-   L'API PNM consente la condivisione di documenti con tutti gli utenti nella sala riunioni. Anche se le unità flash USB (Universal Serial Bus) semplificano il trasferimento di documenti tra computer in un'impostazione chiusa, ad esempio una riunione, è comunque necessario tempo e impegno per collegare l'unità UFD a ogni computer e copiare il documento in una cartella locale. Con le applicazioni in grado di usare PNM, è possibile selezionare gli utenti nella stanza con cui si vuole condividere o inviare un documento.
 -   Trasmettere le informazioni sul desktop di un computer al computer di un collega per la condivisione delle risorse.
--   Inizia un gioco con qualcuno durante una sosta presso un terminale dell'aeroporto che supporta la connettività wireless. L'API persone nelle vicinanze consente a un'applicazione di annunciare il proprio interesse per la riproduzione di un gioco, scoprire altri utenti dell'aeroporto che sono interessati anche alla riproduzione del gioco e avviare una sessione di gioco.
--   Pubblicizzare gli interessi in una conferenza di settore e individuare quelli di altri utenti che usano la connettività wireless. Dopo l'individuazione, gli utenti possono chattare o configurare riunioni improvvise per scambiare idee.
+-   Avviare un gioco con qualcuno durante un layover in un terminale dell'aeroporto che supporta la connettività wireless. L'API PNM consente a un'applicazione di annunciare l'interesse per la riproduzione di un gioco, scoprire altri utenti in aeroporto che sono anche interessati a riprodurre il gioco e avviare una sessione di gioco.
+-   Annunciare gli interessi in una conferenza del settore e scoprire quelli di altri utenti che usano la connettività wireless. Dopo l'individuazione, gli utenti possono chattare o configurare riunioni impromptuose per scambiare idee.
 
  
 

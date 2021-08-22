@@ -1,5 +1,5 @@
 ---
-description: Modifica le impostazioni del componente di sistema generico.
+description: Modifica le impostazioni dei componenti di sistema generici.
 ms.assetid: e745be32-c26a-4343-99c8-950788243adf
 title: Metodo ModifySystemComponentSettings della classe Msvm_VirtualSystemManagementService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: e9495256d1b7610bebdac1fb2cc8b70960a63304
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a1b2f2e0c2f08e5768a5078777daa61ef4f2452878575eea489db437d1f52f0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119388559"
 ---
-# <a name="modifysystemcomponentsettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo ModifySystemComponentSettings della classe MSVM \_ VirtualSystemManagementService
+# <a name="modifysystemcomponentsettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo ModifySystemComponentSettings della classe Msvm \_ VirtualSystemManagementService
 
-Modifica le impostazioni del componente di sistema generico.
+Modifica le impostazioni dei componenti di sistema generici.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ uint32 ModifySystemComponentSettings(
 
 <dl> <dt>
 
-*ComponentSettings* \[ in\]
+*ComponentSettings* \[ Pollici\]
 </dt> <dd>
 
 Matrice di impostazioni del componente da aggiornare.
 
 </dd> <dt>
 
-*ResultingComponentSettings* \[ out\]
+*ResultingComponentSettings* \[ Cambio\]
 </dt> <dd>
 
-Se l'operazione riesce, restituisce una matrice di [**\_ SystemComponentSettingData MSVM**](msvm-systemcomponentsettingdata.md) che fanno riferimento alle impostazioni del componente risultante.
+In caso di esito positivo, restituisce una matrice [**di Msvm \_ SystemComponentSettingData**](msvm-systemcomponentsettingdata.md) che fanno riferimento alle impostazioni del componente risultante.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -64,7 +64,7 @@ Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, restituisce 0 o 4096; in caso contrario, restituisce un errore.
+In caso di esito positivo, restituisce un valore 0 o 4096. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -74,13 +74,13 @@ In caso di esito positivo, restituisce 0 o 4096; in caso contrario, restituisce 
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non valido** (4)
+**Parametro non** valido (4)
 </dt> <dt>
 
 **Stato non valido** (5)
@@ -92,13 +92,13 @@ In caso di esito positivo, restituisce 0 o 4096; in caso contrario, restituisce 
 **DMTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -107,10 +107,10 @@ In caso di esito positivo, restituisce 0 o 4096; in caso contrario, restituisce 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                                               |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                                               |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -119,7 +119,7 @@ In caso di esito positivo, restituisce 0 o 4096; in caso contrario, restituisce 
 
 <dl> <dt>
 
-[**\_VirtualSystemManagementService MSVM**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-title: parola chiave sh_job
-description: La \_ parola chiave \ SH Job \ specifica che l'oggetto di sistema è un handle di un processo.
+title: sh_job parola chiave
+description: La parola chiave \ sh \_ job\ specifica che l'oggetto di sistema è un handle per un processo.
 keywords:
 - sh_job parola chiave MIDL
 topic_type:
@@ -11,16 +11,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 02/05/2021
-ms.openlocfilehash: db24f9dc84f2bb56f57327090485b406ad1a437f
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: dd71db0310b450db1d9c87879e8ac10ad998d1d21e48a60eb9d816c0a0718b42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "103968813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146284"
 ---
-# <a name="sh_job-keyword"></a>\_parola chiave del processo SH
+# <a name="sh_job-keyword"></a>Parola \_ chiave sh job
 
-La parola chiave del **\_ processo SH** specifica che un oggetto `system_handle` include un handle per un processo.
+La **parola chiave sh \_ job** specifica che un `system_handle` oggetto contiene un handle per un processo.
 
 ``` syntax
 [system_handle(sh_job)]
@@ -32,11 +32,11 @@ La parola chiave del **\_ processo SH** specifica che un oggetto `system_handle`
 
 Questa parola chiave è un parametro per [**system_handle**](system-handle.md).
 
-La documentazione di [**system_handle**](system-handle.md) contiene inoltre informazioni dettagliate sull'utilizzo facoltativo del parametro *Access-Rights* . Il comportamento predefinito è `DUPLICATE_SAME_ACCESS` per le specifiche della [funzione **DuplicateHandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle) .
+La [**system_handle**](system-handle.md) contiene anche informazioni dettagliate sull'uso facoltativo del *parametro access-rights.* Il comportamento predefinito è `DUPLICATE_SAME_ACCESS` in base alle specifiche della funzione [ **DuplicateHandle.**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
 
 ## <a name="remarks"></a>Commenti
 
-Per usare questa parola chiave con l' `system_handle` attributo, il `-target` flag deve essere impostato su `NT100` (o versione successiva) quando si esegue midl.exe.
+Per usare questa parola chiave con l'attributo , il flag deve essere impostato su `system_handle` `-target` `NT100` (o superiore) durante l'esecuzione midl.exe.
 
 ## <a name="examples"></a>Esempio
 
@@ -53,8 +53,8 @@ interface MyInterface : IUnknown
 
 | &nbsp; | &nbsp; |
 |-|-|
-| Client minimo supportato | Aggiornamento dell'anniversario di Windows 10 (versione 1607, Build 14393) |
-| Server minimo supportato | Windows Server 2016 (Build 14393) |
+| Client minimo supportato | Windows 10 Aggiornamento dell'anniversario (versione 1607, build 14393) |
+| Server minimo supportato | Windows Server 2016 (build 14393) |
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -66,8 +66,8 @@ interface MyInterface : IUnknown
 [Oggetti processo](../procthread/job-objects.md)
 </dt> <dt>
 
-[Sicurezza dell'oggetto processo e diritti di accesso](../procthread/job-object-security-and-access-rights.md)
+[Sicurezza degli oggetti processo e diritti di accesso](../procthread/job-object-security-and-access-rights.md)
 </dt> <dt>
 
-[**CreateJobObject** (funzione)](/windows/win32/api/winbase/nf-winbase-createjobobjecta)
+[**Funzione CreateJobObject**](/windows/win32/api/winbase/nf-winbase-createjobobjecta)
 </dt> </dl>

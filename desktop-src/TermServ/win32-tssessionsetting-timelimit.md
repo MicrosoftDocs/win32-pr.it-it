@@ -1,12 +1,12 @@
 ---
-title: Metodo di scadenza della classe Win32_TSSessionSetting
+title: Metodo TimeLimit della classe Win32_TSSessionSetting
 description: Imposta il tempo massimo allocato al tipo di limite di sessione specificato.
 ms.assetid: 55194197-ffb6-49ae-827a-478ced867ab0
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo di scadenza
-- Servizi Desktop remoto del metodo di scadenza, classe Win32_TSSessionSetting
-- Classe Win32_TSSessionSetting Servizi Desktop remoto, metodo di scadenza
+- Metodo TimeLimit Servizi Desktop remoto
+- Metodo TimeLimit Servizi Desktop remoto , Win32_TSSessionSetting classe
+- Win32_TSSessionSetting classe Servizi Desktop remoto , metodo TimeLimit
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4016c28de50d31338d9bc6ec50ef1497c7a561da
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7f49451b1f6b7b2e63079d0bebbcd0dbb43b76352ae3609ce4138b771a01e03e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137554"
 ---
-# <a name="timelimit-method-of-the-win32_tssessionsetting-class"></a>Metodo di scadenza della \_ classe Win32 TSSessionSetting
+# <a name="timelimit-method-of-the-win32_tssessionsetting-class"></a>Metodo TimeLimit della classe \_ TSSessionSetting Win32
 
 Imposta il tempo massimo allocato al tipo di limite di sessione specificato.
 
@@ -44,10 +44,10 @@ uint32 TimeLimit(
 
 <dl> <dt>
 
-*SessionLimitType* \[ in\]
+*SessionLimitType* \[ Pollici\]
 </dt> <dd>
 
-Specifica il tipo di proprietà del limite di sessione che il metodo sta impostando.
+Specifica il tipo di proprietà session-limit impostata dal metodo.
 
 <dt>
 
@@ -58,7 +58,7 @@ Specifica il tipo di proprietà del limite di sessione che il metodo sta imposta
 
 </dt> <dd>
 
-Il metodo sta impostando la proprietà **ActiveSessionLimit** .
+Il metodo imposta la **proprietà ActiveSessionLimit.**
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Il metodo sta impostando la proprietà **ActiveSessionLimit** .
 
 </dt> <dd>
 
-Il metodo sta impostando la proprietà **DisconnectedSessionLimit** .
+Il metodo sta impostando la **proprietà DisconnectedSessionLimit.**
 
 </dd> <dt>
 
@@ -80,24 +80,24 @@ Il metodo sta impostando la proprietà **DisconnectedSessionLimit** .
 
 </dt> <dd>
 
-Il metodo sta impostando la proprietà **IdleSessionLimit** .
+Il metodo imposta la **proprietà IdleSessionLimit.**
 
 </dd> </dl> </dd> <dt>
 
-*ValueLimit* \[ in\]
+*ValueLimit* \[ Pollici\]
 </dt> <dd>
 
-Il nuovo tempo massimo, in millisecondi, per la proprietà specificata dal parametro *SessionLimitType* . Il valore zero indica che non esiste alcun limite di sessione.
+Nuovo tempo massimo, in millisecondi, per la proprietà specificata dal *parametro SessionLimitType.* Il valore zero indica che non esiste alcun limite di sessione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'esito positivo, in caso contrario restituisce un codice di errore WMI. Per un elenco di questi valori, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) . Il metodo restituisce un errore se l'impostazione è sotto il controllo criteri di gruppo.
+Restituisce Success in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Fare riferimento [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) per un elenco di questi valori. Il metodo restituisce un errore se l'impostazione è sotto il controllo di Criteri di gruppo.
 
 ## <a name="remarks"></a>Commenti
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -107,8 +107,8 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -117,7 +117,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TSSessionSetting Win32**](win32-tssessionsetting.md)
+[**Win32 \_ TSSessionSetting**](win32-tssessionsetting.md)
 </dt> </dl>
 
  

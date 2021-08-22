@@ -1,7 +1,7 @@
 ---
 description: Recupera il nome del modello di certificato.
 ms.assetid: 26fd758a-b348-4efb-841b-c8f2ab88efea
-title: 'Metodo ISCrdEnr:: getCertTemplateName'
+title: Metodo ISCrdEnr::getCertTemplateName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: 4eee84140e0a23b8a0dd5d26099ca61b868a90fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aaf37f3907bc2b26ca1adbbded7be5ed7897a74ea9664d4353354d5ad9657d7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119409621"
 ---
-# <a name="iscrdenrgetcerttemplatename-method"></a>Metodo ISCrdEnr:: getCertTemplateName
+# <a name="iscrdenrgetcerttemplatename-method"></a>Metodo ISCrdEnr::getCertTemplateName
 
-Il metodo **getCertTemplateName** Recupera il nome del modello di certificato.
+Il **metodo getCertTemplateName** recupera il nome del modello di certificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,17 +52,17 @@ SCrdEnr.getCertTemplateName( _
 
 <dl> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
-Valore che determina se viene restituito il nome reale o il nome visualizzato del modello di certificato. Se *dwFlags* presenta il valore SCard \_ Registra \_ il \_ \_ nome visualizzato del modello \_ di certificato, viene recuperato il nome visualizzato del modello di certificato; in caso contrario, viene visualizzato il nome effettivo del modello di certificato.
+Valore che determina se viene restituito il nome reale o il nome visualizzato del modello di certificato. Se *dwFlags* ha il valore SCARD \_ ENROLL CERT TEMPLATE DISPLAY NAME, viene recuperato il nome visualizzato del modello di certificato. In caso contrario, viene visualizzato il nome reale del \_ modello di \_ \_ \_ certificato.
 
 </dd> <dt>
 
-*pbstrCertTemplateName* \[ out\]
+*pbstrCertTemplateName* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una stringa che restituisce il nome del modello di certificato che verrà usato nella [*richiesta di certificato*](../secgloss/c-gly.md).
+Puntatore a una stringa che restituisce il nome del modello di certificato che verrà usato nella richiesta [*di certificato.*](../secgloss/c-gly.md)
 
 </dd> </dl>
 
@@ -72,15 +72,15 @@ Puntatore a una stringa che restituisce il nome del modello di certificato che v
 
 Se il metodo ha esito positivo, il metodo restituisce S \_ OK.
 
-Se il metodo ha esito negativo, restituisce un valore **HRESULT** che indica l'errore. Per un elenco di codici di errore comuni, vedere [valori HRESULT comuni](common-hresult-values.md).
+Se il metodo ha esito negativo, restituisce un **valore HRESULT** che indica l'errore. Per un elenco dei codici di errore comuni, vedere [Valori HRESULT comuni.](common-hresult-values.md)
 
 ### <a name="vb"></a>VB
 
-Stringa che rappresenta il nome del modello di certificato che verrà utilizzato nella [*richiesta di certificato*](../secgloss/c-gly.md).
+Stringa che rappresenta il nome del modello di certificato che verrà utilizzato nella richiesta [*di certificato.*](../secgloss/c-gly.md)
 
 ## <a name="remarks"></a>Commenti
 
-Se non si imposta il nome del modello di certificato chiamando [**ISCrdEnr:: setCertTemplateName**](iscrdenr-setcerttemplatename.md), il nome predefinito è il primo nome nell'elenco dei modelli di certificato disponibili.
+Se non si imposta il nome del modello di certificato chiamando [**ISCrdEnr::setCertTemplateName**](iscrdenr-setcerttemplatename.md), il nome predefinito sarà il nome nell'elenco dei modelli di certificato disponibili.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -89,9 +89,9 @@ Se non si imposta il nome del modello di certificato chiamando [**ISCrdEnr:: set
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                               |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Scrdenrl.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCrdEnr è definito come 753988a1-1357-436D-9cf5-f089bdd67d64<br/>             |
+| IID<br/>                      | IID \_ ISCrdEnr è definito come 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
 
 
 

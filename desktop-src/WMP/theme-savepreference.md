@@ -1,9 +1,9 @@
 ---
-title: THEME. savePreference
-description: Il metodo savePreference salva una preferenza nel registro di sistema.
+title: THEME.savePreference
+description: Il metodo savePreference salva una preferenza nel Registro di sistema.
 ms.assetid: 4c253d8d-15c0-4c18-bb3f-fdbcef79c999
 keywords:
-- THEME. savePreference Windows Media Player
+- THEME.savePreference Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 89633d71dd75f4ef5e804aefddc85cf00ad5c03b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d5f9edca154ff6402028ba873c1643e330ab316a54a63f14fa4f9b5bdb244483
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134544"
 ---
-# <a name="themesavepreference"></a>THEME. savePreference
+# <a name="themesavepreference"></a>THEME.savePreference
 
-Il metodo **savePreference** salva una preferenza nel registro di sistema.
+Il **metodo savePreference** salva una preferenza nel Registro di sistema.
 
 ``` syntax
         theme.savePreference(theKey, theValue)
@@ -35,14 +35,14 @@ Il metodo **savePreference** salva una preferenza nel registro di sistema.
 <span id="theKey"></span><span id="thekey"></span><span id="THEKEY"></span>*theKey*
 </dt> <dd>
 
-**Stringa** che specifica la chiave del valore di preferenza da salvare.
+Valore **String** che specifica la chiave del valore di preferenza da salvare.
 
 </dd> <dt>
 
-<span id="theValue"></span><span id="thevalue"></span><span id="THEVALUE"></span>*Ilvalore*
+<span id="theValue"></span><span id="thevalue"></span><span id="THEVALUE"></span>*theValue*
 </dt> <dd>
 
-**Stringa** che specifica il valore da salvare.
+Valore **String** che specifica il valore da salvare.
 
 </dd> </dl>
 
@@ -52,9 +52,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Una preferenza è una coppia chiave/valore che può essere archiviata nel registro di sistema per mantenere le informazioni sullo stato delle Media Player di Windows tra le esecuzioni. Questa funzionalità può essere usata, ad esempio, per salvare le impostazioni di personalizzazione in modo che non debbano essere immesse di nuovo ogni volta che viene avviato Windows Media Player.
+Una preferenza è una coppia chiave/valore che può essere archiviata nel Registro di sistema per mantenere le informazioni sullo stato Windows Media Player tra le esecuzioni. Questa funzionalità può essere usata, ad esempio, per salvare le impostazioni di personalizzazione in modo che non sia necessario immettere di nuovo ogni volta Windows Media Player viene avviato.
 
-Le preferenze non sono crittografate e pertanto non sono un metodo sicuro per rendere permanente i dati. Non usare le preferenze per archiviare i dati privati.
+Le preferenze non sono crittografate e pertanto non sono un metodo sicuro per rendere persistenti i dati. Non usare le preferenze per archiviare i dati privati.
 
 ## <a name="examples"></a>Esempio
 
@@ -77,7 +77,7 @@ Le preferenze non sono crittografate e pertanto non sono un metodo sicuro per re
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -88,7 +88,7 @@ Le preferenze non sono crittografate e pertanto non sono un metodo sicuro per re
 [**Elemento THEME**](theme-element.md)
 </dt> <dt>
 
-[**THEME. loadPreference**](theme-loadpreference.md)
+[**THEME.loadPreference**](theme-loadpreference.md)
 </dt> </dl>
 
  

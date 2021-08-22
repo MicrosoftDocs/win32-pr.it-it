@@ -1,10 +1,10 @@
 ---
-title: SAM-enumerazione-intero-dominio esteso a destra
+title: Diritto esteso SAM-Enumerate-Entire-Domain
 description: Questo diritto di accesso di controllo può essere usato per limitare gli utenti autorizzati a usare un'API di livello inferiore, ad esempio NetQueryDisplayInformation e NetUser/GroupEnum, ed enumerare l'intero dominio.
 ms.assetid: d29e94f3-efaf-4a86-909c-88bd34abcf6c
 ms.tgt_platform: multiple
 keywords:
-- SAM-enumerazione-intero-schema AD esteso a destra del dominio
+- Schema AD esteso SAM-Enumerate-Entire-Domain
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3683b6b6396295a88c66bfc333bf226aa42faa0a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 407e116faaf48170d8fe5c6db45688cb6dfa8b0384de0317bfbbeb995e1a76e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104121974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021589"
 ---
-# <a name="sam-enumerate-entire-domain-extended-right"></a>SAM-enumerazione-intero-dominio esteso a destra
+# <a name="sam-enumerate-entire-domain-extended-right"></a>Diritto esteso SAM-Enumerate-Entire-Domain
 
 Questo diritto di accesso di controllo può essere usato per limitare gli utenti autorizzati a usare un'API di livello inferiore, ad esempio NetQueryDisplayInformation e NetUser/GroupEnum, ed enumerare l'intero dominio.
 
@@ -28,8 +28,8 @@ Questo diritto di accesso di controllo può essere usato per limitare gli utenti
 
 | Voce | Valore |
 |--------------|--------------------------------------|
-| CN           | SAM-enumerazione-intero-dominio          |
-| Display-Name | Enumera intero dominio SAM          |
+| CN           | SAM-Enumerate-Entire-Domain          |
+| Display-Name | Enumerare l'intero dominio SAM          |
 | Rights-GUID  | 91d67418-0135-4acc-8d79-c08e857cfbec |
 
 
@@ -48,8 +48,8 @@ Questo diritto di accesso di controllo può essere usato per limitare gli utenti
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Server Sam**](c-samserver.md)<br/> |
-| Localization-display-ID | 57                                           |
+| Applies-To              | [**Sam-Server**](c-samserver.md)<br/> |
+| Localization-Display-ID | 57                                           |
 
 
 
@@ -59,8 +59,8 @@ Questo diritto di accesso di controllo può essere usato per limitare gli utenti
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Server Sam**](c-samserver.md)<br/> |
-| Localization-display-ID | 57                                           |
+| Applies-To              | [**Sam-Server**](c-samserver.md)<br/> |
+| Localization-Display-ID | 57                                           |
 
 
 
@@ -70,8 +70,8 @@ Questo diritto di accesso di controllo può essere usato per limitare gli utenti
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Server Sam**](c-samserver.md)<br/> |
-| Localization-display-ID | 57                                           |
+| Applies-To              | [**Sam-Server**](c-samserver.md)<br/> |
+| Localization-Display-ID | 57                                           |
 
 
 
@@ -81,8 +81,8 @@ Questo diritto di accesso di controllo può essere usato per limitare gli utenti
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Server Sam**](c-samserver.md)<br/> |
-| Localization-display-ID | 57                                           |
+| Applies-To              | [**Sam-Server**](c-samserver.md)<br/> |
+| Localization-Display-ID | 57                                           |
 
 
 
@@ -92,8 +92,8 @@ Questo diritto di accesso di controllo può essere usato per limitare gli utenti
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Server Sam**](c-samserver.md)<br/> |
-| Localization-display-ID | 57                                           |
+| Applies-To              | [**Sam-Server**](c-samserver.md)<br/> |
+| Localization-Display-ID | 57                                           |
 
 
 

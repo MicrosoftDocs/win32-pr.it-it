@@ -1,9 +1,9 @@
 ---
-title: Messaggio MMIOM_READ (mmsystem. h)
-description: Il \_ messaggio di lettura MMIOM viene inviato a una routine di i/O dalla funzione mmioRead per richiedere che un numero specificato di byte venga letto da un file aperto.
+title: MMIOM_READ messaggio (Mmsystem.h)
+description: Il messaggio MMIOM READ viene inviato a una procedura di I/O dalla funzione mmioRead per richiedere che un numero specificato di byte sia letto da \_ un file aperto.
 ms.assetid: db769a68-f0ac-4a79-931e-6174e438439d
 keywords:
-- MMIOM_READ messaggi multimediali di Windows
+- MMIOM_READ messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5715bf8db51017c16997530256c6dfb83b3b3fc5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fcf5bbdbb20e2bc168f93857a7d59016197ccc4142d4ba18a2e6fd80842ff06c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065351"
 ---
-# <a name="mmiom_read-message"></a>MMIOM \_ leggere il messaggio
+# <a name="mmiom_read-message"></a>Messaggio MMIOM \_ READ
 
-Il messaggio di **\_ lettura MMIOM** viene inviato a una routine di i/O dalla funzione [**mmioRead**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioread) per richiedere che un numero specificato di byte venga letto da un file aperto.
+Il **messaggio MMIOM \_ READ** viene inviato a una procedura di I/O dalla funzione [**mmioRead**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioread) per richiedere che un numero specificato di byte sia letto da un file aperto.
 
 
 ```C++
@@ -68,7 +68,7 @@ La procedura di I/O è responsabile dell'aggiornamento del membro **lDiskOffset*
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 

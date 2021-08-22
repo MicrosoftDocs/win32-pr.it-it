@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentNoBackupDirectoryException'
+description: Altre informazioni sul costruttore EsentNoBackupDirectoryException
 title: Costruttore EsentNoBackupDirectoryException
 TOCTitle: 'EsentNoBackupDirectoryException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentNoBackupDirectoryException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e1c128c7cdf986f41568134ee0754a3ab402b88f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a574f14b60a3ead08da6e0dfa6577dff397d429b0972ce78a885bb4b5e5b121e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119478971"
 ---
 # <a name="esentnobackupdirectoryexception-constructor"></a>Costruttore EsentNoBackupDirectoryException
 
 Inizializza una nuova istanza della classe EsentNoBackupDirectoryException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentNoBackupDirectoryException()
 
 [Membri di EsentNoBackupDirectoryException](./esentnobackupdirectoryexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

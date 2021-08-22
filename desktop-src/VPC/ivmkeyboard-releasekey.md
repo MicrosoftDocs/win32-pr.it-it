@@ -1,6 +1,6 @@
 ---
-title: Metodo IVMKeyboard ReleaseKey (VPCCOMInterfaces. h)
-description: Simula una chiave rilasciata.
+title: Metodo IVMKeyboard ReleaseKey (VPCCOMInterfaces.h)
+description: Simula il rilascio di una chiave.
 ms.assetid: 112bf11d-d768-4487-ab41-e915aa4e6a24
 keywords:
 - Metodo ReleaseKey Virtual PC
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8585f592ae1cad65157536f841500c42bb06bfd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d6610cf6aad2a6838a1437f9be33cbf93847a64a9266e07c424b4209bccd5a87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136674"
 ---
-# <a name="ivmkeyboardreleasekey-method"></a>Metodo IVMKeyboard:: ReleaseKey
+# <a name="ivmkeyboardreleasekey-method"></a>Metodo IVMKeyboard::ReleaseKey
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Simula una chiave rilasciata.
+Simula il rilascio di una chiave.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,10 +44,10 @@ HRESULT ReleaseKey(
 
 <dl> <dt>
 
-*chiave* \[ di in\]
+*chiave* \[ Pollici\]
 </dt> <dd>
 
-Codice chiave per la chiave da rilasciare.
+Codice chiave per la chiave da rilasciata.
 
 </dd> </dl>
 
@@ -60,9 +60,9 @@ Questo metodo può restituire uno di questi valori.
 | Codice/valore restituito                                                                                                                                                 | Descrizione                                                                |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0</dt> </dl>                       | L'operazione è stata completata.<br/>                                   |
-| <dl> <dt>**E \_ PUNTATORE**</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **null**.<br/>                                      |
-| <dl> <dt>**E \_**</dt> <dt>0x80000003</dt> INVALIDARG </dl>      | La stringa specificata è vuota o contiene un codice chiave non valido.<br/> |
-| <dl> <dt>**Disp \_ 0x80020009 \_ eccezione E**</dt> <dt></dt> </dl> | Si è verificato un errore imprevisto.<br/>                               |
+| <dl> <dt>**E \_ Puntatore**</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **NULL.**<br/>                                      |
+| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>0x80000003</dt> </dl>      | La stringa specificata è vuota o contiene un codice di chiave non valido.<br/> |
+| <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/>                               |
 
 
 
@@ -74,12 +74,12 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMKeyboard è definito come 00695f2e-c5ad-4d6e-b1ab-336ed121f8c4<br/>                |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMKeyboard è definito come \_ 00695f2e-c5ad-4d6e-b1ab-336ed121f8c4<br/>                |
 
 
 

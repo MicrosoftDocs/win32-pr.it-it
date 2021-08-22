@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSVm
-description: Rappresenta una macchina virtuale Desktop remoto.
+title: Win32_TSVm classe
+description: Rappresenta una Desktop remoto virtuale.
 ms.assetid: 9e076963-1c02-4419-b4d5-9863a2bbb23b
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_TSVm Servizi Desktop remoto
-- Classe Win32_TSVm Servizi Desktop remoto, descritta
+- Win32_TSVm classe Servizi Desktop remoto
+- Win32_TSVm classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -23,16 +23,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25f419a888adef946d2a7b281919a9a9293eeca5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 65bdec32d667e88d152f77c3518b02a183a794c8727c96b0772194a183e97279
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137434"
 ---
-# <a name="win32_tsvm-class"></a>Win32 \_ TSVm (classe)
+# <a name="win32_tsvm-class"></a>Classe TSVm Win32 \_
 
-Rappresenta una macchina virtuale Desktop remoto.
+Rappresenta una Desktop remoto virtuale.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -54,14 +54,14 @@ class Win32_TSVm : CIM_LogicalElement
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ TSVm** presenta questi tipi di membri:
+La **classe \_ TSVm Win32** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **Win32 \_ TSVm** presenta questi metodi.
+La **classe \_ TSVm Win32** include questi metodi.
 
 
 
@@ -69,7 +69,7 @@ La classe **Win32 \_ TSVm** presenta questi metodi.
 |:----------------------------------------------------------------------|:---------------------------------------------------------|
 | [**DumpVmInfo**](dumpvminfo-win32-tsvm.md)                           | Solo a scopo di test.<br/>                       |
 | [**Esportazione**](export-win32-tsvm.md)                                   | Ottiene le informazioni di monitoraggio della sessione della macchina virtuale<br/> |
-| [**QueryOfflineInformation**](queryofflineinformation-win32-tsvm.md) | Esegue una query sulle proprietà solo quando è offline.<br/>   |
+| [**QueryOfflineInformation**](queryofflineinformation-win32-tsvm.md) | Esegue query sulle proprietà solo quando è offline.<br/>   |
 
 
 
@@ -77,32 +77,32 @@ La classe **Win32 \_ TSVm** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ TSVm** dispone di queste proprietà.
+La **classe \_ TSVm Win32** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrizione (stringa a una riga) dell'oggetto.
+Breve descrizione (stringa di una riga) dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -110,48 +110,48 @@ Tipo di accesso: sola lettura
 
 Descrizione dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **EnlightmentSettings**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: [ **facoltativo**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-BLOB XML che contiene le impostazioni di illuminazione per la macchina virtuale.
+BLOB XML che contiene le impostazioni di riconoscimento per la macchina virtuale.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Qualificatori: [**mappingstring**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Data di installazione dell'oggetto. La mancanza di un valore non indica che l'oggetto non è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -159,25 +159,25 @@ Tipo di accesso: sola lettura
 
 Nome dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Stato corrente dell'oggetto. È possibile definire diversi stati operativi e non operativi. Gli stati operativi includono: "OK", "degradato" e "errore Predator" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente, ma prevedere un errore nel prossimo futuro). Gli Stati non operativi includono: "Error", "starting", "stoping" e "Service". Il secondo "servizio" può essere applicato durante il mirroring di un disco, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati nonoperational includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono in linea, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
@@ -190,7 +190,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 
 
 
- ("Errore")
+ ("Error")
 
 
 </dt> <dd></dd> <dt>
@@ -211,14 +211,14 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 
 
 
- ("Errore di predazione")
+ ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Avvio")
+ ("Starting")
 
 
 </dt> <dd></dd> <dt>
@@ -242,13 +242,13 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 **VmName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Nome della macchina virtuale.
@@ -264,7 +264,7 @@ Nome della macchina virtuale.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                             |
 | Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ TerminalServices<br/>                                                   |
-| MOF<br/>                      | <dl> <dt>TSVmHost. mof</dt> </dl>    |
+| MOF<br/>                      | <dl> <dt>TSVmHost.mof</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>TSVmHostWmi.dll</dt> </dl> |
 
 

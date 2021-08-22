@@ -1,9 +1,9 @@
 ---
 title: Evento DomainChange dell'oggetto AxWindowsMediaPlayer
-description: L'evento DomainChange si verifica quando viene modificato il dominio DVD. | Evento DomainChange dell'oggetto AxWindowsMediaPlayer
+description: L'evento DomainChange si verifica quando il dominio DVD viene modificato. | Evento DomainChange dell'oggetto AxWindowsMediaPlayer
 ms.assetid: a080082e-1ba4-4080-b39c-b84292ecacb0
 keywords:
-- Evento DomainChange dell'oggetto AxWindowsMediaPlayer Media Player Windows
+- Evento DomainChange dell'oggetto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 342ac559f75c3bb7d65b442bfbdced5e5ed3f690
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a37f10679225fb893fad8bcf6fc6687021256e305e8c5a08e6ebe96d16b74e81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136124"
 ---
 # <a name="domainchange-event-of-the-axwindowsmediaplayer-object"></a>Evento DomainChange dell'oggetto AxWindowsMediaPlayer
 
-L'evento DomainChange si verifica quando viene modificato il dominio DVD.
+L'evento DomainChange si verifica quando il dominio DVD viene modificato.
 
 ``` syntax
 [C#]
@@ -41,13 +41,13 @@ Private Sub player_DomainChange(
 
 ## <a name="event-data"></a>Dati eventi
 
-Il gestore associato a questo evento è di tipo **AxWMPLib. \_ \_DomainChangeEventHandler WMPOCXEvents**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ DomainChangeEvent**, che contiene la proprietà seguente correlata a questo evento.
+Il gestore associato a questo evento è di tipo **AxWMPLib. \_ WMPOCXEvents \_ DomainChangeEventHandler**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ DomainChangeEvent**, che contiene la proprietà seguente correlata a questo evento.
 
 
 
 | Proprietà  | Descrizione                                                                                     |
 |-----------|-------------------------------------------------------------------------------------------------|
-| strDomain | System. StringIndicates il nuovo dominio. Per i valori possibili, vedere la sezione Osservazioni.<br/> |
+| strDomain | System.StringIndicates il nuovo dominio. Per i valori possibili, vedere la sezione Osservazioni.<br/> |
 
 
 
@@ -55,17 +55,17 @@ Il gestore associato a questo evento è di tipo **AxWMPLib. \_ \_DomainChangeEve
 
 ## <a name="remarks"></a>Commenti
 
-Nella tabella seguente vengono illustrati i valori possibili per la proprietà strDomain.
+La tabella seguente illustra i valori possibili per la proprietà strDomain.
 
 
 
 | string            | Descrizione                                                          |
 |-------------------|----------------------------------------------------------------------|
 | firstPlay         | Esecuzione dell'inizializzazione predefinita di un disco DVD.                     |
-| videoManagerMenu  | Visualizzazione dei menu per l'intero disco. Noto anche come menu radice o menu di scelta rapida. |
+| videoManagerMenu  | Visualizzazione dei menu per l'intero disco. Noto anche come Menu radice o TopMenu. |
 | videoTitleSetMenu | Visualizzazione dei menu per il set di titoli corrente. Noto anche come titleMenu.     |
 | title             | Visualizzazione del titolo corrente.                                        |
-| stop              | Il navigatore DVD si trova nel dominio di arresto DVD.                         |
+| stop              | Il DVD Navigator si trova nel dominio DVD Stop.                         |
 
 
 
@@ -77,7 +77,7 @@ Nella tabella seguente vengono illustrati i valori possibili per la proprietà s
 
 | Requisito | Valore |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                          |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                          |
 | Spazio dei nomi<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSLicenseReportSummaryEntry
-description: Fornisce un riepilogo delle licenze di accesso client (RDS \ 160) installate e rilasciate Servizi Desktop remoto per utente. Licenze CAL per utente).
+title: Win32_TSLicenseReportSummaryEntry classe
+description: Fornisce un riepilogo delle licenze client di accesso client per Servizi Desktop remoto installate e rilasciate (Servizi Desktop remoto \ 160; Licenze CAL per utente).
 ms.assetid: 0FD3BFFE-58B9-4037-969F-8C2323136C9D
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_TSLicenseReportSummaryEntry Servizi Desktop remoto
-- Classe Win32_TSLicenseReportSummaryEntry Servizi Desktop remoto, descritta
+- Win32_TSLicenseReportSummaryEntry classe Servizi Desktop remoto
+- Win32_TSLicenseReportSummaryEntry classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -22,16 +22,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f34482e9c6199ef6586024d43d586421a54071ca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 58efc2c70019037219d8eca986fa8afd81e4dc2d06cd638ee24fc59947e3bf3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137800"
 ---
-# <a name="win32_tslicensereportsummaryentry-class"></a>Win32 \_ TSLicenseReportSummaryEntry (classe)
+# <a name="win32_tslicensereportsummaryentry-class"></a>Classe Win32 \_ TSLicenseReportSummaryEntry
 
-Fornisce un riepilogo delle licenze di accesso client (RDS per utente) installate e riServizi Desktop remoto lasciate per ogni utente.
+Fornisce un riepilogo delle licenze CAL client per Servizi Desktop remoto per utente installate e rilasciate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,59 +50,59 @@ class Win32_TSLicenseReportSummaryEntry
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ TSLicenseReportSummaryEntry** presenta questi tipi di membri:
+La **classe \_ Win32 TSLicenseReportSummaryEntry** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ TSLicenseReportSummaryEntry** dispone di queste proprietà.
+La **classe Win32 \_ TSLicenseReportSummaryEntry** ha queste proprietà.
 
 <dl> <dt>
 
 **InstalledLicenses**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero di licenze CAL per utente di Servizi Desktop remoto installate.
+Numero di licenze CAL Per Utente di Servizi Desktop remoto installate.
 
 </dd> <dt>
 
 **IssuedLicenses**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero di licenze CAL per utente per ogni utente rilasciate.
+Numero di licenze CAL Per Utente di Servizi Desktop remoto rilasciate.
 
 </dd> <dt>
 
 **ProductVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Versione di Servizi Desktop remoto per cui è stata rilasciata la licenza CAL per utente.
+Versione di Servizi Desktop remoto per cui è stata rilasciata la licenza CAL Per Utente di Servizi Desktop remoto.
 
 <dt>
 
 "Windows Server 2012"
 </dt> <dd>
 
-Con questa licenza sono supportati solo i server che eseguono Windows Server 2012, Windows Server 2008 R2 o Windows Server 2008.
+Solo i server che Windows Server 2012, Windows Server 2008 R2 o Windows Server 2008 sono supportati con questa licenza.
 
 </dd> <dt>
 
@@ -116,7 +116,7 @@ Con questa licenza sono supportati solo i server che eseguono Windows Server 200
 "Windows Server 2008"
 </dt> <dd>
 
-Con questa licenza sono supportati solo i server che eseguono Windows Server 2008.
+Solo i server che Windows Server 2008 sono supportati con questa licenza.
 
 </dd> </dl>
 
@@ -125,13 +125,13 @@ Con questa licenza sono supportati solo i server che eseguono Windows Server 200
 **ProductVersionID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identificatore della versione del prodotto per il Key Pack di Servizi Desktop remoto License.
+Identificatore della versione del prodotto per il key pack Servizi Desktop remoto licenza.
 
 <dt>
 
@@ -175,41 +175,41 @@ Non supportata.
 **TSCALAvailability**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Disponibilità delle licenze CAL per utente per utente. Si tratta di uno dei valori seguenti.
+Disponibilità delle licenze CAL Servizi Desktop remoto per utente. Si tratta di uno dei valori seguenti.
 
 <dt>
 
-Disponibile
+"Disponibile"
 </dt> <dd>
 
-Le licenze CAL per utente per utente sono disponibili.
+Sono disponibili le licenze CAL Per Utente di Servizi Desktop remoto.
 
 </dd> <dt>
 
-Limitato
+"Limited"
 </dt> <dd>
 
-La disponibilità delle licenze CAL per utente per utente è limitata.
+La disponibilità delle licenze CAL Per Utente di Servizi Desktop remoto è limitata.
 
 </dd> <dt>
 
 "None"
 </dt> <dd>
 
-Le licenze CAL per utente per utente non sono disponibili.
+Le licenze CAL Per Utente di Servizi Desktop remoto non sono disponibili.
 
 </dd> <dt>
 
-"Non rilevamento"
+"Not Tracking"
 </dt> <dd>
 
-Non è stata rilevata la disponibilità delle licenze CAL per utente per utente.
+La disponibilità delle licenze CAL Per Utente di Servizi Desktop remoto non viene rilevata.
 
 </dd> </dl>
 
@@ -218,34 +218,34 @@ Non è stata rilevata la disponibilità delle licenze CAL per utente per utente.
 **TSCALType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo di licenze CAL per utente per utente. Si tratta di uno dei valori seguenti.
+Tipo di licenze CAL Servizi Desktop remoto per utente. Si tratta di uno dei valori seguenti.
 
 <dt>
 
 "Per dispositivo"
 </dt> <dd>
 
-Le licenze CAL per utente per utente vengono rilasciate per ogni dispositivo.
+Le licenze CAL Per Utente di Servizi Desktop remoto vengono rilasciate per ogni dispositivo.
 
 </dd> <dt>
 
 "Per utente"
 </dt> <dd>
 
-Le licenze CAL per utente per utente vengono rilasciate per utente.
+Le licenze CAL Per Utente di Servizi Desktop remoto vengono rilasciate per utente.
 
 </dd> <dt>
 
-Sconosciuto
+"Sconosciuto"
 </dt> <dd>
 
-Il tipo di licenze CAL per utente per utente è sconosciuto.
+Il tipo di licenze CAL Per Utente di Servizi Desktop remoto è sconosciuto.
 
 </dd> </dl>
 
@@ -260,7 +260,7 @@ Il tipo di licenze CAL per utente per utente è sconosciuto.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                            |
 | Spazio dei nomi<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 

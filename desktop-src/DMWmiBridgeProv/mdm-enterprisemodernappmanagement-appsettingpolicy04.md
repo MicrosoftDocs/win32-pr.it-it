@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_EnterpriseModernAppManagement_AppSettingPolicy04
-description: La \_ classe MDM EnterpriseModernAppManagement \_ AppSettingPolicy04 specifica tutti i valori delle impostazioni dell'app gestita.
+title: MDM_EnterpriseModernAppManagement_AppSettingPolicy04 classe
+description: La classe MDM \_ EnterpriseModernAppManagement \_ AppSettingPolicy04 specifica tutti i valori di impostazione dell'app gestita.
 ms.assetid: 65e2d2aa-31fd-4733-a1f7-8a572700a562
 keywords:
-- Classe MDM_EnterpriseModernAppManagement_AppSettingPolicy04
-- Classe MDM_EnterpriseModernAppManagement_AppSettingPolicy04, descritta
+- MDM_EnterpriseModernAppManagement_AppSettingPolicy04 classe
+- MDM_EnterpriseModernAppManagement_AppSettingPolicy04 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc9003ea7c9106f177958f7a15def3c60393346b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bba82be4653266c94465917857eb47b014399594525a6f0f18264e4f73651684
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077255"
 ---
-# <a name="mdm_enterprisemodernappmanagement_appsettingpolicy04-class"></a>\_Classe MDM EnterpriseModernAppManagement \_ AppSettingPolicy04
+# <a name="mdm_enterprisemodernappmanagement_appsettingpolicy04-class"></a>Classe \_ MDM EnterpriseModernAppManagement \_ AppSettingPolicy04
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La classe **MDM \_ EnterpriseModernAppManagement \_ AppSettingPolicy04** specifica tutti i valori delle impostazioni dell'app gestita.
+La **classe MDM \_ EnterpriseModernAppManagement \_ AppSettingPolicy04** specifica tutti i valori di impostazione dell'app gestita.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -47,20 +47,20 @@ class MDM_EnterpriseModernAppManagement_AppSettingPolicy04
 
 ## <a name="members"></a>Members
 
-La classe **MDM \_ EnterpriseModernAppManagement \_ AppSettingPolicy04** presenta questi tipi di membri:
+La **classe MDM \_ EnterpriseModernAppManagement \_ AppSettingPolicy04** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **MDM \_ EnterpriseModernAppManagement \_ AppSettingPolicy04** dispone di queste proprietà.
+La **classe MDM \_ EnterpriseModernAppManagement \_ AppSettingPolicy04** ha queste proprietà.
 
 <dl> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -76,22 +76,22 @@ Identifica il nome del nodo padre. Per questa classe, la stringa "AppSettingPoli
 [IsVariableLeaf](/windows/client-management/mdm/enterprisemodernappmanagement-csp)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Aggiunta in Windows 10, versione 1511. **SettingValue** e i dati rappresentano una coppia chiave-valore da configurare per l'app. Il nodo rappresenta il nome della chiave e i dati rappresentano il valore. È possibile trovare questo valore in LocalSettings nel contenitore Managed. app. Settings.
+Aggiunta in Windows 10 versione 1511. I **dati e SettingValue** rappresentano una coppia chiave-valore da configurare per l'app. Il nodo rappresenta il nome della chiave e i dati rappresentano il valore. È possibile trovare questo valore in LocalSettings nella Managed.App. Impostazioni contenitore.
 
 Questa impostazione funziona solo per le app che supportano la funzionalità ed è supportata solo nel contesto utente.
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -100,17 +100,17 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/*packageFamilyName*"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/*PackageFamilyName*"
 
 </dd> <dt>
 
 [**Valore**](/windows/client-management/mdm/enterprisemodernappmanagement-csp)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -121,10 +121,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -133,7 +133,7 @@ Tipo di accesso: lettura/scrittura
 
 <dl> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

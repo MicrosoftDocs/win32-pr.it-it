@@ -3,7 +3,7 @@ title: Tipo complesso restartType
 description: Definisce gli elementi figlio e le informazioni sulla sequenza per l'elemento RestartOnFailure.
 ms.assetid: 3a192955-8a33-42b9-a974-faa9a3789f58
 keywords:
-- Utilità di pianificazione di tipo complesso restartType
+- Tipo complesso restartType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7f83dcac376fcdd8d2059649350502111f5a732f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 996debc2c8e3d7d00ca7b42facde582f918d72736426ed326691461d800f8562
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104519126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119516480"
 ---
 # <a name="restarttype-complex-type"></a>Tipo complesso restartType
 
-Definisce gli elementi figlio e le informazioni sulla sequenza per l'elemento [RestartOnFailure](taskschedulerschema-restartonfailure-settingstype-element.md) .
+Definisce gli elementi figlio e le informazioni sulla sequenza per [l'elemento RestartOnFailure.](taskschedulerschema-restartonfailure-settingstype-element.md)
 
 ``` syntax
 <xs:complexType name="restartType">
@@ -63,7 +63,7 @@ Definisce gli elementi figlio e le informazioni sulla sequenza per l'elemento [R
 | Elemento                                                              | Tipo | Descrizione                                        |
 |----------------------------------------------------------------------|------|----------------------------------------------------|
 | [**Conteggio**](taskschedulerschema-count-restarttype-element.md)       |      | Numero di tentativi di riavvio dell'attività.<br/> |
-| [**Interval**](taskschedulerschema-interval-restarttype-element.md) |      | Per quanto tempo provare ad avviare l'attività.<br/>      |
+| [**Intervallo**](taskschedulerschema-interval-restarttype-element.md) |      | Durata del tentativo di avvio dell'attività.<br/>      |
 
 
 
@@ -73,8 +73,8 @@ Definisce gli elementi figlio e le informazioni sulla sequenza per l'elemento [R
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -82,7 +82,7 @@ Definisce gli elementi figlio e le informazioni sulla sequenza per l'elemento [R
 
 <dl> <dt>
 
-[Tipi complessi dello schema Utilità di pianificazione](task-scheduler-schema-complex-types.md)
+[Utilità di pianificazione complessi dello schema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

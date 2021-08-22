@@ -1,27 +1,27 @@
 ---
-description: Nell'esempio di codice seguente viene illustrato come creare estensioni della Shell per un gestore di protocollo personalizzato.
+description: Il codice di esempio seguente illustra come creare estensioni shell per un gestore di protocollo personalizzato.
 ms.assetid: 4b65ced8-8dc9-43f6-bfe1-3703aea3459f
-title: 'Esempio di codice: estensioni della Shell per i gestori di protocollo'
+title: 'Esempio di codice: Estensioni della shell per i gestori di protocollo'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e436f1d7ad746181be8cb3c43375abe3656c544b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d1f2a29fb75ee6838b207648e2b58d634e19eb977f6d0abedb01ba450968756e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033109"
 ---
-# <a name="code-sample-shell-extensions-for-protocol-handlers"></a>Esempio di codice: estensioni della Shell per i gestori di protocollo
+# <a name="code-sample-shell-extensions-for-protocol-handlers"></a>Esempio di codice: Estensioni della shell per i gestori di protocollo
 
-Nell'esempio di codice seguente viene illustrato come creare estensioni della Shell per un gestore di protocollo personalizzato.
+Il codice di esempio seguente illustra come creare estensioni shell per un gestore di protocollo personalizzato.
 
 ## <a name="sample-code"></a>Codice di esempio
 
 > [!Note]
 >
-> **QUESTO CODICE E LE INFORMAZIONI VENGONO FORNITE "COSÌ COME SONO" SENZA GARANZIA DI ALCUN TIPO, ESPRESSA O IMPLICITA, INCLUSE, A TITOLO ESEMPLIFICATIVO, LE GARANZIE IMPLICITE DI COMMERCIABILITÀ E/O IDONEITÀ PER UNO SCOPO SPECIFICO.**
+> **IL CODICE E LE INFORMAZIONI VENGONO FORNITI "COSÌ COME SONO" SENZA GARANZIA DI ALCUN TIPO, ESPRESSA O IMPLICITA, INCLUSE MA NON LIMITATE ALLE GARANZIE IMPLICITE DI ESERCENTITÀ E/O IDONEITÀ PER UNO SCOPO SPECIFICO.**
 >
-> Copyright (c) Microsoft Corporation. Tutti i diritti sono riservati.
+> Copyright (c)Microsoft Corporation. Tutti i diritti sono riservati.
 
  
 
@@ -499,8 +499,8 @@ STDMETHODIMP CSampleShellFolder::SetNameOf(
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
--   Per gli esempi di codice di ricerca, vedere [esempi di Windows Search SDK](https://www.microsoft.com/downloads/details.aspx?FamilyID=645300AE-5E7A-4CE7-95F0-49793F8F76E8).
--   Per esempi di codice della shell, vedere [esempi di Shell SDK](/previous-versions/windows/desktop/legacy/dd940376(v=vs.85)).
+-   Per esempi di codice di ricerca, [vedere esempi di Windows SDK di ricerca](https://www.microsoft.com/downloads/details.aspx?FamilyID=645300AE-5E7A-4CE7-95F0-49793F8F76E8).
+-   Per gli esempi di codice della [shell,](/previous-versions/windows/desktop/legacy/dd940376(v=vs.85))vedere Esempi di Shell SDK .
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -515,7 +515,7 @@ STDMETHODIMP CSampleShellFolder::SetNameOf(
 [Informazioni sui gestori di protocollo](-search-3x-wds-extidx-prot-implementing.md)
 </dt> <dt>
 
-[Notifica dell'indice delle modifiche](-search-3x-wds-notifyingofchanges.md)
+[Notifica all'indice delle modifiche](-search-3x-wds-notifyingofchanges.md)
 </dt> <dt>
 
 [Aggiunta di icone e menu di scelta rapida](-search-3x-wds-ph-ui-extensions.md)

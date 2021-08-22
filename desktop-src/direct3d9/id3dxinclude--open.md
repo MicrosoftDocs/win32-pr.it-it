@@ -1,7 +1,7 @@
 ---
-description: Metodo implementato dall'utente per l'apertura e la lettura del contenuto di un \# file di inclusione dello shader.
+description: Metodo implementato dall'utente per l'apertura e la lettura del contenuto di un file di inclusione \# shader.
 ms.assetid: ad0105f7-042d-4e96-ad4a-1ece08e519af
-title: 'Metodo ID3DXInclude:: Open (D3DX9Shader. h)'
+title: Metodo ID3DXInclude::Open (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 313b3f4845f9a46f758a40b6b315cc5b5eeecb29
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e50b4774f6ed62b1e8a6e6cb85b5732efd878302563958e25e6b9017f9acc58d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987391"
 ---
-# <a name="id3dxincludeopen-method"></a>Metodo ID3DXInclude:: Open
+# <a name="id3dxincludeopen-method"></a>Metodo ID3DXInclude::Open
 
-Metodo implementato dall'utente per l'apertura e la lettura del contenuto di un \# file di inclusione dello shader.
+Metodo implementato dall'utente per l'apertura e la lettura del contenuto di un file di inclusione \# shader.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,16 +44,16 @@ HRESULT Open(
 
 <dl> <dt>
 
-*IncludeType* \[ in\]
+*IncludeType* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **D3DXINCLUDE \_**](./d3dxinclude-type.md)**
+Tipo: **[ **D3DXINCLUDE \_ TYPE**](./d3dxinclude-type.md)**
 
-Percorso del file di \# inclusione. Vedere [**D3DXINCLUDE \_ Type**](./d3dxinclude-type.md).
+Percorso del \# file di inclusione. Vedere [**D3DXINCLUDE \_ TYPE**](./d3dxinclude-type.md).
 
 </dd> <dt>
 
-*pFileName* \[ in\]
+*pFileName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -62,28 +62,28 @@ Nome del \# file di inclusione.
 
 </dd> <dt>
 
-*pParentData* \[ in\]
+*pParentData* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
 
-Puntatore al contenitore che include il \# file di inclusione. Il compilatore potrebbe passare NULL in *pParentData*. Per ulteriori informazioni, vedere la sezione "ricerca di file di inclusione" in [compilare un effetto (Direct3D 11)](../direct3d11/d3d11-graphics-programming-guide-effects-compile.md).
+Puntatore al contenitore che include il \# file di inclusione. Il compilatore potrebbe passare NULL in *pParentData.* Per altre informazioni, vedere la sezione "Ricerca di file di inclusione" in [Compilare un effetto (Direct3D 11).](../direct3d11/d3d11-graphics-programming-guide-effects-compile.md)
 
 </dd> <dt>
 
-*ppData* \[ out\]
+*ppData* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)\***
 
-Puntatore al buffer restituito che contiene le direttive include. Questo puntatore rimane valido fino a quando non viene chiamato [**ID3DXInclude:: Close**](id3dxinclude--close.md) .
+Puntatore al buffer restituito che contiene le direttive include. Questo puntatore rimane valido fino a quando non viene chiamato [**ID3DXInclude::Close.**](id3dxinclude--close.md)
 
 </dd> <dt>
 
-*pBytes* \[ out\]
+*pBytes* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
 Numero di byte restituiti in ppData.
 
@@ -93,11 +93,11 @@ Numero di byte restituiti in ppData.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback ha esito negativo durante la lettura del \# file di inclusione, l'API che ha causato la chiamata al callback avrà esito negativo. I possibili valori sono i seguenti:
+Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback non riesce durante la lettura del file di inclusione, l'API che ha causato la chiamata \# del callback avrà esito negativo. I possibili valori sono i seguenti:
 
--   Lo shader HLSL non riuscirà a eseguire una delle \* \* \* funzioni D3DXCompileShader.
--   L'assembly shader non riuscirà a eseguire una delle \* \* \* funzioni D3DXAssembleShader.
--   L'effetto avrà esito negativo per una delle \* \* \* funzioni D3DXCreateEffect o D3DXCreateEffectCompiler \* \* \* .
+-   Lo shader HLSL avrà esito negativo in una delle funzioni D3DXCompileShader. \* \* \*
+-   L'assembly shader avrà esito negativo in una delle funzioni D3DXAssembleShader. \* \* \*
+-   L'effetto avrà esito negativo in una delle funzioni D3DXCreateEffect o \* \* \* D3DXCreateEffectCompiler. \* \* \*
 
 ## <a name="requirements"></a>Requisiti
 
@@ -105,8 +105,8 @@ Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback ha es
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
@@ -117,7 +117,7 @@ Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback ha es
 [ID3DXInclude](id3dxinclude.md)
 </dt> <dt>
 
-[**ID3DXInclude:: Close**](id3dxinclude--close.md)
+[**ID3DXInclude::Close**](id3dxinclude--close.md)
 </dt> </dl>
 
  

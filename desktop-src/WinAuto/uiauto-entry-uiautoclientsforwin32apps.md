@@ -1,46 +1,46 @@
 ---
-title: Client di automazione interfaccia utente
-description: In questa sezione vengono descritte le interfacce e le funzioni per i client di automazione interfaccia utente basati su COM non gestiti.
+title: Automazione interfaccia utente client
+description: In questa sezione vengono descritte le interfacce e le funzioni per i client Automazione interfaccia utente com non gestiti.
 ms.assetid: f73acd55-2276-493a-93f7-35367ad8b3d9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 21c0af5dea08921f7e205bb5a8507ddc515b12c2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b94f8e5eabf890674fcaeb5329db1bafb8bc0d03dcec44b8e0f373da00a134ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133404"
 ---
-# <a name="ui-automation-clients"></a>Client di automazione interfaccia utente
+# <a name="ui-automation-clients"></a>Automazione interfaccia utente client
 
-In questa sezione vengono descritte le interfacce e le funzioni per i client di automazione interfaccia utente basati su COM non gestiti.
+In questa sezione vengono descritte le interfacce e le funzioni per i client Automazione interfaccia utente com non gestiti.
 
 > [!Note]  
-> Le interfacce client di automazione interfaccia utente sostituiscono completamente la funzionalità fornita in precedenza dalle funzioni del pattern di controllo e dalle funzioni del nodo di automazione interfaccia utente, che sono obsolete e non devono essere usate.
+> Le Automazione interfaccia utente client sostituiscono completamente le funzionalità fornite in precedenza dalle funzioni del pattern di controllo e Automazione interfaccia utente nodo, che sono obsolete e non devono essere usate.
 
- 
+ 
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [Interfacce degli elementi di automazione interfaccia utente per i client](uiauto-entry-uiautoclientinterfaces.md)
--   [Interfacce di condizione delle proprietà per i client](uiauto-client-propconditioninterfaces.md)
+-   [Automazione interfaccia utente interfacce degli elementi per i client](uiauto-entry-uiautoclientinterfaces.md)
+-   [Interfacce delle condizioni di proprietà per i client](uiauto-client-propconditioninterfaces.md)
 -   [Interfacce del pattern di controllo per i client](uiauto-client-controlpatterninterfaces.md)
 -   [Interfacce di gestione degli eventi per i client](uiauto-client-eventhandlinginterfaces.md)
--   [Interfacce Factory proxy per i client](uiauto-client-proxyfactoryinterfaces.md)
+-   [Interfacce della factory proxy per i client](uiauto-client-proxyfactoryinterfaces.md)
 -   [Funzioni per i client](uiauto-entry-functionsforclients.md)
 -   [Funzioni del pattern di controllo deprecate](uiauto-entry-cpfunctions.md)
--   [Funzioni del nodo deprecate](uiauto-entry-uianodefunctions.md)
+-   [Funzioni di nodo deprecate](uiauto-entry-uianodefunctions.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Guida per programmatori client di automazione interfaccia utente](uiauto-clientportal.md)
+[Automazione interfaccia utente programmatori client](uiauto-clientportal.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

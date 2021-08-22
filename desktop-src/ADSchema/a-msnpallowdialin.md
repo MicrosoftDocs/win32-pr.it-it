@@ -1,6 +1,6 @@
 ---
-title: attributo msNPAllowDialin
-description: Indica se l'account dispone dell'autorizzazione per la connessione al server RAS.
+title: Attributo msNPAllowDialin
+description: Indica se l'account dispone dell'autorizzazione per accedere al server RAS.
 ms.assetid: 8e0d98b4-93b1-4a76-a8b7-d6017028b48a
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e56f9fe3817053e3e1e49611fb76934acbbcba9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8e06078c64ebe8717d6f8de3be4268db2686fb80779e64425ac39c4471d5859b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081705"
 ---
-# <a name="msnpallowdialin-attribute"></a>attributo msNPAllowDialin
+# <a name="msnpallowdialin-attribute"></a>Attributo msNPAllowDialin
 
-Indica se l'account dispone dell'autorizzazione per la connessione al server RAS. Non modificare direttamente questo valore. Utilizzare la [funzione di amministrazione RAS](/windows/desktop/RRAS/ras-administration-functions) appropriata per modificare questo valore.
+Indica se l'account dispone dell'autorizzazione per accedere al server RAS. Non modificare direttamente questo valore. Usare la funzione di [amministrazione RAS appropriata](/windows/desktop/RRAS/ras-administration-functions) per modificare questo valore.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | msNPAllowDialin                      |
-| LDAP-Display-Name | msNPAllowDialin                      |
+| CN                | Msnpallowdialin                      |
+| Ldap-Display-Name | Msnpallowdialin                      |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1119              |
-| System-ID-GUID    | db0c9085-c1f2-11d1-bbc5-0080c76670c0 |
+| System-Id-Guid    | db0c9085-c1f2-11d1-nette5-0080c76670c0 |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -57,15 +57,15 @@ Indica se l'account dispone dell'autorizzazione per la connessione al server RAS
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| A valore singolo       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Indica se l'account dispone dell'autorizzazione per la connessione al server RAS
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| A valore singolo       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Indica se l'account dispone dell'autorizzazione per la connessione al server RAS
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| A valore singolo       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Indica se l'account dispone dell'autorizzazione per la connessione al server RAS
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Indica se l'account dispone dell'autorizzazione per la connessione al server RAS
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -162,15 +162,15 @@ Indica se l'account dispone dell'autorizzazione per la connessione al server RAS
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

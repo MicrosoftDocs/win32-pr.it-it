@@ -1,23 +1,23 @@
 ---
-description: In questo argomento viene descritto come incorporare i certificati che costituiscono una catena di certificati in un documento XPS.
+description: Questo argomento descrive come incorporare i certificati che costituiscono una catena di certificati in un documento XPS.
 ms.assetid: c6aae8ff-2e1e-43de-9105-171e4187d193
 title: Incorporare catene di certificati in un documento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ee6476e0c187cf1a62915f0a3ab2b7949586baa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e23e47b4cd0d140d7200fb8aa01642ea5fbb731e49dcc289f596a054b0accbf3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119447581"
 ---
 # <a name="embed-certificate-chains-in-a-document"></a>Incorporare catene di certificati in un documento
 
-In questo argomento viene descritto come incorporare i certificati che costituiscono una catena di certificati in un documento XPS. Una catena di certificati è costituita da tutti i certificati, ad eccezione del certificato radice, necessari per certificare il soggetto identificato dal certificato finale.
+Questo argomento descrive come incorporare i certificati che costituiscono una catena di certificati in un documento XPS. Una catena di certificati è costituita da tutti i certificati, ad eccezione del certificato radice, necessari per certificare il soggetto identificato dal certificato finale.
 
-Per incorporare una catena di certificati in un documento XPS, creare innanzitutto la catena di certificati come illustrato nell'esempio di codice seguente.
+Per incorporare una catena di certificati in un documento XPS, creare prima di tutto la catena di certificati, come illustrato nell'esempio di codice seguente.
 
-Il metodo **CreateCertificateChain** nell'esempio di codice accetta *certificateStore* come parametro, ovvero un valore **HCERTSTORE** . Se questo valore è **null**, i certificati verranno recuperati dal server di certificazione del computer client. Se il valore è l'handle per un archivio certificati, i certificati verranno recuperati da tale archivio a cui fa riferimento *certificateStore* e dal server di certificati del computer client.
+Il **metodo CreateCertificateChain** nell'esempio di codice accetta *certificateStore* come parametro, ovvero un **valore HCERTSTORE.** Se questo valore è **NULL,** i certificati verranno recuperati dal server certificati del computer client. Se il valore è l'handle per un archivio certificati, i certificati verranno recuperati dall'archivio a cui fa riferimento *certificateStore,* nonché dal server certificati del computer client.
 
 
 ```C++
@@ -61,7 +61,7 @@ CreateCertificateChain (
 
 
 
-Nell'esempio di codice riportato di seguito viene creata una catena di certificati da certificati e quindi tali certificati vengono aggiunti a un documento XPS. Si noti che [**CertGetCertificateChain**](/windows/desktop/api/wincrypt/nf-wincrypt-certgetcertificatechain) crea la catena di certificati in cui il certificato di firma è il primo e il certificato radice è l'ultimo. Il certificato di firma e il certificato radice non sono stati aggiunti in questo esempio. I certificati di firma verranno aggiunti con una chiamata al metodo [**IXpsSignatureManager:: Sign**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturemanager-sign) , che deve essere l'ultimo metodo di firma chiamato sul documento. Il certificato radice non viene aggiunto quando il documento è firmato, perché deve essere fornito dal server di certificati del computer client quando la firma viene convalidata.
+L'esempio di codice seguente crea una catena di certificati dai certificati e quindi li aggiunge a un documento XPS. Si noti [**che CertGetCertificateChain**](/windows/desktop/api/wincrypt/nf-wincrypt-certgetcertificatechain) crea la catena di certificati in cui il certificato di firma è primo e il certificato radice è l'ultimo. Il certificato di firma e il certificato radice non vengono aggiunti in questo esempio. I certificati di firma verranno aggiunti con una chiamata al metodo [**IXpsSignatureManager::Sign,**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturemanager-sign) che deve essere l'ultimo metodo di firma chiamato sul documento. Il certificato radice non viene aggiunto quando il documento viene firmato, perché deve essere fornito dal server certificati del computer client quando la firma viene convalidata.
 
 
 ```C++
@@ -174,13 +174,13 @@ EmbedCertificateChainInXpsPackage (
 **Usato in questo esempio**
 </dt> <dt>
 
-[**contesto del certificato \_**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context)
+[**CONTESTO \_ CERT**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context)
 </dt> <dt>
 
 [**CertGetCertificateChain**](/windows/desktop/api/wincrypt/nf-wincrypt-certgetcertificatechain)
 </dt> <dt>
 
-[**\_informazioni Oid \_ crypt**](/windows/desktop/api/wincrypt/ns-wincrypt-crypt_oid_info)
+[**INFORMAZIONI \_ SULL'OID CRYPT \_**](/windows/desktop/api/wincrypt/ns-wincrypt-crypt_oid_info)
 </dt> <dt>
 
 [**IOpcCertificateSet**](/previous-versions/windows/desktop/api/msopc/nn-msopc-iopccertificateset)
@@ -189,7 +189,7 @@ EmbedCertificateChainInXpsPackage (
 [**IXpsSigningOptions**](/windows/desktop/api/xpsdigitalsignature/nn-xpsdigitalsignature-ixpssigningoptions)
 </dt> <dt>
 
-**Per ulteriori informazioni**
+**Per altre informazioni**
 </dt> <dt>
 
 [API di crittografia](/windows/desktop/SecCrypto/cryptography-portal)
@@ -207,10 +207,10 @@ EmbedCertificateChainInXpsPackage (
 [Verifica dell'attendibilità del certificato](/windows/desktop/SecCrypto/certificate-trust-verification)
 </dt> <dt>
 
-[Errori dell'API firma digitale XPS](xps-digital-signatures-errors.md)
+[Errori dell'API di firma digitale XPS](xps-digital-signatures-errors.md)
 </dt> <dt>
 
-[Errori del documento XPS](xps-document-errors.md)
+[Errori dei documenti XPS](xps-document-errors.md)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

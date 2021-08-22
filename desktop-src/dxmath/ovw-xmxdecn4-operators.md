@@ -4,16 +4,16 @@ ms.assetid: 23e966a6-eca1-450d-98c4-3b4e5c6706ab
 title: Operatori XMXDECN4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 332d4f1f581fb2fc5670819eb87681bcc94b1f91
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e64a70b318fd72aeb8f7ba75d1f9b1ca113023f3d63e53d077012a71624dafd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118221"
 ---
 # <a name="xmxdecn4-operators"></a>Operatori XMXDECN4
 
-La struttura [**XMXDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdecn4) espone gli operatori seguenti.
+La [**struttura XMXDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdecn4) espone gli operatori seguenti.
 
 > [!Note]  
 > Gli operatori elencati di seguito sono disponibili solo in C++.
@@ -26,8 +26,8 @@ La struttura [**XMXDECN4**](/windows/win32/api/directxpackedvector/ns-directxpac
 
 | Metodi                                                             | Descrizione                                                                                                            |
 |---------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| [**operatore UInt32 \_ t**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-operatoruint32_t)<br/> | Restituisce un'istanza di `uint32_t` contenente i componenti dell' `XMXDECN4` istanza in un formato compresso. <br/> |
-| [**operatore =**](xmxdecn4-operator-eq.md)<br/>               | Assegna i dati del componente vettore all'istanza corrente di `XMXDECN4` . <br/>                                       |
+| [**operator uint32 \_ t**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-operatoruint32_t)<br/> | Restituisce un'istanza `uint32_t` di contenente i componenti `XMXDECN4` dell'istanza in un formato di tipo packed. <br/> |
+| [**operator =**](xmxdecn4-operator-eq.md)<br/>               | Assegna i dati dei componenti vettoriali all'istanza corrente di `XMXDECN4` . <br/>                                       |
 
 
 

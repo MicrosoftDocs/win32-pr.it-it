@@ -1,64 +1,64 @@
 ---
 title: Strumenti di test
-description: Vengono descritti gli strumenti per testare l'implementazione dell'accessibilità dell'applicazione per garantire che l'interfaccia utente sia completamente accessibile alle applicazioni client e agli utenti che accedono all'applicazione tramite la tastiera.
+description: Vengono descritti gli strumenti per testare l'implementazione dell'accessibilità dell'applicazione per garantire che l'interfaccia utente sia completamente accessibile alle applicazioni client e agli utenti che accedono all'applicazione tramite tastiera.
 ms.assetid: abacbec4-6ccd-4853-afcd-a92a6656f393
 keywords:
-- strumenti di test di accessibilità
+- strumenti di test dell'accessibilità
 - strumenti di test, accessibilità
-- test di accessibilità
+- test dell'accessibilità
 - UIA
 - MSAA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce653adb2602b8fdd46bebb72d3a7607185ffd84
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2fcd5d8b0777eb80cf5b2935cc8652d328dfc219cb56bc654c1eeae0761bbd89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104118367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133594"
 ---
 # <a name="testing-tools"></a>Strumenti di test
 
-L'accesso a livello di codice e l'accesso tramite tastiera sono requisiti essenziali per supportare l'accessibilità nell'applicazione. Senza un accesso adeguato, molti utenti di Assistive Technology (AT), ad esempio l'utilità per la lettura dello schermo e gli utenti della tastiera su schermo, non sarebbero in grado di usare l'applicazione. Assicurarsi di testare accuratamente l'implementazione dell'accessibilità dell'applicazione per confermare che fornisca informazioni adeguate sugli elementi dell'interfaccia utente e che tutti gli scenari dell'applicazione possano essere eseguiti solo con la tastiera.
+L'accesso a livello di codice e l'accesso tramite tastiera sono requisiti fondamentali per supportare l'accessibilità nell'applicazione. Senza un accesso adeguato, molti utenti di assistive technology (AT), ad esempio utenti con utilità per la lettura dello schermo e tastiera su schermo, non sarebbero in grado di usare l'applicazione. Assicurarsi di testare accuratamente l'implementazione dell'accessibilità dell'applicazione per verificare che fornisce informazioni adeguate sugli elementi dell'interfaccia utente e che tutti gli scenari dell'applicazione possano essere eserciti solo con la tastiera.
 
-Oltre a verificare l'accesso a livello di codice, alcuni degli strumenti consentono di valutare l'implementazione dell'accesso alla tastiera dell'applicazione. Tuttavia, gli strumenti da soli non sono sufficienti. È importante verificare manualmente che tutti gli scenari possano essere eseguiti solo con la tastiera.
+Oltre a verificare l'accesso a livello di codice, alcuni degli strumenti consentono di valutare l'implementazione dell'accesso tramite tastiera dell'applicazione. Tuttavia, gli strumenti da soli non sono sufficienti. È importante verificare manualmente che tutti gli scenari possano essere evasi solo con la tastiera.
 
-Per i requisiti a livello di codice e di tastiera, non è disponibile uno strumento che consente di verificare l'implementazione completa. Provare a usare un'ampia gamma di strumenti per verificare l'implementazione e, quando possibile, trovare gli utenti delle tecnologie per l'accesso facilitato, ad esempio gli utilità per la lettura dello schermo, per usare l'interfaccia utente.
+Per i requisiti a livello di codice e della tastiera, non è disponibile alcuno strumento in grado di verificare l'implementazione completa. Provare a usare un'ampia gamma di strumenti per verificare l'implementazione e, quando possibile, trovare gli utenti delle tecnologie di assistive, ad esempio le utilità per la lettura dello schermo, per usare l'interfaccia utente.
 
-In questa sezione vengono descritti gli strumenti disponibili per testare le implementazioni di Microsoft UI Automation (UIA) e Microsoft Active Accessibility (MSAA).
+Questa sezione descrive gli strumenti disponibili per testare le implementazioni di Microsoft Automazione interfaccia utente (UIA) e Microsoft Active Accessibility (MSAA).
 
 ## <a name="tools"></a>Strumenti
 
-[Informazioni dettagliate sull'accessibilità](https://accessibilityinsights.io/) : consente agli sviluppatori di individuare e correggere i problemi di accessibilità nei siti Web e nelle applicazioni Windows.
+[Accessibilità Insights:](https://accessibilityinsights.io/) consente agli sviluppatori di trovare e risolvere i problemi di accessibilità sia nei siti Web che nelle Windows applicazioni.
 
-- [Accessibility Insights per il Web](https://accessibilityinsights.io/docs/web/overview) è un'estensione per Chrome e [Microsoft Edge Insider](https://www.microsoftedgeinsider.com) che consente agli sviluppatori di individuare e correggere i problemi di accessibilità nei siti e nelle app Web. Supporta due scenari principali:
-  - **Fastpass** : processo semplificato in due passaggi che consente agli sviluppatori di identificare i problemi di accessibilità comuni e ad alto effetto in meno di cinque minuti.  
-  - **Valutazione** : consente a chiunque di verificare che un sito Web sia conforme al 100% con gli standard e le linee guida per l'accessibilità. [Accessibility Insights](https://accessibilityinsights.io/) consente anche di esaminare gli elementi, le proprietà, i pattern di controllo e gli eventi di automazione interfaccia utente (analogamente agli strumenti di [ispezione](/windows/desktop/winauto/inspect-objects) e [Accevent](/windows/desktop/winauto/accessible-event-watcher) legacy descritti nella sezione seguente).
+- [Accessibility Insights for Web](https://accessibilityinsights.io/docs/web/overview) è un'estensione per Chrome [e Microsoft Edge Insider](https://www.microsoftedgeinsider.com) che consente agli sviluppatori di trovare e risolvere i problemi di accessibilità nelle app Web e nei siti. Supporta due scenari principali:
+  - **FastPass:** un processo leggero in due passaggi che consente agli sviluppatori di identificare i problemi comuni di accessibilità ad alto impatto in meno di cinque minuti.  
+  - **Valutazione:** consente a chiunque di verificare che un sito Web sia conforme al 100% con gli standard e le linee guida per l'accessibilità. [L Insights](https://accessibilityinsights.io/) di accessibilità consente anche di esaminare Automazione interfaccia utente elementi, proprietà, pattern di controllo ed eventi ,analogamente agli strumenti legacy [Inspect](/windows/desktop/winauto/inspect-objects) e [AccEvent](/windows/desktop/winauto/accessible-event-watcher) descritti nella sezione seguente.
 
-- [Accessibility Insights per Windows](https://accessibilityinsights.io/docs/windows/overview) consente agli sviluppatori di individuare e risolvere i problemi di accessibilità nelle app di Windows. Lo strumento supporta tre scenari principali:
-  - Il **controllo in tempo reale** consente agli sviluppatori di verificare che un elemento in un'app disponga delle proprietà di automazione interfaccia utente appropriate semplicemente passando il mouse sull'elemento o impostando lo stato attivo della tastiera.
-  - **Fastpass** : processo semplificato in due passaggi che consente agli sviluppatori di identificare i problemi di accessibilità comuni e ad alto effetto in meno di cinque minuti.
-  - La **risoluzione dei problemi** consente di diagnosticare e risolvere specifici problemi di accessibilità.
+- [La Insights per Windows](https://accessibilityinsights.io/docs/windows/overview) consente agli sviluppatori di individuare e risolvere i problemi di accessibilità nelle Windows app. Lo strumento supporta tre scenari principali:
+  - **Live Inspect** consente agli sviluppatori di verificare che un elemento in un'app abbia le proprietà Automazione interfaccia utente semplicemente passando il puntatore sull'elemento o impostando lo stato attivo della tastiera su di esso.
+  - **FastPass:** un processo leggero in due passaggi che consente agli sviluppatori di identificare i problemi comuni di accessibilità ad alto impatto in meno di cinque minuti.
+  - **La risoluzione** dei problemi consente di diagnosticare e correggere problemi di accessibilità specifici.
 
 ### <a name="legacy-testing-tools"></a>Strumenti di test legacy
 
-Gli strumenti seguenti sono ancora disponibili nella Windows SDK e sono documentati qui per il supporto continuo, ma è consigliabile eseguire la transizione a [Insights di accessibilità](https://accessibilityinsights.io/).
+Gli strumenti seguenti sono ancora disponibili in Windows SDK e sono documentati qui per il supporto continuo, ma è consigliabile passare a Accessibilità [Insights](https://accessibilityinsights.io/).
 
-- [**Watcher eventi accessibili**](accessible-event-watcher.md): lo strumento Monitoraggio eventi accessibili (accEvent) esamina i dati di accessibilità per convalidare gli elementi dell'interfaccia utente dell'applicazione, per assicurarsi che gli elementi dell'interfaccia utente generino eventi di automazione interfaccia utente e Active Accessibility Microsoft appropriati quando si verificano modifiche all'interfaccia AccEvent viene in genere usato per eseguire il debug dei problemi e per convalidare il corretto funzionamento dei controlli personalizzati ed estesi.
+- [**Accessible Event Watcher**](accessible-event-watcher.md): lo strumento Accessible Event Watcher (AccEvent) esamina i dati di accessibilità per convalidare gli elementi dell'interfaccia utente dell'applicazione, per garantire che gli elementi dell'interfaccia utente generano eventi Microsoft Active Accessibility e Automazione interfaccia utente adeguati quando si verificano modifiche all'interfaccia utente. AccEvent viene in genere usato per eseguire il debug dei problemi e per convalidare il corretto funzionamento dei controlli personalizzati ed estesi.
 
-- [**Controllare**](inspect-objects.md): consente di visualizzare i dati di accessibilità in qualsiasi elemento dell'interfaccia utente. È particolarmente utile quando si estende un controllo comune o si crea un controllo personalizzato per assicurarsi che le proprietà e i pattern di controllo siano impostati correttamente.
+- [**Inspect**](inspect-objects.md): Inspect consente di visualizzare i dati di accessibilità in qualsiasi elemento dell'interfaccia utente. È particolarmente utile, quando si estende un controllo comune o si crea un controllo personalizzato, per garantire che le proprietà e i pattern di controllo siano impostati correttamente.
 
-- [**AccScope**](accscope.md): lo strumento AccScope consente agli sviluppatori di valutare visivamente l'accessibilità dell'applicazione durante le prime fasi di progettazione e sviluppo. AccScope consente di visualizzare il modo in cui un'app Reader usa le informazioni di automazione interfaccia utente fornite da un'app. Consente di visualizzare le aree in cui l'aggiunta di informazioni o il supporto per l'applicazione può migliorare l'accessibilità.
+- [**AccScope:**](accscope.md)lo strumento AccScope consente agli sviluppatori di valutare visivamente l'accessibilità dell'applicazione durante le fasi iniziali di progettazione e sviluppo. AccScope consente di visualizzare il modo in cui un'utilità per la lettura dello schermo Automazione interfaccia utente informazioni fornite da un'app. Può mostrare le aree in cui l'aggiunta di informazioni o supporto all'applicazione può migliorarne l'accessibilità.
 
-- [**Controllo di accessibilità**](ui-accessibility-checker.md)dell'interfaccia utente: lo strumento ACCCHECKER (UI Accessibility Checker) verifica che siano soddisfatti i requisiti di accessibilità chiave dell'interfaccia utente. AccChecker include controlli di verifica per l'automazione dell'interfaccia utente, Microsoft Active Accessibility e le applicazioni Rich Internet (ARIA) accessibili. Può fornire un controllo statico per la ricerca di errori, ad esempio nomi mancanti, problemi di struttura ad albero e altro ancora. Consente di verificare l'accesso a livello di codice e offre funzionalità avanzate per supportare l'automazione del test di accessibilità.
+- [**Verifica accessibilità interfaccia utente:**](ui-accessibility-checker.md)lo strumento Controllo accessibilità interfaccia utente verifica che siano soddisfatti i requisiti di accessibilità principali dell'interfaccia utente. AccChecker include i controlli di verifica per Automazione interfaccia utente, Microsoft Active Accessibility e LEA (Accessible Rich Internet Applications). Può fornire un controllo statico alla ricerca di errori, ad esempio nomi mancanti, problemi di albero e altro ancora. Consente di verificare l'accesso a livello di codice e offre funzionalità avanzate per supportare l'automazione dei test di accessibilità.
 
-- [**Verifica automazione interfaccia**](ui-automation-verify.md)utente: verifica dell'automazione interfaccia utente (UIA Verify) è un Framework di test per test manuali e automatizzati dell'implementazione di un'applicazione o di un controllo dell'automazione dell'interfaccia utente. Consente inoltre di registrare i risultati del test. È possibile integrare l'applicazione nel codice di test ed eseguire verifiche regolari e automatizzate dei test o degli scenari di automazione dell'interfaccia utente. Questo strumento è utile per verificare che le modifiche apportate alle applicazioni con funzionalità stabilite non includano nuovi problemi o regressioni in aree oltre le nuove funzionalità.
+- [**Automazione interfaccia utente Verify**](ui-automation-verify.md): Automazione interfaccia utente Verify (UIA Verify) è un framework di test per test manuali e automatizzati dell'implementazione di un controllo o di un'applicazione di Automazione interfaccia utente. Può anche registrare i risultati del test. È possibile integrare l'applicazione nel codice di test ed eseguire normali test automatizzati o controlli spot Automazione interfaccia utente scenari. Questo strumento è utile per verificare che le modifiche alle applicazioni con funzionalità stabilite non presentino nuovi problemi o regressioni nelle aree oltre le nuove funzionalità.
 
 ### <a name="obsolete-tools"></a>Strumenti obsoleti
 
-Gli strumenti di esplorazione **dell'interfaccia utente** e di **Esplora accessibili** sono obsoleti e non sono più disponibili. In alternativa, utilizzare [**ispezionare**](inspect-objects.md) o [**AccScope**](accscope.md) .
+Gli **strumenti Accessible Explorer** e UI **Spy** sono obsoleti e non sono più disponibili. In [**alternativa,**](inspect-objects.md) usare Inspect [**o AccScope.**](accscope.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Hub per sviluppatori di accessibilità](https://developer.microsoft.com/windows/accessible-apps)
-- [Accessibilità Microsoft](https://www.microsoft.com/accessibility/)
+- [Hub per sviluppatori per l'accessibilità](https://developer.microsoft.com/windows/accessible-apps)
+- [Accessibilità Di Microsoft](https://www.microsoft.com/accessibility/)
