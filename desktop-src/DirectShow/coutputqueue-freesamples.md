@@ -1,7 +1,7 @@
 ---
 description: Il metodo FreeSamples libera tutti gli esempi in sospeso.
 ms.assetid: 61b7fe6e-41cc-4d5e-b083-bbc400d04e39
-title: Metodo COutputQueue. FreeSamples (Outputq. h)
+title: Metodo COutputQueue.FreeSamples (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 70d0680d2a1a3ac020be84f244e1cc02bb6efad0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2cc87047d6dc48494fc225b5a0b4c4ad7bcb69f0f7341580f8c48c1440470bae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954160"
 ---
-# <a name="coutputqueuefreesamples-method"></a>COutputQueue. FreeSamples, metodo
+# <a name="coutputqueuefreesamples-method"></a>Metodo COutputQueue.FreeSamples
 
 Il `FreeSamples` metodo libera tutti gli esempi in sospeso.
 
@@ -54,8 +54,8 @@ Questo metodo rimuove tutti gli esempi in sospeso dalla coda e dalla matrice di 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Outputq. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Outputq.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-External-Store
-description: Stringa che identifica la posizione di un archivio esterno, ad esempio un database.
+title: Attributo ms-DS-External-Store
+description: Stringa che identifica il percorso di un archivio esterno, ad esempio un database.
 ms.assetid: 93c8ac85-521f-464b-a32f-6ae4c941899e
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-DS-External-Store
-- attributo msDS-ExternalStore-schema AD
+- Schema AD dell'attributo msDS-ExternalStore
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d127c2a9f4aa91c3866803a749d225b5403e68fb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 62689f358a5880c6d176782d4caf341a5c916d35e9ab97952789604c1a0a7399
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960790"
 ---
-# <a name="ms-ds-external-store-attribute"></a>attributo ms-DS-External-Store
+# <a name="ms-ds-external-store-attribute"></a>Attributo ms-DS-External-Store
 
-Stringa che identifica la posizione di un archivio esterno, ad esempio un database.
+Stringa che identifica il percorso di un archivio esterno, ad esempio un database.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | ms-DS-External-Store                        |
-| LDAP-Display-Name | msDS-ExternalStore                          |
+| Ldap-Display-Name | msDS-ExternalStore                          |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1834                     |
-| System-ID-GUID    | 604877cd-9cdb-47c7-b03d-3daadb044910        |
+| System-Id-Guid    | 604877cd-9cdb-47c7-b03d-3daadb044910        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -57,15 +57,15 @@ Stringa che identifica la posizione di un archivio esterno, ad esempio un databa
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -78,15 +78,15 @@ Stringa che identifica la posizione di un archivio esterno, ad esempio un databa
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -99,15 +99,15 @@ Stringa che identifica la posizione di un archivio esterno, ad esempio un databa
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -120,15 +120,15 @@ Stringa che identifica la posizione di un archivio esterno, ad esempio un databa
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| A valore singolo       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -141,15 +141,15 @@ Stringa che identifica la posizione di un archivio esterno, ad esempio un databa
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| A valore singolo       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

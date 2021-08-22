@@ -1,7 +1,7 @@
 ---
-description: Descrive l'impostazione dei dati per un controller di visualizzazione sintetica virtuale.
+description: Descrive i dati di impostazione per un controller di visualizzazione sintetico virtuale.
 ms.assetid: cea79b24-4175-49db-a8b4-a9efb1fd0b96
-title: Classe Msvm_SyntheticDisplayControllerSettingData
+title: Msvm_SyntheticDisplayControllerSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 52935800eda641eb9015247e9320f33f22b40251
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3adb39294af6dab153338aff17d16d8e44e3f4977617e9ee34e1686534bc35c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118949840"
 ---
-# <a name="msvm_syntheticdisplaycontrollersettingdata-class"></a>\_Classe MSVM SyntheticDisplayControllerSettingData
+# <a name="msvm_syntheticdisplaycontrollersettingdata-class"></a>Classe Msvm \_ SyntheticDisplayControllerSettingData
 
-Descrive l'impostazione dei dati per un controller di visualizzazione sintetica virtuale.
+Descrive i dati di impostazione per un controller di visualizzazione sintetico virtuale.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -43,23 +43,23 @@ class Msvm_SyntheticDisplayControllerSettingData : CIM_ResourceAllocationSetting
 
 ## <a name="members"></a>Members
 
-La **classe \_ SyntheticDisplayControllerSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ SyntheticDisplayControllerSettingData** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ SyntheticDisplayControllerSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ SyntheticDisplayControllerSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **HorizontalResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Risoluzione orizzontale.
@@ -69,7 +69,7 @@ Risoluzione orizzontale.
 **ResolutionType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -109,7 +109,7 @@ Tipo di risoluzione.
 
 <span id="Default"></span><span id="default"></span><span id="DEFAULT"></span>
 
-<span id="Default"></span><span id="default"></span><span id="DEFAULT"></span>**Impostazione predefinita** (4)
+<span id="Default"></span><span id="default"></span><span id="DEFAULT"></span>**Impostazione** predefinita (4)
 
 
 </dt> <dd>
@@ -126,10 +126,10 @@ Tipo di risoluzione.
 **VerticalResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Risoluzione verticale.
@@ -142,10 +142,10 @@ Risoluzione verticale.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -154,7 +154,7 @@ Risoluzione verticale.
 
 <dl> <dt>
 
-[**\_RESOURCEALLOCATIONSETTINGDATA CIM**](cim-resourceallocationsettingdata.md)
+[**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md)
 </dt> </dl>
 
  

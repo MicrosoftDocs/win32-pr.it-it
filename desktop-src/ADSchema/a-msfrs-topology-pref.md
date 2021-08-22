@@ -1,11 +1,11 @@
 ---
-title: attributo ms-FRS-topologia-pref
-description: L'attributo ms-FRS-topologia-pref viene usato per registrare le impostazioni di topologia NTFRS preferite.
+title: Attributo ms-FRS-Topology-Pref
+description: L'attributo ms-FRS-Topology-Pref viene usato per registrare le impostazioni della topologia NTFRS preferite.
 ms.assetid: 2804ad8a-bec8-491b-84ea-bdff1c8635d0
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-FRS-topologia-pref
-- msFRS-topologia-schema AD dell'attributo pref
+- Schema AD dell'attributo ms-FRS-Topology-Pref
+- Schema AD dell'attributo msFRS-Topology-Pref
 topic_type:
 - apiref
 api_name:
@@ -14,25 +14,25 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de417b03385e51d6a97fd68097f81bcc0cb6b9db
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8467a038db4f5c263253d31c33cb7dc01bb548712918d654b27b7778079d5c20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960530"
 ---
-# <a name="ms-frs-topology-pref-attribute"></a>attributo ms-FRS-topologia-pref
+# <a name="ms-frs-topology-pref-attribute"></a>Attributo ms-FRS-Topology-Pref
 
-L'attributo **MS-FRS-topologia-pref** viene usato per registrare le impostazioni di topologia NTFRS preferite. Quando un membro FRS viene aggiunto o eliminato al set di repliche, viene fatto riferimento a questi attributi e vengono apportate modifiche alle connessioni tra il resto dei membri FRS nel set di repliche.
+**L'attributo ms-FRS-Topology-Pref** viene usato per registrare le impostazioni della topologia NTFRS preferite. Quando un membro FRS viene aggiunto o eliminato al set di repliche, viene fatto riferimento a questi attributi e vengono apportate modifiche alle connessioni tra gli altri membri frs nel set di repliche.
 
 I valori validi per questo attributo sono i seguenti.
 
 | Valore | Descrizione                              |
 |-------|------------------------------------------|
-| 1     | \_anello RSTOPOLOGYPREF \_ FRS<br/>     |
+| 1     | FRS \_ RSTOPOLOGYPREF \_ RING<br/>     |
 | 2     | FRS \_ RSTOPOLOGYPREF \_ HUBSPOKE<br/> |
 | 3     | FRS \_ RSTOPOLOGYPREF \_ FULLMESH<br/> |
-| 4     | \_RSTOPOLOGYPREF \_ personalizzato FRS<br/>   |
+| 4     | FRS \_ RSTOPOLOGYPREF \_ CUSTOM<br/>   |
 
 
 
@@ -42,13 +42,13 @@ I valori validi per questo attributo sono i seguenti.
 
 | Voce | Valore |
 |-------------------|--------------------------------------------------------------------|
-| CN                | MS-FRS-topologia-pref                                               |
-| LDAP-Display-Name | msFRS-topologia-pref                                                |
+| CN                | ms-FRS-Topology-Pref                                               |
+| Ldap-Display-Name | msFRS-Topology-Pref                                                |
 | Dimensione              | \-                                                                 |
-| Privilegio aggiornamento  | Amministratore di dominio                                               |
-| Frequenza di aggiornamento  | Quando viene creato il set di repliche o la topologia preferita viene modificata. |
+| Privilegio di aggiornamento  | Amministratore di dominio                                               |
+| Frequenza di aggiornamento  | Quando viene creato il set di repliche o viene modificata la topologia preferita. |
 | Attribute-Id      | 1.2.840.113556.1.4.1692                                            |
-| System-ID-GUID    | 92aa27e0-5c50-402d-9ec1-ee847def9788                               |
+| System-Id-Guid    | 92aa27e0-5c50-402d-9ec1-ee847def9788                               |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                        |
 
 
@@ -70,15 +70,15 @@ I valori validi per questo attributo sono i seguenti.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000000                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -91,15 +91,15 @@ I valori validi per questo attributo sono i seguenti.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000000                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -112,15 +112,15 @@ I valori validi per questo attributo sono i seguenti.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000000                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -133,15 +133,15 @@ I valori validi per questo attributo sono i seguenti.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000000                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -154,15 +154,15 @@ I valori validi per questo attributo sono i seguenti.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000000                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 

@@ -1,42 +1,42 @@
 ---
-description: ICE02 verifica che determinati riferimenti tra le tabelle del componente, del file e del registro di sistema siano reciproci. Questi riferimenti devono essere reciproci affinché il programma di installazione determini correttamente lo stato di installazione dei componenti.
+description: ICE02 verifica che alcuni riferimenti tra le tabelle Component, File e Registry siano reciproci. Questi riferimenti devono essere reciproci perché il programma di installazione determinare correttamente lo stato di installazione dei componenti.
 ms.assetid: 864404f1-439d-49a2-973d-4e6e1618863e
 title: ICE02
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1975203825d079d5eeb1ec5e4183767dd68625bc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b97696ee4a8f93d49237dbac8661b6bfc72e478922c87b9095620bc5c29dc546
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103750135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118946655"
 ---
 # <a name="ice02"></a>ICE02
 
-ICE02 verifica che determinati riferimenti tra le tabelle del [componente](component-table.md), del [file](file-table.md)e [del registro di sistema](registry-table.md) siano reciproci. Questi riferimenti devono essere reciproci affinché il programma di installazione determini correttamente lo stato di installazione dei componenti.
+ICE02 verifica che alcuni riferimenti tra le [tabelle Component](component-table.md), [File](file-table.md)e [Registry](registry-table.md) siano reciproci. Questi riferimenti devono essere reciproci perché il programma di installazione determinare correttamente lo stato di installazione dei componenti.
 
-Il programma di installazione utilizza la colonna di percorso della tabella dei componenti per rilevare la presenza del componente elencato nella colonna componente. La colonna di chiave percorso contiene una chiave nel registro di sistema o nelle tabelle di file. In entrambe le tabelle è presente una \_ colonna Component che contiene una chiave nella tabella Component che punta al componente che controlla la voce del registro di sistema o il file. Questi riferimenti devono essere reciproci.
+Il programma di installazione usa la colonna KeyPath della tabella Component per rilevare la presenza del componente elencato nella colonna Componente. La colonna KeyPath contiene una chiave nelle tabelle Registro di sistema o File. Entrambe queste tabelle hanno una colonna Component che contiene una chiave nella tabella Component che punta al componente che controlla la voce \_ o il file del Registro di sistema. Questi riferimenti devono essere reciproci.
 
 ## <a name="result"></a>Risultato
 
-ICE02 Invia un messaggio di errore se trova un riferimento che deve essere reciproco e non lo è.
+ICE02 invia un messaggio di errore se trova un riferimento che deve essere reciproco e non lo è.
 
 ## <a name="example"></a>Esempio
 
-ICE02 invierà il messaggio di errore seguente per un file con estensione msi contenente le voci di database indicate.
+ICE02 pubblica il messaggio di errore seguente per un file .msi contenente le voci di database visualizzate.
 
 ``` syntax
 File: 'Red_File' cannot be the key file for Component: 'Blue'. The file belongs to Component: 'Red'
 ```
 
-[Tabella componenti](component-table.md) (parziale)
+[Tabella dei componenti](component-table.md) (parziale)
 
 
 
 | Componente | KeyPath   |
 |-----------|-----------|
-| Red       | \_File rosso |
-| Blu      | \_File rosso |
+| Red       | File \_ rosso |
+| Blu      | File \_ rosso |
 
 
 
@@ -46,22 +46,22 @@ File: 'Red_File' cannot be the key file for Component: 'Blue'. The file belongs 
 
 
 
-| Colonna file | Componente\_ |
+| Colonna File | Componente\_ |
 |-------------|-------------|
-| \_File rosso   | Red         |
-| \_File blu  | Blu        |
+| File \_ rosso   | Red         |
+| File \_ blu  | Blu        |
 
 
 
  
 
-Il componente blu fa riferimento \_ al file rosso, ma \_ il file rosso non è controllato dal blu del componente e pertanto non può essere il file del percorso di base. Se è stato chiamato il programma di installazione per ottenere lo stato di installazione di Blue, non verrà verificato correttamente se \_ è stato installato il file rosso. Se si modifica il campo del percorso della tabella per il blu nella tabella dei componenti nel \_ file blu, viene risolto l'errore.
+Component Blue fa riferimento a Red File, ma Red File non è controllato da \_ Component Blue e pertanto non può essere il file \_ KeyPath. Se il programma di installazione è stato chiamato per ottenere lo stato di installazione di Blu, viene erroneamente verificata \_ l'installazione di File rosso. La modifica del campo KeyPath per Blu nella tabella dei componenti in \_ File blu consente di correggere l'errore.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Riferimento ghiaccio](ice-reference.md)
+[Informazioni di riferimento su ICE](ice-reference.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Installa un catalogo in una directory.
 ms.assetid: 9741f8e3-d9db-46cd-886d-587f332b0ab8
-title: InstallCatalog (funzione)
+title: Funzione InstallCatalog
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Setupapi.dll
-ms.openlocfilehash: 57b2a9d29b72db6c04673f30f41f26c44701c69c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 240754024135b5bd5aa48529d49080afbdb04e170987102346cdda2c59b12427
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955930"
 ---
-# <a name="installcatalog-function"></a>InstallCatalog (funzione)
+# <a name="installcatalog-function"></a>Funzione InstallCatalog
 
-\[Questa funzione non è supportata e non deve essere utilizzata.\]
+\[Questa funzione non è supportata e non deve essere usata.\]
 
 Installa un catalogo in una directory.
 
@@ -43,7 +43,7 @@ DWORD InstallCatalog(
 
 <dl> <dt>
 
-*CatalogFullPath* \[ in\]
+*CatalogFullPath* \[ Pollici\]
 </dt> <dd>
 
 Puntatore a una stringa che rappresenta il percorso completo del catalogo prima dell'installazione.
@@ -70,7 +70,7 @@ Questa funzione non è attualmente implementata, quindi non restituisce un valor
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetGetCurrentIndex'
-title: API. JetGetCurrentIndex, metodo
+description: Altre informazioni sul metodo Api.JetGetCurrentIndex
+title: Metodo Api.JetGetCurrentIndex
 TOCTitle: 'JetGetCurrentIndex method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetCurrentIndex(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.String@,System.Int32)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgetcurrentindex(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bacc6973b1a105e128533a1116abdeb4c6cfafa4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 920c65f623d71656331a72ea0ab42d507c3498f585d93e903fa677866d92a1e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042609"
 ---
-# <a name="apijetgetcurrentindex-method"></a>API. JetGetCurrentIndex, metodo
+# <a name="apijetgetcurrentindex-method"></a>Metodo Api.JetGetCurrentIndex
 
-Ddetermines il nome dell'indice corrente di un determinato cursore. Questo nome viene usato anche per riselezionare in seguito l'indice come indice corrente usando [JetSetCurrentIndex (JET_SESID, JET_TABLEID, String)](./api.jetsetcurrentindex-method.md). Può essere usato anche per individuare le proprietà dell'indice usando JetGetTableIndexInfo.
+Determina il nome dell'indice corrente di un determinato cursore. Questo nome viene usato anche per selezionare nuovamente l'indice come indice corrente usando [JetSetCurrentIndex(JET_SESID, JET_TABLEID, String).](./api.jetsetcurrentindex-method.md) Può anche essere usato per individuare le proprietà dell'indice usando JetGetTableIndexInfo.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,30 +68,30 @@ public static void JetGetCurrentIndex(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     Sessione da utilizzare.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursore per il quale ottenere il nome dell'indice.
+    Cursore per cui ottenere il nome dell'indice.
 
 <!-- end list -->
 
   - indexName  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Restituisce il nome dell'indice.
 
 <!-- end list -->
 
   - maxNameLength  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Lunghezza massima del nome dell'indice. I nomi di indice non sono più di [NameMost](./systemparameters.namemost-field.md) caratteri.
+    Lunghezza massima del nome dell'indice. I nomi degli indici non sono più di [NameMost](./systemparameters.namemost-field.md) characters.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -99,6 +99,6 @@ public static void JetGetCurrentIndex(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

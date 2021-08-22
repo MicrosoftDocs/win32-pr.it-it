@@ -1,19 +1,19 @@
 ---
-description: Il concetto di tipo di dati è fondamentale per lo standard Abstract Syntax Notation One (ASN. 1).
+description: Il concetto di tipo di dati è fondamentale per lo standard ASN.1 (Abstract Syntax Notation One).
 ms.assetid: 85e88e0b-057b-42c7-a3c8-017a30195d1e
-title: Sistema di tipi ASN. 1
+title: Sistema di tipi ASN.1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abbf60bf61e32c5fca882f2e40c946c043ef93e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e0b5b9780057229d301bbabcdf2484c66bf06b4313587b0e70a68070885a179
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118905076"
 ---
-# <a name="asn1-type-system"></a>Sistema di tipi ASN. 1
+# <a name="asn1-type-system"></a>Sistema di tipi ASN.1
 
-Il concetto di tipo di dati è fondamentale per lo standard Abstract Syntax Notation One (ASN. 1). Ogni campo di una struttura di richiesta di certificato è associato a un tipo. Si consideri, ad esempio, la \# sintassi del certificato PKCS 10 ASN. 1 illustrato nell'esempio seguente.
+Il concetto di tipo di dati è fondamentale per lo standard ASN.1 (Abstract Syntax Notation One). Ogni campo di una struttura di richiesta di certificato è associato a un tipo. Si consideri, ad esempio, la sintassi del certificato PKCS \# 10 ASN.1 illustrata nell'esempio seguente.
 
 ``` syntax
 --------------------------------------------------------------------
@@ -74,19 +74,19 @@ Attribute ::= SEQUENCE
 AttributeSetValue ::= SET OF ANY
 ```
 
-La struttura di richiesta di alto livello, **CertificationRequestInfo**, è un tipo costituito da una sequenza di altri tipi. Quando un tipo è o contiene solo tipi di base, tipi stringa o **qualsiasi**, non può essere suddiviso ulteriormente. Ad esempio, il campo **Version** è un tipo **CertificationRequestInfoVersion** , che a sua volta è un tipo **Integer** , un tipo ASN. 1 di base che non è composto da altri tipi.
+La struttura delle richieste di alto **livello, CertificationRequestInfo**, è un tipo costituito da una sequenza di altri tipi. Quando un tipo è o contiene solo tipi di base, tipi stringa o **ANY,** non può essere ulteriormente suddiviso. Ad esempio, il campo **della** versione è un **tipo CertificationRequestInfoVersion** che è, a sua volta, un tipo **INTEGER,** un tipo ASN.1 di base non composto da altri tipi.
 
-Un sistema di tipi consente di presentare visivamente la sintassi di una richiesta in modo prontamente comprensibile agli sviluppatori e consente la codifica coerente della richiesta per la trasmissione in una rete. Per ulteriori informazioni sulla codifica, vedere [Distinguished Encoding Rules](distinguished-encoding-rules.md). Per ulteriori informazioni sui tipi ASN. 1, vedere gli argomenti seguenti.
+Un sistema di tipi consente di presentare visivamente la sintassi di una richiesta in modo facilmente comprensibile da parte degli sviluppatori e consente di codificare in modo coerente la richiesta per la trasmissione in una rete. Per altre informazioni sulla codifica, vedere [Distinguished Encoding Rules](distinguished-encoding-rules.md). Per altre informazioni sui tipi ASN.1, vedere gli argomenti seguenti.
 
 [Tipi di base](about-basic-types.md)
 
-Vengono descritti i tipi di dati seguenti:
+Vengono illustrati i tipi di dati seguenti:
 
 * **STRINGA DI BIT**
-* **BOOLEAN**
+* **Boolean**
 * **INTEGER**
 * **NULL**
-* **IDENTIFICATORE OGGETTO**
+* **IDENTIFICATORE DI OGGETTO**
 * **STRINGA OTTETTO**
 
 [Tipi di stringa](about-string-types.md)
@@ -101,7 +101,7 @@ Vengono illustrati i tipi di stringa seguenti:
 
 [Tipi costruiti](about-constructed-types.md)
 
-Vengono descritti i tipi di dati ASN. 1 che possono contenere tipi di base, tipi stringa o altri tipi costruiti.
+Vengono illustrati i tipi di dati ASN.1 che possono contenere tipi di base, tipi stringa o altri tipi costruiti.
 
 
 
@@ -112,16 +112,16 @@ Vengono descritti i tipi di dati ASN. 1 che possono contenere tipi di base, tipi
 
 <dl> <dt>
 
-[Codifica della richiesta di certificato](about-certificate-request-encoding.md)
+[Codifica delle richieste di certificato](about-certificate-request-encoding.md)
 </dt> <dt>
 
-[Codifica DER dei tipi ASN. 1](about-der-encoding-of-asn-1-types.md)
+[Codifica DER dei tipi ASN.1](about-der-encoding-of-asn-1-types.md)
 </dt> <dt>
 
 [Distinguished Encoding Rules](distinguished-encoding-rules.md)
 </dt> <dt>
 
-[Introduzione alla sintassi e alla codifica ASN. 1](about-introduction-to-asn-1-syntax-and-encoding.md)
+[Introduzione alla sintassi e alla codifica ASN.1](about-introduction-to-asn-1-syntax-and-encoding.md)
 </dt> </dl>
 
  

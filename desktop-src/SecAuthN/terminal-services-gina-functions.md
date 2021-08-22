@@ -1,42 +1,42 @@
 ---
-description: Quando i servizi Terminal sono abilitati, GINA deve chiamare le funzioni di supporto di Winlogon per completare la configurazione di ogni utente, per eseguire una query sulle credenziali di una sessione client di Servizi terminal e per disconnettersi da una sessione di rete di Servizi terminal. Nota le DLL GINA vengono ignorate in Windows Vista.
+description: Quando Servizi terminal è abilitato, l'APPLICAZIONE deve chiamare le funzioni di supporto winlogon per completare la configurazione per ogni utente, per eseguire query sulle credenziali di una sessione client di Servizi terminal e per disconnettersi da una sessione di rete di Servizi terminal. Si noti che le DLL DELL'APPLICAZIONE vengono ignorate in Windows Vista.
 ms.assetid: 70b55b99-b350-4638-84ba-e5580d9d992f
-title: Funzioni di Servizi terminal GINA
+title: Funzioni DISA di Servizi terminal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19452fb73f00ef4ace0dd85083578334b6fb1038
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f0bdd81d66d88ae280c14d71d7d65385c0d5580b3e28cef9d0f26ed1963bded1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118916393"
 ---
-# <a name="terminal-services-gina-functions"></a>Funzioni di Servizi terminal GINA
+# <a name="terminal-services-gina-functions"></a>Funzioni DISA di Servizi terminal
 
-Quando i servizi Terminal sono abilitati, [*Gina*](../secgloss/g-gly.md) deve chiamare le funzioni di supporto di [*Winlogon*](../secgloss/w-gly.md) per completare la configurazione di ogni utente, per eseguire una query sulle [*credenziali*](../secgloss/c-gly.md) di una sessione client di Servizi terminal e per disconnettersi da una sessione di rete di Servizi terminal.
+Quando Servizi terminal è abilitato, [*l'APPLICAZIONE*](../secgloss/g-gly.md) deve chiamare le funzioni di supporto [](../secgloss/c-gly.md) [*winlogon*](../secgloss/w-gly.md) per completare la configurazione per ogni utente, per eseguire query sulle credenziali di una sessione client di Servizi terminal e per disconnettersi da una sessione di rete di Servizi terminal.
 
 > [!Note]  
-> Le DLL GINA vengono ignorate in Windows Vista.
+> Le DLL DELL'APPLICAZIONE vengono ignorate in Windows Vista.
 
  
 
-Di seguito sono riportate le funzioni di supporto.
+Queste funzioni di supporto includono quanto segue.
 
 
 
 | Funzione                                                                     | Descrizione                                                                                         |
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | [**WlxWin31Migrate**](/windows/win32/api/winwlx/nc-winwlx-pwlx_win31_migrate)                                   | Completa la configurazione dell'utente.                                                                    |
-| [**WlxQueryClientCredentials**](/windows/win32/api/winwlx/nc-winwlx-pwlx_query_client_credentials)               | Chiamato per eseguire una query sulle credenziali dei client remoti che non utilizzano una licenza di Internet Connector. |
-| [**WlxQueryInetConnectorCredentials**](/windows/win32/api/winwlx/nc-winwlx-pwlx_query_ic_credentials) | Chiamato per eseguire una query sulle credenziali dei client remoti che utilizzano una licenza di Internet Connector.     |
-| [**WlxQueryTerminalServicesData**](/windows/win32/api/winwlx/nc-winwlx-pwlx_query_terminal_services_data)         | Chiamata eseguita per recuperare le informazioni di configurazione dell'utente di Servizi terminal.                                |
+| [**WlxQueryClientCredentials**](/windows/win32/api/winwlx/nc-winwlx-pwlx_query_client_credentials)               | Chiamato per eseguire una query sulle credenziali dei client remoti che non usano una licenza del connettore Internet. |
+| [**WlxQueryInetConnectorCredentials**](/windows/win32/api/winwlx/nc-winwlx-pwlx_query_ic_credentials) | Chiamato per eseguire una query sulle credenziali dei client remoti che usano una licenza del connettore Internet.     |
+| [**WlxQueryTerminalServicesData**](/windows/win32/api/winwlx/nc-winwlx-pwlx_query_terminal_services_data)         | Chiamato per recuperare le informazioni di configurazione utente di Servizi terminal.                                |
 | [**WlxDisconnect**](/windows/win32/api/winwlx/nc-winwlx-pwlx_disconnect)                                       | Chiamato per disconnettersi da una sessione di rete di Servizi terminal.                                      |
 
 
 
  
 
-Per accedere alle funzioni di supporto di Winlogon, la DLL GINA deve usare la struttura [**wlx \_ Dispatch \_ versione \_ 1 \_ 3**](/windows/desktop/api/Winwlx/ns-winwlx-wlx_dispatch_version_1_3) . Nella funzione [**WlxNegotiate**](/windows/desktop/api/Winwlx/nf-winwlx-wlxnegotiate) di Gina, entrambi i parametri devono essere almeno wlx \_ versione \_ 1 \_ 3.
+Per accedere a queste funzioni di supporto winlogon, la DLL DELL'APPLICAZIONE DEVE usare la [**struttura WLX \_ DISPATCH \_ VERSION \_ 1 \_ 3.**](/windows/desktop/api/Winwlx/ns-winwlx-wlx_dispatch_version_1_3) Nella funzione [**WlxNegotiate**](/windows/desktop/api/Winwlx/nf-winwlx-wlxnegotiate) di DELLA entrambi i parametri devono essere almeno WLX \_ VERSION \_ 1 \_ 3.
 
  
 

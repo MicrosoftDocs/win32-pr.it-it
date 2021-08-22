@@ -1,7 +1,7 @@
 ---
-description: Il metodo ChangeDir imposta la directory della smart card corrente sulla nuova directory specificata.
+description: Il metodo ChangeDir modifica la directory smart card corrente nella nuova directory specificata.
 ms.assetid: 1eb53236-c88f-4b43-ac91-de67d4029433
-title: 'Metodo ISCardFileAccess:: ChangeDir'
+title: Metodo ISCardFileAccess::ChangeDir
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 147456bd705eea3073f2e65cb375494187ca2473
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d14f104fd40a10c4d17e3751b59245299e7c8f5b63508d6e73ef1140ec7e906
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119008059"
 ---
-# <a name="iscardfileaccesschangedir-method"></a>Metodo ISCardFileAccess:: ChangeDir
+# <a name="iscardfileaccesschangedir-method"></a>Metodo ISCardFileAccess::ChangeDir
 
-\[Il metodo **ChangeDir** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Non è disponibile per l'utilizzo in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo ChangeDir** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il metodo **ChangeDir** imposta la directory della [*Smart Card*](../secgloss/s-gly.md) corrente sulla nuova directory specificata.
+Il **metodo ChangeDir** modifica la directory [*smart card*](../secgloss/s-gly.md) corrente nella nuova directory specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,29 +41,29 @@ HRESULT ChangeDir(
 
 <dl> <dt>
 
-*RefType* \[ in\]
+*refType* \[ Pollici\]
 </dt> <dd>
 
-Tipo di riferimento usato in *bstrNewDir*.
+Tipo di riferimento utilizzato in *bstrNewDir*.
 
 <dl><span id="SC_TYPE_BY_NAME"></span><span id="sc_type_by_name"></span><dt>
 
-**\_tipo SC \_ per \_ nome**
+**SC \_ TYPE \_ BY \_ NAME**
 </dt><span id="SC_TYPE_BY_ID"></span><span id="sc_type_by_id"></span><dt>
 
-**\_tipo SC \_ per \_ ID**
+**SC \_ TYPE \_ BY \_ ID**
 </dt><span id="SC_TYPE_BY_SHORT"></span><span id="sc_type_by_short"></span><dt>
 
-**\_tipo SC \_ per \_ breve**
+**SC \_ TYPE \_ BY \_ SHORT**
 </dt><span id="SC_TYPE_BY_ANY"></span><span id="sc_type_by_any"></span><dt>
 
-**SC \_ digitare \_ per \_ qualsiasi**
+**SC \_ TYPE \_ BY \_ ANY**
 </dt> </dl> </dd> <dt>
 
-*bstrNewDir* \[ in\]
+*bstrNewDir* \[ Pollici\]
 </dt> <dd>
 
-Nome file/directory (da *RefType*) da selezionare.
+Nome file/directory (per *refType*) da selezionare.
 
 </dd> </dl>
 
@@ -75,9 +75,9 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 | Codice restituito                                                                                   | Descrizione                                  |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Operazione completata correttamente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata correttamente.<br/> |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Parametro non valido.<br/>                |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria insufficiente.<br/>                    |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente.<br/>                    |
 
 
 
@@ -89,7 +89,7 @@ Per ottenere un percorso assoluto della directory attualmente selezionata, chiam
 
 Per un elenco di tutti i metodi definiti da questa interfaccia, vedere [**ISCardFileAccess**](iscardfileaccess.md).
 
-Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire un codice di errore della smart card se è stata chiamata una funzione Smart Card per completare la richiesta. Per ulteriori informazioni, vedere [valori restituiti della smart card](authentication-return-values.md).
+Oltre ai codici di errore COM elencati in precedenza, questa interfaccia può restituire un smart card di errore se è stata chiamata una funzione smart card per completare la richiesta. Per altre informazioni, vedere [Smart Card Return Values](authentication-return-values.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,8 +97,8 @@ Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 | Fine del supporto client<br/>    | Windows XP<br/>                                |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                       |
 

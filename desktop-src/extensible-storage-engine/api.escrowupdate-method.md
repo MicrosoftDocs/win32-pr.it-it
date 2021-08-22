@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. EscrowUpdate'
-title: API. EscrowUpdate, metodo
+description: Altre informazioni sul metodo Api.EscrowUpdate
+title: Metodo Api.EscrowUpdate
 TOCTitle: 'EscrowUpdate method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.EscrowUpdate(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_COLUMNID,System.Int32)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.escrowupdate(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: dde632f01bd7ac9cbdf8bc4dc09e1337f32014b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e9bfaf180c67bea6da979877f9f768c850032adc2d085c4c65d47f3326442c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103749506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042729"
 ---
-# <a name="apiescrowupdate-method"></a>API. EscrowUpdate, metodo
+# <a name="apiescrowupdate-method"></a>Metodo Api.EscrowUpdate
 
-Eseguire l'aggiunta atomica in una colonna. La colonna deve essere di tipo [Long](./jet-coltyp-enumeration.md). Questa funzione consente a più sessioni di aggiornare simultaneamente lo stesso record senza conflitti.
+Eseguire l'aggiunta atomica in una colonna. La colonna deve essere di tipo [Long.](./jet-coltyp-enumeration.md) Questa funzione consente a più sessioni di aggiornare lo stesso record contemporaneamente senza conflitti.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -71,39 +71,39 @@ public static int EscrowUpdate(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione da utilizzare.
+    Sessione da usare.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Cursore da aggiornare.
 
 <!-- end list -->
 
   - columnid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
     
-    Colonna da aggiornare. Deve essere una colonna aggiornabile con deposito.
+    Colonna da aggiornare. Deve trattarsi di una colonna aggiornabile con deposito a garanzia.
 
 <!-- end list -->
 
   - delta  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Delta da applicare alla colonna.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
-Il valore corrente della colonna archiviato nel database (il controllo delle versioni viene ignorato).  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
+Valore corrente della colonna archiviata nel database (il controllo delle versioni viene ignorato).  
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo esegue il wrapping di [JetEscrowUpdate (JET_SESID, JET_TABLEID, JET_COLUMNID, \[ \] , Int32, \[ \] , Int32, Int32, EscrowUpdateGrbit)](./api.jetescrowupdate-method.md).
+Questo metodo esegue il wrapping di [JetEscrowUpdate(JET_SESID, JET_TABLEID, JET_COLUMNID, \[ \] , Int32, \[ \] , Int32, Int32, EscrowUpdateGrbit)](./api.jetescrowupdate-method.md).
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -111,6 +111,6 @@ Questo metodo esegue il wrapping di [JetEscrowUpdate (JET_SESID, JET_TABLEID, JE
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

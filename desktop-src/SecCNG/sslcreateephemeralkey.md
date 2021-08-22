@@ -1,7 +1,7 @@
 ---
-description: Crea una chiave temporanea da usare durante l'autenticazione che si verifica durante l'handshake SSL (Secure Sockets Layer Protocol).
+description: Crea una chiave effimera da usare durante l'autenticazione che si verifica durante l'handshake Secure Sockets Layer protocol (SSL).
 ms.assetid: faad9b3b-e476-4e61-b978-bcb517ecaeb7
-title: Funzione SslCreateEphemeralKey (Sslprovider. h)
+title: Funzione SslCreateEphemeralKey (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 452b0166da367bb6b1530f5669e55b7ca909e13e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6a54de2865df805af51b054c22d455d52914a5b00514767d432ceda28c16a39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907098"
 ---
-# <a name="sslcreateephemeralkey-function"></a>SslCreateEphemeralKey (funzione)
+# <a name="sslcreateephemeralkey-function"></a>Funzione SslCreateEphemeralKey
 
-La funzione **SslCreateEphemeralKey** crea una chiave temporanea da usare durante l'autenticazione che si verifica durante l'handshake SSL ( [*Secure Sockets Layer Protocol*](/windows/desktop/SecGloss/s-gly) ).
+La **funzione SslCreateEphemeralKey** crea una chiave effimera da usare durante l'autenticazione che si verifica durante l'handshake del protocollo [*Secure Sockets Layer*](/windows/desktop/SecGloss/s-gly) (SSL).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,63 +47,63 @@ SECURITY_STATUS WINAPI SslCreateEphemeralKey(
 
 <dl> <dt>
 
-*hSslProvider* \[ in\]
+*hSslProvider* \[ Pollici\]
 </dt> <dd>
 
 Handle dell'istanza del provider del protocollo SSL.
 
 </dd> <dt>
 
-*phEphemeralKey* \[ out\]
+*phEphemeralKey* \[ Cambio\]
 </dt> <dd>
 
-Handle della chiave temporanea.
+Handle della chiave effimera.
 
 </dd> <dt>
 
-*dwProtocol* \[ in\]
+*dwProtocol* \[ Pollici\]
 </dt> <dd>
 
-Uno dei valori dell' [**identificatore del protocollo del provider SSL CNG**](https://msdn.microsoft.com/library/Hh971257(v=VS.85).aspx) .
+Uno dei valori [**di CNG SSL Provider Protocol Identifier.**](https://msdn.microsoft.com/library/Hh971257(v=VS.85).aspx)
 
 </dd> <dt>
 
-*dwCipherSuite* \[ in\]
+*dwCipherSuite* \[ Pollici\]
 </dt> <dd>
 
-Uno dei valori dell' [**identificatore del pacchetto di crittografia del provider SSL CNG**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx) .
+Uno dei valori [**di CNG SSL Provider Cipher Suite Identifier.**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx)
 
 </dd> <dt>
 
-*dwKeyType* \[ in\]
+*dwKeyType* \[ Pollici\]
 </dt> <dd>
 
-Uno dei valori dell' [**identificatore del tipo di chiave del provider SSL CNG**](https://msdn.microsoft.com/library/Hh971256(v=VS.85).aspx) . Impostare questo parametro su zero per i tipi di chiave che non sono la [*crittografia a curva ellittica*](/windows/desktop/SecGloss/e-gly) (ecc).
+Uno dei valori [**di CNG SSL Provider Key Type Identifier.**](https://msdn.microsoft.com/library/Hh971256(v=VS.85).aspx) Impostare questo parametro su zero per i tipi di chiave che non sono ECC [*(elliptic curve cryptography).*](/windows/desktop/SecGloss/e-gly)
 
 </dd> <dt>
 
-*dwKeyBitLen* \[ in\]
+*dwKeyBitLen* \[ Pollici\]
 </dt> <dd>
 
 Lunghezza, espressa in bit, della chiave.
 
 </dd> <dt>
 
-*pbParams* \[ in\]
+*pbParams* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un buffer che contiene i parametri per la chiave che deve essere creata. Se non si usa un pacchetto di crittografia dhe ( [*Diffie-Hellman (effimero)*](/windows/desktop/SecGloss/d-gly) , impostare il parametro *pbParams* su **null** e il parametro *cbParams* su zero.
+Puntatore a un buffer che contiene i parametri per la chiave da creare. Se non viene usata una suite di crittografia [*DHE (Diffie-Hellman) (effimeral) key-exchange algorithm*](/windows/desktop/SecGloss/d-gly) (DHE), impostare il *parametro pbParams* su **NULL** e il parametro *cbParams* su zero.
 
 </dd> <dt>
 
-*cbParams* \[ in\]
+*cbParams* \[ Pollici\]
 </dt> <dd>
 
-Lunghezza, in byte, dei dati nel buffer di *pbParams* .
+Lunghezza, in byte, dei dati nel buffer *pbParams.*
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Questo parametro è riservato per usi futuri.
@@ -120,9 +120,9 @@ Se la funzione ha esito negativo, restituisce un valore di errore diverso da zer
 
 | Codice/valore restituito                                                                                                                                                       | Descrizione                                                     |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**Nte \_ Nessun \_**</dt> <dt>0x8009000EL</dt> di memoria </dl>         | La memoria disponibile non è sufficiente per allocare il buffer.<br/> |
-| <dl> <dt>**Nte \_ 0x80090026L \_ handle non valido**</dt> <dt></dt> </dl>    | Handle *hSslProvider* non valido.<br/>              |
-| <dl> <dt>**Nte \_ \_Parametro 0X80090027L non valido**</dt> <dt></dt> </dl> | Uno dei parametri specificati non è valido.<br/>         |
+| <dl> <dt>**NTE \_ NO \_ MEMORY**</dt> <dt>0x8009000EL</dt> </dl>         | Memoria insufficiente per allocare il buffer.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ NON VALIDO**</dt> <dt>0x80090026L</dt> </dl>    | *L'handle hSslProvider* non è valido.<br/>              |
+| <dl> <dt>**NTE \_ PARAMETRO \_ NON VALIDO**</dt> <dt>0x80090027L</dt> </dl> | Uno dei parametri forniti non è valido.<br/>         |
 
 
 
@@ -130,9 +130,9 @@ Se la funzione ha esito negativo, restituisce un valore di errore diverso da zer
 
 ## <a name="remarks"></a>Commenti
 
-Quando si usa un pacchetto di crittografia DHE, l'implementazione SSL interna passa i parametri *p* e *g* del server alla funzione **SslCreateEphemeralKey** nei parametri *pbParams* e *cbParams* .
+Quando si usa una suite di crittografia DHE, l'implementazione SSL interna passa i parametri *p* e *g* del server alla funzione **SslCreateEphemeralKey** nei *parametri pbParams* *e cbParams.*
 
-Il formato dei dati nel buffer *pbParams* è identico a quello usato quando si imposta la proprietà [**BCRYPT \_ DH \_ Parameters**](cng-property-identifiers.md) e inizia con una struttura di [**intestazione di \_ \_ parametro BCRYPT \_ DH**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dh_parameter_header) .
+Il formato dei dati nel buffer *pbParams* è lo stesso usato quando si imposta la proprietà [**\_ BCRYPT DH \_ PARAMETERS**](cng-property-identifiers.md) e inizia con una struttura [**BCRYPT \_ DH \_ PARAMETER \_ HEADER.**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dh_parameter_header)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -140,9 +140,9 @@ Il formato dei dati nel buffer *pbParams* è identico a quello usato quando si i
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

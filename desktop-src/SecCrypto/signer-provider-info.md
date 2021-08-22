@@ -1,7 +1,7 @@
 ---
-description: Specifica le informazioni sul provider del servizio di crittografia (CSP) e sulla chiave privata utilizzate per creare una firma digitale.
+description: Specifica il provider del servizio di crittografia (CSP) e le informazioni sulla chiave privata utilizzate per creare una firma digitale.
 ms.assetid: 85dc6a06-365a-4591-9d1d-117556a4417d
-title: Struttura SIGNER_PROVIDER_INFO
+title: SIGNER_PROVIDER_INFO struttura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,19 +12,19 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 02cf4be124dd2ba1f39695bd5ca34af012cf7da0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 45ab23e4a568082de7e7fb4d23364ac6ba15c0f61378d54735cbc398e7e0e8ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118898688"
 ---
-# <a name="signer_provider_info-structure"></a>Struttura di \_ informazioni sul provider del firmatario \_
+# <a name="signer_provider_info-structure"></a>Struttura DELLE INFORMAZIONI \_ \_ SUL PROVIDER DI FIRMATARI
 
-La struttura delle **\_ \_ informazioni del provider del firmatario** specifica le informazioni sul [*provider del servizio di crittografia*](../secgloss/c-gly.md) (CSP) e sulla chiave privata utilizzate per creare una firma digitale.
+La **struttura SIGNER \_ PROVIDER \_ INFO** specifica il [*provider*](../secgloss/c-gly.md) del servizio di crittografia (CSP) e le informazioni sulla chiave privata usate per creare una firma digitale.
 
 > [!Note]  
-> Questa struttura non è definita in alcun file di intestazione. Per usare questa struttura, è necessario definirla come illustrato in questo argomento.
+> Questa struttura non è definita in alcun file di intestazione. Per usare questa struttura, è necessario definirla manualmente come illustrato in questo argomento.
 
  
 
@@ -54,42 +54,42 @@ typedef struct _SIGNER_PROVIDER_INFO {
 **cbSize**
 </dt> <dd>
 
-Dimensione, in byte, della struttura.
+Dimensione, in byte, della struttura .
 
 </dd> <dt>
 
 **pwszProviderName**
 </dt> <dd>
 
-Nome del CSP utilizzato per creare la firma digitale. Se il valore di questo membro è **null**, viene utilizzato il provider predefinito.
+Nome del provider di servizi di rete utilizzato per creare la firma digitale. Se il valore di questo membro è **NULL,** viene usato il provider predefinito.
 
 </dd> <dt>
 
 **dwProviderType**
 </dt> <dd>
 
-Tipo di CSP specificato dal membro **pwszProviderName** .
+Tipo del provider di servizi di configurazione specificato dal **membro pwszProviderName.**
 
 </dd> <dt>
 
 **dwKeySpec**
 </dt> <dd>
 
-Specifica delle chiavi. Se questo membro è impostato su zero, viene utilizzata la specifica della chiave nel membro **pwszPvkFileName** o **pwszKeyContainer** . Se è presente più di una specifica chiave nel membro **pwszKeyContainer** , viene usata **la \_ firma** . In caso di esito negativo, viene utilizzato il **\_ cambio di** stato.
+Specifica delle chiavi. Se questo membro è impostato su zero, viene usata la specifica della chiave nel membro **pwszPvkFileName** o **pwszKeyContainer.** Se è presente più di una specifica di chiave nel **membro pwszKeyContainer,** viene usato **AT \_ SIGNATURE.** Se non riesce, **viene usato AT \_ KEYEXCHANGE.**
 
 </dd> <dt>
 
 **dwPvkChoice**
 </dt> <dd>
 
-Specifica il tipo di informazioni sulla chiave privata. Il membro può essere costituito da uno o più dei valori seguenti.
+Specifica il tipo di informazioni sulla chiave privata. Questo membro può essere uno o più dei valori seguenti.
 
 
 
 | Valore                                                                                                                                                                                                                                               | Significato                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| <span id="PVK_TYPE_FILE_NAME"></span><span id="pvk_type_file_name"></span><dl> <dt>**PVK \_ Digitare \_ il \_ nome file**</dt> <dt>1 (0x1)</dt> </dl>         | Le informazioni sulla chiave privata sono un nome file.<br/>     |
-| <span id="PVK_TYPE_KEYCONTAINER"></span><span id="pvk_type_keycontainer"></span><dl> <dt>**PVK \_ TIPO di \_ contenitore di contenitori**</dt> <dt>2 (0x2)</dt> </dl> | Le informazioni sulla chiave privata sono un contenitore di chiavi.<br/> |
+| <span id="PVK_TYPE_FILE_NAME"></span><span id="pvk_type_file_name"></span><dl> <dt>**PVK \_ DIGITARE \_ NOME \_ FILE**</dt> <dt>1 (0x1)</dt> </dl>         | Le informazioni sulla chiave privata sono un nome file.<br/>     |
+| <span id="PVK_TYPE_KEYCONTAINER"></span><span id="pvk_type_keycontainer"></span><dl> <dt>**PVK \_ TYPE \_ KEYCONTAINER**</dt> <dt>2 (0x2)</dt> </dl> | Le informazioni sulla chiave privata sono un contenitore di chiavi.<br/> |
 
 
 
@@ -117,8 +117,8 @@ Nome del contenitore di chiavi che contiene le informazioni sulla chiave privata
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Connette una porta di commutazione a una voce di avanzamento dinamico (indirizzo MAC appreso).
+description: Connette una porta del commutatore a una voce di inoltro dinamico (indirizzo MAC appreso).
 ms.assetid: 70687D56-1282-46C7-AB4E-60E32B9DBA14
-title: Classe Msvm_SwitchPortDynamicForwarding
+title: Msvm_SwitchPortDynamicForwarding classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 9e6dda46302e9e8c58710bad1f4221e14e2c3f4b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d5deb326877e7af639c7bc18a73a8c968e75c26b64d690d4a4582085833fa23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950070"
 ---
-# <a name="msvm_switchportdynamicforwarding-class"></a>\_Classe MSVM SwitchPortDynamicForwarding
+# <a name="msvm_switchportdynamicforwarding-class"></a>Classe Msvm \_ SwitchPortDynamicForwarding
 
-Connette una porta di commutazione a una voce di avanzamento dinamico (indirizzo MAC appreso). Questa operazione è utile per trovare tutti gli indirizzi MAC appresi per una porta specificata.
+Connette una porta del commutatore a una voce di inoltro dinamico (indirizzo MAC appreso). Ciò è utile per trovare tutti gli indirizzi MAC appresi per una porta specificata.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF (Simplified Managed Object Format) e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,55 +41,55 @@ class Msvm_SwitchPortDynamicForwarding : CIM_SwitchPortDynamicForwarding
 
 ## <a name="members"></a>Members
 
-La **classe \_ SwitchPortDynamicForwarding di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ SwitchPortDynamicForwarding** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ SwitchPortDynamicForwarding di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ SwitchPortDynamicForwarding** ha queste proprietà.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[ **MSVM \_ EthernetSwitchPort**](msvm-ethernetswitchport.md)**
+Tipo di dati: **[ **Msvm \_ EthernetSwitchPort**](msvm-ethernetswitchport.md)**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Riferimento a un'istanza della classe [**MSVM \_ EthernetSwitchPort**](msvm-ethernetswitchport.md) che rappresenta la porta di commutazione.
+Riferimento a un'istanza della [**classe Msvm \_ EthernetSwitchPort**](msvm-ethernetswitchport.md) che rappresenta la porta del commutatore.
 
 </dd> <dt>
 
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **[ **MSVM \_ DynamicForwardingEntry**](msvm-dynamicforwardingentry.md)**
+Tipo di dati: **[ **Msvm \_ DynamicForwardingEntry**](msvm-dynamicforwardingentry.md)**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-Riferimento a un'istanza della classe [**\_ DynamicForwardingEntry MSVM**](msvm-dynamicforwardingentry.md) che rappresenta la voce di avanzamento dinamico del database di inoltri.
+Riferimento a un'istanza della [**classe Msvm \_ DynamicForwardingEntry**](msvm-dynamicforwardingentry.md) che rappresenta la voce di inoltro dinamico del database di inoltro.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla **classe \_ SwitchPortDynamicForwarding di MSVM** potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla **classe Msvm \_ SwitchPortDynamicForwarding** potrebbe essere limitato dal filtro del controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Esempio
 
-Vedere [esecuzione di query sugli oggetti di rete](querying-networking-objects.md).
+Vedere [Esecuzione di query sugli oggetti di rete](querying-networking-objects.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,10 +97,10 @@ Vedere [esecuzione di query sugli oggetti di rete](querying-networking-objects.m
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -109,10 +109,10 @@ Vedere [esecuzione di query sugli oggetti di rete](querying-networking-objects.m
 
 <dl> <dt>
 
-[**\_SWITCHPORTDYNAMICFORWARDING CIM**](cim-switchportdynamicforwarding.md)
+[**CIM \_ SwitchPortDynamicForwarding**](cim-switchportdynamicforwarding.md)
 </dt> <dt>
 
-[**\_SWITCHPORTDYNAMICFORWARDING CIM**](/previous-versions//cc136921(v=vs.85))
+[**CIM \_ SwitchPortDynamicForwarding**](/previous-versions//cc136921(v=vs.85))
 </dt> </dl>
 
  

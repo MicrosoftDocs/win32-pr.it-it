@@ -1,5 +1,5 @@
 ---
-description: 'Metodo ID3DXEffectStateManager::SetPixelShaderConstantF: funzione di callback che deve essere implementata da un utente per impostare una matrice di costanti a virgola mobile vertex shader.'
+description: 'Metodo ID3DXEffectStateManager::SetPixelShaderConstantF: funzione di callback che deve essere implementata da un utente per impostare una matrice di costanti a virgola mobile del vertex shader.'
 ms.assetid: db87ca8c-2539-4d80-854c-25b114a7e7e0
 title: Metodo ID3DXEffectStateManager::SetPixelShaderConstantF (D3DX9Effect.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: f73963e98d4951eaf2905cc5da6eab3a6409f220
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6d92623bf97a05e5c398ee5e8b4a79b991a94aca5cf89e5a550f1c6c3f5c585d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044409"
 ---
 # <a name="id3dxeffectstatemanagersetpixelshaderconstantf-method"></a>Metodo ID3DXEffectStateManager::SetPixelShaderConstantF
 
@@ -75,8 +75,8 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback non riesce quando si imposta lo stato del dispositivo, si verificherà una delle condizioni seguenti:
 
--   L'effetto avrà esito negativo durante [**ID3DXEffect::BeginPass**](id3dxeffect--beginpass.md).
--   La chiamata allo stato dell'effetto dinamico ( ad esempio [**IDirect3DDevice9::SetPixelShaderConstantF**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshaderconstantf)) avrà esito negativo.
+-   L'effetto avrà esito negativo [**durante ID3DXEffect::BeginPass**](id3dxeffect--beginpass.md).
+-   La chiamata allo stato dell'effetto dinamico ( [**ad esempio IDirect3DDevice9::SetPixelShaderConstantF**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshaderconstantf)) avrà esito negativo.
 
 ## <a name="requirements"></a>Requisiti
 

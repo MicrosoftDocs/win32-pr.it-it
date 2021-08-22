@@ -1,29 +1,29 @@
 ---
-description: Utilizzo di script delle regole business in C++ per fornire la logica di run-time per il controllo dell'accesso.
+description: Uso di script di regole business in C++ per fornire logica di run-time per il controllo dell'accesso.
 ms.assetid: 058086ab-8ebd-4ff6-b552-8d3c19ae5d38
-title: Qualificazione dell'accesso con la logica di business in C++
+title: Qualifica dell'accesso con la logica di business in C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e176fb9cbb221fb52404e22c7ba61d272897082c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c187ebf5e7e532d0d807e470e4383ddfc9c31c80e8e97198b579a1a488bece7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118912117"
 ---
-# <a name="qualifying-access-with-business-logic-in-c"></a>Qualificazione dell'accesso con la logica di business in C++
+# <a name="qualifying-access-with-business-logic-in-c"></a>Qualifica dell'accesso con la logica di business in C++
 
-Usare gli script delle regole business per fornire la logica di run-time per il controllo dell'accesso. Per ulteriori informazioni sulle regole business, vedere [regole business](business-rules.md).
+Usare gli script delle regole business per fornire logica di run-time per il controllo dell'accesso. Per altre informazioni sulle regole business, vedere [Business Rules](business-rules.md).
 
-Per assegnare una regola business a un'attività, impostare innanzitutto la proprietà [**BizRuleLanguage**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrulelanguage) dell'oggetto [**IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) che rappresenta l'attività. Lo script deve essere in Visual Basic Scripting Edition o JScript. Dopo aver specificato il linguaggio di script, impostare la proprietà [**BizRule**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrule) dell'oggetto **IAzTask** con una rappresentazione di stringa dello script.
+Per assegnare una regola business a un'attività, impostare prima di tutto la [**proprietà BizRuleLanguage**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrulelanguage) [**dell'oggetto IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) che rappresenta l'attività. Lo script deve essere in Visual Basic Scripting Edition o JScript. Dopo aver specificato il linguaggio di script, impostare la [**proprietà BizRule**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrule) dell'oggetto **IAzTask** con una rappresentazione di stringa dello script.
 
-Quando si verifica l'accesso per un'operazione contenuta da un'attività a cui è associata una regola business, l'applicazione deve creare due matrici con le stesse dimensioni da passare come parametri *varParameterNames* e *VarParameterValues* del metodo [**IAzClientContext:: AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) . Per informazioni sulla creazione di un contesto client, vedere [definizione di un contesto client con gestione autorizzazioni in C++](establishing-a-client-context-with-authorization-manager-in-c--.md).
+Quando si verifica l'accesso per un'operazione contenuta in un'attività a cui è associata una regola business, l'applicazione deve creare due matrici delle stesse dimensioni da passare ai parametri *varParameterNames* e *varParameterValues* del metodo [**IAzClientContext::AccessCheck.**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) Per informazioni sulla creazione di un contesto client, vedere [Stabilire un contesto client con Gestione autorizzazioni in C++.](establishing-a-client-context-with-authorization-manager-in-c--.md)
 
-Il metodo [**IAzClientContext:: AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) crea un oggetto [**AzBizRuleContext**](/windows/desktop/api/Azroles/nn-azroles-iazbizrulecontext) che viene passato allo script della regola business. Lo script imposta quindi la proprietà [**BusinessRuleResult**](/windows/desktop/api/Azroles/nf-azroles-iazbizrulecontext-put_businessruleresult) dell'oggetto **AzBizRuleContext** . Il valore **true** indica che è stato concesso l'accesso e il valore **false** indica che l'accesso è stato negato.
+Il [**metodo IAzClientContext::AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) crea un [**oggetto AzBizRuleContext**](/windows/desktop/api/Azroles/nn-azroles-iazbizrulecontext) che viene passato allo script della regola business. Lo script imposta quindi la [**proprietà BusinessRuleResult**](/windows/desktop/api/Azroles/nf-azroles-iazbizrulecontext-put_businessruleresult) dell'oggetto **AzBizRuleContext.** Il valore **TRUE** indica che l'accesso è concesso e il valore **FALSE** indica che l'accesso è negato.
 
-Non è possibile assegnare uno script della regola business a un oggetto [**IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) contenuto in un oggetto [**IAzScope**](/windows/desktop/api/Azroles/nn-azroles-iazscope) delegato.
+Uno script della regola business non può essere assegnato a [**un oggetto IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) contenuto in un oggetto [**IAzScope**](/windows/desktop/api/Azroles/nn-azroles-iazscope) delegato.
 
-Nell'esempio seguente viene illustrato come utilizzare uno script della regola business per controllare l'accesso di un client a un'operazione. Nell'esempio si presuppone che esista un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C, che questo archivio contiene un'applicazione denominata Expense, un'attività denominata Submit Expense e un'operazione denominata UseFormControl e che la variabile hToken contiene un token client valido.
+L'esempio seguente illustra come usare uno script di regole business per controllare l'accesso di un client a un'operazione. L'esempio presuppone che nella directory radice dell'unità C sia presente un archivio criteri XML denominato MyStore.xml, che l'archivio contenga un'applicazione denominata Expense, un'attività denominata Submit Expense e un'operazione denominata UseFormControl e che la variabile hToken contenga un token client valido.
 
 
 ```C++

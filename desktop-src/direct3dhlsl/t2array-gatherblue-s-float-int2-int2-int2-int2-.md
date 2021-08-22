@@ -1,6 +1,6 @@
 ---
-title: Funzione GatherBlue (S, float, int2, int2, int2, int2) (riferimenti per HLSL)
-description: Restituisce i componenti blu dei quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare. | Funzione GatherBlue (S, float, int2, int2, int2, int2) (riferimenti per HLSL)
+title: Funzione GatherBlue(S,float,int2,int2,int2,int2) (riferimento HLSL)
+description: Restituisce i componenti blu dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare. | Funzione GatherBlue(S,float,int2,int2,int2,int2) (riferimento HLSL)
 ms.assetid: 0DDD3235-4F12-4D74-975A-F70A271C1FC0
 keywords:
 - Funzione GatherBlue HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a5676d9d6b25c6e67123c59dac14efa234386d4e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8d23ae18d403f83145b5746fa33b56fbadb9ea5d9a4b3f5b3ca79e13e5da7eb4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104353541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043659"
 ---
-# <a name="gatherbluesfloatint2int2int2int2-function-hlsl-reference"></a>Funzione GatherBlue (S, float, int2, int2, int2, int2) (riferimenti per HLSL)
+# <a name="gatherbluesfloatint2int2int2int2-function-hlsl-reference"></a>Funzione GatherBlue(S,float,int2,int2,int2,int2) (riferimento HLSL)
 
-Restituisce i componenti blu dei quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare.
+Restituisce i componenti blu dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,48 +53,48 @@ Indice del campionatore in base zero.
 
 </dd> <dt>
 
-*Posizione* \[ in\]
+*Posizione* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-Coordinate di esempio (u, v).
+Coordinate di esempio (u,v).
 
 </dd> <dt>
 
-*Offset1* \[ in\]
+*Offset1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int2**
 
-Primo componente di offset applicato alle coordinate di trama prima del campionamento.
+Primo componente di offset applicato alle coordinate della trama prima del campionamento.
 
 </dd> <dt>
 
-*Offset2* \[ in\]
+*Offset2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int2**
 
-Secondo componente di offset applicato alle coordinate di trama prima del campionamento.
+Secondo componente di offset applicato alle coordinate della trama prima del campionamento.
 
 </dd> <dt>
 
-*Offset3* \[ in\]
+*Offset3* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int2**
 
-Terzo componente di offset applicato alle coordinate di trama prima del campionamento.
+Terzo componente di offset applicato alle coordinate della trama prima del campionamento.
 
 </dd> <dt>
 
-*Offset4* \[ in\]
+*Offset4* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int2**
 
-Quarto componente di offset applicato alle coordinate di trama prima del campionamento.
+Quarto componente di offset applicato alle coordinate della trama prima del campionamento.
 
 </dd> </dl>
 
@@ -102,7 +102,7 @@ Quarto componente di offset applicato alle coordinate di trama prima del campion
 
 Tipo: **TemplateType**
 
-Valore a quattro componenti il cui tipo corrisponde al tipo di modello.
+Valore a quattro componenti il cui tipo è uguale al tipo di modello.
 
 ## <a name="remarks"></a>Commenti
 
@@ -112,7 +112,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

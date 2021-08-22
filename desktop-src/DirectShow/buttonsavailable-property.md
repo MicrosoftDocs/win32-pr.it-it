@@ -1,15 +1,15 @@
 ---
-description: La proprietà ButtonsAvailable Recupera il numero totale di pulsanti nel menu corrente.
+description: La proprietà ButtonsAvailable recupera il numero totale di pulsanti nel menu corrente.
 ms.assetid: 4df3a7e7-1be4-4cc7-ad61-567f7f45811e
 title: Proprietà ButtonsAvailable
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72cab4afdd9f6e23a376bb72885810b8464f180d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a16e14675238711ef0b572477334fecba0311ca2bb54d67fc3fe012ae6d1ede9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955560"
 ---
 # <a name="buttonsavailable-property"></a>Proprietà ButtonsAvailable
 
@@ -30,7 +30,7 @@ Restituisce un valore intero che rappresenta il numero di pulsanti.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è di sola lettura e non prevede alcun valore predefinito. Utilizzare questo metodo quando si implementa la gestione personalizzata del mouse dopo l'impostazione di [**DisableAutoMouseProcessing**](disableautomouseprocessing-property.md) su **true**.
+Questa proprietà è di sola lettura senza alcun valore predefinito. Usare questo metodo quando si implementa la gestione personalizzata del mouse dopo l'impostazione [**di DisableAutoMouseProcessing**](disableautomouseprocessing-property.md) su **true.**
 
 Chiamare questo metodo per recuperare il limite superiore per l'intervallo di numeri di pulsante validi.
 

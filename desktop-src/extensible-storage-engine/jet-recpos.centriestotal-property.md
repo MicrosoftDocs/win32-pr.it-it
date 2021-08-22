@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_RECPOS. centriesTotal'
-title: Proprietà JET_RECPOS. centriesTotal
+description: 'Altre informazioni su: JET_RECPOS.centriesTotal'
+title: JET_RECPOS.centriesTotal
 TOCTitle: 'centriesTotal property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_RECPOS.centriesTotal
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_recpos.centriestotal(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0bc2c16b85924a1e4e4dc7d985eeec40214d82e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b2d76079422d2d09016d42752c742a5e6da761bed5cc69f4ca0be632212194ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104346676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118763983"
 ---
-# <a name="jet_recposcentriestotal-property"></a>Proprietà JET_RECPOS. centriesTotal
+# <a name="jet_recposcentriestotal-property"></a>JET_RECPOS.centriesTotal
 
 Ottiene o imposta il numero approssimativo di voci nell'indice.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,14 +62,14 @@ public long centriesTotal { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int64](/dotnet/api/system.int64)  
+Tipo: [System.Int64](/dotnet/api/system.int64)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_RECPOS](./jet-recpos-class.md)
+[JET_RECPOS classe](./jet-recpos-class.md)
 
-[Membri JET_RECPOS](./jet-recpos-members.md)
+[JET_RECPOS membri](./jet-recpos-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

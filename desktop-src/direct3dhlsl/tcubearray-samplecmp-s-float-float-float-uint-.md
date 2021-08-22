@@ -1,6 +1,6 @@
 ---
-title: 'Funzione SampleCmp:: SampleCmp (S, float, float, float, uint) per TextureCubeArray'
-description: 'Esegue il campionamento di una trama, usando un valore di confronto per rifiutare esempi, con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) di esempio in. | Funzione SampleCmp:: SampleCmp (S, float, float, float, uint) per TextureCubeArray'
+title: Funzione SampleCmp::SampleCmp(S,float,float,float,uint) per TextureCubeArray
+description: Campionare una trama, usando un valore di confronto per rifiutare i campioni, con un valore facoltativo a cui stringere i valori del livello di dettaglio del campione. | Funzione SampleCmp::SampleCmp(S,float,float,float,uint) per TextureCubeArray
 ms.assetid: 5596D341-C057-414D-B1EC-7AA78693D32C
 keywords:
 - Funzione SampleCmp HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 20626fe9d209ef4bfb64805f1a12561fd324f5a2
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 0842296ad5f7f4dd85be50c6be6f7e4b9c24c9bc99b00fda0c7f4fb376d8a768
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104996353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043095"
 ---
-# <a name="samplecmpsamplecmpsfloatfloatfloatuint-function-for-texturecubearray"></a>Funzione SampleCmp:: SampleCmp (S, float, float, float, uint) per TextureCubeArray
+# <a name="samplecmpsamplecmpsfloatfloatfloatuint-function-for-texturecubearray"></a>Funzione SampleCmp::SampleCmp(S,float,float,float,uint) per TextureCubeArray
 
-Esegue il campionamento di una trama, usando un valore di confronto per rifiutare esempi, con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) di esempio in. Restituisce lo stato dell'operazione.
+Campionare una trama, usando un valore di confronto per rifiutare i campioni, con un valore facoltativo a cui stringere i valori del livello di dettaglio del campione. Restituisce lo stato dell'operazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,11 +48,11 @@ DXGI_FORMAT SampleCmp(
 
 Tipo: **SamplerState**
 
-[Stato del campionatore](dx-graphics-hlsl-sampler.md). Si tratta di un oggetto dichiarato in un file di effetti che contiene le assegnazioni di stato.
+Stato [del campionatore.](dx-graphics-hlsl-sampler.md) Si tratta di un oggetto dichiarato in un file di effetto che contiene assegnazioni di stato.
 
 </dd> <dt>
 
-*Posizione* \[ in\]
+*Località* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
@@ -61,7 +61,7 @@ Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
 
 
 
-| Tipo di Texture-Object                    | Tipo di parametro |
+| tipo Texture-Object                    | Tipo di parametro |
 |----------------------------------------|----------------|
 | Texture1D                              | float          |
 | Texture1DArray, Texture2D              | float2         |
@@ -74,38 +74,38 @@ Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
 
 </dd> <dt>
 
-*CompareValue* \[ in\]
+*CompareValue* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-Valore a virgola mobile da utilizzare come valore di confronto.
+Valore a virgola mobile da usare come valore di confronto.
 
 </dd> <dt>
 
-*Blocca* \[ in\]
+*Clamp* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-Valore facoltativo a cui bloccare i valori LOD di esempio. Se ad esempio si passa 2.0 f per il valore del morsetto, si garantisce che nessun singolo campione acceda a un livello MIP inferiore a 2.0 f.
+Valore facoltativo a cui impostare i valori LOD di esempio. Ad esempio, se si passa 2.0f per il valore clamp, si garantisce che nessun singolo campione accerta un livello mip inferiore a 2,0f.
 
 </dd> <dt>
 
-*Stato* \[ di out\]
+*Stato* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Stato dell'operazione. Non è possibile accedere direttamente allo stato; passare invece lo stato alla funzione intrinseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** restituisce **true** se tutti i valori dell'operazione di **campionamento**, **raccolta** o **caricamento** corrispondente hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata](/windows/desktop/direct3d11/direct3d-11-2-features). Se sono stati ricavati valori da un riquadro non mappato, **CheckAccessFullyMapped** restituisce **false**.
+Stato dell'operazione. Non è possibile accedere direttamente allo stato. passare invece lo stato alla [**funzione intrinseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** restituisce **TRUE** se tutti i valori dell'operazione **Sample**, **Gather** o **Load** corrispondenti hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata.](/windows/desktop/direct3d11/direct3d-11-2-features) Se sono stati prelevati valori da un riquadro non mappato, **CheckAccessFullyMapped** restituisce **FALSE.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **DXGI \_ Format**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
+Tipo: **[ **FORMATO \_ DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-Il formato di trama, che è uno dei valori tipizzati elencati [**nel \_ formato DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+Formato della trama, ovvero uno dei valori tipi di dati elencati in [**FORMATO DXGI. \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
 ## <a name="see-also"></a>Vedi anche
 

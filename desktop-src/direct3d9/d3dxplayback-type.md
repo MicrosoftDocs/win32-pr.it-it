@@ -1,7 +1,7 @@
 ---
-description: Definisce il tipo di modalità di ciclo del set di animazioni utilizzato per la riproduzione.
+description: Definisce il tipo di modalità di ciclo del set di animazioni usate per la riproduzione.
 ms.assetid: 2ce26bf0-2b33-4193-a58f-03493a051351
-title: Enumerazione D3DXPLAYBACK_TYPE (D3dx9anim. h)
+title: D3DXPLAYBACK_TYPE enumerazione (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: 0ce95b4765ec678c43c8e0ed92008deeb9927298
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 642c3e1d49792016ea1d161352d4dda9fc1330aab544880e754659c735d1ecd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103886277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044789"
 ---
-# <a name="d3dxplayback_type-enumeration"></a>\_Enumerazione del tipo D3DXPLAYBACK
+# <a name="d3dxplayback_type-enumeration"></a>Enumerazione D3DXPLAYBACK \_ TYPE
 
-Definisce il tipo di modalità di ciclo del set di animazioni utilizzato per la riproduzione.
+Definisce il tipo di modalità di ciclo del set di animazioni usate per la riproduzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,31 +42,31 @@ typedef enum D3DXPLAYBACK_TYPE {
 
 <dl> <dt>
 
-<span id="D3DXPLAY_LOOP"></span><span id="d3dxplay_loop"></span>**\_Ciclo D3DXPLAY**
+<span id="D3DXPLAY_LOOP"></span><span id="d3dxplay_loop"></span>**CICLO D3DXPLAY \_**
 </dt> <dd>
 
 L'animazione si ripete all'infinito.
 
 </dd> <dt>
 
-<span id="D3DXPLAY_ONCE"></span><span id="d3dxplay_once"></span>**D3DXPLAY \_ una volta**
+<span id="D3DXPLAY_ONCE"></span><span id="d3dxplay_once"></span>**D3DXPLAY \_ UNA SOLA VOLTA**
 </dt> <dd>
 
-L'animazione viene riprodotta una volta e quindi si interrompe sull'ultimo frame.
+L'animazione viene riprodotta una sola volta e quindi si arresta nell'ultimo fotogramma.
 
 </dd> <dt>
 
-<span id="D3DXPLAY_PINGPONG"></span><span id="d3dxplay_pingpong"></span>**\_Pingpong D3DXPLAY**
+<span id="D3DXPLAY_PINGPONG"></span><span id="d3dxplay_pingpong"></span>**D3DXPLAY \_ PINGPONG**
 </dt> <dd>
 
-L'animazione si alterna all'infinito tra la riproduzione in avanti e la riproduzione a ritroso.
+L'animazione alterna all'infinito tra la riproduzione in avanti e la riproduzione all'indietro.
 
 </dd> <dt>
 
-<span id="D3DXPLAY_FORCE_DWORD"></span><span id="d3dxplay_force_dword"></span>**D3DXPLAY \_ Force \_ DWORD**
+<span id="D3DXPLAY_FORCE_DWORD"></span><span id="d3dxplay_force_dword"></span>**D3DXPLAY \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori permetterebbero che questa enumerazione venga compilata in una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbero la compilazione di questa enumerazione a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 
@@ -76,7 +76,7 @@ Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alc
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9anim. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9anim.h</dt> </dl> |
 
 
 

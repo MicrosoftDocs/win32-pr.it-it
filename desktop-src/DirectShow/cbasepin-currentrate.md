@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo PercentualeCorrente recupera la velocità del segmento, impostata dal Metodo CBasePin:: NewSegment.'
+description: Il metodo CurrentRate recupera la frequenza dei segmenti, impostata dal metodo CBasePin::NewSegment.
 ms.assetid: 19780dd2-2dcf-4e5d-8a70-a46be05e040c
-title: Metodo CBasePin. PercentualeCorrente (Amfilter. h)
+title: Metodo CBasePin.CurrentRate (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: adffcc02aad4c5516a8e92c247e47b7dbf389d73
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8c522a76aebce39e4670d4d00b3344bf56d20172c2d54243322dd36a5d203226
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955200"
 ---
-# <a name="cbasepincurrentrate-method"></a>CBasePin. PercentualeCorrente, metodo
+# <a name="cbasepincurrentrate-method"></a>Metodo CBasePin.CurrentRate
 
-Il `CurrentRate` metodo recupera la velocità del segmento, impostata dal metodo [**CBasePin:: NewSegment**](cbasepin-newsegment.md) .
+Il `CurrentRate` metodo recupera la frequenza dei segmenti, impostata dal metodo [**CBasePin::NewSegment.**](cbasepin-newsegment.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore di [**CBasePin:: m \_ drate**](cbasepin-m-drate.md).
+Restituisce il valore di [**CBasePin::m \_ dRate**](cbasepin-m-drate.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce il valore di [**CBasePin:: m \_ drate**](cbasepin-m-drate.md).
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

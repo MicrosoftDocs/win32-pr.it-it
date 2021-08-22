@@ -1,22 +1,22 @@
 ---
 title: Sintassi degli attributi ADSI
-description: A ogni attributo della directory è associata una sintassi. Ad esempio, Integer, String, numeric e così via. ADSI definisce la propria sintassi che esegue il mapping alla sintassi della directory nativa. In questa sezione vengono descritti i tipi di sintassi degli attributi in ADSI.
+description: A ogni attributo nella directory è associata una sintassi. Ad esempio, integer, stringa, numerico e così via. ADSI definisce la propria sintassi che esegue il mapping alla sintassi della directory nativa. Questa sezione descrive i tipi di sintassi degli attributi in ADSI.
 ms.assetid: 83d3d42f-e35e-4bd1-b26e-d141e9ec9c31
 ms.tgt_platform: multiple
 keywords:
-- attributi ADSI, sintassi
+- attributi ADSI , sintassi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b23d58b48b27fa88077f388b47535afd1dbd0a4f
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 310a678c48051909e4a3e7555b9d8ff0a508c339cfcd41ed6c66286529cadde1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103730215"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023929"
 ---
 # <a name="adsi-attribute-syntax"></a>Sintassi degli attributi ADSI
 
-A ogni attributo della directory è associata una sintassi. Ad esempio, Integer, String, numeric e così via. ADSI definisce la propria sintassi che esegue il mapping alla sintassi della directory nativa. In questa sezione vengono descritti i tipi di sintassi degli attributi in ADSI.
+A ogni attributo nella directory è associata una sintassi. Ad esempio, integer, stringa, numerico e così via. ADSI definisce la propria sintassi che esegue il mapping alla sintassi della directory nativa. Questa sezione descrive i tipi di sintassi degli attributi in ADSI.
 
 ## <a name="distinguished-name-string"></a>Stringa del nome distinto
 
@@ -27,7 +27,7 @@ Syntax Type: ADSTYPE_DN_STRING
 
 
 
-Il nome distinto è utile per collegare due oggetti. Ad esempio, è possibile creare un collegamento che rende l'oggetto Alice un responsabile dell'oggetto Bob. Se l'oggetto Alice si sposta in una posizione diversa, il collegamento al gestore tra Alice e Bob viene aggiornato automaticamente.
+Il nome distinto è utile per collegare due oggetti. Ad esempio, può creare un collegamento che rende l'oggetto Alice un gestore dell'oggetto Bob. Se l'oggetto Alice viene spostato in una posizione diversa, il collegamento di gestione tra Alice e Bob viene aggiornato automaticamente.
 
 Il nome distinto deve contenere un oggetto nome distinto valido. Se il nome distinto non corrisponde a un oggetto esistente valido, la maggior parte dei server rifiuta la richiesta e restituisce un errore di violazione del vincolo.
 
@@ -46,7 +46,7 @@ printf("%S\n", pInfo->pADsValues->DNString );
 
 
 
-## <a name="case-exact-string-and-case-ignore-string"></a>Stringa del case esatta e maiuscole/minuscole
+## <a name="case-exact-string-and-case-ignore-string"></a>Stringa esatta di maiuscole/minuscole e stringa di ignorare maiuscole/minuscole
 
 
 ```VB
@@ -55,12 +55,12 @@ Syntax Types: ADSTYPE_CASE_IGNORE_STRING, ADSTYPE_CASE_EXACT_STRING.
 
 
 
-Il caso stringa esatta è una stringa con distinzione tra maiuscole e minuscole, mentre case ignora stringa è una stringa senza distinzione tra maiuscole e minuscole Una percentuale elevata di attributi nella directory utilizza questa sintassi.
+Stringa esatta di maiuscole/minuscole è una stringa con distinzione tra maiuscole e minuscole, mentre Stringa di ignorare maiuscole/minuscole è una stringa senza distinzione tra maiuscole e minuscole. Una percentuale elevata di attributi nella directory usa questa sintassi.
 
 > [!Note]  
-> La directory potrebbe non essere archiviata come stringa Unicode. Tuttavia, ADSI accetta e restituisce stringhe Unicode.
+> La directory può o meno archiviare questa stringa come stringa Unicode. TUTTAVIA, ADSI accetta e restituisce stringhe Unicode.
 
- 
+ 
 
 Esempio:
 
@@ -86,7 +86,7 @@ Syntax Type: ADSTYPE_PRINTABLE_STRING
 
 
 
-Questa sintassi viene utilizzata per gli attributi con valori di stringa in cui maiuscole e minuscole sono considerati diversi per i confronti, ad esempio, "FABRIKAM" e "Fabrikam" non corrispondono. ADSI accetta qualsiasi contenuto per una stringa stampabile; non tenta di verificare che siano effettivamente stampabili.
+Questa sintassi viene usata per gli attributi con valori stringa in cui maiuscole e minuscole sono considerate non uguali per i confronti, ad esempio "FABRIKAM" e "Fabrikam" non corrispondono. ADSI accetta qualsiasi contenuto per printable-string; non tenta di verificare che siano effettivamente stampabili.
 
 ## <a name="numeric-string"></a>Stringa numerica
 
@@ -97,7 +97,7 @@ Syntax Type: ADSTYPE_NUMERIC_STRING
 
 
 
-In questa sintassi, le stringhe corrispondono come in una stringa stampabile, ad eccezione del fatto che tutti gli spazi vengono ignorati nei confronti. ADSI non esegue il controllo del valore per garantire che vengano visualizzati solo numeri e spazi nei valori di questa sintassi. Active Directory accetta qualsiasi contenuto per una stringa numerica; non verifica che i caratteri siano numerici.
+In questa sintassi, le stringhe corrispondono come in Stringa stampabile, ad eccezione del fatto che tutti gli spazi vengono ignorati nei confronti. ADSI non esegue il controllo dei valori per garantire che nei valori di questa sintassi vengano visualizzati solo numeri e spazi. Active Directory accetta qualsiasi contenuto per una stringa numerica. non verifica che i caratteri siano numerici.
 
 ## <a name="utc-time"></a>Ora UTC
 
@@ -108,18 +108,18 @@ Syntax Type: ADSTYPE_UTC_TIME
 
 
 
-Questa sintassi archivia la data e l'ora in un'unica stringa. Il formato della stringa è costituito da tre parti concatenate: (1) AAMMGG; (2) HHMM o HHMMSS (entrambi sono accettabili); e (3) "Z" per indicare che l'ora specificata è ora di Greenwich (GMT) o "+/-HHMM" per indicare che l'ora specificata è l'ora locale con il differenziale specificato da GMT. Il differenziale è basato sulla formula: GMT = local + differenziale.
+Questa sintassi archivia la data e l'ora in una singola stringa. Il formato della stringa è costituito da tre parti concatenate: (1) YYMMDD; (2) HHMM o HHMMSS (entrambi sono accettabili); e (3) "Z" per indicare che l'ora specificata è l'ora di Greenwich Mean Time (GMT) o "+/-HHMM" per indicare che l'ora specificata è l'ora locale con il differenziale specificato rispetto a GMT. Il differenziale si basa sulla formula GMT=Local+differenziale.
 
 > [!Note]  
 > Le prime due cifre dell'anno non vengono archiviate in questa stringa.
 
- 
+ 
 
-Alcuni esempi di valori validi sono "9101311455Z", "910131145503Z", "9101314455-0500", "910131145503 + 0130". Questa stringa viene archiviata come caratteri ASCII a byte singolo e non viene archiviato alcun numero di tabella codici.
+Alcuni esempi di valori validi sono "9101311455Z", "910131145503Z", "91013144555-0500", "910131145503+0130". Questa stringa viene archiviata come caratteri ASCII a byte singolo e non viene archiviato alcun numero di tabella codici.
 
-Anche se l'ordinamento è supportato, viene eseguito solo come ordinamento di stringhe ASCII senza distinzione tra maiuscole e minuscole, non interpretando correttamente il significato delle stringhe.
+Sebbene l'ordinamento sia supportato, viene eseguito solo come ordinamento di stringhe ASCII senza distinzione tra maiuscole e minuscole, non interpretando correttamente il significato delle stringhe.
 
-Qualsiasi valore stringa valido viene accettato. Non viene effettuato alcun tentativo di verificare che la stringa contenga una stringa di ora valida.
+Qualsiasi valore stringa valido viene accettato. Non viene effettuato alcun tentativo di assicurarsi che la stringa contenga una stringa di ora valida.
 
 ## <a name="generalized-time"></a>Ora generalizzata
 
@@ -130,13 +130,13 @@ Syntax Type: ADSTYPE_UTC_TIME
 
 
 
-Se viene definito un nuovo attributo per archiviare i valori temporali, è consigliabile usare la sintassi GeneralizedTime. La sintassi GeneralizedTime usa quattro caratteri per rappresentare l'anno anziché due come con UTCTime.
+Se viene definito un nuovo attributo per archiviare i valori di ora, è necessario usare la sintassi GeneralizedTime. La sintassi GeneralizedTime usa quattro caratteri per rappresentare l'anno anziché due come con UTCTime.
 
-Il formato della sintassi GeneralizedTime è "ad aaaammgghhmmss. 0Z". Un esempio di valore accettabile è "20010928060000.0 Z". "Z" indica nessun differenziale temporale. Active Directory archivia data/ora come ora di Greenwich (GMT). Se non viene specificato alcun intervallo di tempo, GMT è il valore predefinito.
+Il formato della sintassi GeneralizedTime è "AAAAMMGGHHMMSS.0Z". Un esempio di valore accettabile è "20010928060000.0Z". La "Z" non indica differenze di tempo. Active Directory archivia data/ora come ora di Greenwich (GMT). Se non viene specificato alcun differenziale di ora, GMT è l'impostazione predefinita.
 
-Se l'ora viene specificata in un fuso orario diverso da GMT, il differenziale tra il fuso orario e il GMT viene aggiunto alla stringa anziché "Z" nel formato "ad aaaammgghhmmss. 0 \[ +/- \] hhmm". Un esempio di valore accettabile è "20010928060000.0 + 0200".
+Se l'ora viene specificata in un fuso orario diverso da GMT, il differenziale tra il fuso orario e GMT viene aggiunto alla stringa anziché "Z" nel formato "YYYYMMDDHHMMSS.0 \[ +/- \] HHMM". Un esempio di valore accettabile è "20010928060000.0+0200".
 
-Il differenziale è basato sulla formula: GMT = local + differenziale.
+Il differenziale si basa sulla formula GMT=Local+differenziale.
 
 ## <a name="boolean"></a>Boolean
 
@@ -147,9 +147,9 @@ Syntax Type: ADSTYPE_BOOLEAN
 
 
 
-Active Directory accetta solo un valore con segno a 32 bit per questa sintassi. Gestisce zero come **false** e tutti i valori diversi da zero come **true**.
+Active Directory accetta solo un valore a 32 bit firmato per questa sintassi. Gestisce zero come **FALSE** e tutti i valori diversi da zero come **TRUE.**
 
-## <a name="integer"></a>Integer
+## <a name="integer"></a>Intero
 
 
 ```VB
@@ -160,7 +160,7 @@ Syntax Type: ADSTYPE_INTEGER
 
 Valore numerico con segno a 32 bit.
 
-## <a name="large-integer"></a>Integer grande
+## <a name="large-integer"></a>Numero intero grande
 
 
 ```VB
@@ -169,7 +169,7 @@ Syntax Type: ADSTYPE_LARGE_INTEGER
 
 
 
-Valore numerico con segno a 64 bit. I numeri interi di grandi dimensioni vengono effettivamente implementati come oggetti COM nell'interfaccia [**IADsLargeInteger**](/windows/desktop/api/Iads/nn-iads-iadslargeinteger) . I metodi **HighPart** e **LowPart** vengono usati per accedere alle metà di 2 32 bit del valore Integer grande.
+Valore numerico con segno a 64 bit. I numeri interi di grandi dimensioni vengono effettivamente implementati come oggetti COM [**nell'interfaccia IADsLargeInteger.**](/windows/desktop/api/Iads/nn-iads-iadslargeinteger) I **metodi HighPart** **e LowPart** vengono usati per accedere alle due metà a 32 bit del valore integer di grandi dimensioni.
 
 Esempio:
 
@@ -184,7 +184,7 @@ Debug.Print x.LowPart
 
 
 
-## <a name="octet-string"></a>Stringa ottetto
+## <a name="octet-string"></a>Stringa dell'ottetto
 
 
 ```VB
@@ -193,7 +193,7 @@ Syntax Type: ADSTYPE_OCTET_STRING
 
 
 
-Una stringa di ottetto viene restituita come matrice di byte Variant. È costituito da un conteggio delle dimensioni (numero di ottetti) seguito da una serie di ottetti. Un ottetto è un byte a 8 bit, quindi una serie di ottetti è una stringa di dati binari.
+Una stringa dell'ottetto viene restituita come matrice di byte variant. È costituito da un numero di dimensioni (numero di ottetti) seguito da una serie di ottetti. Un ottetto è un byte a 8 bit, quindi una serie di ottetti è una stringa di dati binari.
 
 ## <a name="object-class"></a>Classe Object
 
@@ -204,7 +204,7 @@ Syntax Type: ADSTYPE_CASE_IGNORE_STRING
 
 
 
-Object Class è un identificatore di oggetto univoco per una determinata classe di schema. La classe di ogni istanza di oggetto è identificata dall'attributo **objectClass** . Al momento della creazione, non è possibile modificare mai una classe di oggetti. **objectClass** è un attributo a più valori. Viene elencata la classe specifica dell'oggetto e le classi di tutte le classi strutturali o astratte da cui è stata derivata la classe specifica. Sono incluse le classi Top, da cui derivano tutte le altre classi. Active Directory non elenca le classi ausiliarie nell'attributo **objectClass** .
+Classe di oggetti è un identificatore di oggetto univoco per una determinata classe dello schema. La classe di ogni istanza di oggetto è identificata **dall'attributo objectClass.** Dopo la creazione, non è mai possibile modificare una classe di oggetti. **objectClass** è un attributo con più valori. Elenca la classe specifica dell'oggetto e le classi di tutte le classi strutturali o astratte da cui è stata derivata la classe specifica. Ciò include Top, la classe da cui tutte le altre classi sono infine derivate. Active Directory non elenca le classi ausiliarie **nell'attributo objectClass.**
 
 ## <a name="security-descriptor"></a>Descrittore di sicurezza
 
@@ -215,13 +215,13 @@ Syntax Type: ADSTYPE_NT_SECURITY_DESCRIPTOR
 
 
 
-I diritti di accesso definiscono le capacità di un'entità di sicurezza quando tenta di eseguire un'operazione su un oggetto Active Directory. Un descrittore di sicurezza descrive le informazioni di controllo di accesso associate a un oggetto.
+I diritti di accesso definiscono le capacità di un'entità di sicurezza quando tenta di eseguire un'operazione su un oggetto di Active Directory. Un descrittore di sicurezza descrive le informazioni di controllo di accesso associate a un oggetto .
 
-Il descrittore di sicurezza viene archiviato come proprietà di un oggetto directory nella proprietà **ntSecurityDescriptor** . Quando un utente autenticato tenta di accedere a un oggetto directory, il server di directory determina l'accesso concesso o negato all'utente in base al descrittore di sicurezza dell'oggetto.
+Il descrittore di sicurezza viene archiviato come proprietà di un oggetto directory nella **proprietà nTSecurityDescriptor.** Quando un utente autenticato tenta di accedere a un oggetto directory, il server di directory determina l'accesso concesso o negato all'utente in base al descrittore di sicurezza dell'oggetto.
 
-L'enumerazione di enumerazione del [**\_ \_ controllo \_ SD di ADS**](/windows/win32/api/iads/ne-iads-ads_sd_control_enum) specifica i flag di controllo per un descrittore di sicurezza.
+[**L'enumerazione \_ ADS SD \_ CONTROL \_ ENUM**](/windows/win32/api/iads/ne-iads-ads_sd_control_enum) specifica i flag di controllo per un descrittore di sicurezza.
 
-Nell'esempio di codice riportato di seguito viene illustrato come ottenere un descrittore di sicurezza.
+Nell'esempio di codice seguente viene illustrato come ottenere un descrittore di sicurezza.
 
 
 ```VB
@@ -257,6 +257,6 @@ Set sacl = sd.SystemAcl
 [Come specificare i valori di confronto](/windows/desktop/AD/how-to-specify-comparison-values)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
 description: Elimina le credenziali utente usate per l'identità connessa.
 ms.assetid: EB32832D-9A8C-4CEB-897A-7E9D24FF84DD
-title: Funzione DeleteConnectedIdentity (Indentitystore. h)
+title: Funzione DeleteConnectedIdentity (Indentitystore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - Indentitystore.h
-ms.openlocfilehash: 8079985f916e996a56b4203ad6ad065c1b7664e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e59beeb17f7d6d0cced96daaceef7440523c3ce603d759f18cc69a93c0ab05c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119008469"
 ---
-# <a name="deleteconnectedidentity-function"></a>DeleteConnectedIdentity (funzione)
+# <a name="deleteconnectedidentity-function"></a>Funzione DeleteConnectedIdentity
 
 Elimina le credenziali utente usate per l'identità connessa.
 
@@ -42,7 +42,7 @@ SEC_ENTRY DeleteConnectedIdentity(
 
 <dl> <dt>
 
-*ProviderHandle* \[ in\]
+*ProviderHandle* \[ Pollici\]
 </dt> <dd>
 
 Handle del provider di identità.
@@ -52,18 +52,18 @@ Handle del provider di identità.
 *UserToken* \[ in, facoltativo\]
 </dt> <dd>
 
-Token dell'utente connesso il cui account verrà convertito in un account locale. Se *userToken* non è **null**, il provider di identità utilizza questo token per caricare il profilo utente e pulire gli stati connessi. Se *userToken* è **null**, LSA forza la disconnessione. Il provider di identità deve pulire tutti gli stati connessi globali per questo utente, ma non è necessario che il provider ripulisca gli stati connessi nel profilo utente.
+Token dell'utente connesso il cui account verrà convertito in un account locale. Se *UserToken* non è **NULL,** il provider di identità usa questo token per caricare il profilo utente e pulire gli stati connessi. Se *UserToken* è **NULL,** LSA forza la disconnessione. Il provider di identità deve pulire tutti gli stati connessi globali per questo utente, ma il provider non deve pulire gli stati connessi nel profilo utente.
 
 </dd> <dt>
 
-*UserSID* \[ in\]
+*UserSid* \[ Pollici\]
 </dt> <dd>
 
-SID primario dell'utente connesso. Se *userToken* non è **null**, questo parametro è il SID utente del token. Se *userToken* è **null**, questo parametro viene usato per identificare l'utente connesso e pulire gli Stati di connessione globale di tale utente.
+SID primario dell'utente connesso. Se *UserToken* non è **NULL,** questo parametro è il SID utente del token. Se *UserToken* è **NULL,** questo parametro viene usato per identificare l'utente connesso e pulire gli stati di connessione globali dell'utente.
 
 </dd> <dt>
 
-*IdentityUserName* \[ in\]
+*IdentityUserName* \[ Pollici\]
 </dt> <dd>
 
 Nome utente dell'identità.
@@ -80,9 +80,9 @@ Se la funzione ha esito negativo, la funzione può restituire uno dei codici di 
 
 | Valore restituito                                                                                               | Descrizione                                                                                                                                                 |
 |------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>STATO \_ parametro non valido \_</dt> </dl>      | Un parametro non è valido.<br/>                                                                                                                        |
-| <dl> <dt>STATO \_ senza \_ tale \_ utente</dt> </dl>          | L'utente identificato da *UserSID* non esiste, non è attualmente connesso o non esiste alcuna identità il cui nome utente corrisponde a *IdentityUserName*.<br/> |
-| <dl> <dt>STATO \_ risorse insufficienti \_</dt> </dl> | Memoria insufficiente per elaborare la richiesta.<br/>                                                                                               |
+| <dl> <dt>PARAMETRO \_ STATUS NON \_ VALIDO</dt> </dl>      | Un parametro non è valido.<br/>                                                                                                                        |
+| <dl> <dt>STATO \_ NESSUN UTENTE DI QUESTO \_ \_ TIPO</dt> </dl>          | L'utente identificato da *UserSid* non esiste, non è attualmente connesso o non esiste alcuna identità il cui nome utente corrisponde *a IdentityUserName.*<br/> |
+| <dl> <dt>RISORSE \_ INSUFFICIENTI DI \_ STATO</dt> </dl> | Memoria insufficiente per elaborare la richiesta.<br/>                                                                                               |
 
 
 
@@ -94,9 +94,9 @@ Se la funzione ha esito negativo, la funzione può restituire uno dei codici di 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                  |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>Indentitystore. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                  |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                        |
+| Intestazione<br/>                   | <dl> <dt>Indentitystore.h</dt> </dl> |
 
 
 

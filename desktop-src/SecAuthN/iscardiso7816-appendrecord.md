@@ -1,7 +1,7 @@
 ---
-description: Il metodo AppendRecord costruisce un comando APDU (Application Protocol Data Unit) che accoda un record alla fine di un file Elementary con struttura lineare o scrive il numero di record 1 in un file elementare con struttura ciclica.
+description: Il metodo AppendRecord costruisce un comando APDU (Application Protocol Data Unit) che aggiunge un record alla fine di un file elementare con struttura lineare (EF) o scrive il record numero 1 in un file elementare con struttura ciclica.
 ms.assetid: 4dd88661-41c4-4238-88c9-279b39afb206
-title: 'Metodo ISCardISO7816:: AppendRecord (scardssp. h)'
+title: Metodo ISCardISO7816::AppendRecord (Scardssp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 28d1b6762e0a350bb87b673f21fa063ae2478e64
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de2b6ac4bfded1612713272111f3ef21f21cf4b7b8ac9cedae769531fee26c05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118923062"
 ---
-# <a name="iscardiso7816appendrecord-method"></a>Metodo ISCardISO7816:: AppendRecord
+# <a name="iscardiso7816appendrecord-method"></a>Metodo ISCardISO7816::AppendRecord
 
-\[Il metodo **AppendRecord** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Non è disponibile per l'utilizzo in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo AppendRecord** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il metodo **AppendRecord** costruisce un comando APDU ( [*Application Protocol Data Unit*](../secgloss/a-gly.md) ) che accoda un record alla fine di un file Elementary con struttura lineare o scrive il numero di record 1 in un file elementare con struttura ciclica.
+Il metodo **AppendRecord** costruisce un comando APDU [*(Application Protocol Data Unit)*](../secgloss/a-gly.md) che aggiunge un record alla fine di un file elementare con struttura lineare (EF) o scrive il record numero 1 in un file elementare con struttura ciclica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,18 +43,18 @@ HRESULT AppendRecord(
 
 <dl> <dt>
 
-*byRefCtrl* \[ in\]
+*byRefCtrl* \[ Pollici\]
 </dt> <dd>
 
-Identifica il file elementare da accodare.
+Identifica il file elementare da aggiungere.
 
 
 
 | Valore                                                                                                                                                                                | Significato                           |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
 | <span id="Current_EF"></span><span id="current_ef"></span><span id="CURRENT_EF"></span><dl> <dt>**EF corrente**</dt> </dl>     | Posizione bit: 00000000<br/> |
-| <span id="Short_EF_ID"></span><span id="short_ef_id"></span><span id="SHORT_EF_ID"></span><dl> <dt>**ID EF breve**</dt> </dl> | Posizione bit: XXXXX000<br/> |
-| <span id="Reserved"></span><span id="reserved"></span><span id="RESERVED"></span><dl> <dt>**Riservato**</dt> </dl>             | Posizione bit: xxxxxxxx<br/> |
+| <span id="Short_EF_ID"></span><span id="short_ef_id"></span><span id="SHORT_EF_ID"></span><dl> <dt>**ID EF breve**</dt> </dl> | Posizione bit: xxxxx000<br/> |
+| <span id="Reserved"></span><span id="reserved"></span><span id="RESERVED"></span><dl> <dt>**Riservato**</dt> </dl>             | Posizione di bit: xxxxxxxx<br/> |
 
 
 
@@ -62,18 +62,18 @@ Identifica il file elementare da accodare.
 
 </dd> <dt>
 
-*pData* \[ in\]
+*pData* \[ Pollici\]
 </dt> <dd>
 
-Puntatore ai dati da accodare al file.
+Puntatore ai dati da aggiungere al file.
 
 
 
 | Valore                                                                                                                                                | Significato                 |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| <span id="Tn"></span><span id="tn"></span><span id="TN"></span><dl> <dt>**TN**</dt> </dl>     | 1 byte<br/>       |
-| <span id="Ln_"></span><span id="ln_"></span><span id="LN_"></span><dl> <dt>**LN**</dt> </dl> | 1 o 3 byte<br/> |
-| <span id="data"></span><span id="DATA"></span><dl> <dt>**dati**</dt> </dl>                    | Ln byte<br/>     |
+| <span id="Tn"></span><span id="tn"></span><span id="TN"></span><dl> <dt>**Tn**</dt> </dl>     | 1 byte<br/>       |
+| <span id="Ln_"></span><span id="ln_"></span><span id="LN_"></span><dl> <dt>**Ln**</dt> </dl> | 1 o 3 byte<br/> |
+| <span id="data"></span><span id="DATA"></span><dl> <dt>**Dati**</dt> </dl>                    | Byte Ln<br/>     |
 
 
 
@@ -81,12 +81,12 @@ Puntatore ai dati da accodare al file.
 
 </dd> <dt>
 
-*ppCmd* \[ in uscita\]
+*ppCmd* \[ in, out\]
 </dt> <dd>
 
-In input, un puntatore a un oggetto di interfaccia [**ISCardCmd**](iscardcmd.md) o **null**.
+Nell'input, un puntatore a un [**oggetto interfaccia ISCardCmd**](iscardcmd.md) o **NULL.**
 
-Al ritorno, viene compilato con il comando APDU creato da questa operazione. Se *ppCmd* è stato impostato su **null**, un oggetto [**ISCardCmd**](iscardcmd.md) della [*Smart Card*](../secgloss/s-gly.md) viene creato e restituito internamente utilizzando il puntatore *ppCmd* .
+Al ritorno, viene riempito con il comando APDU costruito da questa operazione. Se *ppCmd è* stato impostato su **NULL,** [**smart card'oggetto ISCardCmd**](iscardcmd.md) viene creato internamente e restituito usando il *puntatore ppCmd.* [](../secgloss/s-gly.md)
 
 </dd> </dl>
 
@@ -98,10 +98,10 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 | Codice restituito                                                                                   | Descrizione                                  |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Operazione completata correttamente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata correttamente.<br/> |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Parametro non valido.<br/>                |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | È stato passato un puntatore non valido.<br/>      |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria insufficiente.<br/>                    |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>     | È stato passato un puntatore non valido.<br/>      |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente.<br/>                    |
 
 
 
@@ -109,15 +109,15 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Il comando incapsulato può essere eseguito solo se lo stato di sicurezza della [*Smart Card*](../secgloss/s-gly.md) soddisfa gli attributi di sicurezza del file elementare letto.
+Il comando incapsulato può essere eseguito solo se lo stato di sicurezza del [*smart card*](../secgloss/s-gly.md) soddisfa gli attributi di sicurezza del file elementare letto.
 
-Se al momento dell'invio di questo comando è selezionato un altro file elementare, è possibile che venga elaborato senza l'identificazione del file attualmente selezionato.
+Se al momento dell'esecuzione di questo comando viene selezionato un altro file elementare, è possibile che venga elaborato senza l'identificazione del file attualmente selezionato.
 
-Non è possibile leggere i file elementari senza una struttura di record. Il comando incapsulato viene interrotto se applicato a un file elementare senza una struttura di record.
+I file elementari senza una struttura di record non possono essere letti. Il comando incapsulato viene interrotto se applicato a un file elementare senza una struttura di record.
 
-Per un elenco di tutti i metodi forniti da questa interfaccia, vedere [**ISCardISO7816**](iscardiso7816.md).
+Per un elenco di tutti i metodi forniti da questa interfaccia, vedere [**ISCardISO7816.**](iscardiso7816.md)
 
-Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire un codice di errore della smart card se è stata chiamata una funzione Smart Card per completare la richiesta. Per ulteriori informazioni, vedere [valori restituiti della smart card](authentication-return-values.md).
+Oltre ai codici di errore COM elencati in precedenza, questa interfaccia può restituire un codice di errore smart card se è stata chiamata una funzione smart card per completare la richiesta. Per altre informazioni, vedere [Valori restituiti delle smart card.](authentication-return-values.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -125,12 +125,12 @@ Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                   |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Scardssp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Scardsrv. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Scardsrv.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ ISCardISO7816 è definito come 53B6AA68-3F56-11D0-916B-00AA00C18068<br/>        |
 

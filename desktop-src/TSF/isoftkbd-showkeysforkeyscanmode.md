@@ -1,11 +1,11 @@
 ---
-title: Metodo ISoftKbd ShowKeysForKeyScanMode (Softkbdc. h)
-description: Il metodo ISoftKbd ShowKeysForKeyScanMode Visualizza le chiavi usate per la modalità di analisi della chiave per una tastiera soft.
+title: Metodo ISoftKbd ShowKeysForKeyScanMode (Softkbdc.h)
+description: Il metodo ISoftKbd ShowKeysForKeyScanMode visualizza i tasti usati per la modalità di analisi dei tasti per una tastiera soft.
 ms.assetid: bfa76e5b-6f6e-470a-ba3a-7ecff9f67f7b
 keywords:
-- Framework servizi di testo Metodo ShowKeysForKeyScanMode
-- Framework dei servizi di testo del metodo ShowKeysForKeyScanMode, interfaccia ISoftKbd
-- ISoftKbd Interface Text Services Framework, metodo ShowKeysForKeyScanMode
+- Metodo ShowKeysForKeyScanMode Framework servizi di testo
+- Metodo ShowKeysForKeyScanMode Framework servizi di testo, interfaccia ISoftKbd
+- Interfaccia ISoftKbd Framework servizi di testo metodo ShowKeysForKeyScanMode
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7c46fbfc103c0ba40294e4c149d5fd427296765
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 844c9f39529e1a66437c83672acc8b2d3ad2a3e3ff3a1ad31c4d9bd97248d010
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118877273"
 ---
-# <a name="isoftkbdshowkeysforkeyscanmode-method"></a>Metodo ISoftKbd:: ShowKeysForKeyScanMode
+# <a name="isoftkbdshowkeysforkeyscanmode-method"></a>Metodo ISoftKbd::ShowKeysForKeyScanMode
 
-Il metodo **ISoftKbd:: ShowKeysForKeyScanMode** Visualizza le chiavi usate per la modalità di analisi della chiave per una tastiera soft.
+Il **metodo ISoftKbd::ShowKeysForKeyScanMode** visualizza i tasti usati per la modalità di analisi dei tasti per una tastiera soft.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,24 +44,24 @@ HRESULT ShowKeysForKeyScanMode(
 
 <dl> <dt>
 
-*lpKeyID* \[ in\]
+*lpKeyID* \[ Pollici\]
 </dt> <dd>
 
 Puntatore a una matrice di elementi KEYID che indica gli identificatori delle chiavi da visualizzare.
 
 </dd> <dt>
 
-*iKeyNum* \[ in\]
+*iKeyNum* \[ Pollici\]
 </dt> <dd>
 
 Numero di chiavi da visualizzare.
 
 </dd> <dt>
 
-*fHighL* \[ in\]
+*fHighL* \[ Pollici\]
 </dt> <dd>
 
-TRUE se il metodo deve evidenziare le chiavi e **false** in caso contrario.
+TRUE se il metodo deve evidenziare le chiavi e **FALSE in caso contrario.**
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Questo metodo può restituire uno di questi valori.
 
 | Valore                                                                                        | Descrizione                                  |
 |----------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Il metodo è stato eseguito correttamente.<br/>        |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Il metodo è stato eseguito correttamente.<br/>        |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Uno dei parametri non è valido.<br/> |
 
 
@@ -88,9 +88,9 @@ Questo metodo può restituire uno di questi valori.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                             |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
-| Componente ridistribuibile<br/>          | TSF 1,0 su Windows 2000 Professional<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
-| IDL<br/>                      | <dl> <dt>Softkbd. idl</dt> </dl> |
+| Componente ridistribuibile<br/>          | TSF 1.0 in Windows 2000 Professional<br/>                                        |
+| Intestazione<br/>                   | <dl> <dt>Softkbdc.h</dt> </dl>  |
+| Idl<br/>                      | <dl> <dt>Softkbd.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Softkbd.dll</dt> </dl> |
 
 

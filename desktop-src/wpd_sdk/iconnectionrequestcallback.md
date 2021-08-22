@@ -1,7 +1,7 @@
 ---
 description: Definisce un singolo metodo di callback.
 ms.assetid: 579f7a29-cd98-4d97-9f8e-9b786897df1c
-title: Interfaccia IConnectionRequestCallback (Devpkey. h)
+title: Interfaccia IConnectionRequestCallback (Devpkey.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,26 +14,26 @@ api_type:
 api_location:
 - PortableDeviceGuids.lib
 - PortableDeviceGuids.dll
-ms.openlocfilehash: aca827de068ce221f013f03b35f88fd76a030dd4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53e1549767c8577507b3126b3a293dfe4e523612809c144ff24c04dce4ab1ff4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118697419"
 ---
 # <a name="iconnectionrequestcallback-interface"></a>Interfaccia IConnectionRequestCallback
 
-L'interfaccia **IConnectionRequestCallback** definisce un solo metodo di callback. Un'applicazione Windows Portable Devices (WPD) implementa questa interfaccia facoltativa Component Object Model (COM) per ricevere notifiche sulle richieste completate e per annullare le richieste in sospeso. Le richieste vengono inviate usando i metodi [**IPortableDeviceConnector:: Connect**](/windows/desktop/api/portabledeviceconnectapi/nf-portabledeviceconnectapi-iportabledeviceconnector-connect) e [**IPortableDeviceConnector::D di connessione**](/windows/desktop/api/portabledeviceconnectapi/nf-portabledeviceconnectapi-iportabledeviceconnector-disconnect) .
+**L'interfaccia IConnectionRequestCallback** definisce un singolo metodo di callback. Un Windows di dispositivi portatili (WPD) implementa questa interfaccia COM (Optional Component Object Model) per ricevere notifiche sulle richieste completate e annullare le richieste in sospeso. Le richieste vengono inviate usando i metodi [**IPortableDeviceConnector::Connessione**](/windows/desktop/api/portabledeviceconnectapi/nf-portabledeviceconnectapi-iportabledeviceconnector-connect) [**e IPortableDeviceConnector::D isconnect.**](/windows/desktop/api/portabledeviceconnectapi/nf-portabledeviceconnectapi-iportabledeviceconnector-disconnect)
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IConnectionRequestCallback** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IConnectionRequestCallback** dispone anche di questi tipi di membri:
+**L'interfaccia IConnectionRequestCallback** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IConnectionRequestCallback** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IConnectionRequestCallback** dispone di questi metodi.
+**L'interfaccia IConnectionRequestCallback** include questi metodi.
 
 
 
@@ -51,11 +51,11 @@ L'interfaccia **IConnectionRequestCallback** dispone di questi metodi.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                                                                                             |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                                                                                             |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                                                                              |
-| Intestazione<br/>                   | <dl> <dt>Devpkey. h; </dt> <dt>PortableDeviceConnectApi. h</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>PortableDeviceConnectApi. idl</dt> </dl>                                                                |
-| Libreria<br/>                  | <dl> <dt>PortableDeviceGuids. lib</dt> </dl>                                                                     |
+| Intestazione<br/>                   | <dl> <dt>Devpkey.h; </dt> <dt>Portabledeviceconnectapi.h</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Portabledeviceconnectapi.idl</dt> </dl>                                                                |
+| Libreria<br/>                  | <dl> <dt>PortableDeviceGuids.lib</dt> </dl>                                                                     |
 
 
 

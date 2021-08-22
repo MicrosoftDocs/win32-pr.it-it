@@ -4,25 +4,25 @@ description: Per abilitare questa opzione, impostare l'attributo PasswordExpired
 ms.assetid: 97dd4232-dcd3-44bd-8a2a-1dcb0f85d53c
 ms.tgt_platform: multiple
 keywords:
-- Modificare la password all'accesso successivo (provider WinNT) ADSI
-- L'utente deve modificare la password all'accesso successivo ADSI, provider WinNT
-- ADSI provider ADSI, esempi di gestione degli utenti, è necessario modificare la password all'accesso successivo
+- L'utente deve modificare la password all'accesso successivo (provider WinNT) ADSI
+- L'utente deve modificare la password all'accesso successivo ADSI , provider WinNT
+- Provider WINNT ADSI, esempi di gestione degli utenti, modifica della password all'accesso successivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 787be5f5f4e1534574a68c179bb699ac68c61e3e
-ms.sourcegitcommit: 6515eef99ca0d1bbe3e27d4575e9986f5255f277
+ms.openlocfilehash: be50e5cdccb4969e59a5b32516a35278b867062e8cced2e80d96b26c56c6173b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "106322016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023039"
 ---
 # <a name="user-must-change-password-at-next-logon-winnt-provider"></a>L'utente deve modificare la password all'accesso successivo (provider WinNT)
 
-Per abilitare questa opzione, impostare l'attributo **PasswordExpired** dell'utente su uno (1). L'impostazione di questo attributo su zero (0) consente all'utente di accedere senza modificare la password.
+Per abilitare questa opzione, impostare **l'attributo PasswordExpired** dell'utente su uno (1). L'impostazione di questo attributo su zero (0) consente all'utente di accedere senza modificare la password.
 
 ## <a name="example-1"></a>Esempio 1
 
-Nell'esempio di codice seguente viene illustrato come impostare l'opzione Cambia password all'accesso successivo utilizzando Visual Basic con ADSI.
+Nell'esempio di codice seguente viene illustrato come impostare l'opzione change password on next logon usando Visual Basic con ADSI.
 
 
 ```VB
@@ -35,7 +35,7 @@ usr.SetInfo
 
 ## <a name="example-2"></a>Esempio 2
 
-Nell'esempio di codice seguente viene illustrato come impostare l'opzione Cambia password all'accesso successivo utilizzando C++ con ADSI.
+Nell'esempio di codice seguente viene illustrato come impostare l'opzione change password on next logon usando C++ con ADSI.
 
 
 ```C++

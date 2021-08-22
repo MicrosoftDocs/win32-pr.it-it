@@ -1,19 +1,19 @@
 ---
-title: Note sul metodo Visual Basic accName
-description: Il file di Object Description Language (FAD), oleacc. FAD, contiene informazioni diverse dall'implementazione di C/C++.
+title: Visual Basic Note sul metodo accName
+description: Il file Object Description Language (ODL), Oleacc.odl, contiene informazioni diverse dall'implementazione C/C++.
 ms.assetid: f7960acd-cb1a-4c34-a392-0243155a100f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c404c093fc3b92b4d653b0b1258c62918af8e25
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f6cef15db4a8b5705af70f81018ab66f298868b16b32ad658fde4387fdeb4882
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118823616"
 ---
-# <a name="visual-basic-method-notes-accname"></a>Note sul metodo Visual Basic: accName
+# <a name="visual-basic-method-notes-accname"></a>Visual Basic Note sul metodo: accName
 
-Il file di Object Description Language (FAD), oleacc. FAD, contiene informazioni diverse dall'implementazione di C/C++. Il file Oleacc. FAD contiene la definizione seguente per la versione che imposta la proprietà della funzione:
+Il file Object Description Language (ODL), Oleacc.odl, contiene informazioni diverse dall'implementazione C/C++. Il file Oleacc.odl contiene la definizione seguente per la versione che imposta la proprietà della funzione:
 
 
 ```C++
@@ -25,11 +25,11 @@ Il file di Object Description Language (FAD), oleacc. FAD, contiene informazioni
 
 
 
-Anche se il parametro *varChild* è elencato come facoltativo nel file FAD e nel Visualizzatore oggetti, è necessario includerlo quando si chiama la versione dell'impostazione di proprietà di [**accName**](https://www.bing.com/search?q=**accName**).
+Anche se *il parametro varChild* è elencato come facoltativo nel file ODL e nel Visualizzatore oggetti, è necessario includerlo quando si chiama la versione dell'impostazione della proprietà [**di accName**](https://www.bing.com/search?q=**accName**).
 
- 
+ 
 
- 
+ 
 
 
 

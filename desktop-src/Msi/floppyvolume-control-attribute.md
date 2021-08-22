@@ -1,21 +1,21 @@
 ---
-description: Se viene impostato il bit del controllo FloppyVolume, il controllo Mostra tutti i volumi necessari nell'installazione corrente più tutti i volumi floppy.
+description: Se il bit di controllo FloppyVolume è impostato, il controllo mostra tutti i volumi coinvolti nell'installazione corrente più tutti i volumi floppy.
 ms.assetid: 65e17920-bb2c-4b98-a2dd-ebaee752ed0a
-title: Attributo di controllo FloppyVolume
+title: Attributo del controllo FloppyVolume
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c70045ee5d6e16fbe1f679eafd83e6d657c9bf6e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4639960fee79336048082c91088e19c1b360f857216f2cf0ad9ed07c64b52b8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118947012"
 ---
-# <a name="floppyvolume-control-attribute"></a>Attributo di controllo FloppyVolume
+# <a name="floppyvolume-control-attribute"></a>Attributo del controllo FloppyVolume
 
-Se viene impostato il bit del controllo FloppyVolume, il controllo Mostra tutti i volumi necessari nell'installazione corrente più tutti i volumi floppy.
+Se il bit di controllo FloppyVolume è impostato, il controllo mostra tutti i volumi coinvolti nell'installazione corrente più tutti i volumi floppy.
 
-Se questo bit non è impostato, il controllo Elenca i volumi nell'installazione corrente.
+Se questo bit non è impostato, il controllo elenca i volumi nell'installazione corrente.
 
 ## <a name="valid-controls"></a>Controlli validi
 
@@ -39,9 +39,9 @@ Se questo bit non è impostato, il controllo Elenca i volumi nell'installazione 
 
 ## <a name="remarks"></a>Commenti
 
-Per impostare questo attributo su un controllo, includere il bit FloppyVolume nella colonna Attributes del record del controllo nella tabella del [controllo](control-table.md).
+Per impostare questo attributo su un controllo, includere il bit FloppyVolume nella colonna Attributi del record del controllo nella [tabella Control](control-table.md).
 
-Vedere [gli attributi del controllo](control-attributes.md) e il controllo che è necessario creare sotto i [controlli](controls.md).
+Vedere [Attributi di controllo](control-attributes.md) e il controllo che è necessario creare in [Controlli](controls.md).
 
  
 

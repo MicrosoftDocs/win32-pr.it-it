@@ -4,43 +4,43 @@ ms.assetid: cb5c80ea-c15e-4f68-a94b-b458d69ff474
 title: Autenticazione con smart card
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6241d323f4c5e982fee96f44002da316d5d645d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 78bccfa9e762c137e332c26b5375584658c22718d336800b6dc73cf056ebde1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118918008"
 ---
 # <a name="smart-card-authentication"></a>Autenticazione con smart card
 
-Le parti di base del [*sottosistema Smart Card*](../secgloss/s-gly.md) sono basate sugli standard PC/SC (vedere le specifiche in [https://www.pcscworkgroup.com/](https://www.pcscworkgroup.com/) ). Queste parti di base includono:
+Le parti di base del [*sottosistema smart card*](../secgloss/s-gly.md) sono basate sugli standard PC/SC (vedere le specifiche in [https://www.pcscworkgroup.com/](https://www.pcscworkgroup.com/) ). Queste parti di base includono:
 
--   [*Gestore di risorse*](../secgloss/r-gly.md) che usa un'API Windows.
--   [*Interfaccia utente*](../secgloss/u-gly.md) (UI) che funziona con gestione risorse.
--   Diversi [*provider di servizi*](../secgloss/s-gly.md) di base che forniscono accesso a servizi specifici. Diversamente dall'API Windows di Resource Manager, i provider di servizi usano un modello di interfaccia COM per fornire servizi [*Smart Card*](../secgloss/s-gly.md) .
+-   Gestione [*risorse che*](../secgloss/r-gly.md) usa un'API Windows locale.
+-   Interfaccia [*utente (UI)*](../secgloss/u-gly.md) che funziona con gestione risorse.
+-   Diversi provider [*di servizi di base*](../secgloss/s-gly.md) che forniscono l'accesso a servizi specifici. A differenza dell'API Windows resource manager, i provider di servizi usano un modello di interfaccia COM per [*fornire*](../secgloss/s-gly.md) smart card servizi.
 
-Nella figura seguente sono illustrate le relazioni di queste parti nell'architettura complessiva delle smart card.
+La figura seguente illustra le relazioni di queste parti nell'architettura smart card generale.
 
-![architettura Smart Card](images/smartovr2a.png)
+![smart card architettura](images/smartovr2a.png)
 
-Per informazioni sul funzionamento del [*sottosistema Smart Card*](../secgloss/s-gly.md) con altri servizi disponibili in Microsoft Internet Security Framework, vedere [relazioni con altri servizi](relation-to-other-services.md).
+Per informazioni sul funzionamento [*del sottosistema smart card*](../secgloss/s-gly.md) con altri servizi disponibili in Microsoft Internet Security Framework, vedere [Relazione ad altri servizi](relation-to-other-services.md).
 
-Per informazioni sull'autenticazione con smart card, vedere gli argomenti seguenti.
+Per informazioni sull'smart card autenticazione, vedere gli argomenti seguenti.
 
 
 
 | Argomenti                                                                      | Contenuto                                                                                                                                                                                                                                           |
 |-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Concetti relativi alle smart card](smart-card-concepts.md)<br/>                   | Concetti di base e Descrizione dell'interazione tra utenti e smart card.<br/>                                                                                                                                                        |
-| [Gestione risorse smart card](smart-card-resource-manager.md)<br/>   | Informazioni sull'API di Resource Manager, che consente di gestire l'accesso ai [*lettori*](../secgloss/r-gly.md) e alle [*Smart Card*](../secgloss/s-gly.md).<br/> |
-| [Interfaccia utente della smart card](smart-card-user-interface.md)<br/>       | Informazioni sulla finestra di [*dialogo comune della smart card*](../secgloss/s-gly.md).<br/>                                                                                   |
-| [Provider di servizi Smart Card](smart-card-service-providers.md)<br/> | Informazioni su interfacce, comandi e wrapper che forniscono funzionalità per smart card.<br/>                                                                                                                                              |
+| [Concetti relativi alle smart card](smart-card-concepts.md)<br/>                   | Concetti di base e descrizione dell'interazione tra utenti e smart card.<br/>                                                                                                                                                        |
+| [Smart Card Resource Manager](smart-card-resource-manager.md)<br/>   | Informazioni sull'API di Resource Manager, che gestisce l'accesso ai [*lettori*](../secgloss/r-gly.md) e [*alle smart card.*](../secgloss/s-gly.md)<br/> |
+| [Smart Card Interfaccia utente](smart-card-user-interface.md)<br/>       | Informazioni sulla finestra [*smart card comune*](../secgloss/s-gly.md).<br/>                                                                                   |
+| [Provider di servizi smart card](smart-card-service-providers.md)<br/> | Informazioni su interfacce, comandi e wrapper che forniscono smart card funzionalità.<br/>                                                                                                                                              |
 
 
 
  
 
-Inoltre, è possibile trovare gli attuali sviluppi delle smart card Microsoft all'indirizzo [https://www.microsoft.com/whdc/device/input/smartcard/default.mspx](https://www.microsoft.com/whdc/device/input/smartcard/default.mspx) .
+Inoltre, gli attuali sviluppi smart card Microsoft sono disponibili all'indirizzo [https://www.microsoft.com/whdc/device/input/smartcard/default.mspx](https://www.microsoft.com/whdc/device/input/smartcard/default.mspx) .
 
  
 

@@ -1,10 +1,10 @@
 ---
-title: buildingname (attributo)
-description: Nome dell'edificio in cui si basa un'organizzazione o un'unità organizzativa.
+title: Attributo buildingName
+description: Nome dell'edificio su cui si basa un'organizzazione o un'unità organizzativa.
 ms.assetid: b7c263cc-23cd-4ae8-9abe-ffd40f307162
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD dell'attributo buildingname
+- Attributo buildingName Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0745997a562360301cceef7d04b5fb862b048a9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 91a667566292f7a698db98aa683e9470f63f30687a96a30b6062cb0999858ee6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022679"
 ---
-# <a name="buildingname-attribute"></a>buildingname (attributo)
+# <a name="buildingname-attribute"></a>Attributo buildingName
 
-Nome dell'edificio in cui si basa un'organizzazione o un'unità organizzativa.
+Nome dell'edificio su cui si basa un'organizzazione o un'unità organizzativa.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | buildingName                                |
-| LDAP-Display-Name | buildingName                                |
+| Ldap-Display-Name | buildingName                                |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 0.9.2342.19200300.100.1.48                  |
-| System-ID-GUID    | f87fa54b-b2c5-4fd7-88c0-daccb21d93c5        |
+| System-Id-Guid    | f87fa54b-b2c5-4fd7-88c0-daccb21d93c5        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -56,15 +56,15 @@ Nome dell'edificio in cui si basa un'organizzazione o un'unità organizzativa.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -77,15 +77,15 @@ Nome dell'edificio in cui si basa un'organizzazione o un'unità organizzativa.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -98,15 +98,15 @@ Nome dell'edificio in cui si basa un'organizzazione o un'unità organizzativa.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -119,15 +119,15 @@ Nome dell'edificio in cui si basa un'organizzazione o un'unità organizzativa.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -140,15 +140,15 @@ Nome dell'edificio in cui si basa un'organizzazione o un'unità organizzativa.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000000   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

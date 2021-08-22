@@ -1,6 +1,6 @@
 ---
 title: Interfaccia IDOManager
-description: Utilizzato per creare un nuovo download e per enumerare i download esistenti.
+description: Usato per creare un nuovo download ed enumerare i download esistenti.
 keywords:
 - Interfaccia IDOManager
 topic_type:
@@ -14,20 +14,20 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
-ms.openlocfilehash: a8755615e4d2f0fd074117438f8f305dce0cb681
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5fff72067c69345a9852718c377b179d16f398c0eb3b84c73ca82c3af1b08a71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047089"
 ---
 # <a name="idomanager-interface"></a>Interfaccia IDOManager
 
-L'interfaccia **IDOManager** viene utilizzata per creare un nuovo download e per enumerare i download esistenti.
+**L'interfaccia IDOManager** viene usata per creare un nuovo download ed enumerare i download esistenti.
 
 ## <a name="methods"></a>Metodi
 
-L'interfaccia **IDOManager** dispone di questi metodi.
+**L'interfaccia IDOManager** include questi metodi.
 
 | Metodo | Descrizione |
 | ---- |:---- |
@@ -38,6 +38,6 @@ L'interfaccia **IDOManager** dispone di questi metodi.
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Client minimo supportato** | Solo applicazioni Win32 Windows 10 versione 1809 \[\] |
-| **Server minimo supportato** | Windows Server, \[ solo applicazioni Win32 versione 1809\] |
-| **Intestazione** | Do. h |
+| **Client minimo supportato** | \[Windows 10, versione 1809 Solo applicazioni Win32\] |
+| **Server minimo supportato** | Windows Server, solo applicazioni Win32 versione 1809 \[\] |
+| **Intestazione** | Do.h |

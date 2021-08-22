@@ -1,23 +1,23 @@
 ---
-title: Ascolto delle chiamate client
-description: Dopo che l'applicazione server ha registrato le interfacce, creato le informazioni di binding necessarie e ha registrato gli endpoint, è pronto per iniziare ad ascoltare le chiamate di procedure remote da programmi client.
+title: Ascolto di chiamate client
+description: Dopo che l'applicazione server ha registrato le interfacce, creato le informazioni di associazione necessarie e ne ha registrato gli endpoint, è pronto per iniziare ad ascoltare le chiamate di procedura remota dai programmi client.
 ms.assetid: ca9d24ed-0acc-45de-bbb2-761c56745a58
 keywords:
-- RPC, attività, ascolto per le chiamate client
+- Chiamata di procedura remota RPC, attività, ascolto di chiamate client
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f375a4620e301f59d168bf5f7a4dbeedc0fb89f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 62f94453a3250cfc1adae72aa0af96297a741beb501839f7f7831e3f88a8c218
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118928606"
 ---
-# <a name="listening-for-client-calls"></a>Ascolto delle chiamate client
+# <a name="listening-for-client-calls"></a>Ascolto di chiamate client
 
-Dopo che l'applicazione server ha registrato le interfacce, creato le informazioni di binding necessarie e ha registrato gli endpoint, è pronto per iniziare ad ascoltare le chiamate di procedure remote da programmi client.
+Dopo che l'applicazione server ha registrato le interfacce, creato le informazioni di associazione necessarie e ne ha registrato gli endpoint, è pronto per iniziare ad ascoltare le chiamate di procedura remota dai programmi client.
 
-Per ascoltare le chiamate a procedure remote, il programma server deve chiamare [**RpcServerListen**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverlisten), come illustrato nel frammento di codice seguente:
+Per restare in ascolto delle chiamate di procedura remota, il programma server deve chiamare [**RpcServerListen**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverlisten), come illustrato nel frammento di codice seguente:
 
 
 ```C++
@@ -30,15 +30,15 @@ status = RpcServerListen(
 
 
 
-Un server RPC ha uno o più thread che prelevano chiamate client e le inviano alle routine nelle interfacce registrate. Il primo parametro della funzione [**RpcServerListen**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverlisten) è il numero minimo di thread da creare. Il parametro è solo un hint; il tempo di esecuzione RPC può scegliere di ignorarlo.
+Un server RPC ha uno o più thread che prelevano le chiamate client e le recapitavano alle routine nelle interfacce registrate. Il primo parametro della [**funzione RpcServerListen**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverlisten) è il numero minimo di thread da creare. Il parametro è solo un hint. il tempo di esecuzione RPC può scegliere di ignorarlo.
 
-Il secondo parametro di [**RpcServerListen**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverlisten) è il numero massimo di chiamate a procedure remote simultanee da gestire. Se si desidera che l'applicazione utilizzi il valore massimo predefinito, il passaggio RPC \_ C \_ Listen \_ Max \_ calls \_ default come valore per questo parametro.
+Il secondo parametro per [**RpcServerListen**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverlisten) è il numero massimo di chiamate di procedura remota simultanee da gestire. Se si desidera che l'applicazione usi il valore massimo predefinito, passare RPC C LISTEN MAX CALLS DEFAULT come \_ \_ valore per questo \_ \_ \_ parametro.
 
-La specifica DCE chiama per la continuazione dell'esecuzione di [**RpcServerListen**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverlisten) fino a quando non riceve un segnale per l'arresto. Un'estensione Microsoft a questa funzione consente di iniziare l'ascolto e restituire immediatamente un risultato. Se si vuole che l'applicazione usi il comportamento predefinito di DCE, impostare il terzo parametro su zero. Per informazioni dettagliate, vedere [**RpcServerListen**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverlisten), [**RpcMgmtStopServerListening**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcmgmtstopserverlistening)e [**RpcMgmtWaitServerListen**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcmgmtwaitserverlisten) .
+La specifica DCE richiede che [**RpcServerListen**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverlisten) continui l'esecuzione fino a quando non riceve un segnale di arresto. Un'estensione Microsoft a questa funzione è consentire l'inizio dell'ascolto e la restituzione immediata. Se si vuole che l'applicazione usi il comportamento DCE predefinito, impostare il terzo parametro su zero. Per [**informazioni dettagliate, vedere RpcServerListen,**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverlisten) [**RpcMgmtStopServerListening**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcmgmtstopserverlistening)e [**RpcMgmtWaitServerListen.**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcmgmtwaitserverlisten)
 
- 
+ 
 
- 
+ 
 
 
 

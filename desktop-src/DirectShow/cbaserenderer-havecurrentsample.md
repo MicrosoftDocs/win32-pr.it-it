@@ -1,7 +1,7 @@
 ---
-description: Il metodo HaveCurrentSample determina se il filtro dispone di un campione.
+description: Il metodo HaveCurrentSample determina se il filtro include un campione.
 ms.assetid: cd20aea8-bb0b-4aa5-8d06-2733652fde08
-title: Metodo CBaseRenderer. HaveCurrentSample (Renbase. h)
+title: Metodo CBaseRenderer.HaveCurrentSample (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fc7a594ce23f2e015a9c74864308e2e42528e145
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ea807ffc68fc27a3c276de1fabcd7eb3591311a3896acfd5b0d4f91cb7f1ed7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954950"
 ---
-# <a name="cbaserendererhavecurrentsample-method"></a>CBaseRenderer. HaveCurrentSample, metodo
+# <a name="cbaserendererhavecurrentsample-method"></a>Metodo CBaseRenderer.HaveCurrentSample
 
-Il `HaveCurrentSample` metodo determina se il filtro dispone di un campione.
+Il `HaveCurrentSample` metodo determina se il filtro include un campione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se il filtro dispone di un campione o **false** in caso contrario.
+Restituisce **TRUE se** il filtro include un campione oppure FALSE in caso **contrario.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce **true** se il filtro dispone di un campione o **false** in caso con
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

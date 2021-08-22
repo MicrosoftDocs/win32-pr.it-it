@@ -1,11 +1,11 @@
 ---
-title: SystemMonitor. relog, metodo
-description: Registra i dati del contatore in un nuovo file. È inoltre possibile utilizzare questo metodo per specificare un nuovo tipo di file e per ridurre il numero di campioni contenuti nel file di log.
+title: Metodo SystemMonitor.Relog
+description: Riloga i dati del contatore in un nuovo file. È inoltre possibile utilizzare questo metodo per specificare un nuovo tipo di file e ridurre il numero di esempi contenuti nel file di log.
 ms.assetid: 4439f9ef-99e0-47d4-8f6f-d08afcba672d
 keywords:
-- Metodo relog SysMon
-- Metodo relog SysMon, oggetto SystemMonitor
-- Oggetto SystemMonitor SysMon, metodo relog
+- Metodo Relog SysMon
+- Metodo Relog SysMon , oggetto SystemMonitor
+- Oggetto SystemMonitor SysMon , metodo Relog
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 109d0a6e44ef73652bd563099929ce601670610b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 73025a352ba3ec2e9ed113c59a7e04f98084495da834f83bf052c697833dd13f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118881728"
 ---
-# <a name="systemmonitorrelog-method"></a>SystemMonitor. relog, metodo
+# <a name="systemmonitorrelog-method"></a>Metodo SystemMonitor.Relog
 
-Registra i dati del contatore in un nuovo file. È inoltre possibile utilizzare questo metodo per specificare un nuovo tipo di file e per ridurre il numero di campioni contenuti nel file di log.
+Riloga i dati del contatore in un nuovo file. È inoltre possibile utilizzare questo metodo per specificare un nuovo tipo di file e ridurre il numero di esempi contenuti nel file di log.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,24 +44,24 @@ SystemMonitor.Relog( _
 
 <dl> <dt>
 
-*nome file* \[ in\]
+*fileName* \[ Pollici\]
 </dt> <dd>
 
-Percorso del file di log. È possibile specificare il percorso come percorso assoluto, relativo o UNC. L'estensione del nome del file di log deve essere. grosso,. TSV o. csv. Se una cartella nel percorso non esiste, verrà creata da SYSMON. Se il file esiste, il file viene sovrascritto. SYSMON applica gli ACL predefiniti dalla directory padre.
+Percorso del file di log. È possibile specificare il percorso come percorso assoluto, relativo o UNC. L'estensione del nome file di log deve essere blg, tsv o .csv. Se non esiste una cartella nel percorso, SYSMON la creerà. Se il file esiste, viene sovrascritto. SYSMON applica gli ACL predefiniti dalla directory padre.
 
 </dd> <dt>
 
-*FileType* \[ in\]
+*tipo di file* \[ Pollici\]
 </dt> <dd>
 
-Formato dei dati del contatore salvati nel file di log. È possibile specificare [**SysmonFileType.sysmonFileBlg**](/windows/win32/api/isysmon/ne-isysmon-sysmonfiletype), **SysmonFileType.sysMonFileCsv** o **SysmonFileType.sysmonFileTsv**.
+Formato dei dati del contatore salvati nel file di log. È possibile specificare [**SysmonFileType.sysmonFileBlg**](/windows/win32/api/isysmon/ne-isysmon-sysmonfiletype), **SysmonFileType.sysmonFileCsv** **o monFileTsvSysmonFileType.sysmonFileTsv**.
 
 </dd> <dt>
 
-*filtro* \[ di in\]
+*filter* \[ Pollici\]
 </dt> <dd>
 
-Numero di campioni dei vecchi file di log da salvare nel nuovo file di log. Specificare 1 per salvare ogni esempio dai file precedenti ai nuovi file. Specificare 2 per salvare uno dei due campioni dal file precedente. Specificare 3 per salvare uno dei tre campioni dal file precedente. e così via.
+Numero di esempi dei file di log precedente da salvare nel nuovo file di log. Specificare 1 per salvare ogni esempio dai file vecchi nei nuovi file. Specificare 2 per salvare uno dei due campioni del file precedente. Specificare 3 per salvare uno dei tre campioni del file precedente. e così via.
 
 </dd> </dl>
 
@@ -71,7 +71,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo utilizza i file di log contenuti nella raccolta [**SystemMonitor. LogFiles**](systemmonitor-logfiles.md) per relog i dati del contatore.
+Questo metodo usa i file di log contenuti nella raccolta [**SystemMonitor.LogFiles**](systemmonitor-logfiles.md) per registrare nuovamente i dati del contatore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,9 +79,9 @@ Questo metodo utilizza i file di log contenuti nella raccolta [**SystemMonitor. 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
+| DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
@@ -92,7 +92,7 @@ Questo metodo utilizza i file di log contenuti nella raccolta [**SystemMonitor. 
 [**SystemMonitor**](systemmonitor.md)
 </dt> <dt>
 
-[**SystemMonitor. SaveAs**](systemmonitor-saveas.md)
+[**SystemMonitor.SaveAs**](systemmonitor-saveas.md)
 </dt> </dl>
 
  
