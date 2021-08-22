@@ -1,9 +1,9 @@
 ---
-title: Rete. sourceProtocol
-description: La proprietà sourceProtocol Recupera il protocollo di origine utilizzato per la ricezione dei dati.
+title: Network.sourceProtocol
+description: La proprietà sourceProtocol recupera il protocollo di origine usato per ricevere i dati.
 ms.assetid: f09bbcd0-9c34-49d1-8080-247aed2548d5
 keywords:
-- Media Player di Windows Network. sourceProtocol
+- Network.sourceProtocol Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,32 +14,32 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29e3f0ad63827605eb79a89325877e4bb83bfc62
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f23cba2fdd56c1076110c495f7dab2451b7fa103e1dd0e0253e4f74f4f8ab59f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118836217"
 ---
-# <a name="networksourceprotocol"></a>Rete. sourceProtocol
+# <a name="networksourceprotocol"></a>Network.sourceProtocol
 
-La proprietà **sourceProtocol** Recupera il protocollo di origine utilizzato per la ricezione dei dati.
+La **proprietà sourceProtocol** recupera il protocollo di origine usato per ricevere i dati.
 
 ## <a name="syntax"></a>Sintassi
 
-*Player*. *rete*. **sourceProtocol**
+*lettore*. *network*. **sourceProtocol**
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è una **stringa** di sola lettura.
+Questa proprietà è una stringa di sola **lettura.**
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è impostata su "" (stringa vuota) quando si esegue la riproduzione di file multimediali da un CD o un DVD.
+Questa proprietà è impostata su "" (stringa vuota) durante la riproduzione di supporti da un CD o DVD.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene utilizzata la *rete*. **sourceProtocol** per visualizzare il protocollo di origine utilizzato per la ricezione dei dati. Le informazioni vengono visualizzate in un DIV HTML creato con ID = "SP". L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzata *la rete*. **sourceProtocol per** visualizzare il protocollo di origine usato per ricevere i dati. Le informazioni vengono visualizzate in un DIV HTML creato con ID = "SP". **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -60,7 +60,7 @@ Nell'esempio JScript seguente viene utilizzata la *rete*. **sourceProtocol** per
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

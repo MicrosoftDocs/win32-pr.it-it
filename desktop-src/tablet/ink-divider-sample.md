@@ -1,30 +1,30 @@
 ---
-description: Questo esempio è basato sull'esempio di raccolta di input penna. Mostra come usare l'oggetto divisore per analizzare l'input penna.
+description: Questo esempio è basato sull'esempio di raccolta ink. Illustra come usare l'oggetto Divider per analizzare l'input penna.
 ms.assetid: 3350b643-11b3-4474-8dd0-bc3eb1b7121e
 title: Esempio di divisore input penna
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a272d6a5530938e6fecfeefc9f46ffdd0835d045
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c74592606ba98ec913dd419deda1b2b766066e17545e95f18a14980f36dafde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104484380"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118452098"
 ---
 # <a name="ink-divider-sample"></a>Esempio di divisore input penna
 
-Questo esempio è basato sull' [esempio di raccolta di input penna](ink-collection-sample.md). Mostra come usare l'oggetto [divisore](/previous-versions/ms839398(v=msdn.10)) per analizzare l'input penna.
+Questo esempio è basato su [Ink Collection Sample.](ink-collection-sample.md) Illustra come usare l'oggetto [Divider per](/previous-versions/ms839398(v=msdn.10)) analizzare l'input penna.
 
-Per informazioni concettuali dettagliate sul [divisore](/previous-versions/ms839398(v=msdn.10)), vedere [l'oggetto divisore](the-divider-object.md).
+Per informazioni concettuali dettagliate su [Divider,](/previous-versions/ms839398(v=msdn.10))vedere [Oggetto Divider.](the-divider-object.md)
 
-Quando il modulo viene aggiornato, l'esempio disegna un rettangolo di delimitazione intorno a ogni unità analizzata, suddiviso in parole, linee, paragrafi e disegni. Oltre a usare colori diversi, questi rettangoli vengono ingranditi in base a importi diversi per garantire che nessuno dei rettangoli venga oscurato da altri. Nella tabella seguente vengono specificati il colore e l'ingrandimento per ogni unità analizzata.
+Quando il form viene aggiornato, l'esempio disegna un rettangolo di delimitazione intorno a ogni unità analizzata, suddiviso in parole, linee, paragrafi e disegni. Oltre a usare colori diversi, questi rettangoli vengono ingranditi di quantità diverse per garantire che nessuno dei rettangoli sia nascosto da altri. Nella tabella seguente vengono specificati il colore e la colorazione per ogni unità analizzata.
 
 
 
-| Unità analizzata        | Colore              | Ingrandimento pixel |
+| unità analizzata        | Color              | Pixel Disassamento |
 |----------------------|--------------------|-------------------|
 | Word<br/>      | Green<br/>   | 1<br/>      |
-| Linea<br/>      | Fucsia<br/> | 3<br/>      |
+| A linee<br/>      | Fucsia<br/> | 3<br/>      |
 | Paragraph<br/> | Blu<br/>    | 5<br/>      |
 | Disegno<br/>   | Red<br/>     | 1<br/>      |
 
@@ -34,7 +34,7 @@ Quando il modulo viene aggiornato, l'esempio disegna un rettangolo di delimitazi
 
 ## <a name="setting-up-the-form"></a>Impostazione del modulo
 
-Quando il form viene caricato, viene creato un oggetto [divisore](/previous-versions/ms839398(v=msdn.10)) . Un oggetto [InkOverlay](/previous-versions/ms833057(v=msdn.10)) viene creato e associato a un pannello nel form. I gestori di eventi vengono quindi collegati all'oggetto InkOverlay per tenere traccia del momento in cui i tratti vengono aggiunti ed eliminati. Quindi, se sono disponibili i riconoscitori, al divisore viene assegnato un oggetto [RecognizerContext](/previous-versions/ms828542(v=msdn.10)) per il riconoscimento predefinito. Viene quindi impostata la proprietà [LineHeight](/previous-versions/ms839409(v=msdn.10)) dell'oggetto divisore e la raccolta [Strokes](/previous-versions/ms827799(v=msdn.10)) dall'oggetto InkOverlay viene assegnata al divisore. Infine, l'oggetto InkOverlay è abilitato.
+Quando il form viene caricato, viene creato un oggetto [Divider.](/previous-versions/ms839398(v=msdn.10)) Un [oggetto InkOverlay](/previous-versions/ms833057(v=msdn.10)) viene creato e associato a un pannello nel form. I gestori eventi vengono quindi associati all'oggetto InkOverlay per tenere traccia del momento in cui i tratti vengono aggiunti ed eliminati. Quindi, se sono disponibili riconoscitori, al divisore viene assegnato un oggetto [RecognizerContext](/previous-versions/ms828542(v=msdn.10)) per il riconoscitore predefinito. Viene quindi impostata la [proprietà LineHeight](/previous-versions/ms839409(v=msdn.10)) dell'oggetto Divider e la raccolta [Strokes](/previous-versions/ms827799(v=msdn.10)) dell'oggetto InkOverlay viene assegnata a Divider. Infine, l'oggetto InkOverlay è abilitato.
 
 
 ```C++
@@ -98,7 +98,7 @@ myInkOverlay.Enabled = true;
 
 
 
-La raccolta [Strokes](/previous-versions/ms839422(v=msdn.10)) dell'oggetto [divisore](/previous-versions/ms839398(v=msdn.10)) deve essere mantenuta sincronizzata con la raccolta [Strokes](/previous-versions/ms827799(v=msdn.10)) dell'oggetto [InkOverlay](/previous-versions/ms833057(v=msdn.10)) (a cui si accede tramite la proprietà [Ink](/previous-versions/ms833110(v=msdn.10)) dell'oggetto InkOverlay). Per assicurarsi che ciò avvenga, il gestore dell'evento [Stroke](/previous-versions/ms835344(v=msdn.10)) per l'oggetto InkOverlay viene scritto nel modo seguente. Si noti che il gestore dell'evento verifica prima di tutto se [EditingMode](/previous-versions/ms833105(v=msdn.10)) è impostato su **input penna** per filtrare i tratti di gomma. Se l'utente ha richiesto l'analisi automatica del layout, l'applicazione chiama il metodo DivideInk del form e aggiorna l'area di disegno.
+La raccolta [Strokes](/previous-versions/ms839422(v=msdn.10)) dell'oggetto [Divider](/previous-versions/ms839398(v=msdn.10)) deve essere mantenuta sincronizzata con la raccolta [Strokes](/previous-versions/ms827799(v=msdn.10)) dell'oggetto [InkOverlay](/previous-versions/ms833057(v=msdn.10)) (accessibile tramite la proprietà [Ink](/previous-versions/ms833110(v=msdn.10)) dell'oggetto InkOverlay). Per assicurarsi che ciò accada, il [gestore dell'evento Stroke](/previous-versions/ms835344(v=msdn.10)) per l'oggetto InkOverlay viene scritto come segue. Si noti che il gestore dell'evento verifica prima di tutto se [EditingMode](/previous-versions/ms833105(v=msdn.10)) è impostato su **Ink** per filtrare i tratti della gomma. Se l'utente ha richiesto l'analisi automatica del layout, l'applicazione chiama il metodo DivideInk del form e aggiorna l'area di disegno.
 
 
 ```C++
@@ -126,7 +126,7 @@ private void myInkOverlay_Stroke(object sender, InkCollectorStrokeEventArgs e )
 
 ## <a name="dividing-the-ink"></a>Divisione dell'input penna
 
-Quando l'utente fa clic su divide nel menu file, il metodo [divide](/previous-versions/ms839461(v=msdn.10)) viene chiamato sull'oggetto [divisore](/previous-versions/ms839398(v=msdn.10)) . Viene utilizzato il riconoscimento predefinito, se disponibile.
+Quando l'utente fa clic su Dividi nel menu File, viene chiamato il [metodo Divide](/previous-versions/ms839461(v=msdn.10)) sull'oggetto [Divider.](/previous-versions/ms839398(v=msdn.10)) Se disponibile, viene usato il riconoscitore predefinito.
 
 
 ```C++
@@ -135,7 +135,7 @@ DivisionResult divResult = myInkDivider.Divide();
 
 
 
-L'oggetto [DivisionResult](/previous-versions/ms839371(v=msdn.10)) risultante, a cui fa riferimento la variabile `divResult` , viene passato a una funzione di utilità `getUnitBBBoxes()` . La funzione di utilità restituisce una matrice di rettangoli per qualsiasi tipo di divisione richiesto: segmenti, linee, paragrafi o disegni.
+[L'oggetto DivisionResult risultante,](/previous-versions/ms839371(v=msdn.10)) a cui fa riferimento la variabile `divResult` , viene passato a una funzione di utilità, `getUnitBBBoxes()` . La funzione di utilità restituisce una matrice di rettangoli per qualsiasi tipo di divisione richiesto: segmenti, linee, paragrafi o disegni.
 
 
 ```C++
@@ -147,7 +147,7 @@ myDrawingBoundingBoxes = getUnitBBoxes(divResult, InkDivisionType.Drawing, 1);
 
 
 
-Infine, è necessario ricreare il pannello del modulo in modo che vengano visualizzati i rettangoli di delimitazione.
+Infine, il pannello del form viene ridisegnato in modo da visualizzare i rettangoli di delimitazione.
 
 
 ```C++
@@ -156,9 +156,9 @@ DrawArea.Refresh();
 
 
 
-## <a name="ink-analysis-results"></a>Risultati analisi input penna
+## <a name="ink-analysis-results"></a>Risultati dell'analisi input penna
 
-Nella funzione di utilità, l'oggetto [DivisionResult](/previous-versions/ms839371(v=msdn.10)) viene sottoposto a query per i risultati tramite il metodo [ResultByType](/previous-versions/ms839388(v=msdn.10)) , in base al tipo di divisione richiesto dal chiamante. Il metodo ResultByType restituisce una raccolta [DivisionUnits](/previous-versions/ms837954(v=msdn.10)) . Ogni [DivisionUnit](/previous-versions/ms837976(v=msdn.10)) della raccolta rappresenta un disegno, un singolo segmento di riconoscimento della grafia, una riga di grafia o un blocco di grafia, a seconda di quanto specificato quando è stata chiamata la funzione di utilità.
+Nella funzione di utilità, l'oggetto [DivisionResult](/previous-versions/ms839371(v=msdn.10)) viene sottoposto a query per i risultati usando il metodo [ResultByType,](/previous-versions/ms839388(v=msdn.10)) in base al tipo di divisione richiesto dal chiamante. Il metodo ResultByType restituisce una [raccolta DivisionUnits.](/previous-versions/ms837954(v=msdn.10)) Ogni [DivisionUnit](/previous-versions/ms837976(v=msdn.10)) nella raccolta rappresenta un disegno, un singolo segmento di riconoscimento della grafia, una riga di grafia o un blocco di grafia, a seconda di ciò che è stato specificato quando è stata chiamata la funzione di utilità.
 
 
 ```C++
@@ -167,7 +167,7 @@ DivisionUnits units = divResult.ResultByType(divType);
 
 
 
-Se è presente almeno un [DivisionUnit](/previous-versions/ms837976(v=msdn.10)), viene creata una matrice di rettangoli contenente un rettangolo di delimitazione per unità. I rettangoli sono inflat da importi diversi per ogni tipo di unità, contenuto nella variabile inflat, per evitare la sovrapposizione.
+Se è presente almeno un [oggetto DivisionUnit,](/previous-versions/ms837976(v=msdn.10))viene creata una matrice di rettangoli contenente un rettangolo di delimitazione per unità. I rettangoli vengono gonfiati in base a quantità diverse per ogni tipo di unità, mantenute nella variabile di gonfiamento, per evitare la sovrapposizione.
 
 
 ```C++
@@ -205,9 +205,9 @@ if((null != units) && (0 < units.Count))
 
 
 
-## <a name="redrawing-the-form"></a>Ridisegno del modulo
+## <a name="redrawing-the-form"></a>Ridisegno del form
 
-Quando il ridisegno è forzato sopra, viene eseguito il codice seguente per disegnare i rettangoli di delimitazione per ogni [DivisionUnit](/previous-versions/ms837976(v=msdn.10)) sul form intorno all'input penna.
+Quando il ridisegno viene forzato sopra, viene eseguito il codice seguente per disegnare i recinti di selezione per [ogni DivisionUnit](/previous-versions/ms837976(v=msdn.10)) sul form intorno all'input penna.
 
 
 ```C++
@@ -259,7 +259,7 @@ private void DrawArea_Paint(object sender, System.Windows.Forms.PaintEventArgs e
 
 ## <a name="closing-the-form"></a>Chiusura del modulo
 
-Il metodo [Dispose](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) del modulo Elimina gli oggetti [InkOverlay](/previous-versions/ms833057(v=msdn.10)), [divisore](/previous-versions/ms839398(v=msdn.10)), [RecognizerContext](/previous-versions/ms828542(v=msdn.10)) e la raccolta [Strokes](/previous-versions/ms827799(v=msdn.10)) utilizzata nell'esempio.
+Il metodo [Dispose](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) del form elimina gli oggetti [InkOverlay,](/previous-versions/ms833057(v=msdn.10)) [Divider,](/previous-versions/ms839398(v=msdn.10)) [RecognizerContext](/previous-versions/ms828542(v=msdn.10)) e la raccolta [Strokes](/previous-versions/ms827799(v=msdn.10)) usata nell'esempio.
 
  
 

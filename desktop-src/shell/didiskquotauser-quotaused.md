@@ -1,6 +1,6 @@
 ---
 description: Ottiene l'utilizzo corrente del disco dell'utente, in byte.
-title: DiDiskQuotaUser.QuotaUsed - proprietà
+title: DIDiskQuotaUser.QuotaUsed - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 3e3ade59-b925-4ff5-ae7e-ed97eff506c7
-ms.openlocfilehash: a08d7579ad4de51fbc88b7091f2f906ace838883
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: c1584f2abd7fbb6d11d345ec78499b08dc0337e0ddd6bd6300e42a4ec3c2acec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118459932"
 ---
-# <a name="didiskquotauserquotaused-property"></a>DiDiskQuotaUser.QuotaUsed - proprietà
+# <a name="didiskquotauserquotaused-property"></a>DIDiskQuotaUser.QuotaUsed - proprietà
 
 Ottiene l'utilizzo corrente del disco dell'utente, in byte.
 
@@ -37,7 +37,7 @@ iQuotaUsed = DIDiskQuotaUser.QuotaUsed
 
 ## <a name="property-value"></a>Valore proprietà
 
-Valore **Integer** impostato sulla quantità di spazio su disco attualmente in uso. Se la compressione file NTFS è abilitata, **QuotaUsed** riflette la quantità di spazio su disco necessaria per i dati in uno stato non compresso.
+Valore **Intero** impostato sulla quantità di spazio su disco attualmente in uso. Se la compressione file NTFS è abilitata, **QuotaUsed** riflette la quantità di spazio su disco necessaria per i dati in uno stato non compresso.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,10 +1,10 @@
 ---
-title: attributo ms-Exch-House-Identifier
-description: Questo attributo contiene un indirizzo per un contatto in una Rubrica di Exchange Server.
+title: Attributo ms-Exch-House-Identifier
+description: Questo attributo contiene un indirizzo per un contatto in una rubrica Exchange server.
 ms.assetid: 99a393c7-f36c-4ade-9b14-f339f42225ba
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-Exch-House-Identifier
+- Attributo ms-Exch-House-Identifier Schema DI AD
 - Schema AD dell'attributo msExchHouseIdentifier
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8d6e0fb0b6a65bc72697b863c8022a861508fdd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 18024a765bac019ada8ab2a075fa20e60291abca029c92a3890ead565f794c0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118683045"
 ---
-# <a name="ms-exch-house-identifier-attribute"></a>attributo ms-Exch-House-Identifier
+# <a name="ms-exch-house-identifier-attribute"></a>Attributo ms-Exch-House-Identifier
 
-Questo attributo contiene un indirizzo per un contatto in una Rubrica di Exchange Server.
+Questo attributo contiene un indirizzo per un contatto in una rubrica Exchange server.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | ms-Exch-House-Identifier                    |
-| LDAP-Display-Name | msExchHouseIdentifier                       |
+| Ldap-Display-Name | msExchHouseIdentifier                       |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.596                      |
-| System-ID-GUID    | a8df7407-c5ea-11d1-bbcb-0080c76670c0        |
+| System-Id-Guid    | a8df7407-c5ea-11d1-kb-0080c76670c0        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -57,15 +57,15 @@ Questo attributo contiene un indirizzo per un contatto in una Rubrica di Exchang
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x924                                                              |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 128                                                                |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000000                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Questo attributo contiene un indirizzo per un contatto in una Rubrica di Exchang
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x924                                                              |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 128                                                                |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000000                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Questo attributo contiene un indirizzo per un contatto in una Rubrica di Exchang
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x924                                                              |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 128                                                                |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000000                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Questo attributo contiene un indirizzo per un contatto in una Rubrica di Exchang
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x924                                                              |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 128                                                                |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000000                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Questo attributo contiene un indirizzo per un contatto in una Rubrica di Exchang
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x924                                                              |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 128                                                                |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000000                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 

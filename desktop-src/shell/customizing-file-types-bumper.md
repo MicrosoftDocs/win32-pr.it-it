@@ -9,27 +9,27 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 6e3442d3fb6ee760a2ce50ab2c25f6ca786430a8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f9a38c4fbaca01c1af11d21c1d92ccee625b2feab2fb936f4389ba50899a628
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118460244"
 ---
 # <a name="implementing-a-custom-file-format"></a>Implementazione di un formato di file personalizzato
 
-Questa sezione sull'implementazione di un formato di file personalizzato è organizzata nel modo seguente:
+Questa sezione sull'implementazione di un formato di file personalizzato è organizzata come segue:
 
 -   [Tipi di file e associazioni di file](fa-intro.md)
 -   [Linee guida per le associazioni di file e i programmi predefiniti](appguide-fa-defpro.md)
 -   [Uso delle estensioni della shell](shell-exts.md)
--   [Menu di scelta rapida (contesto) e gestori di menu di scelta rapida](context-menu.md)
--   [Gestori del trascinamento della selezione e formato degli Appunti personalizzati](drag-and-drop-handlers-and-custom-clipboard-format-bumper.md)
+-   [Menu di scelta rapida e gestori di menu di scelta rapida](context-menu.md)
+-   [Gestori di trascinamento della selezione e formato degli Appunti personalizzato](drag-and-drop-handlers-and-custom-clipboard-format-bumper.md)
 -   [Anteprime e icone](thumbnails-and-icons-bumper.md)
--   [Gestori di anteprime e host di anteprima della shell](preview-handlers.md)
+-   [Gestori di anteprima e host di anteprima della shell](preview-handlers.md)
 -   [Gestori della finestra delle proprietà](propsheet-handlers.md)
 -   [Come registrare e implementare un gestore della finestra delle proprietà per un tipo di file](how-to-register-and-implement-a-property-sheet-handler-for-a-file-type.md)
--   [Come registrare e implementare un gestore della finestra delle proprietà per un'applicazione del pannello di controllo](how-to-register-and-implement-a-property-sheet-handler-for-a-control-panel-application.md)
+-   [Come registrare e implementare un gestore della finestra delle proprietà per un'Pannello di controllo applicazione](how-to-register-and-implement-a-property-sheet-handler-for-a-control-panel-application.md)
 
  
 

@@ -1,5 +1,5 @@
 ---
-title: Enumerazione SwarmStatus (Deliveryoptimization. h)
+title: Enumerazione SwarmStatus (Deliveryoptimization.h)
 description: Definisce lo stato di un file all'interno del client di ottimizzazione recapito.
 ms.assetid: D40ABDD3-5573-4A8D-8608-4CB0F396CCAD
 keywords:
@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3622f819679c2fd2b28d66e371a8b88e0a2d2f70
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3a0f18d9e3344e05348bba0e972a18b7bf64df5edf41fde1cabc3f6a5b106d11
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118541946"
 ---
 # <a name="swarmstatus-enumeration"></a>Enumerazione SwarmStatus
 
@@ -47,7 +47,7 @@ typedef enum _SwarmStatus {
 <span id="SwarmStatus_Downloading"></span><span id="swarmstatus_downloading"></span><span id="SWARMSTATUS_DOWNLOADING"></span>**SwarmStatus_Downloading**
 </dt> <dd>
 
-Il file sta per essere scaricato.
+Il file è in download.
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ Il file viene memorizzato nella cache.
 <span id="SwarmStatus_Paused"></span><span id="swarmstatus_paused"></span><span id="SWARMSTATUS_PAUSED"></span>**SwarmStatus_Paused**
 </dt> <dd>
 
-Il download del file è stato sospeso.
+Il download del file è sospeso.
 
 </dd> </dl>
 
@@ -78,9 +78,9 @@ Il download del file è stato sospeso.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                                         |
-| Server minimo supportato<br/> | Windows Server, versione 1709 \[ solo per le app desktop\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Server, solo app desktop versione 1709 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Rappresenta i parametri di configurazione e operativi per le \_ istanze CIM gestiteelement.
+description: Rappresenta i parametri di configurazione e operativi per le istanze \_ di CIM ManagedElement.
 ms.assetid: a9ee0eb6-dc48-43f2-bdb5-f84fe7bbc1f2
-title: Classe CIM_SettingData
+title: CIM_SettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 934aaaf694a79537f5761717f91db398141c33d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19c62496b7980c265ff20ae0b1cdb050e311e4c5e09fd981b49b562eed14596b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118647323"
 ---
-# <a name="cim_settingdata-class"></a>CIM \_ SettingData (classe)
+# <a name="cim_settingdata-class"></a>Classe CIM \_ SettingData
 
-Rappresenta i parametri di configurazione e operativi per le istanze [**CIM \_ gestiteelement**](cim-managedelement.md) .
+Rappresenta i parametri di configurazione e operativi [**per le istanze di \_ CIM ManagedElement.**](cim-managedelement.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,54 +39,54 @@ class CIM_SettingData : CIM_ManagedElement
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ SettingData** presenta questi tipi di membri:
+La **classe CIM \_ SettingData** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ SettingData** dispone di queste proprietà.
+La **classe CIM \_ SettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**obbligatorio**](/windows/desktop/WmiSdk/standard-qualifiers), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("ElementName")
+Qualificatori: [**Obbligatorio,**](/windows/desktop/WmiSdk/standard-qualifiers) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("ElementName")
 </dt> </dl>
 
-Nome descrittivo per un'istanza di questa classe. Inoltre, il nome descrittivo può essere utilizzato come indice per una ricerca o una query. Non è necessario che il nome sia univoco all'interno di uno spazio dei nomi.
+Nome descrittivo per un'istanza di questa classe. Inoltre, il nome descrittivo può essere usato come indice per una ricerca o una query. Il nome non deve essere univoco all'interno di uno spazio dei nomi.
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**chiave**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("InstanceId")
+Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("InstanceID")
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe nell'ambito dello spazio dei nomi che lo contiene.
+Identifica in modo univoco un'istanza di questa classe nell'ambito dello spazio dei nomi contenitore.
 
 > [!IMPORTANT]
 >
-> Per garantire l'univocità all'interno dello spazio dei nomi, il valore della proprietà **InstanceID** deve essere costruito nel modello seguente: *OrgID*:*LocalId*
+> Per garantire l'univocità all'interno dello spazio dei nomi, il valore della proprietà **InstanceID** deve essere costruito nel modello seguente: *OrgID*:*LocalID*
 >
-> -   *OrgID* deve includere un nome con copyright, marchio o in altro modo univoco, di proprietà dell'entità di business che definisce la proprietà **InstanceID** , oppure essere un ID registrato assegnato da un'autorità globale riconosciuta.
-> -   *OrgID* non deve contenere i due punti. I primi due punti in **InstanceID** devono essere compresi tra *OrgID* e *LocalId*.
-> -   Il *localizzato* viene scelto dall'entità di business e non deve essere riutilizzato per identificare diversi elementi reali sottostanti.
-> -   Se il criterio precedente non viene utilizzato, l'entità di definizione deve assicurare che il valore **InstanceID** risultante non venga riutilizzato nelle proprietà **InstanceID** generate dal provider o da altri provider per questo spazio dei nomi.
+> -   *OrgID* deve includere un nome protetto da copyright, con marchio o altrimenti univoco di proprietà dell'entità aziendale che definisce la proprietà **InstanceID** o un ID registrato assegnato da un'autorità globale riconosciuta.
+> -   *OrgID non* deve contenere i due punti. I primi due punti in **InstanceID** devono essere compresi tra *OrgID* e *LocalID*.
+> -   *LocalID* viene scelto dall'entità aziendale e non deve essere usato nuovamente per identificare diversi elementi reali sottostanti.
+> -   Se il modello precedente non viene usato, l'entità di definizione deve garantire che il valore **InstanceID** risultante non viene usato di nuovo in tutte le proprietà **InstanceID** prodotte da questo provider o da altri provider per questo spazio dei nomi.
 > -   Per le istanze definite da DMTF, il modello deve essere usato con *OrgID* impostato su "CIM".
 
  
@@ -101,8 +101,8 @@ Identifica in modo univoco un'istanza di questa classe nell'ambito dello spazio 
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -111,7 +111,7 @@ Identifica in modo univoco un'istanza di questa classe nell'ambito dello spazio 
 
 <dl> <dt>
 
-[**\_ManagementName CIM**](cim-managedelement.md)
+[**CIM \_ ManagedElement**](cim-managedelement.md)
 </dt> </dl>
 
  

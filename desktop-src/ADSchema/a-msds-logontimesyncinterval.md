@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-login-Time-Sync-Interval
-description: Questo attributo controlla la granularità, in giorni, in cui l'ora dell'ultimo accesso per un utente o un computer, registrato nell'attributo lastLogonTimestamp, viene replicata in tutti i controller di dominio in un dominio.
+title: Attributo ms-DS-Logon-Time-Sync-Interval
+description: Questo attributo controlla la granularità, in giorni, con cui l'ora dell'ultimo accesso per un utente o un computer, registrata nell'attributo lastLogonTimestamp, viene replicata in tutti i controller di dominio in un dominio.
 ms.assetid: f1f9f1f8-df60-44b5-965d-631c4dd4ef84
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-login-Time-Sync-Interval
-- attributo msDS-LogonTimeSyncInterval-schema AD
+- Attributo MS-DS-Logon-Time-Sync-Interval Schema DI AD
+- Schema AD dell'attributo msDS-LogonTimeSyncInterval
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5dbf23ca77bda9dac76f02986be1c05c80559199
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fa27a1d6281eda7eea9f88a11c4ca6632422a1cfd9f0cb471aab513018c56150
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104520166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118684635"
 ---
-# <a name="ms-ds-logon-time-sync-interval-attribute"></a>attributo ms-DS-login-Time-Sync-Interval
+# <a name="ms-ds-logon-time-sync-interval-attribute"></a>Attributo ms-DS-Logon-Time-Sync-Interval
 
-Questo attributo controlla la granularità, in giorni, in cui l'ora dell'ultimo accesso per un utente o un computer, registrato nell'attributo lastLogonTimestamp, viene replicata in tutti i controller di dominio in un dominio.
+Questo attributo controlla la granularità, in giorni, con cui l'ora dell'ultimo accesso per un utente o un computer, registrata nell'attributo lastLogonTimestamp, viene replicata in tutti i controller di dominio in un dominio.
 
 
 
 | Voce | Valore |
 |-------------------|------------------------------------------------------------------------------------------------------------|
-| CN                | ms-DS-Access-Time-Sync-Interval                                                                             |
-| LDAP-Display-Name | msDS-LogonTimeSyncInterval                                                                                 |
+| CN                | ms-DS-Logon-Time-Sync-Interval                                                                             |
+| Ldap-Display-Name | msDS-LogonTimeSyncInterval                                                                                 |
 | Dimensione              | 4 byte                                                                                                    |
-| Privilegio aggiornamento  | Amministratore di dominio                                                                                       |
-| Frequenza di aggiornamento  | Raramente, poiché si tratta di un'impostazione di criteri, viene aggiornata solo quando si desidera modificare i criteri a livello di dominio. |
+| Aggiorna privilegio  | Amministratore di dominio                                                                                       |
+| Frequenza di aggiornamento  | Raramente, poiché si tratta di un'impostazione di criteri, viene aggiornata solo quando si desidera una modifica nei criteri a livello di dominio. |
 | Attribute-Id      | 1.2.840.113556.1.4.1784                                                                                    |
-| System-ID-GUID    | ad7940f8-e43a-4a42-83bc-d688e59ea605                                                                       |
+| System-Id-Guid    | ad7940f8-e43a-4a42-83bc-d688e59ea605                                                                       |
 | Sintassi            | [**Enumerazione**](s-enumeration.md)                                                                       |
 
 
@@ -57,15 +57,15 @@ Questo attributo controlla la granularità, in giorni, in cui l'ora dell'ultimo 
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Questo attributo controlla la granularità, in giorni, in cui l'ora dell'ultimo 
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Questo attributo controlla la granularità, in giorni, in cui l'ora dell'ultimo 
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Questo attributo controlla la granularità, in giorni, in cui l'ora dell'ultimo 
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Questo attributo controlla la granularità, in giorni, in cui l'ora dell'ultimo 
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 

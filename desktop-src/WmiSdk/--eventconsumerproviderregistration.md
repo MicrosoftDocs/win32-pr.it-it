@@ -2,7 +2,7 @@
 description: Registra i provider di consumer di eventi con WMI.
 ms.assetid: 31ff43dc-dc70-4ba0-866f-37445912f837
 ms.tgt_platform: multiple
-title: Classe __EventConsumerProviderRegistration
+title: __EventConsumerProviderRegistration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 38552519221018735c3c7543d9a1f3f2d4b680e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc3acec16b92c375f07836318be0e77c335862aec826c80bb77815865a337a72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118557935"
 ---
 # <a name="__eventconsumerproviderregistration-class"></a>\_\_Classe EventConsumerProviderRegistration
 
-La classe di sistema **\_ \_ EventConsumerProviderRegistration** registra i provider di consumer di eventi con WMI.
+La **\_ \_ classe di sistema EventConsumerProviderRegistration** registra i provider di consumer di eventi con WMI.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,45 +41,45 @@ class __EventConsumerProviderRegistration : __ProviderRegistration
 
 ## <a name="members"></a>Members
 
-La classe **\_ \_ EventConsumerProviderRegistration** dispone di questi tipi di membri:
+La **\_ \_ classe EventConsumerProviderRegistration** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **\_ \_ EventConsumerProviderRegistration** dispone di queste proprietà.
+La **\_ \_ classe EventConsumerProviderRegistration** ha queste proprietà.
 
 <dl> <dt>
 
 **ConsumerClassNames**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Matrice di nomi delle classi di consumer logiche supportate dal provider di consumer di eventi.
+Matrice di nomi delle classi consumer logiche supportate dal provider di consumer di eventi.
 
 </dd> <dt>
 
-**provider**
+**Provider**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **\_ \_ provider**
+Tipo di dati: **\_ \_ Provider**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Percorso dell'oggetto per il provider. Questa proprietà viene ereditata da [**\_ \_ ProviderRegistration**](--providerregistration.md).
+Percorso dell'oggetto del provider. Questa proprietà viene ereditata da [**\_ \_ ProviderRegistration.**](--providerregistration.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **\_ \_ EventConsumerProviderRegistration** deriva da [**\_ \_ ProviderRegistration**](--providerregistration.md).
+La **\_ \_ classe EventConsumerProviderRegistration** è derivata da [**\_ \_ ProviderRegistration.**](--providerregistration.md)
 
 ## <a name="requirements"></a>Requisiti
 

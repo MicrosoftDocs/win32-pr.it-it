@@ -4,22 +4,22 @@ ms.assetid: 6f46c4e1-50b8-4496-b755-646d3652255a
 title: Attività del dispenser di risorse COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f98d75137a7a2775fdeef7eafad1bdfa58d003e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3ab1700ae1ff1fa6dc9146f449959e0f6bd366058bfd306ef6c977da7a4392ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118548634"
 ---
 # <a name="com-resource-dispenser-tasks"></a>Attività del dispenser di risorse COM+
 
-Negli argomenti seguenti di questa sezione vengono fornite istruzioni dettagliate per l'utilizzo del servizio di dispenser di risorse COM+.
+Negli argomenti seguenti di questa sezione vengono fornite istruzioni dettagliate per l'uso del servizio di dispenser di risorse COM+.
 
 
 
 | Argomento                                                                                           | Descrizione                                                                                  |
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| [Implementazione di un dispenser di risorse COM+](implementing-a-com--resource-dispenser.md)<br/> | Vengono fornite istruzioni su come implementare il servizio di dispenser di risorse COM+.<br/> |
+| [Implementazione di un dispenser di risorse COM+](implementing-a-com--resource-dispenser.md)<br/> | Fornisce istruzioni su come implementare il servizio di dispenser di risorse COM+.<br/> |
 
 
 
@@ -29,7 +29,7 @@ Negli argomenti seguenti di questa sezione vengono fornite istruzioni dettagliat
 
 <dl> <dt>
 
-[Concetti relativi al dispenser di risorse COM+](com--resource-dispenser-concepts.md)
+[Concetti del dispenser di risorse COM+](com--resource-dispenser-concepts.md)
 </dt> </dl>
 
  

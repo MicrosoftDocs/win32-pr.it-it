@@ -1,7 +1,7 @@
 ---
-description: Riduce al minimo tutte le finestre sul desktop. Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e selezionare Riduci a icona tutte le finestre nei sistemi meno recenti o facendo clic sull'icona Mostra desktop sulla barra delle applicazioni.
+description: Riduce a icona tutte le finestre sul desktop. Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e scegliere Riduci a icona tutto Windows nei sistemi precedenti o facendo clic sull'icona Mostra desktop sulla barra delle applicazioni.
 ms.assetid: 25DD56B0-221E-44a2-9FAD-FB358ADD7FF1
-title: Metodo IShellDispatch. MinimizeAll (shldisp. h)
+title: Metodo IShellDispatch.MinimizeAll (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: b8b8f20ab82a6216a03d772151f852fd9c69b917
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 18f1256f93c9cd18d0c904f090716641b466e91319dbef323ee5107b802f82ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118452986"
 ---
-# <a name="ishelldispatchminimizeall-method"></a>IShellDispatch. MinimizeAll, metodo
+# <a name="ishelldispatchminimizeall-method"></a>Metodo IShellDispatch.MinimizeAll
 
-Riduce al minimo tutte le finestre sul desktop. Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e selezionare **Riduci a icona tutte le finestre** nei sistemi meno recenti o facendo clic sull'icona **Mostra desktop** sulla barra delle applicazioni.
+Riduce a icona tutte le finestre sul desktop. Questo metodo ha lo stesso effetto di fare clic con il pulsante destro del mouse sulla barra delle applicazioni e scegliere Riduci a icona **Windows** nei sistemi precedenti o facendo clic sull'icona **Mostra desktop** sulla barra delle applicazioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,13 +57,13 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene implementato e accessibile tramite il metodo [**Shell. MinimizeAll**](shell-minimizeall.md) .
+Questo metodo viene implementato e accessibile tramite il [**metodo Shell.MinimizeAll.**](shell-minimizeall.md)
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti illustrano l'uso di **MinimizeAll** in uso per JScript, VBScript e Visual Basic.
+Gli esempi seguenti illustrano l'uso di **MinimizeAll** per JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -79,7 +79,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -119,11 +119,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

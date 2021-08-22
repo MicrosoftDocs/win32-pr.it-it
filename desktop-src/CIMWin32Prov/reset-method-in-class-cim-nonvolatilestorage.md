@@ -1,8 +1,8 @@
 ---
-description: Il metodo Reset della classe CIM \_ NonVolatileStorage richiede la reimpostazione del dispositivo logico.
+description: Il metodo Reset della classe \_ CIM NonVolatileStorage richiede una reimpostazione del dispositivo logico.
 ms.assetid: 5fa02e46-4823-4ffa-b4e9-0930fed6fb03
 ms.tgt_platform: multiple
-title: Reimposta il metodo della classe CIM_NonVolatileStorage
+title: Metodo Reset della classe CIM_NonVolatileStorage
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,19 +14,19 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8c43ac3658aaf32d9ac52b69c1f114267fbbc807
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e8cd378cbff7e8c723d0e9dc7a99cf4a10ffce8b541ec46a5b8232d6e43937e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118418856"
 ---
-# <a name="reset-method-of-the-cim_nonvolatilestorage-class"></a>Metodo Reset della classe CIM \_ NonVolatileStorage
+# <a name="reset-method-of-the-cim_nonvolatilestorage-class"></a>Metodo Reset della classe \_ CIM NonVolatileStorage
 
-Il metodo **Reset** della classe CIM \_ NonVolatileStorage richiede la reimpostazione del dispositivo logico. Questo metodo viene ereditato da [**\_ LogicalDevice CIM**](cim-logicaldevice.md).
+Il **metodo Reset** della classe \_ CIM NonVolatileStorage richiede una reimpostazione del dispositivo logico. Questo metodo viene ereditato da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -51,7 +51,7 @@ Restituisce 0 (zero) se la richiesta è stata eseguita correttamente, 1 (uno) se
 
 Questo metodo non è attualmente implementato da WMI. Per usare questo metodo, è necessario implementarlo nel proprio provider.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,7 +62,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -71,10 +71,10 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[\_NONVOLATILESTORAGE CIM](reset-method-in-class-cim-nonvolatilestorage.md)
+[CIM \_ NonVolatileStorage](reset-method-in-class-cim-nonvolatilestorage.md)
 </dt> <dt>
 
-[**\_NONVOLATILESTORAGE CIM**](cim-nonvolatilestorage.md)
+[**CIM \_ NonVolatileStorage**](cim-nonvolatilestorage.md)
 </dt> </dl>
 
  

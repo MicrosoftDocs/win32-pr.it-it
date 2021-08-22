@@ -1,7 +1,7 @@
 ---
-description: Il metodo ForceSourceListResolution dell'oggetto Installer impone all'Windows Installer di eseguire la ricerca nell'elenco di origine di una fonte di prodotto valida.
+description: Il metodo ForceSourceListResolution dell'oggetto Installer forza Windows Installer di cercare un'origine del prodotto valida nell'elenco di origine.
 ms.assetid: d5097331-8cf5-494f-9e88-bcffcad3fe5d
-title: Installer. ForceSourceListResolution, metodo
+title: Metodo Installer.ForceSourceListResolution
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: cadc27f3eaa90cd6fb2729f73d07cbcfa1f96b73
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cafff03a392fc1977fd19b5b8415ca499d614c2c4ba3fb4f7104edd5344f3a86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118630593"
 ---
-# <a name="installerforcesourcelistresolution-method"></a>Installer. ForceSourceListResolution, metodo
+# <a name="installerforcesourcelistresolution-method"></a>Metodo Installer.ForceSourceListResolution
 
-Il metodo **ForceSourceListResolution** dell'oggetto [**Installer**](installer-object.md) impone al programma di installazione di eseguire la ricerca nell'elenco di origine di una fonte di prodotto valida la volta successiva che è necessaria un'origine, ad esempio quando il programma di installazione esegue un'installazione o una reinstallazione o quando richiede il percorso di un componente impostato per l'esecuzione dall'origine.
+Il **metodo ForceSourceListResolution** dell'oggetto [**Installer**](installer-object.md) forza il programma di installazione a cercare un'origine del prodotto valida nell'elenco di origine alla successiva richiesta di un'origine, ad esempio quando il programma di installazione esegue un'installazione o una reinstallazione o quando è necessario il percorso per un set di componenti da eseguire dall'origine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,14 +43,14 @@ Installer.ForceSourceListResolution(
 *Prodotto* 
 </dt> <dd>
 
-Specifica il codice del prodotto.
+Specifica il codice prodotto.
 
 </dd> <dt>
 
 *Utente* 
 </dt> <dd>
 
-Nome utente per l'installazione per utente; stringa null o vuota per l'installazione per computer.
+Nome utente per l'installazione per utente. Stringa null o vuota per l'installazione per computer.
 
 </dd> </dl>
 
@@ -64,9 +64,9 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller è definito come \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 
@@ -77,7 +77,7 @@ Questo metodo non restituisce valori.
 [**MsiSourceListForceResolution**](/windows/desktop/api/Msi/nf-msi-msisourcelistforceresolutiona)
 </dt> <dt>
 
-[Resilienza di origine](source-resiliency.md)
+[Resilienza dell'origine](source-resiliency.md)
 </dt> </dl>
 
  

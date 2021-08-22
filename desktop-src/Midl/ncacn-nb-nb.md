@@ -1,9 +1,9 @@
 ---
-title: attributo ncacn_nb_nb
-description: La \_ \_ parola chiave ncacn NB NB identifica NetBEUI su NetBIOS come famiglia di protocolli per l'endpoint. Questa famiglia di protocolli è obsoleta e non deve essere utilizzata nelle nuove applicazioni.
+title: ncacn_nb_nb attributo
+description: La parola chiave ncacn \_ nb \_ nb identifica NetBEUI su NetBIOS come famiglia di protocolli per l'endpoint. Questa famiglia di protocolli è obsoleta e non deve essere usata nelle nuove applicazioni.
 ms.assetid: 8bab2784-44ba-4356-85c1-5bd17e75d6a8
 keywords:
-- attributo ncacn_nb_nb MIDL
+- ncacn_nb_nb attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c562bb0acd546fd2c8f92a92074e599c8a505dc9
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 84a2ea48bc1472d69c2247f227b94193326927481838894e24efbce9e09afc87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "106299774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118642155"
 ---
-# <a name="ncacn_nb_nb-attribute"></a>attributo NB ncacn \_ \_
+# <a name="ncacn_nb_nb-attribute"></a>Attributo nb ncacn \_ \_ nb
 
-La parola chiave **ncacn \_ NB \_ NB** identifica NetBEUI su NetBIOS come famiglia di protocolli per l'endpoint. Questa famiglia di protocolli è obsoleta e non deve essere utilizzata nelle nuove applicazioni.
+La **parola chiave ncacn \_ nb \_ nb** identifica NetBEUI su NetBIOS come famiglia di protocolli per l'endpoint. Questa famiglia di protocolli è obsoleta e non deve essere usata nelle nuove applicazioni.
 
 ``` syntax
 endpoint("ncacn_nb_nb:[port-name]")
@@ -31,10 +31,10 @@ endpoint("ncacn_nb_nb:[port-name]")
 
 <dl> <dt>
 
-*nome porta* 
+*port-name* 
 </dt> <dd>
 
-Specifica un valore facoltativo a 8 bit compreso tra 1 e 255. I valori minori di 0x20 sono riservati. Se non si specifica il valore di *nome porta* , il servizio di mapping degli endpoint seleziona il valore di porta.
+Specifica un valore facoltativo a 8 bit compreso tra 1 e 255. I valori minori di 0x20 sono riservati. Se il *valore port-name* non è specificato, il servizio di mapping degli endpoint seleziona il valore della porta.
 
 </dd> </dl>
 
@@ -45,7 +45,7 @@ La sintassi della stringa di porta NetBIOS, come tutte le stringhe di porta, è 
 > [!Note]  
 > Questa famiglia di protocolli non è supportata in Windows XP.
 
- 
+ 
 
 ## <a name="examples"></a>Esempi
 
@@ -65,30 +65,30 @@ interface iface
 
 <dl> <dt>
 
-[**endpoint**](endpoint.md)
+[**Endpoint**](endpoint.md)
 </dt> <dt>
 
 [File di definizione dell'interfaccia (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**\_TCP IP \_ ncacn**](ncacn-ip-tcp.md)
+[**ncacn \_ ip \_ tcp**](ncacn-ip-tcp.md)
 </dt> <dt>
 
-[**ncacn \_ NB \_ TCP**](ncacn-nb-tcp.md)
+[**ncacn \_ nb \_ tcp**](ncacn-nb-tcp.md)
 </dt> <dt>
 
-[**\_NP ncacn**](ncacn-np.md)
+[**ncacn \_ np**](ncacn-np.md)
 </dt> <dt>
 
-[**\_SPX ncacn**](ncacn-spx.md)
+[**ncacn \_ spx**](ncacn-spx.md)
 </dt> <dt>
 
 [**ncalrpc**](ncalrpc.md)
 </dt> <dt>
 
-[**Associazione stringa**](/windows/desktop/Rpc/string-binding)
+[**associazione di stringhe**](/windows/desktop/Rpc/string-binding)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
-description: Metodo virtuale pure che esegue l'override delle classi derivate.
+description: Metodo virtuale puro di cui le classi derivate eseguono l'override.
 ms.assetid: 05c73f6b-27f4-4930-b4d5-1688b6bf1791
-title: Metodo CBaseControlVideo. GetStaticImage (Ctlutil. h)
+title: Metodo CBaseControlVideo.GetStaticImage (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 13b0515e20202373954050b6fa18f10a20a76a6a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 69496754c8a1f80be341c475f422229aba6108dbc0e73cd1db9506a301690ffa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118660831"
 ---
-# <a name="cbasecontrolvideogetstaticimage-method"></a>CBaseControlVideo. GetStaticImage, metodo
+# <a name="cbasecontrolvideogetstaticimage-method"></a>Metodo CBaseControlVideo.GetStaticImage
 
-Metodo virtuale pure che esegue l'override delle classi derivate.
+Metodo virtuale puro di cui le classi derivate eseguono l'override.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,15 +59,15 @@ Puntatore al buffer di output.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Tramite l'interfaccia [**IBasicVideo**](/windows/desktop/api/Control/nn-control-ibasicvideo) , un'applicazione può richiedere che venga fornita una copia dell'immagine corrente in un buffer di memoria. alcuni renderer possono restituire e \_ NOTIMPL a questo se non lo supportano. La classe derivata determina come recuperare l'immagine. Quando l'applicazione chiama **CBaseControlVideo:: GetStaticImage**, chiama questo metodo virtuale pure che la classe derivata deve eseguire l'override per implementarla. Viene anche chiamato dalla funzione membro [**CBaseControlVideo:: GetCurrentImage**](cbasecontrolvideo-getcurrentimage.md) .
+Tramite [**l'interfaccia IBasicVideo,**](/windows/desktop/api/Control/nn-control-ibasicvideo) un'applicazione può richiedere che le sia data una copia dell'immagine corrente in un buffer di memoria (alcuni renderer possono restituire E NOTIMPL a questo se non la \_ supportano). La classe derivata determina come recuperare l'immagine. Quando l'applicazione chiama **CBaseControlVideo::GetStaticImage,** chiama questo metodo virtuale puro di cui la classe derivata deve eseguire l'override per implementarla. Viene chiamato anche dalla funzione membro [**CBaseControlVideo::GetCurrentImage.**](cbasecontrolvideo-getcurrentimage.md)
 
-La classe fornisce una funzione membro helper, [**CBaseControlVideo:: CopyImage**](cbasecontrolvideo-copyimage.md), a cui può essere assegnato un esempio che contiene un'immagine e la funzione membro copia la relativa sezione (in base al rettangolo di origine corrente) nel buffer di output fornito dall'applicazione.
+La classe fornisce una funzione membro helper, [**CBaseControlVideo::CopyImage,**](cbasecontrolvideo-copyimage.md)a cui può essere assegnato un esempio che contiene un'immagine e la funzione membro copierà la relativa sezione pertinente (in base al rettangolo di origine corrente) nel buffer di output fornito dall'applicazione.
 
-Nell'esempio seguente viene illustrata un'implementazione di questa funzione membro in una classe derivata. In questo esempio m \_ pRenderer include un oggetto di una classe derivata da [**CBaseVideoRenderer**](cbasevideorenderer.md).
+Nell'esempio seguente viene illustrata un'implementazione di questa funzione membro in una classe derivata. In questo esempio m \_ pRenderer contiene un oggetto di una classe derivata da [**CBaseVideoRenderer**](cbasevideorenderer.md).
 
 
 ```C++
@@ -101,8 +101,8 @@ HRESULT CVideoText::GetStaticImage(long *pBufferSize,long *pDIBImage)
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

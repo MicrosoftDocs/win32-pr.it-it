@@ -1,33 +1,33 @@
 ---
-description: Specifica le dimensioni in byte delle unità di accesso ai video. Questa proprietà è valida solo per le modalità di controllo della velocità in bit variabile (VBR).
+description: Specifica le dimensioni in byte delle unità di accesso video. Questa proprietà si applica solo alle modalità di controllo VBR (Variable Bit Rate).
 ms.assetid: bb46b171-d70a-4e01-88c4-321a210a0220
-title: Proprietà AVEncVideoCodedVideoAccessUnitSize (codecapis. h)
+title: Proprietà AVEncVideoCodedVideoAccessUnitSize (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be3a6e499749d862fdcc63f28b1a9a02f476d1c7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fcce45dbd232226aa5e0013cbead8e4ff2d8d82b5362d1d6a43cf45c2d030407
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103965484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118663167"
 ---
-# <a name="avencvideocodedvideoaccessunitsize-property"></a>Proprietà AVEncVideoCodedVideoAccessUnitSize
+# <a name="avencvideocodedvideoaccessunitsize-property"></a>AVEncVideoCodedVideoAccessUnitSize - proprietà
 
-Specifica le dimensioni in byte delle unità di accesso ai video. Questa proprietà è valida solo per le modalità di controllo della velocità in bit variabile (VBR).
+Specifica le dimensioni in byte delle unità di accesso video. Questa proprietà si applica solo alle modalità di controllo VBR (Variable Bit Rate).
 
 Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt32** (**VT \_ UI4**)
+**UINT32** (**VT \_ UI4**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncVideoCodedVideoAccessUnitSize**
+**CODECAPI \_ AVEncVideoCodedVideoAccessUnitSize**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Questa proprietà viene restituita come un intervallo di valori. Per ottenere l'intervallo supportato, chiamare [**ICodecAPI:: GetParameterRange**](/windows/desktop/api/Strmif/nf-strmif-icodecapi-getparameterrange).
+Questa proprietà viene restituita come intervallo di valori. Per ottenere l'intervallo supportato, chiamare [**ICodecAPI::GetParameterRange**](/windows/desktop/api/Strmif/nf-strmif-icodecapi-getparameterrange).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ Questa proprietà viene restituita come un intervallo di valori. Per ottenere l'
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | app \[ desktop UWP di Windows 2000 Server \|\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Questa proprietà viene restituita come un intervallo di valori. Per ottenere l'
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà dell'API Codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

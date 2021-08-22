@@ -1,49 +1,49 @@
 ---
-title: Uso del punto di inserimento
-description: In questa sezione vengono forniti esempi di codice che illustrano come eseguire attività correlate ai carrier.
+title: Uso dei caret
+description: In questa sezione vengono forniti esempi di codice che illustrano come eseguire attività correlate ai caret.
 ms.assetid: 82b0a84c-49a9-4d9d-b4c8-7c4511d863eb
 keywords:
-- risorse, punto di inserimento
-- carenze, creazione
-- carenze, visualizzazione
-- carriere, distruzione
-- carenze, nascondere
-- intermittenza, tempi di inattenzione
+- risorse, caret
+- caret, creazione
+- caret, visualizzazione
+- caret, eliminazione
+- caret, nascondere
+- cursori, tempi di lampeggiamento
 - righe lampeggianti
 - blocchi lampeggianti
-- bitmap intermittenti
-- creazione di carriere
-- visualizzazione di carriere
-- nascondere i punto di inserimento
-- eliminazione di carriere
-- lampeggi volte
-- input dell'utente, input da tastiera
+- bitmap lampeggianti
+- creazione di caret
+- visualizzazione di caret
+- nascondere i caret
+- eliminazione di caret
+- blink times
+- input utente, input da tastiera
 - acquisizione dell'input dell'utente, input da tastiera
 - input da tastiera
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6450a3169588b3072d1fee271f4890a7cdeafd2
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 8c930931df8ce401fbed8cc9af16db3cb52de08ebe9cf539109b426497318d5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104046636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118472647"
 ---
-# <a name="using-carets"></a>Uso del punto di inserimento
+# <a name="using-carets"></a>Uso dei caret
 
-Questa sezione contiene esempi di codice per le attività seguenti:
+In questa sezione sono disponibili esempi di codice per le attività seguenti:
 
--   [Creazione e visualizzazione di un accento circonflesso](#creating-and-displaying-a-caret)
--   [Nascondere un accento circonflesso](#hiding-a-caret)
--   [Eliminazione di un accento circonflesso](#destroying-a-caret)
--   [Regolazione del tempo di lampeggio](#adjusting-the-blink-time)
+-   [Creazione e visualizzazione di un punto di controllo](#creating-and-displaying-a-caret)
+-   [Nascondere un punto di controllo](#hiding-a-caret)
+-   [Eliminazione di un punto di controllo](#destroying-a-caret)
+-   [Regolazione dell'ora di lampeggiamento](#adjusting-the-blink-time)
 -   [Elaborazione dell'input da tastiera](#processing-keyboard-input)
 
-## <a name="creating-and-displaying-a-caret"></a>Creazione e visualizzazione di un accento circonflesso
+## <a name="creating-and-displaying-a-caret"></a>Creazione e visualizzazione di un punto di controllo
 
-Quando riceve lo stato attivo della tastiera, la finestra deve creare e visualizzare il cursore. Utilizzare la funzione [**CreateCaret**](/windows/desktop/api/Winuser/nf-winuser-createcaret) per creare un punto di inserimento nella finestra specificata. È quindi possibile chiamare [**SetCaretPos**](/windows/desktop/api/Winuser/nf-winuser-setcaretpos) per impostare la posizione corrente del cursore e [**ShowCaret**](/windows/desktop/api/Winuser/nf-winuser-showcaret) per rendere visibile il cursore.
+Quando si riceve lo stato attivo della tastiera, la finestra deve creare e visualizzare il punto di interesse. Usare la [**funzione CreateCaret**](/windows/desktop/api/Winuser/nf-winuser-createcaret) per creare un punto di accesso nella finestra specificata. È quindi possibile chiamare [**SetCaretPos**](/windows/desktop/api/Winuser/nf-winuser-setcaretpos) per impostare la posizione corrente del cursore e [**ShowCaret**](/windows/desktop/api/Winuser/nf-winuser-showcaret) per rendere visibile il cursore.
 
-Il sistema invia il messaggio di [**\_ SetFocus di WM**](/windows/desktop/inputdev/wm-setfocus) alla finestra che riceve lo stato attivo; pertanto, un'applicazione deve creare e visualizzare il cursore durante l'elaborazione del messaggio.
+Il sistema invia il messaggio [**WM \_ SETFOCUS**](/windows/desktop/inputdev/wm-setfocus) alla finestra che riceve lo stato attivo della tastiera. Pertanto, un'applicazione deve creare e visualizzare il punto di interesse durante l'elaborazione del messaggio.
 
 
 ```
@@ -70,7 +70,7 @@ char *lpszChar;  // pointer to character
 
 
 
-Per creare un punto di inserimento basato su una bitmap, è necessario specificare un handle bitmap quando si usa [**CreateCaret**](/windows/desktop/api/Winuser/nf-winuser-createcaret). È possibile usare un'applicazione grafica per creare la bitmap e un compilatore di risorse per aggiungere la bitmap alle risorse dell'applicazione. L'applicazione può quindi usare la funzione [**LoadBitmap**](/windows/desktop/api/winuser/nf-winuser-loadbitmapa) per caricare l'handle bitmap. Ad esempio, è possibile sostituire la riga **CreateCaret** nell'esempio precedente con le righe seguenti per creare un punto di inserimento bitmap.
+Per creare un punto di selezione basato su una bitmap, è necessario specificare un handle di bitmap quando si usa [**CreateCaret**](/windows/desktop/api/Winuser/nf-winuser-createcaret). È possibile usare un'applicazione grafica per creare la bitmap e un compilatore di risorse per aggiungere la bitmap alle risorse dell'applicazione. L'applicazione può quindi usare la [**funzione LoadBitmap**](/windows/desktop/api/winuser/nf-winuser-loadbitmapa) per caricare l'handle della bitmap. Ad esempio, è possibile sostituire la **riga CreateCaret** nell'esempio precedente con le righe seguenti per creare un punto di interruzione bitmap.
 
 
 ```
@@ -85,15 +85,15 @@ Per creare un punto di inserimento basato su una bitmap, è necessario specifica
 
 
 
-In alternativa, è possibile usare la funzione [**CreateBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createbitmap) o [**CreateDIBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createdibitmap) per recuperare l'handle della bitmap del cursore. Per ulteriori informazioni sulle bitmap, vedere [bitmap](/windows/desktop/gdi/bitmaps).
+In alternativa, è possibile usare la [**funzione CreateBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createbitmap) o [**CreateDIBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createdibitmap) per recuperare l'handle della bitmap del punto di accesso. Per altre informazioni sulle bitmap, vedere [Bitmap.](/windows/desktop/gdi/bitmaps)
 
-Se l'applicazione specifica un handle bitmap, [**CreateCaret**](/windows/desktop/api/Winuser/nf-winuser-createcaret) ignora i parametri width e Height. La bitmap definisce la dimensione del punto di inserimento.
+Se l'applicazione specifica un handle di bitmap, [**CreateCaret**](/windows/desktop/api/Winuser/nf-winuser-createcaret) ignora i parametri di larghezza e altezza. La bitmap definisce le dimensioni del caret.
 
-## <a name="hiding-a-caret"></a>Nascondere un accento circonflesso
+## <a name="hiding-a-caret"></a>Nascondere un punto di controllo
 
-Ogni volta che l'applicazione ridisegna una schermata durante l'elaborazione di un messaggio diverso da [**WM \_ Paint**](/windows/desktop/gdi/wm-paint), deve rendere invisibile il cursore usando la funzione [**HideCaret**](/windows/desktop/api/Winuser/nf-winuser-hidecaret) . Al termine del disegno dell'applicazione, visualizzare nuovamente il punto di inserimento tramite la funzione [**ShowCaret**](/windows/desktop/api/Winuser/nf-winuser-showcaret) . Se l'applicazione elabora il messaggio di **\_ disegno WM** , non è necessario nascondere e visualizzare nuovamente il cursore, perché questa funzione esegue questa operazione automaticamente.
+Ogni volta che l'applicazione ridisegna una schermata durante l'elaborazione di un messaggio diverso da [**WM \_ PAINT,**](/windows/desktop/gdi/wm-paint)deve rendere invisibile il punto di accesso usando la [**funzione HideCaret.**](/windows/desktop/api/Winuser/nf-winuser-hidecaret) Al termine del disegno dell'applicazione, visualizzare nuovamente il caret usando la [**funzione ShowCaret.**](/windows/desktop/api/Winuser/nf-winuser-showcaret) Se l'applicazione elabora il **messaggio WM \_ PAINT,** non è necessario nascondere e visualizzare nuovamente il caret, perché questa funzione esegue automaticamente questa operazione.
 
-Nell'esempio di codice seguente viene illustrato come fare in modo che l'applicazione nasconda il cursore durante il disegno di un carattere sullo schermo e durante l'elaborazione del messaggio [**WM \_ char**](/windows/desktop/inputdev/wm-char) .
+L'esempio di codice seguente mostra come fare in modo che l'applicazione nascondi il punto di controllo durante il disegno di un carattere sullo schermo e durante l'elaborazione [**del messaggio WM \_ CHAR.**](/windows/desktop/inputdev/wm-char)
 
 
 ```
@@ -156,11 +156,11 @@ HDC hdc;     // device context
 
 
 
-Se l'applicazione chiama la funzione [**HideCaret**](/windows/desktop/api/Winuser/nf-winuser-hidecaret) più volte senza chiamare [**ShowCaret**](/windows/desktop/api/Winuser/nf-winuser-showcaret), il cursore non verrà visualizzato fino a quando l'applicazione non chiamerà anche **ShowCaret** lo stesso numero di volte.
+Se l'applicazione chiama la funzione [**HideCaret**](/windows/desktop/api/Winuser/nf-winuser-hidecaret) più volte senza chiamare [**ShowCaret,**](/windows/desktop/api/Winuser/nf-winuser-showcaret)il caret non verrà visualizzato finché l'applicazione non chiama **anche ShowCaret** lo stesso numero di volte.
 
-## <a name="destroying-a-caret"></a>Eliminazione di un accento circonflesso
+## <a name="destroying-a-caret"></a>Eliminazione di un punto di controllo
 
-Quando una finestra perde lo stato attivo della tastiera, il sistema invia il messaggio [**WM \_ KILLFOCUS**](/windows/desktop/inputdev/wm-killfocus) alla finestra. L'applicazione deve eliminare il cursore durante l'elaborazione del messaggio usando la funzione [**DestroyCaret**](/windows/desktop/api/Winuser/nf-winuser-destroycaret) . Il codice seguente illustra come eliminare un accento circonflesso in una finestra che non ha più lo stato attivo della tastiera.
+Quando una finestra perde lo stato attivo della tastiera, il sistema invia il messaggio [**\_ KILLFOCUS WM**](/windows/desktop/inputdev/wm-killfocus) alla finestra. L'applicazione deve eliminare il caret durante l'elaborazione del messaggio usando la [**funzione DestroyCaret.**](/windows/desktop/api/Winuser/nf-winuser-destroycaret) Nel codice seguente viene illustrato come eliminare un punto di interesse in una finestra che non ha più lo stato attivo della tastiera.
 
 
 ```
@@ -175,15 +175,15 @@ case WM_KILLFOCUS:
 
 
 
-## <a name="adjusting-the-blink-time"></a>Regolazione del tempo di lampeggio
+## <a name="adjusting-the-blink-time"></a>Regolazione dell'ora di lampeggiamento
 
-Nelle finestre a 16 bit, un'applicazione basata su Windows può chiamare la funzione [**GetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-getcaretblinktime) per salvare l'ora di indicizzazione corrente, quindi chiamare la funzione [**SetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-setcaretblinktime) per modificare il tempo di lampeggio durante la relativa elaborazione del messaggio [**WM \_ SetFocus**](/windows/desktop/inputdev/wm-setfocus) . L'applicazione ripristinerà il tempo di lampeggio salvato per l'uso di altre applicazioni chiamando **SetCaretBlinkTime** durante la relativa elaborazione del messaggio [**WM \_ KILLFOCUS**](/windows/desktop/inputdev/wm-killfocus) . Tuttavia, questa tecnica non funziona in ambienti multithread. In particolare, la disattivazione di un'applicazione non viene sincronizzata con l'attivazione di un'altra applicazione, in modo che se un'applicazione si blocca, è ancora possibile attivare un'altra applicazione.
+Nel Windows a 16 bit un'applicazione basata su Windows può chiamare la funzione [**GetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-getcaretblinktime) per salvare l'ora di lampeggiamento corrente, quindi chiamare la funzione [**SetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-setcaretblinktime) per regolare l'ora di lampeggiamento durante l'elaborazione del messaggio [**WM \_ SETFOCUS.**](/windows/desktop/inputdev/wm-setfocus) L'applicazione ripristina l'ora di lampeggiamento salvata per l'uso di altre applicazioni chiamando **SetCaretBlinkTime durante** l'elaborazione del [**messaggio \_ KILLFOCUS WM.**](/windows/desktop/inputdev/wm-killfocus) Tuttavia, questa tecnica non funziona in ambienti multithreading. In particolare, la disattivazione di un'applicazione non è sincronizzata con l'attivazione di un'altra applicazione, in modo che se un'applicazione si blocca, un'altra applicazione può comunque essere attivata.
 
-Le applicazioni devono rispettare il tempo di lampeggio scelto dall'utente. La funzione [**SetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-setcaretblinktime) deve essere chiamata solo da un'applicazione che consente all'utente di impostare il tempo di lampeggio.
+Le applicazioni devono rispettare l'ora di lampeggiamento scelta dall'utente. La [**funzione SetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-setcaretblinktime) deve essere chiamata solo da un'applicazione che consente all'utente di impostare l'ora di lampeggiamento.
 
 ## <a name="processing-keyboard-input"></a>Elaborazione dell'input da tastiera
 
-Nell'esempio seguente viene illustrato come utilizzare un cursore in un semplice editor di testo. L'esempio aggiorna la posizione del punto di inserimento quando l'utente digita caratteri stampabili e usa varie chiavi per spostarsi nell'area client.
+L'esempio seguente illustra come usare un punto di controllo in un editor di testo semplice. Nell'esempio viene aggiornata la posizione del cursore mentre l'utente tipizza caratteri stampabili e vengono utilizzate varie chiavi per spostarsi nell'area client.
 
 
 ```
@@ -495,6 +495,6 @@ LONG APIENTRY MainWndProc(
 
 
 
- 
+ 
 
- 
+ 

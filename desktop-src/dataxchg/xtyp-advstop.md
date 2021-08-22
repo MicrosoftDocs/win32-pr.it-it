@@ -1,9 +1,9 @@
 ---
-title: Transazione XTYP_ADVSTOP (DDEML. h)
-description: Un client usa la \_ transazione XTYP ADVSTOP per terminare un ciclo di notifica con un server. Una funzione di callback del server Dynamic Data Exchange (DDE), DdeCallback, riceve questa transazione quando un client specifica XTYP \_ ADVSTOP nella funzione DdeClientTransaction.
+title: XTYP_ADVSTOP transazione (Ddeml.h)
+description: Un client usa la transazione ADVSTOP XTYP \_ per terminare un ciclo di consulenza con un server. Una funzione di callback del server Dynamic Data Exchange (DDE), DdeCallback, riceve questa transazione quando un client specifica XTYP \_ ADVSTOP nella funzione DdeClientTransaction.
 ms.assetid: 67dfa463-6a44-43a5-93be-a39c19c87c1c
 keywords:
-- Scambio di dati delle transazioni XTYP_ADVSTOP
+- XTYP_ADVSTOP dati della transazione Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61292683377cd6c7243c3e41c5dbd9332a671163
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 37e81f1fe407186410e604a259f6e8039c074da039fc23b2f8a090c34ff58154
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118544770"
 ---
-# <a name="xtyp_advstop-transaction"></a>\_Transazione ADVSTOP XTYP
+# <a name="xtyp_advstop-transaction"></a>Transazione \_ ADVSTOP XTYP
 
-Un client usa la transazione **XTYP \_ ADVSTOP** per terminare un ciclo di notifica con un server. Una funzione di callback del server Dynamic Data Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), riceve questa transazione quando un client specifica **XTYP \_ ADVSTOP** nella funzione [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction) .
+Un client usa la **transazione \_ ADVSTOP XTYP** per terminare un ciclo di consulenza con un server. Una funzione di callback del server Dynamic Data Exchange [*(DDE), DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), riceve questa transazione quando un client specifica **XTYP \_ ADVSTOP** nella [**funzione DdeClientTransaction.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
 
 
 ```C++
@@ -47,7 +47,7 @@ Tipo di transazione.
 *uFmt* 
 </dt> <dd>
 
-Formato dati associato al ciclo di notifica terminato.
+Formato dei dati associato al ciclo di consulenza che viene terminato.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Non usato.
 
 ## <a name="remarks"></a>Commenti
 
-Questa transazione viene filtrata se l'applicazione server ha specificato il flag **CBF \_ Fail \_ advises** nella funzione [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) .
+Questa transazione viene filtrata se l'applicazione server ha specificato il flag **CBF \_ FAIL \_ ADVISES** nella [**funzione DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -105,7 +105,7 @@ Questa transazione viene filtrata se l'applicazione server ha specificato il fla
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                             |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                   |
-| Intestazione<br/>                   | <dl> <dt>DDEML. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ddeml.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -116,7 +116,7 @@ Questa transazione viene filtrata se l'applicazione server ha specificato il fla
 **Riferimento**
 </dt> <dt>
 
-[**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
+[**Ddeclienttransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
 </dt> <dt>
 
 [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
@@ -128,7 +128,7 @@ Questa transazione viene filtrata se l'applicazione server ha specificato il fla
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria di gestione Dynamic Data Exchange](dynamic-data-exchange-management-library.md)
+[Dynamic Data Exchange Management Library](dynamic-data-exchange-management-library.md)
 </dt> </dl>
 
  

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 308034fe607283ef9f1213cca1cabb4a7229765e
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 2243827fa1b955079aaf64b9805cf02ac82934bde814ed780570a5ba9b63ade8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118285497"
 ---
 # <a name="sv_tessfactor"></a>SV \_ TessFactor
 
@@ -44,7 +44,7 @@ I fattori a tessellazione devono essere dichiarati come matrice. non possono ess
 
 Il valore per il fattore a tessellazione deve essere definito durante la funzione costante patch dello hull shader.
 
-Valore di output obbligatorio per lo hull shader se si usano patch quad o tri. Questo valore è anche un valore di input obbligatorio per il domain shader in modo che corrisponda alle firme di dati costanti per la patch tra le fasi a tessellazione.
+Valore di output obbligatorio per lo hull shader se si usano patch quad o tri. Questo valore è anche un valore di input obbligatorio per il domain shader in modo che corrisponda alle firme dei dati costanti della patch tra le fasi a schema a fasi.
 
 Per un'isolinea, il primo valore in SV TessFactor è il fattore a tessellazione della densità della linea, il secondo valore è il fattore a trama \_ riga-dettaglio.
 
@@ -68,7 +68,7 @@ Questa funzione è supportata nei tipi di shader seguenti:
 
  
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 

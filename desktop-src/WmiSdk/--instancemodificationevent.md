@@ -1,8 +1,8 @@
 ---
-description: Segnala un evento di modifica dell'istanza, ovvero un tipo di evento intrinseco generato quando un'istanza viene modificata nello spazio dei nomi.
+description: Segnala un evento di modifica dell'istanza, ovvero un tipo di evento intrinseco generato quando un'istanza viene modificata nello spazio dei nomi .
 ms.assetid: aa35f349-8b57-435f-bf82-76daf2b43ec9
 ms.tgt_platform: multiple
-title: Classe __InstanceModificationEvent
+title: __InstanceModificationEvent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,18 +18,18 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: e644db16b6638bbc87006819e186540a9ce1874e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fffc8508eff24181201792207a151f5effd28a3022fec56506953b55d3e59deb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118557758"
 ---
 # <a name="__instancemodificationevent-class"></a>\_\_Classe InstanceModificationEvent
 
-La classe di sistema **\_ \_ InstanceModificationEvent** segnala un evento di modifica dell'istanza, ovvero un tipo di [evento intrinseco](determining-the-type-of-event-to-receive.md) generato quando un'istanza viene modificata nello spazio dei nomi.
+La **\_ \_ classe di sistema InstanceModificationEvent** segnala un evento [](determining-the-type-of-event-to-receive.md) di modifica dell'istanza, ovvero un tipo di evento intrinseco generato quando un'istanza viene modificata nello spazio dei nomi .
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,87 +45,87 @@ class __InstanceModificationEvent : __InstanceOperationEvent
 
 ## <a name="members"></a>Members
 
-La classe **\_ \_ InstanceModificationEvent** dispone di questi tipi di membri:
+La **\_ \_ classe InstanceModificationEvent** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **\_ \_ InstanceModificationEvent** dispone di queste proprietà.
+La **\_ \_ classe InstanceModificationEvent** ha queste proprietà.
 
 <dl> <dt>
 
-**PreviousInstance**
+**Istanza precedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Copia dell'istanza prima della modifica.
+Copia dell'istanza di prima della modifica.
 
 </dd> <dt>
 
-**descrittore di sicurezza \_**
+**DESCRITTORE \_ DI SICUREZZA**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrittore utilizzato dal provider di eventi per determinare gli utenti che possono ricevere l'evento. Questa proprietà viene ereditata dall' [**\_ \_ evento**](--event.md).
+Descrittore utilizzato dal provider di eventi per determinare quali utenti possono ricevere l'evento. Questa proprietà viene ereditata [**\_ \_ dall'evento**](--event.md).
 
 </dd> <dt>
 
-**TargetInstance**
+**Istanza di destinazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nuova versione dell'istanza modificata. Questa proprietà viene ereditata da [**\_ \_ InstanceOperationEvent**](--instanceoperationevent.md).
+Nuova versione dell'istanza modificata. Questa proprietà viene ereditata da [**\_ \_ InstanceOperationEvent.**](--instanceoperationevent.md)
 
 </dd> <dt>
 
-**ORA di \_ creazione**
+**ORA \_ DI CREAZIONE**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore univoco che indica l'ora in cui è stato generato l'evento. Si tratta di un valore a 64 bit che rappresenta il numero di intervalli di 100-nanosecondi dopo il 1 ° gennaio 1601. Le informazioni sono nel formato UTC (Coordinated Universal Time). Questa proprietà viene ereditata dall' [**\_ \_ evento**](--event.md).
+Valore univoco che indica l'ora in cui è stato generato l'evento. Si tratta di un valore a 64 bit che rappresenta il numero di intervalli di 100 nanosecondi dopo il 1° gennaio 1601. Le informazioni sono nel formato UTC (Coordinated Universal Times). Questa proprietà viene ereditata [**\_ \_ dall'evento**](--event.md).
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **\_ \_ InstanceModificationEvent** deriva da [**\_ \_ InstanceOperationEvent**](--instanceoperationevent.md).
+La **\_ \_ classe InstanceModificationEvent** è derivata da [**\_ \_ InstanceOperationEvent.**](--instanceoperationevent.md)
 
 **Modifica di una risorsa: \_ \_ InstanceModificationEvent**
 
-Si supponga di sospettare che un'applicazione di gestione in uso modifichi erroneamente il tipo di avvio di un servizio in uno dei server. Si desidera scrivere uno script WMI per monitorare tutte le modifiche apportate alla configurazione del servizio. Non appena viene apportata una modifica a un servizio, il TargetInstance corrispondente riflette la modifica.
+Si supponga di sospettare che un'applicazione di gestione in uso cambi erroneamente il tipo di avvio di un servizio in uno dei server. Si vuole scrivere uno script WMI per monitorare eventuali modifiche apportate alla configurazione del servizio. Non appena viene apportata una modifica a un servizio, l'istanza TargetInstance corrispondente riflette la modifica.
 
-Se si registra il proprio interesse in questo evento, una modifica alla configurazione del servizio comporta la creazione di un'istanza della classe **\_ \_ InstanceModificationEvent** .
+Se si registra l'interesse per questo evento, una modifica alla configurazione del servizio comporta la creazione di un'istanza **\_ \_ della classe InstanceModificationEvent.**
 
-Per le query di notifica che richiedono la notifica della modifica di una risorsa e l'utilizzo di eventi intrinseci tutti viene utilizzata una sintassi simile alla seguente:
+Le query di notifica che richiedono la notifica della modifica di una risorsa e usano eventi intrinseci usano tutte una sintassi simile alla seguente:
 
 `SELECT * FROM __InstanceModificationEvent WITHIN PollingInterval WHERE TargetInstance ISA 'Win32_Service' and TargetInstance.Name = 'alerter'`
 
 ## <a name="examples"></a>Esempio
 
-L'esempio di [monitoraggio del processo di modifica dell'evento](https://Gallery.TechNet.Microsoft.Com/daa06cdd-c1d9-4179-ba67-83aef2b9a079) VBScript sulla raccolta TechNet utilizza **\_ \_ InstanceModificationEvent** per monitorare la prima occorrenza di un evento di modifica dell'istanza WMI per il [**\_ processo Win32**](/windows/desktop/CIMWin32Prov/win32-process).
+[L'esempio VBScript](https://Gallery.TechNet.Microsoft.Com/daa06cdd-c1d9-4179-ba67-83aef2b9a079) monitor process modification event in TechNet Gallery usa **\_ \_ InstanceModificationEvent** per monitorare la prima occorrenza di un evento di modifica dell'istanza WMI per [**il processo Win32. \_**](/windows/desktop/CIMWin32Prov/win32-process)
 
 ## <a name="requirements"></a>Requisiti
 

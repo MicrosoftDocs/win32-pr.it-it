@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DFS-TTL-V2
-description: TTL associato al collegamento o alla radice DFS. Per l'utilizzo in fase di riferimento DFS.
+title: Attributo ms-DFS-Ttl-v2
+description: TTL associato alla radice o al collegamento DFS. Per l'uso in fase di riferimento DFS.
 ms.assetid: 1c41567e-72f5-48fd-a2f8-33e3c8e35794
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DFS-TTL-V2
-- msDFS-schema AD attributo Ttlv2
+- Schema AD dell'attributo ms-DFS-Ttl-v2
+- Schema AD dell'attributo msDFS-Ttlv2
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52de0c57c159c0e875958d19611cadf42cc2b98d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ac2bf2c828be70fe5b35f182cf7ccd2ea663e63321a6f2ea5a63539d1adbc98c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118686067"
 ---
-# <a name="ms-dfs-ttl-v2-attribute"></a>attributo ms-DFS-TTL-V2
+# <a name="ms-dfs-ttl-v2-attribute"></a>Attributo ms-DFS-Ttl-v2
 
-TTL associato al collegamento o alla radice DFS. Per l'utilizzo in fase di riferimento DFS.
+TTL associato alla radice o al collegamento DFS. Per l'uso in fase di riferimento DFS.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MS-DFS-TTL-V2                        |
-| LDAP-Display-Name | msDFS-Ttlv2                          |
+| CN                | ms-DFS-Ttl-v2                        |
+| Ldap-Display-Name | msDFS-Ttlv2                          |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2035              |
-| System-ID-GUID    | ea944d31-864a-4349-ada5-062e2c614f5e |
+| System-Id-Guid    | ea944d31-864a-4349-ada5-062e2c614f5e |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -55,15 +55,15 @@ TTL associato al collegamento o alla radice DFS. Per l'utilizzo in fase di rifer
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Vero                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                              |
 | Indicizzato             | Falso                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**MS-DFS-link-V2**](c-msdfs-linkv2.md)<br/> [**MS-DFS-namespace-V2**](c-msdfs-namespacev2.md)<br/> |
+| Classi usate in        | [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ TTL associato al collegamento o alla radice DFS. Per l'utilizzo in fase di rifer
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Vero                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                              |
 | Indicizzato             | Falso                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**MS-DFS-link-V2**](c-msdfs-linkv2.md)<br/> [**MS-DFS-namespace-V2**](c-msdfs-namespacev2.md)<br/> |
+| Classi usate in        | [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ TTL associato al collegamento o alla radice DFS. Per l'utilizzo in fase di rifer
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Vero                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                              |
 | Indicizzato             | Falso                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**MS-DFS-link-V2**](c-msdfs-linkv2.md)<br/> [**MS-DFS-namespace-V2**](c-msdfs-namespacev2.md)<br/> |
+| Classi usate in        | [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 

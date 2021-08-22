@@ -1,19 +1,19 @@
 ---
-description: Il tipo di dati della proprietà è un identificatore valido con la sintassi aggiuntiva &\# 0034;% Identifier&\# 0034;, che rappresenta una variabile di ambiente.
+description: Il tipo di dati Property è un identificatore valido con la sintassi aggiuntiva \# &0034;%identifier&0034;, che rappresenta una variabile di \# ambiente.
 ms.assetid: 13cd06ab-9583-4861-a5c0-8a84cf55edf7
 title: Proprietà (Windows Installer)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5cb3d5c4673da3e187f833ffc8f0686bd763172
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 253d1528f66d7087b0254f528854fff8d98cd5672a383f325d31119e6ae1968d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118627026"
 ---
 # <a name="property-windows-installer"></a>Proprietà (Windows Installer)
 
-Il tipo di dati della proprietà è un [identificatore](identifier.md) valido con la sintassi aggiuntiva "%*Identifier*", che rappresenta una variabile di ambiente.
+Il tipo di dati Property è un identificatore [valido con](identifier.md) la sintassi aggiuntiva "%*identifier",* che rappresenta una variabile di ambiente.
 
  
 

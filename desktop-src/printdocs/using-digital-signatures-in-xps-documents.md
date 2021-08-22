@@ -1,44 +1,44 @@
 ---
-description: In questo argomento vengono elencate alcune considerazioni relative all'utilizzo dell'API di firma digitale XPS per aggiungere firme digitali a un documento XPS.
+description: In questo argomento vengono elencate alcune considerazioni sull'uso dell'API Firma digitale XPS per aggiungere firme digitali a un documento XPS.
 ms.assetid: 27c28313-d8db-4c40-9972-cb03bdaa125c
 title: Uso dell'API di firma digitale XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c9037a1442a44b082caec21309c94390b3f783e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 84ea6e38704efa2a348a90fec247f37b9722857a3838b10233937e63dc37fdbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118469353"
 ---
 # <a name="using-xps-digital-signature-api"></a>Uso dell'API di firma digitale XPS
 
-In questo argomento vengono elencate alcune considerazioni relative all'utilizzo dell'API di firma digitale XPS per aggiungere firme digitali a un documento XPS.
+In questo argomento vengono elencate alcune considerazioni sull'uso dell'API Firma digitale XPS per aggiungere firme digitali a un documento XPS.
 
-L'API di firma digitale XPS consente alle applicazioni di richiedere agli utenti di firmare i documenti XPS e di verificare le firme presenti nei documenti XPS. L'API di firma digitale XPS può essere applicata a un documento XPS senza caricarla in un OM XPS e può essere usata nei flussi di documenti XPS serializzati da un OM XPS.
+L'API Firma digitale XPS consente alle applicazioni di richiedere agli utenti di firmare documenti XPS e di verificare le firme presenti nei documenti XPS. L'API di firma digitale XPS può essere applicata a un documento XPS senza caricarlo in un OM XPS e può essere usato nei flussi di documenti XPS serializzati da un OM XPS.
 
-La sezione [attività di programmazione API di firma digitale XPS](#xps-digital-signature-api-programming-tasks) contiene argomenti che descrivono come programmare con l'API di firma digitale XPS. Questo argomento elenca le considerazioni seguenti per l'uso dell'API di firma digitale XPS quando si aggiunge il supporto per la firma digitale a un'applicazione.
+La [sezione Attività di programmazione dell'API](#xps-digital-signature-api-programming-tasks) firma digitale XPS contiene argomenti che descrivono come programmare con l'API firma digitale XPS. In questo argomento vengono elencate le considerazioni seguenti per l'uso dell'API Firma digitale XPS quando si aggiunge il supporto della firma digitale a un'applicazione.
 
--   [Attività di programmazione API per la firma digitale XPS](#xps-digital-signature-api-programming-tasks)
--   [Note speciali sulla programmazione dell'API per la firma digitale XPS](#special-notes-about-xps-digital-signature-api-programming)
+-   [Attività di programmazione dell'API di firma digitale XPS](#xps-digital-signature-api-programming-tasks)
+-   [Note speciali sulla programmazione dell'API di firma digitale XPS](#special-notes-about-xps-digital-signature-api-programming)
     -   [Verifica delle firme digitali in un documento XPS](#verifying-digital-signatures-in-an-xps-document)
-    -   [Criteri firma digitale firma](#digital-signature-signing-policy)
+    -   [Criteri di firma della firma digitale](#digital-signature-signing-policy)
     -   [Incorporamento di una catena di certificati](#embedding-a-certificate-chain)
-    -   [Uso della struttura del contesto del certificato \_](#using-the-cert\_context-structure)
+    -   [Uso della struttura CERT \_ CONTEXT](#using-the-cert\_context-structure)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="xps-digital-signature-api-programming-tasks"></a>Attività di programmazione API per la firma digitale XPS
+## <a name="xps-digital-signature-api-programming-tasks"></a>Attività di programmazione dell'API di firma digitale XPS
 
-Questa sezione contiene argomenti che descrivono come eseguire attività di programmazione tramite l'API di firma digitale XPS.
+Questa sezione contiene argomenti che descrivono come eseguire attività di programmazione tramite l'API Firma digitale XPS.
 
--   [Attività comuni di programmazione della firma digitale](basic-digital-signature-programming-tasks.md)<dl>
+-   [Attività comuni di programmazione delle firme digitali](basic-digital-signature-programming-tasks.md)<dl>
 
-[Inizializzazione di gestione firme](initialize-the-signature-manager.md)  
+[Inizializzare Gestione firme](initialize-the-signature-manager.md)  
     [Firmare un documento](sign-a-document.md)  
     [Aggiungere una richiesta di firma a un documento XPS](add-a-signature-request-to-a-document.md)  
-    [Verificare le firme del documento](verify-document-signatures.md)  
+    [Verificare le firme dei documenti](verify-document-signatures.md)  
     </dl>
--   [Attività aggiuntive di programmazione della firma digitale](advanced-digital-signature-programming-tasks.md)<dl>
+-   [Attività aggiuntive di programmazione delle firme digitali](advanced-digital-signature-programming-tasks.md)<dl>
 
 [Caricare un certificato da un file](load-a-certificate-from-a-file.md)  
     [Verificare che un certificato supporti un metodo di firma](verify-a-certificate-supports-a-signature-method.md)  
@@ -46,61 +46,61 @@ Questa sezione contiene argomenti che descrivono come eseguire attività di prog
     [Incorporare catene di certificati in un documento](embedding-certificate-trust-chains-in-a-document.md)  
     </dl>
 
-## <a name="special-notes-about-xps-digital-signature-api-programming"></a>Note speciali sulla programmazione dell'API per la firma digitale XPS
+## <a name="special-notes-about-xps-digital-signature-api-programming"></a>Note speciali sulla programmazione dell'API di firma digitale XPS
 
-Gli argomenti seguenti richiedono una particolare attenzione quando si usa l'API di firma digitale XPS.
+Gli argomenti seguenti richiedono alcune considerazioni speciali quando si usa l'API Firma digitale XPS.
 
 -   [Verifica delle firme digitali in un documento XPS](#verifying-digital-signatures-in-an-xps-document)
--   [Criteri firma digitale firma](#digital-signature-signing-policy)
+-   [Criteri di firma della firma digitale](#digital-signature-signing-policy)
 -   [Incorporamento di una catena di certificati](#embedding-a-certificate-chain)
--   [Uso della struttura del contesto del certificato \_](#using-the-cert\_context-structure)
+-   [Uso della struttura CERT \_ CONTEXT](#using-the-cert\_context-structure)
 
 ### <a name="verifying-digital-signatures-in-an-xps-document"></a>Verifica delle firme digitali in un documento XPS
 
-[**IXpsSignature:: Verify**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignature-verify) controlla solo il contenuto firmato per determinare che non è stato modificato dopo che è stato firmato. **IXpsSignature:: Verify** non verifica alcun certificato usato per firmare il contenuto del documento.
+[**IXpsSignature::Verify**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignature-verify) controlla solo il contenuto firmato per determinare che non è stato modificato dopo la firma. **IXpsSignature::Verify** non verifica i certificati usati per firmare il contenuto del documento.
 
-Per ulteriori informazioni sui certificati e sulla crittografia, vedere [informazioni sulla crittografia](/windows/desktop/SecCrypto/about-cryptography).
+Per altre informazioni sui certificati e sulla crittografia, vedere [Informazioni sulla crittografia.](/windows/desktop/SecCrypto/about-cryptography)
 
-Per un esempio di come verificare le firme dei documenti in un programma, vedere [verificare le firme e i certificati del documento](verify-document-signatures.md).
+Per un esempio di come verificare le firme dei documenti in un programma, vedere [Verify Document Signatures and Certificates](verify-document-signatures.md).
 
-### <a name="digital-signature-signing-policy"></a>Criteri firma digitale firma
+### <a name="digital-signature-signing-policy"></a>Criteri di firma della firma digitale
 
-I criteri di firma della firma digitale determinano quali parti di un documento XPS sono firmate. Un'opzione per i criteri di firma consiste nel firmare le relazioni di firma che iniziano dalla parte dell'origine della firma. Poiché le relazioni di firma cambiano con ogni firma aggiunta, le firme eseguite in questo criterio si interrompono quando vengono aggiunte nuove firme. Assicurarsi di comprendere chiaramente le implicazioni e gli effetti dell'impostazione di questi criteri. in caso contrario, potrebbe verificarsi un comportamento imprevisto o indesiderato.
+I criteri di firma della firma digitale determinano le parti di un documento XPS firmate. Un'opzione dei criteri di firma è firmare le relazioni di firma che iniziano dalla parte di origine della firma. Poiché le relazioni di firma cambiano con ogni firma aggiunta, le firme effettuate con questo criterio si interromperanno quando vengono aggiunte nuove firme. Assicurarsi di comprendere chiaramente le implicazioni e gli effetti dell'impostazione di questo criterio. in caso contrario, potrebbe verificarsi un comportamento imprevisto o indesiderato.
 
-Per ulteriori informazioni sui criteri di firma, [**vedere \_ \_ criteri**](/windows/win32/api/xpsdigitalsignature/ne-xpsdigitalsignature-xps_sign_policy)di firma XPS.
+Per altre informazioni sui criteri di firma, vedere [**CRITERI \_ DI FIRMA \_ XPS.**](/windows/win32/api/xpsdigitalsignature/ne-xpsdigitalsignature-xps_sign_policy)
 
 ### <a name="embedding-a-certificate-chain"></a>Incorporamento di una catena di certificati
 
-I certificati che costituiscono la catena di attendibilità di un certificato specifico possono essere aggiunti a un documento XPS. Incorporando questi certificati è possibile semplificare, in scenari non in linea, che un'applicazione verifichi i certificati utilizzati da una firma digitale.
+I certificati che costituiscono la catena di attendibilità di un certificato specifico possono essere aggiunti a un documento XPS. L'incorporamento di questi certificati può semplificare, in scenari non in linea, la verifica dei certificati utilizzati da una firma digitale da parte di un'applicazione.
 
-Per altre informazioni su come incorporare i certificati in un documento XPS, vedere [incorporare le catene di certificati in un documento](embedding-certificate-trust-chains-in-a-document.md).
+Per altre informazioni su come incorporare certificati in un documento XPS, vedere [Incorporare catene di certificati in un documento](embedding-certificate-trust-chains-in-a-document.md).
 
-### <a name="using-the-cert_context-structure"></a>Uso della struttura del contesto del certificato \_
+### <a name="using-the-cert_context-structure"></a>Uso della struttura CERT \_ CONTEXT
 
-Il [**\_ contesto**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context) del certificato e le strutture di [**\_ informazioni**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_info) sui certificati sono le strutture di dati principali che contengono le informazioni sul certificato. Per altre informazioni sull'uso di queste strutture, vedere [uso di una \_ struttura di dati CERT info](/windows/desktop/SecCrypto/using-a-cert-info-data-structure).
+Le [**strutture CERT \_ CONTEXT**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context) e [**CERT \_ INFO**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_info) sono le principali strutture di dati che contengono informazioni sul certificato. Per altre informazioni sull'uso di queste strutture, vedere [Uso di una struttura di dati CERT \_ INFO](/windows/desktop/SecCrypto/using-a-cert-info-data-structure).
 
-[**Certificato \_**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context) Le strutture di contesto restituite dalle funzioni API di crittografia devono essere rilasciate quando non sono più necessarie. Per rilasciare una struttura del **\_ contesto del certificato** , chiamare la funzione [**CertFreeCertificateContext**](/windows/desktop/api/wincrypt/nf-wincrypt-certfreecertificatecontext) .
+[**CERT \_ Le**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context) strutture CONTEXT restituite dalle funzioni dell'API Crypto devono essere rilasciate quando non sono più necessarie. Per rilasciare **una struttura CERT \_ CONTEXT,** chiamare la [**funzione CertFreeCertificateContext.**](/windows/desktop/api/wincrypt/nf-wincrypt-certfreecertificatecontext)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Attività comuni di programmazione della firma digitale](basic-digital-signature-programming-tasks.md)
+[Attività comuni di programmazione delle firme digitali](basic-digital-signature-programming-tasks.md)
 </dt> <dt>
 
-[Attività aggiuntive di programmazione della firma digitale](advanced-digital-signature-programming-tasks.md)
+[Attività aggiuntive di programmazione delle firme digitali](advanced-digital-signature-programming-tasks.md)
 </dt> <dt>
 
-[**contesto del certificato \_**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context)
+[**CONTESTO \_ CERT**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context)
 </dt> <dt>
 
-[**informazioni sul certificato \_**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_info)
+[**INFORMAZIONI SUL \_ CERTIFICATO**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_info)
 </dt> <dt>
 
 [**CertFreeCertificateContext**](/windows/desktop/api/wincrypt/nf-wincrypt-certfreecertificatecontext)
 </dt> <dt>
 
-[**\_criteri di firma XPS \_**](/windows/win32/api/xpsdigitalsignature/ne-xpsdigitalsignature-xps_sign_policy)
+[**CRITERI DI \_ FIRMA \_ XPS**](/windows/win32/api/xpsdigitalsignature/ne-xpsdigitalsignature-xps_sign_policy)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

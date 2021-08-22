@@ -1,27 +1,27 @@
 ---
-title: Caching della connessione
-description: Quando si effettua una connessione a un server, l'handle di connessione viene memorizzato nella cache del computer client per tale processo fino alla chiusura della connessione.
+title: Connessione Caching
+description: Quando viene stabilita una connessione a un server, l'handle di connessione viene memorizzato nella cache del computer client per tale processo fino a quando tale connessione non viene chiusa.
 ms.assetid: 927afd35-8703-4234-b6a8-6320a3667532
 ms.tgt_platform: multiple
 keywords:
-- ADSI Caching della connessione
-- Caching della connessione
+- memorizzazione nella cache delle connessioni ADSI
+- memorizzazione nella cache delle connessioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 857d102a52be9c7ccf40f9076892a85d5b3b8683
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fa0fbf63d65a6941e986069289db201a237deb9ddc7058f291218c1496d0a40e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118429028"
 ---
-# <a name="connection-caching"></a>Caching della connessione
+# <a name="connection-caching"></a>Connessione Caching
 
-Quando si effettua una connessione a un server, l'handle di connessione viene memorizzato nella cache del computer client per tale processo fino alla chiusura della connessione. Se in una connessione successiva vengono utilizzati lo stesso server, la stessa porta e le stesse credenziali, ma solo i flag di autenticazione binding **\_ veloce \_** o **ADS del \_ server \_ ADS** sono diversi, ADSI riutilizzerà la connessione esistente. ADSI esegue la memorizzazione nella cache della connessione in base al processo.
+Quando viene stabilita una connessione a un server, l'handle di connessione viene memorizzato nella cache del computer client per tale processo fino a quando tale connessione non viene chiusa. Se lo stesso server, la stessa porta e le stesse credenziali vengono usati in una connessione successiva e solo i flag di autenticazione **ADS \_ FAST \_ BIND** o **ADS \_ SERVER \_ BIND** differiscono, ADSI riuserà la connessione esistente. ADSI esegue la memorizzazione nella cache delle connessioni in base al processo.
 
-Per migliorare le prestazioni, riutilizzare le connessioni esistenti, quando possibile.
+Per migliorare le prestazioni, riutilizzare le connessioni esistenti quando possibile.
 
-Nell'esempio di codice seguente viene illustrato il funzionamento della memorizzazione nella cache della connessione.
+Nell'esempio di codice seguente viene illustrato il funzionamento della memorizzazione nella cache delle connessioni.
 
 
 ```VB
@@ -64,9 +64,9 @@ Set cachedConn = Nothing
 
 
 
- 
+ 
 
- 
+ 
 
 
 

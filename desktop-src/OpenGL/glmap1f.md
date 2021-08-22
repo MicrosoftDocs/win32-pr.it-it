@@ -1,9 +1,9 @@
 ---
-title: funzione glMap1f (GL. h)
-description: La funzione glMap1f definisce un analizzatore unidimensionale. | funzione glMap1f (GL. h)
+title: Funzione glMap1f (Gl.h)
+description: La funzione glMap1f definisce un analizzatore unidimensionale. | Funzione glMap1f (Gl.h)
 ms.assetid: c016ad80-b507-4e21-829f-f173d5c8dee6
 keywords:
-- funzione glMap1f OpenGL
+- Funzione glMap1f OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eafcbfc40b3359cd8faa6f52f6635c1c86f03f17
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7547e465f940942333c3bcff3e543e77c404ced289471ccff08924da83bfc2af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104553843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118359309"
 ---
-# <a name="glmap1f-function"></a>glMap1f (funzione)
+# <a name="glmap1f-function"></a>Funzione glMap1f
 
-Le funzioni [**glMap1d**](glmap1d.md) e **glMap1f** definiscono un analizzatore unidimensionale.
+Le [**funzioni glMap1d**](glmap1d.md) **e glMap1f** definiscono un analizzatore unidimensionale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,21 +48,21 @@ void WINAPI glMap1f(
 *target* 
 </dt> <dd>
 
-Tipo di valori generati dall'analizzatore. Costanti simboliche. Il parametro *target* è una costante simbolica che indica il tipo di punti di controllo che viene fornito nei *punti* e l'output generato quando viene valutata la mappa. Può assumere uno dei nove valori predefiniti.
+Tipo di valori generati dall'analizzatore. Costanti simboliche. Il *parametro* di destinazione è una costante simbolica che indica il tipo di punti di controllo forniti *in* punti e l'output generato quando viene valutata la mappa. Può presupporre uno dei nove valori predefiniti.
 
 
 
 | Valore                                                                                                                                                                                          | Significato                                                                                                                                                                                                                                                                                                                               |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GL_MAP1_VERTEX_3"></span><span id="gl_map1_vertex_3"></span><dl> <dt>**\_Vertice GL \_ Mappa1 \_ 3**</dt> </dl>                       | Ogni punto di controllo è a tre valori a virgola mobile che rappresentano *x, y* e *z*. Quando viene valutata la mappa vengono generati i comandi [**glVertex3**](glvertex-functions.md) interni.<br/>                                                                                                                                         |
-| <span id="GL_MAP1_VERTEX_4"></span><span id="gl_map1_vertex_4"></span><dl> <dt>**\_Mappa1 \_ Vertex \_ 4**</dt> </dl>                       | Ogni punto di controllo è rappresentato da quattro valori a virgola mobile che rappresentano *x, y, z* e *w*. Quando viene valutata la mappa vengono generati i comandi [**glVertex4**](glvertex-functions.md) interni.<br/>                                                                                                                                       |
-| <span id="GL_MAP1_INDEX"></span><span id="gl_map1_index"></span><dl> <dt>**\_Indice MAPPA1 \_ GL**</dt> </dl>                                 | Ogni punto di controllo è un singolo valore a virgola mobile che rappresenta un indice colori. Quando viene valutata la mappa vengono generati i comandi [**glIndex**](glindex-functions.md) interni. Tuttavia, l'indice corrente non viene aggiornato con il valore di questi comandi di **glIndex** .<br/>                                                    |
-| <span id="GL_MAP1_COLOR_4"></span><span id="gl_map1_color_4"></span><dl> <dt>**\_Mappa1 \_ colore \_ 4 GL**</dt> </dl>                          | Ogni punto di controllo è rappresentato da quattro valori a virgola mobile che rappresentano rosso, verde, blu e alfa. Quando viene valutata la mappa vengono generati i comandi [**glColor4**](glcolor-functions.md) interni. Tuttavia, il colore corrente non viene aggiornato con il valore di questi comandi di **glColor4** .<br/>                                       |
-| <span id="GL_MAP1_NORMAL"></span><span id="gl_map1_normal"></span><dl> <dt>**\_Normale MAPPA1 \_ GL**</dt> </dl>                              | Ogni punto di controllo è costituito da tre valori a virgola mobile che rappresentano i componenti *x, y* e *z* di un vettore normale. Quando viene valutata la mappa vengono generati i comandi [**glNormal**](glnormal-functions.md) interni. Tuttavia, la normale corrente non viene aggiornata con il valore di questi comandi di **glNormal** .<br/>              |
-| <span id="GL_MAP1_TEXTURE_COORD_1"></span><span id="gl_map1_texture_coord_1"></span><dl> <dt>**\_Trama GL \_ Mappa1 \_ Coord \_ 1**</dt> </dl> | Ogni punto di controllo è un singolo valore a virgola mobile che rappresenta la coordinata di trama *s* . Quando viene valutata la mappa vengono generati i comandi [**glTexCoord1**](gltexcoord-functions.md) interni. Tuttavia, le coordinate di trama correnti non vengono aggiornate con il valore di questi comandi di **glTexCoord** .<br/>              |
-| <span id="GL_MAP1_TEXTURE_COORD_2"></span><span id="gl_map1_texture_coord_2"></span><dl> <dt>**\_ \_ Coord trama GL \_ Mappa1 \_ 2**</dt> </dl> | Ogni punto di controllo è costituito da due valori a virgola mobile che rappresentano le coordinate di trama *s* e *t* . Quando viene valutata la mappa vengono generati i comandi [**glTexCoord2**](gltexcoord-functions.md) interni. Tuttavia, le coordinate di trama correnti non vengono aggiornate con il valore di questi comandi di **glTexCoord** .<br/>         |
-| <span id="GL_MAP1_TEXTURE_COORD_3"></span><span id="gl_map1_texture_coord_3"></span><dl> <dt>**\_Trama GL \_ Mappa1 \_ Coord \_ 3**</dt> </dl> | Ogni punto di controllo è costituito da tre valori a virgola mobile che rappresentano le coordinate di trama *s, t* e *r* . Quando viene valutata la mappa vengono generati i comandi [**glTexCoord3**](gltexcoord-functions.md) interni. Tuttavia, le coordinate di trama correnti non vengono aggiornate con il valore di questi comandi di **glTexCoord** .<br/>   |
-| <span id="GL_MAP1_TEXTURE_COORD_4"></span><span id="gl_map1_texture_coord_4"></span><dl> <dt>**\_Trama GL \_ Mappa1 \_ Coord \_ 4**</dt> </dl> | Ogni punto di controllo è costituito da quattro valori a virgola mobile che rappresentano le coordinate di trama *s, t, r* e *q* . Quando viene valutata la mappa vengono generati i comandi [**glTexCoord4**](gltexcoord-functions.md) interni. Tuttavia, le coordinate di trama correnti non vengono aggiornate con il valore di questi comandi di **glTexCoord** .<br/> |
+| <span id="GL_MAP1_VERTEX_3"></span><span id="gl_map1_vertex_3"></span><dl> <dt>**GL \_ MAP1 \_ VERTEX \_ 3**</dt> </dl>                       | Ogni punto di controllo è rappresentato da tre valori a virgola mobile *che rappresentano x, y* e *z.* I [**comandi interni glVertex3**](glvertex-functions.md) vengono generati quando viene valutata la mappa.<br/>                                                                                                                                         |
+| <span id="GL_MAP1_VERTEX_4"></span><span id="gl_map1_vertex_4"></span><dl> <dt>**GL \_ MAP1 \_ VERTEX \_ 4**</dt> </dl>                       | Ogni punto di controllo è rappresentato da quattro valori a virgola mobile *che rappresentano x, y, z* e *w*. I [**comandi interni glVertex4**](glvertex-functions.md) vengono generati quando viene valutata la mappa.<br/>                                                                                                                                       |
+| <span id="GL_MAP1_INDEX"></span><span id="gl_map1_index"></span><dl> <dt>**GL \_ MAP1 \_ INDEX**</dt> </dl>                                 | Ogni punto di controllo è un singolo valore a virgola mobile che rappresenta un indice di colore. I [**comandi glIndex**](glindex-functions.md) interni vengono generati quando viene valutata la mappa. Tuttavia, l'indice corrente non viene aggiornato con il valore di questi **comandi glIndex.**<br/>                                                    |
+| <span id="GL_MAP1_COLOR_4"></span><span id="gl_map1_color_4"></span><dl> <dt>**GL \_ MAP1 \_ COLOR \_ 4**</dt> </dl>                          | Ogni punto di controllo è rappresentato da quattro valori a virgola mobile che rappresentano rosso, verde, blu e alfa. I [**comandi interni glColor4**](glcolor-functions.md) vengono generati quando viene valutata la mappa. Tuttavia, il colore corrente non viene aggiornato con il valore di questi **comandi glColor4.**<br/>                                       |
+| <span id="GL_MAP1_NORMAL"></span><span id="gl_map1_normal"></span><dl> <dt>**GL \_ MAP1 \_ NORMAL**</dt> </dl>                              | Ogni punto di controllo è rappresentato da tre valori a virgola mobile che rappresentano *i componenti x, y* e *z* di un vettore normale. I [**comandi interni glNormal**](glnormal-functions.md) vengono generati quando viene valutata la mappa. Tuttavia, la normale corrente non viene aggiornata con il valore di questi **comandi glNormal.**<br/>              |
+| <span id="GL_MAP1_TEXTURE_COORD_1"></span><span id="gl_map1_texture_coord_1"></span><dl> <dt>**GL \_ MAP1 \_ TEXTURE \_ COORD \_ 1**</dt> </dl> | Ogni punto di controllo è un singolo valore a virgola mobile che rappresenta la *coordinata della* trama. I [**comandi interni glTexCoord1**](gltexcoord-functions.md) vengono generati quando viene valutata la mappa. Tuttavia, le coordinate di trama correnti non vengono aggiornate con il valore di **questi comandi glTexCoord.**<br/>              |
+| <span id="GL_MAP1_TEXTURE_COORD_2"></span><span id="gl_map1_texture_coord_2"></span><dl> <dt>**GL \_ MAP1 \_ TEXTURE \_ COORD \_ 2**</dt> </dl> | Ogni punto di controllo è rappresentato da due valori a virgola mobile che rappresentano le coordinate della trama *s* *e t.* I [**comandi interni glTexCoord2**](gltexcoord-functions.md) vengono generati quando viene valutata la mappa. Tuttavia, le coordinate di trama correnti non vengono aggiornate con il valore di **questi comandi glTexCoord.**<br/>         |
+| <span id="GL_MAP1_TEXTURE_COORD_3"></span><span id="gl_map1_texture_coord_3"></span><dl> <dt>**GL \_ MAP1 \_ TEXTURE \_ COORD \_ 3**</dt> </dl> | Ogni punto di controllo è rappresentato da tre valori a virgola mobile che rappresentano *le coordinate di trama s, t* e *r.* I [**comandi interni glTexCoord3**](gltexcoord-functions.md) vengono generati quando viene valutata la mappa. Tuttavia, le coordinate di trama correnti non vengono aggiornate con il valore di **questi comandi glTexCoord.**<br/>   |
+| <span id="GL_MAP1_TEXTURE_COORD_4"></span><span id="gl_map1_texture_coord_4"></span><dl> <dt>**GL \_ MAP1 \_ TEXTURE \_ COORD \_ 4**</dt> </dl> | Ogni punto di controllo è rappresentato da quattro valori a virgola mobile che rappresentano le coordinate della trama *s, t, r* *e q.* I [**comandi interni glTexCoord4**](gltexcoord-functions.md) vengono generati quando viene valutata la mappa. Tuttavia, le coordinate di trama correnti non vengono aggiornate con il valore di **questi comandi glTexCoord.**<br/> |
 
 
 
@@ -70,31 +70,31 @@ Tipo di valori generati dall'analizzatore. Costanti simboliche. Il parametro *ta
 
 </dd> <dt>
 
-*U1* 
+*u1* 
 </dt> <dd>
 
-Un mapping lineare di *u*, come presentato a [**glEvalCoord1**](glevalcoord-functions.md), a *u*^, la variabile valutata dalle equazioni specificate da questo comando.
+Mapping lineare di *u*, come presentato a [**glEvalCoord1,**](glevalcoord-functions.md)a *u*^, la variabile valutata dalle equazioni specificate da questo comando.
 
 </dd> <dt>
 
-*U2* 
+*u2* 
 </dt> <dd>
 
-Un mapping lineare di *u*, come presentato a [**glEvalCoord1**](glevalcoord-functions.md), a *u*^, la variabile valutata dalle equazioni specificate da questo comando.
+Mapping lineare di *u*, come presentato a [**glEvalCoord1,**](glevalcoord-functions.md)a *u*^, la variabile valutata dalle equazioni specificate da questo comando.
 
 </dd> <dt>
 
-*stride* 
+*Passo* 
 </dt> <dd>
 
-Numero di valori float o doppi tra l'inizio di un punto di controllo e l'inizio della successiva nella struttura di dati a cui si fa riferimento nei *punti*. In questo modo è possibile incorporare i punti di controllo in strutture di dati arbitrarie. L'unico vincolo è che i valori per un determinato punto di controllo debbano occupare posizioni di memoria contigue.
+Numero di valori float o double compresi tra l'inizio di un punto di controllo e l'inizio del successivo nella struttura dei dati a cui si fa riferimento in *punti*. In questo modo i punti di controllo possono essere incorporati in strutture di dati arbitrarie. L'unico vincolo è che i valori per un particolare punto di controllo devono occupare posizioni di memoria contigue.
 
 </dd> <dt>
 
 *order* 
 </dt> <dd>
 
-Numero di punti di controllo. Deve essere un valore positivo.
+Numero di punti di controllo. Deve essere positivo.
 
 </dd> <dt>
 
@@ -111,69 +111,69 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-I codici di errore seguenti possono essere recuperati dalla funzione [**glGetError**](glgeterror.md) .
+I codici di errore seguenti possono essere recuperati dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumerazione GL non valida \_**</dt> </dl>      | *target* non è un valore accettato.<br/>                                                                                        |
-| <dl> <dt>**\_valore GL non valido \_**</dt> </dl>     | *U1* era uguale a *U2*.<br/>                                                                                                    |
-| <dl> <dt>**\_valore GL non valido \_**</dt> </dl>     | *stride* è inferiore al numero di valori in un punto di controllo.<br/>                                                            |
-| <dl> <dt>**\_valore GL non valido \_**</dt> </dl>     | l' *ordine* è inferiore a un ordine di valutazione massimo o GL \_ \_ \_ .<br/>                                                                         |
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**ENUMERAZIONE GL \_ \_ NON VALIDA**</dt> </dl>      | *target* non è un valore accettato.<br/>                                                                                        |
+| <dl> <dt>**VALORE GL \_ NON \_ VALIDO**</dt> </dl>     | *u1* è uguale a *u2*.<br/>                                                                                                    |
+| <dl> <dt>**VALORE GL \_ NON \_ VALIDO**</dt> </dl>     | *stride* è minore del numero di valori in un punto di controllo.<br/>                                                            |
+| <dl> <dt>**VALORE GL \_ NON \_ VALIDO**</dt> </dl>     | *order* è minore di uno o GL \_ MAX \_ EVAL \_ ORDER.<br/>                                                                         |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Gli analizzatori forniscono un modo per usare il mapping polinomiale o per la logica per produrre vertici, normali, coordinate di trama e colori. I valori prodotti da un analizzatore vengono inviati ad altre fasi dell'elaborazione OpenGL come se fossero stati presentati usando i comandi [**glVertex**](glvertex-functions.md), [**glNormal**](glnormal-functions.md), [**glTexCoord**](gltexcoord-functions.md)e [**glColor**](glcolor-functions.md) , ad eccezione del fatto che i valori generati non aggiornano la normale, le coordinate di trama o il colore corrente.
+Gli analizzatori consentono di usare il mapping polinomiale o polinomiale razionale per produrre vertici, normali, coordinate di trama e colori. I valori prodotti da un analizzatore vengono inviati ad altre fasi dell'elaborazione OpenGL come se fossero stati presentati usando i comandi [**glVertex**](glvertex-functions.md), [**glNormal**](glnormal-functions.md), [**glTexCoord**](gltexcoord-functions.md)e [**glColor,**](glcolor-functions.md) ad eccezione del fatto che i valori generati non aggiornano la normale corrente, le coordinate della trama o il colore.
 
-Tutte le spline polinomiali o razionali di qualsiasi grado (fino al grado massimo supportato dall'implementazione di OpenGL) possono essere descritte usando gli analizzatori. Sono incluse quasi tutte le spline usate nei computer grafici, incluse le spline B, le curve di Bezier, le spline eremite e così via.
+Tutte le spline polinomiali o razionali polinomiali di qualsiasi grado (fino al massimo supportato dall'implementazione OpenGL) possono essere descritte usando gli analizzatori. Sono incluse quasi tutte le spline usate nella grafica computer, incluse le spline B, le curve di Bézier, le spline hermite e così via.
 
-Gli analizzatori definiscono le curve in base ai polinomi di Bernstein. Definire **p** () come
+Gli analizzatori definiscono le curve in base ai polinomi dell'emiratino. Definire **p** () come
 
 ![Equazione che mostra la definizione di p ().](images/map01.png)
 
-dove **R**_i_ è un punto di controllo e () è il polinomio di *Bernstein del grado* *n* (*Order*  = *n* + 1):
+dove **R**_i_ è un punto di controllo e () è il polinomio *i* Dis grado *n* (*ordine*  = *n* + 1):
 
-![Equazione che mostra il polinomio di Bernstein del grado n.](images/map02.png)
+![Equazione che mostra il polinomio di Misura n.](images/map02.png)
 
-Ricordare che
+Si ricordi che
 
 ![Equazioni che mostrano l'equivalenza a 1.](images/map03.png)
 
-La funzione **glMap1** viene usata per definire la base e per specificare il tipo di valori da produrre. Una volta definita, una mappa può essere abilitata e disabilitata chiamando [**glEnable**](glenable.md) e **glDisable** con il nome della mappa, uno dei nove valori predefiniti per la *destinazione* descritta in precedenza. La funzione [glEvalCoord1](glevalcoord-functions.md) valuta le mappe unidimensionali abilitate. Quando **glEvalCoord1** presenta un valore *u*, le funzioni Bernstein vengono valutate usando *u*^, dove
+La **funzione glMap1** viene usata per definire la base e specificare il tipo di valori prodotti. Una volta definita, una mappa può essere abilitata e disabilitata chiamando [**glEnable**](glenable.md) e **glDisable** con il nome della mappa, uno dei nove valori predefiniti per la *destinazione* descritta in precedenza. La [funzione glEvalCoord1](glevalcoord-functions.md) valuta le mappe unidimensionali abilitate. Quando **glEvalCoord1** presenta un valore *u*, le funzioni Disagido vengono valutate usando *u*^, dove
 
-![Equazione che mostra la definizione di ^.](images/map04.png)
+![Equazione che mostra la definizione dell'utente^.](images/map04.png)
 
-I parametri *stride*, *Order* e *Points* definiscono l'indirizzamento della matrice per l'accesso ai punti di controllo. Il parametro *Points* è la posizione del primo punto di controllo, che occupa una, due, tre o quattro posizioni di memoria contigue, a seconda della mappa da definire. Il parametro *Order* indica il numero di punti di controllo nella matrice. Il parametro *stride* indica il numero di posizioni float o Double per far avanzare il puntatore alla memoria interna per raggiungere il punto di controllo successivo.
+I *parametri stride*, *order* e *points* definiscono l'indirizzamento della matrice per l'accesso ai punti di controllo. Il *parametro points* è la posizione del primo punto di controllo, che occupa una, due, tre o quattro posizioni di memoria contigue, a seconda della mappa definita. Il *parametro order* è il numero di punti di controllo nella matrice. Il *parametro stride* indica il numero di posizioni float o double in cui far avanzare il puntatore di memoria interna per raggiungere il punto di controllo successivo.
 
-Come nel caso di tutti i comandi OpenGL che accettano puntatori ai dati, è come se il contenuto dei *punti* venisse copiato da **glMap1** prima della restituzione. Le modifiche apportate al contenuto dei *punti* non hanno effetto dopo la chiamata a **glMap1** .
+Come nel caso di tutti i comandi OpenGL che accettano puntatori ai dati, è come se il contenuto dei punti fosse stato copiato da **glMap1** prima che fosse restituito.  Le modifiche al contenuto dei *punti non* hanno effetto dopo la chiamata **di glMap1.**
 
-Le funzioni seguenti consentono di recuperare informazioni correlate a **glMap1**:
+Le funzioni seguenti recuperano informazioni correlate **a glMap1:**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ Max \_ eval \_ Order
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ MAX \_ EVAL \_ ORDER
 
 [**glGetMap**](glgetmap.md)
 
-[**glIsEnabled**](glisenabled.md) con argomento GL \_ Mappa1 \_ Vertex \_ 3
+[**glIsEnabled con**](glisenabled.md) argomento GL \_ MAP1 \_ VERTEX \_ 3
 
-**glIsEnabled** con argomento GL \_ Mappa1 \_ Vertex \_ 4
+**glIsEnabled con** argomento GL \_ MAP1 \_ VERTEX \_ 4
 
-**glIsEnabled** con argomento GL \_ Mappa1 \_ index
+**glIsEnabled con** argomento GL \_ MAP1 \_ INDEX
 
-**glIsEnabled** con argomento GL \_ Mappa1 \_ Color \_ 4
+**glIsEnabled con** argomento GL \_ MAP1 \_ COLOR \_ 4
 
-**glIsEnabled** con argomento GL \_ Mappa1 \_ Normal
+**glIsEnabled con** argomento GL \_ MAP1 \_ NORMAL
 
-**glIsEnabled** con argomento GL \_ Mappa1 \_ trama \_ Coord \_ 1
+**glIsEnabled con** argomento GL \_ MAP1 \_ TEXTURE \_ COORD \_ 1
 
-**glIsEnabled** con argomento GL \_ Mappa1 \_ trama \_ Coord \_ 2
+**glIsEnabled con** argomento GL \_ MAP1 \_ TEXTURE \_ COORD \_ 2
 
-**glIsEnabled** con argomento GL \_ Mappa1 \_ trama \_ Coord \_ 3
+**glIsEnabled con** argomento GL \_ MAP1 \_ TEXTURE \_ COORD \_ 3
 
-**glIsEnabled** con argomento GL \_ Mappa1 \_ trama \_ Coord \_ 4
+**glIsEnabled con** argomento GL \_ MAP1 \_ TEXTURE \_ COORD \_ 4
 
 ## <a name="requirements"></a>Requisiti
 
@@ -183,8 +183,8 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glMap1*
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -202,7 +202,7 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glMap1*
 [**glEnable**](glenable.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glEvalCoord**](glevalcoord-functions.md)

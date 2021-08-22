@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 8074a09f-ad94-4a7a-8c0b-965b0f8f6334
-ms.openlocfilehash: 82ec9130a681bdfd36ff6259392c0608e4cde9cf
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 77b9aa668087f0c02042ccb7e5b822f68596404761d53ec682c76ef98d46c18e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118459048"
 ---
-# <a name="fmevent_initmenu-message"></a>Messaggio \_ FMEVENT INITMENU
+# <a name="fmevent_initmenu-message"></a>Messaggio \_ INITMENU FMEVENT
 
 Inviato a una DLL di estensione quando l'utente seleziona il menu per l'estensione dalla barra dei menu di File Manager. L'estensione può usare questa notifica per inizializzare le voci di menu.
 

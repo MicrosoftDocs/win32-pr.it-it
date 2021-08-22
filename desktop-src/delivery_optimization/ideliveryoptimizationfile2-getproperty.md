@@ -1,6 +1,6 @@
 ---
-title: 'Metodo IDeliveryOptimizationFile2:: GetProperty'
-description: 'Questo metodo restituisce una singola proprietà del file DO. | Metodo IDeliveryOptimizationFile2:: GetProperty'
+title: Metodo IDeliveryOptimizationFile2::GetProperty
+description: Questo metodo restituisce una singola proprietà del file DO. | Metodo IDeliveryOptimizationFile2::GetProperty
 keywords:
 - Metodo GetProperty
 - Metodo GetProperty, interfaccia IDeliveryOptimizationFile2
@@ -16,14 +16,14 @@ api_type:
 ms.topic: reference
 ms.date: 01/18/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c53167287cf821ceca26782dab9b8011d40a1785
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d0f181eebe2aff8ccbbbf6d5400e3d5a78f123e2304567a413ecf4a35357229b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104353726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118542091"
 ---
-# <a name="ideliveryoptimizationfile2getproperty-method"></a>Metodo IDeliveryOptimizationFile2:: GetProperty
+# <a name="ideliveryoptimizationfile2getproperty-method"></a>Metodo IDeliveryOptimizationFile2::GetProperty
 
 Questo metodo restituisce una singola proprietà del file DO.
 
@@ -40,17 +40,17 @@ HRESULT GetProperty(
 
 <dl> <dt>
 
-*propid* \[ in\]
+*propId* \[ Pollici\]
 </dt> <dd>
 
-ID di proprietà obbligatorio da ottenere di tipo DOFilePropertyId.
+ID proprietà obbligatorio da ottenere di tipo DOFilePropertyId.
 
 </dd> <dt>
 
-*PropValue* \[ out\]
+*propValue* \[ Cambio\]
 </dt> <dd>
 
-Valore della proprietà Archiviato in una variante.
+Valore della proprietà archiviato in un elemento VARIANT.
 
 </dd> </dl>
 
@@ -70,13 +70,13 @@ Questo metodo restituisce i valori HRESULT seguenti.
 
 | Requisito | Valore |
 |---------------------------|----------------------------------------------------------------------------------|
-| Client minimo supportato  | Solo app desktop Windows 10 versione 1803 \[\]                                   |
-| Server minimo supportato  | Windows Server, versione 1709 \[ solo per le app desktop\]                               |
-| Intestazione                    | Deliveryoptimization. h                                                           |
-| IDL                       | DeliveryOptimization. idl                                                         |
-| Libreria                   | Dosvc. lib                                                                        |
+| Client minimo supportato  | Windows 10, solo app desktop versione 1803 \[\]                                   |
+| Server minimo supportato  | Windows Server, solo app desktop versione 1709 \[\]                               |
+| Intestazione                    | Deliveryoptimization.h                                                           |
+| Idl                       | DeliveryOptimization.idl                                                         |
+| Libreria                   | Dosvc.lib                                                                        |
 | DLL                       | Dosvc.dll                                                                        |
-| IID                       | IID_IDeliveryOptimizationJob2 viene definito come 18995A26-BF59-4ABE-9F8B-D5092D5A2405 |
+| IID                       | IID_IDeliveryOptimizationJob2 definito come 18995A26-BF59-4ABE-9F8B-D5092D5A2405 |
 
 ## <a name="see-also"></a>Vedi anche
 

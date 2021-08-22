@@ -1,7 +1,7 @@
 ---
-description: La proprietà ComponentPath è una proprietà di sola lettura che restituisce il percorso completo di un componente installato. Se il percorso della chiave per il componente è una chiave del registro di sistema, viene restituita la chiave del registro di sistema.
+description: La proprietà ComponentPath è una proprietà di sola lettura che restituisce il percorso completo di un componente installato. Se il percorso della chiave per il componente è una chiave del Registro di sistema, viene restituita la chiave del Registro di sistema.
 ms.assetid: 6e53419d-f28a-45cd-abc8-0f451177f3fc
-title: Proprietà Installer. ComponentPath
+title: Proprietà Installer.ComponentPath
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: e249290af2477d2dfcbc73f80f80b439f1dd3663
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 88601dc4c65d0d3f69a5386ed62d1523c9fa21723e73b1ad4d208d0eff437658
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118632624"
 ---
-# <a name="installercomponentpath-property"></a>Proprietà Installer. ComponentPath
+# <a name="installercomponentpath-property"></a>Proprietà Installer.ComponentPath
 
-La proprietà **ComponentPath** è una proprietà di sola lettura che restituisce il percorso completo di un componente installato. Se il percorso della chiave per il componente è una chiave del registro di sistema, viene restituita la chiave del registro di sistema.
+La **proprietà ComponentPath** è una proprietà di sola lettura che restituisce il percorso completo di un componente installato. Se il percorso della chiave per il componente è una chiave del Registro di sistema, viene restituita la chiave del Registro di sistema.
 
 Questa proprietà è di sola lettura.
 
@@ -39,7 +39,7 @@ propVal = Installer.ComponentPath
 
 ## <a name="remarks"></a>Commenti
 
-Se il componente è una chiave del registro di sistema, le radici del registro di sistema sono rappresentate numericamente. Ad esempio, un percorso del registro di sistema "HKEY \_ Current \_ User \\ software \\ Microsoft" verrebbe restituito come "01: \\ software \\ Microsoft". Le radici del registro di sistema restituite sono definite come segue:
+Se il componente è una chiave del Registro di sistema, le radici del Registro di sistema vengono rappresentate numericamente. Ad esempio, un percorso del Registro di sistema "HKEY CURRENT USER SOFTWARE Microsoft" verrebbe restituito \_ \_ come \\ \\ "01: \\ SOFTWARE \\ Microsoft". Le radici del Registro di sistema restituite sono definite come segue:
 
 
 
@@ -49,7 +49,7 @@ Se il componente è una chiave del registro di sistema, le radici del registro d
 | HKEY\_CORRENTE\_UTENTE     | 01             |
 | HKEY\_LOCALE\_MACCHINA    | 02             |
 | HKEY\_UTENTI             | 03             |
-| \_dati sulle prestazioni di HKEY \_ | 04             |
+| DATI SULLE PRESTAZIONI DI \_ \_ HKEY | 04             |
 
 
 
@@ -61,9 +61,9 @@ Se il componente è una chiave del registro di sistema, le radici del registro d
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller è definito come \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

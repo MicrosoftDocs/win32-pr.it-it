@@ -1,7 +1,7 @@
 ---
 description: Recupera il corpo dell'entità di risposta come IStream.
 ms.assetid: e12a9338-5e0c-4672-bbc6-31375b872e94
-title: 'Proprietà IWinHttpRequest:: ResponseStream'
+title: Proprietà IWinHttpRequest::ResponseStream
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: ec9f497e687c52735784a5e3edad01905ac7a6a8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f29fad2ccfcac5cbca1c6ef13e0aeef5bdd0f4764e81dd14cabdfa58fd30fbde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118563219"
 ---
-# <a name="iwinhttprequestresponsestream-property"></a>Proprietà IWinHttpRequest:: ResponseStream
+# <a name="iwinhttprequestresponsestream-property"></a>Proprietà IWinHttpRequest::ResponseStream
 
-La proprietà **responseStream** Recupera il corpo dell'entità di risposta come [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream).
+La **proprietà ResponseStream** recupera il corpo dell'entità di risposta come [**IStream.**](/windows/desktop/api/objidl/nn-objidl-istream)
 
 Questa proprietà è di sola lettura.
 
@@ -49,20 +49,20 @@ vtResponseStream = WinHttpRequest.ResponseStream
 
 ## <a name="property-value"></a>Valore proprietà
 
-**Variante** che riceve un puntatore a un'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) su cui è possibile eseguire query per un'interfaccia [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream) . Questo flusso restituisce i dati non elaborati ricevuti direttamente dal server.
+Variant **che** riceve un puntatore a [**un'interfaccia IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) su cui è possibile eseguire query per [**un'interfaccia IStream.**](/windows/desktop/api/objidl/nn-objidl-istream) Questo flusso restituisce i dati non elaborati ricevuti direttamente dal server.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Il valore restituito è **\_ OK** in caso di esito positivo o un valore di errore.
+Il valore restituito è **S \_ OK in** caso di esito positivo o un valore di errore in caso contrario.
 
-Se l'operazione di [**invio**](iwinhttprequest-send.md) precedente non è completa, sarà **e \_ in sospeso** .
+Sarà E **\_ PENDING se** l'operazione [**di invio**](iwinhttprequest-send.md) precedente non è stata completata.
 
 ## <a name="remarks"></a>Commenti
 
-Chiamare [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) sul puntatore restituito per ottenere un puntatore a un'interfaccia [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream) . Questa proprietà restituisce i dati di risposta come **IStream**. Questa proprietà può essere richiamata solo dopo la chiamata del metodo [**Send**](iwinhttprequest-send.md) .
+Chiamare [**QueryInterface sul**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) puntatore restituito per ottenere un puntatore a [**un'interfaccia IStream.**](/windows/desktop/api/objidl/nn-objidl-istream) Questa proprietà restituisce i dati della risposta come **IStream.** Questa proprietà può essere richiamata solo dopo la [**chiamata al**](iwinhttprequest-send.md) metodo Send.
 
 > [!Note]  
-> Per Windows XP e Windows 2000, vedere la sezione [requisiti di run-time](winhttp-start-page.md) della pagina iniziale di WinHTTP.
+> Per Windows XP e Windows 2000, vedere la sezione [Requisiti di run-time](winhttp-start-page.md) della pagina iniziale di WinHTTP.
 
  
 
@@ -289,11 +289,11 @@ int main(int argc, char* argv[])
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional con \[ solo app desktop SP3\]<br/>            |
-| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con \[ solo app desktop SP3\]<br/>         |
-| Componente ridistribuibile<br/>          | WinHTTP 5,0 e Internet Explorer 5,01 o versioni successive in Windows XP e Windows 2000.<br/> |
-| IDL<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>WinHTTP. lib</dt> </dl>     |
+| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional solo con app desktop SP3 \[\]<br/>            |
+| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con solo app desktop SP3 \[\]<br/>         |
+| Componente ridistribuibile<br/>          | WinHTTP 5.0 e Internet Explorer 5.01 o versioni successive in Windows XP e Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
@@ -314,7 +314,7 @@ int main(int argc, char* argv[])
 [**ResponseText**](iwinhttprequest-responsetext.md)
 </dt> <dt>
 
-[Versioni WinHTTP](winhttp-versions.md)
+[Versioni di WinHTTP](winhttp-versions.md)
 </dt> </dl>
 
  

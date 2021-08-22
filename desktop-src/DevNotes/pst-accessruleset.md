@@ -1,7 +1,7 @@
 ---
 description: Identifica il set di regole di accesso per i dati di archiviazione protetti.
 ms.assetid: 0eee34c2-b832-41b3-80f5-b03fdddf75cc
-title: Struttura PST_ACCESSRULESET (PStore. h)
+title: PST_ACCESSRULESET struttura (Pstore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Pstore.h
-ms.openlocfilehash: b4c339ea0866ad872d5d0a2f8eaff6be947adc0c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9695af01c6f0ffb33fe20a112659444011ad9c18812b8d2fd885641635c6b4c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118666977"
 ---
-# <a name="pst_accessruleset-structure"></a>\_Struttura ACCESSRULESET PST
+# <a name="pst_accessruleset-structure"></a>Struttura \_ PST ACCESSRULESET
 
-\[L'archiviazione protetta (PStore) è disponibile per l'uso in Windows Server 2003 e Windows XP. È disponibile solo per le operazioni di sola lettura in Windows Server 2008 e Windows Vista, ma potrebbe non essere disponibile nelle versioni successive. PStore usa un'implementazione precedente della protezione dei dati. Gli sviluppatori sono vivamente invitati a sfruttare i vantaggi della protezione dei dati più avanzata fornita dalle funzioni [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[Protected Archiviazione (Pstore) è disponibile per l'uso in Windows Server 2003 e Windows XP. È disponibile solo per le operazioni di sola lettura in Windows Server 2008 e Windows Vista, ma potrebbe non essere disponibile nelle versioni successive. Pstore usa un'implementazione precedente della protezione dei dati. Gli sviluppatori sono fortemente invitati a sfruttare la protezione dei dati più avanzata fornita dalle funzioni [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
 Identifica il set di regole di accesso per i dati di archiviazione protetti.
 
@@ -53,14 +53,14 @@ Dimensione della struttura.
 **cRules**
 </dt> <dd>
 
-Numero di regole nella matrice **rgRules** .
+Numero di regole nella matrice **rgRules.**
 
 </dd> <dt>
 
 **rgRules**
 </dt> <dd>
 
-Puntatore a una matrice di strutture [**\_ ACCESSRULE PST**](pst-accessrule.md) .
+Puntatore a una matrice di [**strutture \_ ACCESSRULE PST.**](pst-accessrule.md)
 
 </dd> </dl>
 
@@ -70,7 +70,7 @@ Puntatore a una matrice di strutture [**\_ ACCESSRULE PST**](pst-accessrule.md) 
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>PStore. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Pstore.h</dt> </dl> |
 
 
 
@@ -78,7 +78,7 @@ Puntatore a una matrice di strutture [**\_ ACCESSRULE PST**](pst-accessrule.md) 
 
 <dl> <dt>
 
-[**\_ACCESSRULE PST**](pst-accessrule.md)
+[**REGOLA \_ DI ACCESSO PST**](pst-accessrule.md)
 </dt> <dt>
 
 [**CreateSubtype**](ipstore-createsubtype.md)

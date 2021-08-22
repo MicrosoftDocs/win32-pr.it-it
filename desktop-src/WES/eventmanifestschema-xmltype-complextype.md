@@ -3,7 +3,7 @@ title: Tipo complesso XmlType
 description: Definisce un frammento XML.
 ms.assetid: ac6ce2a2-4584-4181-9a39-aceab85d5c51
 keywords:
-- Log eventi di tipo complesso XmlType
+- EventLog di tipo complesso XmlType
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a4a4d71d7f4f2685d6c5f1c0626392c79436b68d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a9ac529ad3d965af76c144d0f02c1e6f8e5aef36fb25fd2fb052a5fdedc1e45f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118589162"
 ---
 # <a name="xmltype-complex-type"></a>Tipo complesso XmlType
 
-Definisce un frammento XML. Qualsiasi istanza dello schema è consentita. il nodo di livello superiore del frammento deve contenere un attributo dello spazio dei nomi.
+Definisce un frammento XML. Qualsiasi istanza dello schema è consentita. Il nodo di primo livello nel frammento deve contenere un attributo dello spazio dei nomi.
 
 ``` syntax
 <xs:complexType name="XmlType">
@@ -43,8 +43,8 @@ Definisce un frammento XML. Qualsiasi istanza dello schema è consentita. il nod
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

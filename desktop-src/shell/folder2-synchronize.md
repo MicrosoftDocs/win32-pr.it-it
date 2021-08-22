@@ -1,7 +1,7 @@
 ---
 description: Sincronizza tutti i file offline nella cartella.
 ms.assetid: b149df96-0c8e-47b9-b71e-2ad5dcfdeb8f
-title: Metodo Cartella2. Synchronize (shldisp. h)
+title: Metodo Folder2.Synchronize (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: e9c39c37ff0e44e58aa71c69496dec8bee2745bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a0865ab34c9ffba625a51881e01f5cb2df774da9e8d4a32a7fbd17f6dbf523f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118458891"
 ---
-# <a name="folder2synchronize-method"></a>Metodo Cartella2. Synchronize
+# <a name="folder2synchronize-method"></a>Metodo Folder2.Synchronize
 
 Sincronizza tutti i file offline nella cartella.
 
@@ -39,13 +39,13 @@ Questo metodo non presenta parametri.
 
 ## <a name="remarks"></a>Commenti
 
-Per usare questo metodo, è necessario abilitare la funzionalità File offline.
+Per usare questo metodo, è necessario File offline la funzionalità di registrazione automatica.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'utilizzo corretto di **Synchronize** per JScript, VBScript e Visual Basic.
+Nell'esempio seguente viene illustrato l'uso corretto di **Synchronize** JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -66,7 +66,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -118,11 +118,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

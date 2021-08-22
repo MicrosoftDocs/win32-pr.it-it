@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXQuaternionRotationAxis (D3dx9math.h): ruota un quaternione su un asse arbitrario.'
+description: 'Funzione D3DXQuaternionRotationAxis (D3dx9math.h): ruota un quaternione intorno a un asse arbitrario.'
 ms.assetid: 9ff0fe2c-54d6-482c-84e1-f38e3c57d8dd
 title: Funzione D3DXQuaternionRotationAxis (D3dx9math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a5cbbdc3603b5e2eb7a03f592d44fa88f07ef015
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4879cec21f356399d2f98c7c3286da9ae3994c81fa64911177f287c9f0e216b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118524603"
 ---
 # <a name="d3dxquaternionrotationaxis-function-d3dx9mathh"></a>Funzione D3DXQuaternionRotationAxis (D3dx9math.h)
 
@@ -47,7 +47,7 @@ D3DXQUATERNION* D3DXQuaternionRotationAxis(
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntatore alla [**struttura D3DXQUATERNION**](d3dxquaternion.md) che è il risultato dell'operazione.
+Puntatore alla [**struttura D3DXQUATERNION**](d3dxquaternion.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
@@ -56,7 +56,7 @@ Puntatore alla [**struttura D3DXQUATERNION**](d3dxquaternion.md) che è il risul
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che identifica l'asse su cui ruotare il quaternione.
+Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che identifica l'asse intorno al quale ruotare il quaternione.
 
 </dd> <dt>
 

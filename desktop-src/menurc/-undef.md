@@ -4,16 +4,16 @@ description: La direttiva \ undef rimuove la definizione corrente del nome speci
 ms.assetid: c9a0b538-3030-4d39-bfc2-d158061967b6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a04b14eeea18a05795cd8ebbb94d81d0aead6a9d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3adf208ecca3f130aefc99de8d2926028f25bcd46be46d42e4cbf92e708fa0b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118473061"
 ---
 # <a name="undef"></a>\#undef
 
-La direttiva **\# undef** rimuove la definizione corrente del nome specificato. Tutte le occorrenze successive del nome vengono elaborate senza sostituzione.
+La **\# direttiva undef** rimuove la definizione corrente del nome specificato. Tutte le occorrenze successive del nome vengono elaborate senza sostituzione.
 
 ``` syntax
 #undef name
@@ -21,10 +21,10 @@ La direttiva **\# undef** rimuove la definizione corrente del nome specificato. 
 
 <dl> <dt>
 
-<span id="name"></span><span id="NAME"></span>*nome*
+<span id="name"></span><span id="NAME"></span>*Nome*
 </dt> <dd>
 
-Nome da rimuovere. Questo valore è costituito da qualsiasi combinazione di lettere, cifre e punteggiatura valida per il preprocessore C/C++.
+Nome da rimuovere. Questo valore è qualsiasi combinazione di lettere, cifre e punteggiatura valida per il preprocessore C/C++.
 
 </dd> </dl>
 
@@ -44,9 +44,9 @@ In questo esempio vengono rimosse le definizioni per i nomi diversi da zero e US
 [Direttive per il preprocessore](preprocessor-directives.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

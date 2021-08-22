@@ -1,11 +1,11 @@
 ---
-title: IWMPSettings metodo semodalità
-description: Il metodo semode imposta la modalità ciclo o shuffle su attivo o inattivo.
+title: Metodo setMode IWMPSettings
+description: Il metodo setMode imposta la modalità loop o shuffle su attiva o inattiva.
 ms.assetid: e9d3765e-6edb-47a5-ac97-5e00b62498c2
 keywords:
-- Metodo di Media Player di Windows
-- Metodo di Media Player Windows, interfaccia IWMPSettings
-- Interfaccia IWMPSettings Windows Media Player, metodo semode
+- Metodo setMode Windows Media Player
+- Metodo setMode Windows Media Player, interfaccia IWMPSettings
+- Interfaccia IWMPSettings Windows Media Player, metodo setMode
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8dffede5e634c5c4f726cff1631b79781ed5179
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 529aadf412cdae869ae3c308d82dcd08a7dfd581aeb7ecc711052f6acd54b962
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118568408"
 ---
-# <a name="iwmpsettingssetmode-method"></a>Metodo IWMPSettings:: toMode
+# <a name="iwmpsettingssetmode-method"></a>Metodo IWMPSettings::setMode
 
-Il metodo **semode** imposta la modalità ciclo o shuffle su attivo o inattivo.
+Il **metodo setMode** imposta la modalità loop o shuffle su attiva o inattiva.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,18 +55,18 @@ Implements IWMPSettings.setMode
 
 <dl> <dt>
 
-*bstrMode* \[ in\]
+*bstrMode* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta il nome della modalità da modificare, contenente uno dei valori seguenti.
+Oggetto **System.String** che rappresenta il nome della modalità da modificare, contenente uno dei valori seguenti.
 
 
 
 | Valore      | Descrizione                                                                                      |
 |------------|--------------------------------------------------------------------------------------------------|
-| riavvolgimento rapido | Le tracce vengono riavviate dall'inizio dopo la riproduzione fino alla fine.                                |
+| riavvolgimento automatico | Le tracce vengono riavviate dall'inizio dopo la riproduzione fino alla fine.                                |
 | loop       | La sequenza di tracce si ripete.                                                           |
-| showFrame  | Il fotogramma chiave più vicino viene visualizzato in caso di mancata riproduzione. Questa modalità non è pertinente per le tracce audio. |
+| showFrame  | Il fotogramma chiave più vicino viene visualizzato quando non viene riprodotto. Questa modalità non è pertinente per le tracce audio. |
 | shuffle    | Le tracce vengono riprodotte in ordine casuale.                                                               |
 
 
@@ -75,10 +75,10 @@ Implements IWMPSettings.setMode
 
 </dd> <dt>
 
-*varfMode* \[ in\]
+*varfMode* \[ Pollici\]
 </dt> <dd>
 
-Valore **System. Boolean** che specifica se la nuova modalità specificata è attiva.
+Valore **System.Boolean** che specifica se la nuova modalità specificata è attiva.
 
 </dd> </dl>
 
@@ -88,7 +88,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Quando la modalità showFrame è attiva, Windows Media Player deve accedere al contenuto della traccia per recuperare il frame video. Usare questa modalità con cautela per la riproduzione di contenuto non locale.
+Quando la modalità showFrame è attiva, Windows Media Player deve accedere al contenuto della traccia per recuperare il fotogramma video. Usare questa modalità con cautela durante la riproduzione di contenuto non locale.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,7 +96,7 @@ Quando la modalità showFrame è attiva, Windows Media Player deve accedere al c
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -109,7 +109,7 @@ Quando la modalità showFrame è attiva, Windows Media Player deve accedere al c
 [**Interfaccia IWMPSettings (VB e C#)**](iwmpsettings--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings. getMode (VB e C#)**](wmplibiwmpsettings-iwmpsettings-getmode--vb-and-c.md)
+[**IWMPSettings.getMode (VB e C#)**](wmplibiwmpsettings-iwmpsettings-getmode--vb-and-c.md)
 </dt> </dl>
 
  

@@ -1,12 +1,12 @@
 ---
-title: Proprietà GatewayCredSourceCookie di IMsRdpClientTransportSettings3
+title: Proprietà IMsRdpClientTransportSettings3 GatewayCredSourceCookie
 description: Specifica se l'origine delle credenziali è basata su cookie.
 ms.assetid: 039459a3-7a83-444c-a0b4-46ef0dc5ddd0
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà GatewayCredSourceCookie
-- Servizi Desktop remoto proprietà GatewayCredSourceCookie, interfaccia IMsRdpClientTransportSettings3
-- Interfaccia IMsRdpClientTransportSettings3 Servizi Desktop remoto, proprietà GatewayCredSourceCookie
+- GatewayCredSourceCookie - proprietà Servizi Desktop remoto
+- Proprietà GatewayCredSourceCookie Servizi Desktop remoto, interfaccia IMsRdpClientTransportSettings3
+- Interfaccia IMsRdpClientTransportSettings3 Servizi Desktop remoto , proprietà GatewayCredSourceCookie
 topic_type:
 - apiref
 api_name:
@@ -19,16 +19,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9547df10ce9f528a4b52c526c970a82d0bd098c5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6fae89a3b7694d1ab73c076464b7ac62e6b18bcac6b4877d6156731135ee47a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118606946"
 ---
-# <a name="imsrdpclienttransportsettings3gatewaycredsourcecookie-property"></a>Proprietà IMsRdpClientTransportSettings3:: GatewayCredSourceCookie
+# <a name="imsrdpclienttransportsettings3gatewaycredsourcecookie-property"></a>Proprietà IMsRdpClientTransportSettings3::GatewayCredSourceCookie
 
-Specifica se l'origine delle credenziali è basata su cookie. Contiene uno se l'origine della credenziale è basata su cookie o zero in caso contrario.
+Specifica se l'origine delle credenziali è basata su cookie. Ne contiene uno se l'origine delle credenziali è basata su cookie oppure zero in caso contrario.
 
 Si tratta di una proprietà di lettura/scrittura.
 

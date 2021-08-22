@@ -1,10 +1,10 @@
 ---
-title: attributo ms-TS-Initial-Program
-description: Sessione Servizi Terminal programma iniziale specifica il percorso e il nome file dell'applicazione che l'utente vuole avviare automaticamente quando l'utente accede al Terminal Server.
+title: Attributo ms-TS-Initial-Program
+description: Il programma iniziale della sessione di Servizi terminal specifica il percorso e il nome file dell'applicazione che l'utente vuole avviare automaticamente quando l'utente accede a Terminal Server.
 ms.assetid: c886209b-725b-4e49-a802-58be9ed5e92e
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-TS-Initial-Program
+- Ms-TS-Initial-Program attribute AD Schema
 - Schema AD dell'attributo msTSInitialProgram
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2a4796a97722f2d26142a2ff374414ca3ca1cf2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 37d014cf19c1410d21a8ee8c851fbee213e012a631ade04b6117e1cf949e22ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104400984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118424486"
 ---
-# <a name="ms-ts-initial-program-attribute"></a>attributo ms-TS-Initial-Program
+# <a name="ms-ts-initial-program-attribute"></a>Attributo ms-TS-Initial-Program
 
-Sessione Servizi Terminal programma iniziale specifica il percorso e il nome file dell'applicazione che l'utente vuole avviare automaticamente quando l'utente accede al Terminal Server.
+Il programma iniziale della sessione di Servizi terminal specifica il percorso e il nome file dell'applicazione che l'utente vuole avviare automaticamente quando l'utente accede a Terminal Server.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-TS-Initial-Program                       |
-| LDAP-Display-Name | msTSInitialProgram                          |
+| CN                | ms-TS-Initial-Program                       |
+| Ldap-Display-Name | msTSInitialProgram                          |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1990                     |
-| System-ID-GUID    | 9201ac6f-1d69-4dfb-802e-d95510109599        |
+| System-Id-Guid    | 9201ac6f-1d69-4dfb-802e-d95510109599        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,15 +55,15 @@ Sessione Servizi Terminal programma iniziale specifica il percorso e il nome fil
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Sessione Servizi Terminal programma iniziale specifica il percorso e il nome fil
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Sessione Servizi Terminal programma iniziale specifica il percorso e il nome fil
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

@@ -3,35 +3,35 @@ title: Autenticazione dell'applicazione
 description: Autenticazione dell'applicazione
 ms.assetid: 011815fa-d55c-4abc-9ec8-55d754827342
 keywords:
-- Windows Media Gestione dispositivi, autenticazione
+- Windows Gestione dispositivi multimediali, autenticazione
 - Gestione dispositivi, autenticazione
-- Guida per programmatori, autenticazione
+- guida per programmatori,autenticazione
 - applicazioni desktop, autenticazione
-- creazione di applicazioni Windows Media Gestione dispositivi, autenticazione
+- creazione Windows applicazioni di Gestione dispositivi multimediali, autenticazione
 - autenticazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7779cdbb874278e6b62517cc2c1983dd2ce8fa1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9b67ad7c603bbfd3a56667bfcfe8742775c8ae5683888d72661e0a0974aa5358
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106299891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118586736"
 ---
 # <a name="authenticating-the-application"></a>Autenticazione dell'applicazione
 
-Il primo passaggio che l'applicazione deve eseguire è l'autenticazione. L'autenticazione verifica l'identità dell'applicazione in Windows Media Gestione dispositivi. Una volta autenticata l'applicazione, è possibile chiamare **QueryInterface** per ottenere l'interfaccia [**IWMDeviceManager**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdevicemanager) radice, che può essere sottoposta a query per altre interfacce obbligatorie, che possono essere sottoposte a query per tutte le altre interfacce. L'autenticazione deve essere eseguita solo una volta all'avvio.
+Il primo passaggio che l'applicazione deve eseguire è l'autenticazione. L'autenticazione verifica l'identità dell'applicazione Windows Gestione dispositivi multimediali. Dopo aver autenticato l'applicazione, è possibile chiamare **QueryInterface** per ottenere l'interfaccia [**IWMDeviceManager**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdevicemanager) radice, su cui è possibile eseguire query per altre interfacce necessarie, su cui è possibile eseguire una query per tutte le altre interfacce. L'autenticazione deve avere luogo una sola volta all'avvio.
 
-Per autenticare l'applicazione, eseguire questi passaggi:
+Per autenticare l'applicazione, seguire questa procedura:
 
-1.  Cocreare l'oggetto **MediaDevMgr** (ID classe MediaDevMgr) e richiedere un'interfaccia [**IComponentAuthenticate**](/windows/desktop/api/mswmdm/nn-mswmdm-icomponentauthenticate) .
-2.  Creare un oggetto [CSecureChannelClient](csecurechannelclient-class.md) per gestire l'autenticazione.
-3.  Passare la chiave dell'applicazione e trasferire il certificato all'oggetto canale sicuro. È possibile usare la chiave o il certificato fittizio illustrato nel codice di esempio seguente per ottenere le funzionalità di base dalle funzioni SDK. Tuttavia, per ottenere la funzionalità completa (importante per il passaggio di file da e verso il dispositivo), è necessario richiedere una chiave e un certificato di Microsoft, come descritto in [strumenti per lo sviluppo](tools-for-development.md).
-4.  Passare l'interfaccia **IComponentAuthenticate** creata nel passaggio 1 all'oggetto canale sicuro.
-5.  Chiamare [**CSecureChannelClient:: Authenticate**](/previous-versions/ms983906(v=msdn.10)) per autenticare l'applicazione.
-6.  Eseguire una query su **IComponentAuthenticate** per l'interfaccia **IWMDeviceManager** .
+1.  Creare **l'oggetto MediaDevMgr** (ID classe MediaDevMgr) e richiedere [**un'interfaccia IComponentAuthenticate.**](/windows/desktop/api/mswmdm/nn-mswmdm-icomponentauthenticate)
+2.  Creare un [oggetto CSecureChannelClient](csecurechannelclient-class.md) per gestire l'autenticazione.
+3.  Passare la chiave dell'applicazione e trasferire il certificato all'oggetto canale sicuro. È possibile usare la chiave/certificato fittizio illustrata nel codice di esempio seguente per ottenere funzionalità di base dalle funzioni dell'SDK. Tuttavia, per ottenere la funzionalità completa (importante per il passaggio di file da e verso il dispositivo), è necessario richiedere una chiave e un certificato a Microsoft come descritto in [Strumenti per lo sviluppo](tools-for-development.md).
+4.  Passare **l'interfaccia IComponentAuthenticate** creata nel passaggio 1 all'oggetto canale sicuro.
+5.  Chiamare [**CSecureChannelClient::Authenticate**](/previous-versions/ms983906(v=msdn.10)) per autenticare l'applicazione.
+6.  Eseguire una **query su IComponentAuthenticate** per **l'interfaccia IWMDeviceManager.**
 
-Questi passaggi sono illustrati nel codice C++ riportato di seguito.
+Questi passaggi sono illustrati nel codice C++ seguente.
 
 
 ```C++
@@ -91,9 +91,9 @@ HRESULT CWMDMController::Authenticate()
 
 <dl> <dt>
 
-[**Creazione di un'applicazione Windows Media Gestione dispositivi**](creating-a-windows-media-device-manager-application.md)
+[**Creazione di un'Windows di Gestione dispositivi multimediali**](creating-a-windows-media-device-manager-application.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

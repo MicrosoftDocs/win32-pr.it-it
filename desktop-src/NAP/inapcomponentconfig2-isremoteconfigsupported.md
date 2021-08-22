@@ -1,9 +1,9 @@
 ---
-title: Metodo INapComponentConfig2 IsRemoteConfigSupported (NapCommon. h)
-description: Viene implementato da convalida integrità sistema (SHV) per indicare se la configurazione remota è supportata.
+title: Metodo INapComponentConfig2 IsRemoteConfigSupported (NapCommon.h)
+description: Viene implementato dai validator di integrità del sistema per indicare se la configurazione remota è supportata.
 ms.assetid: c4b8e60b-ed60-49ec-b4d6-4e1575e4d1a5
 keywords:
-- NAP metodo IsRemoteConfigSupported
+- Metodo IsRemoteConfigSupported NAP
 - Metodo IsRemoteConfigSupported NAP, interfaccia INapComponentConfig2
 - Interfaccia INapComponentConfig2 NAP, metodo IsRemoteConfigSupported
 topic_type:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2d144926aafff6f5ad7e243efe2a81a2955f497
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a42ae316063fc14054c8ffeb6e3987794bc33021441621ee231c9e839fc00248
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118621768"
 ---
-# <a name="inapcomponentconfig2isremoteconfigsupported-method"></a>Metodo INapComponentConfig2:: IsRemoteConfigSupported
+# <a name="inapcomponentconfig2isremoteconfigsupported-method"></a>Metodo INapComponentConfig2::IsRemoteConfigSupported
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **IsRemoteConfigSupported** viene implementato da convalida integrità sistema (SHV) per indicare se la configurazione remota è supportata.
+Il **metodo IsRemoteConfigSupported viene** implementato dai validator di integrità del sistema per indicare se la configurazione remota è supportata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,24 +48,24 @@ HRESULT IsRemoteConfigSupported(
 
 <dl> <dt>
 
-*supportato* \[ out\]
+*isSupported* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un BOOL che è impostato su **true** se il componente supporta la configurazione remota e **false** in caso contrario.
+Puntatore a un oggetto BOOL impostato su **TRUE** se il componente supporta la configurazione remota e **FALSE** in caso contrario.
 
 </dd> <dt>
 
-*remoteConfigType* \[ out\]
+*remoteConfigType* \[ Cambio\]
 </dt> <dd>
 
-Indica il tipo di configurazione remota supportato usando il valore dell'enumerazione [**RemoteConfigurationType**](/windows/win32/api/naptypes/ne-naptypes-remoteconfigurationtype) :
+Indica il tipo di configurazione remota supportato usando il valore [**dell'enumerazione RemoteConfigurationType:**](/windows/win32/api/naptypes/ne-naptypes-remoteconfigurationtype)
 
 
 
 | Valore                                                                                                 | Significato                                                                                                                                                                                                                                                                                         |
 |-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>remoteConfigTypeMachine</dt> </dl>    | [**InvokeUIForMachine**](inapcomponentconfig2-invokeuiformachine.md) è implementato.<br/>                                                                                                                                                                                                |
-| <dl> <dt>remoteConfigTypeConfigBlob</dt> </dl> | [**InvokeUIFromConfigBlob**](inapcomponentconfig2-invokeuifromconfigblob.md) è implementato. [**INapComponentConfig:: GetConfig**](inapcomponentconfig-getconfig.md) e [**INapComponentConfig:: Seconfig**](inapcomponentconfig-setconfig.md) possono essere chiamati in remoto mediante DCOM.<br/> |
+| <dl> <dt>remoteConfigTypeMachine</dt> </dl>    | [**InvokeUIForMachine**](inapcomponentconfig2-invokeuiformachine.md) viene implementato.<br/>                                                                                                                                                                                                |
+| <dl> <dt>remoteConfigTypeConfigBlob</dt> </dl> | [**InvokeUIFromConfigBlob**](inapcomponentconfig2-invokeuifromconfigblob.md) è implementato. [**INapComponentConfig::GetConfig**](inapcomponentconfig-getconfig.md) e [**INapComponentConfig::SetConfig**](inapcomponentconfig-setconfig.md) possono essere chiamati in modalità remota tramite DCOM.<br/> |
 
 
 
@@ -75,11 +75,11 @@ Indica il tipo di configurazione remota supportato usando il valore dell'enumera
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se ha esito positivo o uno dei codici di errore standard di Windows.
+Restituisce S \_ OK in caso di esito positivo o uno dei codici di Windows standard.
 
 ## <a name="remarks"></a>Commenti
 
-Se non viene implementato né [**InvokeUIForMachine**](inapcomponentconfig2-invokeuiformachine.md) né [**InvokeUIFromConfigBlob**](inapcomponentconfig2-invokeuifromconfigblob.md) , non è possibile configurare in remoto il servizio di convalida dell'integrità di sistema.
+Se non [**vengono implementati né InvokeUIForMachine**](inapcomponentconfig2-invokeuiformachine.md) né [**InvokeUIFromConfigBlob,**](inapcomponentconfig2-invokeuifromconfigblob.md) la configurazione remota di SHV non è possibile.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -88,9 +88,9 @@ Se non viene implementato né [**InvokeUIForMachine**](inapcomponentconfig2-invo
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>NapCommon.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapCommon.idl</dt> </dl> |
 
 
 

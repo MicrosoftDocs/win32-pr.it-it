@@ -1,7 +1,7 @@
 ---
-description: Indica se verrà utilizzata la memorizzazione nella cache PMK.
+description: Indica se verrà usata la memorizzazione nella cache PMK.
 ms.assetid: 5650c893-6047-4e99-a2be-22722d6a809a
-title: Elemento PMKCacheMode (Security)
+title: Elemento PMKCacheMode (security)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 609660d6f3161cbaaa5e0505daf9c6b9180b6c32
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23e32d7a658e41f80eb2a4d8d743afc2c96f7a5a1b4135e646374b98e6acac26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619257"
 ---
-# <a name="pmkcachemode-security-element"></a>Elemento PMKCacheMode (Security)
+# <a name="pmkcachemode-security-element"></a>Elemento PMKCacheMode (security)
 
-L'elemento PMKCacheMode (Security) indica se verrà utilizzata la memorizzazione nella cache di PMK. Questo elemento è valido solo per le reti definite da WPA2. La memorizzazione nella cache PMK è descritta nella specifica [802.11 i](https://standards.ieee.org/findstds/standard/802.11i-2004.html) .
+L'elemento PMKCacheMode (security) indica se verrà usata la memorizzazione nella cache PMK. Questo elemento è valido solo per le reti definite da WPA2. La memorizzazione nella cache PMK è descritta nella specifica [802.11i.](https://standards.ieee.org/findstds/standard/802.11i-2004.html)
 
 **Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** Questo elemento non è supportato.
 
@@ -44,7 +44,7 @@ L'elemento PMKCacheMode (Security) indica se verrà utilizzata la memorizzazione
 </xs:element>
 ```
 
-L'elemento è definito dall'elemento di [**sicurezza**](wlan-profileschema-security-msm-element.md) .
+L'elemento è definito [**dall'elemento di**](wlan-profileschema-security-msm-element.md) sicurezza.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,8 +52,8 @@ L'elemento è definito dall'elemento di [**sicurezza**](wlan-profileschema-secur
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -64,7 +64,7 @@ L'elemento è definito dall'elemento di [**sicurezza**](wlan-profileschema-secur
 **Contesto di definizione dell'elemento nello schema**
 </dt> <dt>
 
-[**sicurezza**](wlan-profileschema-security-msm-element.md)
+[**Sicurezza**](wlan-profileschema-security-msm-element.md)
 </dt> <dt>
 
 **Possibile elemento padre immediato nell'istanza dello schema**

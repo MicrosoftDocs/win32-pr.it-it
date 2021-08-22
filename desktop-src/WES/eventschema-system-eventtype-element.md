@@ -1,9 +1,9 @@
 ---
-title: System (EventType) (elemento)
-description: Contiene informazioni che identificano il provider e il modo in cui è stato abilitato, l'evento, il canale in cui è stato scritto l'evento e le informazioni di sistema, ad esempio gli ID processo e thread.
+title: Elemento System (EventType)
+description: Contiene informazioni che identificano il provider e come è stato abilitato, l'evento, il canale in cui è stato scritto l'evento e informazioni di sistema, ad esempio gli ID di processo e thread.
 ms.assetid: c532cfa3-b722-4227-a403-5c050d62a92c
 keywords:
-- Log degli elementi di sistema
+- EventLog dell'elemento System
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4fef0f9f9e24a855564a8d3df2f94610ff9a8248
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 85f20b364998fb34f3fe9eb6973770b414de501b60e34df6f97a607acb494947
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106300984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118588185"
 ---
-# <a name="system-eventtype-element"></a>System (EventType) (elemento)
+# <a name="system-eventtype-element"></a>Elemento System (EventType)
 
-Contiene informazioni che identificano il provider e il modo in cui è stato abilitato, l'evento, il canale in cui è stato scritto l'evento e le informazioni di sistema, ad esempio gli ID processo e thread.
+Contiene informazioni che identificano il provider e come è stato abilitato, l'evento, il canale in cui è stato scritto l'evento e informazioni di sistema, ad esempio gli ID di processo e thread.
 
 ``` syntax
 <xs:element name="System"
@@ -30,7 +30,7 @@ Contiene informazioni che identificano il provider e il modo in cui è stato abi
  />
 ```
 
-L'elemento **System** è definito dal tipo complesso [**eventType**](eventschema-eventtype-complextype.md) .
+**L'elemento** System è definito dal [**tipo complesso EventType.**](eventschema-eventtype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **System** è definito dal tipo complesso [**eventType**](eventschema
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
